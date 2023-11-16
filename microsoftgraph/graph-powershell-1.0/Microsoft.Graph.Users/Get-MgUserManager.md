@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 ms.prod: users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermanager
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Get-MgUserManager
@@ -36,6 +35,7 @@ Optionally, you can expand the manager's chain up to the root node.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Get a user's manager
 
 ```powershell

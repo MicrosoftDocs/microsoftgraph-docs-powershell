@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroup
@@ -40,6 +40,7 @@ To learn more, see deletedItems.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Remove a group
 
 ```powershell

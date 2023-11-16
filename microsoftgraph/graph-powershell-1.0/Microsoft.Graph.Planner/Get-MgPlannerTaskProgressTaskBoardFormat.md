@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 ms.prod: planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannertaskprogresstaskboardformat
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # Get-MgPlannerTaskProgressTaskBoardFormat
@@ -35,17 +34,16 @@ Retrieve the properties and relationships of plannerProgressTaskBoardTaskFormat 
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Planner
 
 Get-MgPlannerTaskProgressTaskBoardFormat -PlannerTaskId $plannerTaskId
-
 ```
-This example shows how to use the Get-MgPlannerTaskProgressTaskBoardFormat Cmdlet.
 
+This example shows how to use the Get-MgPlannerTaskProgressTaskBoardFormat Cmdlet.
 
 ## PARAMETERS
 

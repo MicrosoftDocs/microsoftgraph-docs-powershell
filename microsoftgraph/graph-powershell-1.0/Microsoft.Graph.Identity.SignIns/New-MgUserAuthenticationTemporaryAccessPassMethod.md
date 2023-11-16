@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mguserauthenticationtemporaryaccesspassmethod
@@ -55,6 +55,7 @@ If the user requires a new Temporary Access Pass while the current Temporary Acc
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -68,10 +69,10 @@ $params = @{
 
 New-MgUserAuthenticationTemporaryAccessPassMethod -UserId $userId -BodyParameter $params
 ```
+
 This example shows how to use the New-MgUserAuthenticationTemporaryAccessPassMethod Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

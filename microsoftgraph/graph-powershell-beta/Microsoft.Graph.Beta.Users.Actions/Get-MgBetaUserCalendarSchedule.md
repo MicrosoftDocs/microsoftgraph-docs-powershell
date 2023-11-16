@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 ms.prod: outlook
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauserbyid
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Get-MgBetaUserById
@@ -39,6 +38,7 @@ Return the directory objects specified in a list of IDs.
 Some common uses for this function are to: This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -63,10 +63,10 @@ $params = @{
 # A UPN can also be used as -UserId.
 Get-MgBetaUserDefaultCalendarSchedule -UserId $userId -BodyParameter $params
 ```
+
 This example shows how to use the Get-MgBetaUserCalendarSchedule Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -186,6 +186,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Types <String[]>]`: 
 
 ## RELATED LINKS
+
 [Get-MgUserCalendarSchedule](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserCalendarSchedule?view=graph-powershell-1.0)
 
 [Get-MgUserCalendarSchedule](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserCalendarSchedule?view=graph-powershell-1.0)

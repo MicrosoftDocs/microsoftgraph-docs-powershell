@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgcheckoutdriveitem
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Invoke-MgCheckoutDriveItem
@@ -37,11 +36,13 @@ Check out a driveItem resource to prevent others from editing the document, and 
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Using the Invoke-MgCheckoutDriveItem Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Files
 Invoke-MgCheckoutDriveItem -DriveId $driveId -DriveItemId $driveItemId
 ```
+
 This example shows how to use the Invoke-MgCheckoutDriveItem Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -184,6 +185,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Invoke-MgBetaCheckoutDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaCheckoutDriveItem?view=graph-powershell-beta)
 
 [Invoke-MgBetaCheckoutDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaCheckoutDriveItem?view=graph-powershell-beta)

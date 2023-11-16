@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetauserdriverootuploadsession
@@ -48,6 +48,7 @@ New-MgBetaUserDriveRootUploadSession -InputObject <IUsersActionsIdentity>
 Invoke action createUploadSession
 
 ## EXAMPLES
+
 ### Example 1: Create an upload session to add a large attachment to a draft message
 
 ```powershell
@@ -64,6 +65,7 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgBetaUserMessageAttachmentUploadSession -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
+
 This example shows how to use the New-MgBetaUserMailFolderMessageAttachmentUploadSession Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -86,10 +88,10 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgBetaUserMessageAttachmentUploadSession -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
+
 This example shows how to use the New-MgBetaUserMailFolderMessageAttachmentUploadSession Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -301,6 +303,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Name <String>]`: The name of the item (filename and extension). Read-write.
 
 ## RELATED LINKS
+
 [New-MgUserMailFolderMessageAttachmentUploadSession](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMailFolderMessageAttachmentUploadSession?view=graph-powershell-1.0)
 
 [New-MgUserMailFolderMessageAttachmentUploadSession](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMailFolderMessageAttachmentUploadSession?view=graph-powershell-1.0)

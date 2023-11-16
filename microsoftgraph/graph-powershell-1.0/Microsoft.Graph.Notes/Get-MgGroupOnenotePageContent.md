@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 ms.prod: onenote
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenotepagecontent
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # Get-MgGroupOnenotePageContent
@@ -30,6 +29,8 @@ Get-MgGroupOnenotePageContent -InputObject <INotesIdentity> -OutFile <String> [-
 
 ## DESCRIPTION
 The page's HTML content.
+
+## EXAMPLES
 
 ## PARAMETERS
 

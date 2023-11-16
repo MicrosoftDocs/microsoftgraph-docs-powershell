@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdriveitemthumbnail
@@ -347,6 +347,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Width <Int32?>]`: The width of the thumbnail, in pixels.
 
 ## RELATED LINKS
+
 [New-MgBetaUserDriveItemThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveItemThumbnail?view=graph-powershell-beta)
 
 [New-MgBetaUserDriveItemThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveItemThumbnail?view=graph-powershell-beta)

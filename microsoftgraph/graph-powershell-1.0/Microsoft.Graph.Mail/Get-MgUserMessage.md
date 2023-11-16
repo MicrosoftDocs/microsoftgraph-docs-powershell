@@ -1,11 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 ms.prod: outlook
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldermessagerulecount
 schema: 2.0.0
-ms.prod: extensions
-ms.prod: outlook
 ---
 
 # Get-MgUserMailFolderMessageRuleCount
@@ -33,6 +31,7 @@ Get-MgUserMailFolderMessageRuleCount -InputObject <IMailIdentity> [-Filter <Stri
 Get the number of the resource
 
 ## EXAMPLES
+
 ### Example 1: Get a specific message
 
 ```powershell
@@ -41,6 +40,7 @@ Import-Module Microsoft.Graph.Mail
 # A UPN can also be used as -UserId.
 Get-MgUserMessage -UserId $userId -MessageId $messageId
 ```
+
 This example shows how to use the Get-MgUserMessage Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -53,6 +53,7 @@ Import-Module Microsoft.Graph.Mail
 # A UPN can also be used as -UserId.
 Get-MgUserMessage -UserId $userId -MessageId $messageId -Property "internetMessageHeaders"
 ```
+
 This example shows how to use the Get-MgUserMessage Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -65,6 +66,7 @@ Import-Module Microsoft.Graph.Mail
 # A UPN can also be used as -UserId.
 Get-MgUserMessage -UserId $userId -MessageId $messageId -Property "subject,body,bodyPreview,uniqueBody"
 ```
+
 This example shows how to use the Get-MgUserMessage Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -77,10 +79,10 @@ Import-Module Microsoft.Graph.Mail
 # A UPN can also be used as -UserId.
 Get-MgUserMessageContent -UserId $userId -MessageId $messageId -OutFile $outFileId
 ```
+
 This example shows how to use the Get-MgUserMessage Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

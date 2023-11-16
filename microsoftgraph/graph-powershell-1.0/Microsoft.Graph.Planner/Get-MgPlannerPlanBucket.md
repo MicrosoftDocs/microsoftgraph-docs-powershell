@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 ms.prod: planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerplanbucket
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # Get-MgPlannerPlanBucket
@@ -29,17 +28,16 @@ Retrieve a list of plannerBucket objects contained by a plannerPlan object.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Planner
 
 Get-MgPlannerPlanBucket -PlannerPlanId $plannerPlanId
-
 ```
-This example shows how to use the Get-MgPlannerPlanBucket Cmdlet.
 
+This example shows how to use the Get-MgPlannerPlanBucket Cmdlet.
 
 ## PARAMETERS
 

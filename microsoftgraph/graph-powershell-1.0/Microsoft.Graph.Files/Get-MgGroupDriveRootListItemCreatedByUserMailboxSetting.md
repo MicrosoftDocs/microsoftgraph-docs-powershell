@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootlistitemcreatedbyusermailboxsetting
@@ -162,6 +162,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupDriveRootListItemCreatedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootListItemCreatedByUserMailboxSetting?view=graph-powershell-beta)
 
 [Get-MgBetaGroupDriveRootListItemCreatedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootListItemCreatedByUserMailboxSetting?view=graph-powershell-beta)

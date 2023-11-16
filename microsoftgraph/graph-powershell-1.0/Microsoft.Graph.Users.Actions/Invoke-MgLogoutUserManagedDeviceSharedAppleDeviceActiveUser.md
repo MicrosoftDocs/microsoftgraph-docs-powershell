@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 ms.prod: intune
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mglogoutusermanageddevicesharedappledeviceactiveuser
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Invoke-MgLogoutUserManagedDeviceSharedAppleDeviceActiveUser
@@ -181,6 +180,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Invoke-MgBetaLogoutUserManagedDeviceSharedAppleDeviceActiveUser](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaLogoutUserManagedDeviceSharedAppleDeviceActiveUser?view=graph-powershell-beta)
 
 [Invoke-MgBetaLogoutUserManagedDeviceSharedAppleDeviceActiveUser](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaLogoutUserManagedDeviceSharedAppleDeviceActiveUser?view=graph-powershell-beta)

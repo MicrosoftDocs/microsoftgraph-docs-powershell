@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootthumbnail
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Get-MgGroupDriveRootThumbnail
@@ -309,6 +308,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupDriveRootThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootThumbnail?view=graph-powershell-beta)
 
 [Get-MgBetaGroupDriveRootThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootThumbnail?view=graph-powershell-beta)

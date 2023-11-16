@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityapiconnector
@@ -33,6 +33,7 @@ Create a new identityApiConnector object.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Create an API connector with basic authentication
 
 ```powershell
@@ -50,6 +51,7 @@ $params = @{
 
 New-MgIdentityApiConnector -BodyParameter $params
 ```
+
 This example shows how to use the New-MgIdentityApiConnector Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -71,10 +73,10 @@ $params = @{
 
 New-MgIdentityApiConnector -BodyParameter $params
 ```
+
 This example shows how to use the New-MgIdentityApiConnector Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

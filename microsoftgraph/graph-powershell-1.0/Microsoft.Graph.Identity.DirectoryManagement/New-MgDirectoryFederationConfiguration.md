@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryfederationconfiguration
@@ -31,6 +31,7 @@ New-MgDirectoryFederationConfiguration -BodyParameter <IMicrosoftGraphIdentityPr
 Create new navigation property to federationConfigurations for directory
 
 ## EXAMPLES
+
 ### Example 1: Using the New-MgDirectoryFederationConfiguration Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
@@ -51,6 +52,7 @@ $params = @{
 }
 New-MgDirectoryFederationConfiguration -BodyParameter $params
 ```
+
 This example shows how to use the New-MgDirectoryFederationConfiguration Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 

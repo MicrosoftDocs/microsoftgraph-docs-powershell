@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdriveitemversion
@@ -358,6 +358,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.
 
 ## RELATED LINKS
+
 [New-MgBetaGroupDriveItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItemVersion?view=graph-powershell-beta)
 
 [New-MgBetaGroupDriveItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItemVersion?view=graph-powershell-beta)

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryrole
@@ -31,6 +31,7 @@ Remove-MgDirectoryRole -InputObject <IIdentityDirectoryManagementIdentity> [-IfM
 Delete entity from directoryRoles
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -38,10 +39,10 @@ Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgDirectoryRole -DirectoryRoleId $directoryRoleId
 ```
+
 This example shows how to use the Remove-MgDirectoryRole Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

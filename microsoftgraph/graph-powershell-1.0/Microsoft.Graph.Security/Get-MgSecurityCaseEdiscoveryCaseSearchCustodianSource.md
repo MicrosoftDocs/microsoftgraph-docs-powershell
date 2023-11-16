@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 ms.prod: ediscovery
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasesearchcustodiansource
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # Get-MgSecurityCaseEdiscoveryCaseSearchCustodianSource
@@ -40,17 +39,16 @@ Get-MgSecurityCaseEdiscoveryCaseSearchCustodianSource -InputObject <ISecurityIde
 Custodian sources that are included in the eDiscovery search.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityCaseEdiscoveryCaseSearchCustodianSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId
-
 ```
-This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseSearchCustodianSource Cmdlet.
 
+This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseSearchCustodianSource Cmdlet.
 
 ## PARAMETERS
 

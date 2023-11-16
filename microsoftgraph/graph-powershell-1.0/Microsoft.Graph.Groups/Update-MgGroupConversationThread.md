@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupconversationthread
@@ -499,5 +499,8 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaGroupConversationThread](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupConversationThread?view=graph-powershell-beta)
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

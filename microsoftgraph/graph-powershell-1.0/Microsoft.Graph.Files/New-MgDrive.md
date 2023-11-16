@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrive
@@ -26438,3 +26438,6 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaDrive](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDrive?view=graph-powershell-beta)
+
+
+## RELATED LINKS

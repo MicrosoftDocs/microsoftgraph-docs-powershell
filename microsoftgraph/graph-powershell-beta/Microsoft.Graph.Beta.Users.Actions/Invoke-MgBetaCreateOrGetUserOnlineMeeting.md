@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 ms.prod: cloud-communications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetacreateorgetuseronlinemeeting
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Invoke-MgBetaCreateOrGetUserOnlineMeeting
@@ -58,6 +57,7 @@ If the external ID already exists, this API will return the onlineMeeting object
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Using the Invoke-MgBetaCreateOrGetUserOnlineMeeting Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
@@ -83,8 +83,10 @@ $params = @{
 # A UPN can also be used as -UserId.
 Invoke-MgBetaCreateOrGetUserOnlineMeeting -UserId $userId -BodyParameter $params
 ```
+
 This example shows how to use the Invoke-MgBetaCreateOrGetUserOnlineMeeting Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ### Example 2: Using the Invoke-MgBetaCreateOrGetUserOnlineMeeting Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
@@ -112,6 +114,7 @@ $params = @{
 # A UPN can also be used as -UserId.
 Invoke-MgBetaCreateOrGetUserOnlineMeeting -UserId $userId -BodyParameter $params
 ```
+
 This example shows how to use the Invoke-MgBetaCreateOrGetUserOnlineMeeting Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -413,6 +416,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Producers <IMicrosoftGraphMeetingParticipantInfo[]>]`: 
 
 ## RELATED LINKS
+
 [Invoke-MgCreateOrGetUserOnlineMeeting](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgCreateOrGetUserOnlineMeeting?view=graph-powershell-1.0)
 
 [Invoke-MgCreateOrGetUserOnlineMeeting](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgCreateOrGetUserOnlineMeeting?view=graph-powershell-1.0)

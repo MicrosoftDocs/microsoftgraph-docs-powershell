@@ -1,11 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 ms.prod: identity-and-sign-in
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityuserflowattribute
 schema: 2.0.0
-ms.prod: identity-and-sign-in
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgIdentityUserFlowAttribute
@@ -43,17 +41,16 @@ Retrieve the properties and relationships of a identityUserFlowAttribute object.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgIdentityUserFlowAttribute
-
 ```
-This example shows how to use the Get-MgIdentityUserFlowAttribute Cmdlet.
 
+This example shows how to use the Get-MgIdentityUserFlowAttribute Cmdlet.
 
 ## PARAMETERS
 

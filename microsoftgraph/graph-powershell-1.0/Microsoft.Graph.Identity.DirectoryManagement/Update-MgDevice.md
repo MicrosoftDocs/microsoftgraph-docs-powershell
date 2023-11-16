@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdevice
@@ -67,6 +67,7 @@ Only certain properties of a device can be updated through approved Mobile Devic
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Update the accountEnabled property of a device
 
 ```powershell
@@ -78,6 +79,7 @@ $params = @{
 
 Update-MgDevice -DeviceId $deviceId -BodyParameter $params
 ```
+
 This example shows how to use the Update-MgDevice Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -92,10 +94,10 @@ $params = @{
 
 Update-MgDevice -DeviceId $deviceId -BodyParameter $params
 ```
+
 This example shows how to use the Update-MgDevice Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -836,6 +838,9 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaDevice](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDevice?view=graph-powershell-beta)
+
+
+## RELATED LINKS
 
 
 ## RELATED LINKS

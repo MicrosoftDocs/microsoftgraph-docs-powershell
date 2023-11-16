@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 ms.prod: onenote
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/copy-mgbetauseronenotenotebook
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # Copy-MgBetaUserOnenoteNotebook
@@ -58,6 +57,7 @@ For Copy operations, you follow an asynchronous calling pattern:  First call the
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Using the Copy-MgBetaUserOnenoteNotebook Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
@@ -68,6 +68,7 @@ $params = @{
 # A UPN can also be used as -UserId.
 Copy-MgBetaUserOnenoteNotebook -UserId $userId -NotebookId $notebookId -BodyParameter $params
 ```
+
 This example shows how to use the Copy-MgBetaUserOnenoteNotebook Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -324,6 +325,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Copy-MgUserOnenoteNotebook](/powershell/module/Microsoft.Graph.Users.Actions/Copy-MgUserOnenoteNotebook?view=graph-powershell-1.0)
 
 [Copy-MgUserOnenoteNotebook](/powershell/module/Microsoft.Graph.Users.Actions/Copy-MgUserOnenoteNotebook?view=graph-powershell-1.0)

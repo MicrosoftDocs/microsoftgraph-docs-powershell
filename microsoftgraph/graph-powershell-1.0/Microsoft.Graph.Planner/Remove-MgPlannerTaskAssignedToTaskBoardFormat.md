@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/remove-mgplannertaskassignedtotaskboardformat
@@ -31,6 +31,7 @@ Remove-MgPlannerTaskAssignedToTaskBoardFormat -InputObject <IPlannerIdentity> [-
 Delete navigation property assignedToTaskBoardFormat for planner
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -44,10 +45,10 @@ $params = @{
 
 Update-MgPlannerTaskAssignedToTaskBoardFormat -PlannerTaskId $plannerTaskId -BodyParameter $params-If-Match W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ```
+
 This example shows how to use the Remove-MgPlannerTaskAssignedToTaskBoardFormat Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

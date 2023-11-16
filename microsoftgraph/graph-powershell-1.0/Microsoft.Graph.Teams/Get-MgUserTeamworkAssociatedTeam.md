@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserteamwork
@@ -34,18 +34,17 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 # A UPN can also be used as -UserId.
 Get-MgUserTeamworkAssociatedTeam -UserId $userId
-
 ```
-This example shows how to use the Get-MgUserTeamworkAssociatedTeam Cmdlet.
 
+This example shows how to use the Get-MgUserTeamworkAssociatedTeam Cmdlet.
 
 ## PARAMETERS
 

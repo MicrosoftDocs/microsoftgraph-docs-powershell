@@ -1,11 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 ms.prod: ediscovery
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasereviewset
 schema: 2.0.0
-ms.prod: ediscovery
-ms.prod: ediscovery
 ---
 
 # Get-MgSecurityCaseEdiscoveryCaseReviewSet
@@ -43,17 +41,16 @@ Read the properties and relationships of an ediscoveryReviewSet object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityCaseEdiscoveryCaseReviewSet -EdiscoveryCaseId $ediscoveryCaseId
-
 ```
-This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseReviewSet Cmdlet.
 
+This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseReviewSet Cmdlet.
 
 ## PARAMETERS
 

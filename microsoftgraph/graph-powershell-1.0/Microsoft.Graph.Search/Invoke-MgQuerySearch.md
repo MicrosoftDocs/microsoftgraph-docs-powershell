@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 ms.prod: search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/invoke-mgquerysearch
 schema: 2.0.0
-ms.prod: search
 ---
 
 # Invoke-MgQuerySearch
@@ -37,10 +36,10 @@ Search results are provided in the response.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Basic call to perform a search request
 
 ```powershell
-
 Import-Module Microsoft.Graph.Search
 
 $params = @{
@@ -66,14 +65,13 @@ $params = @{
 }
 
 Invoke-MgQuerySearch -BodyParameter $params
-
 ```
+
 This example will basic call to perform a search request
 
 ### Example 2: Basic call to use queryTemplate
 
 ```powershell
-
 Import-Module Microsoft.Graph.Search
 
 $params = @{
@@ -93,10 +91,9 @@ $params = @{
 }
 
 Invoke-MgQuerySearch -BodyParameter $params
-
 ```
-This example will basic call to use querytemplate
 
+This example will basic call to use querytemplate
 
 ## PARAMETERS
 
@@ -287,6 +284,9 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaQuerySearch](/powershell/module/Microsoft.Graph.Beta.Search/Invoke-MgBetaQuerySearch?view=graph-powershell-beta)
+
+
+## RELATED LINKS
 
 
 ## RELATED LINKS

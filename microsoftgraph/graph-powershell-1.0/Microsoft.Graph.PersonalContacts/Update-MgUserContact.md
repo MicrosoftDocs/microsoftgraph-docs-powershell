@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/set-mgusercontactphotocontent
@@ -31,6 +31,7 @@ Set-MgUserContactPhotoContent -InputObject <IPersonalContactsIdentity> [-Data <S
 Update media content for the navigation property photo in users
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -49,10 +50,10 @@ $params = @{
 # A UPN can also be used as -UserId.
 Update-MgUserContact -UserId $userId -ContactId $contactId -BodyParameter $params
 ```
+
 This example shows how to use the Update-MgUserContact Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

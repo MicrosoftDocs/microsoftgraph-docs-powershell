@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsitedelta
@@ -27,6 +27,8 @@ Get-MgGroupSiteDelta -InputObject <IGroupsIdentity> [-Filter <String>] [-Propert
 
 ## DESCRIPTION
 Invoke function delta
+
+## EXAMPLES
 
 ## PARAMETERS
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrive
@@ -43,11 +43,13 @@ The group's drives.
 Read-only.
 
 ## EXAMPLES
+
 ### Example 1: Using the Get-MgGroupDrive Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Files
 Get-MgGroupDrive -GroupId $groupId
 ```
+
 This example shows how to use the Get-MgGroupDrive Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -295,6 +297,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupDrive](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDrive?view=graph-powershell-beta)
 
 [Get-MgBetaGroupDrive](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDrive?view=graph-powershell-beta)

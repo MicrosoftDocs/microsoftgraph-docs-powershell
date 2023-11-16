@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 ms.prod: change-notifications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgreauthorizedriveitemsubscription
 schema: 2.0.0
-ms.prod: change-notifications
 ---
 
 # Invoke-MgReauthorizeDriveItemSubscription
@@ -193,6 +192,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Invoke-MgBetaReauthorizeDriveItemSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaReauthorizeDriveItemSubscription?view=graph-powershell-beta)
 
 [Invoke-MgBetaReauthorizeDriveItemSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaReauthorizeDriveItemSubscription?view=graph-powershell-beta)

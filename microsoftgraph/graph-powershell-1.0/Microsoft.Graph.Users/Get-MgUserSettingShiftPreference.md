@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 ms.prod: microsoft-teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersettingshiftpreference
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Get-MgUserSettingShiftPreference
@@ -35,17 +34,16 @@ Retrieve the properties and relationships of a shiftPreferences object by ID.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Users
 
 Get-MgUserSettingShiftPreference -UserId $userId
-
 ```
-This example shows how to use the Get-MgUserSettingShiftPreference Cmdlet.
 
+This example shows how to use the Get-MgUserSettingShiftPreference Cmdlet.
 
 ## PARAMETERS
 

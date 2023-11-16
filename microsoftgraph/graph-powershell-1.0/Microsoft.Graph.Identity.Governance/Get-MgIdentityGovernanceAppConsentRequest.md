@@ -1,11 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 ms.prod: governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceappconsentrequest
 schema: 2.0.0
-ms.prod: governance
-ms.prod: governance
 ---
 
 # Get-MgIdentityGovernanceAppConsentRequest
@@ -43,6 +41,7 @@ Read the properties and relationships of an appConsentRequest object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -50,10 +49,10 @@ Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgIdentityGovernanceAppConsentRequest -AppConsentRequestId $appConsentRequestId
 ```
+
 This example shows how to use the Get-MgIdentityGovernanceAppConsentRequest Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

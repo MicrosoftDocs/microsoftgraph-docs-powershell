@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/set-mgentitlementmanagementassignmentpolicy
@@ -60,6 +60,7 @@ Set-MgEntitlementManagementAssignmentPolicy -InputObject <IIdentityGovernanceIde
 Update the navigation property assignmentPolicies in identityGovernance
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -67,10 +68,10 @@ Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgEntitlementManagementAssignmentPolicy -AccessPackageAssignmentPolicyId $accessPackageAssignmentPolicyId
 ```
+
 This example shows how to use the Set-MgEntitlementManagementAssignmentPolicy Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -9662,6 +9663,9 @@ To create the parameters described below, construct a hash table containing the 
     - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS
 

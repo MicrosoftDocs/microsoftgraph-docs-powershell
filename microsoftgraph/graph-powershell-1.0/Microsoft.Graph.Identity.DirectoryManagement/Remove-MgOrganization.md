@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgorganization
@@ -31,6 +31,7 @@ Remove-MgOrganization -InputObject <IIdentityDirectoryManagementIdentity> [-IfMa
 Delete entity from organization
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -57,10 +58,10 @@ $params = @{
 
 Update-MgOrganization -OrganizationId $organizationId -BodyParameter $params
 ```
+
 This example shows how to use the Remove-MgOrganization Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

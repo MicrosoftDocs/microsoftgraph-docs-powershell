@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 ms.prod: groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouprejectedsender
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # Get-MgGroupRejectedSender
@@ -30,11 +29,13 @@ Make sure you don't specify the same user or group in the rejected senders and a
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Using the Get-MgGroupRejectedSender Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Groups
 Get-MgGroupRejectedSender -GroupId $groupId
 ```
+
 This example shows how to use the Get-MgGroupRejectedSender Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 

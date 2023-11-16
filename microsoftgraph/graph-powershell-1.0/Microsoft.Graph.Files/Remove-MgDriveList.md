@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdrivelist
@@ -173,6 +173,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaDriveList](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveList?view=graph-powershell-beta)
 
 [Remove-MgBetaDriveList](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveList?view=graph-powershell-beta)

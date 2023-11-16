@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Calendar
 Module Guid: 8b297e8a-2233-442e-b184-d386df40ee56
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar
@@ -27,10 +27,8 @@ This API is available in the following national cloud deployments.
 ### [Get-MgGroupCalendarPermissionCount](Get-MgGroupCalendarPermissionCount.md)
 Get the number of the resource
 
-### [Get-MgGroupCalendarView](Get-MgGroupCalendarView.md)
-The calendar view for the calendar.
-Navigation property.
-Read-only.
+### [Get-MgGroupCalendarPermissionCount](Get-MgGroupCalendarPermissionCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupEvent](Get-MgGroupEvent.md)
 Get an event object.
@@ -110,24 +108,17 @@ Get the number of the resource
 ### [Get-MgPlaceCountAsRoomList](Get-MgPlaceCountAsRoomList.md)
 Get the number of the resource
 
-### [Get-MgUserCalendar](Get-MgUserCalendar.md)
-The user's calendars.
-Read-only.
-Nullable.
+### [Get-MgPlaceCountAsRoomList](Get-MgPlaceCountAsRoomList.md)
+Get the number of the resource
 
 ### [Get-MgUserCalendarCount](Get-MgUserCalendarCount.md)
 Get the number of the resource
 
-### [Get-MgUserCalendarEvent](Get-MgUserCalendarEvent.md)
-Retrieve a list of events in a calendar.
-The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
-The list of events contains single instance meetings and series masters.
-To get expanded event instances, you can get the calendar view, or \nget the instances of an event.
-This API is available in the following national cloud deployments.
+### [Get-MgUserCalendarCount](Get-MgUserCalendarCount.md)
+Get the number of the resource
 
-### [Get-MgUserCalendarGroup](Get-MgUserCalendarGroup.md)
-Retrieve the properties and relationships of a calendar group object.
-This API is available in the following national cloud deployments.
+### [Get-MgUserCalendarCount](Get-MgUserCalendarCount.md)
+Get the number of the resource
 
 ### [Get-MgUserCalendarGroupCalendar](Get-MgUserCalendarGroupCalendar.md)
 Retrieve a list of calendars belonging to a calendar group.
@@ -148,10 +139,10 @@ The calendar view for the calendar.
 Navigation property.
 Read-only.
 
-### [Get-MgUserDefaultCalendar](Get-MgUserDefaultCalendar.md)
-Get the properties and relationships of a calendar object.
-The calendar can be one for a user, \nor the default calendar of a Microsoft 365 group.
-There are two scenarios where an app can get another user's calendar: This API is available in the following national cloud deployments.
+### [Get-MgUserCalendarView](Get-MgUserCalendarView.md)
+The calendar view for the calendar.
+Navigation property.
+Read-only.
 
 ### [Get-MgUserDefaultCalendarEvent](Get-MgUserDefaultCalendarEvent.md)
 Retrieve a list of events in a calendar.
@@ -160,17 +151,19 @@ The list of events contains single instance meetings and series masters.
 To get expanded event instances, you can get the calendar view, or \nget the instances of an event.
 This API is available in the following national cloud deployments.
 
-### [Get-MgUserEvent](Get-MgUserEvent.md)
-Get the properties and relationships of the specified event object.
-Currently, this operation returns event bodies in only HTML format.
-There are two scenarios where an app can get an event in another user's calendar: Since the event resource supports extensions, you can also use the GET operation to get custom properties and extension data in an event instance.
+### [Get-MgUserDefaultCalendarEvent](Get-MgUserDefaultCalendarEvent.md)
+Retrieve a list of events in a calendar.
+The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
+The list of events contains single instance meetings and series masters.
+To get expanded event instances, you can get the calendar view, or \nget the instances of an event.
 This API is available in the following national cloud deployments.
 
-### [Get-MgUserEventAttachment](Get-MgUserEventAttachment.md)
-The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
-Navigation property.
-Read-only.
-Nullable.
+### [Get-MgUserDefaultCalendarEvent](Get-MgUserDefaultCalendarEvent.md)
+Retrieve a list of events in a calendar.
+The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
+The list of events contains single instance meetings and series masters.
+To get expanded event instances, you can get the calendar view, or \nget the instances of an event.
+This API is available in the following national cloud deployments.
 
 ### [Get-MgUserEventAttachmentCount](Get-MgUserEventAttachmentCount.md)
 Get the number of the resource
@@ -192,12 +185,8 @@ This API is available in the following national cloud deployments.
 ### [Get-MgUserEventExtensionCount](Get-MgUserEventExtensionCount.md)
 Get the number of the resource
 
-### [Get-MgUserEventInstance](Get-MgUserEventInstance.md)
-The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
-Navigation property.
-Read-only.
-Nullable.
+### [Get-MgUserEventExtensionCount](Get-MgUserEventExtensionCount.md)
+Get the number of the resource
 
 ### [Get-MgUserEventInstanceAttachment](Get-MgUserEventInstanceAttachment.md)
 The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
@@ -260,21 +249,28 @@ You can create an open extension in a resource instance and store custom data to
 The table in the Permissions section lists the resources that support open extensions.
 This API is available in the following national cloud deployments.
 
-### [New-MgUserCalendar](New-MgUserCalendar.md)
-Create a new calendar for a user.
+### [New-MgGroupEventInstanceExtension](New-MgGroupEventInstanceExtension.md)
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+The table in the Permissions section lists the resources that support open extensions.
 This API is available in the following national cloud deployments.
 
-### [New-MgUserCalendarEvent](New-MgUserCalendarEvent.md)
-Use this API to create a new event in a calendar.
-The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
+### [New-MgGroupEventInstanceExtension](New-MgGroupEventInstanceExtension.md)
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+The table in the Permissions section lists the resources that support open extensions.
 This API is available in the following national cloud deployments.
 
-### [New-MgUserCalendarGroup](New-MgUserCalendarGroup.md)
-Use this API to create a new CalendarGroup.
+### [New-MgGroupEventInstanceExtension](New-MgGroupEventInstanceExtension.md)
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+The table in the Permissions section lists the resources that support open extensions.
 This API is available in the following national cloud deployments.
 
-### [New-MgUserCalendarGroupCalendar](New-MgUserCalendarGroupCalendar.md)
-Use this API to create a new calendar in a calendar group for a user.
+### [New-MgGroupEventInstanceExtension](New-MgGroupEventInstanceExtension.md)
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+The table in the Permissions section lists the resources that support open extensions.
 This API is available in the following national cloud deployments.
 
 ### [New-MgUserCalendarPermission](New-MgUserCalendarPermission.md)
@@ -286,14 +282,14 @@ Use this API to create a new event in a calendar.
 The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
 This API is available in the following national cloud deployments.
 
-### [New-MgUserEvent](New-MgUserEvent.md)
-Create one or more single-value extended properties in a new or existing instance of a resource.
-The following user resources are supported: The following group resources: See Extended properties overview for more information about when to use\nopen extensions or extended properties, and how to specify extended properties.
+### [New-MgUserDefaultCalendarEvent](New-MgUserDefaultCalendarEvent.md)
+Use this API to create a new event in a calendar.
+The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
 This API is available in the following national cloud deployments.
 
-### [New-MgUserEventAttachment](New-MgUserEventAttachment.md)
-Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
+### [New-MgUserDefaultCalendarEvent](New-MgUserDefaultCalendarEvent.md)
+Use this API to create a new event in a calendar.
+The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
 This API is available in the following national cloud deployments.
 
 ### [New-MgUserEventExtension](New-MgUserEventExtension.md)
@@ -341,21 +337,19 @@ Delete navigation property extensions for groups
 ### [Remove-MgPlace](Remove-MgPlace.md)
 Delete entity from places
 
-### [Remove-MgUserCalendarGroup](Remove-MgUserCalendarGroup.md)
-Delete a calendar group other than the default calendar group.
+### [Remove-MgPlace](Remove-MgPlace.md)
+Delete entity from places
+
+### [Remove-MgUserCalendarPermission](Remove-MgUserCalendarPermission.md)
+Delete calendarPermission.
 This API is available in the following national cloud deployments.
 
 ### [Remove-MgUserCalendarPermission](Remove-MgUserCalendarPermission.md)
 Delete calendarPermission.
 This API is available in the following national cloud deployments.
 
-### [Remove-MgUserEvent](Remove-MgUserEvent.md)
-Removes the specified event from the containing calendar.
-If the event is a meeting, deleting the event on the organizer's calendar sends a cancellation message to the meeting attendees.
-This API is available in the following national cloud deployments.
-
-### [Remove-MgUserEventAttachment](Remove-MgUserEventAttachment.md)
-Delete an attachment from a user calendar event, mail message, or group post.
+### [Remove-MgUserCalendarPermission](Remove-MgUserCalendarPermission.md)
+Delete calendarPermission.
 This API is available in the following national cloud deployments.
 
 ### [Remove-MgUserEventExtension](Remove-MgUserEventExtension.md)
@@ -390,16 +384,17 @@ Update the properties of place object, which can be a room or roomList.
 You can identify the room or roomList by specifying the id or emailAddress property.
 This API is available in the following national cloud deployments.
 
-### [Update-MgUserCalendarGroup](Update-MgUserCalendarGroup.md)
-Update the properties of calendargroup object.
+### [Update-MgPlace](Update-MgPlace.md)
+Update the properties of place object, which can be a room or roomList.
+You can identify the room or roomList by specifying the id or emailAddress property.
 This API is available in the following national cloud deployments.
 
 ### [Update-MgUserCalendarPermission](Update-MgUserCalendarPermission.md)
 Update the permissions assigned to an existing share recipient or delegate, through the corresponding \<b\>calendarPermission\</b\> object for a calendar.
 This API is available in the following national cloud deployments.
 
-### [Update-MgUserEvent](Update-MgUserEvent.md)
-Update the properties of the event object.
+### [Update-MgUserCalendarPermission](Update-MgUserCalendarPermission.md)
+Update the permissions assigned to an existing share recipient or delegate, through the corresponding \<b\>calendarPermission\</b\> object for a calendar.
 This API is available in the following national cloud deployments.
 
 ### [Update-MgUserEventExtension](Update-MgUserEventExtension.md)

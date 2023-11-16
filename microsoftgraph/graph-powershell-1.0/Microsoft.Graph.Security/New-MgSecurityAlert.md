@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityalert
@@ -47,6 +47,7 @@ New-MgSecurityAlert -BodyParameter <IMicrosoftGraphAlert> [-WhatIf] [-Confirm] [
 Create new navigation property to alerts for security
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -54,10 +55,10 @@ Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityAlert
 ```
+
 This example shows how to use the New-MgSecurityAlert Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -1099,6 +1100,9 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAlert?view=graph-powershell-beta)
+
+
+## RELATED LINKS
 
 
 ## RELATED LINKS

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteaminstalledapp
@@ -47,6 +47,8 @@ New-MgGroupTeamInstalledApp -InputObject <ITeamsIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Install an app to the specified team.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -373,6 +375,9 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaGroupTeamInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamInstalledApp?view=graph-powershell-beta)
+
+
+## RELATED LINKS
 
 
 ## RELATED LINKS

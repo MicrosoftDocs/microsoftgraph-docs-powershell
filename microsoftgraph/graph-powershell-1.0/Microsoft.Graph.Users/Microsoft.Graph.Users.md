@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Users
 Module Guid: c5fbb519-8b8b-4bfc-a15c-751776d7d208
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.users
@@ -324,6 +324,12 @@ This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserPhotoContent](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserPhotoContent?view=graph-powershell-beta)
+
+### [Get-MgUserRegisteredDevice](Get-MgUserRegisteredDevice.md)
+Devices that are registered for the user.
+Read-only.
+Nullable.
+Supports $expand and returns up to 100 objects.
 
 ### [Get-MgUserRegisteredDeviceAsAppRoleAssignment](Get-MgUserRegisteredDeviceAsAppRoleAssignment.md)
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.appRoleAssignment
@@ -764,6 +770,12 @@ Update property mailboxSettings value.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserOutlookMasterCategory?view=graph-powershell-beta)
+
+### [Update-MgUserSetting](Update-MgUserSetting.md)
+Update the properties of the userSettings object.
+Users in the same organization can have different settings based on their preference or on the organization policies.
+To get the user current settings, see current user settings.
+This API is available in the following national cloud deployments.
 
 ### [Update-MgUserSettingShiftPreference](Update-MgUserSettingShiftPreference.md)
 Update the properties and relationships of a shiftPreferences object.

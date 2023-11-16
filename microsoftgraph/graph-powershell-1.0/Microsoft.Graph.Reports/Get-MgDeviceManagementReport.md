@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 ms.prod: intune
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreport
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Get-MgDeviceManagementReport
@@ -25,17 +24,16 @@ Get-MgDeviceManagementReport [-ExpandProperty <String[]>] [-Property <String[]>]
 Read properties and relationships of the deviceManagementReports object.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Reports
 
 Get-MgDeviceManagementReport
-
 ```
-This example shows how to use the Get-MgDeviceManagementReport Cmdlet.
 
+This example shows how to use the Get-MgDeviceManagementReport Cmdlet.
 
 ## PARAMETERS
 

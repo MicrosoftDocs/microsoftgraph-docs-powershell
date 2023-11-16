@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 ms.prod: people
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserphoto
 schema: 2.0.0
-ms.prod: people
 ---
 
 # Get-MgUserPhoto
@@ -55,18 +54,17 @@ You can get the metadata of the largest available photo, or specify a size to ge
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Users
 
 # A UPN can also be used as -UserId.
 Get-MgUserPhotoContent -UserId $userId -OutFile $outFileId
-
 ```
-This example shows how to use the Get-MgUserPhotoContent Cmdlet.
 
+This example shows how to use the Get-MgUserPhotoContent Cmdlet.
 
 ## PARAMETERS
 

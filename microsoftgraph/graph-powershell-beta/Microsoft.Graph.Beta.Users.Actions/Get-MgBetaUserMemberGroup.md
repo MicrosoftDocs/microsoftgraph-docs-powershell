@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 ms.prod: directory-management
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetausermembergroup
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Get-MgBetaUserMemberGroup
@@ -60,6 +59,7 @@ As a workaround, use the List group transitive memberOf API.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Using the Get-MgBetaUserMemberGroup Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
@@ -69,6 +69,7 @@ $params = @{
 # A UPN can also be used as -UserId.
 Get-MgBetaUserMemberGroup -UserId $userId -BodyParameter $params
 ```
+
 This example shows how to use the Get-MgBetaUserMemberGroup Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -246,6 +247,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgUserMemberGroup](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserMemberGroup?view=graph-powershell-1.0)
 
 [Get-MgUserMemberGroup](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserMemberGroup?view=graph-powershell-1.0)

@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 ms.prod: outlook
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaunsubscribeusermessage
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Invoke-MgBetaUnsubscribeUserMessage
@@ -48,12 +47,14 @@ The actual exclusion of the user from future mail distribution is managed by the
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Using the Invoke-MgBetaUnsubscribeUserMessage Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 # A UPN can also be used as -UserId.
 Invoke-MgBetaUnsubscribeUserMessage -UserId $userId -MessageId $messageId
 ```
+
 This example shows how to use the Invoke-MgBetaUnsubscribeUserMessage Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroup
@@ -64,6 +64,7 @@ To get properties that are not returned by default, do a GET operation and speci
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Create a new group
 
 ```powershell
@@ -16625,6 +16626,9 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaGroup](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroup?view=graph-powershell-beta)
+
+
+## RELATED LINKS
 
 
 ## RELATED LINKS

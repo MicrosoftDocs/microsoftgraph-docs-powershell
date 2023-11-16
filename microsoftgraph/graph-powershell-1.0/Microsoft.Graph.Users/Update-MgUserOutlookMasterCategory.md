@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusermailboxsetting
@@ -49,6 +49,7 @@ Update-MgUserMailboxSetting -InputObject <IUsersIdentity> -BodyParameter <IMicro
 Update property mailboxSettings value.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -61,10 +62,10 @@ $params = @{
 # A UPN can also be used as -UserId.
 Update-MgUserOutlookMasterCategory -UserId $userId -OutlookCategoryId $outlookCategoryId -BodyParameter $params
 ```
+
 This example shows how to use the Update-MgUserOutlookMasterCategory Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamprimarychannelmember
@@ -45,6 +45,8 @@ Update-MgGroupTeamPrimaryChannelMember -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the role of a conversationMember in a team or channel.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 

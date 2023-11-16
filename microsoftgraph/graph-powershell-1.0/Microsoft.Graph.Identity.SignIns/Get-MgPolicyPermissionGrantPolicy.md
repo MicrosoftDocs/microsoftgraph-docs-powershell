@@ -1,11 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 ms.prod: identity-and-sign-in
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicypermissiongrantpolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgPolicyPermissionGrantPolicy
@@ -43,6 +41,7 @@ Retrieve a single permissionGrantPolicy object.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1:  List all permission grant policies
 
 ```powershell
@@ -89,7 +88,6 @@ AdditionalProperties : {[@odata.context, https://graph.microsoft.com/beta/$metad
 ```
 
 This command retrieves a specified permission grant policy in Azure AD.
-
 
 ## PARAMETERS
 

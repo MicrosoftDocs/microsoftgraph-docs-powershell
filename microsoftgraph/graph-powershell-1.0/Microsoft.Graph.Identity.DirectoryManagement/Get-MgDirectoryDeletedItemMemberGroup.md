@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 ms.prod: directory-management
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorydeleteditemcountasuser
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Get-MgDirectoryDeletedItemCountAsUser
@@ -25,6 +24,7 @@ Get-MgDirectoryDeletedItemCountAsUser [-Filter <String>] [-Search <String>] [<Co
 Get the number of the resource
 
 ## EXAMPLES
+
 ### Example 1: Check group memberships for a directory object
 
 ```powershell
@@ -36,6 +36,7 @@ $params = @{
 
 Get-MgDirectoryObjectMemberGroup -DirectoryObjectId $directoryObjectId -BodyParameter $params
 ```
+
 This example shows how to use the Get-MgDirectoryDeletedItemMemberGroup Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -52,10 +53,10 @@ $params = @{
 # A UPN can also be used as -UserId.
 Get-MgUserMemberGroup -UserId $userId -BodyParameter $params
 ```
+
 This example shows how to use the Get-MgDirectoryDeletedItemMemberGroup Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

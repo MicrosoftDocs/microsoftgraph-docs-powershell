@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 ms.prod: sites-and-lists
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/join-mgsharelistcontenttypewithhubsite
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Join-MgShareListContentTypeWithHubSite
@@ -260,6 +259,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Join-MgBetaShareListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Beta.Files/Join-MgBetaShareListContentTypeWithHubSite?view=graph-powershell-beta)
 
 [Join-MgBetaShareListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Beta.Files/Join-MgBetaShareListContentTypeWithHubSite?view=graph-powershell-beta)

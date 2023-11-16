@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 ms.prod: sites-and-lists
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoregroupsetrelation
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Get-MgSiteTermStoreGroupSetRelation
@@ -57,6 +56,8 @@ Get-MgSiteTermStoreGroupSetRelation -InputObject <ISitesIdentity> [-ExpandProper
 
 ## DESCRIPTION
 Indicates which terms have been pinned or reused directly under the set.
+
+## EXAMPLES
 
 ## PARAMETERS
 

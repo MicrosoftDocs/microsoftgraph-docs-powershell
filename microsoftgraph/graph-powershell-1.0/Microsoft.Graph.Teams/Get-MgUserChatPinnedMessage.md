@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchatpinnedmessage
@@ -50,6 +50,8 @@ Get-MgUserChatPinnedMessage -InputObject <ITeamsIdentity> [-ExpandProperty <Stri
 ## DESCRIPTION
 A collection of all the pinned messages in the chat.
 Nullable.
+
+## EXAMPLES
 
 ## PARAMETERS
 

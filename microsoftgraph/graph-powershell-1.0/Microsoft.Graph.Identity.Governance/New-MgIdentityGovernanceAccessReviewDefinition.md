@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewdefinition
@@ -41,6 +41,7 @@ Create a new accessReviewScheduleDefinition object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Create an access review on a group
 
 ```powershell
@@ -84,6 +85,7 @@ $params = @{
 
 New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter $params
 ```
+
 This example shows how to use the New-MgIdentityGovernanceAccessReviewDefinition Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -145,6 +147,7 @@ $params = @{
 
 New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter $params
 ```
+
 This example shows how to use the New-MgIdentityGovernanceAccessReviewDefinition Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -215,6 +218,7 @@ $params = @{
 
 New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter $params
 ```
+
 This example shows how to use the New-MgIdentityGovernanceAccessReviewDefinition Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -289,10 +293,10 @@ $params = @{
 
 New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter $params
 ```
+
 This example shows how to use the New-MgIdentityGovernanceAccessReviewDefinition Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -899,6 +903,9 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceAccessReviewDefinition?view=graph-powershell-beta)
+
+
+## RELATED LINKS
 
 
 ## RELATED LINKS

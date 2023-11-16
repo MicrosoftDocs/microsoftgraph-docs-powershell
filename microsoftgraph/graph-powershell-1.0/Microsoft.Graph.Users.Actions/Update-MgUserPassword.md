@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/update-mguserpassword
@@ -52,6 +52,7 @@ Any user can update their password without belonging to any administrator role.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Using the Update-MgUserPassword Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
@@ -62,6 +63,7 @@ $params = @{
 # A UPN can also be used as -UserId.
 Update-MgUserPassword -UserId $userId -BodyParameter $params
 ```
+
 This example shows how to use the Update-MgUserPassword Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -261,6 +263,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Update-MgBetaUserPassword](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Update-MgBetaUserPassword?view=graph-powershell-beta)
 
 [Update-MgBetaUserPassword](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Update-MgBetaUserPassword?view=graph-powershell-beta)

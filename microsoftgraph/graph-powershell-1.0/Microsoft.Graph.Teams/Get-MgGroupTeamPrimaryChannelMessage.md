@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamprimarychannelmessage
@@ -38,6 +38,8 @@ Get-MgGroupTeamPrimaryChannelMessage -InputObject <ITeamsIdentity> [-ExpandPrope
 ## DESCRIPTION
 Retrieve a single message or a message reply in a channel or a chat.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 

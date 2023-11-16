@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamincomingchannel
@@ -38,17 +38,16 @@ Get-MgTeamIncomingChannel -InputObject <ITeamsIdentity> [-ExpandProperty <String
 List of channels shared with the team.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamIncomingChannel -TeamId $teamId
-
 ```
-This example shows how to use the Get-MgTeamIncomingChannel Cmdlet.
 
+This example shows how to use the Get-MgTeamIncomingChannel Cmdlet.
 
 ## PARAMETERS
 

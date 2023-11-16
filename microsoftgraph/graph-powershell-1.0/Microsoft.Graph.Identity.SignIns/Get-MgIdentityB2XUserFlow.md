@@ -1,11 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 ms.prod: identity-and-sign-in
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflow
 schema: 2.0.0
-ms.prod: identity-and-sign-in
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgIdentityB2XUserFlow
@@ -43,28 +41,26 @@ Retrieve the properties and relationships of a b2xIdentityUserFlow object.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: List all b2xIdentityUserFlow objects
 
 ```powershell
-
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgIdentityB2XUserFlow
-
 ```
+
 This example will list all b2xidentityuserflow objects
 
 ### Example 2: List all b2xIdentityUserFlow objects and expand identityProviders
 
 ```powershell
-
 Import-Module Microsoft.Graph.Identity.SignIns
 
-Get-MgIdentityB2XUserFlow -ExpandProperty "identityProviders" 
-
+Get-MgIdentityB2XUserFlow -ExpandProperty "identityProviders"
 ```
-This example will list all b2xidentityuserflow objects and expand identityproviders
 
+This example will list all b2xidentityuserflow objects and expand identityproviders
 
 ## PARAMETERS
 

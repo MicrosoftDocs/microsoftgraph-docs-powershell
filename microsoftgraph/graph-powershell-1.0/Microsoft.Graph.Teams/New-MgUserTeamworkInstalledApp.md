@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserteamworkinstalledapp
@@ -49,10 +49,10 @@ Install an app in the personal scope of the specified user.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
@@ -60,10 +60,9 @@ $params = @{
 }
 
 New-MgUserTeamworkInstalledApp -UserId $userId -BodyParameter $params
-
 ```
-This example shows how to use the New-MgUserTeamworkInstalledApp Cmdlet.
 
+This example shows how to use the New-MgUserTeamworkInstalledApp Cmdlet.
 
 ## PARAMETERS
 
@@ -725,6 +724,9 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaUserTeamworkInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserTeamworkInstalledApp?view=graph-powershell-beta)
+
+
+## RELATED LINKS
 
 
 ## RELATED LINKS

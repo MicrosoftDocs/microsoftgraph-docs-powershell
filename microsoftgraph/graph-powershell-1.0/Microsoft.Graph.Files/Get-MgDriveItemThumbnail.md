@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemthumbnail
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Get-MgDriveItemThumbnail
@@ -49,28 +48,26 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Files
 
 Get-MgDriveItemThumbnail -DriveId $driveId -DriveItemId $driveItemId
-
 ```
+
 This example shows how to use the Get-MgDriveItemThumbnail Cmdlet.
 
 ### Example 2: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Files
 
-Get-MgDriveItemThumbnail -DriveId $driveId -DriveItemId $driveItemId -Property "c300x400_crop" 
-
+Get-MgDriveItemThumbnail -DriveId $driveId -DriveItemId $driveItemId -Property "c300x400_crop"
 ```
-This example shows how to use the Get-MgDriveItemThumbnail Cmdlet.
 
+This example shows how to use the Get-MgDriveItemThumbnail Cmdlet.
 
 ## PARAMETERS
 
@@ -331,6 +328,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaDriveItemThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemThumbnail?view=graph-powershell-beta)
 
 [Get-MgBetaDriveItemThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemThumbnail?view=graph-powershell-beta)

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistcontenttypecompatiblehubcontenttype
@@ -220,6 +220,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaDriveListContentTypeCompatibleHubContentType](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListContentTypeCompatibleHubContentType?view=graph-powershell-beta)
 
 [Get-MgBetaDriveListContentTypeCompatibleHubContentType](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListContentTypeCompatibleHubContentType?view=graph-powershell-beta)

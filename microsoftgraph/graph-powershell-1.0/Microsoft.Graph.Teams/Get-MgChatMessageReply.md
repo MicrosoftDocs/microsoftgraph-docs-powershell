@@ -1,11 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 ms.prod: microsoft-teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatmessagereply
 schema: 2.0.0
-ms.prod: microsoft-teams
-ms.prod: microsoft-teams
 ---
 
 # Get-MgChatMessageReply
@@ -41,6 +39,8 @@ Get-MgChatMessageReply -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>
 ## DESCRIPTION
 Retrieve a single message or a message reply in a channel or a chat.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 

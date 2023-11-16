@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 ms.prod: outlook
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetasignuserinformationprotectiondigest
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Invoke-MgBetaSignUserInformationProtectionDigest
@@ -50,6 +49,7 @@ Invoke-MgBetaSignUserInformationProtectionDigest -InputObject <IUsersActionsIden
 Invoke action signDigest
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -65,10 +65,10 @@ $params = @{
 # A UPN can also be used as -UserId.
 Invoke-MgBetaSnoozeUserEventReminder -UserId $userId -EventId $eventId -BodyParameter $params
 ```
+
 This example shows how to use the Invoke-MgBetaSnoozeUserEventInstanceReminder Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -264,6 +264,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Invoke-MgSnoozeUserEventInstanceReminder](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgSnoozeUserEventInstanceReminder?view=graph-powershell-1.0)
 
 [Invoke-MgSnoozeUserEventInstanceReminder](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgSnoozeUserEventInstanceReminder?view=graph-powershell-1.0)

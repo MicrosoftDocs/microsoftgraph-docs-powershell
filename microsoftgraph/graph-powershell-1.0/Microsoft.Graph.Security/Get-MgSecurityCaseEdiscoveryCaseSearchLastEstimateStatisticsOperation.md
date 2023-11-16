@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 ms.prod: ediscovery
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasesearchlastestimatestatisticsoperation
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # Get-MgSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation
@@ -35,17 +34,16 @@ Get the last  ediscoveryEstimateOperation objects and their properties.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId
-
 ```
-This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation Cmdlet.
 
+This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation Cmdlet.
 
 ## PARAMETERS
 

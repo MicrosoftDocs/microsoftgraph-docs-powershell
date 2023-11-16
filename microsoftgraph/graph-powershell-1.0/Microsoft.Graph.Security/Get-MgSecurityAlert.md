@@ -1,11 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 ms.prod: security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityalert
 schema: 2.0.0
-ms.prod: security
-ms.prod: security
 ---
 
 # Get-MgSecurityAlert
@@ -42,17 +40,16 @@ Retrieve the properties and relationships of an alert object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityAlert
-
 ```
-This example shows how to use the Get-MgSecurityAlert Cmdlet.
 
+This example shows how to use the Get-MgSecurityAlert Cmdlet.
 
 ## PARAMETERS
 

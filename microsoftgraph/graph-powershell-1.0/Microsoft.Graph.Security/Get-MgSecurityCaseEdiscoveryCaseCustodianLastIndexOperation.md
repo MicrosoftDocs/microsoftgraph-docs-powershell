@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 ms.prod: ediscovery
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasecustodianlastindexoperation
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # Get-MgSecurityCaseEdiscoveryCaseCustodianLastIndexOperation
@@ -35,17 +34,16 @@ Get a list of the ediscoveryIndexOperations associated with an ediscoveryCustodi
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityCaseEdiscoveryCaseCustodianLastIndexOperation -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId
-
 ```
-This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseCustodianLastIndexOperation Cmdlet.
 
+This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseCustodianLastIndexOperation Cmdlet.
 
 ## PARAMETERS
 

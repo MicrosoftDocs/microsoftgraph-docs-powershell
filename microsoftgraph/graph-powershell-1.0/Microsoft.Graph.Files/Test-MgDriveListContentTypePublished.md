@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/test-mgdrivelistcontenttypepublished
@@ -126,6 +126,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Test-MgBetaDriveListContentTypePublished](/powershell/module/Microsoft.Graph.Beta.Files/Test-MgBetaDriveListContentTypePublished?view=graph-powershell-beta)
 
 [Test-MgBetaDriveListContentTypePublished](/powershell/module/Microsoft.Graph.Beta.Files/Test-MgBetaDriveListContentTypePublished?view=graph-powershell-beta)

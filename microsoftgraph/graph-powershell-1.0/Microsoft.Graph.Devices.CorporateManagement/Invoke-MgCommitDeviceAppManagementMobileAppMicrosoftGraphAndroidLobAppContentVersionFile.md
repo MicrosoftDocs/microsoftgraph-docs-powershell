@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mgcommitdeviceappmanagementmobileappmicrosoftgraphandroidlobappcontentversionfile
 schema: 2.0.0
@@ -17,7 +17,7 @@ Commits a file of a given app.
 Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphAndroidLobAppContentVersionFile
  -MobileAppContentFileId <String> -MobileAppContentId <String> -MobileAppId <String>
  [-AdditionalProperties <Hashtable>] [-FileEncryptionInfo <IMicrosoftGraphFileEncryptionInfo>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Commit
@@ -25,7 +25,15 @@ Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphAndroidLobAppContentVer
 Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphAndroidLobAppContentVersionFile
  -MobileAppContentFileId <String> -MobileAppContentId <String> -MobileAppId <String>
  -BodyParameter <IPathsNf5Mr6DeviceappmanagementMobileappsMobileappIdMicrosoftGraphAndroidlobappContentversionsMobileappcontentIdFilesMobileappcontentfileIdMicrosoftGraphCommitPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CommitViaIdentityExpanded
+```
+Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphAndroidLobAppContentVersionFile
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>]
+ [-FileEncryptionInfo <IMicrosoftGraphFileEncryptionInfo>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CommitViaIdentity
@@ -33,15 +41,7 @@ Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphAndroidLobAppContentVer
 Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphAndroidLobAppContentVersionFile
  -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IPathsNf5Mr6DeviceappmanagementMobileappsMobileappIdMicrosoftGraphAndroidlobappContentversionsMobileappcontentIdFilesMobileappcontentfileIdMicrosoftGraphCommitPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CommitViaIdentityExpanded
-```
-Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphAndroidLobAppContentVersionFile
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>]
- [-FileEncryptionInfo <IMicrosoftGraphFileEncryptionInfo>] [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,19 +49,15 @@ Commits a file of a given app.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -69,7 +65,7 @@ Commits a file of a given app.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CommitExpanded, CommitViaIdentityExpanded
 Aliases:
 
@@ -85,7 +81,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPathsNf5Mr6DeviceappmanagementMobileappsMobileappIdMicrosoftGraphAndroidlobappContentversionsMobileappcontentIdFilesMobileappcontentfileIdMicrosoftGraphCommitPostRequestbodyContentApplicationJsonSchema
+Type: IPathsNf5Mr6DeviceappmanagementMobileappsMobileappIdMicrosoftGraphAndroidlobappContentversionsMobileappcontentIdFilesMobileappcontentfileIdMicrosoftGraphCommitPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Commit, CommitViaIdentity
 Aliases:
 
@@ -101,7 +97,7 @@ Contains properties for file encryption information for the content version of a
 To construct, see NOTES section for FILEENCRYPTIONINFO properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFileEncryptionInfo
+Type: IMicrosoftGraphFileEncryptionInfo
 Parameter Sets: CommitExpanded, CommitViaIdentityExpanded
 Aliases:
 
@@ -117,8 +113,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-Parameter Sets: CommitViaIdentity, CommitViaIdentityExpanded
+Type: IDevicesCorporateManagementIdentity
+Parameter Sets: CommitViaIdentityExpanded, CommitViaIdentity
 Aliases:
 
 Required: True
@@ -132,8 +128,8 @@ Accept wildcard characters: False
 The unique identifier of mobileAppContentFile
 
 ```yaml
-Type: System.String
-Parameter Sets: Commit, CommitExpanded
+Type: String
+Parameter Sets: CommitExpanded, Commit
 Aliases:
 
 Required: True
@@ -147,8 +143,8 @@ Accept wildcard characters: False
 The unique identifier of mobileAppContent
 
 ```yaml
-Type: System.String
-Parameter Sets: Commit, CommitExpanded
+Type: String
+Parameter Sets: CommitExpanded, Commit
 Aliases:
 
 Required: True
@@ -162,8 +158,8 @@ Accept wildcard characters: False
 The unique identifier of mobileApp
 
 ```yaml
-Type: System.String
-Parameter Sets: Commit, CommitExpanded
+Type: String
+Parameter Sets: CommitExpanded, Commit
 Aliases:
 
 Required: True
@@ -177,7 +173,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -192,7 +188,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -208,7 +204,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -225,13 +221,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IPathsNf5Mr6DeviceappmanagementMobileappsMobileappIdMicrosoftGraphAndroidlobappContentversionsMobileappcontentIdFilesMobileappcontentfileIdMicrosoftGraphCommitPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -301,4 +294,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
-

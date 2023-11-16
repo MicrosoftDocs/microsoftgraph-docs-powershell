@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetauserdriverootuploadsession
@@ -48,6 +48,7 @@ New-MgBetaUserDriveRootUploadSession -InputObject <IUsersActionsIdentity>
 Invoke action createUploadSession
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -56,10 +57,10 @@ Import-Module Microsoft.Graph.Beta.Users.Actions
 # A UPN can also be used as -UserId.
 New-MgBetaUserMessageReply -UserId $userId -MessageId $messageId
 ```
+
 This example shows how to use the New-MgBetaUserMailFolderMessageReply Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -271,6 +272,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Name <String>]`: The name of the item (filename and extension). Read-write.
 
 ## RELATED LINKS
+
 [New-MgUserMailFolderMessageReply](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMailFolderMessageReply?view=graph-powershell-1.0)
 
 [New-MgUserMailFolderMessageReply](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMailFolderMessageReply?view=graph-powershell-1.0)

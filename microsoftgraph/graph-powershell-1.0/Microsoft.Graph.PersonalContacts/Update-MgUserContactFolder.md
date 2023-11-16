@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontactextension
@@ -43,6 +43,7 @@ Update-MgUserContactExtension -InputObject <IPersonalContactsIdentity> -BodyPara
 Update the navigation property extensions in users
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -56,10 +57,10 @@ $params = @{
 # A UPN can also be used as -UserId.
 Update-MgUserContactFolder -UserId $userId -ContactFolderId $contactFolderId -BodyParameter $params
 ```
+
 This example shows how to use the Update-MgUserContactFolder Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

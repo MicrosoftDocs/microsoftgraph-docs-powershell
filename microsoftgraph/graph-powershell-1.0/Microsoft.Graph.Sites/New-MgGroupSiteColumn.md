@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitecolumn
@@ -1144,5 +1144,8 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaGroupSiteColumn](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteColumn?view=graph-powershell-beta)
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

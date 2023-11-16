@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduletimeoff
@@ -47,10 +47,10 @@ Create a new timeOff instance in a schedule.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
@@ -70,10 +70,9 @@ $params = @{
 }
 
 New-MgTeamScheduleTimeOff -TeamId $teamId -BodyParameter $params
-
 ```
-This example shows how to use the New-MgTeamScheduleTimeOff Cmdlet.
 
+This example shows how to use the New-MgTeamScheduleTimeOff Cmdlet.
 
 ## PARAMETERS
 

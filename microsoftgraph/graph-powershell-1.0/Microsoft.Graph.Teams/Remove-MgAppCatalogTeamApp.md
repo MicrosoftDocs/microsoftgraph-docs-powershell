@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgappcatalogteamapp
@@ -31,17 +31,16 @@ Remove-MgAppCatalogTeamApp -InputObject <ITeamsIdentity> [-IfMatch <String>] [-P
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 Remove-MgAppCatalogTeamApp -TeamsAppId $teamsAppId
-
 ```
-This example shows how to use the Remove-MgAppCatalogTeamApp Cmdlet.
 
+This example shows how to use the Remove-MgAppCatalogTeamApp Cmdlet.
 
 ## PARAMETERS
 

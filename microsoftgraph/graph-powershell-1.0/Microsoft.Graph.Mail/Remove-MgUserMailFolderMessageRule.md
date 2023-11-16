@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermailfoldermessageextension
@@ -35,6 +35,7 @@ For the list of resources that support open extensions, see the table in the Per
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -43,10 +44,10 @@ Import-Module Microsoft.Graph.Mail
 # A UPN can also be used as -UserId.
 Remove-MgUserMailFolderMessageRule -UserId $userId -MailFolderId $mailFolderId -MessageRuleId $messageRuleId
 ```
+
 This example shows how to use the Remove-MgUserMailFolderMessageRule Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

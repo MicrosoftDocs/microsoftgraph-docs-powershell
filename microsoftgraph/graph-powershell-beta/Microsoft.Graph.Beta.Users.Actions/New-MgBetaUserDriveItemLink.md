@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetauserdriveitemlink
@@ -384,6 +384,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
+
 [New-MgUserDriveItemLink](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserDriveItemLink?view=graph-powershell-1.0)
 
 [New-MgUserDriveItemLink](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserDriveItemLink?view=graph-powershell-1.0)

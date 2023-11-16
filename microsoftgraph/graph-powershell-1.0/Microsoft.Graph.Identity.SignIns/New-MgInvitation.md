@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mginvitation
@@ -37,6 +37,7 @@ Invitation adds an external user to the organization.
 When creating a new invitation, you have several options available: This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Invite a user and send default invitation email
 ```powershell
 PS C:\> New-MgInvitation -InvitedUserDisplayName "John Doe" -InvitedUserEmailAddress John@contoso.com -InviteRedirectUrl "https://myapplications.microsoft.com" -SendInvitationMessage:$true
@@ -59,7 +60,6 @@ PS C:\> New-MgInvitation -InvitedUserDisplayName "John Doe" -InvitedUserEmailAdd
 Id                                   InviteRedeemUrl                                                                                                   
 --                                   ---------------                                                                                                   
 2fe815c1-aecc-4f66-b1d0-952a60df2409 https://login.microsoftonline.com/redeem?rd=https%3a%2f%2finvitations.microsoft.com%2fredeem%2f%3ftenant%3d094a...
-
 ```
 
 Invite a guest user with the following:
@@ -6109,6 +6109,9 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaInvitation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaInvitation?view=graph-powershell-beta)
+
+
+## RELATED LINKS
 
 
 ## RELATED LINKS

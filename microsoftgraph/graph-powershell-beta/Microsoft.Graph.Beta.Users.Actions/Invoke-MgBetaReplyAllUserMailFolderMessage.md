@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 ms.prod: outlook
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetareenableusermanageddevice
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Invoke-MgBetaReenableUserManagedDevice
@@ -36,6 +35,7 @@ Invoke-MgBetaReenableUserManagedDevice -InputObject <IUsersActionsIdentity> [-Pa
 Invoke action reenable
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -48,10 +48,10 @@ $params = @{
 # A UPN can also be used as -UserId.
 Invoke-MgBetaReplyAllUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
+
 This example shows how to use the Invoke-MgBetaReplyAllUserMailFolderMessage Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -206,6 +206,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Invoke-MgReplyAllUserMailFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyAllUserMailFolderMessage?view=graph-powershell-1.0)
 
 [Invoke-MgReplyAllUserMailFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyAllUserMailFolderMessage?view=graph-powershell-1.0)

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgoauth2permissiongrant
@@ -36,6 +36,7 @@ A delegated permission grant authorizes a client service principal (representing
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -50,10 +51,10 @@ $params = @{
 
 New-MgOauth2PermissionGrant -BodyParameter $params
 ```
+
 This example shows how to use the New-MgOauth2PermissionGrant Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

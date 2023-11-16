@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgshareshareddriveitemshareddriveitem
@@ -34,6 +34,7 @@ Remove-MgShareSharedDriveItemSharedDriveItem -InputObject <IFilesIdentity> [-IfM
 Delete entity from shares
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -41,6 +42,7 @@ Import-Module Microsoft.Graph.Files
 
 Get-MgShareSharedDriveItemSharedDriveItem -SharedDriveItemId $sharedDriveItemId
 ```
+
 This example shows how to use the Remove-MgShareSharedDriveItemSharedDriveItem Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -52,6 +54,7 @@ Import-Module Microsoft.Graph.Files
 
 Get-MgShareDriveItem -SharedDriveItemId $sharedDriveItemId
 ```
+
 This example shows how to use the Remove-MgShareSharedDriveItemSharedDriveItem Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -63,10 +66,10 @@ Import-Module Microsoft.Graph.Files
 
 Get-MgShareDriveItem -SharedDriveItemId $sharedDriveItemId -ExpandProperty "children"
 ```
+
 This example shows how to use the Remove-MgShareSharedDriveItemSharedDriveItem Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -207,6 +210,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaShareSharedDriveItemSharedDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareSharedDriveItemSharedDriveItem?view=graph-powershell-beta)
 
 [Remove-MgBetaShareSharedDriveItemSharedDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareSharedDriveItemSharedDriveItem?view=graph-powershell-beta)

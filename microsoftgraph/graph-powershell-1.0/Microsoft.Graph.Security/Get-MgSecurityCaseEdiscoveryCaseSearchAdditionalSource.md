@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 ms.prod: ediscovery
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasesearchadditionalsource
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # Get-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource
@@ -40,17 +39,16 @@ Get-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource -InputObject <ISecurityId
 Adds an additional source to the eDiscovery search.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId
-
 ```
-This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource Cmdlet.
 
+This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource Cmdlet.
 
 ## PARAMETERS
 

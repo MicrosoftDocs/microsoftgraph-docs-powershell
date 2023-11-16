@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/grant-mggroupdriveitempermission
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Grant-MgGroupDriveItemPermission
@@ -51,6 +50,7 @@ Grant users access to a link represented by a permission][].
 This API is available in the following [national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -72,10 +72,10 @@ $params = @{
 
 Grant-MgSharePermission -SharedDriveItemId $sharedDriveItemId -BodyParameter $params
 ```
+
 This example shows how to use the Grant-MgGroupDriveItemPermission Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

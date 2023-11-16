@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 ms.prod: microsoft-teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgallteamchannel
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Get-MgAllTeamChannel
@@ -40,28 +39,26 @@ Get-MgAllTeamChannel -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] 
 List of channels either hosted in or shared with the team (incoming channels).
 
 ## EXAMPLES
+
 ### Example 1: List all channels
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 Get-MgAllTeamChannel -TeamId $teamId
-
 ```
+
 This example will list all channels
 
 ### Example 2: List all shared channels
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
-Get-MgAllTeamChannel -TeamId $teamId -Filter "membershipType eq 'shared'" 
-
+Get-MgAllTeamChannel -TeamId $teamId -Filter "membershipType eq 'shared'"
 ```
-This example will list all shared channels
 
+This example will list all shared channels
 
 ## PARAMETERS
 

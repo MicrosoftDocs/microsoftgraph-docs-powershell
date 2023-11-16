@@ -1,11 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 ms.prod: microsoft-teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatmessagehostedcontent
 schema: 2.0.0
-ms.prod: microsoft-teams
-ms.prod: microsoft-teams
 ---
 
 # Get-MgChatMessageHostedContent
@@ -54,17 +52,16 @@ Retrieve the properties and relationships of chatMessageHostedContent object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: List hosted content for message in a chat
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 Get-MgChatMessageHostedContent -ChatId $chatId -ChatMessageId $chatMessageId
-
 ```
-This example will list hosted content for message in a chat
 
+This example will list hosted content for message in a chat
 
 ## PARAMETERS
 

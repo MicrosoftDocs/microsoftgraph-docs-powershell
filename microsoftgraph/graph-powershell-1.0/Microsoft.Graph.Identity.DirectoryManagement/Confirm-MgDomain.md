@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 ms.prod: directory-management
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/confirm-mgdomain
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Confirm-MgDomain
@@ -33,17 +32,16 @@ Validates the ownership of the domain.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Confirm-MgDomain -DomainId $domainId
-
 ```
-This example shows how to use the Confirm-MgDomain Cmdlet.
 
+This example shows how to use the Confirm-MgDomain Cmdlet.
 
 ## PARAMETERS
 

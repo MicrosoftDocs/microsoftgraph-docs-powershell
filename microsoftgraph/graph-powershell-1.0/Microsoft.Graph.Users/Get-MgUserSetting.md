@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 ms.prod: users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserregistereddevicecountasendpoint
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Get-MgUserRegisteredDeviceCountAsEndpoint
@@ -33,18 +32,17 @@ Get-MgUserRegisteredDeviceCountAsEndpoint -InputObject <IUsersIdentity> [-Filter
 Get the number of the resource
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Users
 
 # A UPN can also be used as -UserId.
 Get-MgUserSetting -UserId $userId
-
 ```
-This example shows how to use the Get-MgUserSetting Cmdlet.
 
+This example shows how to use the Get-MgUserSetting Cmdlet.
 
 ## PARAMETERS
 

@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 ms.prod: identity-and-sign-in
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mgdismissriskyuser
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Invoke-MgDismissRiskyUser
@@ -38,6 +37,7 @@ This action sets the targeted user's risk level to none.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Using the Invoke-MgDismissRiskyUser Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
@@ -49,6 +49,7 @@ $params = @{
 }
 Invoke-MgDismissRiskyUser -BodyParameter $params
 ```
+
 This example shows how to use the Invoke-MgDismissRiskyUser Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 

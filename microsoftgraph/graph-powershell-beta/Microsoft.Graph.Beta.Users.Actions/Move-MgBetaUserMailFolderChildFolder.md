@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/move-mgbetausermailfolder
@@ -50,6 +50,7 @@ Move a mail folder and its contents to another mail folder.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -62,10 +63,10 @@ $params = @{
 # A UPN can also be used as -UserId.
 Move-MgBetaUserMailFolder -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
 ```
+
 This example shows how to use the Move-MgBetaUserMailFolderChildFolder Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -256,6 +257,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Move-MgUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Users.Actions/Move-MgUserMailFolderChildFolder?view=graph-powershell-1.0)
 
 [Move-MgUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Users.Actions/Move-MgUserMailFolderChildFolder?view=graph-powershell-1.0)

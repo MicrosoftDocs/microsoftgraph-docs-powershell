@@ -1,11 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 ms.prod: cloud-printing
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportdailyprintusagebyprinter
 schema: 2.0.0
-ms.prod: cloud-printing
-ms.prod: cloud-printing
 ---
 
 # Get-MgReportDailyPrintUsageByPrinter
@@ -45,17 +43,16 @@ For descriptions of each of the endpoints, see printUsageByPrinter.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Reports
 
 Get-MgReportDailyPrintUsageByPrinter
-
 ```
-This example shows how to use the Get-MgReportDailyPrintUsageByPrinter Cmdlet.
 
+This example shows how to use the Get-MgReportDailyPrintUsageByPrinter Cmdlet.
 
 ## PARAMETERS
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyrolemanagementpolicyrule
@@ -45,6 +45,7 @@ New-MgPolicyRoleManagementPolicyRule -InputObject <IIdentitySignInsIdentity>
 Create new navigation property to rules for policies
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -52,10 +53,10 @@ Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgPolicyRoleManagementPolicyRule -UnifiedRoleManagementPolicyId $unifiedRoleManagementPolicyId
 ```
+
 This example shows how to use the New-MgPolicyRoleManagementPolicyRule Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

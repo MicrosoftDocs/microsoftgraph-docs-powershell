@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/rename-mgbetadevicemanagementvirtualendpointcloudpcuseraccounttype
 schema: 2.0.0
@@ -16,7 +16,7 @@ This API is available in the following national cloud deployments.
 ### ChangeExpanded (Default)
 ```
 Rename-MgBetaDeviceManagementVirtualEndpointCloudPcUserAccountType -CloudPcId <String>
- [-AdditionalProperties <Hashtable>] [-UserAccountType <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [-AdditionalProperties <Hashtable>] [-UserAccountType <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -24,7 +24,14 @@ Rename-MgBetaDeviceManagementVirtualEndpointCloudPcUserAccountType -CloudPcId <S
 ```
 Rename-MgBetaDeviceManagementVirtualEndpointCloudPcUserAccountType -CloudPcId <String>
  -BodyParameter <IPathsFjf5ZaDevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphChangeuseraccounttypePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ChangeViaIdentityExpanded
+```
+Rename-MgBetaDeviceManagementVirtualEndpointCloudPcUserAccountType
+ -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-UserAccountType <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ChangeViaIdentity
@@ -32,14 +39,7 @@ Rename-MgBetaDeviceManagementVirtualEndpointCloudPcUserAccountType -CloudPcId <S
 Rename-MgBetaDeviceManagementVirtualEndpointCloudPcUserAccountType
  -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPathsFjf5ZaDevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphChangeuseraccounttypePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### ChangeViaIdentityExpanded
-```
-Rename-MgBetaDeviceManagementVirtualEndpointCloudPcUserAccountType
- -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-UserAccountType <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -48,7 +48,7 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
 $params = @{
@@ -57,15 +57,13 @@ $params = @{
 Rename-MgBetaDeviceManagementVirtualEndpointCloudPcUserAccountType -CloudPCId $cloudPCId -BodyParameter $params
 ```
 
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: ChangeExpanded, ChangeViaIdentityExpanded
 Aliases:
 
@@ -81,7 +79,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsFjf5ZaDevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphChangeuseraccounttypePostRequestbodyContentApplicationJsonSchema
+Type: IPathsFjf5ZaDevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphChangeuseraccounttypePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Change, ChangeViaIdentity
 Aliases:
 
@@ -96,8 +94,8 @@ Accept wildcard characters: False
 The unique identifier of cloudPC
 
 ```yaml
-Type: System.String
-Parameter Sets: Change, ChangeExpanded
+Type: String
+Parameter Sets: ChangeExpanded, Change
 Aliases:
 
 Required: True
@@ -112,8 +110,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
-Parameter Sets: ChangeViaIdentity, ChangeViaIdentityExpanded
+Type: IDeviceManagementActionsIdentity
+Parameter Sets: ChangeViaIdentityExpanded, ChangeViaIdentity
 Aliases:
 
 Required: True
@@ -127,7 +125,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -142,7 +140,7 @@ Accept wildcard characters: False
 cloudPcUserAccountType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: ChangeExpanded, ChangeViaIdentityExpanded
 Aliases:
 
@@ -157,7 +155,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -173,7 +171,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -190,13 +188,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsFjf5ZaDevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphChangeuseraccounttypePostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -264,4 +259,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
-

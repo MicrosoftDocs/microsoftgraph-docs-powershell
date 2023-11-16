@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/send-mguserteamworkactivitynotification
@@ -56,6 +56,7 @@ For more details about sending notifications and the requirements for doing so, 
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Using the Send-MgUserTeamworkActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
@@ -78,8 +79,10 @@ $params = @{
 }
 Send-MgUserTeamworkActivityNotification -UserId $userId -BodyParameter $params
 ```
+
 This example shows how to use the Send-MgUserTeamworkActivityNotification Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ### Example 2: Using the Send-MgUserTeamworkActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
@@ -102,8 +105,10 @@ $params = @{
 }
 Send-MgUserTeamworkActivityNotification -UserId $userId -BodyParameter $params
 ```
+
 This example shows how to use the Send-MgUserTeamworkActivityNotification Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ### Example 3: Using the Send-MgUserTeamworkActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
@@ -125,6 +130,7 @@ $params = @{
 }
 Send-MgUserTeamworkActivityNotification -UserId $userId -BodyParameter $params
 ```
+
 This example shows how to use the Send-MgUserTeamworkActivityNotification Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -399,6 +405,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: The link the user clicks when they select the notification. Optional when source is entityUrl; required when source is text.
 
 ## RELATED LINKS
+
 [Send-MgBetaUserTeamworkActivityNotification](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Send-MgBetaUserTeamworkActivityNotification?view=graph-powershell-beta)
 
 [Send-MgBetaUserTeamworkActivityNotification](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Send-MgBetaUserTeamworkActivityNotification?view=graph-powershell-beta)

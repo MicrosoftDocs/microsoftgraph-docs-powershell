@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetauserdriveitempermanent
@@ -203,6 +203,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgUserDriveItemPermanent](/powershell/module/Microsoft.Graph.Users.Actions/Remove-MgUserDriveItemPermanent?view=graph-powershell-1.0)
 
 [Remove-MgUserDriveItemPermanent](/powershell/module/Microsoft.Graph.Users.Actions/Remove-MgUserDriveItemPermanent?view=graph-powershell-1.0)

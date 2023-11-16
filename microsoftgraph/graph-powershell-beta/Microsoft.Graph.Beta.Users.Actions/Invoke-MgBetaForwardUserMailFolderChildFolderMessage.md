@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 ms.prod: outlook
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaforwarduserevent
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Invoke-MgBetaForwardUserEvent
@@ -58,6 +57,7 @@ This convenience is not available when forwarding from an Outlook.com account.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -78,10 +78,10 @@ $params = @{
 # A UPN can also be used as -UserId.
 Invoke-MgBetaForwardUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
+
 This example shows how to use the Invoke-MgBetaForwardUserMailFolderChildFolderMessage Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -314,6 +314,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Name <String>]`: The display name of an entity instance.
 
 ## RELATED LINKS
+
 [Invoke-MgForwardUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgForwardUserMailFolderChildFolderMessage?view=graph-powershell-1.0)
 
 [Invoke-MgForwardUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgForwardUserMailFolderChildFolderMessage?view=graph-powershell-1.0)

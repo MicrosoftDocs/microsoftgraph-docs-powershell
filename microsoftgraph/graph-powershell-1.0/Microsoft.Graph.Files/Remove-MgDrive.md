@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/publish-mgsharelistcontenttype
@@ -36,6 +36,7 @@ Publishes a contentType][] present in the content type hub site.
 This API is available in the following [national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -44,6 +45,7 @@ Import-Module Microsoft.Graph.Files
 # A UPN can also be used as -UserId.
 Get-MgUserDefaultDrive -UserId $userId
 ```
+
 This example shows how to use the Remove-MgDrive Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -55,6 +57,7 @@ Import-Module Microsoft.Graph.Files
 
 Get-MgUserDefaultDrive -UserId $userId
 ```
+
 This example shows how to use the Remove-MgDrive Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -66,6 +69,7 @@ Import-Module Microsoft.Graph.Files
 
 Get-MgGroupDefaultDrive -GroupId $groupId
 ```
+
 This example shows how to use the Remove-MgDrive Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -77,6 +81,7 @@ Import-Module Microsoft.Graph.Sites
 
 Get-MgSiteDefaultDrive -SiteId $siteId
 ```
+
 This example shows how to use the Remove-MgDrive Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -88,10 +93,10 @@ Import-Module Microsoft.Graph.Files
 
 Get-MgDrive -DriveId $driveId
 ```
+
 This example shows how to use the Remove-MgDrive Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -232,6 +237,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaDrive](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDrive?view=graph-powershell-beta)
 
 [Remove-MgBetaDrive](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDrive?view=graph-powershell-beta)

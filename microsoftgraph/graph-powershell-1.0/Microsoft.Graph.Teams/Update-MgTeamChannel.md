@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamchannel
@@ -55,17 +55,16 @@ Update the properties of the specified channel.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 Update-MgTeamChannel -TeamId $teamId -ChannelId $channelId
-
 ```
-This example shows how to use the Update-MgTeamChannel Cmdlet.
 
+This example shows how to use the Update-MgTeamChannel Cmdlet.
 
 ## PARAMETERS
 
@@ -9235,6 +9234,9 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamChannel?view=graph-powershell-beta)
+
+
+## RELATED LINKS
 
 
 ## RELATED LINKS

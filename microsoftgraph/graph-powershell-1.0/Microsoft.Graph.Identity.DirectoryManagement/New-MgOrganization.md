@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgorganization
@@ -40,6 +40,7 @@ New-MgOrganization -BodyParameter <IMicrosoftGraphOrganization> [-WhatIf] [-Conf
 Add new entity to organization
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -47,10 +48,10 @@ Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgOrganization
 ```
+
 This example shows how to use the New-MgOrganization Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -846,6 +847,9 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaOrganization?view=graph-powershell-beta)
+
+
+## RELATED LINKS
 
 
 ## RELATED LINKS

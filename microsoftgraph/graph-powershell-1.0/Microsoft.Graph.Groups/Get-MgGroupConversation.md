@@ -1,11 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 ms.prod: groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupconversation
 schema: 2.0.0
-ms.prod: groups
-ms.prod: groups
 ---
 
 # Get-MgGroupConversation
@@ -41,17 +39,16 @@ Retrieve the properties and relationships of conversation object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Groups
 
 Get-MgGroupConversation -GroupId $groupId
-
 ```
-This example shows how to use the Get-MgGroupConversation Cmdlet.
 
+This example shows how to use the Get-MgGroupConversation Cmdlet.
 
 ## PARAMETERS
 

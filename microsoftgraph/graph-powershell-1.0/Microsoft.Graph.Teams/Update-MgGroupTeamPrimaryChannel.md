@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamprimarychannel
@@ -53,6 +53,7 @@ Update-MgGroupTeamPrimaryChannel -InputObject <ITeamsIdentity> -BodyParameter <I
 Update the navigation property primaryChannel in groups
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -60,10 +61,10 @@ Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamPrimaryChannel -TeamId $teamId
 ```
+
 This example shows how to use the Update-MgGroupTeamPrimaryChannel Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -9218,6 +9219,9 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaGroupTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamPrimaryChannel?view=graph-powershell-beta)
+
+
+## RELATED LINKS
 
 
 ## RELATED LINKS

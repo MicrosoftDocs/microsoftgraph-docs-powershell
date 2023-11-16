@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdriveitempermission
@@ -38,6 +38,7 @@ Only sharing permissions that are not inherited can be deleted.The inheritedFrom
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -45,10 +46,10 @@ Import-Module Microsoft.Graph.Files
 
 Remove-MgDriveItemPermission -DriveId $driveId -DriveItemId $driveItemId -PermissionId $permissionId
 ```
+
 This example shows how to use the Remove-MgDriveItemPermission Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -219,6 +220,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItemPermission?view=graph-powershell-beta)
 
 [Remove-MgBetaDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItemPermission?view=graph-powershell-beta)

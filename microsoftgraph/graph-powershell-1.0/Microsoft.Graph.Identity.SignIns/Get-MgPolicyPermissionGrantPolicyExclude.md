@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 ms.prod: identity-and-sign-in
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicypermissiongrantpolicyexclude
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgPolicyPermissionGrantPolicyExclude
@@ -42,6 +41,7 @@ Condition sets which are excluded in this permission grant policy.
 Automatically expanded on GET.
 
 ## EXAMPLES
+
 ### Example 1: Get a permission grant policy exclude by ID
 
 ```powershell

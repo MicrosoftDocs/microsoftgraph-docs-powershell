@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 ms.prod: cloud-communications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgcreateorgetuseronlinemeeting
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Invoke-MgCreateOrGetUserOnlineMeeting
@@ -58,6 +57,7 @@ If the external ID already exists, this API will return the onlineMeeting object
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Using the Invoke-MgCreateOrGetUserOnlineMeeting Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
@@ -82,6 +82,7 @@ $params = @{
 # A UPN can also be used as -UserId.
 Invoke-MgCreateOrGetUserOnlineMeeting -UserId $userId -BodyParameter $params
 ```
+
 This example shows how to use the Invoke-MgCreateOrGetUserOnlineMeeting Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -370,6 +371,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
 
 ## RELATED LINKS
+
 [Invoke-MgBetaCreateOrGetUserOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaCreateOrGetUserOnlineMeeting?view=graph-powershell-beta)
 
 [Invoke-MgBetaCreateOrGetUserOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaCreateOrGetUserOnlineMeeting?view=graph-powershell-beta)

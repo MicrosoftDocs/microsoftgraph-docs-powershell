@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritysecurescorecontrolprofile
@@ -57,6 +57,7 @@ Update an editable secureScoreControlProfile object within any integrated soluti
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Request without Prefer header
 
 ```powershell
@@ -76,6 +77,7 @@ $params = @{
 
 Update-MgSecuritySecureScoreControlProfile -SecureScoreControlProfileId $secureScoreControlProfileId -BodyParameter $params
 ```
+
 This example shows how to use the Update-MgSecuritySecureScoreControlProfile Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -99,10 +101,10 @@ $params = @{
 
 Update-MgSecuritySecureScoreControlProfile -SecureScoreControlProfileId $secureScoreControlProfileId -BodyParameter $params
 ```
+
 This example shows how to use the Update-MgSecuritySecureScoreControlProfile Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

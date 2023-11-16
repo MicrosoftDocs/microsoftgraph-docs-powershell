@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganizationbrandinglocalization
@@ -70,6 +70,7 @@ Update the properties of an organizationalBrandingLocalization object for a spec
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Update the backgroundColor and signInPageText for the fr-FR localization using PATCH
 
 ```powershell
@@ -82,6 +83,7 @@ $params = @{
 
 Update-MgOrganizationBrandingLocalization -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId -BodyParameter $params
 ```
+
 This example shows how to use the Update-MgOrganizationBrandingLocalization Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -98,10 +100,10 @@ $params = @{
 
 Update-MgOrganizationBrandingLocalization -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId -BodyParameter $params
 ```
+
 This example shows how to use the Update-MgOrganizationBrandingLocalization Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

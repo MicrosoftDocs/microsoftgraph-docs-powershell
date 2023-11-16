@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 ms.prod: change-notifications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetareauthorizeuserdriverootsubscription
 schema: 2.0.0
-ms.prod: change-notifications
 ---
 
 # Invoke-MgBetaReauthorizeUserDriveRootSubscription
@@ -207,6 +206,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Invoke-MgReauthorizeUserDriveRootSubscription](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReauthorizeUserDriveRootSubscription?view=graph-powershell-1.0)
 
 [Invoke-MgReauthorizeUserDriveRootSubscription](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReauthorizeUserDriveRootSubscription?view=graph-powershell-1.0)

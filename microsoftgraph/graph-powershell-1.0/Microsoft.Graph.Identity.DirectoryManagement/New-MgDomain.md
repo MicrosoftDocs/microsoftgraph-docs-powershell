@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdomain
@@ -50,6 +50,7 @@ For example, subdomain.contoso.com is automatically be verified if contoso.com h
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -61,10 +62,10 @@ $params = @{
 
 New-MgDomain -BodyParameter $params
 ```
+
 This example shows how to use the New-MgDomain Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -552,6 +553,9 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDomain?view=graph-powershell-beta)
+
+
+## RELATED LINKS
 
 
 ## RELATED LINKS

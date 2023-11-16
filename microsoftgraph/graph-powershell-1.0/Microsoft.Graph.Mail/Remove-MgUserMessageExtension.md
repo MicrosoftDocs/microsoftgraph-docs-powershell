@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermessageattachment
@@ -31,6 +31,7 @@ Remove-MgUserMessageAttachment -InputObject <IMailIdentity> [-IfMatch <String>] 
 Delete navigation property attachments for users
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -39,10 +40,10 @@ Import-Module Microsoft.Graph.Mail
 # A UPN can also be used as -UserId.
 Remove-MgUserMessageExtension -UserId $userId -MessageId $messageId -ExtensionId $extensionId
 ```
+
 This example shows how to use the Remove-MgUserMessageExtension Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

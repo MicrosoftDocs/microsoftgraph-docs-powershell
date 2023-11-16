@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversationthreadpostattachment
@@ -47,6 +47,7 @@ New-MgGroupConversationThreadPostAttachment -InputObject <IGroupsIdentity>
 Create new navigation property to attachments for groups
 
 ## EXAMPLES
+
 ### Example 1: Create an upload session to add a large attachment to a draft message
 
 ```powershell
@@ -63,6 +64,7 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgUserMessageAttachmentUploadSession -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
+
 This example shows how to use the New-MgGroupConversationThreadPostAttachmentUploadSession Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -85,10 +87,10 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgUserMessageAttachmentUploadSession -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
+
 This example shows how to use the New-MgGroupConversationThreadPostAttachmentUploadSession Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

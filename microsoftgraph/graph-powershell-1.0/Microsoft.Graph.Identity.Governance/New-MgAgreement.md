@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgagreement
@@ -403,5 +403,8 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaAgreement](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaAgreement?view=graph-powershell-beta)
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

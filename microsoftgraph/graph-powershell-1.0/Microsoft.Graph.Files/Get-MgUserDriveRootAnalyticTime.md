@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootanalytictime
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Get-MgUserDriveRootAnalyticTime
@@ -162,6 +161,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserDriveRootAnalyticTime](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootAnalyticTime?view=graph-powershell-beta)
 
 [Get-MgBetaUserDriveRootAnalyticTime](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootAnalyticTime?view=graph-powershell-beta)

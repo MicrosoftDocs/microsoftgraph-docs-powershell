@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveroot
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Get-MgDriveRoot
@@ -39,6 +38,7 @@ It may also be the unique ID of a SharePoint list item.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -46,10 +46,10 @@ Import-Module Microsoft.Graph.Files
 
 Get-MgDriveRoot -DriveId $driveId
 ```
+
 This example shows how to use the Get-MgDriveRoot Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -159,6 +159,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRoot?view=graph-powershell-beta)
 
 [Get-MgBetaDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRoot?view=graph-powershell-beta)

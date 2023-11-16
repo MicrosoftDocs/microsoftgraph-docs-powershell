@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 ms.prod: onenote
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mguseronenotesectiontosectiongroup
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # Copy-MgUserOnenoteSectionToSectionGroup
@@ -54,6 +53,7 @@ For Copy operations, you follow an asynchronous calling pattern:  First call the
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Using the Copy-MgUserOnenoteSectionToSectionGroup Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
@@ -65,6 +65,7 @@ $params = @{
 # A UPN can also be used as -UserId.
 Copy-MgUserOnenoteSectionToSectionGroup -UserId $userId -OnenoteSectionId $onenoteSectionId -BodyParameter $params
 ```
+
 This example shows how to use the Copy-MgUserOnenoteSectionToSectionGroup Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -312,6 +313,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Copy-MgBetaUserOnenoteSectionToSectionGroup](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Copy-MgBetaUserOnenoteSectionToSectionGroup?view=graph-powershell-beta)
 
 [Copy-MgBetaUserOnenoteSectionToSectionGroup](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Copy-MgBetaUserOnenoteSectionToSectionGroup?view=graph-powershell-beta)

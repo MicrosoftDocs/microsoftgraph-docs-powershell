@@ -1,11 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 ms.prod: microsoft-teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatmember
 schema: 2.0.0
-ms.prod: microsoft-teams
-ms.prod: microsoft-teams
 ---
 
 # Get-MgChatMember
@@ -43,17 +41,16 @@ Retrieve a conversationMember from a chat.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 Get-MgChatMember -ChatId $chatId
-
 ```
-This example shows how to use the Get-MgChatMember Cmdlet.
 
+This example shows how to use the Get-MgChatMember Cmdlet.
 
 ## PARAMETERS
 

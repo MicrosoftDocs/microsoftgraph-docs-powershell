@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restore-mgbetauserdrivelistitemversion
@@ -34,6 +34,7 @@ Restore-MgBetaUserDriveListItemVersion -InputObject <IUsersActionsIdentity> [-Pa
 Invoke action restoreVersion
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -41,10 +42,10 @@ Import-Module Microsoft.Graph.Beta.Sites
 
 Restore-MgBetaSiteListItemVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -ListItemVersionId $listItemVersionId
 ```
+
 This example shows how to use the Restore-MgBetaUserDriveListItemVersion Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -229,6 +230,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Restore-MgUserDriveListItemVersion](/powershell/module/Microsoft.Graph.Users.Actions/Restore-MgUserDriveListItemVersion?view=graph-powershell-1.0)
 
 [Restore-MgUserDriveListItemVersion](/powershell/module/Microsoft.Graph.Users.Actions/Restore-MgUserDriveListItemVersion?view=graph-powershell-1.0)

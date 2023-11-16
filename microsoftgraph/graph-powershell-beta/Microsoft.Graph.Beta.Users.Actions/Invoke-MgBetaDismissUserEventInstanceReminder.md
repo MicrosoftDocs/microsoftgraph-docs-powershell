@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 ms.prod: outlook
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetadeprovisionusermanageddevice
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Invoke-MgBetaDeprovisionUserManagedDevice
@@ -52,6 +51,7 @@ Invoke-MgBetaDeprovisionUserManagedDevice -InputObject <IUsersActionsIdentity>
 Invoke action deprovision
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -60,10 +60,10 @@ Import-Module Microsoft.Graph.Beta.Users.Actions
 # A UPN can also be used as -UserId.
 Invoke-MgBetaDismissUserEventReminder -UserId $userId -EventId $eventId
 ```
+
 This example shows how to use the Invoke-MgBetaDismissUserEventInstanceReminder Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -269,6 +269,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Invoke-MgDismissUserEventInstanceReminder](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgDismissUserEventInstanceReminder?view=graph-powershell-1.0)
 
 [Invoke-MgDismissUserEventInstanceReminder](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgDismissUserEventInstanceReminder?view=graph-powershell-1.0)

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitetermstore
@@ -473,5 +473,8 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaGroupSiteTermStore](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteTermStore?view=graph-powershell-beta)
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

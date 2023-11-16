@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemcount
@@ -158,6 +158,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserDriveItemCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemCount?view=graph-powershell-beta)
 
 [Get-MgBetaUserDriveItemCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemCount?view=graph-powershell-beta)

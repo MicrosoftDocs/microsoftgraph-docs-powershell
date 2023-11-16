@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Applications
 Module Guid: c849fa5b-433c-4d78-8c52-1c2d26d21c1e
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.applications
@@ -15,7 +15,7 @@ Microsoft Graph PowerShell Cmdlets
 Add a key credential to an application.
 This method, along with removeKey can be used by an application to automate rolling its expiring keys.
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
-Applications that don’t have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won’t be able to use this service action.
+Applications that don't have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won't be able to use this service action.
 You can use the Update application operation to perform an update instead.
 This API is supported in the following national cloud deployments.
 
@@ -27,7 +27,7 @@ This API is supported in the following national cloud deployments.
 Adds a key credential to a servicePrincipal.
 This method along with removeKey can be used by a servicePrincipal to automate rolling its expiring keys.
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
-ServicePrincipals that don’t have any existing valid certificates (i.e.: no certificates have been added yet, or all certificates have expired), won’t be able to use this service action.
+ServicePrincipals that don't have any existing valid certificates (i.e.: no certificates have been added yet, or all certificates have expired), won't be able to use this service action.
 Update servicePrincipal can be used to perform an update instead.
 This API is supported in the following national cloud deployments.
 
@@ -494,6 +494,15 @@ Get the number of the resource
 ### [Get-MgServicePrincipalOwnerCountAsUser](Get-MgServicePrincipalOwnerCountAsUser.md)
 Get the number of the resource
 
+### [Get-MgServicePrincipalRemoteDesktopSecurityConfiguration](Get-MgServicePrincipalRemoteDesktopSecurityConfiguration.md)
+Get remoteDesktopSecurityConfiguration from servicePrincipals
+
+### [Get-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup](Get-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup.md)
+Get targetDeviceGroups from servicePrincipals
+
+### [Get-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroupCount](Get-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroupCount.md)
+Get the number of the resource
+
 ### [Get-MgServicePrincipalSynchronization](Get-MgServicePrincipalSynchronization.md)
 Represents the capability for Azure Active Directory (Azure AD) identity synchronization through the Microsoft Graph API.
 
@@ -725,6 +734,9 @@ Use this API to add an owner for the servicePrincipal.
 Service principal owners can be users, the service principal itself, or other service principals.
 This API is supported in the following national cloud deployments.
 
+### [New-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup](New-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup.md)
+Create new navigation property to targetDeviceGroups for servicePrincipals
+
 ### [New-MgServicePrincipalSynchronizationJob](New-MgServicePrincipalSynchronizationJob.md)
 Create new synchronization job with a default synchronization schema.
 The job is created in a disabled state.
@@ -877,6 +889,12 @@ This API is supported in the following national cloud deployments.
 ### [Remove-MgServicePrincipalPassword](Remove-MgServicePrincipalPassword.md)
 Remove a password from a servicePrincipal object.
 This API is supported in the following national cloud deployments.
+
+### [Remove-MgServicePrincipalRemoteDesktopSecurityConfiguration](Remove-MgServicePrincipalRemoteDesktopSecurityConfiguration.md)
+Delete navigation property remoteDesktopSecurityConfiguration for servicePrincipals
+
+### [Remove-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup](Remove-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup.md)
+Delete navigation property targetDeviceGroups for servicePrincipals
 
 ### [Remove-MgServicePrincipalSynchronization](Remove-MgServicePrincipalSynchronization.md)
 Delete navigation property synchronization for servicePrincipals
@@ -1053,6 +1071,12 @@ Update the navigation property delegatedPermissionClassifications in servicePrin
 
 ### [Update-MgServicePrincipalEndpoint](Update-MgServicePrincipalEndpoint.md)
 Update the navigation property endpoints in servicePrincipals
+
+### [Update-MgServicePrincipalRemoteDesktopSecurityConfiguration](Update-MgServicePrincipalRemoteDesktopSecurityConfiguration.md)
+Update the navigation property remoteDesktopSecurityConfiguration in servicePrincipals
+
+### [Update-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup](Update-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup.md)
+Update the navigation property targetDeviceGroups in servicePrincipals
 
 ### [Update-MgServicePrincipalSynchronizationJob](Update-MgServicePrincipalSynchronizationJob.md)
 Update the navigation property jobs in servicePrincipals

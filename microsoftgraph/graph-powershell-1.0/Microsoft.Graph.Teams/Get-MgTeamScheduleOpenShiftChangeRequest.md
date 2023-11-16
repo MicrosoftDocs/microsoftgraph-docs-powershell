@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduleopenshiftchangerequest
@@ -40,17 +40,16 @@ Retrieve the properties and relationships of an openShiftChangeRequest object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamScheduleOpenShiftChangeRequest -TeamId $teamId
-
 ```
-This example shows how to use the Get-MgTeamScheduleOpenShiftChangeRequest Cmdlet.
 
+This example shows how to use the Get-MgTeamScheduleOpenShiftChangeRequest Cmdlet.
 
 ## PARAMETERS
 

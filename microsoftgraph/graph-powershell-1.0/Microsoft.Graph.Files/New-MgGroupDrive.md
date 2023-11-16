@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootversion
@@ -49,6 +49,7 @@ New-MgDriveRootVersion -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftG
 Create new navigation property to versions for drives
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -56,6 +57,7 @@ Import-Module Microsoft.Graph.Files
 
 Get-MgGroupDrive -GroupId $groupId
 ```
+
 This example shows how to use the New-MgGroupDrive Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -67,6 +69,7 @@ Import-Module Microsoft.Graph.Sites
 
 Get-MgSiteDrive -SiteId $siteId
 ```
+
 This example shows how to use the New-MgGroupDrive Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -78,6 +81,7 @@ Import-Module Microsoft.Graph.Files
 
 Get-MgUserDrive -UserId $userId
 ```
+
 This example shows how to use the New-MgGroupDrive Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -90,10 +94,10 @@ Import-Module Microsoft.Graph.Files
 # A UPN can also be used as -UserId.
 Get-MgUserDrive -UserId $userId
 ```
+
 This example shows how to use the New-MgGroupDrive Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -372,6 +376,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.
 
 ## RELATED LINKS
+
 [New-MgBetaGroupDrive](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDrive?view=graph-powershell-beta)
 
 [New-MgBetaGroupDrive](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDrive?view=graph-powershell-beta)

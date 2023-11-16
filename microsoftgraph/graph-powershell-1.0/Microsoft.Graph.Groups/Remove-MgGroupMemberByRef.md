@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupmemberbyref
@@ -35,6 +35,7 @@ You can't remove a member from groups with dynamic memberships.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -42,10 +43,10 @@ Import-Module Microsoft.Graph.Groups
 
 Remove-MgGroupMemberByRef -GroupId $groupId -DirectoryObjectId $directoryObjectId
 ```
+
 This example shows how to use the Remove-MgGroupMemberByRef Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

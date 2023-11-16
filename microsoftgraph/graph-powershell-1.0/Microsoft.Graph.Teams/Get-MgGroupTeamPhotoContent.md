@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamphotocontent
@@ -27,6 +27,8 @@ Get-MgGroupTeamPhotoContent -InputObject <ITeamsIdentity> -OutFile <String> [-Pa
 
 ## DESCRIPTION
 Get media content for the navigation property photo from groups
+
+## EXAMPLES
 
 ## PARAMETERS
 

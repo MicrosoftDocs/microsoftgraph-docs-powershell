@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamtag
@@ -33,17 +33,16 @@ Delete a tag object permanently.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 Remove-MgTeamTag -TeamId $teamId -TeamworkTagId $teamworkTagId
-
 ```
-This example shows how to use the Remove-MgTeamTag Cmdlet.
 
+This example shows how to use the Remove-MgTeamTag Cmdlet.
 
 ## PARAMETERS
 

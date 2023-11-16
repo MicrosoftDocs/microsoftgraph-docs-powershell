@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaunfollowuserdriveroot
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Invoke-MgBetaUnfollowUserDriveRoot
@@ -192,6 +191,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Invoke-MgUnfollowUserDriveRoot](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgUnfollowUserDriveRoot?view=graph-powershell-1.0)
 
 [Invoke-MgUnfollowUserDriveRoot](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgUnfollowUserDriveRoot?view=graph-powershell-1.0)

@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 ms.prod: governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementaccesspackageincompatiblewith
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Get-MgEntitlementManagementAccessPackageIncompatibleWith
@@ -42,17 +41,16 @@ The access packages that are incompatible with this package.
 Read-only.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgEntitlementManagementAccessPackageIncompatibleWith -AccessPackageId $accessPackageId
-
 ```
-This example shows how to use the Get-MgEntitlementManagementAccessPackageIncompatibleWith Cmdlet.
 
+This example shows how to use the Get-MgEntitlementManagementAccessPackageIncompatibleWith Cmdlet.
 
 ## PARAMETERS
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamprimarychannelmember
@@ -47,6 +47,8 @@ New-MgGroupTeamPrimaryChannelMember -InputObject <ITeamsIdentity>
 Add a conversationMember to a channel.
 This operation is allowed only for channels with a membershipType value of private or shared.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 

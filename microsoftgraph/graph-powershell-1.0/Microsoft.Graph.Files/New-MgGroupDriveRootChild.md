@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdriverootchild
@@ -18821,3 +18821,6 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaGroupDriveRootChild](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveRootChild?view=graph-powershell-beta)
+
+
+## RELATED LINKS

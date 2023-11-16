@@ -1,11 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitempermission
 schema: 2.0.0
-ms.prod: sharepoint
-ms.prod: sharepoint
 ---
 
 # Get-MgDriveItemPermission
@@ -50,17 +48,16 @@ Callers can differentiate if the permission is inherited or not by checking the 
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Files
 
 Get-MgDriveItemPermission -DriveId $driveId -DriveItemId $driveItemId
-
 ```
-This example shows how to use the Get-MgDriveItemPermission Cmdlet.
 
+This example shows how to use the Get-MgDriveItemPermission Cmdlet.
 
 ## PARAMETERS
 
@@ -321,6 +318,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemPermission?view=graph-powershell-beta)
 
 [Get-MgBetaDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemPermission?view=graph-powershell-beta)

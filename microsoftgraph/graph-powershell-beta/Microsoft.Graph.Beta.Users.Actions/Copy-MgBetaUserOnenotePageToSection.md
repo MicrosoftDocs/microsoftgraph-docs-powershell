@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 ms.prod: onenote
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/copy-mgbetauseronenotepagetosection
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # Copy-MgBetaUserOnenotePageToSection
@@ -56,6 +55,7 @@ For copy operations, you follow an asynchronous calling pattern:  First call the
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Using the Copy-MgBetaUserOnenotePageToSection Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
@@ -66,6 +66,7 @@ $params = @{
 # A UPN can also be used as -UserId.
 Copy-MgBetaUserOnenotePageToSection -UserId $userId -OnenotePageId $onenotePageId -BodyParameter $params
 ```
+
 This example shows how to use the Copy-MgBetaUserOnenotePageToSection Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -306,6 +307,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Copy-MgUserOnenotePageToSection](/powershell/module/Microsoft.Graph.Users.Actions/Copy-MgUserOnenotePageToSection?view=graph-powershell-1.0)
 
 [Copy-MgUserOnenotePageToSection](/powershell/module/Microsoft.Graph.Users.Actions/Copy-MgUserOnenotePageToSection?view=graph-powershell-1.0)

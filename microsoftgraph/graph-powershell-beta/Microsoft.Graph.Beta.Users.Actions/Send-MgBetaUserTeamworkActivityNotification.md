@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetauserteamworkactivitynotification
@@ -56,6 +56,7 @@ For more information, see sending Teams activity notifications.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Using the Send-MgBetaUserTeamworkActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
@@ -78,8 +79,10 @@ $params = @{
 }
 Send-MgBetaUserTeamworkActivityNotification -UserId $userId -BodyParameter $params
 ```
+
 This example shows how to use the Send-MgBetaUserTeamworkActivityNotification Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ### Example 2: Using the Send-MgBetaUserTeamworkActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
@@ -102,8 +105,10 @@ $params = @{
 }
 Send-MgBetaUserTeamworkActivityNotification -UserId $userId -BodyParameter $params
 ```
+
 This example shows how to use the Send-MgBetaUserTeamworkActivityNotification Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ### Example 3: Using the Send-MgBetaUserTeamworkActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
@@ -125,6 +130,7 @@ $params = @{
 }
 Send-MgBetaUserTeamworkActivityNotification -UserId $userId -BodyParameter $params
 ```
+
 This example shows how to use the Send-MgBetaUserTeamworkActivityNotification Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -408,6 +414,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: The link the user clicks when they select the notification. Optional when source is entityUrl; required when source is text.
 
 ## RELATED LINKS
+
 [Send-MgUserTeamworkActivityNotification](/powershell/module/Microsoft.Graph.Users.Actions/Send-MgUserTeamworkActivityNotification?view=graph-powershell-1.0)
 
 [Send-MgUserTeamworkActivityNotification](/powershell/module/Microsoft.Graph.Users.Actions/Send-MgUserTeamworkActivityNotification?view=graph-powershell-1.0)

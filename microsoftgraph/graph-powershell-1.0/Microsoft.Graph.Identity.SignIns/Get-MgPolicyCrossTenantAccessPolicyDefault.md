@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 ms.prod: identity-and-sign-in
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicycrosstenantaccesspolicydefault
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgPolicyCrossTenantAccessPolicyDefault
@@ -30,17 +29,16 @@ This default configuration may be the service default assigned by Azure AD (isSe
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgPolicyCrossTenantAccessPolicyDefault
-
 ```
-This example shows how to use the Get-MgPolicyCrossTenantAccessPolicyDefault Cmdlet.
 
+This example shows how to use the Get-MgPolicyCrossTenantAccessPolicyDefault Cmdlet.
 
 ## PARAMETERS
 

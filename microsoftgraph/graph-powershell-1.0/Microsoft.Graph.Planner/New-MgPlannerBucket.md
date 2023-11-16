@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannerbucket
@@ -32,10 +32,10 @@ Create a new plannerBucket object.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Planner
 
 $params = @{
@@ -45,10 +45,9 @@ $params = @{
 }
 
 New-MgPlannerBucket -BodyParameter $params
-
 ```
-This example shows how to use the New-MgPlannerBucket Cmdlet.
 
+This example shows how to use the New-MgPlannerBucket Cmdlet.
 
 ## PARAMETERS
 
@@ -335,6 +334,9 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaPlannerBucket](/powershell/module/Microsoft.Graph.Beta.Planner/New-MgBetaPlannerBucket?view=graph-powershell-beta)
+
+
+## RELATED LINKS
 
 
 ## RELATED LINKS

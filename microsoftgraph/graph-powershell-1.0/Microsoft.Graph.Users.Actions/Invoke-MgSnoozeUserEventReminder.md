@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 ms.prod: outlook
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgsnoozeusereventreminder
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Invoke-MgSnoozeUserEventReminder
@@ -52,6 +51,7 @@ Postpone a reminder for an event in a user calendar until a new time.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Using the Invoke-MgSnoozeUserEventReminder Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
@@ -64,6 +64,7 @@ $params = @{
 # A UPN can also be used as -UserId.
 Invoke-MgSnoozeUserEventReminder -UserId $userId -EventId $eventId -BodyParameter $params
 ```
+
 This example shows how to use the Invoke-MgSnoozeUserEventReminder Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -271,6 +272,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
 
 ## RELATED LINKS
+
 [Invoke-MgBetaSnoozeUserEventReminder](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaSnoozeUserEventReminder?view=graph-powershell-beta)
 
 [Invoke-MgBetaSnoozeUserEventReminder](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaSnoozeUserEventReminder?view=graph-powershell-beta)

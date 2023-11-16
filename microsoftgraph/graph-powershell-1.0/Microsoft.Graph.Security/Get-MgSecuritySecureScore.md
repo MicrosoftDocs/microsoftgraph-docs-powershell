@@ -1,11 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 ms.prod: security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritysecurescore
 schema: 2.0.0
-ms.prod: security
-ms.prod: security
 ---
 
 # Get-MgSecuritySecureScore
@@ -43,17 +41,16 @@ Retrieve the properties and relationships of a secureScore object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Security
 
-Get-MgSecuritySecureScore -Top 1 
-
+Get-MgSecuritySecureScore -Top 1
 ```
-This example shows how to use the Get-MgSecuritySecureScore Cmdlet.
 
+This example shows how to use the Get-MgSecuritySecureScore Cmdlet.
 
 ## PARAMETERS
 

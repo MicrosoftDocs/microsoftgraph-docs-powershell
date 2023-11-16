@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mgrenewdeviceappmanagementmobileappmicrosoftgraphioslobappcontentversionfileupload
 schema: 2.0.0
@@ -15,14 +15,14 @@ Renews the SAS URI for an application file upload.
 ### Renew (Default)
 ```
 Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphiOSLobAppContentVersionFileUpload
- -MobileAppContentFileId <String> -MobileAppContentId <String> -MobileAppId <String> [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ -MobileAppContentFileId <String> -MobileAppContentId <String> -MobileAppId <String> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### RenewViaIdentity
 ```
 Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphiOSLobAppContentVersionFileUpload
- -InputObject <IDevicesCorporateManagementIdentity> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ -InputObject <IDevicesCorporateManagementIdentity> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -30,19 +30,15 @@ Renews the SAS URI for an application file upload.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -51,7 +47,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
+Type: IDevicesCorporateManagementIdentity
 Parameter Sets: RenewViaIdentity
 Aliases:
 
@@ -66,7 +62,7 @@ Accept wildcard characters: False
 The unique identifier of mobileAppContentFile
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Renew
 Aliases:
 
@@ -81,7 +77,7 @@ Accept wildcard characters: False
 The unique identifier of mobileAppContent
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Renew
 Aliases:
 
@@ -96,7 +92,7 @@ Accept wildcard characters: False
 The unique identifier of mobileApp
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Renew
 Aliases:
 
@@ -111,7 +107,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -126,7 +122,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -142,7 +138,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -159,11 +155,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -211,4 +205,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
-

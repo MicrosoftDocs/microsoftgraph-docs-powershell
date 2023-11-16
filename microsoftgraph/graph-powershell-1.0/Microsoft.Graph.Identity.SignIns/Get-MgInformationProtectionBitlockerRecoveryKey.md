@@ -1,11 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 ms.prod: directory-management
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mginformationprotectionbitlockerrecoverykey
 schema: 2.0.0
-ms.prod: directory-management
-ms.prod: directory-management
 ---
 
 # Get-MgInformationProtectionBitlockerRecoveryKey

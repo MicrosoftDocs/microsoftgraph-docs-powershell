@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Security
 Module Guid: 34a5596d-7ea6-4074-916d-530882de6ba5
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.security
@@ -840,6 +840,20 @@ Get the number of the resource
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceHostPassiveDnsReverseCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostPassiveDnsReverseCount?view=graph-powershell-beta)
 
+### [Get-MgSecurityThreatIntelligenceHostPort](Get-MgSecurityThreatIntelligenceHostPort.md)
+Read the properties and relationships of a hostPort object.
+
+### [Get-MgSecurityThreatIntelligenceHostPortCount](Get-MgSecurityThreatIntelligenceHostPortCount.md)
+Get the number of the resource
+
+### [Get-MgSecurityThreatIntelligenceHostPortHost](Get-MgSecurityThreatIntelligenceHostPortHost.md)
+The host related to this hostPort.
+This is a reverse navigation property.
+When you navigate to hostPorts from a host, assume that this is a return reference.
+
+### [Get-MgSecurityThreatIntelligenceHostPortMostRecentSslCertificate](Get-MgSecurityThreatIntelligenceHostPortMostRecentSslCertificate.md)
+The most recent sslCertificate used to communicate on the port.
+
 ### [Get-MgSecurityThreatIntelligenceHostReputation](Get-MgSecurityThreatIntelligenceHostReputation.md)
 Get the properties and relationships of a hostReputation object.
 This API is available in the following national cloud deployments.
@@ -1424,6 +1438,9 @@ Create new navigation property to hostPairs for security
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSecurityThreatIntelligenceHostPair](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceHostPair?view=graph-powershell-beta)
 
+### [New-MgSecurityThreatIntelligenceHostPort](New-MgSecurityThreatIntelligenceHostPort.md)
+Create new navigation property to hostPorts for security
+
 ### [New-MgSecurityThreatIntelligenceHostSslCertificate](New-MgSecurityThreatIntelligenceHostSslCertificate.md)
 Create new navigation property to hostSslCertificates for security
 
@@ -1786,6 +1803,9 @@ Delete navigation property hostPairs for security
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSecurityThreatIntelligenceHostPair](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityThreatIntelligenceHostPair?view=graph-powershell-beta)
+
+### [Remove-MgSecurityThreatIntelligenceHostPort](Remove-MgSecurityThreatIntelligenceHostPort.md)
+Delete navigation property hostPorts for security
 
 ### [Remove-MgSecurityThreatIntelligenceHostReputation](Remove-MgSecurityThreatIntelligenceHostReputation.md)
 Delete navigation property reputation for security
@@ -2178,6 +2198,9 @@ Update the navigation property hostPairs in security
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSecurityThreatIntelligenceHostPair](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligenceHostPair?view=graph-powershell-beta)
+
+### [Update-MgSecurityThreatIntelligenceHostPort](Update-MgSecurityThreatIntelligenceHostPort.md)
+Update the navigation property hostPorts in security
 
 ### [Update-MgSecurityThreatIntelligenceHostReputation](Update-MgSecurityThreatIntelligenceHostReputation.md)
 Update the navigation property reputation in security

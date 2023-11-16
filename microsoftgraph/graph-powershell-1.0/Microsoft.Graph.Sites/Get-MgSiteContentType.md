@@ -1,11 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 ms.prod: sites-and-lists
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitecontenttype
 schema: 2.0.0
-ms.prod: sites-and-lists
-ms.prod: sites-and-lists
 ---
 
 # Get-MgSiteContentType
@@ -43,6 +41,7 @@ Retrieve the metadata for a content type][contentType] in a [site][] or a [list]
 This API is available in the following [national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -50,10 +49,10 @@ Import-Module Microsoft.Graph.Sites
 
 Get-MgSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId
 ```
+
 This example shows how to use the Get-MgSiteContentType Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

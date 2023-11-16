@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 ms.prod: sites-and-lists
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/add-mggroupdrivelistcontenttypecopy
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Add-MgGroupDriveListContentTypeCopy
@@ -47,6 +46,8 @@ Add-MgGroupDriveListContentTypeCopy -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Add a copy of a content type][contentType] from a [site][site] to a [list][list].
 This API is available in the following [national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 

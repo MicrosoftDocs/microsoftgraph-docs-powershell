@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 ms.prod: identity-and-sign-in
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowlanguageoverridepagecontent
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgIdentityB2XUserFlowLanguageOverridePageContent
@@ -32,6 +31,8 @@ Get-MgIdentityB2XUserFlowLanguageOverridePageContent -InputObject <IIdentitySign
 
 ## DESCRIPTION
 Get media content for the navigation property overridesPages from identity
+
+## EXAMPLES
 
 ## PARAMETERS
 

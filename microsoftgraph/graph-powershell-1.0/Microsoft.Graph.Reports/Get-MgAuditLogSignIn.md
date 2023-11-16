@@ -1,11 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 ms.prod: identity-and-access-reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgauditlogsignin
 schema: 2.0.0
-ms.prod: identity-and-access-reports
-ms.prod: identity-and-access-reports
 ---
 
 # Get-MgAuditLogSignIn
@@ -45,28 +43,26 @@ Sign-ins that are interactive in nature (where a username/password is passed as 
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: List all sign-ins
 
 ```powershell
-
 Import-Module Microsoft.Graph.Reports
 
 Get-MgAuditLogSignIn
-
 ```
+
 This example will list all sign-ins
 
 ### Example 2: Retrieve the first 10 sign-ins to apps with the appDisplayName that starts with 'Graph'
 
 ```powershell
-
 Import-Module Microsoft.Graph.Reports
 
-Get-MgAuditLogSignIn -Filter "startsWith(appDisplayName,'Graph')" -Top 10 
-
+Get-MgAuditLogSignIn -Filter "startsWith(appDisplayName,'Graph')" -Top 10
 ```
-This example will retrieve the first 10 sign-ins to apps with the appdisplayname that starts with 'graph'
 
+This example will retrieve the first 10 sign-ins to apps with the appdisplayname that starts with 'graph'
 
 ## PARAMETERS
 

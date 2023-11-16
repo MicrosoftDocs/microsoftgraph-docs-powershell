@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteammember
@@ -46,10 +46,10 @@ Add a new conversationMember to a team.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Add a member to a team
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
@@ -61,14 +61,13 @@ $params = @{
 }
 
 New-MgTeamMember -TeamId $teamId -BodyParameter $params
-
 ```
+
 This example will add a member to a team
 
 ### Example 2: Add a member to a team using user principal name
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
@@ -80,10 +79,9 @@ $params = @{
 }
 
 New-MgTeamMember -TeamId $teamId -BodyParameter $params
-
 ```
-This example will add a member to a team using user principal name
 
+This example will add a member to a team using user principal name
 
 ## PARAMETERS
 

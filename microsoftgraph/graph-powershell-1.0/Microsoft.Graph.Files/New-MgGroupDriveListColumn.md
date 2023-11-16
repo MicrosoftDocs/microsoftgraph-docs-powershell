@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdrivelistcolumn
@@ -1138,3 +1138,6 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaGroupDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveListColumn?view=graph-powershell-beta)
+
+
+## RELATED LINKS

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsiteonenote
@@ -770,5 +770,8 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaGroupSiteOnenote](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteOnenote?view=graph-powershell-beta)
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

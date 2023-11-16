@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 ms.prod: users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermemberof
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Get-MgUserMemberOf
@@ -46,17 +45,16 @@ Nullable.
 Supports $expand.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Users
 
 Get-MgUserMemberOf -UserId $userId
-
 ```
-This example shows how to use the Get-MgUserMemberOf Cmdlet.
 
+This example shows how to use the Get-MgUserMemberOf Cmdlet.
 
 ## PARAMETERS
 

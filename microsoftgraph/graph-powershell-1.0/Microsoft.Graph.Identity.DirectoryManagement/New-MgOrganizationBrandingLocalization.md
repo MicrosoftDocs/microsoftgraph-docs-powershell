@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgorganizationbrandinglocalization
@@ -76,6 +76,7 @@ To retrieve the default branding, see Get branding.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -89,10 +90,10 @@ $params = @{
 
 New-MgOrganizationBrandingLocalization -OrganizationId $organizationId -BodyParameter $params
 ```
+
 This example shows how to use the New-MgOrganizationBrandingLocalization Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

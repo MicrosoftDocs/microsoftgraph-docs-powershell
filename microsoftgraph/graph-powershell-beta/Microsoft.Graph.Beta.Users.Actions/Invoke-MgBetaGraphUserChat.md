@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 ms.prod: microsoft-teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetagraphuserchat
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Invoke-MgBetaGraphUserChat
@@ -311,6 +310,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserIdentityType <String>]`: teamworkUserIdentityType
 
 ## RELATED LINKS
+
 [Invoke-MgGraphUserChat](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgGraphUserChat?view=graph-powershell-1.0)
 
 [Invoke-MgGraphUserChat](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgGraphUserChat?view=graph-powershell-1.0)

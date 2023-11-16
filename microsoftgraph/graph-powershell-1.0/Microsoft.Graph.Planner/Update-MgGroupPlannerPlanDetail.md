@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mggroupplannerplandetail
@@ -43,6 +43,8 @@ Update-MgGroupPlannerPlanDetail -InputObject <IPlannerIdentity> -IfMatch <String
 
 ## DESCRIPTION
 Update the navigation property details in groups
+
+## EXAMPLES
 
 ## PARAMETERS
 

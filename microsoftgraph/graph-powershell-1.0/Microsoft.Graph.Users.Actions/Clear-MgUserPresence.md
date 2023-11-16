@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 ms.prod: cloud-communications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/clear-mguserpresence
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Clear-MgUserPresence
@@ -56,6 +55,7 @@ For details about presences sessions, see presence: setPresence.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Using the Clear-MgUserPresence Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
@@ -64,6 +64,7 @@ $params = @{
 }
 Clear-MgUserPresence -UserId $userId -BodyParameter $params
 ```
+
 This example shows how to use the Clear-MgUserPresence Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -247,6 +248,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Clear-MgBetaUserPresence](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Clear-MgBetaUserPresence?view=graph-powershell-beta)
 
 [Clear-MgBetaUserPresence](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Clear-MgBetaUserPresence?view=graph-powershell-beta)

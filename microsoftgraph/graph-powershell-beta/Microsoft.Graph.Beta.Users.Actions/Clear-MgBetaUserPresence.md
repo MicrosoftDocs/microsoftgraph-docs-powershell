@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 ms.prod: cloud-communications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/clear-mgbetauserpresence
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Clear-MgBetaUserPresence
@@ -56,10 +55,10 @@ Read more about presence sessions and their time-out and expiration.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Beta.Users.Actions
 
 $params = @{
@@ -67,10 +66,9 @@ $params = @{
 }
 
 Clear-MgBetaUserPresence -UserId $userId -BodyParameter $params
-
 ```
-This example shows how to use the Clear-MgBetaUserPresence Cmdlet.
 
+This example shows how to use the Clear-MgBetaUserPresence Cmdlet.
 
 ## PARAMETERS
 
@@ -261,6 +259,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Clear-MgUserPresence](/powershell/module/Microsoft.Graph.Users.Actions/Clear-MgUserPresence?view=graph-powershell-1.0)
 
 [Clear-MgUserPresence](/powershell/module/Microsoft.Graph.Users.Actions/Clear-MgUserPresence?view=graph-powershell-1.0)

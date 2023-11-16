@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetainviteuserdriveitem
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Invoke-MgBetaInviteUserDriveItem
@@ -382,6 +381,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
+
 [Invoke-MgInviteUserDriveItem](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgInviteUserDriveItem?view=graph-powershell-1.0)
 
 [Invoke-MgInviteUserDriveItem](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgInviteUserDriveItem?view=graph-powershell-1.0)

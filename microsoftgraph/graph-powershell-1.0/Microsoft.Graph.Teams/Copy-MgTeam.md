@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 ms.prod: microsoft-teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/copy-mgteam
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Copy-MgTeam
@@ -65,10 +64,10 @@ The recommended delay between GETs is 5 seconds.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
@@ -80,10 +79,9 @@ $params = @{
 }
 
 Copy-MgTeam -TeamId $teamId -BodyParameter $params
-
 ```
-This example shows how to use the Copy-MgTeam Cmdlet.
 
+This example shows how to use the Copy-MgTeam Cmdlet.
 
 ## PARAMETERS
 

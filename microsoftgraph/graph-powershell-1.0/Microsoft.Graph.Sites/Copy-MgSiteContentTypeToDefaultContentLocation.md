@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 ms.prod: sites-and-lists
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/copy-mgsitecontenttypetodefaultcontentlocation
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Copy-MgSiteContentTypeToDefaultContentLocation
@@ -53,10 +52,10 @@ The file can then be added as a default file or template via a POST operation.
 This API is available in the following [national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Sites
 
 $params = @{
@@ -70,10 +69,9 @@ $params = @{
 }
 
 Copy-MgSiteContentTypeToDefaultContentLocation -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
-
 ```
-This example shows how to use the Copy-MgSiteContentTypeToDefaultContentLocation Cmdlet.
 
+This example shows how to use the Copy-MgSiteContentTypeToDefaultContentLocation Cmdlet.
 
 ## PARAMETERS
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementassignmentpolicy
@@ -41,6 +41,7 @@ The request will include a reference to the accessPackage that will contain this
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -81,6 +82,7 @@ $params = @{
 
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
 ```
+
 This example shows how to use the New-MgEntitlementManagementAssignmentPolicy Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -206,6 +208,7 @@ $params = @{
 
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
 ```
+
 This example shows how to use the New-MgEntitlementManagementAssignmentPolicy Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -238,6 +241,7 @@ $params = @{
 
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
 ```
+
 This example shows how to use the New-MgEntitlementManagementAssignmentPolicy Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -341,10 +345,10 @@ $params = @{
 
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
 ```
+
 This example shows how to use the New-MgEntitlementManagementAssignmentPolicy Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -9834,6 +9838,9 @@ To create the parameters described below, construct a hash table containing the 
     - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS
 

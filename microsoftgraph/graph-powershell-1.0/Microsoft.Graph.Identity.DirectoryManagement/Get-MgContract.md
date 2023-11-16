@@ -1,11 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 ms.prod: directory-management
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontract
 schema: 2.0.0
-ms.prod: directory-management
-ms.prod: directory-management
 ---
 
 # Get-MgContract
@@ -42,17 +40,16 @@ Retrieve the properties and relationships of contract object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgContract
-
 ```
-This example shows how to use the Get-MgContract Cmdlet.
 
+This example shows how to use the Get-MgContract Cmdlet.
 
 ## PARAMETERS
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mgdriveitemversion
@@ -37,11 +37,13 @@ This will create a new version with the contents of the previous version, but pr
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Using the Restore-MgDriveItemVersion Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Files
 Restore-MgDriveItemVersion -DriveId $driveId -DriveItemId $driveItemId -DriveItemVersionId $driveItemVersionId
 ```
+
 This example shows how to use the Restore-MgDriveItemVersion Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -199,6 +201,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Restore-MgBetaDriveItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Restore-MgBetaDriveItemVersion?view=graph-powershell-beta)
 
 [Restore-MgBetaDriveItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Restore-MgBetaDriveItemVersion?view=graph-powershell-beta)

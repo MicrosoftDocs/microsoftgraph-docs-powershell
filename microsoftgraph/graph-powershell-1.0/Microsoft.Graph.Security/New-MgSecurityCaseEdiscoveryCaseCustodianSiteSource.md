@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasecustodiansitesource
@@ -49,10 +49,10 @@ Create a new siteSource object associated with an eDiscovery custodian.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Security
 
 $params = @{
@@ -62,10 +62,9 @@ $params = @{
 }
 
 New-MgSecurityCaseEdiscoveryCaseCustodianSiteSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId -BodyParameter $params
-
 ```
-This example shows how to use the New-MgSecurityCaseEdiscoveryCaseCustodianSiteSource Cmdlet.
 
+This example shows how to use the New-MgSecurityCaseEdiscoveryCaseCustodianSiteSource Cmdlet.
 
 ## PARAMETERS
 
@@ -6113,6 +6112,9 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSecurityCaseEdiscoveryCaseCustodianSiteSource](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityCaseEdiscoveryCaseCustodianSiteSource?view=graph-powershell-beta)
+
+
+## RELATED LINKS
 
 
 ## RELATED LINKS

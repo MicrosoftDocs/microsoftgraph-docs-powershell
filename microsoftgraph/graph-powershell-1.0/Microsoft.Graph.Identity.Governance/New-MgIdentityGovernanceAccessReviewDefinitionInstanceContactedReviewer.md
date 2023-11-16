@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewdefinitioninstancecontactedreviewer
@@ -47,6 +47,7 @@ New-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer
 Create new navigation property to contactedReviewers for identityGovernance
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -54,10 +55,10 @@ Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId
 ```
+
 This example shows how to use the New-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

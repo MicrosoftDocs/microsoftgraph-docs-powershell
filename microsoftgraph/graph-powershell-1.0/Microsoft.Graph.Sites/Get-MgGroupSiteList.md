@@ -1,11 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelist
 schema: 2.0.0
-ms.prod: sharepoint
-ms.prod: sharepoint
 ---
 
 # Get-MgGroupSiteList
@@ -41,6 +39,8 @@ Get-MgGroupSiteList -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [
 ## DESCRIPTION
 Returns the metadata for a list][].
 This API is available in the following [national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 

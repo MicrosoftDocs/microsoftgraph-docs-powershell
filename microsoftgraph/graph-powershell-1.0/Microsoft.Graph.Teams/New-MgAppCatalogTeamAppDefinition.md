@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgappcatalogteamappdefinition
@@ -55,34 +55,32 @@ This API specifically updates an app published to your organization's app catalo
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Update an application previously published to the Microsoft Teams app catalog
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 $params = app.zip
 
 
 New-MgAppCatalogTeamAppDefinition -TeamsAppId $teamsAppId -BodyParameter $params
-
 ```
+
 This example will update an application previously published to the microsoft teams app catalog
 
 ### Example 2: Update a new version of an existing app for admin review prior to publication in the current tenant catalog
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 $params = app.zip
 
 
 New-MgAppCatalogTeamAppDefinition -TeamsAppId $teamsAppId -Requiresreview true  -BodyParameter $params
-
 ```
-This example will update a new version of an existing app for admin review prior to publication in the current tenant catalog
 
+This example will update a new version of an existing app for admin review prior to publication in the current tenant catalog
 
 ## PARAMETERS
 

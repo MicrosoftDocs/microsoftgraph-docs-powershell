@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mguserinferenceclassification
@@ -44,6 +44,7 @@ Update-MgUserInferenceClassification -InputObject <IMailIdentity>
 Update the navigation property inferenceClassification in users
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -56,10 +57,10 @@ $params = @{
 # A UPN can also be used as -UserId.
 Update-MgUserInferenceClassificationOverride -UserId $userId -InferenceClassificationOverrideId $inferenceClassificationOverrideId -BodyParameter $params
 ```
+
 This example shows how to use the Update-MgUserInferenceClassificationOverride Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

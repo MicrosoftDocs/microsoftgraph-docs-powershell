@@ -1,11 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 ms.prod: onenote
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenotesection
 schema: 2.0.0
-ms.prod: onenote
-ms.prod: onenote
 ---
 
 # Get-MgSiteOnenoteSection
@@ -41,6 +39,8 @@ Get-MgSiteOnenoteSection -InputObject <INotesIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 Retrieve the properties and relationships of a onenoteSection object.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 

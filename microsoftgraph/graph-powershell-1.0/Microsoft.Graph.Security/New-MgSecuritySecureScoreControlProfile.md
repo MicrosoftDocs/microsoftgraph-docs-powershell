@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritysecurescorecontrolprofile
@@ -37,6 +37,7 @@ New-MgSecuritySecureScoreControlProfile -BodyParameter <IMicrosoftGraphSecureSco
 Create new navigation property to secureScoreControlProfiles for security
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -44,10 +45,10 @@ Import-Module Microsoft.Graph.Security
 
 Get-MgSecuritySecureScoreControlProfile
 ```
+
 This example shows how to use the New-MgSecuritySecureScoreControlProfile Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

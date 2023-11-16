@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetacheckinuserdriveitem
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Invoke-MgBetaCheckinUserDriveItem
@@ -53,6 +52,7 @@ Check in a checked out driveItem resource, which makes the version of the docume
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -64,10 +64,10 @@ $params = @{
 
 Invoke-MgBetaCheckinDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
 ```
+
 This example shows how to use the Invoke-MgBetaCheckinUserDriveItem Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -325,6 +325,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Invoke-MgCheckinUserDriveItem](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgCheckinUserDriveItem?view=graph-powershell-1.0)
 
 [Invoke-MgCheckinUserDriveItem](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgCheckinUserDriveItem?view=graph-powershell-1.0)

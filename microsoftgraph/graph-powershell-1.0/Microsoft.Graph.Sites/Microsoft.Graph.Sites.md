@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Sites
 Module Guid: 2e7ac9c2-5e62-421f-a498-dc0598eb8cfa
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.sites
@@ -1965,6 +1965,9 @@ The default drive (document library) for this site.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSiteDefaultDrive](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteDefaultDrive?view=graph-powershell-beta)
+
+### [Get-MgSiteDelta](Get-MgSiteDelta.md)
+Invoke function delta
 
 ### [Get-MgSiteDrive](Get-MgSiteDrive.md)
 The collection of drives (document libraries) under this site.

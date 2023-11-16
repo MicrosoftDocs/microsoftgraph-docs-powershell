@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 ms.prod: sites-and-lists
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoregroupset
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Get-MgSiteTermStoreGroupSet
@@ -59,6 +58,7 @@ Get-MgSiteTermStoreGroupSet -InputObject <ISitesIdentity> [-ExpandProperty <Stri
 All sets under the group in a term [store].
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -66,10 +66,10 @@ Import-Module Microsoft.Graph.Sites
 
 Get-MgSiteTermStoreGroupSet -SiteId $siteId -GroupId $groupId
 ```
+
 This example shows how to use the Get-MgSiteTermStoreGroupSet Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

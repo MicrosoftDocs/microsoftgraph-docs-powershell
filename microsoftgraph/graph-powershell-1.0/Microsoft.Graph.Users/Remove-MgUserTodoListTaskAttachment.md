@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolistextension
@@ -31,6 +31,7 @@ Remove-MgUserTodoListExtension -InputObject <IUsersIdentity> [-IfMatch <String>]
 Delete navigation property extensions for users
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -39,10 +40,10 @@ Import-Module Microsoft.Graph.Users
 # A UPN can also be used as -UserId.
 Remove-MgUserTodoListTaskAttachment -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -AttachmentBaseId $attachmentBaseId
 ```
+
 This example shows how to use the Remove-MgUserTodoListTaskAttachment Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

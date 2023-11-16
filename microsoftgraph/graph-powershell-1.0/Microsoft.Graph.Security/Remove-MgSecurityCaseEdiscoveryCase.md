@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycase
@@ -33,6 +33,7 @@ Delete an ediscoveryCase object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -40,10 +41,10 @@ Import-Module Microsoft.Graph.Security
 
 Remove-MgSecurityCaseEdiscoveryCase -EdiscoveryCaseId $ediscoveryCaseId
 ```
+
 This example shows how to use the Remove-MgSecurityCaseEdiscoveryCase Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupfavorite
@@ -33,11 +33,13 @@ Supported for Microsoft 365 groups only.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Using the Remove-MgGroupFavorite Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Groups
 Remove-MgGroupFavorite -GroupId $groupId
 ```
+
 This example shows how to use the Remove-MgGroupFavorite Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 

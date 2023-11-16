@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaextractuserdriveitemsensitivitylabel
@@ -188,6 +188,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Invoke-MgExtractUserDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgExtractUserDriveItemSensitivityLabel?view=graph-powershell-1.0)
 
 [Invoke-MgExtractUserDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgExtractUserDriveItemSensitivityLabel?view=graph-powershell-1.0)

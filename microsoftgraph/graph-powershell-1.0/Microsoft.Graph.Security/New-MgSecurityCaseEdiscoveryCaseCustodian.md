@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasecustodian
@@ -53,10 +53,10 @@ Create a new ediscoveryCustodian object.nAfter the custodian object is created, 
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Security
 
 $params = @{
@@ -64,10 +64,9 @@ $params = @{
 }
 
 New-MgSecurityCaseEdiscoveryCaseCustodian -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
-
 ```
-This example shows how to use the New-MgSecurityCaseEdiscoveryCaseCustodian Cmdlet.
 
+This example shows how to use the New-MgSecurityCaseEdiscoveryCaseCustodian Cmdlet.
 
 ## PARAMETERS
 
@@ -9143,6 +9142,9 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-beta)
+
+
+## RELATED LINKS
 
 
 ## RELATED LINKS

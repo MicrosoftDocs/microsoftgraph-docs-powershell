@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
 ms.prod: outlook
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactfolderchildfoldercount
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Get-MgUserContactFolderChildFolderCount
@@ -33,6 +32,7 @@ Get-MgUserContactFolderChildFolderCount -InputObject <IPersonalContactsIdentity>
 Get the number of the resource
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -41,10 +41,10 @@ Import-Module Microsoft.Graph.PersonalContacts
 # A UPN can also be used as -UserId.
 Get-MgUserContactFolderContact -UserId $userId -ContactFolderId $contactFolderId
 ```
+
 This example shows how to use the Get-MgUserContactFolderContact Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

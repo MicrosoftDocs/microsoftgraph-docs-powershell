@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamprimarychannel
@@ -33,17 +33,16 @@ Get the default channel, General, of a team.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamPrimaryChannel -TeamId $teamId
-
 ```
-This example shows how to use the Get-MgTeamPrimaryChannel Cmdlet.
 
+This example shows how to use the Get-MgTeamPrimaryChannel Cmdlet.
 
 ## PARAMETERS
 

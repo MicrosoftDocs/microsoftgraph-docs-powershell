@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 ms.prod: users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagemententitlementmanagementroleeligibilityscheduleroledefinition
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRoleDefinition
@@ -35,6 +34,7 @@ Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRoleDefinition
 Detailed information for the roleDefinition object that is referenced through the roleDefinitionId property.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -43,10 +43,10 @@ Import-Module Microsoft.Graph.Identity.Governance
 # A UPN can also be used as -UserId.
 Get-MgUserAgreementAcceptance -UserId $userId
 ```
+
 This example shows how to use the Get-MgUserAgreementAcceptance Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

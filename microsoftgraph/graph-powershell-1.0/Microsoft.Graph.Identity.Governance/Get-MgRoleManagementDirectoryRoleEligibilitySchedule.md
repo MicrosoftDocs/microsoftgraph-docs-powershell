@@ -1,11 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 ms.prod: governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagementdirectoryroleeligibilityschedule
 schema: 2.0.0
-ms.prod: governance
-ms.prod: governance
 ---
 
 # Get-MgRoleManagementDirectoryRoleEligibilitySchedule

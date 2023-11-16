@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 ms.prod: onenote
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotenotebookcount
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # Get-MgUserOnenoteNotebookCount
@@ -32,18 +31,17 @@ Get-MgUserOnenoteNotebookCount -InputObject <INotesIdentity> [-Filter <String>] 
 Get the number of the resource
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Notes
 
 # A UPN can also be used as -UserId.
 Get-MgUserOnenoteNotebookSection -UserId $userId -NotebookId $notebookId
-
 ```
-This example shows how to use the Get-MgUserOnenoteNotebookSection Cmdlet.
 
+This example shows how to use the Get-MgUserOnenoteNotebookSection Cmdlet.
 
 ## PARAMETERS
 

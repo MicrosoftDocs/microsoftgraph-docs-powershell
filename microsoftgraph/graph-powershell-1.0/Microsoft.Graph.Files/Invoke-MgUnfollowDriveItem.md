@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgunfollowdriveitem
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Invoke-MgUnfollowDriveItem
@@ -177,6 +176,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Invoke-MgBetaUnfollowDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaUnfollowDriveItem?view=graph-powershell-beta)
 
 [Invoke-MgBetaUnfollowDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaUnfollowDriveItem?view=graph-powershell-beta)

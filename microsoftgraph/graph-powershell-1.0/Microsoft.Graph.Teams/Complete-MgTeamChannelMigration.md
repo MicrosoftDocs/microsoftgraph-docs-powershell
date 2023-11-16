@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 ms.prod: microsoft-teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/complete-mgteamchannelmigration
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Complete-MgTeamChannelMigration
@@ -41,17 +40,16 @@ You can add members to the team after the request returns a successful response.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 Complete-MgTeamChannelMigration -TeamId $teamId -ChannelId $channelId
-
 ```
-This example shows how to use the Complete-MgTeamChannelMigration Cmdlet.
 
+This example shows how to use the Complete-MgTeamChannelMigration Cmdlet.
 
 ## PARAMETERS
 

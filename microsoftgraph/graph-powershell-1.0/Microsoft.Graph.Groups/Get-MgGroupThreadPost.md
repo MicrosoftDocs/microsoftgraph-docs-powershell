@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 ms.prod: groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthreadpost
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # Get-MgGroupThreadPost
@@ -52,6 +51,7 @@ Get-MgGroupThreadPost -InputObject <IGroupsIdentity> [-ExpandProperty <String[]>
 Get posts from groups
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -59,10 +59,10 @@ Import-Module Microsoft.Graph.Groups
 
 Get-MgGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId
 ```
+
 This example shows how to use the Get-MgGroupThreadPost Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

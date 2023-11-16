@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusermanagerbyref
@@ -33,6 +33,7 @@ Remove a user's manager.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Remove the manager of a user
 
 ```powershell

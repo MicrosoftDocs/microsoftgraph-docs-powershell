@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamchannelsharedwithteam
@@ -35,17 +35,16 @@ This operation is allowed only for channels with a membershipType value of share
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 Remove-MgTeamChannelSharedWithTeam -TeamId $teamId -ChannelId $channelId -SharedWithChannelTeamInfoId $sharedWithChannelTeamInfoId
-
 ```
-This example shows how to use the Remove-MgTeamChannelSharedWithTeam Cmdlet.
 
+This example shows how to use the Remove-MgTeamChannelSharedWithTeam Cmdlet.
 
 ## PARAMETERS
 

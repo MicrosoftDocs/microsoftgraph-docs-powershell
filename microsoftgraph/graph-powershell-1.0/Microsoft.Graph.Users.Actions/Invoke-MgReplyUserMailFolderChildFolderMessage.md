@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 ms.prod: outlook
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgreplyallusermessage
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Invoke-MgReplyAllUserMessage
@@ -62,6 +61,7 @@ Alternatively, create a draft to reply-all to a message and send it later.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Reply in JSON format to an existing message
 
 ```powershell
@@ -90,10 +90,10 @@ $params = @{
 # A UPN can also be used as -UserId.
 Invoke-MgReplyUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
+
 This example shows how to use the Invoke-MgReplyUserMailFolderChildFolderMessage Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -447,3 +447,6 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaReplyUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaReplyUserMailFolderChildFolderMessage?view=graph-powershell-beta)
+
+
+## RELATED LINKS

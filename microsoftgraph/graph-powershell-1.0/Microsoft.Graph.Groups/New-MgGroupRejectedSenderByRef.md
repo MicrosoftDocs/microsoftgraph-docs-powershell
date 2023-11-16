@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggrouprejectedsenderbyref
@@ -49,6 +49,7 @@ Make sure you don't specify the same user or group in the rejected senders and a
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -60,10 +61,10 @@ $params = @{
 
 New-MgGroupRejectedSenderByRef -GroupId $groupId -BodyParameter $params
 ```
+
 This example shows how to use the New-MgGroupRejectedSenderByRef Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgarchiveteam
@@ -57,17 +57,16 @@ To restore a team from its archived state, use the API to unarchive.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 Invoke-MgArchiveTeam -TeamId $teamId
-
 ```
-This example shows how to use the Invoke-MgArchiveTeam Cmdlet.
 
+This example shows how to use the Invoke-MgArchiveTeam Cmdlet.
 
 ## PARAMETERS
 

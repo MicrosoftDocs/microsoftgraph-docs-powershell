@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 ms.prod: identity-and-sign-in
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicypermissiongrantpolicyinclude
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgPolicyPermissionGrantPolicyInclude
@@ -42,7 +41,8 @@ Condition sets which are included in this permission grant policy.
 Automatically expanded on GET.
 
 ## EXAMPLES
-### Example 1: Get a permission grant policy include by ID 
+
+### Example 1: Get a permission grant policy include by ID
 
 ```powershell
 Connect-MgGraph -Scopes "Policy.Read.PermissionGrant" 
@@ -62,7 +62,6 @@ AdditionalProperties                        : {[scopeSensitivityLabels, System.C
 ```
 
 This command retrieves a specified permission grant policy include configuration in Azure AD.
-
 
 ## PARAMETERS
 

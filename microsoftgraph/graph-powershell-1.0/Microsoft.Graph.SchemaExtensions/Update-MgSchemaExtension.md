@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.SchemaExtensions-help.xml
 Module Name: Microsoft.Graph.SchemaExtensions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/update-mgschemaextension
@@ -65,6 +65,7 @@ When using Graph Explorer to update a schemaExtension resource, include the owne
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -94,10 +95,10 @@ $params = @{
 
 Update-MgSchemaExtension -SchemaExtensionId $schemaExtensionId -BodyParameter $params
 ```
+
 This example shows how to use the Update-MgSchemaExtension Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

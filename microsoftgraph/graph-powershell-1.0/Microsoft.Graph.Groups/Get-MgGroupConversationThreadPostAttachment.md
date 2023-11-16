@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 ms.prod: groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupconversationthreadpostattachment
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # Get-MgGroupConversationThreadPostAttachment
@@ -44,6 +43,8 @@ Get-MgGroupConversationThreadPostAttachment -InputObject <IGroupsIdentity> [-Exp
 Read-only.
 Nullable.
 Supports $expand.
+
+## EXAMPLES
 
 ## PARAMETERS
 

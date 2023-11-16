@@ -1,11 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 ms.prod: outlook
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldermessageextensioncount
 schema: 2.0.0
-ms.prod: outlook
-ms.prod: outlook
 ---
 
 # Get-MgUserMailFolderMessageExtensionCount
@@ -33,6 +31,7 @@ Get-MgUserMailFolderMessageExtensionCount -InputObject <IMailIdentity> [-Filter 
 Get the number of the resource
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -41,10 +40,10 @@ Import-Module Microsoft.Graph.Mail
 # A UPN can also be used as -UserId.
 Get-MgUserMailFolderMessageRule -UserId $userId -MailFolderId $mailFolderId -MessageRuleId $messageRuleId
 ```
+
 This example shows how to use the Get-MgUserMailFolderMessageRule Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

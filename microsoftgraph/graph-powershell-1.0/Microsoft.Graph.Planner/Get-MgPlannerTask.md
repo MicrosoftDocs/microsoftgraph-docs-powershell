@@ -1,11 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 ms.prod: planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannertask
 schema: 2.0.0
-ms.prod: planner
-ms.prod: planner
 ---
 
 # Get-MgPlannerTask
@@ -43,17 +41,16 @@ Retrieve the properties and relationships of plannerTask object.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Planner
 
 Get-MgPlannerTask
-
 ```
-This example shows how to use the Get-MgPlannerTask Cmdlet.
 
+This example shows how to use the Get-MgPlannerTask Cmdlet.
 
 ## PARAMETERS
 

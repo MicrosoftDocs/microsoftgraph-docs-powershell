@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelistcontenttype
@@ -57,6 +57,7 @@ New-MgSiteListContentType -InputObject <ISitesIdentity> -BodyParameter <IMicroso
 Create new navigation property to contentTypes for sites
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -64,10 +65,10 @@ Import-Module Microsoft.Graph.Sites
 
 Get-MgSiteListContentType -SiteId $siteId -ListId $listId
 ```
+
 This example shows how to use the New-MgSiteListContentType Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -1569,6 +1570,9 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteListContentType?view=graph-powershell-beta)
+
+
+## RELATED LINKS
 
 
 ## RELATED LINKS

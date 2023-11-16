@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
+ms.prod: users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserregistereddevice
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Get-MgUserRegisteredDevice
@@ -40,6 +40,8 @@ Devices that are registered for the user.
 Read-only.
 Nullable.
 Supports $expand and returns up to 100 objects.
+
+## EXAMPLES
 
 ## PARAMETERS
 

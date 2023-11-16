@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermanageddevicelogcollectionresponsedownloadurl
@@ -188,6 +188,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [New-MgUserManagedDeviceLogCollectionResponseDownloadUrl](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserManagedDeviceLogCollectionResponseDownloadUrl?view=graph-powershell-1.0)
 
 [New-MgUserManagedDeviceLogCollectionResponseDownloadUrl](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserManagedDeviceLogCollectionResponseDownloadUrl?view=graph-powershell-1.0)

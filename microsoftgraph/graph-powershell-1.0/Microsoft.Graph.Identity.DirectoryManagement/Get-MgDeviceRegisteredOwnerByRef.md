@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 ms.prod: directory-management
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdeviceregisteredownerbyref
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Get-MgDeviceRegisteredOwnerByRef
@@ -33,6 +32,8 @@ The registered owner is set at the time of registration.
 Read-only.
 Nullable.
 Supports $expand.
+
+## EXAMPLES
 
 ## PARAMETERS
 

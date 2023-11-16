@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 ms.prod: directory-management
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicebyid
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Get-MgDeviceById
@@ -36,6 +35,8 @@ Get-MgDeviceById
 Return the directory objects specified in a list of IDs.
 Only a subset of user properties are returned by default in v1.0.
 Some common uses for this function are to: This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 

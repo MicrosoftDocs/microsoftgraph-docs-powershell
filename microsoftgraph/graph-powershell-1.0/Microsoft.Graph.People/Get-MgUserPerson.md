@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.People-help.xml
 Module Name: Microsoft.Graph.People
 ms.prod: insights
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mguserlastsharedmethodinsight
 schema: 2.0.0
-ms.prod: insights
 ---
 
 # Get-MgUserLastSharedMethodInsight
@@ -33,18 +32,17 @@ Get-MgUserLastSharedMethodInsight -InputObject <IPeopleIdentity> [-ExpandPropert
 Get lastSharedMethod from users
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.People
 
 # A UPN can also be used as -UserId.
 Get-MgUserPerson -UserId $userId
-
 ```
-This example shows how to use the Get-MgUserPerson Cmdlet.
 
+This example shows how to use the Get-MgUserPerson Cmdlet.
 
 ## PARAMETERS
 

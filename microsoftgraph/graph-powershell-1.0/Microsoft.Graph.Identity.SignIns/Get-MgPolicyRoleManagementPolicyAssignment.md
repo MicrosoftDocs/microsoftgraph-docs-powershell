@@ -1,11 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 ms.prod: governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyrolemanagementpolicyassignment
 schema: 2.0.0
-ms.prod: governance
-ms.prod: governance
 ---
 
 # Get-MgPolicyRoleManagementPolicyAssignment
@@ -43,6 +41,7 @@ Get the details of a role management policy assignment including the policy and 
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Retrieve a role management policy assignment
 
 ```powershell
@@ -50,6 +49,7 @@ Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgPolicyRoleManagementPolicyAssignment -UnifiedRoleManagementPolicyAssignmentId $unifiedRoleManagementPolicyAssignmentId
 ```
+
 This example shows how to use the Get-MgPolicyRoleManagementPolicyAssignment Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -61,10 +61,10 @@ Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgPolicyRoleManagementPolicyAssignment -UnifiedRoleManagementPolicyAssignmentId $unifiedRoleManagementPolicyAssignmentId -ExpandProperty "policy(`$expand=rules)"
 ```
+
 This example shows how to use the Get-MgPolicyRoleManagementPolicyAssignment Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

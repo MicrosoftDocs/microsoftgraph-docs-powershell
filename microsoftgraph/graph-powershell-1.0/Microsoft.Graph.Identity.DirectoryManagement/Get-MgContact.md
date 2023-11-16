@@ -1,11 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 ms.prod: directory-management
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontact
 schema: 2.0.0
-ms.prod: directory-management
-ms.prod: directory-management
 ---
 
 # Get-MgContact
@@ -42,7 +40,8 @@ Get the properties and relationships of an organizational contact.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Retrieve contact objects in the directory 
+
+### Example 1: Retrieve contact objects in the directory
 
 ```powershell
 Get-MgContact | Format-List Id, DisplayName, Mail, MailNickname

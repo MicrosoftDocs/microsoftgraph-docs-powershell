@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 ms.prod: identity-and-sign-in
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationoperation
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgUserAuthenticationOperation
@@ -48,6 +47,7 @@ The possible states of the long-running operation are notStarted, running, succe
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -55,10 +55,10 @@ Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgUserAuthenticationOperation -UserId $userId -LongRunningOperationId $longRunningOperationId
 ```
+
 This example shows how to use the Get-MgUserAuthenticationOperation Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

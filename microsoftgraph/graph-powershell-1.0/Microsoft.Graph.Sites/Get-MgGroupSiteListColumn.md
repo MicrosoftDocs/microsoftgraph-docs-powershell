@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 ms.prod: sites-and-lists
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistcolumn
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Get-MgGroupSiteListColumn
@@ -38,6 +37,8 @@ Get-MgGroupSiteListColumn -InputObject <ISitesIdentity> [-ExpandProperty <String
 
 ## DESCRIPTION
 The collection of field definitions for this list.
+
+## EXAMPLES
 
 ## PARAMETERS
 

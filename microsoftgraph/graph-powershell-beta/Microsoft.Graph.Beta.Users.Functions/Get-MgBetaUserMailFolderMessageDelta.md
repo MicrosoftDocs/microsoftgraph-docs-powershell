@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausermailfoldermessagedelta
@@ -300,6 +300,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgUserMailFolderMessageDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserMailFolderMessageDelta?view=graph-powershell-1.0)
 
 [Get-MgUserMailFolderMessageDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserMailFolderMessageDelta?view=graph-powershell-1.0)

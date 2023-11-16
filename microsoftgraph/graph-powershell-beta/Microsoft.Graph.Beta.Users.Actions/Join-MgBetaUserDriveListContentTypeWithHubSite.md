@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 ms.prod: sites-and-lists
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/join-mgbetauserdrivelistcontenttypewithhubsite
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Join-MgBetaUserDriveListContentTypeWithHubSite
@@ -290,6 +289,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Join-MgUserDriveListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Users.Actions/Join-MgUserDriveListContentTypeWithHubSite?view=graph-powershell-1.0)
 
 [Join-MgUserDriveListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Users.Actions/Join-MgUserDriveListContentTypeWithHubSite?view=graph-powershell-1.0)

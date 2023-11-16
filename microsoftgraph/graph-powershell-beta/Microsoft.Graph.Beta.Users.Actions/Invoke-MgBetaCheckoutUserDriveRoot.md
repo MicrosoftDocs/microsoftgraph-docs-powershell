@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetacheckoutuserdriveroot
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Invoke-MgBetaCheckoutUserDriveRoot
@@ -38,6 +37,7 @@ Check out a driveItem resource to prevent others from editing the document, and 
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -45,10 +45,10 @@ Import-Module Microsoft.Graph.Beta.Files
 
 Invoke-MgBetaCheckoutDriveItem -DriveId $driveId -DriveItemId $driveItemId
 ```
+
 This example shows how to use the Invoke-MgBetaCheckoutUserDriveRoot Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -203,6 +203,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Invoke-MgCheckoutUserDriveRoot](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgCheckoutUserDriveRoot?view=graph-powershell-1.0)
 
 [Invoke-MgCheckoutUserDriveRoot](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgCheckoutUserDriveRoot?view=graph-powershell-1.0)

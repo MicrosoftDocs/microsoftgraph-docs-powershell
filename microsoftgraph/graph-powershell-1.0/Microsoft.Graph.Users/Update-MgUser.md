@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguser
@@ -158,6 +158,7 @@ Compare member and guest default permissions to see properties they can manage.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Update a user's display name
 
 ```powershell
@@ -27766,6 +27767,9 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaUser](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUser?view=graph-powershell-beta)
+
+
+## RELATED LINKS
 
 
 ## RELATED LINKS

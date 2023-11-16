@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycase
@@ -6241,5 +6241,8 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaSecurityCase](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityCase?view=graph-powershell-beta)
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

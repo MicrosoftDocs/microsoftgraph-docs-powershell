@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementwindowsmanagedappprotection
 schema: 2.0.0
@@ -25,23 +25,17 @@ Update-MgBetaDeviceAppManagementWindowsManagedAppProtection -WindowsManagedAppPr
  [-LastModifiedDateTime <DateTime>] [-MaximumAllowedDeviceThreatLevel <ManagedAppDeviceThreatLevel>]
  [-MaximumRequiredOSVersion <String>] [-MaximumWarningOSVersion <String>] [-MaximumWipeOSVersion <String>]
  [-MinimumRequiredAppVersion <String>] [-MinimumRequiredOSVersion <String>]
- [-MinimumRequiredSdkVersion <String>] [-MinimumWarningAppVersion <String>]
- [-MinimumWarningOSVersion <String>] [-MinimumWipeAppVersion <String>] [-MinimumWipeOSVersion <String>]
- [-MinimumWipeSdkVersion <String>] [-MobileThreatDefenseRemediationAction <ManagedAppRemediationAction>]
+ [-MinimumRequiredSdkVersion <String>] [-MinimumWarningAppVersion <String>] [-MinimumWarningOSVersion <String>]
+ [-MinimumWipeAppVersion <String>] [-MinimumWipeOSVersion <String>] [-MinimumWipeSdkVersion <String>]
+ [-MobileThreatDefenseRemediationAction <ManagedAppRemediationAction>]
  [-PeriodOfflineBeforeAccessCheck <TimeSpan>] [-PeriodOfflineBeforeWipeIsEnforced <TimeSpan>] [-PrintBlocked]
- [-RoleScopeTagIds <String[]>] [-Version <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-RoleScopeTagIds <String[]>] [-Version <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceAppManagementWindowsManagedAppProtection -WindowsManagedAppProtectionId <String>
- -BodyParameter <IMicrosoftGraphWindowsManagedAppProtection> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaDeviceAppManagementWindowsManagedAppProtection -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphWindowsManagedAppProtection> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWindowsManagedAppProtection> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -57,11 +51,17 @@ Update-MgBetaDeviceAppManagementWindowsManagedAppProtection -InputObject <IDevic
  [-LastModifiedDateTime <DateTime>] [-MaximumAllowedDeviceThreatLevel <ManagedAppDeviceThreatLevel>]
  [-MaximumRequiredOSVersion <String>] [-MaximumWarningOSVersion <String>] [-MaximumWipeOSVersion <String>]
  [-MinimumRequiredAppVersion <String>] [-MinimumRequiredOSVersion <String>]
- [-MinimumRequiredSdkVersion <String>] [-MinimumWarningAppVersion <String>]
- [-MinimumWarningOSVersion <String>] [-MinimumWipeAppVersion <String>] [-MinimumWipeOSVersion <String>]
- [-MinimumWipeSdkVersion <String>] [-MobileThreatDefenseRemediationAction <ManagedAppRemediationAction>]
+ [-MinimumRequiredSdkVersion <String>] [-MinimumWarningAppVersion <String>] [-MinimumWarningOSVersion <String>]
+ [-MinimumWipeAppVersion <String>] [-MinimumWipeOSVersion <String>] [-MinimumWipeSdkVersion <String>]
+ [-MobileThreatDefenseRemediationAction <ManagedAppRemediationAction>]
  [-PeriodOfflineBeforeAccessCheck <TimeSpan>] [-PeriodOfflineBeforeWipeIsEnforced <TimeSpan>] [-PrintBlocked]
- [-RoleScopeTagIds <String[]>] [-Version <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-RoleScopeTagIds <String[]>] [-Version <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaDeviceAppManagementWindowsManagedAppProtection -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <IMicrosoftGraphWindowsManagedAppProtection> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -69,19 +69,15 @@ Update the navigation property windowsManagedAppProtections in deviceAppManageme
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -89,7 +85,7 @@ Update the navigation property windowsManagedAppProtections in deviceAppManageme
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -104,7 +100,7 @@ Accept wildcard characters: False
 Data can be transferred from/to these classes of apps
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Support.WindowsManagedAppDataTransferLevel
+Type: WindowsManagedAppDataTransferLevel
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -119,7 +115,7 @@ Accept wildcard characters: False
 Represents the level to which the device's clipboard may be shared between apps
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Support.WindowsManagedAppClipboardSharingLevel
+Type: WindowsManagedAppClipboardSharingLevel
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -134,7 +130,7 @@ Accept wildcard characters: False
 Data can be transferred from/to these classes of apps
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Support.WindowsManagedAppDataTransferLevel
+Type: WindowsManagedAppDataTransferLevel
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -149,7 +145,7 @@ Accept wildcard characters: False
 An admin initiated action to be applied on a managed app.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Support.ManagedAppRemediationAction
+Type: ManagedAppRemediationAction
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -165,7 +161,7 @@ List of apps to which the policy is deployed.
 To construct, see NOTES section for APPS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedMobileApp[]
+Type: IMicrosoftGraphManagedMobileApp[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -181,7 +177,7 @@ Navigation property to list of inclusion and exclusion groups to which the polic
 To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTargetedManagedAppPolicyAssignment[]
+Type: IMicrosoftGraphTargetedManagedAppPolicyAssignment[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -197,7 +193,7 @@ Policy used to configure detailed management settings targeted to specific secur
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsManagedAppProtection
+Type: IMicrosoftGraphWindowsManagedAppProtection
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -212,7 +208,7 @@ Accept wildcard characters: False
 The date and time the policy was created.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -227,7 +223,7 @@ Accept wildcard characters: False
 Indicates the total number of applications for which the current policy is deployed.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -242,7 +238,7 @@ Accept wildcard characters: False
 The policy's description.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -257,7 +253,7 @@ Accept wildcard characters: False
 Policy display name.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -273,7 +269,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -289,8 +285,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IDevicesCorporateManagementIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IDevicesCorporateManagementIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -306,7 +302,7 @@ When FALSE, indicates that the policy is not deployed to any inclusion groups.
 Default value is FALSE.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -321,7 +317,7 @@ Accept wildcard characters: False
 Last time the policy was modified.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -336,7 +332,7 @@ Accept wildcard characters: False
 The maxium threat level allowed for an app to be compliant.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Support.ManagedAppDeviceThreatLevel
+Type: ManagedAppDeviceThreatLevel
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -352,7 +348,7 @@ Versions bigger than the specified version will block the managed app from acces
 For example: '8.1.0' or '13.1.1'.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -368,7 +364,7 @@ Versions bigger than the specified version will result in warning message on the
 For example: '8.1.0' or '13.1.1'.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -384,7 +380,7 @@ Versions bigger than the specified version will wipe the managed app and the ass
 For example: '8.1.0' or '13.1.1'.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -400,7 +396,7 @@ Versions less than the specified version will block the managed app from accessi
 For example: '8.1.0' or '13.1.1'.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -416,7 +412,7 @@ Versions less than the specified version will block the managed app from accessi
 For example: '8.1.0' or '13.1.1'.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -432,7 +428,7 @@ Versions less than the specified version will block the managed app from accessi
 For example: '8.1.0' or '13.1.1'.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -448,7 +444,7 @@ Versions less than the specified version will result in warning message on the m
 For example: '8.1.0' or '13.1.1'.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -464,7 +460,7 @@ Versions less than the specified version will result in warning message on the m
 For example: '8.1.0' or '13.1.1'.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -480,7 +476,7 @@ Versions less than the specified version will wipe the managed app and the assoc
 For example: '8.1.0' or '13.1.1'.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -496,7 +492,7 @@ Versions less than the specified version will wipe the managed app and the assoc
 For example: '8.1.0' or '13.1.1'.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -512,7 +508,7 @@ Versions less than the specified version will wipe the managed app and the assoc
 For example: '8.1.0' or '13.1.1'.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -527,7 +523,7 @@ Accept wildcard characters: False
 An admin initiated action to be applied on a managed app.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Support.ManagedAppRemediationAction
+Type: ManagedAppRemediationAction
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -544,7 +540,7 @@ For example, PT5M indicates that the interval is 5 minutes in duration.
 A timespan value of PT0S indicates that access will be blocked immediately when the device is not connected to the internet.
 
 ```yaml
-Type: System.TimeSpan
+Type: TimeSpan
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -561,7 +557,7 @@ For example, P5D indicates that the interval is 5 days in duration.
 A timespan value of PT0S indicates that managed data will never be wiped when the device is not connected to the internet.
 
 ```yaml
-Type: System.TimeSpan
+Type: TimeSpan
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -578,7 +574,7 @@ When FALSE, indicates that printing is allowed from managed apps.
 Default value is FALSE.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -593,7 +589,7 @@ Accept wildcard characters: False
 List of Scope Tags for this Entity instance.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -608,7 +604,7 @@ Accept wildcard characters: False
 Version of the entity.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -623,8 +619,8 @@ Accept wildcard characters: False
 The unique identifier of windowsManagedAppProtection
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -638,7 +634,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -654,7 +650,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -671,13 +667,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsManagedAppProtection
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsManagedAppProtection
-
 ## NOTES
 
 ALIASES
@@ -817,3 +810,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorydevicelocalcredential
@@ -42,6 +42,8 @@ Update-MgDirectoryDeviceLocalCredential -InputObject <IIdentityDirectoryManageme
 
 ## DESCRIPTION
 Update the navigation property deviceLocalCredentials in directory
+
+## EXAMPLES
 
 ## PARAMETERS
 

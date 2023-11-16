@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/grant-mgdriveitempermission
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Grant-MgDriveItemPermission
@@ -269,6 +268,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
+
 [Grant-MgBetaDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/Grant-MgBetaDriveItemPermission?view=graph-powershell-beta)
 
 [Grant-MgBetaDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/Grant-MgBetaDriveItemPermission?view=graph-powershell-beta)

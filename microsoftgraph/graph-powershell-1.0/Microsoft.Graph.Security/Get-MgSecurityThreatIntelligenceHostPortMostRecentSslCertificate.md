@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostportmostrecentsslcertificate
@@ -26,6 +26,8 @@ Get-MgSecurityThreatIntelligenceHostPortMostRecentSslCertificate -InputObject <I
 
 ## DESCRIPTION
 The most recent sslCertificate used to communicate on the port.
+
+## EXAMPLES
 
 ## PARAMETERS
 

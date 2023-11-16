@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitetermstore
@@ -43,6 +43,7 @@ Remove-MgSiteTermStore -InputObject <ISitesIdentity> [-IfMatch <String>] [-PassT
 Delete navigation property termStore for sites
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -54,10 +55,10 @@ $params = @{
 
 Update-MgSiteTermStore -SiteId $siteId -BodyParameter $params
 ```
+
 This example shows how to use the Remove-MgSiteTermStore Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

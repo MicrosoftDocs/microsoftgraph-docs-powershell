@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusertodolisttaskattachmentsession
@@ -47,6 +47,7 @@ Update-MgUserTodoListTaskAttachmentSession -InputObject <IUsersIdentity>
 Update the navigation property attachmentSessions in users
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -59,10 +60,10 @@ $params = @{
 # A UPN can also be used as -UserId.
 Update-MgUserTodoListTaskChecklistItem -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -ChecklistItemId $checklistItemId -BodyParameter $params
 ```
+
 This example shows how to use the Update-MgUserTodoListTaskChecklistItem Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

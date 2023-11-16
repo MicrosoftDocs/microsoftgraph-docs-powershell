@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemlastmodifiedbyusermailboxsetting
@@ -204,6 +204,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserDriveItemLastModifiedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemLastModifiedByUserMailboxSetting?view=graph-powershell-beta)
 
 [Get-MgBetaUserDriveItemLastModifiedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemLastModifiedByUserMailboxSetting?view=graph-powershell-beta)

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausertodolisttaskattachmentuploadsession
@@ -61,6 +61,7 @@ The following are the steps to attach a file to a Microsoft To Do task using an 
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Using the New-MgBetaUserTodoListTaskAttachmentUploadSession Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
@@ -74,6 +75,7 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgBetaUserTodoListTaskAttachmentUploadSession -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -BodyParameter $params
 ```
+
 This example shows how to use the New-MgBetaUserTodoListTaskAttachmentUploadSession Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -294,6 +296,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [New-MgUserTodoListTaskAttachmentUploadSession](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserTodoListTaskAttachmentUploadSession?view=graph-powershell-1.0)
 
 [New-MgUserTodoListTaskAttachmentUploadSession](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserTodoListTaskAttachmentUploadSession?view=graph-powershell-1.0)

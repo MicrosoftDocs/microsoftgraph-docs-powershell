@@ -1,11 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 ms.prod: governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementaccesspackage
 schema: 2.0.0
-ms.prod: governance
-ms.prod: governance
 ---
 
 # Get-MgEntitlementManagementAccessPackage
@@ -43,17 +41,16 @@ Retrieve the properties and relationships of an accessPackage object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgEntitlementManagementAccessPackage
-
 ```
-This example shows how to use the Get-MgEntitlementManagementAccessPackage Cmdlet.
 
+This example shows how to use the Get-MgEntitlementManagementAccessPackage Cmdlet.
 
 ## PARAMETERS
 

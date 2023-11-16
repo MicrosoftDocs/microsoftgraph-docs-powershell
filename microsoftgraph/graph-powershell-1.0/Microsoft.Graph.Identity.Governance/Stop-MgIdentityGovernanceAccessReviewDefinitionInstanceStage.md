@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/stop-mgidentitygovernanceaccessreviewdefinitioninstancestage
@@ -40,11 +40,13 @@ The accessReviewInstanceDecisionItem objects will always reflect the last decisi
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Using the Stop-MgIdentityGovernanceAccessReviewDefinitionInstanceStage Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 Stop-MgIdentityGovernanceAccessReviewDefinitionInstanceStage -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -AccessReviewStageId $accessReviewStageId
 ```
+
 This example shows how to use the Stop-MgIdentityGovernanceAccessReviewDefinitionInstanceStage Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 

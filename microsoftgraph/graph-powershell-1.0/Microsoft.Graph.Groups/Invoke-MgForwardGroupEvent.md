@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 ms.prod: outlook
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgforwardgroupconversationthreadpostinreplyto
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Invoke-MgForwardGroupConversationThreadPostInReplyTo
@@ -54,6 +53,7 @@ You can specify both the parent conversation and thread in the request, nor, you
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -74,10 +74,10 @@ $params = @{
 # A UPN can also be used as -UserId.
 Invoke-MgForwardUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
 ```
+
 This example shows how to use the Invoke-MgForwardGroupEvent Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

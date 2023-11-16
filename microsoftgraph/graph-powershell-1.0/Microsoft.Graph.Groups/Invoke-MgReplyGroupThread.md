@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 ms.prod: groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreplygroupthread
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # Invoke-MgReplyGroupThread
@@ -51,6 +50,7 @@ You can specify the parent conversation in the request, or, you can specify just
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Using the Invoke-MgReplyGroupThread Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Groups
@@ -64,8 +64,10 @@ $params = @{
 }
 Invoke-MgReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
 ```
+
 This example shows how to use the Invoke-MgReplyGroupThread Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ### Example 2: Using the Invoke-MgReplyGroupThread Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Groups
@@ -86,8 +88,10 @@ $params = @{
 }
 Invoke-MgReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
 ```
+
 This example shows how to use the Invoke-MgReplyGroupThread Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ### Example 3: Using the Invoke-MgReplyGroupThread Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Groups
@@ -111,8 +115,10 @@ $params = @{
 }
 Invoke-MgReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
 ```
+
 This example shows how to use the Invoke-MgReplyGroupThread Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ### Example 4: Using the Invoke-MgReplyGroupThread Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Groups
@@ -136,6 +142,7 @@ $params = @{
 }
 Invoke-MgReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
 ```
+
 This example shows how to use the Invoke-MgReplyGroupThread Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -423,6 +430,9 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaReplyGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaReplyGroupThread?view=graph-powershell-beta)
+
+
+## RELATED LINKS
 
 
 ## RELATED LINKS

@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 ms.prod: identity-and-sign-in
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgdatapolicyoperation
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgDataPolicyOperation
@@ -42,17 +41,16 @@ Retrieve the properties of a dataPolicyOperation object.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgDataPolicyOperation -DataPolicyOperationId $dataPolicyOperationId
-
 ```
-This example shows how to use the Get-MgDataPolicyOperation Cmdlet.
 
+This example shows how to use the Get-MgDataPolicyOperation Cmdlet.
 
 ## PARAMETERS
 

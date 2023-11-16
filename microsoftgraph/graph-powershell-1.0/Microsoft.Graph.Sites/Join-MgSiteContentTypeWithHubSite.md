@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 ms.prod: sites-and-lists
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/join-mgsitecontenttypewithhubsite
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Join-MgSiteContentTypeWithHubSite
@@ -49,6 +48,7 @@ Associate a published content type][contentType] present in a content type hub w
 This API is available in the following [national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Using the Join-MgSiteContentTypeWithHubSite Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Sites
@@ -60,6 +60,7 @@ $params = @{
 }
 Join-MgSiteContentTypeWithHubSite -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
 ```
+
 This example shows how to use the Join-MgSiteContentTypeWithHubSite Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mgdriverootversion
@@ -177,6 +177,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Restore-MgBetaDriveRootVersion](/powershell/module/Microsoft.Graph.Beta.Files/Restore-MgBetaDriveRootVersion?view=graph-powershell-beta)
 
 [Restore-MgBetaDriveRootVersion](/powershell/module/Microsoft.Graph.Beta.Files/Restore-MgBetaDriveRootVersion?view=graph-powershell-beta)

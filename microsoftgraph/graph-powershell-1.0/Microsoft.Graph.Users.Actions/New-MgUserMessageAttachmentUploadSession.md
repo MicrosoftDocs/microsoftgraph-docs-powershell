@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mgusermessageattachmentuploadsession
@@ -66,6 +66,7 @@ The following are the steps to attach a file to an Outlook item using an upload 
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Using the New-MgUserMessageAttachmentUploadSession Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
@@ -81,8 +82,10 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgUserMessageAttachmentUploadSession -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
+
 This example shows how to use the New-MgUserMessageAttachmentUploadSession Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ### Example 2: Using the New-MgUserMessageAttachmentUploadSession Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
@@ -96,6 +99,7 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgUserMessageAttachmentUploadSession -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
+
 This example shows how to use the New-MgUserMessageAttachmentUploadSession Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -296,6 +300,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [New-MgBetaUserMessageAttachmentUploadSession](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserMessageAttachmentUploadSession?view=graph-powershell-beta)
 
 [New-MgBetaUserMessageAttachmentUploadSession](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserMessageAttachmentUploadSession?view=graph-powershell-beta)

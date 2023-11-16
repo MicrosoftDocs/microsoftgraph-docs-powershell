@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 ms.prod: outlook
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mgusermailfolder
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Copy-MgUserMailFolder
@@ -52,6 +51,7 @@ Copy a mailfolder and its contents to another mailfolder.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Using the Copy-MgUserMailFolder Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
@@ -61,6 +61,7 @@ $params = @{
 # A UPN can also be used as -UserId.
 Copy-MgUserMailFolder -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
 ```
+
 This example shows how to use the Copy-MgUserMailFolder Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -244,6 +245,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Copy-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Copy-MgBetaUserMailFolder?view=graph-powershell-beta)
 
 [Copy-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Copy-MgBetaUserMailFolder?view=graph-powershell-beta)

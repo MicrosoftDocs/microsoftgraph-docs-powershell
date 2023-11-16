@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/test-mgdirectoryroletemplateproperty
@@ -53,6 +53,7 @@ To learn more about configuring naming policies, see Configure naming policy.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -67,10 +68,10 @@ $params = @{
 
 Test-MgDirectoryObjectProperty -BodyParameter $params
 ```
+
 This example shows how to use the Test-MgDirectoryRoleTemplateProperty Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

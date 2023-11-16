@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusersettingshiftpreference
@@ -31,6 +31,7 @@ Remove-MgUserSettingShiftPreference -InputObject <IUsersIdentity> [-IfMatch <Str
 Delete navigation property shiftPreferences for users
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -39,10 +40,10 @@ Import-Module Microsoft.Graph.Users
 # A UPN can also be used as -UserId.
 Remove-MgUserTodoList -UserId $userId -TodoTaskListId $todoTaskListId
 ```
+
 This example shows how to use the Remove-MgUserTodoList Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

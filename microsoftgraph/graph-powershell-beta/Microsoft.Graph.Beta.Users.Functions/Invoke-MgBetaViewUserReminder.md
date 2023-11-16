@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetaviewuserreminder
@@ -231,6 +231,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Invoke-MgViewUserReminder](/powershell/module/Microsoft.Graph.Users.Functions/Invoke-MgViewUserReminder?view=graph-powershell-1.0)
 
 [Invoke-MgViewUserReminder](/powershell/module/Microsoft.Graph.Users.Functions/Invoke-MgViewUserReminder?view=graph-powershell-1.0)

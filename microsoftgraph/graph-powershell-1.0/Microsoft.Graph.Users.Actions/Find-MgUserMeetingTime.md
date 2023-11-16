@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 ms.prod: outlook
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/find-mgusermeetingtime
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Find-MgUserMeetingTime
@@ -66,6 +65,7 @@ In scenarios like test environments where the input parameters and calendar data
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Using the Find-MgUserMeetingTime Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
@@ -112,6 +112,7 @@ $params = @{
 # A UPN can also be used as -UserId.
 Find-MgUserMeetingTime -UserId $userId -BodyParameter $params
 ```
+
 This example shows how to use the Find-MgUserMeetingTime Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -487,3 +488,6 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Find-MgBetaUserMeetingTime](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Find-MgBetaUserMeetingTime?view=graph-powershell-beta)
+
+
+## RELATED LINKS

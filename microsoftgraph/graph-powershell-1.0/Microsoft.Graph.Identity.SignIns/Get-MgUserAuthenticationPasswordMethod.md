@@ -1,11 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 ms.prod: identity-and-sign-in
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationoperationcount
 schema: 2.0.0
-ms.prod: identity-and-sign-in
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgUserAuthenticationOperationCount
@@ -34,6 +32,7 @@ Get-MgUserAuthenticationOperationCount -InputObject <IIdentitySignInsIdentity> [
 Get the number of the resource
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -42,10 +41,10 @@ Import-Module Microsoft.Graph.Identity.SignIns
 # A UPN can also be used as -UserId.
 Get-MgUserAuthenticationPasswordMethod -UserId $userId -PasswordAuthenticationMethodId $passwordAuthenticationMethodId
 ```
+
 This example shows how to use the Get-MgUserAuthenticationPasswordMethod Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

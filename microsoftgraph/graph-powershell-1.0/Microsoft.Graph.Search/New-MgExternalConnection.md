@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnection
@@ -39,10 +39,10 @@ Create a new externalConnection object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Search
 
 $params = @{
@@ -52,10 +52,9 @@ $params = @{
 }
 
 New-MgExternalConnection -BodyParameter $params
-
 ```
-This example shows how to use the New-MgExternalConnection Cmdlet.
 
+This example shows how to use the New-MgExternalConnection Cmdlet.
 
 ## PARAMETERS
 
@@ -501,6 +500,9 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaExternalConnection?view=graph-powershell-beta)
+
+
+## RELATED LINKS
 
 
 ## RELATED LINKS

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchat
@@ -56,6 +56,7 @@ New-MgUserChat -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphChat
 Create new navigation property to chats for users
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -63,6 +64,7 @@ Import-Module Microsoft.Graph.Teams
 
 Get-MgUserChat -UserId $userId
 ```
+
 This example shows how to use the New-MgUserChat Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -74,6 +76,7 @@ Import-Module Microsoft.Graph.Teams
 
 Get-MgUserChat -UserId $userId -ExpandProperty "members"
 ```
+
 This example shows how to use the New-MgUserChat Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -85,10 +88,10 @@ Import-Module Microsoft.Graph.Teams
 
 Get-MgChat -Sort "lastMessagePreview/createdDateTime desc"
 ```
+
 This example shows how to use the New-MgUserChat Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -984,6 +987,9 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaUserChat](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChat?view=graph-powershell-beta)
+
+
+## RELATED LINKS
 
 
 ## RELATED LINKS

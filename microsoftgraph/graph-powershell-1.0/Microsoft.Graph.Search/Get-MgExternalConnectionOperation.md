@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 ms.prod: search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectionoperation
 schema: 2.0.0
-ms.prod: search
 ---
 
 # Get-MgExternalConnectionOperation
@@ -42,17 +41,16 @@ Read the properties and relationships of a connectionOperation object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Search
 
 Get-MgExternalConnectionOperation -ExternalConnectionId $externalConnectionId -ConnectionOperationId $connectionOperationId
-
 ```
-This example shows how to use the Get-MgExternalConnectionOperation Cmdlet.
 
+This example shows how to use the Get-MgExternalConnectionOperation Cmdlet.
 
 ## PARAMETERS
 

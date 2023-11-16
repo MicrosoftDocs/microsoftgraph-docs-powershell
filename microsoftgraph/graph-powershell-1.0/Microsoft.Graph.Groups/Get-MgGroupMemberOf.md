@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 ms.prod: groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberof
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # Get-MgGroupMemberOf
@@ -48,6 +47,7 @@ Nullable.
 Supports $expand.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -55,10 +55,10 @@ Import-Module Microsoft.Graph.Groups
 
 Get-MgGroupMemberOf -GroupId $groupId
 ```
+
 This example shows how to use the Get-MgGroupMemberOf Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

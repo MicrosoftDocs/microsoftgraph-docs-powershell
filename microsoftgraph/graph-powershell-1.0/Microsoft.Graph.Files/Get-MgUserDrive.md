@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharesite
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Get-MgShareSite
@@ -36,6 +35,7 @@ Get-MgShareSite -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Pro
 Used to access the underlying site
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -44,10 +44,10 @@ Import-Module Microsoft.Graph.Files
 # A UPN can also be used as -UserId.
 Get-MgUserDrive -UserId $userId
 ```
+
 This example shows how to use the Get-MgUserDrive Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -157,6 +157,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserDrive](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDrive?view=graph-powershell-beta)
 
 [Get-MgBetaUserDrive](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDrive?view=graph-powershell-beta)

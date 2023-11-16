@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/move-mgbetadevicemanagementintenttotemplate
 schema: 2.0.0
@@ -15,29 +15,29 @@ Invoke action migrateToTemplate
 ### MigrateExpanded (Default)
 ```
 Move-MgBetaDeviceManagementIntentToTemplate -DeviceManagementIntentId <String>
- [-AdditionalProperties <Hashtable>] [-NewTemplateId <String>] [-PreserveCustomValues] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-NewTemplateId <String>] [-PreserveCustomValues] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Migrate
 ```
 Move-MgBetaDeviceManagementIntentToTemplate -DeviceManagementIntentId <String>
  -BodyParameter <IPaths1S6He5TDevicemanagementIntentsDevicemanagementintentIdMicrosoftGraphMigratetotemplatePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### MigrateViaIdentityExpanded
+```
+Move-MgBetaDeviceManagementIntentToTemplate -InputObject <IDeviceManagementActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-NewTemplateId <String>] [-PreserveCustomValues] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### MigrateViaIdentity
 ```
 Move-MgBetaDeviceManagementIntentToTemplate -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths1S6He5TDevicemanagementIntentsDevicemanagementintentIdMicrosoftGraphMigratetotemplatePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### MigrateViaIdentityExpanded
-```
-Move-MgBetaDeviceManagementIntentToTemplate -InputObject <IDeviceManagementActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-NewTemplateId <String>] [-PreserveCustomValues] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,14 +45,14 @@ Invoke action migrateToTemplate
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -65,7 +65,7 @@ Invoke action migrateToTemplate
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: MigrateExpanded, MigrateViaIdentityExpanded
 Aliases:
 
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1S6He5TDevicemanagementIntentsDevicemanagementintentIdMicrosoftGraphMigratetotemplatePostRequestbodyContentApplicationJsonSchema
+Type: IPaths1S6He5TDevicemanagementIntentsDevicemanagementintentIdMicrosoftGraphMigratetotemplatePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Migrate, MigrateViaIdentity
 Aliases:
 
@@ -96,8 +96,8 @@ Accept wildcard characters: False
 The unique identifier of deviceManagementIntent
 
 ```yaml
-Type: System.String
-Parameter Sets: Migrate, MigrateExpanded
+Type: String
+Parameter Sets: MigrateExpanded, Migrate
 Aliases:
 
 Required: True
@@ -112,8 +112,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
-Parameter Sets: MigrateViaIdentity, MigrateViaIdentityExpanded
+Type: IDeviceManagementActionsIdentity
+Parameter Sets: MigrateViaIdentityExpanded, MigrateViaIdentity
 Aliases:
 
 Required: True
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: MigrateExpanded, MigrateViaIdentityExpanded
 Aliases:
 
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: MigrateExpanded, MigrateViaIdentityExpanded
 Aliases:
 
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -188,7 +188,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -205,13 +205,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1S6He5TDevicemanagementIntentsDevicemanagementintentIdMicrosoftGraphMigratetotemplatePostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -280,4 +277,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
-

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplanner
@@ -521,5 +521,8 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaPlanner?view=graph-powershell-beta)
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

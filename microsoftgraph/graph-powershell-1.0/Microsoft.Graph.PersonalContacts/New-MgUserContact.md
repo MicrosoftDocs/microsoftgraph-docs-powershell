@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactphotocontent
@@ -31,6 +31,7 @@ Get-MgUserContactPhotoContent -InputObject <IPersonalContactsIdentity> -OutFile 
 Get media content for the navigation property photo from users
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -53,10 +54,10 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgUserContact -UserId $userId -BodyParameter $params
 ```
+
 This example shows how to use the New-MgUserContact Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

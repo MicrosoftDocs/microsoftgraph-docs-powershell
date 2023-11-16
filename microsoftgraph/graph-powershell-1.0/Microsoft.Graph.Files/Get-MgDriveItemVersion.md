@@ -1,11 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemversion
 schema: 2.0.0
-ms.prod: sharepoint
-ms.prod: sharepoint
 ---
 
 # Get-MgDriveItemVersion
@@ -46,28 +44,26 @@ Retrieve the metadata for a specific version of a DriveItem.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Get specified version of a file
 
 ```powershell
-
 Import-Module Microsoft.Graph.Files
 
 Get-MgDriveItemVersion -DriveId $driveId -DriveItemId $driveItemId -DriveItemVersionId $driveItemVersionId
-
 ```
+
 This example will get specified version of a file
 
 ### Example 2: Get current version of a file
 
 ```powershell
-
 Import-Module Microsoft.Graph.Files
 
 Get-MgDriveItemVersion -DriveId $driveId -DriveItemId $driveItemId -DriveItemVersionId $driveItemVersionId
-
 ```
-This example will get current version of a file
 
+This example will get current version of a file
 
 ## PARAMETERS
 
@@ -328,6 +324,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaDriveItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemVersion?view=graph-powershell-beta)
 
 [Get-MgBetaDriveItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemVersion?view=graph-powershell-beta)

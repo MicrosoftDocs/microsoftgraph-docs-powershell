@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 ms.prod: security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostreputation
 schema: 2.0.0
-ms.prod: security
 ---
 
 # Get-MgSecurityThreatIntelligenceHostReputation

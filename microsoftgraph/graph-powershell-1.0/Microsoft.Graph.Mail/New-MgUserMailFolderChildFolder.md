@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermessageextensioncount
@@ -29,6 +29,7 @@ Get-MgUserMessageExtensionCount -InputObject <IMailIdentity> [-Filter <String>] 
 Get the number of the resource
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -42,10 +43,10 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgUserMailFolderChildFolder -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
 ```
+
 This example shows how to use the New-MgUserMailFolderChildFolder Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

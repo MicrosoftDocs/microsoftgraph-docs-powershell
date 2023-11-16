@@ -1,11 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitem
 schema: 2.0.0
-ms.prod: sharepoint
-ms.prod: sharepoint
 ---
 
 # Get-MgSiteListItem
@@ -43,6 +41,7 @@ Returns the metadata for an item][] in a [list][].
 This API is available in the following [national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -50,10 +49,10 @@ Import-Module Microsoft.Graph.Sites
 
 Get-MgSiteListItem -SiteId $siteId -ListId $listId -ListItemId $listItemId -ExpandProperty "fields"
 ```
+
 This example shows how to use the Get-MgSiteListItem Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

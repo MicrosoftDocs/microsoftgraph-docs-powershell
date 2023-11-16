@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 ms.prod: groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/add-mggrouptolifecyclepolicy
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # Add-MgGroupToLifecyclePolicy
@@ -51,10 +50,10 @@ This action limits the group lifecycle policy to a set of groups only if the man
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Groups
 
 $params = @{
@@ -62,10 +61,9 @@ $params = @{
 }
 
 Add-MgGroupToLifecyclePolicy -GroupLifecyclePolicyId $groupLifecyclePolicyId -BodyParameter $params
-
 ```
-This example shows how to use the Add-MgGroupToLifecyclePolicy Cmdlet.
 
+This example shows how to use the Add-MgGroupToLifecyclePolicy Cmdlet.
 
 ## PARAMETERS
 

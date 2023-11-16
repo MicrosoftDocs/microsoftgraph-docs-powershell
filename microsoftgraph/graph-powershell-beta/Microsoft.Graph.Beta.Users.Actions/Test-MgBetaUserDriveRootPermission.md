@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetauserdriverootpermission
@@ -269,6 +269,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Test-MgUserDriveRootPermission](/powershell/module/Microsoft.Graph.Users.Actions/Test-MgUserDriveRootPermission?view=graph-powershell-1.0)
 
 [Test-MgUserDriveRootPermission](/powershell/module/Microsoft.Graph.Users.Actions/Test-MgUserDriveRootPermission?view=graph-powershell-1.0)

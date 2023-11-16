@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduleschedulinggroup
@@ -39,17 +39,16 @@ Retrieve the properties and relationships of a schedulingGroup by ID.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamScheduleSchedulingGroup -TeamId $teamId
-
 ```
-This example shows how to use the Get-MgTeamScheduleSchedulingGroup Cmdlet.
 
+This example shows how to use the Get-MgTeamScheduleSchedulingGroup Cmdlet.
 
 ## PARAMETERS
 

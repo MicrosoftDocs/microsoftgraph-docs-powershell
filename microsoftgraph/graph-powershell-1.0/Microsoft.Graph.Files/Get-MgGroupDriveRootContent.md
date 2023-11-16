@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootcontent
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Get-MgGroupDriveRootContent
@@ -159,6 +158,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupDriveRootContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootContent?view=graph-powershell-beta)
 
 [Get-MgBetaGroupDriveRootContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootContent?view=graph-powershell-beta)

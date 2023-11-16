@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupmember
@@ -38,6 +38,7 @@ New-MgGroupMember -InputObject <IGroupsIdentity> -BodyParameter <Hashtable> [-Wh
 Add a member to an Office 365 group or security group through the members navigation property.
 
 ## EXAMPLES
+
 ### Example 1: Add a member to a group.
 
 ```powershell

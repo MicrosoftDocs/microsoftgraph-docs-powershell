@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 ms.prod: ediscovery
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasesetting
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # Get-MgSecurityCaseEdiscoveryCaseSetting
@@ -35,17 +34,16 @@ Read the properties and relationships of an ediscoveryCaseSettings object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityCaseEdiscoveryCaseSetting -EdiscoveryCaseId $ediscoveryCaseId
-
 ```
-This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseSetting Cmdlet.
 
+This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseSetting Cmdlet.
 
 ## PARAMETERS
 

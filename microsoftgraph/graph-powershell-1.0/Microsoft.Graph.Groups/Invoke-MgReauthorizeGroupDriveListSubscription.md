@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 ms.prod: change-notifications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreauthorizegroupdrivelistsubscription
 schema: 2.0.0
-ms.prod: change-notifications
 ---
 
 # Invoke-MgReauthorizeGroupDriveListSubscription

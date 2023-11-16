@@ -1,11 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 ms.prod: microsoft-teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchat
 schema: 2.0.0
-ms.prod: microsoft-teams
-ms.prod: microsoft-teams
 ---
 
 # Get-MgChat
@@ -46,50 +44,46 @@ To access a chat, at least one chat member must belong to the tenant the request
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Get a group chat
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 Get-MgChat -ChatId $chatId
-
 ```
+
 This example will get a group chat
 
 ### Example 2: Get a chat and all its members
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
-Get-MgChat -ChatId $chatId -ExpandProperty "members" 
-
+Get-MgChat -ChatId $chatId -ExpandProperty "members"
 ```
+
 This example will get a chat and all its members
 
 ### Example 3: Get the meeting details of a chat associated with a Microsoft Teams meeting
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 Get-MgChat -ChatId $chatId
-
 ```
+
 This example will get the meeting details of a chat associated with a microsoft teams meeting
 
 ### Example 4: Get the chat along with the preview of the last message sent in the chat
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
-Get-MgChat -ChatId $chatId -ExpandProperty "lastMessagePreview" 
-
+Get-MgChat -ChatId $chatId -ExpandProperty "lastMessagePreview"
 ```
-This example will get the chat along with the preview of the last message sent in the chat
 
+This example will get the chat along with the preview of the last message sent in the chat
 
 ## PARAMETERS
 

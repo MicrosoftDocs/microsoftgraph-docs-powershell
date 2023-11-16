@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 ms.prod: users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguseroutlookmastercategorycount
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Get-MgUserOutlookMasterCategoryCount
@@ -31,18 +30,17 @@ Get-MgUserOutlookMasterCategoryCount -InputObject <IUsersIdentity> [-Filter <Str
 Get the number of the resource
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Users
 
 # A UPN can also be used as -UserId.
 Get-MgUserOwnedDevice -UserId $userId
-
 ```
-This example shows how to use the Get-MgUserOwnedDevice Cmdlet.
 
+This example shows how to use the Get-MgUserOwnedDevice Cmdlet.
 
 ## PARAMETERS
 
