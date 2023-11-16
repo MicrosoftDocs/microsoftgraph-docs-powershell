@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 Module Guid: 8e808470-ff01-4270-a111-2339cdce072c
 Download Help Link: {{ Update Download Link }}
