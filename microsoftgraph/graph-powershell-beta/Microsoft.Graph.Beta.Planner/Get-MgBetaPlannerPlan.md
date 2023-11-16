@@ -11,6 +11,9 @@ schema: 2.0.0
 Retrieve the properties and relationships of a plannerplan object.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPlannerPlan](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerPlan?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -259,6 +262,7 @@ INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgPlannerPlan](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerPlan?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerplan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerplan)
 

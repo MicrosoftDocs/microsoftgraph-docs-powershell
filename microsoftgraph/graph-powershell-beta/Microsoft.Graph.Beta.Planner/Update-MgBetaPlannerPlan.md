@@ -11,6 +11,9 @@ schema: 2.0.0
 Update the properties of a plannerPlan object.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPlannerPlan](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerPlan?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -1024,6 +1027,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   \[Title \<String\>\]: Title of the task.
 
 ## RELATED LINKS
+[Update-MgPlannerPlan](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerPlan?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannerplan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannerplan)
 
