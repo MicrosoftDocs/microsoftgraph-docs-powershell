@@ -31,13 +31,17 @@ Remove-MgBetaDomain -InputObject <IIdentityDirectoryManagementIdentity> [-IfMatc
 Deletes a domain from a tenant.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Remove-MgBetaDomain -DomainId $domainId
+```
+This example shows how to use the Remove-MgBetaDomain Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadministrativeunit
@@ -31,9 +31,8 @@ New-MgBetaAdministrativeUnit -BodyParameter <IMicrosoftGraphAdministrativeUnit> 
 Use this API to create a new administrativeUnit.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the New-MgBetaAdministrativeUnit Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{
 	DisplayName = "Seattle District Technical Schools"
@@ -44,6 +43,8 @@ $params = @{
 }
 New-MgBetaAdministrativeUnit -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaAdministrativeUnit Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -36,13 +36,17 @@ The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 19
 A smaller image will reduce bandwidth requirements and make the page load faster.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaOrganizationBrandingLocalization -OrganizationId $organizationId
+```
+This example shows how to use the Set-MgBetaBetaOrganizationBrandingLocalizationBackgroundImage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
