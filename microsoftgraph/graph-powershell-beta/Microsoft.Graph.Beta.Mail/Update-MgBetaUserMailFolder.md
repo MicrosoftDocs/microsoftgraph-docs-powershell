@@ -59,11 +59,10 @@ Update the writable properties of a mailSearchFolder object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Mail
-```
 
 $params = @{
 	displayName = "displayName-value"
@@ -71,6 +70,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgBetaUserMailFolder -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaUserMailFolder Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

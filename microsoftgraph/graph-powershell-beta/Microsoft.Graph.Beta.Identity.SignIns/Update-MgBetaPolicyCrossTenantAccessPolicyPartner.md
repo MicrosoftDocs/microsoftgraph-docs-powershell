@@ -67,11 +67,10 @@ Update the properties of a partner-specific configuration.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Configure inbound trust settings
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	inboundTrust = @{
@@ -82,11 +81,15 @@ $params = @{
 }
 
 Update-MgBetaPolicyCrossTenantAccessPolicyPartner -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaPolicyCrossTenantAccessPolicyPartner Cmdlet.
 
-### EXAMPLE 2
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Configure automaticUserConsent settings
+
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	automaticUserConsentSettings = @{
@@ -96,11 +99,15 @@ $params = @{
 }
 
 Update-MgBetaPolicyCrossTenantAccessPolicyPartner -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaPolicyCrossTenantAccessPolicyPartner Cmdlet.
 
-### EXAMPLE 3
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Configure tenant restrictions settings
+
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	tenantRestrictions = @{
@@ -126,6 +133,11 @@ $params = @{
 }
 
 Update-MgBetaPolicyCrossTenantAccessPolicyPartner -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaPolicyCrossTenantAccessPolicyPartner Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenanttag
@@ -32,9 +32,8 @@ Create a new tenantTag object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the New-MgBetaTenantRelationshipManagedTenantTag Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.ManagedTenants
 $params = @{
 	DisplayName = "Support"
@@ -42,6 +41,8 @@ $params = @{
 }
 New-MgBetaTenantRelationshipManagedTenantTag -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaTenantRelationshipManagedTenantTag Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -39,14 +39,18 @@ Get the properties and relationships of a messageRule object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Mail
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserMailFolderMessageRule -UserId $userId -MailFolderId $mailFolderId -MessageRuleId $messageRuleId
+```
+This example shows how to use the Get-MgBetaUserMailFolderMessageRule Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

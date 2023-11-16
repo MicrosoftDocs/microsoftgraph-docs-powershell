@@ -42,24 +42,26 @@ Add groups to be included in a mobile app management policy.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the New-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupByRef Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/odata/groups('dc3d2ce5-7c5e-4dca-a0ef-2145bf6e53ef')"
 }
 New-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupByRef -MobilityManagementPolicyId $mobilityManagementPolicyId -BodyParameter $params
 ```
-
-### EXAMPLE 2
-```
+This example shows how to use the New-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupByRef Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the New-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupByRef Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/odata/groups('dc3d2ce5-7c5e-4dca-a0ef-2145bf6e53ef')"
 }
 New-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupByRef -MobilityManagementPolicyId $mobilityManagementPolicyId -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupByRef Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -36,11 +36,10 @@ Update the properties of a cross-tenant access policy.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	allowedCloudEndpoints = @(
@@ -50,6 +49,11 @@ $params = @{
 }
 
 Update-MgBetaPolicyCrossTenantAccessPolicy -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaPolicyCrossTenantAccessPolicy Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

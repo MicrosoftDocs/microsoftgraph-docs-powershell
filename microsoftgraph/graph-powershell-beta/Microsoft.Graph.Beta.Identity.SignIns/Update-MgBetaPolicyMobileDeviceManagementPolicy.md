@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicymobiledevicemanagementpolicy
@@ -46,9 +46,8 @@ Update the properties of a mobilityManagementPolicy object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Update-MgBetaPolicyMobileDeviceManagementPolicy Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	"@odata.type" = "#microsoft.graph.mobilityManagementPolicy"
@@ -58,6 +57,8 @@ $params = @{
 }
 Update-MgBetaPolicyMobileDeviceManagementPolicy -MobilityManagementPolicyId $mobilityManagementPolicyId -BodyParameter $params
 ```
+This example shows how to use the Update-MgBetaPolicyMobileDeviceManagementPolicy Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

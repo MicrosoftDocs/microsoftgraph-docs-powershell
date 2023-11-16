@@ -33,11 +33,10 @@ Create a new identityApiConnector object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Create an API connector with basic authentication
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	displayName = "Test API"
@@ -50,11 +49,15 @@ $params = @{
 }
 
 New-MgBetaIdentityApiConnector -BodyParameter $params
+```
+This example shows how to use the New-MgBetaIdentityApiConnector Cmdlet.
 
-### EXAMPLE 2
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Create an API connector with client certificate authentication
+
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	displayName = "Test API"
@@ -67,6 +70,11 @@ $params = @{
 }
 
 New-MgBetaIdentityApiConnector -BodyParameter $params
+```
+This example shows how to use the New-MgBetaIdentityApiConnector Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
