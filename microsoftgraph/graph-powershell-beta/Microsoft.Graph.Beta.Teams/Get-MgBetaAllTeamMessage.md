@@ -20,18 +20,6 @@ Get-MgBetaAllTeamMessage [-Count] [-Filter <String>] [-Model <String>] [-Propert
 ## DESCRIPTION
 Invoke function getAllMessages
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -167,4 +155,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaallteammessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaallteammessage)
+
 

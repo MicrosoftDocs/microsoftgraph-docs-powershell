@@ -27,22 +27,6 @@ Get-MgBetaGroupTeamPhoto -InputObject <ITeamsIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 The team photo.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -164,4 +148,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamphoto](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamphoto)
+
 
