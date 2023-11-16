@@ -2211,3 +2211,6 @@ To create the parameters described below, construct a hash table containing the 
 [New-MgBetaSecurityThreatIntelligenceHost](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceHost?view=graph-powershell-beta)
 
 ## RELATED LINKS
+
+
+## RELATED LINKS

@@ -550,3 +550,6 @@ To create the parameters described below, construct a hash table containing the 
 [Update-MgBetaSecurityTriggerRetentionEvent](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityTriggerRetentionEvent?view=graph-powershell-beta)
 
 ## RELATED LINKS
+
+
+## RELATED LINKS

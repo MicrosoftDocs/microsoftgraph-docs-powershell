@@ -451,3 +451,6 @@ To create the parameters described below, construct a hash table containing the 
 [New-MgBetaRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom?view=graph-powershell-beta)
 
 ## RELATED LINKS
+
+
+## RELATED LINKS

@@ -1,3 +1,4 @@
+$RetainedExamples = New-Object Collections.Generic.List[string] 
 function Import-Descriptions {
     Param (
         [object]$Content,
@@ -8,7 +9,7 @@ function Import-Descriptions {
     $option = [System.Text.RegularExpressions.RegexOptions]::Multiline
     $Re = [regex]::new($SearchBlock, $option)
     $Re2 = [regex]::new($SearchBlock2, $option)
-    $RetainedExamples = New-Object Collections.Generic.List[string] 
+   
     $End = 0
     $NoOfExamples = 0
     foreach ($C in $Content) {
@@ -17,14 +18,18 @@ function Import-Descriptions {
         }
         $End++  
     }
-    Write-Host "Importing descriptions $NoOfExamples"
+   
+    Write-Host "Retianed examples $NoOfExamples"
     Get-ExistingDescriptions -Content $Content -File $File  -start 0 -end $End -NoOfExamples $NoOfExamples
+    Write-Host "File " $File
     if(Test-Path $File){
+        Write-Host "Importing descriptions " $RetainedExamples.Count
     $TitleCount = 1
     $DestinationContent = Get-Content -Encoding UTF8 -Raw $File
     $RetainedContent = $null
     foreach ($Ex in $RetainedExamples) {
             $ContentBody = $Ex.Split("**##@**")[0]
+            Write-Host $ContentBody
             $ContentDescription = $Ex.Split("**##@**")[2]
             $RetainedContent += "$ContentBody$ContentDescription"  
             $TitleCount++ 
@@ -35,11 +40,12 @@ function Import-Descriptions {
     if(-not($Null -eq $RetainedContent) -and -not($RetainedContent.Contains("Add title here"))){
      if($DestinationContent -match $Re){
         $Extracted = $Matches[0]
+        Write-Host 
         $FinalOutput = "## EXAMPLES`r`n$RetainedContent`r`n## PARAMETERS"
         $text = $DestinationContent.ToString()
-        if(-not($Extracted.Contains("``````powershell"))){
+        if(-not($Extracted.Contains("### EXAMPLE"))){
             $text = $text.Replace($Extracted, "## PARAMETERS") 
-            Write-Host "Does not have snippet"
+            Write-Host "Does not have snippetsing"
         }else{
             $text = $text.Replace($Extracted, $FinalOutput)
         }
@@ -89,12 +95,14 @@ function Get-ExistingDescriptions {
     )
     $Title = $null
     $ContentBlock = $null
- 
+    
     for ($i = $Start; $i -lt $End; $i++) {
         $Value = $Content[$i]
         $ContentBlock += "$Value`n" 
+        
         if ($Content[$i].StartsWith("### Example")) {
             $Title = $Content[$i]
+            
         }   
         if ($Content[$i].EndsWith("``")) {
             $Start = $i
@@ -124,7 +132,8 @@ function Get-ExistingDescriptions {
     }
    
 }
-$File = "C:\Projects\msgraph-sdk-powershell\src\Identity.SignIns\beta\examples\New-MgBetaIdentityProvider.md"
-$DestinationFile = "C:\Projects\microsoftgraph-docs-powershell\microsoftgraph\graph-powershell-beta\Microsoft.Graph.Beta.Identity.SignIns\New-MgBetaIdentityProvider.md"
+$File = "C:\Projects\msgraph-sdk-powershell\src\Teams\beta\examples\Update-MgBetaTeamworkTeamAppSetting.md"
+$DestinationFile = "C:\Projects\microsoftgraph-docs-powershell\microsoftgraph\graph-powershell-beta\Microsoft.Graph.Beta.Teams\Update-MgBetaTeamworkTeamAppSetting.md"
 $Content = Get-Content -Path $File
+Write-Host $RetainedExamples.Count
 Import-Descriptions -Content $Content -File $DestinationFile

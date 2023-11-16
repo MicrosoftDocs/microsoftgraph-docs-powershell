@@ -1160,3 +1160,6 @@ To create the parameters described below, construct a hash table containing the 
 [Update-MgBetaSiteListColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListColumn?view=graph-powershell-beta)
 
 ## RELATED LINKS
+
+
+## RELATED LINKS

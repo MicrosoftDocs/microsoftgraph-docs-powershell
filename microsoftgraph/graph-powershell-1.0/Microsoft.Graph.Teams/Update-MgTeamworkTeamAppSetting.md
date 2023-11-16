@@ -32,6 +32,21 @@ Update-MgTeamworkTeamAppSetting -BodyParameter <IMicrosoftGraphTeamsAppSettings>
 Update the tenant-wide teamsAppSettings for all Teams apps in the tenant.
 This API is available in the following national cloud deployments.
 
+## EXAMPLES
+### Example 1: Update the tenant-wide teamsAppSettings for all Teams apps in the tenant
+
+```powershell
+Import-Module Microsoft.Graph.Teams
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.teamsAppSettings"
+	allowUserRequestsForAppAccess = "true"
+}
+
+Update-MgTeamworkTeamAppSetting -BodyParameter $params
+```
+This example updates the tenant-wide teamsAppSettings for all Teams apps in the tenant
+
 ## PARAMETERS
 
 ### -AdditionalProperties

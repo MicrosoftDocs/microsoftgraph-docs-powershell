@@ -773,3 +773,6 @@ To create the parameters described below, construct a hash table containing the 
 [Update-MgBetaSecurityThreatIntelligenceHostPair](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligenceHostPair?view=graph-powershell-beta)
 
 ## RELATED LINKS
+
+
+## RELATED LINKS

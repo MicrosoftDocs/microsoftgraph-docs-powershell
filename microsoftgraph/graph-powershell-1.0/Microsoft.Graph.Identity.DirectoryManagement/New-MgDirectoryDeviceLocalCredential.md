@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorydevicelocalcredential
@@ -27,6 +27,8 @@ New-MgDirectoryDeviceLocalCredential -BodyParameter <IMicrosoftGraphDeviceLocalC
 
 ## DESCRIPTION
 Create new navigation property to deviceLocalCredentials for directory
+
+## EXAMPLES
 
 ## PARAMETERS
 

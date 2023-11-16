@@ -19,6 +19,9 @@ This API is available in the following national cloud deployments.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDriveRootLink](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveRootLink?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDriveRootLink](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveRootLink?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -297,6 +300,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[New-MgBetaDriveRootLink](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveRootLink?view=graph-powershell-beta)
+
 [New-MgBetaDriveRootLink](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveRootLink?view=graph-powershell-beta)
 
 [New-MgBetaDriveRootLink](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveRootLink?view=graph-powershell-beta)

@@ -606,3 +606,6 @@ To create the parameters described below, construct a hash table containing the 
 [Update-MgBetaServicePrincipalRiskDetection](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaServicePrincipalRiskDetection?view=graph-powershell-beta)
 
 ## RELATED LINKS
+
+
+## RELATED LINKS

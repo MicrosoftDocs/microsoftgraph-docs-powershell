@@ -1575,3 +1575,6 @@ To create the parameters described below, construct a hash table containing the 
 [Update-MgBetaSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListContentType?view=graph-powershell-beta)
 
 ## RELATED LINKS
+
+
+## RELATED LINKS

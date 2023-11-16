@@ -16,6 +16,9 @@ Delete navigation property fields for shares
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaShareListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareListItemField?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaShareListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareListItemField?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete1 (Default)
@@ -201,6 +204,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaShareListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareListItemField?view=graph-powershell-beta)
+
 [Remove-MgBetaShareListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareListItemField?view=graph-powershell-beta)
 
 [Remove-MgBetaShareListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareListItemField?view=graph-powershell-beta)

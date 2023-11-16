@@ -16,6 +16,9 @@ Reboot device
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Restart-MgUserManagedDeviceNow](/powershell/module/Microsoft.Graph.Users.Actions/Restart-MgUserManagedDeviceNow?view=graph-powershell-1.0)
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restart-MgUserManagedDeviceNow](/powershell/module/Microsoft.Graph.Users.Actions/Restart-MgUserManagedDeviceNow?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Reboot (Default)
@@ -188,6 +191,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Restart-MgUserManagedDeviceNow](/powershell/module/Microsoft.Graph.Users.Actions/Restart-MgUserManagedDeviceNow?view=graph-powershell-1.0)
+
 [Restart-MgUserManagedDeviceNow](/powershell/module/Microsoft.Graph.Users.Actions/Restart-MgUserManagedDeviceNow?view=graph-powershell-1.0)
 
 [Restart-MgUserManagedDeviceNow](/powershell/module/Microsoft.Graph.Users.Actions/Restart-MgUserManagedDeviceNow?view=graph-powershell-1.0)

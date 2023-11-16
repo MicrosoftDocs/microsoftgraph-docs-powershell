@@ -353,3 +353,6 @@ To create the parameters described below, construct a hash table containing the 
 [New-MgBetaIdentityB2XUserFlow](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityB2XUserFlow?view=graph-powershell-beta)
 
 ## RELATED LINKS
+
+
+## RELATED LINKS

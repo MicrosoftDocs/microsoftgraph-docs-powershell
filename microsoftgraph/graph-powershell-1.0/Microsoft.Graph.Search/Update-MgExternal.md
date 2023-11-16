@@ -300,3 +300,6 @@ To create the parameters described below, construct a hash table containing the 
 [Update-MgBetaExternal](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternal?view=graph-powershell-beta)
 
 ## RELATED LINKS
+
+
+## RELATED LINKS

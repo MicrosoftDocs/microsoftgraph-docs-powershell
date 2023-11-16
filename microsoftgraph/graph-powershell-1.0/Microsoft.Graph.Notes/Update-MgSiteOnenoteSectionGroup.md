@@ -816,3 +816,6 @@ To create the parameters described below, construct a hash table containing the 
 [Update-MgBetaSiteOnenoteSectionGroup](/powershell/module/Microsoft.Graph.Beta.Notes/Update-MgBetaSiteOnenoteSectionGroup?view=graph-powershell-beta)
 
 ## RELATED LINKS
+
+
+## RELATED LINKS

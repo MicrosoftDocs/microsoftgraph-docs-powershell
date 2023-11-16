@@ -933,3 +933,6 @@ To create the parameters described below, construct a hash table containing the 
 [New-MgBetaUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolderChildFolderMessage?view=graph-powershell-beta)
 
 ## RELATED LINKS
+
+
+## RELATED LINKS

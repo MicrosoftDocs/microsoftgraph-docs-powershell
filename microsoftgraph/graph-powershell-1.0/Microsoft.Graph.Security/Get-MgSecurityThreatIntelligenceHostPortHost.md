@@ -31,6 +31,8 @@ The host related to this hostPort.
 This is a reverse navigation property.
 When you navigate to hostPorts from a host, assume that this is a return reference.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

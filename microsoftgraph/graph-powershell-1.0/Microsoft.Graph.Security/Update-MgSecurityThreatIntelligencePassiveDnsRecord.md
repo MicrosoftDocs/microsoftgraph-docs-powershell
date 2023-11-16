@@ -638,3 +638,6 @@ To create the parameters described below, construct a hash table containing the 
 [Update-MgBetaSecurityThreatIntelligencePassiveDnsRecord](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligencePassiveDnsRecord?view=graph-powershell-beta)
 
 ## RELATED LINKS
+
+
+## RELATED LINKS

@@ -16,6 +16,9 @@ Update the navigation property thumbnails in drives
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDriveItemThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItemThumbnail?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDriveItemThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItemThumbnail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -347,6 +350,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Width <Int32?>]`: The width of the thumbnail, in pixels.
 
 ## RELATED LINKS
+[Update-MgBetaDriveItemThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItemThumbnail?view=graph-powershell-beta)
+
 [Update-MgBetaDriveItemThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItemThumbnail?view=graph-powershell-beta)
 
 [Update-MgBetaDriveItemThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItemThumbnail?view=graph-powershell-beta)

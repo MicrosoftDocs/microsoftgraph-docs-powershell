@@ -740,3 +740,6 @@ To create the parameters described below, construct a hash table containing the 
 [Update-MgBetaSecurityThreatIntelligenceSslCertificate](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligenceSslCertificate?view=graph-powershell-beta)
 
 ## RELATED LINKS
+
+
+## RELATED LINKS

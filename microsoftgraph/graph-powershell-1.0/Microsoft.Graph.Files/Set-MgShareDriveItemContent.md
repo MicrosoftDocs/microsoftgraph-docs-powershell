@@ -16,6 +16,9 @@ The content stream, if the item represents a file.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaShareDriveItemContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaShareDriveItemContent?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaShareDriveItemContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaShareDriveItemContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)
@@ -177,6 +180,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Set-MgBetaShareDriveItemContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaShareDriveItemContent?view=graph-powershell-beta)
+
 [Set-MgBetaShareDriveItemContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaShareDriveItemContent?view=graph-powershell-beta)
 
 [Set-MgBetaShareDriveItemContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaShareDriveItemContent?view=graph-powershell-beta)

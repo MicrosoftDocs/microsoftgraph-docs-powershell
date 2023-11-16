@@ -922,6 +922,9 @@ Invoke function getCompatibleHubContentTypes
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteContentTypeCompatibleHubContentType](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupSiteContentTypeCompatibleHubContentType?view=graph-powershell-beta)
 
+### [Get-MgGroupSiteDelta](Get-MgGroupSiteDelta.md)
+Invoke function delta
+
 ### [Get-MgGroupSiteListContentTypeCompatibleHubContentType](Get-MgGroupSiteListContentTypeCompatibleHubContentType.md)
 Invoke function getCompatibleHubContentTypes
 

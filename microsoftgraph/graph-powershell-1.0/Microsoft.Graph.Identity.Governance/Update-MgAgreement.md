@@ -524,3 +524,6 @@ To create the parameters described below, construct a hash table containing the 
 [Update-MgBetaAgreement](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaAgreement?view=graph-powershell-beta)
 
 ## RELATED LINKS
+
+
+## RELATED LINKS

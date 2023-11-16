@@ -20,6 +20,8 @@ Get-MgSiteDelta [-Filter <String>] [-Property <String[]>] [-Search <String>] [-S
 ## DESCRIPTION
 Invoke function delta
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

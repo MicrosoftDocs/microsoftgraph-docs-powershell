@@ -6243,3 +6243,6 @@ To create the parameters described below, construct a hash table containing the 
 [Update-MgBetaSecurityCase](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityCase?view=graph-powershell-beta)
 
 ## RELATED LINKS
+
+
+## RELATED LINKS

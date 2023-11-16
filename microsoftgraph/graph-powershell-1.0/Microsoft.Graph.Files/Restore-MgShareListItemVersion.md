@@ -18,6 +18,9 @@ This API is available in the following national cloud deployments.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Restore-MgBetaShareListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Restore-MgBetaShareListItemVersion?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Restore-MgBetaShareListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Restore-MgBetaShareListItemVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Restore1 (Default)
@@ -216,6 +219,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Restore-MgBetaShareListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Restore-MgBetaShareListItemVersion?view=graph-powershell-beta)
+
 [Restore-MgBetaShareListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Restore-MgBetaShareListItemVersion?view=graph-powershell-beta)
 
 [Restore-MgBetaShareListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Restore-MgBetaShareListItemVersion?view=graph-powershell-beta)

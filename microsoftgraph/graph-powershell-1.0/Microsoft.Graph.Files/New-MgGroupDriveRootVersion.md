@@ -16,6 +16,9 @@ Create new navigation property to versions for groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupDriveRootVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveRootVersion?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupDriveRootVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveRootVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -343,6 +346,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.
 
 ## RELATED LINKS
+[New-MgBetaGroupDriveRootVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveRootVersion?view=graph-powershell-beta)
+
 [New-MgBetaGroupDriveRootVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveRootVersion?view=graph-powershell-beta)
 
 [New-MgBetaGroupDriveRootVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveRootVersion?view=graph-powershell-beta)

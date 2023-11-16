@@ -800,3 +800,6 @@ To create the parameters described below, construct a hash table containing the 
 [Set-MgBetaTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaTeamSchedule?view=graph-powershell-beta)
 
 ## RELATED LINKS
+
+
+## RELATED LINKS

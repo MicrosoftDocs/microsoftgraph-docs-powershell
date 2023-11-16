@@ -1162,3 +1162,6 @@ To create the parameters described below, construct a hash table containing the 
 [Update-MgBetaSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteContentTypeColumn?view=graph-powershell-beta)
 
 ## RELATED LINKS
+
+
+## RELATED LINKS

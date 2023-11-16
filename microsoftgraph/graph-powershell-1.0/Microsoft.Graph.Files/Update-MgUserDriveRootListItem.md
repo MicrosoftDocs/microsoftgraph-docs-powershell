@@ -16,6 +16,9 @@ Update the navigation property listItem in users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserDriveRootListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveRootListItem?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserDriveRootListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveRootListItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -14992,10 +14995,17 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaUserDriveRootListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveRootListItem?view=graph-powershell-beta)
 [Update-MgBetaUserDriveRootListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveRootListItem?view=graph-powershell-beta)
+[Update-MgBetaUserDriveRootListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveRootListItem?view=graph-powershell-beta)
 
 ## RELATED LINKS
 [Update-MgBetaUserDriveRootListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveRootListItem?view=graph-powershell-beta)
 [Update-MgBetaUserDriveRootListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveRootListItem?view=graph-powershell-beta)
+[Update-MgBetaUserDriveRootListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveRootListItem?view=graph-powershell-beta)
+
+## RELATED LINKS
+[Update-MgBetaUserDriveRootListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveRootListItem?view=graph-powershell-beta)
+[Update-MgBetaUserDriveRootListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveRootListItem?view=graph-powershell-beta)
+
 
 ## RELATED LINKS
 [Update-MgBetaUserDriveRootListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveRootListItem?view=graph-powershell-beta)

@@ -27,6 +27,8 @@ Remove-MgSecurityThreatIntelligenceHostPort -InputObject <ISecurityIdentity> [-I
 ## DESCRIPTION
 Delete navigation property hostPorts for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -HostPortId

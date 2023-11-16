@@ -28,6 +28,8 @@ Get-MgGroupSiteDelta -InputObject <IGroupsIdentity> [-Filter <String>] [-Propert
 ## DESCRIPTION
 Invoke function delta
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
