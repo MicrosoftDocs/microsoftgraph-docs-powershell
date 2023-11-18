@@ -501,7 +501,7 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |Add-AzureADApplicationPolicy|[New-MgBetaApplicationAppManagementPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationAppManagementPolicyByRef)|
 |Add-AzureADMSCustomSecurityAttributeDefinitionAllowedValues|[New-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue)|
 |Add-AzureADMSFeatureRolloutPolicyDirectoryObject|[New-MgBetaDirectoryFeatureRolloutPolicyApplyToByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryFeatureRolloutPolicyApplyToByRef)|
-|Add-AzureADMSPrivilegedResource|`deprecated`|
+|Add-AzureADMSPrivilegedResource|`retired`|
 |Add-AzureADScopedRoleMembership|[New-MgDirectoryAdministrativeUnitScopedRoleMember](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryAdministrativeUnitScopedRoleMember)|
 |Add-AzureADServicePrincipalPolicy|[New-MgBetaServicePrincipalClaimMappingPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalClaimMappingPolicyByRef)|
 |Close-AzureADMSPrivilegedRoleAssignmentRequest||
@@ -521,10 +521,10 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |Get-AzureADMSCustomSecurityAttributeDefinitionAllowedValue|[Get-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue](/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorycustomsecurityattributedefinitionallowedvalue)|
 |Get-AzureADMSFeatureRolloutPolicy|[Get-MgBetaPolicyFeatureRolloutPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyFeatureRolloutPolicy)|
 |Get-AzureADMSGroupPermissionGrant|[Get-MgBetaGroupPermissionGrant](/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouppermissiongrant)|
-|Get-AzureADMSPasswordSingleSignOnnanCredential|[Get-MgBetaServicePrincipalPasswordSingleSignOnCredential](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalPasswordSingleSignOnCredential)|
+|Get-AzureADMSPasswordSingleSignOnCredential|[Get-MgBetaServicePrincipalPasswordSingleSignOnCredential](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalPasswordSingleSignOnCredential)|
 |Get-AzureADMSPrivilegedResource|[Get-MgBetaPrivilegedAccessResource](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaPrivilegedAccessResource)|
 |Get-AzureADMSPrivilegedRoleAssignment||
-|Get-AzureADMSPrivilegedRoleAssignmentRequest||
+|Get-AzureADMSPrivilegedRoleAssignmentRequest|`retired`|
 |Get-AzureADMSPrivilegedRoleDefinition|[Get-MgBetaPrivilegedAccessResourceRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaPrivilegedAccessResourceRoleDefinition)|
 |Get-AzureADMSPrivilegedRoleSetting|[Get-MgBetaPrivilegedAccessResourceRoleSetting](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaPrivilegedAccessResourceRoleSetting)|
 |Get-AzureADMSServicePrincipal|[Get-MgServicePrincipal](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipal)|
