@@ -514,7 +514,7 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |Get-AzureADAuditSignInLogs|[Get-MgBetaAuditLogSignIn](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaAuditLogSignIn)|
 |Get-AzureADDirectorySetting|[Get-MgBetaDirectorySetting](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectorySetting)|
 |Get-AzureADDirectorySettingTemplate|[Get-MgBetaDirectorySettingTemplate](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectorySettingTemplate)|
-|Get-AzureADExternalDomainFederation|[Get-MgDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDomainFederationConfiguration)|
+|Get-AzureADExternalDomainFederation|[Get-MgBetaDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDomainFederationConfiguration)|
 |Get-AzureADMSApplicationTemplate||
 |Get-AzureADMSAttributeSet|[Get-MgBetaDirectoryAttributeSet](/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryattributeset)|
 |Get-AzureADMSCustomSecurityAttributeDefinition|[Get-MgBetaDirectoryCustomSecurityAttributeDefinition](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryCustomSecurityAttributeDefinition)|
