@@ -562,8 +562,8 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |Remove-AzureADApplicationPolicy <sup>1</sup>|[Get-MgBetaApplicationHomeRealmDiscoveryPolicy](/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationhomerealmdiscoverypolicy)|
 |Remove-AzureADApplicationPolicy <sup>1</sup>|[Get-MgBetaApplicationTokenIssuancePolicy](/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationtokenissuancepolicy)|
 |Remove-AzureADApplicationPolicy <sup>1</sup>|[Get-MgBetaApplicationTokenLifetimePolicy](/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationtokenlifetimepolicy)|
-|Remove-AzureADDirectorySetting|[Remove-MgDirectoryAdministrativeUnitScopedRoleMember](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryAdministrativeUnitScopedRoleMember)|
-|Remove-AzureADExternalDomainFederation|[Remove-MgDirectoryFederationConfiguration](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryFederationConfiguration)|
+|Remove-AzureADDirectorySetting|[Remove-MgBetaDirectorySetting](/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectorysetting)|
+|Remove-AzureADExternalDomainFederation|[Remove-MgBetaDirectoryFederationConfiguration](/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryfederationconfiguration)|
 |Remove-AzureADMSFeatureRolloutPolicy|[Remove-MgPolicyFeatureRolloutPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyFeatureRolloutPolicy)|
 |Remove-AzureADMSFeatureRolloutPolicyDirectoryObject|[Remove-MgBetaPolicyFeatureRolloutPolicyApplyToByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyFeatureRolloutPolicyApplyToByRef)|
 |Remove-AzureADMSPasswordSingleSignOnCredential|[Remove-MgBetaServicePrincipalPasswordSingleSignOnCredential](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalPasswordSingleSignOnCredential)|
