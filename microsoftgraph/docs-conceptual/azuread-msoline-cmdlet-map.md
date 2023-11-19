@@ -587,16 +587,27 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |Set-AzureADAdministrativeUnit|[Update-MgBetaDirectoryAdministrativeUnit](/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryadministrativeunit)|
 |Set-AzureADDirectorySetting|[Update-MgBetaDirectorySetting](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectorySetting)|
 |Set-AzureADMSAttributeSet|[Update-MgBetaDirectoryAttributeSet](/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryattributeset)|
-|Set-AzureADMSCustomSecurityAttributeDefinition|[Update-MgDirectoryCustomSecurityAttributeDefinition](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryCustomSecurityAttributeDefinition)|
-|Set-AzureADMSCustomSecurityAttributeDefinitionAllowedValue|[Update-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue)|
-|Set-AzureADMSFeatureRolloutPolicy|[Update-MgPolicyFeatureRolloutPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyFeatureRolloutPolicy)|
+|Set-AzureADMSCustomSecurityAttributeDefinition|[Update-MgBetaDirectoryCustomSecurityAttributeDefinition](/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorycustomsecurityattributedefinition)|
+|Set-AzureADMSCustomSecurityAttributeDefinitionAllowedValue|[Update-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue](/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorycustomsecurityattributedefinitionallowedvalue)|
+|Set-AzureADMSFeatureRolloutPolicy|[Update-MgBetaPolicyFeatureRolloutPolicy](/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyfeaturerolloutpolicy)|
 |Set-AzureADMSPasswordSingleSignOnCredential|[Update-MgBetaServicePrincipalPasswordSingleSignOnCredential](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalPasswordSingleSignOnCredential)|
-|Set-AzureADMSPrivilegedRoleAssignmentRequest||
+|Set-AzureADMSPrivilegedRoleAssignmentRequest|`retired`|
 |Set-AzureADMSPrivilegedRoleSetting|[Update-MgBetaPrivilegedAccessRoleSetting](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaPrivilegedAccessRoleSetting)|
-|Set-AzureADMSServicePrincipal|[Update-MgServicePrincipal](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipal)|
+|Set-AzureADMSServicePrincipal|[Update-MgBetaServicePrincipal](/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipal)|
 |Set-AzureADMSTrustFrameworkPolicy|[Update-MgBetaTrustFrameworkPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaTrustFrameworkPolicy)|
-|Set-AzureADMSUser|[Update-MgUser](/powershell/module/Microsoft.Graph.Users/Update-MgUser)|
+|Set-AzureADMSUser|[Update-MgBetaUser](/powershell/module/microsoft.graph.beta.users/update-mgbetauser)|
 |Set-AzureADObjectSetting|[Update-MgBetaGroupSetting](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupSetting)|
-|Set-AzureADPolicy|[Update-MgBetaPolicyActivityBasedTimeoutPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyActivityBasedTimeoutPolicy)|
+|Set-AzureADPolicy <sup>1</sup>|[Update-MgBetaPolicyActivityBasedTimeoutPolicy](/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyactivitybasedtimeoutpolicy)|
+|Set-AzureADPolicy <sup>1</sup>|[Update-MgBetaPolicyDefaultAppManagementPolicy](/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicydefaultappmanagementpolicy)|
+|Set-AzureADPolicy <sup>1</sup>|[Update-MgBetaPolicyAppManagementPolicy](/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyappmanagementpolicy)|
+|Set-AzureADPolicy <sup>1</sup>|[Update-MgBetaPolicyAuthenticationFlowPolicy](/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationflowpolicy)|
+|Set-AzureADPolicy <sup>1</sup>|[Update-MgBetaPolicyAuthenticationMethodPolicy](/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationmethodpolicy)|
+|Set-AzureADPolicy <sup>1</sup>|[Update-MgBetaPolicyClaimMappingPolicy](/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyclaimmappingpolicy)|
+|Set-AzureADPolicy <sup>1</sup>|[Update-MgBetaPolicyFeatureRolloutPolicy](/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyfeaturerolloutpolicy)|
+|Set-AzureADPolicy <sup>1</sup>|[Update-MgBetaPolicyHomeRealmDiscoveryPolicy](/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyhomerealmdiscoverypolicy)|
+|Set-AzureADPolicy <sup>1</sup>|[Update-MgBetaPolicyPermissionGrantPolicy](/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicypermissiongrantpolicy)|
+|Set-AzureADPolicy <sup>1</sup>|[Update-MgBetaPolicyTokenIssuancePolicy](/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicytokenissuancepolicy
+)|
+|Set-AzureADPolicy <sup>1</sup>|[Update-MgBetaPolicyTokenLifetimePolicy](/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicytokenlifetimepolicy)|
 
 <sup>1</sup> This cmdlet has more than one cmdlet mapping in Microsoft Graph PowerShell.
