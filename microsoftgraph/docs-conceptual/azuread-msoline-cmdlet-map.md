@@ -557,8 +557,11 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |New-AzureADPrivilegedRoleAssignment|`retired`|
 |Open-AzureADMSPrivilegedRoleAssignmentRequest|`retired`|
 |Remove-AzureADAdministrativeUnit|[Remove-MgBetaDirectoryAdministrativeUnit](/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryadministrativeunit)|
-|Remove-AzureADAdministrativeUnitMember|[Remove-MgDirectoryAdministrativeUnitMemberByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryAdministrativeUnitMemberByRef)|
-|Remove-AzureADApplicationPolicy||
+|Remove-AzureADAdministrativeUnitMember|[Remove-MgBetaDirectoryAdministrativeUnitMemberByRef](/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryadministrativeunitmemberbyref)|
+|Remove-AzureADApplicationPolicy <sup>1</sup>|[Get-MgBetaApplicationAppManagementPolicy](/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationappmanagementpolicy)|
+|Remove-AzureADApplicationPolicy <sup>1</sup>|[Get-MgBetaApplicationHomeRealmDiscoveryPolicy](/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationhomerealmdiscoverypolicy)|
+|Remove-AzureADApplicationPolicy <sup>1</sup>|[Get-MgBetaApplicationTokenIssuancePolicy](/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationtokenissuancepolicy)|
+|Remove-AzureADApplicationPolicy <sup>1</sup>|[Get-MgBetaApplicationTokenLifetimePolicy](/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationtokenlifetimepolicy)|
 |Remove-AzureADDirectorySetting|[Remove-MgDirectoryAdministrativeUnitScopedRoleMember](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryAdministrativeUnitScopedRoleMember)|
 |Remove-AzureADExternalDomainFederation|[Remove-MgDirectoryFederationConfiguration](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryFederationConfiguration)|
 |Remove-AzureADMSFeatureRolloutPolicy|[Remove-MgPolicyFeatureRolloutPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyFeatureRolloutPolicy)|
