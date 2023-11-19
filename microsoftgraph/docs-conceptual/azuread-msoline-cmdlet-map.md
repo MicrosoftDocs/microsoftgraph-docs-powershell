@@ -554,7 +554,7 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |New-AzureADMSUser||
 |New-AzureADObjectSetting|[New-MgBetaGroupSetting](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupSetting)|
 |New-AzureADPolicy|[New-MgBetaPolicyActivityBasedTimeoutPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyActivityBasedTimeoutPolicy)|
-|New-AzureADPrivilegedRoleAssignment||
+|New-AzureADPrivilegedRoleAssignment|`retired`|
 |Open-AzureADMSPrivilegedRoleAssignmentRequest||
 |Remove-AzureADAdministrativeUnit|[Remove-MgDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryAdministrativeUnit)|
 |Remove-AzureADAdministrativeUnitMember|[Remove-MgDirectoryAdministrativeUnitMemberByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryAdministrativeUnitMemberByRef)|
