@@ -584,9 +584,9 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |Remove-AzureADServicePrincipalPolicy <sup>1</sup>|[Remove-MgBetaServicePrincipalAppManagementPolicy](/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalappmanagementpolicy)|
 |Remove-AzureADServicePrincipalPolicy <sup>1</sup>|[Remove-MgBetaServicePrincipalClaimMappingPolicyByRef](/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalclaimmappingpolicybyref)|
 |Remove-AzureADServicePrincipalPolicy <sup>1</sup>|[Remove-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef](/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalhomerealmdiscoverypolicybyref)|
-|Set-AzureADAdministrativeUnit|[New-MgDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryAdministrativeUnit)|
+|Set-AzureADAdministrativeUnit|[Update-MgBetaDirectoryAdministrativeUnit](/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryadministrativeunit)|
 |Set-AzureADDirectorySetting|[Update-MgBetaDirectorySetting](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectorySetting)|
-|Set-AzureADMSAttributeSet|[Update-MgDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryAttributeSet)|
+|Set-AzureADMSAttributeSet|[Update-MgBetaDirectoryAttributeSet](/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryattributeset)|
 |Set-AzureADMSCustomSecurityAttributeDefinition|[Update-MgDirectoryCustomSecurityAttributeDefinition](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryCustomSecurityAttributeDefinition)|
 |Set-AzureADMSCustomSecurityAttributeDefinitionAllowedValue|[Update-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue)|
 |Set-AzureADMSFeatureRolloutPolicy|[Update-MgPolicyFeatureRolloutPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyFeatureRolloutPolicy)|
