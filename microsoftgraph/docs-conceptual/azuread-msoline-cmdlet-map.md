@@ -564,12 +564,22 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |Remove-AzureADApplicationPolicy <sup>1</sup>|[Get-MgBetaApplicationTokenLifetimePolicy](/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationtokenlifetimepolicy)|
 |Remove-AzureADDirectorySetting|[Remove-MgBetaDirectorySetting](/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectorysetting)|
 |Remove-AzureADExternalDomainFederation|[Remove-MgBetaDirectoryFederationConfiguration](/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryfederationconfiguration)|
-|Remove-AzureADMSFeatureRolloutPolicy|[Remove-MgPolicyFeatureRolloutPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyFeatureRolloutPolicy)|
+|Remove-AzureADMSFeatureRolloutPolicy|[Remove-MgBetaPolicyFeatureRolloutPolicy](/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyfeaturerolloutpolicy)|
 |Remove-AzureADMSFeatureRolloutPolicyDirectoryObject|[Remove-MgBetaPolicyFeatureRolloutPolicyApplyToByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyFeatureRolloutPolicyApplyToByRef)|
 |Remove-AzureADMSPasswordSingleSignOnCredential|[Remove-MgBetaServicePrincipalPasswordSingleSignOnCredential](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalPasswordSingleSignOnCredential)|
 |Remove-AzureADMSTrustFrameworkPolicy|[Remove-MgBetaTrustFrameworkPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaTrustFrameworkPolicy)|
 |Remove-AzureADObjectSetting|[Remove-MgBetaGroupSetting](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupSetting)|
-|Remove-AzureADPolicy|[Remove-MgBetaPolicyActivityBasedTimeoutPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyActivityBasedTimeoutPolicy)|
+|Remove-AzureADPolicy <sup>1</sup>|[Remove-MgBetaPolicyActivityBasedTimeoutPolicy](/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyactivitybasedtimeoutpolicy)|
+|Remove-AzureADPolicy <sup>1</sup>|[Remove-MgBetaPolicyDefaultAppManagementPolicy](/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicydefaultappmanagementpolicy)|
+|Remove-AzureADPolicy <sup>1</sup>|[Remove-MgBetaPolicyAppManagementPolicy](/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyappmanagementpolicy)|
+|Remove-AzureADPolicy <sup>1</sup>|[Remove-MgBetaPolicyAuthenticationFlowPolicy](/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyauthenticationflowpolicy)|
+|Remove-AzureADPolicy <sup>1</sup>|[Remove-MgBetaPolicyAuthenticationMethodPolicy](/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyauthenticationmethodpolicy)|
+|Remove-AzureADPolicy <sup>1</sup>|[Remove-MgBetaPolicyClaimMappingPolicy](/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyclaimmappingpolicy)|
+|Remove-AzureADPolicy <sup>1</sup>|[Remove-MgBetaPolicyFeatureRolloutPolicyApplyToByRef](/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyfeaturerolloutpolicyapplytobyref)|
+|Remove-AzureADPolicy <sup>1</sup>|[Remove-MgBetaPolicyHomeRealmDiscoveryPolicy](/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyhomerealmdiscoverypolicy)|
+|Remove-AzureADPolicy <sup>1</sup>|[Remove-MgBetaPolicyPermissionGrantPolicy](/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicypermissiongrantpolicy)|
+|Remove-AzureADPolicy <sup>1</sup>|[Remove-MgBetaPolicyTokenIssuancePolicy](/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicytokenissuancepolicy)|
+|Remove-AzureADPolicy <sup>1</sup>|[Remove-MgBetaPolicyTokenLifetimePolicy](/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicytokenlifetimepolicy)|
 |Remove-AzureADScopedRoleMembership|[Remove-MgBetaDirectoryAdministrativeUnitScopedRoleMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryAdministrativeUnitScopedRoleMember)|
 |Remove-AzureADServicePrincipalPolicy||
 |Set-AzureADAdministrativeUnit|[New-MgDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryAdministrativeUnit)|
