@@ -606,8 +606,7 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |Set-AzureADPolicy <sup>1</sup>|[Update-MgBetaPolicyFeatureRolloutPolicy](/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyfeaturerolloutpolicy)|
 |Set-AzureADPolicy <sup>1</sup>|[Update-MgBetaPolicyHomeRealmDiscoveryPolicy](/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyhomerealmdiscoverypolicy)|
 |Set-AzureADPolicy <sup>1</sup>|[Update-MgBetaPolicyPermissionGrantPolicy](/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicypermissiongrantpolicy)|
-|Set-AzureADPolicy <sup>1</sup>|[Update-MgBetaPolicyTokenIssuancePolicy](/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicytokenissuancepolicy
-)|
+|Set-AzureADPolicy <sup>1</sup>|[Update-MgBetaPolicyTokenIssuancePolicy](/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicytokenissuancepolicy)|
 |Set-AzureADPolicy <sup>1</sup>|[Update-MgBetaPolicyTokenLifetimePolicy](/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicytokenlifetimepolicy)|
 
 <sup>1</sup> This cmdlet has more than one cmdlet mapping in Microsoft Graph PowerShell.
