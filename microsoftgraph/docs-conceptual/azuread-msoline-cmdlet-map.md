@@ -434,7 +434,7 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |Get-MsolServicePrincipalCredential|[Get-MgServicePrincipal](/powershell/module/microsoft.graph.applications/get-mgserviceprincipal)|
 |Get-MsolSubscription|[Get-MgSubscribedSKU](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgsubscribedsku)|
 |Get-MsolUser|[Get-MgUser](/powershell/module/microsoft.graph.users/get-mguser)|
-|Get-MsolUserByStrongAuthentication|[Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequest](/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagementdirectoryroleassignmentschedulerequest)|
+|Get-MsolUserByStrongAuthentication||
 |Get-MsolUserRole|[Get-MgUserMemberOf](/powershell/module/microsoft.graph.users/get-mgusermemberof)|
 |New-MsolAdministrativeUnit|[New-MgDirectoryAdministrativeUnit](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryadministrativeunit)|
 |New-MsolDomain|[New-MgDomain](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdomain)|
