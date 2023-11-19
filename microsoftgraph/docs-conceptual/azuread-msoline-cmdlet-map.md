@@ -581,7 +581,9 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |Remove-AzureADPolicy <sup>1</sup>|[Remove-MgBetaPolicyTokenIssuancePolicy](/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicytokenissuancepolicy)|
 |Remove-AzureADPolicy <sup>1</sup>|[Remove-MgBetaPolicyTokenLifetimePolicy](/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicytokenlifetimepolicy)|
 |Remove-AzureADScopedRoleMembership|[Remove-MgBetaDirectoryAdministrativeUnitScopedRoleMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryAdministrativeUnitScopedRoleMember)|
-|Remove-AzureADServicePrincipalPolicy||
+|Remove-AzureADServicePrincipalPolicy <sup>1</sup>|[Remove-MgBetaServicePrincipalAppManagementPolicy](/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalappmanagementpolicy)|
+|Remove-AzureADServicePrincipalPolicy <sup>1</sup>|[Remove-MgBetaServicePrincipalClaimMappingPolicyByRef](/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalclaimmappingpolicybyref)|
+|Remove-AzureADServicePrincipalPolicy <sup>1</sup>|[Remove-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef](/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalhomerealmdiscoverypolicybyref)|
 |Set-AzureADAdministrativeUnit|[New-MgDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryAdministrativeUnit)|
 |Set-AzureADDirectorySetting|[Update-MgBetaDirectorySetting](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectorySetting)|
 |Set-AzureADMSAttributeSet|[Update-MgDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryAttributeSet)|
