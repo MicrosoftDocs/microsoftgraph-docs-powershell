@@ -535,14 +535,14 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |Get-AzureADPolicyAppliedObject|[Get-MgBetaPolicyHomeRealmDiscoveryPolicyApplyTo](/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyhomerealmdiscoverypolicyapplyto)|
 |Get-AzureADPrivilegedRole|`retired`|
 |Get-AzureADPrivilegedRoleAssignment|[Get-MgBetaPrivilegedRoleRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaPrivilegedRoleRoleAssignment)|
-|Get-AzureADScopedRoleMembership|[Get-MgDirectoryAdministrativeUnitScopedRoleMember](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryAdministrativeUnitScopedRoleMember)|
+|Get-AzureADScopedRoleMembership|[Get-MgBetaDirectoryAdministrativeUnitScopedRoleMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryAdministrativeUnitScopedRoleMember)|
 |Get-AzureADServicePrincipalPolicy <sup>1</sup>|[Get-MgBetaServicePrincipalClaimMappingPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalClaimMappingPolicy)|
 |Get-AzureADServicePrincipalPolicy <sup>1</sup>|[Get-MgBetaServicePrincipalHomeRealmDiscoveryPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalHomeRealmDiscoveryPolicy)|
 |Get-AzureADServicePrincipalPolicy <sup>1</sup>|[Get-MgBetaServicePrincipalTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalTokenIssuancePolicy)|
 |Get-AzureADServicePrincipalPolicy <sup>1</sup>|[Get-MgBetaServicePrincipalTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalTokenLifetimePolicy)|
-|New-AzureADAdministrativeUnit|[New-MgDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryAdministrativeUnit)|
+|New-AzureADAdministrativeUnit|[New-MgBetaDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryAdministrativeUnit)|
 |New-AzureADDirectorySetting|[New-MgBetaDirectorySetting](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectorySetting)|
-|New-AzureADExternalDomainFederation|[New-MgDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDomainFederationConfiguration)|
+|New-AzureADExternalDomainFederation|[New-MgBetaDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDomainFederationConfiguration)|
 |New-AzureADMSAdministrativeUnitMember||
 |New-AzureADMSApplicationFromApplicationTemplate|[Invoke-MgBetaInstantiateApplicationTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaInstantiateApplicationTemplate)|
 |New-AzureADMSAttributeSet|[New-MgDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryAttributeSet)|
