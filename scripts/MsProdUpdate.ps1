@@ -29,10 +29,10 @@ function Start-Generator {
         }
         Get-FilesByProfile -GraphProfile $GraphProfile -GraphProfilePath $ProfilePath -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
     }
-    git config --global user.email "timwamalwa@gmail.com"
-    git config --global user.name "Timothy Wamalwa"
-    git add .
-    git commit -m "Updated metadata parameters" 
+    # git config --global user.email "timwamalwa@gmail.com"
+    # git config --global user.name "Timothy Wamalwa"
+    # git add .
+    # git commit -m "Updated metadata parameters" 
 }
 function Get-FilesByProfile {
     Param(
@@ -86,11 +86,12 @@ function Get-Files {
 
     try {
         if (Test-Path $GraphProfilePath) {
-           
+            $ModuleMetaData = $GraphProfile -eq "v1.0" ? "Microsoft.Graph.$Module" : "Microsoft.Graph.Beta.$Module"
             foreach ($File in Get-ChildItem $GraphProfilePath) {
                
                 #Extract command over here
                 $Command = [System.IO.Path]::GetFileNameWithoutExtension($File)
+                if($Command -ne $ModuleMetaData){
                 #Extract URI path
                 $CommandDetails = Find-MgGraphCommand -Command $Command
                 if ($CommandDetails) {
@@ -100,6 +101,7 @@ function Get-Files {
                         Get-ExternalDocsUrl -GraphProfile $GraphProfile -UriPath $ApiPath -Command $Command -OpenApiContent $OpenApiContent -GraphProfilePath $GraphProfilePath -Method $Method.Trim() -Module $Module -File $File
                     }
                 }
+            }
 
             }
         }
@@ -289,17 +291,17 @@ function FetchStream {
     $ReadStream = [System.IO.StreamReader]::new($ReceiveStream, $Encode)
     return ($ReadStream, $HttpWebResponse)
 }
-Set-Location microsoftgraph-docs-powershell
-$date = Get-Date -Format "dd-MM-yyyy"
-$proposedBranch = "weekly_v2_docs_update_$date"
-$exists = git branch -l $proposedBranch
-if ([string]::IsNullOrEmpty($exists)) {
-    git checkout -b $proposedBranch
-}
-else {
-    Write-Host "Branch already exists"
-    git checkout $proposedBranch
-}
+# Set-Location microsoftgraph-docs-powershell
+# $date = Get-Date -Format "dd-MM-yyyy"
+# $proposedBranch = "weekly_v2_docs_update_$date"
+# $exists = git branch -l $proposedBranch
+# if ([string]::IsNullOrEmpty($exists)) {
+#     git checkout -b $proposedBranch
+# }
+# else {
+#     Write-Host "Branch already exists"
+#     git checkout $proposedBranch
+# }
 
 if (!(Get-Module "powershell-yaml" -ListAvailable -ErrorAction SilentlyContinue)) {
     Install-Module "powershell-yaml" -AcceptLicense -Scope CurrentUser -Force
@@ -316,7 +318,7 @@ if ($ModulesToGenerate.Count -eq 0) {
     [HashTable] $ModuleMapping = Get-Content $ModuleMappingConfigPath | ConvertFrom-Json -AsHashTable
     $ModulesToGenerate = $ModuleMapping.Keys
 }
-Set-Location ..\microsoftgraph-docs-powershell
+#Set-Location ..\microsoftgraph-docs-powershell
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
 Start-Generator -ModulesToGenerate $ModulesToGenerate
 Write-Host -ForegroundColor Green "-------------Done-------------"
