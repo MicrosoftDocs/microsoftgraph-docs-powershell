@@ -115,7 +115,7 @@ function Generate-GraphModuleHelp {
         $Module = "$ModulePrefix.Beta.$ModuleName"
         $Path = "$ModulePrefix.Beta.$ModuleName"
     }
-    $ModuleDocsPath = Join-Path $PSScriptRoot "..\$GraphProfilePath\$Path"
+    $ModuleDocsPath = Join-Path $PSScriptRoot "..\microsoftgraph\$GraphProfilePath\$Path"
 
     Import-Module $Module -Force -Global
     Generate-Help -ModuleDocsPath $ModuleDocsPath -Module $Module
