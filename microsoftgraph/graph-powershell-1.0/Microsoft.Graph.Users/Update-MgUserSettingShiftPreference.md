@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingshiftpreference
@@ -44,11 +44,10 @@ Update the properties and relationships of a shiftPreferences object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Users
-```
 
 $params = @{
 	id = "SHPR_eeab4fb1-20e5-48ca-ad9b-98119d94bee7"
@@ -76,6 +75,11 @@ $params = @{
 }
 
 Update-MgUserSettingShiftPreference -UserId $userId -BodyParameter $params
+```
+This example shows how to use the Update-MgUserSettingShiftPreference Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

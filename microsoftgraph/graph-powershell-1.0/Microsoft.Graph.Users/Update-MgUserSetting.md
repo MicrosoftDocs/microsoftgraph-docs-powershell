@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersetting
@@ -48,11 +48,10 @@ Update the properties of the userSettings object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Users
-```
 
 $params = @{
 	contributionToContentDiscoveryDisabled = $true
@@ -60,6 +59,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgUserSetting -UserId $userId -BodyParameter $params
+```
+This example shows how to use the Update-MgUserSetting Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

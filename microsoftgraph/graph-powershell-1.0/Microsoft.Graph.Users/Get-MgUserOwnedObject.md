@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserownedobject
@@ -41,14 +41,18 @@ Nullable.
 Supports $expand, $select nested in $expand, and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users
-```
 
 # A UPN can also be used as -UserId.
 Get-MgUserOwnedObject -UserId $userId
+
+```
+This example shows how to use the Get-MgUserOwnedObject Cmdlet.
+
 
 ## PARAMETERS
 
