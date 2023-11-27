@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolisttaskextension
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property extensions in users
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserTodoListTaskExtension](/powershell/module/Microsoft.Graph.Users/Update-MgUserTodoListTaskExtension?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -251,6 +254,7 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgUserTodoListTaskExtension](/powershell/module/Microsoft.Graph.Users/Update-MgUserTodoListTaskExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolisttaskextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolisttaskextension)
 

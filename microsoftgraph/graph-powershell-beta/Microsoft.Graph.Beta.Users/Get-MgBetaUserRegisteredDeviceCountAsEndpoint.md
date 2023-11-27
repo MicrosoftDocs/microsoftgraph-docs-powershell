@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserregistereddevicecountasendpoint
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the number of the resource
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserRegisteredDeviceCountAsEndpoint](/powershell/module/Microsoft.Graph.Users/Get-MgUserRegisteredDeviceCountAsEndpoint?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -158,6 +161,7 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserRegisteredDeviceCountAsEndpoint](/powershell/module/Microsoft.Graph.Users/Get-MgUserRegisteredDeviceCountAsEndpoint?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserregistereddevicecountasendpoint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserregistereddevicecountasendpoint)
 

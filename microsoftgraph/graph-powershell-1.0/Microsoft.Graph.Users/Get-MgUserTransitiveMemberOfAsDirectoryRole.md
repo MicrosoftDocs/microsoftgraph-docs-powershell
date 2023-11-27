@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertransitivememberofasdirectoryrole
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.directoryRole
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserTransitiveMemberOfAsDirectoryRole](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTransitiveMemberOfAsDirectoryRole?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -292,6 +295,7 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserTransitiveMemberOfAsDirectoryRole](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTransitiveMemberOfAsDirectoryRole?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertransitivememberofasdirectoryrole](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertransitivememberofasdirectoryrole)
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserextension
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property extensions in users
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserExtension](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserExtension?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -212,6 +215,7 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgBetaUserExtension](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserExtension?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserextension](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserextension)
 
