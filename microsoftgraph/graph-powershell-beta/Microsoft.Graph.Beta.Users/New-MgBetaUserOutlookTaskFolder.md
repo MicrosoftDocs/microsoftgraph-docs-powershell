@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktaskfolder
@@ -50,9 +50,8 @@ Create a task folder in the default task group (My Tasks) of the user's mailbox.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the New-MgBetaUserOutlookTaskFolder Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Users
 $params = @{
 	Name = "Volunteer"
@@ -60,6 +59,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgBetaUserOutlookTaskFolder -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaUserOutlookTaskFolder Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

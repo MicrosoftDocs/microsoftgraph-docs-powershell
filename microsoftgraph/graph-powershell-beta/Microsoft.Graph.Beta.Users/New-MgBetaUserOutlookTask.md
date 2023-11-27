@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktask
@@ -66,9 +66,8 @@ By default, this operation (and the GET, PATCH, and complete task operations) re
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the New-MgBetaUserOutlookTask Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Users
 $params = @{
 	Subject = "Shop for children's weekend"
@@ -84,6 +83,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgBetaUserOutlookTask -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaUserOutlookTask Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

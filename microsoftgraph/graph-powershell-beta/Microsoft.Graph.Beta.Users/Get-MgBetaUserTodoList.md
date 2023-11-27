@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodolist
@@ -37,14 +37,18 @@ Read the properties and relationships of a todoTaskList object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Users
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserTodoList -UserId $userId -TodoTaskListId $todoTaskListId
+```
+This example shows how to use the Get-MgBetaUserTodoList Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
