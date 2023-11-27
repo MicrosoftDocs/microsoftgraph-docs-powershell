@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserregistereddeviceasapproleassignment
@@ -33,18 +33,6 @@ Get-MgUserRegisteredDeviceAsAppRoleAssignment -InputObject <IUsersIdentity> [-Ex
 
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.appRoleAssignment
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -294,4 +282,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserregistereddeviceasapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserregistereddeviceasapproleassignment)
+
 

@@ -37,18 +37,6 @@ Get-MgUserOwnedObjectAsGroup -InputObject <IUsersIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -298,4 +286,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Get-MgBetaUserOwnedObjectAsGroup](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOwnedObjectAsGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserownedobjectasgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserownedobjectasgroup)
+
 
