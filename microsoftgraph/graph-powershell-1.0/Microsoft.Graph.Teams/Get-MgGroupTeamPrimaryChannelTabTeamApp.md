@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamprimarychanneltabteamapp
@@ -28,22 +28,6 @@ Get-MgGroupTeamPrimaryChannelTabTeamApp -InputObject <ITeamsIdentity> [-ExpandPr
 ## DESCRIPTION
 The application that is linked to the tab.
 This can't be changed after tab creation.
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 
@@ -175,4 +159,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamprimarychanneltabteamapp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamprimarychanneltabteamapp)
+
 

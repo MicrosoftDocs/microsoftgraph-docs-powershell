@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamprimarychanneltab
@@ -35,18 +35,6 @@ Get-MgGroupTeamPrimaryChannelTab -InputObject <ITeamsIdentity> [-ExpandProperty 
 ## DESCRIPTION
 Retrieve the properties and relationships of the specified tab in a channel within a team.
 This API is available in the following national cloud deployments.
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -299,4 +287,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamprimarychanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamprimarychanneltab)
+
 

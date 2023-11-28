@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserchatmessagehostedcontent
@@ -27,22 +27,6 @@ Remove-MgUserChatMessageHostedContent -InputObject <ITeamsIdentity> [-IfMatch <S
 
 ## DESCRIPTION
 Delete navigation property hostedContents for users
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 
@@ -235,4 +219,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserchatmessagehostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserchatmessagehostedcontent)
+
 

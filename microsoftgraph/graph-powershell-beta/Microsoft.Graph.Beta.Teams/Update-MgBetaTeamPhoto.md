@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamphoto
@@ -38,22 +38,6 @@ Update-MgBetaTeamPhoto -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftG
 
 ## DESCRIPTION
 Update the navigation property photo in teams
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 
@@ -266,4 +250,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamphoto](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamphoto)
+
 

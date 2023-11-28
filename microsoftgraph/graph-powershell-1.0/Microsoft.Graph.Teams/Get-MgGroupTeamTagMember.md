@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamtagmember
@@ -35,18 +35,6 @@ Get-MgGroupTeamTagMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 Get the properties and relationships of a member of a standard tag in a team.
 This API is available in the following national cloud deployments.
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -314,4 +302,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamtagmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamtagmember)
+
 

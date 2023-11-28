@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchattab
@@ -35,18 +35,6 @@ Get-MgUserChatTab -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-P
 ## DESCRIPTION
 Retrieve the properties and relationships of the specified tab in a chat.
 This API is available in the following national cloud deployments.
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -314,4 +302,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchattab](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchattab)
+
 

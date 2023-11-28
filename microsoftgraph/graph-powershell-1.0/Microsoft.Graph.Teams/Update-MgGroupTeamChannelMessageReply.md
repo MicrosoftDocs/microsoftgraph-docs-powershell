@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamchannelmessagereply
@@ -56,22 +56,6 @@ Update-MgGroupTeamChannelMessageReply -InputObject <ITeamsIdentity> -BodyParamet
 
 ## DESCRIPTION
 Update the navigation property replies in groups
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 
@@ -1021,4 +1005,5 @@ Link to the message in Microsoft Teams.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamchannelmessagereply](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamchannelmessagereply)
+
 

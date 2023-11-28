@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamchanneltab
@@ -44,18 +44,6 @@ New-MgGroupTeamChannelTab -InputObject <ITeamsIdentity> -BodyParameter <IMicroso
 Adds (pins) a tab to the specified channel within a team.
 \nThe corresponding app must already be installed in the team.
 This API is available in the following national cloud deployments.
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -399,4 +387,5 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamchanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamchanneltab)
+
 

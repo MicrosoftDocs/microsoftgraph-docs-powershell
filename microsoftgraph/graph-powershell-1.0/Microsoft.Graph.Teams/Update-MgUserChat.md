@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserchat
@@ -52,22 +52,6 @@ Update-MgUserChat -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphC
 
 ## DESCRIPTION
 Update the navigation property chats in users
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 
@@ -1163,4 +1147,5 @@ VIEWPOINT \<IMicrosoftGraphChatViewpoint\>: chatViewpoint
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserchat](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserchat)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/clear-mgteamchannelmessagereplyreaction
@@ -42,18 +42,6 @@ Clear-MgTeamChannelMessageReplyReaction -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Invoke action unsetReaction
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -282,4 +270,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/clear-mgteamchannelmessagereplyreaction](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/clear-mgteamchannelmessagereplyreaction)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchatlastmessagepreview
@@ -30,18 +30,6 @@ Get-MgUserChatLastMessagePreview -InputObject <ITeamsIdentity> [-ExpandProperty 
 Preview of the last message sent in the chat.
 Null if no messages have been sent in the chat.
 Currently, only the list chats operation supports this property.
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -173,4 +161,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchatlastmessagepreview](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchatlastmessagepreview)
+
 

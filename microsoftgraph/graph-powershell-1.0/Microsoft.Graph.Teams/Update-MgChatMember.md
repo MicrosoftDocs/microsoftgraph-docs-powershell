@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgchatmember
@@ -40,22 +40,6 @@ Update-MgChatMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGrap
 
 ## DESCRIPTION
 Update the navigation property members in chats
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 
@@ -299,4 +283,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgchatmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgchatmember)
+
 

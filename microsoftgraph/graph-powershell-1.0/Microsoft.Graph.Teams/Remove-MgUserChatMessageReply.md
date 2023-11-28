@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserchatmessagereply
@@ -26,22 +26,6 @@ Remove-MgUserChatMessageReply -InputObject <ITeamsIdentity> [-IfMatch <String>] 
 
 ## DESCRIPTION
 Delete navigation property replies for users
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 
@@ -234,4 +218,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserchatmessagereply](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserchatmessagereply)
+
 

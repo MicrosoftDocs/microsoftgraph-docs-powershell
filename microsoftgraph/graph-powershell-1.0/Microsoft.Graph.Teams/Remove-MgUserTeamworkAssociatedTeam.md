@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserteamworkassociatedteam
@@ -26,22 +26,6 @@ Remove-MgUserTeamworkAssociatedTeam -InputObject <ITeamsIdentity> [-IfMatch <Str
 
 ## DESCRIPTION
 Delete navigation property associatedTeams for users
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 
@@ -204,4 +188,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserteamworkassociatedteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserteamworkassociatedteam)
+
 

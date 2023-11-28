@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgallgroupteamchannel
@@ -33,18 +33,6 @@ Get-MgAllGroupTeamChannel -InputObject <ITeamsIdentity> [-ExpandProperty <String
 
 ## DESCRIPTION
 List of channels either hosted in or shared with the team (incoming channels).
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -297,4 +285,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgallgroupteamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgallgroupteamchannel)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamworkteamappsetting
@@ -18,18 +18,6 @@ Remove-MgTeamworkTeamAppSetting [-IfMatch <String>] [-PassThru] [-WhatIf] [-Conf
 
 ## DESCRIPTION
 Delete navigation property teamsAppSettings for teamwork
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -107,4 +95,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamworkteamappsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamworkteamappsetting)
+
 

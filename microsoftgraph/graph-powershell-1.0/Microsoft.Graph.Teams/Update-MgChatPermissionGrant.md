@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgchatpermissiongrant
@@ -42,18 +42,6 @@ Update-MgChatPermissionGrant -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Update the navigation property permissionGrants in chats
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -349,4 +337,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgchatpermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgchatpermissiongrant)
+
 

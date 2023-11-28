@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamscheduleoffershiftrequest
@@ -44,22 +44,6 @@ Update-MgGroupTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Update the navigation property offerShiftRequests in groups
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 
@@ -394,4 +378,5 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamscheduleoffershiftrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamscheduleoffershiftrequest)
+
 
