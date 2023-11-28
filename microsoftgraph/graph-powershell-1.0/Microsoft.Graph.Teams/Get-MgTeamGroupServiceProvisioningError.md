@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamgroupserviceprovisioningerror
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get serviceProvisioningErrors property value
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaTeamGroupServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamGroupServiceProvisioningError?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -26,6 +23,16 @@ Get serviceProvisioningErrors property value
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
 ## PARAMETERS
 
 ### -All
@@ -38,7 +45,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -99,7 +106,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -174,7 +181,7 @@ Aliases: Limit
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -189,7 +196,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -204,9 +211,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServiceProvisioningError
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
 
-[Get-MgBetaTeamGroupServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamGroupServiceProvisioningError?view=graph-powershell-beta)
+[https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamgroupserviceprovisioningerror](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamgroupserviceprovisioningerror)
 

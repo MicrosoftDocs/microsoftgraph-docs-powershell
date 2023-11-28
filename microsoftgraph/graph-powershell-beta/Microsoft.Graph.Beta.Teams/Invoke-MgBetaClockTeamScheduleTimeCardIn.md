@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaclockteamscheduletimecardin
@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Clock in to start a timeCard.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -43,11 +43,12 @@ Invoke-MgBetaClockTeamScheduleTimeCardIn -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Clock in to start a timeCard.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaClockTeamScheduleTimeCardIn Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
 	AtAprovedLocation = $true
@@ -58,8 +59,6 @@ $params = @{
 }
 Invoke-MgBetaClockTeamScheduleTimeCardIn -TeamId $teamId -BodyParameter $params
 ```
-This example shows how to use the Invoke-MgBetaClockTeamScheduleTimeCardIn Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

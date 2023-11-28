@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Teams
 Module Guid: e264919d-7ae2-4a89-ba8b-524bd93ddc08
 Download Help Link: {{ Update Download Link }}
@@ -60,18 +60,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Complete-MgBetaTeamworkDeletedTeamChannelMigration](Complete-MgBetaTeamworkDeletedTeamChannelMigration.md)
-{{ Fill in the Description }}
-
-### [Confirm-MgBetaChatPermissionGrantMemberGroup](Confirm-MgBetaChatPermissionGrantMemberGroup.md)
-{{ Fill in the Description }}
-
-### [Confirm-MgBetaChatPermissionGrantMemberObject](Confirm-MgBetaChatPermissionGrantMemberObject.md)
-{{ Fill in the Description }}
-
-### [Confirm-MgBetaTeamPermissionGrantMemberGroup](Confirm-MgBetaTeamPermissionGrantMemberGroup.md)
-{{ Fill in the Description }}
-
-### [Confirm-MgBetaTeamPermissionGrantMemberObject](Confirm-MgBetaTeamPermissionGrantMemberObject.md)
 {{ Fill in the Description }}
 
 ### [Confirm-MgBetaTeamScheduleTimeCard](Confirm-MgBetaTeamScheduleTimeCard.md)
@@ -191,22 +179,7 @@ Locale: en-US
 ### [Get-MgBetaChatPermissionGrant](Get-MgBetaChatPermissionGrant.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaChatPermissionGrantById](Get-MgBetaChatPermissionGrantById.md)
-{{ Fill in the Description }}
-
 ### [Get-MgBetaChatPermissionGrantCount](Get-MgBetaChatPermissionGrantCount.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaChatPermissionGrantDelta](Get-MgBetaChatPermissionGrantDelta.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaChatPermissionGrantMemberGroup](Get-MgBetaChatPermissionGrantMemberGroup.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaChatPermissionGrantMemberObject](Get-MgBetaChatPermissionGrantMemberObject.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaChatPermissionGrantUserOwnedObject](Get-MgBetaChatPermissionGrantUserOwnedObject.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaChatPinnedMessage](Get-MgBetaChatPinnedMessage.md)
@@ -632,22 +605,7 @@ Locale: en-US
 ### [Get-MgBetaTeamPermissionGrant](Get-MgBetaTeamPermissionGrant.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaTeamPermissionGrantById](Get-MgBetaTeamPermissionGrantById.md)
-{{ Fill in the Description }}
-
 ### [Get-MgBetaTeamPermissionGrantCount](Get-MgBetaTeamPermissionGrantCount.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaTeamPermissionGrantDelta](Get-MgBetaTeamPermissionGrantDelta.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaTeamPermissionGrantMemberGroup](Get-MgBetaTeamPermissionGrantMemberGroup.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaTeamPermissionGrantMemberObject](Get-MgBetaTeamPermissionGrantMemberObject.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaTeamPermissionGrantUserOwnedObject](Get-MgBetaTeamPermissionGrantUserOwnedObject.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaTeamPhoto](Get-MgBetaTeamPhoto.md)
@@ -1914,12 +1872,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Stop-MgBetaTeamScheduleTimeCardBreak](Stop-MgBetaTeamScheduleTimeCardBreak.md)
-{{ Fill in the Description }}
-
-### [Test-MgBetaChatPermissionGrantProperty](Test-MgBetaChatPermissionGrantProperty.md)
-{{ Fill in the Description }}
-
-### [Test-MgBetaTeamPermissionGrantProperty](Test-MgBetaTeamPermissionGrantProperty.md)
 {{ Fill in the Description }}
 
 ### [Undo-MgBetaChatMessageReplySoftDelete](Undo-MgBetaChatMessageReplySoftDelete.md)

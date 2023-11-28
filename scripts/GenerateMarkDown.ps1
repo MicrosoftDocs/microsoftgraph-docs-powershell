@@ -40,7 +40,7 @@ function Generate-GraphHelp {
     $AuthPath = "$ModulePrefix.Authentication"
     $AuthDestination = Join-Path $WorkLoadDocsPath "graph-powershell-1.0" $AuthPath
     Get-ChildItem -Path $AuthDestination * -File -Recurse | foreach { $_.Delete() }
-    Generate-GraphModuleHelp -GraphProfile "v1.0" -GraphProfilePath "graph-powershell-1.0" -Module "Authentication" -ModulePrefix $ModulePrefix
+    Generate-GraphModuleHelp -GraphProfile "v1.0" -GraphProfilePath "graph-powershell-1.0" -ModuleName "Authentication" -ModulePrefix $ModulePrefix
     
     Import-Module Microsoft.Graph.Authentication -Global
     $GraphMapping = Get-GraphMapping 
@@ -99,7 +99,7 @@ function Generate-GraphHelpByProfile {
     )
     $ModulesToGenerate | ForEach-Object {
         $ModuleName = $_
-        Generate-GraphModuleHelp -GraphProfile $GraphProfile -GraphProfilePath $GraphProfilePath -Module $ModuleName -ModulePrefix $ModulePrefix
+        Generate-GraphModuleHelp -GraphProfile $GraphProfile -GraphProfilePath $GraphProfilePath -ModuleName $ModuleName -ModulePrefix $ModulePrefix
     }
 }
 
@@ -110,7 +110,7 @@ function Generate-GraphModuleHelp {
         [ValidateNotNullOrEmpty()]
         [string] $GraphProfilePath = "graph-powershell-1.0",
         [ValidateNotNullOrEmpty()]
-        [string] $Module = "Users",
+        [string] $ModuleName = "Users",
         [ValidateNotNullOrEmpty()]
         [string] $ModulePrefix = "Microsoft.Graph"
     )

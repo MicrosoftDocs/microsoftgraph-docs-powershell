@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamchannelmember
@@ -9,10 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get a conversationMember from a channel.
-This API is supported in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamChannelMember?view=graph-powershell-1.0)
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -37,7 +34,19 @@ Get-MgBetaGroupTeamChannelMember -InputObject <ITeamsIdentity> [-ExpandProperty 
 
 ## DESCRIPTION
 Get a conversationMember from a channel.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -309,8 +318,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgGroupTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamChannelMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamchannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamchannelmember)
-
 

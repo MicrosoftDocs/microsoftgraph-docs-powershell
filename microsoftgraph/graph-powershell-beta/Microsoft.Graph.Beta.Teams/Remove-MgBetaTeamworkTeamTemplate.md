@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamworkteamtemplate
@@ -26,6 +26,22 @@ Remove-MgBetaTeamworkTeamTemplate -InputObject <ITeamsIdentity> [-IfMatch <Strin
 
 ## DESCRIPTION
 Delete navigation property teamTemplates for teamwork
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -179,5 +195,4 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamworkteamtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamworkteamtemplate)
-
 

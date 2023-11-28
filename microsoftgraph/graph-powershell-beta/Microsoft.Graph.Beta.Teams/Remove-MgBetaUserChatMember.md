@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetauserchatmember
@@ -9,10 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Remove a conversationMember from a chat.
-This API is supported in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgUserChatMember](/powershell/module/Microsoft.Graph.Teams/Remove-MgUserChatMember?view=graph-powershell-1.0)
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -30,7 +27,23 @@ Remove-MgBetaUserChatMember -InputObject <ITeamsIdentity> [-IfMatch <String>] [-
 
 ## DESCRIPTION
 Remove a conversationMember from a chat.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -212,8 +225,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgUserChatMember](/powershell/module/Microsoft.Graph.Teams/Remove-MgUserChatMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetauserchatmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetauserchatmember)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteampermissiongrant
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property permissionGrants in groups
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgGroupTeamPermissionGrant](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamPermissionGrant?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45,6 +42,22 @@ Update-MgBetaGroupTeamPermissionGrant -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Update the navigation property permissionGrants in groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -80,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientAppId
-ID of the service principal of the Azure AD app that has been granted access.
+ID of the service principal of the Microsoft Entra app that has been granted access.
 Read-only.
 
 ```yaml
@@ -96,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientId
-ID of the Azure AD app that has been granted access.
+ID of the Microsoft Entra app that has been granted access.
 Read-only.
 
 ```yaml
@@ -208,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceAppId
-ID of the Azure AD app that is hosting the resource.
+ID of the Microsoft Entra app that is hosting the resource.
 Read-only.
 
 ```yaml
@@ -291,16 +304,16 @@ BODYPARAMETER \<IMicrosoftGraphResourceSpecificPermissionGrant\>: resourceSpecif
 Always null when the object hasn't been deleted.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  \[ClientAppId \<String\>\]: ID of the service principal of the Azure AD app that has been granted access.
+  \[ClientAppId \<String\>\]: ID of the service principal of the Microsoft Entra app that has been granted access.
 Read-only.
-  \[ClientId \<String\>\]: ID of the Azure AD app that has been granted access.
+  \[ClientId \<String\>\]: ID of the Microsoft Entra app that has been granted access.
 Read-only.
   \[Permission \<String\>\]: The name of the resource-specific permission.
 Read-only.
   \[PermissionType \<String\>\]: The type of permission.
 Possible values are: Application, Delegated.
 Read-only.
-  \[ResourceAppId \<String\>\]: ID of the Azure AD app that is hosting the resource.
+  \[ResourceAppId \<String\>\]: ID of the Microsoft Entra app that is hosting the resource.
 Read-only.
 
 INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
@@ -344,8 +357,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Update-MgGroupTeamPermissionGrant](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamPermissionGrant?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteampermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteampermissiongrant)
-
 

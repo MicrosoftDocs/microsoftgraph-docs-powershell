@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetagroupteamschedule
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property schedule in groups
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgGroupTeamSchedule](/powershell/module/Microsoft.Graph.Teams/Set-MgGroupTeamSchedule?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -59,6 +56,18 @@ Set-MgBetaGroupTeamSchedule -InputObject <ITeamsIdentity> -BodyParameter <IMicro
 
 ## DESCRIPTION
 Update the navigation property schedule in groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -516,9 +525,9 @@ Required.
       \[Application \<IMicrosoftGraphIdentity\>\]: identity
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-        \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+This might not always be available or up to date.
+For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        \[Id \<String\>\]: Unique identifier for the identity.
       \[Device \<IMicrosoftGraphIdentity\>\]: identity
       \[User \<IMicrosoftGraphIdentity\>\]: identity
     \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
@@ -599,9 +608,11 @@ Required.
       \[DisplayName \<String\>\]: The shift label of the shiftItem.
       \[Notes \<String\>\]: The shift notes for the shiftItem.
     \[IsStagedForDeletion \<Boolean?\>\]: 
-    \[SchedulingGroupId \<String\>\]: 
+    \[SchedulingGroupId \<String\>\]: ID of the scheduling group the shift is part of.
+Required.
     \[SharedShift \<IMicrosoftGraphShiftItem\>\]: shiftItem
-    \[UserId \<String\>\]: 
+    \[UserId \<String\>\]: ID of the user assigned to the shift.
+Required.
   \[SwapShiftsChangeRequests \<IMicrosoftGraphSwapShiftsChangeRequest\[\]\>\]: The swap requests for shifts in the schedule.
     \[RecipientActionMessage \<String\>\]: Custom message sent by recipient of the offer shift request.
     \[RecipientUserId \<String\>\]: User id of the recipient of the offer shift request.
@@ -753,9 +764,9 @@ OFFERSHIFTREQUESTS \<IMicrosoftGraphOfferShiftRequest\[\]\>: The offer requests 
     \[Application \<IMicrosoftGraphIdentity\>\]: identity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+This might not always be available or up to date.
+For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      \[Id \<String\>\]: Unique identifier for the identity.
     \[Device \<IMicrosoftGraphIdentity\>\]: identity
     \[User \<IMicrosoftGraphIdentity\>\]: identity
   \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
@@ -775,9 +786,9 @@ OPENSHIFTCHANGEREQUESTS \<IMicrosoftGraphOpenShiftChangeRequest\[\]\>: The open 
     \[Application \<IMicrosoftGraphIdentity\>\]: identity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+This might not always be available or up to date.
+For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      \[Id \<String\>\]: Unique identifier for the identity.
     \[Device \<IMicrosoftGraphIdentity\>\]: identity
     \[User \<IMicrosoftGraphIdentity\>\]: identity
   \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
@@ -791,9 +802,9 @@ OPENSHIFTS \<IMicrosoftGraphOpenShift\[\]\>: The set of open shifts in a schedul
     \[Application \<IMicrosoftGraphIdentity\>\]: identity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+This might not always be available or up to date.
+For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      \[Id \<String\>\]: Unique identifier for the identity.
     \[Device \<IMicrosoftGraphIdentity\>\]: identity
     \[User \<IMicrosoftGraphIdentity\>\]: identity
   \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
@@ -835,9 +846,9 @@ SCHEDULINGGROUPS \<IMicrosoftGraphSchedulingGroup\[\]\>: The logical grouping of
     \[Application \<IMicrosoftGraphIdentity\>\]: identity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+This might not always be available or up to date.
+For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      \[Id \<String\>\]: Unique identifier for the identity.
     \[Device \<IMicrosoftGraphIdentity\>\]: identity
     \[User \<IMicrosoftGraphIdentity\>\]: identity
   \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
@@ -854,9 +865,9 @@ SHIFTS \<IMicrosoftGraphShift\[\]\>: The shifts in the schedule.
     \[Application \<IMicrosoftGraphIdentity\>\]: identity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+This might not always be available or up to date.
+For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      \[Id \<String\>\]: Unique identifier for the identity.
     \[Device \<IMicrosoftGraphIdentity\>\]: identity
     \[User \<IMicrosoftGraphIdentity\>\]: identity
   \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
@@ -888,9 +899,11 @@ Required.
     \[DisplayName \<String\>\]: The shift label of the shiftItem.
     \[Notes \<String\>\]: The shift notes for the shiftItem.
   \[IsStagedForDeletion \<Boolean?\>\]: 
-  \[SchedulingGroupId \<String\>\]: 
+  \[SchedulingGroupId \<String\>\]: ID of the scheduling group the shift is part of.
+Required.
   \[SharedShift \<IMicrosoftGraphShiftItem\>\]: shiftItem
-  \[UserId \<String\>\]: 
+  \[UserId \<String\>\]: ID of the user assigned to the shift.
+Required.
 
 SWAPSHIFTSCHANGEREQUESTS \<IMicrosoftGraphSwapShiftsChangeRequest\[\]\>: The swap requests for shifts in the schedule.
   \[RecipientActionMessage \<String\>\]: Custom message sent by recipient of the offer shift request.
@@ -905,9 +918,9 @@ SWAPSHIFTSCHANGEREQUESTS \<IMicrosoftGraphSwapShiftsChangeRequest\[\]\>: The swa
     \[Application \<IMicrosoftGraphIdentity\>\]: identity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+This might not always be available or up to date.
+For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      \[Id \<String\>\]: Unique identifier for the identity.
     \[Device \<IMicrosoftGraphIdentity\>\]: identity
     \[User \<IMicrosoftGraphIdentity\>\]: identity
   \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
@@ -921,9 +934,9 @@ TIMECARDS \<IMicrosoftGraphTimeCard\[\]\>: .
     \[Application \<IMicrosoftGraphIdentity\>\]: identity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+This might not always be available or up to date.
+For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      \[Id \<String\>\]: Unique identifier for the identity.
     \[Device \<IMicrosoftGraphIdentity\>\]: identity
     \[User \<IMicrosoftGraphIdentity\>\]: identity
   \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
@@ -973,9 +986,9 @@ TIMEOFFREASONS \<IMicrosoftGraphTimeOffReason\[\]\>: The set of reasons for a ti
     \[Application \<IMicrosoftGraphIdentity\>\]: identity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+This might not always be available or up to date.
+For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      \[Id \<String\>\]: Unique identifier for the identity.
     \[Device \<IMicrosoftGraphIdentity\>\]: identity
     \[User \<IMicrosoftGraphIdentity\>\]: identity
   \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
@@ -997,9 +1010,9 @@ TIMEOFFREQUESTS \<IMicrosoftGraphTimeOffRequest\[\]\>: The time off requests in 
     \[Application \<IMicrosoftGraphIdentity\>\]: identity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+This might not always be available or up to date.
+For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      \[Id \<String\>\]: Unique identifier for the identity.
     \[Device \<IMicrosoftGraphIdentity\>\]: identity
     \[User \<IMicrosoftGraphIdentity\>\]: identity
   \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
@@ -1017,9 +1030,9 @@ TIMESOFF \<IMicrosoftGraphTimeOff\[\]\>: The instances of times off in the sched
     \[Application \<IMicrosoftGraphIdentity\>\]: identity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+This might not always be available or up to date.
+For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      \[Id \<String\>\]: Unique identifier for the identity.
     \[Device \<IMicrosoftGraphIdentity\>\]: identity
     \[User \<IMicrosoftGraphIdentity\>\]: identity
   \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
@@ -1038,8 +1051,6 @@ Required.
 Required.
 
 ## RELATED LINKS
-[Set-MgGroupTeamSchedule](/powershell/module/Microsoft.Graph.Teams/Set-MgGroupTeamSchedule?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetagroupteamschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetagroupteamschedule)
-
 

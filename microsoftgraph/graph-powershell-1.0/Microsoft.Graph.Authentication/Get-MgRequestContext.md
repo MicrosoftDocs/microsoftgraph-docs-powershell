@@ -22,7 +22,7 @@ Gets graph request context details
 ## EXAMPLES
 
 ### Example 1: Get request context
-```powershell
+```
 PS C:\> Get-MgRequestContext
 ClientTimeout     RetryDelay                      MaxRetry                 RetriesTimeLimit
 -------------     ----------                      --------                 ----------------
@@ -43,7 +43,7 @@ Aliases: cf
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -59,7 +59,7 @@ Aliases: wi
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

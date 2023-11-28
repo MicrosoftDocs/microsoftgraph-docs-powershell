@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/start-mgbetateamscheduletimecardbreak
@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Start a break in a specific timeCard.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -41,11 +41,12 @@ Start-MgBetaTeamScheduleTimeCardBreak -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Start a break in a specific timeCard.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Start-MgBetaTeamScheduleTimeCardBreak Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
 	AtAprovedLocation = $true
@@ -56,8 +57,6 @@ $params = @{
 }
 Start-MgBetaTeamScheduleTimeCardBreak -TeamId $teamId -TimeCardId $timeCardId -BodyParameter $params
 ```
-This example shows how to use the Start-MgBetaTeamScheduleTimeCardBreak Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

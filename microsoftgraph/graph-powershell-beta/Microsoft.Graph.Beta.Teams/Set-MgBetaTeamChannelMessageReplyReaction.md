@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetateamchannelmessagereplyreaction
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action setReaction
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgTeamChannelMessageReplyReaction](/powershell/module/Microsoft.Graph.Teams/Set-MgTeamChannelMessageReplyReaction?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45,6 +42,22 @@ Set-MgBetaTeamChannelMessageReplyReaction -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Invoke action setReaction
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -277,8 +290,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Set-MgTeamChannelMessageReplyReaction](/powershell/module/Microsoft.Graph.Teams/Set-MgTeamChannelMessageReplyReaction?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetateamchannelmessagereplyreaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetateamchannelmessagereplyreaction)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetasoftteamchannelmessagereplydelete
@@ -9,10 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete a single chatMessage or a chat message reply in a channel or a chat.
-This API is supported in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgSoftTeamChannelMessageReplyDelete](/powershell/module/Microsoft.Graph.Teams/Invoke-MgSoftTeamChannelMessageReplyDelete?view=graph-powershell-1.0)
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -30,20 +27,16 @@ Invoke-MgBetaSoftTeamChannelMessageReplyDelete -InputObject <ITeamsIdentity> [-P
 
 ## DESCRIPTION
 Delete a single chatMessage or a chat message reply in a channel or a chat.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 Invoke-MgBetaSoftTeamChannelMessageReplyDelete -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -ChatMessageId1 $chatMessageId1
-
-```
-This example shows how to use the Invoke-MgBetaSoftTeamChannelMessageReplyDelete Cmdlet.
-
 
 ## PARAMETERS
 
@@ -225,7 +218,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Invoke-MgSoftTeamChannelMessageReplyDelete](/powershell/module/Microsoft.Graph.Teams/Invoke-MgSoftTeamChannelMessageReplyDelete?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetasoftteamchannelmessagereplydelete](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetasoftteamchannelmessagereplydelete)
 

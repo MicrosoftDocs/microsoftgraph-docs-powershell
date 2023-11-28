@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamprimarychannelfilefoldercontent
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The content stream, if the item represents a file.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamPrimaryChannelFileFolderContent](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamPrimaryChannelFileFolderContent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,6 +26,18 @@ Get-MgBetaGroupTeamPrimaryChannelFileFolderContent -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 The content stream, if the item represents a file.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -149,8 +158,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgGroupTeamPrimaryChannelFileFolderContent](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamPrimaryChannelFileFolderContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamprimarychannelfilefoldercontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamprimarychannelfilefoldercontent)
-
 

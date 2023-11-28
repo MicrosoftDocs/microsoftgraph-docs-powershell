@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateaminstalledapp
@@ -9,10 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Upgrade an app installation within a chat.
-This API is supported in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgTeamInstalledApp](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamInstalledApp?view=graph-powershell-1.0)
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -46,16 +43,15 @@ Update-MgBetaTeamInstalledApp -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Upgrade an app installation within a chat.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaTeamInstalledApp Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
 Update-MgBetaTeamInstalledApp -TeamId $teamId -TeamsAppInstallationId $teamsAppInstallationId
 ```
-This example shows how to use the Update-MgBetaTeamInstalledApp Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -269,7 +265,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Update-MgTeamInstalledApp](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamInstalledApp?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateaminstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateaminstalledapp)
 

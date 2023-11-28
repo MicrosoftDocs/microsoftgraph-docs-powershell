@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserchat
@@ -11,10 +11,7 @@ schema: 2.0.0
 Retrieve a single chat (without its messages).
 This method supports federation.
 To access a chat, at least one chat member must belong to the tenant the request initiated from.
-This API is supported in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserChat](/powershell/module/Microsoft.Graph.Teams/Get-MgUserChat?view=graph-powershell-1.0)
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -41,31 +38,23 @@ Get-MgBetaUserChat -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-
 Retrieve a single chat (without its messages).
 This method supports federation.
 To access a chat, at least one chat member must belong to the tenant the request initiated from.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 Get-MgBetaUserChat -UserId $userId
 
+### EXAMPLE 2
 ```
-This example shows how to use the Get-MgBetaUserChat Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Teams
-
-Get-MgBetaUserChat -UserId $userId -ExpandProperty "members" -Filter "members/any(o: o/displayname eq 'Peter Parker')" 
-
 ```
-This example shows how to use the Get-MgBetaUserChat Cmdlet.
 
+Get-MgBetaUserChat -UserId $userId -ExpandProperty "members" -Filter "members/any(o: o/displayname eq 'Peter Parker')"
 
 ## PARAMETERS
 
@@ -322,7 +311,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgUserChat](/powershell/module/Microsoft.Graph.Teams/Get-MgUserChat?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserchat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserchat)
 

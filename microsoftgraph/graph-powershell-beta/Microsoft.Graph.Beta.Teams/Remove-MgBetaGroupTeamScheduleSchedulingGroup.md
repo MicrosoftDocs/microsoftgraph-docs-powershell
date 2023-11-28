@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteamscheduleschedulinggroup
@@ -8,12 +8,9 @@ schema: 2.0.0
 # Remove-MgBetaGroupTeamScheduleSchedulingGroup
 
 ## SYNOPSIS
-Mark a schedulingGroup as inactive by setting its isActive property.This method does not remove the schedulingGroup from the schedule.
+Mark a schedulingGroup as inactive by setting its isActive property.\nThis method does not remove the schedulingGroup from the schedule.
 Existing shift instances assigned to the scheduling group remain part of the group.
-This API is supported in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgGroupTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamScheduleSchedulingGroup?view=graph-powershell-1.0)
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -30,9 +27,21 @@ Remove-MgBetaGroupTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity> [-If
 ```
 
 ## DESCRIPTION
-Mark a schedulingGroup as inactive by setting its isActive property.This method does not remove the schedulingGroup from the schedule.
+Mark a schedulingGroup as inactive by setting its isActive property.\nThis method does not remove the schedulingGroup from the schedule.
 Existing shift instances assigned to the scheduling group remain part of the group.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -199,8 +208,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgGroupTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamScheduleSchedulingGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteamscheduleschedulinggroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteamscheduleschedulinggroup)
-
 

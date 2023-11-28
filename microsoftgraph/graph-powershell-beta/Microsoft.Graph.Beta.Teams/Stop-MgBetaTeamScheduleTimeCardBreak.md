@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/stop-mgbetateamscheduletimecardbreak
@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 End the open break in a specific timeCard.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -41,7 +41,23 @@ Stop-MgBetaTeamScheduleTimeCardBreak -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 End the open break in a specific timeCard.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -256,5 +272,4 @@ NOTES \<IMicrosoftGraphItemBody\>: itemBody
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/stop-mgbetateamscheduletimecardbreak](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/stop-mgbetateamscheduletimecardbreak)
-
 

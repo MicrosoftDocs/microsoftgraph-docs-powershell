@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteamscheduletimeoffreason
@@ -12,10 +12,7 @@ Mark a timeOffReason as inactive by setting the isActive property.
 Every team must include at least one timeOffReason.
 This method does not remove the specified timeOffReason instance.
 timeOffItem instances that have been assigned this reason remain assigned to this reason.
-This API is supported in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgGroupTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamScheduleTimeOffReason?view=graph-powershell-1.0)
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -36,7 +33,19 @@ Mark a timeOffReason as inactive by setting the isActive property.
 Every team must include at least one timeOffReason.
 This method does not remove the specified timeOffReason instance.
 timeOffItem instances that have been assigned this reason remain assigned to this reason.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -203,8 +212,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgGroupTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamScheduleTimeOffReason?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteamscheduletimeoffreason](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteamscheduletimeoffreason)
-
 

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Invoke-MgGraphRequest
 
 ## SYNOPSIS
-Invoke-MgGraphRequest issues REST API requests to the Graph API. It works for any Graph API if you know the REST URI, method, and optional body parameter. This command is especially useful for accessing APIs for which there isn't an equivalent cmdlet yet.
+Invoke-MgGraphRequest issues REST API requests to the Graph API.
+It works for any Graph API if you know the REST URI, method, and optional body parameter.
+This command is especially useful for accessing APIs for which there isn't an equivalent cmdlet yet.
 
 ## SYNTAX
 
@@ -27,7 +29,7 @@ This command issues REST API requests.
 ## EXAMPLES
 
 ### Example 1: Using Invoke-MgGraphRequest
-```powershell
+```
 PS C:\> Invoke-MgGraphRequest -Method GET https://graph.microsoft.com/v1.0/me
 Name                           Value
 ----                           -----
@@ -120,7 +122,7 @@ Aliases:
 
 Required: False
 Position: 6
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -198,7 +200,7 @@ Aliases:
 
 Required: False
 Position: 8
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -244,7 +246,7 @@ Aliases:
 
 Required: False
 Position: 10
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -259,7 +261,7 @@ Aliases:
 
 Required: False
 Position: 16
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -315,13 +317,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### System.Object
-
 ## OUTPUTS
 
 ### System.Object
 ## NOTES
 
 ## RELATED LINKS
-
-[https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/invoke-mggraphrequest](https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/invoke-mggraphrequest)
-

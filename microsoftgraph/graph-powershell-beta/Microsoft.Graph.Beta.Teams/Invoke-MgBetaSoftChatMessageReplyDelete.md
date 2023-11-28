@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetasoftchatmessagereplydelete
@@ -9,10 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete a single chatMessage or a chat message reply in a channel or a chat.
-This API is supported in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgSoftChatMessageReplyDelete](/powershell/module/Microsoft.Graph.Teams/Invoke-MgSoftChatMessageReplyDelete?view=graph-powershell-1.0)
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -30,7 +27,19 @@ Invoke-MgBetaSoftChatMessageReplyDelete -InputObject <ITeamsIdentity> [-PassThru
 
 ## DESCRIPTION
 Delete a single chatMessage or a chat message reply in a channel or a chat.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -197,8 +206,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Invoke-MgSoftChatMessageReplyDelete](/powershell/module/Microsoft.Graph.Teams/Invoke-MgSoftChatMessageReplyDelete?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetasoftchatmessagereplydelete](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetasoftchatmessagereplydelete)
-
 
