@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Identity.SignIns
 Module Guid: 60f889fa-f873-43ad-b7d3-b7fc1273a44f
 Download Help Link: {{ Update Download Link }}

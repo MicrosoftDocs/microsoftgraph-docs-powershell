@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 Module Guid: f8226707-c93a-43bd-9b8e-a76900f762bd
 Download Help Link: {{ Update Download Link }}

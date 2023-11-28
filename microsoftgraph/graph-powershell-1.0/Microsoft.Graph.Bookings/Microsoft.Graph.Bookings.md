@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Bookings
 Module Guid: 3933ee00-59a9-4541-92dc-cd99621de956
 Download Help Link: {{ Update Download Link }}

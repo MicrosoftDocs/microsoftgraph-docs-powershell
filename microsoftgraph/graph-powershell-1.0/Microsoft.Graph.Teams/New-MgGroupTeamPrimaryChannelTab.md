@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamprimarychanneltab
@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Adds (pins) a tab to the specified channel within a team.
-\nThe corresponding app must already be installed in the team.
+The corresponding app must already be installed in the team.
 This API is available in the following national cloud deployments.
 
 ## SYNTAX
@@ -42,7 +42,7 @@ New-MgGroupTeamPrimaryChannelTab -InputObject <ITeamsIdentity> -BodyParameter <I
 
 ## DESCRIPTION
 Adds (pins) a tab to the specified channel within a team.
-\nThe corresponding app must already be installed in the team.
+The corresponding app must already be installed in the team.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES

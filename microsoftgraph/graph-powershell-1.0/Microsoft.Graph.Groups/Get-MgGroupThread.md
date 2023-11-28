@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthread
@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get a specific thread that belongs to a group.
-You can specify both the parent conversation and the thread, or, \nyou can specify the thread without referencing the parent conversation.
+You can specify both the parent conversation and the thread, or, you can specify the thread without referencing the parent conversation.
 This API is available in the following national cloud deployments.
 
 ## SYNTAX
@@ -32,7 +32,7 @@ Get-MgGroupThread -InputObject <IGroupsIdentity> [-Property <String[]>] [<Common
 
 ## DESCRIPTION
 Get a specific thread that belongs to a group.
-You can specify both the parent conversation and the thread, or, \nyou can specify the thread without referencing the parent conversation.
+You can specify both the parent conversation and the thread, or, you can specify the thread without referencing the parent conversation.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES

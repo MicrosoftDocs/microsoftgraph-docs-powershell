@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Education
 Module Guid: b6135e28-227c-4153-b124-1de938936ef7
 Download Help Link: {{ Update Download Link }}

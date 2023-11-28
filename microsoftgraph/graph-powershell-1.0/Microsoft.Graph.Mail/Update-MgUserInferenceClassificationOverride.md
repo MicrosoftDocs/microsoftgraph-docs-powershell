@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mguserinferenceclassificationoverride
@@ -11,7 +11,7 @@ schema: 2.0.0
 Change the classifyAs field of an override as specified.
 You cannot use PATCH to change any other fields in an inferenceClassificationOverride instance.
 If an override exists for a sender and the sender changes his/her display name, you can use POST to force an update to the name field in the existing override.
-If an override exists for a sender and the sender changes his/her SMTP address, deleting the existing override and creating a new one with\nthe new SMTP address is the only way to 'update' the override for this sender.
+If an override exists for a sender and the sender changes his/her SMTP address, deleting the existing override and creating a new one withthe new SMTP address is the only way to 'update' the override for this sender.
 This API is available in the following national cloud deployments.
 
 ## SYNTAX
@@ -46,7 +46,7 @@ Update-MgUserInferenceClassificationOverride -InputObject <IMailIdentity>
 Change the classifyAs field of an override as specified.
 You cannot use PATCH to change any other fields in an inferenceClassificationOverride instance.
 If an override exists for a sender and the sender changes his/her display name, you can use POST to force an update to the name field in the existing override.
-If an override exists for a sender and the sender changes his/her SMTP address, deleting the existing override and creating a new one with\nthe new SMTP address is the only way to 'update' the override for this sender.
+If an override exists for a sender and the sender changes his/her SMTP address, deleting the existing override and creating a new one withthe new SMTP address is the only way to 'update' the override for this sender.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES

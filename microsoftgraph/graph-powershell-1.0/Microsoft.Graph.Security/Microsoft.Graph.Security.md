@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Security
 Module Guid: 06b0769e-2c63-4d60-9fb4-9ca0ec87e0d7
 Download Help Link: {{ Update Download Link }}

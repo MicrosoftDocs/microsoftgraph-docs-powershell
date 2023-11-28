@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 Module Guid: f07aeb05-f355-4116-a587-f725d4797aa2
 Download Help Link: {{ Update Download Link }}
