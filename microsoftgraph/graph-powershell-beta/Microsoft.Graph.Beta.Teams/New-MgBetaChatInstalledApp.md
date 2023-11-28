@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachatinstalledapp
@@ -46,11 +46,11 @@ Install a teamsApp to the specified chat.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	"teamsApp@odata.bind" = "https://graph.microsoft.com/beta/appCatalogs/teamsApps/2b524e28-95ce-4c9b-9773-4a5bd6ec1770"
@@ -77,6 +77,10 @@ $params = @{
 }
 
 New-MgBetaChatInstalledApp -ChatId $chatId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaChatInstalledApp Cmdlet.
+
 
 ## PARAMETERS
 

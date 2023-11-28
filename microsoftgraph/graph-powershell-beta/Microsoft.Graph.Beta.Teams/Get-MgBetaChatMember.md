@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatmember
@@ -37,13 +37,17 @@ Retrieve a conversationMember from a chat.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Get-MgBetaChatMember -ChatId $chatId -ConversationMemberId $conversationMemberId
+
+```
+This example shows how to use the Get-MgBetaChatMember Cmdlet.
+
 
 ## PARAMETERS
 

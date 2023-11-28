@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamscheduleschedulinggroup
@@ -36,13 +36,17 @@ Retrieve the properties and relationships of a schedulingGroup by ID.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Get-MgBetaTeamScheduleSchedulingGroup -TeamId $teamId
+
+```
+This example shows how to use the Get-MgBetaTeamScheduleSchedulingGroup Cmdlet.
+
 
 ## PARAMETERS
 

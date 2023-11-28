@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/hide-mgbetachatforuser
@@ -44,9 +44,8 @@ Hide a chat for a user.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Hide-MgBetaChatForUser Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
 	User = @{
@@ -56,6 +55,8 @@ $params = @{
 }
 Hide-MgBetaChatForUser -ChatId $chatId -BodyParameter $params
 ```
+This example shows how to use the Hide-MgBetaChatForUser Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

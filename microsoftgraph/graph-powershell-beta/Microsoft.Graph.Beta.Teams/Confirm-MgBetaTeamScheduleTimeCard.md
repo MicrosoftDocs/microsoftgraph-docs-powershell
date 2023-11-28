@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/confirm-mgbetateamscheduletimecard
@@ -29,12 +29,13 @@ Confirm a specific timeCard.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Confirm-MgBetaTeamScheduleTimeCard Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Confirm-MgBetaTeamScheduleTimeCard -TeamId $teamId -TimeCardId $timeCardId
 ```
+This example shows how to use the Confirm-MgBetaTeamScheduleTimeCard Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

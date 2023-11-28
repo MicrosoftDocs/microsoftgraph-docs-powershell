@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateammember
@@ -44,11 +44,11 @@ Add a new conversation member to a team.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Add a member to a team
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -60,10 +60,14 @@ $params = @{
 
 New-MgBetaTeamMember -TeamId $teamId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will add a member to a team
+
+### Example 2: Add a member to a team using user principal name
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -74,6 +78,10 @@ $params = @{
 }
 
 New-MgBetaTeamMember -TeamId $teamId -BodyParameter $params
+
+```
+This example will add a member to a team using user principal name
+
 
 ## PARAMETERS
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/undo-mgbetateamchannelmessagesoftdelete
@@ -30,20 +30,28 @@ Undo soft deletion of a single chatMessage or a chat message reply in a channel 
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Undo soft deletion of a message in a channel
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Undo-MgBetaTeamChannelMessageSoftDelete -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId
 
-### EXAMPLE 2
 ```
+This example will undo soft deletion of a message in a channel
+
+### Example 2: Undo soft deletion of a message of a reply in a channel
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Undo-MgBetaTeamChannelMessageSoftDelete -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId
+
+```
+This example will undo soft deletion of a message of a reply in a channel
+
 
 ## PARAMETERS
 
