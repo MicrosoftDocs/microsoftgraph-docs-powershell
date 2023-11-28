@@ -44,13 +44,17 @@ To access a chat, at least one chat member must belong to the tenant the request
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Get a user's one on one chat
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgUserChat -UserId $userId -ChatId $chatId
+
+```
+This example will get a user's one on one chat
+
 
 ## PARAMETERS
 

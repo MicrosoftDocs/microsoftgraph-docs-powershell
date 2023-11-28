@@ -42,24 +42,28 @@ Create a new team.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
 	displayName = "My Sample Team"
-	description = "My Sample Team's Description"
+	description = "My Sample Team’s Description"
 }
 
 New-MgTeam -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example shows how to use the New-MgTeam Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
@@ -70,8 +74,7 @@ $params = @{
 		@{
 			displayName = "Announcements 📢"
 			isFavoriteByDefault = $true
-			description = "This is a sample announcements channel that is favorited by default.
-Use this channel to make important team, product, and service announcements."
+			description = "This is a sample announcements channel that is favorited by default. Use this channel to make important team, product, and service announcements."
 		}
 		@{
 			displayName = "Training 🏋️"
@@ -141,10 +144,14 @@ Use this channel to make important team, product, and service announcements."
 
 New-MgTeam -BodyParameter $params
 
-### EXAMPLE 3
 ```
+This example shows how to use the New-MgTeam Cmdlet.
+
+### Example 3: Code snippet
+
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
@@ -153,10 +160,14 @@ $params = @{
 
 New-MgTeam -BodyParameter $params
 
-### EXAMPLE 4
 ```
+This example shows how to use the New-MgTeam Cmdlet.
+
+### Example 4: Code snippet
+
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
@@ -190,28 +201,36 @@ $params = @{
 
 New-MgTeam -BodyParameter $params
 
-### EXAMPLE 5
 ```
+This example shows how to use the New-MgTeam Cmdlet.
+
+### Example 5: Code snippet
+
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('educationClass')"
 	displayName = "My Class Team"
-	description = "My Class Team's Description"
+	description = "My Class Team’s Description"
 }
 
 New-MgTeam -BodyParameter $params
 
-### EXAMPLE 6
 ```
+This example shows how to use the New-MgTeam Cmdlet.
+
+### Example 6: Code snippet
+
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('educationClass')"
 	displayName = "My Class Team"
-	description = "My Class Team's Description"
+	description = "My Class Team’s Description"
 	channels = @(
 		@{
 			displayName = "Class Announcements 📢"
@@ -241,15 +260,19 @@ $params = @{
 
 New-MgTeam -BodyParameter $params
 
-### EXAMPLE 7
 ```
+This example shows how to use the New-MgTeam Cmdlet.
+
+### Example 7: Code snippet
+
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
 	displayName = "My Sample Team"
-	description = "My Sample Team's Description"
+	description = "My Sample Team’s Description"
 	members = @(
 		@{
 			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -262,6 +285,10 @@ $params = @{
 }
 
 New-MgTeam -BodyParameter $params
+
+```
+This example shows how to use the New-MgTeam Cmdlet.
+
 
 ## PARAMETERS
 

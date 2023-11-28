@@ -33,13 +33,17 @@ Get the bot associated with a specific definition of the  TeamsApp.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgAppCatalogTeamAppDefinitionBot -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId
+
+```
+This example shows how to use the Get-MgAppCatalogTeamAppDefinitionBot Cmdlet.
+
 
 ## PARAMETERS
 
