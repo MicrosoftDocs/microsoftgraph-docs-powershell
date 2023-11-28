@@ -8,7 +8,7 @@ Param(
 )
 function Get-GraphMapping {
     $graphMapping = @{}
-    #$graphMapping.Add("v1.0", "graph-powershell-1.0")
+    $graphMapping.Add("v1.0", "graph-powershell-1.0")
     $graphMapping.Add("beta", "graph-powershell-beta")
     return $graphMapping
 }
@@ -34,9 +34,15 @@ function Generate-GraphHelp {
     Param(
         $ModulesToGenerate = @()
     )
-    Import-Module Microsoft.Graph.Authentication -Global
-
+    
+    #Generate for auth module first
     $ModulePrefix = "Microsoft.Graph"
+    $AuthPath = "$ModulePrefix.Authentication"
+    $AuthDestination = Join-Path $WorkLoadDocsPath "graph-powershell-1.0" $AuthPath
+    Get-ChildItem -Path $AuthDestination * -File -Recurse | foreach { $_.Delete() }
+    Generate-GraphModuleHelp -GraphProfile "v1.0" -GraphProfilePath "graph-powershell-1.0" -Module "Authentication" -ModulePrefix $ModulePrefix
+    
+    Import-Module Microsoft.Graph.Authentication -Global
     $GraphMapping = Get-GraphMapping 
     $GraphMapping.Keys | ForEach-Object {
         $graphProfile = $_
