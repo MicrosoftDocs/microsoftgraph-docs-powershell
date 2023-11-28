@@ -114,17 +114,26 @@ function Generate-GraphModuleHelp {
         [ValidateNotNullOrEmpty()]
         [string] $ModulePrefix = "Microsoft.Graph"
     )
-    
-    $Module = "$ModulePrefix.$ModuleName"
-    $Path = "$ModulePrefix.$ModuleName"
-    if ($GraphProfile -eq 'beta') {
-        $Module = "$ModulePrefix.Beta.$ModuleName"
-        $Path = "$ModulePrefix.Beta.$ModuleName"
-    }
-    $ModuleDocsPath = Join-Path $PSScriptRoot "..\microsoftgraph\$GraphProfilePath\$Path"
+    try {
+        $Module = "$ModulePrefix.$ModuleName"
+        if ($Module -ne "Microsoft.Graph.WindowsUpdates") {
+            $Path = "$ModulePrefix.$ModuleName"
+            if ($GraphProfile -eq 'beta') {
+                $Module = "$ModulePrefix.Beta.$ModuleName"
+                $Path = "$ModulePrefix.Beta.$ModuleName"
+            }
+            $ModuleDocsPath = Join-Path $PSScriptRoot "..\microsoftgraph\$GraphProfilePath\$Path"
 
-    Import-Module $Module -Force -Global
-    Generate-Help -ModuleDocsPath $ModuleDocsPath -Module $Module
+            Import-Module $Module -Force -Global
+            Generate-Help -ModuleDocsPath $ModuleDocsPath -Module $Module
+        }
+    }
+    catch {
+        Write-Host "`nError Message: " $_.Exception.Message
+        Write-Host "`nError in Line: " $_.InvocationInfo.Line
+        Write-Host "`nError in Line Number: "$_.InvocationInfo.ScriptLineNumber
+        Write-Host "`nError Item Name: "$_.Exception.ItemName
+    }
 }
 Set-Location microsoftgraph-docs-powershell
 $date = Get-Date -Format "dd-MM-yyyy"
