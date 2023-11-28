@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Partner-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Partner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/update-mgbetatenantrelationshipdelegatedadminrelationship
@@ -13,15 +13,6 @@ You can only update a relationship when it's in the created status.
 However, you can update the autoExtendDuration property when the relationship is in either the created or active status.
 This API is available in the following national cloud deployments.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgTenantRelationshipDelegatedAdminRelationship](/powershell/module/Microsoft.Graph.Identity.Partner/Update-MgTenantRelationshipDelegatedAdminRelationship?view=graph-powershell-1.0)
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgTenantRelationshipDelegatedAdminRelationship](/powershell/module/Microsoft.Graph.Identity.Partner/Update-MgTenantRelationshipDelegatedAdminRelationship?view=graph-powershell-1.0)
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgTenantRelationshipDelegatedAdminRelationship](/powershell/module/Microsoft.Graph.Identity.Partner/Update-MgTenantRelationshipDelegatedAdminRelationship?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -33,14 +24,15 @@ Update-MgBetaTenantRelationshipDelegatedAdminRelationship -DelegatedAdminRelatio
  [-Customer <IMicrosoftGraphDelegatedAdminRelationshipCustomerParticipant>] [-DisplayName <String>]
  [-Duration <TimeSpan>] [-EndDateTime <DateTime>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
  [-Operations <IMicrosoftGraphDelegatedAdminRelationshipOperation[]>]
- [-Requests <IMicrosoftGraphDelegatedAdminRelationshipRequest[]>] [-Status <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Requests <IMicrosoftGraphDelegatedAdminRelationshipRequest[]>] [-Status <String>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaTenantRelationshipDelegatedAdminRelationship -DelegatedAdminRelationshipId <String>
- -BodyParameter <IMicrosoftGraphDelegatedAdminRelationship> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDelegatedAdminRelationship> [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -52,14 +44,15 @@ Update-MgBetaTenantRelationshipDelegatedAdminRelationship -InputObject <IIdentit
  [-Customer <IMicrosoftGraphDelegatedAdminRelationshipCustomerParticipant>] [-DisplayName <String>]
  [-Duration <TimeSpan>] [-EndDateTime <DateTime>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
  [-Operations <IMicrosoftGraphDelegatedAdminRelationshipOperation[]>]
- [-Requests <IMicrosoftGraphDelegatedAdminRelationshipRequest[]>] [-Status <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Requests <IMicrosoftGraphDelegatedAdminRelationshipRequest[]>] [-Status <String>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaTenantRelationshipDelegatedAdminRelationship -InputObject <IIdentityPartnerIdentity>
- -BodyParameter <IMicrosoftGraphDelegatedAdminRelationship> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDelegatedAdminRelationship> [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -69,6 +62,16 @@ However, you can update the autoExtendDuration property when the relationship is
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -138,8 +141,8 @@ Accept wildcard characters: False
 ### -AutoExtendDuration
 The duration by which the validity of the relationship is automatically extended, denoted in ISO 8601 format.
 Supported values are: P0D, PT0S, P180D.
-Default value is PT0S.
-PT0S indicates that the relationship expires when the endDateTime is reached and it is not automatically extended.
+The default value is PT0S.
+PT0S indicates that the relationship expires when the endDateTime is reached and it isn't automatically extended.
 
 ```yaml
 Type: TimeSpan
@@ -331,6 +334,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Requests
 The requests associated with the delegated admin relationship.
 To construct, see NOTES section for REQUESTS properties and create a hash table.
@@ -404,108 +422,142 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDelegatedAdminRelationship
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+ACCESSASSIGNMENTS \<IMicrosoftGraphDelegatedAdminAccessAssignment\[\]\>: The access assignments associated with the delegated admin relationship.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[AccessContainer \<IMicrosoftGraphDelegatedAdminAccessContainer\>\]: delegatedAdminAccessContainer
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[AccessContainerId \<String\>\]: The identifier of the access container (for example, a security group).
+For 'securityGroup' access containers, this must be a valid ID of a Microsoft Entra security group in the Microsoft partner's tenant.
+    \[AccessContainerType \<String\>\]: delegatedAdminAccessContainerType
+  \[AccessDetails \<IMicrosoftGraphDelegatedAdminAccessDetails\>\]: delegatedAdminAccessDetails
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[UnifiedRoles \<IMicrosoftGraphUnifiedRole\[\]\>\]: The directory roles that the Microsoft partner is assigned in the customer tenant.
+      \[RoleDefinitionId \<String\>\]: The unified role definition ID of the directory role.
+Refer to unifiedRoleDefinition resource.
+  \[CreatedDateTime \<DateTime?\>\]: The date and time in ISO 8601 format and in UTC time when the access assignment was created.
+Read-only.
+  \[LastModifiedDateTime \<DateTime?\>\]: The date and time in ISO 8601 and in UTC time when this access assignment was last modified.
+Read-only.
+  \[Status \<String\>\]: delegatedAdminAccessAssignmentStatus
 
-`ACCESSASSIGNMENTS <IMicrosoftGraphDelegatedAdminAccessAssignment[]>`: The access assignments associated with the delegated admin relationship.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[AccessContainer <IMicrosoftGraphDelegatedAdminAccessContainer>]`: delegatedAdminAccessContainer
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AccessContainerId <String>]`: The identifier of the access container (for example, a security group). For 'securityGroup' access containers, this must be a valid ID of an Azure AD security group in the Microsoft partner's tenant.
-    - `[AccessContainerType <String>]`: delegatedAdminAccessContainerType
-  - `[AccessDetails <IMicrosoftGraphDelegatedAdminAccessDetails>]`: delegatedAdminAccessDetails
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[UnifiedRoles <IMicrosoftGraphUnifiedRole[]>]`: The directory roles that the Microsoft partner is assigned in the customer tenant.
-      - `[RoleDefinitionId <String>]`: The unified role definition ID of the directory role. Refer to unifiedRoleDefinition resource.
-  - `[CreatedDateTime <DateTime?>]`: The date and time in ISO 8601 format and in UTC time when the access assignment was created. Read-only.
-  - `[LastModifiedDateTime <DateTime?>]`: The date and time in ISO 8601 and in UTC time when this access assignment was last modified. Read-only.
-  - `[Status <String>]`: delegatedAdminAccessAssignmentStatus
+ACCESSDETAILS \<IMicrosoftGraphDelegatedAdminAccessDetails\>: delegatedAdminAccessDetails
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[UnifiedRoles \<IMicrosoftGraphUnifiedRole\[\]\>\]: The directory roles that the Microsoft partner is assigned in the customer tenant.
+    \[RoleDefinitionId \<String\>\]: The unified role definition ID of the directory role.
+Refer to unifiedRoleDefinition resource.
 
-`ACCESSDETAILS <IMicrosoftGraphDelegatedAdminAccessDetails>`: delegatedAdminAccessDetails
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[UnifiedRoles <IMicrosoftGraphUnifiedRole[]>]`: The directory roles that the Microsoft partner is assigned in the customer tenant.
-    - `[RoleDefinitionId <String>]`: The unified role definition ID of the directory role. Refer to unifiedRoleDefinition resource.
+BODYPARAMETER \<IMicrosoftGraphDelegatedAdminRelationship\>: delegatedAdminRelationship
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[AccessAssignments \<IMicrosoftGraphDelegatedAdminAccessAssignment\[\]\>\]: The access assignments associated with the delegated admin relationship.
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[AccessContainer \<IMicrosoftGraphDelegatedAdminAccessContainer\>\]: delegatedAdminAccessContainer
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[AccessContainerId \<String\>\]: The identifier of the access container (for example, a security group).
+For 'securityGroup' access containers, this must be a valid ID of a Microsoft Entra security group in the Microsoft partner's tenant.
+      \[AccessContainerType \<String\>\]: delegatedAdminAccessContainerType
+    \[AccessDetails \<IMicrosoftGraphDelegatedAdminAccessDetails\>\]: delegatedAdminAccessDetails
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[UnifiedRoles \<IMicrosoftGraphUnifiedRole\[\]\>\]: The directory roles that the Microsoft partner is assigned in the customer tenant.
+        \[RoleDefinitionId \<String\>\]: The unified role definition ID of the directory role.
+Refer to unifiedRoleDefinition resource.
+    \[CreatedDateTime \<DateTime?\>\]: The date and time in ISO 8601 format and in UTC time when the access assignment was created.
+Read-only.
+    \[LastModifiedDateTime \<DateTime?\>\]: The date and time in ISO 8601 and in UTC time when this access assignment was last modified.
+Read-only.
+    \[Status \<String\>\]: delegatedAdminAccessAssignmentStatus
+  \[AccessDetails \<IMicrosoftGraphDelegatedAdminAccessDetails\>\]: delegatedAdminAccessDetails
+  \[ActivatedDateTime \<DateTime?\>\]: The date and time in ISO 8601 format and in UTC time when the relationship became active.
+Read-only.
+  \[AutoExtendDuration \<TimeSpan?\>\]: The duration by which the validity of the relationship is automatically extended, denoted in ISO 8601 format.
+Supported values are: P0D, PT0S, P180D.
+The default value is PT0S.
+PT0S indicates that the relationship expires when the endDateTime is reached and it isn't automatically extended.
+  \[CreatedDateTime \<DateTime?\>\]: The date and time in ISO 8601 format and in UTC time when the relationship was created.
+Read-only.
+  \[Customer \<IMicrosoftGraphDelegatedAdminRelationshipCustomerParticipant\>\]: delegatedAdminRelationshipCustomerParticipant
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the customer tenant as set by Microsoft Entra ID.
+Read-only
+    \[TenantId \<String\>\]: The Microsoft Entra ID-assigned tenant ID of the customer tenant.
+  \[DisplayName \<String\>\]: The display name of the relationship used for ease of identification.
+Must be unique across all delegated admin relationships of the partner.
+This is set by the partner only when the relationship is in the created status and can't be changed by the customer.
+  \[Duration \<TimeSpan?\>\]: The duration of the relationship in ISO 8601 format.
+Must be a value between P1D and P2Y inclusive.
+This is set by the partner only when the relationship is in the created status and can't be changed by the customer.
+  \[EndDateTime \<DateTime?\>\]: The date and time in ISO 8601 format and in UTC time when the status of relationship changes to either terminated or expired.
+Calculated as endDateTime = activatedDateTime + duration.
+Read-only.
+  \[LastModifiedDateTime \<DateTime?\>\]: The date and time in ISO 8601 format and in UTC time when the relationship was last modified.
+Read-only.
+  \[Operations \<IMicrosoftGraphDelegatedAdminRelationshipOperation\[\]\>\]: The long running operations associated with the delegated admin relationship.
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[CreatedDateTime \<DateTime?\>\]: The time in ISO 8601 format and in UTC time when the long-running operation was created.
+Read-only.
+    \[Data \<String\>\]: The data (payload) for the operation.
+Read-only.
+    \[LastModifiedDateTime \<DateTime?\>\]: The time in ISO 8601 format and in UTC time when the long-running operation was last modified.
+Read-only.
+    \[OperationType \<String\>\]: delegatedAdminRelationshipOperationType
+    \[Status \<String\>\]: longRunningOperationStatus
+  \[Requests \<IMicrosoftGraphDelegatedAdminRelationshipRequest\[\]\>\]: The requests associated with the delegated admin relationship.
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[Action \<String\>\]: delegatedAdminRelationshipRequestAction
+    \[CreatedDateTime \<DateTime?\>\]: The date and time in ISO 8601 format and in UTC time when the relationship request was created.
+Read-only.
+    \[LastModifiedDateTime \<DateTime?\>\]: The date and time in ISO 8601 format and UTC time when this relationship request was last modified.
+Read-only.
+    \[Status \<String\>\]: delegatedAdminRelationshipRequestStatus
+  \[Status \<String\>\]: delegatedAdminRelationshipStatus
 
-`BODYPARAMETER <IMicrosoftGraphDelegatedAdminRelationship>`: delegatedAdminRelationship
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[AccessAssignments <IMicrosoftGraphDelegatedAdminAccessAssignment[]>]`: The access assignments associated with the delegated admin relationship.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[AccessContainer <IMicrosoftGraphDelegatedAdminAccessContainer>]`: delegatedAdminAccessContainer
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[AccessContainerId <String>]`: The identifier of the access container (for example, a security group). For 'securityGroup' access containers, this must be a valid ID of an Azure AD security group in the Microsoft partner's tenant.
-      - `[AccessContainerType <String>]`: delegatedAdminAccessContainerType
-    - `[AccessDetails <IMicrosoftGraphDelegatedAdminAccessDetails>]`: delegatedAdminAccessDetails
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[UnifiedRoles <IMicrosoftGraphUnifiedRole[]>]`: The directory roles that the Microsoft partner is assigned in the customer tenant.
-        - `[RoleDefinitionId <String>]`: The unified role definition ID of the directory role. Refer to unifiedRoleDefinition resource.
-    - `[CreatedDateTime <DateTime?>]`: The date and time in ISO 8601 format and in UTC time when the access assignment was created. Read-only.
-    - `[LastModifiedDateTime <DateTime?>]`: The date and time in ISO 8601 and in UTC time when this access assignment was last modified. Read-only.
-    - `[Status <String>]`: delegatedAdminAccessAssignmentStatus
-  - `[AccessDetails <IMicrosoftGraphDelegatedAdminAccessDetails>]`: delegatedAdminAccessDetails
-  - `[ActivatedDateTime <DateTime?>]`: The date and time in ISO 8601 format and in UTC time when the relationship became active. Read-only.
-  - `[AutoExtendDuration <TimeSpan?>]`: The duration by which the validity of the relationship is automatically extended, denoted in ISO 8601 format. Supported values are: P0D, PT0S, P180D. Default value is PT0S. PT0S indicates that the relationship expires when the endDateTime is reached and it is not automatically extended.
-  - `[CreatedDateTime <DateTime?>]`: The date and time in ISO 8601 format and in UTC time when the relationship was created. Read-only.
-  - `[Customer <IMicrosoftGraphDelegatedAdminRelationshipCustomerParticipant>]`: delegatedAdminRelationshipCustomerParticipant
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the customer tenant as set by Azure AD. Read-only
-    - `[TenantId <String>]`: The Azure AD-assigned tenant ID of the customer tenant.
-  - `[DisplayName <String>]`: The display name of the relationship used for ease of identification. Must be unique across all delegated admin relationships of the partner. This is set by the partner only when the relationship is in the created status and can't be changed by the customer.
-  - `[Duration <TimeSpan?>]`: The duration of the relationship in ISO 8601 format. Must be a value between P1D and P2Y inclusive. This is set by the partner only when the relationship is in the created status and can't be changed by the customer.
-  - `[EndDateTime <DateTime?>]`: The date and time in ISO 8601 format and in UTC time when the status of relationship changes to either terminated or expired. Calculated as endDateTime = activatedDateTime + duration. Read-only.
-  - `[LastModifiedDateTime <DateTime?>]`: The date and time in ISO 8601 format and in UTC time when the relationship was last modified. Read-only.
-  - `[Operations <IMicrosoftGraphDelegatedAdminRelationshipOperation[]>]`: The long running operations associated with the delegated admin relationship.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[CreatedDateTime <DateTime?>]`: The time in ISO 8601 format and in UTC time when the long-running operation was created. Read-only.
-    - `[Data <String>]`: The data (payload) for the operation. Read-only.
-    - `[LastModifiedDateTime <DateTime?>]`: The time in ISO 8601 format and in UTC time when the long-running operation was last modified. Read-only.
-    - `[OperationType <String>]`: delegatedAdminRelationshipOperationType
-    - `[Status <String>]`: longRunningOperationStatus
-  - `[Requests <IMicrosoftGraphDelegatedAdminRelationshipRequest[]>]`: The requests associated with the delegated admin relationship.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[Action <String>]`: delegatedAdminRelationshipRequestAction
-    - `[CreatedDateTime <DateTime?>]`: The date and time in ISO 8601 format and in UTC time when the relationship request was created. Read-only.
-    - `[LastModifiedDateTime <DateTime?>]`: The date and time in ISO 8601 format and UTC time when this relationship request was last modified. Read-only.
-    - `[Status <String>]`: delegatedAdminRelationshipRequestStatus
-  - `[Status <String>]`: delegatedAdminRelationshipStatus
+CUSTOMER \<IMicrosoftGraphDelegatedAdminRelationshipCustomerParticipant\>: delegatedAdminRelationshipCustomerParticipant
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DisplayName \<String\>\]: The display name of the customer tenant as set by Microsoft Entra ID.
+Read-only
+  \[TenantId \<String\>\]: The Microsoft Entra ID-assigned tenant ID of the customer tenant.
 
-`CUSTOMER <IMicrosoftGraphDelegatedAdminRelationshipCustomerParticipant>`: delegatedAdminRelationshipCustomerParticipant
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: The display name of the customer tenant as set by Azure AD. Read-only
-  - `[TenantId <String>]`: The Azure AD-assigned tenant ID of the customer tenant.
+INPUTOBJECT \<IIdentityPartnerIdentity\>: Identity Parameter
+  \[DelegatedAdminAccessAssignmentId \<String\>\]: The unique identifier of delegatedAdminAccessAssignment
+  \[DelegatedAdminCustomerId \<String\>\]: The unique identifier of delegatedAdminCustomer
+  \[DelegatedAdminRelationshipId \<String\>\]: The unique identifier of delegatedAdminRelationship
+  \[DelegatedAdminRelationshipOperationId \<String\>\]: The unique identifier of delegatedAdminRelationshipOperation
+  \[DelegatedAdminRelationshipRequestId \<String\>\]: The unique identifier of delegatedAdminRelationshipRequest
+  \[DelegatedAdminServiceManagementDetailId \<String\>\]: The unique identifier of delegatedAdminServiceManagementDetail
 
-`INPUTOBJECT <IIdentityPartnerIdentity>`: Identity Parameter
-  - `[DelegatedAdminAccessAssignmentId <String>]`: The unique identifier of delegatedAdminAccessAssignment
-  - `[DelegatedAdminCustomerId <String>]`: The unique identifier of delegatedAdminCustomer
-  - `[DelegatedAdminRelationshipId <String>]`: The unique identifier of delegatedAdminRelationship
-  - `[DelegatedAdminRelationshipOperationId <String>]`: The unique identifier of delegatedAdminRelationshipOperation
-  - `[DelegatedAdminRelationshipRequestId <String>]`: The unique identifier of delegatedAdminRelationshipRequest
-  - `[DelegatedAdminServiceManagementDetailId <String>]`: The unique identifier of delegatedAdminServiceManagementDetail
+OPERATIONS \<IMicrosoftGraphDelegatedAdminRelationshipOperation\[\]\>: The long running operations associated with the delegated admin relationship.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[CreatedDateTime \<DateTime?\>\]: The time in ISO 8601 format and in UTC time when the long-running operation was created.
+Read-only.
+  \[Data \<String\>\]: The data (payload) for the operation.
+Read-only.
+  \[LastModifiedDateTime \<DateTime?\>\]: The time in ISO 8601 format and in UTC time when the long-running operation was last modified.
+Read-only.
+  \[OperationType \<String\>\]: delegatedAdminRelationshipOperationType
+  \[Status \<String\>\]: longRunningOperationStatus
 
-`OPERATIONS <IMicrosoftGraphDelegatedAdminRelationshipOperation[]>`: The long running operations associated with the delegated admin relationship.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[CreatedDateTime <DateTime?>]`: The time in ISO 8601 format and in UTC time when the long-running operation was created. Read-only.
-  - `[Data <String>]`: The data (payload) for the operation. Read-only.
-  - `[LastModifiedDateTime <DateTime?>]`: The time in ISO 8601 format and in UTC time when the long-running operation was last modified. Read-only.
-  - `[OperationType <String>]`: delegatedAdminRelationshipOperationType
-  - `[Status <String>]`: longRunningOperationStatus
-
-`REQUESTS <IMicrosoftGraphDelegatedAdminRelationshipRequest[]>`: The requests associated with the delegated admin relationship.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Action <String>]`: delegatedAdminRelationshipRequestAction
-  - `[CreatedDateTime <DateTime?>]`: The date and time in ISO 8601 format and in UTC time when the relationship request was created. Read-only.
-  - `[LastModifiedDateTime <DateTime?>]`: The date and time in ISO 8601 format and UTC time when this relationship request was last modified. Read-only.
-  - `[Status <String>]`: delegatedAdminRelationshipRequestStatus
+REQUESTS \<IMicrosoftGraphDelegatedAdminRelationshipRequest\[\]\>: The requests associated with the delegated admin relationship.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[Action \<String\>\]: delegatedAdminRelationshipRequestAction
+  \[CreatedDateTime \<DateTime?\>\]: The date and time in ISO 8601 format and in UTC time when the relationship request was created.
+Read-only.
+  \[LastModifiedDateTime \<DateTime?\>\]: The date and time in ISO 8601 format and UTC time when this relationship request was last modified.
+Read-only.
+  \[Status \<String\>\]: delegatedAdminRelationshipRequestStatus
 
 ## RELATED LINKS
-[Update-MgTenantRelationshipDelegatedAdminRelationship](/powershell/module/Microsoft.Graph.Identity.Partner/Update-MgTenantRelationshipDelegatedAdminRelationship?view=graph-powershell-1.0)
 
-[Update-MgTenantRelationshipDelegatedAdminRelationship](/powershell/module/Microsoft.Graph.Identity.Partner/Update-MgTenantRelationshipDelegatedAdminRelationship?view=graph-powershell-1.0)
-
-[Update-MgTenantRelationshipDelegatedAdminRelationship](/powershell/module/Microsoft.Graph.Identity.Partner/Update-MgTenantRelationshipDelegatedAdminRelationship?view=graph-powershell-1.0)
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/update-mgbetatenantrelationshipdelegatedadminrelationship](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/update-mgbetatenantrelationshipdelegatedadminrelationship)
 

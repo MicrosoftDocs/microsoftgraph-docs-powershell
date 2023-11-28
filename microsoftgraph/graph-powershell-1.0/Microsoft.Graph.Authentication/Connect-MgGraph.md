@@ -17,38 +17,39 @@ There are a number of cmdlets that can be used to manage the different parameter
 ```
 Connect-MgGraph [[-Scopes] <String[]>] [[-ClientId] <String>] [-TenantId <String>]
  [-ContextScope <ContextScope>] [-Environment <String>] [-UseDeviceCode] [-ClientTimeout <Double>] [-NoWelcome]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### AppCertificateParameterSet
 ```
 Connect-MgGraph [-ClientId] <String> [[-CertificateSubjectName] <String>] [[-CertificateThumbprint] <String>]
  [-Certificate <X509Certificate2>] [-TenantId <String>] [-ContextScope <ContextScope>] [-Environment <String>]
- [-ClientTimeout <Double>] [-NoWelcome] [<CommonParameters>]
+ [-ClientTimeout <Double>] [-NoWelcome] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### IdentityParameterSet
 ```
 Connect-MgGraph [[-ClientId] <String>] [-ContextScope <ContextScope>] [-Environment <String>]
- [-ClientTimeout <Double>] [-Identity] [-NoWelcome] [<CommonParameters>]
+ [-ClientTimeout <Double>] [-Identity] [-NoWelcome] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### AppSecretCredentialParameterSet
 ```
 Connect-MgGraph [-ClientSecretCredential <PSCredential>] [-TenantId <String>] [-ContextScope <ContextScope>]
- [-Environment <String>] [-ClientTimeout <Double>] [-NoWelcome] [<CommonParameters>]
+ [-Environment <String>] [-ClientTimeout <Double>] [-NoWelcome] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ### AccessTokenParameterSet
 ```
 Connect-MgGraph [-AccessToken] <SecureString> [-Environment <String>] [-ClientTimeout <Double>] [-NoWelcome]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### EnvironmentVariableParameterSet
 ```
 Connect-MgGraph [-ContextScope <ContextScope>] [-Environment <String>] [-ClientTimeout <Double>]
- [-EnvironmentVariable] [-NoWelcome] [<CommonParameters>]
+ [-EnvironmentVariable] [-NoWelcome] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -352,6 +353,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

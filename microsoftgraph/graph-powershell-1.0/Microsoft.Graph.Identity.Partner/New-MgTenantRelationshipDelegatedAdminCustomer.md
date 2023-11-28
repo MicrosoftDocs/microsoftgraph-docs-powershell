@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Partner-help.xml
 Module Name: Microsoft.Graph.Identity.Partner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/new-mgtenantrelationshipdelegatedadmincustomer
@@ -10,34 +10,35 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to delegatedAdminCustomers for tenantRelationships
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaTenantRelationshipDelegatedAdminCustomer](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/New-MgBetaTenantRelationshipDelegatedAdminCustomer?view=graph-powershell-beta)
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaTenantRelationshipDelegatedAdminCustomer](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/New-MgBetaTenantRelationshipDelegatedAdminCustomer?view=graph-powershell-beta)
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaTenantRelationshipDelegatedAdminCustomer](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/New-MgBetaTenantRelationshipDelegatedAdminCustomer?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgTenantRelationshipDelegatedAdminCustomer [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
  [-Id <String>] [-ServiceManagementDetails <IMicrosoftGraphDelegatedAdminServiceManagementDetail[]>]
- [-TenantId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TenantId <String>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgTenantRelationshipDelegatedAdminCustomer -BodyParameter <IMicrosoftGraphDelegatedAdminCustomer> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgTenantRelationshipDelegatedAdminCustomer -BodyParameter <IMicrosoftGraphDelegatedAdminCustomer>
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to delegatedAdminCustomers for tenantRelationships
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -97,6 +98,21 @@ Read-only.
 Type: String
 Parameter Sets: CreateExpanded
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
@@ -178,33 +194,37 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDelegatedAdminCustomer
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+BODYPARAMETER \<IMicrosoftGraphDelegatedAdminCustomer\>: delegatedAdminCustomer
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[DisplayName \<String\>\]: The Microsoft Entra ID display name of the customer tenant.
+Read-only.
+Supports $orderby.
+  \[ServiceManagementDetails \<IMicrosoftGraphDelegatedAdminServiceManagementDetail\[\]\>\]: Contains the management details of a service in the customer tenant that's managed by delegated administration.
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[ServiceManagementUrl \<String\>\]: The URL of the management portal for the managed service.
+Read-only.
+    \[ServiceName \<String\>\]: The name of a managed service.
+Read-only.
+  \[TenantId \<String\>\]: The Microsoft Entra ID-assigned tenant ID of the customer.
+Read-only.
 
-`BODYPARAMETER <IMicrosoftGraphDelegatedAdminCustomer>`: delegatedAdminCustomer
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[DisplayName <String>]`: The Microsoft Entra ID display name of the customer tenant. Read-only. Supports $orderby.
-  - `[ServiceManagementDetails <IMicrosoftGraphDelegatedAdminServiceManagementDetail[]>]`: Contains the management details of a service in the customer tenant that's managed by delegated administration.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[ServiceManagementUrl <String>]`: The URL of the management portal for the managed service. Read-only.
-    - `[ServiceName <String>]`: The name of a managed service. Read-only.
-  - `[TenantId <String>]`: The Microsoft Entra ID-assigned tenant ID of the customer. Read-only.
-
-`SERVICEMANAGEMENTDETAILS <IMicrosoftGraphDelegatedAdminServiceManagementDetail[]>`: Contains the management details of a service in the customer tenant that's managed by delegated administration.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[ServiceManagementUrl <String>]`: The URL of the management portal for the managed service. Read-only.
-  - `[ServiceName <String>]`: The name of a managed service. Read-only.
+SERVICEMANAGEMENTDETAILS \<IMicrosoftGraphDelegatedAdminServiceManagementDetail\[\]\>: Contains the management details of a service in the customer tenant that's managed by delegated administration.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[ServiceManagementUrl \<String\>\]: The URL of the management portal for the managed service.
+Read-only.
+  \[ServiceName \<String\>\]: The name of a managed service.
+Read-only.
 
 ## RELATED LINKS
-[New-MgBetaTenantRelationshipDelegatedAdminCustomer](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/New-MgBetaTenantRelationshipDelegatedAdminCustomer?view=graph-powershell-beta)
 
-[New-MgBetaTenantRelationshipDelegatedAdminCustomer](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/New-MgBetaTenantRelationshipDelegatedAdminCustomer?view=graph-powershell-beta)
-
-[New-MgBetaTenantRelationshipDelegatedAdminCustomer](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/New-MgBetaTenantRelationshipDelegatedAdminCustomer?view=graph-powershell-beta)
+[https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/new-mgtenantrelationshipdelegatedadmincustomer](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/new-mgtenantrelationshipdelegatedadmincustomer)
 

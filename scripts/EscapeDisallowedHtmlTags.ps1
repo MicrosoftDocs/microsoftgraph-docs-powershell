@@ -2,7 +2,7 @@
 # Licensed under the MIT License.
 Param(
     $ModulesToGenerate = @(),
-    [string] $ModuleMappingConfigPath = (Join-Path $PSScriptRoot ".\config\ModulesMapping.jsonc")
+    [string] $ModuleMappingConfigPath = (Join-Path $PSScriptRoot "../microsoftgraph/config/ModulesMapping.jsonc")
 )
 function Get-GraphMapping {
     $graphMapping = @{}
@@ -61,7 +61,7 @@ function Get-Files{
         $ModulePrefix = "Microsoft.Graph.Beta"
     }
     $moduleImportName = "$ModulePrefix.$ModuleName"
-    $moduleDocsPath = Join-Path $PSScriptRoot "$GraphProfilePath\$moduleImportName"
+    $moduleDocsPath = Join-Path $PSScriptRoot "..\microsoftgraph\$GraphProfilePath\$moduleImportName"
     Update-Files -ModuleDocsPath $moduleDocsPath -GraphProfile $GraphProfile -ModuleName $ModuleName
 }
 
