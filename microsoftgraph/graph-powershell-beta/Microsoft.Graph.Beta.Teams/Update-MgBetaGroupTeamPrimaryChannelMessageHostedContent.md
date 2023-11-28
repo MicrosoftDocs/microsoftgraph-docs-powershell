@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property hostedContents in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupTeamPrimaryChannelMessageHostedContent](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamPrimaryChannelMessageHostedContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -271,6 +274,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Update-MgGroupTeamPrimaryChannelMessageHostedContent](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamPrimaryChannelMessageHostedContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamprimarychannelmessagehostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamprimarychannelmessagehostedcontent)
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgappcatalogteamapp
@@ -12,6 +12,9 @@ Publish an app to the Microsoft Teams app catalog.\nSpecifically, this API publi
 The requiresReview property allows any user to submit an app for review by an administrator.
 Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
 This API is available in the following national cloud deployments.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaAppCatalogTeamApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaAppCatalogTeamApp?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -280,6 +283,7 @@ For example, if a user changes their display name, the API might show the new va
   \[ExternalId \<String\>\]: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
 ## RELATED LINKS
+[New-MgBetaAppCatalogTeamApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaAppCatalogTeamApp?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgappcatalogteamapp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgappcatalogteamapp)
 

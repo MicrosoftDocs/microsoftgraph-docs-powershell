@@ -11,6 +11,9 @@ schema: 2.0.0
 Retrieve the chat of the specified user and Teams app.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserTeamworkInstalledAppChat](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserTeamworkInstalledAppChat?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -166,6 +169,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgBetaUserTeamworkInstalledAppChat](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserTeamworkInstalledAppChat?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserteamworkinstalledappchat](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserteamworkinstalledappchat)
 

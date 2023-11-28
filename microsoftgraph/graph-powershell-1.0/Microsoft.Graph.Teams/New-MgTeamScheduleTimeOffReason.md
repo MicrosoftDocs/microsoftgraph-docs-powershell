@@ -11,6 +11,9 @@ schema: 2.0.0
 Create a new timeOffReason.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamScheduleTimeOffReason?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -314,6 +317,7 @@ For example, if a user changes their display name, the API might show the new va
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
 ## RELATED LINKS
+[New-MgBetaTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamScheduleTimeOffReason?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduletimeoffreason](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduletimeoffreason)
 

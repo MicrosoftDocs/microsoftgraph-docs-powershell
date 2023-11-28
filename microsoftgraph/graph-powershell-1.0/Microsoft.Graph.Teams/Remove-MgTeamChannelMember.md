@@ -11,6 +11,9 @@ schema: 2.0.0
 Delete a conversationMember from a channel.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamChannelMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -212,6 +215,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Remove-MgBetaTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamChannelMember?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamchannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamchannelmember)
 

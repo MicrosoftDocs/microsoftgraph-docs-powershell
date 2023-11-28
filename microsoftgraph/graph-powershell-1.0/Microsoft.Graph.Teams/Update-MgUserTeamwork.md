@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property teamwork in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserTeamwork](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaUserTeamwork?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -9632,6 +9635,7 @@ The URL should be treated as an opaque blob, and not parsed.
 Read-only.
 
 ## RELATED LINKS
+[Update-MgBetaUserTeamwork](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaUserTeamwork?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserteamwork](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserteamwork)
 

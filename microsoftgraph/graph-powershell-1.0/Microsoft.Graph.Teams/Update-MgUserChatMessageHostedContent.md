@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property hostedContents in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserChatMessageHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaUserChatMessageHostedContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -280,6 +283,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Update-MgBetaUserChatMessageHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaUserChatMessageHostedContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserchatmessagehostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserchatmessagehostedcontent)
 

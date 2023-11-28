@@ -11,6 +11,9 @@ schema: 2.0.0
 Delete an instance of a workforceIntegration.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaTeamworkWorkforceIntegration](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamworkWorkforceIntegration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -182,6 +185,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Remove-MgBetaTeamworkWorkforceIntegration](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamworkWorkforceIntegration?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamworkworkforceintegration](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamworkworkforceintegration)
 

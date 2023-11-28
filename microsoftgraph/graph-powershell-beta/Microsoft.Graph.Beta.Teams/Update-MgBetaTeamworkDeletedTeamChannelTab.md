@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property tabs in teamwork
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgTeamworkDeletedTeamChannelTab](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkDeletedTeamChannelTab?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -485,6 +488,7 @@ For example, if a user changes their display name, the API might show the new va
   \[ExternalId \<String\>\]: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
 ## RELATED LINKS
+[Update-MgTeamworkDeletedTeamChannelTab](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkDeletedTeamChannelTab?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdeletedteamchanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdeletedteamchanneltab)
 

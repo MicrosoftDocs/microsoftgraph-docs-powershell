@@ -11,6 +11,9 @@ schema: 2.0.0
 Retrieve a single message or a message reply in a channel or a chat.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgChatMessage](/powershell/module/Microsoft.Graph.Teams/Get-MgChatMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get1 (Default)
@@ -340,6 +343,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgChatMessage](/powershell/module/Microsoft.Graph.Teams/Get-MgChatMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatmessage)
 

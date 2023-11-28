@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to chats for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserChat](/powershell/module/Microsoft.Graph.Teams/New-MgUserChat?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -1295,6 +1298,7 @@ VIEWPOINT \<IMicrosoftGraphChatViewpoint\>: chatViewpoint
   \[LastMessageReadDateTime \<DateTime?\>\]: Represents the dateTime up until which the current user has read chatMessages in a specific chat.
 
 ## RELATED LINKS
+[New-MgUserChat](/powershell/module/Microsoft.Graph.Teams/New-MgUserChat?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserchat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserchat)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserChatCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChatCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -138,6 +141,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgBetaUserChatCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChatCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchatcount](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchatcount)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 List of channels shared with the team.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamIncomingChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamIncomingChannel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -283,6 +286,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgBetaGroupTeamIncomingChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamIncomingChannel?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamincomingchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamincomingchannel)
 

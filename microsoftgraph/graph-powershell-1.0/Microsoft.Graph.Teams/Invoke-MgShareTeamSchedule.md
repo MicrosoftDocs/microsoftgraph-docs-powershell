@@ -14,6 +14,9 @@ For each shift, openshift and timeOff instance in the specified time range, the 
 The notifyTeam parameter further specifies which employees can view the item.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaShareTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaShareTeamSchedule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ShareExpanded (Default)
@@ -277,6 +280,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Invoke-MgBetaShareTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaShareTeamSchedule?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgshareteamschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgshareteamschedule)
 

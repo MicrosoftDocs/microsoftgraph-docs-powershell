@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The details of this version of the app.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaChatInstalledAppTeamAppDefinition](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatInstalledAppTeamAppDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -155,6 +158,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgBetaChatInstalledAppTeamAppDefinition](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatInstalledAppTeamAppDefinition?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatinstalledappteamappdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatinstalledappteamappdefinition)
 

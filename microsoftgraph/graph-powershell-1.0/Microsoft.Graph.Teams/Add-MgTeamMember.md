@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/add-mgteammember
@@ -11,6 +11,9 @@ schema: 2.0.0
 Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
 This API is available in the following national cloud deployments.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaTeamMember](/powershell/module/Microsoft.Graph.Beta.Teams/Add-MgBetaTeamMember?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -310,6 +313,7 @@ An Out-of-tenant external member is assigned the owner role.
 This property is settable only for members of a chat.
 
 ## RELATED LINKS
+[Add-MgBetaTeamMember](/powershell/module/Microsoft.Graph.Beta.Teams/Add-MgBetaTeamMember?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/add-mgteammember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/add-mgteammember)
 

@@ -12,6 +12,9 @@ Add a conversationMember to a channel.
 This operation is allowed only for channels with a membershipType value of private or shared.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamChannelMember?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -293,6 +296,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[New-MgGroupTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamChannelMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamchannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamchannelmember)
 

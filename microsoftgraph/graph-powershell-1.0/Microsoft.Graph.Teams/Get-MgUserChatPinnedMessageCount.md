@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserChatPinnedMessageCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChatPinnedMessageCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -155,6 +158,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgBetaUserChatPinnedMessageCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChatPinnedMessageCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchatpinnedmessagecount](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchatpinnedmessagecount)
 

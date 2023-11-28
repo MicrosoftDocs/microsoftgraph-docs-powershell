@@ -18,6 +18,9 @@ You should continue to GET until the status isn't running.
 The recommended delay between GETs is 5 seconds.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Copy-MgTeam](/powershell/module/Microsoft.Graph.Teams/Copy-MgTeam?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CloneExpanded (Default)
@@ -346,6 +349,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Copy-MgTeam](/powershell/module/Microsoft.Graph.Teams/Copy-MgTeam?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/copy-mgbetateam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/copy-mgbetateam)
 

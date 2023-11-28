@@ -11,6 +11,9 @@ schema: 2.0.0
 Update the tenant-wide teamsAppSettings for all Teams apps in the tenant.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaTeamworkTeamAppSetting](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamworkTeamAppSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -160,6 +163,7 @@ Read-only.
   \[AllowUserRequestsForAppAccess \<Boolean?\>\]: Indicates whether users are allowed to request access to the unavailable Teams apps.
 
 ## RELATED LINKS
+[Update-MgBetaTeamworkTeamAppSetting](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamworkTeamAppSetting?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkteamappsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkteamappsetting)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update media content for the navigation property photo in teams
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgTeamPhotoContent](/powershell/module/Microsoft.Graph.Teams/Set-MgTeamPhotoContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Set (Default)
@@ -195,6 +198,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Set-MgTeamPhotoContent](/powershell/module/Microsoft.Graph.Teams/Set-MgTeamPhotoContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetateamphotocontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetateamphotocontent)
 

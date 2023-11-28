@@ -12,6 +12,9 @@ A container for Microsoft Teams features available for the user.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserTeamwork](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserTeamwork?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -143,6 +146,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgBetaUserTeamwork](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserTeamwork?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserteamwork](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserteamwork)
 

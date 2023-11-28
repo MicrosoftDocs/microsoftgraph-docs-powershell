@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property bot for appCatalogs
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaAppCatalogTeamAppDefinitionBot](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaAppCatalogTeamAppDefinitionBot?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -195,6 +198,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Remove-MgBetaAppCatalogTeamAppDefinitionBot](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaAppCatalogTeamAppDefinitionBot?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgappcatalogteamappdefinitionbot](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgappcatalogteamappdefinitionbot)
 

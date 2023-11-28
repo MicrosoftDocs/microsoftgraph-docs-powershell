@@ -15,6 +15,9 @@ Unarchiving is an async operation.
 A team is unarchived once the async operation completes successfully, which may occur subsequent to a response from this API.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaUnarchiveTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaUnarchiveTeam?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Unarchive (Default)
@@ -173,6 +176,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Invoke-MgBetaUnarchiveTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaUnarchiveTeam?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgunarchiveteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgunarchiveteam)
 

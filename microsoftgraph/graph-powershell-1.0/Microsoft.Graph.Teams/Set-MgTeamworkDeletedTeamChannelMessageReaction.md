@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action setReaction
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaTeamworkDeletedTeamChannelMessageReaction](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaTeamworkDeletedTeamChannelMessageReaction?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetExpanded (Default)
@@ -254,6 +257,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Set-MgBetaTeamworkDeletedTeamChannelMessageReaction](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaTeamworkDeletedTeamChannelMessageReaction?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamworkdeletedteamchannelmessagereaction](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamworkdeletedteamchannelmessagereaction)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property messages in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserChatMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaUserChatMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -1000,6 +1003,7 @@ Only applies to channel chat messages, not chat messages in a chat.
 Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
+[Update-MgBetaUserChatMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaUserChatMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserchatmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserchatmessage)
 

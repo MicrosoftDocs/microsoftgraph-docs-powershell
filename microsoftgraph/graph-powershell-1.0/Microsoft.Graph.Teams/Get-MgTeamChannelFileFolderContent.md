@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The content stream, if the item represents a file.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamChannelFileFolderContent](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelFileFolderContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -155,6 +158,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgBetaTeamChannelFileFolderContent](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelFileFolderContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelfilefoldercontent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelfilefoldercontent)
 
