@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryoutboundshareduserprofile
@@ -26,6 +26,22 @@ New-MgBetaDirectoryOutboundSharedUserProfile -BodyParameter <IMicrosoftGraphOutb
 
 ## DESCRIPTION
 Create new navigation property to outboundSharedUserProfiles for directory
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -61,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tenants
-The collection of external Azure AD tenants that the user has shared profile data with.
+The collection of external Microsoft Entra tenants that the user has shared profile data with.
 Read-only.
 To construct, see NOTES section for TENANTS properties and create a hash table.
 
@@ -141,22 +157,21 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER \<IMicrosoftGraphOutboundSharedUserProfile\>: outboundSharedUserProfile
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Tenants \<IMicrosoftGraphTenantReference\[\]\>\]: The collection of external Azure AD tenants that the user has shared profile data with.
+  \[Tenants \<IMicrosoftGraphTenantReference\[\]\>\]: The collection of external Microsoft Entra tenants that the user has shared profile data with.
 Read-only.
-    \[TenantId \<String\>\]: The identifier of the Azure AD tenant.
+    \[TenantId \<String\>\]: The identifier of the Microsoft Entra tenant.
 Read-only.
 Key.
   \[UserId \<String\>\]: The object id of the external user.
 Read-only.
 
-TENANTS \<IMicrosoftGraphTenantReference\[\]\>: The collection of external Azure AD tenants that the user has shared profile data with.
+TENANTS \<IMicrosoftGraphTenantReference\[\]\>: The collection of external Microsoft Entra tenants that the user has shared profile data with.
 Read-only.
-  \[TenantId \<String\>\]: The identifier of the Azure AD tenant.
+  \[TenantId \<String\>\]: The identifier of the Microsoft Entra tenant.
 Read-only.
 Key.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryoutboundshareduserprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryoutboundshareduserprofile)
-
 

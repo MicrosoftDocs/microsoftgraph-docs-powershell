@@ -17,20 +17,17 @@ The Find-MgGraphCommand allows to:  - Pass a Microsoft Graph URL (relative and a
 
 ### FindByCommandOrUri (Default)
 ```
-Find-MgGraphCommand [-ApiVersion <String>] [-InputObject] <Object[]> [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+Find-MgGraphCommand [-ApiVersion <String>] [-InputObject] <Object[]> [<CommonParameters>]
 ```
 
 ### FindByUri
 ```
-Find-MgGraphCommand [-Uri] <String[]> [-Method <String>] [-ApiVersion <String>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Find-MgGraphCommand [-Uri] <String[]> [-Method <String>] [-ApiVersion <String>] [<CommonParameters>]
 ```
 
 ### FindByCommand
 ```
-Find-MgGraphCommand [-ApiVersion <String>] -Command <String[]> [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+Find-MgGraphCommand [-ApiVersion <String>] -Command <String[]> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -186,21 +183,6 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: FindByUri
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
 
 Required: False
 Position: Named

@@ -14,7 +14,7 @@ For example, toggle Web Account Manager (WAM) support.
 ## SYNTAX
 
 ```
-Set-MgGraphOption [-EnableLoginByWAM <Boolean>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Set-MgGraphOption [-EnableLoginByWAM <Boolean>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -39,21 +39,6 @@ Sets web account manager support
 Type: Boolean
 Parameter Sets: (All)
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
 
 Required: False
 Position: Named

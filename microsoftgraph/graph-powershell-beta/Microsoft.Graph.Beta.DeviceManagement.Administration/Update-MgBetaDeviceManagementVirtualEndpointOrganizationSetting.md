@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointorganizationsetting
@@ -31,8 +31,9 @@ Update the properties of the cloudPcOrganizationSettings object in a tenant.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaDeviceManagementVirtualEndpointOrganizationSetting Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 $params = @{
 	"@odata.type" = "#microsoft.graph.cloudPcOrganizationSettings"
@@ -45,8 +46,6 @@ $params = @{
 }
 Update-MgBetaDeviceManagementVirtualEndpointOrganizationSetting -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaDeviceManagementVirtualEndpointOrganizationSetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -92,7 +91,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -101,7 +100,7 @@ Accept wildcard characters: False
 True if the provisioned Cloud PC can be accessed by single sign-on.
 False indicates that the provisioned Cloud PC doesn't support this feature.
 Default value is false.
-Windows 365 users can use single sign-on to authenticate to Azure Active Directory (Azure AD) with passwordless options (for example, FIDO keys) to access their Cloud PC.
+Windows 365 users can use single sign-on to authenticate to Microsoft Entra ID with passwordless options (for example, FIDO keys) to access their Cloud PC.
 Optional.
 
 ```yaml
@@ -111,7 +110,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -219,27 +218,35 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcOrganizationSettings
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+BODYPARAMETER \<IMicrosoftGraphCloudPcOrganizationSettings\>: cloudPcOrganizationSettings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[EnableMemAutoEnroll \<Boolean?\>\]: Specifies whether new Cloud PCs will be automatically enrolled in Microsoft Endpoint Manager (MEM).
+The default value is false.
+  \[EnableSingleSignOn \<Boolean?\>\]: True if the provisioned Cloud PC can be accessed by single sign-on.
+False indicates that the provisioned Cloud PC doesn't support this feature.
+Default value is false.
+Windows 365 users can use single sign-on to authenticate to Microsoft Entra ID with passwordless options (for example, FIDO keys) to access their Cloud PC.
+Optional.
+  \[OSVersion \<String\>\]: cloudPcOperatingSystem
+  \[UserAccountType \<String\>\]: cloudPcUserAccountType
+  \[WindowsSettings \<IMicrosoftGraphCloudPcWindowsSettings\>\]: cloudPcWindowsSettings
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Language \<String\>\]: The Windows language/region tag to use for language pack configuration and localization of the Cloud PC.
+The default value is en-US, which corresponds to English (United States).
 
-`BODYPARAMETER <IMicrosoftGraphCloudPcOrganizationSettings>`: cloudPcOrganizationSettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[EnableMemAutoEnroll <Boolean?>]`: Specifies whether new Cloud PCs will be automatically enrolled in Microsoft Endpoint Manager (MEM). The default value is false.
-  - `[EnableSingleSignOn <Boolean?>]`: True if the provisioned Cloud PC can be accessed by single sign-on. False indicates that the provisioned Cloud PC doesn't support this feature. Default value is false. Windows 365 users can use single sign-on to authenticate to Azure Active Directory (Azure AD) with passwordless options (for example, FIDO keys) to access their Cloud PC. Optional.
-  - `[OSVersion <String>]`: cloudPcOperatingSystem
-  - `[UserAccountType <String>]`: cloudPcUserAccountType
-  - `[WindowsSettings <IMicrosoftGraphCloudPcWindowsSettings>]`: cloudPcWindowsSettings
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Language <String>]`: The Windows language/region tag to use for language pack configuration and localization of the Cloud PC. The default value is en-US, which corresponds to English (United States).
-
-`WINDOWSSETTINGS <IMicrosoftGraphCloudPcWindowsSettings>`: cloudPcWindowsSettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Language <String>]`: The Windows language/region tag to use for language pack configuration and localization of the Cloud PC. The default value is en-US, which corresponds to English (United States).
+WINDOWSSETTINGS \<IMicrosoftGraphCloudPcWindowsSettings\>: cloudPcWindowsSettings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Language \<String\>\]: The Windows language/region tag to use for language pack configuration and localization of the Cloud PC.
+The default value is en-US, which corresponds to English (United States).
 
 ## RELATED LINKS
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointorganizationsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointorganizationsetting)
+

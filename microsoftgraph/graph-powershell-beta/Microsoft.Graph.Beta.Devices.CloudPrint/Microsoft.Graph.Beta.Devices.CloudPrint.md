@@ -1,636 +1,526 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
-Module Guid: ec82c7f5-ab9f-4de8-803f-fd3ce2459bba
-Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint
-Help Version: 1.0.0.0
+Module Guid: e8ca1faa-96b4-465b-a704-854b64e58526
+Download Help Link: {{ Update Download Link }}
+Help Version: {{ Please enter version of help manually (X.X.X.X) format }}
 Locale: en-US
 ---
 
 # Microsoft.Graph.Beta.Devices.CloudPrint Module
 ## Description
-Microsoft Graph PowerShell Cmdlets
+{{ Fill in the Description }}
 
 ## Microsoft.Graph.Beta.Devices.CloudPrint Cmdlets
 ### [Get-MgBetaPrint](Get-MgBetaPrint.md)
-Get print
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintConnector](Get-MgBetaPrintConnector.md)
-Retrieve the properties and relationships of a printConnector object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintConnectorCount](Get-MgBetaPrintConnectorCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintOperation](Get-MgBetaPrintOperation.md)
-Retrieve the properties and relationships of a printOperation object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintOperationCount](Get-MgBetaPrintOperationCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintPrinter](Get-MgBetaPrintPrinter.md)
-Retrieve the properties and relationships of a printer object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintPrinterCapability](Get-MgBetaPrintPrinterCapability.md)
-Invoke function getCapabilities
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintPrinterConnector](Get-MgBetaPrintPrinterConnector.md)
-The connectors that are associated with the printer.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintPrinterConnectorCount](Get-MgBetaPrintPrinterConnectorCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintPrinterCount](Get-MgBetaPrintPrinterCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintPrinterJob](Get-MgBetaPrintPrinterJob.md)
-Get jobs from print
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintPrinterJobCount](Get-MgBetaPrintPrinterJobCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintPrinterJobDocument](Get-MgBetaPrintPrinterJobDocument.md)
-Get documents from print
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintPrinterJobDocumentContent](Get-MgBetaPrintPrinterJobDocumentContent.md)
-Get media content for the navigation property documents from print
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintPrinterJobDocumentCount](Get-MgBetaPrintPrinterJobDocumentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintPrinterJobTask](Get-MgBetaPrintPrinterJobTask.md)
-A list of printTasks that were triggered by this print job.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintPrinterJobTaskCount](Get-MgBetaPrintPrinterJobTaskCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintPrinterJobTaskDefinition](Get-MgBetaPrintPrinterJobTaskDefinition.md)
-The printTaskDefinition that was used to create this task.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintPrinterJobTaskTrigger](Get-MgBetaPrintPrinterJobTaskTrigger.md)
-The printTaskTrigger that triggered this task's execution.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintPrinterShare](Get-MgBetaPrintPrinterShare.md)
-Get printerShares from print
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintPrinterShareAllowedGroup](Get-MgBetaPrintPrinterShareAllowedGroup.md)
-Retrieve a list of groups that have been granted access to submit print jobs to the associated printerShare.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintPrinterShareAllowedGroupByRef](Get-MgBetaPrintPrinterShareAllowedGroupByRef.md)
-Retrieve a list of groups that have been granted access to submit print jobs to the associated printerShare.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintPrinterShareAllowedGroupCount](Get-MgBetaPrintPrinterShareAllowedGroupCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintPrinterShareAllowedGroupServiceProvisioningError](Get-MgBetaPrintPrinterShareAllowedGroupServiceProvisioningError.md)
-Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object .
-Supports $filter (eq, not, for isResolved and serviceInstance).
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintPrinterShareAllowedGroupServiceProvisioningErrorCount](Get-MgBetaPrintPrinterShareAllowedGroupServiceProvisioningErrorCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintPrinterShareAllowedUser](Get-MgBetaPrintPrinterShareAllowedUser.md)
-Retrieve a list of users who have been granted access to submit print jobs to the associated printerShare.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintPrinterShareAllowedUserByRef](Get-MgBetaPrintPrinterShareAllowedUserByRef.md)
-Retrieve a list of users who have been granted access to submit print jobs to the associated printerShare.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintPrinterShareAllowedUserCount](Get-MgBetaPrintPrinterShareAllowedUserCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintPrinterShareAllowedUserMailboxSetting](Get-MgBetaPrintPrinterShareAllowedUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintPrinterShareAllowedUserServiceProvisioningError](Get-MgBetaPrintPrinterShareAllowedUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintPrinterShareAllowedUserServiceProvisioningErrorCount](Get-MgBetaPrintPrinterShareAllowedUserServiceProvisioningErrorCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintPrinterShareCount](Get-MgBetaPrintPrinterShareCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintPrinterShareJob](Get-MgBetaPrintPrinterShareJob.md)
-Get jobs from print
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintPrinterShareJobCount](Get-MgBetaPrintPrinterShareJobCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintPrinterShareJobDocument](Get-MgBetaPrintPrinterShareJobDocument.md)
-Get documents from print
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintPrinterShareJobDocumentContent](Get-MgBetaPrintPrinterShareJobDocumentContent.md)
-Get media content for the navigation property documents from print
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintPrinterShareJobDocumentCount](Get-MgBetaPrintPrinterShareJobDocumentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintPrinterShareJobTask](Get-MgBetaPrintPrinterShareJobTask.md)
-A list of printTasks that were triggered by this print job.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintPrinterShareJobTaskCount](Get-MgBetaPrintPrinterShareJobTaskCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintPrinterShareJobTaskDefinition](Get-MgBetaPrintPrinterShareJobTaskDefinition.md)
-The printTaskDefinition that was used to create this task.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintPrinterShareJobTaskTrigger](Get-MgBetaPrintPrinterShareJobTaskTrigger.md)
-The printTaskTrigger that triggered this task's execution.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintPrinterSharePrinter](Get-MgBetaPrintPrinterSharePrinter.md)
-The printer that this printer share is related to.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintPrinterTaskTrigger](Get-MgBetaPrintPrinterTaskTrigger.md)
-Get a task trigger from a printer.
-For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintPrinterTaskTriggerCount](Get-MgBetaPrintPrinterTaskTriggerCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintPrinterTaskTriggerDefinition](Get-MgBetaPrintPrinterTaskTriggerDefinition.md)
-An abstract definition that is used to create a printTask when triggered by a print event.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintService](Get-MgBetaPrintService.md)
-Retrieve the properties and relationships of a print service.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintServiceCount](Get-MgBetaPrintServiceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintServiceEndpoint](Get-MgBetaPrintServiceEndpoint.md)
-Retrieve the properties and relationships of a print service endpoint.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintServiceEndpointCount](Get-MgBetaPrintServiceEndpointCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintShare](Get-MgBetaPrintShare.md)
-Retrieve the properties and relationships of a printer share.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintShareAllowedGroup](Get-MgBetaPrintShareAllowedGroup.md)
-Retrieve a list of groups that have been granted access to submit print jobs to the associated printerShare.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintShareAllowedGroupByRef](Get-MgBetaPrintShareAllowedGroupByRef.md)
-Retrieve a list of groups that have been granted access to submit print jobs to the associated printerShare.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintShareAllowedGroupCount](Get-MgBetaPrintShareAllowedGroupCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintShareAllowedGroupServiceProvisioningError](Get-MgBetaPrintShareAllowedGroupServiceProvisioningError.md)
-Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object .
-Supports $filter (eq, not, for isResolved and serviceInstance).
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintShareAllowedGroupServiceProvisioningErrorCount](Get-MgBetaPrintShareAllowedGroupServiceProvisioningErrorCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintShareAllowedUser](Get-MgBetaPrintShareAllowedUser.md)
-Retrieve a list of users who have been granted access to submit print jobs to the associated printerShare.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintShareAllowedUserByRef](Get-MgBetaPrintShareAllowedUserByRef.md)
-Retrieve a list of users who have been granted access to submit print jobs to the associated printerShare.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintShareAllowedUserCount](Get-MgBetaPrintShareAllowedUserCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintShareAllowedUserMailboxSetting](Get-MgBetaPrintShareAllowedUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintShareAllowedUserServiceProvisioningError](Get-MgBetaPrintShareAllowedUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintShareAllowedUserServiceProvisioningErrorCount](Get-MgBetaPrintShareAllowedUserServiceProvisioningErrorCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintShareCount](Get-MgBetaPrintShareCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintShareJob](Get-MgBetaPrintShareJob.md)
-Get jobs from print
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintShareJobCount](Get-MgBetaPrintShareJobCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintShareJobDocument](Get-MgBetaPrintShareJobDocument.md)
-Get documents from print
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintShareJobDocumentContent](Get-MgBetaPrintShareJobDocumentContent.md)
-Get media content for the navigation property documents from print
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintShareJobDocumentCount](Get-MgBetaPrintShareJobDocumentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintShareJobTask](Get-MgBetaPrintShareJobTask.md)
-A list of printTasks that were triggered by this print job.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintShareJobTaskCount](Get-MgBetaPrintShareJobTaskCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintShareJobTaskDefinition](Get-MgBetaPrintShareJobTaskDefinition.md)
-The printTaskDefinition that was used to create this task.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintShareJobTaskTrigger](Get-MgBetaPrintShareJobTaskTrigger.md)
-The printTaskTrigger that triggered this task's execution.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintSharePrinter](Get-MgBetaPrintSharePrinter.md)
-The printer that this printer share is related to.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintTaskDefinition](Get-MgBetaPrintTaskDefinition.md)
-Get details about a task definition.
-For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintTaskDefinitionCount](Get-MgBetaPrintTaskDefinitionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintTaskDefinitionTask](Get-MgBetaPrintTaskDefinitionTask.md)
-Get details about a print task.
-For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintTaskDefinitionTaskCount](Get-MgBetaPrintTaskDefinitionTaskCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrintTaskDefinitionTaskTrigger](Get-MgBetaPrintTaskDefinitionTaskTrigger.md)
-The printTaskTrigger that triggered this task's execution.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaAbortPrintPrinterJob](Invoke-MgBetaAbortPrintPrinterJob.md)
-Abort a print job.
-Only applications using application permissions can abort a print job.
-Aborting a print job will only succeed if there is a printTask in a processing state on the associated print job, started by a trigger that the requesting app created.
-For details about how to register a task trigger, see Extending Universal Print to support pull printing.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaAbortPrintPrinterShareJob](Invoke-MgBetaAbortPrintPrinterShareJob.md)
-Abort a print job.
-Only applications using application permissions can abort a print job.
-Aborting a print job will only succeed if there is a printTask in a processing state on the associated print job, started by a trigger that the requesting app created.
-For details about how to register a task trigger, see Extending Universal Print to support pull printing.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaAbortPrintShareJob](Invoke-MgBetaAbortPrintShareJob.md)
-Abort a print job.
-Only applications using application permissions can abort a print job.
-Aborting a print job will only succeed if there is a printTask in a processing state on the associated print job, started by a trigger that the requesting app created.
-For details about how to register a task trigger, see Extending Universal Print to support pull printing.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaRedirectPrintPrinterJob](Invoke-MgBetaRedirectPrintPrinterJob.md)
-Redirect a print job to a different printer.
-Redirecting a print job will only succeed if there is a printTask in a processing state on the associated print job, started by a trigger that the requesting app created.
-For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaRedirectPrintPrinterShareJob](Invoke-MgBetaRedirectPrintPrinterShareJob.md)
-Redirect a print job to a different printer.
-Redirecting a print job will only succeed if there is a printTask in a processing state on the associated print job, started by a trigger that the requesting app created.
-For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaRedirectPrintShareJob](Invoke-MgBetaRedirectPrintShareJob.md)
-Redirect a print job to a different printer.
-Redirecting a print job will only succeed if there is a printTask in a processing state on the associated print job, started by a trigger that the requesting app created.
-For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaPrintConnector](New-MgBetaPrintConnector.md)
-Create new navigation property to connectors for print
+{{ Fill in the Description }}
 
 ### [New-MgBetaPrintOperation](New-MgBetaPrintOperation.md)
-Create new navigation property to operations for print
+{{ Fill in the Description }}
 
 ### [New-MgBetaPrintPrinter](New-MgBetaPrintPrinter.md)
-Create (register) a printer with the Universal Print service.
-This is a long-running operation and as such, it returns a printerCreateOperation that can be used to track and verify the registration of the printer.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaPrintPrinterJob](New-MgBetaPrintPrinterJob.md)
-Create new navigation property to jobs for print
+{{ Fill in the Description }}
 
 ### [New-MgBetaPrintPrinterJobDocument](New-MgBetaPrintPrinterJobDocument.md)
-Create new navigation property to documents for print
+{{ Fill in the Description }}
 
 ### [New-MgBetaPrintPrinterJobDocumentUploadSession](New-MgBetaPrintPrinterJobDocumentUploadSession.md)
-Create an upload session that allows an app to iteratively upload ranges of a binary file linked to the print document.
-As part of the response, this action returns an upload URL that can be used in subsequent sequential PUT queries.
-Request headers for each PUT operation can be used to specify the exact range of bytes to be uploaded.
-This allows transfer to be resumed, in case the network connection is dropped during upload.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaPrintPrinterJobTask](New-MgBetaPrintPrinterJobTask.md)
-Create new navigation property to tasks for print
+{{ Fill in the Description }}
 
 ### [New-MgBetaPrintPrinterShare](New-MgBetaPrintPrinterShare.md)
-Create new navigation property to printerShares for print
+{{ Fill in the Description }}
 
 ### [New-MgBetaPrintPrinterShareAllowedGroupByRef](New-MgBetaPrintPrinterShareAllowedGroupByRef.md)
-Grant the specified group access to submit print jobs to the associated printerShare.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaPrintPrinterShareAllowedUserByRef](New-MgBetaPrintPrinterShareAllowedUserByRef.md)
-Grant the specified user access to submit print jobs to the associated printerShare.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaPrintPrinterShareJob](New-MgBetaPrintPrinterShareJob.md)
-Create new navigation property to jobs for print
+{{ Fill in the Description }}
 
 ### [New-MgBetaPrintPrinterShareJobDocument](New-MgBetaPrintPrinterShareJobDocument.md)
-Create new navigation property to documents for print
+{{ Fill in the Description }}
 
 ### [New-MgBetaPrintPrinterShareJobDocumentUploadSession](New-MgBetaPrintPrinterShareJobDocumentUploadSession.md)
-Create an upload session that allows an app to iteratively upload ranges of a binary file linked to the print document.
-As part of the response, this action returns an upload URL that can be used in subsequent sequential PUT queries.
-Request headers for each PUT operation can be used to specify the exact range of bytes to be uploaded.
-This allows transfer to be resumed, in case the network connection is dropped during upload.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaPrintPrinterShareJobTask](New-MgBetaPrintPrinterShareJobTask.md)
-Create new navigation property to tasks for print
+{{ Fill in the Description }}
 
 ### [New-MgBetaPrintPrinterTaskTrigger](New-MgBetaPrintPrinterTaskTrigger.md)
-Create a new task trigger on the specified printer.
-Currently, only one task trigger can be specified per printer, but this limit might be removed in the future.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaPrintService](New-MgBetaPrintService.md)
-Create new navigation property to services for print
+{{ Fill in the Description }}
 
 ### [New-MgBetaPrintServiceEndpoint](New-MgBetaPrintServiceEndpoint.md)
-Create new navigation property to endpoints for print
+{{ Fill in the Description }}
 
 ### [New-MgBetaPrintShare](New-MgBetaPrintShare.md)
-Create a new printerShare for the specified printer.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaPrintShareAllowedGroupByRef](New-MgBetaPrintShareAllowedGroupByRef.md)
-Grant the specified group access to submit print jobs to the associated printerShare.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaPrintShareAllowedUserByRef](New-MgBetaPrintShareAllowedUserByRef.md)
-Grant the specified user access to submit print jobs to the associated printerShare.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaPrintShareJob](New-MgBetaPrintShareJob.md)
-Create new navigation property to jobs for print
+{{ Fill in the Description }}
 
 ### [New-MgBetaPrintShareJobDocument](New-MgBetaPrintShareJobDocument.md)
-Create new navigation property to documents for print
+{{ Fill in the Description }}
 
 ### [New-MgBetaPrintShareJobDocumentUploadSession](New-MgBetaPrintShareJobDocumentUploadSession.md)
-Create an upload session that allows an app to iteratively upload ranges of a binary file linked to the print document.
-As part of the response, this action returns an upload URL that can be used in subsequent sequential PUT queries.
-Request headers for each PUT operation can be used to specify the exact range of bytes to be uploaded.
-This allows transfer to be resumed, in case the network connection is dropped during upload.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaPrintShareJobTask](New-MgBetaPrintShareJobTask.md)
-Create new navigation property to tasks for print
+{{ Fill in the Description }}
 
 ### [New-MgBetaPrintTaskDefinition](New-MgBetaPrintTaskDefinition.md)
-Create a new task definition.
-For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaPrintTaskDefinitionTask](New-MgBetaPrintTaskDefinitionTask.md)
-Create new navigation property to tasks for print
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaPrintConnector](Remove-MgBetaPrintConnector.md)
-Delete (unregister) a printConnector.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaPrintOperation](Remove-MgBetaPrintOperation.md)
-Delete navigation property operations for print
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaPrintPrinter](Remove-MgBetaPrintPrinter.md)
-Delete (unregister) a printer.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaPrintPrinterJob](Remove-MgBetaPrintPrinterJob.md)
-Delete navigation property jobs for print
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaPrintPrinterJobDocument](Remove-MgBetaPrintPrinterJobDocument.md)
-Delete navigation property documents for print
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaPrintPrinterJobTask](Remove-MgBetaPrintPrinterJobTask.md)
-Delete navigation property tasks for print
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaPrintPrinterShare](Remove-MgBetaPrintPrinterShare.md)
-Delete navigation property printerShares for print
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaPrintPrinterShareAllowedGroupByRef](Remove-MgBetaPrintPrinterShareAllowedGroupByRef.md)
-Revoke the specified group's access to submit print jobs to the associated printerShare.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaPrintPrinterShareAllowedUserByRef](Remove-MgBetaPrintPrinterShareAllowedUserByRef.md)
-Revoke the specified user's access to submit print jobs to the associated printerShare.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaPrintPrinterShareJob](Remove-MgBetaPrintPrinterShareJob.md)
-Delete navigation property jobs for print
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaPrintPrinterShareJobDocument](Remove-MgBetaPrintPrinterShareJobDocument.md)
-Delete navigation property documents for print
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaPrintPrinterShareJobTask](Remove-MgBetaPrintPrinterShareJobTask.md)
-Delete navigation property tasks for print
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaPrintPrinterTaskTrigger](Remove-MgBetaPrintPrinterTaskTrigger.md)
-Delete a printer's task trigger to prevent related print events from triggering tasks on the specified printer.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaPrintService](Remove-MgBetaPrintService.md)
-Delete navigation property services for print
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaPrintServiceEndpoint](Remove-MgBetaPrintServiceEndpoint.md)
-Delete navigation property endpoints for print
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaPrintShare](Remove-MgBetaPrintShare.md)
-Delete a printer share (unshare the associated printer).
-This action can't be undone.
-If the printer is shared again in the future, any Windows users who had previously installed the printer needs to discover and reinstall it.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaPrintShareAllowedGroupByRef](Remove-MgBetaPrintShareAllowedGroupByRef.md)
-Revoke the specified group's access to submit print jobs to the associated printerShare.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaPrintShareAllowedUserByRef](Remove-MgBetaPrintShareAllowedUserByRef.md)
-Revoke the specified user's access to submit print jobs to the associated printerShare.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaPrintShareJob](Remove-MgBetaPrintShareJob.md)
-Delete navigation property jobs for print
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaPrintShareJobDocument](Remove-MgBetaPrintShareJobDocument.md)
-Delete navigation property documents for print
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaPrintShareJobTask](Remove-MgBetaPrintShareJobTask.md)
-Delete navigation property tasks for print
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaPrintTaskDefinition](Remove-MgBetaPrintTaskDefinition.md)
-Delete a taskDefinition.
-For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaPrintTaskDefinitionTask](Remove-MgBetaPrintTaskDefinitionTask.md)
-Delete navigation property tasks for print
+{{ Fill in the Description }}
 
 ### [Reset-MgBetaPrintPrinterDefault](Reset-MgBetaPrintPrinterDefault.md)
-Invoke action resetDefaults
+{{ Fill in the Description }}
 
 ### [Restore-MgBetaPrintPrinterFactoryDefault](Restore-MgBetaPrintPrinterFactoryDefault.md)
-Restore a printer's default settings to the values specified by the manufacturer.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Set-MgBetaPrintPrinterJobDocumentContent](Set-MgBetaPrintPrinterJobDocumentContent.md)
-Update media content for the navigation property documents in print
+{{ Fill in the Description }}
 
 ### [Set-MgBetaPrintPrinterShareJobDocumentContent](Set-MgBetaPrintPrinterShareJobDocumentContent.md)
-Update media content for the navigation property documents in print
+{{ Fill in the Description }}
 
 ### [Set-MgBetaPrintShareJobDocumentContent](Set-MgBetaPrintShareJobDocumentContent.md)
-Update media content for the navigation property documents in print
+{{ Fill in the Description }}
 
 ### [Start-MgBetaPrintPrinterJob](Start-MgBetaPrintPrinterJob.md)
-Invoke action start
+{{ Fill in the Description }}
 
 ### [Start-MgBetaPrintPrinterJobPrintJob](Start-MgBetaPrintPrinterJobPrintJob.md)
-Invoke action startPrintJob
+{{ Fill in the Description }}
 
 ### [Start-MgBetaPrintPrinterShareJob](Start-MgBetaPrintPrinterShareJob.md)
-Invoke action start
+{{ Fill in the Description }}
 
 ### [Start-MgBetaPrintPrinterShareJobPrintJob](Start-MgBetaPrintPrinterShareJobPrintJob.md)
-Invoke action startPrintJob
+{{ Fill in the Description }}
 
 ### [Start-MgBetaPrintShareJob](Start-MgBetaPrintShareJob.md)
-Invoke action start
+{{ Fill in the Description }}
 
 ### [Start-MgBetaPrintShareJobPrintJob](Start-MgBetaPrintShareJobPrintJob.md)
-Invoke action startPrintJob
+{{ Fill in the Description }}
 
 ### [Stop-MgBetaPrintPrinterJob](Stop-MgBetaPrintPrinterJob.md)
-Cancel a print job.
-Print jobs can be canceled only on behalf of a user, using delegated permissions.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Stop-MgBetaPrintPrinterJobPrintJob](Stop-MgBetaPrintPrinterJobPrintJob.md)
-Invoke action cancelPrintJob
+{{ Fill in the Description }}
 
 ### [Stop-MgBetaPrintPrinterShareJob](Stop-MgBetaPrintPrinterShareJob.md)
-Cancel a print job.
-Print jobs can be canceled only on behalf of a user, using delegated permissions.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Stop-MgBetaPrintPrinterShareJobPrintJob](Stop-MgBetaPrintPrinterShareJobPrintJob.md)
-Invoke action cancelPrintJob
+{{ Fill in the Description }}
 
 ### [Stop-MgBetaPrintShareJob](Stop-MgBetaPrintShareJob.md)
-Cancel a print job.
-Print jobs can be canceled only on behalf of a user, using delegated permissions.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Stop-MgBetaPrintShareJobPrintJob](Stop-MgBetaPrintShareJobPrintJob.md)
-Invoke action cancelPrintJob
+{{ Fill in the Description }}
 
 ### [Update-MgBetaPrint](Update-MgBetaPrint.md)
-Update print
+{{ Fill in the Description }}
 
 ### [Update-MgBetaPrintConnector](Update-MgBetaPrintConnector.md)
-Update the properties of a printConnector object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaPrintOperation](Update-MgBetaPrintOperation.md)
-Update the navigation property operations in print
+{{ Fill in the Description }}
 
 ### [Update-MgBetaPrintPrinter](Update-MgBetaPrintPrinter.md)
-Update the properties of a printer object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaPrintPrinterJob](Update-MgBetaPrintPrinterJob.md)
-Update the navigation property jobs in print
+{{ Fill in the Description }}
 
 ### [Update-MgBetaPrintPrinterJobDocument](Update-MgBetaPrintPrinterJobDocument.md)
-Update the navigation property documents in print
+{{ Fill in the Description }}
 
 ### [Update-MgBetaPrintPrinterJobTask](Update-MgBetaPrintPrinterJobTask.md)
-Update the navigation property tasks in print
+{{ Fill in the Description }}
 
 ### [Update-MgBetaPrintPrinterShare](Update-MgBetaPrintPrinterShare.md)
-Update the navigation property printerShares in print
+{{ Fill in the Description }}
 
 ### [Update-MgBetaPrintPrinterShareAllowedUserMailboxSetting](Update-MgBetaPrintPrinterShareAllowedUserMailboxSetting.md)
-Update property mailboxSettings value.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaPrintPrinterShareJob](Update-MgBetaPrintPrinterShareJob.md)
-Update the navigation property jobs in print
+{{ Fill in the Description }}
 
 ### [Update-MgBetaPrintPrinterShareJobDocument](Update-MgBetaPrintPrinterShareJobDocument.md)
-Update the navigation property documents in print
+{{ Fill in the Description }}
 
 ### [Update-MgBetaPrintPrinterShareJobTask](Update-MgBetaPrintPrinterShareJobTask.md)
-Update the navigation property tasks in print
+{{ Fill in the Description }}
 
 ### [Update-MgBetaPrintPrinterTaskTrigger](Update-MgBetaPrintPrinterTaskTrigger.md)
-Update the navigation property taskTriggers in print
+{{ Fill in the Description }}
 
 ### [Update-MgBetaPrintService](Update-MgBetaPrintService.md)
-Update the navigation property services in print
+{{ Fill in the Description }}
 
 ### [Update-MgBetaPrintServiceEndpoint](Update-MgBetaPrintServiceEndpoint.md)
-Update the navigation property endpoints in print
+{{ Fill in the Description }}
 
 ### [Update-MgBetaPrintShare](Update-MgBetaPrintShare.md)
-Update the properties of a printer share.
-This method can be used to swap printers.
-For example, if a physical printer device breaks, an administrator can register a new printer device and update this printerShare to point to the new printer without requiring users to take any action.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaPrintShareAllowedUserMailboxSetting](Update-MgBetaPrintShareAllowedUserMailboxSetting.md)
-Update property mailboxSettings value.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaPrintShareJob](Update-MgBetaPrintShareJob.md)
-Update the navigation property jobs in print
+{{ Fill in the Description }}
 
 ### [Update-MgBetaPrintShareJobDocument](Update-MgBetaPrintShareJobDocument.md)
-Update the navigation property documents in print
+{{ Fill in the Description }}
 
 ### [Update-MgBetaPrintShareJobTask](Update-MgBetaPrintShareJobTask.md)
-Update the navigation property tasks in print
+{{ Fill in the Description }}
 
 ### [Update-MgBetaPrintTaskDefinition](Update-MgBetaPrintTaskDefinition.md)
-Update a task definition.
-For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaPrintTaskDefinitionTask](Update-MgBetaPrintTaskDefinitionTask.md)
-Update a print task.
-For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 

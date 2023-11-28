@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamchannelsharedwithteam
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to sharedWithTeams for groups
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamChannelSharedWithTeam?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -46,17 +43,13 @@ New-MgBetaGroupTeamChannelSharedWithTeam -InputObject <ITeamsIdentity>
 Create new navigation property to sharedWithTeams for groups
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 Get-MgBetaTeamChannelSharedWithTeam -TeamId $teamId -ChannelId $channelId
-```
-This example shows how to use the New-MgBetaBetaGroupTeamChannelSharedWithTeam Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -15061,7 +15054,6 @@ This is the URL that you get when you right-click a team in the Microsoft Teams 
 This URL should be treated as an opaque blob, and not parsed.
 
 ## RELATED LINKS
-[New-MgGroupTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamChannelSharedWithTeam?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamchannelsharedwithteam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamchannelsharedwithteam)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetasubscribedsku
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update entity in subscribedSkus
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSubscribedSku](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgSubscribedSku?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,17 +46,13 @@ Update-MgBetaSubscribedSku -InputObject <IIdentityDirectoryManagementIdentity>
 Update entity in subscribedSkus
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+```
 
 Get-MgBetaSubscribedSku -SubscribedSkuId $subscribedSkuId
-```
-This example shows how to use the Update-MgBetaBetaSubscribedSku Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -362,11 +355,11 @@ Possible values are: Enabled, Warning, Suspended, Deleted, LockedOut.
   \[PrepaidUnits \<IMicrosoftGraphLicenseUnitsDetail\>\]: licenseUnitsDetail
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[Enabled \<Int32?\>\]: The number of units that are enabled for the active subscription of the service SKU.
-    \[LockedOut \<Int32?\>\]: The number of units that are locked out because the customer cancelled their subscription of the service SKU.
-    \[Suspended \<Int32?\>\]: The number of units that are suspended because the subscription of the service SKU has been cancelled.
-The units cannot be assigned but can still be reactivated before they are deleted.
+    \[LockedOut \<Int32?\>\]: The number of units that are locked out because the customer canceled their subscription of the service SKU.
+    \[Suspended \<Int32?\>\]: The number of units that are suspended because the subscription of the service SKU has been canceled.
+The units can't be assigned but can still be reactivated before they're deleted.
     \[Warning \<Int32?\>\]: The number of units that are in warning status.
-When the subscription of the service SKU has expired, the customer has a grace period to renew their subscription before it is cancelled (moved to a suspended state).
+When the subscription of the service SKU has expired, the customer has a grace period to renew their subscription before it's canceled (moved to a suspended state).
   \[ServicePlans \<IMicrosoftGraphServicePlanInfo\[\]\>\]: Information about the service plans that are available with the SKU.
 Not nullable
     \[AppliesTo \<String\>\]: The object the service plan can be assigned to.
@@ -391,6 +384,7 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[ContractId \<String\>\]: The unique identifier of contract
   \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
   \[DeviceId \<String\>\]: The unique identifier of device
+  \[DeviceLocalCredentialInfoId \<String\>\]: The unique identifier of deviceLocalCredentialInfo
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[DirectoryRoleId \<String\>\]: The unique identifier of directoryRole
   \[DirectoryRoleTemplateId \<String\>\]: The unique identifier of directoryRoleTemplate
@@ -427,11 +421,11 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 PREPAIDUNITS \<IMicrosoftGraphLicenseUnitsDetail\>: licenseUnitsDetail
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[Enabled \<Int32?\>\]: The number of units that are enabled for the active subscription of the service SKU.
-  \[LockedOut \<Int32?\>\]: The number of units that are locked out because the customer cancelled their subscription of the service SKU.
-  \[Suspended \<Int32?\>\]: The number of units that are suspended because the subscription of the service SKU has been cancelled.
-The units cannot be assigned but can still be reactivated before they are deleted.
+  \[LockedOut \<Int32?\>\]: The number of units that are locked out because the customer canceled their subscription of the service SKU.
+  \[Suspended \<Int32?\>\]: The number of units that are suspended because the subscription of the service SKU has been canceled.
+The units can't be assigned but can still be reactivated before they're deleted.
   \[Warning \<Int32?\>\]: The number of units that are in warning status.
-When the subscription of the service SKU has expired, the customer has a grace period to renew their subscription before it is cancelled (moved to a suspended state).
+When the subscription of the service SKU has expired, the customer has a grace period to renew their subscription before it's canceled (moved to a suspended state).
 
 SERVICEPLANS \<IMicrosoftGraphServicePlanInfo\[\]\>: Information about the service plans that are available with the SKU.
 Not nullable
@@ -443,7 +437,6 @@ The possible values are:Success - Service is fully provisioned.Disabled - Servic
   \[ServicePlanName \<String\>\]: The name of the service plan.
 
 ## RELATED LINKS
-[Update-MgSubscribedSku](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgSubscribedSku?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetasubscribedsku](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetasubscribedsku)
 

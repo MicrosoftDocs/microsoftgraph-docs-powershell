@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mgteamactivitynotification
@@ -11,9 +11,6 @@ schema: 2.0.0
 Send an activity feed notification in the scope of a team.
 For more details about sending notifications and the requirements for doing so, see\nsending Teams activity notifications.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Send-MgBetaTeamActivityNotification](/powershell/module/Microsoft.Graph.Beta.Teams/Send-MgBetaTeamActivityNotification?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -53,11 +50,11 @@ For more details about sending notifications and the requirements for doing so, 
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Notify a user about pending finance approval requests
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	topic = @{
@@ -82,14 +79,10 @@ $params = @{
 
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will notify a user about pending finance approval requests
-
-### Example 2: Notify a user about a channel tab
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	topic = @{
@@ -118,14 +111,10 @@ $params = @{
 
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
+### EXAMPLE 3
 ```
-This example will notify a user about a channel tab
-
-### Example 3: Notify a user about a channel tab using user principal name
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	topic = @{
@@ -154,14 +143,10 @@ $params = @{
 
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
+### EXAMPLE 4
 ```
-This example will notify a user about a channel tab using user principal name
-
-### Example 4: Notify a user about an event using custom topic
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	topic = @{
@@ -187,14 +172,10 @@ $params = @{
 
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
+### EXAMPLE 5
 ```
-This example will notify a user about an event using custom topic
-
-### Example 5: Notify the team members about pending finance approval requests
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	topic = @{
@@ -219,14 +200,10 @@ $params = @{
 
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
+### EXAMPLE 6
 ```
-This example will notify the team members about pending finance approval requests
-
-### Example 6: Notify the channel members about pending finance approval requests
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	topic = @{
@@ -252,14 +229,10 @@ $params = @{
 
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
+### EXAMPLE 7
 ```
-This example will notify the channel members about pending finance approval requests
-
-### Example 7: Notify about pending finance approval requests in channel message reply location
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	topic = @{
@@ -287,10 +260,6 @@ $params = @{
 }
 
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
-
-```
-This example will notify about pending finance approval requests in channel message reply location
-
 
 ## PARAMETERS
 
@@ -586,7 +555,6 @@ If the value is text, this must be a plain text value.
 Optional when source is entityUrl; required when source is text.
 
 ## RELATED LINKS
-[Send-MgBetaTeamActivityNotification](/powershell/module/Microsoft.Graph.Beta.Teams/Send-MgBetaTeamActivityNotification?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mgteamactivitynotification](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mgteamactivitynotification)
 

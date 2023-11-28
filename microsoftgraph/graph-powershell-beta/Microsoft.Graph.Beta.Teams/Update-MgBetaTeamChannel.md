@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamchannel
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of the specified channel.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgTeamChannel](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamChannel?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -57,11 +54,11 @@ Update the properties of the specified channel.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	displayName = "UpdateChannelModeration"
@@ -75,10 +72,6 @@ $params = @{
 }
 
 Update-MgBetaTeamChannel -TeamId $teamId -ChannelId $channelId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaTeamChannel Cmdlet.
-
 
 ## PARAMETERS
 
@@ -22830,7 +22823,6 @@ For example, if a user changes their display name, the API might show the new va
 Read only.
 
 ## RELATED LINKS
-[Update-MgTeamChannel](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamChannel?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamchannel)
 

@@ -1,46 +1,46 @@
----
+﻿---
 Module Name: Microsoft.Graph.CrossDeviceExperiences
-Module Guid: fe1fceeb-d299-4da5-ba1b-57d0f5ee383e
-Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences
-Help Version: 1.0.0.0
+Module Guid: 75b297a1-ea4a-42b4-8a11-eb7999e23bae
+Download Help Link: {{ Update Download Link }}
+Help Version: {{ Please enter version of help manually (X.X.X.X) format }}
 Locale: en-US
 ---
 
 # Microsoft.Graph.CrossDeviceExperiences Module
 ## Description
-Microsoft Graph PowerShell Cmdlets
+{{ Fill in the Description }}
 
 ## Microsoft.Graph.CrossDeviceExperiences Cmdlets
+### [Get-MgUserActivity](Get-MgUserActivity.md)
+{{ Fill in the Description }}
+
 ### [Get-MgUserActivityCount](Get-MgUserActivityCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgUserActivityHistoryItem](Get-MgUserActivityHistoryItem.md)
-Optional.
-NavigationProperty/Containment; navigation property to the activity's historyItems.
+{{ Fill in the Description }}
 
 ### [Get-MgUserActivityHistoryItemActivity](Get-MgUserActivityHistoryItemActivity.md)
-Optional.
-NavigationProperty/Containment; navigation property to the associated activity.
+{{ Fill in the Description }}
 
 ### [Get-MgUserActivityHistoryItemCount](Get-MgUserActivityHistoryItemCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [New-MgUserActivity](New-MgUserActivity.md)
-Create new navigation property to activities for users
+{{ Fill in the Description }}
 
 ### [New-MgUserActivityHistoryItem](New-MgUserActivityHistoryItem.md)
-Create new navigation property to historyItems for users
+{{ Fill in the Description }}
 
-### [New-MgUserActivityHistoryItem](New-MgUserActivityHistoryItem.md)
-Create new navigation property to historyItems for users
+### [Remove-MgUserActivity](Remove-MgUserActivity.md)
+{{ Fill in the Description }}
 
 ### [Remove-MgUserActivityHistoryItem](Remove-MgUserActivityHistoryItem.md)
-Delete navigation property historyItems for users
+{{ Fill in the Description }}
 
 ### [Update-MgUserActivity](Update-MgUserActivity.md)
-Update the navigation property activities in users
+{{ Fill in the Description }}
 
 ### [Update-MgUserActivityHistoryItem](Update-MgUserActivityHistoryItem.md)
-Delete an existing history item for an existing user activity.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementwindowsinformationprotectiondeviceregistration
@@ -28,6 +28,18 @@ New-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistration
 
 ## DESCRIPTION
 Create new navigation property to windowsInformationProtectionDeviceRegistrations for deviceAppManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -209,25 +221,23 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionDeviceRegistration
 ## NOTES
-
-ALIASES
-
-New-MgBetaDeviceAppMgtWindowInformationProtectionDeviceRegistration
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`BODYPARAMETER <IMicrosoftGraphWindowsInformationProtectionDeviceRegistration>`: Represents device registration records for Bring-Your-Own-Device(BYOD) Windows devices.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[DeviceMacAddress <String>]`: Device Mac address.
-  - `[DeviceName <String>]`: Device name.
-  - `[DeviceRegistrationId <String>]`: Device identifier for this device registration record.
-  - `[DeviceType <String>]`: Device type, for example, Windows laptop VS Windows phone.
-  - `[LastCheckInDateTime <DateTime?>]`: Last checkin time of the device.
-  - `[UserId <String>]`: UserId associated with this device registration record.
+BODYPARAMETER \<IMicrosoftGraphWindowsInformationProtectionDeviceRegistration\>: Represents device registration records for Bring-Your-Own-Device(BYOD) Windows devices.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[DeviceMacAddress \<String\>\]: Device Mac address.
+  \[DeviceName \<String\>\]: Device name.
+  \[DeviceRegistrationId \<String\>\]: Device identifier for this device registration record.
+  \[DeviceType \<String\>\]: Device type, for example, Windows laptop VS Windows phone.
+  \[LastCheckInDateTime \<DateTime?\>\]: Last checkin time of the device.
+  \[UserId \<String\>\]: UserId associated with this device registration record.
 
 ## RELATED LINKS
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementwindowsinformationprotectiondeviceregistration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementwindowsinformationprotectiondeviceregistration)
 

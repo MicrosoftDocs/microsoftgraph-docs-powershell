@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementauditevent
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property auditEvents in deviceManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementAuditEvent](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementAuditEvent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -48,6 +45,22 @@ Update-MgBetaDeviceManagementAuditEvent -InputObject <IDeviceManagementAdministr
 
 ## DESCRIPTION
 Update the navigation property auditEvents in deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -338,138 +351,137 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuditEvent
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+ACTOR \<IMicrosoftGraphAuditActor\>: A class containing the properties for Audit Actor.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ApplicationDisplayName \<String\>\]: Name of the Application.
+  \[ApplicationId \<String\>\]: AAD Application Id.
+  \[AuditActorType \<String\>\]: Actor Type.
+  \[IPAddress \<String\>\]: IPAddress.
+  \[RemoteTenantId \<String\>\]: Remote Tenant Id
+  \[RemoteUserId \<String\>\]: Remote User Id
+  \[ServicePrincipalName \<String\>\]: Service Principal Name (SPN).
+  \[Type \<String\>\]: Actor Type.
+  \[UserId \<String\>\]: User Id.
+  \[UserPermissions \<String\[\]\>\]: List of user permissions when the audit was performed.
+  \[UserPrincipalName \<String\>\]: User Principal Name (UPN).
+  \[UserRoleScopeTags \<IMicrosoftGraphRoleScopeTagInfo\[\]\>\]: List of user scope tags when the audit was performed.
+    \[DisplayName \<String\>\]: Scope Tag Display name.
+    \[RoleScopeTagId \<String\>\]: Scope Tag Id.
 
-`ACTOR <IMicrosoftGraphAuditActor>`: A class containing the properties for Audit Actor.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ApplicationDisplayName <String>]`: Name of the Application.
-  - `[ApplicationId <String>]`: AAD Application Id.
-  - `[AuditActorType <String>]`: Actor Type.
-  - `[IPAddress <String>]`: IPAddress.
-  - `[RemoteTenantId <String>]`: Remote Tenant Id
-  - `[RemoteUserId <String>]`: Remote User Id
-  - `[ServicePrincipalName <String>]`: Service Principal Name (SPN).
-  - `[Type <String>]`: Actor Type.
-  - `[UserId <String>]`: User Id.
-  - `[UserPermissions <String[]>]`: List of user permissions when the audit was performed.
-  - `[UserPrincipalName <String>]`: User Principal Name (UPN).
-  - `[UserRoleScopeTags <IMicrosoftGraphRoleScopeTagInfo[]>]`: List of user scope tags when the audit was performed.
-    - `[DisplayName <String>]`: Scope Tag Display name.
-    - `[RoleScopeTagId <String>]`: Scope Tag Id.
+BODYPARAMETER \<IMicrosoftGraphAuditEvent\>: A class containing the properties for Audit Event.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[Activity \<String\>\]: Friendly name of the activity.
+  \[ActivityDateTime \<DateTime?\>\]: The date time in UTC when the activity was performed.
+  \[ActivityOperationType \<String\>\]: The HTTP operation type of the activity.
+  \[ActivityResult \<String\>\]: The result of the activity.
+  \[ActivityType \<String\>\]: The type of activity that was being performed.
+  \[Actor \<IMicrosoftGraphAuditActor\>\]: A class containing the properties for Audit Actor.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[ApplicationDisplayName \<String\>\]: Name of the Application.
+    \[ApplicationId \<String\>\]: AAD Application Id.
+    \[AuditActorType \<String\>\]: Actor Type.
+    \[IPAddress \<String\>\]: IPAddress.
+    \[RemoteTenantId \<String\>\]: Remote Tenant Id
+    \[RemoteUserId \<String\>\]: Remote User Id
+    \[ServicePrincipalName \<String\>\]: Service Principal Name (SPN).
+    \[Type \<String\>\]: Actor Type.
+    \[UserId \<String\>\]: User Id.
+    \[UserPermissions \<String\[\]\>\]: List of user permissions when the audit was performed.
+    \[UserPrincipalName \<String\>\]: User Principal Name (UPN).
+    \[UserRoleScopeTags \<IMicrosoftGraphRoleScopeTagInfo\[\]\>\]: List of user scope tags when the audit was performed.
+      \[DisplayName \<String\>\]: Scope Tag Display name.
+      \[RoleScopeTagId \<String\>\]: Scope Tag Id.
+  \[Category \<String\>\]: Audit category.
+  \[ComponentName \<String\>\]: Component name.
+  \[CorrelationId \<String\>\]: The client request Id that is used to correlate activity within the system.
+  \[DisplayName \<String\>\]: Event display name.
+  \[Resources \<IMicrosoftGraphAuditResource\[\]\>\]: Resources being modified.
+    \[AuditResourceType \<String\>\]: Audit resource's type.
+    \[DisplayName \<String\>\]: Display name.
+    \[ModifiedProperties \<IMicrosoftGraphAuditProperty\[\]\>\]: List of modified properties.
+      \[DisplayName \<String\>\]: Display name.
+      \[NewValue \<String\>\]: New value.
+      \[OldValue \<String\>\]: Old value.
+    \[ResourceId \<String\>\]: Audit resource's Id.
+    \[Type \<String\>\]: Audit resource's type.
 
-`BODYPARAMETER <IMicrosoftGraphAuditEvent>`: A class containing the properties for Audit Event.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Activity <String>]`: Friendly name of the activity.
-  - `[ActivityDateTime <DateTime?>]`: The date time in UTC when the activity was performed.
-  - `[ActivityOperationType <String>]`: The HTTP operation type of the activity.
-  - `[ActivityResult <String>]`: The result of the activity.
-  - `[ActivityType <String>]`: The type of activity that was being performed.
-  - `[Actor <IMicrosoftGraphAuditActor>]`: A class containing the properties for Audit Actor.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ApplicationDisplayName <String>]`: Name of the Application.
-    - `[ApplicationId <String>]`: AAD Application Id.
-    - `[AuditActorType <String>]`: Actor Type.
-    - `[IPAddress <String>]`: IPAddress.
-    - `[RemoteTenantId <String>]`: Remote Tenant Id
-    - `[RemoteUserId <String>]`: Remote User Id
-    - `[ServicePrincipalName <String>]`: Service Principal Name (SPN).
-    - `[Type <String>]`: Actor Type.
-    - `[UserId <String>]`: User Id.
-    - `[UserPermissions <String[]>]`: List of user permissions when the audit was performed.
-    - `[UserPrincipalName <String>]`: User Principal Name (UPN).
-    - `[UserRoleScopeTags <IMicrosoftGraphRoleScopeTagInfo[]>]`: List of user scope tags when the audit was performed.
-      - `[DisplayName <String>]`: Scope Tag Display name.
-      - `[RoleScopeTagId <String>]`: Scope Tag Id.
-  - `[Category <String>]`: Audit category.
-  - `[ComponentName <String>]`: Component name.
-  - `[CorrelationId <String>]`: The client request Id that is used to correlate activity within the system.
-  - `[DisplayName <String>]`: Event display name.
-  - `[Resources <IMicrosoftGraphAuditResource[]>]`: Resources being modified.
-    - `[AuditResourceType <String>]`: Audit resource's type.
-    - `[DisplayName <String>]`: Display name.
-    - `[ModifiedProperties <IMicrosoftGraphAuditProperty[]>]`: List of modified properties.
-      - `[DisplayName <String>]`: Display name.
-      - `[NewValue <String>]`: New value.
-      - `[OldValue <String>]`: Old value.
-    - `[ResourceId <String>]`: Audit resource's Id.
-    - `[Type <String>]`: Audit resource's type.
+INPUTOBJECT \<IDeviceManagementAdministrationIdentity\>: Identity Parameter
+  \[AuditEventId \<String\>\]: The unique identifier of auditEvent
+  \[CartToClassAssociationId \<String\>\]: The unique identifier of cartToClassAssociation
+  \[CloudPcAuditEventId \<String\>\]: The unique identifier of cloudPcAuditEvent
+  \[CloudPcBulkActionId \<String\>\]: The unique identifier of cloudPcBulkAction
+  \[CloudPcDeviceImageId \<String\>\]: The unique identifier of cloudPcDeviceImage
+  \[CloudPcExportJobId \<String\>\]: The unique identifier of cloudPcExportJob
+  \[CloudPcExternalPartnerSettingId \<String\>\]: The unique identifier of cloudPcExternalPartnerSetting
+  \[CloudPcFrontLineServicePlanId \<String\>\]: The unique identifier of cloudPcFrontLineServicePlan
+  \[CloudPcGalleryImageId \<String\>\]: The unique identifier of cloudPcGalleryImage
+  \[CloudPcId \<String\>\]: The unique identifier of cloudPC
+  \[CloudPcOnPremisesConnectionId \<String\>\]: The unique identifier of cloudPcOnPremisesConnection
+  \[CloudPcProvisioningPolicyAssignmentId \<String\>\]: The unique identifier of cloudPcProvisioningPolicyAssignment
+  \[CloudPcProvisioningPolicyId \<String\>\]: The unique identifier of cloudPcProvisioningPolicy
+  \[CloudPcServicePlanId \<String\>\]: The unique identifier of cloudPcServicePlan
+  \[CloudPcSharedUseServicePlanId \<String\>\]: The unique identifier of cloudPcSharedUseServicePlan
+  \[CloudPcSnapshotId \<String\>\]: The unique identifier of cloudPcSnapshot
+  \[CloudPcSupportedRegionId \<String\>\]: The unique identifier of cloudPcSupportedRegion
+  \[CloudPcUserSettingAssignmentId \<String\>\]: The unique identifier of cloudPcUserSettingAssignment
+  \[CloudPcUserSettingId \<String\>\]: The unique identifier of cloudPcUserSetting
+  \[ComanagementEligibleDeviceId \<String\>\]: The unique identifier of comanagementEligibleDevice
+  \[ComplianceManagementPartnerId \<String\>\]: The unique identifier of complianceManagementPartner
+  \[DeviceAndAppManagementRoleAssignmentId \<String\>\]: The unique identifier of deviceAndAppManagementRoleAssignment
+  \[DeviceManagementDomainJoinConnectorId \<String\>\]: The unique identifier of deviceManagementDomainJoinConnector
+  \[DeviceManagementExchangeConnectorId \<String\>\]: The unique identifier of deviceManagementExchangeConnector
+  \[DeviceManagementExchangeOnPremisesPolicyId \<String\>\]: The unique identifier of deviceManagementExchangeOnPremisesPolicy
+  \[DeviceManagementPartnerId \<String\>\]: The unique identifier of deviceManagementPartner
+  \[GroupPolicyCategoryId \<String\>\]: The unique identifier of groupPolicyCategory
+  \[GroupPolicyCategoryId1 \<String\>\]: The unique identifier of groupPolicyCategory
+  \[GroupPolicyDefinitionFileId \<String\>\]: The unique identifier of groupPolicyDefinitionFile
+  \[GroupPolicyDefinitionId \<String\>\]: The unique identifier of groupPolicyDefinition
+  \[GroupPolicyMigrationReportId \<String\>\]: The unique identifier of groupPolicyMigrationReport
+  \[GroupPolicyObjectFileId \<String\>\]: The unique identifier of groupPolicyObjectFile
+  \[GroupPolicyOperationId \<String\>\]: The unique identifier of groupPolicyOperation
+  \[GroupPolicyPresentationId \<String\>\]: The unique identifier of groupPolicyPresentation
+  \[GroupPolicySettingMappingId \<String\>\]: The unique identifier of groupPolicySettingMapping
+  \[GroupPolicyUploadedDefinitionFileId \<String\>\]: The unique identifier of groupPolicyUploadedDefinitionFile
+  \[IntuneBrandingProfileAssignmentId \<String\>\]: The unique identifier of intuneBrandingProfileAssignment
+  \[IntuneBrandingProfileId \<String\>\]: The unique identifier of intuneBrandingProfile
+  \[IosUpdateDeviceStatusId \<String\>\]: The unique identifier of iosUpdateDeviceStatus
+  \[ManagedAllDeviceCertificateStateId \<String\>\]: The unique identifier of managedAllDeviceCertificateState
+  \[MobileThreatDefenseConnectorId \<String\>\]: The unique identifier of mobileThreatDefenseConnector
+  \[NdesConnectorId \<String\>\]: The unique identifier of ndesConnector
+  \[RemoteAssistancePartnerId \<String\>\]: The unique identifier of remoteAssistancePartner
+  \[ResourceOperationId \<String\>\]: The unique identifier of resourceOperation
+  \[RestrictedAppsViolationId \<String\>\]: The unique identifier of restrictedAppsViolation
+  \[RoleAssignmentId \<String\>\]: The unique identifier of roleAssignment
+  \[RoleDefinitionId \<String\>\]: The unique identifier of roleDefinition
+  \[RoleScopeTagAutoAssignmentId \<String\>\]: The unique identifier of roleScopeTagAutoAssignment
+  \[RoleScopeTagId \<String\>\]: The unique identifier of roleScopeTag
+  \[TelecomExpenseManagementPartnerId \<String\>\]: The unique identifier of telecomExpenseManagementPartner
+  \[TermsAndConditionsAcceptanceStatusId \<String\>\]: The unique identifier of termsAndConditionsAcceptanceStatus
+  \[TermsAndConditionsAssignmentId \<String\>\]: The unique identifier of termsAndConditionsAssignment
+  \[TermsAndConditionsGroupAssignmentId \<String\>\]: The unique identifier of termsAndConditionsGroupAssignment
+  \[TermsAndConditionsId \<String\>\]: The unique identifier of termsAndConditions
+  \[UnsupportedGroupPolicyExtensionId \<String\>\]: The unique identifier of unsupportedGroupPolicyExtension
+  \[UserId \<String\>\]: The unique identifier of user
+  \[UserPfxCertificateId \<String\>\]: The unique identifier of userPFXCertificate
 
-`INPUTOBJECT <IDeviceManagementAdministrationIdentity>`: Identity Parameter
-  - `[AuditEventId <String>]`: The unique identifier of auditEvent
-  - `[CartToClassAssociationId <String>]`: The unique identifier of cartToClassAssociation
-  - `[CloudPcAuditEventId <String>]`: The unique identifier of cloudPcAuditEvent
-  - `[CloudPcBulkActionId <String>]`: The unique identifier of cloudPcBulkAction
-  - `[CloudPcDeviceImageId <String>]`: The unique identifier of cloudPcDeviceImage
-  - `[CloudPcExportJobId <String>]`: The unique identifier of cloudPcExportJob
-  - `[CloudPcExternalPartnerSettingId <String>]`: The unique identifier of cloudPcExternalPartnerSetting
-  - `[CloudPcFrontLineServicePlanId <String>]`: The unique identifier of cloudPcFrontLineServicePlan
-  - `[CloudPcGalleryImageId <String>]`: The unique identifier of cloudPcGalleryImage
-  - `[CloudPcId <String>]`: The unique identifier of cloudPC
-  - `[CloudPcOnPremisesConnectionId <String>]`: The unique identifier of cloudPcOnPremisesConnection
-  - `[CloudPcProvisioningPolicyAssignmentId <String>]`: The unique identifier of cloudPcProvisioningPolicyAssignment
-  - `[CloudPcProvisioningPolicyId <String>]`: The unique identifier of cloudPcProvisioningPolicy
-  - `[CloudPcServicePlanId <String>]`: The unique identifier of cloudPcServicePlan
-  - `[CloudPcSharedUseServicePlanId <String>]`: The unique identifier of cloudPcSharedUseServicePlan
-  - `[CloudPcSnapshotId <String>]`: The unique identifier of cloudPcSnapshot
-  - `[CloudPcSupportedRegionId <String>]`: The unique identifier of cloudPcSupportedRegion
-  - `[CloudPcUserSettingAssignmentId <String>]`: The unique identifier of cloudPcUserSettingAssignment
-  - `[CloudPcUserSettingId <String>]`: The unique identifier of cloudPcUserSetting
-  - `[ComanagementEligibleDeviceId <String>]`: The unique identifier of comanagementEligibleDevice
-  - `[ComplianceManagementPartnerId <String>]`: The unique identifier of complianceManagementPartner
-  - `[DeviceAndAppManagementRoleAssignmentId <String>]`: The unique identifier of deviceAndAppManagementRoleAssignment
-  - `[DeviceManagementDomainJoinConnectorId <String>]`: The unique identifier of deviceManagementDomainJoinConnector
-  - `[DeviceManagementExchangeConnectorId <String>]`: The unique identifier of deviceManagementExchangeConnector
-  - `[DeviceManagementExchangeOnPremisesPolicyId <String>]`: The unique identifier of deviceManagementExchangeOnPremisesPolicy
-  - `[DeviceManagementPartnerId <String>]`: The unique identifier of deviceManagementPartner
-  - `[GroupPolicyCategoryId <String>]`: The unique identifier of groupPolicyCategory
-  - `[GroupPolicyCategoryId1 <String>]`: The unique identifier of groupPolicyCategory
-  - `[GroupPolicyDefinitionFileId <String>]`: The unique identifier of groupPolicyDefinitionFile
-  - `[GroupPolicyDefinitionId <String>]`: The unique identifier of groupPolicyDefinition
-  - `[GroupPolicyMigrationReportId <String>]`: The unique identifier of groupPolicyMigrationReport
-  - `[GroupPolicyObjectFileId <String>]`: The unique identifier of groupPolicyObjectFile
-  - `[GroupPolicyOperationId <String>]`: The unique identifier of groupPolicyOperation
-  - `[GroupPolicyPresentationId <String>]`: The unique identifier of groupPolicyPresentation
-  - `[GroupPolicySettingMappingId <String>]`: The unique identifier of groupPolicySettingMapping
-  - `[GroupPolicyUploadedDefinitionFileId <String>]`: The unique identifier of groupPolicyUploadedDefinitionFile
-  - `[IntuneBrandingProfileAssignmentId <String>]`: The unique identifier of intuneBrandingProfileAssignment
-  - `[IntuneBrandingProfileId <String>]`: The unique identifier of intuneBrandingProfile
-  - `[IosUpdateDeviceStatusId <String>]`: The unique identifier of iosUpdateDeviceStatus
-  - `[ManagedAllDeviceCertificateStateId <String>]`: The unique identifier of managedAllDeviceCertificateState
-  - `[MobileThreatDefenseConnectorId <String>]`: The unique identifier of mobileThreatDefenseConnector
-  - `[NdesConnectorId <String>]`: The unique identifier of ndesConnector
-  - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
-  - `[ResourceOperationId <String>]`: The unique identifier of resourceOperation
-  - `[RestrictedAppsViolationId <String>]`: The unique identifier of restrictedAppsViolation
-  - `[RoleAssignmentId <String>]`: The unique identifier of roleAssignment
-  - `[RoleDefinitionId <String>]`: The unique identifier of roleDefinition
-  - `[RoleScopeTagAutoAssignmentId <String>]`: The unique identifier of roleScopeTagAutoAssignment
-  - `[RoleScopeTagId <String>]`: The unique identifier of roleScopeTag
-  - `[TelecomExpenseManagementPartnerId <String>]`: The unique identifier of telecomExpenseManagementPartner
-  - `[TermsAndConditionsAcceptanceStatusId <String>]`: The unique identifier of termsAndConditionsAcceptanceStatus
-  - `[TermsAndConditionsAssignmentId <String>]`: The unique identifier of termsAndConditionsAssignment
-  - `[TermsAndConditionsGroupAssignmentId <String>]`: The unique identifier of termsAndConditionsGroupAssignment
-  - `[TermsAndConditionsId <String>]`: The unique identifier of termsAndConditions
-  - `[UnsupportedGroupPolicyExtensionId <String>]`: The unique identifier of unsupportedGroupPolicyExtension
-  - `[UserId <String>]`: The unique identifier of user
-  - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
-
-`RESOURCES <IMicrosoftGraphAuditResource[]>`: Resources being modified.
-  - `[AuditResourceType <String>]`: Audit resource's type.
-  - `[DisplayName <String>]`: Display name.
-  - `[ModifiedProperties <IMicrosoftGraphAuditProperty[]>]`: List of modified properties.
-    - `[DisplayName <String>]`: Display name.
-    - `[NewValue <String>]`: New value.
-    - `[OldValue <String>]`: Old value.
-  - `[ResourceId <String>]`: Audit resource's Id.
-  - `[Type <String>]`: Audit resource's type.
+RESOURCES \<IMicrosoftGraphAuditResource\[\]\>: Resources being modified.
+  \[AuditResourceType \<String\>\]: Audit resource's type.
+  \[DisplayName \<String\>\]: Display name.
+  \[ModifiedProperties \<IMicrosoftGraphAuditProperty\[\]\>\]: List of modified properties.
+    \[DisplayName \<String\>\]: Display name.
+    \[NewValue \<String\>\]: New value.
+    \[OldValue \<String\>\]: Old value.
+  \[ResourceId \<String\>\]: Audit resource's Id.
+  \[Type \<String\>\]: Audit resource's type.
 
 ## RELATED LINKS
-[Update-MgDeviceManagementAuditEvent](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementAuditEvent?view=graph-powershell-1.0)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementauditevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementauditevent)
 

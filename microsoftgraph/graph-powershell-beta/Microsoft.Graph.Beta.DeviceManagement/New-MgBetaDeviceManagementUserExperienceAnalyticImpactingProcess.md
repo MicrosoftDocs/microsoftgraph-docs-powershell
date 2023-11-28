@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticimpactingprocess
@@ -28,6 +28,22 @@ New-MgBetaDeviceManagementUserExperienceAnalyticImpactingProcess
 
 ## DESCRIPTION
 Create new navigation property to userExperienceAnalyticsImpactingProcess for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -134,7 +150,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -210,23 +226,24 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsImpactingProcess
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsImpactingProcess>`: The user experience analytics top impacting process entity.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Category <String>]`: The category of impacting process.
-  - `[Description <String>]`: The description of process.
-  - `[DeviceId <String>]`: The unique identifier of the impacted device.
-  - `[ImpactValue <Double?>]`: The impact value of the process. Valid values 0 to 1.79769313486232E+308
-  - `[ProcessName <String>]`: The process name.
-  - `[Publisher <String>]`: The publisher of the process.
+BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsImpactingProcess\>: The user experience analytics top impacting process entity.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[Category \<String\>\]: The category of impacting process.
+  \[Description \<String\>\]: The description of process.
+  \[DeviceId \<String\>\]: The unique identifier of the impacted device.
+  \[ImpactValue \<Double?\>\]: The impact value of the process.
+Valid values 0 to 1.79769313486232E+308
+  \[ProcessName \<String\>\]: The process name.
+  \[Publisher \<String\>\]: The publisher of the process.
 
 ## RELATED LINKS
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticimpactingprocess](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticimpactingprocess)
 

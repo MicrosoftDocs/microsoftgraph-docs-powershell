@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/grant-mgbetagroupdriveitempermission
@@ -8,10 +8,8 @@ schema: 2.0.0
 # Grant-MgBetaGroupDriveItemPermission
 
 ## SYNOPSIS
-Grant users access to a link represented by a \[permission\]\[\].
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Grant-MgGroupDriveItemPermission](/powershell/module/Microsoft.Graph.Groups/Grant-MgGroupDriveItemPermission?view=graph-powershell-1.0)
+Grant users access to a link represented by a permission\]\[\].
+This API is available in the following \[national cloud deployments.
 
 ## SYNTAX
 
@@ -44,13 +42,15 @@ Grant-MgBetaGroupDriveItemPermission -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Grant users access to a link represented by a \[permission\]\[\].
+Grant users access to a link represented by a permission\]\[\].
+This API is available in the following \[national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Files
+```
 
 $params = @{
 	Recipients = @(
@@ -67,11 +67,6 @@ $params = @{
 }
 
 Grant-MgBetaSharePermission -SharedDriveItemId $sharedDriveItemId -BodyParameter $params
-```
-This example shows how to use the Grant-MgBetaGroupDriveItemPermission Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -319,7 +314,6 @@ security groups).
   \[ObjectId \<String\>\]: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
-[Grant-MgGroupDriveItemPermission](/powershell/module/Microsoft.Graph.Groups/Grant-MgGroupDriveItemPermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/grant-mgbetagroupdriveitempermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/grant-mgbetagroupdriveitempermission)
 

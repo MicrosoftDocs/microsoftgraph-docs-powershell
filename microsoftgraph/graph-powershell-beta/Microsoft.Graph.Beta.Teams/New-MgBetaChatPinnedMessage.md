@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachatpinnedmessage
@@ -11,9 +11,6 @@ schema: 2.0.0
 Pin a chat message in the specified chat.
 This API cannot create a new chat; you must use the list chats method to retrieve the ID of an existing chat before you can pin a chat message.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgChatPinnedMessage](/powershell/module/Microsoft.Graph.Teams/New-MgChatPinnedMessage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,21 +44,17 @@ This API cannot create a new chat; you must use the list chats method to retriev
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	"message@odata.bind" = "https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages/1616964509832"
 }
 
 New-MgBetaChatPinnedMessage -ChatId $chatId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaChatPinnedMessage Cmdlet.
-
 
 ## PARAMETERS
 
@@ -509,7 +502,6 @@ Only applies to channel chat messages, not chat messages in a chat.
 Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
-[New-MgChatPinnedMessage](/powershell/module/Microsoft.Graph.Teams/New-MgChatPinnedMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachatpinnedmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachatpinnedmessage)
 

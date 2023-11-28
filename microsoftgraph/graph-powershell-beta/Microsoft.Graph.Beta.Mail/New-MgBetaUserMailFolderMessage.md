@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfoldermessage
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Use this API to create a new Message in a mailfolder.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserMailFolderMessage](/powershell/module/Microsoft.Graph.Mail/New-MgUserMailFolderMessage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -77,14 +74,15 @@ Use this API to create a new Message in a mailfolder.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Mail
+```
 
 $params = @{
-	receivedDateTime = [System.DateTime]::Parse("2016-10-19T10:37:00Z")
-	sentDateTime = [System.DateTime]::Parse("2016-10-19T10:37:00Z")
+	receivedDateTime = \[System.DateTime\]::Parse("2016-10-19T10:37:00Z")
+	sentDateTime = \[System.DateTime\]::Parse("2016-10-19T10:37:00Z")
 	hasAttachments = $true
 	subject = "subject-value"
 	body = @{
@@ -96,11 +94,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserMailFolderMessage -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
-```
-This example shows how to use the New-MgBetaUserMailFolderMessage Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -1090,7 +1083,6 @@ UNIQUEBODY \<IMicrosoftGraphItemBody\>: itemBody
   \[ContentType \<String\>\]: bodyType
 
 ## RELATED LINKS
-[New-MgUserMailFolderMessage](/powershell/module/Microsoft.Graph.Mail/New-MgUserMailFolderMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfoldermessage)
 

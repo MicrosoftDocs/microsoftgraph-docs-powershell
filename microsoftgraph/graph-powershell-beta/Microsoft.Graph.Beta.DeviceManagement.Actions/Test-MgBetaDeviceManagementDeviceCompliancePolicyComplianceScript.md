@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/test-mgbetadevicemanagementdevicecompliancepolicycompliancescript
@@ -28,6 +28,22 @@ Test-MgBetaDeviceManagementDeviceCompliancePolicyComplianceScript
 
 ## DESCRIPTION
 Invoke action validateComplianceScript
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -119,25 +135,24 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceComplianceScriptValidationResult
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+BODYPARAMETER \<IPathsV2Sh76DevicemanagementDevicecompliancepoliciesMicrosoftGraphValidatecompliancescriptPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DeviceCompliancePolicyScript \<IMicrosoftGraphDeviceCompliancePolicyScript\>\]: deviceCompliancePolicyScript
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DeviceComplianceScriptId \<String\>\]: Device compliance script Id.
+    \[RulesContent \<Byte\[\]\>\]: Json of the rules.
 
-`BODYPARAMETER <IPathsV2Sh76DevicemanagementDevicecompliancepoliciesMicrosoftGraphValidatecompliancescriptPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DeviceCompliancePolicyScript <IMicrosoftGraphDeviceCompliancePolicyScript>]`: deviceCompliancePolicyScript
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DeviceComplianceScriptId <String>]`: Device compliance script Id.
-    - `[RulesContent <Byte[]>]`: Json of the rules.
-
-`DEVICECOMPLIANCEPOLICYSCRIPT <IMicrosoftGraphDeviceCompliancePolicyScript>`: deviceCompliancePolicyScript
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DeviceComplianceScriptId <String>]`: Device compliance script Id.
-  - `[RulesContent <Byte[]>]`: Json of the rules.
+DEVICECOMPLIANCEPOLICYSCRIPT \<IMicrosoftGraphDeviceCompliancePolicyScript\>: deviceCompliancePolicyScript
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DeviceComplianceScriptId \<String\>\]: Device compliance script Id.
+  \[RulesContent \<Byte\[\]\>\]: Json of the rules.
 
 ## RELATED LINKS
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/test-mgbetadevicemanagementdevicecompliancepolicycompliancescript](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/test-mgbetadevicemanagementdevicecompliancepolicycompliancescript)
 

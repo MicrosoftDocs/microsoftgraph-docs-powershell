@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 Module Guid: 45b83c44-a0bb-4061-8393-a4fa6ec7af48
 Download Help Link: {{ Update Download Link }}
@@ -44,7 +44,10 @@ Locale: en-US
 ### [Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlow](Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlow.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaIdentityAuthenticationEventFlowAttribute](Get-MgBetaIdentityAuthenticationEventFlowAttribute.md)
+### [Get-MgBetaIdentityAuthenticationEventFlowAsOnAttributeCollectionExternalUserSelfServiceSignUpAttribute](Get-MgBetaIdentityAuthenticationEventFlowAsOnAttributeCollectionExternalUserSelfServiceSignUpAttribute.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProvider](Get-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProvider.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaIdentityAuthenticationEventFlowAttributeCount](Get-MgBetaIdentityAuthenticationEventFlowAttributeCount.md)
@@ -54,9 +57,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaIdentityAuthenticationEventFlowCountAsExternalUserSelfServiceSignUpEventFlow](Get-MgBetaIdentityAuthenticationEventFlowCountAsExternalUserSelfServiceSignUpEventFlow.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaIdentityAuthenticationEventFlowIdentityProvider](Get-MgBetaIdentityAuthenticationEventFlowIdentityProvider.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaIdentityAuthenticationEventFlowIdentityProviderByRef](Get-MgBetaIdentityAuthenticationEventFlowIdentityProviderByRef.md)

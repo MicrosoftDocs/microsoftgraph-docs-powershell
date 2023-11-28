@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/grant-mgbetasitepermission
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Grant users access to a link represented by a permission\]\[\].
 This API is available in the following \[national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Grant-MgSitePermission](/powershell/module/Microsoft.Graph.Sites/Grant-MgSitePermission?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,10 +44,11 @@ Grant users access to a link represented by a permission\]\[\].
 This API is available in the following \[national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Files
+```
 
 $params = @{
 	Recipients = @(
@@ -67,11 +65,6 @@ $params = @{
 }
 
 Grant-MgBetaSharePermission -SharedDriveItemId $sharedDriveItemId -BodyParameter $params
-```
-This example shows how to use the Grant-MgBetaSitePermission Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -296,7 +289,6 @@ security groups).
   \[ObjectId \<String\>\]: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
-[Grant-MgSitePermission](/powershell/module/Microsoft.Graph.Sites/Grant-MgSitePermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/grant-mgbetasitepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/grant-mgbetasitepermission)
 

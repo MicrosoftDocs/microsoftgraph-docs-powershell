@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchat
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new chat object.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaChat](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChat?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -39,11 +36,11 @@ Create a new chat object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Create a one-on-one chat
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	chatType = "oneOnOne"
@@ -67,14 +64,10 @@ $params = @{
 
 New-MgChat -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will create a one-on-one chat
-
-### Example 2: Create a group chat
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	chatType = "group"
@@ -106,14 +99,10 @@ $params = @{
 
 New-MgChat -BodyParameter $params
 
+### EXAMPLE 3
 ```
-This example will create a group chat
-
-### Example 3: Create a one-on-one chat using user principal name
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	chatType = "oneOnOne"
@@ -137,14 +126,10 @@ $params = @{
 
 New-MgChat -BodyParameter $params
 
+### EXAMPLE 4
 ```
-This example will create a one-on-one chat using user principal name
-
-### Example 4: Create a group chat with tenant guest user
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	chatType = "group"
@@ -176,14 +161,10 @@ $params = @{
 
 New-MgChat -BodyParameter $params
 
+### EXAMPLE 5
 ```
-This example will create a group chat with tenant guest user
-
-### Example 5: Create a one-on-one chat with a federated user (outside of own organization)
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	chatType = "oneOnOne"
@@ -207,10 +188,6 @@ $params = @{
 }
 
 New-MgChat -BodyParameter $params
-
-```
-This example will create a one-on-one chat with a federated user (outside of own organization)
-
 
 ## PARAMETERS
 
@@ -1223,7 +1200,6 @@ VIEWPOINT \<IMicrosoftGraphChatViewpoint\>: chatViewpoint
   \[LastMessageReadDateTime \<DateTime?\>\]: Represents the dateTime up until which the current user has read chatMessages in a specific chat.
 
 ## RELATED LINKS
-[New-MgBetaChat](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChat?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchat](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchat)
 

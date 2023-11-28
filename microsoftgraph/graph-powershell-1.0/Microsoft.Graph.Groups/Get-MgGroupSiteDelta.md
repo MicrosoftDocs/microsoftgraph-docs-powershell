@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsitedelta
@@ -29,6 +29,16 @@ Get-MgGroupSiteDelta -InputObject <IGroupsIdentity> [-Filter <String>] [-Propert
 Invoke function delta
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -269,5 +279,4 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsitedelta](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsitedelta)
-
 

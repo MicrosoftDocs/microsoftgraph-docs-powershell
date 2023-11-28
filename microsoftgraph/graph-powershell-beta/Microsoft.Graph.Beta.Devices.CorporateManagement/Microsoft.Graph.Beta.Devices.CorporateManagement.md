@@ -1,2615 +1,2611 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-Module Guid: 64f2b81c-28b1-4238-9bed-7891ef25ab51
-Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement
-Help Version: 1.0.0.0
+Module Guid: ebbf4df4-1be0-458b-a73c-6204060e5c3e
+Download Help Link: {{ Update Download Link }}
+Help Version: {{ Please enter version of help manually (X.X.X.X) format }}
 Locale: en-US
 ---
 
 # Microsoft.Graph.Beta.Devices.CorporateManagement Module
 ## Description
-Microsoft Graph PowerShell Cmdlets
+{{ Fill in the Description }}
 
 ## Microsoft.Graph.Beta.Devices.CorporateManagement Cmdlets
 ### [Clear-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistration](Clear-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistration.md)
-Invoke action wipe
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagement](Get-MgBetaDeviceAppManagement.md)
-Get deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementAndroidManagedAppProtection](Get-MgBetaDeviceAppManagementAndroidManagedAppProtection.md)
-Android managed app policies.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionApp](Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionApp.md)
-List of apps to which the policy is deployed.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionAppCount](Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionAppCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionAssignment](Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionAssignment.md)
-Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionAssignmentCount](Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionCount](Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary](Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary.md)
-Navigation property to deployment summary of the configuration.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementDefaultManagedAppProtection](Get-MgBetaDeviceAppManagementDefaultManagedAppProtection.md)
-Default managed app policies.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementDefaultManagedAppProtectionApp](Get-MgBetaDeviceAppManagementDefaultManagedAppProtectionApp.md)
-List of apps to which the policy is deployed.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementDefaultManagedAppProtectionAppCount](Get-MgBetaDeviceAppManagementDefaultManagedAppProtectionAppCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementDefaultManagedAppProtectionCount](Get-MgBetaDeviceAppManagementDefaultManagedAppProtectionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementDefaultManagedAppProtectionDeploymentSummary](Get-MgBetaDeviceAppManagementDefaultManagedAppProtectionDeploymentSummary.md)
-Navigation property to deployment summary of the configuration.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementEnterpriseCodeSigningCertificate](Get-MgBetaDeviceAppManagementEnterpriseCodeSigningCertificate.md)
-The Windows Enterprise Code Signing Certificate.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementEnterpriseCodeSigningCertificateCount](Get-MgBetaDeviceAppManagementEnterpriseCodeSigningCertificateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfiguration](Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfiguration.md)
-The IOS Lob App Provisioning Configurations.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationAssignment](Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationAssignment.md)
-The associated group assignments for IosLobAppProvisioningConfiguration.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationAssignmentCount](Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationCount](Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationDeviceStatus](Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationDeviceStatus.md)
-The list of device installation states for this mobile app configuration.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationDeviceStatusCount](Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationDeviceStatusCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationGroupAssignment](Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationGroupAssignment.md)
-The associated group assignments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationGroupAssignmentCount](Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationGroupAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationUserStatus](Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationUserStatus.md)
-The list of user installation states for this mobile app configuration.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationUserStatusCount](Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationUserStatusCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementiOSManagedAppProtection](Get-MgBetaDeviceAppManagementiOSManagedAppProtection.md)
-iOS managed app policies.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementiOSManagedAppProtectionApp](Get-MgBetaDeviceAppManagementiOSManagedAppProtectionApp.md)
-List of apps to which the policy is deployed.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementiOSManagedAppProtectionAppCount](Get-MgBetaDeviceAppManagementiOSManagedAppProtectionAppCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignment](Get-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignment.md)
-Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignmentCount](Get-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementiOSManagedAppProtectionCount](Get-MgBetaDeviceAppManagementiOSManagedAppProtectionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementiOSManagedAppProtectionDeploymentSummary](Get-MgBetaDeviceAppManagementiOSManagedAppProtectionDeploymentSummary.md)
-Navigation property to deployment summary of the configuration.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementManagedAppPolicy](Get-MgBetaDeviceAppManagementManagedAppPolicy.md)
-Managed app policies.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementManagedAppPolicyCount](Get-MgBetaDeviceAppManagementManagedAppPolicyCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementManagedAppRegistration](Get-MgBetaDeviceAppManagementManagedAppRegistration.md)
-The managed app registrations.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementManagedAppRegistrationAppliedPolicy](Get-MgBetaDeviceAppManagementManagedAppRegistrationAppliedPolicy.md)
-Zero or more policys already applied on the registered app when it last synchronized with managment service.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementManagedAppRegistrationAppliedPolicyCount](Get-MgBetaDeviceAppManagementManagedAppRegistrationAppliedPolicyCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementManagedAppRegistrationCount](Get-MgBetaDeviceAppManagementManagedAppRegistrationCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicy](Get-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicy.md)
-Zero or more policies admin intended for the app as of now.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicyCount](Get-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicyCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementManagedAppRegistrationOperation](Get-MgBetaDeviceAppManagementManagedAppRegistrationOperation.md)
-Zero or more long running operations triggered on the app registration.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementManagedAppRegistrationOperationCount](Get-MgBetaDeviceAppManagementManagedAppRegistrationOperationCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementManagedAppRegistrationUserIdWithFlaggedAppRegistration](Get-MgBetaDeviceAppManagementManagedAppRegistrationUserIdWithFlaggedAppRegistration.md)
-Invoke function getUserIdsWithFlaggedAppRegistration
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementManagedAppStatus](Get-MgBetaDeviceAppManagementManagedAppStatus.md)
-The managed app statuses.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementManagedAppStatusCount](Get-MgBetaDeviceAppManagementManagedAppStatusCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementManagedEBook](Get-MgBetaDeviceAppManagementManagedEBook.md)
-The Managed eBook.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementManagedEBookAssignment](Get-MgBetaDeviceAppManagementManagedEBookAssignment.md)
-The list of assignments for this eBook.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementManagedEBookAssignmentCount](Get-MgBetaDeviceAppManagementManagedEBookAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementManagedEBookCategory](Get-MgBetaDeviceAppManagementManagedEBookCategory.md)
-The mobile eBook categories.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementManagedEBookCategoryCount](Get-MgBetaDeviceAppManagementManagedEBookCategoryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementManagedEBookCount](Get-MgBetaDeviceAppManagementManagedEBookCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementManagedEBookDeviceState](Get-MgBetaDeviceAppManagementManagedEBookDeviceState.md)
-The list of installation states for this eBook.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementManagedEBookDeviceStateCount](Get-MgBetaDeviceAppManagementManagedEBookDeviceStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementManagedEBookInstallSummary](Get-MgBetaDeviceAppManagementManagedEBookInstallSummary.md)
-Mobile App Install Summary.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementManagedEBookUserStateSummary](Get-MgBetaDeviceAppManagementManagedEBookUserStateSummary.md)
-The list of installation states for this eBook.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementManagedEBookUserStateSummaryCount](Get-MgBetaDeviceAppManagementManagedEBookUserStateSummaryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementManagedEBookUserStateSummaryDeviceState](Get-MgBetaDeviceAppManagementManagedEBookUserStateSummaryDeviceState.md)
-The install state of the eBook.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementManagedEBookUserStateSummaryDeviceStateCount](Get-MgBetaDeviceAppManagementManagedEBookUserStateSummaryDeviceStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy](Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy.md)
-Windows information protection for apps running on devices which are MDM enrolled.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment](Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment.md)
-Navigation property to list of security groups targeted for policy.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignmentCount](Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyCount](Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile](Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile.md)
-Another way to input exempt apps through xml files
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFileCount](Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFileCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile](Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
-Another way to input protected apps through xml files
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFileCount](Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFileCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileApp](Get-MgBetaDeviceAppManagementMobileApp.md)
-The mobile apps.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkApp](Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkApp.md)
-Get the item of type microsoft.graph.mobileApp as microsoft.graph.androidForWorkApp
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppAssignment.md)
-The list of group assignments for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppCategory.md)
-The list of categories for this app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppRelationship.md)
-List of relationships for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobApp](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobApp.md)
-Get the item of type microsoft.graph.mobileApp as microsoft.graph.androidLobApp
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppAssignment.md)
-The list of group assignments for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppCategory.md)
-The list of categories for this app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersion.md)
-The list of content versions for this app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp.md)
-The collection of contained apps in a MobileLobApp acting as a package.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile.md)
-The list of files for this app content version.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppRelationship.md)
-List of relationships for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreApp](Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreApp.md)
-Get the item of type microsoft.graph.mobileApp as microsoft.graph.androidManagedStoreApp
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppAssignment.md)
-The list of group assignments for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppCategory.md)
-The list of categories for this app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppRelationship.md)
-List of relationships for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreApp](Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreApp.md)
-Get the item of type microsoft.graph.mobileApp as microsoft.graph.androidStoreApp
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppAssignment.md)
-The list of group assignments for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppCategory.md)
-The list of categories for this app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppRelationship.md)
-List of relationships for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobApp](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobApp.md)
-Get the item of type microsoft.graph.mobileApp as microsoft.graph.iosLobApp
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppAssignment.md)
-The list of group assignments for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppCategory.md)
-The list of categories for this app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersion.md)
-The list of content versions for this app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp.md)
-The collection of contained apps in a MobileLobApp acting as a package.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile.md)
-The list of files for this app content version.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppRelationship.md)
-List of relationships for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsIoStoreApp](Get-MgBetaDeviceAppManagementMobileAppAsIoStoreApp.md)
-Get the item of type microsoft.graph.mobileApp as microsoft.graph.iosStoreApp
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsIoStoreAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsIoStoreAppAssignment.md)
-The list of group assignments for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsIoStoreAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsIoStoreAppCategory.md)
-The list of categories for this app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsIoStoreAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsIoStoreAppRelationship.md)
-List of relationships for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsIoVppApp](Get-MgBetaDeviceAppManagementMobileAppAsIoVppApp.md)
-Get the item of type microsoft.graph.mobileApp as microsoft.graph.iosVppApp
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignedLicense](Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignedLicense.md)
-The licenses assigned to this app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignment.md)
-The list of group assignments for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppCategory.md)
-The list of categories for this app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppRelationship.md)
-List of relationships for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgApp](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgApp.md)
-Get the item of type microsoft.graph.mobileApp as microsoft.graph.macOSDmgApp
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppAssignment.md)
-The list of group assignments for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppCategory.md)
-The list of categories for this app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion.md)
-The list of content versions for this app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp.md)
-The collection of contained apps in a MobileLobApp acting as a package.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile.md)
-The list of files for this app content version.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppRelationship.md)
-List of relationships for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobApp](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobApp.md)
-Get the item of type microsoft.graph.mobileApp as microsoft.graph.macOSLobApp
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppAssignment.md)
-The list of group assignments for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppCategory.md)
-The list of categories for this app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersion.md)
-The list of content versions for this app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp.md)
-The collection of contained apps in a MobileLobApp acting as a package.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile.md)
-The list of files for this app content version.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppRelationship.md)
-List of relationships for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgApp](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgApp.md)
-Get the item of type microsoft.graph.mobileApp as microsoft.graph.macOSPkgApp
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppAssignment.md)
-The list of group assignments for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppCategory.md)
-The list of categories for this app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersion.md)
-The list of content versions for this app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionContainedApp.md)
-The collection of contained apps in a MobileLobApp acting as a package.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionFile.md)
-The list of files for this app content version.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppRelationship.md)
-List of relationships for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobApp](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobApp.md)
-Get the item of type microsoft.graph.mobileApp as microsoft.graph.managedAndroidLobApp
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment.md)
-The list of group assignments for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppCategory.md)
-The list of categories for this app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion.md)
-The list of content versions for this app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp.md)
-The collection of contained apps in a MobileLobApp acting as a package.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile.md)
-The list of files for this app content version.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppRelationship.md)
-List of relationships for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobApp](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobApp.md)
-Get the item of type microsoft.graph.mobileApp as microsoft.graph.managedIOSLobApp
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppAssignment.md)
-The list of group assignments for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppCategory.md)
-The list of categories for this app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion.md)
-The list of content versions for this app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp.md)
-The collection of contained apps in a MobileLobApp acting as a package.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile.md)
-The list of files for this app content version.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppRelationship.md)
-List of relationships for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobApp](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobApp.md)
-Get the item of type microsoft.graph.mobileApp as microsoft.graph.managedMobileLobApp
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment.md)
-The list of group assignments for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppCategory.md)
-The list of categories for this app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion.md)
-The list of content versions for this app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp.md)
-The collection of contained apps in a MobileLobApp acting as a package.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile.md)
-The list of files for this app content version.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppRelationship.md)
-List of relationships for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessApp](Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessApp.md)
-Get the item of type microsoft.graph.mobileApp as microsoft.graph.microsoftStoreForBusinessApp
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment.md)
-The list of group assignments for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppCategory.md)
-The list of categories for this app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppContainedApp.md)
-The collection of contained apps in a mobileApp acting as a package.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppRelationship.md)
-List of relationships for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAssignedLicenseCount](Get-MgBetaDeviceAppManagementMobileAppAssignedLicenseCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAssignment.md)
-The list of group assignments for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobApp](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobApp.md)
-Get the item of type microsoft.graph.mobileApp as microsoft.graph.win32LobApp
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppAssignment.md)
-The list of group assignments for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppCategory.md)
-The list of categories for this app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersion.md)
-The list of content versions for this app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp.md)
-The collection of contained apps in a MobileLobApp acting as a package.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile.md)
-The list of files for this app content version.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppRelationship.md)
-List of relationships for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppX](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppX.md)
-Get the item of type microsoft.graph.mobileApp as microsoft.graph.windowsAppX
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXAssignment](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXAssignment.md)
-The list of group assignments for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXCategory](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXCategory.md)
-The list of categories for this app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersion.md)
-The list of content versions for this app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp.md)
-The collection of contained apps in a MobileLobApp acting as a package.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile.md)
-The list of files for this app content version.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXRelationship](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXRelationship.md)
-List of relationships for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsi](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsi.md)
-Get the item of type microsoft.graph.mobileApp as microsoft.graph.windowsMobileMSI
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment.md)
-The list of group assignments for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiCategory](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiCategory.md)
-The list of categories for this app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion.md)
-The list of content versions for this app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp.md)
-The collection of contained apps in a MobileLobApp acting as a package.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile.md)
-The list of files for this app content version.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiRelationship](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiRelationship.md)
-List of relationships for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreApp](Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreApp.md)
-Get the item of type microsoft.graph.mobileApp as microsoft.graph.windowsStoreApp
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppAssignment.md)
-The list of group assignments for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppCategory.md)
-The list of categories for this app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppRelationship.md)
-List of relationships for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppX](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppX.md)
-Get the item of type microsoft.graph.mobileApp as microsoft.graph.windowsUniversalAppX
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment.md)
-The list of group assignments for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCategory](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCategory.md)
-The list of categories for this app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp.md)
-The collection of contained apps in the committed mobileAppContent of a windowsUniversalAppX app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion.md)
-The list of content versions for this app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp.md)
-The collection of contained apps in a MobileLobApp acting as a package.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile.md)
-The list of files for this app content version.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXRelationship](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXRelationship.md)
-List of relationships for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebApp](Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebApp.md)
-Get the item of type microsoft.graph.mobileApp as microsoft.graph.windowsWebApp
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppAssignment.md)
-The list of group assignments for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppCategory.md)
-The list of categories for this app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppRelationship.md)
-List of relationships for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWinGetApp](Get-MgBetaDeviceAppManagementMobileAppAsWinGetApp.md)
-Get the item of type microsoft.graph.mobileApp as microsoft.graph.winGetApp
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWinGetAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsWinGetAppAssignment.md)
-The list of group assignments for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWinGetAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsWinGetAppCategory.md)
-The list of categories for this app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWinGetAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsWinGetAppRelationship.md)
-List of relationships for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCategory](Get-MgBetaDeviceAppManagementMobileAppCategory.md)
-The mobile app categories.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCategoryCount](Get-MgBetaDeviceAppManagementMobileAppCategoryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCommittedContainedAppCount](Get-MgBetaDeviceAppManagementMobileAppCommittedContainedAppCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppConfiguration](Get-MgBetaDeviceAppManagementMobileAppConfiguration.md)
-The Managed Device Mobile Application Configurations.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppConfigurationAssignment](Get-MgBetaDeviceAppManagementMobileAppConfigurationAssignment.md)
-The list of group assignemenets for app configration.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppConfigurationAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppConfigurationAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppConfigurationCount](Get-MgBetaDeviceAppManagementMobileAppConfigurationCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatus](Get-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatus.md)
-List of ManagedDeviceMobileAppConfigurationDeviceStatus.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatusCount](Get-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatusCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatusSummary](Get-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatusSummary.md)
-App configuration device status summary.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppConfigurationUserStatus](Get-MgBetaDeviceAppManagementMobileAppConfigurationUserStatus.md)
-List of ManagedDeviceMobileAppConfigurationUserStatus.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppConfigurationUserStatusCount](Get-MgBetaDeviceAppManagementMobileAppConfigurationUserStatusCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppConfigurationUserStatusSummary](Get-MgBetaDeviceAppManagementMobileAppConfigurationUserStatusSummary.md)
-App configuration user status summary.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppContainedAppCount](Get-MgBetaDeviceAppManagementMobileAppContainedAppCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppContentVersionContainedAppCount](Get-MgBetaDeviceAppManagementMobileAppContentVersionContainedAppCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppContentVersionCount](Get-MgBetaDeviceAppManagementMobileAppContentVersionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppContentVersionFileCount](Get-MgBetaDeviceAppManagementMobileAppContentVersionFileCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCount](Get-MgBetaDeviceAppManagementMobileAppCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsAndroidForWorkApp](Get-MgBetaDeviceAppManagementMobileAppCountAsAndroidForWorkApp.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsAndroidLobApp](Get-MgBetaDeviceAppManagementMobileAppCountAsAndroidLobApp.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsAndroidManagedStoreApp](Get-MgBetaDeviceAppManagementMobileAppCountAsAndroidManagedStoreApp.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsAndroidStoreApp](Get-MgBetaDeviceAppManagementMobileAppCountAsAndroidStoreApp.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsiOSLobApp](Get-MgBetaDeviceAppManagementMobileAppCountAsiOSLobApp.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsIoStoreApp](Get-MgBetaDeviceAppManagementMobileAppCountAsIoStoreApp.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsIoVppApp](Get-MgBetaDeviceAppManagementMobileAppCountAsIoVppApp.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsMacOSDmgApp](Get-MgBetaDeviceAppManagementMobileAppCountAsMacOSDmgApp.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsMacOSLobApp](Get-MgBetaDeviceAppManagementMobileAppCountAsMacOSLobApp.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsMacOSPkgApp](Get-MgBetaDeviceAppManagementMobileAppCountAsMacOSPkgApp.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsManagedAndroidLobApp](Get-MgBetaDeviceAppManagementMobileAppCountAsManagedAndroidLobApp.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsManagediOSLobApp](Get-MgBetaDeviceAppManagementMobileAppCountAsManagediOSLobApp.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsManagedMobileLobApp](Get-MgBetaDeviceAppManagementMobileAppCountAsManagedMobileLobApp.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsMicrosoftStoreForBusinessApp](Get-MgBetaDeviceAppManagementMobileAppCountAsMicrosoftStoreForBusinessApp.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsWin32LobApp](Get-MgBetaDeviceAppManagementMobileAppCountAsWin32LobApp.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsWindowsAppX](Get-MgBetaDeviceAppManagementMobileAppCountAsWindowsAppX.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsWindowsMobileMsi](Get-MgBetaDeviceAppManagementMobileAppCountAsWindowsMobileMsi.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsWindowStoreApp](Get-MgBetaDeviceAppManagementMobileAppCountAsWindowStoreApp.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsWindowsUniversalAppX](Get-MgBetaDeviceAppManagementMobileAppCountAsWindowsUniversalAppX.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsWindowsWebApp](Get-MgBetaDeviceAppManagementMobileAppCountAsWindowsWebApp.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsWinGetApp](Get-MgBetaDeviceAppManagementMobileAppCountAsWinGetApp.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppRelationship](Get-MgBetaDeviceAppManagementMobileAppRelationship.md)
-List of relationships for this mobile app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppRelationshipCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementPolicySet](Get-MgBetaDeviceAppManagementPolicySet.md)
-The PolicySet of Policies and Applications
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementPolicySetAssignment](Get-MgBetaDeviceAppManagementPolicySetAssignment.md)
-Assignments of the PolicySet.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementPolicySetAssignmentCount](Get-MgBetaDeviceAppManagementPolicySetAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementPolicySetCount](Get-MgBetaDeviceAppManagementPolicySetCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementPolicySetItem](Get-MgBetaDeviceAppManagementPolicySetItem.md)
-Items of the PolicySet with maximum count 100.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementPolicySetItemCount](Get-MgBetaDeviceAppManagementPolicySetItemCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementSymantecCodeSigningCertificate](Get-MgBetaDeviceAppManagementSymantecCodeSigningCertificate.md)
-The WinPhone Symantec Code Signing Certificate.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementTargetedManagedAppConfiguration](Get-MgBetaDeviceAppManagementTargetedManagedAppConfiguration.md)
-Targeted managed app configurations.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationApp](Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationApp.md)
-List of apps to which the policy is deployed.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationAppCount](Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationAppCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationAssignment](Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationAssignment.md)
-Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationAssignmentCount](Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationCount](Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationDeploymentSummary](Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationDeploymentSummary.md)
-Navigation property to deployment summary of the configuration.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting](Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting.md)
-List of settings contained in this App Configuration policy
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSettingCount](Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSettingCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSettingDefinition](Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSettingDefinition.md)
-List of related Setting Definitions.
-This property is read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSettingDefinitionCount](Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSettingDefinitionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementTask](Get-MgBetaDeviceAppManagementTask.md)
-Device app management tasks.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementTaskCount](Get-MgBetaDeviceAppManagementTaskCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementVppToken](Get-MgBetaDeviceAppManagementVppToken.md)
-List of Vpp tokens for this organization.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementVppTokenCount](Get-MgBetaDeviceAppManagementVppTokenCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementVppTokenLicenseForApp](Get-MgBetaDeviceAppManagementVppTokenLicenseForApp.md)
-Invoke function getLicensesForApp
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementWdacSupplementalPolicy](Get-MgBetaDeviceAppManagementWdacSupplementalPolicy.md)
-The collection of Windows Defender Application Control Supplemental Policies.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementWdacSupplementalPolicyAssignment](Get-MgBetaDeviceAppManagementWdacSupplementalPolicyAssignment.md)
-The associated group assignments for the Windows Defender Application Control Supplemental Policy.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementWdacSupplementalPolicyAssignmentCount](Get-MgBetaDeviceAppManagementWdacSupplementalPolicyAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementWdacSupplementalPolicyCount](Get-MgBetaDeviceAppManagementWdacSupplementalPolicyCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementWdacSupplementalPolicyDeploySummary](Get-MgBetaDeviceAppManagementWdacSupplementalPolicyDeploySummary.md)
-WindowsDefenderApplicationControl supplemental policy deployment summary.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementWdacSupplementalPolicyDeviceStatus](Get-MgBetaDeviceAppManagementWdacSupplementalPolicyDeviceStatus.md)
-The list of device deployment states for this WindowsDefenderApplicationControl supplemental policy.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistration](Get-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistration.md)
-Windows information protection device registrations that are not MDM enrolled.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistrationCount](Get-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistrationCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy](Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy.md)
-Windows information protection for apps running on devices which are not MDM enrolled.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyAssignment](Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyAssignment.md)
-Navigation property to list of security groups targeted for policy.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyAssignmentCount](Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyCount](Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile](Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile.md)
-Another way to input exempt apps through xml files
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFileCount](Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFileCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile](Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
-Another way to input protected apps through xml files
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFileCount](Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFileCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction](Get-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction.md)
-Windows information protection wipe actions.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementWindowsInformationProtectionWipeActionCount](Get-MgBetaDeviceAppManagementWindowsInformationProtectionWipeActionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementWindowsManagedAppProtection](Get-MgBetaDeviceAppManagementWindowsManagedAppProtection.md)
-Windows managed app policies.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementWindowsManagedAppProtectionApp](Get-MgBetaDeviceAppManagementWindowsManagedAppProtectionApp.md)
-List of apps to which the policy is deployed.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementWindowsManagedAppProtectionAppCount](Get-MgBetaDeviceAppManagementWindowsManagedAppProtectionAppCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementWindowsManagedAppProtectionAssignment](Get-MgBetaDeviceAppManagementWindowsManagedAppProtectionAssignment.md)
-Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementWindowsManagedAppProtectionAssignmentCount](Get-MgBetaDeviceAppManagementWindowsManagedAppProtectionAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementWindowsManagedAppProtectionCount](Get-MgBetaDeviceAppManagementWindowsManagedAppProtectionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementWindowsManagementApp](Get-MgBetaDeviceAppManagementWindowsManagementApp.md)
-Windows management app.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceEnrollmentConfiguration](Get-MgBetaUserDeviceEnrollmentConfiguration.md)
-Get enrollment configurations targeted to the user
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceEnrollmentConfigurationAssignment](Get-MgBetaUserDeviceEnrollmentConfigurationAssignment.md)
-The list of group assignments for the device configuration profile
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceEnrollmentConfigurationAssignmentCount](Get-MgBetaUserDeviceEnrollmentConfigurationAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceEnrollmentConfigurationCount](Get-MgBetaUserDeviceEnrollmentConfigurationCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceManagementTroubleshootingEvent](Get-MgBetaUserDeviceManagementTroubleshootingEvent.md)
-The list of troubleshooting events for this user.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceManagementTroubleshootingEventCount](Get-MgBetaUserDeviceManagementTroubleshootingEventCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserManagedAppRegistration](Get-MgBetaUserManagedAppRegistration.md)
-Zero or more managed app registrations that belong to the user.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserManagedAppRegistrationCount](Get-MgBetaUserManagedAppRegistrationCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserManagedDevice](Get-MgBetaUserManagedDevice.md)
-The managed devices associated with the user.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserManagedDeviceAssignmentFilterEvaluationStatusDetail](Get-MgBetaUserManagedDeviceAssignmentFilterEvaluationStatusDetail.md)
-Managed device mobile app configuration states for this device.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserManagedDeviceAssignmentFilterEvaluationStatusDetailCount](Get-MgBetaUserManagedDeviceAssignmentFilterEvaluationStatusDetailCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserManagedDeviceCategory](Get-MgBetaUserManagedDeviceCategory.md)
-Device category
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserManagedDeviceCompliancePolicyState](Get-MgBetaUserManagedDeviceCompliancePolicyState.md)
-Device compliance policy states for this device.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserManagedDeviceCompliancePolicyStateCount](Get-MgBetaUserManagedDeviceCompliancePolicyStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserManagedDeviceConfigurationState](Get-MgBetaUserManagedDeviceConfigurationState.md)
-Device configuration states for this device.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserManagedDeviceConfigurationStateCount](Get-MgBetaUserManagedDeviceConfigurationStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserManagedDeviceCount](Get-MgBetaUserManagedDeviceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserManagedDeviceDetectedApp](Get-MgBetaUserManagedDeviceDetectedApp.md)
-All applications currently installed on the device
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserManagedDeviceDetectedAppCount](Get-MgBetaUserManagedDeviceDetectedAppCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserManagedDeviceHealthScriptState](Get-MgBetaUserManagedDeviceHealthScriptState.md)
-Results of device health scripts that ran for this device.
-Default is empty list.
-This property is read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserManagedDeviceHealthScriptStateCount](Get-MgBetaUserManagedDeviceHealthScriptStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserManagedDeviceLogCollectionRequestCount](Get-MgBetaUserManagedDeviceLogCollectionRequestCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserManagedDeviceLogCollectionResponse](Get-MgBetaUserManagedDeviceLogCollectionResponse.md)
-List of log collection requests
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserManagedDeviceMobileAppConfigurationState](Get-MgBetaUserManagedDeviceMobileAppConfigurationState.md)
-Managed device mobile app configuration states for this device.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserManagedDeviceMobileAppConfigurationStateCount](Get-MgBetaUserManagedDeviceMobileAppConfigurationStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserManagedDeviceSecurityBaselineState](Get-MgBetaUserManagedDeviceSecurityBaselineState.md)
-Security baseline states for this device.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserManagedDeviceSecurityBaselineStateCount](Get-MgBetaUserManagedDeviceSecurityBaselineStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserManagedDeviceSecurityBaselineStateSettingState](Get-MgBetaUserManagedDeviceSecurityBaselineStateSettingState.md)
-The security baseline state for different settings for a device
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserManagedDeviceSecurityBaselineStateSettingStateCount](Get-MgBetaUserManagedDeviceSecurityBaselineStateSettingStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserManagedDeviceUser](Get-MgBetaUserManagedDeviceUser.md)
-The primary users associated with the managed device.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserManagedDeviceWindowsProtectionState](Get-MgBetaUserManagedDeviceWindowsProtectionState.md)
-The device protection status.
-This property is read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserManagedDeviceWindowsProtectionStateDetectedMalwareState](Get-MgBetaUserManagedDeviceWindowsProtectionStateDetectedMalwareState.md)
-Device malware list
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserManagedDeviceWindowsProtectionStateDetectedMalwareStateCount](Get-MgBetaUserManagedDeviceWindowsProtectionStateDetectedMalwareStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserMobileAppIntentAndState](Get-MgBetaUserMobileAppIntentAndState.md)
-The list of troubleshooting events for this user.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserMobileAppIntentAndStateCount](Get-MgBetaUserMobileAppIntentAndStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserMobileAppTroubleshootingEvent](Get-MgBetaUserMobileAppTroubleshootingEvent.md)
-The list of mobile app troubleshooting events for this user.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest](Get-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-The collection property of AppLogUploadRequest.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequestCount](Get-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequestCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserMobileAppTroubleshootingEventCount](Get-MgBetaUserMobileAppTroubleshootingEventCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserWindowsInformationProtectionDeviceRegistration](Get-MgBetaUserWindowsInformationProtectionDeviceRegistration.md)
-Zero or more WIP device registrations that belong to the user.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserWindowsInformationProtectionDeviceRegistrationCount](Get-MgBetaUserWindowsInformationProtectionDeviceRegistrationCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphAndroidLobAppContentVersionFile](Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphAndroidLobAppContentVersionFile.md)
-Commits a file of a given app.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphiOSLobAppContentVersionFile](Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphiOSLobAppContentVersionFile.md)
-Commits a file of a given app.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphMacOSDmgAppContentVersionFile](Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphMacOSDmgAppContentVersionFile.md)
-Commits a file of a given app.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphMacOSLobAppContentVersionFile](Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphMacOSLobAppContentVersionFile.md)
-Commits a file of a given app.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphMacOSPkgAppContentVersionFile](Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphMacOSPkgAppContentVersionFile.md)
-Commits a file of a given app.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphManagedAndroidLobAppContentVersionFile](Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphManagedAndroidLobAppContentVersionFile.md)
-Commits a file of a given app.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphManagediOSLobAppContentVersionFile](Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphManagediOSLobAppContentVersionFile.md)
-Commits a file of a given app.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphManagedMobileLobAppContentVersionFile](Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphManagedMobileLobAppContentVersionFile.md)
-Commits a file of a given app.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphWin32LobAppContentVersionFile](Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphWin32LobAppContentVersionFile.md)
-Commits a file of a given app.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphWindowsAppXContentVersionFile](Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphWindowsAppXContentVersionFile.md)
-Commits a file of a given app.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphWindowsMobileMsiContentVersionFile](Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphWindowsMobileMsiContentVersionFile.md)
-Commits a file of a given app.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphWindowsUniversalAppXContentVersionFile](Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphWindowsUniversalAppXContentVersionFile.md)
-Commits a file of a given app.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaHasDeviceAppManagementAndroidManagedAppProtectionPayloadLink](Invoke-MgBetaHasDeviceAppManagementAndroidManagedAppProtectionPayloadLink.md)
-Invoke action hasPayloadLinks
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaHasDeviceAppManagementiOSLobAppProvisioningConfigurationPayloadLink](Invoke-MgBetaHasDeviceAppManagementiOSLobAppProvisioningConfigurationPayloadLink.md)
-Invoke action hasPayloadLinks
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaHasDeviceAppManagementiOSManagedAppProtectionPayloadLink](Invoke-MgBetaHasDeviceAppManagementiOSManagedAppProtectionPayloadLink.md)
-Invoke action hasPayloadLinks
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaHasDeviceAppManagementMdmWindowsInformationProtectionPolicyPayloadLink](Invoke-MgBetaHasDeviceAppManagementMdmWindowsInformationProtectionPolicyPayloadLink.md)
-Invoke action hasPayloadLinks
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaHasDeviceAppManagementMobileAppPayloadLink](Invoke-MgBetaHasDeviceAppManagementMobileAppPayloadLink.md)
-Invoke action hasPayloadLinks
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaHasDeviceAppManagementTargetedManagedAppConfigurationPayloadLink](Invoke-MgBetaHasDeviceAppManagementTargetedManagedAppConfigurationPayloadLink.md)
-Invoke action hasPayloadLinks
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphAndroidLobAppContentVersionFileUpload](Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphAndroidLobAppContentVersionFileUpload.md)
-Renews the SAS URI for an application file upload.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphiOSLobAppContentVersionFileUpload](Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphiOSLobAppContentVersionFileUpload.md)
-Renews the SAS URI for an application file upload.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphMacOSDmgAppContentVersionFileUpload](Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphMacOSDmgAppContentVersionFileUpload.md)
-Renews the SAS URI for an application file upload.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphMacOSLobAppContentVersionFileUpload](Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphMacOSLobAppContentVersionFileUpload.md)
-Renews the SAS URI for an application file upload.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphMacOSPkgAppContentVersionFileUpload](Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphMacOSPkgAppContentVersionFileUpload.md)
-Renews the SAS URI for an application file upload.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphManagedAndroidLobAppContentVersionFileUpload](Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphManagedAndroidLobAppContentVersionFileUpload.md)
-Renews the SAS URI for an application file upload.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphManagediOSLobAppContentVersionFileUpload](Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphManagediOSLobAppContentVersionFileUpload.md)
-Renews the SAS URI for an application file upload.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphManagedMobileLobAppContentVersionFileUpload](Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphManagedMobileLobAppContentVersionFileUpload.md)
-Renews the SAS URI for an application file upload.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphWin32LobAppContentVersionFileUpload](Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphWin32LobAppContentVersionFileUpload.md)
-Renews the SAS URI for an application file upload.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphWindowsAppXContentVersionFileUpload](Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphWindowsAppXContentVersionFileUpload.md)
-Renews the SAS URI for an application file upload.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphWindowsMobileMsiContentVersionFileUpload](Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphWindowsMobileMsiContentVersionFileUpload.md)
-Renews the SAS URI for an application file upload.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphWindowsUniversalAppXContentVersionFileUpload](Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphWindowsUniversalAppXContentVersionFileUpload.md)
-Renews the SAS URI for an application file upload.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaTargetDeviceAppManagementManagedAppPolicyApp](Invoke-MgBetaTargetDeviceAppManagementManagedAppPolicyApp.md)
-Invoke action targetApps
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaTargetDeviceAppManagementManagedAppRegistrationAppliedPolicyApp](Invoke-MgBetaTargetDeviceAppManagementManagedAppRegistrationAppliedPolicyApp.md)
-Invoke action targetApps
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaTargetDeviceAppManagementManagedAppRegistrationIntendedPolicyApp](Invoke-MgBetaTargetDeviceAppManagementManagedAppRegistrationIntendedPolicyApp.md)
-Invoke action targetApps
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaTargetDeviceAppManagementTargetedManagedAppConfigurationApp](Invoke-MgBetaTargetDeviceAppManagementTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaTargetDeviceAppManagementWindowsManagedAppProtectionApp](Invoke-MgBetaTargetDeviceAppManagementWindowsManagedAppProtectionApp.md)
-Invoke action targetApps
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementAndroidManagedAppProtection](New-MgBetaDeviceAppManagementAndroidManagedAppProtection.md)
-Create new navigation property to androidManagedAppProtections for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementAndroidManagedAppProtectionApp](New-MgBetaDeviceAppManagementAndroidManagedAppProtectionApp.md)
-Create new navigation property to apps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementAndroidManagedAppProtectionAssignment](New-MgBetaDeviceAppManagementAndroidManagedAppProtectionAssignment.md)
-Create new navigation property to assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementDefaultManagedAppProtection](New-MgBetaDeviceAppManagementDefaultManagedAppProtection.md)
-Create new navigation property to defaultManagedAppProtections for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementDefaultManagedAppProtectionApp](New-MgBetaDeviceAppManagementDefaultManagedAppProtectionApp.md)
-Create new navigation property to apps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementEnterpriseCodeSigningCertificate](New-MgBetaDeviceAppManagementEnterpriseCodeSigningCertificate.md)
-Create new navigation property to enterpriseCodeSigningCertificates for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementiOSLobAppProvisioningConfiguration](New-MgBetaDeviceAppManagementiOSLobAppProvisioningConfiguration.md)
-Create new navigation property to iosLobAppProvisioningConfigurations for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationAssignment](New-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationAssignment.md)
-Create new navigation property to assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationDeviceStatus](New-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationDeviceStatus.md)
-Create new navigation property to deviceStatuses for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationGroupAssignment](New-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationGroupAssignment.md)
-Create new navigation property to groupAssignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationUserStatus](New-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationUserStatus.md)
-Create new navigation property to userStatuses for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementiOSManagedAppProtection](New-MgBetaDeviceAppManagementiOSManagedAppProtection.md)
-Create new navigation property to iosManagedAppProtections for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementiOSManagedAppProtectionApp](New-MgBetaDeviceAppManagementiOSManagedAppProtectionApp.md)
-Create new navigation property to apps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignment](New-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignment.md)
-Create new navigation property to assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementManagedAppPolicy](New-MgBetaDeviceAppManagementManagedAppPolicy.md)
-Create new navigation property to managedAppPolicies for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementManagedAppRegistration](New-MgBetaDeviceAppManagementManagedAppRegistration.md)
-Create new navigation property to managedAppRegistrations for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementManagedAppRegistrationAppliedPolicy](New-MgBetaDeviceAppManagementManagedAppRegistrationAppliedPolicy.md)
-Create new navigation property to appliedPolicies for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicy](New-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicy.md)
-Create new navigation property to intendedPolicies for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementManagedAppRegistrationOperation](New-MgBetaDeviceAppManagementManagedAppRegistrationOperation.md)
-Create new navigation property to operations for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementManagedAppStatus](New-MgBetaDeviceAppManagementManagedAppStatus.md)
-Create new navigation property to managedAppStatuses for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementManagedEBook](New-MgBetaDeviceAppManagementManagedEBook.md)
-Create new navigation property to managedEBooks for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementManagedEBookAssignment](New-MgBetaDeviceAppManagementManagedEBookAssignment.md)
-Create new navigation property to assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementManagedEBookCategory](New-MgBetaDeviceAppManagementManagedEBookCategory.md)
-Create new navigation property to managedEBookCategories for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementManagedEBookDeviceState](New-MgBetaDeviceAppManagementManagedEBookDeviceState.md)
-Create new navigation property to deviceStates for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementManagedEBookUserStateSummary](New-MgBetaDeviceAppManagementManagedEBookUserStateSummary.md)
-Create new navigation property to userStateSummary for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementManagedEBookUserStateSummaryDeviceState](New-MgBetaDeviceAppManagementManagedEBookUserStateSummaryDeviceState.md)
-Create new navigation property to deviceStates for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy](New-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy.md)
-Create new navigation property to mdmWindowsInformationProtectionPolicies for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment](New-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment.md)
-Create new navigation property to assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile](New-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile.md)
-Create new navigation property to exemptAppLockerFiles for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile](New-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
-Create new navigation property to protectedAppLockerFiles for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileApp](New-MgBetaDeviceAppManagementMobileApp.md)
-Create new navigation property to mobileApps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppAssignment](New-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppAssignment.md)
-Create new navigation property to assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppRelationship.md)
-Create new navigation property to relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppAssignment](New-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppAssignment.md)
-Create new navigation property to assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersion](New-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersion.md)
-Create new navigation property to contentVersions for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp](New-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp.md)
-Create new navigation property to containedApps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile](New-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile.md)
-Create new navigation property to files for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppRelationship.md)
-Create new navigation property to relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppAssignment](New-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppAssignment.md)
-Create new navigation property to assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppRelationship.md)
-Create new navigation property to relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppAssignment](New-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppAssignment.md)
-Create new navigation property to assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppRelationship.md)
-Create new navigation property to relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsiOSLobAppAssignment](New-MgBetaDeviceAppManagementMobileAppAsiOSLobAppAssignment.md)
-Create new navigation property to assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersion](New-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersion.md)
-Create new navigation property to contentVersions for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp](New-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp.md)
-Create new navigation property to containedApps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile](New-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile.md)
-Create new navigation property to files for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsiOSLobAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsiOSLobAppRelationship.md)
-Create new navigation property to relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsIoStoreAppAssignment](New-MgBetaDeviceAppManagementMobileAppAsIoStoreAppAssignment.md)
-Create new navigation property to assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsIoStoreAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsIoStoreAppRelationship.md)
-Create new navigation property to relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignedLicense](New-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignedLicense.md)
-Create new navigation property to assignedLicenses for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignment](New-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignment.md)
-Create new navigation property to assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsIoVppAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsIoVppAppRelationship.md)
-Create new navigation property to relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppAssignment](New-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppAssignment.md)
-Create new navigation property to assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion](New-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion.md)
-Create new navigation property to contentVersions for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp](New-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp.md)
-Create new navigation property to containedApps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile](New-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile.md)
-Create new navigation property to files for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppRelationship.md)
-Create new navigation property to relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppAssignment](New-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppAssignment.md)
-Create new navigation property to assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersion](New-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersion.md)
-Create new navigation property to contentVersions for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp](New-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp.md)
-Create new navigation property to containedApps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile](New-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile.md)
-Create new navigation property to files for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppRelationship.md)
-Create new navigation property to relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppAssignment](New-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppAssignment.md)
-Create new navigation property to assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersion](New-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersion.md)
-Create new navigation property to contentVersions for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionContainedApp](New-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionContainedApp.md)
-Create new navigation property to containedApps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionFile](New-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionFile.md)
-Create new navigation property to files for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppRelationship.md)
-Create new navigation property to relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment](New-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment.md)
-Create new navigation property to assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion](New-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion.md)
-Create new navigation property to contentVersions for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp](New-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp.md)
-Create new navigation property to containedApps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile](New-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile.md)
-Create new navigation property to files for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppRelationship.md)
-Create new navigation property to relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppAssignment](New-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppAssignment.md)
-Create new navigation property to assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion](New-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion.md)
-Create new navigation property to contentVersions for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp](New-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp.md)
-Create new navigation property to containedApps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile](New-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile.md)
-Create new navigation property to files for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppRelationship.md)
-Create new navigation property to relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment](New-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment.md)
-Create new navigation property to assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion](New-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion.md)
-Create new navigation property to contentVersions for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp](New-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp.md)
-Create new navigation property to containedApps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile](New-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile.md)
-Create new navigation property to files for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppRelationship.md)
-Create new navigation property to relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment](New-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment.md)
-Create new navigation property to assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppContainedApp](New-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppContainedApp.md)
-Create new navigation property to containedApps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppRelationship.md)
-Create new navigation property to relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAssignment](New-MgBetaDeviceAppManagementMobileAppAssignment.md)
-Create new navigation property to assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWin32LobAppAssignment](New-MgBetaDeviceAppManagementMobileAppAsWin32LobAppAssignment.md)
-Create new navigation property to assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersion](New-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersion.md)
-Create new navigation property to contentVersions for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp](New-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp.md)
-Create new navigation property to containedApps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile](New-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile.md)
-Create new navigation property to files for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWin32LobAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsWin32LobAppRelationship.md)
-Create new navigation property to relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsAppXAssignment](New-MgBetaDeviceAppManagementMobileAppAsWindowsAppXAssignment.md)
-Create new navigation property to assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersion](New-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersion.md)
-Create new navigation property to contentVersions for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp](New-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp.md)
-Create new navigation property to containedApps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile](New-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile.md)
-Create new navigation property to files for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsAppXRelationship](New-MgBetaDeviceAppManagementMobileAppAsWindowsAppXRelationship.md)
-Create new navigation property to relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment](New-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment.md)
-Create new navigation property to assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion](New-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion.md)
-Create new navigation property to contentVersions for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp](New-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp.md)
-Create new navigation property to containedApps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile](New-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile.md)
-Create new navigation property to files for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiRelationship](New-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiRelationship.md)
-Create new navigation property to relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppAssignment](New-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppAssignment.md)
-Create new navigation property to assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppRelationship.md)
-Create new navigation property to relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment](New-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment.md)
-Create new navigation property to assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp](New-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp.md)
-Create new navigation property to committedContainedApps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion](New-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion.md)
-Create new navigation property to contentVersions for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp](New-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp.md)
-Create new navigation property to containedApps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile](New-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile.md)
-Create new navigation property to files for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXRelationship](New-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXRelationship.md)
-Create new navigation property to relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppAssignment](New-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppAssignment.md)
-Create new navigation property to assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppRelationship.md)
-Create new navigation property to relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWinGetAppAssignment](New-MgBetaDeviceAppManagementMobileAppAsWinGetAppAssignment.md)
-Create new navigation property to assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWinGetAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsWinGetAppRelationship.md)
-Create new navigation property to relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppCategory](New-MgBetaDeviceAppManagementMobileAppCategory.md)
-Create new navigation property to mobileAppCategories for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppConfiguration](New-MgBetaDeviceAppManagementMobileAppConfiguration.md)
-Create new navigation property to mobileAppConfigurations for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppConfigurationAssignment](New-MgBetaDeviceAppManagementMobileAppConfigurationAssignment.md)
-Create new navigation property to assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatus](New-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatus.md)
-Create new navigation property to deviceStatuses for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppConfigurationUserStatus](New-MgBetaDeviceAppManagementMobileAppConfigurationUserStatus.md)
-Create new navigation property to userStatuses for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementMobileAppRelationship](New-MgBetaDeviceAppManagementMobileAppRelationship.md)
-Create new navigation property to relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementPolicySet](New-MgBetaDeviceAppManagementPolicySet.md)
-Create new navigation property to policySets for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementPolicySetAssignment](New-MgBetaDeviceAppManagementPolicySetAssignment.md)
-Create new navigation property to assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementPolicySetItem](New-MgBetaDeviceAppManagementPolicySetItem.md)
-Create new navigation property to items for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementTargetedManagedAppConfiguration](New-MgBetaDeviceAppManagementTargetedManagedAppConfiguration.md)
-Create new navigation property to targetedManagedAppConfigurations for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementTargetedManagedAppConfigurationApp](New-MgBetaDeviceAppManagementTargetedManagedAppConfigurationApp.md)
-Create new navigation property to apps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementTargetedManagedAppConfigurationAssignment](New-MgBetaDeviceAppManagementTargetedManagedAppConfigurationAssignment.md)
-Create new navigation property to assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting](New-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting.md)
-Create new navigation property to settings for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementTask](New-MgBetaDeviceAppManagementTask.md)
-Create new navigation property to deviceAppManagementTasks for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementVppToken](New-MgBetaDeviceAppManagementVppToken.md)
-Create new navigation property to vppTokens for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementWdacSupplementalPolicy](New-MgBetaDeviceAppManagementWdacSupplementalPolicy.md)
-Create new navigation property to wdacSupplementalPolicies for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementWdacSupplementalPolicyAssignment](New-MgBetaDeviceAppManagementWdacSupplementalPolicyAssignment.md)
-Create new navigation property to assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementWdacSupplementalPolicyDeviceStatus](New-MgBetaDeviceAppManagementWdacSupplementalPolicyDeviceStatus.md)
-Create new navigation property to deviceStatuses for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistration](New-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistration.md)
-Create new navigation property to windowsInformationProtectionDeviceRegistrations for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy](New-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy.md)
-Create new navigation property to windowsInformationProtectionPolicies for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyAssignment](New-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyAssignment.md)
-Create new navigation property to assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile](New-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile.md)
-Create new navigation property to exemptAppLockerFiles for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile](New-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
-Create new navigation property to protectedAppLockerFiles for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction](New-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction.md)
-Create new navigation property to windowsInformationProtectionWipeActions for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementWindowsManagedAppProtection](New-MgBetaDeviceAppManagementWindowsManagedAppProtection.md)
-Create new navigation property to windowsManagedAppProtections for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementWindowsManagedAppProtectionApp](New-MgBetaDeviceAppManagementWindowsManagedAppProtectionApp.md)
-Create new navigation property to apps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementWindowsManagedAppProtectionAssignment](New-MgBetaDeviceAppManagementWindowsManagedAppProtectionAssignment.md)
-Create new navigation property to assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserDeviceEnrollmentConfiguration](New-MgBetaUserDeviceEnrollmentConfiguration.md)
-Create new navigation property to deviceEnrollmentConfigurations for users
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserDeviceEnrollmentConfigurationAssignment](New-MgBetaUserDeviceEnrollmentConfigurationAssignment.md)
-Create new navigation property to assignments for users
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserDeviceManagementTroubleshootingEvent](New-MgBetaUserDeviceManagementTroubleshootingEvent.md)
-Create new navigation property to deviceManagementTroubleshootingEvents for users
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserManagedDevice](New-MgBetaUserManagedDevice.md)
-Create new navigation property to managedDevices for users
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserManagedDeviceAssignmentFilterEvaluationStatusDetail](New-MgBetaUserManagedDeviceAssignmentFilterEvaluationStatusDetail.md)
-Create new navigation property to assignmentFilterEvaluationStatusDetails for users
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserManagedDeviceCompliancePolicyState](New-MgBetaUserManagedDeviceCompliancePolicyState.md)
-Create new navigation property to deviceCompliancePolicyStates for users
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserManagedDeviceConfigurationState](New-MgBetaUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserManagedDeviceHealthScriptState](New-MgBetaUserManagedDeviceHealthScriptState.md)
-Create new navigation property to deviceHealthScriptStates for users
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserManagedDeviceLogCollectionResponse](New-MgBetaUserManagedDeviceLogCollectionResponse.md)
-Create new navigation property to logCollectionRequests for users
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserManagedDeviceMobileAppConfigurationState](New-MgBetaUserManagedDeviceMobileAppConfigurationState.md)
-Create new navigation property to managedDeviceMobileAppConfigurationStates for users
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserManagedDeviceSecurityBaselineState](New-MgBetaUserManagedDeviceSecurityBaselineState.md)
-Create new navigation property to securityBaselineStates for users
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserManagedDeviceSecurityBaselineStateSettingState](New-MgBetaUserManagedDeviceSecurityBaselineStateSettingState.md)
-Create new navigation property to settingStates for users
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserManagedDeviceWindowsProtectionStateDetectedMalwareState](New-MgBetaUserManagedDeviceWindowsProtectionStateDetectedMalwareState.md)
-Create new navigation property to detectedMalwareState for users
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserMobileAppIntentAndState](New-MgBetaUserMobileAppIntentAndState.md)
-Create new navigation property to mobileAppIntentAndStates for users
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserMobileAppTroubleshootingEvent](New-MgBetaUserMobileAppTroubleshootingEvent.md)
-Create new navigation property to mobileAppTroubleshootingEvents for users
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest](New-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Create new navigation property to appLogCollectionRequests for users
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementAndroidManagedAppProtection](Remove-MgBetaDeviceAppManagementAndroidManagedAppProtection.md)
-Delete navigation property androidManagedAppProtections for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementAndroidManagedAppProtectionApp](Remove-MgBetaDeviceAppManagementAndroidManagedAppProtectionApp.md)
-Delete navigation property apps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementAndroidManagedAppProtectionAssignment](Remove-MgBetaDeviceAppManagementAndroidManagedAppProtectionAssignment.md)
-Delete navigation property assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary](Remove-MgBetaDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary.md)
-Delete navigation property deploymentSummary for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementDefaultManagedAppProtection](Remove-MgBetaDeviceAppManagementDefaultManagedAppProtection.md)
-Delete navigation property defaultManagedAppProtections for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementDefaultManagedAppProtectionApp](Remove-MgBetaDeviceAppManagementDefaultManagedAppProtectionApp.md)
-Delete navigation property apps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementDefaultManagedAppProtectionDeploymentSummary](Remove-MgBetaDeviceAppManagementDefaultManagedAppProtectionDeploymentSummary.md)
-Delete navigation property deploymentSummary for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementEnterpriseCodeSigningCertificate](Remove-MgBetaDeviceAppManagementEnterpriseCodeSigningCertificate.md)
-Delete navigation property enterpriseCodeSigningCertificates for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementiOSLobAppProvisioningConfiguration](Remove-MgBetaDeviceAppManagementiOSLobAppProvisioningConfiguration.md)
-Delete navigation property iosLobAppProvisioningConfigurations for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationAssignment](Remove-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationAssignment.md)
-Delete navigation property assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationDeviceStatus](Remove-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationDeviceStatus.md)
-Delete navigation property deviceStatuses for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationGroupAssignment](Remove-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationGroupAssignment.md)
-Delete navigation property groupAssignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationUserStatus](Remove-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationUserStatus.md)
-Delete navigation property userStatuses for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementiOSManagedAppProtection](Remove-MgBetaDeviceAppManagementiOSManagedAppProtection.md)
-Delete navigation property iosManagedAppProtections for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementiOSManagedAppProtectionApp](Remove-MgBetaDeviceAppManagementiOSManagedAppProtectionApp.md)
-Delete navigation property apps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignment](Remove-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignment.md)
-Delete navigation property assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementiOSManagedAppProtectionDeploymentSummary](Remove-MgBetaDeviceAppManagementiOSManagedAppProtectionDeploymentSummary.md)
-Delete navigation property deploymentSummary for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementManagedAppPolicy](Remove-MgBetaDeviceAppManagementManagedAppPolicy.md)
-Delete navigation property managedAppPolicies for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementManagedAppRegistration](Remove-MgBetaDeviceAppManagementManagedAppRegistration.md)
-Delete navigation property managedAppRegistrations for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementManagedAppRegistrationAppliedPolicy](Remove-MgBetaDeviceAppManagementManagedAppRegistrationAppliedPolicy.md)
-Delete navigation property appliedPolicies for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicy](Remove-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicy.md)
-Delete navigation property intendedPolicies for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementManagedAppRegistrationOperation](Remove-MgBetaDeviceAppManagementManagedAppRegistrationOperation.md)
-Delete navigation property operations for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementManagedAppStatus](Remove-MgBetaDeviceAppManagementManagedAppStatus.md)
-Delete navigation property managedAppStatuses for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementManagedEBook](Remove-MgBetaDeviceAppManagementManagedEBook.md)
-Delete navigation property managedEBooks for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementManagedEBookAssignment](Remove-MgBetaDeviceAppManagementManagedEBookAssignment.md)
-Delete navigation property assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementManagedEBookCategory](Remove-MgBetaDeviceAppManagementManagedEBookCategory.md)
-Delete navigation property managedEBookCategories for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementManagedEBookDeviceState](Remove-MgBetaDeviceAppManagementManagedEBookDeviceState.md)
-Delete navigation property deviceStates for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementManagedEBookInstallSummary](Remove-MgBetaDeviceAppManagementManagedEBookInstallSummary.md)
-Delete navigation property installSummary for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementManagedEBookUserStateSummary](Remove-MgBetaDeviceAppManagementManagedEBookUserStateSummary.md)
-Delete navigation property userStateSummary for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementManagedEBookUserStateSummaryDeviceState](Remove-MgBetaDeviceAppManagementManagedEBookUserStateSummaryDeviceState.md)
-Delete navigation property deviceStates for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy](Remove-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy.md)
-Delete navigation property mdmWindowsInformationProtectionPolicies for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment](Remove-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment.md)
-Delete navigation property assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile](Remove-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile.md)
-Delete navigation property exemptAppLockerFiles for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile](Remove-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
-Delete navigation property protectedAppLockerFiles for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileApp](Remove-MgBetaDeviceAppManagementMobileApp.md)
-Delete navigation property mobileApps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppAssignment.md)
-Delete navigation property assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppRelationship.md)
-Delete navigation property relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppAssignment.md)
-Delete navigation property assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersion](Remove-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersion.md)
-Delete navigation property contentVersions for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp](Remove-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp.md)
-Delete navigation property containedApps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile](Remove-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile.md)
-Delete navigation property files for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppRelationship.md)
-Delete navigation property relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppAssignment.md)
-Delete navigation property assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppRelationship.md)
-Delete navigation property relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppAssignment.md)
-Delete navigation property assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppRelationship.md)
-Delete navigation property relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsiOSLobAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsiOSLobAppAssignment.md)
-Delete navigation property assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersion](Remove-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersion.md)
-Delete navigation property contentVersions for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp](Remove-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp.md)
-Delete navigation property containedApps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile](Remove-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile.md)
-Delete navigation property files for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsiOSLobAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsiOSLobAppRelationship.md)
-Delete navigation property relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsIoStoreAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsIoStoreAppAssignment.md)
-Delete navigation property assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsIoStoreAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsIoStoreAppRelationship.md)
-Delete navigation property relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignedLicense](Remove-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignedLicense.md)
-Delete navigation property assignedLicenses for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignment.md)
-Delete navigation property assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsIoVppAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsIoVppAppRelationship.md)
-Delete navigation property relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppAssignment.md)
-Delete navigation property assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion](Remove-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion.md)
-Delete navigation property contentVersions for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp](Remove-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp.md)
-Delete navigation property containedApps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile](Remove-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile.md)
-Delete navigation property files for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppRelationship.md)
-Delete navigation property relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppAssignment.md)
-Delete navigation property assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersion](Remove-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersion.md)
-Delete navigation property contentVersions for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp](Remove-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp.md)
-Delete navigation property containedApps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile](Remove-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile.md)
-Delete navigation property files for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppRelationship.md)
-Delete navigation property relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppAssignment.md)
-Delete navigation property assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersion](Remove-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersion.md)
-Delete navigation property contentVersions for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionContainedApp](Remove-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionContainedApp.md)
-Delete navigation property containedApps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionFile](Remove-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionFile.md)
-Delete navigation property files for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppRelationship.md)
-Delete navigation property relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment.md)
-Delete navigation property assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion](Remove-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion.md)
-Delete navigation property contentVersions for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp](Remove-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp.md)
-Delete navigation property containedApps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile](Remove-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile.md)
-Delete navigation property files for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppRelationship.md)
-Delete navigation property relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppAssignment.md)
-Delete navigation property assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion](Remove-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion.md)
-Delete navigation property contentVersions for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp](Remove-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp.md)
-Delete navigation property containedApps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile](Remove-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile.md)
-Delete navigation property files for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppRelationship.md)
-Delete navigation property relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment.md)
-Delete navigation property assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion](Remove-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion.md)
-Delete navigation property contentVersions for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp](Remove-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp.md)
-Delete navigation property containedApps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile](Remove-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile.md)
-Delete navigation property files for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppRelationship.md)
-Delete navigation property relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment.md)
-Delete navigation property assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppContainedApp](Remove-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppContainedApp.md)
-Delete navigation property containedApps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppRelationship.md)
-Delete navigation property relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAssignment.md)
-Delete navigation property assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWin32LobAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsWin32LobAppAssignment.md)
-Delete navigation property assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersion](Remove-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersion.md)
-Delete navigation property contentVersions for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp](Remove-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp.md)
-Delete navigation property containedApps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile](Remove-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile.md)
-Delete navigation property files for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWin32LobAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsWin32LobAppRelationship.md)
-Delete navigation property relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsAppXAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsAppXAssignment.md)
-Delete navigation property assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersion](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersion.md)
-Delete navigation property contentVersions for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp.md)
-Delete navigation property containedApps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile.md)
-Delete navigation property files for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsAppXRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsAppXRelationship.md)
-Delete navigation property relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment.md)
-Delete navigation property assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion.md)
-Delete navigation property contentVersions for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp.md)
-Delete navigation property containedApps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile.md)
-Delete navigation property files for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiRelationship.md)
-Delete navigation property relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppAssignment.md)
-Delete navigation property assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppRelationship.md)
-Delete navigation property relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment.md)
-Delete navigation property assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp.md)
-Delete navigation property committedContainedApps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion.md)
-Delete navigation property contentVersions for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp.md)
-Delete navigation property containedApps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile.md)
-Delete navigation property files for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXRelationship.md)
-Delete navigation property relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppAssignment.md)
-Delete navigation property assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppRelationship.md)
-Delete navigation property relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWinGetAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsWinGetAppAssignment.md)
-Delete navigation property assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWinGetAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsWinGetAppRelationship.md)
-Delete navigation property relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppCategory](Remove-MgBetaDeviceAppManagementMobileAppCategory.md)
-Delete navigation property mobileAppCategories for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppConfiguration](Remove-MgBetaDeviceAppManagementMobileAppConfiguration.md)
-Delete navigation property mobileAppConfigurations for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppConfigurationAssignment](Remove-MgBetaDeviceAppManagementMobileAppConfigurationAssignment.md)
-Delete navigation property assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatus](Remove-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatus.md)
-Delete navigation property deviceStatuses for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatusSummary](Remove-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatusSummary.md)
-Delete navigation property deviceStatusSummary for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppConfigurationUserStatus](Remove-MgBetaDeviceAppManagementMobileAppConfigurationUserStatus.md)
-Delete navigation property userStatuses for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppConfigurationUserStatusSummary](Remove-MgBetaDeviceAppManagementMobileAppConfigurationUserStatusSummary.md)
-Delete navigation property userStatusSummary for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppRelationship.md)
-Delete navigation property relationships for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementPolicySet](Remove-MgBetaDeviceAppManagementPolicySet.md)
-Delete navigation property policySets for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementPolicySetAssignment](Remove-MgBetaDeviceAppManagementPolicySetAssignment.md)
-Delete navigation property assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementPolicySetItem](Remove-MgBetaDeviceAppManagementPolicySetItem.md)
-Delete navigation property items for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementSymantecCodeSigningCertificate](Remove-MgBetaDeviceAppManagementSymantecCodeSigningCertificate.md)
-Delete navigation property symantecCodeSigningCertificate for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementTargetedManagedAppConfiguration](Remove-MgBetaDeviceAppManagementTargetedManagedAppConfiguration.md)
-Delete navigation property targetedManagedAppConfigurations for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementTargetedManagedAppConfigurationApp](Remove-MgBetaDeviceAppManagementTargetedManagedAppConfigurationApp.md)
-Delete navigation property apps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementTargetedManagedAppConfigurationAssignment](Remove-MgBetaDeviceAppManagementTargetedManagedAppConfigurationAssignment.md)
-Delete navigation property assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementTargetedManagedAppConfigurationDeploymentSummary](Remove-MgBetaDeviceAppManagementTargetedManagedAppConfigurationDeploymentSummary.md)
-Delete navigation property deploymentSummary for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting](Remove-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting.md)
-Delete navigation property settings for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementTask](Remove-MgBetaDeviceAppManagementTask.md)
-Delete navigation property deviceAppManagementTasks for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementVppToken](Remove-MgBetaDeviceAppManagementVppToken.md)
-Delete navigation property vppTokens for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementWdacSupplementalPolicy](Remove-MgBetaDeviceAppManagementWdacSupplementalPolicy.md)
-Delete navigation property wdacSupplementalPolicies for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementWdacSupplementalPolicyAssignment](Remove-MgBetaDeviceAppManagementWdacSupplementalPolicyAssignment.md)
-Delete navigation property assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementWdacSupplementalPolicyDeploySummary](Remove-MgBetaDeviceAppManagementWdacSupplementalPolicyDeploySummary.md)
-Delete navigation property deploySummary for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementWdacSupplementalPolicyDeviceStatus](Remove-MgBetaDeviceAppManagementWdacSupplementalPolicyDeviceStatus.md)
-Delete navigation property deviceStatuses for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistration](Remove-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistration.md)
-Delete navigation property windowsInformationProtectionDeviceRegistrations for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy](Remove-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy.md)
-Delete navigation property windowsInformationProtectionPolicies for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyAssignment](Remove-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyAssignment.md)
-Delete navigation property assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile](Remove-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile.md)
-Delete navigation property exemptAppLockerFiles for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile](Remove-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
-Delete navigation property protectedAppLockerFiles for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction](Remove-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction.md)
-Delete navigation property windowsInformationProtectionWipeActions for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementWindowsManagedAppProtection](Remove-MgBetaDeviceAppManagementWindowsManagedAppProtection.md)
-Delete navigation property windowsManagedAppProtections for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementWindowsManagedAppProtectionApp](Remove-MgBetaDeviceAppManagementWindowsManagedAppProtectionApp.md)
-Delete navigation property apps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementWindowsManagedAppProtectionAssignment](Remove-MgBetaDeviceAppManagementWindowsManagedAppProtectionAssignment.md)
-Delete navigation property assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserDeviceEnrollmentConfiguration](Remove-MgBetaUserDeviceEnrollmentConfiguration.md)
-Delete navigation property deviceEnrollmentConfigurations for users
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserDeviceEnrollmentConfigurationAssignment](Remove-MgBetaUserDeviceEnrollmentConfigurationAssignment.md)
-Delete navigation property assignments for users
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserDeviceManagementTroubleshootingEvent](Remove-MgBetaUserDeviceManagementTroubleshootingEvent.md)
-Delete navigation property deviceManagementTroubleshootingEvents for users
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserManagedDevice](Remove-MgBetaUserManagedDevice.md)
-Delete navigation property managedDevices for users
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserManagedDeviceAssignmentFilterEvaluationStatusDetail](Remove-MgBetaUserManagedDeviceAssignmentFilterEvaluationStatusDetail.md)
-Delete navigation property assignmentFilterEvaluationStatusDetails for users
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserManagedDeviceCategory](Remove-MgBetaUserManagedDeviceCategory.md)
-Delete navigation property deviceCategory for users
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserManagedDeviceCompliancePolicyState](Remove-MgBetaUserManagedDeviceCompliancePolicyState.md)
-Delete navigation property deviceCompliancePolicyStates for users
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserManagedDeviceConfigurationState](Remove-MgBetaUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserManagedDeviceHealthScriptState](Remove-MgBetaUserManagedDeviceHealthScriptState.md)
-Delete navigation property deviceHealthScriptStates for users
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserManagedDeviceLogCollectionResponse](Remove-MgBetaUserManagedDeviceLogCollectionResponse.md)
-Delete navigation property logCollectionRequests for users
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserManagedDeviceMobileAppConfigurationState](Remove-MgBetaUserManagedDeviceMobileAppConfigurationState.md)
-Delete navigation property managedDeviceMobileAppConfigurationStates for users
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserManagedDeviceSecurityBaselineState](Remove-MgBetaUserManagedDeviceSecurityBaselineState.md)
-Delete navigation property securityBaselineStates for users
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserManagedDeviceSecurityBaselineStateSettingState](Remove-MgBetaUserManagedDeviceSecurityBaselineStateSettingState.md)
-Delete navigation property settingStates for users
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserManagedDeviceWindowsProtectionState](Remove-MgBetaUserManagedDeviceWindowsProtectionState.md)
-Delete navigation property windowsProtectionState for users
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserManagedDeviceWindowsProtectionStateDetectedMalwareState](Remove-MgBetaUserManagedDeviceWindowsProtectionStateDetectedMalwareState.md)
-Delete navigation property detectedMalwareState for users
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserMobileAppIntentAndState](Remove-MgBetaUserMobileAppIntentAndState.md)
-Delete navigation property mobileAppIntentAndStates for users
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserMobileAppTroubleshootingEvent](Remove-MgBetaUserMobileAppTroubleshootingEvent.md)
-Delete navigation property mobileAppTroubleshootingEvents for users
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Delete navigation property appLogCollectionRequests for users
+{{ Fill in the Description }}
 
 ### [Rename-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting](Rename-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting.md)
-Invoke action changeSettings
+{{ Fill in the Description }}
 
 ### [Revoke-MgBetaDeviceAppManagementVppTokenLicense](Revoke-MgBetaDeviceAppManagementVppTokenLicense.md)
-Revoke licenses associated with a specific appleVolumePurchaseProgramToken
+{{ Fill in the Description }}
 
 ### [Set-MgBetaDeviceAppManagementIosLobAppProvisioningConfiguration](Set-MgBetaDeviceAppManagementIosLobAppProvisioningConfiguration.md)
-Invoke action assign
+{{ Fill in the Description }}
 
 ### [Set-MgBetaDeviceAppManagementManagedEBook](Set-MgBetaDeviceAppManagementManagedEBook.md)
-Invoke action assign
+{{ Fill in the Description }}
 
 ### [Set-MgBetaDeviceAppManagementMobileApp](Set-MgBetaDeviceAppManagementMobileApp.md)
-Invoke action assign
+{{ Fill in the Description }}
 
 ### [Set-MgBetaDeviceAppManagementMobileAppConfiguration](Set-MgBetaDeviceAppManagementMobileAppConfiguration.md)
-Invoke action assign
+{{ Fill in the Description }}
 
 ### [Set-MgBetaDeviceAppManagementTargetedManagedAppConfiguration](Set-MgBetaDeviceAppManagementTargetedManagedAppConfiguration.md)
-Invoke action assign
+{{ Fill in the Description }}
 
 ### [Set-MgBetaDeviceAppManagementWdacSupplementalPolicy](Set-MgBetaDeviceAppManagementWdacSupplementalPolicy.md)
-Invoke action assign
+{{ Fill in the Description }}
 
 ### [Set-MgBetaDeviceAppManagementWindowsManagedAppProtection](Set-MgBetaDeviceAppManagementWindowsManagedAppProtection.md)
-Invoke action assign
+{{ Fill in the Description }}
 
 ### [Sync-MgBetaDeviceAppManagementMicrosoftStoreForBusinessApp](Sync-MgBetaDeviceAppManagementMicrosoftStoreForBusinessApp.md)
-Syncs Intune account with Microsoft Store For Business
+{{ Fill in the Description }}
 
 ### [Sync-MgBetaDeviceAppManagementVppTokenLicense](Sync-MgBetaDeviceAppManagementVppTokenLicense.md)
-Syncs licenses associated with a specific appleVolumePurchaseProgramToken
+{{ Fill in the Description }}
 
 ### [Sync-MgBetaDeviceAppManagementVppTokenLicenseCount](Sync-MgBetaDeviceAppManagementVppTokenLicenseCount.md)
-Invoke action syncLicenseCounts
+{{ Fill in the Description }}
 
 ### [Test-MgBetaDeviceAppManagementMobileAppXml](Test-MgBetaDeviceAppManagementMobileAppXml.md)
-Invoke action validateXml
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagement](Update-MgBetaDeviceAppManagement.md)
-Update deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementAndroidManagedAppProtection](Update-MgBetaDeviceAppManagementAndroidManagedAppProtection.md)
-Update the navigation property androidManagedAppProtections in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementAndroidManagedAppProtectionApp](Update-MgBetaDeviceAppManagementAndroidManagedAppProtectionApp.md)
-Update the navigation property apps in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementAndroidManagedAppProtectionAssignment](Update-MgBetaDeviceAppManagementAndroidManagedAppProtectionAssignment.md)
-Update the navigation property assignments in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary](Update-MgBetaDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary.md)
-Update the navigation property deploymentSummary in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementDefaultManagedAppProtection](Update-MgBetaDeviceAppManagementDefaultManagedAppProtection.md)
-Update the navigation property defaultManagedAppProtections in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementDefaultManagedAppProtectionApp](Update-MgBetaDeviceAppManagementDefaultManagedAppProtectionApp.md)
-Update the navigation property apps in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementDefaultManagedAppProtectionDeploymentSummary](Update-MgBetaDeviceAppManagementDefaultManagedAppProtectionDeploymentSummary.md)
-Update the navigation property deploymentSummary in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementEnterpriseCodeSigningCertificate](Update-MgBetaDeviceAppManagementEnterpriseCodeSigningCertificate.md)
-Update the navigation property enterpriseCodeSigningCertificates in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementiOSLobAppProvisioningConfiguration](Update-MgBetaDeviceAppManagementiOSLobAppProvisioningConfiguration.md)
-Update the navigation property iosLobAppProvisioningConfigurations in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationAssignment](Update-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationAssignment.md)
-Update the navigation property assignments in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationDeviceStatus](Update-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationDeviceStatus.md)
-Update the navigation property deviceStatuses in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationGroupAssignment](Update-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationGroupAssignment.md)
-Update the navigation property groupAssignments in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationUserStatus](Update-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationUserStatus.md)
-Update the navigation property userStatuses in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementiOSManagedAppProtection](Update-MgBetaDeviceAppManagementiOSManagedAppProtection.md)
-Update the navigation property iosManagedAppProtections in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementiOSManagedAppProtectionApp](Update-MgBetaDeviceAppManagementiOSManagedAppProtectionApp.md)
-Update the navigation property apps in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignment](Update-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignment.md)
-Update the navigation property assignments in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementiOSManagedAppProtectionDeploymentSummary](Update-MgBetaDeviceAppManagementiOSManagedAppProtectionDeploymentSummary.md)
-Update the navigation property deploymentSummary in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementManagedAppPolicy](Update-MgBetaDeviceAppManagementManagedAppPolicy.md)
-Update the navigation property managedAppPolicies in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementManagedAppRegistration](Update-MgBetaDeviceAppManagementManagedAppRegistration.md)
-Update the navigation property managedAppRegistrations in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementManagedAppRegistrationAppliedPolicy](Update-MgBetaDeviceAppManagementManagedAppRegistrationAppliedPolicy.md)
-Update the navigation property appliedPolicies in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicy](Update-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicy.md)
-Update the navigation property intendedPolicies in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementManagedAppRegistrationOperation](Update-MgBetaDeviceAppManagementManagedAppRegistrationOperation.md)
-Update the navigation property operations in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementManagedAppStatus](Update-MgBetaDeviceAppManagementManagedAppStatus.md)
-Update the navigation property managedAppStatuses in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementManagedEBook](Update-MgBetaDeviceAppManagementManagedEBook.md)
-Update the navigation property managedEBooks in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementManagedEBookAssignment](Update-MgBetaDeviceAppManagementManagedEBookAssignment.md)
-Update the navigation property assignments in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementManagedEBookCategory](Update-MgBetaDeviceAppManagementManagedEBookCategory.md)
-Update the navigation property managedEBookCategories in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementManagedEBookDeviceState](Update-MgBetaDeviceAppManagementManagedEBookDeviceState.md)
-Update the navigation property deviceStates in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementManagedEBookInstallSummary](Update-MgBetaDeviceAppManagementManagedEBookInstallSummary.md)
-Update the navigation property installSummary in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementManagedEBookUserStateSummary](Update-MgBetaDeviceAppManagementManagedEBookUserStateSummary.md)
-Update the navigation property userStateSummary in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementManagedEBookUserStateSummaryDeviceState](Update-MgBetaDeviceAppManagementManagedEBookUserStateSummaryDeviceState.md)
-Update the navigation property deviceStates in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy](Update-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy.md)
-Update the navigation property mdmWindowsInformationProtectionPolicies in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment](Update-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment.md)
-Update the navigation property assignments in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile](Update-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile.md)
-Update the navigation property exemptAppLockerFiles in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile](Update-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
-Update the navigation property protectedAppLockerFiles in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileApp](Update-MgBetaDeviceAppManagementMobileApp.md)
-Update the navigation property mobileApps in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppAssignment.md)
-Update the navigation property assignments in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppRelationship.md)
-Update the navigation property relationships in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppAssignment.md)
-Update the navigation property assignments in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersion](Update-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersion.md)
-Update the navigation property contentVersions in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp](Update-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp.md)
-Update the navigation property containedApps in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile](Update-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile.md)
-Update the navigation property files in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppRelationship.md)
-Update the navigation property relationships in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppAssignment.md)
-Update the navigation property assignments in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppRelationship.md)
-Update the navigation property relationships in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppAssignment.md)
-Update the navigation property assignments in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppRelationship.md)
-Update the navigation property relationships in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsiOSLobAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAsiOSLobAppAssignment.md)
-Update the navigation property assignments in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersion](Update-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersion.md)
-Update the navigation property contentVersions in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp](Update-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp.md)
-Update the navigation property containedApps in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile](Update-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile.md)
-Update the navigation property files in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsiOSLobAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsiOSLobAppRelationship.md)
-Update the navigation property relationships in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsIoStoreAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAsIoStoreAppAssignment.md)
-Update the navigation property assignments in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsIoStoreAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsIoStoreAppRelationship.md)
-Update the navigation property relationships in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignedLicense](Update-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignedLicense.md)
-Update the navigation property assignedLicenses in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignment.md)
-Update the navigation property assignments in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsIoVppAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsIoVppAppRelationship.md)
-Update the navigation property relationships in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppAssignment.md)
-Update the navigation property assignments in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion](Update-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion.md)
-Update the navigation property contentVersions in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp](Update-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp.md)
-Update the navigation property containedApps in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile](Update-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile.md)
-Update the navigation property files in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppRelationship.md)
-Update the navigation property relationships in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppAssignment.md)
-Update the navigation property assignments in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersion](Update-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersion.md)
-Update the navigation property contentVersions in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp](Update-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp.md)
-Update the navigation property containedApps in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile](Update-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile.md)
-Update the navigation property files in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppRelationship.md)
-Update the navigation property relationships in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppAssignment.md)
-Update the navigation property assignments in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersion](Update-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersion.md)
-Update the navigation property contentVersions in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionContainedApp](Update-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionContainedApp.md)
-Update the navigation property containedApps in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionFile](Update-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionFile.md)
-Update the navigation property files in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppRelationship.md)
-Update the navigation property relationships in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment.md)
-Update the navigation property assignments in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion](Update-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion.md)
-Update the navigation property contentVersions in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp](Update-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp.md)
-Update the navigation property containedApps in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile](Update-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile.md)
-Update the navigation property files in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppRelationship.md)
-Update the navigation property relationships in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppAssignment.md)
-Update the navigation property assignments in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion](Update-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion.md)
-Update the navigation property contentVersions in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp](Update-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp.md)
-Update the navigation property containedApps in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile](Update-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile.md)
-Update the navigation property files in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppRelationship.md)
-Update the navigation property relationships in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment.md)
-Update the navigation property assignments in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion](Update-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion.md)
-Update the navigation property contentVersions in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp](Update-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp.md)
-Update the navigation property containedApps in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile](Update-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile.md)
-Update the navigation property files in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppRelationship.md)
-Update the navigation property relationships in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment.md)
-Update the navigation property assignments in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppContainedApp](Update-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppContainedApp.md)
-Update the navigation property containedApps in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppRelationship.md)
-Update the navigation property relationships in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAssignment.md)
-Update the navigation property assignments in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWin32LobAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAsWin32LobAppAssignment.md)
-Update the navigation property assignments in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersion](Update-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersion.md)
-Update the navigation property contentVersions in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp](Update-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp.md)
-Update the navigation property containedApps in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile](Update-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile.md)
-Update the navigation property files in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWin32LobAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsWin32LobAppRelationship.md)
-Update the navigation property relationships in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsAppXAssignment](Update-MgBetaDeviceAppManagementMobileAppAsWindowsAppXAssignment.md)
-Update the navigation property assignments in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersion](Update-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersion.md)
-Update the navigation property contentVersions in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp](Update-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp.md)
-Update the navigation property containedApps in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile](Update-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile.md)
-Update the navigation property files in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsAppXRelationship](Update-MgBetaDeviceAppManagementMobileAppAsWindowsAppXRelationship.md)
-Update the navigation property relationships in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment](Update-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment.md)
-Update the navigation property assignments in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion](Update-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion.md)
-Update the navigation property contentVersions in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp](Update-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp.md)
-Update the navigation property containedApps in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile](Update-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile.md)
-Update the navigation property files in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiRelationship](Update-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiRelationship.md)
-Update the navigation property relationships in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppAssignment.md)
-Update the navigation property assignments in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppRelationship.md)
-Update the navigation property relationships in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment](Update-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment.md)
-Update the navigation property assignments in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp](Update-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp.md)
-Update the navigation property committedContainedApps in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion](Update-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion.md)
-Update the navigation property contentVersions in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp](Update-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp.md)
-Update the navigation property containedApps in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile](Update-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile.md)
-Update the navigation property files in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXRelationship](Update-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXRelationship.md)
-Update the navigation property relationships in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppAssignment.md)
-Update the navigation property assignments in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppRelationship.md)
-Update the navigation property relationships in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWinGetAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAsWinGetAppAssignment.md)
-Update the navigation property assignments in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWinGetAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsWinGetAppRelationship.md)
-Update the navigation property relationships in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppCategory](Update-MgBetaDeviceAppManagementMobileAppCategory.md)
-Update the navigation property mobileAppCategories in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppConfiguration](Update-MgBetaDeviceAppManagementMobileAppConfiguration.md)
-Update the navigation property mobileAppConfigurations in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppConfigurationAssignment](Update-MgBetaDeviceAppManagementMobileAppConfigurationAssignment.md)
-Update the navigation property assignments in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatus](Update-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatus.md)
-Update the navigation property deviceStatuses in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatusSummary](Update-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatusSummary.md)
-Update the navigation property deviceStatusSummary in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppConfigurationUserStatus](Update-MgBetaDeviceAppManagementMobileAppConfigurationUserStatus.md)
-Update the navigation property userStatuses in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppConfigurationUserStatusSummary](Update-MgBetaDeviceAppManagementMobileAppConfigurationUserStatusSummary.md)
-Update the navigation property userStatusSummary in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppRelationship](Update-MgBetaDeviceAppManagementMobileAppRelationship.md)
-Update the navigation property relationships in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMultipleMobileAppRelationship](Update-MgBetaDeviceAppManagementMultipleMobileAppRelationship.md)
-Invoke action updateRelationships
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMultiplePolicySet](Update-MgBetaDeviceAppManagementMultiplePolicySet.md)
-Invoke action update
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementPolicySet](Update-MgBetaDeviceAppManagementPolicySet.md)
-Update the navigation property policySets in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementPolicySetAssignment](Update-MgBetaDeviceAppManagementPolicySetAssignment.md)
-Update the navigation property assignments in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementPolicySetItem](Update-MgBetaDeviceAppManagementPolicySetItem.md)
-Update the navigation property items in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementSymantecCodeSigningCertificate](Update-MgBetaDeviceAppManagementSymantecCodeSigningCertificate.md)
-Update the navigation property symantecCodeSigningCertificate in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementTargetedManagedAppConfiguration](Update-MgBetaDeviceAppManagementTargetedManagedAppConfiguration.md)
-Update the navigation property targetedManagedAppConfigurations in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementTargetedManagedAppConfigurationApp](Update-MgBetaDeviceAppManagementTargetedManagedAppConfigurationApp.md)
-Update the navigation property apps in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementTargetedManagedAppConfigurationAssignment](Update-MgBetaDeviceAppManagementTargetedManagedAppConfigurationAssignment.md)
-Update the navigation property assignments in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementTargetedManagedAppConfigurationDeploymentSummary](Update-MgBetaDeviceAppManagementTargetedManagedAppConfigurationDeploymentSummary.md)
-Update the navigation property deploymentSummary in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting](Update-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting.md)
-Update the navigation property settings in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementTask](Update-MgBetaDeviceAppManagementTask.md)
-Update the navigation property deviceAppManagementTasks in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementTaskStatus](Update-MgBetaDeviceAppManagementTaskStatus.md)
-Set the task's status and attach a note.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementVppToken](Update-MgBetaDeviceAppManagementVppToken.md)
-Update the navigation property vppTokens in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementWdacSupplementalPolicy](Update-MgBetaDeviceAppManagementWdacSupplementalPolicy.md)
-Update the navigation property wdacSupplementalPolicies in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementWdacSupplementalPolicyAssignment](Update-MgBetaDeviceAppManagementWdacSupplementalPolicyAssignment.md)
-Update the navigation property assignments in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementWdacSupplementalPolicyDeploySummary](Update-MgBetaDeviceAppManagementWdacSupplementalPolicyDeploySummary.md)
-Update the navigation property deploySummary in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementWdacSupplementalPolicyDeviceStatus](Update-MgBetaDeviceAppManagementWdacSupplementalPolicyDeviceStatus.md)
-Update the navigation property deviceStatuses in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistration](Update-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistration.md)
-Update the navigation property windowsInformationProtectionDeviceRegistrations in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy](Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy.md)
-Update the navigation property windowsInformationProtectionPolicies in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyAssignment](Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyAssignment.md)
-Update the navigation property assignments in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile](Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile.md)
-Update the navigation property exemptAppLockerFiles in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile](Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
-Update the navigation property protectedAppLockerFiles in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction](Update-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction.md)
-Update the navigation property windowsInformationProtectionWipeActions in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementWindowsManagedAppProtection](Update-MgBetaDeviceAppManagementWindowsManagedAppProtection.md)
-Update the navigation property windowsManagedAppProtections in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementWindowsManagedAppProtectionApp](Update-MgBetaDeviceAppManagementWindowsManagedAppProtectionApp.md)
-Update the navigation property apps in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementWindowsManagedAppProtectionAssignment](Update-MgBetaDeviceAppManagementWindowsManagedAppProtectionAssignment.md)
-Update the navigation property assignments in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaUserDeviceEnrollmentConfiguration](Update-MgBetaUserDeviceEnrollmentConfiguration.md)
-Update the navigation property deviceEnrollmentConfigurations in users
+{{ Fill in the Description }}
 
 ### [Update-MgBetaUserDeviceEnrollmentConfigurationAssignment](Update-MgBetaUserDeviceEnrollmentConfigurationAssignment.md)
-Update the navigation property assignments in users
+{{ Fill in the Description }}
 
 ### [Update-MgBetaUserDeviceManagementTroubleshootingEvent](Update-MgBetaUserDeviceManagementTroubleshootingEvent.md)
-Update the navigation property deviceManagementTroubleshootingEvents in users
+{{ Fill in the Description }}
 
 ### [Update-MgBetaUserManagedDevice](Update-MgBetaUserManagedDevice.md)
-Update the navigation property managedDevices in users
+{{ Fill in the Description }}
 
 ### [Update-MgBetaUserManagedDeviceAssignmentFilterEvaluationStatusDetail](Update-MgBetaUserManagedDeviceAssignmentFilterEvaluationStatusDetail.md)
-Update the navigation property assignmentFilterEvaluationStatusDetails in users
+{{ Fill in the Description }}
 
 ### [Update-MgBetaUserManagedDeviceCategory](Update-MgBetaUserManagedDeviceCategory.md)
-Update the navigation property deviceCategory in users
+{{ Fill in the Description }}
 
 ### [Update-MgBetaUserManagedDeviceCompliancePolicyState](Update-MgBetaUserManagedDeviceCompliancePolicyState.md)
-Update the navigation property deviceCompliancePolicyStates in users
+{{ Fill in the Description }}
 
 ### [Update-MgBetaUserManagedDeviceConfigurationState](Update-MgBetaUserManagedDeviceConfigurationState.md)
-Update the navigation property deviceConfigurationStates in users
+{{ Fill in the Description }}
 
 ### [Update-MgBetaUserManagedDeviceHealthScriptState](Update-MgBetaUserManagedDeviceHealthScriptState.md)
-Update the navigation property deviceHealthScriptStates in users
+{{ Fill in the Description }}
 
 ### [Update-MgBetaUserManagedDeviceLogCollectionResponse](Update-MgBetaUserManagedDeviceLogCollectionResponse.md)
-Update the navigation property logCollectionRequests in users
+{{ Fill in the Description }}
 
 ### [Update-MgBetaUserManagedDeviceMobileAppConfigurationState](Update-MgBetaUserManagedDeviceMobileAppConfigurationState.md)
-Update the navigation property managedDeviceMobileAppConfigurationStates in users
+{{ Fill in the Description }}
 
 ### [Update-MgBetaUserManagedDeviceSecurityBaselineState](Update-MgBetaUserManagedDeviceSecurityBaselineState.md)
-Update the navigation property securityBaselineStates in users
+{{ Fill in the Description }}
 
 ### [Update-MgBetaUserManagedDeviceSecurityBaselineStateSettingState](Update-MgBetaUserManagedDeviceSecurityBaselineStateSettingState.md)
-Update the navigation property settingStates in users
+{{ Fill in the Description }}
 
 ### [Update-MgBetaUserManagedDeviceWindowsProtectionState](Update-MgBetaUserManagedDeviceWindowsProtectionState.md)
-Update the navigation property windowsProtectionState in users
+{{ Fill in the Description }}
 
 ### [Update-MgBetaUserManagedDeviceWindowsProtectionStateDetectedMalwareState](Update-MgBetaUserManagedDeviceWindowsProtectionStateDetectedMalwareState.md)
-Update the navigation property detectedMalwareState in users
+{{ Fill in the Description }}
 
 ### [Update-MgBetaUserMobileAppIntentAndState](Update-MgBetaUserMobileAppIntentAndState.md)
-Update the navigation property mobileAppIntentAndStates in users
+{{ Fill in the Description }}
 
 ### [Update-MgBetaUserMobileAppTroubleshootingEvent](Update-MgBetaUserMobileAppTroubleshootingEvent.md)
-Update the navigation property mobileAppTroubleshootingEvents in users
+{{ Fill in the Description }}
 
 ### [Update-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest](Update-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Update the navigation property appLogCollectionRequests in users
+{{ Fill in the Description }}
 

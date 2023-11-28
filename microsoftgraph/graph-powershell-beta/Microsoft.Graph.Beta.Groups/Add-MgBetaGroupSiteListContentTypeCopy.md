@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/add-mgbetagroupsitelistcontenttypecopy
@@ -8,10 +8,8 @@ schema: 2.0.0
 # Add-MgBetaGroupSiteListContentTypeCopy
 
 ## SYNOPSIS
-Add a copy of a \[content type\]\[contentType\] from a \[site\]\[site\] to a \[list\]\[list\].
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Add-MgGroupSiteListContentTypeCopy](/powershell/module/Microsoft.Graph.Groups/Add-MgGroupSiteListContentTypeCopy?view=graph-powershell-1.0)
+Add a copy of a content type\]\[contentType\] from a \[site\]\[site\] to a \[list\]\[list\].
+This API is available in the following \[national cloud deployments.
 
 ## SYNTAX
 
@@ -42,7 +40,20 @@ Add-MgBetaGroupSiteListContentTypeCopy -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Add a copy of a \[content type\]\[contentType\] from a \[site\]\[site\] to a \[list\]\[list\].
+Add a copy of a content type\]\[contentType\] from a \[site\]\[site\] to a \[list\]\[list\].
+This API is available in the following \[national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -248,8 +259,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Add-MgGroupSiteListContentTypeCopy](/powershell/module/Microsoft.Graph.Groups/Add-MgGroupSiteListContentTypeCopy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/add-mgbetagroupsitelistcontenttypecopy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/add-mgbetagroupsitelistcontenttypecopy)
-
 

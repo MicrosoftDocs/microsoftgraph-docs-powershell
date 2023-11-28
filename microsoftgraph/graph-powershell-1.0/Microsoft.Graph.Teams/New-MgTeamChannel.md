@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamchannel
@@ -13,9 +13,6 @@ When you create a channel, the maximum length of the channel's displayName is 50
 This is the name that appears to the user in Microsoft Teams.
 If you're creating a private channel, you can add a maximum of 200 members.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamChannel?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -61,11 +58,11 @@ If you're creating a private channel, you can add a maximum of 200 members.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Create a standard channel
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	displayName = "Architecture Discussion"
@@ -75,14 +72,10 @@ $params = @{
 
 New-MgTeamChannel -TeamId $teamId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will create a standard channel
-
-### Example 2: Create private channel on behalf of user
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	"@odata.type" = "#Microsoft.Graph.channel"
@@ -102,32 +95,24 @@ $params = @{
 
 New-MgTeamChannel -TeamId $teamId -BodyParameter $params
 
+### EXAMPLE 3
 ```
-This example will create private channel on behalf of user
-
-### Example 3: Create a channel in migration mode
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	"@microsoft.graph.channelCreationMode" = "migration"
 	displayName = "Import_150958_99z"
 	description = "Import_150958_99z"
-	createdDateTime = [System.DateTime]::Parse("2020-03-14T11:22:17.067Z")
+	createdDateTime = \[System.DateTime\]::Parse("2020-03-14T11:22:17.067Z")
 }
 
 New-MgTeamChannel -TeamId $teamId -BodyParameter $params
 
+### EXAMPLE 4
 ```
-This example will create a channel in migration mode
-
-### Example 4: Create private channel on behalf of user using user principal name
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	"@odata.type" = "#Microsoft.Graph.channel"
@@ -147,14 +132,10 @@ $params = @{
 
 New-MgTeamChannel -TeamId $teamId -BodyParameter $params
 
+### EXAMPLE 5
 ```
-This example will create private channel on behalf of user using user principal name
-
-### Example 5: Create a shared channel on behalf of a user
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	displayName = "My First Shared Channel"
@@ -172,10 +153,6 @@ $params = @{
 }
 
 New-MgTeamChannel -TeamId $teamId -BodyParameter $params
-
-```
-This example will create a shared channel on behalf of a user
-
 
 ## PARAMETERS
 
@@ -14473,7 +14450,6 @@ For example, if a user changes their display name, the API might show the new va
 Read only.
 
 ## RELATED LINKS
-[New-MgBetaTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamChannel?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamchannel)
 

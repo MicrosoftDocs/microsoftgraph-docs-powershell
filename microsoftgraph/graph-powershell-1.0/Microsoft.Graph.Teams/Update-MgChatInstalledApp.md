@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgchatinstalledapp
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Upgrade an app installation within a chat.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChatInstalledApp?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,22 +46,18 @@ Upgrade an app installation within a chat.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Upgrade the teams app installed in chat
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 Update-MgChatInstalledApp -ChatId $chatId -TeamsAppInstallationId $teamsAppInstallationId
 
+### EXAMPLE 2
 ```
-This example will upgrade the teams app installed in chat
-
-### Example 2: Upgrade app installed in a chat and consent to the resource specific permissions
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	consentedPermissionSet = @{
@@ -82,10 +75,6 @@ $params = @{
 }
 
 Update-MgChatInstalledApp -ChatId $chatId -TeamsAppInstallationId $teamsAppInstallationId -BodyParameter $params
-
-```
-This example will upgrade app installed in a chat and consent to the resource specific permissions
-
 
 ## PARAMETERS
 
@@ -293,7 +282,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Update-MgBetaChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChatInstalledApp?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgchatinstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgchatinstalledapp)
 

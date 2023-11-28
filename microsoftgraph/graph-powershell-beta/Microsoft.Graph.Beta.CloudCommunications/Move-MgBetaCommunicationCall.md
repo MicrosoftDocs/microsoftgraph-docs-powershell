@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/move-mgbetacommunicationcall
@@ -12,9 +12,6 @@ Transfer an active peer-to-peer call or group call.
 A consultative transfer means that the transferor can inform the person they want to transfer the call to (the transferee), before the transfer is made.
 This is opposed to transfering the call directly.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Move-MgCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Move-MgCommunicationCall?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -53,11 +50,11 @@ This is opposed to transfering the call directly.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Call transfer from a peer-to-peer call
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	transferTarget = @{
@@ -76,14 +73,10 @@ $params = @{
 
 Move-MgBetaCommunicationCall -CallId $callId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will call transfer from a peer-to-peer call
-
-### Example 2: Consultative transfer from a peer-to-peer call
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	transferTarget = @{
@@ -106,14 +99,10 @@ $params = @{
 
 Move-MgBetaCommunicationCall -CallId $callId -BodyParameter $params
 
+### EXAMPLE 3
 ```
-This example will consultative transfer from a peer-to-peer call
-
-### Example 3: Call transfer from a peer-to-peer call to PSTN number
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	transferTarget = @{
@@ -131,14 +120,10 @@ $params = @{
 
 Move-MgBetaCommunicationCall -CallId $callId -BodyParameter $params
 
+### EXAMPLE 4
 ```
-This example will call transfer from a peer-to-peer call to pstn number
-
-### Example 4: Consultative transfer from a peer-to-peer call to PSTN number
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	transferTarget = @{
@@ -159,14 +144,10 @@ $params = @{
 
 Move-MgBetaCommunicationCall -CallId $callId -BodyParameter $params
 
+### EXAMPLE 5
 ```
-This example will consultative transfer from a peer-to-peer call to pstn number
-
-### Example 5: Call transfer from a group call
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	transferTarget = @{
@@ -193,10 +174,6 @@ $params = @{
 }
 
 Move-MgBetaCommunicationCall -CallId $callId -BodyParameter $params
-
-```
-This example will call transfer from a group call
-
 
 ## PARAMETERS
 
@@ -272,7 +249,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -351,95 +328,122 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+BODYPARAMETER \<IPaths4Zbm7LCommunicationsCallsCallIdMicrosoftGraphTransferPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[TransferTarget \<IMicrosoftGraphInvitationParticipantInfo\>\]: invitationParticipantInfo
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[EndpointType \<String\>\]: endpointType
+    \[Hidden \<Boolean?\>\]: Optional.
+Whether to hide the participant from the roster.
+    \[Identity \<IMicrosoftGraphIdentitySet\>\]: identitySet
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Application \<IMicrosoftGraphIdentity\>\]: identity
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[DisplayName \<String\>\]: The display name of the identity.
+This property is read-only.
+        \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
+      \[Device \<IMicrosoftGraphIdentity\>\]: identity
+      \[User \<IMicrosoftGraphIdentity\>\]: identity
+    \[ParticipantId \<String\>\]: Optional.
+The ID of the target participant.
+    \[RemoveFromDefaultAudioRoutingGroup \<Boolean?\>\]: Optional.
+Whether to remove them from the main mixer.
+    \[ReplacesCallId \<String\>\]: Optional.
+The call which the target identity is currently a part of.
+For peer-to-peer case, the call will be dropped once the participant is added successfully.
+  \[Transferee \<IMicrosoftGraphParticipantInfo\>\]: participantInfo
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[CountryCode \<String\>\]: The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call.
+Read-only.
+    \[EndpointType \<String\>\]: endpointType
+    \[Identity \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[LanguageId \<String\>\]: The language culture string.
+Read-only.
+    \[NonAnonymizedIdentity \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[ParticipantId \<String\>\]: The participant ID of the participant.
+Read-only.
+    \[PlatformId \<String\>\]: The client platform ID of the participant.
+Read-only.
+    \[Region \<String\>\]: The home region of the participant, and can be a country, a continent, or a larger geographic region.
+The region doesn't change based on the participant's current physical location, unlike countryCode.
+Read-only.
 
-`BODYPARAMETER <IPaths4Zbm7LCommunicationsCallsCallIdMicrosoftGraphTransferPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[TransferTarget <IMicrosoftGraphInvitationParticipantInfo>]`: invitationParticipantInfo
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[EndpointType <String>]`: endpointType
-    - `[Hidden <Boolean?>]`: Optional. Whether to hide the participant from the roster.
-    - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Application <IMicrosoftGraphIdentity>]`: identity
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-        - `[Id <String>]`: The identifier of the identity. This property is read-only.
-      - `[Device <IMicrosoftGraphIdentity>]`: identity
-      - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[ParticipantId <String>]`: Optional. The ID of the target participant.
-    - `[RemoveFromDefaultAudioRoutingGroup <Boolean?>]`: Optional. Whether to remove them from the main mixer.
-    - `[ReplacesCallId <String>]`: Optional. The call which the target identity is currently a part of. For peer-to-peer case, the call will be dropped once the participant is added successfully.
-  - `[Transferee <IMicrosoftGraphParticipantInfo>]`: participantInfo
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CountryCode <String>]`: The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call. Read-only.
-    - `[EndpointType <String>]`: endpointType
-    - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[LanguageId <String>]`: The language culture string. Read-only.
-    - `[NonAnonymizedIdentity <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[ParticipantId <String>]`: The participant ID of the participant. Read-only.
-    - `[PlatformId <String>]`: The client platform ID of the participant. Read-only.
-    - `[Region <String>]`: The home region of the participant, and can be a country, a continent, or a larger geographic region. The region doesn't change based on the participant's current physical location, unlike countryCode. Read-only.
+INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
+  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
+  \[AudioRoutingGroupId \<String\>\]: The unique identifier of audioRoutingGroup
+  \[CallId \<String\>\]: The unique identifier of call
+  \[CallRecordId \<String\>\]: The unique identifier of callRecord
+  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
+  \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
+  \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
+  \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession
+  \[FromDateTime \<DateTime?\>\]: Usage: fromDateTime={fromDateTime}
+  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
+  \[MeetingRegistrantBaseId \<String\>\]: The unique identifier of meetingRegistrantBase
+  \[MeetingRegistrationQuestionId \<String\>\]: The unique identifier of meetingRegistrationQuestion
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
+  \[ParticipantId \<String\>\]: The unique identifier of participant
+  \[PresenceId \<String\>\]: The unique identifier of presence
+  \[SessionId \<String\>\]: The unique identifier of session
+  \[ToDateTime \<DateTime?\>\]: Usage: toDateTime={toDateTime}
+  \[UserId \<String\>\]: The unique identifier of user
 
-`INPUTOBJECT <ICloudCommunicationsIdentity>`: Identity Parameter
-  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
-  - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
-  - `[CallId <String>]`: The unique identifier of call
-  - `[CallRecordId <String>]`: The unique identifier of callRecord
-  - `[CallRecordingId <String>]`: The unique identifier of callRecording
-  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
-  - `[CommsOperationId <String>]`: The unique identifier of commsOperation
-  - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
-  - `[FromDateTime <DateTime?>]`: Usage: fromDateTime={fromDateTime}
-  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
-  - `[MeetingRegistrantBaseId <String>]`: The unique identifier of meetingRegistrantBase
-  - `[MeetingRegistrationQuestionId <String>]`: The unique identifier of meetingRegistrationQuestion
-  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
-  - `[ParticipantId <String>]`: The unique identifier of participant
-  - `[PresenceId <String>]`: The unique identifier of presence
-  - `[SessionId <String>]`: The unique identifier of session
-  - `[ToDateTime <DateTime?>]`: Usage: toDateTime={toDateTime}
-  - `[UserId <String>]`: The unique identifier of user
+TRANSFEREE \<IMicrosoftGraphParticipantInfo\>: participantInfo
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[CountryCode \<String\>\]: The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call.
+Read-only.
+  \[EndpointType \<String\>\]: endpointType
+  \[Identity \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Application \<IMicrosoftGraphIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name of the identity.
+This property is read-only.
+      \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
+    \[Device \<IMicrosoftGraphIdentity\>\]: identity
+    \[User \<IMicrosoftGraphIdentity\>\]: identity
+  \[LanguageId \<String\>\]: The language culture string.
+Read-only.
+  \[NonAnonymizedIdentity \<IMicrosoftGraphIdentitySet\>\]: identitySet
+  \[ParticipantId \<String\>\]: The participant ID of the participant.
+Read-only.
+  \[PlatformId \<String\>\]: The client platform ID of the participant.
+Read-only.
+  \[Region \<String\>\]: The home region of the participant, and can be a country, a continent, or a larger geographic region.
+The region doesn't change based on the participant's current physical location, unlike countryCode.
+Read-only.
 
-`TRANSFEREE <IMicrosoftGraphParticipantInfo>`: participantInfo
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CountryCode <String>]`: The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call. Read-only.
-  - `[EndpointType <String>]`: endpointType
-  - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[LanguageId <String>]`: The language culture string. Read-only.
-  - `[NonAnonymizedIdentity <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[ParticipantId <String>]`: The participant ID of the participant. Read-only.
-  - `[PlatformId <String>]`: The client platform ID of the participant. Read-only.
-  - `[Region <String>]`: The home region of the participant, and can be a country, a continent, or a larger geographic region. The region doesn't change based on the participant's current physical location, unlike countryCode. Read-only.
-
-`TRANSFERTARGET <IMicrosoftGraphInvitationParticipantInfo>`: invitationParticipantInfo
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[EndpointType <String>]`: endpointType
-  - `[Hidden <Boolean?>]`: Optional. Whether to hide the participant from the roster.
-  - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[ParticipantId <String>]`: Optional. The ID of the target participant.
-  - `[RemoveFromDefaultAudioRoutingGroup <Boolean?>]`: Optional. Whether to remove them from the main mixer.
-  - `[ReplacesCallId <String>]`: Optional. The call which the target identity is currently a part of. For peer-to-peer case, the call will be dropped once the participant is added successfully.
+TRANSFERTARGET \<IMicrosoftGraphInvitationParticipantInfo\>: invitationParticipantInfo
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[EndpointType \<String\>\]: endpointType
+  \[Hidden \<Boolean?\>\]: Optional.
+Whether to hide the participant from the roster.
+  \[Identity \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Application \<IMicrosoftGraphIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name of the identity.
+This property is read-only.
+      \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
+    \[Device \<IMicrosoftGraphIdentity\>\]: identity
+    \[User \<IMicrosoftGraphIdentity\>\]: identity
+  \[ParticipantId \<String\>\]: Optional.
+The ID of the target participant.
+  \[RemoveFromDefaultAudioRoutingGroup \<Boolean?\>\]: Optional.
+Whether to remove them from the main mixer.
+  \[ReplacesCallId \<String\>\]: Optional.
+The call which the target identity is currently a part of.
+For peer-to-peer case, the call will be dropped once the participant is added successfully.
 
 ## RELATED LINKS
-[Move-MgCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Move-MgCommunicationCall?view=graph-powershell-1.0)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/move-mgbetacommunicationcall](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/move-mgbetacommunicationcall)
+

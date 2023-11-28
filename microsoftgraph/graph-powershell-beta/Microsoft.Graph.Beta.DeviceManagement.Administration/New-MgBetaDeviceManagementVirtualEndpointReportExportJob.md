@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointreportexportjob
@@ -34,6 +34,22 @@ Create a new cloudPcExportJob resource to initiate downloading the entire or spe
 Use the GET cloudPcExportJob operation to verify the exportJobStatus property of the cloudPcExportJob resource.
 When the property result is completed, the report has finished downloading to the location specified by the exportUrl property.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -246,25 +262,26 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcExportJob
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`BODYPARAMETER <IMicrosoftGraphCloudPcExportJob>`: cloudPcExportJob
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[ExpirationDateTime <DateTime?>]`: The date and time when the export job expires.
-  - `[ExportJobStatus <String>]`: cloudPcExportJobStatus
-  - `[ExportUrl <String>]`: The storage account URL of the exported report. It can be used to download the file.
-  - `[Filter <String>]`: The filter applied on the report.
-  - `[Format <String>]`: The format of the exported report.
-  - `[ReportName <String>]`: cloudPcReportName
-  - `[RequestDateTime <DateTime?>]`: The date and time when the export job was requested.
-  - `[Select <String[]>]`: The selected columns of the report.
+BODYPARAMETER \<IMicrosoftGraphCloudPcExportJob\>: cloudPcExportJob
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[ExpirationDateTime \<DateTime?\>\]: The date and time when the export job expires.
+  \[ExportJobStatus \<String\>\]: cloudPcExportJobStatus
+  \[ExportUrl \<String\>\]: The storage account URL of the exported report.
+It can be used to download the file.
+  \[Filter \<String\>\]: The filter applied on the report.
+  \[Format \<String\>\]: The format of the exported report.
+  \[ReportName \<String\>\]: cloudPcReportName
+  \[RequestDateTime \<DateTime?\>\]: The date and time when the export job was requested.
+  \[Select \<String\[\]\>\]: The selected columns of the report.
 
 ## RELATED LINKS
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointreportexportjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointreportexportjob)
 

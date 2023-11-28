@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgdatapolicyoperation
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Add new entity to dataPolicyOperations
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDataPolicyOperation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaDataPolicyOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -32,6 +29,20 @@ New-MgDataPolicyOperation -BodyParameter <IMicrosoftGraphDataPolicyOperation> [-
 Add new entity to dataPolicyOperations
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -109,7 +120,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -216,25 +227,26 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDataPolicyOperation
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`BODYPARAMETER <IMicrosoftGraphDataPolicyOperation>`: dataPolicyOperation
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[CompletedDateTime <DateTime?>]`: Represents when the request for this data policy operation was completed, in UTC time, using the ISO 8601 format. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Null until the operation completes.
-  - `[Progress <Double?>]`: Specifies the progress of an operation.
-  - `[Status <String>]`: dataPolicyOperationStatus
-  - `[StorageLocation <String>]`: The URL location to where data is being exported for export requests.
-  - `[SubmittedDateTime <DateTime?>]`: Represents when the request for this data operation was submitted, in UTC time, using the ISO 8601 format. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[UserId <String>]`: The id for the user on whom the operation is performed.
+BODYPARAMETER \<IMicrosoftGraphDataPolicyOperation\>: dataPolicyOperation
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[CompletedDateTime \<DateTime?\>\]: Represents when the request for this data policy operation was completed, in UTC time, using the ISO 8601 format.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Null until the operation completes.
+  \[Progress \<Double?\>\]: Specifies the progress of an operation.
+  \[Status \<String\>\]: dataPolicyOperationStatus
+  \[StorageLocation \<String\>\]: The URL location to where data is being exported for export requests.
+  \[SubmittedDateTime \<DateTime?\>\]: Represents when the request for this data operation was submitted, in UTC time, using the ISO 8601 format.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  \[UserId \<String\>\]: The id for the user on whom the operation is performed.
 
 ## RELATED LINKS
 
-[New-MgBetaDataPolicyOperation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaDataPolicyOperation?view=graph-powershell-beta)
+[https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgdatapolicyoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgdatapolicyoperation)
 

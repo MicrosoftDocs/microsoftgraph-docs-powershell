@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolist
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Update-MgBetaUserTodoList
@@ -11,9 +10,6 @@ ms.prod: outlook
 ## SYNOPSIS
 Update the properties of a todoTaskList object.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserTodoList](/powershell/module/Microsoft.Graph.Users/Update-MgUserTodoList?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -48,10 +44,11 @@ Update the properties of a todoTaskList object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users
+```
 
 $params = @{
 	displayName = "Vacation Plan"
@@ -59,11 +56,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgBetaUserTodoList -UserId $userId -TodoTaskListId $todoTaskListId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaUserTodoList Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -556,7 +548,6 @@ Required.
   \[Title \<String\>\]: A brief description of the task.
 
 ## RELATED LINKS
-[Update-MgUserTodoList](/powershell/module/Microsoft.Graph.Users/Update-MgUserTodoList?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolist)
 

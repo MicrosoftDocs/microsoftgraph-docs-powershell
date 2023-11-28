@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaagreementfilelocalization
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property localizations in agreements
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgAgreementFileLocalization](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgAgreementFileLocalization?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,6 +44,22 @@ Update-MgBetaAgreementFileLocalization -InputObject <IIdentityGovernanceIdentity
 
 ## DESCRIPTION
 Update the navigation property localizations in agreements
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -112,7 +125,8 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-The date time representing when the file was created.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The date time representing when the file was created.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
@@ -208,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsDefault
-If none of the languages matches the client preference, indicates whether this is the default agreement file .
+If none of the languages matches the client preference, indicates whether this is the default agreement file.
 If none of the files are marked as default, the first one is treated as the default.
 Read-only.
 
@@ -261,7 +275,7 @@ Accept wildcard characters: False
 
 ### -Versions
 Read-only.
-Customized versions of the terms of use agreement in the Azure AD tenant.
+Customized versions of the terms of use agreement in the Microsoft Entra tenant.
 To construct, see NOTES section for VERSIONS properties and create a hash table.
 
 ```yaml
@@ -325,7 +339,8 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER \<IMicrosoftGraphAgreementFileLocalization\>: agreementFileLocalization
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[CreatedDateTime \<DateTime?\>\]: The date time representing when the file was created.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+  \[CreatedDateTime \<DateTime?\>\]: The date time representing when the file was created.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   \[DisplayName \<String\>\]: Localized display name of the policy file of an agreement.
 The localized display name is shown to end users who view the agreement.
@@ -337,7 +352,7 @@ Note: You can use the .NET Convert.ToBase64String method to convert your file to
 A sample syntax using this method in PowerShell is \[convert\]::ToBase64String((Get-Content -path 'yourfilepath' -Encoding byte)).
   \[FileName \<String\>\]: Name of the agreement file (for example, TOU.pdf).
 Read-only.
-  \[IsDefault \<Boolean?\>\]: If none of the languages matches the client preference, indicates whether this is the default agreement file .
+  \[IsDefault \<Boolean?\>\]: If none of the languages matches the client preference, indicates whether this is the default agreement file.
 If none of the files are marked as default, the first one is treated as the default.
 Read-only.
   \[IsMajorVersion \<Boolean?\>\]: Indicates whether the agreement file is a major version update.
@@ -350,15 +365,16 @@ Read-only.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
   \[Versions \<IMicrosoftGraphAgreementFileVersion\[\]\>\]: Read-only.
-Customized versions of the terms of use agreement in the Azure AD tenant.
-    \[CreatedDateTime \<DateTime?\>\]: The date time representing when the file was created.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+Customized versions of the terms of use agreement in the Microsoft Entra tenant.
+    \[CreatedDateTime \<DateTime?\>\]: The date time representing when the file was created.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     \[DisplayName \<String\>\]: Localized display name of the policy file of an agreement.
 The localized display name is shown to end users who view the agreement.
     \[FileData \<IMicrosoftGraphAgreementFileData\>\]: agreementFileData
     \[FileName \<String\>\]: Name of the agreement file (for example, TOU.pdf).
 Read-only.
-    \[IsDefault \<Boolean?\>\]: If none of the languages matches the client preference, indicates whether this is the default agreement file .
+    \[IsDefault \<Boolean?\>\]: If none of the languages matches the client preference, indicates whether this is the default agreement file.
 If none of the files are marked as default, the first one is treated as the default.
 Read-only.
     \[IsMajorVersion \<Boolean?\>\]: Indicates whether the agreement file is a major version update.
@@ -420,6 +436,7 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[CustomTaskExtensionId \<String\>\]: The unique identifier of customTaskExtension
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[EndDateTime \<DateTime?\>\]: Usage: endDateTime={endDateTime}
+  \[FindingId \<String\>\]: The unique identifier of finding
   \[GovernanceInsightId \<String\>\]: The unique identifier of governanceInsight
   \[GovernanceResourceId \<String\>\]: The unique identifier of governanceResource
   \[GovernanceRoleAssignmentId \<String\>\]: The unique identifier of governanceRoleAssignment
@@ -430,6 +447,8 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[IncompatibleAccessPackageId \<String\>\]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   \[LongRunningOperationId \<String\>\]: The unique identifier of longRunningOperation
   \[On \<String\>\]: Usage: on='{on}'
+  \[PermissionsCreepIndexDistributionId \<String\>\]: The unique identifier of permissionsCreepIndexDistribution
+  \[PermissionsRequestChangeId \<String\>\]: The unique identifier of permissionsRequestChange
   \[PrivilegedAccessGroupAssignmentScheduleId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentSchedule
   \[PrivilegedAccessGroupAssignmentScheduleInstanceId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentScheduleInstance
   \[PrivilegedAccessGroupAssignmentScheduleRequestId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentScheduleRequest
@@ -477,8 +496,9 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[WorkflowVersionNumber \<Int32?\>\]: The unique identifier of workflowVersion
 
 VERSIONS \<IMicrosoftGraphAgreementFileVersion\[\]\>: Read-only.
-Customized versions of the terms of use agreement in the Azure AD tenant.
-  \[CreatedDateTime \<DateTime?\>\]: The date time representing when the file was created.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+Customized versions of the terms of use agreement in the Microsoft Entra tenant.
+  \[CreatedDateTime \<DateTime?\>\]: The date time representing when the file was created.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   \[DisplayName \<String\>\]: Localized display name of the policy file of an agreement.
 The localized display name is shown to end users who view the agreement.
@@ -490,7 +510,7 @@ Note: You can use the .NET Convert.ToBase64String method to convert your file to
 A sample syntax using this method in PowerShell is \[convert\]::ToBase64String((Get-Content -path 'yourfilepath' -Encoding byte)).
   \[FileName \<String\>\]: Name of the agreement file (for example, TOU.pdf).
 Read-only.
-  \[IsDefault \<Boolean?\>\]: If none of the languages matches the client preference, indicates whether this is the default agreement file .
+  \[IsDefault \<Boolean?\>\]: If none of the languages matches the client preference, indicates whether this is the default agreement file.
 If none of the files are marked as default, the first one is treated as the default.
 Read-only.
   \[IsMajorVersion \<Boolean?\>\]: Indicates whether the agreement file is a major version update.
@@ -504,8 +524,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[Update-MgAgreementFileLocalization](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgAgreementFileLocalization?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaagreementfilelocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaagreementfilelocalization)
-
 

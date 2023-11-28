@@ -1,1024 +1,1624 @@
----
+﻿---
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-Module Guid: d47d0881-af0f-4936-b18c-9482834ebfe5
-Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement
-Help Version: 1.0.0.0
+Module Guid: 39dbb3bc-1a84-424a-9efe-683be70a1810
+Download Help Link: {{ Update Download Link }}
+Help Version: {{ Please enter version of help manually (X.X.X.X) format }}
 Locale: en-US
 ---
 
 # Microsoft.Graph.Devices.CorporateManagement Module
 ## Description
-Microsoft Graph PowerShell Cmdlets
+{{ Fill in the Description }}
 
 ## Microsoft.Graph.Devices.CorporateManagement Cmdlets
 ### [Get-MgDeviceAppManagement](Get-MgDeviceAppManagement.md)
-Read properties and relationships of the deviceAppManagement object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementAndroidManagedAppProtection](Get-MgDeviceAppManagementAndroidManagedAppProtection.md)
-Read properties and relationships of the androidManagedAppProtection object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementAndroidManagedAppProtectionApp](Get-MgDeviceAppManagementAndroidManagedAppProtectionApp.md)
-List of apps to which the policy is deployed.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementAndroidManagedAppProtectionAppCount](Get-MgDeviceAppManagementAndroidManagedAppProtectionAppCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementAndroidManagedAppProtectionAssignment](Get-MgDeviceAppManagementAndroidManagedAppProtectionAssignment.md)
-Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementAndroidManagedAppProtectionAssignmentCount](Get-MgDeviceAppManagementAndroidManagedAppProtectionAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementAndroidManagedAppProtectionCount](Get-MgDeviceAppManagementAndroidManagedAppProtectionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary](Get-MgDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary.md)
-Navigation property to deployment summary of the configuration.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementDefaultManagedAppProtection](Get-MgDeviceAppManagementDefaultManagedAppProtection.md)
-Read properties and relationships of the defaultManagedAppProtection object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementDefaultManagedAppProtectionApp](Get-MgDeviceAppManagementDefaultManagedAppProtectionApp.md)
-List of apps to which the policy is deployed.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementDefaultManagedAppProtectionAppCount](Get-MgDeviceAppManagementDefaultManagedAppProtectionAppCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementDefaultManagedAppProtectionCount](Get-MgDeviceAppManagementDefaultManagedAppProtectionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementDefaultManagedAppProtectionDeploymentSummary](Get-MgDeviceAppManagementDefaultManagedAppProtectionDeploymentSummary.md)
-Navigation property to deployment summary of the configuration.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementiOSManagedAppProtection](Get-MgDeviceAppManagementiOSManagedAppProtection.md)
-Read properties and relationships of the iosManagedAppProtection object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementiOSManagedAppProtectionApp](Get-MgDeviceAppManagementiOSManagedAppProtectionApp.md)
-Read properties and relationships of the managedMobileApp object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementiOSManagedAppProtectionAppCount](Get-MgDeviceAppManagementiOSManagedAppProtectionAppCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementiOSManagedAppProtectionAssignment](Get-MgDeviceAppManagementiOSManagedAppProtectionAssignment.md)
-Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementiOSManagedAppProtectionAssignmentCount](Get-MgDeviceAppManagementiOSManagedAppProtectionAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementiOSManagedAppProtectionCount](Get-MgDeviceAppManagementiOSManagedAppProtectionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementiOSManagedAppProtectionDeploymentSummary](Get-MgDeviceAppManagementiOSManagedAppProtectionDeploymentSummary.md)
-Read properties and relationships of the managedAppPolicyDeploymentSummary object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementManagedAppPolicy](Get-MgDeviceAppManagementManagedAppPolicy.md)
-Read properties and relationships of the managedAppProtection object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementManagedAppPolicyCount](Get-MgDeviceAppManagementManagedAppPolicyCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementManagedAppRegistration](Get-MgDeviceAppManagementManagedAppRegistration.md)
-Read properties and relationships of the iosManagedAppRegistration object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementManagedAppRegistrationAppliedPolicy](Get-MgDeviceAppManagementManagedAppRegistrationAppliedPolicy.md)
-Zero or more policys already applied on the registered app when it last synchronized with managment service.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementManagedAppRegistrationAppliedPolicyCount](Get-MgDeviceAppManagementManagedAppRegistrationAppliedPolicyCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementManagedAppRegistrationCount](Get-MgDeviceAppManagementManagedAppRegistrationCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementManagedAppRegistrationIntendedPolicy](Get-MgDeviceAppManagementManagedAppRegistrationIntendedPolicy.md)
-Zero or more policies admin intended for the app as of now.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementManagedAppRegistrationIntendedPolicyCount](Get-MgDeviceAppManagementManagedAppRegistrationIntendedPolicyCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementManagedAppRegistrationOperation](Get-MgDeviceAppManagementManagedAppRegistrationOperation.md)
-Read properties and relationships of the managedAppOperation object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementManagedAppRegistrationOperationCount](Get-MgDeviceAppManagementManagedAppRegistrationOperationCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementManagedAppRegistrationUserIdWithFlaggedAppRegistration](Get-MgDeviceAppManagementManagedAppRegistrationUserIdWithFlaggedAppRegistration.md)
-Invoke function getUserIdsWithFlaggedAppRegistration
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementManagedAppStatus](Get-MgDeviceAppManagementManagedAppStatus.md)
-Read properties and relationships of the managedAppStatusRaw object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementManagedAppStatusCount](Get-MgDeviceAppManagementManagedAppStatusCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementManagedEBook](Get-MgDeviceAppManagementManagedEBook.md)
-Read properties and relationships of the managedEBook object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementManagedEBookAssignment](Get-MgDeviceAppManagementManagedEBookAssignment.md)
-Read properties and relationships of the managedEBookAssignment object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementManagedEBookAssignmentCount](Get-MgDeviceAppManagementManagedEBookAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementManagedEBookCount](Get-MgDeviceAppManagementManagedEBookCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementManagedEBookDeviceState](Get-MgDeviceAppManagementManagedEBookDeviceState.md)
-Read properties and relationships of the deviceInstallState object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementManagedEBookDeviceStateCount](Get-MgDeviceAppManagementManagedEBookDeviceStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementManagedEBookInstallSummary](Get-MgDeviceAppManagementManagedEBookInstallSummary.md)
-Read properties and relationships of the eBookInstallSummary object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementManagedEBookUserStateSummary](Get-MgDeviceAppManagementManagedEBookUserStateSummary.md)
-Read properties and relationships of the userInstallStateSummary object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementManagedEBookUserStateSummaryCount](Get-MgDeviceAppManagementManagedEBookUserStateSummaryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceState](Get-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceState.md)
-The install state of the eBook.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceStateCount](Get-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy](Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy.md)
-Read properties and relationships of the mdmWindowsInformationProtectionPolicy object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment](Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment.md)
-Navigation property to list of security groups targeted for policy.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignmentCount](Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyCount](Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile](Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile.md)
-Another way to input exempt apps through xml files
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFileCount](Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFileCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile](Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
-Another way to input protected apps through xml files
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFileCount](Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFileCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileApp](Get-MgDeviceAppManagementMobileApp.md)
-Read properties and relationships of the macOSOfficeSuiteApp object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAsAndroidLobApp](Get-MgDeviceAppManagementMobileAppAsAndroidLobApp.md)
-Get the item of type microsoft.graph.mobileApp as microsoft.graph.androidLobApp
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppAssignment](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppAssignment.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppCategory](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersion.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile.md)
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAsAndroidStoreApp](Get-MgDeviceAppManagementMobileAppAsAndroidStoreApp.md)
-Get the item of type microsoft.graph.mobileApp as microsoft.graph.androidStoreApp
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsAndroidStoreAppAssignment](Get-MgDeviceAppManagementMobileAppAsAndroidStoreAppAssignment.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsAndroidStoreAppCategory](Get-MgDeviceAppManagementMobileAppAsAndroidStoreAppCategory.md)
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAsiOSLobApp](Get-MgDeviceAppManagementMobileAppAsiOSLobApp.md)
-Get the item of type microsoft.graph.mobileApp as microsoft.graph.iosLobApp
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppAssignment](Get-MgDeviceAppManagementMobileAppAsiOSLobAppAssignment.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppCategory](Get-MgDeviceAppManagementMobileAppAsiOSLobAppCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersion.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile.md)
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAsIoStoreApp](Get-MgDeviceAppManagementMobileAppAsIoStoreApp.md)
-Get the item of type microsoft.graph.mobileApp as microsoft.graph.iosStoreApp
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsIoStoreAppAssignment](Get-MgDeviceAppManagementMobileAppAsIoStoreAppAssignment.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsIoStoreAppCategory](Get-MgDeviceAppManagementMobileAppAsIoStoreAppCategory.md)
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAsIoVppApp](Get-MgDeviceAppManagementMobileAppAsIoVppApp.md)
-Get the item of type microsoft.graph.mobileApp as microsoft.graph.iosVppApp
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsIoVppAppAssignment](Get-MgDeviceAppManagementMobileAppAsIoVppAppAssignment.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsIoVppAppCategory](Get-MgDeviceAppManagementMobileAppAsIoVppAppCategory.md)
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgApp](Get-MgDeviceAppManagementMobileAppAsMacOSDmgApp.md)
-Get the item of type microsoft.graph.mobileApp as microsoft.graph.macOSDmgApp
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppAssignment](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppAssignment.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppCategory](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile.md)
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSLobApp](Get-MgDeviceAppManagementMobileAppAsMacOSLobApp.md)
-Get the item of type microsoft.graph.mobileApp as microsoft.graph.macOSLobApp
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppAssignment](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppAssignment.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppCategory](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersion.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile.md)
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobApp](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobApp.md)
-Get the item of type microsoft.graph.mobileApp as microsoft.graph.managedAndroidLobApp
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppCategory](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile.md)
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobApp](Get-MgDeviceAppManagementMobileAppAsManagediOSLobApp.md)
-Get the item of type microsoft.graph.mobileApp as microsoft.graph.managedIOSLobApp
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppAssignment](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppAssignment.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppCategory](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile.md)
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobApp](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobApp.md)
-Get the item of type microsoft.graph.mobileApp as microsoft.graph.managedMobileLobApp
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppCategory](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile.md)
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessApp](Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessApp.md)
-Get the item of type microsoft.graph.mobileApp as microsoft.graph.microsoftStoreForBusinessApp
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment](Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppCategory](Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppCategory.md)
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAssignment](Get-MgDeviceAppManagementMobileAppAssignment.md)
-Read properties and relationships of the mobileAppAssignment object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAssignmentCount](Get-MgDeviceAppManagementMobileAppAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAsWin32LobApp](Get-MgDeviceAppManagementMobileAppAsWin32LobApp.md)
-Get the item of type microsoft.graph.mobileApp as microsoft.graph.win32LobApp
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppAssignment](Get-MgDeviceAppManagementMobileAppAsWin32LobAppAssignment.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppCategory](Get-MgDeviceAppManagementMobileAppAsWin32LobAppCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersion.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile.md)
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsAppX](Get-MgDeviceAppManagementMobileAppAsWindowsAppX.md)
-Get the item of type microsoft.graph.mobileApp as microsoft.graph.windowsAppX
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXAssignment](Get-MgDeviceAppManagementMobileAppAsWindowsAppXAssignment.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXCategory](Get-MgDeviceAppManagementMobileAppAsWindowsAppXCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersion](Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersion.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile](Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile.md)
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsi](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsi.md)
-Get the item of type microsoft.graph.mobileApp as microsoft.graph.windowsMobileMSI
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiCategory](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile.md)
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppX](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppX.md)
-Get the item of type microsoft.graph.mobileApp as microsoft.graph.windowsUniversalAppX
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCategory](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile.md)
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsWebApp](Get-MgDeviceAppManagementMobileAppAsWindowsWebApp.md)
-Get the item of type microsoft.graph.mobileApp as microsoft.graph.windowsWebApp
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsWindowsWebAppAssignment](Get-MgDeviceAppManagementMobileAppAsWindowsWebAppAssignment.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsWindowsWebAppCategory](Get-MgDeviceAppManagementMobileAppAsWindowsWebAppCategory.md)
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppCategory](Get-MgDeviceAppManagementMobileAppCategory.md)
-Read properties and relationships of the mobileAppCategory object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppCategoryCount](Get-MgDeviceAppManagementMobileAppCategoryCount.md)
-Get the number of the resource
-
-### [Get-MgDeviceAppManagementMobileAppCommittedContainedApp](Get-MgDeviceAppManagementMobileAppCommittedContainedApp.md)
-The collection of contained apps in the committed mobileAppContent of a windowsUniversalAppX app.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppCommittedContainedAppCount](Get-MgDeviceAppManagementMobileAppCommittedContainedAppCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppConfiguration](Get-MgDeviceAppManagementMobileAppConfiguration.md)
-Read properties and relationships of the managedDeviceMobileAppConfiguration object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppConfigurationAssignment](Get-MgDeviceAppManagementMobileAppConfigurationAssignment.md)
-Read properties and relationships of the managedDeviceMobileAppConfigurationAssignment object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppConfigurationAssignmentCount](Get-MgDeviceAppManagementMobileAppConfigurationAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppConfigurationCount](Get-MgDeviceAppManagementMobileAppConfigurationCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppConfigurationDeviceStatus](Get-MgDeviceAppManagementMobileAppConfigurationDeviceStatus.md)
-Read properties and relationships of the managedDeviceMobileAppConfigurationDeviceStatus object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppConfigurationDeviceStatusCount](Get-MgDeviceAppManagementMobileAppConfigurationDeviceStatusCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppConfigurationDeviceStatusSummary](Get-MgDeviceAppManagementMobileAppConfigurationDeviceStatusSummary.md)
-Read properties and relationships of the managedDeviceMobileAppConfigurationDeviceSummary object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppConfigurationUserStatus](Get-MgDeviceAppManagementMobileAppConfigurationUserStatus.md)
-Read properties and relationships of the managedDeviceMobileAppConfigurationUserStatus object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppConfigurationUserStatusCount](Get-MgDeviceAppManagementMobileAppConfigurationUserStatusCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppConfigurationUserStatusSummary](Get-MgDeviceAppManagementMobileAppConfigurationUserStatusSummary.md)
-Read properties and relationships of the managedDeviceMobileAppConfigurationUserSummary object.
-
-### [Get-MgDeviceAppManagementMobileAppContentVersion](Get-MgDeviceAppManagementMobileAppContentVersion.md)
-The list of content versions for this app.
-
-### [Get-MgDeviceAppManagementMobileAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppContentVersionContainedApp.md)
-The collection of contained apps in a MobileLobApp acting as a package.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount](Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppContentVersionCount](Get-MgDeviceAppManagementMobileAppContentVersionCount.md)
-Get the number of the resource
-
-### [Get-MgDeviceAppManagementMobileAppContentVersionFile](Get-MgDeviceAppManagementMobileAppContentVersionFile.md)
-The list of files for this app content version.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppContentVersionFileCount](Get-MgDeviceAppManagementMobileAppContentVersionFileCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppCount](Get-MgDeviceAppManagementMobileAppCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppCountAsAndroidLobApp](Get-MgDeviceAppManagementMobileAppCountAsAndroidLobApp.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppCountAsAndroidStoreApp](Get-MgDeviceAppManagementMobileAppCountAsAndroidStoreApp.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppCountAsiOSLobApp](Get-MgDeviceAppManagementMobileAppCountAsiOSLobApp.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppCountAsIoStoreApp](Get-MgDeviceAppManagementMobileAppCountAsIoStoreApp.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppCountAsIoVppApp](Get-MgDeviceAppManagementMobileAppCountAsIoVppApp.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppCountAsMacOSDmgApp](Get-MgDeviceAppManagementMobileAppCountAsMacOSDmgApp.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppCountAsMacOSLobApp](Get-MgDeviceAppManagementMobileAppCountAsMacOSLobApp.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppCountAsManagedAndroidLobApp](Get-MgDeviceAppManagementMobileAppCountAsManagedAndroidLobApp.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppCountAsManagediOSLobApp](Get-MgDeviceAppManagementMobileAppCountAsManagediOSLobApp.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppCountAsManagedMobileLobApp](Get-MgDeviceAppManagementMobileAppCountAsManagedMobileLobApp.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppCountAsMicrosoftStoreForBusinessApp](Get-MgDeviceAppManagementMobileAppCountAsMicrosoftStoreForBusinessApp.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppCountAsWin32LobApp](Get-MgDeviceAppManagementMobileAppCountAsWin32LobApp.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppCountAsWindowsAppX](Get-MgDeviceAppManagementMobileAppCountAsWindowsAppX.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppCountAsWindowsMobileMsi](Get-MgDeviceAppManagementMobileAppCountAsWindowsMobileMsi.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppCountAsWindowsUniversalAppX](Get-MgDeviceAppManagementMobileAppCountAsWindowsUniversalAppX.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppCountAsWindowsWebApp](Get-MgDeviceAppManagementMobileAppCountAsWindowsWebApp.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementTargetedManagedAppConfiguration](Get-MgDeviceAppManagementTargetedManagedAppConfiguration.md)
-Read properties and relationships of the targetedManagedAppConfiguration object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementTargetedManagedAppConfigurationApp](Get-MgDeviceAppManagementTargetedManagedAppConfigurationApp.md)
-List of apps to which the policy is deployed.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementTargetedManagedAppConfigurationAppCount](Get-MgDeviceAppManagementTargetedManagedAppConfigurationAppCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementTargetedManagedAppConfigurationAssignment](Get-MgDeviceAppManagementTargetedManagedAppConfigurationAssignment.md)
-Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementTargetedManagedAppConfigurationAssignmentCount](Get-MgDeviceAppManagementTargetedManagedAppConfigurationAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementTargetedManagedAppConfigurationCount](Get-MgDeviceAppManagementTargetedManagedAppConfigurationCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementTargetedManagedAppConfigurationDeploymentSummary](Get-MgDeviceAppManagementTargetedManagedAppConfigurationDeploymentSummary.md)
-Navigation property to deployment summary of the configuration.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementVppToken](Get-MgDeviceAppManagementVppToken.md)
-Read properties and relationships of the vppToken object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementVppTokenCount](Get-MgDeviceAppManagementVppTokenCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementWindowsInformationProtectionPolicy](Get-MgDeviceAppManagementWindowsInformationProtectionPolicy.md)
-Read properties and relationships of the windowsInformationProtectionPolicy object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementWindowsInformationProtectionPolicyAssignment](Get-MgDeviceAppManagementWindowsInformationProtectionPolicyAssignment.md)
-Navigation property to list of security groups targeted for policy.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementWindowsInformationProtectionPolicyAssignmentCount](Get-MgDeviceAppManagementWindowsInformationProtectionPolicyAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementWindowsInformationProtectionPolicyCount](Get-MgDeviceAppManagementWindowsInformationProtectionPolicyCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile](Get-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile.md)
-Another way to input exempt apps through xml files
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFileCount](Get-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFileCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile](Get-MgDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
-Another way to input protected apps through xml files
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFileCount](Get-MgDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFileCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgUserDeviceManagementTroubleshootingEvent](Get-MgUserDeviceManagementTroubleshootingEvent.md)
-The list of troubleshooting events for this user.
+{{ Fill in the Description }}
 
 ### [Get-MgUserDeviceManagementTroubleshootingEventCount](Get-MgUserDeviceManagementTroubleshootingEventCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgUserManagedAppRegistration](Get-MgUserManagedAppRegistration.md)
-Zero or more managed app registrations that belong to the user.
+{{ Fill in the Description }}
 
 ### [Get-MgUserManagedAppRegistrationCount](Get-MgUserManagedAppRegistrationCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgUserManagedDevice](Get-MgUserManagedDevice.md)
-The managed devices associated with the user.
+{{ Fill in the Description }}
 
 ### [Get-MgUserManagedDeviceCategory](Get-MgUserManagedDeviceCategory.md)
-Read properties and relationships of the deviceCategory object.
+{{ Fill in the Description }}
 
 ### [Get-MgUserManagedDeviceCompliancePolicyState](Get-MgUserManagedDeviceCompliancePolicyState.md)
-Device compliance policy states for this device.
+{{ Fill in the Description }}
 
 ### [Get-MgUserManagedDeviceCompliancePolicyStateCount](Get-MgUserManagedDeviceCompliancePolicyStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgUserManagedDeviceConfigurationState](Get-MgUserManagedDeviceConfigurationState.md)
-Device configuration states for this device.
+{{ Fill in the Description }}
 
 ### [Get-MgUserManagedDeviceConfigurationStateCount](Get-MgUserManagedDeviceConfigurationStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgUserManagedDeviceCount](Get-MgUserManagedDeviceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgUserManagedDeviceLogCollectionRequestCount](Get-MgUserManagedDeviceLogCollectionRequestCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgUserManagedDeviceLogCollectionResponse](Get-MgUserManagedDeviceLogCollectionResponse.md)
-List of log collection requests
+{{ Fill in the Description }}
 
 ### [Get-MgUserManagedDeviceUser](Get-MgUserManagedDeviceUser.md)
-List properties and relationships of the user objects.
+{{ Fill in the Description }}
 
 ### [Get-MgUserManagedDeviceWindowsProtectionState](Get-MgUserManagedDeviceWindowsProtectionState.md)
-Read properties and relationships of the windowsProtectionState object.
+{{ Fill in the Description }}
 
 ### [Get-MgUserManagedDeviceWindowsProtectionStateDetectedMalwareState](Get-MgUserManagedDeviceWindowsProtectionStateDetectedMalwareState.md)
-Read properties and relationships of the windowsDeviceMalwareState object.
+{{ Fill in the Description }}
 
 ### [Get-MgUserManagedDeviceWindowsProtectionStateDetectedMalwareStateCount](Get-MgUserManagedDeviceWindowsProtectionStateDetectedMalwareStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphAndroidLobAppContentVersionFile](Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphAndroidLobAppContentVersionFile.md)
-Commits a file of a given app.
+{{ Fill in the Description }}
 
 ### [Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphiOSLobAppContentVersionFile](Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphiOSLobAppContentVersionFile.md)
-Commits a file of a given app.
+{{ Fill in the Description }}
 
 ### [Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphMacOSDmgAppContentVersionFile](Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphMacOSDmgAppContentVersionFile.md)
-Commits a file of a given app.
+{{ Fill in the Description }}
 
 ### [Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphMacOSLobAppContentVersionFile](Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphMacOSLobAppContentVersionFile.md)
-Commits a file of a given app.
+{{ Fill in the Description }}
 
 ### [Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphManagedAndroidLobAppContentVersionFile](Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphManagedAndroidLobAppContentVersionFile.md)
-Commits a file of a given app.
+{{ Fill in the Description }}
 
 ### [Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphManagediOSLobAppContentVersionFile](Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphManagediOSLobAppContentVersionFile.md)
-Commits a file of a given app.
+{{ Fill in the Description }}
 
 ### [Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphManagedMobileLobAppContentVersionFile](Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphManagedMobileLobAppContentVersionFile.md)
-Commits a file of a given app.
+{{ Fill in the Description }}
 
 ### [Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphWin32LobAppContentVersionFile](Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphWin32LobAppContentVersionFile.md)
-Commits a file of a given app.
+{{ Fill in the Description }}
 
 ### [Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphWindowsAppXContentVersionFile](Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphWindowsAppXContentVersionFile.md)
-Commits a file of a given app.
+{{ Fill in the Description }}
 
 ### [Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphWindowsMobileMsiContentVersionFile](Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphWindowsMobileMsiContentVersionFile.md)
-Commits a file of a given app.
+{{ Fill in the Description }}
 
 ### [Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphWindowsUniversalAppXContentVersionFile](Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphWindowsUniversalAppXContentVersionFile.md)
-Commits a file of a given app.
+{{ Fill in the Description }}
 
 ### [Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphAndroidLobAppContentVersionFileUpload](Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphAndroidLobAppContentVersionFileUpload.md)
-Renews the SAS URI for an application file upload.
+{{ Fill in the Description }}
 
 ### [Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphiOSLobAppContentVersionFileUpload](Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphiOSLobAppContentVersionFileUpload.md)
-Renews the SAS URI for an application file upload.
+{{ Fill in the Description }}
 
 ### [Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphMacOSDmgAppContentVersionFileUpload](Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphMacOSDmgAppContentVersionFileUpload.md)
-Renews the SAS URI for an application file upload.
+{{ Fill in the Description }}
 
 ### [Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphMacOSLobAppContentVersionFileUpload](Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphMacOSLobAppContentVersionFileUpload.md)
-Renews the SAS URI for an application file upload.
+{{ Fill in the Description }}
 
 ### [Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphManagedAndroidLobAppContentVersionFileUpload](Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphManagedAndroidLobAppContentVersionFileUpload.md)
-Renews the SAS URI for an application file upload.
+{{ Fill in the Description }}
 
 ### [Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphManagediOSLobAppContentVersionFileUpload](Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphManagediOSLobAppContentVersionFileUpload.md)
-Renews the SAS URI for an application file upload.
+{{ Fill in the Description }}
 
 ### [Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphManagedMobileLobAppContentVersionFileUpload](Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphManagedMobileLobAppContentVersionFileUpload.md)
-Renews the SAS URI for an application file upload.
+{{ Fill in the Description }}
 
 ### [Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphWin32LobAppContentVersionFileUpload](Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphWin32LobAppContentVersionFileUpload.md)
-Renews the SAS URI for an application file upload.
+{{ Fill in the Description }}
 
 ### [Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphWindowsAppXContentVersionFileUpload](Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphWindowsAppXContentVersionFileUpload.md)
-Renews the SAS URI for an application file upload.
+{{ Fill in the Description }}
 
 ### [Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphWindowsMobileMsiContentVersionFileUpload](Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphWindowsMobileMsiContentVersionFileUpload.md)
-Renews the SAS URI for an application file upload.
+{{ Fill in the Description }}
 
 ### [Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphWindowsUniversalAppXContentVersionFileUpload](Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphWindowsUniversalAppXContentVersionFileUpload.md)
-Renews the SAS URI for an application file upload.
+{{ Fill in the Description }}
 
 ### [Invoke-MgTargetDeviceAppManagementManagedAppPolicyApp](Invoke-MgTargetDeviceAppManagementManagedAppPolicyApp.md)
-Not yet documented
+{{ Fill in the Description }}
 
 ### [Invoke-MgTargetDeviceAppManagementManagedAppRegistrationAppliedPolicyApp](Invoke-MgTargetDeviceAppManagementManagedAppRegistrationAppliedPolicyApp.md)
-Not yet documented
+{{ Fill in the Description }}
 
 ### [Invoke-MgTargetDeviceAppManagementManagedAppRegistrationIntendedPolicyApp](Invoke-MgTargetDeviceAppManagementManagedAppRegistrationIntendedPolicyApp.md)
-Not yet documented
+{{ Fill in the Description }}
 
 ### [Invoke-MgTargetDeviceAppManagementTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppManagementTargetedManagedAppConfigurationApp.md)
-Not yet documented
+{{ Fill in the Description }}
 
 ### [New-MgDeviceAppManagementAndroidManagedAppProtection](New-MgDeviceAppManagementAndroidManagedAppProtection.md)
-Create a new androidManagedAppProtection object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceAppManagementAndroidManagedAppProtectionApp](New-MgDeviceAppManagementAndroidManagedAppProtectionApp.md)
-Create new navigation property to apps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceAppManagementAndroidManagedAppProtectionAssignment](New-MgDeviceAppManagementAndroidManagedAppProtectionAssignment.md)
-Create new navigation property to assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceAppManagementDefaultManagedAppProtection](New-MgDeviceAppManagementDefaultManagedAppProtection.md)
-Create a new defaultManagedAppProtection object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceAppManagementDefaultManagedAppProtectionApp](New-MgDeviceAppManagementDefaultManagedAppProtectionApp.md)
-Create new navigation property to apps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceAppManagementiOSManagedAppProtection](New-MgDeviceAppManagementiOSManagedAppProtection.md)
-Create a new iosManagedAppProtection object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceAppManagementiOSManagedAppProtectionApp](New-MgDeviceAppManagementiOSManagedAppProtectionApp.md)
-Create a new managedMobileApp object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceAppManagementiOSManagedAppProtectionAssignment](New-MgDeviceAppManagementiOSManagedAppProtectionAssignment.md)
-Create new navigation property to assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceAppManagementManagedAppPolicy](New-MgDeviceAppManagementManagedAppPolicy.md)
-Create new navigation property to managedAppPolicies for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceAppManagementManagedAppRegistration](New-MgDeviceAppManagementManagedAppRegistration.md)
-Create a new androidManagedAppRegistration object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceAppManagementManagedAppRegistrationAppliedPolicy](New-MgDeviceAppManagementManagedAppRegistrationAppliedPolicy.md)
-Create new navigation property to appliedPolicies for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceAppManagementManagedAppRegistrationIntendedPolicy](New-MgDeviceAppManagementManagedAppRegistrationIntendedPolicy.md)
-Create new navigation property to intendedPolicies for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceAppManagementManagedAppRegistrationOperation](New-MgDeviceAppManagementManagedAppRegistrationOperation.md)
-Create a new managedAppOperation object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceAppManagementManagedAppStatus](New-MgDeviceAppManagementManagedAppStatus.md)
-Create new navigation property to managedAppStatuses for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceAppManagementManagedEBook](New-MgDeviceAppManagementManagedEBook.md)
-Create a new iosVppEBook object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceAppManagementManagedEBookAssignment](New-MgDeviceAppManagementManagedEBookAssignment.md)
-Create a new managedEBookAssignment object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceAppManagementManagedEBookDeviceState](New-MgDeviceAppManagementManagedEBookDeviceState.md)
-Create a new deviceInstallState object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceAppManagementManagedEBookUserStateSummary](New-MgDeviceAppManagementManagedEBookUserStateSummary.md)
-Create a new userInstallStateSummary object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceState](New-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceState.md)
-Create new navigation property to deviceStates for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy](New-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy.md)
-Create a new mdmWindowsInformationProtectionPolicy object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment](New-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment.md)
-Create new navigation property to assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile](New-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile.md)
-Create new navigation property to exemptAppLockerFiles for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile](New-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
-Create new navigation property to protectedAppLockerFiles for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceAppManagementMobileApp](New-MgDeviceAppManagementMobileApp.md)
-Create a new iosLobApp object.
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsAndroidLobAppAssignment](New-MgDeviceAppManagementMobileAppAsAndroidLobAppAssignment.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersion](New-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersion.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp](New-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile](New-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsAndroidStoreAppAssignment](New-MgDeviceAppManagementMobileAppAsAndroidStoreAppAssignment.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsiOSLobAppAssignment](New-MgDeviceAppManagementMobileAppAsiOSLobAppAssignment.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersion](New-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersion.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp](New-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile](New-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsIoStoreAppAssignment](New-MgDeviceAppManagementMobileAppAsIoStoreAppAssignment.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsIoVppAppAssignment](New-MgDeviceAppManagementMobileAppAsIoVppAppAssignment.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsMacOSDmgAppAssignment](New-MgDeviceAppManagementMobileAppAsMacOSDmgAppAssignment.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion](New-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp](New-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile](New-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsMacOSLobAppAssignment](New-MgDeviceAppManagementMobileAppAsMacOSLobAppAssignment.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersion](New-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersion.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp](New-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile](New-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment](New-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion](New-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp](New-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile](New-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsManagediOSLobAppAssignment](New-MgDeviceAppManagementMobileAppAsManagediOSLobAppAssignment.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion](New-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp](New-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile](New-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment](New-MgDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion](New-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp](New-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile](New-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment](New-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment.md)
+{{ Fill in the Description }}
 
 ### [New-MgDeviceAppManagementMobileAppAssignment](New-MgDeviceAppManagementMobileAppAssignment.md)
-Create a new mobileAppAssignment object.
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsWin32LobAppAssignment](New-MgDeviceAppManagementMobileAppAsWin32LobAppAssignment.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersion](New-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersion.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp](New-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile](New-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsWindowsAppXAssignment](New-MgDeviceAppManagementMobileAppAsWindowsAppXAssignment.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersion](New-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersion.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp](New-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile](New-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment](New-MgDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion](New-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp](New-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile](New-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment](New-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp](New-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion](New-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp](New-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile](New-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceAppManagementMobileAppAsWindowsWebAppAssignment](New-MgDeviceAppManagementMobileAppAsWindowsWebAppAssignment.md)
+{{ Fill in the Description }}
 
 ### [New-MgDeviceAppManagementMobileAppCategory](New-MgDeviceAppManagementMobileAppCategory.md)
-Create a new mobileAppCategory object.
-
-### [New-MgDeviceAppManagementMobileAppCommittedContainedApp](New-MgDeviceAppManagementMobileAppCommittedContainedApp.md)
-Create new navigation property to committedContainedApps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceAppManagementMobileAppConfiguration](New-MgDeviceAppManagementMobileAppConfiguration.md)
-Create a new iosMobileAppConfiguration object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceAppManagementMobileAppConfigurationAssignment](New-MgDeviceAppManagementMobileAppConfigurationAssignment.md)
-Create a new managedDeviceMobileAppConfigurationAssignment object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceAppManagementMobileAppConfigurationDeviceStatus](New-MgDeviceAppManagementMobileAppConfigurationDeviceStatus.md)
-Create a new managedDeviceMobileAppConfigurationDeviceStatus object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceAppManagementMobileAppConfigurationUserStatus](New-MgDeviceAppManagementMobileAppConfigurationUserStatus.md)
-Create a new managedDeviceMobileAppConfigurationUserStatus object.
-
-### [New-MgDeviceAppManagementMobileAppContentVersion](New-MgDeviceAppManagementMobileAppContentVersion.md)
-Create new navigation property to contentVersions for deviceAppManagement
-
-### [New-MgDeviceAppManagementMobileAppContentVersionContainedApp](New-MgDeviceAppManagementMobileAppContentVersionContainedApp.md)
-Create new navigation property to containedApps for deviceAppManagement
-
-### [New-MgDeviceAppManagementMobileAppContentVersionFile](New-MgDeviceAppManagementMobileAppContentVersionFile.md)
-Create new navigation property to files for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceAppManagementTargetedManagedAppConfiguration](New-MgDeviceAppManagementTargetedManagedAppConfiguration.md)
-Create a new targetedManagedAppConfiguration object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceAppManagementTargetedManagedAppConfigurationApp](New-MgDeviceAppManagementTargetedManagedAppConfigurationApp.md)
-Create new navigation property to apps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceAppManagementTargetedManagedAppConfigurationAssignment](New-MgDeviceAppManagementTargetedManagedAppConfigurationAssignment.md)
-Create new navigation property to assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceAppManagementVppToken](New-MgDeviceAppManagementVppToken.md)
-Create a new vppToken object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceAppManagementWindowsInformationProtectionPolicy](New-MgDeviceAppManagementWindowsInformationProtectionPolicy.md)
-Create a new windowsInformationProtectionPolicy object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceAppManagementWindowsInformationProtectionPolicyAssignment](New-MgDeviceAppManagementWindowsInformationProtectionPolicyAssignment.md)
-Create new navigation property to assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile](New-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile.md)
-Create new navigation property to exemptAppLockerFiles for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile](New-MgDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
-Create new navigation property to protectedAppLockerFiles for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [New-MgUserDeviceManagementTroubleshootingEvent](New-MgUserDeviceManagementTroubleshootingEvent.md)
-Create new navigation property to deviceManagementTroubleshootingEvents for users
+{{ Fill in the Description }}
 
 ### [New-MgUserManagedDevice](New-MgUserManagedDevice.md)
-Create new navigation property to managedDevices for users
+{{ Fill in the Description }}
 
 ### [New-MgUserManagedDeviceCompliancePolicyState](New-MgUserManagedDeviceCompliancePolicyState.md)
-Create new navigation property to deviceCompliancePolicyStates for users
+{{ Fill in the Description }}
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+{{ Fill in the Description }}
 
 ### [New-MgUserManagedDeviceLogCollectionResponse](New-MgUserManagedDeviceLogCollectionResponse.md)
-Create new navigation property to logCollectionRequests for users
+{{ Fill in the Description }}
 
 ### [New-MgUserManagedDeviceWindowsProtectionStateDetectedMalwareState](New-MgUserManagedDeviceWindowsProtectionStateDetectedMalwareState.md)
-Create a new windowsDeviceMalwareState object.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementAndroidManagedAppProtection](Remove-MgDeviceAppManagementAndroidManagedAppProtection.md)
-Deletes a androidManagedAppProtection.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementAndroidManagedAppProtectionApp](Remove-MgDeviceAppManagementAndroidManagedAppProtectionApp.md)
-Delete navigation property apps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementAndroidManagedAppProtectionAssignment](Remove-MgDeviceAppManagementAndroidManagedAppProtectionAssignment.md)
-Delete navigation property assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary](Remove-MgDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary.md)
-Delete navigation property deploymentSummary for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementDefaultManagedAppProtection](Remove-MgDeviceAppManagementDefaultManagedAppProtection.md)
-Deletes a defaultManagedAppProtection.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementDefaultManagedAppProtectionApp](Remove-MgDeviceAppManagementDefaultManagedAppProtectionApp.md)
-Delete navigation property apps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementDefaultManagedAppProtectionDeploymentSummary](Remove-MgDeviceAppManagementDefaultManagedAppProtectionDeploymentSummary.md)
-Delete navigation property deploymentSummary for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementiOSManagedAppProtection](Remove-MgDeviceAppManagementiOSManagedAppProtection.md)
-Deletes a iosManagedAppProtection.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementiOSManagedAppProtectionApp](Remove-MgDeviceAppManagementiOSManagedAppProtectionApp.md)
-Deletes a managedMobileApp.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementiOSManagedAppProtectionAssignment](Remove-MgDeviceAppManagementiOSManagedAppProtectionAssignment.md)
-Delete navigation property assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementiOSManagedAppProtectionDeploymentSummary](Remove-MgDeviceAppManagementiOSManagedAppProtectionDeploymentSummary.md)
-Delete navigation property deploymentSummary for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementManagedAppPolicy](Remove-MgDeviceAppManagementManagedAppPolicy.md)
-Delete navigation property managedAppPolicies for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementManagedAppRegistration](Remove-MgDeviceAppManagementManagedAppRegistration.md)
-Delete navigation property managedAppRegistrations for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementManagedAppRegistrationAppliedPolicy](Remove-MgDeviceAppManagementManagedAppRegistrationAppliedPolicy.md)
-Delete navigation property appliedPolicies for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementManagedAppRegistrationIntendedPolicy](Remove-MgDeviceAppManagementManagedAppRegistrationIntendedPolicy.md)
-Delete navigation property intendedPolicies for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementManagedAppRegistrationOperation](Remove-MgDeviceAppManagementManagedAppRegistrationOperation.md)
-Deletes a managedAppOperation.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementManagedAppStatus](Remove-MgDeviceAppManagementManagedAppStatus.md)
-Delete navigation property managedAppStatuses for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementManagedEBook](Remove-MgDeviceAppManagementManagedEBook.md)
-Deletes a iosVppEBook.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementManagedEBookAssignment](Remove-MgDeviceAppManagementManagedEBookAssignment.md)
-Deletes a iosVppEBookAssignment.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementManagedEBookDeviceState](Remove-MgDeviceAppManagementManagedEBookDeviceState.md)
-Deletes a deviceInstallState.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementManagedEBookInstallSummary](Remove-MgDeviceAppManagementManagedEBookInstallSummary.md)
-Delete navigation property installSummary for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementManagedEBookUserStateSummary](Remove-MgDeviceAppManagementManagedEBookUserStateSummary.md)
-Deletes a userInstallStateSummary.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceState](Remove-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceState.md)
-Delete navigation property deviceStates for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy](Remove-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy.md)
-Deletes a mdmWindowsInformationProtectionPolicy.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment](Remove-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment.md)
-Delete navigation property assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile](Remove-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile.md)
-Delete navigation property exemptAppLockerFiles for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile](Remove-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
-Delete navigation property protectedAppLockerFiles for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementMobileApp](Remove-MgDeviceAppManagementMobileApp.md)
-Deletes a windowsMobileMSI.
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsAndroidLobAppAssignment](Remove-MgDeviceAppManagementMobileAppAsAndroidLobAppAssignment.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersion](Remove-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersion.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp](Remove-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile](Remove-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsAndroidStoreAppAssignment](Remove-MgDeviceAppManagementMobileAppAsAndroidStoreAppAssignment.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsiOSLobAppAssignment](Remove-MgDeviceAppManagementMobileAppAsiOSLobAppAssignment.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersion](Remove-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersion.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp](Remove-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile](Remove-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsIoStoreAppAssignment](Remove-MgDeviceAppManagementMobileAppAsIoStoreAppAssignment.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsIoVppAppAssignment](Remove-MgDeviceAppManagementMobileAppAsIoVppAppAssignment.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsMacOSDmgAppAssignment](Remove-MgDeviceAppManagementMobileAppAsMacOSDmgAppAssignment.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion](Remove-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp](Remove-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile](Remove-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsMacOSLobAppAssignment](Remove-MgDeviceAppManagementMobileAppAsMacOSLobAppAssignment.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersion](Remove-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersion.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp](Remove-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile](Remove-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment](Remove-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion](Remove-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp](Remove-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile](Remove-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsManagediOSLobAppAssignment](Remove-MgDeviceAppManagementMobileAppAsManagediOSLobAppAssignment.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion](Remove-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp](Remove-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile](Remove-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment](Remove-MgDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion](Remove-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp](Remove-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile](Remove-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment](Remove-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment.md)
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementMobileAppAssignment](Remove-MgDeviceAppManagementMobileAppAssignment.md)
-Deletes a mobileAppAssignment.
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsWin32LobAppAssignment](Remove-MgDeviceAppManagementMobileAppAsWin32LobAppAssignment.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersion](Remove-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersion.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp](Remove-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile](Remove-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsWindowsAppXAssignment](Remove-MgDeviceAppManagementMobileAppAsWindowsAppXAssignment.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersion](Remove-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersion.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp](Remove-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile](Remove-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment](Remove-MgDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion](Remove-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp](Remove-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile](Remove-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment](Remove-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp](Remove-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion](Remove-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp](Remove-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile](Remove-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceAppManagementMobileAppAsWindowsWebAppAssignment](Remove-MgDeviceAppManagementMobileAppAsWindowsWebAppAssignment.md)
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementMobileAppCategory](Remove-MgDeviceAppManagementMobileAppCategory.md)
-Deletes a mobileAppCategory.
-
-### [Remove-MgDeviceAppManagementMobileAppCommittedContainedApp](Remove-MgDeviceAppManagementMobileAppCommittedContainedApp.md)
-Delete navigation property committedContainedApps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementMobileAppConfiguration](Remove-MgDeviceAppManagementMobileAppConfiguration.md)
-Deletes a iosMobileAppConfiguration.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementMobileAppConfigurationAssignment](Remove-MgDeviceAppManagementMobileAppConfigurationAssignment.md)
-Deletes a managedDeviceMobileAppConfigurationAssignment.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementMobileAppConfigurationDeviceStatus](Remove-MgDeviceAppManagementMobileAppConfigurationDeviceStatus.md)
-Deletes a managedDeviceMobileAppConfigurationDeviceStatus.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementMobileAppConfigurationDeviceStatusSummary](Remove-MgDeviceAppManagementMobileAppConfigurationDeviceStatusSummary.md)
-Delete navigation property deviceStatusSummary for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementMobileAppConfigurationUserStatus](Remove-MgDeviceAppManagementMobileAppConfigurationUserStatus.md)
-Deletes a managedDeviceMobileAppConfigurationUserStatus.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementMobileAppConfigurationUserStatusSummary](Remove-MgDeviceAppManagementMobileAppConfigurationUserStatusSummary.md)
-Delete navigation property userStatusSummary for deviceAppManagement
-
-### [Remove-MgDeviceAppManagementMobileAppContentVersion](Remove-MgDeviceAppManagementMobileAppContentVersion.md)
-Delete navigation property contentVersions for deviceAppManagement
-
-### [Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp](Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp.md)
-Delete navigation property containedApps for deviceAppManagement
-
-### [Remove-MgDeviceAppManagementMobileAppContentVersionFile](Remove-MgDeviceAppManagementMobileAppContentVersionFile.md)
-Delete navigation property files for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementTargetedManagedAppConfiguration](Remove-MgDeviceAppManagementTargetedManagedAppConfiguration.md)
-Deletes a targetedManagedAppConfiguration.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementTargetedManagedAppConfigurationApp](Remove-MgDeviceAppManagementTargetedManagedAppConfigurationApp.md)
-Delete navigation property apps for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementTargetedManagedAppConfigurationAssignment](Remove-MgDeviceAppManagementTargetedManagedAppConfigurationAssignment.md)
-Delete navigation property assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementTargetedManagedAppConfigurationDeploymentSummary](Remove-MgDeviceAppManagementTargetedManagedAppConfigurationDeploymentSummary.md)
-Delete navigation property deploymentSummary for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementVppToken](Remove-MgDeviceAppManagementVppToken.md)
-Deletes a vppToken.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementWindowsInformationProtectionPolicy](Remove-MgDeviceAppManagementWindowsInformationProtectionPolicy.md)
-Deletes a windowsInformationProtectionPolicy.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementWindowsInformationProtectionPolicyAssignment](Remove-MgDeviceAppManagementWindowsInformationProtectionPolicyAssignment.md)
-Delete navigation property assignments for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile](Remove-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile.md)
-Delete navigation property exemptAppLockerFiles for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile](Remove-MgDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
-Delete navigation property protectedAppLockerFiles for deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgUserDeviceManagementTroubleshootingEvent](Remove-MgUserDeviceManagementTroubleshootingEvent.md)
-Delete navigation property deviceManagementTroubleshootingEvents for users
+{{ Fill in the Description }}
 
 ### [Remove-MgUserManagedDevice](Remove-MgUserManagedDevice.md)
-Delete navigation property managedDevices for users
+{{ Fill in the Description }}
 
 ### [Remove-MgUserManagedDeviceCategory](Remove-MgUserManagedDeviceCategory.md)
-Delete navigation property deviceCategory for users
+{{ Fill in the Description }}
 
 ### [Remove-MgUserManagedDeviceCompliancePolicyState](Remove-MgUserManagedDeviceCompliancePolicyState.md)
-Delete navigation property deviceCompliancePolicyStates for users
+{{ Fill in the Description }}
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+{{ Fill in the Description }}
 
 ### [Remove-MgUserManagedDeviceLogCollectionResponse](Remove-MgUserManagedDeviceLogCollectionResponse.md)
-Delete navigation property logCollectionRequests for users
+{{ Fill in the Description }}
 
 ### [Remove-MgUserManagedDeviceWindowsProtectionState](Remove-MgUserManagedDeviceWindowsProtectionState.md)
-Delete navigation property windowsProtectionState for users
+{{ Fill in the Description }}
 
 ### [Remove-MgUserManagedDeviceWindowsProtectionStateDetectedMalwareState](Remove-MgUserManagedDeviceWindowsProtectionStateDetectedMalwareState.md)
-Deletes a windowsDeviceMalwareState.
+{{ Fill in the Description }}
 
 ### [Set-MgDeviceAppManagementManagedEBook](Set-MgDeviceAppManagementManagedEBook.md)
-Not yet documented
+{{ Fill in the Description }}
 
 ### [Set-MgDeviceAppManagementMobileApp](Set-MgDeviceAppManagementMobileApp.md)
-Not yet documented
+{{ Fill in the Description }}
 
 ### [Set-MgDeviceAppManagementMobileAppConfiguration](Set-MgDeviceAppManagementMobileAppConfiguration.md)
-Not yet documented
+{{ Fill in the Description }}
 
 ### [Set-MgDeviceAppManagementTargetedManagedAppConfiguration](Set-MgDeviceAppManagementTargetedManagedAppConfiguration.md)
-Not yet documented
+{{ Fill in the Description }}
 
 ### [Sync-MgDeviceAppManagementMicrosoftStoreForBusinessApp](Sync-MgDeviceAppManagementMicrosoftStoreForBusinessApp.md)
-Syncs Intune account with Microsoft Store For Business
+{{ Fill in the Description }}
 
 ### [Sync-MgDeviceAppManagementVppTokenLicense](Sync-MgDeviceAppManagementVppTokenLicense.md)
-Syncs licenses associated with a specific appleVolumePurchaseProgramToken
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagement](Update-MgDeviceAppManagement.md)
-Update the properties of a deviceAppManagement object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementAndroidManagedAppProtection](Update-MgDeviceAppManagementAndroidManagedAppProtection.md)
-Update the properties of a androidManagedAppProtection object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementAndroidManagedAppProtectionApp](Update-MgDeviceAppManagementAndroidManagedAppProtectionApp.md)
-Update the navigation property apps in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementAndroidManagedAppProtectionAssignment](Update-MgDeviceAppManagementAndroidManagedAppProtectionAssignment.md)
-Update the navigation property assignments in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary](Update-MgDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary.md)
-Update the navigation property deploymentSummary in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementDefaultManagedAppProtection](Update-MgDeviceAppManagementDefaultManagedAppProtection.md)
-Update the properties of a defaultManagedAppProtection object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementDefaultManagedAppProtectionApp](Update-MgDeviceAppManagementDefaultManagedAppProtectionApp.md)
-Update the navigation property apps in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementDefaultManagedAppProtectionDeploymentSummary](Update-MgDeviceAppManagementDefaultManagedAppProtectionDeploymentSummary.md)
-Update the navigation property deploymentSummary in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementiOSManagedAppProtection](Update-MgDeviceAppManagementiOSManagedAppProtection.md)
-Update the properties of a iosManagedAppProtection object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementiOSManagedAppProtectionApp](Update-MgDeviceAppManagementiOSManagedAppProtectionApp.md)
-Update the properties of a managedMobileApp object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementiOSManagedAppProtectionAssignment](Update-MgDeviceAppManagementiOSManagedAppProtectionAssignment.md)
-Update the navigation property assignments in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementiOSManagedAppProtectionDeploymentSummary](Update-MgDeviceAppManagementiOSManagedAppProtectionDeploymentSummary.md)
-Update the properties of a managedAppPolicyDeploymentSummary object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementManagedAppPolicy](Update-MgDeviceAppManagementManagedAppPolicy.md)
-Update the navigation property managedAppPolicies in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementManagedAppRegistration](Update-MgDeviceAppManagementManagedAppRegistration.md)
-Update the navigation property managedAppRegistrations in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementManagedAppRegistrationAppliedPolicy](Update-MgDeviceAppManagementManagedAppRegistrationAppliedPolicy.md)
-Update the navigation property appliedPolicies in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementManagedAppRegistrationIntendedPolicy](Update-MgDeviceAppManagementManagedAppRegistrationIntendedPolicy.md)
-Update the navigation property intendedPolicies in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementManagedAppRegistrationOperation](Update-MgDeviceAppManagementManagedAppRegistrationOperation.md)
-Update the properties of a managedAppOperation object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementManagedAppStatus](Update-MgDeviceAppManagementManagedAppStatus.md)
-Update the navigation property managedAppStatuses in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementManagedEBook](Update-MgDeviceAppManagementManagedEBook.md)
-Update the properties of a iosVppEBook object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementManagedEBookAssignment](Update-MgDeviceAppManagementManagedEBookAssignment.md)
-Update the properties of a iosVppEBookAssignment object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementManagedEBookDeviceState](Update-MgDeviceAppManagementManagedEBookDeviceState.md)
-Update the properties of a deviceInstallState object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementManagedEBookInstallSummary](Update-MgDeviceAppManagementManagedEBookInstallSummary.md)
-Update the properties of a eBookInstallSummary object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementManagedEBookUserStateSummary](Update-MgDeviceAppManagementManagedEBookUserStateSummary.md)
-Update the properties of a userInstallStateSummary object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceState](Update-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceState.md)
-Update the navigation property deviceStates in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy](Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy.md)
-Update the properties of a mdmWindowsInformationProtectionPolicy object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment](Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment.md)
-Update the navigation property assignments in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile](Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile.md)
-Update the navigation property exemptAppLockerFiles in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile](Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
-Update the navigation property protectedAppLockerFiles in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementMobileApp](Update-MgDeviceAppManagementMobileApp.md)
-Update the properties of a windowsMobileMSI object.
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsAndroidLobAppAssignment](Update-MgDeviceAppManagementMobileAppAsAndroidLobAppAssignment.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersion](Update-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersion.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp](Update-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile](Update-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsAndroidStoreAppAssignment](Update-MgDeviceAppManagementMobileAppAsAndroidStoreAppAssignment.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsiOSLobAppAssignment](Update-MgDeviceAppManagementMobileAppAsiOSLobAppAssignment.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersion](Update-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersion.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp](Update-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile](Update-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsIoStoreAppAssignment](Update-MgDeviceAppManagementMobileAppAsIoStoreAppAssignment.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsIoVppAppAssignment](Update-MgDeviceAppManagementMobileAppAsIoVppAppAssignment.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsMacOSDmgAppAssignment](Update-MgDeviceAppManagementMobileAppAsMacOSDmgAppAssignment.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion](Update-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp](Update-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile](Update-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsMacOSLobAppAssignment](Update-MgDeviceAppManagementMobileAppAsMacOSLobAppAssignment.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersion](Update-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersion.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp](Update-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile](Update-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment](Update-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion](Update-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp](Update-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile](Update-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsManagediOSLobAppAssignment](Update-MgDeviceAppManagementMobileAppAsManagediOSLobAppAssignment.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion](Update-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp](Update-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile](Update-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment](Update-MgDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion](Update-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp](Update-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile](Update-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment](Update-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment.md)
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementMobileAppAssignment](Update-MgDeviceAppManagementMobileAppAssignment.md)
-Update the properties of a mobileAppAssignment object.
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsWin32LobAppAssignment](Update-MgDeviceAppManagementMobileAppAsWin32LobAppAssignment.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersion](Update-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersion.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp](Update-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile](Update-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsWindowsAppXAssignment](Update-MgDeviceAppManagementMobileAppAsWindowsAppXAssignment.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersion](Update-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersion.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp](Update-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile](Update-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment](Update-MgDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion](Update-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp](Update-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile](Update-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment](Update-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp](Update-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion](Update-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp](Update-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile](Update-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceAppManagementMobileAppAsWindowsWebAppAssignment](Update-MgDeviceAppManagementMobileAppAsWindowsWebAppAssignment.md)
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementMobileAppCategory](Update-MgDeviceAppManagementMobileAppCategory.md)
-Update the properties of a mobileAppCategory object.
-
-### [Update-MgDeviceAppManagementMobileAppCommittedContainedApp](Update-MgDeviceAppManagementMobileAppCommittedContainedApp.md)
-Update the navigation property committedContainedApps in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementMobileAppConfiguration](Update-MgDeviceAppManagementMobileAppConfiguration.md)
-Update the properties of a iosMobileAppConfiguration object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementMobileAppConfigurationAssignment](Update-MgDeviceAppManagementMobileAppConfigurationAssignment.md)
-Update the properties of a managedDeviceMobileAppConfigurationAssignment object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementMobileAppConfigurationDeviceStatus](Update-MgDeviceAppManagementMobileAppConfigurationDeviceStatus.md)
-Update the properties of a managedDeviceMobileAppConfigurationDeviceStatus object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementMobileAppConfigurationDeviceStatusSummary](Update-MgDeviceAppManagementMobileAppConfigurationDeviceStatusSummary.md)
-Update the properties of a managedDeviceMobileAppConfigurationDeviceSummary object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementMobileAppConfigurationUserStatus](Update-MgDeviceAppManagementMobileAppConfigurationUserStatus.md)
-Update the properties of a managedDeviceMobileAppConfigurationUserStatus object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementMobileAppConfigurationUserStatusSummary](Update-MgDeviceAppManagementMobileAppConfigurationUserStatusSummary.md)
-Update the properties of a managedDeviceMobileAppConfigurationUserSummary object.
-
-### [Update-MgDeviceAppManagementMobileAppContentVersion](Update-MgDeviceAppManagementMobileAppContentVersion.md)
-Update the navigation property contentVersions in deviceAppManagement
-
-### [Update-MgDeviceAppManagementMobileAppContentVersionContainedApp](Update-MgDeviceAppManagementMobileAppContentVersionContainedApp.md)
-Update the navigation property containedApps in deviceAppManagement
-
-### [Update-MgDeviceAppManagementMobileAppContentVersionFile](Update-MgDeviceAppManagementMobileAppContentVersionFile.md)
-Update the navigation property files in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementTargetedManagedAppConfiguration](Update-MgDeviceAppManagementTargetedManagedAppConfiguration.md)
-Update the properties of a targetedManagedAppConfiguration object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementTargetedManagedAppConfigurationApp](Update-MgDeviceAppManagementTargetedManagedAppConfigurationApp.md)
-Update the navigation property apps in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementTargetedManagedAppConfigurationAssignment](Update-MgDeviceAppManagementTargetedManagedAppConfigurationAssignment.md)
-Update the navigation property assignments in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementTargetedManagedAppConfigurationDeploymentSummary](Update-MgDeviceAppManagementTargetedManagedAppConfigurationDeploymentSummary.md)
-Update the navigation property deploymentSummary in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementVppToken](Update-MgDeviceAppManagementVppToken.md)
-Update the properties of a vppToken object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementWindowsInformationProtectionPolicy](Update-MgDeviceAppManagementWindowsInformationProtectionPolicy.md)
-Update the properties of a windowsInformationProtectionPolicy object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementWindowsInformationProtectionPolicyAssignment](Update-MgDeviceAppManagementWindowsInformationProtectionPolicyAssignment.md)
-Update the navigation property assignments in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile](Update-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile.md)
-Update the navigation property exemptAppLockerFiles in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile](Update-MgDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
-Update the navigation property protectedAppLockerFiles in deviceAppManagement
+{{ Fill in the Description }}
 
 ### [Update-MgUserDeviceManagementTroubleshootingEvent](Update-MgUserDeviceManagementTroubleshootingEvent.md)
-Update the navigation property deviceManagementTroubleshootingEvents in users
+{{ Fill in the Description }}
 
 ### [Update-MgUserManagedDevice](Update-MgUserManagedDevice.md)
-Update the navigation property managedDevices in users
+{{ Fill in the Description }}
 
 ### [Update-MgUserManagedDeviceCategory](Update-MgUserManagedDeviceCategory.md)
-Update the properties of a deviceCategory object.
+{{ Fill in the Description }}
 
 ### [Update-MgUserManagedDeviceCompliancePolicyState](Update-MgUserManagedDeviceCompliancePolicyState.md)
-Update the navigation property deviceCompliancePolicyStates in users
+{{ Fill in the Description }}
 
 ### [Update-MgUserManagedDeviceConfigurationState](Update-MgUserManagedDeviceConfigurationState.md)
-Update the navigation property deviceConfigurationStates in users
+{{ Fill in the Description }}
 
 ### [Update-MgUserManagedDeviceLogCollectionResponse](Update-MgUserManagedDeviceLogCollectionResponse.md)
-Update the navigation property logCollectionRequests in users
+{{ Fill in the Description }}
 
 ### [Update-MgUserManagedDeviceWindowsProtectionState](Update-MgUserManagedDeviceWindowsProtectionState.md)
-Update the properties of a windowsProtectionState object.
+{{ Fill in the Description }}
 
 ### [Update-MgUserManagedDeviceWindowsProtectionStateDetectedMalwareState](Update-MgUserManagedDeviceWindowsProtectionStateDetectedMalwareState.md)
-Update the properties of a windowsDeviceMalwareState object.
+{{ Fill in the Description }}
 

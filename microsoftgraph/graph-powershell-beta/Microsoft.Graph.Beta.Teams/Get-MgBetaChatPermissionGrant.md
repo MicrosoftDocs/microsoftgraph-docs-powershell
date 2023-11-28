@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatpermissiongrant
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 A collection of permissions granted to apps for the chat.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgChatPermissionGrant](/powershell/module/Microsoft.Graph.Teams/Get-MgChatPermissionGrant?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,17 +35,13 @@ Get-MgBetaChatPermissionGrant -InputObject <ITeamsIdentity> [-ExpandProperty <St
 A collection of permissions granted to apps for the chat.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 Get-MgBetaChatPermissionGrant -ChatId $chatId
-
-```
-This example shows how to use the Get-MgBetaChatPermissionGrant Cmdlet.
-
 
 ## PARAMETERS
 
@@ -305,7 +298,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgChatPermissionGrant](/powershell/module/Microsoft.Graph.Teams/Get-MgChatPermissionGrant?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatpermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatpermissiongrant)
 

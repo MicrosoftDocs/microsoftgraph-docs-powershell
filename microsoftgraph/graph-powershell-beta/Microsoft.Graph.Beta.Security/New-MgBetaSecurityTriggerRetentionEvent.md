@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritytriggerretentionevent
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new retentionEvent object.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityTriggerRetentionEvent](/powershell/module/Microsoft.Graph.Security/New-MgSecurityTriggerRetentionEvent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -39,11 +36,11 @@ Create a new retentionEvent object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.security.retentionEvent"
@@ -54,7 +51,7 @@ $params = @{
 			"@odata.type" = "microsoft.graph.security.eventQueries"
 		}
 	)
-	eventTriggerDateTime = [System.DateTime]::Parse("String (timestamp)")
+	eventTriggerDateTime = \[System.DateTime\]::Parse("String (timestamp)")
 	createdBy = @{
 		"@odata.type" = "microsoft.graph.identitySet"
 	}
@@ -66,14 +63,10 @@ $params = @{
 	eventStatus = @{
 		"@odata.type" = "microsoft.graph.security.retentionEventStatus"
 	}
-	lastStatusUpdateDateTime = [System.DateTime]::Parse("String (timestamp)")
+	lastStatusUpdateDateTime = \[System.DateTime\]::Parse("String (timestamp)")
 }
 
 New-MgBetaSecurityTriggerRetentionEvent -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaSecurityTriggerRetentionEvent Cmdlet.
-
 
 ## PARAMETERS
 
@@ -486,7 +479,6 @@ This property is read-only.
   \[LastModifiedDateTime \<DateTime?\>\]: The latest date time when the retentionEventType was modified.
 
 ## RELATED LINKS
-[New-MgSecurityTriggerRetentionEvent](/powershell/module/Microsoft.Graph.Security/New-MgSecurityTriggerRetentionEvent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritytriggerretentionevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritytriggerretentionevent)
 

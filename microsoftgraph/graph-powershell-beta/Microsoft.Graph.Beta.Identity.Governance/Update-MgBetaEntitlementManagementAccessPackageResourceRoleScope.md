@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementaccesspackageresourcerolescope
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property accessPackageResourceRoleScopes in identityGovernance
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgEntitlementManagementAccessPackageResourceRoleScope](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgEntitlementManagementAccessPackageResourceRoleScope?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,6 +46,22 @@ Update-MgBetaEntitlementManagementAccessPackageResourceRoleScope -InputObject <I
 
 ## DESCRIPTION
 Update the navigation property accessPackageResourceRoleScopes in identityGovernance
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -310,7 +323,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       \[Description \<String\>\]: The description of this object.
       \[DisplayName \<String\>\]: The display name of this object.
       \[IsDefaultEnvironment \<Boolean?\>\]: Determines whether this is default environment or not.
-It is set to true for all static origin systems, such as Azure AD groups and Azure AD Applications.
+It is set to true for all static origin systems, such as Microsoft Entra groups and Microsoft Entra Applications.
       \[ModifiedBy \<String\>\]: The display name of the entity that last modified this object.
       \[ModifiedDateTime \<DateTime?\>\]: The date and time that this object was last modified.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -355,9 +368,9 @@ Read-only.
     \[IsPendingOnboarding \<Boolean?\>\]: True if the resource is not yet available for assignment.
 Read-only.
     \[OriginId \<String\>\]: The unique identifier of the resource in the origin system.
-In the case of an Azure AD group, this is the identifier of the group.
+In the case of a Microsoft Entra group, this is the identifier of the group.
     \[OriginSystem \<String\>\]: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
-    \[ResourceType \<String\>\]: The type of the resource, such as Application if it is an Azure AD connected application, or SharePoint Online Site for a SharePoint Online site.
+    \[ResourceType \<String\>\]: The type of the resource, such as Application if it is a Microsoft Entra connected application, or SharePoint Online Site for a SharePoint Online site.
     \[Url \<String\>\]: A unique resource locator for the resource, such as the URL for signing a user into an application.
   \[Description \<String\>\]: A description for the resource role.
   \[DisplayName \<String\>\]: The display name of the resource role such as the role defined by the application.
@@ -389,7 +402,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       \[Description \<String\>\]: The description of this object.
       \[DisplayName \<String\>\]: The display name of this object.
       \[IsDefaultEnvironment \<Boolean?\>\]: Determines whether this is default environment or not.
-It is set to true for all static origin systems, such as Azure AD groups and Azure AD Applications.
+It is set to true for all static origin systems, such as Microsoft Entra groups and Microsoft Entra Applications.
       \[ModifiedBy \<String\>\]: The display name of the entity that last modified this object.
       \[ModifiedDateTime \<DateTime?\>\]: The date and time that this object was last modified.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -432,9 +445,9 @@ Read-only.
     \[IsPendingOnboarding \<Boolean?\>\]: True if the resource is not yet available for assignment.
 Read-only.
     \[OriginId \<String\>\]: The unique identifier of the resource in the origin system.
-In the case of an Azure AD group, this is the identifier of the group.
+In the case of a Microsoft Entra group, this is the identifier of the group.
     \[OriginSystem \<String\>\]: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
-    \[ResourceType \<String\>\]: The type of the resource, such as Application if it is an Azure AD connected application, or SharePoint Online Site for a SharePoint Online site.
+    \[ResourceType \<String\>\]: The type of the resource, such as Application if it is a Microsoft Entra connected application, or SharePoint Online Site for a SharePoint Online site.
     \[Url \<String\>\]: A unique resource locator for the resource, such as the URL for signing a user into an application.
   \[Description \<String\>\]: The description of the scope.
   \[DisplayName \<String\>\]: The display name of the scope.
@@ -472,7 +485,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         \[Description \<String\>\]: The description of this object.
         \[DisplayName \<String\>\]: The display name of this object.
         \[IsDefaultEnvironment \<Boolean?\>\]: Determines whether this is default environment or not.
-It is set to true for all static origin systems, such as Azure AD groups and Azure AD Applications.
+It is set to true for all static origin systems, such as Microsoft Entra groups and Microsoft Entra Applications.
         \[ModifiedBy \<String\>\]: The display name of the entity that last modified this object.
         \[ModifiedDateTime \<DateTime?\>\]: The date and time that this object was last modified.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -517,9 +530,9 @@ Read-only.
       \[IsPendingOnboarding \<Boolean?\>\]: True if the resource is not yet available for assignment.
 Read-only.
       \[OriginId \<String\>\]: The unique identifier of the resource in the origin system.
-In the case of an Azure AD group, this is the identifier of the group.
+In the case of a Microsoft Entra group, this is the identifier of the group.
       \[OriginSystem \<String\>\]: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
-      \[ResourceType \<String\>\]: The type of the resource, such as Application if it is an Azure AD connected application, or SharePoint Online Site for a SharePoint Online site.
+      \[ResourceType \<String\>\]: The type of the resource, such as Application if it is a Microsoft Entra connected application, or SharePoint Online Site for a SharePoint Online site.
       \[Url \<String\>\]: A unique resource locator for the resource, such as the URL for signing a user into an application.
     \[Description \<String\>\]: A description for the resource role.
     \[DisplayName \<String\>\]: The display name of the resource role such as the role defined by the application.
@@ -576,6 +589,7 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[CustomTaskExtensionId \<String\>\]: The unique identifier of customTaskExtension
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[EndDateTime \<DateTime?\>\]: Usage: endDateTime={endDateTime}
+  \[FindingId \<String\>\]: The unique identifier of finding
   \[GovernanceInsightId \<String\>\]: The unique identifier of governanceInsight
   \[GovernanceResourceId \<String\>\]: The unique identifier of governanceResource
   \[GovernanceRoleAssignmentId \<String\>\]: The unique identifier of governanceRoleAssignment
@@ -586,6 +600,8 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[IncompatibleAccessPackageId \<String\>\]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   \[LongRunningOperationId \<String\>\]: The unique identifier of longRunningOperation
   \[On \<String\>\]: Usage: on='{on}'
+  \[PermissionsCreepIndexDistributionId \<String\>\]: The unique identifier of permissionsCreepIndexDistribution
+  \[PermissionsRequestChangeId \<String\>\]: The unique identifier of permissionsRequestChange
   \[PrivilegedAccessGroupAssignmentScheduleId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentSchedule
   \[PrivilegedAccessGroupAssignmentScheduleInstanceId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentScheduleInstance
   \[PrivilegedAccessGroupAssignmentScheduleRequestId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentScheduleRequest
@@ -633,8 +649,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[WorkflowVersionNumber \<Int32?\>\]: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Update-MgEntitlementManagementAccessPackageResourceRoleScope](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgEntitlementManagementAccessPackageResourceRoleScope?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementaccesspackageresourcerolescope](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementaccesspackageresourcerolescope)
-
 

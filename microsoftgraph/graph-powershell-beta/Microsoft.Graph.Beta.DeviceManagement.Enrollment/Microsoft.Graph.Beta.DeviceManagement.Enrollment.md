@@ -1,642 +1,583 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
-Module Guid: 61393e9a-a30f-483c-b3b0-e46e03a3a014
-Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment
-Help Version: 1.0.0.0
+Module Guid: f1430cdd-e7c8-4cb3-af1c-4267717fc906
+Download Help Link: {{ Update Download Link }}
+Help Version: {{ Please enter version of help manually (X.X.X.X) format }}
 Locale: en-US
 ---
 
 # Microsoft.Graph.Beta.DeviceManagement.Enrollment Module
 ## Description
-Microsoft Graph PowerShell Cmdlets
+{{ Fill in the Description }}
 
 ## Microsoft.Graph.Beta.DeviceManagement.Enrollment Cmdlets
 ### [Get-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile](Get-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile.md)
-Android device owner enrollment profile entities.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfileCount](Get-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfileCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile](Get-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile.md)
-Android for Work enrollment profile entities.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementAndroidForWorkEnrollmentProfileCount](Get-MgBetaDeviceManagementAndroidForWorkEnrollmentProfileCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfile](Get-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfile.md)
-Apple user initiated enrollment profiles
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfileAssignment](Get-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfileAssignment.md)
-The list of assignments for this profile.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfileAssignmentCount](Get-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfileAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfileCount](Get-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfileCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementAutopilotEvent](Get-MgBetaDeviceManagementAutopilotEvent.md)
-The list of autopilot events for the tenant.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementAutopilotEventCount](Get-MgBetaDeviceManagementAutopilotEventCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementAutopilotEventPolicyStatusDetail](Get-MgBetaDeviceManagementAutopilotEventPolicyStatusDetail.md)
-Policy and application status details for this device.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementAutopilotEventPolicyStatusDetailCount](Get-MgBetaDeviceManagementAutopilotEventPolicyStatusDetailCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementConditionalAccessSetting](Get-MgBetaDeviceManagementConditionalAccessSetting.md)
-The Exchange on premises conditional access settings.
-On premises conditional access will require devices to be both enrolled and compliant for mail access
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDepOnboardingSetting](Get-MgBetaDeviceManagementDepOnboardingSetting.md)
-This collections of multiple DEP tokens per-tenant.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDepOnboardingSettingCount](Get-MgBetaDeviceManagementDepOnboardingSettingCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDepOnboardingSettingDefaultIoEnrollmentProfile](Get-MgBetaDeviceManagementDepOnboardingSettingDefaultIoEnrollmentProfile.md)
-Default iOS Enrollment Profile
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDepOnboardingSettingDefaultMacOSEnrollmentProfile](Get-MgBetaDeviceManagementDepOnboardingSettingDefaultMacOSEnrollmentProfile.md)
-Default MacOs Enrollment Profile
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfile](Get-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfile.md)
-The enrollment profiles.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfileCount](Get-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfileCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity](Get-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity.md)
-The imported Apple device identities.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentityCount](Get-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentityCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceEnrollmentConfiguration](Get-MgBetaDeviceManagementDeviceEnrollmentConfiguration.md)
-The list of device enrollment configurations
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment](Get-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment.md)
-The list of group assignments for the device configuration profile
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignmentCount](Get-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceEnrollmentConfigurationCount](Get-MgBetaDeviceManagementDeviceEnrollmentConfigurationCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementImportedDeviceIdentity](Get-MgBetaDeviceManagementImportedDeviceIdentity.md)
-The imported device identities.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementImportedDeviceIdentityCount](Get-MgBetaDeviceManagementImportedDeviceIdentityCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity](Get-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity.md)
-Collection of imported Windows autopilot devices.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentityCount](Get-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentityCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile](Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile.md)
-Windows auto pilot deployment profiles
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice](Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice.md)
-The list of assigned devices for the profile.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceCount](Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceDeploymentProfile](Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceDeploymentProfile.md)
-Deployment profile currently assigned to the Windows autopilot device.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceIntendedDeploymentProfile](Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceIntendedDeploymentProfile.md)
-Deployment profile intended to be assigned to the Windows autopilot device.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignment](Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignment.md)
-The list of group assignments for the profile.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignmentCount](Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileCount](Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity](Get-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity.md)
-The Windows autopilot device identities contained collection.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityCount](Get-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityDeploymentProfile](Get-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityDeploymentProfile.md)
-Deployment profile currently assigned to the Windows autopilot device.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityIntendedDeploymentProfile](Get-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityIntendedDeploymentProfile.md)
-Deployment profile intended to be assigned to the Windows autopilot device.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementWindowsAutopilotSetting](Get-MgBetaDeviceManagementWindowsAutopilotSetting.md)
-The Windows autopilot account settings.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementWindowsFeatureUpdateProfile](Get-MgBetaDeviceManagementWindowsFeatureUpdateProfile.md)
-A collection of windows feature update profiles
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementWindowsFeatureUpdateProfileAssignment](Get-MgBetaDeviceManagementWindowsFeatureUpdateProfileAssignment.md)
-The list of group assignments of the profile.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementWindowsFeatureUpdateProfileAssignmentCount](Get-MgBetaDeviceManagementWindowsFeatureUpdateProfileAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementWindowsFeatureUpdateProfileCount](Get-MgBetaDeviceManagementWindowsFeatureUpdateProfileCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaRoleManagement](Get-MgBetaRoleManagement.md)
-Get roleManagement
+{{ Fill in the Description }}
 
 ### [Get-MgBetaRoleManagementCloudPc](Get-MgBetaRoleManagementCloudPc.md)
-Get cloudPC from roleManagement
+{{ Fill in the Description }}
 
 ### [Get-MgBetaRoleManagementCloudPcResourceNamespace](Get-MgBetaRoleManagementCloudPcResourceNamespace.md)
-Get resourceNamespaces from roleManagement
+{{ Fill in the Description }}
 
 ### [Get-MgBetaRoleManagementCloudPcResourceNamespaceCount](Get-MgBetaRoleManagementCloudPcResourceNamespaceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction](Get-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction.md)
-Read the properties and relationships of an unifiedRbacResourceAction object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaRoleManagementCloudPcResourceNamespaceResourceActionAuthenticationContext](Get-MgBetaRoleManagementCloudPcResourceNamespaceResourceActionAuthenticationContext.md)
-Get authenticationContext from roleManagement
+{{ Fill in the Description }}
 
 ### [Get-MgBetaRoleManagementCloudPcResourceNamespaceResourceActionCount](Get-MgBetaRoleManagementCloudPcResourceNamespaceResourceActionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaRoleManagementCloudPcResourceNamespaceResourceActionResourceScope](Get-MgBetaRoleManagementCloudPcResourceNamespaceResourceActionResourceScope.md)
-Get resourceScope from roleManagement
+{{ Fill in the Description }}
 
 ### [Get-MgBetaRoleManagementCloudPcRoleAssignment](Get-MgBetaRoleManagementCloudPcRoleAssignment.md)
-Get the properties and relationships of a unifiedRoleAssignmentMultiple object of an RBAC provider.
-The following RBAC providers are currently supported:- Cloud PC - device management (Intune) For other Microsoft 365 applications (like Microsoft Entra ID), use unifiedRoleAssignment.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaRoleManagementCloudPcRoleAssignmentAppScope](Get-MgBetaRoleManagementCloudPcRoleAssignmentAppScope.md)
-Read-only collection with details of the app specific scopes when the assignment scopes are app specific.
-Containment entity.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaRoleManagementCloudPcRoleAssignmentAppScopeCount](Get-MgBetaRoleManagementCloudPcRoleAssignmentAppScopeCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaRoleManagementCloudPcRoleAssignmentCount](Get-MgBetaRoleManagementCloudPcRoleAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaRoleManagementCloudPcRoleAssignmentDirectoryScope](Get-MgBetaRoleManagementCloudPcRoleAssignmentDirectoryScope.md)
-Read-only collection that references the directory objects that are scope of the assignment.
-Provided so that callers can get the directory objects using $expand at the same time as getting the role assignment.
-Read-only.
-Supports $expand.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaRoleManagementCloudPcRoleAssignmentDirectoryScopeCount](Get-MgBetaRoleManagementCloudPcRoleAssignmentDirectoryScopeCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaRoleManagementCloudPcRoleAssignmentPrincipal](Get-MgBetaRoleManagementCloudPcRoleAssignmentPrincipal.md)
-Read-only collection that references the assigned principals.
-Provided so that callers can get the principals using $expand at the same time as getting the role assignment.
-Read-only.
-Supports $expand.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaRoleManagementCloudPcRoleAssignmentPrincipalCount](Get-MgBetaRoleManagementCloudPcRoleAssignmentPrincipalCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaRoleManagementCloudPcRoleAssignmentRoleDefinition](Get-MgBetaRoleManagementCloudPcRoleAssignmentRoleDefinition.md)
-Specifies the roleDefinition that the assignment is for.
-Provided so that callers can get the role definition using $expand at the same time as getting the role assignment.
-Supports $filter (eq operator on id, isBuiltIn, and displayName, and startsWith operator on displayName)  and $expand.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaRoleManagementCloudPcRoleDefinition](Get-MgBetaRoleManagementCloudPcRoleDefinition.md)
-Get the properties and relationships of a unifiedRoleDefinition object of an RBAC provider.
-The following RBAC providers are currently supported:- Cloud PC - device management (Intune)- directory (Microsoft Entra directory roles)- entitlement management (Microsoft Entra entitlement management)- Exchange Online This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaRoleManagementCloudPcRoleDefinitionCount](Get-MgBetaRoleManagementCloudPcRoleDefinitionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaRoleManagementCloudPcRoleDefinitionInheritPermissionFrom](Get-MgBetaRoleManagementCloudPcRoleDefinitionInheritPermissionFrom.md)
-Read-only collection of role definitions that the given role definition inherits from.
-Only Microsoft Entra built-in roles support this attribute.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaRoleManagementDeviceManagement](Get-MgBetaRoleManagementDeviceManagement.md)
-The RbacApplication for Device Management
+{{ Fill in the Description }}
 
 ### [Get-MgBetaRoleManagementDeviceManagementResourceNamespace](Get-MgBetaRoleManagementDeviceManagementResourceNamespace.md)
-Get resourceNamespaces from roleManagement
+{{ Fill in the Description }}
 
 ### [Get-MgBetaRoleManagementDeviceManagementResourceNamespaceCount](Get-MgBetaRoleManagementDeviceManagementResourceNamespaceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction](Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction.md)
-Read the properties and relationships of an unifiedRbacResourceAction object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceActionAuthenticationContext](Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceActionAuthenticationContext.md)
-Get authenticationContext from roleManagement
+{{ Fill in the Description }}
 
 ### [Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceActionCount](Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceActionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceActionResourceScope](Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceActionResourceScope.md)
-Get resourceScope from roleManagement
+{{ Fill in the Description }}
 
 ### [Get-MgBetaRoleManagementDeviceManagementRoleAssignment](Get-MgBetaRoleManagementDeviceManagementRoleAssignment.md)
-Get the properties and relationships of a unifiedRoleAssignmentMultiple object of an RBAC provider.
-The following RBAC providers are currently supported:- Cloud PC - device management (Intune) For other Microsoft 365 applications (like Microsoft Entra ID), use unifiedRoleAssignment.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaRoleManagementDeviceManagementRoleAssignmentAppScope](Get-MgBetaRoleManagementDeviceManagementRoleAssignmentAppScope.md)
-Read-only collection with details of the app specific scopes when the assignment scopes are app specific.
-Containment entity.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaRoleManagementDeviceManagementRoleAssignmentAppScopeCount](Get-MgBetaRoleManagementDeviceManagementRoleAssignmentAppScopeCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaRoleManagementDeviceManagementRoleAssignmentCount](Get-MgBetaRoleManagementDeviceManagementRoleAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaRoleManagementDeviceManagementRoleAssignmentDirectoryScope](Get-MgBetaRoleManagementDeviceManagementRoleAssignmentDirectoryScope.md)
-Read-only collection that references the directory objects that are scope of the assignment.
-Provided so that callers can get the directory objects using $expand at the same time as getting the role assignment.
-Read-only.
-Supports $expand.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaRoleManagementDeviceManagementRoleAssignmentDirectoryScopeCount](Get-MgBetaRoleManagementDeviceManagementRoleAssignmentDirectoryScopeCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaRoleManagementDeviceManagementRoleAssignmentPrincipal](Get-MgBetaRoleManagementDeviceManagementRoleAssignmentPrincipal.md)
-Read-only collection that references the assigned principals.
-Provided so that callers can get the principals using $expand at the same time as getting the role assignment.
-Read-only.
-Supports $expand.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaRoleManagementDeviceManagementRoleAssignmentPrincipalCount](Get-MgBetaRoleManagementDeviceManagementRoleAssignmentPrincipalCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaRoleManagementDeviceManagementRoleAssignmentRoleDefinition](Get-MgBetaRoleManagementDeviceManagementRoleAssignmentRoleDefinition.md)
-Specifies the roleDefinition that the assignment is for.
-Provided so that callers can get the role definition using $expand at the same time as getting the role assignment.
-Supports $filter (eq operator on id, isBuiltIn, and displayName, and startsWith operator on displayName)  and $expand.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaRoleManagementDeviceManagementRoleDefinition](Get-MgBetaRoleManagementDeviceManagementRoleDefinition.md)
-Get the properties and relationships of a unifiedRoleDefinition object of an RBAC provider.
-The following RBAC providers are currently supported:- Cloud PC - device management (Intune)- directory (Microsoft Entra directory roles)- entitlement management (Microsoft Entra entitlement management)- Exchange Online This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaRoleManagementDeviceManagementRoleDefinitionCount](Get-MgBetaRoleManagementDeviceManagementRoleDefinitionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom](Get-MgBetaRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom.md)
-Read-only collection of role definitions that the given role definition inherits from.
-Only Microsoft Entra built-in roles support this attribute.
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile](New-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile.md)
-Create new navigation property to androidDeviceOwnerEnrollmentProfiles for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile](New-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile.md)
-Create new navigation property to androidForWorkEnrollmentProfiles for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfile](New-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfile.md)
-Create new navigation property to appleUserInitiatedEnrollmentProfiles for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfileAssignment](New-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfileAssignment.md)
-Create new navigation property to assignments for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementAutopilotEvent](New-MgBetaDeviceManagementAutopilotEvent.md)
-Create new navigation property to autopilotEvents for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementAutopilotEventPolicyStatusDetail](New-MgBetaDeviceManagementAutopilotEventPolicyStatusDetail.md)
-Create new navigation property to policyStatusDetails for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementDepOnboardingSetting](New-MgBetaDeviceManagementDepOnboardingSetting.md)
-Create new navigation property to depOnboardingSettings for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfile](New-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfile.md)
-Create new navigation property to enrollmentProfiles for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity](New-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity.md)
-Create new navigation property to importedAppleDeviceIdentities for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementDeviceEnrollmentConfiguration](New-MgBetaDeviceManagementDeviceEnrollmentConfiguration.md)
-Create new navigation property to deviceEnrollmentConfigurations for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment](New-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment.md)
-Create new navigation property to assignments for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementImportedDeviceIdentity](New-MgBetaDeviceManagementImportedDeviceIdentity.md)
-Create new navigation property to importedDeviceIdentities for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity](New-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity.md)
-Create new navigation property to importedWindowsAutopilotDeviceIdentities for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile](New-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile.md)
-Create new navigation property to windowsAutopilotDeploymentProfiles for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice](New-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice.md)
-Create new navigation property to assignedDevices for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignment](New-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignment.md)
-Create new navigation property to assignments for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity](New-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity.md)
-Create new navigation property to windowsAutopilotDeviceIdentities for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementWindowsFeatureUpdateProfile](New-MgBetaDeviceManagementWindowsFeatureUpdateProfile.md)
-Create new navigation property to windowsFeatureUpdateProfiles for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementWindowsFeatureUpdateProfileAssignment](New-MgBetaDeviceManagementWindowsFeatureUpdateProfileAssignment.md)
-Create new navigation property to assignments for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaRoleManagementCloudPcResourceNamespace](New-MgBetaRoleManagementCloudPcResourceNamespace.md)
-Create new navigation property to resourceNamespaces for roleManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction](New-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction.md)
-Create new navigation property to resourceActions for roleManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaRoleManagementCloudPcRoleAssignment](New-MgBetaRoleManagementCloudPcRoleAssignment.md)
-Create a new unifiedRoleAssignmentMultiple object for an RBAC provider.
-The following RBAC providers are currently supported:- Cloud PC - device management (Intune) For other Microsoft 365 applications (like Microsoft Entra ID), use unifiedRoleAssignment.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaRoleManagementCloudPcRoleAssignmentAppScope](New-MgBetaRoleManagementCloudPcRoleAssignmentAppScope.md)
-Create new navigation property to appScopes for roleManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaRoleManagementCloudPcRoleDefinition](New-MgBetaRoleManagementCloudPcRoleDefinition.md)
-Create a new unifiedRoleDefinition object for an RBAC provider.
-This feature requires a Microsoft Entra ID P1 or P2 license.
-The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- directory (Microsoft Entra ID) This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaRoleManagementCloudPcRoleDefinitionInheritPermissionFrom](New-MgBetaRoleManagementCloudPcRoleDefinitionInheritPermissionFrom.md)
-Create new navigation property to inheritsPermissionsFrom for roleManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaRoleManagementDeviceManagementResourceNamespace](New-MgBetaRoleManagementDeviceManagementResourceNamespace.md)
-Create new navigation property to resourceNamespaces for roleManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction](New-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction.md)
-Create new navigation property to resourceActions for roleManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaRoleManagementDeviceManagementRoleAssignment](New-MgBetaRoleManagementDeviceManagementRoleAssignment.md)
-Create a new unifiedRoleAssignmentMultiple object for an RBAC provider.
-The following RBAC providers are currently supported:- Cloud PC - device management (Intune) For other Microsoft 365 applications (like Microsoft Entra ID), use unifiedRoleAssignment.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaRoleManagementDeviceManagementRoleAssignmentAppScope](New-MgBetaRoleManagementDeviceManagementRoleAssignmentAppScope.md)
-Create new navigation property to appScopes for roleManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaRoleManagementDeviceManagementRoleDefinition](New-MgBetaRoleManagementDeviceManagementRoleDefinition.md)
-Create a new unifiedRoleDefinition object for an RBAC provider.
-This feature requires a Microsoft Entra ID P1 or P2 license.
-The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- directory (Microsoft Entra ID) This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom](New-MgBetaRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom.md)
-Create new navigation property to inheritsPermissionsFrom for roleManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile](Remove-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile.md)
-Delete navigation property androidDeviceOwnerEnrollmentProfiles for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile](Remove-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile.md)
-Delete navigation property androidForWorkEnrollmentProfiles for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfile](Remove-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfile.md)
-Delete navigation property appleUserInitiatedEnrollmentProfiles for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfileAssignment](Remove-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfileAssignment.md)
-Delete navigation property assignments for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementAutopilotEvent](Remove-MgBetaDeviceManagementAutopilotEvent.md)
-Delete navigation property autopilotEvents for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementAutopilotEventPolicyStatusDetail](Remove-MgBetaDeviceManagementAutopilotEventPolicyStatusDetail.md)
-Delete navigation property policyStatusDetails for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementConditionalAccessSetting](Remove-MgBetaDeviceManagementConditionalAccessSetting.md)
-Delete navigation property conditionalAccessSettings for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDepOnboardingSetting](Remove-MgBetaDeviceManagementDepOnboardingSetting.md)
-Delete navigation property depOnboardingSettings for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfile](Remove-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfile.md)
-Delete navigation property enrollmentProfiles for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity](Remove-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity.md)
-Delete navigation property importedAppleDeviceIdentities for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDeviceEnrollmentConfiguration](Remove-MgBetaDeviceManagementDeviceEnrollmentConfiguration.md)
-Delete navigation property deviceEnrollmentConfigurations for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment](Remove-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment.md)
-Delete navigation property assignments for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementImportedDeviceIdentity](Remove-MgBetaDeviceManagementImportedDeviceIdentity.md)
-Delete navigation property importedDeviceIdentities for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity](Remove-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity.md)
-Delete navigation property importedWindowsAutopilotDeviceIdentities for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile](Remove-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile.md)
-Delete navigation property windowsAutopilotDeploymentProfiles for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice](Remove-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice.md)
-Delete navigation property assignedDevices for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignment](Remove-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignment.md)
-Delete navigation property assignments for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity](Remove-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity.md)
-Delete navigation property windowsAutopilotDeviceIdentities for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementWindowsAutopilotSetting](Remove-MgBetaDeviceManagementWindowsAutopilotSetting.md)
-Delete navigation property windowsAutopilotSettings for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementWindowsFeatureUpdateProfile](Remove-MgBetaDeviceManagementWindowsFeatureUpdateProfile.md)
-Delete navigation property windowsFeatureUpdateProfiles for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementWindowsFeatureUpdateProfileAssignment](Remove-MgBetaDeviceManagementWindowsFeatureUpdateProfileAssignment.md)
-Delete navigation property assignments for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaRoleManagementCloudPc](Remove-MgBetaRoleManagementCloudPc.md)
-Delete navigation property cloudPC for roleManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaRoleManagementCloudPcResourceNamespace](Remove-MgBetaRoleManagementCloudPcResourceNamespace.md)
-Delete navigation property resourceNamespaces for roleManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction](Remove-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction.md)
-Delete navigation property resourceActions for roleManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaRoleManagementCloudPcResourceNamespaceResourceActionResourceScope](Remove-MgBetaRoleManagementCloudPcResourceNamespaceResourceActionResourceScope.md)
-Delete navigation property resourceScope for roleManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaRoleManagementCloudPcRoleAssignment](Remove-MgBetaRoleManagementCloudPcRoleAssignment.md)
-Delete a unifiedRoleAssignmentMultiple object of an RBAC provider.
-This is applicable for a RBAC application that supports multiple principals and scopes.
-The following RBAC providers are currently supported:- Cloud PC - device management (Intune) This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaRoleManagementCloudPcRoleAssignmentAppScope](Remove-MgBetaRoleManagementCloudPcRoleAssignmentAppScope.md)
-Delete navigation property appScopes for roleManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaRoleManagementCloudPcRoleDefinition](Remove-MgBetaRoleManagementCloudPcRoleDefinition.md)
-Delete a unifiedRoleDefinition object for an RBAC provider.
-You cannot delete built-in roles.
-This feature requires a Microsoft Entra ID P1 or P2 license.
-The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- directory (Microsoft Entra ID)  This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaRoleManagementCloudPcRoleDefinitionInheritPermissionFrom](Remove-MgBetaRoleManagementCloudPcRoleDefinitionInheritPermissionFrom.md)
-Delete navigation property inheritsPermissionsFrom for roleManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaRoleManagementDeviceManagement](Remove-MgBetaRoleManagementDeviceManagement.md)
-Delete navigation property deviceManagement for roleManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaRoleManagementDeviceManagementResourceNamespace](Remove-MgBetaRoleManagementDeviceManagementResourceNamespace.md)
-Delete navigation property resourceNamespaces for roleManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction](Remove-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction.md)
-Delete navigation property resourceActions for roleManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceActionResourceScope](Remove-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceActionResourceScope.md)
-Delete navigation property resourceScope for roleManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaRoleManagementDeviceManagementRoleAssignment](Remove-MgBetaRoleManagementDeviceManagementRoleAssignment.md)
-Delete a unifiedRoleAssignmentMultiple object of an RBAC provider.
-This is applicable for a RBAC application that supports multiple principals and scopes.
-The following RBAC providers are currently supported:- Cloud PC - device management (Intune) This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaRoleManagementDeviceManagementRoleAssignmentAppScope](Remove-MgBetaRoleManagementDeviceManagementRoleAssignmentAppScope.md)
-Delete navigation property appScopes for roleManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaRoleManagementDeviceManagementRoleDefinition](Remove-MgBetaRoleManagementDeviceManagementRoleDefinition.md)
-Delete a unifiedRoleDefinition object for an RBAC provider.
-You cannot delete built-in roles.
-This feature requires a Microsoft Entra ID P1 or P2 license.
-The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- directory (Microsoft Entra ID)  This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom](Remove-MgBetaRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom.md)
-Delete navigation property inheritsPermissionsFrom for roleManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile](Update-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile.md)
-Update the navigation property androidDeviceOwnerEnrollmentProfiles in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile](Update-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile.md)
-Update the navigation property androidForWorkEnrollmentProfiles in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfile](Update-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfile.md)
-Update the navigation property appleUserInitiatedEnrollmentProfiles in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfileAssignment](Update-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfileAssignment.md)
-Update the navigation property assignments in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementAutopilotEvent](Update-MgBetaDeviceManagementAutopilotEvent.md)
-Update the navigation property autopilotEvents in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementAutopilotEventPolicyStatusDetail](Update-MgBetaDeviceManagementAutopilotEventPolicyStatusDetail.md)
-Update the navigation property policyStatusDetails in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementConditionalAccessSetting](Update-MgBetaDeviceManagementConditionalAccessSetting.md)
-Update the navigation property conditionalAccessSettings in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDepOnboardingSetting](Update-MgBetaDeviceManagementDepOnboardingSetting.md)
-Update the navigation property depOnboardingSettings in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfile](Update-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfile.md)
-Update the navigation property enrollmentProfiles in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity](Update-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity.md)
-Update the navigation property importedAppleDeviceIdentities in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDeviceEnrollmentConfiguration](Update-MgBetaDeviceManagementDeviceEnrollmentConfiguration.md)
-Update the navigation property deviceEnrollmentConfigurations in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment](Update-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment.md)
-Update the navigation property assignments in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementImportedDeviceIdentity](Update-MgBetaDeviceManagementImportedDeviceIdentity.md)
-Update the navigation property importedDeviceIdentities in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity](Update-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity.md)
-Update the navigation property importedWindowsAutopilotDeviceIdentities in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile](Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile.md)
-Update the navigation property windowsAutopilotDeploymentProfiles in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice](Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice.md)
-Update the navigation property assignedDevices in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignment](Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignment.md)
-Update the navigation property assignments in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementWindowsAutopilotSetting](Update-MgBetaDeviceManagementWindowsAutopilotSetting.md)
-Update the navigation property windowsAutopilotSettings in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementWindowsFeatureUpdateProfile](Update-MgBetaDeviceManagementWindowsFeatureUpdateProfile.md)
-Update the navigation property windowsFeatureUpdateProfiles in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementWindowsFeatureUpdateProfileAssignment](Update-MgBetaDeviceManagementWindowsFeatureUpdateProfileAssignment.md)
-Update the navigation property assignments in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaRoleManagement](Update-MgBetaRoleManagement.md)
-Update roleManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaRoleManagementCloudPc](Update-MgBetaRoleManagementCloudPc.md)
-Update the navigation property cloudPC in roleManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaRoleManagementCloudPcResourceNamespace](Update-MgBetaRoleManagementCloudPcResourceNamespace.md)
-Update the navigation property resourceNamespaces in roleManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction](Update-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction.md)
-Update the navigation property resourceActions in roleManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaRoleManagementCloudPcResourceNamespaceResourceActionResourceScope](Update-MgBetaRoleManagementCloudPcResourceNamespaceResourceActionResourceScope.md)
-Update the navigation property resourceScope in roleManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaRoleManagementCloudPcRoleAssignment](Update-MgBetaRoleManagementCloudPcRoleAssignment.md)
-Update an existing unifiedRoleAssignmentMultiple object of an RBAC provider.
-The following RBAC providers are currently supported:- Cloud PC - device management (Intune) In contrast, unifiedRoleAssignment does not support update.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaRoleManagementCloudPcRoleAssignmentAppScope](Update-MgBetaRoleManagementCloudPcRoleAssignmentAppScope.md)
-Update the navigation property appScopes in roleManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaRoleManagementCloudPcRoleDefinition](Update-MgBetaRoleManagementCloudPcRoleDefinition.md)
-Update the properties of a unifiedRoleDefinition object for an RBAC provider.
-You cannot update built-in roles.
-This feature requires a Microsoft Entra ID P1 or P2 license.
-The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- directory (Microsoft Entra ID)  This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaRoleManagementCloudPcRoleDefinitionInheritPermissionFrom](Update-MgBetaRoleManagementCloudPcRoleDefinitionInheritPermissionFrom.md)
-Update the navigation property inheritsPermissionsFrom in roleManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaRoleManagementDeviceManagement](Update-MgBetaRoleManagementDeviceManagement.md)
-Update the navigation property deviceManagement in roleManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaRoleManagementDeviceManagementResourceNamespace](Update-MgBetaRoleManagementDeviceManagementResourceNamespace.md)
-Update the navigation property resourceNamespaces in roleManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction](Update-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction.md)
-Update the navigation property resourceActions in roleManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceActionResourceScope](Update-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceActionResourceScope.md)
-Update the navigation property resourceScope in roleManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaRoleManagementDeviceManagementRoleAssignment](Update-MgBetaRoleManagementDeviceManagementRoleAssignment.md)
-Update an existing unifiedRoleAssignmentMultiple object of an RBAC provider.
-The following RBAC providers are currently supported:- Cloud PC - device management (Intune) In contrast, unifiedRoleAssignment does not support update.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaRoleManagementDeviceManagementRoleAssignmentAppScope](Update-MgBetaRoleManagementDeviceManagementRoleAssignmentAppScope.md)
-Update the navigation property appScopes in roleManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaRoleManagementDeviceManagementRoleDefinition](Update-MgBetaRoleManagementDeviceManagementRoleDefinition.md)
-Update the properties of a unifiedRoleDefinition object for an RBAC provider.
-You cannot update built-in roles.
-This feature requires a Microsoft Entra ID P1 or P2 license.
-The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- directory (Microsoft Entra ID)  This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom](Update-MgBetaRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom.md)
-Update the navigation property inheritsPermissionsFrom in roleManagement
+{{ Fill in the Description }}
 

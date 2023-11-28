@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachat
@@ -12,9 +12,6 @@ Retrieve a single chat (without its messages).
 This method supports federation.
 To access a chat, at least one chat member must belong to the tenant the request initiated from.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgChat](/powershell/module/Microsoft.Graph.Teams/Get-MgChat?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -43,50 +40,34 @@ To access a chat, at least one chat member must belong to the tenant the request
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Get a group chat
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 Get-MgBetaChat -ChatId $chatId
 
+### EXAMPLE 2
 ```
-This example will get a group chat
-
-### Example 2: Get a chat and all its members
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Teams
-
-Get-MgBetaChat -ChatId $chatId -ExpandProperty "members" 
-
 ```
-This example will get a chat and all its members
 
-### Example 3: Get the meeting details of a chat associated with a Microsoft Teams meeting
+Get-MgBetaChat -ChatId $chatId -ExpandProperty "members"
 
-```powershell
-
+### EXAMPLE 3
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 Get-MgBetaChat -ChatId $chatId
 
+### EXAMPLE 4
 ```
-This example will get the meeting details of a chat associated with a microsoft teams meeting
-
-### Example 4: Get the chat along with the preview of the last message sent in the chat
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Teams
-
-Get-MgBetaChat -ChatId $chatId -ExpandProperty "lastMessagePreview" 
-
 ```
-This example will get the chat along with the preview of the last message sent in the chat
 
+Get-MgBetaChat -ChatId $chatId -ExpandProperty "lastMessagePreview"
 
 ## PARAMETERS
 
@@ -328,7 +309,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgChat](/powershell/module/Microsoft.Graph.Teams/Get-MgChat?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachat)
 

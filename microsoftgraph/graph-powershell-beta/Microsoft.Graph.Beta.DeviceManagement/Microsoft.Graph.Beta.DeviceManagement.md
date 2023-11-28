@@ -1,2915 +1,2884 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-Module Guid: 4b14f8a8-2ee7-4588-bfa5-908baf9acd4c
-Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement
-Help Version: 1.0.0.0
+Module Guid: e28788e6-ed86-49a3-9355-6f0045bd3647
+Download Help Link: {{ Update Download Link }}
+Help Version: {{ Please enter version of help manually (X.X.X.X) format }}
 Locale: en-US
 ---
 
 # Microsoft.Graph.Beta.DeviceManagement Module
 ## Description
-Microsoft Graph PowerShell Cmdlets
+{{ Fill in the Description }}
 
 ## Microsoft.Graph.Beta.DeviceManagement Cmdlets
 ### [Get-MgBetaAdminEdge](Get-MgBetaAdminEdge.md)
-A container for Microsoft Edge resources.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaAdminEdgeInternetExplorerMode](Get-MgBetaAdminEdgeInternetExplorerMode.md)
-A container for Internet Explorer mode resources.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaAdminEdgeInternetExplorerModeSiteList](Get-MgBetaAdminEdgeInternetExplorerModeSiteList.md)
-Get a browserSiteList that contains browserSite and browserSharedCookie resources.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaAdminEdgeInternetExplorerModeSiteListCount](Get-MgBetaAdminEdgeInternetExplorerModeSiteListCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie](Get-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie.md)
-Get a session cookie that can be shared between a Microsoft Edge process and an Internet Explorer process, while using Internet Explorer mode.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookieCount](Get-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookieCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaAdminEdgeInternetExplorerModeSiteListSite](Get-MgBetaAdminEdgeInternetExplorerModeSiteListSite.md)
-Get a browserSite that resides on a browserSiteList.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaAdminEdgeInternetExplorerModeSiteListSiteCount](Get-MgBetaAdminEdgeInternetExplorerModeSiteListSiteCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagement](Get-MgBetaDeviceManagement.md)
-Get deviceManagement
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummary](Get-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummary.md)
-The summary state of ATP onboarding state for this account.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummaryAdvancedThreatProtectionOnboardingDeviceSettingState](Get-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummaryAdvancedThreatProtectionOnboardingDeviceSettingState.md)
-Get advancedThreatProtectionOnboardingDeviceSettingStates from deviceManagement
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummaryAdvancedThreatProtectionOnboardingDeviceSettingStateCount](Get-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummaryAdvancedThreatProtectionOnboardingDeviceSettingStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementAndroidForWorkAppConfigurationSchema](Get-MgBetaDeviceManagementAndroidForWorkAppConfigurationSchema.md)
-Android for Work app configuration schema entities.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementAndroidForWorkAppConfigurationSchemaCount](Get-MgBetaDeviceManagementAndroidForWorkAppConfigurationSchemaCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementAndroidForWorkSetting](Get-MgBetaDeviceManagementAndroidForWorkSetting.md)
-The singleton Android for Work settings entity.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSetting](Get-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSetting.md)
-The singleton Android managed store account enterprise settings entity.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementAndroidManagedStoreAppConfigurationSchema](Get-MgBetaDeviceManagementAndroidManagedStoreAppConfigurationSchema.md)
-Android Enterprise app configuration schema entities.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementAndroidManagedStoreAppConfigurationSchemaCount](Get-MgBetaDeviceManagementAndroidManagedStoreAppConfigurationSchemaCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementAssignmentFilter](Get-MgBetaDeviceManagementAssignmentFilter.md)
-The list of assignment filters
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementAssignmentFilterCount](Get-MgBetaDeviceManagementAssignmentFilterCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementCategory](Get-MgBetaDeviceManagementCategory.md)
-The available categories
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementCategoryCount](Get-MgBetaDeviceManagementCategoryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementCategorySettingDefinition](Get-MgBetaDeviceManagementCategorySettingDefinition.md)
-The setting definitions this category contains
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementCategorySettingDefinitionCount](Get-MgBetaDeviceManagementCategorySettingDefinitionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementComanagedDevice](Get-MgBetaDeviceManagementComanagedDevice.md)
-The list of co-managed devices report
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementComanagedDeviceAssignmentFilterEvaluationStatusDetail](Get-MgBetaDeviceManagementComanagedDeviceAssignmentFilterEvaluationStatusDetail.md)
-Managed device mobile app configuration states for this device.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementComanagedDeviceAssignmentFilterEvaluationStatusDetailCount](Get-MgBetaDeviceManagementComanagedDeviceAssignmentFilterEvaluationStatusDetailCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementComanagedDeviceCategory](Get-MgBetaDeviceManagementComanagedDeviceCategory.md)
-Device category
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementComanagedDeviceCompliancePolicyState](Get-MgBetaDeviceManagementComanagedDeviceCompliancePolicyState.md)
-Device compliance policy states for this device.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementComanagedDeviceCompliancePolicyStateCount](Get-MgBetaDeviceManagementComanagedDeviceCompliancePolicyStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementComanagedDeviceConfigurationState](Get-MgBetaDeviceManagementComanagedDeviceConfigurationState.md)
-Device configuration states for this device.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementComanagedDeviceConfigurationStateCount](Get-MgBetaDeviceManagementComanagedDeviceConfigurationStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementComanagedDeviceCount](Get-MgBetaDeviceManagementComanagedDeviceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementComanagedDeviceDetectedApp](Get-MgBetaDeviceManagementComanagedDeviceDetectedApp.md)
-All applications currently installed on the device
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementComanagedDeviceDetectedAppCount](Get-MgBetaDeviceManagementComanagedDeviceDetectedAppCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementComanagedDeviceHealthScriptState](Get-MgBetaDeviceManagementComanagedDeviceHealthScriptState.md)
-Results of device health scripts that ran for this device.
-Default is empty list.
-This property is read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementComanagedDeviceHealthScriptStateCount](Get-MgBetaDeviceManagementComanagedDeviceHealthScriptStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementComanagedDeviceLogCollectionRequest](Get-MgBetaDeviceManagementComanagedDeviceLogCollectionRequest.md)
-List of log collection requests
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementComanagedDeviceLogCollectionRequestCount](Get-MgBetaDeviceManagementComanagedDeviceLogCollectionRequestCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationState](Get-MgBetaDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationState.md)
-Managed device mobile app configuration states for this device.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationStateCount](Get-MgBetaDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementComanagedDeviceSecurityBaselineState](Get-MgBetaDeviceManagementComanagedDeviceSecurityBaselineState.md)
-Security baseline states for this device.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementComanagedDeviceSecurityBaselineStateCount](Get-MgBetaDeviceManagementComanagedDeviceSecurityBaselineStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementComanagedDeviceSecurityBaselineStateSettingState](Get-MgBetaDeviceManagementComanagedDeviceSecurityBaselineStateSettingState.md)
-The security baseline state for different settings for a device
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementComanagedDeviceSecurityBaselineStateSettingStateCount](Get-MgBetaDeviceManagementComanagedDeviceSecurityBaselineStateSettingStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementComanagedDeviceUser](Get-MgBetaDeviceManagementComanagedDeviceUser.md)
-The primary users associated with the managed device.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementComanagedDeviceWindowsProtectionState](Get-MgBetaDeviceManagementComanagedDeviceWindowsProtectionState.md)
-The device protection status.
-This property is read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementComanagedDeviceWindowsProtectionStateDetectedMalwareState](Get-MgBetaDeviceManagementComanagedDeviceWindowsProtectionStateDetectedMalwareState.md)
-Device malware list
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementComanagedDeviceWindowsProtectionStateDetectedMalwareStateCount](Get-MgBetaDeviceManagementComanagedDeviceWindowsProtectionStateDetectedMalwareStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementCompliancePolicy](Get-MgBetaDeviceManagementCompliancePolicy.md)
-List of all compliance policies
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementCompliancePolicyAssignment](Get-MgBetaDeviceManagementCompliancePolicyAssignment.md)
-Policy assignments
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementCompliancePolicyAssignmentCount](Get-MgBetaDeviceManagementCompliancePolicyAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementCompliancePolicyCount](Get-MgBetaDeviceManagementCompliancePolicyCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementCompliancePolicyScheduledActionForRule](Get-MgBetaDeviceManagementCompliancePolicyScheduledActionForRule.md)
-The list of scheduled action for this rule
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementCompliancePolicyScheduledActionForRuleCount](Get-MgBetaDeviceManagementCompliancePolicyScheduledActionForRuleCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](Get-MgBetaDeviceManagementCompliancePolicyScheduledActionForRuleScheduledActionConfiguration.md)
-The list of scheduled action configurations for this compliance policy.
-This collection can contain a maximum of 100 elements.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementCompliancePolicyScheduledActionForRuleScheduledActionConfigurationCount](Get-MgBetaDeviceManagementCompliancePolicyScheduledActionForRuleScheduledActionConfigurationCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementCompliancePolicySetting](Get-MgBetaDeviceManagementCompliancePolicySetting.md)
-Policy settings
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementCompliancePolicySettingCount](Get-MgBetaDeviceManagementCompliancePolicySettingCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementCompliancePolicySettingDefinition](Get-MgBetaDeviceManagementCompliancePolicySettingDefinition.md)
-List of related Setting Definitions.
-This property is read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementCompliancePolicySettingDefinitionCount](Get-MgBetaDeviceManagementCompliancePolicySettingDefinitionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementComplianceSetting](Get-MgBetaDeviceManagementComplianceSetting.md)
-List of all ComplianceSettings
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementComplianceSettingCount](Get-MgBetaDeviceManagementComplianceSettingCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementConfigurationPolicy](Get-MgBetaDeviceManagementConfigurationPolicy.md)
-List of all Configuration policies
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementConfigurationPolicyAssignment](Get-MgBetaDeviceManagementConfigurationPolicyAssignment.md)
-Policy assignments
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementConfigurationPolicyAssignmentCount](Get-MgBetaDeviceManagementConfigurationPolicyAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementConfigurationPolicyCount](Get-MgBetaDeviceManagementConfigurationPolicyCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementConfigurationPolicySetting](Get-MgBetaDeviceManagementConfigurationPolicySetting.md)
-Policy settings
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementConfigurationPolicySettingCount](Get-MgBetaDeviceManagementConfigurationPolicySettingCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementConfigurationPolicySettingDefinition](Get-MgBetaDeviceManagementConfigurationPolicySettingDefinition.md)
-List of related Setting Definitions.
-This property is read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementConfigurationPolicySettingDefinitionCount](Get-MgBetaDeviceManagementConfigurationPolicySettingDefinitionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementConfigurationPolicyTemplate](Get-MgBetaDeviceManagementConfigurationPolicyTemplate.md)
-List of all templates
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementConfigurationPolicyTemplateCount](Get-MgBetaDeviceManagementConfigurationPolicyTemplateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementConfigurationPolicyTemplateSettingDefinition](Get-MgBetaDeviceManagementConfigurationPolicyTemplateSettingDefinition.md)
-List of related Setting Definitions
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementConfigurationPolicyTemplateSettingDefinitionCount](Get-MgBetaDeviceManagementConfigurationPolicyTemplateSettingDefinitionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementConfigurationPolicyTemplateSettingTemplate](Get-MgBetaDeviceManagementConfigurationPolicyTemplateSettingTemplate.md)
-Setting templates
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementConfigurationPolicyTemplateSettingTemplateCount](Get-MgBetaDeviceManagementConfigurationPolicyTemplateSettingTemplateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementConfigurationSetting](Get-MgBetaDeviceManagementConfigurationSetting.md)
-List of all ConfigurationSettings
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementConfigurationSettingCount](Get-MgBetaDeviceManagementConfigurationSettingCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDataSharingConsent](Get-MgBetaDeviceManagementDataSharingConsent.md)
-Data sharing consents.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDataSharingConsentCount](Get-MgBetaDeviceManagementDataSharingConsentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDerivedCredential](Get-MgBetaDeviceManagementDerivedCredential.md)
-Collection of Derived credential settings associated with account.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDerivedCredentialCount](Get-MgBetaDeviceManagementDerivedCredentialCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDetectedApp](Get-MgBetaDeviceManagementDetectedApp.md)
-The list of detected apps associated with a device.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDetectedAppCount](Get-MgBetaDeviceManagementDetectedAppCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDetectedAppManagedDevice](Get-MgBetaDeviceManagementDetectedAppManagedDevice.md)
-The devices that have the discovered application installed
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDetectedAppManagedDeviceCount](Get-MgBetaDeviceManagementDetectedAppManagedDeviceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceCategory](Get-MgBetaDeviceManagementDeviceCategory.md)
-The list of device categories with the tenant.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceCategoryCount](Get-MgBetaDeviceManagementDeviceCategoryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceCompliancePolicy](Get-MgBetaDeviceManagementDeviceCompliancePolicy.md)
-The device compliance policies.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceCompliancePolicyAssignment](Get-MgBetaDeviceManagementDeviceCompliancePolicyAssignment.md)
-The collection of assignments for this compliance policy.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceCompliancePolicyAssignmentCount](Get-MgBetaDeviceManagementDeviceCompliancePolicyAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceCompliancePolicyCount](Get-MgBetaDeviceManagementDeviceCompliancePolicyCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary](Get-MgBetaDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary.md)
-Compliance Setting State Device Summary
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummaryCount](Get-MgBetaDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummaryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStateSummary](Get-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStateSummary.md)
-The device compliance state summary for this account.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatus](Get-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatus.md)
-List of DeviceComplianceDeviceStatus.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatusCount](Get-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatusCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatusOverview](Get-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatusOverview.md)
-Device compliance devices status overview
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRule](Get-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRule.md)
-The list of scheduled action for this rule
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRuleCount](Get-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRuleCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](Get-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration.md)
-The list of scheduled action configurations for this compliance policy.
-Compliance policy must have one and only one block scheduled action.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfigurationCount](Get-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfigurationCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummary](Get-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummary.md)
-The summary states of compliance policy settings for this account.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummaryCount](Get-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummaryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState](Get-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState.md)
-Get deviceComplianceSettingStates from deviceManagement
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingStateCount](Get-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceCompliancePolicyUserStatus](Get-MgBetaDeviceManagementDeviceCompliancePolicyUserStatus.md)
-List of DeviceComplianceUserStatus.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceCompliancePolicyUserStatusCount](Get-MgBetaDeviceManagementDeviceCompliancePolicyUserStatusCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceCompliancePolicyUserStatusOverview](Get-MgBetaDeviceManagementDeviceCompliancePolicyUserStatusOverview.md)
-Device compliance users status overview
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceConfiguration](Get-MgBetaDeviceManagementDeviceConfiguration.md)
-The device configurations.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceConfigurationAssignment](Get-MgBetaDeviceManagementDeviceConfigurationAssignment.md)
-The list of assignments for the device configuration profile.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceConfigurationAssignmentCount](Get-MgBetaDeviceManagementDeviceConfigurationAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceConfigurationConflictSummary](Get-MgBetaDeviceManagementDeviceConfigurationConflictSummary.md)
-Summary of policies in conflict state for this account.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceConfigurationConflictSummaryCount](Get-MgBetaDeviceManagementDeviceConfigurationConflictSummaryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceConfigurationCount](Get-MgBetaDeviceManagementDeviceConfigurationCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceConfigurationDeviceSettingStateSummary](Get-MgBetaDeviceManagementDeviceConfigurationDeviceSettingStateSummary.md)
-Device Configuration Setting State Device Summary
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceConfigurationDeviceSettingStateSummaryCount](Get-MgBetaDeviceManagementDeviceConfigurationDeviceSettingStateSummaryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceConfigurationDeviceStateSummary](Get-MgBetaDeviceManagementDeviceConfigurationDeviceStateSummary.md)
-The device configuration device state summary for this account.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceConfigurationDeviceStatus](Get-MgBetaDeviceManagementDeviceConfigurationDeviceStatus.md)
-Device configuration installation status by device.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceConfigurationDeviceStatusCount](Get-MgBetaDeviceManagementDeviceConfigurationDeviceStatusCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceConfigurationDeviceStatusOverview](Get-MgBetaDeviceManagementDeviceConfigurationDeviceStatusOverview.md)
-Device Configuration devices status overview
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceConfigurationGroupAssignment](Get-MgBetaDeviceManagementDeviceConfigurationGroupAssignment.md)
-The list of group assignments for the device configuration profile.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceConfigurationGroupAssignmentCount](Get-MgBetaDeviceManagementDeviceConfigurationGroupAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceConfigurationGroupAssignmentDeviceConfiguration](Get-MgBetaDeviceManagementDeviceConfigurationGroupAssignmentDeviceConfiguration.md)
-The navigation link to the Device Configuration being targeted.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceConfigurationUserStateSummary](Get-MgBetaDeviceManagementDeviceConfigurationUserStateSummary.md)
-The device configuration user state summary for this account.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceConfigurationUserStatus](Get-MgBetaDeviceManagementDeviceConfigurationUserStatus.md)
-Device configuration installation status by user.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceConfigurationUserStatusCount](Get-MgBetaDeviceManagementDeviceConfigurationUserStatusCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceConfigurationUserStatusOverview](Get-MgBetaDeviceManagementDeviceConfigurationUserStatusOverview.md)
-Device Configuration users status overview
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceHealthScript](Get-MgBetaDeviceManagementDeviceHealthScript.md)
-The list of device health scripts associated with the tenant.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceHealthScriptAssignment](Get-MgBetaDeviceManagementDeviceHealthScriptAssignment.md)
-The list of group assignments for the device health script
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceHealthScriptAssignmentCount](Get-MgBetaDeviceManagementDeviceHealthScriptAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceHealthScriptCount](Get-MgBetaDeviceManagementDeviceHealthScriptCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceHealthScriptDeviceRunState](Get-MgBetaDeviceManagementDeviceHealthScriptDeviceRunState.md)
-List of run states for the device health script across all devices
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceHealthScriptDeviceRunStateCount](Get-MgBetaDeviceManagementDeviceHealthScriptDeviceRunStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice](Get-MgBetaDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice.md)
-The managed device on which the device health script executed
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceHealthScriptRunSummary](Get-MgBetaDeviceManagementDeviceHealthScriptRunSummary.md)
-High level run summary for device health script.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceShellScript](Get-MgBetaDeviceManagementDeviceShellScript.md)
-The list of device shell scripts associated with the tenant.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceShellScriptAssignment](Get-MgBetaDeviceManagementDeviceShellScriptAssignment.md)
-The list of group assignments for the device management script.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceShellScriptAssignmentCount](Get-MgBetaDeviceManagementDeviceShellScriptAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceShellScriptCount](Get-MgBetaDeviceManagementDeviceShellScriptCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceShellScriptDeviceRunState](Get-MgBetaDeviceManagementDeviceShellScriptDeviceRunState.md)
-List of run states for this script across all devices.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceShellScriptDeviceRunStateCount](Get-MgBetaDeviceManagementDeviceShellScriptDeviceRunStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceShellScriptDeviceRunStateManagedDevice](Get-MgBetaDeviceManagementDeviceShellScriptDeviceRunStateManagedDevice.md)
-The managed devices that executes the device management script.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceShellScriptGroupAssignment](Get-MgBetaDeviceManagementDeviceShellScriptGroupAssignment.md)
-The list of group assignments for the device management script.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceShellScriptGroupAssignmentCount](Get-MgBetaDeviceManagementDeviceShellScriptGroupAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceShellScriptRunSummary](Get-MgBetaDeviceManagementDeviceShellScriptRunSummary.md)
-Run summary for device management script.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceShellScriptUserRunState](Get-MgBetaDeviceManagementDeviceShellScriptUserRunState.md)
-List of run states for this script across all users.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceShellScriptUserRunStateCount](Get-MgBetaDeviceManagementDeviceShellScriptUserRunStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceShellScriptUserRunStateDeviceRunState](Get-MgBetaDeviceManagementDeviceShellScriptUserRunStateDeviceRunState.md)
-List of run states for this script across all devices of specific user.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementEmbeddedSimActivationCodePool](Get-MgBetaDeviceManagementEmbeddedSimActivationCodePool.md)
-The embedded SIM activation code pools created by this account.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementEmbeddedSimActivationCodePoolAssignment](Get-MgBetaDeviceManagementEmbeddedSimActivationCodePoolAssignment.md)
-Navigational property to a list of targets to which this pool is assigned.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementEmbeddedSimActivationCodePoolAssignmentCount](Get-MgBetaDeviceManagementEmbeddedSimActivationCodePoolAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementEmbeddedSimActivationCodePoolCount](Get-MgBetaDeviceManagementEmbeddedSimActivationCodePoolCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementEmbeddedSimActivationCodePoolDeviceState](Get-MgBetaDeviceManagementEmbeddedSimActivationCodePoolDeviceState.md)
-Navigational property to a list of device states for this pool.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementEmbeddedSimActivationCodePoolDeviceStateCount](Get-MgBetaDeviceManagementEmbeddedSimActivationCodePoolDeviceStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementGroupPolicyConfiguration](Get-MgBetaDeviceManagementGroupPolicyConfiguration.md)
-The group policy configurations created by this account.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementGroupPolicyConfigurationAssignment](Get-MgBetaDeviceManagementGroupPolicyConfigurationAssignment.md)
-The list of group assignments for the configuration.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementGroupPolicyConfigurationAssignmentCount](Get-MgBetaDeviceManagementGroupPolicyConfigurationAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementGroupPolicyConfigurationCount](Get-MgBetaDeviceManagementGroupPolicyConfigurationCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValue](Get-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValue.md)
-The list of enabled or disabled group policy definition values for the configuration.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValueCount](Get-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValueCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValueDefinition](Get-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValueDefinition.md)
-The associated group policy definition with the value.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue](Get-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue.md)
-The associated group policy presentation values with the definition value.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementIntent](Get-MgBetaDeviceManagementIntent.md)
-The device management intents
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementIntentAssignment](Get-MgBetaDeviceManagementIntentAssignment.md)
-Collection of assignments
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementIntentAssignmentCount](Get-MgBetaDeviceManagementIntentAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementIntentCategory](Get-MgBetaDeviceManagementIntentCategory.md)
-Collection of setting categories within the intent
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementIntentCategoryCount](Get-MgBetaDeviceManagementIntentCategoryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementIntentCategorySetting](Get-MgBetaDeviceManagementIntentCategorySetting.md)
-The settings this category contains
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementIntentCategorySettingCount](Get-MgBetaDeviceManagementIntentCategorySettingCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementIntentCategorySettingDefinition](Get-MgBetaDeviceManagementIntentCategorySettingDefinition.md)
-The setting definitions this category contains
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementIntentCategorySettingDefinitionCount](Get-MgBetaDeviceManagementIntentCategorySettingDefinitionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementIntentCount](Get-MgBetaDeviceManagementIntentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementIntentDeviceSettingStateSummary](Get-MgBetaDeviceManagementIntentDeviceSettingStateSummary.md)
-Collection of settings and their states and counts of devices that belong to corresponding state for all settings within the intent
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementIntentDeviceSettingStateSummaryCount](Get-MgBetaDeviceManagementIntentDeviceSettingStateSummaryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementIntentDeviceState](Get-MgBetaDeviceManagementIntentDeviceState.md)
-Collection of states of all devices that the intent is applied to
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementIntentDeviceStateCount](Get-MgBetaDeviceManagementIntentDeviceStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementIntentDeviceStateSummary](Get-MgBetaDeviceManagementIntentDeviceStateSummary.md)
-A summary of device states and counts of devices that belong to corresponding state for all devices that the intent is applied to
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementIntentSetting](Get-MgBetaDeviceManagementIntentSetting.md)
-Collection of all settings to be applied
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementIntentSettingCount](Get-MgBetaDeviceManagementIntentSettingCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementIntentUserState](Get-MgBetaDeviceManagementIntentUserState.md)
-Collection of states of all users that the intent is applied to
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementIntentUserStateCount](Get-MgBetaDeviceManagementIntentUserStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementIntentUserStateSummary](Get-MgBetaDeviceManagementIntentUserStateSummary.md)
-A summary of user states and counts of users that belong to corresponding state for all users that the intent is applied to
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummary](Get-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummary.md)
-The MacOS software update account summaries for this account.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary](Get-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary.md)
-Summary of the updates by category.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummaryCount](Get-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummaryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummaryUpdateStateSummary](Get-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummaryUpdateStateSummary.md)
-Summary of the update states.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummaryUpdateStateSummaryCount](Get-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummaryUpdateStateSummaryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCount](Get-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementManagedDevice](Get-MgBetaDeviceManagementManagedDevice.md)
-The list of managed devices.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementManagedDeviceAssignmentFilterEvaluationStatusDetail](Get-MgBetaDeviceManagementManagedDeviceAssignmentFilterEvaluationStatusDetail.md)
-Managed device mobile app configuration states for this device.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementManagedDeviceAssignmentFilterEvaluationStatusDetailCount](Get-MgBetaDeviceManagementManagedDeviceAssignmentFilterEvaluationStatusDetailCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementManagedDeviceCategory](Get-MgBetaDeviceManagementManagedDeviceCategory.md)
-Device category
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementManagedDeviceCompliancePolicyState](Get-MgBetaDeviceManagementManagedDeviceCompliancePolicyState.md)
-Device compliance policy states for this device.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementManagedDeviceCompliancePolicyStateCount](Get-MgBetaDeviceManagementManagedDeviceCompliancePolicyStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementManagedDeviceConfigurationState](Get-MgBetaDeviceManagementManagedDeviceConfigurationState.md)
-Device configuration states for this device.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementManagedDeviceConfigurationStateCount](Get-MgBetaDeviceManagementManagedDeviceConfigurationStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementManagedDeviceCount](Get-MgBetaDeviceManagementManagedDeviceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementManagedDeviceDetectedApp](Get-MgBetaDeviceManagementManagedDeviceDetectedApp.md)
-All applications currently installed on the device
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementManagedDeviceDetectedAppCount](Get-MgBetaDeviceManagementManagedDeviceDetectedAppCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementManagedDeviceEncryptionState](Get-MgBetaDeviceManagementManagedDeviceEncryptionState.md)
-Encryption report for devices in this account
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementManagedDeviceEncryptionStateCount](Get-MgBetaDeviceManagementManagedDeviceEncryptionStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementManagedDeviceHealthScriptState](Get-MgBetaDeviceManagementManagedDeviceHealthScriptState.md)
-Results of device health scripts that ran for this device.
-Default is empty list.
-This property is read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementManagedDeviceHealthScriptStateCount](Get-MgBetaDeviceManagementManagedDeviceHealthScriptStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementManagedDeviceLogCollectionRequest](Get-MgBetaDeviceManagementManagedDeviceLogCollectionRequest.md)
-List of log collection requests
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementManagedDeviceLogCollectionRequestCount](Get-MgBetaDeviceManagementManagedDeviceLogCollectionRequestCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementManagedDeviceMobileAppConfigurationState](Get-MgBetaDeviceManagementManagedDeviceMobileAppConfigurationState.md)
-Managed device mobile app configuration states for this device.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementManagedDeviceMobileAppConfigurationStateCount](Get-MgBetaDeviceManagementManagedDeviceMobileAppConfigurationStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementManagedDeviceOverview](Get-MgBetaDeviceManagementManagedDeviceOverview.md)
-Device overview
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementManagedDeviceSecurityBaselineState](Get-MgBetaDeviceManagementManagedDeviceSecurityBaselineState.md)
-Security baseline states for this device.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementManagedDeviceSecurityBaselineStateCount](Get-MgBetaDeviceManagementManagedDeviceSecurityBaselineStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementManagedDeviceSecurityBaselineStateSettingState](Get-MgBetaDeviceManagementManagedDeviceSecurityBaselineStateSettingState.md)
-The security baseline state for different settings for a device
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementManagedDeviceSecurityBaselineStateSettingStateCount](Get-MgBetaDeviceManagementManagedDeviceSecurityBaselineStateSettingStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementManagedDeviceUser](Get-MgBetaDeviceManagementManagedDeviceUser.md)
-The primary users associated with the managed device.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementManagedDeviceWindowsProtectionState](Get-MgBetaDeviceManagementManagedDeviceWindowsProtectionState.md)
-The device protection status.
-This property is read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState](Get-MgBetaDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState.md)
-Device malware list
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareStateCount](Get-MgBetaDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementMicrosoftTunnelConfiguration](Get-MgBetaDeviceManagementMicrosoftTunnelConfiguration.md)
-Collection of MicrosoftTunnelConfiguration settings associated with account.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementMicrosoftTunnelConfigurationCount](Get-MgBetaDeviceManagementMicrosoftTunnelConfigurationCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementMicrosoftTunnelHealthThreshold](Get-MgBetaDeviceManagementMicrosoftTunnelHealthThreshold.md)
-Collection of MicrosoftTunnelHealthThreshold settings associated with account.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementMicrosoftTunnelHealthThresholdCount](Get-MgBetaDeviceManagementMicrosoftTunnelHealthThresholdCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponse](Get-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponse.md)
-Collection of MicrosoftTunnelServerLogCollectionResponse settings associated with account.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponseCount](Get-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponseCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementMicrosoftTunnelSite](Get-MgBetaDeviceManagementMicrosoftTunnelSite.md)
-Collection of MicrosoftTunnelSite settings associated with account.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementMicrosoftTunnelSiteCount](Get-MgBetaDeviceManagementMicrosoftTunnelSiteCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelConfiguration](Get-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelConfiguration.md)
-The MicrosoftTunnelConfiguration that has been applied to this MicrosoftTunnelSite
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer](Get-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer.md)
-A list of MicrosoftTunnelServers that are registered to this MicrosoftTunnelSite
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServerCount](Get-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServerCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementMobileAppTroubleshootingEvent](Get-MgBetaDeviceManagementMobileAppTroubleshootingEvent.md)
-The collection property of MobileAppTroubleshootingEvent.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](Get-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-The collection property of AppLogUploadRequest.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequestCount](Get-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequestCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementMobileAppTroubleshootingEventCount](Get-MgBetaDeviceManagementMobileAppTroubleshootingEventCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementMonitoring](Get-MgBetaDeviceManagementMonitoring.md)
-Get monitoring from deviceManagement
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementMonitoringAlertRecord](Get-MgBetaDeviceManagementMonitoringAlertRecord.md)
-Read the properties and relationships of an alertRecord object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementMonitoringAlertRecordCount](Get-MgBetaDeviceManagementMonitoringAlertRecordCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementMonitoringAlertRule](Get-MgBetaDeviceManagementMonitoringAlertRule.md)
-Read the properties and relationships of an alertRule object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementMonitoringAlertRuleCount](Get-MgBetaDeviceManagementMonitoringAlertRuleCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementNotificationMessageTemplate](Get-MgBetaDeviceManagementNotificationMessageTemplate.md)
-The Notification Message Templates.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementNotificationMessageTemplateCount](Get-MgBetaDeviceManagementNotificationMessageTemplateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage](Get-MgBetaDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage.md)
-The list of localized messages for this Notification Message Template.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementNotificationMessageTemplateLocalizedNotificationMessageCount](Get-MgBetaDeviceManagementNotificationMessageTemplateLocalizedNotificationMessageCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementRemoteActionAudit](Get-MgBetaDeviceManagementRemoteActionAudit.md)
-The list of device remote action audits with the tenant.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementRemoteActionAuditCount](Get-MgBetaDeviceManagementRemoteActionAuditCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementResourceAccessProfile](Get-MgBetaDeviceManagementResourceAccessProfile.md)
-Collection of resource access settings associated with account.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementResourceAccessProfileAssignment](Get-MgBetaDeviceManagementResourceAccessProfileAssignment.md)
-The list of assignments for the device configuration profile.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementResourceAccessProfileAssignmentCount](Get-MgBetaDeviceManagementResourceAccessProfileAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementResourceAccessProfileCount](Get-MgBetaDeviceManagementResourceAccessProfileCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementReusableSetting](Get-MgBetaDeviceManagementReusableSetting.md)
-List of all reusable settings
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementReusableSettingCount](Get-MgBetaDeviceManagementReusableSettingCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementScript](Get-MgBetaDeviceManagementScript.md)
-The list of device management scripts associated with the tenant.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementScriptAssignment](Get-MgBetaDeviceManagementScriptAssignment.md)
-The list of group assignments for the device management script.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementScriptAssignmentCount](Get-MgBetaDeviceManagementScriptAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementScriptCount](Get-MgBetaDeviceManagementScriptCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementScriptDeviceRunState](Get-MgBetaDeviceManagementScriptDeviceRunState.md)
-List of run states for this script across all devices.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementScriptDeviceRunStateCount](Get-MgBetaDeviceManagementScriptDeviceRunStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementScriptDeviceRunStateManagedDevice](Get-MgBetaDeviceManagementScriptDeviceRunStateManagedDevice.md)
-The managed devices that executes the device management script.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementScriptGroupAssignment](Get-MgBetaDeviceManagementScriptGroupAssignment.md)
-The list of group assignments for the device management script.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementScriptGroupAssignmentCount](Get-MgBetaDeviceManagementScriptGroupAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementScriptRunSummary](Get-MgBetaDeviceManagementScriptRunSummary.md)
-Run summary for device management script.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementScriptUserRunState](Get-MgBetaDeviceManagementScriptUserRunState.md)
-List of run states for this script across all users.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementScriptUserRunStateCount](Get-MgBetaDeviceManagementScriptUserRunStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementScriptUserRunStateDeviceRunState](Get-MgBetaDeviceManagementScriptUserRunStateDeviceRunState.md)
-List of run states for this script across all devices of specific user.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementSettingDefinition](Get-MgBetaDeviceManagementSettingDefinition.md)
-The device management intent setting definitions
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementSettingDefinitionCount](Get-MgBetaDeviceManagementSettingDefinitionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementSoftwareUpdateStatusSummary](Get-MgBetaDeviceManagementSoftwareUpdateStatusSummary.md)
-The software update status summary.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementTemplate](Get-MgBetaDeviceManagementTemplate.md)
-The available templates
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementTemplateCategory](Get-MgBetaDeviceManagementTemplateCategory.md)
-Collection of setting categories within the template
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementTemplateCategoryCount](Get-MgBetaDeviceManagementTemplateCategoryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementTemplateCategoryRecommendedSetting](Get-MgBetaDeviceManagementTemplateCategoryRecommendedSetting.md)
-The settings this category contains
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementTemplateCategoryRecommendedSettingCount](Get-MgBetaDeviceManagementTemplateCategoryRecommendedSettingCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementTemplateCategorySettingDefinition](Get-MgBetaDeviceManagementTemplateCategorySettingDefinition.md)
-The setting definitions this category contains
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementTemplateCategorySettingDefinitionCount](Get-MgBetaDeviceManagementTemplateCategorySettingDefinitionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementTemplateCount](Get-MgBetaDeviceManagementTemplateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementTemplateMigratableTo](Get-MgBetaDeviceManagementTemplateMigratableTo.md)
-Collection of templates this template can migrate to
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementTemplateMigratableToCategory](Get-MgBetaDeviceManagementTemplateMigratableToCategory.md)
-Collection of setting categories within the template
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementTemplateMigratableToCategoryCount](Get-MgBetaDeviceManagementTemplateMigratableToCategoryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementTemplateMigratableToCategoryRecommendedSetting](Get-MgBetaDeviceManagementTemplateMigratableToCategoryRecommendedSetting.md)
-The settings this category contains
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementTemplateMigratableToCategoryRecommendedSettingCount](Get-MgBetaDeviceManagementTemplateMigratableToCategoryRecommendedSettingCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementTemplateMigratableToCategorySettingDefinition](Get-MgBetaDeviceManagementTemplateMigratableToCategorySettingDefinition.md)
-The setting definitions this category contains
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementTemplateMigratableToCategorySettingDefinitionCount](Get-MgBetaDeviceManagementTemplateMigratableToCategorySettingDefinitionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementTemplateMigratableToCount](Get-MgBetaDeviceManagementTemplateMigratableToCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementTemplateMigratableToSetting](Get-MgBetaDeviceManagementTemplateMigratableToSetting.md)
-Collection of all settings this template has
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementTemplateMigratableToSettingCount](Get-MgBetaDeviceManagementTemplateMigratableToSettingCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementTemplateSetting](Get-MgBetaDeviceManagementTemplateSetting.md)
-Collection of all settings this template has
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementTemplateSettingCount](Get-MgBetaDeviceManagementTemplateSettingCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementTroubleshootingEvent](Get-MgBetaDeviceManagementTroubleshootingEvent.md)
-The list of troubleshooting events for the tenant.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementTroubleshootingEventCount](Get-MgBetaDeviceManagementTroubleshootingEventCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticAnomaly](Get-MgBetaDeviceManagementUserExperienceAnalyticAnomaly.md)
-The user experience analytics anomaly entity contains anomaly details.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview](Get-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview.md)
-The user experience analytics anomaly correlation group overview entity contains the information for each correlation group of an anomaly.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverviewCount](Get-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverviewCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCount](Get-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice](Get-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice.md)
-The user experience analytics anomaly entity contains device details.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDeviceCount](Get-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDeviceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance.md)
-User experience analytics appHealth Application Performance
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersion](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersion.md)
-User experience analytics appHealth Application Performance by App Version
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionCount](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail.md)
-User experience analytics appHealth Application Performance by App Version details
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetailCount](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetailCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId.md)
-User experience analytics appHealth Application Performance by App Version Device Id
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceIdCount](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceIdCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion.md)
-User experience analytics appHealth Application Performance by OS Version
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversionCount](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceCount](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance.md)
-User experience analytics appHealth Model Performance
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformanceCount](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformanceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance.md)
-User experience analytics appHealth Device Performance
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceCount](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail.md)
-User experience analytics device performance details
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetailCount](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetailCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance.md)
-User experience analytics appHealth OS version Performance
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformanceCount](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformanceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverview](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverview.md)
-User experience analytics appHealth overview
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue.md)
-The metric values for the user experience analytics category.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValueCount](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValueCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticBaseline](Get-MgBetaDeviceManagementUserExperienceAnalyticBaseline.md)
-User experience analytics baselines
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineAppHealthMetric](Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineAppHealthMetric.md)
-The scores and insights for the application health metrics.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetric](Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetric.md)
-The scores and insights for the battery health metrics.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetric](Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetric.md)
-The scores and insights for the best practices metrics.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineCount](Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineDeviceBootPerformanceMetric](Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineDeviceBootPerformanceMetric.md)
-The scores and insights for the device boot performance metrics.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineRebootAnalyticMetric](Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineRebootAnalyticMetric.md)
-The scores and insights for the reboot analytics metrics.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineResourcePerformanceMetric](Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineResourcePerformanceMetric.md)
-The scores and insights for the resource performance metrics.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetric](Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetric.md)
-The scores and insights for the work from anywhere metrics.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact](Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact.md)
-User Experience Analytics Battery Health App Impact
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthAppImpactCount](Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthAppImpactCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthCapacityDetail](Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthCapacityDetail.md)
-User Experience Analytics Battery Health Capacity Details
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact](Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact.md)
-User Experience Analytics Battery Health Device App Impact
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpactCount](Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpactCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance](Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance.md)
-User Experience Analytics Battery Health Device Performance
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformanceCount](Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformanceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory](Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory.md)
-User Experience Analytics Battery Health Device Runtime History
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistoryCount](Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistoryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance](Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance.md)
-User Experience Analytics Battery Health Model Performance
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformanceCount](Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformanceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformance](Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformance.md)
-User Experience Analytics Battery Health Os Performance
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformanceCount](Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformanceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthRuntimeDetail](Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthRuntimeDetail.md)
-User Experience Analytics Battery Health Runtime Details
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticCategory](Get-MgBetaDeviceManagementUserExperienceAnalyticCategory.md)
-User experience analytics categories
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticCategoryCount](Get-MgBetaDeviceManagementUserExperienceAnalyticCategoryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticCategoryMetricValue](Get-MgBetaDeviceManagementUserExperienceAnalyticCategoryMetricValue.md)
-The metric values for the user experience analytics category.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticCategoryMetricValueCount](Get-MgBetaDeviceManagementUserExperienceAnalyticCategoryMetricValueCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceMetricHistory](Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceMetricHistory.md)
-User experience analytics device metric history
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceMetricHistoryCount](Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceMetricHistoryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticDevicePerformance](Get-MgBetaDeviceManagementUserExperienceAnalyticDevicePerformance.md)
-User experience analytics device performance
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticDevicePerformanceCount](Get-MgBetaDeviceManagementUserExperienceAnalyticDevicePerformanceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceScope](Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceScope.md)
-The user experience analytics device scope entity endpoint to trigger on the service to either START or STOP computing metrics data based on a device scope configuration.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceScopeCount](Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceScopeCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceScore](Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceScore.md)
-User experience analytics device scores
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceScoreCount](Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceScoreCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistory](Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistory.md)
-User experience analytics device Startup History
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistoryCount](Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistoryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcess](Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcess.md)
-User experience analytics device Startup Processes
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcessCount](Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcessCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance](Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance.md)
-User experience analytics device Startup Process Performance
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformanceCount](Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformanceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceTimelineEvent](Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceTimelineEvent.md)
-The user experience analytics device events entity contains NRT device timeline event details.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceTimelineEventCount](Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceTimelineEventCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentity](Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentity.md)
-User experience analytics devices without cloud identity.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentityCount](Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentityCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticImpactingProcess](Get-MgBetaDeviceManagementUserExperienceAnalyticImpactingProcess.md)
-User experience analytics impacting process
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticImpactingProcessCount](Get-MgBetaDeviceManagementUserExperienceAnalyticImpactingProcessCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticMetricHistory](Get-MgBetaDeviceManagementUserExperienceAnalyticMetricHistory.md)
-User experience analytics metric history
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticMetricHistoryCount](Get-MgBetaDeviceManagementUserExperienceAnalyticMetricHistoryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticModelScore](Get-MgBetaDeviceManagementUserExperienceAnalyticModelScore.md)
-User experience analytics model scores
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticModelScoreCount](Get-MgBetaDeviceManagementUserExperienceAnalyticModelScoreCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice](Get-MgBetaDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice.md)
-User experience analytics devices not Windows Autopilot ready.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticNotAutopilotReadyDeviceCount](Get-MgBetaDeviceManagementUserExperienceAnalyticNotAutopilotReadyDeviceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticOverview](Get-MgBetaDeviceManagementUserExperienceAnalyticOverview.md)
-User experience analytics overview
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnection](Get-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnection.md)
-User experience analytics remote connection
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnectionCount](Get-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnectionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticResourcePerformance](Get-MgBetaDeviceManagementUserExperienceAnalyticResourcePerformance.md)
-User experience analytics resource performance
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticResourcePerformanceCount](Get-MgBetaDeviceManagementUserExperienceAnalyticResourcePerformanceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticScoreHistory](Get-MgBetaDeviceManagementUserExperienceAnalyticScoreHistory.md)
-User experience analytics device Startup Score History
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticScoreHistoryCount](Get-MgBetaDeviceManagementUserExperienceAnalyticScoreHistoryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric](Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric.md)
-User experience analytics work from anywhere hardware readiness metrics.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric](Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric.md)
-User experience analytics work from anywhere metrics.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricCount](Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice](Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice.md)
-The work from anywhere metric devices.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDeviceCount](Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDeviceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance](Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance.md)
-The user experience analytics work from anywhere model performance
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformanceCount](Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformanceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummary](Get-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummary.md)
-The windows information protection app learning summaries.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummaryCount](Get-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummaryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementWindowsInformationProtectionNetworkLearningSummary](Get-MgBetaDeviceManagementWindowsInformationProtectionNetworkLearningSummary.md)
-The windows information protection network learning summaries.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementWindowsInformationProtectionNetworkLearningSummaryCount](Get-MgBetaDeviceManagementWindowsInformationProtectionNetworkLearningSummaryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementWindowsMalwareInformation](Get-MgBetaDeviceManagementWindowsMalwareInformation.md)
-The list of affected malware in the tenant.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementWindowsMalwareInformationCount](Get-MgBetaDeviceManagementWindowsMalwareInformationCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementWindowsMalwareInformationDeviceMalwareState](Get-MgBetaDeviceManagementWindowsMalwareInformationDeviceMalwareState.md)
-List of devices affected by current malware with the malware state on each device
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementWindowsMalwareInformationDeviceMalwareStateCount](Get-MgBetaDeviceManagementWindowsMalwareInformationDeviceMalwareStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementWindowsQualityUpdateProfile](Get-MgBetaDeviceManagementWindowsQualityUpdateProfile.md)
-A collection of windows quality update profiles
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment](Get-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment.md)
-The list of group assignments of the profile.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignmentCount](Get-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementWindowsQualityUpdateProfileCount](Get-MgBetaDeviceManagementWindowsQualityUpdateProfileCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [New-MgBetaAdminEdgeInternetExplorerModeSiteList](New-MgBetaAdminEdgeInternetExplorerModeSiteList.md)
-Create a new browserSiteList object to support Internet Explorer mode.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie](New-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie.md)
-Create a new browserSharedCookie object in a browserSiteList.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaAdminEdgeInternetExplorerModeSiteListSite](New-MgBetaAdminEdgeInternetExplorerModeSiteListSite.md)
-Create a new browserSite object in a browserSiteList.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummaryAdvancedThreatProtectionOnboardingDeviceSettingState](New-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummaryAdvancedThreatProtectionOnboardingDeviceSettingState.md)
-Create new navigation property to advancedThreatProtectionOnboardingDeviceSettingStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementAndroidForWorkAppConfigurationSchema](New-MgBetaDeviceManagementAndroidForWorkAppConfigurationSchema.md)
-Create new navigation property to androidForWorkAppConfigurationSchemas for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementAndroidManagedStoreAppConfigurationSchema](New-MgBetaDeviceManagementAndroidManagedStoreAppConfigurationSchema.md)
-Create new navigation property to androidManagedStoreAppConfigurationSchemas for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementAssignmentFilter](New-MgBetaDeviceManagementAssignmentFilter.md)
-Create new navigation property to assignmentFilters for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementCategory](New-MgBetaDeviceManagementCategory.md)
-Create new navigation property to categories for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementCategorySettingDefinition](New-MgBetaDeviceManagementCategorySettingDefinition.md)
-Create new navigation property to settingDefinitions for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementComanagedDevice](New-MgBetaDeviceManagementComanagedDevice.md)
-Create new navigation property to comanagedDevices for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementComanagedDeviceAssignmentFilterEvaluationStatusDetail](New-MgBetaDeviceManagementComanagedDeviceAssignmentFilterEvaluationStatusDetail.md)
-Create new navigation property to assignmentFilterEvaluationStatusDetails for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementComanagedDeviceCompliancePolicyState](New-MgBetaDeviceManagementComanagedDeviceCompliancePolicyState.md)
-Create new navigation property to deviceCompliancePolicyStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementComanagedDeviceConfigurationState](New-MgBetaDeviceManagementComanagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementComanagedDeviceHealthScriptState](New-MgBetaDeviceManagementComanagedDeviceHealthScriptState.md)
-Create new navigation property to deviceHealthScriptStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationState](New-MgBetaDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationState.md)
-Create new navigation property to managedDeviceMobileAppConfigurationStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementComanagedDeviceSecurityBaselineState](New-MgBetaDeviceManagementComanagedDeviceSecurityBaselineState.md)
-Create new navigation property to securityBaselineStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementComanagedDeviceSecurityBaselineStateSettingState](New-MgBetaDeviceManagementComanagedDeviceSecurityBaselineStateSettingState.md)
-Create new navigation property to settingStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementComanagedDeviceWindowsProtectionStateDetectedMalwareState](New-MgBetaDeviceManagementComanagedDeviceWindowsProtectionStateDetectedMalwareState.md)
-Create new navigation property to detectedMalwareState for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementCompliancePolicy](New-MgBetaDeviceManagementCompliancePolicy.md)
-Create new navigation property to compliancePolicies for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementCompliancePolicyAssignment](New-MgBetaDeviceManagementCompliancePolicyAssignment.md)
-Create new navigation property to assignments for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementCompliancePolicyScheduledActionForRule](New-MgBetaDeviceManagementCompliancePolicyScheduledActionForRule.md)
-Create new navigation property to scheduledActionsForRule for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](New-MgBetaDeviceManagementCompliancePolicyScheduledActionForRuleScheduledActionConfiguration.md)
-Create new navigation property to scheduledActionConfigurations for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementCompliancePolicySetting](New-MgBetaDeviceManagementCompliancePolicySetting.md)
-Create new navigation property to settings for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementComplianceSetting](New-MgBetaDeviceManagementComplianceSetting.md)
-Create new navigation property to complianceSettings for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementConfigurationPolicy](New-MgBetaDeviceManagementConfigurationPolicy.md)
-Create new navigation property to configurationPolicies for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementConfigurationPolicyAssignment](New-MgBetaDeviceManagementConfigurationPolicyAssignment.md)
-Create new navigation property to assignments for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementConfigurationPolicySetting](New-MgBetaDeviceManagementConfigurationPolicySetting.md)
-Create new navigation property to settings for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementConfigurationPolicyTemplate](New-MgBetaDeviceManagementConfigurationPolicyTemplate.md)
-Create new navigation property to configurationPolicyTemplates for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementConfigurationPolicyTemplateSettingDefinition](New-MgBetaDeviceManagementConfigurationPolicyTemplateSettingDefinition.md)
-Create new navigation property to settingDefinitions for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementConfigurationPolicyTemplateSettingTemplate](New-MgBetaDeviceManagementConfigurationPolicyTemplateSettingTemplate.md)
-Create new navigation property to settingTemplates for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementConfigurationSetting](New-MgBetaDeviceManagementConfigurationSetting.md)
-Create new navigation property to configurationSettings for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementDataSharingConsent](New-MgBetaDeviceManagementDataSharingConsent.md)
-Create new navigation property to dataSharingConsents for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementDerivedCredential](New-MgBetaDeviceManagementDerivedCredential.md)
-Create new navigation property to derivedCredentials for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementDetectedApp](New-MgBetaDeviceManagementDetectedApp.md)
-Create new navigation property to detectedApps for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementDeviceCategory](New-MgBetaDeviceManagementDeviceCategory.md)
-Create new navigation property to deviceCategories for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementDeviceCompliancePolicy](New-MgBetaDeviceManagementDeviceCompliancePolicy.md)
-Create new navigation property to deviceCompliancePolicies for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementDeviceCompliancePolicyAssignment](New-MgBetaDeviceManagementDeviceCompliancePolicyAssignment.md)
-Create new navigation property to assignments for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary](New-MgBetaDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary.md)
-Create new navigation property to deviceSettingStateSummaries for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatus](New-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatus.md)
-Create new navigation property to deviceStatuses for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRule](New-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRule.md)
-Create new navigation property to scheduledActionsForRule for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](New-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration.md)
-Create new navigation property to scheduledActionConfigurations for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummary](New-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummary.md)
-Create new navigation property to deviceCompliancePolicySettingStateSummaries for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState](New-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState.md)
-Create new navigation property to deviceComplianceSettingStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementDeviceCompliancePolicyUserStatus](New-MgBetaDeviceManagementDeviceCompliancePolicyUserStatus.md)
-Create new navigation property to userStatuses for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementDeviceConfiguration](New-MgBetaDeviceManagementDeviceConfiguration.md)
-Create new navigation property to deviceConfigurations for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementDeviceConfigurationAssignment](New-MgBetaDeviceManagementDeviceConfigurationAssignment.md)
-Create new navigation property to assignments for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementDeviceConfigurationConflictSummary](New-MgBetaDeviceManagementDeviceConfigurationConflictSummary.md)
-Create new navigation property to deviceConfigurationConflictSummary for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementDeviceConfigurationDeviceSettingStateSummary](New-MgBetaDeviceManagementDeviceConfigurationDeviceSettingStateSummary.md)
-Create new navigation property to deviceSettingStateSummaries for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementDeviceConfigurationDeviceStatus](New-MgBetaDeviceManagementDeviceConfigurationDeviceStatus.md)
-Create new navigation property to deviceStatuses for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementDeviceConfigurationGroupAssignment](New-MgBetaDeviceManagementDeviceConfigurationGroupAssignment.md)
-Create new navigation property to groupAssignments for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementDeviceConfigurationUserStatus](New-MgBetaDeviceManagementDeviceConfigurationUserStatus.md)
-Create new navigation property to userStatuses for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementDeviceHealthScript](New-MgBetaDeviceManagementDeviceHealthScript.md)
-Create new navigation property to deviceHealthScripts for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementDeviceHealthScriptAssignment](New-MgBetaDeviceManagementDeviceHealthScriptAssignment.md)
-Create new navigation property to assignments for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementDeviceHealthScriptDeviceRunState](New-MgBetaDeviceManagementDeviceHealthScriptDeviceRunState.md)
-Create new navigation property to deviceRunStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementDeviceShellScript](New-MgBetaDeviceManagementDeviceShellScript.md)
-Create new navigation property to deviceShellScripts for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementDeviceShellScriptAssignment](New-MgBetaDeviceManagementDeviceShellScriptAssignment.md)
-Create new navigation property to assignments for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementDeviceShellScriptDeviceRunState](New-MgBetaDeviceManagementDeviceShellScriptDeviceRunState.md)
-Create new navigation property to deviceRunStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementDeviceShellScriptGroupAssignment](New-MgBetaDeviceManagementDeviceShellScriptGroupAssignment.md)
-Create new navigation property to groupAssignments for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementDeviceShellScriptUserRunState](New-MgBetaDeviceManagementDeviceShellScriptUserRunState.md)
-Create new navigation property to userRunStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementDeviceShellScriptUserRunStateDeviceRunState](New-MgBetaDeviceManagementDeviceShellScriptUserRunStateDeviceRunState.md)
-Create new navigation property to deviceRunStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementEmbeddedSimActivationCodePool](New-MgBetaDeviceManagementEmbeddedSimActivationCodePool.md)
-Create new navigation property to embeddedSIMActivationCodePools for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementEmbeddedSimActivationCodePoolAssignment](New-MgBetaDeviceManagementEmbeddedSimActivationCodePoolAssignment.md)
-Create new navigation property to assignments for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementEmbeddedSimActivationCodePoolDeviceState](New-MgBetaDeviceManagementEmbeddedSimActivationCodePoolDeviceState.md)
-Create new navigation property to deviceStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementGroupPolicyConfiguration](New-MgBetaDeviceManagementGroupPolicyConfiguration.md)
-Create new navigation property to groupPolicyConfigurations for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementGroupPolicyConfigurationAssignment](New-MgBetaDeviceManagementGroupPolicyConfigurationAssignment.md)
-Create new navigation property to assignments for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValue](New-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValue.md)
-Create new navigation property to definitionValues for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue](New-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue.md)
-Create new navigation property to presentationValues for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementIntent](New-MgBetaDeviceManagementIntent.md)
-Create new navigation property to intents for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementIntentAssignment](New-MgBetaDeviceManagementIntentAssignment.md)
-Create new navigation property to assignments for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementIntentCategory](New-MgBetaDeviceManagementIntentCategory.md)
-Create new navigation property to categories for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementIntentCategorySetting](New-MgBetaDeviceManagementIntentCategorySetting.md)
-Create new navigation property to settings for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementIntentCategorySettingDefinition](New-MgBetaDeviceManagementIntentCategorySettingDefinition.md)
-Create new navigation property to settingDefinitions for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementIntentDeviceSettingStateSummary](New-MgBetaDeviceManagementIntentDeviceSettingStateSummary.md)
-Create new navigation property to deviceSettingStateSummaries for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementIntentDeviceState](New-MgBetaDeviceManagementIntentDeviceState.md)
-Create new navigation property to deviceStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementIntentSetting](New-MgBetaDeviceManagementIntentSetting.md)
-Create new navigation property to settings for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementIntentUserState](New-MgBetaDeviceManagementIntentUserState.md)
-Create new navigation property to userStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummary](New-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummary.md)
-Create new navigation property to macOSSoftwareUpdateAccountSummaries for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary](New-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary.md)
-Create new navigation property to categorySummaries for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummaryUpdateStateSummary](New-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummaryUpdateStateSummary.md)
-Create new navigation property to updateStateSummaries for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementManagedDevice](New-MgBetaDeviceManagementManagedDevice.md)
-Create new navigation property to managedDevices for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementManagedDeviceAssignmentFilterEvaluationStatusDetail](New-MgBetaDeviceManagementManagedDeviceAssignmentFilterEvaluationStatusDetail.md)
-Create new navigation property to assignmentFilterEvaluationStatusDetails for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementManagedDeviceCompliancePolicyState](New-MgBetaDeviceManagementManagedDeviceCompliancePolicyState.md)
-Create new navigation property to deviceCompliancePolicyStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementManagedDeviceConfigurationState](New-MgBetaDeviceManagementManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementManagedDeviceEncryptionState](New-MgBetaDeviceManagementManagedDeviceEncryptionState.md)
-Create new navigation property to managedDeviceEncryptionStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementManagedDeviceHealthScriptState](New-MgBetaDeviceManagementManagedDeviceHealthScriptState.md)
-Create new navigation property to deviceHealthScriptStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementManagedDeviceMobileAppConfigurationState](New-MgBetaDeviceManagementManagedDeviceMobileAppConfigurationState.md)
-Create new navigation property to managedDeviceMobileAppConfigurationStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementManagedDeviceSecurityBaselineState](New-MgBetaDeviceManagementManagedDeviceSecurityBaselineState.md)
-Create new navigation property to securityBaselineStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementManagedDeviceSecurityBaselineStateSettingState](New-MgBetaDeviceManagementManagedDeviceSecurityBaselineStateSettingState.md)
-Create new navigation property to settingStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState](New-MgBetaDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState.md)
-Create new navigation property to detectedMalwareState for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementMicrosoftTunnelConfiguration](New-MgBetaDeviceManagementMicrosoftTunnelConfiguration.md)
-Create new navigation property to microsoftTunnelConfigurations for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementMicrosoftTunnelHealthThreshold](New-MgBetaDeviceManagementMicrosoftTunnelHealthThreshold.md)
-Create new navigation property to microsoftTunnelHealthThresholds for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponse](New-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponse.md)
-Create new navigation property to microsoftTunnelServerLogCollectionResponses for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementMicrosoftTunnelSite](New-MgBetaDeviceManagementMicrosoftTunnelSite.md)
-Create new navigation property to microsoftTunnelSites for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer](New-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer.md)
-Create new navigation property to microsoftTunnelServers for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementMobileAppTroubleshootingEvent](New-MgBetaDeviceManagementMobileAppTroubleshootingEvent.md)
-Create new navigation property to mobileAppTroubleshootingEvents for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](New-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Create new navigation property to appLogCollectionRequests for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementMonitoringAlertRecord](New-MgBetaDeviceManagementMonitoringAlertRecord.md)
-Create new navigation property to alertRecords for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementMonitoringAlertRule](New-MgBetaDeviceManagementMonitoringAlertRule.md)
-Create an alertRule object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementNotificationMessageTemplate](New-MgBetaDeviceManagementNotificationMessageTemplate.md)
-Create new navigation property to notificationMessageTemplates for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage](New-MgBetaDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage.md)
-Create new navigation property to localizedNotificationMessages for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementRemoteActionAudit](New-MgBetaDeviceManagementRemoteActionAudit.md)
-Create new navigation property to remoteActionAudits for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementResourceAccessProfile](New-MgBetaDeviceManagementResourceAccessProfile.md)
-Create new navigation property to resourceAccessProfiles for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementResourceAccessProfileAssignment](New-MgBetaDeviceManagementResourceAccessProfileAssignment.md)
-Create new navigation property to assignments for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementReusableSetting](New-MgBetaDeviceManagementReusableSetting.md)
-Create new navigation property to reusableSettings for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementScript](New-MgBetaDeviceManagementScript.md)
-Create new navigation property to deviceManagementScripts for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementScriptAssignment](New-MgBetaDeviceManagementScriptAssignment.md)
-Create new navigation property to assignments for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementScriptDeviceRunState](New-MgBetaDeviceManagementScriptDeviceRunState.md)
-Create new navigation property to deviceRunStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementScriptGroupAssignment](New-MgBetaDeviceManagementScriptGroupAssignment.md)
-Create new navigation property to groupAssignments for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementScriptUserRunState](New-MgBetaDeviceManagementScriptUserRunState.md)
-Create new navigation property to userRunStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementScriptUserRunStateDeviceRunState](New-MgBetaDeviceManagementScriptUserRunStateDeviceRunState.md)
-Create new navigation property to deviceRunStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementSettingDefinition](New-MgBetaDeviceManagementSettingDefinition.md)
-Create new navigation property to settingDefinitions for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementTemplate](New-MgBetaDeviceManagementTemplate.md)
-Create new navigation property to templates for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementTemplateCategory](New-MgBetaDeviceManagementTemplateCategory.md)
-Create new navigation property to categories for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementTemplateCategoryRecommendedSetting](New-MgBetaDeviceManagementTemplateCategoryRecommendedSetting.md)
-Create new navigation property to recommendedSettings for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementTemplateCategorySettingDefinition](New-MgBetaDeviceManagementTemplateCategorySettingDefinition.md)
-Create new navigation property to settingDefinitions for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementTemplateMigratableTo](New-MgBetaDeviceManagementTemplateMigratableTo.md)
-Create new navigation property to migratableTo for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementTemplateMigratableToCategory](New-MgBetaDeviceManagementTemplateMigratableToCategory.md)
-Create new navigation property to categories for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementTemplateMigratableToCategoryRecommendedSetting](New-MgBetaDeviceManagementTemplateMigratableToCategoryRecommendedSetting.md)
-Create new navigation property to recommendedSettings for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementTemplateMigratableToCategorySettingDefinition](New-MgBetaDeviceManagementTemplateMigratableToCategorySettingDefinition.md)
-Create new navigation property to settingDefinitions for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementTemplateMigratableToSetting](New-MgBetaDeviceManagementTemplateMigratableToSetting.md)
-Create new navigation property to settings for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementTemplateSetting](New-MgBetaDeviceManagementTemplateSetting.md)
-Create new navigation property to settings for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementTroubleshootingEvent](New-MgBetaDeviceManagementTroubleshootingEvent.md)
-Create new navigation property to troubleshootingEvents for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticAnomaly](New-MgBetaDeviceManagementUserExperienceAnalyticAnomaly.md)
-Create new navigation property to userExperienceAnalyticsAnomaly for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview](New-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview.md)
-Create new navigation property to userExperienceAnalyticsAnomalyCorrelationGroupOverview for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice](New-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice.md)
-Create new navigation property to userExperienceAnalyticsAnomalyDevice for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance](New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance.md)
-Create new navigation property to userExperienceAnalyticsAppHealthApplicationPerformance for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersion](New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersion.md)
-Create new navigation property to userExperienceAnalyticsAppHealthApplicationPerformanceByAppVersion for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail](New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail.md)
-Create new navigation property to userExperienceAnalyticsAppHealthApplicationPerformanceByAppVersionDetails for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId](New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId.md)
-Create new navigation property to userExperienceAnalyticsAppHealthApplicationPerformanceByAppVersionDeviceId for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion](New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion.md)
-Create new navigation property to userExperienceAnalyticsAppHealthApplicationPerformanceByOSVersion for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance](New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance.md)
-Create new navigation property to userExperienceAnalyticsAppHealthDeviceModelPerformance for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance](New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance.md)
-Create new navigation property to userExperienceAnalyticsAppHealthDevicePerformance for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail](New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail.md)
-Create new navigation property to userExperienceAnalyticsAppHealthDevicePerformanceDetails for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance](New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance.md)
-Create new navigation property to userExperienceAnalyticsAppHealthOSVersionPerformance for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue](New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue.md)
-Create new navigation property to metricValues for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticBaseline](New-MgBetaDeviceManagementUserExperienceAnalyticBaseline.md)
-Create new navigation property to userExperienceAnalyticsBaselines for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact](New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact.md)
-Create new navigation property to userExperienceAnalyticsBatteryHealthAppImpact for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact](New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact.md)
-Create new navigation property to userExperienceAnalyticsBatteryHealthDeviceAppImpact for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance](New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance.md)
-Create new navigation property to userExperienceAnalyticsBatteryHealthDevicePerformance for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory](New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory.md)
-Create new navigation property to userExperienceAnalyticsBatteryHealthDeviceRuntimeHistory for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance](New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance.md)
-Create new navigation property to userExperienceAnalyticsBatteryHealthModelPerformance for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformance](New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformance.md)
-Create new navigation property to userExperienceAnalyticsBatteryHealthOsPerformance for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticCategory](New-MgBetaDeviceManagementUserExperienceAnalyticCategory.md)
-Create new navigation property to userExperienceAnalyticsCategories for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticCategoryMetricValue](New-MgBetaDeviceManagementUserExperienceAnalyticCategoryMetricValue.md)
-Create new navigation property to metricValues for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticDeviceMetricHistory](New-MgBetaDeviceManagementUserExperienceAnalyticDeviceMetricHistory.md)
-Create new navigation property to userExperienceAnalyticsDeviceMetricHistory for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticDevicePerformance](New-MgBetaDeviceManagementUserExperienceAnalyticDevicePerformance.md)
-Create new navigation property to userExperienceAnalyticsDevicePerformance for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticDeviceScope](New-MgBetaDeviceManagementUserExperienceAnalyticDeviceScope.md)
-Create new navigation property to userExperienceAnalyticsDeviceScopes for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticDeviceScore](New-MgBetaDeviceManagementUserExperienceAnalyticDeviceScore.md)
-Create new navigation property to userExperienceAnalyticsDeviceScores for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistory](New-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistory.md)
-Create new navigation property to userExperienceAnalyticsDeviceStartupHistory for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcess](New-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcess.md)
-Create new navigation property to userExperienceAnalyticsDeviceStartupProcesses for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance](New-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance.md)
-Create new navigation property to userExperienceAnalyticsDeviceStartupProcessPerformance for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticDeviceTimelineEvent](New-MgBetaDeviceManagementUserExperienceAnalyticDeviceTimelineEvent.md)
-Create new navigation property to userExperienceAnalyticsDeviceTimelineEvent for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentity](New-MgBetaDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentity.md)
-Create new navigation property to userExperienceAnalyticsDevicesWithoutCloudIdentity for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticImpactingProcess](New-MgBetaDeviceManagementUserExperienceAnalyticImpactingProcess.md)
-Create new navigation property to userExperienceAnalyticsImpactingProcess for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticMetricHistory](New-MgBetaDeviceManagementUserExperienceAnalyticMetricHistory.md)
-Create new navigation property to userExperienceAnalyticsMetricHistory for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticModelScore](New-MgBetaDeviceManagementUserExperienceAnalyticModelScore.md)
-Create new navigation property to userExperienceAnalyticsModelScores for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice](New-MgBetaDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice.md)
-Create new navigation property to userExperienceAnalyticsNotAutopilotReadyDevice for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnection](New-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnection.md)
-Create new navigation property to userExperienceAnalyticsRemoteConnection for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticResourcePerformance](New-MgBetaDeviceManagementUserExperienceAnalyticResourcePerformance.md)
-Create new navigation property to userExperienceAnalyticsResourcePerformance for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticScoreHistory](New-MgBetaDeviceManagementUserExperienceAnalyticScoreHistory.md)
-Create new navigation property to userExperienceAnalyticsScoreHistory for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric](New-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric.md)
-Create new navigation property to userExperienceAnalyticsWorkFromAnywhereMetrics for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice](New-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice.md)
-Create new navigation property to metricDevices for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance](New-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance.md)
-Create new navigation property to userExperienceAnalyticsWorkFromAnywhereModelPerformance for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummary](New-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummary.md)
-Create new navigation property to windowsInformationProtectionAppLearningSummaries for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementWindowsInformationProtectionNetworkLearningSummary](New-MgBetaDeviceManagementWindowsInformationProtectionNetworkLearningSummary.md)
-Create new navigation property to windowsInformationProtectionNetworkLearningSummaries for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementWindowsMalwareInformation](New-MgBetaDeviceManagementWindowsMalwareInformation.md)
-Create new navigation property to windowsMalwareInformation for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementWindowsMalwareInformationDeviceMalwareState](New-MgBetaDeviceManagementWindowsMalwareInformationDeviceMalwareState.md)
-Create new navigation property to deviceMalwareStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementWindowsQualityUpdateProfile](New-MgBetaDeviceManagementWindowsQualityUpdateProfile.md)
-Create new navigation property to windowsQualityUpdateProfiles for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment](New-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment.md)
-Create new navigation property to assignments for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaAdminEdge](Remove-MgBetaAdminEdge.md)
-Delete navigation property edge for admin
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaAdminEdgeInternetExplorerMode](Remove-MgBetaAdminEdgeInternetExplorerMode.md)
-Delete navigation property internetExplorerMode for admin
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaAdminEdgeInternetExplorerModeSiteList](Remove-MgBetaAdminEdgeInternetExplorerModeSiteList.md)
-Delete a browserSiteList object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie](Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie.md)
-Delete a browserSharedCookie from a browserSiteList.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSite](Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSite.md)
-Delete a browserSite from a browserSiteList.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummary](Remove-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummary.md)
-Delete navigation property advancedThreatProtectionOnboardingStateSummary for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummaryAdvancedThreatProtectionOnboardingDeviceSettingState](Remove-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummaryAdvancedThreatProtectionOnboardingDeviceSettingState.md)
-Delete navigation property advancedThreatProtectionOnboardingDeviceSettingStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementAndroidForWorkAppConfigurationSchema](Remove-MgBetaDeviceManagementAndroidForWorkAppConfigurationSchema.md)
-Delete navigation property androidForWorkAppConfigurationSchemas for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementAndroidForWorkSetting](Remove-MgBetaDeviceManagementAndroidForWorkSetting.md)
-Delete navigation property androidForWorkSettings for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSetting](Remove-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSetting.md)
-Delete navigation property androidManagedStoreAccountEnterpriseSettings for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementAndroidManagedStoreAppConfigurationSchema](Remove-MgBetaDeviceManagementAndroidManagedStoreAppConfigurationSchema.md)
-Delete navigation property androidManagedStoreAppConfigurationSchemas for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementAssignmentFilter](Remove-MgBetaDeviceManagementAssignmentFilter.md)
-Delete navigation property assignmentFilters for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementCategory](Remove-MgBetaDeviceManagementCategory.md)
-Delete navigation property categories for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementCategorySettingDefinition](Remove-MgBetaDeviceManagementCategorySettingDefinition.md)
-Delete navigation property settingDefinitions for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementComanagedDevice](Remove-MgBetaDeviceManagementComanagedDevice.md)
-Delete navigation property comanagedDevices for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementComanagedDeviceAssignmentFilterEvaluationStatusDetail](Remove-MgBetaDeviceManagementComanagedDeviceAssignmentFilterEvaluationStatusDetail.md)
-Delete navigation property assignmentFilterEvaluationStatusDetails for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementComanagedDeviceCategory](Remove-MgBetaDeviceManagementComanagedDeviceCategory.md)
-Delete navigation property deviceCategory for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementComanagedDeviceCompliancePolicyState](Remove-MgBetaDeviceManagementComanagedDeviceCompliancePolicyState.md)
-Delete navigation property deviceCompliancePolicyStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementComanagedDeviceConfigurationState](Remove-MgBetaDeviceManagementComanagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementComanagedDeviceHealthScriptState](Remove-MgBetaDeviceManagementComanagedDeviceHealthScriptState.md)
-Delete navigation property deviceHealthScriptStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementComanagedDeviceLogCollectionRequest](Remove-MgBetaDeviceManagementComanagedDeviceLogCollectionRequest.md)
-Delete navigation property logCollectionRequests for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationState](Remove-MgBetaDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationState.md)
-Delete navigation property managedDeviceMobileAppConfigurationStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementComanagedDeviceSecurityBaselineState](Remove-MgBetaDeviceManagementComanagedDeviceSecurityBaselineState.md)
-Delete navigation property securityBaselineStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementComanagedDeviceSecurityBaselineStateSettingState](Remove-MgBetaDeviceManagementComanagedDeviceSecurityBaselineStateSettingState.md)
-Delete navigation property settingStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementComanagedDeviceWindowsProtectionState](Remove-MgBetaDeviceManagementComanagedDeviceWindowsProtectionState.md)
-Delete navigation property windowsProtectionState for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementComanagedDeviceWindowsProtectionStateDetectedMalwareState](Remove-MgBetaDeviceManagementComanagedDeviceWindowsProtectionStateDetectedMalwareState.md)
-Delete navigation property detectedMalwareState for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementCompliancePolicy](Remove-MgBetaDeviceManagementCompliancePolicy.md)
-Delete navigation property compliancePolicies for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementCompliancePolicyAssignment](Remove-MgBetaDeviceManagementCompliancePolicyAssignment.md)
-Delete navigation property assignments for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementCompliancePolicyScheduledActionForRule](Remove-MgBetaDeviceManagementCompliancePolicyScheduledActionForRule.md)
-Delete navigation property scheduledActionsForRule for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](Remove-MgBetaDeviceManagementCompliancePolicyScheduledActionForRuleScheduledActionConfiguration.md)
-Delete navigation property scheduledActionConfigurations for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementCompliancePolicySetting](Remove-MgBetaDeviceManagementCompliancePolicySetting.md)
-Delete navigation property settings for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementComplianceSetting](Remove-MgBetaDeviceManagementComplianceSetting.md)
-Delete navigation property complianceSettings for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementConfigurationPolicy](Remove-MgBetaDeviceManagementConfigurationPolicy.md)
-Delete navigation property configurationPolicies for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementConfigurationPolicyAssignment](Remove-MgBetaDeviceManagementConfigurationPolicyAssignment.md)
-Delete navigation property assignments for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementConfigurationPolicySetting](Remove-MgBetaDeviceManagementConfigurationPolicySetting.md)
-Delete navigation property settings for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementConfigurationPolicyTemplate](Remove-MgBetaDeviceManagementConfigurationPolicyTemplate.md)
-Delete navigation property configurationPolicyTemplates for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementConfigurationPolicyTemplateSettingDefinition](Remove-MgBetaDeviceManagementConfigurationPolicyTemplateSettingDefinition.md)
-Delete navigation property settingDefinitions for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementConfigurationPolicyTemplateSettingTemplate](Remove-MgBetaDeviceManagementConfigurationPolicyTemplateSettingTemplate.md)
-Delete navigation property settingTemplates for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementConfigurationSetting](Remove-MgBetaDeviceManagementConfigurationSetting.md)
-Delete navigation property configurationSettings for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDataSharingConsent](Remove-MgBetaDeviceManagementDataSharingConsent.md)
-Delete navigation property dataSharingConsents for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDerivedCredential](Remove-MgBetaDeviceManagementDerivedCredential.md)
-Delete navigation property derivedCredentials for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDetectedApp](Remove-MgBetaDeviceManagementDetectedApp.md)
-Delete navigation property detectedApps for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDeviceCategory](Remove-MgBetaDeviceManagementDeviceCategory.md)
-Delete navigation property deviceCategories for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDeviceCompliancePolicy](Remove-MgBetaDeviceManagementDeviceCompliancePolicy.md)
-Delete navigation property deviceCompliancePolicies for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDeviceCompliancePolicyAssignment](Remove-MgBetaDeviceManagementDeviceCompliancePolicyAssignment.md)
-Delete navigation property assignments for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary](Remove-MgBetaDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary.md)
-Delete navigation property deviceSettingStateSummaries for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStateSummary](Remove-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStateSummary.md)
-Delete navigation property deviceCompliancePolicyDeviceStateSummary for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatus](Remove-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatus.md)
-Delete navigation property deviceStatuses for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatusOverview](Remove-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatusOverview.md)
-Delete navigation property deviceStatusOverview for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRule](Remove-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRule.md)
-Delete navigation property scheduledActionsForRule for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](Remove-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration.md)
-Delete navigation property scheduledActionConfigurations for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummary](Remove-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummary.md)
-Delete navigation property deviceCompliancePolicySettingStateSummaries for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState](Remove-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState.md)
-Delete navigation property deviceComplianceSettingStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDeviceCompliancePolicyUserStatus](Remove-MgBetaDeviceManagementDeviceCompliancePolicyUserStatus.md)
-Delete navigation property userStatuses for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDeviceCompliancePolicyUserStatusOverview](Remove-MgBetaDeviceManagementDeviceCompliancePolicyUserStatusOverview.md)
-Delete navigation property userStatusOverview for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDeviceConfiguration](Remove-MgBetaDeviceManagementDeviceConfiguration.md)
-Delete navigation property deviceConfigurations for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDeviceConfigurationAssignment](Remove-MgBetaDeviceManagementDeviceConfigurationAssignment.md)
-Delete navigation property assignments for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDeviceConfigurationConflictSummary](Remove-MgBetaDeviceManagementDeviceConfigurationConflictSummary.md)
-Delete navigation property deviceConfigurationConflictSummary for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDeviceConfigurationDeviceSettingStateSummary](Remove-MgBetaDeviceManagementDeviceConfigurationDeviceSettingStateSummary.md)
-Delete navigation property deviceSettingStateSummaries for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDeviceConfigurationDeviceStateSummary](Remove-MgBetaDeviceManagementDeviceConfigurationDeviceStateSummary.md)
-Delete navigation property deviceConfigurationDeviceStateSummaries for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDeviceConfigurationDeviceStatus](Remove-MgBetaDeviceManagementDeviceConfigurationDeviceStatus.md)
-Delete navigation property deviceStatuses for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDeviceConfigurationDeviceStatusOverview](Remove-MgBetaDeviceManagementDeviceConfigurationDeviceStatusOverview.md)
-Delete navigation property deviceStatusOverview for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDeviceConfigurationGroupAssignment](Remove-MgBetaDeviceManagementDeviceConfigurationGroupAssignment.md)
-Delete navigation property groupAssignments for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDeviceConfigurationUserStateSummary](Remove-MgBetaDeviceManagementDeviceConfigurationUserStateSummary.md)
-Delete navigation property deviceConfigurationUserStateSummaries for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDeviceConfigurationUserStatus](Remove-MgBetaDeviceManagementDeviceConfigurationUserStatus.md)
-Delete navigation property userStatuses for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDeviceConfigurationUserStatusOverview](Remove-MgBetaDeviceManagementDeviceConfigurationUserStatusOverview.md)
-Delete navigation property userStatusOverview for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDeviceHealthScript](Remove-MgBetaDeviceManagementDeviceHealthScript.md)
-Delete navigation property deviceHealthScripts for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDeviceHealthScriptAssignment](Remove-MgBetaDeviceManagementDeviceHealthScriptAssignment.md)
-Delete navigation property assignments for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDeviceHealthScriptDeviceRunState](Remove-MgBetaDeviceManagementDeviceHealthScriptDeviceRunState.md)
-Delete navigation property deviceRunStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDeviceHealthScriptRunSummary](Remove-MgBetaDeviceManagementDeviceHealthScriptRunSummary.md)
-Delete navigation property runSummary for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDeviceShellScript](Remove-MgBetaDeviceManagementDeviceShellScript.md)
-Delete navigation property deviceShellScripts for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDeviceShellScriptAssignment](Remove-MgBetaDeviceManagementDeviceShellScriptAssignment.md)
-Delete navigation property assignments for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDeviceShellScriptDeviceRunState](Remove-MgBetaDeviceManagementDeviceShellScriptDeviceRunState.md)
-Delete navigation property deviceRunStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDeviceShellScriptGroupAssignment](Remove-MgBetaDeviceManagementDeviceShellScriptGroupAssignment.md)
-Delete navigation property groupAssignments for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDeviceShellScriptUserRunState](Remove-MgBetaDeviceManagementDeviceShellScriptUserRunState.md)
-Delete navigation property userRunStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDeviceShellScriptUserRunStateDeviceRunState](Remove-MgBetaDeviceManagementDeviceShellScriptUserRunStateDeviceRunState.md)
-Delete navigation property deviceRunStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementEmbeddedSimActivationCodePool](Remove-MgBetaDeviceManagementEmbeddedSimActivationCodePool.md)
-Delete navigation property embeddedSIMActivationCodePools for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementEmbeddedSimActivationCodePoolAssignment](Remove-MgBetaDeviceManagementEmbeddedSimActivationCodePoolAssignment.md)
-Delete navigation property assignments for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementEmbeddedSimActivationCodePoolDeviceState](Remove-MgBetaDeviceManagementEmbeddedSimActivationCodePoolDeviceState.md)
-Delete navigation property deviceStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementGroupPolicyConfiguration](Remove-MgBetaDeviceManagementGroupPolicyConfiguration.md)
-Delete navigation property groupPolicyConfigurations for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementGroupPolicyConfigurationAssignment](Remove-MgBetaDeviceManagementGroupPolicyConfigurationAssignment.md)
-Delete navigation property assignments for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValue](Remove-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValue.md)
-Delete navigation property definitionValues for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue](Remove-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue.md)
-Delete navigation property presentationValues for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementIntent](Remove-MgBetaDeviceManagementIntent.md)
-Delete navigation property intents for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementIntentAssignment](Remove-MgBetaDeviceManagementIntentAssignment.md)
-Delete navigation property assignments for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementIntentCategory](Remove-MgBetaDeviceManagementIntentCategory.md)
-Delete navigation property categories for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementIntentCategorySetting](Remove-MgBetaDeviceManagementIntentCategorySetting.md)
-Delete navigation property settings for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementIntentCategorySettingDefinition](Remove-MgBetaDeviceManagementIntentCategorySettingDefinition.md)
-Delete navigation property settingDefinitions for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementIntentDeviceSettingStateSummary](Remove-MgBetaDeviceManagementIntentDeviceSettingStateSummary.md)
-Delete navigation property deviceSettingStateSummaries for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementIntentDeviceState](Remove-MgBetaDeviceManagementIntentDeviceState.md)
-Delete navigation property deviceStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementIntentDeviceStateSummary](Remove-MgBetaDeviceManagementIntentDeviceStateSummary.md)
-Delete navigation property deviceStateSummary for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementIntentSetting](Remove-MgBetaDeviceManagementIntentSetting.md)
-Delete navigation property settings for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementIntentUserState](Remove-MgBetaDeviceManagementIntentUserState.md)
-Delete navigation property userStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementIntentUserStateSummary](Remove-MgBetaDeviceManagementIntentUserStateSummary.md)
-Delete navigation property userStateSummary for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummary](Remove-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummary.md)
-Delete navigation property macOSSoftwareUpdateAccountSummaries for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary](Remove-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary.md)
-Delete navigation property categorySummaries for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummaryUpdateStateSummary](Remove-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummaryUpdateStateSummary.md)
-Delete navigation property updateStateSummaries for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementManagedDevice](Remove-MgBetaDeviceManagementManagedDevice.md)
-Delete navigation property managedDevices for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementManagedDeviceAssignmentFilterEvaluationStatusDetail](Remove-MgBetaDeviceManagementManagedDeviceAssignmentFilterEvaluationStatusDetail.md)
-Delete navigation property assignmentFilterEvaluationStatusDetails for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementManagedDeviceCategory](Remove-MgBetaDeviceManagementManagedDeviceCategory.md)
-Delete navigation property deviceCategory for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementManagedDeviceCompliancePolicyState](Remove-MgBetaDeviceManagementManagedDeviceCompliancePolicyState.md)
-Delete navigation property deviceCompliancePolicyStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementManagedDeviceConfigurationState](Remove-MgBetaDeviceManagementManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementManagedDeviceEncryptionState](Remove-MgBetaDeviceManagementManagedDeviceEncryptionState.md)
-Delete navigation property managedDeviceEncryptionStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementManagedDeviceHealthScriptState](Remove-MgBetaDeviceManagementManagedDeviceHealthScriptState.md)
-Delete navigation property deviceHealthScriptStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementManagedDeviceLogCollectionRequest](Remove-MgBetaDeviceManagementManagedDeviceLogCollectionRequest.md)
-Delete navigation property logCollectionRequests for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementManagedDeviceMobileAppConfigurationState](Remove-MgBetaDeviceManagementManagedDeviceMobileAppConfigurationState.md)
-Delete navigation property managedDeviceMobileAppConfigurationStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementManagedDeviceSecurityBaselineState](Remove-MgBetaDeviceManagementManagedDeviceSecurityBaselineState.md)
-Delete navigation property securityBaselineStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementManagedDeviceSecurityBaselineStateSettingState](Remove-MgBetaDeviceManagementManagedDeviceSecurityBaselineStateSettingState.md)
-Delete navigation property settingStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementManagedDeviceWindowsProtectionState](Remove-MgBetaDeviceManagementManagedDeviceWindowsProtectionState.md)
-Delete navigation property windowsProtectionState for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState](Remove-MgBetaDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState.md)
-Delete navigation property detectedMalwareState for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementMicrosoftTunnelConfiguration](Remove-MgBetaDeviceManagementMicrosoftTunnelConfiguration.md)
-Delete navigation property microsoftTunnelConfigurations for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementMicrosoftTunnelHealthThreshold](Remove-MgBetaDeviceManagementMicrosoftTunnelHealthThreshold.md)
-Delete navigation property microsoftTunnelHealthThresholds for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponse](Remove-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponse.md)
-Delete navigation property microsoftTunnelServerLogCollectionResponses for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementMicrosoftTunnelSite](Remove-MgBetaDeviceManagementMicrosoftTunnelSite.md)
-Delete navigation property microsoftTunnelSites for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelConfiguration](Remove-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelConfiguration.md)
-Delete navigation property microsoftTunnelConfiguration for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer](Remove-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer.md)
-Delete navigation property microsoftTunnelServers for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementMobileAppTroubleshootingEvent](Remove-MgBetaDeviceManagementMobileAppTroubleshootingEvent.md)
-Delete navigation property mobileAppTroubleshootingEvents for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Delete navigation property appLogCollectionRequests for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementMonitoring](Remove-MgBetaDeviceManagementMonitoring.md)
-Delete navigation property monitoring for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementMonitoringAlertRecord](Remove-MgBetaDeviceManagementMonitoringAlertRecord.md)
-Delete navigation property alertRecords for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementMonitoringAlertRule](Remove-MgBetaDeviceManagementMonitoringAlertRule.md)
-Delete navigation property alertRules for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementNotificationMessageTemplate](Remove-MgBetaDeviceManagementNotificationMessageTemplate.md)
-Delete navigation property notificationMessageTemplates for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage](Remove-MgBetaDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage.md)
-Delete navigation property localizedNotificationMessages for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementRemoteActionAudit](Remove-MgBetaDeviceManagementRemoteActionAudit.md)
-Delete navigation property remoteActionAudits for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementResourceAccessProfile](Remove-MgBetaDeviceManagementResourceAccessProfile.md)
-Delete navigation property resourceAccessProfiles for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementResourceAccessProfileAssignment](Remove-MgBetaDeviceManagementResourceAccessProfileAssignment.md)
-Delete navigation property assignments for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementReusableSetting](Remove-MgBetaDeviceManagementReusableSetting.md)
-Delete navigation property reusableSettings for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementScript](Remove-MgBetaDeviceManagementScript.md)
-Delete navigation property deviceManagementScripts for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementScriptAssignment](Remove-MgBetaDeviceManagementScriptAssignment.md)
-Delete navigation property assignments for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementScriptDeviceRunState](Remove-MgBetaDeviceManagementScriptDeviceRunState.md)
-Delete navigation property deviceRunStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementScriptGroupAssignment](Remove-MgBetaDeviceManagementScriptGroupAssignment.md)
-Delete navigation property groupAssignments for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementScriptUserRunState](Remove-MgBetaDeviceManagementScriptUserRunState.md)
-Delete navigation property userRunStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementScriptUserRunStateDeviceRunState](Remove-MgBetaDeviceManagementScriptUserRunStateDeviceRunState.md)
-Delete navigation property deviceRunStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementSettingDefinition](Remove-MgBetaDeviceManagementSettingDefinition.md)
-Delete navigation property settingDefinitions for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementTemplate](Remove-MgBetaDeviceManagementTemplate.md)
-Delete navigation property templates for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementTemplateCategory](Remove-MgBetaDeviceManagementTemplateCategory.md)
-Delete navigation property categories for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementTemplateCategoryRecommendedSetting](Remove-MgBetaDeviceManagementTemplateCategoryRecommendedSetting.md)
-Delete navigation property recommendedSettings for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementTemplateCategorySettingDefinition](Remove-MgBetaDeviceManagementTemplateCategorySettingDefinition.md)
-Delete navigation property settingDefinitions for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementTemplateMigratableTo](Remove-MgBetaDeviceManagementTemplateMigratableTo.md)
-Delete navigation property migratableTo for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementTemplateMigratableToCategory](Remove-MgBetaDeviceManagementTemplateMigratableToCategory.md)
-Delete navigation property categories for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementTemplateMigratableToCategoryRecommendedSetting](Remove-MgBetaDeviceManagementTemplateMigratableToCategoryRecommendedSetting.md)
-Delete navigation property recommendedSettings for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementTemplateMigratableToCategorySettingDefinition](Remove-MgBetaDeviceManagementTemplateMigratableToCategorySettingDefinition.md)
-Delete navigation property settingDefinitions for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementTemplateMigratableToSetting](Remove-MgBetaDeviceManagementTemplateMigratableToSetting.md)
-Delete navigation property settings for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementTemplateSetting](Remove-MgBetaDeviceManagementTemplateSetting.md)
-Delete navigation property settings for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementTroubleshootingEvent](Remove-MgBetaDeviceManagementTroubleshootingEvent.md)
-Delete navigation property troubleshootingEvents for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticAnomaly](Remove-MgBetaDeviceManagementUserExperienceAnalyticAnomaly.md)
-Delete navigation property userExperienceAnalyticsAnomaly for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview](Remove-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview.md)
-Delete navigation property userExperienceAnalyticsAnomalyCorrelationGroupOverview for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice](Remove-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice.md)
-Delete navigation property userExperienceAnalyticsAnomalyDevice for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance](Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance.md)
-Delete navigation property userExperienceAnalyticsAppHealthApplicationPerformance for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersion](Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersion.md)
-Delete navigation property userExperienceAnalyticsAppHealthApplicationPerformanceByAppVersion for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail](Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail.md)
-Delete navigation property userExperienceAnalyticsAppHealthApplicationPerformanceByAppVersionDetails for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId](Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId.md)
-Delete navigation property userExperienceAnalyticsAppHealthApplicationPerformanceByAppVersionDeviceId for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion](Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion.md)
-Delete navigation property userExperienceAnalyticsAppHealthApplicationPerformanceByOSVersion for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance](Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance.md)
-Delete navigation property userExperienceAnalyticsAppHealthDeviceModelPerformance for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance](Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance.md)
-Delete navigation property userExperienceAnalyticsAppHealthDevicePerformance for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail](Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail.md)
-Delete navigation property userExperienceAnalyticsAppHealthDevicePerformanceDetails for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance](Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance.md)
-Delete navigation property userExperienceAnalyticsAppHealthOSVersionPerformance for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverview](Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverview.md)
-Delete navigation property userExperienceAnalyticsAppHealthOverview for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue](Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue.md)
-Delete navigation property metricValues for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticBaseline](Remove-MgBetaDeviceManagementUserExperienceAnalyticBaseline.md)
-Delete navigation property userExperienceAnalyticsBaselines for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact](Remove-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact.md)
-Delete navigation property userExperienceAnalyticsBatteryHealthAppImpact for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthCapacityDetail](Remove-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthCapacityDetail.md)
-Delete navigation property userExperienceAnalyticsBatteryHealthCapacityDetails for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact](Remove-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact.md)
-Delete navigation property userExperienceAnalyticsBatteryHealthDeviceAppImpact for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance](Remove-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance.md)
-Delete navigation property userExperienceAnalyticsBatteryHealthDevicePerformance for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory](Remove-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory.md)
-Delete navigation property userExperienceAnalyticsBatteryHealthDeviceRuntimeHistory for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance](Remove-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance.md)
-Delete navigation property userExperienceAnalyticsBatteryHealthModelPerformance for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformance](Remove-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformance.md)
-Delete navigation property userExperienceAnalyticsBatteryHealthOsPerformance for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthRuntimeDetail](Remove-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthRuntimeDetail.md)
-Delete navigation property userExperienceAnalyticsBatteryHealthRuntimeDetails for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticCategory](Remove-MgBetaDeviceManagementUserExperienceAnalyticCategory.md)
-Delete navigation property userExperienceAnalyticsCategories for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticCategoryMetricValue](Remove-MgBetaDeviceManagementUserExperienceAnalyticCategoryMetricValue.md)
-Delete navigation property metricValues for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticDeviceMetricHistory](Remove-MgBetaDeviceManagementUserExperienceAnalyticDeviceMetricHistory.md)
-Delete navigation property userExperienceAnalyticsDeviceMetricHistory for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticDevicePerformance](Remove-MgBetaDeviceManagementUserExperienceAnalyticDevicePerformance.md)
-Delete navigation property userExperienceAnalyticsDevicePerformance for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticDeviceScope](Remove-MgBetaDeviceManagementUserExperienceAnalyticDeviceScope.md)
-Delete navigation property userExperienceAnalyticsDeviceScope for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticDeviceScore](Remove-MgBetaDeviceManagementUserExperienceAnalyticDeviceScore.md)
-Delete navigation property userExperienceAnalyticsDeviceScores for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistory](Remove-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistory.md)
-Delete navigation property userExperienceAnalyticsDeviceStartupHistory for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcess](Remove-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcess.md)
-Delete navigation property userExperienceAnalyticsDeviceStartupProcesses for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance](Remove-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance.md)
-Delete navigation property userExperienceAnalyticsDeviceStartupProcessPerformance for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticDeviceTimelineEvent](Remove-MgBetaDeviceManagementUserExperienceAnalyticDeviceTimelineEvent.md)
-Delete navigation property userExperienceAnalyticsDeviceTimelineEvent for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentity](Remove-MgBetaDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentity.md)
-Delete navigation property userExperienceAnalyticsDevicesWithoutCloudIdentity for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticImpactingProcess](Remove-MgBetaDeviceManagementUserExperienceAnalyticImpactingProcess.md)
-Delete navigation property userExperienceAnalyticsImpactingProcess for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticMetricHistory](Remove-MgBetaDeviceManagementUserExperienceAnalyticMetricHistory.md)
-Delete navigation property userExperienceAnalyticsMetricHistory for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticModelScore](Remove-MgBetaDeviceManagementUserExperienceAnalyticModelScore.md)
-Delete navigation property userExperienceAnalyticsModelScores for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice](Remove-MgBetaDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice.md)
-Delete navigation property userExperienceAnalyticsNotAutopilotReadyDevice for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticOverview](Remove-MgBetaDeviceManagementUserExperienceAnalyticOverview.md)
-Delete navigation property userExperienceAnalyticsOverview for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnection](Remove-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnection.md)
-Delete navigation property userExperienceAnalyticsRemoteConnection for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticResourcePerformance](Remove-MgBetaDeviceManagementUserExperienceAnalyticResourcePerformance.md)
-Delete navigation property userExperienceAnalyticsResourcePerformance for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticScoreHistory](Remove-MgBetaDeviceManagementUserExperienceAnalyticScoreHistory.md)
-Delete navigation property userExperienceAnalyticsScoreHistory for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric](Remove-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric.md)
-Delete navigation property userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric](Remove-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric.md)
-Delete navigation property userExperienceAnalyticsWorkFromAnywhereMetrics for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice](Remove-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice.md)
-Delete navigation property metricDevices for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance](Remove-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance.md)
-Delete navigation property userExperienceAnalyticsWorkFromAnywhereModelPerformance for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummary](Remove-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummary.md)
-Delete navigation property windowsInformationProtectionAppLearningSummaries for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementWindowsInformationProtectionNetworkLearningSummary](Remove-MgBetaDeviceManagementWindowsInformationProtectionNetworkLearningSummary.md)
-Delete navigation property windowsInformationProtectionNetworkLearningSummaries for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementWindowsMalwareInformation](Remove-MgBetaDeviceManagementWindowsMalwareInformation.md)
-Delete navigation property windowsMalwareInformation for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementWindowsMalwareInformationDeviceMalwareState](Remove-MgBetaDeviceManagementWindowsMalwareInformationDeviceMalwareState.md)
-Delete navigation property deviceMalwareStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementWindowsQualityUpdateProfile](Remove-MgBetaDeviceManagementWindowsQualityUpdateProfile.md)
-Delete navigation property windowsQualityUpdateProfiles for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment](Remove-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment.md)
-Delete navigation property assignments for deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaAdminEdge](Update-MgBetaAdminEdge.md)
-Update the navigation property edge in admin
+{{ Fill in the Description }}
 
 ### [Update-MgBetaAdminEdgeInternetExplorerMode](Update-MgBetaAdminEdgeInternetExplorerMode.md)
-Update the navigation property internetExplorerMode in admin
+{{ Fill in the Description }}
 
 ### [Update-MgBetaAdminEdgeInternetExplorerModeSiteList](Update-MgBetaAdminEdgeInternetExplorerModeSiteList.md)
-Update the properties of a browserSiteList object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie](Update-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie.md)
-Update the properties of a browserSharedCookie object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaAdminEdgeInternetExplorerModeSiteListSite](Update-MgBetaAdminEdgeInternetExplorerModeSiteListSite.md)
-Update the properties of a browserSite object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
-### [Update-MgBetaAdminEdgeInternetExplorerModeSiteListSite](Update-MgBetaAdminEdgeInternetExplorerModeSiteListSite.md)
-Update the properties of a browserSite object.
-This API is available in the following national cloud deployments.
+### [Update-MgBetaDeviceManagement](Update-MgBetaDeviceManagement.md)
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummary](Update-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummary.md)
-Update the navigation property advancedThreatProtectionOnboardingStateSummary in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummaryAdvancedThreatProtectionOnboardingDeviceSettingState](Update-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummaryAdvancedThreatProtectionOnboardingDeviceSettingState.md)
-Update the navigation property advancedThreatProtectionOnboardingDeviceSettingStates in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementAndroidForWorkAppConfigurationSchema](Update-MgBetaDeviceManagementAndroidForWorkAppConfigurationSchema.md)
-Update the navigation property androidForWorkAppConfigurationSchemas in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementAndroidForWorkSetting](Update-MgBetaDeviceManagementAndroidForWorkSetting.md)
-Update the navigation property androidForWorkSettings in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSetting](Update-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSetting.md)
-Update the navigation property androidManagedStoreAccountEnterpriseSettings in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementAndroidManagedStoreAppConfigurationSchema](Update-MgBetaDeviceManagementAndroidManagedStoreAppConfigurationSchema.md)
-Update the navigation property androidManagedStoreAppConfigurationSchemas in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementAssignmentFilter](Update-MgBetaDeviceManagementAssignmentFilter.md)
-Update the navigation property assignmentFilters in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementCategory](Update-MgBetaDeviceManagementCategory.md)
-Update the navigation property categories in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementCategorySettingDefinition](Update-MgBetaDeviceManagementCategorySettingDefinition.md)
-Update the navigation property settingDefinitions in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementComanagedDeviceAssignmentFilterEvaluationStatusDetail](Update-MgBetaDeviceManagementComanagedDeviceAssignmentFilterEvaluationStatusDetail.md)
-Update the navigation property assignmentFilterEvaluationStatusDetails in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementComanagedDeviceCategory](Update-MgBetaDeviceManagementComanagedDeviceCategory.md)
-Update the navigation property deviceCategory in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementComanagedDeviceCompliancePolicyState](Update-MgBetaDeviceManagementComanagedDeviceCompliancePolicyState.md)
-Update the navigation property deviceCompliancePolicyStates in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementComanagedDeviceConfigurationState](Update-MgBetaDeviceManagementComanagedDeviceConfigurationState.md)
-Update the navigation property deviceConfigurationStates in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementComanagedDeviceHealthScriptState](Update-MgBetaDeviceManagementComanagedDeviceHealthScriptState.md)
-Update the navigation property deviceHealthScriptStates in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementComanagedDeviceLogCollectionRequest](Update-MgBetaDeviceManagementComanagedDeviceLogCollectionRequest.md)
-Update the navigation property logCollectionRequests in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationState](Update-MgBetaDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationState.md)
-Update the navigation property managedDeviceMobileAppConfigurationStates in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementComanagedDeviceSecurityBaselineState](Update-MgBetaDeviceManagementComanagedDeviceSecurityBaselineState.md)
-Update the navigation property securityBaselineStates in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementComanagedDeviceSecurityBaselineStateSettingState](Update-MgBetaDeviceManagementComanagedDeviceSecurityBaselineStateSettingState.md)
-Update the navigation property settingStates in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementComanagedDeviceWindowsProtectionState](Update-MgBetaDeviceManagementComanagedDeviceWindowsProtectionState.md)
-Update the navigation property windowsProtectionState in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementComanagedDeviceWindowsProtectionStateDetectedMalwareState](Update-MgBetaDeviceManagementComanagedDeviceWindowsProtectionStateDetectedMalwareState.md)
-Update the navigation property detectedMalwareState in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementCompliancePolicy](Update-MgBetaDeviceManagementCompliancePolicy.md)
-Update the navigation property compliancePolicies in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementCompliancePolicyAssignment](Update-MgBetaDeviceManagementCompliancePolicyAssignment.md)
-Update the navigation property assignments in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementCompliancePolicyScheduledActionForRule](Update-MgBetaDeviceManagementCompliancePolicyScheduledActionForRule.md)
-Update the navigation property scheduledActionsForRule in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](Update-MgBetaDeviceManagementCompliancePolicyScheduledActionForRuleScheduledActionConfiguration.md)
-Update the navigation property scheduledActionConfigurations in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementCompliancePolicySetting](Update-MgBetaDeviceManagementCompliancePolicySetting.md)
-Update the navigation property settings in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementComplianceSetting](Update-MgBetaDeviceManagementComplianceSetting.md)
-Update the navigation property complianceSettings in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementConfigurationPolicy](Update-MgBetaDeviceManagementConfigurationPolicy.md)
-Update the navigation property configurationPolicies in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementConfigurationPolicyAssignment](Update-MgBetaDeviceManagementConfigurationPolicyAssignment.md)
-Update the navigation property assignments in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementConfigurationPolicySetting](Update-MgBetaDeviceManagementConfigurationPolicySetting.md)
-Update the navigation property settings in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementConfigurationPolicyTemplate](Update-MgBetaDeviceManagementConfigurationPolicyTemplate.md)
-Update the navigation property configurationPolicyTemplates in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementConfigurationPolicyTemplateSettingDefinition](Update-MgBetaDeviceManagementConfigurationPolicyTemplateSettingDefinition.md)
-Update the navigation property settingDefinitions in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementConfigurationPolicyTemplateSettingTemplate](Update-MgBetaDeviceManagementConfigurationPolicyTemplateSettingTemplate.md)
-Update the navigation property settingTemplates in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementConfigurationSetting](Update-MgBetaDeviceManagementConfigurationSetting.md)
-Update the navigation property configurationSettings in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDataSharingConsent](Update-MgBetaDeviceManagementDataSharingConsent.md)
-Update the navigation property dataSharingConsents in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDerivedCredential](Update-MgBetaDeviceManagementDerivedCredential.md)
-Update the navigation property derivedCredentials in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDetectedApp](Update-MgBetaDeviceManagementDetectedApp.md)
-Update the navigation property detectedApps in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDeviceCategory](Update-MgBetaDeviceManagementDeviceCategory.md)
-Update the navigation property deviceCategories in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDeviceCompliancePolicy](Update-MgBetaDeviceManagementDeviceCompliancePolicy.md)
-Update the navigation property deviceCompliancePolicies in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDeviceCompliancePolicyAssignment](Update-MgBetaDeviceManagementDeviceCompliancePolicyAssignment.md)
-Update the navigation property assignments in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary](Update-MgBetaDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary.md)
-Update the navigation property deviceSettingStateSummaries in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStateSummary](Update-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStateSummary.md)
-Update the navigation property deviceCompliancePolicyDeviceStateSummary in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatus](Update-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatus.md)
-Update the navigation property deviceStatuses in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatusOverview](Update-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatusOverview.md)
-Update the navigation property deviceStatusOverview in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRule](Update-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRule.md)
-Update the navigation property scheduledActionsForRule in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](Update-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration.md)
-Update the navigation property scheduledActionConfigurations in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummary](Update-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummary.md)
-Update the navigation property deviceCompliancePolicySettingStateSummaries in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState](Update-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState.md)
-Update the navigation property deviceComplianceSettingStates in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDeviceCompliancePolicyUserStatus](Update-MgBetaDeviceManagementDeviceCompliancePolicyUserStatus.md)
-Update the navigation property userStatuses in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDeviceCompliancePolicyUserStatusOverview](Update-MgBetaDeviceManagementDeviceCompliancePolicyUserStatusOverview.md)
-Update the navigation property userStatusOverview in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDeviceConfiguration](Update-MgBetaDeviceManagementDeviceConfiguration.md)
-Update the navigation property deviceConfigurations in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDeviceConfigurationAssignment](Update-MgBetaDeviceManagementDeviceConfigurationAssignment.md)
-Update the navigation property assignments in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDeviceConfigurationConflictSummary](Update-MgBetaDeviceManagementDeviceConfigurationConflictSummary.md)
-Update the navigation property deviceConfigurationConflictSummary in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDeviceConfigurationDeviceSettingStateSummary](Update-MgBetaDeviceManagementDeviceConfigurationDeviceSettingStateSummary.md)
-Update the navigation property deviceSettingStateSummaries in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDeviceConfigurationDeviceStateSummary](Update-MgBetaDeviceManagementDeviceConfigurationDeviceStateSummary.md)
-Update the navigation property deviceConfigurationDeviceStateSummaries in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDeviceConfigurationDeviceStatus](Update-MgBetaDeviceManagementDeviceConfigurationDeviceStatus.md)
-Update the navigation property deviceStatuses in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDeviceConfigurationDeviceStatusOverview](Update-MgBetaDeviceManagementDeviceConfigurationDeviceStatusOverview.md)
-Update the navigation property deviceStatusOverview in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDeviceConfigurationGroupAssignment](Update-MgBetaDeviceManagementDeviceConfigurationGroupAssignment.md)
-Update the navigation property groupAssignments in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDeviceConfigurationUserStateSummary](Update-MgBetaDeviceManagementDeviceConfigurationUserStateSummary.md)
-Update the navigation property deviceConfigurationUserStateSummaries in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDeviceConfigurationUserStatus](Update-MgBetaDeviceManagementDeviceConfigurationUserStatus.md)
-Update the navigation property userStatuses in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDeviceConfigurationUserStatusOverview](Update-MgBetaDeviceManagementDeviceConfigurationUserStatusOverview.md)
-Update the navigation property userStatusOverview in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDeviceHealthScript](Update-MgBetaDeviceManagementDeviceHealthScript.md)
-Update the navigation property deviceHealthScripts in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDeviceHealthScriptAssignment](Update-MgBetaDeviceManagementDeviceHealthScriptAssignment.md)
-Update the navigation property assignments in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDeviceHealthScriptDeviceRunState](Update-MgBetaDeviceManagementDeviceHealthScriptDeviceRunState.md)
-Update the navigation property deviceRunStates in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDeviceHealthScriptRunSummary](Update-MgBetaDeviceManagementDeviceHealthScriptRunSummary.md)
-Update the navigation property runSummary in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDeviceShellScript](Update-MgBetaDeviceManagementDeviceShellScript.md)
-Update the navigation property deviceShellScripts in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDeviceShellScriptAssignment](Update-MgBetaDeviceManagementDeviceShellScriptAssignment.md)
-Update the navigation property assignments in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDeviceShellScriptDeviceRunState](Update-MgBetaDeviceManagementDeviceShellScriptDeviceRunState.md)
-Update the navigation property deviceRunStates in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDeviceShellScriptGroupAssignment](Update-MgBetaDeviceManagementDeviceShellScriptGroupAssignment.md)
-Update the navigation property groupAssignments in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDeviceShellScriptUserRunState](Update-MgBetaDeviceManagementDeviceShellScriptUserRunState.md)
-Update the navigation property userRunStates in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDeviceShellScriptUserRunStateDeviceRunState](Update-MgBetaDeviceManagementDeviceShellScriptUserRunStateDeviceRunState.md)
-Update the navigation property deviceRunStates in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementEmbeddedSimActivationCodePool](Update-MgBetaDeviceManagementEmbeddedSimActivationCodePool.md)
-Update the navigation property embeddedSIMActivationCodePools in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementEmbeddedSimActivationCodePoolAssignment](Update-MgBetaDeviceManagementEmbeddedSimActivationCodePoolAssignment.md)
-Update the navigation property assignments in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementEmbeddedSimActivationCodePoolDeviceState](Update-MgBetaDeviceManagementEmbeddedSimActivationCodePoolDeviceState.md)
-Update the navigation property deviceStates in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementGroupPolicyConfiguration](Update-MgBetaDeviceManagementGroupPolicyConfiguration.md)
-Update the navigation property groupPolicyConfigurations in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementGroupPolicyConfigurationAssignment](Update-MgBetaDeviceManagementGroupPolicyConfigurationAssignment.md)
-Update the navigation property assignments in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValue](Update-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValue.md)
-Update the navigation property definitionValues in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue](Update-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue.md)
-Update the navigation property presentationValues in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementIntent](Update-MgBetaDeviceManagementIntent.md)
-Update the navigation property intents in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementIntentAssignment](Update-MgBetaDeviceManagementIntentAssignment.md)
-Update the navigation property assignments in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementIntentCategory](Update-MgBetaDeviceManagementIntentCategory.md)
-Update the navigation property categories in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementIntentCategorySetting](Update-MgBetaDeviceManagementIntentCategorySetting.md)
-Update the navigation property settings in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementIntentCategorySettingDefinition](Update-MgBetaDeviceManagementIntentCategorySettingDefinition.md)
-Update the navigation property settingDefinitions in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementIntentDeviceSettingStateSummary](Update-MgBetaDeviceManagementIntentDeviceSettingStateSummary.md)
-Update the navigation property deviceSettingStateSummaries in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementIntentDeviceState](Update-MgBetaDeviceManagementIntentDeviceState.md)
-Update the navigation property deviceStates in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementIntentDeviceStateSummary](Update-MgBetaDeviceManagementIntentDeviceStateSummary.md)
-Update the navigation property deviceStateSummary in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementIntentSetting](Update-MgBetaDeviceManagementIntentSetting.md)
-Update the navigation property settings in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementIntentUserState](Update-MgBetaDeviceManagementIntentUserState.md)
-Update the navigation property userStates in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementIntentUserStateSummary](Update-MgBetaDeviceManagementIntentUserStateSummary.md)
-Update the navigation property userStateSummary in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummary](Update-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummary.md)
-Update the navigation property macOSSoftwareUpdateAccountSummaries in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary](Update-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary.md)
-Update the navigation property categorySummaries in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummaryStateSummary](Update-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummaryStateSummary.md)
-Update the navigation property updateStateSummaries in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementManagedDevice](Update-MgBetaDeviceManagementManagedDevice.md)
-Update the navigation property managedDevices in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementManagedDeviceAssignmentFilterEvaluationStatusDetail](Update-MgBetaDeviceManagementManagedDeviceAssignmentFilterEvaluationStatusDetail.md)
-Update the navigation property assignmentFilterEvaluationStatusDetails in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementManagedDeviceCategory](Update-MgBetaDeviceManagementManagedDeviceCategory.md)
-Update the navigation property deviceCategory in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementManagedDeviceCompliancePolicyState](Update-MgBetaDeviceManagementManagedDeviceCompliancePolicyState.md)
-Update the navigation property deviceCompliancePolicyStates in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementManagedDeviceConfigurationState](Update-MgBetaDeviceManagementManagedDeviceConfigurationState.md)
-Update the navigation property deviceConfigurationStates in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementManagedDeviceEncryptionState](Update-MgBetaDeviceManagementManagedDeviceEncryptionState.md)
-Update the navigation property managedDeviceEncryptionStates in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementManagedDeviceHealthScriptState](Update-MgBetaDeviceManagementManagedDeviceHealthScriptState.md)
-Update the navigation property deviceHealthScriptStates in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementManagedDeviceLogCollectionRequest](Update-MgBetaDeviceManagementManagedDeviceLogCollectionRequest.md)
-Update the navigation property logCollectionRequests in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementManagedDeviceMobileAppConfigurationState](Update-MgBetaDeviceManagementManagedDeviceMobileAppConfigurationState.md)
-Update the navigation property managedDeviceMobileAppConfigurationStates in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementManagedDeviceSecurityBaselineState](Update-MgBetaDeviceManagementManagedDeviceSecurityBaselineState.md)
-Update the navigation property securityBaselineStates in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementManagedDeviceSecurityBaselineStateSettingState](Update-MgBetaDeviceManagementManagedDeviceSecurityBaselineStateSettingState.md)
-Update the navigation property settingStates in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementManagedDeviceWindowsProtectionState](Update-MgBetaDeviceManagementManagedDeviceWindowsProtectionState.md)
-Update the navigation property windowsProtectionState in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState](Update-MgBetaDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState.md)
-Update the navigation property detectedMalwareState in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementMicrosoftTunnelConfiguration](Update-MgBetaDeviceManagementMicrosoftTunnelConfiguration.md)
-Update the navigation property microsoftTunnelConfigurations in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementMicrosoftTunnelHealthThreshold](Update-MgBetaDeviceManagementMicrosoftTunnelHealthThreshold.md)
-Update the navigation property microsoftTunnelHealthThresholds in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponse](Update-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponse.md)
-Update the navigation property microsoftTunnelServerLogCollectionResponses in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementMicrosoftTunnelSite](Update-MgBetaDeviceManagementMicrosoftTunnelSite.md)
-Update the navigation property microsoftTunnelSites in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelConfiguration](Update-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelConfiguration.md)
-Update the navigation property microsoftTunnelConfiguration in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer](Update-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer.md)
-Update the navigation property microsoftTunnelServers in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementMobileAppTroubleshootingEvent](Update-MgBetaDeviceManagementMobileAppTroubleshootingEvent.md)
-Update the navigation property mobileAppTroubleshootingEvents in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](Update-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Update the navigation property appLogCollectionRequests in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementMonitoring](Update-MgBetaDeviceManagementMonitoring.md)
-Update the navigation property monitoring in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementMonitoringAlertRecord](Update-MgBetaDeviceManagementMonitoringAlertRecord.md)
-Update the navigation property alertRecords in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementMonitoringAlertRule](Update-MgBetaDeviceManagementMonitoringAlertRule.md)
-Update the properties of an alertRule object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementNotificationMessageTemplate](Update-MgBetaDeviceManagementNotificationMessageTemplate.md)
-Update the navigation property notificationMessageTemplates in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage](Update-MgBetaDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage.md)
-Update the navigation property localizedNotificationMessages in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementRemoteActionAudit](Update-MgBetaDeviceManagementRemoteActionAudit.md)
-Update the navigation property remoteActionAudits in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementResourceAccessProfile](Update-MgBetaDeviceManagementResourceAccessProfile.md)
-Update the navigation property resourceAccessProfiles in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementResourceAccessProfileAssignment](Update-MgBetaDeviceManagementResourceAccessProfileAssignment.md)
-Update the navigation property assignments in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementReusableSetting](Update-MgBetaDeviceManagementReusableSetting.md)
-Update the navigation property reusableSettings in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementScript](Update-MgBetaDeviceManagementScript.md)
-Update the navigation property deviceManagementScripts in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementScriptAssignment](Update-MgBetaDeviceManagementScriptAssignment.md)
-Update the navigation property assignments in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementScriptDeviceRunState](Update-MgBetaDeviceManagementScriptDeviceRunState.md)
-Update the navigation property deviceRunStates in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementScriptGroupAssignment](Update-MgBetaDeviceManagementScriptGroupAssignment.md)
-Update the navigation property groupAssignments in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementScriptUserRunState](Update-MgBetaDeviceManagementScriptUserRunState.md)
-Update the navigation property userRunStates in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementScriptUserRunStateDeviceRunState](Update-MgBetaDeviceManagementScriptUserRunStateDeviceRunState.md)
-Update the navigation property deviceRunStates in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementSettingDefinition](Update-MgBetaDeviceManagementSettingDefinition.md)
-Update the navigation property settingDefinitions in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementTemplate](Update-MgBetaDeviceManagementTemplate.md)
-Update the navigation property templates in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementTemplateCategory](Update-MgBetaDeviceManagementTemplateCategory.md)
-Update the navigation property categories in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementTemplateCategoryRecommendedSetting](Update-MgBetaDeviceManagementTemplateCategoryRecommendedSetting.md)
-Update the navigation property recommendedSettings in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementTemplateCategorySettingDefinition](Update-MgBetaDeviceManagementTemplateCategorySettingDefinition.md)
-Update the navigation property settingDefinitions in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementTemplateMigratableTo](Update-MgBetaDeviceManagementTemplateMigratableTo.md)
-Update the navigation property migratableTo in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementTemplateMigratableToCategory](Update-MgBetaDeviceManagementTemplateMigratableToCategory.md)
-Update the navigation property categories in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementTemplateMigratableToCategoryRecommendedSetting](Update-MgBetaDeviceManagementTemplateMigratableToCategoryRecommendedSetting.md)
-Update the navigation property recommendedSettings in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementTemplateMigratableToCategorySettingDefinition](Update-MgBetaDeviceManagementTemplateMigratableToCategorySettingDefinition.md)
-Update the navigation property settingDefinitions in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementTemplateMigratableToSetting](Update-MgBetaDeviceManagementTemplateMigratableToSetting.md)
-Update the navigation property settings in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementTemplateSetting](Update-MgBetaDeviceManagementTemplateSetting.md)
-Update the navigation property settings in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementTroubleshootingEvent](Update-MgBetaDeviceManagementTroubleshootingEvent.md)
-Update the navigation property troubleshootingEvents in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticAnomaly](Update-MgBetaDeviceManagementUserExperienceAnalyticAnomaly.md)
-Update the navigation property userExperienceAnalyticsAnomaly in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview](Update-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview.md)
-Update the navigation property userExperienceAnalyticsAnomalyCorrelationGroupOverview in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice](Update-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice.md)
-Update the navigation property userExperienceAnalyticsAnomalyDevice in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance](Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance.md)
-Update the navigation property userExperienceAnalyticsAppHealthApplicationPerformance in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersion](Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersion.md)
-Update the navigation property userExperienceAnalyticsAppHealthApplicationPerformanceByAppVersion in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail](Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail.md)
-Update the navigation property userExperienceAnalyticsAppHealthApplicationPerformanceByAppVersionDetails in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId](Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId.md)
-Update the navigation property userExperienceAnalyticsAppHealthApplicationPerformanceByAppVersionDeviceId in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion](Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion.md)
-Update the navigation property userExperienceAnalyticsAppHealthApplicationPerformanceByOSVersion in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance](Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance.md)
-Update the navigation property userExperienceAnalyticsAppHealthDeviceModelPerformance in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance](Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance.md)
-Update the navigation property userExperienceAnalyticsAppHealthDevicePerformance in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail](Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail.md)
-Update the navigation property userExperienceAnalyticsAppHealthDevicePerformanceDetails in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance](Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance.md)
-Update the navigation property userExperienceAnalyticsAppHealthOSVersionPerformance in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverview](Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverview.md)
-Update the navigation property userExperienceAnalyticsAppHealthOverview in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue](Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue.md)
-Update the navigation property metricValues in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticBaseline](Update-MgBetaDeviceManagementUserExperienceAnalyticBaseline.md)
-Update the navigation property userExperienceAnalyticsBaselines in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact](Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact.md)
-Update the navigation property userExperienceAnalyticsBatteryHealthAppImpact in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthCapacityDetail](Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthCapacityDetail.md)
-Update the navigation property userExperienceAnalyticsBatteryHealthCapacityDetails in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact](Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact.md)
-Update the navigation property userExperienceAnalyticsBatteryHealthDeviceAppImpact in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance](Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance.md)
-Update the navigation property userExperienceAnalyticsBatteryHealthDevicePerformance in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory](Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory.md)
-Update the navigation property userExperienceAnalyticsBatteryHealthDeviceRuntimeHistory in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance](Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance.md)
-Update the navigation property userExperienceAnalyticsBatteryHealthModelPerformance in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformance](Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformance.md)
-Update the navigation property userExperienceAnalyticsBatteryHealthOsPerformance in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthRuntimeDetail](Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthRuntimeDetail.md)
-Update the navigation property userExperienceAnalyticsBatteryHealthRuntimeDetails in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticCategory](Update-MgBetaDeviceManagementUserExperienceAnalyticCategory.md)
-Update the navigation property userExperienceAnalyticsCategories in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticCategoryMetricValue](Update-MgBetaDeviceManagementUserExperienceAnalyticCategoryMetricValue.md)
-Update the navigation property metricValues in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceMetricHistory](Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceMetricHistory.md)
-Update the navigation property userExperienceAnalyticsDeviceMetricHistory in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticDevicePerformance](Update-MgBetaDeviceManagementUserExperienceAnalyticDevicePerformance.md)
-Update the navigation property userExperienceAnalyticsDevicePerformance in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceScope](Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceScope.md)
-Update the navigation property userExperienceAnalyticsDeviceScope in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceScore](Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceScore.md)
-Update the navigation property userExperienceAnalyticsDeviceScores in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistory](Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistory.md)
-Update the navigation property userExperienceAnalyticsDeviceStartupHistory in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcess](Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcess.md)
-Update the navigation property userExperienceAnalyticsDeviceStartupProcesses in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance](Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance.md)
-Update the navigation property userExperienceAnalyticsDeviceStartupProcessPerformance in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceTimelineEvent](Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceTimelineEvent.md)
-Update the navigation property userExperienceAnalyticsDeviceTimelineEvent in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentity](Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentity.md)
-Update the navigation property userExperienceAnalyticsDevicesWithoutCloudIdentity in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticImpactingProcess](Update-MgBetaDeviceManagementUserExperienceAnalyticImpactingProcess.md)
-Update the navigation property userExperienceAnalyticsImpactingProcess in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticMetricHistory](Update-MgBetaDeviceManagementUserExperienceAnalyticMetricHistory.md)
-Update the navigation property userExperienceAnalyticsMetricHistory in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticModelScore](Update-MgBetaDeviceManagementUserExperienceAnalyticModelScore.md)
-Update the navigation property userExperienceAnalyticsModelScores in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice](Update-MgBetaDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice.md)
-Update the navigation property userExperienceAnalyticsNotAutopilotReadyDevice in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticOverview](Update-MgBetaDeviceManagementUserExperienceAnalyticOverview.md)
-Update the navigation property userExperienceAnalyticsOverview in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnection](Update-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnection.md)
-Update the navigation property userExperienceAnalyticsRemoteConnection in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticResourcePerformance](Update-MgBetaDeviceManagementUserExperienceAnalyticResourcePerformance.md)
-Update the navigation property userExperienceAnalyticsResourcePerformance in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticScoreHistory](Update-MgBetaDeviceManagementUserExperienceAnalyticScoreHistory.md)
-Update the navigation property userExperienceAnalyticsScoreHistory in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric](Update-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric.md)
-Update the navigation property userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric](Update-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric.md)
-Update the navigation property userExperienceAnalyticsWorkFromAnywhereMetrics in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice](Update-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice.md)
-Update the navigation property metricDevices in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance](Update-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance.md)
-Update the navigation property userExperienceAnalyticsWorkFromAnywhereModelPerformance in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummary](Update-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummary.md)
-Update the navigation property windowsInformationProtectionAppLearningSummaries in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementWindowsInformationProtectionNetworkLearningSummary](Update-MgBetaDeviceManagementWindowsInformationProtectionNetworkLearningSummary.md)
-Update the navigation property windowsInformationProtectionNetworkLearningSummaries in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementWindowsMalwareInformation](Update-MgBetaDeviceManagementWindowsMalwareInformation.md)
-Update the navigation property windowsMalwareInformation in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementWindowsMalwareInformationDeviceMalwareState](Update-MgBetaDeviceManagementWindowsMalwareInformationDeviceMalwareState.md)
-Update the navigation property deviceMalwareStates in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementWindowsQualityUpdateProfile](Update-MgBetaDeviceManagementWindowsQualityUpdateProfile.md)
-Update the navigation property windowsQualityUpdateProfiles in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment](Update-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment.md)
-Update the navigation property assignments in deviceManagement
+{{ Fill in the Description }}
 

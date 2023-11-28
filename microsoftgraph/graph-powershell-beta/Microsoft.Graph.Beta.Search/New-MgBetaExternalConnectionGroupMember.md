@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnectiongroupmember
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new externalGroupMember object.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgExternalConnectionGroupMember](/powershell/module/Microsoft.Graph.Search/New-MgExternalConnectionGroupMember?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45,11 +42,11 @@ Create a new externalGroupMember object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Add an Azure Active Directory user as a member
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Search
+```
 
 $params = @{
 	id = "e811976d-83df-4cbd-8b9b-5215b18aa874"
@@ -58,14 +55,10 @@ $params = @{
 
 New-MgBetaExternalConnectionGroupMember -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will add an azure active directory user as a member
-
-### Example 2: Add an Azure Active Directory group as a member
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Search
+```
 
 $params = @{
 	id = "e5477431-1038-484e-bf69-1dfedb97a110"
@@ -74,14 +67,10 @@ $params = @{
 
 New-MgBetaExternalConnectionGroupMember -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -BodyParameter $params
 
+### EXAMPLE 3
 ```
-This example will add an azure active directory group as a member
-
-### Example 3: Add another external group as a member
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Search
+```
 
 $params = @{
 	id = "1431b9c38ee647f6a"
@@ -89,10 +78,6 @@ $params = @{
 }
 
 New-MgBetaExternalConnectionGroupMember -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -BodyParameter $params
-
-```
-This example will add another external group as a member
-
 
 ## PARAMETERS
 
@@ -279,7 +264,6 @@ INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
   \[YearTimePeriodDefinitionId \<String\>\]: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
-[New-MgExternalConnectionGroupMember](/powershell/module/Microsoft.Graph.Search/New-MgExternalConnectionGroupMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnectiongroupmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnectiongroupmember)
 

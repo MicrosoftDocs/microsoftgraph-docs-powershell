@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementsymanteccodesigningcertificate
@@ -28,6 +28,18 @@ Update-MgBetaDeviceAppManagementSymantecCodeSigningCertificate
 
 ## DESCRIPTION
 Update the navigation property symantecCodeSigningCertificate in deviceAppManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -254,28 +266,26 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSymantecCodeSigningCertificate
 ## NOTES
-
-ALIASES
-
-Update-MgBetaDeviceAppMgtSymantecCodeSigningCertificate
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`BODYPARAMETER <IMicrosoftGraphSymantecCodeSigningCertificate>`: symantecCodeSigningCertificate
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Content <Byte[]>]`: The Windows Symantec Code-Signing Certificate in the raw data format.
-  - `[ExpirationDateTime <DateTime?>]`: The Cert Expiration Date.
-  - `[Issuer <String>]`: The Issuer value for the cert.
-  - `[IssuerName <String>]`: The Issuer Name for the cert.
-  - `[Password <String>]`: The Password required for .pfx file.
-  - `[Status <String>]`: certificateStatus
-  - `[Subject <String>]`: The Subject value for the cert.
-  - `[SubjectName <String>]`: The Subject Name for the cert.
-  - `[UploadDateTime <DateTime?>]`: The Type of the CodeSigning Cert as Symantec Cert.
+BODYPARAMETER \<IMicrosoftGraphSymantecCodeSigningCertificate\>: symantecCodeSigningCertificate
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[Content \<Byte\[\]\>\]: The Windows Symantec Code-Signing Certificate in the raw data format.
+  \[ExpirationDateTime \<DateTime?\>\]: The Cert Expiration Date.
+  \[Issuer \<String\>\]: The Issuer value for the cert.
+  \[IssuerName \<String\>\]: The Issuer Name for the cert.
+  \[Password \<String\>\]: The Password required for .pfx file.
+  \[Status \<String\>\]: certificateStatus
+  \[Subject \<String\>\]: The Subject value for the cert.
+  \[SubjectName \<String\>\]: The Subject Name for the cert.
+  \[UploadDateTime \<DateTime?\>\]: The Type of the CodeSigning Cert as Symantec Cert.
 
 ## RELATED LINKS
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementsymanteccodesigningcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementsymanteccodesigningcertificate)
 

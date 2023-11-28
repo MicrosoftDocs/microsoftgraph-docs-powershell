@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorycertificateauthority
@@ -27,6 +27,18 @@ Update-MgBetaDirectoryCertificateAuthority -BodyParameter <IMicrosoftGraphCertif
 
 ## DESCRIPTION
 Update the navigation property certificateAuthorities in directory
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -62,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -CertificateBasedApplicationConfigurations
-.
+Defines the trusted certificate authorities for certificates that can be added to apps and service principals in the tenant.
 To construct, see NOTES section for CERTIFICATEBASEDAPPLICATIONCONFIGURATIONS properties and create a hash table.
 
 ```yaml
@@ -143,38 +155,39 @@ BODYPARAMETER \<IMicrosoftGraphCertificateAuthorityPath\>: certificateAuthorityP
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  \[CertificateBasedApplicationConfigurations \<IMicrosoftGraphCertificateBasedApplicationConfiguration\[\]\>\]: 
-    \[TrustedCertificateAuthorities \<IMicrosoftGraphCertificateAuthorityAsEntity\[\]\>\]: 
+  \[CertificateBasedApplicationConfigurations \<IMicrosoftGraphCertificateBasedApplicationConfiguration\[\]\>\]: Defines the trusted certificate authorities for certificates that can be added to apps and service principals in the tenant.
+    \[TrustedCertificateAuthorities \<IMicrosoftGraphCertificateAuthorityAsEntity\[\]\>\]: Collection of trusted certificate authorities.
       \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      \[Certificate \<Byte\[\]\>\]: 
-      \[IsRootAuthority \<Boolean?\>\]: 
-      \[Issuer \<String\>\]: 
-      \[IssuerSubjectKeyIdentifier \<String\>\]: 
+      \[Certificate \<Byte\[\]\>\]: The trusted certificate.
+      \[IsRootAuthority \<Boolean?\>\]: Indicates if the certificate is a root authority.
+In a certificateBasedApplicationConfiguration object, at least one object in the trustedCertificateAuthorities collection must be a root authority.
+      \[Issuer \<String\>\]: The issuer of the trusted certificate.
+      \[IssuerSubjectKeyIdentifier \<String\>\]: The subject key identifier of the trusted certificate.
     \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    \[Description \<String\>\]: 
-    \[DisplayName \<String\>\]: 
+    \[Description \<String\>\]: The description of the trusted certificate authorities.
+    \[DisplayName \<String\>\]: The display name of the trusted certificate authorities.
 
-CERTIFICATEBASEDAPPLICATIONCONFIGURATIONS \<IMicrosoftGraphCertificateBasedApplicationConfiguration\[\]\>: .
-  \[TrustedCertificateAuthorities \<IMicrosoftGraphCertificateAuthorityAsEntity\[\]\>\]: 
+CERTIFICATEBASEDAPPLICATIONCONFIGURATIONS \<IMicrosoftGraphCertificateBasedApplicationConfiguration\[\]\>: Defines the trusted certificate authorities for certificates that can be added to apps and service principals in the tenant.
+  \[TrustedCertificateAuthorities \<IMicrosoftGraphCertificateAuthorityAsEntity\[\]\>\]: Collection of trusted certificate authorities.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    \[Certificate \<Byte\[\]\>\]: 
-    \[IsRootAuthority \<Boolean?\>\]: 
-    \[Issuer \<String\>\]: 
-    \[IssuerSubjectKeyIdentifier \<String\>\]: 
+    \[Certificate \<Byte\[\]\>\]: The trusted certificate.
+    \[IsRootAuthority \<Boolean?\>\]: Indicates if the certificate is a root authority.
+In a certificateBasedApplicationConfiguration object, at least one object in the trustedCertificateAuthorities collection must be a root authority.
+    \[Issuer \<String\>\]: The issuer of the trusted certificate.
+    \[IssuerSubjectKeyIdentifier \<String\>\]: The subject key identifier of the trusted certificate.
   \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  \[Description \<String\>\]: 
-  \[DisplayName \<String\>\]:
+  \[Description \<String\>\]: The description of the trusted certificate authorities.
+  \[DisplayName \<String\>\]: The display name of the trusted certificate authorities.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorycertificateauthority](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorycertificateauthority)
-
 

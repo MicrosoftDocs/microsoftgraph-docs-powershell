@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetatenantrelationshipmanagedtenantoffboard
@@ -8,9 +8,10 @@ schema: 2.0.0
 # Invoke-MgBetaTenantRelationshipManagedTenantOffboard
 
 ## SYNOPSIS
-Carries out the appropriate procedures to remove a managed tenant from the multi-tenant management platform.
+Carries out the appropriate procedures to remove a managed tenant from the multitenant management platform.
 No relationships, such as commerce and delegate administrative privileges, will be impacted.
-The only change made by invoking this action is the tenant will be deprovisioned from the multi-tenant management platform.
+The only change made by invoking this action is the tenant will be deprovisioned from the multitenant management platform.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -27,9 +28,22 @@ Invoke-MgBetaTenantRelationshipManagedTenantOffboard -InputObject <IIdentityDire
 ```
 
 ## DESCRIPTION
-Carries out the appropriate procedures to remove a managed tenant from the multi-tenant management platform.
+Carries out the appropriate procedures to remove a managed tenant from the multitenant management platform.
 No relationships, such as commerce and delegate administrative privileges, will be impacted.
-The only change made by invoking this action is the tenant will be deprovisioned from the multi-tenant management platform.
+The only change made by invoking this action is the tenant will be deprovisioned from the multitenant management platform.
+This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -121,6 +135,7 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[ContractId \<String\>\]: The unique identifier of contract
   \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
   \[DeviceId \<String\>\]: The unique identifier of device
+  \[DeviceLocalCredentialInfoId \<String\>\]: The unique identifier of deviceLocalCredentialInfo
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[DirectoryRoleId \<String\>\]: The unique identifier of directoryRole
   \[DirectoryRoleTemplateId \<String\>\]: The unique identifier of directoryRoleTemplate
@@ -157,5 +172,4 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetatenantrelationshipmanagedtenantoffboard](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetatenantrelationshipmanagedtenantoffboard)
-
 

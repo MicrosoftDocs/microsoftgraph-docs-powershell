@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganizationbranding
@@ -9,9 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of the default branding object specified by the organizationalBranding resource.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgOrganizationBranding](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganizationBranding?view=graph-powershell-1.0)
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -67,12 +65,14 @@ Update-MgBetaOrganizationBranding -InputObject <IIdentityDirectoryManagementIden
 
 ## DESCRIPTION
 Update the properties of the default branding object specified by the organizationalBranding resource.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+```
 
 $params = @{
 	signInPageText = "Default"
@@ -80,11 +80,6 @@ $params = @{
 }
 
 Update-MgBetaOrganizationBranding -OrganizationId $organizationId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaOrganizationBranding Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -415,7 +410,7 @@ Accept wildcard characters: False
 ```
 
 ### -FaviconInputFile
-Input File for Favicon (A custom icon (favicon) to replace a default Microsoft product favicon on an Azure AD tenant.)
+Input File for Favicon (A custom icon (favicon) to replace a default Microsoft product favicon on a Microsoft Entra tenant.)
 
 ```yaml
 Type: String
@@ -755,8 +750,8 @@ Read-only.
   \[ContentCustomization \<IMicrosoftGraphContentCustomization\>\]: contentCustomization
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[AttributeCollection \<IMicrosoftGraphKeyValue\[\]\>\]: Represents the content options of External Identities to be customized throughout the authentication flow for a tenant.
-      \[Key \<String\>\]: Contains the name of the field that a value is associated with.
-      \[Value \<String\>\]: Contains the corresponding value for the specified key.
+      \[Key \<String\>\]: Key.
+      \[Value \<String\>\]: Value.
     \[AttributeCollectionRelativeUrl \<String\>\]: A relative URL for the content options of External Identities to be customized throughout the authentication flow for a tenant.
   \[CustomAccountResetCredentialsUrl \<String\>\]: A custom URL for resetting account credentials.
 This URL must be in ASCII format or non-ASCII characters must be URL encoded, and not exceed 128 characters.
@@ -783,7 +778,7 @@ DO NOT USE: Customization of the 'reset it now' hyperlink text is currently not 
 This text must be in Unicode format and not exceed 256 characters.
   \[CustomTermsOfUseUrl \<String\>\]: A custom URL to replace the default URL of the 'Terms of Use' hyperlink in the footer.
 This URL must be in ASCII format or non-ASCII characters must be URL encoded, and not exceed 128characters.
-  \[Favicon \<Byte\[\]\>\]: A custom icon (favicon) to replace a default Microsoft product favicon on an Azure AD tenant.
+  \[Favicon \<Byte\[\]\>\]: A custom icon (favicon) to replace a default Microsoft product favicon on a Microsoft Entra tenant.
   \[FaviconRelativeUrl \<String\>\]: A relative url for the favicon above that is combined with a CDN base URL from the cdnList to provide the version served by a CDN.
 Read-only.
   \[HeaderBackgroundColor \<String\>\]: The RGB color to apply to customize the color of the header.
@@ -865,7 +860,7 @@ DO NOT USE: Customization of the 'reset it now' hyperlink text is currently not 
 This text must be in Unicode format and not exceed 256 characters.
     \[CustomTermsOfUseUrl \<String\>\]: A custom URL to replace the default URL of the 'Terms of Use' hyperlink in the footer.
 This URL must be in ASCII format or non-ASCII characters must be URL encoded, and not exceed 128characters.
-    \[Favicon \<Byte\[\]\>\]: A custom icon (favicon) to replace a default Microsoft product favicon on an Azure AD tenant.
+    \[Favicon \<Byte\[\]\>\]: A custom icon (favicon) to replace a default Microsoft product favicon on a Microsoft Entra tenant.
     \[FaviconRelativeUrl \<String\>\]: A relative url for the favicon above that is combined with a CDN base URL from the cdnList to provide the version served by a CDN.
 Read-only.
     \[HeaderBackgroundColor \<String\>\]: The RGB color to apply to customize the color of the header.
@@ -897,8 +892,8 @@ Read-only.
 CONTENTCUSTOMIZATION \<IMicrosoftGraphContentCustomization\>: contentCustomization
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[AttributeCollection \<IMicrosoftGraphKeyValue\[\]\>\]: Represents the content options of External Identities to be customized throughout the authentication flow for a tenant.
-    \[Key \<String\>\]: Contains the name of the field that a value is associated with.
-    \[Value \<String\>\]: Contains the corresponding value for the specified key.
+    \[Key \<String\>\]: Key.
+    \[Value \<String\>\]: Value.
   \[AttributeCollectionRelativeUrl \<String\>\]: A relative URL for the content options of External Identities to be customized throughout the authentication flow for a tenant.
 
 INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
@@ -912,6 +907,7 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[ContractId \<String\>\]: The unique identifier of contract
   \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
   \[DeviceId \<String\>\]: The unique identifier of device
+  \[DeviceLocalCredentialInfoId \<String\>\]: The unique identifier of deviceLocalCredentialInfo
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[DirectoryRoleId \<String\>\]: The unique identifier of directoryRole
   \[DirectoryRoleTemplateId \<String\>\]: The unique identifier of directoryRoleTemplate
@@ -965,8 +961,8 @@ Read-only.
   \[ContentCustomization \<IMicrosoftGraphContentCustomization\>\]: contentCustomization
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[AttributeCollection \<IMicrosoftGraphKeyValue\[\]\>\]: Represents the content options of External Identities to be customized throughout the authentication flow for a tenant.
-      \[Key \<String\>\]: Contains the name of the field that a value is associated with.
-      \[Value \<String\>\]: Contains the corresponding value for the specified key.
+      \[Key \<String\>\]: Key.
+      \[Value \<String\>\]: Value.
     \[AttributeCollectionRelativeUrl \<String\>\]: A relative URL for the content options of External Identities to be customized throughout the authentication flow for a tenant.
   \[CustomAccountResetCredentialsUrl \<String\>\]: A custom URL for resetting account credentials.
 This URL must be in ASCII format or non-ASCII characters must be URL encoded, and not exceed 128 characters.
@@ -993,7 +989,7 @@ DO NOT USE: Customization of the 'reset it now' hyperlink text is currently not 
 This text must be in Unicode format and not exceed 256 characters.
   \[CustomTermsOfUseUrl \<String\>\]: A custom URL to replace the default URL of the 'Terms of Use' hyperlink in the footer.
 This URL must be in ASCII format or non-ASCII characters must be URL encoded, and not exceed 128characters.
-  \[Favicon \<Byte\[\]\>\]: A custom icon (favicon) to replace a default Microsoft product favicon on an Azure AD tenant.
+  \[Favicon \<Byte\[\]\>\]: A custom icon (favicon) to replace a default Microsoft product favicon on a Microsoft Entra tenant.
   \[FaviconRelativeUrl \<String\>\]: A relative url for the favicon above that is combined with a CDN base URL from the cdnList to provide the version served by a CDN.
 Read-only.
   \[HeaderBackgroundColor \<String\>\]: The RGB color to apply to customize the color of the header.
@@ -1049,7 +1045,6 @@ LOGINPAGETEXTVISIBILITYSETTINGS \<IMicrosoftGraphLoginPageTextVisibilitySettings
   \[HideTermsOfUse \<Boolean?\>\]: Option to hide the 'Terms of Use' hyperlink in the footer.
 
 ## RELATED LINKS
-[Update-MgOrganizationBranding](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganizationBranding?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganizationbranding](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganizationbranding)
 

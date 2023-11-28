@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatenantrelationshipmultitenantorganization
@@ -8,7 +8,11 @@ schema: 2.0.0
 # Update-MgBetaTenantRelationshipMultiTenantOrganization
 
 ## SYNOPSIS
-Update the properties of a multi-tenant organization.
+Create a new multi-tenant organization.
+By default, the creator tenant becomes an owner tenant upon successful creation.
+Only owner tenants can manage a multi-tenant organization.
+To allow for asynchronous processing, you must wait a minimum of 2 hours between creation and joining a multi-tenant organization.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -27,7 +31,23 @@ Update-MgBetaTenantRelationshipMultiTenantOrganization -BodyParameter <IMicrosof
 ```
 
 ## DESCRIPTION
-Update the properties of a multi-tenant organization.
+Create a new multi-tenant organization.
+By default, the creator tenant becomes an owner tenant upon successful creation.
+Only owner tenants can manage a multi-tenant organization.
+To allow for asynchronous processing, you must wait a minimum of 2 hours between creation and joining a multi-tenant organization.
+This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -310,5 +330,4 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatenantrelationshipmultitenantorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatenantrelationshipmultitenantorganization)
-
 

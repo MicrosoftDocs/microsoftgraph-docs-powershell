@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupconversationthread
@@ -12,9 +12,6 @@ A collection of all the conversation threads in the conversation.
 A navigation property.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupConversationThread](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupConversationThread?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -44,17 +41,13 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Groups
+```
 
 Get-MgBetaGroupConversationThread -GroupId $groupId -ConversationId $conversationId
-
-```
-This example shows how to use the Get-MgBetaGroupConversationThread Cmdlet.
-
 
 ## PARAMETERS
 
@@ -314,7 +307,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgGroupConversationThread](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupConversationThread?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupconversationthread](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupconversationthread)
 

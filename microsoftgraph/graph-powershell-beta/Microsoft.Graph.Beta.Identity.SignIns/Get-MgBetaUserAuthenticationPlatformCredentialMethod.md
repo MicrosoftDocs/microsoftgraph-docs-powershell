@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationplatformcredentialmethod
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserAuthenticationPlatformCredentialMethod
 
 ## SYNOPSIS
-Get platformCredentialMethods from users
+Read the properties and relationships of a platformCredentialAuthenticationMethod object.
 
 ## SYNTAX
 
@@ -32,7 +32,19 @@ Get-MgBetaUserAuthenticationPlatformCredentialMethod -InputObject <IIdentitySign
 ```
 
 ## DESCRIPTION
-Get platformCredentialMethods from users
+Read the properties and relationships of a platformCredentialAuthenticationMethod object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -329,5 +341,4 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationplatformcredentialmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationplatformcredentialmethod)
-
 

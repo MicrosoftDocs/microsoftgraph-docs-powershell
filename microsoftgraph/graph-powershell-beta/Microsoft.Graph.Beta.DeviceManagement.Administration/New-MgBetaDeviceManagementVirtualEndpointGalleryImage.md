@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointgalleryimage
@@ -29,6 +29,22 @@ New-MgBetaDeviceManagementVirtualEndpointGalleryImage -BodyParameter <IMicrosoft
 
 ## DESCRIPTION
 Create new navigation property to galleryImages for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -206,7 +222,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -317,29 +333,46 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcGalleryImage
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`BODYPARAMETER <IMicrosoftGraphCloudPcGalleryImage>`: cloudPcGalleryImage
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[DisplayName <String>]`: The official display name of the gallery image. Read-only.
-  - `[EndDate <DateTime?>]`: The date in which this image is no longer within long-term support. The Cloud PC continues to provide short-term support. Read-only.
-  - `[ExpirationDate <DateTime?>]`: The date when the image is no longer available. Read-only.
-  - `[Offer <String>]`: The offer name of the gallery image. This value is passed to Azure to get the image resource. Read-only.
-  - `[OfferDisplayName <String>]`: The official display offer name of the gallery image. For example, Windows 10 Enterprise + OS Optimizations. Read-only.
-  - `[Publisher <String>]`: The publisher name of the gallery image. This value is passed to Azure to get the image resource. Read-only.
-  - `[RecommendedSku <String>]`: Recommended Cloud PC SKU for this gallery image. Read-only.
-  - `[SizeInGb <Int32?>]`: The size of this image in gigabytes. Read-only.
-  - `[Sku <String>]`: The SKU name of the gallery image. This value is passed to Azure to get the image resource. Read-only.
-  - `[SkuDisplayName <String>]`: The official display stock keeping unit (SKU) name of this gallery image. For example, 2004. Read-only.
-  - `[StartDate <DateTime?>]`: The date when the image becomes available. Read-only.
-  - `[Status <String>]`: cloudPcGalleryImageStatus
+BODYPARAMETER \<IMicrosoftGraphCloudPcGalleryImage\>: cloudPcGalleryImage
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[DisplayName \<String\>\]: The official display name of the gallery image.
+Read-only.
+  \[EndDate \<DateTime?\>\]: The date in which this image is no longer within long-term support.
+The Cloud PC continues to provide short-term support.
+Read-only.
+  \[ExpirationDate \<DateTime?\>\]: The date when the image is no longer available.
+Read-only.
+  \[Offer \<String\>\]: The offer name of the gallery image.
+This value is passed to Azure to get the image resource.
+Read-only.
+  \[OfferDisplayName \<String\>\]: The official display offer name of the gallery image.
+For example, Windows 10 Enterprise + OS Optimizations.
+Read-only.
+  \[Publisher \<String\>\]: The publisher name of the gallery image.
+This value is passed to Azure to get the image resource.
+Read-only.
+  \[RecommendedSku \<String\>\]: Recommended Cloud PC SKU for this gallery image.
+Read-only.
+  \[SizeInGb \<Int32?\>\]: The size of this image in gigabytes.
+Read-only.
+  \[Sku \<String\>\]: The SKU name of the gallery image.
+This value is passed to Azure to get the image resource.
+Read-only.
+  \[SkuDisplayName \<String\>\]: The official display stock keeping unit (SKU) name of this gallery image.
+For example, 2004.
+Read-only.
+  \[StartDate \<DateTime?\>\]: The date when the image becomes available.
+Read-only.
+  \[Status \<String\>\]: cloudPcGalleryImageStatus
 
 ## RELATED LINKS
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointgalleryimage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointgalleryimage)
 

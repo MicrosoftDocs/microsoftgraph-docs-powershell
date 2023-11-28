@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteam
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of the specified team.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeam?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -65,11 +62,11 @@ Update the properties of the specified team.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	memberSettings = @{
@@ -86,10 +83,6 @@ $params = @{
 }
 
 Update-MgTeam -TeamId $teamId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgTeam Cmdlet.
-
 
 ## PARAMETERS
 
@@ -28417,7 +28410,6 @@ Read-only.
   \[TeamId \<String\>\]: ID of the team in which the tag is defined.
 
 ## RELATED LINKS
-[Update-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeam?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteam)
 

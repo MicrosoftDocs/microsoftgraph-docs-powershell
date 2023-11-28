@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/new-mgreportauthenticationmethoduserregistrationdetail
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to userRegistrationDetails for reports
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaReportAuthenticationMethodUserRegistrationDetail](/powershell/module/Microsoft.Graph.Beta.Reports/New-MgBetaReportAuthenticationMethodUserRegistrationDetail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -35,6 +32,16 @@ New-MgReportAuthenticationMethodUserRegistrationDetail -BodyParameter <IMicrosof
 Create new navigation property to userRegistrationDetails for reports
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -96,13 +103,13 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -IsMfaCapable
-Indicates whether the user has registered a strong authentication method for multi-factor authentication.
+Indicates whether the user has registered a strong authentication method for multifactor authentication.
 The method must be allowed by the authentication methods policy.
 Supports $filter (eq).
 
@@ -113,13 +120,13 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -IsMfaRegistered
-Indicates whether the user has registered a strong authentication method for multi-factor authentication.
+Indicates whether the user has registered a strong authentication method for multifactor authentication.
 The method may not necessarily be allowed by the authentication methods policy.
 Supports $filter (eq).
 
@@ -130,7 +137,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -146,7 +153,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -162,7 +169,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -179,7 +186,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -196,7 +203,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -213,7 +220,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -371,34 +378,52 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserRegistrationDetails
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`BODYPARAMETER <IMicrosoftGraphUserRegistrationDetails>`: userRegistrationDetails
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[IsAdmin <Boolean?>]`: Indicates whether the user has an admin role in the tenant. This value can be used to check the authentication methods that privileged accounts are registered for and capable of.
-  - `[IsMfaCapable <Boolean?>]`: Indicates whether the user has registered a strong authentication method for multi-factor authentication. The method must be allowed by the authentication methods policy. Supports $filter (eq).
-  - `[IsMfaRegistered <Boolean?>]`: Indicates whether the user has registered a strong authentication method for multi-factor authentication. The method may not necessarily be allowed by the authentication methods policy. Supports $filter (eq).
-  - `[IsPasswordlessCapable <Boolean?>]`: Indicates whether the user has registered a passwordless strong authentication method (including FIDO2, Windows Hello for Business, and Microsoft Authenticator (Passwordless)) that is allowed by the authentication methods policy. Supports $filter (eq).
-  - `[IsSsprCapable <Boolean?>]`: Indicates whether the user has registered the required number of authentication methods for self-service password reset and the user is allowed to perform self-service password reset by policy. Supports $filter (eq).
-  - `[IsSsprEnabled <Boolean?>]`: Indicates whether the user is allowed to perform self-service password reset by policy. The user may not necessarily have registered the required number of authentication methods for self-service password reset. Supports $filter (eq).
-  - `[IsSsprRegistered <Boolean?>]`: Indicates whether the user has registered the required number of authentication methods for self-service password reset. The user may not necessarily be allowed to perform self-service password reset by policy. Supports $filter (eq).
-  - `[IsSystemPreferredAuthenticationMethodEnabled <Boolean?>]`: Indicates whether system preferred authentication method is enabled. If enabled, the system dynamically determines the most secure authentication method among the methods registered by the user. Supports $filter (eq).
-  - `[LastUpdatedDateTime <DateTime?>]`: The date and time (UTC) when the record was last updated. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[MethodsRegistered <String[]>]`: Collection of authentication methods registered, such as mobilePhone, email, fido2. Supports $filter (any with eq).
-  - `[SystemPreferredAuthenticationMethods <String[]>]`: Collection of authentication methods that the system determined to be the most secure authentication methods among the registered methods for second factor authentication. Possible values are: push, oath, voiceMobile, voiceAlternateMobile, voiceOffice, sms, none, unknownFutureValue. Supports $filter (any with eq).
-  - `[UserDisplayName <String>]`: The user display name, such as Adele Vance. Supports $filter (eq, startsWith) and $orderby.
-  - `[UserPreferredMethodForSecondaryAuthentication <String>]`: userDefaultAuthenticationMethod
-  - `[UserPrincipalName <String>]`: The user principal name, such as AdeleV@contoso.com. Supports $filter (eq, startsWith) and $orderby.
-  - `[UserType <String>]`: signInUserType
+BODYPARAMETER \<IMicrosoftGraphUserRegistrationDetails\>: userRegistrationDetails
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[IsAdmin \<Boolean?\>\]: Indicates whether the user has an admin role in the tenant.
+This value can be used to check the authentication methods that privileged accounts are registered for and capable of.
+  \[IsMfaCapable \<Boolean?\>\]: Indicates whether the user has registered a strong authentication method for multifactor authentication.
+The method must be allowed by the authentication methods policy.
+Supports $filter (eq).
+  \[IsMfaRegistered \<Boolean?\>\]: Indicates whether the user has registered a strong authentication method for multifactor authentication.
+The method may not necessarily be allowed by the authentication methods policy.
+Supports $filter (eq).
+  \[IsPasswordlessCapable \<Boolean?\>\]: Indicates whether the user has registered a passwordless strong authentication method (including FIDO2, Windows Hello for Business, and Microsoft Authenticator (Passwordless)) that is allowed by the authentication methods policy.
+Supports $filter (eq).
+  \[IsSsprCapable \<Boolean?\>\]: Indicates whether the user has registered the required number of authentication methods for self-service password reset and the user is allowed to perform self-service password reset by policy.
+Supports $filter (eq).
+  \[IsSsprEnabled \<Boolean?\>\]: Indicates whether the user is allowed to perform self-service password reset by policy.
+The user may not necessarily have registered the required number of authentication methods for self-service password reset.
+Supports $filter (eq).
+  \[IsSsprRegistered \<Boolean?\>\]: Indicates whether the user has registered the required number of authentication methods for self-service password reset.
+The user may not necessarily be allowed to perform self-service password reset by policy.
+Supports $filter (eq).
+  \[IsSystemPreferredAuthenticationMethodEnabled \<Boolean?\>\]: Indicates whether system preferred authentication method is enabled.
+If enabled, the system dynamically determines the most secure authentication method among the methods registered by the user.
+Supports $filter (eq).
+  \[LastUpdatedDateTime \<DateTime?\>\]: The date and time (UTC) when the record was last updated.
+The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  \[MethodsRegistered \<String\[\]\>\]: Collection of authentication methods registered, such as mobilePhone, email, fido2.
+Supports $filter (any with eq).
+  \[SystemPreferredAuthenticationMethods \<String\[\]\>\]: Collection of authentication methods that the system determined to be the most secure authentication methods among the registered methods for second factor authentication.
+Possible values are: push, oath, voiceMobile, voiceAlternateMobile, voiceOffice, sms, none, unknownFutureValue.
+Supports $filter (any with eq).
+  \[UserDisplayName \<String\>\]: The user display name, such as Adele Vance.
+Supports $filter (eq, startsWith) and $orderby.
+  \[UserPreferredMethodForSecondaryAuthentication \<String\>\]: userDefaultAuthenticationMethod
+  \[UserPrincipalName \<String\>\]: The user principal name, such as AdeleV@contoso.com.
+Supports $filter (eq, startsWith) and $orderby.
+  \[UserType \<String\>\]: signInUserType
 
 ## RELATED LINKS
 
-[New-MgBetaReportAuthenticationMethodUserRegistrationDetail](/powershell/module/Microsoft.Graph.Beta.Reports/New-MgBetaReportAuthenticationMethodUserRegistrationDetail?view=graph-powershell-beta)
+[https://learn.microsoft.com/powershell/module/microsoft.graph.reports/new-mgreportauthenticationmethoduserregistrationdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/new-mgreportauthenticationmethoduserregistrationdetail)
 

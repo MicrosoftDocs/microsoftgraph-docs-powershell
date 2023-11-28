@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdeletedteamchannel
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property channels in teamwork
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgTeamworkDeletedTeamChannel](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkDeletedTeamChannel?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -53,6 +50,22 @@ Update-MgBetaTeamworkDeletedTeamChannel -InputObject <ITeamsIdentity> -BodyParam
 
 ## DESCRIPTION
 Update the navigation property channels in teamwork
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -22804,8 +22817,6 @@ For example, if a user changes their display name, the API might show the new va
 Read only.
 
 ## RELATED LINKS
-[Update-MgTeamworkDeletedTeamChannel](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkDeletedTeamChannel?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdeletedteamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdeletedteamchannel)
-
 

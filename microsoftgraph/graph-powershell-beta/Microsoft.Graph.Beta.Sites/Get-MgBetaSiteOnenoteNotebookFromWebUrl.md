@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteonenotenotebookfromweburl
@@ -11,9 +11,6 @@ schema: 2.0.0
 Retrieve the properties and relationships of a notebook object by using its URL path.
 The location can be user notebooks on Microsoft 365, group notebooks, or SharePoint site-hosted team notebooks on Microsoft 365.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSiteOnenoteNotebookFromWebUrl](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteOnenoteNotebookFromWebUrl?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,10 +46,11 @@ The location can be user notebooks on Microsoft 365, group notebooks, or SharePo
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users.Actions
+```
 
 $params = @{
 	WebUrl = "webUrl value"
@@ -60,11 +58,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOnenoteNotebookFromWebUrl -UserId $userId -BodyParameter $params
-```
-This example shows how to use the Get-MgBetaSiteOnenoteNotebookFromWebUrl Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -247,7 +240,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgSiteOnenoteNotebookFromWebUrl](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteOnenoteNotebookFromWebUrl?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteonenotenotebookfromweburl](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteonenotenotebookfromweburl)
 

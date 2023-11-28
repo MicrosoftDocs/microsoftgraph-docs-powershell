@@ -1,59 +1,49 @@
----
+﻿---
 Module Name: Microsoft.Graph.People
-Module Guid: 31f2e433-4ecd-413c-a583-d1c8a969960d
-Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.people
-Help Version: 1.0.0.0
+Module Guid: c084d1b1-7ed4-45c3-a9b8-9b531f789082
+Download Help Link: {{ Update Download Link }}
+Help Version: {{ Please enter version of help manually (X.X.X.X) format }}
 Locale: en-US
 ---
 
 # Microsoft.Graph.People Module
 ## Description
-Microsoft Graph PowerShell Cmdlets
+{{ Fill in the Description }}
 
 ## Microsoft.Graph.People Cmdlets
 ### [Get-MgUserLastSharedMethodInsight](Get-MgUserLastSharedMethodInsight.md)
-Get lastSharedMethod from users
+{{ Fill in the Description }}
 
-### [Get-MgUserLastSharedMethodInsight](Get-MgUserLastSharedMethodInsight.md)
-Get lastSharedMethod from users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserPerson](/powershell/module/Microsoft.Graph.Beta.People/Get-MgBetaUserPerson?view=graph-powershell-beta)
+### [Get-MgUserPerson](Get-MgUserPerson.md)
+{{ Fill in the Description }}
 
 ### [Get-MgUserPersonCount](Get-MgUserPersonCount.md)
-Get the number of the resource
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserPersonCount](/powershell/module/Microsoft.Graph.Beta.People/Get-MgBetaUserPersonCount?view=graph-powershell-beta)
+{{ Fill in the Description }}
 
 ### [Get-MgUserSharedCountInsight](Get-MgUserSharedCountInsight.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
-### [Get-MgUserSharedCountInsight](Get-MgUserSharedCountInsight.md)
-Get the number of the resource
+### [Get-MgUserSharedInsight](Get-MgUserSharedInsight.md)
+{{ Fill in the Description }}
 
 ### [Get-MgUserSharedResourceInsight](Get-MgUserSharedResourceInsight.md)
-Used for navigating to the item that was shared.
-For file attachments, the type is fileAttachment.
-For linked attachments, the type is driveItem.
+{{ Fill in the Description }}
 
 ### [Get-MgUserTrendingCountInsight](Get-MgUserTrendingCountInsight.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
-### [Get-MgUserTrendingCountInsight](Get-MgUserTrendingCountInsight.md)
-Get the number of the resource
+### [Get-MgUserTrendingInsight](Get-MgUserTrendingInsight.md)
+{{ Fill in the Description }}
 
 ### [Get-MgUserTrendingResourceInsight](Get-MgUserTrendingResourceInsight.md)
-Used for navigating to the trending document.
+{{ Fill in the Description }}
 
 ### [Get-MgUserUsedCountInsight](Get-MgUserUsedCountInsight.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
-### [Get-MgUserUsedCountInsight](Get-MgUserUsedCountInsight.md)
-Get the number of the resource
+### [Get-MgUserUsedInsight](Get-MgUserUsedInsight.md)
+{{ Fill in the Description }}
 
 ### [Get-MgUserUsedResourceInsight](Get-MgUserUsedResourceInsight.md)
-Used for navigating to the item that was used.
-For file attachments, the type is fileAttachment.
-For linked attachments, the type is driveItem.
+{{ Fill in the Description }}
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmicrosofttunnelserverlogcollectionresponse
@@ -29,6 +29,22 @@ New-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponse
 
 ## DESCRIPTION
 Create new navigation property to microsoftTunnelServerLogCollectionResponses for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -149,7 +165,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -225,24 +241,24 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelServerLogCollectionResponse
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`BODYPARAMETER <IMicrosoftGraphMicrosoftTunnelServerLogCollectionResponse>`: Entity that stores the server log collection status.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[EndDateTime <DateTime?>]`: The end time of the logs collected
-  - `[ExpiryDateTime <DateTime?>]`: The time when the log collection is expired
-  - `[RequestDateTime <DateTime?>]`: The time when the log collection was requested
-  - `[ServerId <String>]`: ID of the server the log collection is requested upon
-  - `[SizeInBytes <Int64?>]`: The size of the logs in bytes
-  - `[StartDateTime <DateTime?>]`: The start time of the logs collected
-  - `[Status <MicrosoftTunnelLogCollectionStatus?>]`: Enum type that represent the status of log collection
+BODYPARAMETER \<IMicrosoftGraphMicrosoftTunnelServerLogCollectionResponse\>: Entity that stores the server log collection status.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[EndDateTime \<DateTime?\>\]: The end time of the logs collected
+  \[ExpiryDateTime \<DateTime?\>\]: The time when the log collection is expired
+  \[RequestDateTime \<DateTime?\>\]: The time when the log collection was requested
+  \[ServerId \<String\>\]: ID of the server the log collection is requested upon
+  \[SizeInBytes \<Int64?\>\]: The size of the logs in bytes
+  \[StartDateTime \<DateTime?\>\]: The start time of the logs collected
+  \[Status \<MicrosoftTunnelLogCollectionStatus?\>\]: Enum type that represent the status of log collection
 
 ## RELATED LINKS
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmicrosofttunnelserverlogcollectionresponse](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmicrosofttunnelserverlogcollectionresponse)
 

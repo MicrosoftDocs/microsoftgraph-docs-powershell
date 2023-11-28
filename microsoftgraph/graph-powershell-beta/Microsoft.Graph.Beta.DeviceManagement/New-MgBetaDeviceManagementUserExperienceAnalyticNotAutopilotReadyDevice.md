@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticnotautopilotreadydevice
@@ -30,6 +30,22 @@ New-MgBetaDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice
 ## DESCRIPTION
 Create new navigation property to userExperienceAnalyticsNotAutopilotReadyDevice for deviceManagement
 
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -57,7 +73,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -72,7 +88,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -102,7 +118,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -255,26 +271,26 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsNotAutopilotReadyDevice
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsNotAutopilotReadyDevice>`: The user experience analytics Device not windows autopilot ready.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[AutoPilotProfileAssigned <Boolean?>]`: The intune device's autopilotProfileAssigned.
-  - `[AutoPilotRegistered <Boolean?>]`: The intune device's autopilotRegistered.
-  - `[AzureAdJoinType <String>]`: The intune device's azure Ad joinType.
-  - `[AzureAdRegistered <Boolean?>]`: The intune device's azureAdRegistered.
-  - `[DeviceName <String>]`: The intune device's name.
-  - `[ManagedBy <String>]`: The intune device's managed by.
-  - `[Manufacturer <String>]`: The intune device's manufacturer.
-  - `[Model <String>]`: The intune device's model.
-  - `[SerialNumber <String>]`: The intune device's serial number.
+BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsNotAutopilotReadyDevice\>: The user experience analytics Device not windows autopilot ready.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[AutoPilotProfileAssigned \<Boolean?\>\]: The intune device's autopilotProfileAssigned.
+  \[AutoPilotRegistered \<Boolean?\>\]: The intune device's autopilotRegistered.
+  \[AzureAdJoinType \<String\>\]: The intune device's azure Ad joinType.
+  \[AzureAdRegistered \<Boolean?\>\]: The intune device's azureAdRegistered.
+  \[DeviceName \<String\>\]: The intune device's name.
+  \[ManagedBy \<String\>\]: The intune device's managed by.
+  \[Manufacturer \<String\>\]: The intune device's manufacturer.
+  \[Model \<String\>\]: The intune device's model.
+  \[SerialNumber \<String\>\]: The intune device's serial number.
 
 ## RELATED LINKS
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticnotautopilotreadydevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticnotautopilotreadydevice)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagementdirectoryroleassignmentscheduleinstance
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property roleAssignmentScheduleInstances in roleManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgRoleManagementDirectoryRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementDirectoryRoleAssignmentScheduleInstance?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -57,6 +54,18 @@ Update-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstance -InputObject 
 
 ## DESCRIPTION
 Update the navigation property roleAssignmentScheduleInstances in roleManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -436,8 +445,7 @@ Read-only.
     \[DisplayName \<String\>\]: Provides the display name of the app-specific resource represented by the app scope.
 Provided for display purposes since appScopeId is often an immutable, non-human-readable id.
 This property is read only.
-    \[Type \<String\>\]: Describes the type of app-specific resource represented by the app scope.
-Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
+    \[Type \<String\>\]: Describes the type of app-specific resource represented by the app scope and is provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
 This property is read only.
   \[AppScopeId \<String\>\]: Identifier of the app-specific scope when the assignment or role eligibility is scoped to an app.
 The scope of an assignment or role eligibility determines the set of resources for which the principal has been granted access.
@@ -469,7 +477,7 @@ Read-only when isBuiltIn is true.
 Required. 
 Supports $filter (eq and startsWith).
     \[InheritsPermissionsFrom \<IMicrosoftGraphUnifiedRoleDefinition\[\]\>\]: Read-only collection of role definitions that the given role definition inherits from.
-Only Azure AD built-in roles support this attribute.
+Only Microsoft Entra built-in roles support this attribute.
     \[IsBuiltIn \<Boolean?\>\]: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom.
 Read-only. 
 Supports $filter (eq).
@@ -477,7 +485,7 @@ Supports $filter (eq).
 If false the role is not available for assignment.
 Read-only when isBuiltIn is true.
     \[IsPrivileged \<Boolean?\>\]: Flag indicating if the role is privileged.
-Azure AD defines a role as privileged if it contains at least one sensitive resource action in the rolePermissions and allowedResourceActions objects.
+Microsoft Entra ID defines a role as privileged if it contains at least one sensitive resource action in the rolePermissions and allowedResourceActions objects.
 Applies only for actions in the microsoft.directory resource namespace.
 Read-only.
 Supports $filter (eq).
@@ -515,8 +523,7 @@ Read-only.
   \[DisplayName \<String\>\]: Provides the display name of the app-specific resource represented by the app scope.
 Provided for display purposes since appScopeId is often an immutable, non-human-readable id.
 This property is read only.
-  \[Type \<String\>\]: Describes the type of app-specific resource represented by the app scope.
-Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
+  \[Type \<String\>\]: Describes the type of app-specific resource represented by the app scope and is provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
 This property is read only.
 
 BODYPARAMETER \<IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance\>: unifiedRoleAssignmentScheduleInstance
@@ -528,8 +535,7 @@ Read-only.
     \[DisplayName \<String\>\]: Provides the display name of the app-specific resource represented by the app scope.
 Provided for display purposes since appScopeId is often an immutable, non-human-readable id.
 This property is read only.
-    \[Type \<String\>\]: Describes the type of app-specific resource represented by the app scope.
-Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
+    \[Type \<String\>\]: Describes the type of app-specific resource represented by the app scope and is provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
 This property is read only.
   \[AppScopeId \<String\>\]: Identifier of the app-specific scope when the assignment or role eligibility is scoped to an app.
 The scope of an assignment or role eligibility determines the set of resources for which the principal has been granted access.
@@ -561,7 +567,7 @@ Read-only when isBuiltIn is true.
 Required. 
 Supports $filter (eq and startsWith).
     \[InheritsPermissionsFrom \<IMicrosoftGraphUnifiedRoleDefinition\[\]\>\]: Read-only collection of role definitions that the given role definition inherits from.
-Only Azure AD built-in roles support this attribute.
+Only Microsoft Entra built-in roles support this attribute.
     \[IsBuiltIn \<Boolean?\>\]: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom.
 Read-only. 
 Supports $filter (eq).
@@ -569,7 +575,7 @@ Supports $filter (eq).
 If false the role is not available for assignment.
 Read-only when isBuiltIn is true.
     \[IsPrivileged \<Boolean?\>\]: Flag indicating if the role is privileged.
-Azure AD defines a role as privileged if it contains at least one sensitive resource action in the rolePermissions and allowedResourceActions objects.
+Microsoft Entra ID defines a role as privileged if it contains at least one sensitive resource action in the rolePermissions and allowedResourceActions objects.
 Applies only for actions in the microsoft.directory resource namespace.
 Read-only.
 Supports $filter (eq).
@@ -679,6 +685,7 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[CustomTaskExtensionId \<String\>\]: The unique identifier of customTaskExtension
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[EndDateTime \<DateTime?\>\]: Usage: endDateTime={endDateTime}
+  \[FindingId \<String\>\]: The unique identifier of finding
   \[GovernanceInsightId \<String\>\]: The unique identifier of governanceInsight
   \[GovernanceResourceId \<String\>\]: The unique identifier of governanceResource
   \[GovernanceRoleAssignmentId \<String\>\]: The unique identifier of governanceRoleAssignment
@@ -689,6 +696,8 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[IncompatibleAccessPackageId \<String\>\]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   \[LongRunningOperationId \<String\>\]: The unique identifier of longRunningOperation
   \[On \<String\>\]: Usage: on='{on}'
+  \[PermissionsCreepIndexDistributionId \<String\>\]: The unique identifier of permissionsCreepIndexDistribution
+  \[PermissionsRequestChangeId \<String\>\]: The unique identifier of permissionsRequestChange
   \[PrivilegedAccessGroupAssignmentScheduleId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentSchedule
   \[PrivilegedAccessGroupAssignmentScheduleInstanceId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentScheduleInstance
   \[PrivilegedAccessGroupAssignmentScheduleRequestId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentScheduleRequest
@@ -754,7 +763,7 @@ Read-only when isBuiltIn is true.
 Required. 
 Supports $filter (eq and startsWith).
   \[InheritsPermissionsFrom \<IMicrosoftGraphUnifiedRoleDefinition\[\]\>\]: Read-only collection of role definitions that the given role definition inherits from.
-Only Azure AD built-in roles support this attribute.
+Only Microsoft Entra built-in roles support this attribute.
   \[IsBuiltIn \<Boolean?\>\]: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom.
 Read-only. 
 Supports $filter (eq).
@@ -762,7 +771,7 @@ Supports $filter (eq).
 If false the role is not available for assignment.
 Read-only when isBuiltIn is true.
   \[IsPrivileged \<Boolean?\>\]: Flag indicating if the role is privileged.
-Azure AD defines a role as privileged if it contains at least one sensitive resource action in the rolePermissions and allowedResourceActions objects.
+Microsoft Entra ID defines a role as privileged if it contains at least one sensitive resource action in the rolePermissions and allowedResourceActions objects.
 Applies only for actions in the microsoft.directory resource namespace.
 Read-only.
 Supports $filter (eq).
@@ -786,8 +795,6 @@ Read-only when isBuiltIn is true.
 Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
-[Update-MgRoleManagementDirectoryRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementDirectoryRoleAssignmentScheduleInstance?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagementdirectoryroleassignmentscheduleinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagementdirectoryroleassignmentscheduleinstance)
-
 

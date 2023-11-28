@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfigurationtrustedcertificateauthority
@@ -44,6 +44,18 @@ New-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationT
 
 ## DESCRIPTION
 Create new navigation property to trustedCertificateAuthorities for directory
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -94,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -CertificateInputFile
-Input File for Certificate (.)
+Input File for Certificate (The trusted certificate.)
 
 ```yaml
 Type: String
@@ -141,7 +153,8 @@ Accept wildcard characters: False
 ```
 
 ### -IsRootAuthority
-.
+Indicates if the certificate is a root authority.
+In a certificateBasedApplicationConfiguration object, at least one object in the trustedCertificateAuthorities collection must be a root authority.
 
 ```yaml
 Type: SwitchParameter
@@ -156,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -Issuer
-.
+The issuer of the trusted certificate.
 
 ```yaml
 Type: String
@@ -171,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -IssuerSubjectKeyIdentifier
-.
+The subject key identifier of the trusted certificate.
 
 ```yaml
 Type: String
@@ -236,10 +249,11 @@ BODYPARAMETER \<IMicrosoftGraphCertificateAuthorityAsEntity\>: certificateAuthor
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  \[Certificate \<Byte\[\]\>\]: 
-  \[IsRootAuthority \<Boolean?\>\]: 
-  \[Issuer \<String\>\]: 
-  \[IssuerSubjectKeyIdentifier \<String\>\]: 
+  \[Certificate \<Byte\[\]\>\]: The trusted certificate.
+  \[IsRootAuthority \<Boolean?\>\]: Indicates if the certificate is a root authority.
+In a certificateBasedApplicationConfiguration object, at least one object in the trustedCertificateAuthorities collection must be a root authority.
+  \[Issuer \<String\>\]: The issuer of the trusted certificate.
+  \[IssuerSubjectKeyIdentifier \<String\>\]: The subject key identifier of the trusted certificate.
 
 INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[AdministrativeUnitId \<String\>\]: The unique identifier of administrativeUnit
@@ -252,6 +266,7 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[ContractId \<String\>\]: The unique identifier of contract
   \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
   \[DeviceId \<String\>\]: The unique identifier of device
+  \[DeviceLocalCredentialInfoId \<String\>\]: The unique identifier of deviceLocalCredentialInfo
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[DirectoryRoleId \<String\>\]: The unique identifier of directoryRole
   \[DirectoryRoleTemplateId \<String\>\]: The unique identifier of directoryRoleTemplate
@@ -288,5 +303,4 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfigurationtrustedcertificateauthority](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfigurationtrustedcertificateauthority)
-
 

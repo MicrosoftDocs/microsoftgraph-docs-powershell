@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Mail
 Module Guid: 2f8e5786-cf46-4a5f-9e57-f2b6d9d9ab6f
 Download Help Link: {{ Update Download Link }}

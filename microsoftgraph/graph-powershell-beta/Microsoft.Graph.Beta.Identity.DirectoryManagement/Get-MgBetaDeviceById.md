@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadevicebyid
@@ -9,10 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Return the directory objects specified in a list of IDs.
-Some common uses for this function are to:
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceById](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDeviceById?view=graph-powershell-1.0)
+Some common uses for this function are to: This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -31,7 +28,19 @@ Get-MgBetaDeviceById
 
 ## DESCRIPTION
 Return the directory objects specified in a list of IDs.
-Some common uses for this function are to:
+Some common uses for this function are to: This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -148,8 +157,6 @@ BODYPARAMETER \<IPaths1545W8NDevicesMicrosoftGraphGetbyidsPostRequestbodyContent
   \[Types \<String\[\]\>\]:
 
 ## RELATED LINKS
-[Get-MgDeviceById](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDeviceById?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadevicebyid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadevicebyid)
-
 

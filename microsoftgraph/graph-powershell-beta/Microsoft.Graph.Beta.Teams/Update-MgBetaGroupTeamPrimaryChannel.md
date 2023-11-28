@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamprimarychannel
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property primaryChannel in groups
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgGroupTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamPrimaryChannel?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -55,17 +52,13 @@ Update-MgBetaGroupTeamPrimaryChannel -InputObject <ITeamsIdentity> -BodyParamete
 Update the navigation property primaryChannel in groups
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 Get-MgBetaTeamPrimaryChannel -TeamId $teamId
-```
-This example shows how to use the Update-MgBetaBetaGroupTeamPrimaryChannel Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -22802,7 +22795,6 @@ For example, if a user changes their display name, the API might show the new va
 Read only.
 
 ## RELATED LINKS
-[Update-MgGroupTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamPrimaryChannel?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamprimarychannel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamprimarychannel)
 

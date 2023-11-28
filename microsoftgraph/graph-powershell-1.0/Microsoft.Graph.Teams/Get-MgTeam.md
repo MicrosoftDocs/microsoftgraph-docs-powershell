@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteam
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and relationships of the specified team.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeam?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -39,39 +36,27 @@ Retrieve the properties and relationships of the specified team.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Get a list of teams
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 Get-MgTeam
 
+### EXAMPLE 2
 ```
-This example will get a list of teams
-
-### Example 2: Use $filter and $top to get two teams with a display name that starts with 'A'
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
-
-Get-MgTeam -Filter "startswith(displayName, 'A')" -Top 2 
-
 ```
-This example will use $filter and $top to get two teams with a display name that starts with 'a'
 
-### Example 3: Use $filter and $select to get id and description for team with displayName equals "A Contoso Team"
+Get-MgTeam -Filter "startswith(displayName, 'A')" -Top 2
 
-```powershell
-
+### EXAMPLE 3
+```
 Import-Module Microsoft.Graph.Teams
-
-Get-MgTeam -Filter "displayName eq 'A Contoso Team'" -Property "id,description" 
-
 ```
-This example will use $filter and $select to get id and description for team with displayname equals "a contoso team"
 
+Get-MgTeam -Filter "displayName eq 'A Contoso Team'" -Property "id,description"
 
 ## PARAMETERS
 
@@ -307,7 +292,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeam?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteam)
 

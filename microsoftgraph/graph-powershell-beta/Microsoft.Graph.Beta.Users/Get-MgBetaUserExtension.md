@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserextension
@@ -11,9 +11,6 @@ schema: 2.0.0
 The collection of open extensions defined for the user.
 Supports $expand.
 Nullable.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserExtension](/powershell/module/Microsoft.Graph.Users/Get-MgUserExtension?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -40,6 +37,22 @@ Get-MgBetaUserExtension -InputObject <IUsersIdentity> [-ExpandProperty <String[]
 The collection of open extensions defined for the user.
 Supports $expand.
 Nullable.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -281,8 +294,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserExtension](/powershell/module/Microsoft.Graph.Users/Get-MgUserExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserextension)
-
 

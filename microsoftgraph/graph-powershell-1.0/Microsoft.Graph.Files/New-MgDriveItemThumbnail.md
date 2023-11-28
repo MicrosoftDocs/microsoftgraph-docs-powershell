@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriveitemthumbnail
@@ -9,15 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to thumbnails for drives
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDriveItemThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItemThumbnail?view=graph-powershell-beta)
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDriveItemThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItemThumbnail?view=graph-powershell-beta)
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDriveItemThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItemThumbnail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -52,6 +43,20 @@ New-MgDriveItemThumbnail -InputObject <IFilesIdentity> -BodyParameter <IMicrosof
 Create new navigation property to thumbnails for drives
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -254,90 +259,90 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphThumbnailSet
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+BODYPARAMETER \<IMicrosoftGraphThumbnailSet\>: thumbnailSet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[Large \<IMicrosoftGraphThumbnail\>\]: thumbnail
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Content \<Byte\[\]\>\]: The content stream for the thumbnail.
+    \[Height \<Int32?\>\]: The height of the thumbnail, in pixels.
+    \[SourceItemId \<String\>\]: The unique identifier of the item that provided the thumbnail.
+This is only available when a folder thumbnail is requested.
+    \[Url \<String\>\]: The URL used to fetch the thumbnail content.
+    \[Width \<Int32?\>\]: The width of the thumbnail, in pixels.
+  \[Medium \<IMicrosoftGraphThumbnail\>\]: thumbnail
+  \[Small \<IMicrosoftGraphThumbnail\>\]: thumbnail
+  \[Source \<IMicrosoftGraphThumbnail\>\]: thumbnail
 
-`BODYPARAMETER <IMicrosoftGraphThumbnailSet>`: thumbnailSet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Large <IMicrosoftGraphThumbnail>]`: thumbnail
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Content <Byte[]>]`: The content stream for the thumbnail.
-    - `[Height <Int32?>]`: The height of the thumbnail, in pixels.
-    - `[SourceItemId <String>]`: The unique identifier of the item that provided the thumbnail. This is only available when a folder thumbnail is requested.
-    - `[Url <String>]`: The URL used to fetch the thumbnail content.
-    - `[Width <Int32?>]`: The width of the thumbnail, in pixels.
-  - `[Medium <IMicrosoftGraphThumbnail>]`: thumbnail
-  - `[Small <IMicrosoftGraphThumbnail>]`: thumbnail
-  - `[Source <IMicrosoftGraphThumbnail>]`: thumbnail
+INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
+  \[ColumnDefinitionId \<String\>\]: The unique identifier of columnDefinition
+  \[ColumnLinkId \<String\>\]: The unique identifier of columnLink
+  \[ContentTypeId \<String\>\]: The unique identifier of contentType
+  \[ContentTypeId1 \<String\>\]: The unique identifier of contentType
+  \[DocumentSetVersionId \<String\>\]: The unique identifier of documentSetVersion
+  \[DriveId \<String\>\]: The unique identifier of drive
+  \[DriveItemId \<String\>\]: The unique identifier of driveItem
+  \[DriveItemId1 \<String\>\]: The unique identifier of driveItem
+  \[DriveItemVersionId \<String\>\]: The unique identifier of driveItemVersion
+  \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[Interval \<String\>\]: Usage: interval='{interval}'
+  \[ItemActivityStatId \<String\>\]: The unique identifier of itemActivityStat
+  \[ListItemId \<String\>\]: The unique identifier of listItem
+  \[ListItemVersionId \<String\>\]: The unique identifier of listItemVersion
+  \[PermissionId \<String\>\]: The unique identifier of permission
+  \[Q \<String\>\]: Usage: q='{q}'
+  \[RichLongRunningOperationId \<String\>\]: The unique identifier of richLongRunningOperation
+  \[SharedDriveItemId \<String\>\]: The unique identifier of sharedDriveItem
+  \[StartDateTime \<String\>\]: Usage: startDateTime='{startDateTime}'
+  \[SubscriptionId \<String\>\]: The unique identifier of subscription
+  \[ThumbnailSetId \<String\>\]: The unique identifier of thumbnailSet
+  \[Token \<String\>\]: Usage: token='{token}'
+  \[UserId \<String\>\]: The unique identifier of user
 
-`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
-  - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
-  - `[ColumnLinkId <String>]`: The unique identifier of columnLink
-  - `[ContentTypeId <String>]`: The unique identifier of contentType
-  - `[ContentTypeId1 <String>]`: The unique identifier of contentType
-  - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
-  - `[DriveId <String>]`: The unique identifier of drive
-  - `[DriveItemId <String>]`: The unique identifier of driveItem
-  - `[DriveItemId1 <String>]`: The unique identifier of driveItem
-  - `[DriveItemVersionId <String>]`: The unique identifier of driveItemVersion
-  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[Interval <String>]`: Usage: interval='{interval}'
-  - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
-  - `[ListItemId <String>]`: The unique identifier of listItem
-  - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
-  - `[PermissionId <String>]`: The unique identifier of permission
-  - `[Q <String>]`: Usage: q='{q}'
-  - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation
-  - `[SharedDriveItemId <String>]`: The unique identifier of sharedDriveItem
-  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[SubscriptionId <String>]`: The unique identifier of subscription
-  - `[ThumbnailSetId <String>]`: The unique identifier of thumbnailSet
-  - `[Token <String>]`: Usage: token='{token}'
-  - `[UserId <String>]`: The unique identifier of user
+LARGE \<IMicrosoftGraphThumbnail\>: thumbnail
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Content \<Byte\[\]\>\]: The content stream for the thumbnail.
+  \[Height \<Int32?\>\]: The height of the thumbnail, in pixels.
+  \[SourceItemId \<String\>\]: The unique identifier of the item that provided the thumbnail.
+This is only available when a folder thumbnail is requested.
+  \[Url \<String\>\]: The URL used to fetch the thumbnail content.
+  \[Width \<Int32?\>\]: The width of the thumbnail, in pixels.
 
-`LARGE <IMicrosoftGraphThumbnail>`: thumbnail
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Content <Byte[]>]`: The content stream for the thumbnail.
-  - `[Height <Int32?>]`: The height of the thumbnail, in pixels.
-  - `[SourceItemId <String>]`: The unique identifier of the item that provided the thumbnail. This is only available when a folder thumbnail is requested.
-  - `[Url <String>]`: The URL used to fetch the thumbnail content.
-  - `[Width <Int32?>]`: The width of the thumbnail, in pixels.
+MEDIUM \<IMicrosoftGraphThumbnail\>: thumbnail
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Content \<Byte\[\]\>\]: The content stream for the thumbnail.
+  \[Height \<Int32?\>\]: The height of the thumbnail, in pixels.
+  \[SourceItemId \<String\>\]: The unique identifier of the item that provided the thumbnail.
+This is only available when a folder thumbnail is requested.
+  \[Url \<String\>\]: The URL used to fetch the thumbnail content.
+  \[Width \<Int32?\>\]: The width of the thumbnail, in pixels.
 
-`MEDIUM <IMicrosoftGraphThumbnail>`: thumbnail
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Content <Byte[]>]`: The content stream for the thumbnail.
-  - `[Height <Int32?>]`: The height of the thumbnail, in pixels.
-  - `[SourceItemId <String>]`: The unique identifier of the item that provided the thumbnail. This is only available when a folder thumbnail is requested.
-  - `[Url <String>]`: The URL used to fetch the thumbnail content.
-  - `[Width <Int32?>]`: The width of the thumbnail, in pixels.
+SMALL \<IMicrosoftGraphThumbnail\>: thumbnail
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Content \<Byte\[\]\>\]: The content stream for the thumbnail.
+  \[Height \<Int32?\>\]: The height of the thumbnail, in pixels.
+  \[SourceItemId \<String\>\]: The unique identifier of the item that provided the thumbnail.
+This is only available when a folder thumbnail is requested.
+  \[Url \<String\>\]: The URL used to fetch the thumbnail content.
+  \[Width \<Int32?\>\]: The width of the thumbnail, in pixels.
 
-`SMALL <IMicrosoftGraphThumbnail>`: thumbnail
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Content <Byte[]>]`: The content stream for the thumbnail.
-  - `[Height <Int32?>]`: The height of the thumbnail, in pixels.
-  - `[SourceItemId <String>]`: The unique identifier of the item that provided the thumbnail. This is only available when a folder thumbnail is requested.
-  - `[Url <String>]`: The URL used to fetch the thumbnail content.
-  - `[Width <Int32?>]`: The width of the thumbnail, in pixels.
-
-`SOURCE <IMicrosoftGraphThumbnail>`: thumbnail
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Content <Byte[]>]`: The content stream for the thumbnail.
-  - `[Height <Int32?>]`: The height of the thumbnail, in pixels.
-  - `[SourceItemId <String>]`: The unique identifier of the item that provided the thumbnail. This is only available when a folder thumbnail is requested.
-  - `[Url <String>]`: The URL used to fetch the thumbnail content.
-  - `[Width <Int32?>]`: The width of the thumbnail, in pixels.
+SOURCE \<IMicrosoftGraphThumbnail\>: thumbnail
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Content \<Byte\[\]\>\]: The content stream for the thumbnail.
+  \[Height \<Int32?\>\]: The height of the thumbnail, in pixels.
+  \[SourceItemId \<String\>\]: The unique identifier of the item that provided the thumbnail.
+This is only available when a folder thumbnail is requested.
+  \[Url \<String\>\]: The URL used to fetch the thumbnail content.
+  \[Width \<Int32?\>\]: The width of the thumbnail, in pixels.
 
 ## RELATED LINKS
-[New-MgBetaDriveItemThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItemThumbnail?view=graph-powershell-beta)
 
-[New-MgBetaDriveItemThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItemThumbnail?view=graph-powershell-beta)
-
-[New-MgBetaDriveItemThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItemThumbnail?view=graph-powershell-beta)
+[https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriveitemthumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriveitemthumbnail)
 

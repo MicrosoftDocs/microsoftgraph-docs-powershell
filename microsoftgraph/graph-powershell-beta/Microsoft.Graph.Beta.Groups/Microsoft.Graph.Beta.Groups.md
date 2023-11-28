@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Groups
 Module Guid: f649f9ce-177f-4d86-80c3-5bcb120aa9cc
 Download Help Link: {{ Update Download Link }}
@@ -45,12 +45,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Confirm-MgBetaGroupMemberObject](Confirm-MgBetaGroupMemberObject.md)
-{{ Fill in the Description }}
-
-### [Confirm-MgBetaGroupPermissionGrantMemberGroup](Confirm-MgBetaGroupPermissionGrantMemberGroup.md)
-{{ Fill in the Description }}
-
-### [Confirm-MgBetaGroupPermissionGrantMemberObject](Confirm-MgBetaGroupPermissionGrantMemberObject.md)
 {{ Fill in the Description }}
 
 ### [Confirm-MgBetaGroupSiteInformationProtectionSignature](Confirm-MgBetaGroupSiteInformationProtectionSignature.md)
@@ -389,31 +383,13 @@ Locale: en-US
 ### [Get-MgBetaGroupPermissionGrant](Get-MgBetaGroupPermissionGrant.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaGroupPermissionGrantById](Get-MgBetaGroupPermissionGrantById.md)
-{{ Fill in the Description }}
-
 ### [Get-MgBetaGroupPermissionGrantCount](Get-MgBetaGroupPermissionGrantCount.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaGroupPermissionGrantDelta](Get-MgBetaGroupPermissionGrantDelta.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaGroupPermissionGrantMemberGroup](Get-MgBetaGroupPermissionGrantMemberGroup.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaGroupPermissionGrantMemberObject](Get-MgBetaGroupPermissionGrantMemberObject.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaGroupPermissionGrantUserOwnedObject](Get-MgBetaGroupPermissionGrantUserOwnedObject.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaGroupPhoto](Get-MgBetaGroupPhoto.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaGroupPhotoContent](Get-MgBetaGroupPhotoContent.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaGroupPhotoCount](Get-MgBetaGroupPhotoCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaGroupPlannerPlanBucketDelta](Get-MgBetaGroupPlannerPlanBucketDelta.md)
@@ -758,6 +734,9 @@ Locale: en-US
 ### [Join-MgBetaGroupSiteListContentTypeWithHubSite](Join-MgBetaGroupSiteListContentTypeWithHubSite.md)
 {{ Fill in the Description }}
 
+### [Move-MgBetaGroupPlannerPlanToContainer](Move-MgBetaGroupPlannerPlanToContainer.md)
+{{ Fill in the Description }}
+
 ### [New-MgBetaGroup](New-MgBetaGroup.md)
 {{ Fill in the Description }}
 
@@ -1070,9 +1049,6 @@ Locale: en-US
 ### [Test-MgBetaGroupDynamicMembershipRule](Test-MgBetaGroupDynamicMembershipRule.md)
 {{ Fill in the Description }}
 
-### [Test-MgBetaGroupPermissionGrantProperty](Test-MgBetaGroupPermissionGrantProperty.md)
-{{ Fill in the Description }}
-
 ### [Test-MgBetaGroupProperty](Test-MgBetaGroupProperty.md)
 {{ Fill in the Description }}
 
@@ -1140,9 +1116,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgBetaGroupPermissionGrant](Update-MgBetaGroupPermissionGrant.md)
-{{ Fill in the Description }}
-
-### [Update-MgBetaGroupPhoto](Update-MgBetaGroupPhoto.md)
 {{ Fill in the Description }}
 
 ### [Update-MgBetaGroupSetting](Update-MgBetaGroupSetting.md)

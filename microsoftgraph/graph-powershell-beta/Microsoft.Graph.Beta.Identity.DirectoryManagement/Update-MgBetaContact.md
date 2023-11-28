@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetacontact
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update entity in contacts
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgContact](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgContact?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -61,17 +58,13 @@ Update-MgBetaContact -InputObject <IIdentityDirectoryManagementIdentity>
 Update entity in contacts
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+```
 
 Get-MgBetaContact -OrgContactId $orgContactId
-```
-This example shows how to use the Update-MgBetaBetaContact Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -633,7 +626,7 @@ Supports $filter (eq, not, ge, le, startsWith, /$count eq 0, /$count ne 0).
 Supports $filter (eq, not, for isResolved and serviceInstance).
     \[CreatedDateTime \<DateTime?\>\]: The date and time at which the error occurred.
     \[IsResolved \<Boolean?\>\]: Indicates whether the Error has been attended to.
-    \[ServiceInstance \<String\>\]: Qualified service instance (e.g., 'SharePoint/Dublin') that published the service error information.
+    \[ServiceInstance \<String\>\]: Qualified service instance (for example, 'SharePoint/Dublin') that published the service error information.
   \[Surname \<String\>\]: Last name for this organizational contact.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq for null values)
   \[TransitiveMemberOf \<IMicrosoftGraphDirectoryObject\[\]\>\]: 
@@ -660,6 +653,7 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[ContractId \<String\>\]: The unique identifier of contract
   \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
   \[DeviceId \<String\>\]: The unique identifier of device
+  \[DeviceLocalCredentialInfoId \<String\>\]: The unique identifier of deviceLocalCredentialInfo
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[DirectoryRoleId \<String\>\]: The unique identifier of directoryRole
   \[DirectoryRoleTemplateId \<String\>\]: The unique identifier of directoryRoleTemplate
@@ -731,7 +725,7 @@ SERVICEPROVISIONINGERRORS \<IMicrosoftGraphServiceProvisioningError\[\]\>: Error
 Supports $filter (eq, not, for isResolved and serviceInstance).
   \[CreatedDateTime \<DateTime?\>\]: The date and time at which the error occurred.
   \[IsResolved \<Boolean?\>\]: Indicates whether the Error has been attended to.
-  \[ServiceInstance \<String\>\]: Qualified service instance (e.g., 'SharePoint/Dublin') that published the service error information.
+  \[ServiceInstance \<String\>\]: Qualified service instance (for example, 'SharePoint/Dublin') that published the service error information.
 
 TRANSITIVEMEMBEROF \<IMicrosoftGraphDirectoryObject\[\]\>: .
   \[Id \<String\>\]: The unique identifier for an entity.
@@ -747,7 +741,6 @@ Read-only.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
-[Update-MgContact](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgContact?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetacontact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetacontact)
 

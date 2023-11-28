@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasenoncustodialdatasource
@@ -48,8 +48,9 @@ Create a new noncustodialDataSource object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{
 	ApplyHoldToSource = $true
@@ -60,10 +61,9 @@ $params = @{
 }
 New-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -CaseId $caseId -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the New-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{
 	ApplyHoldToSource = $false
@@ -73,8 +73,6 @@ $params = @{
 }
 New-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -CaseId $caseId -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -103,7 +101,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -334,85 +332,93 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryNoncustodialDataSource
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+BODYPARAMETER \<IMicrosoftGraphEdiscoveryNoncustodialDataSource\>: noncustodialDataSource
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[CreatedDateTime \<DateTime?\>\]: Created date and time of the dataSourceContainer entity.
+  \[DisplayName \<String\>\]: Display name of the dataSourceContainer entity.
+  \[HoldStatus \<String\>\]: dataSourceHoldStatus
+  \[LastIndexOperation \<IMicrosoftGraphEdiscoveryCaseIndexOperation\>\]: caseIndexOperation
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Action \<String\>\]: caseAction
+    \[CompletedDateTime \<DateTime?\>\]: The date and time the operation was completed.
+    \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Application \<IMicrosoftGraphIdentity\>\]: identity
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[DisplayName \<String\>\]: The display name of the identity.
+This might not always be available or up to date.
+For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        \[Id \<String\>\]: Unique identifier for the identity.
+      \[Device \<IMicrosoftGraphIdentity\>\]: identity
+      \[User \<IMicrosoftGraphIdentity\>\]: identity
+    \[CreatedDateTime \<DateTime?\>\]: The date and time the operation was created.
+    \[PercentProgress \<Int32?\>\]: The progress of the operation.
+    \[ResultInfo \<IMicrosoftGraphResultInfo\>\]: resultInfo
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Code \<Int32?\>\]: The result code.
+      \[Message \<String\>\]: The message.
+      \[Subcode \<Int32?\>\]: The result sub-code.
+    \[Status \<String\>\]: caseOperationStatus
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[LastModifiedDateTime \<DateTime?\>\]: Last modified date and time of the dataSourceContainer.
+  \[ReleasedDateTime \<DateTime?\>\]: Date and time that the dataSourceContainer was released from the case.
+  \[Status \<String\>\]: dataSourceContainerStatus
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[ApplyHoldToSource \<Boolean?\>\]: Indicates if hold is applied to noncustodial data source (such as mailbox or site).
+  \[DataSource \<IMicrosoftGraphEdiscoveryDataSource\>\]: dataSource
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[CreatedDateTime \<DateTime?\>\]: The date and time the dataSource was created.
+    \[DisplayName \<String\>\]: The display name of the dataSource, and is the name of the SharePoint site.
+    \[HoldStatus \<String\>\]: dataSourceHoldStatus
 
-`BODYPARAMETER <IMicrosoftGraphEdiscoveryNoncustodialDataSource>`: noncustodialDataSource
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CreatedDateTime <DateTime?>]`: Created date and time of the dataSourceContainer entity.
-  - `[DisplayName <String>]`: Display name of the dataSourceContainer entity.
-  - `[HoldStatus <String>]`: dataSourceHoldStatus
-  - `[LastIndexOperation <IMicrosoftGraphEdiscoveryCaseIndexOperation>]`: caseIndexOperation
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Action <String>]`: caseAction
-    - `[CompletedDateTime <DateTime?>]`: The date and time the operation was completed.
-    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Application <IMicrosoftGraphIdentity>]`: identity
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity. This might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-      - `[Device <IMicrosoftGraphIdentity>]`: identity
-      - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[CreatedDateTime <DateTime?>]`: The date and time the operation was created.
-    - `[PercentProgress <Int32?>]`: The progress of the operation.
-    - `[ResultInfo <IMicrosoftGraphResultInfo>]`: resultInfo
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Code <Int32?>]`: The result code.
-      - `[Message <String>]`: The message.
-      - `[Subcode <Int32?>]`: The result sub-code.
-    - `[Status <String>]`: caseOperationStatus
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[LastModifiedDateTime <DateTime?>]`: Last modified date and time of the dataSourceContainer.
-  - `[ReleasedDateTime <DateTime?>]`: Date and time that the dataSourceContainer was released from the case.
-  - `[Status <String>]`: dataSourceContainerStatus
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[ApplyHoldToSource <Boolean?>]`: Indicates if hold is applied to noncustodial data source (such as mailbox or site).
-  - `[DataSource <IMicrosoftGraphEdiscoveryDataSource>]`: dataSource
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[CreatedDateTime <DateTime?>]`: The date and time the dataSource was created.
-    - `[DisplayName <String>]`: The display name of the dataSource, and is the name of the SharePoint site.
-    - `[HoldStatus <String>]`: dataSourceHoldStatus
+DATASOURCE \<IMicrosoftGraphEdiscoveryDataSource\>: dataSource
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Application \<IMicrosoftGraphIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name of the identity.
+This might not always be available or up to date.
+For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      \[Id \<String\>\]: Unique identifier for the identity.
+    \[Device \<IMicrosoftGraphIdentity\>\]: identity
+    \[User \<IMicrosoftGraphIdentity\>\]: identity
+  \[CreatedDateTime \<DateTime?\>\]: The date and time the dataSource was created.
+  \[DisplayName \<String\>\]: The display name of the dataSource, and is the name of the SharePoint site.
+  \[HoldStatus \<String\>\]: dataSourceHoldStatus
 
-`DATASOURCE <IMicrosoftGraphEdiscoveryDataSource>`: dataSource
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[CreatedDateTime <DateTime?>]`: The date and time the dataSource was created.
-  - `[DisplayName <String>]`: The display name of the dataSource, and is the name of the SharePoint site.
-  - `[HoldStatus <String>]`: dataSourceHoldStatus
-
-`INPUTOBJECT <IComplianceIdentity>`: Identity Parameter
-  - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
-  - `[CaseId <String>]`: The unique identifier of case
-  - `[CaseOperationId <String>]`: The unique identifier of caseOperation
-  - `[CustodianId <String>]`: The unique identifier of custodian
-  - `[DataSourceId <String>]`: The unique identifier of dataSource
-  - `[LegalHoldId <String>]`: The unique identifier of legalHold
-  - `[NoncustodialDataSourceId <String>]`: The unique identifier of noncustodialDataSource
-  - `[ReviewSetId <String>]`: The unique identifier of reviewSet
-  - `[ReviewSetQueryId <String>]`: The unique identifier of reviewSetQuery
-  - `[SiteSourceId <String>]`: The unique identifier of siteSource
-  - `[SourceCollectionId <String>]`: The unique identifier of sourceCollection
-  - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
-  - `[TagId <String>]`: The unique identifier of tag
-  - `[TagId1 <String>]`: The unique identifier of tag
-  - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
-  - `[UserId <String>]`: The unique identifier of user
-  - `[UserSourceId <String>]`: The unique identifier of userSource
+INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
+  \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
+  \[CaseId \<String\>\]: The unique identifier of case
+  \[CaseOperationId \<String\>\]: The unique identifier of caseOperation
+  \[CustodianId \<String\>\]: The unique identifier of custodian
+  \[DataSourceId \<String\>\]: The unique identifier of dataSource
+  \[LegalHoldId \<String\>\]: The unique identifier of legalHold
+  \[NoncustodialDataSourceId \<String\>\]: The unique identifier of noncustodialDataSource
+  \[ReviewSetId \<String\>\]: The unique identifier of reviewSet
+  \[ReviewSetQueryId \<String\>\]: The unique identifier of reviewSetQuery
+  \[SiteSourceId \<String\>\]: The unique identifier of siteSource
+  \[SourceCollectionId \<String\>\]: The unique identifier of sourceCollection
+  \[SubjectRightsRequestId \<String\>\]: The unique identifier of subjectRightsRequest
+  \[TagId \<String\>\]: The unique identifier of tag
+  \[TagId1 \<String\>\]: The unique identifier of tag
+  \[UnifiedGroupSourceId \<String\>\]: The unique identifier of unifiedGroupSource
+  \[UserId \<String\>\]: The unique identifier of user
+  \[UserSourceId \<String\>\]: The unique identifier of userSource
 
 ## RELATED LINKS
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasenoncustodialdatasource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasenoncustodialdatasource)
+

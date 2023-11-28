@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagementdirectoryresourcenamespace
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to resourceNamespaces for roleManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgRoleManagementDirectoryResourceNamespace](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementDirectoryResourceNamespace?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,6 +27,18 @@ New-MgBetaRoleManagementDirectoryResourceNamespace -BodyParameter <IMicrosoftGra
 
 ## DESCRIPTION
 Create new navigation property to resourceNamespaces for roleManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -99,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceActions
-Operations that an authorized principal are allowed to perform.
+Operations that an authorized principal is allowed to perform.
 To construct, see NOTES section for RESOURCEACTIONS properties and create a hash table.
 
 ```yaml
@@ -168,7 +177,7 @@ Read-only.
 Typically, the same name as the id property, such as microsoft.aad.b2c.
 Required.
 Supports $filter (eq, startsWith).
-  \[ResourceActions \<IMicrosoftGraphUnifiedRbacResourceAction\[\]\>\]: Operations that an authorized principal are allowed to perform.
+  \[ResourceActions \<IMicrosoftGraphUnifiedRbacResourceAction\[\]\>\]: Operations that an authorized principal is allowed to perform.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
     \[ActionVerb \<String\>\]: HTTP method for the action, such as DELETE, GET, PATCH, POST, PUT, or null.
@@ -183,8 +192,8 @@ For example, selection UX.
       \[DisplayName \<String\>\]: A friendly name that identifies the authenticationContextClassReference object when building user-facing admin experiences.
 For example, a selection UX.
       \[IsAvailable \<Boolean?\>\]: Indicates whether the authenticationContextClassReference has been published by the security admin and is ready for use by apps.
-When it is set to false, it should not be shown in selection UX used to tag resources with authentication context class values.
-It will still be shown in the Conditionall Access policy authoring experience. 
+When it's set to false, it shouldn't be shown in selection UX used to tag resources with authentication context class values.
+It will still be shown in the Conditional Access policy authoring experience. 
 Supports $filter (eq).
     \[AuthenticationContextId \<String\>\]: 
     \[Description \<String\>\]: Description for the action.
@@ -208,7 +217,7 @@ Read-only.
       \[Type \<String\>\]: 
     \[ResourceScopeId \<String\>\]: Not implemented.
 
-RESOURCEACTIONS \<IMicrosoftGraphUnifiedRbacResourceAction\[\]\>: Operations that an authorized principal are allowed to perform.
+RESOURCEACTIONS \<IMicrosoftGraphUnifiedRbacResourceAction\[\]\>: Operations that an authorized principal is allowed to perform.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
   \[ActionVerb \<String\>\]: HTTP method for the action, such as DELETE, GET, PATCH, POST, PUT, or null.
@@ -223,8 +232,8 @@ For example, selection UX.
     \[DisplayName \<String\>\]: A friendly name that identifies the authenticationContextClassReference object when building user-facing admin experiences.
 For example, a selection UX.
     \[IsAvailable \<Boolean?\>\]: Indicates whether the authenticationContextClassReference has been published by the security admin and is ready for use by apps.
-When it is set to false, it should not be shown in selection UX used to tag resources with authentication context class values.
-It will still be shown in the Conditionall Access policy authoring experience. 
+When it's set to false, it shouldn't be shown in selection UX used to tag resources with authentication context class values.
+It will still be shown in the Conditional Access policy authoring experience. 
 Supports $filter (eq).
   \[AuthenticationContextId \<String\>\]: 
   \[Description \<String\>\]: Description for the action.
@@ -249,8 +258,6 @@ Read-only.
   \[ResourceScopeId \<String\>\]: Not implemented.
 
 ## RELATED LINKS
-[New-MgRoleManagementDirectoryResourceNamespace](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementDirectoryResourceNamespace?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagementdirectoryresourcenamespace](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagementdirectoryresourcenamespace)
-
 

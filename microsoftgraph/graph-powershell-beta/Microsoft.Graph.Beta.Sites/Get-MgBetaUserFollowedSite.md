@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetauserfollowedsite
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get followedSites from users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserFollowedSite](/powershell/module/Microsoft.Graph.Sites/Get-MgUserFollowedSite?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,14 +35,13 @@ Get-MgBetaUserFollowedSite -InputObject <ISitesIdentity> [-ExpandProperty <Strin
 Get followedSites from users
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaUserFollowedSite Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Sites
 # A UPN can also be used as -UserId.
 Get-MgBetaUserFollowedSite -UserId $userId
 ```
-This example shows how to use the Get-MgBetaUserFollowedSite Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -312,7 +308,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserFollowedSite](/powershell/module/Microsoft.Graph.Sites/Get-MgUserFollowedSite?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetauserfollowedsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetauserfollowedsite)
 

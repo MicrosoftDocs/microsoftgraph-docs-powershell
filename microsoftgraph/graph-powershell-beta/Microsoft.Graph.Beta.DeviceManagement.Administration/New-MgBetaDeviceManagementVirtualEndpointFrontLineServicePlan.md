@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointfrontlineserviceplan
@@ -27,6 +27,18 @@ New-MgBetaDeviceManagementVirtualEndpointFrontLineServicePlan
 
 ## DESCRIPTION
 Create new navigation property to frontLineServicePlans for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -62,7 +74,8 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+The display name of the front-line service plan.
+For example, 2vCPU/8GB/128GB Front-line or 4vCPU/16GB/256GB Front-line.
 
 ```yaml
 Type: String
@@ -93,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -TotalCount
-.
+The total number of front-line service plans purchased by the customer.
 
 ```yaml
 Type: Int32
@@ -102,13 +115,13 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -UsedCount
-.
+The number of service plans that have been used for the account.
 
 ```yaml
 Type: Int32
@@ -117,7 +130,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -163,20 +176,21 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcFrontLineServicePlan
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`BODYPARAMETER <IMicrosoftGraphCloudPcFrontLineServicePlan>`: cloudPcFrontLineServicePlan
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[DisplayName <String>]`: 
-  - `[TotalCount <Int32?>]`: 
-  - `[UsedCount <Int32?>]`: 
+BODYPARAMETER \<IMicrosoftGraphCloudPcFrontLineServicePlan\>: cloudPcFrontLineServicePlan
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[DisplayName \<String\>\]: The display name of the front-line service plan.
+For example, 2vCPU/8GB/128GB Front-line or 4vCPU/16GB/256GB Front-line.
+  \[TotalCount \<Int32?\>\]: The total number of front-line service plans purchased by the customer.
+  \[UsedCount \<Int32?\>\]: The number of service plans that have been used for the account.
 
 ## RELATED LINKS
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointfrontlineserviceplan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointfrontlineserviceplan)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilepublication
@@ -50,8 +50,9 @@ Create a new itemPublication object in a user's profile.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaUserProfilePublication Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.People
 $params = @{
 	Description = "One persons journey to the top of the branding management field."
@@ -64,8 +65,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfilePublication -UserId $userId -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaUserProfilePublication Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

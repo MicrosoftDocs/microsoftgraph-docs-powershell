@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganizationsettingmicrosoftapplicationdataaccess
@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the settings in a microsoftApplicationDataAccessSettings object that specify access from Microsoft applications to Microsoft 365 user data in an organization.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -44,18 +45,18 @@ Update-MgBetaOrganizationSettingMicrosoftApplicationDataAccess
 
 ## DESCRIPTION
 Update the settings in a microsoftApplicationDataAccessSettings object that specify access from Microsoft applications to Microsoft 365 user data in an organization.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaOrganizationSettingMicrosoftApplicationDataAccess Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{
 	DisabledForGroup = "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 Update-MgBetaOrganizationSettingMicrosoftApplicationDataAccess -OrganizationId $organizationId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaOrganizationSettingMicrosoftApplicationDataAccess Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -91,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisabledForGroup
-The ID of an Azure Active Directory (Azure AD) security group for which the members are allowed to access Microsoft 365 data using only Microsoft 365 apps, but not other Microsoft apps such as Edge.
+The ID of a Microsoft Entra security group for which the members are allowed to access Microsoft 365 data using only Microsoft 365 apps, but not other Microsoft apps such as Edge.
 This is only applicable if isEnabledForAllMicrosoftApplications is set to true.
 
 ```yaml
@@ -142,7 +143,7 @@ Accept wildcard characters: False
 When set to true, all users in the organization can access in a Microsoft app any Microsoft 365 data that the user has been authorized to access.
 The Microsoft app can be a Microsoft 365 app (for example, Excel, Outlook) or non-Microsoft 365 app (for example, Edge).
 The default is true.
-It is possible to disable this access for a subset of users in an Azure AD security group, by specifying the group in the disabledForGroup property.
+It is possible to disable this access for a subset of users in a Microsoft Entra security group, by specifying the group in the disabledForGroup property.
 When set to false, all users can access authorized Microsoft 365 data only in a Microsoft 365 app.
 
 ```yaml
@@ -223,12 +224,12 @@ BODYPARAMETER \<IMicrosoftGraphMicrosoftApplicationDataAccessSettings\>: microso
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  \[DisabledForGroup \<String\>\]: The ID of an Azure Active Directory (Azure AD) security group for which the members are allowed to access Microsoft 365 data using only Microsoft 365 apps, but not other Microsoft apps such as Edge. 
+  \[DisabledForGroup \<String\>\]: The ID of a Microsoft Entra security group for which the members are allowed to access Microsoft 365 data using only Microsoft 365 apps, but not other Microsoft apps such as Edge. 
 This is only applicable if isEnabledForAllMicrosoftApplications is set to true.
   \[IsEnabledForAllMicrosoftApplications \<Boolean?\>\]: When set to true, all users in the organization can access in a Microsoft app any Microsoft 365 data that the user has been authorized to access.
 The Microsoft app can be a Microsoft 365 app (for example, Excel, Outlook) or non-Microsoft 365 app (for example, Edge).
 The default is true. 
-It is possible to disable this access for a subset of users in an Azure AD security group, by specifying the group in the disabledForGroup property. 
+It is possible to disable this access for a subset of users in a Microsoft Entra security group, by specifying the group in the disabledForGroup property. 
 When set to false, all users can access authorized Microsoft 365 data only in a Microsoft 365 app.
 
 INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
@@ -242,6 +243,7 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[ContractId \<String\>\]: The unique identifier of contract
   \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
   \[DeviceId \<String\>\]: The unique identifier of device
+  \[DeviceLocalCredentialInfoId \<String\>\]: The unique identifier of deviceLocalCredentialInfo
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[DirectoryRoleId \<String\>\]: The unique identifier of directoryRole
   \[DirectoryRoleTemplateId \<String\>\]: The unique identifier of directoryRoleTemplate

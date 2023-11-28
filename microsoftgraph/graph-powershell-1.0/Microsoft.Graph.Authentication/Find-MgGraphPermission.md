@@ -19,13 +19,12 @@ Use the Find-MgGraphCommand to find which permissions to use for a specific cmdl
 ### Search
 ```
 Find-MgGraphPermission [-SearchString] <String> [-ExactMatch] [-PermissionType <String>] [-Online]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### All
 ```
-Find-MgGraphPermission [-PermissionType <String>] [-Online] [-All] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+Find-MgGraphPermission [-PermissionType <String>] [-Online] [-All] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -136,21 +135,6 @@ Accept wildcard characters: False
 Type: String
 Parameter Sets: (All)
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: proga
 
 Required: False
 Position: Named

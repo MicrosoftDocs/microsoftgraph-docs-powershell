@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupthreadpostattachmentuploadsession
@@ -16,9 +16,7 @@ As part of the response, this action returns an upload URL that you can use in s
 Request headers for each PUT operation let you specify the exact range of bytes to be uploaded.
 This allows transfer to be resumed, in case the network connection is dropped during upload.
 The following are the steps to attach a file to an Outlook item using an upload session: See attach large files to Outlook messages or events for an example.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupThreadPostAttachmentUploadSession](/powershell/module/Microsoft.Graph.Groups/New-MgGroupThreadPostAttachmentUploadSession?view=graph-powershell-1.0)
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -60,6 +58,23 @@ As part of the response, this action returns an upload URL that you can use in s
 Request headers for each PUT operation let you specify the exact range of bytes to be uploaded.
 This allows transfer to be resumed, in case the network connection is dropped during upload.
 The following are the steps to attach a file to an Outlook item using an upload session: See attach large files to Outlook messages or events for an example.
+This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -228,7 +243,7 @@ Optional.
   \[IsInline \<Boolean?\>\]: true if the attachment is an inline attachment; otherwise, false.
 Optional.
   \[Name \<String\>\]: The display name of the attachment.
-This can be a descriptive string and does not have to be the actual file name.
+This can be a descriptive string and doesn't have to be the actual file name.
 Required.
   \[Size \<Int64?\>\]: The length of the attachment in bytes.
 Required.
@@ -245,7 +260,7 @@ Optional.
     \[IsInline \<Boolean?\>\]: true if the attachment is an inline attachment; otherwise, false.
 Optional.
     \[Name \<String\>\]: The display name of the attachment.
-This can be a descriptive string and does not have to be the actual file name.
+This can be a descriptive string and doesn't have to be the actual file name.
 Required.
     \[Size \<Int64?\>\]: The length of the attachment in bytes.
 Required.
@@ -294,8 +309,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgGroupThreadPostAttachmentUploadSession](/powershell/module/Microsoft.Graph.Groups/New-MgGroupThreadPostAttachmentUploadSession?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupthreadpostattachmentuploadsession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupthreadpostattachmentuploadsession)
-
 

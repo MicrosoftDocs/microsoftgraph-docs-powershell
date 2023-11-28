@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageassignmentpolicycustomextensionhandler
@@ -44,6 +44,22 @@ New-MgBetaEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionHandl
 
 ## DESCRIPTION
 Create new navigation property to customExtensionHandlers for identityGovernance
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -213,12 +229,12 @@ Read-only.
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[ClientConfiguration \<IMicrosoftGraphCustomExtensionClientConfiguration\>\]: customExtensionClientConfiguration
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[MaximumRetries \<Int32?\>\]: The max number of retries that Azure AD will make to the external API.
+      \[MaximumRetries \<Int32?\>\]: The max number of retries that Microsoft Entra ID makes to the external API.
 Values of 0 or 1 are supported.
-If null, the default for the service will apply.
-      \[TimeoutInMilliseconds \<Int32?\>\]: The max duration in milliseconds that Azure AD will wait for a response from the external app before it shuts down the connection.
+If null, the default for the service applies.
+      \[TimeoutInMilliseconds \<Int32?\>\]: The max duration in milliseconds that Microsoft Entra ID waits for a response from the external app before it shuts down the connection.
 The valid range is between 200 and 2000 milliseconds.
-If null, the default for the service will apply.
+If null, the default for the service applies.
     \[Description \<String\>\]: Description for the customCalloutExtension object.
     \[DisplayName \<String\>\]: Display name for the customCalloutExtension object.
     \[EndpointConfiguration \<IMicrosoftGraphCustomExtensionEndpointConfiguration\>\]: customExtensionEndpointConfiguration
@@ -239,12 +255,12 @@ CUSTOMEXTENSION \<IMicrosoftGraphCustomAccessPackageWorkflowExtension\>: customA
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[ClientConfiguration \<IMicrosoftGraphCustomExtensionClientConfiguration\>\]: customExtensionClientConfiguration
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[MaximumRetries \<Int32?\>\]: The max number of retries that Azure AD will make to the external API.
+    \[MaximumRetries \<Int32?\>\]: The max number of retries that Microsoft Entra ID makes to the external API.
 Values of 0 or 1 are supported.
-If null, the default for the service will apply.
-    \[TimeoutInMilliseconds \<Int32?\>\]: The max duration in milliseconds that Azure AD will wait for a response from the external app before it shuts down the connection.
+If null, the default for the service applies.
+    \[TimeoutInMilliseconds \<Int32?\>\]: The max duration in milliseconds that Microsoft Entra ID waits for a response from the external app before it shuts down the connection.
 The valid range is between 200 and 2000 milliseconds.
-If null, the default for the service will apply.
+If null, the default for the service applies.
   \[Description \<String\>\]: Description for the customCalloutExtension object.
   \[DisplayName \<String\>\]: Display name for the customCalloutExtension object.
   \[EndpointConfiguration \<IMicrosoftGraphCustomExtensionEndpointConfiguration\>\]: customExtensionEndpointConfiguration
@@ -300,6 +316,7 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[CustomTaskExtensionId \<String\>\]: The unique identifier of customTaskExtension
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[EndDateTime \<DateTime?\>\]: Usage: endDateTime={endDateTime}
+  \[FindingId \<String\>\]: The unique identifier of finding
   \[GovernanceInsightId \<String\>\]: The unique identifier of governanceInsight
   \[GovernanceResourceId \<String\>\]: The unique identifier of governanceResource
   \[GovernanceRoleAssignmentId \<String\>\]: The unique identifier of governanceRoleAssignment
@@ -310,6 +327,8 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[IncompatibleAccessPackageId \<String\>\]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   \[LongRunningOperationId \<String\>\]: The unique identifier of longRunningOperation
   \[On \<String\>\]: Usage: on='{on}'
+  \[PermissionsCreepIndexDistributionId \<String\>\]: The unique identifier of permissionsCreepIndexDistribution
+  \[PermissionsRequestChangeId \<String\>\]: The unique identifier of permissionsRequestChange
   \[PrivilegedAccessGroupAssignmentScheduleId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentSchedule
   \[PrivilegedAccessGroupAssignmentScheduleInstanceId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentScheduleInstance
   \[PrivilegedAccessGroupAssignmentScheduleRequestId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentScheduleRequest
@@ -359,5 +378,4 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageassignmentpolicycustomextensionhandler](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageassignmentpolicycustomextensionhandler)
-
 

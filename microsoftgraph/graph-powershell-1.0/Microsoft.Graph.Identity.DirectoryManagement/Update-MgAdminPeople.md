@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgadminpeople
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property people in admin
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaAdminPeople](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaAdminPeople?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,6 +28,16 @@ Update-MgAdminPeople -BodyParameter <IMicrosoftGraphPeopleAdminSettings> [-WhatI
 Update the navigation property people in admin
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -138,36 +145,36 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPeopleAdminSettings
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+BODYPARAMETER \<IMicrosoftGraphPeopleAdminSettings\>: peopleAdminSettings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[ProfileCardProperties \<IMicrosoftGraphProfileCardProperty\[\]\>\]: 
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[Annotations \<IMicrosoftGraphProfileCardAnnotation\[\]\>\]: 
+      \[DisplayName \<String\>\]: 
+      \[Localizations \<IMicrosoftGraphDisplayNameLocalization\[\]\>\]: 
+        \[DisplayName \<String\>\]: If present, the value of this field contains the displayName string that has been set for the language present in the languageTag field.
+        \[LanguageTag \<String\>\]: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
+    \[DirectoryPropertyName \<String\>\]: 
 
-`BODYPARAMETER <IMicrosoftGraphPeopleAdminSettings>`: peopleAdminSettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[ProfileCardProperties <IMicrosoftGraphProfileCardProperty[]>]`: 
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[Annotations <IMicrosoftGraphProfileCardAnnotation[]>]`: 
-      - `[DisplayName <String>]`: 
-      - `[Localizations <IMicrosoftGraphDisplayNameLocalization[]>]`: 
-        - `[DisplayName <String>]`: If present, the value of this field contains the displayName string that has been set for the language present in the languageTag field.
-        - `[LanguageTag <String>]`: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
-    - `[DirectoryPropertyName <String>]`: 
-
-`PROFILECARDPROPERTIES <IMicrosoftGraphProfileCardProperty[]>`: .
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Annotations <IMicrosoftGraphProfileCardAnnotation[]>]`: 
-    - `[DisplayName <String>]`: 
-    - `[Localizations <IMicrosoftGraphDisplayNameLocalization[]>]`: 
-      - `[DisplayName <String>]`: If present, the value of this field contains the displayName string that has been set for the language present in the languageTag field.
-      - `[LanguageTag <String>]`: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
-  - `[DirectoryPropertyName <String>]`: 
+PROFILECARDPROPERTIES \<IMicrosoftGraphProfileCardProperty\[\]\>: .
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[Annotations \<IMicrosoftGraphProfileCardAnnotation\[\]\>\]: 
+    \[DisplayName \<String\>\]: 
+    \[Localizations \<IMicrosoftGraphDisplayNameLocalization\[\]\>\]: 
+      \[DisplayName \<String\>\]: If present, the value of this field contains the displayName string that has been set for the language present in the languageTag field.
+      \[LanguageTag \<String\>\]: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
+  \[DirectoryPropertyName \<String\>\]:
 
 ## RELATED LINKS
 
-[Update-MgBetaAdminPeople](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaAdminPeople?view=graph-powershell-beta)
+[https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgadminpeople](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgadminpeople)
 

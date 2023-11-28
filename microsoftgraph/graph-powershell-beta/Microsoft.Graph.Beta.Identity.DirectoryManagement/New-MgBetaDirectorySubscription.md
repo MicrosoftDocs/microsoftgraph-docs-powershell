@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorysubscription
@@ -29,6 +29,18 @@ New-MgBetaDirectorySubscription -BodyParameter <IMicrosoftGraphCompanySubscripti
 
 ## DESCRIPTION
 Create new navigation property to subscriptions for directory
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -252,7 +264,7 @@ Accept wildcard characters: False
 
 ### -Status
 The status of this subscription.
-Possible values are: Enabled, Expired, Suspended, Warning, LockedOut.
+Possible values are: Enabled, Deleted, Suspended, Warning, LockedOut.
 
 ```yaml
 Type: String
@@ -354,7 +366,7 @@ The possible values are:Success - Service is fully provisioned.Disabled - Servic
   \[SkuId \<String\>\]: The object ID of the SKU associated with this subscription.
   \[SkuPartNumber \<String\>\]: The SKU associated with this subscription.
   \[Status \<String\>\]: The status of this subscription.
-Possible values are: Enabled, Expired, Suspended, Warning, LockedOut.
+Possible values are: Enabled, Deleted, Suspended, Warning, LockedOut.
   \[TotalLicenses \<Int32?\>\]: The number of seats included in this subscription.
 
 SERVICESTATUS \<IMicrosoftGraphServicePlanInfo\[\]\>: The provisioning status of each service that's included in this subscription.
@@ -368,5 +380,4 @@ The possible values are:Success - Service is fully provisioned.Disabled - Servic
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorysubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorysubscription)
-
 

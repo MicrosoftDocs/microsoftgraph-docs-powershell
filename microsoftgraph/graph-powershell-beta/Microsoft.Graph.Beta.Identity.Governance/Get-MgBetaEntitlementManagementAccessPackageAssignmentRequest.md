@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageassignmentrequest
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaEntitlementManagementAccessPackageAssignmentRequest
 
 ## SYNOPSIS
-In Azure AD entitlement management, retrieve the properties and relationships of an  accessPackageAssignmentRequest object.
+In Microsoft Entra entitlement management, retrieve the properties and relationships of an  accessPackageAssignmentRequest object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -44,13 +45,15 @@ Get-MgBetaEntitlementManagementAccessPackageAssignmentRequest [-ExpandProperty <
 ```
 
 ## DESCRIPTION
-In Azure AD entitlement management, retrieve the properties and relationships of an  accessPackageAssignmentRequest object.
+In Microsoft Entra entitlement management, retrieve the properties and relationships of an  accessPackageAssignmentRequest object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Get all access package assignment requests
 
-```powershell
+### EXAMPLE 1
+```
 Get-MgBetaEntitlementManagementAccessPackageAssignmentRequest | Format-List
+```
 
 AccessPackage           : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackage
 AccessPackageAssignment : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageAssignment
@@ -66,16 +69,13 @@ RequestStatus           : FulfilledNotificationTriggered
 RequestType             : UserAdd
 Requestor               : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageSubject
 Schedule                : Microsoft.Graph.PowerShell.Models.MicrosoftGraphRequestSchedule
-AdditionalProperties    : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageAssignmentRequests/$entity]}
+AdditionalProperties    : {\[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageAssignmentRequests/$entity\]}
+
+### EXAMPLE 2
 ```
-
-This example retrieves all access package assignment requests.
-
-### Example 2: Get  access package assignment request using the request id
-
-```powershell
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 Get-MgBetaEntitlementManagementAccessPackageAssignmentRequest -AccessPackageAssignmentRequestId 'c82bc0cd-4fbc-4492-8c75-54c41dc74803'| Format-List
+```
 
 AccessPackage           : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackage
 AccessPackageAssignment : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageAssignment
@@ -91,10 +91,7 @@ RequestStatus           : FulfilledNotificationTriggered
 RequestType             : UserAdd
 Requestor               : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageSubject
 Schedule                : Microsoft.Graph.PowerShell.Models.MicrosoftGraphRequestSchedule
-AdditionalProperties    : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageAssignmentRequests/$entity]}
-```
-
-This example returns the access package assignment request for the specified id.
+AdditionalProperties    : {\[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageAssignmentRequests/$entity\]}
 
 ## PARAMETERS
 
@@ -352,6 +349,7 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[CustomTaskExtensionId \<String\>\]: The unique identifier of customTaskExtension
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[EndDateTime \<DateTime?\>\]: Usage: endDateTime={endDateTime}
+  \[FindingId \<String\>\]: The unique identifier of finding
   \[GovernanceInsightId \<String\>\]: The unique identifier of governanceInsight
   \[GovernanceResourceId \<String\>\]: The unique identifier of governanceResource
   \[GovernanceRoleAssignmentId \<String\>\]: The unique identifier of governanceRoleAssignment
@@ -362,6 +360,8 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[IncompatibleAccessPackageId \<String\>\]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   \[LongRunningOperationId \<String\>\]: The unique identifier of longRunningOperation
   \[On \<String\>\]: Usage: on='{on}'
+  \[PermissionsCreepIndexDistributionId \<String\>\]: The unique identifier of permissionsCreepIndexDistribution
+  \[PermissionsRequestChangeId \<String\>\]: The unique identifier of permissionsRequestChange
   \[PrivilegedAccessGroupAssignmentScheduleId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentSchedule
   \[PrivilegedAccessGroupAssignmentScheduleInstanceId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentScheduleInstance
   \[PrivilegedAccessGroupAssignmentScheduleRequestId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentScheduleRequest

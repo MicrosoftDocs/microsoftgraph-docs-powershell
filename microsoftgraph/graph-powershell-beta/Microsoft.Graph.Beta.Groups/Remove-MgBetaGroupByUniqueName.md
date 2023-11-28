@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupbyuniquename
@@ -11,8 +11,9 @@ schema: 2.0.0
 Deletes a group.
 When deleted, Microsoft 365 groups are moved to a temporary container and can be restored within 30 days.
 After that time, they are permanently deleted.
-This isn't applicable to Security groups and Distribution groups which are permanently deleted immediately.
+This isn't applicable to Security groups and Distribution groups that are permanently deleted immediately.
 To learn more, see deletedItems.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -32,8 +33,21 @@ Remove-MgBetaGroupByUniqueName -InputObject <IGroupsIdentity> [-IfMatch <String>
 Deletes a group.
 When deleted, Microsoft 365 groups are moved to a temporary container and can be restored within 30 days.
 After that time, they are permanently deleted.
-This isn't applicable to Security groups and Distribution groups which are permanently deleted immediately.
+This isn't applicable to Security groups and Distribution groups that are permanently deleted immediately.
 To learn more, see deletedItems.
+This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -190,5 +204,4 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupbyuniquename](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupbyuniquename)
-
 

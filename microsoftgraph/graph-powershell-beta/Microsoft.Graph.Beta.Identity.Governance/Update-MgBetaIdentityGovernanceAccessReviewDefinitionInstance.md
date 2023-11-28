@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewdefinitioninstance
@@ -12,9 +12,6 @@ Update the properties of an accessReviewInstance object.
 Only the reviewers and fallbackReviewers properties can be updated but the scope property is also required in the request body.
 You can only add reviewers to the fallbackReviewers property but can't remove existing fallbackReviewers.
 To update an accessReviewInstance, its status must be InProgress.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgIdentityGovernanceAccessReviewDefinitionInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceAccessReviewDefinitionInstance?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -65,10 +62,11 @@ You can only add reviewers to the fallbackReviewers property but can't remove ex
 To update an accessReviewInstance, its status must be InProgress.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+```
 
 $params = @{
 	scope = @{
@@ -112,11 +110,6 @@ $params = @{
 }
 
 Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstance -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstance Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -233,7 +226,8 @@ Accept wildcard characters: False
 ```
 
 ### -EndDateTime
-DateTime when review instance is scheduled to end.The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
+DateTime when review instance is scheduled to end.
+The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Supports $select.
 Read-only.
@@ -269,8 +263,8 @@ Accept wildcard characters: False
 
 ### -FallbackReviewers
 This collection of reviewer scopes is used to define the list of fallback reviewers.
-These fallback reviewers will be notified to take action if no users are found from the list of reviewers specified.
-This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist.
+These fallback reviewers are notified to take action if no users are found from the list of reviewers specified.
+This could occur when either the group owner is specified as the reviewer but the group owner doesn't exist, or manager is specified as reviewer but a user's manager doesn't exist.
 Supports $select.
 To construct, see NOTES section for FALLBACKREVIEWERS properties and create a hash table.
 
@@ -476,9 +470,9 @@ Read-only.
     \[AppliedBy \<IMicrosoftGraphUserIdentity\>\]: userIdentity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-Note that this might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      \[Id \<String\>\]: Unique identifier for the identity.
+This property is read-only.
+      \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
       \[IPAddress \<String\>\]: Indicates the client IP address used by user performing the activity (audit log only).
       \[UserPrincipalName \<String\>\]: The userPrincipalName attribute of the user.
     \[AppliedDateTime \<DateTime?\>\]: The timestamp when the approval decision was applied.
@@ -503,9 +497,9 @@ Read-only.
     \[Principal \<IMicrosoftGraphIdentity\>\]: identity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-Note that this might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      \[Id \<String\>\]: Unique identifier for the identity.
+This property is read-only.
+      \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
     \[PrincipalLink \<String\>\]: Link to the principal object.
 For example: https://graph.microsoft.com/v1.0/users/a6c7aecb-cbfd-4763-87ef-e91b4bd509d9.
 Read-only.
@@ -558,7 +552,7 @@ Read-only.
     \[DescriptionForAdmins \<String\>\]: Description provided by review creators to provide more context of the review to admins.
 Supports $select.
     \[DescriptionForReviewers \<String\>\]: Description provided  by review creators to provide more context of the review to reviewers.
-Reviewers will see this description in the email sent to them requesting their review.
+Reviewers see this description in the email sent to them requesting their review.
 Email notifications support up to 256 characters.
 Supports $select.
     \[DisplayName \<String\>\]: Name of the access review series.
@@ -566,7 +560,7 @@ Supports $select and $orderby.
 Required on create.
     \[FallbackReviewers \<IMicrosoftGraphAccessReviewReviewerScope\[\]\>\]: This collection of reviewer scopes is used to define the list of fallback reviewers.
 These fallback reviewers will be notified to take action if no users are found from the list of reviewers specified.
-This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist.
+This could occur when either the group owner is specified as the reviewer but the group owner doesn't exist, or manager is specified as reviewer but a user's manager doesn't exist.
 See accessReviewReviewerScope.
 Replaces backupReviewers.
 Supports $select.
@@ -574,7 +568,7 @@ NOTE: The value of this property will be ignored if fallback reviewers are assig
     \[InstanceEnumerationScope \<IMicrosoftGraphAccessReviewScope\>\]: accessReviewScope
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[Instances \<IMicrosoftGraphAccessReviewInstance\[\]\>\]: Set of access reviews instances for this access review series.
-Access reviews that do not recur will only have one instance; otherwise, there is an instance for each recurrence.
+Access reviews that don't recur will only have one instance; otherwise, there's an instance for each recurrence.
     \[LastModifiedDateTime \<DateTime?\>\]: Timestamp when the access review series was last modified.
 Supports $select.
 Read-only.
@@ -615,7 +609,7 @@ NOTE: If the stageSettings of the accessReviewScheduleDefinition object is defin
       \[RecommendationLookBackDuration \<TimeSpan?\>\]: Optional field.
 Indicates the period of inactivity (with respect to the start date of the review instance) that recommendations will be configured from.
 The recommendation will be to deny if the user is inactive during the look-back duration.
-For reviews of groups and Azure AD roles, any duration is accepted.
+For reviews of groups and Microsoft Entra roles, any duration is accepted.
 For reviews of applications, 30 days is the maximum duration.
 If not specified, the duration is 30 days.
 NOTE: If the stageSettings of the accessReviewScheduleDefinition object is defined, its recommendationLookBackDuration setting will be used instead of the value of this property.
@@ -657,51 +651,52 @@ Required.
 Default value is false.
     \[StageSettings \<IMicrosoftGraphAccessReviewStageSettings\[\]\>\]: Required only for a multi-stage access review to define the stages and their settings.
 You can break down each review instance into up to three sequential stages, where each stage can have a different set of reviewers, fallback reviewers, and settings.
-Stages will be created sequentially based on the dependsOn property.
+Stages are created sequentially based on the dependsOn property.
 Optional. 
 When this property is defined, its settings are used instead of the corresponding settings in the accessReviewScheduleDefinition object and its settings, reviewers, and fallbackReviewers properties.
       \[DecisionsThatWillMoveToNextStage \<String\[\]\>\]: Indicate which decisions will go to the next stage.
-Can be a sub-set of Approve, Deny, Recommendation, or NotReviewed.
+Can be a subset of Approve, Deny, Recommendation, or NotReviewed.
 If not provided, all decisions will go to the next stage.
 Optional.
       \[DependsOn \<String\[\]\>\]: Defines the sequential or parallel order of the stages and depends on the stageId.
 Only sequential stages are currently supported.
 For example, if stageId is 2, then dependsOn must be 1.
-If stageId is 1, do not specify dependsOn.
-Required if stageId is not 1.
+If stageId is 1, don't specify dependsOn.
+Required if stageId isn't 1.
       \[DurationInDays \<Int32?\>\]: The duration of the stage.
 Required. 
 NOTE: The cumulative value of this property across all stages  1.
 Will override the instanceDurationInDays setting on the accessReviewScheduleDefinition object.
 2.
-Cannot exceed the length of one recurrence.
-That is, if the review recurs weekly, the cumulative durationInDays cannot exceed 7.
-      \[FallbackReviewers \<IMicrosoftGraphAccessReviewReviewerScope\[\]\>\]: If provided, the fallback reviewers are asked to complete a review if the primary reviewers do not exist.
-For example, if managers are selected as reviewers and a principal under review does not have a manager in Azure AD, the fallback reviewers are asked to review that principal.
-NOTE: The value of this property will override the corresponding setting on the accessReviewScheduleDefinition object.
+Can't exceed the length of one recurrence.
+That is, if the review recurs weekly, the cumulative durationInDays can't exceed 7.
+      \[FallbackReviewers \<IMicrosoftGraphAccessReviewReviewerScope\[\]\>\]: If provided, the fallback reviewers are asked to complete a review if the primary reviewers don't exist.
+For example, if managers are selected as reviewers and a principal under review doesn't have a manager in Microsoft Entra ID, the fallback reviewers are asked to review that principal.
+NOTE: The value of this property overrides the corresponding setting on the accessReviewScheduleDefinition object.
       \[RecommendationInsightSettings \<IMicrosoftGraphAccessReviewRecommendationInsightSetting\[\]\>\]: 
       \[RecommendationLookBackDuration \<TimeSpan?\>\]: Optional field.
-Indicates the time period of inactivity (with respect to the start date of the review instance) that recommendations will be configured from.
-The recommendation will be to deny if the user is inactive during the look back duration.
-For reviews of groups and Azure AD roles, any duration is accepted.
+Indicates the time period of inactivity (with respect to the start date of the review instance) from which that recommendations will be configured.
+The recommendation is to deny if the user is inactive during the look back duration.
+For reviews of groups and Microsoft Entra roles, any duration is accepted.
 For reviews of applications, 30 days is the maximum duration.
 If not specified, the duration is 30 days.
-NOTE: The value of this property will override the corresponding setting on the accessReviewScheduleDefinition object.
+NOTE: The value of this property overrides the corresponding setting on the accessReviewScheduleDefinition object.
       \[RecommendationsEnabled \<Boolean?\>\]: Indicates whether showing recommendations to reviewers is enabled.
 Required.
-NOTE: The value of this property will override override the corresponding setting on the accessReviewScheduleDefinition object.
+NOTE: The value of this property overrides the corresponding setting on the accessReviewScheduleDefinition object.
       \[Reviewers \<IMicrosoftGraphAccessReviewReviewerScope\[\]\>\]: Defines who the reviewers are.
-If none are specified, the review is a self-review (users review their own access). 
+If none is specified, the review is a self-review (users review their own access). 
 For examples of options for assigning reviewers, see Assign reviewers to your access review definition using the Microsoft Graph API.
-NOTE: The value of this property will override the corresponding setting on the accessReviewScheduleDefinition.
+NOTE: The value of this property overrides the corresponding setting on the accessReviewScheduleDefinition.
       \[StageId \<String\>\]: Unique identifier of the accessReviewStageSettings.
-The stageId will be used in dependsOn property to indicate the stage relationship.
+The stageId is used in dependsOn property to indicate the stage relationship.
 Required.
     \[Status \<String\>\]: This read-only field specifies the status of an access review.
 The typical states include Initializing, NotStarted, Starting, InProgress, Completing, Completed, AutoReviewing, and AutoReviewed. 
 Supports $select, $orderby, and $filter (eq only).
 Read-only.
-  \[EndDateTime \<DateTime?\>\]: DateTime when review instance is scheduled to end.The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
+  \[EndDateTime \<DateTime?\>\]: DateTime when review instance is scheduled to end.
+The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Supports $select.
 Read-only.
@@ -710,8 +705,8 @@ Read-only.
     \[Code \<String\>\]: The error code.
     \[Message \<String\>\]: The error message.
   \[FallbackReviewers \<IMicrosoftGraphAccessReviewReviewerScope\[\]\>\]: This collection of reviewer scopes is used to define the list of fallback reviewers.
-These fallback reviewers will be notified to take action if no users are found from the list of reviewers specified.
-This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist.
+These fallback reviewers are notified to take action if no users are found from the list of reviewers specified.
+This could occur when either the group owner is specified as the reviewer but the group owner doesn't exist, or manager is specified as reviewer but a user's manager doesn't exist.
 Supports $select.
   \[Reviewers \<IMicrosoftGraphAccessReviewReviewerScope\[\]\>\]: This collection of access review scopes is used to define who the reviewers are.
 Supports $select.
@@ -729,8 +724,8 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 This property is the cumulative total of the durationInDays for all stages.
 Read-only.
     \[FallbackReviewers \<IMicrosoftGraphAccessReviewReviewerScope\[\]\>\]: This collection of reviewer scopes is used to define the list of fallback reviewers.
-These fallback reviewers will be notified to take action if no users are found from the list of reviewers specified.
-This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist.
+These fallback reviewers are notified to take action if no users are found from the list of reviewers specified.
+This can occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist.
     \[Reviewers \<IMicrosoftGraphAccessReviewReviewerScope\[\]\>\]: This collection of access review scopes is used to define who the reviewers are.
 For examples of options for assigning reviewers, see Assign reviewers to your access review definition using the Microsoft Graph API.
     \[StartDateTime \<DateTime?\>\]: DateTime when review stage is scheduled to start.
@@ -772,9 +767,9 @@ Read-only.
   \[AppliedBy \<IMicrosoftGraphUserIdentity\>\]: userIdentity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-Note that this might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity.
+This property is read-only.
+    \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
     \[IPAddress \<String\>\]: Indicates the client IP address used by user performing the activity (audit log only).
     \[UserPrincipalName \<String\>\]: The userPrincipalName attribute of the user.
   \[AppliedDateTime \<DateTime?\>\]: The timestamp when the approval decision was applied.
@@ -831,7 +826,7 @@ Read-only.
       \[DescriptionForAdmins \<String\>\]: Description provided by review creators to provide more context of the review to admins.
 Supports $select.
       \[DescriptionForReviewers \<String\>\]: Description provided  by review creators to provide more context of the review to reviewers.
-Reviewers will see this description in the email sent to them requesting their review.
+Reviewers see this description in the email sent to them requesting their review.
 Email notifications support up to 256 characters.
 Supports $select.
       \[DisplayName \<String\>\]: Name of the access review series.
@@ -839,7 +834,7 @@ Supports $select and $orderby.
 Required on create.
       \[FallbackReviewers \<IMicrosoftGraphAccessReviewReviewerScope\[\]\>\]: This collection of reviewer scopes is used to define the list of fallback reviewers.
 These fallback reviewers will be notified to take action if no users are found from the list of reviewers specified.
-This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist.
+This could occur when either the group owner is specified as the reviewer but the group owner doesn't exist, or manager is specified as reviewer but a user's manager doesn't exist.
 See accessReviewReviewerScope.
 Replaces backupReviewers.
 Supports $select.
@@ -847,7 +842,7 @@ NOTE: The value of this property will be ignored if fallback reviewers are assig
       \[InstanceEnumerationScope \<IMicrosoftGraphAccessReviewScope\>\]: accessReviewScope
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[Instances \<IMicrosoftGraphAccessReviewInstance\[\]\>\]: Set of access reviews instances for this access review series.
-Access reviews that do not recur will only have one instance; otherwise, there is an instance for each recurrence.
+Access reviews that don't recur will only have one instance; otherwise, there's an instance for each recurrence.
       \[LastModifiedDateTime \<DateTime?\>\]: Timestamp when the access review series was last modified.
 Supports $select.
 Read-only.
@@ -888,7 +883,7 @@ NOTE: If the stageSettings of the accessReviewScheduleDefinition object is defin
         \[RecommendationLookBackDuration \<TimeSpan?\>\]: Optional field.
 Indicates the period of inactivity (with respect to the start date of the review instance) that recommendations will be configured from.
 The recommendation will be to deny if the user is inactive during the look-back duration.
-For reviews of groups and Azure AD roles, any duration is accepted.
+For reviews of groups and Microsoft Entra roles, any duration is accepted.
 For reviews of applications, 30 days is the maximum duration.
 If not specified, the duration is 30 days.
 NOTE: If the stageSettings of the accessReviewScheduleDefinition object is defined, its recommendationLookBackDuration setting will be used instead of the value of this property.
@@ -930,51 +925,52 @@ Required.
 Default value is false.
       \[StageSettings \<IMicrosoftGraphAccessReviewStageSettings\[\]\>\]: Required only for a multi-stage access review to define the stages and their settings.
 You can break down each review instance into up to three sequential stages, where each stage can have a different set of reviewers, fallback reviewers, and settings.
-Stages will be created sequentially based on the dependsOn property.
+Stages are created sequentially based on the dependsOn property.
 Optional. 
 When this property is defined, its settings are used instead of the corresponding settings in the accessReviewScheduleDefinition object and its settings, reviewers, and fallbackReviewers properties.
         \[DecisionsThatWillMoveToNextStage \<String\[\]\>\]: Indicate which decisions will go to the next stage.
-Can be a sub-set of Approve, Deny, Recommendation, or NotReviewed.
+Can be a subset of Approve, Deny, Recommendation, or NotReviewed.
 If not provided, all decisions will go to the next stage.
 Optional.
         \[DependsOn \<String\[\]\>\]: Defines the sequential or parallel order of the stages and depends on the stageId.
 Only sequential stages are currently supported.
 For example, if stageId is 2, then dependsOn must be 1.
-If stageId is 1, do not specify dependsOn.
-Required if stageId is not 1.
+If stageId is 1, don't specify dependsOn.
+Required if stageId isn't 1.
         \[DurationInDays \<Int32?\>\]: The duration of the stage.
 Required. 
 NOTE: The cumulative value of this property across all stages  1.
 Will override the instanceDurationInDays setting on the accessReviewScheduleDefinition object.
 2.
-Cannot exceed the length of one recurrence.
-That is, if the review recurs weekly, the cumulative durationInDays cannot exceed 7.
-        \[FallbackReviewers \<IMicrosoftGraphAccessReviewReviewerScope\[\]\>\]: If provided, the fallback reviewers are asked to complete a review if the primary reviewers do not exist.
-For example, if managers are selected as reviewers and a principal under review does not have a manager in Azure AD, the fallback reviewers are asked to review that principal.
-NOTE: The value of this property will override the corresponding setting on the accessReviewScheduleDefinition object.
+Can't exceed the length of one recurrence.
+That is, if the review recurs weekly, the cumulative durationInDays can't exceed 7.
+        \[FallbackReviewers \<IMicrosoftGraphAccessReviewReviewerScope\[\]\>\]: If provided, the fallback reviewers are asked to complete a review if the primary reviewers don't exist.
+For example, if managers are selected as reviewers and a principal under review doesn't have a manager in Microsoft Entra ID, the fallback reviewers are asked to review that principal.
+NOTE: The value of this property overrides the corresponding setting on the accessReviewScheduleDefinition object.
         \[RecommendationInsightSettings \<IMicrosoftGraphAccessReviewRecommendationInsightSetting\[\]\>\]: 
         \[RecommendationLookBackDuration \<TimeSpan?\>\]: Optional field.
-Indicates the time period of inactivity (with respect to the start date of the review instance) that recommendations will be configured from.
-The recommendation will be to deny if the user is inactive during the look back duration.
-For reviews of groups and Azure AD roles, any duration is accepted.
+Indicates the time period of inactivity (with respect to the start date of the review instance) from which that recommendations will be configured.
+The recommendation is to deny if the user is inactive during the look back duration.
+For reviews of groups and Microsoft Entra roles, any duration is accepted.
 For reviews of applications, 30 days is the maximum duration.
 If not specified, the duration is 30 days.
-NOTE: The value of this property will override the corresponding setting on the accessReviewScheduleDefinition object.
+NOTE: The value of this property overrides the corresponding setting on the accessReviewScheduleDefinition object.
         \[RecommendationsEnabled \<Boolean?\>\]: Indicates whether showing recommendations to reviewers is enabled.
 Required.
-NOTE: The value of this property will override override the corresponding setting on the accessReviewScheduleDefinition object.
+NOTE: The value of this property overrides the corresponding setting on the accessReviewScheduleDefinition object.
         \[Reviewers \<IMicrosoftGraphAccessReviewReviewerScope\[\]\>\]: Defines who the reviewers are.
-If none are specified, the review is a self-review (users review their own access). 
+If none is specified, the review is a self-review (users review their own access). 
 For examples of options for assigning reviewers, see Assign reviewers to your access review definition using the Microsoft Graph API.
-NOTE: The value of this property will override the corresponding setting on the accessReviewScheduleDefinition.
+NOTE: The value of this property overrides the corresponding setting on the accessReviewScheduleDefinition.
         \[StageId \<String\>\]: Unique identifier of the accessReviewStageSettings.
-The stageId will be used in dependsOn property to indicate the stage relationship.
+The stageId is used in dependsOn property to indicate the stage relationship.
 Required.
       \[Status \<String\>\]: This read-only field specifies the status of an access review.
 The typical states include Initializing, NotStarted, Starting, InProgress, Completing, Completed, AutoReviewing, and AutoReviewed. 
 Supports $select, $orderby, and $filter (eq only).
 Read-only.
-    \[EndDateTime \<DateTime?\>\]: DateTime when review instance is scheduled to end.The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
+    \[EndDateTime \<DateTime?\>\]: DateTime when review instance is scheduled to end.
+The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Supports $select.
 Read-only.
@@ -983,8 +979,8 @@ Read-only.
       \[Code \<String\>\]: The error code.
       \[Message \<String\>\]: The error message.
     \[FallbackReviewers \<IMicrosoftGraphAccessReviewReviewerScope\[\]\>\]: This collection of reviewer scopes is used to define the list of fallback reviewers.
-These fallback reviewers will be notified to take action if no users are found from the list of reviewers specified.
-This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist.
+These fallback reviewers are notified to take action if no users are found from the list of reviewers specified.
+This could occur when either the group owner is specified as the reviewer but the group owner doesn't exist, or manager is specified as reviewer but a user's manager doesn't exist.
 Supports $select.
     \[Reviewers \<IMicrosoftGraphAccessReviewReviewerScope\[\]\>\]: This collection of access review scopes is used to define who the reviewers are.
 Supports $select.
@@ -1002,8 +998,8 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 This property is the cumulative total of the durationInDays for all stages.
 Read-only.
       \[FallbackReviewers \<IMicrosoftGraphAccessReviewReviewerScope\[\]\>\]: This collection of reviewer scopes is used to define the list of fallback reviewers.
-These fallback reviewers will be notified to take action if no users are found from the list of reviewers specified.
-This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist.
+These fallback reviewers are notified to take action if no users are found from the list of reviewers specified.
+This can occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist.
       \[Reviewers \<IMicrosoftGraphAccessReviewReviewerScope\[\]\>\]: This collection of access review scopes is used to define who the reviewers are.
 For examples of options for assigning reviewers, see Assign reviewers to your access review definition using the Microsoft Graph API.
       \[StartDateTime \<DateTime?\>\]: DateTime when review stage is scheduled to start.
@@ -1029,9 +1025,9 @@ Read-only.
   \[Principal \<IMicrosoftGraphIdentity\>\]: identity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-Note that this might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity.
+This property is read-only.
+    \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
   \[PrincipalLink \<String\>\]: Link to the principal object.
 For example: https://graph.microsoft.com/v1.0/users/a6c7aecb-cbfd-4763-87ef-e91b4bd509d9.
 Read-only.
@@ -1081,9 +1077,9 @@ Examples include MicrosoftGraph and ARM.
   \[CreatedBy \<IMicrosoftGraphUserIdentity\>\]: userIdentity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-Note that this might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity.
+This property is read-only.
+    \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
     \[IPAddress \<String\>\]: Indicates the client IP address used by user performing the activity (audit log only).
     \[UserPrincipalName \<String\>\]: The userPrincipalName attribute of the user.
   \[CreatedDateTime \<DateTime?\>\]: Timestamp when the access review series was created.
@@ -1092,7 +1088,7 @@ Read-only.
   \[DescriptionForAdmins \<String\>\]: Description provided by review creators to provide more context of the review to admins.
 Supports $select.
   \[DescriptionForReviewers \<String\>\]: Description provided  by review creators to provide more context of the review to reviewers.
-Reviewers will see this description in the email sent to them requesting their review.
+Reviewers see this description in the email sent to them requesting their review.
 Email notifications support up to 256 characters.
 Supports $select.
   \[DisplayName \<String\>\]: Name of the access review series.
@@ -1100,7 +1096,7 @@ Supports $select and $orderby.
 Required on create.
   \[FallbackReviewers \<IMicrosoftGraphAccessReviewReviewerScope\[\]\>\]: This collection of reviewer scopes is used to define the list of fallback reviewers.
 These fallback reviewers will be notified to take action if no users are found from the list of reviewers specified.
-This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist.
+This could occur when either the group owner is specified as the reviewer but the group owner doesn't exist, or manager is specified as reviewer but a user's manager doesn't exist.
 See accessReviewReviewerScope.
 Replaces backupReviewers.
 Supports $select.
@@ -1108,7 +1104,7 @@ NOTE: The value of this property will be ignored if fallback reviewers are assig
   \[InstanceEnumerationScope \<IMicrosoftGraphAccessReviewScope\>\]: accessReviewScope
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[Instances \<IMicrosoftGraphAccessReviewInstance\[\]\>\]: Set of access reviews instances for this access review series.
-Access reviews that do not recur will only have one instance; otherwise, there is an instance for each recurrence.
+Access reviews that don't recur will only have one instance; otherwise, there's an instance for each recurrence.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
     \[ContactedReviewers \<IMicrosoftGraphAccessReviewReviewer\[\]\>\]: Returns the collection of reviewers who were contacted to complete this review.
@@ -1149,9 +1145,9 @@ Read-only.
       \[Principal \<IMicrosoftGraphIdentity\>\]: identity
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[DisplayName \<String\>\]: The display name of the identity.
-Note that this might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        \[Id \<String\>\]: Unique identifier for the identity.
+This property is read-only.
+        \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
       \[PrincipalLink \<String\>\]: Link to the principal object.
 For example: https://graph.microsoft.com/v1.0/users/a6c7aecb-cbfd-4763-87ef-e91b4bd509d9.
 Read-only.
@@ -1182,7 +1178,8 @@ Read-only.
       \[Target \<IMicrosoftGraphAccessReviewInstanceDecisionItemTarget\>\]: accessReviewInstanceDecisionItemTarget
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[Definition \<IMicrosoftGraphAccessReviewScheduleDefinition\>\]: accessReviewScheduleDefinition
-    \[EndDateTime \<DateTime?\>\]: DateTime when review instance is scheduled to end.The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
+    \[EndDateTime \<DateTime?\>\]: DateTime when review instance is scheduled to end.
+The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Supports $select.
 Read-only.
@@ -1191,8 +1188,8 @@ Read-only.
       \[Code \<String\>\]: The error code.
       \[Message \<String\>\]: The error message.
     \[FallbackReviewers \<IMicrosoftGraphAccessReviewReviewerScope\[\]\>\]: This collection of reviewer scopes is used to define the list of fallback reviewers.
-These fallback reviewers will be notified to take action if no users are found from the list of reviewers specified.
-This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist.
+These fallback reviewers are notified to take action if no users are found from the list of reviewers specified.
+This could occur when either the group owner is specified as the reviewer but the group owner doesn't exist, or manager is specified as reviewer but a user's manager doesn't exist.
 Supports $select.
     \[Reviewers \<IMicrosoftGraphAccessReviewReviewerScope\[\]\>\]: This collection of access review scopes is used to define who the reviewers are.
 Supports $select.
@@ -1210,8 +1207,8 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 This property is the cumulative total of the durationInDays for all stages.
 Read-only.
       \[FallbackReviewers \<IMicrosoftGraphAccessReviewReviewerScope\[\]\>\]: This collection of reviewer scopes is used to define the list of fallback reviewers.
-These fallback reviewers will be notified to take action if no users are found from the list of reviewers specified.
-This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist.
+These fallback reviewers are notified to take action if no users are found from the list of reviewers specified.
+This can occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist.
       \[Reviewers \<IMicrosoftGraphAccessReviewReviewerScope\[\]\>\]: This collection of access review scopes is used to define who the reviewers are.
 For examples of options for assigning reviewers, see Assign reviewers to your access review definition using the Microsoft Graph API.
       \[StartDateTime \<DateTime?\>\]: DateTime when review stage is scheduled to start.
@@ -1273,7 +1270,7 @@ NOTE: If the stageSettings of the accessReviewScheduleDefinition object is defin
     \[RecommendationLookBackDuration \<TimeSpan?\>\]: Optional field.
 Indicates the period of inactivity (with respect to the start date of the review instance) that recommendations will be configured from.
 The recommendation will be to deny if the user is inactive during the look-back duration.
-For reviews of groups and Azure AD roles, any duration is accepted.
+For reviews of groups and Microsoft Entra roles, any duration is accepted.
 For reviews of applications, 30 days is the maximum duration.
 If not specified, the duration is 30 days.
 NOTE: If the stageSettings of the accessReviewScheduleDefinition object is defined, its recommendationLookBackDuration setting will be used instead of the value of this property.
@@ -1315,45 +1312,45 @@ Required.
 Default value is false.
   \[StageSettings \<IMicrosoftGraphAccessReviewStageSettings\[\]\>\]: Required only for a multi-stage access review to define the stages and their settings.
 You can break down each review instance into up to three sequential stages, where each stage can have a different set of reviewers, fallback reviewers, and settings.
-Stages will be created sequentially based on the dependsOn property.
+Stages are created sequentially based on the dependsOn property.
 Optional. 
 When this property is defined, its settings are used instead of the corresponding settings in the accessReviewScheduleDefinition object and its settings, reviewers, and fallbackReviewers properties.
     \[DecisionsThatWillMoveToNextStage \<String\[\]\>\]: Indicate which decisions will go to the next stage.
-Can be a sub-set of Approve, Deny, Recommendation, or NotReviewed.
+Can be a subset of Approve, Deny, Recommendation, or NotReviewed.
 If not provided, all decisions will go to the next stage.
 Optional.
     \[DependsOn \<String\[\]\>\]: Defines the sequential or parallel order of the stages and depends on the stageId.
 Only sequential stages are currently supported.
 For example, if stageId is 2, then dependsOn must be 1.
-If stageId is 1, do not specify dependsOn.
-Required if stageId is not 1.
+If stageId is 1, don't specify dependsOn.
+Required if stageId isn't 1.
     \[DurationInDays \<Int32?\>\]: The duration of the stage.
 Required. 
 NOTE: The cumulative value of this property across all stages  1.
 Will override the instanceDurationInDays setting on the accessReviewScheduleDefinition object.
 2.
-Cannot exceed the length of one recurrence.
-That is, if the review recurs weekly, the cumulative durationInDays cannot exceed 7.
-    \[FallbackReviewers \<IMicrosoftGraphAccessReviewReviewerScope\[\]\>\]: If provided, the fallback reviewers are asked to complete a review if the primary reviewers do not exist.
-For example, if managers are selected as reviewers and a principal under review does not have a manager in Azure AD, the fallback reviewers are asked to review that principal.
-NOTE: The value of this property will override the corresponding setting on the accessReviewScheduleDefinition object.
+Can't exceed the length of one recurrence.
+That is, if the review recurs weekly, the cumulative durationInDays can't exceed 7.
+    \[FallbackReviewers \<IMicrosoftGraphAccessReviewReviewerScope\[\]\>\]: If provided, the fallback reviewers are asked to complete a review if the primary reviewers don't exist.
+For example, if managers are selected as reviewers and a principal under review doesn't have a manager in Microsoft Entra ID, the fallback reviewers are asked to review that principal.
+NOTE: The value of this property overrides the corresponding setting on the accessReviewScheduleDefinition object.
     \[RecommendationInsightSettings \<IMicrosoftGraphAccessReviewRecommendationInsightSetting\[\]\>\]: 
     \[RecommendationLookBackDuration \<TimeSpan?\>\]: Optional field.
-Indicates the time period of inactivity (with respect to the start date of the review instance) that recommendations will be configured from.
-The recommendation will be to deny if the user is inactive during the look back duration.
-For reviews of groups and Azure AD roles, any duration is accepted.
+Indicates the time period of inactivity (with respect to the start date of the review instance) from which that recommendations will be configured.
+The recommendation is to deny if the user is inactive during the look back duration.
+For reviews of groups and Microsoft Entra roles, any duration is accepted.
 For reviews of applications, 30 days is the maximum duration.
 If not specified, the duration is 30 days.
-NOTE: The value of this property will override the corresponding setting on the accessReviewScheduleDefinition object.
+NOTE: The value of this property overrides the corresponding setting on the accessReviewScheduleDefinition object.
     \[RecommendationsEnabled \<Boolean?\>\]: Indicates whether showing recommendations to reviewers is enabled.
 Required.
-NOTE: The value of this property will override override the corresponding setting on the accessReviewScheduleDefinition object.
+NOTE: The value of this property overrides the corresponding setting on the accessReviewScheduleDefinition object.
     \[Reviewers \<IMicrosoftGraphAccessReviewReviewerScope\[\]\>\]: Defines who the reviewers are.
-If none are specified, the review is a self-review (users review their own access). 
+If none is specified, the review is a self-review (users review their own access). 
 For examples of options for assigning reviewers, see Assign reviewers to your access review definition using the Microsoft Graph API.
-NOTE: The value of this property will override the corresponding setting on the accessReviewScheduleDefinition.
+NOTE: The value of this property overrides the corresponding setting on the accessReviewScheduleDefinition.
     \[StageId \<String\>\]: Unique identifier of the accessReviewStageSettings.
-The stageId will be used in dependsOn property to indicate the stage relationship.
+The stageId is used in dependsOn property to indicate the stage relationship.
 Required.
   \[Status \<String\>\]: This read-only field specifies the status of an access review.
 The typical states include Initializing, NotStarted, Starting, InProgress, Completing, Completed, AutoReviewing, and AutoReviewed. 
@@ -1366,8 +1363,8 @@ Read-only.
   \[Message \<String\>\]: The error message.
 
 FALLBACKREVIEWERS \<IMicrosoftGraphAccessReviewReviewerScope\[\]\>: This collection of reviewer scopes is used to define the list of fallback reviewers.
-These fallback reviewers will be notified to take action if no users are found from the list of reviewers specified.
-This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist.
+These fallback reviewers are notified to take action if no users are found from the list of reviewers specified.
+This could occur when either the group owner is specified as the reviewer but the group owner doesn't exist, or manager is specified as reviewer but a user's manager doesn't exist.
 Supports $select.
   \[Query \<String\>\]: The query specifying who will be the reviewer.
   \[QueryRoot \<String\>\]: In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query.
@@ -1418,6 +1415,7 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[CustomTaskExtensionId \<String\>\]: The unique identifier of customTaskExtension
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[EndDateTime \<DateTime?\>\]: Usage: endDateTime={endDateTime}
+  \[FindingId \<String\>\]: The unique identifier of finding
   \[GovernanceInsightId \<String\>\]: The unique identifier of governanceInsight
   \[GovernanceResourceId \<String\>\]: The unique identifier of governanceResource
   \[GovernanceRoleAssignmentId \<String\>\]: The unique identifier of governanceRoleAssignment
@@ -1428,6 +1426,8 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[IncompatibleAccessPackageId \<String\>\]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   \[LongRunningOperationId \<String\>\]: The unique identifier of longRunningOperation
   \[On \<String\>\]: Usage: on='{on}'
+  \[PermissionsCreepIndexDistributionId \<String\>\]: The unique identifier of permissionsCreepIndexDistribution
+  \[PermissionsRequestChangeId \<String\>\]: The unique identifier of permissionsRequestChange
   \[PrivilegedAccessGroupAssignmentScheduleId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentSchedule
   \[PrivilegedAccessGroupAssignmentScheduleInstanceId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentScheduleInstance
   \[PrivilegedAccessGroupAssignmentScheduleRequestId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentScheduleRequest
@@ -1498,9 +1498,9 @@ Read-only.
     \[AppliedBy \<IMicrosoftGraphUserIdentity\>\]: userIdentity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-Note that this might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      \[Id \<String\>\]: Unique identifier for the identity.
+This property is read-only.
+      \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
       \[IPAddress \<String\>\]: Indicates the client IP address used by user performing the activity (audit log only).
       \[UserPrincipalName \<String\>\]: The userPrincipalName attribute of the user.
     \[AppliedDateTime \<DateTime?\>\]: The timestamp when the approval decision was applied.
@@ -1557,7 +1557,7 @@ Read-only.
         \[DescriptionForAdmins \<String\>\]: Description provided by review creators to provide more context of the review to admins.
 Supports $select.
         \[DescriptionForReviewers \<String\>\]: Description provided  by review creators to provide more context of the review to reviewers.
-Reviewers will see this description in the email sent to them requesting their review.
+Reviewers see this description in the email sent to them requesting their review.
 Email notifications support up to 256 characters.
 Supports $select.
         \[DisplayName \<String\>\]: Name of the access review series.
@@ -1565,7 +1565,7 @@ Supports $select and $orderby.
 Required on create.
         \[FallbackReviewers \<IMicrosoftGraphAccessReviewReviewerScope\[\]\>\]: This collection of reviewer scopes is used to define the list of fallback reviewers.
 These fallback reviewers will be notified to take action if no users are found from the list of reviewers specified.
-This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist.
+This could occur when either the group owner is specified as the reviewer but the group owner doesn't exist, or manager is specified as reviewer but a user's manager doesn't exist.
 See accessReviewReviewerScope.
 Replaces backupReviewers.
 Supports $select.
@@ -1573,7 +1573,7 @@ NOTE: The value of this property will be ignored if fallback reviewers are assig
         \[InstanceEnumerationScope \<IMicrosoftGraphAccessReviewScope\>\]: accessReviewScope
           \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[Instances \<IMicrosoftGraphAccessReviewInstance\[\]\>\]: Set of access reviews instances for this access review series.
-Access reviews that do not recur will only have one instance; otherwise, there is an instance for each recurrence.
+Access reviews that don't recur will only have one instance; otherwise, there's an instance for each recurrence.
         \[LastModifiedDateTime \<DateTime?\>\]: Timestamp when the access review series was last modified.
 Supports $select.
 Read-only.
@@ -1614,7 +1614,7 @@ NOTE: If the stageSettings of the accessReviewScheduleDefinition object is defin
           \[RecommendationLookBackDuration \<TimeSpan?\>\]: Optional field.
 Indicates the period of inactivity (with respect to the start date of the review instance) that recommendations will be configured from.
 The recommendation will be to deny if the user is inactive during the look-back duration.
-For reviews of groups and Azure AD roles, any duration is accepted.
+For reviews of groups and Microsoft Entra roles, any duration is accepted.
 For reviews of applications, 30 days is the maximum duration.
 If not specified, the duration is 30 days.
 NOTE: If the stageSettings of the accessReviewScheduleDefinition object is defined, its recommendationLookBackDuration setting will be used instead of the value of this property.
@@ -1656,51 +1656,52 @@ Required.
 Default value is false.
         \[StageSettings \<IMicrosoftGraphAccessReviewStageSettings\[\]\>\]: Required only for a multi-stage access review to define the stages and their settings.
 You can break down each review instance into up to three sequential stages, where each stage can have a different set of reviewers, fallback reviewers, and settings.
-Stages will be created sequentially based on the dependsOn property.
+Stages are created sequentially based on the dependsOn property.
 Optional. 
 When this property is defined, its settings are used instead of the corresponding settings in the accessReviewScheduleDefinition object and its settings, reviewers, and fallbackReviewers properties.
           \[DecisionsThatWillMoveToNextStage \<String\[\]\>\]: Indicate which decisions will go to the next stage.
-Can be a sub-set of Approve, Deny, Recommendation, or NotReviewed.
+Can be a subset of Approve, Deny, Recommendation, or NotReviewed.
 If not provided, all decisions will go to the next stage.
 Optional.
           \[DependsOn \<String\[\]\>\]: Defines the sequential or parallel order of the stages and depends on the stageId.
 Only sequential stages are currently supported.
 For example, if stageId is 2, then dependsOn must be 1.
-If stageId is 1, do not specify dependsOn.
-Required if stageId is not 1.
+If stageId is 1, don't specify dependsOn.
+Required if stageId isn't 1.
           \[DurationInDays \<Int32?\>\]: The duration of the stage.
 Required. 
 NOTE: The cumulative value of this property across all stages  1.
 Will override the instanceDurationInDays setting on the accessReviewScheduleDefinition object.
 2.
-Cannot exceed the length of one recurrence.
-That is, if the review recurs weekly, the cumulative durationInDays cannot exceed 7.
-          \[FallbackReviewers \<IMicrosoftGraphAccessReviewReviewerScope\[\]\>\]: If provided, the fallback reviewers are asked to complete a review if the primary reviewers do not exist.
-For example, if managers are selected as reviewers and a principal under review does not have a manager in Azure AD, the fallback reviewers are asked to review that principal.
-NOTE: The value of this property will override the corresponding setting on the accessReviewScheduleDefinition object.
+Can't exceed the length of one recurrence.
+That is, if the review recurs weekly, the cumulative durationInDays can't exceed 7.
+          \[FallbackReviewers \<IMicrosoftGraphAccessReviewReviewerScope\[\]\>\]: If provided, the fallback reviewers are asked to complete a review if the primary reviewers don't exist.
+For example, if managers are selected as reviewers and a principal under review doesn't have a manager in Microsoft Entra ID, the fallback reviewers are asked to review that principal.
+NOTE: The value of this property overrides the corresponding setting on the accessReviewScheduleDefinition object.
           \[RecommendationInsightSettings \<IMicrosoftGraphAccessReviewRecommendationInsightSetting\[\]\>\]: 
           \[RecommendationLookBackDuration \<TimeSpan?\>\]: Optional field.
-Indicates the time period of inactivity (with respect to the start date of the review instance) that recommendations will be configured from.
-The recommendation will be to deny if the user is inactive during the look back duration.
-For reviews of groups and Azure AD roles, any duration is accepted.
+Indicates the time period of inactivity (with respect to the start date of the review instance) from which that recommendations will be configured.
+The recommendation is to deny if the user is inactive during the look back duration.
+For reviews of groups and Microsoft Entra roles, any duration is accepted.
 For reviews of applications, 30 days is the maximum duration.
 If not specified, the duration is 30 days.
-NOTE: The value of this property will override the corresponding setting on the accessReviewScheduleDefinition object.
+NOTE: The value of this property overrides the corresponding setting on the accessReviewScheduleDefinition object.
           \[RecommendationsEnabled \<Boolean?\>\]: Indicates whether showing recommendations to reviewers is enabled.
 Required.
-NOTE: The value of this property will override override the corresponding setting on the accessReviewScheduleDefinition object.
+NOTE: The value of this property overrides the corresponding setting on the accessReviewScheduleDefinition object.
           \[Reviewers \<IMicrosoftGraphAccessReviewReviewerScope\[\]\>\]: Defines who the reviewers are.
-If none are specified, the review is a self-review (users review their own access). 
+If none is specified, the review is a self-review (users review their own access). 
 For examples of options for assigning reviewers, see Assign reviewers to your access review definition using the Microsoft Graph API.
-NOTE: The value of this property will override the corresponding setting on the accessReviewScheduleDefinition.
+NOTE: The value of this property overrides the corresponding setting on the accessReviewScheduleDefinition.
           \[StageId \<String\>\]: Unique identifier of the accessReviewStageSettings.
-The stageId will be used in dependsOn property to indicate the stage relationship.
+The stageId is used in dependsOn property to indicate the stage relationship.
 Required.
         \[Status \<String\>\]: This read-only field specifies the status of an access review.
 The typical states include Initializing, NotStarted, Starting, InProgress, Completing, Completed, AutoReviewing, and AutoReviewed. 
 Supports $select, $orderby, and $filter (eq only).
 Read-only.
-      \[EndDateTime \<DateTime?\>\]: DateTime when review instance is scheduled to end.The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
+      \[EndDateTime \<DateTime?\>\]: DateTime when review instance is scheduled to end.
+The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Supports $select.
 Read-only.
@@ -1709,8 +1710,8 @@ Read-only.
         \[Code \<String\>\]: The error code.
         \[Message \<String\>\]: The error message.
       \[FallbackReviewers \<IMicrosoftGraphAccessReviewReviewerScope\[\]\>\]: This collection of reviewer scopes is used to define the list of fallback reviewers.
-These fallback reviewers will be notified to take action if no users are found from the list of reviewers specified.
-This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist.
+These fallback reviewers are notified to take action if no users are found from the list of reviewers specified.
+This could occur when either the group owner is specified as the reviewer but the group owner doesn't exist, or manager is specified as reviewer but a user's manager doesn't exist.
 Supports $select.
       \[Reviewers \<IMicrosoftGraphAccessReviewReviewerScope\[\]\>\]: This collection of access review scopes is used to define who the reviewers are.
 Supports $select.
@@ -1733,9 +1734,9 @@ Read-only.
     \[Principal \<IMicrosoftGraphIdentity\>\]: identity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-Note that this might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      \[Id \<String\>\]: Unique identifier for the identity.
+This property is read-only.
+      \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
     \[PrincipalLink \<String\>\]: Link to the principal object.
 For example: https://graph.microsoft.com/v1.0/users/a6c7aecb-cbfd-4763-87ef-e91b4bd509d9.
 Read-only.
@@ -1771,8 +1772,8 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 This property is the cumulative total of the durationInDays for all stages.
 Read-only.
   \[FallbackReviewers \<IMicrosoftGraphAccessReviewReviewerScope\[\]\>\]: This collection of reviewer scopes is used to define the list of fallback reviewers.
-These fallback reviewers will be notified to take action if no users are found from the list of reviewers specified.
-This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist.
+These fallback reviewers are notified to take action if no users are found from the list of reviewers specified.
+This can occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist.
   \[Reviewers \<IMicrosoftGraphAccessReviewReviewerScope\[\]\>\]: This collection of access review scopes is used to define who the reviewers are.
 For examples of options for assigning reviewers, see Assign reviewers to your access review definition using the Microsoft Graph API.
   \[StartDateTime \<DateTime?\>\]: DateTime when review stage is scheduled to start.
@@ -1786,7 +1787,6 @@ Supports $orderby, and $filter (eq only).
 Read-only.
 
 ## RELATED LINKS
-[Update-MgIdentityGovernanceAccessReviewDefinitionInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceAccessReviewDefinitionInstance?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewdefinitioninstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewdefinitioninstance)
 

@@ -1,42 +1,28 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.ChangeNotifications
-Module Guid: 72b4deb3-1735-4a3f-8047-98ed1de5d2b0
-Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications
-Help Version: 1.0.0.0
+Module Guid: 1265385f-29cb-43a3-849c-cd49dcc7f783
+Download Help Link: {{ Update Download Link }}
+Help Version: {{ Please enter version of help manually (X.X.X.X) format }}
 Locale: en-US
 ---
 
 # Microsoft.Graph.Beta.ChangeNotifications Module
 ## Description
-Microsoft Graph PowerShell Cmdlets
+{{ Fill in the Description }}
 
 ## Microsoft.Graph.Beta.ChangeNotifications Cmdlets
 ### [Get-MgBetaSubscription](Get-MgBetaSubscription.md)
-Retrieve the properties and relationships of a subscription.
-See the table in the Permissions section for the list of resources that support subscribing to change notifications.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaReauthorizeSubscription](Invoke-MgBetaReauthorizeSubscription.md)
-Reauthorize a subscription when you receive a reauthorizationRequired challenge.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaSubscription](New-MgBetaSubscription.md)
-Subscribes a listener application to receive change notifications when the requested type of changes occur to the specified resource in Microsoft Graph.
-To identify the resources for which you can create subscriptions and the limitations on subscriptions, see Set up notifications for changes in resource data: Supported resources.
-Some resources support rich notifications, that is, notifications that include resource data.
-For more information about these resources, see Set up change notifications that include resource data: Supported resources.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaSubscription](Remove-MgBetaSubscription.md)
-Delete a subscription.
-For the list of resources that support subscribing to change notifications, see the table in the Permissions section.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaSubscription](Update-MgBetaSubscription.md)
-Renew a subscription by extending its expiry time.
-The table in the Permissions section lists the resources that support subscribing to change notifications.
-Subscriptions expire after a length of time that varies by resource type.
-In order to avoid missing change notifications, an app should renew its subscriptions well in advance of their expiry date.
-See subscription for maximum length of a subscription for each resource type.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 

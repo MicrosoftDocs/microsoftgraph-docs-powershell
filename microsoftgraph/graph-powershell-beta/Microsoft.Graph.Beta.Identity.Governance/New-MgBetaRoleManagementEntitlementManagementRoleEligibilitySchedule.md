@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententitlementmanagementroleeligibilityschedule
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to roleEligibilitySchedules for roleManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgRoleManagementEntitlementManagementRoleEligibilitySchedule](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEntitlementManagementRoleEligibilitySchedule?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34,6 +31,18 @@ New-MgBetaRoleManagementEntitlementManagementRoleEligibilitySchedule
 
 ## DESCRIPTION
 Create new navigation property to roleEligibilitySchedules for roleManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -362,8 +371,7 @@ Read-only.
   \[DisplayName \<String\>\]: Provides the display name of the app-specific resource represented by the app scope.
 Provided for display purposes since appScopeId is often an immutable, non-human-readable id.
 This property is read only.
-  \[Type \<String\>\]: Describes the type of app-specific resource represented by the app scope.
-Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
+  \[Type \<String\>\]: Describes the type of app-specific resource represented by the app scope and is provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
 This property is read only.
 
 BODYPARAMETER \<IMicrosoftGraphUnifiedRoleEligibilitySchedule\>: unifiedRoleEligibilitySchedule
@@ -375,8 +383,7 @@ Read-only.
     \[DisplayName \<String\>\]: Provides the display name of the app-specific resource represented by the app scope.
 Provided for display purposes since appScopeId is often an immutable, non-human-readable id.
 This property is read only.
-    \[Type \<String\>\]: Describes the type of app-specific resource represented by the app scope.
-Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
+    \[Type \<String\>\]: Describes the type of app-specific resource represented by the app scope and is provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
 This property is read only.
   \[AppScopeId \<String\>\]: Identifier of the app-specific scope when the assignment or eligibility is scoped to an app.
 The scope of an assignment or eligibility determines the set of resources for which the principal has been granted access.
@@ -411,7 +418,7 @@ Read-only when isBuiltIn is true.
 Required. 
 Supports $filter (eq and startsWith).
     \[InheritsPermissionsFrom \<IMicrosoftGraphUnifiedRoleDefinition\[\]\>\]: Read-only collection of role definitions that the given role definition inherits from.
-Only Azure AD built-in roles support this attribute.
+Only Microsoft Entra built-in roles support this attribute.
     \[IsBuiltIn \<Boolean?\>\]: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom.
 Read-only. 
 Supports $filter (eq).
@@ -419,7 +426,7 @@ Supports $filter (eq).
 If false the role is not available for assignment.
 Read-only when isBuiltIn is true.
     \[IsPrivileged \<Boolean?\>\]: Flag indicating if the role is privileged.
-Azure AD defines a role as privileged if it contains at least one sensitive resource action in the rolePermissions and allowedResourceActions objects.
+Microsoft Entra ID defines a role as privileged if it contains at least one sensitive resource action in the rolePermissions and allowedResourceActions objects.
 Applies only for actions in the microsoft.directory resource namespace.
 Read-only.
 Supports $filter (eq).
@@ -520,7 +527,7 @@ Read-only when isBuiltIn is true.
 Required. 
 Supports $filter (eq and startsWith).
   \[InheritsPermissionsFrom \<IMicrosoftGraphUnifiedRoleDefinition\[\]\>\]: Read-only collection of role definitions that the given role definition inherits from.
-Only Azure AD built-in roles support this attribute.
+Only Microsoft Entra built-in roles support this attribute.
   \[IsBuiltIn \<Boolean?\>\]: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom.
 Read-only. 
 Supports $filter (eq).
@@ -528,7 +535,7 @@ Supports $filter (eq).
 If false the role is not available for assignment.
 Read-only when isBuiltIn is true.
   \[IsPrivileged \<Boolean?\>\]: Flag indicating if the role is privileged.
-Azure AD defines a role as privileged if it contains at least one sensitive resource action in the rolePermissions and allowedResourceActions objects.
+Microsoft Entra ID defines a role as privileged if it contains at least one sensitive resource action in the rolePermissions and allowedResourceActions objects.
 Applies only for actions in the microsoft.directory resource namespace.
 Read-only.
 Supports $filter (eq).
@@ -598,8 +605,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 In PIM, when the  eligible or active assignment becomes active.
 
 ## RELATED LINKS
-[New-MgRoleManagementEntitlementManagementRoleEligibilitySchedule](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEntitlementManagementRoleEligibilitySchedule?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententitlementmanagementroleeligibilityschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententitlementmanagementroleeligibilityschedule)
-
 

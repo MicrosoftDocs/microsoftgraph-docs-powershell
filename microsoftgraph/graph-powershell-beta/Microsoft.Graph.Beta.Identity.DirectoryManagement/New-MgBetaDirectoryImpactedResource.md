@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryimpactedresource
@@ -30,6 +30,22 @@ New-MgBetaDirectoryImpactedResource -BodyParameter <IMicrosoftGraphImpactedResou
 
 ## DESCRIPTION
 Create new navigation property to impactedResources for directory
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -80,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApiUrl
-The URL link to the corresponding Azure AD resource.
+The URL link to the corresponding Microsoft Entra resource.
 
 ```yaml
 Type: String
@@ -111,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Friendly name of the Azure AD resource.
+Friendly name of the Microsoft Entra resource.
 
 ```yaml
 Type: String
@@ -187,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -PortalUrl
-The URL link to the corresponding Azure AD portal page of the resource.
+The URL link to the corresponding Microsoft Entra admin center page of the resource.
 
 ```yaml
 Type: String
@@ -248,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceType
-Indicates the type of Azure AD resource.
+Indicates the type of Microsoft Entra resource.
 Examples include user, application.
 
 ```yaml
@@ -341,8 +357,8 @@ To create the parameters described below, construct a hash table containing the 
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 ADDITIONALDETAILS \<IMicrosoftGraphKeyValue\[\]\>: Additional information unique to the impactedResource to help contextualize the recommendation.
-  \[Key \<String\>\]: Contains the name of the field that a value is associated with.
-  \[Value \<String\>\]: Contains the corresponding value for the specified key.
+  \[Key \<String\>\]: Key.
+  \[Value \<String\>\]: Value.
 
 BODYPARAMETER \<IMicrosoftGraphImpactedResource\>: impactedResource
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -350,19 +366,19 @@ BODYPARAMETER \<IMicrosoftGraphImpactedResource\>: impactedResource
 Read-only.
   \[AddedDateTime \<DateTime?\>\]: The date and time when the impactedResource object was initially associated with the recommendation.
   \[AdditionalDetails \<IMicrosoftGraphKeyValue\[\]\>\]: Additional information unique to the impactedResource to help contextualize the recommendation.
-    \[Key \<String\>\]: Contains the name of the field that a value is associated with.
-    \[Value \<String\>\]: Contains the corresponding value for the specified key.
-  \[ApiUrl \<String\>\]: The URL link to the corresponding Azure AD resource.
-  \[DisplayName \<String\>\]: Friendly name of the Azure AD resource.
+    \[Key \<String\>\]: Key.
+    \[Value \<String\>\]: Value.
+  \[ApiUrl \<String\>\]: The URL link to the corresponding Microsoft Entra resource.
+  \[DisplayName \<String\>\]: Friendly name of the Microsoft Entra resource.
   \[LastModifiedBy \<String\>\]: Name of the user or service that last updated the status.
   \[LastModifiedDateTime \<String\>\]: The date and time when the status was last updated.
   \[Owner \<String\>\]: The user responsible for maintaining the resource.
-  \[PortalUrl \<String\>\]: The URL link to the corresponding Azure AD portal page of the resource.
+  \[PortalUrl \<String\>\]: The URL link to the corresponding Microsoft Entra admin center page of the resource.
   \[PostponeUntilDateTime \<DateTime?\>\]: The future date and time when the status of a postponed impactedResource will be active again.
   \[Rank \<Int32?\>\]: Indicates the importance of the resource.
 A resource with a rank equal to 1 is of the highest importance.
   \[RecommendationId \<String\>\]: The unique identifier of the recommendation that the resource is associated with.
-  \[ResourceType \<String\>\]: Indicates the type of Azure AD resource.
+  \[ResourceType \<String\>\]: Indicates the type of Microsoft Entra resource.
 Examples include user, application.
   \[Status \<String\>\]: recommendationStatus
   \[SubjectId \<String\>\]: The related unique identifier, depending on the resourceType.
@@ -371,5 +387,4 @@ For example, this property is set to the applicationId if the resourceType is an
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryimpactedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryimpactedresource)
-
 

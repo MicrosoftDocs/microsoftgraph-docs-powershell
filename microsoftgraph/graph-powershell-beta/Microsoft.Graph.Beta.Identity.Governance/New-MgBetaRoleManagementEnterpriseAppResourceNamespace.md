@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententerpriseappresourcenamespace
@@ -40,6 +40,18 @@ New-MgBetaRoleManagementEnterpriseAppResourceNamespace -InputObject <IIdentityGo
 
 ## DESCRIPTION
 Create new navigation property to resourceNamespaces for roleManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -140,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceActions
-Operations that an authorized principal are allowed to perform.
+Operations that an authorized principal is allowed to perform.
 To construct, see NOTES section for RESOURCEACTIONS properties and create a hash table.
 
 ```yaml
@@ -210,7 +222,7 @@ Read-only.
 Typically, the same name as the id property, such as microsoft.aad.b2c.
 Required.
 Supports $filter (eq, startsWith).
-  \[ResourceActions \<IMicrosoftGraphUnifiedRbacResourceAction\[\]\>\]: Operations that an authorized principal are allowed to perform.
+  \[ResourceActions \<IMicrosoftGraphUnifiedRbacResourceAction\[\]\>\]: Operations that an authorized principal is allowed to perform.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
     \[ActionVerb \<String\>\]: HTTP method for the action, such as DELETE, GET, PATCH, POST, PUT, or null.
@@ -225,8 +237,8 @@ For example, selection UX.
       \[DisplayName \<String\>\]: A friendly name that identifies the authenticationContextClassReference object when building user-facing admin experiences.
 For example, a selection UX.
       \[IsAvailable \<Boolean?\>\]: Indicates whether the authenticationContextClassReference has been published by the security admin and is ready for use by apps.
-When it is set to false, it should not be shown in selection UX used to tag resources with authentication context class values.
-It will still be shown in the Conditionall Access policy authoring experience. 
+When it's set to false, it shouldn't be shown in selection UX used to tag resources with authentication context class values.
+It will still be shown in the Conditional Access policy authoring experience. 
 Supports $filter (eq).
     \[AuthenticationContextId \<String\>\]: 
     \[Description \<String\>\]: Description for the action.
@@ -292,6 +304,7 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[CustomTaskExtensionId \<String\>\]: The unique identifier of customTaskExtension
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[EndDateTime \<DateTime?\>\]: Usage: endDateTime={endDateTime}
+  \[FindingId \<String\>\]: The unique identifier of finding
   \[GovernanceInsightId \<String\>\]: The unique identifier of governanceInsight
   \[GovernanceResourceId \<String\>\]: The unique identifier of governanceResource
   \[GovernanceRoleAssignmentId \<String\>\]: The unique identifier of governanceRoleAssignment
@@ -302,6 +315,8 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[IncompatibleAccessPackageId \<String\>\]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   \[LongRunningOperationId \<String\>\]: The unique identifier of longRunningOperation
   \[On \<String\>\]: Usage: on='{on}'
+  \[PermissionsCreepIndexDistributionId \<String\>\]: The unique identifier of permissionsCreepIndexDistribution
+  \[PermissionsRequestChangeId \<String\>\]: The unique identifier of permissionsRequestChange
   \[PrivilegedAccessGroupAssignmentScheduleId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentSchedule
   \[PrivilegedAccessGroupAssignmentScheduleInstanceId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentScheduleInstance
   \[PrivilegedAccessGroupAssignmentScheduleRequestId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentScheduleRequest
@@ -348,7 +363,7 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[WorkflowTemplateId \<String\>\]: The unique identifier of workflowTemplate
   \[WorkflowVersionNumber \<Int32?\>\]: The unique identifier of workflowVersion
 
-RESOURCEACTIONS \<IMicrosoftGraphUnifiedRbacResourceAction\[\]\>: Operations that an authorized principal are allowed to perform.
+RESOURCEACTIONS \<IMicrosoftGraphUnifiedRbacResourceAction\[\]\>: Operations that an authorized principal is allowed to perform.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
   \[ActionVerb \<String\>\]: HTTP method for the action, such as DELETE, GET, PATCH, POST, PUT, or null.
@@ -363,8 +378,8 @@ For example, selection UX.
     \[DisplayName \<String\>\]: A friendly name that identifies the authenticationContextClassReference object when building user-facing admin experiences.
 For example, a selection UX.
     \[IsAvailable \<Boolean?\>\]: Indicates whether the authenticationContextClassReference has been published by the security admin and is ready for use by apps.
-When it is set to false, it should not be shown in selection UX used to tag resources with authentication context class values.
-It will still be shown in the Conditionall Access policy authoring experience. 
+When it's set to false, it shouldn't be shown in selection UX used to tag resources with authentication context class values.
+It will still be shown in the Conditional Access policy authoring experience. 
 Supports $filter (eq).
   \[AuthenticationContextId \<String\>\]: 
   \[Description \<String\>\]: Description for the action.
@@ -391,5 +406,4 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententerpriseappresourcenamespace](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententerpriseappresourcenamespace)
-
 

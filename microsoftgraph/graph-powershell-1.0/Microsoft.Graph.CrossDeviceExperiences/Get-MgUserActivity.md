@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.CrossDeviceExperiences
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/get-mguseractivity
 schema: 2.0.0
-ms.prod: project-rome
 ---
 
 # Get-MgUserActivity
@@ -12,9 +11,6 @@ ms.prod: project-rome
 The user's activities across devices.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserActivity](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/Get-MgBetaUserActivity?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -41,6 +37,16 @@ Get-MgUserActivity -InputObject <ICrossDeviceExperiencesIdentity> [-ExpandProper
 The user's activities across devices.
 Read-only.
 Nullable.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+Import-Module Microsoft.Graph.CrossDeviceExperiences
+```
+
+# A UPN can also be used as -UserId.
+Get-MgUserActivity -UserId $userId
 
 ## PARAMETERS
 
@@ -262,7 +268,6 @@ INPUTOBJECT \<ICrossDeviceExperiencesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserActivity](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/Get-MgBetaUserActivity?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/get-mguseractivity](https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/get-mguseractivity)
 

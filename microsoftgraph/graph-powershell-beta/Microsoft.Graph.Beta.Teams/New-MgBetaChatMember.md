@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachatmember
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Add a conversationMember to a chat.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgChatMember](/powershell/module/Microsoft.Graph.Teams/New-MgChatMember?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,16 +44,16 @@ Add a conversationMember to a chat.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Add a single member to a chat and specify the timespan for the conversation history
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
 	"user@odata.bind" = "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"
-	visibleHistoryStartDateTime = [System.DateTime]::Parse("2019-04-18T23:51:43.255Z")
+	visibleHistoryStartDateTime = \[System.DateTime\]::Parse("2019-04-18T23:51:43.255Z")
 	roles = @(
 		"owner"
 	)
@@ -64,14 +61,10 @@ $params = @{
 
 New-MgBetaChatMember -ChatId $chatId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will add a single member to a chat and specify the timespan for the conversation history
-
-### Example 2: Add a single member to a Microsoft Teams chat, sharing no chat history
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -83,19 +76,15 @@ $params = @{
 
 New-MgBetaChatMember -ChatId $chatId -BodyParameter $params
 
+### EXAMPLE 3
 ```
-This example will add a single member to a microsoft teams chat, sharing no chat history
-
-### Example 3: Add a single member to a Microsoft Teams chat, sharing the whole history of the chat
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
 	"user@odata.bind" = "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"
-	visibleHistoryStartDateTime = [System.DateTime]::Parse("0001-01-01T00:00:00Z")
+	visibleHistoryStartDateTime = \[System.DateTime\]::Parse("0001-01-01T00:00:00Z")
 	roles = @(
 		"owner"
 	)
@@ -103,19 +92,15 @@ $params = @{
 
 New-MgBetaChatMember -ChatId $chatId -BodyParameter $params
 
+### EXAMPLE 4
 ```
-This example will add a single member to a microsoft teams chat, sharing the whole history of the chat
-
-### Example 4: Add a single member to a chat using user principal name
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
 	"user@odata.bind" = "https://graph.microsoft.com/beta/users/jacob@contoso.com"
-	visibleHistoryStartDateTime = [System.DateTime]::Parse("2019-04-18T23:51:43.255Z")
+	visibleHistoryStartDateTime = \[System.DateTime\]::Parse("2019-04-18T23:51:43.255Z")
 	roles = @(
 		"owner"
 	)
@@ -123,14 +108,10 @@ $params = @{
 
 New-MgBetaChatMember -ChatId $chatId -BodyParameter $params
 
+### EXAMPLE 5
 ```
-This example will add a single member to a chat using user principal name
-
-### Example 5: Add an in-tenant guest user to a chat, sharing no chat history
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -142,14 +123,10 @@ $params = @{
 
 New-MgBetaChatMember -ChatId $chatId -BodyParameter $params
 
+### EXAMPLE 6
 ```
-This example will add an in-tenant guest user to a chat, sharing no chat history
-
-### Example 6: Add a out-of-tenant external user to a chat, sharing no chat history
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -161,10 +138,6 @@ $params = @{
 }
 
 New-MgBetaChatMember -ChatId $chatId -BodyParameter $params
-
-```
-This example will add a out-of-tenant external user to a chat, sharing no chat history
-
 
 ## PARAMETERS
 
@@ -397,7 +370,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[New-MgChatMember](/powershell/module/Microsoft.Graph.Teams/New-MgChatMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachatmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachatmember)
 

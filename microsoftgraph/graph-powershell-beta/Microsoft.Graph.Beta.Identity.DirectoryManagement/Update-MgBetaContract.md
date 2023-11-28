@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetacontract
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update entity in contracts
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgContract](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgContract?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45,17 +42,13 @@ Update-MgBetaContract -InputObject <IIdentityDirectoryManagementIdentity>
 Update entity in contracts
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+```
 
 Get-MgBetaContract -ContractId $contractId
-```
-This example shows how to use the Update-MgBetaBetaContract Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -141,7 +134,7 @@ Accept wildcard characters: False
 ### -DefaultDomainName
 A copy of the customer tenant's default domain name.
 The copy is made when the partnership with the customer is established.
-It is not automatically updated if the customer tenant's default domain name changes.
+It isn't automatically updated if the customer tenant's default domain name changes.
 
 ```yaml
 Type: String
@@ -174,7 +167,7 @@ Accept wildcard characters: False
 ### -DisplayName
 A copy of the customer tenant's display name.
 The copy is made when the partnership with the customer is established.
-It is not automatically updated if the customer tenant's display name changes.
+It isn't automatically updated if the customer tenant's display name changes.
 
 ```yaml
 Type: String
@@ -280,10 +273,10 @@ See more in the table below.
 Corresponds to the id property of the customer tenant's organization resource.
   \[DefaultDomainName \<String\>\]: A copy of the customer tenant's default domain name.
 The copy is made when the partnership with the customer is established.
-It is not automatically updated if the customer tenant's default domain name changes.
+It isn't automatically updated if the customer tenant's default domain name changes.
   \[DisplayName \<String\>\]: A copy of the customer tenant's display name.
 The copy is made when the partnership with the customer is established.
-It is not automatically updated if the customer tenant's display name changes.
+It isn't automatically updated if the customer tenant's display name changes.
 
 INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[AdministrativeUnitId \<String\>\]: The unique identifier of administrativeUnit
@@ -296,6 +289,7 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[ContractId \<String\>\]: The unique identifier of contract
   \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
   \[DeviceId \<String\>\]: The unique identifier of device
+  \[DeviceLocalCredentialInfoId \<String\>\]: The unique identifier of deviceLocalCredentialInfo
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[DirectoryRoleId \<String\>\]: The unique identifier of directoryRole
   \[DirectoryRoleTemplateId \<String\>\]: The unique identifier of directoryRoleTemplate
@@ -330,7 +324,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgContract](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgContract?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetacontract](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetacontract)
 

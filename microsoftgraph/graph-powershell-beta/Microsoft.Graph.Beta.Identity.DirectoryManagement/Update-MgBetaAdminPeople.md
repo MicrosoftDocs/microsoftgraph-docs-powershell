@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeople
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property people in admin
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgAdminPeople](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgAdminPeople?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,6 +27,18 @@ Update-MgBetaAdminPeople -BodyParameter <IMicrosoftGraphPeopleAdminSettings> [-W
 
 ## DESCRIPTION
 Update the navigation property people in admin
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -168,12 +177,12 @@ Read-only.
     \[Annotations \<IMicrosoftGraphProfileCardAnnotation\[\]\>\]: Allows an administrator to set a custom display label for the directory property and localize it for the users in their tenant.
       \[DisplayName \<String\>\]: If present, the value of this field is used by the profile card as the default property label in the experience (for example, 'Cost Center').
       \[Localizations \<IMicrosoftGraphDisplayNameLocalization\[\]\>\]: Each resource in this collection represents the localized value of the attribute name for a given language, used as the default label for that locale.
-For example, a user with a no-NB client gets 'Kostnads Senter' as the attribute label, rather than 'Cost Center.'
+For example, a user with a nb-NO client gets 'Kostnadssenter' as the attribute label, rather than 'Cost Center.'
         \[DisplayName \<String\>\]: If present, the value of this field contains the displayName string that has been set for the language present in the languageTag field.
         \[LanguageTag \<String\>\]: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
     \[DirectoryPropertyName \<String\>\]: Identifies a profileCardProperty resource in Get, Update, or Delete operations.
-Allows an administrator to surface hidden Azure Active Directory (Azure AD) properties on the Microsoft 365 profile card within their tenant.
-When present, the Azure AD field referenced in this field will be visible to all users in your tenant on the contact pane of the profile card.
+Allows an administrator to surface hidden Microsoft Entra ID properties on the Microsoft 365 profile card within their tenant.
+When present, the Microsoft Entra ID field referenced in this property is visible to all users in your tenant on the contact pane of the profile card.
 Allowed values for this field are: UserPrincipalName, Fax, StreetAddress, PostalCode, StateOrProvince, Alias, CustomAttribute1,  CustomAttribute2, CustomAttribute3, CustomAttribute4, CustomAttribute5, CustomAttribute6, CustomAttribute7, CustomAttribute8, CustomAttribute9, CustomAttribute10, CustomAttribute11, CustomAttribute12, CustomAttribute13, CustomAttribute14, CustomAttribute15.
   \[Pronouns \<IMicrosoftGraphPronounsSettings\>\]: pronounsSettings
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -188,12 +197,12 @@ Read-only.
   \[Annotations \<IMicrosoftGraphProfileCardAnnotation\[\]\>\]: Allows an administrator to set a custom display label for the directory property and localize it for the users in their tenant.
     \[DisplayName \<String\>\]: If present, the value of this field is used by the profile card as the default property label in the experience (for example, 'Cost Center').
     \[Localizations \<IMicrosoftGraphDisplayNameLocalization\[\]\>\]: Each resource in this collection represents the localized value of the attribute name for a given language, used as the default label for that locale.
-For example, a user with a no-NB client gets 'Kostnads Senter' as the attribute label, rather than 'Cost Center.'
+For example, a user with a nb-NO client gets 'Kostnadssenter' as the attribute label, rather than 'Cost Center.'
       \[DisplayName \<String\>\]: If present, the value of this field contains the displayName string that has been set for the language present in the languageTag field.
       \[LanguageTag \<String\>\]: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
   \[DirectoryPropertyName \<String\>\]: Identifies a profileCardProperty resource in Get, Update, or Delete operations.
-Allows an administrator to surface hidden Azure Active Directory (Azure AD) properties on the Microsoft 365 profile card within their tenant.
-When present, the Azure AD field referenced in this field will be visible to all users in your tenant on the contact pane of the profile card.
+Allows an administrator to surface hidden Microsoft Entra ID properties on the Microsoft 365 profile card within their tenant.
+When present, the Microsoft Entra ID field referenced in this property is visible to all users in your tenant on the contact pane of the profile card.
 Allowed values for this field are: UserPrincipalName, Fax, StreetAddress, PostalCode, StateOrProvince, Alias, CustomAttribute1,  CustomAttribute2, CustomAttribute3, CustomAttribute4, CustomAttribute5, CustomAttribute6, CustomAttribute7, CustomAttribute8, CustomAttribute9, CustomAttribute10, CustomAttribute11, CustomAttribute12, CustomAttribute13, CustomAttribute14, CustomAttribute15.
 
 PRONOUNS \<IMicrosoftGraphPronounsSettings\>: pronounsSettings
@@ -204,8 +213,6 @@ Read-only.
 The default is false, and pronouns are disabled.
 
 ## RELATED LINKS
-[Update-MgAdminPeople](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgAdminPeople?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeople](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeople)
-
 

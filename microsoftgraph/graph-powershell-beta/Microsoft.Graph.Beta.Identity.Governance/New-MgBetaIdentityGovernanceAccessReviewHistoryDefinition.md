@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewhistorydefinition
@@ -9,9 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new accessReviewHistoryDefinition object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernanceAccessReviewHistoryDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewHistoryDefinition?view=graph-powershell-1.0)
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -34,12 +32,14 @@ New-MgBetaIdentityGovernanceAccessReviewHistoryDefinition
 
 ## DESCRIPTION
 Create a new accessReviewHistoryDefinition object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+```
 
 $params = @{
 	displayName = "Last quarter's group reviews April 2021"
@@ -50,8 +50,8 @@ $params = @{
 		"notReviewed"
 		"notNotified"
 	)
-	reviewHistoryPeriodStartDateTime = [System.DateTime]::Parse("2021-01-01T00:00:00Z")
-	reviewHistoryPeriodEndDateTime = [System.DateTime]::Parse("2021-04-30T23:59:59Z")
+	reviewHistoryPeriodStartDateTime = \[System.DateTime\]::Parse("2021-01-01T00:00:00Z")
+	reviewHistoryPeriodEndDateTime = \[System.DateTime\]::Parse("2021-04-30T23:59:59Z")
 	scopes = @(
 		@{
 			"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
@@ -69,11 +69,6 @@ $params = @{
 }
 
 New-MgBetaIdentityGovernanceAccessReviewHistoryDefinition -BodyParameter $params
-```
-This example shows how to use the New-MgBetaIdentityGovernanceAccessReviewHistoryDefinition Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -142,7 +137,7 @@ Accept wildcard characters: False
 ### -Decisions
 Determines which review decisions will be included in the fetched review history data if specified.
 Optional on create.
-All decisions will be included by default if no decisions are provided on create.
+All decisions are included by default if no decisions are provided on create.
 Possible values are: approve, deny, dontKnow, notReviewed, and notNotified.
 
 ```yaml
@@ -221,7 +216,7 @@ Accept wildcard characters: False
 
 ### -Instances
 If the accessReviewHistoryDefinition is a recurring definition, instances represent each recurrence.
-A definition that does not recur will have exactly one instance.
+A definition that doesn't recur will have exactly one instance.
 To construct, see NOTES section for INSTANCES properties and create a hash table.
 
 ```yaml
@@ -256,7 +251,7 @@ Accept wildcard characters: False
 ### -ReviewHistoryPeriodStartDateTime
 A timestamp.
 Reviews starting on or before this date will be included in the fetched history data.
-Only required if scheduleSettings is not defined.
+Only required if scheduleSettings isn't defined.
 
 ```yaml
 Type: DateTime
@@ -371,25 +366,25 @@ Read-only.
   \[CreatedBy \<IMicrosoftGraphUserIdentity\>\]: userIdentity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-Note that this might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity.
+This property is read-only.
+    \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
     \[IPAddress \<String\>\]: Indicates the client IP address used by user performing the activity (audit log only).
     \[UserPrincipalName \<String\>\]: The userPrincipalName attribute of the user.
   \[CreatedDateTime \<DateTime?\>\]: Timestamp when the access review definition was created.
   \[Decisions \<String\[\]\>\]: Determines which review decisions will be included in the fetched review history data if specified.
 Optional on create.
-All decisions will be included by default if no decisions are provided on create.
+All decisions are included by default if no decisions are provided on create.
 Possible values are: approve, deny, dontKnow, notReviewed, and notNotified.
   \[DisplayName \<String\>\]: Name for the access review history data collection.
 Required.
   \[DownloadUri \<String\>\]: 
   \[FulfilledDateTime \<DateTime?\>\]: 
   \[Instances \<IMicrosoftGraphAccessReviewHistoryInstance\[\]\>\]: If the accessReviewHistoryDefinition is a recurring definition, instances represent each recurrence.
-A definition that does not recur will have exactly one instance.
+A definition that doesn't recur will have exactly one instance.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    \[DownloadUri \<String\>\]: Uri which can be used to retrieve review history data.
+    \[DownloadUri \<String\>\]: Uri that can be used to retrieve review history data.
 This URI will be active for 24 hours after being generated.
 Required.
     \[ExpirationDateTime \<DateTime?\>\]: Timestamp when this instance and associated data expires and the history is deleted.
@@ -397,8 +392,8 @@ Required.
     \[FulfilledDateTime \<DateTime?\>\]: Timestamp when all of the available data for this instance was collected.
 This will be set after this instance's status is set to done.
 Required.
-    \[ReviewHistoryPeriodEndDateTime \<DateTime?\>\]: Timestamp, reviews ending on or before this date will be included in the fetched history data.
-    \[ReviewHistoryPeriodStartDateTime \<DateTime?\>\]: Timestamp, reviews starting on or after this date will be included in the fetched history data.
+    \[ReviewHistoryPeriodEndDateTime \<DateTime?\>\]: Timestamp, reviews ending on or before this date are in the fetched history data.
+    \[ReviewHistoryPeriodStartDateTime \<DateTime?\>\]: Timestamp, reviews starting on or after this date are in the fetched history data.
     \[RunDateTime \<DateTime?\>\]: Timestamp when the instance's history data is scheduled to be generated.
     \[Status \<String\>\]: accessReviewHistoryStatus
   \[ReviewHistoryPeriodEndDateTime \<DateTime?\>\]: A timestamp.
@@ -406,7 +401,7 @@ Reviews ending on or before this date will be included in the fetched history da
 Only required if scheduleSettings is not defined.
   \[ReviewHistoryPeriodStartDateTime \<DateTime?\>\]: A timestamp.
 Reviews starting on or before this date will be included in the fetched history data.
-Only required if scheduleSettings is not defined.
+Only required if scheduleSettings isn't defined.
   \[ScheduleSettings \<IMicrosoftGraphAccessReviewHistoryScheduleSettings\>\]: accessReviewHistoryScheduleSettings
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[Recurrence \<IMicrosoftGraphPatternedRecurrence\>\]: patternedRecurrence
@@ -442,8 +437,8 @@ Must be the same value as the start property of the recurring event.
 Required.
         \[Type \<String\>\]: recurrenceRangeType
     \[ReportRange \<String\>\]: A duration string in ISO 8601 duration format specifying the lookback period of the generated review history data.
-For example, if a history definition is scheduled to run on the 1st of every month, the reportRange is P1M.
-In this case, on the first of every month, access review history data will be collected containing only the previous month's review data.
+For example, if a history definition is scheduled to run on the first of every month, the reportRange is P1M.
+In this case, on the first of every month, access review history data is collected containing only the previous month's review data.
 Note: Only years, months, and days ISO 8601 properties are supported.
 Required.
   \[Scopes \<IMicrosoftGraphAccessReviewScope\[\]\>\]: Used to scope what reviews are included in the fetched history data.
@@ -454,17 +449,17 @@ Required.
 CREATEDBY \<IMicrosoftGraphUserIdentity\>: userIdentity
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[DisplayName \<String\>\]: The display name of the identity.
-Note that this might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-  \[Id \<String\>\]: Unique identifier for the identity.
+This property is read-only.
+  \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
   \[IPAddress \<String\>\]: Indicates the client IP address used by user performing the activity (audit log only).
   \[UserPrincipalName \<String\>\]: The userPrincipalName attribute of the user.
 
 INSTANCES \<IMicrosoftGraphAccessReviewHistoryInstance\[\]\>: If the accessReviewHistoryDefinition is a recurring definition, instances represent each recurrence.
-A definition that does not recur will have exactly one instance.
+A definition that doesn't recur will have exactly one instance.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  \[DownloadUri \<String\>\]: Uri which can be used to retrieve review history data.
+  \[DownloadUri \<String\>\]: Uri that can be used to retrieve review history data.
 This URI will be active for 24 hours after being generated.
 Required.
   \[ExpirationDateTime \<DateTime?\>\]: Timestamp when this instance and associated data expires and the history is deleted.
@@ -472,8 +467,8 @@ Required.
   \[FulfilledDateTime \<DateTime?\>\]: Timestamp when all of the available data for this instance was collected.
 This will be set after this instance's status is set to done.
 Required.
-  \[ReviewHistoryPeriodEndDateTime \<DateTime?\>\]: Timestamp, reviews ending on or before this date will be included in the fetched history data.
-  \[ReviewHistoryPeriodStartDateTime \<DateTime?\>\]: Timestamp, reviews starting on or after this date will be included in the fetched history data.
+  \[ReviewHistoryPeriodEndDateTime \<DateTime?\>\]: Timestamp, reviews ending on or before this date are in the fetched history data.
+  \[ReviewHistoryPeriodStartDateTime \<DateTime?\>\]: Timestamp, reviews starting on or after this date are in the fetched history data.
   \[RunDateTime \<DateTime?\>\]: Timestamp when the instance's history data is scheduled to be generated.
   \[Status \<String\>\]: accessReviewHistoryStatus
 
@@ -512,13 +507,12 @@ Must be the same value as the start property of the recurring event.
 Required.
       \[Type \<String\>\]: recurrenceRangeType
   \[ReportRange \<String\>\]: A duration string in ISO 8601 duration format specifying the lookback period of the generated review history data.
-For example, if a history definition is scheduled to run on the 1st of every month, the reportRange is P1M.
-In this case, on the first of every month, access review history data will be collected containing only the previous month's review data.
+For example, if a history definition is scheduled to run on the first of every month, the reportRange is P1M.
+In this case, on the first of every month, access review history data is collected containing only the previous month's review data.
 Note: Only years, months, and days ISO 8601 properties are supported.
 Required.
 
 ## RELATED LINKS
-[New-MgIdentityGovernanceAccessReviewHistoryDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewHistoryDefinition?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewhistorydefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewhistorydefinition)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagementdirectoryroleassignmentschedulerequest
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property roleAssignmentScheduleRequests in roleManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgRoleManagementDirectoryRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementDirectoryRoleAssignmentScheduleRequest?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -60,6 +57,18 @@ Update-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest -InputObject <
 
 ## DESCRIPTION
 Update the navigation property roleAssignmentScheduleRequests in roleManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -558,8 +567,7 @@ Read-only.
     \[DisplayName \<String\>\]: Provides the display name of the app-specific resource represented by the app scope.
 Provided for display purposes since appScopeId is often an immutable, non-human-readable id.
 This property is read only.
-    \[Type \<String\>\]: Describes the type of app-specific resource represented by the app scope.
-Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
+    \[Type \<String\>\]: Describes the type of app-specific resource represented by the app scope and is provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
 This property is read only.
   \[AppScopeId \<String\>\]: Identifier of the app-specific scope when the assignment or eligibility is scoped to an app.
 The scope of an assignment or eligibility determines the set of resources for which the principal has been granted access.
@@ -594,7 +602,7 @@ Read-only when isBuiltIn is true.
 Required. 
 Supports $filter (eq and startsWith).
     \[InheritsPermissionsFrom \<IMicrosoftGraphUnifiedRoleDefinition\[\]\>\]: Read-only collection of role definitions that the given role definition inherits from.
-Only Azure AD built-in roles support this attribute.
+Only Microsoft Entra built-in roles support this attribute.
     \[IsBuiltIn \<Boolean?\>\]: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom.
 Read-only. 
 Supports $filter (eq).
@@ -602,7 +610,7 @@ Supports $filter (eq).
 If false the role is not available for assignment.
 Read-only when isBuiltIn is true.
     \[IsPrivileged \<Boolean?\>\]: Flag indicating if the role is privileged.
-Azure AD defines a role as privileged if it contains at least one sensitive resource action in the rolePermissions and allowedResourceActions objects.
+Microsoft Entra ID defines a role as privileged if it contains at least one sensitive resource action in the rolePermissions and allowedResourceActions objects.
 Applies only for actions in the microsoft.directory resource namespace.
 Read-only.
 Supports $filter (eq).
@@ -684,8 +692,7 @@ Read-only.
   \[DisplayName \<String\>\]: Provides the display name of the app-specific resource represented by the app scope.
 Provided for display purposes since appScopeId is often an immutable, non-human-readable id.
 This property is read only.
-  \[Type \<String\>\]: Describes the type of app-specific resource represented by the app scope.
-Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
+  \[Type \<String\>\]: Describes the type of app-specific resource represented by the app scope and is provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
 This property is read only.
 
 BODYPARAMETER \<IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest\>: unifiedRoleAssignmentScheduleRequest
@@ -697,9 +704,9 @@ BODYPARAMETER \<IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest\>: unifiedRo
     \[Application \<IMicrosoftGraphIdentity\>\]: identity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-Note that this might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      \[Id \<String\>\]: Unique identifier for the identity.
+This property is read-only.
+      \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
     \[Device \<IMicrosoftGraphIdentity\>\]: identity
     \[User \<IMicrosoftGraphIdentity\>\]: identity
   \[CreatedDateTime \<DateTime?\>\]: The request creation date time.
@@ -724,8 +731,7 @@ Read-only.
       \[DisplayName \<String\>\]: Provides the display name of the app-specific resource represented by the app scope.
 Provided for display purposes since appScopeId is often an immutable, non-human-readable id.
 This property is read only.
-      \[Type \<String\>\]: Describes the type of app-specific resource represented by the app scope.
-Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
+      \[Type \<String\>\]: Describes the type of app-specific resource represented by the app scope and is provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
 This property is read only.
     \[AppScopeId \<String\>\]: Identifier of the app-specific scope when the assignment or eligibility is scoped to an app.
 The scope of an assignment or eligibility determines the set of resources for which the principal has been granted access.
@@ -760,7 +766,7 @@ Read-only when isBuiltIn is true.
 Required. 
 Supports $filter (eq and startsWith).
       \[InheritsPermissionsFrom \<IMicrosoftGraphUnifiedRoleDefinition\[\]\>\]: Read-only collection of role definitions that the given role definition inherits from.
-Only Azure AD built-in roles support this attribute.
+Only Microsoft Entra built-in roles support this attribute.
       \[IsBuiltIn \<Boolean?\>\]: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom.
 Read-only. 
 Supports $filter (eq).
@@ -768,7 +774,7 @@ Supports $filter (eq).
 If false the role is not available for assignment.
 Read-only when isBuiltIn is true.
       \[IsPrivileged \<Boolean?\>\]: Flag indicating if the role is privileged.
-Azure AD defines a role as privileged if it contains at least one sensitive resource action in the rolePermissions and allowedResourceActions objects.
+Microsoft Entra ID defines a role as privileged if it contains at least one sensitive resource action in the rolePermissions and allowedResourceActions objects.
 Applies only for actions in the microsoft.directory resource namespace.
 Read-only.
 Supports $filter (eq).
@@ -903,7 +909,9 @@ Supports $filter (eq, ne).
 Supports $filter (eq, ne).
   \[TicketInfo \<IMicrosoftGraphTicketInfo\>\]: ticketInfo
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[TicketApproverIdentityId \<String\>\]: 
     \[TicketNumber \<String\>\]: The ticket number.
+    \[TicketSubmitterIdentityId \<String\>\]: 
     \[TicketSystem \<String\>\]: The description of the ticket system.
 
 CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
@@ -911,9 +919,9 @@ CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
   \[Application \<IMicrosoftGraphIdentity\>\]: identity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-Note that this might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity.
+This property is read-only.
+    \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
   \[Device \<IMicrosoftGraphIdentity\>\]: identity
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
@@ -966,6 +974,7 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[CustomTaskExtensionId \<String\>\]: The unique identifier of customTaskExtension
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[EndDateTime \<DateTime?\>\]: Usage: endDateTime={endDateTime}
+  \[FindingId \<String\>\]: The unique identifier of finding
   \[GovernanceInsightId \<String\>\]: The unique identifier of governanceInsight
   \[GovernanceResourceId \<String\>\]: The unique identifier of governanceResource
   \[GovernanceRoleAssignmentId \<String\>\]: The unique identifier of governanceRoleAssignment
@@ -976,6 +985,8 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[IncompatibleAccessPackageId \<String\>\]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   \[LongRunningOperationId \<String\>\]: The unique identifier of longRunningOperation
   \[On \<String\>\]: Usage: on='{on}'
+  \[PermissionsCreepIndexDistributionId \<String\>\]: The unique identifier of permissionsCreepIndexDistribution
+  \[PermissionsRequestChangeId \<String\>\]: The unique identifier of permissionsRequestChange
   \[PrivilegedAccessGroupAssignmentScheduleId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentSchedule
   \[PrivilegedAccessGroupAssignmentScheduleInstanceId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentScheduleInstance
   \[PrivilegedAccessGroupAssignmentScheduleRequestId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentScheduleRequest
@@ -1041,7 +1052,7 @@ Read-only when isBuiltIn is true.
 Required. 
 Supports $filter (eq and startsWith).
   \[InheritsPermissionsFrom \<IMicrosoftGraphUnifiedRoleDefinition\[\]\>\]: Read-only collection of role definitions that the given role definition inherits from.
-Only Azure AD built-in roles support this attribute.
+Only Microsoft Entra built-in roles support this attribute.
   \[IsBuiltIn \<Boolean?\>\]: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom.
 Read-only. 
 Supports $filter (eq).
@@ -1049,7 +1060,7 @@ Supports $filter (eq).
 If false the role is not available for assignment.
 Read-only when isBuiltIn is true.
   \[IsPrivileged \<Boolean?\>\]: Flag indicating if the role is privileged.
-Azure AD defines a role as privileged if it contains at least one sensitive resource action in the rolePermissions and allowedResourceActions objects.
+Microsoft Entra ID defines a role as privileged if it contains at least one sensitive resource action in the rolePermissions and allowedResourceActions objects.
 Applies only for actions in the microsoft.directory resource namespace.
 Read-only.
 Supports $filter (eq).
@@ -1127,8 +1138,7 @@ Read-only.
     \[DisplayName \<String\>\]: Provides the display name of the app-specific resource represented by the app scope.
 Provided for display purposes since appScopeId is often an immutable, non-human-readable id.
 This property is read only.
-    \[Type \<String\>\]: Describes the type of app-specific resource represented by the app scope.
-Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
+    \[Type \<String\>\]: Describes the type of app-specific resource represented by the app scope and is provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
 This property is read only.
   \[AppScopeId \<String\>\]: Identifier of the app-specific scope when the assignment or eligibility is scoped to an app.
 The scope of an assignment or eligibility determines the set of resources for which the principal has been granted access.
@@ -1163,7 +1173,7 @@ Read-only when isBuiltIn is true.
 Required. 
 Supports $filter (eq and startsWith).
     \[InheritsPermissionsFrom \<IMicrosoftGraphUnifiedRoleDefinition\[\]\>\]: Read-only collection of role definitions that the given role definition inherits from.
-Only Azure AD built-in roles support this attribute.
+Only Microsoft Entra built-in roles support this attribute.
     \[IsBuiltIn \<Boolean?\>\]: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom.
 Read-only. 
 Supports $filter (eq).
@@ -1171,7 +1181,7 @@ Supports $filter (eq).
 If false the role is not available for assignment.
 Read-only when isBuiltIn is true.
     \[IsPrivileged \<Boolean?\>\]: Flag indicating if the role is privileged.
-Azure AD defines a role as privileged if it contains at least one sensitive resource action in the rolePermissions and allowedResourceActions objects.
+Microsoft Entra ID defines a role as privileged if it contains at least one sensitive resource action in the rolePermissions and allowedResourceActions objects.
 Applies only for actions in the microsoft.directory resource namespace.
 Read-only.
 Supports $filter (eq).
@@ -1279,12 +1289,12 @@ Supports $filter (eq, ne).
 
 TICKETINFO \<IMicrosoftGraphTicketInfo\>: ticketInfo
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[TicketApproverIdentityId \<String\>\]: 
   \[TicketNumber \<String\>\]: The ticket number.
+  \[TicketSubmitterIdentityId \<String\>\]: 
   \[TicketSystem \<String\>\]: The description of the ticket system.
 
 ## RELATED LINKS
-[Update-MgRoleManagementDirectoryRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementDirectoryRoleAssignmentScheduleRequest?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagementdirectoryroleassignmentschedulerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagementdirectoryroleassignmentschedulerequest)
-
 

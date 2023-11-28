@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupendpoint
@@ -43,6 +43,22 @@ Update-MgBetaGroupEndpoint -InputObject <IGroupsIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Update the navigation property endpoints in groups
 
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -78,8 +94,7 @@ Accept wildcard characters: False
 
 ### -Capability
 Describes the capability that is associated with this resource.
-(e.g.
-Messages, Conversations, etc.) Not nullable.
+(for example, Messages, Conversations, etc.) Not nullable.
 Read-only.
 
 ```yaml
@@ -206,8 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProviderResourceId
-For Microsoft 365 groups, this is set to a well-known name for the resource (e.g.
-Yammer.FeedURL etc.).
+For Microsoft 365 groups, this is set to a well-known name for the resource (for example, Yammer.FeedURL etc.).
 Not nullable.
 Read-only.
 
@@ -294,16 +308,14 @@ Always null when the object hasn't been deleted.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
   \[Capability \<String\>\]: Describes the capability that is associated with this resource.
-(e.g.
-Messages, Conversations, etc.) Not nullable.
+(for example, Messages, Conversations, etc.) Not nullable.
 Read-only.
   \[ProviderId \<String\>\]: Application id of the publishing underlying service.
 Not nullable.
 Read-only.
   \[ProviderName \<String\>\]: Name of the publishing underlying service.
 Read-only.
-  \[ProviderResourceId \<String\>\]: For Microsoft 365 groups, this is set to a well-known name for the resource (e.g.
-Yammer.FeedURL etc.).
+  \[ProviderResourceId \<String\>\]: For Microsoft 365 groups, this is set to a well-known name for the resource (for example, Yammer.FeedURL etc.).
 Not nullable.
 Read-only.
   \[Uri \<String\>\]: URL of the published resource.
@@ -356,5 +368,4 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupendpoint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupendpoint)
-
 

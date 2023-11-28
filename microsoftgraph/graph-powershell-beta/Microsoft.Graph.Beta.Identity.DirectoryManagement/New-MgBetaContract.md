@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetacontract
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Add new entity to contracts
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgContract](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgContract?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,17 +28,13 @@ New-MgBetaContract -BodyParameter <IMicrosoftGraphContract> [-WhatIf] [-Confirm]
 Add new entity to contracts
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+```
 
 Get-MgBetaContract
-```
-This example shows how to use the New-MgBetaBetaContract Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -112,7 +105,7 @@ Accept wildcard characters: False
 ### -DefaultDomainName
 A copy of the customer tenant's default domain name.
 The copy is made when the partnership with the customer is established.
-It is not automatically updated if the customer tenant's default domain name changes.
+It isn't automatically updated if the customer tenant's default domain name changes.
 
 ```yaml
 Type: String
@@ -145,7 +138,7 @@ Accept wildcard characters: False
 ### -DisplayName
 A copy of the customer tenant's display name.
 The copy is made when the partnership with the customer is established.
-It is not automatically updated if the customer tenant's display name changes.
+It isn't automatically updated if the customer tenant's display name changes.
 
 ```yaml
 Type: String
@@ -234,13 +227,12 @@ See more in the table below.
 Corresponds to the id property of the customer tenant's organization resource.
   \[DefaultDomainName \<String\>\]: A copy of the customer tenant's default domain name.
 The copy is made when the partnership with the customer is established.
-It is not automatically updated if the customer tenant's default domain name changes.
+It isn't automatically updated if the customer tenant's default domain name changes.
   \[DisplayName \<String\>\]: A copy of the customer tenant's display name.
 The copy is made when the partnership with the customer is established.
-It is not automatically updated if the customer tenant's display name changes.
+It isn't automatically updated if the customer tenant's display name changes.
 
 ## RELATED LINKS
-[New-MgContract](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgContract?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetacontract](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetacontract)
 

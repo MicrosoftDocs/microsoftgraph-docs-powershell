@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/start-mgbetateamworkdevicediagnostic
@@ -32,13 +32,12 @@ This API triggers a long-running operation used to generate logs for a device.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Start-MgBetaTeamworkDeviceDiagnostic Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
 Start-MgBetaTeamworkDeviceDiagnostic -TeamworkDeviceId $teamworkDeviceId
 ```
-This example shows how to use the Start-MgBetaTeamworkDeviceDiagnostic Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

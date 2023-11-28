@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementdevicemanagementroledefinition
@@ -10,7 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new unifiedRoleDefinition object for an RBAC provider.
 This feature requires a Microsoft Entra ID P1 or P2 license.
-The following RBAC providers are currently supported:n- Cloud PCn- device management (Intune)n- directory (Microsoft Entra ID) This API is available in the following national cloud deployments.
+The following RBAC providers are currently supported:\n- Cloud PC\n- device management (Intune)\n- directory (Microsoft Entra ID) This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -32,7 +32,19 @@ New-MgBetaRoleManagementDeviceManagementRoleDefinition -BodyParameter <IMicrosof
 ## DESCRIPTION
 Create a new unifiedRoleDefinition object for an RBAC provider.
 This feature requires a Microsoft Entra ID P1 or P2 license.
-The following RBAC providers are currently supported:n- Cloud PCn- device management (Intune)n- directory (Microsoft Entra ID) This API is available in the following national cloud deployments.
+The following RBAC providers are currently supported:\n- Cloud PC\n- device management (Intune)\n- directory (Microsoft Entra ID) This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -161,7 +173,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -178,7 +190,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -197,7 +209,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -314,53 +326,106 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleDefinition
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+BODYPARAMETER \<IMicrosoftGraphUnifiedRoleDefinition\>: unifiedRoleDefinition
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[AllowedPrincipalTypes \<String\>\]: allowedRolePrincipalTypes
+  \[Description \<String\>\]: The description for the unifiedRoleDefinition.
+Read-only when isBuiltIn is true.
+  \[DisplayName \<String\>\]: The display name for the unifiedRoleDefinition.
+Read-only when isBuiltIn is true.
+Required. 
+Supports $filter (eq and startsWith).
+  \[InheritsPermissionsFrom \<IMicrosoftGraphUnifiedRoleDefinition\[\]\>\]: Read-only collection of role definitions that the given role definition inherits from.
+Only Microsoft Entra built-in roles support this attribute.
+  \[IsBuiltIn \<Boolean?\>\]: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom.
+Read-only. 
+Supports $filter (eq).
+  \[IsEnabled \<Boolean?\>\]: Flag indicating if the role is enabled for assignment.
+If false the role is not available for assignment.
+Read-only when isBuiltIn is true.
+  \[IsPrivileged \<Boolean?\>\]: Flag indicating if the role is privileged.
+Microsoft Entra ID defines a role as privileged if it contains at least one sensitive resource action in the rolePermissions and allowedResourceActions objects.
+Applies only for actions in the microsoft.directory resource namespace.
+Read-only.
+Supports $filter (eq).
+  \[ResourceScopes \<String\[\]\>\]: List of scopes permissions granted by the role definition apply to.
+Currently only / is supported.
+Read-only when isBuiltIn is true.
+DO NOT USE.
+This will be deprecated soon.
+Attach scope to role assignment.
+  \[RolePermissions \<IMicrosoftGraphUnifiedRolePermission\[\]\>\]: List of permissions included in the role.
+Read-only when isBuiltIn is true.
+Required.
+    \[AllowedResourceActions \<String\[\]\>\]: Set of tasks that can be performed on a resource.
+    \[Condition \<String\>\]: Optional constraints that must be met for the permission to be effective.
+Not supported for custom roles.
+    \[ExcludedResourceActions \<String\[\]\>\]: 
+  \[TemplateId \<String\>\]: Custom template identifier that can be set when isBuiltIn is false.
+This identifier is typically used if one needs an identifier to be the same across different directories.
+Read-only when isBuiltIn is true.
+  \[Version \<String\>\]: Indicates the version of the unifiedRoleDefinition object.
+Read-only when isBuiltIn is true.
 
-`BODYPARAMETER <IMicrosoftGraphUnifiedRoleDefinition>`: unifiedRoleDefinition
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[AllowedPrincipalTypes <String>]`: allowedRolePrincipalTypes
-  - `[Description <String>]`: The description for the unifiedRoleDefinition. Read-only when isBuiltIn is true.
-  - `[DisplayName <String>]`: The display name for the unifiedRoleDefinition. Read-only when isBuiltIn is true. Required.  Supports $filter (eq and startsWith).
-  - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition[]>]`: Read-only collection of role definitions that the given role definition inherits from. Only Microsoft Entra built-in roles support this attribute.
-  - `[IsBuiltIn <Boolean?>]`: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom. Read-only.  Supports $filter (eq).
-  - `[IsEnabled <Boolean?>]`: Flag indicating if the role is enabled for assignment. If false the role is not available for assignment. Read-only when isBuiltIn is true.
-  - `[IsPrivileged <Boolean?>]`: Flag indicating if the role is privileged. Microsoft Entra ID defines a role as privileged if it contains at least one sensitive resource action in the rolePermissions and allowedResourceActions objects. Applies only for actions in the microsoft.directory resource namespace. Read-only. Supports $filter (eq).
-  - `[ResourceScopes <String[]>]`: List of scopes permissions granted by the role definition apply to. Currently only / is supported. Read-only when isBuiltIn is true. DO NOT USE. This will be deprecated soon. Attach scope to role assignment.
-  - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]`: List of permissions included in the role. Read-only when isBuiltIn is true. Required.
-    - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource.
-    - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective. Not supported for custom roles.
-    - `[ExcludedResourceActions <String[]>]`: 
-  - `[TemplateId <String>]`: Custom template identifier that can be set when isBuiltIn is false. This identifier is typically used if one needs an identifier to be the same across different directories. Read-only when isBuiltIn is true.
-  - `[Version <String>]`: Indicates the version of the unifiedRoleDefinition object. Read-only when isBuiltIn is true.
+INHERITSPERMISSIONSFROM \<IMicrosoftGraphUnifiedRoleDefinition\[\]\>: Read-only collection of role definitions that the given role definition inherits from.
+Only Microsoft Entra built-in roles support this attribute.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[AllowedPrincipalTypes \<String\>\]: allowedRolePrincipalTypes
+  \[Description \<String\>\]: The description for the unifiedRoleDefinition.
+Read-only when isBuiltIn is true.
+  \[DisplayName \<String\>\]: The display name for the unifiedRoleDefinition.
+Read-only when isBuiltIn is true.
+Required. 
+Supports $filter (eq and startsWith).
+  \[InheritsPermissionsFrom \<IMicrosoftGraphUnifiedRoleDefinition\[\]\>\]: Read-only collection of role definitions that the given role definition inherits from.
+Only Microsoft Entra built-in roles support this attribute.
+  \[IsBuiltIn \<Boolean?\>\]: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom.
+Read-only. 
+Supports $filter (eq).
+  \[IsEnabled \<Boolean?\>\]: Flag indicating if the role is enabled for assignment.
+If false the role is not available for assignment.
+Read-only when isBuiltIn is true.
+  \[IsPrivileged \<Boolean?\>\]: Flag indicating if the role is privileged.
+Microsoft Entra ID defines a role as privileged if it contains at least one sensitive resource action in the rolePermissions and allowedResourceActions objects.
+Applies only for actions in the microsoft.directory resource namespace.
+Read-only.
+Supports $filter (eq).
+  \[ResourceScopes \<String\[\]\>\]: List of scopes permissions granted by the role definition apply to.
+Currently only / is supported.
+Read-only when isBuiltIn is true.
+DO NOT USE.
+This will be deprecated soon.
+Attach scope to role assignment.
+  \[RolePermissions \<IMicrosoftGraphUnifiedRolePermission\[\]\>\]: List of permissions included in the role.
+Read-only when isBuiltIn is true.
+Required.
+    \[AllowedResourceActions \<String\[\]\>\]: Set of tasks that can be performed on a resource.
+    \[Condition \<String\>\]: Optional constraints that must be met for the permission to be effective.
+Not supported for custom roles.
+    \[ExcludedResourceActions \<String\[\]\>\]: 
+  \[TemplateId \<String\>\]: Custom template identifier that can be set when isBuiltIn is false.
+This identifier is typically used if one needs an identifier to be the same across different directories.
+Read-only when isBuiltIn is true.
+  \[Version \<String\>\]: Indicates the version of the unifiedRoleDefinition object.
+Read-only when isBuiltIn is true.
 
-`INHERITSPERMISSIONSFROM <IMicrosoftGraphUnifiedRoleDefinition[]>`: Read-only collection of role definitions that the given role definition inherits from. Only Microsoft Entra built-in roles support this attribute.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[AllowedPrincipalTypes <String>]`: allowedRolePrincipalTypes
-  - `[Description <String>]`: The description for the unifiedRoleDefinition. Read-only when isBuiltIn is true.
-  - `[DisplayName <String>]`: The display name for the unifiedRoleDefinition. Read-only when isBuiltIn is true. Required.  Supports $filter (eq and startsWith).
-  - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition[]>]`: Read-only collection of role definitions that the given role definition inherits from. Only Microsoft Entra built-in roles support this attribute.
-  - `[IsBuiltIn <Boolean?>]`: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom. Read-only.  Supports $filter (eq).
-  - `[IsEnabled <Boolean?>]`: Flag indicating if the role is enabled for assignment. If false the role is not available for assignment. Read-only when isBuiltIn is true.
-  - `[IsPrivileged <Boolean?>]`: Flag indicating if the role is privileged. Microsoft Entra ID defines a role as privileged if it contains at least one sensitive resource action in the rolePermissions and allowedResourceActions objects. Applies only for actions in the microsoft.directory resource namespace. Read-only. Supports $filter (eq).
-  - `[ResourceScopes <String[]>]`: List of scopes permissions granted by the role definition apply to. Currently only / is supported. Read-only when isBuiltIn is true. DO NOT USE. This will be deprecated soon. Attach scope to role assignment.
-  - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]`: List of permissions included in the role. Read-only when isBuiltIn is true. Required.
-    - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource.
-    - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective. Not supported for custom roles.
-    - `[ExcludedResourceActions <String[]>]`: 
-  - `[TemplateId <String>]`: Custom template identifier that can be set when isBuiltIn is false. This identifier is typically used if one needs an identifier to be the same across different directories. Read-only when isBuiltIn is true.
-  - `[Version <String>]`: Indicates the version of the unifiedRoleDefinition object. Read-only when isBuiltIn is true.
-
-`ROLEPERMISSIONS <IMicrosoftGraphUnifiedRolePermission[]>`: List of permissions included in the role. Read-only when isBuiltIn is true. Required.
-  - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource.
-  - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective. Not supported for custom roles.
-  - `[ExcludedResourceActions <String[]>]`: 
+ROLEPERMISSIONS \<IMicrosoftGraphUnifiedRolePermission\[\]\>: List of permissions included in the role.
+Read-only when isBuiltIn is true.
+Required.
+  \[AllowedResourceActions \<String\[\]\>\]: Set of tasks that can be performed on a resource.
+  \[Condition \<String\>\]: Optional constraints that must be met for the permission to be effective.
+Not supported for custom roles.
+  \[ExcludedResourceActions \<String\[\]\>\]:
 
 ## RELATED LINKS
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementdevicemanagementroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementdevicemanagementroledefinition)
 

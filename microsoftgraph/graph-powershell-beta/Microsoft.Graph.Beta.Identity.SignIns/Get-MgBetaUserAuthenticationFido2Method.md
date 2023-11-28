@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationfido2method
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve a user's single FIDO2 Security Key Authentication Method object.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserAuthenticationFido2Method](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationFido2Method?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -40,18 +37,14 @@ Retrieve a user's single FIDO2 Security Key Authentication Method object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserAuthenticationFido2Method -UserId $userId
-
-```
-This example shows how to use the Get-MgBetaUserAuthenticationFido2Method Cmdlet.
-
 
 ## PARAMETERS
 
@@ -346,7 +339,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgUserAuthenticationFido2Method](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationFido2Method?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationfido2method](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationfido2method)
 
