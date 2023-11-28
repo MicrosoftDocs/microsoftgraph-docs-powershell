@@ -126,6 +126,17 @@ function Generate-GraphModuleHelp {
     Import-Module $Module -Force -Global
     Generate-Help -ModuleDocsPath $ModuleDocsPath -Module $Module
 }
+Set-Location microsoftgraph-docs-powershell
+$date = Get-Date -Format "dd-MM-yyyy"
+$proposedBranch = "weekly_v2_docs_update_$date"
+$exists = git branch -l $proposedBranch
+if ([string]::IsNullOrEmpty($exists)) {
+    git checkout -b $proposedBranch
+}
+else {
+    Write-Host "Branch already exists"
+    git checkout $proposedBranch
+}
 # Install PlatyPS
 if (!(Get-Module -Name PlatyPS -ListAvailable)) {
     Install-Module PlatyPS -Force
@@ -144,5 +155,7 @@ if ($ModulesToGenerate.Count -eq 0) {
     [HashTable] $ModuleMapping = Get-Content $ModuleMappingConfigPath | ConvertFrom-Json -AsHashTable
     $ModulesToGenerate = $ModuleMapping.Keys
 }
-
+Set-Location ..\microsoftgraph-docs-powershell
+Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
 Generate-GraphHelp -ModulesToGenerate $ModulesToGenerate
+Write-Host -ForegroundColor Green "-------------Done-------------"
