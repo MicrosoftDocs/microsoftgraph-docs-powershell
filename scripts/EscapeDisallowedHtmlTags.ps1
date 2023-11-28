@@ -23,10 +23,10 @@ function Escape-Angle-Brackets {
         Get-FilesByProfile -GraphProfile $graphProfile -GraphProfilePath $GraphMapping[$graphProfile] -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
     }
     
-    # git config --global user.email "timwamalwa@gmail.com"
-    # git config --global user.name "Timothy Wamalwa"
-    # git add .
-    # git commit -m "Escaped disallowed html tags" 	
+    git config --global user.email "timwamalwa@gmail.com"
+    git config --global user.name "Timothy Wamalwa"
+    git add .
+    git commit -m "Escaped disallowed html tags" 	
 }
 function Get-FilesByProfile{
  Param(
