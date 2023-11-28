@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaTeamworkDeletedTeamChannelMember
 
 ## SYNOPSIS
-Update the role of a conversationMember in a \nteam.\nor channel.
+Update the role of a conversationMember in a team.or channel.
 This API is available in the following national cloud deployments.
 
 ## SYNTAX
@@ -41,7 +41,7 @@ Update-MgBetaTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Update the role of a conversationMember in a \nteam.\nor channel.
+Update the role of a conversationMember in a team.or channel.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES

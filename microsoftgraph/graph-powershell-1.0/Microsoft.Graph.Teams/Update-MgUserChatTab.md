@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of the specified tab in a chat.
-\nThis can be used to configure the content of the tab.
+This can be used to configure the content of the tab.
 This API is available in the following national cloud deployments.
 
 ## SYNTAX
@@ -42,7 +42,7 @@ Update-MgUserChatTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGra
 
 ## DESCRIPTION
 Update the properties of the specified tab in a chat.
-\nThis can be used to configure the content of the tab.
+This can be used to configure the content of the tab.
 This API is available in the following national cloud deployments.
 
 ## PARAMETERS

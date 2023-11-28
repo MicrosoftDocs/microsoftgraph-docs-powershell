@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgTeamPrimaryChannelTab
 
 ## SYNOPSIS
-Update the properties of the specified tab.\nThis can be used to configure the content of the tab.
+Update the properties of the specified tab.This can be used to configure the content of the tab.
 This API is available in the following national cloud deployments.
 
 ## SYNTAX
@@ -40,7 +40,7 @@ Update-MgTeamPrimaryChannelTab -InputObject <ITeamsIdentity> -BodyParameter <IMi
 ```
 
 ## DESCRIPTION
-Update the properties of the specified tab.\nThis can be used to configure the content of the tab.
+Update the properties of the specified tab.This can be used to configure the content of the tab.
 This API is available in the following national cloud deployments.
 
 ## PARAMETERS

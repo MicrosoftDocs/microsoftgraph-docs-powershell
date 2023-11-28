@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Adds (pins) a tab to the specified channel within a team.
-\nThe corresponding app must already be installed in the team.
+The corresponding app must already be installed in the team.
 This API is available in the following national cloud deployments.
 
 ## SYNTAX
@@ -42,7 +42,7 @@ New-MgGroupTeamChannelTab -InputObject <ITeamsIdentity> -BodyParameter <IMicroso
 
 ## DESCRIPTION
 Adds (pins) a tab to the specified channel within a team.
-\nThe corresponding app must already be installed in the team.
+The corresponding app must already be installed in the team.
 This API is available in the following national cloud deployments.
 
 ## PARAMETERS
