@@ -273,12 +273,30 @@ function Remove-Invalid-NextLine-Characters{
     $text > $tempFilePath
     Remove-Item -Path $FilePath
     Move-Item -Path $tempFilePath -Destination $FilePath
+    CleanupFile -File $FilePath
 	}catch{
 	Write-Host "`nError Message: " $_.Exception.Message
 	Write-Host "`nError in Line: " $_.InvocationInfo.Line
 	Write-Host "`nError in Line Number: "$_.InvocationInfo.ScriptLineNumber
 	Write-Host "`nError Item Name: "$_.Exception.ItemName
 	}
+}
+function CleanupFile {
+    Param (
+        [string]$File
+    )
+    try{
+    $Content = Get-Content -Encoding UTF8 -Raw $File
+    $Content = $Content.Replace("# ^ ~.", "")
+    $Content = $Content.Replace("- _ !", "")
+    $Content = $Content.Replace("Only the following characters are allowed A - Z, a - z, 0 - 9, ' .", "Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,")
+    $Content | Out-File $File -Encoding UTF8
+    }catch{
+        Write-Host "`nError Message: " $_.Exception.Message
+        Write-Host "`nError in Line: " $_.InvocationInfo.Line
+        Write-Host "`nError in Line Number: "$_.InvocationInfo.ScriptLineNumber
+        Write-Host "`nError Item Name: "$_.Exception.ItemName
+    }
 }
 Set-Location microsoftgraph-docs-powershell
 $date = Get-Date -Format "dd-MM-yyyy"
