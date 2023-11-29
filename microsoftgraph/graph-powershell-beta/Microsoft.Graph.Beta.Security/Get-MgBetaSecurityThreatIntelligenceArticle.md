@@ -13,6 +13,9 @@ ms.prod: security
 Read the properties and relationships of an article object.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceArticle](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceArticle?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -328,6 +331,7 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgSecurityThreatIntelligenceArticle](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceArticle?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencearticle](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencearticle)
 

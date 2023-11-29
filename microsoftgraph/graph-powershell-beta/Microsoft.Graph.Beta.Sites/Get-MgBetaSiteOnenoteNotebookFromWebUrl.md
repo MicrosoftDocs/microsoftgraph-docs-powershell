@@ -13,6 +13,9 @@ Retrieve the properties and relationships of a notebook object by using its URL 
 The location can be user notebooks on Microsoft 365, group notebooks, or SharePoint site-hosted team notebooks on Microsoft 365.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteOnenoteNotebookFromWebUrl](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteOnenoteNotebookFromWebUrl?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### GetExpanded (Default)
@@ -241,6 +244,7 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgSiteOnenoteNotebookFromWebUrl](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteOnenoteNotebookFromWebUrl?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteonenotenotebookfromweburl](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteonenotenotebookfromweburl)
 

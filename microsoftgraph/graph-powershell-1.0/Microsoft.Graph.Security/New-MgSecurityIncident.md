@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityincident
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to incidents for security
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityIncident](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityIncident?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -528,6 +531,7 @@ COMMENTS \<IMicrosoftGraphSecurityAlertComment\[\]\>: Array of comments created 
   \[CreatedDateTime \<DateTime?\>\]: The time when the comment was submitted.
 
 ## RELATED LINKS
+[New-MgBetaSecurityIncident](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityIncident?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityincident](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityincident)
 

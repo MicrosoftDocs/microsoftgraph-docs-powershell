@@ -20,6 +20,9 @@ If one or more properties fail multiple validations, only the property with the 
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Test-MgContactProperty](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Test-MgContactProperty?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ValidateExpanded (Default)
@@ -225,6 +228,7 @@ BODYPARAMETER \<IPaths7Cg04SContactsMicrosoftGraphValidatepropertiesPostRequestb
   \[OnBehalfOfUserId \<String\>\]:
 
 ## RELATED LINKS
+[Test-MgContactProperty](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Test-MgContactProperty?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/test-mgbetacontactproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/test-mgbetacontactproperty)
 

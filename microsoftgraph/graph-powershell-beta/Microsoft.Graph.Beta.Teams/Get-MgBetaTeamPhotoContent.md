@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get media content for the navigation property photo from teams
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamPhotoContent](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamPhotoContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -160,6 +163,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgTeamPhotoContent](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamPhotoContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamphotocontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamphotocontent)
 

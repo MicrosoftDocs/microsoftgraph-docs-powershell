@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to thumbnails for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserDriveRootThumbnail](/powershell/module/Microsoft.Graph.Files/New-MgUserDriveRootThumbnail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -344,6 +347,7 @@ This is only available when a folder thumbnail is requested.
   \[Width \<Int32?\>\]: The width of the thumbnail, in pixels.
 
 ## RELATED LINKS
+[New-MgUserDriveRootThumbnail](/powershell/module/Microsoft.Graph.Files/New-MgUserDriveRootThumbnail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetauserdriverootthumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetauserdriverootthumbnail)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteListColumnCount](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListColumnCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -173,6 +176,7 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaSiteListColumnCount](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListColumnCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistcolumncount](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistcolumncount)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property operations in print
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPrintOperation](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -250,6 +253,7 @@ Read-only.
   \[State \<String\>\]: printOperationProcessingState
 
 ## RELATED LINKS
+[Update-MgPrintOperation](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintoperation)
 

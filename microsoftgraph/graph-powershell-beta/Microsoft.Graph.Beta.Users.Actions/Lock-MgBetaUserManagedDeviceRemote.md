@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Remote lock
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Lock-MgUserManagedDeviceRemote](/powershell/module/Microsoft.Graph.Users.Actions/Lock-MgUserManagedDeviceRemote?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Lock (Default)
@@ -194,6 +197,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Lock-MgUserManagedDeviceRemote](/powershell/module/Microsoft.Graph.Users.Actions/Lock-MgUserManagedDeviceRemote?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/lock-mgbetausermanageddeviceremote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/lock-mgbetausermanageddeviceremote)
 

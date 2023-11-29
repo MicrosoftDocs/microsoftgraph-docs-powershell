@@ -11,6 +11,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Used to access the underlying listItem
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -304,6 +307,7 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistitem)
 

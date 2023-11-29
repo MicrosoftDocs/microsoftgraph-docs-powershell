@@ -14,6 +14,9 @@ The initial call is a full synchronization, and every subsequent delta call in t
 This allows you to maintain and synchronize a local store of events in the specified calendarView, without having to fetch all the events of that calendar from the server every time.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupEventDelta](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupEventDelta?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delta (Default)
@@ -322,6 +325,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
+[Get-MgBetaGroupEventDelta](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupEventDelta?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupeventdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupeventdelta)
 

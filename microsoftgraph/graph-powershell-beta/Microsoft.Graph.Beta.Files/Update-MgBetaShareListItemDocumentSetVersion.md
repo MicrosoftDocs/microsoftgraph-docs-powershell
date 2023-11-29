@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelistitemdocumentsetversion
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property documentSetVersions in shares
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgShareListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/Update-MgShareListItemDocumentSetVersion?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -504,6 +507,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[Update-MgShareListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/Update-MgShareListItemDocumentSetVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelistitemdocumentsetversion)
 

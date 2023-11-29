@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitemlistitem
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property listItem in drives
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDriveItemListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItemListItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -23306,6 +23309,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[Update-MgBetaDriveItemListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItemListItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitemlistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitemlistitem)
 

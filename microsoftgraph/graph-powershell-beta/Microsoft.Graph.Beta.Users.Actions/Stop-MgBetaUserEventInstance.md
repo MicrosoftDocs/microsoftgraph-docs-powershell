@@ -16,6 +16,9 @@ An attendee calling this action gets an error (HTTP 400 Bad Request), with the f
 You need to be an organizer to cancel a meeting.' This action differs from Delete in that Cancel is available to only the organizer, and letsthe organizer send a custom message to the attendees about the cancellation.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Stop-MgUserEventInstance](/powershell/module/Microsoft.Graph.Users.Actions/Stop-MgUserEventInstance?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CancelExpanded (Default)
@@ -283,6 +286,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Stop-MgUserEventInstance](/powershell/module/Microsoft.Graph.Users.Actions/Stop-MgUserEventInstance?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/stop-mgbetausereventinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/stop-mgbetausereventinstance)
 

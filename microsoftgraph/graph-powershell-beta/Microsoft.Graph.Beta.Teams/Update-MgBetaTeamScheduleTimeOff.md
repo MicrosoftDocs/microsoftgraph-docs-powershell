@@ -11,6 +11,9 @@ schema: 2.0.0
 Replace an existing timeOff.
 If the specified timeOff doesn't exist, this method returns 404 Not found.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamScheduleTimeOff?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -404,6 +407,7 @@ SHAREDTIMEOFF \<IMicrosoftGraphTimeOffItem\>: timeOffItem
 Required.
 
 ## RELATED LINKS
+[Update-MgTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamScheduleTimeOff?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduletimeoff](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduletimeoff)
 

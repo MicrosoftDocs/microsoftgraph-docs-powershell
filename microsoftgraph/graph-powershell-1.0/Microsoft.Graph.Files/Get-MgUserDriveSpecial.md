@@ -16,6 +16,9 @@ Special folders are automatically created the first time an application attempts
 If a user deletes one, it is recreated when written to again.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveSpecial](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveSpecial?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -317,6 +320,7 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserDriveSpecial](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveSpecial?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivespecial](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivespecial)
 

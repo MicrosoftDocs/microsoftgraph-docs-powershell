@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The underlying Microsoft 365 group object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassGroup](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -134,6 +137,7 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Get-MgBetaEducationClassGroup](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassgroup)
 

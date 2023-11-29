@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The list of previous versions of the list item.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveItemListItemVersion](/powershell/module/Microsoft.Graph.Files/Get-MgDriveItemListItemVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -306,6 +309,7 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgDriveItemListItemVersion](/powershell/module/Microsoft.Graph.Files/Get-MgDriveItemListItemVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemlistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemlistitemversion)
 

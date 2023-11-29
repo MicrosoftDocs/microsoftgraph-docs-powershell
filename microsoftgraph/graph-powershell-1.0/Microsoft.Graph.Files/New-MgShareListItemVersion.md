@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to versions for shares
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaShareListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaShareListItemVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded1 (Default)
@@ -377,6 +380,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[New-MgBetaShareListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaShareListItemVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgsharelistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgsharelistitemversion)
 

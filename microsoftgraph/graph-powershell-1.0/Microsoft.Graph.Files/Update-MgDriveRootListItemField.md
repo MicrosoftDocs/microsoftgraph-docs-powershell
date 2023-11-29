@@ -12,6 +12,9 @@ ms.prod: sharepoint
 Update the properties on a listItem\]\[\].
 This API is available in the following \[national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDriveRootListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootListItemField?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -211,6 +214,7 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgBetaDriveRootListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootListItemField?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriverootlistitemfield](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriverootlistitemfield)
 

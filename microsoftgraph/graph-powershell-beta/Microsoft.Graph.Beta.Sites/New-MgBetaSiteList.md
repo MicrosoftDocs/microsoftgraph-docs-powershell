@@ -12,6 +12,9 @@ ms.prod: sharepoint
 Create a new list\]\[\] in a \[site\]\[\].
 This API is available in the following \[national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSiteList](/powershell/module/Microsoft.Graph.Sites/New-MgSiteList?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -45362,6 +45365,7 @@ Do not include the base URL (https://graph.microsoft.com/beta/).
 See the possible resource path values for each supported resource.
 
 ## RELATED LINKS
+[New-MgSiteList](/powershell/module/Microsoft.Graph.Sites/New-MgSiteList?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitelist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitelist)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get createdByUser from sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteListItemCreatedByUser](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListItemCreatedByUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -198,6 +201,7 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgSiteListItemCreatedByUser](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListItemCreatedByUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitemcreatedbyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitemcreatedbyuser)
 

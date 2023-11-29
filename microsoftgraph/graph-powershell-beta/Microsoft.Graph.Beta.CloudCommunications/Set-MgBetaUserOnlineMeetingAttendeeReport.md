@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update attendeeReport for the navigation property onlineMeetings in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgUserOnlineMeetingAttendeeReport](/powershell/module/Microsoft.Graph.CloudCommunications/Set-MgUserOnlineMeetingAttendeeReport?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Set (Default)
@@ -206,6 +209,7 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Set-MgUserOnlineMeetingAttendeeReport](/powershell/module/Microsoft.Graph.CloudCommunications/Set-MgUserOnlineMeetingAttendeeReport?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetauseronlinemeetingattendeereport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetauseronlinemeetingattendeereport)
 

@@ -12,6 +12,9 @@ ms.prod: sharepoint
 Removes an item from a list\]\[\].
 This API is available in the following \[national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteListItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -219,6 +222,7 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteListItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitelistitem)
 

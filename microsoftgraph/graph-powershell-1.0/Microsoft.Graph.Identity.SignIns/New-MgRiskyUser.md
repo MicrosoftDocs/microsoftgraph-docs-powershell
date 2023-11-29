@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgriskyuser
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to riskyUsers for identityProtection
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaRiskyUser](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaRiskyUser?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -331,6 +334,7 @@ Read-only.
   \[UserId \<String\>\]: The ID of the user.
 
 ## RELATED LINKS
+[New-MgBetaRiskyUser](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaRiskyUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgriskyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgriskyuser)
 

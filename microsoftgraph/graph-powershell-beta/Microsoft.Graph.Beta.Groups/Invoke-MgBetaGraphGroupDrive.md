@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function sharedWithMe
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgGraphGroupDrive](/powershell/module/Microsoft.Graph.Groups/Invoke-MgGraphGroupDrive?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Graph (Default)
@@ -256,6 +259,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgGraphGroupDrive](/powershell/module/Microsoft.Graph.Groups/Invoke-MgGraphGroupDrive?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetagraphgroupdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetagraphgroupdrive)
 

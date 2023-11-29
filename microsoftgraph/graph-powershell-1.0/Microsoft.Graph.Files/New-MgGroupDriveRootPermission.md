@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdriverootpermission
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to permissions for groups
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveRootPermission?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -632,6 +635,7 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
   \[WebUrl \<String\>\]: A URL that opens the item in the browser on the OneDrive website.
 
 ## RELATED LINKS
+[New-MgBetaGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveRootPermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdriverootpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdriverootpermission)
 

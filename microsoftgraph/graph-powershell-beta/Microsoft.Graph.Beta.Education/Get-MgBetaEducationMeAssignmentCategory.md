@@ -13,6 +13,9 @@ List all the categories associated with an assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationMeAssignmentCategory](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeAssignmentCategory?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```
@@ -221,6 +224,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MgEducationMeAssignmentCategory](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeAssignmentCategory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeassignmentcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeassignmentcategory)
 

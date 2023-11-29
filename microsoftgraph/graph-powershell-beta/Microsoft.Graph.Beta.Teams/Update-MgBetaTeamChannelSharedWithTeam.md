@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamchannelsharedwithteam
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property sharedWithTeams in teams
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamChannelSharedWithTeam?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -15077,6 +15080,7 @@ This is the URL that you get when you right-click a team in the Microsoft Teams 
 This URL should be treated as an opaque blob, and not parsed.
 
 ## RELATED LINKS
+[Update-MgTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamChannelSharedWithTeam?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamchannelsharedwithteam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamchannelsharedwithteam)
 

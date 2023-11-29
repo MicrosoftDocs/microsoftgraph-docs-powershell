@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupOwnerCountAsUser](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupOwnerCountAsUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -177,6 +180,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgGroupOwnerCountAsUser](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupOwnerCountAsUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupownercountasuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupownercountasuser)
 

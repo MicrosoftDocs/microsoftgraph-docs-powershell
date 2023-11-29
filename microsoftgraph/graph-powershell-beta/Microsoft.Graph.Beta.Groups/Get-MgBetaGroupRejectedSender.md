@@ -14,6 +14,9 @@ Users in the rejected senders list can't post to conversations of the group (ide
 Make sure you don't specify the same user or group in the rejected senders and accepted senders lists, otherwise you get an error.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupRejectedSender](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupRejectedSender?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```
@@ -184,6 +187,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MgGroupRejectedSender](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupRejectedSender?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouprejectedsender](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouprejectedsender)
 

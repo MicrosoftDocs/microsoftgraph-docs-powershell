@@ -13,6 +13,9 @@ Copy a page to a specific section.
 For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Copy-MgBetaUserOnenotePageToSection](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Copy-MgBetaUserOnenotePageToSection?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CopyExpanded (Default)
@@ -286,6 +289,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Copy-MgBetaUserOnenotePageToSection](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Copy-MgBetaUserOnenotePageToSection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mguseronenotepagetosection](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mguseronenotepagetosection)
 

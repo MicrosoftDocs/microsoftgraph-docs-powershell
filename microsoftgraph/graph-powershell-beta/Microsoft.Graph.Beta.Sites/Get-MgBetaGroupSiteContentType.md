@@ -13,6 +13,9 @@ ms.prod: sites-and-lists
 Retrieve the metadata for a content type\]\[contentType\] in a \[site\]\[\] or a \[list\]\[\].
 This API is available in the following \[national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteContentType](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteContentType?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -330,6 +333,7 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgGroupSiteContentType](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteContentType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitecontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitecontenttype)
 

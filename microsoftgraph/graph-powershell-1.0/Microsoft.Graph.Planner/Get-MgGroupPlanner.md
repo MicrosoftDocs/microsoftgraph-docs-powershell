@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Entry-point to Planner resource that might exist for a Unified Group.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaGroupPlanner?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -128,6 +131,7 @@ INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaGroupPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaGroupPlanner?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mggroupplanner](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mggroupplanner)
 

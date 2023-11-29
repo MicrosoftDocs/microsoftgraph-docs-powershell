@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mggroupevent
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property events in groups
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaGroupEvent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -1840,6 +1843,7 @@ START \<IMicrosoftGraphDateTimeZone\>: dateTimeTimeZone
 See below for more possible values.
 
 ## RELATED LINKS
+[Update-MgBetaGroupEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaGroupEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mggroupevent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mggroupevent)
 

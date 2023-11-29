@@ -12,6 +12,9 @@ ms.prod: outlook
 Update the writable properties of a mailSearchFolder object.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMailFolder?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -874,6 +877,7 @@ Read-only.
   \[Value \<String\>\]: A property value.
 
 ## RELATED LINKS
+[Update-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMailFolder?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mgusermailfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mgusermailfolder)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action unsetReaction
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Clear-MgTeamworkDeletedTeamChannelMessageReplyReaction](/powershell/module/Microsoft.Graph.Teams/Clear-MgTeamworkDeletedTeamChannelMessageReplyReaction?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UnsetExpanded (Default)
@@ -291,6 +294,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Clear-MgTeamworkDeletedTeamChannelMessageReplyReaction](/powershell/module/Microsoft.Graph.Teams/Clear-MgTeamworkDeletedTeamChannelMessageReplyReaction?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/clear-mgbetateamworkdeletedteamchannelmessagereplyreaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/clear-mgbetateamworkdeletedteamchannelmessagereplyreaction)
 

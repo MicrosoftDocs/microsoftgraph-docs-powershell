@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action validatePermission
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Test-MgUserDriveItemPermission](/powershell/module/Microsoft.Graph.Users.Actions/Test-MgUserDriveItemPermission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ValidateExpanded (Default)
@@ -291,6 +294,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Test-MgUserDriveItemPermission](/powershell/module/Microsoft.Graph.Users.Actions/Test-MgUserDriveItemPermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetauserdriveitempermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetauserdriveitempermission)
 

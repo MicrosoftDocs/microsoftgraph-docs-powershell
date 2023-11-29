@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The list of detected apps associated with a device.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDetectedApp](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDetectedApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -391,6 +394,7 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
   \[WindowsQualityUpdateProfileId \<String\>\]: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
+[Get-MgDeviceManagementDetectedApp](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDetectedApp?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementdetectedapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementdetectedapp)
 

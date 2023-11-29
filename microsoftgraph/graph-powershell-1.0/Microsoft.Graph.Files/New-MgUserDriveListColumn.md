@@ -12,6 +12,9 @@ ms.prod: sites-and-lists
 Create a column for a list\]\[list\] with a request that specifies a \[columnDefinition\]\[columnDefinition\].
 This API is available in the following \[national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveListColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -1215,6 +1218,7 @@ User will be prompted with this message if validation fails.
 For examples, see Examples of common formulas in lists.
 
 ## RELATED LINKS
+[New-MgBetaUserDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveListColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdrivelistcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdrivelistcolumn)
 

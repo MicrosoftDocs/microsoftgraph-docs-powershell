@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to activities for sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSiteAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Sites/New-MgSiteAnalyticItemActivityStatActivity?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -15051,6 +15054,7 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[New-MgSiteAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Sites/New-MgSiteAnalyticItemActivityStatActivity?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasiteanalyticitemactivitystatactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasiteanalyticitemactivitystatactivity)
 

@@ -15,6 +15,9 @@ After a completeMigration request is made, you can't import additional messages 
 You can add members to the team after the request returns a successful response.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Complete-MgTeamMigration](/powershell/module/Microsoft.Graph.Teams/Complete-MgTeamMigration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Complete (Default)
@@ -179,6 +182,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Complete-MgTeamMigration](/powershell/module/Microsoft.Graph.Teams/Complete-MgTeamMigration?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/complete-mgbetateammigration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/complete-mgbetateammigration)
 

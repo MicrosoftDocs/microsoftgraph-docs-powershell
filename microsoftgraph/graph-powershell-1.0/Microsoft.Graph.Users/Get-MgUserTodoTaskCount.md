@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserTodoTaskCount](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTaskCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -148,6 +151,7 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserTodoTaskCount](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTaskCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskcount](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskcount)
 
