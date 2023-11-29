@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerbucket
 schema: 2.0.0
+ms.prod: planner
 ---
 
 # New-MgBetaPlannerBucket

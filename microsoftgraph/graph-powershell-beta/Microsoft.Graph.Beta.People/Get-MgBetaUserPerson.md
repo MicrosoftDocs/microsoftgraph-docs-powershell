@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserperson
 schema: 2.0.0
+ms.prod: insights
 ---
 
 # Get-MgBetaUserPerson

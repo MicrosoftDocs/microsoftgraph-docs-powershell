@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdeviceconfiguration
 schema: 2.0.0
+ms.prod: intune
 ---
 
 # New-MgDeviceManagementDeviceConfiguration
