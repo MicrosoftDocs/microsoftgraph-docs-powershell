@@ -64,11 +64,10 @@ The following are the steps to attach a file to an Outlook item using an upload 
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Create an upload session to add a large attachment to a draft message
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
-```
 
 $params = @{
 	AttachmentItem = @{
@@ -80,11 +79,15 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserMessageAttachmentUploadSession -UserId $userId -MessageId $messageId -BodyParameter $params
+```
+This example shows how to use the New-MgBetaUserEventAttachmentUploadSession Cmdlet.
 
-### EXAMPLE 2
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Create an upload session to add a large in-line attachment to a draft message
+
+```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
-```
 
 $params = @{
 	AttachmentItem = @{
@@ -98,6 +101,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserMessageAttachmentUploadSession -UserId $userId -MessageId $messageId -BodyParameter $params
+```
+This example shows how to use the New-MgBetaUserEventAttachmentUploadSession Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

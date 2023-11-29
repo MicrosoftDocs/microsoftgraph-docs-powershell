@@ -80,25 +80,28 @@ Please see Request body section for the list of properties that support updating
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 $params = @{
-	startDateTime = \[System.DateTime\]::Parse("2020-09-09T14:33:30.8546353-07:00")
-	endDateTime = \[System.DateTime\]::Parse("2020-09-09T15:03:30.8566356-07:00")
+	startDateTime = [System.DateTime]::Parse("2020-09-09T14:33:30.8546353-07:00")
+	endDateTime = [System.DateTime]::Parse("2020-09-09T15:03:30.8566356-07:00")
 	subject = "Patch Meeting Subject"
 }
 
 # A UPN can also be used as -UserId.
 Update-MgBetaUserOnlineMeeting -UserId $userId -OnlineMeetingId $onlineMeetingId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaUserOnlineMeeting Cmdlet.
 
-### EXAMPLE 2
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Code snippet
+
+```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 $params = @{
 	lobbyBypassSettings = @{
@@ -108,6 +111,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgBetaUserOnlineMeeting -UserId $userId -OnlineMeetingId $onlineMeetingId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaUserOnlineMeeting Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

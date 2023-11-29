@@ -72,11 +72,10 @@ Add a contact to the root Contacts folder or to the contacts endpoint of another
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.PersonalContacts
-```
 
 $params = @{
 	givenName = "Pavel"
@@ -94,6 +93,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserContact -UserId $userId -BodyParameter $params
+```
+This example shows how to use the New-MgUserContact Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

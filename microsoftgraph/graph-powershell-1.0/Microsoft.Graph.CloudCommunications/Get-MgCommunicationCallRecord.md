@@ -38,20 +38,28 @@ When you expand session details, the maximum page size is 60 sessions.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Get basic details
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 Get-MgCommunicationCallRecord -CallRecordId $callRecordId
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.CloudCommunications
-```
+This example will get basic details
 
-Get-MgCommunicationCallRecord -CallRecordId $callRecordId -ExpandProperty "sessions(\`$expand=segments)"
+### Example 2: Get full details
+
+```powershell
+
+Import-Module Microsoft.Graph.CloudCommunications
+
+Get-MgCommunicationCallRecord -CallRecordId $callRecordId -ExpandProperty "sessions(`$expand=segments)" 
+
+```
+This example will get full details
+
 
 ## PARAMETERS
 

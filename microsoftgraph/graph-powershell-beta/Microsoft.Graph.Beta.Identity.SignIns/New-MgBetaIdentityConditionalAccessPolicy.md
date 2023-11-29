@@ -38,11 +38,10 @@ Create a new conditionalAccessPolicy.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Require MFA to access Exchange Online outside of trusted locations
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	displayName = "Access to EXO requires MFA"
@@ -80,11 +79,15 @@ $params = @{
 }
 
 New-MgBetaIdentityConditionalAccessPolicy -BodyParameter $params
+```
+This example shows how to use the New-MgBetaIdentityConditionalAccessPolicy Cmdlet.
 
-### EXAMPLE 2
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Block access to Exchange Online from non-trusted regions
+
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	displayName = "Block access to EXO non-trusted regions."
@@ -118,11 +121,15 @@ $params = @{
 }
 
 New-MgBetaIdentityConditionalAccessPolicy -BodyParameter $params
+```
+This example shows how to use the New-MgBetaIdentityConditionalAccessPolicy Cmdlet.
 
-### EXAMPLE 3
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Use all conditions/controls
+
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	displayName = "Demo app for documentation"
@@ -233,11 +240,15 @@ $params = @{
 }
 
 New-MgBetaIdentityConditionalAccessPolicy -BodyParameter $params
+```
+This example shows how to use the New-MgBetaIdentityConditionalAccessPolicy Cmdlet.
 
-### EXAMPLE 4
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 4: Require MFA to Exchange Online from non-complaint devices
+
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	displayName = "Require MFA to EXO from non-complaint devices."
@@ -271,6 +282,11 @@ $params = @{
 }
 
 New-MgBetaIdentityConditionalAccessPolicy -BodyParameter $params
+```
+This example shows how to use the New-MgBetaIdentityConditionalAccessPolicy Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

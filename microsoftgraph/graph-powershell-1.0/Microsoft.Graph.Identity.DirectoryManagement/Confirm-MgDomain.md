@@ -32,13 +32,17 @@ Validates the ownership of the domain.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Confirm-MgDomain -DomainId $domainId
+
+```
+This example shows how to use the Confirm-MgDomain Cmdlet.
+
 
 ## PARAMETERS
 

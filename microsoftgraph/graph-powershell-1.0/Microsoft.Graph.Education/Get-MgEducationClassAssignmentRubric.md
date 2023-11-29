@@ -36,13 +36,17 @@ Only teachers, students, and applications with application permissions can perfo
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationClassAssignmentRubric -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
+
+```
+This example shows how to use the Get-MgEducationClassAssignmentRubric Cmdlet.
+
 
 ## PARAMETERS
 

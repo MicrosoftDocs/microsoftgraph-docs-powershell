@@ -39,13 +39,17 @@ Get-MgBetaSiteTermStoreGroupSet -InputObject <ISitesIdentity> [-ExpandProperty <
 All sets under the group in a term \[store\].
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Get-MgBetaSiteTermStoreGroupSet -SiteId $siteId -GroupId $groupId
+```
+This example shows how to use the Get-MgBetaSiteTermStoreGroupSet Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

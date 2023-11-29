@@ -50,9 +50,8 @@ Put a participant on hold and play music in the background.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Start-MgBetaCommunicationCallParticipantHoldMusic Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
 	CustomPrompt = @{
@@ -66,6 +65,8 @@ $params = @{
 }
 Start-MgBetaCommunicationCallParticipantHoldMusic -CallId $callId -ParticipantId $participantId -BodyParameter $params
 ```
+This example shows how to use the Start-MgBetaCommunicationCallParticipantHoldMusic Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

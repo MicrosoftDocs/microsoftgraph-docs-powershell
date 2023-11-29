@@ -50,11 +50,10 @@ Future messages from that SMTP address will be consistently classifiedas specifi
 Note This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Mail
-```
 
 $params = @{
 	classifyAs = "focused"
@@ -66,6 +65,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserInferenceClassificationOverride -UserId $userId -BodyParameter $params
+```
+This example shows how to use the New-MgUserInferenceClassificationOverride Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

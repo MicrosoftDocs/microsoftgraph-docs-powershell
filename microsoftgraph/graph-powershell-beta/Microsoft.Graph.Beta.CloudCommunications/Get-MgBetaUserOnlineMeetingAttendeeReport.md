@@ -32,14 +32,18 @@ Get-MgBetaUserOnlineMeetingAttendeeReport -InputObject <ICloudCommunicationsIden
 Get attendeeReport for the navigation property onlineMeetings from users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOnlineMeetingAttendeeReport -UserId $userId -OnlineMeetingId $onlineMeetingId
+
+```
+This example shows how to use the Get-MgBetaUserOnlineMeetingAttendeeReport Cmdlet.
+
 
 ## PARAMETERS
 

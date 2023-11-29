@@ -54,9 +54,8 @@ For more information, see sending Teams activity notifications.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Send-MgBetaUserTeamworkActivityNotification Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
 	Topic = @{
@@ -77,9 +76,10 @@ $params = @{
 }
 Send-MgBetaUserTeamworkActivityNotification -UserId $userId -BodyParameter $params
 ```
-
-### EXAMPLE 2
-```
+This example shows how to use the Send-MgBetaUserTeamworkActivityNotification Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Send-MgBetaUserTeamworkActivityNotification Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
 	Topic = @{
@@ -100,9 +100,10 @@ $params = @{
 }
 Send-MgBetaUserTeamworkActivityNotification -UserId $userId -BodyParameter $params
 ```
-
-### EXAMPLE 3
-```
+This example shows how to use the Send-MgBetaUserTeamworkActivityNotification Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 3: Using the Send-MgBetaUserTeamworkActivityNotification Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
 	Topic = @{
@@ -122,6 +123,8 @@ $params = @{
 }
 Send-MgBetaUserTeamworkActivityNotification -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the Send-MgBetaUserTeamworkActivityNotification Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

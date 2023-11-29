@@ -40,11 +40,10 @@ Get a specific commercial subscription that an organization has acquired.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Get subscribed SKUs
 
-### EXAMPLE 1
-```
+```powershell
 Get-MgBetaSubscribedSKU | Format-List
-```
 
 AppliesTo            : User
 CapabilityStatus     : Enabled
@@ -55,8 +54,11 @@ ServicePlans         : {M365_LIGHTHOUSE_PARTNER_PLAN1, WINDOWSUPDATEFORBUSINESS_
                        M365_LIGHTHOUSE_CUSTOMER_PLAN1...}
 SkuId                : cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46
 SkuPartNumber        : SPB
-AdditionalProperties : {\[@odata.id, https://graph.microsoft.com/v2/fb625e04-52aa-42da-b10d-14f1195d665f/subscribedSkus/fb625e04-52a
-                       a-42da-b10d-14f1195d665f_cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46\]}
+AdditionalProperties : {[@odata.id, https://graph.microsoft.com/v2/fb625e04-52aa-42da-b10d-14f1195d665f/subscribedSkus/fb625e04-52a
+                       a-42da-b10d-14f1195d665f_cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46]}
+```
+
+This command gets the information about the service SKU that the company has subscribed to.
 
 ## PARAMETERS
 

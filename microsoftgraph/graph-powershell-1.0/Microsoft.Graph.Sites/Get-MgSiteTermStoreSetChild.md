@@ -96,13 +96,17 @@ Get-MgSiteTermStoreSetChild -InputObject <ISitesIdentity> [-ExpandProperty <Stri
 Children terms of set in term \[store\].
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 Get-MgSiteTermStoreSetChild -SiteId $siteId -SetId $setId
+```
+This example shows how to use the Get-MgSiteTermStoreSetChild Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

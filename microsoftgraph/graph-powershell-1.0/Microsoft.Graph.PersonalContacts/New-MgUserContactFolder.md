@@ -56,11 +56,10 @@ You can also create a new contactfolder as a child of any specified contact fold
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.PersonalContacts
-```
 
 $params = @{
 	parentFolderId = "AQMkADIxYjJiYgEzLTFmNjYALTRjYTMtODA1NC0wZDkxZGNmOTcxNTQALgAAA8RJzXYaLKZPlmn0ge0edZkBADa3qi2IMXRNg6RwQSHe_F8AAAIBDgAAAA=="
@@ -69,6 +68,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserContactFolder -UserId $userId -BodyParameter $params
+```
+This example shows how to use the New-MgUserContactFolder Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

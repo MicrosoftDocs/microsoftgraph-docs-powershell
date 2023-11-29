@@ -42,20 +42,28 @@ Retrieve a deleted workflow object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Get a deleted workflow
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow -WorkflowId $workflowId
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
+This example will get a deleted workflow
 
-Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow -WorkflowId $workflowId -Property "id,category,displayName,description,version,executionConditions"
+### Example 2: Get specific properties of a deleted workflow
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow -WorkflowId $workflowId -Property "id,category,displayName,description,version,executionConditions" 
+
+```
+This example will get specific properties of a deleted workflow
+
 
 ## PARAMETERS
 

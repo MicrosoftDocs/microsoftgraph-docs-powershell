@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementassignment
@@ -32,13 +32,17 @@ New-MgEntitlementManagementAssignment -BodyParameter <IMicrosoftGraphAccessPacka
 Create new navigation property to assignments for identityGovernance
 
 ## EXAMPLES
+### Example scenarios for using query parameters
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgEntitlementManagementAssignment
+```
+This example shows how to use the New-MgEntitlementManagementAssignment Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

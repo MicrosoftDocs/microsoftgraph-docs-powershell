@@ -28,14 +28,18 @@ Retrieve a list of onenoteSection objects from the specified section group.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Notes
-```
 
 # A UPN can also be used as -UserId.
 Get-MgUserOnenoteSectionGroupSection -UserId $userId -SectionGroupId $sectionGroupId
+
+```
+This example shows how to use the Get-MgUserOnenoteSectionGroupSection Cmdlet.
+
 
 ## PARAMETERS
 

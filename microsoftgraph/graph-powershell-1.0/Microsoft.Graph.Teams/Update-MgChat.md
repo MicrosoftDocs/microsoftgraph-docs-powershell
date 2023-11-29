@@ -59,17 +59,21 @@ Update the properties of a chat object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	topic = "Group chat title update"
 }
 
 Update-MgChat -ChatId $chatId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgChat Cmdlet.
+
 
 ## PARAMETERS
 

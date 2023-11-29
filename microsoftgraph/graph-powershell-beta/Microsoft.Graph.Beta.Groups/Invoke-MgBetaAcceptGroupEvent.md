@@ -48,11 +48,10 @@ Accept the specified event in a user calendar.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
-```
 
 $params = @{
 	Comment = "comment-value"
@@ -61,6 +60,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Invoke-MgBetaAcceptUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
+```
+This example shows how to use the Invoke-MgBetaAcceptGroupEvent Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -41,14 +41,18 @@ Get-MgUserPhotoContent -InputObject <IUsersIdentity> -OutFile <String> [-PassThr
 Get media content for the navigation property photo from users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users
-```
 
 # A UPN can also be used as -UserId.
 Get-MgUserPhotoContent -UserId $userId -OutFile $outFileId
+
+```
+This example shows how to use the Get-MgUserPhotoContent Cmdlet.
+
 
 ## PARAMETERS
 

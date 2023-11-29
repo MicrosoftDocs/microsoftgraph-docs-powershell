@@ -39,11 +39,10 @@ This operation is used to assign a user to an access package, update the assignm
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Admin requests a direct assignment for a user already in the directory
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	requestType = "adminAdd"
@@ -55,11 +54,15 @@ $params = @{
 }
 
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
+```
+This example shows how to use the New-MgEntitlementManagementAssignmentRequest Cmdlet.
 
-### EXAMPLE 2
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Remove an assignment
+
+```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	requestType = "adminRemove"
@@ -69,11 +72,15 @@ $params = @{
 }
 
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
+```
+This example shows how to use the New-MgEntitlementManagementAssignmentRequest Cmdlet.
 
-### EXAMPLE 3
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Request an assignment
+
+```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	requestType = "userAdd"
@@ -83,11 +90,15 @@ $params = @{
 }
 
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
+```
+This example shows how to use the New-MgEntitlementManagementAssignmentRequest Cmdlet.
 
-### EXAMPLE 4
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 4: Request an assignment by providing answers to questions
+
+```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.accessPackageAssignmentRequest"
@@ -118,11 +129,15 @@ $params = @{
 }
 
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
+```
+This example shows how to use the New-MgEntitlementManagementAssignmentRequest Cmdlet.
 
-### EXAMPLE 5
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 5: Request an update to answers for an assignment
+
+```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.accessPackageAssignmentRequest"
@@ -153,6 +168,11 @@ $params = @{
 }
 
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
+```
+This example shows how to use the New-MgEntitlementManagementAssignmentRequest Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -39,24 +39,27 @@ Read the properties and relationships of a specific cloudPC object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointCloudPC Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 Get-MgBetaDeviceManagementVirtualEndpointCloudPC -CloudPCId $cloudPCId
 ```
-
-### EXAMPLE 2
-```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointCloudPC Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Get-MgBetaDeviceManagementVirtualEndpointCloudPC Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
-Get-MgBetaDeviceManagementVirtualEndpointCloudPC -CloudPCId $cloudPCId -Property "id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult,connectivityResult"
+Get-MgBetaDeviceManagementVirtualEndpointCloudPC -CloudPCId $cloudPCId -Property "id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult,connectivityResult" 
 ```
-
-### EXAMPLE 3
-```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointCloudPC Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 3: Using the Get-MgBetaDeviceManagementVirtualEndpointCloudPC Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 Get-MgBetaDeviceManagementVirtualEndpointCloudPC
 ```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointCloudPC Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

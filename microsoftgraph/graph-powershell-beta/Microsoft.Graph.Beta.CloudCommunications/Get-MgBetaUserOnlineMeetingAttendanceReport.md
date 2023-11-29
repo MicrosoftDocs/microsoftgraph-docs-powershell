@@ -56,14 +56,18 @@ Each time an online meeting ends, an attendance report will be generated for tha
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: List attendance reports for an online meeting
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOnlineMeetingAttendanceReport -UserId $userId -OnlineMeetingId $onlineMeetingId
+
+```
+This example will list attendance reports for an online meeting
+
 
 ## PARAMETERS
 

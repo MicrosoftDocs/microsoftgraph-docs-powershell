@@ -27,13 +27,17 @@ Users in the accepted senders list can post to conversations of the group (ident
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Groups
-```
 
 Get-MgGroupAcceptedSender -GroupId $groupId
+
+```
+This example shows how to use the Get-MgGroupAcceptedSender Cmdlet.
+
 
 ## PARAMETERS
 

@@ -50,9 +50,8 @@ For Copy operations, you follow an asynchronous calling pattern:  First call the
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Copy-MgUserOnenoteSectionToNotebook Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
 	Id = "id-value"
@@ -62,6 +61,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 Copy-MgUserOnenoteSectionToNotebook -UserId $userId -OnenoteSectionId $onenoteSectionId -BodyParameter $params
 ```
+This example shows how to use the Copy-MgUserOnenoteSectionToNotebook Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

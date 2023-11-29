@@ -38,9 +38,8 @@ For details about investigating Identity Protection risks, see How to investigat
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Confirm-MgBetaAuditLogSignInCompromised Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Reports
 $params = @{
 	RequestIds = @(
@@ -51,6 +50,8 @@ $params = @{
 }
 Confirm-MgBetaAuditLogSignInCompromised -BodyParameter $params
 ```
+This example shows how to use the Confirm-MgBetaAuditLogSignInCompromised Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

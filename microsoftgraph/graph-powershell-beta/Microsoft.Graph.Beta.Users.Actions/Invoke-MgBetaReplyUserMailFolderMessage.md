@@ -60,11 +60,10 @@ Alternatively, create a draft to reply to a message, and send it later.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Reply in JSON format to an existing message
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
-```
 
 $params = @{
 	Message = @{
@@ -88,6 +87,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Invoke-MgBetaReplyUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
+```
+This example shows how to use the Invoke-MgBetaReplyUserMailFolderMessage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

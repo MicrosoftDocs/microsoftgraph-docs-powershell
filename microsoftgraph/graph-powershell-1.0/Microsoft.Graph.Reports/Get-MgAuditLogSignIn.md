@@ -44,20 +44,28 @@ Sign-ins that are interactive in nature (where a username/password is passed as 
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: List all sign-ins
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Reports
-```
 
 Get-MgAuditLogSignIn
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Reports
-```
+This example will list all sign-ins
 
-Get-MgAuditLogSignIn -Filter "startsWith(appDisplayName,'Graph')" -Top 10
+### Example 2: Retrieve the first 10 sign-ins to apps with the appDisplayName that starts with 'Graph'
+
+```powershell
+
+Import-Module Microsoft.Graph.Reports
+
+Get-MgAuditLogSignIn -Filter "startsWith(appDisplayName,'Graph')" -Top 10 
+
+```
+This example will retrieve the first 10 sign-ins to apps with the appdisplayname that starts with 'graph'
+
 
 ## PARAMETERS
 

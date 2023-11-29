@@ -39,9 +39,8 @@ The maximum count of users to dismiss in one call is 60.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Invoke-MgBetaDismissRiskyUser Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	UserIds = @(
@@ -51,6 +50,8 @@ $params = @{
 }
 Invoke-MgBetaDismissRiskyUser -BodyParameter $params
 ```
+This example shows how to use the Invoke-MgBetaDismissRiskyUser Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

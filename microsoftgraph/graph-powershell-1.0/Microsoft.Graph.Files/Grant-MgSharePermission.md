@@ -48,9 +48,8 @@ Grant users access to a link represented by a permission\]\[\].
 This API is available in the following \[national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Grant-MgSharePermission Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Files
 $params = @{
 	Recipients = @(
@@ -67,6 +66,8 @@ $params = @{
 }
 Grant-MgSharePermission -SharedDriveItemId $sharedDriveItemId -BodyParameter $params
 ```
+This example shows how to use the Grant-MgSharePermission Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

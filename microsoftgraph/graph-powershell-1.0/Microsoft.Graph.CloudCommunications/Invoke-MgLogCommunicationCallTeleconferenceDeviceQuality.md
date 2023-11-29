@@ -47,9 +47,8 @@ This method is only for the CVI partners to provide their media quality data.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality Cmdlet
+```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 $params = @{
 	Quality = @{
@@ -137,6 +136,8 @@ $params = @{
 }
 Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality -BodyParameter $params
 ```
+This example shows how to use the Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

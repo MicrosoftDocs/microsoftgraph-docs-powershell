@@ -60,9 +60,8 @@ For more details, see presence sessions and time-out and expiration.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Set-MgUserPresenceUserPreferredPresence Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
 	Availability = "DoNotDisturb"
@@ -71,6 +70,8 @@ $params = @{
 }
 Set-MgUserPresenceUserPreferredPresence -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the Set-MgUserPresenceUserPreferredPresence Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -34,12 +34,14 @@ Delete a permissionGrantPolicy object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Remove a permission grant policy
 
-### EXAMPLE 1
-```
+```powershell
 Connect-MgBetaGraph -Scopes "Policy.Read.PermissionGrant,Policy.ReadWrite.PermissionGrant"  
 Remove-MgBetaPolicyPermissionGrantPolicy -PermissionGrantPolicyId "testtenant-sampleapp-permissions"
 ```
+
+This command deletes the specified permission grant policy in Azure AD.
 
 ## PARAMETERS
 

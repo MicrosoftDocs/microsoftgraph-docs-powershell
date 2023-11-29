@@ -32,9 +32,8 @@ Delete multiple threat intelligence (TI) indicators in one request instead of mu
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Remove-MgBetaSecurityTiIndicatorMultiple Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{
 	Value = @(
@@ -44,6 +43,8 @@ $params = @{
 }
 Remove-MgBetaSecurityTiIndicatorMultiple -BodyParameter $params
 ```
+This example shows how to use the Remove-MgBetaSecurityTiIndicatorMultiple Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

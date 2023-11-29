@@ -53,9 +53,8 @@ To get the subscriptions available in the directory, perform a GET subscribedSku
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Set-MgGroupLicense Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Groups
 $params = @{
 	AddLicenses = @(
@@ -78,9 +77,10 @@ $params = @{
 }
 Set-MgGroupLicense -GroupId $groupId -BodyParameter $params
 ```
-
-### EXAMPLE 2
-```
+This example shows how to use the Set-MgGroupLicense Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Set-MgGroupLicense Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Groups
 $params = @{
 	AddLicenses = @(
@@ -92,6 +92,8 @@ $params = @{
 }
 Set-MgGroupLicense -GroupId $groupId -BodyParameter $params
 ```
+This example shows how to use the Set-MgGroupLicense Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

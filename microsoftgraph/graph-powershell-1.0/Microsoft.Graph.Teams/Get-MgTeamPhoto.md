@@ -39,13 +39,17 @@ You can get the metadata of the largest available photo or specify a size to get
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgTeamPhoto -TeamId $teamId
+
+```
+This example shows how to use the Get-MgTeamPhoto Cmdlet.
+
 
 ## PARAMETERS
 

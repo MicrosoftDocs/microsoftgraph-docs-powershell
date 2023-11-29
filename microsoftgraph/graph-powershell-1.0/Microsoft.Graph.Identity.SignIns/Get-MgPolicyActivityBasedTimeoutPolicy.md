@@ -42,13 +42,17 @@ Get the properties of an activityBasedTimeoutPolicy object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgPolicyActivityBasedTimeoutPolicy
+
+```
+This example shows how to use the Get-MgPolicyActivityBasedTimeoutPolicy Cmdlet.
+
 
 ## PARAMETERS
 

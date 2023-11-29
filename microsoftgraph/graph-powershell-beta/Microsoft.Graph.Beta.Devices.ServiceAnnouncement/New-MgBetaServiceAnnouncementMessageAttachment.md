@@ -45,20 +45,28 @@ New-MgBetaServiceAnnouncementMessageAttachment -InputObject <IDevicesServiceAnno
 Create new navigation property to attachments for admin
 
 ## EXAMPLES
+### Example 1: Get all attachments of a message in a collection
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
-```
 
 Get-MgBetaServiceAnnouncementMessageAttachment -ServiceUpdateMessageId $serviceUpdateMessageId
+```
+This example shows how to use the New-MgBetaBetaServiceAnnouncementMessageAttachment Cmdlet.
 
-### EXAMPLE 2
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Get a zip file of all attachments in stream for a message
+
+```powershell
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
-```
 
 Get-MgBetaServiceAnnouncementMessageAttachmentArchive -ServiceUpdateMessageId $serviceUpdateMessageId
+```
+This example shows how to use the New-MgBetaBetaServiceAnnouncementMessageAttachment Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

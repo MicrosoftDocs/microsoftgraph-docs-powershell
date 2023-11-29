@@ -54,11 +54,10 @@ For more details about sending notifications and the requirements for doing so, 
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Notify a user about a task created in a chat
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	Topic = @{
@@ -82,11 +81,15 @@ $params = @{
 }
 
 Send-MgChatActivityNotification -ChatId $chatId -BodyParameter $params
+```
+This example shows how to use the Send-MgUserChatActivityNotification Cmdlet.
 
-### EXAMPLE 2
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Notify a user about an approval needed in a chat message
+
+```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	Topic = @{
@@ -110,11 +113,15 @@ $params = @{
 }
 
 Send-MgChatActivityNotification -ChatId $chatId -BodyParameter $params
+```
+This example shows how to use the Send-MgUserChatActivityNotification Cmdlet.
 
-### EXAMPLE 3
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Notify a user about an approval needed in a chat message using user principal name
+
+```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	Topic = @{
@@ -138,11 +145,15 @@ $params = @{
 }
 
 Send-MgChatActivityNotification -ChatId $chatId -BodyParameter $params
+```
+This example shows how to use the Send-MgUserChatActivityNotification Cmdlet.
 
-### EXAMPLE 4
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 4: Notify a user about an event in relation to a chat
+
+```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	Topic = @{
@@ -167,6 +178,11 @@ $params = @{
 }
 
 Send-MgChatActivityNotification -ChatId $chatId -BodyParameter $params
+```
+This example shows how to use the Send-MgUserChatActivityNotification Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -78,18 +78,17 @@ Update the properties of the event object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
-```
 
 $params = @{
 	originalStartTimeZone = "originalStartTimeZone-value"
 	originalEndTimeZone = "originalEndTimeZone-value"
 	responseStatus = @{
 		response = ""
-		time = \[System.DateTime\]::Parse("2016-10-19T10:37:00Z")
+		time = [System.DateTime]::Parse("2016-10-19T10:37:00Z")
 	}
 	recurrence = $null
 	uid = "iCalUId-value"
@@ -105,6 +104,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgBetaUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaUserEvent Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

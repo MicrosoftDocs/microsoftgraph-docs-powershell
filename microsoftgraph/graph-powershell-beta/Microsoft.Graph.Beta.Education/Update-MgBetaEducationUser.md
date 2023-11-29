@@ -75,11 +75,10 @@ Update the relatedContact collection of an educationUser object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 $params = @{
 	displayName = "Rogelio Cazares"
@@ -89,6 +88,11 @@ $params = @{
 }
 
 Update-MgBetaEducationUser -EducationUserId $educationUserId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaEducationUser Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

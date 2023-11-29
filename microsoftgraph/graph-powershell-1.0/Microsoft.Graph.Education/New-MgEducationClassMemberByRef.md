@@ -46,17 +46,21 @@ Add an educationUser member to an educationClass.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/v1.0/education/users/13015"
 }
 
 New-MgEducationClassMemberByRef -EducationClassId $educationClassId -BodyParameter $params
+
+```
+This example shows how to use the New-MgEducationClassMemberByRef Cmdlet.
+
 
 ## PARAMETERS
 

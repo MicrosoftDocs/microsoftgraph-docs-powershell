@@ -62,11 +62,10 @@ Update the properties of a bookingBusiness object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Bookings
-```
 
 $params = @{
 	email = "admin@fabrikam.com"
@@ -80,6 +79,11 @@ $params = @{
 }
 
 Update-MgBookingBusiness -BookingBusinessId $bookingBusinessId -BodyParameter $params
+```
+This example shows how to use the Update-MgBookingBusiness Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

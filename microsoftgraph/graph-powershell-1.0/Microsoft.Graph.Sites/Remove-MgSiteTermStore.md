@@ -43,17 +43,21 @@ Remove-MgSiteTermStore -InputObject <ISitesIdentity> [-IfMatch <String>] [-PassT
 Delete navigation property termStore for sites
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 $params = @{
 	defaultLanguageTag = "en-US"
 }
 
 Update-MgSiteTermStore -SiteId $siteId -BodyParameter $params
+```
+This example shows how to use the Remove-MgSiteTermStore Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

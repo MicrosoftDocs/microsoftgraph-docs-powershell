@@ -60,11 +60,10 @@ Update a content type\]\[contentType\].
 This API is available in the following \[national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 $params = @{
 	name = "updatedCt"
@@ -110,6 +109,11 @@ $params = @{
 }
 
 Update-MgSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
+```
+This example shows how to use the Update-MgSiteContentType Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

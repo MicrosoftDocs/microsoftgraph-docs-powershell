@@ -42,14 +42,18 @@ Retrieve the properties and relationships of a onenoteSection object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Notes
-```
 
 # A UPN can also be used as -UserId.
 Get-MgUserOnenoteSection -UserId $userId
+
+```
+This example shows how to use the Get-MgUserOnenoteSection Cmdlet.
+
 
 ## PARAMETERS
 

@@ -82,15 +82,14 @@ This method updates any solution that has a record of the referenced alert ID.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Request without Prefer header
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	assignedTo = "String"
-	closedDateTime = \[System.DateTime\]::Parse("String (timestamp)")
+	closedDateTime = [System.DateTime]::Parse("String (timestamp)")
 	comments = @(
 		"String"
 	)
@@ -106,15 +105,19 @@ $params = @{
 }
 
 Update-MgBetaSecurityAlert -AlertId $alertId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaSecurityAlert Cmdlet.
 
-### EXAMPLE 2
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Request with Prefer header
+
+```powershell
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	assignedTo = "String"
-	closedDateTime = \[System.DateTime\]::Parse("String (timestamp)")
+	closedDateTime = [System.DateTime]::Parse("String (timestamp)")
 	comments = @(
 		"String"
 	)
@@ -130,6 +133,11 @@ $params = @{
 }
 
 Update-MgBetaSecurityAlert -AlertId $alertId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaSecurityAlert Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

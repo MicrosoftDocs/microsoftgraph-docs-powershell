@@ -43,22 +43,26 @@ For more information about these resources, see Set up change notifications that
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.ChangeNotifications
-```
 
 $params = @{
 	changeType = "created"
 	notificationUrl = "https://webhook.azurewebsites.net/api/send/myNotifyClient"
 	resource = "me/mailFolders('Inbox')/messages"
-	expirationDateTime = \[System.DateTime\]::Parse("2016-11-20T18:23:45.9356913Z")
+	expirationDateTime = [System.DateTime]::Parse("2016-11-20T18:23:45.9356913Z")
 	clientState = "secretClientValue"
 	latestSupportedTlsVersion = "v1_2"
 }
 
 New-MgBetaSubscription -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaSubscription Cmdlet.
+
 
 ## PARAMETERS
 

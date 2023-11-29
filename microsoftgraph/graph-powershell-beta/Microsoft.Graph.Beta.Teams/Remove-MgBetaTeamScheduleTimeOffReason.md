@@ -39,13 +39,17 @@ timeOffItem instances that have been assigned this reason remain assigned to thi
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Remove-MgBetaTeamScheduleTimeOffReason -TeamId $teamId -TimeOffReasonId $timeOffReasonId
+
+```
+This example shows how to use the Remove-MgBetaTeamScheduleTimeOffReason Cmdlet.
+
 
 ## PARAMETERS
 

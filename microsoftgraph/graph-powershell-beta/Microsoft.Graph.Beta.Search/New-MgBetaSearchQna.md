@@ -35,9 +35,8 @@ Create a new qna object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the New-MgBetaSearchQna Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Search
 $params = @{
 	DisplayName = "Global Country Holidays"
@@ -72,6 +71,8 @@ $params = @{
 }
 New-MgBetaSearchQna -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaSearchQna Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

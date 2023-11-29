@@ -42,14 +42,18 @@ Get a contact folder by using the contact folder ID.
 There are two scenarios where an app can get another user's contact folder: This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.PersonalContacts
-```
 
 # A UPN can also be used as -UserId.
 Get-MgUserContactFolder -UserId $userId
+
+```
+This example shows how to use the Get-MgUserContactFolder Cmdlet.
+
 
 ## PARAMETERS
 

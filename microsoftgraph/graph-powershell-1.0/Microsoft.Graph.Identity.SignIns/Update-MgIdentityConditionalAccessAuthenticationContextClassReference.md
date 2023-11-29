@@ -51,11 +51,10 @@ If ID has been used, this call updates the authenticationContextClassReference o
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	displayName = "Contoso medium"
@@ -64,6 +63,11 @@ $params = @{
 }
 
 Update-MgIdentityConditionalAccessAuthenticationContextClassReference -AuthenticationContextClassReferenceId $authenticationContextClassReferenceId -BodyParameter $params
+```
+This example shows how to use the Update-MgIdentityConditionalAccessAuthenticationContextClassReference Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

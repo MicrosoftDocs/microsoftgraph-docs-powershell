@@ -31,28 +31,40 @@ Remove-MgUserPresence -InputObject <ICloudCommunicationsIdentity> [-IfMatch <Str
 Delete navigation property presence for users
 
 ## EXAMPLES
+### Example 1: Get your own presence information
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 # A UPN can also be used as -UserId.
 Get-MgUserPresence -UserId $userId
+```
+This example shows how to use the Remove-MgUserPresence Cmdlet.
 
-### EXAMPLE 2
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Get the presence information of another user
+
+```powershell
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 Get-MgUserPresence -UserId $userId
+```
+This example shows how to use the Remove-MgUserPresence Cmdlet.
 
-### EXAMPLE 3
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Get the presence information of another user
+
+```powershell
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 Get-MgCommunicationPresence -PresenceId $presenceId
+```
+This example shows how to use the Remove-MgUserPresence Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

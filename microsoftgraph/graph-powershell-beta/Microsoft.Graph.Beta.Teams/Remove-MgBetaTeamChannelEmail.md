@@ -35,13 +35,17 @@ You can remove an email address only if it was provisioned using the provisionEm
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Remove-MgBetaTeamChannelEmail -TeamId $teamId -ChannelId $channelId
+
+```
+This example shows how to use the Remove-MgBetaTeamChannelEmail Cmdlet.
+
 
 ## PARAMETERS
 

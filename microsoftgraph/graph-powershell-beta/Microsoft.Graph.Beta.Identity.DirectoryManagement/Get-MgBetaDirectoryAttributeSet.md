@@ -42,27 +42,39 @@ Read the properties and relationships of an attributeSet object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Get all attribute sets
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaDirectoryAttributeSet
 
-### EXAMPLE 2
 ```
+This example will get all attribute sets
+
+### Example 2: Get top attribute sets
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
-Get-MgBetaDirectoryAttributeSet -Top 10
+Get-MgBetaDirectoryAttributeSet -Top 10 
 
-### EXAMPLE 3
 ```
+This example will get top attribute sets
+
+### Example 3: Get attribute sets in order
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
-Get-MgBetaDirectoryAttributeSet -Sort "id"
+Get-MgBetaDirectoryAttributeSet -Sort "id" 
+
+```
+This example will get attribute sets in order
+
 
 ## PARAMETERS
 

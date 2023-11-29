@@ -36,12 +36,13 @@ Synchronized accounts are left as-is.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Remove-MgBetaServicePrincipalSynchronizationJob Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Remove-MgBetaServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId
 ```
+This example shows how to use the Remove-MgBetaServicePrincipalSynchronizationJob Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

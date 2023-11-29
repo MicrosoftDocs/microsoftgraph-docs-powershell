@@ -49,9 +49,8 @@ Update the properties of a tenantTag object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Update-MgBetaTenantRelationshipManagedTenantTag Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.ManagedTenants
 $params = @{
 	DisplayName = "Onboarding"
@@ -59,6 +58,8 @@ $params = @{
 }
 Update-MgBetaTenantRelationshipManagedTenantTag -TenantTagId $tenantTagId -BodyParameter $params
 ```
+This example shows how to use the Update-MgBetaTenantRelationshipManagedTenantTag Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
