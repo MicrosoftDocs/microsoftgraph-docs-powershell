@@ -31,22 +31,6 @@ New-MgDataPolicyOperation -BodyParameter <IMicrosoftGraphDataPolicyOperation> [-
 ## DESCRIPTION
 Add new entity to dataPolicyOperations
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -253,4 +237,5 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 [New-MgBetaDataPolicyOperation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaDataPolicyOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgdatapolicyoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgdatapolicyoperation)
+
 

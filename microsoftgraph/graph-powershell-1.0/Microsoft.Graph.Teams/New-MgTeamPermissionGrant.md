@@ -45,18 +45,6 @@ New-MgTeamPermissionGrant -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create new navigation property to permissionGrants for teams
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -337,4 +325,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [New-MgBetaTeamPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamPermissionGrant?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteampermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteampermissiongrant)
+
 

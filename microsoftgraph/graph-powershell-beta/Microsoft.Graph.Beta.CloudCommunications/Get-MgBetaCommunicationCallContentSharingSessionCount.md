@@ -30,18 +30,6 @@ Get-MgBetaCommunicationCallContentSharingSessionCount -InputObject <ICloudCommun
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CallId
@@ -144,4 +132,5 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
 [Get-MgCommunicationCallContentSharingSessionCount](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationCallContentSharingSessionCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallcontentsharingsessioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallcontentsharingsessioncount)
+
 

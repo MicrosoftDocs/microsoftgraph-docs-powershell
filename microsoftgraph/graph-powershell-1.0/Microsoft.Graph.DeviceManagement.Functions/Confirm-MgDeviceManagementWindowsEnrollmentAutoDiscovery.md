@@ -29,18 +29,6 @@ Confirm-MgDeviceManagementWindowsEnrollmentAutoDiscovery -InputObject <IDeviceMa
 ## DESCRIPTION
 Invoke function verifyWindowsEnrollmentAutoDiscovery
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DomainName
@@ -101,4 +89,5 @@ INPUTOBJECT \<IDeviceManagementFunctionsIdentity\>: Identity Parameter
 [Confirm-MgBetaDeviceManagementWindowsEnrollmentAutoDiscovery](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Confirm-MgBetaDeviceManagementWindowsEnrollmentAutoDiscovery?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/confirm-mgdevicemanagementwindowsenrollmentautodiscovery](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/confirm-mgdevicemanagementwindowsenrollmentautodiscovery)
+
 

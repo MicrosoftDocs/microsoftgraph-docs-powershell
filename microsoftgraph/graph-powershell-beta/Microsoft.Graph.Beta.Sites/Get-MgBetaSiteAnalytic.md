@@ -30,22 +30,6 @@ Get-MgBetaSiteAnalytic -InputObject <ISitesIdentity> [-ExpandProperty <String[]>
 ## DESCRIPTION
 Analytics about the view activities that took place in this site.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -178,4 +162,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgSiteAnalytic](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteAnalytic?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteanalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteanalytic)
+
 

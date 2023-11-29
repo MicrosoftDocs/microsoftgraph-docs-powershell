@@ -72,18 +72,6 @@ Update-MgGroupSetting -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftG
 Update the properties of a groupSetting object for tenant-wide group settings or a specific group setting.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -329,4 +317,5 @@ VALUES \<IMicrosoftGraphSettingValue\[\]\>: Collection of name-value pairs corre
 [Update-MgBetaGroupSetting](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupSetting?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupsetting)
+
 

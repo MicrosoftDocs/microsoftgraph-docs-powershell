@@ -31,22 +31,6 @@ New-MgUserManagedDeviceWindowsDefenderUpdateSignature -InputObject <IUsersAction
 ## DESCRIPTION
 Not yet documented
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -191,4 +175,5 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 [New-MgBetaUserManagedDeviceWindowsDefenderUpdateSignature](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserManagedDeviceWindowsDefenderUpdateSignature?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mgusermanageddevicewindowsdefenderupdatesignature](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mgusermanageddevicewindowsdefenderupdatesignature)
+
 

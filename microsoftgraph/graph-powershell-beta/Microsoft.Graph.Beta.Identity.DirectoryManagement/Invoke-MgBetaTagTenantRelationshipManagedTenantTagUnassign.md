@@ -43,18 +43,6 @@ Invoke-MgBetaTagTenantRelationshipManagedTenantTagUnassign -InputObject <IIdenti
 Un-assigns the tenant tag from the specified managed tenants.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -253,4 +241,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetatagtenantrelationshipmanagedtenanttagunassign](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetatagtenantrelationshipmanagedtenanttagunassign)
+
 

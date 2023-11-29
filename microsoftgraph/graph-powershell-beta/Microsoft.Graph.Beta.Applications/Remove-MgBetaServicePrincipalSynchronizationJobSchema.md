@@ -30,22 +30,6 @@ Remove-MgBetaServicePrincipalSynchronizationJobSchema -InputObject <IApplication
 ## DESCRIPTION
 Delete navigation property schema for servicePrincipals
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -207,4 +191,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Remove-MgServicePrincipalSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalSynchronizationJobSchema?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalsynchronizationjobschema](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalsynchronizationjobschema)
+
 

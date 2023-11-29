@@ -30,18 +30,6 @@ Get-MgGroupDriveRootListItemVersionCount -InputObject <IFilesIdentity> [-Filter 
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -165,4 +153,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgBetaGroupDriveRootListItemVersionCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootListItemVersionCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootlistitemversioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootlistitemversioncount)
+
 

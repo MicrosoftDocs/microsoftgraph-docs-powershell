@@ -28,18 +28,6 @@ Remove-MgBetaRoleManagementCloudPcRoleAssignmentAppScope -InputObject <IDeviceMa
 ## DESCRIPTION
 Delete navigation property appScopes for roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AppScopeId
@@ -194,4 +182,5 @@ INPUTOBJECT \<IDeviceManagementEnrollmentIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/remove-mgbetarolemanagementcloudpcroleassignmentappscope](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/remove-mgbetarolemanagementcloudpcroleassignmentappscope)
+
 

@@ -81,18 +81,6 @@ New-MgBetaUserDriveBundle -InputObject <IFilesIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Create new navigation property to bundles for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Activities
@@ -53591,4 +53579,5 @@ Read-only.
 [New-MgUserDriveBundle](/powershell/module/Microsoft.Graph.Files/New-MgUserDriveBundle?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetauserdrivebundle](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetauserdrivebundle)
+
 

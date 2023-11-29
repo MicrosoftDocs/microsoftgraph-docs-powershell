@@ -27,18 +27,6 @@ Remove-MgGroupSettingTemplateGroupSettingTemplate -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Delete entity from groupSettingTemplates
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupSettingTemplateId
@@ -188,4 +176,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupsettingtemplategroupsettingtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupsettingtemplategroupsettingtemplate)
+
 

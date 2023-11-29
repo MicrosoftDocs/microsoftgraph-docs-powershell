@@ -31,18 +31,6 @@ Add-MgSite -BodyParameter <IPathsV2U0Z1SitesMicrosoftGraphAddPostRequestbodyCont
 ## DESCRIPTION
 Follow a user's site or multiple sites.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -9204,4 +9192,5 @@ This relationship can only be used to load a specific term set.
 [Add-MgBetaSite](/powershell/module/Microsoft.Graph.Beta.Sites/Add-MgBetaSite?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mgsite](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mgsite)
+
 

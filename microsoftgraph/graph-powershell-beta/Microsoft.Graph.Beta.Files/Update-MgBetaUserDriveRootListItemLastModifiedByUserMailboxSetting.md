@@ -50,18 +50,6 @@ Update-MgBetaUserDriveRootListItemLastModifiedByUserMailboxSetting -InputObject 
 ## DESCRIPTION
 Update property mailboxSettings value.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -442,4 +430,5 @@ It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 
 [Update-MgUserDriveRootListItemLastModifiedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveRootListItemLastModifiedByUserMailboxSetting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriverootlistitemlastmodifiedbyusermailboxsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriverootlistitemlastmodifiedbyusermailboxsetting)
+
 

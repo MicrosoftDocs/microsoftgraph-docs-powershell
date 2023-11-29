@@ -27,18 +27,6 @@ Start-MgBetaPrintPrinterJobPrintJob -InputObject <IDevicesCloudPrintIdentity> [-
 ## DESCRIPTION
 Invoke action startPrintJob
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -151,4 +139,5 @@ INPUTOBJECT \<IDevicesCloudPrintIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/start-mgbetaprintprinterjobprintjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/start-mgbetaprintprinterjobprintjob)
+
 

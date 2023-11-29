@@ -40,22 +40,6 @@ Get-MgBetaReportEmailActivityUserDetail -InputObject <IReportsIdentity> -OutFile
 ## DESCRIPTION
 Invoke function getEmailActivityUserDetail
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Date
@@ -195,4 +179,5 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
 [Get-MgReportEmailActivityUserDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportEmailActivityUserDetail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportemailactivityuserdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportemailactivityuserdetail)
+
 

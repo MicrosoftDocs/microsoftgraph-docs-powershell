@@ -55,22 +55,6 @@ The createLink action will create a new sharing link if the specified link type 
 DriveItem resources inherit sharing permissions from their ancestors.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -354,4 +338,5 @@ security groups).
 [New-MgDriveRootLink](/powershell/module/Microsoft.Graph.Files/New-MgDriveRootLink?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriverootlink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriverootlink)
+
 

@@ -63,18 +63,6 @@ Update-MgEntitlementManagementAccessPackageAssignmentPolicy -InputObject <IIdent
 ## DESCRIPTION
 Update the navigation property assignmentPolicies in identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessPackage
@@ -14986,4 +14974,5 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 [Update-MgBetaEntitlementManagementAccessPackageAssignmentPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaEntitlementManagementAccessPackageAssignmentPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementaccesspackageassignmentpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementaccesspackageassignmentpolicy)
+
 

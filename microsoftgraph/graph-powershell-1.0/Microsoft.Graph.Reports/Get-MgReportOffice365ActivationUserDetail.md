@@ -22,22 +22,6 @@ Get-MgReportOffice365ActivationUserDetail -OutFile <String> [-PassThru] [<Common
 ## DESCRIPTION
 Invoke function getOffice365ActivationsUserDetail
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -OutFile
@@ -84,4 +68,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgBetaReportOffice365ActivationUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOffice365ActivationUserDetail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365activationuserdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365activationuserdetail)
+
 

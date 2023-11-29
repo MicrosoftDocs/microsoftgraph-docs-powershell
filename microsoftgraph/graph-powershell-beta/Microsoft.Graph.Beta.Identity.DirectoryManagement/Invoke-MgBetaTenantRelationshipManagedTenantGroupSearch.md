@@ -28,18 +28,6 @@ Invoke-MgBetaTenantRelationshipManagedTenantGroupSearch
 ## DESCRIPTION
 Invoke action tenantSearch
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -141,4 +129,5 @@ BODY \<IPathsF1Wwh1TenantrelationshipsManagedtenantsTenantgroupsMicrosoftGraphMa
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetatenantrelationshipmanagedtenantgroupsearch](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetatenantrelationshipmanagedtenantgroupsearch)
+
 

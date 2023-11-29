@@ -29,18 +29,6 @@ Set-MgBetaVirtualEventSessionRecordingContent -InputObject <IBookingsIdentity> [
 The content of the recording.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CallRecordingId
@@ -211,4 +199,5 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/set-mgbetavirtualeventsessionrecordingcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/set-mgbetavirtualeventsessionrecordingcontent)
+
 

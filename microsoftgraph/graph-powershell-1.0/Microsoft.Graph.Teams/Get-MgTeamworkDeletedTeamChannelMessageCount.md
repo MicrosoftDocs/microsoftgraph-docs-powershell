@@ -30,18 +30,6 @@ Get-MgTeamworkDeletedTeamChannelMessageCount -InputObject <ITeamsIdentity> [-Fil
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -173,4 +161,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Get-MgBetaTeamworkDeletedTeamChannelMessageCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamworkDeletedTeamChannelMessageCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkdeletedteamchannelmessagecount](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkdeletedteamchannelmessagecount)
+
 

@@ -41,22 +41,6 @@ Update-MgBetaFinancialCompanyCustomerPicture -InputObject <IFinancialsIdentity>
 ## DESCRIPTION
 Update the navigation property picture in financials
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -322,4 +306,5 @@ INPUTOBJECT \<IFinancialsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanycustomerpicture](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanycustomerpicture)
+
 

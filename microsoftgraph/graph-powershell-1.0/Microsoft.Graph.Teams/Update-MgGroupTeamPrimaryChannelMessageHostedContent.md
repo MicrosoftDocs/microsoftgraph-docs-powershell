@@ -45,22 +45,6 @@ Update-MgGroupTeamPrimaryChannelMessageHostedContent -InputObject <ITeamsIdentit
 ## DESCRIPTION
 Update the navigation property hostedContents in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -288,4 +272,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Update-MgBetaGroupTeamPrimaryChannelMessageHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamPrimaryChannelMessageHostedContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamprimarychannelmessagehostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamprimarychannelmessagehostedcontent)
+
 

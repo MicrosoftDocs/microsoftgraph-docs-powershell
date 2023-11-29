@@ -47,22 +47,6 @@ New-MgGroupCalendarPermission -InputObject <ICalendarIdentity>
 Create a calendarPermission resource to specify the identity and role of the user with whom the specified calendar is being shared or delegated.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -306,4 +290,5 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
 [New-MgBetaGroupCalendarPermission](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaGroupCalendarPermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mggroupcalendarpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mggroupcalendarpermission)
+
 

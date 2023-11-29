@@ -30,18 +30,6 @@ Get-MgGroupMemberWithLicenseErrorCountAsDevice -InputObject <IGroupsIdentity> [-
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ConsistencyLevel
@@ -177,4 +165,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Get-MgBetaGroupMemberWithLicenseErrorCountAsDevice](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberWithLicenseErrorCountAsDevice?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberwithlicenseerrorcountasdevice](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberwithlicenseerrorcountasdevice)
+
 

@@ -37,22 +37,6 @@ Get-MgGroupDriveListSubscription -InputObject <IFilesIdentity> [-ExpandProperty 
 ## DESCRIPTION
 The set of subscriptions on the list.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -312,4 +296,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgBetaGroupDriveListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveListSubscription?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivelistsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivelistsubscription)
+
 

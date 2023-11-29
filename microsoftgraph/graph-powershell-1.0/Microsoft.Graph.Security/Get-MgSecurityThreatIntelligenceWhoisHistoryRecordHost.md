@@ -30,18 +30,6 @@ Get-MgSecurityThreatIntelligenceWhoisHistoryRecordHost -InputObject <ISecurityId
 ## DESCRIPTION
 The host associated to this WHOIS object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -178,4 +166,5 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Get-MgBetaSecurityThreatIntelligenceWhoisHistoryRecordHost](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceWhoisHistoryRecordHost?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencewhoishistoryrecordhost](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencewhoishistoryrecordhost)
+
 

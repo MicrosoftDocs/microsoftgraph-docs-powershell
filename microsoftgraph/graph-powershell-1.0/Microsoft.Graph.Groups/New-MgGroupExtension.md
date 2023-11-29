@@ -41,22 +41,6 @@ New-MgGroupExtension -InputObject <IGroupsIdentity> -BodyParameter <Hashtable> [
 ## DESCRIPTION
 Create new navigation property to extensions for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -224,4 +208,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [New-MgBetaGroupExtension](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupExtension?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupextension](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupextension)
+
 

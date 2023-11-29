@@ -44,22 +44,6 @@ Update-MgBetaUserMailFolderChildFolderMessageExtension -InputObject <IMailIdenti
 ## DESCRIPTION
 Update the navigation property extensions in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -262,4 +246,5 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
 [Update-MgUserMailFolderChildFolderMessageExtension](/powershell/module/Microsoft.Graph.Mail/Update-MgUserMailFolderChildFolderMessageExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetausermailfolderchildfoldermessageextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetausermailfolderchildfoldermessageextension)
+
 

@@ -30,18 +30,6 @@ Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStageCount -InputObject <I
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessReviewInstanceId
@@ -209,4 +197,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageCount](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewdefinitioninstancestagecount](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewdefinitioninstancestagecount)
+
 

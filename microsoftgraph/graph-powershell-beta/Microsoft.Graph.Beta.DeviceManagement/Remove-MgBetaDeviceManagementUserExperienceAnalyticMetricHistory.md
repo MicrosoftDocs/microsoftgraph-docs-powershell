@@ -31,22 +31,6 @@ Remove-MgBetaDeviceManagementUserExperienceAnalyticMetricHistory -InputObject <I
 ## DESCRIPTION
 Delete navigation property userExperienceAnalyticsMetricHistory for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -301,4 +285,5 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 [Remove-MgDeviceManagementUserExperienceAnalyticMetricHistory](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementUserExperienceAnalyticMetricHistory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementuserexperienceanalyticmetrichistory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementuserexperienceanalyticmetrichistory)
+
 

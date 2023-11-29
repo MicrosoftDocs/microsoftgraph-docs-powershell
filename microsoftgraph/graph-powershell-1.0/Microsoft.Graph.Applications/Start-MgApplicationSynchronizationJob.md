@@ -41,18 +41,6 @@ Don't create scripts to call the start job continuously while it's running becau
 Use the start job only when the job is currently paused or in quarantine.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -190,4 +178,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Start-MgBetaApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Start-MgBetaApplicationSynchronizationJob?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/start-mgapplicationsynchronizationjob](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/start-mgapplicationsynchronizationjob)
+
 

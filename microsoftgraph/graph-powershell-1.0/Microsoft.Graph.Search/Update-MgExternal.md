@@ -31,22 +31,6 @@ Update-MgExternal -BodyParameter <IMicrosoftGraphExternalConnectorsExternal> [-W
 ## DESCRIPTION
 Update external
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -422,4 +406,5 @@ Required.
 [Update-MgBetaExternal](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternal?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternal](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternal)
+
 

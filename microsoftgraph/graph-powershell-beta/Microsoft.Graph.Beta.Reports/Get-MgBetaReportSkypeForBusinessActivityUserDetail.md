@@ -42,22 +42,6 @@ Get-MgBetaReportSkypeForBusinessActivityUserDetail -InputObject <IReportsIdentit
 ## DESCRIPTION
 Invoke function getSkypeForBusinessActivityUserDetail
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Date
@@ -197,4 +181,5 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
 [Get-MgReportSkypeForBusinessActivityUserDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSkypeForBusinessActivityUserDetail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportskypeforbusinessactivityuserdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportskypeforbusinessactivityuserdetail)
+
 

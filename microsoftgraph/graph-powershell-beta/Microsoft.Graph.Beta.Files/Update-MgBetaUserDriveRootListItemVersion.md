@@ -46,22 +46,6 @@ Update-MgBetaUserDriveRootListItemVersion -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property versions in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -370,4 +354,5 @@ Read-only.
 [Update-MgUserDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveRootListItemVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriverootlistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriverootlistitemversion)
+
 

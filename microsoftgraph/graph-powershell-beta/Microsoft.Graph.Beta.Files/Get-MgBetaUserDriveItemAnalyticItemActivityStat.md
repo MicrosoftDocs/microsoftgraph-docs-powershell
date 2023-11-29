@@ -38,18 +38,6 @@ Get-MgBetaUserDriveItemAnalyticItemActivityStat -InputObject <IFilesIdentity> [-
 ## DESCRIPTION
 Get itemActivityStats from users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -324,4 +312,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgUserDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveItemAnalyticItemActivityStat?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriveitemanalyticitemactivitystat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriveitemanalyticitemactivitystat)
+
 

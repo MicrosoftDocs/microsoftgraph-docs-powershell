@@ -52,18 +52,6 @@ Update-MgBetaDeviceAppManagementMobileAppConfigurationUserStatusSummary
 ## DESCRIPTION
 Update the navigation property userStatusSummary in deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -398,4 +386,5 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
 [Update-MgDeviceAppManagementMobileAppConfigurationUserStatusSummary](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementMobileAppConfigurationUserStatusSummary?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmobileappconfigurationuserstatussummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmobileappconfigurationuserstatussummary)
+
 

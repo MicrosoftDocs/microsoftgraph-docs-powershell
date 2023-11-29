@@ -30,18 +30,6 @@ Set-MgBetaPrintPrinterJobDocumentContent -InputObject <IDevicesCloudPrintIdentit
 ## DESCRIPTION
 Update media content for the navigation property documents in print
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Data
@@ -218,4 +206,5 @@ INPUTOBJECT \<IDevicesCloudPrintIdentity\>: Identity Parameter
 [Set-MgPrintPrinterJobDocumentContent](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Set-MgPrintPrinterJobDocumentContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/set-mgbetaprintprinterjobdocumentcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/set-mgbetaprintprinterjobdocumentcontent)
+
 

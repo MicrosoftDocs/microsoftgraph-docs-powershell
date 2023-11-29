@@ -36,18 +36,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -210,4 +198,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgSiteListItemCreatedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListItemCreatedByUserMailboxSetting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitemcreatedbyusermailboxsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitemcreatedbyusermailboxsetting)
+
 

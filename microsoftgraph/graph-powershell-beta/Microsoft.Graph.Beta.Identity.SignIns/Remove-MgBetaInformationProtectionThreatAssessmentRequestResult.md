@@ -30,22 +30,6 @@ Remove-MgBetaInformationProtectionThreatAssessmentRequestResult -InputObject <II
 ## DESCRIPTION
 Delete navigation property results for informationProtection
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -252,4 +236,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 [Remove-MgInformationProtectionThreatAssessmentRequestResult](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgInformationProtectionThreatAssessmentRequestResult?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetainformationprotectionthreatassessmentrequestresult](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetainformationprotectionthreatassessmentrequestresult)
+
 

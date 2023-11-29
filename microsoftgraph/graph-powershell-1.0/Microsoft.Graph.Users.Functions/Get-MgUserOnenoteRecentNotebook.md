@@ -30,22 +30,6 @@ Get-MgUserOnenoteRecentNotebook -InputObject <IUsersFunctionsIdentity> [-Count] 
 ## DESCRIPTION
 Invoke function getRecentNotebooks
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -216,4 +200,5 @@ INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
 [Get-MgBetaUserOnenoteRecentNotebook](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserOnenoteRecentNotebook?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguseronenoterecentnotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguseronenoterecentnotebook)
+
 

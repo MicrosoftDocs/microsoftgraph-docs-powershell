@@ -62,18 +62,6 @@ Retrieve the properties of a specific group setting object.
 The setting can be a tenant-level or group-specific setting.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -329,4 +317,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Get-MgBetaGroupSetting](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupSetting?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsetting)
+
 

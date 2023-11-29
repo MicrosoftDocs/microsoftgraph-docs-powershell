@@ -48,22 +48,6 @@ Update-MgBetaGroupDriveListOperation -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property operations in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -439,4 +423,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Update-MgGroupDriveListOperation](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveListOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdrivelistoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdrivelistoperation)
+
 

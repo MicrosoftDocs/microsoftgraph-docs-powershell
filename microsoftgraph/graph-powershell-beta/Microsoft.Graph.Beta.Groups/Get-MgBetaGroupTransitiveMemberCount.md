@@ -30,18 +30,6 @@ Get-MgBetaGroupTransitiveMemberCount -InputObject <IGroupsIdentity> [-Filter <St
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ConsistencyLevel
@@ -183,4 +171,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Get-MgGroupTransitiveMemberCount](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupTransitiveMemberCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouptransitivemembercount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouptransitivemembercount)
+
 

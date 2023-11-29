@@ -63,18 +63,6 @@ New-MgTeamworkDeletedTeamChannelMessage -InputObject <ITeamsIdentity>
 Send a new chatMessage in the specified channel.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -994,4 +982,5 @@ Link to the message in Microsoft Teams.
 [New-MgBetaTeamworkDeletedTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamworkDeletedTeamChannelMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedteamchannelmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedteamchannelmessage)
+
 

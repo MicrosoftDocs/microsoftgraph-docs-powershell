@@ -38,18 +38,6 @@ Get-MgBetaTenantRelationshipManagedTenantWindowsProtectionState -InputObject <IM
 Read the properties and relationships of a windowsProtectionState object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -292,4 +280,5 @@ INPUTOBJECT \<IManagedTenantsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantwindowsprotectionstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantwindowsprotectionstate)
+
 

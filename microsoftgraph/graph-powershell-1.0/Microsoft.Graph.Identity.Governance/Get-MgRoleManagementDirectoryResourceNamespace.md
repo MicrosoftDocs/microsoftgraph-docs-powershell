@@ -37,18 +37,6 @@ Get-MgRoleManagementDirectoryResourceNamespace -InputObject <IIdentityGovernance
 ## DESCRIPTION
 Get resourceNamespaces from roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -322,4 +310,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [Get-MgBetaRoleManagementDirectoryResourceNamespace](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryResourceNamespace?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagementdirectoryresourcenamespace](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagementdirectoryresourcenamespace)
+
 

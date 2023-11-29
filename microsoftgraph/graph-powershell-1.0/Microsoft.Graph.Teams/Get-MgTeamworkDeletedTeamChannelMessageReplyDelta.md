@@ -32,18 +32,6 @@ Get-MgTeamworkDeletedTeamChannelMessageReplyDelta -InputObject <ITeamsIdentity> 
 ## DESCRIPTION
 Invoke function delta
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -311,4 +299,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Get-MgBetaTeamworkDeletedTeamChannelMessageReplyDelta](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamworkDeletedTeamChannelMessageReplyDelta?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkdeletedteamchannelmessagereplydelta](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkdeletedteamchannelmessagereplydelta)
+
 

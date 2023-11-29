@@ -37,22 +37,6 @@ Get-MgBetaDeviceManagementDeviceConfigurationAssignment -InputObject <IDeviceMan
 ## DESCRIPTION
 The list of assignments for the device configuration profile.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -412,4 +396,5 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 [Get-MgDeviceManagementDeviceConfigurationAssignment](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceConfigurationAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementdeviceconfigurationassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementdeviceconfigurationassignment)
+
 

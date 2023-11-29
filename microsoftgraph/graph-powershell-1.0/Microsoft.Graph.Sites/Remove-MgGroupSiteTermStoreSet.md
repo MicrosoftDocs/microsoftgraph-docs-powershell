@@ -45,22 +45,6 @@ Remove-MgGroupSiteTermStoreSet -InputObject <ISitesIdentity> [-IfMatch <String>]
 Delete a set object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -GroupId
@@ -259,4 +243,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Remove-MgBetaGroupSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteTermStoreSet?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitetermstoreset](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitetermstoreset)
+
 

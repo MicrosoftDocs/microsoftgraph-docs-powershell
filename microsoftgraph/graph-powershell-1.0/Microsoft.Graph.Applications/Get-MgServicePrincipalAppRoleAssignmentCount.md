@@ -30,18 +30,6 @@ Get-MgServicePrincipalAppRoleAssignmentCount -InputObject <IApplicationsIdentity
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ConsistencyLevel
@@ -164,4 +152,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Get-MgBetaServicePrincipalAppRoleAssignmentCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalAppRoleAssignmentCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalapproleassignmentcount](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalapproleassignmentcount)
+
 

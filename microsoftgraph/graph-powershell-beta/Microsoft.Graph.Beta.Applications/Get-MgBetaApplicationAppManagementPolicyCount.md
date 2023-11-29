@@ -30,18 +30,6 @@ Get-MgBetaApplicationAppManagementPolicyCount -InputObject <IApplicationsIdentit
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -157,4 +145,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Get-MgApplicationAppManagementPolicyCount](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationAppManagementPolicyCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationappmanagementpolicycount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationappmanagementpolicycount)
+
 

@@ -22,18 +22,6 @@ Get-MgBetaEducationMeClassCount [-Filter <String>] [-Search <String>] [<CommonPa
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -80,4 +68,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgEducationMeClassCount](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeClassCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeclasscount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeclasscount)
+
 

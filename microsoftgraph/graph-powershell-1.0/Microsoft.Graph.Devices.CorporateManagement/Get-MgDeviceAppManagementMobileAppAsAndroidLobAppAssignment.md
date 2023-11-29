@@ -37,18 +37,6 @@ Get-MgDeviceAppManagementMobileAppAsAndroidLobAppAssignment -InputObject <IDevic
 ## DESCRIPTION
 Read properties and relationships of the mobileAppAssignment object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -304,4 +292,5 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
 [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappasandroidlobappassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappasandroidlobappassignment)
+
 

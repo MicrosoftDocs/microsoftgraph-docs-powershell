@@ -30,18 +30,6 @@ Remove-MgBetaInvitation -InputObject <IIdentitySignInsIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Delete entity from invitations
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -233,4 +221,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 [Remove-MgInvitation](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgInvitation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetainvitation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetainvitation)
+
 

@@ -46,22 +46,6 @@ Update-MgDriveListItemVersion -InputObject <IFilesIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Update the navigation property versions in drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -370,4 +354,5 @@ Read-only.
 [Update-MgBetaDriveListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListItemVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdrivelistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdrivelistitemversion)
+
 

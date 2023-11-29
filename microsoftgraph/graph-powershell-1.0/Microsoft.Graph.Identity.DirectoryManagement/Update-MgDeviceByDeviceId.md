@@ -68,18 +68,6 @@ Update the properties of a registered device.
 Only certain properties of a device can be updated through approved Mobile Device Managment (MDM) apps.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccountEnabled
@@ -909,4 +897,5 @@ Always null when the object hasn't been deleted.
 [Update-MgBetaDeviceByDeviceId](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDeviceByDeviceId?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdevicebydeviceid](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdevicebydeviceid)
+
 

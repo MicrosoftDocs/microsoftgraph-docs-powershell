@@ -44,22 +44,6 @@ Update-MgBetaGroupSiteListContentTypeColumnLink -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the navigation property columnLinks in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -322,4 +306,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Update-MgGroupSiteListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteListContentTypeColumnLink?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitelistcontenttypecolumnlink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitelistcontenttypecolumnlink)
+
 

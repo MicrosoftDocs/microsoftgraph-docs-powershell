@@ -29,22 +29,6 @@ Get-MgBetaReportSharePointSiteUsagePage -InputObject <IReportsIdentity> -OutFile
 ## DESCRIPTION
 Invoke function getSharePointSiteUsagePages
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -169,4 +153,5 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
 [Get-MgReportSharePointSiteUsagePage](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSharePointSiteUsagePage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsharepointsiteusagepage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsharepointsiteusagepage)
+
 

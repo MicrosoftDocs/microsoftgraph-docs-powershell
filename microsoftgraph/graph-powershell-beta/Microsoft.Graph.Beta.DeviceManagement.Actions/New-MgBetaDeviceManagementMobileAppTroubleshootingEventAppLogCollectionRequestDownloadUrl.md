@@ -31,22 +31,6 @@ New-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequestDo
 ## DESCRIPTION
 Invoke action createDownloadUrl
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AppLogCollectionRequestId
@@ -198,4 +182,5 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
 [New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequestDownloadUrl](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequestDownloadUrl?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/new-mgbetadevicemanagementmobileapptroubleshootingeventapplogcollectionrequestdownloadurl](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/new-mgbetadevicemanagementmobileapptroubleshootingeventapplogcollectionrequestdownloadurl)
+
 

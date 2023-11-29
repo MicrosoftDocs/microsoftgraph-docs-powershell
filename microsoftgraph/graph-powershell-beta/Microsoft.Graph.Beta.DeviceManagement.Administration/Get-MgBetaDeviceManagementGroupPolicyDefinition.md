@@ -34,22 +34,6 @@ Get-MgBetaDeviceManagementGroupPolicyDefinition -InputObject <IDeviceManagementA
 ## DESCRIPTION
 The available group policy definitions for this account.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -311,4 +295,5 @@ INPUTOBJECT \<IDeviceManagementAdministrationIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementgrouppolicydefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementgrouppolicydefinition)
+
 

@@ -49,22 +49,6 @@ Update-MgBetaDeviceManagementManagedDeviceCompliancePolicyState -InputObject <ID
 ## DESCRIPTION
 Update the navigation property deviceCompliancePolicyStates in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -520,4 +504,5 @@ SETTINGSTATES \<IMicrosoftGraphDeviceCompliancePolicySettingState\[\]\>: .
 [Update-MgDeviceManagementManagedDeviceCompliancePolicyState](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementManagedDeviceCompliancePolicyState?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmanageddevicecompliancepolicystate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmanageddevicecompliancepolicystate)
+
 

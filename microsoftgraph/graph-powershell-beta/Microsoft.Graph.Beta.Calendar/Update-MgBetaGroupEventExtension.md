@@ -42,22 +42,6 @@ Update-MgBetaGroupEventExtension -InputObject <ICalendarIdentity> -BodyParameter
 ## DESCRIPTION
 Update the navigation property extensions in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -233,4 +217,5 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
 [Update-MgGroupEventExtension](/powershell/module/Microsoft.Graph.Calendar/Update-MgGroupEventExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetagroupeventextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetagroupeventextension)
+
 

@@ -28,22 +28,6 @@ Get-MgSiteByPath -InputObject <ISitesIdentity> [<CommonParameters>]
 ## DESCRIPTION
 Invoke function getByPath
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -151,4 +135,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgBetaSiteByPath](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteByPath?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitebypath](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitebypath)
+
 

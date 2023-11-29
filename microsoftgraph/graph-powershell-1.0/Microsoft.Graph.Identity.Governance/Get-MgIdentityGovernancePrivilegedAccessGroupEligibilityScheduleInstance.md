@@ -43,18 +43,6 @@ Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance
 Read the properties and relationships of a privilegedAccessGroupEligibilityScheduleInstance object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -328,4 +316,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceprivilegedaccessgroupeligibilityscheduleinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceprivilegedaccessgroupeligibilityscheduleinstance)
+
 

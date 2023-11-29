@@ -44,18 +44,6 @@ Update-MgPrintShareJobDocument -InputObject <IDevicesCloudPrintIdentity>
 ## DESCRIPTION
 Update the navigation property documents in print
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -291,4 +279,5 @@ INPUTOBJECT \<IDevicesCloudPrintIdentity\>: Identity Parameter
 [Update-MgBetaPrintShareJobDocument](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintShareJobDocument?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintsharejobdocument](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintsharejobdocument)
+
 

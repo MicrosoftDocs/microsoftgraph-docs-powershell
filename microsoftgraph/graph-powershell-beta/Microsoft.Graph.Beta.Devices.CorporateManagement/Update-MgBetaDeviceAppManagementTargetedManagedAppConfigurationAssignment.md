@@ -49,18 +49,6 @@ Update-MgBetaDeviceAppManagementTargetedManagedAppConfigurationAssignment
 ## DESCRIPTION
 Update the navigation property assignments in deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -339,4 +327,5 @@ TARGET \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>: Base type for 
 [Update-MgDeviceAppManagementTargetedManagedAppConfigurationAssignment](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementTargetedManagedAppConfigurationAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementtargetedmanagedappconfigurationassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementtargetedmanagedappconfigurationassignment)
+
 

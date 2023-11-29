@@ -30,18 +30,6 @@ Get-MgBetaExternalConnectionItemActivityCount -InputObject <ISearchIdentity> [-F
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExternalConnectionId
@@ -160,4 +148,5 @@ INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
 [Get-MgExternalConnectionItemActivityCount](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnectionItemActivityCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnectionitemactivitycount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnectionitemactivitycount)
+
 

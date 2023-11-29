@@ -30,18 +30,6 @@ Remove-MgBetaDeviceManagementManagedDeviceWindowsProtectionState -InputObject <I
 ## DESCRIPTION
 Delete navigation property windowsProtectionState for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -296,4 +284,5 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 [Remove-MgDeviceManagementManagedDeviceWindowsProtectionState](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementManagedDeviceWindowsProtectionState?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementmanageddevicewindowsprotectionstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementmanageddevicewindowsprotectionstate)
+
 

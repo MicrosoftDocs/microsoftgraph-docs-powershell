@@ -46,22 +46,6 @@ Update-MgBetaPrivilegedAccessResourceRoleSettingRoleDefinition -InputObject <IId
 ## DESCRIPTION
 Update the navigation property roleDefinition in privilegedAccess
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -841,4 +825,5 @@ The setting is not supported for now.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedaccessresourcerolesettingroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedaccessresourcerolesettingroledefinition)
+
 

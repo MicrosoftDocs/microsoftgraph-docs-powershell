@@ -29,18 +29,6 @@ Invoke-MgRetryUserServiceProvisioning -InputObject <IUsersActionsIdentity> [-Pas
 ## DESCRIPTION
 Invoke action retryServiceProvisioning
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -170,4 +158,5 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 [Invoke-MgBetaRetryUserServiceProvisioning](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaRetryUserServiceProvisioning?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgretryuserserviceprovisioning](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgretryuserserviceprovisioning)
+
 

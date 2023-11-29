@@ -27,18 +27,6 @@ Remove-MgBetaDeviceManagementDerivedCredential -InputObject <IDeviceManagementId
 ## DESCRIPTION
 Delete navigation property derivedCredentials for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceManagementDerivedCredentialSettingsId
@@ -292,4 +280,5 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementderivedcredential](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementderivedcredential)
+
 

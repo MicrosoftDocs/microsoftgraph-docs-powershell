@@ -37,18 +37,6 @@ Get-MgBetaDeviceAppManagementMobileAppAsIoStoreApp -InputObject <IDevicesCorpora
 ## DESCRIPTION
 Get the item of type microsoft.graph.mobileApp as microsoft.graph.iosStoreApp
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -322,4 +310,5 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
 [Get-MgDeviceAppManagementMobileAppAsIoStoreApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppAsIoStoreApp?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementmobileappasiostoreapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementmobileappasiostoreapp)
+
 

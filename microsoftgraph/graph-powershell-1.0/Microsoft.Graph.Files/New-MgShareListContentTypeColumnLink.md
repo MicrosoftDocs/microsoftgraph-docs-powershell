@@ -42,22 +42,6 @@ New-MgShareListContentTypeColumnLink -InputObject <IFilesIdentity> -BodyParamete
 ## DESCRIPTION
 Create new navigation property to columnLinks for shares
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -251,4 +235,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [New-MgBetaShareListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaShareListContentTypeColumnLink?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgsharelistcontenttypecolumnlink](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgsharelistcontenttypecolumnlink)
+
 

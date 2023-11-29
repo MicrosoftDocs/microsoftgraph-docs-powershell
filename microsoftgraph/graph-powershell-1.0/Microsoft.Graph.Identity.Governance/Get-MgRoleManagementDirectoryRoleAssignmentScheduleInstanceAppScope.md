@@ -33,18 +33,6 @@ Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstanceAppScope -InputObject
 Read-only property with details of the app-specific scope when the assignment or role eligibility is scoped to an app.
 Nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -197,4 +185,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstanceAppScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstanceAppScope?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagementdirectoryroleassignmentscheduleinstanceappscope](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagementdirectoryroleassignmentscheduleinstanceappscope)
+
 

@@ -33,18 +33,6 @@ Get-MgGroupSiteOnenoteNotebookSectionGroupSectionPageParentNotebook -InputObject
 The notebook that contains the page.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -242,4 +230,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPageParentNotebook](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPageParentNotebook?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotenotebooksectiongroupsectionpageparentnotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotenotebooksectiongroupsectionpageparentnotebook)
+
 

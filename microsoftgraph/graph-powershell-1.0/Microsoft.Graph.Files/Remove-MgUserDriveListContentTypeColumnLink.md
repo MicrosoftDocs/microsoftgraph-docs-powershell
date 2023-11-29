@@ -30,22 +30,6 @@ Remove-MgUserDriveListContentTypeColumnLink -InputObject <IFilesIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property columnLinks for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ColumnLinkId
@@ -230,4 +214,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Remove-MgBetaUserDriveListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveListContentTypeColumnLink?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdrivelistcontenttypecolumnlink](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdrivelistcontenttypecolumnlink)
+
 

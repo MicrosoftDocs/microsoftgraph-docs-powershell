@@ -32,18 +32,6 @@ Required.
 The configuration for what to invoke when authentication methods are ready to be presented to the user.
 Must have at least one identity provider linked.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AuthenticationEventsFlowId
@@ -203,4 +191,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityauthenticationeventflowonauthenticationmethodloadstart](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityauthenticationeventflowonauthenticationmethodloadstart)
+
 

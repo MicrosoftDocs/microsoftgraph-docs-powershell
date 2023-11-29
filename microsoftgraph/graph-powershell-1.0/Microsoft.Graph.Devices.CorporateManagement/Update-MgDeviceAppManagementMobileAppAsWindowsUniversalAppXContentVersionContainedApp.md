@@ -46,18 +46,6 @@ Update-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContain
 ## DESCRIPTION
 Update the navigation property containedApps in deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -255,4 +243,5 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
 [Update-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileappaswindowsuniversalappxcontentversioncontainedapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileappaswindowsuniversalappxcontentversioncontainedapp)
+
 

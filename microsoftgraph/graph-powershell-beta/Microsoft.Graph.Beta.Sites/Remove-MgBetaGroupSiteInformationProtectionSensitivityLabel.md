@@ -27,18 +27,6 @@ Remove-MgBetaGroupSiteInformationProtectionSensitivityLabel -InputObject <ISites
 ## DESCRIPTION
 Delete navigation property sensitivityLabels for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -231,4 +219,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsiteinformationprotectionsensitivitylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsiteinformationprotectionsensitivitylabel)
+
 

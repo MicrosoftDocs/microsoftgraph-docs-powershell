@@ -47,18 +47,6 @@ Retrieving the transcript returns the metadata of the single transcript associat
 Retrieving the content of the transcript returns the stream of text associated with the transcript.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -307,4 +295,5 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
 [Get-MgBetaUserOnlineMeetingTranscript](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaUserOnlineMeetingTranscript?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguseronlinemeetingtranscript](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguseronlinemeetingtranscript)
+
 

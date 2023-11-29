@@ -38,22 +38,6 @@ A delta function call for messages in a folder is similar to a GET request, exce
 This allows you to maintain and synchronize a local store of a user's messages withouthaving to fetch the entire set of messages from the server every time.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -326,4 +310,5 @@ INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
 [Get-MgUserMailFolderChildFolderMessageDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserMailFolderChildFolderMessageDelta?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausermailfolderchildfoldermessagedelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausermailfolderchildfoldermessagedelta)
+
 

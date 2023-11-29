@@ -59,18 +59,6 @@ Get-MgSecurityThreatIntelligenceArticleIndicator -InputObject <ISecurityIdentity
 Read the properties and relationships of an articleIndicator object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -343,4 +331,5 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Get-MgBetaSecurityThreatIntelligenceArticleIndicator](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceArticleIndicator?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencearticleindicator](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencearticleindicator)
+
 

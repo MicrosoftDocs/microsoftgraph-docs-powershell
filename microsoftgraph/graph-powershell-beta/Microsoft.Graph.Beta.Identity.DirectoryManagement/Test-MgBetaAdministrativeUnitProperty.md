@@ -48,22 +48,6 @@ If one or more properties fail multiple validations, only the property with the 
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -228,4 +212,5 @@ BODYPARAMETER \<IPaths1B6V5BxAdministrativeunitsMicrosoftGraphValidateproperties
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/test-mgbetaadministrativeunitproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/test-mgbetaadministrativeunitproperty)
+
 

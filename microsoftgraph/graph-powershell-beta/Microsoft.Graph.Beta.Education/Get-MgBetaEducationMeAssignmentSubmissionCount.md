@@ -30,18 +30,6 @@ Get-MgBetaEducationMeAssignmentSubmissionCount -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -143,4 +131,5 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 [Get-MgEducationMeAssignmentSubmissionCount](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeAssignmentSubmissionCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeassignmentsubmissioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeassignmentsubmissioncount)
+
 

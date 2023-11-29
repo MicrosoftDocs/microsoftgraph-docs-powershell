@@ -31,22 +31,6 @@ Remove-MgIdentityB2XUserFlowIdentityProviderByRef -InputObject <IIdentitySignIns
 ## DESCRIPTION
 Delete ref of navigation property userFlowIdentityProviders for identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId
@@ -247,4 +231,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 [Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityb2xuserflowidentityproviderbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityb2xuserflowidentityproviderbyref)
+
 

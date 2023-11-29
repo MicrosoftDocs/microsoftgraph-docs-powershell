@@ -37,18 +37,6 @@ Get-MgDeviceAppManagementMobileAppAsAndroidStoreAppCategory -InputObject <IDevic
 ## DESCRIPTION
 The list of categories for this app.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -304,4 +292,5 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
 [Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppCategory](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppCategory?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappasandroidstoreappcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappasandroidstoreappcategory)
+
 

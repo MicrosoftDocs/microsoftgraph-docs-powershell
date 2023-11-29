@@ -31,18 +31,6 @@ Remove-MgBetaGroupSiteTermStoreSetParentGroupSetTermChild -InputObject <ISitesId
 ## DESCRIPTION
 Delete navigation property children for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -281,4 +269,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Remove-MgGroupSiteTermStoreSetParentGroupSetTermChild](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteTermStoreSetParentGroupSetTermChild?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitetermstoresetparentgroupsettermchild](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitetermstoresetparentgroupsettermchild)
+
 

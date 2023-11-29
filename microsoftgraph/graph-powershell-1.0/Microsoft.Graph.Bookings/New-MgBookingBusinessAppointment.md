@@ -59,22 +59,6 @@ New-MgBookingBusinessAppointment -InputObject <IBookingsIdentity>
 Create a new bookingAppointment for the specified bookingBusiness.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalInformation
@@ -677,4 +661,5 @@ See below for more possible values.
 [New-MgBetaBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaBookingBusinessAppointment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessappointment](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessappointment)
+
 

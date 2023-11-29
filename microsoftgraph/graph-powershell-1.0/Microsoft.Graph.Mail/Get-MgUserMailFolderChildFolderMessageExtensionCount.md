@@ -30,18 +30,6 @@ Get-MgUserMailFolderChildFolderMessageExtensionCount -InputObject <IMailIdentity
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -164,4 +152,5 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
 [Get-MgBetaUserMailFolderChildFolderMessageExtensionCount](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderChildFolderMessageExtensionCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolderchildfoldermessageextensioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolderchildfoldermessageextensioncount)
+
 

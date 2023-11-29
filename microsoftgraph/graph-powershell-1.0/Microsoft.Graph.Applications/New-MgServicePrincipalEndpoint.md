@@ -46,22 +46,6 @@ New-MgServicePrincipalEndpoint -InputObject <IApplicationsIdentity> -BodyParamet
 ## DESCRIPTION
 Create new navigation property to endpoints for servicePrincipals
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -320,4 +304,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [New-MgBetaServicePrincipalEndpoint](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalEndpoint?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalendpoint](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalendpoint)
+
 

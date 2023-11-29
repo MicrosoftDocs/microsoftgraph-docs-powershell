@@ -33,22 +33,6 @@ Get-MgEducationSchoolAdministrativeUnit -InputObject <IEducationIdentity> [-Expa
 Get a list of administrativeUnits associated with an educationSchool object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EducationSchoolId
@@ -143,4 +127,5 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 [Get-MgBetaEducationSchoolAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchoolAdministrativeUnit?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationschooladministrativeunit](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationschooladministrativeunit)
+
 

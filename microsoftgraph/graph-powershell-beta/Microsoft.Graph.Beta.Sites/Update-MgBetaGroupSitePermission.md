@@ -57,22 +57,6 @@ Update-MgBetaGroupSitePermission -InputObject <ISitesIdentity> -BodyParameter <I
 Update the permission object on a site.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -682,4 +666,5 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
 [Update-MgGroupSitePermission](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSitePermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitepermission)
+
 

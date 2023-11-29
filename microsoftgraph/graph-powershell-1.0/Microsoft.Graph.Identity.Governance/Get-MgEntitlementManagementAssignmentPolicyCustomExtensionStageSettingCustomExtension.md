@@ -33,18 +33,6 @@ Indicates the custom workflow extension that will be executed at this stage.
 Nullable.
 Supports $expand.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessPackageAssignmentPolicyId
@@ -211,4 +199,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementassignmentpolicycustomextensionstagesettingcustomextension](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementassignmentpolicycustomextensionstagesettingcustomextension)
+
 

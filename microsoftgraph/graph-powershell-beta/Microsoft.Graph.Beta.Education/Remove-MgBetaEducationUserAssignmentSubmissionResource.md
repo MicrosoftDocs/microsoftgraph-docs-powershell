@@ -42,22 +42,6 @@ This allows you to 'reset' the resource to its original state.
 If the resource wasn't copied from the assignment but was added from the student, the resource is deleted.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -235,4 +219,5 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 [Remove-MgEducationUserAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationUserAssignmentSubmissionResource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationuserassignmentsubmissionresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationuserassignmentsubmissionresource)
+
 

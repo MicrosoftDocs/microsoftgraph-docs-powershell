@@ -30,18 +30,6 @@ Enable-MgUserAuthenticationPhoneMethodSmsSignIn -InputObject <IUsersActionsIdent
 Enable SMS sign-in for an existing mobile phone number registered to a user.
 To be successfully enabled: This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -185,4 +173,5 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/enable-mguserauthenticationphonemethodsmssignin](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/enable-mguserauthenticationphonemethodsmssignin)
+
 

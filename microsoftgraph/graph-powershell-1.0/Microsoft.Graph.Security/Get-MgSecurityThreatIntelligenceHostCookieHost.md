@@ -30,18 +30,6 @@ Get-MgSecurityThreatIntelligenceHostCookieHost -InputObject <ISecurityIdentity> 
 ## DESCRIPTION
 Indicates that a cookie of this name and domain was found related to this host.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -178,4 +166,5 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Get-MgBetaSecurityThreatIntelligenceHostCookieHost](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostCookieHost?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostcookiehost](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostcookiehost)
+
 

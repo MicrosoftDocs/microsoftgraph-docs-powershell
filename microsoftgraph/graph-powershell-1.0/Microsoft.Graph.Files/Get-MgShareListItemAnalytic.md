@@ -42,22 +42,6 @@ Get-MgShareListItemAnalytic -InputObject <IFilesIdentity> [-ExpandProperty <Stri
 ## DESCRIPTION
 Analytics about the view activities that took place on this item.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -181,4 +165,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgBetaShareListItemAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListItemAnalytic?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistitemanalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistitemanalytic)
+
 

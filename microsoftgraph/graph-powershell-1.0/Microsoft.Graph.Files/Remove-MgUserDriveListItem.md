@@ -33,22 +33,6 @@ Remove-MgUserDriveListItem -InputObject <IFilesIdentity> [-IfMatch <String>] [-P
 Removes an item from a list\]\[\].
 This API is available in the following \[national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -218,4 +202,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Remove-MgBetaUserDriveListItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveListItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdrivelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdrivelistitem)
+
 

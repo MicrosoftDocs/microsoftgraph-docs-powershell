@@ -32,18 +32,6 @@ Remove-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp
 ## DESCRIPTION
 Delete navigation property containedApps for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -224,4 +212,5 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
 [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmobileappasmacosdmgappcontentversioncontainedapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmobileappasmacosdmgappcontentversioncontainedapp)
+
 

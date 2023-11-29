@@ -59,18 +59,6 @@ Get-MgSecurityThreatIntelligenceHostCookie -InputObject <ISecurityIdentity> [-Ex
 Read the properties and relationships of a hostCookie object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -343,4 +331,5 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Get-MgBetaSecurityThreatIntelligenceHostCookie](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostCookie?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostcookie](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostcookie)
+
 

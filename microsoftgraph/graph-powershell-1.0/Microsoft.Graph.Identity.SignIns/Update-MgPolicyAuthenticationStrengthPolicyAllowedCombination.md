@@ -51,18 +51,6 @@ Update the allowedCombinations property of an authenticationStrengthPolicy objec
 To update other properties of an authenticationStrengthPolicy object, use the Update authenticationStrengthPolicy method.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -254,4 +242,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 [Update-MgBetaPolicyAuthenticationStrengthPolicyAllowedCombination](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyAuthenticationStrengthPolicyAllowedCombination?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationstrengthpolicyallowedcombination](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationstrengthpolicyallowedcombination)
+
 

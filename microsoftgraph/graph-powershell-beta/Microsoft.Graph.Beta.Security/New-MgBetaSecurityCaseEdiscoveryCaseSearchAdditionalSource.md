@@ -49,22 +49,6 @@ New-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource -InputObject <ISecuri
 Create a new additional source associated with an eDiscovery search.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -379,4 +363,5 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [New-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasesearchadditionalsource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasesearchadditionalsource)
+
 

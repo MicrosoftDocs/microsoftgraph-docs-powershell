@@ -33,18 +33,6 @@ New-MgBetaDeviceManagementIoUpdateStatus -BodyParameter <IMicrosoftGraphIosUpdat
 ## DESCRIPTION
 Create new navigation property to iosUpdateStatuses for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -341,4 +329,5 @@ Read-only.
 [New-MgDeviceManagementIoUpdateStatus](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementIoUpdateStatus?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementioupdatestatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementioupdatestatus)
+
 

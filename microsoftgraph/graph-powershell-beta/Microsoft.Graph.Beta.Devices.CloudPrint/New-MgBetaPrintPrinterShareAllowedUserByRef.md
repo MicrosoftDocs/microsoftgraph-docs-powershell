@@ -42,22 +42,6 @@ New-MgBetaPrintPrinterShareAllowedUserByRef -InputObject <IDevicesCloudPrintIden
 Grant the specified user access to submit print jobs to the associated printerShare.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -223,4 +207,5 @@ INPUTOBJECT \<IDevicesCloudPrintIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintprintersharealloweduserbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintprintersharealloweduserbyref)
+
 

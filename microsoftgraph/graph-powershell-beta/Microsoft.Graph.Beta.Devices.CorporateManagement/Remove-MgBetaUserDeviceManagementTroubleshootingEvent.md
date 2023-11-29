@@ -30,22 +30,6 @@ Remove-MgBetaUserDeviceManagementTroubleshootingEvent -InputObject <IDevicesCorp
 ## DESCRIPTION
 Delete navigation property deviceManagementTroubleshootingEvents for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DeviceManagementTroubleshootingEventId
@@ -244,4 +228,5 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
 [Remove-MgUserDeviceManagementTroubleshootingEvent](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgUserDeviceManagementTroubleshootingEvent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/remove-mgbetauserdevicemanagementtroubleshootingevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/remove-mgbetauserdevicemanagementtroubleshootingevent)
+
 

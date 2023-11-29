@@ -51,22 +51,6 @@ Update-MgBetaPrintConnector -InputObject <IDevicesCloudPrintIdentity>
 Update the properties of a printConnector object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -404,4 +388,5 @@ The elements should be in hierarchical order.
 [Update-MgPrintConnector](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintConnector?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintconnector)
+
 

@@ -23,22 +23,6 @@ Get-MgBetaDeviceManagementManagedDeviceOverview [-ExpandProperty <String[]>] [-P
 ## DESCRIPTION
 Device overview
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -85,4 +69,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgDeviceManagementManagedDeviceOverview](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementManagedDeviceOverview?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmanageddeviceoverview](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmanageddeviceoverview)
+
 

@@ -52,22 +52,6 @@ Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerforman
 ## DESCRIPTION
 Update the navigation property userExperienceAnalyticsAppHealthDeviceModelPerformance in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ActiveDeviceCount
@@ -473,4 +457,5 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 [Update-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticapphealthdevicemodelperformance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticapphealthdevicemodelperformance)
+
 

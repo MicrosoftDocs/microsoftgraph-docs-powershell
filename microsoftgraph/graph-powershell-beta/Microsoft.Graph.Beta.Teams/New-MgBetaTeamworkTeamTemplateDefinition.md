@@ -45,22 +45,6 @@ New-MgBetaTeamworkTeamTemplateDefinition -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create new navigation property to definitions for teamwork
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -15154,4 +15138,5 @@ This URL should be treated as an opaque blob, and not parsed.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkteamtemplatedefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkteamtemplatedefinition)
+
 

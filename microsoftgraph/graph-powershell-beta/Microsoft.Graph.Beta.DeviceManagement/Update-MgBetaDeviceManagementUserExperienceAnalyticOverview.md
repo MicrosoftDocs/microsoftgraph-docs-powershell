@@ -30,22 +30,6 @@ Update-MgBetaDeviceManagementUserExperienceAnalyticOverview
 ## DESCRIPTION
 Update the navigation property userExperienceAnalyticsOverview in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -182,4 +166,5 @@ Possible values are: None, Informational, Warning, Error.
 [Update-MgDeviceManagementUserExperienceAnalyticOverview](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementUserExperienceAnalyticOverview?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticoverview](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticoverview)
+
 

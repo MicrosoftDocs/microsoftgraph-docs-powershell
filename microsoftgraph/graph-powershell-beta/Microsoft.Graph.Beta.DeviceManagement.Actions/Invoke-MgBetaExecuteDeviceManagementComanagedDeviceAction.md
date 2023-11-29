@@ -31,22 +31,6 @@ Invoke-MgBetaExecuteDeviceManagementComanagedDeviceAction
 ## DESCRIPTION
 Invoke action executeAction
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ActionName
@@ -308,4 +292,5 @@ BODYPARAMETER \<IPaths5Wfb68DevicemanagementComanageddevicesMicrosoftGraphExecut
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetaexecutedevicemanagementcomanageddeviceaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetaexecutedevicemanagementcomanageddeviceaction)
+
 

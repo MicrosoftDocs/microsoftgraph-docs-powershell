@@ -34,22 +34,6 @@ Get-MgBetaDeviceManagementGroupPolicyObjectFile -InputObject <IDeviceManagementA
 ## DESCRIPTION
 A list of Group Policy Object files uploaded.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -311,4 +295,5 @@ INPUTOBJECT \<IDeviceManagementAdministrationIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementgrouppolicyobjectfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementgrouppolicyobjectfile)
+
 

@@ -30,18 +30,6 @@ Get-MgCommunicationCallParticipantCount -InputObject <ICloudCommunicationsIdenti
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CallId
@@ -139,4 +127,5 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
 [Get-MgBetaCommunicationCallParticipantCount](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationCallParticipantCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallparticipantcount](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallparticipantcount)
+
 

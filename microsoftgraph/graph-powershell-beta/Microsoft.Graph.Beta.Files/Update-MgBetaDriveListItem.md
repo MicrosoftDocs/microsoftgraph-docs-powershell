@@ -58,22 +58,6 @@ Update-MgBetaDriveListItem -InputObject <IFilesIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Update the navigation property items in drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Activities
@@ -44888,4 +44872,5 @@ Read-only.
 [Update-MgDriveListItem](/powershell/module/Microsoft.Graph.Files/Update-MgDriveListItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadrivelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadrivelistitem)
+
 

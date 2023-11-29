@@ -38,22 +38,6 @@ Get-MgUserDriveListColumn -InputObject <IFilesIdentity> [-ExpandProperty <String
 ## DESCRIPTION
 The collection of field definitions for this list.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -313,4 +297,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgBetaUserDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveListColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivelistcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivelistcolumn)
+
 

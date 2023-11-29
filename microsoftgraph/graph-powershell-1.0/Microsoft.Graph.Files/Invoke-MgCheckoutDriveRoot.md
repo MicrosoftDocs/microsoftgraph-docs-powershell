@@ -31,22 +31,6 @@ Invoke-MgCheckoutDriveRoot -InputObject <IFilesIdentity> [-PassThru] [-WhatIf] [
 Check out a driveItem resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -171,4 +155,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Invoke-MgBetaCheckoutDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaCheckoutDriveRoot?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgcheckoutdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgcheckoutdriveroot)
+
 

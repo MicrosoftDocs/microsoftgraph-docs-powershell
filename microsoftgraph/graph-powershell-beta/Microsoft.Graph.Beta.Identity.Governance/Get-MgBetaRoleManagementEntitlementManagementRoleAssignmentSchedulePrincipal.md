@@ -32,18 +32,6 @@ Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentSchedulePrincipal
 ## DESCRIPTION
 The principal that's getting a role assignment or that's eligible for a role through the request.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -227,4 +215,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [Get-MgRoleManagementEntitlementManagementRoleAssignmentSchedulePrincipal](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleAssignmentSchedulePrincipal?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententitlementmanagementroleassignmentscheduleprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententitlementmanagementroleassignmentscheduleprincipal)
+
 

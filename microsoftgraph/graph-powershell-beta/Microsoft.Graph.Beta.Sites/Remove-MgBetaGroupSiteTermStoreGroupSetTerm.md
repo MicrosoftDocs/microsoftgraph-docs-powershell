@@ -33,22 +33,6 @@ Remove-MgBetaGroupSiteTermStoreGroupSetTerm -InputObject <ISitesIdentity> [-IfMa
 Delete a term object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -GroupId
@@ -272,4 +256,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Remove-MgGroupSiteTermStoreGroupSetTerm](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteTermStoreGroupSetTerm?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitetermstoregroupsetterm](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitetermstoregroupsetterm)
+
 

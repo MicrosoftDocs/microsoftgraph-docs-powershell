@@ -28,22 +28,6 @@ Get-MgBetaDeviceManagementDeviceConfigurationTargetedUserAndDevice
 ## DESCRIPTION
 Invoke action getTargetedUsersAndDevices
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -145,4 +129,5 @@ BODYPARAMETER \<IPaths1G57514DevicemanagementDeviceconfigurationsMicrosoftGraphG
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementdeviceconfigurationtargeteduseranddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementdeviceconfigurationtargeteduseranddevice)
+
 

@@ -45,18 +45,6 @@ Update-MgBetaUserInsightTrending -InputObject <IUsersIdentity> -BodyParameter <I
 ## DESCRIPTION
 Update the navigation property trending in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -368,4 +356,5 @@ See the Type property values section, for supported types.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauserinsighttrending](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauserinsighttrending)
+
 

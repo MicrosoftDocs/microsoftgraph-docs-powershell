@@ -50,22 +50,6 @@ Update-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRule
 ## DESCRIPTION
 Update the navigation property scheduledActionsForRule in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -412,4 +396,5 @@ Valid values 0 to 8760
 [Update-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementdevicecompliancepolicyscheduledactionforrule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementdevicecompliancepolicyscheduledactionforrule)
+
 

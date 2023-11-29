@@ -30,18 +30,6 @@ Get-MgBetaSiteAnalyticItemActivityStatActivityDriveItem -InputObject <ISitesIden
 ## DESCRIPTION
 Exposes the driveItem that was the target of this activity.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -204,4 +192,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgSiteAnalyticItemActivityStatActivityDriveItem](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteAnalyticItemActivityStatActivityDriveItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteanalyticitemactivitystatactivitydriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteanalyticitemactivitystatactivitydriveitem)
+
 

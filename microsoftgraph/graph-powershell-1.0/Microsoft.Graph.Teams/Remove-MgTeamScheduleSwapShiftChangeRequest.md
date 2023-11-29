@@ -30,22 +30,6 @@ Remove-MgTeamScheduleSwapShiftChangeRequest -InputObject <ITeamsIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property swapShiftsChangeRequests for teams
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -208,4 +192,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Remove-MgBetaTeamScheduleSwapShiftChangeRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamScheduleSwapShiftChangeRequest?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamscheduleswapshiftchangerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamscheduleswapshiftchangerequest)
+
 

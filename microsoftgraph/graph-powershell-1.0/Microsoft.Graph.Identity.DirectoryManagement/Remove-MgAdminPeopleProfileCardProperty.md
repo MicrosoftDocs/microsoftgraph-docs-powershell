@@ -30,18 +30,6 @@ Remove-MgAdminPeopleProfileCardProperty -InputObject <IIdentityDirectoryManageme
 ## DESCRIPTION
 Delete navigation property profileCardProperties for admin
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -181,4 +169,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 [Remove-MgBetaAdminPeopleProfileCardProperty](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaAdminPeopleProfileCardProperty?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgadminpeopleprofilecardproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgadminpeopleprofilecardproperty)
+
 

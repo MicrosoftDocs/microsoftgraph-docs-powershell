@@ -34,18 +34,6 @@ Only teachers can perform this operation.
 The teacher determines what resources to upload to the SharePoint folder for the module.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationClassId
@@ -162,4 +150,5 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/set-mgbetaeducationclassmoduleupresourcefolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/set-mgbetaeducationclassmoduleupresourcefolder)
+
 

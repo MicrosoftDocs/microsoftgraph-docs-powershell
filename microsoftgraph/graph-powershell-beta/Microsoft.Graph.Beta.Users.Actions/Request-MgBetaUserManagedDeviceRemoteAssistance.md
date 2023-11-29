@@ -30,22 +30,6 @@ Request-MgBetaUserManagedDeviceRemoteAssistance -InputObject <IUsersActionsIdent
 ## DESCRIPTION
 Request remote assistance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -200,4 +184,5 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 [Request-MgUserManagedDeviceRemoteAssistance](/powershell/module/Microsoft.Graph.Users.Actions/Request-MgUserManagedDeviceRemoteAssistance?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/request-mgbetausermanageddeviceremoteassistance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/request-mgbetausermanageddeviceremoteassistance)
+
 

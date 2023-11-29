@@ -27,22 +27,6 @@ Set-MgBetaCommunicationOnlineMeetingAlternativeRecording -InputObject <ICloudCom
 ## DESCRIPTION
 Update alternativeRecording for the navigation property onlineMeetings in communications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Data
@@ -193,4 +177,5 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetacommunicationonlinemeetingalternativerecording](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetacommunicationonlinemeetingalternativerecording)
+
 

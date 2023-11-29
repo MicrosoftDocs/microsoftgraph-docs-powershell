@@ -44,18 +44,6 @@ Update-MgSecurityThreatIntelligenceArticleIndicator -InputObject <ISecurityIdent
 ## DESCRIPTION
 Update the navigation property articleIndicators in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -270,4 +258,5 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Update-MgBetaSecurityThreatIntelligenceArticleIndicator](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligenceArticleIndicator?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencearticleindicator](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencearticleindicator)
+
 

@@ -33,18 +33,6 @@ Remove-MgBetaIdentityB2XUserFlowIdentityProvider -InputObject <IIdentitySignInsI
 Delete an identity provider from a b2xIdentityUserFlow object.
 For self-service sign-up user flows, the values can be Google-OAUTH or Facebook-OAUTH.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId
@@ -251,4 +239,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 [Remove-MgIdentityB2XUserFlowIdentityProvider](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityB2XUserFlowIdentityProvider?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityb2xuserflowidentityprovider](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityb2xuserflowidentityprovider)
+
 

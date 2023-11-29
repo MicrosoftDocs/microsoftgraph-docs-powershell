@@ -59,18 +59,6 @@ Get-MgSecurityThreatIntelligenceHostComponent -InputObject <ISecurityIdentity> [
 Read the properties and relationships of a hostComponent object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -343,4 +331,5 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Get-MgBetaSecurityThreatIntelligenceHostComponent](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostComponent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostcomponent](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostcomponent)
+
 

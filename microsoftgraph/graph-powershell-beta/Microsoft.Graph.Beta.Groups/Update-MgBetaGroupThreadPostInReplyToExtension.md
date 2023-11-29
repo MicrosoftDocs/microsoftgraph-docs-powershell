@@ -47,22 +47,6 @@ Update an open extension (openTypeExtension object) with the properties in the r
 See the table in the Permissions section for the list of resources that support open extensions.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -281,4 +265,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Update-MgGroupThreadPostInReplyToExtension](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupThreadPostInReplyToExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupthreadpostinreplytoextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupthreadpostinreplytoextension)
+
 

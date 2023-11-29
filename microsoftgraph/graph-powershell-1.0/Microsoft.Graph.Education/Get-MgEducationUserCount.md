@@ -22,18 +22,6 @@ Get-MgEducationUserCount [-Filter <String>] [-Search <String>] [<CommonParameter
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -80,4 +68,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgBetaEducationUserCount](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationusercount)
+
 

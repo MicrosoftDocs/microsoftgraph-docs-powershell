@@ -30,18 +30,6 @@ Remove-MgBetaSecurityThreatIntelligenceSubdomain -InputObject <ISecurityIdentity
 ## DESCRIPTION
 Delete navigation property subdomains for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -233,4 +221,5 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Remove-MgSecurityThreatIntelligenceSubdomain](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityThreatIntelligenceSubdomain?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritythreatintelligencesubdomain](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritythreatintelligencesubdomain)
+
 

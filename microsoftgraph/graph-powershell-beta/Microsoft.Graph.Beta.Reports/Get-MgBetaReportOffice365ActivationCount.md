@@ -22,22 +22,6 @@ Get-MgBetaReportOffice365ActivationCount -OutFile <String> [-PassThru] [<CommonP
 ## DESCRIPTION
 Invoke function getOffice365ActivationCounts
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -OutFile
@@ -84,4 +68,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgReportOffice365ActivationCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportOffice365ActivationCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportoffice365activationcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportoffice365activationcount)
+
 

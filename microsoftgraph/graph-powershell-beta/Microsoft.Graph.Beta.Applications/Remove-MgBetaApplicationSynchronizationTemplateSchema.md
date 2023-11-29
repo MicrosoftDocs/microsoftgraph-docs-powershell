@@ -30,22 +30,6 @@ Remove-MgBetaApplicationSynchronizationTemplateSchema -InputObject <IApplication
 ## DESCRIPTION
 Delete navigation property schema for applications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -207,4 +191,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Remove-MgApplicationSynchronizationTemplateSchema](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationSynchronizationTemplateSchema?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationsynchronizationtemplateschema](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationsynchronizationtemplateschema)
+
 

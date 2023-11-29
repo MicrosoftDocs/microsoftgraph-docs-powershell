@@ -41,18 +41,6 @@ Get-MgIdentityGovernanceTermsOfUseAgreement -InputObject <IIdentityGovernanceIde
 Retrieve the properties and relationships of an agreement object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AgreementId
@@ -326,4 +314,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [Get-MgBetaIdentityGovernanceTermsOfUseAgreement](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceTermsOfUseAgreement?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancetermsofuseagreement](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancetermsofuseagreement)
+
 

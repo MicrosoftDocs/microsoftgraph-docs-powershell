@@ -27,18 +27,6 @@ Get-MgBetaDeviceManagementRoleScopeTagAssignmentCount -InputObject <IDeviceManag
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -179,4 +167,5 @@ INPUTOBJECT \<IDeviceManagementAdministrationIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementrolescopetagassignmentcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementrolescopetagassignmentcount)
+
 

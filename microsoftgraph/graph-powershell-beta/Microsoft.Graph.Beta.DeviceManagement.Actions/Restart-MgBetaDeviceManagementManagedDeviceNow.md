@@ -30,22 +30,6 @@ Restart-MgBetaDeviceManagementManagedDeviceNow -InputObject <IDeviceManagementAc
 ## DESCRIPTION
 Reboot device
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -197,4 +181,5 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
 [Restart-MgDeviceManagementManagedDeviceNow](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Restart-MgDeviceManagementManagedDeviceNow?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/restart-mgbetadevicemanagementmanageddevicenow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/restart-mgbetadevicemanagementmanageddevicenow)
+
 

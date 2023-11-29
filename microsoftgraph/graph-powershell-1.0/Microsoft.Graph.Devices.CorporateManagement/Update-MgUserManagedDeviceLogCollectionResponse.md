@@ -49,18 +49,6 @@ Update-MgUserManagedDeviceLogCollectionResponse -InputObject <IDevicesCorporateM
 ## DESCRIPTION
 Update the navigation property logCollectionRequests in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -406,4 +394,5 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
 [Update-MgBetaUserManagedDeviceLogCollectionResponse](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaUserManagedDeviceLogCollectionResponse?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgusermanageddevicelogcollectionresponse](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgusermanageddevicelogcollectionresponse)
+
 

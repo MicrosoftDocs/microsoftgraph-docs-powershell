@@ -47,18 +47,6 @@ New-MgServicePrincipalSynchronizationTemplate -InputObject <IApplicationsIdentit
 ## DESCRIPTION
 Create new navigation property to templates for servicePrincipals
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -618,4 +606,5 @@ Must match one of the directory definitions in synchronizationSchema.
 [New-MgBetaServicePrincipalSynchronizationTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalSynchronizationTemplate?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalsynchronizationtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalsynchronizationtemplate)
+
 

@@ -32,18 +32,6 @@ Retry installation for the partner agents that failed to install on the Cloud PC
 Service side checks which agent installation failed firstly and retry.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CloudPcId
@@ -197,4 +185,5 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaretryusercloudpcpartneragentinstallation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaretryusercloudpcpartneragentinstallation)
+
 

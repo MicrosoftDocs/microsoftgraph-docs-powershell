@@ -30,18 +30,6 @@ Get-MgBetaDeviceManagementReportWindowsUpdateAlertPerPolicyPerDeviceReport -OutF
 ## DESCRIPTION
 Invoke action getWindowsUpdateAlertsPerPolicyPerDeviceReport
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -301,4 +289,5 @@ BODYPARAMETER \<IPaths1WxxrkkDevicemanagementReportsMicrosoftGraphGetwindowsupda
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportwindowsupdatealertperpolicyperdevicereport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportwindowsupdatealertperpolicyperdevicereport)
+
 

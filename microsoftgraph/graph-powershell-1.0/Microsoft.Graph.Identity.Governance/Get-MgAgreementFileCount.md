@@ -29,18 +29,6 @@ Get-MgAgreementFileCount -InputObject <IIdentityGovernanceIdentity> [-Filter <St
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AgreementId
@@ -193,4 +181,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [Get-MgBetaAgreementFileCount](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaAgreementFileCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgagreementfilecount](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgagreementfilecount)
+
 

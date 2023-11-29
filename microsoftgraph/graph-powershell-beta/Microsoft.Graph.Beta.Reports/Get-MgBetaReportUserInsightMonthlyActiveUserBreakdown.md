@@ -34,18 +34,6 @@ Get-MgBetaReportUserInsightMonthlyActiveUserBreakdown -InputObject <IReportsIden
 ## DESCRIPTION
 Get activeUsersBreakdown from reports
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActiveUsersBreakdownMetricId
@@ -290,4 +278,5 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportuserinsightmonthlyactiveuserbreakdown](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportuserinsightmonthlyactiveuserbreakdown)
+
 

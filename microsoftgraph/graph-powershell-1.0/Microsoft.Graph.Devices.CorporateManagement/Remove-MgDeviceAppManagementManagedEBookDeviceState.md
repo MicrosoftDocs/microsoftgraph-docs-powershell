@@ -31,18 +31,6 @@ Remove-MgDeviceAppManagementManagedEBookDeviceState -InputObject <IDevicesCorpor
 ## DESCRIPTION
 Deletes a deviceInstallState.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceInstallStateId
@@ -208,4 +196,5 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
 [Remove-MgBetaDeviceAppManagementManagedEBookDeviceState](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementManagedEBookDeviceState?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmanagedebookdevicestate](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmanagedebookdevicestate)
+
 

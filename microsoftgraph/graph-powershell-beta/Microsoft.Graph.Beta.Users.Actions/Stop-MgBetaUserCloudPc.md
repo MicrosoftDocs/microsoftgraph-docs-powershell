@@ -48,18 +48,6 @@ After a Windows 365 Frontline Cloud PC is powered off, it's deallocated, and lic
 Only IT admin users can perform this action.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CloudPcId
@@ -213,4 +201,5 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/stop-mgbetausercloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/stop-mgbetausercloudpc)
+
 

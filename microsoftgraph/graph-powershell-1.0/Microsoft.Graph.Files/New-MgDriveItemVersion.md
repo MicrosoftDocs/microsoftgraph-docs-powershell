@@ -46,22 +46,6 @@ New-MgDriveItemVersion -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Create new navigation property to versions for drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -368,4 +352,5 @@ Read-only.
 [New-MgBetaDriveItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItemVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriveitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriveitemversion)
+
 

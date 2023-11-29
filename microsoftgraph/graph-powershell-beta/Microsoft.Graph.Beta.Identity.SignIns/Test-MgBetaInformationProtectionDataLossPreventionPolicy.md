@@ -29,22 +29,6 @@ Test-MgBetaInformationProtectionDataLossPreventionPolicy
 ## DESCRIPTION
 Invoke action evaluate
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -212,4 +196,5 @@ NOTIFICATIONINFO \<IMicrosoftGraphDlpNotification\>: dlpNotification
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetainformationprotectiondatalosspreventionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetainformationprotectiondatalosspreventionpolicy)
+
 

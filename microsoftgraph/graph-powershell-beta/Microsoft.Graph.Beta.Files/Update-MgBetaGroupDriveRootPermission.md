@@ -59,22 +59,6 @@ Update the properties of a sharing permission by patching the permission resourc
 Only the roles property can be modified this way.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -660,4 +644,5 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
 [Update-MgGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveRootPermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriverootpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriverootpermission)
+
 

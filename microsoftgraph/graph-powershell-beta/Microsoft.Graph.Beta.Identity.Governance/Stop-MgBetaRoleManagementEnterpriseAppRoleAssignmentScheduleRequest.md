@@ -31,18 +31,6 @@ Immediately cancel a unifiedRoleAssignmentScheduleRequest object that is in a Gr
 After calling this action, the status of the canceled unifiedRoleAssignmentScheduleRequest changes to Canceled.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -256,4 +244,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetarolemanagemententerpriseapproleassignmentschedulerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetarolemanagemententerpriseapproleassignmentschedulerequest)
+
 

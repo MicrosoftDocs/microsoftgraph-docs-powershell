@@ -27,18 +27,6 @@ Get-MgBetaDeviceManagementManagedDeviceSecurityBaselineStateSettingStateCount
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -276,4 +264,5 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmanageddevicesecuritybaselinestatesettingstatecount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmanageddevicesecuritybaselinestatesettingstatecount)
+
 

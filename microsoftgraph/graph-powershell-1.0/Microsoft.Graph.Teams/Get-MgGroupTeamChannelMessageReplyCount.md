@@ -30,18 +30,6 @@ Get-MgGroupTeamChannelMessageReplyCount -InputObject <ITeamsIdentity> [-Filter <
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -188,4 +176,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Get-MgBetaGroupTeamChannelMessageReplyCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamChannelMessageReplyCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamchannelmessagereplycount](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamchannelmessagereplycount)
+
 

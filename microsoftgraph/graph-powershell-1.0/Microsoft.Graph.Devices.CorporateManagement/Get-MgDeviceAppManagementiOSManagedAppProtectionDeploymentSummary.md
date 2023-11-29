@@ -32,18 +32,6 @@ Get-MgDeviceAppManagementiOSManagedAppProtectionDeploymentSummary
 ## DESCRIPTION
 Read properties and relationships of the managedAppPolicyDeploymentSummary object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -163,4 +151,5 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
 [Get-MgBetaDeviceAppManagementiOSManagedAppProtectionDeploymentSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementiOSManagedAppProtectionDeploymentSummary?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementiosmanagedappprotectiondeploymentsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementiosmanagedappprotectiondeploymentsummary)
+
 

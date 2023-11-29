@@ -36,18 +36,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -208,4 +196,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 [Get-MgInvitationInvitedUserMailboxSetting](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgInvitationInvitedUserMailboxSetting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainvitationinvitedusermailboxsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainvitationinvitedusermailboxsetting)
+
 

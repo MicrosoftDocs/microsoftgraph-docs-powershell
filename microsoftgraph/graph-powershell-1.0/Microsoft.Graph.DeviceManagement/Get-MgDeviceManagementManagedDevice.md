@@ -39,22 +39,6 @@ Get-MgDeviceManagementManagedDevice -InputObject <IDeviceManagementIdentity> [-E
 ## DESCRIPTION
 Read properties and relationships of the managedDevice object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -314,4 +298,5 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 [Get-MgBetaDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementManagedDevice?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementmanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementmanageddevice)
+
 

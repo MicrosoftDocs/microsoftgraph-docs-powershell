@@ -30,18 +30,6 @@ Get-MgBetaPrivacySubjectRightsRequestTeam -InputObject <IComplianceIdentity> [-E
 ## DESCRIPTION
 Information about the Microsoft Teams team that was created for the request.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -143,4 +131,5 @@ INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
 [Get-MgPrivacySubjectRightsRequestTeam](/powershell/module/Microsoft.Graph.Compliance/Get-MgPrivacySubjectRightsRequestTeam?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetaprivacysubjectrightsrequestteam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetaprivacysubjectrightsrequestteam)
+
 

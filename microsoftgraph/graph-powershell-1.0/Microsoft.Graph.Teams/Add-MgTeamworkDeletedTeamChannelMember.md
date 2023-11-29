@@ -50,18 +50,6 @@ Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -268,4 +256,5 @@ This property is settable only for members of a chat.
 [Add-MgBetaTeamworkDeletedTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Add-MgBetaTeamworkDeletedTeamChannelMember?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/add-mgteamworkdeletedteamchannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/add-mgteamworkdeletedteamchannelmember)
+
 

@@ -34,18 +34,6 @@ Get-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile -InputObject <IDeviceM
 ## DESCRIPTION
 Android for Work enrollment profile entities.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -275,4 +263,5 @@ INPUTOBJECT \<IDeviceManagementEnrollmentIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetadevicemanagementandroidforworkenrollmentprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetadevicemanagementandroidforworkenrollmentprofile)
+
 

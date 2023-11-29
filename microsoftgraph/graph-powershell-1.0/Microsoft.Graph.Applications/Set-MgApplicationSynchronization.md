@@ -46,18 +46,6 @@ Set-MgApplicationSynchronization -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Update the navigation property synchronization in applications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -881,4 +869,5 @@ Must match one of the directory definitions in synchronizationSchema.
 [Set-MgBetaApplicationSynchronization](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaApplicationSynchronization?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgapplicationsynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgapplicationsynchronization)
+
 

@@ -33,18 +33,6 @@ Get-MgBetaApplicationByAppId -InputObject <IApplicationsIdentity> [-ExpandProper
 Get the properties and relationships of an application object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AppId
@@ -175,4 +163,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Get-MgApplicationByAppId](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationByAppId?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationbyappid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationbyappid)
+
 

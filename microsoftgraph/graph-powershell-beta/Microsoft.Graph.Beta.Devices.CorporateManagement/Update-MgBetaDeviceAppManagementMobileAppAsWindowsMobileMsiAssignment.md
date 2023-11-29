@@ -49,18 +49,6 @@ Update-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment
 ## DESCRIPTION
 Update the navigation property assignments in deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -372,4 +360,5 @@ TARGET \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>: Base type for 
 [Update-MgDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmobileappaswindowsmobilemsiassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmobileappaswindowsmobilemsiassignment)
+
 

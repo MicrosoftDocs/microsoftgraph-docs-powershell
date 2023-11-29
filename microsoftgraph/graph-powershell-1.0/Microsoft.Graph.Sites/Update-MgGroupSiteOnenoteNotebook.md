@@ -51,18 +51,6 @@ Update-MgGroupSiteOnenoteNotebook -InputObject <ISitesIdentity> -BodyParameter <
 ## DESCRIPTION
 Update the navigation property notebooks in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -927,4 +915,5 @@ Read-only.
 [Update-MgBetaGroupSiteOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteOnenoteNotebook?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsiteonenotenotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsiteonenotenotebook)
+
 

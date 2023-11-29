@@ -53,18 +53,6 @@ New-MgGroupSiteOnenoteSectionGroupSectionPage -InputObject <ISitesIdentity>
 Create a new page in the specified section.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -898,4 +886,5 @@ Read-only.
 [New-MgBetaGroupSiteOnenoteSectionGroupSectionPage](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteOnenoteSectionGroupSectionPage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteonenotesectiongroupsectionpage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteonenotesectiongroupsectionpage)
+
 

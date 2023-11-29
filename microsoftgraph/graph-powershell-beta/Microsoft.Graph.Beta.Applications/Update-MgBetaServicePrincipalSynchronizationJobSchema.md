@@ -55,22 +55,6 @@ This method fully replaces the current schema with the one provided in the reque
 To update the schema of a template, make the call on the application object.
 You must be the owner of the application.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -571,4 +555,5 @@ Must match one of the directory definitions in synchronizationSchema.
 [Update-MgServicePrincipalSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipalSynchronizationJobSchema?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalsynchronizationjobschema](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalsynchronizationjobschema)
+
 

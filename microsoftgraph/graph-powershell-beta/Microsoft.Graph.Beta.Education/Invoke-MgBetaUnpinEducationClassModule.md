@@ -34,18 +34,6 @@ This action sets the isPinned property to false for an educationModule.
 Only teachers in the class can perform this operation.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationClassId
@@ -162,4 +150,5 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetaunpineducationclassmodule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetaunpineducationclassmodule)
+
 

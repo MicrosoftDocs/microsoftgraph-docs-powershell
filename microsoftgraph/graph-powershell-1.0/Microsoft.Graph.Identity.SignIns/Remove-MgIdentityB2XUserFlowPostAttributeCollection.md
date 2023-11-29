@@ -30,18 +30,6 @@ Remove-MgIdentityB2XUserFlowPostAttributeCollection -InputObject <IIdentitySignI
 ## DESCRIPTION
 Delete navigation property postAttributeCollection for identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId
@@ -212,4 +200,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 [Remove-MgBetaIdentityB2XUserFlowPostAttributeCollection](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityB2XUserFlowPostAttributeCollection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityb2xuserflowpostattributecollection](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityb2xuserflowpostattributecollection)
+
 

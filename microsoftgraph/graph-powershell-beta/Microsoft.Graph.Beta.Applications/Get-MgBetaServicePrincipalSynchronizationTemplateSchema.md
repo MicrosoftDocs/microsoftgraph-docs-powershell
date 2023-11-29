@@ -30,22 +30,6 @@ Get-MgBetaServicePrincipalSynchronizationTemplateSchema -InputObject <IApplicati
 ## DESCRIPTION
 Default synchronization schema for the jobs based on this template.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -176,4 +160,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Get-MgServicePrincipalSynchronizationTemplateSchema](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalSynchronizationTemplateSchema?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationtemplateschema](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationtemplateschema)
+
 

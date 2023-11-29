@@ -30,18 +30,6 @@ Get-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatusCount -InputObject <
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceCompliancePolicyId
@@ -265,4 +253,5 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 [Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatusCount](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatusCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementdevicecompliancepolicydevicestatuscount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementdevicecompliancepolicydevicestatuscount)
+
 

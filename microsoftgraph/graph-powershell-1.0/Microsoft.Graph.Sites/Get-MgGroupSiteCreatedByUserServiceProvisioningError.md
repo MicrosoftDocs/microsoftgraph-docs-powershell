@@ -24,18 +24,6 @@ Get-MgGroupSiteCreatedByUserServiceProvisioningError -GroupId <String> -SiteId <
 ## DESCRIPTION
 Get serviceProvisioningErrors property value
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -233,4 +221,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgBetaGroupSiteCreatedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteCreatedByUserServiceProvisioningError?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitecreatedbyuserserviceprovisioningerror](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitecreatedbyuserserviceprovisioningerror)
+
 

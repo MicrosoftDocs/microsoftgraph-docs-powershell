@@ -27,18 +27,6 @@ Remove-MgBetaApplicationSynchronizationJobBulkUpload -InputObject <IApplications
 ## DESCRIPTION
 Delete navigation property bulkUpload for applications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -199,4 +187,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationsynchronizationjobbulkupload](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationsynchronizationjobbulkupload)
+
 

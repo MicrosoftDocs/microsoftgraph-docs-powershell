@@ -42,22 +42,6 @@ Update-MgBetaDriveListItemVersionField -InputObject <IFilesIdentity> -BodyParame
 ## DESCRIPTION
 Update the navigation property fields in drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -244,4 +228,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Update-MgDriveListItemVersionField](/powershell/module/Microsoft.Graph.Files/Update-MgDriveListItemVersionField?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadrivelistitemversionfield](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadrivelistitemversionfield)
+
 

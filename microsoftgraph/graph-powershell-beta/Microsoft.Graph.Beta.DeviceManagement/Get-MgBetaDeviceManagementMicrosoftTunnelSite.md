@@ -34,22 +34,6 @@ Get-MgBetaDeviceManagementMicrosoftTunnelSite -InputObject <IDeviceManagementIde
 ## DESCRIPTION
 Collection of MicrosoftTunnelSite settings associated with account.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -393,4 +377,5 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmicrosofttunnelsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmicrosofttunnelsite)
+
 

@@ -37,22 +37,6 @@ Get-MgBetaDeviceManagementResourceOperation -InputObject <IDeviceManagementAdmin
 ## DESCRIPTION
 The Resource Operations.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -315,4 +299,5 @@ INPUTOBJECT \<IDeviceManagementAdministrationIdentity\>: Identity Parameter
 [Get-MgDeviceManagementResourceOperation](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementResourceOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementresourceoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementresourceoperation)
+
 

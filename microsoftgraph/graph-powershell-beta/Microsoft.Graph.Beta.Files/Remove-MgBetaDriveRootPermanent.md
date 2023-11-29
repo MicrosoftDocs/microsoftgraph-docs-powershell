@@ -29,18 +29,6 @@ Remove-MgBetaDriveRootPermanent -InputObject <IFilesIdentity> [-PassThru] [-What
 ## DESCRIPTION
 Invoke action permanentDelete
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -165,4 +153,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Remove-MgDriveRootPermanent](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveRootPermanent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriverootpermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriverootpermanent)
+
 

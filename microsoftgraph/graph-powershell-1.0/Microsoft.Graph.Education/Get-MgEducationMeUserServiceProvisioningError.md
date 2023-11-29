@@ -24,18 +24,6 @@ Get-MgEducationMeUserServiceProvisioningError [-ExpandProperty <String[]>] [-Fil
 ## DESCRIPTION
 Get serviceProvisioningErrors property value
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -203,4 +191,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgBetaEducationMeUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeUserServiceProvisioningError?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeuserserviceprovisioningerror](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeuserserviceprovisioningerror)
+
 

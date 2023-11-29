@@ -30,18 +30,6 @@ Remove-MgApplicationSynchronization -InputObject <IApplicationsIdentity> [-IfMat
 ## DESCRIPTION
 Delete navigation property synchronization for applications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -179,4 +167,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Remove-MgBetaApplicationSynchronization](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationSynchronization?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationsynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationsynchronization)
+
 

@@ -60,18 +60,6 @@ Update-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstance
 ## DESCRIPTION
 Update the navigation property roleAssignmentScheduleInstances in roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActivatedUsing
@@ -803,4 +791,5 @@ Read-only when isBuiltIn is true.
 [Update-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagemententitlementmanagementroleassignmentscheduleinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagemententitlementmanagementroleassignmentscheduleinstance)
+
 

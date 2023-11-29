@@ -47,18 +47,6 @@ Invoke-MgGraphChat -InputObject <ITeamsIdentity>
 Unhide a chat for a user.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -283,4 +271,5 @@ For example, if a user changes their display name, the API might show the new va
 [Invoke-MgBetaGraphChat](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaGraphChat?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mggraphchat](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mggraphchat)
+
 

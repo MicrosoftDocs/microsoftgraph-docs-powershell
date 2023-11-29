@@ -42,18 +42,6 @@ Update-MgBetaUserDriveRootListItemDocumentSetVersionField -InputObject <IFilesId
 ## DESCRIPTION
 Update the navigation property fields in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -240,4 +228,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Update-MgUserDriveRootListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveRootListItemDocumentSetVersionField?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriverootlistitemdocumentsetversionfield](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriverootlistitemdocumentsetversionfield)
+
 

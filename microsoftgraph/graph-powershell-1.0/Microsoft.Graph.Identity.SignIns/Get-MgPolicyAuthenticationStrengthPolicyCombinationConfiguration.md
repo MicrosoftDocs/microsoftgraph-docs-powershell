@@ -42,18 +42,6 @@ Get-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration -InputObject <I
 Read the properties and relationships of an authenticationCombinationConfiguration object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -329,4 +317,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 [Get-MgBetaPolicyAuthenticationStrengthPolicyCombinationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyAuthenticationStrengthPolicyCombinationConfiguration?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyauthenticationstrengthpolicycombinationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyauthenticationstrengthpolicycombinationconfiguration)
+
 

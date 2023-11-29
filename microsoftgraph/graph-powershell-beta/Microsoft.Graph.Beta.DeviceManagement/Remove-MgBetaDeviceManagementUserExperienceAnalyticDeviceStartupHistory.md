@@ -32,22 +32,6 @@ Remove-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistory
 ## DESCRIPTION
 Delete navigation property userExperienceAnalyticsDeviceStartupHistory for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -302,4 +286,5 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 [Remove-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementuserexperienceanalyticdevicestartuphistory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementuserexperienceanalyticdevicestartuphistory)
+
 

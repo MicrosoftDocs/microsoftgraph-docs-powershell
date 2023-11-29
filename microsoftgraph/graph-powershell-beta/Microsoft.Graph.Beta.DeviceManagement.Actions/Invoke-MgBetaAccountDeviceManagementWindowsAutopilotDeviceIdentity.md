@@ -27,18 +27,6 @@ Invoke-MgBetaAccountDeviceManagementWindowsAutopilotDeviceIdentity
 ## DESCRIPTION
 Unassigns the resource account from an Autopilot device.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -189,4 +177,5 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetaaccountdevicemanagementwindowsautopilotdeviceidentity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetaaccountdevicemanagementwindowsautopilotdeviceidentity)
+
 

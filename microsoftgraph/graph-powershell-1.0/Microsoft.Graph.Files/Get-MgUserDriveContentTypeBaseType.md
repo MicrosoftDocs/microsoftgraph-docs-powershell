@@ -37,18 +37,6 @@ Get-MgUserDriveContentTypeBaseType -InputObject <IFilesIdentity> [-ExpandPropert
 ## DESCRIPTION
 The collection of content types that are ancestors of this content type.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -323,4 +311,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgBetaUserDriveContentTypeBaseType](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveContentTypeBaseType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivecontenttypebasetype](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivecontenttypebasetype)
+
 

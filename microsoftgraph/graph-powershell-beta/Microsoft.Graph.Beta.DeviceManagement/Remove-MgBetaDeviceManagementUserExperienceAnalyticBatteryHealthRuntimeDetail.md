@@ -20,22 +20,6 @@ Remove-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthRuntimeDetail [-
 ## DESCRIPTION
 Delete navigation property userExperienceAnalyticsBatteryHealthRuntimeDetails for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -112,4 +96,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementuserexperienceanalyticbatteryhealthruntimedetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementuserexperienceanalyticbatteryhealthruntimedetail)
+
 

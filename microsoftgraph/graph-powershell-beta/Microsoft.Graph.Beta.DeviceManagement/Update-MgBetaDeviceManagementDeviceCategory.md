@@ -44,22 +44,6 @@ Update-MgBetaDeviceManagementDeviceCategory -InputObject <IDeviceManagementIdent
 ## DESCRIPTION
 Update the navigation property deviceCategories in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -390,4 +374,5 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 [Update-MgDeviceManagementDeviceCategory](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementDeviceCategory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementdevicecategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementdevicecategory)
+
 

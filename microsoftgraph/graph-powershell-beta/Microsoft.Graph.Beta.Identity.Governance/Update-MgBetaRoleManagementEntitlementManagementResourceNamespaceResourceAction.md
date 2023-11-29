@@ -53,18 +53,6 @@ Update-MgBetaRoleManagementEntitlementManagementResourceNamespaceResourceAction
 ## DESCRIPTION
 Update the navigation property resourceActions in roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActionVerb
@@ -521,4 +509,5 @@ Read-only.
 [Update-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagemententitlementmanagementresourcenamespaceresourceaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagemententitlementmanagementresourcenamespaceresourceaction)
+
 

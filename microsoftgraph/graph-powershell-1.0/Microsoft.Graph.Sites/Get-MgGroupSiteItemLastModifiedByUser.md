@@ -32,18 +32,6 @@ Get-MgGroupSiteItemLastModifiedByUser -InputObject <ISitesIdentity> [-ExpandProp
 Identity of the user who last modified the item.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -211,4 +199,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgBetaGroupSiteItemLastModifiedByUser](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteItemLastModifiedByUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteitemlastmodifiedbyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteitemlastmodifiedbyuser)
+
 

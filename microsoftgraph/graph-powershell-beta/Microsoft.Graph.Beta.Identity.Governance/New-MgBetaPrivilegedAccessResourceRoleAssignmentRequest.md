@@ -52,22 +52,6 @@ New-MgBetaPrivilegedAccessResourceRoleAssignmentRequest -InputObject <IIdentityG
 ## DESCRIPTION
 Create new navigation property to roleAssignmentRequests for privilegedAccess
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -989,4 +973,5 @@ The value can be User, Group, and ServicePrincipal.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedaccessresourceroleassignmentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedaccessresourceroleassignmentrequest)
+
 

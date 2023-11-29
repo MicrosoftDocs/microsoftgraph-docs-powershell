@@ -35,22 +35,6 @@ Get-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValue -InputObject <
 ## DESCRIPTION
 The list of enabled or disabled group policy definition values for the configuration.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -409,4 +393,5 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementgrouppolicyconfigurationdefinitionvalue](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementgrouppolicyconfigurationdefinitionvalue)
+
 

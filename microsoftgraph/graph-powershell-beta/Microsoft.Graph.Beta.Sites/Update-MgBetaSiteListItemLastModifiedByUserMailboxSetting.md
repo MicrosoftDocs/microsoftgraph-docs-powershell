@@ -50,18 +50,6 @@ Update-MgBetaSiteListItemLastModifiedByUserMailboxSetting -InputObject <ISitesId
 ## DESCRIPTION
 Update property mailboxSettings value.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -481,4 +469,5 @@ It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 
 [Update-MgSiteListItemLastModifiedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteListItemLastModifiedByUserMailboxSetting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelistitemlastmodifiedbyusermailboxsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelistitemlastmodifiedbyusermailboxsetting)
+
 

@@ -30,18 +30,6 @@ Get-MgBetaSiteTermStoreSetTermChildRelationCount -InputObject <ISitesIdentity> [
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -219,4 +207,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgSiteTermStoreSetTermChildRelationCount](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetTermChildRelationCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresettermchildrelationcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresettermchildrelationcount)
+
 

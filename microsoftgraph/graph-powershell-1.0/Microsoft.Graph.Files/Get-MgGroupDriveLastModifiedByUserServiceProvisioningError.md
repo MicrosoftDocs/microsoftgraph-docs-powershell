@@ -24,18 +24,6 @@ Get-MgGroupDriveLastModifiedByUserServiceProvisioningError -DriveId <String> -Gr
 ## DESCRIPTION
 Get serviceProvisioningErrors property value
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -233,4 +221,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgBetaGroupDriveLastModifiedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveLastModifiedByUserServiceProvisioningError?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivelastmodifiedbyuserserviceprovisioningerror](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivelastmodifiedbyuserserviceprovisioningerror)
+
 

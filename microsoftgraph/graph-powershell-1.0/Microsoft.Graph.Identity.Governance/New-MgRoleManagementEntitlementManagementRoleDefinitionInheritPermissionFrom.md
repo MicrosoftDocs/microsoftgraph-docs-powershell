@@ -50,18 +50,6 @@ New-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom
 ## DESCRIPTION
 Create new navigation property to inheritsPermissionsFrom for roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -508,4 +496,5 @@ Not yet supported.
 [New-MgBetaRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagemententitlementmanagementroledefinitioninheritpermissionfrom](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagemententitlementmanagementroledefinitioninheritpermissionfrom)
+
 

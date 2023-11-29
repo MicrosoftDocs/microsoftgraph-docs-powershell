@@ -30,18 +30,6 @@ Remove-MgIdentityB2XUserFlowPostAttributeCollectionByRef -InputObject <IIdentity
 ## DESCRIPTION
 Delete ref of navigation property postAttributeCollection for identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId
@@ -212,4 +200,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 [Remove-MgBetaIdentityB2XUserFlowPostAttributeCollectionByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityB2XUserFlowPostAttributeCollectionByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityb2xuserflowpostattributecollectionbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityb2xuserflowpostattributecollectionbyref)
+
 

@@ -30,22 +30,6 @@ Get-MgBetaUserManagedDeviceCategory -InputObject <IDevicesCorporateManagementIde
 ## DESCRIPTION
 Device category
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -213,4 +197,5 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
 [Get-MgUserManagedDeviceCategory](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgUserManagedDeviceCategory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetausermanageddevicecategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetausermanageddevicecategory)
+
 

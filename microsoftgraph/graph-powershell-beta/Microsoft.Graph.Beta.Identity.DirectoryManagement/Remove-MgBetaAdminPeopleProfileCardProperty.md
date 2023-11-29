@@ -33,18 +33,6 @@ Remove-MgBetaAdminPeopleProfileCardProperty -InputObject <IIdentityDirectoryMana
 Delete the profileCardProperty object specified by its directoryPropertyName from the organization's profile card, and remove any localized customizations for that property.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -203,4 +191,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 [Remove-MgAdminPeopleProfileCardProperty](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgAdminPeopleProfileCardProperty?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetaadminpeopleprofilecardproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetaadminpeopleprofilecardproperty)
+
 

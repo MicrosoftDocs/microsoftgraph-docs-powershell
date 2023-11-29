@@ -42,22 +42,6 @@ Update-MgBetaPrivilegedRoleAssignment -InputObject <IIdentityGovernanceIdentity>
 ## DESCRIPTION
 Update entity in privilegedRoleAssignments
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -457,4 +441,5 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedroleassignment)
+
 

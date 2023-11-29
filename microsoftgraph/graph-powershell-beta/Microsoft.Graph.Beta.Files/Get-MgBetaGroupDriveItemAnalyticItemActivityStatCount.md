@@ -30,18 +30,6 @@ Get-MgBetaGroupDriveItemAnalyticItemActivityStatCount -InputObject <IFilesIdenti
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -180,4 +168,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgGroupDriveItemAnalyticItemActivityStatCount](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveItemAnalyticItemActivityStatCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriveitemanalyticitemactivitystatcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriveitemanalyticitemactivitystatcount)
+
 

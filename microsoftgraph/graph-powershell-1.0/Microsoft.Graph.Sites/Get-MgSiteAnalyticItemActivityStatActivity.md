@@ -37,18 +37,6 @@ Get-MgSiteAnalyticItemActivityStatActivity -InputObject <ISitesIdentity> [-Expan
 ## DESCRIPTION
 Exposes the itemActivities represented in this itemActivityStat resource.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -322,4 +310,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgBetaSiteAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteAnalyticItemActivityStatActivity?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteanalyticitemactivitystatactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteanalyticitemactivitystatactivity)
+
 

@@ -27,18 +27,6 @@ Remove-MgBetaBusinessScenarioPlannerTaskBucketTaskBoardFormat -InputObject <IBoo
 ## DESCRIPTION
 Delete navigation property bucketTaskBoardFormat for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -BusinessScenarioId
@@ -191,4 +179,5 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabusinessscenarioplannertaskbuckettaskboardformat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabusinessscenarioplannertaskbuckettaskboardformat)
+
 

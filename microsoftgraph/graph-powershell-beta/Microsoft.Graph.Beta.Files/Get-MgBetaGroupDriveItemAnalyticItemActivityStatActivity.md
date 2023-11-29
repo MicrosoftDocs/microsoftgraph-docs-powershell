@@ -25,18 +25,6 @@ Get-MgBetaGroupDriveItemAnalyticItemActivityStatActivity -DriveId <String> -Driv
 ## DESCRIPTION
 Exposes the itemActivities represented in this itemActivityStat resource.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -264,4 +252,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgGroupDriveItemAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveItemAnalyticItemActivityStatActivity?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriveitemanalyticitemactivitystatactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriveitemanalyticitemactivitystatactivity)
+
 

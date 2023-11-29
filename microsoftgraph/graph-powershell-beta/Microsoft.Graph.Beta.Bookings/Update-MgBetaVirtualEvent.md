@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualevent
@@ -44,18 +44,6 @@ Update-MgBetaVirtualEvent -InputObject <IBookingsIdentity> -BodyParameter <IMicr
 
 ## DESCRIPTION
 Update the navigation property events in solutions
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -895,4 +883,5 @@ See below for possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualevent)
+
 

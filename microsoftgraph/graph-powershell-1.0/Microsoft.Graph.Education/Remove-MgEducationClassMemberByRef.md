@@ -33,22 +33,6 @@ Remove-MgEducationClassMemberByRef -InputObject <IEducationIdentity> [-Id <Strin
 Remove an educationUser from an educationClass.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EducationClassId
@@ -204,4 +188,5 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 [Remove-MgBetaEducationClassMemberByRef](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationClassMemberByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassmemberbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassmemberbyref)
+
 

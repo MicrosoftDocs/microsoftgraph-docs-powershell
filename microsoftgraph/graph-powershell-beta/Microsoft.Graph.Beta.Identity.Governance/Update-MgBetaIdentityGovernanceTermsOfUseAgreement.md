@@ -52,18 +52,6 @@ Update-MgBetaIdentityGovernanceTermsOfUseAgreement -InputObject <IIdentityGovern
 Update the properties of an agreement object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Acceptances
@@ -705,4 +693,5 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 [Update-MgIdentityGovernanceTermsOfUseAgreement](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceTermsOfUseAgreement?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancetermsofuseagreement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancetermsofuseagreement)
+
 

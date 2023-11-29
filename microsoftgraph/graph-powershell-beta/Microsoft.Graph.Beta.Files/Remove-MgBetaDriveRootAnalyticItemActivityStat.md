@@ -30,18 +30,6 @@ Remove-MgBetaDriveRootAnalyticItemActivityStat -InputObject <IFilesIdentity> [-I
 ## DESCRIPTION
 Delete navigation property itemActivityStats for drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -196,4 +184,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Remove-MgDriveRootAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveRootAnalyticItemActivityStat?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriverootanalyticitemactivitystat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriverootanalyticitemactivitystat)
+
 

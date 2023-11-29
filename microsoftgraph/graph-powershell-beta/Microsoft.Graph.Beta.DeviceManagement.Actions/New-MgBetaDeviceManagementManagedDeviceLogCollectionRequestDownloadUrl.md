@@ -30,22 +30,6 @@ New-MgBetaDeviceManagementManagedDeviceLogCollectionRequestDownloadUrl
 ## DESCRIPTION
 Invoke action createDownloadUrl
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DeviceLogCollectionResponseId
@@ -197,4 +181,5 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
 [New-MgDeviceManagementManagedDeviceLogCollectionRequestDownloadUrl](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/New-MgDeviceManagementManagedDeviceLogCollectionRequestDownloadUrl?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/new-mgbetadevicemanagementmanageddevicelogcollectionrequestdownloadurl](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/new-mgbetadevicemanagementmanageddevicelogcollectionrequestdownloadurl)
+
 

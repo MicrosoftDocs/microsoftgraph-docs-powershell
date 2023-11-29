@@ -32,18 +32,6 @@ Remove-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment
 ## DESCRIPTION
 Delete navigation property assignments for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -242,4 +230,5 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
 [Remove-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/remove-mgbetadeviceappmanagementmdmwindowsinformationprotectionpolicyassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/remove-mgbetadeviceappmanagementmdmwindowsinformationprotectionpolicyassignment)
+
 

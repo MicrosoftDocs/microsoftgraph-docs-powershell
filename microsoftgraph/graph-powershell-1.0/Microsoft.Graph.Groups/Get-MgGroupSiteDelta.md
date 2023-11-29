@@ -31,18 +31,6 @@ Get-MgGroupSiteDelta -InputObject <IGroupsIdentity> [-Filter <String>] [-Propert
 ## DESCRIPTION
 Invoke function delta
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -283,4 +271,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Get-MgBetaGroupSiteDelta](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupSiteDelta?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsitedelta](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsitedelta)
+
 

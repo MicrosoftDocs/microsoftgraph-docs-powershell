@@ -30,22 +30,6 @@ Get-MgBetaReportPrinterArchivedPrintJob -InputObject <IReportsIdentity> [-Count]
 ## DESCRIPTION
 Invoke function getPrinterArchivedPrintJobs
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -245,4 +229,5 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
 [Get-MgReportPrinterArchivedPrintJob](/powershell/module/Microsoft.Graph.Reports/Get-MgReportPrinterArchivedPrintJob?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportprinterarchivedprintjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportprinterarchivedprintjob)
+
 

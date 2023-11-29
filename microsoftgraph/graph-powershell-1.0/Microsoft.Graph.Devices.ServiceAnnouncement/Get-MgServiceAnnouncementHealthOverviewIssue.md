@@ -37,22 +37,6 @@ Get-MgServiceAnnouncementHealthOverviewIssue -InputObject <IDevicesServiceAnnoun
 ## DESCRIPTION
 A collection of issues that happened on the service, with detailed information for each issue.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -277,4 +261,5 @@ INPUTOBJECT \<IDevicesServiceAnnouncementIdentity\>: Identity Parameter
 [Get-MgBetaServiceAnnouncementHealthOverviewIssue](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgBetaServiceAnnouncementHealthOverviewIssue?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementhealthoverviewissue](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementhealthoverviewissue)
+
 

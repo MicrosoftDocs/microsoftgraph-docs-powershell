@@ -27,18 +27,6 @@ Remove-MgBetaDeviceManagementMonitoringAlertRecord -InputObject <IDeviceManageme
 ## DESCRIPTION
 Delete navigation property alertRecords for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AlertRecordId
@@ -292,4 +280,5 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementmonitoringalertrecord](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementmonitoringalertrecord)
+
 

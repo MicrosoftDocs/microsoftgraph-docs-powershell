@@ -30,22 +30,6 @@ Remove-MgUserTeamwork -InputObject <ITeamsIdentity> [-IfMatch <String>] [-PassTh
 ## DESCRIPTION
 Delete navigation property teamwork for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -193,4 +177,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Remove-MgBetaUserTeamwork](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserTeamwork?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserteamwork](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserteamwork)
+
 

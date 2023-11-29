@@ -60,18 +60,6 @@ Get-MgBetaGroupSiteTermStoreSetParentGroupSetChildRelation -InputObject <ISitesI
 ## DESCRIPTION
 To indicate which terms are related to the current term as either pinned or reused.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -415,4 +403,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgGroupSiteTermStoreSetParentGroupSetChildRelation](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreSetParentGroupSetChildRelation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitetermstoresetparentgroupsetchildrelation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitetermstoresetparentgroupsetchildrelation)
+
 

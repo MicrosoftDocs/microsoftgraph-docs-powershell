@@ -30,18 +30,6 @@ Get-MgBetaShareContentTypeBase -InputObject <IFilesIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 Parent contentType from which this content type is derived.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -165,4 +153,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgShareContentTypeBase](/powershell/module/Microsoft.Graph.Files/Get-MgShareContentTypeBase?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharecontenttypebase](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharecontenttypebase)
+
 

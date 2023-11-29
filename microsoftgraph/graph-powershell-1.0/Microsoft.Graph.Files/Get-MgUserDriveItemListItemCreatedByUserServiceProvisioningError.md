@@ -25,18 +25,6 @@ Get-MgUserDriveItemListItemCreatedByUserServiceProvisioningError -DriveId <Strin
 ## DESCRIPTION
 Get serviceProvisioningErrors property value
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -249,4 +237,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgBetaUserDriveItemListItemCreatedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemListItemCreatedByUserServiceProvisioningError?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemlistitemcreatedbyuserserviceprovisioningerror](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemlistitemcreatedbyuserserviceprovisioningerror)
+
 

@@ -25,22 +25,6 @@ Test-MgBetaUserManagedAppUserBlocked -InputObject <IUsersFunctionsIdentity> [<Co
 ## DESCRIPTION
 Gets the blocked state of a managed app user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -131,4 +115,5 @@ INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/test-mgbetausermanagedappuserblocked](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/test-mgbetausermanagedappuserblocked)
+
 

@@ -30,22 +30,6 @@ Set-MgBetaGroupDriveRootListItemDriveItemContent -InputObject <IFilesIdentity> [
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Data
@@ -203,4 +187,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Set-MgGroupDriveRootListItemDriveItemContent](/powershell/module/Microsoft.Graph.Files/Set-MgGroupDriveRootListItemDriveItemContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetagroupdriverootlistitemdriveitemcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetagroupdriverootlistitemdriveitemcontent)
+
 

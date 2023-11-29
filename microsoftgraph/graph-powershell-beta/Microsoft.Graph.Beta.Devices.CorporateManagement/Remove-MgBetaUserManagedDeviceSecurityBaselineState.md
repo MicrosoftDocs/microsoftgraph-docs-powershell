@@ -27,22 +27,6 @@ Remove-MgBetaUserManagedDeviceSecurityBaselineState -InputObject <IDevicesCorpor
 ## DESCRIPTION
 Delete navigation property securityBaselineStates for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -255,4 +239,5 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/remove-mgbetausermanageddevicesecuritybaselinestate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/remove-mgbetausermanageddevicesecuritybaselinestate)
+
 

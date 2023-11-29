@@ -44,22 +44,6 @@ Confirm-MgOrganizationMemberObject -InputObject <IIdentityDirectoryManagementIde
 ## DESCRIPTION
 Invoke action checkMemberObjects
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -220,4 +204,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 [Confirm-MgBetaOrganizationMemberObject](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Confirm-MgBetaOrganizationMemberObject?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/confirm-mgorganizationmemberobject](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/confirm-mgorganizationmemberobject)
+
 

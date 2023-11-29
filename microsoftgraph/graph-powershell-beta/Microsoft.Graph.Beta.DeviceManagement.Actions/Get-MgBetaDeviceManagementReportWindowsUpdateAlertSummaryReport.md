@@ -30,18 +30,6 @@ Get-MgBetaDeviceManagementReportWindowsUpdateAlertSummaryReport -OutFile <String
 ## DESCRIPTION
 Invoke action getWindowsUpdateAlertSummaryReport
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -301,4 +289,5 @@ BODYPARAMETER \<IPaths5YzahlDevicemanagementReportsMicrosoftGraphGetwindowsupdat
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportwindowsupdatealertsummaryreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportwindowsupdatealertsummaryreport)
+
 

@@ -30,22 +30,6 @@ Remove-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest -InputObject 
 ## DESCRIPTION
 Delete navigation property userConsentRequests for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AppConsentRequestId
@@ -275,4 +259,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [Remove-MgIdentityGovernanceAppConsentRequestUserConsentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgIdentityGovernanceAppConsentRequestUserConsentRequest?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaidentitygovernanceappconsentrequestuserconsentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaidentitygovernanceappconsentrequestuserconsentrequest)
+
 

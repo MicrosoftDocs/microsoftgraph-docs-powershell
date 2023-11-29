@@ -45,22 +45,6 @@ New-MgDriveRootListItemVersion -InputObject <IFilesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create new navigation property to versions for drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -339,4 +323,5 @@ Read-only.
 [New-MgBetaDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveRootListItemVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootlistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootlistitemversion)
+
 

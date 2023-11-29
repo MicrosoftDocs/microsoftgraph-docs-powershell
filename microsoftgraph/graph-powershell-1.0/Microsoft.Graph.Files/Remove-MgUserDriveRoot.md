@@ -30,22 +30,6 @@ Remove-MgUserDriveRoot -InputObject <IFilesIdentity> [-IfMatch <String>] [-PassT
 ## DESCRIPTION
 Delete navigation property root for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -200,4 +184,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Remove-MgBetaUserDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveRoot?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdriveroot)
+
 

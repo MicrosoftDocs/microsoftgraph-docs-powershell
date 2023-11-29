@@ -27,22 +27,6 @@ Remove-MgBetaFinancialCompanySaleQuoteCustomerPicture -InputObject <IFinancialsI
 ## DESCRIPTION
 Delete navigation property picture for financials
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -CompanyId
@@ -223,4 +207,5 @@ INPUTOBJECT \<IFinancialsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/remove-mgbetafinancialcompanysalequotecustomerpicture](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/remove-mgbetafinancialcompanysalequotecustomerpicture)
+
 

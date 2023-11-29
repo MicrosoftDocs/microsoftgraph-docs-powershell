@@ -45,22 +45,6 @@ Test-MgBetaUserDriveItemPermission -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Invoke action validatePermission
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -297,4 +281,5 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 [Test-MgUserDriveItemPermission](/powershell/module/Microsoft.Graph.Users.Actions/Test-MgUserDriveItemPermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetauserdriveitempermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetauserdriveitempermission)
+
 

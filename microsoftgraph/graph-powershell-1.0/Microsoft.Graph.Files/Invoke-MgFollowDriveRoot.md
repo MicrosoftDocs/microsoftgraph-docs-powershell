@@ -31,22 +31,6 @@ Invoke-MgFollowDriveRoot -InputObject <IFilesIdentity> [-WhatIf] [-Confirm] [<Co
 Follow a driveItem.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -156,4 +140,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Invoke-MgBetaFollowDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaFollowDriveRoot?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgfollowdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgfollowdriveroot)
+
 

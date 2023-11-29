@@ -31,18 +31,6 @@ Set-MgBetaGroupSiteOnenoteSectionPageContent -InputObject <ISitesIdentity> [-Dat
 ## DESCRIPTION
 The page's HTML content.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Data
@@ -254,4 +242,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Set-MgGroupSiteOnenoteSectionPageContent](/powershell/module/Microsoft.Graph.Sites/Set-MgGroupSiteOnenoteSectionPageContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/set-mgbetagroupsiteonenotesectionpagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/set-mgbetagroupsiteonenotesectionpagecontent)
+
 

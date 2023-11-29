@@ -23,18 +23,6 @@ Sync-MgDeviceAppManagementMicrosoftStoreForBusinessApp [-PassThru] [-WhatIf] [-C
 ## DESCRIPTION
 Syncs Intune account with Microsoft Store For Business
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -PassThru
@@ -97,4 +85,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Sync-MgBetaDeviceAppManagementMicrosoftStoreForBusinessApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Sync-MgBetaDeviceAppManagementMicrosoftStoreForBusinessApp?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/sync-mgdeviceappmanagementmicrosoftstoreforbusinessapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/sync-mgdeviceappmanagementmicrosoftstoreforbusinessapp)
+
 

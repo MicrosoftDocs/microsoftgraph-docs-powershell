@@ -30,18 +30,6 @@ Get-MgBetaDeviceManagementDeviceConfigurationDeviceSettingStateSummaryCount
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceConfigurationId
@@ -265,4 +253,5 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 [Get-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummaryCount](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummaryCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementdeviceconfigurationdevicesettingstatesummarycount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementdeviceconfigurationdevicesettingstatesummarycount)
+
 

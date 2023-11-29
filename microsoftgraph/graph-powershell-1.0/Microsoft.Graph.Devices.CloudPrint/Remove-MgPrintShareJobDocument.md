@@ -30,18 +30,6 @@ Remove-MgPrintShareJobDocument -InputObject <IDevicesCloudPrintIdentity> [-IfMat
 ## DESCRIPTION
 Delete navigation property documents for print
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -200,4 +188,5 @@ INPUTOBJECT \<IDevicesCloudPrintIdentity\>: Identity Parameter
 [Remove-MgBetaPrintShareJobDocument](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintShareJobDocument?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintsharejobdocument](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintsharejobdocument)
+
 

@@ -30,18 +30,6 @@ Get-MgIdentityB2XUserFlowLanguageCount -InputObject <IIdentitySignInsIdentity> [
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId
@@ -181,4 +169,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 [Get-MgBetaIdentityB2XUserFlowLanguageCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityB2XUserFlowLanguageCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowlanguagecount](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowlanguagecount)
+
 

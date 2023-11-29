@@ -30,18 +30,6 @@ Get-MgGroupDriveContentTypeBaseTypeCount -InputObject <IFilesIdentity> [-Filter 
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -180,4 +168,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgBetaGroupDriveContentTypeBaseTypeCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveContentTypeBaseTypeCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivecontenttypebasetypecount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivecontenttypebasetypecount)
+
 

@@ -74,22 +74,6 @@ New-MgShareListItemVersion -InputObject <IFilesIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Create new navigation property to versions for shares
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -383,4 +367,5 @@ Read-only.
 [New-MgBetaShareListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaShareListItemVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgsharelistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgsharelistitemversion)
+
 

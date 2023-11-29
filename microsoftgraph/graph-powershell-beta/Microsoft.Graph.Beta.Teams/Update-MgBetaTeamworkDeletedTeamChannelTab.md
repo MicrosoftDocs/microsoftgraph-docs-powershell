@@ -47,22 +47,6 @@ Update-MgBetaTeamworkDeletedTeamChannelTab -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property tabs in teamwork
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -507,4 +491,5 @@ For example, if a user changes their display name, the API might show the new va
 [Update-MgTeamworkDeletedTeamChannelTab](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkDeletedTeamChannelTab?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdeletedteamchanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdeletedteamchanneltab)
+
 

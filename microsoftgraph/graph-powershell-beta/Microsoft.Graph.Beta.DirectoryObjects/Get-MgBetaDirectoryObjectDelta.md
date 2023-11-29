@@ -23,18 +23,6 @@ Get-MgBetaDirectoryObjectDelta [-Filter <String>] [-Property <String[]>] [-Searc
 ## DESCRIPTION
 Invoke function delta
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -187,4 +175,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgDirectoryObjectDelta](/powershell/module/Microsoft.Graph.DirectoryObjects/Get-MgDirectoryObjectDelta?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/get-mgbetadirectoryobjectdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/get-mgbetadirectoryobjectdelta)
+
 

@@ -48,22 +48,6 @@ Grant-MgBetaDriveItemPermission -InputObject <IFilesIdentity>
 Grant users access to a link represented by a permission\]\[\].
 This API is available in the following \[national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -281,4 +265,5 @@ security groups).
 [Grant-MgDriveItemPermission](/powershell/module/Microsoft.Graph.Files/Grant-MgDriveItemPermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/grant-mgbetadriveitempermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/grant-mgbetadriveitempermission)
+
 

@@ -45,18 +45,6 @@ New-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp
 ## DESCRIPTION
 Create new navigation property to containedApps for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -272,4 +260,5 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
 [New-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementmobileappaswin32lobappcontentversioncontainedapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementmobileappaswin32lobappcontentversioncontainedapp)
+
 

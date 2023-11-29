@@ -38,18 +38,6 @@ Get-MgRiskyServicePrincipalHistory -InputObject <IIdentitySignInsIdentity> [-Exp
 ## DESCRIPTION
 Represents the risk history of Microsoft Entra service principals.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -325,4 +313,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 [Get-MgBetaRiskyServicePrincipalHistory](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaRiskyServicePrincipalHistory?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgriskyserviceprincipalhistory](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgriskyserviceprincipalhistory)
+
 

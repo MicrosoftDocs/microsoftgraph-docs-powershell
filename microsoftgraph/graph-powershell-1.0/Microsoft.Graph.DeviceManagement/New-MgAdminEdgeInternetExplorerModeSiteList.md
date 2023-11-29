@@ -37,18 +37,6 @@ New-MgAdminEdgeInternetExplorerModeSiteList -BodyParameter <IMicrosoftGraphBrows
 Create a new browserSiteList object to support Internet Explorer mode.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -460,4 +448,5 @@ For example, if a user changes their display name, the API might show the new va
 [New-MgBetaAdminEdgeInternetExplorerModeSiteList](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaAdminEdgeInternetExplorerModeSiteList?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgadminedgeinternetexplorermodesitelist](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgadminedgeinternetexplorermodesitelist)
+
 

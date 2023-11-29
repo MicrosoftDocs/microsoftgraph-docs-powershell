@@ -48,18 +48,6 @@ Update-MgInvitation -InputObject <IIdentitySignInsIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Update entity in invitations
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -9517,4 +9505,5 @@ The default is en-US.
 [Update-MgBetaInvitation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaInvitation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mginvitation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mginvitation)
+
 

@@ -28,18 +28,6 @@ Invoke-MgBetaHasDeviceAppManagementMdmWindowsInformationProtectionPolicyPayloadL
 ## DESCRIPTION
 Invoke action hasPayloadLinks
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -141,4 +129,5 @@ BODY \<IPaths1L86Vm8DeviceappmanagementMdmwindowsinformationprotectionpoliciesMi
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetahasdeviceappmanagementmdmwindowsinformationprotectionpolicypayloadlink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetahasdeviceappmanagementmdmwindowsinformationprotectionpolicypayloadlink)
+
 

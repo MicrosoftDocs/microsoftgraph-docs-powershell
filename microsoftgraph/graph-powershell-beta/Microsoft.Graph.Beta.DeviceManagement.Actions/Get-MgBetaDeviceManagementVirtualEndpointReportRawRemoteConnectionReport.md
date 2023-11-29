@@ -33,18 +33,6 @@ Get-MgBetaDeviceManagementVirtualEndpointReportRawRemoteConnectionReport -OutFil
 Get the raw real-time remote connection report for a Cloud PC without any calculation, such as roundTripTime or available bandwidth, which are aggregated hourly from the raw event data.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -272,4 +260,5 @@ BODYPARAMETER \<IPaths1Qiip8GDevicemanagementVirtualendpointReportsMicrosoftGrap
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportrawremoteconnectionreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportrawremoteconnectionreport)
+
 

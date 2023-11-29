@@ -50,18 +50,6 @@ Update-MgDeviceManagementTermAndConditionAcceptanceStatus
 ## DESCRIPTION
 Update the properties of a termsAndConditionsAcceptanceStatus object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AcceptedDateTime
@@ -372,4 +360,5 @@ Incremented when an administrator makes a change to the terms and wishes to requ
 [Update-MgBetaDeviceManagementTermAndConditionAcceptanceStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementTermAndConditionAcceptanceStatus?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementtermandconditionacceptancestatus](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementtermandconditionacceptancestatus)
+
 

@@ -30,18 +30,6 @@ Remove-MgSecurityThreatIntelligenceIntelProfile -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Delete navigation property intelProfiles for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -209,4 +197,5 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Remove-MgBetaSecurityThreatIntelligenceIntelProfile](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityThreatIntelligenceIntelProfile?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritythreatintelligenceintelprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritythreatintelligenceintelprofile)
+
 

@@ -22,18 +22,6 @@ Get-MgBookingBusinessCount [-Filter <String>] [-Search <String>] [<CommonParamet
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -80,4 +68,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgBetaBookingBusinessCount](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinesscount](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinesscount)
+
 

@@ -36,18 +36,6 @@ New-MgBetaRoleManagementDirectoryRoleAssignmentSchedule
 ## DESCRIPTION
 Create new navigation property to roleAssignmentSchedules for roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActivatedUsing
@@ -803,4 +791,5 @@ In PIM, when the  eligible or active assignment becomes active.
 [New-MgRoleManagementDirectoryRoleAssignmentSchedule](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementDirectoryRoleAssignmentSchedule?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagementdirectoryroleassignmentschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagementdirectoryroleassignmentschedule)
+
 

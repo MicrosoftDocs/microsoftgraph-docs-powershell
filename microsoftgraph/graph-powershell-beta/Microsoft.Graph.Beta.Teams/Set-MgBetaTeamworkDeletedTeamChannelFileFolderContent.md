@@ -30,22 +30,6 @@ Set-MgBetaTeamworkDeletedTeamChannelFileFolderContent -InputObject <ITeamsIdenti
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -217,4 +201,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Set-MgTeamworkDeletedTeamChannelFileFolderContent](/powershell/module/Microsoft.Graph.Teams/Set-MgTeamworkDeletedTeamChannelFileFolderContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetateamworkdeletedteamchannelfilefoldercontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetateamworkdeletedteamchannelfilefoldercontent)
+
 

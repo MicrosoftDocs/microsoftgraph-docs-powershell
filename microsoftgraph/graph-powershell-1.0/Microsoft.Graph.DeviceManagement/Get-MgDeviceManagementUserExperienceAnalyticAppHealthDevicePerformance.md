@@ -38,18 +38,6 @@ Get-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance -InputObj
 ## DESCRIPTION
 User experience analytics appHealth Device Performance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -309,4 +297,5 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementuserexperienceanalyticapphealthdeviceperformance](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementuserexperienceanalyticapphealthdeviceperformance)
+
 

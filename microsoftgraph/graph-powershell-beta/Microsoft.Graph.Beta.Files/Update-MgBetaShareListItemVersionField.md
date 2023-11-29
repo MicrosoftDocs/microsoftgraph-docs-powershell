@@ -67,22 +67,6 @@ Update-MgBetaShareListItemVersionField -InputObject <IFilesIdentity> -BodyParame
 ## DESCRIPTION
 Update the navigation property fields in shares
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -269,4 +253,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Update-MgShareListItemVersionField](/powershell/module/Microsoft.Graph.Files/Update-MgShareListItemVersionField?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelistitemversionfield](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelistitemversionfield)
+
 

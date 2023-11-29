@@ -45,22 +45,6 @@ Start-MgBetaDeviceManagementManagedDeviceConfigurationManagerAction
 ## DESCRIPTION
 Trigger action on ConfigurationManager client
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -269,4 +253,5 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/start-mgbetadevicemanagementmanageddeviceconfigurationmanageraction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/start-mgbetadevicemanagementmanageddeviceconfigurationmanageraction)
+
 

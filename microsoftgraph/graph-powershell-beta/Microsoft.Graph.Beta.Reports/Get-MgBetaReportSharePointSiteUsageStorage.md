@@ -29,22 +29,6 @@ Get-MgBetaReportSharePointSiteUsageStorage -InputObject <IReportsIdentity> -OutF
 ## DESCRIPTION
 Invoke function getSharePointSiteUsageStorage
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -169,4 +153,5 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
 [Get-MgReportSharePointSiteUsageStorage](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSharePointSiteUsageStorage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsharepointsiteusagestorage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsharepointsiteusagestorage)
+
 

@@ -47,22 +47,6 @@ Invoke-MgBetaCheckinDriveRoot -InputObject <IFilesIdentity>
 Check in a checked out driveItem resource, which makes the version of the document available to others.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -275,4 +259,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Invoke-MgCheckinDriveRoot](/powershell/module/Microsoft.Graph.Files/Invoke-MgCheckinDriveRoot?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetacheckindriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetacheckindriveroot)
+
 

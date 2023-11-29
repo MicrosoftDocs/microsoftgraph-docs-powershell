@@ -37,18 +37,6 @@ Get-MgGroupMemberAsApplication -InputObject <IGroupsIdentity> [-ExpandProperty <
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.application
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -320,4 +308,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Get-MgBetaGroupMemberAsApplication](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberAsApplication?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberasapplication](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberasapplication)
+
 

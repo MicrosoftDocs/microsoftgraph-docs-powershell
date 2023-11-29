@@ -28,18 +28,6 @@ Set-MgBetaVirtualEventWebinarRegistrationSessionBroadcastRecording -InputObject 
 ## DESCRIPTION
 Update broadcastRecording for the navigation property sessions in solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Data
@@ -225,4 +213,5 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/set-mgbetavirtualeventwebinarregistrationsessionbroadcastrecording](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/set-mgbetavirtualeventwebinarregistrationsessionbroadcastrecording)
+
 

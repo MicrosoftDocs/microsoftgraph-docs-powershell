@@ -29,22 +29,6 @@ Get-MgBetaReportM365AppUserCount -InputObject <IReportsIdentity> -OutFile <Strin
 ## DESCRIPTION
 Invoke function getM365AppUserCounts
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -169,4 +153,5 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
 [Get-MgReportM365AppUserCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportM365AppUserCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportm365appusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportm365appusercount)
+
 

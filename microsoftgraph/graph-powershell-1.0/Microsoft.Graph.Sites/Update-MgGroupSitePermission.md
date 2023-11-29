@@ -57,22 +57,6 @@ Update-MgGroupSitePermission -InputObject <ISitesIdentity> -BodyParameter <IMicr
 Update an application permission object on a site.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -670,4 +654,5 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
 [Update-MgBetaGroupSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSitePermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitepermission)
+
 

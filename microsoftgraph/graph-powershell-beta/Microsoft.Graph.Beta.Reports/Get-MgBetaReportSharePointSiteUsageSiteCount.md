@@ -30,22 +30,6 @@ Get-MgBetaReportSharePointSiteUsageSiteCount -InputObject <IReportsIdentity> -Ou
 ## DESCRIPTION
 Invoke function getSharePointSiteUsageSiteCounts
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -170,4 +154,5 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
 [Get-MgReportSharePointSiteUsageSiteCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSharePointSiteUsageSiteCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsharepointsiteusagesitecount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsharepointsiteusagesitecount)
+
 

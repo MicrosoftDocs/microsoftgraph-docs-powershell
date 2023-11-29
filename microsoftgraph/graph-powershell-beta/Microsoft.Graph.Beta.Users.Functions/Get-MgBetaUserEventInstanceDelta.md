@@ -48,22 +48,6 @@ This allows you to maintain and synchronize a local store of events in the speci
 The following table lists the differences between the delta function on events and the delta function on a calendarView in a calendar.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -353,4 +337,5 @@ INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
 [Get-MgUserEventInstanceDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserEventInstanceDelta?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausereventinstancedelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausereventinstancedelta)
+
 

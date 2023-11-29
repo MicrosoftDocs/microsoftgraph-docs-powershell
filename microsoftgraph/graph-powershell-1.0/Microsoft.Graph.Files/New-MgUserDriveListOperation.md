@@ -48,22 +48,6 @@ New-MgUserDriveListOperation -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Create new navigation property to operations for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -424,4 +408,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [New-MgBetaUserDriveListOperation](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveListOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdrivelistoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdrivelistoperation)
+
 

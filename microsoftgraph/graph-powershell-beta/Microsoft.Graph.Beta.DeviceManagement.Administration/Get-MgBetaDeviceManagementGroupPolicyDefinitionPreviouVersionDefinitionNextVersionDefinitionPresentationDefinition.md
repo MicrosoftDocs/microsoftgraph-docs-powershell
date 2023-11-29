@@ -29,22 +29,6 @@ Get-MgBetaDeviceManagementGroupPolicyDefinitionPreviouVersionDefinitionNextVersi
 ## DESCRIPTION
 The group policy definition associated with the presentation.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -200,4 +184,5 @@ INPUTOBJECT \<IDeviceManagementAdministrationIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementgrouppolicydefinitionpreviouversiondefinitionnextversiondefinitionpresentationdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementgrouppolicydefinitionpreviouversiondefinitionnextversiondefinitionpresentationdefinition)
+
 

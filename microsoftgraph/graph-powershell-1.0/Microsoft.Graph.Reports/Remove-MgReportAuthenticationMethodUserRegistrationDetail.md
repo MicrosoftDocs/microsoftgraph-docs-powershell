@@ -30,18 +30,6 @@ Remove-MgReportAuthenticationMethodUserRegistrationDetail -InputObject <IReports
 ## DESCRIPTION
 Delete navigation property userRegistrationDetails for reports
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -177,4 +165,5 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
 [Remove-MgBetaReportAuthenticationMethodUserRegistrationDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Remove-MgBetaReportAuthenticationMethodUserRegistrationDetail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/remove-mgreportauthenticationmethoduserregistrationdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/remove-mgreportauthenticationmethoduserregistrationdetail)
+
 

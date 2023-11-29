@@ -55,18 +55,6 @@ Update-MgBetaGroupSiteTermStoreSetParentGroupSetTerm -InputObject <ISitesIdentit
 Update the properties of a term object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -655,4 +643,5 @@ Read-only.
 [Update-MgGroupSiteTermStoreSetParentGroupSetTerm](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteTermStoreSetParentGroupSetTerm?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitetermstoresetparentgroupsetterm](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitetermstoresetparentgroupsetterm)
+
 

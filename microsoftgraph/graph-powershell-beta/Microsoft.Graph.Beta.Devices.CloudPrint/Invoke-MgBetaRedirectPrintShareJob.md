@@ -53,18 +53,6 @@ Redirecting a print job will only succeed if there is a printTask in a processin
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -320,4 +308,5 @@ INPUTOBJECT \<IDevicesCloudPrintIdentity\>: Identity Parameter
 [Invoke-MgRedirectPrintShareJob](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Invoke-MgRedirectPrintShareJob?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/invoke-mgbetaredirectprintsharejob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/invoke-mgbetaredirectprintsharejob)
+
 

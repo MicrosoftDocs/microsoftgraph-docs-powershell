@@ -31,22 +31,6 @@ Find-MgUserManagedDevice -InputObject <IUsersActionsIdentity> [-PassThru] [-What
 ## DESCRIPTION
 Locate a device
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -191,4 +175,5 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 [Find-MgBetaUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Find-MgBetaUserManagedDevice?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/find-mgusermanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/find-mgusermanageddevice)
+
 

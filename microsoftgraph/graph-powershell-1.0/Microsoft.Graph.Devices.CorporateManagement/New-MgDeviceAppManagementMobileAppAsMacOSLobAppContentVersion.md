@@ -46,18 +46,6 @@ New-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersion
 ## DESCRIPTION
 Create new navigation property to contentVersions for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -297,4 +285,5 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
 [New-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersion](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappasmacoslobappcontentversion](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappasmacoslobappcontentversion)
+
 

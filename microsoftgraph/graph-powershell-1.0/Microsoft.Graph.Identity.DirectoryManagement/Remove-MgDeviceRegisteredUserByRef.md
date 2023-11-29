@@ -33,18 +33,6 @@ Remove-MgDeviceRegisteredUserByRef -InputObject <IIdentityDirectoryManagementIde
 Remove a user as a registered user of the device.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceId
@@ -214,4 +202,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 [Remove-MgBetaDeviceRegisteredUserByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDeviceRegisteredUserByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdeviceregistereduserbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdeviceregistereduserbyref)
+
 

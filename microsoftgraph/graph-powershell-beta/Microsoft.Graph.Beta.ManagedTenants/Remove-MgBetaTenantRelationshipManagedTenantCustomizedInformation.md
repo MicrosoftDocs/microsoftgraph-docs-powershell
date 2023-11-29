@@ -27,22 +27,6 @@ Remove-MgBetaTenantRelationshipManagedTenantCustomizedInformation -InputObject <
 ## DESCRIPTION
 Delete navigation property tenantsCustomizedInformation for tenantRelationships
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -195,4 +179,5 @@ INPUTOBJECT \<IManagedTenantsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/remove-mgbetatenantrelationshipmanagedtenantcustomizedinformation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/remove-mgbetatenantrelationshipmanagedtenantcustomizedinformation)
+
 

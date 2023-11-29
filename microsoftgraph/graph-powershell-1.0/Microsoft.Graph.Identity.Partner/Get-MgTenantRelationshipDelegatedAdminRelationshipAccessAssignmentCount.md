@@ -30,18 +30,6 @@ Get-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignmentCount -InputOb
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DelegatedAdminRelationshipId
@@ -132,4 +120,5 @@ INPUTOBJECT \<IIdentityPartnerIdentity\>: Identity Parameter
 [Get-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignmentCount](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Get-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignmentCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/get-mgtenantrelationshipdelegatedadminrelationshipaccessassignmentcount](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/get-mgtenantrelationshipdelegatedadminrelationshipaccessassignmentcount)
+
 

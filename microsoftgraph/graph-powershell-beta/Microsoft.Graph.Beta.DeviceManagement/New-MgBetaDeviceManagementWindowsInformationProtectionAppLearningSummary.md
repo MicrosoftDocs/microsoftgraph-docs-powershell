@@ -32,18 +32,6 @@ New-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummary
 ## DESCRIPTION
 Create new navigation property to windowsInformationProtectionAppLearningSummaries for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -196,4 +184,5 @@ Read-only.
 [New-MgDeviceManagementWindowsInformationProtectionAppLearningSummary](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementWindowsInformationProtectionAppLearningSummary?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementwindowsinformationprotectionapplearningsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementwindowsinformationprotectionapplearningsummary)
+
 

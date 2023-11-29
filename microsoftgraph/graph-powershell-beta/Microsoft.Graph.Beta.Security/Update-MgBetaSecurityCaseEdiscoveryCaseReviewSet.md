@@ -46,22 +46,6 @@ Update-MgBetaSecurityCaseEdiscoveryCaseReviewSet -InputObject <ISecurityIdentity
 ## DESCRIPTION
 Update the navigation property reviewSets in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -15316,4 +15300,5 @@ Read-only.
 [Update-MgSecurityCaseEdiscoveryCaseReviewSet](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCaseEdiscoveryCaseReviewSet?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasereviewset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasereviewset)
+
 

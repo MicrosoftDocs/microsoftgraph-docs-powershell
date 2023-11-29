@@ -32,22 +32,6 @@ Get-MgBetaGroupDriveListDrive -InputObject <IFilesIdentity> [-ExpandProperty <St
 Allows access to the list as a drive resource with driveItems.
 Only present on document libraries.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -171,4 +155,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgGroupDriveListDrive](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveListDrive?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdrivelistdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdrivelistdrive)
+
 

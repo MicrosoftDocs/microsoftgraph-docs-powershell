@@ -59,22 +59,6 @@ After the assignment is published, an immutable copy of the rubric is made that 
 That rubric can be retrieved using GET /education/classes/{class-id}/assignments/{assignment-id}/rubric, but it cannot be updated.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -428,4 +412,5 @@ Weights must add up to 100.
 [Update-MgBetaEducationUserRubric](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationUserRubric?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationuserrubric](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationuserrubric)
+
 

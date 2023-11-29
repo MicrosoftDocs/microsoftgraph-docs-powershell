@@ -45,18 +45,6 @@ New-MgBetaDeviceAppManagementTargetedManagedAppConfigurationApp
 ## DESCRIPTION
 Create new navigation property to apps for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -296,4 +284,5 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
 [New-MgDeviceAppManagementTargetedManagedAppConfigurationApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementTargetedManagedAppConfigurationApp?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementtargetedmanagedappconfigurationapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementtargetedmanagedappconfigurationapp)
+
 

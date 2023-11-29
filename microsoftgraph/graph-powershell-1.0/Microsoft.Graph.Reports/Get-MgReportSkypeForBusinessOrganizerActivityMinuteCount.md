@@ -30,22 +30,6 @@ Get-MgReportSkypeForBusinessOrganizerActivityMinuteCount -InputObject <IReportsI
 ## DESCRIPTION
 Invoke function getSkypeForBusinessOrganizerActivityMinuteCounts
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -150,4 +134,5 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
 [Get-MgBetaReportSkypeForBusinessOrganizerActivityMinuteCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSkypeForBusinessOrganizerActivityMinuteCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinessorganizeractivityminutecount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinessorganizeractivityminutecount)
+
 

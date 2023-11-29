@@ -74,22 +74,6 @@ Update-MgGroupSiteTermStore -InputObject <ISitesIdentity> -BodyParameter <IMicro
 Update the properties of a store object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -511,4 +495,5 @@ Read-only.
 [Update-MgBetaGroupSiteTermStore](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteTermStore?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitetermstore](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitetermstore)
+
 

@@ -30,22 +30,6 @@ Invoke-MgBetaHaveTeamworkDeletedTeamChannel -InputObject <ITeamsIdentity> [-Tena
 ## DESCRIPTION
 Invoke function doesUserHaveAccess
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -198,4 +182,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Invoke-MgHaveTeamworkDeletedTeamChannel](/powershell/module/Microsoft.Graph.Teams/Invoke-MgHaveTeamworkDeletedTeamChannel?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetahaveteamworkdeletedteamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetahaveteamworkdeletedteamchannel)
+
 

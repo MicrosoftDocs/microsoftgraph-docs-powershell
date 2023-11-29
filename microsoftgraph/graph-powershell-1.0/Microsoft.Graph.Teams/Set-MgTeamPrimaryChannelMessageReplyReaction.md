@@ -45,18 +45,6 @@ Set-MgTeamPrimaryChannelMessageReplyReaction -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Invoke action setReaction
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -270,4 +258,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Set-MgBetaTeamPrimaryChannelMessageReplyReaction](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaTeamPrimaryChannelMessageReplyReaction?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamprimarychannelmessagereplyreaction](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamprimarychannelmessagereplyreaction)
+
 

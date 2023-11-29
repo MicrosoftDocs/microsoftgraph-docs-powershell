@@ -48,22 +48,6 @@ New-MgBetaSiteTermStoreGroup -InputObject <ISitesIdentity> -BodyParameter <IMicr
 Create a new group object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -437,4 +421,5 @@ Read-only.
 [New-MgSiteTermStoreGroup](/powershell/module/Microsoft.Graph.Sites/New-MgSiteTermStoreGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitetermstoregroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitetermstoregroup)
+
 

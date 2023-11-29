@@ -47,22 +47,6 @@ Update-MgBetaDeviceManagementDeviceConfigurationAssignment -InputObject <IDevice
 ## DESCRIPTION
 Update the navigation property assignments in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -412,4 +396,5 @@ TARGET \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>: Base type for 
 [Update-MgDeviceManagementDeviceConfigurationAssignment](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementDeviceConfigurationAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementdeviceconfigurationassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementdeviceconfigurationassignment)
+
 

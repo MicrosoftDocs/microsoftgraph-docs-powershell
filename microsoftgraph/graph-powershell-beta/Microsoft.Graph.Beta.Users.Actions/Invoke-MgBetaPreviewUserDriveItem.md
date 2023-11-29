@@ -46,22 +46,6 @@ Invoke-MgBetaPreviewUserDriveItem -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Invoke action preview
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -331,4 +315,5 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 [Invoke-MgPreviewUserDriveItem](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgPreviewUserDriveItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetapreviewuserdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetapreviewuserdriveitem)
+
 

@@ -30,18 +30,6 @@ Remove-MgBetaRoleManagementDirectoryRoleAssignmentAppScope -InputObject <IIdenti
 ## DESCRIPTION
 Delete navigation property appScope for roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -256,4 +244,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [Remove-MgRoleManagementDirectoryRoleAssignmentAppScope](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgRoleManagementDirectoryRoleAssignmentAppScope?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetarolemanagementdirectoryroleassignmentappscope](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetarolemanagementdirectoryroleassignmentappscope)
+
 

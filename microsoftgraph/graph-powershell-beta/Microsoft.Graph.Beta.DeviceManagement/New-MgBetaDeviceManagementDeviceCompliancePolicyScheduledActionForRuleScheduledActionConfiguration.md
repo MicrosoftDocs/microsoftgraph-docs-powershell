@@ -50,22 +50,6 @@ New-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledA
 ## DESCRIPTION
 Create new navigation property to scheduledActionConfigurations for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ActionType
@@ -424,4 +408,5 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 [New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdevicecompliancepolicyscheduledactionforrulescheduledactionconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdevicecompliancepolicyscheduledactionforrulescheduledactionconfiguration)
+
 

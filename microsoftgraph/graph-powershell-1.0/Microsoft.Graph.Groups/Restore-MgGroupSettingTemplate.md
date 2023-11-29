@@ -35,18 +35,6 @@ A recently deleted item remains available for up to 30 days.
 After 30 days, the item is permanently deleted.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupSettingTemplateId
@@ -166,4 +154,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/restore-mggroupsettingtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/restore-mggroupsettingtemplate)
+
 

@@ -31,18 +31,6 @@ New-MgDeviceManagementUserExperienceAnalyticCategory
 ## DESCRIPTION
 Create new navigation property to userExperienceAnalyticsCategories for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -211,4 +199,5 @@ Examples: none, percentage, count, seconds, score.
 [New-MgBetaDeviceManagementUserExperienceAnalyticCategory](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementUserExperienceAnalyticCategory?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticcategory)
+
 

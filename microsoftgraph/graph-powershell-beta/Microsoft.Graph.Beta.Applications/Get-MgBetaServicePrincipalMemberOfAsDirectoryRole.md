@@ -37,18 +37,6 @@ Get-MgBetaServicePrincipalMemberOfAsDirectoryRole -InputObject <IApplicationsIde
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.directoryRole
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -316,4 +304,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Get-MgServicePrincipalMemberOfAsDirectoryRole](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalMemberOfAsDirectoryRole?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalmemberofasdirectoryrole](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalmemberofasdirectoryrole)
+
 

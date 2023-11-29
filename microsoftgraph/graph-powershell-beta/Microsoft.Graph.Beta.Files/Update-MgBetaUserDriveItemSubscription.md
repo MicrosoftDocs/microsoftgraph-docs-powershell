@@ -52,22 +52,6 @@ Update-MgBetaUserDriveItemSubscription -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property subscriptions in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -613,4 +597,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Update-MgUserDriveItemSubscription](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveItemSubscription?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriveitemsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriveitemsubscription)
+
 

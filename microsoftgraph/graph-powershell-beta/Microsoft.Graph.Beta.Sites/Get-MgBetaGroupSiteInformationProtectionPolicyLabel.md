@@ -38,18 +38,6 @@ Get-MgBetaGroupSiteInformationProtectionPolicyLabel -InputObject <ISitesIdentity
 Retrieve the properties and relationships of an informationProtectionLabel object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -332,4 +320,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteinformationprotectionpolicylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteinformationprotectionpolicylabel)
+
 

@@ -31,18 +31,6 @@ Remove-MgSecurityTriggerTypeRetentionEventType -InputObject <ISecurityIdentity> 
 ## DESCRIPTION
 Delete a retentionEventType object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -210,4 +198,5 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Remove-MgBetaSecurityTriggerTypeRetentionEventType](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityTriggerTypeRetentionEventType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritytriggertyperetentioneventtype](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritytriggertyperetentioneventtype)
+
 

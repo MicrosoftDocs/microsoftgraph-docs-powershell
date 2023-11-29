@@ -33,22 +33,6 @@ Invoke-MgUnfollowUserDriveItem -InputObject <IUsersActionsIdentity> [-PassThru] 
 Unfollow a driveItem.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -208,4 +192,5 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 [Invoke-MgBetaUnfollowUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaUnfollowUserDriveItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgunfollowuserdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgunfollowuserdriveitem)
+
 

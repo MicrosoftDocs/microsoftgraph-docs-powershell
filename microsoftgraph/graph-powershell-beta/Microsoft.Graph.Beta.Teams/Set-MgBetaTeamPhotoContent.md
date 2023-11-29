@@ -30,22 +30,6 @@ Set-MgBetaTeamPhotoContent -InputObject <ITeamsIdentity> [-Data <Stream>] -InFil
 ## DESCRIPTION
 Update media content for the navigation property photo in teams
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Data
@@ -217,4 +201,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Set-MgTeamPhotoContent](/powershell/module/Microsoft.Graph.Teams/Set-MgTeamPhotoContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetateamphotocontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetateamphotocontent)
+
 

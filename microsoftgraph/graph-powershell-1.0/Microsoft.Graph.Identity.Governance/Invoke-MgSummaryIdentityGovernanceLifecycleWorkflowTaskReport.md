@@ -30,18 +30,6 @@ Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowTaskReport -InputObject <IIde
 ## DESCRIPTION
 Invoke function summary
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EndDateTime
@@ -194,4 +182,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowTaskReport](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowTaskReport?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgsummaryidentitygovernancelifecycleworkflowtaskreport](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgsummaryidentitygovernancelifecycleworkflowtaskreport)
+
 

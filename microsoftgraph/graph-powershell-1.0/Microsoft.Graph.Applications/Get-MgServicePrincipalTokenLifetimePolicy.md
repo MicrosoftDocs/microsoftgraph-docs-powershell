@@ -37,22 +37,6 @@ Get-MgServicePrincipalTokenLifetimePolicy -InputObject <IApplicationsIdentity> [
 ## DESCRIPTION
 The tokenLifetimePolicies assigned to this service principal.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -295,4 +279,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Get-MgBetaServicePrincipalTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalTokenLifetimePolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipaltokenlifetimepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipaltokenlifetimepolicy)
+
 

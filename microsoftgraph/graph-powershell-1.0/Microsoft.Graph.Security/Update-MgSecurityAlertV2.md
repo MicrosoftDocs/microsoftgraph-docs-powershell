@@ -64,18 +64,6 @@ Update-MgSecurityAlertV2 -InputObject <ISecurityIdentity> -BodyParameter <IMicro
 Update the properties of an alert object in an organization based on the specified alert id property.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActorDisplayName
@@ -797,4 +785,5 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Update-MgBetaSecurityAlertV2](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityAlertV2?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityalertv2](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityalertv2)
+
 

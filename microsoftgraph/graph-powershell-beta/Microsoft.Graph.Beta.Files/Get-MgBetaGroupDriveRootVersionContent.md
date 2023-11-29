@@ -31,22 +31,6 @@ Get-MgBetaGroupDriveRootVersionContent -InputObject <IFilesIdentity> -OutFile <S
 ## DESCRIPTION
 Get content for the navigation property versions from groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -185,4 +169,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgGroupDriveRootVersionContent](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveRootVersionContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriverootversioncontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriverootversioncontent)
+
 

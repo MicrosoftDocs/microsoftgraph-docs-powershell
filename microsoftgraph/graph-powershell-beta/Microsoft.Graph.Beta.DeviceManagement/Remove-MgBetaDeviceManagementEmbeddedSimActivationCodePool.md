@@ -27,22 +27,6 @@ Remove-MgBetaDeviceManagementEmbeddedSimActivationCodePool -InputObject <IDevice
 ## DESCRIPTION
 Delete navigation property embeddedSIMActivationCodePools for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EmbeddedSimActivationCodePoolId
@@ -296,4 +280,5 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementembeddedsimactivationcodepool](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementembeddedsimactivationcodepool)
+
 

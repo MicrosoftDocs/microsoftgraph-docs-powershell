@@ -31,18 +31,6 @@ New-MgSecurityThreatIntelligenceHostCookie -BodyParameter <IMicrosoftGraphSecuri
 ## DESCRIPTION
 Create new navigation property to hostCookies for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -775,4 +763,5 @@ Read-only.
 [New-MgBetaSecurityThreatIntelligenceHostCookie](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceHostCookie?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencehostcookie](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencehostcookie)
+
 

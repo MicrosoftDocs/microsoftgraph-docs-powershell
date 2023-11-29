@@ -44,18 +44,6 @@ Update-MgAdminSharepointSetting -BodyParameter <IMicrosoftGraphSharepointSetting
 Update one or more tenant-level settings for SharePoint and OneDrive.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -645,4 +633,5 @@ IDLESESSIONSIGNOUT \<IMicrosoftGraphIdleSessionSignOut\>: idleSessionSignOut
 [Update-MgBetaAdminSharepointSetting](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaAdminSharepointSetting?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgadminsharepointsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgadminsharepointsetting)
+
 

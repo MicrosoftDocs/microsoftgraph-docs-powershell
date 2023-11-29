@@ -38,18 +38,6 @@ Get-MgEntitlementManagementCatalogCustomWorkflowExtension -InputObject <IIdentit
 Read the properties and relationships of an accessPackageAssignmentRequestWorkflowExtension object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessPackageCatalogId
@@ -337,4 +325,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementcatalogcustomworkflowextension](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementcatalogcustomworkflowextension)
+
 

@@ -48,22 +48,6 @@ Update-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory -InputObject
 ## DESCRIPTION
 Update the navigation property directories in servicePrincipals
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -446,4 +430,5 @@ Not nullable.
 [Update-MgServicePrincipalSynchronizationTemplateSchemaDirectory](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipalSynchronizationTemplateSchemaDirectory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalsynchronizationtemplateschemadirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalsynchronizationtemplateschemadirectory)
+
 

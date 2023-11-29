@@ -22,22 +22,6 @@ Get-MgBetaSecurityCase [-ExpandProperty <String[]>] [-Property <String[]>] [<Com
 ## DESCRIPTION
 Get cases from security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -84,4 +68,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgSecurityCase](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCase?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycase](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycase)
+
 

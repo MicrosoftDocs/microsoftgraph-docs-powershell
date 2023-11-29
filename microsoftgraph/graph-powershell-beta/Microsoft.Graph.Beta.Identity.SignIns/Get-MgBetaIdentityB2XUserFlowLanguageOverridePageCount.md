@@ -30,18 +30,6 @@ Get-MgBetaIdentityB2XUserFlowLanguageOverridePageCount -InputObject <IIdentitySi
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId
@@ -217,4 +205,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 [Get-MgIdentityB2XUserFlowLanguageOverridePageCount](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlowLanguageOverridePageCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2xuserflowlanguageoverridepagecount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2xuserflowlanguageoverridepagecount)
+
 

@@ -46,22 +46,6 @@ New-MgGroupDriveItemListItemVersion -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Create new navigation property to versions for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -370,4 +354,5 @@ Read-only.
 [New-MgBetaGroupDriveItemListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItemListItemVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdriveitemlistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdriveitemlistitemversion)
+
 

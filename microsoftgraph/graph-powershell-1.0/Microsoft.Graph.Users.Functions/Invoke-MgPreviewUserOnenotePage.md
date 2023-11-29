@@ -28,22 +28,6 @@ Invoke-MgPreviewUserOnenotePage -InputObject <IUsersFunctionsIdentity> [<CommonP
 ## DESCRIPTION
 Invoke function preview
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -139,4 +123,5 @@ INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
 [Invoke-MgBetaPreviewUserOnenotePage](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaPreviewUserOnenotePage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgpreviewuseronenotepage](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgpreviewuseronenotepage)
+
 

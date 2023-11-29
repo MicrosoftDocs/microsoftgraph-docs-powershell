@@ -30,18 +30,6 @@ Get-MgApplicationHomeRealmDiscoveryPolicyCount -InputObject <IApplicationsIdenti
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -148,4 +136,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Get-MgBetaApplicationHomeRealmDiscoveryPolicyCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationHomeRealmDiscoveryPolicyCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationhomerealmdiscoverypolicycount](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationhomerealmdiscoverypolicycount)
+
 

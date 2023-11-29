@@ -36,22 +36,6 @@ It allows users to access Cloud PCs for up to seven days before deprovisioning o
 Ending the grace period immediately deprovisions the Cloud PC without waiting the seven days.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -CloudPcId
@@ -205,4 +189,5 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/stop-mgbetausercloudpcgraceperiod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/stop-mgbetausercloudpcgraceperiod)
+
 

@@ -50,22 +50,6 @@ If a root domain is verified, subdomains of the root domain are automatically ve
 For example, subdomain.contoso.com is automatically be verified if contoso.com has been verified.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -636,4 +620,5 @@ Not nullable.
 [New-MgDomain](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDomain?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadomain](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadomain)
+
 

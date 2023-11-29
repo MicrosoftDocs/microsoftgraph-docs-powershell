@@ -31,18 +31,6 @@ Carries out the appropriate procedures to reset the onboarding status for the ma
 By invoking this action the platform attempts to onboard the managed tenant for management.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -170,4 +158,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/reset-mgbetatenantrelationshipmanagedtenantonboardingstatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/reset-mgbetatenantrelationshipmanagedtenantonboardingstatus)
+
 

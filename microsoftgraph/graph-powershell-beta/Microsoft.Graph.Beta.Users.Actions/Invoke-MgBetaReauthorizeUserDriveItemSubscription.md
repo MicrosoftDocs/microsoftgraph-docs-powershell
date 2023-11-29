@@ -33,22 +33,6 @@ Invoke-MgBetaReauthorizeUserDriveItemSubscription -InputObject <IUsersActionsIde
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -233,4 +217,5 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 [Invoke-MgReauthorizeUserDriveItemSubscription](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReauthorizeUserDriveItemSubscription?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetareauthorizeuserdriveitemsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetareauthorizeuserdriveitemsubscription)
+
 

@@ -44,22 +44,6 @@ Get-MgDriveItemDelta -InputObject <IFilesIdentity> [-Filter <String>] [-Property
 ## DESCRIPTION
 Invoke function delta
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -319,4 +303,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgBetaDriveItemDelta](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemDelta?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemdelta)
+
 

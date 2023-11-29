@@ -35,18 +35,6 @@ Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppContainedApp
 ## DESCRIPTION
 The collection of contained apps in a mobileApp acting as a package.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -335,4 +323,5 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementmobileappasmicrosoftstoreforbusinessappcontainedapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementmobileappasmicrosoftstoreforbusinessappcontainedapp)
+
 

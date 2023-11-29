@@ -44,18 +44,6 @@ Update-MgEntitlementManagementResourceRequestResourceScope -InputObject <IIdenti
 ## DESCRIPTION
 Update the navigation property scopes in identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessPackageResourceRequestId
@@ -477,4 +465,5 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementresourcerequestresourcescope](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementresourcerequestresourcescope)
+
 

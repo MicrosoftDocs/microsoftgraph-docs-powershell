@@ -77,18 +77,6 @@ New-MgGroupDriveRootChild -InputObject <IFilesIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Create new navigation property to children for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -29020,4 +29008,5 @@ Read-only.
 [New-MgBetaGroupDriveRootChild](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveRootChild?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdriverootchild](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdriverootchild)
+
 

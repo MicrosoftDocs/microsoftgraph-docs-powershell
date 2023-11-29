@@ -48,22 +48,6 @@ Update-MgBetaUserDriveListOperation -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property operations in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -439,4 +423,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Update-MgUserDriveListOperation](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveListOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdrivelistoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdrivelistoperation)
+
 

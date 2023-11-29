@@ -45,22 +45,6 @@ Invoke-MgPreviewGroupDriveItem -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Invoke action preview
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -278,4 +262,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Invoke-MgBetaPreviewGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaPreviewGroupDriveItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgpreviewgroupdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgpreviewgroupdriveitem)
+
 

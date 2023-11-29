@@ -45,22 +45,6 @@ Update-MgBetaTenantRelationshipManagedTenantAuditEvent -InputObject <IManagedTen
 ## DESCRIPTION
 Update the navigation property auditEvents in tenantRelationships
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Activity
@@ -496,4 +480,5 @@ INPUTOBJECT \<IManagedTenantsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantauditevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantauditevent)
+
 

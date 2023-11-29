@@ -44,18 +44,6 @@ New-MgBetaSecurityAttackSimulationLandingPageDetail -InputObject <ISecurityIdent
 ## DESCRIPTION
 Create new navigation property to details for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -318,4 +306,5 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [New-MgSecurityAttackSimulationLandingPageDetail](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulationLandingPageDetail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationlandingpagedetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationlandingpagedetail)
+
 

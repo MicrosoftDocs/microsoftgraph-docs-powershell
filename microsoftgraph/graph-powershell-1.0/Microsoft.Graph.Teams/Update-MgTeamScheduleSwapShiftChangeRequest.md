@@ -49,22 +49,6 @@ Update-MgTeamScheduleSwapShiftChangeRequest -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property swapShiftsChangeRequests in teams
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -415,4 +399,5 @@ For example, if a user changes their display name, the API might show the new va
 [Update-MgBetaTeamScheduleSwapShiftChangeRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamScheduleSwapShiftChangeRequest?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamscheduleswapshiftchangerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamscheduleswapshiftchangerequest)
+
 

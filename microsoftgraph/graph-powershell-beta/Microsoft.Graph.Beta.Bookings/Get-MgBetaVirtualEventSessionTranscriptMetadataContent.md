@@ -30,18 +30,6 @@ Get-MgBetaVirtualEventSessionTranscriptMetadataContent -InputObject <IBookingsId
 The time-aligned metadata of the utterances in the transcript.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CallTranscriptId
@@ -178,4 +166,5 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventsessiontranscriptmetadatacontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventsessiontranscriptmetadatacontent)
+
 

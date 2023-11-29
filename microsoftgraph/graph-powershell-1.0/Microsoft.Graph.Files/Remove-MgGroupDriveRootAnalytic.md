@@ -30,18 +30,6 @@ Remove-MgGroupDriveRootAnalytic -InputObject <IFilesIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete navigation property analytics for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -196,4 +184,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Remove-MgBetaGroupDriveRootAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveRootAnalytic?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdriverootanalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdriverootanalytic)
+
 

@@ -22,18 +22,6 @@ Get-MgBetaAdminPeopleProfileCardPropertyCount [-Filter <String>] [-Search <Strin
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -80,4 +68,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgAdminPeopleProfileCardPropertyCount](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgAdminPeopleProfileCardPropertyCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadminpeopleprofilecardpropertycount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadminpeopleprofilecardpropertycount)
+
 

@@ -30,22 +30,6 @@ Remove-MgBetaGroupTeamPermissionGrant -InputObject <ITeamsIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete navigation property permissionGrants for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -GroupId
@@ -214,4 +198,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Remove-MgGroupTeamPermissionGrant](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamPermissionGrant?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteampermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteampermissiongrant)
+
 

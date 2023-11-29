@@ -37,22 +37,6 @@ Get-MgBetaGroupDriveListContentTypeColumnLink -InputObject <IFilesIdentity> [-Ex
 ## DESCRIPTION
 The collection of columns that are required by this content type
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -327,4 +311,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgGroupDriveListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveListContentTypeColumnLink?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdrivelistcontenttypecolumnlink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdrivelistcontenttypecolumnlink)
+
 

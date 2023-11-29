@@ -45,22 +45,6 @@ Invoke-MgBetaPreviewDriveItem -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Invoke action preview
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -300,4 +284,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Invoke-MgPreviewDriveItem](/powershell/module/Microsoft.Graph.Files/Invoke-MgPreviewDriveItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetapreviewdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetapreviewdriveitem)
+
 

@@ -30,22 +30,6 @@ Set-MgBetaGroupDriveRootVersionContent -InputObject <IFilesIdentity> [-Data <Str
 ## DESCRIPTION
 Update content for the navigation property versions in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Data
@@ -218,4 +202,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Set-MgGroupDriveRootVersionContent](/powershell/module/Microsoft.Graph.Files/Set-MgGroupDriveRootVersionContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetagroupdriverootversioncontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetagroupdriverootversioncontent)
+
 

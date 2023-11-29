@@ -30,22 +30,6 @@ Remove-MgBetaDomainVerificationDnsRecord -InputObject <IIdentityDirectoryManagem
 ## DESCRIPTION
 Delete navigation property verificationDnsRecords for domains
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DomainDnsRecordId
@@ -219,4 +203,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 [Remove-MgDomainVerificationDnsRecord](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDomainVerificationDnsRecord?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadomainverificationdnsrecord](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadomainverificationdnsrecord)
+
 

@@ -30,18 +30,6 @@ Get-MgUserAuthenticationMicrosoftAuthenticatorMethodCount -InputObject <IIdentit
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -181,4 +169,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 [Get-MgBetaUserAuthenticationMicrosoftAuthenticatorMethodCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationMicrosoftAuthenticatorMethodCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationmicrosoftauthenticatormethodcount](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationmicrosoftauthenticatormethodcount)
+
 

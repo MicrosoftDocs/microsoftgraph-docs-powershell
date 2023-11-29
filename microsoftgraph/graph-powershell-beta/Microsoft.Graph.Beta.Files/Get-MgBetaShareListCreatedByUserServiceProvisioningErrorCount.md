@@ -30,18 +30,6 @@ Get-MgBetaShareListCreatedByUserServiceProvisioningErrorCount -InputObject <IFil
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -150,4 +138,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgShareListCreatedByUserServiceProvisioningErrorCount](/powershell/module/Microsoft.Graph.Files/Get-MgShareListCreatedByUserServiceProvisioningErrorCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistcreatedbyuserserviceprovisioningerrorcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistcreatedbyuserserviceprovisioningerrorcount)
+
 

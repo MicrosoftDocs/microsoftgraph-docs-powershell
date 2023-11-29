@@ -30,18 +30,6 @@ Get-MgBetaUserTodoTaskLinkedResourceCount -InputObject <IUsersIdentity> [-Filter
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -178,4 +166,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Get-MgUserTodoTaskLinkedResourceCount](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoTaskLinkedResourceCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotasklinkedresourcecount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotasklinkedresourcecount)
+
 

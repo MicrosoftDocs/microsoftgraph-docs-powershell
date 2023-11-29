@@ -30,18 +30,6 @@ Get-MgGroupTeamScheduleTimeOffRequestCount -InputObject <ITeamsIdentity> [-Filte
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -158,4 +146,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Get-MgBetaGroupTeamScheduleTimeOffRequestCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamScheduleTimeOffRequestCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamscheduletimeoffrequestcount](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamscheduletimeoffrequestcount)
+
 

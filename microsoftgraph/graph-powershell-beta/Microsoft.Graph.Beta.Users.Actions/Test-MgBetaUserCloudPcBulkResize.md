@@ -44,18 +44,6 @@ Test-MgBetaUserCloudPcBulkResize -InputObject <IUsersActionsIdentity>
 Validate that a set of cloudPC devices meet the requirements to be bulk resized.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -246,4 +234,5 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetausercloudpcbulkresize](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetausercloudpcbulkresize)
+
 

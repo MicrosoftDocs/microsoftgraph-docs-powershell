@@ -32,18 +32,6 @@ Remove-MgSecurityCaseEdiscoveryCaseSearchNoncustodialSource -InputObject <ISecur
 ## DESCRIPTION
 Remove an ediscoveryNoncustodialDataSource object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EdiscoveryCaseId
@@ -241,4 +229,5 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Remove-MgBetaSecurityCaseEdiscoveryCaseSearchNoncustodialSource](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCaseEdiscoveryCaseSearchNoncustodialSource?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasesearchnoncustodialsource](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasesearchnoncustodialsource)
+
 

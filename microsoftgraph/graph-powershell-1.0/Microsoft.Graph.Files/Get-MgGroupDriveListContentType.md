@@ -38,22 +38,6 @@ Get-MgGroupDriveListContentType -InputObject <IFilesIdentity> [-ExpandProperty <
 ## DESCRIPTION
 The collection of content types present in this list.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -313,4 +297,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgBetaGroupDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveListContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivelistcontenttype)
+
 

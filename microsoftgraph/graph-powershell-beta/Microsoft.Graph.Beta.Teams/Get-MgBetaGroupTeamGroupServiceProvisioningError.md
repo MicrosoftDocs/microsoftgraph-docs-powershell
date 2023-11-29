@@ -26,18 +26,6 @@ Get-MgBetaGroupTeamGroupServiceProvisioningError -GroupId <String> [-ExpandPrope
 Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object .
 Supports $filter (eq, not, for isResolved and serviceInstance).
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -220,4 +208,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgGroupTeamGroupServiceProvisioningError](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamGroupServiceProvisioningError?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamgroupserviceprovisioningerror](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamgroupserviceprovisioningerror)
+
 

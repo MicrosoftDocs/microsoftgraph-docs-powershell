@@ -31,22 +31,6 @@ New-MgDeviceManagementManagedDeviceWindowsDefenderUpdateSignature
 ## DESCRIPTION
 Not yet documented
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -159,4 +143,5 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
 [New-MgBetaDeviceManagementManagedDeviceWindowsDefenderUpdateSignature](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/New-MgBetaDeviceManagementManagedDeviceWindowsDefenderUpdateSignature?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/new-mgdevicemanagementmanageddevicewindowsdefenderupdatesignature](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/new-mgdevicemanagementmanageddevicewindowsdefenderupdatesignature)
+
 

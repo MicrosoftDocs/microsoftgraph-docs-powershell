@@ -30,18 +30,6 @@ Get-MgBetaGroupSiteAnalyticLastSevenDay -InputObject <ISitesIdentity> [-ExpandPr
 ## DESCRIPTION
 Get lastSevenDays from groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -189,4 +177,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgGroupSiteAnalyticLastSevenDay](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteAnalyticLastSevenDay?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteanalyticlastsevenday](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteanalyticlastsevenday)
+
 

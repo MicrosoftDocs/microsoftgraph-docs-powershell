@@ -44,22 +44,6 @@ Only items representing folders have children.
 Read-only.
 Nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -319,4 +303,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgBetaGroupDriveRootChild](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootChild?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootchild](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootchild)
+
 

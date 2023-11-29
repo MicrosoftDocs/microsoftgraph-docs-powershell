@@ -30,18 +30,6 @@ Get-MgShareListContentTypeColumnPositionCount -InputObject <IFilesIdentity> [-Fi
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -165,4 +153,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgBetaShareListContentTypeColumnPositionCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListContentTypeColumnPositionCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistcontenttypecolumnpositioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistcontenttypecolumnpositioncount)
+
 

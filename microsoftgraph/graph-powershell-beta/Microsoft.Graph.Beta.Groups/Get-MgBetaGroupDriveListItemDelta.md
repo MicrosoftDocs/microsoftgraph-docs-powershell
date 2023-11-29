@@ -41,22 +41,6 @@ Get-MgBetaGroupDriveListItemDelta -InputObject <IGroupsIdentity> [-Filter <Strin
 ## DESCRIPTION
 Invoke function delta
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -332,4 +316,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupdrivelistitemdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupdrivelistitemdelta)
+
 

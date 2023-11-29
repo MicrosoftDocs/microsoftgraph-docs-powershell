@@ -37,18 +37,6 @@ Get-MgBetaContactDirectReportAsUser -InputObject <IIdentityDirectoryManagementId
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -328,4 +316,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 [Get-MgContactDirectReportAsUser](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContactDirectReportAsUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontactdirectreportasuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontactdirectreportasuser)
+
 

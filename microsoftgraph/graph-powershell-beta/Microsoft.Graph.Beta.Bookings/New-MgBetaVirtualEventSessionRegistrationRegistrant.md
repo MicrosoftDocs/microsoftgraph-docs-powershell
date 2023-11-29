@@ -41,18 +41,6 @@ New-MgBetaVirtualEventSessionRegistrationRegistrant -InputObject <IBookingsIdent
 ## DESCRIPTION
 Create new navigation property to registrants for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -246,4 +234,5 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventsessionregistrationregistrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventsessionregistrationregistrant)
+
 

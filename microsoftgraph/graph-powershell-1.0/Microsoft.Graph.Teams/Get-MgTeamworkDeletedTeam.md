@@ -38,18 +38,6 @@ Get-MgTeamworkDeletedTeam -InputObject <ITeamsIdentity> [-ExpandProperty <String
 ## DESCRIPTION
 The deleted team.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -287,4 +275,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Get-MgBetaTeamworkDeletedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamworkDeletedTeam?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkdeletedteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkdeletedteam)
+
 

@@ -37,22 +37,6 @@ Get-MgBetaDeviceManagementManagedDevice -InputObject <IDeviceManagementIdentity>
 ## DESCRIPTION
 The list of managed devices.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -397,4 +381,5 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 [Get-MgDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementManagedDevice?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmanageddevice)
+
 

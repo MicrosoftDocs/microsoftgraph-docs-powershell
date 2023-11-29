@@ -40,18 +40,6 @@ This is a long-running operation and as such, it returns a printerCreateOperatio
 For help creating the required Certificate Signing Request (CSR) for creating printer, see the CSR generation code sample.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -278,4 +266,5 @@ Read-only.
 [New-MgBetaPrintPrinter](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintPrinter?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprinter](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprinter)
+
 

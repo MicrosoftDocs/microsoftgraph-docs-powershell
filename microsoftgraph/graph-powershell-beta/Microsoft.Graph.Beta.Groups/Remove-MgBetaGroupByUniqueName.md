@@ -37,18 +37,6 @@ This isn't applicable to Security groups and Distribution groups that are perman
 To learn more, see deletedItems.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -204,4 +192,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupbyuniquename](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupbyuniquename)
+
 

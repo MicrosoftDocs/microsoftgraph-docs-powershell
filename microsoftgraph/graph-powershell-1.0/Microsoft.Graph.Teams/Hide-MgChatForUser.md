@@ -47,18 +47,6 @@ Hide-MgChatForUser -InputObject <ITeamsIdentity>
 Hide a chat for a user.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -257,4 +245,5 @@ For example, if a user changes their display name, the API might show the new va
 [Hide-MgBetaChatForUser](/powershell/module/Microsoft.Graph.Beta.Teams/Hide-MgBetaChatForUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/hide-mgchatforuser](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/hide-mgchatforuser)
+
 

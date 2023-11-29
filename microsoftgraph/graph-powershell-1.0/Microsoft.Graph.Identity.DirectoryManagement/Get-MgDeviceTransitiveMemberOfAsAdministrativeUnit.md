@@ -37,18 +37,6 @@ Get-MgDeviceTransitiveMemberOfAsAdministrativeUnit -InputObject <IIdentityDirect
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.administrativeUnit
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -309,4 +297,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 [Get-MgBetaDeviceTransitiveMemberOfAsAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceTransitiveMemberOfAsAdministrativeUnit?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicetransitivememberofasadministrativeunit](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicetransitivememberofasadministrativeunit)
+
 

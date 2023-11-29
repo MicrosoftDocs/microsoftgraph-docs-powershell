@@ -33,22 +33,6 @@ Remove-MgBetaGroupDriveListContentTypeColumn -InputObject <IFilesIdentity> [-IfM
 Remove a column\]\[columndefinition\] from a \[site\]\[\], \[list\]\[\] or \[content type\]\[contentType\].
 This API is available in the following \[national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ColumnDefinitionId
@@ -233,4 +217,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Remove-MgGroupDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/Remove-MgGroupDriveListContentTypeColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetagroupdrivelistcontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetagroupdrivelistcontenttypecolumn)
+
 

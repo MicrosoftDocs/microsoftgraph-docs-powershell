@@ -37,22 +37,6 @@ Get-MgBetaUserManagedAppRegistration -InputObject <IDevicesCorporateManagementId
 ## DESCRIPTION
 Zero or more managed app registrations that belong to the user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -341,4 +325,5 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
 [Get-MgUserManagedAppRegistration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgUserManagedAppRegistration?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetausermanagedappregistration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetausermanagedappregistration)
+
 

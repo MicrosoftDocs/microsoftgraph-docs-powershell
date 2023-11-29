@@ -29,22 +29,6 @@ Get-MgReportOffice365GroupActivityFileCount -InputObject <IReportsIdentity> -Out
 ## DESCRIPTION
 Invoke function getOffice365GroupsActivityFileCounts
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -149,4 +133,5 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
 [Get-MgBetaReportOffice365GroupActivityFileCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOffice365GroupActivityFileCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365groupactivityfilecount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365groupactivityfilecount)
+
 

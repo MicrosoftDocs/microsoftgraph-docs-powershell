@@ -30,18 +30,6 @@ Get-MgBetaDeviceManagementReportWindowsQualityUpdateAlertSummaryReport -OutFile 
 ## DESCRIPTION
 Invoke action getWindowsQualityUpdateAlertSummaryReport
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -301,4 +289,5 @@ BODYPARAMETER \<IPathsNun7U7DevicemanagementReportsMicrosoftGraphGetwindowsquali
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportwindowsqualityupdatealertsummaryreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportwindowsqualityupdatealertsummaryreport)
+
 

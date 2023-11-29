@@ -49,18 +49,6 @@ Set a presence status message for a user.
 An optional expiration date and time can be supplied.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -266,4 +254,5 @@ See below for more possible values.
 [Set-MgBetaUserPresenceStatusMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Set-MgBetaUserPresenceStatusMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/set-mguserpresencestatusmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/set-mguserpresencestatusmessage)
+
 

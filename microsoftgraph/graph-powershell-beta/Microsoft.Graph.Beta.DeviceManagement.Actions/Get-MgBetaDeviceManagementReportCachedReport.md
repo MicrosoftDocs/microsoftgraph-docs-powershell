@@ -32,22 +32,6 @@ Get-MgBetaDeviceManagementReportCachedReport -OutFile <String>
 ## DESCRIPTION
 Invoke action getCachedReport
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -276,4 +260,5 @@ BODYPARAMETER \<IPaths1C8L63KDevicemanagementReportsMicrosoftGraphGetcachedrepor
 [Get-MgDeviceManagementReportCachedReport](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Get-MgDeviceManagementReportCachedReport?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportcachedreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportcachedreport)
+
 

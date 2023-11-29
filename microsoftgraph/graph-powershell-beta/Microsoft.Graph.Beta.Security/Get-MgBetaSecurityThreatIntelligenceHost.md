@@ -42,18 +42,6 @@ Read the properties and relationships of a host object.
 The host resource is the abstract base type that returns an implementation.
 A host can be of one of the following types: This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -335,4 +323,5 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Get-MgSecurityThreatIntelligenceHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHost?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehost](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehost)
+
 

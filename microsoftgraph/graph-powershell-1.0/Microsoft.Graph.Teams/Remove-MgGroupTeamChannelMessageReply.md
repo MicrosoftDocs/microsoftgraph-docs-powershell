@@ -30,22 +30,6 @@ Remove-MgGroupTeamChannelMessageReply -InputObject <ITeamsIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete navigation property replies for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -238,4 +222,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Remove-MgBetaGroupTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamChannelMessageReply?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamchannelmessagereply](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamchannelmessagereply)
+
 

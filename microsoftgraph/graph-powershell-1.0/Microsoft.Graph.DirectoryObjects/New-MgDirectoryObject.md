@@ -29,22 +29,6 @@ New-MgDirectoryObject -BodyParameter <IMicrosoftGraphDirectoryObject> [-WhatIf] 
 ## DESCRIPTION
 Add new entity to directoryObjects
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -167,4 +151,5 @@ Always null when the object hasn't been deleted.
 [New-MgBetaDirectoryObject](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/New-MgBetaDirectoryObject?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/new-mgdirectoryobject](https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/new-mgdirectoryobject)
+
 

@@ -41,18 +41,6 @@ New-MgBetaVirtualEventWebinarPresenter -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Create new navigation property to presenters for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -299,4 +287,5 @@ PRESENTERDETAILS \<IMicrosoftGraphVirtualEventPresenterDetails\>: virtualEventPr
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventwebinarpresenter](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventwebinarpresenter)
+
 

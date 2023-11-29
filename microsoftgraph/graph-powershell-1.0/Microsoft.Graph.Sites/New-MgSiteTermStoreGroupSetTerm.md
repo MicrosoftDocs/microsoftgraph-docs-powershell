@@ -82,22 +82,6 @@ New-MgSiteTermStoreGroupSetTerm -InputObject <ISitesIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Create new navigation property to terms for sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -661,4 +645,5 @@ Read-only.
 [New-MgBetaSiteTermStoreGroupSetTerm](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteTermStoreGroupSetTerm?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoregroupsetterm](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoregroupsetterm)
+
 

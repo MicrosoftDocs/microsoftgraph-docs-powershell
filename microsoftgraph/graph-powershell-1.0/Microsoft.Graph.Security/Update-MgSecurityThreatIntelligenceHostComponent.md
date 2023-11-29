@@ -45,18 +45,6 @@ Update-MgSecurityThreatIntelligenceHostComponent -InputObject <ISecurityIdentity
 ## DESCRIPTION
 Update the navigation property hostComponents in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -891,4 +879,5 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Update-MgBetaSecurityThreatIntelligenceHostComponent](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligenceHostComponent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencehostcomponent](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencehostcomponent)
+
 

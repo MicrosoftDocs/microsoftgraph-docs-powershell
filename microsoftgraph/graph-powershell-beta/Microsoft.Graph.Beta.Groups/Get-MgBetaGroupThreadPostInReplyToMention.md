@@ -34,22 +34,6 @@ Get-MgBetaGroupThreadPostInReplyToMention -InputObject <IGroupsIdentity> [-Expan
 ## DESCRIPTION
 Get mentions from groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -325,4 +309,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupthreadpostinreplytomention](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupthreadpostinreplytomention)
+
 

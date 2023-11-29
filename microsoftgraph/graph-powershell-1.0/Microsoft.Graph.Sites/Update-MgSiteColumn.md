@@ -62,22 +62,6 @@ Update-MgSiteColumn -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGrap
 ## DESCRIPTION
 Update the navigation property columns in sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1232,4 +1216,5 @@ For examples, see Examples of common formulas in lists.
 [Update-MgBetaSiteColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitecolumn)
+
 

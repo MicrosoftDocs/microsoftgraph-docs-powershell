@@ -31,22 +31,6 @@ The calendar that contains the event.
 Navigation property.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EventId
@@ -173,4 +157,5 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventinstanceexceptionoccurrencecalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventinstanceexceptionoccurrencecalendar)
+
 

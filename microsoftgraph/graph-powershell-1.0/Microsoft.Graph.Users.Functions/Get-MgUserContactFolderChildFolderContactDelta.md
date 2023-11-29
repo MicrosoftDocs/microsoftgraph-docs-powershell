@@ -38,22 +38,6 @@ A delta function call for contacts in a folder is similar to a GET request, exce
 This allows you to maintain and synchronize a local store of a user's contacts without having to fetch the entire set of contacts from the server every time.
  This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -315,4 +299,5 @@ INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
 [Get-MgBetaUserContactFolderChildFolderContactDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserContactFolderChildFolderContactDelta?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusercontactfolderchildfoldercontactdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusercontactfolderchildfoldercontactdelta)
+
 

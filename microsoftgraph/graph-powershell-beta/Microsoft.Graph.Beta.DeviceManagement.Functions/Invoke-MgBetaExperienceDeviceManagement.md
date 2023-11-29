@@ -22,22 +22,6 @@ Invoke-MgBetaExperienceDeviceManagement [<CommonParameters>]
 ## DESCRIPTION
 Invoke function userExperienceAnalyticsSummarizedDeviceScopes
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### CommonParameters
@@ -55,4 +39,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Invoke-MgExperienceDeviceManagement](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Invoke-MgExperienceDeviceManagement?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/invoke-mgbetaexperiencedevicemanagement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/invoke-mgbetaexperiencedevicemanagement)
+
 

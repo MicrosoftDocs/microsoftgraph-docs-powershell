@@ -51,22 +51,6 @@ Restart a stopped synchronization job, forcing it to reprocess all the objects i
 Optionally clears existing the synchronization state and previous errors.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -271,4 +255,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Restart-MgApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Restart-MgApplicationSynchronizationJob?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/restart-mgbetaapplicationsynchronizationjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/restart-mgbetaapplicationsynchronizationjob)
+
 

@@ -29,18 +29,6 @@ Sync-MgBetaDeviceAppManagementVppTokenLicense -InputObject <IDevicesCorporateMan
 ## DESCRIPTION
 Syncs licenses associated with a specific appleVolumePurchaseProgramToken
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -194,4 +182,5 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
 [Sync-MgDeviceAppManagementVppTokenLicense](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Sync-MgDeviceAppManagementVppTokenLicense?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/sync-mgbetadeviceappmanagementvpptokenlicense](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/sync-mgbetadeviceappmanagementvpptokenlicense)
+
 

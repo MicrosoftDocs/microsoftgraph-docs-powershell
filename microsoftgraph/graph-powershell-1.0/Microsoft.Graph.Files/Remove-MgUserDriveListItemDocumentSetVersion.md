@@ -34,22 +34,6 @@ Remove-MgUserDriveListItemDocumentSetVersion -InputObject <IFilesIdentity> [-IfM
 Delete a version of a document set in a list.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DocumentSetVersionId
@@ -234,4 +218,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Remove-MgBetaUserDriveListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveListItemDocumentSetVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdrivelistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdrivelistitemdocumentsetversion)
+
 

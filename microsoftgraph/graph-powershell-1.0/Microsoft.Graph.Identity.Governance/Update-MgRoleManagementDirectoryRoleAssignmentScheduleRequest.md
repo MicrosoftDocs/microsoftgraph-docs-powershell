@@ -60,18 +60,6 @@ Update-MgRoleManagementDirectoryRoleAssignmentScheduleRequest -InputObject <IIde
 ## DESCRIPTION
 Update the navigation property roleAssignmentScheduleRequests in roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Action
@@ -1238,4 +1226,5 @@ TICKETINFO \<IMicrosoftGraphTicketInfo\>: ticketInfo
 [Update-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagementdirectoryroleassignmentschedulerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagementdirectoryroleassignmentschedulerequest)
+
 

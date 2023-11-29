@@ -28,18 +28,6 @@ Get-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationT
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CertificateBasedApplicationConfigurationId
@@ -166,4 +154,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfigurationtrustedcertificateauthoritycount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfigurationtrustedcertificateauthoritycount)
+
 

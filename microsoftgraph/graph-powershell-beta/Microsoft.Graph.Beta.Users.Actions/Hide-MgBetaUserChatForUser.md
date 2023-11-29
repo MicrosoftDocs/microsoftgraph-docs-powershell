@@ -49,22 +49,6 @@ Hide-MgBetaUserChatForUser -InputObject <IUsersActionsIdentity>
 Hide a chat for a user.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -301,4 +285,5 @@ For example, if a user changes their display name, the API might show the new va
 [Hide-MgUserChatForUser](/powershell/module/Microsoft.Graph.Users.Actions/Hide-MgUserChatForUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/hide-mgbetauserchatforuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/hide-mgbetauserchatforuser)
+
 

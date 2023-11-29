@@ -48,22 +48,6 @@ Update-MgBetaGroupConversationThread -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Update the navigation property threads in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -621,4 +605,5 @@ Returned only on $select.
 [Update-MgGroupConversationThread](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupConversationThread?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupconversationthread](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupconversationthread)
+
 

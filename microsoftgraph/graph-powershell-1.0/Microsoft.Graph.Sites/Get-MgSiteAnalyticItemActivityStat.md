@@ -37,18 +37,6 @@ Get-MgSiteAnalyticItemActivityStat -InputObject <ISitesIdentity> [-ExpandPropert
 ## DESCRIPTION
 Get itemActivityStats from sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -307,4 +295,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgBetaSiteAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteAnalyticItemActivityStat?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteanalyticitemactivitystat](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteanalyticitemactivitystat)
+
 

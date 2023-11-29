@@ -49,18 +49,6 @@ Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric -InputObje
 ## DESCRIPTION
 Update the navigation property userExperienceAnalyticsWorkFromAnywhereMetrics in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -537,4 +525,5 @@ Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 [Update-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticworkfromanywheremetric](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticworkfromanywheremetric)
+
 

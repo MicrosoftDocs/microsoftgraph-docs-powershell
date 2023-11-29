@@ -30,22 +30,6 @@ Remove-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummaryUpd
 ## DESCRIPTION
 Delete navigation property updateStateSummaries for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -329,4 +313,5 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementmacossoftwareupdateaccountsummarycategorysummaryupdatestatesummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementmacossoftwareupdateaccountsummarycategorysummaryupdatestatesummary)
+
 

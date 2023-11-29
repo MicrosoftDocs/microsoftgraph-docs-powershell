@@ -46,22 +46,6 @@ Update-MgExternalConnectionOperation -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Update the navigation property operations in external
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -284,4 +268,5 @@ INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
 [Update-MgBetaExternalConnectionOperation](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternalConnectionOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnectionoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnectionoperation)
+
 

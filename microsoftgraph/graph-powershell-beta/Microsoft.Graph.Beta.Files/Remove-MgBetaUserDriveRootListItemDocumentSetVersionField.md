@@ -30,18 +30,6 @@ Remove-MgBetaUserDriveRootListItemDocumentSetVersionField -InputObject <IFilesId
 ## DESCRIPTION
 Delete navigation property fields for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DocumentSetVersionId
@@ -211,4 +199,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Remove-MgUserDriveRootListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Files/Remove-MgUserDriveRootListItemDocumentSetVersionField?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetauserdriverootlistitemdocumentsetversionfield](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetauserdriverootlistitemdocumentsetversionfield)
+
 

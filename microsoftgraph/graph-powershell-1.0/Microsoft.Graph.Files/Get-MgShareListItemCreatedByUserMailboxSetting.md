@@ -46,18 +46,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -181,4 +169,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgBetaShareListItemCreatedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListItemCreatedByUserMailboxSetting?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistitemcreatedbyusermailboxsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistitemcreatedbyusermailboxsetting)
+
 

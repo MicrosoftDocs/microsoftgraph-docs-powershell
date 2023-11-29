@@ -33,22 +33,6 @@ Remove-MgEducationSchoolUserByRef -InputObject <IEducationIdentity> [-Id <String
 Delete a user from a school.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EducationSchoolId
@@ -204,4 +188,5 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 [Remove-MgBetaEducationSchoolUserByRef](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationSchoolUserByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationschooluserbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationschooluserbyref)
+
 

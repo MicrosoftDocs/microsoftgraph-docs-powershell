@@ -38,18 +38,6 @@ To have Teams provision an email address, you can call provisionEmail, or throug
 To remove the email address of a channel, use the removeEmail method.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -182,4 +170,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [New-MgBetaTeamworkDeletedTeamChannelEmail](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamworkDeletedTeamChannelEmail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedteamchannelemail](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedteamchannelemail)
+
 

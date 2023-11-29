@@ -29,18 +29,6 @@ Invoke-MgPreviewSiteOnenoteNotebookSectionPage -InputObject <ISitesIdentity> [<C
 ## DESCRIPTION
 Invoke function preview
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -178,4 +166,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Invoke-MgBetaPreviewSiteOnenoteNotebookSectionPage](/powershell/module/Microsoft.Graph.Beta.Sites/Invoke-MgBetaPreviewSiteOnenoteNotebookSectionPage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/invoke-mgpreviewsiteonenotenotebooksectionpage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/invoke-mgpreviewsiteonenotenotebooksectionpage)
+
 

@@ -33,22 +33,6 @@ Remove-MgBetaDriveRootListItemDocumentSetVersion -InputObject <IFilesIdentity> [
 Delete a version of a document set in a list.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DocumentSetVersionId
@@ -203,4 +187,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Remove-MgDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveRootListItemDocumentSetVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriverootlistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriverootlistitemdocumentsetversion)
+
 

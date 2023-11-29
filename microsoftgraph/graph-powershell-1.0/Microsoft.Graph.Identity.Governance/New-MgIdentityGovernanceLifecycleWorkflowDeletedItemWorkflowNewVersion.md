@@ -49,18 +49,6 @@ New-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowNewVersion
 Create a new version of the workflow object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -9670,4 +9658,5 @@ Can't be true for a disabled workflow (where isEnabled is false).
 [New-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowNewVersion](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowNewVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancelifecycleworkflowdeleteditemworkflownewversion](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancelifecycleworkflowdeleteditemworkflownewversion)
+
 

@@ -30,18 +30,6 @@ Remove-MgBetaUserDriveRootAnalytic -InputObject <IFilesIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Delete navigation property analytics for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -196,4 +184,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Remove-MgUserDriveRootAnalytic](/powershell/module/Microsoft.Graph.Files/Remove-MgUserDriveRootAnalytic?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetauserdriverootanalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetauserdriverootanalytic)
+
 

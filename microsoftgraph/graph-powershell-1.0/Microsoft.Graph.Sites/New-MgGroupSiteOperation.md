@@ -48,22 +48,6 @@ New-MgGroupSiteOperation -InputObject <ISitesIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Create new navigation property to operations for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -438,4 +422,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [New-MgBetaGroupSiteOperation](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteoperation)
+
 

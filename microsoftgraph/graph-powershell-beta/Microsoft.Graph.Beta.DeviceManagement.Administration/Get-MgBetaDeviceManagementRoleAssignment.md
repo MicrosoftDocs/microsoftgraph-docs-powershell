@@ -37,22 +37,6 @@ Get-MgBetaDeviceManagementRoleAssignment -InputObject <IDeviceManagementAdminist
 ## DESCRIPTION
 The Role Assignments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -315,4 +299,5 @@ INPUTOBJECT \<IDeviceManagementAdministrationIdentity\>: Identity Parameter
 [Get-MgDeviceManagementRoleAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementRoleAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementroleassignment)
+
 

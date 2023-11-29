@@ -22,18 +22,6 @@ Get-MgPolicyFeatureRolloutPolicyCount [-Filter <String>] [-Search <String>] [<Co
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -80,4 +68,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgBetaPolicyFeatureRolloutPolicyCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyFeatureRolloutPolicyCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyfeaturerolloutpolicycount](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyfeaturerolloutpolicycount)
+
 

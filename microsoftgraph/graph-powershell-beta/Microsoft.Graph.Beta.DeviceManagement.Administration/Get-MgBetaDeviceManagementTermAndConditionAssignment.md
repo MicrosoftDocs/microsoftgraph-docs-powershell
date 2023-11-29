@@ -37,22 +37,6 @@ Get-MgBetaDeviceManagementTermAndConditionAssignment -InputObject <IDeviceManage
 ## DESCRIPTION
 The list of assignments for this T&C policy.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -330,4 +314,5 @@ INPUTOBJECT \<IDeviceManagementAdministrationIdentity\>: Identity Parameter
 [Get-MgDeviceManagementTermAndConditionAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementTermAndConditionAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementtermandconditionassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementtermandconditionassignment)
+
 

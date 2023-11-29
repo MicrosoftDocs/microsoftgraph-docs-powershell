@@ -56,22 +56,6 @@ Update-MgSiteListContentType -InputObject <ISitesIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Update the navigation property contentTypes in sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1810,4 +1794,5 @@ ORDER \<IMicrosoftGraphContentTypeOrder\>: contentTypeOrder
 [Update-MgBetaSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitelistcontenttype)
+
 

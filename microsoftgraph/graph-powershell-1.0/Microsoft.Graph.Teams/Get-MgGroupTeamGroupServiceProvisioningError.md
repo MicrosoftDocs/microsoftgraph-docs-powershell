@@ -24,18 +24,6 @@ Get-MgGroupTeamGroupServiceProvisioningError -GroupId <String> [-ExpandProperty 
 ## DESCRIPTION
 Get serviceProvisioningErrors property value
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -218,4 +206,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgBetaGroupTeamGroupServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamGroupServiceProvisioningError?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamgroupserviceprovisioningerror](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamgroupserviceprovisioningerror)
+
 

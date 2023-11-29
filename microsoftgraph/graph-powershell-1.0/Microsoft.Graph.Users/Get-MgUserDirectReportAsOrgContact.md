@@ -37,18 +37,6 @@ Get-MgUserDirectReportAsOrgContact -InputObject <IUsersIdentity> [-ExpandPropert
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.orgContact
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -298,4 +286,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Get-MgBetaUserDirectReportAsOrgContact](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserDirectReportAsOrgContact?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserdirectreportasorgcontact](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserdirectreportasorgcontact)
+
 

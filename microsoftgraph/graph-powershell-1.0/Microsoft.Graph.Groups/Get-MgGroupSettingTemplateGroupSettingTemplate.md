@@ -40,18 +40,6 @@ A group setting template represents a template of settings from which settings m
 This operation allows retrieval of the properties of the groupSettingTemplate object, including the available settings and their defaults.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -291,4 +279,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsettingtemplategroupsettingtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsettingtemplategroupsettingtemplate)
+
 

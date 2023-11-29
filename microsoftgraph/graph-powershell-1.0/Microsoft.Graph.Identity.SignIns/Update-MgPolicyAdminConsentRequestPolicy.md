@@ -33,22 +33,6 @@ Update-MgPolicyAdminConsentRequestPolicy -BodyParameter <IMicrosoftGraphAdminCon
 ## DESCRIPTION
 Update the properties of an adminConsentRequestPolicy object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -277,4 +261,5 @@ Examples include MicrosoftGraph and ARM.
 [Update-MgBetaPolicyAdminConsentRequestPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyAdminConsentRequestPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyadminconsentrequestpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyadminconsentrequestpolicy)
+
 

@@ -33,22 +33,6 @@ Remove-MgUserEventInstanceAttachment -InputObject <ICalendarIdentity> [-IfMatch 
 Delete an attachment from a user calendar event, mail message, or group post.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AttachmentId
@@ -219,4 +203,5 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
 [Remove-MgBetaUserEventInstanceAttachment](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaUserEventInstanceAttachment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgusereventinstanceattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgusereventinstanceattachment)
+
 

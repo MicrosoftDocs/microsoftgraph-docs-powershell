@@ -32,22 +32,6 @@ Update-MgBetaDeviceManagementApplePushNotificationCertificate
 ## DESCRIPTION
 Update the navigation property applePushNotificationCertificate in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -264,4 +248,5 @@ Read-only.
 [Update-MgDeviceManagementApplePushNotificationCertificate](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementApplePushNotificationCertificate?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementapplepushnotificationcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementapplepushnotificationcertificate)
+
 

@@ -46,22 +46,6 @@ Remove-MgBetaUserManagedDeviceUserFromSharedAppleDevice -InputObject <IUsersActi
 ## DESCRIPTION
 Delete user from shared Apple device
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -267,4 +251,5 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 [Remove-MgUserManagedDeviceUserFromSharedAppleDevice](/powershell/module/Microsoft.Graph.Users.Actions/Remove-MgUserManagedDeviceUserFromSharedAppleDevice?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetausermanageddeviceuserfromsharedappledevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetausermanageddeviceuserfromsharedappledevice)
+
 

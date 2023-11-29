@@ -30,22 +30,6 @@ Set-MgUserOnenotePageContent -InputObject <INotesIdentity> [-Data <Stream>] -InF
 ## DESCRIPTION
 The page's HTML content.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Data
@@ -188,4 +172,5 @@ INPUTOBJECT \<INotesIdentity\>: Identity Parameter
 [Set-MgBetaUserOnenotePageContent](/powershell/module/Microsoft.Graph.Beta.Notes/Set-MgBetaUserOnenotePageContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/set-mguseronenotepagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/set-mguseronenotepagecontent)
+
 

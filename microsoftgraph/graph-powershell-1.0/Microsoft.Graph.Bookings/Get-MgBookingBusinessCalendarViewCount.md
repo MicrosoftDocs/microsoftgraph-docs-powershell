@@ -30,18 +30,6 @@ Get-MgBookingBusinessCalendarViewCount -InputObject <IBookingsIdentity> [-Filter
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -BookingBusinessId
@@ -133,4 +121,5 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 [Get-MgBetaBookingBusinessCalendarViewCount](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessCalendarViewCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinesscalendarviewcount](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinesscalendarviewcount)
+
 

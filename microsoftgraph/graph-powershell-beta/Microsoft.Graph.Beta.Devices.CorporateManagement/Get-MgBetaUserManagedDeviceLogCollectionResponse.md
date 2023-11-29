@@ -38,22 +38,6 @@ Get-MgBetaUserManagedDeviceLogCollectionResponse -InputObject <IDevicesCorporate
 ## DESCRIPTION
 List of log collection requests
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -357,4 +341,5 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
 [Get-MgUserManagedDeviceLogCollectionResponse](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgUserManagedDeviceLogCollectionResponse?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetausermanageddevicelogcollectionresponse](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetausermanageddevicelogcollectionresponse)
+
 

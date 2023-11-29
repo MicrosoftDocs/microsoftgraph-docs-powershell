@@ -40,18 +40,6 @@ Get-MgBetaVirtualEventWebinarSessionRegistrationCustomQuestion -InputObject <IBo
 Get a custom registration question associated with a meetingRegistration object on behalf of the organizer.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -309,4 +297,5 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarsessionregistrationcustomquestion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarsessionregistrationcustomquestion)
+
 

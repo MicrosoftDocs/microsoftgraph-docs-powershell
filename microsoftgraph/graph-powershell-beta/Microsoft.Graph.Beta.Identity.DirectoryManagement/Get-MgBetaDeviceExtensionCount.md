@@ -29,18 +29,6 @@ Get-MgBetaDeviceExtensionCount -InputObject <IIdentityDirectoryManagementIdentit
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceId
@@ -168,4 +156,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 [Get-MgDeviceExtensionCount](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDeviceExtensionCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadeviceextensioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadeviceextensioncount)
+
 

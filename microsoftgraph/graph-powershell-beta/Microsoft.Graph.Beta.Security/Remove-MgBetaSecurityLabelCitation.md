@@ -30,18 +30,6 @@ Remove-MgBetaSecurityLabelCitation -InputObject <ISecurityIdentity> [-IfMatch <S
 Delete a citationTemplate object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CitationTemplateId
@@ -232,4 +220,5 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritylabelcitation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritylabelcitation)
+
 

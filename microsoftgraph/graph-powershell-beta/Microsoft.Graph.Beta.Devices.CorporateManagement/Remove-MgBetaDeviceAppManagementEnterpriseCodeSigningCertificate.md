@@ -28,18 +28,6 @@ Remove-MgBetaDeviceAppManagementEnterpriseCodeSigningCertificate
 ## DESCRIPTION
 Delete navigation property enterpriseCodeSigningCertificates for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EnterpriseCodeSigningCertificateId
@@ -222,4 +210,5 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/remove-mgbetadeviceappmanagemententerprisecodesigningcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/remove-mgbetadeviceappmanagemententerprisecodesigningcertificate)
+
 

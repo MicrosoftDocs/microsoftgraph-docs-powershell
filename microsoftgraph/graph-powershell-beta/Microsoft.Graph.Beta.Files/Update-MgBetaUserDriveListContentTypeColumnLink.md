@@ -44,22 +44,6 @@ Update-MgBetaUserDriveListContentTypeColumnLink -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property columnLinks in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -283,4 +267,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Update-MgUserDriveListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveListContentTypeColumnLink?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdrivelistcontenttypecolumnlink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdrivelistcontenttypecolumnlink)
+
 

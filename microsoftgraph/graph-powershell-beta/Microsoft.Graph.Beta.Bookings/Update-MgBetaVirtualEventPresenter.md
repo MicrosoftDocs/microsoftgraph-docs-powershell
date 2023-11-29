@@ -42,18 +42,6 @@ Update-MgBetaVirtualEventPresenter -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Update the navigation property presenters in solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -315,4 +303,5 @@ PRESENTERDETAILS \<IMicrosoftGraphVirtualEventPresenterDetails\>: virtualEventPr
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventpresenter](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventpresenter)
+
 

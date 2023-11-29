@@ -47,18 +47,6 @@ New-MgOrganizationCertificateBasedAuthConfiguration -InputObject <IIdentitySignI
 Create a new certificateBasedAuthConfiguration object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -291,4 +279,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 [New-MgBetaOrganizationCertificateBasedAuthConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaOrganizationCertificateBasedAuthConfiguration?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgorganizationcertificatebasedauthconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgorganizationcertificatebasedauthconfiguration)
+
 

@@ -30,22 +30,6 @@ Remove-MgBetaUserContactFolderChildFolderContact -InputObject <IPersonalContacts
 ## DESCRIPTION
 Delete navigation property contacts for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContactFolderId
@@ -211,4 +195,5 @@ INPUTOBJECT \<IPersonalContactsIdentity\>: Identity Parameter
 [Remove-MgUserContactFolderChildFolderContact](/powershell/module/Microsoft.Graph.PersonalContacts/Remove-MgUserContactFolderChildFolderContact?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/remove-mgbetausercontactfolderchildfoldercontact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/remove-mgbetausercontactfolderchildfoldercontact)
+
 

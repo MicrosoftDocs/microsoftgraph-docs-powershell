@@ -44,22 +44,6 @@ For more info, see \[getting thumbnails\]\[\].
 Read-only.
 Nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -319,4 +303,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgBetaUserDriveRootThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootThumbnail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootthumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootthumbnail)
+
 

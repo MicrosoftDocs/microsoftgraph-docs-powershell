@@ -30,22 +30,6 @@ Remove-MgDeviceManagementDeviceConfigurationDeviceStatusOverview -InputObject <I
 ## DESCRIPTION
 Delete navigation property deviceStatusOverview for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DeviceConfigurationId
@@ -215,4 +199,5 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 [Remove-MgBetaDeviceManagementDeviceConfigurationDeviceStatusOverview](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementDeviceConfigurationDeviceStatusOverview?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdeviceconfigurationdevicestatusoverview](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdeviceconfigurationdevicestatusoverview)
+
 

@@ -42,18 +42,6 @@ Get-MgShareListItemVersionCount -InputObject <IFilesIdentity> [-Filter <String>]
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -177,4 +165,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgBetaShareListItemVersionCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListItemVersionCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistitemversioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistitemversioncount)
+
 

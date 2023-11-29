@@ -48,22 +48,6 @@ In Microsoft Entra entitlement management, this action moves the accessPackage t
 The resources in the access package must be present in the target catalog.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessPackageId
@@ -313,4 +297,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/move-mgbetaentitlementmanagementaccesspackagetocatalog](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/move-mgbetaentitlementmanagementaccesspackagetocatalog)
+
 

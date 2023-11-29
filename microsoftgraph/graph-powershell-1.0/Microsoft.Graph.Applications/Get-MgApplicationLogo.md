@@ -30,22 +30,6 @@ Get-MgApplicationLogo -InputObject <IApplicationsIdentity> -OutFile <String> [-P
 The main logo for the application.
 Not nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -152,4 +136,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Get-MgBetaApplicationLogo](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationLogo?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationlogo](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationlogo)
+
 

@@ -31,18 +31,6 @@ Get-MgUserManagedDeviceWindowsProtectionState -InputObject <IDevicesCorporateMan
 ## DESCRIPTION
 Read properties and relationships of the windowsProtectionState object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -177,4 +165,5 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
 [Get-MgBetaUserManagedDeviceWindowsProtectionState](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaUserManagedDeviceWindowsProtectionState?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgusermanageddevicewindowsprotectionstate](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgusermanageddevicewindowsprotectionstate)
+
 

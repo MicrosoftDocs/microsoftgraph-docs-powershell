@@ -56,22 +56,6 @@ New-MgUserDriveListContentType -InputObject <IFilesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create new navigation property to contentTypes for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1781,4 +1765,5 @@ ORDER \<IMicrosoftGraphContentTypeOrder\>: contentTypeOrder
 [New-MgBetaUserDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveListContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdrivelistcontenttype)
+
 

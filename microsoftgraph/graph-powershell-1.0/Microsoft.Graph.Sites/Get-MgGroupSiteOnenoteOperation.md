@@ -48,18 +48,6 @@ If the status is completed, the resourceLocation property contains the resource 
 If the status is failed, the error and @api.diagnostics properties provide error information.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -333,4 +321,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgBetaGroupSiteOnenoteOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenoteoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenoteoperation)
+
 

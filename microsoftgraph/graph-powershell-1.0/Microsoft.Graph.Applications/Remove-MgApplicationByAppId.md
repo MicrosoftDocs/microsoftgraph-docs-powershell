@@ -37,18 +37,6 @@ When deleted, apps are moved to a temporary container and can be restored within
 After that time, they are permanently deleted.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AppId
@@ -186,4 +174,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Remove-MgBetaApplicationByAppId](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationByAppId?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationbyappid](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationbyappid)
+
 

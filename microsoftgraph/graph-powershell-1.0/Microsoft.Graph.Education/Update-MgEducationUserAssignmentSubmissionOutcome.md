@@ -51,22 +51,6 @@ Update the properties of an educationOutcome object.
 Only teachers can perform this operation.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -317,4 +301,5 @@ For example, if a user changes their display name, the API might show the new va
 [Update-MgBetaEducationUserAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationUserAssignmentSubmissionOutcome?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationuserassignmentsubmissionoutcome](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationuserassignmentsubmissionoutcome)
+
 

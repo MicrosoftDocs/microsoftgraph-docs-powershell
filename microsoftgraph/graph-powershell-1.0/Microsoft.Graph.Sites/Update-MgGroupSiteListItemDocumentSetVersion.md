@@ -51,22 +51,6 @@ Update-MgGroupSiteListItemDocumentSetVersion -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the navigation property documentSetVersions in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -522,4 +506,5 @@ Read-only.
 [Update-MgBetaGroupSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteListItemDocumentSetVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitelistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitelistitemdocumentsetversion)
+
 

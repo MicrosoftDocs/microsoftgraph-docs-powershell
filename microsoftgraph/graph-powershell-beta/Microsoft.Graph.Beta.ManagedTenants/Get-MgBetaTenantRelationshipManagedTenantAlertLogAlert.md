@@ -27,18 +27,6 @@ Get-MgBetaTenantRelationshipManagedTenantAlertLogAlert -InputObject <IManagedTen
 ## DESCRIPTION
 Get alert from tenantRelationships
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -160,4 +148,5 @@ INPUTOBJECT \<IManagedTenantsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantalertlogalert](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantalertlogalert)
+
 

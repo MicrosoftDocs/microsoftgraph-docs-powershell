@@ -30,18 +30,6 @@ Get-MgBetaDriveListItemDocumentSetVersionCount -InputObject <IFilesIdentity> [-F
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -165,4 +153,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgDriveListItemDocumentSetVersionCount](/powershell/module/Microsoft.Graph.Files/Get-MgDriveListItemDocumentSetVersionCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistitemdocumentsetversioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistitemdocumentsetversioncount)
+
 

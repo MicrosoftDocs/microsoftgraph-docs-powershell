@@ -22,18 +22,6 @@ Get-MgAuditLogSignInCount [-Filter <String>] [-Search <String>] [<CommonParamete
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -80,4 +68,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgBetaAuditLogSignInCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaAuditLogSignInCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgauditlogsignincount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgauditlogsignincount)
+
 

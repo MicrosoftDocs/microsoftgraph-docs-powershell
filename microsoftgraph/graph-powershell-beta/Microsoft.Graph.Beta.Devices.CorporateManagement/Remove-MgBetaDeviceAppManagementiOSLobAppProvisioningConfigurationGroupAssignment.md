@@ -29,18 +29,6 @@ Remove-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationGroupAssignmen
 ## DESCRIPTION
 Delete navigation property groupAssignments for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -238,4 +226,5 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/remove-mgbetadeviceappmanagementioslobappprovisioningconfigurationgroupassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/remove-mgbetadeviceappmanagementioslobappprovisioningconfigurationgroupassignment)
+
 

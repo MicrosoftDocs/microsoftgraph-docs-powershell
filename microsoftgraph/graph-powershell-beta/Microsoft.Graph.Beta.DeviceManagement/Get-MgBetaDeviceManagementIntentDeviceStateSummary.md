@@ -27,22 +27,6 @@ Get-MgBetaDeviceManagementIntentDeviceStateSummary -InputObject <IDeviceManageme
 ## DESCRIPTION
 A summary of device states and counts of devices that belong to corresponding state for all devices that the intent is applied to
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DeviceManagementIntentId
@@ -265,4 +249,5 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementintentdevicestatesummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementintentdevicestatesummary)
+
 

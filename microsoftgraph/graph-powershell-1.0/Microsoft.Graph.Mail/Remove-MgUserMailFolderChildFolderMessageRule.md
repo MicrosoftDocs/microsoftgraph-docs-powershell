@@ -34,22 +34,6 @@ Remove-MgUserMailFolderChildFolderMessageRule -InputObject <IMailIdentity> [-IfM
 Delete the specified messageRule object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -218,4 +202,5 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
 [Remove-MgBetaUserMailFolderChildFolderMessageRule](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMailFolderChildFolderMessageRule?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermailfolderchildfoldermessagerule](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermailfolderchildfoldermessagerule)
+
 

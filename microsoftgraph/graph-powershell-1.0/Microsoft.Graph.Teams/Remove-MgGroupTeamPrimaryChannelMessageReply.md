@@ -30,22 +30,6 @@ Remove-MgGroupTeamPrimaryChannelMessageReply -InputObject <ITeamsIdentity> [-IfM
 ## DESCRIPTION
 Delete navigation property replies for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ChatMessageId
@@ -223,4 +207,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Remove-MgBetaGroupTeamPrimaryChannelMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamPrimaryChannelMessageReply?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamprimarychannelmessagereply](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamprimarychannelmessagereply)
+
 

@@ -29,18 +29,6 @@ Get-MgUserOnlineMeetingVirtualAppointmentJoinWebUrl -InputObject <IUsersFunction
 ## DESCRIPTION
 Invoke function getVirtualAppointmentJoinWebUrl
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -136,4 +124,5 @@ INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
 [Get-MgBetaUserOnlineMeetingVirtualAppointmentJoinWebUrl](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserOnlineMeetingVirtualAppointmentJoinWebUrl?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguseronlinemeetingvirtualappointmentjoinweburl](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguseronlinemeetingvirtualappointmentjoinweburl)
+
 

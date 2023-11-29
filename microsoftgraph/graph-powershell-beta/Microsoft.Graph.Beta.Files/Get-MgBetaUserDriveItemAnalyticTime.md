@@ -30,18 +30,6 @@ Get-MgBetaUserDriveItemAnalyticTime -InputObject <IFilesIdentity> [-ExpandProper
 ## DESCRIPTION
 Get allTime from users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -180,4 +168,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgUserDriveItemAnalyticTime](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveItemAnalyticTime?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriveitemanalytictime](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriveitemanalytictime)
+
 

@@ -29,18 +29,6 @@ Remove-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting
 ## DESCRIPTION
 Delete navigation property settings for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceManagementConfigurationSettingId
@@ -238,4 +226,5 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/remove-mgbetadeviceappmanagementtargetedmanagedappconfigurationsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/remove-mgbetadeviceappmanagementtargetedmanagedappconfigurationsetting)
+
 

@@ -30,22 +30,6 @@ Remove-MgBetaSiteTermStoreSetTermRelation -InputObject <ISitesIdentity> [-IfMatc
 ## DESCRIPTION
 Delete navigation property relations for sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -254,4 +238,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Remove-MgSiteTermStoreSetTermRelation](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteTermStoreSetTermRelation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitetermstoresettermrelation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitetermstoresettermrelation)
+
 

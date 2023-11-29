@@ -33,18 +33,6 @@ Get-MgCommunicationOnlineMeetingTranscriptMetadataContent -InputObject <ICloudCo
 The time-aligned metadata of the utterances in the transcript.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CallTranscriptId
@@ -157,4 +145,5 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
 [Get-MgBetaCommunicationOnlineMeetingTranscriptMetadataContent](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationOnlineMeetingTranscriptMetadataContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeetingtranscriptmetadatacontent](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeetingtranscriptmetadatacontent)
+
 

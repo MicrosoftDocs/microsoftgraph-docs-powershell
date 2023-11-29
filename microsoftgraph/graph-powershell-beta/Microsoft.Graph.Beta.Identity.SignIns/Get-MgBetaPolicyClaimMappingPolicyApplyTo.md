@@ -37,18 +37,6 @@ Get-MgBetaPolicyClaimMappingPolicyApplyTo -InputObject <IIdentitySignInsIdentity
 ## DESCRIPTION
 Get appliesTo from policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -345,4 +333,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 [Get-MgPolicyClaimMappingPolicyApplyTo](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyClaimMappingPolicyApplyTo?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyclaimmappingpolicyapplyto](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyclaimmappingpolicyapplyto)
+
 

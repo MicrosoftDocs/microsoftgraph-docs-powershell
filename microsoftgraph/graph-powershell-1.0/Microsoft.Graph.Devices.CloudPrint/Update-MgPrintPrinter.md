@@ -57,22 +57,6 @@ Update-MgPrintPrinter -InputObject <IDevicesCloudPrintIdentity> -BodyParameter <
 Update the properties of a printer object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -9792,4 +9776,5 @@ Read-only.
 [Update-MgBetaPrintPrinter](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintPrinter?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintprinter](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintprinter)
+
 

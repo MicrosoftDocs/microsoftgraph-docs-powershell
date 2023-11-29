@@ -44,22 +44,6 @@ New-MgBetaDeviceManagementUserExperienceAnalyticCategoryMetricValue -InputObject
 ## DESCRIPTION
 Create new navigation property to metricValues for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -371,4 +355,5 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 [New-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticcategorymetricvalue](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticcategorymetricvalue)
+
 

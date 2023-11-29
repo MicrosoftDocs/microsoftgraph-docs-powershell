@@ -35,22 +35,6 @@ Typically, this operation is performed (by the user or an administrator) if the 
 This operation prevents access to the organization's data through applications on the device by requiring the user to sign in again to all applications that they have previously consented to, independent of device.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -165,4 +149,5 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 [Revoke-MgBetaUserSignInSession](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Revoke-MgBetaUserSignInSession?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/revoke-mgusersigninsession](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/revoke-mgusersigninsession)
+
 

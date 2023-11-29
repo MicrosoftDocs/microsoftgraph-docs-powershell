@@ -46,18 +46,6 @@ Update-MgBetaGroupSiteAnalyticItemActivityStatActivity -InputObject <ISitesIdent
 ## DESCRIPTION
 Update the navigation property activities in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Access
@@ -15088,4 +15076,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Update-MgGroupSiteAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteAnalyticItemActivityStatActivity?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiteanalyticitemactivitystatactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiteanalyticitemactivitystatactivity)
+
 

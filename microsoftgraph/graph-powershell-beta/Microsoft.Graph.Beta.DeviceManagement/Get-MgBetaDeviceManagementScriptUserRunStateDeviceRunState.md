@@ -36,22 +36,6 @@ Get-MgBetaDeviceManagementScriptUserRunStateDeviceRunState -InputObject <IDevice
 ## DESCRIPTION
 List of run states for this script across all devices of specific user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -425,4 +409,5 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementscriptuserrunstatedevicerunstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementscriptuserrunstatedevicerunstate)
+
 

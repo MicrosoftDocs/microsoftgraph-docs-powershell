@@ -35,18 +35,6 @@ New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance
 ## DESCRIPTION
 Create new navigation property to roleEligibilityScheduleInstances for roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -484,4 +472,5 @@ Read-only when isBuiltIn is true.
 [New-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleInstance?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagemententitlementmanagementroleeligibilityscheduleinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagemententitlementmanagementroleeligibilityscheduleinstance)
+
 

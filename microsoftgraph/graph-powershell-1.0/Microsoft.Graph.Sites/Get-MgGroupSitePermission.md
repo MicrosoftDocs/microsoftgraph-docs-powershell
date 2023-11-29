@@ -41,22 +41,6 @@ Get-MgGroupSitePermission -InputObject <ISitesIdentity> [-ExpandProperty <String
 Retrieve the properties and relationships of a permission object on a site.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -330,4 +314,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgBetaGroupSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSitePermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitepermission)
+
 

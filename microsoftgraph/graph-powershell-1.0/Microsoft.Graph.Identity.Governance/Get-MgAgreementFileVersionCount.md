@@ -30,18 +30,6 @@ Get-MgAgreementFileVersionCount -InputObject <IIdentityGovernanceIdentity> [-Fil
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AgreementFileLocalizationId
@@ -209,4 +197,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [Get-MgBetaAgreementFileVersionCount](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaAgreementFileVersionCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgagreementfileversioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgagreementfileversioncount)
+
 

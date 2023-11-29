@@ -30,22 +30,6 @@ Get-MgBetaDeviceManagementReportUnhealthyDefenderAgentReport -OutFile <String>
 ## DESCRIPTION
 Invoke action getUnhealthyDefenderAgentsReport
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -305,4 +289,5 @@ BODYPARAMETER \<IPathsIdq7HwDevicemanagementReportsMicrosoftGraphGetunhealthydef
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportunhealthydefenderagentreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportunhealthydefenderagentreport)
+
 

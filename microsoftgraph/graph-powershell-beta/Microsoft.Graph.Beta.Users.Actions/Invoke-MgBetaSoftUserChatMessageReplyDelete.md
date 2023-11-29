@@ -33,22 +33,6 @@ Invoke-MgBetaSoftUserChatMessageReplyDelete -InputObject <IUsersActionsIdentity>
 Delete a single chatMessage or a chat message reply in a channel or a chat.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ChatId
@@ -233,4 +217,5 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 [Invoke-MgSoftUserChatMessageReplyDelete](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgSoftUserChatMessageReplyDelete?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetasoftuserchatmessagereplydelete](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetasoftuserchatmessagereplydelete)
+
 

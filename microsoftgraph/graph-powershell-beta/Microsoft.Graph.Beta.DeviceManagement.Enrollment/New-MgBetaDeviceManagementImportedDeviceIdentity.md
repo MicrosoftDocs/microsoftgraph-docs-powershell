@@ -30,18 +30,6 @@ New-MgBetaDeviceManagementImportedDeviceIdentity -BodyParameter <IMicrosoftGraph
 ## DESCRIPTION
 Create new navigation property to importedDeviceIdentities for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -273,4 +261,5 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementimporteddeviceidentity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementimporteddeviceidentity)
+
 

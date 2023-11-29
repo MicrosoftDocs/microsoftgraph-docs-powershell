@@ -37,22 +37,6 @@ Get-MgUserDriveListOperation -InputObject <IFilesIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 The collection of long-running operations on the list.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -312,4 +296,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgBetaUserDriveListOperation](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveListOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivelistoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivelistoperation)
+
 

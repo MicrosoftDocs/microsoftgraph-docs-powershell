@@ -33,18 +33,6 @@ Invoke-MgSoftTeamPrimaryChannelMessageDelete -InputObject <ITeamsIdentity> [-Pas
 Delete a single chatMessage or a chat message reply in a channel or a chat.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChatMessageId
@@ -192,4 +180,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Invoke-MgBetaSoftTeamPrimaryChannelMessageDelete](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaSoftTeamPrimaryChannelMessageDelete?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgsoftteamprimarychannelmessagedelete](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgsoftteamprimarychannelmessagedelete)
+
 

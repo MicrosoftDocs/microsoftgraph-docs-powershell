@@ -30,22 +30,6 @@ Remove-MgDriveItemListItem -InputObject <IFilesIdentity> [-IfMatch <String>] [-P
 ## DESCRIPTION
 Delete navigation property listItem for drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -200,4 +184,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Remove-MgBetaDriveItemListItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItemListItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdriveitemlistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdriveitemlistitem)
+
 

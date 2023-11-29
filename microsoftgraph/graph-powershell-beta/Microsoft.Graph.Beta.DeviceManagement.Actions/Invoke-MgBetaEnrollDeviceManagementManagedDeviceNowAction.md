@@ -27,18 +27,6 @@ Invoke-MgBetaEnrollDeviceManagementManagedDeviceNowAction -InputObject <IDeviceM
 ## DESCRIPTION
 Trigger comanagement enrollment action on ConfigurationManager client
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -189,4 +177,5 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetaenrolldevicemanagementmanageddevicenowaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetaenrolldevicemanagementmanageddevicenowaction)
+
 

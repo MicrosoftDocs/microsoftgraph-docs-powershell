@@ -37,18 +37,6 @@ This report contains data such as signInDateTime, signOutDateTime, usageInHour, 
 This data is aggregated hourly for a specified time period, such as the last seven days.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -276,4 +264,5 @@ BODYPARAMETER \<IPathsP1Ye10DevicemanagementVirtualendpointReportsMicrosoftGraph
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportremoteconnectionhistoricalreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportremoteconnectionhistoricalreport)
+
 

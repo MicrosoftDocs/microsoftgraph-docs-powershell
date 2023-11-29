@@ -33,18 +33,6 @@ Undo-MgChatMessageReplySoftDelete -InputObject <ITeamsIdentity> [-PassThru] [-Wh
 Undo soft deletion of a single chatMessage or a chat message reply in a channel or a chat.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChatId
@@ -207,4 +195,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Undo-MgBetaChatMessageReplySoftDelete](/powershell/module/Microsoft.Graph.Beta.Teams/Undo-MgBetaChatMessageReplySoftDelete?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/undo-mgchatmessagereplysoftdelete](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/undo-mgchatmessagereplysoftdelete)
+
 

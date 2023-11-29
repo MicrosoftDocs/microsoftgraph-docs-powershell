@@ -45,22 +45,6 @@ Set-MgBetaUserChatMessageReaction -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Invoke action setReaction
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -281,4 +265,5 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 [Set-MgUserChatMessageReaction](/powershell/module/Microsoft.Graph.Users.Actions/Set-MgUserChatMessageReaction?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/set-mgbetauserchatmessagereaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/set-mgbetauserchatmessagereaction)
+
 

@@ -54,22 +54,6 @@ Parse a given string expression into an attributeMappingSource object.
 For more information about expressions, see Writing Expressions for Attribute Mappings in Microsoft Entra ID.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -408,4 +392,5 @@ Not nullable.
 [Invoke-MgParseApplicationSynchronizationJobSchemaExpression](/powershell/module/Microsoft.Graph.Applications/Invoke-MgParseApplicationSynchronizationJobSchemaExpression?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetaparseapplicationsynchronizationjobschemaexpression](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetaparseapplicationsynchronizationjobschemaexpression)
+
 

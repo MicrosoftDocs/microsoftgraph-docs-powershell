@@ -41,22 +41,6 @@ New-MgUserExtension -InputObject <IUsersIdentity> -BodyParameter <Hashtable> [-W
 ## DESCRIPTION
 Create new navigation property to extensions for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -202,4 +186,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [New-MgBetaUserExtension](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserExtension?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mguserextension](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mguserextension)
+
 

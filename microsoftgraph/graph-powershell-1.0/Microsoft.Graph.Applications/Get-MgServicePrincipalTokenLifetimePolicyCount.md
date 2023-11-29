@@ -30,18 +30,6 @@ Get-MgServicePrincipalTokenLifetimePolicyCount -InputObject <IApplicationsIdenti
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -148,4 +136,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Get-MgBetaServicePrincipalTokenLifetimePolicyCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalTokenLifetimePolicyCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipaltokenlifetimepolicycount](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipaltokenlifetimepolicycount)
+
 

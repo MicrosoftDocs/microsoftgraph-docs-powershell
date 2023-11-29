@@ -30,18 +30,6 @@ Get-MgBetaGroupTeamPrimaryChannelTabCount -InputObject <ITeamsIdentity> [-Filter
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -164,4 +152,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Get-MgGroupTeamPrimaryChannelTabCount](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamPrimaryChannelTabCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamprimarychanneltabcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamprimarychanneltabcount)
+
 

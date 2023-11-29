@@ -39,22 +39,6 @@ Get-MgUserDriveItemSubscription -InputObject <IFilesIdentity> [-ExpandProperty <
 The set of subscriptions on the item.
 Only supported on the root of a drive.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -329,4 +313,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgBetaUserDriveItemSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemSubscription?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemsubscription)
+
 

@@ -105,18 +105,6 @@ Update-MgBetaServicePrincipalByAppId -InputObject <IApplicationsIdentity>
 Update the properties of servicePrincipal object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccountEnabled
@@ -2701,4 +2689,5 @@ VERIFIEDPUBLISHER \<IMicrosoftGraphVerifiedPublisher\>: verifiedPublisher
 [Update-MgServicePrincipalByAppId](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipalByAppId?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalbyappid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalbyappid)
+
 

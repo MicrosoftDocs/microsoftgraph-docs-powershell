@@ -30,18 +30,6 @@ Get-MgUserOwnedObjectCount -InputObject <IUsersIdentity> [-Filter <String>] [-Se
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ConsistencyLevel
@@ -155,4 +143,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Get-MgBetaUserOwnedObjectCount](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOwnedObjectCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserownedobjectcount](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserownedobjectcount)
+
 

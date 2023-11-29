@@ -30,22 +30,6 @@ Remove-MgSiteListSubscription -InputObject <ISitesIdentity> [-IfMatch <String>] 
 ## DESCRIPTION
 Delete navigation property subscriptions for sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -229,4 +213,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Remove-MgBetaSiteListSubscription](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteListSubscription?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitelistsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitelistsubscription)
+
 

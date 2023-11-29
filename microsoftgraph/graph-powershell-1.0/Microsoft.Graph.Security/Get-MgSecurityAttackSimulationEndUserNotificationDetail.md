@@ -37,18 +37,6 @@ Get-MgSecurityAttackSimulationEndUserNotificationDetail -InputObject <ISecurityI
 ## DESCRIPTION
 Get details from security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -321,4 +309,5 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Get-MgBetaSecurityAttackSimulationEndUserNotificationDetail](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAttackSimulationEndUserNotificationDetail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationendusernotificationdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationendusernotificationdetail)
+
 

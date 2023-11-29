@@ -37,22 +37,6 @@ New-MgBetaDeviceManagementMobileThreatDefenseConnector
 ## DESCRIPTION
 Create new navigation property to mobileThreatDefenseConnectors for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -481,4 +465,5 @@ Existing devices that are not compliant due to risk levels obtained from this co
 [New-MgDeviceManagementMobileThreatDefenseConnector](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementMobileThreatDefenseConnector?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementmobilethreatdefenseconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementmobilethreatdefenseconnector)
+
 

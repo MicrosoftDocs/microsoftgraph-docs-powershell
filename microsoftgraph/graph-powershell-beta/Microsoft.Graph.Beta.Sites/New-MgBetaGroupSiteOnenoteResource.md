@@ -44,18 +44,6 @@ New-MgBetaGroupSiteOnenoteResource -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create new navigation property to resources for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -305,4 +293,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [New-MgGroupSiteOnenoteResource](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteOnenoteResource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsiteonenoteresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsiteonenoteresource)
+
 

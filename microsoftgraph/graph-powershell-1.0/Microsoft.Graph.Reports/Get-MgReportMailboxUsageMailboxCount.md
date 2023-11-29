@@ -29,22 +29,6 @@ Get-MgReportMailboxUsageMailboxCount -InputObject <IReportsIdentity> -OutFile <S
 ## DESCRIPTION
 Invoke function getMailboxUsageMailboxCounts
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -149,4 +133,5 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
 [Get-MgBetaReportMailboxUsageMailboxCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportMailboxUsageMailboxCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmailboxusagemailboxcount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmailboxusagemailboxcount)
+
 

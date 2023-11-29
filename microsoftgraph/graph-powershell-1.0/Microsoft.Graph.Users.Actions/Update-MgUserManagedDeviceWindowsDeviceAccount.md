@@ -49,18 +49,6 @@ Update-MgUserManagedDeviceWindowsDeviceAccount -InputObject <IUsersActionsIdenti
 ## DESCRIPTION
 Not yet documented
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -277,4 +265,5 @@ UPDATEWINDOWSDEVICEACCOUNTACTIONPARAMETER \<IMicrosoftGraphUpdateWindowsDeviceAc
 [Update-MgBetaUserManagedDeviceWindowsDeviceAccount](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Update-MgBetaUserManagedDeviceWindowsDeviceAccount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/update-mgusermanageddevicewindowsdeviceaccount](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/update-mgusermanageddevicewindowsdeviceaccount)
+
 

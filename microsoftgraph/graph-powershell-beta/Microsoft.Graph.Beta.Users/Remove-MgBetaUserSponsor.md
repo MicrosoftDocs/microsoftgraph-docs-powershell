@@ -28,18 +28,6 @@ Remove-MgBetaUserSponsor -InputObject <IUsersIdentity> [-IfMatch <String>] [-Pas
 ## DESCRIPTION
 Remove a user's sponsor.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DirectoryObjectId
@@ -191,4 +179,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausersponsor](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausersponsor)
+
 

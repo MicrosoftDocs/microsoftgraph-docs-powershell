@@ -45,22 +45,6 @@ New-MgUserDriveItemThumbnail -InputObject <IFilesIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Create new navigation property to thumbnails for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -364,4 +348,5 @@ This is only available when a folder thumbnail is requested.
 [New-MgBetaUserDriveItemThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveItemThumbnail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdriveitemthumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdriveitemthumbnail)
+
 

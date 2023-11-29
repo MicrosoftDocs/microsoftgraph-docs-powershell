@@ -30,22 +30,6 @@ Get-MgDriveListItemAnalytic -InputObject <IFilesIdentity> [-ExpandProperty <Stri
 ## DESCRIPTION
 Analytics about the view activities that took place on this item.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -169,4 +153,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgBetaDriveListItemAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListItemAnalytic?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistitemanalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistitemanalytic)
+
 

@@ -37,18 +37,6 @@ Update-MgIdentityGovernancePrivilegedAccessGroup -BodyParameter <IMicrosoftGraph
 ## DESCRIPTION
 Update the navigation property group in identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -32755,4 +32743,5 @@ Supports $filter (eq).
 [Update-MgBetaIdentityGovernancePrivilegedAccessGroup](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernancePrivilegedAccessGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceprivilegedaccessgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceprivilegedaccessgroup)
+
 

@@ -46,18 +46,6 @@ Clear-MgTeamChannelMessageReplyReaction -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Invoke action unsetReaction
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -286,4 +274,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Clear-MgBetaTeamChannelMessageReplyReaction](/powershell/module/Microsoft.Graph.Beta.Teams/Clear-MgBetaTeamChannelMessageReplyReaction?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/clear-mgteamchannelmessagereplyreaction](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/clear-mgteamchannelmessagereplyreaction)
+
 

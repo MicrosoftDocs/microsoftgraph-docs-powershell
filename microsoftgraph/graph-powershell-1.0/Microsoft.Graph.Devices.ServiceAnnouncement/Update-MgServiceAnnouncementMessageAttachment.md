@@ -46,22 +46,6 @@ Update-MgServiceAnnouncementMessageAttachment -InputObject <IDevicesServiceAnnou
 ## DESCRIPTION
 Update the navigation property attachments in admin
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -299,4 +283,5 @@ INPUTOBJECT \<IDevicesServiceAnnouncementIdentity\>: Identity Parameter
 [Update-MgBetaServiceAnnouncementMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Update-MgBetaServiceAnnouncementMessageAttachment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/update-mgserviceannouncementmessageattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/update-mgserviceannouncementmessageattachment)
+
 

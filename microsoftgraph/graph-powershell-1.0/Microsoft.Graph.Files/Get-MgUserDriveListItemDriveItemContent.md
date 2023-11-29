@@ -30,22 +30,6 @@ Get-MgUserDriveListItemDriveItemContent -InputObject <IFilesIdentity> -OutFile <
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -184,4 +168,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgBetaUserDriveListItemDriveItemContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveListItemDriveItemContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivelistitemdriveitemcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivelistitemdriveitemcontent)
+
 

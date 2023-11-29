@@ -49,22 +49,6 @@ Get-MgBetaBookingBusinessStaffAvailability -InputObject <IBookingsIdentity>
 Get the availability information of staff members of a Microsoft Bookings calendar.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -277,4 +261,5 @@ See below for possible values.
 [Get-MgBookingBusinessStaffAvailability](/powershell/module/Microsoft.Graph.Bookings/Get-MgBookingBusinessStaffAvailability?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusinessstaffavailability](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusinessstaffavailability)
+
 

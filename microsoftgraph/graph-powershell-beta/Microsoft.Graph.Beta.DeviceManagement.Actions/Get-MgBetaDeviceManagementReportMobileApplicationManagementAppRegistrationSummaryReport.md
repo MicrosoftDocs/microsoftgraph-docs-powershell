@@ -30,18 +30,6 @@ Get-MgBetaDeviceManagementReportMobileApplicationManagementAppRegistrationSummar
 ## DESCRIPTION
 Invoke action getMobileApplicationManagementAppRegistrationSummaryReport
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -301,4 +289,5 @@ BODYPARAMETER \<IPaths1Xqz72ODevicemanagementReportsMicrosoftGraphGetmobileappli
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportmobileapplicationmanagementappregistrationsummaryreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportmobileapplicationmanagementappregistrationsummaryreport)
+
 

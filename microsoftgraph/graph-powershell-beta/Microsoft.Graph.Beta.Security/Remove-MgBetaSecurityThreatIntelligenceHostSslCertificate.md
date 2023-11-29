@@ -30,18 +30,6 @@ Remove-MgBetaSecurityThreatIntelligenceHostSslCertificate -InputObject <ISecurit
 ## DESCRIPTION
 Delete navigation property hostSslCertificates for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -HostSslCertificateId
@@ -233,4 +221,5 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Remove-MgSecurityThreatIntelligenceHostSslCertificate](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityThreatIntelligenceHostSslCertificate?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritythreatintelligencehostsslcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritythreatintelligencehostsslcertificate)
+
 

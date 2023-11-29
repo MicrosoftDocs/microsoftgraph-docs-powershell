@@ -34,18 +34,6 @@ Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkApp -InputObject <IDevices
 ## DESCRIPTION
 Get the item of type microsoft.graph.mobileApp as microsoft.graph.androidForWorkApp
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -318,4 +306,5 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementmobileappasandroidforworkapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementmobileappasandroidforworkapp)
+
 

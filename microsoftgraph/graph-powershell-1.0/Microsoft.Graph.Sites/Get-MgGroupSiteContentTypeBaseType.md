@@ -57,18 +57,6 @@ Get-MgGroupSiteContentTypeBaseType -InputObject <ISitesIdentity> [-ExpandPropert
 ## DESCRIPTION
 The collection of content types that are ancestors of this content type.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -372,4 +360,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgBetaGroupSiteContentTypeBaseType](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteContentTypeBaseType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitecontenttypebasetype](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitecontenttypebasetype)
+
 

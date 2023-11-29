@@ -46,22 +46,6 @@ Test-MgBetaUserInformationProtectionPolicyLabelRemoval -InputObject <IUsersActio
 Indicate to the consuming application what actions it should take to remove the label information.
 Given contentInfo as an input, which includes existing content metadata key/value pairs, the API returns an informationProtectionAction that contains some combination of one of more of the following:  This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -280,4 +264,5 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetauserinformationprotectionpolicylabelremoval](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetauserinformationprotectionpolicylabelremoval)
+
 

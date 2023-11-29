@@ -30,18 +30,6 @@ Get-MgGroupDriveListContentTypeColumnLinkCount -InputObject <IFilesIdentity> [-F
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -180,4 +168,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgBetaGroupDriveListContentTypeColumnLinkCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveListContentTypeColumnLinkCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivelistcontenttypecolumnlinkcount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivelistcontenttypecolumnlinkcount)
+
 

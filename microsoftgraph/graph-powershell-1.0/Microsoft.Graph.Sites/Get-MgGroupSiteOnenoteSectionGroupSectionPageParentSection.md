@@ -33,18 +33,6 @@ Get-MgGroupSiteOnenoteSectionGroupSectionPageParentSection -InputObject <ISitesI
 The section that contains the page.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -227,4 +215,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgBetaGroupSiteOnenoteSectionGroupSectionPageParentSection](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteSectionGroupSectionPageParentSection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotesectiongroupsectionpageparentsection](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotesectiongroupsectionpageparentsection)
+
 

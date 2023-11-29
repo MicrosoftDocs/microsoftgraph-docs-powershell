@@ -66,22 +66,6 @@ New-MgBetaUserDriveListContentTypeColumn -InputObject <IFilesIdentity>
 Add a column to a content type\]\[contentType\] in a site or list by specifying a \[columnDefinition\]\[columnDefinition\].
 This API is available in the following \[national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1237,4 +1221,5 @@ For examples, see Examples of common formulas in lists
 [New-MgUserDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/New-MgUserDriveListContentTypeColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetauserdrivelistcontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetauserdrivelistcontenttypecolumn)
+
 

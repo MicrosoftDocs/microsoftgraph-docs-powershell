@@ -29,18 +29,6 @@ Remove-MgDriveItemPermanent -InputObject <IFilesIdentity> [-PassThru] [-WhatIf] 
 ## DESCRIPTION
 Invoke action permanentDelete
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -180,4 +168,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Remove-MgBetaDriveItemPermanent](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItemPermanent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdriveitempermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdriveitempermanent)
+
 

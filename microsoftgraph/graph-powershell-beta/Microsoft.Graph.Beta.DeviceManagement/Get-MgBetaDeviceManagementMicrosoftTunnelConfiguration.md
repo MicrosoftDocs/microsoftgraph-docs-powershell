@@ -34,22 +34,6 @@ Get-MgBetaDeviceManagementMicrosoftTunnelConfiguration -InputObject <IDeviceMana
 ## DESCRIPTION
 Collection of MicrosoftTunnelConfiguration settings associated with account.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -393,4 +377,5 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmicrosofttunnelconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmicrosofttunnelconfiguration)
+
 

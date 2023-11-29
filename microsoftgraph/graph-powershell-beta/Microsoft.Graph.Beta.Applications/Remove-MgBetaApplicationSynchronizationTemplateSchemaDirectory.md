@@ -31,22 +31,6 @@ Remove-MgBetaApplicationSynchronizationTemplateSchemaDirectory -InputObject <IAp
 ## DESCRIPTION
 Delete navigation property directories for applications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -223,4 +207,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Remove-MgApplicationSynchronizationTemplateSchemaDirectory](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationSynchronizationTemplateSchemaDirectory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationsynchronizationtemplateschemadirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationsynchronizationtemplateschemadirectory)
+
 

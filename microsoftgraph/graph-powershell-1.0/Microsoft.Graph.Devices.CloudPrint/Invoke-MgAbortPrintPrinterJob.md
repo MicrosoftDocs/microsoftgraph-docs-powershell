@@ -53,18 +53,6 @@ Aborting a print job will only succeed if there is a printTask in a processing s
 For details about how to register a task trigger, see Extending Universal Print to support pull printing.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -244,4 +232,5 @@ INPUTOBJECT \<IDevicesCloudPrintIdentity\>: Identity Parameter
 [Invoke-MgBetaAbortPrintPrinterJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Invoke-MgBetaAbortPrintPrinterJob?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/invoke-mgabortprintprinterjob](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/invoke-mgabortprintprinterjob)
+
 

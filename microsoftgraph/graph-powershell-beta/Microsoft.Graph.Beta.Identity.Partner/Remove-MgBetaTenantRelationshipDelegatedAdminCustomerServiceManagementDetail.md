@@ -32,18 +32,6 @@ Remove-MgBetaTenantRelationshipDelegatedAdminCustomerServiceManagementDetail
 ## DESCRIPTION
 Delete navigation property serviceManagementDetails for tenantRelationships
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DelegatedAdminCustomerId
@@ -180,4 +168,5 @@ INPUTOBJECT \<IIdentityPartnerIdentity\>: Identity Parameter
 [Remove-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail](/powershell/module/Microsoft.Graph.Identity.Partner/Remove-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/remove-mgbetatenantrelationshipdelegatedadmincustomerservicemanagementdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/remove-mgbetatenantrelationshipdelegatedadmincustomerservicemanagementdetail)
+
 

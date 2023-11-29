@@ -35,18 +35,6 @@ Remove-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment
 Delete a delegatedAdminAccessAssignment object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DelegatedAdminAccessAssignmentId
@@ -183,4 +171,5 @@ INPUTOBJECT \<IIdentityPartnerIdentity\>: Identity Parameter
 [Remove-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment](/powershell/module/Microsoft.Graph.Identity.Partner/Remove-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/remove-mgbetatenantrelationshipdelegatedadminrelationshipaccessassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/remove-mgbetatenantrelationshipdelegatedadminrelationshipaccessassignment)
+
 

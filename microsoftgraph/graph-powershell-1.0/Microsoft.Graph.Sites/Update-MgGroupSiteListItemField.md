@@ -45,22 +45,6 @@ Update-MgGroupSiteListItemField -InputObject <ISitesIdentity> -BodyParameter <Ha
 Update the properties on a listItem\]\[\].
 This API is available in the following \[national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -276,4 +260,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Update-MgBetaGroupSiteListItemField](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteListItemField?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitelistitemfield](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitelistitemfield)
+
 

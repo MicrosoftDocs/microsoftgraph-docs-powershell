@@ -30,22 +30,6 @@ Invoke-MgBetaUsagePolicyAuthenticationStrengthPolicy -InputObject <IIdentitySign
 ## DESCRIPTION
 Invoke function usage
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AuthenticationStrengthPolicyId
@@ -176,4 +160,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 [Invoke-MgUsagePolicyAuthenticationStrengthPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgUsagePolicyAuthenticationStrengthPolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetausagepolicyauthenticationstrengthpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetausagepolicyauthenticationstrengthpolicy)
+
 

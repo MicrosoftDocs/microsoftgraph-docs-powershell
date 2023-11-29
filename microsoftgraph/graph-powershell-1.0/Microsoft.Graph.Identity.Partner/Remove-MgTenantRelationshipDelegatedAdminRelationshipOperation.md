@@ -31,18 +31,6 @@ Remove-MgTenantRelationshipDelegatedAdminRelationshipOperation -InputObject <IId
 ## DESCRIPTION
 Delete navigation property operations for tenantRelationships
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DelegatedAdminRelationshipId
@@ -179,4 +167,5 @@ INPUTOBJECT \<IIdentityPartnerIdentity\>: Identity Parameter
 [Remove-MgBetaTenantRelationshipDelegatedAdminRelationshipOperation](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Remove-MgBetaTenantRelationshipDelegatedAdminRelationshipOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/remove-mgtenantrelationshipdelegatedadminrelationshipoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/remove-mgtenantrelationshipdelegatedadminrelationshipoperation)
+
 

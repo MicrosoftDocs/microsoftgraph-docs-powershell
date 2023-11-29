@@ -47,18 +47,6 @@ Update-MgBetaTenantRelationshipDelegatedAdminCustomerServiceManagementDetail
 ## DESCRIPTION
 Update the navigation property serviceManagementDetails in tenantRelationships
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -254,4 +242,5 @@ INPUTOBJECT \<IIdentityPartnerIdentity\>: Identity Parameter
 [Update-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail](/powershell/module/Microsoft.Graph.Identity.Partner/Update-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/update-mgbetatenantrelationshipdelegatedadmincustomerservicemanagementdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/update-mgbetatenantrelationshipdelegatedadmincustomerservicemanagementdetail)
+
 
