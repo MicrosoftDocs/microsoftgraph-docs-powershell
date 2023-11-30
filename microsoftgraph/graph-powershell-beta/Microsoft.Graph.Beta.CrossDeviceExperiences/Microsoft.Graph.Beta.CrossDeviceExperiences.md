@@ -1,242 +1,211 @@
 ---
 Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
-Module Guid: 66c2c15e-d92c-4ef3-ad9d-aff89bd5b520
-Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences
-Help Version: 1.0.0.0
+Module Guid: 292e8ddf-b97f-4c33-908c-16f3d732c771
+Download Help Link: {{ Update Download Link }}
+Help Version: {{ Please enter version of help manually (X.X.X.X) format }}
 Locale: en-US
 ---
 
 # Microsoft.Graph.Beta.CrossDeviceExperiences Module
 ## Description
-Microsoft Graph PowerShell Cmdlets
+{{ Fill in the Description }}
 
 ## Microsoft.Graph.Beta.CrossDeviceExperiences Cmdlets
 ### [Get-MgBetaUserActivity](Get-MgBetaUserActivity.md)
-The user's activities across devices.
-Read-only.
-Nullable.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserActivityCount](Get-MgBetaUserActivityCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserActivityHistoryItem](Get-MgBetaUserActivityHistoryItem.md)
-Optional.
-NavigationProperty/Containment; navigation property to the activity's historyItems.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserActivityHistoryItemActivity](Get-MgBetaUserActivityHistoryItemActivity.md)
-Get activity from users
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserActivityHistoryItemCount](Get-MgBetaUserActivityHistoryItemCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDevice](Get-MgBetaUserDevice.md)
-Get devices from users
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceCommand](Get-MgBetaUserDeviceCommand.md)
-Set of commands sent to this device.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceCommandCount](Get-MgBetaUserDeviceCommandCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceCommandResponsepayload](Get-MgBetaUserDeviceCommandResponsepayload.md)
-Get responsepayload from users
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceCount](Get-MgBetaUserDeviceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceExtension](Get-MgBetaUserDeviceExtension.md)
-The collection of open extensions defined for the device.
-Read-only.
-Nullable.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceExtensionCount](Get-MgBetaUserDeviceExtensionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceMemberOf](Get-MgBetaUserDeviceMemberOf.md)
-Groups and administrative units that this device is a member of.
-Read-only.
-Nullable.
-Supports $expand.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceMemberOfAsAdministrativeUnit](Get-MgBetaUserDeviceMemberOfAsAdministrativeUnit.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.administrativeUnit
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceMemberOfAsGroup](Get-MgBetaUserDeviceMemberOfAsGroup.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceMemberOfCount](Get-MgBetaUserDeviceMemberOfCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceMemberOfCountAsAdministrativeUnit](Get-MgBetaUserDeviceMemberOfCountAsAdministrativeUnit.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceMemberOfCountAsGroup](Get-MgBetaUserDeviceMemberOfCountAsGroup.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceRegisteredOwner](Get-MgBetaUserDeviceRegisteredOwner.md)
-The user that cloud joined the device or registered their personal device.
-The registered owner is set at the time of registration.
-Read-only.
-Nullable.
-Supports $expand.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceRegisteredOwnerAsEndpoint](Get-MgBetaUserDeviceRegisteredOwnerAsEndpoint.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.endpoint
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceRegisteredOwnerAsServicePrincipal](Get-MgBetaUserDeviceRegisteredOwnerAsServicePrincipal.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceRegisteredOwnerAsUser](Get-MgBetaUserDeviceRegisteredOwnerAsUser.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceRegisteredOwnerByRef](Get-MgBetaUserDeviceRegisteredOwnerByRef.md)
-The user that cloud joined the device or registered their personal device.
-The registered owner is set at the time of registration.
-Read-only.
-Nullable.
-Supports $expand.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceRegisteredOwnerCount](Get-MgBetaUserDeviceRegisteredOwnerCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceRegisteredOwnerCountAsEndpoint](Get-MgBetaUserDeviceRegisteredOwnerCountAsEndpoint.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceRegisteredOwnerCountAsServicePrincipal](Get-MgBetaUserDeviceRegisteredOwnerCountAsServicePrincipal.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceRegisteredOwnerCountAsUser](Get-MgBetaUserDeviceRegisteredOwnerCountAsUser.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceRegisteredUser](Get-MgBetaUserDeviceRegisteredUser.md)
-Collection of registered users of the device.
-For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
-Read-only.
-Nullable.
-Supports $expand.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceRegisteredUserAsEndpoint](Get-MgBetaUserDeviceRegisteredUserAsEndpoint.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.endpoint
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceRegisteredUserAsServicePrincipal](Get-MgBetaUserDeviceRegisteredUserAsServicePrincipal.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceRegisteredUserAsUser](Get-MgBetaUserDeviceRegisteredUserAsUser.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceRegisteredUserByRef](Get-MgBetaUserDeviceRegisteredUserByRef.md)
-Collection of registered users of the device.
-For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
-Read-only.
-Nullable.
-Supports $expand.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceRegisteredUserCount](Get-MgBetaUserDeviceRegisteredUserCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceRegisteredUserCountAsEndpoint](Get-MgBetaUserDeviceRegisteredUserCountAsEndpoint.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceRegisteredUserCountAsServicePrincipal](Get-MgBetaUserDeviceRegisteredUserCountAsServicePrincipal.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceRegisteredUserCountAsUser](Get-MgBetaUserDeviceRegisteredUserCountAsUser.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceTransitiveMemberOf](Get-MgBetaUserDeviceTransitiveMemberOf.md)
-Groups and administrative units that this device is a member of.
-This operation is transitive.
-Supports $expand.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceTransitiveMemberOfAsAdministrativeUnit](Get-MgBetaUserDeviceTransitiveMemberOfAsAdministrativeUnit.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.administrativeUnit
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceTransitiveMemberOfAsGroup](Get-MgBetaUserDeviceTransitiveMemberOfAsGroup.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceTransitiveMemberOfCount](Get-MgBetaUserDeviceTransitiveMemberOfCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceTransitiveMemberOfCountAsAdministrativeUnit](Get-MgBetaUserDeviceTransitiveMemberOfCountAsAdministrativeUnit.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceTransitiveMemberOfCountAsGroup](Get-MgBetaUserDeviceTransitiveMemberOfCountAsGroup.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceUsageRights](Get-MgBetaUserDeviceUsageRights.md)
-Represents the usage rights a device has been granted.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDeviceUsageRightsCount](Get-MgBetaUserDeviceUsageRightsCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserActivity](New-MgBetaUserActivity.md)
-Create new navigation property to activities for users
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserActivityHistoryItem](New-MgBetaUserActivityHistoryItem.md)
-Create new navigation property to historyItems for users
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserDevice](New-MgBetaUserDevice.md)
-Create new navigation property to devices for users
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserDeviceCommand](New-MgBetaUserDeviceCommand.md)
-Create new navigation property to commands for users
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserDeviceExtension](New-MgBetaUserDeviceExtension.md)
-Create new navigation property to extensions for users
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserDeviceRegisteredOwnerByRef](New-MgBetaUserDeviceRegisteredOwnerByRef.md)
-Add a user as a registered owner of the device.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserDeviceRegisteredUserByRef](New-MgBetaUserDeviceRegisteredUserByRef.md)
-Add a registered user for the device.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserDeviceUsageRights](New-MgBetaUserDeviceUsageRights.md)
-Create new navigation property to usageRights for users
+{{ Fill in the Description }}
 
-### [New-MgBetaUserDeviceUsageRights](New-MgBetaUserDeviceUsageRights.md)
-Create new navigation property to usageRights for users
+### [Remove-MgBetaUserActivity](Remove-MgBetaUserActivity.md)
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserActivityHistoryItem](Remove-MgBetaUserActivityHistoryItem.md)
-Delete navigation property historyItems for users
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserDevice](Remove-MgBetaUserDevice.md)
-Delete navigation property devices for users
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserDeviceCommand](Remove-MgBetaUserDeviceCommand.md)
-Delete navigation property commands for users
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserDeviceExtension](Remove-MgBetaUserDeviceExtension.md)
-Delete navigation property extensions for users
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserDeviceRegisteredOwnerByRef](Remove-MgBetaUserDeviceRegisteredOwnerByRef.md)
-Remove a user as a registered owner of the device.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserDeviceRegisteredUserByRef](Remove-MgBetaUserDeviceRegisteredUserByRef.md)
-Remove a user as a registered user of the device.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserDeviceUsageRights](Remove-MgBetaUserDeviceUsageRights.md)
-Delete navigation property usageRights for users
+{{ Fill in the Description }}
 
 ### [Update-MgBetaUserActivity](Update-MgBetaUserActivity.md)
-Update the navigation property activities in users
+{{ Fill in the Description }}
 
 ### [Update-MgBetaUserActivityHistoryItem](Update-MgBetaUserActivityHistoryItem.md)
-Delete an existing history item for an existing user activity.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaUserDevice](Update-MgBetaUserDevice.md)
-Update the navigation property devices in users
+{{ Fill in the Description }}
 
 ### [Update-MgBetaUserDeviceCommand](Update-MgBetaUserDeviceCommand.md)
-Update the navigation property commands in users
+{{ Fill in the Description }}
 
 ### [Update-MgBetaUserDeviceExtension](Update-MgBetaUserDeviceExtension.md)
-Update the navigation property extensions in users
+{{ Fill in the Description }}
 
 ### [Update-MgBetaUserDeviceUsageRights](Update-MgBetaUserDeviceUsageRights.md)
-Update the navigation property usageRights in users
+{{ Fill in the Description }}
 

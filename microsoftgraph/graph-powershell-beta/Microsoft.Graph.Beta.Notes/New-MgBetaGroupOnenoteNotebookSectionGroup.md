@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Notes-help.xml
 Module Name: Microsoft.Graph.Beta.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetagrouponenotenotebooksectiongroup
 schema: 2.0.0
+ms.prod: onenote
 ---
 
 # New-MgBetaGroupOnenoteNotebookSectionGroup
@@ -53,6 +54,8 @@ New-MgBetaGroupOnenoteNotebookSectionGroup -InputObject <INotesIdentity>
 ## DESCRIPTION
 Create a new section group in the specified notebook.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -971,5 +974,4 @@ Read-only.
 [New-MgGroupOnenoteNotebookSectionGroup](/powershell/module/Microsoft.Graph.Notes/New-MgGroupOnenoteNotebookSectionGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetagrouponenotenotebooksectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetagrouponenotenotebooksectiongroup)
-
 

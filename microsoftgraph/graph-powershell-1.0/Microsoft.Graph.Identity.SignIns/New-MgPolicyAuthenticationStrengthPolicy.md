@@ -3,13 +3,14 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyauthenticationstrengthpolicy
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # New-MgPolicyAuthenticationStrengthPolicy
 
 ## SYNOPSIS
 Create a new custom authenticationStrengthPolicy object.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPolicyAuthenticationStrengthPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyAuthenticationStrengthPolicy?view=graph-powershell-beta)
@@ -33,9 +34,7 @@ New-MgPolicyAuthenticationStrengthPolicy -BodyParameter <IMicrosoftGraphAuthenti
 
 ## DESCRIPTION
 Create a new custom authenticationStrengthPolicy object.
-This API is supported in the following national cloud deployments.
-
-## EXAMPLES
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -249,33 +248,40 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationStrengthPolicy
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+BODYPARAMETER \<IMicrosoftGraphAuthenticationStrengthPolicy\>: authenticationStrengthPolicy
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[AllowedCombinations \<String\[\]\>\]: A collection of authentication method modes that are required be used to satify this authentication strength.
+  \[CombinationConfigurations \<IMicrosoftGraphAuthenticationCombinationConfiguration\[\]\>\]: Settings that may be used to require specific types or instances of an authentication method to be used when authenticating with a specified combination of authentication methods.
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[AppliesToCombinations \<String\[\]\>\]: Which authentication method combinations this configuration applies to.
+Must be an allowedCombinations object that's defined for the authenticationStrengthPolicy.
+The only possible value for fido2combinationConfigurations is 'fido2'.
+  \[CreatedDateTime \<DateTime?\>\]: The datetime when this policy was created.
+  \[Description \<String\>\]: The human-readable description of this policy.
+  \[DisplayName \<String\>\]: The human-readable display name of this policy.
+Supports $filter (eq, ne, not , and in).
+  \[ModifiedDateTime \<DateTime?\>\]: The datetime when this policy was last modified.
+  \[PolicyType \<String\>\]: authenticationStrengthPolicyType
+  \[RequirementsSatisfied \<String\>\]: authenticationStrengthRequirements
 
-`BODYPARAMETER <IMicrosoftGraphAuthenticationStrengthPolicy>`: authenticationStrengthPolicy
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[AllowedCombinations <String[]>]`: A collection of authentication method modes that are required be used to satify this authentication strength.
-  - `[CombinationConfigurations <IMicrosoftGraphAuthenticationCombinationConfiguration[]>]`: Settings that may be used to require specific types or instances of an authentication method to be used when authenticating with a specified combination of authentication methods.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[AppliesToCombinations <String[]>]`: Which authentication method combinations this configuration applies to. Must be an allowedCombinations object that's defined for the authenticationStrengthPolicy. The only possible value for fido2combinationConfigurations is 'fido2'.
-  - `[CreatedDateTime <DateTime?>]`: The datetime when this policy was created.
-  - `[Description <String>]`: The human-readable description of this policy.
-  - `[DisplayName <String>]`: The human-readable display name of this policy. Supports $filter (eq, ne, not , and in).
-  - `[ModifiedDateTime <DateTime?>]`: The datetime when this policy was last modified.
-  - `[PolicyType <String>]`: authenticationStrengthPolicyType
-  - `[RequirementsSatisfied <String>]`: authenticationStrengthRequirements
-
-`COMBINATIONCONFIGURATIONS <IMicrosoftGraphAuthenticationCombinationConfiguration[]>`: Settings that may be used to require specific types or instances of an authentication method to be used when authenticating with a specified combination of authentication methods.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[AppliesToCombinations <String[]>]`: Which authentication method combinations this configuration applies to. Must be an allowedCombinations object that's defined for the authenticationStrengthPolicy. The only possible value for fido2combinationConfigurations is 'fido2'.
+COMBINATIONCONFIGURATIONS \<IMicrosoftGraphAuthenticationCombinationConfiguration\[\]\>: Settings that may be used to require specific types or instances of an authentication method to be used when authenticating with a specified combination of authentication methods.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[AppliesToCombinations \<String\[\]\>\]: Which authentication method combinations this configuration applies to.
+Must be an allowedCombinations object that's defined for the authenticationStrengthPolicy.
+The only possible value for fido2combinationConfigurations is 'fido2'.
 
 ## RELATED LINKS
-
 [New-MgBetaPolicyAuthenticationStrengthPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyAuthenticationStrengthPolicy?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyauthenticationstrengthpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyauthenticationstrengthpolicy)
+
 

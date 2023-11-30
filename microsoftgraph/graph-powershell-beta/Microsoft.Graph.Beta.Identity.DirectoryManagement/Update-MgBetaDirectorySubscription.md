@@ -300,7 +300,7 @@ Accept wildcard characters: False
 
 ### -Status
 The status of this subscription.
-Possible values are: Enabled, Expired, Suspended, Warning, LockedOut.
+Possible values are: Enabled, Deleted, Suspended, Warning, LockedOut.
 
 ```yaml
 Type: String
@@ -403,7 +403,7 @@ The possible values are:Success - Service is fully provisioned.Disabled - Servic
   \[SkuId \<String\>\]: The object ID of the SKU associated with this subscription.
   \[SkuPartNumber \<String\>\]: The SKU associated with this subscription.
   \[Status \<String\>\]: The status of this subscription.
-Possible values are: Enabled, Expired, Suspended, Warning, LockedOut.
+Possible values are: Enabled, Deleted, Suspended, Warning, LockedOut.
   \[TotalLicenses \<Int32?\>\]: The number of seats included in this subscription.
 
 INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
@@ -417,6 +417,7 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[ContractId \<String\>\]: The unique identifier of contract
   \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
   \[DeviceId \<String\>\]: The unique identifier of device
+  \[DeviceLocalCredentialInfoId \<String\>\]: The unique identifier of deviceLocalCredentialInfo
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[DirectoryRoleId \<String\>\]: The unique identifier of directoryRole
   \[DirectoryRoleTemplateId \<String\>\]: The unique identifier of directoryRoleTemplate

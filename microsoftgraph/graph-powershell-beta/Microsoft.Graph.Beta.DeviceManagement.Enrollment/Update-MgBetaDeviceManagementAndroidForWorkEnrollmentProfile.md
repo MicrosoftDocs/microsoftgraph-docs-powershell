@@ -163,7 +163,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -318,62 +318,63 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAndroidForWorkEnrollmentProfile
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+BODYPARAMETER \<IMicrosoftGraphAndroidForWorkEnrollmentProfile\>: Enrollment Profile used to enroll COSU devices using Google's Cloud Management.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[AccountId \<String\>\]: Tenant GUID the enrollment profile belongs to.
+  \[CreatedDateTime \<DateTime?\>\]: Date time the enrollment profile was created.
+  \[Description \<String\>\]: Description for the enrollment profile.
+  \[DisplayName \<String\>\]: Display name for the enrollment profile.
+  \[EnrolledDeviceCount \<Int32?\>\]: Total number of Android devices that have enrolled using this enrollment profile.
+  \[LastModifiedDateTime \<DateTime?\>\]: Date time the enrollment profile was last modified.
+  \[QrCodeContent \<String\>\]: String used to generate a QR code for the token.
+  \[QrCodeImage \<IMicrosoftGraphMimeContent\>\]: Contains properties for a generic mime content.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Type \<String\>\]: Indicates the content mime type.
+    \[Value \<Byte\[\]\>\]: The byte array that contains the actual content.
+  \[TokenExpirationDateTime \<DateTime?\>\]: Date time the most recently created token will expire.
+  \[TokenValue \<String\>\]: Value of the most recently created token for this enrollment profile.
 
-`BODYPARAMETER <IMicrosoftGraphAndroidForWorkEnrollmentProfile>`: Enrollment Profile used to enroll COSU devices using Google's Cloud Management.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[AccountId <String>]`: Tenant GUID the enrollment profile belongs to.
-  - `[CreatedDateTime <DateTime?>]`: Date time the enrollment profile was created.
-  - `[Description <String>]`: Description for the enrollment profile.
-  - `[DisplayName <String>]`: Display name for the enrollment profile.
-  - `[EnrolledDeviceCount <Int32?>]`: Total number of Android devices that have enrolled using this enrollment profile.
-  - `[LastModifiedDateTime <DateTime?>]`: Date time the enrollment profile was last modified.
-  - `[QrCodeContent <String>]`: String used to generate a QR code for the token.
-  - `[QrCodeImage <IMicrosoftGraphMimeContent>]`: Contains properties for a generic mime content.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Type <String>]`: Indicates the content mime type.
-    - `[Value <Byte[]>]`: The byte array that contains the actual content.
-  - `[TokenExpirationDateTime <DateTime?>]`: Date time the most recently created token will expire.
-  - `[TokenValue <String>]`: Value of the most recently created token for this enrollment profile.
+INPUTOBJECT \<IDeviceManagementEnrollmentIdentity\>: Identity Parameter
+  \[AndroidDeviceOwnerEnrollmentProfileId \<String\>\]: The unique identifier of androidDeviceOwnerEnrollmentProfile
+  \[AndroidForWorkEnrollmentProfileId \<String\>\]: The unique identifier of androidForWorkEnrollmentProfile
+  \[AppScopeId \<String\>\]: The unique identifier of appScope
+  \[AppleEnrollmentProfileAssignmentId \<String\>\]: The unique identifier of appleEnrollmentProfileAssignment
+  \[AppleUserInitiatedEnrollmentProfileId \<String\>\]: The unique identifier of appleUserInitiatedEnrollmentProfile
+  \[DepOnboardingSettingId \<String\>\]: The unique identifier of depOnboardingSetting
+  \[DeviceEnrollmentConfigurationId \<String\>\]: The unique identifier of deviceEnrollmentConfiguration
+  \[DeviceManagementAutopilotEventId \<String\>\]: The unique identifier of deviceManagementAutopilotEvent
+  \[DeviceManagementAutopilotPolicyStatusDetailId \<String\>\]: The unique identifier of deviceManagementAutopilotPolicyStatusDetail
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[EnrollmentConfigurationAssignmentId \<String\>\]: The unique identifier of enrollmentConfigurationAssignment
+  \[EnrollmentProfileId \<String\>\]: The unique identifier of enrollmentProfile
+  \[ImportedAppleDeviceIdentityId \<String\>\]: The unique identifier of importedAppleDeviceIdentity
+  \[ImportedDeviceIdentityId \<String\>\]: The unique identifier of importedDeviceIdentity
+  \[ImportedWindowsAutopilotDeviceIdentityId \<String\>\]: The unique identifier of importedWindowsAutopilotDeviceIdentity
+  \[UnifiedRbacResourceActionId \<String\>\]: The unique identifier of unifiedRbacResourceAction
+  \[UnifiedRbacResourceNamespaceId \<String\>\]: The unique identifier of unifiedRbacResourceNamespace
+  \[UnifiedRoleAssignmentMultipleId \<String\>\]: The unique identifier of unifiedRoleAssignmentMultiple
+  \[UnifiedRoleDefinitionId \<String\>\]: The unique identifier of unifiedRoleDefinition
+  \[UnifiedRoleDefinitionId1 \<String\>\]: The unique identifier of unifiedRoleDefinition
+  \[WindowsAutopilotDeploymentProfileAssignmentId \<String\>\]: The unique identifier of windowsAutopilotDeploymentProfileAssignment
+  \[WindowsAutopilotDeploymentProfileId \<String\>\]: The unique identifier of windowsAutopilotDeploymentProfile
+  \[WindowsAutopilotDeviceIdentityId \<String\>\]: The unique identifier of windowsAutopilotDeviceIdentity
+  \[WindowsFeatureUpdateProfileAssignmentId \<String\>\]: The unique identifier of windowsFeatureUpdateProfileAssignment
+  \[WindowsFeatureUpdateProfileId \<String\>\]: The unique identifier of windowsFeatureUpdateProfile
 
-`INPUTOBJECT <IDeviceManagementEnrollmentIdentity>`: Identity Parameter
-  - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: The unique identifier of androidDeviceOwnerEnrollmentProfile
-  - `[AndroidForWorkEnrollmentProfileId <String>]`: The unique identifier of androidForWorkEnrollmentProfile
-  - `[AppScopeId <String>]`: The unique identifier of appScope
-  - `[AppleEnrollmentProfileAssignmentId <String>]`: The unique identifier of appleEnrollmentProfileAssignment
-  - `[AppleUserInitiatedEnrollmentProfileId <String>]`: The unique identifier of appleUserInitiatedEnrollmentProfile
-  - `[DepOnboardingSettingId <String>]`: The unique identifier of depOnboardingSetting
-  - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
-  - `[DeviceManagementAutopilotEventId <String>]`: The unique identifier of deviceManagementAutopilotEvent
-  - `[DeviceManagementAutopilotPolicyStatusDetailId <String>]`: The unique identifier of deviceManagementAutopilotPolicyStatusDetail
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[EnrollmentConfigurationAssignmentId <String>]`: The unique identifier of enrollmentConfigurationAssignment
-  - `[EnrollmentProfileId <String>]`: The unique identifier of enrollmentProfile
-  - `[ImportedAppleDeviceIdentityId <String>]`: The unique identifier of importedAppleDeviceIdentity
-  - `[ImportedDeviceIdentityId <String>]`: The unique identifier of importedDeviceIdentity
-  - `[ImportedWindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of importedWindowsAutopilotDeviceIdentity
-  - `[UnifiedRbacResourceActionId <String>]`: The unique identifier of unifiedRbacResourceAction
-  - `[UnifiedRbacResourceNamespaceId <String>]`: The unique identifier of unifiedRbacResourceNamespace
-  - `[UnifiedRoleAssignmentMultipleId <String>]`: The unique identifier of unifiedRoleAssignmentMultiple
-  - `[UnifiedRoleDefinitionId <String>]`: The unique identifier of unifiedRoleDefinition
-  - `[UnifiedRoleDefinitionId1 <String>]`: The unique identifier of unifiedRoleDefinition
-  - `[WindowsAutopilotDeploymentProfileAssignmentId <String>]`: The unique identifier of windowsAutopilotDeploymentProfileAssignment
-  - `[WindowsAutopilotDeploymentProfileId <String>]`: The unique identifier of windowsAutopilotDeploymentProfile
-  - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
-  - `[WindowsFeatureUpdateProfileAssignmentId <String>]`: The unique identifier of windowsFeatureUpdateProfileAssignment
-  - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
-
-`QRCODEIMAGE <IMicrosoftGraphMimeContent>`: Contains properties for a generic mime content.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Type <String>]`: Indicates the content mime type.
-  - `[Value <Byte[]>]`: The byte array that contains the actual content.
+QRCODEIMAGE \<IMicrosoftGraphMimeContent\>: Contains properties for a generic mime content.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Type \<String\>\]: Indicates the content mime type.
+  \[Value \<Byte\[\]\>\]: The byte array that contains the actual content.
 
 ## RELATED LINKS
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementandroidforworkenrollmentprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementandroidforworkenrollmentprofile)
+
 

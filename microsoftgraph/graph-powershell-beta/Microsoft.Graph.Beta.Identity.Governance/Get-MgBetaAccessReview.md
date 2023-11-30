@@ -3,17 +3,20 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaaccessreview
 schema: 2.0.0
+ms.prod: governance
+ms.prod: governance
 ---
 
 # Get-MgBetaAccessReview
 
 ## SYNOPSIS
-In the Azure AD access reviews feature, retrieve an accessReview object.
+In the Microsoft Entra access reviews feature, retrieve an accessReview object.
  To retrieve the reviewers of the access review, use the list accessReview reviewers API.
 To retrieve the decisions of the access review, use the list accessReview decisions API, or the list my accessReview decisions API.
 If this is a recurring access review, no decisions will be associated with the recurring access review series.
 Instead, use the instances relationship of that series to retrieve an accessReview collection of the past, current, and future instances of the access review.
 Each past and current instance will have decisions.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -37,12 +40,13 @@ Get-MgBetaAccessReview -InputObject <IIdentityGovernanceIdentity> [-ExpandProper
 ```
 
 ## DESCRIPTION
-In the Azure AD access reviews feature, retrieve an accessReview object.
+In the Microsoft Entra access reviews feature, retrieve an accessReview object.
  To retrieve the reviewers of the access review, use the list accessReview reviewers API.
 To retrieve the decisions of the access review, use the list accessReview decisions API, or the list my accessReview decisions API.
 If this is a recurring access review, no decisions will be associated with the recurring access review series.
 Instead, use the instances relationship of that series to retrieve an accessReview collection of the past, current, and future instances of the access review.
 Each past and current instance will have decisions.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaAccessReview Cmdlet
@@ -301,6 +305,7 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[CustomTaskExtensionId \<String\>\]: The unique identifier of customTaskExtension
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[EndDateTime \<DateTime?\>\]: Usage: endDateTime={endDateTime}
+  \[FindingId \<String\>\]: The unique identifier of finding
   \[GovernanceInsightId \<String\>\]: The unique identifier of governanceInsight
   \[GovernanceResourceId \<String\>\]: The unique identifier of governanceResource
   \[GovernanceRoleAssignmentId \<String\>\]: The unique identifier of governanceRoleAssignment
@@ -311,6 +316,8 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[IncompatibleAccessPackageId \<String\>\]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   \[LongRunningOperationId \<String\>\]: The unique identifier of longRunningOperation
   \[On \<String\>\]: Usage: on='{on}'
+  \[PermissionsCreepIndexDistributionId \<String\>\]: The unique identifier of permissionsCreepIndexDistribution
+  \[PermissionsRequestChangeId \<String\>\]: The unique identifier of permissionsRequestChange
   \[PrivilegedAccessGroupAssignmentScheduleId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentSchedule
   \[PrivilegedAccessGroupAssignmentScheduleInstanceId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentScheduleInstance
   \[PrivilegedAccessGroupAssignmentScheduleRequestId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentScheduleRequest

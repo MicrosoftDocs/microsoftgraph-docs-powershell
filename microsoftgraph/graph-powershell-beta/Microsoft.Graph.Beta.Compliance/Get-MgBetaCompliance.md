@@ -64,8 +64,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryEdiscoveryroot
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
 [Get-MgCompliance](/powershell/module/Microsoft.Graph.Compliance/Get-MgCompliance?view=graph-powershell-1.0)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacompliance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacompliance)
+
 

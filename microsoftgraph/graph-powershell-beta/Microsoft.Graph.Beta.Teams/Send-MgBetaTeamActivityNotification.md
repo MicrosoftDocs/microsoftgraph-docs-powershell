@@ -9,8 +9,8 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Send an activity feed notification in the scope of a team.
-For more details about sending notifications and the requirements for doing so, see\nsending Teams activity notifications.
-This API is supported in the following national cloud deployments.
+For more information, see sending Teams activity notifications.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Send-MgTeamActivityNotification](/powershell/module/Microsoft.Graph.Teams/Send-MgTeamActivityNotification?view=graph-powershell-1.0)
@@ -49,8 +49,8 @@ Send-MgBetaTeamActivityNotification -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Send an activity feed notification in the scope of a team.
-For more details about sending notifications and the requirements for doing so, see\nsending Teams activity notifications.
-This API is supported in the following national cloud deployments.
+For more information, see sending Teams activity notifications.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementtargetedmanagedappconfiguration
 schema: 2.0.0
+ms.prod: intune
 ---
 
 # New-MgDeviceAppManagementTargetedManagedAppConfiguration
@@ -141,7 +142,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -218,7 +219,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -294,76 +295,81 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTargetedManagedAppConfiguration
 ## NOTES
-
-ALIASES
-
-New-MgDeviceAppMgtTargetedManagedAppConfiguration
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+APPS \<IMicrosoftGraphManagedMobileApp\[\]\>: List of apps to which the policy is deployed.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[MobileAppIdentifier \<IMicrosoftGraphMobileAppIdentifier\>\]: The identifier for a mobile app.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Version \<String\>\]: Version of the entity.
 
-`APPS <IMicrosoftGraphManagedMobileApp[]>`: List of apps to which the policy is deployed.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Version <String>]`: Version of the entity.
+ASSIGNMENTS \<IMicrosoftGraphTargetedManagedAppPolicyAssignment\[\]\>: Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
 
-`ASSIGNMENTS <IMicrosoftGraphTargetedManagedAppPolicyAssignment[]>`: Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+BODYPARAMETER \<IMicrosoftGraphTargetedManagedAppConfiguration\>: Configuration used to deliver a set of custom settings as-is to all users in the targeted security group
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[CustomSettings \<IMicrosoftGraphKeyValuePair\[\]\>\]: A set of string key and string value pairs to be sent to apps for users to whom the configuration is scoped, unalterned by this service
+    \[Name \<String\>\]: Name for this key-value pair
+    \[Value \<String\>\]: Value for this key-value pair
+  \[CreatedDateTime \<DateTime?\>\]: The date and time the policy was created.
+  \[Description \<String\>\]: The policy's description.
+  \[DisplayName \<String\>\]: Policy display name.
+  \[LastModifiedDateTime \<DateTime?\>\]: Last time the policy was modified.
+  \[Version \<String\>\]: Version of the entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[Apps \<IMicrosoftGraphManagedMobileApp\[\]\>\]: List of apps to which the policy is deployed.
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[MobileAppIdentifier \<IMicrosoftGraphMobileAppIdentifier\>\]: The identifier for a mobile app.
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Version \<String\>\]: Version of the entity.
+  \[Assignments \<IMicrosoftGraphTargetedManagedAppPolicyAssignment\[\]\>\]: Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DeployedAppCount \<Int32?\>\]: Count of apps to which the current policy is deployed.
+  \[DeploymentSummary \<IMicrosoftGraphManagedAppPolicyDeploymentSummary\>\]: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[ConfigurationDeployedUserCount \<Int32?\>\]: Not yet documented
+    \[ConfigurationDeploymentSummaryPerApp \<IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp\[\]\>\]: Not yet documented
+      \[ConfigurationAppliedUserCount \<Int32?\>\]: Number of users the policy is applied.
+      \[MobileAppIdentifier \<IMicrosoftGraphMobileAppIdentifier\>\]: The identifier for a mobile app.
+    \[DisplayName \<String\>\]: Not yet documented
+    \[LastRefreshTime \<DateTime?\>\]: Not yet documented
+    \[Version \<String\>\]: Version of the entity.
+  \[IsAssigned \<Boolean?\>\]: Indicates if the policy is deployed to any inclusion groups or not.
 
-`BODYPARAMETER <IMicrosoftGraphTargetedManagedAppConfiguration>`: Configuration used to deliver a set of custom settings as-is to all users in the targeted security group
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CustomSettings <IMicrosoftGraphKeyValuePair[]>]`: A set of string key and string value pairs to be sent to apps for users to whom the configuration is scoped, unalterned by this service
-    - `[Name <String>]`: Name for this key-value pair
-    - `[Value <String>]`: Value for this key-value pair
-  - `[CreatedDateTime <DateTime?>]`: The date and time the policy was created.
-  - `[Description <String>]`: The policy's description.
-  - `[DisplayName <String>]`: Policy display name.
-  - `[LastModifiedDateTime <DateTime?>]`: Last time the policy was modified.
-  - `[Version <String>]`: Version of the entity.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Apps <IMicrosoftGraphManagedMobileApp[]>]`: List of apps to which the policy is deployed.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Version <String>]`: Version of the entity.
-  - `[Assignments <IMicrosoftGraphTargetedManagedAppPolicyAssignment[]>]`: Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DeployedAppCount <Int32?>]`: Count of apps to which the current policy is deployed.
-  - `[DeploymentSummary <IMicrosoftGraphManagedAppPolicyDeploymentSummary>]`: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[ConfigurationDeployedUserCount <Int32?>]`: Not yet documented
-    - `[ConfigurationDeploymentSummaryPerApp <IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp[]>]`: Not yet documented
-      - `[ConfigurationAppliedUserCount <Int32?>]`: Number of users the policy is applied.
-      - `[MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
-    - `[DisplayName <String>]`: Not yet documented
-    - `[LastRefreshTime <DateTime?>]`: Not yet documented
-    - `[Version <String>]`: Version of the entity.
-  - `[IsAssigned <Boolean?>]`: Indicates if the policy is deployed to any inclusion groups or not.
+CUSTOMSETTINGS \<IMicrosoftGraphKeyValuePair\[\]\>: A set of string key and string value pairs to be sent to apps for users to whom the configuration is scoped, unalterned by this service
+  \[Name \<String\>\]: Name for this key-value pair
+  \[Value \<String\>\]: Value for this key-value pair
 
-`CUSTOMSETTINGS <IMicrosoftGraphKeyValuePair[]>`: A set of string key and string value pairs to be sent to apps for users to whom the configuration is scoped, unalterned by this service
-  - `[Name <String>]`: Name for this key-value pair
-  - `[Value <String>]`: Value for this key-value pair
-
-`DEPLOYMENTSUMMARY <IMicrosoftGraphManagedAppPolicyDeploymentSummary>`: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[ConfigurationDeployedUserCount <Int32?>]`: Not yet documented
-  - `[ConfigurationDeploymentSummaryPerApp <IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp[]>]`: Not yet documented
-    - `[ConfigurationAppliedUserCount <Int32?>]`: Number of users the policy is applied.
-    - `[MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: Not yet documented
-  - `[LastRefreshTime <DateTime?>]`: Not yet documented
-  - `[Version <String>]`: Version of the entity.
+DEPLOYMENTSUMMARY \<IMicrosoftGraphManagedAppPolicyDeploymentSummary\>: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[ConfigurationDeployedUserCount \<Int32?\>\]: Not yet documented
+  \[ConfigurationDeploymentSummaryPerApp \<IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp\[\]\>\]: Not yet documented
+    \[ConfigurationAppliedUserCount \<Int32?\>\]: Number of users the policy is applied.
+    \[MobileAppIdentifier \<IMicrosoftGraphMobileAppIdentifier\>\]: The identifier for a mobile app.
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DisplayName \<String\>\]: Not yet documented
+  \[LastRefreshTime \<DateTime?\>\]: Not yet documented
+  \[Version \<String\>\]: Version of the entity.
 
 ## RELATED LINKS
 [New-MgBetaDeviceAppManagementTargetedManagedAppConfiguration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementTargetedManagedAppConfiguration?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementtargetedmanagedappconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementtargetedmanagedappconfiguration)
+
 

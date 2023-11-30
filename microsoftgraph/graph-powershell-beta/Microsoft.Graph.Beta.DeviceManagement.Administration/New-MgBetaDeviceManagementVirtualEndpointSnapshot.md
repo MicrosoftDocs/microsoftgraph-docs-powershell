@@ -215,23 +215,30 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcSnapshot
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`BODYPARAMETER <IMicrosoftGraphCloudPcSnapshot>`: cloudPcSnapshot
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[CloudPcId <String>]`: The unique identifier for the Cloud PC.
-  - `[CreatedDateTime <DateTime?>]`: The date and time at which the snapshot was taken. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[ExpirationDateTime <DateTime?>]`: The date and time when the snapshot expires. The time is shown in ISO 8601 format and Coordinated Universal Time (UTC) time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[LastRestoredDateTime <DateTime?>]`: The date and time at which the snapshot was last used to restore the Cloud PC device. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[SnapshotType <String>]`: cloudPcSnapshotType
-  - `[Status <String>]`: cloudPcSnapshotStatus
+BODYPARAMETER \<IMicrosoftGraphCloudPcSnapshot\>: cloudPcSnapshot
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[CloudPcId \<String\>\]: The unique identifier for the Cloud PC.
+  \[CreatedDateTime \<DateTime?\>\]: The date and time at which the snapshot was taken.
+The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  \[ExpirationDateTime \<DateTime?\>\]: The date and time when the snapshot expires.
+The time is shown in ISO 8601 format and Coordinated Universal Time (UTC) time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  \[LastRestoredDateTime \<DateTime?\>\]: The date and time at which the snapshot was last used to restore the Cloud PC device.
+The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  \[SnapshotType \<String\>\]: cloudPcSnapshotType
+  \[Status \<String\>\]: cloudPcSnapshotStatus
 
 ## RELATED LINKS
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointsnapshot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointsnapshot)
+
 

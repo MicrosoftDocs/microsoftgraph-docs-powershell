@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfolderchildfoldermessagecontent
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Get-MgBetaUserMailFolderChildFolderMessageContent
@@ -29,6 +30,8 @@ Get-MgBetaUserMailFolderChildFolderMessageContent -InputObject <IMailIdentity> -
 
 ## DESCRIPTION
 Get media content for the navigation property messages from users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -169,5 +172,4 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
 [Get-MgUserMailFolderChildFolderMessageContent](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderChildFolderMessageContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfolderchildfoldermessagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfolderchildfoldermessagecontent)
-
 

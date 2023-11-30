@@ -68,8 +68,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailboxSettings
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
 [Get-MgBetaEducationMeUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeUserMailboxSetting?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeusermailboxsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeusermailboxsetting)
+
 

@@ -1,687 +1,541 @@
 ---
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-Module Guid: b172a5f1-11bf-42b9-bac6-628ab17e2d8d
-Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications
-Help Version: 1.0.0.0
+Module Guid: f07aeb05-f355-4116-a587-f725d4797aa2
+Download Help Link: {{ Update Download Link }}
+Help Version: {{ Please enter version of help manually (X.X.X.X) format }}
 Locale: en-US
 ---
 
 # Microsoft.Graph.Beta.CloudCommunications Module
 ## Description
-Microsoft Graph PowerShell Cmdlets
+{{ Fill in the Description }}
 
 ## Microsoft.Graph.Beta.CloudCommunications Cmdlets
 ### [Add-MgBetaCommunicationCallLargeGalleryView](Add-MgBetaCommunicationCallLargeGalleryView.md)
-Add the large gallery view to a call.
-For details about how to identify a large gallery view participant in a roster so that you can retrieve the relevant data to subscribe to the video feed, see Identify large gallery view participants in a roster.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Clear-MgBetaCommunicationPresence](Clear-MgBetaCommunicationPresence.md)
-Clear a presence session of an application for a user.
-If it is the user's only presence session, a successful clearPresence changes the user's presence to Offline/Offline.
-Read more about presence sessions and their time-out and expiration.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Clear-MgBetaCommunicationPresenceUserPreferredPresence](Clear-MgBetaCommunicationPresenceUserPreferredPresence.md)
-Clear the preferred availability and activity status for a user.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationCall](Get-MgBetaCommunicationCall.md)
-Retrieve the properties and relationships of a call object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationCallAudioRoutingGroup](Get-MgBetaCommunicationCallAudioRoutingGroup.md)
-Retrieve the properties and relationships of an audioRoutingGroup object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationCallAudioRoutingGroupCount](Get-MgBetaCommunicationCallAudioRoutingGroupCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationCallContentSharingSession](Get-MgBetaCommunicationCallContentSharingSession.md)
-Retrieve the properties of a contentSharingSession object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationCallContentSharingSessionCount](Get-MgBetaCommunicationCallContentSharingSessionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationCallCount](Get-MgBetaCommunicationCallCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationCallOperation](Get-MgBetaCommunicationCallOperation.md)
-Get the status of an operation that adds the large gallery view to a call.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationCallOperationCount](Get-MgBetaCommunicationCallOperationCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationCallParticipant](Get-MgBetaCommunicationCallParticipant.md)
-Retrieve the properties and relationships of a participant object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationCallParticipantCount](Get-MgBetaCommunicationCallParticipantCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationCallRecord](Get-MgBetaCommunicationCallRecord.md)
-Retrieve the properties and relationships of a callRecord object.
-There are two ways to get the id of a callRecord: You can use the $expand query parameter to optionally include session and segment details, as shown in the Get full details example.
-When you expand session details, the maximum page size is 60 sessions.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationCallRecordCount](Get-MgBetaCommunicationCallRecordCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationCallRecordPstnBlockedUserLog](Get-MgBetaCommunicationCallRecordPstnBlockedUserLog.md)
-Invoke function getPstnBlockedUsersLog
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationCallRecordPstnOnlineMeetingDialoutReport](Get-MgBetaCommunicationCallRecordPstnOnlineMeetingDialoutReport.md)
-Invoke function getPstnOnlineMeetingDialoutReport
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationCallRecordSession](Get-MgBetaCommunicationCallRecordSession.md)
-List of sessions involved in the call.
-Peer-to-peer calls typically only have one session, whereas group calls typically have at least one session per participant.
-Read-only.
-Nullable.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationCallRecordSessionCount](Get-MgBetaCommunicationCallRecordSessionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationCallRecordSessionSegmentCount](Get-MgBetaCommunicationCallRecordSessionSegmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationCallRecordSmLog](Get-MgBetaCommunicationCallRecordSmLog.md)
-Invoke function getSmsLog
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationOnlineMeeting](Get-MgBetaCommunicationOnlineMeeting.md)
-Get onlineMeetings from communications
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationOnlineMeetingAlternativeRecording](Get-MgBetaCommunicationOnlineMeetingAlternativeRecording.md)
-Get alternativeRecording for the navigation property onlineMeetings from communications
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationOnlineMeetingAttendanceReport](Get-MgBetaCommunicationOnlineMeetingAttendanceReport.md)
-Get the meetingAttendanceReport for an onlineMeeting.
-Each time an online meeting ends, an attendance report will be generated for that session.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord](Get-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord.md)
-List of attendance records of an attendance report.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecordCount](Get-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecordCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationOnlineMeetingAttendanceReportCount](Get-MgBetaCommunicationOnlineMeetingAttendanceReportCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationOnlineMeetingAttendeeReport](Get-MgBetaCommunicationOnlineMeetingAttendeeReport.md)
-Get attendeeReport for the navigation property onlineMeetings from communications
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationOnlineMeetingBroadcastRecording](Get-MgBetaCommunicationOnlineMeetingBroadcastRecording.md)
-Get broadcastRecording for the navigation property onlineMeetings from communications
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationOnlineMeetingCount](Get-MgBetaCommunicationOnlineMeetingCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationOnlineMeetingRecording](Get-MgBetaCommunicationOnlineMeetingRecording.md)
-Get recording for the navigation property onlineMeetings from communications
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationOnlineMeetingRecordingContent](Get-MgBetaCommunicationOnlineMeetingRecordingContent.md)
-The content of the recording.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationOnlineMeetingRecordingCount](Get-MgBetaCommunicationOnlineMeetingRecordingCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationOnlineMeetingRecordingDelta](Get-MgBetaCommunicationOnlineMeetingRecordingDelta.md)
-Invoke function delta
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationOnlineMeetingRegistration](Get-MgBetaCommunicationOnlineMeetingRegistration.md)
-Get the externalMeetingRegistration details associated with an onlineMeeting.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestion](Get-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestion.md)
-Get a custom registration question associated with a meetingRegistration object on behalf of the organizer.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestionCount](Get-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationOnlineMeetingRegistrationRegistrant](Get-MgBetaCommunicationOnlineMeetingRegistrationRegistrant.md)
-Registrants of the online meeting.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationOnlineMeetingRegistrationRegistrantCount](Get-MgBetaCommunicationOnlineMeetingRegistrationRegistrantCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationOnlineMeetingTranscript](Get-MgBetaCommunicationOnlineMeetingTranscript.md)
-Retrieve a callTranscript object associated with a scheduled onlineMeeting.
-This API doesn't support getting call transcripts from channel meetings.
-Retrieving the transcript returns the metadata of the single transcript associated with the online meeting.
-Retrieving the content of the transcript returns the stream of text associated with the transcript.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationOnlineMeetingTranscriptContent](Get-MgBetaCommunicationOnlineMeetingTranscriptContent.md)
-The content of the transcript.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationOnlineMeetingTranscriptCount](Get-MgBetaCommunicationOnlineMeetingTranscriptCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationOnlineMeetingTranscriptDelta](Get-MgBetaCommunicationOnlineMeetingTranscriptDelta.md)
-Invoke function delta
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationOnlineMeetingTranscriptMetadataContent](Get-MgBetaCommunicationOnlineMeetingTranscriptMetadataContent.md)
-The time-aligned metadata of the utterances in the transcript.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationOnlineMeetingVirtualAppointmentJoinWebUrl](Get-MgBetaCommunicationOnlineMeetingVirtualAppointmentJoinWebUrl.md)
-Invoke function getVirtualAppointmentJoinWebUrl
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationPresence](Get-MgBetaCommunicationPresence.md)
-Get a user's presence information.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationPresenceByUserId](Get-MgBetaCommunicationPresenceByUserId.md)
-Get the presence information for multiple users.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCommunicationPresenceCount](Get-MgBetaCommunicationPresenceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
-### [Get-MgBetaCommunicationPresenceCount](Get-MgBetaCommunicationPresenceCount.md)
-Get the number of the resource
-
-### [Get-MgBetaUserOnlineMeetingAlternativeRecording](Get-MgBetaUserOnlineMeetingAlternativeRecording.md)
-Get alternativeRecording for the navigation property onlineMeetings from users
+### [Get-MgBetaUserOnlineMeeting](Get-MgBetaUserOnlineMeeting.md)
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserOnlineMeetingAlternativeRecording](Get-MgBetaUserOnlineMeetingAlternativeRecording.md)
-Get alternativeRecording for the navigation property onlineMeetings from users
+{{ Fill in the Description }}
 
-### [Get-MgBetaUserOnlineMeetingAlternativeRecording](Get-MgBetaUserOnlineMeetingAlternativeRecording.md)
-Get alternativeRecording for the navigation property onlineMeetings from users
+### [Get-MgBetaUserOnlineMeetingAttendanceReport](Get-MgBetaUserOnlineMeetingAttendanceReport.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord](Get-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord.md)
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecordCount](Get-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecordCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserOnlineMeetingAttendanceReportCount](Get-MgBetaUserOnlineMeetingAttendanceReportCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
-### [Get-MgBetaUserOnlineMeetingAttendanceReportCount](Get-MgBetaUserOnlineMeetingAttendanceReportCount.md)
-Get the number of the resource
+### [Get-MgBetaUserOnlineMeetingAttendeeReport](Get-MgBetaUserOnlineMeetingAttendeeReport.md)
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserOnlineMeetingBroadcastRecording](Get-MgBetaUserOnlineMeetingBroadcastRecording.md)
-Get broadcastRecording for the navigation property onlineMeetings from users
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserOnlineMeetingCount](Get-MgBetaUserOnlineMeetingCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserOnlineMeetingRecording](Get-MgBetaUserOnlineMeetingRecording.md)
-Get recording for the navigation property onlineMeetings from users
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserOnlineMeetingRecordingContent](Get-MgBetaUserOnlineMeetingRecordingContent.md)
-The content of the recording.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserOnlineMeetingRecordingCount](Get-MgBetaUserOnlineMeetingRecordingCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserOnlineMeetingRegistration](Get-MgBetaUserOnlineMeetingRegistration.md)
-Get the externalMeetingRegistration details associated with an onlineMeeting.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserOnlineMeetingRegistrationCustomQuestion](Get-MgBetaUserOnlineMeetingRegistrationCustomQuestion.md)
-Get a custom registration question associated with a meetingRegistration object on behalf of the organizer.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserOnlineMeetingRegistrationCustomQuestionCount](Get-MgBetaUserOnlineMeetingRegistrationCustomQuestionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserOnlineMeetingRegistrationRegistrant](Get-MgBetaUserOnlineMeetingRegistrationRegistrant.md)
-Registrants of the online meeting.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserOnlineMeetingRegistrationRegistrantCount](Get-MgBetaUserOnlineMeetingRegistrationRegistrantCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserOnlineMeetingTranscript](Get-MgBetaUserOnlineMeetingTranscript.md)
-Retrieve a callTranscript object associated with a scheduled onlineMeeting.
-This API doesn't support getting call transcripts from channel meetings.
-Retrieving the transcript returns the metadata of the single transcript associated with the online meeting.
-Retrieving the content of the transcript returns the stream of text associated with the transcript.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserOnlineMeetingTranscriptContent](Get-MgBetaUserOnlineMeetingTranscriptContent.md)
-The content of the transcript.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserOnlineMeetingTranscriptCount](Get-MgBetaUserOnlineMeetingTranscriptCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserOnlineMeetingTranscriptMetadataContent](Get-MgBetaUserOnlineMeetingTranscriptMetadataContent.md)
-The time-aligned metadata of the utterances in the transcript.
-Read-only.
+{{ Fill in the Description }}
 
-### [Get-MgBetaUserOnlineMeetingTranscriptMetadataContent](Get-MgBetaUserOnlineMeetingTranscriptMetadataContent.md)
-The time-aligned metadata of the utterances in the transcript.
-Read-only.
+### [Get-MgBetaUserPresence](Get-MgBetaUserPresence.md)
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaAnswerCommunicationCall](Invoke-MgBetaAnswerCommunicationCall.md)
-Enable a bot to answer an incoming call.
-The incoming call request can be an invite from a participant in a group call or a peer-to-peer call.
-If an invite to a group call is received, the notification contains the chatInfo and meetingInfo parameters.
-The bot is expected to answer, reject or redirect the call before the call times out.
-The current timeout value is 15 seconds.
-The current timeout value is 15 seconds for regular scenarios, and 5 seconds for policy-based recording scenarios.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaCreateOrGetCommunicationOnlineMeeting](Invoke-MgBetaCreateOrGetCommunicationOnlineMeeting.md)
-Create an onlineMeeting object with a custom specified external ID.
-If the external ID already exists, this API will return the onlineMeeting object with that external ID.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaInviteCommunicationCallParticipant](Invoke-MgBetaInviteCommunicationCallParticipant.md)
-Delete a specific participant in a call.
-In some situations, it is appropriate for an application to remove a participant from an active call.
-This action can be done before or after the participant answers the call.
-When an active caller is removed, they are immediately dropped from the call with no pre- or post-removal notification.
-When an invited participant is removed, any outstanding add participant request is canceled.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaKeepCommunicationCallAlive](Invoke-MgBetaKeepCommunicationCallAlive.md)
-Make a request to this API every 15 to 45 minutes to ensure that an ongoing call remains active.
-A call that does not receive this request within 45 minutes is considered inactive and will subsequently end.
-At least one successful request must be made within 45 minutes of the previous request, or the start of the call.
-We recommend that you send a request in shorter time intervals (every 15 minutes).
-Make sure that these requests are successful to prevent the call from timing out and ending.
-Attempting to send a request to a call that has already ended will result in a 404 Not-Found error.
-The resources related to the call should be cleaned up on the application side.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaLogCommunicationCallTeleconferenceDeviceQuality](Invoke-MgBetaLogCommunicationCallTeleconferenceDeviceQuality.md)
-Log video teleconferencing device quality data.
-The Cloud Video Interop (CVI) bot represents video teleconferencing (VTC) devices and acts as a back-to-back agent for a VTC device in a conference call.
-Because a CVI bot is in the middle of the VTC and Microsoft Teams infrastructure as a VTC proxy, it has two media legs.
-One media leg is between the CVI bot and Teams infrastructure, such as Teams conference server or a Teams client.
-The other media leg is between the CVI bot and the VTC device.
-The third-party partners own the VTC media leg and the Teams infrastructure cannot access the quality data of the third-party call leg.
-This method is only for the CVI partners to provide their media quality data.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaMuteAllCommunicationCallParticipant](Invoke-MgBetaMuteAllCommunicationCallParticipant.md)
-Mute all participants in the call.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaMuteCommunicationCall](Invoke-MgBetaMuteCommunicationCall.md)
-Allows the application to mute itself.
-This is a server mute, meaning that the server will drop all audio packets for this participant, even if the participant continues to stream audio.
-For more details about how to handle mute operations, see muteParticipantOperation This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaMuteCommunicationCallParticipant](Invoke-MgBetaMuteCommunicationCallParticipant.md)
-Mute a specific participant in the call.
-This is a server mute, meaning that the server will drop all audio packets for this participant, even if the participant continues to stream audio.
-For more information about how to handle mute operations, see muteParticipantOperation.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaPlayCommunicationCallPrompt](Invoke-MgBetaPlayCommunicationCallPrompt.md)
-Play a prompt in the call.
-For more information about how to handle operations, see commsOperation This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaRecordCommunicationCall](Invoke-MgBetaRecordCommunicationCall.md)
-Invoke action record
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaRecordCommunicationCallResponse](Invoke-MgBetaRecordCommunicationCallResponse.md)
-Record a short audio response from the caller.
-A bot can use this to capture a voice response from a caller after they are prompted for a response.
-For more information about how to handle operations, see commsOperation This action isn't intended to record the entire call.
-The maximum length of recording is 2 minutes.
-The recording isn't saved permanently by the Cloud Communications Platform and is discarded shortly after the call ends.
-The bot must download the recording promptly after the recording operation finishes by using the recordingLocation value that's given in the completed notification.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaRedirectCommunicationCall](Invoke-MgBetaRedirectCommunicationCall.md)
-Redirect an incoming call that hasn't been answered or rejected yet.
-The terms 'redirecting' and 'forwarding' a call are used interchangeably.
-The bot is expected to redirect the call before the call times out.
-The current timeout value is 15 seconds.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaRejectCommunicationCall](Invoke-MgBetaRejectCommunicationCall.md)
-Enable a bot to reject an incoming call.
-The incoming call request can be an invite from a participant in a group call or a peer-to-peer call.
-If an invite to a group call is received, the notification will contain the chatInfo and meetingInfo parameters.
-The bot is expected to answer or reject the call before the call times out.
-The current timeout value is 15 seconds.
-This API does not end existing calls that have already been answered.
-Use delete call to end a call.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaSubscribeCommunicationCallToTone](Invoke-MgBetaSubscribeCommunicationCallToTone.md)
-Subscribe to DTMF (dual-tone multi-frequency signaling) to allow you to be notified when the user presses keys on a 'Dialpad'.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaUnmuteCommunicationCall](Invoke-MgBetaUnmuteCommunicationCall.md)
-Allow the application to unmute itself.
-This is a server unmute, meaning that the server will start sending audio packets for this participant to other participants again.
-For more information about how to handle unmute operations, see unmuteParticipantOperation.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Move-MgBetaCommunicationCall](Move-MgBetaCommunicationCall.md)
-Transfer an active peer-to-peer call or group call.
-A consultative transfer means that the transferor can inform the person they want to transfer the call to (the transferee), before the transfer is made.
-This is opposed to transfering the call directly.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaCommunicationCall](New-MgBetaCommunicationCall.md)
-Create call enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting.
-You will need to register the calling bot and go through the list of permissions needed.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaCommunicationCallAudioRoutingGroup](New-MgBetaCommunicationCallAudioRoutingGroup.md)
-Create a new audioRoutingGroup.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaCommunicationCallContentSharingSession](New-MgBetaCommunicationCallContentSharingSession.md)
-Create new navigation property to contentSharingSessions for communications
+{{ Fill in the Description }}
 
 ### [New-MgBetaCommunicationCallOperation](New-MgBetaCommunicationCallOperation.md)
-Create new navigation property to operations for communications
+{{ Fill in the Description }}
 
 ### [New-MgBetaCommunicationCallParticipant](New-MgBetaCommunicationCallParticipant.md)
-Create new navigation property to participants for communications
+{{ Fill in the Description }}
 
 ### [New-MgBetaCommunicationCallRecordSession](New-MgBetaCommunicationCallRecordSession.md)
-Create new navigation property to sessions for communications
+{{ Fill in the Description }}
 
-### [New-MgBetaCommunicationCallRecordSession](New-MgBetaCommunicationCallRecordSession.md)
-Create new navigation property to sessions for communications
+### [New-MgBetaCommunicationOnlineMeeting](New-MgBetaCommunicationOnlineMeeting.md)
+{{ Fill in the Description }}
 
 ### [New-MgBetaCommunicationOnlineMeetingAttendanceReport](New-MgBetaCommunicationOnlineMeetingAttendanceReport.md)
-Create new navigation property to attendanceReports for communications
+{{ Fill in the Description }}
 
 ### [New-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord](New-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord.md)
-Create new navigation property to attendanceRecords for communications
+{{ Fill in the Description }}
 
 ### [New-MgBetaCommunicationOnlineMeetingRecording](New-MgBetaCommunicationOnlineMeetingRecording.md)
-Create new navigation property to recordings for communications
+{{ Fill in the Description }}
 
 ### [New-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestion](New-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestion.md)
-Create a custom registration question associated with a meetingRegistration object on behalf of the organizer.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaCommunicationOnlineMeetingRegistrationRegistrant](New-MgBetaCommunicationOnlineMeetingRegistrationRegistrant.md)
-Create new navigation property to registrants for communications
+{{ Fill in the Description }}
 
 ### [New-MgBetaCommunicationOnlineMeetingTranscript](New-MgBetaCommunicationOnlineMeetingTranscript.md)
-Create new navigation property to transcripts for communications
+{{ Fill in the Description }}
 
 ### [New-MgBetaCommunicationPresence](New-MgBetaCommunicationPresence.md)
-Create new navigation property to presences for communications
+{{ Fill in the Description }}
 
-### [New-MgBetaCommunicationPresence](New-MgBetaCommunicationPresence.md)
-Create new navigation property to presences for communications
+### [New-MgBetaUserOnlineMeeting](New-MgBetaUserOnlineMeeting.md)
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserOnlineMeetingAttendanceReport](New-MgBetaUserOnlineMeetingAttendanceReport.md)
-Create new navigation property to attendanceReports for users
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord](New-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord.md)
-Create new navigation property to attendanceRecords for users
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserOnlineMeetingRecording](New-MgBetaUserOnlineMeetingRecording.md)
-Create new navigation property to recordings for users
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserOnlineMeetingRegistrationCustomQuestion](New-MgBetaUserOnlineMeetingRegistrationCustomQuestion.md)
-Create a custom registration question associated with a meetingRegistration object on behalf of the organizer.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserOnlineMeetingRegistrationRegistrant](New-MgBetaUserOnlineMeetingRegistrationRegistrant.md)
-Create new navigation property to registrants for users
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserOnlineMeetingTranscript](New-MgBetaUserOnlineMeetingTranscript.md)
-Create new navigation property to transcripts for users
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaCommunicationCall](Remove-MgBetaCommunicationCall.md)
-Delete or hang up an active call.
-For group calls, this will only delete your call leg and the underlying group call will still continue.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaCommunicationCallAudioRoutingGroup](Remove-MgBetaCommunicationCallAudioRoutingGroup.md)
-Delete the specified audioRoutingGroup.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaCommunicationCallContentSharingSession](Remove-MgBetaCommunicationCallContentSharingSession.md)
-Delete navigation property contentSharingSessions for communications
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaCommunicationCallOperation](Remove-MgBetaCommunicationCallOperation.md)
-Delete navigation property operations for communications
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaCommunicationCallParticipant](Remove-MgBetaCommunicationCallParticipant.md)
-Delete a specific participant in a call.
-In some situations, it is appropriate for an application to remove a participant from an active call.
-This action can be done before or after the participant answers the call.
-When an active caller is removed, they are immediately dropped from the call with no pre- or post-removal notification.
-When an invited participant is removed, any outstanding add participant request is canceled.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaCommunicationCallRecordSession](Remove-MgBetaCommunicationCallRecordSession.md)
-Delete navigation property sessions for communications
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaCommunicationOnlineMeeting](Remove-MgBetaCommunicationOnlineMeeting.md)
-Delete navigation property onlineMeetings for communications
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaCommunicationOnlineMeetingAttendanceReport](Remove-MgBetaCommunicationOnlineMeetingAttendanceReport.md)
-Delete navigation property attendanceReports for communications
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord](Remove-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord.md)
-Delete navigation property attendanceRecords for communications
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaCommunicationOnlineMeetingRecording](Remove-MgBetaCommunicationOnlineMeetingRecording.md)
-Delete navigation property recordings for communications
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaCommunicationOnlineMeetingRegistration](Remove-MgBetaCommunicationOnlineMeetingRegistration.md)
-Disable and delete the meetingRegistration of an onlineMeeting on behalf of the organizer.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestion](Remove-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestion.md)
-Delete a custom registration question from a meetingRegistration object on behalf of the organizer.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaCommunicationOnlineMeetingRegistrationRegistrant](Remove-MgBetaCommunicationOnlineMeetingRegistrationRegistrant.md)
-Delete navigation property registrants for communications
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaCommunicationOnlineMeetingTranscript](Remove-MgBetaCommunicationOnlineMeetingTranscript.md)
-Delete navigation property transcripts for communications
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaCommunicationPresence](Remove-MgBetaCommunicationPresence.md)
-Delete navigation property presences for communications
+{{ Fill in the Description }}
 
-### [Remove-MgBetaCommunicationPresence](Remove-MgBetaCommunicationPresence.md)
-Delete navigation property presences for communications
+### [Remove-MgBetaUserOnlineMeeting](Remove-MgBetaUserOnlineMeeting.md)
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserOnlineMeetingAttendanceReport](Remove-MgBetaUserOnlineMeetingAttendanceReport.md)
-Delete navigation property attendanceReports for users
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord](Remove-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord.md)
-Delete navigation property attendanceRecords for users
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserOnlineMeetingRecording](Remove-MgBetaUserOnlineMeetingRecording.md)
-Delete navigation property recordings for users
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserOnlineMeetingRegistration](Remove-MgBetaUserOnlineMeetingRegistration.md)
-Disable and delete the meetingRegistration of an onlineMeeting on behalf of the organizer.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserOnlineMeetingRegistrationCustomQuestion](Remove-MgBetaUserOnlineMeetingRegistrationCustomQuestion.md)
-Delete a custom registration question from a meetingRegistration object on behalf of the organizer.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserOnlineMeetingRegistrationRegistrant](Remove-MgBetaUserOnlineMeetingRegistrationRegistrant.md)
-Delete navigation property registrants for users
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserOnlineMeetingTranscript](Remove-MgBetaUserOnlineMeetingTranscript.md)
-Delete navigation property transcripts for users
+{{ Fill in the Description }}
 
-### [Remove-MgBetaUserOnlineMeetingTranscript](Remove-MgBetaUserOnlineMeetingTranscript.md)
-Delete navigation property transcripts for users
+### [Remove-MgBetaUserPresence](Remove-MgBetaUserPresence.md)
+{{ Fill in the Description }}
 
 ### [Rename-MgBetaCommunicationCallScreenSharingRole](Rename-MgBetaCommunicationCallScreenSharingRole.md)
-Allow applications to share screen content with the participants of a group call.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Set-MgBetaCommunicationOnlineMeetingAlternativeRecording](Set-MgBetaCommunicationOnlineMeetingAlternativeRecording.md)
-Update alternativeRecording for the navigation property onlineMeetings in communications
+{{ Fill in the Description }}
 
 ### [Set-MgBetaCommunicationOnlineMeetingAttendeeReport](Set-MgBetaCommunicationOnlineMeetingAttendeeReport.md)
-Update attendeeReport for the navigation property onlineMeetings in communications
+{{ Fill in the Description }}
 
 ### [Set-MgBetaCommunicationOnlineMeetingBroadcastRecording](Set-MgBetaCommunicationOnlineMeetingBroadcastRecording.md)
-Update broadcastRecording for the navigation property onlineMeetings in communications
+{{ Fill in the Description }}
 
 ### [Set-MgBetaCommunicationOnlineMeetingRecording](Set-MgBetaCommunicationOnlineMeetingRecording.md)
-Update recording for the navigation property onlineMeetings in communications
+{{ Fill in the Description }}
 
 ### [Set-MgBetaCommunicationOnlineMeetingRecordingContent](Set-MgBetaCommunicationOnlineMeetingRecordingContent.md)
-The content of the recording.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Set-MgBetaCommunicationOnlineMeetingTranscriptContent](Set-MgBetaCommunicationOnlineMeetingTranscriptContent.md)
-The content of the transcript.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Set-MgBetaCommunicationOnlineMeetingTranscriptMetadataContent](Set-MgBetaCommunicationOnlineMeetingTranscriptMetadataContent.md)
-The time-aligned metadata of the utterances in the transcript.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Set-MgBetaCommunicationPresence](Set-MgBetaCommunicationPresence.md)
-Set the availability and activity status in a presence session of an application for a user.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Set-MgBetaCommunicationPresenceStatusMessage](Set-MgBetaCommunicationPresenceStatusMessage.md)
-Set a presence status message for a user.
-An optional expiration date and time can be supplied.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Set-MgBetaCommunicationPresenceUserPreferredPresence](Set-MgBetaCommunicationPresenceUserPreferredPresence.md)
-Set the preferred availability and activity status for a user.
-If the preferred presence of a user is set, the user's presence is the preferred presence.
-Preferred presence takes effect only when there is at least one presence session of the user.
-Otherwise, the user's presence stays as Offline.
-A presence session can be created as a result of a successful setPresence operation, or if the user is signed in on a Teams client.
-Read more about presence sessions and their time-out and expiration.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Set-MgBetaUserOnlineMeetingAlternativeRecording](Set-MgBetaUserOnlineMeetingAlternativeRecording.md)
-Update alternativeRecording for the navigation property onlineMeetings in users
+{{ Fill in the Description }}
 
 ### [Set-MgBetaUserOnlineMeetingAttendeeReport](Set-MgBetaUserOnlineMeetingAttendeeReport.md)
-Update attendeeReport for the navigation property onlineMeetings in users
+{{ Fill in the Description }}
 
 ### [Set-MgBetaUserOnlineMeetingBroadcastRecording](Set-MgBetaUserOnlineMeetingBroadcastRecording.md)
-Update broadcastRecording for the navigation property onlineMeetings in users
+{{ Fill in the Description }}
 
 ### [Set-MgBetaUserOnlineMeetingRecording](Set-MgBetaUserOnlineMeetingRecording.md)
-Update recording for the navigation property onlineMeetings in users
+{{ Fill in the Description }}
 
 ### [Set-MgBetaUserOnlineMeetingRecordingContent](Set-MgBetaUserOnlineMeetingRecordingContent.md)
-The content of the recording.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Set-MgBetaUserOnlineMeetingTranscriptContent](Set-MgBetaUserOnlineMeetingTranscriptContent.md)
-The content of the transcript.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Set-MgBetaUserOnlineMeetingTranscriptMetadataContent](Set-MgBetaUserOnlineMeetingTranscriptMetadataContent.md)
-The time-aligned metadata of the utterances in the transcript.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Start-MgBetaCommunicationCallParticipantHoldMusic](Start-MgBetaCommunicationCallParticipantHoldMusic.md)
-Put a participant on hold and play music in the background.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Stop-MgBetaCommunicationCallMediaProcessing](Stop-MgBetaCommunicationCallMediaProcessing.md)
-Cancels processing for any in-progress media operations.
-Media operations refer to the IVR operations playPrompt and recordResponse, which are by default queued to process in order.
-The cancelMediaProcessing method cancels any operation that is in-process as well as operations that are queued.
-For example, this API can be used to clean up the IVR operation queue for a new media operation.
-However, it will not cancel a ubscribeToTone operation because it operates independent of any operation queue.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Stop-MgBetaCommunicationCallParticipantHoldMusic](Stop-MgBetaCommunicationCallParticipantHoldMusic.md)
-Reincorporate a participant previously put on hold to the call.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaCommunicationCallAudioRoutingGroup](Update-MgBetaCommunicationCallAudioRoutingGroup.md)
-Modify sources and receivers of an audioRoutingGroup.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaCommunicationCallContentSharingSession](Update-MgBetaCommunicationCallContentSharingSession.md)
-Update the navigation property contentSharingSessions in communications
+{{ Fill in the Description }}
 
 ### [Update-MgBetaCommunicationCallOperation](Update-MgBetaCommunicationCallOperation.md)
-Update the navigation property operations in communications
+{{ Fill in the Description }}
 
 ### [Update-MgBetaCommunicationCallParticipant](Update-MgBetaCommunicationCallParticipant.md)
-Update the navigation property participants in communications
+{{ Fill in the Description }}
 
 ### [Update-MgBetaCommunicationCallRecordingStatus](Update-MgBetaCommunicationCallRecordingStatus.md)
-Update the application's recording status associated with a call.
-This requires the use of the Teams policy-based recording solution.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaCommunicationCallRecordSession](Update-MgBetaCommunicationCallRecordSession.md)
-Update the navigation property sessions in communications
+{{ Fill in the Description }}
 
 ### [Update-MgBetaCommunicationOnlineMeeting](Update-MgBetaCommunicationOnlineMeeting.md)
-Update the navigation property onlineMeetings in communications
+{{ Fill in the Description }}
 
 ### [Update-MgBetaCommunicationOnlineMeetingAttendanceReport](Update-MgBetaCommunicationOnlineMeetingAttendanceReport.md)
-Update the navigation property attendanceReports in communications
+{{ Fill in the Description }}
 
 ### [Update-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord](Update-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord.md)
-Update the navigation property attendanceRecords in communications
+{{ Fill in the Description }}
 
 ### [Update-MgBetaCommunicationOnlineMeetingRecording](Update-MgBetaCommunicationOnlineMeetingRecording.md)
-Update the navigation property recordings in communications
+{{ Fill in the Description }}
 
 ### [Update-MgBetaCommunicationOnlineMeetingRegistration](Update-MgBetaCommunicationOnlineMeetingRegistration.md)
-Update the details of a meetingRegistration object assciated with an onlineMeeting on behalf of the organizer.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestion](Update-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestion.md)
-Update a custom registration question associated with a meetingRegistration object on behalf of the organizer.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaCommunicationOnlineMeetingRegistrationRegistrant](Update-MgBetaCommunicationOnlineMeetingRegistrationRegistrant.md)
-Update the navigation property registrants in communications
+{{ Fill in the Description }}
 
 ### [Update-MgBetaCommunicationOnlineMeetingTranscript](Update-MgBetaCommunicationOnlineMeetingTranscript.md)
-Update the navigation property transcripts in communications
+{{ Fill in the Description }}
 
 ### [Update-MgBetaCommunicationPresence](Update-MgBetaCommunicationPresence.md)
-Update the navigation property presences in communications
+{{ Fill in the Description }}
 
-### [Update-MgBetaCommunicationPresence](Update-MgBetaCommunicationPresence.md)
-Update the navigation property presences in communications
+### [Update-MgBetaUserOnlineMeeting](Update-MgBetaUserOnlineMeeting.md)
+{{ Fill in the Description }}
 
 ### [Update-MgBetaUserOnlineMeetingAttendanceReport](Update-MgBetaUserOnlineMeetingAttendanceReport.md)
-Update the navigation property attendanceReports in users
+{{ Fill in the Description }}
 
 ### [Update-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord](Update-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord.md)
-Update the navigation property attendanceRecords in users
+{{ Fill in the Description }}
 
 ### [Update-MgBetaUserOnlineMeetingRecording](Update-MgBetaUserOnlineMeetingRecording.md)
-Update the navigation property recordings in users
+{{ Fill in the Description }}
 
 ### [Update-MgBetaUserOnlineMeetingRegistration](Update-MgBetaUserOnlineMeetingRegistration.md)
-Update the details of a meetingRegistration object assciated with an onlineMeeting on behalf of the organizer.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaUserOnlineMeetingRegistrationCustomQuestion](Update-MgBetaUserOnlineMeetingRegistrationCustomQuestion.md)
-Update a custom registration question associated with a meetingRegistration object on behalf of the organizer.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaUserOnlineMeetingRegistrationRegistrant](Update-MgBetaUserOnlineMeetingRegistrationRegistrant.md)
-Update the navigation property registrants in users
+{{ Fill in the Description }}
 
 ### [Update-MgBetaUserOnlineMeetingTranscript](Update-MgBetaUserOnlineMeetingTranscript.md)
-Update the navigation property transcripts in users
+{{ Fill in the Description }}
 
-### [Update-MgBetaUserOnlineMeetingTranscript](Update-MgBetaUserOnlineMeetingTranscript.md)
-Update the navigation property transcripts in users
+### [Update-MgBetaUserPresence](Update-MgBetaUserPresence.md)
+{{ Fill in the Description }}
 

@@ -64,8 +64,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRoleManagement
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
 [Get-MgRoleManagement](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgRoleManagement?view=graph-powershell-1.0)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetarolemanagement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetarolemanagement)
+
 

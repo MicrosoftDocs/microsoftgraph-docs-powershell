@@ -22,8 +22,6 @@ Get-MgRoleManagementDirectory [-ExpandProperty <String[]>] [-Property <String[]>
 ## DESCRIPTION
 Get directory from roleManagement
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -66,9 +64,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRbacApplication
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
-
 [Get-MgBetaRoleManagementDirectory](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectory?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagementdirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagementdirectory)
+
 

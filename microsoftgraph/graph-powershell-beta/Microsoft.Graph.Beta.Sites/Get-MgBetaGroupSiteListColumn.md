@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitelistcolumn
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Get-MgBetaGroupSiteListColumn
@@ -36,6 +37,8 @@ Get-MgBetaGroupSiteListColumn -InputObject <ISitesIdentity> [-ExpandProperty <St
 
 ## DESCRIPTION
 The collection of field definitions for this list.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -335,5 +338,4 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgGroupSiteListColumn](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteListColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitelistcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitelistcolumn)
-
 

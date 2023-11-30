@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Notes-help.xml
 Module Name: Microsoft.Graph.Beta.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetagrouponenotenotebook
 schema: 2.0.0
+ms.prod: onenote
+ms.prod: onenote
 ---
 
 # Get-MgBetaGroupOnenoteNotebook
@@ -38,6 +40,8 @@ Get-MgBetaGroupOnenoteNotebook -InputObject <INotesIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 Retrieve the properties and relationships of a notebook object.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -268,5 +272,4 @@ INPUTOBJECT \<INotesIdentity\>: Identity Parameter
 [Get-MgGroupOnenoteNotebook](/powershell/module/Microsoft.Graph.Notes/Get-MgGroupOnenoteNotebook?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetagrouponenotenotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetagrouponenotenotebook)
-
 

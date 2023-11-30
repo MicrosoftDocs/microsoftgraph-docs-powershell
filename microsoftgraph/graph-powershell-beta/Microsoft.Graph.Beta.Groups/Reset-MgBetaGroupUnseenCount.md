@@ -8,8 +8,9 @@ schema: 2.0.0
 # Reset-MgBetaGroupUnseenCount
 
 ## SYNOPSIS
-Reset the unseenCount of all the posts that the current user has not seen since their last visit.
+Reset the unseenCount of all the posts that the current user hasn't seen since their last visit.
 Supported for Microsoft 365 groups only.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Reset-MgGroupUnseenCount](/powershell/module/Microsoft.Graph.Groups/Reset-MgGroupUnseenCount?view=graph-powershell-1.0)
@@ -28,8 +29,9 @@ Reset-MgBetaGroupUnseenCount -InputObject <IGroupsIdentity> [-PassThru] [-WhatIf
 ```
 
 ## DESCRIPTION
-Reset the unseenCount of all the posts that the current user has not seen since their last visit.
+Reset the unseenCount of all the posts that the current user hasn't seen since their last visit.
 Supported for Microsoft 365 groups only.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Reset-MgBetaGroupUnseenCount Cmdlet

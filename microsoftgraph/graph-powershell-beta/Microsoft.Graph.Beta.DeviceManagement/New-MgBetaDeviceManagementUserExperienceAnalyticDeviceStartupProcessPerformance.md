@@ -78,7 +78,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -111,7 +111,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -182,7 +182,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -228,24 +228,40 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcessPerformance
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcessPerformance>`: The user experience analytics device startup process performance.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[DeviceCount <Int64?>]`: The count of devices which initiated this process on startup. Supports: $filter, $select, $OrderBy. Read-only.
-  - `[MedianImpactInMS <Int64?>]`: The median impact of startup process on device boot time in milliseconds. Supports: $filter, $select, $OrderBy. Read-only.
-  - `[ProcessName <String>]`: The name of the startup process. Examples: outlook, excel. Supports: $select, $OrderBy. Read-only.
-  - `[ProductName <String>]`: The product name of the startup process. Examples: Microsoft Outlook, Microsoft Excel. Supports: $select, $OrderBy. Read-only.
-  - `[Publisher <String>]`: The publisher of the startup process. Examples: Microsoft Corporation, Contoso Corp. Supports: $select, $OrderBy. Read-only.
-  - `[TotalImpactInMS <Int64?>]`: The total impact of startup process on device boot time in milliseconds. Supports: $filter, $select, $OrderBy. Read-only.
+BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcessPerformance\>: The user experience analytics device startup process performance.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[DeviceCount \<Int64?\>\]: The count of devices which initiated this process on startup.
+Supports: $filter, $select, $OrderBy.
+Read-only.
+  \[MedianImpactInMS \<Int64?\>\]: The median impact of startup process on device boot time in milliseconds.
+Supports: $filter, $select, $OrderBy.
+Read-only.
+  \[ProcessName \<String\>\]: The name of the startup process.
+Examples: outlook, excel.
+Supports: $select, $OrderBy.
+Read-only.
+  \[ProductName \<String\>\]: The product name of the startup process.
+Examples: Microsoft Outlook, Microsoft Excel.
+Supports: $select, $OrderBy.
+Read-only.
+  \[Publisher \<String\>\]: The publisher of the startup process.
+Examples: Microsoft Corporation, Contoso Corp.
+Supports: $select, $OrderBy.
+Read-only.
+  \[TotalImpactInMS \<Int64?\>\]: The total impact of startup process on device boot time in milliseconds.
+Supports: $filter, $select, $OrderBy.
+Read-only.
 
 ## RELATED LINKS
 [New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance?view=graph-powershell-1.0)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticdevicestartupprocessperformance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticdevicestartupprocessperformance)
+
 

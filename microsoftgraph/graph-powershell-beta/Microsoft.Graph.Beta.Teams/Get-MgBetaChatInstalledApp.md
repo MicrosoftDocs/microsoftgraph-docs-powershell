@@ -3,13 +3,15 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatinstalledapp
 schema: 2.0.0
+ms.prod: microsoft-teams
+ms.prod: microsoft-teams
 ---
 
 # Get-MgBetaChatInstalledApp
 
 ## SYNOPSIS
 Get an app installed in a chat.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgChatInstalledApp](/powershell/module/Microsoft.Graph.Teams/Get-MgChatInstalledApp?view=graph-powershell-1.0)
@@ -37,7 +39,7 @@ Get-MgBetaChatInstalledApp -InputObject <ITeamsIdentity> [-ExpandProperty <Strin
 
 ## DESCRIPTION
 Get an app installed in a chat.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Get all the apps installed in the specified chat

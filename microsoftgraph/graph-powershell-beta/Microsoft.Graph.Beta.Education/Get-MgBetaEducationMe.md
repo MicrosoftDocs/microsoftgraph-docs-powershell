@@ -64,8 +64,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationUser
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
 [Get-MgEducationMe](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMe?view=graph-powershell-1.0)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationme](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationme)
+
 

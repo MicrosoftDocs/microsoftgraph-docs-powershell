@@ -13,12 +13,6 @@ Invoke function delta
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserDelta?view=graph-powershell-1.0)
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserDelta?view=graph-powershell-1.0)
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserDelta?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ```
@@ -50,7 +44,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -96,7 +90,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -156,7 +150,7 @@ Aliases: Limit
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -171,7 +165,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -186,11 +180,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUser
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
 [Get-MgUserDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserDelta?view=graph-powershell-1.0)
 
-[Get-MgUserDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserDelta?view=graph-powershell-1.0)
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserdelta)
 
-[Get-MgUserDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserDelta?view=graph-powershell-1.0)

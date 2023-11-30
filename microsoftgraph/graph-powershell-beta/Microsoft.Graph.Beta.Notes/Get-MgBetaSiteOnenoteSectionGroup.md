@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Notes-help.xml
 Module Name: Microsoft.Graph.Beta.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasiteonenotesectiongroup
 schema: 2.0.0
+ms.prod: onenote
+ms.prod: onenote
 ---
 
 # Get-MgBetaSiteOnenoteSectionGroup
@@ -45,6 +47,8 @@ Get-MgBetaSiteOnenoteSectionGroup -InputObject <INotesIdentity> [-ExpandProperty
 ## DESCRIPTION
 Retrieve the properties and relationships of a sectionGroup object.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -275,5 +279,4 @@ INPUTOBJECT \<INotesIdentity\>: Identity Parameter
 [Get-MgSiteOnenoteSectionGroup](/powershell/module/Microsoft.Graph.Notes/Get-MgSiteOnenoteSectionGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasiteonenotesectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasiteonenotesectiongroup)
-
 

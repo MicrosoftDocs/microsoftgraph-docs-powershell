@@ -65,10 +65,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.Int32
 ## NOTES
 
-ALIASES
-
-Get-MgDeviceAppMgtMobileAppCountAsMicrosoftStoreGraphFPreBusinessApp
-
 ## RELATED LINKS
 [Get-MgBetaDeviceAppManagementMobileAppCountAsMicrosoftStoreForBusinessApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppCountAsMicrosoftStoreForBusinessApp?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappcountasmicrosoftstoreforbusinessapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappcountasmicrosoftstoreforbusinessapp)
+
 

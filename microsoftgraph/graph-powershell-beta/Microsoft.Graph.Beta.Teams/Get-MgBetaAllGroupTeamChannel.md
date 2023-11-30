@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaallgroupteamchannel
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # Get-MgBetaAllGroupTeamChannel
@@ -36,6 +37,8 @@ Get-MgBetaAllGroupTeamChannel -InputObject <ITeamsIdentity> [-ExpandProperty <St
 
 ## DESCRIPTION
 List of channels either hosted in or shared with the team (incoming channels).
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -295,5 +298,4 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Get-MgAllGroupTeamChannel](/powershell/module/Microsoft.Graph.Teams/Get-MgAllGroupTeamChannel?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaallgroupteamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaallgroupteamchannel)
-
 

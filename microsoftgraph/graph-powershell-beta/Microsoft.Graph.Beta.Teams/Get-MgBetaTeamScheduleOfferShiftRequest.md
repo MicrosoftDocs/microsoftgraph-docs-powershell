@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Retrieve the properties and relationships of an offerShiftRequest object.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamScheduleOfferShiftRequest?view=graph-powershell-1.0)
@@ -37,7 +37,7 @@ Get-MgBetaTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity> [-ExpandPr
 
 ## DESCRIPTION
 Retrieve the properties and relationships of an offerShiftRequest object.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

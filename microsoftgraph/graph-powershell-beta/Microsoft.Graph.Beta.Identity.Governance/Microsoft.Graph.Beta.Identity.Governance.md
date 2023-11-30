@@ -230,37 +230,19 @@ Locale: en-US
 ### [Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsor](Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsor.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorById](Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorById.md)
-{{ Fill in the Description }}
-
 ### [Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorByRef](Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorByRef.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorCount](Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorCount.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorDelta](Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorDelta.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorUserOwnedObject](Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorUserOwnedObject.md)
-{{ Fill in the Description }}
-
 ### [Get-MgBetaEntitlementManagementConnectedOrganizationInternalSponsor](Get-MgBetaEntitlementManagementConnectedOrganizationInternalSponsor.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorById](Get-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorById.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef](Get-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorCount](Get-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorCount.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorDelta](Get-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorDelta.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorUserOwnedObject](Get-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorUserOwnedObject.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaEntitlementManagementSetting](Get-MgBetaEntitlementManagementSetting.md)
@@ -431,6 +413,12 @@ Locale: en-US
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowCreatedByMailboxSetting](Get-MgBetaIdentityGovernanceLifecycleWorkflowCreatedByMailboxSetting.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowCreatedByServiceProvisioningError](Get-MgBetaIdentityGovernanceLifecycleWorkflowCreatedByServiceProvisioningError.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowCreatedByServiceProvisioningErrorCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowCreatedByServiceProvisioningErrorCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension](Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension.md)
 {{ Fill in the Description }}
 
@@ -443,10 +431,22 @@ Locale: en-US
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCreatedByMailboxSetting](Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCreatedByMailboxSetting.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCreatedByServiceProvisioningError](Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCreatedByServiceProvisioningError.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCreatedByServiceProvisioningErrorCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCreatedByServiceProvisioningErrorCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionLastModifiedBy](Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionLastModifiedBy.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionLastModifiedByMailboxSetting](Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionLastModifiedByMailboxSetting.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionLastModifiedByServiceProvisioningError](Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionLastModifiedByServiceProvisioningError.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionLastModifiedByServiceProvisioningErrorCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionLastModifiedByServiceProvisioningErrorCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItem](Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItem.md)
@@ -494,6 +494,12 @@ Locale: en-US
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowLastModifiedByMailboxSetting](Get-MgBetaIdentityGovernanceLifecycleWorkflowLastModifiedByMailboxSetting.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowLastModifiedByServiceProvisioningError](Get-MgBetaIdentityGovernanceLifecycleWorkflowLastModifiedByServiceProvisioningError.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowLastModifiedByServiceProvisioningErrorCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowLastModifiedByServiceProvisioningErrorCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowRun](Get-MgBetaIdentityGovernanceLifecycleWorkflowRun.md)
 {{ Fill in the Description }}
 
@@ -512,6 +518,12 @@ Locale: en-US
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowRunTaskProcessingResultSubjectMailboxSetting](Get-MgBetaIdentityGovernanceLifecycleWorkflowRunTaskProcessingResultSubjectMailboxSetting.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowRunTaskProcessingResultSubjectServiceProvisioningError](Get-MgBetaIdentityGovernanceLifecycleWorkflowRunTaskProcessingResultSubjectServiceProvisioningError.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowRunTaskProcessingResultSubjectServiceProvisioningErrorCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowRunTaskProcessingResultSubjectServiceProvisioningErrorCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowRunTaskProcessingResultTask](Get-MgBetaIdentityGovernanceLifecycleWorkflowRunTaskProcessingResultTask.md)
 {{ Fill in the Description }}
 
@@ -525,6 +537,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResultSubjectMailboxSetting](Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResultSubjectMailboxSetting.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResultSubjectServiceProvisioningError](Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResultSubjectServiceProvisioningError.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResultSubjectServiceProvisioningErrorCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResultSubjectServiceProvisioningErrorCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResultTaskProcessingResult](Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResultTaskProcessingResult.md)
@@ -557,6 +575,12 @@ Locale: en-US
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResultSubjectMailboxSetting](Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResultSubjectMailboxSetting.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResultSubjectServiceProvisioningError](Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResultSubjectServiceProvisioningError.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResultSubjectServiceProvisioningErrorCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResultSubjectServiceProvisioningErrorCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResultTask](Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResultTask.md)
 {{ Fill in the Description }}
 
@@ -582,6 +606,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResultSubjectMailboxSetting](Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResultSubjectMailboxSetting.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResultSubjectServiceProvisioningError](Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResultSubjectServiceProvisioningError.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResultSubjectServiceProvisioningErrorCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResultSubjectServiceProvisioningErrorCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResultTask](Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResultTask.md)
@@ -611,6 +641,12 @@ Locale: en-US
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResultSubjectMailboxSetting](Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResultSubjectMailboxSetting.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResultSubjectServiceProvisioningError](Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResultSubjectServiceProvisioningError.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResultSubjectServiceProvisioningErrorCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResultSubjectServiceProvisioningErrorCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResultTask](Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResultTask.md)
 {{ Fill in the Description }}
 
@@ -624,6 +660,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultSubjectMailboxSetting](Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultSubjectMailboxSetting.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultSubjectServiceProvisioningError](Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultSubjectServiceProvisioningError.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultSubjectServiceProvisioningErrorCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultSubjectServiceProvisioningErrorCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultTaskProcessingResult](Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultTaskProcessingResult.md)
@@ -641,10 +683,22 @@ Locale: en-US
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionCreatedByMailboxSetting](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionCreatedByMailboxSetting.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionCreatedByServiceProvisioningError](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionCreatedByServiceProvisioningError.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionCreatedByServiceProvisioningErrorCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionCreatedByServiceProvisioningErrorCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionLastModifiedBy](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionLastModifiedBy.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionLastModifiedByMailboxSetting](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionLastModifiedByMailboxSetting.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionLastModifiedByServiceProvisioningError](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionLastModifiedByServiceProvisioningError.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionLastModifiedByServiceProvisioningErrorCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionLastModifiedByServiceProvisioningErrorCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask.md)
@@ -665,7 +719,79 @@ Locale: en-US
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultSubjectMailboxSetting](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultSubjectMailboxSetting.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultSubjectServiceProvisioningError](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultSubjectServiceProvisioningError.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultSubjectServiceProvisioningErrorCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultSubjectServiceProvisioningErrorCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultTask](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultTask.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernancePermissionAnalytic](Get-MgBetaIdentityGovernancePermissionAnalytic.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernancePermissionAnalyticAw](Get-MgBetaIdentityGovernancePermissionAnalyticAw.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernancePermissionAnalyticAwFinding](Get-MgBetaIdentityGovernancePermissionAnalyticAwFinding.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernancePermissionAnalyticAwFindingCount](Get-MgBetaIdentityGovernancePermissionAnalyticAwFindingCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernancePermissionAnalyticAwPermissionCreepIndexDistribution](Get-MgBetaIdentityGovernancePermissionAnalyticAwPermissionCreepIndexDistribution.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernancePermissionAnalyticAwPermissionCreepIndexDistributionAuthorizationSystem](Get-MgBetaIdentityGovernancePermissionAnalyticAwPermissionCreepIndexDistributionAuthorizationSystem.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernancePermissionAnalyticAwPermissionCreepIndexDistributionCount](Get-MgBetaIdentityGovernancePermissionAnalyticAwPermissionCreepIndexDistributionCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernancePermissionAnalyticAzure](Get-MgBetaIdentityGovernancePermissionAnalyticAzure.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernancePermissionAnalyticAzureFinding](Get-MgBetaIdentityGovernancePermissionAnalyticAzureFinding.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernancePermissionAnalyticAzureFindingCount](Get-MgBetaIdentityGovernancePermissionAnalyticAzureFindingCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernancePermissionAnalyticAzurePermissionCreepIndexDistribution](Get-MgBetaIdentityGovernancePermissionAnalyticAzurePermissionCreepIndexDistribution.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernancePermissionAnalyticAzurePermissionCreepIndexDistributionAuthorizationSystem](Get-MgBetaIdentityGovernancePermissionAnalyticAzurePermissionCreepIndexDistributionAuthorizationSystem.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernancePermissionAnalyticAzurePermissionCreepIndexDistributionCount](Get-MgBetaIdentityGovernancePermissionAnalyticAzurePermissionCreepIndexDistributionCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernancePermissionAnalyticGcp](Get-MgBetaIdentityGovernancePermissionAnalyticGcp.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernancePermissionAnalyticGcpFinding](Get-MgBetaIdentityGovernancePermissionAnalyticGcpFinding.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernancePermissionAnalyticGcpFindingCount](Get-MgBetaIdentityGovernancePermissionAnalyticGcpFindingCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernancePermissionAnalyticGcpPermissionCreepIndexDistribution](Get-MgBetaIdentityGovernancePermissionAnalyticGcpPermissionCreepIndexDistribution.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernancePermissionAnalyticGcpPermissionCreepIndexDistributionAuthorizationSystem](Get-MgBetaIdentityGovernancePermissionAnalyticGcpPermissionCreepIndexDistributionAuthorizationSystem.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernancePermissionAnalyticGcpPermissionCreepIndexDistributionCount](Get-MgBetaIdentityGovernancePermissionAnalyticGcpPermissionCreepIndexDistributionCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernancePermissionManagement](Get-MgBetaIdentityGovernancePermissionManagement.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange](Get-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernancePermissionManagementPermissionRequestChangeCount](Get-MgBetaIdentityGovernancePermissionManagementPermissionRequestChangeCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaIdentityGovernancePrivilegedAccess](Get-MgBetaIdentityGovernancePrivilegedAccess.md)
@@ -698,6 +824,12 @@ Locale: en-US
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleGroup](Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleGroup.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleGroupServiceProvisioningError](Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleGroupServiceProvisioningError.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleGroupServiceProvisioningErrorCount](Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleGroupServiceProvisioningErrorCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance](Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance.md)
 {{ Fill in the Description }}
 
@@ -708,6 +840,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstanceGroup](Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstanceGroup.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstanceGroupServiceProvisioningError](Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstanceGroupServiceProvisioningError.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstanceGroupServiceProvisioningErrorCount](Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstanceGroupServiceProvisioningErrorCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstancePrincipal](Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstancePrincipal.md)
@@ -728,6 +866,12 @@ Locale: en-US
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestGroup](Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestGroup.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestGroupServiceProvisioningError](Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestGroupServiceProvisioningError.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestGroupServiceProvisioningErrorCount](Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestGroupServiceProvisioningErrorCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestPrincipal](Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestPrincipal.md)
 {{ Fill in the Description }}
 
@@ -743,6 +887,12 @@ Locale: en-US
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleGroup](Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleGroup.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleGroupServiceProvisioningError](Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleGroupServiceProvisioningError.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleGroupServiceProvisioningErrorCount](Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleGroupServiceProvisioningErrorCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance](Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance.md)
 {{ Fill in the Description }}
 
@@ -750,6 +900,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceGroup](Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceGroup.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceGroupServiceProvisioningError](Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceGroupServiceProvisioningError.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceGroupServiceProvisioningErrorCount](Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceGroupServiceProvisioningErrorCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstancePrincipal](Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstancePrincipal.md)
@@ -765,6 +921,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestGroup](Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestGroup.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestGroupServiceProvisioningError](Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestGroupServiceProvisioningError.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestGroupServiceProvisioningErrorCount](Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestGroupServiceProvisioningErrorCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestPrincipal](Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestPrincipal.md)
@@ -2180,6 +2342,30 @@ Locale: en-US
 ### [New-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask](New-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask.md)
 {{ Fill in the Description }}
 
+### [New-MgBetaIdentityGovernancePermissionAnalyticAwFinding](New-MgBetaIdentityGovernancePermissionAnalyticAwFinding.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaIdentityGovernancePermissionAnalyticAwPermissionCreepIndexDistribution](New-MgBetaIdentityGovernancePermissionAnalyticAwPermissionCreepIndexDistribution.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaIdentityGovernancePermissionAnalyticAzureFinding](New-MgBetaIdentityGovernancePermissionAnalyticAzureFinding.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaIdentityGovernancePermissionAnalyticAzurePermissionCreepIndexDistribution](New-MgBetaIdentityGovernancePermissionAnalyticAzurePermissionCreepIndexDistribution.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaIdentityGovernancePermissionAnalyticGcpFinding](New-MgBetaIdentityGovernancePermissionAnalyticGcpFinding.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaIdentityGovernancePermissionAnalyticGcpPermissionCreepIndexDistribution](New-MgBetaIdentityGovernancePermissionAnalyticGcpPermissionCreepIndexDistribution.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange](New-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaIdentityGovernancePermissionManagementScheduledPermissionRequest](New-MgBetaIdentityGovernancePermissionManagementScheduledPermissionRequest.md)
+{{ Fill in the Description }}
+
 ### [New-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentApproval](New-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentApproval.md)
 {{ Fill in the Description }}
 
@@ -2628,6 +2814,42 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask](Remove-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaIdentityGovernancePermissionAnalytic](Remove-MgBetaIdentityGovernancePermissionAnalytic.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaIdentityGovernancePermissionAnalyticAw](Remove-MgBetaIdentityGovernancePermissionAnalyticAw.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaIdentityGovernancePermissionAnalyticAwFinding](Remove-MgBetaIdentityGovernancePermissionAnalyticAwFinding.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaIdentityGovernancePermissionAnalyticAwPermissionCreepIndexDistribution](Remove-MgBetaIdentityGovernancePermissionAnalyticAwPermissionCreepIndexDistribution.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaIdentityGovernancePermissionAnalyticAzure](Remove-MgBetaIdentityGovernancePermissionAnalyticAzure.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaIdentityGovernancePermissionAnalyticAzureFinding](Remove-MgBetaIdentityGovernancePermissionAnalyticAzureFinding.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaIdentityGovernancePermissionAnalyticAzurePermissionCreepIndexDistribution](Remove-MgBetaIdentityGovernancePermissionAnalyticAzurePermissionCreepIndexDistribution.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaIdentityGovernancePermissionAnalyticGcp](Remove-MgBetaIdentityGovernancePermissionAnalyticGcp.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaIdentityGovernancePermissionAnalyticGcpFinding](Remove-MgBetaIdentityGovernancePermissionAnalyticGcpFinding.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaIdentityGovernancePermissionAnalyticGcpPermissionCreepIndexDistribution](Remove-MgBetaIdentityGovernancePermissionAnalyticGcpPermissionCreepIndexDistribution.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaIdentityGovernancePermissionManagement](Remove-MgBetaIdentityGovernancePermissionManagement.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange](Remove-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaIdentityGovernancePrivilegedAccess](Remove-MgBetaIdentityGovernancePrivilegedAccess.md)
@@ -3101,12 +3323,6 @@ Locale: en-US
 ### [Stop-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](Stop-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequest.md)
 {{ Fill in the Description }}
 
-### [Test-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorProperty](Test-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorProperty.md)
-{{ Fill in the Description }}
-
-### [Test-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorProperty](Test-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorProperty.md)
-{{ Fill in the Description }}
-
 ### [Update-MgBetaAccessReview](Update-MgBetaAccessReview.md)
 {{ Fill in the Description }}
 
@@ -3333,6 +3549,42 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultSubjectMailboxSetting](Update-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultSubjectMailboxSetting.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaIdentityGovernancePermissionAnalytic](Update-MgBetaIdentityGovernancePermissionAnalytic.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaIdentityGovernancePermissionAnalyticAw](Update-MgBetaIdentityGovernancePermissionAnalyticAw.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaIdentityGovernancePermissionAnalyticAwFinding](Update-MgBetaIdentityGovernancePermissionAnalyticAwFinding.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaIdentityGovernancePermissionAnalyticAwPermissionCreepIndexDistribution](Update-MgBetaIdentityGovernancePermissionAnalyticAwPermissionCreepIndexDistribution.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaIdentityGovernancePermissionAnalyticAzure](Update-MgBetaIdentityGovernancePermissionAnalyticAzure.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaIdentityGovernancePermissionAnalyticAzureFinding](Update-MgBetaIdentityGovernancePermissionAnalyticAzureFinding.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaIdentityGovernancePermissionAnalyticAzurePermissionCreepIndexDistribution](Update-MgBetaIdentityGovernancePermissionAnalyticAzurePermissionCreepIndexDistribution.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaIdentityGovernancePermissionAnalyticGcp](Update-MgBetaIdentityGovernancePermissionAnalyticGcp.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaIdentityGovernancePermissionAnalyticGcpFinding](Update-MgBetaIdentityGovernancePermissionAnalyticGcpFinding.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaIdentityGovernancePermissionAnalyticGcpPermissionCreepIndexDistribution](Update-MgBetaIdentityGovernancePermissionAnalyticGcpPermissionCreepIndexDistribution.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaIdentityGovernancePermissionManagement](Update-MgBetaIdentityGovernancePermissionManagement.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange](Update-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange.md)
 {{ Fill in the Description }}
 
 ### [Update-MgBetaIdentityGovernancePrivilegedAccess](Update-MgBetaIdentityGovernancePrivilegedAccess.md)

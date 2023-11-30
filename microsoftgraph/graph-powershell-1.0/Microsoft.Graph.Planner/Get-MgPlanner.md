@@ -73,8 +73,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlanner
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
-
 [Get-MgBetaPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlanner?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplanner](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplanner)
+

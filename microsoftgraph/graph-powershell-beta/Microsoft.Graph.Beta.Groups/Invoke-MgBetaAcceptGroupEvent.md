@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaacceptgroupevent
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Invoke-MgBetaAcceptGroupEvent
 
 ## SYNOPSIS
 Accept the specified event in a user calendar.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgAcceptGroupEvent](/powershell/module/Microsoft.Graph.Groups/Invoke-MgAcceptGroupEvent?view=graph-powershell-1.0)
@@ -43,6 +45,7 @@ Invoke-MgBetaAcceptGroupEvent -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Accept the specified event in a user calendar.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

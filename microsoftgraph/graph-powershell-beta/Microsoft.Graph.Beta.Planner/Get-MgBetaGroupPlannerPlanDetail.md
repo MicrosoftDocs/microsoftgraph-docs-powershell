@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetagroupplannerplandetail
 schema: 2.0.0
+ms.prod: planner
 ---
 
 # Get-MgBetaGroupPlannerPlanDetail
@@ -31,6 +32,8 @@ Get-MgBetaGroupPlannerPlanDetail -InputObject <IPlannerIdentity> [-ExpandPropert
 ## DESCRIPTION
 Retrieve the properties and relationships of a plannerPlanDetails object.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -139,5 +142,4 @@ INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
 [Get-MgGroupPlannerPlanDetail](/powershell/module/Microsoft.Graph.Planner/Get-MgGroupPlannerPlanDetail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetagroupplannerplandetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetagroupplannerplandetail)
-
 

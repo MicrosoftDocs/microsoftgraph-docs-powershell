@@ -28,8 +28,6 @@ New-MgGroupSettingTemplateGroupSettingTemplate -BodyParameter <IMicrosoftGraphGr
 ## DESCRIPTION
 Add new entity to groupSettingTemplates
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -183,30 +181,34 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupSettingTemplate
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+BODYPARAMETER \<IMicrosoftGraphGroupSettingTemplate\>: groupSettingTemplate
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
+Always null when the object hasn't been deleted.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[Description \<String\>\]: Description of the template.
+  \[DisplayName \<String\>\]: Display name of the template.
+The template named Group.Unified can be used to configure tenant-wide Microsoft 365 group settings, while the template named Group.Unified.Guest can be used to configure group-specific settings.
+  \[Values \<IMicrosoftGraphSettingTemplateValue\[\]\>\]: Collection of settingTemplateValues that list the set of available settings, defaults and types that make up this template.
+    \[DefaultValue \<String\>\]: Default value for the setting.
+    \[Description \<String\>\]: Description of the setting.
+    \[Name \<String\>\]: Name of the setting.
+    \[Type \<String\>\]: Type of the setting.
 
-`BODYPARAMETER <IMicrosoftGraphGroupSettingTemplate>`: groupSettingTemplate
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Description <String>]`: Description of the template.
-  - `[DisplayName <String>]`: Display name of the template. The template named Group.Unified can be used to configure tenant-wide Microsoft 365 group settings, while the template named Group.Unified.Guest can be used to configure group-specific settings.
-  - `[Values <IMicrosoftGraphSettingTemplateValue[]>]`: Collection of settingTemplateValues that list the set of available settings, defaults and types that make up this template.
-    - `[DefaultValue <String>]`: Default value for the setting.
-    - `[Description <String>]`: Description of the setting.
-    - `[Name <String>]`: Name of the setting.
-    - `[Type <String>]`: Type of the setting.
-
-`VALUES <IMicrosoftGraphSettingTemplateValue[]>`: Collection of settingTemplateValues that list the set of available settings, defaults and types that make up this template.
-  - `[DefaultValue <String>]`: Default value for the setting.
-  - `[Description <String>]`: Description of the setting.
-  - `[Name <String>]`: Name of the setting.
-  - `[Type <String>]`: Type of the setting.
+VALUES \<IMicrosoftGraphSettingTemplateValue\[\]\>: Collection of settingTemplateValues that list the set of available settings, defaults and types that make up this template.
+  \[DefaultValue \<String\>\]: Default value for the setting.
+  \[Description \<String\>\]: Description of the setting.
+  \[Name \<String\>\]: Name of the setting.
+  \[Type \<String\>\]: Type of the setting.
 
 ## RELATED LINKS
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupsettingtemplategroupsettingtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupsettingtemplategroupsettingtemplate)
+
+

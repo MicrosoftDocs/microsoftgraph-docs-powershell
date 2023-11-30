@@ -31,7 +31,7 @@ function Start-Copy {
     git config --global user.email "timwamalwa@gmail.com"
     git config --global user.name "Timothy Wamalwa"
     git add .
-    git commit -m "Corrected titles" 
+    git commit -m "Corrected titles descriptions and examples" 
 }
 function Get-FilesByProfile{
  Param(
@@ -104,6 +104,7 @@ function Import-Descriptions {
         }
         $End++  
     }
+    Write-Host $File
     Get-ExistingDescriptions -Content $Content -File $File  -start 0 -end $End -NoOfExamples $NoOfExamples
     if(Test-Path $File){
     $TitleCount = 1
@@ -123,11 +124,11 @@ function Import-Descriptions {
         $Extracted = $Matches[0]
         $FinalOutput = "## EXAMPLES`r`n$RetainedContent`r`n## PARAMETERS"
         $text = $DestinationContent.ToString()
-        if(-not($Extracted.Contains("``````powershell"))){
-            $text = $text.Replace($Extracted, "## PARAMETERS") 
-            Write-Host "Does not have snippet"
-        }else{
+        if(($Extracted.Contains("``````powershell")) -or ($Extracted.Contains("### EXAMPLE"))){
             $text = $text.Replace($Extracted, $FinalOutput)
+        }else{
+            $text = $text.Replace($Extracted, "## PARAMETERS")
+            Write-Host "Does not have snippet"
         }
           $text | Out-File $File -Encoding UTF8
      }

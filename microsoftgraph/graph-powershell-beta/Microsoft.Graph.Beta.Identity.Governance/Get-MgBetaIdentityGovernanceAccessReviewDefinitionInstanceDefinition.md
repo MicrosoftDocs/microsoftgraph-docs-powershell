@@ -8,8 +8,8 @@ schema: 2.0.0
 # Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDefinition
 
 ## SYNOPSIS
-There is exactly one accessReviewScheduleDefinition associated with each instance.
-It is the parent schedule for the instance, where instances are created for each recurrence of a review definition and each group selected to review by the definition.
+There's exactly one accessReviewScheduleDefinition associated with each instance.
+It's the parent schedule for the instance, where instances are created for each recurrence of a review definition and each group selected to review by the definition.
 
 ## SYNTAX
 
@@ -27,8 +27,8 @@ Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDefinition -InputObjec
 ```
 
 ## DESCRIPTION
-There is exactly one accessReviewScheduleDefinition associated with each instance.
-It is the parent schedule for the instance, where instances are created for each recurrence of a review definition and each group selected to review by the definition.
+There's exactly one accessReviewScheduleDefinition associated with each instance.
+It's the parent schedule for the instance, where instances are created for each recurrence of a review definition and each group selected to review by the definition.
 
 ## PARAMETERS
 
@@ -165,6 +165,7 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[CustomTaskExtensionId \<String\>\]: The unique identifier of customTaskExtension
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[EndDateTime \<DateTime?\>\]: Usage: endDateTime={endDateTime}
+  \[FindingId \<String\>\]: The unique identifier of finding
   \[GovernanceInsightId \<String\>\]: The unique identifier of governanceInsight
   \[GovernanceResourceId \<String\>\]: The unique identifier of governanceResource
   \[GovernanceRoleAssignmentId \<String\>\]: The unique identifier of governanceRoleAssignment
@@ -175,6 +176,8 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[IncompatibleAccessPackageId \<String\>\]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   \[LongRunningOperationId \<String\>\]: The unique identifier of longRunningOperation
   \[On \<String\>\]: Usage: on='{on}'
+  \[PermissionsCreepIndexDistributionId \<String\>\]: The unique identifier of permissionsCreepIndexDistribution
+  \[PermissionsRequestChangeId \<String\>\]: The unique identifier of permissionsRequestChange
   \[PrivilegedAccessGroupAssignmentScheduleId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentSchedule
   \[PrivilegedAccessGroupAssignmentScheduleInstanceId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentScheduleInstance
   \[PrivilegedAccessGroupAssignmentScheduleRequestId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentScheduleRequest

@@ -1,550 +1,469 @@
 ---
 Module Name: Microsoft.Graph.Beta.Compliance
-Module Guid: 54843944-5097-491b-865b-0dc58d848a9c
-Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance
-Help Version: 1.0.0.0
+Module Guid: c9a78269-1b8d-4e3e-aa56-9acda0555753
+Download Help Link: {{ Update Download Link }}
+Help Version: {{ Please enter version of help manually (X.X.X.X) format }}
 Locale: en-US
 ---
 
 # Microsoft.Graph.Beta.Compliance Module
 ## Description
-Microsoft Graph PowerShell Cmdlets
+{{ Fill in the Description }}
 
 ## Microsoft.Graph.Beta.Compliance Cmdlets
 ### [Add-MgBetaComplianceEdiscoveryCaseCustodianHold](Add-MgBetaComplianceEdiscoveryCaseCustodianHold.md)
-Invoke action applyHold
+{{ Fill in the Description }}
 
 ### [Add-MgBetaComplianceEdiscoveryCaseNoncustodialDataSourceHold](Add-MgBetaComplianceEdiscoveryCaseNoncustodialDataSourceHold.md)
-Invoke action applyHold
+{{ Fill in the Description }}
 
 ### [Add-MgBetaComplianceEdiscoveryCaseReviewSetQueryTag](Add-MgBetaComplianceEdiscoveryCaseReviewSetQueryTag.md)
-Apply tags to documents that match the specified reviewSetQuery.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Add-MgBetaComplianceEdiscoveryCaseReviewSetToReviewSet](Add-MgBetaComplianceEdiscoveryCaseReviewSetToReviewSet.md)
-Start the process of adding a collection from Microsoft 365 services to a review set.
-After the operation is created, you can get the status of the operation by retrieving the Location parameter from the response headers.
-The location provides a URL that will return a caseExportOperation.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Clear-MgBetaComplianceEdiscoveryCaseSourceCollectionData](Clear-MgBetaComplianceEdiscoveryCaseSourceCollectionData.md)
-Permanently delete Microsoft Teams messages contained in a sourceCollection.
-You can collect and purge the following categories of Teams content:- Teams 1:1 chats - Chat messages, posts, and attachments shared in a Teams conversation between two people.
-Teams 1:1 chats are also called *conversations*.- Teams group chats - Chat messages, posts, and attachments shared in a Teams conversation between three or more people.
-Also called *1:N* chats or *group conversations*.- Teams channels - Chat messages, posts, replies, and attachments shared in a standard Teams channel.- Private channels - Message posts, replies, and attachments shared in a private Teams channel.- Shared channels - Message posts, replies, and attachments shared in a shared Teams channel.
-For more information about purging Teams messages, see:- eDiscovery solution series: Data spillage scenario - Search and purge- Advanced eDiscovery workflow for content in Microsoft Teams  This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Close-MgBetaComplianceEdiscoveryCase](Close-MgBetaComplianceEdiscoveryCase.md)
-Close an eDiscovery case.
-For details, see Close a case.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Export-MgBetaComplianceEdiscoveryCaseReviewSet](Export-MgBetaComplianceEdiscoveryCaseReviewSet.md)
-Initiate an export from a reviewSet.
-For details, see Export documents from a review set in Advanced eDiscovery.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaCompliance](Get-MgBetaCompliance.md)
-Get compliance
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscovery](Get-MgBetaComplianceEdiscovery.md)
-Get ediscovery from compliance
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCase](Get-MgBetaComplianceEdiscoveryCase.md)
-Retrieve the properties and relationships of a case object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseCount](Get-MgBetaComplianceEdiscoveryCaseCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseCustodian](Get-MgBetaComplianceEdiscoveryCaseCustodian.md)
-Read the properties and relationships of a custodian object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseCustodianCount](Get-MgBetaComplianceEdiscoveryCaseCustodianCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseCustodianLastIndexOperation](Get-MgBetaComplianceEdiscoveryCaseCustodianLastIndexOperation.md)
-Get lastIndexOperation from compliance
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseCustodianSiteSource](Get-MgBetaComplianceEdiscoveryCaseCustodianSiteSource.md)
-Read the properties and relationships of a siteSource object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseCustodianSiteSourceCount](Get-MgBetaComplianceEdiscoveryCaseCustodianSiteSourceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseCustodianSiteSourceSite](Get-MgBetaComplianceEdiscoveryCaseCustodianSiteSourceSite.md)
-The SharePoint site associated with the siteSource.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource](Get-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource.md)
-Read the properties and relationships of a unifiedGroupSource object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSourceCount](Get-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSourceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSourceGroup](Get-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSourceGroup.md)
-The group associated with the unifiedGroupSource.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSourceGroupServiceProvisioningError](Get-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSourceGroupServiceProvisioningError.md)
-Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object .
-Supports $filter (eq, not, for isResolved and serviceInstance).
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSourceGroupServiceProvisioningErrorCount](Get-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSourceGroupServiceProvisioningErrorCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseCustodianUserSource](Get-MgBetaComplianceEdiscoveryCaseCustodianUserSource.md)
-Read the properties and relationships of a userSource object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseCustodianUserSourceCount](Get-MgBetaComplianceEdiscoveryCaseCustodianUserSourceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseLegalHold](Get-MgBetaComplianceEdiscoveryCaseLegalHold.md)
-Read the properties and relationships of a legalHold object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseLegalHoldCount](Get-MgBetaComplianceEdiscoveryCaseLegalHoldCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseLegalHoldSiteSource](Get-MgBetaComplianceEdiscoveryCaseLegalHoldSiteSource.md)
-Data source entity for SharePoint sites associated with the legal hold.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseLegalHoldSiteSourceCount](Get-MgBetaComplianceEdiscoveryCaseLegalHoldSiteSourceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseLegalHoldSiteSourceSite](Get-MgBetaComplianceEdiscoveryCaseLegalHoldSiteSourceSite.md)
-The SharePoint site associated with the siteSource.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseLegalHoldUnifiedGroupSource](Get-MgBetaComplianceEdiscoveryCaseLegalHoldUnifiedGroupSource.md)
-Get unifiedGroupSources from compliance
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseLegalHoldUnifiedGroupSourceCount](Get-MgBetaComplianceEdiscoveryCaseLegalHoldUnifiedGroupSourceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseLegalHoldUnifiedGroupSourceGroup](Get-MgBetaComplianceEdiscoveryCaseLegalHoldUnifiedGroupSourceGroup.md)
-The group associated with the unifiedGroupSource.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseLegalHoldUnifiedGroupSourceGroupServiceProvisioningError](Get-MgBetaComplianceEdiscoveryCaseLegalHoldUnifiedGroupSourceGroupServiceProvisioningError.md)
-Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object .
-Supports $filter (eq, not, for isResolved and serviceInstance).
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseLegalHoldUnifiedGroupSourceGroupServiceProvisioningErrorCount](Get-MgBetaComplianceEdiscoveryCaseLegalHoldUnifiedGroupSourceGroupServiceProvisioningErrorCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseLegalHoldUserSource](Get-MgBetaComplianceEdiscoveryCaseLegalHoldUserSource.md)
-Data source entity for a the legal hold.
-This is the container for a mailbox and OneDrive for Business site.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseLegalHoldUserSourceCount](Get-MgBetaComplianceEdiscoveryCaseLegalHoldUserSourceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource](Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource.md)
-Read the properties and relationships of a noncustodialDataSource object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSourceCount](Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSourceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSourceDataSource](Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSourceDataSource.md)
-User source or SharePoint site data source as noncustodial data source.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSourceLastIndexOperation](Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSourceLastIndexOperation.md)
-Get lastIndexOperation from compliance
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseOperation](Get-MgBetaComplianceEdiscoveryCaseOperation.md)
-Returns a list of case operation objects for this case.
-Nullable.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseOperationAsCaseExportOperation](Get-MgBetaComplianceEdiscoveryCaseOperationAsCaseExportOperation.md)
-Get the item of type microsoft.graph.ediscovery.caseOperation as microsoft.graph.ediscovery.caseExportOperation
-
-### [Get-MgBetaComplianceEdiscoveryCaseOperationAsCaseExportOperationReviewSet](Get-MgBetaComplianceEdiscoveryCaseOperationAsCaseExportOperationReviewSet.md)
-The review set the content is being exported from.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseOperationCount](Get-MgBetaComplianceEdiscoveryCaseOperationCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseOperationCountAsCaseExportOperation](Get-MgBetaComplianceEdiscoveryCaseOperationCountAsCaseExportOperation.md)
-Get the number of the resource
+{{ Fill in the Description }}
+
+### [Get-MgBetaComplianceEdiscoveryCaseOperationReviewSet](Get-MgBetaComplianceEdiscoveryCaseOperationReviewSet.md)
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseReviewSet](Get-MgBetaComplianceEdiscoveryCaseReviewSet.md)
-Retrieve the properties and relationships of a reviewSet object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseReviewSetCount](Get-MgBetaComplianceEdiscoveryCaseReviewSetCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseReviewSetQuery](Get-MgBetaComplianceEdiscoveryCaseReviewSetQuery.md)
-Retrieve the properties and relationships of an eDiscovery reviewSetQuery object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseReviewSetQueryCount](Get-MgBetaComplianceEdiscoveryCaseReviewSetQueryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseSetting](Get-MgBetaComplianceEdiscoveryCaseSetting.md)
-Read the properties and relationships of an eDiscovery caseSettings object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseSourceCollection](Get-MgBetaComplianceEdiscoveryCaseSourceCollection.md)
-Returns a list of sourceCollection objects associated with this case.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource](Get-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource.md)
-Adds an additional source to the sourceCollection.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSourceCount](Get-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSourceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseSourceCollectionAddToReviewSetOperation](Get-MgBetaComplianceEdiscoveryCaseSourceCollectionAddToReviewSetOperation.md)
-Get the last addToReviewSetOperation object associated with a source collection.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseSourceCollectionCount](Get-MgBetaComplianceEdiscoveryCaseSourceCollectionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseSourceCollectionCustodianSource](Get-MgBetaComplianceEdiscoveryCaseSourceCollectionCustodianSource.md)
-Custodian sources that are included in the sourceCollection.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseSourceCollectionCustodianSourceCount](Get-MgBetaComplianceEdiscoveryCaseSourceCollectionCustodianSourceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperation](Get-MgBetaComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperation.md)
-Get the last estimateStatisticsOperation object associated with a source collection.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseSourceCollectionNoncustodialSource](Get-MgBetaComplianceEdiscoveryCaseSourceCollectionNoncustodialSource.md)
-noncustodialDataSource sources that are included in the sourceCollection
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseSourceCollectionNoncustodialSourceCount](Get-MgBetaComplianceEdiscoveryCaseSourceCollectionNoncustodialSourceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseTag](Get-MgBetaComplianceEdiscoveryCaseTag.md)
-Read the properties and relationships of a tag object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseTagChildTag](Get-MgBetaComplianceEdiscoveryCaseTagChildTag.md)
-Returns the tags that are a child of a tag.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseTagChildTagCount](Get-MgBetaComplianceEdiscoveryCaseTagChildTagCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseTagCount](Get-MgBetaComplianceEdiscoveryCaseTagCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseTagParent](Get-MgBetaComplianceEdiscoveryCaseTagParent.md)
-Returns the parent tag of the specified tag.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrivacySubjectRightsRequest](Get-MgBetaPrivacySubjectRightsRequest.md)
-Read the properties and relationships of a subjectRightsRequest object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrivacySubjectRightsRequestApprover](Get-MgBetaPrivacySubjectRightsRequestApprover.md)
-Get approvers from privacy
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrivacySubjectRightsRequestApproverCount](Get-MgBetaPrivacySubjectRightsRequestApproverCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrivacySubjectRightsRequestApproverMailboxSetting](Get-MgBetaPrivacySubjectRightsRequestApproverMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrivacySubjectRightsRequestApproverServiceProvisioningError](Get-MgBetaPrivacySubjectRightsRequestApproverServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrivacySubjectRightsRequestApproverServiceProvisioningErrorCount](Get-MgBetaPrivacySubjectRightsRequestApproverServiceProvisioningErrorCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrivacySubjectRightsRequestCollaborator](Get-MgBetaPrivacySubjectRightsRequestCollaborator.md)
-Get collaborators from privacy
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrivacySubjectRightsRequestCollaboratorCount](Get-MgBetaPrivacySubjectRightsRequestCollaboratorCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrivacySubjectRightsRequestCollaboratorMailboxSetting](Get-MgBetaPrivacySubjectRightsRequestCollaboratorMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrivacySubjectRightsRequestCollaboratorServiceProvisioningError](Get-MgBetaPrivacySubjectRightsRequestCollaboratorServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrivacySubjectRightsRequestCollaboratorServiceProvisioningErrorCount](Get-MgBetaPrivacySubjectRightsRequestCollaboratorServiceProvisioningErrorCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrivacySubjectRightsRequestCount](Get-MgBetaPrivacySubjectRightsRequestCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrivacySubjectRightsRequestNote](Get-MgBetaPrivacySubjectRightsRequestNote.md)
-List of notes associated with the request.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrivacySubjectRightsRequestNoteCount](Get-MgBetaPrivacySubjectRightsRequestNoteCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPrivacySubjectRightsRequestTeam](Get-MgBetaPrivacySubjectRightsRequestTeam.md)
-Information about the Microsoft Teams team that was created for the request.
+{{ Fill in the Description }}
 
 ### [Initialize-MgBetaComplianceEdiscoveryCaseCustodian](Initialize-MgBetaComplianceEdiscoveryCaseCustodian.md)
-Activate a custodian that has been released from a case to make them part of the case again.
-For details, see Manage custodians in an Advanced eDiscovery case.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaAsComplianceEdiscoveryCaseTagHierarchy](Invoke-MgBetaAsComplianceEdiscoveryCaseTagHierarchy.md)
-Invoke function asHierarchy
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaEstimateComplianceEdiscoveryCaseSourceCollectionStatistics](Invoke-MgBetaEstimateComplianceEdiscoveryCaseSourceCollectionStatistics.md)
-Run an estimate of the number of emails and documents in the source collection.
-To learn more about source collections (also known as searches in eDiscovery), see Collect data for a case in Advanced eDiscovery.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaReopenComplianceEdiscoveryCase](Invoke-MgBetaReopenComplianceEdiscoveryCase.md)
-Reopen an eDiscovery case that was closed.
-For details, see Reopen a closed case.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaComplianceEdiscoveryCase](New-MgBetaComplianceEdiscoveryCase.md)
-Create a new case object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaComplianceEdiscoveryCaseCustodian](New-MgBetaComplianceEdiscoveryCaseCustodian.md)
-Create a new custodian object.
-After the custodian object is created, you will need to create the custodian's userSource to reference their mailbox and OneDrive for Business site.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaComplianceEdiscoveryCaseCustodianSiteSource](New-MgBetaComplianceEdiscoveryCaseCustodianSiteSource.md)
-Create a new custodian siteSource object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource](New-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource.md)
-Create a new unifiedGroupSource object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaComplianceEdiscoveryCaseCustodianUserSource](New-MgBetaComplianceEdiscoveryCaseCustodianUserSource.md)
-Create a new custodian userSource object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaComplianceEdiscoveryCaseLegalHold](New-MgBetaComplianceEdiscoveryCaseLegalHold.md)
-Create new navigation property to legalHolds for compliance
+{{ Fill in the Description }}
 
 ### [New-MgBetaComplianceEdiscoveryCaseLegalHoldSiteSource](New-MgBetaComplianceEdiscoveryCaseLegalHoldSiteSource.md)
-Adds a siteSource to a legalHold object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaComplianceEdiscoveryCaseLegalHoldUnifiedGroupSource](New-MgBetaComplianceEdiscoveryCaseLegalHoldUnifiedGroupSource.md)
-Create new navigation property to unifiedGroupSources for compliance
+{{ Fill in the Description }}
 
 ### [New-MgBetaComplianceEdiscoveryCaseLegalHoldUserSource](New-MgBetaComplianceEdiscoveryCaseLegalHoldUserSource.md)
-Adds a userSource to a legalHold object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource](New-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource.md)
-Create a new noncustodialDataSource object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaComplianceEdiscoveryCaseOperation](New-MgBetaComplianceEdiscoveryCaseOperation.md)
-Create new navigation property to operations for compliance
+{{ Fill in the Description }}
 
 ### [New-MgBetaComplianceEdiscoveryCaseReviewSet](New-MgBetaComplianceEdiscoveryCaseReviewSet.md)
-Create a new reviewSet object.
-The request body contains the display name of the review set, which is the only writable property.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaComplianceEdiscoveryCaseReviewSetQuery](New-MgBetaComplianceEdiscoveryCaseReviewSetQuery.md)
-Create a new reviewSetQuery object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaComplianceEdiscoveryCaseSourceCollection](New-MgBetaComplianceEdiscoveryCaseSourceCollection.md)
-Create a new sourceCollection object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource](New-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource.md)
-Create new navigation property to additionalSources for compliance
+{{ Fill in the Description }}
 
 ### [New-MgBetaComplianceEdiscoveryCaseTag](New-MgBetaComplianceEdiscoveryCaseTag.md)
-Create a new tag for the specified case.
-The tags are used in review sets while reviewing content.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaPrivacySubjectRightsRequest](New-MgBetaPrivacySubjectRightsRequest.md)
-Create a new subjectRightsRequest object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaPrivacySubjectRightsRequestNote](New-MgBetaPrivacySubjectRightsRequestNote.md)
-Create a new authoredNote object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Publish-MgBetaComplianceEdiscoveryCaseCustodian](Publish-MgBetaComplianceEdiscoveryCaseCustodian.md)
-Release a custodian from a case.
-For details, see Release a custodian from a case.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Publish-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource](Publish-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource.md)
-Releases the non-custodial data source from the case.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaComplianceEdiscovery](Remove-MgBetaComplianceEdiscovery.md)
-Delete navigation property ediscovery for compliance
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaComplianceEdiscoveryCase](Remove-MgBetaComplianceEdiscoveryCase.md)
-Delete a case object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaComplianceEdiscoveryCaseCustodian](Remove-MgBetaComplianceEdiscoveryCaseCustodian.md)
-Delete navigation property custodians for compliance
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaComplianceEdiscoveryCaseCustodianHold](Remove-MgBetaComplianceEdiscoveryCaseCustodianHold.md)
-Invoke action removeHold
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaComplianceEdiscoveryCaseCustodianSiteSource](Remove-MgBetaComplianceEdiscoveryCaseCustodianSiteSource.md)
-Delete a siteSource object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource](Remove-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource.md)
-Delete a unifiedGroupSource object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaComplianceEdiscoveryCaseCustodianUserSource](Remove-MgBetaComplianceEdiscoveryCaseCustodianUserSource.md)
-Delete a userSource object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaComplianceEdiscoveryCaseLegalHold](Remove-MgBetaComplianceEdiscoveryCaseLegalHold.md)
-Delete a legalHold object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaComplianceEdiscoveryCaseLegalHoldSiteSource](Remove-MgBetaComplianceEdiscoveryCaseLegalHoldSiteSource.md)
-Delete navigation property siteSources for compliance
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaComplianceEdiscoveryCaseLegalHoldUnifiedGroupSource](Remove-MgBetaComplianceEdiscoveryCaseLegalHoldUnifiedGroupSource.md)
-Delete navigation property unifiedGroupSources for compliance
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaComplianceEdiscoveryCaseLegalHoldUserSource](Remove-MgBetaComplianceEdiscoveryCaseLegalHoldUserSource.md)
-Delete navigation property userSources for compliance
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource](Remove-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource.md)
-Delete navigation property noncustodialDataSources for compliance
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaComplianceEdiscoveryCaseNoncustodialDataSourceHold](Remove-MgBetaComplianceEdiscoveryCaseNoncustodialDataSourceHold.md)
-Invoke action removeHold
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaComplianceEdiscoveryCaseOperation](Remove-MgBetaComplianceEdiscoveryCaseOperation.md)
-Delete navigation property operations for compliance
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaComplianceEdiscoveryCaseReviewSet](Remove-MgBetaComplianceEdiscoveryCaseReviewSet.md)
-Delete navigation property reviewSets for compliance
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaComplianceEdiscoveryCaseReviewSetQuery](Remove-MgBetaComplianceEdiscoveryCaseReviewSetQuery.md)
-Delete a reviewSetQuery object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaComplianceEdiscoveryCaseSetting](Remove-MgBetaComplianceEdiscoveryCaseSetting.md)
-Delete navigation property settings for compliance
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaComplianceEdiscoveryCaseSourceCollection](Remove-MgBetaComplianceEdiscoveryCaseSourceCollection.md)
-Delete a sourceCollection object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource](Remove-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource.md)
-Delete navigation property additionalSources for compliance
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaComplianceEdiscoveryCaseTag](Remove-MgBetaComplianceEdiscoveryCaseTag.md)
-Delete a tag object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaPrivacySubjectRightsRequest](Remove-MgBetaPrivacySubjectRightsRequest.md)
-Delete navigation property subjectRightsRequests for privacy
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaPrivacySubjectRightsRequestNote](Remove-MgBetaPrivacySubjectRightsRequestNote.md)
-Delete navigation property notes for privacy
+{{ Fill in the Description }}
 
 ### [Reset-MgBetaComplianceEdiscoveryCaseSettingToDefault](Reset-MgBetaComplianceEdiscoveryCaseSettingToDefault.md)
-Reset a caseSettings object to the default values.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaCompliance](Update-MgBetaCompliance.md)
-Update compliance
+{{ Fill in the Description }}
 
 ### [Update-MgBetaComplianceEdiscovery](Update-MgBetaComplianceEdiscovery.md)
-Update the navigation property ediscovery in compliance
+{{ Fill in the Description }}
 
 ### [Update-MgBetaComplianceEdiscoveryCase](Update-MgBetaComplianceEdiscoveryCase.md)
-Update the properties of a case object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaComplianceEdiscoveryCaseCustodian](Update-MgBetaComplianceEdiscoveryCaseCustodian.md)
-Update the properties of a custodian object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaComplianceEdiscoveryCaseCustodianIndex](Update-MgBetaComplianceEdiscoveryCaseCustodianIndex.md)
-Invoke action updateIndex
+{{ Fill in the Description }}
 
 ### [Update-MgBetaComplianceEdiscoveryCaseCustodianSiteSource](Update-MgBetaComplianceEdiscoveryCaseCustodianSiteSource.md)
-Update the navigation property siteSources in compliance
+{{ Fill in the Description }}
 
 ### [Update-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource](Update-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource.md)
-Update the navigation property unifiedGroupSources in compliance
+{{ Fill in the Description }}
 
 ### [Update-MgBetaComplianceEdiscoveryCaseCustodianUserSource](Update-MgBetaComplianceEdiscoveryCaseCustodianUserSource.md)
-Update the navigation property userSources in compliance
+{{ Fill in the Description }}
 
 ### [Update-MgBetaComplianceEdiscoveryCaseLegalHold](Update-MgBetaComplianceEdiscoveryCaseLegalHold.md)
-Update the properties of a legalHold object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaComplianceEdiscoveryCaseLegalHoldSiteSource](Update-MgBetaComplianceEdiscoveryCaseLegalHoldSiteSource.md)
-Update the navigation property siteSources in compliance
+{{ Fill in the Description }}
 
 ### [Update-MgBetaComplianceEdiscoveryCaseLegalHoldUnifiedGroupSource](Update-MgBetaComplianceEdiscoveryCaseLegalHoldUnifiedGroupSource.md)
-Update the navigation property unifiedGroupSources in compliance
+{{ Fill in the Description }}
 
 ### [Update-MgBetaComplianceEdiscoveryCaseLegalHoldUserSource](Update-MgBetaComplianceEdiscoveryCaseLegalHoldUserSource.md)
-Update the navigation property userSources in compliance
+{{ Fill in the Description }}
 
 ### [Update-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource](Update-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource.md)
-Update the navigation property noncustodialDataSources in compliance
+{{ Fill in the Description }}
 
 ### [Update-MgBetaComplianceEdiscoveryCaseNoncustodialDataSourceIndex](Update-MgBetaComplianceEdiscoveryCaseNoncustodialDataSourceIndex.md)
-Invoke action updateIndex
+{{ Fill in the Description }}
 
 ### [Update-MgBetaComplianceEdiscoveryCaseOperation](Update-MgBetaComplianceEdiscoveryCaseOperation.md)
-Update the navigation property operations in compliance
+{{ Fill in the Description }}
 
 ### [Update-MgBetaComplianceEdiscoveryCaseReviewSet](Update-MgBetaComplianceEdiscoveryCaseReviewSet.md)
-Update the navigation property reviewSets in compliance
+{{ Fill in the Description }}
 
 ### [Update-MgBetaComplianceEdiscoveryCaseReviewSetQuery](Update-MgBetaComplianceEdiscoveryCaseReviewSetQuery.md)
-Update the properties of an eDiscovery reviewSetQuery.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaComplianceEdiscoveryCaseSetting](Update-MgBetaComplianceEdiscoveryCaseSetting.md)
-Update the properties of a an eDiscovery caseSettings object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaComplianceEdiscoveryCaseSourceCollection](Update-MgBetaComplianceEdiscoveryCaseSourceCollection.md)
-Update the properties of a sourceCollection object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource](Update-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource.md)
-Update the navigation property additionalSources in compliance
+{{ Fill in the Description }}
 
 ### [Update-MgBetaComplianceEdiscoveryCaseTag](Update-MgBetaComplianceEdiscoveryCaseTag.md)
-Update the properties of a tag object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaPrivacySubjectRightsRequest](Update-MgBetaPrivacySubjectRightsRequest.md)
-Update the properties of a subjectRightsRequest object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaPrivacySubjectRightsRequestApproverMailboxSetting](Update-MgBetaPrivacySubjectRightsRequestApproverMailboxSetting.md)
-Update property mailboxSettings value.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaPrivacySubjectRightsRequestCollaboratorMailboxSetting](Update-MgBetaPrivacySubjectRightsRequestCollaboratorMailboxSetting.md)
-Update property mailboxSettings value.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaPrivacySubjectRightsRequestNote](Update-MgBetaPrivacySubjectRightsRequestNote.md)
-Update the navigation property notes in privacy
+{{ Fill in the Description }}
 

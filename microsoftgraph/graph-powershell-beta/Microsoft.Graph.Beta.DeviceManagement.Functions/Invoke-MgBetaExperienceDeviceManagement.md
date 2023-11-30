@@ -35,8 +35,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereDevicesSummary
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
 [Invoke-MgExperienceDeviceManagement](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Invoke-MgExperienceDeviceManagement?view=graph-powershell-1.0)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/invoke-mgbetaexperiencedevicemanagement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/invoke-mgbetaexperiencedevicemanagement)
+
 

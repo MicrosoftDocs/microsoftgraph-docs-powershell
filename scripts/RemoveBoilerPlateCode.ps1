@@ -31,7 +31,7 @@ function Start-Repair {
     git config --global user.email "timwamalwa@gmail.com"
     git config --global user.name "Timothy Wamalwa"
     git add .
-    git commit -m "Repaired examples" 
+    git commit -m "Remove boiler plate code injected by Autorest" 
 }
 function Get-FilesByProfile{
  Param(

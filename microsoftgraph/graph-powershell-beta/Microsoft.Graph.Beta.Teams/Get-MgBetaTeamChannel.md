@@ -11,7 +11,7 @@ schema: 2.0.0
 Retrieve the properties and relationships of a channel.
 This method supports federation.
 Only a user who is a member of the shared channel can retrieve channel information.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgTeamChannel](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamChannel?view=graph-powershell-1.0)
@@ -41,7 +41,7 @@ Get-MgBetaTeamChannel -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
 Retrieve the properties and relationships of a channel.
 This method supports federation.
 Only a user who is a member of the shared channel can retrieve channel information.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: List all channels

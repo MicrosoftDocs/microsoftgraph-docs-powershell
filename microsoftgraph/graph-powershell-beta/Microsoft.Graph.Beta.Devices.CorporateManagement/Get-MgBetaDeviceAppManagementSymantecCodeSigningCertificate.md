@@ -62,9 +62,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSymantecCodeSigningCertificate
 ## NOTES
 
-ALIASES
-
-Get-MgBetaDeviceAppMgtSymantecCodeSigningCertificate
-
 ## RELATED LINKS
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementsymanteccodesigningcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementsymanteccodesigningcertificate)
+
 

@@ -32,8 +32,6 @@ New-MgRiskyServicePrincipal -BodyParameter <IMicrosoftGraphRiskyServicePrincipal
 ## DESCRIPTION
 Create new navigation property to riskyServicePrincipals for identityProtection
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -98,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -History
-Represents the risk history of Azure AD service principals.
+Represents the risk history of Microsoft Entra service principals.
 To construct, see NOTES section for HISTORY properties and create a hash table.
 
 ```yaml
@@ -139,13 +137,13 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -IsProcessing
-Indicates whether Azure AD is currently processing the service principal's risky state.
+Indicates whether Microsoft Entra ID is currently processing the service principal's risky state.
 
 ```yaml
 Type: SwitchParameter
@@ -154,7 +152,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -224,7 +222,7 @@ Accept wildcard characters: False
 
 ### -ServicePrincipalType
 Identifies whether the service principal represents an Application, a ManagedIdentity, or a legacy application (socialIdp).
-This is set by Azure AD internally and is inherited from servicePrincipal.
+This is set by Microsoft Entra ID internally and is inherited from servicePrincipal.
 
 ```yaml
 Type: String
@@ -279,63 +277,77 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRiskyServicePrincipal
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+BODYPARAMETER \<IMicrosoftGraphRiskyServicePrincipal\>: riskyServicePrincipal
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[AppId \<String\>\]: The globally unique identifier for the associated application (its appId property), if any.
+  \[DisplayName \<String\>\]: The display name for the service principal.
+  \[History \<IMicrosoftGraphRiskyServicePrincipalHistoryItem\[\]\>\]: Represents the risk history of Microsoft Entra service principals.
+    \[AppId \<String\>\]: The globally unique identifier for the associated application (its appId property), if any.
+    \[DisplayName \<String\>\]: The display name for the service principal.
+    \[History \<IMicrosoftGraphRiskyServicePrincipalHistoryItem\[\]\>\]: Represents the risk history of Microsoft Entra service principals.
+    \[IsEnabled \<Boolean?\>\]: true if the service principal account is enabled; otherwise, false.
+    \[IsProcessing \<Boolean?\>\]: Indicates whether Microsoft Entra ID is currently processing the service principal's risky state.
+    \[RiskDetail \<String\>\]: riskDetail
+    \[RiskLastUpdatedDateTime \<DateTime?\>\]: The date and time that the risk state was last updated.
+The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2021 is 2021-01-01T00:00:00Z.
+Supports $filter (eq).
+    \[RiskLevel \<String\>\]: riskLevel
+    \[RiskState \<String\>\]: riskState
+    \[ServicePrincipalType \<String\>\]: Identifies whether the service principal represents an Application, a ManagedIdentity, or a legacy application (socialIdp).
+This is set by Microsoft Entra ID internally and is inherited from servicePrincipal.
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[Activity \<IMicrosoftGraphRiskServicePrincipalActivity\>\]: riskServicePrincipalActivity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Detail \<String\>\]: riskDetail
+      \[RiskEventTypes \<String\[\]\>\]: 
+    \[InitiatedBy \<String\>\]: The identifier of the actor of the operation.
+  \[IsEnabled \<Boolean?\>\]: true if the service principal account is enabled; otherwise, false.
+  \[IsProcessing \<Boolean?\>\]: Indicates whether Microsoft Entra ID is currently processing the service principal's risky state.
+  \[RiskDetail \<String\>\]: riskDetail
+  \[RiskLastUpdatedDateTime \<DateTime?\>\]: The date and time that the risk state was last updated.
+The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2021 is 2021-01-01T00:00:00Z.
+Supports $filter (eq).
+  \[RiskLevel \<String\>\]: riskLevel
+  \[RiskState \<String\>\]: riskState
+  \[ServicePrincipalType \<String\>\]: Identifies whether the service principal represents an Application, a ManagedIdentity, or a legacy application (socialIdp).
+This is set by Microsoft Entra ID internally and is inherited from servicePrincipal.
 
-`BODYPARAMETER <IMicrosoftGraphRiskyServicePrincipal>`: riskyServicePrincipal
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[AppId <String>]`: The globally unique identifier for the associated application (its appId property), if any.
-  - `[DisplayName <String>]`: The display name for the service principal.
-  - `[History <IMicrosoftGraphRiskyServicePrincipalHistoryItem[]>]`: Represents the risk history of Azure AD service principals.
-    - `[AppId <String>]`: The globally unique identifier for the associated application (its appId property), if any.
-    - `[DisplayName <String>]`: The display name for the service principal.
-    - `[History <IMicrosoftGraphRiskyServicePrincipalHistoryItem[]>]`: Represents the risk history of Azure AD service principals.
-    - `[IsEnabled <Boolean?>]`: true if the service principal account is enabled; otherwise, false.
-    - `[IsProcessing <Boolean?>]`: Indicates whether Azure AD is currently processing the service principal's risky state.
-    - `[RiskDetail <String>]`: riskDetail
-    - `[RiskLastUpdatedDateTime <DateTime?>]`: The date and time that the risk state was last updated. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2021 is 2021-01-01T00:00:00Z. Supports $filter (eq).
-    - `[RiskLevel <String>]`: riskLevel
-    - `[RiskState <String>]`: riskState
-    - `[ServicePrincipalType <String>]`: Identifies whether the service principal represents an Application, a ManagedIdentity, or a legacy application (socialIdp). This is set by Azure AD internally and is inherited from servicePrincipal.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[Activity <IMicrosoftGraphRiskServicePrincipalActivity>]`: riskServicePrincipalActivity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Detail <String>]`: riskDetail
-      - `[RiskEventTypes <String[]>]`: 
-    - `[InitiatedBy <String>]`: The identifier of the actor of the operation.
-  - `[IsEnabled <Boolean?>]`: true if the service principal account is enabled; otherwise, false.
-  - `[IsProcessing <Boolean?>]`: Indicates whether Azure AD is currently processing the service principal's risky state.
-  - `[RiskDetail <String>]`: riskDetail
-  - `[RiskLastUpdatedDateTime <DateTime?>]`: The date and time that the risk state was last updated. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2021 is 2021-01-01T00:00:00Z. Supports $filter (eq).
-  - `[RiskLevel <String>]`: riskLevel
-  - `[RiskState <String>]`: riskState
-  - `[ServicePrincipalType <String>]`: Identifies whether the service principal represents an Application, a ManagedIdentity, or a legacy application (socialIdp). This is set by Azure AD internally and is inherited from servicePrincipal.
-
-`HISTORY <IMicrosoftGraphRiskyServicePrincipalHistoryItem[]>`: Represents the risk history of Azure AD service principals.
-  - `[AppId <String>]`: The globally unique identifier for the associated application (its appId property), if any.
-  - `[DisplayName <String>]`: The display name for the service principal.
-  - `[History <IMicrosoftGraphRiskyServicePrincipalHistoryItem[]>]`: Represents the risk history of Azure AD service principals.
-  - `[IsEnabled <Boolean?>]`: true if the service principal account is enabled; otherwise, false.
-  - `[IsProcessing <Boolean?>]`: Indicates whether Azure AD is currently processing the service principal's risky state.
-  - `[RiskDetail <String>]`: riskDetail
-  - `[RiskLastUpdatedDateTime <DateTime?>]`: The date and time that the risk state was last updated. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2021 is 2021-01-01T00:00:00Z. Supports $filter (eq).
-  - `[RiskLevel <String>]`: riskLevel
-  - `[RiskState <String>]`: riskState
-  - `[ServicePrincipalType <String>]`: Identifies whether the service principal represents an Application, a ManagedIdentity, or a legacy application (socialIdp). This is set by Azure AD internally and is inherited from servicePrincipal.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Activity <IMicrosoftGraphRiskServicePrincipalActivity>]`: riskServicePrincipalActivity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Detail <String>]`: riskDetail
-    - `[RiskEventTypes <String[]>]`: 
-  - `[InitiatedBy <String>]`: The identifier of the actor of the operation.
+HISTORY \<IMicrosoftGraphRiskyServicePrincipalHistoryItem\[\]\>: Represents the risk history of Microsoft Entra service principals.
+  \[AppId \<String\>\]: The globally unique identifier for the associated application (its appId property), if any.
+  \[DisplayName \<String\>\]: The display name for the service principal.
+  \[History \<IMicrosoftGraphRiskyServicePrincipalHistoryItem\[\]\>\]: Represents the risk history of Microsoft Entra service principals.
+  \[IsEnabled \<Boolean?\>\]: true if the service principal account is enabled; otherwise, false.
+  \[IsProcessing \<Boolean?\>\]: Indicates whether Microsoft Entra ID is currently processing the service principal's risky state.
+  \[RiskDetail \<String\>\]: riskDetail
+  \[RiskLastUpdatedDateTime \<DateTime?\>\]: The date and time that the risk state was last updated.
+The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2021 is 2021-01-01T00:00:00Z.
+Supports $filter (eq).
+  \[RiskLevel \<String\>\]: riskLevel
+  \[RiskState \<String\>\]: riskState
+  \[ServicePrincipalType \<String\>\]: Identifies whether the service principal represents an Application, a ManagedIdentity, or a legacy application (socialIdp).
+This is set by Microsoft Entra ID internally and is inherited from servicePrincipal.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[Activity \<IMicrosoftGraphRiskServicePrincipalActivity\>\]: riskServicePrincipalActivity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Detail \<String\>\]: riskDetail
+    \[RiskEventTypes \<String\[\]\>\]: 
+  \[InitiatedBy \<String\>\]: The identifier of the actor of the operation.
 
 ## RELATED LINKS
-
 [New-MgBetaRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaRiskyServicePrincipal?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgriskyserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgriskyserviceprincipal)
+
 

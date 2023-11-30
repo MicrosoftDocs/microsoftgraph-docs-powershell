@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Notes-help.xml
 Module Name: Microsoft.Graph.Beta.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetagrouponenotenotebooksectiongroup
 schema: 2.0.0
+ms.prod: onenote
 ---
 
 # Get-MgBetaGroupOnenoteNotebookSectionGroup
@@ -25,6 +26,8 @@ Get-MgBetaGroupOnenoteNotebookSectionGroup -GroupId <String> -NotebookId <String
 ## DESCRIPTION
 Retrieve a list of section groups from the specified notebook.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -223,5 +226,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgGroupOnenoteNotebookSectionGroup](/powershell/module/Microsoft.Graph.Notes/Get-MgGroupOnenoteNotebookSectionGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetagrouponenotenotebooksectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetagrouponenotenotebooksectiongroup)
-
 

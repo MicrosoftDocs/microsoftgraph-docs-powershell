@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewpolicy
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Get-MgBetaIdentityGovernanceAccessReviewPolicy
 
 ## SYNOPSIS
 Read the properties and relationships of an accessReviewPolicy object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -19,6 +21,7 @@ Get-MgBetaIdentityGovernanceAccessReviewPolicy [-ExpandProperty <String[]>] [-Pr
 
 ## DESCRIPTION
 Read the properties and relationships of an accessReviewPolicy object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaIdentityGovernanceAccessReviewPolicy Cmdlet

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Notes-help.xml
 Module Name: Microsoft.Graph.Beta.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetagrouponenotenotebook
 schema: 2.0.0
+ms.prod: onenote
 ---
 
 # New-MgBetaGroupOnenoteNotebook
@@ -51,6 +52,8 @@ New-MgBetaGroupOnenoteNotebook -InputObject <INotesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create a new OneNote notebook.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -775,5 +778,4 @@ Read-only.
 [New-MgGroupOnenoteNotebook](/powershell/module/Microsoft.Graph.Notes/New-MgGroupOnenoteNotebook?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetagrouponenotenotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetagrouponenotenotebook)
-
 

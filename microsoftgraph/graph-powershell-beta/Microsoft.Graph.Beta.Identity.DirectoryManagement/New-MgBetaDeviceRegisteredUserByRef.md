@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadeviceregistereduserbyref
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # New-MgBetaDeviceRegisteredUserByRef
 
 ## SYNOPSIS
 Add a registered user for the device.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgDeviceRegisteredUserByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDeviceRegisteredUserByRef?view=graph-powershell-1.0)
@@ -41,6 +43,7 @@ New-MgBetaDeviceRegisteredUserByRef -InputObject <IIdentityDirectoryManagementId
 
 ## DESCRIPTION
 Add a registered user for the device.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -200,6 +203,7 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[ContractId \<String\>\]: The unique identifier of contract
   \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
   \[DeviceId \<String\>\]: The unique identifier of device
+  \[DeviceLocalCredentialInfoId \<String\>\]: The unique identifier of deviceLocalCredentialInfo
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[DirectoryRoleId \<String\>\]: The unique identifier of directoryRole
   \[DirectoryRoleTemplateId \<String\>\]: The unique identifier of directoryRoleTemplate

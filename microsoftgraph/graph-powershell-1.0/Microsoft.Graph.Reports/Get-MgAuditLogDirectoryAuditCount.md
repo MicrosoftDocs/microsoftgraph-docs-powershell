@@ -22,8 +22,6 @@ Get-MgAuditLogDirectoryAuditCount [-Filter <String>] [-Search <String>] [<Common
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Filter
@@ -66,9 +64,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.Int32
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
-
 [Get-MgBetaAuditLogDirectoryAuditCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaAuditLogDirectoryAuditCount?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgauditlogdirectoryauditcount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgauditlogdirectoryauditcount)
+
 

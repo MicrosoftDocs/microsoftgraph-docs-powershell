@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -DownloadUri
-Uri which can be used to retrieve review history data.
+Uri that can be used to retrieve review history data.
 This URI will be active for 24 hours after being generated.
 Required.
 
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReviewHistoryPeriodEndDateTime
-Timestamp, reviews ending on or before this date will be included in the fetched history data.
+Timestamp, reviews ending on or before this date are in the fetched history data.
 
 ```yaml
 Type: DateTime
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReviewHistoryPeriodStartDateTime
-Timestamp, reviews starting on or after this date will be included in the fetched history data.
+Timestamp, reviews starting on or after this date are in the fetched history data.
 
 ```yaml
 Type: DateTime
@@ -289,7 +289,7 @@ BODYPARAMETER \<IMicrosoftGraphAccessReviewHistoryInstance\>: accessReviewHistor
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  \[DownloadUri \<String\>\]: Uri which can be used to retrieve review history data.
+  \[DownloadUri \<String\>\]: Uri that can be used to retrieve review history data.
 This URI will be active for 24 hours after being generated.
 Required.
   \[ExpirationDateTime \<DateTime?\>\]: Timestamp when this instance and associated data expires and the history is deleted.
@@ -297,8 +297,8 @@ Required.
   \[FulfilledDateTime \<DateTime?\>\]: Timestamp when all of the available data for this instance was collected.
 This will be set after this instance's status is set to done.
 Required.
-  \[ReviewHistoryPeriodEndDateTime \<DateTime?\>\]: Timestamp, reviews ending on or before this date will be included in the fetched history data.
-  \[ReviewHistoryPeriodStartDateTime \<DateTime?\>\]: Timestamp, reviews starting on or after this date will be included in the fetched history data.
+  \[ReviewHistoryPeriodEndDateTime \<DateTime?\>\]: Timestamp, reviews ending on or before this date are in the fetched history data.
+  \[ReviewHistoryPeriodStartDateTime \<DateTime?\>\]: Timestamp, reviews starting on or after this date are in the fetched history data.
   \[RunDateTime \<DateTime?\>\]: Timestamp when the instance's history data is scheduled to be generated.
   \[Status \<String\>\]: accessReviewHistoryStatus
 
@@ -344,6 +344,7 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[CustomTaskExtensionId \<String\>\]: The unique identifier of customTaskExtension
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[EndDateTime \<DateTime?\>\]: Usage: endDateTime={endDateTime}
+  \[FindingId \<String\>\]: The unique identifier of finding
   \[GovernanceInsightId \<String\>\]: The unique identifier of governanceInsight
   \[GovernanceResourceId \<String\>\]: The unique identifier of governanceResource
   \[GovernanceRoleAssignmentId \<String\>\]: The unique identifier of governanceRoleAssignment
@@ -354,6 +355,8 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[IncompatibleAccessPackageId \<String\>\]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   \[LongRunningOperationId \<String\>\]: The unique identifier of longRunningOperation
   \[On \<String\>\]: Usage: on='{on}'
+  \[PermissionsCreepIndexDistributionId \<String\>\]: The unique identifier of permissionsCreepIndexDistribution
+  \[PermissionsRequestChangeId \<String\>\]: The unique identifier of permissionsRequestChange
   \[PrivilegedAccessGroupAssignmentScheduleId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentSchedule
   \[PrivilegedAccessGroupAssignmentScheduleInstanceId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentScheduleInstance
   \[PrivilegedAccessGroupAssignmentScheduleRequestId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentScheduleRequest

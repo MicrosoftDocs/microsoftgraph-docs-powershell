@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Clock out to end an open timeCard.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ Invoke-MgBetaClockTeamScheduleTimeCardOut -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Clock out to end an open timeCard.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgBetaClockTeamScheduleTimeCardOut Cmdlet

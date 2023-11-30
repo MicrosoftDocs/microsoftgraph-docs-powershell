@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Notes-help.xml
 Module Name: Microsoft.Graph.Beta.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasiteonenotenotebooksection
 schema: 2.0.0
+ms.prod: onenote
 ---
 
 # Get-MgBetaSiteOnenoteNotebookSection
@@ -25,6 +26,8 @@ Get-MgBetaSiteOnenoteNotebookSection -NotebookId <String> -SiteId <String> [-Exp
 ## DESCRIPTION
 Retrieve a list of section objects from the specified notebook.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -223,5 +226,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgSiteOnenoteNotebookSection](/powershell/module/Microsoft.Graph.Notes/Get-MgSiteOnenoteNotebookSection?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasiteonenotenotebooksection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasiteonenotenotebooksection)
-
 

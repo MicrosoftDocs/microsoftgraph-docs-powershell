@@ -314,11 +314,11 @@ Possible values are: Enabled, Warning, Suspended, Deleted, LockedOut.
   \[PrepaidUnits \<IMicrosoftGraphLicenseUnitsDetail\>\]: licenseUnitsDetail
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[Enabled \<Int32?\>\]: The number of units that are enabled for the active subscription of the service SKU.
-    \[LockedOut \<Int32?\>\]: The number of units that are locked out because the customer cancelled their subscription of the service SKU.
-    \[Suspended \<Int32?\>\]: The number of units that are suspended because the subscription of the service SKU has been cancelled.
-The units cannot be assigned but can still be reactivated before they are deleted.
+    \[LockedOut \<Int32?\>\]: The number of units that are locked out because the customer canceled their subscription of the service SKU.
+    \[Suspended \<Int32?\>\]: The number of units that are suspended because the subscription of the service SKU has been canceled.
+The units can't be assigned but can still be reactivated before they're deleted.
     \[Warning \<Int32?\>\]: The number of units that are in warning status.
-When the subscription of the service SKU has expired, the customer has a grace period to renew their subscription before it is cancelled (moved to a suspended state).
+When the subscription of the service SKU has expired, the customer has a grace period to renew their subscription before it's canceled (moved to a suspended state).
   \[ServicePlans \<IMicrosoftGraphServicePlanInfo\[\]\>\]: Information about the service plans that are available with the SKU.
 Not nullable
     \[AppliesTo \<String\>\]: The object the service plan can be assigned to.
@@ -335,11 +335,11 @@ To get a list of commercial subscriptions that an organization has acquired, see
 PREPAIDUNITS \<IMicrosoftGraphLicenseUnitsDetail\>: licenseUnitsDetail
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[Enabled \<Int32?\>\]: The number of units that are enabled for the active subscription of the service SKU.
-  \[LockedOut \<Int32?\>\]: The number of units that are locked out because the customer cancelled their subscription of the service SKU.
-  \[Suspended \<Int32?\>\]: The number of units that are suspended because the subscription of the service SKU has been cancelled.
-The units cannot be assigned but can still be reactivated before they are deleted.
+  \[LockedOut \<Int32?\>\]: The number of units that are locked out because the customer canceled their subscription of the service SKU.
+  \[Suspended \<Int32?\>\]: The number of units that are suspended because the subscription of the service SKU has been canceled.
+The units can't be assigned but can still be reactivated before they're deleted.
   \[Warning \<Int32?\>\]: The number of units that are in warning status.
-When the subscription of the service SKU has expired, the customer has a grace period to renew their subscription before it is cancelled (moved to a suspended state).
+When the subscription of the service SKU has expired, the customer has a grace period to renew their subscription before it's canceled (moved to a suspended state).
 
 SERVICEPLANS \<IMicrosoftGraphServicePlanInfo\[\]\>: Information about the service plans that are available with the SKU.
 Not nullable

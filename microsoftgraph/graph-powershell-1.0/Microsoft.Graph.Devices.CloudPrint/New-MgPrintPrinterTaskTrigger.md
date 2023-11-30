@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprintertasktrigger
 schema: 2.0.0
+ms.prod: cloud-printing
 ---
 
 # New-MgPrintPrinterTaskTrigger
@@ -10,7 +11,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new task trigger on the specified printer.
 Currently, only one task trigger can be specified per printer, but this limit might be removed in the future.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPrintPrinterTaskTrigger](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintPrinterTaskTrigger?view=graph-powershell-beta)
@@ -46,7 +47,7 @@ New-MgPrintPrinterTaskTrigger -InputObject <IDevicesCloudPrintIdentity>
 ## DESCRIPTION
 Create a new task trigger on the specified printer.
 Currently, only one task trigger can be specified per printer, but this limit might be removed in the future.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -219,76 +220,90 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintTaskTrigger
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+BODYPARAMETER \<IMicrosoftGraphPrintTaskTrigger\>: printTaskTrigger
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[Definition \<IMicrosoftGraphPrintTaskDefinition\>\]: printTaskDefinition
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[CreatedBy \<IMicrosoftGraphAppIdentity\>\]: appIdentity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[AppId \<String\>\]: Refers to the unique ID representing application in Microsoft Entra ID.
+      \[DisplayName \<String\>\]: Refers to the application name displayed in the Microsoft Entra admin center.
+      \[ServicePrincipalId \<String\>\]: Refers to the unique ID for the service principal in Microsoft Entra ID.
+      \[ServicePrincipalName \<String\>\]: Refers to the Service Principal Name is the Application name in the tenant.
+    \[DisplayName \<String\>\]: The name of the printTaskDefinition.
+    \[Tasks \<IMicrosoftGraphPrintTask\[\]\>\]: A list of tasks that have been created based on this definition.
+The list includes currently running tasks and recently completed tasks.
+Read-only.
+      \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+      \[Definition \<IMicrosoftGraphPrintTaskDefinition\>\]: printTaskDefinition
+      \[ParentUrl \<String\>\]: The URL for the print entity that triggered this task.
+For example, https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{jobId}.
+Read-only.
+      \[Status \<IMicrosoftGraphPrintTaskStatus\>\]: printTaskStatus
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[Description \<String\>\]: A human-readable description of the current processing state of the printTask.
+        \[State \<String\>\]: printTaskProcessingState
+      \[Trigger \<IMicrosoftGraphPrintTaskTrigger\>\]: printTaskTrigger
+  \[Event \<String\>\]: printEvent
 
-`BODYPARAMETER <IMicrosoftGraphPrintTaskTrigger>`: printTaskTrigger
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Definition <IMicrosoftGraphPrintTaskDefinition>]`: printTaskDefinition
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[CreatedBy <IMicrosoftGraphAppIdentity>]`: appIdentity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[AppId <String>]`: Refers to the Unique GUID representing Application Id in the Azure Active Directory.
-      - `[DisplayName <String>]`: Refers to the application name displayed in the Microsoft Entra admin center.
-      - `[ServicePrincipalId <String>]`: Refers to the Unique GUID indicating Service Principal Id in Azure Active Directory for the corresponding App.
-      - `[ServicePrincipalName <String>]`: Refers to the Service Principal Name is the Application name in the tenant.
-    - `[DisplayName <String>]`: The name of the printTaskDefinition.
-    - `[Tasks <IMicrosoftGraphPrintTask[]>]`: A list of tasks that have been created based on this definition. The list includes currently running tasks and recently completed tasks. Read-only.
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
-      - `[Definition <IMicrosoftGraphPrintTaskDefinition>]`: printTaskDefinition
-      - `[ParentUrl <String>]`: The URL for the print entity that triggered this task. For example, https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{jobId}. Read-only.
-      - `[Status <IMicrosoftGraphPrintTaskStatus>]`: printTaskStatus
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Description <String>]`: A human-readable description of the current processing state of the printTask.
-        - `[State <String>]`: printTaskProcessingState
-      - `[Trigger <IMicrosoftGraphPrintTaskTrigger>]`: printTaskTrigger
-  - `[Event <String>]`: printEvent
+DEFINITION \<IMicrosoftGraphPrintTaskDefinition\>: printTaskDefinition
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[CreatedBy \<IMicrosoftGraphAppIdentity\>\]: appIdentity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[AppId \<String\>\]: Refers to the unique ID representing application in Microsoft Entra ID.
+    \[DisplayName \<String\>\]: Refers to the application name displayed in the Microsoft Entra admin center.
+    \[ServicePrincipalId \<String\>\]: Refers to the unique ID for the service principal in Microsoft Entra ID.
+    \[ServicePrincipalName \<String\>\]: Refers to the Service Principal Name is the Application name in the tenant.
+  \[DisplayName \<String\>\]: The name of the printTaskDefinition.
+  \[Tasks \<IMicrosoftGraphPrintTask\[\]\>\]: A list of tasks that have been created based on this definition.
+The list includes currently running tasks and recently completed tasks.
+Read-only.
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[Definition \<IMicrosoftGraphPrintTaskDefinition\>\]: printTaskDefinition
+    \[ParentUrl \<String\>\]: The URL for the print entity that triggered this task.
+For example, https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{jobId}.
+Read-only.
+    \[Status \<IMicrosoftGraphPrintTaskStatus\>\]: printTaskStatus
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Description \<String\>\]: A human-readable description of the current processing state of the printTask.
+      \[State \<String\>\]: printTaskProcessingState
+    \[Trigger \<IMicrosoftGraphPrintTaskTrigger\>\]: printTaskTrigger
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+      \[Definition \<IMicrosoftGraphPrintTaskDefinition\>\]: printTaskDefinition
+      \[Event \<String\>\]: printEvent
 
-`DEFINITION <IMicrosoftGraphPrintTaskDefinition>`: printTaskDefinition
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[CreatedBy <IMicrosoftGraphAppIdentity>]`: appIdentity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AppId <String>]`: Refers to the Unique GUID representing Application Id in the Azure Active Directory.
-    - `[DisplayName <String>]`: Refers to the application name displayed in the Microsoft Entra admin center.
-    - `[ServicePrincipalId <String>]`: Refers to the Unique GUID indicating Service Principal Id in Azure Active Directory for the corresponding App.
-    - `[ServicePrincipalName <String>]`: Refers to the Service Principal Name is the Application name in the tenant.
-  - `[DisplayName <String>]`: The name of the printTaskDefinition.
-  - `[Tasks <IMicrosoftGraphPrintTask[]>]`: A list of tasks that have been created based on this definition. The list includes currently running tasks and recently completed tasks. Read-only.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[Definition <IMicrosoftGraphPrintTaskDefinition>]`: printTaskDefinition
-    - `[ParentUrl <String>]`: The URL for the print entity that triggered this task. For example, https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{jobId}. Read-only.
-    - `[Status <IMicrosoftGraphPrintTaskStatus>]`: printTaskStatus
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Description <String>]`: A human-readable description of the current processing state of the printTask.
-      - `[State <String>]`: printTaskProcessingState
-    - `[Trigger <IMicrosoftGraphPrintTaskTrigger>]`: printTaskTrigger
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
-      - `[Definition <IMicrosoftGraphPrintTaskDefinition>]`: printTaskDefinition
-      - `[Event <String>]`: printEvent
-
-`INPUTOBJECT <IDevicesCloudPrintIdentity>`: Identity Parameter
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[PrintConnectorId <String>]`: The unique identifier of printConnector
-  - `[PrintDocumentId <String>]`: The unique identifier of printDocument
-  - `[PrintJobId <String>]`: The unique identifier of printJob
-  - `[PrintOperationId <String>]`: The unique identifier of printOperation
-  - `[PrintServiceEndpointId <String>]`: The unique identifier of printServiceEndpoint
-  - `[PrintServiceId <String>]`: The unique identifier of printService
-  - `[PrintTaskDefinitionId <String>]`: The unique identifier of printTaskDefinition
-  - `[PrintTaskId <String>]`: The unique identifier of printTask
-  - `[PrintTaskTriggerId <String>]`: The unique identifier of printTaskTrigger
-  - `[PrinterId <String>]`: The unique identifier of printer
-  - `[PrinterShareId <String>]`: The unique identifier of printerShare
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IDevicesCloudPrintIdentity\>: Identity Parameter
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[PrintConnectorId \<String\>\]: The unique identifier of printConnector
+  \[PrintDocumentId \<String\>\]: The unique identifier of printDocument
+  \[PrintJobId \<String\>\]: The unique identifier of printJob
+  \[PrintOperationId \<String\>\]: The unique identifier of printOperation
+  \[PrintServiceEndpointId \<String\>\]: The unique identifier of printServiceEndpoint
+  \[PrintServiceId \<String\>\]: The unique identifier of printService
+  \[PrintTaskDefinitionId \<String\>\]: The unique identifier of printTaskDefinition
+  \[PrintTaskId \<String\>\]: The unique identifier of printTask
+  \[PrintTaskTriggerId \<String\>\]: The unique identifier of printTaskTrigger
+  \[PrinterId \<String\>\]: The unique identifier of printer
+  \[PrinterShareId \<String\>\]: The unique identifier of printerShare
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 [New-MgBetaPrintPrinterTaskTrigger](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintPrinterTaskTrigger?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprintertasktrigger](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprintertasktrigger)
+

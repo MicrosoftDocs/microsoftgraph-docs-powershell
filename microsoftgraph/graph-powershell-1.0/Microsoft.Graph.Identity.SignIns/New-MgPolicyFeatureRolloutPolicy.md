@@ -3,13 +3,14 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyfeaturerolloutpolicy
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # New-MgPolicyFeatureRolloutPolicy
 
 ## SYNOPSIS
 Create a new featureRolloutPolicy object.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPolicyFeatureRolloutPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyFeatureRolloutPolicy?view=graph-powershell-beta)
@@ -32,7 +33,7 @@ New-MgPolicyFeatureRolloutPolicy -BodyParameter <IMicrosoftGraphFeatureRolloutPo
 
 ## DESCRIPTION
 Create a new featureRolloutPolicy object.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -176,7 +177,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -191,7 +192,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -237,30 +238,36 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFeatureRolloutPolicy
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+APPLIESTO \<IMicrosoftGraphDirectoryObject\[\]\>: Nullable.
+Specifies a list of directoryObjects that feature is enabled for.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
+Always null when the object hasn't been deleted.
 
-`APPLIESTO <IMicrosoftGraphDirectoryObject[]>`: Nullable. Specifies a list of directoryObjects that feature is enabled for.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-
-`BODYPARAMETER <IMicrosoftGraphFeatureRolloutPolicy>`: featureRolloutPolicy
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[AppliesTo <IMicrosoftGraphDirectoryObject[]>]`: Nullable. Specifies a list of directoryObjects that feature is enabled for.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-  - `[Description <String>]`: A description for this feature rollout policy.
-  - `[DisplayName <String>]`: The display name for this  feature rollout policy.
-  - `[Feature <String>]`: stagedFeatureName
-  - `[IsAppliedToOrganization <Boolean?>]`: Indicates whether this feature rollout policy should be applied to the entire organization.
-  - `[IsEnabled <Boolean?>]`: Indicates whether the feature rollout is enabled.
+BODYPARAMETER \<IMicrosoftGraphFeatureRolloutPolicy\>: featureRolloutPolicy
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[AppliesTo \<IMicrosoftGraphDirectoryObject\[\]\>\]: Nullable.
+Specifies a list of directoryObjects that feature is enabled for.
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
+Always null when the object hasn't been deleted.
+  \[Description \<String\>\]: A description for this feature rollout policy.
+  \[DisplayName \<String\>\]: The display name for this  feature rollout policy.
+  \[Feature \<String\>\]: stagedFeatureName
+  \[IsAppliedToOrganization \<Boolean?\>\]: Indicates whether this feature rollout policy should be applied to the entire organization.
+  \[IsEnabled \<Boolean?\>\]: Indicates whether the feature rollout is enabled.
 
 ## RELATED LINKS
-
 [New-MgBetaPolicyFeatureRolloutPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyFeatureRolloutPolicy?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyfeaturerolloutpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyfeaturerolloutpolicy)
+

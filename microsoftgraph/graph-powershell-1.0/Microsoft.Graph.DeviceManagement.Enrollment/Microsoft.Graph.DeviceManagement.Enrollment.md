@@ -1,85 +1,85 @@
 ---
 Module Name: Microsoft.Graph.DeviceManagement.Enrollment
-Module Guid: 0ec021fe-1026-466f-9e2f-441aa16ad52b
-Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment
-Help Version: 1.0.0.0
+Module Guid: cb05f22d-85cd-4b42-b99c-b713e0b9fbd3
+Download Help Link: {{ Update Download Link }}
+Help Version: {{ Please enter version of help manually (X.X.X.X) format }}
 Locale: en-US
 ---
 
 # Microsoft.Graph.DeviceManagement.Enrollment Module
 ## Description
-Microsoft Graph PowerShell Cmdlets
+{{ Fill in the Description }}
 
 ## Microsoft.Graph.DeviceManagement.Enrollment Cmdlets
 ### [Get-MgDeviceManagementConditionalAccessSetting](Get-MgDeviceManagementConditionalAccessSetting.md)
-Read properties and relationships of the onPremisesConditionalAccessSettings object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceEnrollmentConfiguration](Get-MgDeviceManagementDeviceEnrollmentConfiguration.md)
-Read properties and relationships of the deviceEnrollmentLimitConfiguration object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceEnrollmentConfigurationAssignment](Get-MgDeviceManagementDeviceEnrollmentConfigurationAssignment.md)
-Read properties and relationships of the enrollmentConfigurationAssignment object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceEnrollmentConfigurationAssignmentCount](Get-MgDeviceManagementDeviceEnrollmentConfigurationAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceEnrollmentConfigurationCount](Get-MgDeviceManagementDeviceEnrollmentConfigurationCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity](Get-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity.md)
-Read properties and relationships of the importedWindowsAutopilotDeviceIdentity object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementImportedWindowsAutopilotDeviceIdentityCount](Get-MgDeviceManagementImportedWindowsAutopilotDeviceIdentityCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementWindowsAutopilotDeviceIdentity](Get-MgDeviceManagementWindowsAutopilotDeviceIdentity.md)
-Read properties and relationships of the windowsAutopilotDeviceIdentity object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementWindowsAutopilotDeviceIdentityCount](Get-MgDeviceManagementWindowsAutopilotDeviceIdentityCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgRoleManagement](Get-MgRoleManagement.md)
-Get roleManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementDeviceEnrollmentConfiguration](New-MgDeviceManagementDeviceEnrollmentConfiguration.md)
-Create a new deviceEnrollmentWindowsHelloForBusinessConfiguration object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementDeviceEnrollmentConfigurationAssignment](New-MgDeviceManagementDeviceEnrollmentConfigurationAssignment.md)
-Create a new enrollmentConfigurationAssignment object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity](New-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity.md)
-Create a new importedWindowsAutopilotDeviceIdentity object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementWindowsAutopilotDeviceIdentity](New-MgDeviceManagementWindowsAutopilotDeviceIdentity.md)
-Create a new windowsAutopilotDeviceIdentity object.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementConditionalAccessSetting](Remove-MgDeviceManagementConditionalAccessSetting.md)
-Delete navigation property conditionalAccessSettings for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceEnrollmentConfiguration](Remove-MgDeviceManagementDeviceEnrollmentConfiguration.md)
-Deletes a deviceEnrollmentWindowsHelloForBusinessConfiguration.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceEnrollmentConfigurationAssignment](Remove-MgDeviceManagementDeviceEnrollmentConfigurationAssignment.md)
-Deletes a enrollmentConfigurationAssignment.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity](Remove-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity.md)
-Deletes a importedWindowsAutopilotDeviceIdentity.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementWindowsAutopilotDeviceIdentity](Remove-MgDeviceManagementWindowsAutopilotDeviceIdentity.md)
-Deletes a windowsAutopilotDeviceIdentity.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementConditionalAccessSetting](Update-MgDeviceManagementConditionalAccessSetting.md)
-Update the properties of a onPremisesConditionalAccessSettings object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceEnrollmentConfiguration](Update-MgDeviceManagementDeviceEnrollmentConfiguration.md)
-Update the properties of a deviceEnrollmentWindowsHelloForBusinessConfiguration object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceEnrollmentConfigurationAssignment](Update-MgDeviceManagementDeviceEnrollmentConfigurationAssignment.md)
-Update the properties of a enrollmentConfigurationAssignment object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity](Update-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity.md)
-Update the navigation property importedWindowsAutopilotDeviceIdentities in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgRoleManagement](Update-MgRoleManagement.md)
-Update roleManagement
+{{ Fill in the Description }}
 

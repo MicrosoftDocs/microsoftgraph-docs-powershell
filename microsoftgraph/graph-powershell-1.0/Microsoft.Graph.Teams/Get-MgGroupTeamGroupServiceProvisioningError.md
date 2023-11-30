@@ -24,8 +24,6 @@ Get-MgGroupTeamGroupServiceProvisioningError -GroupId <String> [-ExpandProperty 
 ## DESCRIPTION
 Get serviceProvisioningErrors property value
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -38,7 +36,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -114,7 +112,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -174,7 +172,7 @@ Aliases: Limit
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -189,7 +187,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -204,9 +202,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServiceProvisioningError
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
-
 [Get-MgBetaGroupTeamGroupServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamGroupServiceProvisioningError?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamgroupserviceprovisioningerror](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamgroupserviceprovisioningerror)
+
 

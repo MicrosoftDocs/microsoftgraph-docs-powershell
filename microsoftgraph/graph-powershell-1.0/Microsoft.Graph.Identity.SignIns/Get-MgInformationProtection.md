@@ -22,8 +22,6 @@ Get-MgInformationProtection [-ExpandProperty <String[]>] [-Property <String[]>] 
 ## DESCRIPTION
 Get informationProtection
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -66,9 +64,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationProtection
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
-
 [Get-MgBetaInformationProtection](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInformationProtection?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mginformationprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mginformationprotection)
+
 

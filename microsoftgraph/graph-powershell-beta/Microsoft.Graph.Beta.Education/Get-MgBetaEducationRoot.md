@@ -64,8 +64,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationRoot
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
 [Get-MgEducationRoot](/powershell/module/Microsoft.Graph.Education/Get-MgEducationRoot?view=graph-powershell-1.0)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationroot)
+
 

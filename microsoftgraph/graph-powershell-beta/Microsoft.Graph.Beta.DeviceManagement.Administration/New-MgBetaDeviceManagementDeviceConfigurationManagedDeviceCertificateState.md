@@ -135,7 +135,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -302,29 +302,30 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedAllDeviceCertificateState
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`BODYPARAMETER <IMicrosoftGraphManagedAllDeviceCertificateState>`: managedAllDeviceCertificateState
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[CertificateExpirationDateTime <DateTime?>]`: Certificate expiry date
-  - `[CertificateExtendedKeyUsages <String>]`: Enhanced Key Usage
-  - `[CertificateIssuanceDateTime <DateTime?>]`: Issuance date
-  - `[CertificateIssuerName <String>]`: Issuer
-  - `[CertificateKeyUsages <Int32?>]`: Key Usage
-  - `[CertificateRevokeStatus <CertificateRevocationStatus?>]`: Certificate Revocation Status.
-  - `[CertificateRevokeStatusLastChangeDateTime <DateTime?>]`: The time the revoke status was last changed
-  - `[CertificateSerialNumber <String>]`: Serial number
-  - `[CertificateSubjectName <String>]`: Certificate subject name
-  - `[CertificateThumbprint <String>]`: Thumbprint
-  - `[ManagedDeviceDisplayName <String>]`: Device display name
-  - `[UserPrincipalName <String>]`: User principal name
+BODYPARAMETER \<IMicrosoftGraphManagedAllDeviceCertificateState\>: managedAllDeviceCertificateState
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[CertificateExpirationDateTime \<DateTime?\>\]: Certificate expiry date
+  \[CertificateExtendedKeyUsages \<String\>\]: Enhanced Key Usage
+  \[CertificateIssuanceDateTime \<DateTime?\>\]: Issuance date
+  \[CertificateIssuerName \<String\>\]: Issuer
+  \[CertificateKeyUsages \<Int32?\>\]: Key Usage
+  \[CertificateRevokeStatus \<CertificateRevocationStatus?\>\]: Certificate Revocation Status.
+  \[CertificateRevokeStatusLastChangeDateTime \<DateTime?\>\]: The time the revoke status was last changed
+  \[CertificateSerialNumber \<String\>\]: Serial number
+  \[CertificateSubjectName \<String\>\]: Certificate subject name
+  \[CertificateThumbprint \<String\>\]: Thumbprint
+  \[ManagedDeviceDisplayName \<String\>\]: Device display name
+  \[UserPrincipalName \<String\>\]: User principal name
 
 ## RELATED LINKS
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementdeviceconfigurationmanageddevicecertificatestate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementdeviceconfigurationmanageddevicecertificatestate)
+
 

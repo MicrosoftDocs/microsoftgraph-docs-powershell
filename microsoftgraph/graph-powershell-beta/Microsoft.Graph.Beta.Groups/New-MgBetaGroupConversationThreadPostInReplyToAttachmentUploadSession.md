@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupconversationthreadpostinreplytoattachmentuploadsession
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # New-MgBetaGroupConversationThreadPostInReplyToAttachmentUploadSession
@@ -16,6 +17,7 @@ As part of the response, this action returns an upload URL that you can use in s
 Request headers for each PUT operation let you specify the exact range of bytes to be uploaded.
 This allows transfer to be resumed, in case the network connection is dropped during upload.
 The following are the steps to attach a file to an Outlook item using an upload session: See attach large files to Outlook messages or events for an example.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgGroupConversationThreadPostInReplyToAttachmentUploadSession](/powershell/module/Microsoft.Graph.Groups/New-MgGroupConversationThreadPostInReplyToAttachmentUploadSession?view=graph-powershell-1.0)
@@ -60,6 +62,7 @@ As part of the response, this action returns an upload URL that you can use in s
 Request headers for each PUT operation let you specify the exact range of bytes to be uploaded.
 This allows transfer to be resumed, in case the network connection is dropped during upload.
 The following are the steps to attach a file to an Outlook item using an upload session: See attach large files to Outlook messages or events for an example.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Create an upload session to add a large attachment to a draft message
@@ -287,7 +290,7 @@ Optional.
   \[IsInline \<Boolean?\>\]: true if the attachment is an inline attachment; otherwise, false.
 Optional.
   \[Name \<String\>\]: The display name of the attachment.
-This can be a descriptive string and does not have to be the actual file name.
+This can be a descriptive string and doesn't have to be the actual file name.
 Required.
   \[Size \<Int64?\>\]: The length of the attachment in bytes.
 Required.
@@ -304,7 +307,7 @@ Optional.
     \[IsInline \<Boolean?\>\]: true if the attachment is an inline attachment; otherwise, false.
 Optional.
     \[Name \<String\>\]: The display name of the attachment.
-This can be a descriptive string and does not have to be the actual file name.
+This can be a descriptive string and doesn't have to be the actual file name.
 Required.
     \[Size \<Int64?\>\]: The length of the attachment in bytes.
 Required.

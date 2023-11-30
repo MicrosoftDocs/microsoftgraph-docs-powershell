@@ -210,25 +210,24 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionWipeAction
 ## NOTES
-
-ALIASES
-
-New-MgBetaDeviceAppMgtWindowInformationProtectionWipeAction
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`BODYPARAMETER <IMicrosoftGraphWindowsInformationProtectionWipeAction>`: Represents wipe requests issued by tenant admin for Bring-Your-Own-Device(BYOD) Windows devices.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[LastCheckInDateTime <DateTime?>]`: Last checkin time of the device that was targeted by this wipe action.
-  - `[Status <String>]`: actionState
-  - `[TargetedDeviceMacAddress <String>]`: Targeted device Mac address.
-  - `[TargetedDeviceName <String>]`: Targeted device name.
-  - `[TargetedDeviceRegistrationId <String>]`: The DeviceRegistrationId being targeted by this wipe action.
-  - `[TargetedUserId <String>]`: The UserId being targeted by this wipe action.
+BODYPARAMETER \<IMicrosoftGraphWindowsInformationProtectionWipeAction\>: Represents wipe requests issued by tenant admin for Bring-Your-Own-Device(BYOD) Windows devices.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[LastCheckInDateTime \<DateTime?\>\]: Last checkin time of the device that was targeted by this wipe action.
+  \[Status \<String\>\]: actionState
+  \[TargetedDeviceMacAddress \<String\>\]: Targeted device Mac address.
+  \[TargetedDeviceName \<String\>\]: Targeted device name.
+  \[TargetedDeviceRegistrationId \<String\>\]: The DeviceRegistrationId being targeted by this wipe action.
+  \[TargetedUserId \<String\>\]: The UserId being targeted by this wipe action.
 
 ## RELATED LINKS
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementwindowsinformationprotectionwipeaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementwindowsinformationprotectionwipeaction)
+
 

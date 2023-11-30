@@ -22,8 +22,6 @@ Get-MgSecurityAlertV2Count [-Filter <String>] [-Search <String>] [<CommonParamet
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Filter
@@ -66,9 +64,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.Int32
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
-
 [Get-MgBetaSecurityAlertV2Count](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAlertV2Count?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityalertv2count](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityalertv2count)
+
 

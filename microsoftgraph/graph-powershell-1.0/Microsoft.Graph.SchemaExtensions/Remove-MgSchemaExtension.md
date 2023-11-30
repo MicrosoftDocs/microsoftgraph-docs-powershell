@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.SchemaExtensions-help.xml
 Module Name: Microsoft.Graph.SchemaExtensions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/remove-mgschemaextension
 schema: 2.0.0
+ms.prod: extensions
 ---
 
 # Remove-MgSchemaExtension
@@ -92,7 +93,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -153,17 +154,16 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`INPUTOBJECT <ISchemaExtensionsIdentity>`: Identity Parameter
-  - `[SchemaExtensionId <String>]`: The unique identifier of schemaExtension
+INPUTOBJECT \<ISchemaExtensionsIdentity\>: Identity Parameter
+  \[SchemaExtensionId \<String\>\]: The unique identifier of schemaExtension
 
 ## RELATED LINKS
-
 [Remove-MgBetaSchemaExtension](/powershell/module/Microsoft.Graph.Beta.SchemaExtensions/Remove-MgBetaSchemaExtension?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/remove-mgschemaextension](https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/remove-mgschemaextension)
+

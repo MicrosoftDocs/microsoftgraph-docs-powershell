@@ -200,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserName
-[deprecated] Please use InitiatedByUserPrincipalName instead.
+\[deprecated\] Please use InitiatedByUserPrincipalName instead.
 
 ```yaml
 Type: String
@@ -255,26 +255,27 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRemoteActionAudit
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`BODYPARAMETER <IMicrosoftGraphRemoteActionAudit>`: Report of remote actions initiated on the devices belonging to a certain tenant.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Action <RemoteAction?>]`: Remote actions Intune supports.
-  - `[ActionState <String>]`: actionState
-  - `[DeviceDisplayName <String>]`: Intune device name.
-  - `[DeviceImei <String>]`: IMEI of the device.
-  - `[DeviceOwnerUserPrincipalName <String>]`: Upn of the device owner.
-  - `[InitiatedByUserPrincipalName <String>]`: User who initiated the device action, format is UPN.
-  - `[ManagedDeviceId <String>]`: Action target.
-  - `[RequestDateTime <DateTime?>]`: Time when the action was issued, given in UTC.
-  - `[UserName <String>]`: [deprecated] Please use InitiatedByUserPrincipalName instead.
+BODYPARAMETER \<IMicrosoftGraphRemoteActionAudit\>: Report of remote actions initiated on the devices belonging to a certain tenant.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[Action \<RemoteAction?\>\]: Remote actions Intune supports.
+  \[ActionState \<String\>\]: actionState
+  \[DeviceDisplayName \<String\>\]: Intune device name.
+  \[DeviceImei \<String\>\]: IMEI of the device.
+  \[DeviceOwnerUserPrincipalName \<String\>\]: Upn of the device owner.
+  \[InitiatedByUserPrincipalName \<String\>\]: User who initiated the device action, format is UPN.
+  \[ManagedDeviceId \<String\>\]: Action target.
+  \[RequestDateTime \<DateTime?\>\]: Time when the action was issued, given in UTC.
+  \[UserName \<String\>\]: \[deprecated\] Please use InitiatedByUserPrincipalName instead.
 
 ## RELATED LINKS
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementremoteactionaudit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementremoteactionaudit)
+
 

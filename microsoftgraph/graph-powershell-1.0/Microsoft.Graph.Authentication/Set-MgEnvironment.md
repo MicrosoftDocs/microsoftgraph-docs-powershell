@@ -23,7 +23,7 @@ Sets a Microsoft Graph environment to the settings file.
 ## EXAMPLES
 
 ### Example 1: Set environment for the current session
-```powershell
+```
 PS C:\> Set-MgEnvironment -GraphEndpoint "https://canary.graph.microsoft.com" -AzureADEndpoint "https://login.microsoftonline.com"
 ```
 
@@ -86,7 +86,7 @@ Aliases: cf
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -102,7 +102,7 @@ Aliases: wi
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -119,6 +119,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
-[https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/set-mgenvironment](https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/set-mgenvironment)
-

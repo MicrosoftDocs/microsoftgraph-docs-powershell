@@ -39,6 +39,8 @@ Get-MgBetaGroupTeamChannelSharedWithTeamAllowedMember -InputObject <ITeamsIdenti
 ## DESCRIPTION
 A collection of team members who have access to the shared channel.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -327,5 +329,4 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Get-MgGroupTeamChannelSharedWithTeamAllowedMember](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamChannelSharedWithTeamAllowedMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamchannelsharedwithteamallowedmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamchannelsharedwithteamallowedmember)
-
 

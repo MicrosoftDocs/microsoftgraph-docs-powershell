@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccessnamedlocation
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Update-MgBetaIdentityConditionalAccessNamedLocation
 
 ## SYNOPSIS
-Update the properties of an ipNamedLocation object.
+Update the properties of a countryNamedLocation object.
 This API is available in the following national cloud deployments.
 
 > [!NOTE]
@@ -43,7 +44,7 @@ Update-MgBetaIdentityConditionalAccessNamedLocation -InputObject <IIdentitySignI
 ```
 
 ## DESCRIPTION
-Update the properties of an ipNamedLocation object.
+Update the properties of a countryNamedLocation object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES

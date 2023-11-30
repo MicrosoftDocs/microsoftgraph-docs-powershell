@@ -1,193 +1,193 @@
 ---
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
-Module Guid: 6e76a072-a2b3-4f63-b701-187a8cc85c6d
-Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions
-Help Version: 1.0.0.0
+Module Guid: a629509a-ebee-475b-aa2d-5201c47a425c
+Download Help Link: {{ Update Download Link }}
+Help Version: {{ Please enter version of help manually (X.X.X.X) format }}
 Locale: en-US
 ---
 
 # Microsoft.Graph.Beta.DeviceManagement.Functions Module
 ## Description
-Microsoft Graph PowerShell Cmdlets
+{{ Fill in the Description }}
 
 ## Microsoft.Graph.Beta.DeviceManagement.Functions Cmdlets
 ### [Compare-MgBetaDeviceManagementIntent](Compare-MgBetaDeviceManagementIntent.md)
-Invoke function compare
+{{ Fill in the Description }}
 
 ### [Compare-MgBetaDeviceManagementTemplate](Compare-MgBetaDeviceManagementTemplate.md)
-Invoke function compare
+{{ Fill in the Description }}
 
 ### [Compare-MgBetaDeviceManagementTemplateMigratableTo](Compare-MgBetaDeviceManagementTemplateMigratableTo.md)
-Invoke function compare
+{{ Fill in the Description }}
 
 ### [Confirm-MgBetaDeviceManagementWindowsEnrollmentAutoDiscovery](Confirm-MgBetaDeviceManagementWindowsEnrollmentAutoDiscovery.md)
-Invoke function verifyWindowsEnrollmentAutoDiscovery
+{{ Fill in the Description }}
 
 ### [Export-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfileMobileConfig](Export-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfileMobileConfig.md)
-Exports the mobile configuration
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementAssignedRoleDetail](Get-MgBetaDeviceManagementAssignedRoleDetail.md)
-Retrieves the assigned role definitions and role assignments of the currently authenticated user.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementAssignmentFilterPlatformSupportedProperty](Get-MgBetaDeviceManagementAssignmentFilterPlatformSupportedProperty.md)
-Invoke function getPlatformSupportedProperties
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementAssignmentFilterState](Get-MgBetaDeviceManagementAssignmentFilterState.md)
-Invoke function getState
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementAssignmentFilterSupportedProperty](Get-MgBetaDeviceManagementAssignmentFilterSupportedProperty.md)
-Invoke function getSupportedProperties
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementAuditEventAuditActivityType](Get-MgBetaDeviceManagementAuditEventAuditActivityType.md)
-Invoke function getAuditActivityTypes
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementAuditEventAuditCategory](Get-MgBetaDeviceManagementAuditEventAuditCategory.md)
-Invoke function getAuditCategories
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementComanagedDeviceCloudPcRemoteActionResult](Get-MgBetaDeviceManagementComanagedDeviceCloudPcRemoteActionResult.md)
-Invoke function getCloudPcRemoteActionResults
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementComanagedDeviceCloudPcReviewStatus](Get-MgBetaDeviceManagementComanagedDeviceCloudPcReviewStatus.md)
-Invoke function getCloudPcReviewStatus
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementComanagedDeviceFileVaultKey](Get-MgBetaDeviceManagementComanagedDeviceFileVaultKey.md)
-Invoke function getFileVaultKey
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementComanagedDeviceNonCompliantSetting](Get-MgBetaDeviceManagementComanagedDeviceNonCompliantSetting.md)
-Invoke function getNonCompliantSettings
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementComanagedDeviceSummary](Get-MgBetaDeviceManagementComanagedDeviceSummary.md)
-Invoke function getComanagedDevicesSummary
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementComanagementEligibleDeviceSummary](Get-MgBetaDeviceManagementComanagementEligibleDeviceSummary.md)
-Invoke function getComanagementEligibleDevicesSummary
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementConfigManagerCollectionPolicySummary](Get-MgBetaDeviceManagementConfigManagerCollectionPolicySummary.md)
-Invoke function getPolicySummary
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDepOnboardingSettingEncryptionPublicKey](Get-MgBetaDeviceManagementDepOnboardingSettingEncryptionPublicKey.md)
-Get a public key to use to encrypt the Apple device enrollment program token
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDepOnboardingSettingExpiringVppTokenCount](Get-MgBetaDeviceManagementDepOnboardingSettingExpiringVppTokenCount.md)
-Invoke function getExpiringVppTokenCount
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceCompliancePolicyDeviceScheduledToRetire](Get-MgBetaDeviceManagementDeviceCompliancePolicyDeviceScheduledToRetire.md)
-Invoke function getDevicesScheduledToRetire
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceConfigurationIoAvailableUpdateVersion](Get-MgBetaDeviceManagementDeviceConfigurationIoAvailableUpdateVersion.md)
-Invoke function getIosAvailableUpdateVersions
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceConfigurationOmaSettingPlainTextValue](Get-MgBetaDeviceManagementDeviceConfigurationOmaSettingPlainTextValue.md)
-Invoke function getOmaSettingPlainTextValue
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceHealthScriptRemediationHistory](Get-MgBetaDeviceManagementDeviceHealthScriptRemediationHistory.md)
-Function to get the number of remediations by a device health scripts
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceHealthScriptRemediationSummary](Get-MgBetaDeviceManagementDeviceHealthScriptRemediationSummary.md)
-Invoke function getRemediationSummary
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementEffectivePermission](Get-MgBetaDeviceManagementEffectivePermission.md)
-Invoke function getEffectivePermissions
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementIntentCustomizedSetting](Get-MgBetaDeviceManagementIntentCustomizedSetting.md)
-Invoke function getCustomizedSettings
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementManagedDeviceCloudPcRemoteActionResult](Get-MgBetaDeviceManagementManagedDeviceCloudPcRemoteActionResult.md)
-Invoke function getCloudPcRemoteActionResults
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementManagedDeviceCloudPcReviewStatus](Get-MgBetaDeviceManagementManagedDeviceCloudPcReviewStatus.md)
-Invoke function getCloudPcReviewStatus
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementManagedDeviceFileVaultKey](Get-MgBetaDeviceManagementManagedDeviceFileVaultKey.md)
-Invoke function getFileVaultKey
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementManagedDeviceNonCompliantSetting](Get-MgBetaDeviceManagementManagedDeviceNonCompliantSetting.md)
-Invoke function getNonCompliantSettings
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementMonitoringAlertRecordPortalNotification](Get-MgBetaDeviceManagementMonitoringAlertRecordPortalNotification.md)
-Invoke function getPortalNotifications
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementResourceOperationScopeForUser](Get-MgBetaDeviceManagementResourceOperationScopeForUser.md)
-Invoke function getScopesForUser
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementRoleScopeTagById](Get-MgBetaDeviceManagementRoleScopeTagById.md)
-Invoke function getRoleScopeTagsByIds
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementRoleScopeTagByResource](Get-MgBetaDeviceManagementRoleScopeTagByResource.md)
-Invoke function getRoleScopeTagsByResource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementSuggestedEnrollmentLimit](Get-MgBetaDeviceManagementSuggestedEnrollmentLimit.md)
-Invoke function getSuggestedEnrollmentLimit
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementTenantAttachRbacState](Get-MgBetaDeviceManagementTenantAttachRbacState.md)
-Invoke function getState
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementVirtualEndpointAuditEventAuditActivityType](Get-MgBetaDeviceManagementVirtualEndpointAuditEventAuditActivityType.md)
-Invoke function getAuditActivityTypes
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementVirtualEndpointCloudPcConnectivityHistory](Get-MgBetaDeviceManagementVirtualEndpointCloudPcConnectivityHistory.md)
-Invoke function getCloudPcConnectivityHistory
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementVirtualEndpointCloudPcFrontlineCloudPcAccessState](Get-MgBetaDeviceManagementVirtualEndpointCloudPcFrontlineCloudPcAccessState.md)
-Invoke function getFrontlineCloudPcAccessState
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementVirtualEndpointCloudPcLaunchInfo](Get-MgBetaDeviceManagementVirtualEndpointCloudPcLaunchInfo.md)
-Invoke function getCloudPcLaunchInfo
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementVirtualEndpointCloudPcProvisionedCloudPc](Get-MgBetaDeviceManagementVirtualEndpointCloudPcProvisionedCloudPc.md)
-Invoke function getProvisionedCloudPCs
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementVirtualEndpointCloudPcShiftWorkCloudPcAccessState](Get-MgBetaDeviceManagementVirtualEndpointCloudPcShiftWorkCloudPcAccessState.md)
-Invoke function getShiftWorkCloudPcAccessState
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementVirtualEndpointCloudPcSupportedCloudPcRemoteAction](Get-MgBetaDeviceManagementVirtualEndpointCloudPcSupportedCloudPcRemoteAction.md)
-Invoke function getSupportedCloudPcRemoteActions
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementVirtualEndpointDeviceImageSourceImage](Get-MgBetaDeviceManagementVirtualEndpointDeviceImageSourceImage.md)
-Invoke function getSourceImages
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementVirtualEndpointEffectivePermission](Get-MgBetaDeviceManagementVirtualEndpointEffectivePermission.md)
-Invoke function getEffectivePermissions
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionLatency](Get-MgBetaDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionLatency.md)
-Invoke function getRealTimeRemoteConnectionLatency
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionStatus](Get-MgBetaDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionStatus.md)
-Invoke function getRealTimeRemoteConnectionStatus
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementVirtualEndpointSnapshotStorageAccount](Get-MgBetaDeviceManagementVirtualEndpointSnapshotStorageAccount.md)
-Invoke function getStorageAccounts
+{{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementVirtualEndpointSnapshotSubscription](Get-MgBetaDeviceManagementVirtualEndpointSnapshotSubscription.md)
-Invoke function getSubscriptions
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaAppDeviceManagementComanagedDeviceDiagnostic](Invoke-MgBetaAppDeviceManagementComanagedDeviceDiagnostic.md)
-Invoke function appDiagnostics
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaAppDeviceManagementManagedDeviceDiagnostic](Invoke-MgBetaAppDeviceManagementManagedDeviceDiagnostic.md)
-Invoke function appDiagnostics
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaCustomDeviceManagementRoleScopeTag](Invoke-MgBetaCustomDeviceManagementRoleScopeTag.md)
-Invoke function hasCustomRoleScopeTag
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest](Invoke-MgBetaDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest.md)
-Download Apple push notification certificate signing request
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaExperienceDeviceManagement](Invoke-MgBetaExperienceDeviceManagement.md)
-Invoke function userExperienceAnalyticsSummarizedDeviceScopes
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaGraphDeviceManagement](Invoke-MgBetaGraphDeviceManagement.md)
-Invoke function scopedForResource
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaIsDeviceManagementDeviceHealthScriptGlobalScriptAvailable](Invoke-MgBetaIsDeviceManagementDeviceHealthScriptGlobalScriptAvailable.md)
-Invoke function areGlobalScriptsAvailable
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaSummarizeDeviceManagementUserExperienceAnalyticDevicePerformanceDevice](Invoke-MgBetaSummarizeDeviceManagementUserExperienceAnalyticDevicePerformanceDevice.md)
-Invoke function summarizeDevicePerformanceDevices
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaSummarizeDeviceManagementUserExperienceAnalyticRemoteConnectionDeviceRemoteConnection](Invoke-MgBetaSummarizeDeviceManagementUserExperienceAnalyticRemoteConnectionDeviceRemoteConnection.md)
-Invoke function summarizeDeviceRemoteConnection
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaSummarizeDeviceManagementUserExperienceAnalyticResourcePerformanceDeviceResourcePerformance](Invoke-MgBetaSummarizeDeviceManagementUserExperienceAnalyticResourcePerformanceDeviceResourcePerformance.md)
-Invoke function summarizeDeviceResourcePerformance
+{{ Fill in the Description }}
 

@@ -10,7 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the software for a Microsoft Teams-enabled device.
 This API triggers a long-running operation.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ Update-MgBetaTeamworkDeviceSoftware -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the software for a Microsoft Teams-enabled device.
 This API triggers a long-running operation.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaTeamworkDeviceSoftware Cmdlet

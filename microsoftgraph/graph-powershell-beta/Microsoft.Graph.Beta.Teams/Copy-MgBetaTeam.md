@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/copy-mgbetateam
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # Copy-MgBetaTeam
@@ -16,7 +17,7 @@ Cloning is a long-running operation.
 After the POST clone returns, you need to GET the operation returned by the Location: header to see if it's running, succeeded, or failed.
 You should continue to GET until the status isn't running.
 The recommended delay between GETs is 5 seconds.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Copy-MgTeam](/powershell/module/Microsoft.Graph.Teams/Copy-MgTeam?view=graph-powershell-1.0)
@@ -60,7 +61,7 @@ Cloning is a long-running operation.
 After the POST clone returns, you need to GET the operation returned by the Location: header to see if it's running, succeeded, or failed.
 You should continue to GET until the status isn't running.
 The recommended delay between GETs is 5 seconds.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

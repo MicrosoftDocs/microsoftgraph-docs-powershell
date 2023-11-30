@@ -170,8 +170,8 @@ Accept wildcard characters: False
 true if members of this administrative unit should be treated as sensitive, which requires specific permissions to manage.
 Default value is false.
 Use this property to define administrative units whose roles don't inherit from tenant-level administrators, and management of individual member objects is limited to administrators scoped to a restricted management administrative unit.
-Immutable, so cannot be changed later.
-For more information about working with restricted management administrative units, see Restricted management administrative units in Azure Active Directory.
+Immutable, so can't be changed later.
+For more information about working with restricted management administrative units, see Restricted management administrative units in Microsoft Entra ID.
 
 ```yaml
 Type: SwitchParameter
@@ -299,8 +299,8 @@ Read-only.
   \[IsMemberManagementRestricted \<Boolean?\>\]: true if members of this administrative unit should be treated as sensitive, which requires specific permissions to manage.
 Default value is false.
 Use this property to define administrative units whose roles don't inherit from tenant-level administrators, and management of individual member objects is limited to administrators scoped to a restricted management administrative unit.
-Immutable, so cannot be changed later. 
-For more information about working with restricted management administrative units, see Restricted management administrative units in Azure Active Directory.
+Immutable, so can't be changed later. 
+For more information about working with restricted management administrative units, see Restricted management administrative units in Microsoft Entra ID.
   \[Members \<IMicrosoftGraphDirectoryObject\[\]\>\]: Users and groups that are members of this administrative unit.
 Supports $expand.
     \[Id \<String\>\]: The unique identifier for an entity.
@@ -315,9 +315,9 @@ Read-only.
     \[RoleMemberInfo \<IMicrosoftGraphIdentity\>\]: identity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-Note that this might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      \[Id \<String\>\]: Unique identifier for the identity.
+This property is read-only.
+      \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
   \[Visibility \<String\>\]: Controls whether the administrative unit and its members are hidden or public.
 Can be set to HiddenMembership or Public.
 If not set, the default behavior is Public.
@@ -343,9 +343,9 @@ Read-only.
   \[RoleMemberInfo \<IMicrosoftGraphIdentity\>\]: identity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-Note that this might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity.
+This property is read-only.
+    \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
 
 ## RELATED LINKS
 [New-MgDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryAdministrativeUnit?view=graph-powershell-1.0)

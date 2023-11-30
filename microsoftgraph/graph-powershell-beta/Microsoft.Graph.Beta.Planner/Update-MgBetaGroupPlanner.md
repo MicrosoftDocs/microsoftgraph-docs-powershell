@@ -259,9 +259,9 @@ For details about the supported format, see Using order hints in Planner.
           \[Application \<IMicrosoftGraphIdentity\>\]: identity
             \[(Any) \<Object\>\]: This indicates any property can be added to this object.
             \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-            \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+This might not always be available or up to date.
+For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+            \[Id \<String\>\]: Unique identifier for the identity.
           \[Device \<IMicrosoftGraphIdentity\>\]: identity
           \[User \<IMicrosoftGraphIdentity\>\]: identity
         \[CompletedDateTime \<DateTime?\>\]: Read-only.
@@ -511,9 +511,9 @@ For details about the supported format, see Using order hints in Planner.
         \[Application \<IMicrosoftGraphIdentity\>\]: identity
           \[(Any) \<Object\>\]: This indicates any property can be added to this object.
           \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-          \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+This might not always be available or up to date.
+For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          \[Id \<String\>\]: Unique identifier for the identity.
         \[Device \<IMicrosoftGraphIdentity\>\]: identity
         \[User \<IMicrosoftGraphIdentity\>\]: identity
       \[CompletedDateTime \<DateTime?\>\]: Read-only.

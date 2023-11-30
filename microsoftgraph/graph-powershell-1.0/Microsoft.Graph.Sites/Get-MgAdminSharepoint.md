@@ -22,8 +22,6 @@ Get-MgAdminSharepoint [-ExpandProperty <String[]>] [-Property <String[]>] [<Comm
 ## DESCRIPTION
 Get sharepoint from admin
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -66,9 +64,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSharepoint
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
-
 [Get-MgBetaAdminSharepoint](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaAdminSharepoint?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgadminsharepoint](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgadminsharepoint)
+
 

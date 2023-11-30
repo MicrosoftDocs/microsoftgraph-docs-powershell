@@ -8,7 +8,8 @@ schema: 2.0.0
 # Set-MgGraphOption
 
 ## SYNOPSIS
-Sets global configurations that apply to the SDK. For example, toggle Web Account Manager (WAM) support.
+Sets global configurations that apply to the SDK.
+For example, toggle Web Account Manager (WAM) support.
 
 ## SYNTAX
 
@@ -17,16 +18,17 @@ Set-MgGraphOption [-EnableLoginByWAM <Boolean>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Sets global configurations that apply to the SDK. For example, toggle Web Account Manager (WAM) support.
+Sets global configurations that apply to the SDK.
+For example, toggle Web Account Manager (WAM) support.
 
 ## EXAMPLES
 
 ### Example 1: Set web account manager support
-```powershell
+```
 PS C:\> Set-MgGraphOption -EnableLoginByWAM $True
 ```
 
- Sets web account manager support
+Sets web account manager support
 
 ## PARAMETERS
 

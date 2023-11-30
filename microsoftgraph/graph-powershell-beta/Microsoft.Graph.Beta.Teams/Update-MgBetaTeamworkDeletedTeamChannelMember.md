@@ -8,9 +8,8 @@ schema: 2.0.0
 # Update-MgBetaTeamworkDeletedTeamChannelMember
 
 ## SYNOPSIS
-Update the role of a conversationMember in a channel.
-This operation is allowed only for channels with a membershipType value of private or shared.
-This API is supported in the following national cloud deployments.
+Update the role of a conversationMember in a team.or channel.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgTeamworkDeletedTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkDeletedTeamChannelMember?view=graph-powershell-1.0)
@@ -45,9 +44,10 @@ Update-MgBetaTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Update the role of a conversationMember in a channel.
-This operation is allowed only for channels with a membershipType value of private or shared.
-This API is supported in the following national cloud deployments.
+Update the role of a conversationMember in a team.or channel.
+This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -313,5 +313,4 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Update-MgTeamworkDeletedTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkDeletedTeamChannelMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdeletedteamchannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdeletedteamchannelmember)
-
 

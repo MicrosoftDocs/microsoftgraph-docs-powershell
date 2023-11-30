@@ -1,1486 +1,1030 @@
 ---
 Module Name: Microsoft.Graph.Beta.Education
-Module Guid: 40954ac5-1203-43c6-9788-d943608f9c0c
-Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education
-Help Version: 1.0.0.0
+Module Guid: b6135e28-227c-4153-b124-1de938936ef7
+Download Help Link: {{ Update Download Link }}
+Help Version: {{ Please enter version of help manually (X.X.X.X) format }}
 Locale: en-US
 ---
 
 # Microsoft.Graph.Beta.Education Module
 ## Description
-Microsoft Graph PowerShell Cmdlets
+{{ Fill in the Description }}
 
 ## Microsoft.Graph.Beta.Education Cmdlets
 ### [Get-MgBetaEducationClass](Get-MgBetaEducationClass.md)
-Retrieve a class from the system.
-A class is a universal group with a special property that indicates to the system that the group is a class.
-Group members represent the students; group admins represent the teachers in the class.
-If you're using the delegated token, the user will only see classes in which they are members.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassAssignment](Get-MgBetaEducationClassAssignment.md)
-Get the properties and relationships of an assignment.
-Only teachers, students, and applications with application permissions can perform this operation.
-Students can only see assignments assigned to them; teachers and applications with application permissions can see all assignments in a class.
-You can use the Prefer header in your request to get the inactive status in case the assignment is deactivated; otherwise, you will get an unknownFutureValue value in the response.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassAssignmentCategory](Get-MgBetaEducationClassAssignmentCategory.md)
-Retrieve an educationCategory object.
-Only teachers, students, and applications with application permissions can perform this operation.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassAssignmentCategoryByRef](Get-MgBetaEducationClassAssignmentCategoryByRef.md)
-List all the categories associated with an assignment.
-Only teachers, students, and applications with application permissions can perform this operation.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassAssignmentCategoryCount](Get-MgBetaEducationClassAssignmentCategoryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassAssignmentCategoryDelta](Get-MgBetaEducationClassAssignmentCategoryDelta.md)
-Invoke function delta
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassAssignmentCount](Get-MgBetaEducationClassAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassAssignmentDefault](Get-MgBetaEducationClassAssignmentDefault.md)
-Read the properties and relationships of an educationAssignmentDefaults object.
-These are the class-level assignment defaults respected by new assignments created in the class.
-Callers can continue to specify custom values on each assignment creation if they don't want the default behaviors.
-Only teachers can perform this operation.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassAssignmentDelta](Get-MgBetaEducationClassAssignmentDelta.md)
-Invoke function delta
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassAssignmentGradingCategory](Get-MgBetaEducationClassAssignmentGradingCategory.md)
-Get gradingCategory from education
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassAssignmentResource](Get-MgBetaEducationClassAssignmentResource.md)
-Get the properties of an education assignment resource associated with an assignment.
-Only teachers, students, and applications with application permissions can perform this operation.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassAssignmentResourceCount](Get-MgBetaEducationClassAssignmentResourceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassAssignmentResourceDependentResource](Get-MgBetaEducationClassAssignmentResourceDependentResource.md)
-Get dependentResources from education
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassAssignmentResourceDependentResourceCount](Get-MgBetaEducationClassAssignmentResourceDependentResourceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassAssignmentRubric](Get-MgBetaEducationClassAssignmentRubric.md)
-Get the educationRubric object attached to an educationAssignment, if one exists.
-Only teachers, students, and applications with application permissions can perform this operation.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassAssignmentRubricByRef](Get-MgBetaEducationClassAssignmentRubricByRef.md)
-Get the educationRubric object attached to an educationAssignment, if one exists.
-Only teachers, students, and applications with application permissions can perform this operation.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassAssignmentSetting](Get-MgBetaEducationClassAssignmentSetting.md)
-Read the properties and relationships of an educationAssignmentSettings object.
-Only teachers can perform this operation.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassAssignmentSettingGradingCategory](Get-MgBetaEducationClassAssignmentSettingGradingCategory.md)
-Get gradingCategories from education
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassAssignmentSettingGradingCategoryCount](Get-MgBetaEducationClassAssignmentSettingGradingCategoryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassAssignmentSubmission](Get-MgBetaEducationClassAssignmentSubmission.md)
-Retrieve a particular submission.
-Only teachers, students, and applications with application permissions can perform this operation.
-A submission object represents a student's work for an assignment.
-Resources associated with the submission represent this work.
-Only the assignedTo student can see and modify the submission.
-A teacher or application with application permissions has full access to all submissions.
-The grade and feedback from a teacher are part of the educationOutcome associated with this object.
-Only teachers or applications with application permissions can add or change grades and feedback.
-Students will not see the grade or feedback until the assignment has been released.
-Provide the header Prefer: include-unknown-enum-members to properly list submissions with the reassigned status.
-For details, see the examples section.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassAssignmentSubmissionCount](Get-MgBetaEducationClassAssignmentSubmissionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassAssignmentSubmissionOutcome](Get-MgBetaEducationClassAssignmentSubmissionOutcome.md)
-Get outcomes from education
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassAssignmentSubmissionOutcomeCount](Get-MgBetaEducationClassAssignmentSubmissionOutcomeCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassAssignmentSubmissionResource](Get-MgBetaEducationClassAssignmentSubmissionResource.md)
-Retrieve the properties of a specific resource associated with a submission.
-Only teachers, students, and applications with application permissions can perform this operation.
-This resource is in the 'working' resource list and should be considered work in process by a student.
-This resource is wrapped with a possible pointer back to the assignment resource if it was copied from the assignment.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassAssignmentSubmissionResourceCount](Get-MgBetaEducationClassAssignmentSubmissionResourceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassAssignmentSubmissionResourceDependentResource](Get-MgBetaEducationClassAssignmentSubmissionResourceDependentResource.md)
-Get dependentResources from education
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassAssignmentSubmissionResourceDependentResourceCount](Get-MgBetaEducationClassAssignmentSubmissionResourceDependentResourceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassAssignmentSubmissionSubmittedResource](Get-MgBetaEducationClassAssignmentSubmissionSubmittedResource.md)
-Get submittedResources from education
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassAssignmentSubmissionSubmittedResourceCount](Get-MgBetaEducationClassAssignmentSubmissionSubmittedResourceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassAssignmentSubmissionSubmittedResourceDependentResource](Get-MgBetaEducationClassAssignmentSubmissionSubmittedResourceDependentResource.md)
-Get dependentResources from education
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassAssignmentSubmissionSubmittedResourceDependentResourceCount](Get-MgBetaEducationClassAssignmentSubmissionSubmittedResourceDependentResourceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassCount](Get-MgBetaEducationClassCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassDelta](Get-MgBetaEducationClassDelta.md)
-Invoke function delta
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassGroup](Get-MgBetaEducationClassGroup.md)
-Retrieve the Microsoft 365 group that corresponds to this educationClass.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassGroupServiceProvisioningError](Get-MgBetaEducationClassGroupServiceProvisioningError.md)
-Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object .
-Supports $filter (eq, not, for isResolved and serviceInstance).
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassGroupServiceProvisioningErrorCount](Get-MgBetaEducationClassGroupServiceProvisioningErrorCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassMember](Get-MgBetaEducationClassMember.md)
-Retrieve the teachers and students for a class.
-Note that if the delegated token is used, members can only be seen by other members of the class.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassMemberByRef](Get-MgBetaEducationClassMemberByRef.md)
-Retrieve the teachers and students for a class.
-Note that if the delegated token is used, members can only be seen by other members of the class.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassMemberCount](Get-MgBetaEducationClassMemberCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassModule](Get-MgBetaEducationClassModule.md)
-Get the properties and relationships of a module.
-Only teachers, students, and applications with application permissions can perform this operation.
-Students can only see published modules; teachers and applications with application permissions can see all modules in a class.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassModuleCount](Get-MgBetaEducationClassModuleCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassModuleResource](Get-MgBetaEducationClassModuleResource.md)
-Get the properties of a resource associated with a module.
-Only teachers, students, and applications with application permissions can perform this operation.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassModuleResourceCount](Get-MgBetaEducationClassModuleResourceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassSchool](Get-MgBetaEducationClassSchool.md)
-All schools that this class is associated with.
-Nullable.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassSchoolCount](Get-MgBetaEducationClassSchoolCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassTeacher](Get-MgBetaEducationClassTeacher.md)
-Retrieve a list of teachers for a class.
-Delegated tokens must be members of the class to get the teacher list.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassTeacherByRef](Get-MgBetaEducationClassTeacherByRef.md)
-Retrieve a list of teachers for a class.
-Delegated tokens must be members of the class to get the teacher list.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassTeacherCount](Get-MgBetaEducationClassTeacherCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationMe](Get-MgBetaEducationMe.md)
-Get me from education
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationMeAssignment](Get-MgBetaEducationMeAssignment.md)
-List of assignments for the user.
-Nullable.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationMeAssignmentCategory](Get-MgBetaEducationMeAssignmentCategory.md)
-List all the categories associated with an assignment.
-Only teachers, students, and applications with application permissions can perform this operation.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationMeAssignmentCategoryByRef](Get-MgBetaEducationMeAssignmentCategoryByRef.md)
-List all the categories associated with an assignment.
-Only teachers, students, and applications with application permissions can perform this operation.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationMeAssignmentCategoryCount](Get-MgBetaEducationMeAssignmentCategoryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationMeAssignmentCategoryDelta](Get-MgBetaEducationMeAssignmentCategoryDelta.md)
-Invoke function delta
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationMeAssignmentCount](Get-MgBetaEducationMeAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationMeAssignmentDelta](Get-MgBetaEducationMeAssignmentDelta.md)
-Invoke function delta
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationMeAssignmentGradingCategory](Get-MgBetaEducationMeAssignmentGradingCategory.md)
-Get gradingCategory from education
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationMeAssignmentResource](Get-MgBetaEducationMeAssignmentResource.md)
-Get the properties of an education assignment resource associated with an assignment.
-Only teachers, students, and applications with application permissions can perform this operation.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationMeAssignmentResourceCount](Get-MgBetaEducationMeAssignmentResourceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationMeAssignmentResourceDependentResource](Get-MgBetaEducationMeAssignmentResourceDependentResource.md)
-Get dependentResources from education
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationMeAssignmentResourceDependentResourceCount](Get-MgBetaEducationMeAssignmentResourceDependentResourceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationMeAssignmentRubric](Get-MgBetaEducationMeAssignmentRubric.md)
-Get the educationRubric object attached to an educationAssignment, if one exists.
-Only teachers, students, and applications with application permissions can perform this operation.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationMeAssignmentRubricByRef](Get-MgBetaEducationMeAssignmentRubricByRef.md)
-Get the educationRubric object attached to an educationAssignment, if one exists.
-Only teachers, students, and applications with application permissions can perform this operation.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationMeAssignmentSubmission](Get-MgBetaEducationMeAssignmentSubmission.md)
-Retrieve a particular submission.
-Only teachers, students, and applications with application permissions can perform this operation.
-A submission object represents a student's work for an assignment.
-Resources associated with the submission represent this work.
-Only the assignedTo student can see and modify the submission.
-A teacher or application with application permissions has full access to all submissions.
-The grade and feedback from a teacher are part of the educationOutcome associated with this object.
-Only teachers or applications with application permissions can add or change grades and feedback.
-Students will not see the grade or feedback until the assignment has been released.
-Provide the header Prefer: include-unknown-enum-members to properly list submissions with the reassigned status.
-For details, see the examples section.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationMeAssignmentSubmissionCount](Get-MgBetaEducationMeAssignmentSubmissionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationMeAssignmentSubmissionOutcome](Get-MgBetaEducationMeAssignmentSubmissionOutcome.md)
-Get outcomes from education
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationMeAssignmentSubmissionOutcomeCount](Get-MgBetaEducationMeAssignmentSubmissionOutcomeCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationMeAssignmentSubmissionResource](Get-MgBetaEducationMeAssignmentSubmissionResource.md)
-Retrieve the properties of a specific resource associated with a submission.
-Only teachers, students, and applications with application permissions can perform this operation.
-This resource is in the 'working' resource list and should be considered work in process by a student.
-This resource is wrapped with a possible pointer back to the assignment resource if it was copied from the assignment.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationMeAssignmentSubmissionResourceCount](Get-MgBetaEducationMeAssignmentSubmissionResourceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationMeAssignmentSubmissionResourceDependentResource](Get-MgBetaEducationMeAssignmentSubmissionResourceDependentResource.md)
-Get dependentResources from education
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationMeAssignmentSubmissionResourceDependentResourceCount](Get-MgBetaEducationMeAssignmentSubmissionResourceDependentResourceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationMeAssignmentSubmissionSubmittedResource](Get-MgBetaEducationMeAssignmentSubmissionSubmittedResource.md)
-Get submittedResources from education
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationMeAssignmentSubmissionSubmittedResourceCount](Get-MgBetaEducationMeAssignmentSubmissionSubmittedResourceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationMeAssignmentSubmissionSubmittedResourceDependentResource](Get-MgBetaEducationMeAssignmentSubmissionSubmittedResourceDependentResource.md)
-Get dependentResources from education
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationMeAssignmentSubmissionSubmittedResourceDependentResourceCount](Get-MgBetaEducationMeAssignmentSubmissionSubmittedResourceDependentResourceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationMeClass](Get-MgBetaEducationMeClass.md)
-Classes to which the user belongs.
-Nullable.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationMeClassCount](Get-MgBetaEducationMeClassCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationMeRubric](Get-MgBetaEducationMeRubric.md)
-Retrieve the properties and relationships of an educationRubric object.
-Only teachers and students can perform this operation.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationMeRubricCount](Get-MgBetaEducationMeRubricCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationMeSchool](Get-MgBetaEducationMeSchool.md)
-Schools to which the user belongs.
-Nullable.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationMeSchoolCount](Get-MgBetaEducationMeSchoolCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationMeTaughtClass](Get-MgBetaEducationMeTaughtClass.md)
-Classes for which the user is a teacher.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationMeTaughtClassCount](Get-MgBetaEducationMeTaughtClassCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationMeUser](Get-MgBetaEducationMeUser.md)
-Retrieve the simple directory user that corresponds to this educationUser.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationMeUserMailboxSetting](Get-MgBetaEducationMeUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationMeUserServiceProvisioningError](Get-MgBetaEducationMeUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationMeUserServiceProvisioningErrorCount](Get-MgBetaEducationMeUserServiceProvisioningErrorCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationRoot](Get-MgBetaEducationRoot.md)
-Get education
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationSchool](Get-MgBetaEducationSchool.md)
-Retrieve the properties and relationships of the school object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationSchoolAdministrativeUnit](Get-MgBetaEducationSchoolAdministrativeUnit.md)
-Retrieve the directory administrativeUnit that corresponds to this educationSchool.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationSchoolClass](Get-MgBetaEducationSchoolClass.md)
-Retrieve a list of classes owned by a school.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationSchoolClassByRef](Get-MgBetaEducationSchoolClassByRef.md)
-Retrieve a list of classes owned by a school.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationSchoolClassCount](Get-MgBetaEducationSchoolClassCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationSchoolCount](Get-MgBetaEducationSchoolCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationSchoolDelta](Get-MgBetaEducationSchoolDelta.md)
-Invoke function delta
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationSchoolUser](Get-MgBetaEducationSchoolUser.md)
-Retrieve a list of users at a school.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationSchoolUserByRef](Get-MgBetaEducationSchoolUserByRef.md)
-Retrieve a list of users at a school.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationSchoolUserCount](Get-MgBetaEducationSchoolUserCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationSynchronizationProfile](Get-MgBetaEducationSynchronizationProfile.md)
-Retrieve a school data synchronization profile in the tenant based on the identifier.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationSynchronizationProfileCount](Get-MgBetaEducationSynchronizationProfileCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationSynchronizationProfileError](Get-MgBetaEducationSynchronizationProfileError.md)
-All errors associated with this synchronization profile.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationSynchronizationProfileErrorCount](Get-MgBetaEducationSynchronizationProfileErrorCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationSynchronizationProfileStatus](Get-MgBetaEducationSynchronizationProfileStatus.md)
-Get the status of a specific school data synchronization profile in the tenant.
-The response will indicate the status of the sync.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUser](Get-MgBetaEducationUser.md)
-Retrieve the properties and relationships of a user.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUserAssignment](Get-MgBetaEducationUserAssignment.md)
-List of assignments for the user.
-Nullable.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUserAssignmentCategory](Get-MgBetaEducationUserAssignmentCategory.md)
-List all the categories associated with an assignment.
-Only teachers, students, and applications with application permissions can perform this operation.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUserAssignmentCategoryByRef](Get-MgBetaEducationUserAssignmentCategoryByRef.md)
-List all the categories associated with an assignment.
-Only teachers, students, and applications with application permissions can perform this operation.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUserAssignmentCategoryCount](Get-MgBetaEducationUserAssignmentCategoryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUserAssignmentCategoryDelta](Get-MgBetaEducationUserAssignmentCategoryDelta.md)
-Invoke function delta
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUserAssignmentCount](Get-MgBetaEducationUserAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUserAssignmentDelta](Get-MgBetaEducationUserAssignmentDelta.md)
-Invoke function delta
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUserAssignmentGradingCategory](Get-MgBetaEducationUserAssignmentGradingCategory.md)
-Get gradingCategory from education
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUserAssignmentResource](Get-MgBetaEducationUserAssignmentResource.md)
-Get the properties of an education assignment resource associated with an assignment.
-Only teachers, students, and applications with application permissions can perform this operation.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUserAssignmentResourceCount](Get-MgBetaEducationUserAssignmentResourceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUserAssignmentResourceDependentResource](Get-MgBetaEducationUserAssignmentResourceDependentResource.md)
-Get dependentResources from education
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUserAssignmentResourceDependentResourceCount](Get-MgBetaEducationUserAssignmentResourceDependentResourceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUserAssignmentRubric](Get-MgBetaEducationUserAssignmentRubric.md)
-Get the educationRubric object attached to an educationAssignment, if one exists.
-Only teachers, students, and applications with application permissions can perform this operation.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUserAssignmentRubricByRef](Get-MgBetaEducationUserAssignmentRubricByRef.md)
-Get the educationRubric object attached to an educationAssignment, if one exists.
-Only teachers, students, and applications with application permissions can perform this operation.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUserAssignmentSubmission](Get-MgBetaEducationUserAssignmentSubmission.md)
-Retrieve a particular submission.
-Only teachers, students, and applications with application permissions can perform this operation.
-A submission object represents a student's work for an assignment.
-Resources associated with the submission represent this work.
-Only the assignedTo student can see and modify the submission.
-A teacher or application with application permissions has full access to all submissions.
-The grade and feedback from a teacher are part of the educationOutcome associated with this object.
-Only teachers or applications with application permissions can add or change grades and feedback.
-Students will not see the grade or feedback until the assignment has been released.
-Provide the header Prefer: include-unknown-enum-members to properly list submissions with the reassigned status.
-For details, see the examples section.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUserAssignmentSubmissionCount](Get-MgBetaEducationUserAssignmentSubmissionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUserAssignmentSubmissionOutcome](Get-MgBetaEducationUserAssignmentSubmissionOutcome.md)
-Get outcomes from education
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUserAssignmentSubmissionOutcomeCount](Get-MgBetaEducationUserAssignmentSubmissionOutcomeCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUserAssignmentSubmissionResource](Get-MgBetaEducationUserAssignmentSubmissionResource.md)
-Retrieve the properties of a specific resource associated with a submission.
-Only teachers, students, and applications with application permissions can perform this operation.
-This resource is in the 'working' resource list and should be considered work in process by a student.
-This resource is wrapped with a possible pointer back to the assignment resource if it was copied from the assignment.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUserAssignmentSubmissionResourceCount](Get-MgBetaEducationUserAssignmentSubmissionResourceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUserAssignmentSubmissionResourceDependentResource](Get-MgBetaEducationUserAssignmentSubmissionResourceDependentResource.md)
-Get dependentResources from education
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUserAssignmentSubmissionResourceDependentResourceCount](Get-MgBetaEducationUserAssignmentSubmissionResourceDependentResourceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUserAssignmentSubmissionSubmittedResource](Get-MgBetaEducationUserAssignmentSubmissionSubmittedResource.md)
-Get submittedResources from education
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUserAssignmentSubmissionSubmittedResourceCount](Get-MgBetaEducationUserAssignmentSubmissionSubmittedResourceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUserAssignmentSubmissionSubmittedResourceDependentResource](Get-MgBetaEducationUserAssignmentSubmissionSubmittedResourceDependentResource.md)
-Get dependentResources from education
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUserAssignmentSubmissionSubmittedResourceDependentResourceCount](Get-MgBetaEducationUserAssignmentSubmissionSubmittedResourceDependentResourceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUserClass](Get-MgBetaEducationUserClass.md)
-Classes to which the user belongs.
-Nullable.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUserClassCount](Get-MgBetaEducationUserClassCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUserCount](Get-MgBetaEducationUserCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUserDelta](Get-MgBetaEducationUserDelta.md)
-Invoke function delta
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUserMailboxSetting](Get-MgBetaEducationUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUserRubric](Get-MgBetaEducationUserRubric.md)
-Retrieve the properties and relationships of an educationRubric object.
-Only teachers and students can perform this operation.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUserRubricCount](Get-MgBetaEducationUserRubricCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUserSchool](Get-MgBetaEducationUserSchool.md)
-Schools to which the user belongs.
-Nullable.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUserSchoolCount](Get-MgBetaEducationUserSchoolCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUserServiceProvisioningError](Get-MgBetaEducationUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUserServiceProvisioningErrorCount](Get-MgBetaEducationUserServiceProvisioningErrorCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUserTaughtClass](Get-MgBetaEducationUserTaughtClass.md)
-Classes for which the user is a teacher.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUserTaughtClassCount](Get-MgBetaEducationUserTaughtClassCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Initialize-MgBetaEducationClassAssignment](Initialize-MgBetaEducationClassAssignment.md)
-Activate an inactive educationAssignment to signal that the assignment has further action items for teachers and students.
-This action can only be performed by a teacher on currently inactive assignments.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Initialize-MgBetaEducationMeAssignment](Initialize-MgBetaEducationMeAssignment.md)
-Activate an inactive educationAssignment to signal that the assignment has further action items for teachers and students.
-This action can only be performed by a teacher on currently inactive assignments.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Initialize-MgBetaEducationUserAssignment](Initialize-MgBetaEducationUserAssignment.md)
-Activate an inactive educationAssignment to signal that the assignment has further action items for teachers and students.
-This action can only be performed by a teacher on currently inactive assignments.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaDeactivateEducationClassAssignment](Invoke-MgBetaDeactivateEducationClassAssignment.md)
-Mark an assigned educationAssignment as inactive to signal that the assignment has no further action items for teachers and students.
-This action can only be performed by a teacher on assigned assignments.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaDeactivateEducationMeAssignment](Invoke-MgBetaDeactivateEducationMeAssignment.md)
-Mark an assigned educationAssignment as inactive to signal that the assignment has no further action items for teachers and students.
-This action can only be performed by a teacher on assigned assignments.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaDeactivateEducationUserAssignment](Invoke-MgBetaDeactivateEducationUserAssignment.md)
-Mark an assigned educationAssignment as inactive to signal that the assignment has no further action items for teachers and students.
-This action can only be performed by a teacher on assigned assignments.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaPinEducationClassModule](Invoke-MgBetaPinEducationClassModule.md)
-Pin an educationModule in the class work list.
-This action sets the isPinned property to true for an educationModule.
-Only teachers can perform this action and only one module at a time can be pinned in the class work list.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaReassignEducationClassAssignmentSubmission](Invoke-MgBetaReassignEducationClassAssignmentSubmission.md)
-Reassign the submission to the student with feedback for review.
-Only teachers can perform this action.
-Include the Prefer: include-unknown-enum-members header when you call this method; otherwise, a reassigned submission will be treated as a returned submission.
-This means that the reassigned status will be mapped to the returned status, and reassignedDateTime and reassignedBy properties will be mapped to returnedDateTime and returnedBy respectively.
-If the header Prefer: include-unknown-enum-members is provided, a reassigned submission retains the reassigned status.
-For details, see the examples section.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaReassignEducationMeAssignmentSubmission](Invoke-MgBetaReassignEducationMeAssignmentSubmission.md)
-Reassign the submission to the student with feedback for review.
-Only teachers can perform this action.
-Include the Prefer: include-unknown-enum-members header when you call this method; otherwise, a reassigned submission will be treated as a returned submission.
-This means that the reassigned status will be mapped to the returned status, and reassignedDateTime and reassignedBy properties will be mapped to returnedDateTime and returnedBy respectively.
-If the header Prefer: include-unknown-enum-members is provided, a reassigned submission retains the reassigned status.
-For details, see the examples section.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaReassignEducationUserAssignmentSubmission](Invoke-MgBetaReassignEducationUserAssignmentSubmission.md)
-Reassign the submission to the student with feedback for review.
-Only teachers can perform this action.
-Include the Prefer: include-unknown-enum-members header when you call this method; otherwise, a reassigned submission will be treated as a returned submission.
-This means that the reassigned status will be mapped to the returned status, and reassignedDateTime and reassignedBy properties will be mapped to returnedDateTime and returnedBy respectively.
-If the header Prefer: include-unknown-enum-members is provided, a reassigned submission retains the reassigned status.
-For details, see the examples section.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaReturnEducationClassAssignmentSubmission](Invoke-MgBetaReturnEducationClassAssignmentSubmission.md)
-Make the grade and feedback associated with this submission available to the student.
-This will change the status of the submission from 'submitted' to 'returned' and indicates that feedback is provided or grading is done.
-This action can only be done by the teacher.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaReturnEducationMeAssignmentSubmission](Invoke-MgBetaReturnEducationMeAssignmentSubmission.md)
-Make the grade and feedback associated with this submission available to the student.
-This will change the status of the submission from 'submitted' to 'returned' and indicates that feedback is provided or grading is done.
-This action can only be done by the teacher.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaReturnEducationUserAssignmentSubmission](Invoke-MgBetaReturnEducationUserAssignmentSubmission.md)
-Make the grade and feedback associated with this submission available to the student.
-This will change the status of the submission from 'submitted' to 'returned' and indicates that feedback is provided or grading is done.
-This action can only be done by the teacher.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaUnpinEducationClassModule](Invoke-MgBetaUnpinEducationClassModule.md)
-Unpin an educationModule in the classwork list.
-This action sets the isPinned property to false for an educationModule.
-Only teachers in the class can perform this operation.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaUnsubmitEducationClassAssignmentSubmission](Invoke-MgBetaUnsubmitEducationClassAssignmentSubmission.md)
-Indicate that a student wants to work on the submitted assignment after it was turned in.
-Only teachers, students, and applications with application permissions can perform this operation.
-This method changes the status of the submission from submitted to working.
-During the submit process, all the resources are copied from submittedResources to  workingResources.
-The teacher will be looking at the working resources list for grading.
-A teacher can also unsubmit a student's assignment on their behalf.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaUnsubmitEducationMeAssignmentSubmission](Invoke-MgBetaUnsubmitEducationMeAssignmentSubmission.md)
-Indicate that a student wants to work on the submitted assignment after it was turned in.
-Only teachers, students, and applications with application permissions can perform this operation.
-This method changes the status of the submission from submitted to working.
-During the submit process, all the resources are copied from submittedResources to  workingResources.
-The teacher will be looking at the working resources list for grading.
-A teacher can also unsubmit a student's assignment on their behalf.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaUnsubmitEducationUserAssignmentSubmission](Invoke-MgBetaUnsubmitEducationUserAssignmentSubmission.md)
-Indicate that a student wants to work on the submitted assignment after it was turned in.
-Only teachers, students, and applications with application permissions can perform this operation.
-This method changes the status of the submission from submitted to working.
-During the submit process, all the resources are copied from submittedResources to  workingResources.
-The teacher will be looking at the working resources list for grading.
-A teacher can also unsubmit a student's assignment on their behalf.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaUploadEducationSynchronizationProfileUrl](Invoke-MgBetaUploadEducationSynchronizationProfileUrl.md)
-Invoke function uploadUrl
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationClass](New-MgBetaEducationClass.md)
-Create a new class.
-This will also create a universal group.
-When you use this API to create a class, it will add special properties to the group, which willadd features such as assignments and special handling within Microsoft Teams when teams are created using the group.
-Please note that this API only creates the universal group and does not create a team.
-Microsoft Teams provides a user interface for teachers to create teams for their own classes using the groups created by this API.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationClassAssignment](New-MgBetaEducationClassAssignment.md)
-Create a new assignment.
-Only teachers in a class can create an assignment.
-Assignments start in the Draft state, which means that students will not see the assignment until publication.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationClassAssignmentCategory](New-MgBetaEducationClassAssignmentCategory.md)
-Create a new educationCategory on an educationClass.
-Only teachers can perform this operation.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationClassAssignmentCategoryByRef](New-MgBetaEducationClassAssignmentCategoryByRef.md)
-Create new navigation property ref to categories for education
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationClassAssignmentResource](New-MgBetaEducationClassAssignmentResource.md)
-Create an assignment resource.
-Only teachers can perform this operation.
-You can create the following types of assignment resources: Every resource has an @odata.type property to indicate which type of resource is being created.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationClassAssignmentResourceDependentResource](New-MgBetaEducationClassAssignmentResourceDependentResource.md)
-Create new navigation property to dependentResources for education
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationClassAssignmentSettingGradingCategory](New-MgBetaEducationClassAssignmentSettingGradingCategory.md)
-Create new navigation property to gradingCategories for education
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationClassAssignmentSubmission](New-MgBetaEducationClassAssignmentSubmission.md)
-Create new navigation property to submissions for education
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationClassAssignmentSubmissionOutcome](New-MgBetaEducationClassAssignmentSubmissionOutcome.md)
-Create a new feedback resource for a submission.
-Only a teacher can perform this operation.
-To create a new file-based resource, upload the file to the feedback resources folder associated with the assignment.
-If the file doesn't exist or is not in that folder, the POST request will fail.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationClassAssignmentSubmissionResource](New-MgBetaEducationClassAssignmentSubmissionResource.md)
-Add a educationSubmissionResource to a submission resource list.
-Only teachers and students can perform this operation.
-The operation will not succeed if the allowStudentsToAddResources flag is not set to true.
-To create a new file-based resource, upload the file to the resources folder associated with the submission.
-If the file doesn't exist or is not in that folder, the POST request will fail.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationClassAssignmentSubmissionResourceDependentResource](New-MgBetaEducationClassAssignmentSubmissionResourceDependentResource.md)
-Create new navigation property to dependentResources for education
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationClassAssignmentSubmissionSubmittedResource](New-MgBetaEducationClassAssignmentSubmissionSubmittedResource.md)
-Create new navigation property to submittedResources for education
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationClassAssignmentSubmissionSubmittedResourceDependentResource](New-MgBetaEducationClassAssignmentSubmissionSubmittedResourceDependentResource.md)
-Create new navigation property to dependentResources for education
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationClassMemberByRef](New-MgBetaEducationClassMemberByRef.md)
-Add an educationUser member to an educationClass.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationClassModule](New-MgBetaEducationClassModule.md)
-Create a new module in a class.
-Only teachers in a class can create a module.
-Modules start in the draft state, which means that students won't see the modules until publication.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationClassModuleResource](New-MgBetaEducationClassModuleResource.md)
-Create a resource in a module.
-Only teachers can perform this operation.
-You can create the following types of module resources: Every resource has an @odata.type property to indicate which type of resource is being created.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationClassTeacherByRef](New-MgBetaEducationClassTeacherByRef.md)
-Add a teacher to a class.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationMeAssignment](New-MgBetaEducationMeAssignment.md)
-Create new navigation property to assignments for education
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationMeAssignmentCategory](New-MgBetaEducationMeAssignmentCategory.md)
-Create new navigation property to categories for education
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationMeAssignmentCategoryByRef](New-MgBetaEducationMeAssignmentCategoryByRef.md)
-Create new navigation property ref to categories for education
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationMeAssignmentResource](New-MgBetaEducationMeAssignmentResource.md)
-Create an assignment resource.
-Only teachers can perform this operation.
-You can create the following types of assignment resources: Every resource has an @odata.type property to indicate which type of resource is being created.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationMeAssignmentResourceDependentResource](New-MgBetaEducationMeAssignmentResourceDependentResource.md)
-Create new navigation property to dependentResources for education
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationMeAssignmentSubmission](New-MgBetaEducationMeAssignmentSubmission.md)
-Create new navigation property to submissions for education
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationMeAssignmentSubmissionOutcome](New-MgBetaEducationMeAssignmentSubmissionOutcome.md)
-Create a new feedback resource for a submission.
-Only a teacher can perform this operation.
-To create a new file-based resource, upload the file to the feedback resources folder associated with the assignment.
-If the file doesn't exist or is not in that folder, the POST request will fail.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationMeAssignmentSubmissionResource](New-MgBetaEducationMeAssignmentSubmissionResource.md)
-Add a educationSubmissionResource to a submission resource list.
-Only teachers and students can perform this operation.
-The operation will not succeed if the allowStudentsToAddResources flag is not set to true.
-To create a new file-based resource, upload the file to the resources folder associated with the submission.
-If the file doesn't exist or is not in that folder, the POST request will fail.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationMeAssignmentSubmissionResourceDependentResource](New-MgBetaEducationMeAssignmentSubmissionResourceDependentResource.md)
-Create new navigation property to dependentResources for education
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationMeAssignmentSubmissionSubmittedResource](New-MgBetaEducationMeAssignmentSubmissionSubmittedResource.md)
-Create new navigation property to submittedResources for education
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationMeAssignmentSubmissionSubmittedResourceDependentResource](New-MgBetaEducationMeAssignmentSubmissionSubmittedResourceDependentResource.md)
-Create new navigation property to dependentResources for education
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationMeRubric](New-MgBetaEducationMeRubric.md)
-Create a new educationRubric object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationSchool](New-MgBetaEducationSchool.md)
-Create a school.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationSchoolClassByRef](New-MgBetaEducationSchoolClassByRef.md)
-Add a class to a school.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationSchoolUserByRef](New-MgBetaEducationSchoolUserByRef.md)
-Add a user to a school.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationSynchronizationProfile](New-MgBetaEducationSynchronizationProfile.md)
-Create new navigation property to synchronizationProfiles for education
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationSynchronizationProfileError](New-MgBetaEducationSynchronizationProfileError.md)
-Create new navigation property to errors for education
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationUser](New-MgBetaEducationUser.md)
-Create a new user.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationUserAssignment](New-MgBetaEducationUserAssignment.md)
-Create new navigation property to assignments for education
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationUserAssignmentCategory](New-MgBetaEducationUserAssignmentCategory.md)
-Create new navigation property to categories for education
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationUserAssignmentCategoryByRef](New-MgBetaEducationUserAssignmentCategoryByRef.md)
-Create new navigation property ref to categories for education
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationUserAssignmentResource](New-MgBetaEducationUserAssignmentResource.md)
-Create an assignment resource.
-Only teachers can perform this operation.
-You can create the following types of assignment resources: Every resource has an @odata.type property to indicate which type of resource is being created.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationUserAssignmentResourceDependentResource](New-MgBetaEducationUserAssignmentResourceDependentResource.md)
-Create new navigation property to dependentResources for education
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationUserAssignmentSubmission](New-MgBetaEducationUserAssignmentSubmission.md)
-Create new navigation property to submissions for education
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationUserAssignmentSubmissionOutcome](New-MgBetaEducationUserAssignmentSubmissionOutcome.md)
-Create a new feedback resource for a submission.
-Only a teacher can perform this operation.
-To create a new file-based resource, upload the file to the feedback resources folder associated with the assignment.
-If the file doesn't exist or is not in that folder, the POST request will fail.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationUserAssignmentSubmissionResource](New-MgBetaEducationUserAssignmentSubmissionResource.md)
-Add a educationSubmissionResource to a submission resource list.
-Only teachers and students can perform this operation.
-The operation will not succeed if the allowStudentsToAddResources flag is not set to true.
-To create a new file-based resource, upload the file to the resources folder associated with the submission.
-If the file doesn't exist or is not in that folder, the POST request will fail.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationUserAssignmentSubmissionResourceDependentResource](New-MgBetaEducationUserAssignmentSubmissionResourceDependentResource.md)
-Create new navigation property to dependentResources for education
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationUserAssignmentSubmissionSubmittedResource](New-MgBetaEducationUserAssignmentSubmissionSubmittedResource.md)
-Create new navigation property to submittedResources for education
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationUserAssignmentSubmissionSubmittedResourceDependentResource](New-MgBetaEducationUserAssignmentSubmissionSubmittedResourceDependentResource.md)
-Create new navigation property to dependentResources for education
+{{ Fill in the Description }}
 
 ### [New-MgBetaEducationUserRubric](New-MgBetaEducationUserRubric.md)
-Create a new educationRubric object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Publish-MgBetaEducationClassAssignment](Publish-MgBetaEducationClassAssignment.md)
-Change the state of an educationAssignment from its original draft status to the published status.
-You can change the state from draft to scheduled if the assignment is scheduled for a future date.
-Only a teacher in the class can make this call.
-When an assignment is in draft status, students will not see the assignment, nor will there be any submission objects.
-When you call this API, educationSubmission objects are created and the assignment appears in the student's list.
-The state of the assignment goes back to draft if there is any backend failure during publish process.
-To update the properties of a published assignment, see update an assignment.
-To update the properties of a published assignment, see update an assignment.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Publish-MgBetaEducationClassModule](Publish-MgBetaEducationClassModule.md)
-Change the state of an educationModule from its original draft status to the published status.
-Only teachers in the class can perform this operation.
-When a module is in draft status, students won't see the module.
-When you call this API, the module appears in the student's class work list.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Publish-MgBetaEducationMeAssignment](Publish-MgBetaEducationMeAssignment.md)
-Change the state of an educationAssignment from its original draft status to the published status.
-You can change the state from draft to scheduled if the assignment is scheduled for a future date.
-Only a teacher in the class can make this call.
-When an assignment is in draft status, students will not see the assignment, nor will there be any submission objects.
-When you call this API, educationSubmission objects are created and the assignment appears in the student's list.
-The state of the assignment goes back to draft if there is any backend failure during publish process.
-To update the properties of a published assignment, see update an assignment.
-To update the properties of a published assignment, see update an assignment.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Publish-MgBetaEducationUserAssignment](Publish-MgBetaEducationUserAssignment.md)
-Change the state of an educationAssignment from its original draft status to the published status.
-You can change the state from draft to scheduled if the assignment is scheduled for a future date.
-Only a teacher in the class can make this call.
-When an assignment is in draft status, students will not see the assignment, nor will there be any submission objects.
-When you call this API, educationSubmission objects are created and the assignment appears in the student's list.
-The state of the assignment goes back to draft if there is any backend failure during publish process.
-To update the properties of a published assignment, see update an assignment.
-To update the properties of a published assignment, see update an assignment.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationClass](Remove-MgBetaEducationClass.md)
-Delete an educationClass.
-Because a class is also a universal group, deleting a class deletes the group.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationClassAssignment](Remove-MgBetaEducationClassAssignment.md)
-Delete an existing assignment.
-Only teachers within a class can delete assignments.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationClassAssignmentCategory](Remove-MgBetaEducationClassAssignmentCategory.md)
-Delete an existing category.
-Only teachers can perform this operation.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationClassAssignmentCategoryByRef](Remove-MgBetaEducationClassAssignmentCategoryByRef.md)
-Delete ref of navigation property categories for education
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationClassAssignmentDefault](Remove-MgBetaEducationClassAssignmentDefault.md)
-Delete navigation property assignmentDefaults for education
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationClassAssignmentGradingCategory](Remove-MgBetaEducationClassAssignmentGradingCategory.md)
-Remove a gradingCategory from an educationAssignment.
-Only teachers can perform this operation.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationClassAssignmentResource](Remove-MgBetaEducationClassAssignmentResource.md)
-Delete a specific educationAssignmentResource attached to an assignment.
-Only teachers in the class can remove a resource.
-After an assignment has been published to students, teachers can't remove resources that are marked as 'distributeToStudents'.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationClassAssignmentResourceDependentResource](Remove-MgBetaEducationClassAssignmentResourceDependentResource.md)
-Delete navigation property dependentResources for education
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationClassAssignmentRubric](Remove-MgBetaEducationClassAssignmentRubric.md)
-Delete an educationRubric from an educationAssignment.
-This method doesn't delete the rubric itself and can only be performed by teachers.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationClassAssignmentRubricByRef](Remove-MgBetaEducationClassAssignmentRubricByRef.md)
-Delete an educationRubric from an educationAssignment.
-This method doesn't delete the rubric itself and can only be performed by teachers.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationClassAssignmentSetting](Remove-MgBetaEducationClassAssignmentSetting.md)
-Delete navigation property assignmentSettings for education
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationClassAssignmentSettingGradingCategory](Remove-MgBetaEducationClassAssignmentSettingGradingCategory.md)
-Delete navigation property gradingCategories for education
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationClassAssignmentSubmission](Remove-MgBetaEducationClassAssignmentSubmission.md)
-Delete navigation property submissions for education
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationClassAssignmentSubmissionOutcome](Remove-MgBetaEducationClassAssignmentSubmissionOutcome.md)
-Delete a feedback resource from a submission.
-This can only be done by a teacher.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationClassAssignmentSubmissionResource](Remove-MgBetaEducationClassAssignmentSubmissionResource.md)
-Delete an educationSubmissionResource from the submission.
-Only teachers and students can perform this operation.
-If the resource was copied from the assignment, a new copy of the resource will be created after the current copy is deleted.
-This allows you to 'reset' the resource to its original state.
-If the resource wasn't copied from the assignment but was added from the student, the resource is deleted.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationClassAssignmentSubmissionResourceDependentResource](Remove-MgBetaEducationClassAssignmentSubmissionResourceDependentResource.md)
-Delete navigation property dependentResources for education
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationClassAssignmentSubmissionSubmittedResource](Remove-MgBetaEducationClassAssignmentSubmissionSubmittedResource.md)
-Delete navigation property submittedResources for education
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationClassAssignmentSubmissionSubmittedResourceDependentResource](Remove-MgBetaEducationClassAssignmentSubmissionSubmittedResourceDependentResource.md)
-Delete navigation property dependentResources for education
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationClassMemberByRef](Remove-MgBetaEducationClassMemberByRef.md)
-Remove an educationUser from an educationClass.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationClassModule](Remove-MgBetaEducationClassModule.md)
-Delete an existing module in a class.
-Only teachers within a class can delete modules.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationClassModuleResource](Remove-MgBetaEducationClassModuleResource.md)
-Delete a specific educationModuleResource attached to a module.
-Only teachers in the class can remove a resource.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationClassTeacherByRef](Remove-MgBetaEducationClassTeacherByRef.md)
-Remove a teacher from an educationClass.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationMe](Remove-MgBetaEducationMe.md)
-Delete navigation property me for education
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationMeAssignment](Remove-MgBetaEducationMeAssignment.md)
-Delete navigation property assignments for education
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationMeAssignmentCategoryByRef](Remove-MgBetaEducationMeAssignmentCategoryByRef.md)
-Delete ref of navigation property categories for education
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationMeAssignmentGradingCategory](Remove-MgBetaEducationMeAssignmentGradingCategory.md)
-Remove a gradingCategory from an educationAssignment.
-Only teachers can perform this operation.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationMeAssignmentResource](Remove-MgBetaEducationMeAssignmentResource.md)
-Delete a specific educationAssignmentResource attached to an assignment.
-Only teachers in the class can remove a resource.
-After an assignment has been published to students, teachers can't remove resources that are marked as 'distributeToStudents'.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationMeAssignmentResourceDependentResource](Remove-MgBetaEducationMeAssignmentResourceDependentResource.md)
-Delete navigation property dependentResources for education
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationMeAssignmentRubric](Remove-MgBetaEducationMeAssignmentRubric.md)
-Delete an educationRubric from an educationAssignment.
-This method doesn't delete the rubric itself and can only be performed by teachers.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationMeAssignmentRubricByRef](Remove-MgBetaEducationMeAssignmentRubricByRef.md)
-Delete an educationRubric from an educationAssignment.
-This method doesn't delete the rubric itself and can only be performed by teachers.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationMeAssignmentSubmission](Remove-MgBetaEducationMeAssignmentSubmission.md)
-Delete navigation property submissions for education
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationMeAssignmentSubmissionOutcome](Remove-MgBetaEducationMeAssignmentSubmissionOutcome.md)
-Delete a feedback resource from a submission.
-This can only be done by a teacher.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationMeAssignmentSubmissionResource](Remove-MgBetaEducationMeAssignmentSubmissionResource.md)
-Delete an educationSubmissionResource from the submission.
-Only teachers and students can perform this operation.
-If the resource was copied from the assignment, a new copy of the resource will be created after the current copy is deleted.
-This allows you to 'reset' the resource to its original state.
-If the resource wasn't copied from the assignment but was added from the student, the resource is deleted.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationMeAssignmentSubmissionResourceDependentResource](Remove-MgBetaEducationMeAssignmentSubmissionResourceDependentResource.md)
-Delete navigation property dependentResources for education
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationMeAssignmentSubmissionSubmittedResource](Remove-MgBetaEducationMeAssignmentSubmissionSubmittedResource.md)
-Delete navigation property submittedResources for education
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationMeAssignmentSubmissionSubmittedResourceDependentResource](Remove-MgBetaEducationMeAssignmentSubmissionSubmittedResourceDependentResource.md)
-Delete navigation property dependentResources for education
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationMeRubric](Remove-MgBetaEducationMeRubric.md)
-Delete an educationRubric object.
-Only teachers can perform this operation.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationSchool](Remove-MgBetaEducationSchool.md)
-Delete a school.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationSchoolClassByRef](Remove-MgBetaEducationSchoolClassByRef.md)
-Delete a class from a school.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationSchoolUserByRef](Remove-MgBetaEducationSchoolUserByRef.md)
-Delete a user from a school.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationSynchronizationProfile](Remove-MgBetaEducationSynchronizationProfile.md)
-Delete a school data synchronization profile in the tenant based on the identifier.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationSynchronizationProfileError](Remove-MgBetaEducationSynchronizationProfileError.md)
-Delete navigation property errors for education
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationSynchronizationProfileStatus](Remove-MgBetaEducationSynchronizationProfileStatus.md)
-Delete navigation property profileStatus for education
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationUser](Remove-MgBetaEducationUser.md)
-Delete a user.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationUserAssignment](Remove-MgBetaEducationUserAssignment.md)
-Delete navigation property assignments for education
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationUserAssignmentCategoryByRef](Remove-MgBetaEducationUserAssignmentCategoryByRef.md)
-Delete ref of navigation property categories for education
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationUserAssignmentGradingCategory](Remove-MgBetaEducationUserAssignmentGradingCategory.md)
-Remove a gradingCategory from an educationAssignment.
-Only teachers can perform this operation.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationUserAssignmentResource](Remove-MgBetaEducationUserAssignmentResource.md)
-Delete a specific educationAssignmentResource attached to an assignment.
-Only teachers in the class can remove a resource.
-After an assignment has been published to students, teachers can't remove resources that are marked as 'distributeToStudents'.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationUserAssignmentResourceDependentResource](Remove-MgBetaEducationUserAssignmentResourceDependentResource.md)
-Delete navigation property dependentResources for education
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationUserAssignmentRubric](Remove-MgBetaEducationUserAssignmentRubric.md)
-Delete an educationRubric from an educationAssignment.
-This method doesn't delete the rubric itself and can only be performed by teachers.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationUserAssignmentRubricByRef](Remove-MgBetaEducationUserAssignmentRubricByRef.md)
-Delete an educationRubric from an educationAssignment.
-This method doesn't delete the rubric itself and can only be performed by teachers.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationUserAssignmentSubmission](Remove-MgBetaEducationUserAssignmentSubmission.md)
-Delete navigation property submissions for education
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationUserAssignmentSubmissionOutcome](Remove-MgBetaEducationUserAssignmentSubmissionOutcome.md)
-Delete a feedback resource from a submission.
-This can only be done by a teacher.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationUserAssignmentSubmissionResource](Remove-MgBetaEducationUserAssignmentSubmissionResource.md)
-Delete an educationSubmissionResource from the submission.
-Only teachers and students can perform this operation.
-If the resource was copied from the assignment, a new copy of the resource will be created after the current copy is deleted.
-This allows you to 'reset' the resource to its original state.
-If the resource wasn't copied from the assignment but was added from the student, the resource is deleted.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationUserAssignmentSubmissionResourceDependentResource](Remove-MgBetaEducationUserAssignmentSubmissionResourceDependentResource.md)
-Delete navigation property dependentResources for education
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationUserAssignmentSubmissionSubmittedResource](Remove-MgBetaEducationUserAssignmentSubmissionSubmittedResource.md)
-Delete navigation property submittedResources for education
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationUserAssignmentSubmissionSubmittedResourceDependentResource](Remove-MgBetaEducationUserAssignmentSubmissionSubmittedResourceDependentResource.md)
-Delete navigation property dependentResources for education
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationUserRubric](Remove-MgBetaEducationUserRubric.md)
-Delete an educationRubric object.
-Only teachers can perform this operation.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Reset-MgBetaEducationSynchronizationProfile](Reset-MgBetaEducationSynchronizationProfile.md)
-Reset the sync of a specific school data synchronization profile in the tenant.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Resume-MgBetaEducationSynchronizationProfile](Resume-MgBetaEducationSynchronizationProfile.md)
-Resume the sync of a specific school data synchronization profile in the tenant.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Set-MgBetaEducationClassAssignmentRubricByRef](Set-MgBetaEducationClassAssignmentRubricByRef.md)
-Attach an existing educationRubric object to an educationAssignment.
-Only teachers can perform this operation.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Set-MgBetaEducationClassAssignmentSubmissionUpResourceFolder](Set-MgBetaEducationClassAssignmentSubmissionUpResourceFolder.md)
-Trigger the creation of the SharePoint resource folder where all file-based resources (Word, Excel, and so on) should be uploaded for a given submission.
-Only teachers and students can perform this operation.
-Note that files must be located in this folder in order to be added as resources.
-Only a student in the class can determine what files to upload in a given submission-level resource folder.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Set-MgBetaEducationClassAssignmentUpFeedbackResourceFolder](Set-MgBetaEducationClassAssignmentUpFeedbackResourceFolder.md)
-Create a SharePoint folder to upload feedback files for a given educationSubmission.
-Only teachers can perform this operation.
-The teacher determines the resources to upload in the feedback resources folder of a submission.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Set-MgBetaEducationClassAssignmentUpResourceFolder](Set-MgBetaEducationClassAssignmentUpResourceFolder.md)
-Create a SharePoint folder to upload files for a given educationAssignment.
-Only teachers can perform this operation.
-The teacher determines the resources to upload in the assignment's folder.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Set-MgBetaEducationClassModuleUpResourceFolder](Set-MgBetaEducationClassModuleUpResourceFolder.md)
-Create a SharePoint folder to upload files for a given educationModule.
-Only teachers can perform this operation.
-The teacher determines what resources to upload to the SharePoint folder for the module.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Set-MgBetaEducationMeAssignmentRubricByRef](Set-MgBetaEducationMeAssignmentRubricByRef.md)
-Attach an existing educationRubric object to an educationAssignment.
-Only teachers can perform this operation.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Set-MgBetaEducationMeAssignmentSubmissionUpResourceFolder](Set-MgBetaEducationMeAssignmentSubmissionUpResourceFolder.md)
-Trigger the creation of the SharePoint resource folder where all file-based resources (Word, Excel, and so on) should be uploaded for a given submission.
-Only teachers and students can perform this operation.
-Note that files must be located in this folder in order to be added as resources.
-Only a student in the class can determine what files to upload in a given submission-level resource folder.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Set-MgBetaEducationMeAssignmentUpFeedbackResourceFolder](Set-MgBetaEducationMeAssignmentUpFeedbackResourceFolder.md)
-Create a SharePoint folder to upload feedback files for a given educationSubmission.
-Only teachers can perform this operation.
-The teacher determines the resources to upload in the feedback resources folder of a submission.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Set-MgBetaEducationMeAssignmentUpResourceFolder](Set-MgBetaEducationMeAssignmentUpResourceFolder.md)
-Create a SharePoint folder to upload files for a given educationAssignment.
-Only teachers can perform this operation.
-The teacher determines the resources to upload in the assignment's folder.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Set-MgBetaEducationUserAssignmentRubricByRef](Set-MgBetaEducationUserAssignmentRubricByRef.md)
-Attach an existing educationRubric object to an educationAssignment.
-Only teachers can perform this operation.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Set-MgBetaEducationUserAssignmentSubmissionUpResourceFolder](Set-MgBetaEducationUserAssignmentSubmissionUpResourceFolder.md)
-Trigger the creation of the SharePoint resource folder where all file-based resources (Word, Excel, and so on) should be uploaded for a given submission.
-Only teachers and students can perform this operation.
-Note that files must be located in this folder in order to be added as resources.
-Only a student in the class can determine what files to upload in a given submission-level resource folder.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Set-MgBetaEducationUserAssignmentUpFeedbackResourceFolder](Set-MgBetaEducationUserAssignmentUpFeedbackResourceFolder.md)
-Create a SharePoint folder to upload feedback files for a given educationSubmission.
-Only teachers can perform this operation.
-The teacher determines the resources to upload in the feedback resources folder of a submission.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Set-MgBetaEducationUserAssignmentUpResourceFolder](Set-MgBetaEducationUserAssignmentUpResourceFolder.md)
-Create a SharePoint folder to upload files for a given educationAssignment.
-Only teachers can perform this operation.
-The teacher determines the resources to upload in the assignment's folder.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Start-MgBetaEducationSynchronizationProfile](Start-MgBetaEducationSynchronizationProfile.md)
-Verify the files uploaded to a specific school data synchronization profile in the tenant.
-If the verification is successful, synchronization starts on the profile.
-Otherwise, the response contains errors and warnings.
-If the response contains errors, the synchronization won't start.
-If the response contains only warnings, synchronization starts.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Submit-MgBetaEducationClassAssignmentSubmission](Submit-MgBetaEducationClassAssignmentSubmission.md)
-Indicate that a student is done with the work and is ready to hand in the assignment.
-Only teachers, students, and applications with application permissions can perform this operation.
-This method changes the status of the submission from working to submitted.
-During the submit process, all the resources are copied to the submittedResources bucket.
-The teacher will be looking at the submitted resources list for grading.
-A teacher can also submit a student's assignment on their behalf.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Submit-MgBetaEducationMeAssignmentSubmission](Submit-MgBetaEducationMeAssignmentSubmission.md)
-Indicate that a student is done with the work and is ready to hand in the assignment.
-Only teachers, students, and applications with application permissions can perform this operation.
-This method changes the status of the submission from working to submitted.
-During the submit process, all the resources are copied to the submittedResources bucket.
-The teacher will be looking at the submitted resources list for grading.
-A teacher can also submit a student's assignment on their behalf.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Submit-MgBetaEducationUserAssignmentSubmission](Submit-MgBetaEducationUserAssignmentSubmission.md)
-Indicate that a student is done with the work and is ready to hand in the assignment.
-Only teachers, students, and applications with application permissions can perform this operation.
-This method changes the status of the submission from working to submitted.
-During the submit process, all the resources are copied to the submittedResources bucket.
-The teacher will be looking at the submitted resources list for grading.
-A teacher can also submit a student's assignment on their behalf.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Suspend-MgBetaEducationSynchronizationProfile](Suspend-MgBetaEducationSynchronizationProfile.md)
-Pause the sync of a specific school data synchronization profile in the tenant.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationClass](Update-MgBetaEducationClass.md)
-Update the properties of a class.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationClassAssignment](Update-MgBetaEducationClassAssignment.md)
-Update an educationAssignment object.
-Only teachers in the class can do this.
-You can't use a PATCH request to change the status of an assignment.
-Use the publish action to change the assignment status.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationClassAssignmentCategory](Update-MgBetaEducationClassAssignmentCategory.md)
-Update the navigation property assignmentCategories in education
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationClassAssignmentDefault](Update-MgBetaEducationClassAssignmentDefault.md)
-Update the properties of an educationAssignmentDefaults object.
-Only teachers can update these settings.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationClassAssignmentResource](Update-MgBetaEducationClassAssignmentResource.md)
-Update the navigation property resources in education
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationClassAssignmentResourceDependentResource](Update-MgBetaEducationClassAssignmentResourceDependentResource.md)
-Update the navigation property dependentResources in education
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationClassAssignmentRubric](Update-MgBetaEducationClassAssignmentRubric.md)
-Attach an existing educationRubric object to an educationAssignment.
-Only teachers can perform this operation.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationClassAssignmentSetting](Update-MgBetaEducationClassAssignmentSetting.md)
-Update the properties of an educationAssignmentSettings object.
-Only teachers can update these settings.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationClassAssignmentSettingGradingCategory](Update-MgBetaEducationClassAssignmentSettingGradingCategory.md)
-Update the navigation property gradingCategories in education
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationClassAssignmentSubmission](Update-MgBetaEducationClassAssignmentSubmission.md)
-Update the navigation property submissions in education
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationClassAssignmentSubmissionOutcome](Update-MgBetaEducationClassAssignmentSubmissionOutcome.md)
-Update the properties of an educationOutcome object.
-Only teachers can perform this operation.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationClassAssignmentSubmissionResource](Update-MgBetaEducationClassAssignmentSubmissionResource.md)
-Update the navigation property resources in education
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationClassAssignmentSubmissionResourceDependentResource](Update-MgBetaEducationClassAssignmentSubmissionResourceDependentResource.md)
-Update the navigation property dependentResources in education
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationClassAssignmentSubmissionSubmittedResource](Update-MgBetaEducationClassAssignmentSubmissionSubmittedResource.md)
-Update the navigation property submittedResources in education
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationClassAssignmentSubmissionSubmittedResourceDependentResource](Update-MgBetaEducationClassAssignmentSubmissionSubmittedResourceDependentResource.md)
-Update the navigation property dependentResources in education
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationClassModule](Update-MgBetaEducationClassModule.md)
-Update an educationModule object in a class.
-Only teachers in the class can perform this operation.
-Note that you can't use a PATCH request to change the status of a module.
-Use the publish action to change the module status.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationClassModuleResource](Update-MgBetaEducationClassModuleResource.md)
-Update a resource in a module.
-Only teachers can perform this operation.
-The only one property that can be updated is displayName, for all resource types.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationMe](Update-MgBetaEducationMe.md)
-Update the navigation property me in education
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationMeAssignment](Update-MgBetaEducationMeAssignment.md)
-Update the navigation property assignments in education
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationMeAssignmentResource](Update-MgBetaEducationMeAssignmentResource.md)
-Update the navigation property resources in education
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationMeAssignmentResourceDependentResource](Update-MgBetaEducationMeAssignmentResourceDependentResource.md)
-Update the navigation property dependentResources in education
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationMeAssignmentRubric](Update-MgBetaEducationMeAssignmentRubric.md)
-Attach an existing educationRubric object to an educationAssignment.
-Only teachers can perform this operation.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationMeAssignmentSubmission](Update-MgBetaEducationMeAssignmentSubmission.md)
-Update the navigation property submissions in education
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationMeAssignmentSubmissionOutcome](Update-MgBetaEducationMeAssignmentSubmissionOutcome.md)
-Update the properties of an educationOutcome object.
-Only teachers can perform this operation.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationMeAssignmentSubmissionResource](Update-MgBetaEducationMeAssignmentSubmissionResource.md)
-Update the navigation property resources in education
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationMeAssignmentSubmissionResourceDependentResource](Update-MgBetaEducationMeAssignmentSubmissionResourceDependentResource.md)
-Update the navigation property dependentResources in education
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationMeAssignmentSubmissionSubmittedResource](Update-MgBetaEducationMeAssignmentSubmissionSubmittedResource.md)
-Update the navigation property submittedResources in education
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationMeAssignmentSubmissionSubmittedResourceDependentResource](Update-MgBetaEducationMeAssignmentSubmissionSubmittedResourceDependentResource.md)
-Update the navigation property dependentResources in education
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationMeRubric](Update-MgBetaEducationMeRubric.md)
-Update the properties of an educationRubric object.
-Only teachers can perform this operation.
-Updating a rubric attached to an assignment (PATCH /education/classes/{id}/assignments/{id}/rubric) is only possible before the assignment is published, and what is updated is actually the original rubric that exists under /education/users/{id}/rubrics.
-After the assignment is published, an immutable copy of the rubric is made that is attached to that specific assignment.
-That rubric can be retrieved using GET /education/classes/{id}/assignments/{id}/rubric, but it cannot be updated.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationMeUserMailboxSetting](Update-MgBetaEducationMeUserMailboxSetting.md)
-Update property mailboxSettings value.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationRoot](Update-MgBetaEducationRoot.md)
-Update education
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationSchool](Update-MgBetaEducationSchool.md)
-Update the properties of a school object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationSchoolAdministrativeUnit](Update-MgBetaEducationSchoolAdministrativeUnit.md)
-Update the navigation property administrativeUnit in education
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationSynchronizationProfile](Update-MgBetaEducationSynchronizationProfile.md)
-Update the navigation property synchronizationProfiles in education
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationSynchronizationProfileError](Update-MgBetaEducationSynchronizationProfileError.md)
-Update the navigation property errors in education
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationSynchronizationProfileStatus](Update-MgBetaEducationSynchronizationProfileStatus.md)
-Update the navigation property profileStatus in education
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationUser](Update-MgBetaEducationUser.md)
-Update the relatedContact collection of an educationUser object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationUserAssignment](Update-MgBetaEducationUserAssignment.md)
-Update the navigation property assignments in education
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationUserAssignmentResource](Update-MgBetaEducationUserAssignmentResource.md)
-Update the navigation property resources in education
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationUserAssignmentResourceDependentResource](Update-MgBetaEducationUserAssignmentResourceDependentResource.md)
-Update the navigation property dependentResources in education
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationUserAssignmentRubric](Update-MgBetaEducationUserAssignmentRubric.md)
-Attach an existing educationRubric object to an educationAssignment.
-Only teachers can perform this operation.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationUserAssignmentSubmission](Update-MgBetaEducationUserAssignmentSubmission.md)
-Update the navigation property submissions in education
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationUserAssignmentSubmissionOutcome](Update-MgBetaEducationUserAssignmentSubmissionOutcome.md)
-Update the properties of an educationOutcome object.
-Only teachers can perform this operation.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationUserAssignmentSubmissionResource](Update-MgBetaEducationUserAssignmentSubmissionResource.md)
-Update the navigation property resources in education
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationUserAssignmentSubmissionResourceDependentResource](Update-MgBetaEducationUserAssignmentSubmissionResourceDependentResource.md)
-Update the navigation property dependentResources in education
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationUserAssignmentSubmissionSubmittedResource](Update-MgBetaEducationUserAssignmentSubmissionSubmittedResource.md)
-Update the navigation property submittedResources in education
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationUserAssignmentSubmissionSubmittedResourceDependentResource](Update-MgBetaEducationUserAssignmentSubmissionSubmittedResourceDependentResource.md)
-Update the navigation property dependentResources in education
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationUserMailboxSetting](Update-MgBetaEducationUserMailboxSetting.md)
-Update property mailboxSettings value.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaEducationUserRubric](Update-MgBetaEducationUserRubric.md)
-Update the properties of an educationRubric object.
-Only teachers can perform this operation.
-Updating a rubric attached to an assignment (PATCH /education/classes/{id}/assignments/{id}/rubric) is only possible before the assignment is published, and what is updated is actually the original rubric that exists under /education/users/{id}/rubrics.
-After the assignment is published, an immutable copy of the rubric is made that is attached to that specific assignment.
-That rubric can be retrieved using GET /education/classes/{id}/assignments/{id}/rubric, but it cannot be updated.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 

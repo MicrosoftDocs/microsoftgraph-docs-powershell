@@ -86,11 +86,12 @@ function Get-Files {
 
     try {
         if (Test-Path $GraphProfilePath) {
-           
+            $ModuleMetaData = $GraphProfile -eq "v1.0" ? "Microsoft.Graph.$Module" : "Microsoft.Graph.Beta.$Module"
             foreach ($File in Get-ChildItem $GraphProfilePath) {
                
                 #Extract command over here
                 $Command = [System.IO.Path]::GetFileNameWithoutExtension($File)
+                if($Command -ne $ModuleMetaData){
                 #Extract URI path
                 $CommandDetails = Find-MgGraphCommand -Command $Command
                 if ($CommandDetails) {
@@ -100,6 +101,7 @@ function Get-Files {
                         Get-ExternalDocsUrl -GraphProfile $GraphProfile -UriPath $ApiPath -Command $Command -OpenApiContent $OpenApiContent -GraphProfilePath $GraphProfilePath -Method $Method.Trim() -Module $Module -File $File
                     }
                 }
+            }
 
             }
         }

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgGraphOption
 
 ## SYNOPSIS
-Gets global configurations that apply to the SDK. For example, check if Web Account Manager (WAM) support has been enabled.
+Gets global configurations that apply to the SDK.
+For example, check if Web Account Manager (WAM) support has been enabled.
 
 ## SYNTAX
 
@@ -17,12 +18,13 @@ Get-MgGraphOption [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Gets global configurations that apply to the SDK. For example, check if Web Account Manager (WAM) support has been enabled.
+Gets global configurations that apply to the SDK.
+For example, check if Web Account Manager (WAM) support has been enabled.
 
 ## EXAMPLES
 
 ### Example 1: Check if WAM support has been enabled
-```powershell
+```
 PS C:\> Get-MgGraphOption
 EnableWAMForMSGraph 
 --------------------

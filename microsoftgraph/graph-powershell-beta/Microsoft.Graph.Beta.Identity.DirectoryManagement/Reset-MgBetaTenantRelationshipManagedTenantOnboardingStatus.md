@@ -8,8 +8,9 @@ schema: 2.0.0
 # Reset-MgBetaTenantRelationshipManagedTenantOnboardingStatus
 
 ## SYNOPSIS
-Carries out the appropriate procedures to reset the onboarding status for the managed tenant that was removed from the multi-tenant management platform using the offboardTenant action.
-By invoking this action the platform will attempt to onboard the managed tenant for management.
+Carries out the appropriate procedures to reset the onboarding status for the managed tenant that was removed from the multitenant management platform using the offboardTenant action.
+By invoking this action the platform attempts to onboard the managed tenant for management.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -26,8 +27,9 @@ Reset-MgBetaTenantRelationshipManagedTenantOnboardingStatus -InputObject <IIdent
 ```
 
 ## DESCRIPTION
-Carries out the appropriate procedures to reset the onboarding status for the managed tenant that was removed from the multi-tenant management platform using the offboardTenant action.
-By invoking this action the platform will attempt to onboard the managed tenant for management.
+Carries out the appropriate procedures to reset the onboarding status for the managed tenant that was removed from the multitenant management platform using the offboardTenant action.
+By invoking this action the platform attempts to onboard the managed tenant for management.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -119,6 +121,7 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[ContractId \<String\>\]: The unique identifier of contract
   \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
   \[DeviceId \<String\>\]: The unique identifier of device
+  \[DeviceLocalCredentialInfoId \<String\>\]: The unique identifier of deviceLocalCredentialInfo
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[DirectoryRoleId \<String\>\]: The unique identifier of directoryRole
   \[DirectoryRoleTemplateId \<String\>\]: The unique identifier of directoryRoleTemplate

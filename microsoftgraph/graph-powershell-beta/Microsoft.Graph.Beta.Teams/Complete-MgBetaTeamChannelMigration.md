@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/complete-mgbetateamchannelmigration
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # Complete-MgBetaTeamChannelMigration
@@ -12,7 +13,7 @@ Complete the message migration process by removing migration mode from a channel
 Migration mode is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
 After a completeMigration request is made, you can't import more messages into the team.
 You can add members to the team after the request returns a successful response.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Complete-MgTeamChannelMigration](/powershell/module/Microsoft.Graph.Teams/Complete-MgTeamChannelMigration?view=graph-powershell-1.0)
@@ -36,7 +37,7 @@ Complete the message migration process by removing migration mode from a channel
 Migration mode is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
 After a completeMigration request is made, you can't import more messages into the team.
 You can add members to the team after the request returns a successful response.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

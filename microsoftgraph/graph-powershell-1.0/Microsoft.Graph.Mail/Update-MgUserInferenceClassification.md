@@ -43,8 +43,6 @@ Update-MgUserInferenceClassification -InputObject <IMailIdentity>
 ## DESCRIPTION
 Update the navigation property inferenceClassification in users
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -185,44 +183,50 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInferenceClassification
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+BODYPARAMETER \<IMicrosoftGraphInferenceClassification\>: inferenceClassification
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[Overrides \<IMicrosoftGraphInferenceClassificationOverride\[\]\>\]: A set of overrides for a user to always classify messages from specific senders in certain ways: focused, or other.
+Read-only.
+Nullable.
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[ClassifyAs \<String\>\]: inferenceClassificationType
+    \[SenderEmailAddress \<IMicrosoftGraphEmailAddress\>\]: emailAddress
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Address \<String\>\]: The email address of the person or entity.
+      \[Name \<String\>\]: The display name of the person or entity.
 
-`BODYPARAMETER <IMicrosoftGraphInferenceClassification>`: inferenceClassification
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Overrides <IMicrosoftGraphInferenceClassificationOverride[]>]`: A set of overrides for a user to always classify messages from specific senders in certain ways: focused, or other. Read-only. Nullable.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[ClassifyAs <String>]`: inferenceClassificationType
-    - `[SenderEmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Address <String>]`: The email address of the person or entity.
-      - `[Name <String>]`: The display name of the person or entity.
+INPUTOBJECT \<IMailIdentity\>: Identity Parameter
+  \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[InferenceClassificationOverrideId \<String\>\]: The unique identifier of inferenceClassificationOverride
+  \[MailFolderId \<String\>\]: The unique identifier of mailFolder
+  \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
+  \[MessageId \<String\>\]: The unique identifier of message
+  \[MessageRuleId \<String\>\]: The unique identifier of messageRule
+  \[UserId \<String\>\]: The unique identifier of user
 
-`INPUTOBJECT <IMailIdentity>`: Identity Parameter
-  - `[AttachmentId <String>]`: The unique identifier of attachment
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[InferenceClassificationOverrideId <String>]`: The unique identifier of inferenceClassificationOverride
-  - `[MailFolderId <String>]`: The unique identifier of mailFolder
-  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
-  - `[MessageId <String>]`: The unique identifier of message
-  - `[MessageRuleId <String>]`: The unique identifier of messageRule
-  - `[UserId <String>]`: The unique identifier of user
-
-`OVERRIDES <IMicrosoftGraphInferenceClassificationOverride[]>`: A set of overrides for a user to always classify messages from specific senders in certain ways: focused, or other. Read-only. Nullable.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[ClassifyAs <String>]`: inferenceClassificationType
-  - `[SenderEmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Address <String>]`: The email address of the person or entity.
-    - `[Name <String>]`: The display name of the person or entity.
+OVERRIDES \<IMicrosoftGraphInferenceClassificationOverride\[\]\>: A set of overrides for a user to always classify messages from specific senders in certain ways: focused, or other.
+Read-only.
+Nullable.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[ClassifyAs \<String\>\]: inferenceClassificationType
+  \[SenderEmailAddress \<IMicrosoftGraphEmailAddress\>\]: emailAddress
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Address \<String\>\]: The email address of the person or entity.
+    \[Name \<String\>\]: The display name of the person or entity.
 
 ## RELATED LINKS
-
 [Update-MgBetaUserInferenceClassification](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserInferenceClassification?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mguserinferenceclassification](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mguserinferenceclassification)
+
 

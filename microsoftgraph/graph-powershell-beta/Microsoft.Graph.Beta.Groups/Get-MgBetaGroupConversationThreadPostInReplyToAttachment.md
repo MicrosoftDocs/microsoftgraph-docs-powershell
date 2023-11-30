@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupconversationthreadpostinreplytoattachment
 schema: 2.0.0
+ms.prod: groups
 ---
 
 # Get-MgBetaGroupConversationThreadPostInReplyToAttachment
@@ -44,6 +45,8 @@ The collection of fileAttachment, itemAttachment, and referenceAttachment attach
 Read-only.
 Nullable.
 Supports $expand.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -336,5 +339,4 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Get-MgGroupConversationThreadPostInReplyToAttachment](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupConversationThreadPostInReplyToAttachment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupconversationthreadpostinreplytoattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupconversationthreadpostinreplytoattachment)
-
 

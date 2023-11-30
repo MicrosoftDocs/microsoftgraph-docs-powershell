@@ -163,20 +163,21 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsAutopilotSettings
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`BODYPARAMETER <IMicrosoftGraphWindowsAutopilotSettings>`: The windowsAutopilotSettings resource represents a Windows Autopilot Account to sync data with Windows device data sync service.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[LastManualSyncTriggerDateTime <DateTime?>]`: Last data sync date time with DDS service.
-  - `[LastSyncDateTime <DateTime?>]`: Last data sync date time with DDS service.
-  - `[SyncStatus <WindowsAutopilotSyncStatus?>]`: windowsAutopilotSyncStatus
+BODYPARAMETER \<IMicrosoftGraphWindowsAutopilotSettings\>: The windowsAutopilotSettings resource represents a Windows Autopilot Account to sync data with Windows device data sync service.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[LastManualSyncTriggerDateTime \<DateTime?\>\]: Last data sync date time with DDS service.
+  \[LastSyncDateTime \<DateTime?\>\]: Last data sync date time with DDS service.
+  \[SyncStatus \<WindowsAutopilotSyncStatus?\>\]: windowsAutopilotSyncStatus
 
 ## RELATED LINKS
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementwindowsautopilotsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementwindowsautopilotsetting)
+
 

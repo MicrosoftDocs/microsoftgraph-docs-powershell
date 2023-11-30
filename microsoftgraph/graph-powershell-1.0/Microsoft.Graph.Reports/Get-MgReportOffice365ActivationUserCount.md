@@ -22,8 +22,6 @@ Get-MgReportOffice365ActivationUserCount -OutFile <String> [-PassThru] [<CommonP
 ## DESCRIPTION
 Invoke function getOffice365ActivationsUserCounts
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -OutFile
@@ -51,7 +49,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -66,9 +64,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.Boolean
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
-
 [Get-MgBetaReportOffice365ActivationUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOffice365ActivationUserCount?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365activationusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365activationusercount)
+
 

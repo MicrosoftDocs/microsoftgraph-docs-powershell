@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Restore a  deletedChat to an active chat.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Undo-MgBetaTeamworkDeletedChatDelete -InputObject <ITeamsIdentity> [-PassThru] [
 
 ## DESCRIPTION
 Restore a  deletedChat to an active chat.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

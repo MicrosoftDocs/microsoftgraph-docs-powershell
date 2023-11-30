@@ -22,8 +22,6 @@ Get-MgSecurityThreatIntelligence [-ExpandProperty <String[]>] [-Property <String
 ## DESCRIPTION
 Get threatIntelligence from security
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -66,9 +64,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityThreatIntelligence
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
-
 [Get-MgBetaSecurityThreatIntelligence](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligence?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligence](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligence)
+
 

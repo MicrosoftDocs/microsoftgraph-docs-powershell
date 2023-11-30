@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/copy-mgbetagrouponenotenotebook
 schema: 2.0.0
+ms.prod: onenote
 ---
 
 # Copy-MgBetaGroupOnenoteNotebook
@@ -11,6 +12,7 @@ schema: 2.0.0
 Copies a notebook to the Notebooks folder in the destination Documents library.
 The folder is created if it doesn't exist.
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Copy-MgGroupOnenoteNotebook](/powershell/module/Microsoft.Graph.Groups/Copy-MgGroupOnenoteNotebook?view=graph-powershell-1.0)
@@ -49,6 +51,9 @@ Copy-MgBetaGroupOnenoteNotebook -InputObject <IGroupsIdentity>
 Copies a notebook to the Notebooks folder in the destination Documents library.
 The folder is created if it doesn't exist.
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -318,5 +323,4 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Copy-MgGroupOnenoteNotebook](/powershell/module/Microsoft.Graph.Groups/Copy-MgGroupOnenoteNotebook?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/copy-mgbetagrouponenotenotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/copy-mgbetagrouponenotenotebook)
-
 

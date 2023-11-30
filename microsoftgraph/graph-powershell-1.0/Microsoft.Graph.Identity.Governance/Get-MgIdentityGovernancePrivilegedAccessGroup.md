@@ -23,8 +23,6 @@ Get-MgIdentityGovernancePrivilegedAccessGroup [-ExpandProperty <String[]>] [-Pro
 ## DESCRIPTION
 A group that's governed through Privileged Identity Management (PIM).
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -67,9 +65,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrivilegedAccessGroup
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
-
 [Get-MgBetaIdentityGovernancePrivilegedAccessGroup](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernancePrivilegedAccessGroup?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceprivilegedaccessgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceprivilegedaccessgroup)
+
 

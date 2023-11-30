@@ -310,92 +310,103 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMailboxSettings
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+AUTOMATICREPLIESSETTING \<IMicrosoftGraphAutomaticRepliesSetting\>: automaticRepliesSetting
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ExternalAudience \<String\>\]: externalAudienceScope
+  \[ExternalReplyMessage \<String\>\]: The automatic reply to send to the specified external audience, if Status is AlwaysEnabled or Scheduled.
+  \[InternalReplyMessage \<String\>\]: The automatic reply to send to the audience internal to the signed-in user's organization, if Status is AlwaysEnabled or Scheduled.
+  \[ScheduledEndDateTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DateTime \<String\>\]: A single point of time in a combined date and time representation ({date}T{time}).
+For example, '2019-04-16T09:00:00'.
+    \[TimeZone \<String\>\]: Represents a time zone, for example, 'Pacific Standard Time'.
+See below for possible values.
+  \[ScheduledStartDateTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
+  \[Status \<String\>\]: automaticRepliesStatus
 
-`AUTOMATICREPLIESSETTING <IMicrosoftGraphAutomaticRepliesSetting>`: automaticRepliesSetting
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ExternalAudience <String>]`: externalAudienceScope
-  - `[ExternalReplyMessage <String>]`: The automatic reply to send to the specified external audience, if Status is AlwaysEnabled or Scheduled.
-  - `[InternalReplyMessage <String>]`: The automatic reply to send to the audience internal to the signed-in user's organization, if Status is AlwaysEnabled or Scheduled.
-  - `[ScheduledEndDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
-    - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
-  - `[ScheduledStartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-  - `[Status <String>]`: automaticRepliesStatus
+BODYPARAMETER \<IMicrosoftGraphMailboxSettings\>: mailboxSettings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ArchiveFolder \<String\>\]: Folder ID of an archive folder for the user.
+Read-only.
+  \[AutomaticRepliesSetting \<IMicrosoftGraphAutomaticRepliesSetting\>\]: automaticRepliesSetting
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[ExternalAudience \<String\>\]: externalAudienceScope
+    \[ExternalReplyMessage \<String\>\]: The automatic reply to send to the specified external audience, if Status is AlwaysEnabled or Scheduled.
+    \[InternalReplyMessage \<String\>\]: The automatic reply to send to the audience internal to the signed-in user's organization, if Status is AlwaysEnabled or Scheduled.
+    \[ScheduledEndDateTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DateTime \<String\>\]: A single point of time in a combined date and time representation ({date}T{time}).
+For example, '2019-04-16T09:00:00'.
+      \[TimeZone \<String\>\]: Represents a time zone, for example, 'Pacific Standard Time'.
+See below for possible values.
+    \[ScheduledStartDateTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
+    \[Status \<String\>\]: automaticRepliesStatus
+  \[DateFormat \<String\>\]: The date format for the user's mailbox.
+  \[DelegateMeetingMessageDeliveryOptions \<String\>\]: delegateMeetingMessageDeliveryOptions
+  \[Language \<IMicrosoftGraphLocaleInfo\>\]: localeInfo
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: A name representing the user's locale in natural language, for example, 'English (United States)'.
+    \[Locale \<String\>\]: A locale representation for the user, which includes the user's preferred language and country/region.
+For example, 'en-us'.
+The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
+  \[TimeFormat \<String\>\]: The time format for the user's mailbox.
+  \[TimeZone \<String\>\]: The default time zone for the user's mailbox.
+  \[UserPurpose \<String\>\]: userPurpose
+  \[UserPurposeV2 \<String\>\]: mailboxRecipientType
+  \[WorkingHours \<IMicrosoftGraphWorkingHours\>\]: workingHours
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DaysOfWeek \<String\[\]\>\]: The days of the week on which the user works.
+    \[EndTime \<String\>\]: The time of the day that the user stops working.
+    \[StartTime \<String\>\]: The time of the day that the user starts working.
+    \[TimeZone \<IMicrosoftGraphTimeZoneBase\>\]: timeZoneBase
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Name \<String\>\]: The name of a time zone.
+It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 'Customized Time Zone' for a custom time zone.
 
-`BODYPARAMETER <IMicrosoftGraphMailboxSettings>`: mailboxSettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ArchiveFolder <String>]`: Folder ID of an archive folder for the user. Read-only.
-  - `[AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>]`: automaticRepliesSetting
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ExternalAudience <String>]`: externalAudienceScope
-    - `[ExternalReplyMessage <String>]`: The automatic reply to send to the specified external audience, if Status is AlwaysEnabled or Scheduled.
-    - `[InternalReplyMessage <String>]`: The automatic reply to send to the audience internal to the signed-in user's organization, if Status is AlwaysEnabled or Scheduled.
-    - `[ScheduledEndDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
-      - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
-    - `[ScheduledStartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-    - `[Status <String>]`: automaticRepliesStatus
-  - `[DateFormat <String>]`: The date format for the user's mailbox.
-  - `[DelegateMeetingMessageDeliveryOptions <String>]`: delegateMeetingMessageDeliveryOptions
-  - `[Language <IMicrosoftGraphLocaleInfo>]`: localeInfo
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: A name representing the user's locale in natural language, for example, 'English (United States)'.
-    - `[Locale <String>]`: A locale representation for the user, which includes the user's preferred language and country/region. For example, 'en-us'. The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
-  - `[TimeFormat <String>]`: The time format for the user's mailbox.
-  - `[TimeZone <String>]`: The default time zone for the user's mailbox.
-  - `[UserPurpose <String>]`: userPurpose
-  - `[UserPurposeV2 <String>]`: mailboxRecipientType
-  - `[WorkingHours <IMicrosoftGraphWorkingHours>]`: workingHours
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DaysOfWeek <String[]>]`: The days of the week on which the user works.
-    - `[EndTime <String>]`: The time of the day that the user stops working.
-    - `[StartTime <String>]`: The time of the day that the user starts working.
-    - `[TimeZone <IMicrosoftGraphTimeZoneBase>]`: timeZoneBase
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Name <String>]`: The name of a time zone. It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 'Customized Time Zone' for a custom time zone.
+INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
+  \[EducationAssignmentId \<String\>\]: The unique identifier of educationAssignment
+  \[EducationAssignmentResourceId \<String\>\]: The unique identifier of educationAssignmentResource
+  \[EducationAssignmentResourceId1 \<String\>\]: The unique identifier of educationAssignmentResource
+  \[EducationCategoryId \<String\>\]: The unique identifier of educationCategory
+  \[EducationClassId \<String\>\]: The unique identifier of educationClass
+  \[EducationGradingCategoryId \<String\>\]: The unique identifier of educationGradingCategory
+  \[EducationModuleId \<String\>\]: The unique identifier of educationModule
+  \[EducationModuleResourceId \<String\>\]: The unique identifier of educationModuleResource
+  \[EducationOutcomeId \<String\>\]: The unique identifier of educationOutcome
+  \[EducationRubricId \<String\>\]: The unique identifier of educationRubric
+  \[EducationSchoolId \<String\>\]: The unique identifier of educationSchool
+  \[EducationSubmissionId \<String\>\]: The unique identifier of educationSubmission
+  \[EducationSubmissionResourceId \<String\>\]: The unique identifier of educationSubmissionResource
+  \[EducationSubmissionResourceId1 \<String\>\]: The unique identifier of educationSubmissionResource
+  \[EducationSynchronizationErrorId \<String\>\]: The unique identifier of educationSynchronizationError
+  \[EducationSynchronizationProfileId \<String\>\]: The unique identifier of educationSynchronizationProfile
+  \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
-`INPUTOBJECT <IEducationIdentity>`: Identity Parameter
-  - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
-  - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
-  - `[EducationAssignmentResourceId1 <String>]`: The unique identifier of educationAssignmentResource
-  - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
-  - `[EducationClassId <String>]`: The unique identifier of educationClass
-  - `[EducationGradingCategoryId <String>]`: The unique identifier of educationGradingCategory
-  - `[EducationModuleId <String>]`: The unique identifier of educationModule
-  - `[EducationModuleResourceId <String>]`: The unique identifier of educationModuleResource
-  - `[EducationOutcomeId <String>]`: The unique identifier of educationOutcome
-  - `[EducationRubricId <String>]`: The unique identifier of educationRubric
-  - `[EducationSchoolId <String>]`: The unique identifier of educationSchool
-  - `[EducationSubmissionId <String>]`: The unique identifier of educationSubmission
-  - `[EducationSubmissionResourceId <String>]`: The unique identifier of educationSubmissionResource
-  - `[EducationSubmissionResourceId1 <String>]`: The unique identifier of educationSubmissionResource
-  - `[EducationSynchronizationErrorId <String>]`: The unique identifier of educationSynchronizationError
-  - `[EducationSynchronizationProfileId <String>]`: The unique identifier of educationSynchronizationProfile
-  - `[EducationUserId <String>]`: The unique identifier of educationUser
+LANGUAGE \<IMicrosoftGraphLocaleInfo\>: localeInfo
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DisplayName \<String\>\]: A name representing the user's locale in natural language, for example, 'English (United States)'.
+  \[Locale \<String\>\]: A locale representation for the user, which includes the user's preferred language and country/region.
+For example, 'en-us'.
+The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
 
-`LANGUAGE <IMicrosoftGraphLocaleInfo>`: localeInfo
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: A name representing the user's locale in natural language, for example, 'English (United States)'.
-  - `[Locale <String>]`: A locale representation for the user, which includes the user's preferred language and country/region. For example, 'en-us'. The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
-
-`WORKINGHOURS <IMicrosoftGraphWorkingHours>`: workingHours
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DaysOfWeek <String[]>]`: The days of the week on which the user works.
-  - `[EndTime <String>]`: The time of the day that the user stops working.
-  - `[StartTime <String>]`: The time of the day that the user starts working.
-  - `[TimeZone <IMicrosoftGraphTimeZoneBase>]`: timeZoneBase
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Name <String>]`: The name of a time zone. It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 'Customized Time Zone' for a custom time zone.
+WORKINGHOURS \<IMicrosoftGraphWorkingHours\>: workingHours
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DaysOfWeek \<String\[\]\>\]: The days of the week on which the user works.
+  \[EndTime \<String\>\]: The time of the day that the user stops working.
+  \[StartTime \<String\>\]: The time of the day that the user starts working.
+  \[TimeZone \<IMicrosoftGraphTimeZoneBase\>\]: timeZoneBase
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Name \<String\>\]: The name of a time zone.
+It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 'Customized Time Zone' for a custom time zone.
 
 ## RELATED LINKS
 [Update-MgEducationUserMailboxSetting](/powershell/module/Microsoft.Graph.Education/Update-MgEducationUserMailboxSetting?view=graph-powershell-1.0)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationusermailboxsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationusermailboxsetting)
+
 

@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a standard tag for members in the team.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgGroupTeamTag](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamTag?view=graph-powershell-1.0)
@@ -45,7 +45,9 @@ New-MgBetaGroupTeamTag -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftG
 
 ## DESCRIPTION
 Create a standard tag for members in the team.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -334,5 +336,4 @@ Read-only.
 [New-MgGroupTeamTag](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamTag?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamtag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamtag)
-
 

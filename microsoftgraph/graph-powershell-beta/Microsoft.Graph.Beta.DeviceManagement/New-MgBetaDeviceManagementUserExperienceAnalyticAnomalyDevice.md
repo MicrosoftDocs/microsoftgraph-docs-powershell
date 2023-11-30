@@ -287,28 +287,30 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAnomalyDevice
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsAnomalyDevice>`: The user experience analytics anomaly entity contains device details.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[AnomalyId <String>]`: The unique identifier of the anomaly.
-  - `[AnomalyOnDeviceFirstOccurrenceDateTime <DateTime?>]`: Indicates the first occurance date and time for the anomaly on the device.
-  - `[AnomalyOnDeviceLatestOccurrenceDateTime <DateTime?>]`: Indicates the latest occurance date and time for the anomaly on the device.
-  - `[CorrelationGroupId <String>]`: The unique identifier of the correlation group.
-  - `[DeviceId <String>]`: The unique identifier of the device.
-  - `[DeviceManufacturer <String>]`: The manufacturer name of the device.
-  - `[DeviceModel <String>]`: The model name of the device.
-  - `[DeviceName <String>]`: The name of the device.
-  - `[DeviceStatus <UserExperienceAnalyticsDeviceStatus?>]`: Indicates the status of the device in the correlation group. Eg: Device status can be anomalous, affected, at risk.
-  - `[OSName <String>]`: The name of the OS installed on the device.
-  - `[OSVersion <String>]`: The OS version installed on the device.
+BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsAnomalyDevice\>: The user experience analytics anomaly entity contains device details.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[AnomalyId \<String\>\]: The unique identifier of the anomaly.
+  \[AnomalyOnDeviceFirstOccurrenceDateTime \<DateTime?\>\]: Indicates the first occurance date and time for the anomaly on the device.
+  \[AnomalyOnDeviceLatestOccurrenceDateTime \<DateTime?\>\]: Indicates the latest occurance date and time for the anomaly on the device.
+  \[CorrelationGroupId \<String\>\]: The unique identifier of the correlation group.
+  \[DeviceId \<String\>\]: The unique identifier of the device.
+  \[DeviceManufacturer \<String\>\]: The manufacturer name of the device.
+  \[DeviceModel \<String\>\]: The model name of the device.
+  \[DeviceName \<String\>\]: The name of the device.
+  \[DeviceStatus \<UserExperienceAnalyticsDeviceStatus?\>\]: Indicates the status of the device in the correlation group.
+Eg: Device status can be anomalous, affected, at risk.
+  \[OSName \<String\>\]: The name of the OS installed on the device.
+  \[OSVersion \<String\>\]: The OS version installed on the device.
 
 ## RELATED LINKS
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticanomalydevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticanomalydevice)
+
 

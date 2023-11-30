@@ -224,24 +224,25 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphNdesConnector
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`BODYPARAMETER <IMicrosoftGraphNdesConnector>`: Entity which represents an OnPrem Ndes connector.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[ConnectorVersion <String>]`: The build version of the Ndes Connector.
-  - `[DisplayName <String>]`: The friendly name of the Ndes Connector.
-  - `[EnrolledDateTime <DateTime?>]`: Timestamp when on-prem certificate connector was enrolled in Intune.
-  - `[LastConnectionDateTime <DateTime?>]`: Last connection time for the Ndes Connector
-  - `[MachineName <String>]`: Name of the machine running on-prem certificate connector service.
-  - `[RoleScopeTagIds <String[]>]`: List of Scope Tags for this Entity instance.
-  - `[State <NdesConnectorState?>]`: The current status of the Ndes Connector.
+BODYPARAMETER \<IMicrosoftGraphNdesConnector\>: Entity which represents an OnPrem Ndes connector.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[ConnectorVersion \<String\>\]: The build version of the Ndes Connector.
+  \[DisplayName \<String\>\]: The friendly name of the Ndes Connector.
+  \[EnrolledDateTime \<DateTime?\>\]: Timestamp when on-prem certificate connector was enrolled in Intune.
+  \[LastConnectionDateTime \<DateTime?\>\]: Last connection time for the Ndes Connector
+  \[MachineName \<String\>\]: Name of the machine running on-prem certificate connector service.
+  \[RoleScopeTagIds \<String\[\]\>\]: List of Scope Tags for this Entity instance.
+  \[State \<NdesConnectorState?\>\]: The current status of the Ndes Connector.
 
 ## RELATED LINKS
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementndeconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementndeconnector)
+
 

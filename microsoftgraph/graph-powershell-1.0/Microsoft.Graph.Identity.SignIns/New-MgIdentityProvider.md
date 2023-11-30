@@ -3,15 +3,16 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityprovider
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # New-MgIdentityProvider
 
 ## SYNOPSIS
 Create an identity provider object that is of the type specified in the request body.
-Among the types of providers derived from identityProviderBase, you can currently create a socialIdentityProvider resource in Azure AD.
+Among the types of providers derived from identityProviderBase, you can currently create a socialIdentityProvider resource in Microsoft Entra ID.
 In Azure AD B2C, this operation can currently create a socialIdentityProvider, or an appleManagedIdentityProvider resource.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaIdentityProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityProvider?view=graph-powershell-beta)
@@ -32,9 +33,9 @@ New-MgIdentityProvider -BodyParameter <IMicrosoftGraphIdentityProviderBase> [-Wh
 
 ## DESCRIPTION
 Create an identity provider object that is of the type specified in the request body.
-Among the types of providers derived from identityProviderBase, you can currently create a socialIdentityProvider resource in Azure AD.
+Among the types of providers derived from identityProviderBase, you can currently create a socialIdentityProvider resource in Microsoft Entra ID.
 In Azure AD B2C, this operation can currently create a socialIdentityProvider, or an appleManagedIdentityProvider resource.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -162,19 +163,19 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityProviderBase
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`BODYPARAMETER <IMicrosoftGraphIdentityProviderBase>`: identityProviderBase
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[DisplayName <String>]`: The display name of the identity provider.
+BODYPARAMETER \<IMicrosoftGraphIdentityProviderBase\>: identityProviderBase
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[DisplayName \<String\>\]: The display name of the identity provider.
 
 ## RELATED LINKS
-
 [New-MgBetaIdentityProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityProvider?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityprovider](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityprovider)
+

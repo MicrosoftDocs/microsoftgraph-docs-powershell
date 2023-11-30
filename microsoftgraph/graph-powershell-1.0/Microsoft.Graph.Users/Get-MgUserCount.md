@@ -22,8 +22,6 @@ Get-MgUserCount [-Filter <String>] [-Search <String>] -ConsistencyLevel <String>
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ConsistencyLevel
@@ -82,9 +80,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.Int32
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
-
 [Get-MgBetaUserCount](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserCount?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusercount)
+
 

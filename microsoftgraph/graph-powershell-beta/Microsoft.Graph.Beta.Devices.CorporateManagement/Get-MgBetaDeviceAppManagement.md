@@ -64,10 +64,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceAppManagement
 ## NOTES
 
-ALIASES
-
-Get-MgBetaDeviceAppMgt
-
 ## RELATED LINKS
 [Get-MgDeviceAppManagement](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagement?view=graph-powershell-1.0)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagement)
+
 

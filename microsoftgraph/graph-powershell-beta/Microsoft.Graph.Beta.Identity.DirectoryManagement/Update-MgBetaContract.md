@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ### -DefaultDomainName
 A copy of the customer tenant's default domain name.
 The copy is made when the partnership with the customer is established.
-It is not automatically updated if the customer tenant's default domain name changes.
+It isn't automatically updated if the customer tenant's default domain name changes.
 
 ```yaml
 Type: String
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ### -DisplayName
 A copy of the customer tenant's display name.
 The copy is made when the partnership with the customer is established.
-It is not automatically updated if the customer tenant's display name changes.
+It isn't automatically updated if the customer tenant's display name changes.
 
 ```yaml
 Type: String
@@ -280,10 +280,10 @@ See more in the table below.
 Corresponds to the id property of the customer tenant's organization resource.
   \[DefaultDomainName \<String\>\]: A copy of the customer tenant's default domain name.
 The copy is made when the partnership with the customer is established.
-It is not automatically updated if the customer tenant's default domain name changes.
+It isn't automatically updated if the customer tenant's default domain name changes.
   \[DisplayName \<String\>\]: A copy of the customer tenant's display name.
 The copy is made when the partnership with the customer is established.
-It is not automatically updated if the customer tenant's display name changes.
+It isn't automatically updated if the customer tenant's display name changes.
 
 INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[AdministrativeUnitId \<String\>\]: The unique identifier of administrativeUnit
@@ -296,6 +296,7 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[ContractId \<String\>\]: The unique identifier of contract
   \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
   \[DeviceId \<String\>\]: The unique identifier of device
+  \[DeviceLocalCredentialInfoId \<String\>\]: The unique identifier of deviceLocalCredentialInfo
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[DirectoryRoleId \<String\>\]: The unique identifier of directoryRole
   \[DirectoryRoleTemplateId \<String\>\]: The unique identifier of directoryRoleTemplate

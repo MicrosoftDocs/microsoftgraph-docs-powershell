@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadministrativeunitscopedrolemember
 schema: 2.0.0
+ms.prod: directory-management
+ms.prod: directory-management
 ---
 
 # Get-MgBetaAdministrativeUnitScopedRoleMember
 
 ## SYNOPSIS
-Get an Azure Active Directory (Azure AD) role assignment with administrative unit scope.
+Get a Microsoft Entra role assignment with administrative unit scope.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -32,7 +35,8 @@ Get-MgBetaAdministrativeUnitScopedRoleMember -InputObject <IIdentityDirectoryMan
 ```
 
 ## DESCRIPTION
-Get an Azure Active Directory (Azure AD) role assignment with administrative unit scope.
+Get a Microsoft Entra role assignment with administrative unit scope.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaAdministrativeUnitScopedRoleMember Cmdlet
@@ -275,6 +279,7 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[ContractId \<String\>\]: The unique identifier of contract
   \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
   \[DeviceId \<String\>\]: The unique identifier of device
+  \[DeviceLocalCredentialInfoId \<String\>\]: The unique identifier of deviceLocalCredentialInfo
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[DirectoryRoleId \<String\>\]: The unique identifier of directoryRole
   \[DirectoryRoleTemplateId \<String\>\]: The unique identifier of directoryRoleTemplate

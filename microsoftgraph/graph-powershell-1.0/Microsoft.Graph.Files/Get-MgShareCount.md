@@ -13,12 +13,6 @@ Get the number of the resource
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaShareCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareCount?view=graph-powershell-beta)
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaShareCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareCount?view=graph-powershell-beta)
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaShareCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareCount?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
@@ -27,8 +21,6 @@ Get-MgShareCount [-Filter <String>] [-Search <String>] [<CommonParameters>]
 
 ## DESCRIPTION
 Get the number of the resource
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -72,12 +64,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.Int32
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
 [Get-MgBetaShareCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareCount?view=graph-powershell-beta)
 
-[Get-MgBetaShareCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareCount?view=graph-powershell-beta)
+[https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharecount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharecount)
 
-[Get-MgBetaShareCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareCount?view=graph-powershell-beta)
 

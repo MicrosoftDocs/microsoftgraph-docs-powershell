@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgEnvironment
 
 ## SYNOPSIS
-When you use Connect-MgGraph, you can choose to target other environments. By default, Connect-MgGraph targets the global public cloud.
+When you use Connect-MgGraph, you can choose to target other environments.
+By default, Connect-MgGraph targets the global public cloud.
 
 ## SYNTAX
 
@@ -17,12 +18,13 @@ Get-MgEnvironment [[-Name] <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-When you use Connect-MgGraph, you can choose to target other environments. By default, Connect-MgGraph targets the global public cloud.
+When you use Connect-MgGraph, you can choose to target other environments.
+By default, Connect-MgGraph targets the global public cloud.
 
 ## EXAMPLES
 
 ### Example 1: Get-MgEnvironment
-```powershell
+```
 PS C:\> Get-MgEnvironment
 Name     AzureADEndpoint                   GraphEndpoint                           Type
 ----     ---------------                   -------------                           ----
@@ -57,14 +59,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### System.String
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Authentication.Models.GraphEnvironment
-
 ## NOTES
 
 ## RELATED LINKS
-
-[https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/get-mgenvironment](https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/get-mgenvironment)
-

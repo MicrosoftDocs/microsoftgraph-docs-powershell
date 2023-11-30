@@ -1,7 +1,6 @@
 ---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
-ms.prod: outlook
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/find-mgusermeetingtime
 schema: 2.0.0
 ms.prod: outlook
@@ -12,16 +11,10 @@ ms.prod: outlook
 ## SYNOPSIS
 Suggest meeting times and locations based on organizer and attendee availability, and time or location constraints specified as parameters.
 If findMeetingTimes cannot return any meeting suggestions, the response would indicate a reason in the emptySuggestionsReason property.
-nBased on this value, you can better adjust the parameters and call findMeetingTimes again.
+\nBased on this value, you can better adjust the parameters and call findMeetingTimes again.
 The algorithm used to suggest meeting times and locations undergoes fine-tuning from time to time.
 In scenarios like test environments where the input parameters and calendar data remain static, expect that the suggested results may differ over time.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Find-MgBetaUserMeetingTime](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Find-MgBetaUserMeetingTime?view=graph-powershell-beta)
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Find-MgBetaUserMeetingTime](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Find-MgBetaUserMeetingTime?view=graph-powershell-beta)
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Find-MgBetaUserMeetingTime](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Find-MgBetaUserMeetingTime?view=graph-powershell-beta)
@@ -63,7 +56,7 @@ Find-MgUserMeetingTime -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Suggest meeting times and locations based on organizer and attendee availability, and time or location constraints specified as parameters.
 If findMeetingTimes cannot return any meeting suggestions, the response would indicate a reason in the emptySuggestionsReason property.
-nBased on this value, you can better adjust the parameters and call findMeetingTimes again.
+\nBased on this value, you can better adjust the parameters and call findMeetingTimes again.
 The algorithm used to suggest meeting times and locations undergoes fine-tuning from time to time.
 In scenarios like test environments where the input parameters and calendar data remain static, expect that the suggested results may differ over time.
 This API is available in the following national cloud deployments.
@@ -193,7 +186,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -224,7 +217,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -254,7 +247,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -269,7 +262,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -347,153 +340,151 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMeetingTimeSuggestionsResult
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+ATTENDEES \<IMicrosoftGraphAttendeeBase\[\]\>: .
+  \[EmailAddress \<IMicrosoftGraphEmailAddress\>\]: emailAddress
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Address \<String\>\]: The email address of the person or entity.
+    \[Name \<String\>\]: The display name of the person or entity.
+  \[Type \<String\>\]: attendeeType
 
-`ATTENDEES <IMicrosoftGraphAttendeeBase[]>`: .
-  - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Address <String>]`: The email address of the person or entity.
-    - `[Name <String>]`: The display name of the person or entity.
-  - `[Type <String>]`: attendeeType
+BODYPARAMETER \<IComponents1H459T5RequestbodiesFindmeetingtimesrequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Attendees \<IMicrosoftGraphAttendeeBase\[\]\>\]: 
+    \[EmailAddress \<IMicrosoftGraphEmailAddress\>\]: emailAddress
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Address \<String\>\]: The email address of the person or entity.
+      \[Name \<String\>\]: The display name of the person or entity.
+    \[Type \<String\>\]: attendeeType
+  \[IsOrganizerOptional \<Boolean?\>\]: 
+  \[LocationConstraint \<IMicrosoftGraphLocationConstraint\>\]: locationConstraint
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[IsRequired \<Boolean?\>\]: The client requests the service to include in the response a meeting location for the meeting.
+If this is true and all the resources are busy, findMeetingTimes won't return any meeting time suggestions.
+If this is false and all the resources are busy, findMeetingTimes would still look for meeting times without locations.
+    \[Locations \<IMicrosoftGraphLocationConstraintItem\[\]\>\]: Constraint information for one or more locations that the client requests for the meeting.
+      \[Address \<IMicrosoftGraphPhysicalAddress\>\]: physicalAddress
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[City \<String\>\]: The city.
+        \[CountryOrRegion \<String\>\]: The country or region.
+It's a free-format string value, for example, 'United States'.
+        \[PostalCode \<String\>\]: The postal code.
+        \[State \<String\>\]: The state.
+        \[Street \<String\>\]: The street.
+      \[Coordinates \<IMicrosoftGraphOutlookGeoCoordinates\>\]: outlookGeoCoordinates
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[Accuracy \<Double?\>\]: The accuracy of the latitude and longitude.
+As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
+        \[Altitude \<Double?\>\]: The altitude of the location.
+        \[AltitudeAccuracy \<Double?\>\]: The accuracy of the altitude.
+        \[Latitude \<Double?\>\]: The latitude of the location.
+        \[Longitude \<Double?\>\]: The longitude of the location.
+      \[DisplayName \<String\>\]: The name associated with the location.
+      \[LocationEmailAddress \<String\>\]: Optional email address of the location.
+      \[LocationType \<String\>\]: locationType
+      \[LocationUri \<String\>\]: Optional URI representing the location.
+      \[UniqueId \<String\>\]: For internal use only.
+      \[UniqueIdType \<String\>\]: locationUniqueIdType
+      \[ResolveAvailability \<Boolean?\>\]: If set to true and the specified resource is busy, findMeetingTimes looks for another resource that is free.
+If set to false and the specified resource is busy, findMeetingTimes returns the resource best ranked in the user's cache without checking if it's free.
+Default is true.
+    \[SuggestLocation \<Boolean?\>\]: The client requests the service to suggest one or more meeting locations.
+  \[MaxCandidates \<Int32?\>\]: 
+  \[MeetingDuration \<TimeSpan?\>\]: 
+  \[MinimumAttendeePercentage \<Double?\>\]: 
+  \[ReturnSuggestionReasons \<Boolean?\>\]: 
+  \[TimeConstraint \<IMicrosoftGraphTimeConstraint\>\]: timeConstraint
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[ActivityDomain \<String\>\]: activityDomain
+    \[TimeSlots \<IMicrosoftGraphTimeSlot\[\]\>\]: 
+      \[End \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[DateTime \<String\>\]: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+        \[TimeZone \<String\>\]: Represents a time zone, for example, 'Pacific Standard Time'.
+See below for more possible values.
+      \[Start \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
 
-`BODYPARAMETER <IComponents1H459T5RequestbodiesFindmeetingtimesrequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Attendees <IMicrosoftGraphAttendeeBase[]>]`: 
-    - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Address <String>]`: The email address of the person or entity.
-      - `[Name <String>]`: The display name of the person or entity.
-    - `[Type <String>]`: attendeeType
-  - `[IsOrganizerOptional <Boolean?>]`: 
-  - `[LocationConstraint <IMicrosoftGraphLocationConstraint>]`: locationConstraint
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[IsRequired <Boolean?>]`: The client requests the service to include in the response a meeting location for the meeting. If this is true and all the resources are busy, findMeetingTimes won't return any meeting time suggestions. If this is false and all the resources are busy, findMeetingTimes would still look for meeting times without locations.
-    - `[Locations <IMicrosoftGraphLocationConstraintItem[]>]`: Constraint information for one or more locations that the client requests for the meeting.
-      - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[City <String>]`: The city.
-        - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
-        - `[PostalCode <String>]`: The postal code.
-        - `[State <String>]`: The state.
-        - `[Street <String>]`: The street.
-      - `[Coordinates <IMicrosoftGraphOutlookGeoCoordinates>]`: outlookGeoCoordinates
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Accuracy <Double?>]`: The accuracy of the latitude and longitude. As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
-        - `[Altitude <Double?>]`: The altitude of the location.
-        - `[AltitudeAccuracy <Double?>]`: The accuracy of the altitude.
-        - `[Latitude <Double?>]`: The latitude of the location.
-        - `[Longitude <Double?>]`: The longitude of the location.
-      - `[DisplayName <String>]`: The name associated with the location.
-      - `[LocationEmailAddress <String>]`: Optional email address of the location.
-      - `[LocationType <String>]`: locationType
-      - `[LocationUri <String>]`: Optional URI representing the location.
-      - `[UniqueId <String>]`: For internal use only.
-      - `[UniqueIdType <String>]`: locationUniqueIdType
-      - `[ResolveAvailability <Boolean?>]`: If set to true and the specified resource is busy, findMeetingTimes looks for another resource that is free. If set to false and the specified resource is busy, findMeetingTimes returns the resource best ranked in the user's cache without checking if it's free. Default is true.
-    - `[SuggestLocation <Boolean?>]`: The client requests the service to suggest one or more meeting locations.
-  - `[MaxCandidates <Int32?>]`: 
-  - `[MeetingDuration <TimeSpan?>]`: 
-  - `[MinimumAttendeePercentage <Double?>]`: 
-  - `[ReturnSuggestionReasons <Boolean?>]`: 
-  - `[TimeConstraint <IMicrosoftGraphTimeConstraint>]`: timeConstraint
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ActivityDomain <String>]`: activityDomain
-    - `[TimeSlots <IMicrosoftGraphTimeSlot[]>]`: 
-      - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-        - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
-      - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
+  \[AuthenticationMethodId \<String\>\]: The unique identifier of authenticationMethod
+  \[CalendarId \<String\>\]: The unique identifier of calendar
+  \[ChatId \<String\>\]: The unique identifier of chat
+  \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
+  \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
+  \[ContentTypeId \<String\>\]: The unique identifier of contentType
+  \[DeviceLogCollectionResponseId \<String\>\]: The unique identifier of deviceLogCollectionResponse
+  \[DocumentSetVersionId \<String\>\]: The unique identifier of documentSetVersion
+  \[DriveId \<String\>\]: The unique identifier of drive
+  \[DriveItemId \<String\>\]: The unique identifier of driveItem
+  \[DriveItemVersionId \<String\>\]: The unique identifier of driveItemVersion
+  \[EventId \<String\>\]: The unique identifier of event
+  \[EventId1 \<String\>\]: The unique identifier of event
+  \[ListItemId \<String\>\]: The unique identifier of listItem
+  \[ListItemVersionId \<String\>\]: The unique identifier of listItemVersion
+  \[MailFolderId \<String\>\]: The unique identifier of mailFolder
+  \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
+  \[ManagedDeviceId \<String\>\]: The unique identifier of managedDevice
+  \[MessageId \<String\>\]: The unique identifier of message
+  \[NotebookId \<String\>\]: The unique identifier of notebook
+  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
+  \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[PermissionId \<String\>\]: The unique identifier of permission
+  \[PhoneAuthenticationMethodId \<String\>\]: The unique identifier of phoneAuthenticationMethod
+  \[SubscriptionId \<String\>\]: The unique identifier of subscription
+  \[TeamsAppInstallationId \<String\>\]: The unique identifier of teamsAppInstallation
+  \[TodoTaskId \<String\>\]: The unique identifier of todoTask
+  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
+  \[UserId \<String\>\]: The unique identifier of user
 
-`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
-  - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
-  - `[CalendarId <String>]`: The unique identifier of calendar
-  - `[ChatId <String>]`: The unique identifier of chat
-  - `[ChatMessageId <String>]`: The unique identifier of chatMessage
-  - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
-  - `[ContentTypeId <String>]`: The unique identifier of contentType
-  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
-  - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
-  - `[DriveId <String>]`: The unique identifier of drive
-  - `[DriveItemId <String>]`: The unique identifier of driveItem
-  - `[DriveItemVersionId <String>]`: The unique identifier of driveItemVersion
-  - `[EventId <String>]`: The unique identifier of event
-  - `[EventId1 <String>]`: The unique identifier of event
-  - `[ListItemId <String>]`: The unique identifier of listItem
-  - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
-  - `[MailFolderId <String>]`: The unique identifier of mailFolder
-  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
-  - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
-  - `[MessageId <String>]`: The unique identifier of message
-  - `[NotebookId <String>]`: The unique identifier of notebook
-  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
-  - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
-  - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
-  - `[SubscriptionId <String>]`: The unique identifier of subscription
-  - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
-  - `[TodoTaskId <String>]`: The unique identifier of todoTask
-  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
-  - `[UserId <String>]`: The unique identifier of user
+LOCATIONCONSTRAINT \<IMicrosoftGraphLocationConstraint\>: locationConstraint
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[IsRequired \<Boolean?\>\]: The client requests the service to include in the response a meeting location for the meeting.
+If this is true and all the resources are busy, findMeetingTimes won't return any meeting time suggestions.
+If this is false and all the resources are busy, findMeetingTimes would still look for meeting times without locations.
+  \[Locations \<IMicrosoftGraphLocationConstraintItem\[\]\>\]: Constraint information for one or more locations that the client requests for the meeting.
+    \[Address \<IMicrosoftGraphPhysicalAddress\>\]: physicalAddress
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[City \<String\>\]: The city.
+      \[CountryOrRegion \<String\>\]: The country or region.
+It's a free-format string value, for example, 'United States'.
+      \[PostalCode \<String\>\]: The postal code.
+      \[State \<String\>\]: The state.
+      \[Street \<String\>\]: The street.
+    \[Coordinates \<IMicrosoftGraphOutlookGeoCoordinates\>\]: outlookGeoCoordinates
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Accuracy \<Double?\>\]: The accuracy of the latitude and longitude.
+As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
+      \[Altitude \<Double?\>\]: The altitude of the location.
+      \[AltitudeAccuracy \<Double?\>\]: The accuracy of the altitude.
+      \[Latitude \<Double?\>\]: The latitude of the location.
+      \[Longitude \<Double?\>\]: The longitude of the location.
+    \[DisplayName \<String\>\]: The name associated with the location.
+    \[LocationEmailAddress \<String\>\]: Optional email address of the location.
+    \[LocationType \<String\>\]: locationType
+    \[LocationUri \<String\>\]: Optional URI representing the location.
+    \[UniqueId \<String\>\]: For internal use only.
+    \[UniqueIdType \<String\>\]: locationUniqueIdType
+    \[ResolveAvailability \<Boolean?\>\]: If set to true and the specified resource is busy, findMeetingTimes looks for another resource that is free.
+If set to false and the specified resource is busy, findMeetingTimes returns the resource best ranked in the user's cache without checking if it's free.
+Default is true.
+  \[SuggestLocation \<Boolean?\>\]: The client requests the service to suggest one or more meeting locations.
 
-`LOCATIONCONSTRAINT <IMicrosoftGraphLocationConstraint>`: locationConstraint
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[IsRequired <Boolean?>]`: The client requests the service to include in the response a meeting location for the meeting. If this is true and all the resources are busy, findMeetingTimes won't return any meeting time suggestions. If this is false and all the resources are busy, findMeetingTimes would still look for meeting times without locations.
-  - `[Locations <IMicrosoftGraphLocationConstraintItem[]>]`: Constraint information for one or more locations that the client requests for the meeting.
-    - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[City <String>]`: The city.
-      - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
-      - `[PostalCode <String>]`: The postal code.
-      - `[State <String>]`: The state.
-      - `[Street <String>]`: The street.
-    - `[Coordinates <IMicrosoftGraphOutlookGeoCoordinates>]`: outlookGeoCoordinates
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Accuracy <Double?>]`: The accuracy of the latitude and longitude. As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
-      - `[Altitude <Double?>]`: The altitude of the location.
-      - `[AltitudeAccuracy <Double?>]`: The accuracy of the altitude.
-      - `[Latitude <Double?>]`: The latitude of the location.
-      - `[Longitude <Double?>]`: The longitude of the location.
-    - `[DisplayName <String>]`: The name associated with the location.
-    - `[LocationEmailAddress <String>]`: Optional email address of the location.
-    - `[LocationType <String>]`: locationType
-    - `[LocationUri <String>]`: Optional URI representing the location.
-    - `[UniqueId <String>]`: For internal use only.
-    - `[UniqueIdType <String>]`: locationUniqueIdType
-    - `[ResolveAvailability <Boolean?>]`: If set to true and the specified resource is busy, findMeetingTimes looks for another resource that is free. If set to false and the specified resource is busy, findMeetingTimes returns the resource best ranked in the user's cache without checking if it's free. Default is true.
-  - `[SuggestLocation <Boolean?>]`: The client requests the service to suggest one or more meeting locations.
-
-`TIMECONSTRAINT <IMicrosoftGraphTimeConstraint>`: timeConstraint
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ActivityDomain <String>]`: activityDomain
-  - `[TimeSlots <IMicrosoftGraphTimeSlot[]>]`: 
-    - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-      - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
-    - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-
-## RELATED LINKS
-[Find-MgBetaUserMeetingTime](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Find-MgBetaUserMeetingTime?view=graph-powershell-beta)
-[Find-MgBetaUserMeetingTime](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Find-MgBetaUserMeetingTime?view=graph-powershell-beta)
-[Find-MgBetaUserMeetingTime](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Find-MgBetaUserMeetingTime?view=graph-powershell-beta)
-
-## RELATED LINKS
-[Find-MgBetaUserMeetingTime](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Find-MgBetaUserMeetingTime?view=graph-powershell-beta)
-[Find-MgBetaUserMeetingTime](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Find-MgBetaUserMeetingTime?view=graph-powershell-beta)
-[Find-MgBetaUserMeetingTime](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Find-MgBetaUserMeetingTime?view=graph-powershell-beta)
-
-
-## RELATED LINKS
-[Find-MgBetaUserMeetingTime](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Find-MgBetaUserMeetingTime?view=graph-powershell-beta)
-[Find-MgBetaUserMeetingTime](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Find-MgBetaUserMeetingTime?view=graph-powershell-beta)
-
+TIMECONSTRAINT \<IMicrosoftGraphTimeConstraint\>: timeConstraint
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ActivityDomain \<String\>\]: activityDomain
+  \[TimeSlots \<IMicrosoftGraphTimeSlot\[\]\>\]: 
+    \[End \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DateTime \<String\>\]: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+      \[TimeZone \<String\>\]: Represents a time zone, for example, 'Pacific Standard Time'.
+See below for more possible values.
+    \[Start \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
 
 ## RELATED LINKS
 [Find-MgBetaUserMeetingTime](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Find-MgBetaUserMeetingTime?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/find-mgusermeetingtime](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/find-mgusermeetingtime)
+

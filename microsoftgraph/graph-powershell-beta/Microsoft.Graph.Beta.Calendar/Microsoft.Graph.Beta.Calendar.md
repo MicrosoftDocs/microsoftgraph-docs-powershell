@@ -1,721 +1,538 @@
 ---
 Module Name: Microsoft.Graph.Beta.Calendar
-Module Guid: bf7d57d4-bbb9-4ecb-a2b4-24d66cf29155
-Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar
-Help Version: 1.0.0.0
+Module Guid: eda98b12-4552-4447-ba9b-8f51cdc715df
+Download Help Link: {{ Update Download Link }}
+Help Version: {{ Please enter version of help manually (X.X.X.X) format }}
 Locale: en-US
 ---
 
 # Microsoft.Graph.Beta.Calendar Module
 ## Description
-Microsoft Graph PowerShell Cmdlets
+{{ Fill in the Description }}
 
 ## Microsoft.Graph.Beta.Calendar Cmdlets
 ### [Get-MgBetaGroupCalendar](Get-MgBetaGroupCalendar.md)
-The group's calendar.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaGroupCalendarEvent](Get-MgBetaGroupCalendarEvent.md)
-The events in the calendar.
-Navigation property.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaGroupCalendarPermission](Get-MgBetaGroupCalendarPermission.md)
-Get the specified permissions object of a user or group calendar that has been shared.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaGroupCalendarPermissionCount](Get-MgBetaGroupCalendarPermissionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
-### [Get-MgBetaGroupCalendarPermissionCount](Get-MgBetaGroupCalendarPermissionCount.md)
-Get the number of the resource
-
-### [Get-MgBetaGroupEvent](Get-MgBetaGroupEvent.md)
-Get an event object.
-This API is available in the following national cloud deployments.
+### [Get-MgBetaGroupCalendarView](Get-MgBetaGroupCalendarView.md)
+{{ Fill in the Description }}
 
 ### [Get-MgBetaGroupEvent](Get-MgBetaGroupEvent.md)
-Get an event object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
+
+### [Get-MgBetaGroupEventAttachment](Get-MgBetaGroupEventAttachment.md)
+{{ Fill in the Description }}
 
 ### [Get-MgBetaGroupEventAttachmentCount](Get-MgBetaGroupEventAttachmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaGroupEventCalendar](Get-MgBetaGroupEventCalendar.md)
-The calendar that contains the event.
-Navigation property.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaGroupEventCount](Get-MgBetaGroupEventCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaGroupEventExceptionOccurrence](Get-MgBetaGroupEventExceptionOccurrence.md)
-Get exceptionOccurrences from groups
+{{ Fill in the Description }}
 
 ### [Get-MgBetaGroupEventExceptionOccurrenceAttachment](Get-MgBetaGroupEventExceptionOccurrenceAttachment.md)
-Read the properties, relationships, or raw contents of an attachment that is attached to a user event, message, Outlook task, or group post.
-An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaGroupEventExceptionOccurrenceAttachmentCount](Get-MgBetaGroupEventExceptionOccurrenceAttachmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaGroupEventExceptionOccurrenceCalendar](Get-MgBetaGroupEventExceptionOccurrenceCalendar.md)
-The calendar that contains the event.
-Navigation property.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaGroupEventExceptionOccurrenceCount](Get-MgBetaGroupEventExceptionOccurrenceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaGroupEventExceptionOccurrenceExtension](Get-MgBetaGroupEventExceptionOccurrenceExtension.md)
-Get an open extension (openTypeExtension object) identified by name or fully qualified name.
-The table in the Permissions section lists the resources that support open extensions.
-The following table lists the three scenarios where you can get an open extension from a supported resource instance.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaGroupEventExceptionOccurrenceExtensionCount](Get-MgBetaGroupEventExceptionOccurrenceExtensionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaGroupEventExceptionOccurrenceInstance](Get-MgBetaGroupEventExceptionOccurrenceInstance.md)
-The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
-Navigation property.
-Read-only.
-Nullable.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaGroupEventExceptionOccurrenceInstanceAttachment](Get-MgBetaGroupEventExceptionOccurrenceInstanceAttachment.md)
-Read the properties, relationships, or raw contents of an attachment that is attached to a user event, message, Outlook task, or group post.
-An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaGroupEventExceptionOccurrenceInstanceAttachmentCount](Get-MgBetaGroupEventExceptionOccurrenceInstanceAttachmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaGroupEventExceptionOccurrenceInstanceCalendar](Get-MgBetaGroupEventExceptionOccurrenceInstanceCalendar.md)
-The calendar that contains the event.
-Navigation property.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaGroupEventExceptionOccurrenceInstanceCount](Get-MgBetaGroupEventExceptionOccurrenceInstanceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaGroupEventExceptionOccurrenceInstanceExtension](Get-MgBetaGroupEventExceptionOccurrenceInstanceExtension.md)
-Get an open extension (openTypeExtension object) identified by name or fully qualified name.
-The table in the Permissions section lists the resources that support open extensions.
-The following table lists the three scenarios where you can get an open extension from a supported resource instance.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaGroupEventExceptionOccurrenceInstanceExtensionCount](Get-MgBetaGroupEventExceptionOccurrenceInstanceExtensionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaGroupEventExtension](Get-MgBetaGroupEventExtension.md)
-Get an open extension (openTypeExtension object) identified by name or fully qualified name.
-The table in the Permissions section lists the resources that support open extensions.
-The following table lists the three scenarios where you can get an open extension from a supported resource instance.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaGroupEventExtensionCount](Get-MgBetaGroupEventExtensionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
-### [Get-MgBetaGroupEventExtensionCount](Get-MgBetaGroupEventExtensionCount.md)
-Get the number of the resource
+### [Get-MgBetaGroupEventInstance](Get-MgBetaGroupEventInstance.md)
+{{ Fill in the Description }}
 
 ### [Get-MgBetaGroupEventInstanceAttachment](Get-MgBetaGroupEventInstanceAttachment.md)
-Read the properties, relationships, or raw contents of an attachment that is attached to a user event, message, Outlook task, or group post.
-An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaGroupEventInstanceAttachmentCount](Get-MgBetaGroupEventInstanceAttachmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaGroupEventInstanceCalendar](Get-MgBetaGroupEventInstanceCalendar.md)
-The calendar that contains the event.
-Navigation property.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaGroupEventInstanceCount](Get-MgBetaGroupEventInstanceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaGroupEventInstanceExceptionOccurrence](Get-MgBetaGroupEventInstanceExceptionOccurrence.md)
-Get exceptionOccurrences from groups
+{{ Fill in the Description }}
 
 ### [Get-MgBetaGroupEventInstanceExceptionOccurrenceAttachment](Get-MgBetaGroupEventInstanceExceptionOccurrenceAttachment.md)
-Read the properties, relationships, or raw contents of an attachment that is attached to a user event, message, Outlook task, or group post.
-An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaGroupEventInstanceExceptionOccurrenceAttachmentCount](Get-MgBetaGroupEventInstanceExceptionOccurrenceAttachmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaGroupEventInstanceExceptionOccurrenceCalendar](Get-MgBetaGroupEventInstanceExceptionOccurrenceCalendar.md)
-The calendar that contains the event.
-Navigation property.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaGroupEventInstanceExceptionOccurrenceCount](Get-MgBetaGroupEventInstanceExceptionOccurrenceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaGroupEventInstanceExceptionOccurrenceExtension](Get-MgBetaGroupEventInstanceExceptionOccurrenceExtension.md)
-Get an open extension (openTypeExtension object) identified by name or fully qualified name.
-The table in the Permissions section lists the resources that support open extensions.
-The following table lists the three scenarios where you can get an open extension from a supported resource instance.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaGroupEventInstanceExceptionOccurrenceExtensionCount](Get-MgBetaGroupEventInstanceExceptionOccurrenceExtensionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaGroupEventInstanceExtension](Get-MgBetaGroupEventInstanceExtension.md)
-Get an open extension (openTypeExtension object) identified by name or fully qualified name.
-The table in the Permissions section lists the resources that support open extensions.
-The following table lists the three scenarios where you can get an open extension from a supported resource instance.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaGroupEventInstanceExtensionCount](Get-MgBetaGroupEventInstanceExtensionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPlaceAsRoom](Get-MgBetaPlaceAsRoom.md)
-Get the item of type microsoft.graph.place as microsoft.graph.room
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPlaceAsRoomList](Get-MgBetaPlaceAsRoomList.md)
-Get the item of type microsoft.graph.place as microsoft.graph.roomList
+{{ Fill in the Description }}
+
+### [Get-MgBetaPlaceAsRoomListRoom](Get-MgBetaPlaceAsRoomListRoom.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaPlaceAsRoomListWorkspace](Get-MgBetaPlaceAsRoomListWorkspace.md)
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPlaceCount](Get-MgBetaPlaceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPlaceCountAsRoom](Get-MgBetaPlaceCountAsRoom.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPlaceCountAsRoomList](Get-MgBetaPlaceCountAsRoomList.md)
-Get the number of the resource
-
-### [Get-MgBetaPlaceRoom](Get-MgBetaPlaceRoom.md)
-Get rooms from places
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPlaceRoomCount](Get-MgBetaPlaceRoomCount.md)
-Get the number of the resource
-
-### [Get-MgBetaPlaceWorkspace](Get-MgBetaPlaceWorkspace.md)
-Get workspaces from places
+{{ Fill in the Description }}
 
 ### [Get-MgBetaPlaceWorkspaceCount](Get-MgBetaPlaceWorkspaceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserCalendar](Get-MgBetaUserCalendar.md)
-The user's calendars.
-Read-only.
-Nullable.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserCalendarCount](Get-MgBetaUserCalendarCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
-### [Get-MgBetaUserCalendarCount](Get-MgBetaUserCalendarCount.md)
-Get the number of the resource
+### [Get-MgBetaUserCalendarEvent](Get-MgBetaUserCalendarEvent.md)
+{{ Fill in the Description }}
 
-### [Get-MgBetaUserCalendarCount](Get-MgBetaUserCalendarCount.md)
-Get the number of the resource
+### [Get-MgBetaUserCalendarGroup](Get-MgBetaUserCalendarGroup.md)
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserCalendarGroupCalendar](Get-MgBetaUserCalendarGroupCalendar.md)
-Retrieve a list of calendars belonging to a calendar group.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserCalendarGroupCount](Get-MgBetaUserCalendarGroupCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserCalendarPermission](Get-MgBetaUserCalendarPermission.md)
-Get the specified permissions object of a user or group calendar that has been shared.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserCalendarPermissionCount](Get-MgBetaUserCalendarPermissionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserCalendarView](Get-MgBetaUserCalendarView.md)
-The calendar view for the calendar.
-Navigation property.
-Read-only.
+{{ Fill in the Description }}
 
-### [Get-MgBetaUserCalendarView](Get-MgBetaUserCalendarView.md)
-The calendar view for the calendar.
-Navigation property.
-Read-only.
+### [Get-MgBetaUserDefaultCalendar](Get-MgBetaUserDefaultCalendar.md)
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserDefaultCalendarEvent](Get-MgBetaUserDefaultCalendarEvent.md)
-Retrieve a list of events in a calendar.
-The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
-The list of events contains single instance meetings and series masters.
-To get expanded event instances, you can get the calendar view, orget the instances of an event.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
-### [Get-MgBetaUserDefaultCalendarEvent](Get-MgBetaUserDefaultCalendarEvent.md)
-Retrieve a list of events in a calendar.
-The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
-The list of events contains single instance meetings and series masters.
-To get expanded event instances, you can get the calendar view, orget the instances of an event.
-This API is available in the following national cloud deployments.
+### [Get-MgBetaUserEvent](Get-MgBetaUserEvent.md)
+{{ Fill in the Description }}
 
-### [Get-MgBetaUserDefaultCalendarEvent](Get-MgBetaUserDefaultCalendarEvent.md)
-Retrieve a list of events in a calendar.
-The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
-The list of events contains single instance meetings and series masters.
-To get expanded event instances, you can get the calendar view, orget the instances of an event.
-This API is available in the following national cloud deployments.
+### [Get-MgBetaUserEventAttachment](Get-MgBetaUserEventAttachment.md)
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserEventAttachmentCount](Get-MgBetaUserEventAttachmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserEventCalendar](Get-MgBetaUserEventCalendar.md)
-The calendar that contains the event.
-Navigation property.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserEventCount](Get-MgBetaUserEventCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserEventExceptionOccurrence](Get-MgBetaUserEventExceptionOccurrence.md)
-Get exceptionOccurrences from users
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserEventExceptionOccurrenceAttachment](Get-MgBetaUserEventExceptionOccurrenceAttachment.md)
-Read the properties, relationships, or raw contents of an attachment that is attached to a user event, message, Outlook task, or group post.
-An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserEventExceptionOccurrenceAttachmentCount](Get-MgBetaUserEventExceptionOccurrenceAttachmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserEventExceptionOccurrenceCalendar](Get-MgBetaUserEventExceptionOccurrenceCalendar.md)
-The calendar that contains the event.
-Navigation property.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserEventExceptionOccurrenceCount](Get-MgBetaUserEventExceptionOccurrenceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserEventExceptionOccurrenceExtension](Get-MgBetaUserEventExceptionOccurrenceExtension.md)
-Get an open extension (openTypeExtension object) identified by name or fully qualified name.
-The table in the Permissions section lists the resources that support open extensions.
-The following table lists the three scenarios where you can get an open extension from a supported resource instance.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserEventExceptionOccurrenceExtensionCount](Get-MgBetaUserEventExceptionOccurrenceExtensionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserEventExceptionOccurrenceInstance](Get-MgBetaUserEventExceptionOccurrenceInstance.md)
-The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
-Navigation property.
-Read-only.
-Nullable.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserEventExceptionOccurrenceInstanceAttachment](Get-MgBetaUserEventExceptionOccurrenceInstanceAttachment.md)
-Read the properties, relationships, or raw contents of an attachment that is attached to a user event, message, Outlook task, or group post.
-An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserEventExceptionOccurrenceInstanceAttachmentCount](Get-MgBetaUserEventExceptionOccurrenceInstanceAttachmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserEventExceptionOccurrenceInstanceCalendar](Get-MgBetaUserEventExceptionOccurrenceInstanceCalendar.md)
-The calendar that contains the event.
-Navigation property.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserEventExceptionOccurrenceInstanceCount](Get-MgBetaUserEventExceptionOccurrenceInstanceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserEventExceptionOccurrenceInstanceExtension](Get-MgBetaUserEventExceptionOccurrenceInstanceExtension.md)
-Get an open extension (openTypeExtension object) identified by name or fully qualified name.
-The table in the Permissions section lists the resources that support open extensions.
-The following table lists the three scenarios where you can get an open extension from a supported resource instance.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserEventExceptionOccurrenceInstanceExtensionCount](Get-MgBetaUserEventExceptionOccurrenceInstanceExtensionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserEventExtension](Get-MgBetaUserEventExtension.md)
-Get an open extension (openTypeExtension object) identified by name or fully qualified name.
-The table in the Permissions section lists the resources that support open extensions.
-The following table lists the three scenarios where you can get an open extension from a supported resource instance.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserEventExtensionCount](Get-MgBetaUserEventExtensionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserEventInstance](Get-MgBetaUserEventInstance.md)
-The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
-Navigation property.
-Read-only.
-Nullable.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserEventInstanceAttachment](Get-MgBetaUserEventInstanceAttachment.md)
-Read the properties, relationships, or raw contents of an attachment that is attached to a user event, message, Outlook task, or group post.
-An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserEventInstanceAttachmentCount](Get-MgBetaUserEventInstanceAttachmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserEventInstanceCalendar](Get-MgBetaUserEventInstanceCalendar.md)
-The calendar that contains the event.
-Navigation property.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserEventInstanceCount](Get-MgBetaUserEventInstanceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserEventInstanceExceptionOccurrence](Get-MgBetaUserEventInstanceExceptionOccurrence.md)
-Get exceptionOccurrences from users
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserEventInstanceExceptionOccurrenceAttachment](Get-MgBetaUserEventInstanceExceptionOccurrenceAttachment.md)
-Read the properties, relationships, or raw contents of an attachment that is attached to a user event, message, Outlook task, or group post.
-An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserEventInstanceExceptionOccurrenceAttachmentCount](Get-MgBetaUserEventInstanceExceptionOccurrenceAttachmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserEventInstanceExceptionOccurrenceCalendar](Get-MgBetaUserEventInstanceExceptionOccurrenceCalendar.md)
-The calendar that contains the event.
-Navigation property.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserEventInstanceExceptionOccurrenceCount](Get-MgBetaUserEventInstanceExceptionOccurrenceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserEventInstanceExceptionOccurrenceExtension](Get-MgBetaUserEventInstanceExceptionOccurrenceExtension.md)
-Get an open extension (openTypeExtension object) identified by name or fully qualified name.
-The table in the Permissions section lists the resources that support open extensions.
-The following table lists the three scenarios where you can get an open extension from a supported resource instance.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserEventInstanceExceptionOccurrenceExtensionCount](Get-MgBetaUserEventInstanceExceptionOccurrenceExtensionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserEventInstanceExtension](Get-MgBetaUserEventInstanceExtension.md)
-Get an open extension (openTypeExtension object) identified by name or fully qualified name.
-The table in the Permissions section lists the resources that support open extensions.
-The following table lists the three scenarios where you can get an open extension from a supported resource instance.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserEventInstanceExtensionCount](Get-MgBetaUserEventInstanceExtensionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [New-MgBetaGroupCalendarEvent](New-MgBetaGroupCalendarEvent.md)
-Use this API to create a new event in a calendar.
-The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaGroupCalendarPermission](New-MgBetaGroupCalendarPermission.md)
-Create a calendarPermission resource to specify the identity and role of the user with whom the specified calendar is being shared or delegated.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaGroupEvent](New-MgBetaGroupEvent.md)
-Use this API to create a new event.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaGroupEventAttachment](New-MgBetaGroupEventAttachment.md)
-Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaGroupEventExceptionOccurrenceAttachment](New-MgBetaGroupEventExceptionOccurrenceAttachment.md)
-Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaGroupEventExceptionOccurrenceExtension](New-MgBetaGroupEventExceptionOccurrenceExtension.md)
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-The table in the Permissions section lists the resources that support open extensions.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaGroupEventExceptionOccurrenceInstanceAttachment](New-MgBetaGroupEventExceptionOccurrenceInstanceAttachment.md)
-Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaGroupEventExceptionOccurrenceInstanceExtension](New-MgBetaGroupEventExceptionOccurrenceInstanceExtension.md)
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-The table in the Permissions section lists the resources that support open extensions.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaGroupEventExtension](New-MgBetaGroupEventExtension.md)
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-The table in the Permissions section lists the resources that support open extensions.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaGroupEventInstanceAttachment](New-MgBetaGroupEventInstanceAttachment.md)
-Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaGroupEventInstanceExceptionOccurrenceAttachment](New-MgBetaGroupEventInstanceExceptionOccurrenceAttachment.md)
-Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaGroupEventInstanceExceptionOccurrenceExtension](New-MgBetaGroupEventInstanceExceptionOccurrenceExtension.md)
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-The table in the Permissions section lists the resources that support open extensions.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaGroupEventInstanceExtension](New-MgBetaGroupEventInstanceExtension.md)
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-The table in the Permissions section lists the resources that support open extensions.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
-### [New-MgBetaPlaceRoom](New-MgBetaPlaceRoom.md)
-Create new navigation property to rooms for places
+### [New-MgBetaPlaceAsRoomListRoom](New-MgBetaPlaceAsRoomListRoom.md)
+{{ Fill in the Description }}
 
-### [New-MgBetaPlaceWorkspace](New-MgBetaPlaceWorkspace.md)
-Create new navigation property to workspaces for places
+### [New-MgBetaPlaceAsRoomListWorkspace](New-MgBetaPlaceAsRoomListWorkspace.md)
+{{ Fill in the Description }}
 
-### [New-MgBetaPlaceWorkspace](New-MgBetaPlaceWorkspace.md)
-Create new navigation property to workspaces for places
+### [New-MgBetaUserCalendar](New-MgBetaUserCalendar.md)
+{{ Fill in the Description }}
 
-### [New-MgBetaPlaceWorkspace](New-MgBetaPlaceWorkspace.md)
-Create new navigation property to workspaces for places
+### [New-MgBetaUserCalendarEvent](New-MgBetaUserCalendarEvent.md)
+{{ Fill in the Description }}
 
-### [New-MgBetaPlaceWorkspace](New-MgBetaPlaceWorkspace.md)
-Create new navigation property to workspaces for places
+### [New-MgBetaUserCalendarGroup](New-MgBetaUserCalendarGroup.md)
+{{ Fill in the Description }}
 
-### [New-MgBetaPlaceWorkspace](New-MgBetaPlaceWorkspace.md)
-Create new navigation property to workspaces for places
+### [New-MgBetaUserCalendarGroupCalendar](New-MgBetaUserCalendarGroupCalendar.md)
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserCalendarPermission](New-MgBetaUserCalendarPermission.md)
-Create a calendarPermission resource to specify the identity and role of the user with whom the specified calendar is being shared or delegated.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserDefaultCalendarEvent](New-MgBetaUserDefaultCalendarEvent.md)
-Use this API to create a new event in a calendar.
-The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
-### [New-MgBetaUserDefaultCalendarEvent](New-MgBetaUserDefaultCalendarEvent.md)
-Use this API to create a new event in a calendar.
-The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
-This API is available in the following national cloud deployments.
+### [New-MgBetaUserEvent](New-MgBetaUserEvent.md)
+{{ Fill in the Description }}
 
-### [New-MgBetaUserDefaultCalendarEvent](New-MgBetaUserDefaultCalendarEvent.md)
-Use this API to create a new event in a calendar.
-The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
-This API is available in the following national cloud deployments.
+### [New-MgBetaUserEventAttachment](New-MgBetaUserEventAttachment.md)
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserEventExceptionOccurrenceAttachment](New-MgBetaUserEventExceptionOccurrenceAttachment.md)
-Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserEventExceptionOccurrenceExtension](New-MgBetaUserEventExceptionOccurrenceExtension.md)
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-The table in the Permissions section lists the resources that support open extensions.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserEventExceptionOccurrenceInstanceAttachment](New-MgBetaUserEventExceptionOccurrenceInstanceAttachment.md)
-Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserEventExceptionOccurrenceInstanceExtension](New-MgBetaUserEventExceptionOccurrenceInstanceExtension.md)
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-The table in the Permissions section lists the resources that support open extensions.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserEventExtension](New-MgBetaUserEventExtension.md)
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-The table in the Permissions section lists the resources that support open extensions.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserEventInstanceAttachment](New-MgBetaUserEventInstanceAttachment.md)
-Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserEventInstanceExceptionOccurrenceAttachment](New-MgBetaUserEventInstanceExceptionOccurrenceAttachment.md)
-Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserEventInstanceExceptionOccurrenceExtension](New-MgBetaUserEventInstanceExceptionOccurrenceExtension.md)
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-The table in the Permissions section lists the resources that support open extensions.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserEventInstanceExtension](New-MgBetaUserEventInstanceExtension.md)
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-The table in the Permissions section lists the resources that support open extensions.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaGroupCalendarEvent](Remove-MgBetaGroupCalendarEvent.md)
-Delete navigation property events for groups
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaGroupCalendarPermission](Remove-MgBetaGroupCalendarPermission.md)
-Delete calendarPermission.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaGroupEvent](Remove-MgBetaGroupEvent.md)
-Delete an event object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaGroupEventAttachment](Remove-MgBetaGroupEventAttachment.md)
-Delete an attachment from a user calendar event, message, Outlook task, or post.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaGroupEventExceptionOccurrenceAttachment](Remove-MgBetaGroupEventExceptionOccurrenceAttachment.md)
-Delete an attachment from a user calendar event, message, Outlook task, or post.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaGroupEventExceptionOccurrenceExtension](Remove-MgBetaGroupEventExceptionOccurrenceExtension.md)
-Delete navigation property extensions for groups
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaGroupEventExceptionOccurrenceInstanceAttachment](Remove-MgBetaGroupEventExceptionOccurrenceInstanceAttachment.md)
-Delete an attachment from a user calendar event, message, Outlook task, or post.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaGroupEventExceptionOccurrenceInstanceExtension](Remove-MgBetaGroupEventExceptionOccurrenceInstanceExtension.md)
-Delete navigation property extensions for groups
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaGroupEventExtension](Remove-MgBetaGroupEventExtension.md)
-Delete navigation property extensions for groups
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaGroupEventInstanceAttachment](Remove-MgBetaGroupEventInstanceAttachment.md)
-Delete an attachment from a user calendar event, message, Outlook task, or post.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaGroupEventInstanceExceptionOccurrenceAttachment](Remove-MgBetaGroupEventInstanceExceptionOccurrenceAttachment.md)
-Delete an attachment from a user calendar event, message, Outlook task, or post.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaGroupEventInstanceExceptionOccurrenceExtension](Remove-MgBetaGroupEventInstanceExceptionOccurrenceExtension.md)
-Delete navigation property extensions for groups
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaGroupEventInstanceExtension](Remove-MgBetaGroupEventInstanceExtension.md)
-Delete navigation property extensions for groups
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaPlace](Remove-MgBetaPlace.md)
-Delete entity from places
+{{ Fill in the Description }}
 
-### [Remove-MgBetaPlaceRoom](Remove-MgBetaPlaceRoom.md)
-Delete navigation property rooms for places
+### [Remove-MgBetaPlaceAsRoomListRoom](Remove-MgBetaPlaceAsRoomListRoom.md)
+{{ Fill in the Description }}
 
-### [Remove-MgBetaPlaceWorkspace](Remove-MgBetaPlaceWorkspace.md)
-Delete navigation property workspaces for places
+### [Remove-MgBetaPlaceAsRoomListWorkspace](Remove-MgBetaPlaceAsRoomListWorkspace.md)
+{{ Fill in the Description }}
 
-### [Remove-MgBetaPlaceWorkspace](Remove-MgBetaPlaceWorkspace.md)
-Delete navigation property workspaces for places
-
-### [Remove-MgBetaUserCalendarPermission](Remove-MgBetaUserCalendarPermission.md)
-Delete calendarPermission.
-This API is available in the following national cloud deployments.
+### [Remove-MgBetaUserCalendarGroup](Remove-MgBetaUserCalendarGroup.md)
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserCalendarPermission](Remove-MgBetaUserCalendarPermission.md)
-Delete calendarPermission.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
-### [Remove-MgBetaUserCalendarPermission](Remove-MgBetaUserCalendarPermission.md)
-Delete calendarPermission.
-This API is available in the following national cloud deployments.
+### [Remove-MgBetaUserEvent](Remove-MgBetaUserEvent.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaUserEventAttachment](Remove-MgBetaUserEventAttachment.md)
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserEventExceptionOccurrenceAttachment](Remove-MgBetaUserEventExceptionOccurrenceAttachment.md)
-Delete an attachment from a user calendar event, message, Outlook task, or post.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserEventExceptionOccurrenceExtension](Remove-MgBetaUserEventExceptionOccurrenceExtension.md)
-Delete navigation property extensions for users
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserEventExceptionOccurrenceInstanceAttachment](Remove-MgBetaUserEventExceptionOccurrenceInstanceAttachment.md)
-Delete an attachment from a user calendar event, message, Outlook task, or post.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserEventExceptionOccurrenceInstanceExtension](Remove-MgBetaUserEventExceptionOccurrenceInstanceExtension.md)
-Delete navigation property extensions for users
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserEventExtension](Remove-MgBetaUserEventExtension.md)
-Delete navigation property extensions for users
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserEventInstanceAttachment](Remove-MgBetaUserEventInstanceAttachment.md)
-Delete an attachment from a user calendar event, message, Outlook task, or post.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserEventInstanceExceptionOccurrenceAttachment](Remove-MgBetaUserEventInstanceExceptionOccurrenceAttachment.md)
-Delete an attachment from a user calendar event, message, Outlook task, or post.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserEventInstanceExceptionOccurrenceExtension](Remove-MgBetaUserEventInstanceExceptionOccurrenceExtension.md)
-Delete navigation property extensions for users
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserEventInstanceExtension](Remove-MgBetaUserEventInstanceExtension.md)
-Delete navigation property extensions for users
+{{ Fill in the Description }}
 
 ### [Update-MgBetaGroupCalendarEvent](Update-MgBetaGroupCalendarEvent.md)
-Update the navigation property events in groups
+{{ Fill in the Description }}
 
 ### [Update-MgBetaGroupCalendarPermission](Update-MgBetaGroupCalendarPermission.md)
-Update the permissions assigned to an existing share recipient or delegate, through the corresponding calendarPermission object for a calendar.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaGroupEvent](Update-MgBetaGroupEvent.md)
-Update an event object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaGroupEventExceptionOccurrenceExtension](Update-MgBetaGroupEventExceptionOccurrenceExtension.md)
-Update the navigation property extensions in groups
+{{ Fill in the Description }}
 
 ### [Update-MgBetaGroupEventExceptionOccurrenceInstanceExtension](Update-MgBetaGroupEventExceptionOccurrenceInstanceExtension.md)
-Update the navigation property extensions in groups
+{{ Fill in the Description }}
 
 ### [Update-MgBetaGroupEventExtension](Update-MgBetaGroupEventExtension.md)
-Update the navigation property extensions in groups
+{{ Fill in the Description }}
 
 ### [Update-MgBetaGroupEventInstanceExceptionOccurrenceExtension](Update-MgBetaGroupEventInstanceExceptionOccurrenceExtension.md)
-Update the navigation property extensions in groups
+{{ Fill in the Description }}
 
 ### [Update-MgBetaGroupEventInstanceExtension](Update-MgBetaGroupEventInstanceExtension.md)
-Update the navigation property extensions in groups
+{{ Fill in the Description }}
 
 ### [Update-MgBetaPlace](Update-MgBetaPlace.md)
-Update the properties of place object, which can be a room, workspace, or roomList.
-You can identify the room, workspace, or roomList by specifying the id or emailAddress property.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
-### [Update-MgBetaPlaceRoom](Update-MgBetaPlaceRoom.md)
-Update the navigation property rooms in places
+### [Update-MgBetaPlaceAsRoomListRoom](Update-MgBetaPlaceAsRoomListRoom.md)
+{{ Fill in the Description }}
 
-### [Update-MgBetaPlaceWorkspace](Update-MgBetaPlaceWorkspace.md)
-Update the navigation property workspaces in places
+### [Update-MgBetaPlaceAsRoomListWorkspace](Update-MgBetaPlaceAsRoomListWorkspace.md)
+{{ Fill in the Description }}
 
-### [Update-MgBetaPlaceWorkspace](Update-MgBetaPlaceWorkspace.md)
-Update the navigation property workspaces in places
+### [Update-MgBetaUserCalendarGroup](Update-MgBetaUserCalendarGroup.md)
+{{ Fill in the Description }}
 
 ### [Update-MgBetaUserCalendarPermission](Update-MgBetaUserCalendarPermission.md)
-Update the permissions assigned to an existing share recipient or delegate, through the corresponding calendarPermission object for a calendar.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
-### [Update-MgBetaUserCalendarPermission](Update-MgBetaUserCalendarPermission.md)
-Update the permissions assigned to an existing share recipient or delegate, through the corresponding calendarPermission object for a calendar.
-This API is available in the following national cloud deployments.
+### [Update-MgBetaUserEvent](Update-MgBetaUserEvent.md)
+{{ Fill in the Description }}
 
 ### [Update-MgBetaUserEventExceptionOccurrenceExtension](Update-MgBetaUserEventExceptionOccurrenceExtension.md)
-Update the navigation property extensions in users
+{{ Fill in the Description }}
 
 ### [Update-MgBetaUserEventExceptionOccurrenceInstanceExtension](Update-MgBetaUserEventExceptionOccurrenceInstanceExtension.md)
-Update the navigation property extensions in users
+{{ Fill in the Description }}
 
 ### [Update-MgBetaUserEventExtension](Update-MgBetaUserEventExtension.md)
-Update the navigation property extensions in users
+{{ Fill in the Description }}
 
 ### [Update-MgBetaUserEventInstanceExceptionOccurrenceExtension](Update-MgBetaUserEventInstanceExceptionOccurrenceExtension.md)
-Update the navigation property extensions in users
+{{ Fill in the Description }}
 
 ### [Update-MgBetaUserEventInstanceExtension](Update-MgBetaUserEventInstanceExtension.md)
-Update the navigation property extensions in users
+{{ Fill in the Description }}
 

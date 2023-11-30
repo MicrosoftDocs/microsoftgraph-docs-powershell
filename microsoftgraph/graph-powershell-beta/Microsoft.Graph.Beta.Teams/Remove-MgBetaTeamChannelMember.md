@@ -10,7 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a conversationMember from a channel.
 This operation is allowed only for channels with a membershipType value of private or shared.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamChannelMember?view=graph-powershell-1.0)
@@ -32,7 +32,7 @@ Remove-MgBetaTeamChannelMember -InputObject <ITeamsIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete a conversationMember from a channel.
 This operation is allowed only for channels with a membershipType value of private or shared.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

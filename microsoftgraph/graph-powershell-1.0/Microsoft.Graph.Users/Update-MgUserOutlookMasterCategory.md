@@ -1,14 +1,17 @@
 ---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusermailboxsetting
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguseroutlookmastercategory
 schema: 2.0.0
+ms.prod: outlook
 ---
 
-# Update-MgUserMailboxSetting
+# Update-MgUserOutlookMasterCategory
 
 ## SYNOPSIS
-Update property mailboxSettings value.
+Update the writable property, color, of the specified outlookCategory object.
+You can't modify the displayName propertyonce you have created the category.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserOutlookMasterCategory?view=graph-powershell-beta)
@@ -17,36 +20,33 @@ Update property mailboxSettings value.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgUserMailboxSetting -UserId <String> [-AdditionalProperties <Hashtable>] [-ArchiveFolder <String>]
- [-AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>] [-DateFormat <String>]
- [-DelegateMeetingMessageDeliveryOptions <String>] [-Language <IMicrosoftGraphLocaleInfo>]
- [-TimeFormat <String>] [-TimeZone <String>] [-UserPurpose <String>]
- [-WorkingHours <IMicrosoftGraphWorkingHours>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgUserOutlookMasterCategory -OutlookCategoryId <String> -UserId <String>
+ [-AdditionalProperties <Hashtable>] [-Color <String>] [-DisplayName <String>] [-Id <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgUserMailboxSetting -UserId <String> -BodyParameter <IMicrosoftGraphMailboxSettings> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgUserOutlookMasterCategory -OutlookCategoryId <String> -UserId <String>
+ -BodyParameter <IMicrosoftGraphOutlookCategory> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgUserMailboxSetting -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
- [-ArchiveFolder <String>] [-AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>]
- [-DateFormat <String>] [-DelegateMeetingMessageDeliveryOptions <String>]
- [-Language <IMicrosoftGraphLocaleInfo>] [-TimeFormat <String>] [-TimeZone <String>] [-UserPurpose <String>]
- [-WorkingHours <IMicrosoftGraphWorkingHours>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgUserOutlookMasterCategory -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
+ [-Color <String>] [-DisplayName <String>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgUserMailboxSetting -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphMailboxSettings>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgUserOutlookMasterCategory -InputObject <IUsersIdentity>
+ -BodyParameter <IMicrosoftGraphOutlookCategory> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update property mailboxSettings value.
+Update the writable property, color, of the specified outlookCategory object.
+You can't modify the displayName propertyonce you have created the category.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -83,43 +83,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ArchiveFolder
-Folder ID of an archive folder for the user.
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -AutomaticRepliesSetting
-automaticRepliesSetting
-To construct, see NOTES section for AUTOMATICREPLIESSETTING properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphAutomaticRepliesSetting
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -BodyParameter
-mailboxSettings
+outlookCategory
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMailboxSettings
+Type: IMicrosoftGraphOutlookCategory
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -130,8 +99,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -DateFormat
-The date format for the user's mailbox.
+### -Color
+categoryColor
 
 ```yaml
 Type: String
@@ -145,8 +114,26 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DelegateMeetingMessageDeliveryOptions
-delegateMeetingMessageDeliveryOptions
+### -DisplayName
+A unique name that identifies a category in the user's mailbox.
+After a category is created, the name cannot be changed.
+Read-only.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Id
+The unique identifier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -176,46 +163,15 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Language
-localeInfo
-To construct, see NOTES section for LANGUAGE properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphLocaleInfo
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -TimeFormat
-The time format for the user's mailbox.
+### -OutlookCategoryId
+The unique identifier of outlookCategory
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -TimeZone
-The default time zone for the user's mailbox.
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -231,37 +187,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -UserPurpose
-userPurpose
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WorkingHours
-workingHours
-To construct, see NOTES section for WORKINGHOURS properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphWorkingHours
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -304,93 +229,43 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailboxSettings
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOutlookCategory
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailboxSettings
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOutlookCategory
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+BODYPARAMETER \<IMicrosoftGraphOutlookCategory\>: outlookCategory
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[Color \<String\>\]: categoryColor
+  \[DisplayName \<String\>\]: A unique name that identifies a category in the user's mailbox.
+After a category is created, the name cannot be changed.
+Read-only.
 
-`AUTOMATICREPLIESSETTING <IMicrosoftGraphAutomaticRepliesSetting>`: automaticRepliesSetting
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ExternalAudience <String>]`: externalAudienceScope
-  - `[ExternalReplyMessage <String>]`: The automatic reply to send to the specified external audience, if Status is AlwaysEnabled or Scheduled.
-  - `[InternalReplyMessage <String>]`: The automatic reply to send to the audience internal to the signed-in user's organization, if Status is AlwaysEnabled or Scheduled.
-  - `[ScheduledEndDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-    - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
-  - `[ScheduledStartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-  - `[Status <String>]`: automaticRepliesStatus
-
-`BODYPARAMETER <IMicrosoftGraphMailboxSettings>`: mailboxSettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ArchiveFolder <String>]`: Folder ID of an archive folder for the user.
-  - `[AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>]`: automaticRepliesSetting
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ExternalAudience <String>]`: externalAudienceScope
-    - `[ExternalReplyMessage <String>]`: The automatic reply to send to the specified external audience, if Status is AlwaysEnabled or Scheduled.
-    - `[InternalReplyMessage <String>]`: The automatic reply to send to the audience internal to the signed-in user's organization, if Status is AlwaysEnabled or Scheduled.
-    - `[ScheduledEndDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-      - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
-    - `[ScheduledStartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-    - `[Status <String>]`: automaticRepliesStatus
-  - `[DateFormat <String>]`: The date format for the user's mailbox.
-  - `[DelegateMeetingMessageDeliveryOptions <String>]`: delegateMeetingMessageDeliveryOptions
-  - `[Language <IMicrosoftGraphLocaleInfo>]`: localeInfo
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: A name representing the user's locale in natural language, for example, 'English (United States)'.
-    - `[Locale <String>]`: A locale representation for the user, which includes the user's preferred language and country/region. For example, 'en-us'. The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
-  - `[TimeFormat <String>]`: The time format for the user's mailbox.
-  - `[TimeZone <String>]`: The default time zone for the user's mailbox.
-  - `[UserPurpose <String>]`: userPurpose
-  - `[WorkingHours <IMicrosoftGraphWorkingHours>]`: workingHours
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DaysOfWeek <String[]>]`: The days of the week on which the user works.
-    - `[EndTime <String>]`: The time of the day that the user stops working.
-    - `[StartTime <String>]`: The time of the day that the user starts working.
-    - `[TimeZone <IMicrosoftGraphTimeZoneBase>]`: timeZoneBase
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Name <String>]`: The name of a time zone. It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 'Customized Time Zone' for a custom time zone.
-
-`INPUTOBJECT <IUsersIdentity>`: Identity Parameter
-  - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
-  - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession
-  - `[ChecklistItemId <String>]`: The unique identifier of checklistItem
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
-  - `[LinkedResourceId <String>]`: The unique identifier of linkedResource
-  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
-  - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
-  - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[TodoTaskId <String>]`: The unique identifier of todoTask
-  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
-  - `[UserId <String>]`: The unique identifier of user
-
-`LANGUAGE <IMicrosoftGraphLocaleInfo>`: localeInfo
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: A name representing the user's locale in natural language, for example, 'English (United States)'.
-  - `[Locale <String>]`: A locale representation for the user, which includes the user's preferred language and country/region. For example, 'en-us'. The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
-
-`WORKINGHOURS <IMicrosoftGraphWorkingHours>`: workingHours
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DaysOfWeek <String[]>]`: The days of the week on which the user works.
-  - `[EndTime <String>]`: The time of the day that the user stops working.
-  - `[StartTime <String>]`: The time of the day that the user starts working.
-  - `[TimeZone <IMicrosoftGraphTimeZoneBase>]`: timeZoneBase
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Name <String>]`: The name of a time zone. It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 'Customized Time Zone' for a custom time zone.
+INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
+  \[AttachmentBaseId \<String\>\]: The unique identifier of attachmentBase
+  \[AttachmentSessionId \<String\>\]: The unique identifier of attachmentSession
+  \[ChecklistItemId \<String\>\]: The unique identifier of checklistItem
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[LicenseDetailsId \<String\>\]: The unique identifier of licenseDetails
+  \[LinkedResourceId \<String\>\]: The unique identifier of linkedResource
+  \[OAuth2PermissionGrantId \<String\>\]: The unique identifier of oAuth2PermissionGrant
+  \[OutlookCategoryId \<String\>\]: The unique identifier of outlookCategory
+  \[ProfilePhotoId \<String\>\]: The unique identifier of profilePhoto
+  \[TodoTaskId \<String\>\]: The unique identifier of todoTask
+  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-
 [Update-MgBetaUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserOutlookMasterCategory?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguseroutlookmastercategory](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguseroutlookmastercategory)
+

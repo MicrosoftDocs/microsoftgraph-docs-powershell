@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportAuthenticationMethod
 
 ## SYNOPSIS
-Container for navigation properties for Azure AD authentication methods resources.
+Container for navigation properties for Microsoft Entra authentication methods resources.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportAuthenticationMethod](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportAuthenticationMethod?view=graph-powershell-beta)
@@ -20,9 +20,7 @@ Get-MgReportAuthenticationMethod [-ExpandProperty <String[]>] [-Property <String
 ```
 
 ## DESCRIPTION
-Container for navigation properties for Azure AD authentication methods resources.
-
-## EXAMPLES
+Container for navigation properties for Microsoft Entra authentication methods resources.
 
 ## PARAMETERS
 
@@ -66,9 +64,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationMethodsRoot
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
-
 [Get-MgBetaReportAuthenticationMethod](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportAuthenticationMethod?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportauthenticationmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportauthenticationmethod)
+
 

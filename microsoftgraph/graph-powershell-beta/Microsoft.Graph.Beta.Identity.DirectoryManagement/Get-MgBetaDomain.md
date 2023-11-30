@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadomain
 schema: 2.0.0
+ms.prod: directory-management
+ms.prod: directory-management
 ---
 
 # Get-MgBetaDomain
 
 ## SYNOPSIS
 Retrieve the properties and relationships of domain object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDomain](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDomain?view=graph-powershell-1.0)
@@ -35,6 +38,7 @@ Get-MgBetaDomain -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandPro
 
 ## DESCRIPTION
 Retrieve the properties and relationships of domain object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Get a list of domain objects
@@ -274,6 +278,7 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[ContractId \<String\>\]: The unique identifier of contract
   \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
   \[DeviceId \<String\>\]: The unique identifier of device
+  \[DeviceLocalCredentialInfoId \<String\>\]: The unique identifier of deviceLocalCredentialInfo
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[DirectoryRoleId \<String\>\]: The unique identifier of directoryRole
   \[DirectoryRoleTemplateId \<String\>\]: The unique identifier of directoryRoleTemplate

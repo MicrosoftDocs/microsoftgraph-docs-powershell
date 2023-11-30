@@ -1,139 +1,124 @@
 ---
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
-Module Guid: 0d7a5189-c44a-4267-b631-145cb53e7db1
-Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement
-Help Version: 1.0.0.0
+Module Guid: a4787a14-44bc-45c7-910b-13749e92ed7a
+Download Help Link: {{ Update Download Link }}
+Help Version: {{ Please enter version of help manually (X.X.X.X) format }}
 Locale: en-US
 ---
 
 # Microsoft.Graph.Devices.ServiceAnnouncement Module
 ## Description
-Microsoft Graph PowerShell Cmdlets
+{{ Fill in the Description }}
 
 ## Microsoft.Graph.Devices.ServiceAnnouncement Cmdlets
 ### [Get-MgServiceAnnouncementHealthOverview](Get-MgServiceAnnouncementHealthOverview.md)
-Retrieve the properties and relationships of a serviceHealth object.
-This operation provides the health information of a specified service for a tenant.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgServiceAnnouncementHealthOverviewCount](Get-MgServiceAnnouncementHealthOverviewCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgServiceAnnouncementHealthOverviewIssue](Get-MgServiceAnnouncementHealthOverviewIssue.md)
-A collection of issues that happened on the service, with detailed information for each issue.
+{{ Fill in the Description }}
 
 ### [Get-MgServiceAnnouncementHealthOverviewIssueCount](Get-MgServiceAnnouncementHealthOverviewIssueCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgServiceAnnouncementIssue](Get-MgServiceAnnouncementIssue.md)
-Retrieve the properties and relationships of a serviceHealthIssue object.
-This operation retrieves a specified service health issue for tenant.
-The operation returns an error if the issue does not exist for the tenant.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgServiceAnnouncementIssueCount](Get-MgServiceAnnouncementIssueCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgServiceAnnouncementMessage](Get-MgServiceAnnouncementMessage.md)
-Retrieve the properties and relationships of a serviceUpdateMessage object.
-This operation retrieves a specified service update message for the tenant.
-The operation returns an error if the message does not exist for the tenant.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgServiceAnnouncementMessageAttachment](Get-MgServiceAnnouncementMessageAttachment.md)
-Read the properties and relationships of a serviceAnnouncementAttachment object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgServiceAnnouncementMessageAttachmentArchive](Get-MgServiceAnnouncementMessageAttachmentArchive.md)
-The zip file that contains all attachments for a message.
+{{ Fill in the Description }}
 
 ### [Get-MgServiceAnnouncementMessageAttachmentContent](Get-MgServiceAnnouncementMessageAttachmentContent.md)
-The attachment content.
+{{ Fill in the Description }}
 
 ### [Get-MgServiceAnnouncementMessageAttachmentCount](Get-MgServiceAnnouncementMessageAttachmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgServiceAnnouncementMessageCount](Get-MgServiceAnnouncementMessageCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Invoke-MgArchiveServiceAnnouncementMessage](Invoke-MgArchiveServiceAnnouncementMessage.md)
-Archive a list of serviceUpdateMessages for the signed in user.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgFavoriteServiceAnnouncementMessage](Invoke-MgFavoriteServiceAnnouncementMessage.md)
-Change the status of a list of serviceUpdateMessages to favorite for the signed in user.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgMarkServiceAnnouncementMessageRead](Invoke-MgMarkServiceAnnouncementMessageRead.md)
-Mark a list of serviceUpdateMessages as read for the signed in user.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgMarkServiceAnnouncementMessageUnread](Invoke-MgMarkServiceAnnouncementMessageUnread.md)
-Mark a list of serviceUpdateMessages as unread for the signed in user.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgReportServiceAnnouncementHealthOverviewIssueIncident](Invoke-MgReportServiceAnnouncementHealthOverviewIssueIncident.md)
-Invoke function incidentReport
+{{ Fill in the Description }}
 
 ### [Invoke-MgReportServiceAnnouncementIssueIncident](Invoke-MgReportServiceAnnouncementIssueIncident.md)
-Invoke function incidentReport
+{{ Fill in the Description }}
 
 ### [Invoke-MgUnarchiveServiceAnnouncementMessage](Invoke-MgUnarchiveServiceAnnouncementMessage.md)
-Unarchive a list of serviceUpdateMessages for the signed in user.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgUnfavoriteServiceAnnouncementMessage](Invoke-MgUnfavoriteServiceAnnouncementMessage.md)
-Remove the favorite status of serviceUpdateMessages for the signed in user.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgServiceAnnouncementHealthOverview](New-MgServiceAnnouncementHealthOverview.md)
-Create new navigation property to healthOverviews for admin
+{{ Fill in the Description }}
 
 ### [New-MgServiceAnnouncementHealthOverviewIssue](New-MgServiceAnnouncementHealthOverviewIssue.md)
-Create new navigation property to issues for admin
+{{ Fill in the Description }}
 
 ### [New-MgServiceAnnouncementIssue](New-MgServiceAnnouncementIssue.md)
-Create new navigation property to issues for admin
+{{ Fill in the Description }}
 
 ### [New-MgServiceAnnouncementMessage](New-MgServiceAnnouncementMessage.md)
-Create new navigation property to messages for admin
+{{ Fill in the Description }}
 
 ### [New-MgServiceAnnouncementMessageAttachment](New-MgServiceAnnouncementMessageAttachment.md)
-Create new navigation property to attachments for admin
+{{ Fill in the Description }}
 
 ### [Remove-MgServiceAnnouncementHealthOverview](Remove-MgServiceAnnouncementHealthOverview.md)
-Delete navigation property healthOverviews for admin
+{{ Fill in the Description }}
 
 ### [Remove-MgServiceAnnouncementHealthOverviewIssue](Remove-MgServiceAnnouncementHealthOverviewIssue.md)
-Delete navigation property issues for admin
+{{ Fill in the Description }}
 
 ### [Remove-MgServiceAnnouncementIssue](Remove-MgServiceAnnouncementIssue.md)
-Delete navigation property issues for admin
+{{ Fill in the Description }}
 
 ### [Remove-MgServiceAnnouncementMessage](Remove-MgServiceAnnouncementMessage.md)
-Delete navigation property messages for admin
+{{ Fill in the Description }}
 
 ### [Remove-MgServiceAnnouncementMessageAttachment](Remove-MgServiceAnnouncementMessageAttachment.md)
-Delete navigation property attachments for admin
+{{ Fill in the Description }}
 
 ### [Set-MgServiceAnnouncementMessageAttachmentArchive](Set-MgServiceAnnouncementMessageAttachmentArchive.md)
-The zip file that contains all attachments for a message.
+{{ Fill in the Description }}
 
 ### [Set-MgServiceAnnouncementMessageAttachmentContent](Set-MgServiceAnnouncementMessageAttachmentContent.md)
-The attachment content.
+{{ Fill in the Description }}
 
 ### [Update-MgServiceAnnouncementHealthOverview](Update-MgServiceAnnouncementHealthOverview.md)
-Update the navigation property healthOverviews in admin
+{{ Fill in the Description }}
 
 ### [Update-MgServiceAnnouncementHealthOverviewIssue](Update-MgServiceAnnouncementHealthOverviewIssue.md)
-Update the navigation property issues in admin
+{{ Fill in the Description }}
 
 ### [Update-MgServiceAnnouncementIssue](Update-MgServiceAnnouncementIssue.md)
-Update the navigation property issues in admin
+{{ Fill in the Description }}
 
 ### [Update-MgServiceAnnouncementMessage](Update-MgServiceAnnouncementMessage.md)
-Update the navigation property messages in admin
+{{ Fill in the Description }}
 
 ### [Update-MgServiceAnnouncementMessageAttachment](Update-MgServiceAnnouncementMessageAttachment.md)
-Update the navigation property attachments in admin
+{{ Fill in the Description }}
 

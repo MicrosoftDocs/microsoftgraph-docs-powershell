@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of a teamworkTag object.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgGroupTeamTag](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamTag?view=graph-powershell-1.0)
@@ -46,7 +46,9 @@ Update-MgBetaGroupTeamTag -InputObject <ITeamsIdentity> -BodyParameter <IMicroso
 
 ## DESCRIPTION
 Update the properties of a teamworkTag object.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -350,5 +352,4 @@ Read-only.
 [Update-MgGroupTeamTag](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamTag?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamtag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamtag)
-
 

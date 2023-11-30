@@ -1,96 +1,88 @@
 ---
 Module Name: Microsoft.Graph.Compliance
-Module Guid: af19b0c6-e50d-4d47-b4c3-0cfc4f0f0f23
-Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.compliance
-Help Version: 1.0.0.0
+Module Guid: 7478368f-6e69-4d5a-a06d-07ae47a87ec4
+Download Help Link: {{ Update Download Link }}
+Help Version: {{ Please enter version of help manually (X.X.X.X) format }}
 Locale: en-US
 ---
 
 # Microsoft.Graph.Compliance Module
 ## Description
-Microsoft Graph PowerShell Cmdlets
+{{ Fill in the Description }}
 
 ## Microsoft.Graph.Compliance Cmdlets
 ### [Get-MgCompliance](Get-MgCompliance.md)
-Get compliance
+{{ Fill in the Description }}
 
 ### [Get-MgPrivacySubjectRightsRequest](Get-MgPrivacySubjectRightsRequest.md)
-Read the properties and relationships of a subjectRightsRequest object.
-This API is supported in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgPrivacySubjectRightsRequestApprover](Get-MgPrivacySubjectRightsRequestApprover.md)
-Get approvers from privacy
+{{ Fill in the Description }}
 
 ### [Get-MgPrivacySubjectRightsRequestApproverCount](Get-MgPrivacySubjectRightsRequestApproverCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgPrivacySubjectRightsRequestApproverMailboxSetting](Get-MgPrivacySubjectRightsRequestApproverMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
-Returned only on $select.
+{{ Fill in the Description }}
 
 ### [Get-MgPrivacySubjectRightsRequestApproverServiceProvisioningError](Get-MgPrivacySubjectRightsRequestApproverServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
+{{ Fill in the Description }}
 
 ### [Get-MgPrivacySubjectRightsRequestApproverServiceProvisioningErrorCount](Get-MgPrivacySubjectRightsRequestApproverServiceProvisioningErrorCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgPrivacySubjectRightsRequestCollaborator](Get-MgPrivacySubjectRightsRequestCollaborator.md)
-Get collaborators from privacy
+{{ Fill in the Description }}
 
 ### [Get-MgPrivacySubjectRightsRequestCollaboratorCount](Get-MgPrivacySubjectRightsRequestCollaboratorCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgPrivacySubjectRightsRequestCollaboratorMailboxSetting](Get-MgPrivacySubjectRightsRequestCollaboratorMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
-Returned only on $select.
+{{ Fill in the Description }}
 
 ### [Get-MgPrivacySubjectRightsRequestCollaboratorServiceProvisioningError](Get-MgPrivacySubjectRightsRequestCollaboratorServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
+{{ Fill in the Description }}
 
 ### [Get-MgPrivacySubjectRightsRequestCollaboratorServiceProvisioningErrorCount](Get-MgPrivacySubjectRightsRequestCollaboratorServiceProvisioningErrorCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgPrivacySubjectRightsRequestCount](Get-MgPrivacySubjectRightsRequestCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgPrivacySubjectRightsRequestNote](Get-MgPrivacySubjectRightsRequestNote.md)
-List of notes associated with the request.
+{{ Fill in the Description }}
 
 ### [Get-MgPrivacySubjectRightsRequestNoteCount](Get-MgPrivacySubjectRightsRequestNoteCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgPrivacySubjectRightsRequestTeam](Get-MgPrivacySubjectRightsRequestTeam.md)
-Information about the Microsoft Teams team that was created for the request.
+{{ Fill in the Description }}
 
 ### [New-MgPrivacySubjectRightsRequest](New-MgPrivacySubjectRightsRequest.md)
-Create a new subjectRightsRequest object.
-This API is supported in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgPrivacySubjectRightsRequestNote](New-MgPrivacySubjectRightsRequestNote.md)
-Create a new authoredNote object.
-This API is supported in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgPrivacySubjectRightsRequest](Remove-MgPrivacySubjectRightsRequest.md)
-Delete navigation property subjectRightsRequests for privacy
+{{ Fill in the Description }}
 
 ### [Remove-MgPrivacySubjectRightsRequestNote](Remove-MgPrivacySubjectRightsRequestNote.md)
-Delete navigation property notes for privacy
+{{ Fill in the Description }}
 
 ### [Update-MgCompliance](Update-MgCompliance.md)
-Update compliance
+{{ Fill in the Description }}
 
 ### [Update-MgPrivacySubjectRightsRequest](Update-MgPrivacySubjectRightsRequest.md)
-Update the properties of a subjectRightsRequest object.
-This API is supported in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgPrivacySubjectRightsRequestApproverMailboxSetting](Update-MgPrivacySubjectRightsRequestApproverMailboxSetting.md)
-Update property mailboxSettings value.
+{{ Fill in the Description }}
 
 ### [Update-MgPrivacySubjectRightsRequestCollaboratorMailboxSetting](Update-MgPrivacySubjectRightsRequestCollaboratorMailboxSetting.md)
-Update property mailboxSettings value.
+{{ Fill in the Description }}
 
 ### [Update-MgPrivacySubjectRightsRequestNote](Update-MgPrivacySubjectRightsRequestNote.md)
-Update the navigation property notes in privacy
+{{ Fill in the Description }}
 

@@ -119,37 +119,39 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphImportedDeviceIdentity
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+BODYPARAMETER \<IPathsHi19O6DevicemanagementImporteddeviceidentitiesMicrosoftGraphSearchexistingidentitiesPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ImportedDeviceIdentities \<IMicrosoftGraphImportedDeviceIdentity\[\]\>\]: 
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[CreatedDateTime \<DateTime?\>\]: Created Date Time of the device
+    \[Description \<String\>\]: The description of the device
+    \[EnrollmentState \<EnrollmentState?\>\]: enrollmentState
+    \[ImportedDeviceIdentifier \<String\>\]: Imported Device Identifier
+    \[ImportedDeviceIdentityType \<ImportedDeviceIdentityType?\>\]: importedDeviceIdentityType
+    \[LastContactedDateTime \<DateTime?\>\]: Last Contacted Date Time of the device
+    \[LastModifiedDateTime \<DateTime?\>\]: Last Modified DateTime of the description
+    \[Platform \<Platform?\>\]: platform
 
-`BODYPARAMETER <IPathsHi19O6DevicemanagementImporteddeviceidentitiesMicrosoftGraphSearchexistingidentitiesPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ImportedDeviceIdentities <IMicrosoftGraphImportedDeviceIdentity[]>]`: 
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[CreatedDateTime <DateTime?>]`: Created Date Time of the device
-    - `[Description <String>]`: The description of the device
-    - `[EnrollmentState <EnrollmentState?>]`: enrollmentState
-    - `[ImportedDeviceIdentifier <String>]`: Imported Device Identifier
-    - `[ImportedDeviceIdentityType <ImportedDeviceIdentityType?>]`: importedDeviceIdentityType
-    - `[LastContactedDateTime <DateTime?>]`: Last Contacted Date Time of the device
-    - `[LastModifiedDateTime <DateTime?>]`: Last Modified DateTime of the description
-    - `[Platform <Platform?>]`: platform
-
-`IMPORTEDDEVICEIDENTITIES <IMicrosoftGraphImportedDeviceIdentity[]>`: .
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[CreatedDateTime <DateTime?>]`: Created Date Time of the device
-  - `[Description <String>]`: The description of the device
-  - `[EnrollmentState <EnrollmentState?>]`: enrollmentState
-  - `[ImportedDeviceIdentifier <String>]`: Imported Device Identifier
-  - `[ImportedDeviceIdentityType <ImportedDeviceIdentityType?>]`: importedDeviceIdentityType
-  - `[LastContactedDateTime <DateTime?>]`: Last Contacted Date Time of the device
-  - `[LastModifiedDateTime <DateTime?>]`: Last Modified DateTime of the description
-  - `[Platform <Platform?>]`: platform
+IMPORTEDDEVICEIDENTITIES \<IMicrosoftGraphImportedDeviceIdentity\[\]\>: .
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[CreatedDateTime \<DateTime?\>\]: Created Date Time of the device
+  \[Description \<String\>\]: The description of the device
+  \[EnrollmentState \<EnrollmentState?\>\]: enrollmentState
+  \[ImportedDeviceIdentifier \<String\>\]: Imported Device Identifier
+  \[ImportedDeviceIdentityType \<ImportedDeviceIdentityType?\>\]: importedDeviceIdentityType
+  \[LastContactedDateTime \<DateTime?\>\]: Last Contacted Date Time of the device
+  \[LastModifiedDateTime \<DateTime?\>\]: Last Modified DateTime of the description
+  \[Platform \<Platform?\>\]: platform
 
 ## RELATED LINKS
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/search-mgbetadevicemanagementimporteddeviceidentityexistingidentity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/search-mgbetadevicemanagementimporteddeviceidentityexistingidentity)
+
 

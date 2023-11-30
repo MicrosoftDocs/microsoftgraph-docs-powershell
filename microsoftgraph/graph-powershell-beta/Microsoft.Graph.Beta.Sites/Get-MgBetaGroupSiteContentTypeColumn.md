@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitecontenttypecolumn
 schema: 2.0.0
+ms.prod: sites-and-lists
+ms.prod: sites-and-lists
 ---
 
 # Get-MgBetaGroupSiteContentTypeColumn
@@ -38,6 +40,8 @@ Get-MgBetaGroupSiteContentTypeColumn -InputObject <ISitesIdentity> [-ExpandPrope
 ## DESCRIPTION
 Retrieve the metadata for a site\]\[\], \[list\]\[\] or \[contentType\]\[\] \[column\]\[columnDefinition\].
 This API is available in the following \[national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -337,5 +341,4 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgGroupSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteContentTypeColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitecontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitecontenttypecolumn)
-
 

@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tenants
-The collection of external Azure AD tenants that the user has shared profile data with.
+The collection of external Microsoft Entra tenants that the user has shared profile data with.
 Read-only.
 To construct, see NOTES section for TENANTS properties and create a hash table.
 
@@ -187,9 +187,9 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER \<IMicrosoftGraphOutboundSharedUserProfile\>: outboundSharedUserProfile
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Tenants \<IMicrosoftGraphTenantReference\[\]\>\]: The collection of external Azure AD tenants that the user has shared profile data with.
+  \[Tenants \<IMicrosoftGraphTenantReference\[\]\>\]: The collection of external Microsoft Entra tenants that the user has shared profile data with.
 Read-only.
-    \[TenantId \<String\>\]: The identifier of the Azure AD tenant.
+    \[TenantId \<String\>\]: The identifier of the Microsoft Entra tenant.
 Read-only.
 Key.
   \[UserId \<String\>\]: The object id of the external user.
@@ -206,6 +206,7 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[ContractId \<String\>\]: The unique identifier of contract
   \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
   \[DeviceId \<String\>\]: The unique identifier of device
+  \[DeviceLocalCredentialInfoId \<String\>\]: The unique identifier of deviceLocalCredentialInfo
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[DirectoryRoleId \<String\>\]: The unique identifier of directoryRole
   \[DirectoryRoleTemplateId \<String\>\]: The unique identifier of directoryRoleTemplate
@@ -239,9 +240,9 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[UsageRightId \<String\>\]: The unique identifier of usageRight
   \[UserId \<String\>\]: The unique identifier of user
 
-TENANTS \<IMicrosoftGraphTenantReference\[\]\>: The collection of external Azure AD tenants that the user has shared profile data with.
+TENANTS \<IMicrosoftGraphTenantReference\[\]\>: The collection of external Microsoft Entra tenants that the user has shared profile data with.
 Read-only.
-  \[TenantId \<String\>\]: The identifier of the Azure AD tenant.
+  \[TenantId \<String\>\]: The identifier of the Microsoft Entra tenant.
 Read-only.
 Key.
 

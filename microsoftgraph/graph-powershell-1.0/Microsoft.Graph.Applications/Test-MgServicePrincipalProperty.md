@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/test-mgserviceprincipalproperty
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Test-MgServicePrincipalProperty
@@ -18,7 +19,7 @@ Validate that the mail nickname is unique This API only returns the first valida
 If the properties fail multiple validations, only the first validation failure is returned.
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 To learn more about configuring naming policies, see Configure naming policy.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Test-MgBetaServicePrincipalProperty](/powershell/module/Microsoft.Graph.Beta.Applications/Test-MgBetaServicePrincipalProperty?view=graph-powershell-beta)
@@ -50,7 +51,7 @@ Validate that the mail nickname is unique This API only returns the first valida
 If the properties fail multiple validations, only the first validation failure is returned.
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 To learn more about configuring naming policies, see Configure naming policy.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -175,7 +176,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -221,20 +222,20 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`BODYPARAMETER <IPathsYq15M4ServiceprincipalsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: 
-  - `[EntityType <String>]`: 
-  - `[MailNickname <String>]`: 
-  - `[OnBehalfOfUserId <String>]`: 
+BODYPARAMETER \<IPathsYq15M4ServiceprincipalsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DisplayName \<String\>\]: 
+  \[EntityType \<String\>\]: 
+  \[MailNickname \<String\>\]: 
+  \[OnBehalfOfUserId \<String\>\]:
 
 ## RELATED LINKS
 [Test-MgBetaServicePrincipalProperty](/powershell/module/Microsoft.Graph.Beta.Applications/Test-MgBetaServicePrincipalProperty?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.applications/test-mgserviceprincipalproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/test-mgserviceprincipalproperty)
+

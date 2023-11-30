@@ -1,187 +1,148 @@
 ---
 Module Name: Microsoft.Graph.Bookings
-Module Guid: 3b7ab077-5b3b-42fe-962a-980422ff64d5
-Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings
-Help Version: 1.0.0.0
+Module Guid: 3933ee00-59a9-4541-92dc-cd99621de956
+Download Help Link: {{ Update Download Link }}
+Help Version: {{ Please enter version of help manually (X.X.X.X) format }}
 Locale: en-US
 ---
 
 # Microsoft.Graph.Bookings Module
 ## Description
-Microsoft Graph PowerShell Cmdlets
+{{ Fill in the Description }}
 
 ## Microsoft.Graph.Bookings Cmdlets
 ### [Get-MgBookingBusiness](Get-MgBookingBusiness.md)
-Get the properties and relationships of a bookingBusiness object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBookingBusinessAppointment](Get-MgBookingBusinessAppointment.md)
-Get the properties and relationships of a bookingAppointment object in the specified bookingBusiness.
-The startDateTime and endDateTime properties are always returned in UTC.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBookingBusinessAppointmentCount](Get-MgBookingBusinessAppointmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBookingBusinessCalendarView](Get-MgBookingBusinessCalendarView.md)
-The set of appointments of this business in a specified date range.
-Read-only.
-Nullable.
+{{ Fill in the Description }}
 
 ### [Get-MgBookingBusinessCalendarViewCount](Get-MgBookingBusinessCalendarViewCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBookingBusinessCount](Get-MgBookingBusinessCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBookingBusinessCustomer](Get-MgBookingBusinessCustomer.md)
-Get the properties and relationships of a bookingCustomer object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBookingBusinessCustomerCount](Get-MgBookingBusinessCustomerCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBookingBusinessCustomQuestion](Get-MgBookingBusinessCustomQuestion.md)
-Read the properties and relationships of a bookingCustomQuestion object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBookingBusinessCustomQuestionCount](Get-MgBookingBusinessCustomQuestionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBookingBusinessService](Get-MgBookingBusinessService.md)
-Get the properties and relationships of a bookingService object in the specified bookingBusiness.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBookingBusinessServiceCount](Get-MgBookingBusinessServiceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBookingBusinessStaffAvailability](Get-MgBookingBusinessStaffAvailability.md)
-Get the availability information of staff members of a Microsoft Bookings calendar.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBookingBusinessStaffMember](Get-MgBookingBusinessStaffMember.md)
-Get the properties and relationships of a bookingStaffMember in the specified bookingBusiness.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBookingBusinessStaffMemberCount](Get-MgBookingBusinessStaffMemberCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBookingCurrency](Get-MgBookingCurrency.md)
-Get the properties of a bookingCurrency object that is available to a Microsoft Bookings business.
-Use the id property, which is the currency code, to specify the currency.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBookingCurrencyCount](Get-MgBookingCurrencyCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [New-MgBookingBusiness](New-MgBookingBusiness.md)
-Create a new Microsoft Bookings business in a tenant.
-This is the first step in setting up a Bookings business where you must specify the business display name.
-You can include other information such as business address, web site address, and scheduling policy, or set that information later by updating the bookingBusiness.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBookingBusinessAppointment](New-MgBookingBusinessAppointment.md)
-Create a new bookingAppointment for the specified bookingBusiness.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBookingBusinessCalendarView](New-MgBookingBusinessCalendarView.md)
-Create new navigation property to calendarView for solutions
+{{ Fill in the Description }}
 
 ### [New-MgBookingBusinessCustomer](New-MgBookingBusinessCustomer.md)
-Create a new bookingCustomer object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBookingBusinessCustomQuestion](New-MgBookingBusinessCustomQuestion.md)
-Create a new bookingCustomQuestion object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBookingBusinessService](New-MgBookingBusinessService.md)
-Create a new bookingService for the specified bookingBusiness.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBookingBusinessStaffMember](New-MgBookingBusinessStaffMember.md)
-Create a new bookingStaffMember in the specified bookingBusiness.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBookingCurrency](New-MgBookingCurrency.md)
-Create new navigation property to bookingCurrencies for solutions
+{{ Fill in the Description }}
 
 ### [Publish-MgBookingBusiness](Publish-MgBookingBusiness.md)
-Make the scheduling page of a business available to external customers.
-Set the isPublished property to true, and the publicUrl property to the URL of the scheduling page.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBookingBusiness](Remove-MgBookingBusiness.md)
-Delete a bookingBusiness object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBookingBusinessAppointment](Remove-MgBookingBusinessAppointment.md)
-Delete a bookingAppointment in the specified bookingBusiness.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBookingBusinessCalendarView](Remove-MgBookingBusinessCalendarView.md)
-Delete navigation property calendarView for solutions
+{{ Fill in the Description }}
 
 ### [Remove-MgBookingBusinessCustomer](Remove-MgBookingBusinessCustomer.md)
-Delete the specified bookingCustomer object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBookingBusinessCustomQuestion](Remove-MgBookingBusinessCustomQuestion.md)
-Delete a bookingCustomQuestion object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBookingBusinessService](Remove-MgBookingBusinessService.md)
-Delete a bookingService object in the specified bookingBusiness.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBookingBusinessStaffMember](Remove-MgBookingBusinessStaffMember.md)
-Delete a bookingStaffMember in the specified bookingBusiness.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBookingCurrency](Remove-MgBookingCurrency.md)
-Delete navigation property bookingCurrencies for solutions
+{{ Fill in the Description }}
 
 ### [Stop-MgBookingBusinessAppointment](Stop-MgBookingBusinessAppointment.md)
-Cancel the specified bookingAppointment in the specified bookingBusiness and send a message to the involved customer and staff members.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Stop-MgBookingBusinessCalendarView](Stop-MgBookingBusinessCalendarView.md)
-Cancel the specified bookingAppointment in the specified bookingBusiness and send a message to the involved customer and staff members.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Unpublish-MgBookingBusiness](Unpublish-MgBookingBusiness.md)
-Make the scheduling page of this business not available to external customers.
-Set the isPublished property to false, and the publicUrl property to null.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBookingBusiness](Update-MgBookingBusiness.md)
-Update the properties of a bookingBusiness object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBookingBusinessAppointment](Update-MgBookingBusinessAppointment.md)
-Update the properties of a bookingAppointment object in the specified bookingBusiness.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBookingBusinessCalendarView](Update-MgBookingBusinessCalendarView.md)
-Update the navigation property calendarView in solutions
+{{ Fill in the Description }}
 
 ### [Update-MgBookingBusinessCustomer](Update-MgBookingBusinessCustomer.md)
-Update the properties of a bookingCustomer object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBookingBusinessCustomQuestion](Update-MgBookingBusinessCustomQuestion.md)
-Update the properties of a bookingCustomQuestion object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBookingBusinessService](Update-MgBookingBusinessService.md)
-Update the properties of a bookingService object in the specified bookingBusiness.
-The following are some examples you can customize for a service:- Price- Typical length of an appointment- Reminders- Any time buffer to set up before or finish up after the service- Scheduling policy parameters, such as minimum notice to book or cancel, and whether customers can select specific staff members for an appointment.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBookingBusinessStaffMember](Update-MgBookingBusinessStaffMember.md)
-Update the properties of a bookingStaffMember in the specified bookingBusiness.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBookingCurrency](Update-MgBookingCurrency.md)
-Update the navigation property bookingCurrencies in solutions
+{{ Fill in the Description }}
 

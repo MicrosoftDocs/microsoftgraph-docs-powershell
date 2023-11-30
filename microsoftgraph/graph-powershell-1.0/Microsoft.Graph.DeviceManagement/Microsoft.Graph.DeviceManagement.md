@@ -1,1025 +1,1009 @@
 ---
 Module Name: Microsoft.Graph.DeviceManagement
-Module Guid: 26380e54-5198-4f2f-90bb-03e42c0b3be6
-Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement
-Help Version: 1.0.0.0
+Module Guid: 4131557d-8635-4903-9cfd-d59ddef4a597
+Download Help Link: {{ Update Download Link }}
+Help Version: {{ Please enter version of help manually (X.X.X.X) format }}
 Locale: en-US
 ---
 
 # Microsoft.Graph.DeviceManagement Module
 ## Description
-Microsoft Graph PowerShell Cmdlets
+{{ Fill in the Description }}
 
 ## Microsoft.Graph.DeviceManagement Cmdlets
 ### [Get-MgAdminEdge](Get-MgAdminEdge.md)
-A container for Microsoft Edge resources.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgAdminEdgeInternetExplorerMode](Get-MgAdminEdgeInternetExplorerMode.md)
-A container for Internet Explorer mode resources.
+{{ Fill in the Description }}
 
 ### [Get-MgAdminEdgeInternetExplorerModeSiteList](Get-MgAdminEdgeInternetExplorerModeSiteList.md)
-Get a browserSiteList that contains browserSite and browserSharedCookie resources.
-This API is supported in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgAdminEdgeInternetExplorerModeSiteListCount](Get-MgAdminEdgeInternetExplorerModeSiteListCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgAdminEdgeInternetExplorerModeSiteListSharedCookie](Get-MgAdminEdgeInternetExplorerModeSiteListSharedCookie.md)
-Get a session cookie that can be shared between a Microsoft Edge process and an Internet Explorer process, while using Internet Explorer mode.
-This API is supported in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgAdminEdgeInternetExplorerModeSiteListSharedCookieCount](Get-MgAdminEdgeInternetExplorerModeSiteListSharedCookieCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgAdminEdgeInternetExplorerModeSiteListSite](Get-MgAdminEdgeInternetExplorerModeSiteListSite.md)
-Get a browserSite that resides on a browserSiteList.
-This API is supported in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgAdminEdgeInternetExplorerModeSiteListSiteCount](Get-MgAdminEdgeInternetExplorerModeSiteListSiteCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagement](Get-MgDeviceManagement.md)
-Read properties and relationships of the deviceManagement object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDetectedApp](Get-MgDeviceManagementDetectedApp.md)
-Read properties and relationships of the detectedApp object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDetectedAppCount](Get-MgDeviceManagementDetectedAppCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDetectedAppManagedDevice](Get-MgDeviceManagementDetectedAppManagedDevice.md)
-The devices that have the discovered application installed
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDetectedAppManagedDeviceCount](Get-MgDeviceManagementDetectedAppManagedDeviceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCategory](Get-MgDeviceManagementDeviceCategory.md)
-Read properties and relationships of the deviceCategory object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCategoryCount](Get-MgDeviceManagementDeviceCategoryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicy](Get-MgDeviceManagementDeviceCompliancePolicy.md)
-Read properties and relationships of the windows81CompliancePolicy object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyAssignment](Get-MgDeviceManagementDeviceCompliancePolicyAssignment.md)
-Read properties and relationships of the deviceCompliancePolicyAssignment object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyAssignmentCount](Get-MgDeviceManagementDeviceCompliancePolicyAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyCount](Get-MgDeviceManagementDeviceCompliancePolicyCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary](Get-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary.md)
-Compliance Setting State Device Summary
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummaryCount](Get-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummaryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary](Get-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary.md)
-Read properties and relationships of the deviceCompliancePolicyDeviceStateSummary object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatus](Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatus.md)
-Read properties and relationships of the deviceComplianceDeviceStatus object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatusCount](Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatusCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview](Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview.md)
-Read properties and relationships of the deviceComplianceDeviceOverview object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule](Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule.md)
-Read properties and relationships of the deviceComplianceScheduledActionForRule object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleCount](Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration.md)
-Read properties and relationships of the deviceComplianceActionItem object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfigurationCount](Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfigurationCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummary](Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummary.md)
-Read properties and relationships of the deviceCompliancePolicySettingStateSummary object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryCount](Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState](Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState.md)
-Read properties and relationships of the deviceComplianceSettingState object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingStateCount](Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyUserStatus](Get-MgDeviceManagementDeviceCompliancePolicyUserStatus.md)
-Read properties and relationships of the deviceComplianceUserStatus object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyUserStatusCount](Get-MgDeviceManagementDeviceCompliancePolicyUserStatusCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyUserStatusOverview](Get-MgDeviceManagementDeviceCompliancePolicyUserStatusOverview.md)
-Read properties and relationships of the deviceComplianceUserOverview object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceConfiguration](Get-MgDeviceManagementDeviceConfiguration.md)
-Read properties and relationships of the iosGeneralDeviceConfiguration object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceConfigurationAssignment](Get-MgDeviceManagementDeviceConfigurationAssignment.md)
-Read properties and relationships of the deviceConfigurationAssignment object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceConfigurationAssignmentCount](Get-MgDeviceManagementDeviceConfigurationAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceConfigurationCount](Get-MgDeviceManagementDeviceConfigurationCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary](Get-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary.md)
-Read properties and relationships of the settingStateDeviceSummary object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummaryCount](Get-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummaryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceConfigurationDeviceStateSummary](Get-MgDeviceManagementDeviceConfigurationDeviceStateSummary.md)
-Read properties and relationships of the deviceConfigurationDeviceStateSummary object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceConfigurationDeviceStatus](Get-MgDeviceManagementDeviceConfigurationDeviceStatus.md)
-Read properties and relationships of the deviceConfigurationDeviceStatus object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceConfigurationDeviceStatusCount](Get-MgDeviceManagementDeviceConfigurationDeviceStatusCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceConfigurationDeviceStatusOverview](Get-MgDeviceManagementDeviceConfigurationDeviceStatusOverview.md)
-Read properties and relationships of the deviceConfigurationDeviceOverview object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceConfigurationUserStatus](Get-MgDeviceManagementDeviceConfigurationUserStatus.md)
-Read properties and relationships of the deviceConfigurationUserStatus object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceConfigurationUserStatusCount](Get-MgDeviceManagementDeviceConfigurationUserStatusCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceConfigurationUserStatusOverview](Get-MgDeviceManagementDeviceConfigurationUserStatusOverview.md)
-Read properties and relationships of the deviceConfigurationUserOverview object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementManagedDevice](Get-MgDeviceManagementManagedDevice.md)
-Read properties and relationships of the managedDevice object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementManagedDeviceCategory](Get-MgDeviceManagementManagedDeviceCategory.md)
-Read properties and relationships of the deviceCategory object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementManagedDeviceCompliancePolicyState](Get-MgDeviceManagementManagedDeviceCompliancePolicyState.md)
-Device compliance policy states for this device.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementManagedDeviceCompliancePolicyStateCount](Get-MgDeviceManagementManagedDeviceCompliancePolicyStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementManagedDeviceConfigurationState](Get-MgDeviceManagementManagedDeviceConfigurationState.md)
-Device configuration states for this device.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementManagedDeviceConfigurationStateCount](Get-MgDeviceManagementManagedDeviceConfigurationStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementManagedDeviceCount](Get-MgDeviceManagementManagedDeviceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementManagedDeviceLogCollectionRequest](Get-MgDeviceManagementManagedDeviceLogCollectionRequest.md)
-List of log collection requests
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementManagedDeviceLogCollectionRequestCount](Get-MgDeviceManagementManagedDeviceLogCollectionRequestCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementManagedDeviceOverview](Get-MgDeviceManagementManagedDeviceOverview.md)
-Read properties and relationships of the managedDeviceOverview object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementManagedDeviceUser](Get-MgDeviceManagementManagedDeviceUser.md)
-List properties and relationships of the user objects.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementManagedDeviceWindowsProtectionState](Get-MgDeviceManagementManagedDeviceWindowsProtectionState.md)
-Read properties and relationships of the windowsProtectionState object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState](Get-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState.md)
-Read properties and relationships of the windowsDeviceMalwareState object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareStateCount](Get-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementMobileAppTroubleshootingEvent](Get-MgDeviceManagementMobileAppTroubleshootingEvent.md)
-Read properties and relationships of the mobileAppTroubleshootingEvent object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Read properties and relationships of the appLogCollectionRequest object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequestCount](Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequestCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementMobileAppTroubleshootingEventCount](Get-MgDeviceManagementMobileAppTroubleshootingEventCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementNotificationMessageTemplate](Get-MgDeviceManagementNotificationMessageTemplate.md)
-Read properties and relationships of the notificationMessageTemplate object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementNotificationMessageTemplateCount](Get-MgDeviceManagementNotificationMessageTemplateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage](Get-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage.md)
-Read properties and relationships of the localizedNotificationMessage object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessageCount](Get-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessageCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementSoftwareUpdateStatusSummary](Get-MgDeviceManagementSoftwareUpdateStatusSummary.md)
-Read properties and relationships of the softwareUpdateStatusSummary object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementTroubleshootingEvent](Get-MgDeviceManagementTroubleshootingEvent.md)
-The list of troubleshooting events for the tenant.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementTroubleshootingEventCount](Get-MgDeviceManagementTroubleshootingEventCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance](Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance.md)
-User experience analytics appHealth Application Performance
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail](Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail.md)
-User experience analytics appHealth Application Performance by App Version details
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetailCount](Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetailCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId](Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId.md)
-User experience analytics appHealth Application Performance by App Version Device Id
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceIdCount](Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceIdCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion](Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion.md)
-User experience analytics appHealth Application Performance by OS Version
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversionCount](Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceCount](Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance](Get-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance.md)
-User experience analytics appHealth Model Performance
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformanceCount](Get-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformanceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance](Get-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance.md)
-User experience analytics appHealth Device Performance
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceCount](Get-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail](Get-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail.md)
-User experience analytics device performance details
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetailCount](Get-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetailCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance](Get-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance.md)
-User experience analytics appHealth OS version Performance
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformanceCount](Get-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformanceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthOverview](Get-MgDeviceManagementUserExperienceAnalyticAppHealthOverview.md)
-User experience analytics appHealth overview
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue](Get-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue.md)
-The metric values for the user experience analytics category.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValueCount](Get-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValueCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticBaseline](Get-MgDeviceManagementUserExperienceAnalyticBaseline.md)
-User experience analytics baselines
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticBaselineAppHealthMetric](Get-MgDeviceManagementUserExperienceAnalyticBaselineAppHealthMetric.md)
-The scores and insights for the application health metrics.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetric](Get-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetric.md)
-The scores and insights for the battery health metrics.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetric](Get-MgDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetric.md)
-The scores and insights for the best practices metrics.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticBaselineCount](Get-MgDeviceManagementUserExperienceAnalyticBaselineCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticBaselineDeviceBootPerformanceMetric](Get-MgDeviceManagementUserExperienceAnalyticBaselineDeviceBootPerformanceMetric.md)
-The scores and insights for the device boot performance metrics.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticBaselineRebootAnalyticMetric](Get-MgDeviceManagementUserExperienceAnalyticBaselineRebootAnalyticMetric.md)
-The scores and insights for the reboot analytics metrics.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticBaselineResourcePerformanceMetric](Get-MgDeviceManagementUserExperienceAnalyticBaselineResourcePerformanceMetric.md)
-The scores and insights for the resource performance metrics.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetric](Get-MgDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetric.md)
-The scores and insights for the work from anywhere metrics.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticCategory](Get-MgDeviceManagementUserExperienceAnalyticCategory.md)
-User experience analytics categories
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticCategoryCount](Get-MgDeviceManagementUserExperienceAnalyticCategoryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue](Get-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue.md)
-The metric values for the user experience analytics category.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticCategoryMetricValueCount](Get-MgDeviceManagementUserExperienceAnalyticCategoryMetricValueCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticDevicePerformance](Get-MgDeviceManagementUserExperienceAnalyticDevicePerformance.md)
-User experience analytics device performance
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticDevicePerformanceCount](Get-MgDeviceManagementUserExperienceAnalyticDevicePerformanceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticDeviceScore](Get-MgDeviceManagementUserExperienceAnalyticDeviceScore.md)
-User experience analytics device scores
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticDeviceScoreCount](Get-MgDeviceManagementUserExperienceAnalyticDeviceScoreCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory](Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory.md)
-User experience analytics device Startup History
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistoryCount](Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistoryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess](Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess.md)
-User experience analytics device Startup Processes
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessCount](Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance](Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance.md)
-User experience analytics device Startup Process Performance
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformanceCount](Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformanceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticMetricHistory](Get-MgDeviceManagementUserExperienceAnalyticMetricHistory.md)
-User experience analytics metric history
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticMetricHistoryCount](Get-MgDeviceManagementUserExperienceAnalyticMetricHistoryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticModelScore](Get-MgDeviceManagementUserExperienceAnalyticModelScore.md)
-User experience analytics model scores
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticModelScoreCount](Get-MgDeviceManagementUserExperienceAnalyticModelScoreCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticOverview](Get-MgDeviceManagementUserExperienceAnalyticOverview.md)
-User experience analytics overview
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticScoreHistory](Get-MgDeviceManagementUserExperienceAnalyticScoreHistory.md)
-User experience analytics device Startup Score History
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticScoreHistoryCount](Get-MgDeviceManagementUserExperienceAnalyticScoreHistoryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric](Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric.md)
-User experience analytics work from anywhere hardware readiness metrics.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric](Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric.md)
-User experience analytics work from anywhere metrics.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricCount](Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice](Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice.md)
-The work from anywhere metric devices.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDeviceCount](Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDeviceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance](Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance.md)
-The user experience analytics work from anywhere model performance
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformanceCount](Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformanceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementWindowsInformationProtectionAppLearningSummary](Get-MgDeviceManagementWindowsInformationProtectionAppLearningSummary.md)
-Read properties and relationships of the windowsInformationProtectionAppLearningSummary object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementWindowsInformationProtectionAppLearningSummaryCount](Get-MgDeviceManagementWindowsInformationProtectionAppLearningSummaryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary](Get-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary.md)
-Read properties and relationships of the windowsInformationProtectionNetworkLearningSummary object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummaryCount](Get-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummaryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementWindowsMalwareInformation](Get-MgDeviceManagementWindowsMalwareInformation.md)
-Read properties and relationships of the windowsMalwareInformation object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementWindowsMalwareInformationCount](Get-MgDeviceManagementWindowsMalwareInformationCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementWindowsMalwareInformationDeviceMalwareState](Get-MgDeviceManagementWindowsMalwareInformationDeviceMalwareState.md)
-Read properties and relationships of the malwareStateForWindowsDevice object.
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementWindowsMalwareInformationDeviceMalwareStateCount](Get-MgDeviceManagementWindowsMalwareInformationDeviceMalwareStateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [New-MgAdminEdgeInternetExplorerModeSiteList](New-MgAdminEdgeInternetExplorerModeSiteList.md)
-Create a new browserSiteList object to support Internet Explorer mode.
-This API is supported in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgAdminEdgeInternetExplorerModeSiteListSharedCookie](New-MgAdminEdgeInternetExplorerModeSiteListSharedCookie.md)
-Create a new browserSharedCookie object in a browserSiteList.
-This API is supported in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgAdminEdgeInternetExplorerModeSiteListSite](New-MgAdminEdgeInternetExplorerModeSiteListSite.md)
-Create a new browserSite object in a browserSiteList.
-This API is supported in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementDetectedApp](New-MgDeviceManagementDetectedApp.md)
-Create a new detectedApp object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementDeviceCategory](New-MgDeviceManagementDeviceCategory.md)
-Create a new deviceCategory object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementDeviceCompliancePolicy](New-MgDeviceManagementDeviceCompliancePolicy.md)
-Create a new iosCompliancePolicy object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementDeviceCompliancePolicyAssignment](New-MgDeviceManagementDeviceCompliancePolicyAssignment.md)
-Create a new deviceCompliancePolicyAssignment object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary](New-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary.md)
-Create new navigation property to deviceSettingStateSummaries for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementDeviceCompliancePolicyDeviceStatus](New-MgDeviceManagementDeviceCompliancePolicyDeviceStatus.md)
-Create a new deviceComplianceDeviceStatus object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule](New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule.md)
-Create a new deviceComplianceScheduledActionForRule object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration.md)
-Create a new deviceComplianceActionItem object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementDeviceCompliancePolicySettingStateSummary](New-MgDeviceManagementDeviceCompliancePolicySettingStateSummary.md)
-Create a new deviceCompliancePolicySettingStateSummary object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState](New-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState.md)
-Create a new deviceComplianceSettingState object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementDeviceCompliancePolicyUserStatus](New-MgDeviceManagementDeviceCompliancePolicyUserStatus.md)
-Create a new deviceComplianceUserStatus object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementDeviceConfiguration](New-MgDeviceManagementDeviceConfiguration.md)
-Create a new macOSCustomConfiguration object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementDeviceConfigurationAssignment](New-MgDeviceManagementDeviceConfigurationAssignment.md)
-Create a new deviceConfigurationAssignment object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary](New-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary.md)
-Create a new settingStateDeviceSummary object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementDeviceConfigurationDeviceStatus](New-MgDeviceManagementDeviceConfigurationDeviceStatus.md)
-Create a new deviceConfigurationDeviceStatus object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementDeviceConfigurationUserStatus](New-MgDeviceManagementDeviceConfigurationUserStatus.md)
-Create a new deviceConfigurationUserStatus object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementManagedDevice](New-MgDeviceManagementManagedDevice.md)
-Create a new managedDevice object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementManagedDeviceCompliancePolicyState](New-MgDeviceManagementManagedDeviceCompliancePolicyState.md)
-Create new navigation property to deviceCompliancePolicyStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementManagedDeviceConfigurationState](New-MgDeviceManagementManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState](New-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState.md)
-Create a new windowsDeviceMalwareState object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementMobileAppTroubleshootingEvent](New-MgDeviceManagementMobileAppTroubleshootingEvent.md)
-Create a new mobileAppTroubleshootingEvent object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Create a new appLogCollectionRequest object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementNotificationMessageTemplate](New-MgDeviceManagementNotificationMessageTemplate.md)
-Create a new notificationMessageTemplate object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage](New-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage.md)
-Create a new localizedNotificationMessage object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementTroubleshootingEvent](New-MgDeviceManagementTroubleshootingEvent.md)
-Create new navigation property to troubleshootingEvents for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance](New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance.md)
-Create new navigation property to userExperienceAnalyticsAppHealthApplicationPerformance for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail](New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail.md)
-Create new navigation property to userExperienceAnalyticsAppHealthApplicationPerformanceByAppVersionDetails for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId](New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId.md)
-Create new navigation property to userExperienceAnalyticsAppHealthApplicationPerformanceByAppVersionDeviceId for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion](New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion.md)
-Create new navigation property to userExperienceAnalyticsAppHealthApplicationPerformanceByOSVersion for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance](New-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance.md)
-Create new navigation property to userExperienceAnalyticsAppHealthDeviceModelPerformance for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance](New-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance.md)
-Create new navigation property to userExperienceAnalyticsAppHealthDevicePerformance for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail](New-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail.md)
-Create new navigation property to userExperienceAnalyticsAppHealthDevicePerformanceDetails for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance](New-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance.md)
-Create new navigation property to userExperienceAnalyticsAppHealthOSVersionPerformance for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue](New-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue.md)
-Create new navigation property to metricValues for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementUserExperienceAnalyticBaseline](New-MgDeviceManagementUserExperienceAnalyticBaseline.md)
-Create new navigation property to userExperienceAnalyticsBaselines for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementUserExperienceAnalyticCategory](New-MgDeviceManagementUserExperienceAnalyticCategory.md)
-Create new navigation property to userExperienceAnalyticsCategories for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue](New-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue.md)
-Create new navigation property to metricValues for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementUserExperienceAnalyticDevicePerformance](New-MgDeviceManagementUserExperienceAnalyticDevicePerformance.md)
-Create new navigation property to userExperienceAnalyticsDevicePerformance for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementUserExperienceAnalyticDeviceScore](New-MgDeviceManagementUserExperienceAnalyticDeviceScore.md)
-Create new navigation property to userExperienceAnalyticsDeviceScores for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory](New-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory.md)
-Create new navigation property to userExperienceAnalyticsDeviceStartupHistory for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess](New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess.md)
-Create new navigation property to userExperienceAnalyticsDeviceStartupProcesses for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance](New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance.md)
-Create new navigation property to userExperienceAnalyticsDeviceStartupProcessPerformance for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementUserExperienceAnalyticMetricHistory](New-MgDeviceManagementUserExperienceAnalyticMetricHistory.md)
-Create new navigation property to userExperienceAnalyticsMetricHistory for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementUserExperienceAnalyticModelScore](New-MgDeviceManagementUserExperienceAnalyticModelScore.md)
-Create new navigation property to userExperienceAnalyticsModelScores for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementUserExperienceAnalyticScoreHistory](New-MgDeviceManagementUserExperienceAnalyticScoreHistory.md)
-Create new navigation property to userExperienceAnalyticsScoreHistory for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric](New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric.md)
-Create new navigation property to userExperienceAnalyticsWorkFromAnywhereMetrics for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice](New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice.md)
-Create new navigation property to metricDevices for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance](New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance.md)
-Create new navigation property to userExperienceAnalyticsWorkFromAnywhereModelPerformance for deviceManagement
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementWindowsInformationProtectionAppLearningSummary](New-MgDeviceManagementWindowsInformationProtectionAppLearningSummary.md)
-Create a new windowsInformationProtectionAppLearningSummary object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary](New-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary.md)
-Create a new windowsInformationProtectionNetworkLearningSummary object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementWindowsMalwareInformation](New-MgDeviceManagementWindowsMalwareInformation.md)
-Create a new windowsMalwareInformation object.
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementWindowsMalwareInformationDeviceMalwareState](New-MgDeviceManagementWindowsMalwareInformationDeviceMalwareState.md)
-Create a new malwareStateForWindowsDevice object.
+{{ Fill in the Description }}
 
 ### [Remove-MgAdminEdge](Remove-MgAdminEdge.md)
-Delete navigation property edge for admin
+{{ Fill in the Description }}
 
 ### [Remove-MgAdminEdgeInternetExplorerMode](Remove-MgAdminEdgeInternetExplorerMode.md)
-Delete navigation property internetExplorerMode for admin
+{{ Fill in the Description }}
 
 ### [Remove-MgAdminEdgeInternetExplorerModeSiteList](Remove-MgAdminEdgeInternetExplorerModeSiteList.md)
-Delete a browserSiteList object.
-This API is supported in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgAdminEdgeInternetExplorerModeSiteListSharedCookie](Remove-MgAdminEdgeInternetExplorerModeSiteListSharedCookie.md)
-Delete a browserSharedCookie from a browserSiteList.
-This API is supported in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgAdminEdgeInternetExplorerModeSiteListSite](Remove-MgAdminEdgeInternetExplorerModeSiteListSite.md)
-Delete a browserSite from a browserSiteList.
-This API is supported in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDetectedApp](Remove-MgDeviceManagementDetectedApp.md)
-Deletes a detectedApp.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceCategory](Remove-MgDeviceManagementDeviceCategory.md)
-Deletes a deviceCategory.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicy](Remove-MgDeviceManagementDeviceCompliancePolicy.md)
-Deletes a macOSCompliancePolicy.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicyAssignment](Remove-MgDeviceManagementDeviceCompliancePolicyAssignment.md)
-Deletes a deviceCompliancePolicyAssignment.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary](Remove-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary.md)
-Delete navigation property deviceSettingStateSummaries for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary](Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary.md)
-Delete navigation property deviceCompliancePolicyDeviceStateSummary for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStatus](Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStatus.md)
-Deletes a deviceComplianceDeviceStatus.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview](Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview.md)
-Delete navigation property deviceStatusOverview for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule](Remove-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule.md)
-Deletes a deviceComplianceScheduledActionForRule.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](Remove-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration.md)
-Deletes a deviceComplianceActionItem.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicySettingStateSummary](Remove-MgDeviceManagementDeviceCompliancePolicySettingStateSummary.md)
-Deletes a deviceCompliancePolicySettingStateSummary.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState](Remove-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState.md)
-Deletes a deviceComplianceSettingState.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicyUserStatus](Remove-MgDeviceManagementDeviceCompliancePolicyUserStatus.md)
-Deletes a deviceComplianceUserStatus.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicyUserStatusOverview](Remove-MgDeviceManagementDeviceCompliancePolicyUserStatusOverview.md)
-Delete navigation property userStatusOverview for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceConfiguration](Remove-MgDeviceManagementDeviceConfiguration.md)
-Deletes a windows10EndpointProtectionConfiguration.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceConfigurationAssignment](Remove-MgDeviceManagementDeviceConfigurationAssignment.md)
-Deletes a deviceConfigurationAssignment.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary](Remove-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary.md)
-Deletes a settingStateDeviceSummary.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceConfigurationDeviceStateSummary](Remove-MgDeviceManagementDeviceConfigurationDeviceStateSummary.md)
-Delete navigation property deviceConfigurationDeviceStateSummaries for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceConfigurationDeviceStatus](Remove-MgDeviceManagementDeviceConfigurationDeviceStatus.md)
-Deletes a deviceConfigurationDeviceStatus.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceConfigurationDeviceStatusOverview](Remove-MgDeviceManagementDeviceConfigurationDeviceStatusOverview.md)
-Delete navigation property deviceStatusOverview for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceConfigurationUserStatus](Remove-MgDeviceManagementDeviceConfigurationUserStatus.md)
-Deletes a deviceConfigurationUserStatus.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceConfigurationUserStatusOverview](Remove-MgDeviceManagementDeviceConfigurationUserStatusOverview.md)
-Delete navigation property userStatusOverview for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementManagedDevice](Remove-MgDeviceManagementManagedDevice.md)
-Deletes a managedDevice.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementManagedDeviceCategory](Remove-MgDeviceManagementManagedDeviceCategory.md)
-Delete navigation property deviceCategory for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementManagedDeviceCompliancePolicyState](Remove-MgDeviceManagementManagedDeviceCompliancePolicyState.md)
-Delete navigation property deviceCompliancePolicyStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementManagedDeviceConfigurationState](Remove-MgDeviceManagementManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementManagedDeviceLogCollectionRequest](Remove-MgDeviceManagementManagedDeviceLogCollectionRequest.md)
-Delete navigation property logCollectionRequests for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementManagedDeviceWindowsProtectionState](Remove-MgDeviceManagementManagedDeviceWindowsProtectionState.md)
-Delete navigation property windowsProtectionState for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState](Remove-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState.md)
-Deletes a windowsDeviceMalwareState.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementMobileAppTroubleshootingEvent](Remove-MgDeviceManagementMobileAppTroubleshootingEvent.md)
-Deletes a mobileAppTroubleshootingEvent.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Deletes a appLogCollectionRequest.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementNotificationMessageTemplate](Remove-MgDeviceManagementNotificationMessageTemplate.md)
-Deletes a notificationMessageTemplate.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage](Remove-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage.md)
-Deletes a localizedNotificationMessage.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementTroubleshootingEvent](Remove-MgDeviceManagementTroubleshootingEvent.md)
-Delete navigation property troubleshootingEvents for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance](Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance.md)
-Delete navigation property userExperienceAnalyticsAppHealthApplicationPerformance for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail](Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail.md)
-Delete navigation property userExperienceAnalyticsAppHealthApplicationPerformanceByAppVersionDetails for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId](Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId.md)
-Delete navigation property userExperienceAnalyticsAppHealthApplicationPerformanceByAppVersionDeviceId for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion](Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion.md)
-Delete navigation property userExperienceAnalyticsAppHealthApplicationPerformanceByOSVersion for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance](Remove-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance.md)
-Delete navigation property userExperienceAnalyticsAppHealthDeviceModelPerformance for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance](Remove-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance.md)
-Delete navigation property userExperienceAnalyticsAppHealthDevicePerformance for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail](Remove-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail.md)
-Delete navigation property userExperienceAnalyticsAppHealthDevicePerformanceDetails for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance](Remove-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance.md)
-Delete navigation property userExperienceAnalyticsAppHealthOSVersionPerformance for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticAppHealthOverview](Remove-MgDeviceManagementUserExperienceAnalyticAppHealthOverview.md)
-Delete navigation property userExperienceAnalyticsAppHealthOverview for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue](Remove-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue.md)
-Delete navigation property metricValues for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticBaseline](Remove-MgDeviceManagementUserExperienceAnalyticBaseline.md)
-Delete navigation property userExperienceAnalyticsBaselines for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticCategory](Remove-MgDeviceManagementUserExperienceAnalyticCategory.md)
-Delete navigation property userExperienceAnalyticsCategories for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue](Remove-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue.md)
-Delete navigation property metricValues for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticDevicePerformance](Remove-MgDeviceManagementUserExperienceAnalyticDevicePerformance.md)
-Delete navigation property userExperienceAnalyticsDevicePerformance for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticDeviceScore](Remove-MgDeviceManagementUserExperienceAnalyticDeviceScore.md)
-Delete navigation property userExperienceAnalyticsDeviceScores for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory](Remove-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory.md)
-Delete navigation property userExperienceAnalyticsDeviceStartupHistory for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess](Remove-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess.md)
-Delete navigation property userExperienceAnalyticsDeviceStartupProcesses for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance](Remove-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance.md)
-Delete navigation property userExperienceAnalyticsDeviceStartupProcessPerformance for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticMetricHistory](Remove-MgDeviceManagementUserExperienceAnalyticMetricHistory.md)
-Delete navigation property userExperienceAnalyticsMetricHistory for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticModelScore](Remove-MgDeviceManagementUserExperienceAnalyticModelScore.md)
-Delete navigation property userExperienceAnalyticsModelScores for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticOverview](Remove-MgDeviceManagementUserExperienceAnalyticOverview.md)
-Delete navigation property userExperienceAnalyticsOverview for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticScoreHistory](Remove-MgDeviceManagementUserExperienceAnalyticScoreHistory.md)
-Delete navigation property userExperienceAnalyticsScoreHistory for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric](Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric.md)
-Delete navigation property userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric](Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric.md)
-Delete navigation property userExperienceAnalyticsWorkFromAnywhereMetrics for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice](Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice.md)
-Delete navigation property metricDevices for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance](Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance.md)
-Delete navigation property userExperienceAnalyticsWorkFromAnywhereModelPerformance for deviceManagement
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementWindowsInformationProtectionAppLearningSummary](Remove-MgDeviceManagementWindowsInformationProtectionAppLearningSummary.md)
-Deletes a windowsInformationProtectionAppLearningSummary.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary](Remove-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary.md)
-Deletes a windowsInformationProtectionNetworkLearningSummary.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementWindowsMalwareInformation](Remove-MgDeviceManagementWindowsMalwareInformation.md)
-Deletes a windowsMalwareInformation.
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementWindowsMalwareInformationDeviceMalwareState](Remove-MgDeviceManagementWindowsMalwareInformationDeviceMalwareState.md)
-Deletes a malwareStateForWindowsDevice.
+{{ Fill in the Description }}
 
 ### [Update-MgAdminEdge](Update-MgAdminEdge.md)
-Update the navigation property edge in admin
+{{ Fill in the Description }}
 
 ### [Update-MgAdminEdgeInternetExplorerMode](Update-MgAdminEdgeInternetExplorerMode.md)
-Update the navigation property internetExplorerMode in admin
+{{ Fill in the Description }}
 
 ### [Update-MgAdminEdgeInternetExplorerModeSiteList](Update-MgAdminEdgeInternetExplorerModeSiteList.md)
-Update the properties of a browserSiteList object.
-This API is supported in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgAdminEdgeInternetExplorerModeSiteListSharedCookie](Update-MgAdminEdgeInternetExplorerModeSiteListSharedCookie.md)
-Update the properties of a browserSharedCookie object.
-This API is supported in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgAdminEdgeInternetExplorerModeSiteListSite](Update-MgAdminEdgeInternetExplorerModeSiteListSite.md)
-Update the properties of a browserSite object.
-This API is supported in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagement](Update-MgDeviceManagement.md)
-Update the properties of a deviceManagement object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDetectedApp](Update-MgDeviceManagementDetectedApp.md)
-Update the properties of a detectedApp object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceCategory](Update-MgDeviceManagementDeviceCategory.md)
-Update the properties of a deviceCategory object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicy](Update-MgDeviceManagementDeviceCompliancePolicy.md)
-Update the properties of a androidWorkProfileCompliancePolicy object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicyAssignment](Update-MgDeviceManagementDeviceCompliancePolicyAssignment.md)
-Update the properties of a deviceCompliancePolicyAssignment object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary](Update-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary.md)
-Update the navigation property deviceSettingStateSummaries in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary](Update-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary.md)
-Update the properties of a deviceCompliancePolicyDeviceStateSummary object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicyDeviceStatus](Update-MgDeviceManagementDeviceCompliancePolicyDeviceStatus.md)
-Update the properties of a deviceComplianceDeviceStatus object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview](Update-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview.md)
-Update the properties of a deviceComplianceDeviceOverview object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule](Update-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule.md)
-Update the properties of a deviceComplianceScheduledActionForRule object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](Update-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration.md)
-Update the properties of a deviceComplianceActionItem object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummary](Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummary.md)
-Update the properties of a deviceCompliancePolicySettingStateSummary object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState](Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState.md)
-Update the properties of a deviceComplianceSettingState object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicyUserStatus](Update-MgDeviceManagementDeviceCompliancePolicyUserStatus.md)
-Update the properties of a deviceComplianceUserStatus object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicyUserStatusOverview](Update-MgDeviceManagementDeviceCompliancePolicyUserStatusOverview.md)
-Update the properties of a deviceComplianceUserOverview object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceConfiguration](Update-MgDeviceManagementDeviceConfiguration.md)
-Update the properties of a androidCustomConfiguration object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceConfigurationAssignment](Update-MgDeviceManagementDeviceConfigurationAssignment.md)
-Update the properties of a deviceConfigurationAssignment object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary](Update-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary.md)
-Update the properties of a settingStateDeviceSummary object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceConfigurationDeviceStateSummary](Update-MgDeviceManagementDeviceConfigurationDeviceStateSummary.md)
-Update the properties of a deviceConfigurationDeviceStateSummary object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceConfigurationDeviceStatus](Update-MgDeviceManagementDeviceConfigurationDeviceStatus.md)
-Update the properties of a deviceConfigurationDeviceStatus object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceConfigurationDeviceStatusOverview](Update-MgDeviceManagementDeviceConfigurationDeviceStatusOverview.md)
-Update the properties of a deviceConfigurationDeviceOverview object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceConfigurationUserStatus](Update-MgDeviceManagementDeviceConfigurationUserStatus.md)
-Update the properties of a deviceConfigurationUserStatus object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceConfigurationUserStatusOverview](Update-MgDeviceManagementDeviceConfigurationUserStatusOverview.md)
-Update the properties of a deviceConfigurationUserOverview object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementManagedDevice](Update-MgDeviceManagementManagedDevice.md)
-Update the properties of a managedDevice object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementManagedDeviceCategory](Update-MgDeviceManagementManagedDeviceCategory.md)
-Update the properties of a deviceCategory object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementManagedDeviceCompliancePolicyState](Update-MgDeviceManagementManagedDeviceCompliancePolicyState.md)
-Update the navigation property deviceCompliancePolicyStates in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementManagedDeviceConfigurationState](Update-MgDeviceManagementManagedDeviceConfigurationState.md)
-Update the navigation property deviceConfigurationStates in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementManagedDeviceLogCollectionRequest](Update-MgDeviceManagementManagedDeviceLogCollectionRequest.md)
-Update the navigation property logCollectionRequests in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementManagedDeviceWindowsProtectionState](Update-MgDeviceManagementManagedDeviceWindowsProtectionState.md)
-Update the properties of a windowsProtectionState object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState](Update-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState.md)
-Update the properties of a windowsDeviceMalwareState object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementMobileAppTroubleshootingEvent](Update-MgDeviceManagementMobileAppTroubleshootingEvent.md)
-Update the properties of a mobileAppTroubleshootingEvent object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](Update-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Update the properties of a appLogCollectionRequest object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementNotificationMessageTemplate](Update-MgDeviceManagementNotificationMessageTemplate.md)
-Update the properties of a notificationMessageTemplate object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage](Update-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage.md)
-Update the properties of a localizedNotificationMessage object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementTroubleshootingEvent](Update-MgDeviceManagementTroubleshootingEvent.md)
-Update the navigation property troubleshootingEvents in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance](Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance.md)
-Update the navigation property userExperienceAnalyticsAppHealthApplicationPerformance in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail](Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail.md)
-Update the navigation property userExperienceAnalyticsAppHealthApplicationPerformanceByAppVersionDetails in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId](Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId.md)
-Update the navigation property userExperienceAnalyticsAppHealthApplicationPerformanceByAppVersionDeviceId in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion](Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion.md)
-Update the navigation property userExperienceAnalyticsAppHealthApplicationPerformanceByOSVersion in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance](Update-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance.md)
-Update the navigation property userExperienceAnalyticsAppHealthDeviceModelPerformance in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance](Update-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance.md)
-Update the navigation property userExperienceAnalyticsAppHealthDevicePerformance in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail](Update-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail.md)
-Update the navigation property userExperienceAnalyticsAppHealthDevicePerformanceDetails in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance](Update-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance.md)
-Update the navigation property userExperienceAnalyticsAppHealthOSVersionPerformance in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticAppHealthOverview](Update-MgDeviceManagementUserExperienceAnalyticAppHealthOverview.md)
-Update the navigation property userExperienceAnalyticsAppHealthOverview in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue](Update-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue.md)
-Update the navigation property metricValues in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticBaseline](Update-MgDeviceManagementUserExperienceAnalyticBaseline.md)
-Update the navigation property userExperienceAnalyticsBaselines in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticCategory](Update-MgDeviceManagementUserExperienceAnalyticCategory.md)
-Update the navigation property userExperienceAnalyticsCategories in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue](Update-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue.md)
-Update the navigation property metricValues in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticDevicePerformance](Update-MgDeviceManagementUserExperienceAnalyticDevicePerformance.md)
-Update the navigation property userExperienceAnalyticsDevicePerformance in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticDeviceScore](Update-MgDeviceManagementUserExperienceAnalyticDeviceScore.md)
-Update the navigation property userExperienceAnalyticsDeviceScores in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory](Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory.md)
-Update the navigation property userExperienceAnalyticsDeviceStartupHistory in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess](Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess.md)
-Update the navigation property userExperienceAnalyticsDeviceStartupProcesses in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance](Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance.md)
-Update the navigation property userExperienceAnalyticsDeviceStartupProcessPerformance in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticMetricHistory](Update-MgDeviceManagementUserExperienceAnalyticMetricHistory.md)
-Update the navigation property userExperienceAnalyticsMetricHistory in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticModelScore](Update-MgDeviceManagementUserExperienceAnalyticModelScore.md)
-Update the navigation property userExperienceAnalyticsModelScores in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticOverview](Update-MgDeviceManagementUserExperienceAnalyticOverview.md)
-Update the navigation property userExperienceAnalyticsOverview in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticScoreHistory](Update-MgDeviceManagementUserExperienceAnalyticScoreHistory.md)
-Update the navigation property userExperienceAnalyticsScoreHistory in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric](Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric.md)
-Update the navigation property userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric](Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric.md)
-Update the navigation property userExperienceAnalyticsWorkFromAnywhereMetrics in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice](Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice.md)
-Update the navigation property metricDevices in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance](Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance.md)
-Update the navigation property userExperienceAnalyticsWorkFromAnywhereModelPerformance in deviceManagement
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementWindowsInformationProtectionAppLearningSummary](Update-MgDeviceManagementWindowsInformationProtectionAppLearningSummary.md)
-Update the properties of a windowsInformationProtectionAppLearningSummary object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary](Update-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary.md)
-Update the properties of a windowsInformationProtectionNetworkLearningSummary object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementWindowsMalwareInformation](Update-MgDeviceManagementWindowsMalwareInformation.md)
-Update the properties of a windowsMalwareInformation object.
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementWindowsMalwareInformationDeviceMalwareState](Update-MgDeviceManagementWindowsMalwareInformationDeviceMalwareState.md)
-Update the properties of a malwareStateForWindowsDevice object.
+{{ Fill in the Description }}
 
