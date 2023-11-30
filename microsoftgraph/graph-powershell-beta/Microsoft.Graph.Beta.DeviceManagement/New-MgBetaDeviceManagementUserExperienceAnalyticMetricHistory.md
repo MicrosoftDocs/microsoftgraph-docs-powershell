@@ -170,21 +170,26 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsMetricHistory
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsMetricHistory>`: The user experience analytics metric history.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[DeviceId <String>]`: The Intune device id of the device.
-  - `[MetricDateTime <DateTime?>]`: The metric date time. The value cannot be modified and is automatically populated when the metric is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Returned by default.
-  - `[MetricType <String>]`: The user experience analytics metric type.
+BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsMetricHistory\>: The user experience analytics metric history.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[DeviceId \<String\>\]: The Intune device id of the device.
+  \[MetricDateTime \<DateTime?\>\]: The metric date time.
+The value cannot be modified and is automatically populated when the metric is created.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
+Returned by default.
+  \[MetricType \<String\>\]: The user experience analytics metric type.
 
 ## RELATED LINKS
 [New-MgDeviceManagementUserExperienceAnalyticMetricHistory](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticMetricHistory?view=graph-powershell-1.0)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticmetrichistory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticmetrichistory)
+
 

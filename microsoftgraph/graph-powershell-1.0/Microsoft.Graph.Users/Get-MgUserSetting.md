@@ -1,16 +1,16 @@
 ---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
-ms.prod: users
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserregistereddevicecountasendpoint
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersetting
 schema: 2.0.0
 ms.prod: users
 ---
 
-# Get-MgUserRegisteredDeviceCountAsEndpoint
+# Get-MgUserSetting
 
 ## SYNOPSIS
-Get the number of the resource
+Read the user and organization userSettings object.To learn how to update the properties of the userSettings object, see update user settings.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserSetting](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSetting?view=graph-powershell-beta)
@@ -19,18 +19,18 @@ Get the number of the resource
 
 ### Get (Default)
 ```
-Get-MgUserRegisteredDeviceCountAsEndpoint -UserId <String> [-Filter <String>] [-Search <String>]
- -ConsistencyLevel <String> [<CommonParameters>]
+Get-MgUserSetting -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgUserRegisteredDeviceCountAsEndpoint -InputObject <IUsersIdentity> [-Filter <String>] [-Search <String>]
- -ConsistencyLevel <String> [<CommonParameters>]
+Get-MgUserSetting -InputObject <IUsersIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get the number of the resource
+Read the user and organization userSettings object.To learn how to update the properties of the userSettings object, see update user settings.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -48,29 +48,13 @@ This example shows how to use the Get-MgUserSetting Cmdlet.
 
 ## PARAMETERS
 
-### -ConsistencyLevel
-Indicates the requested consistency level.
-Documentation URL: https://docs.microsoft.com/graph/aad-advanced-queries
+### -ExpandProperty
+Expand related entities
 
 ```yaml
-Type: String
+Type: String[]
 Parameter Sets: (All)
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Filter
-Filter items by property values
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
+Aliases: Expand
 
 Required: False
 Position: Named
@@ -95,13 +79,13 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Search
-Search items by search phrases
+### -Property
+Select properties to be returned
 
 ```yaml
-Type: String
+Type: String[]
 Parameter Sets: (All)
-Aliases:
+Aliases: Select
 
 Required: False
 Position: Named
@@ -133,31 +117,30 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
 ## OUTPUTS
 
-### System.Int32
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserSettings
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`INPUTOBJECT <IUsersIdentity>`: Identity Parameter
-  - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
-  - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession
-  - `[ChecklistItemId <String>]`: The unique identifier of checklistItem
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
-  - `[LinkedResourceId <String>]`: The unique identifier of linkedResource
-  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
-  - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
-  - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[TodoTaskId <String>]`: The unique identifier of todoTask
-  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
+  \[AttachmentBaseId \<String\>\]: The unique identifier of attachmentBase
+  \[AttachmentSessionId \<String\>\]: The unique identifier of attachmentSession
+  \[ChecklistItemId \<String\>\]: The unique identifier of checklistItem
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[LicenseDetailsId \<String\>\]: The unique identifier of licenseDetails
+  \[LinkedResourceId \<String\>\]: The unique identifier of linkedResource
+  \[OAuth2PermissionGrantId \<String\>\]: The unique identifier of oAuth2PermissionGrant
+  \[OutlookCategoryId \<String\>\]: The unique identifier of outlookCategory
+  \[ProfilePhotoId \<String\>\]: The unique identifier of profilePhoto
+  \[TodoTaskId \<String\>\]: The unique identifier of todoTask
+  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-
 [Get-MgBetaUserSetting](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSetting?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersetting)
+

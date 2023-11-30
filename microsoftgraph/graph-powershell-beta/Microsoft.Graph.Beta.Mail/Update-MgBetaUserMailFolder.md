@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetausermailfolder
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Update-MgBetaUserMailFolder
 
 ## SYNOPSIS
-Update the writable properties of a mailSearchFolder object.
+Update the properties of mailFolder object.
 This API is available in the following national cloud deployments.
 
 > [!NOTE]
@@ -55,7 +56,7 @@ Update-MgBetaUserMailFolder -InputObject <IMailIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Update the writable properties of a mailSearchFolder object.
+Update the properties of mailFolder object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES

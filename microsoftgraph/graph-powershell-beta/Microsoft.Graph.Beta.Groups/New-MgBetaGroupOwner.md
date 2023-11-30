@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Add an owner to an Office 365 group or security group through the owners navigation property.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupOwner](/powershell/module/Microsoft.Graph.Groups/New-MgGroupOwner?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -199,7 +196,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgGroupOwner](/powershell/module/Microsoft.Graph.Groups/New-MgGroupOwner?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupowner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupowner)
 

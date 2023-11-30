@@ -54,8 +54,6 @@ Update-MgServicePrincipalRiskDetection -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update the navigation property servicePrincipalRiskDetections in identityProtection
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Activity
@@ -490,122 +488,143 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServicePrincipalRiskDetection
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+BODYPARAMETER \<IMicrosoftGraphServicePrincipalRiskDetection\>: servicePrincipalRiskDetection
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[Activity \<String\>\]: activityType
+  \[ActivityDateTime \<DateTime?\>\]: Date and time when the risky activity occurred.
+The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  \[AdditionalInfo \<String\>\]: Additional information associated with the risk detection.
+This string value is represented as a JSON object with the quotations escaped.
+  \[AppId \<String\>\]: The unique identifier for the associated application.
+  \[CorrelationId \<String\>\]: Correlation ID of the sign-in activity associated with the risk detection.
+This property is null if the risk detection is not associated with a sign-in activity.
+  \[DetectedDateTime \<DateTime?\>\]: Date and time when the risk was detected.
+The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  \[DetectionTimingType \<String\>\]: riskDetectionTimingType
+  \[IPAddress \<String\>\]: Provides the IP address of the client from where the risk occurred.
+  \[KeyIds \<String\[\]\>\]: The unique identifier for the key credential associated with the risk detection.
+  \[LastUpdatedDateTime \<DateTime?\>\]: Date and time when the risk detection was last updated.
+  \[Location \<IMicrosoftGraphSignInLocation\>\]: signInLocation
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[City \<String\>\]: Provides the city where the sign-in originated and is determined using latitude/longitude information from the sign-in activity.
+    \[CountryOrRegion \<String\>\]: Provides the country code info (two letter code) where the sign-in originated. 
+This is calculated using latitude/longitude information from the sign-in activity.
+    \[GeoCoordinates \<IMicrosoftGraphGeoCoordinates\>\]: geoCoordinates
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Altitude \<Double?\>\]: Optional.
+The altitude (height), in feet,  above sea level for the item.
+Read-only.
+      \[Latitude \<Double?\>\]: Optional.
+The latitude, in decimal, for the item.
+Read-only.
+      \[Longitude \<Double?\>\]: Optional.
+The longitude, in decimal, for the item.
+Read-only.
+    \[State \<String\>\]: Provides the State where the sign-in originated.
+This is calculated using latitude/longitude information from the sign-in activity.
+  \[RequestId \<String\>\]: Request identifier of the sign-in activity associated with the risk detection.
+This property is null if the risk detection is not associated with a sign-in activity.
+Supports $filter (eq).
+  \[RiskDetail \<String\>\]: riskDetail
+  \[RiskEventType \<String\>\]: The type of risk event detected.
+The possible values are: investigationsThreatIntelligence, generic, adminConfirmedServicePrincipalCompromised, suspiciousSignins, leakedCredentials, anomalousServicePrincipalActivity, maliciousApplication, suspiciousApplication.
+  \[RiskLevel \<String\>\]: riskLevel
+  \[RiskState \<String\>\]: riskState
+  \[ServicePrincipalDisplayName \<String\>\]: The display name for the service principal.
+  \[ServicePrincipalId \<String\>\]: The unique identifier for the service principal.
+Supports $filter (eq).
+  \[Source \<String\>\]: Source of the risk detection.
+For example, identityProtection.
+  \[TokenIssuerType \<String\>\]: tokenIssuerType
 
-`BODYPARAMETER <IMicrosoftGraphServicePrincipalRiskDetection>`: servicePrincipalRiskDetection
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Activity <String>]`: activityType
-  - `[ActivityDateTime <DateTime?>]`: Date and time when the risky activity occurred. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[AdditionalInfo <String>]`: Additional information associated with the risk detection. This string value is represented as a JSON object with the quotations escaped.
-  - `[AppId <String>]`: The unique identifier for the associated application.
-  - `[CorrelationId <String>]`: Correlation ID of the sign-in activity associated with the risk detection. This property is null if the risk detection is not associated with a sign-in activity.
-  - `[DetectedDateTime <DateTime?>]`: Date and time when the risk was detected. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[DetectionTimingType <String>]`: riskDetectionTimingType
-  - `[IPAddress <String>]`: Provides the IP address of the client from where the risk occurred.
-  - `[KeyIds <String[]>]`: The unique identifier for the key credential associated with the risk detection.
-  - `[LastUpdatedDateTime <DateTime?>]`: Date and time when the risk detection was last updated.
-  - `[Location <IMicrosoftGraphSignInLocation>]`: signInLocation
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[City <String>]`: Provides the city where the sign-in originated and is determined using latitude/longitude information from the sign-in activity.
-    - `[CountryOrRegion <String>]`: Provides the country code info (two letter code) where the sign-in originated.  This is calculated using latitude/longitude information from the sign-in activity.
-    - `[GeoCoordinates <IMicrosoftGraphGeoCoordinates>]`: geoCoordinates
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Altitude <Double?>]`: Optional. The altitude (height), in feet,  above sea level for the item. Read-only.
-      - `[Latitude <Double?>]`: Optional. The latitude, in decimal, for the item. Read-only.
-      - `[Longitude <Double?>]`: Optional. The longitude, in decimal, for the item. Read-only.
-    - `[State <String>]`: Provides the State where the sign-in originated. This is calculated using latitude/longitude information from the sign-in activity.
-  - `[RequestId <String>]`: Request identifier of the sign-in activity associated with the risk detection. This property is null if the risk detection is not associated with a sign-in activity. Supports $filter (eq).
-  - `[RiskDetail <String>]`: riskDetail
-  - `[RiskEventType <String>]`: The type of risk event detected. The possible values are: investigationsThreatIntelligence, generic, adminConfirmedServicePrincipalCompromised, suspiciousSignins, leakedCredentials, anomalousServicePrincipalActivity, maliciousApplication, suspiciousApplication.
-  - `[RiskLevel <String>]`: riskLevel
-  - `[RiskState <String>]`: riskState
-  - `[ServicePrincipalDisplayName <String>]`: The display name for the service principal.
-  - `[ServicePrincipalId <String>]`: The unique identifier for the service principal. Supports $filter (eq).
-  - `[Source <String>]`: Source of the risk detection. For example, identityProtection.
-  - `[TokenIssuerType <String>]`: tokenIssuerType
+INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
+  \[ActivityBasedTimeoutPolicyId \<String\>\]: The unique identifier of activityBasedTimeoutPolicy
+  \[AppManagementPolicyId \<String\>\]: The unique identifier of appManagementPolicy
+  \[AuthenticationCombinationConfigurationId \<String\>\]: The unique identifier of authenticationCombinationConfiguration
+  \[AuthenticationContextClassReferenceId \<String\>\]: The unique identifier of authenticationContextClassReference
+  \[AuthenticationMethodConfigurationId \<String\>\]: The unique identifier of authenticationMethodConfiguration
+  \[AuthenticationMethodId \<String\>\]: The unique identifier of authenticationMethod
+  \[AuthenticationMethodModeDetailId \<String\>\]: The unique identifier of authenticationMethodModeDetail
+  \[AuthenticationStrengthPolicyId \<String\>\]: The unique identifier of authenticationStrengthPolicy
+  \[B2XIdentityUserFlowId \<String\>\]: The unique identifier of b2xIdentityUserFlow
+  \[BitlockerRecoveryKeyId \<String\>\]: The unique identifier of bitlockerRecoveryKey
+  \[CertificateBasedAuthConfigurationId \<String\>\]: The unique identifier of certificateBasedAuthConfiguration
+  \[ClaimsMappingPolicyId \<String\>\]: The unique identifier of claimsMappingPolicy
+  \[ConditionalAccessPolicyId \<String\>\]: The unique identifier of conditionalAccessPolicy
+  \[ConditionalAccessTemplateId \<String\>\]: The unique identifier of conditionalAccessTemplate
+  \[CrossTenantAccessPolicyConfigurationPartnerTenantId \<String\>\]: The unique identifier of crossTenantAccessPolicyConfigurationPartner
+  \[DataPolicyOperationId \<String\>\]: The unique identifier of dataPolicyOperation
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[EmailAuthenticationMethodId \<String\>\]: The unique identifier of emailAuthenticationMethod
+  \[FeatureRolloutPolicyId \<String\>\]: The unique identifier of featureRolloutPolicy
+  \[Fido2AuthenticationMethodId \<String\>\]: The unique identifier of fido2AuthenticationMethod
+  \[HomeRealmDiscoveryPolicyId \<String\>\]: The unique identifier of homeRealmDiscoveryPolicy
+  \[IdentityApiConnectorId \<String\>\]: The unique identifier of identityApiConnector
+  \[IdentityProviderBaseId \<String\>\]: The unique identifier of identityProviderBase
+  \[IdentityProviderId \<String\>\]: The unique identifier of identityProvider
+  \[IdentityUserFlowAttributeAssignmentId \<String\>\]: The unique identifier of identityUserFlowAttributeAssignment
+  \[IdentityUserFlowAttributeId \<String\>\]: The unique identifier of identityUserFlowAttribute
+  \[InvitationId \<String\>\]: The unique identifier of invitation
+  \[LongRunningOperationId \<String\>\]: The unique identifier of longRunningOperation
+  \[MicrosoftAuthenticatorAuthenticationMethodId \<String\>\]: The unique identifier of microsoftAuthenticatorAuthenticationMethod
+  \[NamedLocationId \<String\>\]: The unique identifier of namedLocation
+  \[OAuth2PermissionGrantId \<String\>\]: The unique identifier of oAuth2PermissionGrant
+  \[OrganizationId \<String\>\]: The unique identifier of organization
+  \[PasswordAuthenticationMethodId \<String\>\]: The unique identifier of passwordAuthenticationMethod
+  \[PermissionGrantConditionSetId \<String\>\]: The unique identifier of permissionGrantConditionSet
+  \[PermissionGrantPolicyId \<String\>\]: The unique identifier of permissionGrantPolicy
+  \[PhoneAuthenticationMethodId \<String\>\]: The unique identifier of phoneAuthenticationMethod
+  \[RiskDetectionId \<String\>\]: The unique identifier of riskDetection
+  \[RiskyServicePrincipalHistoryItemId \<String\>\]: The unique identifier of riskyServicePrincipalHistoryItem
+  \[RiskyServicePrincipalId \<String\>\]: The unique identifier of riskyServicePrincipal
+  \[RiskyUserHistoryItemId \<String\>\]: The unique identifier of riskyUserHistoryItem
+  \[RiskyUserId \<String\>\]: The unique identifier of riskyUser
+  \[ServicePrincipalRiskDetectionId \<String\>\]: The unique identifier of servicePrincipalRiskDetection
+  \[SoftwareOathAuthenticationMethodId \<String\>\]: The unique identifier of softwareOathAuthenticationMethod
+  \[TemporaryAccessPassAuthenticationMethodId \<String\>\]: The unique identifier of temporaryAccessPassAuthenticationMethod
+  \[ThreatAssessmentRequestId \<String\>\]: The unique identifier of threatAssessmentRequest
+  \[ThreatAssessmentResultId \<String\>\]: The unique identifier of threatAssessmentResult
+  \[TokenIssuancePolicyId \<String\>\]: The unique identifier of tokenIssuancePolicy
+  \[TokenLifetimePolicyId \<String\>\]: The unique identifier of tokenLifetimePolicy
+  \[UnifiedRoleManagementPolicyAssignmentId \<String\>\]: The unique identifier of unifiedRoleManagementPolicyAssignment
+  \[UnifiedRoleManagementPolicyId \<String\>\]: The unique identifier of unifiedRoleManagementPolicy
+  \[UnifiedRoleManagementPolicyRuleId \<String\>\]: The unique identifier of unifiedRoleManagementPolicyRule
+  \[UserFlowLanguageConfigurationId \<String\>\]: The unique identifier of userFlowLanguageConfiguration
+  \[UserFlowLanguagePageId \<String\>\]: The unique identifier of userFlowLanguagePage
+  \[UserId \<String\>\]: The unique identifier of user
+  \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
-`INPUTOBJECT <IIdentitySignInsIdentity>`: Identity Parameter
-  - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
-  - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
-  - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
-  - `[AuthenticationContextClassReferenceId <String>]`: The unique identifier of authenticationContextClassReference
-  - `[AuthenticationMethodConfigurationId <String>]`: The unique identifier of authenticationMethodConfiguration
-  - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
-  - `[AuthenticationMethodModeDetailId <String>]`: The unique identifier of authenticationMethodModeDetail
-  - `[AuthenticationStrengthPolicyId <String>]`: The unique identifier of authenticationStrengthPolicy
-  - `[B2XIdentityUserFlowId <String>]`: The unique identifier of b2xIdentityUserFlow
-  - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
-  - `[CertificateBasedAuthConfigurationId <String>]`: The unique identifier of certificateBasedAuthConfiguration
-  - `[ClaimsMappingPolicyId <String>]`: The unique identifier of claimsMappingPolicy
-  - `[ConditionalAccessPolicyId <String>]`: The unique identifier of conditionalAccessPolicy
-  - `[ConditionalAccessTemplateId <String>]`: The unique identifier of conditionalAccessTemplate
-  - `[CrossTenantAccessPolicyConfigurationPartnerTenantId <String>]`: The unique identifier of crossTenantAccessPolicyConfigurationPartner
-  - `[DataPolicyOperationId <String>]`: The unique identifier of dataPolicyOperation
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[EmailAuthenticationMethodId <String>]`: The unique identifier of emailAuthenticationMethod
-  - `[FeatureRolloutPolicyId <String>]`: The unique identifier of featureRolloutPolicy
-  - `[Fido2AuthenticationMethodId <String>]`: The unique identifier of fido2AuthenticationMethod
-  - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
-  - `[IdentityApiConnectorId <String>]`: The unique identifier of identityApiConnector
-  - `[IdentityProviderBaseId <String>]`: The unique identifier of identityProviderBase
-  - `[IdentityProviderId <String>]`: The unique identifier of identityProvider
-  - `[IdentityUserFlowAttributeAssignmentId <String>]`: The unique identifier of identityUserFlowAttributeAssignment
-  - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
-  - `[InvitationId <String>]`: The unique identifier of invitation
-  - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
-  - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
-  - `[NamedLocationId <String>]`: The unique identifier of namedLocation
-  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
-  - `[OrganizationId <String>]`: The unique identifier of organization
-  - `[PasswordAuthenticationMethodId <String>]`: The unique identifier of passwordAuthenticationMethod
-  - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
-  - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
-  - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
-  - `[RiskyServicePrincipalHistoryItemId <String>]`: The unique identifier of riskyServicePrincipalHistoryItem
-  - `[RiskyServicePrincipalId <String>]`: The unique identifier of riskyServicePrincipal
-  - `[RiskyUserHistoryItemId <String>]`: The unique identifier of riskyUserHistoryItem
-  - `[RiskyUserId <String>]`: The unique identifier of riskyUser
-  - `[ServicePrincipalRiskDetectionId <String>]`: The unique identifier of servicePrincipalRiskDetection
-  - `[SoftwareOathAuthenticationMethodId <String>]`: The unique identifier of softwareOathAuthenticationMethod
-  - `[TemporaryAccessPassAuthenticationMethodId <String>]`: The unique identifier of temporaryAccessPassAuthenticationMethod
-  - `[ThreatAssessmentRequestId <String>]`: The unique identifier of threatAssessmentRequest
-  - `[ThreatAssessmentResultId <String>]`: The unique identifier of threatAssessmentResult
-  - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
-  - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
-  - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
-  - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
-  - `[UnifiedRoleManagementPolicyRuleId <String>]`: The unique identifier of unifiedRoleManagementPolicyRule
-  - `[UserFlowLanguageConfigurationId <String>]`: The unique identifier of userFlowLanguageConfiguration
-  - `[UserFlowLanguagePageId <String>]`: The unique identifier of userFlowLanguagePage
-  - `[UserId <String>]`: The unique identifier of user
-  - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
-
-`LOCATION <IMicrosoftGraphSignInLocation>`: signInLocation
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[City <String>]`: Provides the city where the sign-in originated and is determined using latitude/longitude information from the sign-in activity.
-  - `[CountryOrRegion <String>]`: Provides the country code info (two letter code) where the sign-in originated.  This is calculated using latitude/longitude information from the sign-in activity.
-  - `[GeoCoordinates <IMicrosoftGraphGeoCoordinates>]`: geoCoordinates
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Altitude <Double?>]`: Optional. The altitude (height), in feet,  above sea level for the item. Read-only.
-    - `[Latitude <Double?>]`: Optional. The latitude, in decimal, for the item. Read-only.
-    - `[Longitude <Double?>]`: Optional. The longitude, in decimal, for the item. Read-only.
-  - `[State <String>]`: Provides the State where the sign-in originated. This is calculated using latitude/longitude information from the sign-in activity.
+LOCATION \<IMicrosoftGraphSignInLocation\>: signInLocation
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[City \<String\>\]: Provides the city where the sign-in originated and is determined using latitude/longitude information from the sign-in activity.
+  \[CountryOrRegion \<String\>\]: Provides the country code info (two letter code) where the sign-in originated. 
+This is calculated using latitude/longitude information from the sign-in activity.
+  \[GeoCoordinates \<IMicrosoftGraphGeoCoordinates\>\]: geoCoordinates
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Altitude \<Double?\>\]: Optional.
+The altitude (height), in feet,  above sea level for the item.
+Read-only.
+    \[Latitude \<Double?\>\]: Optional.
+The latitude, in decimal, for the item.
+Read-only.
+    \[Longitude \<Double?\>\]: Optional.
+The longitude, in decimal, for the item.
+Read-only.
+  \[State \<String\>\]: Provides the State where the sign-in originated.
+This is calculated using latitude/longitude information from the sign-in activity.
 
 ## RELATED LINKS
 [Update-MgBetaServicePrincipalRiskDetection](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaServicePrincipalRiskDetection?view=graph-powershell-beta)
 
-## RELATED LINKS
-[Update-MgBetaServicePrincipalRiskDetection](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaServicePrincipalRiskDetection?view=graph-powershell-beta)
-
-## RELATED LINKS
+[https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgserviceprincipalriskdetection](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgserviceprincipalriskdetection)
 
 
-## RELATED LINKS

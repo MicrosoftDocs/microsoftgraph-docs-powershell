@@ -49,7 +49,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -164,7 +164,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -183,7 +183,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -229,24 +229,41 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthDeviceModelPerformance
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsAppHealthDeviceModelPerformance>`: The user experience analytics device model performance entity contains device model performance details.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[ActiveDeviceCount <Int32?>]`: The number of active devices for the model. Valid values 0 to 2147483647. Supports: $filter, $select, $OrderBy. Read-only. Valid values -2147483648 to 2147483647
-  - `[DeviceManufacturer <String>]`: The manufacturer name of the device. Supports: $select, $OrderBy. Read-only.
-  - `[DeviceModel <String>]`: The model name of the device. Supports: $select, $OrderBy. Read-only.
-  - `[HealthStatus <UserExperienceAnalyticsHealthState?>]`: userExperienceAnalyticsHealthState
-  - `[MeanTimeToFailureInMinutes <Int32?>]`: The mean time to failure for the application in minutes. Valid values 0 to 2147483647. Supports: $filter, $select, $OrderBy. Read-only. Valid values -2147483648 to 2147483647
-  - `[ModelAppHealthScore <Double?>]`: The application health score of the device model. Valid values 0 to 100. Supports: $filter, $select, $OrderBy. Read-only. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsAppHealthDeviceModelPerformance\>: The user experience analytics device model performance entity contains device model performance details.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[ActiveDeviceCount \<Int32?\>\]: The number of active devices for the model.
+Valid values 0 to 2147483647.
+Supports: $filter, $select, $OrderBy.
+Read-only.
+Valid values -2147483648 to 2147483647
+  \[DeviceManufacturer \<String\>\]: The manufacturer name of the device.
+Supports: $select, $OrderBy.
+Read-only.
+  \[DeviceModel \<String\>\]: The model name of the device.
+Supports: $select, $OrderBy.
+Read-only.
+  \[HealthStatus \<UserExperienceAnalyticsHealthState?\>\]: userExperienceAnalyticsHealthState
+  \[MeanTimeToFailureInMinutes \<Int32?\>\]: The mean time to failure for the application in minutes.
+Valid values 0 to 2147483647.
+Supports: $filter, $select, $OrderBy.
+Read-only.
+Valid values -2147483648 to 2147483647
+  \[ModelAppHealthScore \<Double?\>\]: The application health score of the device model.
+Valid values 0 to 100.
+Supports: $filter, $select, $OrderBy.
+Read-only.
+Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ## RELATED LINKS
 [New-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance?view=graph-powershell-1.0)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticapphealthdevicemodelperformance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticapphealthdevicemodelperformance)
+
 

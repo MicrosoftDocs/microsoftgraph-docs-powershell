@@ -22,8 +22,6 @@ Get-MgOrganizationCount [-Filter <String>] [-Search <String>] [<CommonParameters
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Filter
@@ -66,9 +64,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.Int32
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
-
 [Get-MgBetaOrganizationCount](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationCount?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationcount](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationcount)
+
 

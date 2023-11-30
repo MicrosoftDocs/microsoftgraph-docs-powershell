@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadevicebydeviceid
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Get-MgBetaDeviceByDeviceId
@@ -10,6 +11,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the properties and relationships of a device object.
 Since the device resource supports extensions, you can also use the GET operation to get custom properties and extension data in a device instance.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDeviceByDeviceId](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDeviceByDeviceId?view=graph-powershell-1.0)
@@ -31,6 +33,7 @@ Get-MgBetaDeviceByDeviceId -InputObject <IIdentityDirectoryManagementIdentity> [
 ## DESCRIPTION
 Get the properties and relationships of a device object.
 Since the device resource supports extensions, you can also use the GET operation to get custom properties and extension data in a device instance.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -121,6 +124,7 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[ContractId \<String\>\]: The unique identifier of contract
   \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
   \[DeviceId \<String\>\]: The unique identifier of device
+  \[DeviceLocalCredentialInfoId \<String\>\]: The unique identifier of deviceLocalCredentialInfo
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[DirectoryRoleId \<String\>\]: The unique identifier of directoryRole
   \[DirectoryRoleTemplateId \<String\>\]: The unique identifier of directoryRoleTemplate

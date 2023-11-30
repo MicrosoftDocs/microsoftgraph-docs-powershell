@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Undo soft deletion of a single chatMessage or a chat message reply in a channel or a chat.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Undo-MgTeamChannelMessageSoftDelete](/powershell/module/Microsoft.Graph.Teams/Undo-MgTeamChannelMessageSoftDelete?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Undo-MgBetaTeamChannelMessageSoftDelete -InputObject <ITeamsIdentity> [-PassThru
 
 ## DESCRIPTION
 Undo soft deletion of a single chatMessage or a chat message reply in a channel or a chat.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Undo soft deletion of a message in a channel

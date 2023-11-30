@@ -22,8 +22,6 @@ Get-MgReportDeviceConfigurationUserActivity -OutFile <String> [-PassThru] [<Comm
 ## DESCRIPTION
 Metadata for the device configuration user activity report
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -OutFile
@@ -51,7 +49,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -66,9 +64,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.Boolean
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
-
 [Get-MgBetaReportDeviceConfigurationUserActivity](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportDeviceConfigurationUserActivity?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportdeviceconfigurationuseractivity](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportdeviceconfigurationuseractivity)
+
 

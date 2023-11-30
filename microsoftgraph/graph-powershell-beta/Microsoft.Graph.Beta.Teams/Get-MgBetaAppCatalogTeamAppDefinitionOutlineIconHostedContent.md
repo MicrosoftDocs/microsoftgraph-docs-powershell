@@ -3,13 +3,14 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinitionoutlineiconhostedcontent
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # Get-MgBetaAppCatalogTeamAppDefinitionOutlineIconHostedContent
 
 ## SYNOPSIS
 Retrieve the hosted content in an app's icon.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -39,7 +40,7 @@ Get-MgBetaAppCatalogTeamAppDefinitionOutlineIconHostedContent -InputObject <ITea
 
 ## DESCRIPTION
 Retrieve the hosted content in an app's icon.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

@@ -64,8 +64,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.Int32
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
 [Get-MgBetaPrivacySubjectRightsRequestCount](/powershell/module/Microsoft.Graph.Beta.Compliance/Get-MgBetaPrivacySubjectRightsRequestCount?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgprivacysubjectrightsrequestcount](https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgprivacysubjectrightsrequestcount)
+
 

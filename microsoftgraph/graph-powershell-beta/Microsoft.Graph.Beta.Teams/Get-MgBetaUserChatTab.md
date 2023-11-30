@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Retrieve the properties and relationships of the specified tab in a chat.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserChatTab](/powershell/module/Microsoft.Graph.Teams/Get-MgUserChatTab?view=graph-powershell-1.0)
@@ -37,7 +37,9 @@ Get-MgBetaUserChatTab -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
 
 ## DESCRIPTION
 Retrieve the properties and relationships of the specified tab in a chat.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -312,5 +314,4 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Get-MgUserChatTab](/powershell/module/Microsoft.Graph.Teams/Get-MgUserChatTab?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserchattab](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserchattab)
-
 

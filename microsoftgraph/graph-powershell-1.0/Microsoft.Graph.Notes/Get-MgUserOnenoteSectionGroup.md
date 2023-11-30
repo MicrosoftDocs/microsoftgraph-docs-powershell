@@ -1,36 +1,52 @@
 ---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
-ms.prod: onenote
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotesectioncount
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotesectiongroup
 schema: 2.0.0
 ms.prod: onenote
 ms.prod: onenote
 ---
 
-# Get-MgUserOnenoteSectionCount
+# Get-MgUserOnenoteSectionGroup
 
 ## SYNOPSIS
-Get the number of the resource
+Retrieve the properties and relationships of a sectionGroup object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserOnenoteSectionGroup](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenoteSectionGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### Get (Default)
+### List (Default)
 ```
-Get-MgUserOnenoteSectionCount -UserId <String> [-Filter <String>] [-Search <String>] [<CommonParameters>]
+Get-MgUserOnenoteSectionGroup -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
+ [-All] [-CountVariable <String>] [<CommonParameters>]
+```
+
+### List1
+```
+Get-MgUserOnenoteSectionGroup -SectionGroupId <String> -UserId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+```
+
+### Get
+```
+Get-MgUserOnenoteSectionGroup -SectionGroupId <String> -UserId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgUserOnenoteSectionCount -InputObject <INotesIdentity> [-Filter <String>] [-Search <String>]
+Get-MgUserOnenoteSectionGroup -InputObject <INotesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get the number of the resource
+Retrieve the properties and relationships of a sectionGroup object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -48,12 +64,58 @@ This example shows how to use the Get-MgUserOnenoteSectionGroup Cmdlet.
 
 ## PARAMETERS
 
+### -All
+List all pages.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: List, List1
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CountVariable
+Specifies a count of the total number of items in a collection.
+By default, this variable will be set in the global scope.
+
+```yaml
+Type: String
+Parameter Sets: List, List1
+Aliases: CV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExpandProperty
+Expand related entities
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: Expand
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Filter
 Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -79,12 +141,42 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -PageSize
+Sets the page size of results.
+
+```yaml
+Type: Int32
+Parameter Sets: List, List1
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Property
+Select properties to be returned
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: Select
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Search
 Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -94,17 +186,77 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -UserId
-The unique identifier of user
+### -SectionGroupId
+The unique identifier of sectionGroup
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: List1, Get
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Sort
+Order items by property values
+
+```yaml
+Type: String[]
+Parameter Sets: List, List1
+Aliases: OrderBy
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Top
+Show only the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List, List1
+Aliases: Limit
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -UserId
+The unique identifier of user
+
+```yaml
+Type: String
+Parameter Sets: List, List1, Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List, List1
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -117,27 +269,26 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.INotesIdentity
 ## OUTPUTS
 
-### System.Int32
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSectionGroup
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`INPUTOBJECT <INotesIdentity>`: Identity Parameter
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[NotebookId <String>]`: The unique identifier of notebook
-  - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
-  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
-  - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
-  - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
-  - `[SectionGroupId <String>]`: The unique identifier of sectionGroup
-  - `[SiteId <String>]`: The unique identifier of site
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<INotesIdentity\>: Identity Parameter
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[NotebookId \<String\>\]: The unique identifier of notebook
+  \[OnenoteOperationId \<String\>\]: The unique identifier of onenoteOperation
+  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
+  \[OnenoteResourceId \<String\>\]: The unique identifier of onenoteResource
+  \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[SectionGroupId \<String\>\]: The unique identifier of sectionGroup
+  \[SiteId \<String\>\]: The unique identifier of site
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-
 [Get-MgBetaUserOnenoteSectionGroup](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenoteSectionGroup?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotesectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotesectiongroup)
+

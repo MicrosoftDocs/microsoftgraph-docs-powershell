@@ -1,1402 +1,1117 @@
 ---
 Module Name: Microsoft.Graph.Beta.Applications
-Module Guid: 84a72bfe-9cd2-4cd3-8ed3-9b7ea23f59f6
-Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications
-Help Version: 1.0.0.0
+Module Guid: fae868a9-cfb4-4875-82ce-3954ba828375
+Download Help Link: {{ Update Download Link }}
+Help Version: {{ Please enter version of help manually (X.X.X.X) format }}
 Locale: en-US
 ---
 
 # Microsoft.Graph.Beta.Applications Module
 ## Description
-Microsoft Graph PowerShell Cmdlets
+{{ Fill in the Description }}
 
 ## Microsoft.Graph.Beta.Applications Cmdlets
 ### [Add-MgBetaApplicationKey](Add-MgBetaApplicationKey.md)
-Add a key credential to an application.
-This method, along with removeKey, can be used by an application to automate rolling its expiring keys.
-As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
-Applications that don't have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won't be able to use this service action.
-You can use the Update application operation to perform an update instead.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Add-MgBetaApplicationPassword](Add-MgBetaApplicationPassword.md)
-Adds a strong password to an application.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Add-MgBetaServicePrincipalTokenSigningCertificate](Add-MgBetaServicePrincipalTokenSigningCertificate.md)
-Creates a self-signed signing certificate and returns a selfSignedCertificate object, which is the public part of the generated certificate.
-The self-signed signing certificate is composed of the following objects which are added to the servicePrincipal: + The keyCredentials object with the following objects:    + A private key object with usage set to Sign.    + A public key object with usage set to Verify.+ The passwordCredentials object.
-All the objects have the same value of customKeyIdentifier.
-The passwordCredential is used to open the PFX file (private key).
-It and the associated private key object have the same value of keyId.
-Once set during creation through the displayName property, the subject of the certificate cannot be updated.
-The startDateTime is set to the same time the certificate is created using the action.
-The endDateTime can be up to three years after the certificate is created.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Clear-MgBetaApplicationVerifiedPublisher](Clear-MgBetaApplicationVerifiedPublisher.md)
-Unset the verifiedPublisher previously set on an application, removing all verified publisher properties.
-For more information, see Publisher verification.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Confirm-MgBetaApplicationMemberGroup](Confirm-MgBetaApplicationMemberGroup.md)
-Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
-This function is transitive.
-You can check up to a maximum of 20 groups per request.
-This function supports all groups provisioned in Azure AD.
-Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Confirm-MgBetaApplicationMemberObject](Confirm-MgBetaApplicationMemberObject.md)
-Invoke action checkMemberObjects
+{{ Fill in the Description }}
 
 ### [Confirm-MgBetaServicePrincipalMemberGroup](Confirm-MgBetaServicePrincipalMemberGroup.md)
-Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
-This function is transitive.
-You can check up to a maximum of 20 groups per request.
-This function supports all groups provisioned in Azure AD.
-Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Confirm-MgBetaServicePrincipalMemberObject](Confirm-MgBetaServicePrincipalMemberObject.md)
-Invoke action checkMemberObjects
+{{ Fill in the Description }}
 
 ### [Find-MgBetaApplicationSynchronizationJobSchemaDirectory](Find-MgBetaApplicationSynchronizationJobSchemaDirectory.md)
-Discover the latest schema definition for provisioning to an application.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Find-MgBetaApplicationSynchronizationTemplateSchemaDirectory](Find-MgBetaApplicationSynchronizationTemplateSchemaDirectory.md)
-Discover the latest schema definition for provisioning to an application.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Find-MgBetaServicePrincipalSynchronizationJobSchemaDirectory](Find-MgBetaServicePrincipalSynchronizationJobSchemaDirectory.md)
-Discover the latest schema definition for provisioning to an application.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Find-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory](Find-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory.md)
-Discover the latest schema definition for provisioning to an application.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplication](Get-MgBetaApplication.md)
-Get the properties and relationships of an application object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationAppManagementPolicy](Get-MgBetaApplicationAppManagementPolicy.md)
-The appManagementPolicy applied to this application.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationAppManagementPolicyByRef](Get-MgBetaApplicationAppManagementPolicyByRef.md)
-The appManagementPolicy applied to this application.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationAppManagementPolicyCount](Get-MgBetaApplicationAppManagementPolicyCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationByAppId](Get-MgBetaApplicationByAppId.md)
-Get the properties and relationships of an application object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationById](Get-MgBetaApplicationById.md)
-Return the directory objects specified in a list of IDs.
-Some common uses for this function are to: This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationByUniqueName](Get-MgBetaApplicationByUniqueName.md)
-Get the properties and relationships of an application object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationConnectorGroup](Get-MgBetaApplicationConnectorGroup.md)
-The connectorGroup the application is using with Azure AD Application Proxy.
-Nullable.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationConnectorGroupByRef](Get-MgBetaApplicationConnectorGroupByRef.md)
-The connectorGroup the application is using with Azure AD Application Proxy.
-Nullable.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationCount](Get-MgBetaApplicationCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationCreatedOnBehalfOf](Get-MgBetaApplicationCreatedOnBehalfOf.md)
-Supports $filter (/$count eq 0, /$count ne 0).
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationDelta](Get-MgBetaApplicationDelta.md)
-Invoke function delta
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationExtensionProperty](Get-MgBetaApplicationExtensionProperty.md)
-Read a directory extension definition represented by an extensionProperty object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationExtensionPropertyCount](Get-MgBetaApplicationExtensionPropertyCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationFederatedIdentityCredential](Get-MgBetaApplicationFederatedIdentityCredential.md)
-Read the properties and relationships of a federatedIdentityCredential object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationFederatedIdentityCredentialCount](Get-MgBetaApplicationFederatedIdentityCredentialCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationHomeRealmDiscoveryPolicy](Get-MgBetaApplicationHomeRealmDiscoveryPolicy.md)
-Get homeRealmDiscoveryPolicies from applications
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationHomeRealmDiscoveryPolicyCount](Get-MgBetaApplicationHomeRealmDiscoveryPolicyCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationLogo](Get-MgBetaApplicationLogo.md)
-The main logo for the application.
-Not nullable.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationMemberGroup](Get-MgBetaApplicationMemberGroup.md)
-Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
-This function is transitive.
-This API returns up to 11,000 group IDs.
-If more than 11,000 results are available, it returns a 400 Bad Request error with the Directory_ResultSizeLimitExceeded error code.
-As a workaround, use the List group transitive memberOf API.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationMemberObject](Get-MgBetaApplicationMemberObject.md)
-Invoke action getMemberObjects
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationOwner](Get-MgBetaApplicationOwner.md)
-Directory objects that are owners of the application.
-Read-only.
-Nullable.
-Supports $expand, $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1), and $select nested in $expand.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationOwnerAsEndpoint](Get-MgBetaApplicationOwnerAsEndpoint.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.endpoint
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationOwnerAsServicePrincipal](Get-MgBetaApplicationOwnerAsServicePrincipal.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationOwnerAsUser](Get-MgBetaApplicationOwnerAsUser.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationOwnerByRef](Get-MgBetaApplicationOwnerByRef.md)
-Directory objects that are owners of the application.
-Read-only.
-Nullable.
-Supports $expand, $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1), and $select nested in $expand.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationOwnerCount](Get-MgBetaApplicationOwnerCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationOwnerCountAsEndpoint](Get-MgBetaApplicationOwnerCountAsEndpoint.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationOwnerCountAsServicePrincipal](Get-MgBetaApplicationOwnerCountAsServicePrincipal.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationOwnerCountAsUser](Get-MgBetaApplicationOwnerCountAsUser.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationSynchronization](Get-MgBetaApplicationSynchronization.md)
-Represents the capability for Azure Active Directory (Azure AD) identity synchronization through the Microsoft Graph API.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationSynchronizationAccessToken](Get-MgBetaApplicationSynchronizationAccessToken.md)
-Acquire an OAuth Access token to authorize the Azure AD provisioning service to provision users into an application.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationSynchronizationJob](Get-MgBetaApplicationSynchronizationJob.md)
-Retrieve the existing synchronization job and its properties.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationSynchronizationJobBulkUpload](Get-MgBetaApplicationSynchronizationJobBulkUpload.md)
-The bulk upload operation for the job.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationSynchronizationJobBulkUploadContent](Get-MgBetaApplicationSynchronizationJobBulkUploadContent.md)
-Get media content for the navigation property bulkUpload from applications
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationSynchronizationJobCount](Get-MgBetaApplicationSynchronizationJobCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationSynchronizationJobSchema](Get-MgBetaApplicationSynchronizationJobSchema.md)
-Retrieve the schema for a given synchronization job or template.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationSynchronizationJobSchemaDirectory](Get-MgBetaApplicationSynchronizationJobSchemaDirectory.md)
-Contains the collection of directories and all of their objects.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationSynchronizationJobSchemaDirectoryCount](Get-MgBetaApplicationSynchronizationJobSchemaDirectoryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationSynchronizationSecretCount](Get-MgBetaApplicationSynchronizationSecretCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationSynchronizationTemplate](Get-MgBetaApplicationSynchronizationTemplate.md)
-Pre-configured synchronization settings for a particular application.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationSynchronizationTemplateCount](Get-MgBetaApplicationSynchronizationTemplateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationSynchronizationTemplateSchema](Get-MgBetaApplicationSynchronizationTemplateSchema.md)
-Default synchronization schema for the jobs based on this template.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationSynchronizationTemplateSchemaDirectory](Get-MgBetaApplicationSynchronizationTemplateSchemaDirectory.md)
-Contains the collection of directories and all of their objects.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationSynchronizationTemplateSchemaDirectoryCount](Get-MgBetaApplicationSynchronizationTemplateSchemaDirectoryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationTemplate](Get-MgBetaApplicationTemplate.md)
-Retrieve the properties of an applicationTemplate object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationTemplateCount](Get-MgBetaApplicationTemplateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationTokenIssuancePolicy](Get-MgBetaApplicationTokenIssuancePolicy.md)
-List the tokenIssuancePolicy objects that are assigned to an application.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationTokenIssuancePolicyByRef](Get-MgBetaApplicationTokenIssuancePolicyByRef.md)
-List the tokenIssuancePolicy objects that are assigned to an application.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationTokenIssuancePolicyCount](Get-MgBetaApplicationTokenIssuancePolicyCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationTokenLifetimePolicy](Get-MgBetaApplicationTokenLifetimePolicy.md)
-List the tokenLifetimePolicy objects that are assigned to an application or servicePrincipal.
-Only one object is returned in the collection because only one tokenLifetimePolicy can be assigned to an application.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationTokenLifetimePolicyByRef](Get-MgBetaApplicationTokenLifetimePolicyByRef.md)
-List the tokenLifetimePolicy objects that are assigned to an application or servicePrincipal.
-Only one object is returned in the collection because only one tokenLifetimePolicy can be assigned to an application.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationTokenLifetimePolicyCount](Get-MgBetaApplicationTokenLifetimePolicyCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationUserOwnedObject](Get-MgBetaApplicationUserOwnedObject.md)
-Retrieve a list of recently deleted application and group objects owned by the specified user.
-This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaGroupAppRoleAssignment](Get-MgBetaGroupAppRoleAssignment.md)
-Represents the app roles a group has been granted for an application.
-Supports $expand.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaGroupAppRoleAssignmentCount](Get-MgBetaGroupAppRoleAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaOnPremisePublishingProfile](Get-MgBetaOnPremisePublishingProfile.md)
-Get entity from onPremisesPublishingProfiles by key
+{{ Fill in the Description }}
 
 ### [Get-MgBetaOnPremisePublishingProfileAgent](Get-MgBetaOnPremisePublishingProfileAgent.md)
-Retrieve the properties and relationships of an onPremisesAgent object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaOnPremisePublishingProfileAgentCount](Get-MgBetaOnPremisePublishingProfileAgentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaOnPremisePublishingProfileAgentGroup](Get-MgBetaOnPremisePublishingProfileAgentGroup.md)
-Retrieve the properties and relationships of an onPremisesAgentGroup object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaOnPremisePublishingProfileAgentGroupAgent](Get-MgBetaOnPremisePublishingProfileAgentGroupAgent.md)
-List of onPremisesAgent that are assigned to an onPremisesAgentGroup.
-Read-only.
-Nullable.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaOnPremisePublishingProfileAgentGroupAgentCount](Get-MgBetaOnPremisePublishingProfileAgentGroupAgentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaOnPremisePublishingProfileAgentGroupByRef](Get-MgBetaOnPremisePublishingProfileAgentGroupByRef.md)
-List of onPremisesAgentGroups that an onPremisesAgent is assigned to.
-Read-only.
-Nullable.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaOnPremisePublishingProfileAgentGroupCount](Get-MgBetaOnPremisePublishingProfileAgentGroupCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaOnPremisePublishingProfileAgentGroupPublishedResource](Get-MgBetaOnPremisePublishingProfileAgentGroupPublishedResource.md)
-List of publishedResource that are assigned to an onPremisesAgentGroup.
-Read-only.
-Nullable.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroup](Get-MgBetaOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroup.md)
-List of onPremisesAgentGroups that a publishedResource is assigned to.
-Read-only.
-Nullable.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroupByRef](Get-MgBetaOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroupByRef.md)
-List of onPremisesAgentGroups that a publishedResource is assigned to.
-Read-only.
-Nullable.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroupCount](Get-MgBetaOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroupCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaOnPremisePublishingProfileAgentGroupPublishedResourceCount](Get-MgBetaOnPremisePublishingProfileAgentGroupPublishedResourceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaOnPremisePublishingProfileConnector](Get-MgBetaOnPremisePublishingProfileConnector.md)
-Retrieve the properties and relationships of a connector object.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaOnPremisePublishingProfileConnectorCount](Get-MgBetaOnPremisePublishingProfileConnectorCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaOnPremisePublishingProfileConnectorGroup](Get-MgBetaOnPremisePublishingProfileConnectorGroup.md)
-Retrieve the properties of a connectorGroup.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaOnPremisePublishingProfileConnectorGroupApplication](Get-MgBetaOnPremisePublishingProfileConnectorGroupApplication.md)
-Get applications from onPremisesPublishingProfiles
+{{ Fill in the Description }}
 
 ### [Get-MgBetaOnPremisePublishingProfileConnectorGroupApplicationCount](Get-MgBetaOnPremisePublishingProfileConnectorGroupApplicationCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaOnPremisePublishingProfileConnectorGroupApplicationLogo](Get-MgBetaOnPremisePublishingProfileConnectorGroupApplicationLogo.md)
-The main logo for the application.
-Not nullable.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaOnPremisePublishingProfileConnectorGroupCount](Get-MgBetaOnPremisePublishingProfileConnectorGroupCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaOnPremisePublishingProfileConnectorGroupMember](Get-MgBetaOnPremisePublishingProfileConnectorGroupMember.md)
-Get members from onPremisesPublishingProfiles
+{{ Fill in the Description }}
 
 ### [Get-MgBetaOnPremisePublishingProfileConnectorGroupMemberByRef](Get-MgBetaOnPremisePublishingProfileConnectorGroupMemberByRef.md)
-Get ref of members from onPremisesPublishingProfiles
+{{ Fill in the Description }}
 
 ### [Get-MgBetaOnPremisePublishingProfileConnectorGroupMemberCount](Get-MgBetaOnPremisePublishingProfileConnectorGroupMemberCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaOnPremisePublishingProfileConnectorMemberOf](Get-MgBetaOnPremisePublishingProfileConnectorMemberOf.md)
-The connectorGroup that the connector is a member of.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaOnPremisePublishingProfileConnectorMemberOfByRef](Get-MgBetaOnPremisePublishingProfileConnectorMemberOfByRef.md)
-The connectorGroup that the connector is a member of.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaOnPremisePublishingProfileConnectorMemberOfCount](Get-MgBetaOnPremisePublishingProfileConnectorMemberOfCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaOnPremisePublishingProfileCount](Get-MgBetaOnPremisePublishingProfileCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaOnPremisePublishingProfilePublishedResource](Get-MgBetaOnPremisePublishingProfilePublishedResource.md)
-Retrieve the properties and relationships of publishedResource object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaOnPremisePublishingProfilePublishedResourceAgentGroup](Get-MgBetaOnPremisePublishingProfilePublishedResourceAgentGroup.md)
-List of onPremisesAgentGroups that a publishedResource is assigned to.
-Read-only.
-Nullable.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaOnPremisePublishingProfilePublishedResourceAgentGroupByRef](Get-MgBetaOnPremisePublishingProfilePublishedResourceAgentGroupByRef.md)
-List of onPremisesAgentGroups that a publishedResource is assigned to.
-Read-only.
-Nullable.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaOnPremisePublishingProfilePublishedResourceAgentGroupCount](Get-MgBetaOnPremisePublishingProfilePublishedResourceAgentGroupCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaOnPremisePublishingProfilePublishedResourceCount](Get-MgBetaOnPremisePublishingProfilePublishedResourceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipal](Get-MgBetaServicePrincipal.md)
-Retrieve the properties and relationships of a servicePrincipal object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalAppManagementPolicy](Get-MgBetaServicePrincipalAppManagementPolicy.md)
-The appManagementPolicy applied to this service principal.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalAppManagementPolicyCount](Get-MgBetaServicePrincipalAppManagementPolicyCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalAppRoleAssignedTo](Get-MgBetaServicePrincipalAppRoleAssignedTo.md)
-App role assignments for this app or service, granted to users, groups, and other service principals.Supports $expand.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalAppRoleAssignedToCount](Get-MgBetaServicePrincipalAppRoleAssignedToCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalAppRoleAssignment](Get-MgBetaServicePrincipalAppRoleAssignment.md)
-App role assignment for another app or service, granted to this service principal.
-Supports $expand.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalAppRoleAssignmentCount](Get-MgBetaServicePrincipalAppRoleAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalByAppId](Get-MgBetaServicePrincipalByAppId.md)
-Retrieve the properties and relationships of a servicePrincipal object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalById](Get-MgBetaServicePrincipalById.md)
-Return the directory objects specified in a list of IDs.
-Some common uses for this function are to: This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalClaimMappingPolicy](Get-MgBetaServicePrincipalClaimMappingPolicy.md)
-List the claimsMappingPolicy objects that are assigned to a servicePrincipal.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalClaimMappingPolicyByRef](Get-MgBetaServicePrincipalClaimMappingPolicyByRef.md)
-List the claimsMappingPolicy objects that are assigned to a servicePrincipal.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalClaimMappingPolicyCount](Get-MgBetaServicePrincipalClaimMappingPolicyCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalCount](Get-MgBetaServicePrincipalCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalCreatedObject](Get-MgBetaServicePrincipalCreatedObject.md)
-Directory objects created by this service principal.
-Read-only.
-Nullable.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalCreatedObjectAsServicePrincipal](Get-MgBetaServicePrincipalCreatedObjectAsServicePrincipal.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalCreatedObjectCount](Get-MgBetaServicePrincipalCreatedObjectCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalCreatedObjectCountAsServicePrincipal](Get-MgBetaServicePrincipalCreatedObjectCountAsServicePrincipal.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalDelegatedPermissionClassification](Get-MgBetaServicePrincipalDelegatedPermissionClassification.md)
-The permission classifications for delegated permissions exposed by the app that this service principal represents.
-Supports $expand.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalDelegatedPermissionClassificationCount](Get-MgBetaServicePrincipalDelegatedPermissionClassificationCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalDelta](Get-MgBetaServicePrincipalDelta.md)
-Invoke function delta
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalEndpoint](Get-MgBetaServicePrincipalEndpoint.md)
-Endpoints available for discovery.
-Services like Sharepoint populate this property with a tenant specific SharePoint endpoints that other applications can discover and use in their experiences.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalEndpointCount](Get-MgBetaServicePrincipalEndpointCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalHomeRealmDiscoveryPolicy](Get-MgBetaServicePrincipalHomeRealmDiscoveryPolicy.md)
-List the homeRealmDiscoveryPolicy objects that are assigned to a servicePrincipal.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef](Get-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef.md)
-List the homeRealmDiscoveryPolicy objects that are assigned to a servicePrincipal.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalHomeRealmDiscoveryPolicyCount](Get-MgBetaServicePrincipalHomeRealmDiscoveryPolicyCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalLicenseDetail](Get-MgBetaServicePrincipalLicenseDetail.md)
-Get licenseDetails from servicePrincipals
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalLicenseDetailCount](Get-MgBetaServicePrincipalLicenseDetailCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalMemberGroup](Get-MgBetaServicePrincipalMemberGroup.md)
-Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
-This function is transitive.
-This API returns up to 11,000 group IDs.
-If more than 11,000 results are available, it returns a 400 Bad Request error with the Directory_ResultSizeLimitExceeded error code.
-As a workaround, use the List group transitive memberOf API.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalMemberObject](Get-MgBetaServicePrincipalMemberObject.md)
-Invoke action getMemberObjects
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalMemberOf](Get-MgBetaServicePrincipalMemberOf.md)
-Roles that this service principal is a member of.
-HTTP Methods: GET Read-only.
-Nullable.
-Supports $expand.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalMemberOfAsAdministrativeUnit](Get-MgBetaServicePrincipalMemberOfAsAdministrativeUnit.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.administrativeUnit
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalMemberOfAsDirectoryRole](Get-MgBetaServicePrincipalMemberOfAsDirectoryRole.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.directoryRole
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalMemberOfAsGroup](Get-MgBetaServicePrincipalMemberOfAsGroup.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalMemberOfCount](Get-MgBetaServicePrincipalMemberOfCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalMemberOfCountAsAdministrativeUnit](Get-MgBetaServicePrincipalMemberOfCountAsAdministrativeUnit.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalMemberOfCountAsDirectoryRole](Get-MgBetaServicePrincipalMemberOfCountAsDirectoryRole.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalMemberOfCountAsGroup](Get-MgBetaServicePrincipalMemberOfCountAsGroup.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalOauth2PermissionGrant](Get-MgBetaServicePrincipalOauth2PermissionGrant.md)
-Delegated permission grants authorizing this service principal to access an API on behalf of a signed-in user.
-Read-only.
-Nullable.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalOauth2PermissionGrantCount](Get-MgBetaServicePrincipalOauth2PermissionGrantCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalOwnedObject](Get-MgBetaServicePrincipalOwnedObject.md)
-Directory objects that are owned by this service principal.
-Read-only.
-Nullable.
-Supports $expand, $select nested in $expand, and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalOwnedObjectAsApplication](Get-MgBetaServicePrincipalOwnedObjectAsApplication.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.application
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalOwnedObjectAsEndpoint](Get-MgBetaServicePrincipalOwnedObjectAsEndpoint.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.endpoint
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalOwnedObjectAsGroup](Get-MgBetaServicePrincipalOwnedObjectAsGroup.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalOwnedObjectAsServicePrincipal](Get-MgBetaServicePrincipalOwnedObjectAsServicePrincipal.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalOwnedObjectCount](Get-MgBetaServicePrincipalOwnedObjectCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalOwnedObjectCountAsApplication](Get-MgBetaServicePrincipalOwnedObjectCountAsApplication.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalOwnedObjectCountAsEndpoint](Get-MgBetaServicePrincipalOwnedObjectCountAsEndpoint.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalOwnedObjectCountAsGroup](Get-MgBetaServicePrincipalOwnedObjectCountAsGroup.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalOwnedObjectCountAsServicePrincipal](Get-MgBetaServicePrincipalOwnedObjectCountAsServicePrincipal.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalOwner](Get-MgBetaServicePrincipalOwner.md)
-Directory objects that are owners of this servicePrincipal.
-The owners are a set of non-admin users or servicePrincipals who are allowed to modify this object.
-Read-only.
-Nullable.
-Supports $expand, $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1), and $select nested in $expand.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalOwnerAsEndpoint](Get-MgBetaServicePrincipalOwnerAsEndpoint.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.endpoint
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalOwnerAsServicePrincipal](Get-MgBetaServicePrincipalOwnerAsServicePrincipal.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalOwnerAsUser](Get-MgBetaServicePrincipalOwnerAsUser.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalOwnerByRef](Get-MgBetaServicePrincipalOwnerByRef.md)
-Directory objects that are owners of this servicePrincipal.
-The owners are a set of non-admin users or servicePrincipals who are allowed to modify this object.
-Read-only.
-Nullable.
-Supports $expand, $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1), and $select nested in $expand.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalOwnerCount](Get-MgBetaServicePrincipalOwnerCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalOwnerCountAsEndpoint](Get-MgBetaServicePrincipalOwnerCountAsEndpoint.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalOwnerCountAsServicePrincipal](Get-MgBetaServicePrincipalOwnerCountAsServicePrincipal.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalOwnerCountAsUser](Get-MgBetaServicePrincipalOwnerCountAsUser.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalPasswordSingleSignOnCredential](Get-MgBetaServicePrincipalPasswordSingleSignOnCredential.md)
-Get a list of single sign-on credentials using a password for a user or group.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration](Get-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration.md)
-Get remoteDesktopSecurityConfiguration from servicePrincipals
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup](Get-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup.md)
-Get targetDeviceGroups from servicePrincipals
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroupCount](Get-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroupCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalSynchronization](Get-MgBetaServicePrincipalSynchronization.md)
-Represents the capability for Azure Active Directory (Azure AD) identity synchronization through the Microsoft Graph API.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalSynchronizationAccessToken](Get-MgBetaServicePrincipalSynchronizationAccessToken.md)
-Acquire an OAuth Access token to authorize the Azure AD provisioning service to provision users into an application.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalSynchronizationJob](Get-MgBetaServicePrincipalSynchronizationJob.md)
-Retrieve the existing synchronization job and its properties.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalSynchronizationJobBulkUpload](Get-MgBetaServicePrincipalSynchronizationJobBulkUpload.md)
-The bulk upload operation for the job.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalSynchronizationJobBulkUploadContent](Get-MgBetaServicePrincipalSynchronizationJobBulkUploadContent.md)
-Get media content for the navigation property bulkUpload from servicePrincipals
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalSynchronizationJobCount](Get-MgBetaServicePrincipalSynchronizationJobCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalSynchronizationJobSchema](Get-MgBetaServicePrincipalSynchronizationJobSchema.md)
-Retrieve the schema for a given synchronization job or template.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalSynchronizationJobSchemaDirectory](Get-MgBetaServicePrincipalSynchronizationJobSchemaDirectory.md)
-Contains the collection of directories and all of their objects.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalSynchronizationJobSchemaDirectoryCount](Get-MgBetaServicePrincipalSynchronizationJobSchemaDirectoryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalSynchronizationSecretCount](Get-MgBetaServicePrincipalSynchronizationSecretCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalSynchronizationTemplate](Get-MgBetaServicePrincipalSynchronizationTemplate.md)
-Pre-configured synchronization settings for a particular application.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalSynchronizationTemplateCount](Get-MgBetaServicePrincipalSynchronizationTemplateCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalSynchronizationTemplateSchema](Get-MgBetaServicePrincipalSynchronizationTemplateSchema.md)
-Default synchronization schema for the jobs based on this template.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory](Get-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory.md)
-Contains the collection of directories and all of their objects.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectoryCount](Get-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectoryCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalTokenIssuancePolicy](Get-MgBetaServicePrincipalTokenIssuancePolicy.md)
-The tokenIssuancePolicies assigned to this service principal.
-Supports $expand.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalTokenIssuancePolicyCount](Get-MgBetaServicePrincipalTokenIssuancePolicyCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalTokenLifetimePolicy](Get-MgBetaServicePrincipalTokenLifetimePolicy.md)
-The tokenLifetimePolicies assigned to this service principal.
-Supports $expand.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalTokenLifetimePolicyCount](Get-MgBetaServicePrincipalTokenLifetimePolicyCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalTransitiveMemberOf](Get-MgBetaServicePrincipalTransitiveMemberOf.md)
-Get transitiveMemberOf from servicePrincipals
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalTransitiveMemberOfAsAdministrativeUnit](Get-MgBetaServicePrincipalTransitiveMemberOfAsAdministrativeUnit.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.administrativeUnit
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalTransitiveMemberOfAsDirectoryRole](Get-MgBetaServicePrincipalTransitiveMemberOfAsDirectoryRole.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.directoryRole
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalTransitiveMemberOfAsGroup](Get-MgBetaServicePrincipalTransitiveMemberOfAsGroup.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalTransitiveMemberOfCount](Get-MgBetaServicePrincipalTransitiveMemberOfCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalTransitiveMemberOfCountAsAdministrativeUnit](Get-MgBetaServicePrincipalTransitiveMemberOfCountAsAdministrativeUnit.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalTransitiveMemberOfCountAsDirectoryRole](Get-MgBetaServicePrincipalTransitiveMemberOfCountAsDirectoryRole.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalTransitiveMemberOfCountAsGroup](Get-MgBetaServicePrincipalTransitiveMemberOfCountAsGroup.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalUserOwnedObject](Get-MgBetaServicePrincipalUserOwnedObject.md)
-Retrieve a list of recently deleted application and group objects owned by the specified user.
-This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserAppRoleAssignment](Get-MgBetaUserAppRoleAssignment.md)
-Represents the app roles a user has been granted for an application.
-Supports $expand.
+{{ Fill in the Description }}
 
 ### [Get-MgBetaUserAppRoleAssignmentCount](Get-MgBetaUserAppRoleAssignmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaFilterApplicationSynchronizationJobSchemaOperator](Invoke-MgBetaFilterApplicationSynchronizationJobSchemaOperator.md)
-Invoke function filterOperators
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaFilterApplicationSynchronizationTemplateSchemaOperator](Invoke-MgBetaFilterApplicationSynchronizationTemplateSchemaOperator.md)
-Invoke function filterOperators
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaFilterServicePrincipalSynchronizationJobSchemaOperator](Invoke-MgBetaFilterServicePrincipalSynchronizationJobSchemaOperator.md)
-Invoke function filterOperators
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaFilterServicePrincipalSynchronizationTemplateSchemaOperator](Invoke-MgBetaFilterServicePrincipalSynchronizationTemplateSchemaOperator.md)
-Invoke function filterOperators
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaFunctionApplicationSynchronizationJobSchema](Invoke-MgBetaFunctionApplicationSynchronizationJobSchema.md)
-Invoke function functions
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaFunctionApplicationSynchronizationTemplateSchema](Invoke-MgBetaFunctionApplicationSynchronizationTemplateSchema.md)
-Invoke function functions
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaFunctionServicePrincipalSynchronizationJobSchema](Invoke-MgBetaFunctionServicePrincipalSynchronizationJobSchema.md)
-Invoke function functions
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaFunctionServicePrincipalSynchronizationTemplateSchema](Invoke-MgBetaFunctionServicePrincipalSynchronizationTemplateSchema.md)
-Invoke function functions
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaInstantiateApplicationTemplate](Invoke-MgBetaInstantiateApplicationTemplate.md)
-Add an instance of an application from the Azure AD application gallery into your directory.
-You can also use this API to instantiate non-gallery apps.
-Use the following ID for the applicationTemplate object: 8adf8e6e-67b2-4cf2-a259-e3dc5476c621.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaParseApplicationSynchronizationJobSchemaExpression](Invoke-MgBetaParseApplicationSynchronizationJobSchemaExpression.md)
-Parse a given string expression into an attributeMappingSource object.
-For more information about expressions, see Writing Expressions for Attribute Mappings in Azure Active Directory.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaParseApplicationSynchronizationTemplateSchemaExpression](Invoke-MgBetaParseApplicationSynchronizationTemplateSchemaExpression.md)
-Parse a given string expression into an attributeMappingSource object.
-For more information about expressions, see Writing Expressions for Attribute Mappings in Azure Active Directory.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaParseServicePrincipalSynchronizationJobSchemaExpression](Invoke-MgBetaParseServicePrincipalSynchronizationJobSchemaExpression.md)
-Parse a given string expression into an attributeMappingSource object.
-For more information about expressions, see Writing Expressions for Attribute Mappings in Azure Active Directory.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaParseServicePrincipalSynchronizationTemplateSchemaExpression](Invoke-MgBetaParseServicePrincipalSynchronizationTemplateSchemaExpression.md)
-Parse a given string expression into an attributeMappingSource object.
-For more information about expressions, see Writing Expressions for Attribute Mappings in Azure Active Directory.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaApplication](New-MgBetaApplication.md)
-Create a new application object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaApplicationAppManagementPolicyByRef](New-MgBetaApplicationAppManagementPolicyByRef.md)
-Assign an appManagementPolicy policy object to an application or service principal object.
-The application or service principal adopts this policy over the tenant-wide tenantAppManagementPolicy setting.
-Only one policy object can be assigned to an application or service principal.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaApplicationExtensionProperty](New-MgBetaApplicationExtensionProperty.md)
-Create a new directory extension definition, represented by an extensionProperty object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaApplicationFederatedIdentityCredential](New-MgBetaApplicationFederatedIdentityCredential.md)
-Create a new federatedIdentityCredential object for an application.
-By configuring a trust relationship between your Azure AD application registration and the identity provider for your compute platform, you can use tokens issued by that platform to authenticate with Microsoft identity platform and call APIs in the Microsoft ecosystem.
-Maximum of 20 objects can be added to an application.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaApplicationOwnerByRef](New-MgBetaApplicationOwnerByRef.md)
-Use this API to add an owner to an application by posting to the owners collection.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaApplicationSynchronizationJob](New-MgBetaApplicationSynchronizationJob.md)
-Create new synchronization job with a default synchronization schema.
-The job is created in a disabled state.
-Call Start job to start synchronization.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaApplicationSynchronizationJobOnDemand](New-MgBetaApplicationSynchronizationJobOnDemand.md)
-Select a user and provision the account on-demand.
-The rate limit for this API is 5 requests per 10 seconds.
-No user or group will be provisioned on-demand that would not have been provisioned through the regular provisioning cycles.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaApplicationSynchronizationJobSchemaDirectory](New-MgBetaApplicationSynchronizationJobSchemaDirectory.md)
-Create new navigation property to directories for applications
+{{ Fill in the Description }}
 
 ### [New-MgBetaApplicationSynchronizationTemplate](New-MgBetaApplicationSynchronizationTemplate.md)
-Create new navigation property to templates for applications
+{{ Fill in the Description }}
 
 ### [New-MgBetaApplicationSynchronizationTemplateSchemaDirectory](New-MgBetaApplicationSynchronizationTemplateSchemaDirectory.md)
-Create new navigation property to directories for applications
+{{ Fill in the Description }}
 
 ### [New-MgBetaApplicationTokenIssuancePolicyByRef](New-MgBetaApplicationTokenIssuancePolicyByRef.md)
-Assign a tokenIssuancePolicy to an application.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaApplicationTokenLifetimePolicyByRef](New-MgBetaApplicationTokenLifetimePolicyByRef.md)
-Assign a tokenLifetimePolicy to an application or servicePrincipal.
-You can have multiple tokenLifetimePolicy policies in a tenant but can assign only one tokenLifetimePolicy per application.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaGroupAppRoleAssignment](New-MgBetaGroupAppRoleAssignment.md)
-Use this API to assign an app role to a security group.
-All direct members of the group will be considered assigned.
-Security groups with dynamic memberships are supported.
-To grant an app role assignment to a group, you need three identifiers: Additional licenses might be required to use a group to manage access to applications.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaOnPremisePublishingProfile](New-MgBetaOnPremisePublishingProfile.md)
-Add new entity to onPremisesPublishingProfiles
+{{ Fill in the Description }}
 
 ### [New-MgBetaOnPremisePublishingProfileAgent](New-MgBetaOnPremisePublishingProfileAgent.md)
-Create new navigation property to agents for onPremisesPublishingProfiles
+{{ Fill in the Description }}
 
 ### [New-MgBetaOnPremisePublishingProfileAgentGroup](New-MgBetaOnPremisePublishingProfileAgentGroup.md)
-Create a new onPremisesAgentGroup object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaOnPremisePublishingProfileAgentGroupAgent](New-MgBetaOnPremisePublishingProfileAgentGroupAgent.md)
-Create new navigation property to agents for onPremisesPublishingProfiles
+{{ Fill in the Description }}
 
 ### [New-MgBetaOnPremisePublishingProfileAgentGroupByRef](New-MgBetaOnPremisePublishingProfileAgentGroupByRef.md)
-Create new navigation property ref to agentGroups for onPremisesPublishingProfiles
+{{ Fill in the Description }}
 
 ### [New-MgBetaOnPremisePublishingProfileAgentGroupPublishedResource](New-MgBetaOnPremisePublishingProfileAgentGroupPublishedResource.md)
-Create new navigation property to publishedResources for onPremisesPublishingProfiles
+{{ Fill in the Description }}
 
 ### [New-MgBetaOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroup](New-MgBetaOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroup.md)
-Create new navigation property to agentGroups for onPremisesPublishingProfiles
+{{ Fill in the Description }}
 
 ### [New-MgBetaOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroupByRef](New-MgBetaOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroupByRef.md)
-Create new navigation property ref to agentGroups for onPremisesPublishingProfiles
+{{ Fill in the Description }}
 
 ### [New-MgBetaOnPremisePublishingProfileConnector](New-MgBetaOnPremisePublishingProfileConnector.md)
-Create new navigation property to connectors for onPremisesPublishingProfiles
+{{ Fill in the Description }}
 
 ### [New-MgBetaOnPremisePublishingProfileConnectorGroup](New-MgBetaOnPremisePublishingProfileConnectorGroup.md)
-Create a new connectorGroup.
+{{ Fill in the Description }}
 
 ### [New-MgBetaOnPremisePublishingProfileConnectorGroupMemberByRef](New-MgBetaOnPremisePublishingProfileConnectorGroupMemberByRef.md)
-Create new navigation property ref to members for onPremisesPublishingProfiles
+{{ Fill in the Description }}
 
 ### [New-MgBetaOnPremisePublishingProfileConnectorMemberOfByRef](New-MgBetaOnPremisePublishingProfileConnectorMemberOfByRef.md)
-Create new navigation property ref to memberOf for onPremisesPublishingProfiles
+{{ Fill in the Description }}
 
 ### [New-MgBetaOnPremisePublishingProfilePublishedResource](New-MgBetaOnPremisePublishingProfilePublishedResource.md)
-Create a new publishedResource object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaOnPremisePublishingProfilePublishedResourceAgentGroup](New-MgBetaOnPremisePublishingProfilePublishedResourceAgentGroup.md)
-Create new navigation property to agentGroups for onPremisesPublishingProfiles
+{{ Fill in the Description }}
 
 ### [New-MgBetaOnPremisePublishingProfilePublishedResourceAgentGroupByRef](New-MgBetaOnPremisePublishingProfilePublishedResourceAgentGroupByRef.md)
-Create new navigation property ref to agentGroups for onPremisesPublishingProfiles
+{{ Fill in the Description }}
 
 ### [New-MgBetaServicePrincipal](New-MgBetaServicePrincipal.md)
-Create a new servicePrincipal object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaServicePrincipalAppRoleAssignedTo](New-MgBetaServicePrincipalAppRoleAssignedTo.md)
-Assign an app role for a resource service principal, to a user, group, or client service principal.
-App roles that are assigned to service principals are also known as application permissions.
-Application permissions can be granted directly with app role assignments, or through a consent experience.
-To grant an app role assignment, you need three identifiers: This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaServicePrincipalAppRoleAssignment](New-MgBetaServicePrincipalAppRoleAssignment.md)
-Assign an app role to a client service principal.
-App roles that are assigned to service principals are also known as application permissions.
-Application permissions can be granted directly with app role assignments, or through a consent experience.
-To grant an app role assignment to a client service principal, you need three identifiers: This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaServicePrincipalClaimMappingPolicyByRef](New-MgBetaServicePrincipalClaimMappingPolicyByRef.md)
-Assign a claimsMappingPolicy to a servicePrincipal.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaServicePrincipalDelegatedPermissionClassification](New-MgBetaServicePrincipalDelegatedPermissionClassification.md)
-Classify a delegated permission by adding a delegatedPermissionClassification to the servicePrincipal representing the API.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaServicePrincipalEndpoint](New-MgBetaServicePrincipalEndpoint.md)
-Create new navigation property to endpoints for servicePrincipals
+{{ Fill in the Description }}
 
 ### [New-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef](New-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef.md)
-Assign a homeRealmDiscoveryPolicy to a servicePrincipal.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaServicePrincipalLicenseDetail](New-MgBetaServicePrincipalLicenseDetail.md)
-Create new navigation property to licenseDetails for servicePrincipals
+{{ Fill in the Description }}
 
 ### [New-MgBetaServicePrincipalOwnerByRef](New-MgBetaServicePrincipalOwnerByRef.md)
-Add an owner for the servicePrincipal.
-Service principal owners can be users, the service principal itself, or other service principals.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaServicePrincipalPasswordSingleSignOnCredential](New-MgBetaServicePrincipalPasswordSingleSignOnCredential.md)
-Create single sign-on credentials using a password for a user or group.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup](New-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup.md)
-Create new navigation property to targetDeviceGroups for servicePrincipals
+{{ Fill in the Description }}
 
 ### [New-MgBetaServicePrincipalSynchronizationJob](New-MgBetaServicePrincipalSynchronizationJob.md)
-Create new synchronization job with a default synchronization schema.
-The job is created in a disabled state.
-Call Start job to start synchronization.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaServicePrincipalSynchronizationJobOnDemand](New-MgBetaServicePrincipalSynchronizationJobOnDemand.md)
-Select a user and provision the account on-demand.
-The rate limit for this API is 5 requests per 10 seconds.
-No user or group will be provisioned on-demand that would not have been provisioned through the regular provisioning cycles.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgBetaServicePrincipalSynchronizationJobSchemaDirectory](New-MgBetaServicePrincipalSynchronizationJobSchemaDirectory.md)
-Create new navigation property to directories for servicePrincipals
+{{ Fill in the Description }}
 
 ### [New-MgBetaServicePrincipalSynchronizationTemplate](New-MgBetaServicePrincipalSynchronizationTemplate.md)
-Create new navigation property to templates for servicePrincipals
+{{ Fill in the Description }}
 
 ### [New-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory](New-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory.md)
-Create new navigation property to directories for servicePrincipals
+{{ Fill in the Description }}
 
 ### [New-MgBetaUserAppRoleAssignment](New-MgBetaUserAppRoleAssignment.md)
-Use this API to assign an app role to a user.
-To grant an app role assignment to a user, you need three identifiers: This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Ping-MgBetaApplicationSynchronization](Ping-MgBetaApplicationSynchronization.md)
-Invoke function Ping
+{{ Fill in the Description }}
 
 ### [Ping-MgBetaServicePrincipalSynchronization](Ping-MgBetaServicePrincipalSynchronization.md)
-Invoke function Ping
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaApplication](Remove-MgBetaApplication.md)
-Deletes an application.
-When deleted, apps are moved to a temporary container and can be restored within 30 days.
-After that time, they are permanently deleted.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaApplicationAppManagementPolicyByRef](Remove-MgBetaApplicationAppManagementPolicyByRef.md)
-Remove an appManagementPolicy policy object from an application or service principal object.
-When you remove the appManagementPolicy, the application or service principal adopts the tenant-wide tenantAppManagementPolicy setting.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaApplicationByAppId](Remove-MgBetaApplicationByAppId.md)
-Deletes an application.
-When deleted, apps are moved to a temporary container and can be restored within 30 days.
-After that time, they are permanently deleted.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaApplicationByUniqueName](Remove-MgBetaApplicationByUniqueName.md)
-Deletes an application.
-When deleted, apps are moved to a temporary container and can be restored within 30 days.
-After that time, they are permanently deleted.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaApplicationConnectorGroupByRef](Remove-MgBetaApplicationConnectorGroupByRef.md)
-Delete ref of navigation property connectorGroup for applications
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaApplicationExtensionProperty](Remove-MgBetaApplicationExtensionProperty.md)
-Delete a directory extension definition represented by an extensionProperty object.
-You can delete only directory extensions that aren't synced from on-premises active directory (AD).
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaApplicationFederatedIdentityCredential](Remove-MgBetaApplicationFederatedIdentityCredential.md)
-Deletes a federatedIdentityCredential object from an application.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaApplicationKey](Remove-MgBetaApplicationKey.md)
-Remove a key credential from an application.
-This method along with addKey can be used by an application to automate rolling its expiring keys.
-As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaApplicationOwnerByRef](Remove-MgBetaApplicationOwnerByRef.md)
-Remove an owner from an application.
-As a recommended best practice, apps should have at least two owners.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaApplicationPassword](Remove-MgBetaApplicationPassword.md)
-Removes a password from an application.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaApplicationSynchronization](Remove-MgBetaApplicationSynchronization.md)
-Delete navigation property synchronization for applications
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaApplicationSynchronizationJob](Remove-MgBetaApplicationSynchronizationJob.md)
-Stop the synchronization job, and permanently delete all the state associated with it.
-Synchronized accounts are left as-is.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaApplicationSynchronizationJobBulkUpload](Remove-MgBetaApplicationSynchronizationJobBulkUpload.md)
-Delete navigation property bulkUpload for applications
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaApplicationSynchronizationJobSchema](Remove-MgBetaApplicationSynchronizationJobSchema.md)
-Delete navigation property schema for applications
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaApplicationSynchronizationJobSchemaDirectory](Remove-MgBetaApplicationSynchronizationJobSchemaDirectory.md)
-Delete navigation property directories for applications
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaApplicationSynchronizationTemplate](Remove-MgBetaApplicationSynchronizationTemplate.md)
-Delete navigation property templates for applications
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaApplicationSynchronizationTemplateSchema](Remove-MgBetaApplicationSynchronizationTemplateSchema.md)
-Delete navigation property schema for applications
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaApplicationSynchronizationTemplateSchemaDirectory](Remove-MgBetaApplicationSynchronizationTemplateSchemaDirectory.md)
-Delete navigation property directories for applications
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaApplicationTokenIssuancePolicyByRef](Remove-MgBetaApplicationTokenIssuancePolicyByRef.md)
-Remove a tokenIssuancePolicy from an application.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaApplicationTokenLifetimePolicyByRef](Remove-MgBetaApplicationTokenLifetimePolicyByRef.md)
-Remove a tokenLifetimePolicy from an application or servicePrincipal.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaGroupAppRoleAssignment](Remove-MgBetaGroupAppRoleAssignment.md)
-Deletes an appRoleAssignment that a group has been granted.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaOnPremisePublishingProfile](Remove-MgBetaOnPremisePublishingProfile.md)
-Delete entity from onPremisesPublishingProfiles
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaOnPremisePublishingProfileAgent](Remove-MgBetaOnPremisePublishingProfileAgent.md)
-Delete navigation property agents for onPremisesPublishingProfiles
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaOnPremisePublishingProfileAgentGroup](Remove-MgBetaOnPremisePublishingProfileAgentGroup.md)
-Delete an onPremisesAgentGroup object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaOnPremisePublishingProfileAgentGroupAgent](Remove-MgBetaOnPremisePublishingProfileAgentGroupAgent.md)
-Delete navigation property agents for onPremisesPublishingProfiles
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaOnPremisePublishingProfileAgentGroupByRef](Remove-MgBetaOnPremisePublishingProfileAgentGroupByRef.md)
-Delete ref of navigation property agentGroups for onPremisesPublishingProfiles
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaOnPremisePublishingProfileAgentGroupPublishedResource](Remove-MgBetaOnPremisePublishingProfileAgentGroupPublishedResource.md)
-Delete navigation property publishedResources for onPremisesPublishingProfiles
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroupByRef](Remove-MgBetaOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroupByRef.md)
-Delete ref of navigation property agentGroups for onPremisesPublishingProfiles
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaOnPremisePublishingProfileConnector](Remove-MgBetaOnPremisePublishingProfileConnector.md)
-Delete navigation property connectors for onPremisesPublishingProfiles
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaOnPremisePublishingProfileConnectorGroup](Remove-MgBetaOnPremisePublishingProfileConnectorGroup.md)
-Delete a connectorGroup.
-All connectors and applications must be removed from the connector group before a connector group can be deleted.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaOnPremisePublishingProfileConnectorGroupMemberByRef](Remove-MgBetaOnPremisePublishingProfileConnectorGroupMemberByRef.md)
-Delete ref of navigation property members for onPremisesPublishingProfiles
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaOnPremisePublishingProfileConnectorMemberOfByRef](Remove-MgBetaOnPremisePublishingProfileConnectorMemberOfByRef.md)
-Delete ref of navigation property memberOf for onPremisesPublishingProfiles
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaOnPremisePublishingProfilePublishedResource](Remove-MgBetaOnPremisePublishingProfilePublishedResource.md)
-Delete navigation property publishedResources for onPremisesPublishingProfiles
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaOnPremisePublishingProfilePublishedResourceAgentGroupByRef](Remove-MgBetaOnPremisePublishingProfilePublishedResourceAgentGroupByRef.md)
-Delete ref of navigation property agentGroups for onPremisesPublishingProfiles
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaServicePrincipal](Remove-MgBetaServicePrincipal.md)
-Delete a servicePrincipal object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaServicePrincipalAppManagementPolicy](Remove-MgBetaServicePrincipalAppManagementPolicy.md)
-Remove an appManagementPolicy policy object from an application or service principal object.
-When you remove the appManagementPolicy, the application or service principal adopts the tenant-wide tenantAppManagementPolicy setting.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaServicePrincipalAppRoleAssignedTo](Remove-MgBetaServicePrincipalAppRoleAssignedTo.md)
-Deletes an appRoleAssignment that a user, group, or client service principal has been granted for a resource service principal.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaServicePrincipalAppRoleAssignment](Remove-MgBetaServicePrincipalAppRoleAssignment.md)
-Deletes an appRoleAssignment that a service principal has been granted.
-App roles that are assigned to service principals are also known as application permissions.
-Deleting an app role assignment for a service principal is equivalent to revoking the app-only permission grant.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaServicePrincipalByAppId](Remove-MgBetaServicePrincipalByAppId.md)
-Delete a servicePrincipal object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaServicePrincipalClaimMappingPolicyByRef](Remove-MgBetaServicePrincipalClaimMappingPolicyByRef.md)
-Remove a claimsMappingPolicy from a servicePrincipal.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaServicePrincipalDelegatedPermissionClassification](Remove-MgBetaServicePrincipalDelegatedPermissionClassification.md)
-Deletes a delegatedPermissionClassification which had previously been set for a delegated permission.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaServicePrincipalEndpoint](Remove-MgBetaServicePrincipalEndpoint.md)
-Delete navigation property endpoints for servicePrincipals
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef](Remove-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef.md)
-Remove a homeRealmDiscoveryPolicy from a servicePrincipal.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaServicePrincipalLicenseDetail](Remove-MgBetaServicePrincipalLicenseDetail.md)
-Delete navigation property licenseDetails for servicePrincipals
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaServicePrincipalOwnerByRef](Remove-MgBetaServicePrincipalOwnerByRef.md)
-Remove an owner from a servicePrincipal object.
-As a recommended best practice, service principals should have at least two owners.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaServicePrincipalPasswordSingleSignOnCredential](Remove-MgBetaServicePrincipalPasswordSingleSignOnCredential.md)
-Delete single sign-on credentials using a password for a user or group.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration](Remove-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration.md)
-Delete navigation property remoteDesktopSecurityConfiguration for servicePrincipals
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup](Remove-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup.md)
-Delete navigation property targetDeviceGroups for servicePrincipals
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaServicePrincipalSynchronization](Remove-MgBetaServicePrincipalSynchronization.md)
-Delete navigation property synchronization for servicePrincipals
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaServicePrincipalSynchronizationJob](Remove-MgBetaServicePrincipalSynchronizationJob.md)
-Stop the synchronization job, and permanently delete all the state associated with it.
-Synchronized accounts are left as-is.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaServicePrincipalSynchronizationJobBulkUpload](Remove-MgBetaServicePrincipalSynchronizationJobBulkUpload.md)
-Delete navigation property bulkUpload for servicePrincipals
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaServicePrincipalSynchronizationJobSchema](Remove-MgBetaServicePrincipalSynchronizationJobSchema.md)
-Delete navigation property schema for servicePrincipals
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaServicePrincipalSynchronizationJobSchemaDirectory](Remove-MgBetaServicePrincipalSynchronizationJobSchemaDirectory.md)
-Delete navigation property directories for servicePrincipals
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaServicePrincipalSynchronizationTemplate](Remove-MgBetaServicePrincipalSynchronizationTemplate.md)
-Delete navigation property templates for servicePrincipals
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaServicePrincipalSynchronizationTemplateSchema](Remove-MgBetaServicePrincipalSynchronizationTemplateSchema.md)
-Delete navigation property schema for servicePrincipals
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory](Remove-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory.md)
-Delete navigation property directories for servicePrincipals
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaUserAppRoleAssignment](Remove-MgBetaUserAppRoleAssignment.md)
-Delete an appRoleAssignment that has been granted to a user.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Restart-MgBetaApplicationSynchronizationJob](Restart-MgBetaApplicationSynchronizationJob.md)
-Restart a stopped synchronization job, forcing it to reprocess all the objects in the directory.
-Optionally clears existing the synchronization state and previous errors.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Restart-MgBetaServicePrincipalSynchronizationJob](Restart-MgBetaServicePrincipalSynchronizationJob.md)
-Restart a stopped synchronization job, forcing it to reprocess all the objects in the directory.
-Optionally clears existing the synchronization state and previous errors.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Set-MgBetaApplicationConnectorGroupByRef](Set-MgBetaApplicationConnectorGroupByRef.md)
-Assign a connectorGroup to an application.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Set-MgBetaApplicationLogo](Set-MgBetaApplicationLogo.md)
-The main logo for the application.
-Not nullable.
+{{ Fill in the Description }}
 
 ### [Set-MgBetaApplicationSynchronization](Set-MgBetaApplicationSynchronization.md)
-Update the navigation property synchronization in applications
+{{ Fill in the Description }}
 
 ### [Set-MgBetaApplicationSynchronizationJobBulkUploadContent](Set-MgBetaApplicationSynchronizationJobBulkUploadContent.md)
-Update media content for the navigation property bulkUpload in applications
+{{ Fill in the Description }}
 
 ### [Set-MgBetaApplicationSynchronizationSecret](Set-MgBetaApplicationSynchronizationSecret.md)
-Update property secrets value.
+{{ Fill in the Description }}
 
 ### [Set-MgBetaApplicationVerifiedPublisher](Set-MgBetaApplicationVerifiedPublisher.md)
-Set the the verifiedPublisher on an application.
-For more information, including prerequisites to setting a verified publisher, see Publisher verification.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Set-MgBetaOnPremisePublishingProfileConnectorGroupApplicationLogo](Set-MgBetaOnPremisePublishingProfileConnectorGroupApplicationLogo.md)
-The main logo for the application.
-Not nullable.
+{{ Fill in the Description }}
 
 ### [Set-MgBetaServicePrincipalSynchronization](Set-MgBetaServicePrincipalSynchronization.md)
-Update the navigation property synchronization in servicePrincipals
+{{ Fill in the Description }}
 
 ### [Set-MgBetaServicePrincipalSynchronizationJobBulkUploadContent](Set-MgBetaServicePrincipalSynchronizationJobBulkUploadContent.md)
-Update media content for the navigation property bulkUpload in servicePrincipals
+{{ Fill in the Description }}
 
 ### [Set-MgBetaServicePrincipalSynchronizationSecret](Set-MgBetaServicePrincipalSynchronizationSecret.md)
-Update property secrets value.
+{{ Fill in the Description }}
 
 ### [Start-MgBetaApplicationSynchronizationJob](Start-MgBetaApplicationSynchronizationJob.md)
-Start an existing synchronization job.
-If the job is in a paused state, it continues processing changes from the point where it was paused.
-If the job is in quarantine, the quarantine status is cleared.
-Don't create scripts to call the start job continuously while it's running because that can cause the service to stop running.
-Use the start job only when the job is currently paused or in quarantine.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Start-MgBetaServicePrincipalSynchronizationJob](Start-MgBetaServicePrincipalSynchronizationJob.md)
-Start an existing synchronization job.
-If the job is in a paused state, it continues processing changes from the point where it was paused.
-If the job is in quarantine, the quarantine status is cleared.
-Don't create scripts to call the start job continuously while it's running because that can cause the service to stop running.
-Use the start job only when the job is currently paused or in quarantine.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Suspend-MgBetaApplicationSynchronizationJob](Suspend-MgBetaApplicationSynchronizationJob.md)
-Temporarily stop a running synchronization job.
-All the progress, including job state, is persisted, and the job continues from where it left off when a start call is made.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Suspend-MgBetaServicePrincipalSynchronizationJob](Suspend-MgBetaServicePrincipalSynchronizationJob.md)
-Temporarily stop a running synchronization job.
-All the progress, including job state, is persisted, and the job continues from where it left off when a start call is made.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Test-MgBetaApplicationProperty](Test-MgBetaApplicationProperty.md)
-Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
-Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
-For validating properties of an existing group, use the validateProperties function for groups.
-The following validations are performed for the display name and mail nickname properties: 1.
-Validate the prefix and suffix naming policy2.
-Validate the custom banned words policy3.
-Validate the mail nickname is unique This API returns with the first failure encountered.
-If one or more properties fail multiple validations, only the property with the first validation failure is returned.
-However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Test-MgBetaApplicationSynchronizationJobCredential](Test-MgBetaApplicationSynchronizationJobCredential.md)
-Validate that the credentials are valid in the tenant.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Test-MgBetaServicePrincipalProperty](Test-MgBetaServicePrincipalProperty.md)
-Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
-Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
-For validating properties of an existing group, use the validateProperties function for groups.
-The following validations are performed for the display name and mail nickname properties: 1.
-Validate the prefix and suffix naming policy2.
-Validate the custom banned words policy3.
-Validate the mail nickname is unique This API returns with the first failure encountered.
-If one or more properties fail multiple validations, only the property with the first validation failure is returned.
-However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Test-MgBetaServicePrincipalSynchronizationJobCredential](Test-MgBetaServicePrincipalSynchronizationJobCredential.md)
-Validate that the credentials are valid in the tenant.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaApplication](Update-MgBetaApplication.md)
-Update the properties of an application object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaApplicationByAppId](Update-MgBetaApplicationByAppId.md)
-Update the properties of an application object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaApplicationByUniqueName](Update-MgBetaApplicationByUniqueName.md)
-Update the properties of an application object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaApplicationExtensionProperty](Update-MgBetaApplicationExtensionProperty.md)
-Update the navigation property extensionProperties in applications
+{{ Fill in the Description }}
 
 ### [Update-MgBetaApplicationFederatedIdentityCredential](Update-MgBetaApplicationFederatedIdentityCredential.md)
-Update the properties of a federatedIdentityCredential object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaApplicationSynchronizationJob](Update-MgBetaApplicationSynchronizationJob.md)
-Update the navigation property jobs in applications
+{{ Fill in the Description }}
 
 ### [Update-MgBetaApplicationSynchronizationJobBulkUpload](Update-MgBetaApplicationSynchronizationJobBulkUpload.md)
-Update the navigation property bulkUpload in applications
+{{ Fill in the Description }}
 
 ### [Update-MgBetaApplicationSynchronizationJobSchema](Update-MgBetaApplicationSynchronizationJobSchema.md)
-Update the synchronization schema for a given job or template.
-This method fully replaces the current schema with the one provided in the request.
-To update the schema of a template, make the call on the application object.
-You must be the owner of the application.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaApplicationSynchronizationJobSchemaDirectory](Update-MgBetaApplicationSynchronizationJobSchemaDirectory.md)
-Update the navigation property directories in applications
+{{ Fill in the Description }}
 
 ### [Update-MgBetaApplicationSynchronizationTemplate](Update-MgBetaApplicationSynchronizationTemplate.md)
-Update (override) the synchronization template associated with a given application.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaApplicationSynchronizationTemplateSchema](Update-MgBetaApplicationSynchronizationTemplateSchema.md)
-Update the navigation property schema in applications
+{{ Fill in the Description }}
 
 ### [Update-MgBetaApplicationSynchronizationTemplateSchemaDirectory](Update-MgBetaApplicationSynchronizationTemplateSchemaDirectory.md)
-Update the navigation property directories in applications
+{{ Fill in the Description }}
 
 ### [Update-MgBetaGroupAppRoleAssignment](Update-MgBetaGroupAppRoleAssignment.md)
-Update the navigation property appRoleAssignments in groups
+{{ Fill in the Description }}
 
 ### [Update-MgBetaOnPremisePublishingProfile](Update-MgBetaOnPremisePublishingProfile.md)
-Update entity in onPremisesPublishingProfiles
+{{ Fill in the Description }}
 
 ### [Update-MgBetaOnPremisePublishingProfileAgent](Update-MgBetaOnPremisePublishingProfileAgent.md)
-Update the navigation property agents in onPremisesPublishingProfiles
+{{ Fill in the Description }}
 
 ### [Update-MgBetaOnPremisePublishingProfileAgentGroup](Update-MgBetaOnPremisePublishingProfileAgentGroup.md)
-Update the properties of an onPremisesAgentGroup object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaOnPremisePublishingProfileAgentGroupAgent](Update-MgBetaOnPremisePublishingProfileAgentGroupAgent.md)
-Update the navigation property agents in onPremisesPublishingProfiles
+{{ Fill in the Description }}
 
 ### [Update-MgBetaOnPremisePublishingProfileAgentGroupPublishedResource](Update-MgBetaOnPremisePublishingProfileAgentGroupPublishedResource.md)
-Update the navigation property publishedResources in onPremisesPublishingProfiles
+{{ Fill in the Description }}
 
 ### [Update-MgBetaOnPremisePublishingProfileConnector](Update-MgBetaOnPremisePublishingProfileConnector.md)
-Update the navigation property connectors in onPremisesPublishingProfiles
+{{ Fill in the Description }}
 
 ### [Update-MgBetaOnPremisePublishingProfileConnectorGroup](Update-MgBetaOnPremisePublishingProfileConnectorGroup.md)
-Update the properties of a connectorGroup object.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaOnPremisePublishingProfilePublishedResource](Update-MgBetaOnPremisePublishingProfilePublishedResource.md)
-Update the properties of published resource  publishedResource object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaServicePrincipal](Update-MgBetaServicePrincipal.md)
-Update the properties of servicePrincipal object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaServicePrincipalAppRoleAssignedTo](Update-MgBetaServicePrincipalAppRoleAssignedTo.md)
-Update the navigation property appRoleAssignedTo in servicePrincipals
+{{ Fill in the Description }}
 
 ### [Update-MgBetaServicePrincipalAppRoleAssignment](Update-MgBetaServicePrincipalAppRoleAssignment.md)
-Update the navigation property appRoleAssignments in servicePrincipals
+{{ Fill in the Description }}
 
 ### [Update-MgBetaServicePrincipalByAppId](Update-MgBetaServicePrincipalByAppId.md)
-Update the properties of servicePrincipal object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaServicePrincipalDelegatedPermissionClassification](Update-MgBetaServicePrincipalDelegatedPermissionClassification.md)
-Update the navigation property delegatedPermissionClassifications in servicePrincipals
+{{ Fill in the Description }}
 
 ### [Update-MgBetaServicePrincipalEndpoint](Update-MgBetaServicePrincipalEndpoint.md)
-Update the navigation property endpoints in servicePrincipals
+{{ Fill in the Description }}
 
 ### [Update-MgBetaServicePrincipalLicenseDetail](Update-MgBetaServicePrincipalLicenseDetail.md)
-Update the navigation property licenseDetails in servicePrincipals
+{{ Fill in the Description }}
 
 ### [Update-MgBetaServicePrincipalPasswordSingleSignOnCredential](Update-MgBetaServicePrincipalPasswordSingleSignOnCredential.md)
-Update single sign-on credentials using a password for a user or group.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration](Update-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration.md)
-Update the navigation property remoteDesktopSecurityConfiguration in servicePrincipals
+{{ Fill in the Description }}
 
 ### [Update-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup](Update-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup.md)
-Update the navigation property targetDeviceGroups in servicePrincipals
+{{ Fill in the Description }}
 
 ### [Update-MgBetaServicePrincipalSynchronizationJob](Update-MgBetaServicePrincipalSynchronizationJob.md)
-Update the navigation property jobs in servicePrincipals
+{{ Fill in the Description }}
 
 ### [Update-MgBetaServicePrincipalSynchronizationJobBulkUpload](Update-MgBetaServicePrincipalSynchronizationJobBulkUpload.md)
-Update the navigation property bulkUpload in servicePrincipals
+{{ Fill in the Description }}
 
 ### [Update-MgBetaServicePrincipalSynchronizationJobSchema](Update-MgBetaServicePrincipalSynchronizationJobSchema.md)
-Update the synchronization schema for a given job or template.
-This method fully replaces the current schema with the one provided in the request.
-To update the schema of a template, make the call on the application object.
-You must be the owner of the application.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaServicePrincipalSynchronizationJobSchemaDirectory](Update-MgBetaServicePrincipalSynchronizationJobSchemaDirectory.md)
-Update the navigation property directories in servicePrincipals
+{{ Fill in the Description }}
 
 ### [Update-MgBetaServicePrincipalSynchronizationTemplate](Update-MgBetaServicePrincipalSynchronizationTemplate.md)
-Update (override) the synchronization template associated with a given application.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgBetaServicePrincipalSynchronizationTemplateSchema](Update-MgBetaServicePrincipalSynchronizationTemplateSchema.md)
-Update the navigation property schema in servicePrincipals
+{{ Fill in the Description }}
 
 ### [Update-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory](Update-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory.md)
-Update the navigation property directories in servicePrincipals
+{{ Fill in the Description }}
 
 ### [Update-MgBetaUserAppRoleAssignment](Update-MgBetaUserAppRoleAssignment.md)
-Update the navigation property appRoleAssignments in users
+{{ Fill in the Description }}
 

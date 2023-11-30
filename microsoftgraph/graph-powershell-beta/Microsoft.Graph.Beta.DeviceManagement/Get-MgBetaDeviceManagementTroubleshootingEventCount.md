@@ -64,8 +64,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.Int32
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
 [Get-MgDeviceManagementTroubleshootingEventCount](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementTroubleshootingEventCount?view=graph-powershell-1.0)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementtroubleshootingeventcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementtroubleshootingeventcount)
+
 

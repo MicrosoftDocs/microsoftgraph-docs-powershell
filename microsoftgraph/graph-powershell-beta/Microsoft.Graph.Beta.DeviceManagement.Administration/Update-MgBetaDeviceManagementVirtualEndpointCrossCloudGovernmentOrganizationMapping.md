@@ -135,18 +135,20 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcCrossCloudGovernmentOrganizationMapping
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`BODYPARAMETER <IMicrosoftGraphCloudPcCrossCloudGovernmentOrganizationMapping>`: cloudPcCrossCloudGovernmentOrganizationMapping
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[OrganizationIdsInUsGovCloud <String[]>]`: The tenant ID in the Azure Government cloud corresponding to the GCC tenant in the public cloud. Currently, 1:1 mappings are supported, so this collection can only contain one tenant ID.
+BODYPARAMETER \<IMicrosoftGraphCloudPcCrossCloudGovernmentOrganizationMapping\>: cloudPcCrossCloudGovernmentOrganizationMapping
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[OrganizationIdsInUsGovCloud \<String\[\]\>\]: The tenant ID in the Azure Government cloud corresponding to the GCC tenant in the public cloud.
+Currently, 1:1 mappings are supported, so this collection can only contain one tenant ID.
 
 ## RELATED LINKS
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointcrosscloudgovernmentorganizationmapping](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointcrosscloudgovernmentorganizationmapping)
+
 

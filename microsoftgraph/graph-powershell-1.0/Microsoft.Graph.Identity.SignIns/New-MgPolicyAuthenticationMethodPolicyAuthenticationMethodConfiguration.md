@@ -31,8 +31,6 @@ New-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
 ## DESCRIPTION
 Create new navigation property to authenticationMethodConfigurations for policies
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -154,27 +152,27 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationMethodConfiguration
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+BODYPARAMETER \<IMicrosoftGraphAuthenticationMethodConfiguration\>: authenticationMethodConfiguration
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[ExcludeTargets \<IMicrosoftGraphExcludeTarget\[\]\>\]: Groups of users that are excluded from a policy.
+    \[Id \<String\>\]: The object identifier of a Microsoft Entra user or group.
+    \[TargetType \<String\>\]: authenticationMethodTargetType
+  \[State \<String\>\]: authenticationMethodState
 
-`BODYPARAMETER <IMicrosoftGraphAuthenticationMethodConfiguration>`: authenticationMethodConfiguration
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[ExcludeTargets <IMicrosoftGraphExcludeTarget[]>]`: Groups of users that are excluded from a policy.
-    - `[Id <String>]`: The object identifier of an Azure Active Directory user or group.
-    - `[TargetType <String>]`: authenticationMethodTargetType
-  - `[State <String>]`: authenticationMethodState
-
-`EXCLUDETARGETS <IMicrosoftGraphExcludeTarget[]>`: Groups of users that are excluded from a policy.
-  - `[Id <String>]`: The object identifier of an Azure Active Directory user or group.
-  - `[TargetType <String>]`: authenticationMethodTargetType
+EXCLUDETARGETS \<IMicrosoftGraphExcludeTarget\[\]\>: Groups of users that are excluded from a policy.
+  \[Id \<String\>\]: The object identifier of a Microsoft Entra user or group.
+  \[TargetType \<String\>\]: authenticationMethodTargetType
 
 ## RELATED LINKS
-
 [New-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyauthenticationmethodpolicyauthenticationmethodconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyauthenticationmethodpolicyauthenticationmethodconfiguration)
+
 

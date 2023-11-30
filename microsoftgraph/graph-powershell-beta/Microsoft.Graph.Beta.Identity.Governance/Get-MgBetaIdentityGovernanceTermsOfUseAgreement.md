@@ -3,13 +3,15 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancetermsofuseagreement
 schema: 2.0.0
+ms.prod: governance
+ms.prod: governance
 ---
 
 # Get-MgBetaIdentityGovernanceTermsOfUseAgreement
 
 ## SYNOPSIS
-Retrieve all files related to an agreement.
-This includes the default file and all localized files.
+Retrieve the properties and relationships of an agreement object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceTermsOfUseAgreement](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceTermsOfUseAgreement?view=graph-powershell-1.0)
@@ -36,8 +38,8 @@ Get-MgBetaIdentityGovernanceTermsOfUseAgreement -InputObject <IIdentityGovernanc
 ```
 
 ## DESCRIPTION
-Retrieve all files related to an agreement.
-This includes the default file and all localized files.
+Retrieve the properties and relationships of an agreement object.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -280,6 +282,7 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[CustomTaskExtensionId \<String\>\]: The unique identifier of customTaskExtension
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[EndDateTime \<DateTime?\>\]: Usage: endDateTime={endDateTime}
+  \[FindingId \<String\>\]: The unique identifier of finding
   \[GovernanceInsightId \<String\>\]: The unique identifier of governanceInsight
   \[GovernanceResourceId \<String\>\]: The unique identifier of governanceResource
   \[GovernanceRoleAssignmentId \<String\>\]: The unique identifier of governanceRoleAssignment
@@ -290,6 +293,8 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[IncompatibleAccessPackageId \<String\>\]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   \[LongRunningOperationId \<String\>\]: The unique identifier of longRunningOperation
   \[On \<String\>\]: Usage: on='{on}'
+  \[PermissionsCreepIndexDistributionId \<String\>\]: The unique identifier of permissionsCreepIndexDistribution
+  \[PermissionsRequestChangeId \<String\>\]: The unique identifier of permissionsRequestChange
   \[PrivilegedAccessGroupAssignmentScheduleId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentSchedule
   \[PrivilegedAccessGroupAssignmentScheduleInstanceId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentScheduleInstance
   \[PrivilegedAccessGroupAssignmentScheduleRequestId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentScheduleRequest

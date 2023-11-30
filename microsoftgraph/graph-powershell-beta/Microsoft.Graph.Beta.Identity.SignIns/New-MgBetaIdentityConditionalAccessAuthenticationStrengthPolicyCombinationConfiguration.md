@@ -3,13 +3,14 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessauthenticationstrengthpolicycombinationconfiguration
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # New-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration
 
 ## SYNOPSIS
 Create a new authenticationCombinationConfiguration object.
-In use, only fido2combinationConfigurations may be created, and these may only be created for custom authentication strength policies.
+In use, only fido2combinationConfigurations might be created, and only for custom authentication strength policies.
 This API is available in the following national cloud deployments.
 
 > [!NOTE]
@@ -62,7 +63,7 @@ New-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfig
 
 ## DESCRIPTION
 Create a new authenticationCombinationConfiguration object.
-In use, only fido2combinationConfigurations may be created, and these may only be created for custom authentication strength policies.
+In use, only fido2combinationConfigurations might be created, and only for custom authentication strength policies.
 This API is available in the following national cloud deployments.
 
 ## PARAMETERS

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetadeclinegroupcalendarevent
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Invoke-MgBetaDeclineGroupCalendarEvent
@@ -11,6 +12,7 @@ schema: 2.0.0
 Decline invitation to the specified event in a user calendar.
 If the event allows proposals for new times, on declining the event, an invitee can choose to suggest an alternative time by including the proposedNewTime parameter.
 For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgDeclineGroupCalendarEvent](/powershell/module/Microsoft.Graph.Groups/Invoke-MgDeclineGroupCalendarEvent?view=graph-powershell-1.0)
@@ -49,6 +51,7 @@ Invoke-MgBetaDeclineGroupCalendarEvent -InputObject <IGroupsIdentity>
 Decline invitation to the specified event in a user calendar.
 If the event allows proposals for new times, on declining the event, an invitee can choose to suggest an alternative time by including the proposedNewTime parameter.
 For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

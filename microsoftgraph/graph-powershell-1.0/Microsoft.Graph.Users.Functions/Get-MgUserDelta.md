@@ -13,12 +13,6 @@ Invoke function delta
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserDelta?view=graph-powershell-beta)
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserDelta?view=graph-powershell-beta)
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserDelta?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
@@ -50,7 +44,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -96,7 +90,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -156,7 +150,7 @@ Aliases: Limit
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -171,7 +165,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -186,11 +180,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUser
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
 [Get-MgBetaUserDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserDelta?view=graph-powershell-beta)
 
-[Get-MgBetaUserDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserDelta?view=graph-powershell-beta)
+[https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguserdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguserdelta)
 
-[Get-MgBetaUserDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserDelta?view=graph-powershell-beta)

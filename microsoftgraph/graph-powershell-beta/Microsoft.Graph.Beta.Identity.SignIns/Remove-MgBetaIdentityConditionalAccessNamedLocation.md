@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityconditionalaccessnamedlocation
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Remove-MgBetaIdentityConditionalAccessNamedLocation
 
 ## SYNOPSIS
-Delete a countryNamedLocation object.
+Delete an ipNamedLocation object.
 This API is available in the following national cloud deployments.
 
 > [!NOTE]
@@ -29,7 +30,7 @@ Remove-MgBetaIdentityConditionalAccessNamedLocation -InputObject <IIdentitySignI
 ```
 
 ## DESCRIPTION
-Delete a countryNamedLocation object.
+Delete an ipNamedLocation object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES

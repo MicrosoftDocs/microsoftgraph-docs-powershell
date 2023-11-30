@@ -3,13 +3,14 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinitionbot
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # Get-MgBetaAppCatalogTeamAppDefinitionBot
 
 ## SYNOPSIS
 Get the bot associated with a specific definition of the  TeamsApp.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgAppCatalogTeamAppDefinitionBot](/powershell/module/Microsoft.Graph.Teams/Get-MgAppCatalogTeamAppDefinitionBot?view=graph-powershell-1.0)
@@ -30,7 +31,7 @@ Get-MgBetaAppCatalogTeamAppDefinitionBot -InputObject <ITeamsIdentity> [-ExpandP
 
 ## DESCRIPTION
 Get the bot associated with a specific definition of the  TeamsApp.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

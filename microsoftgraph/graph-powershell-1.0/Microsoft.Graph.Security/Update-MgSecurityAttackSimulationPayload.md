@@ -54,8 +54,6 @@ Update-MgSecurityAttackSimulationPayload -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property payloads in security
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -136,7 +134,9 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-.
+Date and time when the attack simulation and training campaign payload.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
 Type: DateTime
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-.
+Description of the attack simulation and training campaign payload.
 
 ```yaml
 Type: String
@@ -182,7 +182,8 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+Display name of the attack simulation and training campaign payload.
+Supports $filter and $orderby.
 
 ```yaml
 Type: String
@@ -244,7 +245,8 @@ Accept wildcard characters: False
 ```
 
 ### -IsAutomated
-.
+Indicates whether the attack simulation and training campaign payload was created from an automation flow.
+Supports $filter and $orderby.
 
 ```yaml
 Type: SwitchParameter
@@ -253,13 +255,13 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -IsControversial
-.
+Indicates whether the payload is controversial.
 
 ```yaml
 Type: SwitchParameter
@@ -268,13 +270,13 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -IsCurrentEvent
-.
+Indicates whether the payload is from any recent event.
 
 ```yaml
 Type: SwitchParameter
@@ -283,13 +285,13 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -Language
-.
+Payload language.
 
 ```yaml
 Type: String
@@ -320,7 +322,9 @@ Accept wildcard characters: False
 ```
 
 ### -LastModifiedDateTime
-.
+Date and time when the attack simulation and training campaign payload was last modified.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
 Type: DateTime
@@ -350,7 +354,7 @@ Accept wildcard characters: False
 ```
 
 ### -PayloadTags
-.
+Free text tags for a payload.
 
 ```yaml
 Type: String[]
@@ -380,7 +384,7 @@ Accept wildcard characters: False
 ```
 
 ### -PredictedCompromiseRate
-.
+Predicted probability for a payload to phish a targeted user.
 
 ```yaml
 Type: Double
@@ -389,7 +393,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -511,140 +515,153 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPayload
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+BODYPARAMETER \<IMicrosoftGraphPayload\>: payload
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[Brand \<String\>\]: payloadBrand
+  \[Complexity \<String\>\]: payloadComplexity
+  \[CreatedBy \<IMicrosoftGraphEmailIdentity\>\]: emailIdentity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.
+The display name might not always be available or up to date.
+For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    \[Id \<String\>\]: Unique identifier for the identity.
+    \[Email \<String\>\]: Email address of the user.
+  \[CreatedDateTime \<DateTime?\>\]: Date and time when the attack simulation and training campaign payload.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  \[Description \<String\>\]: Description of the attack simulation and training campaign payload.
+  \[Detail \<IMicrosoftGraphPayloadDetail\>\]: payloadDetail
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Coachmarks \<IMicrosoftGraphPayloadCoachmark\[\]\>\]: Payload coachmark details.
+      \[CoachmarkLocation \<IMicrosoftGraphCoachmarkLocation\>\]: coachmarkLocation
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[Length \<Int32?\>\]: Length of coachmark.
+        \[Offset \<Int32?\>\]: Offset of coachmark.
+        \[Type \<String\>\]: coachmarkLocationType
+      \[Description \<String\>\]: The description about the coachmark.
+      \[Indicator \<String\>\]: The coachmark indicator.
+      \[IsValid \<Boolean?\>\]: Indicates whether the coachmark is valid or not.
+      \[Language \<String\>\]: The coachmark language.
+      \[Order \<String\>\]: The coachmark order.
+    \[Content \<String\>\]: Payload content details.
+    \[PhishingUrl \<String\>\]: The phishing URL used to target a user.
+  \[DisplayName \<String\>\]: Display name of the attack simulation and training campaign payload.
+Supports $filter and $orderby.
+  \[Industry \<String\>\]: payloadIndustry
+  \[IsAutomated \<Boolean?\>\]: Indicates whether the attack simulation and training campaign payload was created from an automation flow.
+Supports $filter and $orderby.
+  \[IsControversial \<Boolean?\>\]: Indicates whether the payload is controversial.
+  \[IsCurrentEvent \<Boolean?\>\]: Indicates whether the payload is from any recent event.
+  \[Language \<String\>\]: Payload language.
+  \[LastModifiedBy \<IMicrosoftGraphEmailIdentity\>\]: emailIdentity
+  \[LastModifiedDateTime \<DateTime?\>\]: Date and time when the attack simulation and training campaign payload was last modified.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  \[PayloadTags \<String\[\]\>\]: Free text tags for a payload.
+  \[Platform \<String\>\]: payloadDeliveryPlatform
+  \[PredictedCompromiseRate \<Double?\>\]: Predicted probability for a payload to phish a targeted user.
+  \[SimulationAttackType \<String\>\]: simulationAttackType
+  \[Source \<String\>\]: simulationContentSource
+  \[Status \<String\>\]: simulationContentStatus
+  \[Technique \<String\>\]: simulationAttackTechnique
+  \[Theme \<String\>\]: payloadTheme
 
-`BODYPARAMETER <IMicrosoftGraphPayload>`: payload
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Brand <String>]`: payloadBrand
-  - `[Complexity <String>]`: payloadComplexity
-  - `[CreatedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. The display name might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-    - `[Email <String>]`: Email address of the user.
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[Description <String>]`: 
-  - `[Detail <IMicrosoftGraphPayloadDetail>]`: payloadDetail
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Coachmarks <IMicrosoftGraphPayloadCoachmark[]>]`: 
-      - `[CoachmarkLocation <IMicrosoftGraphCoachmarkLocation>]`: coachmarkLocation
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Length <Int32?>]`: 
-        - `[Offset <Int32?>]`: 
-        - `[Type <String>]`: coachmarkLocationType
-      - `[Description <String>]`: 
-      - `[Indicator <String>]`: 
-      - `[IsValid <Boolean?>]`: 
-      - `[Language <String>]`: 
-      - `[Order <String>]`: 
-    - `[Content <String>]`: 
-    - `[PhishingUrl <String>]`: 
-  - `[DisplayName <String>]`: 
-  - `[Industry <String>]`: payloadIndustry
-  - `[IsAutomated <Boolean?>]`: 
-  - `[IsControversial <Boolean?>]`: 
-  - `[IsCurrentEvent <Boolean?>]`: 
-  - `[Language <String>]`: 
-  - `[LastModifiedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
-  - `[LastModifiedDateTime <DateTime?>]`: 
-  - `[PayloadTags <String[]>]`: 
-  - `[Platform <String>]`: payloadDeliveryPlatform
-  - `[PredictedCompromiseRate <Double?>]`: 
-  - `[SimulationAttackType <String>]`: simulationAttackType
-  - `[Source <String>]`: simulationContentSource
-  - `[Status <String>]`: simulationContentStatus
-  - `[Technique <String>]`: simulationAttackTechnique
-  - `[Theme <String>]`: payloadTheme
+CREATEDBY \<IMicrosoftGraphEmailIdentity\>: emailIdentity
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DisplayName \<String\>\]: The display name of the identity.
+The display name might not always be available or up to date.
+For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+  \[Id \<String\>\]: Unique identifier for the identity.
+  \[Email \<String\>\]: Email address of the user.
 
-`CREATEDBY <IMicrosoftGraphEmailIdentity>`: emailIdentity
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: The display name of the identity. The display name might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-  - `[Id <String>]`: Unique identifier for the identity.
-  - `[Email <String>]`: Email address of the user.
+DETAIL \<IMicrosoftGraphPayloadDetail\>: payloadDetail
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Coachmarks \<IMicrosoftGraphPayloadCoachmark\[\]\>\]: Payload coachmark details.
+    \[CoachmarkLocation \<IMicrosoftGraphCoachmarkLocation\>\]: coachmarkLocation
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Length \<Int32?\>\]: Length of coachmark.
+      \[Offset \<Int32?\>\]: Offset of coachmark.
+      \[Type \<String\>\]: coachmarkLocationType
+    \[Description \<String\>\]: The description about the coachmark.
+    \[Indicator \<String\>\]: The coachmark indicator.
+    \[IsValid \<Boolean?\>\]: Indicates whether the coachmark is valid or not.
+    \[Language \<String\>\]: The coachmark language.
+    \[Order \<String\>\]: The coachmark order.
+  \[Content \<String\>\]: Payload content details.
+  \[PhishingUrl \<String\>\]: The phishing URL used to target a user.
 
-`DETAIL <IMicrosoftGraphPayloadDetail>`: payloadDetail
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Coachmarks <IMicrosoftGraphPayloadCoachmark[]>]`: 
-    - `[CoachmarkLocation <IMicrosoftGraphCoachmarkLocation>]`: coachmarkLocation
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Length <Int32?>]`: 
-      - `[Offset <Int32?>]`: 
-      - `[Type <String>]`: coachmarkLocationType
-    - `[Description <String>]`: 
-    - `[Indicator <String>]`: 
-    - `[IsValid <Boolean?>]`: 
-    - `[Language <String>]`: 
-    - `[Order <String>]`: 
-  - `[Content <String>]`: 
-  - `[PhishingUrl <String>]`: 
+INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
+  \[AlertId \<String\>\]: The unique identifier of alert
+  \[ArticleId \<String\>\]: The unique identifier of article
+  \[ArticleIndicatorId \<String\>\]: The unique identifier of articleIndicator
+  \[AttackSimulationOperationId \<String\>\]: The unique identifier of attackSimulationOperation
+  \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
+  \[CaseOperationId \<String\>\]: The unique identifier of caseOperation
+  \[DataSourceId \<String\>\]: The unique identifier of dataSource
+  \[EdiscoveryCaseId \<String\>\]: The unique identifier of ediscoveryCase
+  \[EdiscoveryCustodianId \<String\>\]: The unique identifier of ediscoveryCustodian
+  \[EdiscoveryNoncustodialDataSourceId \<String\>\]: The unique identifier of ediscoveryNoncustodialDataSource
+  \[EdiscoveryReviewSetId \<String\>\]: The unique identifier of ediscoveryReviewSet
+  \[EdiscoveryReviewSetQueryId \<String\>\]: The unique identifier of ediscoveryReviewSetQuery
+  \[EdiscoveryReviewTagId \<String\>\]: The unique identifier of ediscoveryReviewTag
+  \[EdiscoveryReviewTagId1 \<String\>\]: The unique identifier of ediscoveryReviewTag
+  \[EdiscoverySearchId \<String\>\]: The unique identifier of ediscoverySearch
+  \[EndUserNotificationDetailId \<String\>\]: The unique identifier of endUserNotificationDetail
+  \[EndUserNotificationId \<String\>\]: The unique identifier of endUserNotification
+  \[HostComponentId \<String\>\]: The unique identifier of hostComponent
+  \[HostCookieId \<String\>\]: The unique identifier of hostCookie
+  \[HostId \<String\>\]: The unique identifier of host
+  \[HostPairId \<String\>\]: The unique identifier of hostPair
+  \[HostPortId \<String\>\]: The unique identifier of hostPort
+  \[HostSslCertificateId \<String\>\]: The unique identifier of hostSslCertificate
+  \[HostTrackerId \<String\>\]: The unique identifier of hostTracker
+  \[IncidentId \<String\>\]: The unique identifier of incident
+  \[IntelligenceProfileId \<String\>\]: The unique identifier of intelligenceProfile
+  \[IntelligenceProfileIndicatorId \<String\>\]: The unique identifier of intelligenceProfileIndicator
+  \[LandingPageDetailId \<String\>\]: The unique identifier of landingPageDetail
+  \[LandingPageId \<String\>\]: The unique identifier of landingPage
+  \[LoginPageId \<String\>\]: The unique identifier of loginPage
+  \[PassiveDnsRecordId \<String\>\]: The unique identifier of passiveDnsRecord
+  \[PayloadId \<String\>\]: The unique identifier of payload
+  \[RetentionEventId \<String\>\]: The unique identifier of retentionEvent
+  \[RetentionEventTypeId \<String\>\]: The unique identifier of retentionEventType
+  \[SecureScoreControlProfileId \<String\>\]: The unique identifier of secureScoreControlProfile
+  \[SecureScoreId \<String\>\]: The unique identifier of secureScore
+  \[SimulationAutomationId \<String\>\]: The unique identifier of simulationAutomation
+  \[SimulationAutomationRunId \<String\>\]: The unique identifier of simulationAutomationRun
+  \[SimulationId \<String\>\]: The unique identifier of simulation
+  \[SiteSourceId \<String\>\]: The unique identifier of siteSource
+  \[SslCertificateId \<String\>\]: The unique identifier of sslCertificate
+  \[SubdomainId \<String\>\]: The unique identifier of subdomain
+  \[SubjectRightsRequestId \<String\>\]: The unique identifier of subjectRightsRequest
+  \[TrainingId \<String\>\]: The unique identifier of training
+  \[TrainingLanguageDetailId \<String\>\]: The unique identifier of trainingLanguageDetail
+  \[UnifiedGroupSourceId \<String\>\]: The unique identifier of unifiedGroupSource
+  \[UserId \<String\>\]: The unique identifier of user
+  \[UserSourceId \<String\>\]: The unique identifier of userSource
+  \[VulnerabilityComponentId \<String\>\]: The unique identifier of vulnerabilityComponent
+  \[VulnerabilityId \<String\>\]: The unique identifier of vulnerability
+  \[WhoisHistoryRecordId \<String\>\]: The unique identifier of whoisHistoryRecord
+  \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
-`INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
-  - `[AlertId <String>]`: The unique identifier of alert
-  - `[ArticleId <String>]`: The unique identifier of article
-  - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
-  - `[AttackSimulationOperationId <String>]`: The unique identifier of attackSimulationOperation
-  - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
-  - `[CaseOperationId <String>]`: The unique identifier of caseOperation
-  - `[DataSourceId <String>]`: The unique identifier of dataSource
-  - `[EdiscoveryCaseId <String>]`: The unique identifier of ediscoveryCase
-  - `[EdiscoveryCustodianId <String>]`: The unique identifier of ediscoveryCustodian
-  - `[EdiscoveryNoncustodialDataSourceId <String>]`: The unique identifier of ediscoveryNoncustodialDataSource
-  - `[EdiscoveryReviewSetId <String>]`: The unique identifier of ediscoveryReviewSet
-  - `[EdiscoveryReviewSetQueryId <String>]`: The unique identifier of ediscoveryReviewSetQuery
-  - `[EdiscoveryReviewTagId <String>]`: The unique identifier of ediscoveryReviewTag
-  - `[EdiscoveryReviewTagId1 <String>]`: The unique identifier of ediscoveryReviewTag
-  - `[EdiscoverySearchId <String>]`: The unique identifier of ediscoverySearch
-  - `[EndUserNotificationDetailId <String>]`: The unique identifier of endUserNotificationDetail
-  - `[EndUserNotificationId <String>]`: The unique identifier of endUserNotification
-  - `[HostComponentId <String>]`: The unique identifier of hostComponent
-  - `[HostCookieId <String>]`: The unique identifier of hostCookie
-  - `[HostId <String>]`: The unique identifier of host
-  - `[HostPairId <String>]`: The unique identifier of hostPair
-  - `[HostSslCertificateId <String>]`: The unique identifier of hostSslCertificate
-  - `[HostTrackerId <String>]`: The unique identifier of hostTracker
-  - `[IncidentId <String>]`: The unique identifier of incident
-  - `[IntelligenceProfileId <String>]`: The unique identifier of intelligenceProfile
-  - `[IntelligenceProfileIndicatorId <String>]`: The unique identifier of intelligenceProfileIndicator
-  - `[LandingPageDetailId <String>]`: The unique identifier of landingPageDetail
-  - `[LandingPageId <String>]`: The unique identifier of landingPage
-  - `[LoginPageId <String>]`: The unique identifier of loginPage
-  - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
-  - `[PayloadId <String>]`: The unique identifier of payload
-  - `[RetentionEventId <String>]`: The unique identifier of retentionEvent
-  - `[RetentionEventTypeId <String>]`: The unique identifier of retentionEventType
-  - `[SecureScoreControlProfileId <String>]`: The unique identifier of secureScoreControlProfile
-  - `[SecureScoreId <String>]`: The unique identifier of secureScore
-  - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
-  - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
-  - `[SimulationId <String>]`: The unique identifier of simulation
-  - `[SiteSourceId <String>]`: The unique identifier of siteSource
-  - `[SslCertificateId <String>]`: The unique identifier of sslCertificate
-  - `[SubdomainId <String>]`: The unique identifier of subdomain
-  - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
-  - `[TrainingId <String>]`: The unique identifier of training
-  - `[TrainingLanguageDetailId <String>]`: The unique identifier of trainingLanguageDetail
-  - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
-  - `[UserId <String>]`: The unique identifier of user
-  - `[UserSourceId <String>]`: The unique identifier of userSource
-  - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
-  - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
-  - `[WhoisHistoryRecordId <String>]`: The unique identifier of whoisHistoryRecord
-  - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
-
-`LASTMODIFIEDBY <IMicrosoftGraphEmailIdentity>`: emailIdentity
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: The display name of the identity. The display name might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-  - `[Id <String>]`: Unique identifier for the identity.
-  - `[Email <String>]`: Email address of the user.
+LASTMODIFIEDBY \<IMicrosoftGraphEmailIdentity\>: emailIdentity
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DisplayName \<String\>\]: The display name of the identity.
+The display name might not always be available or up to date.
+For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+  \[Id \<String\>\]: Unique identifier for the identity.
+  \[Email \<String\>\]: Email address of the user.
 
 ## RELATED LINKS
-
 [Update-MgBetaSecurityAttackSimulationPayload](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityAttackSimulationPayload?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityattacksimulationpayload](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityattacksimulationpayload)
+
 

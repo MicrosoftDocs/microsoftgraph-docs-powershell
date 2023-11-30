@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfolderchildfoldermessage
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Get-MgBetaUserMailFolderChildFolderMessage
@@ -36,6 +37,8 @@ Get-MgBetaUserMailFolderChildFolderMessage -InputObject <IMailIdentity> [-Expand
 
 ## DESCRIPTION
 The collection of messages in the mailFolder.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -297,5 +300,4 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
 [Get-MgUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderChildFolderMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfolderchildfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfolderchildfoldermessage)
-
 

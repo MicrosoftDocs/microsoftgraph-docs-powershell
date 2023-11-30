@@ -46,8 +46,6 @@ Add-MgExternalConnectionItemActivity -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Invoke action addActivities
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Activities
@@ -185,43 +183,50 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalActivityResult
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+ACTIVITIES \<IMicrosoftGraphExternalConnectorsExternalActivity\[\]\>: .
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[PerformedBy \<IMicrosoftGraphExternalConnectorsIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[Type \<String\>\]: identityType
+  \[StartDateTime \<DateTime?\>\]: The date and time when the particular activity occurred.
+The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  \[Type \<String\>\]: externalActivityType
 
-`ACTIVITIES <IMicrosoftGraphExternalConnectorsExternalActivity[]>`: .
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[PerformedBy <IMicrosoftGraphExternalConnectorsIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[Type <String>]`: identityType
-  - `[StartDateTime <DateTime?>]`: The date and time when the particular activity occurred. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[Type <String>]`: externalActivityType
+BODYPARAMETER \<IPaths5Uv0B2ExternalConnectionsExternalconnectionIdItemsExternalitemIdMicrosoftGraphExternalconnectorsAddactivitiesPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Activities \<IMicrosoftGraphExternalConnectorsExternalActivity\[\]\>\]: 
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[PerformedBy \<IMicrosoftGraphExternalConnectorsIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+      \[Type \<String\>\]: identityType
+    \[StartDateTime \<DateTime?\>\]: The date and time when the particular activity occurred.
+The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    \[Type \<String\>\]: externalActivityType
 
-`BODYPARAMETER <IPaths5Uv0B2ExternalConnectionsExternalconnectionIdItemsExternalitemIdMicrosoftGraphExternalconnectorsAddactivitiesPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Activities <IMicrosoftGraphExternalConnectorsExternalActivity[]>]`: 
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[PerformedBy <IMicrosoftGraphExternalConnectorsIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
-      - `[Type <String>]`: identityType
-    - `[StartDateTime <DateTime?>]`: The date and time when the particular activity occurred. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    - `[Type <String>]`: externalActivityType
-
-`INPUTOBJECT <ISearchIdentity>`: Identity Parameter
-  - `[ConnectionOperationId <String>]`: The unique identifier of connectionOperation
-  - `[ExternalActivityId <String>]`: The unique identifier of externalActivity
-  - `[ExternalConnectionId <String>]`: The unique identifier of externalConnection
-  - `[ExternalGroupId <String>]`: The unique identifier of externalGroup
-  - `[ExternalItemId <String>]`: The unique identifier of externalItem
-  - `[IdentityId <String>]`: The unique identifier of identity
+INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
+  \[ConnectionOperationId \<String\>\]: The unique identifier of connectionOperation
+  \[ExternalActivityId \<String\>\]: The unique identifier of externalActivity
+  \[ExternalConnectionId \<String\>\]: The unique identifier of externalConnection
+  \[ExternalGroupId \<String\>\]: The unique identifier of externalGroup
+  \[ExternalItemId \<String\>\]: The unique identifier of externalItem
+  \[IdentityId \<String\>\]: The unique identifier of identity
 
 ## RELATED LINKS
-
 [Add-MgBetaExternalConnectionItemActivity](/powershell/module/Microsoft.Graph.Beta.Search/Add-MgBetaExternalConnectionItemActivity?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.search/add-mgexternalconnectionitemactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.search/add-mgexternalconnectionitemactivity)
+
 

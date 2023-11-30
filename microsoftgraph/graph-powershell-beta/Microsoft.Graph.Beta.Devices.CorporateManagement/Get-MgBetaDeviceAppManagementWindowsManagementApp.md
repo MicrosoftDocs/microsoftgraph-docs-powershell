@@ -62,9 +62,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsManagementApp
 ## NOTES
 
-ALIASES
-
-Get-MgBetaDeviceAppMgtWindowManagementApp
-
 ## RELATED LINKS
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementwindowsmanagementapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementwindowsmanagementapp)
+
 

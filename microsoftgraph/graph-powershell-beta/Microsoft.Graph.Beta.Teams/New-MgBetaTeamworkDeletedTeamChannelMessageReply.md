@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Send a new reply to a chatMessage in a specified channel.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgTeamworkDeletedTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedTeamChannelMessageReply?view=graph-powershell-1.0)
@@ -63,7 +63,9 @@ New-MgBetaTeamworkDeletedTeamChannelMessageReply -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Send a new reply to a chatMessage in a specified channel.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -688,9 +690,9 @@ Version number of the chat message.
     \[Application \<IMicrosoftGraphIdentity\>\]: identity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+This might not always be available or up to date.
+For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      \[Id \<String\>\]: Unique identifier for the identity.
     \[Device \<IMicrosoftGraphIdentity\>\]: identity
     \[User \<IMicrosoftGraphIdentity\>\]: identity
   \[HostedContents \<IMicrosoftGraphChatMessageHostedContent\[\]\>\]: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
@@ -723,16 +725,16 @@ For example, a user's display name, a team name.
       \[Conversation \<IMicrosoftGraphTeamworkConversationIdentity\>\]: teamworkConversationIdentity
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-        \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+This might not always be available or up to date.
+For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        \[Id \<String\>\]: Unique identifier for the identity.
         \[ConversationIdentityType \<String\>\]: teamworkConversationIdentityType
       \[Tag \<IMicrosoftGraphTeamworkTagIdentity\>\]: teamworkTagIdentity
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-        \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+This might not always be available or up to date.
+For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        \[Id \<String\>\]: Unique identifier for the identity.
   \[MessageHistory \<IMicrosoftGraphChatMessageHistoryItem\[\]\>\]: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
     \[Actions \<String\>\]: chatMessageActions
     \[ModifiedDateTime \<DateTime?\>\]: The date and time when the message was modified.
@@ -837,24 +839,24 @@ For example, a user's display name, a team name.
     \[Application \<IMicrosoftGraphIdentity\>\]: identity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+This might not always be available or up to date.
+For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      \[Id \<String\>\]: Unique identifier for the identity.
     \[Device \<IMicrosoftGraphIdentity\>\]: identity
     \[User \<IMicrosoftGraphIdentity\>\]: identity
     \[Conversation \<IMicrosoftGraphTeamworkConversationIdentity\>\]: teamworkConversationIdentity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+This might not always be available or up to date.
+For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      \[Id \<String\>\]: Unique identifier for the identity.
       \[ConversationIdentityType \<String\>\]: teamworkConversationIdentityType
     \[Tag \<IMicrosoftGraphTeamworkTagIdentity\>\]: teamworkTagIdentity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+This might not always be available or up to date.
+For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      \[Id \<String\>\]: Unique identifier for the identity.
 
 MESSAGEHISTORY \<IMicrosoftGraphChatMessageHistoryItem\[\]\>: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
   \[Actions \<String\>\]: chatMessageActions
@@ -869,9 +871,9 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       \[Application \<IMicrosoftGraphIdentity\>\]: identity
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-        \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+This might not always be available or up to date.
+For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        \[Id \<String\>\]: Unique identifier for the identity.
       \[Device \<IMicrosoftGraphIdentity\>\]: identity
       \[User \<IMicrosoftGraphIdentity\>\]: identity
 
@@ -898,9 +900,9 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     \[Application \<IMicrosoftGraphIdentity\>\]: identity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+This might not always be available or up to date.
+For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      \[Id \<String\>\]: Unique identifier for the identity.
     \[Device \<IMicrosoftGraphIdentity\>\]: identity
     \[User \<IMicrosoftGraphIdentity\>\]: identity
 
@@ -948,9 +950,9 @@ Version number of the chat message.
     \[Application \<IMicrosoftGraphIdentity\>\]: identity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+This might not always be available or up to date.
+For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      \[Id \<String\>\]: Unique identifier for the identity.
     \[Device \<IMicrosoftGraphIdentity\>\]: identity
     \[User \<IMicrosoftGraphIdentity\>\]: identity
   \[HostedContents \<IMicrosoftGraphChatMessageHostedContent\[\]\>\]: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
@@ -983,16 +985,16 @@ For example, a user's display name, a team name.
       \[Conversation \<IMicrosoftGraphTeamworkConversationIdentity\>\]: teamworkConversationIdentity
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-        \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+This might not always be available or up to date.
+For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        \[Id \<String\>\]: Unique identifier for the identity.
         \[ConversationIdentityType \<String\>\]: teamworkConversationIdentityType
       \[Tag \<IMicrosoftGraphTeamworkTagIdentity\>\]: teamworkTagIdentity
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-        \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+This might not always be available or up to date.
+For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        \[Id \<String\>\]: Unique identifier for the identity.
   \[MessageHistory \<IMicrosoftGraphChatMessageHistoryItem\[\]\>\]: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
     \[Actions \<String\>\]: chatMessageActions
     \[ModifiedDateTime \<DateTime?\>\]: The date and time when the message was modified.
@@ -1037,5 +1039,4 @@ Link to the message in Microsoft Teams.
 [New-MgTeamworkDeletedTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedTeamChannelMessageReply?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkdeletedteamchannelmessagereply](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkdeletedteamchannelmessagereply)
-
 

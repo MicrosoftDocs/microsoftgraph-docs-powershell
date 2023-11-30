@@ -206,64 +206,68 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnlineMeeting
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+BODYPARAMETER \<IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ChatInfo \<IMicrosoftGraphChatInfo\>\]: chatInfo
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[MessageId \<String\>\]: The unique identifier for a message in a Microsoft Teams channel.
+    \[ReplyChainMessageId \<String\>\]: The ID of the reply message.
+    \[ThreadId \<String\>\]: The unique identifier for a thread in Microsoft Teams.
+  \[EndDateTime \<DateTime?\>\]: 
+  \[ExternalId \<String\>\]: 
+  \[Participants \<IMicrosoftGraphMeetingParticipants\>\]: meetingParticipants
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Attendees \<IMicrosoftGraphMeetingParticipantInfo\[\]\>\]: Information of the meeting attendees.
+      \[Identity \<IMicrosoftGraphIdentitySet\>\]: identitySet
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[Application \<IMicrosoftGraphIdentity\>\]: identity
+          \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+          \[DisplayName \<String\>\]: The display name of the identity.
+This property is read-only.
+          \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
+        \[Device \<IMicrosoftGraphIdentity\>\]: identity
+        \[User \<IMicrosoftGraphIdentity\>\]: identity
+      \[Role \<String\>\]: onlineMeetingRole
+      \[Upn \<String\>\]: User principal name of the participant.
+    \[Contributors \<IMicrosoftGraphMeetingParticipantInfo\[\]\>\]: 
+    \[Organizer \<IMicrosoftGraphMeetingParticipantInfo\>\]: meetingParticipantInfo
+    \[Producers \<IMicrosoftGraphMeetingParticipantInfo\[\]\>\]: 
+  \[StartDateTime \<DateTime?\>\]: 
+  \[Subject \<String\>\]: 
 
-`BODYPARAMETER <IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ChatInfo <IMicrosoftGraphChatInfo>]`: chatInfo
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channel.
-    - `[ReplyChainMessageId <String>]`: The ID of the reply message.
-    - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
-  - `[EndDateTime <DateTime?>]`: 
-  - `[ExternalId <String>]`: 
-  - `[Participants <IMicrosoftGraphMeetingParticipants>]`: meetingParticipants
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Attendees <IMicrosoftGraphMeetingParticipantInfo[]>]`: Information of the meeting attendees.
-      - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Application <IMicrosoftGraphIdentity>]`: identity
-          - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-          - `[Id <String>]`: The identifier of the identity. This property is read-only.
-        - `[Device <IMicrosoftGraphIdentity>]`: identity
-        - `[User <IMicrosoftGraphIdentity>]`: identity
-      - `[Role <String>]`: onlineMeetingRole
-      - `[Upn <String>]`: User principal name of the participant.
-    - `[Contributors <IMicrosoftGraphMeetingParticipantInfo[]>]`: 
-    - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
-    - `[Producers <IMicrosoftGraphMeetingParticipantInfo[]>]`: 
-  - `[StartDateTime <DateTime?>]`: 
-  - `[Subject <String>]`: 
+CHATINFO \<IMicrosoftGraphChatInfo\>: chatInfo
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[MessageId \<String\>\]: The unique identifier for a message in a Microsoft Teams channel.
+  \[ReplyChainMessageId \<String\>\]: The ID of the reply message.
+  \[ThreadId \<String\>\]: The unique identifier for a thread in Microsoft Teams.
 
-`CHATINFO <IMicrosoftGraphChatInfo>`: chatInfo
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channel.
-  - `[ReplyChainMessageId <String>]`: The ID of the reply message.
-  - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
-
-`PARTICIPANTS <IMicrosoftGraphMeetingParticipants>`: meetingParticipants
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Attendees <IMicrosoftGraphMeetingParticipantInfo[]>]`: Information of the meeting attendees.
-    - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Application <IMicrosoftGraphIdentity>]`: identity
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-        - `[Id <String>]`: The identifier of the identity. This property is read-only.
-      - `[Device <IMicrosoftGraphIdentity>]`: identity
-      - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[Role <String>]`: onlineMeetingRole
-    - `[Upn <String>]`: User principal name of the participant.
-  - `[Contributors <IMicrosoftGraphMeetingParticipantInfo[]>]`: 
-  - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
-  - `[Producers <IMicrosoftGraphMeetingParticipantInfo[]>]`: 
+PARTICIPANTS \<IMicrosoftGraphMeetingParticipants\>: meetingParticipants
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Attendees \<IMicrosoftGraphMeetingParticipantInfo\[\]\>\]: Information of the meeting attendees.
+    \[Identity \<IMicrosoftGraphIdentitySet\>\]: identitySet
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Application \<IMicrosoftGraphIdentity\>\]: identity
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[DisplayName \<String\>\]: The display name of the identity.
+This property is read-only.
+        \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
+      \[Device \<IMicrosoftGraphIdentity\>\]: identity
+      \[User \<IMicrosoftGraphIdentity\>\]: identity
+    \[Role \<String\>\]: onlineMeetingRole
+    \[Upn \<String\>\]: User principal name of the participant.
+  \[Contributors \<IMicrosoftGraphMeetingParticipantInfo\[\]\>\]: 
+  \[Organizer \<IMicrosoftGraphMeetingParticipantInfo\>\]: meetingParticipantInfo
+  \[Producers \<IMicrosoftGraphMeetingParticipantInfo\[\]\>\]:
 
 ## RELATED LINKS
 [Invoke-MgCreateOrGetCommunicationOnlineMeeting](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgCreateOrGetCommunicationOnlineMeeting?view=graph-powershell-1.0)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetacreateorgetcommunicationonlinemeeting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetacreateorgetcommunicationonlinemeeting)
+

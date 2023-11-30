@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicy
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Update-MgBetaPolicyCrossTenantAccessPolicy
@@ -321,9 +322,10 @@ Office365 - Includes the applications mentioned as part of the Office365 suite.
     \[InvitationRedemptionIdentityProviderConfiguration \<IMicrosoftGraphDefaultInvitationRedemptionIdentityProviderConfiguration\>\]: defaultInvitationRedemptionIdentityProviderConfiguration
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[FallbackIdentityProvider \<String\>\]: b2bIdentityProvidersType
-      \[PrimaryIdentityProviderPrecedenceOrder \<String\[\]\>\]: 
+      \[PrimaryIdentityProviderPrecedenceOrder \<String\[\]\>\]: Collection of identity providers in priority order of preference to be used for guest invitation redemption.
+Possible values are: azureActiveDirectory, externalFederation, or socialIdentityProviders.
     \[IsServiceDefault \<Boolean?\>\]: If true, the default configuration is set to the system default configuration.
-If false, the default settings have been customized.
+If false, the default settings are customized.
     \[TenantRestrictions \<IMicrosoftGraphCrossTenantAccessPolicyTenantRestrictions\>\]: crossTenantAccessPolicyTenantRestrictions
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[Applications \<IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration\>\]: crossTenantAccessPolicyTargetConfiguration
@@ -409,9 +411,10 @@ Office365 - Includes the applications mentioned as part of the Office365 suite.
   \[InvitationRedemptionIdentityProviderConfiguration \<IMicrosoftGraphDefaultInvitationRedemptionIdentityProviderConfiguration\>\]: defaultInvitationRedemptionIdentityProviderConfiguration
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[FallbackIdentityProvider \<String\>\]: b2bIdentityProvidersType
-    \[PrimaryIdentityProviderPrecedenceOrder \<String\[\]\>\]: 
+    \[PrimaryIdentityProviderPrecedenceOrder \<String\[\]\>\]: Collection of identity providers in priority order of preference to be used for guest invitation redemption.
+Possible values are: azureActiveDirectory, externalFederation, or socialIdentityProviders.
   \[IsServiceDefault \<Boolean?\>\]: If true, the default configuration is set to the system default configuration.
-If false, the default settings have been customized.
+If false, the default settings are customized.
   \[TenantRestrictions \<IMicrosoftGraphCrossTenantAccessPolicyTenantRestrictions\>\]: crossTenantAccessPolicyTenantRestrictions
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[Applications \<IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration\>\]: crossTenantAccessPolicyTargetConfiguration

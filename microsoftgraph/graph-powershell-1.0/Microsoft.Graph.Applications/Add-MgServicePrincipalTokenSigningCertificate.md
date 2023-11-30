@@ -17,7 +17,7 @@ It and the associated private key object have the same value of keyId.
 When set during creation through the displayName property, the subject of the certificate cannot be updated.
 The startDateTime is set to the same time the certificate is created using the action.
 The endDateTime can be up to three years after the certificate is created.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Add-MgBetaServicePrincipalTokenSigningCertificate](/powershell/module/Microsoft.Graph.Beta.Applications/Add-MgBetaServicePrincipalTokenSigningCertificate?view=graph-powershell-beta)
@@ -60,7 +60,7 @@ It and the associated private key object have the same value of keyId.
 When set during creation through the displayName property, the subject of the certificate cannot be updated.
 The startDateTime is set to the same time the certificate is created using the action.
 The endDateTime can be up to three years after the certificate is created.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -216,41 +216,42 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSelfSignedCertificate
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+BODYPARAMETER \<IPathsEyijssServiceprincipalsServiceprincipalIdMicrosoftGraphAddtokensigningcertificatePostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DisplayName \<String\>\]: 
+  \[EndDateTime \<DateTime?\>\]: 
 
-`BODYPARAMETER <IPathsEyijssServiceprincipalsServiceprincipalIdMicrosoftGraphAddtokensigningcertificatePostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: 
-  - `[EndDateTime <DateTime?>]`: 
-
-`INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
-  - `[AppId <String>]`: Alternate key of application
-  - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
-  - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
-  - `[ApplicationId <String>]`: The unique identifier of application
-  - `[ApplicationTemplateId <String>]`: The unique identifier of applicationTemplate
-  - `[ClaimsMappingPolicyId <String>]`: The unique identifier of claimsMappingPolicy
-  - `[DelegatedPermissionClassificationId <String>]`: The unique identifier of delegatedPermissionClassification
-  - `[DirectoryDefinitionId <String>]`: The unique identifier of directoryDefinition
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[EndpointId <String>]`: The unique identifier of endpoint
-  - `[ExtensionPropertyId <String>]`: The unique identifier of extensionProperty
-  - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
-  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
-  - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
-  - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
-  - `[SynchronizationTemplateId <String>]`: The unique identifier of synchronizationTemplate
-  - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
-  - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
+  \[AppId \<String\>\]: Alternate key of application
+  \[AppManagementPolicyId \<String\>\]: The unique identifier of appManagementPolicy
+  \[AppRoleAssignmentId \<String\>\]: The unique identifier of appRoleAssignment
+  \[ApplicationId \<String\>\]: The unique identifier of application
+  \[ApplicationTemplateId \<String\>\]: The unique identifier of applicationTemplate
+  \[ClaimsMappingPolicyId \<String\>\]: The unique identifier of claimsMappingPolicy
+  \[DelegatedPermissionClassificationId \<String\>\]: The unique identifier of delegatedPermissionClassification
+  \[DirectoryDefinitionId \<String\>\]: The unique identifier of directoryDefinition
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[EndpointId \<String\>\]: The unique identifier of endpoint
+  \[ExtensionPropertyId \<String\>\]: The unique identifier of extensionProperty
+  \[FederatedIdentityCredentialId \<String\>\]: The unique identifier of federatedIdentityCredential
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[HomeRealmDiscoveryPolicyId \<String\>\]: The unique identifier of homeRealmDiscoveryPolicy
+  \[OAuth2PermissionGrantId \<String\>\]: The unique identifier of oAuth2PermissionGrant
+  \[ServicePrincipalId \<String\>\]: The unique identifier of servicePrincipal
+  \[SynchronizationJobId \<String\>\]: The unique identifier of synchronizationJob
+  \[SynchronizationTemplateId \<String\>\]: The unique identifier of synchronizationTemplate
+  \[TargetDeviceGroupId \<String\>\]: The unique identifier of targetDeviceGroup
+  \[TokenIssuancePolicyId \<String\>\]: The unique identifier of tokenIssuancePolicy
+  \[TokenLifetimePolicyId \<String\>\]: The unique identifier of tokenLifetimePolicy
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 [Add-MgBetaServicePrincipalTokenSigningCertificate](/powershell/module/Microsoft.Graph.Beta.Applications/Add-MgBetaServicePrincipalTokenSigningCertificate?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgserviceprincipaltokensigningcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgserviceprincipaltokensigningcertificate)
+

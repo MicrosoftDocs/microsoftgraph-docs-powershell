@@ -23,8 +23,6 @@ Get-MgIdentityGovernancePrivilegedAccess [-ExpandProperty <String[]>] [-Property
 ## DESCRIPTION
 Get privilegedAccess from identityGovernance
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -67,9 +65,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrivilegedAccessRoot
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
-
 [Get-MgBetaIdentityGovernancePrivilegedAccess](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernancePrivilegedAccess?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceprivilegedaccess](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceprivilegedaccess)
+
 

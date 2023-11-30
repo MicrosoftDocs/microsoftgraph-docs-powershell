@@ -23,8 +23,6 @@ Get-MgRoleManagementEntitlementManagement [-ExpandProperty <String[]>] [-Propert
 ## DESCRIPTION
 Container for roles and assignments for entitlement management resources.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -67,9 +65,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRbacApplication
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
-
 [Get-MgBetaRoleManagementEntitlementManagement](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagement?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagemententitlementmanagement](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagemententitlementmanagement)
+
 

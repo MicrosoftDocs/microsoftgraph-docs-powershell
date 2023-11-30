@@ -24,8 +24,6 @@ Get-MgIdentityB2XUserFlowIdentityProviderByRef -B2XIdentityUserFlowId <String> [
 ## DESCRIPTION
 Get ref of userFlowIdentityProviders from identity
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -38,7 +36,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -99,7 +97,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -144,7 +142,7 @@ Aliases: Limit
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -159,7 +157,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -174,9 +172,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.String
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
-
 [Get-MgBetaIdentityB2XUserFlowIdentityProviderByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityB2XUserFlowIdentityProviderByRef?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowidentityproviderbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowidentityproviderbyref)
+
 

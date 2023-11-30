@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/test-mgbetaserviceprincipalproperty
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Test-MgBetaServicePrincipalProperty
@@ -173,7 +174,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -219,20 +220,20 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`BODYPARAMETER <IPathsYq15M4ServiceprincipalsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: 
-  - `[EntityType <String>]`: 
-  - `[MailNickname <String>]`: 
-  - `[OnBehalfOfUserId <String>]`: 
+BODYPARAMETER \<IPathsYq15M4ServiceprincipalsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DisplayName \<String\>\]: 
+  \[EntityType \<String\>\]: 
+  \[MailNickname \<String\>\]: 
+  \[OnBehalfOfUserId \<String\>\]:
 
 ## RELATED LINKS
 [Test-MgServicePrincipalProperty](/powershell/module/Microsoft.Graph.Applications/Test-MgServicePrincipalProperty?view=graph-powershell-1.0)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/test-mgbetaserviceprincipalproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/test-mgbetaserviceprincipalproperty)
+

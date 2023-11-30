@@ -68,7 +68,7 @@ Accept wildcard characters: False
 
 ### -Benefits
 An explanation of why completing the recommendation will benefit you.
-Corresponds to the Value section of a recommendation shown in the Azure AD portal.
+Corresponds to the Value section of a recommendation shown in the Microsoft Entra admin center.
 
 ```yaml
 Type: String
@@ -239,7 +239,7 @@ Accept wildcard characters: False
 
 ### -Insights
 Describes why a recommendation uniquely applies to your directory.
-Corresponds to the Description section of a recommendation shown in the Azure AD portal.
+Corresponds to the Description section of a recommendation shown in the Microsoft Entra admin center.
 
 ```yaml
 Type: String
@@ -361,7 +361,7 @@ Accept wildcard characters: False
 
 ### -ReleaseType
 The current release type of the recommendation.
-The possible values are: preview or generallyAvailable.
+The possible values are: preview, generallyAvailable, unknownFutureValue.
 
 ```yaml
 Type: String
@@ -456,7 +456,7 @@ ACTIONSTEPS \<IMicrosoftGraphActionStep\[\]\>: List of actions to take to comple
   \[ActionUrl \<IMicrosoftGraphActionUrl\>\]: actionUrl
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: Brief title for the page that the links directs to.
-    \[Url \<String\>\]: The URL to the documentation or Azure portal page.
+    \[Url \<String\>\]: The URL to the documentation or Microsoft Entra admin center page.
   \[StepNumber \<Int64?\>\]: Indicates the position for this action in the order of the collection of actions to be taken.
   \[Text \<String\>\]: Friendly description of the action to take.
 
@@ -465,19 +465,19 @@ IMPACTEDRESOURCES \<IMicrosoftGraphImpactedResource\[\]\>: The list of directory
 Read-only.
   \[AddedDateTime \<DateTime?\>\]: The date and time when the impactedResource object was initially associated with the recommendation.
   \[AdditionalDetails \<IMicrosoftGraphKeyValue\[\]\>\]: Additional information unique to the impactedResource to help contextualize the recommendation.
-    \[Key \<String\>\]: Contains the name of the field that a value is associated with.
-    \[Value \<String\>\]: Contains the corresponding value for the specified key.
-  \[ApiUrl \<String\>\]: The URL link to the corresponding Azure AD resource.
-  \[DisplayName \<String\>\]: Friendly name of the Azure AD resource.
+    \[Key \<String\>\]: Key.
+    \[Value \<String\>\]: Value.
+  \[ApiUrl \<String\>\]: The URL link to the corresponding Microsoft Entra resource.
+  \[DisplayName \<String\>\]: Friendly name of the Microsoft Entra resource.
   \[LastModifiedBy \<String\>\]: Name of the user or service that last updated the status.
   \[LastModifiedDateTime \<String\>\]: The date and time when the status was last updated.
   \[Owner \<String\>\]: The user responsible for maintaining the resource.
-  \[PortalUrl \<String\>\]: The URL link to the corresponding Azure AD portal page of the resource.
+  \[PortalUrl \<String\>\]: The URL link to the corresponding Microsoft Entra admin center page of the resource.
   \[PostponeUntilDateTime \<DateTime?\>\]: The future date and time when the status of a postponed impactedResource will be active again.
   \[Rank \<Int32?\>\]: Indicates the importance of the resource.
 A resource with a rank equal to 1 is of the highest importance.
   \[RecommendationId \<String\>\]: The unique identifier of the recommendation that the resource is associated with.
-  \[ResourceType \<String\>\]: Indicates the type of Azure AD resource.
+  \[ResourceType \<String\>\]: Indicates the type of Microsoft Entra resource.
 Examples include user, application.
   \[Status \<String\>\]: recommendationStatus
   \[SubjectId \<String\>\]: The related unique identifier, depending on the resourceType.

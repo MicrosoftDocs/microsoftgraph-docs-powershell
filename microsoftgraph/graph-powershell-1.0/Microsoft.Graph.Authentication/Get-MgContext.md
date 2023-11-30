@@ -22,7 +22,7 @@ Retrieves session details.
 ## EXAMPLES
 
 ### Example 1: Using Get-MgContext
-```powershell
+```
 PS C:\> Get-MgContext
 ClientId              : 615e6e7c-aa11-4402-91a1-6234967405d5
 TenantId              : 9f32a42e-6782-4b96-a4d3-e0828a292569
@@ -42,7 +42,7 @@ ClientTimeout         : 00:05:00
 Retrieves session details.
 
 ### Example 2: Using Get-MgContext: Retrieve all scopes you've consented to
-```powershell
+```
 PS C:\> Get-MgContext | Select -ExpandProperty Scopes
 AppRoleAssignment.ReadWrite.All
 Directory.AccessAsUser.All
@@ -67,14 +67,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### None
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Authentication.IAuthContext
-
 ## NOTES
 
 ## RELATED LINKS
-
-[https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/get-mgcontext](https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/get-mgcontext)
-

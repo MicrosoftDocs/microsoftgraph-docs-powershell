@@ -10,7 +10,7 @@ ms.prod: education
 
 ## SYNOPSIS
 Retrieve the simple directory user that corresponds to this educationUser.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationMeUser](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeUser?view=graph-powershell-beta)
@@ -23,7 +23,7 @@ Get-MgEducationMeUser [-ExpandProperty <String[]>] [-Property <String[]>] [<Comm
 
 ## DESCRIPTION
 Retrieve the simple directory user that corresponds to this educationUser.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -80,7 +80,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUser
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
 [Get-MgBetaEducationMeUser](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeUser?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeuser](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeuser)
+

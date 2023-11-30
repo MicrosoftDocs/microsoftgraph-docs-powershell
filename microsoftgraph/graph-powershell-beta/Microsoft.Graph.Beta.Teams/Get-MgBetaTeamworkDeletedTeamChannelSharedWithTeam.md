@@ -10,7 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Get a team that has been shared with a specified channel.
 This operation is allowed only for channels with a membershipType value of shared.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgTeamworkDeletedTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeamChannelSharedWithTeam?view=graph-powershell-1.0)
@@ -51,7 +51,9 @@ Get-MgBetaTeamworkDeletedTeamChannelSharedWithTeam -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Get a team that has been shared with a specified channel.
 This operation is allowed only for channels with a membershipType value of shared.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -327,5 +329,4 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Get-MgTeamworkDeletedTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeamChannelSharedWithTeam?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeletedteamchannelsharedwithteam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeletedteamchannelsharedwithteam)
-
 

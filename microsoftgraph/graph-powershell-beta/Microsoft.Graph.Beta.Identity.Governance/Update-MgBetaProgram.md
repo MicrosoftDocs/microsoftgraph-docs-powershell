@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgBetaProgram
 
 ## SYNOPSIS
-In the Azure AD access reviews feature, update an existing program object.
+In the Microsoft Entra access reviews feature, update an existing program object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -39,7 +40,8 @@ Update-MgBetaProgram -InputObject <IIdentityGovernanceIdentity> -BodyParameter <
 ```
 
 ## DESCRIPTION
-In the Azure AD access reviews feature, update an existing program object.
+In the Microsoft Entra access reviews feature, update an existing program object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaProgram Cmdlet
@@ -243,9 +245,9 @@ Required on create.
     \[Owner \<IMicrosoftGraphUserIdentity\>\]: userIdentity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-Note that this might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      \[Id \<String\>\]: Unique identifier for the identity.
+This property is read-only.
+      \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
       \[IPAddress \<String\>\]: Indicates the client IP address used by user performing the activity (audit log only).
       \[UserPrincipalName \<String\>\]: The userPrincipalName attribute of the user.
     \[Program \<IMicrosoftGraphProgram\>\]: program
@@ -254,9 +256,9 @@ Required on create.
     \[Resource \<IMicrosoftGraphProgramResource\>\]: programResource
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-Note that this might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      \[Id \<String\>\]: Unique identifier for the identity.
+This property is read-only.
+      \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
       \[Type \<String\>\]: Type of the resource, indicating whether it is a group or an app.
     \[Status \<String\>\]: The life cycle status of the control.
   \[Description \<String\>\]: The description of the program.
@@ -275,9 +277,9 @@ Required on create.
   \[Owner \<IMicrosoftGraphUserIdentity\>\]: userIdentity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-Note that this might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity.
+This property is read-only.
+    \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
     \[IPAddress \<String\>\]: Indicates the client IP address used by user performing the activity (audit log only).
     \[UserPrincipalName \<String\>\]: The userPrincipalName attribute of the user.
   \[Program \<IMicrosoftGraphProgram\>\]: program
@@ -293,9 +295,9 @@ Required on create.
   \[Resource \<IMicrosoftGraphProgramResource\>\]: programResource
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-Note that this might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity.
+This property is read-only.
+    \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
     \[Type \<String\>\]: Type of the resource, indicating whether it is a group or an app.
   \[Status \<String\>\]: The life cycle status of the control.
 
@@ -341,6 +343,7 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[CustomTaskExtensionId \<String\>\]: The unique identifier of customTaskExtension
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[EndDateTime \<DateTime?\>\]: Usage: endDateTime={endDateTime}
+  \[FindingId \<String\>\]: The unique identifier of finding
   \[GovernanceInsightId \<String\>\]: The unique identifier of governanceInsight
   \[GovernanceResourceId \<String\>\]: The unique identifier of governanceResource
   \[GovernanceRoleAssignmentId \<String\>\]: The unique identifier of governanceRoleAssignment
@@ -351,6 +354,8 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[IncompatibleAccessPackageId \<String\>\]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   \[LongRunningOperationId \<String\>\]: The unique identifier of longRunningOperation
   \[On \<String\>\]: Usage: on='{on}'
+  \[PermissionsCreepIndexDistributionId \<String\>\]: The unique identifier of permissionsCreepIndexDistribution
+  \[PermissionsRequestChangeId \<String\>\]: The unique identifier of permissionsRequestChange
   \[PrivilegedAccessGroupAssignmentScheduleId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentSchedule
   \[PrivilegedAccessGroupAssignmentScheduleInstanceId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentScheduleInstance
   \[PrivilegedAccessGroupAssignmentScheduleRequestId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentScheduleRequest

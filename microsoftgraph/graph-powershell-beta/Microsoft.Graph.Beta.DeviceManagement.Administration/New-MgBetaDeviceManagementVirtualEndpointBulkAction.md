@@ -179,35 +179,36 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcBulkAction
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+ACTIONSUMMARY \<IMicrosoftGraphCloudPcBulkActionSummary\>: cloudPcBulkActionSummary
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[FailedCount \<Int32?\>\]: 
+  \[InProgressCount \<Int32?\>\]: 
+  \[NotSupportedCount \<Int32?\>\]: 
+  \[PendingCount \<Int32?\>\]: 
+  \[SuccessfulCount \<Int32?\>\]: 
 
-`ACTIONSUMMARY <IMicrosoftGraphCloudPcBulkActionSummary>`: cloudPcBulkActionSummary
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[FailedCount <Int32?>]`: 
-  - `[InProgressCount <Int32?>]`: 
-  - `[NotSupportedCount <Int32?>]`: 
-  - `[PendingCount <Int32?>]`: 
-  - `[SuccessfulCount <Int32?>]`: 
-
-`BODYPARAMETER <IMicrosoftGraphCloudPcBulkAction>`: cloudPcBulkAction
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[ActionSummary <IMicrosoftGraphCloudPcBulkActionSummary>]`: cloudPcBulkActionSummary
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[FailedCount <Int32?>]`: 
-    - `[InProgressCount <Int32?>]`: 
-    - `[NotSupportedCount <Int32?>]`: 
-    - `[PendingCount <Int32?>]`: 
-    - `[SuccessfulCount <Int32?>]`: 
-  - `[CloudPcIds <String[]>]`: 
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[DisplayName <String>]`: 
+BODYPARAMETER \<IMicrosoftGraphCloudPcBulkAction\>: cloudPcBulkAction
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[ActionSummary \<IMicrosoftGraphCloudPcBulkActionSummary\>\]: cloudPcBulkActionSummary
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[FailedCount \<Int32?\>\]: 
+    \[InProgressCount \<Int32?\>\]: 
+    \[NotSupportedCount \<Int32?\>\]: 
+    \[PendingCount \<Int32?\>\]: 
+    \[SuccessfulCount \<Int32?\>\]: 
+  \[CloudPcIds \<String\[\]\>\]: 
+  \[CreatedDateTime \<DateTime?\>\]: 
+  \[DisplayName \<String\>\]:
 
 ## RELATED LINKS
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointbulkaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointbulkaction)
+
 

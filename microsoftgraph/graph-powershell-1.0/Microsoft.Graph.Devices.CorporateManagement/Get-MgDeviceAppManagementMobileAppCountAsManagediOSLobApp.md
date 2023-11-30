@@ -65,10 +65,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.Int32
 ## NOTES
 
-ALIASES
-
-Get-MgDeviceAppMgtMobileAppCountAsManagediOSLobApp
-
 ## RELATED LINKS
 [Get-MgBetaDeviceAppManagementMobileAppCountAsManagediOSLobApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppCountAsManagediOSLobApp?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappcountasmanagedioslobapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappcountasmanagedioslobapp)
+
 

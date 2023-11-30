@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganization
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Update-MgBetaOrganization
@@ -11,6 +12,7 @@ schema: 2.0.0
 Update the properties of the currently authenticated organization.
 In this case, organization is defined as a collection of exactly one record, and so its ID must be specified in the request.
 The ID is also known as the tenantId of the organization.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgOrganization](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganization?view=graph-powershell-1.0)
@@ -77,6 +79,7 @@ Update-MgBetaOrganization -InputObject <IIdentityDirectoryManagementIdentity>
 Update the properties of the currently authenticated organization.
 In this case, organization is defined as a collection of exactly one record, and so its ID must be specified in the request.
 The ID is also known as the tenantId of the organization.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -807,8 +810,8 @@ Read-only.
     \[ContentCustomization \<IMicrosoftGraphContentCustomization\>\]: contentCustomization
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[AttributeCollection \<IMicrosoftGraphKeyValue\[\]\>\]: Represents the content options of External Identities to be customized throughout the authentication flow for a tenant.
-        \[Key \<String\>\]: Contains the name of the field that a value is associated with.
-        \[Value \<String\>\]: Contains the corresponding value for the specified key.
+        \[Key \<String\>\]: Key.
+        \[Value \<String\>\]: Value.
       \[AttributeCollectionRelativeUrl \<String\>\]: A relative URL for the content options of External Identities to be customized throughout the authentication flow for a tenant.
     \[CustomAccountResetCredentialsUrl \<String\>\]: A custom URL for resetting account credentials.
 This URL must be in ASCII format or non-ASCII characters must be URL encoded, and not exceed 128 characters.
@@ -835,7 +838,7 @@ DO NOT USE: Customization of the 'reset it now' hyperlink text is currently not 
 This text must be in Unicode format and not exceed 256 characters.
     \[CustomTermsOfUseUrl \<String\>\]: A custom URL to replace the default URL of the 'Terms of Use' hyperlink in the footer.
 This URL must be in ASCII format or non-ASCII characters must be URL encoded, and not exceed 128characters.
-    \[Favicon \<Byte\[\]\>\]: A custom icon (favicon) to replace a default Microsoft product favicon on an Azure AD tenant.
+    \[Favicon \<Byte\[\]\>\]: A custom icon (favicon) to replace a default Microsoft product favicon on a Microsoft Entra tenant.
     \[FaviconRelativeUrl \<String\>\]: A relative url for the favicon above that is combined with a CDN base URL from the cdnList to provide the version served by a CDN.
 Read-only.
     \[HeaderBackgroundColor \<String\>\]: The RGB color to apply to customize the color of the header.
@@ -917,7 +920,7 @@ DO NOT USE: Customization of the 'reset it now' hyperlink text is currently not 
 This text must be in Unicode format and not exceed 256 characters.
       \[CustomTermsOfUseUrl \<String\>\]: A custom URL to replace the default URL of the 'Terms of Use' hyperlink in the footer.
 This URL must be in ASCII format or non-ASCII characters must be URL encoded, and not exceed 128characters.
-      \[Favicon \<Byte\[\]\>\]: A custom icon (favicon) to replace a default Microsoft product favicon on an Azure AD tenant.
+      \[Favicon \<Byte\[\]\>\]: A custom icon (favicon) to replace a default Microsoft product favicon on a Microsoft Entra tenant.
       \[FaviconRelativeUrl \<String\>\]: A relative url for the favicon above that is combined with a CDN base URL from the cdnList to provide the version served by a CDN.
 Read-only.
       \[HeaderBackgroundColor \<String\>\]: The RGB color to apply to customize the color of the header.
@@ -1035,7 +1038,7 @@ Read-only.
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      \[DisabledForGroup \<String\>\]: The ID of an Azure Active Directory group, of which the specified type of insights are disabled for its members.
+      \[DisabledForGroup \<String\>\]: The ID of a Microsoft Entra group, of which the specified type of insights are disabled for its members.
 Default is empty.
 Optional.
       \[IsEnabledInOrganization \<Boolean?\>\]: true if the specified type of insights are enabled for the organization; false if the specified type of insights are disabled for all users without exceptions.
@@ -1046,12 +1049,12 @@ Optional.
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      \[DisabledForGroup \<String\>\]: The ID of an Azure Active Directory (Azure AD) security group for which the members are allowed to access Microsoft 365 data using only Microsoft 365 apps, but not other Microsoft apps such as Edge. 
+      \[DisabledForGroup \<String\>\]: The ID of a Microsoft Entra security group for which the members are allowed to access Microsoft 365 data using only Microsoft 365 apps, but not other Microsoft apps such as Edge. 
 This is only applicable if isEnabledForAllMicrosoftApplications is set to true.
       \[IsEnabledForAllMicrosoftApplications \<Boolean?\>\]: When set to true, all users in the organization can access in a Microsoft app any Microsoft 365 data that the user has been authorized to access.
 The Microsoft app can be a Microsoft 365 app (for example, Excel, Outlook) or non-Microsoft 365 app (for example, Edge).
 The default is true. 
-It is possible to disable this access for a subset of users in an Azure AD security group, by specifying the group in the disabledForGroup property. 
+It is possible to disable this access for a subset of users in a Microsoft Entra security group, by specifying the group in the disabledForGroup property. 
 When set to false, all users can access authorized Microsoft 365 data only in a Microsoft 365 app.
     \[PeopleInsights \<IMicrosoftGraphInsightsSettings\>\]: insightsSettings
   \[State \<String\>\]: State name of the address for the organization.
@@ -1086,8 +1089,8 @@ Read-only.
   \[ContentCustomization \<IMicrosoftGraphContentCustomization\>\]: contentCustomization
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[AttributeCollection \<IMicrosoftGraphKeyValue\[\]\>\]: Represents the content options of External Identities to be customized throughout the authentication flow for a tenant.
-      \[Key \<String\>\]: Contains the name of the field that a value is associated with.
-      \[Value \<String\>\]: Contains the corresponding value for the specified key.
+      \[Key \<String\>\]: Key.
+      \[Value \<String\>\]: Value.
     \[AttributeCollectionRelativeUrl \<String\>\]: A relative URL for the content options of External Identities to be customized throughout the authentication flow for a tenant.
   \[CustomAccountResetCredentialsUrl \<String\>\]: A custom URL for resetting account credentials.
 This URL must be in ASCII format or non-ASCII characters must be URL encoded, and not exceed 128 characters.
@@ -1114,7 +1117,7 @@ DO NOT USE: Customization of the 'reset it now' hyperlink text is currently not 
 This text must be in Unicode format and not exceed 256 characters.
   \[CustomTermsOfUseUrl \<String\>\]: A custom URL to replace the default URL of the 'Terms of Use' hyperlink in the footer.
 This URL must be in ASCII format or non-ASCII characters must be URL encoded, and not exceed 128characters.
-  \[Favicon \<Byte\[\]\>\]: A custom icon (favicon) to replace a default Microsoft product favicon on an Azure AD tenant.
+  \[Favicon \<Byte\[\]\>\]: A custom icon (favicon) to replace a default Microsoft product favicon on a Microsoft Entra tenant.
   \[FaviconRelativeUrl \<String\>\]: A relative url for the favicon above that is combined with a CDN base URL from the cdnList to provide the version served by a CDN.
 Read-only.
   \[HeaderBackgroundColor \<String\>\]: The RGB color to apply to customize the color of the header.
@@ -1196,7 +1199,7 @@ DO NOT USE: Customization of the 'reset it now' hyperlink text is currently not 
 This text must be in Unicode format and not exceed 256 characters.
     \[CustomTermsOfUseUrl \<String\>\]: A custom URL to replace the default URL of the 'Terms of Use' hyperlink in the footer.
 This URL must be in ASCII format or non-ASCII characters must be URL encoded, and not exceed 128characters.
-    \[Favicon \<Byte\[\]\>\]: A custom icon (favicon) to replace a default Microsoft product favicon on an Azure AD tenant.
+    \[Favicon \<Byte\[\]\>\]: A custom icon (favicon) to replace a default Microsoft product favicon on a Microsoft Entra tenant.
     \[FaviconRelativeUrl \<String\>\]: A relative url for the favicon above that is combined with a CDN base URL from the cdnList to provide the version served by a CDN.
 Read-only.
     \[HeaderBackgroundColor \<String\>\]: The RGB color to apply to customize the color of the header.
@@ -1271,6 +1274,7 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[ContractId \<String\>\]: The unique identifier of contract
   \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
   \[DeviceId \<String\>\]: The unique identifier of device
+  \[DeviceLocalCredentialInfoId \<String\>\]: The unique identifier of deviceLocalCredentialInfo
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[DirectoryRoleId \<String\>\]: The unique identifier of directoryRole
   \[DirectoryRoleTemplateId \<String\>\]: The unique identifier of directoryRoleTemplate
@@ -1337,7 +1341,7 @@ Read-only.
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    \[DisabledForGroup \<String\>\]: The ID of an Azure Active Directory group, of which the specified type of insights are disabled for its members.
+    \[DisabledForGroup \<String\>\]: The ID of a Microsoft Entra group, of which the specified type of insights are disabled for its members.
 Default is empty.
 Optional.
     \[IsEnabledInOrganization \<Boolean?\>\]: true if the specified type of insights are enabled for the organization; false if the specified type of insights are disabled for all users without exceptions.
@@ -1348,12 +1352,12 @@ Optional.
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    \[DisabledForGroup \<String\>\]: The ID of an Azure Active Directory (Azure AD) security group for which the members are allowed to access Microsoft 365 data using only Microsoft 365 apps, but not other Microsoft apps such as Edge. 
+    \[DisabledForGroup \<String\>\]: The ID of a Microsoft Entra security group for which the members are allowed to access Microsoft 365 data using only Microsoft 365 apps, but not other Microsoft apps such as Edge. 
 This is only applicable if isEnabledForAllMicrosoftApplications is set to true.
     \[IsEnabledForAllMicrosoftApplications \<Boolean?\>\]: When set to true, all users in the organization can access in a Microsoft app any Microsoft 365 data that the user has been authorized to access.
 The Microsoft app can be a Microsoft 365 app (for example, Excel, Outlook) or non-Microsoft 365 app (for example, Edge).
 The default is true. 
-It is possible to disable this access for a subset of users in an Azure AD security group, by specifying the group in the disabledForGroup property. 
+It is possible to disable this access for a subset of users in a Microsoft Entra security group, by specifying the group in the disabledForGroup property. 
 When set to false, all users can access authorized Microsoft 365 data only in a Microsoft 365 app.
   \[PeopleInsights \<IMicrosoftGraphInsightsSettings\>\]: insightsSettings
 

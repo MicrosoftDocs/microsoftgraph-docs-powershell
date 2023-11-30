@@ -168,7 +168,8 @@ Accept wildcard characters: False
 ```
 
 ### -RecordType
-Indicates what type of DNS record this entity represents.The value can be one of the following: CName, Mx, Srv, Txt.
+Indicates what type of DNS record this entity represents.
+The value can be one of the following: CName, Mx, Srv, Txt.
 
 ```yaml
 Type: String
@@ -183,7 +184,8 @@ Accept wildcard characters: False
 ```
 
 ### -SupportedService
-Microsoft Online Service or feature that has a dependency on this DNS record.Can be one of the following values: null, Email, Sharepoint, EmailInternalRelayOnly, OfficeCommunicationsOnline, SharePointDefaultDomain, FullRedelegation, SharePointPublic, OrgIdAuthentication, Yammer, Intune.
+Microsoft Online Service or feature that has a dependency on this DNS record.
+Can be one of the following values: null, Email, Sharepoint, EmailInternalRelayOnly, OfficeCommunicationsOnline, SharePointDefaultDomain, FullRedelegation, SharePointPublic, OrgIdAuthentication, Yammer, Intune.
 
 ```yaml
 Type: String
@@ -266,8 +268,10 @@ BODYPARAMETER \<IMicrosoftGraphDomainDnsRecord\>: domainDnsRecord
 Read-only.
   \[IsOptional \<Boolean?\>\]: If false, this record must be configured by the customer at the DNS host for Microsoft Online Services to operate correctly with the domain.
   \[Label \<String\>\]: Value used when configuring the name of the DNS record at the DNS host.
-  \[RecordType \<String\>\]: Indicates what type of DNS record this entity represents.The value can be one of the following: CName, Mx, Srv, Txt.
-  \[SupportedService \<String\>\]: Microsoft Online Service or feature that has a dependency on this DNS record.Can be one of the following values: null, Email, Sharepoint, EmailInternalRelayOnly, OfficeCommunicationsOnline, SharePointDefaultDomain, FullRedelegation, SharePointPublic, OrgIdAuthentication, Yammer, Intune.
+  \[RecordType \<String\>\]: Indicates what type of DNS record this entity represents.
+The value can be one of the following: CName, Mx, Srv, Txt.
+  \[SupportedService \<String\>\]: Microsoft Online Service or feature that has a dependency on this DNS record.
+Can be one of the following values: null, Email, Sharepoint, EmailInternalRelayOnly, OfficeCommunicationsOnline, SharePointDefaultDomain, FullRedelegation, SharePointPublic, OrgIdAuthentication, Yammer, Intune.
   \[Ttl \<Int32?\>\]: Value to use when configuring the time-to-live (ttl) property of the DNS record at the DNS host.
 Not nullable.
 
@@ -282,6 +286,7 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[ContractId \<String\>\]: The unique identifier of contract
   \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
   \[DeviceId \<String\>\]: The unique identifier of device
+  \[DeviceLocalCredentialInfoId \<String\>\]: The unique identifier of deviceLocalCredentialInfo
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[DirectoryRoleId \<String\>\]: The unique identifier of directoryRole
   \[DirectoryRoleTemplateId \<String\>\]: The unique identifier of directoryRoleTemplate

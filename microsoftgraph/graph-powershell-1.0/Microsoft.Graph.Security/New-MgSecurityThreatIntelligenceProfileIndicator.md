@@ -31,8 +31,6 @@ New-MgSecurityThreatIntelligenceProfileIndicator
 ## DESCRIPTION
 Create new navigation property to intelligenceProfileIndicators for security
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -183,25 +181,26 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityIntelligenceProfileIndicator
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`BODYPARAMETER <IMicrosoftGraphSecurityIntelligenceProfileIndicator>`: intelligenceProfileIndicator
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Artifact <IMicrosoftGraphSecurityArtifact>]`: artifact
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Source <String>]`: indicatorSource
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[FirstSeenDateTime <DateTime?>]`: Designate when an artifact was first used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
-  - `[LastSeenDateTime <DateTime?>]`: Designate when an artifact was most recently used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
+BODYPARAMETER \<IMicrosoftGraphSecurityIntelligenceProfileIndicator\>: intelligenceProfileIndicator
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Artifact \<IMicrosoftGraphSecurityArtifact\>\]: artifact
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[Source \<String\>\]: indicatorSource
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[FirstSeenDateTime \<DateTime?\>\]: Designate when an artifact was first used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
+  \[LastSeenDateTime \<DateTime?\>\]: Designate when an artifact was most recently used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
 
 ## RELATED LINKS
-
 [New-MgBetaSecurityThreatIntelligenceProfileIndicator](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceProfileIndicator?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligenceprofileindicator](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligenceprofileindicator)
+
 

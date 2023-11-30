@@ -1,21 +1,17 @@
 ---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/move-mgbetausermailfolder
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/move-mgbetausermailfolderchildfoldermessage
 schema: 2.0.0
+ms.prod: outlook
 ---
 
-# Move-MgBetaUserMailFolder
+# Move-MgBetaUserMailFolderChildFolderMessage
 
 ## SYNOPSIS
-Move a mail folder and its contents to another mail folder.
+Move a message to another folder within the specified user's mailbox.
+This creates a new copy of the message in the destination folder and removes the original message.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Move-MgUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Move-MgUserMailFolderChildFolderMessage?view=graph-powershell-1.0)
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Move-MgUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Move-MgUserMailFolderChildFolderMessage?view=graph-powershell-1.0)
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Move-MgUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Move-MgUserMailFolderChildFolderMessage?view=graph-powershell-1.0)
@@ -24,32 +20,35 @@ This API is available in the following national cloud deployments.
 
 ### MoveExpanded (Default)
 ```
-Move-MgBetaUserMailFolder -MailFolderId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-DestinationId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Move-MgBetaUserMailFolderChildFolderMessage -MailFolderId <String> -MailFolderId1 <String> -MessageId <String>
+ -UserId <String> [-AdditionalProperties <Hashtable>] [-DestinationId <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Move
 ```
-Move-MgBetaUserMailFolder -MailFolderId <String> -UserId <String>
- -BodyParameter <IPaths1Adv2SrUsersUserIdMailfoldersMailfolderIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema>
+Move-MgBetaUserMailFolderChildFolderMessage -MailFolderId <String> -MailFolderId1 <String> -MessageId <String>
+ -UserId <String>
+ -BodyParameter <IPaths15E6PbnUsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MessagesMessageIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### MoveViaIdentityExpanded
 ```
-Move-MgBetaUserMailFolder -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-DestinationId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Move-MgBetaUserMailFolderChildFolderMessage -InputObject <IUsersActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-DestinationId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### MoveViaIdentity
 ```
-Move-MgBetaUserMailFolder -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPaths1Adv2SrUsersUserIdMailfoldersMailfolderIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema>
+Move-MgBetaUserMailFolderChildFolderMessage -InputObject <IUsersActionsIdentity>
+ -BodyParameter <IPaths15E6PbnUsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MessagesMessageIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Move a mail folder and its contents to another mail folder.
+Move a message to another folder within the specified user's mailbox.
+This creates a new copy of the message in the destination folder and removes the original message.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
@@ -92,7 +91,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Adv2SrUsersUserIdMailfoldersMailfolderIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema
+Type: IPaths15E6PbnUsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MessagesMessageIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Move, MoveViaIdentity
 Aliases:
 
@@ -136,6 +135,36 @@ Accept wildcard characters: False
 
 ### -MailFolderId
 The unique identifier of mailFolder
+
+```yaml
+Type: String
+Parameter Sets: MoveExpanded, Move
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MailFolderId1
+The unique identifier of mailFolder
+
+```yaml
+Type: String
+Parameter Sets: MoveExpanded, Move
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MessageId
+The unique identifier of message
 
 ```yaml
 Type: String
@@ -200,67 +229,64 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Adv2SrUsersUserIdMailfoldersMailfolderIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths15E6PbnUsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MessagesMessageIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMailFolder
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMessage
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+BODYPARAMETER \<IPaths15E6PbnUsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MessagesMessageIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DestinationId \<String\>\]: 
 
-`BODYPARAMETER <IPaths1Adv2SrUsersUserIdMailfoldersMailfolderIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DestinationId <String>]`: 
-
-`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
-  - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
-  - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
-  - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
-  - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
-  - `[CalendarId <String>]`: The unique identifier of calendar
-  - `[ChatId <String>]`: The unique identifier of chat
-  - `[ChatMessageId <String>]`: The unique identifier of chatMessage
-  - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
-  - `[CloudPcId <String>]`: The unique identifier of cloudPC
-  - `[ContentTypeId <String>]`: The unique identifier of contentType
-  - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
-  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
-  - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
-  - `[DriveId <String>]`: The unique identifier of drive
-  - `[DriveItemId <String>]`: The unique identifier of driveItem
-  - `[DriveItemVersionId <String>]`: The unique identifier of driveItemVersion
-  - `[EventId <String>]`: The unique identifier of event
-  - `[EventId1 <String>]`: The unique identifier of event
-  - `[ListItemId <String>]`: The unique identifier of listItem
-  - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
-  - `[MailFolderId <String>]`: The unique identifier of mailFolder
-  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
-  - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
-  - `[MessageId <String>]`: The unique identifier of message
-  - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
-  - `[NotebookId <String>]`: The unique identifier of notebook
-  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
-  - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
-  - `[OutlookTaskFolderId <String>]`: The unique identifier of outlookTaskFolder
-  - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
-  - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
-  - `[PermissionId <String>]`: The unique identifier of permission
-  - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
-  - `[SubscriptionId <String>]`: The unique identifier of subscription
-  - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
-  - `[TodoTaskId <String>]`: The unique identifier of todoTask
-  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
+  \[AccessReviewInstanceId \<String\>\]: The unique identifier of accessReviewInstance
+  \[AccessReviewStageId \<String\>\]: The unique identifier of accessReviewStage
+  \[AppLogCollectionRequestId \<String\>\]: The unique identifier of appLogCollectionRequest
+  \[AuthenticationMethodId \<String\>\]: The unique identifier of authenticationMethod
+  \[CalendarId \<String\>\]: The unique identifier of calendar
+  \[ChatId \<String\>\]: The unique identifier of chat
+  \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
+  \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
+  \[CloudPcId \<String\>\]: The unique identifier of cloudPC
+  \[ContentTypeId \<String\>\]: The unique identifier of contentType
+  \[DeviceEnrollmentConfigurationId \<String\>\]: The unique identifier of deviceEnrollmentConfiguration
+  \[DeviceLogCollectionResponseId \<String\>\]: The unique identifier of deviceLogCollectionResponse
+  \[DocumentSetVersionId \<String\>\]: The unique identifier of documentSetVersion
+  \[DriveId \<String\>\]: The unique identifier of drive
+  \[DriveItemId \<String\>\]: The unique identifier of driveItem
+  \[DriveItemVersionId \<String\>\]: The unique identifier of driveItemVersion
+  \[EventId \<String\>\]: The unique identifier of event
+  \[EventId1 \<String\>\]: The unique identifier of event
+  \[ListItemId \<String\>\]: The unique identifier of listItem
+  \[ListItemVersionId \<String\>\]: The unique identifier of listItemVersion
+  \[MailFolderId \<String\>\]: The unique identifier of mailFolder
+  \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
+  \[ManagedDeviceId \<String\>\]: The unique identifier of managedDevice
+  \[MessageId \<String\>\]: The unique identifier of message
+  \[MobileAppTroubleshootingEventId \<String\>\]: The unique identifier of mobileAppTroubleshootingEvent
+  \[NotebookId \<String\>\]: The unique identifier of notebook
+  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
+  \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
+  \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
+  \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask
+  \[PermissionId \<String\>\]: The unique identifier of permission
+  \[PlannerPlanId \<String\>\]: The unique identifier of plannerPlan
+  \[SensitivityLabelId \<String\>\]: The unique identifier of sensitivityLabel
+  \[SubscriptionId \<String\>\]: The unique identifier of subscription
+  \[TeamsAppInstallationId \<String\>\]: The unique identifier of teamsAppInstallation
+  \[TodoTaskId \<String\>\]: The unique identifier of todoTask
+  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 [Move-MgUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Move-MgUserMailFolderChildFolderMessage?view=graph-powershell-1.0)
 
-[Move-MgUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Move-MgUserMailFolderChildFolderMessage?view=graph-powershell-1.0)
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/move-mgbetausermailfolderchildfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/move-mgbetausermailfolderchildfoldermessage)
 
-[Move-MgUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Move-MgUserMailFolderChildFolderMessage?view=graph-powershell-1.0)

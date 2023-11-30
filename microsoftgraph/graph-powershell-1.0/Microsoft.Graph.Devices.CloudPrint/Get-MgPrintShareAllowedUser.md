@@ -10,7 +10,7 @@ ms.prod: cloud-printing
 
 ## SYNOPSIS
 Retrieve a list of users who have been granted access to submit print jobs to the associated printerShare.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPrintShareAllowedUser](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintShareAllowedUser?view=graph-powershell-beta)
@@ -25,7 +25,7 @@ Get-MgPrintShareAllowedUser -PrinterShareId <String> [-ExpandProperty <String[]>
 
 ## DESCRIPTION
 Retrieve a list of users who have been granted access to submit print jobs to the associated printerShare.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -52,7 +52,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -113,7 +113,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -188,7 +188,7 @@ Aliases: Limit
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -203,7 +203,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -218,7 +218,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUser
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
 [Get-MgBetaPrintShareAllowedUser](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintShareAllowedUser?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintsharealloweduser](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintsharealloweduser)
+

@@ -13,12 +13,6 @@ Invoke function isPublished
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Test-MgBetaUserDriveListContentTypePublished](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Test-MgBetaUserDriveListContentTypePublished?view=graph-powershell-beta)
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Test-MgBetaUserDriveListContentTypePublished](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Test-MgBetaUserDriveListContentTypePublished?view=graph-powershell-beta)
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Test-MgBetaUserDriveListContentTypePublished](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Test-MgBetaUserDriveListContentTypePublished?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Is (Default)
@@ -34,8 +28,6 @@ Test-MgUserDriveListContentTypePublished -InputObject <IUsersFunctionsIdentity> 
 
 ## DESCRIPTION
 Invoke function isPublished
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -110,46 +102,42 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`INPUTOBJECT <IUsersFunctionsIdentity>`: Identity Parameter
-  - `[CalendarId <String>]`: The unique identifier of calendar
-  - `[ChatId <String>]`: The unique identifier of chat
-  - `[ChatMessageId <String>]`: The unique identifier of chatMessage
-  - `[ContactFolderId <String>]`: The unique identifier of contactFolder
-  - `[ContactFolderId1 <String>]`: The unique identifier of contactFolder
-  - `[ContentTypeId <String>]`: The unique identifier of contentType
-  - `[DriveId <String>]`: The unique identifier of drive
-  - `[DriveItemId <String>]`: The unique identifier of driveItem
-  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
-  - `[EventId <String>]`: The unique identifier of event
-  - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
-  - `[Interval <String>]`: Usage: interval='{interval}'
-  - `[ListItemId <String>]`: The unique identifier of listItem
-  - `[MailFolderId <String>]`: The unique identifier of mailFolder
-  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
-  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
-  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
-  - `[Q <String>]`: Usage: q='{q}'
-  - `[Skip <Int32?>]`: Usage: skip={skip}
-  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[TimeZoneStandard <String>]`: Usage: TimeZoneStandard='{TimeZoneStandard}'
-  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
-  - `[Token <String>]`: Usage: token='{token}'
-  - `[Top <Int32?>]`: Usage: top={top}
-  - `[User <String>]`: Usage: User='{User}'
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
+  \[CalendarId \<String\>\]: The unique identifier of calendar
+  \[ChatId \<String\>\]: The unique identifier of chat
+  \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
+  \[ContactFolderId \<String\>\]: The unique identifier of contactFolder
+  \[ContactFolderId1 \<String\>\]: The unique identifier of contactFolder
+  \[ContentTypeId \<String\>\]: The unique identifier of contentType
+  \[DriveId \<String\>\]: The unique identifier of drive
+  \[DriveItemId \<String\>\]: The unique identifier of driveItem
+  \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
+  \[EventId \<String\>\]: The unique identifier of event
+  \[IncludePersonalNotebooks \<Boolean?\>\]: Usage: includePersonalNotebooks={includePersonalNotebooks}
+  \[Interval \<String\>\]: Usage: interval='{interval}'
+  \[ListItemId \<String\>\]: The unique identifier of listItem
+  \[MailFolderId \<String\>\]: The unique identifier of mailFolder
+  \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
+  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
+  \[Q \<String\>\]: Usage: q='{q}'
+  \[Skip \<Int32?\>\]: Usage: skip={skip}
+  \[StartDateTime \<String\>\]: Usage: startDateTime='{startDateTime}'
+  \[TimeZoneStandard \<String\>\]: Usage: TimeZoneStandard='{TimeZoneStandard}'
+  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
+  \[Token \<String\>\]: Usage: token='{token}'
+  \[Top \<Int32?\>\]: Usage: top={top}
+  \[User \<String\>\]: Usage: User='{User}'
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 [Test-MgBetaUserDriveListContentTypePublished](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Test-MgBetaUserDriveListContentTypePublished?view=graph-powershell-beta)
 
-[Test-MgBetaUserDriveListContentTypePublished](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Test-MgBetaUserDriveListContentTypePublished?view=graph-powershell-beta)
+[https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/test-mguserdrivelistcontenttypepublished](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/test-mguserdrivelistcontenttypepublished)
 
-[Test-MgBetaUserDriveListContentTypePublished](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Test-MgBetaUserDriveListContentTypePublished?view=graph-powershell-beta)
 

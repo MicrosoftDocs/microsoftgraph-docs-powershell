@@ -10,7 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the properties of a Microsoft Teams-enabled device.
 For example, you can use this method to get the device type, hardware detail, activity state, and health status information for a device that's enabled for Teams.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ Get-MgBetaTeamworkDevice -InputObject <ITeamsIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 Get the properties of a Microsoft Teams-enabled device.
 For example, you can use this method to get the device type, hardware detail, activity state, and health status information for a device that's enabled for Teams.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaTeamworkDevice Cmdlet

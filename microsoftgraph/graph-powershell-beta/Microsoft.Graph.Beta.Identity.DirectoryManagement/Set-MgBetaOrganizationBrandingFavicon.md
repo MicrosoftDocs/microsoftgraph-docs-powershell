@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgBetaOrganizationBrandingFavicon
 
 ## SYNOPSIS
-A custom icon (favicon) to replace a default Microsoft product favicon on an Azure AD tenant.
+A custom icon (favicon) to replace a default Microsoft product favicon on a Microsoft Entra tenant.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Set-MgOrganizationBrandingFavicon](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Set-MgOrganizationBrandingFavicon?view=graph-powershell-1.0)
@@ -28,7 +28,7 @@ Set-MgBetaOrganizationBrandingFavicon -InputObject <IIdentityDirectoryManagement
 ```
 
 ## DESCRIPTION
-A custom icon (favicon) to replace a default Microsoft product favicon on an Azure AD tenant.
+A custom icon (favicon) to replace a default Microsoft product favicon on a Microsoft Entra tenant.
 
 ## PARAMETERS
 
@@ -168,6 +168,7 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[ContractId \<String\>\]: The unique identifier of contract
   \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
   \[DeviceId \<String\>\]: The unique identifier of device
+  \[DeviceLocalCredentialInfoId \<String\>\]: The unique identifier of deviceLocalCredentialInfo
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[DirectoryRoleId \<String\>\]: The unique identifier of directoryRole
   \[DirectoryRoleTemplateId \<String\>\]: The unique identifier of directoryRoleTemplate

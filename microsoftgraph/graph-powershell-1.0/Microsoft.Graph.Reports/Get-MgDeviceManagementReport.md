@@ -1,7 +1,6 @@
 ---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
-ms.prod: intune
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreport
 schema: 2.0.0
 ms.prod: intune
@@ -79,8 +78,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementReports
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
-
 [Get-MgBetaDeviceManagementReport](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaDeviceManagementReport?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreport](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreport)
+

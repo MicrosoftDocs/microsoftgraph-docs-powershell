@@ -23,8 +23,6 @@ Remove-MgRoleManagementEntitlementManagement [-IfMatch <String>] [-PassThru] [-W
 ## DESCRIPTION
 Delete navigation property entitlementManagement for roleManagement
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -52,7 +50,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -98,9 +96,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.Boolean
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
-
 [Remove-MgBetaRoleManagementEntitlementManagement](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaRoleManagementEntitlementManagement?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgrolemanagemententitlementmanagement](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgrolemanagemententitlementmanagement)
+
 

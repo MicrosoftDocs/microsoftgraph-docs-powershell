@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationsettingmicrosoftapplicationdataaccess
 schema: 2.0.0
+ms.prod: insights
 ---
 
 # Get-MgBetaOrganizationSettingMicrosoftApplicationDataAccess
 
 ## SYNOPSIS
 Get the settings in a microsoftApplicationDataAccessSettings object that specify access from Microsoft applications to Microsoft 365 user data in an organization.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -26,6 +28,7 @@ Get-MgBetaOrganizationSettingMicrosoftApplicationDataAccess -InputObject <IIdent
 
 ## DESCRIPTION
 Get the settings in a microsoftApplicationDataAccessSettings object that specify access from Microsoft applications to Microsoft 365 user data in an organization.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaOrganizationSettingMicrosoftApplicationDataAccess Cmdlet
@@ -125,6 +128,7 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[ContractId \<String\>\]: The unique identifier of contract
   \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
   \[DeviceId \<String\>\]: The unique identifier of device
+  \[DeviceLocalCredentialInfoId \<String\>\]: The unique identifier of deviceLocalCredentialInfo
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[DirectoryRoleId \<String\>\]: The unique identifier of directoryRole
   \[DirectoryRoleTemplateId \<String\>\]: The unique identifier of directoryRoleTemplate

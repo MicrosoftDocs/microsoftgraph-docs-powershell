@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The most recent sslCertificate used to communicate on the port.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceHostPortMostRecentSslCertificate](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostPortMostRecentSslCertificate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -26,8 +29,6 @@ Get-MgSecurityThreatIntelligenceHostPortMostRecentSslCertificate -InputObject <I
 
 ## DESCRIPTION
 The most recent sslCertificate used to communicate on the port.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -162,6 +163,7 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgBetaSecurityThreatIntelligenceHostPortMostRecentSslCertificate](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostPortMostRecentSslCertificate?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostportmostrecentsslcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostportmostrecentsslcertificate)
 

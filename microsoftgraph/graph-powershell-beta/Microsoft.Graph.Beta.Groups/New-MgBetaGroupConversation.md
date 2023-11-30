@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupconversation
 schema: 2.0.0
+ms.prod: groups
 ---
 
 # New-MgBetaGroupConversation
@@ -10,6 +11,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new conversation by including a thread and a post.
 Use reply thread or reply post to further post to that conversation.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgGroupConversation](/powershell/module/Microsoft.Graph.Groups/New-MgGroupConversation?view=graph-powershell-1.0)
@@ -47,6 +49,7 @@ New-MgBetaGroupConversation -InputObject <IGroupsIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Create a new conversation by including a thread and a post.
 Use reply thread or reply post to further post to that conversation.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

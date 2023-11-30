@@ -61,7 +61,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -156,7 +156,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -190,7 +190,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -209,7 +209,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -255,26 +255,39 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails>`: The user experience analytics application performance entity contains application performance by application version details.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[AppCrashCount <Int32?>]`: The number of crashes for the app. Valid values -2147483648 to 2147483647
-  - `[AppDisplayName <String>]`: The friendly name of the application.
-  - `[AppName <String>]`: The name of the application.
-  - `[AppPublisher <String>]`: The publisher of the application.
-  - `[AppVersion <String>]`: The version of the application.
-  - `[DeviceCountWithCrashes <Int32?>]`: The total number of devices that have reported one or more application crashes for this application and version. Valid values 0 to 2147483647. Supports: $select, $OrderBy. Read-only. Valid values -2147483648 to 2147483647
-  - `[IsLatestUsedVersion <Boolean?>]`: When TRUE, indicates the version of application is the latest version for that application that is in use. When FALSE, indicates the version is not the latest version. FALSE by default. Supports: $select, $OrderBy.
-  - `[IsMostUsedVersion <Boolean?>]`: When TRUE, indicates the version of application is the most used version for that application. When FALSE, indicates the version is not the most used version. FALSE by default. Supports: $select, $OrderBy. Read-only.
+BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails\>: The user experience analytics application performance entity contains application performance by application version details.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[AppCrashCount \<Int32?\>\]: The number of crashes for the app.
+Valid values -2147483648 to 2147483647
+  \[AppDisplayName \<String\>\]: The friendly name of the application.
+  \[AppName \<String\>\]: The name of the application.
+  \[AppPublisher \<String\>\]: The publisher of the application.
+  \[AppVersion \<String\>\]: The version of the application.
+  \[DeviceCountWithCrashes \<Int32?\>\]: The total number of devices that have reported one or more application crashes for this application and version.
+Valid values 0 to 2147483647.
+Supports: $select, $OrderBy.
+Read-only.
+Valid values -2147483648 to 2147483647
+  \[IsLatestUsedVersion \<Boolean?\>\]: When TRUE, indicates the version of application is the latest version for that application that is in use.
+When FALSE, indicates the version is not the latest version.
+FALSE by default.
+Supports: $select, $OrderBy.
+  \[IsMostUsedVersion \<Boolean?\>\]: When TRUE, indicates the version of application is the most used version for that application.
+When FALSE, indicates the version is not the most used version.
+FALSE by default.
+Supports: $select, $OrderBy.
+Read-only.
 
 ## RELATED LINKS
 [New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail?view=graph-powershell-1.0)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticapphealthapplicationperformancebyappversiondetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticapphealthapplicationperformancebyappversiondetail)
+
 

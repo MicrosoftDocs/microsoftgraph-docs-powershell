@@ -8,11 +8,12 @@ schema: 2.0.0
 # Update-MgBetaAccessReview
 
 ## SYNOPSIS
-In the Azure AD access reviews feature, update an existing accessReview object to change one or more of its properties.
+In the Microsoft Entra access reviews feature, update an existing accessReview object to change one or more of its properties.
 This API is not intended to change the reviewers or decisions of a review.
 To change the reviewers, use the addReviewer or removeReviewer APIs.
 To stop an already-started one-time review, or an already-started instance of a recurring review, early, use the stop API.
 To apply the decisions to the target group or app access rights, use the apply API.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -53,11 +54,12 @@ Update-MgBetaAccessReview -InputObject <IIdentityGovernanceIdentity>
 ```
 
 ## DESCRIPTION
-In the Azure AD access reviews feature, update an existing accessReview object to change one or more of its properties.
+In the Microsoft Entra access reviews feature, update an existing accessReview object to change one or more of its properties.
 This API is not intended to change the reviewers or decisions of a review.
 To change the reviewers, use the addReviewer or removeReviewer APIs.
 To stop an already-started one-time review, or an already-started instance of a recurring review, early, use the stop API.
 To apply the decisions to the target group or app access rights, use the apply API.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaAccessReview Cmdlet
@@ -434,16 +436,16 @@ This value is case sensitive.
   \[CreatedBy \<IMicrosoftGraphUserIdentity\>\]: userIdentity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-Note that this might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity.
+This property is read-only.
+    \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
     \[IPAddress \<String\>\]: Indicates the client IP address used by user performing the activity (audit log only).
     \[UserPrincipalName \<String\>\]: The userPrincipalName attribute of the user.
   \[Decisions \<IMicrosoftGraphAccessReviewDecision\[\]\>\]: The collection of decisions for this access review.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
     \[AccessRecommendation \<String\>\]: The feature- generated recommendation shown to the reviewer, one of Approve, Deny or NotAvailable.
-    \[AccessReviewId \<String\>\]: The feature-generated id of the access review.
+    \[AccessReviewId \<String\>\]: The feature-generated ID of the access review.
     \[AppliedBy \<IMicrosoftGraphUserIdentity\>\]: userIdentity
     \[AppliedDateTime \<DateTime?\>\]: The date and time when the review decision was applied.
     \[ApplyResult \<String\>\]: The outcome of applying the decision, one of NotApplied, Success, Failed, NotFound or NotSupported.
@@ -462,9 +464,9 @@ Required on create.
   \[ReviewedEntity \<IMicrosoftGraphIdentity\>\]: identity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-Note that this might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity.
+This property is read-only.
+    \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
   \[ReviewerType \<String\>\]: The relationship type of reviewer to the target object, one of self, delegated or entityOwners.
 Required on create.
   \[Reviewers \<IMicrosoftGraphAccessReviewReviewer\[\]\>\]: The collection of reviewers for an access review, if access review reviewerType is of type delegated.
@@ -479,8 +481,8 @@ Read-only.
     \[ActivityDurationInDays \<Int32?\>\]: The number of days of user activities to show to reviewers.
     \[AutoApplyReviewResultsEnabled \<Boolean?\>\]: Indicates whether the auto-apply capability, to automatically change the target object access resource, is enabled. 
 If not enabled, a user must, after the review completes, apply the access review.
-    \[AutoReviewEnabled \<Boolean?\>\]: Indicates whether a decision should be set if the reviewer did not supply one.
-For use when auto-apply is enabled.
+    \[AutoReviewEnabled \<Boolean?\>\]: Indicates whether a decision should be set if the reviewer didn't supply one.
+For use when, auto-apply is enabled.
 If you don't want to have a review decision recorded unless the reviewer makes an explicit choice, set it to false.
     \[AutoReviewSettings \<IMicrosoftGraphAutoReviewSettings\>\]: autoReviewSettings
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -496,11 +498,11 @@ Then, when a review completes, based on the notReviewedResult property, the deci
       \[RecurrenceCount \<Int32?\>\]: The count of recurrences, if the value of recurrenceEndType is occurrences, or 0 otherwise.
       \[RecurrenceEndType \<String\>\]: How the recurrence ends.
 Possible values: never, endBy, occurrences, or recurrenceCount.
-If it is never, then there is no explicit end of the recurrence series.
-If it is endBy, then the recurrence ends at a certain date.
-If it is occurrences, then the series ends after recurrenceCount instances of the review have completed.
+If it's never, then there's no explicit end of the recurrence series.
+If it's endBy, then the recurrence ends at a certain date.
+If it's occurrences, then the series ends after recurrenceCount instances of the review have completed.
       \[RecurrenceType \<String\>\]: The recurrence interval.
-Possible vaules: onetime, weekly, monthly, quarterly, halfyearly or annual.
+Possible values: onetime, weekly, monthly, quarterly, halfyearly or annual.
     \[RemindersEnabled \<Boolean?\>\]: Indicates whether sending reminder emails to reviewers is enabled.
   \[StartDateTime \<DateTime?\>\]: The DateTime when the review is scheduled to be start. 
 This could be a date in the future. 
@@ -511,9 +513,9 @@ The typical states include Initializing, NotStarted, Starting,InProgress, Comple
 CREATEDBY \<IMicrosoftGraphUserIdentity\>: userIdentity
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[DisplayName \<String\>\]: The display name of the identity.
-Note that this might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-  \[Id \<String\>\]: Unique identifier for the identity.
+This property is read-only.
+  \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
   \[IPAddress \<String\>\]: Indicates the client IP address used by user performing the activity (audit log only).
   \[UserPrincipalName \<String\>\]: The userPrincipalName attribute of the user.
 
@@ -521,13 +523,13 @@ DECISIONS \<IMicrosoftGraphAccessReviewDecision\[\]\>: The collection of decisio
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
   \[AccessRecommendation \<String\>\]: The feature- generated recommendation shown to the reviewer, one of Approve, Deny or NotAvailable.
-  \[AccessReviewId \<String\>\]: The feature-generated id of the access review.
+  \[AccessReviewId \<String\>\]: The feature-generated ID of the access review.
   \[AppliedBy \<IMicrosoftGraphUserIdentity\>\]: userIdentity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-Note that this might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity.
+This property is read-only.
+    \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
     \[IPAddress \<String\>\]: Indicates the client IP address used by user performing the activity (audit log only).
     \[UserPrincipalName \<String\>\]: The userPrincipalName attribute of the user.
   \[AppliedDateTime \<DateTime?\>\]: The date and time when the review decision was applied.
@@ -579,6 +581,7 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[CustomTaskExtensionId \<String\>\]: The unique identifier of customTaskExtension
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[EndDateTime \<DateTime?\>\]: Usage: endDateTime={endDateTime}
+  \[FindingId \<String\>\]: The unique identifier of finding
   \[GovernanceInsightId \<String\>\]: The unique identifier of governanceInsight
   \[GovernanceResourceId \<String\>\]: The unique identifier of governanceResource
   \[GovernanceRoleAssignmentId \<String\>\]: The unique identifier of governanceRoleAssignment
@@ -589,6 +592,8 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[IncompatibleAccessPackageId \<String\>\]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   \[LongRunningOperationId \<String\>\]: The unique identifier of longRunningOperation
   \[On \<String\>\]: Usage: on='{on}'
+  \[PermissionsCreepIndexDistributionId \<String\>\]: The unique identifier of permissionsCreepIndexDistribution
+  \[PermissionsRequestChangeId \<String\>\]: The unique identifier of permissionsRequestChange
   \[PrivilegedAccessGroupAssignmentScheduleId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentSchedule
   \[PrivilegedAccessGroupAssignmentScheduleInstanceId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentScheduleInstance
   \[PrivilegedAccessGroupAssignmentScheduleRequestId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentScheduleRequest
@@ -644,16 +649,16 @@ This value is case sensitive.
   \[CreatedBy \<IMicrosoftGraphUserIdentity\>\]: userIdentity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-Note that this might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity.
+This property is read-only.
+    \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
     \[IPAddress \<String\>\]: Indicates the client IP address used by user performing the activity (audit log only).
     \[UserPrincipalName \<String\>\]: The userPrincipalName attribute of the user.
   \[Decisions \<IMicrosoftGraphAccessReviewDecision\[\]\>\]: The collection of decisions for this access review.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
     \[AccessRecommendation \<String\>\]: The feature- generated recommendation shown to the reviewer, one of Approve, Deny or NotAvailable.
-    \[AccessReviewId \<String\>\]: The feature-generated id of the access review.
+    \[AccessReviewId \<String\>\]: The feature-generated ID of the access review.
     \[AppliedBy \<IMicrosoftGraphUserIdentity\>\]: userIdentity
     \[AppliedDateTime \<DateTime?\>\]: The date and time when the review decision was applied.
     \[ApplyResult \<String\>\]: The outcome of applying the decision, one of NotApplied, Success, Failed, NotFound or NotSupported.
@@ -672,9 +677,9 @@ Required on create.
   \[ReviewedEntity \<IMicrosoftGraphIdentity\>\]: identity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-Note that this might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity.
+This property is read-only.
+    \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
   \[ReviewerType \<String\>\]: The relationship type of reviewer to the target object, one of self, delegated or entityOwners.
 Required on create.
   \[Reviewers \<IMicrosoftGraphAccessReviewReviewer\[\]\>\]: The collection of reviewers for an access review, if access review reviewerType is of type delegated.
@@ -689,8 +694,8 @@ Read-only.
     \[ActivityDurationInDays \<Int32?\>\]: The number of days of user activities to show to reviewers.
     \[AutoApplyReviewResultsEnabled \<Boolean?\>\]: Indicates whether the auto-apply capability, to automatically change the target object access resource, is enabled. 
 If not enabled, a user must, after the review completes, apply the access review.
-    \[AutoReviewEnabled \<Boolean?\>\]: Indicates whether a decision should be set if the reviewer did not supply one.
-For use when auto-apply is enabled.
+    \[AutoReviewEnabled \<Boolean?\>\]: Indicates whether a decision should be set if the reviewer didn't supply one.
+For use when, auto-apply is enabled.
 If you don't want to have a review decision recorded unless the reviewer makes an explicit choice, set it to false.
     \[AutoReviewSettings \<IMicrosoftGraphAutoReviewSettings\>\]: autoReviewSettings
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -706,11 +711,11 @@ Then, when a review completes, based on the notReviewedResult property, the deci
       \[RecurrenceCount \<Int32?\>\]: The count of recurrences, if the value of recurrenceEndType is occurrences, or 0 otherwise.
       \[RecurrenceEndType \<String\>\]: How the recurrence ends.
 Possible values: never, endBy, occurrences, or recurrenceCount.
-If it is never, then there is no explicit end of the recurrence series.
-If it is endBy, then the recurrence ends at a certain date.
-If it is occurrences, then the series ends after recurrenceCount instances of the review have completed.
+If it's never, then there's no explicit end of the recurrence series.
+If it's endBy, then the recurrence ends at a certain date.
+If it's occurrences, then the series ends after recurrenceCount instances of the review have completed.
       \[RecurrenceType \<String\>\]: The recurrence interval.
-Possible vaules: onetime, weekly, monthly, quarterly, halfyearly or annual.
+Possible values: onetime, weekly, monthly, quarterly, halfyearly or annual.
     \[RemindersEnabled \<Boolean?\>\]: Indicates whether sending reminder emails to reviewers is enabled.
   \[StartDateTime \<DateTime?\>\]: The DateTime when the review is scheduled to be start. 
 This could be a date in the future. 
@@ -722,13 +727,13 @@ MYDECISIONS \<IMicrosoftGraphAccessReviewDecision\[\]\>: The collection of decis
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
   \[AccessRecommendation \<String\>\]: The feature- generated recommendation shown to the reviewer, one of Approve, Deny or NotAvailable.
-  \[AccessReviewId \<String\>\]: The feature-generated id of the access review.
+  \[AccessReviewId \<String\>\]: The feature-generated ID of the access review.
   \[AppliedBy \<IMicrosoftGraphUserIdentity\>\]: userIdentity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-Note that this might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity.
+This property is read-only.
+    \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
     \[IPAddress \<String\>\]: Indicates the client IP address used by user performing the activity (audit log only).
     \[UserPrincipalName \<String\>\]: The userPrincipalName attribute of the user.
   \[AppliedDateTime \<DateTime?\>\]: The date and time when the review decision was applied.
@@ -741,9 +746,9 @@ For example, if a user changes their display name, the API might show the new va
 REVIEWEDENTITY \<IMicrosoftGraphIdentity\>: identity
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[DisplayName \<String\>\]: The display name of the identity.
-Note that this might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-  \[Id \<String\>\]: Unique identifier for the identity.
+This property is read-only.
+  \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
 
 REVIEWERS \<IMicrosoftGraphAccessReviewReviewer\[\]\>: The collection of reviewers for an access review, if access review reviewerType is of type delegated.
   \[Id \<String\>\]: The unique identifier for an entity.
@@ -758,8 +763,8 @@ SETTINGS \<IMicrosoftGraphAccessReviewSettings\>: accessReviewSettings
   \[ActivityDurationInDays \<Int32?\>\]: The number of days of user activities to show to reviewers.
   \[AutoApplyReviewResultsEnabled \<Boolean?\>\]: Indicates whether the auto-apply capability, to automatically change the target object access resource, is enabled. 
 If not enabled, a user must, after the review completes, apply the access review.
-  \[AutoReviewEnabled \<Boolean?\>\]: Indicates whether a decision should be set if the reviewer did not supply one.
-For use when auto-apply is enabled.
+  \[AutoReviewEnabled \<Boolean?\>\]: Indicates whether a decision should be set if the reviewer didn't supply one.
+For use when, auto-apply is enabled.
 If you don't want to have a review decision recorded unless the reviewer makes an explicit choice, set it to false.
   \[AutoReviewSettings \<IMicrosoftGraphAutoReviewSettings\>\]: autoReviewSettings
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -775,11 +780,11 @@ Then, when a review completes, based on the notReviewedResult property, the deci
     \[RecurrenceCount \<Int32?\>\]: The count of recurrences, if the value of recurrenceEndType is occurrences, or 0 otherwise.
     \[RecurrenceEndType \<String\>\]: How the recurrence ends.
 Possible values: never, endBy, occurrences, or recurrenceCount.
-If it is never, then there is no explicit end of the recurrence series.
-If it is endBy, then the recurrence ends at a certain date.
-If it is occurrences, then the series ends after recurrenceCount instances of the review have completed.
+If it's never, then there's no explicit end of the recurrence series.
+If it's endBy, then the recurrence ends at a certain date.
+If it's occurrences, then the series ends after recurrenceCount instances of the review have completed.
     \[RecurrenceType \<String\>\]: The recurrence interval.
-Possible vaules: onetime, weekly, monthly, quarterly, halfyearly or annual.
+Possible values: onetime, weekly, monthly, quarterly, halfyearly or annual.
   \[RemindersEnabled \<Boolean?\>\]: Indicates whether sending reminder emails to reviewers is enabled.
 
 ## RELATED LINKS

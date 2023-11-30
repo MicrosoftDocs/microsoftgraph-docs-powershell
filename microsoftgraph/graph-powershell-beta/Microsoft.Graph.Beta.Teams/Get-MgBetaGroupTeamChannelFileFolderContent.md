@@ -30,6 +30,8 @@ Get-MgBetaGroupTeamChannelFileFolderContent -InputObject <ITeamsIdentity> -OutFi
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId
@@ -167,5 +169,4 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Get-MgGroupTeamChannelFileFolderContent](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamChannelFileFolderContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamchannelfilefoldercontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamchannelfilefoldercontent)
-
 

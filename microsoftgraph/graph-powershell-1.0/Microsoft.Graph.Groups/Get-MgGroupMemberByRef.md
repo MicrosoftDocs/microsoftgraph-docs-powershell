@@ -1,7 +1,6 @@
 ---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
-ms.prod: groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberbyref
 schema: 2.0.0
 ms.prod: groups
@@ -70,7 +69,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -147,7 +146,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -192,7 +191,7 @@ Aliases: Limit
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -207,7 +206,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -222,8 +221,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.String
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
-
 [Get-MgBetaGroupMemberByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberByRef?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberbyref)
+

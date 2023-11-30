@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xm
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointdeviceimage
 schema: 2.0.0
+ms.prod: cloud-pc
 ---
 
 # New-MgBetaDeviceManagementVirtualEndpointDeviceImage
@@ -296,26 +297,33 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcDeviceImage
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`BODYPARAMETER <IMicrosoftGraphCloudPcDeviceImage>`: cloudPcDeviceImage
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[DisplayName <String>]`: The display name of the image.
-  - `[ExpirationDate <DateTime?>]`: The date the image became unavailable.
-  - `[LastModifiedDateTime <DateTime?>]`: The data and time that the image was last modified. The time is shown in ISO 8601 format and  Coordinated Universal Time (UTC) time. For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
-  - `[OSBuildNumber <String>]`: The OS build version of the image. For example, 1909.
-  - `[OSStatus <String>]`: cloudPcDeviceImageOsStatus
-  - `[OperatingSystem <String>]`: The operating system of the image. For example, Windows 10 Enterprise.
-  - `[SourceImageResourceId <String>]`: The ID of the source image resource on Azure. Required format: /subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}.
-  - `[Status <String>]`: cloudPcDeviceImageStatus
-  - `[StatusDetails <String>]`: cloudPcDeviceImageStatusDetails
-  - `[Version <String>]`: The image version. For example, 0.0.1 and 1.5.13.
+BODYPARAMETER \<IMicrosoftGraphCloudPcDeviceImage\>: cloudPcDeviceImage
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[DisplayName \<String\>\]: The display name of the image.
+  \[ExpirationDate \<DateTime?\>\]: The date the image became unavailable.
+  \[LastModifiedDateTime \<DateTime?\>\]: The data and time that the image was last modified.
+The time is shown in ISO 8601 format and  Coordinated Universal Time (UTC) time.
+For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
+  \[OSBuildNumber \<String\>\]: The OS build version of the image.
+For example, 1909.
+  \[OSStatus \<String\>\]: cloudPcDeviceImageOsStatus
+  \[OperatingSystem \<String\>\]: The operating system of the image.
+For example, Windows 10 Enterprise.
+  \[SourceImageResourceId \<String\>\]: The ID of the source image resource on Azure.
+Required format: /subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}.
+  \[Status \<String\>\]: cloudPcDeviceImageStatus
+  \[StatusDetails \<String\>\]: cloudPcDeviceImageStatusDetails
+  \[Version \<String\>\]: The image version.
+For example, 0.0.1 and 1.5.13.
 
 ## RELATED LINKS
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointdeviceimage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointdeviceimage)
+

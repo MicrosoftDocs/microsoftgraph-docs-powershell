@@ -1,14 +1,16 @@
 ---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusertodolisttaskattachmentsession
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusertodolisttaskchecklistitem
 schema: 2.0.0
+ms.prod: outlook
 ---
 
-# Update-MgUserTodoListTaskAttachmentSession
+# Update-MgUserTodoListTaskChecklistItem
 
 ## SYNOPSIS
-Update the navigation property attachmentSessions in users
+Update the properties of a checklistItem object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserTodoListTaskChecklistItem](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserTodoListTaskChecklistItem?view=graph-powershell-beta)
@@ -17,34 +19,34 @@ Update the navigation property attachmentSessions in users
 
 ### UpdateExpanded (Default)
 ```
-Update-MgUserTodoListTaskAttachmentSession -AttachmentSessionId <String> -TodoTaskId <String>
- -TodoTaskListId <String> -UserId <String> [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>]
- [-ExpirationDateTime <DateTime>] [-Id <String>] [-NextExpectedRanges <String[]>] [-WhatIf] [-Confirm]
+Update-MgUserTodoListTaskChecklistItem -ChecklistItemId <String> -TodoTaskId <String> -TodoTaskListId <String>
+ -UserId <String> [-AdditionalProperties <Hashtable>] [-CheckedDateTime <DateTime>]
+ [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-IsChecked] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgUserTodoListTaskAttachmentSession -AttachmentSessionId <String> -TodoTaskId <String>
- -TodoTaskListId <String> -UserId <String> -BodyParameter <IMicrosoftGraphAttachmentSession> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgUserTodoListTaskChecklistItem -ChecklistItemId <String> -TodoTaskId <String> -TodoTaskListId <String>
+ -UserId <String> -BodyParameter <IMicrosoftGraphChecklistItem> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgUserTodoListTaskAttachmentSession -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
- [-ContentInputFile <String>] [-ExpirationDateTime <DateTime>] [-Id <String>] [-NextExpectedRanges <String[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgUserTodoListTaskChecklistItem -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
+ [-CheckedDateTime <DateTime>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
+ [-IsChecked] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgUserTodoListTaskAttachmentSession -InputObject <IUsersIdentity>
- -BodyParameter <IMicrosoftGraphAttachmentSession> [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgUserTodoListTaskChecklistItem -InputObject <IUsersIdentity>
+ -BodyParameter <IMicrosoftGraphChecklistItem> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property attachmentSessions in users
+Update the properties of a checklistItem object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -81,8 +83,39 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -AttachmentSessionId
-The unique identifier of attachmentSession
+### -BodyParameter
+checklistItem
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphChecklistItem
+Parameter Sets: Update, UpdateViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -CheckedDateTime
+The date and time when the checklistItem was finished.
+
+```yaml
+Type: DateTime
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ChecklistItemId
+The unique identifier of checklistItem
 
 ```yaml
 Type: String
@@ -96,27 +129,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
-attachmentSession
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+### -CreatedDateTime
+The date and time when the checklistItem was created.
 
 ```yaml
-Type: IMicrosoftGraphAttachmentSession
-Parameter Sets: Update, UpdateViaIdentity
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ContentInputFile
-Input File for Content (The content streams that are uploaded.)
-
-```yaml
-Type: String
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -127,12 +144,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ExpirationDateTime
-The date and time in UTC when the upload session will expire.
-The complete file must be uploaded before this expiration time is reached.
+### -DisplayName
+Field indicating the title of checklistItem.
 
 ```yaml
-Type: DateTime
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -175,17 +191,17 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -NextExpectedRanges
-Indicates a single value {start} that represents the location in the file where the next upload should begin.
+### -IsChecked
+State indicating whether the item is checked off or not.
 
 ```yaml
-Type: String[]
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -271,42 +287,43 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachmentSession
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChecklistItem
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachmentSession
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChecklistItem
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+BODYPARAMETER \<IMicrosoftGraphChecklistItem\>: checklistItem
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[CheckedDateTime \<DateTime?\>\]: The date and time when the checklistItem was finished.
+  \[CreatedDateTime \<DateTime?\>\]: The date and time when the checklistItem was created.
+  \[DisplayName \<String\>\]: Field indicating the title of checklistItem.
+  \[IsChecked \<Boolean?\>\]: State indicating whether the item is checked off or not.
 
-`BODYPARAMETER <IMicrosoftGraphAttachmentSession>`: attachmentSession
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Content <Byte[]>]`: The content streams that are uploaded.
-  - `[ExpirationDateTime <DateTime?>]`: The date and time in UTC when the upload session will expire. The complete file must be uploaded before this expiration time is reached.
-  - `[NextExpectedRanges <String[]>]`: Indicates a single value {start} that represents the location in the file where the next upload should begin.
-
-`INPUTOBJECT <IUsersIdentity>`: Identity Parameter
-  - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
-  - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession
-  - `[ChecklistItemId <String>]`: The unique identifier of checklistItem
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
-  - `[LinkedResourceId <String>]`: The unique identifier of linkedResource
-  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
-  - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
-  - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[TodoTaskId <String>]`: The unique identifier of todoTask
-  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
+  \[AttachmentBaseId \<String\>\]: The unique identifier of attachmentBase
+  \[AttachmentSessionId \<String\>\]: The unique identifier of attachmentSession
+  \[ChecklistItemId \<String\>\]: The unique identifier of checklistItem
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[LicenseDetailsId \<String\>\]: The unique identifier of licenseDetails
+  \[LinkedResourceId \<String\>\]: The unique identifier of linkedResource
+  \[OAuth2PermissionGrantId \<String\>\]: The unique identifier of oAuth2PermissionGrant
+  \[OutlookCategoryId \<String\>\]: The unique identifier of outlookCategory
+  \[ProfilePhotoId \<String\>\]: The unique identifier of profilePhoto
+  \[TodoTaskId \<String\>\]: The unique identifier of todoTask
+  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-
 [Update-MgBetaUserTodoListTaskChecklistItem](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserTodoListTaskChecklistItem?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusertodolisttaskchecklistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusertodolisttaskchecklistitem)
+

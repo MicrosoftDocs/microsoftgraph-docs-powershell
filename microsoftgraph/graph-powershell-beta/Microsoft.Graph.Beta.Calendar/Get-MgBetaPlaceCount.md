@@ -64,8 +64,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.Int32
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
 [Get-MgPlaceCount](/powershell/module/Microsoft.Graph.Calendar/Get-MgPlaceCount?view=graph-powershell-1.0)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplacecount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplacecount)
+
 

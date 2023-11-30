@@ -115,32 +115,32 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Int32
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`INPUTOBJECT <IComplianceIdentity>`: Identity Parameter
-  - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
-  - `[CaseId <String>]`: The unique identifier of case
-  - `[CaseOperationId <String>]`: The unique identifier of caseOperation
-  - `[CustodianId <String>]`: The unique identifier of custodian
-  - `[DataSourceId <String>]`: The unique identifier of dataSource
-  - `[LegalHoldId <String>]`: The unique identifier of legalHold
-  - `[NoncustodialDataSourceId <String>]`: The unique identifier of noncustodialDataSource
-  - `[ReviewSetId <String>]`: The unique identifier of reviewSet
-  - `[ReviewSetQueryId <String>]`: The unique identifier of reviewSetQuery
-  - `[SiteSourceId <String>]`: The unique identifier of siteSource
-  - `[SourceCollectionId <String>]`: The unique identifier of sourceCollection
-  - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
-  - `[TagId <String>]`: The unique identifier of tag
-  - `[TagId1 <String>]`: The unique identifier of tag
-  - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
-  - `[UserId <String>]`: The unique identifier of user
-  - `[UserSourceId <String>]`: The unique identifier of userSource
+INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
+  \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
+  \[CaseId \<String\>\]: The unique identifier of case
+  \[CaseOperationId \<String\>\]: The unique identifier of caseOperation
+  \[CustodianId \<String\>\]: The unique identifier of custodian
+  \[DataSourceId \<String\>\]: The unique identifier of dataSource
+  \[LegalHoldId \<String\>\]: The unique identifier of legalHold
+  \[NoncustodialDataSourceId \<String\>\]: The unique identifier of noncustodialDataSource
+  \[ReviewSetId \<String\>\]: The unique identifier of reviewSet
+  \[ReviewSetQueryId \<String\>\]: The unique identifier of reviewSetQuery
+  \[SiteSourceId \<String\>\]: The unique identifier of siteSource
+  \[SourceCollectionId \<String\>\]: The unique identifier of sourceCollection
+  \[SubjectRightsRequestId \<String\>\]: The unique identifier of subjectRightsRequest
+  \[TagId \<String\>\]: The unique identifier of tag
+  \[TagId1 \<String\>\]: The unique identifier of tag
+  \[UnifiedGroupSourceId \<String\>\]: The unique identifier of unifiedGroupSource
+  \[UserId \<String\>\]: The unique identifier of user
+  \[UserSourceId \<String\>\]: The unique identifier of userSource
 
 ## RELATED LINKS
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasetagchildtagcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasetagchildtagcount)
+
 

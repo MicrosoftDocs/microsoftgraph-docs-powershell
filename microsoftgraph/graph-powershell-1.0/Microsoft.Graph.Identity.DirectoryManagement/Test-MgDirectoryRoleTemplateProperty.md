@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/test-mgdirectoryroletemplateproperty
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Test-MgDirectoryRoleTemplateProperty
@@ -175,7 +176,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -221,21 +222,20 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`BODYPARAMETER <IPaths1Binbx4DirectoryroletemplatesMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: 
-  - `[EntityType <String>]`: 
-  - `[MailNickname <String>]`: 
-  - `[OnBehalfOfUserId <String>]`: 
+BODYPARAMETER \<IPaths1Binbx4DirectoryroletemplatesMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DisplayName \<String\>\]: 
+  \[EntityType \<String\>\]: 
+  \[MailNickname \<String\>\]: 
+  \[OnBehalfOfUserId \<String\>\]:
 
 ## RELATED LINKS
-
 [Test-MgBetaDirectoryRoleTemplateProperty](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Test-MgBetaDirectoryRoleTemplateProperty?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/test-mgdirectoryroletemplateproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/test-mgdirectoryroletemplateproperty)
+

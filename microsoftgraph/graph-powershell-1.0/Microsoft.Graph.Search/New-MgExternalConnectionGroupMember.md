@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectiongroupmember
 schema: 2.0.0
+ms.prod: search
 ---
 
 # New-MgExternalConnectionGroupMember
@@ -246,27 +247,27 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsIdentity
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+BODYPARAMETER \<IMicrosoftGraphExternalConnectorsIdentity\>: identity
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[Type \<String\>\]: identityType
 
-`BODYPARAMETER <IMicrosoftGraphExternalConnectorsIdentity>`: identity
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Type <String>]`: identityType
-
-`INPUTOBJECT <ISearchIdentity>`: Identity Parameter
-  - `[ConnectionOperationId <String>]`: The unique identifier of connectionOperation
-  - `[ExternalActivityId <String>]`: The unique identifier of externalActivity
-  - `[ExternalConnectionId <String>]`: The unique identifier of externalConnection
-  - `[ExternalGroupId <String>]`: The unique identifier of externalGroup
-  - `[ExternalItemId <String>]`: The unique identifier of externalItem
-  - `[IdentityId <String>]`: The unique identifier of identity
+INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
+  \[ConnectionOperationId \<String\>\]: The unique identifier of connectionOperation
+  \[ExternalActivityId \<String\>\]: The unique identifier of externalActivity
+  \[ExternalConnectionId \<String\>\]: The unique identifier of externalConnection
+  \[ExternalGroupId \<String\>\]: The unique identifier of externalGroup
+  \[ExternalItemId \<String\>\]: The unique identifier of externalItem
+  \[IdentityId \<String\>\]: The unique identifier of identity
 
 ## RELATED LINKS
-
 [New-MgBetaExternalConnectionGroupMember](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaExternalConnectionGroupMember?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectiongroupmember](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectiongroupmember)
+

@@ -50,12 +50,6 @@ Locale: en-US
 ### [Confirm-MgBetaDeviceMemberObject](Confirm-MgBetaDeviceMemberObject.md)
 {{ Fill in the Description }}
 
-### [Confirm-MgBetaDirectoryAdministrativeUnitMemberGroup](Confirm-MgBetaDirectoryAdministrativeUnitMemberGroup.md)
-{{ Fill in the Description }}
-
-### [Confirm-MgBetaDirectoryAdministrativeUnitMemberObject](Confirm-MgBetaDirectoryAdministrativeUnitMemberObject.md)
-{{ Fill in the Description }}
-
 ### [Confirm-MgBetaDirectoryDeletedItemMemberGroup](Confirm-MgBetaDirectoryDeletedItemMemberGroup.md)
 {{ Fill in the Description }}
 
@@ -237,6 +231,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaContactMemberOfCountAsGroup](Get-MgBetaContactMemberOfCountAsGroup.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaContactServiceProvisioningError](Get-MgBetaContactServiceProvisioningError.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaContactServiceProvisioningErrorCount](Get-MgBetaContactServiceProvisioningErrorCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaContactTransitiveMemberOf](Get-MgBetaContactTransitiveMemberOf.md)
@@ -428,9 +428,6 @@ Locale: en-US
 ### [Get-MgBetaDirectoryAdministrativeUnit](Get-MgBetaDirectoryAdministrativeUnit.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaDirectoryAdministrativeUnitById](Get-MgBetaDirectoryAdministrativeUnitById.md)
-{{ Fill in the Description }}
-
 ### [Get-MgBetaDirectoryAdministrativeUnitCount](Get-MgBetaDirectoryAdministrativeUnitCount.md)
 {{ Fill in the Description }}
 
@@ -488,19 +485,10 @@ Locale: en-US
 ### [Get-MgBetaDirectoryAdministrativeUnitMemberCountAsUser](Get-MgBetaDirectoryAdministrativeUnitMemberCountAsUser.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaDirectoryAdministrativeUnitMemberGroup](Get-MgBetaDirectoryAdministrativeUnitMemberGroup.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaDirectoryAdministrativeUnitMemberObject](Get-MgBetaDirectoryAdministrativeUnitMemberObject.md)
-{{ Fill in the Description }}
-
 ### [Get-MgBetaDirectoryAdministrativeUnitScopedRoleMember](Get-MgBetaDirectoryAdministrativeUnitScopedRoleMember.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDirectoryAdministrativeUnitScopedRoleMemberCount](Get-MgBetaDirectoryAdministrativeUnitScopedRoleMemberCount.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaDirectoryAdministrativeUnitUserOwnedObject](Get-MgBetaDirectoryAdministrativeUnitUserOwnedObject.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDirectoryAttributeSet](Get-MgBetaDirectoryAttributeSet.md)
@@ -584,7 +572,10 @@ Locale: en-US
 ### [Get-MgBetaDirectoryDeletedItemMemberObject](Get-MgBetaDirectoryDeletedItemMemberObject.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaDirectoryDeletedItemUserOwnedObject](Get-MgBetaDirectoryDeletedItemUserOwnedObject.md)
+### [Get-MgBetaDirectoryDeviceLocalCredential](Get-MgBetaDirectoryDeviceLocalCredential.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDirectoryDeviceLocalCredentialCount](Get-MgBetaDirectoryDeviceLocalCredentialCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDirectoryFeatureRolloutPolicy](Get-MgBetaDirectoryFeatureRolloutPolicy.md)
@@ -593,19 +584,10 @@ Locale: en-US
 ### [Get-MgBetaDirectoryFeatureRolloutPolicyApplyTo](Get-MgBetaDirectoryFeatureRolloutPolicyApplyTo.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaDirectoryFeatureRolloutPolicyApplyToById](Get-MgBetaDirectoryFeatureRolloutPolicyApplyToById.md)
-{{ Fill in the Description }}
-
 ### [Get-MgBetaDirectoryFeatureRolloutPolicyApplyToByRef](Get-MgBetaDirectoryFeatureRolloutPolicyApplyToByRef.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDirectoryFeatureRolloutPolicyApplyToCount](Get-MgBetaDirectoryFeatureRolloutPolicyApplyToCount.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaDirectoryFeatureRolloutPolicyApplyToDelta](Get-MgBetaDirectoryFeatureRolloutPolicyApplyToDelta.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaDirectoryFeatureRolloutPolicyApplyToUserOwnedObject](Get-MgBetaDirectoryFeatureRolloutPolicyApplyToUserOwnedObject.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDirectoryFeatureRolloutPolicyCount](Get-MgBetaDirectoryFeatureRolloutPolicyCount.md)
@@ -1055,7 +1037,7 @@ Locale: en-US
 ### [New-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue](New-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue.md)
 {{ Fill in the Description }}
 
-### [New-MgBetaDirectoryDeletedItem](New-MgBetaDirectoryDeletedItem.md)
+### [New-MgBetaDirectoryDeviceLocalCredential](New-MgBetaDirectoryDeviceLocalCredential.md)
 {{ Fill in the Description }}
 
 ### [New-MgBetaDirectoryFeatureRolloutPolicy](New-MgBetaDirectoryFeatureRolloutPolicy.md)
@@ -1223,7 +1205,7 @@ Locale: en-US
 ### [Remove-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue](Remove-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue.md)
 {{ Fill in the Description }}
 
-### [Remove-MgBetaDirectoryDeletedItem](Remove-MgBetaDirectoryDeletedItem.md)
+### [Remove-MgBetaDirectoryDeviceLocalCredential](Remove-MgBetaDirectoryDeviceLocalCredential.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaDirectoryFeatureRolloutPolicy](Remove-MgBetaDirectoryFeatureRolloutPolicy.md)
@@ -1409,13 +1391,7 @@ Locale: en-US
 ### [Test-MgBetaDeviceProperty](Test-MgBetaDeviceProperty.md)
 {{ Fill in the Description }}
 
-### [Test-MgBetaDirectoryAdministrativeUnitProperty](Test-MgBetaDirectoryAdministrativeUnitProperty.md)
-{{ Fill in the Description }}
-
 ### [Test-MgBetaDirectoryDeletedItemProperty](Test-MgBetaDirectoryDeletedItemProperty.md)
-{{ Fill in the Description }}
-
-### [Test-MgBetaDirectoryFeatureRolloutPolicyApplyToProperty](Test-MgBetaDirectoryFeatureRolloutPolicyApplyToProperty.md)
 {{ Fill in the Description }}
 
 ### [Test-MgBetaDirectoryRoleProperty](Test-MgBetaDirectoryRoleProperty.md)
@@ -1499,7 +1475,7 @@ Locale: en-US
 ### [Update-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue](Update-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue.md)
 {{ Fill in the Description }}
 
-### [Update-MgBetaDirectoryDeletedItem](Update-MgBetaDirectoryDeletedItem.md)
+### [Update-MgBetaDirectoryDeviceLocalCredential](Update-MgBetaDirectoryDeviceLocalCredential.md)
 {{ Fill in the Description }}
 
 ### [Update-MgBetaDirectoryFeatureRolloutPolicy](Update-MgBetaDirectoryFeatureRolloutPolicy.md)

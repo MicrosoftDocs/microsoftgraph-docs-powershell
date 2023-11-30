@@ -72,8 +72,8 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 An abstract class containing the base properties for Intune mobile apps.
-Note: Listing mobile apps with `$expand=assignments` has been deprecated.
-Instead get the list of apps without the `$expand` query on `assignments`.
+Note: Listing mobile apps with \`$expand=assignments\` has been deprecated.
+Instead get the list of apps without the \`$expand\` query on \`assignments\`.
 Then, perform the expansion on individual applications.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
@@ -130,7 +130,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -221,7 +221,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -236,7 +236,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -388,7 +388,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -403,7 +403,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -418,7 +418,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -464,94 +464,102 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileApp
 ## NOTES
-
-ALIASES
-
-New-MgBetaDeviceAppMgtMobileApp
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+ASSIGNMENTS \<IMicrosoftGraphMobileAppAssignment\[\]\>: The list of group assignments for this mobile app.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[Intent \<InstallIntent?\>\]: Possible values for the install intent chosen by the admin.
+  \[Settings \<IMicrosoftGraphMobileAppAssignmentSettings\>\]: Abstract class to contain properties used to assign a mobile app to a group.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Source \<DeviceAndAppManagementAssignmentSource?\>\]: Represents source of assignment.
+  \[SourceId \<String\>\]: The identifier of the source of the assignment.
+  \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DeviceAndAppManagementAssignmentFilterId \<String\>\]: The Id of the filter for the target assignment.
+    \[DeviceAndAppManagementAssignmentFilterType \<DeviceAndAppManagementAssignmentFilterType?\>\]: Represents type of the assignment filter.
 
-`ASSIGNMENTS <IMicrosoftGraphMobileAppAssignment[]>`: The list of group assignments for this mobile app.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Intent <InstallIntent?>]`: Possible values for the install intent chosen by the admin.
-  - `[Settings <IMicrosoftGraphMobileAppAssignmentSettings>]`: Abstract class to contain properties used to assign a mobile app to a group.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
-  - `[SourceId <String>]`: The identifier of the source of the assignment.
-  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-    - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
+BODYPARAMETER \<IMicrosoftGraphMobileApp\>: An abstract class containing the base properties for Intune mobile apps.
+Note: Listing mobile apps with \`$expand=assignments\` has been deprecated.
+Instead get the list of apps without the \`$expand\` query on \`assignments\`.
+Then, perform the expansion on individual applications.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[Assignments \<IMicrosoftGraphMobileAppAssignment\[\]\>\]: The list of group assignments for this mobile app.
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[Intent \<InstallIntent?\>\]: Possible values for the install intent chosen by the admin.
+    \[Settings \<IMicrosoftGraphMobileAppAssignmentSettings\>\]: Abstract class to contain properties used to assign a mobile app to a group.
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Source \<DeviceAndAppManagementAssignmentSource?\>\]: Represents source of assignment.
+    \[SourceId \<String\>\]: The identifier of the source of the assignment.
+    \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DeviceAndAppManagementAssignmentFilterId \<String\>\]: The Id of the filter for the target assignment.
+      \[DeviceAndAppManagementAssignmentFilterType \<DeviceAndAppManagementAssignmentFilterType?\>\]: Represents type of the assignment filter.
+  \[Categories \<IMicrosoftGraphMobileAppCategory\[\]\>\]: The list of categories for this app.
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[DisplayName \<String\>\]: The name of the app category.
+    \[LastModifiedDateTime \<DateTime?\>\]: The date and time the mobileAppCategory was last modified.
+  \[CreatedDateTime \<DateTime?\>\]: The date and time the app was created.
+  \[DependentAppCount \<Int32?\>\]: The total number of dependencies the child app has.
+  \[Description \<String\>\]: The description of the app.
+  \[Developer \<String\>\]: The developer of the app.
+  \[DisplayName \<String\>\]: The admin provided or imported title of the app.
+  \[InformationUrl \<String\>\]: The more information Url.
+  \[IsAssigned \<Boolean?\>\]: The value indicating whether the app is assigned to at least one group.
+  \[IsFeatured \<Boolean?\>\]: The value indicating whether the app is marked as featured by the admin.
+  \[LargeIcon \<IMicrosoftGraphMimeContent\>\]: Contains properties for a generic mime content.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Type \<String\>\]: Indicates the content mime type.
+    \[Value \<Byte\[\]\>\]: The byte array that contains the actual content.
+  \[LastModifiedDateTime \<DateTime?\>\]: The date and time the app was last modified.
+  \[Notes \<String\>\]: Notes for the app.
+  \[Owner \<String\>\]: The owner of the app.
+  \[PrivacyInformationUrl \<String\>\]: The privacy statement Url.
+  \[Publisher \<String\>\]: The publisher of the app.
+  \[PublishingState \<MobileAppPublishingState?\>\]: Indicates the publishing state of an app.
+  \[Relationships \<IMicrosoftGraphMobileAppRelationship\[\]\>\]: List of relationships for this mobile app.
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[TargetDisplayName \<String\>\]: The target mobile app's display name.
+    \[TargetDisplayVersion \<String\>\]: The target mobile app's display version.
+    \[TargetId \<String\>\]: The target mobile app's app id.
+    \[TargetPublisher \<String\>\]: The target mobile app's publisher.
+    \[TargetType \<MobileAppRelationshipType?\>\]: Indicates whether the target of a relationship is the parent or the child in the relationship.
+  \[RoleScopeTagIds \<String\[\]\>\]: List of scope tag ids for this mobile app.
+  \[SupersededAppCount \<Int32?\>\]: The total number of apps this app is directly or indirectly superseded by.
+  \[SupersedingAppCount \<Int32?\>\]: The total number of apps this app directly or indirectly supersedes.
+  \[UploadState \<Int32?\>\]: The upload state.
 
-`BODYPARAMETER <IMicrosoftGraphMobileApp>`: An abstract class containing the base properties for Intune mobile apps. Note: Listing mobile apps with `$expand=assignments` has been deprecated. Instead get the list of apps without the `$expand` query on `assignments`. Then, perform the expansion on individual applications.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Assignments <IMicrosoftGraphMobileAppAssignment[]>]`: The list of group assignments for this mobile app.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[Intent <InstallIntent?>]`: Possible values for the install intent chosen by the admin.
-    - `[Settings <IMicrosoftGraphMobileAppAssignmentSettings>]`: Abstract class to contain properties used to assign a mobile app to a group.
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
-    - `[SourceId <String>]`: The identifier of the source of the assignment.
-    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-      - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
-  - `[Categories <IMicrosoftGraphMobileAppCategory[]>]`: The list of categories for this app.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[DisplayName <String>]`: The name of the app category.
-    - `[LastModifiedDateTime <DateTime?>]`: The date and time the mobileAppCategory was last modified.
-  - `[CreatedDateTime <DateTime?>]`: The date and time the app was created.
-  - `[DependentAppCount <Int32?>]`: The total number of dependencies the child app has.
-  - `[Description <String>]`: The description of the app.
-  - `[Developer <String>]`: The developer of the app.
-  - `[DisplayName <String>]`: The admin provided or imported title of the app.
-  - `[InformationUrl <String>]`: The more information Url.
-  - `[IsAssigned <Boolean?>]`: The value indicating whether the app is assigned to at least one group.
-  - `[IsFeatured <Boolean?>]`: The value indicating whether the app is marked as featured by the admin.
-  - `[LargeIcon <IMicrosoftGraphMimeContent>]`: Contains properties for a generic mime content.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Type <String>]`: Indicates the content mime type.
-    - `[Value <Byte[]>]`: The byte array that contains the actual content.
-  - `[LastModifiedDateTime <DateTime?>]`: The date and time the app was last modified.
-  - `[Notes <String>]`: Notes for the app.
-  - `[Owner <String>]`: The owner of the app.
-  - `[PrivacyInformationUrl <String>]`: The privacy statement Url.
-  - `[Publisher <String>]`: The publisher of the app.
-  - `[PublishingState <MobileAppPublishingState?>]`: Indicates the publishing state of an app.
-  - `[Relationships <IMicrosoftGraphMobileAppRelationship[]>]`: List of relationships for this mobile app.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[TargetDisplayName <String>]`: The target mobile app's display name.
-    - `[TargetDisplayVersion <String>]`: The target mobile app's display version.
-    - `[TargetId <String>]`: The target mobile app's app id.
-    - `[TargetPublisher <String>]`: The target mobile app's publisher.
-    - `[TargetType <MobileAppRelationshipType?>]`: Indicates whether the target of a relationship is the parent or the child in the relationship.
-  - `[RoleScopeTagIds <String[]>]`: List of scope tag ids for this mobile app.
-  - `[SupersededAppCount <Int32?>]`: The total number of apps this app is directly or indirectly superseded by.
-  - `[SupersedingAppCount <Int32?>]`: The total number of apps this app directly or indirectly supersedes.
-  - `[UploadState <Int32?>]`: The upload state.
+CATEGORIES \<IMicrosoftGraphMobileAppCategory\[\]\>: The list of categories for this app.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[DisplayName \<String\>\]: The name of the app category.
+  \[LastModifiedDateTime \<DateTime?\>\]: The date and time the mobileAppCategory was last modified.
 
-`CATEGORIES <IMicrosoftGraphMobileAppCategory[]>`: The list of categories for this app.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[DisplayName <String>]`: The name of the app category.
-  - `[LastModifiedDateTime <DateTime?>]`: The date and time the mobileAppCategory was last modified.
+LARGEICON \<IMicrosoftGraphMimeContent\>: Contains properties for a generic mime content.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Type \<String\>\]: Indicates the content mime type.
+  \[Value \<Byte\[\]\>\]: The byte array that contains the actual content.
 
-`LARGEICON <IMicrosoftGraphMimeContent>`: Contains properties for a generic mime content.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Type <String>]`: Indicates the content mime type.
-  - `[Value <Byte[]>]`: The byte array that contains the actual content.
-
-`RELATIONSHIPS <IMicrosoftGraphMobileAppRelationship[]>`: List of relationships for this mobile app.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[TargetDisplayName <String>]`: The target mobile app's display name.
-  - `[TargetDisplayVersion <String>]`: The target mobile app's display version.
-  - `[TargetId <String>]`: The target mobile app's app id.
-  - `[TargetPublisher <String>]`: The target mobile app's publisher.
-  - `[TargetType <MobileAppRelationshipType?>]`: Indicates whether the target of a relationship is the parent or the child in the relationship.
+RELATIONSHIPS \<IMicrosoftGraphMobileAppRelationship\[\]\>: List of relationships for this mobile app.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[TargetDisplayName \<String\>\]: The target mobile app's display name.
+  \[TargetDisplayVersion \<String\>\]: The target mobile app's display version.
+  \[TargetId \<String\>\]: The target mobile app's app id.
+  \[TargetPublisher \<String\>\]: The target mobile app's publisher.
+  \[TargetType \<MobileAppRelationshipType?\>\]: Indicates whether the target of a relationship is the parent or the child in the relationship.
 
 ## RELATED LINKS
 [New-MgDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementMobileApp?view=graph-powershell-1.0)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementmobileapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementmobileapp)
+
 

@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete the channel.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgTeamChannel](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamChannel?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaTeamChannel -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Pas
 
 ## DESCRIPTION
 Delete the channel.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -1,7 +1,6 @@
 ---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
-ms.prod: onenote
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenotenotebooksection
 schema: 2.0.0
 ms.prod: onenote
@@ -28,6 +27,8 @@ Get-MgGroupOnenoteNotebookSection -GroupId <String> -NotebookId <String> [-Expan
 Retrieve a list of onenoteSection objects from the specified notebook.
 This API is available in the following national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -40,7 +41,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -131,7 +132,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -191,7 +192,7 @@ Aliases: Limit
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -206,7 +207,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -221,8 +222,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnenoteSection
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
-
 [Get-MgBetaGroupOnenoteNotebookSection](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaGroupOnenoteNotebookSection?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenotenotebooksection](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenotenotebooksection)
+

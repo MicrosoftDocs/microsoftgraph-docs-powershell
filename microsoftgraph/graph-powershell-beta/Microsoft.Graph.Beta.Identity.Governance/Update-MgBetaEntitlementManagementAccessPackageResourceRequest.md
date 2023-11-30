@@ -349,7 +349,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     \[Description \<String\>\]: The description of this object.
     \[DisplayName \<String\>\]: The display name of this object.
     \[IsDefaultEnvironment \<Boolean?\>\]: Determines whether this is default environment or not.
-It is set to true for all static origin systems, such as Azure AD groups and Azure AD Applications.
+It is set to true for all static origin systems, such as Microsoft Entra groups and Microsoft Entra Applications.
     \[ModifiedBy \<String\>\]: The display name of the entity that last modified this object.
     \[ModifiedDateTime \<DateTime?\>\]: The date and time that this object was last modified.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -402,9 +402,9 @@ Read-only.
   \[IsPendingOnboarding \<Boolean?\>\]: True if the resource is not yet available for assignment.
 Read-only.
   \[OriginId \<String\>\]: The unique identifier of the resource in the origin system.
-In the case of an Azure AD group, this is the identifier of the group.
+In the case of a Microsoft Entra group, this is the identifier of the group.
   \[OriginSystem \<String\>\]: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
-  \[ResourceType \<String\>\]: The type of the resource, such as Application if it is an Azure AD connected application, or SharePoint Online Site for a SharePoint Online site.
+  \[ResourceType \<String\>\]: The type of the resource, such as Application if it is a Microsoft Entra connected application, or SharePoint Online Site for a SharePoint Online site.
   \[Url \<String\>\]: A unique resource locator for the resource, such as the URL for signing a user into an application.
 
 BODYPARAMETER \<IMicrosoftGraphAccessPackageResourceRequest\>: accessPackageResourceRequest
@@ -431,7 +431,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       \[Description \<String\>\]: The description of this object.
       \[DisplayName \<String\>\]: The display name of this object.
       \[IsDefaultEnvironment \<Boolean?\>\]: Determines whether this is default environment or not.
-It is set to true for all static origin systems, such as Azure AD groups and Azure AD Applications.
+It is set to true for all static origin systems, such as Microsoft Entra groups and Microsoft Entra Applications.
       \[ModifiedBy \<String\>\]: The display name of the entity that last modified this object.
       \[ModifiedDateTime \<DateTime?\>\]: The date and time that this object was last modified.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -484,9 +484,9 @@ Read-only.
     \[IsPendingOnboarding \<Boolean?\>\]: True if the resource is not yet available for assignment.
 Read-only.
     \[OriginId \<String\>\]: The unique identifier of the resource in the origin system.
-In the case of an Azure AD group, this is the identifier of the group.
+In the case of a Microsoft Entra group, this is the identifier of the group.
     \[OriginSystem \<String\>\]: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
-    \[ResourceType \<String\>\]: The type of the resource, such as Application if it is an Azure AD connected application, or SharePoint Online Site for a SharePoint Online site.
+    \[ResourceType \<String\>\]: The type of the resource, such as Application if it is a Microsoft Entra connected application, or SharePoint Online Site for a SharePoint Online site.
     \[Url \<String\>\]: A unique resource locator for the resource, such as the URL for signing a user into an application.
   \[CatalogId \<String\>\]: The unique ID of the access package catalog.
   \[ExecuteImmediately \<Boolean?\>\]: 
@@ -504,7 +504,8 @@ Read-Only.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
     \[AltSecId \<String\>\]: Not Supported.
-    \[CleanupScheduledDateTime \<DateTime?\>\]: 
+    \[CleanupScheduledDateTime \<DateTime?\>\]: The date and time the subject is marked to be blocked from sign in or deleted.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
     \[ConnectedOrganization \<IMicrosoftGraphConnectedOrganization\>\]: connectedOrganization
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[Id \<String\>\]: The unique identifier for an entity.
@@ -538,7 +539,7 @@ Read-only.
     \[DisplayName \<String\>\]: The display name of the subject.
     \[Email \<String\>\]: The email address of the subject.
     \[ObjectId \<String\>\]: The object identifier of the subject.
-null if the subject is not yet a user in the tenant.
+null if the subject isn't yet a user in the tenant.
 Alternate key.
     \[OnPremisesSecurityIdentifier \<String\>\]: 
     \[PrincipalName \<String\>\]: The principal name, if known, of the subject.
@@ -587,6 +588,7 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[CustomTaskExtensionId \<String\>\]: The unique identifier of customTaskExtension
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[EndDateTime \<DateTime?\>\]: Usage: endDateTime={endDateTime}
+  \[FindingId \<String\>\]: The unique identifier of finding
   \[GovernanceInsightId \<String\>\]: The unique identifier of governanceInsight
   \[GovernanceResourceId \<String\>\]: The unique identifier of governanceResource
   \[GovernanceRoleAssignmentId \<String\>\]: The unique identifier of governanceRoleAssignment
@@ -597,6 +599,8 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[IncompatibleAccessPackageId \<String\>\]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   \[LongRunningOperationId \<String\>\]: The unique identifier of longRunningOperation
   \[On \<String\>\]: Usage: on='{on}'
+  \[PermissionsCreepIndexDistributionId \<String\>\]: The unique identifier of permissionsCreepIndexDistribution
+  \[PermissionsRequestChangeId \<String\>\]: The unique identifier of permissionsRequestChange
   \[PrivilegedAccessGroupAssignmentScheduleId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentSchedule
   \[PrivilegedAccessGroupAssignmentScheduleInstanceId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentScheduleInstance
   \[PrivilegedAccessGroupAssignmentScheduleRequestId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentScheduleRequest
@@ -648,7 +652,8 @@ REQUESTOR \<IMicrosoftGraphAccessPackageSubject\>: accessPackageSubject
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
   \[AltSecId \<String\>\]: Not Supported.
-  \[CleanupScheduledDateTime \<DateTime?\>\]: 
+  \[CleanupScheduledDateTime \<DateTime?\>\]: The date and time the subject is marked to be blocked from sign in or deleted.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
   \[ConnectedOrganization \<IMicrosoftGraphConnectedOrganization\>\]: connectedOrganization
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[Id \<String\>\]: The unique identifier for an entity.
@@ -682,7 +687,7 @@ Read-only.
   \[DisplayName \<String\>\]: The display name of the subject.
   \[Email \<String\>\]: The email address of the subject.
   \[ObjectId \<String\>\]: The object identifier of the subject.
-null if the subject is not yet a user in the tenant.
+null if the subject isn't yet a user in the tenant.
 Alternate key.
   \[OnPremisesSecurityIdentifier \<String\>\]: 
   \[PrincipalName \<String\>\]: The principal name, if known, of the subject.

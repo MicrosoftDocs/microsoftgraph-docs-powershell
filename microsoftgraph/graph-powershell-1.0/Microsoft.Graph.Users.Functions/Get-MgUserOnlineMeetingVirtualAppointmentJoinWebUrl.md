@@ -13,12 +13,6 @@ Invoke function getVirtualAppointmentJoinWebUrl
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserOnlineMeetingVirtualAppointmentJoinWebUrl](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserOnlineMeetingVirtualAppointmentJoinWebUrl?view=graph-powershell-beta)
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserOnlineMeetingVirtualAppointmentJoinWebUrl](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserOnlineMeetingVirtualAppointmentJoinWebUrl?view=graph-powershell-beta)
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserOnlineMeetingVirtualAppointmentJoinWebUrl](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserOnlineMeetingVirtualAppointmentJoinWebUrl?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -34,8 +28,6 @@ Get-MgUserOnlineMeetingVirtualAppointmentJoinWebUrl -InputObject <IUsersFunction
 
 ## DESCRIPTION
 Invoke function getVirtualAppointmentJoinWebUrl
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -95,46 +87,42 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.String
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`INPUTOBJECT <IUsersFunctionsIdentity>`: Identity Parameter
-  - `[CalendarId <String>]`: The unique identifier of calendar
-  - `[ChatId <String>]`: The unique identifier of chat
-  - `[ChatMessageId <String>]`: The unique identifier of chatMessage
-  - `[ContactFolderId <String>]`: The unique identifier of contactFolder
-  - `[ContactFolderId1 <String>]`: The unique identifier of contactFolder
-  - `[ContentTypeId <String>]`: The unique identifier of contentType
-  - `[DriveId <String>]`: The unique identifier of drive
-  - `[DriveItemId <String>]`: The unique identifier of driveItem
-  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
-  - `[EventId <String>]`: The unique identifier of event
-  - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
-  - `[Interval <String>]`: Usage: interval='{interval}'
-  - `[ListItemId <String>]`: The unique identifier of listItem
-  - `[MailFolderId <String>]`: The unique identifier of mailFolder
-  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
-  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
-  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
-  - `[Q <String>]`: Usage: q='{q}'
-  - `[Skip <Int32?>]`: Usage: skip={skip}
-  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[TimeZoneStandard <String>]`: Usage: TimeZoneStandard='{TimeZoneStandard}'
-  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
-  - `[Token <String>]`: Usage: token='{token}'
-  - `[Top <Int32?>]`: Usage: top={top}
-  - `[User <String>]`: Usage: User='{User}'
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
+  \[CalendarId \<String\>\]: The unique identifier of calendar
+  \[ChatId \<String\>\]: The unique identifier of chat
+  \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
+  \[ContactFolderId \<String\>\]: The unique identifier of contactFolder
+  \[ContactFolderId1 \<String\>\]: The unique identifier of contactFolder
+  \[ContentTypeId \<String\>\]: The unique identifier of contentType
+  \[DriveId \<String\>\]: The unique identifier of drive
+  \[DriveItemId \<String\>\]: The unique identifier of driveItem
+  \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
+  \[EventId \<String\>\]: The unique identifier of event
+  \[IncludePersonalNotebooks \<Boolean?\>\]: Usage: includePersonalNotebooks={includePersonalNotebooks}
+  \[Interval \<String\>\]: Usage: interval='{interval}'
+  \[ListItemId \<String\>\]: The unique identifier of listItem
+  \[MailFolderId \<String\>\]: The unique identifier of mailFolder
+  \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
+  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
+  \[Q \<String\>\]: Usage: q='{q}'
+  \[Skip \<Int32?\>\]: Usage: skip={skip}
+  \[StartDateTime \<String\>\]: Usage: startDateTime='{startDateTime}'
+  \[TimeZoneStandard \<String\>\]: Usage: TimeZoneStandard='{TimeZoneStandard}'
+  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
+  \[Token \<String\>\]: Usage: token='{token}'
+  \[Top \<Int32?\>\]: Usage: top={top}
+  \[User \<String\>\]: Usage: User='{User}'
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 [Get-MgBetaUserOnlineMeetingVirtualAppointmentJoinWebUrl](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserOnlineMeetingVirtualAppointmentJoinWebUrl?view=graph-powershell-beta)
 
-[Get-MgBetaUserOnlineMeetingVirtualAppointmentJoinWebUrl](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserOnlineMeetingVirtualAppointmentJoinWebUrl?view=graph-powershell-beta)
+[https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguseronlinemeetingvirtualappointmentjoinweburl](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguseronlinemeetingvirtualappointmentjoinweburl)
 
-[Get-MgBetaUserOnlineMeetingVirtualAppointmentJoinWebUrl](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserOnlineMeetingVirtualAppointmentJoinWebUrl?view=graph-powershell-beta)
 

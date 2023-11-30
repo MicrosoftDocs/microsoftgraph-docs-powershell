@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-The name displayed in the address book for teh user at the time when the sharing record was created.
+The name displayed in the address book for the user at the time when the sharing record was created.
 Read-only.
 
 ```yaml
@@ -173,7 +173,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER \<IMicrosoftGraphInboundSharedUserProfile\>: inboundSharedUserProfile
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[DisplayName \<String\>\]: The name displayed in the address book for teh user at the time when the sharing record was created.
+  \[DisplayName \<String\>\]: The name displayed in the address book for the user at the time when the sharing record was created.
 Read-only.
   \[HomeTenantId \<String\>\]: The home tenant id of the external user.
 Read-only.

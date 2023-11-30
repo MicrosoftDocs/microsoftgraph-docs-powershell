@@ -65,8 +65,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphApplePushNotificationCertificate
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
 [Get-MgDeviceManagementApplePushNotificationCertificate](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementApplePushNotificationCertificate?view=graph-powershell-1.0)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementapplepushnotificationcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementapplepushnotificationcertificate)
+
 

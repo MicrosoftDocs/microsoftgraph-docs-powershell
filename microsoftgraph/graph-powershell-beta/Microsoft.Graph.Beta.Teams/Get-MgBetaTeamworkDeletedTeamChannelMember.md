@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get a conversationMember from a channel.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgTeamworkDeletedTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeamChannelMember?view=graph-powershell-1.0)
@@ -37,7 +37,9 @@ Get-MgBetaTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity> [-Expan
 
 ## DESCRIPTION
 Get a conversationMember from a channel.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -312,5 +314,4 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Get-MgTeamworkDeletedTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeamChannelMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeletedteamchannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeletedteamchannelmember)
-
 

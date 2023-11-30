@@ -1,170 +1,169 @@
 ---
 Module Name: Microsoft.Graph.DeviceManagement.Actions
-Module Guid: 5a5372c3-0d3e-4066-8e40-01b96c606357
-Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions
-Help Version: 1.0.0.0
+Module Guid: 4b11c162-45ff-4882-9bcc-fdd79ae6b4e5
+Download Help Link: {{ Update Download Link }}
+Help Version: {{ Please enter version of help manually (X.X.X.X) format }}
 Locale: en-US
 ---
 
 # Microsoft.Graph.DeviceManagement.Actions Module
 ## Description
-Microsoft Graph PowerShell Cmdlets
+{{ Fill in the Description }}
 
 ## Microsoft.Graph.DeviceManagement.Actions Cmdlets
 ### [Clear-MgDeviceManagementManagedDevice](Clear-MgDeviceManagementManagedDevice.md)
-Wipe a device
+{{ Fill in the Description }}
 
 ### [Disable-MgDeviceManagementManagedDeviceLostMode](Disable-MgDeviceManagementManagedDeviceLostMode.md)
-Disable lost mode
+{{ Fill in the Description }}
 
 ### [Disconnect-MgDeviceManagementRemoteAssistancePartner](Disconnect-MgDeviceManagementRemoteAssistancePartner.md)
-A request to remove the active TeamViewer connector
+{{ Fill in the Description }}
 
 ### [Find-MgDeviceManagementManagedDevice](Find-MgDeviceManagementManagedDevice.md)
-Locate a device
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementReportCachedReport](Get-MgDeviceManagementReportCachedReport.md)
-Not yet documented
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementReportCompliancePolicyNonComplianceReport](Get-MgDeviceManagementReportCompliancePolicyNonComplianceReport.md)
-Not yet documented
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementReportCompliancePolicyNonComplianceSummaryReport](Get-MgDeviceManagementReportCompliancePolicyNonComplianceSummaryReport.md)
-Not yet documented
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementReportComplianceSettingNonComplianceReport](Get-MgDeviceManagementReportComplianceSettingNonComplianceReport.md)
-Not yet documented
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementReportConfigurationPolicyNonComplianceReport](Get-MgDeviceManagementReportConfigurationPolicyNonComplianceReport.md)
-Not yet documented
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementReportConfigurationPolicyNonComplianceSummaryReport](Get-MgDeviceManagementReportConfigurationPolicyNonComplianceSummaryReport.md)
-Not yet documented
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementReportConfigurationSettingNonComplianceReport](Get-MgDeviceManagementReportConfigurationSettingNonComplianceReport.md)
-Not yet documented
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementReportDeviceManagementIntentPerSettingContributingProfile](Get-MgDeviceManagementReportDeviceManagementIntentPerSettingContributingProfile.md)
-Not yet documented
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementReportDeviceManagementIntentSettingReport](Get-MgDeviceManagementReportDeviceManagementIntentSettingReport.md)
-Not yet documented
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementReportDeviceNonComplianceReport](Get-MgDeviceManagementReportDeviceNonComplianceReport.md)
-Not yet documented
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementReportDeviceWithoutCompliancePolicyReport](Get-MgDeviceManagementReportDeviceWithoutCompliancePolicyReport.md)
-Not yet documented
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementReportFilter](Get-MgDeviceManagementReportFilter.md)
-Not yet documented
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementReportHistoricalReport](Get-MgDeviceManagementReportHistoricalReport.md)
-Not yet documented
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementReportNoncompliantDeviceAndSettingReport](Get-MgDeviceManagementReportNoncompliantDeviceAndSettingReport.md)
-Not yet documented
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementReportPolicyNonComplianceMetadata](Get-MgDeviceManagementReportPolicyNonComplianceMetadata.md)
-Not yet documented
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementReportPolicyNonComplianceReport](Get-MgDeviceManagementReportPolicyNonComplianceReport.md)
-Not yet documented
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementReportPolicyNonComplianceSummaryReport](Get-MgDeviceManagementReportPolicyNonComplianceSummaryReport.md)
-Not yet documented
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementReportSettingNonComplianceReport](Get-MgDeviceManagementReportSettingNonComplianceReport.md)
-Not yet documented
+{{ Fill in the Description }}
 
 ### [Import-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity](Import-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity.md)
-Not yet documented
+{{ Fill in the Description }}
 
 ### [Invoke-MgBeginDeviceManagementRemoteAssistancePartnerOnboarding](Invoke-MgBeginDeviceManagementRemoteAssistancePartnerOnboarding.md)
-A request to start onboarding.
-Must be coupled with the appropriate TeamViewer account information
+{{ Fill in the Description }}
 
 ### [Invoke-MgCleanDeviceManagementManagedDeviceWindowsDevice](Invoke-MgCleanDeviceManagementManagedDeviceWindowsDevice.md)
-Clean Windows device
+{{ Fill in the Description }}
 
 ### [Invoke-MgDownDeviceManagementManagedDeviceShut](Invoke-MgDownDeviceManagementManagedDeviceShut.md)
-Shut down device
+{{ Fill in the Description }}
 
 ### [Invoke-MgLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser](Invoke-MgLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser.md)
-Logout shared Apple device active user
+{{ Fill in the Description }}
 
 ### [Invoke-MgRetireDeviceManagementManagedDevice](Invoke-MgRetireDeviceManagementManagedDevice.md)
-Retire a device
+{{ Fill in the Description }}
 
 ### [Invoke-MgScanDeviceManagementManagedDeviceWindowsDefender](Invoke-MgScanDeviceManagementManagedDeviceWindowsDefender.md)
-Not yet documented
+{{ Fill in the Description }}
 
 ### [Invoke-MgScheduleDeviceManagementDeviceCompliancePolicyActionForRule](Invoke-MgScheduleDeviceManagementDeviceCompliancePolicyActionForRule.md)
-Not yet documented
+{{ Fill in the Description }}
 
 ### [Invoke-MgTerminateDeviceManagementPartner](Invoke-MgTerminateDeviceManagementPartner.md)
-Not yet documented
+{{ Fill in the Description }}
 
 ### [Invoke-MgUnassignDeviceManagementWindowsAutopilotDeviceIdentityUserFromDevice](Invoke-MgUnassignDeviceManagementWindowsAutopilotDeviceIdentityUserFromDevice.md)
-Unassigns the user from an Autopilot device.
+{{ Fill in the Description }}
 
 ### [Lock-MgDeviceManagementManagedDeviceRemote](Lock-MgDeviceManagementManagedDeviceRemote.md)
-Remote lock
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementManagedDeviceLogCollectionRequestDownloadUrl](New-MgDeviceManagementManagedDeviceLogCollectionRequestDownloadUrl.md)
-Invoke action createDownloadUrl
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementManagedDeviceWindowsDefenderUpdateSignature](New-MgDeviceManagementManagedDeviceWindowsDefenderUpdateSignature.md)
-Not yet documented
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequestDownloadUrl](New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequestDownloadUrl.md)
-Not yet documented
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementManagedDeviceUserFromSharedAppleDevice](Remove-MgDeviceManagementManagedDeviceUserFromSharedAppleDevice.md)
-Delete user from shared Apple device
+{{ Fill in the Description }}
 
 ### [Request-MgDeviceManagementManagedDeviceRemoteAssistance](Request-MgDeviceManagementManagedDeviceRemoteAssistance.md)
-Request remote assistance
+{{ Fill in the Description }}
 
 ### [Reset-MgDeviceManagementManagedDevicePasscode](Reset-MgDeviceManagementManagedDevicePasscode.md)
-Reset passcode
+{{ Fill in the Description }}
 
 ### [Restart-MgDeviceManagementManagedDeviceNow](Restart-MgDeviceManagementManagedDeviceNow.md)
-Reboot device
+{{ Fill in the Description }}
 
 ### [Restore-MgDeviceManagementManagedDevicePasscode](Restore-MgDeviceManagementManagedDevicePasscode.md)
-Recover passcode
+{{ Fill in the Description }}
 
 ### [Send-MgDeviceManagementNotificationMessageTemplateTestMessage](Send-MgDeviceManagementNotificationMessageTemplateTestMessage.md)
-Sends test message using the specified notificationMessageTemplate in the default locale
+{{ Fill in the Description }}
 
 ### [Set-MgDeviceManagementDeviceCompliancePolicy](Set-MgDeviceManagementDeviceCompliancePolicy.md)
-Not yet documented
+{{ Fill in the Description }}
 
 ### [Set-MgDeviceManagementDeviceConfiguration](Set-MgDeviceManagementDeviceConfiguration.md)
-Not yet documented
+{{ Fill in the Description }}
 
 ### [Set-MgDeviceManagementDeviceEnrollmentConfiguration](Set-MgDeviceManagementDeviceEnrollmentConfiguration.md)
-Not yet documented
+{{ Fill in the Description }}
 
 ### [Set-MgDeviceManagementDeviceEnrollmentConfigurationPriority](Set-MgDeviceManagementDeviceEnrollmentConfigurationPriority.md)
-Not yet documented
+{{ Fill in the Description }}
 
 ### [Set-MgDeviceManagementWindowsAutopilotDeviceIdentityUserToDevice](Set-MgDeviceManagementWindowsAutopilotDeviceIdentityUserToDevice.md)
-Assigns user to Autopilot devices.
+{{ Fill in the Description }}
 
 ### [Skip-MgDeviceManagementManagedDeviceActivationLock](Skip-MgDeviceManagementManagedDeviceActivationLock.md)
-Bypass activation lock
+{{ Fill in the Description }}
 
 ### [Sync-MgDeviceManagementExchangeConnector](Sync-MgDeviceManagementExchangeConnector.md)
-Not yet documented
+{{ Fill in the Description }}
 
 ### [Sync-MgDeviceManagementManagedDevice](Sync-MgDeviceManagementManagedDevice.md)
-Not yet documented
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount](Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount.md)
-Not yet documented
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty](Update-MgDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty.md)
-Updates properties on Autopilot devices.
+{{ Fill in the Description }}
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritysubjectrightsrequestnote
 schema: 2.0.0
+ms.prod: compliance
 ---
 
 # New-MgBetaSecuritySubjectRightsRequestNote
@@ -45,6 +46,8 @@ New-MgBetaSecuritySubjectRightsRequestNote -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Create a new authoredNote object.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -334,5 +337,4 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [New-MgSecuritySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Security/New-MgSecuritySubjectRightsRequestNote?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritysubjectrightsrequestnote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritysubjectrightsrequestnote)
-
 

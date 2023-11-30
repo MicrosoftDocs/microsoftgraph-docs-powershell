@@ -212,7 +212,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -484,7 +484,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -499,7 +499,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -514,7 +514,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -545,7 +545,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -560,7 +560,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -699,7 +699,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -714,7 +714,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -760,7 +760,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -776,7 +776,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -807,7 +807,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -822,7 +822,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -839,7 +839,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -870,7 +870,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -920,7 +920,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -937,7 +937,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -952,7 +952,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -967,7 +967,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -1043,7 +1043,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -1073,7 +1073,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -1178,7 +1178,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -1468,7 +1468,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -1558,7 +1558,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -1588,7 +1588,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -1603,7 +1603,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -1636,7 +1636,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -1651,7 +1651,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -1711,7 +1711,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -1741,7 +1741,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -1757,7 +1757,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -1772,7 +1772,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -1788,7 +1788,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -1818,7 +1818,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -1833,7 +1833,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -1879,175 +1879,210 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDefaultManagedAppProtection
 ## NOTES
-
-ALIASES
-
-New-MgBetaDeviceAppMgtDefaultManagedAppProtection
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+APPS \<IMicrosoftGraphManagedMobileApp\[\]\>: List of apps to which the policy is deployed.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[MobileAppIdentifier \<IMicrosoftGraphMobileAppIdentifier\>\]: The identifier for a mobile app.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Version \<String\>\]: Version of the entity.
 
-`APPS <IMicrosoftGraphManagedMobileApp[]>`: List of apps to which the policy is deployed.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Version <String>]`: Version of the entity.
+BODYPARAMETER \<IMicrosoftGraphDefaultManagedAppProtection\>: Policy used to configure detailed management settings for a specified set of apps for all users not targeted by a TargetedManagedAppProtection Policy
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[AllowedDataIngestionLocations \<ManagedAppDataIngestionLocation\[\]\>\]: Data storage locations where a user may store managed data.
+  \[AllowedDataStorageLocations \<ManagedAppDataStorageLocation\[\]\>\]: Data storage locations where a user may store managed data.
+  \[AllowedInboundDataTransferSources \<ManagedAppDataTransferLevel?\>\]: Data can be transferred from/to these classes of apps
+  \[AllowedOutboundClipboardSharingExceptionLength \<Int32?\>\]: Specify the number of characters that may be cut or copied from Org data and accounts to any application.
+This setting overrides the AllowedOutboundClipboardSharingLevel restriction.
+Default value of '0' means no exception is allowed.
+  \[AllowedOutboundClipboardSharingLevel \<ManagedAppClipboardSharingLevel?\>\]: Represents the level to which the device's clipboard may be shared between apps
+  \[AllowedOutboundDataTransferDestinations \<ManagedAppDataTransferLevel?\>\]: Data can be transferred from/to these classes of apps
+  \[AppActionIfDeviceComplianceRequired \<ManagedAppRemediationAction?\>\]: An admin initiated action to be applied on a managed app.
+  \[AppActionIfMaximumPinRetriesExceeded \<ManagedAppRemediationAction?\>\]: An admin initiated action to be applied on a managed app.
+  \[AppActionIfUnableToAuthenticateUser \<ManagedAppRemediationAction?\>\]: An admin initiated action to be applied on a managed app.
+  \[BlockDataIngestionIntoOrganizationDocuments \<Boolean?\>\]: Indicates whether a user can bring data into org documents.
+  \[ContactSyncBlocked \<Boolean?\>\]: Indicates whether contacts can be synced to the user's device.
+  \[DataBackupBlocked \<Boolean?\>\]: Indicates whether the backup of a managed app's data is blocked.
+  \[DeviceComplianceRequired \<Boolean?\>\]: Indicates whether device compliance is required.
+  \[DialerRestrictionLevel \<ManagedAppPhoneNumberRedirectLevel?\>\]: The classes of apps that are allowed to click-to-open a phone number, for making phone calls or sending text messages.
+  \[DisableAppPinIfDevicePinIsSet \<Boolean?\>\]: Indicates whether use of the app pin is required if the device pin is set.
+  \[FingerprintBlocked \<Boolean?\>\]: Indicates whether use of the fingerprint reader is allowed in place of a pin if PinRequired is set to True.
+  \[GracePeriodToBlockAppsDuringOffClockHours \<TimeSpan?\>\]: A grace period before blocking app access during off clock hours.
+  \[ManagedBrowser \<ManagedBrowserType?\>\]: Type of managed browser
+  \[ManagedBrowserToOpenLinksRequired \<Boolean?\>\]: Indicates whether internet links should be opened in the managed browser app, or any custom browser specified by CustomBrowserProtocol (for iOS) or CustomBrowserPackageId/CustomBrowserDisplayName (for Android)
+  \[MaximumAllowedDeviceThreatLevel \<ManagedAppDeviceThreatLevel?\>\]: The maxium threat level allowed for an app to be compliant.
+  \[MaximumPinRetries \<Int32?\>\]: Maximum number of incorrect pin retry attempts before the managed app is either blocked or wiped.
+  \[MaximumRequiredOSVersion \<String\>\]: Versions bigger than the specified version will block the managed app from accessing company data.
+  \[MaximumWarningOSVersion \<String\>\]: Versions bigger than the specified version will block the managed app from accessing company data.
+  \[MaximumWipeOSVersion \<String\>\]: Versions bigger than the specified version will block the managed app from accessing company data.
+  \[MinimumPinLength \<Int32?\>\]: Minimum pin length required for an app-level pin if PinRequired is set to True
+  \[MinimumRequiredAppVersion \<String\>\]: Versions less than the specified version will block the managed app from accessing company data.
+  \[MinimumRequiredOSVersion \<String\>\]: Versions less than the specified version will block the managed app from accessing company data.
+  \[MinimumWarningAppVersion \<String\>\]: Versions less than the specified version will result in warning message on the managed app.
+  \[MinimumWarningOSVersion \<String\>\]: Versions less than the specified version will result in warning message on the managed app from accessing company data.
+  \[MinimumWipeAppVersion \<String\>\]: Versions less than or equal to the specified version will wipe the managed app and the associated company data.
+  \[MinimumWipeOSVersion \<String\>\]: Versions less than or equal to the specified version will wipe the managed app and the associated company data.
+  \[MobileThreatDefensePartnerPriority \<MobileThreatDefensePartnerPriority?\>\]: Determines the conflict resolution strategy, when more than one Mobile Threat Defense provider is enabled.
+  \[MobileThreatDefenseRemediationAction \<ManagedAppRemediationAction?\>\]: An admin initiated action to be applied on a managed app.
+  \[NotificationRestriction \<ManagedAppNotificationRestriction?\>\]: Restrict managed app notification
+  \[OrganizationalCredentialsRequired \<Boolean?\>\]: Indicates whether organizational credentials are required for app use.
+  \[PeriodBeforePinReset \<TimeSpan?\>\]: TimePeriod before the all-level pin must be reset if PinRequired is set to True.
+  \[PeriodOfflineBeforeAccessCheck \<TimeSpan?\>\]: The period after which access is checked when the device is not connected to the internet.
+  \[PeriodOfflineBeforeWipeIsEnforced \<TimeSpan?\>\]: The amount of time an app is allowed to remain disconnected from the internet before all managed data it is wiped.
+  \[PeriodOnlineBeforeAccessCheck \<TimeSpan?\>\]: The period after which access is checked when the device is connected to the internet.
+  \[PinCharacterSet \<ManagedAppPinCharacterSet?\>\]: Character set which is to be used for a user's app PIN
+  \[PinRequired \<Boolean?\>\]: Indicates whether an app-level pin is required.
+  \[PinRequiredInsteadOfBiometricTimeout \<TimeSpan?\>\]: Timeout in minutes for an app pin instead of non biometrics passcode
+  \[PreviousPinBlockCount \<Int32?\>\]: Requires a pin to be unique from the number specified in this property.
+  \[PrintBlocked \<Boolean?\>\]: Indicates whether printing is allowed from managed apps.
+  \[ProtectedMessagingRedirectAppType \<MessagingRedirectAppType?\>\]: Defines how app messaging redirection is protected by an App Protection Policy.
+Default is anyApp.
+  \[SaveAsBlocked \<Boolean?\>\]: Indicates whether users may use the 'Save As' menu item to save a copy of protected files.
+  \[SimplePinBlocked \<Boolean?\>\]: Indicates whether simplePin is blocked.
+  \[CreatedDateTime \<DateTime?\>\]: The date and time the policy was created.
+  \[Description \<String\>\]: The policy's description.
+  \[DisplayName \<String\>\]: Policy display name.
+  \[LastModifiedDateTime \<DateTime?\>\]: Last time the policy was modified.
+  \[RoleScopeTagIds \<String\[\]\>\]: List of Scope Tags for this Entity instance.
+  \[Version \<String\>\]: Version of the entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[AllowedAndroidDeviceManufacturers \<String\>\]: Semicolon seperated list of device manufacturers allowed, as a string, for the managed app to work.
+(Android only)
+  \[AllowedAndroidDeviceModels \<String\[\]\>\]: List of device models allowed, as a string, for the managed app to work.
+(Android Only)
+  \[AllowedIosDeviceModels \<String\>\]: Semicolon seperated list of device models allowed, as a string, for the managed app to work.
+(iOS Only)
+  \[AppActionIfAccountIsClockedOut \<ManagedAppRemediationAction?\>\]: An admin initiated action to be applied on a managed app.
+  \[AppActionIfAndroidDeviceManufacturerNotAllowed \<ManagedAppRemediationAction?\>\]: An admin initiated action to be applied on a managed app.
+  \[AppActionIfAndroidDeviceModelNotAllowed \<ManagedAppRemediationAction?\>\]: An admin initiated action to be applied on a managed app.
+  \[AppActionIfAndroidSafetyNetAppsVerificationFailed \<ManagedAppRemediationAction?\>\]: An admin initiated action to be applied on a managed app.
+  \[AppActionIfAndroidSafetyNetDeviceAttestationFailed \<ManagedAppRemediationAction?\>\]: An admin initiated action to be applied on a managed app.
+  \[AppActionIfDeviceLockNotSet \<ManagedAppRemediationAction?\>\]: An admin initiated action to be applied on a managed app.
+  \[AppActionIfDevicePasscodeComplexityLessThanHigh \<ManagedAppRemediationAction?\>\]: An admin initiated action to be applied on a managed app.
+  \[AppActionIfDevicePasscodeComplexityLessThanLow \<ManagedAppRemediationAction?\>\]: An admin initiated action to be applied on a managed app.
+  \[AppActionIfDevicePasscodeComplexityLessThanMedium \<ManagedAppRemediationAction?\>\]: An admin initiated action to be applied on a managed app.
+  \[AppActionIfIosDeviceModelNotAllowed \<ManagedAppRemediationAction?\>\]: An admin initiated action to be applied on a managed app.
+  \[AppDataEncryptionType \<ManagedAppDataEncryptionType?\>\]: Represents the level to which app data is encrypted for managed apps
+  \[Apps \<IMicrosoftGraphManagedMobileApp\[\]\>\]: List of apps to which the policy is deployed.
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[MobileAppIdentifier \<IMicrosoftGraphMobileAppIdentifier\>\]: The identifier for a mobile app.
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Version \<String\>\]: Version of the entity.
+  \[BiometricAuthenticationBlocked \<Boolean?\>\]: Indicates whether use of the biometric authentication is allowed in place of a pin if PinRequired is set to True.
+(Android Only)
+  \[BlockAfterCompanyPortalUpdateDeferralInDays \<Int32?\>\]: Maximum number of days Company Portal update can be deferred on the device or app access will be blocked.
+  \[ConnectToVpnOnLaunch \<Boolean?\>\]: Whether the app should connect to the configured VPN on launch (Android only).
+  \[CustomBrowserDisplayName \<String\>\]: Friendly name of the preferred custom browser to open weblink on Android.
+(Android only)
+  \[CustomBrowserPackageId \<String\>\]: Unique identifier of a custom browser to open weblink on Android.
+(Android only)
+  \[CustomBrowserProtocol \<String\>\]: A custom browser protocol to open weblink on iOS.
+(iOS only)
+  \[CustomDialerAppDisplayName \<String\>\]: Friendly name of a custom dialer app to click-to-open a phone number on Android.
+  \[CustomDialerAppPackageId \<String\>\]: PackageId of a custom dialer app to click-to-open a phone number on Android.
+  \[CustomDialerAppProtocol \<String\>\]: Protocol of a custom dialer app to click-to-open a phone number on iOS, for example, skype:.
+  \[CustomSettings \<IMicrosoftGraphKeyValuePair\[\]\>\]: A set of string key and string value pairs to be sent to the affected users, unalterned by this service
+    \[Name \<String\>\]: Name for this key-value pair
+    \[Value \<String\>\]: Value for this key-value pair
+  \[DeployedAppCount \<Int32?\>\]: Count of apps to which the current policy is deployed.
+  \[DeploymentSummary \<IMicrosoftGraphManagedAppPolicyDeploymentSummary\>\]: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[ConfigurationDeployedUserCount \<Int32?\>\]: Not yet documented
+    \[ConfigurationDeploymentSummaryPerApp \<IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp\[\]\>\]: Not yet documented
+      \[ConfigurationAppliedUserCount \<Int32?\>\]: Number of users the policy is applied.
+      \[MobileAppIdentifier \<IMicrosoftGraphMobileAppIdentifier\>\]: The identifier for a mobile app.
+    \[DisplayName \<String\>\]: Not yet documented
+    \[LastRefreshTime \<DateTime?\>\]: Not yet documented
+    \[Version \<String\>\]: Version of the entity.
+  \[DeviceLockRequired \<Boolean?\>\]: Defines if any kind of lock must be required on device.
+(android only)
+  \[DisableAppEncryptionIfDeviceEncryptionIsEnabled \<Boolean?\>\]: When this setting is enabled, app level encryption is disabled if device level encryption is enabled.
+(Android only)
+  \[DisableProtectionOfManagedOutboundOpenInData \<Boolean?\>\]: Disable protection of data transferred to other apps through IOS OpenIn option.
+This setting is only allowed to be True when AllowedOutboundDataTransferDestinations is set to ManagedApps.
+(iOS Only)
+  \[EncryptAppData \<Boolean?\>\]: Indicates whether managed-app data should be encrypted.
+(Android only)
+  \[ExemptedAppPackages \<IMicrosoftGraphKeyValuePair\[\]\>\]: Android App packages in this list will be exempt from the policy and will be able to receive data from managed apps.
+(Android only)
+  \[ExemptedAppProtocols \<IMicrosoftGraphKeyValuePair\[\]\>\]: iOS Apps in this list will be exempt from the policy and will be able to receive data from managed apps.
+(iOS Only)
+  \[FaceIdBlocked \<Boolean?\>\]: Indicates whether use of the FaceID is allowed in place of a pin if PinRequired is set to True.
+(iOS Only)
+  \[FilterOpenInToOnlyManagedApps \<Boolean?\>\]: Defines if open-in operation is supported from the managed app to the filesharing locations selected.
+This setting only applies when AllowedOutboundDataTransferDestinations is set to ManagedApps and DisableProtectionOfManagedOutboundOpenInData is set to False.
+(iOS Only)
+  \[FingerprintAndBiometricEnabled \<Boolean?\>\]: Indicate to the client to enable both biometrics and fingerprints for the app.
+  \[MessagingRedirectAppDisplayName \<String\>\]: When a specific app redirection is enforced by protectedMessagingRedirectAppType in an App Protection Policy, this value defines the app name which are allowed to be used.
+  \[MessagingRedirectAppPackageId \<String\>\]: When a specific app redirection is enforced by protectedMessagingRedirectAppType in an App Protection Policy, this value defines the app package ids which are allowed to be used.
+  \[MessagingRedirectAppUrlScheme \<String\>\]: When a specific app redirection is enforced by protectedMessagingRedirectAppType in an App Protection Policy, this value defines the app url redirect schemes which are allowed to be used.
+  \[MinimumRequiredCompanyPortalVersion \<String\>\]: Minimum version of the Company portal that must be installed on the device or app access will be blocked
+  \[MinimumRequiredPatchVersion \<String\>\]: Define the oldest required Android security patch level a user can have to gain secure access to the app.
+(Android only)
+  \[MinimumRequiredSdkVersion \<String\>\]: Versions less than the specified version will block the managed app from accessing company data.
+(iOS Only)
+  \[MinimumWarningCompanyPortalVersion \<String\>\]: Minimum version of the Company portal that must be installed on the device or the user will receive a warning
+  \[MinimumWarningPatchVersion \<String\>\]: Define the oldest recommended Android security patch level a user can have for secure access to the app.
+(Android only)
+  \[MinimumWarningSdkVersion \<String\>\]: Versions less than the specified version will result in warning message on the managed app from accessing company data.
+(iOS only)
+  \[MinimumWipeCompanyPortalVersion \<String\>\]: Minimum version of the Company portal that must be installed on the device or the company data on the app will be wiped
+  \[MinimumWipePatchVersion \<String\>\]: Android security patch level  less than or equal to the specified value will wipe the managed app and the associated company data.
+(Android only)
+  \[MinimumWipeSdkVersion \<String\>\]: Versions less than the specified version will block the managed app from accessing company data.
+  \[ProtectInboundDataFromUnknownSources \<Boolean?\>\]: Protect incoming data from unknown source.
+This setting is only allowed to be True when AllowedInboundDataTransferSources is set to AllApps.
+(iOS Only)
+  \[RequireClass3Biometrics \<Boolean?\>\]: Require user to apply Class 3 Biometrics on their Android device.
+  \[RequirePinAfterBiometricChange \<Boolean?\>\]: A PIN prompt will override biometric prompts if class 3 biometrics are updated on the device.
+  \[RequiredAndroidSafetyNetAppsVerificationType \<AndroidManagedAppSafetyNetAppsVerificationType?\>\]: An admin enforced Android SafetyNet Device Attestation requirement on a managed app.
+  \[RequiredAndroidSafetyNetDeviceAttestationType \<AndroidManagedAppSafetyNetDeviceAttestationType?\>\]: An admin enforced Android SafetyNet Device Attestation requirement on a managed app.
+  \[RequiredAndroidSafetyNetEvaluationType \<AndroidManagedAppSafetyNetEvaluationType?\>\]: An admin enforced Android SafetyNet evaluation type requirement on a managed app.
+  \[ScreenCaptureBlocked \<Boolean?\>\]: Indicates whether screen capture is blocked.
+(Android only)
+  \[ThirdPartyKeyboardsBlocked \<Boolean?\>\]: Defines if third party keyboards are allowed while accessing a managed app.
+(iOS Only)
+  \[WarnAfterCompanyPortalUpdateDeferralInDays \<Int32?\>\]: Maximum number of days Company Portal update can be deferred on the device or the user will receive the warning
+  \[WipeAfterCompanyPortalUpdateDeferralInDays \<Int32?\>\]: Maximum number of days Company Portal update can be deferred on the device or the company data on the app will be wiped
 
-`BODYPARAMETER <IMicrosoftGraphDefaultManagedAppProtection>`: Policy used to configure detailed management settings for a specified set of apps for all users not targeted by a TargetedManagedAppProtection Policy
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AllowedDataIngestionLocations <ManagedAppDataIngestionLocation[]>]`: Data storage locations where a user may store managed data.
-  - `[AllowedDataStorageLocations <ManagedAppDataStorageLocation[]>]`: Data storage locations where a user may store managed data.
-  - `[AllowedInboundDataTransferSources <ManagedAppDataTransferLevel?>]`: Data can be transferred from/to these classes of apps
-  - `[AllowedOutboundClipboardSharingExceptionLength <Int32?>]`: Specify the number of characters that may be cut or copied from Org data and accounts to any application. This setting overrides the AllowedOutboundClipboardSharingLevel restriction. Default value of '0' means no exception is allowed.
-  - `[AllowedOutboundClipboardSharingLevel <ManagedAppClipboardSharingLevel?>]`: Represents the level to which the device's clipboard may be shared between apps
-  - `[AllowedOutboundDataTransferDestinations <ManagedAppDataTransferLevel?>]`: Data can be transferred from/to these classes of apps
-  - `[AppActionIfDeviceComplianceRequired <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
-  - `[AppActionIfMaximumPinRetriesExceeded <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
-  - `[AppActionIfUnableToAuthenticateUser <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
-  - `[BlockDataIngestionIntoOrganizationDocuments <Boolean?>]`: Indicates whether a user can bring data into org documents.
-  - `[ContactSyncBlocked <Boolean?>]`: Indicates whether contacts can be synced to the user's device.
-  - `[DataBackupBlocked <Boolean?>]`: Indicates whether the backup of a managed app's data is blocked.
-  - `[DeviceComplianceRequired <Boolean?>]`: Indicates whether device compliance is required.
-  - `[DialerRestrictionLevel <ManagedAppPhoneNumberRedirectLevel?>]`: The classes of apps that are allowed to click-to-open a phone number, for making phone calls or sending text messages.
-  - `[DisableAppPinIfDevicePinIsSet <Boolean?>]`: Indicates whether use of the app pin is required if the device pin is set.
-  - `[FingerprintBlocked <Boolean?>]`: Indicates whether use of the fingerprint reader is allowed in place of a pin if PinRequired is set to True.
-  - `[GracePeriodToBlockAppsDuringOffClockHours <TimeSpan?>]`: A grace period before blocking app access during off clock hours.
-  - `[ManagedBrowser <ManagedBrowserType?>]`: Type of managed browser
-  - `[ManagedBrowserToOpenLinksRequired <Boolean?>]`: Indicates whether internet links should be opened in the managed browser app, or any custom browser specified by CustomBrowserProtocol (for iOS) or CustomBrowserPackageId/CustomBrowserDisplayName (for Android)
-  - `[MaximumAllowedDeviceThreatLevel <ManagedAppDeviceThreatLevel?>]`: The maxium threat level allowed for an app to be compliant.
-  - `[MaximumPinRetries <Int32?>]`: Maximum number of incorrect pin retry attempts before the managed app is either blocked or wiped.
-  - `[MaximumRequiredOSVersion <String>]`: Versions bigger than the specified version will block the managed app from accessing company data.
-  - `[MaximumWarningOSVersion <String>]`: Versions bigger than the specified version will block the managed app from accessing company data.
-  - `[MaximumWipeOSVersion <String>]`: Versions bigger than the specified version will block the managed app from accessing company data.
-  - `[MinimumPinLength <Int32?>]`: Minimum pin length required for an app-level pin if PinRequired is set to True
-  - `[MinimumRequiredAppVersion <String>]`: Versions less than the specified version will block the managed app from accessing company data.
-  - `[MinimumRequiredOSVersion <String>]`: Versions less than the specified version will block the managed app from accessing company data.
-  - `[MinimumWarningAppVersion <String>]`: Versions less than the specified version will result in warning message on the managed app.
-  - `[MinimumWarningOSVersion <String>]`: Versions less than the specified version will result in warning message on the managed app from accessing company data.
-  - `[MinimumWipeAppVersion <String>]`: Versions less than or equal to the specified version will wipe the managed app and the associated company data.
-  - `[MinimumWipeOSVersion <String>]`: Versions less than or equal to the specified version will wipe the managed app and the associated company data.
-  - `[MobileThreatDefensePartnerPriority <MobileThreatDefensePartnerPriority?>]`: Determines the conflict resolution strategy, when more than one Mobile Threat Defense provider is enabled.
-  - `[MobileThreatDefenseRemediationAction <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
-  - `[NotificationRestriction <ManagedAppNotificationRestriction?>]`: Restrict managed app notification
-  - `[OrganizationalCredentialsRequired <Boolean?>]`: Indicates whether organizational credentials are required for app use.
-  - `[PeriodBeforePinReset <TimeSpan?>]`: TimePeriod before the all-level pin must be reset if PinRequired is set to True.
-  - `[PeriodOfflineBeforeAccessCheck <TimeSpan?>]`: The period after which access is checked when the device is not connected to the internet.
-  - `[PeriodOfflineBeforeWipeIsEnforced <TimeSpan?>]`: The amount of time an app is allowed to remain disconnected from the internet before all managed data it is wiped.
-  - `[PeriodOnlineBeforeAccessCheck <TimeSpan?>]`: The period after which access is checked when the device is connected to the internet.
-  - `[PinCharacterSet <ManagedAppPinCharacterSet?>]`: Character set which is to be used for a user's app PIN
-  - `[PinRequired <Boolean?>]`: Indicates whether an app-level pin is required.
-  - `[PinRequiredInsteadOfBiometricTimeout <TimeSpan?>]`: Timeout in minutes for an app pin instead of non biometrics passcode
-  - `[PreviousPinBlockCount <Int32?>]`: Requires a pin to be unique from the number specified in this property.
-  - `[PrintBlocked <Boolean?>]`: Indicates whether printing is allowed from managed apps.
-  - `[SaveAsBlocked <Boolean?>]`: Indicates whether users may use the 'Save As' menu item to save a copy of protected files.
-  - `[SimplePinBlocked <Boolean?>]`: Indicates whether simplePin is blocked.
-  - `[CreatedDateTime <DateTime?>]`: The date and time the policy was created.
-  - `[Description <String>]`: The policy's description.
-  - `[DisplayName <String>]`: Policy display name.
-  - `[LastModifiedDateTime <DateTime?>]`: Last time the policy was modified.
-  - `[RoleScopeTagIds <String[]>]`: List of Scope Tags for this Entity instance.
-  - `[Version <String>]`: Version of the entity.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[AllowedAndroidDeviceManufacturers <String>]`: Semicolon seperated list of device manufacturers allowed, as a string, for the managed app to work. (Android only)
-  - `[AllowedAndroidDeviceModels <String[]>]`: List of device models allowed, as a string, for the managed app to work. (Android Only)
-  - `[AllowedIosDeviceModels <String>]`: Semicolon seperated list of device models allowed, as a string, for the managed app to work. (iOS Only)
-  - `[AppActionIfAccountIsClockedOut <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
-  - `[AppActionIfAndroidDeviceManufacturerNotAllowed <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
-  - `[AppActionIfAndroidDeviceModelNotAllowed <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
-  - `[AppActionIfAndroidSafetyNetAppsVerificationFailed <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
-  - `[AppActionIfAndroidSafetyNetDeviceAttestationFailed <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
-  - `[AppActionIfDeviceLockNotSet <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
-  - `[AppActionIfDevicePasscodeComplexityLessThanHigh <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
-  - `[AppActionIfDevicePasscodeComplexityLessThanLow <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
-  - `[AppActionIfDevicePasscodeComplexityLessThanMedium <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
-  - `[AppActionIfIosDeviceModelNotAllowed <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
-  - `[AppDataEncryptionType <ManagedAppDataEncryptionType?>]`: Represents the level to which app data is encrypted for managed apps
-  - `[Apps <IMicrosoftGraphManagedMobileApp[]>]`: List of apps to which the policy is deployed.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Version <String>]`: Version of the entity.
-  - `[BiometricAuthenticationBlocked <Boolean?>]`: Indicates whether use of the biometric authentication is allowed in place of a pin if PinRequired is set to True. (Android Only)
-  - `[BlockAfterCompanyPortalUpdateDeferralInDays <Int32?>]`: Maximum number of days Company Portal update can be deferred on the device or app access will be blocked.
-  - `[ConnectToVpnOnLaunch <Boolean?>]`: Whether the app should connect to the configured VPN on launch (Android only).
-  - `[CustomBrowserDisplayName <String>]`: Friendly name of the preferred custom browser to open weblink on Android. (Android only)
-  - `[CustomBrowserPackageId <String>]`: Unique identifier of a custom browser to open weblink on Android. (Android only)
-  - `[CustomBrowserProtocol <String>]`: A custom browser protocol to open weblink on iOS. (iOS only)
-  - `[CustomDialerAppDisplayName <String>]`: Friendly name of a custom dialer app to click-to-open a phone number on Android.
-  - `[CustomDialerAppPackageId <String>]`: PackageId of a custom dialer app to click-to-open a phone number on Android.
-  - `[CustomDialerAppProtocol <String>]`: Protocol of a custom dialer app to click-to-open a phone number on iOS, for example, skype:.
-  - `[CustomSettings <IMicrosoftGraphKeyValuePair[]>]`: A set of string key and string value pairs to be sent to the affected users, unalterned by this service
-    - `[Name <String>]`: Name for this key-value pair
-    - `[Value <String>]`: Value for this key-value pair
-  - `[DeployedAppCount <Int32?>]`: Count of apps to which the current policy is deployed.
-  - `[DeploymentSummary <IMicrosoftGraphManagedAppPolicyDeploymentSummary>]`: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[ConfigurationDeployedUserCount <Int32?>]`: Not yet documented
-    - `[ConfigurationDeploymentSummaryPerApp <IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp[]>]`: Not yet documented
-      - `[ConfigurationAppliedUserCount <Int32?>]`: Number of users the policy is applied.
-      - `[MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
-    - `[DisplayName <String>]`: Not yet documented
-    - `[LastRefreshTime <DateTime?>]`: Not yet documented
-    - `[Version <String>]`: Version of the entity.
-  - `[DeviceLockRequired <Boolean?>]`: Defines if any kind of lock must be required on device. (android only)
-  - `[DisableAppEncryptionIfDeviceEncryptionIsEnabled <Boolean?>]`: When this setting is enabled, app level encryption is disabled if device level encryption is enabled. (Android only)
-  - `[DisableProtectionOfManagedOutboundOpenInData <Boolean?>]`: Disable protection of data transferred to other apps through IOS OpenIn option. This setting is only allowed to be True when AllowedOutboundDataTransferDestinations is set to ManagedApps. (iOS Only)
-  - `[EncryptAppData <Boolean?>]`: Indicates whether managed-app data should be encrypted. (Android only)
-  - `[ExemptedAppPackages <IMicrosoftGraphKeyValuePair[]>]`: Android App packages in this list will be exempt from the policy and will be able to receive data from managed apps. (Android only)
-  - `[ExemptedAppProtocols <IMicrosoftGraphKeyValuePair[]>]`: iOS Apps in this list will be exempt from the policy and will be able to receive data from managed apps. (iOS Only)
-  - `[FaceIdBlocked <Boolean?>]`: Indicates whether use of the FaceID is allowed in place of a pin if PinRequired is set to True. (iOS Only)
-  - `[FilterOpenInToOnlyManagedApps <Boolean?>]`: Defines if open-in operation is supported from the managed app to the filesharing locations selected. This setting only applies when AllowedOutboundDataTransferDestinations is set to ManagedApps and DisableProtectionOfManagedOutboundOpenInData is set to False. (iOS Only)
-  - `[FingerprintAndBiometricEnabled <Boolean?>]`: Indicate to the client to enable both biometrics and fingerprints for the app.
-  - `[MinimumRequiredCompanyPortalVersion <String>]`: Minimum version of the Company portal that must be installed on the device or app access will be blocked
-  - `[MinimumRequiredPatchVersion <String>]`: Define the oldest required Android security patch level a user can have to gain secure access to the app. (Android only)
-  - `[MinimumRequiredSdkVersion <String>]`: Versions less than the specified version will block the managed app from accessing company data. (iOS Only)
-  - `[MinimumWarningCompanyPortalVersion <String>]`: Minimum version of the Company portal that must be installed on the device or the user will receive a warning
-  - `[MinimumWarningPatchVersion <String>]`: Define the oldest recommended Android security patch level a user can have for secure access to the app. (Android only)
-  - `[MinimumWarningSdkVersion <String>]`: Versions less than the specified version will result in warning message on the managed app from accessing company data. (iOS only)
-  - `[MinimumWipeCompanyPortalVersion <String>]`: Minimum version of the Company portal that must be installed on the device or the company data on the app will be wiped
-  - `[MinimumWipePatchVersion <String>]`: Android security patch level  less than or equal to the specified value will wipe the managed app and the associated company data. (Android only)
-  - `[MinimumWipeSdkVersion <String>]`: Versions less than the specified version will block the managed app from accessing company data.
-  - `[ProtectInboundDataFromUnknownSources <Boolean?>]`: Protect incoming data from unknown source. This setting is only allowed to be True when AllowedInboundDataTransferSources is set to AllApps. (iOS Only)
-  - `[RequireClass3Biometrics <Boolean?>]`: Require user to apply Class 3 Biometrics on their Android device.
-  - `[RequirePinAfterBiometricChange <Boolean?>]`: A PIN prompt will override biometric prompts if class 3 biometrics are updated on the device.
-  - `[RequiredAndroidSafetyNetAppsVerificationType <AndroidManagedAppSafetyNetAppsVerificationType?>]`: An admin enforced Android SafetyNet Device Attestation requirement on a managed app.
-  - `[RequiredAndroidSafetyNetDeviceAttestationType <AndroidManagedAppSafetyNetDeviceAttestationType?>]`: An admin enforced Android SafetyNet Device Attestation requirement on a managed app.
-  - `[RequiredAndroidSafetyNetEvaluationType <AndroidManagedAppSafetyNetEvaluationType?>]`: An admin enforced Android SafetyNet evaluation type requirement on a managed app.
-  - `[ScreenCaptureBlocked <Boolean?>]`: Indicates whether screen capture is blocked. (Android only)
-  - `[ThirdPartyKeyboardsBlocked <Boolean?>]`: Defines if third party keyboards are allowed while accessing a managed app. (iOS Only)
-  - `[WarnAfterCompanyPortalUpdateDeferralInDays <Int32?>]`: Maximum number of days Company Portal update can be deferred on the device or the user will receive the warning
-  - `[WipeAfterCompanyPortalUpdateDeferralInDays <Int32?>]`: Maximum number of days Company Portal update can be deferred on the device or the company data on the app will be wiped
+CUSTOMSETTINGS \<IMicrosoftGraphKeyValuePair\[\]\>: A set of string key and string value pairs to be sent to the affected users, unalterned by this service
+  \[Name \<String\>\]: Name for this key-value pair
+  \[Value \<String\>\]: Value for this key-value pair
 
-`CUSTOMSETTINGS <IMicrosoftGraphKeyValuePair[]>`: A set of string key and string value pairs to be sent to the affected users, unalterned by this service
-  - `[Name <String>]`: Name for this key-value pair
-  - `[Value <String>]`: Value for this key-value pair
+DEPLOYMENTSUMMARY \<IMicrosoftGraphManagedAppPolicyDeploymentSummary\>: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[ConfigurationDeployedUserCount \<Int32?\>\]: Not yet documented
+  \[ConfigurationDeploymentSummaryPerApp \<IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp\[\]\>\]: Not yet documented
+    \[ConfigurationAppliedUserCount \<Int32?\>\]: Number of users the policy is applied.
+    \[MobileAppIdentifier \<IMicrosoftGraphMobileAppIdentifier\>\]: The identifier for a mobile app.
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DisplayName \<String\>\]: Not yet documented
+  \[LastRefreshTime \<DateTime?\>\]: Not yet documented
+  \[Version \<String\>\]: Version of the entity.
 
-`DEPLOYMENTSUMMARY <IMicrosoftGraphManagedAppPolicyDeploymentSummary>`: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[ConfigurationDeployedUserCount <Int32?>]`: Not yet documented
-  - `[ConfigurationDeploymentSummaryPerApp <IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp[]>]`: Not yet documented
-    - `[ConfigurationAppliedUserCount <Int32?>]`: Number of users the policy is applied.
-    - `[MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: Not yet documented
-  - `[LastRefreshTime <DateTime?>]`: Not yet documented
-  - `[Version <String>]`: Version of the entity.
+EXEMPTEDAPPPACKAGES \<IMicrosoftGraphKeyValuePair\[\]\>: Android App packages in this list will be exempt from the policy and will be able to receive data from managed apps.
+(Android only)
+  \[Name \<String\>\]: Name for this key-value pair
+  \[Value \<String\>\]: Value for this key-value pair
 
-`EXEMPTEDAPPPACKAGES <IMicrosoftGraphKeyValuePair[]>`: Android App packages in this list will be exempt from the policy and will be able to receive data from managed apps. (Android only)
-  - `[Name <String>]`: Name for this key-value pair
-  - `[Value <String>]`: Value for this key-value pair
-
-`EXEMPTEDAPPPROTOCOLS <IMicrosoftGraphKeyValuePair[]>`: iOS Apps in this list will be exempt from the policy and will be able to receive data from managed apps. (iOS Only)
-  - `[Name <String>]`: Name for this key-value pair
-  - `[Value <String>]`: Value for this key-value pair
+EXEMPTEDAPPPROTOCOLS \<IMicrosoftGraphKeyValuePair\[\]\>: iOS Apps in this list will be exempt from the policy and will be able to receive data from managed apps.
+(iOS Only)
+  \[Name \<String\>\]: Name for this key-value pair
+  \[Value \<String\>\]: Value for this key-value pair
 
 ## RELATED LINKS
 [New-MgDeviceAppManagementDefaultManagedAppProtection](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementDefaultManagedAppProtection?view=graph-powershell-1.0)
 
-## RELATED LINKS
-[New-MgDeviceAppManagementDefaultManagedAppProtection](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementDefaultManagedAppProtection?view=graph-powershell-1.0)
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementdefaultmanagedappprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementdefaultmanagedappprotection)
+
 

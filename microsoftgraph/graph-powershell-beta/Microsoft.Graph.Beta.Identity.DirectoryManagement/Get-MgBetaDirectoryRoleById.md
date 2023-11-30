@@ -3,13 +3,14 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrolebyid
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Get-MgBetaDirectoryRoleById
 
 ## SYNOPSIS
 Return the directory objects specified in a list of IDs.
-Some common uses for this function are to:
+Some common uses for this function are to: This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDirectoryRoleById](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryRoleById?view=graph-powershell-1.0)
@@ -31,7 +32,9 @@ Get-MgBetaDirectoryRoleById
 
 ## DESCRIPTION
 Return the directory objects specified in a list of IDs.
-Some common uses for this function are to:
+Some common uses for this function are to: This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -151,5 +154,4 @@ BODYPARAMETER \<IPaths1Ig9RahDirectoryrolesMicrosoftGraphGetbyidsPostRequestbody
 [Get-MgDirectoryRoleById](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryRoleById?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrolebyid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrolebyid)
-
 

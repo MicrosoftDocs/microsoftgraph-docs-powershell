@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/set-mguserpresencestatusmessage
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Set-MgUserPresenceStatusMessage
@@ -11,12 +12,6 @@ schema: 2.0.0
 Set a presence status message for a user.
 An optional expiration date and time can be supplied.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaUserPresenceStatusMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Set-MgBetaUserPresenceStatusMessage?view=graph-powershell-beta)
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaUserPresenceStatusMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Set-MgBetaUserPresenceStatusMessage?view=graph-powershell-beta)
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaUserPresenceStatusMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Set-MgBetaUserPresenceStatusMessage?view=graph-powershell-beta)
@@ -53,8 +48,6 @@ Set-MgUserPresenceStatusMessage -InputObject <IUsersActionsIdentity>
 Set a presence status message for a user.
 An optional expiration date and time can be supplied.
 This API is available in the following national cloud deployments.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -115,7 +108,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -193,75 +186,73 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+BODYPARAMETER \<IPathsDovi6RUsersUserIdPresenceMicrosoftGraphSetstatusmessagePostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[StatusMessage \<IMicrosoftGraphPresenceStatusMessage\>\]: presenceStatusMessage
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[ExpiryDateTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DateTime \<String\>\]: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+      \[TimeZone \<String\>\]: Represents a time zone, for example, 'Pacific Standard Time'.
+See below for more possible values.
+    \[Message \<IMicrosoftGraphItemBody\>\]: itemBody
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Content \<String\>\]: The content of the item.
+      \[ContentType \<String\>\]: bodyType
+    \[PublishedDateTime \<DateTime?\>\]: Time in which the status message was published.Read-only.publishedDateTime isn't available when you request the presence of another user.
 
-`BODYPARAMETER <IPathsDovi6RUsersUserIdPresenceMicrosoftGraphSetstatusmessagePostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[StatusMessage <IMicrosoftGraphPresenceStatusMessage>]`: presenceStatusMessage
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ExpiryDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-      - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
-    - `[Message <IMicrosoftGraphItemBody>]`: itemBody
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Content <String>]`: The content of the item.
-      - `[ContentType <String>]`: bodyType
-    - `[PublishedDateTime <DateTime?>]`: Time in which the status message was published.Read-only.publishedDateTime isn't available when you request the presence of another user.
+INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
+  \[AuthenticationMethodId \<String\>\]: The unique identifier of authenticationMethod
+  \[CalendarId \<String\>\]: The unique identifier of calendar
+  \[ChatId \<String\>\]: The unique identifier of chat
+  \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
+  \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
+  \[ContentTypeId \<String\>\]: The unique identifier of contentType
+  \[DeviceLogCollectionResponseId \<String\>\]: The unique identifier of deviceLogCollectionResponse
+  \[DocumentSetVersionId \<String\>\]: The unique identifier of documentSetVersion
+  \[DriveId \<String\>\]: The unique identifier of drive
+  \[DriveItemId \<String\>\]: The unique identifier of driveItem
+  \[DriveItemVersionId \<String\>\]: The unique identifier of driveItemVersion
+  \[EventId \<String\>\]: The unique identifier of event
+  \[EventId1 \<String\>\]: The unique identifier of event
+  \[ListItemId \<String\>\]: The unique identifier of listItem
+  \[ListItemVersionId \<String\>\]: The unique identifier of listItemVersion
+  \[MailFolderId \<String\>\]: The unique identifier of mailFolder
+  \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
+  \[ManagedDeviceId \<String\>\]: The unique identifier of managedDevice
+  \[MessageId \<String\>\]: The unique identifier of message
+  \[NotebookId \<String\>\]: The unique identifier of notebook
+  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
+  \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[PermissionId \<String\>\]: The unique identifier of permission
+  \[PhoneAuthenticationMethodId \<String\>\]: The unique identifier of phoneAuthenticationMethod
+  \[SubscriptionId \<String\>\]: The unique identifier of subscription
+  \[TeamsAppInstallationId \<String\>\]: The unique identifier of teamsAppInstallation
+  \[TodoTaskId \<String\>\]: The unique identifier of todoTask
+  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
+  \[UserId \<String\>\]: The unique identifier of user
 
-`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
-  - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
-  - `[CalendarId <String>]`: The unique identifier of calendar
-  - `[ChatId <String>]`: The unique identifier of chat
-  - `[ChatMessageId <String>]`: The unique identifier of chatMessage
-  - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
-  - `[ContentTypeId <String>]`: The unique identifier of contentType
-  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
-  - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
-  - `[DriveId <String>]`: The unique identifier of drive
-  - `[DriveItemId <String>]`: The unique identifier of driveItem
-  - `[DriveItemVersionId <String>]`: The unique identifier of driveItemVersion
-  - `[EventId <String>]`: The unique identifier of event
-  - `[EventId1 <String>]`: The unique identifier of event
-  - `[ListItemId <String>]`: The unique identifier of listItem
-  - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
-  - `[MailFolderId <String>]`: The unique identifier of mailFolder
-  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
-  - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
-  - `[MessageId <String>]`: The unique identifier of message
-  - `[NotebookId <String>]`: The unique identifier of notebook
-  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
-  - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
-  - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
-  - `[SubscriptionId <String>]`: The unique identifier of subscription
-  - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
-  - `[TodoTaskId <String>]`: The unique identifier of todoTask
-  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
-  - `[UserId <String>]`: The unique identifier of user
-
-`STATUSMESSAGE <IMicrosoftGraphPresenceStatusMessage>`: presenceStatusMessage
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ExpiryDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-    - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
-  - `[Message <IMicrosoftGraphItemBody>]`: itemBody
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Content <String>]`: The content of the item.
-    - `[ContentType <String>]`: bodyType
-  - `[PublishedDateTime <DateTime?>]`: Time in which the status message was published.Read-only.publishedDateTime isn't available when you request the presence of another user.
+STATUSMESSAGE \<IMicrosoftGraphPresenceStatusMessage\>: presenceStatusMessage
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ExpiryDateTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DateTime \<String\>\]: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+    \[TimeZone \<String\>\]: Represents a time zone, for example, 'Pacific Standard Time'.
+See below for more possible values.
+  \[Message \<IMicrosoftGraphItemBody\>\]: itemBody
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Content \<String\>\]: The content of the item.
+    \[ContentType \<String\>\]: bodyType
+  \[PublishedDateTime \<DateTime?\>\]: Time in which the status message was published.Read-only.publishedDateTime isn't available when you request the presence of another user.
 
 ## RELATED LINKS
 [Set-MgBetaUserPresenceStatusMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Set-MgBetaUserPresenceStatusMessage?view=graph-powershell-beta)
 
-[Set-MgBetaUserPresenceStatusMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Set-MgBetaUserPresenceStatusMessage?view=graph-powershell-beta)
+[https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/set-mguserpresencestatusmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/set-mguserpresencestatusmessage)
 
-[Set-MgBetaUserPresenceStatusMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Set-MgBetaUserPresenceStatusMessage?view=graph-powershell-beta)
 

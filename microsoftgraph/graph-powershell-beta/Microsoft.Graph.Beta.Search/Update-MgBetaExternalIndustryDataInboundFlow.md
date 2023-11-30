@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatainboundflow
 schema: 2.0.0
+ms.prod: industry-data-etl
 ---
 
 # Update-MgBetaExternalIndustryDataInboundFlow
 
 ## SYNOPSIS
-Update the properties of an inboundFlow object.
+Update the properties of an inboundFileFlow object.
 This API is available in the following national cloud deployments.
 
 ## SYNTAX
@@ -42,7 +43,7 @@ Update-MgBetaExternalIndustryDataInboundFlow -InputObject <ISearchIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of an inboundFlow object.
+Update the properties of an inboundFileFlow object.
 This API is available in the following national cloud deployments.
 
 ## PARAMETERS

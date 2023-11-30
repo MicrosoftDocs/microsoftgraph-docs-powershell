@@ -9,8 +9,8 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new unifiedRoleDefinition object for an RBAC provider.
-This feature requires an Azure AD Premium P1 or P2 license.
-The following RBAC providers are currently supported:\n- Cloud PC\n- device management (Intune)\n- directory (Azure AD)
+This feature requires a Microsoft Entra ID P1 or P2 license.
+The following RBAC providers are currently supported:\n- Cloud PC\n- device management (Intune)\n- directory (Microsoft Entra ID) This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -48,8 +48,8 @@ New-MgBetaRoleManagementEnterpriseAppRoleDefinition -InputObject <IIdentityGover
 
 ## DESCRIPTION
 Create a new unifiedRoleDefinition object for an RBAC provider.
-This feature requires an Azure AD Premium P1 or P2 license.
-The following RBAC providers are currently supported:\n- Cloud PC\n- device management (Intune)\n- directory (Azure AD)
+This feature requires a Microsoft Entra ID P1 or P2 license.
+The following RBAC providers are currently supported:\n- Cloud PC\n- device management (Intune)\n- directory (Microsoft Entra ID) This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 
 ### -InheritsPermissionsFrom
 Read-only collection of role definitions that the given role definition inherits from.
-Only Azure AD built-in roles support this attribute.
+Only Microsoft Entra built-in roles support this attribute.
 To construct, see NOTES section for INHERITSPERMISSIONSFROM properties and create a hash table.
 
 ```yaml
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 
 ### -IsPrivileged
 Flag indicating if the role is privileged.
-Azure AD defines a role as privileged if it contains at least one sensitive resource action in the rolePermissions and allowedResourceActions objects.
+Microsoft Entra ID defines a role as privileged if it contains at least one sensitive resource action in the rolePermissions and allowedResourceActions objects.
 Applies only for actions in the microsoft.directory resource namespace.
 Read-only.
 Supports $filter (eq).
@@ -380,7 +380,7 @@ Read-only when isBuiltIn is true.
 Required. 
 Supports $filter (eq and startsWith).
   \[InheritsPermissionsFrom \<IMicrosoftGraphUnifiedRoleDefinition\[\]\>\]: Read-only collection of role definitions that the given role definition inherits from.
-Only Azure AD built-in roles support this attribute.
+Only Microsoft Entra built-in roles support this attribute.
   \[IsBuiltIn \<Boolean?\>\]: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom.
 Read-only. 
 Supports $filter (eq).
@@ -388,7 +388,7 @@ Supports $filter (eq).
 If false the role is not available for assignment.
 Read-only when isBuiltIn is true.
   \[IsPrivileged \<Boolean?\>\]: Flag indicating if the role is privileged.
-Azure AD defines a role as privileged if it contains at least one sensitive resource action in the rolePermissions and allowedResourceActions objects.
+Microsoft Entra ID defines a role as privileged if it contains at least one sensitive resource action in the rolePermissions and allowedResourceActions objects.
 Applies only for actions in the microsoft.directory resource namespace.
 Read-only.
 Supports $filter (eq).
@@ -412,7 +412,7 @@ Read-only when isBuiltIn is true.
 Read-only when isBuiltIn is true.
 
 INHERITSPERMISSIONSFROM \<IMicrosoftGraphUnifiedRoleDefinition\[\]\>: Read-only collection of role definitions that the given role definition inherits from.
-Only Azure AD built-in roles support this attribute.
+Only Microsoft Entra built-in roles support this attribute.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
   \[AllowedPrincipalTypes \<String\>\]: allowedRolePrincipalTypes
@@ -423,7 +423,7 @@ Read-only when isBuiltIn is true.
 Required. 
 Supports $filter (eq and startsWith).
   \[InheritsPermissionsFrom \<IMicrosoftGraphUnifiedRoleDefinition\[\]\>\]: Read-only collection of role definitions that the given role definition inherits from.
-Only Azure AD built-in roles support this attribute.
+Only Microsoft Entra built-in roles support this attribute.
   \[IsBuiltIn \<Boolean?\>\]: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom.
 Read-only. 
 Supports $filter (eq).
@@ -431,7 +431,7 @@ Supports $filter (eq).
 If false the role is not available for assignment.
 Read-only when isBuiltIn is true.
   \[IsPrivileged \<Boolean?\>\]: Flag indicating if the role is privileged.
-Azure AD defines a role as privileged if it contains at least one sensitive resource action in the rolePermissions and allowedResourceActions objects.
+Microsoft Entra ID defines a role as privileged if it contains at least one sensitive resource action in the rolePermissions and allowedResourceActions objects.
 Applies only for actions in the microsoft.directory resource namespace.
 Read-only.
 Supports $filter (eq).
@@ -496,6 +496,7 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[CustomTaskExtensionId \<String\>\]: The unique identifier of customTaskExtension
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[EndDateTime \<DateTime?\>\]: Usage: endDateTime={endDateTime}
+  \[FindingId \<String\>\]: The unique identifier of finding
   \[GovernanceInsightId \<String\>\]: The unique identifier of governanceInsight
   \[GovernanceResourceId \<String\>\]: The unique identifier of governanceResource
   \[GovernanceRoleAssignmentId \<String\>\]: The unique identifier of governanceRoleAssignment
@@ -506,6 +507,8 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[IncompatibleAccessPackageId \<String\>\]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   \[LongRunningOperationId \<String\>\]: The unique identifier of longRunningOperation
   \[On \<String\>\]: Usage: on='{on}'
+  \[PermissionsCreepIndexDistributionId \<String\>\]: The unique identifier of permissionsCreepIndexDistribution
+  \[PermissionsRequestChangeId \<String\>\]: The unique identifier of permissionsRequestChange
   \[PrivilegedAccessGroupAssignmentScheduleId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentSchedule
   \[PrivilegedAccessGroupAssignmentScheduleInstanceId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentScheduleInstance
   \[PrivilegedAccessGroupAssignmentScheduleRequestId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentScheduleRequest

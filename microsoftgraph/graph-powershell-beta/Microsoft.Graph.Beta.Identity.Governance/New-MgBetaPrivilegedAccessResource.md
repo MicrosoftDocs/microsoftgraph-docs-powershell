@@ -242,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleDefinitions
-The collection of role defintions for the resource.
+The collection of role definitions for the resource.
 To construct, see NOTES section for ROLEDEFINITIONS properties and create a hash table.
 
 ```yaml
@@ -440,8 +440,8 @@ Only Once is supported for now.
 The value can be InProgress or Closed.
       \[StatusDetails \<IMicrosoftGraphKeyValue\[\]\>\]: The details of the status of the role assignment request.
 It represents the evaluation results of different rules.
-        \[Key \<String\>\]: Contains the name of the field that a value is associated with.
-        \[Value \<String\>\]: Contains the corresponding value for the specified key.
+        \[Key \<String\>\]: Key.
+        \[Value \<String\>\]: Value.
       \[SubStatus \<String\>\]: The sub status of the role assignment request.
 The values can be Accepted, PendingEvaluation, Granted, Denied, PendingProvisioning, Provisioned, PendingRevocation, Revoked, Canceled, Failed, PendingApprovalProvisioning, PendingApproval, FailedAsResourceIsLocked, PendingAdminDecision, AdminApproved, AdminDenied, TimedOut, and ProvisioningStarted.
     \[Subject \<IMicrosoftGraphGovernanceSubject\>\]: governanceSubject
@@ -450,9 +450,9 @@ The values can be Accepted, PendingEvaluation, Granted, Denied, PendingProvision
 Read-only.
       \[DisplayName \<String\>\]: The display name of the subject.
       \[Email \<String\>\]: The email address of the user subject.
-If the subject is in other types, it is empty.
+If the subject is in other types, it's empty.
       \[PrincipalName \<String\>\]: The principal name of the user subject.
-If the subject is in other types, it is empty.
+If the subject is in other types, it's empty.
       \[Type \<String\>\]: The type of the subject.
 The value can be User, Group, and ServicePrincipal.
     \[SubjectId \<String\>\]: Required.
@@ -465,29 +465,29 @@ The possible values are: AdminAdd , UserAdd , AdminUpdate , AdminRemove , UserRe
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
     \[AssignmentState \<String\>\]: The state of the assignment.
-The value can be Eligible for eligible assignment or Active if it is directly assigned Active by administrators, or activated on an eligible assignment by the users.
-    \[EndDateTime \<DateTime?\>\]: For a non-permanent role assignment, this is the time when the role assignment will be expired.
+The value can be Eligible for eligible assignment or Active if it's directly assigned Active by administrators, or activated on an eligible assignment by the users.
+    \[EndDateTime \<DateTime?\>\]: For a non-permanent role assignment, this is the time when the role assignment is expired.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     \[ExternalId \<String\>\]: The external ID the resource that is used to identify the role assignment in the provider.
     \[LinkedEligibleRoleAssignment \<IMicrosoftGraphGovernanceRoleAssignment\>\]: governanceRoleAssignment
     \[LinkedEligibleRoleAssignmentId \<String\>\]: If this is an active assignment and created due to activation on an eligible assignment, it represents the ID of that eligible assignment; Otherwise, the value is null.
     \[MemberType \<String\>\]: The type of member.
-The value can be: Inherited (if the role assignment is inherited from a parent resource scope), Group (if the role assignment is not inherited, but comes from the membership of a group assignment), or User (if the role assignment is neither inherited nor from a group assignment).
+The value can be: Inherited (if the role assignment is inherited from a parent resource scope), Group (if the role assignment isn't inherited, but comes from the membership of a group assignment), or User (if the role assignment isn't inherited or from a group assignment).
     \[Resource \<IMicrosoftGraphGovernanceResource\>\]: governanceResource
     \[ResourceId \<String\>\]: Required.
-The ID of the resource which the role assignment is associated with.
+The ID of the resource that the role assignment is associated with.
     \[RoleDefinition \<IMicrosoftGraphGovernanceRoleDefinition\>\]: governanceRoleDefinition
     \[RoleDefinitionId \<String\>\]: Required.
-The ID of the role definition which the role assignment is associated with.
+The ID of the role definition that the role assignment is associated with.
     \[StartDateTime \<DateTime?\>\]: The start time of the role assignment.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     \[Status \<String\>\]: 
     \[Subject \<IMicrosoftGraphGovernanceSubject\>\]: governanceSubject
     \[SubjectId \<String\>\]: Required.
-The ID of the subject which the role assignment is associated with.
-  \[RoleDefinitions \<IMicrosoftGraphGovernanceRoleDefinition\[\]\>\]: The collection of role defintions for the resource.
+The ID of the subject that the role assignment is associated with.
+  \[RoleDefinitions \<IMicrosoftGraphGovernanceRoleDefinition\[\]\>\]: The collection of role definitions for the resource.
   \[RoleSettings \<IMicrosoftGraphGovernanceRoleSetting\[\]\>\]: The collection of role settings for the resource.
   \[Status \<String\>\]: The status of a given resource.
 For example, it could represent whether the resource is locked or not (values: Active/Locked).
@@ -538,6 +538,7 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[CustomTaskExtensionId \<String\>\]: The unique identifier of customTaskExtension
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[EndDateTime \<DateTime?\>\]: Usage: endDateTime={endDateTime}
+  \[FindingId \<String\>\]: The unique identifier of finding
   \[GovernanceInsightId \<String\>\]: The unique identifier of governanceInsight
   \[GovernanceResourceId \<String\>\]: The unique identifier of governanceResource
   \[GovernanceRoleAssignmentId \<String\>\]: The unique identifier of governanceRoleAssignment
@@ -548,6 +549,8 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[IncompatibleAccessPackageId \<String\>\]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   \[LongRunningOperationId \<String\>\]: The unique identifier of longRunningOperation
   \[On \<String\>\]: Usage: on='{on}'
+  \[PermissionsCreepIndexDistributionId \<String\>\]: The unique identifier of permissionsCreepIndexDistribution
+  \[PermissionsRequestChangeId \<String\>\]: The unique identifier of permissionsRequestChange
   \[PrivilegedAccessGroupAssignmentScheduleId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentSchedule
   \[PrivilegedAccessGroupAssignmentScheduleInstanceId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentScheduleInstance
   \[PrivilegedAccessGroupAssignmentScheduleRequestId \<String\>\]: The unique identifier of privilegedAccessGroupAssignmentScheduleRequest
@@ -680,8 +683,8 @@ Only Once is supported for now.
 The value can be InProgress or Closed.
       \[StatusDetails \<IMicrosoftGraphKeyValue\[\]\>\]: The details of the status of the role assignment request.
 It represents the evaluation results of different rules.
-        \[Key \<String\>\]: Contains the name of the field that a value is associated with.
-        \[Value \<String\>\]: Contains the corresponding value for the specified key.
+        \[Key \<String\>\]: Key.
+        \[Value \<String\>\]: Value.
       \[SubStatus \<String\>\]: The sub status of the role assignment request.
 The values can be Accepted, PendingEvaluation, Granted, Denied, PendingProvisioning, Provisioned, PendingRevocation, Revoked, Canceled, Failed, PendingApprovalProvisioning, PendingApproval, FailedAsResourceIsLocked, PendingAdminDecision, AdminApproved, AdminDenied, TimedOut, and ProvisioningStarted.
     \[Subject \<IMicrosoftGraphGovernanceSubject\>\]: governanceSubject
@@ -690,9 +693,9 @@ The values can be Accepted, PendingEvaluation, Granted, Denied, PendingProvision
 Read-only.
       \[DisplayName \<String\>\]: The display name of the subject.
       \[Email \<String\>\]: The email address of the user subject.
-If the subject is in other types, it is empty.
+If the subject is in other types, it's empty.
       \[PrincipalName \<String\>\]: The principal name of the user subject.
-If the subject is in other types, it is empty.
+If the subject is in other types, it's empty.
       \[Type \<String\>\]: The type of the subject.
 The value can be User, Group, and ServicePrincipal.
     \[SubjectId \<String\>\]: Required.
@@ -705,29 +708,29 @@ The possible values are: AdminAdd , UserAdd , AdminUpdate , AdminRemove , UserRe
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
     \[AssignmentState \<String\>\]: The state of the assignment.
-The value can be Eligible for eligible assignment or Active if it is directly assigned Active by administrators, or activated on an eligible assignment by the users.
-    \[EndDateTime \<DateTime?\>\]: For a non-permanent role assignment, this is the time when the role assignment will be expired.
+The value can be Eligible for eligible assignment or Active if it's directly assigned Active by administrators, or activated on an eligible assignment by the users.
+    \[EndDateTime \<DateTime?\>\]: For a non-permanent role assignment, this is the time when the role assignment is expired.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     \[ExternalId \<String\>\]: The external ID the resource that is used to identify the role assignment in the provider.
     \[LinkedEligibleRoleAssignment \<IMicrosoftGraphGovernanceRoleAssignment\>\]: governanceRoleAssignment
     \[LinkedEligibleRoleAssignmentId \<String\>\]: If this is an active assignment and created due to activation on an eligible assignment, it represents the ID of that eligible assignment; Otherwise, the value is null.
     \[MemberType \<String\>\]: The type of member.
-The value can be: Inherited (if the role assignment is inherited from a parent resource scope), Group (if the role assignment is not inherited, but comes from the membership of a group assignment), or User (if the role assignment is neither inherited nor from a group assignment).
+The value can be: Inherited (if the role assignment is inherited from a parent resource scope), Group (if the role assignment isn't inherited, but comes from the membership of a group assignment), or User (if the role assignment isn't inherited or from a group assignment).
     \[Resource \<IMicrosoftGraphGovernanceResource\>\]: governanceResource
     \[ResourceId \<String\>\]: Required.
-The ID of the resource which the role assignment is associated with.
+The ID of the resource that the role assignment is associated with.
     \[RoleDefinition \<IMicrosoftGraphGovernanceRoleDefinition\>\]: governanceRoleDefinition
     \[RoleDefinitionId \<String\>\]: Required.
-The ID of the role definition which the role assignment is associated with.
+The ID of the role definition that the role assignment is associated with.
     \[StartDateTime \<DateTime?\>\]: The start time of the role assignment.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     \[Status \<String\>\]: 
     \[Subject \<IMicrosoftGraphGovernanceSubject\>\]: governanceSubject
     \[SubjectId \<String\>\]: Required.
-The ID of the subject which the role assignment is associated with.
-  \[RoleDefinitions \<IMicrosoftGraphGovernanceRoleDefinition\[\]\>\]: The collection of role defintions for the resource.
+The ID of the subject that the role assignment is associated with.
+  \[RoleDefinitions \<IMicrosoftGraphGovernanceRoleDefinition\[\]\>\]: The collection of role definitions for the resource.
   \[RoleSettings \<IMicrosoftGraphGovernanceRoleSetting\[\]\>\]: The collection of role settings for the resource.
   \[Status \<String\>\]: The status of a given resource.
 For example, it could represent whether the resource is locked or not (values: Active/Locked).
@@ -764,18 +767,18 @@ The root scope can be the parent, grandparent, or higher ancestor resources.
       \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
       \[AssignmentState \<String\>\]: The state of the assignment.
-The value can be Eligible for eligible assignment or Active if it is directly assigned Active by administrators, or activated on an eligible assignment by the users.
-      \[EndDateTime \<DateTime?\>\]: For a non-permanent role assignment, this is the time when the role assignment will be expired.
+The value can be Eligible for eligible assignment or Active if it's directly assigned Active by administrators, or activated on an eligible assignment by the users.
+      \[EndDateTime \<DateTime?\>\]: For a non-permanent role assignment, this is the time when the role assignment is expired.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       \[ExternalId \<String\>\]: The external ID the resource that is used to identify the role assignment in the provider.
       \[LinkedEligibleRoleAssignment \<IMicrosoftGraphGovernanceRoleAssignment\>\]: governanceRoleAssignment
       \[LinkedEligibleRoleAssignmentId \<String\>\]: If this is an active assignment and created due to activation on an eligible assignment, it represents the ID of that eligible assignment; Otherwise, the value is null.
       \[MemberType \<String\>\]: The type of member.
-The value can be: Inherited (if the role assignment is inherited from a parent resource scope), Group (if the role assignment is not inherited, but comes from the membership of a group assignment), or User (if the role assignment is neither inherited nor from a group assignment).
+The value can be: Inherited (if the role assignment is inherited from a parent resource scope), Group (if the role assignment isn't inherited, but comes from the membership of a group assignment), or User (if the role assignment isn't inherited or from a group assignment).
       \[Resource \<IMicrosoftGraphGovernanceResource\>\]: governanceResource
       \[ResourceId \<String\>\]: Required.
-The ID of the resource which the role assignment is associated with.
+The ID of the resource that the role assignment is associated with.
       \[RoleDefinition \<IMicrosoftGraphGovernanceRoleDefinition\>\]: governanceRoleDefinition
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[Id \<String\>\]: The unique identifier for an entity.
@@ -815,7 +818,7 @@ The setting is not supported for now.
           \[UserMemberSettings \<IMicrosoftGraphGovernanceRuleSetting\[\]\>\]: The rule settings that are evaluated when a user tries to activate his role assignment.
         \[TemplateId \<String\>\]: 
       \[RoleDefinitionId \<String\>\]: Required.
-The ID of the role definition which the role assignment is associated with.
+The ID of the role definition that the role assignment is associated with.
       \[StartDateTime \<DateTime?\>\]: The start time of the role assignment.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -826,14 +829,14 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 Read-only.
         \[DisplayName \<String\>\]: The display name of the subject.
         \[Email \<String\>\]: The email address of the user subject.
-If the subject is in other types, it is empty.
+If the subject is in other types, it's empty.
         \[PrincipalName \<String\>\]: The principal name of the user subject.
-If the subject is in other types, it is empty.
+If the subject is in other types, it's empty.
         \[Type \<String\>\]: The type of the subject.
 The value can be User, Group, and ServicePrincipal.
       \[SubjectId \<String\>\]: Required.
-The ID of the subject which the role assignment is associated with.
-    \[RoleDefinitions \<IMicrosoftGraphGovernanceRoleDefinition\[\]\>\]: The collection of role defintions for the resource.
+The ID of the subject that the role assignment is associated with.
+    \[RoleDefinitions \<IMicrosoftGraphGovernanceRoleDefinition\[\]\>\]: The collection of role definitions for the resource.
     \[RoleSettings \<IMicrosoftGraphGovernanceRoleSetting\[\]\>\]: The collection of role settings for the resource.
     \[Status \<String\>\]: The status of a given resource.
 For example, it could represent whether the resource is locked or not (values: Active/Locked).
@@ -866,8 +869,8 @@ Only Once is supported for now.
 The value can be InProgress or Closed.
     \[StatusDetails \<IMicrosoftGraphKeyValue\[\]\>\]: The details of the status of the role assignment request.
 It represents the evaluation results of different rules.
-      \[Key \<String\>\]: Contains the name of the field that a value is associated with.
-      \[Value \<String\>\]: Contains the corresponding value for the specified key.
+      \[Key \<String\>\]: Key.
+      \[Value \<String\>\]: Value.
     \[SubStatus \<String\>\]: The sub status of the role assignment request.
 The values can be Accepted, PendingEvaluation, Granted, Denied, PendingProvisioning, Provisioned, PendingRevocation, Revoked, Canceled, Failed, PendingApprovalProvisioning, PendingApproval, FailedAsResourceIsLocked, PendingAdminDecision, AdminApproved, AdminDenied, TimedOut, and ProvisioningStarted.
   \[Subject \<IMicrosoftGraphGovernanceSubject\>\]: governanceSubject
@@ -882,15 +885,15 @@ ROLEASSIGNMENTS \<IMicrosoftGraphGovernanceRoleAssignment\[\]\>: The collection 
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
   \[AssignmentState \<String\>\]: The state of the assignment.
-The value can be Eligible for eligible assignment or Active if it is directly assigned Active by administrators, or activated on an eligible assignment by the users.
-  \[EndDateTime \<DateTime?\>\]: For a non-permanent role assignment, this is the time when the role assignment will be expired.
+The value can be Eligible for eligible assignment or Active if it's directly assigned Active by administrators, or activated on an eligible assignment by the users.
+  \[EndDateTime \<DateTime?\>\]: For a non-permanent role assignment, this is the time when the role assignment is expired.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   \[ExternalId \<String\>\]: The external ID the resource that is used to identify the role assignment in the provider.
   \[LinkedEligibleRoleAssignment \<IMicrosoftGraphGovernanceRoleAssignment\>\]: governanceRoleAssignment
   \[LinkedEligibleRoleAssignmentId \<String\>\]: If this is an active assignment and created due to activation on an eligible assignment, it represents the ID of that eligible assignment; Otherwise, the value is null.
   \[MemberType \<String\>\]: The type of member.
-The value can be: Inherited (if the role assignment is inherited from a parent resource scope), Group (if the role assignment is not inherited, but comes from the membership of a group assignment), or User (if the role assignment is neither inherited nor from a group assignment).
+The value can be: Inherited (if the role assignment is inherited from a parent resource scope), Group (if the role assignment isn't inherited, but comes from the membership of a group assignment), or User (if the role assignment isn't inherited or from a group assignment).
   \[Resource \<IMicrosoftGraphGovernanceResource\>\]: governanceResource
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[Id \<String\>\]: The unique identifier for an entity.
@@ -977,8 +980,8 @@ Only Once is supported for now.
 The value can be InProgress or Closed.
         \[StatusDetails \<IMicrosoftGraphKeyValue\[\]\>\]: The details of the status of the role assignment request.
 It represents the evaluation results of different rules.
-          \[Key \<String\>\]: Contains the name of the field that a value is associated with.
-          \[Value \<String\>\]: Contains the corresponding value for the specified key.
+          \[Key \<String\>\]: Key.
+          \[Value \<String\>\]: Value.
         \[SubStatus \<String\>\]: The sub status of the role assignment request.
 The values can be Accepted, PendingEvaluation, Granted, Denied, PendingProvisioning, Provisioned, PendingRevocation, Revoked, Canceled, Failed, PendingApprovalProvisioning, PendingApproval, FailedAsResourceIsLocked, PendingAdminDecision, AdminApproved, AdminDenied, TimedOut, and ProvisioningStarted.
       \[Subject \<IMicrosoftGraphGovernanceSubject\>\]: governanceSubject
@@ -987,9 +990,9 @@ The values can be Accepted, PendingEvaluation, Granted, Denied, PendingProvision
 Read-only.
         \[DisplayName \<String\>\]: The display name of the subject.
         \[Email \<String\>\]: The email address of the user subject.
-If the subject is in other types, it is empty.
+If the subject is in other types, it's empty.
         \[PrincipalName \<String\>\]: The principal name of the user subject.
-If the subject is in other types, it is empty.
+If the subject is in other types, it's empty.
         \[Type \<String\>\]: The type of the subject.
 The value can be User, Group, and ServicePrincipal.
       \[SubjectId \<String\>\]: Required.
@@ -999,7 +1002,7 @@ Principals can be users, groups, or service principals.
 Representing the type of the operation on the role assignment.
 The possible values are: AdminAdd , UserAdd , AdminUpdate , AdminRemove , UserRemove , UserExtend , AdminExtend , UserRenew , AdminRenew.
     \[RoleAssignments \<IMicrosoftGraphGovernanceRoleAssignment\[\]\>\]: The collection of role assignments for the resource.
-    \[RoleDefinitions \<IMicrosoftGraphGovernanceRoleDefinition\[\]\>\]: The collection of role defintions for the resource.
+    \[RoleDefinitions \<IMicrosoftGraphGovernanceRoleDefinition\[\]\>\]: The collection of role definitions for the resource.
     \[RoleSettings \<IMicrosoftGraphGovernanceRoleSetting\[\]\>\]: The collection of role settings for the resource.
     \[Status \<String\>\]: The status of a given resource.
 For example, it could represent whether the resource is locked or not (values: Active/Locked).
@@ -1008,19 +1011,19 @@ Note: This property may be extended in the future to support more scenarios.
 Resource type.
 For example, for Azure resources, the type could be 'Subscription', 'ResourceGroup', 'Microsoft.Sql/server', etc.
   \[ResourceId \<String\>\]: Required.
-The ID of the resource which the role assignment is associated with.
+The ID of the resource that the role assignment is associated with.
   \[RoleDefinition \<IMicrosoftGraphGovernanceRoleDefinition\>\]: governanceRoleDefinition
   \[RoleDefinitionId \<String\>\]: Required.
-The ID of the role definition which the role assignment is associated with.
+The ID of the role definition that the role assignment is associated with.
   \[StartDateTime \<DateTime?\>\]: The start time of the role assignment.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   \[Status \<String\>\]: 
   \[Subject \<IMicrosoftGraphGovernanceSubject\>\]: governanceSubject
   \[SubjectId \<String\>\]: Required.
-The ID of the subject which the role assignment is associated with.
+The ID of the subject that the role assignment is associated with.
 
-ROLEDEFINITIONS \<IMicrosoftGraphGovernanceRoleDefinition\[\]\>: The collection of role defintions for the resource.
+ROLEDEFINITIONS \<IMicrosoftGraphGovernanceRoleDefinition\[\]\>: The collection of role definitions for the resource.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
   \[DisplayName \<String\>\]: The display name of the role definition.
@@ -1074,8 +1077,8 @@ Only Once is supported for now.
 The value can be InProgress or Closed.
         \[StatusDetails \<IMicrosoftGraphKeyValue\[\]\>\]: The details of the status of the role assignment request.
 It represents the evaluation results of different rules.
-          \[Key \<String\>\]: Contains the name of the field that a value is associated with.
-          \[Value \<String\>\]: Contains the corresponding value for the specified key.
+          \[Key \<String\>\]: Key.
+          \[Value \<String\>\]: Value.
         \[SubStatus \<String\>\]: The sub status of the role assignment request.
 The values can be Accepted, PendingEvaluation, Granted, Denied, PendingProvisioning, Provisioned, PendingRevocation, Revoked, Canceled, Failed, PendingApprovalProvisioning, PendingApproval, FailedAsResourceIsLocked, PendingAdminDecision, AdminApproved, AdminDenied, TimedOut, and ProvisioningStarted.
       \[Subject \<IMicrosoftGraphGovernanceSubject\>\]: governanceSubject
@@ -1084,9 +1087,9 @@ The values can be Accepted, PendingEvaluation, Granted, Denied, PendingProvision
 Read-only.
         \[DisplayName \<String\>\]: The display name of the subject.
         \[Email \<String\>\]: The email address of the user subject.
-If the subject is in other types, it is empty.
+If the subject is in other types, it's empty.
         \[PrincipalName \<String\>\]: The principal name of the user subject.
-If the subject is in other types, it is empty.
+If the subject is in other types, it's empty.
         \[Type \<String\>\]: The type of the subject.
 The value can be User, Group, and ServicePrincipal.
       \[SubjectId \<String\>\]: Required.
@@ -1099,29 +1102,29 @@ The possible values are: AdminAdd , UserAdd , AdminUpdate , AdminRemove , UserRe
       \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
       \[AssignmentState \<String\>\]: The state of the assignment.
-The value can be Eligible for eligible assignment or Active if it is directly assigned Active by administrators, or activated on an eligible assignment by the users.
-      \[EndDateTime \<DateTime?\>\]: For a non-permanent role assignment, this is the time when the role assignment will be expired.
+The value can be Eligible for eligible assignment or Active if it's directly assigned Active by administrators, or activated on an eligible assignment by the users.
+      \[EndDateTime \<DateTime?\>\]: For a non-permanent role assignment, this is the time when the role assignment is expired.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       \[ExternalId \<String\>\]: The external ID the resource that is used to identify the role assignment in the provider.
       \[LinkedEligibleRoleAssignment \<IMicrosoftGraphGovernanceRoleAssignment\>\]: governanceRoleAssignment
       \[LinkedEligibleRoleAssignmentId \<String\>\]: If this is an active assignment and created due to activation on an eligible assignment, it represents the ID of that eligible assignment; Otherwise, the value is null.
       \[MemberType \<String\>\]: The type of member.
-The value can be: Inherited (if the role assignment is inherited from a parent resource scope), Group (if the role assignment is not inherited, but comes from the membership of a group assignment), or User (if the role assignment is neither inherited nor from a group assignment).
+The value can be: Inherited (if the role assignment is inherited from a parent resource scope), Group (if the role assignment isn't inherited, but comes from the membership of a group assignment), or User (if the role assignment isn't inherited or from a group assignment).
       \[Resource \<IMicrosoftGraphGovernanceResource\>\]: governanceResource
       \[ResourceId \<String\>\]: Required.
-The ID of the resource which the role assignment is associated with.
+The ID of the resource that the role assignment is associated with.
       \[RoleDefinition \<IMicrosoftGraphGovernanceRoleDefinition\>\]: governanceRoleDefinition
       \[RoleDefinitionId \<String\>\]: Required.
-The ID of the role definition which the role assignment is associated with.
+The ID of the role definition that the role assignment is associated with.
       \[StartDateTime \<DateTime?\>\]: The start time of the role assignment.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       \[Status \<String\>\]: 
       \[Subject \<IMicrosoftGraphGovernanceSubject\>\]: governanceSubject
       \[SubjectId \<String\>\]: Required.
-The ID of the subject which the role assignment is associated with.
-    \[RoleDefinitions \<IMicrosoftGraphGovernanceRoleDefinition\[\]\>\]: The collection of role defintions for the resource.
+The ID of the subject that the role assignment is associated with.
+    \[RoleDefinitions \<IMicrosoftGraphGovernanceRoleDefinition\[\]\>\]: The collection of role definitions for the resource.
     \[RoleSettings \<IMicrosoftGraphGovernanceRoleSetting\[\]\>\]: The collection of role settings for the resource.
       \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
@@ -1237,8 +1240,8 @@ Only Once is supported for now.
 The value can be InProgress or Closed.
         \[StatusDetails \<IMicrosoftGraphKeyValue\[\]\>\]: The details of the status of the role assignment request.
 It represents the evaluation results of different rules.
-          \[Key \<String\>\]: Contains the name of the field that a value is associated with.
-          \[Value \<String\>\]: Contains the corresponding value for the specified key.
+          \[Key \<String\>\]: Key.
+          \[Value \<String\>\]: Value.
         \[SubStatus \<String\>\]: The sub status of the role assignment request.
 The values can be Accepted, PendingEvaluation, Granted, Denied, PendingProvisioning, Provisioned, PendingRevocation, Revoked, Canceled, Failed, PendingApprovalProvisioning, PendingApproval, FailedAsResourceIsLocked, PendingAdminDecision, AdminApproved, AdminDenied, TimedOut, and ProvisioningStarted.
       \[Subject \<IMicrosoftGraphGovernanceSubject\>\]: governanceSubject
@@ -1247,9 +1250,9 @@ The values can be Accepted, PendingEvaluation, Granted, Denied, PendingProvision
 Read-only.
         \[DisplayName \<String\>\]: The display name of the subject.
         \[Email \<String\>\]: The email address of the user subject.
-If the subject is in other types, it is empty.
+If the subject is in other types, it's empty.
         \[PrincipalName \<String\>\]: The principal name of the user subject.
-If the subject is in other types, it is empty.
+If the subject is in other types, it's empty.
         \[Type \<String\>\]: The type of the subject.
 The value can be User, Group, and ServicePrincipal.
       \[SubjectId \<String\>\]: Required.
@@ -1262,29 +1265,29 @@ The possible values are: AdminAdd , UserAdd , AdminUpdate , AdminRemove , UserRe
       \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
       \[AssignmentState \<String\>\]: The state of the assignment.
-The value can be Eligible for eligible assignment or Active if it is directly assigned Active by administrators, or activated on an eligible assignment by the users.
-      \[EndDateTime \<DateTime?\>\]: For a non-permanent role assignment, this is the time when the role assignment will be expired.
+The value can be Eligible for eligible assignment or Active if it's directly assigned Active by administrators, or activated on an eligible assignment by the users.
+      \[EndDateTime \<DateTime?\>\]: For a non-permanent role assignment, this is the time when the role assignment is expired.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       \[ExternalId \<String\>\]: The external ID the resource that is used to identify the role assignment in the provider.
       \[LinkedEligibleRoleAssignment \<IMicrosoftGraphGovernanceRoleAssignment\>\]: governanceRoleAssignment
       \[LinkedEligibleRoleAssignmentId \<String\>\]: If this is an active assignment and created due to activation on an eligible assignment, it represents the ID of that eligible assignment; Otherwise, the value is null.
       \[MemberType \<String\>\]: The type of member.
-The value can be: Inherited (if the role assignment is inherited from a parent resource scope), Group (if the role assignment is not inherited, but comes from the membership of a group assignment), or User (if the role assignment is neither inherited nor from a group assignment).
+The value can be: Inherited (if the role assignment is inherited from a parent resource scope), Group (if the role assignment isn't inherited, but comes from the membership of a group assignment), or User (if the role assignment isn't inherited or from a group assignment).
       \[Resource \<IMicrosoftGraphGovernanceResource\>\]: governanceResource
       \[ResourceId \<String\>\]: Required.
-The ID of the resource which the role assignment is associated with.
+The ID of the resource that the role assignment is associated with.
       \[RoleDefinition \<IMicrosoftGraphGovernanceRoleDefinition\>\]: governanceRoleDefinition
       \[RoleDefinitionId \<String\>\]: Required.
-The ID of the role definition which the role assignment is associated with.
+The ID of the role definition that the role assignment is associated with.
       \[StartDateTime \<DateTime?\>\]: The start time of the role assignment.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       \[Status \<String\>\]: 
       \[Subject \<IMicrosoftGraphGovernanceSubject\>\]: governanceSubject
       \[SubjectId \<String\>\]: Required.
-The ID of the subject which the role assignment is associated with.
-    \[RoleDefinitions \<IMicrosoftGraphGovernanceRoleDefinition\[\]\>\]: The collection of role defintions for the resource.
+The ID of the subject that the role assignment is associated with.
+    \[RoleDefinitions \<IMicrosoftGraphGovernanceRoleDefinition\[\]\>\]: The collection of role definitions for the resource.
     \[RoleSettings \<IMicrosoftGraphGovernanceRoleSetting\[\]\>\]: The collection of role settings for the resource.
     \[Status \<String\>\]: The status of a given resource.
 For example, it could represent whether the resource is locked or not (values: Active/Locked).

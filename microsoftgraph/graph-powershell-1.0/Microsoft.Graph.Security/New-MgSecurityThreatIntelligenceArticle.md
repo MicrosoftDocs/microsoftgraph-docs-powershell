@@ -33,8 +33,6 @@ New-MgSecurityThreatIntelligenceArticle -BodyParameter <IMicrosoftGraphSecurityA
 ## DESCRIPTION
 Create new navigation property to articles for security
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -158,7 +156,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -267,53 +265,61 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityArticle
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+BODY \<IMicrosoftGraphSecurityFormattedContent\>: formattedContent
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Content \<String\>\]: The content of this formattedContent.
+  \[Format \<String\>\]: contentFormat
 
-`BODY <IMicrosoftGraphSecurityFormattedContent>`: formattedContent
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Content <String>]`: The content of this formattedContent.
-  - `[Format <String>]`: contentFormat
+BODYPARAMETER \<IMicrosoftGraphSecurityArticle\>: article
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[Body \<IMicrosoftGraphSecurityFormattedContent\>\]: formattedContent
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Content \<String\>\]: The content of this formattedContent.
+    \[Format \<String\>\]: contentFormat
+  \[CreatedDateTime \<DateTime?\>\]: The date and time when this article was created.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  \[ImageUrl \<String\>\]: URL of the header image for this article, used for display purposes.
+  \[Indicators \<IMicrosoftGraphSecurityArticleIndicator\[\]\>\]: Indicators related to this article.
+    \[Artifact \<IMicrosoftGraphSecurityArtifact\>\]: artifact
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[Source \<String\>\]: indicatorSource
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[IsFeatured \<Boolean?\>\]: Indicates whether this article is currently featured by Microsoft.
+  \[LastUpdatedDateTime \<DateTime?\>\]: The most recent date and time when this article was updated.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  \[Summary \<IMicrosoftGraphSecurityFormattedContent\>\]: formattedContent
+  \[Tags \<String\[\]\>\]: Tags for this article, communicating keywords, or key concepts.
+  \[Title \<String\>\]: The title of this article.
 
-`BODYPARAMETER <IMicrosoftGraphSecurityArticle>`: article
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Body <IMicrosoftGraphSecurityFormattedContent>]`: formattedContent
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Content <String>]`: The content of this formattedContent.
-    - `[Format <String>]`: contentFormat
-  - `[CreatedDateTime <DateTime?>]`: The date and time when this article was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[ImageUrl <String>]`: URL of the header image for this article, used for display purposes.
-  - `[Indicators <IMicrosoftGraphSecurityArticleIndicator[]>]`: Indicators related to this article.
-    - `[Artifact <IMicrosoftGraphSecurityArtifact>]`: artifact
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[Source <String>]`: indicatorSource
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[IsFeatured <Boolean?>]`: Indicates whether this article is currently featured by Microsoft.
-  - `[LastUpdatedDateTime <DateTime?>]`: The most recent date and time when this article was updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[Summary <IMicrosoftGraphSecurityFormattedContent>]`: formattedContent
-  - `[Tags <String[]>]`: Tags for this article, communicating keywords, or key concepts.
-  - `[Title <String>]`: The title of this article.
+INDICATORS \<IMicrosoftGraphSecurityArticleIndicator\[\]\>: Indicators related to this article.
+  \[Artifact \<IMicrosoftGraphSecurityArtifact\>\]: artifact
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[Source \<String\>\]: indicatorSource
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
 
-`INDICATORS <IMicrosoftGraphSecurityArticleIndicator[]>`: Indicators related to this article.
-  - `[Artifact <IMicrosoftGraphSecurityArtifact>]`: artifact
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Source <String>]`: indicatorSource
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-
-`SUMMARY <IMicrosoftGraphSecurityFormattedContent>`: formattedContent
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Content <String>]`: The content of this formattedContent.
-  - `[Format <String>]`: contentFormat
+SUMMARY \<IMicrosoftGraphSecurityFormattedContent\>: formattedContent
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Content \<String\>\]: The content of this formattedContent.
+  \[Format \<String\>\]: contentFormat
 
 ## RELATED LINKS
-
 [New-MgBetaSecurityThreatIntelligenceArticle](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceArticle?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencearticle](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencearticle)
+
 

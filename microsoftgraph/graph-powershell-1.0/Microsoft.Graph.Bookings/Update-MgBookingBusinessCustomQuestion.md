@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinesscustomquestion
 schema: 2.0.0
+ms.prod: bookings
 ---
 
 # Update-MgBookingBusinessCustomQuestion
@@ -249,29 +250,30 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBookingCustomQuestion
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+BODYPARAMETER \<IMicrosoftGraphBookingCustomQuestion\>: Represents a custom question of the business.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[AnswerInputType \<String\>\]: answerInputType
+  \[AnswerOptions \<String\[\]\>\]: List of possible answer values.
+  \[DisplayName \<String\>\]: The question.
 
-`BODYPARAMETER <IMicrosoftGraphBookingCustomQuestion>`: Represents a custom question of the business.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[AnswerInputType <String>]`: answerInputType
-  - `[AnswerOptions <String[]>]`: List of possible answer values.
-  - `[DisplayName <String>]`: The question.
-
-`INPUTOBJECT <IBookingsIdentity>`: Identity Parameter
-  - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
-  - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
-  - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
-  - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
-  - `[BookingCustomerBaseId <String>]`: The unique identifier of bookingCustomerBase
-  - `[BookingServiceId <String>]`: The unique identifier of bookingService
-  - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
+INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
+  \[BookingAppointmentId \<String\>\]: The unique identifier of bookingAppointment
+  \[BookingBusinessId \<String\>\]: The unique identifier of bookingBusiness
+  \[BookingCurrencyId \<String\>\]: The unique identifier of bookingCurrency
+  \[BookingCustomQuestionId \<String\>\]: The unique identifier of bookingCustomQuestion
+  \[BookingCustomerBaseId \<String\>\]: The unique identifier of bookingCustomerBase
+  \[BookingServiceId \<String\>\]: The unique identifier of bookingService
+  \[BookingStaffMemberBaseId \<String\>\]: The unique identifier of bookingStaffMemberBase
 
 ## RELATED LINKS
 [Update-MgBetaBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaBookingBusinessCustomQuestion?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinesscustomquestion](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinesscustomquestion)
+

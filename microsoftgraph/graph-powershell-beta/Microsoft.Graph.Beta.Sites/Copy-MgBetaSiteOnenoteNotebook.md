@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetasiteonenotenotebook
 schema: 2.0.0
+ms.prod: onenote
 ---
 
 # Copy-MgBetaSiteOnenoteNotebook
@@ -51,6 +52,8 @@ Copies a notebook to the Notebooks folder in the destination Documents library.
 The folder is created if it doesn't exist.
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -327,5 +330,4 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Copy-MgSiteOnenoteNotebook](/powershell/module/Microsoft.Graph.Sites/Copy-MgSiteOnenoteNotebook?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetasiteonenotenotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetasiteonenotenotebook)
-
 

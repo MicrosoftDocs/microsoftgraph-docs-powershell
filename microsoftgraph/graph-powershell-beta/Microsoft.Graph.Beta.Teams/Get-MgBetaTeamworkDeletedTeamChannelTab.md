@@ -39,6 +39,8 @@ Get-MgBetaTeamworkDeletedTeamChannelTab -InputObject <ITeamsIdentity> [-ExpandPr
 A collection of all the tabs in the channel.
 A navigation property.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -312,5 +314,4 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Get-MgTeamworkDeletedTeamChannelTab](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeamChannelTab?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeletedteamchanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeletedteamchanneltab)
-
 

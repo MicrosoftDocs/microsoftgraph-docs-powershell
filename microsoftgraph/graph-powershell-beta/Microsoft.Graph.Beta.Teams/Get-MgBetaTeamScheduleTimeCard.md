@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the properties and relationships of a timeCard object by ID.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Get-MgBetaTeamScheduleTimeCard -InputObject <ITeamsIdentity> [-ExpandProperty <S
 
 ## DESCRIPTION
 Get the properties and relationships of a timeCard object by ID.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaTeamScheduleTimeCard Cmdlet

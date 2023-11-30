@@ -64,8 +64,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.Int32
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
 [Get-MgBetaPlaceCountAsRoom](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaPlaceCountAsRoom?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplacecountasroom](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplacecountasroom)
+
 

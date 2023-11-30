@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmonitoringalertrule
 schema: 2.0.0
+ms.prod: cloud-pc
 ---
 
 # New-MgBetaDeviceManagementMonitoringAlertRule
@@ -120,7 +121,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -153,7 +154,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -246,45 +247,59 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementAlertRule
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+BODYPARAMETER \<IMicrosoftGraphDeviceManagementAlertRule\>: alertRule
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[AlertRuleTemplate \<String\>\]: alertRuleTemplate
+  \[Description \<String\>\]: The rule description.
+  \[DisplayName \<String\>\]: The display name of the rule.
+  \[Enabled \<Boolean?\>\]: The status of the rule that indicates whether the rule is enabled or disabled.
+If true, the rule is enabled; otherwise, the rule is disabled.
+  \[IsSystemRule \<Boolean?\>\]: Indicates whether the rule is a system rule.
+If true, the rule is a system rule; otherwise, the rule is a custom defined rule and can be edited.
+System rules are built-in and only a few properties can be edited.
+  \[NotificationChannels \<IMicrosoftGraphDeviceManagementNotificationChannel\[\]\>\]: The notification channels of the rule selected by the user.
+    \[NotificationChannelType \<String\>\]: notificationChannelType
+    \[NotificationReceivers \<IMicrosoftGraphDeviceManagementNotificationReceiver\[\]\>\]: Information about the notification receivers, such as locale and contact information.
+For example, en-us for locale and serena.davis@contoso.com for contact information.
+      \[ContactInformation \<String\>\]: The contact information about the notification receivers, such as an email address.
+Currently, only email and portal notifications are supported.
+For portal notifications, contactInformation can be left blank.
+For email notifications, contactInformation consists of an email address such as serena.davis@contoso.com.
+      \[Locale \<String\>\]: Defines the language and format in which the notification will be sent.
+Supported locale values are: en-us, cs-cz, de-de, es-es, fr-fr, hu-hu, it-it, ja-jp, ko-kr, nl-nl, pl-pl, pt-br, pt-pt, ru-ru, sv-se, tr-tr, zh-cn, zh-tw.
+  \[Severity \<String\>\]: ruleSeverityType
+  \[Threshold \<IMicrosoftGraphDeviceManagementRuleThreshold\>\]: ruleThreshold
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Aggregation \<String\>\]: aggregationType
+    \[Operator \<String\>\]: operatorType
+    \[Target \<Int32?\>\]: The target threshold value.
 
-`BODYPARAMETER <IMicrosoftGraphDeviceManagementAlertRule>`: alertRule
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[AlertRuleTemplate <String>]`: alertRuleTemplate
-  - `[Description <String>]`: The rule description.
-  - `[DisplayName <String>]`: The display name of the rule.
-  - `[Enabled <Boolean?>]`: The status of the rule that indicates whether the rule is enabled or disabled. If true, the rule is enabled; otherwise, the rule is disabled.
-  - `[IsSystemRule <Boolean?>]`: Indicates whether the rule is a system rule. If true, the rule is a system rule; otherwise, the rule is a custom defined rule and can be edited. System rules are built-in and only a few properties can be edited.
-  - `[NotificationChannels <IMicrosoftGraphDeviceManagementNotificationChannel[]>]`: The notification channels of the rule selected by the user.
-    - `[NotificationChannelType <String>]`: notificationChannelType
-    - `[NotificationReceivers <IMicrosoftGraphDeviceManagementNotificationReceiver[]>]`: Information about the notification receivers, such as locale and contact information. For example, en-us for locale and serena.davis@contoso.com for contact information.
-      - `[ContactInformation <String>]`: The contact information about the notification receivers, such as an email address. Currently, only email and portal notifications are supported. For portal notifications, contactInformation can be left blank. For email notifications, contactInformation consists of an email address such as serena.davis@contoso.com.
-      - `[Locale <String>]`: Defines the language and format in which the notification will be sent. Supported locale values are: en-us, cs-cz, de-de, es-es, fr-fr, hu-hu, it-it, ja-jp, ko-kr, nl-nl, pl-pl, pt-br, pt-pt, ru-ru, sv-se, tr-tr, zh-cn, zh-tw.
-  - `[Severity <String>]`: ruleSeverityType
-  - `[Threshold <IMicrosoftGraphDeviceManagementRuleThreshold>]`: ruleThreshold
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Aggregation <String>]`: aggregationType
-    - `[Operator <String>]`: operatorType
-    - `[Target <Int32?>]`: The target threshold value.
+NOTIFICATIONCHANNELS \<IMicrosoftGraphDeviceManagementNotificationChannel\[\]\>: The notification channels of the rule selected by the user.
+  \[NotificationChannelType \<String\>\]: notificationChannelType
+  \[NotificationReceivers \<IMicrosoftGraphDeviceManagementNotificationReceiver\[\]\>\]: Information about the notification receivers, such as locale and contact information.
+For example, en-us for locale and serena.davis@contoso.com for contact information.
+    \[ContactInformation \<String\>\]: The contact information about the notification receivers, such as an email address.
+Currently, only email and portal notifications are supported.
+For portal notifications, contactInformation can be left blank.
+For email notifications, contactInformation consists of an email address such as serena.davis@contoso.com.
+    \[Locale \<String\>\]: Defines the language and format in which the notification will be sent.
+Supported locale values are: en-us, cs-cz, de-de, es-es, fr-fr, hu-hu, it-it, ja-jp, ko-kr, nl-nl, pl-pl, pt-br, pt-pt, ru-ru, sv-se, tr-tr, zh-cn, zh-tw.
 
-`NOTIFICATIONCHANNELS <IMicrosoftGraphDeviceManagementNotificationChannel[]>`: The notification channels of the rule selected by the user.
-  - `[NotificationChannelType <String>]`: notificationChannelType
-  - `[NotificationReceivers <IMicrosoftGraphDeviceManagementNotificationReceiver[]>]`: Information about the notification receivers, such as locale and contact information. For example, en-us for locale and serena.davis@contoso.com for contact information.
-    - `[ContactInformation <String>]`: The contact information about the notification receivers, such as an email address. Currently, only email and portal notifications are supported. For portal notifications, contactInformation can be left blank. For email notifications, contactInformation consists of an email address such as serena.davis@contoso.com.
-    - `[Locale <String>]`: Defines the language and format in which the notification will be sent. Supported locale values are: en-us, cs-cz, de-de, es-es, fr-fr, hu-hu, it-it, ja-jp, ko-kr, nl-nl, pl-pl, pt-br, pt-pt, ru-ru, sv-se, tr-tr, zh-cn, zh-tw.
-
-`THRESHOLD <IMicrosoftGraphDeviceManagementRuleThreshold>`: ruleThreshold
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Aggregation <String>]`: aggregationType
-  - `[Operator <String>]`: operatorType
-  - `[Target <Int32?>]`: The target threshold value.
+THRESHOLD \<IMicrosoftGraphDeviceManagementRuleThreshold\>: ruleThreshold
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Aggregation \<String\>\]: aggregationType
+  \[Operator \<String\>\]: operatorType
+  \[Target \<Int32?\>\]: The target threshold value.
 
 ## RELATED LINKS
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmonitoringalertrule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmonitoringalertrule)
+
 

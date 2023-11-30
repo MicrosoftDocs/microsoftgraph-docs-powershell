@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryonpremisesynchronization
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Update-MgBetaDirectoryOnPremiseSynchronization
 
 ## SYNOPSIS
 Update the properties of an onPremisesDirectorySynchronization object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgDirectoryOnPremiseSynchronization](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryOnPremiseSynchronization?view=graph-powershell-1.0)
@@ -47,6 +49,7 @@ Update-MgBetaDirectoryOnPremiseSynchronization -InputObject <IIdentityDirectoryM
 
 ## DESCRIPTION
 Update the properties of an onPremisesDirectorySynchronization object.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -222,13 +225,13 @@ The threshold is either an absolute number of objects or a percentage number of 
     \[ApplicationId \<String\>\]: The identifier of the on-premises directory synchronization client application that is configured for the tenant.
     \[CurrentExportData \<IMicrosoftGraphOnPremisesCurrentExportData\>\]: onPremisesCurrentExportData
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[ClientMachineName \<String\>\]: The name of the onPremises client machine which ran the last export.
+      \[ClientMachineName \<String\>\]: The name of the onPremises client machine that ran the last export.
       \[PendingObjectsAddition \<Int32?\>\]: The count of pending adds from on-premises directory.
       \[PendingObjectsDeletion \<Int32?\>\]: The count of pending deletes from on-premises directory.
       \[PendingObjectsUpdate \<Int32?\>\]: The count of pending updates from on-premises directory.
-      \[ServiceAccount \<String\>\]: The name of the dirsync service account which is configured to connect to the directory.
+      \[ServiceAccount \<String\>\]: The name of the dirsync service account that is configured to connect to the directory.
       \[SuccessfulLinksProvisioningCount \<Int64?\>\]: The count of updated links during the current directory sync export run.
-      \[SuccessfulObjectsProvisioningCount \<Int32?\>\]: The count of objects which were successfully provisioned during the current directory sync export run.
+      \[SuccessfulObjectsProvisioningCount \<Int32?\>\]: The count of objects that were successfully provisioned during the current directory sync export run.
       \[TotalConnectorSpaceObjects \<Int32?\>\]: The total number of objects in the AAD Connector Space.
     \[CustomerRequestedSynchronizationInterval \<TimeSpan?\>\]: Interval of time that the customer requested the sync client waits between sync cycles.
     \[SynchronizationClientVersion \<String\>\]: Indicates the version of the on-premises directory synchronization application.
@@ -243,16 +246,16 @@ The threshold is either an absolute number of objects or a percentage number of 
     \[BlockSoftMatchEnabled \<Boolean?\>\]: Use to block soft match for all objects if enabled for the  tenant.
 Customers are encouraged to enable this feature and keep it enabled until soft matching is required again for their tenancy.
 This flag should be enabled again after any soft matching has been completed and is no longer needed.
-    \[BypassDirSyncOverridesEnabled \<Boolean?\>\]: When true, persists the values of Mobile and OtherMobile in on-premises AD during sync cycles instead of values of MobilePhone or AlternateMobilePhones in Azure AD.
+    \[BypassDirSyncOverridesEnabled \<Boolean?\>\]: When true, persists the values of Mobile and OtherMobile in on-premises AD during sync cycles instead of values of MobilePhone or AlternateMobilePhones in Microsoft Entra ID.
     \[CloudPasswordPolicyForPasswordSyncedUsersEnabled \<Boolean?\>\]: Used to indicate that cloud password policy applies to users whose passwords are synchronized from on-premises.
     \[ConcurrentCredentialUpdateEnabled \<Boolean?\>\]: Used to enable concurrent user credentials update in OrgId.
     \[ConcurrentOrgIdProvisioningEnabled \<Boolean?\>\]: Used to enable concurrent user creation in OrgId.
     \[DeviceWritebackEnabled \<Boolean?\>\]: Used to indicate that device write-back is enabled.
-    \[DirectoryExtensionsEnabled \<Boolean?\>\]: Used to indicate that directory extensions are being synced from on-premises AD to Azure AD.
+    \[DirectoryExtensionsEnabled \<Boolean?\>\]: Used to indicate that directory extensions are being synced from on-premises AD to Microsoft Entra ID.
     \[FopeConflictResolutionEnabled \<Boolean?\>\]: Used to indicate that for a Microsoft Forefront Online Protection for Exchange (FOPE) migrated tenant, the conflicting proxy address should be migrated over.
     \[GroupWriteBackEnabled \<Boolean?\>\]: Used to enable object-level group writeback feature for additional group types.
     \[PasswordSyncEnabled \<Boolean?\>\]: Used to indicate on-premise password synchronization is enabled.
-    \[PasswordWritebackEnabled \<Boolean?\>\]: Used to indicate that writeback of password resets from Azure AD to on-premises AD is enabled.
+    \[PasswordWritebackEnabled \<Boolean?\>\]: Used to indicate that writeback of password resets from Microsoft Entra ID to on-premises AD is enabled.
     \[QuarantineUponProxyAddressesConflictEnabled \<Boolean?\>\]: Used to indicate that we should quarantine objects with conflicting proxy address.
     \[QuarantineUponUpnConflictEnabled \<Boolean?\>\]: Used to indicate that we should quarantine objects conflicting with duplicate userPrincipalName.
     \[SoftMatchOnUpnEnabled \<Boolean?\>\]: Used to indicate that we should soft match objects based on userPrincipalName.
@@ -272,13 +275,13 @@ The threshold is either an absolute number of objects or a percentage number of 
   \[ApplicationId \<String\>\]: The identifier of the on-premises directory synchronization client application that is configured for the tenant.
   \[CurrentExportData \<IMicrosoftGraphOnPremisesCurrentExportData\>\]: onPremisesCurrentExportData
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[ClientMachineName \<String\>\]: The name of the onPremises client machine which ran the last export.
+    \[ClientMachineName \<String\>\]: The name of the onPremises client machine that ran the last export.
     \[PendingObjectsAddition \<Int32?\>\]: The count of pending adds from on-premises directory.
     \[PendingObjectsDeletion \<Int32?\>\]: The count of pending deletes from on-premises directory.
     \[PendingObjectsUpdate \<Int32?\>\]: The count of pending updates from on-premises directory.
-    \[ServiceAccount \<String\>\]: The name of the dirsync service account which is configured to connect to the directory.
+    \[ServiceAccount \<String\>\]: The name of the dirsync service account that is configured to connect to the directory.
     \[SuccessfulLinksProvisioningCount \<Int64?\>\]: The count of updated links during the current directory sync export run.
-    \[SuccessfulObjectsProvisioningCount \<Int32?\>\]: The count of objects which were successfully provisioned during the current directory sync export run.
+    \[SuccessfulObjectsProvisioningCount \<Int32?\>\]: The count of objects that were successfully provisioned during the current directory sync export run.
     \[TotalConnectorSpaceObjects \<Int32?\>\]: The total number of objects in the AAD Connector Space.
   \[CustomerRequestedSynchronizationInterval \<TimeSpan?\>\]: Interval of time that the customer requested the sync client waits between sync cycles.
   \[SynchronizationClientVersion \<String\>\]: Indicates the version of the on-premises directory synchronization application.
@@ -294,16 +297,16 @@ FEATURES \<IMicrosoftGraphOnPremisesDirectorySynchronizationFeature\>: onPremise
   \[BlockSoftMatchEnabled \<Boolean?\>\]: Use to block soft match for all objects if enabled for the  tenant.
 Customers are encouraged to enable this feature and keep it enabled until soft matching is required again for their tenancy.
 This flag should be enabled again after any soft matching has been completed and is no longer needed.
-  \[BypassDirSyncOverridesEnabled \<Boolean?\>\]: When true, persists the values of Mobile and OtherMobile in on-premises AD during sync cycles instead of values of MobilePhone or AlternateMobilePhones in Azure AD.
+  \[BypassDirSyncOverridesEnabled \<Boolean?\>\]: When true, persists the values of Mobile and OtherMobile in on-premises AD during sync cycles instead of values of MobilePhone or AlternateMobilePhones in Microsoft Entra ID.
   \[CloudPasswordPolicyForPasswordSyncedUsersEnabled \<Boolean?\>\]: Used to indicate that cloud password policy applies to users whose passwords are synchronized from on-premises.
   \[ConcurrentCredentialUpdateEnabled \<Boolean?\>\]: Used to enable concurrent user credentials update in OrgId.
   \[ConcurrentOrgIdProvisioningEnabled \<Boolean?\>\]: Used to enable concurrent user creation in OrgId.
   \[DeviceWritebackEnabled \<Boolean?\>\]: Used to indicate that device write-back is enabled.
-  \[DirectoryExtensionsEnabled \<Boolean?\>\]: Used to indicate that directory extensions are being synced from on-premises AD to Azure AD.
+  \[DirectoryExtensionsEnabled \<Boolean?\>\]: Used to indicate that directory extensions are being synced from on-premises AD to Microsoft Entra ID.
   \[FopeConflictResolutionEnabled \<Boolean?\>\]: Used to indicate that for a Microsoft Forefront Online Protection for Exchange (FOPE) migrated tenant, the conflicting proxy address should be migrated over.
   \[GroupWriteBackEnabled \<Boolean?\>\]: Used to enable object-level group writeback feature for additional group types.
   \[PasswordSyncEnabled \<Boolean?\>\]: Used to indicate on-premise password synchronization is enabled.
-  \[PasswordWritebackEnabled \<Boolean?\>\]: Used to indicate that writeback of password resets from Azure AD to on-premises AD is enabled.
+  \[PasswordWritebackEnabled \<Boolean?\>\]: Used to indicate that writeback of password resets from Microsoft Entra ID to on-premises AD is enabled.
   \[QuarantineUponProxyAddressesConflictEnabled \<Boolean?\>\]: Used to indicate that we should quarantine objects with conflicting proxy address.
   \[QuarantineUponUpnConflictEnabled \<Boolean?\>\]: Used to indicate that we should quarantine objects conflicting with duplicate userPrincipalName.
   \[SoftMatchOnUpnEnabled \<Boolean?\>\]: Used to indicate that we should soft match objects based on userPrincipalName.
@@ -323,6 +326,7 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[ContractId \<String\>\]: The unique identifier of contract
   \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
   \[DeviceId \<String\>\]: The unique identifier of device
+  \[DeviceLocalCredentialInfoId \<String\>\]: The unique identifier of deviceLocalCredentialInfo
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[DirectoryRoleId \<String\>\]: The unique identifier of directoryRole
   \[DirectoryRoleTemplateId \<String\>\]: The unique identifier of directoryRoleTemplate

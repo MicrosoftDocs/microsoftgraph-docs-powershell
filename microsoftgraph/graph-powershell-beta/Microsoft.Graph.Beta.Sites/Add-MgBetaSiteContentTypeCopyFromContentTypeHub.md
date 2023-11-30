@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/add-mgbetasitecontenttypecopyfromcontenttypehub
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Add-MgBetaSiteContentTypeCopyFromContentTypeHub
@@ -51,6 +52,8 @@ This method is part of the content type publishing changes to optimize the synci
 The method allows users to pull content types directly from the content type hub to a site or list.
 For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -236,5 +239,4 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Add-MgSiteContentTypeCopyFromContentTypeHub](/powershell/module/Microsoft.Graph.Sites/Add-MgSiteContentTypeCopyFromContentTypeHub?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/add-mgbetasitecontenttypecopyfromcontenttypehub](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/add-mgbetasitecontenttypecopyfromcontenttypehub)
-
 

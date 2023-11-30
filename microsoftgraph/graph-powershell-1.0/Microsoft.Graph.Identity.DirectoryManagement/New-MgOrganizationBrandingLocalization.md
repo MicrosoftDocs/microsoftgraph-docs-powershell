@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgorganizationbrandinglocalization
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # New-MgOrganizationBrandingLocalization
@@ -406,7 +407,7 @@ Accept wildcard characters: False
 ```
 
 ### -FaviconInputFile
-Input File for Favicon (A custom icon (favicon) to replace a default Microsoft product favicon on an Azure AD tenant.)
+Input File for Favicon (A custom icon (favicon) to replace a default Microsoft product favicon on a Microsoft Entra tenant.)
 
 ```yaml
 Type: String
@@ -704,54 +705,54 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOrganizationalBrandingLocalization
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
+  \[AdministrativeUnitId \<String\>\]: The unique identifier of administrativeUnit
+  \[AllowedValueId \<String\>\]: The unique identifier of allowedValue
+  \[AttributeSetId \<String\>\]: The unique identifier of attributeSet
+  \[ContractId \<String\>\]: The unique identifier of contract
+  \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
+  \[DeviceId \<String\>\]: The unique identifier of device
+  \[DeviceLocalCredentialInfoId \<String\>\]: The unique identifier of deviceLocalCredentialInfo
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[DirectoryRoleId \<String\>\]: The unique identifier of directoryRole
+  \[DirectoryRoleTemplateId \<String\>\]: The unique identifier of directoryRoleTemplate
+  \[DomainDnsRecordId \<String\>\]: The unique identifier of domainDnsRecord
+  \[DomainId \<String\>\]: The unique identifier of domain
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[IdentityProviderBaseId \<String\>\]: The unique identifier of identityProviderBase
+  \[InternalDomainFederationId \<String\>\]: The unique identifier of internalDomainFederation
+  \[OnPremisesDirectorySynchronizationId \<String\>\]: The unique identifier of onPremisesDirectorySynchronization
+  \[OrgContactId \<String\>\]: The unique identifier of orgContact
+  \[OrganizationId \<String\>\]: The unique identifier of organization
+  \[OrganizationalBrandingLocalizationId \<String\>\]: The unique identifier of organizationalBrandingLocalization
+  \[ProfileCardPropertyId \<String\>\]: The unique identifier of profileCardProperty
+  \[RoleTemplateId \<String\>\]: Alternate key of directoryRole
+  \[ScopedRoleMembershipId \<String\>\]: The unique identifier of scopedRoleMembership
+  \[SubscribedSkuId \<String\>\]: The unique identifier of subscribedSku
+  \[UserId \<String\>\]: The unique identifier of user
 
-`INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
-  - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
-  - `[AllowedValueId <String>]`: The unique identifier of allowedValue
-  - `[AttributeSetId <String>]`: The unique identifier of attributeSet
-  - `[ContractId <String>]`: The unique identifier of contract
-  - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
-  - `[DeviceId <String>]`: The unique identifier of device
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[DirectoryRoleId <String>]`: The unique identifier of directoryRole
-  - `[DirectoryRoleTemplateId <String>]`: The unique identifier of directoryRoleTemplate
-  - `[DomainDnsRecordId <String>]`: The unique identifier of domainDnsRecord
-  - `[DomainId <String>]`: The unique identifier of domain
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[IdentityProviderBaseId <String>]`: The unique identifier of identityProviderBase
-  - `[InternalDomainFederationId <String>]`: The unique identifier of internalDomainFederation
-  - `[OnPremisesDirectorySynchronizationId <String>]`: The unique identifier of onPremisesDirectorySynchronization
-  - `[OrgContactId <String>]`: The unique identifier of orgContact
-  - `[OrganizationId <String>]`: The unique identifier of organization
-  - `[OrganizationalBrandingLocalizationId <String>]`: The unique identifier of organizationalBrandingLocalization
-  - `[ProfileCardPropertyId <String>]`: The unique identifier of profileCardProperty
-  - `[RoleTemplateId <String>]`: Alternate key of directoryRole
-  - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
-  - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
-  - `[UserId <String>]`: The unique identifier of user
+LOGINPAGELAYOUTCONFIGURATION \<IMicrosoftGraphLoginPageLayoutConfiguration\>: loginPageLayoutConfiguration
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[IsFooterShown \<Boolean?\>\]: Option to show the footer on the sign-in page.
+  \[IsHeaderShown \<Boolean?\>\]: Option to show the header on the sign-in page.
+  \[LayoutTemplateType \<String\>\]: layoutTemplateType
 
-`LOGINPAGELAYOUTCONFIGURATION <IMicrosoftGraphLoginPageLayoutConfiguration>`: loginPageLayoutConfiguration
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[IsFooterShown <Boolean?>]`: Option to show the footer on the sign-in page.
-  - `[IsHeaderShown <Boolean?>]`: Option to show the header on the sign-in page.
-  - `[LayoutTemplateType <String>]`: layoutTemplateType
-
-`LOGINPAGETEXTVISIBILITYSETTINGS <IMicrosoftGraphLoginPageTextVisibilitySettings>`: loginPageTextVisibilitySettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[HideAccountResetCredentials <Boolean?>]`: Option to hide the self-service password reset (SSPR) hyperlinks such as 'Can't access your account?', 'Forgot my password' and 'Reset it now' on the sign-in form.
-  - `[HideCannotAccessYourAccount <Boolean?>]`: Option to hide the self-service password reset (SSPR) 'Can't access your account?' hyperlink on the sign-in form.
-  - `[HideForgotMyPassword <Boolean?>]`: Option to hide the self-service password reset (SSPR) 'Forgot my password' hyperlink on the sign-in form.
-  - `[HidePrivacyAndCookies <Boolean?>]`: Option to hide the 'Privacy & Cookies' hyperlink in the footer.
-  - `[HideResetItNow <Boolean?>]`: Option to hide the self-service password reset (SSPR) 'reset it now' hyperlink on the sign-in form.
-  - `[HideTermsOfUse <Boolean?>]`: Option to hide the 'Terms of Use' hyperlink in the footer.
+LOGINPAGETEXTVISIBILITYSETTINGS \<IMicrosoftGraphLoginPageTextVisibilitySettings\>: loginPageTextVisibilitySettings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[HideAccountResetCredentials \<Boolean?\>\]: Option to hide the self-service password reset (SSPR) hyperlinks such as 'Can't access your account?', 'Forgot my password' and 'Reset it now' on the sign-in form.
+  \[HideCannotAccessYourAccount \<Boolean?\>\]: Option to hide the self-service password reset (SSPR) 'Can't access your account?' hyperlink on the sign-in form.
+  \[HideForgotMyPassword \<Boolean?\>\]: Option to hide the self-service password reset (SSPR) 'Forgot my password' hyperlink on the sign-in form.
+  \[HidePrivacyAndCookies \<Boolean?\>\]: Option to hide the 'Privacy & Cookies' hyperlink in the footer.
+  \[HideResetItNow \<Boolean?\>\]: Option to hide the self-service password reset (SSPR) 'reset it now' hyperlink on the sign-in form.
+  \[HideTermsOfUse \<Boolean?\>\]: Option to hide the 'Terms of Use' hyperlink in the footer.
 
 ## RELATED LINKS
-
 [New-MgBetaOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaOrganizationBrandingLocalization?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgorganizationbrandinglocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgorganizationbrandinglocalization)
+

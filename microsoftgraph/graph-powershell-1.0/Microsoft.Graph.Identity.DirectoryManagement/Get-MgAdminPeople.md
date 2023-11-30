@@ -22,8 +22,6 @@ Get-MgAdminPeople [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonPa
 ## DESCRIPTION
 Get people from admin
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -66,9 +64,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPeopleAdminSettings
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
-
 [Get-MgBetaAdminPeople](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaAdminPeople?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgadminpeople](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgadminpeople)
+
 

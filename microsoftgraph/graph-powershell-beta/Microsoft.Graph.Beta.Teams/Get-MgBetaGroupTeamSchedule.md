@@ -13,7 +13,7 @@ The schedule creation process conforms to the One API guideline for resource bas
 During schedule provisioning, clients can use the GET method to get the schedule and look at the provisionStatus property for the current state of the provisioning.
 If the provisioning failed, clients can get additional information from the provisionStatusCode property.
 Clients can also inspect the configuration of the schedule.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamSchedule](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamSchedule?view=graph-powershell-1.0)
@@ -38,7 +38,9 @@ The schedule creation process conforms to the One API guideline for resource bas
 During schedule provisioning, clients can use the GET method to get the schedule and look at the provisionStatus property for the current state of the provisioning.
 If the provisioning failed, clients can get additional information from the provisionStatusCode property.
 Clients can also inspect the configuration of the schedule.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -162,5 +164,4 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Get-MgGroupTeamSchedule](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamSchedule?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamschedule)
-
 

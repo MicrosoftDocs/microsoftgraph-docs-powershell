@@ -1,15 +1,15 @@
 ---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermailfoldermessageextension
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermailfoldermessagerule
 schema: 2.0.0
+ms.prod: outlook
 ---
 
-# Remove-MgUserMailFolderMessageExtension
+# Remove-MgUserMailFolderMessageRule
 
 ## SYNOPSIS
-Delete an open extension (openTypeExtension object) from the specified instance of a resource.
-For the list of resources that support open extensions, see the table in the Permissions section.
+Delete the specified messageRule object.
 This API is available in the following national cloud deployments.
 
 > [!NOTE]
@@ -19,19 +19,18 @@ This API is available in the following national cloud deployments.
 
 ### Delete (Default)
 ```
-Remove-MgUserMailFolderMessageExtension -ExtensionId <String> -MailFolderId <String> -MessageId <String>
- -UserId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgUserMailFolderMessageRule -MailFolderId <String> -MessageRuleId <String> -UserId <String>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgUserMailFolderMessageExtension -InputObject <IMailIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
+Remove-MgUserMailFolderMessageRule -InputObject <IMailIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete an open extension (openTypeExtension object) from the specified instance of a resource.
-For the list of resources that support open extensions, see the table in the Permissions section.
+Delete the specified messageRule object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
@@ -49,21 +48,6 @@ To learn about permissions for this resource, see the [permissions reference](/g
 
 
 ## PARAMETERS
-
-### -ExtensionId
-The unique identifier of extension
-
-```yaml
-Type: String
-Parameter Sets: Delete
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -IfMatch
 ETag
@@ -111,8 +95,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -MessageId
-The unique identifier of message
+### -MessageRuleId
+The unique identifier of messageRule
 
 ```yaml
 Type: String
@@ -136,7 +120,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -197,24 +181,23 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`INPUTOBJECT <IMailIdentity>`: Identity Parameter
-  - `[AttachmentId <String>]`: The unique identifier of attachment
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[InferenceClassificationOverrideId <String>]`: The unique identifier of inferenceClassificationOverride
-  - `[MailFolderId <String>]`: The unique identifier of mailFolder
-  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
-  - `[MessageId <String>]`: The unique identifier of message
-  - `[MessageRuleId <String>]`: The unique identifier of messageRule
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IMailIdentity\>: Identity Parameter
+  \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[InferenceClassificationOverrideId \<String\>\]: The unique identifier of inferenceClassificationOverride
+  \[MailFolderId \<String\>\]: The unique identifier of mailFolder
+  \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
+  \[MessageId \<String\>\]: The unique identifier of message
+  \[MessageRuleId \<String\>\]: The unique identifier of messageRule
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-
 [Remove-MgBetaUserMailFolderMessageRule](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMailFolderMessageRule?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermailfoldermessagerule](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermailfoldermessagerule)
+

@@ -30,8 +30,6 @@ Get-MgExternalConnectionItemActivityPerformedBy -InputObject <ISearchIdentity> [
 ## DESCRIPTION
 Represents an identity used to identify who is responsible for the activity.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -135,23 +133,22 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsIdentity
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`INPUTOBJECT <ISearchIdentity>`: Identity Parameter
-  - `[ConnectionOperationId <String>]`: The unique identifier of connectionOperation
-  - `[ExternalActivityId <String>]`: The unique identifier of externalActivity
-  - `[ExternalConnectionId <String>]`: The unique identifier of externalConnection
-  - `[ExternalGroupId <String>]`: The unique identifier of externalGroup
-  - `[ExternalItemId <String>]`: The unique identifier of externalItem
-  - `[IdentityId <String>]`: The unique identifier of identity
+INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
+  \[ConnectionOperationId \<String\>\]: The unique identifier of connectionOperation
+  \[ExternalActivityId \<String\>\]: The unique identifier of externalActivity
+  \[ExternalConnectionId \<String\>\]: The unique identifier of externalConnection
+  \[ExternalGroupId \<String\>\]: The unique identifier of externalGroup
+  \[ExternalItemId \<String\>\]: The unique identifier of externalItem
+  \[IdentityId \<String\>\]: The unique identifier of identity
 
 ## RELATED LINKS
-
 [Get-MgBetaExternalConnectionItemActivityPerformedBy](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionItemActivityPerformedBy?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectionitemactivityperformedby](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectionitemactivityperformedby)
+
 

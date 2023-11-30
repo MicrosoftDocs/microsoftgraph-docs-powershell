@@ -633,7 +633,7 @@ Supports $filter (eq, not, ge, le, startsWith, /$count eq 0, /$count ne 0).
 Supports $filter (eq, not, for isResolved and serviceInstance).
     \[CreatedDateTime \<DateTime?\>\]: The date and time at which the error occurred.
     \[IsResolved \<Boolean?\>\]: Indicates whether the Error has been attended to.
-    \[ServiceInstance \<String\>\]: Qualified service instance (e.g., 'SharePoint/Dublin') that published the service error information.
+    \[ServiceInstance \<String\>\]: Qualified service instance (for example, 'SharePoint/Dublin') that published the service error information.
   \[Surname \<String\>\]: Last name for this organizational contact.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq for null values)
   \[TransitiveMemberOf \<IMicrosoftGraphDirectoryObject\[\]\>\]: 
@@ -660,6 +660,7 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[ContractId \<String\>\]: The unique identifier of contract
   \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
   \[DeviceId \<String\>\]: The unique identifier of device
+  \[DeviceLocalCredentialInfoId \<String\>\]: The unique identifier of deviceLocalCredentialInfo
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[DirectoryRoleId \<String\>\]: The unique identifier of directoryRole
   \[DirectoryRoleTemplateId \<String\>\]: The unique identifier of directoryRoleTemplate
@@ -731,7 +732,7 @@ SERVICEPROVISIONINGERRORS \<IMicrosoftGraphServiceProvisioningError\[\]\>: Error
 Supports $filter (eq, not, for isResolved and serviceInstance).
   \[CreatedDateTime \<DateTime?\>\]: The date and time at which the error occurred.
   \[IsResolved \<Boolean?\>\]: Indicates whether the Error has been attended to.
-  \[ServiceInstance \<String\>\]: Qualified service instance (e.g., 'SharePoint/Dublin') that published the service error information.
+  \[ServiceInstance \<String\>\]: Qualified service instance (for example, 'SharePoint/Dublin') that published the service error information.
 
 TRANSITIVEMEMBEROF \<IMicrosoftGraphDirectoryObject\[\]\>: .
   \[Id \<String\>\]: The unique identifier for an entity.

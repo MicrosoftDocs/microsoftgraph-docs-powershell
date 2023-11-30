@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorysetting
 schema: 2.0.0
+ms.prod: groups
 ---
 
 # New-MgBetaDirectorySetting
@@ -12,6 +13,7 @@ Create a new setting based on the templates available in directorySettingTemplat
 These settings can be at the tenant-level or at the group level.
 Group settings apply to only Microsoft 365 groups.
 The template named Group.Unified can be used to configure tenant-wide Microsoft 365 group settings, while the template named Group.Unified.Guest can be used to configure group-specific settings.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -32,6 +34,7 @@ Create a new setting based on the templates available in directorySettingTemplat
 These settings can be at the tenant-level or at the group level.
 Group settings apply to only Microsoft 365 groups.
 The template named Group.Unified can be used to configure tenant-wide Microsoft 365 group settings, while the template named Group.Unified.Guest can be used to configure group-specific settings.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaDirectorySetting Cmdlet

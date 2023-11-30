@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/add-mgbetateamprimarychannelmember
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # Add-MgBetaTeamPrimaryChannelMember
@@ -10,7 +11,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Add-MgTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Teams/Add-MgTeamPrimaryChannelMember?view=graph-powershell-1.0)
@@ -46,7 +47,9 @@ Add-MgBetaTeamPrimaryChannelMember -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -245,5 +248,4 @@ This property is settable only for members of a chat.
 [Add-MgTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Teams/Add-MgTeamPrimaryChannelMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/add-mgbetateamprimarychannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/add-mgbetateamprimarychannelmember)
-
 

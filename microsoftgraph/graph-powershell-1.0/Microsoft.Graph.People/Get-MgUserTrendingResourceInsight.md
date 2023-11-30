@@ -27,8 +27,6 @@ Get-MgUserTrendingResourceInsight -InputObject <IPeopleIdentity> [-ExpandPropert
 ## DESCRIPTION
 Used for navigating to the trending document.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -117,19 +115,20 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.String
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`INPUTOBJECT <IPeopleIdentity>`: Identity Parameter
-  - `[PersonId <String>]`: The unique identifier of person
-  - `[SharedInsightId <String>]`: The unique identifier of sharedInsight
-  - `[TrendingId <String>]`: The unique identifier of trending
-  - `[UsedInsightId <String>]`: The unique identifier of usedInsight
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IPeopleIdentity\>: Identity Parameter
+  \[PersonId \<String\>\]: The unique identifier of person
+  \[SharedInsightId \<String\>\]: The unique identifier of sharedInsight
+  \[TrendingId \<String\>\]: The unique identifier of trending
+  \[UsedInsightId \<String\>\]: The unique identifier of usedInsight
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mgusertrendingresourceinsight](https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mgusertrendingresourceinsight)
+
+

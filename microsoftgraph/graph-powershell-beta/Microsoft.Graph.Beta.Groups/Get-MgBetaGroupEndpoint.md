@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupendpoint
 schema: 2.0.0
+ms.prod: groups
+ms.prod: groups
 ---
 
 # Get-MgBetaGroupEndpoint
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a specific endpoint object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -33,6 +36,7 @@ Get-MgBetaGroupEndpoint -InputObject <IGroupsIdentity> [-ExpandProperty <String[
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a specific endpoint object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaGroupEndpoint Cmdlet

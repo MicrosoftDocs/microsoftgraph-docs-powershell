@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouplifecyclepolicy
 schema: 2.0.0
+ms.prod: groups
+ms.prod: groups
 ---
 
 # Get-MgBetaGroupLifecyclePolicy
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a groupLifecyclePolicies object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupLifecyclePolicy?view=graph-powershell-1.0)
@@ -48,6 +51,7 @@ Get-MgBetaGroupLifecyclePolicy -InputObject <IGroupsIdentity> [-ExpandProperty <
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a groupLifecyclePolicies object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

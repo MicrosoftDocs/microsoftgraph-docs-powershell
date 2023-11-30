@@ -8,7 +8,8 @@ schema: 2.0.0
 # Connect-MgGraph
 
 ## SYNOPSIS
-Microsoft Graph PowerShell supports two types of authentication: delegated and app-only access. There are a number of cmdlets that can be used to manage the different parameters required during authentication, for example, environment, application ID, and certificate.
+Microsoft Graph PowerShell supports two types of authentication: delegated and app-only access.
+There are a number of cmdlets that can be used to manage the different parameters required during authentication, for example, environment, application ID, and certificate.
 
 ## SYNTAX
 
@@ -51,85 +52,88 @@ Connect-MgGraph [-ContextScope <ContextScope>] [-Environment <String>] [-ClientT
 ```
 
 ## DESCRIPTION
-You must invoke Connect-MgGraph before any commands that access Microsoft Graph. This cmdlet gets the access token using the Microsoft Authentication Library
+You must invoke Connect-MgGraph before any commands that access Microsoft Graph.
+This cmdlet gets the access token using the Microsoft Authentication Library
 
 ## EXAMPLES
 
 ### Example 1: Delegated access: Using interactive authentication, where you provide the scopes that you require during your session
-```powershell
+```
 PS C:\> Connect-MgGraph -Scopes "User.Read.All", "Group.ReadWrite.All"
 ```
 
 This example shows how to authenticate to graph with scopes.
 
 ### Example 2: Delegated access: Using device code flow
-```powershell
+```
 PS C:\> Connect-MgGraph -Scopes "User.Read.All", "Group.ReadWrite.All" -UseDeviceAuthentication
 ```
 
 This example shows how to authenticate to graph with scopes and device.
 
 ### Example 3: Delegated access: Using your own access token
-```powershell
+```
 PS C:\> Connect-MgGraph -AccessToken $AccessToken
 ```
 
 This example shows how to authenticate to graph using an access token.
 
 ### Example 4: Delegated access: custom application for Microsoft Graph PowerShell
-```powershell
+```
 PS C:\> Connect-MgGraph -ClientId <YOUR_NEW_APP_ID> -TenantId <YOUR_TENANT_ID>
 ```
 
-Follow this [link](https://learn.microsoft.com/en-us/powershell/microsoftgraph/authentication-commands?view=graph-powershell-1.0#using-connect-mggraph) for more information on the steps for creating custom applications.
+Follow this link (https://learn.microsoft.com/en-us/powershell/microsoftgraph/authentication-commands?view=graph-powershell-1.0#using-connect-mggraph)for more information on the steps for creating custom applications.
 
 ### Example 5: App-only access: Using client credential with a certificate - Certificate Thumbprint
-```powershell
+```
 PS C:\> Connect-MgGraph -ClientId "YOUR_APP_ID" -TenantId "YOUR_TENANT_ID" -CertificateThumbprint "YOUR_CERT_THUMBPRINT"
 ```
 
-Follow this [link](https://learn.microsoft.com/en-us/powershell/microsoftgraph/authentication-commands?view=graph-powershell-1.0#using-connect-mggraph) for more information on how to load the certificate.
+Follow this link (https://learn.microsoft.com/en-us/powershell/microsoftgraph/authentication-commands?view=graph-powershell-1.0#using-connect-mggraph)for more information on how to load the certificate.
 
 ### Example 6: App-only access: Using client credential with a certificate - Certificate name
-```powershell
+```
 PS C:\> Connect-MgGraph -ClientId "YOUR_APP_ID" -TenantId "YOUR_TENANT_ID" -CertificateName "YOUR_CERT_SUBJECT"
 ```
 
-Follow this [link](https://learn.microsoft.com/en-us/powershell/microsoftgraph/authentication-commands?view=graph-powershell-1.0#using-connect-mggraph) for more information on how to load the certificate.
+Follow this link (https://learn.microsoft.com/en-us/powershell/microsoftgraph/authentication-commands?view=graph-powershell-1.0#using-connect-mggraph)for more information on how to load the certificate.
 
 ### Example 7: App-only access: Using client credential with a certificate - Certificate
-```powershell
+```
 PS C:\> $Cert = Get-ChildItem Cert:\LocalMachine\My\$CertThumbprint
 PS C:\> Connect-MgGraph -ClientId "YOUR_APP_ID" -TenantId "YOUR_TENANT_ID" -Certificate $Cert
 ```
 
-Follow this [link](https://learn.microsoft.com/en-us/powershell/microsoftgraph/authentication-commands?view=graph-powershell-1.0#using-connect-mggraph) for more information on how to load the certificate.
+Follow this link (https://learn.microsoft.com/en-us/powershell/microsoftgraph/authentication-commands?view=graph-powershell-1.0#using-connect-mggraph)for more information on how to load the certificate.
 
 ### Example 8: Using client secret credentials
-```powershell
+```
 PS C:\> $ClientSecretCredential = Get-Credential -Credential "Client_Id"
 # Enter client_secret in the password prompt.
 PS C:\> Connect-MgGraph -TenantId "Tenant_Id" -ClientSecretCredential $ClientSecretCredential
 ```
 
-This authentication method is ideal for background interactions. It does not require a user to physically sign in.
+This authentication method is ideal for background interactions.
+It does not require a user to physically sign in.
 
 ### Example 9: Using managed identity: System-assigned managed identity
-```powershell
+```
 PS C:\> Connect-MgGraph -Identity
 ```
 
-Uses an automatically managed identity on a service instance. The identity is tied to the lifecycle of a service instance.
+Uses an automatically managed identity on a service instance.
+The identity is tied to the lifecycle of a service instance.
 
 ### Example 10: Using managed identity: User-assigned managed identity
-```powershell
+```
 PS C:\> Connect-MgGraph -Identity -ClientId "User_Assigned_Managed_identity_Client_Id"
 ```
 
 Uses a user created managed identity as a standalone Azure resource.
 
 ### Example 11: Connecting to an environment or cloud
-```powershell
+```
 PS C:\> Get-MgEnvironment
 Name     AzureADEndpoint                   GraphEndpoint                           Type
 ----     ---------------                   -------------                           ----
@@ -140,10 +144,11 @@ USGovDoD https://login.microsoftonline.us  https://dod-graph.microsoft.us       
 PS C:\> Connect-MgGraph -Environment USGov
 ```
 
-When you use Connect-MgGraph, you can choose to target other environments. By default, Connect-MgGraph targets the global public cloud.
+When you use Connect-MgGraph, you can choose to target other environments.
+By default, Connect-MgGraph targets the global public cloud.
 
 ### Example 12: Connecting to an environment as a different identity
-```powershell
+```
 PS C:\> Connect-MgGraph -ContextScope Process
 ```
 
@@ -316,7 +321,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -331,7 +336,7 @@ Aliases: ManagedIdentity, ManagedServiceIdentity, MSI
 
 Required: False
 Position: 1
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -346,7 +351,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -394,7 +399,7 @@ Aliases: UseDeviceAuthentication, DeviceCode, DeviceAuth, Device
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -405,13 +410,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### None
-
 ## OUTPUTS
 
 ### System.Object
 ## NOTES
 
 ## RELATED LINKS
-
-[https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/connect-mggraph](https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/connect-mggraph)
-

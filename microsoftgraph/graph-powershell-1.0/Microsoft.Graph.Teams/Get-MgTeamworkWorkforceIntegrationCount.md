@@ -22,8 +22,6 @@ Get-MgTeamworkWorkforceIntegrationCount [-Filter <String>] [-Search <String>] [<
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Filter
@@ -66,9 +64,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.Int32
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
-
 [Get-MgBetaTeamworkWorkforceIntegrationCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamworkWorkforceIntegrationCount?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkworkforceintegrationcount](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkworkforceintegrationcount)
+
 

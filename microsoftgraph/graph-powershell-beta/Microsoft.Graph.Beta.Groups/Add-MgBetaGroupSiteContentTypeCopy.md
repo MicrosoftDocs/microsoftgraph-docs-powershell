@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/add-mgbetagroupsitecontenttypecopy
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Add-MgBetaGroupSiteContentTypeCopy
 
 ## SYNOPSIS
-Add a copy of a \[content type\]\[contentType\] from a \[site\]\[site\] to a \[list\]\[list\].
+Add a copy of a content type\]\[contentType\] from a \[site\]\[site\] to a \[list\]\[list\].
+This API is available in the following \[national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Add-MgGroupSiteContentTypeCopy](/powershell/module/Microsoft.Graph.Groups/Add-MgGroupSiteContentTypeCopy?view=graph-powershell-1.0)
@@ -42,7 +44,10 @@ Add-MgBetaGroupSiteContentTypeCopy -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Add a copy of a \[content type\]\[contentType\] from a \[site\]\[site\] to a \[list\]\[list\].
+Add a copy of a content type\]\[contentType\] from a \[site\]\[site\] to a \[list\]\[list\].
+This API is available in the following \[national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -236,5 +241,4 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Add-MgGroupSiteContentTypeCopy](/powershell/module/Microsoft.Graph.Groups/Add-MgGroupSiteContentTypeCopy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/add-mgbetagroupsitecontenttypecopy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/add-mgbetagroupsitecontenttypecopy)
-
 

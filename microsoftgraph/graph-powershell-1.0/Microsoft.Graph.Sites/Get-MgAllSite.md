@@ -23,8 +23,6 @@ Get-MgAllSite [-Count] [-Filter <String>] [-Property <String[]>] [-Search <Strin
 ## DESCRIPTION
 Invoke function getAllSites
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Count
@@ -37,7 +35,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -112,7 +110,7 @@ Aliases: Limit
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -127,7 +125,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -142,9 +140,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSite
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
-
 [Get-MgBetaAllSite](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaAllSite?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgallsite](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgallsite)
+
 

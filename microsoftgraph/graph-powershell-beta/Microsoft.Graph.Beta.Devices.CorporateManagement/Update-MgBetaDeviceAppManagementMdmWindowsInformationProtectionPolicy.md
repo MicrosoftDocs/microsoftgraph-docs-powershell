@@ -131,7 +131,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -291,7 +291,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -376,7 +376,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -425,7 +425,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -456,7 +456,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -487,7 +487,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -580,7 +580,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -597,7 +597,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -706,163 +706,177 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMdmWindowsInformationProtectionPolicy
 ## NOTES
-
-ALIASES
-
-Update-MgBetaDeviceAppMgtMdmWindowInformationProtectionPolicy
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+ASSIGNMENTS \<IMicrosoftGraphTargetedManagedAppPolicyAssignment\[\]\>: Navigation property to list of security groups targeted for policy.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[Source \<DeviceAndAppManagementAssignmentSource?\>\]: Represents source of assignment.
+  \[SourceId \<String\>\]: Identifier for resource used for deployment to a group
+  \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DeviceAndAppManagementAssignmentFilterId \<String\>\]: The Id of the filter for the target assignment.
+    \[DeviceAndAppManagementAssignmentFilterType \<DeviceAndAppManagementAssignmentFilterType?\>\]: Represents type of the assignment filter.
 
-`ASSIGNMENTS <IMicrosoftGraphTargetedManagedAppPolicyAssignment[]>`: Navigation property to list of security groups targeted for policy.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
-  - `[SourceId <String>]`: Identifier for resource used for deployment to a group
-  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-    - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
+DATARECOVERYCERTIFICATE \<IMicrosoftGraphWindowsInformationProtectionDataRecoveryCertificate\>: Windows Information Protection DataRecoveryCertificate
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Certificate \<Byte\[\]\>\]: Data recovery Certificate
+  \[Description \<String\>\]: Data recovery Certificate description
+  \[ExpirationDateTime \<DateTime?\>\]: Data recovery Certificate expiration datetime
+  \[SubjectName \<String\>\]: Data recovery Certificate subject name
 
-`DATARECOVERYCERTIFICATE <IMicrosoftGraphWindowsInformationProtectionDataRecoveryCertificate>`: Windows Information Protection DataRecoveryCertificate
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Certificate <Byte[]>]`: Data recovery Certificate
-  - `[Description <String>]`: Data recovery Certificate description
-  - `[ExpirationDateTime <DateTime?>]`: Data recovery Certificate expiration datetime
-  - `[SubjectName <String>]`: Data recovery Certificate subject name
+ENTERPRISEINTERNALPROXYSERVERS \<IMicrosoftGraphWindowsInformationProtectionResourceCollection\[\]\>: This is the comma-separated list of internal proxy servers.
+For example, '157.54.14.28, 157.54.11.118, 10.202.14.167, 157.53.14.163, 157.69.210.59'.
+These proxies have been configured by the admin to connect to specific resources on the Internet.
+They are considered to be enterprise network locations.
+The proxies are only leveraged in configuring the EnterpriseProxiedDomains policy to force traffic to the matched domains through these proxies
+  \[DisplayName \<String\>\]: Display name
+  \[Resources \<String\[\]\>\]: Collection of resources
 
-`ENTERPRISEINTERNALPROXYSERVERS <IMicrosoftGraphWindowsInformationProtectionResourceCollection[]>`: This is the comma-separated list of internal proxy servers. For example, '157.54.14.28, 157.54.11.118, 10.202.14.167, 157.53.14.163, 157.69.210.59'. These proxies have been configured by the admin to connect to specific resources on the Internet. They are considered to be enterprise network locations. The proxies are only leveraged in configuring the EnterpriseProxiedDomains policy to force traffic to the matched domains through these proxies
-  - `[DisplayName <String>]`: Display name
-  - `[Resources <String[]>]`: Collection of resources
+ENTERPRISEIPRANGES \<IMicrosoftGraphWindowsInformationProtectionIPRangeCollection\[\]\>: Sets the enterprise IP ranges that define the computers in the enterprise network.
+Data that comes from those computers will be considered part of the enterprise and protected.
+These locations will be considered a safe destination for enterprise data to be shared to
+  \[DisplayName \<String\>\]: Display name
+  \[Ranges \<IMicrosoftGraphIPRange\[\]\>\]: Collection of ip ranges
 
-`ENTERPRISEIPRANGES <IMicrosoftGraphWindowsInformationProtectionIPRangeCollection[]>`: Sets the enterprise IP ranges that define the computers in the enterprise network. Data that comes from those computers will be considered part of the enterprise and protected. These locations will be considered a safe destination for enterprise data to be shared to
-  - `[DisplayName <String>]`: Display name
-  - `[Ranges <IMicrosoftGraphIPRange[]>]`: Collection of ip ranges
+ENTERPRISENETWORKDOMAINNAMES \<IMicrosoftGraphWindowsInformationProtectionResourceCollection\[\]\>: This is the list of domains that comprise the boundaries of the enterprise.
+Data from one of these domains that is sent to a device will be considered enterprise data and protected These locations will be considered a safe destination for enterprise data to be shared to
+  \[DisplayName \<String\>\]: Display name
+  \[Resources \<String\[\]\>\]: Collection of resources
 
-`ENTERPRISENETWORKDOMAINNAMES <IMicrosoftGraphWindowsInformationProtectionResourceCollection[]>`: This is the list of domains that comprise the boundaries of the enterprise. Data from one of these domains that is sent to a device will be considered enterprise data and protected These locations will be considered a safe destination for enterprise data to be shared to
-  - `[DisplayName <String>]`: Display name
-  - `[Resources <String[]>]`: Collection of resources
+ENTERPRISEPROTECTEDDOMAINNAMES \<IMicrosoftGraphWindowsInformationProtectionResourceCollection\[\]\>: List of enterprise domains to be protected
+  \[DisplayName \<String\>\]: Display name
+  \[Resources \<String\[\]\>\]: Collection of resources
 
-`ENTERPRISEPROTECTEDDOMAINNAMES <IMicrosoftGraphWindowsInformationProtectionResourceCollection[]>`: List of enterprise domains to be protected
-  - `[DisplayName <String>]`: Display name
-  - `[Resources <String[]>]`: Collection of resources
+ENTERPRISEPROXIEDDOMAINS \<IMicrosoftGraphWindowsInformationProtectionProxiedDomainCollection\[\]\>: Contains a list of Enterprise resource domains hosted in the cloud that need to be protected.
+Connections to these resources are considered enterprise data.
+If a proxy is paired with a cloud resource, traffic to the cloud resource will be routed through the enterprise network via the denoted proxy server (on Port 80).
+A proxy server used for this purpose must also be configured using the EnterpriseInternalProxyServers policy
+  \[DisplayName \<String\>\]: Display name
+  \[ProxiedDomains \<IMicrosoftGraphProxiedDomain\[\]\>\]: Collection of proxied domains
+    \[IPAddressOrFqdn \<String\>\]: The IP address or FQDN
+    \[Proxy \<String\>\]: Proxy IP or FQDN
 
-`ENTERPRISEPROXIEDDOMAINS <IMicrosoftGraphWindowsInformationProtectionProxiedDomainCollection[]>`: Contains a list of Enterprise resource domains hosted in the cloud that need to be protected. Connections to these resources are considered enterprise data. If a proxy is paired with a cloud resource, traffic to the cloud resource will be routed through the enterprise network via the denoted proxy server (on Port 80). A proxy server used for this purpose must also be configured using the EnterpriseInternalProxyServers policy
-  - `[DisplayName <String>]`: Display name
-  - `[ProxiedDomains <IMicrosoftGraphProxiedDomain[]>]`: Collection of proxied domains
-    - `[IPAddressOrFqdn <String>]`: The IP address or FQDN
-    - `[Proxy <String>]`: Proxy IP or FQDN
+ENTERPRISEPROXYSERVERS \<IMicrosoftGraphWindowsInformationProtectionResourceCollection\[\]\>: This is a list of proxy servers.
+Any server not on this list is considered non-enterprise
+  \[DisplayName \<String\>\]: Display name
+  \[Resources \<String\[\]\>\]: Collection of resources
 
-`ENTERPRISEPROXYSERVERS <IMicrosoftGraphWindowsInformationProtectionResourceCollection[]>`: This is a list of proxy servers. Any server not on this list is considered non-enterprise
-  - `[DisplayName <String>]`: Display name
-  - `[Resources <String[]>]`: Collection of resources
+EXEMPTAPPLOCKERFILES \<IMicrosoftGraphWindowsInformationProtectionAppLockerFile\[\]\>: Another way to input exempt apps through xml files
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[DisplayName \<String\>\]: The friendly name
+  \[File \<Byte\[\]\>\]: File as a byte array
+  \[FileHash \<String\>\]: SHA256 hash of the file
+  \[Version \<String\>\]: Version of the entity.
 
-`EXEMPTAPPLOCKERFILES <IMicrosoftGraphWindowsInformationProtectionAppLockerFile[]>`: Another way to input exempt apps through xml files
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[DisplayName <String>]`: The friendly name
-  - `[File <Byte[]>]`: File as a byte array
-  - `[FileHash <String>]`: SHA256 hash of the file
-  - `[Version <String>]`: Version of the entity.
+EXEMPTAPPS \<IMicrosoftGraphWindowsInformationProtectionApp\[\]\>: Exempt applications can also access enterprise data, but the data handled by those applications are not protected.
+This is because some critical enterprise applications may have compatibility problems with encrypted data.
+  \[Denied \<Boolean?\>\]: If true, app is denied protection or exemption.
+  \[Description \<String\>\]: The app's description.
+  \[DisplayName \<String\>\]: App display name.
+  \[ProductName \<String\>\]: The product name.
+  \[PublisherName \<String\>\]: The publisher name
 
-`EXEMPTAPPS <IMicrosoftGraphWindowsInformationProtectionApp[]>`: Exempt applications can also access enterprise data, but the data handled by those applications are not protected. This is because some critical enterprise applications may have compatibility problems with encrypted data.
-  - `[Denied <Boolean?>]`: If true, app is denied protection or exemption.
-  - `[Description <String>]`: The app's description.
-  - `[DisplayName <String>]`: App display name.
-  - `[ProductName <String>]`: The product name.
-  - `[PublisherName <String>]`: The publisher name
+INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
+  \[AndroidManagedAppProtectionId \<String\>\]: The unique identifier of androidManagedAppProtection
+  \[AppLogCollectionRequestId \<String\>\]: The unique identifier of appLogCollectionRequest
+  \[AssignmentFilterEvaluationStatusDetailsId \<String\>\]: The unique identifier of assignmentFilterEvaluationStatusDetails
+  \[BundleId \<String\>\]: Usage: bundleId='{bundleId}'
+  \[DefaultManagedAppProtectionId \<String\>\]: The unique identifier of defaultManagedAppProtection
+  \[DetectedAppId \<String\>\]: The unique identifier of detectedApp
+  \[DeviceAppManagementTaskId \<String\>\]: The unique identifier of deviceAppManagementTask
+  \[DeviceCompliancePolicyStateId \<String\>\]: The unique identifier of deviceCompliancePolicyState
+  \[DeviceConfigurationStateId \<String\>\]: The unique identifier of deviceConfigurationState
+  \[DeviceEnrollmentConfigurationId \<String\>\]: The unique identifier of deviceEnrollmentConfiguration
+  \[DeviceId \<String\>\]: Property in multi-part unique identifier of deviceHealthScriptPolicyState
+  \[DeviceInstallStateId \<String\>\]: The unique identifier of deviceInstallState
+  \[DeviceLogCollectionResponseId \<String\>\]: The unique identifier of deviceLogCollectionResponse
+  \[DeviceManagementConfigurationSettingDefinitionId \<String\>\]: The unique identifier of deviceManagementConfigurationSettingDefinition
+  \[DeviceManagementConfigurationSettingId \<String\>\]: The unique identifier of deviceManagementConfigurationSetting
+  \[DeviceManagementTroubleshootingEventId \<String\>\]: The unique identifier of deviceManagementTroubleshootingEvent
+  \[EnrollmentConfigurationAssignmentId \<String\>\]: The unique identifier of enrollmentConfigurationAssignment
+  \[EnterpriseCodeSigningCertificateId \<String\>\]: The unique identifier of enterpriseCodeSigningCertificate
+  \[Id \<String\>\]: Property in multi-part unique identifier of deviceHealthScriptPolicyState
+  \[IosLobAppProvisioningConfigurationAssignmentId \<String\>\]: The unique identifier of iosLobAppProvisioningConfigurationAssignment
+  \[IosLobAppProvisioningConfigurationId \<String\>\]: The unique identifier of iosLobAppProvisioningConfiguration
+  \[IosManagedAppProtectionId \<String\>\]: The unique identifier of iosManagedAppProtection
+  \[IosVppAppAssignedLicenseId \<String\>\]: The unique identifier of iosVppAppAssignedLicense
+  \[ManagedAppOperationId \<String\>\]: The unique identifier of managedAppOperation
+  \[ManagedAppPolicyId \<String\>\]: The unique identifier of managedAppPolicy
+  \[ManagedAppRegistrationId \<String\>\]: The unique identifier of managedAppRegistration
+  \[ManagedAppStatusId \<String\>\]: The unique identifier of managedAppStatus
+  \[ManagedDeviceId \<String\>\]: The unique identifier of managedDevice
+  \[ManagedDeviceMobileAppConfigurationAssignmentId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationAssignment
+  \[ManagedDeviceMobileAppConfigurationDeviceStatusId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationDeviceStatus
+  \[ManagedDeviceMobileAppConfigurationId \<String\>\]: The unique identifier of managedDeviceMobileAppConfiguration
+  \[ManagedDeviceMobileAppConfigurationStateId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationState
+  \[ManagedDeviceMobileAppConfigurationUserStatusId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationUserStatus
+  \[ManagedEBookAssignmentId \<String\>\]: The unique identifier of managedEBookAssignment
+  \[ManagedEBookCategoryId \<String\>\]: The unique identifier of managedEBookCategory
+  \[ManagedEBookId \<String\>\]: The unique identifier of managedEBook
+  \[ManagedMobileAppId \<String\>\]: The unique identifier of managedMobileApp
+  \[MdmWindowsInformationProtectionPolicyId \<String\>\]: The unique identifier of mdmWindowsInformationProtectionPolicy
+  \[MobileAppAssignmentId \<String\>\]: The unique identifier of mobileAppAssignment
+  \[MobileAppCategoryId \<String\>\]: The unique identifier of mobileAppCategory
+  \[MobileAppContentFileId \<String\>\]: The unique identifier of mobileAppContentFile
+  \[MobileAppContentId \<String\>\]: The unique identifier of mobileAppContent
+  \[MobileAppId \<String\>\]: The unique identifier of mobileApp
+  \[MobileAppIntentAndStateId \<String\>\]: The unique identifier of mobileAppIntentAndState
+  \[MobileAppProvisioningConfigGroupAssignmentId \<String\>\]: The unique identifier of mobileAppProvisioningConfigGroupAssignment
+  \[MobileAppRelationshipId \<String\>\]: The unique identifier of mobileAppRelationship
+  \[MobileAppTroubleshootingEventId \<String\>\]: The unique identifier of mobileAppTroubleshootingEvent
+  \[MobileContainedAppId \<String\>\]: The unique identifier of mobileContainedApp
+  \[PolicyId \<String\>\]: Property in multi-part unique identifier of deviceHealthScriptPolicyState
+  \[PolicySetAssignmentId \<String\>\]: The unique identifier of policySetAssignment
+  \[PolicySetId \<String\>\]: The unique identifier of policySet
+  \[PolicySetItemId \<String\>\]: The unique identifier of policySetItem
+  \[SecurityBaselineSettingStateId \<String\>\]: The unique identifier of securityBaselineSettingState
+  \[SecurityBaselineStateId \<String\>\]: The unique identifier of securityBaselineState
+  \[TargetedManagedAppConfigurationId \<String\>\]: The unique identifier of targetedManagedAppConfiguration
+  \[TargetedManagedAppPolicyAssignmentId \<String\>\]: The unique identifier of targetedManagedAppPolicyAssignment
+  \[UserId \<String\>\]: The unique identifier of user
+  \[UserInstallStateSummaryId \<String\>\]: The unique identifier of userInstallStateSummary
+  \[VppTokenId \<String\>\]: The unique identifier of vppToken
+  \[WindowsDefenderApplicationControlSupplementalPolicyAssignmentId \<String\>\]: The unique identifier of windowsDefenderApplicationControlSupplementalPolicyAssignment
+  \[WindowsDefenderApplicationControlSupplementalPolicyDeploymentStatusId \<String\>\]: The unique identifier of windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
+  \[WindowsDefenderApplicationControlSupplementalPolicyId \<String\>\]: The unique identifier of windowsDefenderApplicationControlSupplementalPolicy
+  \[WindowsDeviceMalwareStateId \<String\>\]: The unique identifier of windowsDeviceMalwareState
+  \[WindowsInformationProtectionAppLockerFileId \<String\>\]: The unique identifier of windowsInformationProtectionAppLockerFile
+  \[WindowsInformationProtectionDeviceRegistrationId \<String\>\]: The unique identifier of windowsInformationProtectionDeviceRegistration
+  \[WindowsInformationProtectionPolicyId \<String\>\]: The unique identifier of windowsInformationProtectionPolicy
+  \[WindowsInformationProtectionWipeActionId \<String\>\]: The unique identifier of windowsInformationProtectionWipeAction
+  \[WindowsManagedAppProtectionId \<String\>\]: The unique identifier of windowsManagedAppProtection
 
-`INPUTOBJECT <IDevicesCorporateManagementIdentity>`: Identity Parameter
-  - `[AndroidManagedAppProtectionId <String>]`: The unique identifier of androidManagedAppProtection
-  - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
-  - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: The unique identifier of assignmentFilterEvaluationStatusDetails
-  - `[BundleId <String>]`: Usage: bundleId='{bundleId}'
-  - `[DefaultManagedAppProtectionId <String>]`: The unique identifier of defaultManagedAppProtection
-  - `[DetectedAppId <String>]`: The unique identifier of detectedApp
-  - `[DeviceAppManagementTaskId <String>]`: The unique identifier of deviceAppManagementTask
-  - `[DeviceCompliancePolicyStateId <String>]`: The unique identifier of deviceCompliancePolicyState
-  - `[DeviceConfigurationStateId <String>]`: The unique identifier of deviceConfigurationState
-  - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
-  - `[DeviceId <String>]`: Property in multi-part unique identifier of deviceHealthScriptPolicyState
-  - `[DeviceInstallStateId <String>]`: The unique identifier of deviceInstallState
-  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
-  - `[DeviceManagementConfigurationSettingDefinitionId <String>]`: The unique identifier of deviceManagementConfigurationSettingDefinition
-  - `[DeviceManagementConfigurationSettingId <String>]`: The unique identifier of deviceManagementConfigurationSetting
-  - `[DeviceManagementTroubleshootingEventId <String>]`: The unique identifier of deviceManagementTroubleshootingEvent
-  - `[EnrollmentConfigurationAssignmentId <String>]`: The unique identifier of enrollmentConfigurationAssignment
-  - `[EnterpriseCodeSigningCertificateId <String>]`: The unique identifier of enterpriseCodeSigningCertificate
-  - `[Id <String>]`: Property in multi-part unique identifier of deviceHealthScriptPolicyState
-  - `[IosLobAppProvisioningConfigurationAssignmentId <String>]`: The unique identifier of iosLobAppProvisioningConfigurationAssignment
-  - `[IosLobAppProvisioningConfigurationId <String>]`: The unique identifier of iosLobAppProvisioningConfiguration
-  - `[IosManagedAppProtectionId <String>]`: The unique identifier of iosManagedAppProtection
-  - `[ManagedAppOperationId <String>]`: The unique identifier of managedAppOperation
-  - `[ManagedAppPolicyId <String>]`: The unique identifier of managedAppPolicy
-  - `[ManagedAppRegistrationId <String>]`: The unique identifier of managedAppRegistration
-  - `[ManagedAppStatusId <String>]`: The unique identifier of managedAppStatus
-  - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
-  - `[ManagedDeviceMobileAppConfigurationAssignmentId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationAssignment
-  - `[ManagedDeviceMobileAppConfigurationDeviceStatusId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationDeviceStatus
-  - `[ManagedDeviceMobileAppConfigurationId <String>]`: The unique identifier of managedDeviceMobileAppConfiguration
-  - `[ManagedDeviceMobileAppConfigurationStateId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationState
-  - `[ManagedDeviceMobileAppConfigurationUserStatusId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationUserStatus
-  - `[ManagedEBookAssignmentId <String>]`: The unique identifier of managedEBookAssignment
-  - `[ManagedEBookCategoryId <String>]`: The unique identifier of managedEBookCategory
-  - `[ManagedEBookId <String>]`: The unique identifier of managedEBook
-  - `[ManagedMobileAppId <String>]`: The unique identifier of managedMobileApp
-  - `[MdmWindowsInformationProtectionPolicyId <String>]`: The unique identifier of mdmWindowsInformationProtectionPolicy
-  - `[MobileAppAssignmentId <String>]`: The unique identifier of mobileAppAssignment
-  - `[MobileAppCategoryId <String>]`: The unique identifier of mobileAppCategory
-  - `[MobileAppId <String>]`: The unique identifier of mobileApp
-  - `[MobileAppIntentAndStateId <String>]`: The unique identifier of mobileAppIntentAndState
-  - `[MobileAppProvisioningConfigGroupAssignmentId <String>]`: The unique identifier of mobileAppProvisioningConfigGroupAssignment
-  - `[MobileAppRelationshipId <String>]`: The unique identifier of mobileAppRelationship
-  - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
-  - `[PolicyId <String>]`: Property in multi-part unique identifier of deviceHealthScriptPolicyState
-  - `[PolicySetAssignmentId <String>]`: The unique identifier of policySetAssignment
-  - `[PolicySetId <String>]`: The unique identifier of policySet
-  - `[PolicySetItemId <String>]`: The unique identifier of policySetItem
-  - `[SecurityBaselineSettingStateId <String>]`: The unique identifier of securityBaselineSettingState
-  - `[SecurityBaselineStateId <String>]`: The unique identifier of securityBaselineState
-  - `[TargetedManagedAppConfigurationId <String>]`: The unique identifier of targetedManagedAppConfiguration
-  - `[TargetedManagedAppPolicyAssignmentId <String>]`: The unique identifier of targetedManagedAppPolicyAssignment
-  - `[UserId <String>]`: The unique identifier of user
-  - `[UserInstallStateSummaryId <String>]`: The unique identifier of userInstallStateSummary
-  - `[VppTokenId <String>]`: The unique identifier of vppToken
-  - `[WindowsDefenderApplicationControlSupplementalPolicyAssignmentId <String>]`: The unique identifier of windowsDefenderApplicationControlSupplementalPolicyAssignment
-  - `[WindowsDefenderApplicationControlSupplementalPolicyDeploymentStatusId <String>]`: The unique identifier of windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
-  - `[WindowsDefenderApplicationControlSupplementalPolicyId <String>]`: The unique identifier of windowsDefenderApplicationControlSupplementalPolicy
-  - `[WindowsDeviceMalwareStateId <String>]`: The unique identifier of windowsDeviceMalwareState
-  - `[WindowsInformationProtectionAppLockerFileId <String>]`: The unique identifier of windowsInformationProtectionAppLockerFile
-  - `[WindowsInformationProtectionDeviceRegistrationId <String>]`: The unique identifier of windowsInformationProtectionDeviceRegistration
-  - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
-  - `[WindowsInformationProtectionWipeActionId <String>]`: The unique identifier of windowsInformationProtectionWipeAction
-  - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
+NEUTRALDOMAINRESOURCES \<IMicrosoftGraphWindowsInformationProtectionResourceCollection\[\]\>: List of domain names that can used for work or personal resource
+  \[DisplayName \<String\>\]: Display name
+  \[Resources \<String\[\]\>\]: Collection of resources
 
-`NEUTRALDOMAINRESOURCES <IMicrosoftGraphWindowsInformationProtectionResourceCollection[]>`: List of domain names that can used for work or personal resource
-  - `[DisplayName <String>]`: Display name
-  - `[Resources <String[]>]`: Collection of resources
+PROTECTEDAPPLOCKERFILES \<IMicrosoftGraphWindowsInformationProtectionAppLockerFile\[\]\>: Another way to input protected apps through xml files
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[DisplayName \<String\>\]: The friendly name
+  \[File \<Byte\[\]\>\]: File as a byte array
+  \[FileHash \<String\>\]: SHA256 hash of the file
+  \[Version \<String\>\]: Version of the entity.
 
-`PROTECTEDAPPLOCKERFILES <IMicrosoftGraphWindowsInformationProtectionAppLockerFile[]>`: Another way to input protected apps through xml files
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[DisplayName <String>]`: The friendly name
-  - `[File <Byte[]>]`: File as a byte array
-  - `[FileHash <String>]`: SHA256 hash of the file
-  - `[Version <String>]`: Version of the entity.
+PROTECTEDAPPS \<IMicrosoftGraphWindowsInformationProtectionApp\[\]\>: Protected applications can access enterprise data and the data handled by those applications are protected with encryption
+  \[Denied \<Boolean?\>\]: If true, app is denied protection or exemption.
+  \[Description \<String\>\]: The app's description.
+  \[DisplayName \<String\>\]: App display name.
+  \[ProductName \<String\>\]: The product name.
+  \[PublisherName \<String\>\]: The publisher name
 
-`PROTECTEDAPPS <IMicrosoftGraphWindowsInformationProtectionApp[]>`: Protected applications can access enterprise data and the data handled by those applications are protected with encryption
-  - `[Denied <Boolean?>]`: If true, app is denied protection or exemption.
-  - `[Description <String>]`: The app's description.
-  - `[DisplayName <String>]`: App display name.
-  - `[ProductName <String>]`: The product name.
-  - `[PublisherName <String>]`: The publisher name
-
-`SMBAUTOENCRYPTEDFILEEXTENSIONS <IMicrosoftGraphWindowsInformationProtectionResourceCollection[]>`: Specifies a list of file extensions, so that files with these extensions are encrypted when copying from an SMB share within the corporate boundary
-  - `[DisplayName <String>]`: Display name
-  - `[Resources <String[]>]`: Collection of resources
+SMBAUTOENCRYPTEDFILEEXTENSIONS \<IMicrosoftGraphWindowsInformationProtectionResourceCollection\[\]\>: Specifies a list of file extensions, so that files with these extensions are encrypted when copying from an SMB share within the corporate boundary
+  \[DisplayName \<String\>\]: Display name
+  \[Resources \<String\[\]\>\]: Collection of resources
 
 ## RELATED LINKS
 [Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy?view=graph-powershell-1.0)
 
-## RELATED LINKS
-[Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy?view=graph-powershell-1.0)
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmdmwindowsinformationprotectionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmdmwindowsinformationprotectionpolicy)
+
 

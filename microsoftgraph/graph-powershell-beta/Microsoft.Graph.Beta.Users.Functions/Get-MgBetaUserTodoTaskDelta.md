@@ -13,12 +13,6 @@ Invoke function delta
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserTodoTaskDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserTodoTaskDelta?view=graph-powershell-1.0)
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserTodoTaskDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserTodoTaskDelta?view=graph-powershell-1.0)
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserTodoTaskDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserTodoTaskDelta?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Delta (Default)
@@ -37,8 +31,6 @@ Get-MgBetaUserTodoTaskDelta -InputObject <IUsersFunctionsIdentity> [-Filter <Str
 ## DESCRIPTION
 Invoke function delta
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -51,7 +43,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -66,7 +58,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -128,7 +120,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -203,7 +195,7 @@ Aliases: Limit
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -233,7 +225,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -248,57 +240,53 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTodoTask
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`INPUTOBJECT <IUsersFunctionsIdentity>`: Identity Parameter
-  - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
-  - `[AppConsentRequestId <String>]`: The unique identifier of appConsentRequest
-  - `[CalendarId <String>]`: The unique identifier of calendar
-  - `[ChatId <String>]`: The unique identifier of chat
-  - `[ChatMessageId <String>]`: The unique identifier of chatMessage
-  - `[CloudPcId <String>]`: The unique identifier of cloudPC
-  - `[ContactFolderId <String>]`: The unique identifier of contactFolder
-  - `[ContactFolderId1 <String>]`: The unique identifier of contactFolder
-  - `[ContentTypeId <String>]`: The unique identifier of contentType
-  - `[DriveId <String>]`: The unique identifier of drive
-  - `[DriveItemId <String>]`: The unique identifier of driveItem
-  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
-  - `[EventId <String>]`: The unique identifier of event
-  - `[GroupId <String>]`: Usage: groupId='{groupId}'
-  - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
-  - `[Interval <String>]`: Usage: interval='{interval}'
-  - `[ListItemId <String>]`: The unique identifier of listItem
-  - `[MailFolderId <String>]`: The unique identifier of mailFolder
-  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
-  - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
-  - `[On <String>]`: Usage: on='{on}'
-  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
-  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
-  - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
-  - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
-  - `[Q <String>]`: Usage: q='{q}'
-  - `[RoomList <String>]`: Usage: RoomList='{RoomList}'
-  - `[ServicePlanId <String>]`: Usage: servicePlanId='{servicePlanId}'
-  - `[Skip <Int32?>]`: Usage: skip={skip}
-  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[TimeZoneStandard <String>]`: Usage: TimeZoneStandard='{TimeZoneStandard}'
-  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
-  - `[Token <String>]`: Usage: token='{token}'
-  - `[Top <Int32?>]`: Usage: top={top}
-  - `[Upn <String>]`: Usage: upn='{upn}'
-  - `[User <String>]`: Usage: User='{User}'
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
+  \[AccessReviewInstanceId \<String\>\]: The unique identifier of accessReviewInstance
+  \[AppConsentRequestId \<String\>\]: The unique identifier of appConsentRequest
+  \[CalendarId \<String\>\]: The unique identifier of calendar
+  \[ChatId \<String\>\]: The unique identifier of chat
+  \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
+  \[CloudPcId \<String\>\]: The unique identifier of cloudPC
+  \[ContactFolderId \<String\>\]: The unique identifier of contactFolder
+  \[ContactFolderId1 \<String\>\]: The unique identifier of contactFolder
+  \[ContentTypeId \<String\>\]: The unique identifier of contentType
+  \[DriveId \<String\>\]: The unique identifier of drive
+  \[DriveItemId \<String\>\]: The unique identifier of driveItem
+  \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
+  \[EventId \<String\>\]: The unique identifier of event
+  \[GroupId \<String\>\]: Usage: groupId='{groupId}'
+  \[IncludePersonalNotebooks \<Boolean?\>\]: Usage: includePersonalNotebooks={includePersonalNotebooks}
+  \[Interval \<String\>\]: Usage: interval='{interval}'
+  \[ListItemId \<String\>\]: The unique identifier of listItem
+  \[MailFolderId \<String\>\]: The unique identifier of mailFolder
+  \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
+  \[ManagedDeviceId \<String\>\]: The unique identifier of managedDevice
+  \[On \<String\>\]: Usage: on='{on}'
+  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
+  \[PlannerBucketId \<String\>\]: The unique identifier of plannerBucket
+  \[PlannerPlanId \<String\>\]: The unique identifier of plannerPlan
+  \[Q \<String\>\]: Usage: q='{q}'
+  \[RoomList \<String\>\]: Usage: RoomList='{RoomList}'
+  \[ServicePlanId \<String\>\]: Usage: servicePlanId='{servicePlanId}'
+  \[Skip \<Int32?\>\]: Usage: skip={skip}
+  \[StartDateTime \<String\>\]: Usage: startDateTime='{startDateTime}'
+  \[TimeZoneStandard \<String\>\]: Usage: TimeZoneStandard='{TimeZoneStandard}'
+  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
+  \[Token \<String\>\]: Usage: token='{token}'
+  \[Top \<Int32?\>\]: Usage: top={top}
+  \[Upn \<String\>\]: Usage: upn='{upn}'
+  \[User \<String\>\]: Usage: User='{User}'
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 [Get-MgUserTodoTaskDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserTodoTaskDelta?view=graph-powershell-1.0)
 
-[Get-MgUserTodoTaskDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserTodoTaskDelta?view=graph-powershell-1.0)
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausertodotaskdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausertodotaskdelta)
 
-[Get-MgUserTodoTaskDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserTodoTaskDelta?view=graph-powershell-1.0)
 

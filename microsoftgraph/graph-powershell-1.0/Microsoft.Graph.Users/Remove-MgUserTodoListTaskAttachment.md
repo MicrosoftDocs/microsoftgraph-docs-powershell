@@ -1,14 +1,16 @@
 ---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolistextension
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolisttaskattachment
 schema: 2.0.0
+ms.prod: outlook
 ---
 
-# Remove-MgUserTodoListExtension
+# Remove-MgUserTodoListTaskAttachment
 
 ## SYNOPSIS
-Delete navigation property extensions for users
+Delete a taskFileAttachment object from a todoTask resource.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserTodoListTaskAttachment](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserTodoListTaskAttachment?view=graph-powershell-beta)
@@ -17,18 +19,19 @@ Delete navigation property extensions for users
 
 ### Delete (Default)
 ```
-Remove-MgUserTodoListExtension -ExtensionId <String> -TodoTaskListId <String> -UserId <String>
- [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgUserTodoListTaskAttachment -AttachmentBaseId <String> -TodoTaskId <String> -TodoTaskListId <String>
+ -UserId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgUserTodoListExtension -InputObject <IUsersIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
+Remove-MgUserTodoListTaskAttachment -InputObject <IUsersIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete navigation property extensions for users
+Delete a taskFileAttachment object from a todoTask resource.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -46,8 +49,8 @@ To learn about permissions for this resource, see the [permissions reference](/g
 
 ## PARAMETERS
 
-### -ExtensionId
-The unique identifier of extension
+### -AttachmentBaseId
+The unique identifier of attachmentBase
 
 ```yaml
 Type: String
@@ -101,6 +104,21 @@ Parameter Sets: (All)
 Aliases:
 
 Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TodoTaskId
+The unique identifier of todoTask
+
+```yaml
+Type: String
+Parameter Sets: Delete
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -178,29 +196,28 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`INPUTOBJECT <IUsersIdentity>`: Identity Parameter
-  - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
-  - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession
-  - `[ChecklistItemId <String>]`: The unique identifier of checklistItem
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
-  - `[LinkedResourceId <String>]`: The unique identifier of linkedResource
-  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
-  - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
-  - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[TodoTaskId <String>]`: The unique identifier of todoTask
-  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
+  \[AttachmentBaseId \<String\>\]: The unique identifier of attachmentBase
+  \[AttachmentSessionId \<String\>\]: The unique identifier of attachmentSession
+  \[ChecklistItemId \<String\>\]: The unique identifier of checklistItem
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[LicenseDetailsId \<String\>\]: The unique identifier of licenseDetails
+  \[LinkedResourceId \<String\>\]: The unique identifier of linkedResource
+  \[OAuth2PermissionGrantId \<String\>\]: The unique identifier of oAuth2PermissionGrant
+  \[OutlookCategoryId \<String\>\]: The unique identifier of outlookCategory
+  \[ProfilePhotoId \<String\>\]: The unique identifier of profilePhoto
+  \[TodoTaskId \<String\>\]: The unique identifier of todoTask
+  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-
 [Remove-MgBetaUserTodoListTaskAttachment](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserTodoListTaskAttachment?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolisttaskattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolisttaskattachment)
+

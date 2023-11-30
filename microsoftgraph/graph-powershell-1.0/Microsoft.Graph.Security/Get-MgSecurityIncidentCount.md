@@ -22,8 +22,6 @@ Get-MgSecurityIncidentCount [-Filter <String>] [-Search <String>] [<CommonParame
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Filter
@@ -66,9 +64,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.Int32
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
-
 [Get-MgBetaSecurityIncidentCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityIncidentCount?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityincidentcount](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityincidentcount)
+
 

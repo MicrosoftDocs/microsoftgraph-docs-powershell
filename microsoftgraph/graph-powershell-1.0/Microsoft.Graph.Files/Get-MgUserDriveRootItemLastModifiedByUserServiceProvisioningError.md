@@ -13,12 +13,6 @@ Get serviceProvisioningErrors property value
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserDriveRootItemLastModifiedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootItemLastModifiedByUserServiceProvisioningError?view=graph-powershell-beta)
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveRootItemLastModifiedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootItemLastModifiedByUserServiceProvisioningError?view=graph-powershell-beta)
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveRootItemLastModifiedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootItemLastModifiedByUserServiceProvisioningError?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
@@ -29,8 +23,6 @@ Get-MgUserDriveRootItemLastModifiedByUserServiceProvisioningError -DriveId <Stri
 
 ## DESCRIPTION
 Get serviceProvisioningErrors property value
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -44,7 +36,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -120,7 +112,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -180,7 +172,7 @@ Aliases: Limit
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -210,7 +202,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -225,12 +217,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServiceProvisioningError
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
 [Get-MgBetaUserDriveRootItemLastModifiedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootItemLastModifiedByUserServiceProvisioningError?view=graph-powershell-beta)
 
-[Get-MgBetaUserDriveRootItemLastModifiedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootItemLastModifiedByUserServiceProvisioningError?view=graph-powershell-beta)
+[https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootitemlastmodifiedbyuserserviceprovisioningerror](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootitemlastmodifiedbyuserserviceprovisioningerror)
 
-[Get-MgBetaUserDriveRootItemLastModifiedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootItemLastModifiedByUserServiceProvisioningError?view=graph-powershell-beta)
 

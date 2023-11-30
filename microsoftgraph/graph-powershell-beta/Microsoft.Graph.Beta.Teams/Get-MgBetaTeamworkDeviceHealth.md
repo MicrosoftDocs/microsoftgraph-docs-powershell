@@ -10,7 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the health details of a Microsoft Teams-enabled device.
 Device health is calculated based on the device configuration and other device parameters.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Get-MgBetaTeamworkDeviceHealth -InputObject <ITeamsIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 Get the health details of a Microsoft Teams-enabled device.
 Device health is calculated based on the device configuration and other device parameters.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaTeamworkDeviceHealth Cmdlet

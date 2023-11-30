@@ -10,7 +10,7 @@ ms.prod: education
 
 ## SYNOPSIS
 Get the educationUser resources associated with an educationSchool.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationSchoolUserByRef](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchoolUserByRef?view=graph-powershell-beta)
@@ -25,7 +25,7 @@ Get-MgEducationSchoolUserByRef -EducationSchoolId <String> [-Filter <String>] [-
 
 ## DESCRIPTION
 Get the educationUser resources associated with an educationSchool.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
@@ -41,7 +41,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -102,7 +102,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -147,7 +147,7 @@ Aliases: Limit
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -162,7 +162,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -177,7 +177,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.String
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
 [Get-MgBetaEducationSchoolUserByRef](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchoolUserByRef?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationschooluserbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationschooluserbyref)
+

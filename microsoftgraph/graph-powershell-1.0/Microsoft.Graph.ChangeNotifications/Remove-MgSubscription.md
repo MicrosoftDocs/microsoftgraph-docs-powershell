@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.ChangeNotifications-help.xml
 Module Name: Microsoft.Graph.ChangeNotifications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/remove-mgsubscription
 schema: 2.0.0
+ms.prod: change-notifications
 ---
 
 # Remove-MgSubscription
@@ -90,7 +91,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -151,16 +152,16 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`INPUTOBJECT <IChangeNotificationsIdentity>`: Identity Parameter
-  - `[SubscriptionId <String>]`: The unique identifier of subscription
+INPUTOBJECT \<IChangeNotificationsIdentity\>: Identity Parameter
+  \[SubscriptionId \<String\>\]: The unique identifier of subscription
 
 ## RELATED LINKS
 [Remove-MgBetaSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/Remove-MgBetaSubscription?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/remove-mgsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/remove-mgsubscription)
+

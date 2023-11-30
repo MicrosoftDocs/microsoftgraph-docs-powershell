@@ -23,7 +23,7 @@ Sets request context for Microsoft Graph invocations
 ## EXAMPLES
 
 ### Example 1: Set Http client timeout in seconds
-```powershell
+```
 PS C:\> Set-MgRequestContext -ClientTimeout 5
 ClientTimeout     RetryDelay                      MaxRetry                 RetriesTimeLimit
 -------------     ----------                      --------                 ----------------
@@ -33,7 +33,7 @@ ClientTimeout     RetryDelay                      MaxRetry                 Retri
 Sets Http client timeout in seconds.
 
 ### Example 2: Set the maximum time in seconds allowed for request retries
-```powershell
+```
 PS C:\> Set-MgRequestContext -RetriesTimeLimit 2
 ClientTimeout     RetryDelay                      MaxRetry                 RetriesTimeLimit
 -------------     ----------                      --------                 ----------------
@@ -43,7 +43,7 @@ ClientTimeout     RetryDelay                      MaxRetry                 Retri
 Sets the maximum time in seconds allowed for request retries.
 
 ### Example 3: Set the maximum number of retries for a request
-```powershell
+```
 PS C:\> Set-MgRequestContext -MaxRetry 2
 ClientTimeout     RetryDelay                      MaxRetry                 RetriesTimeLimit
 -------------     ----------                      --------                 ----------------
@@ -53,7 +53,7 @@ ClientTimeout     RetryDelay                      MaxRetry                 Retri
 Sets the maximum number of retries for a request.
 
 ### Example 4: Set the waiting time in seconds before retrying a request
-```powershell
+```
 PS C:\> Set-MgRequestContext -RetryDelay 3
 ClientTimeout     RetryDelay                      MaxRetry                 RetriesTimeLimit
 -------------     ----------                      --------                 ----------------
@@ -136,7 +136,7 @@ Aliases: cf
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -152,7 +152,7 @@ Aliases: wi
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

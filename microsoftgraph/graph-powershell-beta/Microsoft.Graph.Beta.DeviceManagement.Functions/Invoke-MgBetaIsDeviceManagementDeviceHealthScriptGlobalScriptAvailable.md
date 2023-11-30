@@ -31,7 +31,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.Beta.PowerShell.Support.GlobalDeviceHealthScriptState
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/invoke-mgbetaisdevicemanagementdevicehealthscriptglobalscriptavailable](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/invoke-mgbetaisdevicemanagementdevicehealthscriptglobalscriptavailable)
+
 

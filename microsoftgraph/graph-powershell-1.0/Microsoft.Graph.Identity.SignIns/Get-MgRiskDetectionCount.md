@@ -22,8 +22,6 @@ Get-MgRiskDetectionCount [-Filter <String>] [-Search <String>] [<CommonParameter
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Filter
@@ -66,9 +64,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.Int32
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
-
 [Get-MgBetaRiskDetectionCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaRiskDetectionCount?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgriskdetectioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgriskdetectioncount)
+
 

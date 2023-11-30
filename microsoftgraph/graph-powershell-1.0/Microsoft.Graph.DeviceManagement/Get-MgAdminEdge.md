@@ -66,8 +66,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdge
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
 [Get-MgBetaAdminEdge](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaAdminEdge?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgadminedge](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgadminedge)
+
 

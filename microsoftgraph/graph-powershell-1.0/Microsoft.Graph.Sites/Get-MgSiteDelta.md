@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function delta
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteDelta](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteDelta?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -19,8 +22,6 @@ Get-MgSiteDelta [-Filter <String>] [-Property <String[]>] [-Search <String>] [-S
 
 ## DESCRIPTION
 Invoke function delta
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -171,6 +172,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MgBetaSiteDelta](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteDelta?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitedelta](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitedelta)
 

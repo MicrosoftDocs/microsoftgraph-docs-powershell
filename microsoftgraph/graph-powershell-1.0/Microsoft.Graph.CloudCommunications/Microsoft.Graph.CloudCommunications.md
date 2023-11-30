@@ -1,495 +1,370 @@
 ---
 Module Name: Microsoft.Graph.CloudCommunications
-Module Guid: 46e177b5-2271-4c0d-a833-b5bdc9e437f9
-Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications
-Help Version: 1.0.0.0
+Module Guid: 2c67fc60-8c99-463f-9b0c-8a70e4623246
+Download Help Link: {{ Update Download Link }}
+Help Version: {{ Please enter version of help manually (X.X.X.X) format }}
 Locale: en-US
 ---
 
 # Microsoft.Graph.CloudCommunications Module
 ## Description
-Microsoft Graph PowerShell Cmdlets
+{{ Fill in the Description }}
 
 ## Microsoft.Graph.CloudCommunications Cmdlets
 ### [Add-MgCommunicationCallLargeGalleryView](Add-MgCommunicationCallLargeGalleryView.md)
-Add the large gallery view to a call.
-For details about how to identify a large gallery view participant in a roster so that you can retrieve the relevant data to subscribe to the video feed, see Identify large gallery view participants in a roster.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Clear-MgCommunicationPresence](Clear-MgCommunicationPresence.md)
-Clear the application's presence session for a user.
-If it is the user's only presence session, the user's presence will change to Offline/Offline.
-For details about presences sessions, see presence: setPresence.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Clear-MgCommunicationPresenceUserPreferredPresence](Clear-MgCommunicationPresenceUserPreferredPresence.md)
-Clear the preferred availability and activity status for a user.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgCommunicationCall](Get-MgCommunicationCall.md)
-Retrieve the properties and relationships of a call object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgCommunicationCallAudioRoutingGroup](Get-MgCommunicationCallAudioRoutingGroup.md)
-Retrieve the properties and relationships of an audioRoutingGroup object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgCommunicationCallAudioRoutingGroupCount](Get-MgCommunicationCallAudioRoutingGroupCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgCommunicationCallContentSharingSession](Get-MgCommunicationCallContentSharingSession.md)
-Retrieve the properties of a contentSharingSession object in a call.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgCommunicationCallContentSharingSessionCount](Get-MgCommunicationCallContentSharingSessionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgCommunicationCallCount](Get-MgCommunicationCallCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgCommunicationCallOperation](Get-MgCommunicationCallOperation.md)
-Get the status of an operation that adds the large gallery view to a call.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgCommunicationCallOperationCount](Get-MgCommunicationCallOperationCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgCommunicationCallParticipant](Get-MgCommunicationCallParticipant.md)
-Retrieve the properties and relationships of a participant object.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgCommunicationCallParticipantCount](Get-MgCommunicationCallParticipantCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgCommunicationCallRecord](Get-MgCommunicationCallRecord.md)
-Retrieve the properties and relationships of a callRecord object.
-There are two ways to get the id of a callRecord: You can use the $expand query parameter to optionally include session and segment details, as shown in the Get full details example.
-When you expand session details, the maximum page size is 60 sessions.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgCommunicationCallRecordCount](Get-MgCommunicationCallRecordCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgCommunicationCallRecordSession](Get-MgCommunicationCallRecordSession.md)
-List of sessions involved in the call.
-Peer-to-peer calls typically only have one session, whereas group calls typically have at least one session per participant.
-Read-only.
-Nullable.
+{{ Fill in the Description }}
 
 ### [Get-MgCommunicationCallRecordSessionCount](Get-MgCommunicationCallRecordSessionCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgCommunicationCallRecordSessionSegmentCount](Get-MgCommunicationCallRecordSessionSegmentCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgCommunicationOnlineMeeting](Get-MgCommunicationOnlineMeeting.md)
-Get onlineMeetings from communications
+{{ Fill in the Description }}
 
 ### [Get-MgCommunicationOnlineMeetingAttendanceReport](Get-MgCommunicationOnlineMeetingAttendanceReport.md)
-Get the meetingAttendanceReport for an onlineMeeting.
-Each time an online meeting ends, an attendance report will be generated for that session.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord](Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord.md)
-List of attendance records of an attendance report.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecordCount](Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecordCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgCommunicationOnlineMeetingAttendanceReportCount](Get-MgCommunicationOnlineMeetingAttendanceReportCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgCommunicationOnlineMeetingAttendeeReport](Get-MgCommunicationOnlineMeetingAttendeeReport.md)
-Get attendeeReport for the navigation property onlineMeetings from communications
+{{ Fill in the Description }}
 
 ### [Get-MgCommunicationOnlineMeetingCount](Get-MgCommunicationOnlineMeetingCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgCommunicationOnlineMeetingTranscript](Get-MgCommunicationOnlineMeetingTranscript.md)
-Retrieve a callTranscript object associated with a scheduled onlineMeeting.
-This API doesn't support getting call transcripts from channel meetings.
-Retrieving the transcript returns the metadata of the single transcript associated with the online meeting.
-Retrieving the content of the transcript returns the stream of text associated with the transcript.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgCommunicationOnlineMeetingTranscriptContent](Get-MgCommunicationOnlineMeetingTranscriptContent.md)
-The content of the transcript.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgCommunicationOnlineMeetingTranscriptCount](Get-MgCommunicationOnlineMeetingTranscriptCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgCommunicationOnlineMeetingTranscriptMetadataContent](Get-MgCommunicationOnlineMeetingTranscriptMetadataContent.md)
-The time-aligned metadata of the utterances in the transcript.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgCommunicationOnlineMeetingVirtualAppointmentJoinWebUrl](Get-MgCommunicationOnlineMeetingVirtualAppointmentJoinWebUrl.md)
-Invoke function getVirtualAppointmentJoinWebUrl
+{{ Fill in the Description }}
 
 ### [Get-MgCommunicationPresence](Get-MgCommunicationPresence.md)
-Get a user's presence information.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgCommunicationPresenceByUserId](Get-MgCommunicationPresenceByUserId.md)
-Get the presence information for multiple users.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgCommunicationPresenceCount](Get-MgCommunicationPresenceCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
-### [Get-MgCommunicationPresenceCount](Get-MgCommunicationPresenceCount.md)
-Get the number of the resource
+### [Get-MgUserOnlineMeeting](Get-MgUserOnlineMeeting.md)
+{{ Fill in the Description }}
 
-### [Get-MgCommunicationPresenceCount](Get-MgCommunicationPresenceCount.md)
-Get the number of the resource
+### [Get-MgUserOnlineMeetingAttendanceReport](Get-MgUserOnlineMeetingAttendanceReport.md)
+{{ Fill in the Description }}
 
-### [Get-MgCommunicationPresenceCount](Get-MgCommunicationPresenceCount.md)
-Get the number of the resource
+### [Get-MgUserOnlineMeetingAttendanceReportAttendanceRecord](Get-MgUserOnlineMeetingAttendanceReportAttendanceRecord.md)
+{{ Fill in the Description }}
 
 ### [Get-MgUserOnlineMeetingAttendanceReportAttendanceRecordCount](Get-MgUserOnlineMeetingAttendanceReportAttendanceRecordCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgUserOnlineMeetingAttendanceReportCount](Get-MgUserOnlineMeetingAttendanceReportCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
-### [Get-MgUserOnlineMeetingAttendanceReportCount](Get-MgUserOnlineMeetingAttendanceReportCount.md)
-Get the number of the resource
+### [Get-MgUserOnlineMeetingAttendeeReport](Get-MgUserOnlineMeetingAttendeeReport.md)
+{{ Fill in the Description }}
 
 ### [Get-MgUserOnlineMeetingCount](Get-MgUserOnlineMeetingCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgUserOnlineMeetingTranscript](Get-MgUserOnlineMeetingTranscript.md)
-Retrieve a callTranscript object associated with a scheduled onlineMeeting.
-This API doesn't support getting call transcripts from channel meetings.
-Retrieving the transcript returns the metadata of the single transcript associated with the online meeting.
-Retrieving the content of the transcript returns the stream of text associated with the transcript.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Get-MgUserOnlineMeetingTranscriptContent](Get-MgUserOnlineMeetingTranscriptContent.md)
-The content of the transcript.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Get-MgUserOnlineMeetingTranscriptCount](Get-MgUserOnlineMeetingTranscriptCount.md)
-Get the number of the resource
+{{ Fill in the Description }}
 
 ### [Get-MgUserOnlineMeetingTranscriptMetadataContent](Get-MgUserOnlineMeetingTranscriptMetadataContent.md)
-The time-aligned metadata of the utterances in the transcript.
-Read-only.
+{{ Fill in the Description }}
 
-### [Get-MgUserOnlineMeetingTranscriptMetadataContent](Get-MgUserOnlineMeetingTranscriptMetadataContent.md)
-The time-aligned metadata of the utterances in the transcript.
-Read-only.
+### [Get-MgUserPresence](Get-MgUserPresence.md)
+{{ Fill in the Description }}
 
 ### [Invoke-MgAnswerCommunicationCall](Invoke-MgAnswerCommunicationCall.md)
-Enable a bot to answer an incoming call.
-The incoming call request can be an invite from a participant in a group call or a peer-to-peer call.
-If an invite to a group call is received, the notification will contain the chatInfo and meetingInfo parameters.
-The bot is expected to answer, reject, or redirect the call before the call times out.
-The current timeout value is 15 seconds for regular scenarios, and 5 seconds for policy-based recording scenarios.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgCreateOrGetCommunicationOnlineMeeting](Invoke-MgCreateOrGetCommunicationOnlineMeeting.md)
-Create an onlineMeeting object with a custom specified external ID.
-If the external ID already exists, this API will return the onlineMeeting object with that external ID.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgInviteCommunicationCallParticipant](Invoke-MgInviteCommunicationCallParticipant.md)
-Delete a specific participant in a call.
-In some situations, it is appropriate for an application to remove a participant from an active call.
-This action can be done before or after the participant answers the call.
-When an active caller is removed, they are immediately dropped from the call with no pre- or post-removal notification.
-When an invited participant is removed, any outstanding add participant request is canceled.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgKeepCommunicationCallAlive](Invoke-MgKeepCommunicationCallAlive.md)
-Make a request to this API every 15 to 45 minutes to ensure that an ongoing call remains active.
-A call that does not receive this request within 45 minutes is considered inactive and will subsequently end.
-At least one successful request must be made within 45 minutes of the previous request, or the start of the call.
-We recommend that you send a request in shorter time intervals (every 15 minutes).
-Make sure that these requests are successful to prevent the call from timing out and ending.
-Attempting to send a request to a call that has already ended will result in a 404 Not-Found error.
-The resources related to the call should be cleaned up on the application side.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality](Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality.md)
-Log video teleconferencing device quality data.
-The Cloud Video Interop (CVI) bot represents video teleconferencing (VTC) devices and acts as a back-to-back agent for a VTC device in a conference call.
-Because a CVI bot is in the middle of the VTC and Microsoft Teams infrastructure as a VTC proxy, it has two media legs.
-One media leg is between the CVI bot and Teams infrastructure, such as Teams conference server or a Teams client.
-The other media leg is between the CVI bot and the VTC device.
-The third-party partners own the VTC media leg and the Teams infrastructure cannot access the quality data of the third-party call leg.
-This method is only for the CVI partners to provide their media quality data.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgMuteCommunicationCall](Invoke-MgMuteCommunicationCall.md)
-Allows the application to mute itself.
-This is a server mute, meaning that the server will drop all audio packets for this participant, even if the participant continues to stream audio.
-For more details about how to handle mute operations, see muteParticipantOperation This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgMuteCommunicationCallParticipant](Invoke-MgMuteCommunicationCallParticipant.md)
-Mute a specific participant in the call.
-This is a server mute, meaning that the server will drop all audio packets for this participant, even if the participant continues to stream audio.
-For more information about how to handle mute operations, see muteParticipantOperation.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgPlayCommunicationCallPrompt](Invoke-MgPlayCommunicationCallPrompt.md)
-Play a prompt in the call.
-For more information about how to handle operations, see commsOperation This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgRecordCommunicationCallResponse](Invoke-MgRecordCommunicationCallResponse.md)
-Records a short audio response from the caller.A bot can utilize this to capture a voice response from a caller after they are prompted for a response.
-For further information on how to handle operations, please review commsOperation This action is not intended to record the entire call.
-The maximum length of recording is 2 minutes.
-The recording is not saved permanently by the Cloud Communications Platform and is discarded shortly after the call ends.
-The bot must download the recording promptly after the recording operation finishes by using the recordingLocation value that's given in the completed notification.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgRedirectCommunicationCall](Invoke-MgRedirectCommunicationCall.md)
-Redirect an incoming call that hasn't been answered or rejected yet.
-The terms 'redirecting' and 'forwarding' a call are used interchangeably.
-The bot is expected to redirect the call before the call times out.
-The current timeout value is 15 seconds.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgRejectCommunicationCall](Invoke-MgRejectCommunicationCall.md)
-Enable a bot to reject an incoming call.
-The incoming call request can be an invite from a participant in a group call or a peer-to-peer call.
-If an invite to a group call is received, the notification will contain the chatInfo and meetingInfo parameters.
-The bot is expected to answer or reject the call before the call times out.
-The current timeout value is 15 seconds.
-This API does not end existing calls that have already been answered.
-Use delete call to end a call.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgSubscribeCommunicationCallToTone](Invoke-MgSubscribeCommunicationCallToTone.md)
-Subscribe to DTMF (dual-tone multi-frequency signaling) which allows you to be notified when the user presses keys on a 'dialpad'.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Invoke-MgUnmuteCommunicationCall](Invoke-MgUnmuteCommunicationCall.md)
-Allow the application to unmute itself.
-This is a server unmute, meaning that the server will start sending audio packets for this participant to other participants again.
-For more information about how to handle unmute operations, see unmuteParticipantOperation.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Move-MgCommunicationCall](Move-MgCommunicationCall.md)
-Transfer an active peer-to-peer call or group call.
-A consultative transfer means that the transferor can inform the person they want to transfer the call to (the transferee), before the transfer is made.
-This is opposed to transfering the call directly.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgCommunicationCall](New-MgCommunicationCall.md)
-Create call enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting.
-You will need to register the calling bot and go through the list of permissions needed as mentioned below.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgCommunicationCallAudioRoutingGroup](New-MgCommunicationCallAudioRoutingGroup.md)
-Create a new audioRoutingGroup.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [New-MgCommunicationCallContentSharingSession](New-MgCommunicationCallContentSharingSession.md)
-Create new navigation property to contentSharingSessions for communications
+{{ Fill in the Description }}
 
 ### [New-MgCommunicationCallOperation](New-MgCommunicationCallOperation.md)
-Create new navigation property to operations for communications
+{{ Fill in the Description }}
 
 ### [New-MgCommunicationCallParticipant](New-MgCommunicationCallParticipant.md)
-Create new navigation property to participants for communications
+{{ Fill in the Description }}
 
 ### [New-MgCommunicationCallRecordSession](New-MgCommunicationCallRecordSession.md)
-Create new navigation property to sessions for communications
+{{ Fill in the Description }}
 
-### [New-MgCommunicationCallRecordSession](New-MgCommunicationCallRecordSession.md)
-Create new navigation property to sessions for communications
+### [New-MgCommunicationOnlineMeeting](New-MgCommunicationOnlineMeeting.md)
+{{ Fill in the Description }}
 
 ### [New-MgCommunicationOnlineMeetingAttendanceReport](New-MgCommunicationOnlineMeetingAttendanceReport.md)
-Create new navigation property to attendanceReports for communications
+{{ Fill in the Description }}
 
 ### [New-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord](New-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord.md)
-Create new navigation property to attendanceRecords for communications
+{{ Fill in the Description }}
 
 ### [New-MgCommunicationOnlineMeetingTranscript](New-MgCommunicationOnlineMeetingTranscript.md)
-Create new navigation property to transcripts for communications
+{{ Fill in the Description }}
 
 ### [New-MgCommunicationPresence](New-MgCommunicationPresence.md)
-Create new navigation property to presences for communications
+{{ Fill in the Description }}
 
-### [New-MgCommunicationPresence](New-MgCommunicationPresence.md)
-Create new navigation property to presences for communications
+### [New-MgUserOnlineMeeting](New-MgUserOnlineMeeting.md)
+{{ Fill in the Description }}
 
 ### [New-MgUserOnlineMeetingAttendanceReport](New-MgUserOnlineMeetingAttendanceReport.md)
-Create new navigation property to attendanceReports for users
+{{ Fill in the Description }}
 
 ### [New-MgUserOnlineMeetingAttendanceReportAttendanceRecord](New-MgUserOnlineMeetingAttendanceReportAttendanceRecord.md)
-Create new navigation property to attendanceRecords for users
+{{ Fill in the Description }}
 
 ### [New-MgUserOnlineMeetingTranscript](New-MgUserOnlineMeetingTranscript.md)
-Create new navigation property to transcripts for users
+{{ Fill in the Description }}
 
 ### [Remove-MgCommunicationCall](Remove-MgCommunicationCall.md)
-Delete or hang up an active call.
-For group calls, this will only delete your call leg and the underlying group call will still continue.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgCommunicationCallAudioRoutingGroup](Remove-MgCommunicationCallAudioRoutingGroup.md)
-Delete the specified audioRoutingGroup.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgCommunicationCallContentSharingSession](Remove-MgCommunicationCallContentSharingSession.md)
-Delete navigation property contentSharingSessions for communications
+{{ Fill in the Description }}
 
 ### [Remove-MgCommunicationCallOperation](Remove-MgCommunicationCallOperation.md)
-Delete navigation property operations for communications
+{{ Fill in the Description }}
 
 ### [Remove-MgCommunicationCallParticipant](Remove-MgCommunicationCallParticipant.md)
-Delete a specific participant in a call.
-In some situations, it is appropriate for an application to remove a participant from an active call.
-This action can be done before or after the participant answers the call.
-When an active caller is removed, they are immediately dropped from the call with no pre- or post-removal notification.
-When an invited participant is removed, any outstanding add participant request is canceled.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Remove-MgCommunicationCallRecordSession](Remove-MgCommunicationCallRecordSession.md)
-Delete navigation property sessions for communications
+{{ Fill in the Description }}
 
 ### [Remove-MgCommunicationOnlineMeeting](Remove-MgCommunicationOnlineMeeting.md)
-Delete navigation property onlineMeetings for communications
+{{ Fill in the Description }}
 
 ### [Remove-MgCommunicationOnlineMeetingAttendanceReport](Remove-MgCommunicationOnlineMeetingAttendanceReport.md)
-Delete navigation property attendanceReports for communications
+{{ Fill in the Description }}
 
 ### [Remove-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord](Remove-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord.md)
-Delete navigation property attendanceRecords for communications
+{{ Fill in the Description }}
 
 ### [Remove-MgCommunicationOnlineMeetingTranscript](Remove-MgCommunicationOnlineMeetingTranscript.md)
-Delete navigation property transcripts for communications
+{{ Fill in the Description }}
 
 ### [Remove-MgCommunicationPresence](Remove-MgCommunicationPresence.md)
-Delete navigation property presences for communications
+{{ Fill in the Description }}
 
-### [Remove-MgCommunicationPresence](Remove-MgCommunicationPresence.md)
-Delete navigation property presences for communications
+### [Remove-MgUserOnlineMeeting](Remove-MgUserOnlineMeeting.md)
+{{ Fill in the Description }}
 
 ### [Remove-MgUserOnlineMeetingAttendanceReport](Remove-MgUserOnlineMeetingAttendanceReport.md)
-Delete navigation property attendanceReports for users
+{{ Fill in the Description }}
 
 ### [Remove-MgUserOnlineMeetingAttendanceReportAttendanceRecord](Remove-MgUserOnlineMeetingAttendanceReportAttendanceRecord.md)
-Delete navigation property attendanceRecords for users
+{{ Fill in the Description }}
 
 ### [Remove-MgUserOnlineMeetingTranscript](Remove-MgUserOnlineMeetingTranscript.md)
-Delete navigation property transcripts for users
+{{ Fill in the Description }}
 
-### [Remove-MgUserOnlineMeetingTranscript](Remove-MgUserOnlineMeetingTranscript.md)
-Delete navigation property transcripts for users
+### [Remove-MgUserPresence](Remove-MgUserPresence.md)
+{{ Fill in the Description }}
 
 ### [Rename-MgCommunicationCallScreenSharingRole](Rename-MgCommunicationCallScreenSharingRole.md)
-Allow applications to share screen content with the participants of a group call.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Set-MgCommunicationOnlineMeetingAttendeeReport](Set-MgCommunicationOnlineMeetingAttendeeReport.md)
-Update attendeeReport for the navigation property onlineMeetings in communications
+{{ Fill in the Description }}
 
 ### [Set-MgCommunicationOnlineMeetingTranscriptContent](Set-MgCommunicationOnlineMeetingTranscriptContent.md)
-The content of the transcript.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Set-MgCommunicationOnlineMeetingTranscriptMetadataContent](Set-MgCommunicationOnlineMeetingTranscriptMetadataContent.md)
-The time-aligned metadata of the utterances in the transcript.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Set-MgCommunicationPresence](Set-MgCommunicationPresence.md)
-Set the state of a user's presence session as an application.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Set-MgCommunicationPresenceStatusMessage](Set-MgCommunicationPresenceStatusMessage.md)
-Set a presence status message for a user.
-An optional expiration date and time can be supplied.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Set-MgCommunicationPresenceUserPreferredPresence](Set-MgCommunicationPresenceUserPreferredPresence.md)
-Set the preferred availability and activity status for a user.
-If the preferred presence of a user is set, the user's presence shows as the preferred status.
-Preferred presence takes effect only when at least one presence session exists for the user.
-Otherwise, the user's presence shows as Offline.
-A presence session is created as a result of a successful setPresence operation, or if the user is signed in on a Microsoft Teams client.
-For more details, see presence sessions and time-out and expiration.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Set-MgUserOnlineMeetingAttendeeReport](Set-MgUserOnlineMeetingAttendeeReport.md)
-Update attendeeReport for the navigation property onlineMeetings in users
+{{ Fill in the Description }}
 
 ### [Set-MgUserOnlineMeetingTranscriptContent](Set-MgUserOnlineMeetingTranscriptContent.md)
-The content of the transcript.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Set-MgUserOnlineMeetingTranscriptMetadataContent](Set-MgUserOnlineMeetingTranscriptMetadataContent.md)
-The time-aligned metadata of the utterances in the transcript.
-Read-only.
+{{ Fill in the Description }}
 
 ### [Start-MgCommunicationCallParticipantHoldMusic](Start-MgCommunicationCallParticipantHoldMusic.md)
-Put a participant on hold and play music in the background.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Stop-MgCommunicationCallMediaProcessing](Stop-MgCommunicationCallMediaProcessing.md)
-Cancels processing for any in-progress media operations.
-Media operations refer to the IVR operations playPrompt and recordResponse, which are by default queued to process in order.
-The cancelMediaProcessing method cancels any operation that is in-process as well as operations that are queued.
-For example, this method can be used to clean up the IVR operation queue for a new media operation.
-However, it will not cancel a subscribeToTone operation because it operates independent of any operation queue.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Stop-MgCommunicationCallParticipantHoldMusic](Stop-MgCommunicationCallParticipantHoldMusic.md)
-Reincorporate a participant previously put on hold to the call.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgCommunicationCallAudioRoutingGroup](Update-MgCommunicationCallAudioRoutingGroup.md)
-Modify sources and receivers of an audioRoutingGroup.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgCommunicationCallContentSharingSession](Update-MgCommunicationCallContentSharingSession.md)
-Update the navigation property contentSharingSessions in communications
+{{ Fill in the Description }}
 
 ### [Update-MgCommunicationCallOperation](Update-MgCommunicationCallOperation.md)
-Update the navigation property operations in communications
+{{ Fill in the Description }}
 
 ### [Update-MgCommunicationCallParticipant](Update-MgCommunicationCallParticipant.md)
-Update the navigation property participants in communications
+{{ Fill in the Description }}
 
 ### [Update-MgCommunicationCallRecordingStatus](Update-MgCommunicationCallRecordingStatus.md)
-Update the application's recording status associated with a call.
-This requires the use of the Teams policy-based recording solution.
-This API is available in the following national cloud deployments.
+{{ Fill in the Description }}
 
 ### [Update-MgCommunicationCallRecordSession](Update-MgCommunicationCallRecordSession.md)
-Update the navigation property sessions in communications
+{{ Fill in the Description }}
 
 ### [Update-MgCommunicationOnlineMeeting](Update-MgCommunicationOnlineMeeting.md)
-Update the navigation property onlineMeetings in communications
+{{ Fill in the Description }}
 
 ### [Update-MgCommunicationOnlineMeetingAttendanceReport](Update-MgCommunicationOnlineMeetingAttendanceReport.md)
-Update the navigation property attendanceReports in communications
+{{ Fill in the Description }}
 
 ### [Update-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord](Update-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord.md)
-Update the navigation property attendanceRecords in communications
+{{ Fill in the Description }}
 
 ### [Update-MgCommunicationOnlineMeetingTranscript](Update-MgCommunicationOnlineMeetingTranscript.md)
-Update the navigation property transcripts in communications
+{{ Fill in the Description }}
 
 ### [Update-MgCommunicationPresence](Update-MgCommunicationPresence.md)
-Update the navigation property presences in communications
+{{ Fill in the Description }}
 
-### [Update-MgCommunicationPresence](Update-MgCommunicationPresence.md)
-Update the navigation property presences in communications
+### [Update-MgUserOnlineMeeting](Update-MgUserOnlineMeeting.md)
+{{ Fill in the Description }}
 
 ### [Update-MgUserOnlineMeetingAttendanceReport](Update-MgUserOnlineMeetingAttendanceReport.md)
-Update the navigation property attendanceReports in users
+{{ Fill in the Description }}
 
 ### [Update-MgUserOnlineMeetingAttendanceReportAttendanceRecord](Update-MgUserOnlineMeetingAttendanceReportAttendanceRecord.md)
-Update the navigation property attendanceRecords in users
+{{ Fill in the Description }}
 
 ### [Update-MgUserOnlineMeetingTranscript](Update-MgUserOnlineMeetingTranscript.md)
-Update the navigation property transcripts in users
+{{ Fill in the Description }}
 
-### [Update-MgUserOnlineMeetingTranscript](Update-MgUserOnlineMeetingTranscript.md)
-Update the navigation property transcripts in users
+### [Update-MgUserPresence](Update-MgUserPresence.md)
+{{ Fill in the Description }}
 

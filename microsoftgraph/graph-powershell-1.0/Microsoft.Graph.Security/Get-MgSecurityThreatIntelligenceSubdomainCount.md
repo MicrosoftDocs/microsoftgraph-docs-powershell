@@ -22,8 +22,6 @@ Get-MgSecurityThreatIntelligenceSubdomainCount [-Filter <String>] [-Search <Stri
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Filter
@@ -66,9 +64,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.Int32
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
-
 [Get-MgBetaSecurityThreatIntelligenceSubdomainCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceSubdomainCount?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencesubdomaincount](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencesubdomaincount)
+
 

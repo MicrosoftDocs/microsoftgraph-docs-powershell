@@ -149,7 +149,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -164,7 +164,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -224,7 +224,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -270,27 +270,27 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBulkManagedDeviceActionResult
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`BODYPARAMETER <IPaths1R3Ij5LDevicemanagementManageddevicesMicrosoftGraphExecuteactionPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ActionName <ManagedDeviceRemoteAction?>]`: managedDeviceRemoteAction
-  - `[CarrierUrl <String>]`: 
-  - `[DeprovisionReason <String>]`: 
-  - `[DeviceIds <String[]>]`: 
-  - `[DeviceName <String>]`: 
-  - `[KeepEnrollmentData <Boolean?>]`: 
-  - `[KeepUserData <Boolean?>]`: 
-  - `[NotificationBody <String>]`: 
-  - `[NotificationTitle <String>]`: 
-  - `[OrganizationalUnitPath <String>]`: 
-  - `[PersistEsimDataPlan <Boolean?>]`: 
+BODYPARAMETER \<IPaths1R3Ij5LDevicemanagementManageddevicesMicrosoftGraphExecuteactionPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ActionName \<ManagedDeviceRemoteAction?\>\]: managedDeviceRemoteAction
+  \[CarrierUrl \<String\>\]: 
+  \[DeprovisionReason \<String\>\]: 
+  \[DeviceIds \<String\[\]\>\]: 
+  \[DeviceName \<String\>\]: 
+  \[KeepEnrollmentData \<Boolean?\>\]: 
+  \[KeepUserData \<Boolean?\>\]: 
+  \[NotificationBody \<String\>\]: 
+  \[NotificationTitle \<String\>\]: 
+  \[OrganizationalUnitPath \<String\>\]: 
+  \[PersistEsimDataPlan \<Boolean?\>\]:
 
 ## RELATED LINKS
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetaexecutedevicemanagementmanageddeviceaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetaexecutedevicemanagementmanageddeviceaction)
+
 

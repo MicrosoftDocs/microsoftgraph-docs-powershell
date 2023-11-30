@@ -197,7 +197,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -303,30 +303,31 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIosUpdateDeviceStatus
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`BODYPARAMETER <IMicrosoftGraphIosUpdateDeviceStatus>`: iosUpdateDeviceStatus
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
-  - `[DeviceDisplayName <String>]`: Device name of the DevicePolicyStatus.
-  - `[DeviceId <String>]`: The device id that is being reported.
-  - `[DeviceModel <String>]`: The device model that is being reported
-  - `[InstallStatus <String>]`: iosUpdatesInstallStatus
-  - `[LastReportedDateTime <DateTime?>]`: Last modified date time of the policy report.
-  - `[OSVersion <String>]`: The device version that is being reported.
-  - `[Platform <Int32?>]`: Platform of the device that is being reported
-  - `[Status <String>]`: complianceStatus
-  - `[UserId <String>]`: The User id that is being reported.
-  - `[UserName <String>]`: The User Name that is being reported
-  - `[UserPrincipalName <String>]`: UserPrincipalName.
+BODYPARAMETER \<IMicrosoftGraphIosUpdateDeviceStatus\>: iosUpdateDeviceStatus
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[ComplianceGracePeriodExpirationDateTime \<DateTime?\>\]: The DateTime when device compliance grace period expires
+  \[DeviceDisplayName \<String\>\]: Device name of the DevicePolicyStatus.
+  \[DeviceId \<String\>\]: The device id that is being reported.
+  \[DeviceModel \<String\>\]: The device model that is being reported
+  \[InstallStatus \<String\>\]: iosUpdatesInstallStatus
+  \[LastReportedDateTime \<DateTime?\>\]: Last modified date time of the policy report.
+  \[OSVersion \<String\>\]: The device version that is being reported.
+  \[Platform \<Int32?\>\]: Platform of the device that is being reported
+  \[Status \<String\>\]: complianceStatus
+  \[UserId \<String\>\]: The User id that is being reported.
+  \[UserName \<String\>\]: The User Name that is being reported
+  \[UserPrincipalName \<String\>\]: UserPrincipalName.
 
 ## RELATED LINKS
 [New-MgDeviceManagementIoUpdateStatus](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementIoUpdateStatus?view=graph-powershell-1.0)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementioupdatestatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementioupdatestatus)
+
 

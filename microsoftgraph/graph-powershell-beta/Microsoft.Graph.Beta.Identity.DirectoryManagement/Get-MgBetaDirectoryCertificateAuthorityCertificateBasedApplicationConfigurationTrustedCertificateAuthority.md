@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationTrustedCertificateAuthority
 
 ## SYNOPSIS
-Get trustedCertificateAuthorities from directory
+Collection of trusted certificate authorities.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationT
 ```
 
 ## DESCRIPTION
-Get trustedCertificateAuthorities from directory
+Collection of trusted certificate authorities.
 
 ## PARAMETERS
 
@@ -262,6 +262,7 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[ContractId \<String\>\]: The unique identifier of contract
   \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
   \[DeviceId \<String\>\]: The unique identifier of device
+  \[DeviceLocalCredentialInfoId \<String\>\]: The unique identifier of deviceLocalCredentialInfo
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[DirectoryRoleId \<String\>\]: The unique identifier of directoryRole
   \[DirectoryRoleTemplateId \<String\>\]: The unique identifier of directoryRoleTemplate

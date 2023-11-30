@@ -1,14 +1,19 @@
 ---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mguserinferenceclassification
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mguserinferenceclassificationoverride
 schema: 2.0.0
+ms.prod: mail
 ---
 
-# Update-MgUserInferenceClassification
+# Update-MgUserInferenceClassificationOverride
 
 ## SYNOPSIS
-Update the navigation property inferenceClassification in users
+Change the classifyAs field of an override as specified.
+You cannot use PATCH to change any other fields in an inferenceClassificationOverride instance.
+If an override exists for a sender and the sender changes his/her display name, you can use POST to force an update to the name field in the existing override.
+If an override exists for a sender and the sender changes his/her SMTP address, deleting the existing override and creating a new one withthe new SMTP address is the only way to 'update' the override for this sender.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserInferenceClassificationOverride?view=graph-powershell-beta)
@@ -17,31 +22,36 @@ Update the navigation property inferenceClassification in users
 
 ### UpdateExpanded (Default)
 ```
-Update-MgUserInferenceClassification -UserId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Overrides <IMicrosoftGraphInferenceClassificationOverride[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgUserInferenceClassificationOverride -InferenceClassificationOverrideId <String> -UserId <String>
+ [-AdditionalProperties <Hashtable>] [-ClassifyAs <String>] [-Id <String>]
+ [-SenderEmailAddress <IMicrosoftGraphEmailAddress>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgUserInferenceClassification -UserId <String> -BodyParameter <IMicrosoftGraphInferenceClassification>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgUserInferenceClassificationOverride -InferenceClassificationOverrideId <String> -UserId <String>
+ -BodyParameter <IMicrosoftGraphInferenceClassificationOverride> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgUserInferenceClassification -InputObject <IMailIdentity> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-Overrides <IMicrosoftGraphInferenceClassificationOverride[]>] [-WhatIf] [-Confirm]
+Update-MgUserInferenceClassificationOverride -InputObject <IMailIdentity> [-AdditionalProperties <Hashtable>]
+ [-ClassifyAs <String>] [-Id <String>] [-SenderEmailAddress <IMicrosoftGraphEmailAddress>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgUserInferenceClassification -InputObject <IMailIdentity>
- -BodyParameter <IMicrosoftGraphInferenceClassification> [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgUserInferenceClassificationOverride -InputObject <IMailIdentity>
+ -BodyParameter <IMicrosoftGraphInferenceClassificationOverride> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property inferenceClassification in users
+Change the classifyAs field of an override as specified.
+You cannot use PATCH to change any other fields in an inferenceClassificationOverride instance.
+If an override exists for a sender and the sender changes his/her display name, you can use POST to force an update to the name field in the existing override.
+If an override exists for a sender and the sender changes his/her SMTP address, deleting the existing override and creating a new one withthe new SMTP address is the only way to 'update' the override for this sender.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -79,11 +89,11 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-inferenceClassification
+inferenceClassificationOverride
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInferenceClassification
+Type: IMicrosoftGraphInferenceClassificationOverride
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -91,6 +101,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ClassifyAs
+inferenceClassificationType
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -104,6 +129,21 @@ Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InferenceClassificationOverrideId
+The unique identifier of inferenceClassificationOverride
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, Update
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -126,14 +166,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Overrides
-A set of overrides for a user to always classify messages from specific senders in certain ways: focused, or other.
-Read-only.
-Nullable.
-To construct, see NOTES section for OVERRIDES properties and create a hash table.
+### -SenderEmailAddress
+emailAddress
+To construct, see NOTES section for SENDEREMAILADDRESS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInferenceClassificationOverride[]
+Type: IMicrosoftGraphEmailAddress
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -196,48 +234,43 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMailIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInferenceClassification
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInferenceClassificationOverride
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInferenceClassification
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInferenceClassificationOverride
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+BODYPARAMETER \<IMicrosoftGraphInferenceClassificationOverride\>: inferenceClassificationOverride
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[ClassifyAs \<String\>\]: inferenceClassificationType
+  \[SenderEmailAddress \<IMicrosoftGraphEmailAddress\>\]: emailAddress
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Address \<String\>\]: The email address of the person or entity.
+    \[Name \<String\>\]: The display name of the person or entity.
 
-`BODYPARAMETER <IMicrosoftGraphInferenceClassification>`: inferenceClassification
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Overrides <IMicrosoftGraphInferenceClassificationOverride[]>]`: A set of overrides for a user to always classify messages from specific senders in certain ways: focused, or other. Read-only. Nullable.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[ClassifyAs <String>]`: inferenceClassificationType
-    - `[SenderEmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Address <String>]`: The email address of the person or entity.
-      - `[Name <String>]`: The display name of the person or entity.
+INPUTOBJECT \<IMailIdentity\>: Identity Parameter
+  \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[InferenceClassificationOverrideId \<String\>\]: The unique identifier of inferenceClassificationOverride
+  \[MailFolderId \<String\>\]: The unique identifier of mailFolder
+  \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
+  \[MessageId \<String\>\]: The unique identifier of message
+  \[MessageRuleId \<String\>\]: The unique identifier of messageRule
+  \[UserId \<String\>\]: The unique identifier of user
 
-`INPUTOBJECT <IMailIdentity>`: Identity Parameter
-  - `[AttachmentId <String>]`: The unique identifier of attachment
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[InferenceClassificationOverrideId <String>]`: The unique identifier of inferenceClassificationOverride
-  - `[MailFolderId <String>]`: The unique identifier of mailFolder
-  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
-  - `[MessageId <String>]`: The unique identifier of message
-  - `[MessageRuleId <String>]`: The unique identifier of messageRule
-  - `[UserId <String>]`: The unique identifier of user
-
-`OVERRIDES <IMicrosoftGraphInferenceClassificationOverride[]>`: A set of overrides for a user to always classify messages from specific senders in certain ways: focused, or other. Read-only. Nullable.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[ClassifyAs <String>]`: inferenceClassificationType
-  - `[SenderEmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Address <String>]`: The email address of the person or entity.
-    - `[Name <String>]`: The display name of the person or entity.
+SENDEREMAILADDRESS \<IMicrosoftGraphEmailAddress\>: emailAddress
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Address \<String\>\]: The email address of the person or entity.
+  \[Name \<String\>\]: The display name of the person or entity.
 
 ## RELATED LINKS
-
 [Update-MgBetaUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserInferenceClassificationOverride?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mguserinferenceclassificationoverride](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mguserinferenceclassificationoverride)
+

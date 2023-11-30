@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganizationbrandinglocalization
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Update-MgBetaOrganizationBrandingLocalization
 
 ## SYNOPSIS
 Update the properties of an organizationalBrandingLocalization object for a specific localization.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganizationBrandingLocalization?view=graph-powershell-1.0)
@@ -67,6 +69,7 @@ Update-MgBetaOrganizationBrandingLocalization -InputObject <IIdentityDirectoryMa
 
 ## DESCRIPTION
 Update the properties of an organizationalBrandingLocalization object for a specific localization.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Update the backgroundColor and signInPageText for the fr-FR localization using PATCH
@@ -430,7 +433,7 @@ Accept wildcard characters: False
 ```
 
 ### -FaviconInputFile
-Input File for Favicon (A custom icon (favicon) to replace a default Microsoft product favicon on an Azure AD tenant.)
+Input File for Favicon (A custom icon (favicon) to replace a default Microsoft product favicon on a Microsoft Entra tenant.)
 
 ```yaml
 Type: String
@@ -751,8 +754,8 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 CONTENTCUSTOMIZATION \<IMicrosoftGraphContentCustomization\>: contentCustomization
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[AttributeCollection \<IMicrosoftGraphKeyValue\[\]\>\]: Represents the content options of External Identities to be customized throughout the authentication flow for a tenant.
-    \[Key \<String\>\]: Contains the name of the field that a value is associated with.
-    \[Value \<String\>\]: Contains the corresponding value for the specified key.
+    \[Key \<String\>\]: Key.
+    \[Value \<String\>\]: Value.
   \[AttributeCollectionRelativeUrl \<String\>\]: A relative URL for the content options of External Identities to be customized throughout the authentication flow for a tenant.
 
 INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
@@ -766,6 +769,7 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[ContractId \<String\>\]: The unique identifier of contract
   \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
   \[DeviceId \<String\>\]: The unique identifier of device
+  \[DeviceLocalCredentialInfoId \<String\>\]: The unique identifier of deviceLocalCredentialInfo
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[DirectoryRoleId \<String\>\]: The unique identifier of directoryRole
   \[DirectoryRoleTemplateId \<String\>\]: The unique identifier of directoryRoleTemplate

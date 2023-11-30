@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileappconfiguration
 schema: 2.0.0
+ms.prod: intune
 ---
 
 # Update-MgDeviceAppManagementMobileAppConfiguration
@@ -303,7 +304,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -350,148 +351,157 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDeviceMobileAppConfiguration
 ## NOTES
-
-ALIASES
-
-Update-MgDeviceAppMgtMobileAppConfiguration
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+ASSIGNMENTS \<IMicrosoftGraphManagedDeviceMobileAppConfigurationAssignment\[\]\>: The list of group assignemenets for app configration.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
 
-`ASSIGNMENTS <IMicrosoftGraphManagedDeviceMobileAppConfigurationAssignment[]>`: The list of group assignemenets for app configration.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+BODYPARAMETER \<IMicrosoftGraphManagedDeviceMobileAppConfiguration\>: An abstract class for Mobile app configuration for enrolled devices.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[Assignments \<IMicrosoftGraphManagedDeviceMobileAppConfigurationAssignment\[\]\>\]: The list of group assignemenets for app configration.
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[CreatedDateTime \<DateTime?\>\]: DateTime the object was created.
+  \[Description \<String\>\]: Admin provided description of the Device Configuration.
+  \[DeviceStatusSummary \<IMicrosoftGraphManagedDeviceMobileAppConfigurationDeviceSummary\>\]: Contains properties, inherited properties and actions for an MDM mobile app configuration device status summary.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[ConfigurationVersion \<Int32?\>\]: Version of the policy for that overview
+    \[ErrorCount \<Int32?\>\]: Number of error devices
+    \[FailedCount \<Int32?\>\]: Number of failed devices
+    \[LastUpdateDateTime \<DateTime?\>\]: Last update time
+    \[NotApplicableCount \<Int32?\>\]: Number of not applicable devices
+    \[PendingCount \<Int32?\>\]: Number of pending devices
+    \[SuccessCount \<Int32?\>\]: Number of succeeded devices
+  \[DeviceStatuses \<IMicrosoftGraphManagedDeviceMobileAppConfigurationDeviceStatus\[\]\>\]: List of ManagedDeviceMobileAppConfigurationDeviceStatus.
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[ComplianceGracePeriodExpirationDateTime \<DateTime?\>\]: The DateTime when device compliance grace period expires
+    \[DeviceDisplayName \<String\>\]: Device name of the DevicePolicyStatus.
+    \[DeviceModel \<String\>\]: The device model that is being reported
+    \[LastReportedDateTime \<DateTime?\>\]: Last modified date time of the policy report.
+    \[Status \<String\>\]: complianceStatus
+    \[UserName \<String\>\]: The User Name that is being reported
+    \[UserPrincipalName \<String\>\]: UserPrincipalName.
+  \[DisplayName \<String\>\]: Admin provided name of the device configuration.
+  \[LastModifiedDateTime \<DateTime?\>\]: DateTime the object was last modified.
+  \[TargetedMobileApps \<String\[\]\>\]: the associated app.
+  \[UserStatusSummary \<IMicrosoftGraphManagedDeviceMobileAppConfigurationUserSummary\>\]: Contains properties, inherited properties and actions for an MDM mobile app configuration user status summary.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[ConfigurationVersion \<Int32?\>\]: Version of the policy for that overview
+    \[ErrorCount \<Int32?\>\]: Number of error Users
+    \[FailedCount \<Int32?\>\]: Number of failed Users
+    \[LastUpdateDateTime \<DateTime?\>\]: Last update time
+    \[NotApplicableCount \<Int32?\>\]: Number of not applicable users
+    \[PendingCount \<Int32?\>\]: Number of pending Users
+    \[SuccessCount \<Int32?\>\]: Number of succeeded Users
+  \[UserStatuses \<IMicrosoftGraphManagedDeviceMobileAppConfigurationUserStatus\[\]\>\]: List of ManagedDeviceMobileAppConfigurationUserStatus.
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[DevicesCount \<Int32?\>\]: Devices count for that user.
+    \[LastReportedDateTime \<DateTime?\>\]: Last modified date time of the policy report.
+    \[Status \<String\>\]: complianceStatus
+    \[UserDisplayName \<String\>\]: User name of the DevicePolicyStatus.
+    \[UserPrincipalName \<String\>\]: UserPrincipalName.
+  \[Version \<Int32?\>\]: Version of the device configuration.
 
-`BODYPARAMETER <IMicrosoftGraphManagedDeviceMobileAppConfiguration>`: An abstract class for Mobile app configuration for enrolled devices.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Assignments <IMicrosoftGraphManagedDeviceMobileAppConfigurationAssignment[]>]`: The list of group assignemenets for app configration.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CreatedDateTime <DateTime?>]`: DateTime the object was created.
-  - `[Description <String>]`: Admin provided description of the Device Configuration.
-  - `[DeviceStatusSummary <IMicrosoftGraphManagedDeviceMobileAppConfigurationDeviceSummary>]`: Contains properties, inherited properties and actions for an MDM mobile app configuration device status summary.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[ConfigurationVersion <Int32?>]`: Version of the policy for that overview
-    - `[ErrorCount <Int32?>]`: Number of error devices
-    - `[FailedCount <Int32?>]`: Number of failed devices
-    - `[LastUpdateDateTime <DateTime?>]`: Last update time
-    - `[NotApplicableCount <Int32?>]`: Number of not applicable devices
-    - `[PendingCount <Int32?>]`: Number of pending devices
-    - `[SuccessCount <Int32?>]`: Number of succeeded devices
-  - `[DeviceStatuses <IMicrosoftGraphManagedDeviceMobileAppConfigurationDeviceStatus[]>]`: List of ManagedDeviceMobileAppConfigurationDeviceStatus.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
-    - `[DeviceDisplayName <String>]`: Device name of the DevicePolicyStatus.
-    - `[DeviceModel <String>]`: The device model that is being reported
-    - `[LastReportedDateTime <DateTime?>]`: Last modified date time of the policy report.
-    - `[Status <String>]`: complianceStatus
-    - `[UserName <String>]`: The User Name that is being reported
-    - `[UserPrincipalName <String>]`: UserPrincipalName.
-  - `[DisplayName <String>]`: Admin provided name of the device configuration.
-  - `[LastModifiedDateTime <DateTime?>]`: DateTime the object was last modified.
-  - `[TargetedMobileApps <String[]>]`: the associated app.
-  - `[UserStatusSummary <IMicrosoftGraphManagedDeviceMobileAppConfigurationUserSummary>]`: Contains properties, inherited properties and actions for an MDM mobile app configuration user status summary.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[ConfigurationVersion <Int32?>]`: Version of the policy for that overview
-    - `[ErrorCount <Int32?>]`: Number of error Users
-    - `[FailedCount <Int32?>]`: Number of failed Users
-    - `[LastUpdateDateTime <DateTime?>]`: Last update time
-    - `[NotApplicableCount <Int32?>]`: Number of not applicable users
-    - `[PendingCount <Int32?>]`: Number of pending Users
-    - `[SuccessCount <Int32?>]`: Number of succeeded Users
-  - `[UserStatuses <IMicrosoftGraphManagedDeviceMobileAppConfigurationUserStatus[]>]`: List of ManagedDeviceMobileAppConfigurationUserStatus.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[DevicesCount <Int32?>]`: Devices count for that user.
-    - `[LastReportedDateTime <DateTime?>]`: Last modified date time of the policy report.
-    - `[Status <String>]`: complianceStatus
-    - `[UserDisplayName <String>]`: User name of the DevicePolicyStatus.
-    - `[UserPrincipalName <String>]`: UserPrincipalName.
-  - `[Version <Int32?>]`: Version of the device configuration.
+DEVICESTATUSES \<IMicrosoftGraphManagedDeviceMobileAppConfigurationDeviceStatus\[\]\>: List of ManagedDeviceMobileAppConfigurationDeviceStatus.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[ComplianceGracePeriodExpirationDateTime \<DateTime?\>\]: The DateTime when device compliance grace period expires
+  \[DeviceDisplayName \<String\>\]: Device name of the DevicePolicyStatus.
+  \[DeviceModel \<String\>\]: The device model that is being reported
+  \[LastReportedDateTime \<DateTime?\>\]: Last modified date time of the policy report.
+  \[Status \<String\>\]: complianceStatus
+  \[UserName \<String\>\]: The User Name that is being reported
+  \[UserPrincipalName \<String\>\]: UserPrincipalName.
 
-`DEVICESTATUSES <IMicrosoftGraphManagedDeviceMobileAppConfigurationDeviceStatus[]>`: List of ManagedDeviceMobileAppConfigurationDeviceStatus.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
-  - `[DeviceDisplayName <String>]`: Device name of the DevicePolicyStatus.
-  - `[DeviceModel <String>]`: The device model that is being reported
-  - `[LastReportedDateTime <DateTime?>]`: Last modified date time of the policy report.
-  - `[Status <String>]`: complianceStatus
-  - `[UserName <String>]`: The User Name that is being reported
-  - `[UserPrincipalName <String>]`: UserPrincipalName.
+DEVICESTATUSSUMMARY \<IMicrosoftGraphManagedDeviceMobileAppConfigurationDeviceSummary\>: Contains properties, inherited properties and actions for an MDM mobile app configuration device status summary.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[ConfigurationVersion \<Int32?\>\]: Version of the policy for that overview
+  \[ErrorCount \<Int32?\>\]: Number of error devices
+  \[FailedCount \<Int32?\>\]: Number of failed devices
+  \[LastUpdateDateTime \<DateTime?\>\]: Last update time
+  \[NotApplicableCount \<Int32?\>\]: Number of not applicable devices
+  \[PendingCount \<Int32?\>\]: Number of pending devices
+  \[SuccessCount \<Int32?\>\]: Number of succeeded devices
 
-`DEVICESTATUSSUMMARY <IMicrosoftGraphManagedDeviceMobileAppConfigurationDeviceSummary>`: Contains properties, inherited properties and actions for an MDM mobile app configuration device status summary.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[ConfigurationVersion <Int32?>]`: Version of the policy for that overview
-  - `[ErrorCount <Int32?>]`: Number of error devices
-  - `[FailedCount <Int32?>]`: Number of failed devices
-  - `[LastUpdateDateTime <DateTime?>]`: Last update time
-  - `[NotApplicableCount <Int32?>]`: Number of not applicable devices
-  - `[PendingCount <Int32?>]`: Number of pending devices
-  - `[SuccessCount <Int32?>]`: Number of succeeded devices
+INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
+  \[AndroidManagedAppProtectionId \<String\>\]: The unique identifier of androidManagedAppProtection
+  \[DefaultManagedAppProtectionId \<String\>\]: The unique identifier of defaultManagedAppProtection
+  \[DeviceCompliancePolicyStateId \<String\>\]: The unique identifier of deviceCompliancePolicyState
+  \[DeviceConfigurationStateId \<String\>\]: The unique identifier of deviceConfigurationState
+  \[DeviceInstallStateId \<String\>\]: The unique identifier of deviceInstallState
+  \[DeviceLogCollectionResponseId \<String\>\]: The unique identifier of deviceLogCollectionResponse
+  \[DeviceManagementTroubleshootingEventId \<String\>\]: The unique identifier of deviceManagementTroubleshootingEvent
+  \[IosManagedAppProtectionId \<String\>\]: The unique identifier of iosManagedAppProtection
+  \[ManagedAppOperationId \<String\>\]: The unique identifier of managedAppOperation
+  \[ManagedAppPolicyId \<String\>\]: The unique identifier of managedAppPolicy
+  \[ManagedAppRegistrationId \<String\>\]: The unique identifier of managedAppRegistration
+  \[ManagedAppStatusId \<String\>\]: The unique identifier of managedAppStatus
+  \[ManagedDeviceId \<String\>\]: The unique identifier of managedDevice
+  \[ManagedDeviceMobileAppConfigurationAssignmentId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationAssignment
+  \[ManagedDeviceMobileAppConfigurationDeviceStatusId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationDeviceStatus
+  \[ManagedDeviceMobileAppConfigurationId \<String\>\]: The unique identifier of managedDeviceMobileAppConfiguration
+  \[ManagedDeviceMobileAppConfigurationUserStatusId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationUserStatus
+  \[ManagedEBookAssignmentId \<String\>\]: The unique identifier of managedEBookAssignment
+  \[ManagedEBookId \<String\>\]: The unique identifier of managedEBook
+  \[ManagedMobileAppId \<String\>\]: The unique identifier of managedMobileApp
+  \[MdmWindowsInformationProtectionPolicyId \<String\>\]: The unique identifier of mdmWindowsInformationProtectionPolicy
+  \[MobileAppAssignmentId \<String\>\]: The unique identifier of mobileAppAssignment
+  \[MobileAppCategoryId \<String\>\]: The unique identifier of mobileAppCategory
+  \[MobileAppContentFileId \<String\>\]: The unique identifier of mobileAppContentFile
+  \[MobileAppContentId \<String\>\]: The unique identifier of mobileAppContent
+  \[MobileAppId \<String\>\]: The unique identifier of mobileApp
+  \[MobileContainedAppId \<String\>\]: The unique identifier of mobileContainedApp
+  \[TargetedManagedAppConfigurationId \<String\>\]: The unique identifier of targetedManagedAppConfiguration
+  \[TargetedManagedAppPolicyAssignmentId \<String\>\]: The unique identifier of targetedManagedAppPolicyAssignment
+  \[UserId \<String\>\]: The unique identifier of user
+  \[UserInstallStateSummaryId \<String\>\]: The unique identifier of userInstallStateSummary
+  \[VppTokenId \<String\>\]: The unique identifier of vppToken
+  \[WindowsDeviceMalwareStateId \<String\>\]: The unique identifier of windowsDeviceMalwareState
+  \[WindowsInformationProtectionAppLockerFileId \<String\>\]: The unique identifier of windowsInformationProtectionAppLockerFile
+  \[WindowsInformationProtectionPolicyId \<String\>\]: The unique identifier of windowsInformationProtectionPolicy
 
-`INPUTOBJECT <IDevicesCorporateManagementIdentity>`: Identity Parameter
-  - `[AndroidManagedAppProtectionId <String>]`: The unique identifier of androidManagedAppProtection
-  - `[DefaultManagedAppProtectionId <String>]`: The unique identifier of defaultManagedAppProtection
-  - `[DeviceCompliancePolicyStateId <String>]`: The unique identifier of deviceCompliancePolicyState
-  - `[DeviceConfigurationStateId <String>]`: The unique identifier of deviceConfigurationState
-  - `[DeviceInstallStateId <String>]`: The unique identifier of deviceInstallState
-  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
-  - `[DeviceManagementTroubleshootingEventId <String>]`: The unique identifier of deviceManagementTroubleshootingEvent
-  - `[IosManagedAppProtectionId <String>]`: The unique identifier of iosManagedAppProtection
-  - `[ManagedAppOperationId <String>]`: The unique identifier of managedAppOperation
-  - `[ManagedAppPolicyId <String>]`: The unique identifier of managedAppPolicy
-  - `[ManagedAppRegistrationId <String>]`: The unique identifier of managedAppRegistration
-  - `[ManagedAppStatusId <String>]`: The unique identifier of managedAppStatus
-  - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
-  - `[ManagedDeviceMobileAppConfigurationAssignmentId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationAssignment
-  - `[ManagedDeviceMobileAppConfigurationDeviceStatusId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationDeviceStatus
-  - `[ManagedDeviceMobileAppConfigurationId <String>]`: The unique identifier of managedDeviceMobileAppConfiguration
-  - `[ManagedDeviceMobileAppConfigurationUserStatusId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationUserStatus
-  - `[ManagedEBookAssignmentId <String>]`: The unique identifier of managedEBookAssignment
-  - `[ManagedEBookId <String>]`: The unique identifier of managedEBook
-  - `[ManagedMobileAppId <String>]`: The unique identifier of managedMobileApp
-  - `[MdmWindowsInformationProtectionPolicyId <String>]`: The unique identifier of mdmWindowsInformationProtectionPolicy
-  - `[MobileAppAssignmentId <String>]`: The unique identifier of mobileAppAssignment
-  - `[MobileAppCategoryId <String>]`: The unique identifier of mobileAppCategory
-  - `[MobileAppId <String>]`: The unique identifier of mobileApp
-  - `[TargetedManagedAppConfigurationId <String>]`: The unique identifier of targetedManagedAppConfiguration
-  - `[TargetedManagedAppPolicyAssignmentId <String>]`: The unique identifier of targetedManagedAppPolicyAssignment
-  - `[UserId <String>]`: The unique identifier of user
-  - `[UserInstallStateSummaryId <String>]`: The unique identifier of userInstallStateSummary
-  - `[VppTokenId <String>]`: The unique identifier of vppToken
-  - `[WindowsDeviceMalwareStateId <String>]`: The unique identifier of windowsDeviceMalwareState
-  - `[WindowsInformationProtectionAppLockerFileId <String>]`: The unique identifier of windowsInformationProtectionAppLockerFile
-  - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
+USERSTATUSES \<IMicrosoftGraphManagedDeviceMobileAppConfigurationUserStatus\[\]\>: List of ManagedDeviceMobileAppConfigurationUserStatus.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[DevicesCount \<Int32?\>\]: Devices count for that user.
+  \[LastReportedDateTime \<DateTime?\>\]: Last modified date time of the policy report.
+  \[Status \<String\>\]: complianceStatus
+  \[UserDisplayName \<String\>\]: User name of the DevicePolicyStatus.
+  \[UserPrincipalName \<String\>\]: UserPrincipalName.
 
-`USERSTATUSES <IMicrosoftGraphManagedDeviceMobileAppConfigurationUserStatus[]>`: List of ManagedDeviceMobileAppConfigurationUserStatus.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[DevicesCount <Int32?>]`: Devices count for that user.
-  - `[LastReportedDateTime <DateTime?>]`: Last modified date time of the policy report.
-  - `[Status <String>]`: complianceStatus
-  - `[UserDisplayName <String>]`: User name of the DevicePolicyStatus.
-  - `[UserPrincipalName <String>]`: UserPrincipalName.
-
-`USERSTATUSSUMMARY <IMicrosoftGraphManagedDeviceMobileAppConfigurationUserSummary>`: Contains properties, inherited properties and actions for an MDM mobile app configuration user status summary.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[ConfigurationVersion <Int32?>]`: Version of the policy for that overview
-  - `[ErrorCount <Int32?>]`: Number of error Users
-  - `[FailedCount <Int32?>]`: Number of failed Users
-  - `[LastUpdateDateTime <DateTime?>]`: Last update time
-  - `[NotApplicableCount <Int32?>]`: Number of not applicable users
-  - `[PendingCount <Int32?>]`: Number of pending Users
-  - `[SuccessCount <Int32?>]`: Number of succeeded Users
+USERSTATUSSUMMARY \<IMicrosoftGraphManagedDeviceMobileAppConfigurationUserSummary\>: Contains properties, inherited properties and actions for an MDM mobile app configuration user status summary.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[ConfigurationVersion \<Int32?\>\]: Version of the policy for that overview
+  \[ErrorCount \<Int32?\>\]: Number of error Users
+  \[FailedCount \<Int32?\>\]: Number of failed Users
+  \[LastUpdateDateTime \<DateTime?\>\]: Last update time
+  \[NotApplicableCount \<Int32?\>\]: Number of not applicable users
+  \[PendingCount \<Int32?\>\]: Number of pending Users
+  \[SuccessCount \<Int32?\>\]: Number of succeeded Users
 
 ## RELATED LINKS
 [Update-MgBetaDeviceAppManagementMobileAppConfiguration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementMobileAppConfiguration?view=graph-powershell-beta)
 
-## RELATED LINKS
-[Update-MgBetaDeviceAppManagementMobileAppConfiguration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementMobileAppConfiguration?view=graph-powershell-beta)
+[https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileappconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileappconfiguration)
+
 

@@ -102,8 +102,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCompliance
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
 [Update-MgBetaCompliance](/powershell/module/Microsoft.Graph.Beta.Compliance/Update-MgBetaCompliance?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/update-mgcompliance](https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/update-mgcompliance)
+
 

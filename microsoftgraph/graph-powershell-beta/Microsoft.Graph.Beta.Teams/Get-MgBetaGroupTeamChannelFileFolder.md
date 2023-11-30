@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the metadata for the location where the files of a channel are stored.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamChannelFileFolder](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamChannelFileFolder?view=graph-powershell-1.0)
@@ -30,7 +30,9 @@ Get-MgBetaGroupTeamChannelFileFolder -InputObject <ITeamsIdentity> [-ExpandPrope
 
 ## DESCRIPTION
 Get the metadata for the location where the files of a channel are stored.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -169,5 +171,4 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Get-MgGroupTeamChannelFileFolder](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamChannelFileFolder?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamchannelfilefolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamchannelfilefolder)
-
 

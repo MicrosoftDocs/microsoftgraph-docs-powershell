@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmobileapptroubleshootingevent
 schema: 2.0.0
+ms.prod: intune
 ---
 
 # New-MgDeviceManagementMobileAppTroubleshootingEvent
@@ -137,31 +138,34 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileAppTroubleshootingEvent
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+APPLOGCOLLECTIONREQUESTS \<IMicrosoftGraphAppLogCollectionRequest\[\]\>: Indicates collection of App Log Upload Request.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[CompletedDateTime \<DateTime?\>\]: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
+  \[CustomLogFolders \<String\[\]\>\]: List of log folders.
+  \[ErrorMessage \<String\>\]: Indicates error message if any during the upload process.
+  \[Status \<AppLogUploadState?\>\]: AppLogUploadStatus
 
-`APPLOGCOLLECTIONREQUESTS <IMicrosoftGraphAppLogCollectionRequest[]>`: Indicates collection of App Log Upload Request.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
-  - `[CustomLogFolders <String[]>]`: List of log folders.
-  - `[ErrorMessage <String>]`: Indicates error message if any during the upload process.
-  - `[Status <AppLogUploadState?>]`: AppLogUploadStatus
-
-`BODYPARAMETER <IMicrosoftGraphMobileAppTroubleshootingEvent>`: mobileAppTroubleshootingEvent
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>]`: Indicates collection of App Log Upload Request.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
-    - `[CustomLogFolders <String[]>]`: List of log folders.
-    - `[ErrorMessage <String>]`: Indicates error message if any during the upload process.
-    - `[Status <AppLogUploadState?>]`: AppLogUploadStatus
+BODYPARAMETER \<IMicrosoftGraphMobileAppTroubleshootingEvent\>: mobileAppTroubleshootingEvent
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[AppLogCollectionRequests \<IMicrosoftGraphAppLogCollectionRequest\[\]\>\]: Indicates collection of App Log Upload Request.
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[CompletedDateTime \<DateTime?\>\]: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
+    \[CustomLogFolders \<String\[\]\>\]: List of log folders.
+    \[ErrorMessage \<String\>\]: Indicates error message if any during the upload process.
+    \[Status \<AppLogUploadState?\>\]: AppLogUploadStatus
 
 ## RELATED LINKS
 [New-MgBetaDeviceManagementMobileAppTroubleshootingEvent](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementMobileAppTroubleshootingEvent?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmobileapptroubleshootingevent](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmobileapptroubleshootingevent)
+
 

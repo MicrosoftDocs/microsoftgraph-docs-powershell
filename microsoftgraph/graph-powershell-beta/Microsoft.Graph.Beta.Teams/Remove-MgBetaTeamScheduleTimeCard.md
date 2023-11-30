@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete a timeCard instance in a schedule.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgBetaTeamScheduleTimeCard -InputObject <ITeamsIdentity> [-IfMatch <Strin
 
 ## DESCRIPTION
 Delete a timeCard instance in a schedule.
-This API is supported in the following national cloud deployments.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaTeamScheduleTimeCard Cmdlet

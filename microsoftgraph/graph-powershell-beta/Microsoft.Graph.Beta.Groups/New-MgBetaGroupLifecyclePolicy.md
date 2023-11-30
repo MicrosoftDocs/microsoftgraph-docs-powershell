@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagrouplifecyclepolicy
 schema: 2.0.0
+ms.prod: groups
 ---
 
 # New-MgBetaGroupLifecyclePolicy
 
 ## SYNOPSIS
 Creates a new groupLifecyclePolicy.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Groups/New-MgGroupLifecyclePolicy?view=graph-powershell-1.0)
@@ -56,6 +58,7 @@ New-MgBetaGroupLifecyclePolicy -BodyParameter <IMicrosoftGraphGroupLifecyclePoli
 
 ## DESCRIPTION
 Creates a new groupLifecyclePolicy.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

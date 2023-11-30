@@ -1,37 +1,37 @@
 ---
 Module Name: Microsoft.Graph.DeviceManagement.Functions
-Module Guid: 24b479c9-6c7b-4e8c-95f9-ff412664a1fe
-Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions
-Help Version: 1.0.0.0
+Module Guid: a4ee7646-1105-456f-ae3b-1ce5d0e246ef
+Download Help Link: {{ Update Download Link }}
+Help Version: {{ Please enter version of help manually (X.X.X.X) format }}
 Locale: en-US
 ---
 
 # Microsoft.Graph.DeviceManagement.Functions Module
 ## Description
-Microsoft Graph PowerShell Cmdlets
+{{ Fill in the Description }}
 
 ## Microsoft.Graph.DeviceManagement.Functions Cmdlets
 ### [Confirm-MgDeviceManagementWindowsEnrollmentAutoDiscovery](Confirm-MgDeviceManagementWindowsEnrollmentAutoDiscovery.md)
-Invoke function verifyWindowsEnrollmentAutoDiscovery
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementAuditEventAuditActivityType](Get-MgDeviceManagementAuditEventAuditActivityType.md)
-Invoke function getAuditActivityTypes
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementAuditEventAuditCategory](Get-MgDeviceManagementAuditEventAuditCategory.md)
-Invoke function getAuditCategories
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceConfigurationOmaSettingPlainTextValue](Get-MgDeviceManagementDeviceConfigurationOmaSettingPlainTextValue.md)
-Invoke function getOmaSettingPlainTextValue
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementEffectivePermission](Get-MgDeviceManagementEffectivePermission.md)
-Retrieves the effective permissions of the currently authenticated user
+{{ Fill in the Description }}
 
 ### [Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest](Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest.md)
-Download Apple push notification certificate signing request
+{{ Fill in the Description }}
 
 ### [Invoke-MgExperienceDeviceManagement](Invoke-MgExperienceDeviceManagement.md)
-Invoke function userExperienceAnalyticsSummarizeWorkFromAnywhereDevices
+{{ Fill in the Description }}
 
 ### [Invoke-MgSummarizeDeviceManagementUserExperienceAnalyticDevicePerformanceDevice](Invoke-MgSummarizeDeviceManagementUserExperienceAnalyticDevicePerformanceDevice.md)
-Invoke function summarizeDevicePerformanceDevices
+{{ Fill in the Description }}
 

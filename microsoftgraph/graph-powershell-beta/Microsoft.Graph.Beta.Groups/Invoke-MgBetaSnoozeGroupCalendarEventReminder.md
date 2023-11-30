@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetasnoozegroupcalendareventreminder
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Invoke-MgBetaSnoozeGroupCalendarEventReminder
 
 ## SYNOPSIS
 Postpone a reminder for an event in a user calendar until a new time.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgSnoozeGroupCalendarEventReminder](/powershell/module/Microsoft.Graph.Groups/Invoke-MgSnoozeGroupCalendarEventReminder?view=graph-powershell-1.0)
@@ -45,6 +47,7 @@ Invoke-MgBetaSnoozeGroupCalendarEventReminder -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Postpone a reminder for an event in a user calendar until a new time.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

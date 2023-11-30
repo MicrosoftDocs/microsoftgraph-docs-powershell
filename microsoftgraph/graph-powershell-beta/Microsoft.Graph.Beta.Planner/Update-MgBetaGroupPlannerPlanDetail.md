@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetagroupplannerplandetail
 schema: 2.0.0
+ms.prod: planner
 ---
 
 # Update-MgBetaGroupPlannerPlanDetail
@@ -45,6 +46,8 @@ Update-MgBetaGroupPlannerPlanDetail -InputObject <IPlannerIdentity> -IfMatch <St
 
 ## DESCRIPTION
 Update the navigation property details in groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -327,5 +330,4 @@ INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
 [Update-MgGroupPlannerPlanDetail](/powershell/module/Microsoft.Graph.Planner/Update-MgGroupPlannerPlanDetail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetagroupplannerplandetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetagroupplannerplandetail)
-
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/sync-mgdeviceappmanagementmicrosoftstoreforbusinessapp
 schema: 2.0.0
+ms.prod: intune
 ---
 
 # Sync-MgDeviceAppManagementMicrosoftStoreForBusinessApp
@@ -34,7 +35,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -80,10 +81,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.Boolean
 ## NOTES
 
-ALIASES
-
-Sync-MgDeviceAppMgtMicrosoftStoreGraphFPreBusinessApp
-
 ## RELATED LINKS
 [Sync-MgBetaDeviceAppManagementMicrosoftStoreForBusinessApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Sync-MgBetaDeviceAppManagementMicrosoftStoreForBusinessApp?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/sync-mgdeviceappmanagementmicrosoftstoreforbusinessapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/sync-mgdeviceappmanagementmicrosoftstoreforbusinessapp)
+
 

@@ -13,12 +13,6 @@ Exposes the itemActivities represented in this itemActivityStat resource.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserDriveItemAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemAnalyticItemActivityStatActivity?view=graph-powershell-beta)
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveItemAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemAnalyticItemActivityStatActivity?view=graph-powershell-beta)
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveItemAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemAnalyticItemActivityStatActivity?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
@@ -30,8 +24,6 @@ Get-MgUserDriveItemAnalyticItemActivityStatActivity -DriveId <String> -DriveItem
 
 ## DESCRIPTION
 Exposes the itemActivities represented in this itemActivityStat resource.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -45,7 +37,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -151,7 +143,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -211,7 +203,7 @@ Aliases: Limit
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -241,7 +233,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -256,12 +248,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemActivity
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
 [Get-MgBetaUserDriveItemAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemAnalyticItemActivityStatActivity?view=graph-powershell-beta)
 
-[Get-MgBetaUserDriveItemAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemAnalyticItemActivityStatActivity?view=graph-powershell-beta)
+[https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemanalyticitemactivitystatactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemanalyticitemactivitystatactivity)
 
-[Get-MgBetaUserDriveItemAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemAnalyticItemActivityStatActivity?view=graph-powershell-beta)
 

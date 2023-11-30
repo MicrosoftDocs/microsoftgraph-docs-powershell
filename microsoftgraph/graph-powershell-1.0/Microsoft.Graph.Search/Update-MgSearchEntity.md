@@ -29,8 +29,6 @@ Update-MgSearchEntity -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonPa
 ## DESCRIPTION
 Update search
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -121,9 +119,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.String
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
-
 [Update-MgBetaSearchEntity](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaSearchEntity?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchentity](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchentity)
+
 

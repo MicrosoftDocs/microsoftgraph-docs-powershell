@@ -117,17 +117,17 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.String
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`BODYPARAMETER <IPaths1Mblqr0DevicemanagementAndroidmanagedstoreaccountenterprisesettingsMicrosoftGraphRequestsignupurlPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[HostName <String>]`: 
+BODYPARAMETER \<IPaths1Mblqr0DevicemanagementAndroidmanagedstoreaccountenterprisesettingsMicrosoftGraphRequestsignupurlPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[HostName \<String\>\]:
 
 ## RELATED LINKS
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/request-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingsignupurl](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/request-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingsignupurl)
+
 

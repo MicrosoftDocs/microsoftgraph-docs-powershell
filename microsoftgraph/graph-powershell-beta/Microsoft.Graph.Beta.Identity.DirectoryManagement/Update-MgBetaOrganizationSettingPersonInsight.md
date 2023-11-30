@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganizationsettingpersoninsight
 schema: 2.0.0
+ms.prod: insights
 ---
 
 # Update-MgBetaOrganizationSettingPersonInsight
@@ -10,7 +11,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Update privacy settings to display or return the specified type of insights in an organization.
 The type of settings can be contact insights, item insights, or people insights.
-To learn more about customizing insights privacy for your organization, see:-  Customize item insights privacy -  Customize people insights privacy
+To learn more about customizing insights privacy for your organization, see:-  Customize item insights privacy -  Customize people insights privacy This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -43,7 +44,7 @@ Update-MgBetaOrganizationSettingPersonInsight -InputObject <IIdentityDirectoryMa
 ## DESCRIPTION
 Update privacy settings to display or return the specified type of insights in an organization.
 The type of settings can be contact insights, item insights, or people insights.
-To learn more about customizing insights privacy for your organization, see:-  Customize item insights privacy -  Customize people insights privacy
+To learn more about customizing insights privacy for your organization, see:-  Customize item insights privacy -  Customize people insights privacy This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaOrganizationSettingPersonInsight Cmdlet
@@ -92,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisabledForGroup
-The ID of an Azure Active Directory group, of which the specified type of insights are disabled for its members.
+The ID of a Microsoft Entra group, of which the specified type of insights are disabled for its members.
 Default is empty.
 Optional.
 
@@ -223,7 +224,7 @@ BODYPARAMETER \<IMicrosoftGraphInsightsSettings\>: insightsSettings
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  \[DisabledForGroup \<String\>\]: The ID of an Azure Active Directory group, of which the specified type of insights are disabled for its members.
+  \[DisabledForGroup \<String\>\]: The ID of a Microsoft Entra group, of which the specified type of insights are disabled for its members.
 Default is empty.
 Optional.
   \[IsEnabledInOrganization \<Boolean?\>\]: true if the specified type of insights are enabled for the organization; false if the specified type of insights are disabled for all users without exceptions.
@@ -241,6 +242,7 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[ContractId \<String\>\]: The unique identifier of contract
   \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
   \[DeviceId \<String\>\]: The unique identifier of device
+  \[DeviceLocalCredentialInfoId \<String\>\]: The unique identifier of deviceLocalCredentialInfo
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[DirectoryRoleId \<String\>\]: The unique identifier of directoryRole
   \[DirectoryRoleTemplateId \<String\>\]: The unique identifier of directoryRoleTemplate

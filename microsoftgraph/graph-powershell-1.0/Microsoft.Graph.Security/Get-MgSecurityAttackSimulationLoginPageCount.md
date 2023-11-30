@@ -22,8 +22,6 @@ Get-MgSecurityAttackSimulationLoginPageCount [-Filter <String>] [-Search <String
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Filter
@@ -66,9 +64,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.Int32
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
-
 [Get-MgBetaSecurityAttackSimulationLoginPageCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAttackSimulationLoginPageCount?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationloginpagecount](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationloginpagecount)
+
 

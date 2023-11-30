@@ -237,108 +237,115 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileAppIntentAndState
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+BODYPARAMETER \<IMicrosoftGraphMobileAppIntentAndState\>: MobileApp Intent and Install State for a given device.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[ManagedDeviceIdentifier \<String\>\]: Device identifier created or collected by Intune.
+  \[MobileAppList \<IMicrosoftGraphMobileAppIntentAndStateDetail\[\]\>\]: The list of payload intents and states for the tenant.
+    \[ApplicationId \<String\>\]: MobieApp identifier.
+    \[DisplayName \<String\>\]: The admin provided or imported title of the app.
+    \[DisplayVersion \<String\>\]: Human readable version of the application
+    \[InstallState \<ResultantAppState?\>\]: A list of possible states for application status on an individual device.
+When devices contact the Intune service and find targeted application enforcement intent, the status of the enforcement is recorded and becomes accessible in the Graph API.
+Since the application status is identified during device interaction with the Intune service, status records do not immediately appear upon application group assignment; it is created only after the assignment is evaluated in the service and devices start receiving the policy during check-ins.
+    \[MobileAppIntent \<MobileAppIntent?\>\]: Indicates the status of the mobile app on the device.
+    \[SupportedDeviceTypes \<IMicrosoftGraphMobileAppSupportedDeviceType\[\]\>\]: The supported platforms for the app.
+      \[MaximumOperatingSystemVersion \<String\>\]: Maximum OS version
+      \[MinimumOperatingSystemVersion \<String\>\]: Minimum OS version
+      \[Type \<DeviceType?\>\]: Device type.
+  \[UserId \<String\>\]: Identifier for the user that tried to enroll the device.
 
-`BODYPARAMETER <IMicrosoftGraphMobileAppIntentAndState>`: MobileApp Intent and Install State for a given device.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[ManagedDeviceIdentifier <String>]`: Device identifier created or collected by Intune.
-  - `[MobileAppList <IMicrosoftGraphMobileAppIntentAndStateDetail[]>]`: The list of payload intents and states for the tenant.
-    - `[ApplicationId <String>]`: MobieApp identifier.
-    - `[DisplayName <String>]`: The admin provided or imported title of the app.
-    - `[DisplayVersion <String>]`: Human readable version of the application
-    - `[InstallState <ResultantAppState?>]`: A list of possible states for application status on an individual device. When devices contact the Intune service and find targeted application enforcement intent, the status of the enforcement is recorded and becomes accessible in the Graph API. Since the application status is identified during device interaction with the Intune service, status records do not immediately appear upon application group assignment; it is created only after the assignment is evaluated in the service and devices start receiving the policy during check-ins.
-    - `[MobileAppIntent <MobileAppIntent?>]`: Indicates the status of the mobile app on the device.
-    - `[SupportedDeviceTypes <IMicrosoftGraphMobileAppSupportedDeviceType[]>]`: The supported platforms for the app.
-      - `[MaximumOperatingSystemVersion <String>]`: Maximum OS version
-      - `[MinimumOperatingSystemVersion <String>]`: Minimum OS version
-      - `[Type <DeviceType?>]`: Device type.
-  - `[UserId <String>]`: Identifier for the user that tried to enroll the device.
+INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
+  \[AndroidManagedAppProtectionId \<String\>\]: The unique identifier of androidManagedAppProtection
+  \[AppLogCollectionRequestId \<String\>\]: The unique identifier of appLogCollectionRequest
+  \[AssignmentFilterEvaluationStatusDetailsId \<String\>\]: The unique identifier of assignmentFilterEvaluationStatusDetails
+  \[BundleId \<String\>\]: Usage: bundleId='{bundleId}'
+  \[DefaultManagedAppProtectionId \<String\>\]: The unique identifier of defaultManagedAppProtection
+  \[DetectedAppId \<String\>\]: The unique identifier of detectedApp
+  \[DeviceAppManagementTaskId \<String\>\]: The unique identifier of deviceAppManagementTask
+  \[DeviceCompliancePolicyStateId \<String\>\]: The unique identifier of deviceCompliancePolicyState
+  \[DeviceConfigurationStateId \<String\>\]: The unique identifier of deviceConfigurationState
+  \[DeviceEnrollmentConfigurationId \<String\>\]: The unique identifier of deviceEnrollmentConfiguration
+  \[DeviceId \<String\>\]: Property in multi-part unique identifier of deviceHealthScriptPolicyState
+  \[DeviceInstallStateId \<String\>\]: The unique identifier of deviceInstallState
+  \[DeviceLogCollectionResponseId \<String\>\]: The unique identifier of deviceLogCollectionResponse
+  \[DeviceManagementConfigurationSettingDefinitionId \<String\>\]: The unique identifier of deviceManagementConfigurationSettingDefinition
+  \[DeviceManagementConfigurationSettingId \<String\>\]: The unique identifier of deviceManagementConfigurationSetting
+  \[DeviceManagementTroubleshootingEventId \<String\>\]: The unique identifier of deviceManagementTroubleshootingEvent
+  \[EnrollmentConfigurationAssignmentId \<String\>\]: The unique identifier of enrollmentConfigurationAssignment
+  \[EnterpriseCodeSigningCertificateId \<String\>\]: The unique identifier of enterpriseCodeSigningCertificate
+  \[Id \<String\>\]: Property in multi-part unique identifier of deviceHealthScriptPolicyState
+  \[IosLobAppProvisioningConfigurationAssignmentId \<String\>\]: The unique identifier of iosLobAppProvisioningConfigurationAssignment
+  \[IosLobAppProvisioningConfigurationId \<String\>\]: The unique identifier of iosLobAppProvisioningConfiguration
+  \[IosManagedAppProtectionId \<String\>\]: The unique identifier of iosManagedAppProtection
+  \[IosVppAppAssignedLicenseId \<String\>\]: The unique identifier of iosVppAppAssignedLicense
+  \[ManagedAppOperationId \<String\>\]: The unique identifier of managedAppOperation
+  \[ManagedAppPolicyId \<String\>\]: The unique identifier of managedAppPolicy
+  \[ManagedAppRegistrationId \<String\>\]: The unique identifier of managedAppRegistration
+  \[ManagedAppStatusId \<String\>\]: The unique identifier of managedAppStatus
+  \[ManagedDeviceId \<String\>\]: The unique identifier of managedDevice
+  \[ManagedDeviceMobileAppConfigurationAssignmentId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationAssignment
+  \[ManagedDeviceMobileAppConfigurationDeviceStatusId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationDeviceStatus
+  \[ManagedDeviceMobileAppConfigurationId \<String\>\]: The unique identifier of managedDeviceMobileAppConfiguration
+  \[ManagedDeviceMobileAppConfigurationStateId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationState
+  \[ManagedDeviceMobileAppConfigurationUserStatusId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationUserStatus
+  \[ManagedEBookAssignmentId \<String\>\]: The unique identifier of managedEBookAssignment
+  \[ManagedEBookCategoryId \<String\>\]: The unique identifier of managedEBookCategory
+  \[ManagedEBookId \<String\>\]: The unique identifier of managedEBook
+  \[ManagedMobileAppId \<String\>\]: The unique identifier of managedMobileApp
+  \[MdmWindowsInformationProtectionPolicyId \<String\>\]: The unique identifier of mdmWindowsInformationProtectionPolicy
+  \[MobileAppAssignmentId \<String\>\]: The unique identifier of mobileAppAssignment
+  \[MobileAppCategoryId \<String\>\]: The unique identifier of mobileAppCategory
+  \[MobileAppContentFileId \<String\>\]: The unique identifier of mobileAppContentFile
+  \[MobileAppContentId \<String\>\]: The unique identifier of mobileAppContent
+  \[MobileAppId \<String\>\]: The unique identifier of mobileApp
+  \[MobileAppIntentAndStateId \<String\>\]: The unique identifier of mobileAppIntentAndState
+  \[MobileAppProvisioningConfigGroupAssignmentId \<String\>\]: The unique identifier of mobileAppProvisioningConfigGroupAssignment
+  \[MobileAppRelationshipId \<String\>\]: The unique identifier of mobileAppRelationship
+  \[MobileAppTroubleshootingEventId \<String\>\]: The unique identifier of mobileAppTroubleshootingEvent
+  \[MobileContainedAppId \<String\>\]: The unique identifier of mobileContainedApp
+  \[PolicyId \<String\>\]: Property in multi-part unique identifier of deviceHealthScriptPolicyState
+  \[PolicySetAssignmentId \<String\>\]: The unique identifier of policySetAssignment
+  \[PolicySetId \<String\>\]: The unique identifier of policySet
+  \[PolicySetItemId \<String\>\]: The unique identifier of policySetItem
+  \[SecurityBaselineSettingStateId \<String\>\]: The unique identifier of securityBaselineSettingState
+  \[SecurityBaselineStateId \<String\>\]: The unique identifier of securityBaselineState
+  \[TargetedManagedAppConfigurationId \<String\>\]: The unique identifier of targetedManagedAppConfiguration
+  \[TargetedManagedAppPolicyAssignmentId \<String\>\]: The unique identifier of targetedManagedAppPolicyAssignment
+  \[UserId \<String\>\]: The unique identifier of user
+  \[UserInstallStateSummaryId \<String\>\]: The unique identifier of userInstallStateSummary
+  \[VppTokenId \<String\>\]: The unique identifier of vppToken
+  \[WindowsDefenderApplicationControlSupplementalPolicyAssignmentId \<String\>\]: The unique identifier of windowsDefenderApplicationControlSupplementalPolicyAssignment
+  \[WindowsDefenderApplicationControlSupplementalPolicyDeploymentStatusId \<String\>\]: The unique identifier of windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
+  \[WindowsDefenderApplicationControlSupplementalPolicyId \<String\>\]: The unique identifier of windowsDefenderApplicationControlSupplementalPolicy
+  \[WindowsDeviceMalwareStateId \<String\>\]: The unique identifier of windowsDeviceMalwareState
+  \[WindowsInformationProtectionAppLockerFileId \<String\>\]: The unique identifier of windowsInformationProtectionAppLockerFile
+  \[WindowsInformationProtectionDeviceRegistrationId \<String\>\]: The unique identifier of windowsInformationProtectionDeviceRegistration
+  \[WindowsInformationProtectionPolicyId \<String\>\]: The unique identifier of windowsInformationProtectionPolicy
+  \[WindowsInformationProtectionWipeActionId \<String\>\]: The unique identifier of windowsInformationProtectionWipeAction
+  \[WindowsManagedAppProtectionId \<String\>\]: The unique identifier of windowsManagedAppProtection
 
-`INPUTOBJECT <IDevicesCorporateManagementIdentity>`: Identity Parameter
-  - `[AndroidManagedAppProtectionId <String>]`: The unique identifier of androidManagedAppProtection
-  - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
-  - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: The unique identifier of assignmentFilterEvaluationStatusDetails
-  - `[BundleId <String>]`: Usage: bundleId='{bundleId}'
-  - `[DefaultManagedAppProtectionId <String>]`: The unique identifier of defaultManagedAppProtection
-  - `[DetectedAppId <String>]`: The unique identifier of detectedApp
-  - `[DeviceAppManagementTaskId <String>]`: The unique identifier of deviceAppManagementTask
-  - `[DeviceCompliancePolicyStateId <String>]`: The unique identifier of deviceCompliancePolicyState
-  - `[DeviceConfigurationStateId <String>]`: The unique identifier of deviceConfigurationState
-  - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
-  - `[DeviceId <String>]`: Property in multi-part unique identifier of deviceHealthScriptPolicyState
-  - `[DeviceInstallStateId <String>]`: The unique identifier of deviceInstallState
-  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
-  - `[DeviceManagementConfigurationSettingDefinitionId <String>]`: The unique identifier of deviceManagementConfigurationSettingDefinition
-  - `[DeviceManagementConfigurationSettingId <String>]`: The unique identifier of deviceManagementConfigurationSetting
-  - `[DeviceManagementTroubleshootingEventId <String>]`: The unique identifier of deviceManagementTroubleshootingEvent
-  - `[EnrollmentConfigurationAssignmentId <String>]`: The unique identifier of enrollmentConfigurationAssignment
-  - `[EnterpriseCodeSigningCertificateId <String>]`: The unique identifier of enterpriseCodeSigningCertificate
-  - `[Id <String>]`: Property in multi-part unique identifier of deviceHealthScriptPolicyState
-  - `[IosLobAppProvisioningConfigurationAssignmentId <String>]`: The unique identifier of iosLobAppProvisioningConfigurationAssignment
-  - `[IosLobAppProvisioningConfigurationId <String>]`: The unique identifier of iosLobAppProvisioningConfiguration
-  - `[IosManagedAppProtectionId <String>]`: The unique identifier of iosManagedAppProtection
-  - `[ManagedAppOperationId <String>]`: The unique identifier of managedAppOperation
-  - `[ManagedAppPolicyId <String>]`: The unique identifier of managedAppPolicy
-  - `[ManagedAppRegistrationId <String>]`: The unique identifier of managedAppRegistration
-  - `[ManagedAppStatusId <String>]`: The unique identifier of managedAppStatus
-  - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
-  - `[ManagedDeviceMobileAppConfigurationAssignmentId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationAssignment
-  - `[ManagedDeviceMobileAppConfigurationDeviceStatusId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationDeviceStatus
-  - `[ManagedDeviceMobileAppConfigurationId <String>]`: The unique identifier of managedDeviceMobileAppConfiguration
-  - `[ManagedDeviceMobileAppConfigurationStateId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationState
-  - `[ManagedDeviceMobileAppConfigurationUserStatusId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationUserStatus
-  - `[ManagedEBookAssignmentId <String>]`: The unique identifier of managedEBookAssignment
-  - `[ManagedEBookCategoryId <String>]`: The unique identifier of managedEBookCategory
-  - `[ManagedEBookId <String>]`: The unique identifier of managedEBook
-  - `[ManagedMobileAppId <String>]`: The unique identifier of managedMobileApp
-  - `[MdmWindowsInformationProtectionPolicyId <String>]`: The unique identifier of mdmWindowsInformationProtectionPolicy
-  - `[MobileAppAssignmentId <String>]`: The unique identifier of mobileAppAssignment
-  - `[MobileAppCategoryId <String>]`: The unique identifier of mobileAppCategory
-  - `[MobileAppId <String>]`: The unique identifier of mobileApp
-  - `[MobileAppIntentAndStateId <String>]`: The unique identifier of mobileAppIntentAndState
-  - `[MobileAppProvisioningConfigGroupAssignmentId <String>]`: The unique identifier of mobileAppProvisioningConfigGroupAssignment
-  - `[MobileAppRelationshipId <String>]`: The unique identifier of mobileAppRelationship
-  - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
-  - `[PolicyId <String>]`: Property in multi-part unique identifier of deviceHealthScriptPolicyState
-  - `[PolicySetAssignmentId <String>]`: The unique identifier of policySetAssignment
-  - `[PolicySetId <String>]`: The unique identifier of policySet
-  - `[PolicySetItemId <String>]`: The unique identifier of policySetItem
-  - `[SecurityBaselineSettingStateId <String>]`: The unique identifier of securityBaselineSettingState
-  - `[SecurityBaselineStateId <String>]`: The unique identifier of securityBaselineState
-  - `[TargetedManagedAppConfigurationId <String>]`: The unique identifier of targetedManagedAppConfiguration
-  - `[TargetedManagedAppPolicyAssignmentId <String>]`: The unique identifier of targetedManagedAppPolicyAssignment
-  - `[UserId <String>]`: The unique identifier of user
-  - `[UserInstallStateSummaryId <String>]`: The unique identifier of userInstallStateSummary
-  - `[VppTokenId <String>]`: The unique identifier of vppToken
-  - `[WindowsDefenderApplicationControlSupplementalPolicyAssignmentId <String>]`: The unique identifier of windowsDefenderApplicationControlSupplementalPolicyAssignment
-  - `[WindowsDefenderApplicationControlSupplementalPolicyDeploymentStatusId <String>]`: The unique identifier of windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
-  - `[WindowsDefenderApplicationControlSupplementalPolicyId <String>]`: The unique identifier of windowsDefenderApplicationControlSupplementalPolicy
-  - `[WindowsDeviceMalwareStateId <String>]`: The unique identifier of windowsDeviceMalwareState
-  - `[WindowsInformationProtectionAppLockerFileId <String>]`: The unique identifier of windowsInformationProtectionAppLockerFile
-  - `[WindowsInformationProtectionDeviceRegistrationId <String>]`: The unique identifier of windowsInformationProtectionDeviceRegistration
-  - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
-  - `[WindowsInformationProtectionWipeActionId <String>]`: The unique identifier of windowsInformationProtectionWipeAction
-  - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
-
-`MOBILEAPPLIST <IMicrosoftGraphMobileAppIntentAndStateDetail[]>`: The list of payload intents and states for the tenant.
-  - `[ApplicationId <String>]`: MobieApp identifier.
-  - `[DisplayName <String>]`: The admin provided or imported title of the app.
-  - `[DisplayVersion <String>]`: Human readable version of the application
-  - `[InstallState <ResultantAppState?>]`: A list of possible states for application status on an individual device. When devices contact the Intune service and find targeted application enforcement intent, the status of the enforcement is recorded and becomes accessible in the Graph API. Since the application status is identified during device interaction with the Intune service, status records do not immediately appear upon application group assignment; it is created only after the assignment is evaluated in the service and devices start receiving the policy during check-ins.
-  - `[MobileAppIntent <MobileAppIntent?>]`: Indicates the status of the mobile app on the device.
-  - `[SupportedDeviceTypes <IMicrosoftGraphMobileAppSupportedDeviceType[]>]`: The supported platforms for the app.
-    - `[MaximumOperatingSystemVersion <String>]`: Maximum OS version
-    - `[MinimumOperatingSystemVersion <String>]`: Minimum OS version
-    - `[Type <DeviceType?>]`: Device type.
+MOBILEAPPLIST \<IMicrosoftGraphMobileAppIntentAndStateDetail\[\]\>: The list of payload intents and states for the tenant.
+  \[ApplicationId \<String\>\]: MobieApp identifier.
+  \[DisplayName \<String\>\]: The admin provided or imported title of the app.
+  \[DisplayVersion \<String\>\]: Human readable version of the application
+  \[InstallState \<ResultantAppState?\>\]: A list of possible states for application status on an individual device.
+When devices contact the Intune service and find targeted application enforcement intent, the status of the enforcement is recorded and becomes accessible in the Graph API.
+Since the application status is identified during device interaction with the Intune service, status records do not immediately appear upon application group assignment; it is created only after the assignment is evaluated in the service and devices start receiving the policy during check-ins.
+  \[MobileAppIntent \<MobileAppIntent?\>\]: Indicates the status of the mobile app on the device.
+  \[SupportedDeviceTypes \<IMicrosoftGraphMobileAppSupportedDeviceType\[\]\>\]: The supported platforms for the app.
+    \[MaximumOperatingSystemVersion \<String\>\]: Maximum OS version
+    \[MinimumOperatingSystemVersion \<String\>\]: Minimum OS version
+    \[Type \<DeviceType?\>\]: Device type.
 
 ## RELATED LINKS
 
-## RELATED LINKS
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetausermobileappintentandstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetausermobileappintentandstate)
+
 

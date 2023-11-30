@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorycustomsecurityattributedefinitionallowedvalue
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Update-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue
 
 ## SYNOPSIS
 Update the properties of an allowedValue object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue?view=graph-powershell-1.0)
@@ -45,6 +47,7 @@ Update-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue
 
 ## DESCRIPTION
 Update the properties of an allowedValue object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue Cmdlet
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 
 ### -IsActive
 Indicates whether the predefined value is active or deactivated.
-If set to false, this predefined value cannot be assigned to any additional supported directory objects.
+If set to false, this predefined value can't be assigned to any more supported directory objects.
 
 ```yaml
 Type: SwitchParameter
@@ -221,7 +224,7 @@ BODYPARAMETER \<IMicrosoftGraphAllowedValue\>: allowedValue
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
   \[IsActive \<Boolean?\>\]: Indicates whether the predefined value is active or deactivated.
-If set to false, this predefined value cannot be assigned to any additional supported directory objects.
+If set to false, this predefined value can't be assigned to any more supported directory objects.
 
 INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[AdministrativeUnitId \<String\>\]: The unique identifier of administrativeUnit
@@ -234,6 +237,7 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[ContractId \<String\>\]: The unique identifier of contract
   \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
   \[DeviceId \<String\>\]: The unique identifier of device
+  \[DeviceLocalCredentialInfoId \<String\>\]: The unique identifier of deviceLocalCredentialInfo
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
   \[DirectoryRoleId \<String\>\]: The unique identifier of directoryRole
   \[DirectoryRoleTemplateId \<String\>\]: The unique identifier of directoryRoleTemplate

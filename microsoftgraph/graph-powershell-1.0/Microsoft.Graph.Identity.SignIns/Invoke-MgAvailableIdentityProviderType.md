@@ -58,7 +58,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -103,7 +103,7 @@ Aliases: Limit
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -118,7 +118,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -133,8 +133,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.String
 ## NOTES
 
-ALIASES
-
 ## RELATED LINKS
-
 [Invoke-MgBetaAvailableIdentityProviderType](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Invoke-MgBetaAvailableIdentityProviderType?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mgavailableidentityprovidertype](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mgavailableidentityprovidertype)
+

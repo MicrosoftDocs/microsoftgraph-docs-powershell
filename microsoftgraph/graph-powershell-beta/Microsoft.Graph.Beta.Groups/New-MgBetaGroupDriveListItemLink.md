@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupdrivelistitemlink
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # New-MgBetaGroupDriveListItemLink
@@ -11,6 +12,7 @@ schema: 2.0.0
 Create a sharing link for a listItem.
 The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
 listItem resources inherit sharing permissions from the list the item resides in.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -48,6 +50,7 @@ New-MgBetaGroupDriveListItemLink -InputObject <IGroupsIdentity>
 Create a sharing link for a listItem.
 The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
 listItem resources inherit sharing permissions from the list the item resides in.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
