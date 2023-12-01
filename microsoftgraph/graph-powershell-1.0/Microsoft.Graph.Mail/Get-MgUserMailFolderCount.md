@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldercount
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the number of the resource
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserMailFolderCount](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -27,6 +24,18 @@ Get-MgUserMailFolderCount -InputObject <IMailIdentity> [-Filter <String>] [<Comm
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -102,8 +111,6 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserMailFolderCount](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldercount](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldercount)
-
 

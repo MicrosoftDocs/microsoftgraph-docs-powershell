@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintconnector
 schema: 2.0.0
-ms.prod: cloud-printing
 ---
 
 # Remove-MgPrintConnector
@@ -11,9 +10,6 @@ ms.prod: cloud-printing
 ## SYNOPSIS
 Delete (unregister) a printConnector.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaPrintConnector](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintConnector?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -34,17 +30,13 @@ Delete (unregister) a printConnector.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Devices.CloudPrint
+```
 
 Remove-MgPrintConnector -PrintConnectorId $printConnectorId
-```
-This example shows how to use the Remove-MgPrintConnector Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -171,7 +163,6 @@ INPUTOBJECT \<IDevicesCloudPrintIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaPrintConnector](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintConnector?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintconnector)
 

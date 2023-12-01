@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 Module Guid: c767240d-585c-42cb-bb2f-6e76e6d639d4
 Download Help Link: {{ Update Download Link }}

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationmeassignmentresource
 schema: 2.0.0
-ms.prod: education
 ---
 
 # New-MgBetaEducationMeAssignmentResource
@@ -13,9 +12,6 @@ Create an assignment resource.
 Only teachers can perform this operation.
 You can create the following types of assignment resources: Every resource has an @odata.type property to indicate which type of resource is being created.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgEducationMeAssignmentResource](/powershell/module/Microsoft.Graph.Education/New-MgEducationMeAssignmentResource?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -52,6 +48,16 @@ You can create the following types of assignment resources: Every resource has a
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -306,7 +312,6 @@ This property is read-only.
   \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
 
 ## RELATED LINKS
-[New-MgEducationMeAssignmentResource](/powershell/module/Microsoft.Graph.Education/New-MgEducationMeAssignmentResource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationmeassignmentresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationmeassignmentresource)
 

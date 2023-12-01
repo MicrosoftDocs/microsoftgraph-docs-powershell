@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleswapshiftchangerequest
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create an instance of a swapShiftsChangeRequest object.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgTeamScheduleSwapShiftChangeRequest](/powershell/module/Microsoft.Graph.Teams/New-MgTeamScheduleSwapShiftChangeRequest?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,6 +48,22 @@ New-MgBetaTeamScheduleSwapShiftChangeRequest -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create an instance of a swapShiftsChangeRequest object.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -418,8 +431,6 @@ For example, if a user changes their display name, the API might show the new va
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
 ## RELATED LINKS
-[New-MgTeamScheduleSwapShiftChangeRequest](/powershell/module/Microsoft.Graph.Teams/New-MgTeamScheduleSwapShiftChangeRequest?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleswapshiftchangerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleswapshiftchangerequest)
-
 

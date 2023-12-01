@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementaccesspackageassignmentapprovalstage
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Update-MgEntitlementManagementAccessPackageAssignmentApprovalStage
@@ -46,6 +45,22 @@ Update-MgEntitlementManagementAccessPackageAssignmentApprovalStage -InputObject 
 ## DESCRIPTION
 Approve or deny an approvalStage object in an approval.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -408,5 +423,4 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementaccesspackageassignmentapprovalstage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementaccesspackageassignmentapprovalstage)
-
 

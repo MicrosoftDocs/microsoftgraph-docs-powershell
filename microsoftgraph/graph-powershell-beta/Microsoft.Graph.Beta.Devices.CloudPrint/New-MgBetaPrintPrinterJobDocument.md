@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintprinterjobdocument
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to documents for print
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgPrintPrinterJobDocument](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintPrinterJobDocument?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45,6 +42,18 @@ New-MgBetaPrintPrinterJobDocument -InputObject <IDevicesCloudPrintIdentity>
 
 ## DESCRIPTION
 Create new navigation property to documents for print
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -374,8 +383,6 @@ INPUTOBJECT \<IDevicesCloudPrintIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgPrintPrinterJobDocument](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintPrinterJobDocument?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintprinterjobdocument](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintprinterjobdocument)
-
 

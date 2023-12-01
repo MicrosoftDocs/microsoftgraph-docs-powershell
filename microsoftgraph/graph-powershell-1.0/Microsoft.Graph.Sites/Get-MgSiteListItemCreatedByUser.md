@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitemcreatedbyuser
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Identity of the user who created the item.
 Read-only.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSiteListItemCreatedByUser](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListItemCreatedByUser?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,6 +28,18 @@ Get-MgSiteListItemCreatedByUser -InputObject <ISitesIdentity> [-ExpandProperty <
 ## DESCRIPTION
 Identity of the user who created the item.
 Read-only.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -181,8 +190,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaSiteListItemCreatedByUser](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListItemCreatedByUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitemcreatedbyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitemcreatedbyuser)
-
 

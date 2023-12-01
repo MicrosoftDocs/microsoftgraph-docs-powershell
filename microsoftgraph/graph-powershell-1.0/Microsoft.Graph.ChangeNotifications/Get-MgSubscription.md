@@ -1,10 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.ChangeNotifications-help.xml
 Module Name: Microsoft.Graph.ChangeNotifications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/get-mgsubscription
 schema: 2.0.0
-ms.prod: change-notifications
-ms.prod: change-notifications
 ---
 
 # Get-MgSubscription
@@ -13,9 +11,6 @@ ms.prod: change-notifications
 Retrieve the properties and relationships of a subscription.
 See the table in the Permissions section for the list of resources that support subscribing to change notifications.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/Get-MgBetaSubscription?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -41,17 +36,13 @@ See the table in the Permissions section for the list of resources that support 
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.ChangeNotifications
+```
 
 Get-MgSubscription
-
-```
-This example shows how to use the Get-MgSubscription Cmdlet.
-
 
 ## PARAMETERS
 
@@ -181,7 +172,6 @@ INPUTOBJECT \<IChangeNotificationsIdentity\>: Identity Parameter
   \[SubscriptionId \<String\>\]: The unique identifier of subscription
 
 ## RELATED LINKS
-[Get-MgBetaSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/Get-MgBetaSubscription?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/get-mgsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/get-mgsubscription)
 

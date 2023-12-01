@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdriverootchild
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # New-MgGroupDriveRootChild
 
 ## SYNOPSIS
 Create new navigation property to children for groups
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupDriveRootChild](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveRootChild?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -76,6 +72,18 @@ New-MgGroupDriveRootChild -InputObject <IFilesIdentity> -BodyParameter <IMicroso
 
 ## DESCRIPTION
 Create new navigation property to children for groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -29005,8 +29013,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[New-MgBetaGroupDriveRootChild](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveRootChild?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdriverootchild](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdriverootchild)
-
 

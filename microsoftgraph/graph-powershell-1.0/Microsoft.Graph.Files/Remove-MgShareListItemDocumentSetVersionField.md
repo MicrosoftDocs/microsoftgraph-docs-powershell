@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgsharelistitemdocumentsetversionfield
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property fields for shares
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaShareListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareListItemDocumentSetVersionField?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -41,6 +38,18 @@ Remove-MgShareListItemDocumentSetVersionField -InputObject <IFilesIdentity> [-If
 
 ## DESCRIPTION
 Delete navigation property fields for shares
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -208,8 +217,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaShareListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareListItemDocumentSetVersionField?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgsharelistitemdocumentsetversionfield](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgsharelistitemdocumentsetversionfield)
-
 

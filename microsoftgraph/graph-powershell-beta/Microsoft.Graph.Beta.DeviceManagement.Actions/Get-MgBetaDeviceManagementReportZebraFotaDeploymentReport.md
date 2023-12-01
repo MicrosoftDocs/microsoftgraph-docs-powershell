@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportzebrafotadeploymentreport
@@ -29,6 +29,22 @@ Get-MgBetaDeviceManagementReportZebraFotaDeploymentReport -OutFile <String>
 
 ## DESCRIPTION
 Invoke action getZebraFotaDeploymentReport
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -289,5 +305,4 @@ BODYPARAMETER \<IPaths13QvfzrDevicemanagementReportsMicrosoftGraphGetzebrafotade
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportzebrafotadeploymentreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportzebrafotadeploymentreport)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintshareprinter
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The printer that this printer share is related to.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPrintSharePrinter](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintSharePrinter?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Get-MgPrintSharePrinter -InputObject <IDevicesCloudPrintIdentity> [-ExpandProper
 
 ## DESCRIPTION
 The printer that this printer share is related to.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -124,8 +137,6 @@ INPUTOBJECT \<IDevicesCloudPrintIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaPrintSharePrinter](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintSharePrinter?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintshareprinter](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintshareprinter)
-
 

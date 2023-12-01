@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaserviceprincipalriskdetection
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to servicePrincipalRiskDetections for identityProtection
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgServicePrincipalRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgServicePrincipalRiskDetection?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -37,28 +34,20 @@ New-MgBetaServicePrincipalRiskDetection -BodyParameter <IMicrosoftGraphServicePr
 Create new navigation property to servicePrincipalRiskDetections for identityProtection
 
 ## EXAMPLES
-### Example 1: List risk detections
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 Get-MgBetaServicePrincipalRiskDetection
+
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgBetaBetaServicePrincipalRiskDetection Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: List risk detections and filter the results
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 Get-MgBetaServicePrincipalRiskDetection -Filter "riskEventType eq 'investigationsThreatIntelligence' or riskLevel eq 'medium'"
-```
-This example shows how to use the New-MgBetaBetaServicePrincipalRiskDetection Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -558,7 +547,6 @@ Writable on OneDrive Personal.
 This is calculated using latitude/longitude information from the sign-in activity.
 
 ## RELATED LINKS
-[New-MgServicePrincipalRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgServicePrincipalRiskDetection?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaserviceprincipalriskdetection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaserviceprincipalriskdetection)
 

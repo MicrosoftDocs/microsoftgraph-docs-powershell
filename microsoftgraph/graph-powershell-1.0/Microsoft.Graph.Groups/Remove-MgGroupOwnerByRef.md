@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupownerbyref
@@ -11,9 +11,6 @@ schema: 2.0.0
 Remove an owner from a Microsoft 365 group or a security group through the owners navigation property.
 Once owners are assigned to a group, the last owner (a user object) of the group cannot be removed.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaGroupOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupOwnerByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -35,17 +32,13 @@ Once owners are assigned to a group, the last owner (a user object) of the group
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Groups
+```
 
 Remove-MgGroupOwnerByRef -GroupId $groupId -DirectoryObjectId $directoryObjectId
-```
-This example shows how to use the Remove-MgGroupOwnerByRef Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -224,7 +217,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
-[Remove-MgBetaGroupOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupOwnerByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupownerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupownerbyref)
 

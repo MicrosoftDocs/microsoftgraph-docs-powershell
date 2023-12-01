@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkdeletedteamchannel
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to channels for teamwork
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgTeamworkDeletedTeamChannel](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedTeamChannel?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -53,6 +50,22 @@ New-MgBetaTeamworkDeletedTeamChannel -InputObject <ITeamsIdentity> -BodyParamete
 
 ## DESCRIPTION
 Create new navigation property to channels for teamwork
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -22789,8 +22802,6 @@ For example, if a user changes their display name, the API might show the new va
 Read only.
 
 ## RELATED LINKS
-[New-MgTeamworkDeletedTeamChannel](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedTeamChannel?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkdeletedteamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkdeletedteamchannel)
-
 

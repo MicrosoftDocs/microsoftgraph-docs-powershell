@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadministrativeunit
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Update-MgBetaAdministrativeUnit
@@ -50,14 +49,11 @@ Update the properties of an administrativeUnit object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Update an administrative unit
 
-```powershell
-Update-MgBetaDirectoryAdministrativeUnit -AdministrativeUnitId 'd924fbd3-69c5-4cdf-b9ea-9b0badcf9c4d' -Description 'East wing unit members'
-
+### EXAMPLE 1
 ```
-
-This example updates the description of the specified administrative unit.
+Update-MgBetaDirectoryAdministrativeUnit -AdministrativeUnitId 'd924fbd3-69c5-4cdf-b9ea-9b0badcf9c4d' -Description 'East wing unit members'
+```
 
 ## PARAMETERS
 

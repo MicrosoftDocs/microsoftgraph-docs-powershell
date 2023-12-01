@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclass
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Update-MgBetaEducationClass
@@ -11,9 +10,6 @@ ms.prod: education
 ## SYNOPSIS
 Update the properties of a class.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgEducationClass](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClass?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -66,10 +62,11 @@ Update the properties of a class.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 $params = @{
 	description = "History - World History 1"
@@ -77,11 +74,6 @@ $params = @{
 }
 
 Update-MgBetaEducationClass -EducationClassId $educationClassId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaEducationClass Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -38826,7 +38818,6 @@ TERM \<IMicrosoftGraphEducationTerm\>: educationTerm
   \[StartDate \<DateTime?\>\]: Start of the term.
 
 ## RELATED LINKS
-[Update-MgEducationClass](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClass?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclass](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclass)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausermanagedapppolicy
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Gets app restrictions for a given user.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserManagedAppPolicy](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserManagedAppPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,6 +27,22 @@ Get-MgBetaUserManagedAppPolicy -InputObject <IUsersFunctionsIdentity> [-Count] [
 
 ## DESCRIPTION
 Gets app restrictions for a given user.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -224,8 +237,6 @@ INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserManagedAppPolicy](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserManagedAppPolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausermanagedapppolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausermanagedapppolicy)
-
 

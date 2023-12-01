@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.DirectoryObjects-help.xml
 Module Name: Microsoft.Graph.DirectoryObjects
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectbyid
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Get-MgDirectoryObjectById
@@ -12,9 +11,6 @@ ms.prod: directory-management
 Return the directory objects specified in a list of IDs.
 Only a subset of user properties are returned by default in v1.0.
 Some common uses for this function are to: This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryObjectById](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Get-MgBetaDirectoryObjectById?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -37,11 +33,11 @@ Only a subset of user properties are returned by default in v1.0.
 Some common uses for this function are to: This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.DirectoryObjects
+```
 
 $params = @{
 	ids = @(
@@ -58,10 +54,6 @@ $params = @{
 }
 
 Get-MgDirectoryObjectById -BodyParameter $params
-
-```
-This example shows how to use the Get-MgDirectoryObjectById Cmdlet.
-
 
 ## PARAMETERS
 
@@ -178,7 +170,6 @@ BODYPARAMETER \<IPathsG5Xp0HDirectoryobjectsMicrosoftGraphGetbyidsPostRequestbod
   \[Types \<String\[\]\>\]:
 
 ## RELATED LINKS
-[Get-MgBetaDirectoryObjectById](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Get-MgBetaDirectoryObjectById?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectbyid](https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectbyid)
 

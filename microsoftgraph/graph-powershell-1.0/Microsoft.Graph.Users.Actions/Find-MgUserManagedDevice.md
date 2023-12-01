@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/find-mgusermanageddevice
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Find-MgUserManagedDevice
 
 ## SYNOPSIS
 Locate a device
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Find-MgBetaUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Find-MgBetaUserManagedDevice?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,6 +26,22 @@ Find-MgUserManagedDevice -InputObject <IUsersActionsIdentity> [-PassThru] [-What
 
 ## DESCRIPTION
 Locate a device
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -172,8 +184,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Find-MgBetaUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Find-MgBetaUserManagedDevice?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/find-mgusermanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/find-mgusermanageddevice)
-
 

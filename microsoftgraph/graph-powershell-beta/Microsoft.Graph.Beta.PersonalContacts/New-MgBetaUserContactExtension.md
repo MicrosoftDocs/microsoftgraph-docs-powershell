@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.Beta.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/new-mgbetausercontactextension
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to extensions for users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserContactExtension](/powershell/module/Microsoft.Graph.PersonalContacts/New-MgUserContactExtension?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -41,6 +38,22 @@ New-MgBetaUserContactExtension -InputObject <IPersonalContactsIdentity> -BodyPar
 
 ## DESCRIPTION
 Create new navigation property to extensions for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -191,8 +204,6 @@ INPUTOBJECT \<IPersonalContactsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgUserContactExtension](/powershell/module/Microsoft.Graph.PersonalContacts/New-MgUserContactExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/new-mgbetausercontactextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/new-mgbetausercontactextension)
-
 

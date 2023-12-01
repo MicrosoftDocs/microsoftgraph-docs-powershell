@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusiness
 schema: 2.0.0
-ms.prod: bookings
 ---
 
 # Update-MgBookingBusiness
@@ -11,9 +10,6 @@ ms.prod: bookings
 ## SYNOPSIS
 Update the properties of a bookingBusiness object.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaBookingBusiness?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -62,10 +58,11 @@ Update the properties of a bookingBusiness object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Bookings
+```
 
 $params = @{
 	email = "admin@fabrikam.com"
@@ -79,11 +76,6 @@ $params = @{
 }
 
 Update-MgBookingBusiness -BookingBusinessId $bookingBusinessId -BodyParameter $params
-```
-This example shows how to use the Update-MgBookingBusiness Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -907,7 +899,6 @@ Nullable.
 Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaBookingBusiness?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusiness](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusiness)
 

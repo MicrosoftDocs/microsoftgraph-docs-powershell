@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignment
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Update-MgEducationClassAssignment
@@ -14,9 +13,6 @@ Only teachers can perform this action.
 Alternatively, request to change the status of an assignment with publish action.
 Don't use a PATCH operation for this purpose.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -68,10 +64,11 @@ Don't use a PATCH operation for this purpose.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Education
+```
 
 $params = @{
 	displayName = "Reading and review test 09.03 #5"
@@ -79,16 +76,11 @@ $params = @{
 		contentType = "text"
 		content = "Read chapter 5 and write your review"
 	}
-	dueDateTime = [System.DateTime]::Parse("2021-09-10T00:00:00Z")
+	dueDateTime = \[System.DateTime\]::Parse("2021-09-10T00:00:00Z")
 	addedStudentAction = "none"
 }
 
 Update-MgEducationClassAssignment -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
-```
-This example shows how to use the Update-MgEducationClassAssignment Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -793,7 +785,6 @@ Read-only.
   \[UnsubmittedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
 
 ## RELATED LINKS
-[Update-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignment)
 

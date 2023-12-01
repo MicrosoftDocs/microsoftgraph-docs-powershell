@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerplantask
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # Get-MgPlannerPlanTask
@@ -11,9 +10,6 @@ ms.prod: planner
 ## SYNOPSIS
 Retrieve a list of plannerTask objects associated with a plannerPlan object.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPlannerPlanTask](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerPlanTask?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,17 +24,13 @@ Retrieve a list of plannerTask objects associated with a plannerPlan object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Planner
+```
 
 Get-MgPlannerPlanTask -PlannerPlanId $plannerPlanId
-
-```
-This example shows how to use the Get-MgPlannerPlanTask Cmdlet.
-
 
 ## PARAMETERS
 
@@ -219,7 +211,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaPlannerPlanTask](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerPlanTask?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerplantask](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerplantask)
 

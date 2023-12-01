@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/copy-mggroupdrivelistcontenttypetodefaultcontentlocation
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Copy-MgGroupDriveListContentTypeToDefaultContentLocation
@@ -12,9 +11,6 @@ ms.prod: sites-and-lists
 Copy a file to a default content location in a content type\]\[contentType\].
 The file can then be added as a default file or template via a POST operation.
 This API is available in the following \[national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Copy-MgBetaGroupDriveListContentTypeToDefaultContentLocation](/powershell/module/Microsoft.Graph.Beta.Groups/Copy-MgBetaGroupDriveListContentTypeToDefaultContentLocation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -53,6 +49,16 @@ The file can then be added as a default file or template via a POST operation.
 This API is available in the following \[national cloud deployments.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -340,7 +346,6 @@ It is an opaque string that consists of three identifiers of the site.
 For OneDrive, this property is not populated.
 
 ## RELATED LINKS
-[Copy-MgBetaGroupDriveListContentTypeToDefaultContentLocation](/powershell/module/Microsoft.Graph.Beta.Groups/Copy-MgBetaGroupDriveListContentTypeToDefaultContentLocation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/copy-mggroupdrivelistcontenttypetodefaultcontentlocation](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/copy-mggroupdrivelistcontenttypetodefaultcontentlocation)
 

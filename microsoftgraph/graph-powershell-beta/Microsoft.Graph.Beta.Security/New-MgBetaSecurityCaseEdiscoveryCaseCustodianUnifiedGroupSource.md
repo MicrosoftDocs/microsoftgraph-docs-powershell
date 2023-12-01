@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasecustodianunifiedgroupsource
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # New-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource
@@ -11,9 +10,6 @@ ms.prod: ediscovery
 ## SYNOPSIS
 Create a new unifiedGroupSource object associated with an eDiscovery custodian.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,11 +47,11 @@ Create a new unifiedGroupSource object associated with an eDiscovery custodian.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Create unifiedGroupSource with group SMTP address
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
+```
 
 $params = @{
 	group = @{
@@ -66,14 +62,10 @@ $params = @{
 
 New-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will create unifiedgroupsource with group smtp address
-
-### Example 2: Create unifiedGroupSource with group@odata.bind
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Security
+```
 
 $params = @{
 	"group@odata.bind" = "https://graph.microsoft.com/v1.0/groups/93f90172-fe05-43ea-83cf-ff785a40d610"
@@ -81,10 +73,6 @@ $params = @{
 }
 
 New-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId -BodyParameter $params
-
-```
-This example will create unifiedgroupsource with group@odata.bind
-
 
 ## PARAMETERS
 
@@ -15157,7 +15145,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[New-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasecustodianunifiedgroupsource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasecustodianunifiedgroupsource)
 

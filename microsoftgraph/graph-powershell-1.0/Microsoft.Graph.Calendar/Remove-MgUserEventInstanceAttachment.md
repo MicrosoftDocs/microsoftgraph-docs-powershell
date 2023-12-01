@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgusereventinstanceattachment
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Remove-MgUserEventInstanceAttachment
@@ -11,9 +10,6 @@ ms.prod: outlook
 ## SYNOPSIS
 Delete an attachment from a user calendar event, mail message, or group post.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserEventInstanceAttachment](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaUserEventInstanceAttachment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -32,6 +28,22 @@ Remove-MgUserEventInstanceAttachment -InputObject <ICalendarIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete an attachment from a user calendar event, mail message, or group post.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -200,8 +212,6 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaUserEventInstanceAttachment](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaUserEventInstanceAttachment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgusereventinstanceattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgusereventinstanceattachment)
-
 

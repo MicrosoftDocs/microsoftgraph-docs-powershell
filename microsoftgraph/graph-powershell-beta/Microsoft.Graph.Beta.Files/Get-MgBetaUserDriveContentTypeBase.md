@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrivecontenttypebase
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Parent contentType from which this content type is derived.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveContentTypeBase](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveContentTypeBase?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,6 +26,18 @@ Get-MgBetaUserDriveContentTypeBase -InputObject <IFilesIdentity> [-ExpandPropert
 
 ## DESCRIPTION
 Parent contentType from which this content type is derived.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -165,8 +174,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserDriveContentTypeBase](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveContentTypeBase?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrivecontenttypebase](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrivecontenttypebase)
-
 

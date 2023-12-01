@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.DeviceManagement.Functions
 Module Guid: a4ee7646-1105-456f-ae3b-1ce5d0e246ef
 Download Help Link: {{ Update Download Link }}

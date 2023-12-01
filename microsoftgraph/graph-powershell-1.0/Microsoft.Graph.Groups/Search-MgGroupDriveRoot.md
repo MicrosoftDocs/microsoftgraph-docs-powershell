@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/search-mggroupdriveroot
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function search
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Search-MgBetaGroupDriveRoot](/powershell/module/Microsoft.Graph.Beta.Groups/Search-MgBetaGroupDriveRoot?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,6 +27,22 @@ Search-MgGroupDriveRoot -InputObject <IGroupsIdentity> [-Count] [-Filter <String
 
 ## DESCRIPTION
 Invoke function search
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -252,8 +265,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
-[Search-MgBetaGroupDriveRoot](/powershell/module/Microsoft.Graph.Beta.Groups/Search-MgBetaGroupDriveRoot?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/search-mggroupdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/search-mggroupdriveroot)
-
 

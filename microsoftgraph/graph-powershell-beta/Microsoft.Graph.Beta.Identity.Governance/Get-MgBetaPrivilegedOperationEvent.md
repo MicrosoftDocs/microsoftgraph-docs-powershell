@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaprivilegedoperationevent
@@ -35,34 +35,30 @@ Get-MgBetaPrivilegedOperationEvent -InputObject <IIdentityGovernanceIdentity> [-
 Get entity from privilegedOperationEvents by key
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaPrivilegedOperationEvent Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.Governance
-Get-MgBetaPrivilegedOperationEvent -Filter "requestType eq 'Assign'" 
+
+### EXAMPLE 1
 ```
-This example shows how to use the Get-MgBetaPrivilegedOperationEvent Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaPrivilegedOperationEvent Cmdlet
-```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-Get-MgBetaPrivilegedOperationEvent -Filter "requestType eq 'Activate'" 
+Get-MgBetaPrivilegedOperationEvent -Filter "requestType eq 'Assign'"
 ```
-This example shows how to use the Get-MgBetaPrivilegedOperationEvent Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 3: Using the Get-MgBetaPrivilegedOperationEvent Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-Get-MgBetaPrivilegedOperationEvent -Filter "requestType eq 'Deactivate'" 
+Get-MgBetaPrivilegedOperationEvent -Filter "requestType eq 'Activate'"
 ```
-This example shows how to use the Get-MgBetaPrivilegedOperationEvent Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 4: Using the Get-MgBetaPrivilegedOperationEvent Cmdlet
-```powershell
+
+### EXAMPLE 3
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-Get-MgBetaPrivilegedOperationEvent -Filter "(creationDateTime ge 2017-06-25T07:00:00Z) and (creationDateTime le 2017-07-25T17:30:17Z)" -CountVariable CountVar -Sort "creationDateTime desc" 
+Get-MgBetaPrivilegedOperationEvent -Filter "requestType eq 'Deactivate'"
 ```
-This example shows how to use the Get-MgBetaPrivilegedOperationEvent Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### EXAMPLE 4
+```
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+Get-MgBetaPrivilegedOperationEvent -Filter "(creationDateTime ge 2017-06-25T07:00:00Z) and (creationDateTime le 2017-07-25T17:30:17Z)" -CountVariable CountVar -Sort "creationDateTime desc"
+```
 
 ## PARAMETERS
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/confirm-mgbetaauditlogsigninsafe
 schema: 2.0.0
-ms.prod: identity-and-access-reports
 ---
 
 # Confirm-MgBetaAuditLogSignInSafe
@@ -36,8 +35,9 @@ For details about investigating Identity Protection risks, see How to investigat
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Confirm-MgBetaAuditLogSignInSafe Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Reports
 $params = @{
 	RequestIds = @(
@@ -48,8 +48,6 @@ $params = @{
 }
 Confirm-MgBetaAuditLogSignInSafe -BodyParameter $params
 ```
-This example shows how to use the Confirm-MgBetaAuditLogSignInSafe Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriveitemanalyticitemactivitystat
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property itemActivityStats in users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveItemAnalyticItemActivityStat?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,6 +48,18 @@ Update-MgBetaUserDriveItemAnalyticItemActivityStat -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Update the navigation property itemActivityStats in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -15180,8 +15189,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[Update-MgUserDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveItemAnalyticItemActivityStat?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriveitemanalyticitemactivitystat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriveitemanalyticitemactivitystat)
-
 

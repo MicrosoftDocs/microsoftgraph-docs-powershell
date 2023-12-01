@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolisttask
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Update-MgBetaUserTodoListTask
@@ -11,9 +10,6 @@ ms.prod: outlook
 ## SYNOPSIS
 Update the properties of a todoTask object.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserTodoListTask](/powershell/module/Microsoft.Graph.Users/Update-MgUserTodoListTask?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -63,10 +59,11 @@ Update the properties of a todoTask object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users
+```
 
 $params = @{
 	dueDateTime = @{
@@ -77,11 +74,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgBetaUserTodoListTask -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaUserTodoListTask Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -801,7 +793,6 @@ For example, '2019-04-16T09:00:00'.
 See below for possible values.
 
 ## RELATED LINKS
-[Update-MgUserTodoListTask](/powershell/module/Microsoft.Graph.Users/Update-MgUserTodoListTask?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolisttask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolisttask)
 

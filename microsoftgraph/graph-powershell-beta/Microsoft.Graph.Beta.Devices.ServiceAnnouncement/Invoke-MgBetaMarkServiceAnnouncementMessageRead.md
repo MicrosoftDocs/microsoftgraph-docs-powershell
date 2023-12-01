@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetamarkserviceannouncementmessageread
 schema: 2.0.0
-ms.prod: service-communications
 ---
 
 # Invoke-MgBetaMarkServiceAnnouncementMessageRead
@@ -11,9 +10,6 @@ ms.prod: service-communications
 ## SYNOPSIS
 Mark a list of serviceUpdateMessages as read for the signed in user.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgMarkServiceAnnouncementMessageRead](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgMarkServiceAnnouncementMessageRead?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -35,11 +31,11 @@ Mark a list of serviceUpdateMessages as read for the signed in user.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
+```
 
 $params = @{
 	messageIds = @(
@@ -49,10 +45,6 @@ $params = @{
 }
 
 Invoke-MgBetaMarkServiceAnnouncementMessageRead -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgBetaMarkServiceAnnouncementMessageRead Cmdlet.
-
 
 ## PARAMETERS
 
@@ -153,7 +145,6 @@ BODYPARAMETER \<IPaths9Q4ErzAdminServiceannouncementMessagesMicrosoftGraphMarkre
   \[MessageIds \<String\[\]\>\]:
 
 ## RELATED LINKS
-[Invoke-MgMarkServiceAnnouncementMessageRead](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgMarkServiceAnnouncementMessageRead?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetamarkserviceannouncementmessageread](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetamarkserviceannouncementmessageread)
 

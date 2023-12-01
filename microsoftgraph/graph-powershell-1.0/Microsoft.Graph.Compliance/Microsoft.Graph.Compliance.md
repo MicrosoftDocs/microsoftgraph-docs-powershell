@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Compliance
 Module Guid: 7478368f-6e69-4d5a-a06d-07ae47a87ec4
 Download Help Link: {{ Update Download Link }}

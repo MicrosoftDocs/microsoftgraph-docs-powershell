@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadomainserviceconfigurationrecord
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to serviceConfigurationRecords for domains
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDomainServiceConfigurationRecord](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDomainServiceConfigurationRecord?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45,17 +42,13 @@ New-MgBetaDomainServiceConfigurationRecord -InputObject <IIdentityDirectoryManag
 Create new navigation property to serviceConfigurationRecords for domains
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+```
 
 Get-MgBetaDomainServiceConfigurationRecord -DomainId $domainId
-```
-This example shows how to use the New-MgBetaBetaDomainServiceConfigurationRecord Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -321,7 +314,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgDomainServiceConfigurationRecord](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDomainServiceConfigurationRecord?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadomainserviceconfigurationrecord](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadomainserviceconfigurationrecord)
 

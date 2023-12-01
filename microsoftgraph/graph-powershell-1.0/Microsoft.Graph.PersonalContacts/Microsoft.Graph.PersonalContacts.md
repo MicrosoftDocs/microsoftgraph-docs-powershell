@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.PersonalContacts
 Module Guid: a53e24d0-43dd-43ec-950e-7ac40ea986fc
 Download Help Link: {{ Update Download Link }}

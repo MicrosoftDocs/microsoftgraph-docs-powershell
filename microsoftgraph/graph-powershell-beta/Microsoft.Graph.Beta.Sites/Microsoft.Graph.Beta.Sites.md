@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Sites
 Module Guid: 7587c600-0c13-4efa-bc56-869a6245ef96
 Download Help Link: {{ Update Download Link }}

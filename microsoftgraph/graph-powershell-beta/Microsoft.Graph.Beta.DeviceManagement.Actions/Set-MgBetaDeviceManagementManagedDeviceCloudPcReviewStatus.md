@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/set-mgbetadevicemanagementmanageddevicecloudpcreviewstatus
 schema: 2.0.0
-ms.prod: cloud-pc
 ---
 
 # Set-MgBetaDeviceManagementManagedDeviceCloudPcReviewStatus
@@ -51,8 +50,9 @@ After the review is completed, use this API again to set the Cloud PC back to a 
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Set-MgBetaDeviceManagementManagedDeviceCloudPcReviewStatus Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
 $params = @{
 	ReviewStatus = @{
@@ -63,8 +63,6 @@ $params = @{
 }
 Set-MgBetaDeviceManagementManagedDeviceCloudPcReviewStatus -ManagedDeviceId $managedDeviceId -BodyParameter $params
 ```
-This example shows how to use the Set-MgBetaDeviceManagementManagedDeviceCloudPcReviewStatus Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

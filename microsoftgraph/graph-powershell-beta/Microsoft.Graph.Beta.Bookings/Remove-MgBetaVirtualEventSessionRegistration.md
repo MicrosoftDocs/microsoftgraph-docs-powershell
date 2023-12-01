@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetavirtualeventsessionregistration
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Remove-MgBetaVirtualEventSessionRegistration
@@ -29,6 +28,18 @@ Remove-MgBetaVirtualEventSessionRegistration -InputObject <IBookingsIdentity> [-
 ## DESCRIPTION
 Disable and delete the externalMeetingRegistration of an onlineMeeting.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -182,5 +193,4 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetavirtualeventsessionregistration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetavirtualeventsessionregistration)
-
 

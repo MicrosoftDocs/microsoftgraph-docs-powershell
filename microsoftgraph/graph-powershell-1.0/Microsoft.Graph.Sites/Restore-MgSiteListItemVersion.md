@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/restore-mgsitelistitemversion
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Restore-MgSiteListItemVersion
@@ -12,9 +11,6 @@ ms.prod: sharepoint
 Restore a previous version of a ListItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the item.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Restore-MgBetaSiteListItemVersion](/powershell/module/Microsoft.Graph.Beta.Sites/Restore-MgBetaSiteListItemVersion?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -36,13 +32,12 @@ This will create a new version with the contents of the previous version, but pr
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Restore-MgSiteListItemVersion Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Sites
 Restore-MgSiteListItemVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -ListItemVersionId $listItemVersionId
 ```
-This example shows how to use the Restore-MgSiteListItemVersion Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -224,7 +219,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Restore-MgBetaSiteListItemVersion](/powershell/module/Microsoft.Graph.Beta.Sites/Restore-MgBetaSiteListItemVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/restore-mgsitelistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/restore-mgsitelistitemversion)
 

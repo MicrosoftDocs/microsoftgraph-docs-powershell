@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclass
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Remove-MgBetaEducationClass
@@ -12,9 +11,6 @@ ms.prod: education
 Delete an educationClass.
 Because a class is also a universal group, deleting a class deletes the group.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgEducationClass](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClass?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -36,17 +32,13 @@ Because a class is also a universal group, deleting a class deletes the group.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 Remove-MgBetaEducationClass -EducationClassId $educationClassId
-```
-This example shows how to use the Remove-MgBetaEducationClass Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -177,7 +169,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Remove-MgEducationClass](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClass?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclass](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclass)
 

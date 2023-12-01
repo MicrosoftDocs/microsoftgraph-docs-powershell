@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamtagmember
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new teamworkTagMember object in a team.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgTeamTagMember](/powershell/module/Microsoft.Graph.Teams/New-MgTeamTagMember?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,21 +44,17 @@ Create a new teamworkTagMember object in a team.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	userId = "97f62344-57dc-409c-88ad-c4af14158ff5"
 }
 
 New-MgBetaTeamTagMember -TeamId $teamId -TeamworkTagId $teamworkTagId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaTeamTagMember Cmdlet.
-
 
 ## PARAMETERS
 
@@ -299,7 +292,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[New-MgTeamTagMember](/powershell/module/Microsoft.Graph.Teams/New-MgTeamTagMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamtagmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamtagmember)
 

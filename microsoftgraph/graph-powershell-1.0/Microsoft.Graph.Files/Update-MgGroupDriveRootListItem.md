@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriverootlistitem
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property listItem in groups
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroupDriveRootListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveRootListItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -55,6 +52,22 @@ Update-MgGroupDriveRootListItem -InputObject <IFilesIdentity> -BodyParameter <IM
 
 ## DESCRIPTION
 Update the navigation property listItem in groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -23293,8 +23306,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaGroupDriveRootListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveRootListItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriverootlistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriverootlistitem)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancelifecycleworkflowcustomtaskextension
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new customTaskExtension object.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -39,10 +36,11 @@ Create a new customTaskExtension object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+```
 
 $params = @{
 	displayName = "Grant manager access to mailbox and OneDrive"
@@ -69,11 +67,6 @@ $params = @{
 }
 
 New-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension -BodyParameter $params
-```
-This example shows how to use the New-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -22478,7 +22471,6 @@ Read-only.
     \[UserId \<String\>\]: UserId associated with this device registration record.
 
 ## RELATED LINKS
-[New-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancelifecycleworkflowcustomtaskextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancelifecycleworkflowcustomtaskextension)
 

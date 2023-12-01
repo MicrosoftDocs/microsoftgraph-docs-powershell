@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasereviewset
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # New-MgBetaSecurityCaseEdiscoveryCaseReviewSet
@@ -11,9 +10,6 @@ ms.prod: ediscovery
 ## SYNOPSIS
 Create a new ediscoveryReviewSet object.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityCaseEdiscoveryCaseReviewSet](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseReviewSet?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -50,21 +46,17 @@ Create a new ediscoveryReviewSet object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
+```
 
 $params = @{
 	displayName = "My review set 2"
 }
 
 New-MgBetaSecurityCaseEdiscoveryCaseReviewSet -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaSecurityCaseEdiscoveryCaseReviewSet Cmdlet.
-
 
 ## PARAMETERS
 
@@ -15302,7 +15294,6 @@ This property is read-only.
 Read-only.
 
 ## RELATED LINKS
-[New-MgSecurityCaseEdiscoveryCaseReviewSet](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseReviewSet?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasereviewset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasereviewset)
 

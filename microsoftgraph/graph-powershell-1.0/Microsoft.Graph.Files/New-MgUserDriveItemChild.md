@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdriveitemchild
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # New-MgUserDriveItemChild
 
 ## SYNOPSIS
 Create new navigation property to children for users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserDriveItemChild](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveItemChild?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -77,6 +73,18 @@ New-MgUserDriveItemChild -InputObject <IFilesIdentity> -BodyParameter <IMicrosof
 
 ## DESCRIPTION
 Create new navigation property to children for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -29021,8 +29029,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[New-MgBetaUserDriveItemChild](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveItemChild?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdriveitemchild](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdriveitemchild)
-
 

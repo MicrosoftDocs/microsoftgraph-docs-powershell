@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mgsitelistcontenttypecopyfromcontenttypehub
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Add-MgSiteListContentTypeCopyFromContentTypeHub
@@ -14,9 +13,6 @@ This method is part of the content type publishing changes to optimize the synci
 The method allows users to pull content types directly from the content type hub to a site or list.
 For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Add-MgBetaSiteListContentTypeCopyFromContentTypeHub](/powershell/module/Microsoft.Graph.Beta.Sites/Add-MgBetaSiteListContentTypeCopyFromContentTypeHub?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -54,11 +50,11 @@ For more information, see contentType: getCompatibleHubContentTypes and the blog
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Synchronous pull
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Sites
+```
 
 $params = @{
 	contentTypeId = "0x0101"
@@ -66,24 +62,16 @@ $params = @{
 
 Add-MgSiteListContentTypeCopyFromContentTypeHub -SiteId $siteId -ListId $listId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example synchronous pull
-
-### Example 2: Asynchronous pull
-
-```powershell
-
 Import-Module Microsoft.Graph.Sites
+```
 
 $params = @{
 	contentTypeId = "0x0101"
 }
 
 Add-MgSiteListContentTypeCopyFromContentTypeHub -SiteId $siteId -ListId $listId -BodyParameter $params
-
-```
-This example asynchronous pull
-
 
 ## PARAMETERS
 
@@ -271,7 +259,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Add-MgBetaSiteListContentTypeCopyFromContentTypeHub](/powershell/module/Microsoft.Graph.Beta.Sites/Add-MgBetaSiteListContentTypeCopyFromContentTypeHub?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mgsitelistcontenttypecopyfromcontenttypehub](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mgsitelistcontenttypecopyfromcontenttypehub)
 

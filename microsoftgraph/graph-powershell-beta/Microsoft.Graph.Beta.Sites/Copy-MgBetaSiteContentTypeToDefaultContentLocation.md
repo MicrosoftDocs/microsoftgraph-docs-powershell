@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetasitecontenttypetodefaultcontentlocation
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Copy-MgBetaSiteContentTypeToDefaultContentLocation
@@ -12,9 +11,6 @@ ms.prod: sites-and-lists
 Copy a file to a default content location in a content type\]\[contentType\].
 The file can then be added as a default file or template via a POST operation.
 This API is available in the following \[national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Copy-MgSiteContentTypeToDefaultContentLocation](/powershell/module/Microsoft.Graph.Sites/Copy-MgSiteContentTypeToDefaultContentLocation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -52,11 +48,11 @@ The file can then be added as a default file or template via a POST operation.
 This API is available in the following \[national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Sites
+```
 
 $params = @{
 	sourceFile = @{
@@ -69,10 +65,6 @@ $params = @{
 }
 
 Copy-MgBetaSiteContentTypeToDefaultContentLocation -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
-
-```
-This example shows how to use the Copy-MgBetaSiteContentTypeToDefaultContentLocation Cmdlet.
-
 
 ## PARAMETERS
 
@@ -358,7 +350,6 @@ It is an opaque string that consists of three identifiers of the site.
 For OneDrive, this property is not populated.
 
 ## RELATED LINKS
-[Copy-MgSiteContentTypeToDefaultContentLocation](/powershell/module/Microsoft.Graph.Sites/Copy-MgSiteContentTypeToDefaultContentLocation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetasitecontenttypetodefaultcontentlocation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetasitecontenttypetodefaultcontentlocation)
 

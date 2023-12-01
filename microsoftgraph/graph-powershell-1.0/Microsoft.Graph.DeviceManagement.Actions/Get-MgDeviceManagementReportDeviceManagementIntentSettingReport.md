@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportdevicemanagementintentsettingreport
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Get-MgDeviceManagementReportDeviceManagementIntentSettingReport
 
 ## SYNOPSIS
 Not yet documented
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementReportDeviceManagementIntentSettingReport](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Get-MgBetaDeviceManagementReportDeviceManagementIntentSettingReport?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -33,6 +29,22 @@ Get-MgDeviceManagementReportDeviceManagementIntentSettingReport -OutFile <String
 
 ## DESCRIPTION
 Not yet documented
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -291,8 +303,6 @@ BODYPARAMETER \<IPathsTbh0H2DevicemanagementReportsMicrosoftGraphGetdevicemanage
   \[Top \<Int32?\>\]:
 
 ## RELATED LINKS
-[Get-MgBetaDeviceManagementReportDeviceManagementIntentSettingReport](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Get-MgBetaDeviceManagementReportDeviceManagementIntentSettingReport?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportdevicemanagementintentsettingreport](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportdevicemanagementintentsettingreport)
-
 

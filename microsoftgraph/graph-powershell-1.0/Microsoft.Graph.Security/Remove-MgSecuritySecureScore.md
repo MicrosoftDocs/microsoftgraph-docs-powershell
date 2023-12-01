@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritysecurescore
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property secureScores for security
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaSecuritySecureScore](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecuritySecureScore?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Remove-MgSecuritySecureScore -InputObject <ISecurityIdentity> [-IfMatch <String>
 
 ## DESCRIPTION
 Delete navigation property secureScores for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -194,8 +207,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Remove-MgBetaSecuritySecureScore](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecuritySecureScore?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritysecurescore](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritysecurescore)
-
 

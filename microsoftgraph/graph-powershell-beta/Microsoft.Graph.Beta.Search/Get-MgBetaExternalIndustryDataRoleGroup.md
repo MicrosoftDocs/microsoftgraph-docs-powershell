@@ -1,10 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatarolegroup
 schema: 2.0.0
-ms.prod: industry-data-etl
-ms.prod: industry-data-etl
 ---
 
 # Get-MgBetaExternalIndustryDataRoleGroup
@@ -37,6 +35,18 @@ Get-MgBetaExternalIndustryDataRoleGroup -InputObject <ISearchIdentity> [-ExpandP
 ## DESCRIPTION
 Read the properties and relationships of a roleGroup object.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -261,5 +271,4 @@ INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatarolegroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatarolegroup)
-
 

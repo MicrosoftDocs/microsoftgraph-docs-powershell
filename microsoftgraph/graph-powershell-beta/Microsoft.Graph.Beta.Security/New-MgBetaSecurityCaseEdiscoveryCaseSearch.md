@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasesearch
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # New-MgBetaSecurityCaseEdiscoveryCaseSearch
@@ -11,9 +10,6 @@ ms.prod: ediscovery
 ## SYNOPSIS
 Create a new ediscoverySearch object.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityCaseEdiscoveryCaseSearch](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseSearch?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -62,11 +58,11 @@ Create a new ediscoverySearch object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
+```
 
 $params = @{
 	displayName = "My search 2"
@@ -83,10 +79,6 @@ $params = @{
 }
 
 New-MgBetaSecurityCaseEdiscoveryCaseSearch -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaSecurityCaseEdiscoveryCaseSearch Cmdlet.
-
 
 ## PARAMETERS
 
@@ -23184,7 +23176,6 @@ This property is read-only.
 Read-only.
 
 ## RELATED LINKS
-[New-MgSecurityCaseEdiscoveryCaseSearch](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseSearch?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasesearch](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasesearch)
 

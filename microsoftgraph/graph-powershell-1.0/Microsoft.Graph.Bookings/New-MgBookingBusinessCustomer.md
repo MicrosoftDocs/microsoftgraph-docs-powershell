@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinesscustomer
 schema: 2.0.0
-ms.prod: bookings
 ---
 
 # New-MgBookingBusinessCustomer
@@ -11,9 +10,6 @@ ms.prod: bookings
 ## SYNOPSIS
 Create a new bookingCustomer object.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaBookingBusinessCustomer?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -46,11 +42,11 @@ Create a new bookingCustomer object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Bookings
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.bookingCustomer"
@@ -63,10 +59,6 @@ $params = @{
 }
 
 New-MgBookingBusinessCustomer -BookingBusinessId $bookingBusinessId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBookingBusinessCustomer Cmdlet.
-
 
 ## PARAMETERS
 
@@ -204,7 +196,6 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[BookingStaffMemberBaseId \<String\>\]: The unique identifier of bookingStaffMemberBase
 
 ## RELATED LINKS
-[New-MgBetaBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaBookingBusinessCustomer?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinesscustomer](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinesscustomer)
 

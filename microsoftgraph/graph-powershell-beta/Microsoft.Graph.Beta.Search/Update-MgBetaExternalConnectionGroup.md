@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalconnectiongroup
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property groups in external
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgExternalConnectionGroup](/powershell/module/Microsoft.Graph.Search/Update-MgExternalConnectionGroup?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45,10 +42,11 @@ Update-MgBetaExternalConnectionGroup -InputObject <ISearchIdentity>
 Update the navigation property groups in external
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Search
+```
 
 $params = @{
 	displayName = "Contoso Marketing"
@@ -56,11 +54,6 @@ $params = @{
 }
 
 Update-MgBetaExternalConnectionGroup -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaExternalConnectionGroup Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -295,7 +288,6 @@ Read-only.
   \[Type \<String\>\]: identityType
 
 ## RELATED LINKS
-[Update-MgExternalConnectionGroup](/powershell/module/Microsoft.Graph.Search/Update-MgExternalConnectionGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalconnectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalconnectiongroup)
 

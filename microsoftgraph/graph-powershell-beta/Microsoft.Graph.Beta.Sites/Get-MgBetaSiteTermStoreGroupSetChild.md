@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoregroupsetchild
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Get-MgBetaSiteTermStoreGroupSetChild
 
 ## SYNOPSIS
 Children terms of set in term \[store\].
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSiteTermStoreGroupSetChild](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreGroupSetChild?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -58,17 +54,13 @@ Get-MgBetaSiteTermStoreGroupSetChild -InputObject <ISitesIdentity> [-ExpandPrope
 Children terms of set in term \[store\].
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Sites
+```
 
 Get-MgBetaSiteTermStoreSetChild -SiteId $siteId -SetId $setId
-```
-This example shows how to use the Get-MgBetaSiteTermStoreGroupSetChild Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -380,7 +372,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgSiteTermStoreGroupSetChild](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreGroupSetChild?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoregroupsetchild](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoregroupsetchild)
 

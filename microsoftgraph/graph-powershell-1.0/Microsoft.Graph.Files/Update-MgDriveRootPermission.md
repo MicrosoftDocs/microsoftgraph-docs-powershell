@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriverootpermission
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Update-MgDriveRootPermission
@@ -12,9 +11,6 @@ ms.prod: sharepoint
 Update the properties of a sharing permission by patching the permission resource.
 Only the roles property can be modified this way.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootPermission?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -58,6 +54,22 @@ Update-MgDriveRootPermission -InputObject <IFilesIdentity> -BodyParameter <IMicr
 Update the properties of a sharing permission by patching the permission resource.
 Only the roles property can be modified this way.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -624,8 +636,6 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
   \[WebUrl \<String\>\]: A URL that opens the item in the browser on the OneDrive website.
 
 ## RELATED LINKS
-[Update-MgBetaDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootPermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriverootpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriverootpermission)
-
 

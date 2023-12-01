@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeassignment
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Get-MgBetaEducationMeAssignment
@@ -11,9 +10,6 @@ ms.prod: education
 ## SYNOPSIS
 List of assignments for the user.
 Nullable.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEducationMeAssignment](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeAssignment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -41,17 +37,13 @@ List of assignments for the user.
 Nullable.
 
 ## EXAMPLES
-### Example 1: Get the assignments of the logged in user
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 Get-MgBetaEducationMeAssignment
-
-```
-This example will get the assignments of the logged in user
-
 
 ## PARAMETERS
 
@@ -272,7 +264,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgEducationMeAssignment](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeassignment)
 

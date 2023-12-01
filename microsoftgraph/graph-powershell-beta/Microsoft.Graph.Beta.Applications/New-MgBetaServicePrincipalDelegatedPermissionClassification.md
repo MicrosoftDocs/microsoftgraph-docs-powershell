@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipaldelegatedpermissionclassification
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # New-MgBetaServicePrincipalDelegatedPermissionClassification
@@ -11,9 +10,6 @@ ms.prod: applications
 ## SYNOPSIS
 Classify a delegated permission by adding a delegatedPermissionClassification to the servicePrincipal representing the API.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgServicePrincipalDelegatedPermissionClassification](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalDelegatedPermissionClassification?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -48,10 +44,11 @@ Classify a delegated permission by adding a delegatedPermissionClassification to
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Applications
+```
 
 $params = @{
 	permissionId = "e1fe6dd8-ba31-4d61-89e7-88639da4683d"
@@ -60,11 +57,6 @@ $params = @{
 }
 
 New-MgBetaServicePrincipalDelegatedPermissionClassification -ServicePrincipalId $servicePrincipalId -BodyParameter $params
-```
-This example shows how to use the New-MgBetaServicePrincipalDelegatedPermissionClassification Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -286,7 +278,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgServicePrincipalDelegatedPermissionClassification](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalDelegatedPermissionClassification?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipaldelegatedpermissionclassification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipaldelegatedpermissionclassification)
 

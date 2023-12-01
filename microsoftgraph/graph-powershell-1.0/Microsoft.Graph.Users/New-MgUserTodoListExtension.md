@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusertodolistextension
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to extensions for users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserTodoListExtension](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserTodoListExtension?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -41,6 +38,22 @@ New-MgUserTodoListExtension -InputObject <IUsersIdentity> -BodyParameter <Hashta
 
 ## DESCRIPTION
 Create new navigation property to extensions for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -199,8 +212,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaUserTodoListExtension](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserTodoListExtension?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusertodolistextension](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusertodolistextension)
-
 

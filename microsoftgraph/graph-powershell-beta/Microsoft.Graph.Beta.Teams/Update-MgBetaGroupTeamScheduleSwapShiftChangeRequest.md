@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamscheduleswapshiftchangerequest
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property swapShiftsChangeRequests in groups
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgGroupTeamScheduleSwapShiftChangeRequest](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamScheduleSwapShiftChangeRequest?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,6 +46,22 @@ Update-MgBetaGroupTeamScheduleSwapShiftChangeRequest -InputObject <ITeamsIdentit
 
 ## DESCRIPTION
 Update the navigation property swapShiftsChangeRequests in groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -431,8 +444,6 @@ For example, if a user changes their display name, the API might show the new va
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
 ## RELATED LINKS
-[Update-MgGroupTeamScheduleSwapShiftChangeRequest](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamScheduleSwapShiftChangeRequest?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamscheduleswapshiftchangerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamscheduleswapshiftchangerequest)
-
 

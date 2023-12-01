@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetaunarchiveserviceannouncementmessage
 schema: 2.0.0
-ms.prod: service-communications
 ---
 
 # Invoke-MgBetaUnarchiveServiceAnnouncementMessage
@@ -11,9 +10,6 @@ ms.prod: service-communications
 ## SYNOPSIS
 Unarchive a list of serviceUpdateMessages for the signed in user.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgUnarchiveServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgUnarchiveServiceAnnouncementMessage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -35,11 +31,11 @@ Unarchive a list of serviceUpdateMessages for the signed in user.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
+```
 
 $params = @{
 	messageIds = @(
@@ -49,10 +45,6 @@ $params = @{
 }
 
 Invoke-MgBetaUnarchiveServiceAnnouncementMessage -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgBetaUnarchiveServiceAnnouncementMessage Cmdlet.
-
 
 ## PARAMETERS
 
@@ -153,7 +145,6 @@ BODYPARAMETER \<IPathsYkfdhbAdminServiceannouncementMessagesMicrosoftGraphUnarch
   \[MessageIds \<String\[\]\>\]:
 
 ## RELATED LINKS
-[Invoke-MgUnarchiveServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgUnarchiveServiceAnnouncementMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetaunarchiveserviceannouncementmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetaunarchiveserviceannouncementmessage)
 

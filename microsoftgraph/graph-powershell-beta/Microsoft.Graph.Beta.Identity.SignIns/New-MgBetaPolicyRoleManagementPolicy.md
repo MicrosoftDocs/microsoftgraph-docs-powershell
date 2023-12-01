@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyrolemanagementpolicy
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to roleManagementPolicies for policies
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgPolicyRoleManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyRoleManagementPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34,28 +31,20 @@ New-MgBetaPolicyRoleManagementPolicy -BodyParameter <IMicrosoftGraphUnifiedRoleM
 Create new navigation property to roleManagementPolicies for policies
 
 ## EXAMPLES
-### Example 1: Retrieve the role management policies that apply to Azure AD roles
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 Get-MgBetaPolicyRoleManagementPolicy -Filter "scopeId eq '/' and scopeType eq 'DirectoryRole'"
+
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgBetaBetaPolicyRoleManagementPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Retrieve the role management policies that apply to the directory and expand the associated rules
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 Get-MgBetaPolicyRoleManagementPolicy -Filter "scopeId eq '/' and scopeType eq 'Directory'" -ExpandProperty "rules"
-```
-This example shows how to use the New-MgBetaBetaPolicyRoleManagementPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -399,7 +388,6 @@ Read-only.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
-[New-MgPolicyRoleManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyRoleManagementPolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyrolemanagementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyrolemanagementpolicy)
 

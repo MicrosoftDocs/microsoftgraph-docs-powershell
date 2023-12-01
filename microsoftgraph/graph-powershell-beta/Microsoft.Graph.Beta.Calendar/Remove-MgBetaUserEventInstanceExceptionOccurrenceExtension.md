@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetausereventinstanceexceptionoccurrenceextension
@@ -27,6 +27,22 @@ Remove-MgBetaUserEventInstanceExceptionOccurrenceExtension -InputObject <ICalend
 
 ## DESCRIPTION
 Delete navigation property extensions for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -215,5 +231,4 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetausereventinstanceexceptionoccurrenceextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetausereventinstanceexceptionoccurrenceextension)
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontactmemberof
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Get-MgBetaContactMemberOf
@@ -13,9 +12,6 @@ Groups that this contact is a member of.
 Read-only.
 Nullable.
 Supports $expand.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgContactMemberOf](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContactMemberOf?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45,17 +41,13 @@ Nullable.
 Supports $expand.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+```
 
 Get-MgBetaContactMemberOf -OrgContactId $orgContactId
-
-```
-This example shows how to use the Get-MgBetaContactMemberOf Cmdlet.
-
 
 ## PARAMETERS
 
@@ -333,7 +325,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgContactMemberOf](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContactMemberOf?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontactmemberof](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontactmemberof)
 

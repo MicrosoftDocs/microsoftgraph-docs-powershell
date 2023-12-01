@@ -1,10 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinessappointment
 schema: 2.0.0
-ms.prod: bookings
-ms.prod: bookings
 ---
 
 # Get-MgBookingBusinessAppointment
@@ -13,9 +11,6 @@ ms.prod: bookings
 Get the properties and relationships of a bookingAppointment object in the specified bookingBusiness.
 The startDateTime and endDateTime properties are always returned in UTC.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessAppointment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -44,17 +39,13 @@ The startDateTime and endDateTime properties are always returned in UTC.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Bookings
+```
 
 Get-MgBookingBusinessAppointment -BookingBusinessId $bookingBusinessId
-
-```
-This example shows how to use the Get-MgBookingBusinessAppointment Cmdlet.
-
 
 ## PARAMETERS
 
@@ -280,7 +271,6 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[BookingStaffMemberBaseId \<String\>\]: The unique identifier of bookingStaffMemberBase
 
 ## RELATED LINKS
-[Get-MgBetaBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessAppointment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinessappointment](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinessappointment)
 

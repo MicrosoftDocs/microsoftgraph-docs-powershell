@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeuserserviceprovisioningerror
@@ -11,9 +11,6 @@ schema: 2.0.0
 Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
 Supports $filter (eq, not, for isResolved and serviceInstance).
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEducationMeUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeUserServiceProvisioningError?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ```
@@ -25,6 +22,18 @@ Get-MgBetaEducationMeUserServiceProvisioningError [-ExpandProperty <String[]>] [
 ## DESCRIPTION
 Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
 Supports $filter (eq, not, for isResolved and serviceInstance).
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -190,8 +199,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgEducationMeUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeUserServiceProvisioningError?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeuserserviceprovisioningerror](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeuserserviceprovisioningerror)
-
 

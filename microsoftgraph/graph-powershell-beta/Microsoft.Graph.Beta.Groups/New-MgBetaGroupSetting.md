@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupsetting
@@ -13,9 +13,6 @@ These settings can be at the tenant-level or at the group level.
 Group settings apply to only Microsoft 365 groups.
 The template named Group.Unified can be used to configure tenant-wide Microsoft 365 group settings, while the template named Group.Unified.Guest can be used to configure group-specific settings.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupSetting](/powershell/module/Microsoft.Graph.Groups/New-MgGroupSetting?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -53,10 +50,11 @@ The template named Group.Unified can be used to configure tenant-wide Microsoft 
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Create a setting to block guests for a specific Microsoft 365 group
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Groups
+```
 
 $params = @{
 	templateId = "08d542b9-071f-4e16-94b0-74abb372e3d9"
@@ -69,11 +67,6 @@ $params = @{
 }
 
 New-MgBetaGroupSetting -GroupId $groupId -BodyParameter $params
-```
-This example shows how to use the New-MgBetaGroupSetting Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -310,7 +303,6 @@ VALUES \<IMicrosoftGraphSettingValue\[\]\>: Collection of name-value pairs corre
   \[Value \<String\>\]: Value of the setting.
 
 ## RELATED LINKS
-[New-MgGroupSetting](/powershell/module/Microsoft.Graph.Groups/New-MgGroupSetting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupsetting)
 

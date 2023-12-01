@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackage
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # New-MgBetaEntitlementManagementAccessPackage
@@ -13,9 +12,6 @@ Create a new accessPackage object.
 The access package will be added to an existing accessPackageCatalog.
 After the access package is created, you can then create accessPackageAssignmentPolicies which specify how users are assigned to the access package.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45,11 +41,12 @@ After the access package is created, you can then create accessPackageAssignment
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Create an access package
 
-```powershell
+### EXAMPLE 1
+```
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 New-MgBetaEntitlementManagementAccessPackage -CatalogId '54152ecb-c65d-47f2-8a4d-ba2732de0a7b'  -DisplayName 'Marketing Campaign' | Format-list
+```
 
 AccessPackageAssignmentPolicies :
 AccessPackageCatalog            : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageCatalog
@@ -67,10 +64,7 @@ IsHidden                        : False
 IsRoleScopesVisible             : False
 ModifiedBy                      : admin@M365x814237.onmicrosoft.com
 ModifiedDateTime                : 10/13/2021 9:08:02 AM
-AdditionalProperties            : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackages/$entity]}
-```
-
-This example creates an access package with he defined display name under the specified catalog. The $allowedRequestors variable should contain the **id** of the requestor.
+AdditionalProperties            : {\[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackages/$entity\]}
 
 ## PARAMETERS
 
@@ -46018,7 +46012,6 @@ Microsoft Entra security groups can be written back as universalSecurityGroup.
 If isEnabled or the NewUnifiedGroupWritebackDefault group setting is true but this property isn't explicitly configured: Microsoft 365 groups are written back as universalDistributionGroup by defaultSecurity groups are written back as universalSecurityGroup by default
 
 ## RELATED LINKS
-[New-MgEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackage)
 

@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationpayload
 schema: 2.0.0
-ms.prod: security
 ---
 
 # Get-MgBetaSecurityAttackSimulationPayload
 
 ## SYNOPSIS
 Represents an attack simulation training campaign payload in a tenant.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecurityAttackSimulationPayload](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationPayload?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,6 +45,18 @@ Get-MgBetaSecurityAttackSimulationPayload -InputObject <ISecurityIdentity> [-Exp
 
 ## DESCRIPTION
 Represents an attack simulation training campaign payload in a tenant.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -343,8 +351,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgSecurityAttackSimulationPayload](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationPayload?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationpayload](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationpayload)
-
 

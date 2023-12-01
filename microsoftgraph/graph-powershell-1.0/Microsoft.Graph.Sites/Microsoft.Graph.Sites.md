@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Sites
 Module Guid: 7ae8c25b-f1dd-466d-a022-b5489f919c70
 Download Help Link: {{ Update Download Link }}

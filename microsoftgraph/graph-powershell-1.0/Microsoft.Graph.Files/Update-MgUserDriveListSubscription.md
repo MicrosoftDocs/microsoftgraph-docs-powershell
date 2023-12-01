@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdrivelistsubscription
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property subscriptions in users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserDriveListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveListSubscription?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,6 +46,22 @@ Update-MgUserDriveListSubscription -InputObject <IFilesIdentity> -BodyParameter 
 
 ## DESCRIPTION
 Update the navigation property subscriptions in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -555,8 +568,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaUserDriveListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveListSubscription?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdrivelistsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdrivelistsubscription)
-
 

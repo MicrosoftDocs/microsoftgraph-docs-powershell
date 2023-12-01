@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchbookmark
 schema: 2.0.0
-ms.prod: search
 ---
 
 # Update-MgBetaSearchBookmark
@@ -55,16 +54,15 @@ Update the properties of a bookmark object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaSearchBookmark Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Search
 $params = @{
 	Description = "Book a fancy vacation in Tuscany or browse museums in Florence."
 }
 Update-MgBetaSearchBookmark -BookmarkId $bookmarkId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaSearchBookmark Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.ChangeNotifications
 Module Guid: 531019c5-a24f-4b88-9bf0-7e656a836aee
 Download Help Link: {{ Update Download Link }}

@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/send-mgdevicemanagementnotificationmessagetemplatetestmessage
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Send-MgDeviceManagementNotificationMessageTemplateTestMessage
 
 ## SYNOPSIS
 Sends test message using the specified notificationMessageTemplate in the default locale
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Send-MgBetaDeviceManagementNotificationMessageTemplateTestMessage](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Send-MgBetaDeviceManagementNotificationMessageTemplateTestMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,6 +26,22 @@ Send-MgDeviceManagementNotificationMessageTemplateTestMessage -InputObject <IDev
 
 ## DESCRIPTION
 Sends test message using the specified notificationMessageTemplate in the default locale
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -140,8 +152,6 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
   \[WindowsAutopilotDeviceIdentityId \<String\>\]: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
-[Send-MgBetaDeviceManagementNotificationMessageTemplateTestMessage](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Send-MgBetaDeviceManagementNotificationMessageTemplateTestMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/send-mgdevicemanagementnotificationmessagetemplatetestmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/send-mgdevicemanagementnotificationmessagetemplatetestmessage)
-
 

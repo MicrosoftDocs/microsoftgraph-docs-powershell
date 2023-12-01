@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyrolemanagementpolicyassignment
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Get-MgBetaPolicyRoleManagementPolicyAssignment
 
 ## SYNOPSIS
 Represents the role management policy assignments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPolicyRoleManagementPolicyAssignment](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyRoleManagementPolicyAssignment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -39,28 +35,20 @@ Get-MgBetaPolicyRoleManagementPolicyAssignment -InputObject <IIdentitySignInsIde
 Represents the role management policy assignments.
 
 ## EXAMPLES
-### Example 1: Retrieve the details of a policy assignment for PIM for Azure AD roles
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 Get-MgBetaPolicyRoleManagementPolicyAssignment -UnifiedRoleManagementPolicyAssignmentId $unifiedRoleManagementPolicyAssignmentId
 
+### EXAMPLE 2
 ```
-This example will retrieve the details of a policy assignment for pim for azure ad roles
-
-### Example 2: Retrieve the details of a policy assignment for PIM for groups
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 Get-MgBetaPolicyRoleManagementPolicyAssignment -UnifiedRoleManagementPolicyAssignmentId $unifiedRoleManagementPolicyAssignmentId
-
-```
-This example will retrieve the details of a policy assignment for pim for groups
-
 
 ## PARAMETERS
 
@@ -340,7 +328,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgPolicyRoleManagementPolicyAssignment](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyRoleManagementPolicyAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyrolemanagementpolicyassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyrolemanagementpolicyassignment)
 

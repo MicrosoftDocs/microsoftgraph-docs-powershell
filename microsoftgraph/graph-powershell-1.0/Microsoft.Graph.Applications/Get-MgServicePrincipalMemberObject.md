@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalmemberobject
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Get-MgServicePrincipalMemberObject
@@ -13,9 +12,6 @@ Return all IDs for the groups, administrative units, and directory roles that a 
 This function is transitive.
 Note: Only users and role-enabled groups can be members of directory roles.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalMemberObject](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalMemberObject?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -52,6 +48,16 @@ Note: Only users and role-enabled groups can be members of directory roles.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -208,7 +214,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaServicePrincipalMemberObject](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalMemberObject?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalmemberobject](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalmemberobject)
 

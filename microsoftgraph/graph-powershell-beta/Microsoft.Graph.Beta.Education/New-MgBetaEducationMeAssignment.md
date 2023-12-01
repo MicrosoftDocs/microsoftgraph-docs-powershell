@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationmeassignment
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to assignments for education
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgEducationMeAssignment](/powershell/module/Microsoft.Graph.Education/New-MgEducationMeAssignment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -39,39 +36,27 @@ New-MgBetaEducationMeAssignment -BodyParameter <IMicrosoftGraphEducationAssignme
 Create new navigation property to assignments for education
 
 ## EXAMPLES
-### Example 1: Get the assignments of the logged in user
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 Get-MgBetaEducationMeAssignment
+
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgBetaBetaEducationMeAssignment Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Get assignments of a user
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 Get-MgBetaEducationUserAssignment -EducationUserId $educationUserId
+
+### EXAMPLE 3
 ```
-This example shows how to use the New-MgBetaBetaEducationMeAssignment Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Get user assignments with expand submissions
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 Get-MgBetaEducationUserAssignment -EducationUserId $educationUserId -ExpandProperty "submissions"
-```
-This example shows how to use the New-MgBetaBetaEducationMeAssignment Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -768,7 +753,6 @@ If the value is null, the student uploaded the resource.
   \[UnsubmittedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
 
 ## RELATED LINKS
-[New-MgEducationMeAssignment](/powershell/module/Microsoft.Graph.Education/New-MgEducationMeAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationmeassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationmeassignment)
 

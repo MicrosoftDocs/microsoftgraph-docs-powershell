@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdefaultdrive
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Get-MgBetaUserDefaultDrive
@@ -12,9 +11,6 @@ ms.prod: sharepoint
 Retrieve the properties and relationships of a Drive resource.
 A Drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserDefaultDrive](/powershell/module/Microsoft.Graph.Files/Get-MgUserDefaultDrive?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -36,18 +32,14 @@ A Drive is the top-level container for a file system, such as OneDrive or ShareP
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Files
+```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserDefaultDrive -UserId $userId
-```
-This example shows how to use the Get-MgBetaUserDefaultDrive Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -154,7 +146,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserDefaultDrive](/powershell/module/Microsoft.Graph.Files/Get-MgUserDefaultDrive?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdefaultdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdefaultdrive)
 

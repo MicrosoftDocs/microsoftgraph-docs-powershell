@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaprivilegedroleassignmentrequest
@@ -35,13 +35,12 @@ Get-MgBetaPrivilegedRoleAssignmentRequest -InputObject <IIdentityGovernanceIdent
 Get entity from privilegedRoleAssignmentRequests by key
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaPrivilegedRoleAssignmentRequest Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaPrivilegedRoleAssignmentRequest
 ```
-This example shows how to use the Get-MgBetaPrivilegedRoleAssignmentRequest Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

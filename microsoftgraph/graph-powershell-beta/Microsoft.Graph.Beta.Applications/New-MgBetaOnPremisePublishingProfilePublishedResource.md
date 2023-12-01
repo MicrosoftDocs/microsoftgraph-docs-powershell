@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofilepublishedresource
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # New-MgBetaOnPremisePublishingProfilePublishedResource
@@ -47,8 +46,9 @@ Create a new publishedResource object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaOnPremisePublishingProfilePublishedResource Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{
 	DisplayName = "New provisioning"
@@ -56,8 +56,6 @@ $params = @{
 }
 New-MgBetaOnPremisePublishingProfilePublishedResource -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaOnPremisePublishingProfilePublishedResource Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

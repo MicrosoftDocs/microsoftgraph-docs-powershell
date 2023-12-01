@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdrive
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete entity from drives
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDrive](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDrive?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,62 +27,42 @@ Remove-MgDrive -InputObject <IFilesIdentity> [-IfMatch <String>] [-PassThru] [-W
 Delete entity from drives
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Files
+```
 
 # A UPN can also be used as -UserId.
 Get-MgUserDefaultDrive -UserId $userId
+
+### EXAMPLE 2
 ```
-This example shows how to use the Remove-MgDrive Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Files
+```
 
 Get-MgUserDefaultDrive -UserId $userId
+
+### EXAMPLE 3
 ```
-This example shows how to use the Remove-MgDrive Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Files
+```
 
 Get-MgGroupDefaultDrive -GroupId $groupId
+
+### EXAMPLE 4
 ```
-This example shows how to use the Remove-MgDrive Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Sites
+```
 
 Get-MgSiteDefaultDrive -SiteId $siteId
+
+### EXAMPLE 5
 ```
-This example shows how to use the Remove-MgDrive Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 5: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Files
+```
 
 Get-MgDrive -DriveId $driveId
-```
-This example shows how to use the Remove-MgDrive Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -223,7 +200,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaDrive](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDrive?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdrive)
 

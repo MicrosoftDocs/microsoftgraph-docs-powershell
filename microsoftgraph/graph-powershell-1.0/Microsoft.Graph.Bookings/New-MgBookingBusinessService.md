@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessservice
 schema: 2.0.0
-ms.prod: bookings
 ---
 
 # New-MgBookingBusinessService
@@ -11,9 +10,6 @@ ms.prod: bookings
 ## SYNOPSIS
 Create a new bookingService for the specified bookingBusiness.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBookingBusinessService](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaBookingBusinessService?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -58,6 +54,22 @@ New-MgBookingBusinessService -InputObject <IBookingsIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Create a new bookingService for the specified bookingBusiness.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -622,8 +634,6 @@ Use the email address specified in the email property of the bookingBusiness ent
   \[TimeSlotInterval \<TimeSpan?\>\]: Duration of each time slot, denoted in ISO 8601 format.
 
 ## RELATED LINKS
-[New-MgBetaBookingBusinessService](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaBookingBusinessService?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessservice](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessservice)
-
 

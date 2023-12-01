@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusercalendareventdelta
@@ -13,9 +13,6 @@ Typically, synchronizing events in a calendarView in a local store entails a rou
 The initial call is a full synchronization, and every subsequent delta call in the same round gets the incremental changes (additions, deletions, or updates).
 This allows you to maintain and synchronize a local store of events in the specified calendarView, without having to fetch all the events of that calendar from the server every time.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserCalendarEventDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserCalendarEventDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -53,6 +50,22 @@ Typically, synchronizing events in a calendarView in a local store entails a rou
 The initial call is a full synchronization, and every subsequent delta call in the same round gets the incremental changes (additions, deletions, or updates).
 This allows you to maintain and synchronize a local store of events in the specified calendarView, without having to fetch all the events of that calendar from the server every time.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -329,8 +342,6 @@ INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserCalendarEventDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserCalendarEventDelta?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusercalendareventdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusercalendareventdelta)
-
 

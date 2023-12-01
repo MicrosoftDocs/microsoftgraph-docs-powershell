@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamscheduleoffershiftrequest
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create an instance of an offerShiftRequest.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleOfferShiftRequest?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,6 +48,16 @@ Create an instance of an offerShiftRequest.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -402,7 +409,6 @@ For example, if a user changes their display name, the API might show the new va
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
 ## RELATED LINKS
-[New-MgGroupTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleOfferShiftRequest?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamscheduleoffershiftrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamscheduleoffershiftrequest)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemsubscription
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 The set of subscriptions on the item.
 Only supported on the root of a drive.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDriveItemSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemSubscription?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,6 +35,22 @@ Get-MgDriveItemSubscription -InputObject <IFilesIdentity> [-ExpandProperty <Stri
 ## DESCRIPTION
 The set of subscriptions on the item.
 Only supported on the root of a drive.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -295,8 +308,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaDriveItemSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemSubscription?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemsubscription)
-
 

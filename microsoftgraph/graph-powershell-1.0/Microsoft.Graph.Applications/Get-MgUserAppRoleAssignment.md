@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mguserapproleassignment
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Get-MgUserAppRoleAssignment
@@ -11,9 +10,6 @@ ms.prod: users
 ## SYNOPSIS
 Represents the app roles a user has been granted for an application.
 Supports $expand.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserAppRoleAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -41,11 +37,12 @@ Represents the app roles a user has been granted for an application.
 Supports $expand.
 
 ## EXAMPLES
-### Example 1: Get assigned app roles
 
-```powershell
- Get-MgUserAppRoleAssignment -UserId "529827aa-d058-4821-a012-4de3ce093955" | 
-  Format-List Id, AppRoleID, CreationTimeStamp, PrincipalDisplayName,PrincipalId, PrincipalType, ResourceDisplayName
+### EXAMPLE 1
+```
+Get-MgUserAppRoleAssignment -UserId "529827aa-d058-4821-a012-4de3ce093955" | 
+ Format-List Id, AppRoleID, CreationTimeStamp, PrincipalDisplayName,PrincipalId, PrincipalType, ResourceDisplayName
+```
 
 Id                   : QQxVaKMYXkmqHc9ijBcbSFkvIqIpOSdOjXRyNBWe_zE
 AppRoleId            : 00000000-0000-0000-0000-000000000000
@@ -60,9 +57,6 @@ PrincipalDisplayName : MOD Administrator
 PrincipalId          : 529827aa-d058-4821-a012-4de3ce093955
 PrincipalType        : User
 ResourceDisplayName  : dxprovisioning-worker-mfa
-```
-
-This command gets all the application roles that the selected user has been assigned.
 
 ## PARAMETERS
 
@@ -319,7 +313,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserAppRoleAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mguserapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mguserapproleassignment)
 

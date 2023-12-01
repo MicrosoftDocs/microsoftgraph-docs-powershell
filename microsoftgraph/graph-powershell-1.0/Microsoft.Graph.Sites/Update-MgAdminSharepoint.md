@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgadminsharepoint
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property sharepoint in admin
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaAdminSharepoint](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaAdminSharepoint?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,6 +25,18 @@ Update-MgAdminSharepoint -BodyParameter <IMicrosoftGraphSharepoint> [-WhatIf] [-
 
 ## DESCRIPTION
 Update the navigation property sharepoint in admin
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -231,8 +240,6 @@ Measured in megabytes (MB).
 For a list of possible values, see SPRegionalSettings.TimeZones property.
 
 ## RELATED LINKS
-[Update-MgBetaAdminSharepoint](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaAdminSharepoint?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgadminsharepoint](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgadminsharepoint)
-
 

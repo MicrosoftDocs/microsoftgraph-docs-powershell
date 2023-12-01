@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportauthenticationmethoduserregistrationdetail
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property userRegistrationDetails in reports
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgReportAuthenticationMethodUserRegistrationDetail](/powershell/module/Microsoft.Graph.Reports/Update-MgReportAuthenticationMethodUserRegistrationDetail?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,6 +48,22 @@ Update-MgBetaReportAuthenticationMethodUserRegistrationDetail -InputObject <IRep
 
 ## DESCRIPTION
 Update the navigation property userRegistrationDetails in reports
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -523,8 +536,6 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
   \[UserSignUpMetricId \<String\>\]: The unique identifier of userSignUpMetric
 
 ## RELATED LINKS
-[Update-MgReportAuthenticationMethodUserRegistrationDetail](/powershell/module/Microsoft.Graph.Reports/Update-MgReportAuthenticationMethodUserRegistrationDetail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportauthenticationmethoduserregistrationdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportauthenticationmethoduserregistrationdetail)
-
 

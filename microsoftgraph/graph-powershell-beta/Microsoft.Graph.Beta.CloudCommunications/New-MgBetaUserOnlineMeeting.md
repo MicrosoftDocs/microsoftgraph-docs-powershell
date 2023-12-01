@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetauseronlinemeeting
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # New-MgBetaUserOnlineMeeting
@@ -11,9 +10,6 @@ ms.prod: cloud-communications
 ## SYNOPSIS
 Create an online meeting on behalf of a user.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserOnlineMeeting](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgUserOnlineMeeting?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -78,33 +74,29 @@ Create an online meeting on behalf of a user.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
-	startDateTime = [System.DateTime]::Parse("2019-07-12T14:30:34.2444915-07:00")
-	endDateTime = [System.DateTime]::Parse("2019-07-12T15:00:34.2464912-07:00")
+	startDateTime = \[System.DateTime\]::Parse("2019-07-12T14:30:34.2444915-07:00")
+	endDateTime = \[System.DateTime\]::Parse("2019-07-12T15:00:34.2464912-07:00")
 	subject = "User Token Meeting"
 }
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserOnlineMeeting -UserId $userId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgBetaUserOnlineMeeting Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
-	startDateTime = [System.DateTime]::Parse("2019-07-12T14:30:34.2444915-07:00")
-	endDateTime = [System.DateTime]::Parse("2019-07-12T15:00:34.2464912-07:00")
+	startDateTime = \[System.DateTime\]::Parse("2019-07-12T14:30:34.2444915-07:00")
+	endDateTime = \[System.DateTime\]::Parse("2019-07-12T15:00:34.2464912-07:00")
 	subject = "User meeting in Microsoft Teams channel."
 	joinMeetingIdSettings = @{
 		isPasscodeRequired = $false
@@ -113,10 +105,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserOnlineMeeting -UserId $userId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaUserOnlineMeeting Cmdlet.
-
 
 ## PARAMETERS
 
@@ -1338,7 +1326,6 @@ WATERMARKPROTECTION \<IMicrosoftGraphWatermarkProtectionValues\>: watermarkProte
   \[IsEnabledForVideo \<Boolean?\>\]: Indicates whether to apply a watermark to everyone's video feed.
 
 ## RELATED LINKS
-[New-MgUserOnlineMeeting](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgUserOnlineMeeting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetauseronlinemeeting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetauseronlinemeeting)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamchannel
@@ -13,9 +13,6 @@ When you create a channel, the maximum length of the channel's displayName is 50
 This is the name that appears to the user in Microsoft Teams.
 You can add a maximum of 200 members when you create a private channel.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupTeamChannel](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamChannel?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -63,6 +60,16 @@ You can add a maximum of 200 members when you create a private channel.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -22799,7 +22806,6 @@ For example, if a user changes their display name, the API might show the new va
 Read only.
 
 ## RELATED LINKS
-[New-MgGroupTeamChannel](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamChannel?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamchannel)
 

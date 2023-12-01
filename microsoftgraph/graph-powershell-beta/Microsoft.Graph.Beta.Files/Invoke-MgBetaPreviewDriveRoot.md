@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetapreviewdriveroot
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action preview
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgPreviewDriveRoot](/powershell/module/Microsoft.Graph.Files/Invoke-MgPreviewDriveRoot?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -43,6 +40,22 @@ Invoke-MgBetaPreviewDriveRoot -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Invoke action preview
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -265,8 +278,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgPreviewDriveRoot](/powershell/module/Microsoft.Graph.Files/Invoke-MgPreviewDriveRoot?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetapreviewdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetapreviewdriveroot)
-
 

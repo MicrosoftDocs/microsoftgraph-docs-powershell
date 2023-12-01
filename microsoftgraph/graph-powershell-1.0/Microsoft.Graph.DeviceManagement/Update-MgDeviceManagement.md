@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagement
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Update-MgDeviceManagement
 
 ## SYNOPSIS
 Update the properties of a deviceManagement object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagement?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -91,21 +87,17 @@ Update-MgDeviceManagement -BodyParameter <IMicrosoftGraphDeviceManagement> [-Wha
 Update the properties of a deviceManagement object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.DeviceManagement
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.deviceManagement"
 }
 
 Update-MgDeviceManagement -BodyParameter $params
-```
-This example shows how to use the Update-MgDeviceManagement Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -5814,9 +5806,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -11779,9 +11771,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -16671,9 +16663,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -17910,8 +17902,6 @@ Valid values -2147483648 to 2147483647
 Valid values -2147483648 to 2147483647
 
 ## RELATED LINKS
-[Update-MgBetaDeviceManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagement?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagement](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagement)
-
 

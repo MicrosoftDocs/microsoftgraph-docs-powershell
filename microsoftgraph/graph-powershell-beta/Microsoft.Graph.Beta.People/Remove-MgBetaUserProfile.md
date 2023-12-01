@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofile
 schema: 2.0.0
-ms.prod: people
 ---
 
 # Remove-MgBetaUserProfile
@@ -31,14 +30,13 @@ Deletes a profile object from a user's account.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Remove-MgBetaUserProfile Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserProfile -UserId $userId
 ```
-This example shows how to use the Remove-MgBetaUserProfile Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

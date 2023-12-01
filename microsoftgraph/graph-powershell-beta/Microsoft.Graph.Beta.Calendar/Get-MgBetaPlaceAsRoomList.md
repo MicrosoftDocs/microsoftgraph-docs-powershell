@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceasroomlist
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the item of type microsoft.graph.place as microsoft.graph.roomList
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPlaceAsRoomList](/powershell/module/Microsoft.Graph.Calendar/Get-MgPlaceAsRoomList?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -36,6 +33,18 @@ Get-MgBetaPlaceAsRoomList -InputObject <ICalendarIdentity> [-ExpandProperty <Str
 
 ## DESCRIPTION
 Get the item of type microsoft.graph.place as microsoft.graph.roomList
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -252,8 +261,6 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[WorkspaceId \<String\>\]: The unique identifier of workspace
 
 ## RELATED LINKS
-[Get-MgPlaceAsRoomList](/powershell/module/Microsoft.Graph.Calendar/Get-MgPlaceAsRoomList?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceasroomlist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceasroomlist)
-
 

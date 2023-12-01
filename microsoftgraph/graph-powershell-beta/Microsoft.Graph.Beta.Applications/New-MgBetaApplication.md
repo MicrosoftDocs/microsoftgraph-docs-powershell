@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplication
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # New-MgBetaApplication
@@ -11,9 +10,6 @@ ms.prod: applications
 ## SYNOPSIS
 Create a new application object.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgApplication](/powershell/module/Microsoft.Graph.Applications/New-MgApplication?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -58,20 +54,18 @@ Create a new application object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Create a new application
 
-```powershell
+### EXAMPLE 1
+```
 New-MgBetaApplication -DisplayName 'New app' | 
   Format-List Id, DisplayName, AppId, SignInAudience, PublisherDomain
+```
 
 Id              : 0f0aec7b-ac5b-4f89-9fac-e9044ba5a309
 DisplayName     : New app
 AppId           : c678b75d-1012-4466-8655-1672192232b4
 SignInAudience  : AzureADandPersonalMicrosoftAccount
 PublisherDomain : M365B977454.onmicrosoft.com
-```
-
-This example creates a new application.
 
 ## PARAMETERS
 
@@ -1011,7 +1005,10 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
     \[Value \<String\>\]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
   \[PreAuthorizedApplications \<IMicrosoftGraphPreAuthorizedApplication\[\]\>\]: Lists the client applications that are preauthorized with the specified delegated permissions to access this application's APIs.
@@ -1078,7 +1075,10 @@ Must not be included in any POST or PATCH requests.
 Read-only.
   \[Value \<String\>\]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
 
@@ -1123,7 +1123,10 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
       \[Value \<String\>\]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
     \[PreAuthorizedApplications \<IMicrosoftGraphPreAuthorizedApplication\[\]\>\]: Lists the client applications that are preauthorized with the specified delegated permissions to access this application's APIs.
@@ -1193,7 +1196,10 @@ Must not be included in any POST or PATCH requests.
 Read-only.
     \[Value \<String\>\]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
   \[AuthenticationBehaviors \<IMicrosoftGraphAuthenticationBehaviors\>\]: authenticationBehaviors
@@ -1910,7 +1916,10 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
         \[Value \<String\>\]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
       \[PreAuthorizedApplications \<IMicrosoftGraphPreAuthorizedApplication\[\]\>\]: Lists the client applications that are preauthorized with the specified delegated permissions to access this application's APIs.
@@ -1980,7 +1989,10 @@ Must not be included in any POST or PATCH requests.
 Read-only.
       \[Value \<String\>\]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
     \[AuthenticationBehaviors \<IMicrosoftGraphAuthenticationBehaviors\>\]: authenticationBehaviors
@@ -3307,7 +3319,6 @@ Read-only.
 Only available for applications that support the PersonalMicrosoftAccount signInAudience.
 
 ## RELATED LINKS
-[New-MgApplication](/powershell/module/Microsoft.Graph.Applications/New-MgApplication?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplication)
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetaunmutecommunicationcall
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Invoke-MgBetaUnmuteCommunicationCall
@@ -13,9 +12,6 @@ Allow the application to unmute itself.
 This is a server unmute, meaning that the server will start sending audio packets for this participant to other participants again.
 For more information about how to handle unmute operations, see unmuteParticipantOperation.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgUnmuteCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgUnmuteCommunicationCall?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -52,21 +48,17 @@ For more information about how to handle unmute operations, see unmuteParticipan
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	clientContext = "clientContext-value"
 }
 
 Invoke-MgBetaUnmuteCommunicationCall -CallId $callId -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgBetaUnmuteCommunicationCall Cmdlet.
-
 
 ## PARAMETERS
 
@@ -219,7 +211,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgUnmuteCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgUnmuteCommunicationCall?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetaunmutecommunicationcall](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetaunmutecommunicationcall)
 

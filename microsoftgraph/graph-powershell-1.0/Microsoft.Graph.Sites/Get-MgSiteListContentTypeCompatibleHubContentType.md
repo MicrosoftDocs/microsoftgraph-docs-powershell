@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistcontenttypecompatiblehubcontenttype
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function getCompatibleHubContentTypes
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSiteListContentTypeCompatibleHubContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListContentTypeCompatibleHubContentType?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -33,13 +30,12 @@ Get-MgSiteListContentTypeCompatibleHubContentType -InputObject <ISitesIdentity> 
 Invoke function getCompatibleHubContentTypes
 
 ## EXAMPLES
-### Example 1: Using the Get-MgSiteListContentTypeCompatibleHubContentType Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Sites
 Get-MgSiteListContentTypeCompatibleHubContentType -SiteId $siteId -ListId $listId
 ```
-This example shows how to use the Get-MgSiteListContentTypeCompatibleHubContentType Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -250,7 +246,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaSiteListContentTypeCompatibleHubContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListContentTypeCompatibleHubContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistcontenttypecompatiblehubcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistcontenttypecompatiblehubcontenttype)
 

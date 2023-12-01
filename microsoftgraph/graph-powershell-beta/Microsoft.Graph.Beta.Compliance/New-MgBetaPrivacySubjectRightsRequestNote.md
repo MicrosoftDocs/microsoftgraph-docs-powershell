@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetaprivacysubjectrightsrequestnote
 schema: 2.0.0
-ms.prod: compliance
 ---
 
 # New-MgBetaPrivacySubjectRightsRequestNote
@@ -11,9 +10,6 @@ ms.prod: compliance
 ## SYNOPSIS
 Create a new authoredNote object.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgPrivacySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Compliance/New-MgPrivacySubjectRightsRequestNote?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -46,6 +42,18 @@ New-MgBetaPrivacySubjectRightsRequestNote -InputObject <IComplianceIdentity>
 ## DESCRIPTION
 Create a new authoredNote object.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -273,8 +281,6 @@ INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
   \[UserSourceId \<String\>\]: The unique identifier of userSource
 
 ## RELATED LINKS
-[New-MgPrivacySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Compliance/New-MgPrivacySubjectRightsRequestNote?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetaprivacysubjectrightsrequestnote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetaprivacysubjectrightsrequestnote)
-
 

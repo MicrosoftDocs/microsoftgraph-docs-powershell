@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetagroupdrivebundle
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # New-MgBetaGroupDriveBundle
 
 ## SYNOPSIS
 Create new navigation property to bundles for groups
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupDriveBundle](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveBundle?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -80,6 +76,18 @@ New-MgBetaGroupDriveBundle -InputObject <IFilesIdentity> -BodyParameter <IMicros
 
 ## DESCRIPTION
 Create new navigation property to bundles for groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -53576,8 +53584,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[New-MgGroupDriveBundle](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveBundle?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetagroupdrivebundle](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetagroupdrivebundle)
-
 

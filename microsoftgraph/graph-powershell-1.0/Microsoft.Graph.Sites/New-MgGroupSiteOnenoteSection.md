@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteonenotesection
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to sections for groups
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupSiteOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteOnenoteSection?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,6 +46,18 @@ New-MgGroupSiteOnenoteSection -InputObject <ISitesIdentity> -BodyParameter <IMic
 
 ## DESCRIPTION
 Create new navigation property to sections for groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -995,8 +1004,6 @@ Nullable.
 Read-only.
 
 ## RELATED LINKS
-[New-MgBetaGroupSiteOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteOnenoteSection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteonenotesection](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteonenotesection)
-
 

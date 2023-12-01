@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdevice
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # New-MgDevice
@@ -11,9 +10,6 @@ ms.prod: directory-management
 ## SYNOPSIS
 Create and register a new device in the organization.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDevice](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDevice?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -43,17 +39,18 @@ Create and register a new device in the organization.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
+```
 
 $params = @{
 	accountEnabled = $false
 	alternativeSecurityIds = @(
 		@{
 			type = 2
-			key = [System.Text.Encoding]::ASCII.GetBytes("base64Y3YxN2E1MWFlYw==")
+			key = \[System.Text.Encoding\]::ASCII.GetBytes("base64Y3YxN2E1MWFlYw==")
 		}
 	)
 	deviceId = "4c299165-6e8f-4b45-a5ba-c5d250a707ff"
@@ -63,11 +60,6 @@ $params = @{
 }
 
 New-MgDevice -BodyParameter $params
-```
-This example shows how to use the New-MgDevice Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -825,7 +817,6 @@ Read-only.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
-[New-MgBetaDevice](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDevice?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdevice](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdevice)
 

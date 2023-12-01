@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/clear-mgteamprimarychannelmessagereaction
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action unsetReaction
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Clear-MgBetaTeamPrimaryChannelMessageReaction](/powershell/module/Microsoft.Graph.Beta.Teams/Clear-MgBetaTeamPrimaryChannelMessageReaction?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -44,6 +41,18 @@ Clear-MgTeamPrimaryChannelMessageReaction -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Invoke action unsetReaction
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -240,8 +249,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Clear-MgBetaTeamPrimaryChannelMessageReaction](/powershell/module/Microsoft.Graph.Beta.Teams/Clear-MgBetaTeamPrimaryChannelMessageReaction?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/clear-mgteamprimarychannelmessagereaction](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/clear-mgteamprimarychannelmessagereaction)
-
 

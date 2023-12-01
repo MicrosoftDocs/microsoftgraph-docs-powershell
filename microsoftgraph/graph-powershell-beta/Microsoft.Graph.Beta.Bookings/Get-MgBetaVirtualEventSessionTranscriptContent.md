@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventsessiontranscriptcontent
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Get-MgBetaVirtualEventSessionTranscriptContent
@@ -29,6 +28,18 @@ Get-MgBetaVirtualEventSessionTranscriptContent -InputObject <IBookingsIdentity> 
 ## DESCRIPTION
 The content of the transcript.
 Read-only.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -166,5 +177,4 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventsessiontranscriptcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventsessiontranscriptcontent)
-
 

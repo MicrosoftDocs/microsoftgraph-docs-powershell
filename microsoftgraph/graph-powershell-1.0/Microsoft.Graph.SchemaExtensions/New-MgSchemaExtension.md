@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.SchemaExtensions-help.xml
 Module Name: Microsoft.Graph.SchemaExtensions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/new-mgschemaextension
 schema: 2.0.0
-ms.prod: extensions
 ---
 
 # New-MgSchemaExtension
@@ -15,9 +14,6 @@ The app that creates a schema extension is the owner app.
 Depending on the \nstate of the extension, the owner app, and only the owner app, may update or delete the extension.
 See examples of how to define a schema extension that describes a training course, \nuse the schema extension definition to create a new group with training course data, and \nadd training course data to an existing group.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSchemaExtension](/powershell/module/Microsoft.Graph.Beta.SchemaExtensions/New-MgBetaSchemaExtension?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -42,11 +38,11 @@ See examples of how to define a schema extension that describes a training cours
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Creating a schema extension using a verified domain
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.SchemaExtensions
+```
 
 $params = @{
 	id = "graphlearn_courses"
@@ -72,14 +68,10 @@ $params = @{
 
 New-MgSchemaExtension -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example shows creating a schema extension using a verified domain
-
-### Example 2: Creating a schema extension using just a name
-
-```powershell
-
 Import-Module Microsoft.Graph.SchemaExtensions
+```
 
 $params = @{
 	id = "courses"
@@ -105,14 +97,10 @@ $params = @{
 
 New-MgSchemaExtension -BodyParameter $params
 
+### EXAMPLE 3
 ```
-This example shows creating a schema extension using just a name
-
-### Example 3: Creating a schema extension setting the owner
-
-```powershell
-
 Import-Module Microsoft.Graph.SchemaExtensions
+```
 
 $params = @{
 	id = "courses"
@@ -138,10 +126,6 @@ $params = @{
 }
 
 New-MgSchemaExtension -BodyParameter $params
-
-```
-This example shows creating a schema extension setting the owner
-
 
 ## PARAMETERS
 
@@ -361,7 +345,6 @@ Allowed values are Binary, Boolean, DateTime, Integer or String.
 See the table in the Supported property data types section for more details.
 
 ## RELATED LINKS
-[New-MgBetaSchemaExtension](/powershell/module/Microsoft.Graph.Beta.SchemaExtensions/New-MgBetaSchemaExtension?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/new-mgschemaextension](https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/new-mgschemaextension)
 

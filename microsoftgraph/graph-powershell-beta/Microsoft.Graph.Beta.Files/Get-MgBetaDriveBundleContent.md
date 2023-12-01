@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivebundlecontent
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Get-MgBetaDriveBundleContent
 
 ## SYNOPSIS
 The content stream, if the item represents a file.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDriveBundleContent](/powershell/module/Microsoft.Graph.Files/Get-MgDriveBundleContent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,6 +27,16 @@ Get-MgBetaDriveBundleContent -InputObject <IFilesIdentity> -OutFile <String> [-P
 The content stream, if the item represents a file.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -152,7 +158,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgDriveBundleContent](/powershell/module/Microsoft.Graph.Files/Get-MgDriveBundleContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivebundlecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivebundlecontent)
 

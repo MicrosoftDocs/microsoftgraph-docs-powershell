@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationtemplate
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Get-MgBetaServicePrincipalSynchronizationTemplate
 
 ## SYNOPSIS
 Pre-configured synchronization settings for a particular application.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalSynchronizationTemplate](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalSynchronizationTemplate?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -39,13 +35,12 @@ Get-MgBetaServicePrincipalSynchronizationTemplate -InputObject <IApplicationsIde
 Pre-configured synchronization settings for a particular application.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaServicePrincipalSynchronizationTemplate Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Applications
 Get-MgBetaServicePrincipalSynchronizationTemplate -ServicePrincipalId $servicePrincipalId
 ```
-This example shows how to use the Get-MgBetaServicePrincipalSynchronizationTemplate Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -295,7 +290,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgServicePrincipalSynchronizationTemplate](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalSynchronizationTemplate?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationtemplate)
 

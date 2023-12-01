@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetausermessageextension
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property extensions in users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserMessageExtension](/powershell/module/Microsoft.Graph.Mail/Update-MgUserMessageExtension?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -41,6 +38,22 @@ Update-MgBetaUserMessageExtension -InputObject <IMailIdentity> -BodyParameter <H
 
 ## DESCRIPTION
 Update the navigation property extensions in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -211,8 +224,6 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgUserMessageExtension](/powershell/module/Microsoft.Graph.Mail/Update-MgUserMessageExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetausermessageextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetausermessageextension)
-
 

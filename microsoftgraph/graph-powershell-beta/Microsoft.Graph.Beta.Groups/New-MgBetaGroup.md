@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroup
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # New-MgBetaGroup
@@ -15,9 +14,6 @@ These default properties are noted in the Properties section.
 To get properties that are not returned by default, do a GET operation and specify the properties in a $select OData query option.
 Note: To create a team, first create a group then add a team to it, see create team.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroup](/powershell/module/Microsoft.Graph.Groups/New-MgGroup?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -74,17 +70,15 @@ Note: To create a team, first create a group then add a team to it, see create t
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Create a new group
 
-```powershell
+### EXAMPLE 1
+```
 New-MgBetaGroup -DisplayName 'Test Group' -MailEnabled:$False  -MailNickName 'testgroup' -SecurityEnabled
+```
 
 Id                                   DisplayName Description GroupTypes
 --                                   ----------- ----------- ----------
 15bb6c2c-ac32-41a1-b9ec-b6300b8b8e52 Test Group              {}
-```
-
-This example creates a new group.
 
 ## PARAMETERS
 
@@ -40024,7 +40018,6 @@ Microsoft Entra security groups can be written back as universalSecurityGroup.
 If isEnabled or the NewUnifiedGroupWritebackDefault group setting is true but this property isn't explicitly configured: Microsoft 365 groups are written back as universalDistributionGroup by defaultSecurity groups are written back as universalSecurityGroup by default
 
 ## RELATED LINKS
-[New-MgGroup](/powershell/module/Microsoft.Graph.Groups/New-MgGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroup)
 

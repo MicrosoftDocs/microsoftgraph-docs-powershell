@@ -1,10 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnection
 schema: 2.0.0
-ms.prod: search
-ms.prod: search
 ---
 
 # Get-MgExternalConnection
@@ -12,9 +10,6 @@ ms.prod: search
 ## SYNOPSIS
 Read the properties and relationships of an externalConnection object.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnection?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -42,17 +37,13 @@ Read the properties and relationships of an externalConnection object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Search
+```
 
 Get-MgExternalConnection
-
-```
-This example shows how to use the Get-MgExternalConnection Cmdlet.
-
 
 ## PARAMETERS
 
@@ -262,7 +253,6 @@ INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
   \[IdentityId \<String\>\]: The unique identifier of identity
 
 ## RELATED LINKS
-[Get-MgBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnection](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnection)
 

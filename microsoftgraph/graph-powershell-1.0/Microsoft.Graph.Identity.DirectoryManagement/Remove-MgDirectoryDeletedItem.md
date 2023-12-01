@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectorydeleteditem
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Remove-MgDirectoryDeletedItem
@@ -37,17 +36,13 @@ Soft-deleted administrative units will be permanently deleted 30 days after init
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
+```
 
 Remove-MgDirectoryDeletedItem -DirectoryObjectId $directoryObjectId
-```
-This example shows how to use the Remove-MgDirectoryDeletedItem Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

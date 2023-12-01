@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamtag
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a teamworkTag object.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgGroupTeamTag](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamTag?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,6 +46,16 @@ Update the properties of a teamworkTag object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -349,7 +356,6 @@ Read-only.
   \[UserId \<String\>\]: The user ID of the member.
 
 ## RELATED LINKS
-[Update-MgGroupTeamTag](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamTag?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamtag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamtag)
 

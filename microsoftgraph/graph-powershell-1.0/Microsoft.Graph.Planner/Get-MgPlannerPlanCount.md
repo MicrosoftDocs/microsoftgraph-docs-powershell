@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerplancount
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPlannerPlanCount](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerPlanCount?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
@@ -21,6 +18,18 @@ Get-MgPlannerPlanCount [-Filter <String>] [-Search <String>] [<CommonParameters>
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -65,8 +74,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaPlannerPlanCount](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerPlanCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerplancount](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerplancount)
-
 

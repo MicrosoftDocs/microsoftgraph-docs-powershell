@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.ChangeNotifications-help.xml
 Module Name: Microsoft.Graph.ChangeNotifications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/update-mgsubscription
 schema: 2.0.0
-ms.prod: change-notifications
 ---
 
 # Update-MgSubscription
@@ -15,9 +14,6 @@ Subscriptions expire after a length of time that varies by resource type.
 In order to avoid missing change notifications, an app should renew its subscriptions well in advance of their expiry date.
 See subscription for maximum length of a subscription for each resource type.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/Update-MgBetaSubscription?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -62,21 +58,17 @@ See subscription for maximum length of a subscription for each resource type.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.ChangeNotifications
+```
 
 $params = @{
-	expirationDateTime = [System.DateTime]::Parse("2016-11-22T18:23:45.9356913Z")
+	expirationDateTime = \[System.DateTime\]::Parse("2016-11-22T18:23:45.9356913Z")
 }
 
 Update-MgSubscription -SubscriptionId $subscriptionId -BodyParameter $params
-```
-This example shows how to use the Update-MgSubscription Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -530,7 +522,6 @@ INPUTOBJECT \<IChangeNotificationsIdentity\>: Identity Parameter
   \[SubscriptionId \<String\>\]: The unique identifier of subscription
 
 ## RELATED LINKS
-[Update-MgBetaSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/Update-MgBetaSubscription?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/update-mgsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/update-mgsubscription)
 

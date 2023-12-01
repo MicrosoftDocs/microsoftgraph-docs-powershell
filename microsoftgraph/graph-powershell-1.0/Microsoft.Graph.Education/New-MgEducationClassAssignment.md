@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignment
 schema: 2.0.0
-ms.prod: education
 ---
 
 # New-MgEducationClassAssignment
@@ -13,9 +12,6 @@ Create a new assignment.
 Only teachers in a class can create an assignment.
 Assignments start in the Draft state, which means that students will not see the assignment until publication.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -66,14 +62,14 @@ Assignments start in the Draft state, which means that students will not see the
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Education
+```
 
 $params = @{
-	dueDateTime = [System.DateTime]::Parse("2022-09-16T00:00:00Z")
+	dueDateTime = \[System.DateTime\]::Parse("2022-09-16T00:00:00Z")
 	displayName = "Reading test 09.14"
 	instructions = @{
 		contentType = "text"
@@ -91,10 +87,6 @@ $params = @{
 }
 
 New-MgEducationClassAssignment -EducationClassId $educationClassId -BodyParameter $params
-
-```
-This example shows how to use the New-MgEducationClassAssignment Cmdlet.
-
 
 ## PARAMETERS
 
@@ -784,7 +776,6 @@ Read-only.
   \[UnsubmittedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
 
 ## RELATED LINKS
-[New-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignment)
 

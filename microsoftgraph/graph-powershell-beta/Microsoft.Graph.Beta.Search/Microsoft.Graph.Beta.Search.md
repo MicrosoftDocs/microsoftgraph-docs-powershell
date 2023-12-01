@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Search
 Module Guid: 218d60fa-638d-404f-b7f0-592c63bac4bb
 Download Help Link: {{ Update Download Link }}

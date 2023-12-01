@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementroleassignment
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Update-MgDeviceManagementRoleAssignment
 
 ## SYNOPSIS
 Update the properties of a deviceAndAppManagementRoleAssignment object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementRoleAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementRoleAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -46,6 +42,22 @@ Update-MgDeviceManagementRoleAssignment -InputObject <IDeviceManagementAdministr
 
 ## DESCRIPTION
 Update the properties of a deviceAndAppManagementRoleAssignment object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -360,8 +372,6 @@ These must match the actionName that is defined as part of the rolePermission.
       \[NotAllowedResourceActions \<String\[\]\>\]: Not Allowed Actions.
 
 ## RELATED LINKS
-[Update-MgBetaDeviceManagementRoleAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementRoleAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementroleassignment)
-
 

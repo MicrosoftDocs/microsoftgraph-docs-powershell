@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupdriveitemuploadsession
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action createUploadSession
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupDriveItemUploadSession](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupDriveItemUploadSession?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -44,6 +41,22 @@ New-MgGroupDriveItemUploadSession -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Invoke action createUploadSession
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -274,8 +287,6 @@ Available for the recent file list only.
 Read-write.
 
 ## RELATED LINKS
-[New-MgBetaGroupDriveItemUploadSession](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupDriveItemUploadSession?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupdriveitemuploadsession](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupdriveitemuploadsession)
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitem
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Get-MgDriveItem
@@ -11,9 +10,6 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Retrieve the metadata for a bundle\]\[\] based on the unique ID of the bundle.
 This API is available in the following \[national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -41,17 +37,13 @@ Retrieve the metadata for a bundle\]\[\] based on the unique ID of the bundle.
 This API is available in the following \[national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Get a bundle and its children in a single call
 
-```powershell
-
-Import-Module Microsoft.Graph.Files
-
-Get-MgDriveItem -DriveId $driveId -DriveItemId $driveItemId -ExpandProperty "children" 
-
+### EXAMPLE 1
 ```
-This example will get a bundle and its children in a single call
+Import-Module Microsoft.Graph.Files
+```
 
+Get-MgDriveItem -DriveId $driveId -DriveItemId $driveItemId -ExpandProperty "children"
 
 ## PARAMETERS
 
@@ -294,7 +286,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitem)
 

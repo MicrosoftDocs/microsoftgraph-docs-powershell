@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdrivelistitemversion
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property versions in users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserDriveListItemVersion](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveListItemVersion?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45,6 +42,22 @@ Update-MgBetaUserDriveListItemVersion -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Update the navigation property versions in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -366,8 +379,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[Update-MgUserDriveListItemVersion](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveListItemVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdrivelistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdrivelistitemversion)
-
 

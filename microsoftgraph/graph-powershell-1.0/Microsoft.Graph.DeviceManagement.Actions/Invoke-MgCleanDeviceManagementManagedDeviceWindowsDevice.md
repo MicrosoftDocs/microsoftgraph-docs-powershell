@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgcleandevicemanagementmanageddevicewindowsdevice
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Invoke-MgCleanDeviceManagementManagedDeviceWindowsDevice
 
 ## SYNOPSIS
 Clean Windows device
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaCleanDeviceManagementManagedDeviceWindowsDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Invoke-MgBetaCleanDeviceManagementManagedDeviceWindowsDevice?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -44,6 +40,18 @@ Invoke-MgCleanDeviceManagementManagedDeviceWindowsDevice -InputObject <IDeviceMa
 
 ## DESCRIPTION
 Clean Windows device
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -205,8 +213,6 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
   \[WindowsAutopilotDeviceIdentityId \<String\>\]: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
-[Invoke-MgBetaCleanDeviceManagementManagedDeviceWindowsDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Invoke-MgBetaCleanDeviceManagementManagedDeviceWindowsDevice?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgcleandevicemanagementmanageddevicewindowsdevice](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgcleandevicemanagementmanageddevicewindowsdevice)
-
 

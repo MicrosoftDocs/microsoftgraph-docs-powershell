@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermailfolderchildfoldermessageforward
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgBetaUserMailFolderChildFolderMessageForward
@@ -17,9 +16,6 @@ When using MIME format:\n- Provide the applicable Internet message headers and t
 Send the draft message in a subsequent operation.
 Alternatively, forward a message in a single operation.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserMailFolderChildFolderMessageForward](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMailFolderChildFolderMessageForward?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -64,18 +60,14 @@ Alternatively, forward a message in a single operation.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users.Actions
+```
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserMessageForward -UserId $userId -MessageId $messageId
-```
-This example shows how to use the New-MgBetaUserMailFolderChildFolderMessageForward Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -558,7 +550,6 @@ TORECIPIENTS \<IMicrosoftGraphRecipient\[\]\>: .
     \[Name \<String\>\]: The display name of an entity instance.
 
 ## RELATED LINKS
-[New-MgUserMailFolderChildFolderMessageForward](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMailFolderChildFolderMessageForward?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermailfolderchildfoldermessageforward](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermailfolderchildfoldermessageforward)
 

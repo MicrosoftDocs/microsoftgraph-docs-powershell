@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenote
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Calls the OneNote service for notebook related operations.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteOnenote](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenote?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,6 +26,18 @@ Get-MgGroupSiteOnenote -InputObject <ISitesIdentity> [-ExpandProperty <String[]>
 
 ## DESCRIPTION
 Calls the OneNote service for notebook related operations.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -164,8 +173,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupSiteOnenote](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenote?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenote](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenote)
-
 

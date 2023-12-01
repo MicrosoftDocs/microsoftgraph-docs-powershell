@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewdecision
@@ -35,13 +35,12 @@ Get-MgBetaIdentityGovernanceAccessReviewDecision -InputObject <IIdentityGovernan
 Represents a Microsoft Entra access review decision on an instance of a review.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaIdentityGovernanceAccessReviewDecision Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.Governance
-Get-MgBetaIdentityGovernanceAccessReviewDecision -AccessReviewInstanceDecisionItemId $accessReviewInstanceDecisionItemId -ExpandProperty "instance(`$expand=definition)" 
+
+### EXAMPLE 1
 ```
-This example shows how to use the Get-MgBetaIdentityGovernanceAccessReviewDecision Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+Get-MgBetaIdentityGovernanceAccessReviewDecision -AccessReviewInstanceDecisionItemId $accessReviewInstanceDecisionItemId -ExpandProperty "instance(`$expand=definition)"
+```
 
 ## PARAMETERS
 

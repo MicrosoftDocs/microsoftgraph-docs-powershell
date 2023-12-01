@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiteanalytic
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property analytics in groups
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgGroupSiteAnalytic](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteAnalytic?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45,6 +42,18 @@ Update-MgBetaGroupSiteAnalytic -InputObject <ISitesIdentity> -BodyParameter <IMi
 
 ## DESCRIPTION
 Update the navigation property analytics in groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -29746,8 +29755,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[Update-MgGroupSiteAnalytic](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteAnalytic?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiteanalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiteanalytic)
-
 

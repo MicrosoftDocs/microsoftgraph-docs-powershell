@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallrecord
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Get-MgCommunicationCallRecord
@@ -13,9 +12,6 @@ Retrieve the properties and relationships of a callRecord object.
 There are two ways to get the id of a callRecord: You can use the $expand query parameter to optionally include session and segment details, as shown in the Get full details example.
 When you expand session details, the maximum page size is 60 sessions.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationCallRecord](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationCallRecord?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,28 +34,20 @@ When you expand session details, the maximum page size is 60 sessions.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Get basic details
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 Get-MgCommunicationCallRecord -CallRecordId $callRecordId
 
+### EXAMPLE 2
 ```
-This example will get basic details
-
-### Example 2: Get full details
-
-```powershell
-
 Import-Module Microsoft.Graph.CloudCommunications
-
-Get-MgCommunicationCallRecord -CallRecordId $callRecordId -ExpandProperty "sessions(`$expand=segments)" 
-
 ```
-This example will get full details
 
+Get-MgCommunicationCallRecord -CallRecordId $callRecordId -ExpandProperty "sessions(\`$expand=segments)"
 
 ## PARAMETERS
 
@@ -155,7 +143,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaCommunicationCallRecord](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationCallRecord?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallrecord](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallrecord)
 

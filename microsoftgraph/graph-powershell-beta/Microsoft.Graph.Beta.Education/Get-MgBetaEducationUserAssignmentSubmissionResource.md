@@ -1,10 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserassignmentsubmissionresource
 schema: 2.0.0
-ms.prod: education
-ms.prod: education
 ---
 
 # Get-MgBetaEducationUserAssignmentSubmissionResource
@@ -15,9 +13,6 @@ Only teachers, students, and applications with application permissions can perfo
 This resource is in the 'working' resource list and should be considered work in process by a student.
 This resource is wrapped with a possible pointer back to the assignment resource if it was copied from the assignment.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEducationUserAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserAssignmentSubmissionResource?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -50,6 +45,16 @@ This resource is wrapped with a possible pointer back to the assignment resource
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -315,7 +320,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgEducationUserAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserAssignmentSubmissionResource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserassignmentsubmissionresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserassignmentsubmissionresource)
 

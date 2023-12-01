@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauserpresence
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Get-MgBetaUserPresence
@@ -12,9 +11,6 @@ ms.prod: cloud-communications
 Set a presence status message for a user.
 An optional expiration date and time can be supplied.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserPresence](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserPresence?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -36,29 +32,21 @@ An optional expiration date and time can be supplied.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Get your own presence information
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserPresence -UserId $userId
 
+### EXAMPLE 2
 ```
-This example will get your own presence information
-
-### Example 2: Get the presence information of another user
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 Get-MgBetaUserPresence -UserId $userId
-
-```
-This example will get the presence information of another user
-
 
 ## PARAMETERS
 
@@ -159,7 +147,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserPresence](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserPresence?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauserpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauserpresence)
 

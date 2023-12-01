@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplace
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete entity from places
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgPlace](/powershell/module/Microsoft.Graph.Calendar/Remove-MgPlace?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,10 +27,11 @@ Remove-MgBetaPlace -InputObject <ICalendarIdentity> [-IfMatch <String>] [-PassTh
 Delete entity from places
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Calendar
+```
 
 $params = @{
 	"@odata.type" = "microsoft.graph.room"
@@ -45,11 +43,6 @@ $params = @{
 }
 
 Update-MgBetaPlace -PlaceId $placeId -BodyParameter $params
-```
-This example shows how to use the Remove-MgBetaBetaPlace Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -176,7 +169,6 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[WorkspaceId \<String\>\]: The unique identifier of workspace
 
 ## RELATED LINKS
-[Remove-MgPlace](/powershell/module/Microsoft.Graph.Calendar/Remove-MgPlace?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplace](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplace)
 

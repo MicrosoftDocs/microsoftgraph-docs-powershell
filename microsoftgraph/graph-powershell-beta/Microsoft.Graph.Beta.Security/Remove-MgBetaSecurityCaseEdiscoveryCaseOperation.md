@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycaseoperation
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property operations for security
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityCaseEdiscoveryCaseOperation](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityCaseEdiscoveryCaseOperation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Remove-MgBetaSecurityCaseEdiscoveryCaseOperation -InputObject <ISecurityIdentity
 
 ## DESCRIPTION
 Delete navigation property operations for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -233,8 +246,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Remove-MgSecurityCaseEdiscoveryCaseOperation](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityCaseEdiscoveryCaseOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycaseoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycaseoperation)
-
 

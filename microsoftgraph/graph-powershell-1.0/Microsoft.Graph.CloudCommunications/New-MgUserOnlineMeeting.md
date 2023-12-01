@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mguseronlinemeeting
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # New-MgUserOnlineMeeting
@@ -11,9 +10,6 @@ ms.prod: cloud-communications
 ## SYNOPSIS
 Create an online meeting on behalf of a user.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaUserOnlineMeeting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -70,33 +66,29 @@ Create an online meeting on behalf of a user.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Create an online meeting with user token
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
-	startDateTime = [System.DateTime]::Parse("2019-07-12T14:30:34.2444915-07:00")
-	endDateTime = [System.DateTime]::Parse("2019-07-12T15:00:34.2464912-07:00")
+	startDateTime = \[System.DateTime\]::Parse("2019-07-12T14:30:34.2444915-07:00")
+	endDateTime = \[System.DateTime\]::Parse("2019-07-12T15:00:34.2464912-07:00")
 	subject = "User Token Meeting"
 }
 
 # A UPN can also be used as -UserId.
 New-MgUserOnlineMeeting -UserId $userId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will create an online meeting with user token
-
-### Example 2: Create an online meeting that requires a passcode
-
-```powershell
-
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
-	startDateTime = [System.DateTime]::Parse("2019-07-12T14:30:34.2444915-07:00")
-	endDateTime = [System.DateTime]::Parse("2019-07-12T15:00:34.2464912-07:00")
+	startDateTime = \[System.DateTime\]::Parse("2019-07-12T14:30:34.2444915-07:00")
+	endDateTime = \[System.DateTime\]::Parse("2019-07-12T15:00:34.2464912-07:00")
 	subject = "User meeting"
 	joinMeetingIdSettings = @{
 		isPasscodeRequired = $true
@@ -106,18 +98,14 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgUserOnlineMeeting -UserId $userId -BodyParameter $params
 
+### EXAMPLE 3
 ```
-This example will create an online meeting that requires a passcode
-
-### Example 3: Create an online meeting that doesn't require a passcode
-
-```powershell
-
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
-	startDateTime = [System.DateTime]::Parse("2019-07-12T14:30:34.2444915-07:00")
-	endDateTime = [System.DateTime]::Parse("2019-07-12T15:00:34.2464912-07:00")
+	startDateTime = \[System.DateTime\]::Parse("2019-07-12T14:30:34.2444915-07:00")
+	endDateTime = \[System.DateTime\]::Parse("2019-07-12T15:00:34.2464912-07:00")
 	subject = "User meeting in Microsoft Teams channel."
 	joinMeetingIdSettings = @{
 		isPasscodeRequired = $false
@@ -126,10 +114,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserOnlineMeeting -UserId $userId -BodyParameter $params
-
-```
-This example will create an online meeting that doesn't require a passcode
-
 
 ## PARAMETERS
 
@@ -975,7 +959,6 @@ WATERMARKPROTECTION \<IMicrosoftGraphWatermarkProtectionValues\>: watermarkProte
   \[IsEnabledForVideo \<Boolean?\>\]: Indicates whether to apply a watermark to everyone's video feed.
 
 ## RELATED LINKS
-[New-MgBetaUserOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaUserOnlineMeeting?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mguseronlinemeeting](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mguseronlinemeeting)
 

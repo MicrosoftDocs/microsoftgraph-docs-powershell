@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenoteoperation
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # Get-MgSiteOnenoteOperation
@@ -15,9 +14,6 @@ This applies to operations that return the Operation-Location header in the resp
 If the status is completed, the resourceLocation property contains the resource endpoint URI.
 If the status is failed, the error and @api.diagnostics properties provide error information.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSiteOnenoteOperation](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaSiteOnenoteOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -42,6 +38,16 @@ If the status is failed, the error and @api.diagnostics properties provide error
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -148,7 +154,6 @@ INPUTOBJECT \<INotesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaSiteOnenoteOperation](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaSiteOnenoteOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenoteoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenoteoperation)
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsiteinformationprotectionthreatassessmentrequest
 schema: 2.0.0
-ms.prod: security
 ---
 
 # New-MgBetaGroupSiteInformationProtectionThreatAssessmentRequest
@@ -47,6 +46,18 @@ New-MgBetaGroupSiteInformationProtectionThreatAssessmentRequest -InputObject <IS
 ## DESCRIPTION
 Create a new threat assessment request.
 A threat assessment request can be one of the following types: This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -420,5 +431,4 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsiteinformationprotectionthreatassessmentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsiteinformationprotectionthreatassessmentrequest)
-
 

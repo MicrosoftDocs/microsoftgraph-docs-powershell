@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetauserpendingaccessreviewinstancereminder
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Send-MgBetaUserPendingAccessReviewInstanceReminder
@@ -29,6 +28,22 @@ Send-MgBetaUserPendingAccessReviewInstanceReminder -InputObject <IUsersActionsId
 ## DESCRIPTION
 Send a reminder to the reviewers of a currently active accessReviewInstance.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -183,5 +198,4 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetauserpendingaccessreviewinstancereminder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetauserpendingaccessreviewinstancereminder)
-
 

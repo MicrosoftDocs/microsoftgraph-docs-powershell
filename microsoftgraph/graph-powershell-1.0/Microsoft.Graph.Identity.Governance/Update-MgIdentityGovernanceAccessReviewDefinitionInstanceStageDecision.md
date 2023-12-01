@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewdefinitioninstancestagedecision
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision
@@ -11,9 +10,6 @@ ms.prod: governance
 ## SYNOPSIS
 Update access decisions, known as accessReviewInstanceDecisionItems, for which the user is the reviewer.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecision](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecision?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -62,10 +58,11 @@ Update access decisions, known as accessReviewInstanceDecisionItems, for which t
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Update a decision on an accessReviewInstance
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.Governance
+```
 
 $params = @{
 	decision = "Approve"
@@ -73,15 +70,11 @@ $params = @{
 }
 
 Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -AccessReviewStageId $accessReviewStageId -AccessReviewInstanceDecisionItemId $accessReviewInstanceDecisionItemId -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Update a decision on an stage in a multi-stage access review
-
-```powershell
 Import-Module Microsoft.Graph.Identity.Governance
+```
 
 $params = @{
 	decision = "Approve"
@@ -89,11 +82,6 @@ $params = @{
 }
 
 Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -AccessReviewStageId $accessReviewStageId -AccessReviewInstanceDecisionItemId $accessReviewInstanceDecisionItemId -BodyParameter $params
-```
-This example shows how to use the Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -680,7 +668,6 @@ For example, if a user changes their display name, the API might show the new va
   \[UserPrincipalName \<String\>\]: The userPrincipalName attribute of the user.
 
 ## RELATED LINKS
-[Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecision](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecision?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewdefinitioninstancestagedecision](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewdefinitioninstancestagedecision)
 

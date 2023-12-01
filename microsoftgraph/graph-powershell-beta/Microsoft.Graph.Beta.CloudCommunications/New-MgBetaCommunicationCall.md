@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationcall
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # New-MgBetaCommunicationCall
@@ -12,9 +11,6 @@ ms.prod: cloud-communications
 Create call enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting.
 You will need to register the calling bot and go through the list of permissions needed.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgCommunicationCall?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,11 +43,11 @@ You will need to register the calling bot and go through the list of permissions
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Create peer-to-peer VoIP call with service hosted media
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -83,14 +79,10 @@ $params = @{
 
 New-MgBetaCommunicationCall -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will create peer-to-peer voip call with service hosted media
-
-### Example 2: Create peer-to-peer VoIP call with application hosted media
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -126,20 +118,16 @@ $params = @{
 	)
 	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		blob = "<Media Session Configuration>"
+		blob = "\<Media Session Configuration\>"
 	}
 }
 
 New-MgBetaCommunicationCall -BodyParameter $params
 
+### EXAMPLE 3
 ```
-This example will create peer-to-peer voip call with application hosted media
-
-### Example 3: Create a group call with service hosted media
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -193,14 +181,10 @@ $params = @{
 
 New-MgBetaCommunicationCall -BodyParameter $params
 
+### EXAMPLE 4
 ```
-This example will create a group call with service hosted media
-
-### Example 4: Create a group call with application hosted media
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -247,7 +231,7 @@ $params = @{
 	)
 	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		blob = "<Media Session Configuration>"
+		blob = "\<Media Session Configuration\>"
 		removeFromDefaultAudioGroup = $false
 	}
 	tenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
@@ -255,14 +239,10 @@ $params = @{
 
 New-MgBetaCommunicationCall -BodyParameter $params
 
+### EXAMPLE 5
 ```
-This example will create a group call with application hosted media
-
-### Example 5: Join scheduled meeting with service hosted media
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -298,14 +278,10 @@ $params = @{
 
 New-MgBetaCommunicationCall -BodyParameter $params
 
+### EXAMPLE 6
 ```
-This example will join scheduled meeting with service hosted media
-
-### Example 6: Join a scheduled meeting with joinMeetingId and passcode
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -328,14 +304,10 @@ $params = @{
 
 New-MgBetaCommunicationCall -BodyParameter $params
 
+### EXAMPLE 7
 ```
-This example will join a scheduled meeting with joinmeetingid and passcode
-
-### Example 7: Join a scheduled meeting with joinMeetingId
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -358,14 +330,10 @@ $params = @{
 
 New-MgBetaCommunicationCall -BodyParameter $params
 
+### EXAMPLE 8
 ```
-This example will join a scheduled meeting with joinmeetingid
-
-### Example 8: Join scheduled meeting with app hosted media
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -376,7 +344,7 @@ $params = @{
 	)
 	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		blob = "<Media Session Configuration>"
+		blob = "\<Media Session Configuration\>"
 	}
 	chatInfo = @{
 		"@odata.type" = "#microsoft.graph.chatInfo"
@@ -401,14 +369,10 @@ $params = @{
 
 New-MgBetaCommunicationCall -BodyParameter $params
 
+### EXAMPLE 9
 ```
-This example will join scheduled meeting with app hosted media
-
-### Example 9: Join channel meeting with service hosted media
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -443,14 +407,10 @@ $params = @{
 
 New-MgBetaCommunicationCall -BodyParameter $params
 
+### EXAMPLE 10
 ```
-This example will join channel meeting with service hosted media
-
-### Example 10: Join channel meeting as a guest with service hosted media
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -496,14 +456,10 @@ $params = @{
 
 New-MgBetaCommunicationCall -BodyParameter $params
 
+### EXAMPLE 11
 ```
-This example will### example 10: join channel meeting as a guest with service hosted media
-
-### Example 11: Create peer-to-peer PSTN call with service hosted media
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -546,14 +502,10 @@ $params = @{
 
 New-MgBetaCommunicationCall -BodyParameter $params
 
+### EXAMPLE 12
 ```
-This example will### example 11: create peer-to-peer pstn call with service hosted media
-
-### Example 12: Create peer-to-peer PSTN call with application hosted media
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -590,16 +542,12 @@ $params = @{
 	)
 	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		blob = "<Media Session Configuration>"
+		blob = "\<Media Session Configuration\>"
 	}
 	tenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
 }
 
 New-MgBetaCommunicationCall -BodyParameter $params
-
-```
-This example will### example 12: create peer-to-peer pstn call with application hosted media
-
 
 ## PARAMETERS
 
@@ -1550,7 +1498,6 @@ TRANSCRIPTION \<IMicrosoftGraphCallTranscriptionInfo\>: callTranscriptionInfo
   \[State \<String\>\]: callTranscriptionState
 
 ## RELATED LINKS
-[New-MgCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgCommunicationCall?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationcall](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationcall)
 

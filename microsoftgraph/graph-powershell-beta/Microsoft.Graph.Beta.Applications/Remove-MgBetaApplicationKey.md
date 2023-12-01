@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationkey
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Remove-MgBetaApplicationKey
@@ -13,9 +12,6 @@ Remove a key credential from an application.
 This method along with addKey can be used by an application to automate rolling its expiring keys.
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgApplicationKey](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationKey?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -52,8 +48,9 @@ As part of the request validation for this method, a proof of possession of an e
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Remove-MgBetaApplicationKey Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{
 	KeyId = "f0b0b335-1d71-4883-8f98-567911bfdca6"
@@ -61,8 +58,6 @@ $params = @{
 }
 Remove-MgBetaApplicationKey -ApplicationId $applicationId -BodyParameter $params
 ```
-This example shows how to use the Remove-MgBetaApplicationKey Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -259,7 +254,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgApplicationKey](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationKey?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationkey](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationkey)
 

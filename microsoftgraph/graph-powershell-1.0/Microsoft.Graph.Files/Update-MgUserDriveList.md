@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdrivelist
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property list in users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserDriveList](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveList?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -57,6 +54,22 @@ Update-MgUserDriveList -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftG
 
 ## DESCRIPTION
 Update the navigation property list in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -23766,8 +23779,6 @@ Do not include the base URL (https://graph.microsoft.com/v1.0/).
 See the possible resource path values for each supported resource.
 
 ## RELATED LINKS
-[Update-MgBetaUserDriveList](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveList?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdrivelist](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdrivelist)
-
 

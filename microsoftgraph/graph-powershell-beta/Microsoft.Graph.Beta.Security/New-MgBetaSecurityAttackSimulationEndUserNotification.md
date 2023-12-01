@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationendusernotification
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to endUserNotifications for security
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityAttackSimulationEndUserNotification](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulationEndUserNotification?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -33,6 +30,18 @@ New-MgBetaSecurityAttackSimulationEndUserNotification -BodyParameter <IMicrosoft
 
 ## DESCRIPTION
 Create new navigation property to endUserNotifications for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -368,8 +377,6 @@ This property is read-only.
   \[Email \<String\>\]: Email address of the user.
 
 ## RELATED LINKS
-[New-MgSecurityAttackSimulationEndUserNotification](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulationEndUserNotification?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationendusernotification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationendusernotification)
-
 

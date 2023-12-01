@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabookingbusinessappointment
 schema: 2.0.0
-ms.prod: bookings
 ---
 
 # Remove-MgBetaBookingBusinessAppointment
@@ -11,9 +10,6 @@ ms.prod: bookings
 ## SYNOPSIS
 Delete a bookingAppointment in the specified bookingBusiness.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBookingBusinessAppointment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34,13 +30,12 @@ Delete a bookingAppointment in the specified bookingBusiness.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Remove-MgBetaBookingBusinessAppointment Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Bookings
 Remove-MgBetaBookingBusinessAppointment -BookingBusinessId $bookingBusinessId -BookingAppointmentId $bookingAppointmentId
 ```
-This example shows how to use the Remove-MgBetaBookingBusinessAppointment Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -192,7 +187,6 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Remove-MgBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBookingBusinessAppointment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabookingbusinessappointment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabookingbusinessappointment)
 

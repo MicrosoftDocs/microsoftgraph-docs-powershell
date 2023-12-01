@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrivelistitemdocumentsetversionfield
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 A collection of the fields and values for this version of the list item.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveListItemDocumentSetVersionField?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,6 +26,18 @@ Get-MgBetaUserDriveListItemDocumentSetVersionField -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 A collection of the fields and values for this version of the list item.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -180,8 +189,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserDriveListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveListItemDocumentSetVersionField?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrivelistitemdocumentsetversionfield](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrivelistitemdocumentsetversionfield)
-
 

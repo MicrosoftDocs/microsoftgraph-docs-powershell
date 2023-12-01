@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetacontact
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update entity in contacts
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgContact](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgContact?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -61,17 +58,13 @@ Update-MgBetaContact -InputObject <IIdentityDirectoryManagementIdentity>
 Update entity in contacts
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+```
 
 Get-MgBetaContact -OrgContactId $orgContactId
-```
-This example shows how to use the Update-MgBetaBetaContact Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -748,7 +741,6 @@ Read-only.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
-[Update-MgContact](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgContact?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetacontact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetacontact)
 

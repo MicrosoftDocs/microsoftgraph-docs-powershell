@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouptransitivemember
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # Get-MgBetaGroupTransitiveMember
@@ -11,9 +10,6 @@ ms.prod: groups
 ## SYNOPSIS
 The direct and transitive members of a group.
 Nullable.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupTransitiveMember](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupTransitiveMember?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -41,13 +37,12 @@ The direct and transitive members of a group.
 Nullable.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaGroupTransitiveMember Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Groups
 Get-MgBetaGroupTransitiveMember -GroupId $groupId
 ```
-This example shows how to use the Get-MgBetaGroupTransitiveMember Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -323,7 +318,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgGroupTransitiveMember](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupTransitiveMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouptransitivemember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouptransitivemember)
 

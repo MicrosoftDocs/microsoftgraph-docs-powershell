@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicymobiledevicemanagementpolicyincludedgroupbyref
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Remove-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupByRef
@@ -32,13 +31,12 @@ Delete a group from the list of groups included in a mobile app management polic
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Remove-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupByRef Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Remove-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupByRef -MobilityManagementPolicyId $mobilityManagementPolicyId -GroupId $groupId
 ```
-This example shows how to use the Remove-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupByRef Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

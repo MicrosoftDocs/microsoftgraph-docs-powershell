@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelist
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # New-MgSiteList
@@ -11,9 +10,6 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Create a new list\]\[\] in a \[site\]\[\].
 This API is available in the following \[national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSiteList](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteList?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -61,10 +57,11 @@ Create a new list\]\[\] in a \[site\]\[\].
 This API is available in the following \[national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Sites
+```
 
 $params = @{
 	displayName = "Books"
@@ -86,11 +83,6 @@ $params = @{
 }
 
 New-MgSiteList -SiteId $siteId -BodyParameter $params
-```
-This example shows how to use the New-MgSiteList Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -23799,7 +23791,6 @@ Do not include the base URL (https://graph.microsoft.com/v1.0/).
 See the possible resource path values for each supported resource.
 
 ## RELATED LINKS
-[New-MgBetaSiteList](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteList?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelist](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelist)
 

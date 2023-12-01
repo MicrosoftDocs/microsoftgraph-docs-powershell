@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausercalendar
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgBetaUserCalendar
@@ -11,9 +10,6 @@ ms.prod: outlook
 ## SYNOPSIS
 Create a new calendar for a user.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserCalendar](/powershell/module/Microsoft.Graph.Calendar/New-MgUserCalendar?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -62,10 +58,11 @@ Create a new calendar for a user.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Calendar
+```
 
 $params = @{
 	name = "Volunteer"
@@ -73,11 +70,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserCalendar -UserId $userId -BodyParameter $params
-```
-This example shows how to use the New-MgBetaUserCalendar Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -1335,7 +1327,6 @@ Read-only.
   \[Value \<String\>\]: A property value.
 
 ## RELATED LINKS
-[New-MgUserCalendar](/powershell/module/Microsoft.Graph.Calendar/New-MgUserCalendar?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausercalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausercalendar)
 

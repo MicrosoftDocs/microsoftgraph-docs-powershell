@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationuserrubric
 schema: 2.0.0
-ms.prod: education
 ---
 
 # New-MgEducationUserRubric
@@ -11,9 +10,6 @@ ms.prod: education
 ## SYNOPSIS
 Create a new educationRubric object.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaEducationUserRubric](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationUserRubric?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -52,6 +48,16 @@ Create a new educationRubric object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -388,7 +394,6 @@ QUALITIES \<IMicrosoftGraphRubricQuality\[\]\>: The collection of qualities maki
 Weights must add up to 100.
 
 ## RELATED LINKS
-[New-MgBetaEducationUserRubric](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationUserRubric?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationuserrubric](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationuserrubric)
 

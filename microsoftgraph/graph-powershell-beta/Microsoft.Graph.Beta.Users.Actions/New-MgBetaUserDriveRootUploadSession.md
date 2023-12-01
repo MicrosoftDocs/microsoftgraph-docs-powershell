@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetauserdriverootuploadsession
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action createUploadSession
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserDriveRootUploadSession](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserDriveRootUploadSession?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -43,6 +40,22 @@ New-MgBetaUserDriveRootUploadSession -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Invoke action createUploadSession
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -262,8 +275,6 @@ Available for the recent file list only.
 Read-write.
 
 ## RELATED LINKS
-[New-MgUserDriveRootUploadSession](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserDriveRootUploadSession?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetauserdriverootuploadsession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetauserdriverootuploadsession)
-
 

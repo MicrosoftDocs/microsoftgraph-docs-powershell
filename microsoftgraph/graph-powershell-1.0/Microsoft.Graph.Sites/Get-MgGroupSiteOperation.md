@@ -1,10 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteoperation
 schema: 2.0.0
-ms.prod: sites-and-lists
-ms.prod: sites-and-lists
 ---
 
 # Get-MgGroupSiteOperation
@@ -12,9 +10,6 @@ ms.prod: sites-and-lists
 ## SYNOPSIS
 Get the status of a rich long-running operation on a site or a list.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -40,6 +35,22 @@ Get-MgGroupSiteOperation -InputObject <ISitesIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 Get the status of a rich long-running operation on a site or a list.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -311,8 +322,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupSiteOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteoperation)
-
 

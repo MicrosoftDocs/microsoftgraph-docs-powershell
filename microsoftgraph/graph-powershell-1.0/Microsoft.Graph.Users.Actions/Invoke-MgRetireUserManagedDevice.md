@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgretireusermanageddevice
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Invoke-MgRetireUserManagedDevice
 
 ## SYNOPSIS
 Retire a device
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaRetireUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaRetireUserManagedDevice?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,6 +26,22 @@ Invoke-MgRetireUserManagedDevice -InputObject <IUsersActionsIdentity> [-PassThru
 
 ## DESCRIPTION
 Retire a device
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -172,8 +184,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaRetireUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaRetireUserManagedDevice?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgretireusermanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgretireusermanageddevice)
-
 

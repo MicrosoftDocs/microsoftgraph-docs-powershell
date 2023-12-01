@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistitemfield
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The values of the columns set on this list item.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteListItemField](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListItemField?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Get-MgGroupSiteListItemField -InputObject <ISitesIdentity> [-ExpandProperty <Str
 
 ## DESCRIPTION
 The values of the columns set on this list item.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -194,8 +207,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupSiteListItemField](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListItemField?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistitemfield](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistitemfield)
-
 

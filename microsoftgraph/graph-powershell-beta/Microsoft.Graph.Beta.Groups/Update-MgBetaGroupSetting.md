@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupsetting
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property settings in groups
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgGroupSetting](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupSetting?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -43,6 +40,22 @@ Update-MgBetaGroupSetting -InputObject <IGroupsIdentity> -BodyParameter <IMicros
 
 ## DESCRIPTION
 Update the navigation property settings in groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -294,8 +307,6 @@ VALUES \<IMicrosoftGraphSettingValue\[\]\>: Collection of name-value pairs corre
   \[Value \<String\>\]: Value of the setting.
 
 ## RELATED LINKS
-[Update-MgGroupSetting](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupSetting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupsetting)
-
 

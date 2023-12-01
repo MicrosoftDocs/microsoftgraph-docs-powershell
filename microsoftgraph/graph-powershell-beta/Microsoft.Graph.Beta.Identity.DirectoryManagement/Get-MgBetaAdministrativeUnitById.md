@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadministrativeunitbyid
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Get-MgBetaAdministrativeUnitById
@@ -30,6 +29,22 @@ Get-MgBetaAdministrativeUnitById
 ## DESCRIPTION
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to: This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -148,5 +163,4 @@ BODYPARAMETER \<IPaths1Q1Zk0IAdministrativeunitsMicrosoftGraphGetbyidsPostReques
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadministrativeunitbyid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadministrativeunitbyid)
-
 

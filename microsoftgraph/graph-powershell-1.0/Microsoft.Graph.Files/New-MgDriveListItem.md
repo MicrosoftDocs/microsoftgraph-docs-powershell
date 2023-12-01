@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrivelistitem
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # New-MgDriveListItem
@@ -11,9 +10,6 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Create a new listItem\]\[\] in a \[list\]\[\].
 This API is available in the following \[national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDriveListItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -58,6 +54,22 @@ New-MgDriveListItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGrap
 ## DESCRIPTION
 Create a new listItem\]\[\] in a \[list\]\[\].
 This API is available in the following \[national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -23281,8 +23293,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[New-MgBetaDriveListItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrivelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrivelistitem)
-
 

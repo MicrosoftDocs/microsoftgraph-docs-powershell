@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/unpublish-mgdrivelistcontenttype
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Unpublish-MgDriveListContentType
@@ -11,9 +10,6 @@ ms.prod: sites-and-lists
 ## SYNOPSIS
 Unpublish a contentType\]\[\] from a content type hub site.
 This API is available in the following \[national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Unpublish-MgBetaDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Unpublish-MgBetaDriveListContentType?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -32,6 +28,22 @@ Unpublish-MgDriveListContentType -InputObject <IFilesIdentity> [-PassThru] [-Wha
 ## DESCRIPTION
 Unpublish a contentType\]\[\] from a content type hub site.
 This API is available in the following \[national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -169,8 +181,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Unpublish-MgBetaDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Unpublish-MgBetaDriveListContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/unpublish-mgdrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.files/unpublish-mgdrivelistcontenttype)
-
 

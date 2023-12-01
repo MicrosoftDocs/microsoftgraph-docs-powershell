@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.People-help.xml
 Module Name: Microsoft.Graph.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mgusertrendinginsight
 schema: 2.0.0
-ms.prod: insights
 ---
 
 # Get-MgUserTrendingInsight
@@ -40,18 +39,14 @@ Trending documents are calculated based on activity of the user's closest networ
 Trending insights help the user to discover potentially useful content that the user has access to, but has never viewed before.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.People
+```
 
 # A UPN can also be used as -UserId.
 Get-MgUserTrendingInsight -UserId $userId
-
-```
-This example shows how to use the Get-MgUserTrendingInsight Cmdlet.
-
 
 ## PARAMETERS
 

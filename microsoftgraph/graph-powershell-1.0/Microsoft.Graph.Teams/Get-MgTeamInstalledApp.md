@@ -1,10 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteaminstalledapp
 schema: 2.0.0
-ms.prod: microsoft-teams
-ms.prod: microsoft-teams
 ---
 
 # Get-MgTeamInstalledApp
@@ -12,9 +10,6 @@ ms.prod: microsoft-teams
 ## SYNOPSIS
 Retrieve the app installed in the specified team.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaTeamInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamInstalledApp?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -42,39 +37,27 @@ Retrieve the app installed in the specified team.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Get the installed app
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 Get-MgTeamInstalledApp -TeamId $teamId -TeamsAppInstallationId $teamsAppInstallationId
 
+### EXAMPLE 2
 ```
-This example will get the installed app
-
-### Example 2: Get the names and other details of the installed app
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
-
-Get-MgTeamInstalledApp -TeamId $teamId -TeamsAppInstallationId $teamsAppInstallationId -ExpandProperty "teamsAppDefinition" 
-
 ```
-This example will get the names and other details of the installed app
 
-### Example 3: Get the resource specific permissions consented for the app installed in the specified team
+Get-MgTeamInstalledApp -TeamId $teamId -TeamsAppInstallationId $teamsAppInstallationId -ExpandProperty "teamsAppDefinition"
 
-```powershell
-
+### EXAMPLE 3
+```
 Import-Module Microsoft.Graph.Teams
-
-Get-MgTeamInstalledApp -TeamId $teamId -TeamsAppInstallationId $teamsAppInstallationId -Property "consentedPermissionSet,id" 
-
 ```
-This example will get the resource specific permissions consented for the app installed in the specified team
 
+Get-MgTeamInstalledApp -TeamId $teamId -TeamsAppInstallationId $teamsAppInstallationId -Property "consentedPermissionSet,id"
 
 ## PARAMETERS
 
@@ -325,7 +308,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaTeamInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamInstalledApp?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteaminstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteaminstalledapp)
 

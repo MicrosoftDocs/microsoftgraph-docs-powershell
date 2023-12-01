@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/stop-mgbetacommunicationcallmediaprocessing
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Stop-MgBetaCommunicationCallMediaProcessing
@@ -15,9 +14,6 @@ The cancelMediaProcessing method cancels any operation that is in-process as wel
 For example, this API can be used to clean up the IVR operation queue for a new media operation.
 However, it will not cancel a ubscribeToTone operation because it operates independent of any operation queue.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Stop-MgCommunicationCallMediaProcessing](/powershell/module/Microsoft.Graph.CloudCommunications/Stop-MgCommunicationCallMediaProcessing?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -56,16 +52,15 @@ However, it will not cancel a ubscribeToTone operation because it operates indep
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Stop-MgBetaCommunicationCallMediaProcessing Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
 	ClientContext = "clientContext-value"
 }
 Stop-MgBetaCommunicationCallMediaProcessing -CallId $callId -BodyParameter $params
 ```
-This example shows how to use the Stop-MgBetaCommunicationCallMediaProcessing Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -218,7 +213,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Stop-MgCommunicationCallMediaProcessing](/powershell/module/Microsoft.Graph.CloudCommunications/Stop-MgCommunicationCallMediaProcessing?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/stop-mgbetacommunicationcallmediaprocessing](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/stop-mgbetacommunicationcallmediaprocessing)
 

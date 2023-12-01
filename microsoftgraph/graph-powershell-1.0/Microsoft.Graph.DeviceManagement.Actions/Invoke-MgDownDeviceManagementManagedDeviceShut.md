@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgdowndevicemanagementmanageddeviceshut
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Invoke-MgDownDeviceManagementManagedDeviceShut
 
 ## SYNOPSIS
 Shut down device
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaDownDeviceManagementManagedDeviceShut](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Invoke-MgBetaDownDeviceManagementManagedDeviceShut?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,6 +26,22 @@ Invoke-MgDownDeviceManagementManagedDeviceShut -InputObject <IDeviceManagementAc
 
 ## DESCRIPTION
 Shut down device
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -140,8 +152,6 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
   \[WindowsAutopilotDeviceIdentityId \<String\>\]: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
-[Invoke-MgBetaDownDeviceManagementManagedDeviceShut](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Invoke-MgBetaDownDeviceManagementManagedDeviceShut?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgdowndevicemanagementmanageddeviceshut](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgdowndevicemanagementmanageddeviceshut)
-
 

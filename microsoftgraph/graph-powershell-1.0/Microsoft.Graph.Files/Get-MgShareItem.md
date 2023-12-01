@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgshareitem
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 All driveItems contained in the sharing root.
 This collection cannot be enumerated.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaShareItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,6 +35,22 @@ Get-MgShareItem -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Pro
 ## DESCRIPTION
 All driveItems contained in the sharing root.
 This collection cannot be enumerated.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -280,8 +293,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaShareItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgshareitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgshareitem)
-
 

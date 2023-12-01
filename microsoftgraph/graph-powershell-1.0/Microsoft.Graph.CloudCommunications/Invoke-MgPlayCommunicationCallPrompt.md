@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgplaycommunicationcallprompt
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Invoke-MgPlayCommunicationCallPrompt
@@ -11,9 +10,6 @@ ms.prod: cloud-communications
 ## SYNOPSIS
 Play a prompt in the call.
 For more information about how to handle operations, see commsOperation This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaPlayCommunicationCallPrompt](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaPlayCommunicationCallPrompt?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,11 +45,11 @@ Play a prompt in the call.
 For more information about how to handle operations, see commsOperation This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	clientContext = "d45324c1-fcb5-430a-902c-f20af696537c"
@@ -70,10 +66,6 @@ $params = @{
 }
 
 Invoke-MgPlayCommunicationCallPrompt -CallId $callId -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgPlayCommunicationCallPrompt Cmdlet.
-
 
 ## PARAMETERS
 
@@ -237,7 +229,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaPlayCommunicationCallPrompt](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaPlayCommunicationCallPrompt?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgplaycommunicationcallprompt](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgplaycommunicationcallprompt)
 

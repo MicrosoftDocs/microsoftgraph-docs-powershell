@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/skip-mgdevicemanagementmanageddeviceactivationlock
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Skip-MgDeviceManagementManagedDeviceActivationLock
 
 ## SYNOPSIS
 Bypass activation lock
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Skip-MgBetaDeviceManagementManagedDeviceActivationLock](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Skip-MgBetaDeviceManagementManagedDeviceActivationLock?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,6 +26,22 @@ Skip-MgDeviceManagementManagedDeviceActivationLock -InputObject <IDeviceManageme
 
 ## DESCRIPTION
 Bypass activation lock
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -140,8 +152,6 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
   \[WindowsAutopilotDeviceIdentityId \<String\>\]: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
-[Skip-MgBetaDeviceManagementManagedDeviceActivationLock](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Skip-MgBetaDeviceManagementManagedDeviceActivationLock?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/skip-mgdevicemanagementmanageddeviceactivationlock](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/skip-mgdevicemanagementmanageddeviceactivationlock)
-
 

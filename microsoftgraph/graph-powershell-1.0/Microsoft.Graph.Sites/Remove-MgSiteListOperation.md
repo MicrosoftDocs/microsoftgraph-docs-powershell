@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitelistoperation
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property operations for sites
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaSiteListOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteListOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Remove-MgSiteListOperation -InputObject <ISitesIdentity> [-IfMatch <String>] [-P
 
 ## DESCRIPTION
 Delete navigation property operations for sites
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -210,8 +223,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaSiteListOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteListOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitelistoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitelistoperation)
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationsynchronizationjob
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Remove-MgBetaApplicationSynchronizationJob
@@ -12,9 +11,6 @@ ms.prod: applications
 Stop the synchronization job, and permanently delete all the state associated with it.
 Synchronized accounts are left as-is.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationSynchronizationJob?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34,6 +30,22 @@ Remove-MgBetaApplicationSynchronizationJob -InputObject <IApplicationsIdentity> 
 Stop the synchronization job, and permanently delete all the state associated with it.
 Synchronized accounts are left as-is.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -193,8 +205,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationSynchronizationJob?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationsynchronizationjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationsynchronizationjob)
-
 

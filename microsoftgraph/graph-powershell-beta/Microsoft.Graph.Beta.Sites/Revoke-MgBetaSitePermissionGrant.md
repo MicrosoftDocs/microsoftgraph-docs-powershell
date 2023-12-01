@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/revoke-mgbetasitepermissiongrant
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Revoke-MgBetaSitePermissionGrant
@@ -43,6 +42,22 @@ Revoke-MgBetaSitePermissionGrant -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Revoke access to a listItem\]\[\] or \[driveItem\]\[\] granted via a sharing link by removing the specified \[recipient\]\[\] from the link.
 This API is available in the following \[national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -253,5 +268,4 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/revoke-mgbetasitepermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/revoke-mgbetasitepermissiongrant)
-
 

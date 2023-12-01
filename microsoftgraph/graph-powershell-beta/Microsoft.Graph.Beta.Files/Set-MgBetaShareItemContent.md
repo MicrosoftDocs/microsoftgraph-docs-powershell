@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetashareitemcontent
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The content stream, if the item represents a file.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgShareItemContent](/powershell/module/Microsoft.Graph.Files/Set-MgShareItemContent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Set-MgBetaShareItemContent -InputObject <IFilesIdentity> [-Data <Stream>] -InFil
 
 ## DESCRIPTION
 The content stream, if the item represents a file.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -184,8 +197,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgShareItemContent](/powershell/module/Microsoft.Graph.Files/Set-MgShareItemContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetashareitemcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetashareitemcontent)
-
 

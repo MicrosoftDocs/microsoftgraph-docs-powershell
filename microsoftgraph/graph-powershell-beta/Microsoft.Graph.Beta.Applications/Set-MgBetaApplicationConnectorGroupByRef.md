@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaapplicationconnectorgroupbyref
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Set-MgBetaApplicationConnectorGroupByRef
@@ -45,16 +44,15 @@ Assign a connectorGroup to an application.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Set-MgBetaApplicationConnectorGroupByRef Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/onPremisesPublishingProfiles/applicationproxy/connectorGroups/{id}"
 }
 Set-MgBetaApplicationConnectorGroupByRef -ApplicationId $applicationId -BodyParameter $params
 ```
-This example shows how to use the Set-MgBetaApplicationConnectorGroupByRef Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

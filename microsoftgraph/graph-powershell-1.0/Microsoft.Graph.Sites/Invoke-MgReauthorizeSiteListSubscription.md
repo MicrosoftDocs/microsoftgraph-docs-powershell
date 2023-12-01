@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/invoke-mgreauthorizesitelistsubscription
 schema: 2.0.0
-ms.prod: change-notifications
 ---
 
 # Invoke-MgReauthorizeSiteListSubscription
@@ -11,9 +10,6 @@ ms.prod: change-notifications
 ## SYNOPSIS
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaReauthorizeSiteListSubscription](/powershell/module/Microsoft.Graph.Beta.Sites/Invoke-MgBetaReauthorizeSiteListSubscription?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -32,6 +28,22 @@ Invoke-MgReauthorizeSiteListSubscription -InputObject <ISitesIdentity> [-PassThr
 ## DESCRIPTION
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -198,8 +210,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaReauthorizeSiteListSubscription](/powershell/module/Microsoft.Graph.Beta.Sites/Invoke-MgBetaReauthorizeSiteListSubscription?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/invoke-mgreauthorizesitelistsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/invoke-mgreauthorizesitelistsubscription)
-
 

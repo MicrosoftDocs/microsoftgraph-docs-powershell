@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 Module Guid: 4b11c162-45ff-4882-9bcc-fdd79ae6b4e5
 Download Help Link: {{ Update Download Link }}

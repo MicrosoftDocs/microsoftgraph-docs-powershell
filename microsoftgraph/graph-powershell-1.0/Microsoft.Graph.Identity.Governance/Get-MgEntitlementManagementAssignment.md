@@ -1,10 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementassignment
 schema: 2.0.0
-ms.prod: governance
-ms.prod: governance
 ---
 
 # Get-MgEntitlementManagementAssignment
@@ -51,17 +49,13 @@ In Microsoft Entra entitlement management, retrieve the properties and relations
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example scenarios for using query parameters
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.Governance
+```
 
 Get-MgEntitlementManagementAssignment
-
-```
-This example will### example scenarios for using query parameters
-
 
 ## PARAMETERS
 

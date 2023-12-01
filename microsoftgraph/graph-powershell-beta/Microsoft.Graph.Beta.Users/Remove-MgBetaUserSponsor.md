@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausersponsor
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Remove-MgBetaUserSponsor
@@ -27,6 +26,18 @@ Remove-MgBetaUserSponsor -InputObject <IUsersIdentity> [-IfMatch <String>] [-Pas
 
 ## DESCRIPTION
 Remove a user's sponsor.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -179,5 +190,4 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausersponsor](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausersponsor)
-
 

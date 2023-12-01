@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlookmastercategory
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgBetaUserOutlookMasterCategory
@@ -11,9 +10,6 @@ ms.prod: outlook
 ## SYNOPSIS
 Create an outlookCategory object in the user's master list of categories.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Users/New-MgUserOutlookMasterCategory?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -46,10 +42,11 @@ Create an outlookCategory object in the user's master list of categories.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users
+```
 
 $params = @{
 	displayName = "Project expenses"
@@ -58,11 +55,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserOutlookMasterCategory -UserId $userId -BodyParameter $params
-```
-This example shows how to use the New-MgBetaUserOutlookMasterCategory Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -257,7 +249,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Users/New-MgUserOutlookMasterCategory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlookmastercategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlookmastercategory)
 

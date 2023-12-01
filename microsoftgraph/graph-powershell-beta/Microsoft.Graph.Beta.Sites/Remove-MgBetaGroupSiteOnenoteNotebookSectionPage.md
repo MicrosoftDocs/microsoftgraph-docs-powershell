@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsiteonenotenotebooksectionpage
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property pages for groups
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgGroupSiteOnenoteNotebookSectionPage](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteOnenoteNotebookSectionPage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,6 +27,18 @@ Remove-MgBetaGroupSiteOnenoteNotebookSectionPage -InputObject <ISitesIdentity> [
 
 ## DESCRIPTION
 Delete navigation property pages for groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -251,8 +260,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgGroupSiteOnenoteNotebookSectionPage](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteOnenoteNotebookSectionPage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsiteonenotenotebooksectionpage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsiteonenotenotebooksectionpage)
-
 

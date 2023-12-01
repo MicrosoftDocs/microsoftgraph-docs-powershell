@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetarecentuseractivity
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function recent
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgRecentUserActivity](/powershell/module/Microsoft.Graph.Users.Functions/Invoke-MgRecentUserActivity?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,6 +27,22 @@ Invoke-MgBetaRecentUserActivity -InputObject <IUsersFunctionsIdentity> [-Count] 
 
 ## DESCRIPTION
 Invoke function recent
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -224,8 +237,6 @@ INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgRecentUserActivity](/powershell/module/Microsoft.Graph.Users.Functions/Invoke-MgRecentUserActivity?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetarecentuseractivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetarecentuseractivity)
-
 

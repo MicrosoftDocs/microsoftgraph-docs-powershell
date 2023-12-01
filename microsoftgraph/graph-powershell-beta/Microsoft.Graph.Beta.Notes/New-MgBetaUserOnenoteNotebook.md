@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Notes-help.xml
 Module Name: Microsoft.Graph.Beta.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetauseronenotenotebook
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # New-MgBetaUserOnenoteNotebook
@@ -11,9 +10,6 @@ ms.prod: onenote
 ## SYNOPSIS
 Create a new OneNote notebook.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserOnenoteNotebook](/powershell/module/Microsoft.Graph.Notes/New-MgUserOnenoteNotebook?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -54,11 +50,11 @@ Create a new OneNote notebook.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Notes
+```
 
 $params = @{
 	displayName = "My Private notebook"
@@ -66,10 +62,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserOnenoteNotebook -UserId $userId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaUserOnenoteNotebook Cmdlet.
-
 
 ## PARAMETERS
 
@@ -791,7 +783,6 @@ Read-only.
   \[ParentSectionGroup \<IMicrosoftGraphSectionGroup\>\]: sectionGroup
 
 ## RELATED LINKS
-[New-MgUserOnenoteNotebook](/powershell/module/Microsoft.Graph.Notes/New-MgUserOnenoteNotebook?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetauseronenotenotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetauseronenotenotebook)
 

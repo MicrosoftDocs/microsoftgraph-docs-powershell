@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mguserevent
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Remove-MgUserEvent
@@ -12,9 +11,6 @@ ms.prod: outlook
 Removes the specified event from the containing calendar.
 If the event is a meeting, deleting the event on the organizer's calendar sends a cancellation message to the meeting attendees.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaUserEvent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -36,18 +32,14 @@ If the event is a meeting, deleting the event on the organizer's calendar sends 
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Calendar
+```
 
 # A UPN can also be used as -UserId.
 Remove-MgUserEvent -UserId $userId -EventId $eventId
-```
-This example shows how to use the Remove-MgUserEvent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -186,7 +178,6 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaUserEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaUserEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mguserevent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mguserevent)
 

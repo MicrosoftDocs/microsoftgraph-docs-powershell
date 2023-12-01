@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetaappcatalogteamapp
@@ -12,9 +12,6 @@ Publish an app to the Microsoft Teams app catalog.\nSpecifically, this API publi
 The requiresReview property allows any user to submit an app for review by an administrator.
 Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgAppCatalogTeamApp](/powershell/module/Microsoft.Graph.Teams/New-MgAppCatalogTeamApp?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -37,31 +34,23 @@ Admins can approve or reject these apps via this API or the Microsoft Teams admi
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
-$params = [Zip file containing a Teams app package]
+$params = \[Zip file containing a Teams app package\]
 
 
 New-MgBetaAppCatalogTeamApp -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgBetaAppCatalogTeamApp Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Teams
-
-New-MgBetaAppCatalogTeamApp -Requiresreview true 
-
 ```
-This example shows how to use the New-MgBetaAppCatalogTeamApp Cmdlet.
 
+New-MgBetaAppCatalogTeamApp -Requiresreview true
 
 ## PARAMETERS
 
@@ -323,7 +312,6 @@ For example, if a user changes their display name, the API might show the new va
   \[ExternalId \<String\>\]: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
 ## RELATED LINKS
-[New-MgAppCatalogTeamApp](/powershell/module/Microsoft.Graph.Teams/New-MgAppCatalogTeamApp?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetaappcatalogteamapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetaappcatalogteamapp)
 

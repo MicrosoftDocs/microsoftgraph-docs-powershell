@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarsessionattendancereportattendancerecord
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Get-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord
@@ -38,6 +37,18 @@ Get-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord -InputObjec
 ## DESCRIPTION
 List of attendance records of an attendance report.
 Read-only.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -311,5 +322,4 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarsessionattendancereportattendancerecord](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarsessionattendancereportattendancerecord)
-
 

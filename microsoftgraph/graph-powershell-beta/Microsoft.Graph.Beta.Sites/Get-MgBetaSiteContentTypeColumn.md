@@ -1,10 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitecontenttypecolumn
 schema: 2.0.0
-ms.prod: sites-and-lists
-ms.prod: sites-and-lists
 ---
 
 # Get-MgBetaSiteContentTypeColumn
@@ -12,9 +10,6 @@ ms.prod: sites-and-lists
 ## SYNOPSIS
 Retrieve the metadata for a site\]\[\], \[list\]\[\] or \[contentType\]\[\] \[column\]\[columnDefinition\].
 This API is available in the following \[national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteContentTypeColumn?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -42,17 +37,13 @@ Retrieve the metadata for a site\]\[\], \[list\]\[\] or \[contentType\]\[\] \[co
 This API is available in the following \[national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Sites
+```
 
 Get-MgBetaSiteContentTypeColumn -SiteId $siteId -ContentTypeId $contentTypeId -ColumnDefinitionId $columnDefinitionId
-```
-This example shows how to use the Get-MgBetaSiteContentTypeColumn Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -334,7 +325,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteContentTypeColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitecontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitecontenttypecolumn)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserchatinstalledapp
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Install a teamsApp to the specified chat.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserChatInstalledApp](/powershell/module/Microsoft.Graph.Teams/New-MgUserChatInstalledApp?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,6 +46,16 @@ Install a teamsApp to the specified chat.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -452,7 +459,6 @@ For example, if a user changes their display name, the API might show the new va
   \[Version \<String\>\]: The version number of the application.
 
 ## RELATED LINKS
-[New-MgUserChatInstalledApp](/powershell/module/Microsoft.Graph.Teams/New-MgUserChatInstalledApp?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserchatinstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserchatinstalledapp)
 

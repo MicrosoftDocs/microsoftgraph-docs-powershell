@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritysubjectrightsrequest
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to subjectRightsRequests for security
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecuritySubjectRightsRequest](/powershell/module/Microsoft.Graph.Security/New-MgSecuritySubjectRightsRequest?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -39,6 +36,22 @@ New-MgBetaSecuritySubjectRightsRequest -BodyParameter <IMicrosoftGraphSubjectRig
 
 ## DESCRIPTION
 Create new navigation property to subjectRightsRequests for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -30241,8 +30254,6 @@ This is the URL that you get when you right-click a team in the Microsoft Teams 
 This URL should be treated as an opaque blob, and not parsed.
 
 ## RELATED LINKS
-[New-MgSecuritySubjectRightsRequest](/powershell/module/Microsoft.Graph.Security/New-MgSecuritySubjectRightsRequest?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritysubjectrightsrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritysubjectrightsrequest)
-
 

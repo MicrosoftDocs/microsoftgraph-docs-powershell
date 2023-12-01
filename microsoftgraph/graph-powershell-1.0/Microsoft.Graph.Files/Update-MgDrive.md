@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdrive
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update entity in drives
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDrive](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDrive?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -58,62 +55,42 @@ Update-MgDrive -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphDriv
 Update entity in drives
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Files
+```
 
 # A UPN can also be used as -UserId.
 Get-MgUserDefaultDrive -UserId $userId
+
+### EXAMPLE 2
 ```
-This example shows how to use the Update-MgDrive Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Files
+```
 
 Get-MgUserDefaultDrive -UserId $userId
+
+### EXAMPLE 3
 ```
-This example shows how to use the Update-MgDrive Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Files
+```
 
 Get-MgGroupDefaultDrive -GroupId $groupId
+
+### EXAMPLE 4
 ```
-This example shows how to use the Update-MgDrive Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Sites
+```
 
 Get-MgSiteDefaultDrive -SiteId $siteId
+
+### EXAMPLE 5
 ```
-This example shows how to use the Update-MgDrive Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 5: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Files
+```
 
 Get-MgDrive -DriveId $driveId
-```
-This example shows how to use the Update-MgDrive Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -41490,7 +41467,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaDrive](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDrive?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdrive)
 

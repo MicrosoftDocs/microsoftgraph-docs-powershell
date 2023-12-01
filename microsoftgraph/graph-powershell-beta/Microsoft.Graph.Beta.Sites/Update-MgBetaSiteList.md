@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelist
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property lists in sites
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSiteList](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteList?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -59,6 +56,22 @@ Update-MgBetaSiteList -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGr
 
 ## DESCRIPTION
 Update the navigation property lists in sites
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -45349,8 +45362,6 @@ Do not include the base URL (https://graph.microsoft.com/beta/).
 See the possible resource path values for each supported resource.
 
 ## RELATED LINKS
-[Update-MgSiteList](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteList?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelist)
-
 

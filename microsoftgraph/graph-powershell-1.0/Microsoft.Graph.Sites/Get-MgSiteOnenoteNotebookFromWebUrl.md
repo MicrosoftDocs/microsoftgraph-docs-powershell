@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteonenotenotebookfromweburl
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # Get-MgSiteOnenoteNotebookFromWebUrl
@@ -12,9 +11,6 @@ ms.prod: onenote
 Retrieve the properties and relationships of a notebook object by using its URL path.
 The location can be user notebooks on Microsoft 365, group notebooks, or SharePoint site-hosted team notebooks on Microsoft 365.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSiteOnenoteNotebookFromWebUrl](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteOnenoteNotebookFromWebUrl?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,10 +46,11 @@ The location can be user notebooks on Microsoft 365, group notebooks, or SharePo
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Users.Actions
+```
 
 $params = @{
 	WebUrl = "webUrl value"
@@ -61,11 +58,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Get-MgUserOnenoteNotebookFromWebUrl -UserId $userId -BodyParameter $params
-```
-This example shows how to use the Get-MgSiteOnenoteNotebookFromWebUrl Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -238,7 +230,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaSiteOnenoteNotebookFromWebUrl](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteOnenoteNotebookFromWebUrl?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteonenotenotebookfromweburl](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteonenotenotebookfromweburl)
 

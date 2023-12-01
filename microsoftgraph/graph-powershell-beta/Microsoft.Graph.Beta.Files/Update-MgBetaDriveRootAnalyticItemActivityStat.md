@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriverootanalyticitemactivitystat
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property itemActivityStats in drives
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDriveRootAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Files/Update-MgDriveRootAnalyticItemActivityStat?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,6 +46,18 @@ Update-MgBetaDriveRootAnalyticItemActivityStat -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Update the navigation property itemActivityStats in drives
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -15148,8 +15157,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[Update-MgDriveRootAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Files/Update-MgDriveRootAnalyticItemActivityStat?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriverootanalyticitemactivitystat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriverootanalyticitemactivitystat)
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/remove-mgbetatenantrelationshipmanagedtenanttag
 schema: 2.0.0
-ms.prod: multi-tenant-management
 ---
 
 # Remove-MgBetaTenantRelationshipManagedTenantTag
@@ -31,13 +30,12 @@ Delete a tenantTag object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Remove-MgBetaTenantRelationshipManagedTenantTag Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.ManagedTenants
 Remove-MgBetaTenantRelationshipManagedTenantTag -TenantTagId $tenantTagId
 ```
-This example shows how to use the Remove-MgBetaTenantRelationshipManagedTenantTag Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

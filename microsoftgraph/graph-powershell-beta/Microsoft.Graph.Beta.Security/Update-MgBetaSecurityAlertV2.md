@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalertv2
 schema: 2.0.0
-ms.prod: security
 ---
 
 # Update-MgBetaSecurityAlertV2
@@ -11,9 +10,6 @@ ms.prod: security
 ## SYNOPSIS
 Update the properties of an alert object in an organization based on the specified alert id property.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSecurityAlertV2](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAlertV2?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -63,6 +59,18 @@ Update-MgBetaSecurityAlertV2 -InputObject <ISecurityIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Update the properties of an alert object in an organization based on the specified alert id property.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -822,8 +830,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Update-MgSecurityAlertV2](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAlertV2?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalertv2](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalertv2)
-
 

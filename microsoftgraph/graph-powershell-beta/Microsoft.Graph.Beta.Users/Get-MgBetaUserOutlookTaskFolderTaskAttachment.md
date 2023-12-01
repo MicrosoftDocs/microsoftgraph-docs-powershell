@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktaskfoldertaskattachment
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Get-MgBetaUserOutlookTaskFolderTaskAttachment
@@ -39,6 +38,22 @@ Get-MgBetaUserOutlookTaskFolderTaskAttachment -InputObject <IUsersIdentity> [-Ex
 The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the task.
 Read-only.
 Nullable.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -296,5 +311,4 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktaskfoldertaskattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktaskfoldertaskattachment)
-
 

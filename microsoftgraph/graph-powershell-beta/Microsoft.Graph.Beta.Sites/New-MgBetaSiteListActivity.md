@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitelistactivity
@@ -42,6 +42,18 @@ New-MgBetaSiteListActivity -InputObject <ISitesIdentity> -BodyParameter <IMicros
 
 ## DESCRIPTION
 Create new navigation property to activities for sites
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -22474,5 +22486,4 @@ TIMES \<IMicrosoftGraphItemActivityTimeSet\>: itemActivityTimeSet
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitelistactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitelistactivity)
-
 

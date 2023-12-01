@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/remove-mgbetaprinttaskdefinition
 schema: 2.0.0
-ms.prod: cloud-printing
 ---
 
 # Remove-MgBetaPrintTaskDefinition
@@ -12,9 +11,6 @@ ms.prod: cloud-printing
 Delete a taskDefinition.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgPrintTaskDefinition](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Remove-MgPrintTaskDefinition?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -36,17 +32,13 @@ For details about how to use this API to add pull printing support to Universal 
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
+```
 
 Remove-MgBetaPrintTaskDefinition -PrintTaskDefinitionId $printTaskDefinitionId
-```
-This example shows how to use the Remove-MgBetaPrintTaskDefinition Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -173,7 +165,6 @@ INPUTOBJECT \<IDevicesCloudPrintIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgPrintTaskDefinition](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Remove-MgPrintTaskDefinition?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/remove-mgbetaprinttaskdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/remove-mgbetaprinttaskdefinition)
 

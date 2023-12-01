@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintprinter
 schema: 2.0.0
-ms.prod: cloud-printing
 ---
 
 # Update-MgBetaPrintPrinter
@@ -11,9 +10,6 @@ ms.prod: cloud-printing
 ## SYNOPSIS
 Update the properties of a printer object.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPrintPrinter](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintPrinter?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -57,6 +53,22 @@ Update-MgBetaPrintPrinter -InputObject <IDevicesCloudPrintIdentity> -BodyParamet
 ## DESCRIPTION
 Update the properties of a printer object.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -22922,8 +22934,6 @@ Read-only.
   \[Event \<String\>\]: printEvent
 
 ## RELATED LINKS
-[Update-MgPrintPrinter](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintPrinter?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintprinter](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintprinter)
-
 

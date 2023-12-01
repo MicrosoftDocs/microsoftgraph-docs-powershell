@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetafunctionserviceprincipalsynchronizationjobschema
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function functions
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgFunctionServicePrincipalSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Applications/Invoke-MgFunctionServicePrincipalSynchronizationJobSchema?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -33,13 +30,12 @@ Invoke-MgBetaFunctionServicePrincipalSynchronizationJobSchema -InputObject <IApp
 Invoke function functions
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaFunctionServicePrincipalSynchronizationJobSchema Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Applications
 Invoke-MgBetaFunctionServicePrincipalSynchronizationJobSchema -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId
 ```
-This example shows how to use the Invoke-MgBetaFunctionServicePrincipalSynchronizationJobSchema Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -243,7 +239,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgFunctionServicePrincipalSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Applications/Invoke-MgFunctionServicePrincipalSynchronizationJobSchema?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetafunctionserviceprincipalsynchronizationjobschema](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetafunctionserviceprincipalsynchronizationjobschema)
 

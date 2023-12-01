@@ -1,10 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuser
 schema: 2.0.0
-ms.prod: education
-ms.prod: education
 ---
 
 # Get-MgBetaEducationUser
@@ -12,9 +10,6 @@ ms.prod: education
 ## SYNOPSIS
 Retrieve the properties and relationships of a user.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEducationUser](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUser?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -54,17 +49,13 @@ Retrieve the properties and relationships of a user.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 Get-MgBetaEducationUser -EducationUserId $educationUserId
-
-```
-This example shows how to use the Get-MgBetaEducationUser Cmdlet.
-
 
 ## PARAMETERS
 
@@ -286,7 +277,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgEducationUser](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuser)
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflowlanguageoverridepage
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaIdentityB2CUserFlowLanguageOverridePage
@@ -40,13 +39,12 @@ Collection of pages with the overrides messages to display in a user flow for a 
 This collection only allows to modify the content of the page, any other modification isn't allowed (creation or deletion of pages).
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaIdentityB2CUserFlowLanguageOverridePage Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaIdentityB2CUserFlowLanguageOverridePage -B2cIdentityUserFlowId $b2cIdentityUserFlowId -UserFlowLanguageConfigurationId $userFlowLanguageConfigurationId
 ```
-This example shows how to use the Get-MgBetaIdentityB2CUserFlowLanguageOverridePage Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

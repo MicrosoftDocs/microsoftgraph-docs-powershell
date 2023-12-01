@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligenceintelprofile
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property intelProfiles in security
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSecurityThreatIntelligenceIntelProfile](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligenceIntelProfile?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,6 +48,18 @@ Update-MgBetaSecurityThreatIntelligenceIntelProfile -InputObject <ISecurityIdent
 
 ## DESCRIPTION
 Update the navigation property intelProfiles in security
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -476,8 +485,6 @@ TRADECRAFT \<IMicrosoftGraphSecurityFormattedContent\>: formattedContent
   \[Format \<String\>\]: contentFormat
 
 ## RELATED LINKS
-[Update-MgSecurityThreatIntelligenceIntelProfile](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligenceIntelProfile?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligenceintelprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligenceintelprofile)
-
 

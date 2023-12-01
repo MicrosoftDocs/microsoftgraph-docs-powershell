@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mguseronenotesectiongroupsection
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # New-MgUserOnenoteSectionGroupSection
@@ -11,9 +10,6 @@ ms.prod: onenote
 ## SYNOPSIS
 Create a new onenoteSection in the specified section group.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserOnenoteSectionGroupSection](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaUserOnenoteSectionGroupSection?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -54,11 +50,11 @@ Create a new onenoteSection in the specified section group.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Notes
+```
 
 $params = @{
 	displayName = "Section name"
@@ -66,10 +62,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserOnenoteSectionGroupSection -UserId $userId -SectionGroupId $sectionGroupId -BodyParameter $params
-
-```
-This example shows how to use the New-MgUserOnenoteSectionGroupSection Cmdlet.
-
 
 ## PARAMETERS
 
@@ -987,7 +979,6 @@ Nullable.
 Read-only.
 
 ## RELATED LINKS
-[New-MgBetaUserOnenoteSectionGroupSection](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaUserOnenoteSectionGroupSection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mguseronenotesectiongroupsection](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mguseronenotesectiongroupsection)
 

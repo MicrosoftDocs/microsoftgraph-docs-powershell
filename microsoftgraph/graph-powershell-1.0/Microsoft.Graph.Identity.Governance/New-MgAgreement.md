@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgagreement
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Add new entity to agreements
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaAgreement](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaAgreement?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,6 +28,22 @@ New-MgAgreement -BodyParameter <IMicrosoftGraphAgreement> [-WhatIf] [-Confirm] [
 
 ## DESCRIPTION
 Add new entity to agreements
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -534,8 +547,6 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
-[New-MgBetaAgreement](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaAgreement?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgagreement](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgagreement)
-
 

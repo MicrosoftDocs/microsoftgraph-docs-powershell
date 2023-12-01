@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkworkforceintegration
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and relationships of a workforceintegration object.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgTeamworkWorkforceIntegration](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkWorkforceIntegration?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -40,17 +37,13 @@ Retrieve the properties and relationships of a workforceintegration object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 Get-MgBetaTeamworkWorkforceIntegration
-
-```
-This example shows how to use the Get-MgBetaTeamworkWorkforceIntegration Cmdlet.
-
 
 ## PARAMETERS
 
@@ -292,7 +285,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgTeamworkWorkforceIntegration](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkWorkforceIntegration?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkworkforceintegration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkworkforceintegration)
 

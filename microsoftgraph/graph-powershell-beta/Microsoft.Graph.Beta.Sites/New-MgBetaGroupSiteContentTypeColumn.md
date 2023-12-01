@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitecontenttypecolumn
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # New-MgBetaGroupSiteContentTypeColumn
@@ -11,9 +10,6 @@ ms.prod: sites-and-lists
 ## SYNOPSIS
 Add a column to a content type\]\[contentType\] in a site or list by specifying a \[columnDefinition\]\[columnDefinition\].
 This API is available in the following \[national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteContentTypeColumn?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -65,6 +61,22 @@ New-MgBetaGroupSiteContentTypeColumn -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Add a column to a content type\]\[contentType\] in a site or list by specifying a \[columnDefinition\]\[columnDefinition\].
 This API is available in the following \[national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -1242,8 +1254,6 @@ User will be prompted with this message if validation fails.
 For examples, see Examples of common formulas in lists
 
 ## RELATED LINKS
-[New-MgGroupSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteContentTypeColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitecontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitecontenttypecolumn)
-
 

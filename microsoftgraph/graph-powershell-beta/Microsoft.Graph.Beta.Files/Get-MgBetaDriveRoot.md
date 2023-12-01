@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveroot
 schema: 2.0.0
-ms.prod: files
 ---
 
 # Get-MgBetaDriveRoot
@@ -11,9 +10,6 @@ ms.prod: files
 ## SYNOPSIS
 Retrieve the metadata for a driveItem in a drive by file system path or ID.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDriveRoot](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRoot?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -33,17 +29,13 @@ Retrieve the metadata for a driveItem in a drive by file system path or ID.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Files
+```
 
 Get-MgBetaDriveRoot -DriveId $driveId
-```
-This example shows how to use the Get-MgBetaDriveRoot Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -150,7 +142,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgDriveRoot](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRoot?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveroot)
 

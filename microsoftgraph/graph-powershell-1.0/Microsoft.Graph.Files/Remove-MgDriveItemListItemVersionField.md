@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdriveitemlistitemversionfield
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property fields for drives
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDriveItemListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItemListItemVersionField?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Remove-MgDriveItemListItemVersionField -InputObject <IFilesIdentity> [-IfMatch <
 
 ## DESCRIPTION
 Delete navigation property fields for drives
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -196,8 +209,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaDriveItemListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItemListItemVersionField?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdriveitemlistitemversionfield](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdriveitemlistitemversionfield)
-
 

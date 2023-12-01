@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdrivelistcreatedbyusermailboxsetting
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update property mailboxSettings value.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroupDriveListCreatedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveListCreatedByUserMailboxSetting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,6 +46,18 @@ Update-MgGroupDriveListCreatedByUserMailboxSetting -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Update property mailboxSettings value.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -407,8 +416,6 @@ WORKINGHOURS \<IMicrosoftGraphWorkingHours\>: workingHours
 It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 'Customized Time Zone' for a custom time zone.
 
 ## RELATED LINKS
-[Update-MgBetaGroupDriveListCreatedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveListCreatedByUserMailboxSetting?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdrivelistcreatedbyusermailboxsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdrivelistcreatedbyusermailboxsetting)
-
 

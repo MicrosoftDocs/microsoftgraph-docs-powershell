@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/remove-mguserdriverootpermanent
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action permanentDelete
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserDriveRootPermanent](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Remove-MgBetaUserDriveRootPermanent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,6 +26,18 @@ Remove-MgUserDriveRootPermanent -InputObject <IUsersActionsIdentity> [-PassThru]
 
 ## DESCRIPTION
 Invoke action permanentDelete
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -171,8 +180,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaUserDriveRootPermanent](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Remove-MgBetaUserDriveRootPermanent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/remove-mguserdriverootpermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/remove-mguserdriverootpermanent)
-
 

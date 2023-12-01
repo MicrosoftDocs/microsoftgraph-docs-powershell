@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteammember
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # New-MgTeamMember
@@ -11,9 +10,6 @@ ms.prod: microsoft-teams
 ## SYNOPSIS
 Add a new conversationMember to a team.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaTeamMember](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamMember?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,11 +43,11 @@ Add a new conversationMember to a team.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Add a member to a team
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -63,14 +59,10 @@ $params = @{
 
 New-MgTeamMember -TeamId $teamId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will add a member to a team
-
-### Example 2: Add a member to a team using user principal name
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -81,10 +73,6 @@ $params = @{
 }
 
 New-MgTeamMember -TeamId $teamId -BodyParameter $params
-
-```
-This example will add a member to a team using user principal name
-
 
 ## PARAMETERS
 
@@ -311,7 +299,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[New-MgBetaTeamMember](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamMember?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteammember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteammember)
 

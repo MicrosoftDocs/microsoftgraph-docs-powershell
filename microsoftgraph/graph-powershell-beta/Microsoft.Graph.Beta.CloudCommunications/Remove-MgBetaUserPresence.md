@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetauserpresence
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property presence for users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgUserPresence](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgUserPresence?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,40 +28,28 @@ Remove-MgBetaUserPresence -InputObject <ICloudCommunicationsIdentity> [-IfMatch 
 Delete navigation property presence for users
 
 ## EXAMPLES
-### Example 1: Get your own presence information
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserPresence -UserId $userId
+
+### EXAMPLE 2
 ```
-This example shows how to use the Remove-MgBetaBetaUserPresence Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Get the presence information of another user
-
-```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 Get-MgBetaUserPresence -UserId $userId
+
+### EXAMPLE 3
 ```
-This example shows how to use the Remove-MgBetaBetaUserPresence Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Get the presence information of another user
-
-```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 Get-MgBetaCommunicationPresence -PresenceId $presenceId
-```
-This example shows how to use the Remove-MgBetaBetaUserPresence Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -196,7 +181,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgUserPresence](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgUserPresence?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetauserpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetauserpresence)
 

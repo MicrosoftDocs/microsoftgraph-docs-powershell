@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaapplicationverifiedpublisher
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Set-MgBetaApplicationVerifiedPublisher
@@ -12,9 +11,6 @@ ms.prod: applications
 Set the the verifiedPublisher on an application.
 For more information, including prerequisites to setting a verified publisher, see Publisher verification.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgApplicationVerifiedPublisher](/powershell/module/Microsoft.Graph.Applications/Set-MgApplicationVerifiedPublisher?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -50,16 +46,15 @@ For more information, including prerequisites to setting a verified publisher, s
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Set-MgBetaApplicationVerifiedPublisher Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{
 	VerifiedPublisherId = "1234567"
 }
 Set-MgBetaApplicationVerifiedPublisher -ApplicationId $applicationId -BodyParameter $params
 ```
-This example shows how to use the Set-MgBetaApplicationVerifiedPublisher Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -240,7 +235,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgApplicationVerifiedPublisher](/powershell/module/Microsoft.Graph.Applications/Set-MgApplicationVerifiedPublisher?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaapplicationverifiedpublisher](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaapplicationverifiedpublisher)
 

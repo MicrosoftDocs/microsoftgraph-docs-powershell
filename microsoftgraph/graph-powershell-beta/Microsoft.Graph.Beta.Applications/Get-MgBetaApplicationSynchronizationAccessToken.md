@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationsynchronizationaccesstoken
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Get-MgBetaApplicationSynchronizationAccessToken
@@ -11,9 +10,6 @@ ms.prod: applications
 ## SYNOPSIS
 Acquire an OAuth Access token to authorize the Microsoft Entra provisioning service to provision users into an application.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgApplicationSynchronizationAccessToken](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationSynchronizationAccessToken?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -50,11 +46,11 @@ Acquire an OAuth Access token to authorize the Microsoft Entra provisioning serv
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Applications
+```
 
 $params = @{
 	credentials = @(
@@ -65,10 +61,6 @@ $params = @{
 }
 
 Get-MgBetaApplicationSynchronizationAccessToken -ApplicationId $applicationId -BodyParameter $params
-
-```
-This example shows how to use the Get-MgBetaApplicationSynchronizationAccessToken Cmdlet.
-
 
 ## PARAMETERS
 
@@ -256,7 +248,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgApplicationSynchronizationAccessToken](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationSynchronizationAccessToken?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationsynchronizationaccesstoken](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationsynchronizationaccesstoken)
 

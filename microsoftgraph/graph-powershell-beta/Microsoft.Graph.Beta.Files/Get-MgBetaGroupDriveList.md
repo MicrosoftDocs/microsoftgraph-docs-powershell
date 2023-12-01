@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdrivelist
@@ -11,9 +11,6 @@ schema: 2.0.0
 For drives in SharePoint, the underlying document library list.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveList](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveList?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -33,6 +30,22 @@ Get-MgBetaGroupDriveList -InputObject <IFilesIdentity> [-ExpandProperty <String[
 For drives in SharePoint, the underlying document library list.
 Read-only.
 Nullable.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -154,8 +167,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgGroupDriveList](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveList?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdrivelist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdrivelist)
-
 

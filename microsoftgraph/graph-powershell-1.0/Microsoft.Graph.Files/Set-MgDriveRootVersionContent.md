@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mgdriverootversioncontent
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The content stream for this version of the item.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaDriveRootVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaDriveRootVersionContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Set-MgDriveRootVersionContent -InputObject <IFilesIdentity> [-Data <Stream>] -In
 
 ## DESCRIPTION
 The content stream for this version of the item.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -184,8 +197,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgBetaDriveRootVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaDriveRootVersionContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mgdriverootversioncontent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mgdriverootversioncontent)
-
 

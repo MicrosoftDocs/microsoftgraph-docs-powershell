@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriveitemlistitemdocumentsetversionfield
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property fields in groups
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgGroupDriveItemListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveItemListItemDocumentSetVersionField?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -42,6 +39,18 @@ Update-MgBetaGroupDriveItemListItemDocumentSetVersionField -InputObject <IFilesI
 
 ## DESCRIPTION
 Update the navigation property fields in groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -241,8 +250,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgGroupDriveItemListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveItemListItemDocumentSetVersionField?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriveitemlistitemdocumentsetversionfield](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriveitemlistitemdocumentsetversionfield)
-
 

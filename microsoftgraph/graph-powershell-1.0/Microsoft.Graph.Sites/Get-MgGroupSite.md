@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsite
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 The list of SharePoint sites in this group.
 Access the default site with /sites/root.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupSite](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSite?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,6 +35,22 @@ Get-MgGroupSite -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Pro
 ## DESCRIPTION
 The list of SharePoint sites in this group.
 Access the default site with /sites/root.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -294,8 +307,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupSite](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSite?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsite](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsite)
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserassignment
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Get-MgBetaEducationUserAssignment
@@ -11,9 +10,6 @@ ms.prod: education
 ## SYNOPSIS
 List of assignments for the user.
 Nullable.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEducationUserAssignment](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserAssignment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -41,28 +37,20 @@ List of assignments for the user.
 Nullable.
 
 ## EXAMPLES
-### Example 1: Get assignments of a user
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 Get-MgBetaEducationUserAssignment -EducationUserId $educationUserId
 
+### EXAMPLE 2
 ```
-This example will get assignments of a user
-
-### Example 2: Get user assignments with expand submissions
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Education
-
-Get-MgBetaEducationUserAssignment -EducationUserId $educationUserId -ExpandProperty "submissions" 
-
 ```
-This example will get user assignments with expand submissions
 
+Get-MgBetaEducationUserAssignment -EducationUserId $educationUserId -ExpandProperty "submissions"
 
 ## PARAMETERS
 
@@ -298,7 +286,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgEducationUserAssignment](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserassignment)
 

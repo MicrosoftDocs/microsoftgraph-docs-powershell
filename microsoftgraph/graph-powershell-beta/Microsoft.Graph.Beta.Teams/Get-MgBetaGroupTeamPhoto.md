@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamphoto
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The team photo.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamPhoto](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamPhoto?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Get-MgBetaGroupTeamPhoto -InputObject <ITeamsIdentity> [-ExpandProperty <String[
 
 ## DESCRIPTION
 The team photo.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -149,8 +162,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgGroupTeamPhoto](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamPhoto?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamphoto](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamphoto)
-
 

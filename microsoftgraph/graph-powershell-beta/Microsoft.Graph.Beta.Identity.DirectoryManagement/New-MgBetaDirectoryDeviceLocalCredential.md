@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorydevicelocalcredential
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to deviceLocalCredentials for directory
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDirectoryDeviceLocalCredential](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryDeviceLocalCredential?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,6 +27,18 @@ New-MgBetaDirectoryDeviceLocalCredential -BodyParameter <IMicrosoftGraphDeviceLo
 
 ## DESCRIPTION
 Create new navigation property to deviceLocalCredentials for directory
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -211,8 +220,6 @@ Read-only.
   \[PasswordBase64 \<String\>\]: The password for the local administrator account that is backed up to Microsoft Entra ID and returned as a base 64 encoded value.
 
 ## RELATED LINKS
-[New-MgDirectoryDeviceLocalCredential](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryDeviceLocalCredential?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorydevicelocalcredential](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorydevicelocalcredential)
-
 

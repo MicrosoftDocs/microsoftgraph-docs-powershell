@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadevice
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Remove-MgBetaDevice
@@ -11,9 +10,6 @@ ms.prod: directory-management
 ## SYNOPSIS
 Delete a registered device.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgDevice](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDevice?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34,17 +30,13 @@ Delete a registered device.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+```
 
 Remove-MgBetaDevice -DeviceId $deviceId
-```
-This example shows how to use the Remove-MgBetaDevice Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -201,7 +193,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgDevice](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDevice?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadevice)
 

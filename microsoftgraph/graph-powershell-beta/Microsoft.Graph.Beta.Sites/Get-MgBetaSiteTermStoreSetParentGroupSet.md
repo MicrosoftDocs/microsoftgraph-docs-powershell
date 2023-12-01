@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetparentgroupset
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Get-MgBetaSiteTermStoreSetParentGroupSet
 
 ## SYNOPSIS
 All sets under the group in a term \[store\].
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSiteTermStoreSetParentGroupSet](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetParentGroupSet?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -37,6 +33,18 @@ Get-MgBetaSiteTermStoreSetParentGroupSet -InputObject <ISitesIdentity> [-ExpandP
 
 ## DESCRIPTION
 All sets under the group in a term \[store\].
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -318,8 +326,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgSiteTermStoreSetParentGroupSet](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetParentGroupSet?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetparentgroupset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetparentgroupset)
-
 

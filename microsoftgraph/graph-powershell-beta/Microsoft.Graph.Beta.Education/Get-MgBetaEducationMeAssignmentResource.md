@@ -1,10 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeassignmentresource
 schema: 2.0.0
-ms.prod: education
-ms.prod: education
 ---
 
 # Get-MgBetaEducationMeAssignmentResource
@@ -13,9 +11,6 @@ ms.prod: education
 Get the properties of an education assignment resource associated with an assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEducationMeAssignmentResource](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeAssignmentResource?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -44,6 +39,16 @@ Only teachers, students, and applications with application permissions can perfo
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -279,7 +284,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgEducationMeAssignmentResource](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeAssignmentResource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeassignmentresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeassignmentresource)
 

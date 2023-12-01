@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalsynchronizationjob
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Remove-MgBetaServicePrincipalSynchronizationJob
@@ -12,9 +11,6 @@ ms.prod: applications
 Stop the synchronization job, and permanently delete all the state associated with it.
 Synchronized accounts are left as-is.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalSynchronizationJob?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -36,13 +32,12 @@ Synchronized accounts are left as-is.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Remove-MgBetaServicePrincipalSynchronizationJob Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Applications
 Remove-MgBetaServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId
 ```
-This example shows how to use the Remove-MgBetaServicePrincipalSynchronizationJob Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -202,7 +197,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalSynchronizationJob?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalsynchronizationjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalsynchronizationjob)
 

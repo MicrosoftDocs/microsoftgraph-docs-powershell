@@ -1,10 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityconditionalaccesstemplate
 schema: 2.0.0
-ms.prod: identity-and-sign-in
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaIdentityConditionalAccessTemplate
@@ -12,9 +10,6 @@ ms.prod: identity-and-sign-in
 ## SYNOPSIS
 Read the properties and relationships of a conditionalAccessTemplate object.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgIdentityConditionalAccessTemplate](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityConditionalAccessTemplate?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -42,28 +37,20 @@ Read the properties and relationships of a conditionalAccessTemplate object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Get the properties a template by ID
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 Get-MgBetaIdentityConditionalAccessTemplate -ConditionalAccessTemplateId $conditionalAccessTemplateId
 
+### EXAMPLE 2
 ```
-This example will get the properties a template by id
-
-### Example 2: Select details of a template
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-
-Get-MgBetaIdentityConditionalAccessTemplate -ConditionalAccessTemplateId $conditionalAccessTemplateId -Property "details" 
-
 ```
-This example will select details of a template
 
+Get-MgBetaIdentityConditionalAccessTemplate -ConditionalAccessTemplateId $conditionalAccessTemplateId -Property "details"
 
 ## PARAMETERS
 
@@ -343,7 +330,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgIdentityConditionalAccessTemplate](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityConditionalAccessTemplate?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityconditionalaccesstemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityconditionalaccesstemplate)
 

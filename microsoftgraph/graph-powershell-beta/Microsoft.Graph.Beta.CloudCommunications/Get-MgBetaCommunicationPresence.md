@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationpresence
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Get-MgBetaCommunicationPresence
@@ -11,9 +10,6 @@ ms.prod: cloud-communications
 ## SYNOPSIS
 Get a user's presence information.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationPresence](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationPresence?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -41,17 +37,13 @@ Get a user's presence information.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Get the presence information of another user
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 Get-MgBetaCommunicationPresence -PresenceId $presenceId
-
-```
-This example will get the presence information of another user
-
 
 ## PARAMETERS
 
@@ -273,7 +265,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgCommunicationPresence](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationPresence?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationpresence)
 

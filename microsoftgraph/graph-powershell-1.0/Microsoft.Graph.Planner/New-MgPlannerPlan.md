@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannerplan
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # New-MgPlannerPlan
@@ -11,9 +10,6 @@ ms.prod: planner
 ## SYNOPSIS
 Use this API to create a new plannerPlan.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/New-MgBetaPlannerPlan?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -35,11 +31,11 @@ Use this API to create a new plannerPlan.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Planner
+```
 
 $params = @{
 	container = @{
@@ -49,10 +45,6 @@ $params = @{
 }
 
 New-MgPlannerPlan -BodyParameter $params
-
-```
-This example shows how to use the New-MgPlannerPlan Cmdlet.
-
 
 ## PARAMETERS
 
@@ -676,7 +668,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   \[Title \<String\>\]: Title of the task.
 
 ## RELATED LINKS
-[New-MgBetaPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/New-MgBetaPlannerPlan?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannerplan](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannerplan)
 

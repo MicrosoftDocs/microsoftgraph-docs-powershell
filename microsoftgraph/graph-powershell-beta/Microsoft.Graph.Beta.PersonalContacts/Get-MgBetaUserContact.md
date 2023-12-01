@@ -1,10 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.Beta.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontact
 schema: 2.0.0
-ms.prod: outlook
-ms.prod: outlook
 ---
 
 # Get-MgBetaUserContact
@@ -12,9 +10,6 @@ ms.prod: outlook
 ## SYNOPSIS
 Retrieve the properties and relationships of contact object.
 There are two scenarios where an app can get a contact in another user's contact folder: This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserContact](/powershell/module/Microsoft.Graph.PersonalContacts/Get-MgUserContact?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -42,18 +37,14 @@ Retrieve the properties and relationships of contact object.
 There are two scenarios where an app can get a contact in another user's contact folder: This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.PersonalContacts
+```
 
 # A UPN can also be used as -UserId.
-Get-MgBetaUserContact -UserId $userId -Property "displayName,emailAddresses" 
-
-```
-This example shows how to use the Get-MgBetaUserContact Cmdlet.
-
+Get-MgBetaUserContact -UserId $userId -Property "displayName,emailAddresses"
 
 ## PARAMETERS
 
@@ -277,7 +268,6 @@ INPUTOBJECT \<IPersonalContactsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserContact](/powershell/module/Microsoft.Graph.PersonalContacts/Get-MgUserContact?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontact)
 

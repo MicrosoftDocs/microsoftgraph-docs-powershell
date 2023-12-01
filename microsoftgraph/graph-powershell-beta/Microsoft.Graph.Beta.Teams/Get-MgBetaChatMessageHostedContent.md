@@ -1,10 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatmessagehostedcontent
 schema: 2.0.0
-ms.prod: microsoft-teams
-ms.prod: microsoft-teams
 ---
 
 # Get-MgBetaChatMessageHostedContent
@@ -12,9 +10,6 @@ ms.prod: microsoft-teams
 ## SYNOPSIS
 Retrieve the properties and relationships of chatMessageHostedContent object.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgChatMessageHostedContent](/powershell/module/Microsoft.Graph.Teams/Get-MgChatMessageHostedContent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -54,17 +49,13 @@ Retrieve the properties and relationships of chatMessageHostedContent object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: List hosted content for message in a chat
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 Get-MgBetaChatMessageHostedContent -ChatId $chatId -ChatMessageId $chatMessageId
-
-```
-This example will list hosted content for message in a chat
-
 
 ## PARAMETERS
 
@@ -367,7 +358,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgChatMessageHostedContent](/powershell/module/Microsoft.Graph.Teams/Get-MgChatMessageHostedContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatmessagehostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatmessagehostedcontent)
 

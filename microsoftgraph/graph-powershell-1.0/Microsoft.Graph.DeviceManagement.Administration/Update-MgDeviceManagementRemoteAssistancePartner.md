@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementremoteassistancepartner
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Update-MgDeviceManagementRemoteAssistancePartner
 
 ## SYNOPSIS
 Update the properties of a remoteAssistancePartner object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementRemoteAssistancePartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementRemoteAssistancePartner?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -48,25 +44,21 @@ Update-MgDeviceManagementRemoteAssistancePartner -InputObject <IDeviceManagement
 Update the properties of a remoteAssistancePartner object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.DeviceManagement.Administration
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.remoteAssistancePartner"
 	displayName = "Display Name value"
 	onboardingUrl = "https://example.com/onboardingUrl/"
 	onboardingStatus = "onboarding"
-	lastConnectionDateTime = [System.DateTime]::Parse("2016-12-31T23:58:36.6670033-08:00")
+	lastConnectionDateTime = \[System.DateTime\]::Parse("2016-12-31T23:58:36.6670033-08:00")
 }
 
 Update-MgDeviceManagementRemoteAssistancePartner -RemoteAssistancePartnerId $remoteAssistancePartnerId -BodyParameter $params
-```
-This example shows how to use the Update-MgDeviceManagementRemoteAssistancePartner Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -282,7 +274,6 @@ INPUTOBJECT \<IDeviceManagementAdministrationIdentity\>: Identity Parameter
   \[TermsAndConditionsId \<String\>\]: The unique identifier of termsAndConditions
 
 ## RELATED LINKS
-[Update-MgBetaDeviceManagementRemoteAssistancePartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementRemoteAssistancePartner?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementremoteassistancepartner](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementremoteassistancepartner)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdriverootversion
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property versions for drives
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDriveRootVersion](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveRootVersion?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Remove-MgDriveRootVersion -InputObject <IFilesIdentity> [-IfMatch <String>] [-Pa
 
 ## DESCRIPTION
 Delete navigation property versions for drives
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -181,8 +194,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaDriveRootVersion](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveRootVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdriverootversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdriverootversion)
-
 

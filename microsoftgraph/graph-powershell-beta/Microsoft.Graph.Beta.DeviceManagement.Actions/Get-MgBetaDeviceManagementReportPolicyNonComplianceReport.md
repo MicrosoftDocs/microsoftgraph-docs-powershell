@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportpolicynoncompliancereport
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action getPolicyNonComplianceReport
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementReportPolicyNonComplianceReport](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Get-MgDeviceManagementReportPolicyNonComplianceReport?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -32,6 +29,22 @@ Get-MgBetaDeviceManagementReportPolicyNonComplianceReport -OutFile <String>
 
 ## DESCRIPTION
 Invoke action getPolicyNonComplianceReport
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -290,8 +303,6 @@ BODYPARAMETER \<IPaths1KwwldyDevicemanagementReportsMicrosoftGraphGetpolicynonco
   \[Top \<Int32?\>\]:
 
 ## RELATED LINKS
-[Get-MgDeviceManagementReportPolicyNonComplianceReport](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Get-MgDeviceManagementReportPolicyNonComplianceReport?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportpolicynoncompliancereport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportpolicynoncompliancereport)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetashareshareddriveitemshareddriveitem
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete entity from shares
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgShareSharedDriveItemSharedDriveItem](/powershell/module/Microsoft.Graph.Files/Remove-MgShareSharedDriveItemSharedDriveItem?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,39 +28,27 @@ Remove-MgBetaShareSharedDriveItemSharedDriveItem -InputObject <IFilesIdentity> [
 Delete entity from shares
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Files
+```
 
 Get-MgBetaShareSharedDriveItemSharedDriveItem -SharedDriveItemId $sharedDriveItemId
+
+### EXAMPLE 2
 ```
-This example shows how to use the Remove-MgBetaBetaShareSharedDriveItemSharedDriveItem Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Files
+```
 
 Get-MgBetaShareDriveItem -SharedDriveItemId $sharedDriveItemId
+
+### EXAMPLE 3
 ```
-This example shows how to use the Remove-MgBetaBetaShareSharedDriveItemSharedDriveItem Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Files
+```
 
 Get-MgBetaShareDriveItem -SharedDriveItemId $sharedDriveItemId -ExpandProperty "children"
-```
-This example shows how to use the Remove-MgBetaBetaShareSharedDriveItemSharedDriveItem Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -201,7 +186,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgShareSharedDriveItemSharedDriveItem](/powershell/module/Microsoft.Graph.Files/Remove-MgShareSharedDriveItemSharedDriveItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetashareshareddriveitemshareddriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetashareshareddriveitemshareddriveitem)
 

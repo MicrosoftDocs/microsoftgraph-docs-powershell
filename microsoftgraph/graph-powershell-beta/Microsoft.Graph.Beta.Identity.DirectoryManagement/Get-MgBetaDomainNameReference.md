@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadomainnamereference
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Get-MgBetaDomainNameReference
@@ -13,9 +12,6 @@ The objects such as users and groups that reference the domain ID.
 Read-only, Nullable.
 Supports $expand and $filter by the OData type of objects returned.
 For example /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDomainNameReference](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDomainNameReference?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45,17 +41,13 @@ Supports $expand and $filter by the OData type of objects returned.
 For example /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+```
 
 Get-MgBetaDomainNameReference -DomainId $domainId
-
-```
-This example shows how to use the Get-MgBetaDomainNameReference Cmdlet.
-
 
 ## PARAMETERS
 
@@ -317,7 +309,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgDomainNameReference](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDomainNameReference?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadomainnamereference](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadomainnamereference)
 

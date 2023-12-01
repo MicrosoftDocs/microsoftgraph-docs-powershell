@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadomainserviceconfigurationrecord
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property serviceConfigurationRecords in domains
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDomainServiceConfigurationRecord](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDomainServiceConfigurationRecord?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -43,6 +40,22 @@ Update-MgBetaDomainServiceConfigurationRecord -InputObject <IIdentityDirectoryMa
 
 ## DESCRIPTION
 Update the navigation property serviceConfigurationRecords in domains
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -323,8 +336,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgDomainServiceConfigurationRecord](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDomainServiceConfigurationRecord?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadomainserviceconfigurationrecord](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadomainserviceconfigurationrecord)
-
 

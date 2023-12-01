@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportenrollmentconfigurationpolicybydevice
@@ -29,6 +29,22 @@ Get-MgBetaDeviceManagementReportEnrollmentConfigurationPolicyByDevice -OutFile <
 
 ## DESCRIPTION
 Invoke action getEnrollmentConfigurationPoliciesByDevice
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -273,5 +289,4 @@ BODYPARAMETER \<IPathsD7TdnyDevicemanagementReportsMicrosoftGraphGetenrollmentco
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportenrollmentconfigurationpolicybydevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportenrollmentconfigurationpolicybydevice)
-
 

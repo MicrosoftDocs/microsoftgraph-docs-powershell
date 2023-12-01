@@ -1,10 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofilepublishedresource
 schema: 2.0.0
-ms.prod: applications
-ms.prod: applications
 ---
 
 # Get-MgBetaOnPremisePublishingProfilePublishedResource
@@ -39,20 +37,18 @@ Retrieve the properties and relationships of publishedResource object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaOnPremisePublishingProfilePublishedResource Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Applications
-Get-MgBetaOnPremisePublishingProfilePublishedResource -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -PublishedResourceId $publishedResourceId -ExpandProperty "agentGroups" 
+
+### EXAMPLE 1
 ```
-This example shows how to use the Get-MgBetaOnPremisePublishingProfilePublishedResource Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaOnPremisePublishingProfilePublishedResource Cmdlet
-```powershell
 Import-Module Microsoft.Graph.Beta.Applications
-Get-MgBetaOnPremisePublishingProfilePublishedResource -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -ExpandProperty "agentGroups" 
+Get-MgBetaOnPremisePublishingProfilePublishedResource -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -PublishedResourceId $publishedResourceId -ExpandProperty "agentGroups"
 ```
-This example shows how to use the Get-MgBetaOnPremisePublishingProfilePublishedResource Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### EXAMPLE 2
+```
+Import-Module Microsoft.Graph.Beta.Applications
+Get-MgBetaOnPremisePublishingProfilePublishedResource -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -ExpandProperty "agentGroups"
+```
 
 ## PARAMETERS
 

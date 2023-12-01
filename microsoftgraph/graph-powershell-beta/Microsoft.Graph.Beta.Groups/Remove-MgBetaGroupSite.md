@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupsite
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Unfollow a user's site or multiple sites.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgGroupSite](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupSite?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -43,6 +40,22 @@ Remove-MgBetaGroupSite -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Unfollow a user's site or multiple sites.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -14947,8 +14960,6 @@ Read-only.
     \[Sets \<IMicrosoftGraphTermStoreSet\[\]\>\]: Collection of all sets available in the term store.
 
 ## RELATED LINKS
-[Remove-MgGroupSite](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupSite?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupsite)
-
 

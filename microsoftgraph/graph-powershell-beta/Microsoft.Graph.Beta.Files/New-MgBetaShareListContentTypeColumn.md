@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetasharelistcontenttypecolumn
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # New-MgBetaShareListContentTypeColumn
@@ -11,9 +10,6 @@ ms.prod: sites-and-lists
 ## SYNOPSIS
 Add a column to a content type\]\[contentType\] in a site or list by specifying a \[columnDefinition\]\[columnDefinition\].
 This API is available in the following \[national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgShareListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/New-MgShareListContentTypeColumn?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -65,6 +61,22 @@ New-MgBetaShareListContentTypeColumn -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Add a column to a content type\]\[contentType\] in a site or list by specifying a \[columnDefinition\]\[columnDefinition\].
 This API is available in the following \[national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -1203,8 +1215,6 @@ User will be prompted with this message if validation fails.
 For examples, see Examples of common formulas in lists
 
 ## RELATED LINKS
-[New-MgShareListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/New-MgShareListContentTypeColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetasharelistcontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetasharelistcontenttypecolumn)
-
 

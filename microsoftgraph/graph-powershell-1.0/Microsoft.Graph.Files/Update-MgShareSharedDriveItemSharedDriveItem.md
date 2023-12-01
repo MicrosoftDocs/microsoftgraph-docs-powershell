@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgshareshareddriveitemshareddriveitem
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update entity in shares
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaShareSharedDriveItemSharedDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareSharedDriveItemSharedDriveItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -57,39 +54,27 @@ Update-MgShareSharedDriveItemSharedDriveItem -InputObject <IFilesIdentity>
 Update entity in shares
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Files
+```
 
 Get-MgShareSharedDriveItemSharedDriveItem -SharedDriveItemId $sharedDriveItemId
+
+### EXAMPLE 2
 ```
-This example shows how to use the Update-MgShareSharedDriveItemSharedDriveItem Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Files
+```
 
 Get-MgShareDriveItem -SharedDriveItemId $sharedDriveItemId
+
+### EXAMPLE 3
 ```
-This example shows how to use the Update-MgShareSharedDriveItemSharedDriveItem Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Files
+```
 
 Get-MgShareDriveItem -SharedDriveItemId $sharedDriveItemId -ExpandProperty "children"
-```
-This example shows how to use the Update-MgShareSharedDriveItemSharedDriveItem Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -41502,7 +41487,6 @@ This relationship can only be used to load a specific term set.
   \[TermStores \<IMicrosoftGraphTermStore\[\]\>\]: The collection of termStores under this site.
 
 ## RELATED LINKS
-[Update-MgBetaShareSharedDriveItemSharedDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareSharedDriveItemSharedDriveItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgshareshareddriveitemshareddriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgshareshareddriveitemshareddriveitem)
 

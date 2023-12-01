@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetausermanageddevicelogcollectionresponse
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 List of log collection requests
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserManagedDeviceLogCollectionResponse](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgUserManagedDeviceLogCollectionResponse?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -37,6 +34,22 @@ Get-MgBetaUserManagedDeviceLogCollectionResponse -InputObject <IDevicesCorporate
 
 ## DESCRIPTION
 List of log collection requests
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -338,8 +351,6 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
   \[WindowsManagedAppProtectionId \<String\>\]: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
-[Get-MgUserManagedDeviceLogCollectionResponse](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgUserManagedDeviceLogCollectionResponse?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetausermanageddevicelogcollectionresponse](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetausermanageddevicelogcollectionresponse)
-
 

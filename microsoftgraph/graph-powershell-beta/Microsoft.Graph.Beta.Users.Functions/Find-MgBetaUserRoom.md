@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/find-mgbetauserroom
@@ -40,14 +40,13 @@ Find-MgBetaUserRoom -InputObject <IUsersFunctionsIdentity> [-Count] [-Filter <St
 Invoke function findRooms
 
 ## EXAMPLES
-### Example 1: Using the Find-MgBetaUserRoom Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users.Functions
 # A UPN can also be used as -UserId.
 Find-MgBetaUserRoom -UserId $userId
 ```
-This example shows how to use the Find-MgBetaUserRoom Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamchannelfilefoldercontent
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The content stream, if the item represents a file.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaTeamChannelFileFolderContent](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaTeamChannelFileFolderContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,17 +28,13 @@ Set-MgTeamChannelFileFolderContent -InputObject <ITeamsIdentity> [-Data <Stream>
 The content stream, if the item represents a file.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 Get-MgTeamChannelFileFolder -TeamId $teamId -ChannelId $channelId
-```
-This example shows how to use the Set-MgTeamChannelFileFolderContent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -205,7 +198,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Set-MgBetaTeamChannelFileFolderContent](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaTeamChannelFileFolderContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamchannelfilefoldercontent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamchannelfilefoldercontent)
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementcatalogcustomworkflowextension
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Update-MgEntitlementManagementCatalogCustomWorkflowExtension
@@ -47,6 +46,18 @@ Update-MgEntitlementManagementCatalogCustomWorkflowExtension -InputObject <IIden
 
 ## DESCRIPTION
 Update the properties of an accessPackageAssignmentWorkflowExtension object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -361,5 +372,4 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementcatalogcustomworkflowextension](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementcatalogcustomworkflowextension)
-
 

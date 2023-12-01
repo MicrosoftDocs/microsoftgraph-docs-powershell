@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/stop-mgbetadevicemanagementvirtualendpointcloudpcgraceperiod
 schema: 2.0.0
-ms.prod: cloud-pc
 ---
 
 # Stop-MgBetaDeviceManagementVirtualEndpointCloudPcGracePeriod
@@ -37,13 +36,12 @@ Ending the grace period immediately deprovisions the Cloud PC without waiting th
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Stop-MgBetaDeviceManagementVirtualEndpointCloudPcGracePeriod Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
 Stop-MgBetaDeviceManagementVirtualEndpointCloudPcGracePeriod -CloudPCId $cloudPCId
 ```
-This example shows how to use the Stop-MgBetaDeviceManagementVirtualEndpointCloudPcGracePeriod Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

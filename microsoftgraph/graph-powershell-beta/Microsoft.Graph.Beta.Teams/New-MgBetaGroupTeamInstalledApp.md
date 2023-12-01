@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteaminstalledapp
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Install an app to the specified team.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupTeamInstalledApp](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamInstalledApp?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,6 +46,16 @@ Install an app to the specified team.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -437,7 +444,6 @@ For example, if a user changes their display name, the API might show the new va
   \[Version \<String\>\]: The version number of the application.
 
 ## RELATED LINKS
-[New-MgGroupTeamInstalledApp](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamInstalledApp?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteaminstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteaminstalledapp)
 

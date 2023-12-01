@@ -1,10 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityprovider
 schema: 2.0.0
-ms.prod: identity-and-sign-in
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgIdentityProvider
@@ -14,9 +12,6 @@ Get the properties and relationships of the specified identity provider configur
 Among the types of providers derived from identityProviderBase, you can currently get a socialIdentityProvider or a builtinIdentityProvider resource in Microsoft Entra ID.
 In Azure AD B2C, this operation can currently get a socialIdentityProvider, or an appleManagedIdentityProvider resource.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaIdentityProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityProvider?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -46,39 +41,27 @@ In Azure AD B2C, this operation can currently get a socialIdentityProvider, or a
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Retrieve a specific social identity provider (Azure AD or Azure AD B2C)
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 Get-MgIdentityProvider -IdentityProviderBaseId $identityProviderBaseId
 
+### EXAMPLE 2
 ```
-This example will retrieve a specific social identity provider (azure ad or azure ad b2c)
-
-### Example 2: Retrieve a specific built-in identity provider (only for Azure AD)
-
-```powershell
-
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 Get-MgIdentityProvider -IdentityProviderBaseId $identityProviderBaseId
 
+### EXAMPLE 3
 ```
-This example will retrieve a specific built-in identity provider (only for azure ad)
-
-### Example 3: Retrieves Apple identity provider(only for Azure AD B2C)
-
-```powershell
-
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 Get-MgIdentityProvider -IdentityProviderBaseId $identityProviderBaseId
-
-```
-This example retrieves apple identity provider(only for azure ad b2c)
-
 
 ## PARAMETERS
 
@@ -337,7 +320,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaIdentityProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityProvider?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityprovider](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityprovider)
 

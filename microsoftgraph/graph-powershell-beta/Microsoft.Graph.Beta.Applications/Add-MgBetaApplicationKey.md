@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/add-mgbetaapplicationkey
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Add-MgBetaApplicationKey
@@ -15,9 +14,6 @@ As part of the request validation for this method, a proof of possession of an e
 Applications that don't have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won't be able to use this service action.
 You can use the Update application operation to perform an update instead.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Add-MgApplicationKey](/powershell/module/Microsoft.Graph.Applications/Add-MgApplicationKey?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -58,17 +54,17 @@ You can use the Update application operation to perform an update instead.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Add a new key credential to an application
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Applications
+```
 
 $params = @{
 	keyCredential = @{
 		type = "AsymmetricX509Cert"
 		usage = "Verify"
-		key = [System.Text.Encoding]::ASCII.GetBytes("MIIDYDCCAki...")
+		key = \[System.Text.Encoding\]::ASCII.GetBytes("MIIDYDCCAki...")
 	}
 	passwordCredential = $null
 	proof = "eyJ0eXAiOiJ..."
@@ -76,20 +72,16 @@ $params = @{
 
 Add-MgBetaApplicationKey -ApplicationId $applicationId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will add a new key credential to an application
-
-### Example 2: Add a key credential and an associated password for the key
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Applications
+```
 
 $params = @{
 	keyCredential = @{
 		type = "X509CertAndPassword"
 		usage = "Sign"
-		key = [System.Text.Encoding]::ASCII.GetBytes("MIIDYDCCAki...")
+		key = \[System.Text.Encoding\]::ASCII.GetBytes("MIIDYDCCAki...")
 	}
 	passwordCredential = @{
 		secretText = "MKTr0w1..."
@@ -98,10 +90,6 @@ $params = @{
 }
 
 Add-MgBetaApplicationKey -ApplicationId $applicationId -BodyParameter $params
-
-```
-This example will add a key credential and an associated password for the key
-
 
 ## PARAMETERS
 
@@ -379,7 +367,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Optional.
 
 ## RELATED LINKS
-[Add-MgApplicationKey](/powershell/module/Microsoft.Graph.Applications/Add-MgApplicationKey?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/add-mgbetaapplicationkey](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/add-mgbetaapplicationkey)
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/restore-mguserdriveroot
 schema: 2.0.0
-ms.prod: files
 ---
 
 # Restore-MgUserDriveRoot
@@ -12,9 +11,6 @@ ms.prod: files
 Restore a driveItem that has been deleted and is currently in the recycle bin.
 NOTE: This functionality is currently only available for OneDrive Personal.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Restore-MgBetaUserDriveRoot](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Restore-MgBetaUserDriveRoot?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -48,6 +44,22 @@ Restore-MgUserDriveRoot -InputObject <IUsersActionsIdentity>
 Restore a driveItem that has been deleted and is currently in the recycle bin.
 NOTE: This functionality is currently only available for OneDrive Personal.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -299,8 +311,6 @@ It is an opaque string that consists of three identifiers of the site.
 For OneDrive, this property is not populated.
 
 ## RELATED LINKS
-[Restore-MgBetaUserDriveRoot](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Restore-MgBetaUserDriveRoot?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/restore-mguserdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/restore-mguserdriveroot)
-
 

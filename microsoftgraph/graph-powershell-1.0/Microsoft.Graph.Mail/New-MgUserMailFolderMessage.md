@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfoldermessage
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgUserMailFolderMessage
@@ -11,9 +10,6 @@ ms.prod: outlook
 ## SYNOPSIS
 Use this API to create a new Message in a mailfolder.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserMailFolderMessage](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolderMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -74,14 +70,15 @@ Use this API to create a new Message in a mailfolder.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Mail
+```
 
 $params = @{
-	receivedDateTime = [System.DateTime]::Parse("datetime-value")
-	sentDateTime = [System.DateTime]::Parse("datetime-value")
+	receivedDateTime = \[System.DateTime\]::Parse("datetime-value")
+	sentDateTime = \[System.DateTime\]::Parse("datetime-value")
 	hasAttachments = $true
 	subject = "subject-value"
 	body = @{
@@ -93,11 +90,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserMailFolderMessage -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
-```
-This example shows how to use the New-MgUserMailFolderMessage Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -961,7 +953,6 @@ UNIQUEBODY \<IMicrosoftGraphItemBody\>: itemBody
   \[ContentType \<String\>\]: bodyType
 
 ## RELATED LINKS
-[New-MgBetaUserMailFolderMessage](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolderMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfoldermessage)
 

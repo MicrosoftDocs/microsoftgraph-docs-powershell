@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetasharelistitem
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # New-MgBetaShareListItem
@@ -11,9 +10,6 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Create a new listItem\]\[\] in a \[list\]\[\].
 This API is available in the following \[national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgShareListItem](/powershell/module/Microsoft.Graph.Files/New-MgShareListItem?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -60,6 +56,22 @@ New-MgBetaShareListItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Create a new listItem\]\[\] in a \[list\]\[\].
 This API is available in the following \[national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -44857,8 +44869,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[New-MgShareListItem](/powershell/module/Microsoft.Graph.Files/New-MgShareListItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetasharelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetasharelistitem)
-
 

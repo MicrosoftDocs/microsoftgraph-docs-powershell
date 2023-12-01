@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/update-mgbetadevicemanagementmanageddevicewindowsdeviceaccount
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action updateWindowsDeviceAccount
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,6 +44,18 @@ Update-MgBetaDeviceManagementManagedDeviceWindowsDeviceAccount -InputObject <IDe
 
 ## DESCRIPTION
 Invoke action updateWindowsDeviceAccount
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -268,8 +277,6 @@ UPDATEWINDOWSDEVICEACCOUNTACTIONPARAMETER \<IMicrosoftGraphUpdateWindowsDeviceAc
   \[SessionInitiationProtocalAddress \<String\>\]: Not yet documented
 
 ## RELATED LINKS
-[Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/update-mgbetadevicemanagementmanageddevicewindowsdeviceaccount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/update-mgbetadevicemanagementmanageddevicewindowsdeviceaccount)
-
 

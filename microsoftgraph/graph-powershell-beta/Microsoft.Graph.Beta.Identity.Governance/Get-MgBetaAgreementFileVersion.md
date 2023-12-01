@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaagreementfileversion
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Read-only.
 Customized versions of the terms of use agreement in the Microsoft Entra tenant.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgAgreementFileVersion](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgAgreementFileVersion?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,6 +35,18 @@ Get-MgBetaAgreementFileVersion -InputObject <IIdentityGovernanceIdentity> [-Expa
 ## DESCRIPTION
 Read-only.
 Customized versions of the terms of use agreement in the Microsoft Entra tenant.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -370,8 +379,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[WorkflowVersionNumber \<Int32?\>\]: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgAgreementFileVersion](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgAgreementFileVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaagreementfileversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaagreementfileversion)
-
 

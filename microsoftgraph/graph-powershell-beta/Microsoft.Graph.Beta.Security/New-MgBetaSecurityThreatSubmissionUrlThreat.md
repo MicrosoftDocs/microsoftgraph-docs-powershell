@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatsubmissionurlthreat
 schema: 2.0.0
-ms.prod: security
 ---
 
 # New-MgBetaSecurityThreatSubmissionUrlThreat
@@ -35,8 +34,9 @@ Create a new urlThreatSubmission object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaSecurityThreatSubmissionUrlThreat Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{
 	"@odata.type" = "#microsoft.graph.urlThreatSubmission"
@@ -45,8 +45,6 @@ $params = @{
 }
 New-MgBetaSecurityThreatSubmissionUrlThreat -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaSecurityThreatSubmissionUrlThreat Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

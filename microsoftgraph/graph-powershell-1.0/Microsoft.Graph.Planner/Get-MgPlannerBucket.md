@@ -1,10 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerbucket
 schema: 2.0.0
-ms.prod: planner
-ms.prod: planner
 ---
 
 # Get-MgPlannerBucket
@@ -12,9 +10,6 @@ ms.prod: planner
 ## SYNOPSIS
 Retrieve the properties and relationships of a plannerBucket object.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPlannerBucket](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerBucket?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -42,17 +37,13 @@ Retrieve the properties and relationships of a plannerBucket object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Planner
+```
 
 Get-MgPlannerBucket
-
-```
-This example shows how to use the Get-MgPlannerBucket Cmdlet.
-
 
 ## PARAMETERS
 
@@ -261,7 +252,6 @@ INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaPlannerBucket](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerBucket?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerbucket](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerbucket)
 

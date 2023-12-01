@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintshare
 schema: 2.0.0
-ms.prod: cloud-printing
 ---
 
 # New-MgBetaPrintShare
@@ -11,9 +10,6 @@ ms.prod: cloud-printing
 ## SYNOPSIS
 Create a new printerShare for the specified printer.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgPrintShare](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintShare?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -39,11 +35,11 @@ Create a new printerShare for the specified printer.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
+```
 
 $params = @{
 	name = "name-value"
@@ -51,10 +47,6 @@ $params = @{
 }
 
 New-MgBetaPrintShare -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaPrintShare Cmdlet.
-
 
 ## PARAMETERS
 
@@ -30122,7 +30114,6 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
-[New-MgPrintShare](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintShare?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintshare](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintshare)
 

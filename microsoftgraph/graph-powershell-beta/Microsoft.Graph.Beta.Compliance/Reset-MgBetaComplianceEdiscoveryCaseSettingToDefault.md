@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/reset-mgbetacomplianceediscoverycasesettingtodefault
@@ -30,13 +30,12 @@ Reset a caseSettings object to the default values.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Reset-MgBetaComplianceEdiscoveryCaseSettingToDefault Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Compliance
 Reset-MgBetaComplianceEdiscoveryCaseSettingToDefault -CaseId $caseId
 ```
-This example shows how to use the Reset-MgBetaComplianceEdiscoveryCaseSettingToDefault Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

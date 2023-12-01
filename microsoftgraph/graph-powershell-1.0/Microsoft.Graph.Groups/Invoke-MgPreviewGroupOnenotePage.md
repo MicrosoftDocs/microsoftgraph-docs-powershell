@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgpreviewgrouponenotepage
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function preview
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaPreviewGroupOnenotePage](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaPreviewGroupOnenotePage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -27,6 +24,22 @@ Invoke-MgPreviewGroupOnenotePage -InputObject <IGroupsIdentity> [<CommonParamete
 
 ## DESCRIPTION
 Invoke function preview
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -129,8 +142,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
-[Invoke-MgBetaPreviewGroupOnenotePage](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaPreviewGroupOnenotePage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgpreviewgrouponenotepage](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgpreviewgrouponenotepage)
-
 

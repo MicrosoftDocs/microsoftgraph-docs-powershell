@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportteamcount
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function getTeamsTeamCounts
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgReportTeamCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportTeamCount?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -27,6 +24,18 @@ Get-MgBetaReportTeamCount -InputObject <IReportsIdentity> -OutFile <String> [-Pa
 
 ## DESCRIPTION
 Invoke function getTeamsTeamCounts
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -149,8 +158,6 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
   \[UserSignUpMetricId \<String\>\]: The unique identifier of userSignUpMetric
 
 ## RELATED LINKS
-[Get-MgReportTeamCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportTeamCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportteamcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportteamcount)
-
 

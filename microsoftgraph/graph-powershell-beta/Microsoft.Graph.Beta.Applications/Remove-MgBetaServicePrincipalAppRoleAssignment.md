@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalapproleassignment
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Remove-MgBetaServicePrincipalAppRoleAssignment
@@ -13,9 +12,6 @@ Deletes an appRoleAssignment that a service principal has been granted.
 App roles that are assigned to service principals are also known as application permissions.
 Deleting an app role assignment for a service principal is equivalent to revoking the app-only permission grant.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgServicePrincipalAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalAppRoleAssignment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,13 +34,11 @@ Deleting an app role assignment for a service principal is equivalent to revokin
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Remove the application role assignment for a service principal
 
-```powershell
+### EXAMPLE 1
+```
 Remove-MgBetaServicePrincipalAppRoleAssignment -AppRoleAssignmentId  'PRLbC6e4yUyMwr0XutBvYZsr7FiAW3pIqP4F9944yBc' -ServicePrincipalId '0bdb123d-b8a7-4cc9-8cc2-bd17bad06f61'
 ```
-
-This example removed the assignment of the specified service principal to the specified application role id.
 
 ## PARAMETERS
 
@@ -204,7 +198,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgServicePrincipalAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalAppRoleAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalapproleassignment)
 

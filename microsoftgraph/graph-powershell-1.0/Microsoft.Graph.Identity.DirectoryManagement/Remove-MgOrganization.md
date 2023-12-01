@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgorganization
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete entity from organization
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaOrganization?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,10 +28,11 @@ Remove-MgOrganization -InputObject <IIdentityDirectoryManagementIdentity> [-IfMa
 Delete entity from organization
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
+```
 
 $params = @{
 	marketingNotificationEmails = @(
@@ -56,11 +54,6 @@ $params = @{
 }
 
 Update-MgOrganization -OrganizationId $organizationId -BodyParameter $params
-```
-This example shows how to use the Remove-MgOrganization Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -198,7 +191,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaOrganization?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgorganization)
 

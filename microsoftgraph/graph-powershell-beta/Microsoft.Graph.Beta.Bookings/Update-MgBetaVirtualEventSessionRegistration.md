@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventsessionregistration
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Update-MgBetaVirtualEventSessionRegistration
@@ -51,6 +50,18 @@ Update-MgBetaVirtualEventSessionRegistration -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Update the details of a meetingRegistration object assciated with an onlineMeeting on behalf of the organizer.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -426,5 +437,4 @@ SPEAKERS \<IMicrosoftGraphMeetingSpeaker\[\]\>: The meeting speaker's informatio
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventsessionregistration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventsessionregistration)
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalownerbyref
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # New-MgServicePrincipalOwnerByRef
@@ -12,9 +11,6 @@ ms.prod: applications
 Use this API to add an owner for the servicePrincipal.
 Service principal owners can be users, the service principal itself, or other service principals.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaServicePrincipalOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalOwnerByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -48,17 +44,15 @@ Service principal owners can be users, the service principal itself, or other se
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Add an owner for a service principal
 
-```powershell
+### EXAMPLE 1
+```
 $newOwner = @{
   "@odata.id"= "https://graph.microsoft.com/v1.0/directoryObjects/8a7c50d3-fcbd-4727-a889-8ab232dfea01"
   }
-
-New-MgServicePrincipalOwnerByRef -ServicePrincipalId '1c48f923-4fbb-4d37-b772-4d577eefec9e' -BodyParameter $newOwner
 ```
 
-In this example, the first command defines the value for the `$newOwner` variable in a hashtable. The second command adds the new owner to the specified service principal.
+New-MgServicePrincipalOwnerByRef -ServicePrincipalId '1c48f923-4fbb-4d37-b772-4d577eefec9e' -BodyParameter $newOwner
 
 ## PARAMETERS
 
@@ -232,7 +226,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaServicePrincipalOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalOwnerByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalownerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalownerbyref)
 

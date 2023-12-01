@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriveitempermission
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Update-MgUserDriveItemPermission
@@ -12,9 +11,6 @@ ms.prod: sharepoint
 Update the properties of a sharing permission by patching the permission resource.
 Only the roles property can be modified this way.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveItemPermission?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -58,6 +54,22 @@ Update-MgUserDriveItemPermission -InputObject <IFilesIdentity> -BodyParameter <I
 Update the properties of a sharing permission by patching the permission resource.
 Only the roles property can be modified this way.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -654,8 +666,6 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
   \[WebUrl \<String\>\]: A URL that opens the item in the browser on the OneDrive website.
 
 ## RELATED LINKS
-[Update-MgBetaUserDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveItemPermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriveitempermission](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriveitempermission)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharelistoperation
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property operations in shares
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaShareListOperation](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,6 +44,22 @@ Update-MgShareListOperation -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Update the navigation property operations in shares
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -405,8 +418,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaShareListOperation](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharelistoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharelistoperation)
-
 

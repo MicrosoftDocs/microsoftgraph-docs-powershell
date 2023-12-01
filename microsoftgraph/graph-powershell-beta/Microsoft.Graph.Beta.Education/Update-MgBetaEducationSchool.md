@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationschool
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Update-MgBetaEducationSchool
@@ -11,9 +10,6 @@ ms.prod: education
 ## SYNOPSIS
 Update the properties of a school object.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgEducationSchool](/powershell/module/Microsoft.Graph.Education/Update-MgEducationSchool?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -56,22 +52,19 @@ Update the properties of a school object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 $params = @{
 	displayName = "Fabrikam Arts High School"
-	description = "Magnate school for the arts. Los Angeles School District"
+	description = "Magnate school for the arts.
+Los Angeles School District"
 }
 
 Update-MgBetaEducationSchool -EducationSchoolId $educationSchoolId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaEducationSchool Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -23580,7 +23573,6 @@ See standard \[user\] resource for additional details.
 Supports /$filter.
 
 ## RELATED LINKS
-[Update-MgEducationSchool](/powershell/module/Microsoft.Graph.Education/Update-MgEducationSchool?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationschool](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationschool)
 

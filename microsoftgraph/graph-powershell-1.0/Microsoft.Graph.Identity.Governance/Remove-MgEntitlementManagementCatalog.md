@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementcatalog
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Remove-MgEntitlementManagementCatalog
@@ -31,17 +30,13 @@ Delete an accessPackageCatalog.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.Governance
+```
 
 Remove-MgEntitlementManagementCatalog -AccessPackageCatalogId $accessPackageCatalogId
-```
-This example shows how to use the Remove-MgEntitlementManagementCatalog Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

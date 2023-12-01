@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgserviceprincipalkey
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Add-MgServicePrincipalKey
@@ -55,17 +54,17 @@ Update servicePrincipal can be used to perform an update instead.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Adding a new key credential to a servicePrincipal
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Applications
+```
 
 $params = @{
 	keyCredential = @{
 		type = "AsymmetricX509Cert"
 		usage = "Verify"
-		key = [System.Text.Encoding]::ASCII.GetBytes("MIIDYDCCAki...")
+		key = \[System.Text.Encoding\]::ASCII.GetBytes("MIIDYDCCAki...")
 	}
 	passwordCredential = $null
 	proof = "eyJ0eXAiOiJ..."
@@ -73,20 +72,16 @@ $params = @{
 
 Add-MgServicePrincipalKey -ServicePrincipalId $servicePrincipalId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example shows adding a new key credential to a serviceprincipal
-
-### Example 2: Adding a key credential and an associated password for the key
-
-```powershell
-
 Import-Module Microsoft.Graph.Applications
+```
 
 $params = @{
 	keyCredential = @{
 		type = "X509CertAndPassword"
 		usage = "Sign"
-		key = [System.Text.Encoding]::ASCII.GetBytes("MIIDYDCCAki...")
+		key = \[System.Text.Encoding\]::ASCII.GetBytes("MIIDYDCCAki...")
 	}
 	passwordCredential = @{
 		secretText = "MKTr0w1..."
@@ -95,10 +90,6 @@ $params = @{
 }
 
 Add-MgServicePrincipalKey -ServicePrincipalId $servicePrincipalId -BodyParameter $params
-
-```
-This example shows adding a key credential and an associated password for the key
-
 
 ## PARAMETERS
 

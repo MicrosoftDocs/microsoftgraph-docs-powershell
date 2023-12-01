@@ -1,10 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantdevicecompliancepolicysettingstatesummary
 schema: 2.0.0
-ms.prod: multi-tenant-management
-ms.prod: multi-tenant-management
 ---
 
 # Get-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSummary
@@ -41,20 +39,18 @@ Read the properties and relationships of a deviceCompliancePolicySettingStateSum
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSummary Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.ManagedTenants
 Get-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSummary -DeviceCompliancePolicySettingStateSummaryId $deviceCompliancePolicySettingStateSummaryId
 ```
-This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSummary Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSummary Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.ManagedTenants
 Get-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSummary
 ```
-This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSummary Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

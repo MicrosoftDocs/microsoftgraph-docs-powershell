@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsite
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property sites in groups
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroupSite](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSite?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -65,6 +62,22 @@ Update-MgGroupSite -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraph
 
 ## DESCRIPTION
 Update the navigation property sites in groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -42564,8 +42577,6 @@ Read-only.
 This relationship can only be used to load a specific term set.
 
 ## RELATED LINKS
-[Update-MgBetaGroupSite](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSite?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsite](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsite)
-
 

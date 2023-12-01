@@ -1,19 +1,15 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdriveitem
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Remove-MgGroupDriveItem
 
 ## SYNOPSIS
-Delete a DriveItem by using its ID or path.Deleting items using this method moves the items to the recycle bin instead of permanently deleting the item.
+Delete a DriveItem by using its ID or path.\nDeleting items using this method moves the items to the recycle bin instead of permanently deleting the item.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,8 +26,24 @@ Remove-MgGroupDriveItem -InputObject <IFilesIdentity> [-IfMatch <String>] [-Pass
 ```
 
 ## DESCRIPTION
-Delete a DriveItem by using its ID or path.Deleting items using this method moves the items to the recycle bin instead of permanently deleting the item.
+Delete a DriveItem by using its ID or path.\nDeleting items using this method moves the items to the recycle bin instead of permanently deleting the item.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -199,8 +211,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdriveitem)
-
 

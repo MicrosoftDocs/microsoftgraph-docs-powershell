@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/undo-mgteamprimarychannelmessagesoftdelete
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Undo-MgTeamPrimaryChannelMessageSoftDelete
@@ -11,9 +10,6 @@ ms.prod: microsoft-teams
 ## SYNOPSIS
 Undo soft deletion of a single chatMessage or a chat message reply in a channel or a chat.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Undo-MgBetaTeamPrimaryChannelMessageSoftDelete](/powershell/module/Microsoft.Graph.Beta.Teams/Undo-MgBetaTeamPrimaryChannelMessageSoftDelete?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -32,6 +28,18 @@ Undo-MgTeamPrimaryChannelMessageSoftDelete -InputObject <ITeamsIdentity> [-PassT
 ## DESCRIPTION
 Undo soft deletion of a single chatMessage or a chat message reply in a channel or a chat.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -177,8 +185,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Undo-MgBetaTeamPrimaryChannelMessageSoftDelete](/powershell/module/Microsoft.Graph.Beta.Teams/Undo-MgBetaTeamPrimaryChannelMessageSoftDelete?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/undo-mgteamprimarychannelmessagesoftdelete](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/undo-mgteamprimarychannelmessagesoftdelete)
-
 

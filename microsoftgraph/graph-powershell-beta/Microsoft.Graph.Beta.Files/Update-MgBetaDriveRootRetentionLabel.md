@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriverootretentionlabel
 schema: 2.0.0
-ms.prod: files
 ---
 
 # Update-MgBetaDriveRootRetentionLabel
@@ -55,6 +54,18 @@ Conflict resolution is based on the following principle: explicit wins over impl
 For example, if a file in the folder has already been explicitly tagged with a label, that file doesn't inherit the label of the parent.
 For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -357,5 +368,4 @@ Read-write.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriverootretentionlabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriverootretentionlabel)
-
 

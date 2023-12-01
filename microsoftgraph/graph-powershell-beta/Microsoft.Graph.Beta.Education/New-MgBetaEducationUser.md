@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationuser
 schema: 2.0.0
-ms.prod: education
 ---
 
 # New-MgBetaEducationUser
@@ -11,9 +10,6 @@ ms.prod: education
 ## SYNOPSIS
 Create a new user.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgEducationUser](/powershell/module/Microsoft.Graph.Education/New-MgEducationUser?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,10 +43,11 @@ Create a new user.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.educationUser"
@@ -104,7 +101,7 @@ $params = @{
 			"@odata.type" = "microsoft.graph.provisionedPlan"
 		}
 	)
-	refreshTokensValidFromDateTime = [System.DateTime]::Parse("String (timestamp)")
+	refreshTokensValidFromDateTime = \[System.DateTime\]::Parse("String (timestamp)")
 	showInAddressList = "Boolean"
 	surname = "String"
 	usageLocation = "String"
@@ -116,11 +113,6 @@ $params = @{
 }
 
 New-MgBetaEducationUser -BodyParameter $params
-```
-This example shows how to use the New-MgBetaEducationUser Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -39143,7 +39135,6 @@ Read-only.
     \[UserId \<String\>\]: UserId associated with this device registration record.
 
 ## RELATED LINKS
-[New-MgEducationUser](/powershell/module/Microsoft.Graph.Education/New-MgEducationUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationuser)
 

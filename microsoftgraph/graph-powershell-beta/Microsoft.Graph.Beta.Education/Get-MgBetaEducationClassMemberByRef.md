@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassmemberbyref
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Get-MgBetaEducationClassMemberByRef
@@ -12,9 +11,6 @@ ms.prod: education
 Retrieve the teachers and students for a class.
 Note that if the delegated token is used, members can only be seen by other members of the class.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEducationClassMemberByRef](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassMemberByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,6 +26,16 @@ Note that if the delegated token is used, members can only be seen by other memb
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -180,7 +186,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgEducationClassMemberByRef](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassMemberByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassmemberbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassmemberbyref)
 

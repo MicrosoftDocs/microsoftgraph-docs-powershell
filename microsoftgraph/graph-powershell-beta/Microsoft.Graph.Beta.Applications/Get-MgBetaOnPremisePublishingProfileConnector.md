@@ -1,10 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileconnector
 schema: 2.0.0
-ms.prod: applications
-ms.prod: applications
 ---
 
 # Get-MgBetaOnPremisePublishingProfileConnector
@@ -37,20 +35,18 @@ Get-MgBetaOnPremisePublishingProfileConnector -InputObject <IApplicationsIdentit
 Retrieve the properties and relationships of a connector object.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaOnPremisePublishingProfileConnector Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Applications
 Get-MgBetaOnPremisePublishingProfileConnector -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -ConnectorId $connectorId
 ```
-This example shows how to use the Get-MgBetaOnPremisePublishingProfileConnector Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaOnPremisePublishingProfileConnector Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.Applications
 Get-MgBetaOnPremisePublishingProfileConnector -OnPremisesPublishingProfileId $onPremisesPublishingProfileId
 ```
-This example shows how to use the Get-MgBetaOnPremisePublishingProfileConnector Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

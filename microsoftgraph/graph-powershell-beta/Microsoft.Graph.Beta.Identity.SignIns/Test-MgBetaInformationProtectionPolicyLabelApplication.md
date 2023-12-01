@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetainformationprotectionpolicylabelapplication
 schema: 2.0.0
-ms.prod: security
 ---
 
 # Test-MgBetaInformationProtectionPolicyLabelApplication
@@ -35,8 +34,9 @@ This API is useful when a label should be set manually or explicitly by a user o
 Given contentInfo, which includes existing content metadata key/value pairs, and labelingOptions as an input, the API returns an informationProtectionAction object that contains one of more of the following:  This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Test-MgBetaInformationProtectionPolicyLabelApplication Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	ContentInfo = @{
@@ -99,8 +99,6 @@ $params = @{
 }
 Test-MgBetaInformationProtectionPolicyLabelApplication -BodyParameter $params
 ```
-This example shows how to use the Test-MgBetaInformationProtectionPolicyLabelApplication Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

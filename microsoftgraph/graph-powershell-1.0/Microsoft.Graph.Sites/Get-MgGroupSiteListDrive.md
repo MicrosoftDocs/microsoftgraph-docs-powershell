@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistdrive
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Allows access to the list as a drive resource with driveItems.
 Only present on document libraries.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteListDrive](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListDrive?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,6 +28,22 @@ Get-MgGroupSiteListDrive -InputObject <ISitesIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 Allows access to the list as a drive resource with driveItems.
 Only present on document libraries.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -181,8 +194,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupSiteListDrive](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListDrive?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistdrive)
-
 

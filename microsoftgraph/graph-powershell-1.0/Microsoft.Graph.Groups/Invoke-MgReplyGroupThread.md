@@ -1,20 +1,16 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreplygroupthread
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # Invoke-MgReplyGroupThread
 
 ## SYNOPSIS
 Reply to a thread in a group conversation and add a new post to it.
-You can specify the parent conversation in the request, or, you can specify just the thread without the parent conversation.
+You can specify the parent conversation \nin the request, or, you can specify just the thread without the parent conversation.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaReplyGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaReplyGroupThread?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -46,12 +42,13 @@ Invoke-MgReplyGroupThread -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Reply to a thread in a group conversation and add a new post to it.
-You can specify the parent conversation in the request, or, you can specify just the thread without the parent conversation.
+You can specify the parent conversation \nin the request, or, you can specify just the thread without the parent conversation.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgReplyGroupThread Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Groups
 $params = @{
 	Post = @{
@@ -63,10 +60,9 @@ $params = @{
 }
 Invoke-MgReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
 ```
-This example shows how to use the Invoke-MgReplyGroupThread Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Invoke-MgReplyGroupThread Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Groups
 $params = @{
 	Post = @{
@@ -85,10 +81,9 @@ $params = @{
 }
 Invoke-MgReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
 ```
-This example shows how to use the Invoke-MgReplyGroupThread Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 3: Using the Invoke-MgReplyGroupThread Cmdlet
-```powershell
+
+### EXAMPLE 3
+```
 Import-Module Microsoft.Graph.Groups
 $params = @{
 	Post = @{
@@ -110,10 +105,9 @@ $params = @{
 }
 Invoke-MgReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
 ```
-This example shows how to use the Invoke-MgReplyGroupThread Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 4: Using the Invoke-MgReplyGroupThread Cmdlet
-```powershell
+
+### EXAMPLE 4
+```
 Import-Module Microsoft.Graph.Groups
 $params = @{
 	Post = @{
@@ -135,8 +129,6 @@ $params = @{
 }
 Invoke-MgReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
 ```
-This example shows how to use the Invoke-MgReplyGroupThread Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -465,7 +457,6 @@ Read-only.
     \[Value \<String\>\]: A property value.
 
 ## RELATED LINKS
-[Invoke-MgBetaReplyGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaReplyGroupThread?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreplygroupthread](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreplygroupthread)
 

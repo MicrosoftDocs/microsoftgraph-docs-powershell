@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitelistoperation
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to operations for groups
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupSiteListOperation](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteListOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,6 +44,22 @@ New-MgGroupSiteListOperation -InputObject <ISitesIdentity>
 
 ## DESCRIPTION
 Create new navigation property to operations for groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -434,8 +447,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaGroupSiteListOperation](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteListOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitelistoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitelistoperation)
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversationthreadpostinreplytoattachmentuploadsession
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgGroupConversationThreadPostInReplyToAttachmentUploadSession
@@ -18,9 +17,6 @@ Request headers for each PUT operation let you specify the exact range of bytes 
 This allows transfer to be resumed, in case the network connection is dropped during upload.
 The following are the steps to attach a file to an Outlook item using an upload session: See attach large files to Outlook messages or events for an example.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupConversationThreadPostInReplyToAttachmentUploadSession](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupConversationThreadPostInReplyToAttachmentUploadSession?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -65,10 +61,11 @@ The following are the steps to attach a file to an Outlook item using an upload 
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Create an upload session to add a large attachment to a draft message
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Users.Actions
+```
 
 $params = @{
 	AttachmentItem = @{
@@ -80,15 +77,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserMessageAttachmentUploadSession -UserId $userId -MessageId $messageId -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgGroupConversationThreadPostInReplyToAttachmentUploadSession Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Create an upload session to add a large in-line attachment to a draft message
-
-```powershell
 Import-Module Microsoft.Graph.Users.Actions
+```
 
 $params = @{
 	AttachmentItem = @{
@@ -102,11 +95,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserMessageAttachmentUploadSession -UserId $userId -MessageId $messageId -BodyParameter $params
-```
-This example shows how to use the New-MgGroupConversationThreadPostInReplyToAttachmentUploadSession Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -350,7 +338,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
-[New-MgBetaGroupConversationThreadPostInReplyToAttachmentUploadSession](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupConversationThreadPostInReplyToAttachmentUploadSession?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversationthreadpostinreplytoattachmentuploadsession](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversationthreadpostinreplytoattachmentuploadsession)
 

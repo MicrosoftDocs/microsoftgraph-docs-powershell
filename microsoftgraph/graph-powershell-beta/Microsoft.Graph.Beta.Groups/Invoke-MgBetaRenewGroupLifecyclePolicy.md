@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetarenewgrouplifecyclepolicy
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # Invoke-MgBetaRenewGroupLifecyclePolicy
@@ -34,16 +33,15 @@ When a group is renewed, the group expiration is extended by the number of days 
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaRenewGroupLifecyclePolicy Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Groups
 $params = @{
 	GroupId = "ffffffff-ffff-ffff-ffff-ffffffffffff"
 }
 Invoke-MgBetaRenewGroupLifecyclePolicy -BodyParameter $params
 ```
-This example shows how to use the Invoke-MgBetaRenewGroupLifecyclePolicy Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

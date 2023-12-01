@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritytriggertyperetentioneventtype
 schema: 2.0.0
-ms.prod: security
 ---
 
 # New-MgBetaSecurityTriggerTypeRetentionEventType
@@ -11,9 +10,6 @@ ms.prod: security
 ## SYNOPSIS
 Create a new retentionEventType object.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityTriggerTypeRetentionEventType](/powershell/module/Microsoft.Graph.Security/New-MgSecurityTriggerTypeRetentionEventType?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -36,11 +32,11 @@ Create a new retentionEventType object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.security.retentionEventType"
@@ -52,10 +48,6 @@ $params = @{
 }
 
 New-MgBetaSecurityTriggerTypeRetentionEventType -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaSecurityTriggerTypeRetentionEventType Cmdlet.
-
 
 ## PARAMETERS
 
@@ -287,7 +279,6 @@ This property is read-only.
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
 ## RELATED LINKS
-[New-MgSecurityTriggerTypeRetentionEventType](/powershell/module/Microsoft.Graph.Security/New-MgSecurityTriggerTypeRetentionEventType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritytriggertyperetentioneventtype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritytriggertyperetentioneventtype)
 

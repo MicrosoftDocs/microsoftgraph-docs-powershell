@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilepublication
 schema: 2.0.0
-ms.prod: people
 ---
 
 # Update-MgBetaUserProfilePublication
@@ -52,8 +51,9 @@ Update the properties of an itemPublication object in a user's profile.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaUserProfilePublication Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.People
 $params = @{
 	Publisher = "International Association of Branding Management Publishing"
@@ -61,8 +61,6 @@ $params = @{
 }
 Update-MgBetaUserProfilePublication -UserId $userId -ItemPublicationId $itemPublicationId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaUserProfilePublication Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/set-mgsiteanalyticitemactivitystatactivitydriveitemcontent
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The content stream, if the item represents a file.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaSiteAnalyticItemActivityStatActivityDriveItemContent](/powershell/module/Microsoft.Graph.Beta.Sites/Set-MgBetaSiteAnalyticItemActivityStatActivityDriveItemContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,6 +27,18 @@ Set-MgSiteAnalyticItemActivityStatActivityDriveItemContent -InputObject <ISitesI
 
 ## DESCRIPTION
 The content stream, if the item represents a file.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -214,8 +223,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgBetaSiteAnalyticItemActivityStatActivityDriveItemContent](/powershell/module/Microsoft.Graph.Beta.Sites/Set-MgBetaSiteAnalyticItemActivityStatActivityDriveItemContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/set-mgsiteanalyticitemactivitystatactivitydriveitemcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/set-mgsiteanalyticitemactivitystatactivitydriveitemcontent)
-
 

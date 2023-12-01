@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrivebundle
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # New-MgDriveBundle
 
 ## SYNOPSIS
 Create new navigation property to bundles for drives
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDriveBundle](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveBundle?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -76,6 +72,18 @@ New-MgDriveBundle -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphD
 
 ## DESCRIPTION
 Create new navigation property to bundles for drives
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -28990,8 +28998,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[New-MgBetaDriveBundle](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveBundle?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrivebundle](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrivebundle)
-
 

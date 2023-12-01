@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetashareteamschedule
@@ -8,14 +8,11 @@ schema: 2.0.0
 # Invoke-MgBetaShareTeamSchedule
 
 ## SYNOPSIS
-Share a schedule time range with schedule members.Make the collections of shift, openshift and timeOff items in the specified time range of the schedule viewable by the specified team members, including employees and managers.Each shift, openshift and timeOff instance in a schedule supports a draft version and a shared version of the item.
+Share a schedule time range with schedule members.\nMake the collections of shift, openshift and timeOff items in the specified time range of the schedule viewable by the specified team members, including employees and managers.\nEach shift, openshift and timeOff instance in a schedule supports a draft version and a shared version of the item.
 The draft version is viewable by only managers, and the shared version is viewable by employees and managers.
 For each shift, openshift and timeOff instance in the specified time range, the share action updates the shared version from the draft version, so that in addition to managers, employees can also view the most current information about the item.
 The notifyTeam parameter further specifies which employees can view the item.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgShareTeamSchedule](/powershell/module/Microsoft.Graph.Teams/Invoke-MgShareTeamSchedule?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,30 +44,26 @@ Invoke-MgBetaShareTeamSchedule -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Share a schedule time range with schedule members.Make the collections of shift, openshift and timeOff items in the specified time range of the schedule viewable by the specified team members, including employees and managers.Each shift, openshift and timeOff instance in a schedule supports a draft version and a shared version of the item.
+Share a schedule time range with schedule members.\nMake the collections of shift, openshift and timeOff items in the specified time range of the schedule viewable by the specified team members, including employees and managers.\nEach shift, openshift and timeOff instance in a schedule supports a draft version and a shared version of the item.
 The draft version is viewable by only managers, and the shared version is viewable by employees and managers.
 For each shift, openshift and timeOff instance in the specified time range, the share action updates the shared version from the draft version, so that in addition to managers, employees can also view the most current information about the item.
 The notifyTeam parameter further specifies which employees can view the item.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	notifyTeam = $true
-	startDateTime = [System.DateTime]::Parse("2018-10-08T00:00:00.000Z")
-	endDateTime = [System.DateTime]::Parse("2018-10-15T00:00:00.000Z")
+	startDateTime = \[System.DateTime\]::Parse("2018-10-08T00:00:00.000Z")
+	endDateTime = \[System.DateTime\]::Parse("2018-10-15T00:00:00.000Z")
 }
 
 Invoke-MgBetaShareTeamSchedule -TeamId $teamId -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgBetaShareTeamSchedule Cmdlet.
-
 
 ## PARAMETERS
 
@@ -290,7 +283,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Invoke-MgShareTeamSchedule](/powershell/module/Microsoft.Graph.Teams/Invoke-MgShareTeamSchedule?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetashareteamschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetashareteamschedule)
 

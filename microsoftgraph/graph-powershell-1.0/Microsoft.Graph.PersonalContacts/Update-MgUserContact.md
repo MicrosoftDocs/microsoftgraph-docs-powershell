@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontact
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Update-MgUserContact
@@ -11,9 +10,6 @@ ms.prod: outlook
 ## SYNOPSIS
 Update the properties of a contact object.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Update-MgBetaUserContact?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -72,10 +68,11 @@ Update the properties of a contact object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.PersonalContacts
+```
 
 $params = @{
 	homeAddress = @{
@@ -84,16 +81,11 @@ $params = @{
 		state = "WA"
 		postalCode = "98121"
 	}
-	birthday = [System.DateTime]::Parse("1974-07-22")
+	birthday = \[System.DateTime\]::Parse("1974-07-22")
 }
 
 # A UPN can also be used as -UserId.
 Update-MgUserContact -UserId $userId -ContactId $contactId -BodyParameter $params
-```
-This example shows how to use the Update-MgUserContact Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -1030,7 +1022,6 @@ Read-only.
   \[Value \<String\>\]: A property value.
 
 ## RELATED LINKS
-[Update-MgBetaUserContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Update-MgBetaUserContact?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontact](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontact)
 

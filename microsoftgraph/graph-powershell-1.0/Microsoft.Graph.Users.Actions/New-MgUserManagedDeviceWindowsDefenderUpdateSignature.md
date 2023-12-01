@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mgusermanageddevicewindowsdefenderupdatesignature
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # New-MgUserManagedDeviceWindowsDefenderUpdateSignature
 
 ## SYNOPSIS
 Not yet documented
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserManagedDeviceWindowsDefenderUpdateSignature](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserManagedDeviceWindowsDefenderUpdateSignature?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,6 +26,22 @@ New-MgUserManagedDeviceWindowsDefenderUpdateSignature -InputObject <IUsersAction
 
 ## DESCRIPTION
 Not yet documented
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -172,8 +184,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaUserManagedDeviceWindowsDefenderUpdateSignature](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserManagedDeviceWindowsDefenderUpdateSignature?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mgusermanageddevicewindowsdefenderupdatesignature](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mgusermanageddevicewindowsdefenderupdatesignature)
-
 

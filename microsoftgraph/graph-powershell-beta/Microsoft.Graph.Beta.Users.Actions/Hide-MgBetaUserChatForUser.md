@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/hide-mgbetauserchatforuser
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Hide-MgBetaUserChatForUser
@@ -11,9 +10,6 @@ ms.prod: microsoft-teams
 ## SYNOPSIS
 Hide a chat for a user.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Hide-MgUserChatForUser](/powershell/module/Microsoft.Graph.Users.Actions/Hide-MgUserChatForUser?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -48,6 +44,22 @@ Hide-MgBetaUserChatForUser -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Hide a chat for a user.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -282,8 +294,6 @@ For example, if a user changes their display name, the API might show the new va
   \[UserIdentityType \<String\>\]: teamworkUserIdentityType
 
 ## RELATED LINKS
-[Hide-MgUserChatForUser](/powershell/module/Microsoft.Graph.Users.Actions/Hide-MgUserChatForUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/hide-mgbetauserchatforuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/hide-mgbetauserchatforuser)
-
 

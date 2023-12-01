@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationuserassignmentrubric
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Update-MgBetaEducationUserAssignmentRubric
@@ -12,9 +11,6 @@ ms.prod: education
 Attach an existing educationRubric object to an educationAssignment.
 Only teachers can perform this operation.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgEducationUserAssignmentRubric](/powershell/module/Microsoft.Graph.Education/Update-MgEducationUserAssignmentRubric?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -54,6 +50,16 @@ Only teachers can perform this operation.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -412,7 +418,6 @@ QUALITIES \<IMicrosoftGraphRubricQuality\[\]\>: The collection of qualities maki
 Weights must add up to 100.
 
 ## RELATED LINKS
-[Update-MgEducationUserAssignmentRubric](/powershell/module/Microsoft.Graph.Education/Update-MgEducationUserAssignmentRubric?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationuserassignmentrubric](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationuserassignmentrubric)
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.ChangeNotifications-help.xml
 Module Name: Microsoft.Graph.Beta.ChangeNotifications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/remove-mgbetasubscription
 schema: 2.0.0
-ms.prod: change-notifications
 ---
 
 # Remove-MgBetaSubscription
@@ -12,9 +11,6 @@ ms.prod: change-notifications
 Delete a subscription.
 For the list of resources that support subscribing to change notifications, see the table in the Permissions section.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgSubscription](/powershell/module/Microsoft.Graph.ChangeNotifications/Remove-MgSubscription?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -36,17 +32,13 @@ For the list of resources that support subscribing to change notifications, see 
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.ChangeNotifications
+```
 
 Remove-MgBetaSubscription -SubscriptionId $subscriptionId
-```
-This example shows how to use the Remove-MgBetaSubscription Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -161,7 +153,6 @@ INPUTOBJECT \<IChangeNotificationsIdentity\>: Identity Parameter
   \[SubscriptionId \<String\>\]: The unique identifier of subscription
 
 ## RELATED LINKS
-[Remove-MgSubscription](/powershell/module/Microsoft.Graph.ChangeNotifications/Remove-MgSubscription?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/remove-mgbetasubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/remove-mgbetasubscription)
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mguserplannerplan
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # Get-MgUserPlannerPlan
@@ -11,9 +10,6 @@ ms.prod: planner
 ## SYNOPSIS
 Retrieve a list of plannerplan objects shared with a user object.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaUserPlannerPlan?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,18 +24,14 @@ Retrieve a list of plannerplan objects shared with a user object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Planner
+```
 
 # A UPN can also be used as -UserId.
 Get-MgUserPlannerPlan -UserId $userId
-
-```
-This example shows how to use the Get-MgUserPlannerPlan Cmdlet.
-
 
 ## PARAMETERS
 
@@ -220,7 +212,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaUserPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaUserPlannerPlan?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mguserplannerplan](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mguserplannerplan)
 

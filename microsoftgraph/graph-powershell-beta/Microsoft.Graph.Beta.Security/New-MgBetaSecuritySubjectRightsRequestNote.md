@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritysubjectrightsrequestnote
 schema: 2.0.0
-ms.prod: compliance
 ---
 
 # New-MgBetaSecuritySubjectRightsRequestNote
@@ -11,9 +10,6 @@ ms.prod: compliance
 ## SYNOPSIS
 Create a new authoredNote object.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecuritySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Security/New-MgSecuritySubjectRightsRequestNote?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -48,6 +44,16 @@ Create a new authoredNote object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -334,7 +340,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[New-MgSecuritySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Security/New-MgSecuritySubjectRightsRequestNote?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritysubjectrightsrequestnote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritysubjectrightsrequestnote)
 

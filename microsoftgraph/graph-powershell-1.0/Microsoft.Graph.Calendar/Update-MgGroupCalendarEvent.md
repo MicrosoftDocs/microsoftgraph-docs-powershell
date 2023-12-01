@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mggroupcalendarevent
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # Update-MgGroupCalendarEvent
@@ -11,9 +10,6 @@ ms.prod: groups
 ## SYNOPSIS
 Update an event object.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroupCalendarEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaGroupCalendarEvent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -76,6 +72,18 @@ Update-MgGroupCalendarEvent -InputObject <ICalendarIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Update an event object.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -1830,8 +1838,6 @@ START \<IMicrosoftGraphDateTimeZone\>: dateTimeTimeZone
 See below for more possible values.
 
 ## RELATED LINKS
-[Update-MgBetaGroupCalendarEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaGroupCalendarEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mggroupcalendarevent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mggroupcalendarevent)
-
 

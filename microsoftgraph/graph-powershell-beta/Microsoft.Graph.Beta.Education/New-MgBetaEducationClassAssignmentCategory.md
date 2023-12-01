@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentcategory
 schema: 2.0.0
-ms.prod: education
 ---
 
 # New-MgBetaEducationClassAssignmentCategory
@@ -12,9 +11,6 @@ ms.prod: education
 Create a new educationCategory on an educationClass.
 Only teachers can perform this operation.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgEducationClassAssignmentCategory](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassAssignmentCategory?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -75,21 +71,17 @@ Only teachers can perform this operation.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 $params = @{
 	displayName = "Quizzes"
 }
 
 New-MgBetaEducationClassAssignmentCategory -EducationClassId $educationClassId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaEducationClassAssignmentCategory Cmdlet.
-
 
 ## PARAMETERS
 
@@ -274,7 +266,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
-[New-MgEducationClassAssignmentCategory](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassAssignmentCategory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentcategory)
 

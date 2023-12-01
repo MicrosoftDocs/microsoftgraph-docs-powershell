@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaaccessreview
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # New-MgBetaAccessReview
@@ -39,8 +38,9 @@ After making this request, the caller should create a programControl, to link th
  This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaAccessReview Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
 	DisplayName = "TestReview"
@@ -81,8 +81,6 @@ $params = @{
 }
 New-MgBetaAccessReview -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaAccessReview Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

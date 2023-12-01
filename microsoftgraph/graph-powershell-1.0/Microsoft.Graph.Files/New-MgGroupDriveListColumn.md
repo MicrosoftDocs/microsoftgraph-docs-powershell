@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdrivelistcolumn
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # New-MgGroupDriveListColumn
@@ -11,9 +10,6 @@ ms.prod: sites-and-lists
 ## SYNOPSIS
 Create a column for a list\]\[list\] with a request that specifies a \[columnDefinition\]\[columnDefinition\].
 This API is available in the following \[national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveListColumn?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -64,6 +60,22 @@ New-MgGroupDriveListColumn -InputObject <IFilesIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Create a column for a list\]\[list\] with a request that specifies a \[columnDefinition\]\[columnDefinition\].
 This API is available in the following \[national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -1202,8 +1214,6 @@ User will be prompted with this message if validation fails.
 For examples, see Examples of common formulas in lists.
 
 ## RELATED LINKS
-[New-MgBetaGroupDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveListColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdrivelistcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdrivelistcolumn)
-
 

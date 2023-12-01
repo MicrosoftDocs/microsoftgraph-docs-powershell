@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriverootversion
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property versions in groups
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroupDriveRootVersion](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveRootVersion?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -45,6 +42,22 @@ Update-MgGroupDriveRootVersion -InputObject <IFilesIdentity> -BodyParameter <IMi
 
 ## DESCRIPTION
 Update the navigation property versions in groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -364,8 +377,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaGroupDriveRootVersion](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveRootVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriverootversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriverootversion)
-
 

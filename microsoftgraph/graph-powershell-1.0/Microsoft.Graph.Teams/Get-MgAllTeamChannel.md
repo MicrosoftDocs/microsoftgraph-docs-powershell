@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgallteamchannel
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Get-MgAllTeamChannel
 
 ## SYNOPSIS
 List of channels either hosted in or shared with the team (incoming channels).
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaAllTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaAllTeamChannel?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -39,28 +35,20 @@ Get-MgAllTeamChannel -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] 
 List of channels either hosted in or shared with the team (incoming channels).
 
 ## EXAMPLES
-### Example 1: List all channels
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 Get-MgAllTeamChannel -TeamId $teamId
 
+### EXAMPLE 2
 ```
-This example will list all channels
-
-### Example 2: List all shared channels
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
-
-Get-MgAllTeamChannel -TeamId $teamId -Filter "membershipType eq 'shared'" 
-
 ```
-This example will list all shared channels
 
+Get-MgAllTeamChannel -TeamId $teamId -Filter "membershipType eq 'shared'"
 
 ## PARAMETERS
 
@@ -311,7 +299,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaAllTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaAllTeamChannel?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgallteamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgallteamchannel)
 

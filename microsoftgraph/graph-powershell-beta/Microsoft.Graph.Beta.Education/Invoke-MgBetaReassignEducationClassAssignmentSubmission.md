@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetareassigneducationclassassignmentsubmission
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Invoke-MgBetaReassignEducationClassAssignmentSubmission
@@ -16,9 +15,6 @@ This means that the reassigned status will be mapped to the returned status, and
 If the header Prefer: include-unknown-enum-members is provided, a reassigned submission retains the reassigned status.
 For details, see the examples section.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgReassignEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Invoke-MgReassignEducationClassAssignmentSubmission?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -44,28 +40,20 @@ For details, see the examples section.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Request without optional Prefer header
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 Invoke-MgBetaReassignEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
 
+### EXAMPLE 2
 ```
-This example will request without optional prefer header
-
-### Example 2: Request with Prefer header
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 Invoke-MgBetaReassignEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
-
-```
-This example will request with prefer header
-
 
 ## PARAMETERS
 
@@ -196,7 +184,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Invoke-MgReassignEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Invoke-MgReassignEducationClassAssignmentSubmission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetareassigneducationclassassignmentsubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetareassigneducationclassassignmentsubmission)
 

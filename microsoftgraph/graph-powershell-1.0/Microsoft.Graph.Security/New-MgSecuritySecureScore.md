@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritysecurescore
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to secureScores for security
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecuritySecureScore](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecuritySecureScore?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -33,17 +30,13 @@ New-MgSecuritySecureScore -BodyParameter <IMicrosoftGraphSecureScore> [-WhatIf] 
 Create new navigation property to secureScores for security
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Security
+```
 
 Get-MgSecuritySecureScore -Top 1
-```
-This example shows how to use the New-MgSecuritySecureScore Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -343,7 +336,6 @@ Required
 Required
 
 ## RELATED LINKS
-[New-MgBetaSecuritySecureScore](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecuritySecureScore?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritysecurescore](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritysecurescore)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintprinterjobtask
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property tasks in print
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPrintPrinterJobTask](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintPrinterJobTask?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45,6 +42,18 @@ Update-MgBetaPrintPrinterJobTask -InputObject <IDevicesCloudPrintIdentity>
 
 ## DESCRIPTION
 Update the navigation property tasks in print
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -383,8 +392,6 @@ Read-only.
   \[Event \<String\>\]: printEvent
 
 ## RELATED LINKS
-[Update-MgPrintPrinterJobTask](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintPrinterJobTask?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintprinterjobtask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintprinterjobtask)
-
 

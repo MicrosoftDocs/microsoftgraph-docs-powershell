@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mganswercommunicationcall
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Invoke-MgAnswerCommunicationCall
@@ -15,9 +14,6 @@ If an invite to a group call is received, the notification will contain the chat
 The bot is expected to answer, reject, or redirect the call before the call times out.
 The current timeout value is 15 seconds for regular scenarios, and 5 seconds for policy-based recording scenarios.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaAnswerCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaAnswerCommunicationCall?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -60,17 +56,17 @@ The current timeout value is 15 seconds for regular scenarios, and 5 seconds for
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Answer a Peer-to-Peer VoIP call with service hosted media
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	callbackUri = "callbackUri-value"
 	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		blob = "<Media Session Configuration Blob>"
+		blob = "\<Media Session Configuration Blob\>"
 	}
 	acceptedModalities = @(
 		"audio"
@@ -84,14 +80,10 @@ $params = @{
 
 Invoke-MgAnswerCommunicationCall -CallId $callId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will answer a peer-to-peer voip call with service hosted media
-
-### Example 2: Answer VOIP call with application hosted media
-
-```powershell
-
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	callbackUri = "https://bot.contoso.com/api/calls"
@@ -107,14 +99,10 @@ $params = @{
 
 Invoke-MgAnswerCommunicationCall -CallId $callId -BodyParameter $params
 
+### EXAMPLE 3
 ```
-This example will answer voip call with application hosted media
-
-### Example 3: Answer a policy-based recording call
-
-```powershell
-
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	callbackUri = "https://bot.contoso.com/api/calls"
@@ -123,15 +111,11 @@ $params = @{
 	)
 	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		blob = "<Media Session Configuration Blob>"
+		blob = "\<Media Session Configuration Blob\>"
 	}
 }
 
 Invoke-MgAnswerCommunicationCall -CallId $callId -BodyParameter $params
-
-```
-This example will answer a policy-based recording call
-
 
 ## PARAMETERS
 
@@ -362,7 +346,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaAnswerCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaAnswerCommunicationCall?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mganswercommunicationcall](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mganswercommunicationcall)
 

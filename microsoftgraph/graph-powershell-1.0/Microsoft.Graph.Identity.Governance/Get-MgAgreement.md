@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgagreement
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get entity from agreements by key
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaAgreement](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaAgreement?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -33,6 +30,22 @@ Get-MgAgreement -InputObject <IIdentityGovernanceIdentity> [-Property <String[]>
 
 ## DESCRIPTION
 Get entity from agreements by key
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -229,8 +242,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[WorkflowVersionNumber \<Int32?\>\]: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgBetaAgreement](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaAgreement?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgagreement](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgagreement)
-
 

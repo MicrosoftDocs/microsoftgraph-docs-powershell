@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriveitemthumbnail
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to thumbnails for drives
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDriveItemThumbnail](/powershell/module/Microsoft.Graph.Files/New-MgDriveItemThumbnail?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -44,6 +41,22 @@ New-MgBetaDriveItemThumbnail -InputObject <IFilesIdentity> -BodyParameter <IMicr
 
 ## DESCRIPTION
 Create new navigation property to thumbnails for drives
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -330,8 +343,6 @@ This is only available when a folder thumbnail is requested.
   \[Width \<Int32?\>\]: The width of the thumbnail, in pixels.
 
 ## RELATED LINKS
-[New-MgDriveItemThumbnail](/powershell/module/Microsoft.Graph.Files/New-MgDriveItemThumbnail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriveitemthumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriveitemthumbnail)
-
 

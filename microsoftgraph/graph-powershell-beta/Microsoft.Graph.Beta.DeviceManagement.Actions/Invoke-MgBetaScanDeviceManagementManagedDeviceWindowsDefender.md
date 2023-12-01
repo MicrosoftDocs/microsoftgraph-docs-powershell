@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetascandevicemanagementmanageddevicewindowsdefender
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action windowsDefenderScan
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgScanDeviceManagementManagedDeviceWindowsDefender](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgScanDeviceManagementManagedDeviceWindowsDefender?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -43,6 +40,18 @@ Invoke-MgBetaScanDeviceManagementManagedDeviceWindowsDefender -InputObject <IDev
 
 ## DESCRIPTION
 Invoke action windowsDefenderScan
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -243,8 +252,6 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
   \[ZebraFotaDeploymentId \<String\>\]: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
-[Invoke-MgScanDeviceManagementManagedDeviceWindowsDefender](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgScanDeviceManagementManagedDeviceWindowsDefender?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetascandevicemanagementmanageddevicewindowsdefender](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetascandevicemanagementmanageddevicewindowsdefender)
-
 

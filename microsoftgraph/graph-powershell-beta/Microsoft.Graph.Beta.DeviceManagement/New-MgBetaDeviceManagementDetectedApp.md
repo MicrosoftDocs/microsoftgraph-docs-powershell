@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdetectedapp
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to detectedApps for deviceManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementDetectedApp](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDetectedApp?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,6 +28,22 @@ New-MgBetaDeviceManagementDetectedApp -BodyParameter <IMicrosoftGraphDetectedApp
 
 ## DESCRIPTION
 Create new navigation property to detectedApps for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -14970,8 +14983,6 @@ Defaults to setting on client device.
 Defaults to setting on client device.
 
 ## RELATED LINKS
-[New-MgDeviceManagementDetectedApp](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDetectedApp?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdetectedapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdetectedapp)
-
 

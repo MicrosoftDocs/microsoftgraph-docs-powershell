@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteexternalcolumn
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get externalColumns from groups
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteExternalColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteExternalColumn?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -36,6 +33,22 @@ Get-MgGroupSiteExternalColumn -InputObject <ISitesIdentity> [-ExpandProperty <St
 
 ## DESCRIPTION
 Get externalColumns from groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -307,8 +320,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupSiteExternalColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteExternalColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteexternalcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteexternalcolumn)
-
 

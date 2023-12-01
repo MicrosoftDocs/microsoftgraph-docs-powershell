@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetaanswercommunicationcall
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Invoke-MgBetaAnswerCommunicationCall
@@ -16,9 +15,6 @@ The bot is expected to answer, reject or redirect the call before the call times
 The current timeout value is 15 seconds.
 The current timeout value is 15 seconds for regular scenarios, and 5 seconds for policy-based recording scenarios.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgAnswerCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgAnswerCommunicationCall?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -62,17 +58,17 @@ The current timeout value is 15 seconds for regular scenarios, and 5 seconds for
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	callbackUri = "callbackUri-value"
 	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		blob = "<Media Session Configuration Blob>"
+		blob = "\<Media Session Configuration Blob\>"
 	}
 	acceptedModalities = @(
 		"audio"
@@ -86,14 +82,10 @@ $params = @{
 
 Invoke-MgBetaAnswerCommunicationCall -CallId $callId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example shows how to use the Invoke-MgBetaAnswerCommunicationCall Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	callbackUri = "https://bot.contoso.com/api/calls"
@@ -102,15 +94,11 @@ $params = @{
 	)
 	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		blob = "<Media Session Configuration Blob>"
+		blob = "\<Media Session Configuration Blob\>"
 	}
 }
 
 Invoke-MgBetaAnswerCommunicationCall -CallId $callId -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgBetaAnswerCommunicationCall Cmdlet.
-
 
 ## PARAMETERS
 
@@ -352,7 +340,6 @@ MEDIACONFIG \<IMicrosoftGraphMediaConfig\>: mediaConfig
   \[RemoveFromDefaultAudioGroup \<Boolean?\>\]:
 
 ## RELATED LINKS
-[Invoke-MgAnswerCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgAnswerCommunicationCall?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetaanswercommunicationcall](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetaanswercommunicationcall)
 

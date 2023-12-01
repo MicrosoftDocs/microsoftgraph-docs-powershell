@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharelistitem
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property listItem in shares
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -93,6 +90,22 @@ Update-MgShareListItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftG
 
 ## DESCRIPTION
 Update the navigation property listItem in shares
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -23331,8 +23344,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharelistitem)
-
 

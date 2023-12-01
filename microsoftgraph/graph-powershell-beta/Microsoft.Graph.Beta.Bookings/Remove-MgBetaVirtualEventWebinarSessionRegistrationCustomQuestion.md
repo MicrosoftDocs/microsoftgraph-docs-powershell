@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetavirtualeventwebinarsessionregistrationcustomquestion
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Remove-MgBetaVirtualEventWebinarSessionRegistrationCustomQuestion
@@ -30,6 +29,18 @@ Remove-MgBetaVirtualEventWebinarSessionRegistrationCustomQuestion -InputObject <
 ## DESCRIPTION
 Delete a custom registration question from a meetingRegistration object on behalf of the organizer.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -198,5 +209,4 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetavirtualeventwebinarsessionregistrationcustomquestion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetavirtualeventwebinarsessionregistrationcustomquestion)
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclass
 schema: 2.0.0
-ms.prod: education
 ---
 
 # New-MgBetaEducationClass
@@ -15,9 +14,6 @@ When you use this API to create a class, it will add special properties to the g
 Please note that this API only creates the universal group and does not create a team.
 Microsoft Teams provides a user interface for teachers to create teams for their own classes using the groups created by this API.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgEducationClass](/powershell/module/Microsoft.Graph.Education/New-MgEducationClass?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -52,10 +48,11 @@ Microsoft Teams provides a user interface for teachers to create teams for their
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.educationClass"
@@ -77,11 +74,6 @@ $params = @{
 }
 
 New-MgBetaEducationClass -BodyParameter $params
-```
-This example shows how to use the New-MgBetaEducationClass Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -38775,7 +38767,6 @@ TERM \<IMicrosoftGraphEducationTerm\>: educationTerm
   \[StartDate \<DateTime?\>\]: Start of the term.
 
 ## RELATED LINKS
-[New-MgEducationClass](/powershell/module/Microsoft.Graph.Education/New-MgEducationClass?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclass](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclass)
 

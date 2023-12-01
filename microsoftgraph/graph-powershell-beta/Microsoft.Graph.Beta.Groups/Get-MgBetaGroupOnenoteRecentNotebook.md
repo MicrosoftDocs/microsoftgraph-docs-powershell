@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouponenoterecentnotebook
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function getRecentNotebooks
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupOnenoteRecentNotebook](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupOnenoteRecentNotebook?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Get-MgBetaGroupOnenoteRecentNotebook -InputObject <IGroupsIdentity> [-Count] [-F
 
 ## DESCRIPTION
 Invoke function getRecentNotebooks
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -212,8 +225,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgGroupOnenoteRecentNotebook](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupOnenoteRecentNotebook?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouponenoterecentnotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouponenoterecentnotebook)
-
 

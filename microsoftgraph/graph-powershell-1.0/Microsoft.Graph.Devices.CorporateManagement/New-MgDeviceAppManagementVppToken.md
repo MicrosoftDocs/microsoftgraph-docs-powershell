@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementvpptoken
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # New-MgDeviceAppManagementVppToken
 
 ## SYNOPSIS
 Create a new vppToken object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementVppToken](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementVppToken?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -33,6 +29,18 @@ New-MgDeviceAppManagementVppToken -BodyParameter <IMicrosoftGraphVppToken> [-Wha
 
 ## DESCRIPTION
 Create a new vppToken object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -317,8 +325,6 @@ Read-only.
   \[VppTokenAccountType \<VppTokenAccountType?\>\]: Possible types of an Apple Volume Purchase Program token.
 
 ## RELATED LINKS
-[New-MgBetaDeviceAppManagementVppToken](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementVppToken?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementvpptoken](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementvpptoken)
-
 

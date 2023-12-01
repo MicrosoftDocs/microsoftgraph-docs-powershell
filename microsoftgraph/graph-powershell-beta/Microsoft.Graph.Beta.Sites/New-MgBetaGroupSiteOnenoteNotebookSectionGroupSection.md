@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsiteonenotenotebooksectiongroupsection
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # New-MgBetaGroupSiteOnenoteNotebookSectionGroupSection
@@ -11,9 +10,6 @@ ms.prod: onenote
 ## SYNOPSIS
 Create a new section in the specified section group.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteOnenoteNotebookSectionGroupSection](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteOnenoteNotebookSectionGroupSection?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -54,6 +50,18 @@ New-MgBetaGroupSiteOnenoteNotebookSectionGroupSection -InputObject <ISitesIdenti
 ## DESCRIPTION
 Create a new section in the specified section group.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -933,8 +941,6 @@ Nullable.
 Read-only.
 
 ## RELATED LINKS
-[New-MgGroupSiteOnenoteNotebookSectionGroupSection](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteOnenoteNotebookSectionGroupSection?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsiteonenotenotebooksectiongroupsection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsiteonenotenotebooksectiongroupsection)
-
 

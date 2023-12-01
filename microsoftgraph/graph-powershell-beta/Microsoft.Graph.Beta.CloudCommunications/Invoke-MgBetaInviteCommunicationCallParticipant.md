@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetainvitecommunicationcallparticipant
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Invoke-MgBetaInviteCommunicationCallParticipant
@@ -12,9 +11,6 @@ ms.prod: cloud-communications
 Invite participants to the active call.
 For more information about how to handle operations, see commsOperation.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgInviteCommunicationCallParticipant](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgInviteCommunicationCallParticipant?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -52,11 +48,11 @@ For more information about how to handle operations, see commsOperation.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	participants = @(
@@ -78,14 +74,10 @@ $params = @{
 
 Invoke-MgBetaInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example shows how to use the Invoke-MgBetaInviteCommunicationCallParticipant Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	participants = @(
@@ -107,14 +99,10 @@ $params = @{
 
 Invoke-MgBetaInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 
+### EXAMPLE 3
 ```
-This example shows how to use the Invoke-MgBetaInviteCommunicationCallParticipant Cmdlet.
-
-### Example 3: Code snippet
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	participants = @(
@@ -134,14 +122,10 @@ $params = @{
 
 Invoke-MgBetaInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 
+### EXAMPLE 4
 ```
-This example shows how to use the Invoke-MgBetaInviteCommunicationCallParticipant Cmdlet.
-
-### Example 4: Code snippet
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	participants = @(
@@ -163,10 +147,6 @@ $params = @{
 }
 
 Invoke-MgBetaInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgBetaInviteCommunicationCallParticipant Cmdlet.
-
 
 ## PARAMETERS
 
@@ -378,7 +358,6 @@ The call which the target identity is currently a part of.
 For peer-to-peer case, the call will be dropped once the participant is added successfully.
 
 ## RELATED LINKS
-[Invoke-MgInviteCommunicationCallParticipant](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgInviteCommunicationCallParticipant?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetainvitecommunicationcallparticipant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetainvitecommunicationcallparticipant)
 

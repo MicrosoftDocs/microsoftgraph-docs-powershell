@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupownerasapplication
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.application
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupOwnerAsApplication](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupOwnerAsApplication?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -36,6 +33,18 @@ Get-MgGroupOwnerAsApplication -InputObject <IGroupsIdentity> [-ExpandProperty <S
 
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.application
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -305,8 +314,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
-[Get-MgBetaGroupOwnerAsApplication](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupOwnerAsApplication?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupownerasapplication](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupownerasapplication)
-
 

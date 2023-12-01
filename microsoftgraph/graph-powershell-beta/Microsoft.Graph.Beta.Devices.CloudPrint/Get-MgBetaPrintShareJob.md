@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintsharejob
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get jobs from print
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPrintShareJob](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintShareJob?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -36,6 +33,18 @@ Get-MgBetaPrintShareJob -InputObject <IDevicesCloudPrintIdentity> [-ExpandProper
 
 ## DESCRIPTION
 Get jobs from print
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -267,8 +276,6 @@ INPUTOBJECT \<IDevicesCloudPrintIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgPrintShareJob](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintShareJob?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintsharejob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintsharejob)
-
 

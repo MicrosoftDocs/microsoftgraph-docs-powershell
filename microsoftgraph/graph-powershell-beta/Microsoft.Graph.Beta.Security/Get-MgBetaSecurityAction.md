@@ -1,10 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityaction
 schema: 2.0.0
-ms.prod: security
-ms.prod: security
 ---
 
 # Get-MgBetaSecurityAction
@@ -39,20 +37,18 @@ Retrieve the properties and relationships of a securityAction object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaSecurityAction Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityAction -SecurityActionId $securityActionId
 ```
-This example shows how to use the Get-MgBetaSecurityAction Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaSecurityAction Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityAction
 ```
-This example shows how to use the Get-MgBetaSecurityAction Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationtraininglanguagedetail
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property languageDetails in security
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSecurityAttackSimulationTrainingLanguageDetail](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAttackSimulationTrainingLanguageDetail?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -48,6 +45,18 @@ Update-MgBetaSecurityAttackSimulationTrainingLanguageDetail -InputObject <ISecur
 
 ## DESCRIPTION
 Update the navigation property languageDetails in security
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -451,8 +460,6 @@ This property is read-only.
   \[Email \<String\>\]: Email address of the user.
 
 ## RELATED LINKS
-[Update-MgSecurityAttackSimulationTrainingLanguageDetail](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAttackSimulationTrainingLanguageDetail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationtraininglanguagedetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationtraininglanguagedetail)
-
 

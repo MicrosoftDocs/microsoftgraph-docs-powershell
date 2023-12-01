@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriverootlistitem
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property listItem in users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserDriveRootListItem](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveRootListItem?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -57,6 +54,22 @@ Update-MgBetaUserDriveRootListItem -InputObject <IFilesIdentity> -BodyParameter 
 
 ## DESCRIPTION
 Update the navigation property listItem in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -44869,8 +44882,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[Update-MgUserDriveRootListItem](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveRootListItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriverootlistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriverootlistitem)
-
 

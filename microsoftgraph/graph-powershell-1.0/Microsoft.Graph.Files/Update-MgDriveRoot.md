@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveroot
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property root in drives
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRoot?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -75,6 +72,22 @@ Update-MgDriveRoot -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraph
 
 ## DESCRIPTION
 Update the navigation property root in drives
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -28989,8 +29002,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRoot?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveroot)
-
 

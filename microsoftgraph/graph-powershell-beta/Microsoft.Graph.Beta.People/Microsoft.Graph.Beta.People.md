@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.People
 Module Guid: 10ea63e0-7df8-4603-94f3-15b70dc5495f
 Download Help Link: {{ Update Download Link }}

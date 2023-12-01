@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetauserdriverootanalyticitemactivitystat
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to itemActivityStats for users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserDriveRootAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Files/New-MgUserDriveRootAnalyticItemActivityStat?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,6 +46,18 @@ New-MgBetaUserDriveRootAnalyticItemActivityStat -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Create new navigation property to itemActivityStats for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -15148,8 +15157,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[New-MgUserDriveRootAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Files/New-MgUserDriveRootAnalyticItemActivityStat?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetauserdriverootanalyticitemactivitystat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetauserdriverootanalyticitemactivitystat)
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintshare
 schema: 2.0.0
-ms.prod: cloud-printing
 ---
 
 # Update-MgBetaPrintShare
@@ -13,9 +12,6 @@ Update the properties of a printer share.
 This method can be used to swap printers.
 For example, if a physical printer device breaks, an administrator can register a new printer device and update this printerShare to point to the new printer without requiring users to take any action.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPrintShare](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintShare?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -62,10 +58,11 @@ For example, if a physical printer device breaks, an administrator can register 
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
+```
 
 $params = @{
 	displayName = "ShareName"
@@ -74,11 +71,6 @@ $params = @{
 }
 
 Update-MgBetaPrintShare -PrinterShareId $printerShareId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaPrintShare Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -30193,7 +30185,6 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
-[Update-MgPrintShare](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintShare?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintshare](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintshare)
 

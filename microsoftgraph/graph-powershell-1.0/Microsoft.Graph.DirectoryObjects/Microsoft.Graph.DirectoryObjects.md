@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.DirectoryObjects
 Module Guid: 1eb03725-fa8a-4169-b3d5-d04fafd9ac50
 Download Help Link: {{ Update Download Link }}

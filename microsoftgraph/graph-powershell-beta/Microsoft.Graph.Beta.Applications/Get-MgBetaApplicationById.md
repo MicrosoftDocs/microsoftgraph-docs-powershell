@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationbyid
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Get-MgBetaApplicationById
@@ -11,9 +10,6 @@ ms.prod: directory-management
 ## SYNOPSIS
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to: This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgApplicationById](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationById?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -35,6 +31,16 @@ Return the directory objects specified in a list of IDs.
 Some common uses for this function are to: This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -151,7 +157,6 @@ BODYPARAMETER \<IPaths1Hl8AmeApplicationsMicrosoftGraphGetbyidsPostRequestbodyCo
   \[Types \<String\[\]\>\]:
 
 ## RELATED LINKS
-[Get-MgApplicationById](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationById?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationbyid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationbyid)
 

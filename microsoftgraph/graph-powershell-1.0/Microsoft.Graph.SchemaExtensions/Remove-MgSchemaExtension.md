@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.SchemaExtensions-help.xml
 Module Name: Microsoft.Graph.SchemaExtensions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/remove-mgschemaextension
 schema: 2.0.0
-ms.prod: extensions
 ---
 
 # Remove-MgSchemaExtension
@@ -13,9 +12,6 @@ Delete the definition of a schema extension.
 Only the app that created the schema extension (owner app) can delete the schema extension definition, and only when the extension is in the InDevelopment state.
 Deleting a schema extension definition does not affect accessing custom data that has been added to resource instances based on that definition.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaSchemaExtension](/powershell/module/Microsoft.Graph.Beta.SchemaExtensions/Remove-MgBetaSchemaExtension?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,17 +34,13 @@ Deleting a schema extension definition does not affect accessing custom data tha
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.SchemaExtensions
+```
 
 Remove-MgSchemaExtension -SchemaExtensionId $schemaExtensionId
-```
-This example shows how to use the Remove-MgSchemaExtension Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -163,7 +155,6 @@ INPUTOBJECT \<ISchemaExtensionsIdentity\>: Identity Parameter
   \[SchemaExtensionId \<String\>\]: The unique identifier of schemaExtension
 
 ## RELATED LINKS
-[Remove-MgBetaSchemaExtension](/powershell/module/Microsoft.Graph.Beta.SchemaExtensions/Remove-MgBetaSchemaExtension?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/remove-mgschemaextension](https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/remove-mgschemaextension)
 

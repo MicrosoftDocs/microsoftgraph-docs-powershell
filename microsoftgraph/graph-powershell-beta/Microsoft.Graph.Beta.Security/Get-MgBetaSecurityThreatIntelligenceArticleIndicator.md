@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencearticleindicator
 schema: 2.0.0
-ms.prod: security
 ---
 
 # Get-MgBetaSecurityThreatIntelligenceArticleIndicator
@@ -11,9 +10,6 @@ ms.prod: security
 ## SYNOPSIS
 Read the properties and relationships of an articleIndicator object.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceArticleIndicator](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceArticleIndicator?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -58,6 +54,18 @@ Get-MgBetaSecurityThreatIntelligenceArticleIndicator -InputObject <ISecurityIden
 ## DESCRIPTION
 Read the properties and relationships of an articleIndicator object.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -352,8 +360,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgSecurityThreatIntelligenceArticleIndicator](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceArticleIndicator?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencearticleindicator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencearticleindicator)
-
 

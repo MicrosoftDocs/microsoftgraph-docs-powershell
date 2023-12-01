@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritytrigger
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get triggers from security
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecurityTrigger](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityTrigger?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ```
@@ -21,6 +18,22 @@ Get-MgBetaSecurityTrigger [-ExpandProperty <String[]>] [-Property <String[]>] [<
 
 ## DESCRIPTION
 Get triggers from security
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -65,8 +78,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgSecurityTrigger](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityTrigger?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritytrigger](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritytrigger)
-
 

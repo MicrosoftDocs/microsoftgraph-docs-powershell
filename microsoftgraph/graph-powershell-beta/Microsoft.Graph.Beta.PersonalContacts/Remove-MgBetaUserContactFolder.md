@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.Beta.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/remove-mgbetausercontactfolder
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Remove-MgBetaUserContactFolder
@@ -11,9 +10,6 @@ ms.prod: outlook
 ## SYNOPSIS
 Delete contactFolder other than the default contactFolder.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgUserContactFolder](/powershell/module/Microsoft.Graph.PersonalContacts/Remove-MgUserContactFolder?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34,18 +30,14 @@ Delete contactFolder other than the default contactFolder.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.PersonalContacts
+```
 
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserContactFolder -UserId $userId -ContactFolderId $contactFolderId
-```
-This example shows how to use the Remove-MgBetaUserContactFolder Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -179,7 +171,6 @@ INPUTOBJECT \<IPersonalContactsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgUserContactFolder](/powershell/module/Microsoft.Graph.PersonalContacts/Remove-MgUserContactFolder?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/remove-mgbetausercontactfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/remove-mgbetausercontactfolder)
 

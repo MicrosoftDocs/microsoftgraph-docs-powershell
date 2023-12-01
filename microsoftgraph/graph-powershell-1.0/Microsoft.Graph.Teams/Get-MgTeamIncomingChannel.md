@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamincomingchannel
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Get-MgTeamIncomingChannel
 
 ## SYNOPSIS
 List of channels shared with the team.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaTeamIncomingChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamIncomingChannel?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -39,17 +35,13 @@ Get-MgTeamIncomingChannel -InputObject <ITeamsIdentity> [-ExpandProperty <String
 List of channels shared with the team.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 Get-MgTeamIncomingChannel -TeamId $teamId
-
-```
-This example shows how to use the Get-MgTeamIncomingChannel Cmdlet.
-
 
 ## PARAMETERS
 
@@ -300,7 +292,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaTeamIncomingChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamIncomingChannel?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamincomingchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamincomingchannel)
 

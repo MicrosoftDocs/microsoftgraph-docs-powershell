@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mgallgroupsite
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function getAllSites
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaAllGroupSite](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaAllGroupSite?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,6 +26,18 @@ Get-MgAllGroupSite -InputObject <IGroupsIdentity> [-Count] [-Filter <String>] [-
 
 ## DESCRIPTION
 Invoke function getAllSites
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -221,8 +230,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
-[Get-MgBetaAllGroupSite](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaAllGroupSite?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mgallgroupsite](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mgallgroupsite)
-
 

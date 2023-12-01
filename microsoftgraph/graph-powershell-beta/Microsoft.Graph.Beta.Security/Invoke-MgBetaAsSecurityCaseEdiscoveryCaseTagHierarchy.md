@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaassecuritycaseediscoverycasetaghierarchy
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function asHierarchy
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgAsSecurityCaseEdiscoveryCaseTagHierarchy](/powershell/module/Microsoft.Graph.Security/Invoke-MgAsSecurityCaseEdiscoveryCaseTagHierarchy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -33,13 +30,12 @@ Invoke-MgBetaAsSecurityCaseEdiscoveryCaseTagHierarchy -InputObject <ISecurityIde
 Invoke function asHierarchy
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaAsSecurityCaseEdiscoveryCaseTagHierarchy Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
 Invoke-MgBetaAsSecurityCaseEdiscoveryCaseTagHierarchy -EdiscoveryCaseId $ediscoveryCaseId
 ```
-This example shows how to use the Invoke-MgBetaAsSecurityCaseEdiscoveryCaseTagHierarchy Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -273,7 +269,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Invoke-MgAsSecurityCaseEdiscoveryCaseTagHierarchy](/powershell/module/Microsoft.Graph.Security/Invoke-MgAsSecurityCaseEdiscoveryCaseTagHierarchy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaassecuritycaseediscoverycasetaghierarchy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaassecuritycaseediscoverycasetaghierarchy)
 

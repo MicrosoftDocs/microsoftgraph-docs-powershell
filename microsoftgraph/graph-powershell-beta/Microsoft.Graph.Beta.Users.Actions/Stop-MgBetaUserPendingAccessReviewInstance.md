@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/stop-mgbetauserpendingaccessreviewinstance
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Stop-MgBetaUserPendingAccessReviewInstance
@@ -35,6 +34,22 @@ After the access review instance stops, the instance status will be Completed, t
 Stopping an instance will not effect future instances.
 To prevent a recurring access review from starting future instances, update the schedule definition to change its scheduled end date.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -189,5 +204,4 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/stop-mgbetauserpendingaccessreviewinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/stop-mgbetauserpendingaccessreviewinstance)
-
 

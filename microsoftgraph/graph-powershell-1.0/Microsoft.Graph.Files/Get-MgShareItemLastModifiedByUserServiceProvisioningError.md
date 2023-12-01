@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgshareitemlastmodifiedbyuserserviceprovisioningerror
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get serviceProvisioningErrors property value
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaShareItemLastModifiedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareItemLastModifiedByUserServiceProvisioningError?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,6 +28,18 @@ Get-MgShareItemLastModifiedByUserServiceProvisioningError -SharedDriveItemId <St
 
 ## DESCRIPTION
 Get serviceProvisioningErrors property value
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -226,8 +235,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaShareItemLastModifiedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareItemLastModifiedByUserServiceProvisioningError?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgshareitemlastmodifiedbyuserserviceprovisioningerror](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgshareitemlastmodifiedbyuserserviceprovisioningerror)
-
 

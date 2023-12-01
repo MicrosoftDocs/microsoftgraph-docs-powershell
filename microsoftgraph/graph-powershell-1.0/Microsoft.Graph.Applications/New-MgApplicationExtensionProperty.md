@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationextensionproperty
 schema: 2.0.0
-ms.prod: extensions
 ---
 
 # New-MgApplicationExtensionProperty
@@ -11,9 +10,6 @@ ms.prod: extensions
 ## SYNOPSIS
 Create a new directory extension definition, represented by an extensionProperty object.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationExtensionProperty?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,11 +46,11 @@ Create a new directory extension definition, represented by an extensionProperty
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Applications
+```
 
 $params = @{
 	name = "jobGroup"
@@ -66,10 +62,6 @@ $params = @{
 }
 
 New-MgApplicationExtensionProperty -ApplicationId $applicationId -BodyParameter $params
-
-```
-This example shows how to use the New-MgApplicationExtensionProperty Cmdlet.
-
 
 ## PARAMETERS
 
@@ -362,7 +354,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationExtensionProperty?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationextensionproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationextensionproperty)
 

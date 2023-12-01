@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelistcontenttypecolumnlink
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to columnLinks for sites
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSiteListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteListContentTypeColumnLink?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -41,6 +38,22 @@ New-MgSiteListContentTypeColumnLink -InputObject <ISitesIdentity> -BodyParameter
 
 ## DESCRIPTION
 Create new navigation property to columnLinks for sites
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -261,8 +274,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaSiteListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteListContentTypeColumnLink?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelistcontenttypecolumnlink](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelistcontenttypecolumnlink)
-
 

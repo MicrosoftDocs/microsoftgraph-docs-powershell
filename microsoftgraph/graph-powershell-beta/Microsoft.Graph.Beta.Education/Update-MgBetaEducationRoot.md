@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationroot
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update education
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgEducationRoot](/powershell/module/Microsoft.Graph.Education/Update-MgEducationRoot?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,6 +28,22 @@ Update-MgBetaEducationRoot -BodyParameter <IMicrosoftGraphEducationRoot> [-WhatI
 
 ## DESCRIPTION
 Update education
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -38631,8 +38644,6 @@ See standard \[user\] resource for additional details.
 Supports /$filter.
 
 ## RELATED LINKS
-[Update-MgEducationRoot](/powershell/module/Microsoft.Graph.Education/Update-MgEducationRoot?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationroot)
-
 

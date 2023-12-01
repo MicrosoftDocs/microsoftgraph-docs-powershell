@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/restore-mggroupdrivelistitemversion
@@ -11,9 +11,6 @@ schema: 2.0.0
 Restore a previous version of a ListItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the item.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Restore-MgBetaGroupDriveListItemVersion](/powershell/module/Microsoft.Graph.Beta.Groups/Restore-MgBetaGroupDriveListItemVersion?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -33,6 +30,22 @@ Restore-MgGroupDriveListItemVersion -InputObject <IGroupsIdentity> [-PassThru] [
 Restore a previous version of a ListItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the item.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -211,8 +224,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
-[Restore-MgBetaGroupDriveListItemVersion](/powershell/module/Microsoft.Graph.Beta.Groups/Restore-MgBetaGroupDriveListItemVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/restore-mggroupdrivelistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/restore-mggroupdrivelistitemversion)
-
 

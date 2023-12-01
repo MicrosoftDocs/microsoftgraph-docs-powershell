@@ -1,10 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistcontenttypecolumn
 schema: 2.0.0
-ms.prod: sites-and-lists
-ms.prod: sites-and-lists
 ---
 
 # Get-MgBetaShareListContentTypeColumn
@@ -12,9 +10,6 @@ ms.prod: sites-and-lists
 ## SYNOPSIS
 Retrieve the metadata for a site\]\[\], \[list\]\[\] or \[contentType\]\[\] \[column\]\[columnDefinition\].
 This API is available in the following \[national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgShareListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/Get-MgShareListContentTypeColumn?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -40,6 +35,22 @@ Get-MgBetaShareListContentTypeColumn -InputObject <IFilesIdentity> [-ExpandPrope
 ## DESCRIPTION
 Retrieve the metadata for a site\]\[\], \[list\]\[\] or \[contentType\]\[\] \[column\]\[columnDefinition\].
 This API is available in the following \[national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -297,8 +308,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgShareListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/Get-MgShareListContentTypeColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistcontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistcontenttypecolumn)
-
 

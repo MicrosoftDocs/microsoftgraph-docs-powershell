@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriveitem
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Update-MgBetaUserDriveItem
@@ -13,9 +12,6 @@ To move a DriveItem to a new parent item, your app requests to update the parent
 This is a special case of the Update method.\nYour app can combine moving an item to a new container and updating other properties of the item into a single request.
 Items cannot be moved between Drives using this request.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserDriveItem](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveItem?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -86,6 +82,22 @@ To move a DriveItem to a new parent item, your app requests to update the parent
 This is a special case of the Update method.\nYour app can combine moving an item to a new container and updating other properties of the item into a single request.
 Items cannot be moved between Drives using this request.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -53597,8 +53609,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[Update-MgUserDriveItem](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriveitem)
-
 

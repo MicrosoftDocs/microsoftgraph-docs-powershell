@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalendpoint
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property endpoints in servicePrincipals
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaServicePrincipalEndpoint](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalEndpoint?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -45,6 +42,22 @@ Update-MgServicePrincipalEndpoint -InputObject <IApplicationsIdentity> -BodyPara
 
 ## DESCRIPTION
 Update the navigation property endpoints in servicePrincipals
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -316,8 +329,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaServicePrincipalEndpoint](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalEndpoint?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalendpoint](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalendpoint)
-
 

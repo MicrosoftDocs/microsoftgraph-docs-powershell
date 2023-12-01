@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamactivitydetail
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function getTeamsTeamActivityDetail
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportTeamActivityDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamActivityDetail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -39,6 +36,18 @@ Get-MgReportTeamActivityDetail -InputObject <IReportsIdentity> -OutFile <String>
 
 ## DESCRIPTION
 Invoke function getTeamsTeamActivityDetail
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -156,8 +165,6 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
   \[UserRegistrationDetailsId \<String\>\]: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Get-MgBetaReportTeamActivityDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamActivityDetail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamactivitydetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamactivitydetail)
-
 

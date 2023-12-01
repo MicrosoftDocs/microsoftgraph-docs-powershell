@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mguserevent
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgUserEvent
@@ -22,9 +21,6 @@ On behalf of the resource, the server accepts or rejects \nthe meeting request b
 If the meeting is rescheduled, \nthe server automatically updates the event in the resource's calendar.
 Another advantage of setting up a mailbox for a resource is to control scheduling of the resource, for example, only executives\nor their delegates can book a private meeting room.
 If you're organizing an event that involves a meeting location: Additionally, if the meeting location has been set up as a resource, or if the event involves some equipment that has been set up as a resource: This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserEvent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -100,10 +96,11 @@ Another advantage of setting up a mailbox for a resource is to control schedulin
 If you're organizing an event that involves a meeting location: Additionally, if the meeting location has been set up as a resource, or if the event involves some equipment that has been set up as a resource: This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Calendar
+```
 
 $params = @{
 	subject = "Let's go for lunch"
@@ -137,15 +134,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserEvent -UserId $userId -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgUserEvent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Calendar
+```
 
 $params = @{
 	subject = "Let's go for lunch"
@@ -192,15 +185,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserEvent -UserId $userId -BodyParameter $params
+
+### EXAMPLE 3
 ```
-This example shows how to use the New-MgUserEvent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Calendar
+```
 
 $params = @{
 	subject = "Let's go for lunch"
@@ -235,11 +224,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserEvent -UserId $userId -BodyParameter $params
-```
-This example shows how to use the New-MgUserEvent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -1979,7 +1963,6 @@ START \<IMicrosoftGraphDateTimeZone\>: dateTimeTimeZone
 See below for more possible values.
 
 ## RELATED LINKS
-[New-MgBetaUserEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mguserevent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mguserevent)
 

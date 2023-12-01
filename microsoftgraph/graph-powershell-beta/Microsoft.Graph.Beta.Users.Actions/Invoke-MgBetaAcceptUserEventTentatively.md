@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaacceptusereventtentatively
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Invoke-MgBetaAcceptUserEventTentatively
@@ -13,9 +12,6 @@ Tentatively accept the specified event in a user calendar.
 If the event allows proposals for new times, on responding tentative to the event, an invitee can choose to suggest an alternative time by including the proposedNewTime parameter.
 For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgAcceptUserEventTentatively](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgAcceptUserEventTentatively?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -54,8 +50,9 @@ For more information on how to propose a time, and how to receive and accept a n
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaAcceptUserEventTentatively Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
 	Comment = "I may not be able to make this week. How about next week?"
@@ -74,8 +71,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Invoke-MgBetaAcceptUserEventTentatively -UserId $userId -EventId $eventId -BodyParameter $params
 ```
-This example shows how to use the Invoke-MgBetaAcceptUserEventTentatively Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -330,7 +325,6 @@ See below for possible values.
   \[Start \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
 
 ## RELATED LINKS
-[Invoke-MgAcceptUserEventTentatively](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgAcceptUserEventTentatively?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaacceptusereventtentatively](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaacceptusereventtentatively)
 

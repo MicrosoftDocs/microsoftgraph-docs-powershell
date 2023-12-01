@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetchildrelationtoterm
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 The to \[term\] of the relation.
 The term to which the relationship is defined.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSiteTermStoreSetChildRelationToTerm](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetChildRelationToTerm?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -43,6 +40,18 @@ Get-MgBetaSiteTermStoreSetChildRelationToTerm -InputObject <ISitesIdentity> [-Ex
 ## DESCRIPTION
 The to \[term\] of the relation.
 The term to which the relationship is defined.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -233,8 +242,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgSiteTermStoreSetChildRelationToTerm](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetChildRelationToTerm?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetchildrelationtoterm](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetchildrelationtoterm)
-
 

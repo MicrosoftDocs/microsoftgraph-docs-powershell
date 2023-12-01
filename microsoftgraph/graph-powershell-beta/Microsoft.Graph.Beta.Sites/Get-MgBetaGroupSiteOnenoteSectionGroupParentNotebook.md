@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteonenotesectiongroupparentnotebook
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 The notebook that contains the section group.
 Read-only.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteOnenoteSectionGroupParentNotebook](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteOnenoteSectionGroupParentNotebook?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,6 +28,18 @@ Get-MgBetaGroupSiteOnenoteSectionGroupParentNotebook -InputObject <ISitesIdentit
 ## DESCRIPTION
 The notebook that contains the section group.
 Read-only.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -191,8 +200,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgGroupSiteOnenoteSectionGroupParentNotebook](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteOnenoteSectionGroupParentNotebook?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteonenotesectiongroupparentnotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteonenotesectiongroupparentnotebook)
-
 

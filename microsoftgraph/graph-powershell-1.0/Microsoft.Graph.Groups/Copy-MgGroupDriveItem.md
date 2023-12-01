@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/copy-mggroupdriveitem
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Copy-MgGroupDriveItem
@@ -11,9 +10,6 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Asynchronously creates a copy of an driveItem\]\[item-resource\] (including any children), under a new parent item or with a new name.
 This API is available in the following \[national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Copy-MgBetaGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Groups/Copy-MgBetaGroupDriveItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,6 +45,16 @@ Asynchronously creates a copy of an driveItem\]\[item-resource\] (including any 
 This API is available in the following \[national cloud deployments.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -321,7 +327,6 @@ It is an opaque string that consists of three identifiers of the site.
 For OneDrive, this property is not populated.
 
 ## RELATED LINKS
-[Copy-MgBetaGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Groups/Copy-MgBetaGroupDriveItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/copy-mggroupdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/copy-mggroupdriveitem)
 

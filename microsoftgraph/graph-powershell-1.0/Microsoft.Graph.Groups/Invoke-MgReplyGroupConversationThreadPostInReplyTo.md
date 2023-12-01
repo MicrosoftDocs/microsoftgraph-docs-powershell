@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreplygroupconversationthreadpostinreplyto
 schema: 2.0.0
-ms.prod: extensions
 ---
 
 # Invoke-MgReplyGroupConversationThreadPostInReplyTo
@@ -13,9 +12,6 @@ Create an open extension (openTypeExtension object) and add custom properties in
 You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
 The table in the Permissions section lists the resources that support open extensions.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaReplyGroupConversationThreadPostInReplyTo](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaReplyGroupConversationThreadPostInReplyTo?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -55,10 +51,11 @@ The table in the Permissions section lists the resources that support open exten
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Groups
+```
 
 $params = @{
 	Post = @{
@@ -66,7 +63,7 @@ $params = @{
 			ContentType = ""
 			Content = "content-value"
 		}
-		ReceivedDateTime = [System.DateTime]::Parse("datetime-value")
+		ReceivedDateTime = \[System.DateTime\]::Parse("datetime-value")
 		HasAttachments = $true
 		From = @{
 			EmailAddress = @{
@@ -90,8 +87,8 @@ $params = @{
 			}
 		)
 		ConversationId = "conversationId-value"
-		CreatedDateTime = [System.DateTime]::Parse("datetime-value")
-		LastModifiedDateTime = [System.DateTime]::Parse("datetime-value")
+		CreatedDateTime = \[System.DateTime\]::Parse("datetime-value")
+		LastModifiedDateTime = \[System.DateTime\]::Parse("datetime-value")
 		ChangeKey = "changeKey-value"
 		Categories = @(
 			"categories-value"
@@ -102,7 +99,7 @@ $params = @{
 		Attachments = @(
 			@{
 				"@odata.type" = "#microsoft.graph.fileAttachment"
-				LastModifiedDateTime = [System.DateTime]::Parse("datetime-value")
+				LastModifiedDateTime = \[System.DateTime\]::Parse("datetime-value")
 				Name = "name-value"
 				ContentType = "contentType-value"
 				Size = 99
@@ -114,11 +111,6 @@ $params = @{
 }
 
 Invoke-MgReplyGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params
-```
-This example shows how to use the Invoke-MgReplyGroupConversationThreadPostInReplyTo Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -477,7 +469,6 @@ Read-only.
     \[Value \<String\>\]: A property value.
 
 ## RELATED LINKS
-[Invoke-MgBetaReplyGroupConversationThreadPostInReplyTo](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaReplyGroupConversationThreadPostInReplyTo?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreplygroupconversationthreadpostinreplyto](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreplygroupconversationthreadpostinreplyto)
 

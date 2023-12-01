@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriveitemuploadsession
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action createUploadSession
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDriveItemUploadSession](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItemUploadSession?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -43,6 +40,22 @@ New-MgDriveItemUploadSession -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Invoke action createUploadSession
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -247,8 +260,6 @@ Available for the recent file list only.
 Read-write.
 
 ## RELATED LINKS
-[New-MgBetaDriveItemUploadSession](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItemUploadSession?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriveitemuploadsession](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriveitemuploadsession)
-
 

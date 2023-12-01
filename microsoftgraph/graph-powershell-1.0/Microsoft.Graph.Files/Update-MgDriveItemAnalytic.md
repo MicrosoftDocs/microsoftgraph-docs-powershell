@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitemanalytic
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property analytics in drives
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDriveItemAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItemAnalytic?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -45,6 +42,18 @@ Update-MgDriveItemAnalytic -InputObject <IFilesIdentity> -BodyParameter <IMicros
 
 ## DESCRIPTION
 Update the navigation property analytics in drives
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -18382,8 +18391,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaDriveItemAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItemAnalytic?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitemanalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitemanalytic)
-
 

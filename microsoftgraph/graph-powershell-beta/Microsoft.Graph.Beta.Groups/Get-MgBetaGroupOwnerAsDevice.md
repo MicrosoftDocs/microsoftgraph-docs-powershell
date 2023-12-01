@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupownerasdevice
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.device
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupOwnerAsDevice](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupOwnerAsDevice?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -36,6 +33,18 @@ Get-MgBetaGroupOwnerAsDevice -InputObject <IGroupsIdentity> [-ExpandProperty <St
 
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.device
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -311,8 +320,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgGroupOwnerAsDevice](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupOwnerAsDevice?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupownerasdevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupownerasdevice)
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.Beta.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/new-mgbetausercontactfolder
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgBetaUserContactFolder
@@ -12,9 +11,6 @@ ms.prod: outlook
 Create a new contactFolder under the user's default contacts folder.
 You can also create a new contactfolder as a child of any specified contact folder.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserContactFolder](/powershell/module/Microsoft.Graph.PersonalContacts/New-MgUserContactFolder?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -56,10 +52,11 @@ You can also create a new contactfolder as a child of any specified contact fold
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.PersonalContacts
+```
 
 $params = @{
 	parentFolderId = "AQMkADIxYjJiYgEzLTFmNjYALTRjYTMtODA1NC0wZDkxZGNmOTcxNTQALgAAA8RJzXYaLKZPlmn0ge0edZkBADa3qi2IMXRNg6RwQSHe_F8AAAIBDgAAAA=="
@@ -68,11 +65,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserContactFolder -UserId $userId -BodyParameter $params
-```
-This example shows how to use the New-MgBetaUserContactFolder Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -693,7 +685,6 @@ Read-only.
   \[Value \<String\>\]: A property value.
 
 ## RELATED LINKS
-[New-MgUserContactFolder](/powershell/module/Microsoft.Graph.PersonalContacts/New-MgUserContactFolder?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/new-mgbetausercontactfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/new-mgbetausercontactfolder)
 

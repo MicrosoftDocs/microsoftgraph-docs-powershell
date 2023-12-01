@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritysecurescorecontrolprofile
 schema: 2.0.0
-ms.prod: security
 ---
 
 # Update-MgSecuritySecureScoreControlProfile
@@ -11,9 +10,6 @@ ms.prod: security
 ## SYNOPSIS
 Update an editable secureScoreControlProfile object within any integrated solution to change various properties, such as assignedTo or tenantNote.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSecuritySecureScoreControlProfile](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecuritySecureScoreControlProfile?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -58,10 +54,11 @@ Update an editable secureScoreControlProfile object within any integrated soluti
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Request without Prefer header
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Security
+```
 
 $params = @{
 	assignedTo = ""
@@ -76,15 +73,11 @@ $params = @{
 }
 
 Update-MgSecuritySecureScoreControlProfile -SecureScoreControlProfileId $secureScoreControlProfileId -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the Update-MgSecuritySecureScoreControlProfile Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Request with Prefer header
-
-```powershell
 Import-Module Microsoft.Graph.Security
+```
 
 $params = @{
 	assignedTo = ""
@@ -99,11 +92,6 @@ $params = @{
 }
 
 Update-MgSecuritySecureScoreControlProfile -SecureScoreControlProfileId $secureScoreControlProfileId -BodyParameter $params
-```
-This example shows how to use the Update-MgSecuritySecureScoreControlProfile Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -639,7 +627,6 @@ Required
 Required
 
 ## RELATED LINKS
-[Update-MgBetaSecuritySecureScoreControlProfile](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecuritySecureScoreControlProfile?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritysecurescorecontrolprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritysecurescorecontrolprofile)
 

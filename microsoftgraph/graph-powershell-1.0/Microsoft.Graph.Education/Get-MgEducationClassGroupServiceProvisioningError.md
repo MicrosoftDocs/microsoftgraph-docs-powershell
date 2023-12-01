@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassgroupserviceprovisioningerror
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get serviceProvisioningErrors property value
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassGroupServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassGroupServiceProvisioningError?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
@@ -23,6 +20,18 @@ Get-MgEducationClassGroupServiceProvisioningError -EducationClassId <String> [-E
 
 ## DESCRIPTION
 Get serviceProvisioningErrors property value
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -203,8 +212,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaEducationClassGroupServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassGroupServiceProvisioningError?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassgroupserviceprovisioningerror](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassgroupserviceprovisioningerror)
-
 

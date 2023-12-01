@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackagecatalog
@@ -38,8 +38,9 @@ Create a new accessPackageCatalog object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaEntitlementManagementAccessPackageCatalog Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
 	DisplayName = "sales"
@@ -48,8 +49,6 @@ $params = @{
 }
 New-MgBetaEntitlementManagementAccessPackageCatalog -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaEntitlementManagementAccessPackageCatalog Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

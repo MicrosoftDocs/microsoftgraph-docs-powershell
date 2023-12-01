@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserauthenticationmethod
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property methods in users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserAuthenticationMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgUserAuthenticationMethod?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -41,6 +38,18 @@ Update-MgBetaUserAuthenticationMethod -InputObject <IIdentitySignInsIdentity> -B
 
 ## DESCRIPTION
 Update the navigation property methods in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -262,8 +271,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Update-MgUserAuthenticationMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgUserAuthenticationMethod?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserauthenticationmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserauthenticationmethod)
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/grant-mgbetasharepermission
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Grant-MgBetaSharePermission
@@ -11,9 +10,6 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Grant users access to a link represented by a permission\]\[\].
 This API is available in the following \[national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Grant-MgSharePermission](/powershell/module/Microsoft.Graph.Files/Grant-MgSharePermission?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -48,8 +44,9 @@ Grant users access to a link represented by a permission\]\[\].
 This API is available in the following \[national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Grant-MgBetaSharePermission Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Files
 $params = @{
 	Recipients = @(
@@ -66,8 +63,6 @@ $params = @{
 }
 Grant-MgBetaSharePermission -SharedDriveItemId $sharedDriveItemId -BodyParameter $params
 ```
-This example shows how to use the Grant-MgBetaSharePermission Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -253,7 +248,6 @@ security groups).
   \[ObjectId \<String\>\]: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
-[Grant-MgSharePermission](/powershell/module/Microsoft.Graph.Files/Grant-MgSharePermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/grant-mgbetasharepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/grant-mgbetasharepermission)
 

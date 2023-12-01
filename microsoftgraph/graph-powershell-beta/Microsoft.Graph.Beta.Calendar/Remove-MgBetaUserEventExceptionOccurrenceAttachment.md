@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetausereventexceptionoccurrenceattachment
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Remove-MgBetaUserEventExceptionOccurrenceAttachment
@@ -29,6 +28,22 @@ Remove-MgBetaUserEventExceptionOccurrenceAttachment -InputObject <ICalendarIdent
 ## DESCRIPTION
 Delete an attachment from a user calendar event, message, Outlook task, or post.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -202,5 +217,4 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetausereventexceptionoccurrenceattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetausereventexceptionoccurrenceattachment)
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgserviceprincipalpassword
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Add-MgServicePrincipalPassword
@@ -45,11 +44,11 @@ Add a strong password or secret to a servicePrincipal object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Applications
+```
 
 $params = @{
 	passwordCredential = @{
@@ -58,10 +57,6 @@ $params = @{
 }
 
 Add-MgServicePrincipalPassword -ServicePrincipalId $servicePrincipalId -BodyParameter $params
-
-```
-This example shows how to use the Add-MgServicePrincipalPassword Cmdlet.
-
 
 ## PARAMETERS
 

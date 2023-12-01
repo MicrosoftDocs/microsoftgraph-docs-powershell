@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagement
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update roleManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgRoleManagement](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgRoleManagement?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -32,6 +29,18 @@ Update-MgBetaRoleManagement -BodyParameter <IMicrosoftGraphRoleManagement> [-Wha
 
 ## DESCRIPTION
 Update roleManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -2369,8 +2378,6 @@ Supports $filter (eq operator only).
   \[TransitiveRoleAssignments \<IMicrosoftGraphUnifiedRoleAssignment\[\]\>\]: Resource to grant access to users or groups that are transitive.
 
 ## RELATED LINKS
-[Update-MgRoleManagement](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgRoleManagement?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagement)
-
 

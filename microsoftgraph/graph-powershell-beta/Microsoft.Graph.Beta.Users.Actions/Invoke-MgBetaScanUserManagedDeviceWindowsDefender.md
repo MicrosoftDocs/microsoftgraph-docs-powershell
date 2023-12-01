@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetascanusermanageddevicewindowsdefender
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action windowsDefenderScan
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgScanUserManagedDeviceWindowsDefender](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgScanUserManagedDeviceWindowsDefender?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -43,6 +40,18 @@ Invoke-MgBetaScanUserManagedDeviceWindowsDefender -InputObject <IUsersActionsIde
 
 ## DESCRIPTION
 Invoke action windowsDefenderScan
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -246,8 +255,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgScanUserManagedDeviceWindowsDefender](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgScanUserManagedDeviceWindowsDefender?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetascanusermanageddevicewindowsdefender](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetascanusermanageddevicewindowsdefender)
-
 

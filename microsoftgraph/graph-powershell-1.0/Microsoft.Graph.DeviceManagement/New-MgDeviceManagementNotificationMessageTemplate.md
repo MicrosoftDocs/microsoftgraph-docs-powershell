@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementnotificationmessagetemplate
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # New-MgDeviceManagementNotificationMessageTemplate
 
 ## SYNOPSIS
 Create a new notificationMessageTemplate object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementNotificationMessageTemplate](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementNotificationMessageTemplate?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -33,6 +29,22 @@ New-MgDeviceManagementNotificationMessageTemplate -BodyParameter <IMicrosoftGrap
 
 ## DESCRIPTION
 Create a new notificationMessageTemplate object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -258,8 +270,6 @@ To unset, set this property to true on another Localized Notification Message.
   \[Subject \<String\>\]: The Message Template Subject.
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementNotificationMessageTemplate](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementNotificationMessageTemplate?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementnotificationmessagetemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementnotificationmessagetemplate)
-
 

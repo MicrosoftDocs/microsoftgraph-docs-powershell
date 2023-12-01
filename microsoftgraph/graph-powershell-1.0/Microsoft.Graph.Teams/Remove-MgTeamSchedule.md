@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamschedule
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property schedule for teams
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamSchedule?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,17 +28,13 @@ Remove-MgTeamSchedule -InputObject <ITeamsIdentity> [-IfMatch <String>] [-PassTh
 Delete navigation property schedule for teams
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 Get-MgTeamSchedule -TeamId $teamId
-```
-This example shows how to use the Remove-MgTeamSchedule Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -187,7 +180,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgBetaTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamSchedule?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamschedule)
 

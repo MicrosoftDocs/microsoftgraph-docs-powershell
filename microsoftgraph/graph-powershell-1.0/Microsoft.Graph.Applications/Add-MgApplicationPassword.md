@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgapplicationpassword
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Add-MgApplicationPassword
@@ -11,9 +10,6 @@ ms.prod: applications
 ## SYNOPSIS
 Adds a strong password or secret to an application.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Add-MgBetaApplicationPassword](/powershell/module/Microsoft.Graph.Beta.Applications/Add-MgBetaApplicationPassword?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -48,11 +44,11 @@ Adds a strong password or secret to an application.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Add a password credential to an application with a six month expiry
 
-```powershell
-
+### EXAMPLE 1
+```
 Connect-MgGraph -Scopes 'Application.ReadWrite.All'
+```
 
 $appObjectId = 'eaf1e531-0d58-4874-babe-b9a9f436e6c3'
 
@@ -71,17 +67,13 @@ Hint                 : Q_e
 KeyId                : c82bb763-741b-4575-9d9d-df7e766f6999
 SecretText           : Q_e8Q~ZDWJD.bkgajbREp-VFFUayCuEk8b1hDcr9
 StartDateTime        : 26/5/2022 1:03:31 pm
-AdditionalProperties : {[@odata.context,
-                       https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.passwordCredential]}
+AdditionalProperties : {\[@odata.context,
+                       https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.passwordCredential\]}
+
+### EXAMPLE 2
 ```
-
-Add a password to an application that expires in six months from the current date.
-
-### Example 2: Add a password credential to an application with a start date
-
-```powershell
-
 Connect-MgGraph -Scopes 'Application.ReadWrite.All'
+```
 
 $appObjectId = 'eaf1e531-0d58-4874-babe-b9a9f436e6c3'
 
@@ -104,13 +96,8 @@ Hint                 : TiA
 KeyId                : 082bf20f-63d6-4970-bb4e-55e504f50d8b
 SecretText           : TiA8Q~Zs7ej1cGtlW0qnmuFi~JlxXTZew_tU1bGA
 StartDateTime        : 26/5/2022 2:00:00 pm
-AdditionalProperties : {[@odata.context,
-                       https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.passwordCredential]}
-```
-
-Add a password to an application that becomes valid at 12:00 am the next day and is valid for six months.
-
-Use `$secret.StartDateTime.ToLocalTime()` to convert the returned dates from UTC to the local timezone.
+AdditionalProperties : {\[@odata.context,
+                       https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.passwordCredential\]}
 
 ## PARAMETERS
 
@@ -304,7 +291,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Optional.
 
 ## RELATED LINKS
-[Add-MgBetaApplicationPassword](/powershell/module/Microsoft.Graph.Beta.Applications/Add-MgBetaApplicationPassword?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgapplicationpassword](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgapplicationpassword)
 

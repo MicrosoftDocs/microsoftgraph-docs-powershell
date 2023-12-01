@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupbyid
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Get-MgGroupById
@@ -12,9 +11,6 @@ ms.prod: directory-management
 Return the directory objects specified in a list of IDs.
 Only a subset of user properties are returned by default in v1.0.
 Some common uses for this function are to: This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupById](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupById?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -37,6 +33,16 @@ Only a subset of user properties are returned by default in v1.0.
 Some common uses for this function are to: This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -153,7 +159,6 @@ BODYPARAMETER \<IPaths1E1O4BoGroupsMicrosoftGraphGetbyidsPostRequestbodyContentA
   \[Types \<String\[\]\>\]:
 
 ## RELATED LINKS
-[Get-MgBetaGroupById](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupById?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupbyid](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupbyid)
 

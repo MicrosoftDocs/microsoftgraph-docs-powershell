@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgsharelistsubscription
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to subscriptions for shares
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaShareListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaShareListSubscription?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,6 +46,22 @@ New-MgShareListSubscription -InputObject <IFilesIdentity> -BodyParameter <IMicro
 
 ## DESCRIPTION
 Create new navigation property to subscriptions for shares
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -525,8 +538,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaShareListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaShareListSubscription?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgsharelistsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgsharelistsubscription)
-
 

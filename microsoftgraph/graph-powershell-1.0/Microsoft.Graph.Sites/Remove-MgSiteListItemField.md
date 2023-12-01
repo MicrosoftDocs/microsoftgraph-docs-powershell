@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitelistitemfield
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property fields for sites
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaSiteListItemField](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteListItemField?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,10 +28,11 @@ Remove-MgSiteListItemField -InputObject <ISitesIdentity> [-IfMatch <String>] [-P
 Delete navigation property fields for sites
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Sites
+```
 
 $params = @{
 	Color = "Fuchsia"
@@ -42,11 +40,6 @@ $params = @{
 }
 
 Update-MgSiteListItemField -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
-```
-This example shows how to use the Remove-MgSiteListItemField Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -228,7 +221,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaSiteListItemField](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteListItemField?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitelistitemfield](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitelistitemfield)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/reset-mgbetausermanageddevicepasscode
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Reset passcode
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Reset-MgUserManagedDevicePasscode](/powershell/module/Microsoft.Graph.Users.Actions/Reset-MgUserManagedDevicePasscode?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Reset-MgBetaUserManagedDevicePasscode -InputObject <IUsersActionsIdentity> [-Pas
 
 ## DESCRIPTION
 Reset passcode
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -181,8 +194,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Reset-MgUserManagedDevicePasscode](/powershell/module/Microsoft.Graph.Users.Actions/Reset-MgUserManagedDevicePasscode?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/reset-mgbetausermanageddevicepasscode](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/reset-mgbetausermanageddevicepasscode)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserteamworkassociatedteam
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to associatedTeams for users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserTeamworkAssociatedTeam](/powershell/module/Microsoft.Graph.Teams/New-MgUserTeamworkAssociatedTeam?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45,18 +42,14 @@ New-MgBetaUserTeamworkAssociatedTeam -InputObject <ITeamsIdentity> -BodyParamete
 Create new navigation property to associatedTeams for users
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserTeamworkAssociatedTeam -UserId $userId
-```
-This example shows how to use the New-MgBetaBetaUserTeamworkAssociatedTeam Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -7636,7 +7629,6 @@ This is the URL that you get when you right-click a team in the Microsoft Teams 
 This URL should be treated as an opaque blob, and not parsed.
 
 ## RELATED LINKS
-[New-MgUserTeamworkAssociatedTeam](/powershell/module/Microsoft.Graph.Teams/New-MgUserTeamworkAssociatedTeam?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserteamworkassociatedteam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserteamworkassociatedteam)
 

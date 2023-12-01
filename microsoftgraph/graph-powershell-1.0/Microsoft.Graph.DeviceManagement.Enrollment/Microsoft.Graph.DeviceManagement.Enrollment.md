@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.DeviceManagement.Enrollment
 Module Guid: cb05f22d-85cd-4b42-b99c-b713e0b9fbd3
 Download Help Link: {{ Update Download Link }}

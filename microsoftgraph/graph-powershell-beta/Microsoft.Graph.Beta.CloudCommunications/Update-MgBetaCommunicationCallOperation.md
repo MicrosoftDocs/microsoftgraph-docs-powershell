@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationcalloperation
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property operations in communications
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgCommunicationCallOperation](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallOperation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -43,6 +40,22 @@ Update-MgBetaCommunicationCallOperation -InputObject <ICloudCommunicationsIdenti
 
 ## DESCRIPTION
 Update the navigation property operations in communications
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -273,8 +286,6 @@ RESULTINFO \<IMicrosoftGraphResultInfo\>: resultInfo
   \[Subcode \<Int32?\>\]: The result sub-code.
 
 ## RELATED LINKS
-[Update-MgCommunicationCallOperation](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationcalloperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationcalloperation)
-
 

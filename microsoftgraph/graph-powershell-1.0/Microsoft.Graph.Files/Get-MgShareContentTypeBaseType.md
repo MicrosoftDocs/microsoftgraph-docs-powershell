@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharecontenttypebasetype
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The collection of content types that are ancestors of this content type.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaShareContentTypeBaseType](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareContentTypeBaseType?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -36,6 +33,18 @@ Get-MgShareContentTypeBaseType -InputObject <IFilesIdentity> [-ExpandProperty <S
 
 ## DESCRIPTION
 The collection of content types that are ancestors of this content type.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -293,8 +302,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaShareContentTypeBaseType](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareContentTypeBaseType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharecontenttypebasetype](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharecontenttypebasetype)
-
 

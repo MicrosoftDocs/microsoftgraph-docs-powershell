@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootlistitemversion
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to versions for drives
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveRootListItemVersion?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -44,6 +41,22 @@ New-MgDriveRootListItemVersion -InputObject <IFilesIdentity> -BodyParameter <IMi
 
 ## DESCRIPTION
 Create new navigation property to versions for drives
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -320,8 +333,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[New-MgBetaDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveRootListItemVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootlistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootlistitemversion)
-
 

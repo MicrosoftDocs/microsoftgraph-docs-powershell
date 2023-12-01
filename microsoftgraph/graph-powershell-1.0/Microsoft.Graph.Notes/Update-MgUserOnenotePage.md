@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mguseronenotepage
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property pages in users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserOnenotePage](/powershell/module/Microsoft.Graph.Beta.Notes/Update-MgBetaUserOnenotePage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,6 +44,22 @@ Update-MgUserOnenotePage -InputObject <INotesIdentity> -BodyParameter <IMicrosof
 
 ## DESCRIPTION
 Update the navigation property pages in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -819,8 +832,6 @@ Read-only.
   \[ParentSectionGroup \<IMicrosoftGraphSectionGroup\>\]: sectionGroup
 
 ## RELATED LINKS
-[Update-MgBetaUserOnenotePage](/powershell/module/Microsoft.Graph.Beta.Notes/Update-MgBetaUserOnenotePage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mguseronenotepage](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mguseronenotepage)
-
 

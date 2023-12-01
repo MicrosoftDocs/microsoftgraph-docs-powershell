@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/new-mgreportauthenticationmethoduserregistrationdetail
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to userRegistrationDetails for reports
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaReportAuthenticationMethodUserRegistrationDetail](/powershell/module/Microsoft.Graph.Beta.Reports/New-MgBetaReportAuthenticationMethodUserRegistrationDetail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -33,6 +30,18 @@ New-MgReportAuthenticationMethodUserRegistrationDetail -BodyParameter <IMicrosof
 
 ## DESCRIPTION
 Create new navigation property to userRegistrationDetails for reports
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -415,8 +424,6 @@ Supports $filter (eq, startsWith) and $orderby.
   \[UserType \<String\>\]: signInUserType
 
 ## RELATED LINKS
-[New-MgBetaReportAuthenticationMethodUserRegistrationDetail](/powershell/module/Microsoft.Graph.Beta.Reports/New-MgBetaReportAuthenticationMethodUserRegistrationDetail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/new-mgreportauthenticationmethoduserregistrationdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/new-mgreportauthenticationmethoduserregistrationdetail)
-
 

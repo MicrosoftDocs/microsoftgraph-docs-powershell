@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotaskextension
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection of open extensions defined for the task.
 Nullable.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserTodoTaskExtension](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoTaskExtension?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,6 +35,18 @@ Get-MgBetaUserTodoTaskExtension -InputObject <IUsersIdentity> [-ExpandProperty <
 ## DESCRIPTION
 The collection of open extensions defined for the task.
 Nullable.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -309,8 +318,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserTodoTaskExtension](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoTaskExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotaskextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotaskextension)
-
 

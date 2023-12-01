@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Applications
 Module Guid: fae868a9-cfb4-4875-82ce-3954ba828375
 Download Help Link: {{ Update Download Link }}

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/search-mgdriveitem
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function search
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Search-MgBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Search-MgBetaDriveItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,6 +27,22 @@ Search-MgDriveItem -InputObject <IFilesIdentity> [-Count] [-Filter <String>] [-P
 
 ## DESCRIPTION
 Invoke function search
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -241,8 +254,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Search-MgBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Search-MgBetaDriveItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/search-mgdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/search-mgdriveitem)
-
 

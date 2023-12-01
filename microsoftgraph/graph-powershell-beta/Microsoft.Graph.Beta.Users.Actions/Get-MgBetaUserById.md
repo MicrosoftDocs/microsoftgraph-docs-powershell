@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauserbyid
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Get-MgBetaUserById
@@ -11,9 +10,6 @@ ms.prod: directory-management
 ## SYNOPSIS
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to: This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserById](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserById?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -35,10 +31,11 @@ Return the directory objects specified in a list of IDs.
 Some common uses for this function are to: This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
+```
 
 $params = @{
 	Ids = @(
@@ -55,11 +52,6 @@ $params = @{
 }
 
 Get-MgBetaDirectoryObjectById -BodyParameter $params
-```
-This example shows how to use the Get-MgBetaUserById Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -176,7 +168,6 @@ BODYPARAMETER \<IPathsBjm3ZyUsersMicrosoftGraphGetbyidsPostRequestbodyContentApp
   \[Types \<String\[\]\>\]:
 
 ## RELATED LINKS
-[Get-MgUserById](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserById?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauserbyid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauserbyid)
 

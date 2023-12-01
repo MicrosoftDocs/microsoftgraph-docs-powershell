@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententitlementmanagementresourcenamespaceresourceaction
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to resourceActions for roleManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,6 +48,18 @@ New-MgBetaRoleManagementEntitlementManagementResourceNamespaceResourceAction
 
 ## DESCRIPTION
 Create new navigation property to resourceActions for roleManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -490,8 +499,6 @@ Read-only.
   \[Type \<String\>\]:
 
 ## RELATED LINKS
-[New-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententitlementmanagementresourcenamespaceresourceaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententitlementmanagementresourcenamespaceresourceaction)
-
 

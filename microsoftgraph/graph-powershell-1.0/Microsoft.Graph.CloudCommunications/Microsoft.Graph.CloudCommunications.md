@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.CloudCommunications
 Module Guid: 2c67fc60-8c99-463f-9b0c-8a70e4623246
 Download Help Link: {{ Update Download Link }}

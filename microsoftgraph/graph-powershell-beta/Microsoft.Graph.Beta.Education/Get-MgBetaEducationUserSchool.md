@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserschool
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Get-MgBetaEducationUserSchool
@@ -11,9 +10,6 @@ ms.prod: education
 ## SYNOPSIS
 Schools to which the user belongs.
 Nullable.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEducationUserSchool](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserSchool?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -41,6 +37,16 @@ Schools to which the user belongs.
 Nullable.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -276,7 +282,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgEducationUserSchool](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserSchool?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserschool](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserschool)
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetaparseserviceprincipalsynchronizationjobschemaexpression
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Invoke-MgBetaParseServicePrincipalSynchronizationJobSchemaExpression
@@ -12,9 +11,6 @@ ms.prod: applications
 Parse a given string expression into an attributeMappingSource object.
 For more information about expressions, see Writing Expressions for Attribute Mappings in Microsoft Entra ID.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgParseServicePrincipalSynchronizationJobSchemaExpression](/powershell/module/Microsoft.Graph.Applications/Invoke-MgParseServicePrincipalSynchronizationJobSchemaExpression?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -53,6 +49,22 @@ Invoke-MgBetaParseServicePrincipalSynchronizationJobSchemaExpression -InputObjec
 Parse a given string expression into an attributeMappingSource object.
 For more information about expressions, see Writing Expressions for Attribute Mappings in Microsoft Entra ID.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -389,8 +401,6 @@ Not nullable.
     \[Key \<String\>\]: Key.
 
 ## RELATED LINKS
-[Invoke-MgParseServicePrincipalSynchronizationJobSchemaExpression](/powershell/module/Microsoft.Graph.Applications/Invoke-MgParseServicePrincipalSynchronizationJobSchemaExpression?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetaparseserviceprincipalsynchronizationjobschemaexpression](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetaparseserviceprincipalsynchronizationjobschemaexpression)
-
 

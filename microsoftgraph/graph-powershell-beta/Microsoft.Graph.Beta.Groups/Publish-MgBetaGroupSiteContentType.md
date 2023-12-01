@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/publish-mgbetagroupsitecontenttype
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Publishes a contentType\]\[\] present in a content type hub site.
 This API is available in the following \[national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Publish-MgGroupSiteContentType](/powershell/module/Microsoft.Graph.Groups/Publish-MgGroupSiteContentType?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,6 +28,22 @@ Publish-MgBetaGroupSiteContentType -InputObject <IGroupsIdentity> [-PassThru] [-
 ## DESCRIPTION
 Publishes a contentType\]\[\] present in a content type hub site.
 This API is available in the following \[national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -200,8 +213,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Publish-MgGroupSiteContentType](/powershell/module/Microsoft.Graph.Groups/Publish-MgGroupSiteContentType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/publish-mgbetagroupsitecontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/publish-mgbetagroupsitecontenttype)
-
 

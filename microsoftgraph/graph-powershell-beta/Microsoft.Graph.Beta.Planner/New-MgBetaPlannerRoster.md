@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerroster
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # New-MgBetaPlannerRoster
@@ -31,16 +30,15 @@ Create a new plannerRoster object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaPlannerRoster Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Planner
 $params = @{
 	"@odata.type" = "#microsoft.graph.plannerRoster"
 }
 New-MgBetaPlannerRoster -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaPlannerRoster Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

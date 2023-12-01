@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetaforcedomaindelete
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Invoke-MgBetaForceDomainDelete
@@ -15,9 +14,6 @@ The following actions are performed as part of this operation: After the domain 
 To verify deletion of a domain, you can perform a get domain.
 If the domain was successfully deleted, a 404 HTTP response code will be returned in the response.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgForceDomainDelete](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Invoke-MgForceDomainDelete?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -57,16 +53,15 @@ If the domain was successfully deleted, a 404 HTTP response code will be returne
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaForceDomainDelete Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{
 	DisableUserAccounts = $true
 }
 Invoke-MgBetaForceDomainDelete -DomainId $domainId -BodyParameter $params
 ```
-This example shows how to use the Invoke-MgBetaForceDomainDelete Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -259,7 +254,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgForceDomainDelete](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Invoke-MgForceDomainDelete?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetaforcedomaindelete](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetaforcedomaindelete)
 

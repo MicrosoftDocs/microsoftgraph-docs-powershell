@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilepatent
 schema: 2.0.0
-ms.prod: people
 ---
 
 # Update-MgBetaUserProfilePatent
@@ -51,8 +50,9 @@ Update the properties of an itemPatent object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaUserProfilePatent Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.People
 $params = @{
 	Number = "USPTO-3954432633"
@@ -60,8 +60,6 @@ $params = @{
 }
 Update-MgBetaUserProfilePatent -UserId $userId -ItemPatentId $itemPatentId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaUserProfilePatent Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

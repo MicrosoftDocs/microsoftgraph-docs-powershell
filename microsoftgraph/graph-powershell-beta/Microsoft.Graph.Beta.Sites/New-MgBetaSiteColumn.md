@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitecolumn
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # New-MgBetaSiteColumn
@@ -11,9 +10,6 @@ ms.prod: sites-and-lists
 ## SYNOPSIS
 Create a column for a site\]\[site\] by specifying a \[columnDefinition\]\[columnDefinition\].
 This API is available in the following \[national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSiteColumn](/powershell/module/Microsoft.Graph.Sites/New-MgSiteColumn?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -66,10 +62,11 @@ Create a column for a site\]\[site\] by specifying a \[columnDefinition\]\[colum
 This API is available in the following \[national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Sites
+```
 
 $params = @{
 	description = "test"
@@ -86,11 +83,6 @@ $params = @{
 }
 
 New-MgBetaSiteColumn -SiteId $siteId -BodyParameter $params
-```
-This example shows how to use the New-MgBetaSiteColumn Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -1238,7 +1230,6 @@ User will be prompted with this message if validation fails.
 For examples, see Examples of common formulas in lists
 
 ## RELATED LINKS
-[New-MgSiteColumn](/powershell/module/Microsoft.Graph.Sites/New-MgSiteColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitecolumn)
 

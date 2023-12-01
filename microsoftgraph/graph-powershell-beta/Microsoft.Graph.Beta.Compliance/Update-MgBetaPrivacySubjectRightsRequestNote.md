@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetaprivacysubjectrightsrequestnote
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property notes in privacy
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPrivacySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Compliance/Update-MgPrivacySubjectRightsRequestNote?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -43,6 +40,18 @@ Update-MgBetaPrivacySubjectRightsRequestNote -InputObject <IComplianceIdentity>
 
 ## DESCRIPTION
 Update the navigation property notes in privacy
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -285,8 +294,6 @@ INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
   \[UserSourceId \<String\>\]: The unique identifier of userSource
 
 ## RELATED LINKS
-[Update-MgPrivacySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Compliance/Update-MgPrivacySubjectRightsRequestNote?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetaprivacysubjectrightsrequestnote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetaprivacysubjectrightsrequestnote)
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamchannelmessage
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Update-MgTeamChannelMessage
@@ -16,9 +15,6 @@ If one of the participants is using Skype, the operation will fail.
 This method does not support federation.
 Only the user in the tenant who sent the message can perform data loss prevention (DLP) updates on the specified chat message.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamChannelMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -74,11 +70,11 @@ Only the user in the tenant who sent the message can perform data loss preventio
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Update policyViolation property using application permissions
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	policyViolation = @{
@@ -96,14 +92,10 @@ $params = @{
 
 Update-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will update policyviolation property using application permissions
-
-### Example 2: Update any property of a message using delegated permissions
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	messageType = "message"
@@ -137,14 +129,10 @@ $params = @{
 
 Update-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
 
+### EXAMPLE 3
 ```
-This example will update any property of a message using delegated permissions
-
-### Example 3: Update the mentions of a message using delegated permissions
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	messageType = "message"
@@ -165,11 +153,11 @@ $params = @{
 	}
 	body = @{
 		contentType = "html"
-		content = "<div><div>
-<div>
-<div>
-<div>
-<div><at id="0">Raghav</at><at id="1">TestGlobalBot</at> YEAH"
+		content = "\<div\>\<div\>
+\<div\>
+\<div\>
+\<div\>
+\<div\>\<at id="0"\>Raghav\</at\>\<at id="1"\>TestGlobalBot\</at\> YEAH"
 	}
 	attachments = @(
 	)
@@ -211,14 +199,10 @@ $params = @{
 
 Update-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
 
+### EXAMPLE 4
 ```
-This example will update the mentions of a message using delegated permissions
-
-### Example 4: Update the content with attachments of a message using delegated permissions
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	messageType = "message"
@@ -238,7 +222,7 @@ $params = @{
 	}
 	body = @{
 		contentType = "html"
-		content = "<p><em>text</em></p><attachment id="e8f78756199240b88448ae0fc6db112d"></attachment><attachment id="638464e32834471ea202007da60a5ae6"></attachment>"
+		content = "\<p\>\<em\>text\</em\>\</p\>\<attachment id="e8f78756199240b88448ae0fc6db112d"\>\</attachment\>\<attachment id="638464e32834471ea202007da60a5ae6"\>\</attachment\>"
 	}
 	attachments = @(
 		@{
@@ -248,13 +232,16 @@ $params = @{
 			content = '{
   "title": "*title*",
   "subtitle": "*subtitle*",
-  "text": "Have you found yourself scratching your head trying to figure these questions out? Frustrated trying to access some of the goodies unique to the Microsoft Teams platform?  Well, fear not, Bot Builder SDK Extension for Teams in .NET and Node flavors is here!  Just head on over to Nuget or NPM to download our tasty helpers, sure to speed up your prep time so you can spend more time maximizing the flavor of the bots you're cooking up.Here’s a small sample of some recipes to whet your appetite.",
-  "images": [
+  "text": "Have you found yourself scratching your head trying to figure these questions out?
+Frustrated trying to access some of the goodies unique to the Microsoft Teams platform? 
+Well, fear not, Bot Builder SDK Extension for Teams in .NET and Node flavors is here! 
+Just head on over to Nuget or NPM to download our tasty helpers, sure to speed up your prep time so you can spend more time maximizing the flavor of the bots you're cooking up.Here's a small sample of some recipes to whet your appetite.",
+  "images": \[
     {
       "url": "https://us-api.asm.skype.com/v1/objects/0-eus-d8-ced0c9567ee7b0b233b987bd32f9eacd/views/img_preview"
     }
-  ],
-  "buttons": [
+  \],
+  "buttons": \[
     {
       "type": "openUrl",
       "image": "https://urlp.asm.skype.com/v1/url/content?url=https%3a%2f%2fcdn2.iconfinder.com%2fdata%2ficons%2fsocial-icons-33%2f128%2fTrello-128.png",
@@ -263,15 +250,15 @@ $params = @{
     },
     {
       "type": "imback",
-      "title": "&i am back& <>= \"",
-      "value": "&i am back& <>= \""
+      "title": "&i am back& \<\>= \"",
+      "value": "&i am back& \<\>= \""
     },
     {
       "type": "openUrl",
       "title": "Open URL",
       "value": "http://google.com"
     }
-  ]
+  \]
 }'
 			name = $null
 			thumbnailUrl = $null
@@ -283,23 +270,26 @@ $params = @{
 			content = '{
   "title": "*title*",
   "subtitle": "*subtitle*",
-  "text": "Have you found yourself scratching your head trying to figure these questions out? Frustrated trying to access some of the goodies unique to the Microsoft Teams platform?  Well, fear not, Bot Builder SDK Extension for Teams in .NET and Node flavors is here!  Just head on over to Nuget or NPM to download our tasty helpers, sure to speed up your prep time so you can spend more time maximizing the flavor of the bots you're cooking up.Here’s a small sample of some recipes to whet your appetite.",
-  "images": [
+  "text": "Have you found yourself scratching your head trying to figure these questions out?
+Frustrated trying to access some of the goodies unique to the Microsoft Teams platform? 
+Well, fear not, Bot Builder SDK Extension for Teams in .NET and Node flavors is here! 
+Just head on over to Nuget or NPM to download our tasty helpers, sure to speed up your prep time so you can spend more time maximizing the flavor of the bots you're cooking up.Here's a small sample of some recipes to whet your appetite.",
+  "images": \[
     {
       "url": "https://us-api.asm.skype.com/v1/objects/0-eus-d8-ced0c9567ee7b0b233b987bd32f9eacd/views/img_preview"
     }
-  ],
-  "buttons": [
+  \],
+  "buttons": \[
     {
       "type": "messageBack",
-      "title": "&message back& <>= \"",
-      "text": "text = &message back& <>= \"",
-      "displayText": "displayText = &message back& <>= \"",
+      "title": "&message back& \<\>= \"",
+      "text": "text = &message back& \<\>= \"",
+      "displayText": "displayText = &message back& \<\>= \"",
       "value": {
         "text": "some text 2"
       }
     }
-  ]
+  \]
 }'
 			name = $null
 			thumbnailUrl = $null
@@ -315,14 +305,10 @@ $params = @{
 
 Update-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
 
+### EXAMPLE 5
 ```
-This example will update the content with attachments of a message using delegated permissions
-
-### Example 5: Update the reactions in a message using delegated permissions
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	messageType = "message"
@@ -342,7 +328,7 @@ $params = @{
 	}
 	body = @{
 		contentType = "html"
-		content = "<p><em>text</em></p><attachment id="e8f78756199240b88448ae0fc6db112d"></attachment><attachment id="638464e32834471ea202007da60a5ae6"></attachment>"
+		content = "\<p\>\<em\>text\</em\>\</p\>\<attachment id="e8f78756199240b88448ae0fc6db112d"\>\</attachment\>\<attachment id="638464e32834471ea202007da60a5ae6"\>\</attachment\>"
 	}
 	attachments = @(
 		@{
@@ -352,13 +338,16 @@ $params = @{
 			content = '{
   "title": "*title*",
   "subtitle": "*subtitle*",
-  "text": "Have you found yourself scratching your head trying to figure these questions out? Frustrated trying to access some of the goodies unique to the Microsoft Teams platform?  Well, fear not, Bot Builder SDK Extension for Teams in .NET and Node flavors is here!  Just head on over to Nuget or NPM to download our tasty helpers, sure to speed up your prep time so you can spend more time maximizing the flavor of the bots you're cooking up.Here’s a small sample of some recipes to whet your appetite.",
-  "images": [
+  "text": "Have you found yourself scratching your head trying to figure these questions out?
+Frustrated trying to access some of the goodies unique to the Microsoft Teams platform? 
+Well, fear not, Bot Builder SDK Extension for Teams in .NET and Node flavors is here! 
+Just head on over to Nuget or NPM to download our tasty helpers, sure to speed up your prep time so you can spend more time maximizing the flavor of the bots you're cooking up.Here's a small sample of some recipes to whet your appetite.",
+  "images": \[
     {
       "url": "https://us-api.asm.skype.com/v1/objects/0-eus-d8-ced0c9567ee7b0b233b987bd32f9eacd/views/img_preview"
     }
-  ],
-  "buttons": [
+  \],
+  "buttons": \[
     {
       "type": "openUrl",
       "image": "https://urlp.asm.skype.com/v1/url/content?url=https%3a%2f%2fcdn2.iconfinder.com%2fdata%2ficons%2fsocial-icons-33%2f128%2fTrello-128.png",
@@ -367,15 +356,15 @@ $params = @{
     },
     {
       "type": "imback",
-      "title": "&i am back& <>= \"",
-      "value": "&i am back& <>= \""
+      "title": "&i am back& \<\>= \"",
+      "value": "&i am back& \<\>= \""
     },
     {
       "type": "openUrl",
       "title": "Open URL",
       "value": "http://google.com"
     }
-  ]
+  \]
 }'
 			name = $null
 			thumbnailUrl = $null
@@ -387,23 +376,26 @@ $params = @{
 			content = '{
   "title": "*title*",
   "subtitle": "*subtitle*",
-  "text": "Have you found yourself scratching your head trying to figure these questions out? Frustrated trying to access some of the goodies unique to the Microsoft Teams platform?  Well, fear not, Bot Builder SDK Extension for Teams in .NET and Node flavors is here!  Just head on over to Nuget or NPM to download our tasty helpers, sure to speed up your prep time so you can spend more time maximizing the flavor of the bots you're cooking up.Here’s a small sample of some recipes to whet your appetite.",
-  "images": [
+  "text": "Have you found yourself scratching your head trying to figure these questions out?
+Frustrated trying to access some of the goodies unique to the Microsoft Teams platform? 
+Well, fear not, Bot Builder SDK Extension for Teams in .NET and Node flavors is here! 
+Just head on over to Nuget or NPM to download our tasty helpers, sure to speed up your prep time so you can spend more time maximizing the flavor of the bots you're cooking up.Here's a small sample of some recipes to whet your appetite.",
+  "images": \[
     {
       "url": "https://us-api.asm.skype.com/v1/objects/0-eus-d8-ced0c9567ee7b0b233b987bd32f9eacd/views/img_preview"
     }
-  ],
-  "buttons": [
+  \],
+  "buttons": \[
     {
       "type": "messageBack",
-      "title": "&message back& <>= \"",
-      "text": "text = &message back& <>= \"",
-      "displayText": "displayText = &message back& <>= \"",
+      "title": "&message back& \<\>= \"",
+      "text": "text = &message back& \<\>= \"",
+      "displayText": "displayText = &message back& \<\>= \"",
       "value": {
         "text": "some text 2"
       }
     }
-  ]
+  \]
 }'
 			name = $null
 			thumbnailUrl = $null
@@ -414,7 +406,7 @@ $params = @{
 	reactions = @(
 		@{
 			reactionType = "angry"
-			createdDateTime = [System.DateTime]::Parse("2018-10-21T08:10:30.489Z")
+			createdDateTime = \[System.DateTime\]::Parse("2018-10-21T08:10:30.489Z")
 			user = @{
 				application = $null
 				device = $null
@@ -427,7 +419,7 @@ $params = @{
 		}
 		@{
 			reactionType = "laugh"
-			createdDateTime = [System.DateTime]::Parse("2018-10-21T08:10:32.489Z")
+			createdDateTime = \[System.DateTime\]::Parse("2018-10-21T08:10:32.489Z")
 			user = @{
 				application = $null
 				device = $null
@@ -440,7 +432,7 @@ $params = @{
 		}
 		@{
 			reactionType = "like"
-			createdDateTime = [System.DateTime]::Parse("2018-10-21T02:17:14.67Z")
+			createdDateTime = \[System.DateTime\]::Parse("2018-10-21T02:17:14.67Z")
 			user = @{
 				application = $null
 				device = $null
@@ -453,7 +445,7 @@ $params = @{
 		}
 		@{
 			reactionType = "like"
-			createdDateTime = [System.DateTime]::Parse("2018-10-21T02:34:40.3Z")
+			createdDateTime = \[System.DateTime\]::Parse("2018-10-21T02:34:40.3Z")
 			user = @{
 				application = $null
 				device = $null
@@ -466,7 +458,7 @@ $params = @{
 		}
 		@{
 			reactionType = "like"
-			createdDateTime = [System.DateTime]::Parse("2018-10-21T08:10:25.489Z")
+			createdDateTime = \[System.DateTime\]::Parse("2018-10-21T08:10:25.489Z")
 			user = @{
 				application = $null
 				device = $null
@@ -479,7 +471,7 @@ $params = @{
 		}
 		@{
 			reactionType = "heart"
-			createdDateTime = [System.DateTime]::Parse("2018-10-21T08:10:31.489Z")
+			createdDateTime = \[System.DateTime\]::Parse("2018-10-21T08:10:31.489Z")
 			user = @{
 				application = $null
 				device = $null
@@ -492,7 +484,7 @@ $params = @{
 		}
 		@{
 			reactionType = "sad"
-			createdDateTime = [System.DateTime]::Parse("2018-10-21T08:10:33.489Z")
+			createdDateTime = \[System.DateTime\]::Parse("2018-10-21T08:10:33.489Z")
 			user = @{
 				application = $null
 				device = $null
@@ -505,7 +497,7 @@ $params = @{
 		}
 		@{
 			reactionType = "surprised"
-			createdDateTime = [System.DateTime]::Parse("2018-10-21T08:10:34.489Z")
+			createdDateTime = \[System.DateTime\]::Parse("2018-10-21T08:10:34.489Z")
 			user = @{
 				application = $null
 				device = $null
@@ -519,7 +511,7 @@ $params = @{
 	)
 	messageHistory = @(
 		@{
-			modifiedDateTime = [System.DateTime]::Parse("2018-10-21T08:10:30.489Z")
+			modifiedDateTime = \[System.DateTime\]::Parse("2018-10-21T08:10:30.489Z")
 			actions = "reactionAdded"
 			reaction = @{
 				reactionType = "angry"
@@ -535,7 +527,7 @@ $params = @{
 			}
 		}
 		@{
-			modifiedDateTime = [System.DateTime]::Parse("2018-10-21T08:10:32.489Z")
+			modifiedDateTime = \[System.DateTime\]::Parse("2018-10-21T08:10:32.489Z")
 			actions = "reactionAdded"
 			reaction = @{
 				reactionType = "laugh"
@@ -551,7 +543,7 @@ $params = @{
 			}
 		}
 		@{
-			modifiedDateTime = [System.DateTime]::Parse("2018-10-21T02:17:14.67Z")
+			modifiedDateTime = \[System.DateTime\]::Parse("2018-10-21T02:17:14.67Z")
 			actions = "reactionAdded"
 			reaction = @{
 				reactionType = "like"
@@ -567,7 +559,7 @@ $params = @{
 			}
 		}
 		@{
-			modifiedDateTime = [System.DateTime]::Parse("2018-10-21T02:34:40.3Z")
+			modifiedDateTime = \[System.DateTime\]::Parse("2018-10-21T02:34:40.3Z")
 			actions = "reactionAdded"
 			reaction = @{
 				reactionType = "like"
@@ -583,7 +575,7 @@ $params = @{
 			}
 		}
 		@{
-			modifiedDateTime = [System.DateTime]::Parse("2018-10-21T08:10:25.489Z")
+			modifiedDateTime = \[System.DateTime\]::Parse("2018-10-21T08:10:25.489Z")
 			actions = "reactionAdded"
 			reaction = @{
 				reactionType = "like"
@@ -599,7 +591,7 @@ $params = @{
 			}
 		}
 		@{
-			modifiedDateTime = [System.DateTime]::Parse("2018-10-21T08:10:31.489Z")
+			modifiedDateTime = \[System.DateTime\]::Parse("2018-10-21T08:10:31.489Z")
 			actions = "reactionAdded"
 			reaction = @{
 				reactionType = "heart"
@@ -615,7 +607,7 @@ $params = @{
 			}
 		}
 		@{
-			modifiedDateTime = [System.DateTime]::Parse("2018-10-21T08:10:33.489Z")
+			modifiedDateTime = \[System.DateTime\]::Parse("2018-10-21T08:10:33.489Z")
 			actions = "reactionAdded"
 			reaction = @{
 				reactionType = "sad"
@@ -631,7 +623,7 @@ $params = @{
 			}
 		}
 		@{
-			modifiedDateTime = [System.DateTime]::Parse("2018-10-21T08:10:34.489Z")
+			modifiedDateTime = \[System.DateTime\]::Parse("2018-10-21T08:10:34.489Z")
 			actions = "surprised"
 			reaction = @{
 				reactionType = "sad"
@@ -650,10 +642,6 @@ $params = @{
 }
 
 Update-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
-
-```
-This example will update the reactions in a message using delegated permissions
-
 
 ## PARAMETERS
 
@@ -1586,7 +1574,6 @@ Only applies to channel chat messages, not chat messages in a chat.
 Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
-[Update-MgBetaTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamChannelMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamchannelmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamchannelmessage)
 

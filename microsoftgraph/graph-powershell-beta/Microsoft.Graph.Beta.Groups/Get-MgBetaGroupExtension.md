@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupextension
@@ -11,9 +11,6 @@ schema: 2.0.0
 The collection of open extensions defined for the group.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupExtension](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupExtension?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -40,6 +37,22 @@ Get-MgBetaGroupExtension -InputObject <IGroupsIdentity> [-ExpandProperty <String
 The collection of open extensions defined for the group.
 Read-only.
 Nullable.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -300,8 +313,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgGroupExtension](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupextension)
-
 

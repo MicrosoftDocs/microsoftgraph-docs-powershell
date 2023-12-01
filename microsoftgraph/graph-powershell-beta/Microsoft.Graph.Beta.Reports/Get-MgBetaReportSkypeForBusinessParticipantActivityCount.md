@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportskypeforbusinessparticipantactivitycount
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function getSkypeForBusinessParticipantActivityCounts
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgReportSkypeForBusinessParticipantActivityCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSkypeForBusinessParticipantActivityCount?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Get-MgBetaReportSkypeForBusinessParticipantActivityCount -InputObject <IReportsI
 
 ## DESCRIPTION
 Invoke function getSkypeForBusinessParticipantActivityCounts
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -151,8 +164,6 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
   \[UserSignUpMetricId \<String\>\]: The unique identifier of userSignUpMetric
 
 ## RELATED LINKS
-[Get-MgReportSkypeForBusinessParticipantActivityCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSkypeForBusinessParticipantActivityCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportskypeforbusinessparticipantactivitycount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportskypeforbusinessparticipantactivitycount)
-
 

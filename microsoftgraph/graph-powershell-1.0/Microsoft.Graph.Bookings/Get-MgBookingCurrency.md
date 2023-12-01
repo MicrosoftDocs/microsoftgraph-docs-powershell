@@ -1,10 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingcurrency
 schema: 2.0.0
-ms.prod: bookings
-ms.prod: bookings
 ---
 
 # Get-MgBookingCurrency
@@ -13,9 +11,6 @@ ms.prod: bookings
 Get the properties of a bookingCurrency object that is available to a Microsoft Bookings business.
 Use the id property, which is the currency code, to specify the currency.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBookingCurrency](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingCurrency?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -44,17 +39,13 @@ Use the id property, which is the currency code, to specify the currency.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Bookings
+```
 
 Get-MgBookingCurrency
-
-```
-This example shows how to use the Get-MgBookingCurrency Cmdlet.
-
 
 ## PARAMETERS
 
@@ -265,7 +256,6 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[BookingStaffMemberBaseId \<String\>\]: The unique identifier of bookingStaffMemberBase
 
 ## RELATED LINKS
-[Get-MgBetaBookingCurrency](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingCurrency?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingcurrency](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingcurrency)
 

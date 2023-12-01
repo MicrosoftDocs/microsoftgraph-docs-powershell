@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/close-mgbetacomplianceediscoverycase
@@ -31,13 +31,12 @@ For details, see Close a case.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Close-MgBetaComplianceEdiscoveryCase Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Compliance
 Close-MgBetaComplianceEdiscoveryCase -CaseId $caseId
 ```
-This example shows how to use the Close-MgBetaComplianceEdiscoveryCase Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

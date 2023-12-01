@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/set-mgbetauserchatmessagereplyreaction
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action setReaction
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgUserChatMessageReplyReaction](/powershell/module/Microsoft.Graph.Users.Actions/Set-MgUserChatMessageReplyReaction?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45,6 +42,22 @@ Set-MgBetaUserChatMessageReplyReaction -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Invoke action setReaction
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -278,8 +291,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgUserChatMessageReplyReaction](/powershell/module/Microsoft.Graph.Users.Actions/Set-MgUserChatMessageReplyReaction?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/set-mgbetauserchatmessagereplyreaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/set-mgbetauserchatmessagereplyreaction)
-
 

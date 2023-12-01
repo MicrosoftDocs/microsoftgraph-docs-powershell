@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetauserchatactivitynotification
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Send-MgBetaUserChatActivityNotification
@@ -12,9 +11,6 @@ ms.prod: microsoft-teams
 Send an activity feed notification in the scope of a chat.
 For more information, see sending Teams activity notifications.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Send-MgUserChatActivityNotification](/powershell/module/Microsoft.Graph.Users.Actions/Send-MgUserChatActivityNotification?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -54,10 +50,11 @@ For more information, see sending Teams activity notifications.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Notify a user about a task created in a chat
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	Topic = @{
@@ -81,15 +78,11 @@ $params = @{
 }
 
 Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the Send-MgBetaUserChatActivityNotification Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Notify a user about an approval needed in a chat message
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	Topic = @{
@@ -113,15 +106,11 @@ $params = @{
 }
 
 Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
+
+### EXAMPLE 3
 ```
-This example shows how to use the Send-MgBetaUserChatActivityNotification Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Notify a user about an approval needed in a chat message using user principal name
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	Topic = @{
@@ -145,15 +134,11 @@ $params = @{
 }
 
 Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
+
+### EXAMPLE 4
 ```
-This example shows how to use the Send-MgBetaUserChatActivityNotification Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Notify a user about an event in relation to a chat
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	Topic = @{
@@ -178,11 +163,6 @@ $params = @{
 }
 
 Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
-```
-This example shows how to use the Send-MgBetaUserChatActivityNotification Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -500,7 +480,6 @@ If the value is text, this must be a plain text value.
 Optional when source is entityUrl; required when source is text.
 
 ## RELATED LINKS
-[Send-MgUserChatActivityNotification](/powershell/module/Microsoft.Graph.Users.Actions/Send-MgUserChatActivityNotification?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetauserchatactivitynotification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetauserchatactivitynotification)
 

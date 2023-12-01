@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamprimarychannelmember
@@ -11,9 +11,6 @@ schema: 2.0.0
 Delete a conversationMember from a channel.
 This operation is allowed only for channels with a membershipType value of private or shared.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamPrimaryChannelMember?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -35,6 +32,16 @@ This operation is allowed only for channels with a membershipType value of priva
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -201,7 +208,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamPrimaryChannelMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamprimarychannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamprimarychannelmember)
 

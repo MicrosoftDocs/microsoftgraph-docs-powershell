@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganizationsettingcontactinsight
 schema: 2.0.0
-ms.prod: insights
 ---
 
 # Update-MgBetaOrganizationSettingContactInsight
@@ -11,7 +10,7 @@ ms.prod: insights
 ## SYNOPSIS
 Update privacy settings to display or return the specified type of insights in an organization.
 The type of settings can be contact insights, item insights, or people insights.
-To learn more about customizing insights privacy for your organization, see:-  Customize item insights privacy -  Customize people insights privacy This API is available in the following national cloud deployments.
+To learn more about customizing insights privacy for your organization, see:\n-  Customize item insights privacy \n-  Customize people insights privacy This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -44,11 +43,12 @@ Update-MgBetaOrganizationSettingContactInsight -InputObject <IIdentityDirectoryM
 ## DESCRIPTION
 Update privacy settings to display or return the specified type of insights in an organization.
 The type of settings can be contact insights, item insights, or people insights.
-To learn more about customizing insights privacy for your organization, see:-  Customize item insights privacy -  Customize people insights privacy This API is available in the following national cloud deployments.
+To learn more about customizing insights privacy for your organization, see:\n-  Customize item insights privacy \n-  Customize people insights privacy This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaOrganizationSettingContactInsight Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{
 	IsEnabledInOrganization = $true
@@ -56,8 +56,6 @@ $params = @{
 }
 Update-MgBetaOrganizationSettingContactInsight -OrganizationId $organizationId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaOrganizationSettingContactInsight Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

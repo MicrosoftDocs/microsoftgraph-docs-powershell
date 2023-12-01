@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetainvitation
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update entity in invitations
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgInvitation](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgInvitation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,6 +46,18 @@ Update-MgBetaInvitation -InputObject <IIdentitySignInsIdentity> -BodyParameter <
 
 ## DESCRIPTION
 Update entity in invitations
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -15231,8 +15240,6 @@ Read-only.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
-[Update-MgInvitation](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgInvitation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetainvitation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetainvitation)
-
 

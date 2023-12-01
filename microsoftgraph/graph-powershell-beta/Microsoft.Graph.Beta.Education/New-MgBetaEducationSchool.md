@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationschool
 schema: 2.0.0
-ms.prod: education
 ---
 
 # New-MgBetaEducationSchool
@@ -11,9 +10,6 @@ ms.prod: education
 ## SYNOPSIS
 Create a school.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgEducationSchool](/powershell/module/Microsoft.Graph.Education/New-MgEducationSchool?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -39,10 +35,11 @@ Create a school.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.educationSchool"
@@ -68,11 +65,6 @@ $params = @{
 }
 
 New-MgBetaEducationSchool -BodyParameter $params
-```
-This example shows how to use the New-MgBetaEducationSchool Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -23530,7 +23522,6 @@ See standard \[user\] resource for additional details.
 Supports /$filter.
 
 ## RELATED LINKS
-[New-MgEducationSchool](/powershell/module/Microsoft.Graph.Education/New-MgEducationSchool?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationschool](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationschool)
 

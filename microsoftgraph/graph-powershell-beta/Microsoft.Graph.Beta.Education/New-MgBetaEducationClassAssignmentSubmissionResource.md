@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentsubmissionresource
 schema: 2.0.0
-ms.prod: education
 ---
 
 # New-MgBetaEducationClassAssignmentSubmissionResource
@@ -15,9 +14,6 @@ The operation will not succeed if the allowStudentsToAddResources flag is not se
 To create a new file-based resource, upload the file to the resources folder associated with the submission.
 If the file doesn't exist or is not in that folder, the POST request will fail.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgEducationClassAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassAssignmentSubmissionResource?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -59,11 +55,11 @@ If the file doesn't exist or is not in that folder, the POST request will fail.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Create an educationWordResource
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 $params = @{
 	resource = @{
@@ -75,14 +71,10 @@ $params = @{
 
 New-MgBetaEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will create an educationwordresource
-
-### Example 2: Create an educationLinkResource
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 $params = @{
 	resource = @{
@@ -94,14 +86,10 @@ $params = @{
 
 New-MgBetaEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 
+### EXAMPLE 3
 ```
-This example will create an educationlinkresource
-
-### Example 3: Create an educationFileResource
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 $params = @{
 	resource = @{
@@ -113,14 +101,10 @@ $params = @{
 
 New-MgBetaEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 
+### EXAMPLE 4
 ```
-This example will create an educationfileresource
-
-### Example 4: Create an educationExcelResource
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 $params = @{
 	resource = @{
@@ -132,14 +116,10 @@ $params = @{
 
 New-MgBetaEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 
+### EXAMPLE 5
 ```
-This example will create an educationexcelresource
-
-### Example 5: Create an educationPowerPointResource
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 $params = @{
 	resource = @{
@@ -151,14 +131,10 @@ $params = @{
 
 New-MgBetaEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 
+### EXAMPLE 6
 ```
-This example will create an educationpowerpointresource
-
-### Example 6: Create an educationMediaResource
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 $params = @{
 	resource = @{
@@ -169,10 +145,6 @@ $params = @{
 }
 
 New-MgBetaEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
-
-```
-This example will create an educationmediaresource
-
 
 ## PARAMETERS
 
@@ -457,7 +429,6 @@ This property is read-only.
   \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
 
 ## RELATED LINKS
-[New-MgEducationClassAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassAssignmentSubmissionResource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentsubmissionresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentsubmissionresource)
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingrecording
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Get-MgBetaUserOnlineMeetingRecording
@@ -48,14 +47,13 @@ Get-MgBetaUserOnlineMeetingRecording -InputObject <ICloudCommunicationsIdentity>
 Get recording for the navigation property onlineMeetings from users
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaUserOnlineMeetingRecording Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOnlineMeetingRecording -UserId $userId -OnlineMeetingId $onlineMeetingId
 ```
-This example shows how to use the Get-MgBetaUserOnlineMeetingRecording Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

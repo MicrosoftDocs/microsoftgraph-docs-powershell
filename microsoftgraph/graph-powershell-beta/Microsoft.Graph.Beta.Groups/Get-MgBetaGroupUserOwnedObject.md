@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupuserownedobject
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Get-MgBetaGroupUserOwnedObject
@@ -32,6 +31,22 @@ Get-MgBetaGroupUserOwnedObject
 Retrieve a list of recently deleted application and group objects owned by the specified user.
 This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -150,5 +165,4 @@ BODYPARAMETER \<IPaths16ZshinGroupsMicrosoftGraphGetuserownedobjectsPostRequestb
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupuserownedobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupuserownedobject)
-
 

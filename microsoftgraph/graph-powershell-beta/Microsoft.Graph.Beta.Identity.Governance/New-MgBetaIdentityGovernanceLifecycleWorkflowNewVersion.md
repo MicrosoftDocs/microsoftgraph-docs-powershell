@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancelifecycleworkflownewversion
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new version of the workflow object.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernanceLifecycleWorkflowNewVersion](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceLifecycleWorkflowNewVersion?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,8 +46,9 @@ Create a new version of the workflow object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaIdentityGovernanceLifecycleWorkflowNewVersion Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
 	Workflow = @{
@@ -94,8 +92,6 @@ $params = @{
 }
 New-MgBetaIdentityGovernanceLifecycleWorkflowNewVersion -WorkflowId $workflowId -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaIdentityGovernanceLifecycleWorkflowNewVersion Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -15330,7 +15326,6 @@ Can't be true for a disabled workflow (where isEnabled is false).
     \[VersionNumber \<Int32?\>\]: The version of the workflow.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
 
 ## RELATED LINKS
-[New-MgIdentityGovernanceLifecycleWorkflowNewVersion](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceLifecycleWorkflowNewVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancelifecycleworkflownewversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancelifecycleworkflownewversion)
 

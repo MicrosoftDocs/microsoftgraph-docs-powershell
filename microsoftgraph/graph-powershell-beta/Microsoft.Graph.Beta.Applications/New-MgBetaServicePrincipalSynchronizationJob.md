@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalsynchronizationjob
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # New-MgBetaServicePrincipalSynchronizationJob
@@ -13,9 +12,6 @@ Create new synchronization job with a default synchronization schema.
 The job is created in a disabled state.
 Call Start job to start synchronization.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalSynchronizationJob?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -56,16 +52,15 @@ Call Start job to start synchronization.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaServicePrincipalSynchronizationJob Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{
 	TemplateId = "BoxOutDelta"
 }
 New-MgBetaServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaServicePrincipalSynchronizationJob Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -771,7 +766,6 @@ Some settings are inherited from the template.
   \[Value \<String\>\]: Value for this key-value pair
 
 ## RELATED LINKS
-[New-MgServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalSynchronizationJob?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalsynchronizationjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalsynchronizationjob)
 

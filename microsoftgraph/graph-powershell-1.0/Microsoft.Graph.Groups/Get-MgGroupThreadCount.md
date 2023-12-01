@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthreadcount
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the number of the resource
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupThreadCount](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupThreadCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -27,6 +24,18 @@ Get-MgGroupThreadCount -InputObject <IGroupsIdentity> [-Filter <String>] [<Commo
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -129,8 +138,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
-[Get-MgBetaGroupThreadCount](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupThreadCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthreadcount](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthreadcount)
-
 

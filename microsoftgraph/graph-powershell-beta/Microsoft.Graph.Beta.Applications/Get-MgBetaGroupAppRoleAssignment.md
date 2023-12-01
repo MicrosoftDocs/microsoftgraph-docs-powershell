@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetagroupapproleassignment
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # Get-MgBetaGroupAppRoleAssignment
@@ -11,9 +10,6 @@ ms.prod: groups
 ## SYNOPSIS
 Represents the app roles a group has been granted for an application.
 Supports $expand.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/Get-MgGroupAppRoleAssignment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -41,11 +37,12 @@ Represents the app roles a group has been granted for an application.
 Supports $expand.
 
 ## EXAMPLES
-### Example 1: Get appRoleAssignments granted to a group
 
-```powershell
+### EXAMPLE 1
+```
 Get-MgBetaGroupAppRoleAssignment -GroupId '2692d278-8323-4094-b286-e0ffce5e54a5' |
   Format-List
+```
 
 AppRoleId            : 00000000-0000-0000-0000-000000000000
 CreatedDateTime      : 7/29/2021 10:08:49 AM
@@ -57,9 +54,6 @@ PrincipalType        : Group
 ResourceDisplayName  : Common Data Service
 ResourceId           : 93af1c70-e87f-45df-8780-8af2d7afd05e
 AdditionalProperties : {}
-```
-
-This example get all app role assignments granted to the specified group.
 
 ## PARAMETERS
 
@@ -325,7 +319,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgGroupAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/Get-MgGroupAppRoleAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetagroupapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetagroupapproleassignment)
 

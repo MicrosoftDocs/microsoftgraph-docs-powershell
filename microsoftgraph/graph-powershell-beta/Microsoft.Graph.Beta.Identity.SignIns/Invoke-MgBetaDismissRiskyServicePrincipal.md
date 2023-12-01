@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetadismissriskyserviceprincipal
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Invoke-MgBetaDismissRiskyServicePrincipal
@@ -13,9 +12,6 @@ Dismiss the risk of one or more riskyServicePrincipal objects.
 This action sets the targeted service principal account's risk level to none.
 You can dismiss up to 60 service principal accounts in one request.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgDismissRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgDismissRiskyServicePrincipal?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -39,8 +35,9 @@ You can dismiss up to 60 service principal accounts in one request.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaDismissRiskyServicePrincipal Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	ServicePrincipalIds = @(
@@ -49,8 +46,6 @@ $params = @{
 }
 Invoke-MgBetaDismissRiskyServicePrincipal -BodyParameter $params
 ```
-This example shows how to use the Invoke-MgBetaDismissRiskyServicePrincipal Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -166,7 +161,6 @@ BODYPARAMETER \<IPathsUc5289IdentityprotectionRiskyserviceprincipalsMicrosoftGra
   \[ServicePrincipalIds \<String\[\]\>\]:
 
 ## RELATED LINKS
-[Invoke-MgDismissRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgDismissRiskyServicePrincipal?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetadismissriskyserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetadismissriskyserviceprincipal)
 

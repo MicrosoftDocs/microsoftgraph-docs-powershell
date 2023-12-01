@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetasignsiteinformationprotectiondigest
@@ -40,6 +40,18 @@ Invoke-MgBetaSignSiteInformationProtectionDigest -InputObject <ISitesIdentity>
 
 ## DESCRIPTION
 Invoke action signDigest
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -244,5 +256,4 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetasignsiteinformationprotectiondigest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetasignsiteinformationprotectiondigest)
-
 

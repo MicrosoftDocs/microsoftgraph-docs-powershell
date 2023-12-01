@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationtokenissuancepolicybyref
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # New-MgApplicationTokenIssuancePolicyByRef
@@ -11,9 +10,6 @@ ms.prod: applications
 ## SYNOPSIS
 Assign a tokenIssuancePolicy to an application.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaApplicationTokenIssuancePolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationTokenIssuancePolicyByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -46,21 +42,17 @@ Assign a tokenIssuancePolicy to an application.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Applications
+```
 
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/v1.0/policies/tokenIssuancePolicies/cd3d9b57-0aee-4f25-8ee3-ac74ef5986a9"
 }
 
 New-MgApplicationTokenIssuancePolicyByRef -ApplicationId $applicationId -BodyParameter $params
-```
-This example shows how to use the New-MgApplicationTokenIssuancePolicyByRef Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -234,7 +226,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaApplicationTokenIssuancePolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationTokenIssuancePolicyByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationtokenissuancepolicybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationtokenissuancepolicybyref)
 

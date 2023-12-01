@@ -1,10 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityconditionalaccesspolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgIdentityConditionalAccessPolicy
@@ -12,9 +10,6 @@ ms.prod: identity-and-sign-in
 ## SYNOPSIS
 Retrieve the properties and relationships of a conditionalAccessPolicy object.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -42,11 +37,12 @@ Retrieve the properties and relationships of a conditionalAccessPolicy object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Get a list of all conditional access policies in Azure AD.
 
-```powershell
+### EXAMPLE 1
+```
 Connect-MgGraph -Scopes 'Policy.Read.All'
 Get-MgIdentityConditionalAccessPolicy |Format-List
+```
 
 Conditions           : Microsoft.Graph.PowerShell.Models.MicrosoftGraphConditionalAccessConditionSet
 CreatedDateTime      : 1/13/2022 6:35:35 AM
@@ -69,14 +65,11 @@ ModifiedDateTime     : 7/29/2022 9:08:39 AM
 SessionControls      : Microsoft.Graph.PowerShell.Models.MicrosoftGraphConditionalAccessSessionControls
 State                : enabled
 AdditionalProperties : {}
+
+### EXAMPLE 2
 ```
-
-This example retrieves all the conditional access policies in Azure AD.
-
-### Example 2: Get a conditional access policy by Id
-
-```powershell
 Connect-MgGraph -Scopes 'Policy.Read.All'
+```
 
 Get-MgIdentityConditionalAccessPolicy -ConditionalAccessPolicyId '5e7615b8-dbe4-4cc1-810c-26adb77a3518' | 
   Format-List
@@ -90,10 +83,7 @@ Id                   : 5e7615b8-dbe4-4cc1-810c-26adb77a3518
 ModifiedDateTime     : 7/29/2022 9:08:10 AM
 SessionControls      : Microsoft.Graph.PowerShell.Models.MicrosoftGraphConditionalAccessSessionControls
 State                : enabled
-AdditionalProperties : {[@odata.context, https://graph.microsoft.com/v1.0/$metadata#identity/conditionalAccess/policies/$entity]}
-```
-
-This command retrieves the conditional access by Id.
+AdditionalProperties : {\[@odata.context, https://graph.microsoft.com/v1.0/$metadata#identity/conditionalAccess/policies/$entity\]}
 
 ## PARAMETERS
 
@@ -352,7 +342,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityconditionalaccesspolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityconditionalaccesspolicy)
 

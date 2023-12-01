@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetasubscribecommunicationcalltotone
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Invoke-MgBetaSubscribeCommunicationCallToTone
@@ -11,9 +10,6 @@ ms.prod: cloud-communications
 ## SYNOPSIS
 Subscribe to DTMF (dual-tone multi-frequency signaling) to allow you to be notified when the user presses keys on a 'Dialpad'.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgSubscribeCommunicationCallToTone](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgSubscribeCommunicationCallToTone?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -48,21 +44,17 @@ Subscribe to DTMF (dual-tone multi-frequency signaling) to allow you to be notif
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	clientContext = "fd1c7836-4d84-4e24-b6aa-23188688cc54"
 }
 
 Invoke-MgBetaSubscribeCommunicationCallToTone -CallId $callId -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgBetaSubscribeCommunicationCallToTone Cmdlet.
-
 
 ## PARAMETERS
 
@@ -215,7 +207,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgSubscribeCommunicationCallToTone](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgSubscribeCommunicationCallToTone?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetasubscribecommunicationcalltotone](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetasubscribecommunicationcalltotone)
 

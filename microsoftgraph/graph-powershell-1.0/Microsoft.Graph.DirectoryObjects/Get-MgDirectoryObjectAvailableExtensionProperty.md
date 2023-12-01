@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.DirectoryObjects-help.xml
 Module Name: Microsoft.Graph.DirectoryObjects
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectavailableextensionproperty
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Get-MgDirectoryObjectAvailableExtensionProperty
@@ -32,17 +31,13 @@ Return all directory extension definitions that have been registered in a direct
 The following entities support extension properties: This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.DirectoryObjects
+```
 
 Get-MgDirectoryObjectAvailableExtensionProperty
-
-```
-This example shows how to use the Get-MgDirectoryObjectAvailableExtensionProperty Cmdlet.
-
 
 ## PARAMETERS
 

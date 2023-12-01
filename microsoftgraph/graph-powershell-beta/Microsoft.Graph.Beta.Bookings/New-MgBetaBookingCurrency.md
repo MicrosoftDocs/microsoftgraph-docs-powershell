@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingcurrency
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Add new entity to bookingCurrencies
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgBookingCurrency](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingCurrency?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ New-MgBetaBookingCurrency -BodyParameter <IMicrosoftGraphBookingCurrency> [-What
 
 ## DESCRIPTION
 Add new entity to bookingCurrencies
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -149,8 +162,6 @@ Read-only.
 For example, the currency symbol for the US dollar and for the Australian dollar is $.
 
 ## RELATED LINKS
-[New-MgBookingCurrency](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingCurrency?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingcurrency](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingcurrency)
-
 

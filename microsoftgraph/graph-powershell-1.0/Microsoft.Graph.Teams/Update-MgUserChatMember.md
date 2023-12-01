@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserchatmember
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property members in users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserChatMember](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaUserChatMember?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -43,6 +40,22 @@ Update-MgUserChatMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoft
 
 ## DESCRIPTION
 Update the navigation property members in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -299,8 +312,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Update-MgBetaUserChatMember](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaUserChatMember?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserchatmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserchatmember)
-
 

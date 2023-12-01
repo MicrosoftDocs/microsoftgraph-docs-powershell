@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mginvitation
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update entity in invitations
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaInvitation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaInvitation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,6 +44,18 @@ Update-MgInvitation -InputObject <IIdentitySignInsIdentity> -BodyParameter <IMic
 
 ## DESCRIPTION
 Update entity in invitations
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -9502,8 +9511,6 @@ The language format should be in ISO 639.
 The default is en-US.
 
 ## RELATED LINKS
-[Update-MgBetaInvitation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaInvitation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mginvitation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mginvitation)
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/stop-mgbetabookingbusinesscalendarview
 schema: 2.0.0
-ms.prod: bookings
 ---
 
 # Stop-MgBetaBookingBusinessCalendarView
@@ -11,9 +10,6 @@ ms.prod: bookings
 ## SYNOPSIS
 Cancel the specified bookingAppointment in the specified bookingBusiness, and send a message to the involved customer and staff members.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Stop-MgBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Bookings/Stop-MgBookingBusinessCalendarView?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,6 +43,22 @@ Stop-MgBetaBookingBusinessCalendarView -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Cancel the specified bookingAppointment in the specified bookingBusiness, and send a message to the involved customer and staff members.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -234,8 +246,6 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Stop-MgBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Bookings/Stop-MgBookingBusinessCalendarView?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/stop-mgbetabookingbusinesscalendarview](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/stop-mgbetabookingbusinesscalendarview)
-
 

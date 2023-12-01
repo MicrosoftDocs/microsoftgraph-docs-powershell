@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/stop-mgcommunicationcallmediaprocessing
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Stop-MgCommunicationCallMediaProcessing
@@ -15,9 +14,6 @@ The cancelMediaProcessing method cancels any operation that is in-process as wel
 For example, this method can be used to clean up the IVR operation queue for a new media operation.
 However, it will not cancel a subscribeToTone operation because it operates independent of any operation queue.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Stop-MgBetaCommunicationCallMediaProcessing](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Stop-MgBetaCommunicationCallMediaProcessing?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -56,16 +52,15 @@ However, it will not cancel a subscribeToTone operation because it operates inde
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Stop-MgCommunicationCallMediaProcessing Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.CloudCommunications
 $params = @{
 	ClientContext = "clientContext-value"
 }
 Stop-MgCommunicationCallMediaProcessing -CallId $callId -BodyParameter $params
 ```
-This example shows how to use the Stop-MgCommunicationCallMediaProcessing Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -213,7 +208,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Stop-MgBetaCommunicationCallMediaProcessing](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Stop-MgBetaCommunicationCallMediaProcessing?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/stop-mgcommunicationcallmediaprocessing](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/stop-mgcommunicationcallmediaprocessing)
 

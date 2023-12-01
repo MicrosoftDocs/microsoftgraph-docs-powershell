@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriveitem
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to items for drives
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDriveItem](/powershell/module/Microsoft.Graph.Files/New-MgDriveItem?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -79,6 +76,22 @@ New-MgBetaDriveItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGrap
 
 ## DESCRIPTION
 Create new navigation property to items for drives
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -53560,8 +53573,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[New-MgDriveItem](/powershell/module/Microsoft.Graph.Files/New-MgDriveItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriveitem)
-
 

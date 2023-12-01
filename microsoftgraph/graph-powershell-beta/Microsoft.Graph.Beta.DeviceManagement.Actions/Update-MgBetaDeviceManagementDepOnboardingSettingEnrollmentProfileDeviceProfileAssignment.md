@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/update-mgbetadevicemanagementdeponboardingsettingenrollmentprofiledeviceprofileassignment
@@ -44,6 +44,22 @@ Update-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfileDeviceProfileA
 
 ## DESCRIPTION
 Invoke action updateDeviceProfileAssignment
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -261,5 +277,4 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/update-mgbetadevicemanagementdeponboardingsettingenrollmentprofiledeviceprofileassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/update-mgbetadevicemanagementdeponboardingsettingenrollmentprofiledeviceprofileassignment)
-
 

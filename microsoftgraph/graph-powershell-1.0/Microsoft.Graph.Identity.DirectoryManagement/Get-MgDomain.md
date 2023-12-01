@@ -1,10 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomain
 schema: 2.0.0
-ms.prod: directory-management
-ms.prod: directory-management
 ---
 
 # Get-MgDomain
@@ -12,9 +10,6 @@ ms.prod: directory-management
 ## SYNOPSIS
 Retrieve the properties and relationships of domain object.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDomain?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -41,10 +36,11 @@ Retrieve the properties and relationships of domain object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Get a list of domain objects
 
-```powershell
+### EXAMPLE 1
+```
 Get-MgDomain | Format-List
+```
 
 AuthenticationType               : Managed
 AvailabilityStatus               :
@@ -63,10 +59,7 @@ ServiceConfigurationRecords      :
 State                            : Microsoft.Graph.PowerShell.Models.MicrosoftGraphDomainState
 SupportedServices                : {Email, OfficeCommunicationsOnline}
 VerificationDnsRecords           :
-AdditionalProperties             : {[@odata.context, https://graph.microsoft.com/v1.0/$metadata#domains/$entity]}
-```
-
-This example retrieves a list of the domain objects.
+AdditionalProperties             : {\[@odata.context, https://graph.microsoft.com/v1.0/$metadata#domains/$entity\]}
 
 ## PARAMETERS
 
@@ -294,7 +287,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDomain?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomain](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomain)
 

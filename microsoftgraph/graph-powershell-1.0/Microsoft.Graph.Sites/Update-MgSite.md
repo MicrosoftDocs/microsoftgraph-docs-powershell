@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsite
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update entity in sites
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSite](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSite?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -66,17 +63,13 @@ Update-MgSite -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphSite>
 Update entity in sites
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Sites
+```
 
 Get-MgSite -SiteId $siteId
-```
-This example shows how to use the Update-MgSite Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -42561,7 +42554,6 @@ Read-only.
 This relationship can only be used to load a specific term set.
 
 ## RELATED LINKS
-[Update-MgBetaSite](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSite?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsite](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsite)
 

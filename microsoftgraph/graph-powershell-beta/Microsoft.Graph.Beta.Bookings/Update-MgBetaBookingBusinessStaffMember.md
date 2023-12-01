@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinessstaffmember
 schema: 2.0.0
-ms.prod: bookings
 ---
 
 # Update-MgBetaBookingBusinessStaffMember
@@ -11,9 +10,6 @@ ms.prod: bookings
 ## SYNOPSIS
 Update the properties of a bookingStaffMember in the specified bookingBusiness.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusinessStaffMember?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -52,8 +48,9 @@ Update the properties of a bookingStaffMember in the specified bookingBusiness.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaBookingBusinessStaffMember Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Bookings
 $params = @{
 	WorkingHours = @(
@@ -121,8 +118,6 @@ $params = @{
 }
 Update-MgBetaBookingBusinessStaffMember -BookingBusinessId $bookingBusinessId -BookingStaffMemberId $bookingStaffMemberId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaBookingBusinessStaffMember Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -481,7 +476,6 @@ For example, 17:00:00.0000000.
 For example, 08:00:00.0000000.
 
 ## RELATED LINKS
-[Update-MgBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusinessStaffMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinessstaffmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinessstaffmember)
 

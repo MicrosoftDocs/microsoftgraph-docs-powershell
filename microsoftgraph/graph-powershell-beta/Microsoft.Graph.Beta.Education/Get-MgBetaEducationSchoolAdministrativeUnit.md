@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschooladministrativeunit
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Get-MgBetaEducationSchoolAdministrativeUnit
@@ -11,9 +10,6 @@ ms.prod: education
 ## SYNOPSIS
 Retrieve the directory administrativeUnit that corresponds to this educationSchool.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEducationSchoolAdministrativeUnit](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSchoolAdministrativeUnit?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -32,6 +28,22 @@ Get-MgBetaEducationSchoolAdministrativeUnit -InputObject <IEducationIdentity> [-
 ## DESCRIPTION
 Retrieve the directory administrativeUnit that corresponds to this educationSchool.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -131,8 +143,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgEducationSchoolAdministrativeUnit](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSchoolAdministrativeUnit?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschooladministrativeunit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschooladministrativeunit)
-
 

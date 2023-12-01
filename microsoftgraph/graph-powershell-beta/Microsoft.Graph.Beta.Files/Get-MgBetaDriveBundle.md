@@ -1,10 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivebundle
 schema: 2.0.0
-ms.prod: sharepoint
-ms.prod: sharepoint
 ---
 
 # Get-MgBetaDriveBundle
@@ -12,9 +10,6 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Retrieve the metadata for a bundle\]\[\] based on the unique ID of the bundle.
 This API is available in the following \[national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDriveBundle](/powershell/module/Microsoft.Graph.Files/Get-MgDriveBundle?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -42,28 +37,20 @@ Retrieve the metadata for a bundle\]\[\] based on the unique ID of the bundle.
 This API is available in the following \[national cloud deployments.
 
 ## EXAMPLES
-### Example 1: List all bundles in a drive
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Files
+```
 
 Get-MgBetaDriveBundle -DriveId $driveId
 
+### EXAMPLE 2
 ```
-This example will list all bundles in a drive
-
-### Example 2: List all photo albums in a drive
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Files
-
-Get-MgBetaDriveBundle -DriveId $driveId -Filter "bundle/album ne null" 
-
 ```
-This example will list all photo albums in a drive
 
+Get-MgBetaDriveBundle -DriveId $driveId -Filter "bundle/album ne null"
 
 ## PARAMETERS
 
@@ -306,7 +293,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgDriveBundle](/powershell/module/Microsoft.Graph.Files/Get-MgDriveBundle?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivebundle](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivebundle)
 

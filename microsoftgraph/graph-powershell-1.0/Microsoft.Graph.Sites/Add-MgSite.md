@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mgsite
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Add-MgSite
 
 ## SYNOPSIS
 Follow a user's site or multiple sites.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Add-MgBetaSite](/powershell/module/Microsoft.Graph.Beta.Sites/Add-MgBetaSite?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,6 +26,18 @@ Add-MgSite -BodyParameter <IPathsV2U0Z1SitesMicrosoftGraphAddPostRequestbodyCont
 
 ## DESCRIPTION
 Follow a user's site or multiple sites.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -9189,8 +9197,6 @@ This relationship can only be used to load a specific term set.
   \[TermStores \<IMicrosoftGraphTermStore\[\]\>\]: The collection of termStores under this site.
 
 ## RELATED LINKS
-[Add-MgBetaSite](/powershell/module/Microsoft.Graph.Beta.Sites/Add-MgBetaSite?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mgsite](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mgsite)
-
 

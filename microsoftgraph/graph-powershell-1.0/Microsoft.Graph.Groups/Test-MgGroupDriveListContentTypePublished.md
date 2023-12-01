@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/test-mggroupdrivelistcontenttypepublished
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function isPublished
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Test-MgBetaGroupDriveListContentTypePublished](/powershell/module/Microsoft.Graph.Beta.Groups/Test-MgBetaGroupDriveListContentTypePublished?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,6 +25,22 @@ Test-MgGroupDriveListContentTypePublished -InputObject <IGroupsIdentity> [<Commo
 
 ## DESCRIPTION
 Invoke function isPublished
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -145,8 +158,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
-[Test-MgBetaGroupDriveListContentTypePublished](/powershell/module/Microsoft.Graph.Beta.Groups/Test-MgBetaGroupDriveListContentTypePublished?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/test-mggroupdrivelistcontenttypepublished](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/test-mggroupdrivelistcontenttypepublished)
-
 

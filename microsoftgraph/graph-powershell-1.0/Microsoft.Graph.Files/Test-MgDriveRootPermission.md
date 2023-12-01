@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/test-mgdriverootpermission
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action validatePermission
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Test-MgBetaDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/Test-MgBetaDriveRootPermission?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -43,6 +40,22 @@ Test-MgDriveRootPermission -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Invoke action validatePermission
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -232,8 +245,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Test-MgBetaDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/Test-MgBetaDriveRootPermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/test-mgdriverootpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.files/test-mgdriverootpermission)
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaforwardgroupcalendarevent
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Invoke-MgBetaForwardGroupCalendarEvent
@@ -13,9 +12,6 @@ This action allows the organizer or attendee of a meeting event to forward the \
 If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action \nalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's \ncopy of the meeting event.
 This convenience is not available when forwarding from an Outlook.com account.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgForwardGroupCalendarEvent](/powershell/module/Microsoft.Graph.Groups/Invoke-MgForwardGroupCalendarEvent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -54,10 +50,11 @@ This convenience is not available when forwarding from an Outlook.com account.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users.Actions
+```
 
 $params = @{
 	ToRecipients = @(
@@ -73,11 +70,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Invoke-MgBetaForwardUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
-```
-This example shows how to use the Invoke-MgBetaForwardGroupCalendarEvent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -310,7 +302,6 @@ TORECIPIENTS \<IMicrosoftGraphRecipient\[\]\>: .
     \[Name \<String\>\]: The display name of an entity instance.
 
 ## RELATED LINKS
-[Invoke-MgForwardGroupCalendarEvent](/powershell/module/Microsoft.Graph.Groups/Invoke-MgForwardGroupCalendarEvent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaforwardgroupcalendarevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaforwardgroupcalendarevent)
 

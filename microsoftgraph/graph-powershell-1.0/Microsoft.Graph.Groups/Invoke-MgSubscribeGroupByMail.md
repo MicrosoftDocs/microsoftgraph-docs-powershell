@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgsubscribegroupbymail
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # Invoke-MgSubscribeGroupByMail
@@ -12,9 +11,6 @@ ms.prod: groups
 Calling this method will enable the current user to receive email notifications for this group, about new posts, events, and files in that group.
 Supported for Microsoft 365 groups only.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaSubscribeGroupByMail](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaSubscribeGroupByMail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -35,13 +31,12 @@ Supported for Microsoft 365 groups only.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgSubscribeGroupByMail Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Groups
 Invoke-MgSubscribeGroupByMail -GroupId $groupId
 ```
-This example shows how to use the Invoke-MgSubscribeGroupByMail Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -175,7 +170,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
-[Invoke-MgBetaSubscribeGroupByMail](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaSubscribeGroupByMail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgsubscribegroupbymail](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgsubscribegroupbymail)
 

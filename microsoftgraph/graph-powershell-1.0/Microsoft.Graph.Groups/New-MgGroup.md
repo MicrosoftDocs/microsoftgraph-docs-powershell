@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroup
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # New-MgGroup
@@ -14,9 +13,6 @@ You can create the following types of groups: This operation returns by default 
 These default properties are noted in the Properties section.
 To get properties that are not returned by default, do a GET operation and specify the properties in a $select OData query option.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroup](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -65,17 +61,15 @@ To get properties that are not returned by default, do a GET operation and speci
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Create a new group
 
-```powershell
+### EXAMPLE 1
+```
 New-MgGroup -DisplayName 'Test Group' -MailEnabled:$False  -MailNickName 'testgroup' -SecurityEnabled
+```
 
 Id                                   DisplayName Description GroupTypes
 --                                   ----------- ----------- ----------
 15bb6c2c-ac32-41a1-b9ec-b6300b8b8e52 Test Group              {}
-```
-
-This example creates a new group.
 
 ## PARAMETERS
 
@@ -25415,7 +25409,6 @@ Read-only.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
-[New-MgBetaGroup](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroup](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroup)
 

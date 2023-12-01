@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaprivilegedroleroleassignment
@@ -54,41 +54,36 @@ Get-MgBetaPrivilegedRoleRoleAssignment -InputObject <IIdentityGovernanceIdentity
 Get entity from privilegedRoleAssignments by key
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaPrivilegedRoleRoleAssignment Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaPrivilegedRoleRoleAssignment -PrivilegedRoleAssignmentId $privilegedRoleAssignmentId
 ```
-This example shows how to use the Get-MgBetaPrivilegedRoleRoleAssignment Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaPrivilegedRoleRoleAssignment Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaPrivilegedRoleRoleAssignment
 ```
-This example shows how to use the Get-MgBetaPrivilegedRoleRoleAssignment Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 3: Using the Get-MgBetaPrivilegedRoleRoleAssignment Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.Governance
-Get-MgBetaPrivilegedRoleRoleAssignment -Filter "isElevated eq true" 
+
+### EXAMPLE 3
 ```
-This example shows how to use the Get-MgBetaPrivilegedRoleRoleAssignment Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 4: Using the Get-MgBetaPrivilegedRoleRoleAssignment Cmdlet
-```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-Get-MgBetaPrivilegedRoleRoleAssignment -Filter "isElevated eq true and expirationDateTime eq null" 
+Get-MgBetaPrivilegedRoleRoleAssignment -Filter "isElevated eq true"
 ```
-This example shows how to use the Get-MgBetaPrivilegedRoleRoleAssignment Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 5: Using the Get-MgBetaPrivilegedRoleRoleAssignment Cmdlet
-```powershell
+
+### EXAMPLE 4
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-Get-MgBetaPrivilegedRoleRoleAssignment -Filter "isElevated eq true and expirationDateTime ne null or isElevated eq false" 
+Get-MgBetaPrivilegedRoleRoleAssignment -Filter "isElevated eq true and expirationDateTime eq null"
 ```
-This example shows how to use the Get-MgBetaPrivilegedRoleRoleAssignment Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### EXAMPLE 5
+```
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+Get-MgBetaPrivilegedRoleRoleAssignment -Filter "isElevated eq true and expirationDateTime ne null or isElevated eq false"
+```
 
 ## PARAMETERS
 

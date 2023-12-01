@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityattacksimulationpayload
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property payloads in security
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSecurityAttackSimulationPayload](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityAttackSimulationPayload?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -53,6 +50,18 @@ Update-MgSecurityAttackSimulationPayload -InputObject <ISecurityIdentity>
 
 ## DESCRIPTION
 Update the navigation property payloads in security
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -660,8 +669,6 @@ For example, if a user changes their display name, the API might show the new va
   \[Email \<String\>\]: Email address of the user.
 
 ## RELATED LINKS
-[Update-MgBetaSecurityAttackSimulationPayload](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityAttackSimulationPayload?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityattacksimulationpayload](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityattacksimulationpayload)
-
 

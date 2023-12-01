@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouppermissiongrant
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Get-MgBetaGroupPermissionGrant
@@ -11,9 +10,6 @@ ms.prod: microsoft-teams
 ## SYNOPSIS
 The permissions that have been granted for a group to a specific application.
 Supports $expand.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupPermissionGrant](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupPermissionGrant?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -41,13 +37,12 @@ The permissions that have been granted for a group to a specific application.
 Supports $expand.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaGroupPermissionGrant Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Groups
 Get-MgBetaGroupPermissionGrant -GroupId $groupId
 ```
-This example shows how to use the Get-MgBetaGroupPermissionGrant Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -307,7 +302,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgGroupPermissionGrant](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupPermissionGrant?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouppermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouppermissiongrant)
 

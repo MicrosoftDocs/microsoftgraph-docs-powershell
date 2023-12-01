@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdriverootthumbnail
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to thumbnails for groups
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupDriveRootThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveRootThumbnail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -44,6 +41,22 @@ New-MgGroupDriveRootThumbnail -InputObject <IFilesIdentity> -BodyParameter <IMic
 
 ## DESCRIPTION
 Create new navigation property to thumbnails for groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -330,8 +343,6 @@ This is only available when a folder thumbnail is requested.
   \[Width \<Int32?\>\]: The width of the thumbnail, in pixels.
 
 ## RELATED LINKS
-[New-MgBetaGroupDriveRootThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveRootThumbnail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdriverootthumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdriverootthumbnail)
-
 

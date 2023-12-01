@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationsynchronizationprofileerror
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Get-MgBetaEducationSynchronizationProfileError
@@ -37,13 +36,12 @@ Get-MgBetaEducationSynchronizationProfileError -InputObject <IEducationIdentity>
 All errors associated with this synchronization profile.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaEducationSynchronizationProfileError Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Education
 Get-MgBetaEducationSynchronizationProfileError -EducationSynchronizationProfileId $educationSynchronizationProfileId
 ```
-This example shows how to use the Get-MgBetaEducationSynchronizationProfileError Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

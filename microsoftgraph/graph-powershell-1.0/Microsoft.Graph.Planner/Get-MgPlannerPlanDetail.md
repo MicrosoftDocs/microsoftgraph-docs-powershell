@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerplandetail
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # Get-MgPlannerPlanDetail
@@ -11,9 +10,6 @@ ms.prod: planner
 ## SYNOPSIS
 Retrieve the properties and relationships of a plannerPlanDetails object.
 This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPlannerPlanDetail](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerPlanDetail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -34,17 +30,13 @@ Retrieve the properties and relationships of a plannerPlanDetails object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Planner
+```
 
 Get-MgPlannerPlanDetail -PlannerPlanId $plannerPlanId
-
-```
-This example shows how to use the Get-MgPlannerPlanDetail Cmdlet.
-
 
 ## PARAMETERS
 
@@ -132,7 +124,6 @@ INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaPlannerPlanDetail](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerPlanDetail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerplandetail](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerplandetail)
 
