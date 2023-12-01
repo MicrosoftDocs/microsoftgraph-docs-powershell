@@ -39,20 +39,28 @@ Get-MgBetaPolicyAppManagementPolicyApplyTo -InputObject <IIdentitySignInsIdentit
 Collection of application and service principals to which a policy is applied.
 
 ## EXAMPLES
+### Example 1: Get applications and service principal objects applied to an app management policy
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaPolicyAppManagementPolicyApplyTo -AppManagementPolicyId $appManagementPolicyId
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
+This example will get applications and service principal objects applied to an app management policy
 
-Get-MgBetaPolicyAppManagementPolicyApplyTo -AppManagementPolicyId $appManagementPolicyId -Property "id,appId,displayName,createdDateTime"
+### Example 2: Get specific properties of applications and service principal objects applied to an app management policy using $select query option
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaPolicyAppManagementPolicyApplyTo -AppManagementPolicyId $appManagementPolicyId -Property "id,appId,displayName,createdDateTime" 
+
+```
+This example will get specific properties of applications and service principal objects applied to an app management policy using $select query option
+
 
 ## PARAMETERS
 

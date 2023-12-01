@@ -41,13 +41,17 @@ Retrieve the metadata for a bundle\]\[\] based on the unique ID of the bundle.
 This API is available in the following \[national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Get a bundle and its children in a single call
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Files
-```
 
-Get-MgDriveItem -DriveId $driveId -DriveItemId $driveItemId -ExpandProperty "children"
+Get-MgDriveItem -DriveId $driveId -DriveItemId $driveItemId -ExpandProperty "children" 
+
+```
+This example will get a bundle and its children in a single call
+
 
 ## PARAMETERS
 

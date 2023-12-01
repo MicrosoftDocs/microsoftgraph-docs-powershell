@@ -46,9 +46,8 @@ Create a new tiIndicator object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the New-MgBetaSecurityTiIndicator Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{
 	Action = "alert"
@@ -73,6 +72,8 @@ $params = @{
 }
 New-MgBetaSecurityTiIndicator -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaSecurityTiIndicator Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

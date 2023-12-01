@@ -37,13 +37,16 @@ This action sets the targeted user's risk level to high.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Confirm User sign in compormised 
+```powershell
 Connect-MgBetaGraph -Scopes "IdentityRiskyUser.ReadWrite.All"
 Select-MgBetaProfile beta
 Confirm-MgBetaRiskyUserCompromised -UserIds "254562e7-a745-496d-b98a-f6770b23152a","8f2ef8bf-53be-45f3-822d-366f51067458"
+
 ```
+The command confirms the two users as compormised users.
+
+
 
 ## PARAMETERS
 

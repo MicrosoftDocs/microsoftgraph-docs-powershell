@@ -43,18 +43,17 @@ Create and register a new device in the organization.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 $params = @{
 	accountEnabled = $false
 	alternativeSecurityIds = @(
 		@{
 			type = 2
-			key = \[System.Text.Encoding\]::ASCII.GetBytes("base64Y3YxN2E1MWFlYw==")
+			key = [System.Text.Encoding]::ASCII.GetBytes("base64Y3YxN2E1MWFlYw==")
 		}
 	)
 	deviceId = "4c299165-6e8f-4b45-a5ba-c5d250a707ff"
@@ -64,6 +63,11 @@ $params = @{
 }
 
 New-MgDevice -BodyParameter $params
+```
+This example shows how to use the New-MgDevice Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

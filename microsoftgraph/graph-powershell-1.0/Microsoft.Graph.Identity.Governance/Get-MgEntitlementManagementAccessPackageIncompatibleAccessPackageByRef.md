@@ -29,16 +29,6 @@ Retrieve a list of the accessPackage objects that have been marked as incompatib
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessPackageId

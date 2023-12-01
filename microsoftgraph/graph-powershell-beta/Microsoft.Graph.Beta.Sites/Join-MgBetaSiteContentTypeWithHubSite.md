@@ -49,9 +49,8 @@ Associate a content type\]\[contentType\] with a list of hub sites.
 This API is available in the following \[national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Join-MgBetaSiteContentTypeWithHubSite Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 $params = @{
 	HubSiteUrls = @(
@@ -61,6 +60,8 @@ $params = @{
 }
 Join-MgBetaSiteContentTypeWithHubSite -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
 ```
+This example shows how to use the Join-MgBetaSiteContentTypeWithHubSite Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

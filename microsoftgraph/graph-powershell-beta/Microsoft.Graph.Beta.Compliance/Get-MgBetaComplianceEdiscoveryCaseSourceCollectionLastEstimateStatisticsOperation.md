@@ -31,12 +31,13 @@ Get the last estimateStatisticsOperation object associated with a source collect
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgBetaComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperation Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Get-MgBetaComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperation -CaseId $caseId -SourceCollectionId $sourceCollectionId
 ```
+This example shows how to use the Get-MgBetaComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperation Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

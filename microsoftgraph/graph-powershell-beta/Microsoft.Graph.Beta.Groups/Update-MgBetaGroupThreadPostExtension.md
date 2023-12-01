@@ -47,11 +47,10 @@ See the table in the Permissions section for the list of resources that support 
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.outlookServices.openTypeExtension"
@@ -67,6 +66,11 @@ $params = @{
 }
 
 Update-MgBetaGroupThreadPostExtension -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -ExtensionId $extensionId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaGroupThreadPostExtension Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

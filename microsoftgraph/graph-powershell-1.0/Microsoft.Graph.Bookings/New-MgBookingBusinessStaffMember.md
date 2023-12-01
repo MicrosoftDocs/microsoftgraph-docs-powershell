@@ -46,11 +46,11 @@ Create a new bookingStaffMember in the specified bookingBusiness.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Bookings
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.bookingStaffMember"
@@ -132,6 +132,10 @@ $params = @{
 }
 
 New-MgBookingBusinessStaffMember -BookingBusinessId $bookingBusinessId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBookingBusinessStaffMember Cmdlet.
+
 
 ## PARAMETERS
 

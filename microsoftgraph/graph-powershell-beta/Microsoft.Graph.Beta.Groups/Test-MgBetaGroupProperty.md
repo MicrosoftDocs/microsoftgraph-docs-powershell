@@ -58,9 +58,8 @@ However, you can validate both the mail nickname and the display name and receiv
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Test-MgBetaGroupProperty Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 $params = @{
 	DisplayName = "Myprefix_test_mysuffix"
@@ -69,6 +68,8 @@ $params = @{
 }
 Test-MgBetaGroupProperty -GroupId $groupId -BodyParameter $params
 ```
+This example shows how to use the Test-MgBetaGroupProperty Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

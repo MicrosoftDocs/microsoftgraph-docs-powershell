@@ -34,13 +34,17 @@ Delete a tag object permanently.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Remove-MgTeamTag -TeamId $teamId -TeamworkTagId $teamworkTagId
+
+```
+This example shows how to use the Remove-MgTeamTag Cmdlet.
+
 
 ## PARAMETERS
 

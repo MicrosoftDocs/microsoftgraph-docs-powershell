@@ -49,9 +49,8 @@ As part of the request validation for this method, a proof of possession of an e
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Remove-MgServicePrincipalKey Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Applications
 $params = @{
 	KeyId = "f0b0b335-1d71-4883-8f98-567911bfdca6"
@@ -59,6 +58,8 @@ $params = @{
 }
 Remove-MgServicePrincipalKey -ServicePrincipalId $servicePrincipalId -BodyParameter $params
 ```
+This example shows how to use the Remove-MgServicePrincipalKey Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -32,13 +32,17 @@ Nullable.
 Supports $expand, $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1), and $select nested in $expand.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 Get-MgApplicationOwner -ApplicationId $applicationId
+
+```
+This example shows how to use the Get-MgApplicationOwner Cmdlet.
+
 
 ## PARAMETERS
 

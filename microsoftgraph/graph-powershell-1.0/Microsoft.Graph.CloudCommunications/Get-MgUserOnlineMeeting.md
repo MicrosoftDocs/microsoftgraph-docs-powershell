@@ -46,30 +46,42 @@ For details, see Online meeting artifacts and permissions.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Retrieve an online meeting by meeting ID
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 # A UPN can also be used as -UserId.
 Get-MgUserOnlineMeeting -UserId $userId -OnlineMeetingId $onlineMeetingId
 
-### EXAMPLE 2
 ```
+This example will retrieve an online meeting by meeting id
+
+### Example 2: Retrieve an online meeting by joinWebUrl
+
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 # A UPN can also be used as -UserId.
-Get-MgUserOnlineMeeting -UserId $userId -Filter "JoinWebUrl eq 'https://teams.microsoft.com/l/meetup-join/19:meeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2@thread.v2/0?context"
+Get-MgUserOnlineMeeting -UserId $userId -Filter "JoinWebUrl eq 'https://teams.microsoft.com/l/meetup-join/19:meeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2@thread.v2/0?context" 
 
-### EXAMPLE 3
 ```
+This example will retrieve an online meeting by joinweburl
+
+### Example 3: Retrieve an online meeting by joinMeetingId
+
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 # A UPN can also be used as -UserId.
-Get-MgUserOnlineMeeting -UserId $userId -Filter "joinMeetingIdSettings/joinMeetingId eq '1234567890'"
+Get-MgUserOnlineMeeting -UserId $userId -Filter "joinMeetingIdSettings/joinMeetingId eq '1234567890'" 
+
+```
+This example will retrieve an online meeting by joinmeetingid
+
 
 ## PARAMETERS
 

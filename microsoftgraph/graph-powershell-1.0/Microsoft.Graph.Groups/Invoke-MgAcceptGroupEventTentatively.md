@@ -54,15 +54,13 @@ For more information on how to propose a time, and how to receive and accept a n
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Users.Actions
-```
 
 $params = @{
-	Comment = "I may not be able to make this week.
-How about next week?"
+	Comment = "I may not be able to make this week. How about next week?"
 	SendResponse = $true
 	ProposedNewTime = @{
 		Start = @{
@@ -78,6 +76,11 @@ How about next week?"
 
 # A UPN can also be used as -UserId.
 Invoke-MgAcceptUserEventTentatively -UserId $userId -EventId $eventId -BodyParameter $params
+```
+This example shows how to use the Invoke-MgAcceptGroupEventTentatively Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

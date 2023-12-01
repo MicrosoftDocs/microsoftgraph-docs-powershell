@@ -34,15 +34,17 @@ Supports $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1); Suppo
 For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
 
 ## EXAMPLES
+### Example 1: Get an owner of a group
 
-### EXAMPLE 1
-```
+```powershell
 Get-MgBetaGroupOwner -GroupId '4d5f57a1-85e0-41dd-8282-ff995ad5e1c3'
-```
 
 Id                                   DeletedDateTime
 --                                   ---------------
 5fc5c052-8774-4258-8705-0b4ab3e9a2df
+```
+
+This example gets the owner of the specified group.
 
 ## PARAMETERS
 

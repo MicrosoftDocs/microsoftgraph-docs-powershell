@@ -50,20 +50,28 @@ You can find the log in Microsoft Entra audit logs under the KeyManagement categ
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Get the BitLocker key by specifying the key **id**
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Get-MgBetaInformationProtectionBitlockerRecoveryKey -BitlockerRecoveryKeyId $bitlockerRecoveryKeyId
 
-{{ Add output here }}
+```
+This example will get the bitlocker key by specifying the key **id**
+
+### Example 2: Get the BitLocker key with the **key** property by specifying the key **id**
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaInformationProtectionBitlockerRecoveryKey -BitlockerRecoveryKeyId $bitlockerRecoveryKeyId -Property "key" 
+
+```
+This example will get the bitlocker key with the **key** property by specifying the key **id**
+
 
 ## PARAMETERS
 

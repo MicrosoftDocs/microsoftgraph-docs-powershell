@@ -42,14 +42,18 @@ Retrieve the properties and relationships of a contact object.
 There are two scenarios where an app can get a contact in another user's contact folder: This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.PersonalContacts
-```
 
 # A UPN can also be used as -UserId.
 Get-MgUserContact -UserId $userId
+
+```
+This example shows how to use the Get-MgUserContact Cmdlet.
+
 
 ## PARAMETERS
 

@@ -52,9 +52,8 @@ The requested MailTips are returned in a mailTips collection.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgBetaUserMailTip Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
 	EmailAddresses = @(
@@ -66,6 +65,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 Get-MgBetaUserMailTip -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the Get-MgBetaUserMailTip Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -53,11 +53,10 @@ The table in the Permissions section lists the resources that support open exten
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Groups
-```
 
 $params = @{
 	Post = @{
@@ -65,7 +64,7 @@ $params = @{
 			ContentType = ""
 			Content = "content-value"
 		}
-		ReceivedDateTime = \[System.DateTime\]::Parse("datetime-value")
+		ReceivedDateTime = [System.DateTime]::Parse("datetime-value")
 		HasAttachments = $true
 		From = @{
 			EmailAddress = @{
@@ -89,8 +88,8 @@ $params = @{
 			}
 		)
 		ConversationId = "conversationId-value"
-		CreatedDateTime = \[System.DateTime\]::Parse("datetime-value")
-		LastModifiedDateTime = \[System.DateTime\]::Parse("datetime-value")
+		CreatedDateTime = [System.DateTime]::Parse("datetime-value")
+		LastModifiedDateTime = [System.DateTime]::Parse("datetime-value")
 		ChangeKey = "changeKey-value"
 		Categories = @(
 			"categories-value"
@@ -101,7 +100,7 @@ $params = @{
 		Attachments = @(
 			@{
 				"@odata.type" = "#microsoft.graph.fileAttachment"
-				LastModifiedDateTime = \[System.DateTime\]::Parse("datetime-value")
+				LastModifiedDateTime = [System.DateTime]::Parse("datetime-value")
 				Name = "name-value"
 				ContentType = "contentType-value"
 				Size = 99
@@ -113,6 +112,11 @@ $params = @{
 }
 
 Invoke-MgReplyGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params
+```
+This example shows how to use the Invoke-MgReplyGroupThreadPostInReplyTo Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

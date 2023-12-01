@@ -43,20 +43,28 @@ Read the properties and relationships of an identityUserFlowAttributeAssignment 
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Get the details of an identityUserFlowAttributeAssignment
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgIdentityB2XUserFlowUserAttributeAssignment -B2xIdentityUserFlowId $b2xIdentityUserFlowId -IdentityUserFlowAttributeAssignmentId $identityUserFlowAttributeAssignmentId
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Identity.SignIns
-```
+This example will get the details of an identityuserflowattributeassignment
 
-Get-MgIdentityB2XUserFlowUserAttributeAssignment -B2xIdentityUserFlowId $b2xIdentityUserFlowId -IdentityUserFlowAttributeAssignmentId $identityUserFlowAttributeAssignmentId -ExpandProperty "userAttribute"
+### Example 2: Get the details of an identityUserFlowAttributeAssignment and expand userAttribute
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Get-MgIdentityB2XUserFlowUserAttributeAssignment -B2xIdentityUserFlowId $b2xIdentityUserFlowId -IdentityUserFlowAttributeAssignmentId $identityUserFlowAttributeAssignmentId -ExpandProperty "userAttribute" 
+
+```
+This example will get the details of an identityuserflowattributeassignment and expand userattribute
+
 
 ## PARAMETERS
 

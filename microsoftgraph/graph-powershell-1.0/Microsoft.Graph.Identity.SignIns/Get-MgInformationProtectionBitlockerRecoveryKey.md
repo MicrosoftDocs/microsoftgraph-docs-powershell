@@ -50,20 +50,28 @@ For more information on audit logs for bitlocker recovery keys, see the KeyManag
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Get the BitLocker key by specifying the key id
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.SignIns
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Get-MgInformationProtectionBitlockerRecoveryKey -BitlockerRecoveryKeyId $bitlockerRecoveryKeyId
 
-{{ Add output here }}
+```
+This example will get the bitlocker key by specifying the key id
+
+### Example 2: Get the BitLocker key with the **key** property
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Get-MgInformationProtectionBitlockerRecoveryKey -BitlockerRecoveryKeyId $bitlockerRecoveryKeyId -Property "key" 
+
+```
+This example will get the bitlocker key with the **key** property
+
 
 ## PARAMETERS
 

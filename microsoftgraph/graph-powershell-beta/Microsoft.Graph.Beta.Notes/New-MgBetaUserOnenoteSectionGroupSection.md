@@ -54,11 +54,11 @@ Create a new section in the specified section group.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Notes
-```
 
 $params = @{
 	displayName = "Section name"
@@ -66,6 +66,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserOnenoteSectionGroupSection -UserId $userId -SectionGroupId $sectionGroupId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaUserOnenoteSectionGroupSection Cmdlet.
+
 
 ## PARAMETERS
 

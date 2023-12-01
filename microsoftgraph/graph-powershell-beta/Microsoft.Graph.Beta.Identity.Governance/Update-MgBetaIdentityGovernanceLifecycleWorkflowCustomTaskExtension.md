@@ -57,11 +57,10 @@ Update the properties of a customTaskExtension object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	displayName = "Grant manager access to mailbox and OneDrive"
@@ -88,6 +87,11 @@ $params = @{
 }
 
 Update-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension -CustomTaskExtensionId $customTaskExtensionId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

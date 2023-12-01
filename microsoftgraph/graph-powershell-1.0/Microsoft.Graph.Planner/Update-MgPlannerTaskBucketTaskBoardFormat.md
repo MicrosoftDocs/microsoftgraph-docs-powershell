@@ -46,17 +46,21 @@ Update-MgPlannerTaskBucketTaskBoardFormat -InputObject <IPlannerIdentity> -IfMat
 Update the navigation property bucketTaskBoardFormat in planner
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Planner
-```
 
 $params = @{
 	orderHint = "A6673H Ejkl!"
 }
 
 Update-MgPlannerTaskBucketTaskBoardFormat -PlannerTaskId $plannerTaskId -BodyParameter $params-If-Match W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
+```
+This example shows how to use the Update-MgPlannerTaskBucketTaskBoardFormat Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

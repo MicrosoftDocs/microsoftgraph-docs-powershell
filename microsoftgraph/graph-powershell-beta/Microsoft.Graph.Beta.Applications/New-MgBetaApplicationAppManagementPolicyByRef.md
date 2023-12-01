@@ -50,17 +50,21 @@ Only one policy object can be assigned to an application or service principal.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}"
 }
 
 New-MgBetaApplicationAppManagementPolicyByRef -ApplicationId $applicationId -BodyParameter $params
+```
+This example shows how to use the New-MgBetaApplicationAppManagementPolicyByRef Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

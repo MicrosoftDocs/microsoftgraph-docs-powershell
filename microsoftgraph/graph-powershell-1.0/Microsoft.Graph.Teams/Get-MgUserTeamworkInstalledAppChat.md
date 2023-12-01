@@ -34,13 +34,17 @@ Retrieve the chat of the specified user and Teams app.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgUserTeamworkInstalledAppChat -UserId $userId -UserScopeTeamsAppInstallationId $userScopeTeamsAppInstallationId
+
+```
+This example shows how to use the Get-MgUserTeamworkInstalledAppChat Cmdlet.
+
 
 ## PARAMETERS
 

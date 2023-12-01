@@ -35,12 +35,13 @@ To learn more about searches in eDiscovery, see Collect data for a case in eDisc
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Invoke-MgBetaEstimateSecurityCaseEdiscoveryCaseSearchStatistics Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Invoke-MgBetaEstimateSecurityCaseEdiscoveryCaseSearchStatistics -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId
 ```
+This example shows how to use the Invoke-MgBetaEstimateSecurityCaseEdiscoveryCaseSearchStatistics Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -46,17 +46,21 @@ Grant the specified group access to submit print jobs to the associated printerS
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CloudPrint
-```
 
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/v1.0/groups/{groupId}"
 }
 
 New-MgPrintShareAllowedGroupByRef -PrinterShareId $printerShareId -BodyParameter $params
+
+```
+This example shows how to use the New-MgPrintShareAllowedGroupByRef Cmdlet.
+
 
 ## PARAMETERS
 

@@ -42,13 +42,17 @@ Read a directory extension definition represented by an extensionProperty object
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 Get-MgApplicationExtensionProperty -ApplicationId $applicationId
+
+```
+This example shows how to use the Get-MgApplicationExtensionProperty Cmdlet.
+
 
 ## PARAMETERS
 

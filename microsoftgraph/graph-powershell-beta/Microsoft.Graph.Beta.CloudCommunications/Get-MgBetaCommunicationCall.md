@@ -34,20 +34,28 @@ Retrieve the properties and relationships of a call object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Getting a Peer-to-Peer call
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 Get-MgBetaCommunicationCall -CallId $callId
 
-### EXAMPLE 2
 ```
+This example shows getting a peer-to-peer call
+
+### Example 2: Getting a group call
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 Get-MgBetaCommunicationCall -CallId $callId
+
+```
+This example shows getting a group call
+
 
 ## PARAMETERS
 

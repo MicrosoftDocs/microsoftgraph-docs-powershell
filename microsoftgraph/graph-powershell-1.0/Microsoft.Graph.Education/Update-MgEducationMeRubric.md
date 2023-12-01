@@ -60,17 +60,21 @@ That rubric can be retrieved using GET /education/classes/{class-id}/assignments
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	displayName = "Example Credit Rubric after display name patch"
 }
 
 Update-MgEducationMeRubric -EducationRubricId $educationRubricId -BodyParameter $params
+```
+This example shows how to use the Update-MgEducationMeRubric Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

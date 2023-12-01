@@ -38,11 +38,11 @@ Create a new educationSchool object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.educationSchool"
@@ -68,6 +68,10 @@ $params = @{
 }
 
 New-MgEducationSchool -BodyParameter $params
+
+```
+This example shows how to use the New-MgEducationSchool Cmdlet.
+
 
 ## PARAMETERS
 

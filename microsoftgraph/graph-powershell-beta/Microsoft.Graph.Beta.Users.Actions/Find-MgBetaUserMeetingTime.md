@@ -62,9 +62,8 @@ In scenarios like test environments where the input parameters and calendar data
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Find-MgBetaUserMeetingTime Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
 	Attendees = @(
@@ -109,6 +108,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 Find-MgBetaUserMeetingTime -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the Find-MgBetaUserMeetingTime Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

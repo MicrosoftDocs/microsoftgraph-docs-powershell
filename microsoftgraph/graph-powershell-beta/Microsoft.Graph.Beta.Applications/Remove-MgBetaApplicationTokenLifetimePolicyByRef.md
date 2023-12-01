@@ -34,13 +34,17 @@ Remove a tokenLifetimePolicy from an application or servicePrincipal.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 Remove-MgBetaApplicationTokenLifetimePolicyByRef -ApplicationId $applicationId -TokenLifetimePolicyId $tokenLifetimePolicyId
+```
+This example shows how to use the Remove-MgBetaApplicationTokenLifetimePolicyByRef Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

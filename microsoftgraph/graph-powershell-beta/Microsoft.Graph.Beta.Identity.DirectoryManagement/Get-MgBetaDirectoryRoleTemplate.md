@@ -42,13 +42,17 @@ Retrieve the properties and relationships of a directoryroletemplate object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaDirectoryRoleTemplate
+
+```
+This example shows how to use the Get-MgBetaDirectoryRoleTemplate Cmdlet.
+
 
 ## PARAMETERS
 

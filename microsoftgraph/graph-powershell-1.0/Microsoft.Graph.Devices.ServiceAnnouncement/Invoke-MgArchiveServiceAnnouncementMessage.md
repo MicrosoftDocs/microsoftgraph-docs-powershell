@@ -35,11 +35,11 @@ Archive a list of serviceUpdateMessages for the signed in user.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
-```
 
 $params = @{
 	messageIds = @(
@@ -49,6 +49,10 @@ $params = @{
 }
 
 Invoke-MgArchiveServiceAnnouncementMessage -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgArchiveServiceAnnouncementMessage Cmdlet.
+
 
 ## PARAMETERS
 

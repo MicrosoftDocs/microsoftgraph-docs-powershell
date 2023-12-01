@@ -33,12 +33,13 @@ Restore a printer's default settings to the values specified by the manufacturer
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Restore-MgPrintPrinterFactoryDefault Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
 Restore-MgPrintPrinterFactoryDefault -PrinterId $printerId
 ```
+This example shows how to use the Restore-MgPrintPrinterFactoryDefault Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

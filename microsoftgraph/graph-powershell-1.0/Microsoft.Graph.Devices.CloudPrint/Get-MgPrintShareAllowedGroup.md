@@ -28,13 +28,17 @@ Retrieve a list of groups that have been granted access to submit print jobs to 
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CloudPrint
-```
 
 Get-MgPrintShareAllowedGroup -PrinterShareId $printerShareId
+
+```
+This example shows how to use the Get-MgPrintShareAllowedGroup Cmdlet.
+
 
 ## PARAMETERS
 

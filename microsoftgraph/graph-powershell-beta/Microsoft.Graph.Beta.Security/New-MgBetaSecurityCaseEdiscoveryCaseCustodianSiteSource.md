@@ -51,11 +51,11 @@ Create a new siteSource object associated with an eDiscovery custodian.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	site = @{
@@ -64,6 +64,10 @@ $params = @{
 }
 
 New-MgBetaSecurityCaseEdiscoveryCaseCustodianSiteSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaSecurityCaseEdiscoveryCaseCustodianSiteSource Cmdlet.
+
 
 ## PARAMETERS
 

@@ -37,11 +37,10 @@ Create a new connectedOrganization object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	displayName = "Connected organization name"
@@ -57,6 +56,11 @@ $params = @{
 }
 
 New-MgEntitlementManagementConnectedOrganization -BodyParameter $params
+```
+This example shows how to use the New-MgEntitlementManagementConnectedOrganization Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -39,11 +39,11 @@ Create a new printerShare for the specified printer.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
-```
 
 $params = @{
 	name = "name-value"
@@ -51,6 +51,10 @@ $params = @{
 }
 
 New-MgBetaPrintShare -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaPrintShare Cmdlet.
+
 
 ## PARAMETERS
 

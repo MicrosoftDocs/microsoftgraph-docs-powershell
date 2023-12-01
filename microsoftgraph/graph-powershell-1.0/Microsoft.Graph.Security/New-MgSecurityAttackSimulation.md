@@ -42,11 +42,11 @@ New-MgSecurityAttackSimulation -BodyParameter <IMicrosoftGraphSimulation> [-What
 Create an attack simulation campaign for a tenant.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 $params = @{
 	displayName = "Graph Simulation"
@@ -81,6 +81,10 @@ $params = @{
 }
 
 New-MgSecurityAttackSimulation -BodyParameter $params
+
+```
+This example shows how to use the New-MgSecurityAttackSimulation Cmdlet.
+
 
 ## PARAMETERS
 

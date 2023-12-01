@@ -56,22 +56,25 @@ As a workaround, use the List group transitive memberOf API.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Check group memberships for a directory object
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
-```
 
 $params = @{
 	SecurityEnabledOnly = $false
 }
 
 Get-MgBetaDirectoryObjectMemberGroup -DirectoryObjectId $directoryObjectId -BodyParameter $params
+```
+This example shows how to use the Get-MgBetaGroupMemberGroup Cmdlet.
 
-### EXAMPLE 2
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Check group memberships for the signed-in user
+
+```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
-```
 
 $params = @{
 	SecurityEnabledOnly = $true
@@ -79,6 +82,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserMemberGroup -UserId $userId -BodyParameter $params
+```
+This example shows how to use the Get-MgBetaGroupMemberGroup Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

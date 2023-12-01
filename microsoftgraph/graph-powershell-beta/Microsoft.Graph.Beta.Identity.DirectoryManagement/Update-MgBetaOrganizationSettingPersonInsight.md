@@ -47,9 +47,8 @@ The type of settings can be contact insights, item insights, or people insights.
 To learn more about customizing insights privacy for your organization, see:-  Customize item insights privacy -  Customize people insights privacy This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Update-MgBetaOrganizationSettingPersonInsight Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{
 	IsEnabledInOrganization = $true
@@ -57,6 +56,8 @@ $params = @{
 }
 Update-MgBetaOrganizationSettingPersonInsight -OrganizationId $organizationId -BodyParameter $params
 ```
+This example shows how to use the Update-MgBetaOrganizationSettingPersonInsight Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

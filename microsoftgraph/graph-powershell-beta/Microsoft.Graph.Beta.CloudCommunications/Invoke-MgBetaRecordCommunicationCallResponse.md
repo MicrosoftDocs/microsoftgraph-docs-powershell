@@ -64,11 +64,11 @@ The bot must download the recording promptly after the recording operation finis
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 $params = @{
 	bargeInAllowed = $true
@@ -90,6 +90,10 @@ $params = @{
 }
 
 Invoke-MgBetaRecordCommunicationCallResponse -CallId $callId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaRecordCommunicationCallResponse Cmdlet.
+
 
 ## PARAMETERS
 
