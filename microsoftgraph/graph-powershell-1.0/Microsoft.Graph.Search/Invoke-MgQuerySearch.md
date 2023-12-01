@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/invoke-mgquerysearch
 schema: 2.0.0
+ms.prod: search
 ---
 
 # Invoke-MgQuerySearch

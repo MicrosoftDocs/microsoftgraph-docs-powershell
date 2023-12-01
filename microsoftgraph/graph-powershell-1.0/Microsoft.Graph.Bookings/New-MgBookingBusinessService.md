@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessservice
 schema: 2.0.0
+ms.prod: bookings
 ---
 
 # New-MgBookingBusinessService

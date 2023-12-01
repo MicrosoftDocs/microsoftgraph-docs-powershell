@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DirectoryObjects-help.xml
 Module Name: Microsoft.Graph.DirectoryObjects
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectavailableextensionproperty
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Get-MgDirectoryObjectAvailableExtensionProperty

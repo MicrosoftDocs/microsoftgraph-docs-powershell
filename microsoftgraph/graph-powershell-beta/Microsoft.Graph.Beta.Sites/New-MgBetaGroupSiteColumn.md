@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitecolumn
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # New-MgBetaGroupSiteColumn

@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.Beta.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontact
 schema: 2.0.0
+ms.prod: outlook
+ms.prod: outlook
 ---
 
 # Get-MgBetaUserContact
