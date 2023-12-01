@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationlandingpage
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to landingPages for security
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityAttackSimulationLandingPage](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulationLandingPage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -364,6 +367,7 @@ This property is read-only.
   \[Email \<String\>\]: Email address of the user.
 
 ## RELATED LINKS
+[New-MgSecurityAttackSimulationLandingPage](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulationLandingPage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationlandingpage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationlandingpage)
 

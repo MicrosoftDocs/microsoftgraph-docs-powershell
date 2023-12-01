@@ -13,6 +13,9 @@ Remove access to a DriveItem.
 Only sharing permissions that are not inherited can be deleted.The inheritedFrom property must be null.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupDriveItemPermission](/powershell/module/Microsoft.Graph.Files/Remove-MgGroupDriveItemPermission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -229,6 +232,7 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgGroupDriveItemPermission](/powershell/module/Microsoft.Graph.Files/Remove-MgGroupDriveItemPermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetagroupdriveitempermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetagroupdriveitempermission)
 

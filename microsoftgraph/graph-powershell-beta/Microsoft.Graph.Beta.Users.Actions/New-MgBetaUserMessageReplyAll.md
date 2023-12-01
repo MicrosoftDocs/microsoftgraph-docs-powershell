@@ -17,6 +17,9 @@ Send the draft message in a subsequent operation.
 Alternatively, reply-all to a message in a single action.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserMessageReplyAll](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMessageReplyAll?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded1 (Default)
@@ -503,6 +506,7 @@ Read-only.
   \[WebLink \<String\>\]:
 
 ## RELATED LINKS
+[New-MgUserMessageReplyAll](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMessageReplyAll?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermessagereplyall](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermessagereplyall)
 

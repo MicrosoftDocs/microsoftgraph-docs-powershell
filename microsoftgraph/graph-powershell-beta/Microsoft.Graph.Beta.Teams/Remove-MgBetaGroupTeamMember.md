@@ -11,6 +11,9 @@ schema: 2.0.0
 Remove a conversationMember from a team.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupTeamMember](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamMember?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -210,6 +213,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Remove-MgGroupTeamMember](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteammember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteammember)
 

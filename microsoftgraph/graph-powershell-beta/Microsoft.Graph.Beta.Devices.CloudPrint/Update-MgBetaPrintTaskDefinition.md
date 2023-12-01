@@ -13,6 +13,9 @@ Update a task definition.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPrintTaskDefinition](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintTaskDefinition?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -325,6 +328,7 @@ Read-only.
     \[Event \<String\>\]: printEvent
 
 ## RELATED LINKS
+[Update-MgPrintTaskDefinition](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintTaskDefinition?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprinttaskdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprinttaskdefinition)
 

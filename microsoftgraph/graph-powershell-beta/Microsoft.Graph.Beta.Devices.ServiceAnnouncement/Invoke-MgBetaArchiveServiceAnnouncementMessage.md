@@ -12,6 +12,9 @@ ms.prod: service-communications
 Archive a list of serviceUpdateMessages for the signed in user.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgArchiveServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgArchiveServiceAnnouncementMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ArchiveExpanded (Default)
@@ -146,6 +149,7 @@ BODYPARAMETER \<IPaths19OsejwAdminServiceannouncementMessagesMicrosoftGraphArchi
   \[MessageIds \<String\[\]\>\]:
 
 ## RELATED LINKS
+[Invoke-MgArchiveServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgArchiveServiceAnnouncementMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetaarchiveserviceannouncementmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetaarchiveserviceannouncementmessage)
 

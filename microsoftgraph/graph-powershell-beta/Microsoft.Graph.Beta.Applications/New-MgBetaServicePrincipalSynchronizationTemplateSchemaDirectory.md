@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalsynchronizationtemplateschemadirectory
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to directories for servicePrincipals
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgServicePrincipalSynchronizationTemplateSchemaDirectory](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalSynchronizationTemplateSchemaDirectory?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -424,6 +427,7 @@ Not nullable.
   \[SupportedApis \<String\[\]\>\]: The API that the provisioning service queries to retrieve data for synchronization.
 
 ## RELATED LINKS
+[New-MgServicePrincipalSynchronizationTemplateSchemaDirectory](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalSynchronizationTemplateSchemaDirectory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalsynchronizationtemplateschemadirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalsynchronizationtemplateschemadirectory)
 

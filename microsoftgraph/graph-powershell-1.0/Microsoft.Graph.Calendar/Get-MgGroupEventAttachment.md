@@ -14,6 +14,9 @@ Navigation property.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupEventAttachment](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupEventAttachment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -280,6 +283,7 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaGroupEventAttachment](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupEventAttachment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupeventattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupeventattachment)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retire a device
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgRetireDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgRetireDeviceManagementManagedDevice?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Retire (Default)
@@ -191,6 +194,7 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
   \[ZebraFotaDeploymentId \<String\>\]: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
+[Invoke-MgRetireDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgRetireDeviceManagementManagedDevice?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetaretiredevicemanagementmanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetaretiredevicemanagementmanageddevice)
 

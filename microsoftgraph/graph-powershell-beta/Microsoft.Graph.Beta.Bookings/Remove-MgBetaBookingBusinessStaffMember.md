@@ -12,6 +12,9 @@ ms.prod: bookings
 Delete a staff member in the specified bookingbusiness.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBookingBusinessStaffMember?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -188,6 +191,7 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
+[Remove-MgBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBookingBusinessStaffMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabookingbusinessstaffmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabookingbusinessstaffmember)
 

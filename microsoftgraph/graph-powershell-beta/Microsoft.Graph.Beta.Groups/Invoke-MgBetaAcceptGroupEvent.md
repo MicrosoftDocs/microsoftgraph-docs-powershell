@@ -12,6 +12,9 @@ ms.prod: outlook
 Accept the specified event in a user calendar.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgAcceptGroupEvent](/powershell/module/Microsoft.Graph.Groups/Invoke-MgAcceptGroupEvent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AcceptExpanded (Default)
@@ -279,6 +282,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgAcceptGroupEvent](/powershell/module/Microsoft.Graph.Groups/Invoke-MgAcceptGroupEvent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaacceptgroupevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaacceptgroupevent)
 

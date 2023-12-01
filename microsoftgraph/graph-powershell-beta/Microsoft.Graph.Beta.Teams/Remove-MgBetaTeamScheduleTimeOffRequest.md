@@ -11,6 +11,9 @@ schema: 2.0.0
 Delete a timeOffRequest object.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgTeamScheduleTimeOffRequest](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamScheduleTimeOffRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -203,6 +206,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Remove-MgTeamScheduleTimeOffRequest](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamScheduleTimeOffRequest?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamscheduletimeoffrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamscheduletimeoffrequest)
 

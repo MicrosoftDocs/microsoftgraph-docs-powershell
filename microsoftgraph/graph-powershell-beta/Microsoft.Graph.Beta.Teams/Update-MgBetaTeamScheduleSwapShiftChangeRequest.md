@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property swapShiftsChangeRequests in teams
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgTeamScheduleSwapShiftChangeRequest](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamScheduleSwapShiftChangeRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -444,6 +447,7 @@ For example, if a user changes their display name, the API might show the new va
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
 ## RELATED LINKS
+[Update-MgTeamScheduleSwapShiftChangeRequest](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamScheduleSwapShiftChangeRequest?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduleswapshiftchangerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduleswapshiftchangerequest)
 

@@ -14,6 +14,9 @@ To learn more about group-based licensing, see What is group-based licensing in 
 Also see Identify and resolve license assignment problems for a group in Microsoft Entra ID for more details.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaLicenseUser](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaLicenseUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### License (Default)
@@ -151,6 +154,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgBetaLicenseUser](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaLicenseUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mglicenseuser](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mglicenseuser)
 

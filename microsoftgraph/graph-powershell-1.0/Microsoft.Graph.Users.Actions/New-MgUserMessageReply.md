@@ -17,6 +17,9 @@ Send the draft message in a subsequent operation.
 Alternatively, reply to a message in a single operation.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserMessageReply](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserMessageReply?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -423,6 +426,7 @@ Read-only.
   \[WebLink \<String\>\]:
 
 ## RELATED LINKS
+[New-MgBetaUserMessageReply](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserMessageReply?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mgusermessagereply](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mgusermessagereply)
 

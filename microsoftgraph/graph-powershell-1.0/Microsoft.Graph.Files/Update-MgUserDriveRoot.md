@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriveroot
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property root in users
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveRoot?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29017,6 +29020,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[Update-MgBetaUserDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveRoot?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriveroot)
 

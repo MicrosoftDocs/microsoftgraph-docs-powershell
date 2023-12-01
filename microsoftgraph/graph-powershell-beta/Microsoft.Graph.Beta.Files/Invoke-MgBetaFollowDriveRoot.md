@@ -12,6 +12,9 @@ ms.prod: sharepoint
 Follow a driveItem.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgFollowDriveRoot](/powershell/module/Microsoft.Graph.Files/Invoke-MgFollowDriveRoot?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Follow (Default)
@@ -150,6 +153,7 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgFollowDriveRoot](/powershell/module/Microsoft.Graph.Files/Invoke-MgFollowDriveRoot?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetafollowdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetafollowdriveroot)
 

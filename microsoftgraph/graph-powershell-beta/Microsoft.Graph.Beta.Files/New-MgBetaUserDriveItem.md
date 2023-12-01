@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetauserdriveitem
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to items for users
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserDriveItem](/powershell/module/Microsoft.Graph.Files/New-MgUserDriveItem?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -53588,6 +53591,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[New-MgUserDriveItem](/powershell/module/Microsoft.Graph.Files/New-MgUserDriveItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetauserdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetauserdriveitem)
 

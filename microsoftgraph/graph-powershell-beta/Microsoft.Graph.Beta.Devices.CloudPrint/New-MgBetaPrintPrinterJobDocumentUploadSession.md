@@ -15,6 +15,9 @@ Request headers for each PUT operation can be used to specify the exact range of
 This allows transfer to be resumed, in case the network connection is dropped during upload.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPrintPrinterJobDocumentUploadSession](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintPrinterJobDocumentUploadSession?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -252,6 +255,7 @@ PROPERTIES \<IMicrosoftGraphPrintDocumentUploadProperties\>: printDocumentUpload
   \[Size \<Int64?\>\]: The document's size in bytes.
 
 ## RELATED LINKS
+[New-MgPrintPrinterJobDocumentUploadSession](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintPrinterJobDocumentUploadSession?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintprinterjobdocumentuploadsession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintprinterjobdocumentuploadsession)
 

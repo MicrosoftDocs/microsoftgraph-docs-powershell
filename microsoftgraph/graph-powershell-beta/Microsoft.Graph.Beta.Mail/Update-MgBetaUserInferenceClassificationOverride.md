@@ -15,6 +15,9 @@ If an override exists for a sender and the sender changes his/her display name, 
 If an override exists for a sender and the sender changes his/her SMTP address, deleting the existing override and creating a new one withthe new SMTP address is the only way to 'update' the override for this sender.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Mail/Update-MgUserInferenceClassificationOverride?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -265,6 +268,7 @@ SENDEREMAILADDRESS \<IMicrosoftGraphEmailAddress\>: emailAddress
   \[Name \<String\>\]: The display name of an entity instance.
 
 ## RELATED LINKS
+[Update-MgUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Mail/Update-MgUserInferenceClassificationOverride?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetauserinferenceclassificationoverride](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetauserinferenceclassificationoverride)
 

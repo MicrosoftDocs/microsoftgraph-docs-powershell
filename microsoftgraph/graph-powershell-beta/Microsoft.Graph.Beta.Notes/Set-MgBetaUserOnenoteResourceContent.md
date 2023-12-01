@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update content for the navigation property resources in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgUserOnenoteResourceContent](/powershell/module/Microsoft.Graph.Notes/Set-MgUserOnenoteResourceContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Set (Default)
@@ -182,6 +185,7 @@ INPUTOBJECT \<INotesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Set-MgUserOnenoteResourceContent](/powershell/module/Microsoft.Graph.Notes/Set-MgUserOnenoteResourceContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/set-mgbetauseronenoteresourcecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/set-mgbetauseronenoteresourcecontent)
 

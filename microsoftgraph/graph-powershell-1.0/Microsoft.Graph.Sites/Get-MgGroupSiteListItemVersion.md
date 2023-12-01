@@ -13,6 +13,9 @@ ms.prod: sharepoint
 Retrieve the metadata for a specific version of a ListItem.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteListItemVersion](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListItemVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -355,6 +358,7 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaGroupSiteListItemVersion](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListItemVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistitemversion)
 

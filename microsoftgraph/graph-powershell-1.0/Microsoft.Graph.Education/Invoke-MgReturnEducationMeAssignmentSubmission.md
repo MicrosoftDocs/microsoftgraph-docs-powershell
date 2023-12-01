@@ -14,6 +14,9 @@ This action changes the status of the submission from 'submitted' to 'returned' 
 This action can only be done by the teacher.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaReturnEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Invoke-MgBetaReturnEducationMeAssignmentSubmission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Return (Default)
@@ -153,6 +156,7 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Invoke-MgBetaReturnEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Invoke-MgBetaReturnEducationMeAssignmentSubmission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgreturneducationmeassignmentsubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgreturneducationmeassignmentsubmission)
 

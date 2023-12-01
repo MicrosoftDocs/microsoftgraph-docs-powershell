@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Renews the SAS URI for an application file upload.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphMacOSDmgAppContentVersionFileUpload](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphMacOSDmgAppContentVersionFileUpload?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Renew (Default)
@@ -202,6 +205,7 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
   \[WindowsInformationProtectionPolicyId \<String\>\]: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
+[Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphMacOSDmgAppContentVersionFileUpload](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphMacOSDmgAppContentVersionFileUpload?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mgrenewdeviceappmanagementmobileappmicrosoftgraphmacosdmgappcontentversionfileupload](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mgrenewdeviceappmanagementmobileappmicrosoftgraphmacosdmgappcontentversionfileupload)
 

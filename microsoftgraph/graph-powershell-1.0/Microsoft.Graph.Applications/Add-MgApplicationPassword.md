@@ -12,6 +12,9 @@ ms.prod: applications
 Adds a strong password or secret to an application.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaApplicationPassword](/powershell/module/Microsoft.Graph.Beta.Applications/Add-MgBetaApplicationPassword?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AddExpanded (Default)
@@ -292,6 +295,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Optional.
 
 ## RELATED LINKS
+[Add-MgBetaApplicationPassword](/powershell/module/Microsoft.Graph.Beta.Applications/Add-MgBetaApplicationPassword?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgapplicationpassword](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgapplicationpassword)
 

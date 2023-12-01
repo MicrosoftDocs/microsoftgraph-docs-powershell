@@ -11,6 +11,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Create new navigation property to children for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserDriveItemChild](/powershell/module/Microsoft.Graph.Files/New-MgUserDriveItemChild?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -53600,6 +53603,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[New-MgUserDriveItemChild](/powershell/module/Microsoft.Graph.Files/New-MgUserDriveItemChild?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetauserdriveitemchild](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetauserdriveitemchild)
 

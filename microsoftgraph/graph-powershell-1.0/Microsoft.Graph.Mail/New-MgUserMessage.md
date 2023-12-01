@@ -14,6 +14,9 @@ You can create an open extension in a resource instance and store custom data to
 The table in the Permissions section lists the resources that support open extensions.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -980,6 +983,7 @@ UNIQUEBODY \<IMicrosoftGraphItemBody\>: itemBody
   \[ContentType \<String\>\]: bodyType
 
 ## RELATED LINKS
+[New-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermessage)
 

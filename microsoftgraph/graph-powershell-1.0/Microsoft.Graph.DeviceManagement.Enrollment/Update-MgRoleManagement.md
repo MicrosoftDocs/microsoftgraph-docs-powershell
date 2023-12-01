@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update roleManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaRoleManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Update-MgBetaRoleManagement?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -1225,6 +1228,7 @@ Supports $filter (eq, ne).
   \[RoleEligibilitySchedules \<IMicrosoftGraphUnifiedRoleEligibilitySchedule\[\]\>\]: Schedules for role eligibility operations.
 
 ## RELATED LINKS
+[Update-MgBetaRoleManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Update-MgBetaRoleManagement?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/update-mgrolemanagement](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/update-mgrolemanagement)
 

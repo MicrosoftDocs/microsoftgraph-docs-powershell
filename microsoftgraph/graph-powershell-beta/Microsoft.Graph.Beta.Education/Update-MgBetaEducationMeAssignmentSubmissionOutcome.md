@@ -13,6 +13,9 @@ Update the properties of an educationOutcome object.
 Only teachers can perform this operation.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgEducationMeAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Education/Update-MgEducationMeAssignmentSubmissionOutcome?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -303,6 +306,7 @@ This property is read-only.
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
 ## RELATED LINKS
+[Update-MgEducationMeAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Education/Update-MgEducationMeAssignmentSubmissionOutcome?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationmeassignmentsubmissionoutcome](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationmeassignmentsubmissionoutcome)
 

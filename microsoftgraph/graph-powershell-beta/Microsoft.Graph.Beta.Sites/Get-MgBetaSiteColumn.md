@@ -11,6 +11,9 @@ ms.prod: sites-and-lists
 ## SYNOPSIS
 The collection of column definitions reusable across lists under this site.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteColumn](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -308,6 +311,7 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgSiteColumn](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitecolumn)
 

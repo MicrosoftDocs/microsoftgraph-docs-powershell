@@ -13,6 +13,9 @@ Enable the user to update their password.
 Any user can update their password without belonging to any administrator role.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserPassword](/powershell/module/Microsoft.Graph.Users.Actions/Update-MgUserPassword?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ChangeExpanded (Default)
@@ -262,6 +265,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgUserPassword](/powershell/module/Microsoft.Graph.Users.Actions/Update-MgUserPassword?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/update-mgbetauserpassword](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/update-mgbetauserpassword)
 

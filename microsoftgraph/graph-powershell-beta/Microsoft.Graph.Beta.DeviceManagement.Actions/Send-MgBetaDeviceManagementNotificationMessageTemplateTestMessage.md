@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Sends test message using the specified notificationMessageTemplate in the default locale
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Send-MgDeviceManagementNotificationMessageTemplateTestMessage](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Send-MgDeviceManagementNotificationMessageTemplateTestMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Send (Default)
@@ -191,6 +194,7 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
   \[ZebraFotaDeploymentId \<String\>\]: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
+[Send-MgDeviceManagementNotificationMessageTemplateTestMessage](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Send-MgDeviceManagementNotificationMessageTemplateTestMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/send-mgbetadevicemanagementnotificationmessagetemplatetestmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/send-mgbetadevicemanagementnotificationmessagetemplatetestmessage)
 

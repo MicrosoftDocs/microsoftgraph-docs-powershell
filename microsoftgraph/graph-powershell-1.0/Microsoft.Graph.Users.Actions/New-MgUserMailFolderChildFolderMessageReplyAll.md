@@ -17,6 +17,9 @@ Send the draft message in a subsequent operation.
 Alternatively, reply-all to a message in a single action.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserMailFolderChildFolderMessageReplyAll](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserMailFolderChildFolderMessageReplyAll?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded1 (Default)
@@ -457,6 +460,7 @@ Read-only.
   \[WebLink \<String\>\]:
 
 ## RELATED LINKS
+[New-MgBetaUserMailFolderChildFolderMessageReplyAll](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserMailFolderChildFolderMessageReplyAll?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mgusermailfolderchildfoldermessagereplyall](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mgusermailfolderchildfoldermessagereplyall)
 

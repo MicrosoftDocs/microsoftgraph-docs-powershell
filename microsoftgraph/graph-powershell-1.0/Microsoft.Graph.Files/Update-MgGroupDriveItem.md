@@ -13,6 +13,9 @@ Update the metadata for a driveItem by ID or path.
 You can also use update to move an item to another parent by updating the item's parentReference property.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -29038,6 +29041,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[Update-MgBetaGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriveitem)
 

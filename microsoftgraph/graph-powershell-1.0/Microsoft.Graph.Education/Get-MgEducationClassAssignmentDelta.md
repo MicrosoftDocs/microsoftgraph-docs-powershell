@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function delta
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassAssignmentDelta](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentDelta?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delta (Default)
@@ -260,6 +263,7 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Get-MgBetaEducationClassAssignmentDelta](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentDelta?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentdelta)
 

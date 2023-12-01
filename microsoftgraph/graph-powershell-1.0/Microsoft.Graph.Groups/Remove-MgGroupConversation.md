@@ -11,6 +11,9 @@ schema: 2.0.0
 Delete conversation.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupConversation](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupConversation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -200,6 +203,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
+[Remove-MgBetaGroupConversation](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupConversation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupconversation](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupconversation)
 

@@ -12,6 +12,9 @@ ms.prod: planner
 Delete plannerBucket.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPlannerBucket](/powershell/module/Microsoft.Graph.Beta.Planner/Remove-MgBetaPlannerBucket?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -156,6 +159,7 @@ INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaPlannerBucket](/powershell/module/Microsoft.Graph.Beta.Planner/Remove-MgBetaPlannerBucket?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/remove-mgplannerbucket](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/remove-mgplannerbucket)
 

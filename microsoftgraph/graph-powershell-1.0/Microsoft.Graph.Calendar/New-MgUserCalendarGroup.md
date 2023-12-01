@@ -12,6 +12,9 @@ ms.prod: outlook
 Use this API to create a new CalendarGroup.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserCalendarGroup](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserCalendarGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -737,6 +740,7 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[New-MgBetaUserCalendarGroup](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserCalendarGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusercalendargroup](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusercalendargroup)
 

@@ -12,6 +12,9 @@ ms.prod: sharepoint
 Remove an item from a bundle\]\[\].
 This API is available in the following \[national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupDriveRootChild](/powershell/module/Microsoft.Graph.Files/Remove-MgGroupDriveRootChild?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -208,6 +211,7 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgGroupDriveRootChild](/powershell/module/Microsoft.Graph.Files/Remove-MgGroupDriveRootChild?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetagroupdriverootchild](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetagroupdriverootchild)
 

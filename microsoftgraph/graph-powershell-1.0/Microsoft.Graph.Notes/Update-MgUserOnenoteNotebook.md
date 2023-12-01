@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mguseronenotenotebook
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property notebooks in users
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Notes/Update-MgBetaUserOnenoteNotebook?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -880,6 +883,7 @@ Read-only.
   \[ParentSectionGroup \<IMicrosoftGraphSectionGroup\>\]: sectionGroup
 
 ## RELATED LINKS
+[Update-MgBetaUserOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Notes/Update-MgBetaUserOnenoteNotebook?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mguseronenotenotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mguseronenotenotebook)
 

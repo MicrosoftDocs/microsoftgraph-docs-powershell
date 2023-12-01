@@ -11,6 +11,9 @@ ms.prod: sites-and-lists
 ## SYNOPSIS
 All sets under the group in a term \[store\].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteTermStoreSetParentGroupSet](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetParentGroupSet?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -327,6 +330,7 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgSiteTermStoreSetParentGroupSet](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetParentGroupSet?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetparentgroupset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetparentgroupset)
 

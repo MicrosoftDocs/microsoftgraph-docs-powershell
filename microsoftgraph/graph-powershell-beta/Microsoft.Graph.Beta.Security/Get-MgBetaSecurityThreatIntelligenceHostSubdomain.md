@@ -11,6 +11,9 @@ ms.prod: security
 ## SYNOPSIS
 The subdomains that are associated with this host.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceHostSubdomain](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostSubdomain?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -340,6 +343,7 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgSecurityThreatIntelligenceHostSubdomain](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostSubdomain?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostsubdomain](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostsubdomain)
 

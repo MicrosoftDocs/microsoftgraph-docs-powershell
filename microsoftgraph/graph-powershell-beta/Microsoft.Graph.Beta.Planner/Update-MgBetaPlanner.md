@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplanner
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update planner
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPlanner](/powershell/module/Microsoft.Graph.Planner/Update-MgPlanner?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -1304,6 +1307,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   \[Title \<String\>\]: Title of the task.
 
 ## RELATED LINKS
+[Update-MgPlanner](/powershell/module/Microsoft.Graph.Planner/Update-MgPlanner?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplanner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplanner)
 

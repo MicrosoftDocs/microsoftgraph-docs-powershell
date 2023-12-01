@@ -11,6 +11,9 @@ ms.prod: governance
 ## SYNOPSIS
 The localized version of the terms of use agreement files attached to the agreement.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAgreementFileLocalization](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgAgreementFileLocalization?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -360,6 +363,7 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[WorkflowVersionNumber \<Int32?\>\]: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Get-MgAgreementFileLocalization](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgAgreementFileLocalization?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaagreementfilelocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaagreementfilelocalization)
 

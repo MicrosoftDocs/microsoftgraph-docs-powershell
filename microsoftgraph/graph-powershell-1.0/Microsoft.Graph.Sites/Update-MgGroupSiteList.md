@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitelist
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property lists in groups
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupSiteList](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteList?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -23808,6 +23811,7 @@ Do not include the base URL (https://graph.microsoft.com/v1.0/).
 See the possible resource path values for each supported resource.
 
 ## RELATED LINKS
+[Update-MgBetaGroupSiteList](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteList?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitelist](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitelist)
 

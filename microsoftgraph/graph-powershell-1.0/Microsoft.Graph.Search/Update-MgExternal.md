@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternal
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update external
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaExternal](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternal?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -416,6 +419,7 @@ Required.
   \[State \<String\>\]: connectionState
 
 ## RELATED LINKS
+[Update-MgBetaExternal](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternal?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternal](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternal)
 

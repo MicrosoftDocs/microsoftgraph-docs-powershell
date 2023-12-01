@@ -12,6 +12,9 @@ ms.prod: education
 Update the properties of a class.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgEducationClass](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClass?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -38819,6 +38822,7 @@ TERM \<IMicrosoftGraphEducationTerm\>: educationTerm
   \[StartDate \<DateTime?\>\]: Start of the term.
 
 ## RELATED LINKS
+[Update-MgEducationClass](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClass?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclass](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclass)
 

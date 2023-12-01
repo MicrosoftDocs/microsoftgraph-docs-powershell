@@ -13,6 +13,9 @@ ms.prod: sharepoint
 Retrieve the properties and relationships of a permission object on a site.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSitePermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -324,6 +327,7 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaGroupSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSitePermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitepermission)
 

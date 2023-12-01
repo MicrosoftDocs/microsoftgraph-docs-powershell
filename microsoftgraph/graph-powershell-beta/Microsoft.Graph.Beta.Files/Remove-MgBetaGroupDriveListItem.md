@@ -12,6 +12,9 @@ ms.prod: sharepoint
 Removes an item from a list\]\[\].
 This API is available in the following \[national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupDriveListItem](/powershell/module/Microsoft.Graph.Files/Remove-MgGroupDriveListItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -212,6 +215,7 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgGroupDriveListItem](/powershell/module/Microsoft.Graph.Files/Remove-MgGroupDriveListItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetagroupdrivelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetagroupdrivelistitem)
 

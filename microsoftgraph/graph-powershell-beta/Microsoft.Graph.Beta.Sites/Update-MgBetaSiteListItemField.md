@@ -12,6 +12,9 @@ ms.prod: sharepoint
 Update the properties on a listItem\]\[\].
 This API is available in the following \[national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSiteListItemField](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteListItemField?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -263,6 +266,7 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgSiteListItemField](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteListItemField?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelistitemfield](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelistitemfield)
 

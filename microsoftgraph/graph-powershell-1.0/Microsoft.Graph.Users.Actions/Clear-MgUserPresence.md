@@ -14,6 +14,9 @@ If it is the user's only presence session, the user's presence will change to Of
 For details about presences sessions, see presence: setPresence.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Clear-MgBetaUserPresence](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Clear-MgBetaUserPresence?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ClearExpanded (Default)
@@ -236,6 +239,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Clear-MgBetaUserPresence](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Clear-MgBetaUserPresence?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/clear-mguserpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/clear-mguserpresence)
 

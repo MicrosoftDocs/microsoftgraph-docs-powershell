@@ -12,6 +12,9 @@ ms.prod: education
 Delete a school.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaEducationSchool](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationSchool?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -161,6 +164,7 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Remove-MgBetaEducationSchool](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationSchool?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationschool](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationschool)
 

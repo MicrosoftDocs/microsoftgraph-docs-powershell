@@ -13,6 +13,9 @@ Return the directory objects specified in a list of IDs.
 Only a subset of user properties are returned by default in v1.0.
 Some common uses for this function are to: This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceById](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceById?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GetExpanded (Default)
@@ -160,6 +163,7 @@ BODYPARAMETER \<IPaths1545W8NDevicesMicrosoftGraphGetbyidsPostRequestbodyContent
   \[Types \<String\[\]\>\]:
 
 ## RELATED LINKS
+[Get-MgBetaDeviceById](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceById?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicebyid](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicebyid)
 

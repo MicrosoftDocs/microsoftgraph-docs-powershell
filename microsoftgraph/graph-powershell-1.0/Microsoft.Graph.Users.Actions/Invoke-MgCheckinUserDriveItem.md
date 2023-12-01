@@ -12,6 +12,9 @@ ms.prod: sharepoint
 Check in a checked out driveItem resource, which makes the version of the document available to others.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaCheckinUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaCheckinUserDriveItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CheckinExpanded (Default)
@@ -302,6 +305,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgBetaCheckinUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaCheckinUserDriveItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgcheckinuserdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgcheckinuserdriveitem)
 

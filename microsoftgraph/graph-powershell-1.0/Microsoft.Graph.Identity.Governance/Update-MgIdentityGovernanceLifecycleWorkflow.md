@@ -14,6 +14,9 @@ Only the properties listed in the request body table can be updated.
 To update any other workflow properties, see workflow: createNewVersion.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceLifecycleWorkflow](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceLifecycleWorkflow?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -42135,6 +42138,7 @@ Value is null if task execution has not yet started.Supports $filter(lt, le, gt,
   \[VersionNumber \<Int32?\>\]: The version of the workflow.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
 
 ## RELATED LINKS
+[Update-MgBetaIdentityGovernanceLifecycleWorkflow](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceLifecycleWorkflow?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflow](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflow)
 

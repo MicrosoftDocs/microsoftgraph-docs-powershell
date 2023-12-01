@@ -17,6 +17,9 @@ A presence session can be created as a result of a successful setPresence operat
 Read more about presence sessions and their time-out and expiration.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgUserPresenceUserPreferredPresence](/powershell/module/Microsoft.Graph.Users.Actions/Set-MgUserPresenceUserPreferredPresence?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### SetExpanded (Default)
@@ -288,6 +291,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Set-MgUserPresenceUserPreferredPresence](/powershell/module/Microsoft.Graph.Users.Actions/Set-MgUserPresenceUserPreferredPresence?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/set-mgbetauserpresenceuserpreferredpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/set-mgbetauserpresenceuserpreferredpresence)
 

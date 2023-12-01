@@ -18,6 +18,9 @@ The third-party partners own the VTC media leg and the Teams infrastructure cann
 This method is only for the CVI partners to provide their media quality data.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### LogExpanded (Default)
@@ -338,6 +341,7 @@ If the media enabled and disabled multiple times, MediaDuration will the summati
 The CVI partner needs to copy over Call.MyParticipantId to this property.
 
 ## RELATED LINKS
+[Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetalogcommunicationcallteleconferencedevicequality](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetalogcommunicationcallteleconferencedevicequality)
 

@@ -21,6 +21,9 @@ However, you can validate both the mail nickname and the display name and receiv
 To learn more about configuring naming policies, see Configure naming policy.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Test-MgBetaDirectoryDeletedItemProperty](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Test-MgBetaDirectoryDeletedItemProperty?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ValidateExpanded (Default)
@@ -228,6 +231,7 @@ BODYPARAMETER \<IPaths12Jg47YDirectoryDeleteditemsMicrosoftGraphValidateproperti
   \[OnBehalfOfUserId \<String\>\]:
 
 ## RELATED LINKS
+[Test-MgBetaDirectoryDeletedItemProperty](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Test-MgBetaDirectoryDeletedItemProperty?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/test-mgdirectorydeleteditemproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/test-mgdirectorydeleteditemproperty)
 

@@ -17,6 +17,9 @@ The teacher will be looking at the submitted resources list for grading.
 A teacher can also submit a student's assignment on their behalf.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Submit-MgBetaEducationUserAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Submit-MgBetaEducationUserAssignmentSubmission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Submit (Default)
@@ -171,6 +174,7 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Submit-MgBetaEducationUserAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Submit-MgBetaEducationUserAssignmentSubmission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/submit-mgeducationuserassignmentsubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.education/submit-mgeducationuserassignmentsubmission)
 

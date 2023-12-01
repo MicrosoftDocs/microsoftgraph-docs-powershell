@@ -12,6 +12,9 @@ ms.prod: identity-and-sign-in
 Create an appManagementPolicy object.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyAppManagementPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -295,6 +298,7 @@ To apply to all applications, this date would be null.
     \[RestrictionType \<String\>\]: appCredentialRestrictionType
 
 ## RELATED LINKS
+[New-MgPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyAppManagementPolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyappmanagementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyappmanagementpolicy)
 

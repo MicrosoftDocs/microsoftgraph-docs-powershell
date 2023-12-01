@@ -14,6 +14,9 @@ Retrieve the properties and relationships of a subscription.
 See the table in the Permissions section for the list of resources that support subscribing to change notifications.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/Get-MgBetaSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -174,6 +177,7 @@ INPUTOBJECT \<IChangeNotificationsIdentity\>: Identity Parameter
   \[SubscriptionId \<String\>\]: The unique identifier of subscription
 
 ## RELATED LINKS
+[Get-MgBetaSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/Get-MgBetaSubscription?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/get-mgsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/get-mgsubscription)
 

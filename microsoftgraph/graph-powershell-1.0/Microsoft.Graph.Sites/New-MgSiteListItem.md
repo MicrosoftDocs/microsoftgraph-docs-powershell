@@ -12,6 +12,9 @@ ms.prod: sharepoint
 Create a new listItem\]\[\] in a \[list\]\[\].
 This API is available in the following \[national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteListItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -23324,6 +23327,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[New-MgBetaSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteListItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelistitem)
 

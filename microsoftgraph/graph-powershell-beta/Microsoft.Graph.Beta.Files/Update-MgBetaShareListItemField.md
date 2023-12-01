@@ -12,6 +12,9 @@ ms.prod: sharepoint
 Update the properties on a listItem\]\[\].
 This API is available in the following \[national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgShareListItemField](/powershell/module/Microsoft.Graph.Files/Update-MgShareListItemField?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded1 (Default)
@@ -250,6 +253,7 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgShareListItemField](/powershell/module/Microsoft.Graph.Files/Update-MgShareListItemField?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelistitemfield](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelistitemfield)
 

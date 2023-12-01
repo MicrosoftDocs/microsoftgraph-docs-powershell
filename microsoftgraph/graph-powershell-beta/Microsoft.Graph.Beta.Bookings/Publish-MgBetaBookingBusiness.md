@@ -13,6 +13,9 @@ Make the scheduling page of this business available to external customers.
 Set the isPublished property to true, and publicUrl property to the URL of the scheduling page.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Publish-MgBookingBusiness](/powershell/module/Microsoft.Graph.Bookings/Publish-MgBookingBusiness?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Publish (Default)
@@ -159,6 +162,7 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
+[Publish-MgBookingBusiness](/powershell/module/Microsoft.Graph.Bookings/Publish-MgBookingBusiness?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/publish-mgbetabookingbusiness](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/publish-mgbetabookingbusiness)
 

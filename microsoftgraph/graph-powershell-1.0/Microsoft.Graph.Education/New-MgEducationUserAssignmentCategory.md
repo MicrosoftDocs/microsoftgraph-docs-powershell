@@ -13,6 +13,9 @@ Add one or more existing educationCategory objects to the specified  educationAs
 Only teachers can perform this operation.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEducationUserAssignmentCategory](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationUserAssignmentCategory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -233,6 +236,7 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
+[New-MgBetaEducationUserAssignmentCategory](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationUserAssignmentCategory?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationuserassignmentcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationuserassignmentcategory)
 

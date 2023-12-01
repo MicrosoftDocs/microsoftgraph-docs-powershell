@@ -13,6 +13,9 @@ ms.prod: sharepoint
 Retrieve the metadata for a specific version of a DriveItem.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveRootVersion](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -310,6 +313,7 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserDriveRootVersion](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootversion)
 

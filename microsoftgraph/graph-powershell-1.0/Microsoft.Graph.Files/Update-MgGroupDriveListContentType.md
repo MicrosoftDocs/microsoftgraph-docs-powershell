@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdrivelistcontenttype
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property contentTypes in groups
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveListContentType?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -1790,6 +1793,7 @@ ORDER \<IMicrosoftGraphContentTypeOrder\>: contentTypeOrder
   \[Position \<Int32?\>\]: Specifies the position in which the content type appears in the selection UI.
 
 ## RELATED LINKS
+[Update-MgBetaGroupDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveListContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdrivelistcontenttype)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function delta
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserChatMessageReplyDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserChatMessageReplyDelta?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delta (Default)
@@ -303,6 +306,7 @@ INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserChatMessageReplyDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserChatMessageReplyDelta?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguserchatmessagereplydelta](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguserchatmessagereplydelta)
 

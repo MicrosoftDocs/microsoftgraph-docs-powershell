@@ -12,6 +12,9 @@ ms.prod: sites-and-lists
 Update a site\]\[\], \[list\]\[\] or \[content type\]\[contentType\] \[column\]\[columnDefinition\].
 This API is available in the following \[national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveListContentTypeColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -1247,6 +1250,7 @@ User will be prompted with this message if validation fails.
 For examples, see Examples of common formulas in lists
 
 ## RELATED LINKS
+[Update-MgGroupDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveListContentTypeColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdrivelistcontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdrivelistcontenttypecolumn)
 

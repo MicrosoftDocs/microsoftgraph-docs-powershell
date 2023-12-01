@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriverootanalytic
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property analytics in groups
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupDriveRootAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveRootAnalytic?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -18391,6 +18394,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[Update-MgBetaGroupDriveRootAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveRootAnalytic?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriverootanalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriverootanalytic)
 

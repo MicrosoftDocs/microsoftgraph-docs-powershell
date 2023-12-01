@@ -12,6 +12,9 @@ ms.prod: sharepoint
 Check out a driveItem resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgCheckoutGroupDriveItem](/powershell/module/Microsoft.Graph.Groups/Invoke-MgCheckoutGroupDriveItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Checkout (Default)
@@ -207,6 +210,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgCheckoutGroupDriveItem](/powershell/module/Microsoft.Graph.Groups/Invoke-MgCheckoutGroupDriveItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetacheckoutgroupdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetacheckoutgroupdriveitem)
 

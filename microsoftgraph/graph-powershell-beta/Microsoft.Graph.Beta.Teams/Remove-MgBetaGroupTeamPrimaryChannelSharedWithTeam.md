@@ -12,6 +12,9 @@ Unshare a channel with a team by deleting the corresponding sharedWithChannelTea
 This operation is allowed only for channels with a membershipType value of shared.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupTeamPrimaryChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamPrimaryChannelSharedWithTeam?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -208,6 +211,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Remove-MgGroupTeamPrimaryChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamPrimaryChannelSharedWithTeam?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteamprimarychannelsharedwithteam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteamprimarychannelsharedwithteam)
 

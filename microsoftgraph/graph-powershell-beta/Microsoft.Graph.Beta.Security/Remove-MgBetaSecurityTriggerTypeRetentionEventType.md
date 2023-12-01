@@ -11,6 +11,9 @@ ms.prod: security
 ## SYNOPSIS
 Delete a retentionEventType object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityTriggerTypeRetentionEventType](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityTriggerTypeRetentionEventType?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -225,6 +228,7 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Remove-MgSecurityTriggerTypeRetentionEventType](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityTriggerTypeRetentionEventType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritytriggertyperetentioneventtype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritytriggertyperetentioneventtype)
 

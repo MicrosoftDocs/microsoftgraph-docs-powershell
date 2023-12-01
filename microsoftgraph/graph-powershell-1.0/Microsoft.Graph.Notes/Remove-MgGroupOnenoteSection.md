@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property sections for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Notes/Remove-MgBetaGroupOnenoteSection?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -179,6 +182,7 @@ INPUTOBJECT \<INotesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaGroupOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Notes/Remove-MgBetaGroupOnenoteSection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/remove-mggrouponenotesection](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/remove-mggrouponenotesection)
 

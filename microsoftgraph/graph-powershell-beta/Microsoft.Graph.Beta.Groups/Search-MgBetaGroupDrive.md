@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function search
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Search-MgGroupDrive](/powershell/module/Microsoft.Graph.Groups/Search-MgGroupDrive?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Search (Default)
@@ -271,6 +274,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Search-MgGroupDrive](/powershell/module/Microsoft.Graph.Groups/Search-MgGroupDrive?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/search-mgbetagroupdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/search-mgbetagroupdrive)
 

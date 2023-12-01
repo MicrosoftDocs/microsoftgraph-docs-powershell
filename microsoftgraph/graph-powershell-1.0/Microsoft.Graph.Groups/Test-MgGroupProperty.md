@@ -17,6 +17,9 @@ However, you can validate both the mail nickname and the display name and receiv
 To learn more about configuring naming policies, see Configure naming policy.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Test-MgBetaGroupProperty](/powershell/module/Microsoft.Graph.Beta.Groups/Test-MgBetaGroupProperty?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ValidateExpanded (Default)
@@ -283,6 +286,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
+[Test-MgBetaGroupProperty](/powershell/module/Microsoft.Graph.Beta.Groups/Test-MgBetaGroupProperty?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/test-mggroupproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/test-mggroupproperty)
 

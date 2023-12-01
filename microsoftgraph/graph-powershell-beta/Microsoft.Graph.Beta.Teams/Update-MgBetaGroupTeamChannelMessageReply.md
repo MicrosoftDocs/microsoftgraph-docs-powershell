@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamchannelmessagereply
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property replies in groups
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamChannelMessageReply?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -1059,6 +1062,7 @@ Only applies to channel chat messages, not chat messages in a chat.
 Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
+[Update-MgGroupTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamChannelMessageReply?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamchannelmessagereply](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamchannelmessagereply)
 

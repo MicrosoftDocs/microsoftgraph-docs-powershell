@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrivelistcontenttype
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to contentTypes for drives
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListContentType?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -1760,6 +1763,7 @@ ORDER \<IMicrosoftGraphContentTypeOrder\>: contentTypeOrder
   \[Position \<Int32?\>\]: Specifies the position in which the content type appears in the selection UI.
 
 ## RELATED LINKS
+[New-MgBetaDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrivelistcontenttype)
 

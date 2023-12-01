@@ -12,6 +12,9 @@ ms.prod: identity-and-sign-in
 CSS styling that appears on the sign-in page.
 The allowed format is .css format only and not larger than 25 KB.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaOrganizationBrandingCustomCss](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationBrandingCustomCss?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -146,6 +149,7 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaOrganizationBrandingCustomCss](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationBrandingCustomCss?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbrandingcustomcss](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbrandingcustomcss)
 

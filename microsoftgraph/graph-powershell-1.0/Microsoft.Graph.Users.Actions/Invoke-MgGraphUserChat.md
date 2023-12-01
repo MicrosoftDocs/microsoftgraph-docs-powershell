@@ -12,6 +12,9 @@ ms.prod: microsoft-teams
 Unhide a chat for a user.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaGraphUserChat](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaGraphUserChat?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GraphExpanded (Default)
@@ -293,6 +296,7 @@ For example, if a user changes their display name, the API might show the new va
   \[UserIdentityType \<String\>\]: teamworkUserIdentityType
 
 ## RELATED LINKS
+[Invoke-MgBetaGraphUserChat](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaGraphUserChat?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mggraphuserchat](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mggraphuserchat)
 

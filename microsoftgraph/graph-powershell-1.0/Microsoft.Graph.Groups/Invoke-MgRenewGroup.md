@@ -13,6 +13,9 @@ Renews a group's expiration.
 When a group is renewed, the group expiration is extended by the number of days defined in the policy.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaRenewGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaRenewGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Renew (Default)
@@ -170,6 +173,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
+[Invoke-MgBetaRenewGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaRenewGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgrenewgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgrenewgroup)
 

@@ -12,6 +12,9 @@ ms.prod: sharepoint
 Unfollow a driveItem.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgUnfollowGroupDriveItem](/powershell/module/Microsoft.Graph.Groups/Invoke-MgUnfollowGroupDriveItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Unfollow (Default)
@@ -214,6 +217,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgUnfollowGroupDriveItem](/powershell/module/Microsoft.Graph.Groups/Invoke-MgUnfollowGroupDriveItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaunfollowgroupdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaunfollowgroupdriveitem)
 

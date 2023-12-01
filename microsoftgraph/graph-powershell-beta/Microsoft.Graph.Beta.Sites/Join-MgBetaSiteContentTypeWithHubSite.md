@@ -12,6 +12,9 @@ ms.prod: sites-and-lists
 Associate a content type\]\[contentType\] with a list of hub sites.
 This API is available in the following \[national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Join-MgSiteContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Sites/Join-MgSiteContentTypeWithHubSite?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AssociateExpanded (Default)
@@ -286,6 +289,7 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Join-MgSiteContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Sites/Join-MgSiteContentTypeWithHubSite?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/join-mgbetasitecontenttypewithhubsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/join-mgbetasitecontenttypewithhubsite)
 

@@ -12,6 +12,9 @@ ms.prod: search
 Delete an externalGroup object.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgExternalConnectionGroup](/powershell/module/Microsoft.Graph.Search/Remove-MgExternalConnectionGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -185,6 +188,7 @@ INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
   \[YearTimePeriodDefinitionId \<String\>\]: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
+[Remove-MgExternalConnectionGroup](/powershell/module/Microsoft.Graph.Search/Remove-MgExternalConnectionGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalconnectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalconnectiongroup)
 

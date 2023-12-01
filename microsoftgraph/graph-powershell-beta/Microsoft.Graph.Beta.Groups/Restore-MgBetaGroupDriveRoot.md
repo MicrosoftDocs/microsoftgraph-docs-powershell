@@ -11,6 +11,9 @@ schema: 2.0.0
 Restore a driveItem that has been deleted and is currently in the recycle bin.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restore-MgGroupDriveRoot](/powershell/module/Microsoft.Graph.Groups/Restore-MgGroupDriveRoot?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### RestoreExpanded (Default)
@@ -321,6 +324,7 @@ It is an opaque string that consists of three identifiers of the site.
 For OneDrive, this property is not populated.
 
 ## RELATED LINKS
+[Restore-MgGroupDriveRoot](/powershell/module/Microsoft.Graph.Groups/Restore-MgGroupDriveRoot?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/restore-mgbetagroupdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/restore-mgbetagroupdriveroot)
 

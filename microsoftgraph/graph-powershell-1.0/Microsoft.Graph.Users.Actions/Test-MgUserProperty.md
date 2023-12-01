@@ -21,6 +21,9 @@ However, you can validate both the mail nickname and the display name and receiv
 To learn more about configuring naming policies, see Configure naming policy.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Test-MgBetaUserProperty](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Test-MgBetaUserProperty?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ValidateExpanded (Default)
@@ -227,6 +230,7 @@ BODYPARAMETER \<IPaths1Tz6Rb9UsersMicrosoftGraphValidatepropertiesPostRequestbod
   \[OnBehalfOfUserId \<String\>\]:
 
 ## RELATED LINKS
+[Test-MgBetaUserProperty](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Test-MgBetaUserProperty?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/test-mguserproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/test-mguserproperty)
 

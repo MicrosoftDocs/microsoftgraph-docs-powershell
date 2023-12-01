@@ -12,6 +12,9 @@ ms.prod: education
 Update the properties of an educationSchool object.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationSchool](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationSchool?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -14991,6 +14994,7 @@ Supports $filter and $orderby.
 Supports $filter.
 
 ## RELATED LINKS
+[Update-MgBetaEducationSchool](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationSchool?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationschool](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationschool)
 

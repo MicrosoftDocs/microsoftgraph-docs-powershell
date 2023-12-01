@@ -13,6 +13,9 @@ Update the properties of a sharing permission by patching the permission resourc
 Only the roles property can be modified this way.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDriveRootPermission](/powershell/module/Microsoft.Graph.Files/Update-MgDriveRootPermission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -639,6 +642,7 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
   \[WebUrl \<String\>\]: A URL that opens the item in the browser on the OneDrive website.
 
 ## RELATED LINKS
+[Update-MgDriveRootPermission](/powershell/module/Microsoft.Graph.Files/Update-MgDriveRootPermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriverootpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriverootpermission)
 

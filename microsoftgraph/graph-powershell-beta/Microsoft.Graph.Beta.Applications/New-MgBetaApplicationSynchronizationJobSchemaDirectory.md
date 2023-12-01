@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationsynchronizationjobschemadirectory
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to directories for applications
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgApplicationSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationSynchronizationJobSchemaDirectory?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -423,6 +426,7 @@ Not nullable.
   \[SupportedApis \<String\[\]\>\]: The API that the provisioning service queries to retrieve data for synchronization.
 
 ## RELATED LINKS
+[New-MgApplicationSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationSynchronizationJobSchemaDirectory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationsynchronizationjobschemadirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationsynchronizationjobschemadirectory)
 

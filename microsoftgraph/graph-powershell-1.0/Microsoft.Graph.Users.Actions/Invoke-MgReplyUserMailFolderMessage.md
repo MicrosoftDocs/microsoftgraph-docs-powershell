@@ -17,6 +17,9 @@ This method saves the message in the Sent Items folder.
 Alternatively, create a draft to reply to an existing message and send it later.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaReplyUserMailFolderMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaReplyUserMailFolderMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ReplyExpanded (Default)
@@ -475,6 +478,7 @@ Read-only.
   \[WebLink \<String\>\]:
 
 ## RELATED LINKS
+[Invoke-MgBetaReplyUserMailFolderMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaReplyUserMailFolderMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgreplyusermailfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgreplyusermailfoldermessage)
 

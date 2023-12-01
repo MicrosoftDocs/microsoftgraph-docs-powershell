@@ -11,6 +11,9 @@ ms.prod: security
 ## SYNOPSIS
 Get secureScoreControlProfiles from security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecuritySecureScoreControlProfile](/powershell/module/Microsoft.Graph.Security/Get-MgSecuritySecureScoreControlProfile?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -322,6 +325,7 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgSecuritySecureScoreControlProfile](/powershell/module/Microsoft.Graph.Security/Get-MgSecuritySecureScoreControlProfile?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysecurescorecontrolprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysecurescorecontrolprofile)
 

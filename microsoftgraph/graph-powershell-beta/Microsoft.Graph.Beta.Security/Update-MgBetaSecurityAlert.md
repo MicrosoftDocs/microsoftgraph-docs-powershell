@@ -13,6 +13,9 @@ Update an editable alert property within any integrated solution to keep alert s
 This method updates any solution that has a record of the referenced alert ID.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityAlert](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAlert?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -1352,6 +1355,7 @@ VULNERABILITYSTATES \<IMicrosoftGraphVulnerabilityState\[\]\>: Threat intelligen
   \[WasRunning \<Boolean?\>\]: Indicates whether the detected vulnerability (file) was running at the time of detection or was the file detected at rest on the disk.
 
 ## RELATED LINKS
+[Update-MgSecurityAlert](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAlert?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalert](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalert)
 

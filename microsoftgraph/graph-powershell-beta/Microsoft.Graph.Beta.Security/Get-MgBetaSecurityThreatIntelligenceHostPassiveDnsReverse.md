@@ -11,6 +11,9 @@ ms.prod: security
 ## SYNOPSIS
 Reverse passive DNS retrieval about this host.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceHostPassiveDnsReverse](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostPassiveDnsReverse?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -340,6 +343,7 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgSecurityThreatIntelligenceHostPassiveDnsReverse](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostPassiveDnsReverse?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostpassivednsreverse](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostpassivednsreverse)
 

@@ -11,6 +11,9 @@ ms.prod: intune
 ## SYNOPSIS
 Reboot device
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Restart-MgBetaDeviceManagementManagedDeviceNow](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Restart-MgBetaDeviceManagementManagedDeviceNow?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Reboot (Default)
@@ -153,6 +156,7 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
   \[WindowsAutopilotDeviceIdentityId \<String\>\]: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
+[Restart-MgBetaDeviceManagementManagedDeviceNow](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Restart-MgBetaDeviceManagementManagedDeviceNow?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/restart-mgdevicemanagementmanageddevicenow](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/restart-mgdevicemanagementmanageddevicenow)
 

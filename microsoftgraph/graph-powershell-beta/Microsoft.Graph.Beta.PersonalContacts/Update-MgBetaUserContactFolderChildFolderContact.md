@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.Beta.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/update-mgbetausercontactfolderchildfoldercontact
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property contacts in users
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserContactFolderChildFolderContact](/powershell/module/Microsoft.Graph.PersonalContacts/Update-MgUserContactFolderChildFolderContact?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -1068,6 +1071,7 @@ WEBSITES \<IMicrosoftGraphWebsite\[\]\>: .
   \[Type \<String\>\]: websiteType
 
 ## RELATED LINKS
+[Update-MgUserContactFolderChildFolderContact](/powershell/module/Microsoft.Graph.PersonalContacts/Update-MgUserContactFolderChildFolderContact?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/update-mgbetausercontactfolderchildfoldercontact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/update-mgbetausercontactfolderchildfoldercontact)
 

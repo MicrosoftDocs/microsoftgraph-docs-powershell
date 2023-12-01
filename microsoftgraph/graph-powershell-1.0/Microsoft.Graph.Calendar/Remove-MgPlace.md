@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete entity from places
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPlace](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaPlace?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -166,6 +169,7 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaPlace](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaPlace?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgplace](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgplace)
 

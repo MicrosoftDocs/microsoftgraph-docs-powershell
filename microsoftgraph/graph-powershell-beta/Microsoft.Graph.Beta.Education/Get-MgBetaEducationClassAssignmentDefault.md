@@ -15,6 +15,9 @@ Callers can continue to specify custom values on each assignment creation if the
 Only teachers can perform this operation.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationClassAssignmentDefault](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentDefault?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -143,6 +146,7 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Get-MgEducationClassAssignmentDefault](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentDefault?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentdefault](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentdefault)
 

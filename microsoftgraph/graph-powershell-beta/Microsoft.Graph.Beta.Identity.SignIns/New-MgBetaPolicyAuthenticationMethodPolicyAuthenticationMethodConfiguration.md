@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyauthenticationmethodpolicyauthenticationmethodconfiguration
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to authenticationMethodConfigurations for policies
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -184,6 +187,7 @@ EXCLUDETARGETS \<IMicrosoftGraphExcludeTarget\[\]\>: Groups of users that are ex
   \[TargetType \<String\>\]: authenticationMethodTargetType
 
 ## RELATED LINKS
+[New-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyauthenticationmethodpolicyauthenticationmethodconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyauthenticationmethodpolicyauthenticationmethodconfiguration)
 

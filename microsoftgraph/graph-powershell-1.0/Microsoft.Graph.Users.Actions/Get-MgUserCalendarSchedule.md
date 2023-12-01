@@ -12,6 +12,9 @@ ms.prod: outlook
 Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserCalendarSchedule](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Get-MgBetaUserCalendarSchedule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GetExpanded1 (Default)
@@ -315,6 +318,7 @@ STARTTIME \<IMicrosoftGraphDateTimeZone\>: dateTimeTimeZone
 See below for more possible values.
 
 ## RELATED LINKS
+[Get-MgBetaUserCalendarSchedule](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Get-MgBetaUserCalendarSchedule?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/get-mgusercalendarschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/get-mgusercalendarschedule)
 

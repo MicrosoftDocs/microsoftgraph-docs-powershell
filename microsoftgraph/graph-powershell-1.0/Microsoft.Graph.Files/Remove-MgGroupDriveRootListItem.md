@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property listItem for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveRootListItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveRootListItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -194,6 +197,7 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaGroupDriveRootListItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveRootListItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdriverootlistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdriverootlistitem)
 

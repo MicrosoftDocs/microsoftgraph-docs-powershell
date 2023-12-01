@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to loginPages for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityAttackSimulationLoginPage](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulationLoginPage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -335,6 +338,7 @@ This property is read-only.
   \[Email \<String\>\]: Email address of the user.
 
 ## RELATED LINKS
+[New-MgSecurityAttackSimulationLoginPage](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulationLoginPage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationloginpage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationloginpage)
 

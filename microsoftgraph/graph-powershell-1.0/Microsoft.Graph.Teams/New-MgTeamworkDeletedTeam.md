@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedteam
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to deletedTeams for teamwork
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaTeamworkDeletedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamworkDeletedTeam?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -9294,6 +9297,7 @@ This URL should be treated as an opaque blob, and not parsed.
 Read-only.
 
 ## RELATED LINKS
+[New-MgBetaTeamworkDeletedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamworkDeletedTeam?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedteam)
 

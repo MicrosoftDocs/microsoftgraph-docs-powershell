@@ -13,6 +13,9 @@ Reply to a post and add a new post to the specified thread in a group conversati
 You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgReplyGroupConversationThreadPostInReplyTo](/powershell/module/Microsoft.Graph.Groups/Invoke-MgReplyGroupConversationThreadPostInReplyTo?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ReplyExpanded (Default)
@@ -516,6 +519,7 @@ Read-only.
     \[Value \<String\>\]: A property value.
 
 ## RELATED LINKS
+[Invoke-MgReplyGroupConversationThreadPostInReplyTo](/powershell/module/Microsoft.Graph.Groups/Invoke-MgReplyGroupConversationThreadPostInReplyTo?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareplygroupconversationthreadpostinreplyto](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareplygroupconversationthreadpostinreplyto)
 

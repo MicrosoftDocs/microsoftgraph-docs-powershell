@@ -12,6 +12,9 @@ ms.prod: sharepoint
 Grant users access to a link represented by a permission\]\[\].
 This API is available in the following \[national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Grant-MgDriveItemPermission](/powershell/module/Microsoft.Graph.Files/Grant-MgDriveItemPermission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### GrantExpanded (Default)
@@ -275,6 +278,7 @@ security groups).
   \[ObjectId \<String\>\]: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
+[Grant-MgDriveItemPermission](/powershell/module/Microsoft.Graph.Files/Grant-MgDriveItemPermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/grant-mgbetadriveitempermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/grant-mgbetadriveitempermission)
 

@@ -15,6 +15,9 @@ To create a new file-based resource, upload the file to the feedback resources f
 If the file doesn't exist or is not in that folder, the POST request will fail.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgEducationUserAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Education/New-MgEducationUserAssignmentSubmissionOutcome?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -303,6 +306,7 @@ This property is read-only.
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
 ## RELATED LINKS
+[New-MgEducationUserAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Education/New-MgEducationUserAssignmentSubmissionOutcome?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationuserassignmentsubmissionoutcome](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationuserassignmentsubmissionoutcome)
 

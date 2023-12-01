@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Bypass activation lock
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Skip-MgUserManagedDeviceActivationLock](/powershell/module/Microsoft.Graph.Users.Actions/Skip-MgUserManagedDeviceActivationLock?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Bypass (Default)
@@ -194,6 +197,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Skip-MgUserManagedDeviceActivationLock](/powershell/module/Microsoft.Graph.Users.Actions/Skip-MgUserManagedDeviceActivationLock?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/skip-mgbetausermanageddeviceactivationlock](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/skip-mgbetausermanageddeviceactivationlock)
 

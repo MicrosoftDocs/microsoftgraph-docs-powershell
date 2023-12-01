@@ -12,6 +12,9 @@ ms.prod: sharepoint
 Get \[itemAnalytics\]\[\] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the getActivitiesByInterval\]\[\] API.
 This API is available in the following \[national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveRootAnalytic](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveRootAnalytic?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -166,6 +169,7 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgGroupDriveRootAnalytic](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveRootAnalytic?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriverootanalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriverootanalytic)
 

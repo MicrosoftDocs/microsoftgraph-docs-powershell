@@ -12,6 +12,9 @@ ms.prod: directory-management
 Deletes a domain from a tenant.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDomain?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -174,6 +177,7 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDomain?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdomain](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdomain)
 

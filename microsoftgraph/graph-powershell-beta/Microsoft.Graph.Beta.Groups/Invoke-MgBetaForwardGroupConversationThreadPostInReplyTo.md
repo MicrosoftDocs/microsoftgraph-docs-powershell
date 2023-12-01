@@ -13,6 +13,9 @@ Forward a post to a recipient.
 You can specify both the parent conversation and thread in the request, \nor, you can specify just the parent thread without the parent conversation.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgForwardGroupConversationThreadPostInReplyTo](/powershell/module/Microsoft.Graph.Groups/Invoke-MgForwardGroupConversationThreadPostInReplyTo?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ForwardExpanded (Default)
@@ -332,6 +335,7 @@ TORECIPIENTS \<IMicrosoftGraphRecipient\[\]\>: .
     \[Name \<String\>\]: The display name of an entity instance.
 
 ## RELATED LINKS
+[Invoke-MgForwardGroupConversationThreadPostInReplyTo](/powershell/module/Microsoft.Graph.Groups/Invoke-MgForwardGroupConversationThreadPostInReplyTo?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaforwardgroupconversationthreadpostinreplyto](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaforwardgroupconversationthreadpostinreplyto)
 

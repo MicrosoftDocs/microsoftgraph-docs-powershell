@@ -13,6 +13,9 @@ Restore a previous version of a DriveItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the file.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Restore-MgBetaDriveItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Restore-MgBetaDriveItemVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Restore (Default)
@@ -190,6 +193,7 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Restore-MgBetaDriveItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Restore-MgBetaDriveItemVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mgdriveitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mgdriveitemversion)
 

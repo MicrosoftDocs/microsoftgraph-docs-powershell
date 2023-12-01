@@ -14,6 +14,9 @@ Read the properties, relationships, or raw contents of an attachment that is att
 An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserEventInstanceAttachment](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserEventInstanceAttachment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -301,6 +304,7 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[WorkspaceId \<String\>\]: The unique identifier of workspace
 
 ## RELATED LINKS
+[Get-MgUserEventInstanceAttachment](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserEventInstanceAttachment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventinstanceattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventinstanceattachment)
 

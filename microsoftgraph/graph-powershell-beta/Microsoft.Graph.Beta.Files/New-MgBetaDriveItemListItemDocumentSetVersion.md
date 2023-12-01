@@ -12,6 +12,9 @@ ms.prod: sites-and-lists
 Create a new version of a document set item in a list.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDriveItemListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/New-MgDriveItemListItemDocumentSetVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -459,6 +462,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[New-MgDriveItemListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/New-MgDriveItemListItemDocumentSetVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriveitemlistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriveitemlistitemdocumentsetversion)
 

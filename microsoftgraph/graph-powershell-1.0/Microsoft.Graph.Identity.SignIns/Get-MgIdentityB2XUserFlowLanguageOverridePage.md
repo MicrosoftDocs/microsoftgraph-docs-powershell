@@ -12,6 +12,9 @@ ms.prod: identity-and-sign-in
 Collection of pages with the overrides messages to display in a user flow for a specified language.
 This collection only allows you to modify the content of the page, any other modification isn't allowed (creation or deletion of pages).
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityB2XUserFlowLanguageOverridePage](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityB2XUserFlowLanguageOverridePage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -336,6 +339,7 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Get-MgBetaIdentityB2XUserFlowLanguageOverridePage](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityB2XUserFlowLanguageOverridePage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowlanguageoverridepage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowlanguageoverridepage)
 

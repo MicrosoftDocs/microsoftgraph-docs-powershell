@@ -11,6 +11,9 @@ schema: 2.0.0
 Unpublish a contentType\]\[\] from a content type hub site.
 This API is available in the following \[national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Unpublish-MgBetaGroupSiteContentType](/powershell/module/Microsoft.Graph.Beta.Groups/Unpublish-MgBetaGroupSiteContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Unpublish (Default)
@@ -207,6 +210,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
+[Unpublish-MgBetaGroupSiteContentType](/powershell/module/Microsoft.Graph.Beta.Groups/Unpublish-MgBetaGroupSiteContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/unpublish-mggroupsitecontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/unpublish-mggroupsitecontenttype)
 

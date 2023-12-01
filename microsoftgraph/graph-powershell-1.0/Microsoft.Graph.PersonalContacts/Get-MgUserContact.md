@@ -13,6 +13,9 @@ ms.prod: outlook
 Retrieve the properties and relationships of a contact object.
 There are two scenarios where an app can get a contact in another user's contact folder: This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContact?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -270,6 +273,7 @@ INPUTOBJECT \<IPersonalContactsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContact?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontact](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontact)
 

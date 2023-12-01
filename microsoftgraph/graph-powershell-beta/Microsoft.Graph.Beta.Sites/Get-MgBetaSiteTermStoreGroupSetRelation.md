@@ -11,6 +11,9 @@ ms.prod: sites-and-lists
 ## SYNOPSIS
 Indicates which terms have been pinned or reused directly under the set.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteTermStoreGroupSetRelation](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreGroupSetRelation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -339,6 +342,7 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgSiteTermStoreGroupSetRelation](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreGroupSetRelation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoregroupsetrelation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoregroupsetrelation)
 

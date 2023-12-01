@@ -11,6 +11,9 @@ schema: 2.0.0
 Create a new version of the workflow object.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernanceLifecycleWorkflowNewVersion](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceLifecycleWorkflowNewVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -9662,6 +9665,7 @@ Can't be true for a disabled workflow (where isEnabled is false).
     \[VersionNumber \<Int32?\>\]: The version of the workflow.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
 
 ## RELATED LINKS
+[New-MgBetaIdentityGovernanceLifecycleWorkflowNewVersion](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceLifecycleWorkflowNewVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancelifecycleworkflownewversion](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancelifecycleworkflownewversion)
 

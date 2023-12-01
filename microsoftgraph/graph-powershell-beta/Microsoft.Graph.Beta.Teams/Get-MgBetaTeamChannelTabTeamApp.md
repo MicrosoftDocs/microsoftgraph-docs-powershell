@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The application that is linked to the tab.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamChannelTabTeamApp](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamChannelTabTeamApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -192,6 +195,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgTeamChannelTabTeamApp](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamChannelTabTeamApp?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchanneltabteamapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchanneltabteamapp)
 

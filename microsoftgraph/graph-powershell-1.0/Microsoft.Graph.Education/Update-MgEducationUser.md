@@ -12,6 +12,9 @@ ms.prod: education
 Update the properties of an educationUser object.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationUser](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -24885,6 +24888,7 @@ Supports $filter (eq, ne, not, in, and eq on null values).
 NOTE: For more information about the permissions for member and guest users, see What are the default user permissions in Microsoft Entra ID?
 
 ## RELATED LINKS
+[Update-MgBetaEducationUser](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationuser](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationuser)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update entity in directoryObjects
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDirectoryObject](/powershell/module/Microsoft.Graph.DirectoryObjects/Update-MgDirectoryObject?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -202,6 +205,7 @@ INPUTOBJECT \<IDirectoryObjectsIdentity\>: Identity Parameter
   \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
 
 ## RELATED LINKS
+[Update-MgDirectoryObject](/powershell/module/Microsoft.Graph.DirectoryObjects/Update-MgDirectoryObject?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/update-mgbetadirectoryobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/update-mgbetadirectoryobject)
 

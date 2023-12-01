@@ -12,6 +12,9 @@ ms.prod: sites-and-lists
 Restore a document set version.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restore-MgUserDriveListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Users.Actions/Restore-MgUserDriveListItemDocumentSetVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Restore (Default)
@@ -220,6 +223,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Restore-MgUserDriveListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Users.Actions/Restore-MgUserDriveListItemDocumentSetVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restore-mgbetauserdrivelistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restore-mgbetauserdrivelistitemdocumentsetversion)
 

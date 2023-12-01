@@ -12,6 +12,9 @@ Update the properties of the specified tab in a chat.
 This can be used to configure the content of the tab.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserChatTab](/powershell/module/Microsoft.Graph.Teams/Update-MgUserChatTab?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -501,6 +504,7 @@ For example, if a user changes their display name, the API might show the new va
   \[ExternalId \<String\>\]: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
 ## RELATED LINKS
+[Update-MgUserChatTab](/powershell/module/Microsoft.Graph.Teams/Update-MgUserChatTab?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetauserchattab](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetauserchattab)
 

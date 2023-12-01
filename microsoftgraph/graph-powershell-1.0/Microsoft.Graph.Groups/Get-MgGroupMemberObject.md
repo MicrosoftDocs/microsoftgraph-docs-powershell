@@ -14,6 +14,9 @@ This function is transitive.
 Note: Only users and role-enabled groups can be members of directory roles.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupMemberObject](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberObject?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GetExpanded (Default)
@@ -229,6 +232,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
+[Get-MgBetaGroupMemberObject](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberObject?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberobject](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberobject)
 

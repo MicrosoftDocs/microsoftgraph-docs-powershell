@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property bookingCurrencies in solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBookingCurrency](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaBookingCurrency?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -215,6 +218,7 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[BookingStaffMemberBaseId \<String\>\]: The unique identifier of bookingStaffMemberBase
 
 ## RELATED LINKS
+[Update-MgBetaBookingCurrency](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaBookingCurrency?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingcurrency](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingcurrency)
 

@@ -13,6 +13,9 @@ Retrieve the properties and relationships of a Drive resource.
 A Drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDefaultDrive](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDefaultDrive?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -147,6 +150,7 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserDefaultDrive](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDefaultDrive?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdefaultdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdefaultdrive)
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitelistitem
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property items in sites
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -23335,6 +23338,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[Update-MgBetaSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitelistitem)
 

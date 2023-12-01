@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function sharedWithMe
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaGraphUserDrive](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaGraphUserDrive?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Graph (Default)
@@ -241,6 +244,7 @@ INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgBetaGraphUserDrive](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaGraphUserDrive?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mggraphuserdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mggraphuserdrive)
 

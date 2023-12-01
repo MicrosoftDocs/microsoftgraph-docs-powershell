@@ -14,6 +14,9 @@ If the event allows proposals for new times, on responding tentative to the even
 For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaAcceptGroupCalendarEventTentatively](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaAcceptGroupCalendarEventTentatively?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AcceptExpanded (Default)
@@ -323,6 +326,7 @@ See below for more possible values.
   \[Start \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
 
 ## RELATED LINKS
+[Invoke-MgBetaAcceptGroupCalendarEventTentatively](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaAcceptGroupCalendarEventTentatively?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgacceptgroupcalendareventtentatively](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgacceptgroupcalendareventtentatively)
 

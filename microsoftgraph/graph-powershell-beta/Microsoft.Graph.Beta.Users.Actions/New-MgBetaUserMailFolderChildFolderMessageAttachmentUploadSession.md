@@ -19,6 +19,9 @@ This allows transfer to be resumed, in case the network connection is dropped du
 The following are the steps to attach a file to an Outlook item using an upload session: See attach large files to Outlook messages or events for an example.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserMailFolderChildFolderMessageAttachmentUploadSession](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMailFolderChildFolderMessageAttachmentUploadSession?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -343,6 +346,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[New-MgUserMailFolderChildFolderMessageAttachmentUploadSession](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMailFolderChildFolderMessageAttachmentUploadSession?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermailfolderchildfoldermessageattachmentuploadsession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermailfolderchildfoldermessageattachmentuploadsession)
 
