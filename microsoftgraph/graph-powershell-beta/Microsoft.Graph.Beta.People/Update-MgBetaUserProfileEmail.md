@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileemail
@@ -460,4 +460,5 @@ SOURCE \<IMicrosoftGraphPersonDataSources\>: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileemail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileemail)
+
 

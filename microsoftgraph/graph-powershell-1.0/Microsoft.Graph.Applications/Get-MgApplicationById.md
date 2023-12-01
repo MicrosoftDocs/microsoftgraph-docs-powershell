@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationbyid
@@ -161,4 +161,5 @@ BODYPARAMETER \<IPaths1Hl8AmeApplicationsMicrosoftGraphGetbyidsPostRequestbodyCo
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationbyid](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationbyid)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgsnoozegroupcalendareventreminder
@@ -272,4 +272,5 @@ See below for more possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgsnoozegroupcalendareventreminder](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgsnoozegroupcalendareventreminder)
+
 

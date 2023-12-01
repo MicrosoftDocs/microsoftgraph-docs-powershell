@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgcreateorgetuseronlinemeeting
@@ -364,4 +364,5 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgcreateorgetuseronlinemeeting](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgcreateorgetuseronlinemeeting)
+
 

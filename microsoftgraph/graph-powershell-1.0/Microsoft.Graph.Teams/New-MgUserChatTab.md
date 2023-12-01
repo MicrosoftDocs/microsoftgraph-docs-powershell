@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchattab
@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Add (pin) a tab to the specified chat.
-\nThe corresponding app must already be installed in the chat.
+The corresponding app must already be installed in the chat.
 This API is available in the following national cloud deployments.
 
 ## SYNTAX
@@ -42,7 +42,7 @@ New-MgUserChatTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphT
 
 ## DESCRIPTION
 Add (pin) a tab to the specified chat.
-\nThe corresponding app must already be installed in the chat.
+The corresponding app must already be installed in the chat.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
@@ -399,4 +399,5 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchattab](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchattab)
+
 

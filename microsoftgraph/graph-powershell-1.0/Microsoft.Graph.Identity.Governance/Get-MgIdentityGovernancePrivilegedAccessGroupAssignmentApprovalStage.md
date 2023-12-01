@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceprivilegedaccessgroupassignmentapprovalstage
@@ -337,4 +337,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceprivilegedaccessgroupassignmentapprovalstage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceprivilegedaccessgroupassignmentapprovalstage)
+
 

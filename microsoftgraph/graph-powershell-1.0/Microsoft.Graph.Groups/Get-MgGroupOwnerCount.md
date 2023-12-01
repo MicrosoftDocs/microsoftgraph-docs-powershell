@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupownercount
@@ -173,4 +173,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupownercount](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupownercount)
+
 

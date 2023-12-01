@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingcurrency
@@ -164,4 +164,5 @@ For example, the currency symbol for the US dollar and for the Australian dollar
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingcurrency](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingcurrency)
+
 

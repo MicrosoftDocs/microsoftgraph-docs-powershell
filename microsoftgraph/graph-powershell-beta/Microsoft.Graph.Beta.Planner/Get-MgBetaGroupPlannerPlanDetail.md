@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetagroupplannerplandetail
@@ -147,4 +147,5 @@ INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetagroupplannerplandetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetagroupplannerplandetail)
+
 

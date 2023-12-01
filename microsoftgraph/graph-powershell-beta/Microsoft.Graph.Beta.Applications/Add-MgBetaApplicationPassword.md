@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/add-mgbetaapplicationpassword
@@ -302,4 +302,5 @@ Optional.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/add-mgbetaapplicationpassword](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/add-mgbetaapplicationpassword)
+
 

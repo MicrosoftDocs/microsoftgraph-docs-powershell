@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetausersecurityinformationprotectionsensitivitylabelapplication
@@ -350,4 +350,5 @@ The message appears in administrative logs.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetausersecurityinformationprotectionsensitivitylabelapplication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetausersecurityinformationprotectionsensitivitylabelapplication)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Notes-help.xml
 Module Name: Microsoft.Graph.Beta.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetagrouponenotenotebooksectiongroup
@@ -231,4 +231,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetagrouponenotenotebooksectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetagrouponenotenotebooksectiongroup)
+
 

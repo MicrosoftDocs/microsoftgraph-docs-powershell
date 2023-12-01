@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermailfoldermessageextension
@@ -214,4 +214,5 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermailfoldermessageextension](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermailfoldermessageextension)
+
 

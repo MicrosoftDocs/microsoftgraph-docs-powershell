@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/revoke-mgbetausersigninsession
@@ -174,4 +174,5 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/revoke-mgbetausersigninsession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/revoke-mgbetausersigninsession)
+
 

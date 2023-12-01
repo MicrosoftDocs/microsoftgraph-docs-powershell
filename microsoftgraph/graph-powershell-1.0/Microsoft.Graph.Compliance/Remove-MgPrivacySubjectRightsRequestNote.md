@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/remove-mgprivacysubjectrightsrequestnote
@@ -171,4 +171,5 @@ INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/remove-mgprivacysubjectrightsrequestnote](https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/remove-mgprivacysubjectrightsrequestnote)
+
 

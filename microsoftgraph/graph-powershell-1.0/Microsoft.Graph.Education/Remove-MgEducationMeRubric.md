@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationmerubric
@@ -164,4 +164,5 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationmerubric](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationmerubric)
+
 

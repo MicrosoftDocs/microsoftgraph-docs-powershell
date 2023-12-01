@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetauserdriveitem
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaUserDriveItem
 
 ## SYNOPSIS
-Delete a DriveItem by using its ID or path.\nDeleting items using this method moves the items to the recycle bin instead of permanently deleting the item.
+Delete a DriveItem by using its ID or path.Deleting items using this method moves the items to the recycle bin instead of permanently deleting the item.
 This API is available in the following national cloud deployments.
 
 ## SYNTAX
@@ -26,7 +26,7 @@ Remove-MgBetaUserDriveItem -InputObject <IFilesIdentity> [-IfMatch <String>] [-P
 ```
 
 ## DESCRIPTION
-Delete a DriveItem by using its ID or path.\nDeleting items using this method moves the items to the recycle bin instead of permanently deleting the item.
+Delete a DriveItem by using its ID or path.Deleting items using this method moves the items to the recycle bin instead of permanently deleting the item.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
@@ -213,4 +213,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetauserdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetauserdriveitem)
+
 

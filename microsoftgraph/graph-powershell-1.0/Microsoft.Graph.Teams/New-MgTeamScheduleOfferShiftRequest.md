@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleoffershiftrequest
@@ -379,4 +379,5 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleoffershiftrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleoffershiftrequest)
+
 

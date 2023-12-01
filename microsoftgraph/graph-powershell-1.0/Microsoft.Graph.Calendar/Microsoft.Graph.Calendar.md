@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Calendar
 Module Guid: bf2ee476-ae5b-4a53-9fa8-943f3a49bf93
 Download Help Link: {{ Update Download Link }}
@@ -289,4 +289,5 @@ Locale: en-US
 
 ### [Update-MgUserEventInstanceExtension](Update-MgUserEventInstanceExtension.md)
 {{ Fill in the Description }}
+
 

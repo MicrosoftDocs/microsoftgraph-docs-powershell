@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintconnector
@@ -399,4 +399,5 @@ The elements should be in hierarchical order.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintconnector)
+
 

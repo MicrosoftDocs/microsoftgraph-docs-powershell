@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprinttaskdefinitiontask
@@ -387,4 +387,5 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprinttaskdefinitiontask](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprinttaskdefinitiontask)
+
 

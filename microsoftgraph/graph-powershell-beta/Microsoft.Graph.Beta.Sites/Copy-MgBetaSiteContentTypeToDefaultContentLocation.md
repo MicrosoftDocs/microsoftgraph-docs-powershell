@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetasitecontenttypetodefaultcontentlocation
@@ -352,4 +352,5 @@ For OneDrive, this property is not populated.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetasitecontenttypetodefaultcontentlocation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetasitecontenttypetodefaultcontentlocation)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertaskbuckettaskboardformat
@@ -232,4 +232,5 @@ INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertaskbuckettaskboardformat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertaskbuckettaskboardformat)
+
 

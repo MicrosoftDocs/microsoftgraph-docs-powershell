@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mguserdefaultcalendar
@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the properties and relationships of a calendar object.
-The calendar can be one for a user, \nor the default calendar of a Microsoft 365 group.
+The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
 There are two scenarios where an app can get another user's calendar: This API is available in the following national cloud deployments.
 
 ## SYNTAX
@@ -26,7 +26,7 @@ Get-MgUserDefaultCalendar -InputObject <ICalendarIdentity> [-Property <String[]>
 
 ## DESCRIPTION
 Get the properties and relationships of a calendar object.
-The calendar can be one for a user, \nor the default calendar of a Microsoft 365 group.
+The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
 There are two scenarios where an app can get another user's calendar: This API is available in the following national cloud deployments.
 
 ## EXAMPLES
@@ -117,4 +117,5 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mguserdefaultcalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mguserdefaultcalendar)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationonlinemeetingtranscript
@@ -336,4 +336,5 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationonlinemeetingtranscript](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationonlinemeetingtranscript)
+
 

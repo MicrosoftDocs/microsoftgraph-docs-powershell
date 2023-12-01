@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermailboxsetting
@@ -139,4 +139,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermailboxsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermailboxsetting)
+
 

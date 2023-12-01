@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertask
@@ -985,4 +985,5 @@ A GUID-based value that serves as the unique identifier for a series.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertask)
+
 

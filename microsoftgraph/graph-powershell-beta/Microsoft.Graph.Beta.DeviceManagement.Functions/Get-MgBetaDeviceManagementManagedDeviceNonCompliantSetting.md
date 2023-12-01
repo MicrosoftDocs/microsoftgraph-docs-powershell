@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementmanageddevicenoncompliantsetting
@@ -199,4 +199,5 @@ INPUTOBJECT \<IDeviceManagementFunctionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementmanageddevicenoncompliantsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementmanageddevicenoncompliantsetting)
+
 

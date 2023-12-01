@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationpresence
@@ -284,4 +284,5 @@ See below for more possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationpresence)
+
 

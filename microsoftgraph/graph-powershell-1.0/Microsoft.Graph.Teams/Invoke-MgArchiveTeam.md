@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgarchiveteam
@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Archive the specified team.
-\nWhen a team is archived, users can no longer send or like messages on any channel in the team, edit the team's name, description, or other settings, or in general make most changes to the team.\nMembership changes to the team continue to be allowed.
+When a team is archived, users can no longer send or like messages on any channel in the team, edit the team's name, description, or other settings, or in general make most changes to the team.Membership changes to the team continue to be allowed.
 Archiving is an async operation.
 A team is archived once the async operation completes successfully, which may occur subsequent to a response from this API.
 To archive a team, the team and group must have an owner.
@@ -46,7 +46,7 @@ Invoke-MgArchiveTeam -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Archive the specified team.
-\nWhen a team is archived, users can no longer send or like messages on any channel in the team, edit the team's name, description, or other settings, or in general make most changes to the team.\nMembership changes to the team continue to be allowed.
+When a team is archived, users can no longer send or like messages on any channel in the team, edit the team's name, description, or other settings, or in general make most changes to the team.Membership changes to the team continue to be allowed.
 Archiving is an async operation.
 A team is archived once the async operation completes successfully, which may occur subsequent to a response from this API.
 To archive a team, the team and group must have an owner.
@@ -244,4 +244,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgarchiveteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgarchiveteam)
+
 

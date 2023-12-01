@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupeventextension
@@ -279,4 +279,5 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupeventextension](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupeventextension)
+
 

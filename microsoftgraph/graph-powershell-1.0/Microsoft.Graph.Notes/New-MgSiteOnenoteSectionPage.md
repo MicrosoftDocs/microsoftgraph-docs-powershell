@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mgsiteonenotesectionpage
@@ -836,4 +836,5 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mgsiteonenotesectionpage](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mgsiteonenotesectionpage)
+
 

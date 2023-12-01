@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannertask
@@ -703,4 +703,5 @@ For details about the supported format, see Using order hints in Planner.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannertask](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannertask)
+
 

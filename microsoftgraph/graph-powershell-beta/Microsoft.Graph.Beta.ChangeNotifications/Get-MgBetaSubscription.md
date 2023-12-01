@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.ChangeNotifications-help.xml
 Module Name: Microsoft.Graph.Beta.ChangeNotifications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/get-mgbetasubscription
@@ -174,4 +174,5 @@ INPUTOBJECT \<IChangeNotificationsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/get-mgbetasubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/get-mgbetasubscription)
+
 

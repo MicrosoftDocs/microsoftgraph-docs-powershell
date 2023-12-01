@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Notes-help.xml
 Module Name: Microsoft.Graph.Beta.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetauseronenotepage
@@ -755,4 +755,5 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetauseronenotepage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetauseronenotepage)
+
 

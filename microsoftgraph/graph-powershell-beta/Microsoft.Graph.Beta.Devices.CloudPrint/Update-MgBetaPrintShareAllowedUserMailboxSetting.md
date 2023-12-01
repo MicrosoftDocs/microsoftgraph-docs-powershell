@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintshareallowedusermailboxsetting
@@ -427,4 +427,5 @@ It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintshareallowedusermailboxsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintshareallowedusermailboxsetting)
+
 

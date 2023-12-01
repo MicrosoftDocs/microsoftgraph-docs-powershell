@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/set-mgpolicycrosstenantaccesspolicypartneridentitysynchronization
@@ -294,4 +294,5 @@ This property has no impact on existing users who have already been synchronized
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/set-mgpolicycrosstenantaccesspolicypartneridentitysynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/set-mgpolicycrosstenantaccesspolicypartneridentitysynchronization)
+
 

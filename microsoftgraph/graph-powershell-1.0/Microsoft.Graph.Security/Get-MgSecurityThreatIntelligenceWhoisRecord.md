@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencewhoisrecord
@@ -9,8 +9,8 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the specified whoisRecord resource.
-Specify the desired whoisRecord in one of the following two ways:\n- Identify a host and get its current whoisRecord.
-\n- Specify an id value to get the corresponding whoisRecord.
+Specify the desired whoisRecord in one of the following two ways:- Identify a host and get its current whoisRecord.
+- Specify an id value to get the corresponding whoisRecord.
 This API is available in the following national cloud deployments.
 
 ## SYNTAX
@@ -36,8 +36,8 @@ Get-MgSecurityThreatIntelligenceWhoisRecord -InputObject <ISecurityIdentity> [-E
 
 ## DESCRIPTION
 Get the specified whoisRecord resource.
-Specify the desired whoisRecord in one of the following two ways:\n- Identify a host and get its current whoisRecord.
-\n- Specify an id value to get the corresponding whoisRecord.
+Specify the desired whoisRecord in one of the following two ways:- Identify a host and get its current whoisRecord.
+- Specify an id value to get the corresponding whoisRecord.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
@@ -308,4 +308,5 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencewhoisrecord](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencewhoisrecord)
+
 

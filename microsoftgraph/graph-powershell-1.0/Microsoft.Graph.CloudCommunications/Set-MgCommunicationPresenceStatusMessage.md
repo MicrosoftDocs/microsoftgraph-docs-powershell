@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/set-mgcommunicationpresencestatusmessage
@@ -246,4 +246,5 @@ See below for more possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/set-mgcommunicationpresencestatusmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/set-mgcommunicationpresencestatusmessage)
+
 

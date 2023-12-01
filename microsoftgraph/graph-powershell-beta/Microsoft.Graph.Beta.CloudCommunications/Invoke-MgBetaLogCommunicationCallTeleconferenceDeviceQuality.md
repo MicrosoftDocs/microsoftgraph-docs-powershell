@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetalogcommunicationcallteleconferencedevicequality
@@ -339,4 +339,5 @@ The CVI partner needs to copy over Call.MyParticipantId to this property.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetalogcommunicationcallteleconferencedevicequality](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetalogcommunicationcallteleconferencedevicequality)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementassignmentpolicy
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgEntitlementManagementAssignmentPolicy
 
 ## SYNOPSIS
-In Microsoft Entra entitlement management, retrieve the properties and relationships of an\n accessPackageAssignmentPolicy object.
+In Microsoft Entra entitlement management, retrieve the properties and relationships of an accessPackageAssignmentPolicy object.
 This API is available in the following national cloud deployments.
 
 ## SYNTAX
@@ -45,7 +45,7 @@ Get-MgEntitlementManagementAssignmentPolicy -InputObject <IIdentityGovernanceIde
 ```
 
 ## DESCRIPTION
-In Microsoft Entra entitlement management, retrieve the properties and relationships of an\n accessPackageAssignmentPolicy object.
+In Microsoft Entra entitlement management, retrieve the properties and relationships of an accessPackageAssignmentPolicy object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
@@ -344,4 +344,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementassignmentpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementassignmentpolicy)
+
 

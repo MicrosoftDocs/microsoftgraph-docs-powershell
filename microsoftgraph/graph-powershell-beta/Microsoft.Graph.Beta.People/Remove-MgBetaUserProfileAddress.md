@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofileaddress
@@ -188,4 +188,5 @@ INPUTOBJECT \<IPeopleIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofileaddress](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofileaddress)
+
 

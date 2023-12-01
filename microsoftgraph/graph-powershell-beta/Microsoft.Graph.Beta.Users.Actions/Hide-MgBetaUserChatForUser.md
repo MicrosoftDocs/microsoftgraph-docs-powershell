@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/hide-mgbetauserchatforuser
@@ -296,4 +296,5 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/hide-mgbetauserchatforuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/hide-mgbetauserchatforuser)
+
 

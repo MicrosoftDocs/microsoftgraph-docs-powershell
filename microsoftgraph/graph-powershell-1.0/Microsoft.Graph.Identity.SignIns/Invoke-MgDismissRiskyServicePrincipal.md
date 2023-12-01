@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mgdismissriskyserviceprincipal
@@ -162,4 +162,5 @@ BODYPARAMETER \<IPathsUc5289IdentityprotectionRiskyserviceprincipalsMicrosoftGra
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mgdismissriskyserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mgdismissriskyserviceprincipal)
+
 

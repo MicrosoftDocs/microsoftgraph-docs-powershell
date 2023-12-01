@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/copy-mggroupdrivelistcontenttypetodefaultcontentlocation
@@ -348,4 +348,5 @@ For OneDrive, this property is not populated.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/copy-mggroupdrivelistcontenttypetodefaultcontentlocation](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/copy-mggroupdrivelistcontenttypetodefaultcontentlocation)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetauserdrivelistcontenttypecolumn
@@ -228,4 +228,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetauserdrivelistcontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetauserdrivelistcontenttypecolumn)
+
 

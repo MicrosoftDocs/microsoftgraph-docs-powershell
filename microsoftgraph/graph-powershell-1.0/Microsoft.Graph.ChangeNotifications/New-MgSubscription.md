@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.ChangeNotifications-help.xml
 Module Name: Microsoft.Graph.ChangeNotifications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/new-mgsubscription
@@ -475,4 +475,5 @@ See the possible resource path values for each supported resource.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/new-mgsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/new-mgsubscription)
+
 

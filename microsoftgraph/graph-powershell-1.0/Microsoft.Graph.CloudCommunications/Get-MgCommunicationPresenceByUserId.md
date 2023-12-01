@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationpresencebyuserid
@@ -147,4 +147,5 @@ BODYPARAMETER \<IPaths10WpgkzCommunicationsMicrosoftGraphGetpresencesbyuseridPos
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationpresencebyuserid](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationpresencebyuserid)
+
 

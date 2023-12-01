@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/copy-mgbetadrivelistcontenttypetodefaultcontentlocation
@@ -321,4 +321,5 @@ For OneDrive, this property is not populated.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/copy-mgbetadrivelistcontenttypetodefaultcontentlocation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/copy-mgbetadrivelistcontenttypetodefaultcontentlocation)
+
 

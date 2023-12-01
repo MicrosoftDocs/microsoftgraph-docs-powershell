@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontractbyid
@@ -161,4 +161,5 @@ BODYPARAMETER \<IPaths1T6Lra6ContractsMicrosoftGraphGetbyidsPostRequestbodyConte
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontractbyid](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontractbyid)
+
 

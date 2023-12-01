@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingbusiness
@@ -166,4 +166,5 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingbusiness](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingbusiness)
+
 

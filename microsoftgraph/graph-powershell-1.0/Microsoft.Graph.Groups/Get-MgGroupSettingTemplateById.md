@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsettingtemplatebyid
@@ -161,4 +161,5 @@ BODYPARAMETER \<IPathsRyc91VGroupsettingtemplatesMicrosoftGraphGetbyidsPostReque
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsettingtemplatebyid](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsettingtemplatebyid)
+
 

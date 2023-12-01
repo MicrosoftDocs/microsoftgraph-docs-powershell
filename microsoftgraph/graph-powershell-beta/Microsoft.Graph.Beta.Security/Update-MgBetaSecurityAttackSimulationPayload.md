@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationpayload
@@ -695,4 +695,5 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationpayload](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationpayload)
+
 

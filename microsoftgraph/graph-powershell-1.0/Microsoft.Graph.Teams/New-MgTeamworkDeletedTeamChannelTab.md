@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedteamchanneltab
@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Adds (pins) a tab to the specified channel within a team.
-\nThe corresponding app must already be installed in the team.
+The corresponding app must already be installed in the team.
 This API is available in the following national cloud deployments.
 
 ## SYNTAX
@@ -43,7 +43,7 @@ New-MgTeamworkDeletedTeamChannelTab -InputObject <ITeamsIdentity> -BodyParameter
 
 ## DESCRIPTION
 Adds (pins) a tab to the specified channel within a team.
-\nThe corresponding app must already be installed in the team.
+The corresponding app must already be installed in the team.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
@@ -400,4 +400,5 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedteamchanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedteamchanneltab)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriverootretentionlabel
@@ -383,4 +383,5 @@ Read-write.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriverootretentionlabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriverootretentionlabel)
+
 

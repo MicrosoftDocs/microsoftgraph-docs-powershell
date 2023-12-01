@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetahasdevicemanagementdeviceenrollmentconfigurationpayloadlink
@@ -145,4 +145,5 @@ BODY \<IPaths1Uvh7JwDevicemanagementDeviceenrollmentconfigurationsMicrosoftGraph
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetahasdevicemanagementdeviceenrollmentconfigurationpayloadlink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetahasdevicemanagementdeviceenrollmentconfigurationpayloadlink)
+
 

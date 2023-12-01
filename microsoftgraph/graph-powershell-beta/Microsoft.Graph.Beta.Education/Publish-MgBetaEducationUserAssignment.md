@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/publish-mgbetaeducationuserassignment
@@ -171,4 +171,5 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/publish-mgbetaeducationuserassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/publish-mgbetaeducationuserassignment)
+
 

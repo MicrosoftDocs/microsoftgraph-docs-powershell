@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreporthistoricalreport
@@ -288,4 +288,5 @@ BODYPARAMETER \<IPaths1Mia7W1DevicemanagementReportsMicrosoftGraphGethistoricalr
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreporthistoricalreport](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreporthistoricalreport)
+
 

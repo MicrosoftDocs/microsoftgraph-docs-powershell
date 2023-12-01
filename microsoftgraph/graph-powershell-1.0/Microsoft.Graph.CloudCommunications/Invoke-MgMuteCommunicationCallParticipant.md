@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgmutecommunicationcallparticipant
@@ -223,4 +223,5 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgmutecommunicationcallparticipant](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgmutecommunicationcallparticipant)
+
 

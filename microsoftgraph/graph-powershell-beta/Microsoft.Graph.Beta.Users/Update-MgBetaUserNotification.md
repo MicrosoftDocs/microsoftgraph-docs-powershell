@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausernotification
@@ -387,4 +387,5 @@ By default, all push endpoint types (Windows, iOS, Android and WebPush) are enab
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausernotification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausernotification)
+
 

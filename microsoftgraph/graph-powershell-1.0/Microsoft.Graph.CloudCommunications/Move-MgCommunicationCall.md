@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/move-mgcommunicationcall
@@ -428,4 +428,5 @@ For peer-to-peer case, the call will be dropped once the participant is added su
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/move-mgcommunicationcall](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/move-mgcommunicationcall)
+
 

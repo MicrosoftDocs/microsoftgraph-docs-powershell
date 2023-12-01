@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/connect-mgbetadevicemanagementchromeosonboardingsetting
@@ -161,4 +161,5 @@ BODY \<IPaths5LbknhDevicemanagementChromeosonboardingsettingsMicrosoftGraphConne
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/connect-mgbetadevicemanagementchromeosonboardingsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/connect-mgbetadevicemanagementchromeosonboardingsetting)
+
 

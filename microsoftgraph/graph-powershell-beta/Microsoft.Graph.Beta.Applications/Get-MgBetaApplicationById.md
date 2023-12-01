@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationbyid
@@ -159,4 +159,5 @@ BODYPARAMETER \<IPaths1Hl8AmeApplicationsMicrosoftGraphGetbyidsPostRequestbodyCo
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationbyid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationbyid)
+
 

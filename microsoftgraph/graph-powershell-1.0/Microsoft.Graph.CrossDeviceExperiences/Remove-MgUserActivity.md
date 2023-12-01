@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.CrossDeviceExperiences
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/remove-mguseractivity
@@ -171,4 +171,5 @@ INPUTOBJECT \<ICrossDeviceExperiencesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/remove-mguseractivity](https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/remove-mguseractivity)
+
 

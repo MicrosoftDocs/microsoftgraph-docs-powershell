@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/copy-mgbetauserdriveroot
@@ -321,4 +321,5 @@ For OneDrive, this property is not populated.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/copy-mgbetauserdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/copy-mgbetauserdriveroot)
+
 

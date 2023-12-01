@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauserphoto
@@ -175,4 +175,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauserphoto](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauserphoto)
+
 

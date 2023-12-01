@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/new-mgreportauthenticationmethoduserregistrationdetail
@@ -426,4 +426,5 @@ Supports $filter (eq, startsWith) and $orderby.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/new-mgreportauthenticationmethoduserregistrationdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/new-mgreportauthenticationmethoduserregistrationdetail)
+
 

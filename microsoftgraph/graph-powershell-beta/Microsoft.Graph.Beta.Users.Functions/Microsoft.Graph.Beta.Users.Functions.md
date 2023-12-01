@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Users.Functions
 Module Guid: 83409d1d-810b-4b22-9cae-40d2614f4ba5
 Download Help Link: {{ Update Download Link }}
@@ -259,4 +259,5 @@ Locale: en-US
 
 ### [Test-MgBetaUserManagedAppUserBlocked](Test-MgBetaUserManagedAppUserBlocked.md)
 {{ Fill in the Description }}
+
 

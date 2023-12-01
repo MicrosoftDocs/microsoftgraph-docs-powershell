@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetausersecurityinformationprotectionsensitivitylabel
@@ -467,4 +467,5 @@ False if the label is a parent with child labels.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetausersecurityinformationprotectionsensitivitylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetausersecurityinformationprotectionsensitivitylabel)
+
 

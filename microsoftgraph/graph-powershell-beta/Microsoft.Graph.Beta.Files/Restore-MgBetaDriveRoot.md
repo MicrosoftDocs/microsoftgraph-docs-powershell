@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetadriveroot
@@ -291,4 +291,5 @@ For OneDrive, this property is not populated.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetadriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetadriveroot)
+
 

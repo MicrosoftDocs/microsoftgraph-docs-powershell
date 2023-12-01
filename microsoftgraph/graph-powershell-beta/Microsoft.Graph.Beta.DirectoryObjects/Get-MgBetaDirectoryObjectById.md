@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DirectoryObjects-help.xml
 Module Name: Microsoft.Graph.Beta.DirectoryObjects
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/get-mgbetadirectoryobjectbyid
@@ -170,4 +170,5 @@ BODYPARAMETER \<IPathsG5Xp0HDirectoryobjectsMicrosoftGraphGetbyidsPostRequestbod
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/get-mgbetadirectoryobjectbyid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/get-mgbetadirectoryobjectbyid)
+
 

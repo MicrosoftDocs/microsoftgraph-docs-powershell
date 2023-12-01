@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenotesectiongroup
@@ -283,4 +283,5 @@ INPUTOBJECT \<INotesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenotesectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenotesectiongroup)
+
 

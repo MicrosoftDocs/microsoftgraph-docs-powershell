@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementmanageddevicecompliancepolicystate
@@ -226,4 +226,5 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementmanageddevicecompliancepolicystate](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementmanageddevicecompliancepolicystate)
+
 

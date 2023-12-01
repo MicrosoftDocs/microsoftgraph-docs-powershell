@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/update-mgprivacysubjectrightsrequestcollaboratormailboxsetting
@@ -397,4 +397,5 @@ It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/update-mgprivacysubjectrightsrequestcollaboratormailboxsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/update-mgprivacysubjectrightsrequestcollaboratormailboxsetting)
+
 

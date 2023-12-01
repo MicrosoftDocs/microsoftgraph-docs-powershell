@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupsiteinformationprotectiondatalosspreventionpolicy
@@ -314,4 +314,5 @@ NOTIFICATIONINFO \<IMicrosoftGraphDlpNotification\>: dlpNotification
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupsiteinformationprotectiondatalosspreventionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupsiteinformationprotectiondatalosspreventionpolicy)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupbyid
@@ -161,4 +161,5 @@ BODYPARAMETER \<IPaths1E1O4BoGroupsMicrosoftGraphGetbyidsPostRequestbodyContentA
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupbyid](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupbyid)
+
 

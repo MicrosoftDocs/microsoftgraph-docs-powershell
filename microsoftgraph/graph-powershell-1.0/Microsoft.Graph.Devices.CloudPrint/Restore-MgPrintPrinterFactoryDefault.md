@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/restore-mgprintprinterfactorydefault
@@ -148,4 +148,5 @@ INPUTOBJECT \<IDevicesCloudPrintIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/restore-mgprintprinterfactorydefault](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/restore-mgprintprinterfactorydefault)
+
 

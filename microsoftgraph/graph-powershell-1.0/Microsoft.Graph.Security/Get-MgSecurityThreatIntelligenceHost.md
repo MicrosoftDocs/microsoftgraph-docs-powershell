@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehost
@@ -306,4 +306,5 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehost](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehost)
+
 

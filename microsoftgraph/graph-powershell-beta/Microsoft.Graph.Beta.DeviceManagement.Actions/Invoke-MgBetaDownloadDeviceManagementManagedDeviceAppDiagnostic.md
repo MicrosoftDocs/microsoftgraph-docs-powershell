@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetadownloaddevicemanagementmanageddeviceappdiagnostic
@@ -185,4 +185,5 @@ REQUEST \<IMicrosoftGraphPowerliftDownloadRequest\>: Request used to download ap
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetadownloaddevicemanagementmanageddeviceappdiagnostic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetadownloaddevicemanagementmanageddeviceappdiagnostic)
+
 

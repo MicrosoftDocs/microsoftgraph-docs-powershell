@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationmeassignmentsubmissionoutcome
@@ -304,4 +304,5 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationmeassignmentsubmissionoutcome](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationmeassignmentsubmissionoutcome)
+
 

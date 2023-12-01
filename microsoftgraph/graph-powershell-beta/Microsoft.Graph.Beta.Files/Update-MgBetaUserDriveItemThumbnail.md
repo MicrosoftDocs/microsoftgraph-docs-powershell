@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriveitemthumbnail
@@ -376,4 +376,5 @@ This is only available when a folder thumbnail is requested.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriveitemthumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriveitemthumbnail)
+
 

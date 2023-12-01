@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermessageattachment
@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
 This API is available in the following national cloud deployments.
 
 ## SYNTAX
@@ -42,7 +42,7 @@ New-MgUserMessageAttachment -InputObject <IMailIdentity> -BodyParameter <IMicros
 
 ## DESCRIPTION
 Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
@@ -306,4 +306,5 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermessageattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermessageattachment)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationownerbyref
@@ -226,4 +226,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationownerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationownerbyref)
+
 

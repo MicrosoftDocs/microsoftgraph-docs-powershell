@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetauserinferenceclassificationoverride
@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a focused Inbox override for a sender identified by an SMTP address.
-Future messages from that SMTP address will be consistently classified\nas specified in the override.
+Future messages from that SMTP address will be consistently classifiedas specified in the override.
 This API is available in the following national cloud deployments.
 
 ## SYNTAX
@@ -42,7 +42,7 @@ New-MgBetaUserInferenceClassificationOverride -InputObject <IMailIdentity>
 
 ## DESCRIPTION
 Create a focused Inbox override for a sender identified by an SMTP address.
-Future messages from that SMTP address will be consistently classified\nas specified in the override.
+Future messages from that SMTP address will be consistently classifiedas specified in the override.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
@@ -251,4 +251,5 @@ SENDEREMAILADDRESS \<IMicrosoftGraphEmailAddress\>: emailAddress
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetauserinferenceclassificationoverride](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetauserinferenceclassificationoverride)
+
 

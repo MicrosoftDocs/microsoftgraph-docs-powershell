@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupcalendarevent
@@ -267,4 +267,5 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupcalendarevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupcalendarevent)
+
 

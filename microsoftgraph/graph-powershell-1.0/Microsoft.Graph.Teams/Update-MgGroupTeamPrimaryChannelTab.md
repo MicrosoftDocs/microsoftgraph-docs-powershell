@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamprimarychanneltab
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgGroupTeamPrimaryChannelTab
 
 ## SYNOPSIS
-Update the properties of the specified tab.\nThis can be used to configure the content of the tab.
+Update the properties of the specified tab.This can be used to configure the content of the tab.
 This API is available in the following national cloud deployments.
 
 ## SYNTAX
@@ -40,7 +40,7 @@ Update-MgGroupTeamPrimaryChannelTab -InputObject <ITeamsIdentity> -BodyParameter
 ```
 
 ## DESCRIPTION
-Update the properties of the specified tab.\nThis can be used to configure the content of the tab.
+Update the properties of the specified tab.This can be used to configure the content of the tab.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
@@ -397,4 +397,5 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamprimarychanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamprimarychanneltab)
+
 

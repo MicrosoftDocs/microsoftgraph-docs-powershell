@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamprimarychannelmember
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaTeamPrimaryChannelMember
 
 ## SYNOPSIS
-Update the role of a conversationMember in a \nteam.\nor channel.
+Update the role of a conversationMember in a team.or channel.
 This API is available in the following national cloud deployments.
 
 ## SYNTAX
@@ -40,7 +40,7 @@ Update-MgBetaTeamPrimaryChannelMember -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Update the role of a conversationMember in a \nteam.\nor channel.
+Update the role of a conversationMember in a team.or channel.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
@@ -303,4 +303,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamprimarychannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamprimarychannelmember)
+
 

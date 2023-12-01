@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupbyid
@@ -159,4 +159,5 @@ BODYPARAMETER \<IPaths1E1O4BoGroupsMicrosoftGraphGetbyidsPostRequestbodyContentA
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupbyid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupbyid)
+
 
