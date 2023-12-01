@@ -38,22 +38,6 @@ Get-MgBetaGroupSiteTermStoreGroupSet -InputObject <ISitesIdentity> [-ExpandPrope
 ## DESCRIPTION
 All sets under the group in a term \[store\].
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -352,5 +336,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgGroupSiteTermStoreGroupSet](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreGroupSet?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitetermstoregroupset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitetermstoregroupset)
+
 
 

@@ -44,22 +44,6 @@ Update-MgBetaUserTeamworkAssociatedTeam -InputObject <ITeamsIdentity> -BodyParam
 ## DESCRIPTION
 Update the navigation property associatedTeams in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -7656,5 +7640,6 @@ This URL should be treated as an opaque blob, and not parsed.
 [Update-MgUserTeamworkAssociatedTeam](/powershell/module/Microsoft.Graph.Teams/Update-MgUserTeamworkAssociatedTeam?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetauserteamworkassociatedteam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetauserteamworkassociatedteam)
+
 
 

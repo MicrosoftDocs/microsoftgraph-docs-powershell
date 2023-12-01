@@ -48,22 +48,6 @@ Join-MgBetaSiteListContentTypeWithHubSite -InputObject <ISitesIdentity>
 Associate a content type\]\[contentType\] with a list of hub sites.
 This API is available in the following \[national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -309,5 +293,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Join-MgSiteListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Sites/Join-MgSiteListContentTypeWithHubSite?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/join-mgbetasitelistcontenttypewithhubsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/join-mgbetasitelistcontenttypewithhubsite)
+
 
 

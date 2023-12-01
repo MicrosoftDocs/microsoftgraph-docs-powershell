@@ -47,18 +47,6 @@ Update-MgSecurityAttackSimulationOperation -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property operations in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -385,5 +373,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Update-MgBetaSecurityAttackSimulationOperation](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityAttackSimulationOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityattacksimulationoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityattacksimulationoperation)
+
 
 

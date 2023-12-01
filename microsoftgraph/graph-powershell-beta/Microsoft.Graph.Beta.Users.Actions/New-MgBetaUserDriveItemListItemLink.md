@@ -52,22 +52,6 @@ The createLink action creates a new sharing link if the specified link type does
 listItem resources inherit sharing permissions from the list the item resides in.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -379,4 +363,5 @@ security groups).
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetauserdriveitemlistitemlink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetauserdriveitemlistitemlink)
+
 

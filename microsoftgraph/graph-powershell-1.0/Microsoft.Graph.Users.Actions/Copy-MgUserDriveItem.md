@@ -48,22 +48,6 @@ Copy-MgUserDriveItem -InputObject <IUsersActionsIdentity>
 Asynchronously creates a copy of an driveItem\]\[item-resource\] (including any children), under a new parent item or with a new name.
 This API is available in the following \[national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -332,5 +316,6 @@ For OneDrive, this property is not populated.
 [Copy-MgBetaUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Copy-MgBetaUserDriveItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mguserdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mguserdriveitem)
+
 
 

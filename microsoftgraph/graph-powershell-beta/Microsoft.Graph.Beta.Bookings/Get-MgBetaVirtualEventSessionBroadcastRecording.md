@@ -27,18 +27,6 @@ Get-MgBetaVirtualEventSessionBroadcastRecording -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Get broadcastRecording for the navigation property sessions from solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -160,5 +148,6 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventsessionbroadcastrecording](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventsessionbroadcastrecording)
+
 
 

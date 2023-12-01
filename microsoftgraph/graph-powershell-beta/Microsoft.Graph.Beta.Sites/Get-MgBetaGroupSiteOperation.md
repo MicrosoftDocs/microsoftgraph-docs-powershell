@@ -41,22 +41,6 @@ Get-MgBetaGroupSiteOperation -InputObject <ISitesIdentity> [-ExpandProperty <Str
 Read the properties of a richLongRunningOperation object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -340,5 +324,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgGroupSiteOperation](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteoperation)
+
 
 

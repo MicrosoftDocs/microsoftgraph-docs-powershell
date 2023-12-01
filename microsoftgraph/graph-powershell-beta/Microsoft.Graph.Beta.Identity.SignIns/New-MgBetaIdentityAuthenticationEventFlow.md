@@ -33,18 +33,6 @@ Create a new authenticationEventsFlow object that is of the type specified in th
 You can create only an externalUsersSelfServiceSignupEventsFlow object type.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -235,5 +223,6 @@ This property must be set to false for listener of type onTokenIssuanceStartList
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityauthenticationeventflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityauthenticationeventflow)
+
 
 

@@ -30,22 +30,6 @@ Restart-MgBetaUserManagedDeviceNow -InputObject <IUsersActionsIdentity> [-PassTh
 ## DESCRIPTION
 Reboot device
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -200,5 +184,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 [Restart-MgUserManagedDeviceNow](/powershell/module/Microsoft.Graph.Users.Actions/Restart-MgUserManagedDeviceNow?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restart-mgbetausermanageddevicenow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restart-mgbetausermanageddevicenow)
+
 
 

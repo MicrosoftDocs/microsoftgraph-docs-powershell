@@ -49,18 +49,6 @@ Update-MgBetaSecurityAttackSimulationTrainingLanguageDetail -InputObject <ISecur
 ## DESCRIPTION
 Update the navigation property languageDetails in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -466,5 +454,6 @@ This property is read-only.
 [Update-MgSecurityAttackSimulationTrainingLanguageDetail](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAttackSimulationTrainingLanguageDetail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationtraininglanguagedetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationtraininglanguagedetail)
+
 
 

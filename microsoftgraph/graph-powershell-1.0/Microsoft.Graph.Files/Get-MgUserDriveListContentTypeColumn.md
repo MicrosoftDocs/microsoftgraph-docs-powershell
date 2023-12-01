@@ -41,22 +41,6 @@ Get-MgUserDriveListContentTypeColumn -InputObject <IFilesIdentity> [-ExpandPrope
 Retrieve the metadata for a site\]\[\], a \[list\]\[\], or a \[contentType\]\[\] \[column\]\[columnDefinition\].
 This API is available in the following \[national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -331,5 +315,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgBetaUserDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveListContentTypeColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivelistcontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivelistcontenttypecolumn)
+
 
 

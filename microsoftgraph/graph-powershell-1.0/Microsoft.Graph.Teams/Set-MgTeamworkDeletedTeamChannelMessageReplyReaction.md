@@ -47,18 +47,6 @@ Set-MgTeamworkDeletedTeamChannelMessageReplyReaction -InputObject <ITeamsIdentit
 ## DESCRIPTION
 Invoke action setReaction
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -287,5 +275,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Set-MgBetaTeamworkDeletedTeamChannelMessageReplyReaction](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaTeamworkDeletedTeamChannelMessageReplyReaction?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamworkdeletedteamchannelmessagereplyreaction](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamworkdeletedteamchannelmessagereplyreaction)
+
 
 

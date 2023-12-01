@@ -48,22 +48,6 @@ Update-MgBetaGroupCalendarPermission -InputObject <ICalendarIdentity>
 Update the permissions assigned to an existing share recipient or delegate, through the corresponding calendarPermission object for a calendar.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -325,5 +309,6 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
 [Update-MgGroupCalendarPermission](/powershell/module/Microsoft.Graph.Calendar/Update-MgGroupCalendarPermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetagroupcalendarpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetagroupcalendarpermission)
+
 
 

@@ -51,18 +51,6 @@ Test-MgApplicationSynchronizationJobCredential -InputObject <IApplicationsIdenti
 Validate that the credentials are valid in the tenant.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -306,4 +294,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Test-MgBetaApplicationSynchronizationJobCredential](/powershell/module/Microsoft.Graph.Beta.Applications/Test-MgBetaApplicationSynchronizationJobCredential?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/test-mgapplicationsynchronizationjobcredential](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/test-mgapplicationsynchronizationjobcredential)
+
 

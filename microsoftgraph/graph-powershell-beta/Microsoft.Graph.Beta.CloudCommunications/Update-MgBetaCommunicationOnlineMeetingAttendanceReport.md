@@ -75,22 +75,6 @@ Update-MgBetaCommunicationOnlineMeetingAttendanceReport -InputObject <ICloudComm
 ## DESCRIPTION
 Update the navigation property attendanceReports in communications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -374,4 +358,5 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
 [Update-MgCommunicationOnlineMeetingAttendanceReport](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationOnlineMeetingAttendanceReport?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationonlinemeetingattendancereport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationonlinemeetingattendancereport)
+
 

@@ -77,18 +77,6 @@ New-MgDriveBundle -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphD
 ## DESCRIPTION
 Create new navigation property to bundles for drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -29005,4 +28993,5 @@ Read-only.
 [New-MgBetaDriveBundle](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveBundle?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrivebundle](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrivebundle)
+
 

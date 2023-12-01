@@ -32,18 +32,6 @@ Delete a businessScenario object.
 The deletion of a scenario causes all data associated with the scenario to be deleted.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -BusinessScenarioId
@@ -181,5 +169,6 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabusinessscenario](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabusinessscenario)
+
 
 

@@ -42,22 +42,6 @@ Update-MgBetaDirectory -BodyParameter <IMicrosoftGraphDirectory> [-WhatIf] [-Con
 ## DESCRIPTION
 Update directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1035,4 +1019,5 @@ Possible values are: Enabled, Deleted, Suspended, Warning, LockedOut.
 [Update-MgDirectory](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectory)
+
 

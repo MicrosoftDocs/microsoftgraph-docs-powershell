@@ -50,18 +50,6 @@ Update-MgBetaSecurityThreatIntelligenceSslCertificate -InputObject <ISecurityIde
 ## DESCRIPTION
 Update the navigation property sslCertificates in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1029,4 +1017,5 @@ It's a free-format string value, for example, 'United States'.
 [Update-MgSecurityThreatIntelligenceSslCertificate](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligenceSslCertificate?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencesslcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencesslcertificate)
+
 

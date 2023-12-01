@@ -30,22 +30,6 @@ Remove-MgBetaServiceAnnouncementHealthOverviewIssue -InputObject <IDevicesServic
 ## DESCRIPTION
 Delete navigation property issues for admin
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -180,5 +164,6 @@ INPUTOBJECT \<IDevicesServiceAnnouncementIdentity\>: Identity Parameter
 [Remove-MgServiceAnnouncementHealthOverviewIssue](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Remove-MgServiceAnnouncementHealthOverviewIssue?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/remove-mgbetaserviceannouncementhealthoverviewissue](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/remove-mgbetaserviceannouncementhealthoverviewissue)
+
 
 

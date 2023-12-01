@@ -30,18 +30,6 @@ Get-MgBetaGroupSiteTermStoreSetParentGroup -InputObject <ISitesIdentity> [-Expan
 ## DESCRIPTION
 The parent \[group\] that contains the set.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -204,5 +192,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgGroupSiteTermStoreSetParentGroup](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreSetParentGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitetermstoresetparentgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitetermstoresetparentgroup)
+
 
 

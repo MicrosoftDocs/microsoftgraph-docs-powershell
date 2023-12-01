@@ -30,18 +30,6 @@ Get-MgUserTodoTaskCount -InputObject <IUsersIdentity> [-Filter <String>] [-Searc
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -154,5 +142,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Get-MgBetaUserTodoTaskCount](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTaskCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskcount](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskcount)
+
 
 

@@ -42,22 +42,6 @@ Update-MgBookingCurrency -InputObject <IBookingsIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Update the navigation property bookingCurrencies in solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -221,5 +205,6 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 [Update-MgBetaBookingCurrency](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaBookingCurrency?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingcurrency](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingcurrency)
+
 
 

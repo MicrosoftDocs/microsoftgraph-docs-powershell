@@ -30,22 +30,6 @@ Remove-MgBetaUserOnlineMeetingTranscript -InputObject <ICloudCommunicationsIdent
 ## DESCRIPTION
 Delete navigation property transcripts for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -CallTranscriptId
@@ -209,5 +193,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
 [Remove-MgUserOnlineMeetingTranscript](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgUserOnlineMeetingTranscript?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetauseronlinemeetingtranscript](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetauseronlinemeetingtranscript)
+
 
 

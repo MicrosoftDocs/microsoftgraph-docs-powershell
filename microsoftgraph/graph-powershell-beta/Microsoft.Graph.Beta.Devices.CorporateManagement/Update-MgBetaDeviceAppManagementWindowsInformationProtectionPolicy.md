@@ -100,18 +100,6 @@ Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy
 ## DESCRIPTION
 Update the navigation property windowsInformationProtectionPolicies in deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1213,4 +1201,5 @@ SMBAUTOENCRYPTEDFILEEXTENSIONS \<IMicrosoftGraphWindowsInformationProtectionReso
 [Update-MgDeviceAppManagementWindowsInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementWindowsInformationProtectionPolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementwindowsinformationprotectionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementwindowsinformationprotectionpolicy)
+
 

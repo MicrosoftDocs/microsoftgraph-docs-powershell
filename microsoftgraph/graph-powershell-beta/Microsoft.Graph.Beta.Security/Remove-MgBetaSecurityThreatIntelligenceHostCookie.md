@@ -30,18 +30,6 @@ Remove-MgBetaSecurityThreatIntelligenceHostCookie -InputObject <ISecurityIdentit
 ## DESCRIPTION
 Delete navigation property hostCookies for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -HostCookieId
@@ -233,5 +221,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Remove-MgSecurityThreatIntelligenceHostCookie](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityThreatIntelligenceHostCookie?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritythreatintelligencehostcookie](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritythreatintelligencehostcookie)
+
 
 

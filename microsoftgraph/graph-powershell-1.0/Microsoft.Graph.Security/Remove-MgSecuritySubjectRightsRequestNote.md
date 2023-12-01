@@ -30,18 +30,6 @@ Remove-MgSecuritySubjectRightsRequestNote -InputObject <ISecurityIdentity> [-IfM
 ## DESCRIPTION
 Delete navigation property notes for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AuthoredNoteId
@@ -224,5 +212,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Remove-MgBetaSecuritySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecuritySubjectRightsRequestNote?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritysubjectrightsrequestnote](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritysubjectrightsrequestnote)
+
 
 

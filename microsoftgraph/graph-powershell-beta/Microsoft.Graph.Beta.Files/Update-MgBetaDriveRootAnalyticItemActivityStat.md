@@ -50,18 +50,6 @@ Update-MgBetaDriveRootAnalyticItemActivityStat -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property itemActivityStats in drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Access
@@ -15163,4 +15151,5 @@ Read-only.
 [Update-MgDriveRootAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Files/Update-MgDriveRootAnalyticItemActivityStat?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriverootanalyticitemactivitystat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriverootanalyticitemactivitystat)
+
 

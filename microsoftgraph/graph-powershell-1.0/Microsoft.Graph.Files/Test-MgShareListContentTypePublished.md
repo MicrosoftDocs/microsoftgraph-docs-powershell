@@ -28,22 +28,6 @@ Test-MgShareListContentTypePublished -InputObject <IFilesIdentity> [<CommonParam
 ## DESCRIPTION
 Invoke function isPublished
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -137,5 +121,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Test-MgBetaShareListContentTypePublished](/powershell/module/Microsoft.Graph.Beta.Files/Test-MgBetaShareListContentTypePublished?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/test-mgsharelistcontenttypepublished](https://learn.microsoft.com/powershell/module/microsoft.graph.files/test-mgsharelistcontenttypepublished)
+
 
 

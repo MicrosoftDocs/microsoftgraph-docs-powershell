@@ -60,22 +60,6 @@ Update-MgTeamPrimaryChannelMessageReply -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property replies in teams
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1010,4 +994,5 @@ Link to the message in Microsoft Teams.
 [Update-MgBetaTeamPrimaryChannelMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamPrimaryChannelMessageReply?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamprimarychannelmessagereply](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamprimarychannelmessagereply)
+
 

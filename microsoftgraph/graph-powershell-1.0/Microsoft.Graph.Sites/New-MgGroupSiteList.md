@@ -61,22 +61,6 @@ New-MgGroupSiteList -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGrap
 Create a new list\]\[\] in a \[site\]\[\].
 This API is available in the following \[national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -23802,4 +23786,5 @@ See the possible resource path values for each supported resource.
 [New-MgBetaGroupSiteList](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteList?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitelist](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitelist)
+
 

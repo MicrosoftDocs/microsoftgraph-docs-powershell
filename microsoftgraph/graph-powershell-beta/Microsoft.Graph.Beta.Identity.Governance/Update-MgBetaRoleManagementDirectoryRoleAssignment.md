@@ -52,18 +52,6 @@ Update-MgBetaRoleManagementDirectoryRoleAssignment -InputObject <IIdentityGovern
 ## DESCRIPTION
 Update the navigation property roleAssignments in roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -630,5 +618,6 @@ Read-only when isBuiltIn is true.
 [Update-MgRoleManagementDirectoryRoleAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementDirectoryRoleAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagementdirectoryroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagementdirectoryroleassignment)
+
 
 

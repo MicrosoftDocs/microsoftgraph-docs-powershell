@@ -42,22 +42,6 @@ Get-MgGroupSiteListItemVersion -InputObject <ISitesIdentity> [-ExpandProperty <S
 Retrieve the metadata for a specific version of a ListItem.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -361,5 +345,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgBetaGroupSiteListItemVersion](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListItemVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistitemversion)
+
 
 

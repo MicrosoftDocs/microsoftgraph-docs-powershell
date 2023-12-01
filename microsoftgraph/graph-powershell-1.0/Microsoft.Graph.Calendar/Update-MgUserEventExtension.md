@@ -42,22 +42,6 @@ Update-MgUserEventExtension -InputObject <ICalendarIdentity> -BodyParameter <Has
 ## DESCRIPTION
 Update the navigation property extensions in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -230,5 +214,6 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
 [Update-MgBetaUserEventExtension](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaUserEventExtension?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgusereventextension](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgusereventextension)
+
 
 

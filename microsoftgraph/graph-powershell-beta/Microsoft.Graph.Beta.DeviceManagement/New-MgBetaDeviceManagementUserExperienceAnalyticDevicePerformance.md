@@ -37,22 +37,6 @@ New-MgBetaDeviceManagementUserExperienceAnalyticDevicePerformance
 ## DESCRIPTION
 Create new navigation property to userExperienceAnalyticsDevicePerformance for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -489,5 +473,6 @@ Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 [New-MgDeviceManagementUserExperienceAnalyticDevicePerformance](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticDevicePerformance?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticdeviceperformance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticdeviceperformance)
+
 
 

@@ -33,22 +33,6 @@ Remove-MgGroupSiteListItem -InputObject <ISitesIdentity> [-IfMatch <String>] [-P
 Removes an item from a list\]\[\].
 This API is available in the following \[national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -GroupId
@@ -247,5 +231,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Remove-MgBetaGroupSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteListItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitelistitem)
+
 
 

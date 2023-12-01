@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannerroster
@@ -40,22 +40,6 @@ Update-MgBetaPlannerRoster -InputObject <IPlannerIdentity> -BodyParameter <IMicr
 
 ## DESCRIPTION
 Update the navigation property rosters in planner
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 
@@ -730,4 +714,5 @@ Title of the plan.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannerroster](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannerroster)
+
 

@@ -32,18 +32,6 @@ Run health checks on the cloudPcOnPremisesConnection object.
 This will trigger a new health check for this cloudPcOnPremisesConnection object and change the healthCheckStatus and healthCheckStatusDetails properties when check finished.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CloudPcOnPremisesConnectionId
@@ -194,5 +182,6 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/start-mgbetadevicemanagementvirtualendpointonpremiseconnectionhealthcheck](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/start-mgbetadevicemanagementvirtualendpointonpremiseconnectionhealthcheck)
+
 
 

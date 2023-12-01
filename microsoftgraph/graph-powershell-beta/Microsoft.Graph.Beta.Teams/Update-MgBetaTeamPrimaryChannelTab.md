@@ -46,22 +46,6 @@ Update-MgBetaTeamPrimaryChannelTab -InputObject <ITeamsIdentity> -BodyParameter 
 ## DESCRIPTION
 Update the navigation property tabs in teams
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -491,5 +475,6 @@ For example, if a user changes their display name, the API might show the new va
 [Update-MgTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamPrimaryChannelTab?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamprimarychanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamprimarychanneltab)
+
 
 

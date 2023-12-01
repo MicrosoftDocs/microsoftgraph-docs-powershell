@@ -30,22 +30,6 @@ Remove-MgTeamOperation -InputObject <ITeamsIdentity> [-IfMatch <String>] [-PassT
 ## DESCRIPTION
 Delete navigation property operations for teams
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -208,5 +192,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Remove-MgBetaTeamOperation](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamoperation)
+
 
 

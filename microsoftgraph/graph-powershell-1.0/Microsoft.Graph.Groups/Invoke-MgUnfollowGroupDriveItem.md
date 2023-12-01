@@ -33,22 +33,6 @@ Invoke-MgUnfollowGroupDriveItem -InputObject <IGroupsIdentity> [-PassThru] [-Wha
 Unfollow a driveItem.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -214,5 +198,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Invoke-MgBetaUnfollowGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaUnfollowGroupDriveItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgunfollowgroupdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgunfollowgroupdriveitem)
+
 
 

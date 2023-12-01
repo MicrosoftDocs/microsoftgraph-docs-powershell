@@ -32,18 +32,6 @@ New-MgSecurityAttackSimulationOperation -BodyParameter <IMicrosoftGraphAttackSim
 ## DESCRIPTION
 Create new navigation property to operations for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -284,5 +272,6 @@ Read-only.
 [New-MgBetaSecurityAttackSimulationOperation](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAttackSimulationOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulationoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulationoperation)
+
 
 

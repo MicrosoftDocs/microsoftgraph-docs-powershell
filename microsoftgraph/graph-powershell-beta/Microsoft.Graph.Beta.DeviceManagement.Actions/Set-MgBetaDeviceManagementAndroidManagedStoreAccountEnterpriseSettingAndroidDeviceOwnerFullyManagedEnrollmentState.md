@@ -28,22 +28,6 @@ Set-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingAndroidDevi
 ## DESCRIPTION
 Sets the AndroidManagedStoreAccountEnterpriseSettings AndroidDeviceOwnerFullyManagedEnrollmentEnabled to the given value.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -160,5 +144,6 @@ BODYPARAMETER \<IPaths1Wtan1TDevicemanagementAndroidmanagedstoreaccountenterpris
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/set-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingandroiddeviceownerfullymanagedenrollmentstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/set-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingandroiddeviceownerfullymanagedenrollmentstate)
+
 
 

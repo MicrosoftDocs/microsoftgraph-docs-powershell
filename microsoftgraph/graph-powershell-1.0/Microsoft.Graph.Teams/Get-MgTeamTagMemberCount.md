@@ -30,18 +30,6 @@ Get-MgTeamTagMemberCount -InputObject <ITeamsIdentity> [-Filter <String>] [-Sear
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -173,5 +161,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Get-MgBetaTeamTagMemberCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamTagMemberCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamtagmembercount](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamtagmembercount)
+
 
 

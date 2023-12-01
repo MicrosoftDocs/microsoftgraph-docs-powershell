@@ -30,18 +30,6 @@ Get-MgTenantRelationshipDelegatedAdminRelationshipRequestCount -InputObject <IId
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DelegatedAdminRelationshipId
@@ -132,5 +120,6 @@ INPUTOBJECT \<IIdentityPartnerIdentity\>: Identity Parameter
 [Get-MgBetaTenantRelationshipDelegatedAdminRelationshipRequestCount](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Get-MgBetaTenantRelationshipDelegatedAdminRelationshipRequestCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/get-mgtenantrelationshipdelegatedadminrelationshiprequestcount](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/get-mgtenantrelationshipdelegatedadminrelationshiprequestcount)
+
 
 

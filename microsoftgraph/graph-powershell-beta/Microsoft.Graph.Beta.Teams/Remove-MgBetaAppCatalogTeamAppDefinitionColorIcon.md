@@ -27,22 +27,6 @@ Remove-MgBetaAppCatalogTeamAppDefinitionColorIcon -InputObject <ITeamsIdentity> 
 ## DESCRIPTION
 Delete navigation property colorIcon for appCatalogs
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -210,5 +194,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetaappcatalogteamappdefinitioncoloricon](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetaappcatalogteamappdefinitioncoloricon)
+
 
 

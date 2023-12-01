@@ -50,18 +50,6 @@ Update-MgBetaInvitation -InputObject <IIdentitySignInsIdentity> -BodyParameter <
 ## DESCRIPTION
 Update entity in invitations
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -15246,4 +15234,5 @@ Always null when the object hasn't been deleted.
 [Update-MgInvitation](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgInvitation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetainvitation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetainvitation)
+
 

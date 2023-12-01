@@ -27,22 +27,6 @@ Remove-MgBetaFinancialCompanyTaxArea -InputObject <IFinancialsIdentity> [-IfMatc
 ## DESCRIPTION
 Delete navigation property taxAreas for financials
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -CompanyId
@@ -208,5 +192,6 @@ INPUTOBJECT \<IFinancialsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/remove-mgbetafinancialcompanytaxarea](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/remove-mgbetafinancialcompanytaxarea)
+
 
 

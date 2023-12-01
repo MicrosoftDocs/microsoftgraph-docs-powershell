@@ -23,18 +23,6 @@ Update-MgBetaTeamAppPreApproval -TeamsAppId <String> [-AdditionalProperties <Has
 ## DESCRIPTION
 Update Preapproval policy associated with a Teams App.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -171,5 +159,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamapppreapproval](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamapppreapproval)
+
 
 

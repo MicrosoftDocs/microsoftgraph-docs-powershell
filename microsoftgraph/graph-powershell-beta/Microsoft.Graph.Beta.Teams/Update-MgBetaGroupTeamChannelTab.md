@@ -47,22 +47,6 @@ Update-MgBetaGroupTeamChannelTab -InputObject <ITeamsIdentity> -BodyParameter <I
 ## DESCRIPTION
 Update the navigation property tabs in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -507,5 +491,6 @@ For example, if a user changes their display name, the API might show the new va
 [Update-MgGroupTeamChannelTab](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamChannelTab?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamchanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamchanneltab)
+
 
 

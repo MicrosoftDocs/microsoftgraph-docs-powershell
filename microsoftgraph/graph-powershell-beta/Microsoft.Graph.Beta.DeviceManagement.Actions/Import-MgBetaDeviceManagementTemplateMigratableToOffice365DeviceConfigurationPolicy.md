@@ -27,22 +27,6 @@ Import-MgBetaDeviceManagementTemplateMigratableToOffice365DeviceConfigurationPol
 ## DESCRIPTION
 Invoke action importOffice365DeviceConfigurationPolicies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DeviceManagementTemplateId
@@ -178,5 +162,6 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/import-mgbetadevicemanagementtemplatemigratabletooffice365deviceconfigurationpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/import-mgbetadevicemanagementtemplatemigratabletooffice365deviceconfigurationpolicy)
+
 
 

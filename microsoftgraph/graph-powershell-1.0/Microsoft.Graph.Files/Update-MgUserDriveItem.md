@@ -82,22 +82,6 @@ Update the metadata for a driveItem by ID or path.
 You can also use update to move an item to another parent by updating the item's parentReference property.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -29044,4 +29028,5 @@ Read-only.
 [Update-MgBetaUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriveitem)
+
 

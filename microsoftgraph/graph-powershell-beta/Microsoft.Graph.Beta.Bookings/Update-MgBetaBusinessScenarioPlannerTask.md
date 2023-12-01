@@ -70,18 +70,6 @@ Update-MgBetaBusinessScenarioPlannerTask -InputObject <IBookingsIdentity>
 Update the properties of a businessScenarioTask object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActiveChecklistItemCount
@@ -1058,5 +1046,6 @@ TARGET \<IMicrosoftGraphBusinessScenarioTaskTargetBase\>: businessScenarioTaskTa
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannertask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannertask)
+
 
 

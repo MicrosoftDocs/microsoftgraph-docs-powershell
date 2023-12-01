@@ -30,22 +30,6 @@ Remove-MgBetaDirectoryInboundSharedUserProfilePersonalData -InputObject <IIdenti
 Create a request to remove the personal data for an inboundSharedUserProfile.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InboundSharedUserProfileUserId
@@ -188,5 +172,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryinboundshareduserprofilepersonaldata](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryinboundshareduserprofilepersonaldata)
+
 
 

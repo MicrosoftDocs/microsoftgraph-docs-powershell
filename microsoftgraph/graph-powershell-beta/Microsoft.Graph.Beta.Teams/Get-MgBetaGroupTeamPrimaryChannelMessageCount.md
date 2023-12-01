@@ -30,18 +30,6 @@ Get-MgBetaGroupTeamPrimaryChannelMessageCount -InputObject <ITeamsIdentity> [-Fi
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -164,5 +152,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Get-MgGroupTeamPrimaryChannelMessageCount](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamPrimaryChannelMessageCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamprimarychannelmessagecount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamprimarychannelmessagecount)
+
 
 

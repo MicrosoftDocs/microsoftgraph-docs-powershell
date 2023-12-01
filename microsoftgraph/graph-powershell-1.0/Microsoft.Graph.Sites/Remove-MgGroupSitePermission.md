@@ -33,22 +33,6 @@ Remove-MgGroupSitePermission -InputObject <ISitesIdentity> [-IfMatch <String>] [
 Delete a permission object on a site.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -GroupId
@@ -232,5 +216,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Remove-MgBetaGroupSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSitePermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitepermission)
+
 
 

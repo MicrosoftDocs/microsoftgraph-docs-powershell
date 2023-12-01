@@ -49,22 +49,6 @@ Restore a driveItem that has been deleted and is currently in the recycle bin.
 NOTE: This functionality is currently only available for OneDrive Personal.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -318,5 +302,6 @@ For OneDrive, this property is not populated.
 [Restore-MgBetaUserDriveRoot](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Restore-MgBetaUserDriveRoot?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/restore-mguserdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/restore-mguserdriveroot)
+
 
 

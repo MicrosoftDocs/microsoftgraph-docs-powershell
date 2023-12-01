@@ -41,22 +41,6 @@ Get-MgGroupSiteOperation -InputObject <ISitesIdentity> [-ExpandProperty <String[
 Get the status of a rich long-running operation on a site or a list.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -330,5 +314,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgBetaGroupSiteOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteoperation)
+
 
 

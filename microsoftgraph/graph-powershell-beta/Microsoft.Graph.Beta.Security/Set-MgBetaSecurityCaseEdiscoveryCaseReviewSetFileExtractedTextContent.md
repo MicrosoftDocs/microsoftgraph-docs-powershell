@@ -28,22 +28,6 @@ Set-MgBetaSecurityCaseEdiscoveryCaseReviewSetFileExtractedTextContent -InputObje
 ## DESCRIPTION
 Update extractedTextContent for the navigation property files in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Data
@@ -282,5 +266,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/set-mgbetasecuritycaseediscoverycasereviewsetfileextractedtextcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/set-mgbetasecuritycaseediscoverycasereviewsetfileextractedtextcontent)
+
 
 

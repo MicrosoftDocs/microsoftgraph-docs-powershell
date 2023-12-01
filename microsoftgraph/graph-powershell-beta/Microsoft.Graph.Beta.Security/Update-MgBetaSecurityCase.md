@@ -31,22 +31,6 @@ Update-MgBetaSecurityCase -BodyParameter <IMicrosoftGraphSecurityCasesRoot> [-Wh
 ## DESCRIPTION
 Update the navigation property cases in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -15368,4 +15352,5 @@ To learn more, see Maximum number of themes.
 [Update-MgSecurityCase](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCase?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycase](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycase)
+
 

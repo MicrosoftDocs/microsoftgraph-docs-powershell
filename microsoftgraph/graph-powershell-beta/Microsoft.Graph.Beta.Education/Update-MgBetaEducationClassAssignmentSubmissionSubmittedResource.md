@@ -48,22 +48,6 @@ Update-MgBetaEducationClassAssignmentSubmissionSubmittedResource -InputObject <I
 ## DESCRIPTION
 Update the navigation property submittedResources in education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -365,4 +349,5 @@ This property is read-only.
 [Update-MgEducationClassAssignmentSubmissionSubmittedResource](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClassAssignmentSubmissionSubmittedResource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentsubmissionsubmittedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentsubmissionsubmittedresource)
+
 

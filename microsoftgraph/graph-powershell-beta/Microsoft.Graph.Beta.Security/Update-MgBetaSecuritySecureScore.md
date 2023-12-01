@@ -50,22 +50,6 @@ Update-MgBetaSecuritySecureScore -InputObject <ISecurityIdentity> -BodyParameter
 ## DESCRIPTION
 Update the navigation property secureScores in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ActiveUserCount
@@ -475,4 +459,5 @@ Required
 [Update-MgSecuritySecureScore](/powershell/module/Microsoft.Graph.Security/Update-MgSecuritySecureScore?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritysecurescore](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritysecurescore)
+
 

@@ -38,18 +38,6 @@ Get-MgBetaSecurityThreatIntelligenceHostPassiveDnsReverse -InputObject <ISecurit
 ## DESCRIPTION
 Reverse passive DNS retrieval about this host.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -346,5 +334,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Get-MgSecurityThreatIntelligenceHostPassiveDnsReverse](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostPassiveDnsReverse?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostpassivednsreverse](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostpassivednsreverse)
+
 
 

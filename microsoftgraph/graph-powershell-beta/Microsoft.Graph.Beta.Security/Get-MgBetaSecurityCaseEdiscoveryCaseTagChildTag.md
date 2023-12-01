@@ -37,22 +37,6 @@ Get-MgBetaSecurityCaseEdiscoveryCaseTagChildTag -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Returns the tags that are a child of a tag.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -364,5 +348,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Get-MgSecurityCaseEdiscoveryCaseTagChildTag](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseTagChildTag?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasetagchildtag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasetagchildtag)
+
 
 

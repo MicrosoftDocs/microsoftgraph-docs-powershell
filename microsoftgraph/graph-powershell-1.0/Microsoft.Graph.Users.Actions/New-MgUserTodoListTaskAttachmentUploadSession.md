@@ -57,22 +57,6 @@ This allows the transfer to be resumed, in case the network connection is droppe
 The following are the steps to attach a file to a Microsoft To Do task using an upload session: For an example that describes the end-to-end attachment process, see attach files to a To Do task.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -289,5 +273,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 [New-MgBetaUserTodoListTaskAttachmentUploadSession](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserTodoListTaskAttachmentUploadSession?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mgusertodolisttaskattachmentuploadsession](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mgusertodolisttaskattachmentuploadsession)
+
 
 

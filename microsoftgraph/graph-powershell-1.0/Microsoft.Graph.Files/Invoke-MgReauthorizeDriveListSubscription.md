@@ -33,22 +33,6 @@ Invoke-MgReauthorizeDriveListSubscription -InputObject <IFilesIdentity> [-PassTh
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -188,5 +172,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Invoke-MgBetaReauthorizeDriveListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaReauthorizeDriveListSubscription?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgreauthorizedrivelistsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgreauthorizedrivelistsubscription)
+
 
 

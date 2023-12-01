@@ -46,22 +46,6 @@ Update-MgRiskyUser -InputObject <IIdentitySignInsIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Update the navigation property riskyUsers in identityProtection
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -448,4 +432,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 [Update-MgBetaRiskyUser](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaRiskyUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgriskyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgriskyuser)
+
 

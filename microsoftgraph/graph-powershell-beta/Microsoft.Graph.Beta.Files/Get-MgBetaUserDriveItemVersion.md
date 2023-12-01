@@ -41,22 +41,6 @@ Get-MgBetaUserDriveItemVersion -InputObject <IFilesIdentity> [-ExpandProperty <S
 Retrieve the metadata for a specific version of a DriveItem.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -331,5 +315,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgUserDriveItemVersion](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveItemVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriveitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriveitemversion)
+
 
 

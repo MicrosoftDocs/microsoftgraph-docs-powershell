@@ -41,22 +41,6 @@ Get-MgDriveRootVersion -InputObject <IFilesIdentity> [-ExpandProperty <String[]>
 Retrieve the metadata for a specific version of a DriveItem.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -301,5 +285,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgBetaDriveRootVersion](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootversion)
+
 
 

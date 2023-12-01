@@ -33,22 +33,6 @@ Get-MgBetaUserAuthenticationMicrosoftAuthenticatorMethodDevice -InputObject <IId
 The registered device on which Microsoft Authenticator resides.
 This property is null if the device is not registered for passwordless Phone Sign-In.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -224,5 +208,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 [Get-MgUserAuthenticationMicrosoftAuthenticatorMethodDevice](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationMicrosoftAuthenticatorMethodDevice?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationmicrosoftauthenticatormethoddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationmicrosoftauthenticatormethoddevice)
+
 
 

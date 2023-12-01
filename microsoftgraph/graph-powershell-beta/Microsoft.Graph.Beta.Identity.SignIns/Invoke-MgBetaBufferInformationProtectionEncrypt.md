@@ -28,22 +28,6 @@ Invoke-MgBetaBufferInformationProtectionEncrypt
 ## DESCRIPTION
 Invoke action encryptBuffer
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -161,5 +145,6 @@ BODY \<IPathsBetdbaInformationprotectionMicrosoftGraphEncryptbufferPostRequestbo
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetabufferinformationprotectionencrypt](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetabufferinformationprotectionencrypt)
+
 
 

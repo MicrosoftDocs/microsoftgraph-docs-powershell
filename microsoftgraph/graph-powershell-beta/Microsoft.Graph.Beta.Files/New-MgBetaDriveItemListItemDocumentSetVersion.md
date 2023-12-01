@@ -53,22 +53,6 @@ New-MgBetaDriveItemListItemDocumentSetVersion -InputObject <IFilesIdentity>
 Create a new version of a document set item in a list.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -465,4 +449,5 @@ Read-only.
 [New-MgDriveItemListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/New-MgDriveItemListItemDocumentSetVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriveitemlistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriveitemlistitemdocumentsetversion)
+
 

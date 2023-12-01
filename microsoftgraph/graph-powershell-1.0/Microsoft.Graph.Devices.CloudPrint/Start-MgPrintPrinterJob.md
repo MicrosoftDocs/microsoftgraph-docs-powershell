@@ -33,18 +33,6 @@ Submits the print job to the associated printer or printerShare.
 It will be printed after any existing pending jobs are completed, aborted, or canceled.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -158,5 +146,6 @@ INPUTOBJECT \<IDevicesCloudPrintIdentity\>: Identity Parameter
 [Start-MgBetaPrintPrinterJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Start-MgBetaPrintPrinterJob?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/start-mgprintprinterjob](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/start-mgprintprinterjob)
+
 
 

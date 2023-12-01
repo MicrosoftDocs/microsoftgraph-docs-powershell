@@ -46,18 +46,6 @@ Update-MgBetaBusinessScenarioPlannerTaskDetail -InputObject <IBookingsIdentity> 
 ## DESCRIPTION
 Update the navigation property details in solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -366,5 +354,6 @@ NOTES \<IMicrosoftGraphItemBody\>: itemBody
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannertaskdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannertaskdetail)
+
 
 

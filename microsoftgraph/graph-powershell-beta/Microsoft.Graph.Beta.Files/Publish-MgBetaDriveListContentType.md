@@ -33,22 +33,6 @@ Publish-MgBetaDriveListContentType -InputObject <IFilesIdentity> [-PassThru] [-W
 Publishes a contentType\]\[\] present in a content type hub site.
 This API is available in the following \[national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -188,5 +172,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Publish-MgDriveListContentType](/powershell/module/Microsoft.Graph.Files/Publish-MgDriveListContentType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/publish-mgbetadrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/publish-mgbetadrivelistcontenttype)
+
 
 

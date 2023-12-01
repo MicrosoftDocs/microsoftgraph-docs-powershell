@@ -51,22 +51,6 @@ Update-MgBetaSecurityCaseEdiscoveryCaseTag -InputObject <ISecurityIdentity>
 Update the properties of an ediscoveryReviewTag object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -472,4 +456,5 @@ Read-only.
 [Update-MgSecurityCaseEdiscoveryCaseTag](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCaseEdiscoveryCaseTag?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasetag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasetag)
+
 

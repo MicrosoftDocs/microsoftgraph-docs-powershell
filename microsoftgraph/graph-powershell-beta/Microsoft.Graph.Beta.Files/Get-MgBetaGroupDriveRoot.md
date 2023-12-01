@@ -33,22 +33,6 @@ Get-MgBetaGroupDriveRoot -InputObject <IFilesIdentity> [-ExpandProperty <String[
 Retrieve the metadata for a driveItem in a drive by file system path or ID.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -172,5 +156,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgGroupDriveRoot](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveRoot?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriveroot)
+
 
 

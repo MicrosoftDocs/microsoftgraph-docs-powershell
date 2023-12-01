@@ -59,22 +59,6 @@ Update-MgGroupSiteContentType -InputObject <ISitesIdentity> -BodyParameter <IMic
 Update a content type\]\[contentType\].
 This API is available in the following \[national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1813,4 +1797,5 @@ ORDER \<IMicrosoftGraphContentTypeOrder\>: contentTypeOrder
 [Update-MgBetaGroupSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitecontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitecontenttype)
+
 

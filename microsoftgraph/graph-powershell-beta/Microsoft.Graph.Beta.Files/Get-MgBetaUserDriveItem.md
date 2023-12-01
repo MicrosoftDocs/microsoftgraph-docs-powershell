@@ -40,22 +40,6 @@ Get-MgBetaUserDriveItem -InputObject <IFilesIdentity> [-ExpandProperty <String[]
 Retrieve the metadata for a bundle\]\[\] based on the unique ID of the bundle.
 This API is available in the following \[national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -315,5 +299,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgUserDriveItem](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriveitem)
+
 
 

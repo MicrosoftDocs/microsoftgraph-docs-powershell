@@ -45,22 +45,6 @@ Update-MgBookingBusinessStaffMember -InputObject <IBookingsIdentity> -BodyParame
 Update the properties of a bookingStaffMember in the specified bookingBusiness.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -215,5 +199,6 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 [Update-MgBetaBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaBookingBusinessStaffMember?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessstaffmember](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessstaffmember)
+
 
 

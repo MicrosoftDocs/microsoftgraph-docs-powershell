@@ -58,22 +58,6 @@ Update-MgUserDrive -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraph
 ## DESCRIPTION
 Update the navigation property drives in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -41467,4 +41451,5 @@ Read-only.
 [Update-MgBetaUserDrive](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDrive?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdrive)
+
 

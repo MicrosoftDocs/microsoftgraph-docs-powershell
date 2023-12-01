@@ -30,22 +30,6 @@ Remove-MgEducationClassAssignmentDefault -InputObject <IEducationIdentity> [-IfM
 ## DESCRIPTION
 Delete navigation property assignmentDefaults for education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EducationClassId
@@ -171,5 +155,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 [Remove-MgBetaEducationClassAssignmentDefault](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationClassAssignmentDefault?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassassignmentdefault](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassassignmentdefault)
+
 
 

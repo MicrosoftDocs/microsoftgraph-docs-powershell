@@ -48,22 +48,6 @@ As a reviewer of an access review, record a decision for an accessReviewInstance
 If no IDs are specified, the decisions will apply to every accessReviewInstanceDecisionItem for which you are the reviewer.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessReviewInstanceId
@@ -316,5 +300,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetarecorduserpendingaccessreviewinstancedecision](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetarecorduserpendingaccessreviewinstancedecision)
+
 
 

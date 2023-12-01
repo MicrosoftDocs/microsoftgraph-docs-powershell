@@ -49,22 +49,6 @@ This method is used to create or update a custom language in an Azure AD B2C use
 Note: You must enable language customization in the Azure AD B2C user flow before you can create a custom language.
 For more information, see Update b2cIdentityUserFlow.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -377,4 +361,5 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityb2cuserflowlanguage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityb2cuserflowlanguage)
+
 

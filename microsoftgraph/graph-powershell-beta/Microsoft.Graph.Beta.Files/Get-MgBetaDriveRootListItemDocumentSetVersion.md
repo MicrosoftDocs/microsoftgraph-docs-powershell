@@ -41,22 +41,6 @@ Get-MgBetaDriveRootListItemDocumentSetVersion -InputObject <IFilesIdentity> [-Ex
 Read the properties and relationships of a documentSetVersion object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -301,5 +285,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRootListItemDocumentSetVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriverootlistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriverootlistitemdocumentsetversion)
+
 
 

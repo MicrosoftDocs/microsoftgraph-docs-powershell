@@ -37,18 +37,6 @@ Get-MgBetaSecuritySubjectRightsRequestApprover -InputObject <ISecurityIdentity> 
 ## DESCRIPTION
 Get approvers from security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -345,5 +333,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Get-MgSecuritySubjectRightsRequestApprover](/powershell/module/Microsoft.Graph.Security/Get-MgSecuritySubjectRightsRequestApprover?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysubjectrightsrequestapprover](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysubjectrightsrequestapprover)
+
 
 

@@ -30,22 +30,6 @@ Get-MgGroupOnenoteRecentNotebook -InputObject <IGroupsIdentity> [-Count] [-Filte
 ## DESCRIPTION
 Invoke function getRecentNotebooks
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -225,5 +209,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Get-MgBetaGroupOnenoteRecentNotebook](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupOnenoteRecentNotebook?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouponenoterecentnotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouponenoterecentnotebook)
+
 
 

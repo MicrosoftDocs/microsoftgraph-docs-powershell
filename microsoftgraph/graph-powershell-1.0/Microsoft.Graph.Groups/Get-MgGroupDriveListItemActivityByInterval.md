@@ -47,22 +47,6 @@ Get-MgGroupDriveListItemActivityByInterval -InputObject <IGroupsIdentity> [-Coun
 ## DESCRIPTION
 Invoke function getActivitiesByInterval
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -332,5 +316,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Get-MgBetaGroupDriveListItemActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupDriveListItemActivityByInterval?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupdrivelistitemactivitybyinterval](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupdrivelistitemactivitybyinterval)
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupsettingtemplategroupsettingtemplate
@@ -42,18 +42,6 @@ Update-MgGroupSettingTemplateGroupSettingTemplate -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Update entity in groupSettingTemplates
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -306,4 +294,5 @@ VALUES \<IMicrosoftGraphSettingTemplateValue\[\]\>: Collection of settingTemplat
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupsettingtemplategroupsettingtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupsettingtemplategroupsettingtemplate)
+
 

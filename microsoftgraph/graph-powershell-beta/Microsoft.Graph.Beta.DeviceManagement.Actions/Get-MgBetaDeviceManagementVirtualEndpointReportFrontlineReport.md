@@ -33,18 +33,6 @@ Get-MgBetaDeviceManagementVirtualEndpointReportFrontlineReport -OutFile <String>
 Get the Windows 365 Frontline reports, such as real-time or historical data reports.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -288,5 +276,6 @@ BODYPARAMETER \<IPaths1Q4BouvDevicemanagementVirtualendpointReportsMicrosoftGrap
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportfrontlinereport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportfrontlinereport)
+
 
 

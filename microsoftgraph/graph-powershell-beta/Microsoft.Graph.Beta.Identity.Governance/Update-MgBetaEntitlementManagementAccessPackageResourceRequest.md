@@ -47,22 +47,6 @@ Update-MgBetaEntitlementManagementAccessPackageResourceRequest -InputObject <IId
 ## DESCRIPTION
 Update the navigation property accessPackageResourceRequests in identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessPackageResource
@@ -713,5 +697,6 @@ Alternate key.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementaccesspackageresourcerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementaccesspackageresourcerequest)
+
 
 

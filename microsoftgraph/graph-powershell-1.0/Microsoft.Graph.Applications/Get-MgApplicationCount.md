@@ -22,18 +22,6 @@ Get-MgApplicationCount [-Filter <String>] [-Search <String>] -ConsistencyLevel <
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ConsistencyLevel
@@ -96,5 +84,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgBetaApplicationCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationcount](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationcount)
+
 
 

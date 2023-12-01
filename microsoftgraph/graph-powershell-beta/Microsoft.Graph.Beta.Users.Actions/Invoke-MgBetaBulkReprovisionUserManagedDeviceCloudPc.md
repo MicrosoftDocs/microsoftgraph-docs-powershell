@@ -44,22 +44,6 @@ Invoke-MgBetaBulkReprovisionUserManagedDeviceCloudPc -InputObject <IUsersActions
 Bulk reprovision a set of Cloud PC devices with Intune managed device IDs.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -234,5 +218,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetabulkreprovisionusermanageddevicecloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetabulkreprovisionusermanageddevicecloudpc)
+
 
 

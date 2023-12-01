@@ -45,22 +45,6 @@ Effective permissions of an item can come from two sources: permissions set dire
 Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.This property is an ItemReference resource referencing the ancestor that the permission is inherited from.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -305,5 +289,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgDriveRootPermission](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRootPermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriverootpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriverootpermission)
+
 
 

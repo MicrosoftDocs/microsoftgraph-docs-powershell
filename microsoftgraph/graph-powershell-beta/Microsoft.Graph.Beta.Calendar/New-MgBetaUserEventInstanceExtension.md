@@ -49,22 +49,6 @@ You can create an open extension in a resource instance and store custom data to
 The table in the Permissions section lists the resources that support open extensions.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -240,5 +224,6 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
 [New-MgUserEventInstanceExtension](/powershell/module/Microsoft.Graph.Calendar/New-MgUserEventInstanceExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausereventinstanceextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausereventinstanceextension)
+
 
 

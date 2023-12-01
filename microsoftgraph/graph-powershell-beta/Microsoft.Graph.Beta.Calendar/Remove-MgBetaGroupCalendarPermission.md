@@ -33,22 +33,6 @@ Remove-MgBetaGroupCalendarPermission -InputObject <ICalendarIdentity> [-IfMatch 
 Delete calendarPermission.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -CalendarPermissionId
@@ -192,5 +176,6 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
 [Remove-MgGroupCalendarPermission](/powershell/module/Microsoft.Graph.Calendar/Remove-MgGroupCalendarPermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetagroupcalendarpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetagroupcalendarpermission)
+
 
 

@@ -32,18 +32,6 @@ Get-MgDriveRootCreatedByUser -InputObject <IFilesIdentity> [-ExpandProperty <Str
 Identity of the user who created the item.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -152,5 +140,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgBetaDriveRootCreatedByUser](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootCreatedByUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootcreatedbyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootcreatedbyuser)
+
 
 

@@ -48,22 +48,6 @@ Stop-MgBookingBusinessCalendarView -InputObject <IBookingsIdentity>
 Cancel the specified bookingAppointment in the specified bookingBusiness and send a message to the involved customer and staff members.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -237,5 +221,6 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 [Stop-MgBetaBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Beta.Bookings/Stop-MgBetaBookingBusinessCalendarView?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/stop-mgbookingbusinesscalendarview](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/stop-mgbookingbusinesscalendarview)
+
 
 

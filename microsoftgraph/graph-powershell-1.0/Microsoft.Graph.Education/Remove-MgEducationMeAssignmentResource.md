@@ -37,22 +37,6 @@ In general, only teachers in the class can remove a resource.
 However, teachers can't remove resources marked as 'distributeToStudents', after the assignment has been published to students.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -193,5 +177,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 [Remove-MgBetaEducationMeAssignmentResource](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationMeAssignmentResource?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationmeassignmentresource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationmeassignmentresource)
+
 
 

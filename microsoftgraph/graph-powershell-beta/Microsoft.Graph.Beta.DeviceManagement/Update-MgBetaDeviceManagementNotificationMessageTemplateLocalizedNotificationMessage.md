@@ -48,22 +48,6 @@ Update-MgBetaDeviceManagementNotificationMessageTemplateLocalizedNotificationMes
 ## DESCRIPTION
 Update the navigation property localizedNotificationMessages in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -440,5 +424,6 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 [Update-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementnotificationmessagetemplatelocalizednotificationmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementnotificationmessagetemplatelocalizednotificationmessage)
+
 
 

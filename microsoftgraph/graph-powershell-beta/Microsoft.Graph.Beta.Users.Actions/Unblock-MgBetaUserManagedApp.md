@@ -26,22 +26,6 @@ Unblock-MgBetaUserManagedApp -InputObject <IUsersActionsIdentity> [-PassThru] [-
 ## DESCRIPTION
 Unblocks the managed app user from app check-in.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -180,5 +164,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/unblock-mgbetausermanagedapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/unblock-mgbetausermanagedapp)
+
 
 

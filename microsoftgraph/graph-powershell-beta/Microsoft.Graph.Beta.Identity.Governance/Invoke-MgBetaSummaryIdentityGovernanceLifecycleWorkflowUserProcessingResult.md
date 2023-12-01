@@ -30,22 +30,6 @@ Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowUserProcessingResult
 ## DESCRIPTION
 Invoke function summary
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EndDateTime
@@ -229,5 +213,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowUserProcessingResult](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowUserProcessingResult?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetasummaryidentitygovernancelifecycleworkflowuserprocessingresult](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetasummaryidentitygovernancelifecycleworkflowuserprocessingresult)
+
 
 

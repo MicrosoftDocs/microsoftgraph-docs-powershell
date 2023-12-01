@@ -43,18 +43,6 @@ Invoke-MgBetaInitiateUserManagedDeviceOnDemandProactiveRemediation -InputObject 
 ## DESCRIPTION
 Perform On Demand Proactive Remediation
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -279,5 +267,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetainitiateusermanageddeviceondemandproactiveremediation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetainitiateusermanageddeviceondemandproactiveremediation)
+
 
 

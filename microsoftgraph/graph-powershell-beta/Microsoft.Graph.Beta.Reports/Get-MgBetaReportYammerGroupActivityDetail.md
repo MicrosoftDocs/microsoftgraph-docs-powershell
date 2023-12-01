@@ -40,22 +40,6 @@ Get-MgBetaReportYammerGroupActivityDetail -InputObject <IReportsIdentity> -OutFi
 ## DESCRIPTION
 Invoke function getYammerGroupsActivityDetail
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Date
@@ -195,5 +179,6 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
 [Get-MgReportYammerGroupActivityDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportYammerGroupActivityDetail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportyammergroupactivitydetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportyammergroupactivitydetail)
+
 
 

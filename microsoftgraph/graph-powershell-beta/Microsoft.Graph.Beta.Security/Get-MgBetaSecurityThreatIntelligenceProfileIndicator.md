@@ -40,18 +40,6 @@ Get-MgBetaSecurityThreatIntelligenceProfileIndicator -InputObject <ISecurityIden
 Read the properties and relationships of a intelligenceProfileIndicator object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -333,5 +321,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Get-MgSecurityThreatIntelligenceProfileIndicator](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceProfileIndicator?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligenceprofileindicator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligenceprofileindicator)
+
 
 

@@ -40,18 +40,6 @@ New-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest
 Create a new privilegedAccessGroupAssignmentScheduleRequest object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessId
@@ -30144,5 +30132,6 @@ TICKETINFO \<IMicrosoftGraphTicketInfo\>: ticketInfo
 [New-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceprivilegedaccessgroupassignmentschedulerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceprivilegedaccessgroupassignmentschedulerequest)
+
 
 

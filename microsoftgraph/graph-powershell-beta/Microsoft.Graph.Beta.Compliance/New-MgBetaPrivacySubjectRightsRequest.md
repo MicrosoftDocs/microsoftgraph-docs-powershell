@@ -43,18 +43,6 @@ New-MgBetaPrivacySubjectRightsRequest -BodyParameter <IMicrosoftGraphSubjectRigh
 Create a new subjectRightsRequest object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -30239,4 +30227,5 @@ This URL should be treated as an opaque blob, and not parsed.
 [New-MgPrivacySubjectRightsRequest](/powershell/module/Microsoft.Graph.Compliance/New-MgPrivacySubjectRightsRequest?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetaprivacysubjectrightsrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetaprivacysubjectrightsrequest)
+
 

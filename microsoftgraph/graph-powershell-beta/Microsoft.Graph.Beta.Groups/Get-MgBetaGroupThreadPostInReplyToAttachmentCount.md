@@ -30,18 +30,6 @@ Get-MgBetaGroupThreadPostInReplyToAttachmentCount -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ConversationThreadId
@@ -182,5 +170,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Get-MgGroupThreadPostInReplyToAttachmentCount](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupThreadPostInReplyToAttachmentCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupthreadpostinreplytoattachmentcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupthreadpostinreplytoattachmentcount)
+
 
 

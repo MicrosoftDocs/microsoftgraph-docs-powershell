@@ -65,18 +65,6 @@ To run this request, the calling user must have multifactor authentication (MFA)
 See Enable per-user Microsoft Entra multifactor authentication to secure sign-in events.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Action
@@ -1304,5 +1292,6 @@ TICKETINFO \<IMicrosoftGraphTicketInfo\>: ticketInfo
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententerpriseapproleassignmentschedulerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententerpriseapproleassignmentschedulerequest)
+
 
 

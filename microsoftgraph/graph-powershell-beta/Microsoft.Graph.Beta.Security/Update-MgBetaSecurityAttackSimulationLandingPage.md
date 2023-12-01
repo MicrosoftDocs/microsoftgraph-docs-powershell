@@ -48,18 +48,6 @@ Update-MgBetaSecurityAttackSimulationLandingPage -InputObject <ISecurityIdentity
 ## DESCRIPTION
 Update the navigation property landingPages in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -495,4 +483,5 @@ This property is read-only.
 [Update-MgSecurityAttackSimulationLandingPage](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAttackSimulationLandingPage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationlandingpage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationlandingpage)
+
 

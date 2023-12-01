@@ -34,18 +34,6 @@ Get-MgBetaVirtualEventSessionRegistrationRegistrant -InputObject <IBookingsIdent
 ## DESCRIPTION
 Registrants of the online meeting.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -303,5 +291,6 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventsessionregistrationregistrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventsessionregistrationregistrant)
+
 
 

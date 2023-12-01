@@ -63,18 +63,6 @@ Set-MgGroupTeam -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTea
 ## DESCRIPTION
 Update the navigation property team in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -28404,4 +28392,5 @@ Read-only.
 [Set-MgBetaGroupTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaGroupTeam?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mggroupteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mggroupteam)
+
 

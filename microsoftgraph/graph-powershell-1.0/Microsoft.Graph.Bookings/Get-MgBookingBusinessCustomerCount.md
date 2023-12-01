@@ -30,18 +30,6 @@ Get-MgBookingBusinessCustomerCount -InputObject <IBookingsIdentity> [-Filter <St
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -BookingBusinessId
@@ -133,5 +121,6 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 [Get-MgBetaBookingBusinessCustomerCount](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessCustomerCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinesscustomercount](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinesscustomercount)
+
 
 

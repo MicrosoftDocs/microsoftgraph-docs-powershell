@@ -31,18 +31,6 @@ Remove-MgBetaVirtualEventWebinarSessionRegistrationCustomQuestion -InputObject <
 Delete a custom registration question from a meetingRegistration object on behalf of the organizer.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -210,5 +198,6 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetavirtualeventwebinarsessionregistrationcustomquestion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetavirtualeventwebinarsessionregistrationcustomquestion)
+
 
 

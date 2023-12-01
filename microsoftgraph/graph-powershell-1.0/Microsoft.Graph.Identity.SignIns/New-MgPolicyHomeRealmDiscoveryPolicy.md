@@ -34,22 +34,6 @@ New-MgPolicyHomeRealmDiscoveryPolicy -BodyParameter <Hashtable> [-WhatIf] [-Conf
 Create a new homeRealmDiscoveryPolicy object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -252,4 +236,5 @@ Always null when the object hasn't been deleted.
 [New-MgBetaPolicyHomeRealmDiscoveryPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyHomeRealmDiscoveryPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyhomerealmdiscoverypolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyhomerealmdiscoverypolicy)
+
 

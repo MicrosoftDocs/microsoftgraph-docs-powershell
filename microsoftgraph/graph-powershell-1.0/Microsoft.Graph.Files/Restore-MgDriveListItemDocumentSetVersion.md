@@ -33,22 +33,6 @@ Restore-MgDriveListItemDocumentSetVersion -InputObject <IFilesIdentity> [-PassTh
 Restore a document set version.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DocumentSetVersionId
@@ -203,5 +187,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Restore-MgBetaDriveListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Files/Restore-MgBetaDriveListItemDocumentSetVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mgdrivelistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mgdrivelistitemdocumentsetversion)
+
 
 

@@ -33,22 +33,6 @@ Remove-MgBetaEducationClassTeacherByRef -InputObject <IEducationIdentity> [-Id <
 Remove a teacher from an educationClass.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EducationClassId
@@ -211,5 +195,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 [Remove-MgEducationClassTeacherByRef](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassTeacherByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassteacherbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassteacherbyref)
+
 
 

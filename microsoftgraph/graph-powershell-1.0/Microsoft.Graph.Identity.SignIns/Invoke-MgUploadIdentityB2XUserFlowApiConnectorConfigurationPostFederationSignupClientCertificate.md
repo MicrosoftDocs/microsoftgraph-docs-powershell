@@ -55,18 +55,6 @@ The input is a base-64 encoded value of the PKCS 12 certificate contents.
 This method returns an apiConnector.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -274,5 +262,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 [Invoke-MgBetaUploadIdentityB2XUserFlowApiConnectorConfigurationPostFederationSignupClientCertificate](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Invoke-MgBetaUploadIdentityB2XUserFlowApiConnectorConfigurationPostFederationSignupClientCertificate?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mguploadidentityb2xuserflowapiconnectorconfigurationpostfederationsignupclientcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mguploadidentityb2xuserflowapiconnectorconfigurationpostfederationsignupclientcertificate)
+
 
 

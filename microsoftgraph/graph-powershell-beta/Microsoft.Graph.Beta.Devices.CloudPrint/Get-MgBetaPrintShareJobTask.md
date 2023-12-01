@@ -37,18 +37,6 @@ Get-MgBetaPrintShareJobTask -InputObject <IDevicesCloudPrintIdentity> [-ExpandPr
 ## DESCRIPTION
 A list of printTasks that were triggered by this print job.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -297,5 +285,6 @@ INPUTOBJECT \<IDevicesCloudPrintIdentity\>: Identity Parameter
 [Get-MgPrintShareJobTask](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintShareJobTask?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintsharejobtask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintsharejobtask)
+
 
 

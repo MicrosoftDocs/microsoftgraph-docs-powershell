@@ -57,22 +57,6 @@ New-MgGroupSitePermission -InputObject <ISitesIdentity> -BodyParameter <IMicroso
 Create a new permission object on a site.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -655,4 +639,5 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
 [New-MgBetaGroupSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSitePermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitepermission)
+
 

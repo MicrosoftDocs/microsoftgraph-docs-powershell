@@ -31,18 +31,6 @@ Test-MgBetaDeviceManagementVirtualEndpointCloudPcBulkResize
 Validate that a set of cloudPC devices meet the requirements to be bulk resized.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -160,5 +148,6 @@ BODYPARAMETER \<IPathsLvwgawDevicemanagementVirtualendpointCloudpcsMicrosoftGrap
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/test-mgbetadevicemanagementvirtualendpointcloudpcbulkresize](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/test-mgbetadevicemanagementvirtualendpointcloudpcbulkresize)
+
 
 

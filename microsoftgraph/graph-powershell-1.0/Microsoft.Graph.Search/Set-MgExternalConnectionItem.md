@@ -47,18 +47,6 @@ Set-MgExternalConnectionItem -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Update the navigation property items in external
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Acl
@@ -341,4 +329,5 @@ INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
 [Set-MgBetaExternalConnectionItem](/powershell/module/Microsoft.Graph.Beta.Search/Set-MgBetaExternalConnectionItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/set-mgexternalconnectionitem](https://learn.microsoft.com/powershell/module/microsoft.graph.search/set-mgexternalconnectionitem)
+
 

@@ -30,18 +30,6 @@ Get-MgBetaAgreementAcceptanceCount -InputObject <IIdentityGovernanceIdentity> [-
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AgreementId
@@ -225,5 +213,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [Get-MgAgreementAcceptanceCount](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgAgreementAcceptanceCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaagreementacceptancecount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaagreementacceptancecount)
+
 
 

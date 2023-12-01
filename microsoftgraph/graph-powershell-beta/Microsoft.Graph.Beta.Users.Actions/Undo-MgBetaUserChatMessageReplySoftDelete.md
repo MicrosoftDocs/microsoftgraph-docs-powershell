@@ -33,22 +33,6 @@ Undo-MgBetaUserChatMessageReplySoftDelete -InputObject <IUsersActionsIdentity> [
 Undo soft deletion of a single chatMessage or a chat message reply in a channel or a chat.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ChatId
@@ -233,5 +217,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 [Undo-MgUserChatMessageReplySoftDelete](/powershell/module/Microsoft.Graph.Users.Actions/Undo-MgUserChatMessageReplySoftDelete?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/undo-mgbetauserchatmessagereplysoftdelete](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/undo-mgbetauserchatmessagereplysoftdelete)
+
 
 

@@ -58,22 +58,6 @@ Update-MgDriveList -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraph
 ## DESCRIPTION
 Update the navigation property list in drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -23770,4 +23754,5 @@ See the possible resource path values for each supported resource.
 [Update-MgBetaDriveList](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveList?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdrivelist](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdrivelist)
+
 

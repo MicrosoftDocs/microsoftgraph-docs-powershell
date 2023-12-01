@@ -50,18 +50,6 @@ Update-MgSecuritySubjectRightsRequestApproverMailboxSetting -InputObject <ISecur
 ## DESCRIPTION
 Update property mailboxSettings value.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -450,5 +438,6 @@ It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 
 [Update-MgBetaSecuritySubjectRightsRequestApproverMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecuritySubjectRightsRequestApproverMailboxSetting?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritysubjectrightsrequestapprovermailboxsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritysubjectrightsrequestapprovermailboxsetting)
+
 
 

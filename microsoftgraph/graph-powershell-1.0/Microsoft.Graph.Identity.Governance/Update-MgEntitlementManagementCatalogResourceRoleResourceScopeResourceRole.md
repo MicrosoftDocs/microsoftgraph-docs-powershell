@@ -47,18 +47,6 @@ Update-MgEntitlementManagementCatalogResourceRoleResourceScopeResourceRole
 ## DESCRIPTION
 Update the navigation property roles in identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessPackageCatalogId
@@ -496,5 +484,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementcatalogresourceroleresourcescoperesourcerole](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementcatalogresourceroleresourcescoperesourcerole)
+
 
 

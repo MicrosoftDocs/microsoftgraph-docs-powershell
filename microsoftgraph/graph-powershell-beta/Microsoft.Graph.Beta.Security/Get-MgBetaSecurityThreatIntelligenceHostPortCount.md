@@ -35,18 +35,6 @@ Get-MgBetaSecurityThreatIntelligenceHostPortCount -InputObject <ISecurityIdentit
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -207,5 +195,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Get-MgSecurityThreatIntelligenceHostPortCount](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostPortCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostportcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostportcount)
+
 
 

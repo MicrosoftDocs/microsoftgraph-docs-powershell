@@ -29,22 +29,6 @@ Get-MgBetaReportSharePointActivityPage -InputObject <IReportsIdentity> -OutFile 
 ## DESCRIPTION
 Invoke function getSharePointActivityPages
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -169,5 +153,6 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
 [Get-MgReportSharePointActivityPage](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSharePointActivityPage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsharepointactivitypage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsharepointactivitypage)
+
 
 

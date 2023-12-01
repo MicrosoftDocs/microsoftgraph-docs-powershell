@@ -48,18 +48,6 @@ Update-MgRiskyServicePrincipal -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update the navigation property riskyServicePrincipals in identityProtection
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -466,4 +454,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 [Update-MgBetaRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaRiskyServicePrincipal?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgriskyserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgriskyserviceprincipal)
+
 

@@ -44,22 +44,6 @@ Test-MgDriveRootPermission -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Invoke action validatePermission
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -251,5 +235,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Test-MgBetaDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/Test-MgBetaDriveRootPermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/test-mgdriverootpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.files/test-mgdriverootpermission)
+
 
 

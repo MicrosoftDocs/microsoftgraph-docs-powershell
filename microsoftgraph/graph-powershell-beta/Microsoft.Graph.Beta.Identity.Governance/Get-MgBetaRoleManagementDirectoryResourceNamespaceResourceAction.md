@@ -42,18 +42,6 @@ Get-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction -InputObject <I
 Read the properties and relationships of an unifiedRbacResourceAction object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -373,5 +361,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [Get-MgRoleManagementDirectoryResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryResourceNamespaceResourceAction?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryresourcenamespaceresourceaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryresourcenamespaceresourceaction)
+
 
 

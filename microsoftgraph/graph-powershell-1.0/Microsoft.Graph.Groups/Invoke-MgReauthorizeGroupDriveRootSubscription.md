@@ -33,22 +33,6 @@ Invoke-MgReauthorizeGroupDriveRootSubscription -InputObject <IGroupsIdentity> [-
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -214,5 +198,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Invoke-MgBetaReauthorizeGroupDriveRootSubscription](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaReauthorizeGroupDriveRootSubscription?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreauthorizegroupdriverootsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreauthorizegroupdriverootsubscription)
+
 
 

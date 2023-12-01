@@ -49,22 +49,6 @@ Attach an existing educationRubric object to an educationAssignment.
 Only teachers can perform this operation.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -259,5 +243,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 [Set-MgBetaEducationUserAssignmentRubricByRef](/powershell/module/Microsoft.Graph.Beta.Education/Set-MgBetaEducationUserAssignmentRubricByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/set-mgeducationuserassignmentrubricbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.education/set-mgeducationuserassignmentrubricbyref)
+
 
 

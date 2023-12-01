@@ -30,22 +30,6 @@ Remove-MgBetaTeamworkDeletedTeamChannelTab -InputObject <ITeamsIdentity> [-IfMat
 ## DESCRIPTION
 Delete navigation property tabs for teamwork
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -229,5 +213,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Remove-MgTeamworkDeletedTeamChannelTab](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamworkDeletedTeamChannelTab?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamworkdeletedteamchanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamworkdeletedteamchanneltab)
+
 
 

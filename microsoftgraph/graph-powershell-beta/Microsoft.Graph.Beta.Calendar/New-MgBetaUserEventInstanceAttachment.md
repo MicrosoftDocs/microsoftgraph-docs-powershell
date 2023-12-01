@@ -51,22 +51,6 @@ This operation limits the size of the attachment you can add to under 3 MB.
 If an organizer adds an attachment to a meeting event, the organizer can subsequently update the event to send the attachment and update the event for each attendee as well.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -332,5 +316,6 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
 [New-MgUserEventInstanceAttachment](/powershell/module/Microsoft.Graph.Calendar/New-MgUserEventInstanceAttachment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausereventinstanceattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausereventinstanceattachment)
+
 
 

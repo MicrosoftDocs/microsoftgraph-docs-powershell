@@ -46,22 +46,6 @@ Restore-MgBetaDeviceManagementComanagedDeviceCloudPc -InputObject <IDeviceManage
 Restore a Cloud PC device to a previous state with an Intune managed device ID.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -263,5 +247,6 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/restore-mgbetadevicemanagementcomanageddevicecloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/restore-mgbetadevicemanagementcomanageddevicecloudpc)
+
 
 

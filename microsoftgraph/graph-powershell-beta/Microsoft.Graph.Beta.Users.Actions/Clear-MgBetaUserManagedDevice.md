@@ -48,22 +48,6 @@ Clear-MgBetaUserManagedDevice -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Wipe a device
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -357,5 +341,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 [Clear-MgUserManagedDevice](/powershell/module/Microsoft.Graph.Users.Actions/Clear-MgUserManagedDevice?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/clear-mgbetausermanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/clear-mgbetausermanageddevice)
+
 
 

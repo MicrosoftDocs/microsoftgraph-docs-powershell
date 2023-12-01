@@ -48,18 +48,6 @@ Update-MgBetaDeviceManagementWindowsInformationProtectionNetworkLearningSummary
 ## DESCRIPTION
 Update the navigation property windowsInformationProtectionNetworkLearningSummaries in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -369,5 +357,6 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 [Update-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementwindowsinformationprotectionnetworklearningsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementwindowsinformationprotectionnetworklearningsummary)
+
 
 

@@ -51,22 +51,6 @@ Invoke-MgInviteGroupDriveRoot -InputObject <IGroupsIdentity>
 Sends a sharing invitation for a driveItem.\nA sharing invitation provides permissions to the recipients and optionally sends them an email with a sharing link\]\[\].
 This API is available in the following \[national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -376,4 +360,5 @@ security groups).
 [Invoke-MgBetaInviteGroupDriveRoot](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaInviteGroupDriveRoot?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mginvitegroupdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mginvitegroupdriveroot)
+
 

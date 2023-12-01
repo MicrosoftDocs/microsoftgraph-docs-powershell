@@ -39,22 +39,6 @@ Remove-MgBetaFinancialCompanyCustomerPaymentMethod -InputObject <IFinancialsIden
 ## DESCRIPTION
 Delete navigation property paymentMethod for financials
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -CompanyId
@@ -235,5 +219,6 @@ INPUTOBJECT \<IFinancialsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/remove-mgbetafinancialcompanycustomerpaymentmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/remove-mgbetafinancialcompanycustomerpaymentmethod)
+
 
 

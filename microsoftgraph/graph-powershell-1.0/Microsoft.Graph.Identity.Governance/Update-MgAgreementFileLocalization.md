@@ -48,22 +48,6 @@ Update-MgAgreementFileLocalization -InputObject <IIdentityGovernanceIdentity>
 ## DESCRIPTION
 Update the navigation property localizations in agreements
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -493,4 +477,5 @@ Read-only.
 [Update-MgBetaAgreementFileLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaAgreementFileLocalization?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgagreementfilelocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgagreementfilelocalization)
+
 

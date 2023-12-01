@@ -49,22 +49,6 @@ Invoke-MgMarkUserChatUnreadForUser -InputObject <IUsersActionsIdentity>
 Mark a chat as unread for a user.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -291,5 +275,6 @@ For example, if a user changes their display name, the API might show the new va
 [Invoke-MgBetaMarkUserChatUnreadForUser](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaMarkUserChatUnreadForUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgmarkuserchatunreadforuser](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgmarkuserchatunreadforuser)
+
 
 

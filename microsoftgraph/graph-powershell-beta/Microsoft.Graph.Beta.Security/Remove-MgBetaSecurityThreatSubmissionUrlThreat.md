@@ -27,22 +27,6 @@ Remove-MgBetaSecurityThreatSubmissionUrlThreat -InputObject <ISecurityIdentity> 
 ## DESCRIPTION
 Delete navigation property urlThreats for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -233,5 +217,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritythreatsubmissionurlthreat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritythreatsubmissionurlthreat)
+
 
 

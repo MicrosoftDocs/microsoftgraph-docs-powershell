@@ -42,22 +42,6 @@ Get-MgGroupSiteListItemDocumentSetVersion -InputObject <ISitesIdentity> [-Expand
 Read the properties and relationships of a documentSetVersion object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -361,5 +345,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgBetaGroupSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListItemDocumentSetVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistitemdocumentsetversion)
+
 
 

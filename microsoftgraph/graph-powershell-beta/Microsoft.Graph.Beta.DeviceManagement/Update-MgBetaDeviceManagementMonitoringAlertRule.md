@@ -48,18 +48,6 @@ Update-MgBetaDeviceManagementMonitoringAlertRule -InputObject <IDeviceManagement
 Update the properties of an alertRule object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -502,4 +490,5 @@ THRESHOLD \<IMicrosoftGraphDeviceManagementRuleThreshold\>: ruleThreshold
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmonitoringalertrule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmonitoringalertrule)
+
 

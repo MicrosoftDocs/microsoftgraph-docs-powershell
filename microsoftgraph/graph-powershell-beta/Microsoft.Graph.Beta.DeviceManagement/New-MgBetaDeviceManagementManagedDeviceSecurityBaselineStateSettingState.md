@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmanageddevicesecuritybaselinestatesettingstate
@@ -48,22 +48,6 @@ New-MgBetaDeviceManagementManagedDeviceSecurityBaselineStateSettingState
 
 ## DESCRIPTION
 Create new navigation property to settingStates for deviceManagement
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 
@@ -502,4 +486,5 @@ SOURCEPOLICIES \<IMicrosoftGraphSettingSource\[\]\>: The policies that contribut
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmanageddevicesecuritybaselinestatesettingstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmanageddevicesecuritybaselinestatesettingstate)
+
 

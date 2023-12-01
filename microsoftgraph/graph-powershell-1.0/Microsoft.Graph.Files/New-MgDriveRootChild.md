@@ -77,18 +77,6 @@ New-MgDriveRootChild -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGra
 ## DESCRIPTION
 Create new navigation property to children for drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -29005,4 +28993,5 @@ Read-only.
 [New-MgBetaDriveRootChild](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveRootChild?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootchild](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootchild)
+
 

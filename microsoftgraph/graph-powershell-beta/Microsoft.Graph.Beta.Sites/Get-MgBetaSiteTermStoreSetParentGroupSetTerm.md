@@ -40,18 +40,6 @@ Get-MgBetaSiteTermStoreSetParentGroupSetTerm -InputObject <ISitesIdentity> [-Exp
 Read the properties and relationships of a term object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -350,5 +338,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgSiteTermStoreSetParentGroupSetTerm](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetParentGroupSetTerm?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetparentgroupsetterm](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetparentgroupsetterm)
+
 
 

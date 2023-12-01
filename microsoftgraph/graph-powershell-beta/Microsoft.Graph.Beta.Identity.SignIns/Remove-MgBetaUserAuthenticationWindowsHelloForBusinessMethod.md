@@ -34,18 +34,6 @@ Remove-MgBetaUserAuthenticationWindowsHelloForBusinessMethod -InputObject <IIden
 Deletes a windowsHelloForBusinessAuthenticationMethod object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -252,5 +240,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 [Remove-MgUserAuthenticationWindowsHelloForBusinessMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgUserAuthenticationWindowsHelloForBusinessMethod?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationwindowshelloforbusinessmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationwindowshelloforbusinessmethod)
+
 
 

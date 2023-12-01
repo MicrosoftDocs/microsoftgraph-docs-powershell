@@ -46,18 +46,6 @@ Update-MgBetaSecurityThreatIntelligenceHostSslCertificate -InputObject <ISecurit
 ## DESCRIPTION
 Update the navigation property hostSslCertificates in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1192,4 +1180,5 @@ Note: This is not the signature.
 [Update-MgSecurityThreatIntelligenceHostSslCertificate](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligenceHostSslCertificate?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencehostsslcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencehostsslcertificate)
+
 

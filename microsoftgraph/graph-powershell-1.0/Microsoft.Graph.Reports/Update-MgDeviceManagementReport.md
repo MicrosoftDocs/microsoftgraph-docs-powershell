@@ -32,22 +32,6 @@ Update-MgDeviceManagementReport -BodyParameter <IMicrosoftGraphDeviceManagementR
 ## DESCRIPTION
 Update the properties of a deviceManagementReports object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -201,4 +185,5 @@ Filter, Select, and OrderBy cannot be specified together with a CachedReportConf
 [Update-MgBetaDeviceManagementReport](/powershell/module/Microsoft.Graph.Beta.Reports/Update-MgBetaDeviceManagementReport?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/update-mgdevicemanagementreport](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/update-mgdevicemanagementreport)
+
 

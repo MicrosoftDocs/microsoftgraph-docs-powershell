@@ -33,18 +33,6 @@ Remove-MgDeviceByDeviceId -InputObject <IIdentityDirectoryManagementIdentity> [-
 Delete a registered device.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceId
@@ -184,5 +172,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 [Remove-MgBetaDeviceByDeviceId](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDeviceByDeviceId?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdevicebydeviceid](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdevicebydeviceid)
+
 
 

@@ -87,18 +87,6 @@ New-MgBetaGroupSiteTermStoreSetParentGroupSetChild -InputObject <ISitesIdentity>
 Create a new term object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -687,4 +675,5 @@ Read-only.
 [New-MgGroupSiteTermStoreSetParentGroupSetChild](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteTermStoreSetParentGroupSetChild?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitetermstoresetparentgroupsetchild](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitetermstoresetparentgroupsetchild)
+
 

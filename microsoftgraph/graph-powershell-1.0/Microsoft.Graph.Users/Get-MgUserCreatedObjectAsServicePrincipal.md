@@ -37,18 +37,6 @@ Get-MgUserCreatedObjectAsServicePrincipal -InputObject <IUsersIdentity> [-Expand
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -282,5 +270,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Get-MgBetaUserCreatedObjectAsServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserCreatedObjectAsServicePrincipal?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusercreatedobjectasserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusercreatedobjectasserviceprincipal)
+
 
 

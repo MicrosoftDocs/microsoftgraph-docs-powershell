@@ -32,18 +32,6 @@ Invoke-MgFunctionServicePrincipalSynchronizationJobSchema -InputObject <IApplica
 ## DESCRIPTION
 Invoke function functions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -240,5 +228,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Invoke-MgBetaFunctionServicePrincipalSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaFunctionServicePrincipalSynchronizationJobSchema?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgfunctionserviceprincipalsynchronizationjobschema](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgfunctionserviceprincipalsynchronizationjobschema)
+
 
 

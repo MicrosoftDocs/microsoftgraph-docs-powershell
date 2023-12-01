@@ -45,18 +45,6 @@ Invoke-MgScanDeviceManagementManagedDeviceWindowsDefender -InputObject <IDeviceM
 ## DESCRIPTION
 Not yet documented
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -220,5 +208,6 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
 [Invoke-MgBetaScanDeviceManagementManagedDeviceWindowsDefender](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Invoke-MgBetaScanDeviceManagementManagedDeviceWindowsDefender?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgscandevicemanagementmanageddevicewindowsdefender](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgscandevicemanagementmanageddevicewindowsdefender)
+
 
 

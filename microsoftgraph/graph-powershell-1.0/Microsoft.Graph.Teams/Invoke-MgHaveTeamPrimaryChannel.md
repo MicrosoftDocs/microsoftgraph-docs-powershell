@@ -30,22 +30,6 @@ Invoke-MgHaveTeamPrimaryChannel -InputObject <ITeamsIdentity> [-TenantId <String
 ## DESCRIPTION
 Invoke function doesUserHaveAccess
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -177,5 +161,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Invoke-MgBetaHaveTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaHaveTeamPrimaryChannel?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mghaveteamprimarychannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mghaveteamprimarychannel)
+
 
 

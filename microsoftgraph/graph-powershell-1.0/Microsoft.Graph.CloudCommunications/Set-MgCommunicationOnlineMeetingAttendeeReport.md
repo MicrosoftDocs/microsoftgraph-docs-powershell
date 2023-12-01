@@ -30,22 +30,6 @@ Set-MgCommunicationOnlineMeetingAttendeeReport -InputObject <ICloudCommunication
 ## DESCRIPTION
 Update attendeeReport for the navigation property onlineMeetings in communications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Data
@@ -192,5 +176,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
 [Set-MgBetaCommunicationOnlineMeetingAttendeeReport](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Set-MgBetaCommunicationOnlineMeetingAttendeeReport?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/set-mgcommunicationonlinemeetingattendeereport](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/set-mgcommunicationonlinemeetingattendeereport)
+
 
 

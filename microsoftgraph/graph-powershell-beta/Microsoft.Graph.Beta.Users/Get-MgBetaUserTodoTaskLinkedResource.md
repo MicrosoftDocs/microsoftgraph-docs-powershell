@@ -41,18 +41,6 @@ Get-MgBetaUserTodoTaskLinkedResource -InputObject <IUsersIdentity> [-ExpandPrope
 Read the properties and relationships of a linkedResource object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -325,5 +313,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Get-MgUserTodoTaskLinkedResource](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoTaskLinkedResource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotasklinkedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotasklinkedresource)
+
 
 

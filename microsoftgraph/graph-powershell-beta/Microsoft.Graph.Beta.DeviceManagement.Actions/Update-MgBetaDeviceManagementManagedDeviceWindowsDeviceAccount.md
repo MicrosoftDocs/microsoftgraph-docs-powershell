@@ -48,18 +48,6 @@ Update-MgBetaDeviceManagementManagedDeviceWindowsDeviceAccount -InputObject <IDe
 ## DESCRIPTION
 Invoke action updateWindowsDeviceAccount
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -283,5 +271,6 @@ UPDATEWINDOWSDEVICEACCOUNTACTIONPARAMETER \<IMicrosoftGraphUpdateWindowsDeviceAc
 [Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/update-mgbetadevicemanagementmanageddevicewindowsdeviceaccount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/update-mgbetadevicemanagementmanageddevicewindowsdeviceaccount)
+
 
 

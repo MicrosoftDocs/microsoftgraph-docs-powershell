@@ -41,18 +41,6 @@ Get-MgBetaSecurityThreatIntelligenceIntelProfile -InputObject <ISecurityIdentity
 Read the properties and relationships of a intelligenceProfile object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -334,5 +322,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Get-MgSecurityThreatIntelligenceIntelProfile](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceIntelProfile?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligenceintelprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligenceintelprofile)
+
 
 

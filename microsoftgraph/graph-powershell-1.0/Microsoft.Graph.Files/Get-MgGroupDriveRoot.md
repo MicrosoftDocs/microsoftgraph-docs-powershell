@@ -35,22 +35,6 @@ Retrieve the metadata for a driveItem in a drive by file system path or ID.item-
 It may also be the unique ID of a SharePoint list item.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -174,5 +158,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgBetaGroupDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRoot?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveroot)
+
 
 

@@ -59,22 +59,6 @@ New-MgGroupDriveListItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosof
 Create a new listItem\]\[\] in a \[list\]\[\].
 This API is available in the following \[national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -23315,4 +23299,5 @@ Read-only.
 [New-MgBetaGroupDriveListItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveListItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdrivelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdrivelistitem)
+
 

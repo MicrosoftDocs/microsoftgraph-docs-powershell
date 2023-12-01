@@ -55,18 +55,6 @@ New-MgBetaGroupSiteOnenoteNotebookSectionGroup -InputObject <ISitesIdentity>
 Create a new section group in the specified notebook.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1038,4 +1026,5 @@ Read-only.
 [New-MgGroupSiteOnenoteNotebookSectionGroup](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteOnenoteNotebookSectionGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsiteonenotenotebooksectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsiteonenotenotebooksectiongroup)
+
 

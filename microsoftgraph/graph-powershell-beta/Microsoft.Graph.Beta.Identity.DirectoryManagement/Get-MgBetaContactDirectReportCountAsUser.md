@@ -30,18 +30,6 @@ Get-MgBetaContactDirectReportCountAsUser -InputObject <IIdentityDirectoryManagem
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ConsistencyLevel
@@ -185,5 +173,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 [Get-MgContactDirectReportCountAsUser](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContactDirectReportCountAsUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontactdirectreportcountasuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontactdirectreportcountasuser)
+
 
 

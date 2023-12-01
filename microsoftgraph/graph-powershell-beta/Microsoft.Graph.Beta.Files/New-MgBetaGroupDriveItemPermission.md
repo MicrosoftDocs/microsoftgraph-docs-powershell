@@ -54,22 +54,6 @@ New-MgBetaGroupDriveItemPermission -InputObject <IFilesIdentity> -BodyParameter 
 ## DESCRIPTION
 Create new navigation property to permissions for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -655,4 +639,5 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
 [New-MgGroupDriveItemPermission](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveItemPermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetagroupdriveitempermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetagroupdriveitempermission)
+
 

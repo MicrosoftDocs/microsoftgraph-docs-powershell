@@ -33,18 +33,6 @@ Invoke-MgBetaRetryGroupServiceProvisioning -InputObject <IGroupsIdentity> [-Pass
 Retry the group service provisioning.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -186,5 +174,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Invoke-MgRetryGroupServiceProvisioning](/powershell/module/Microsoft.Graph.Groups/Invoke-MgRetryGroupServiceProvisioning?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaretrygroupserviceprovisioning](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaretrygroupserviceprovisioning)
+
 
 

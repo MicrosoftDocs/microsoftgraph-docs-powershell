@@ -42,18 +42,6 @@ You can use a service principal as a client or resource.
 A service principal supports delegated or app-only authentication context.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -298,5 +286,6 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceprincipalsigninactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceprincipalsigninactivity)
+
 
 

@@ -33,18 +33,6 @@ Remove-MgBetaDriveRootChild -InputObject <IFilesIdentity> [-IfMatch <String>] [-
 Remove an item from a bundle\]\[\].
 This API is available in the following \[national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -199,5 +187,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Remove-MgDriveRootChild](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveRootChild?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriverootchild](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriverootchild)
+
 
 

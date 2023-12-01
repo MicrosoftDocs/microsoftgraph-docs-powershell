@@ -46,22 +46,6 @@ Restore a specific Cloud PC.
 Use this API to trigger a remote action that restores a Cloud PC device to a previous state.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -266,5 +250,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restore-mgbetausercloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restore-mgbetausercloudpc)
+
 
 

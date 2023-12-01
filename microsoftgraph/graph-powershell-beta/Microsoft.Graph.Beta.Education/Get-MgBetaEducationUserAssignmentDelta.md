@@ -32,22 +32,6 @@ Get-MgBetaEducationUserAssignmentDelta -InputObject <IEducationIdentity> [-Filte
 ## DESCRIPTION
 Invoke function delta
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -270,5 +254,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 [Get-MgEducationUserAssignmentDelta](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserAssignmentDelta?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserassignmentdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserassignmentdelta)
+
 
 

@@ -31,18 +31,6 @@ Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphMacOSDmgAppContentVersio
 ## DESCRIPTION
 Renews the SAS URI for an application file upload.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -208,5 +196,6 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
 [Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphMacOSDmgAppContentVersionFileUpload](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphMacOSDmgAppContentVersionFileUpload?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mgrenewdeviceappmanagementmobileappmicrosoftgraphmacosdmgappcontentversionfileupload](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mgrenewdeviceappmanagementmobileappmicrosoftgraphmacosdmgappcontentversionfileupload)
+
 
 

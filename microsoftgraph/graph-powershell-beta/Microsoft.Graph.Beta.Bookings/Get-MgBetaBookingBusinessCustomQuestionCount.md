@@ -30,18 +30,6 @@ Get-MgBetaBookingBusinessCustomQuestionCount -InputObject <IBookingsIdentity> [-
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -BookingBusinessId
@@ -149,5 +137,6 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 [Get-MgBookingBusinessCustomQuestionCount](/powershell/module/Microsoft.Graph.Bookings/Get-MgBookingBusinessCustomQuestionCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusinesscustomquestioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusinesscustomquestioncount)
+
 
 

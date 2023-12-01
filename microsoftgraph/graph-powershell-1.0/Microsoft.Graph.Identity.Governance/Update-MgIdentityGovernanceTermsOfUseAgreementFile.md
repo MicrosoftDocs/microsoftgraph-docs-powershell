@@ -47,18 +47,6 @@ Update-MgIdentityGovernanceTermsOfUseAgreementFile -InputObject <IIdentityGovern
 ## DESCRIPTION
 Update the navigation property file in identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -514,4 +502,5 @@ Read-only.
 [Update-MgBetaIdentityGovernanceTermsOfUseAgreementFile](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceTermsOfUseAgreementFile?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancetermsofuseagreementfile](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancetermsofuseagreementfile)
+
 

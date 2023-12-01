@@ -30,22 +30,6 @@ Remove-MgBetaEducationUserAssignmentSubmission -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Delete navigation property submissions for education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -208,5 +192,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 [Remove-MgEducationUserAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationUserAssignmentSubmission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationuserassignmentsubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationuserassignmentsubmission)
+
 
 

@@ -49,22 +49,6 @@ Invoke-MgBetaGraphUserChat -InputObject <IUsersActionsIdentity>
 Unhide a chat for a user.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -328,5 +312,6 @@ For example, if a user changes their display name, the API might show the new va
 [Invoke-MgGraphUserChat](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgGraphUserChat?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetagraphuserchat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetagraphuserchat)
+
 
 

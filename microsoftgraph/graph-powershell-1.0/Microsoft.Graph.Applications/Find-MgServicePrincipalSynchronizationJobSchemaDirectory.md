@@ -33,18 +33,6 @@ Find-MgServicePrincipalSynchronizationJobSchemaDirectory -InputObject <IApplicat
 Discover the latest schema definition for provisioning to an application.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DirectoryDefinitionId
@@ -182,5 +170,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Find-MgBetaServicePrincipalSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/Find-MgBetaServicePrincipalSynchronizationJobSchemaDirectory?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/find-mgserviceprincipalsynchronizationjobschemadirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/find-mgserviceprincipalsynchronizationjobschemadirectory)
+
 
 

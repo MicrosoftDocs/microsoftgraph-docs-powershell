@@ -45,22 +45,6 @@ Update-MgBetaUserDriveListItemField -InputObject <IFilesIdentity> -BodyParameter
 Update the properties on a listItem\]\[\].
 This API is available in the following \[national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -247,5 +231,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Update-MgUserDriveListItemField](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveListItemField?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdrivelistitemfield](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdrivelistitemfield)
+
 
 

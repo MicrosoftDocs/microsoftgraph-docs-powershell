@@ -79,18 +79,6 @@ Use this API to create a new event in a calendar.
 The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -2167,4 +2155,5 @@ See below for possible values.
 [New-MgGroupCalendarEvent](/powershell/module/Microsoft.Graph.Calendar/New-MgGroupCalendarEvent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetagroupcalendarevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetagroupcalendarevent)
+
 

@@ -27,18 +27,6 @@ Get-MgBetaGroupSiteListItemActivityListItem -InputObject <ISitesIdentity> [-Expa
 ## DESCRIPTION
 Get listItem from groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -230,5 +218,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitelistitemactivitylistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitelistitemactivitylistitem)
+
 
 

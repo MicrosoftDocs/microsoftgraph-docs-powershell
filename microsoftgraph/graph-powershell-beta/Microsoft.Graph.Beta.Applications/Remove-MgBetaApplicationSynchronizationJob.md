@@ -35,22 +35,6 @@ Stop the synchronization job, and permanently delete all the state associated wi
 Synchronized accounts are left as-is.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -212,5 +196,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Remove-MgApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationSynchronizationJob?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationsynchronizationjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationsynchronizationjob)
+
 
 

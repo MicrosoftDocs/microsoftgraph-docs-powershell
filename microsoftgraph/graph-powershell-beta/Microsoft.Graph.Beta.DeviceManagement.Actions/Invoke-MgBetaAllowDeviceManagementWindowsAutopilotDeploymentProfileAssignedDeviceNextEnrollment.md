@@ -28,18 +28,6 @@ Invoke-MgBetaAllowDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevic
 ## DESCRIPTION
 Unblocks next autopilot enrollment.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -205,5 +193,6 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetaallowdevicemanagementwindowsautopilotdeploymentprofileassigneddevicenextenrollment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetaallowdevicemanagementwindowsautopilotdeploymentprofileassigneddevicenextenrollment)
+
 
 

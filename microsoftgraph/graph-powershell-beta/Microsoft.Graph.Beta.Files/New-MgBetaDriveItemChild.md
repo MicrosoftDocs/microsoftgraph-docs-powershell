@@ -81,18 +81,6 @@ New-MgBetaDriveItemChild -InputObject <IFilesIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Create new navigation property to children for drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Activities
@@ -53591,4 +53579,5 @@ Read-only.
 [New-MgDriveItemChild](/powershell/module/Microsoft.Graph.Files/New-MgDriveItemChild?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriveitemchild](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriveitemchild)
+
 

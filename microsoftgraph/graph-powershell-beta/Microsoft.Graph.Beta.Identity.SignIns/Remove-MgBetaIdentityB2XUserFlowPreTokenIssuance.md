@@ -27,18 +27,6 @@ Remove-MgBetaIdentityB2XUserFlowPreTokenIssuance -InputObject <IIdentitySignInsI
 ## DESCRIPTION
 Delete navigation property preTokenIssuance for identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId
@@ -229,5 +217,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityb2xuserflowpretokenissuance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityb2xuserflowpretokenissuance)
+
 
 

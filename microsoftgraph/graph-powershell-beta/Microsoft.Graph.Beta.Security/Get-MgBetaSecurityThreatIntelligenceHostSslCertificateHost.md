@@ -30,18 +30,6 @@ Get-MgBetaSecurityThreatIntelligenceHostSslCertificateHost -InputObject <ISecuri
 ## DESCRIPTION
 The host for this hostSslCertificate.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -202,5 +190,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Get-MgSecurityThreatIntelligenceHostSslCertificateHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostSslCertificateHost?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostsslcertificatehost](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostsslcertificatehost)
+
 
 

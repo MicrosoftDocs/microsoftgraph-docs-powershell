@@ -60,22 +60,6 @@ Update-MgBetaEducationUserAssignment -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Update the navigation property assignments in education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AddedStudentAction
@@ -840,4 +824,5 @@ If the value is null, the student uploaded the resource.
 [Update-MgEducationUserAssignment](/powershell/module/Microsoft.Graph.Education/Update-MgEducationUserAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationuserassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationuserassignment)
+
 

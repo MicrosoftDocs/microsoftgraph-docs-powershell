@@ -41,18 +41,6 @@ Get-MgGroupSiteOnenoteSection -InputObject <ISitesIdentity> [-ExpandProperty <St
 Retrieve the properties and relationships of a onenoteSection object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -326,5 +314,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgBetaGroupSiteOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteSection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotesection](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotesection)
+
 
 

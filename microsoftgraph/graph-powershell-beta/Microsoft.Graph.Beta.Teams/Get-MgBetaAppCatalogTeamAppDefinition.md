@@ -37,22 +37,6 @@ Get-MgBetaAppCatalogTeamAppDefinition -InputObject <ITeamsIdentity> [-ExpandProp
 ## DESCRIPTION
 The details for each version of the app.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -311,5 +295,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Get-MgAppCatalogTeamAppDefinition](/powershell/module/Microsoft.Graph.Teams/Get-MgAppCatalogTeamAppDefinition?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinition)
+
 
 

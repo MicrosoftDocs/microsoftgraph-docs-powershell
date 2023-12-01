@@ -30,18 +30,6 @@ Remove-MgBetaSecurityThreatIntelligenceWhoisRecord -InputObject <ISecurityIdenti
 ## DESCRIPTION
 Delete navigation property whoisRecords for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -233,5 +221,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Remove-MgSecurityThreatIntelligenceWhoisRecord](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityThreatIntelligenceWhoisRecord?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritythreatintelligencewhoisrecord](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritythreatintelligencewhoisrecord)
+
 
 

@@ -33,22 +33,6 @@ Remove-MgSiteOnenotePage -InputObject <INotesIdentity> [-IfMatch <String>] [-Pas
 Delete a OneNote page.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -188,5 +172,6 @@ INPUTOBJECT \<INotesIdentity\>: Identity Parameter
 [Remove-MgBetaSiteOnenotePage](/powershell/module/Microsoft.Graph.Beta.Notes/Remove-MgBetaSiteOnenotePage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/remove-mgsiteonenotepage](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/remove-mgsiteonenotepage)
+
 
 

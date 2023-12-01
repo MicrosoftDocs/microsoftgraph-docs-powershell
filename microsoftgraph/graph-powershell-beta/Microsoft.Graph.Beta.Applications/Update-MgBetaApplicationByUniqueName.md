@@ -94,18 +94,6 @@ Update-MgBetaApplicationByUniqueName -InputObject <IApplicationsIdentity>
 Update the properties of an application object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -3464,4 +3452,5 @@ Only available for applications that support the PersonalMicrosoftAccount signIn
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationbyuniquename](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationbyuniquename)
+
 

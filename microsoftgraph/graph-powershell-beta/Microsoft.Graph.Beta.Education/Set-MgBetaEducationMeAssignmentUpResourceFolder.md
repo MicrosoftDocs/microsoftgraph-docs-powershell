@@ -37,22 +37,6 @@ Only teachers can perform this operation.
 The teacher determines the resources to upload in the assignment's folder.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -155,5 +139,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 [Set-MgEducationMeAssignmentUpResourceFolder](/powershell/module/Microsoft.Graph.Education/Set-MgEducationMeAssignmentUpResourceFolder?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/set-mgbetaeducationmeassignmentupresourcefolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/set-mgbetaeducationmeassignmentupresourcefolder)
+
 
 
