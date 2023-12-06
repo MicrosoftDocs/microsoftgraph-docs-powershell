@@ -297,3 +297,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserregistereddeviceasdevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserregistereddeviceasdevice)
 
 
+
+

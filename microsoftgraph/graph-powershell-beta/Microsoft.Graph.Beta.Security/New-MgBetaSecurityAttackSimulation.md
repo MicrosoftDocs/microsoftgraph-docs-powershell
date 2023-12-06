@@ -1022,3 +1022,4 @@ TRAININGSETTING \<IMicrosoftGraphTrainingSetting\>: trainingSetting
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulation)
 
+

@@ -152,3 +152,4 @@ BODYPARAMETER \<IPathsOpnxc9ContractsMicrosoftGraphGetuserownedobjectsPostReques
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontractuserownedobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontractuserownedobject)
 
 
+

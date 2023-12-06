@@ -282,3 +282,4 @@ INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausercontactfolderdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausercontactfolderdelta)
 
 
+

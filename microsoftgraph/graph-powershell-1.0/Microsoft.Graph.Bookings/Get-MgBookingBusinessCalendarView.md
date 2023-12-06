@@ -315,3 +315,4 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinesscalendarview](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinesscalendarview)
 
+

@@ -138,3 +138,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausercreatedobjectcountasserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausercreatedobjectcountasserviceprincipal)
 
 
+
+

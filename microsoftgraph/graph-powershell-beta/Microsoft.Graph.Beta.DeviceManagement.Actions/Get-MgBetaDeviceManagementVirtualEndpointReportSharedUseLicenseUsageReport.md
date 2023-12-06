@@ -278,3 +278,4 @@ BODYPARAMETER \<IPathsWyfb0MDevicemanagementVirtualendpointReportsMicrosoftGraph
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportshareduselicenseusagereport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportshareduselicenseusagereport)
 
 
+

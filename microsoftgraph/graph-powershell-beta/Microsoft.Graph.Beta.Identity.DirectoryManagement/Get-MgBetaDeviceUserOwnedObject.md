@@ -152,3 +152,4 @@ BODYPARAMETER \<IPaths51Hjg8DevicesMicrosoftGraphGetuserownedobjectsPostRequestb
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadeviceuserownedobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadeviceuserownedobject)
 
 
+

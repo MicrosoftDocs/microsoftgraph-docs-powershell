@@ -146,3 +146,4 @@ BODYPARAMETER \<IPaths1Izu2OlDirectoryobjectsMicrosoftGraphGetavailableextension
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectavailableextensionproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectavailableextensionproperty)
 
+

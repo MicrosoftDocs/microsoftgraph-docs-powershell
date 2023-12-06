@@ -216,3 +216,4 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdriveitemthumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdriveitemthumbnail)
 
 
+

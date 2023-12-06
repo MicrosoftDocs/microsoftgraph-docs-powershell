@@ -171,3 +171,4 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaextractuserdriverootsensitivitylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaextractuserdriverootsensitivitylabel)
 
 
+

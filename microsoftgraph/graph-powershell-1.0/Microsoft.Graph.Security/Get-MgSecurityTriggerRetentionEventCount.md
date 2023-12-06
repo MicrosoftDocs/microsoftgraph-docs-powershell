@@ -70,3 +70,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritytriggerretentioneventcount](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritytriggerretentioneventcount)
 
 
+

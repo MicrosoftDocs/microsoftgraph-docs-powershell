@@ -155,3 +155,4 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventsessionmeetingattendancereport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventsessionmeetingattendancereport)
 
 
+

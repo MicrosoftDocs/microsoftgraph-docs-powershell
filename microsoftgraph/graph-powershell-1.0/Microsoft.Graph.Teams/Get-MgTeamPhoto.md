@@ -168,3 +168,4 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamphoto](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamphoto)
 
+

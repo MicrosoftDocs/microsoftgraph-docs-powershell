@@ -148,3 +148,4 @@ BODYPARAMETER \<IPaths9Mf33ASecurityTiindicatorsMicrosoftGraphDeletetiindicators
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritytiindicatormultiple](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritytiindicatormultiple)
 
+

@@ -442,3 +442,4 @@ False if the label is a parent with child labels.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetausersecurityinformationprotectionsensitivitylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetausersecurityinformationprotectionsensitivitylabel)
 
 
+

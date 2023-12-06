@@ -524,3 +524,4 @@ Link to the message in Microsoft Teams.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetauserchatpinnedmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetauserchatpinnedmessage)
 
 
+

@@ -366,3 +366,4 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgusercalendarpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgusercalendarpermission)
 
+

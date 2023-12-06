@@ -170,3 +170,4 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/publish-mgeducationclassassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.education/publish-mgeducationclassassignment)
 
+

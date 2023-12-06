@@ -261,3 +261,4 @@ INPUTOBJECT \<IIdentityPartnerIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/new-mgtenantrelationshipdelegatedadminrelationshiprequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/new-mgtenantrelationshipdelegatedadminrelationshiprequest)
 
 
+

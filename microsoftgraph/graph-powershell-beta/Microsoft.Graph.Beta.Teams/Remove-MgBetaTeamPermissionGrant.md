@@ -200,3 +200,4 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateampermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateampermissiongrant)
 
 
+

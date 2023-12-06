@@ -172,3 +172,4 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationschool](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationschool)
 
+

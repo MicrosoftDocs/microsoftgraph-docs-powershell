@@ -152,3 +152,4 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportteamuseractivitytotalusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportteamuseractivitytotalusercount)
 
 
+

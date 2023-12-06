@@ -152,3 +152,5 @@ BODYPARAMETER \<IPaths1Ob0K0NServiceprincipalsMicrosoftGraphGetuserownedobjectsP
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaluserownedobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaluserownedobject)
 
 
+
+

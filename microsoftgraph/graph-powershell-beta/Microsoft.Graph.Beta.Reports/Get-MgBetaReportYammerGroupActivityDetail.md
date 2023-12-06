@@ -181,3 +181,4 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportyammergroupactivitydetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportyammergroupactivitydetail)
 
 
+

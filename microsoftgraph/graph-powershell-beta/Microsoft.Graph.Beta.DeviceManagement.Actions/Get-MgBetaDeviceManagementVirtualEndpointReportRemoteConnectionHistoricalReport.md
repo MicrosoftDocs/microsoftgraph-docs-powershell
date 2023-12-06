@@ -266,3 +266,4 @@ BODYPARAMETER \<IPathsP1Ye10DevicemanagementVirtualendpointReportsMicrosoftGraph
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportremoteconnectionhistoricalreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportremoteconnectionhistoricalreport)
 
 
+

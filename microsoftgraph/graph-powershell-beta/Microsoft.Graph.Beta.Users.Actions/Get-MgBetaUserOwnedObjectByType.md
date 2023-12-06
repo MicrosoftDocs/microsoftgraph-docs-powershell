@@ -152,3 +152,4 @@ BODYPARAMETER \<IPathsSidp1OUsersMicrosoftGraphGetuserownedobjectsPostRequestbod
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauserownedobjectbytype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauserownedobjectbytype)
 
 
+

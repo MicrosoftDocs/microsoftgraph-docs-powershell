@@ -243,3 +243,4 @@ TEMPLATETYPE \<IMicrosoftGraphDeviceLogCollectionRequest\>: Windows Log Collecti
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermanageddevicelogcollectionrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermanageddevicelogcollectionrequest)
 
 
+

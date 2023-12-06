@@ -228,3 +228,4 @@ INPUTOBJECT \<IFinancialsIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/set-mgbetafinancialcompanysalecreditmemosalecreditmemolineitempicturecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/set-mgbetafinancialcompanysalecreditmemosalecreditmemolineitempicturecontent)
 
 
+

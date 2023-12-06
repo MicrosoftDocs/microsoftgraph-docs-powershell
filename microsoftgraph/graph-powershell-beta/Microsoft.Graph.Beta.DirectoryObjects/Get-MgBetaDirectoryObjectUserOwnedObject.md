@@ -152,3 +152,4 @@ BODYPARAMETER \<IPaths50Tm3XDirectoryobjectsMicrosoftGraphGetuserownedobjectsPos
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/get-mgbetadirectoryobjectuserownedobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/get-mgbetadirectoryobjectuserownedobject)
 
 
+

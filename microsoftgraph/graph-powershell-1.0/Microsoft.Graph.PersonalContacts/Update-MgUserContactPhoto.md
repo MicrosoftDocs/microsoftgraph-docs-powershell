@@ -238,3 +238,4 @@ INPUTOBJECT \<IPersonalContactsIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontactphoto](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontactphoto)
 
 
+

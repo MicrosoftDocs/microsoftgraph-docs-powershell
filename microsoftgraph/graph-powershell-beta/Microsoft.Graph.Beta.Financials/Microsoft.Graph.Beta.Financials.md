@@ -1436,3 +1436,4 @@ Locale: en-US
 ### [Update-MgBetaFinancialCompanyVendorPicture](Update-MgBetaFinancialCompanyVendorPicture.md)
 {{ Fill in the Description }}
 
+

@@ -367,3 +367,4 @@ This is only available when a folder thumbnail is requested.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriveitemthumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriveitemthumbnail)
 
 
+

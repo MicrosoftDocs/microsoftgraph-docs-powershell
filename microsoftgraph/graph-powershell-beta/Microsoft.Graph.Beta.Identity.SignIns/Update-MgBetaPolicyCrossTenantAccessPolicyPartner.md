@@ -644,3 +644,4 @@ For example, device.deviceAttribute2 -eq 'PrivilegedAccessWorkstation'.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicypartner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicypartner)
 
+

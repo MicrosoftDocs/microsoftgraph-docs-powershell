@@ -152,3 +152,4 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamprimarychannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamprimarychannel)
 
+

@@ -291,3 +291,4 @@ BODYPARAMETER \<IPathsBcvqvrDevicemanagementReportsMicrosoftGraphGetappsinstalls
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportappinstallsummaryreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportappinstallsummaryreport)
 
 
+

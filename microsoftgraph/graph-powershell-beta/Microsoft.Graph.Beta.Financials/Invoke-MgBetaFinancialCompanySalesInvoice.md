@@ -179,3 +179,4 @@ INPUTOBJECT \<IFinancialsIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/invoke-mgbetafinancialcompanysalesinvoice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/invoke-mgbetafinancialcompanysalesinvoice)
 
 
+

@@ -220,3 +220,4 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetareopensecuritycaseediscoverycase](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetareopensecuritycaseediscoverycase)
 
+

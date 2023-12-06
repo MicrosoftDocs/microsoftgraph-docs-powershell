@@ -320,3 +320,4 @@ INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusereventinstancedelta](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusereventinstancedelta)
 
 
+

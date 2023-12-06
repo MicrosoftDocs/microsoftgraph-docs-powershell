@@ -183,3 +183,4 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetalogoutdevicemanagementmanageddevicesharedappledeviceactiveuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetalogoutdevicemanagementmanageddevicesharedappledeviceactiveuser)
 
 
+

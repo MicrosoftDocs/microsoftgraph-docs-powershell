@@ -491,3 +491,4 @@ RESULT \<IMicrosoftGraphSecuritySubmissionResult\>: submissionResult
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatsubmissionurlthreat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatsubmissionurlthreat)
 
 
+

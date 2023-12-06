@@ -152,3 +152,4 @@ BODYPARAMETER \<IPaths6Pdj1BDirectorysettingtemplatesMicrosoftGraphGetuserownedo
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorysettingtemplateuserownedobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorysettingtemplateuserownedobject)
 
 
+

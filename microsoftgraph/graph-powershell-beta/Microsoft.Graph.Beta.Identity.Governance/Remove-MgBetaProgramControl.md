@@ -308,3 +308,4 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaprogramcontrol](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaprogramcontrol)
 
+

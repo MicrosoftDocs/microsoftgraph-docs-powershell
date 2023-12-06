@@ -291,3 +291,4 @@ BODYPARAMETER \<IPaths5YzahlDevicemanagementReportsMicrosoftGraphGetwindowsupdat
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportwindowsupdatealertsummaryreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportwindowsupdatealertsummaryreport)
 
 
+

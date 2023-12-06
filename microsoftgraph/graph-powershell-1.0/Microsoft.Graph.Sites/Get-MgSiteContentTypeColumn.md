@@ -328,3 +328,4 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitecontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitecontenttypecolumn)
 
+

@@ -373,3 +373,4 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantcredentialuserregistrationsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantcredentialuserregistrationsummary)
 
 
+

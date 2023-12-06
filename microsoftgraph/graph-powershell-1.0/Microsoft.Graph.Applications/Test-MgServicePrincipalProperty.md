@@ -239,3 +239,5 @@ BODYPARAMETER \<IPathsYq15M4ServiceprincipalsMicrosoftGraphValidatepropertiesPos
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/test-mgserviceprincipalproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/test-mgserviceprincipalproperty)
 
+
+

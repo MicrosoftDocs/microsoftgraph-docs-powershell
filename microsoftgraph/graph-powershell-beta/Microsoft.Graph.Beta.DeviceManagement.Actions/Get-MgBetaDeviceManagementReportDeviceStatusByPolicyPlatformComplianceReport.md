@@ -275,3 +275,4 @@ BODYPARAMETER \<IPathsI8PptzDevicemanagementReportsMicrosoftGraphGetdevicesstatu
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportdevicestatusbypolicyplatformcompliancereport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportdevicestatusbypolicyplatformcompliancereport)
 
 
+

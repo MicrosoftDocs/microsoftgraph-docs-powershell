@@ -411,3 +411,4 @@ CONTENT \<IMicrosoftGraphManagedTenantsAlertLogContent\>: alertLogContent
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantalertlog](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantalertlog)
 
 
+

@@ -246,3 +246,4 @@ Optional; if not specified, current time is used.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementcertificateconnectordetailhealthmetrictimeseries](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementcertificateconnectordetailhealthmetrictimeseries)
 
 
+

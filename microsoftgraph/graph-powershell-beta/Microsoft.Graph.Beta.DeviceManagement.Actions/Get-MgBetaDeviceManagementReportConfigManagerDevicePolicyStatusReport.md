@@ -291,3 +291,4 @@ BODYPARAMETER \<IPathsYuwr1TDevicemanagementReportsMicrosoftGraphGetconfigmanage
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportconfigmanagerdevicepolicystatusreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportconfigmanagerdevicepolicystatusreport)
 
 
+

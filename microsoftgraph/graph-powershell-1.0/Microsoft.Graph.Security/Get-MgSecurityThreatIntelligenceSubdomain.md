@@ -299,3 +299,4 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencesubdomain](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencesubdomain)
 
 
+

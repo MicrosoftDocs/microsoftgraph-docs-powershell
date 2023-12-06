@@ -268,3 +268,4 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectionitemactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectionitemactivity)
 
 
+

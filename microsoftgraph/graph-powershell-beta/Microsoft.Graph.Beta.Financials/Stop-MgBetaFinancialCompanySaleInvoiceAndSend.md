@@ -179,3 +179,4 @@ INPUTOBJECT \<IFinancialsIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/stop-mgbetafinancialcompanysaleinvoiceandsend](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/stop-mgbetafinancialcompanysaleinvoiceandsend)
 
 
+

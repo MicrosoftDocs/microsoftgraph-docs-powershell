@@ -297,3 +297,4 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationtraining](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationtraining)
 
 
+

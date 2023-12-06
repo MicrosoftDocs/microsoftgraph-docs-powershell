@@ -516,3 +516,4 @@ SOURCE \<IMicrosoftGraphPersonDataSources\>: personDataSources
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilepatent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilepatent)
 
+
