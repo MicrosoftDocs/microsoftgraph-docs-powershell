@@ -41,7 +41,7 @@ Get-MgApplication -InputObject <IApplicationsIdentity> [-ExpandProperty <String[
 Get the properties and relationships of an application object.
 This API is available in the following national cloud deployments.
 
-## Permissions
+**Permissions**
 
 [!INCLUDE [permissions-table](~/graphref/api-reference/v1.0/includes/permissions/application-get-permissions.md)]
 
