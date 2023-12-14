@@ -1,0 +1,41 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get the properties of the pronounsSettings resource for an organization.
+  For more information on settings to manage pronouns support, see Manage pronouns settings for an organization using the Microsoft Graph API.
+module: Microsoft.Graph.Beta.Identity.DirectoryManagement
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPronounsSettings" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- Get-MgBetaAdminPersonPronoun [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Identity.DirectoryManagement.Get-MgBetaAdminPersonPronoun
+name: Get-MgBetaAdminPersonPronoun
+description: |-
+  Get the properties of the pronounsSettings resource for an organization.
+  For more information on settings to manage pronouns support, see Manage pronouns settings for an organization using the Microsoft Graph API.
+metadata:
+  external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+  Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadminpersonpronoun
+  schema: 2.0.0

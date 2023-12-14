@@ -1,0 +1,93 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Invoke function getAllSites
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Get-MgBetaAllSite](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaAllSite?view=graph-powershell-beta)
+module: Microsoft.Graph.Sites
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSite" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgBetaAllSite
+  href: /powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaAllSite?view=graph-powershell-beta
+syntaxes:
+- >-
+  Get-MgAllSite [-Count] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
+
+   [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Count
+  description: |+
+    Include count of items
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Filter items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Search
+  description: |+
+    Search items by search phrases
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Skip
+  description: |+
+    Skip the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Sort
+  description: |+
+    Order items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: OrderBy
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Show only the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: Limit
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Sites.Get-MgAllSite
+name: Get-MgAllSite
+description: |-
+  Invoke function getAllSites
+metadata:
+  external help file: Microsoft.Graph.Sites-help.xml
+  Module Name: Microsoft.Graph.Sites
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgallsite
+  schema: 2.0.0

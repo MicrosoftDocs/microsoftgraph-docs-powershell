@@ -1,0 +1,174 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Invoke action getInaccessibleCloudPcReports
+module: Microsoft.Graph.Beta.DeviceManagement.Actions
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IPaths1Cf3EkeDevicemanagementVirtualendpointReportsMicrosoftGraphGetinaccessiblecloudpcreportsPostRequestbodyContentApplicationJsonSchema>`: .
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Filter <String>]`: 
+    - `[GroupBy <String[]>]`: 
+    - `[OrderBy <String[]>]`: 
+    - `[Search <String>]`: 
+    - `[Select <String[]>]`: 
+    - `[Skip <Int32?>]`: 
+    - `[Top <Int32?>]`:
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IPaths1Cf3EkeDevicemanagementVirtualendpointReportsMicrosoftGraphGetinaccessiblecloudpcreportsPostRequestbodyContentApplicationJsonSchema" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Boolean" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- >-
+  Get-MgBetaDeviceManagementVirtualEndpointReportInaccessibleCloudPcReport -OutFile <String>
+
+   [-AdditionalProperties <Hashtable>] [-Filter <String>] [-GroupBy <String[]>] [-Property <String[]>]
+
+   [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PassThru] [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+- >-
+  Get-MgBetaDeviceManagementVirtualEndpointReportInaccessibleCloudPcReport -OutFile <String>
+
+   -BodyParameter <IPaths1Cf3EkeDevicemanagementVirtualendpointReportsMicrosoftGraphGetinaccessiblecloudpcreportsPostRequestbodyContentApplicationJsonSchema>
+
+   [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IPaths1Cf3EkeDevicemanagementVirtualendpointReportsMicrosoftGraphGetinaccessiblecloudpcreportsPostRequestbodyContentApplicationJsonSchema" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    .
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: GroupBy
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: OutFile
+  isRequired: true
+  description: |+
+    Path to write output file to
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: PassThru
+  description: |+
+    Returns true when the command succeeds
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Search
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Skip
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Sort
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: OrderBy
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: Limit
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.DeviceManagement.Actions.Get-MgBetaDeviceManagementVirtualEndpointReportInaccessibleCloudPcReport
+name: Get-MgBetaDeviceManagementVirtualEndpointReportInaccessibleCloudPcReport
+description: |-
+  Invoke action getInaccessibleCloudPcReports
+metadata:
+  external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+  Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportinaccessiblecloudpcreport
+  schema: 2.0.0

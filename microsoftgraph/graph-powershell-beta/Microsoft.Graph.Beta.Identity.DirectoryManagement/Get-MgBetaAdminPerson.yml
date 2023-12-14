@@ -1,0 +1,39 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get people from admin
+module: Microsoft.Graph.Beta.Identity.DirectoryManagement
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPeopleAdminSettings" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- Get-MgBetaAdminPerson [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Identity.DirectoryManagement.Get-MgBetaAdminPerson
+name: Get-MgBetaAdminPerson
+description: |-
+  Get people from admin
+metadata:
+  external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+  Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadminperson
+  schema: 2.0.0

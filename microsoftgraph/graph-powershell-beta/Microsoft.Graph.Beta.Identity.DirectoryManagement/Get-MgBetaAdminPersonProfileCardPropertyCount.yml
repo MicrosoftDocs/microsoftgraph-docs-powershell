@@ -1,0 +1,39 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get the number of the resource
+module: Microsoft.Graph.Beta.Identity.DirectoryManagement
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="System.Int32" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- Get-MgBetaAdminPersonProfileCardPropertyCount [-Filter <String>] [-Search <String>] [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Filter items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Search
+  description: |+
+    Search items by search phrases
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Identity.DirectoryManagement.Get-MgBetaAdminPersonProfileCardPropertyCount
+name: Get-MgBetaAdminPersonProfileCardPropertyCount
+description: |-
+  Get the number of the resource
+metadata:
+  external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+  Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadminpersonprofilecardpropertycount
+  schema: 2.0.0

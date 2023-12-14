@@ -1,0 +1,221 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Initiate an export from a ediscoveryReviewSet.
+  For details, see Export documents from a review set in eDiscovery (Premium).
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Export-MgBetaSecurityCaseEdiscoveryCaseReviewSet](/powershell/module/Microsoft.Graph.Beta.Security/Export-MgBetaSecurityCaseEdiscoveryCaseReviewSet?view=graph-powershell-beta)
+module: Microsoft.Graph.Security
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IPathsZvgmw9SecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityExportPostRequestbodyContentApplicationJsonSchema>`: .
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Description <String>]`: 
+    - `[ExportOptions <String>]`: exportOptions
+    - `[ExportStructure <String>]`: exportFileStructure
+    - `[OutputName <String>]`: 
+
+  `INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
+    - `[AlertId <String>]`: The unique identifier of alert
+    - `[ArticleId <String>]`: The unique identifier of article
+    - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
+    - `[CaseOperationId <String>]`: The unique identifier of caseOperation
+    - `[DataSourceId <String>]`: The unique identifier of dataSource
+    - `[EdiscoveryCaseId <String>]`: The unique identifier of ediscoveryCase
+    - `[EdiscoveryCustodianId <String>]`: The unique identifier of ediscoveryCustodian
+    - `[EdiscoveryNoncustodialDataSourceId <String>]`: The unique identifier of ediscoveryNoncustodialDataSource
+    - `[EdiscoveryReviewSetId <String>]`: The unique identifier of ediscoveryReviewSet
+    - `[EdiscoveryReviewSetQueryId <String>]`: The unique identifier of ediscoveryReviewSetQuery
+    - `[EdiscoveryReviewTagId <String>]`: The unique identifier of ediscoveryReviewTag
+    - `[EdiscoveryReviewTagId1 <String>]`: The unique identifier of ediscoveryReviewTag
+    - `[EdiscoverySearchId <String>]`: The unique identifier of ediscoverySearch
+    - `[HostComponentId <String>]`: The unique identifier of hostComponent
+    - `[HostCookieId <String>]`: The unique identifier of hostCookie
+    - `[HostId <String>]`: The unique identifier of host
+    - `[HostTrackerId <String>]`: The unique identifier of hostTracker
+    - `[IncidentId <String>]`: The unique identifier of incident
+    - `[IntelligenceProfileId <String>]`: The unique identifier of intelligenceProfile
+    - `[IntelligenceProfileIndicatorId <String>]`: The unique identifier of intelligenceProfileIndicator
+    - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
+    - `[RetentionEventId <String>]`: The unique identifier of retentionEvent
+    - `[RetentionEventTypeId <String>]`: The unique identifier of retentionEventType
+    - `[SecureScoreControlProfileId <String>]`: The unique identifier of secureScoreControlProfile
+    - `[SecureScoreId <String>]`: The unique identifier of secureScore
+    - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
+    - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
+    - `[SimulationId <String>]`: The unique identifier of simulation
+    - `[SiteSourceId <String>]`: The unique identifier of siteSource
+    - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
+    - `[UserSourceId <String>]`: The unique identifier of userSource
+    - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
+    - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IPathsZvgmw9SecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityExportPostRequestbodyContentApplicationJsonSchema" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="Microsoft.Graph.PowerShell.Models.ISecurityIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Boolean" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Export-MgBetaSecurityCaseEdiscoveryCaseReviewSet
+  href: /powershell/module/Microsoft.Graph.Beta.Security/Export-MgBetaSecurityCaseEdiscoveryCaseReviewSet?view=graph-powershell-beta
+syntaxes:
+- >-
+  Export-MgSecurityCaseEdiscoveryCaseReviewSet -EdiscoveryCaseId <String> -EdiscoveryReviewSetId <String>
+
+   [-AdditionalProperties <Hashtable>] [-Description <String>] [-ExportOptions <String>]
+
+   [-ExportStructure <String>] [-OutputName <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Export-MgSecurityCaseEdiscoveryCaseReviewSet -EdiscoveryCaseId <String> -EdiscoveryReviewSetId <String>
+
+   -BodyParameter <IPathsZvgmw9SecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityExportPostRequestbodyContentApplicationJsonSchema>
+
+   [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Export-MgSecurityCaseEdiscoveryCaseReviewSet -InputObject <ISecurityIdentity>
+
+   [-AdditionalProperties <Hashtable>] [-Description <String>] [-ExportOptions <String>]
+
+   [-ExportStructure <String>] [-OutputName <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Export-MgSecurityCaseEdiscoveryCaseReviewSet -InputObject <ISecurityIdentity>
+
+   -BodyParameter <IPathsZvgmw9SecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityExportPostRequestbodyContentApplicationJsonSchema>
+
+   [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IPathsZvgmw9SecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityExportPostRequestbodyContentApplicationJsonSchema" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    .
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Description
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: EdiscoveryCaseId
+  isRequired: true
+  description: |+
+    The unique identifier of ediscoveryCase
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: EdiscoveryReviewSetId
+  isRequired: true
+  description: |+
+    The unique identifier of ediscoveryReviewSet
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ExportOptions
+  description: |+
+    exportOptions
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ExportStructure
+  description: |+
+    exportFileStructure
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="ISecurityIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: OutputName
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: PassThru
+  description: |+
+    Returns true when the command succeeds
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Security.Export-MgSecurityCaseEdiscoveryCaseReviewSet
+name: Export-MgSecurityCaseEdiscoveryCaseReviewSet
+description: |-
+  Initiate an export from a ediscoveryReviewSet.
+  For details, see Export documents from a review set in eDiscovery (Premium).
+metadata:
+  external help file: Microsoft.Graph.Security-help.xml
+  Module Name: Microsoft.Graph.Security
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/export-mgsecuritycaseediscoverycasereviewset
+  schema: 2.0.0
