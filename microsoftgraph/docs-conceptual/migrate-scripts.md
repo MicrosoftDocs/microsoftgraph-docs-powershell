@@ -24,7 +24,8 @@ The app:
 - Finds similar parameters between the Azure AD and Microsoft Graph PowerShell cmdlets and attempts to map parameters and switches.
 - Upgrades the script to use Microsoft Graph PowerShell cmdlets and produces a description of what was changed.
 
-> [!WARNING] These steps are provided as a best effort and the generated scripts have NOT been tested.  You are responsible for testing, running, and verifying the scripts.  
+> [!WARNING]
+>  These steps are provided as a best effort and the generated scripts have NOT been tested.  You are responsible for testing, running, and verifying the scripts.  
 
 ## Install the Microsoft Graph PowerShell SDK and clone the doc repos
 
