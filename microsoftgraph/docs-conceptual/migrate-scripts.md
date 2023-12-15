@@ -12,26 +12,28 @@ ms.reviewer:
 # Customer intent: As a developer, I want to build an AI powered Python app so that I can migrate my Azure AD PowerShell scripts to the new Microsoft Graph PowerShell SDK.
 ---
 
-# Migrate applications to Microsoft Graph PowerShell
+# Migrate applications to Microsoft Graph PowerShell using Azure OpenAI
 
 If any of your applications use the Azure AD, Azure AD Preview, or MSOnline PowerShell modules, it's time to migrate them to Microsoft Graph PowerShell. These older modules are planned for deprecation. Scripts written in Azure AD PowerShell won't automatically work with Microsoft Graph PowerShell and need to be upgraded.  For more information, see [Why upgrade to Microsoft Graph PowerShell?](migration-steps.md)
 
-The Python app in this article uses a GPT-4 model hosted in [Azure OpenAI](/azure/ai-services/openai/overview) to update Azure AD PowerShell apps to Microsoft Graph PowerShell. This app was used to help migrate over 600 Azure AD PowerShell scripts in our content to Microsoft Graph PowerShell. The process is by no means perfect, but should save you time if you have many scripts to update.  Internally, we found an estimated time savings of greater than 50% to upgrade the scripts used in our content.
+The Python app in this article uses a GPT-4 model hosted in [Azure OpenAI Service](/azure/ai-services/openai/overview) to update Azure AD PowerShell apps to Microsoft Graph PowerShell. This app was used to help migrate over 600 Azure AD PowerShell scripts in our content to Microsoft Graph PowerShell. The process is by no means perfect, but should save you time if you have many scripts to update.  Internally, we found an estimated time savings of greater than 50% when upgrading the scripts used in our content.
 
 The app:
-- Maps cmdlets and gets the Microsoft Graph PowerShell equivalents for the Azure AD PowerShell cmdlets in the source script.
+- Uses the [cmdlet map](azuread-msoline-cmdlet-map.md) to get the Microsoft Graph PowerShell equivalents for the Azure AD PowerShell cmdlets in the source script.
 - Attempts to find the least privileged permissions required for the Microsoft Graph PowerShell cmdlets.
-- Finds similar parameters between the Azure AD and Microsoft Graph PowerShell cmdlets and attempts to map parameters and switches.
+- Attempts to map parameters and switches between the Azure AD and Microsoft Graph PowerShell cmdlets by comparing parameter descriptions in the reference content to find similar descriptions.
 - Upgrades the script to use Microsoft Graph PowerShell cmdlets and produces a description of what was changed.
 
 > [!WARNING]
->  These steps are provided as a best effort and the generated scripts have NOT been tested.  You are responsible for testing, running, and verifying the scripts.  
+>  These steps are provided as a best effort to assist in migrating your scripts.  Any generated scripts have NOT been tested.  You are responsible for testing, running, and verifying the scripts yourself.  
 
-## Install the Microsoft Graph PowerShell SDK and clone the doc repos
+## Prerequisites
+
+Get access to Azure OpenAI, install Python and install the OpenAI Python client library, as described in this [quickstart](/azure/ai-services/openai/quickstart?tabs=command-line%2Cpython&pivots=programming-language-python#prerequisites).
 
 Follow these steps to [Install the Microsoft Graph PowerShell SDK](installation.md) and verify installation on your local computer.
 
-The published [cmdlet map](azuread-msoline-cmdlet-map.md) is used to lookup the Azure AD PowerShell and MSOnline cmdlets in your script and find the cmdlets that you need in the Microsoft Graph PowerShell SDK.  The Azure AD and MSOnline cmdlet and Microsoft Graph PowerShell cmdlet reference documentation is used to attempt parameter mapping.
+The published [cmdlet map](azuread-msoline-cmdlet-map.md) is used to lookup the Azure AD PowerShell and MSOnline cmdlets in your script and find the cmdlets that you need in the Microsoft Graph PowerShell SDK.  The Azure AD and MSOnline cmdlet and Microsoft Graph PowerShell cmdlet reference documentation is used by the Python app to attempt parameter mapping and find least privileged permissions.
 
 Clone the Azure AD Graph PowerShell and Microsoft Graph PowerShell documentation repos locally:
 
@@ -40,28 +42,68 @@ git clone https://github.com/MicrosoftDocs/microsoftgraph-docs-powershell.git
 git clone https://github.com/Azure/azure-docs-powershell-azuread.git
 ```
 
+Install the libraries used by the Python app:
+
+```console
+pip install annotated-types==0.6.0
+pip install anyio==3.7.1
+pip install certifi==2023.11.17
+pip install charset-normalizer==3.3.2
+pip install colorama==0.4.6
+pip install distro==1.8.0
+pip install exceptiongroup==1.2.0
+pip install h11==0.14.0
+pip install httpcore==1.0.2
+pip install httpx==0.25.2
+pip install idna==3.6
+pip install openai==1.2.3
+pip install pydantic==2.5.2
+pip install pydantic-core==2.14.5
+pip install regex==2023.10.3
+pip install requests==2.31.0
+pip install sniffio==1.3.0
+pip install tiktoken==0.5.1
+pip install tqdm==4.66.1
+pip install typing-extensions==4.8.0
+pip install urllib3==2.1.0
+```
+
 ## Create and deploy an Azure OpenAI Service resource
 
 Use this [quickstart](/azure/ai-services/openai/how-to/create-resource) to create an Azure OpenAI resource and deploy a GPT-3.5 Turbo or GPT-4 model.
 
 Use this [quickstart](/azure/ai-services/openai/quickstart?tabs=command-line%2Cpython&pivots=programming-language-python) to install the OpenAI Python 1.x library, retieve the API key, endpoint, and name of your deployment, and get started making calls against your Azure OpenAI service in a Python application. 
 
+You need the key, endpoint, and deployment name to run the app.
+
 ## Update a script
 
-This function performs several tasks:
-- Gets the Azure AD PowerShell and MG PowerShell cmdlet mapping.
-- Gets the parameter names and descriptions of the affected Azure AD and MG PowerShell cmdlets. Takes a guess at the most similar parameters between old->new cmdlet sets (guesses at cmdlet parameter mapping).
-- Gets the permissions for the affected MG PowerShell cmdlets, takes a guess at the least privileged permission.
-- Prompt the GPT-4 model to upgrade the script using the least privileged permissions, similar parameters info, and cmdlet mapping.
+The `update_powershell_scripts` function performs several tasks:
+- Gets the Azure AD PowerShell and Microsoft Graph PowerShell cmdlet mapping.
+- Gets the parameter names and descriptions of the affected Azure AD and MG PowerShell cmdlets. Finds the most similar parameters between old->new cmdlet sets.
+- Gets the permissions for the affected Microsoft Graph PowerShell cmdlets, attempts to find the least privileged permission.
+- Prompts the GPT-4 model to upgrade the script using the least privileged permissions, similar parameters info, and cmdlet mapping.
 
 Helper functions and prompt strings are defined later in the article.
+
+Input parameters:
+- open_ai_key (str): Found in the Keys & Endpoint section when examining your resource from the Azure portal
+- api_version (str): The Azure OpenAI REST API version.
+- azure_endpoint (str): Found in the Keys & Endpoint section when examining your resource from the Azure portal.
+- deployment_name (str): the custom name you chose for your deployment when you deployed a model.
+- input_directory (str): The path of the folder contiaing the .ps1 scripts to update.
+- output_directory (str): The path of the output directory.
+- azure_ad_docs_root (str): The path to the root of the cloned azure-docs-powershell-azuread repo.
+- mg_pwrshell_docs_root (str): he path to the root of the cloned microsoftgraph-docs-powershell repo.
+- cmdlet_mapping (dict):  A dictionary containing the mapping.  Azure AD cmdlet names are the keys, Microsoft Graph PowerShell cmdlet names are the values (or None 
+                        if there is no MG PoweShell cmdlet)
 
 ```python
 def update_powershell_scripts(open_ai_key, version, endpoint, deployment_name, 
                               input_directory, output_directory, 
                               azure_ad_docs_root, mg_pwrshell_docs_root, 
                               cmdlet_mapping):
-    client = AzureOpenAI(
+    AzureOpenAI(
         api_key = open_ai_key,  
         api_version = version,
         azure_endpoint = endpoint
@@ -114,7 +156,7 @@ def update_powershell_scripts(open_ai_key, version, endpoint, deployment_name,
                     ## Prepend cmdlet name
                     azure_ad_parameters = f"# {azure_ad_cmdlet}\n\n"+azure_ad_parameters
 
-                    azure_ad_params = Strings.get_azure_ad_cmdlet_params(azure_ad_parameters)
+                    azure_ad_params = Strings.GET_AZURE_AD_CMDLET_PARAMS_MSG  + azure_ad_parameters
                     
                     dir=mg_pwrshell_docs_root+'microsoftgraph\\graph-powershell-1.0'
                     filename=mg_cmdlet+'.md'
@@ -132,7 +174,7 @@ def update_powershell_scripts(open_ai_key, version, endpoint, deployment_name,
                     ## Prepend cmdlet name
                     mg_parameters = f"# {mg_cmdlet}\n\n"+mg_parameters
 
-                    mg_params_msg = Strings.get_mg_powershell_cmdlet_params(mg_parameters)
+                    mg_params_msg = Strings.GET_MG_POWERSHELL_CMDLET_PARAMS_MSG + mg_parameters
 
                     # Call the LLM to extract the cmdlet name, cmdlet parameters, and cmdlet parameter descriptions.
                     conversation1=[
@@ -156,7 +198,8 @@ def update_powershell_scripts(open_ai_key, version, endpoint, deployment_name,
                     conversation3=[
                         {"role": "system", "content": Strings.SYSTEM_PROMPT},
                         {"role": "user", "content": params1 + '\n' +params2},
-                        {"role": "user", "content": Strings.FIND_SIMILAR_PARAMS_MSG}
+                        {"role": "user", "content": Strings.FIND_SIMILAR_PARAMS_MSG.format( azure_ad_cmdlet, azure_ad_cmdlet, 
+                                                                                           azure_ad_cmdlet, mg_cmdlet, azure_ad_cmdlet,mg_cmdlet )}
                         ]
 
                     # Build list of similar parameter sets for  the cmdlets
@@ -205,9 +248,9 @@ def update_powershell_scripts(open_ai_key, version, endpoint, deployment_name,
 
             all_find_mggraphcommand_output_info = "\n".join(all_find_mggraphcommand_output)
 
-            mapping_msg =Strings.get_mapping_msg(mapping_info)    
-            least_privs_msg=Strings.get_least_privs_msg(least_privs_info)
-            update_script_msg=Strings.get_update_script_msg(script)
+            mapping_msg =Strings.MAPPING_MSG.format(mapping_info)    
+            least_privs_msg=Strings.LEAST_PRIVS_MSG.format(least_privs_info)
+            update_script_msg=Strings.UPDATE_SCRIPT_MSG.format(script)
 
             conversation=[
                 {"role": "system", "content": Strings.SYSTEM_PROMPT},
@@ -307,24 +350,19 @@ saying that it's a best guess and to double-check the output from the Find-MgGra
 REFLEXION_MSG='''Review your above recommendations.  If you were wrong, tell me why you were wrong and if any 
 recommendations were overlooked or incorrectly added.'''
 
-def get_mapping_msg(mapping_info):
-    mapping_msg = f'''The following MarkDown bullet points describe the mapping of Azure AD cmdlets to Microsoft Graph PowerShell cmdlets. 
+MAPPING_MSG = r'''The following MarkDown bullet points describe the mapping of Azure AD cmdlets to Microsoft Graph PowerShell cmdlets. 
             The mappings list the Azure AD and MSOnline cmdlets the Microsoft Graph PowerShell cmdlets to replace them when 
             updating your scripts.  Sometimes there is not a replacement Microsoft Graph PowerShell cmdlet,
-            the Azure AD or MSOnline cmdlet doesn't map to any Microsoft Graph PowerShell cmdlet. \n---CMDLET MAPPING\n{mapping_info}\n---\n\n'''
+            the Azure AD or MSOnline cmdlet doesn't map to any Microsoft Graph PowerShell cmdlet. \n---CMDLET MAPPING\n{}\n---\n\n'''
     
-    return mapping_msg
 
-def get_least_privs_msg(least_privs_info):
 
-    least_privs_msg=f'''The following information describes the least privileged permission for each 
-            Microsoft Graph PowerShell cmdlet.\n---\nLEAST PRIVILEGED PERMISSIONS\n{least_privs_info}\n---\n\n'''
-    
-    return least_privs_msg
+LEAST_PRIVS_MSG=r'''The following information describes the least privileged permission for each 
+            Microsoft Graph PowerShell cmdlet.\n---\nLEAST PRIVILEGED PERMISSIONS\n{}\n---\n\n'''
 
-def get_update_script_msg(script):
-    msg=f"""Update and re-write the following script to use Microsoft Graph PowerShell cmdlets instead of Azure AD cmdlets or MSOnline cmdlets.\n     
-            ---\nSCRIPT\n{script}\n---\nUse the following steps to update and re-write the script:
+
+UPDATE_SCRIPT_MSG=r"""Update and re-write the following script to use Microsoft Graph PowerShell cmdlets instead of Azure AD cmdlets or MSOnline cmdlets.\n     
+            ---\nSCRIPT\n{}\n---\nUse the following steps to update and re-write the script:
             1. Use the cmdlet mapping previously described to find which 
             Microsoft Graph PowerShell cmdlets should replace the Azure AD cmdlets and MSOnline cmdlets.  
             2. Use the cmdlet parameter descriptions and similar cmdlet parameters previously described to determine which Microsoft Graph PowerShell cmdlet parameters should 
@@ -338,10 +376,9 @@ def get_update_script_msg(script):
             old script over to the updated script.            
                                              
             """
-    return msg
 
-def get_mg_powershell_cmdlet_params(mg_graph_ref_doc):
-    msg="""The following MarkDown is API reference content for a Microsoft Graph PowerShell cmdlet.  
+
+GET_MG_POWERSHELL_CMDLET_PARAMS_MSG="""The following MarkDown is API reference content for a Microsoft Graph PowerShell cmdlet.  
     The name of the cmdlet is the H1 heading (in the format "# {cmdlet name}), for example "# Get-MgApplicationById".  
     Major parts of the article are H2 sections (in the format "## {section name} {some text}". For 
     example, "## SYNOPSIS Return the directory...", "## PARAMETERS ### -Addi...", and "## INPUTS ### Microsoft.Graph...".  
@@ -402,10 +439,9 @@ Parameters and descriptions:
 
 Input Microsoft Graph PowerShell cmdlet article in MarkDown:"""
 
-    return msg+mg_graph_ref_doc+"\n\n"
 
-def get_azure_ad_cmdlet_params(azure_ad_ref_doc):
-    msg="""The following MarkDown is API reference content for an Azure AD PowerShell cmdlet.  
+
+GET_AZURE_AD_CMDLET_PARAMS_MSG ="""The following MarkDown is API reference content for an Azure AD PowerShell cmdlet.  
     The name of the cmdlet is the H1 heading (in the format "# {cmdlet name}), for example 
     "# Get-MsolUser".  Major parts of the article are H2 sections (in the format "## {section name} {some text}". 
     Some examples:
@@ -485,19 +521,17 @@ Parameters and descriptions:
 
 Input Azure AD PowerShell cmdlet article in MarkDown:  """
 
-    return msg + azure_ad_ref_doc+"\n\n"
-
 
 FIND_SIMILAR_PARAMS_MSG='''
 
-Read the cmdlet parameters descriptions for the previous Azure AD PowerShell cmdlet ({CMDLET1}) and the previous Microsoft Graph PowerShell 
-cmdlet ({CMDLET1}).  Read the cmdlet parameters descriptions for the two cmdlets, which should be functionally equivilent but possibly with 
+Read the cmdlet parameters descriptions for the previous Azure AD PowerShell cmdlet ({}) and the previous Microsoft Graph PowerShell 
+cmdlet ({}).  Read the cmdlet parameters descriptions for the two cmdlets, which should be functionally equivilent but possibly with 
 different parameter sets. The Microsoft Graph PowerShell cmdlet will replace the Azure AD cmdlet when 
 updating your scripts. Compare the parameter descriptions, which Microsoft Graph PowerShell cmdlet parameters are most 
 similar to the Azure AD PowerShell cmdlet? Which Microsoft Graph PowerShell cmdlet parameters would replace which Azure AD cmdlet 
 parameters when updating a script to use Microsoft Graph PowerShell instead of Azure AD PoewrShell and why? 
-Start your response with the list of parameters and descriptions for the {CMDLET1} and {CMDLET2} cmdlet.  Then add 
-"The most similar parameters between the {CMDLET1} and {CMDLET2} cmdlets are:"  
+Start your response with the list of parameters and descriptions for the {} and {} cmdlet.  Then add 
+"The most similar parameters between the {} and {} cmdlets are:"  
 
 '''
 ~~~
@@ -554,7 +588,8 @@ def get_cmdlet_mappings(markdown_text):
 
 ## Get permissions for a Microsoft Graph PowerShell cmdlet
 
-This function runs the `Find-MgGraphCommand` cmdlet for a cmdlet and captures the output.
+This function runs the `Find-MgGraphCommand` cmdlet to find the permissions for a Microsoft Graph PowerShell cmdlet and captures the output.
+
 ```python
 def run_find_mggraphcommand_permissions_for_cmdlet(cmdlet):
     
@@ -595,7 +630,8 @@ def extract_parameters_section(filename):
         return None
 ```
 
-This function removes the ```yaml {yaml markup} ``` from the Parameters block.
+This function removes the ```yaml {yaml markup} ``` from the Parameters block from a reference.
+
 ~~~python
 def remove_yaml_sections(doc):
     
@@ -610,7 +646,7 @@ def remove_yaml_sections(doc):
 
 ## Putting it all together
 
-The main function.
+Here is the main function with example variables.
 
 ```python
 import os
@@ -629,8 +665,8 @@ def main():
     azure_endpoint = os.getenv("AZURE_OPENAI_ENDPOINT2")  
     deployment_name='AzureAdPowerShellMigration2' 
     
-    mg_pwrshell_docs_root='C:\\Users\\ryanwi\microsoftgraph-docs-powershell\\'
-    azure_ad_docs_root='C:\\Users\\ryanwi\\azure-docs-powershell-azuread\\'
+    mg_pwrshell_docs_root='C:\\temp\\microsoftgraph-docs-powershell\\'
+    azure_ad_docs_root='C:\\temp\\azure-docs-powershell-azuread\\'
     mapping_file_path='microsoftgraph\\docs-conceptual\\azuread-msoline-cmdlet-map.md'
         
     input_directory="c:\\temp\\script_in\\"
