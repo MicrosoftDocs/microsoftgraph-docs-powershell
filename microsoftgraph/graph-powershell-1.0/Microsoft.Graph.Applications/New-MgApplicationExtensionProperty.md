@@ -49,6 +49,12 @@ New-MgApplicationExtensionProperty -InputObject <IApplicationsIdentity>
 Create a new directory extension definition, represented by an extensionProperty object.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-post-extensionproperty-permissions.md)]
+
+View more [details on permissions](/graph/api/application-post-extensionproperty#permissions).
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

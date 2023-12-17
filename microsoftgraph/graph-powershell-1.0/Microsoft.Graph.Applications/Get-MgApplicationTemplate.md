@@ -41,6 +41,12 @@ Get-MgApplicationTemplate -InputObject <IApplicationsIdentity> [-ExpandProperty 
 Retrieve the properties of an applicationTemplate object.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/applicationtemplate-get-permissions.md)]
+
+View more [details on permissions](/graph/api/applicationtemplate-get#permissions).
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
