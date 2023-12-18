@@ -23,6 +23,12 @@ Get-MgApplicationDelta [-Filter <String>] [-Property <String[]>] [-Search <Strin
 ## DESCRIPTION
 Invoke function delta
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-delta-permissions.md)]
+
+View more [details on permissions](/graph/api/application-delta#permissions).
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgApplicationDelta Cmdlet
 ```powershell
