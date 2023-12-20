@@ -37,6 +37,12 @@ Supports $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
 Supports $expand including nested $select.
 For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-list-owners-permissions.md)]
+
+View more [details on permissions](/graph/api/group-list-owners#permissions).
+
 ## EXAMPLES
 ### Example 1: Get an owner of a group
 

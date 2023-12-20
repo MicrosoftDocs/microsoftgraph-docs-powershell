@@ -35,6 +35,10 @@ Remove an owner from an application.
 As a recommended best practice, apps should have at least two owners.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-delete-owners-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -45,7 +49,7 @@ Remove-MgApplicationOwnerByRef -ApplicationId $applicationId -DirectoryObjectId 
 ```
 This example shows how to use the Remove-MgApplicationOwnerByRef Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about permissions for this resource, see the [permissions reference](/graph/api/application-delete-owners#permissions).
 
 
 ## PARAMETERS

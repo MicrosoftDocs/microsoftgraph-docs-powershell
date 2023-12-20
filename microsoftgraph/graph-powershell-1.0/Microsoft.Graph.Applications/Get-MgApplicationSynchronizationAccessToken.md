@@ -49,6 +49,12 @@ Get-MgApplicationSynchronizationAccessToken -InputObject <IApplicationsIdentity>
 Acquire an OAuth access token to authorize the Microsoft Entra provisioning service to provision users into an application.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronization-acquireaccesstoken-permissions.md)]
+
+View more [details on permissions](/graph/api/synchronization-synchronization-acquireaccesstoken#permissions).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -44,6 +44,12 @@ HTTP Methods: GET Read-only.
 Nullable.
 Supports $expand.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-list-memberof-permissions.md)]
+
+View more [details on permissions](/graph/api/serviceprincipal-list-memberof#permissions).
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

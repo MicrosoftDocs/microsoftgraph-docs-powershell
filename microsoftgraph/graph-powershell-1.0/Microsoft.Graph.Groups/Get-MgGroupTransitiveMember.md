@@ -40,6 +40,12 @@ Get-MgGroupTransitiveMember -InputObject <IGroupsIdentity> [-ExpandProperty <Str
 The direct and transitive members of a group.
 Nullable.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-list-transitivemembers-permissions.md)]
+
+View more [details on permissions](/graph/api/group-list-transitivemembers#permissions).
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -50,7 +56,7 @@ Get-MgGroupTransitiveMember -GroupId $groupId
 ```
 This example shows how to use the Get-MgGroupTransitiveMember Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about permissions for this resource, see the [permissions reference](/graph/api/group-list-transitivemembers#permissions).
 
 ### Example 2: Code snippet
 
@@ -61,7 +67,7 @@ Get-MgGroupTransitiveMemberAsGroup -GroupId $groupId -CountVariable CountVar -Co
 ```
 This example shows how to use the Get-MgGroupTransitiveMember Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about permissions for this resource, see the [permissions reference](/graph/api/group-list-transitivemembers#permissions).
 
 ### Example 3: Code snippet
 
@@ -72,7 +78,7 @@ Get-MgGroupTransitiveMemberAsUser -GroupId $groupId -CountVariable CountVar -Sor
 ```
 This example shows how to use the Get-MgGroupTransitiveMember Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about permissions for this resource, see the [permissions reference](/graph/api/group-list-transitivemembers#permissions).
 
 ### Example 4: Code snippet
 
@@ -83,7 +89,7 @@ Get-MgGroupTransitiveMemberAsUser -GroupId $groupId -CountVariable CountVar -Sor
 ```
 This example shows how to use the Get-MgGroupTransitiveMember Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about permissions for this resource, see the [permissions reference](/graph/api/group-list-transitivemembers#permissions).
 
 
 ## PARAMETERS

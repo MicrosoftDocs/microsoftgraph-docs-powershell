@@ -55,6 +55,12 @@ The job is created in a disabled state.
 Call Start job to start synchronization.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronization-post-jobs-permissions.md)]
+
+View more [details on permissions](/graph/api/synchronization-synchronization-post-jobs#permissions).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

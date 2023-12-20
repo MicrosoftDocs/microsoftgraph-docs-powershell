@@ -35,6 +35,12 @@ Stop the synchronization job, and permanently delete all the state associated wi
 Synchronized accounts are left as-is.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationjob-delete-permissions.md)]
+
+View more [details on permissions](/graph/api/synchronization-synchronizationjob-delete#permissions).
+
 ## PARAMETERS
 
 ### -IfMatch

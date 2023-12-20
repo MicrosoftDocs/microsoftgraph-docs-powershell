@@ -34,6 +34,10 @@ Remove a member from a group via the members navigation property.
 You can't remove a member from groups with dynamic memberships.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-delete-members-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -44,7 +48,7 @@ Remove-MgGroupMemberByRef -GroupId $groupId -DirectoryObjectId $directoryObjectI
 ```
 This example shows how to use the Remove-MgGroupMemberByRef Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about permissions for this resource, see the [permissions reference](/graph/api/group-delete-members#permissions).
 
 
 ## PARAMETERS

@@ -62,6 +62,12 @@ The startDateTime is set to the same time the certificate is created using the a
 The endDateTime can be up to three years after the certificate is created.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-addtokensigningcertificate-permissions.md)]
+
+View more [details on permissions](/graph/api/serviceprincipal-addtokensigningcertificate#permissions).
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

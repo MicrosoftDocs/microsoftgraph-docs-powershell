@@ -33,6 +33,10 @@ Remove-MgServicePrincipalAppRoleAssignedTo -InputObject <IApplicationsIdentity> 
 Deletes an appRoleAssignment that a user, group, or client service principal has been granted for a resource service principal.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-delete-approleassignedto-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -43,7 +47,7 @@ Remove-MgServicePrincipalAppRoleAssignedTo -ServicePrincipalId $servicePrincipal
 ```
 This example shows how to use the Remove-MgServicePrincipalAppRoleAssignedTo Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about permissions for this resource, see the [permissions reference](/graph/api/serviceprincipal-delete-approleassignedto#permissions).
 
 
 ## PARAMETERS

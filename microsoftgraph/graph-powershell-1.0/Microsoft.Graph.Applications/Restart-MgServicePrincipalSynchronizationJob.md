@@ -51,6 +51,12 @@ Restart a stopped synchronization job, forcing it to reprocess all the objects i
 Optionally clears existing the synchronization state and previous errors.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationjob-restart-permissions.md)]
+
+View more [details on permissions](/graph/api/synchronization-synchronizationjob-restart#permissions).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

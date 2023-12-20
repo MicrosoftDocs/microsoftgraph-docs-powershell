@@ -100,6 +100,12 @@ Add a member to a security or Microsoft 365 group through the members navigation
 The following table shows the types of members that can be added to either security groups or Microsoft 365 groups.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-update-permissions.md)]
+
+View more [details on permissions](/graph/api/group-update#permissions).
+
 ## EXAMPLES
 ### Example 1: Update the properties of a group
 

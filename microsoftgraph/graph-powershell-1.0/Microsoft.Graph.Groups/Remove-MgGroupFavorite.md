@@ -32,6 +32,10 @@ Remove the group from the list of the current user's favorite groups.
 Supported for Microsoft 365 groups only.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-removefavorite-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Remove-MgGroupFavorite Cmdlet
 ```powershell
@@ -39,7 +43,7 @@ Import-Module Microsoft.Graph.Groups
 Remove-MgGroupFavorite -GroupId $groupId
 ```
 This example shows how to use the Remove-MgGroupFavorite Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about permissions for this resource, see the [permissions reference](/graph/api/group-removefavorite#permissions).
 
 ## PARAMETERS
 
