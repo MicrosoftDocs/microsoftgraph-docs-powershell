@@ -25,7 +25,7 @@ Invoke function delta
 
 **Permissions**
 
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/permissions/device-delta-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-delta-permissions.md)]
 
 View more [details on permissions](/graph/api/device-delta#permissions).
 
