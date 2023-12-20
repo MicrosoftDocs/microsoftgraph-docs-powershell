@@ -44,6 +44,12 @@ Read-only.
 Nullable.
 Supports $expand and returns up to 100 objects.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-list-registereddevices-permissions.md)]
+
+View more [details on permissions](/graph/api/user-list-registereddevices#permissions).
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

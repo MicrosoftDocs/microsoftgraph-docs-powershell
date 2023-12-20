@@ -67,6 +67,12 @@ Update the properties of a registered device.
 Only certain properties of a device can be updated through approved Mobile Device Managment (MDM) apps.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-update-permissions.md)]
+
+View more [details on permissions](/graph/api/device-update#permissions).
+
 ## EXAMPLES
 ### Example 1: Update the accountEnabled property of a device
 
@@ -81,7 +87,7 @@ Update-MgDevice -DeviceId $deviceId -BodyParameter $params
 ```
 This example shows how to use the Update-MgDevice Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about permissions for this resource, see the [permissions reference](/graph/api/device-update#permissions).
 
 ### Example 2:  Write extensionAttributes on a device
 
@@ -95,7 +101,7 @@ Update-MgDevice -DeviceId $deviceId -BodyParameter $params
 ```
 This example shows how to use the Update-MgDevice Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about permissions for this resource, see the [permissions reference](/graph/api/device-update#permissions).
 
 
 ## PARAMETERS

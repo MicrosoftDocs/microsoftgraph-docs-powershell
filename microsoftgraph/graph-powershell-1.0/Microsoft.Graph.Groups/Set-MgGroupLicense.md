@@ -52,6 +52,10 @@ To learn more about group-based licensing, see What is group-based licensing in 
 To get the subscriptions available in the directory, perform a GET subscribedSkus request.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-assignlicense-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Set-MgGroupLicense Cmdlet
 ```powershell
@@ -78,7 +82,7 @@ $params = @{
 Set-MgGroupLicense -GroupId $groupId -BodyParameter $params
 ```
 This example shows how to use the Set-MgGroupLicense Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about permissions for this resource, see the [permissions reference](/graph/api/group-assignlicense#permissions).
 ### Example 2: Using the Set-MgGroupLicense Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Groups
@@ -93,7 +97,7 @@ $params = @{
 Set-MgGroupLicense -GroupId $groupId -BodyParameter $params
 ```
 This example shows how to use the Set-MgGroupLicense Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about permissions for this resource, see the [permissions reference](/graph/api/group-assignlicense#permissions).
 
 ## PARAMETERS
 

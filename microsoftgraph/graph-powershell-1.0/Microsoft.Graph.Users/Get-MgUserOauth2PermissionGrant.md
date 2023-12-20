@@ -38,6 +38,12 @@ Get-MgUserOauth2PermissionGrant -InputObject <IUsersIdentity> [-ExpandProperty <
 ## DESCRIPTION
 Get oauth2PermissionGrants from users
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-list-oauth2permissiongrants-permissions.md)]
+
+View more [details on permissions](/graph/api/user-list-oauth2permissiongrants#permissions).
+
 ## EXAMPLES
 ### Example 1: Get user's oAuth2PermissionGrant 
 

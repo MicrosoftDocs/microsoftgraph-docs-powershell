@@ -35,6 +35,10 @@ To learn more about group-based licensing, see What is group-based licensing in 
 Also see Identify and resolve license assignment problems for a group in Microsoft Entra ID for more details.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-reprocesslicenseassignment-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgLicenseUser Cmdlet
 ```powershell
@@ -42,7 +46,7 @@ Import-Module Microsoft.Graph.Users.Actions
 Invoke-MgLicenseUser -UserId $userId
 ```
 This example shows how to use the Invoke-MgLicenseUser Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about permissions for this resource, see the [permissions reference](/graph/api/user-reprocesslicenseassignment#permissions).
 
 ## PARAMETERS
 

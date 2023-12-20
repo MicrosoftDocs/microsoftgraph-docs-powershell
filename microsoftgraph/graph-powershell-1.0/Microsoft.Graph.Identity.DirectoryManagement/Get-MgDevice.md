@@ -40,6 +40,12 @@ Get-MgDevice -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandPropert
 Get the properties and relationships of a device object.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-get-permissions.md)]
+
+View more [details on permissions](/graph/api/device-get#permissions).
+
 ## EXAMPLES
 ### Example 1: Get a device
 

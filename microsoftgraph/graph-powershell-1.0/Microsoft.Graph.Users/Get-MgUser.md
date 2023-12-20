@@ -40,6 +40,12 @@ Get-MgUser -InputObject <IUsersIdentity> [-ExpandProperty <String[]>] [-Property
 Retrieve the properties and relationships of user object.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-get-permissions.md)]
+
+View more [details on permissions](/graph/api/user-get#permissions).
+
 ## EXAMPLES
 ### Example 1: Get the list of all the users
 
@@ -60,7 +66,7 @@ UserPrincipalName : AdeleV@contoso.com
 
 This command returns a list of all users.
 
-To learn about other permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about other permissions for this resource, see the [permissions reference](/graph/api/user-get#permissions).
 
 To consent to any of these permissions run `Connect-MgGraph -Scopes Permission`. For example, `Connect-MgGraph -Scopes User.ReadBasic.All, User.Read.All`.
 
@@ -79,7 +85,7 @@ UserPrincipalName : Adams@contoso.com
 
 This command gets the specified user.
 
-To learn about other permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about other permissions for this resource, see the [permissions reference](/graph/api/user-get#permissions).
 
 To consent to any of these permissions run `Connect-MgGraph -Scopes Permission`. For example, `Connect-MgGraph -Scopes User.ReadBasic.All, User.Read.All`.
 
@@ -102,7 +108,7 @@ Id                                   DisplayName              Mail              
 
 The example gets a list of all users. The $userCount variable contains the count of the objects in the result. Advanced query requires the ConsistencyLevel parameter set to `eventual` and the Count parameter in the command. For more information about *ConsistencyLevel* and *Count*, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
-To learn about other permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about other permissions for this resource, see the [permissions reference](/graph/api/user-get#permissions).
 
 To consent to any of these permissions run `Connect-MgGraph -Scopes Permission`. For example, `Connect-MgGraph -Scopes User.ReadBasic.All, User.Read.All`.
 
@@ -119,7 +125,7 @@ Id                                   DisplayName   Mail                         
 
 This example returns the top 1 users with the display name starting with 'a'. The $userCount variable contains the count of the objects in the result. Advanced query requires the ConsistencyLevel parameter set to `eventual` and the Count parameter in the command. For more information about *ConsistencyLevel* and *Count*, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
-To learn about other permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about other permissions for this resource, see the [permissions reference](/graph/api/user-get#permissions).
 
 To consent to any of these permissions run `Connect-MgGraph -Scopes Permission`. For example, `Connect-MgGraph -Scopes User.ReadBasic.All, User.Read.All`.
 
@@ -140,7 +146,7 @@ a7afe08d-55b9-4c44-be94-05d17c6513f3 Conf Room Rainier Rainier@Contoso.com Raini
 
 This example returns all users whose display name contains 'Conf'. The $userCount variable contains the count of the objects in the result. Advanced query requires the ConsistencyLevel parameter set to `eventual` and the Count parameter in the command. For more information about *ConsistencyLevel* and *Count*, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
-To learn about other permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about other permissions for this resource, see the [permissions reference](/graph/api/user-get#permissions).
 
 To consent to any of these permissions run `Connect-MgGraph -Scopes Permission`. For example, `Connect-MgGraph -Scopes User.ReadBasic.All, User.Read.All`.
 
@@ -161,7 +167,7 @@ a7afe08d-55b9-4c44-be94-05d17c6513f3 Conf Room Rainier Rainier@Contoso.com Raini
 
 This example filters all users whose display name starts with 'Conf' and orders the results by the user principal name. The $userCount variable contains the count of the objects in the result. Advanced query requires the ConsistencyLevel parameter set to `eventual` and the Count parameter in the command. For more information about *ConsistencyLevel* and *Count*, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
-To learn about other permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about other permissions for this resource, see the [permissions reference](/graph/api/user-get#permissions).
 
 To consent to any of these permissions run `Connect-MgGraph -Scopes Permission`. For example, `Connect-MgGraph -Scopes User.ReadBasic.All, User.Read.All`.
 

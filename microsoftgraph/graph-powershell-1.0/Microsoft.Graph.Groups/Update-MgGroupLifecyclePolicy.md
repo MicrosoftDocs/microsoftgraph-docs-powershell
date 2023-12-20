@@ -72,6 +72,10 @@ Update-MgGroupLifecyclePolicy -InputObject <IGroupsIdentity>
 Update the properties of a groupLifecyclePolicygroupLifecyclePolicy resource type object.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/grouplifecyclepolicy-update-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -88,7 +92,7 @@ Update-MgGroupLifecyclePolicy -GroupLifecyclePolicyId $groupLifecyclePolicyId -B
 ```
 This example shows how to use the Update-MgGroupLifecyclePolicy Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about permissions for this resource, see the [permissions reference](/graph/api/grouplifecyclepolicy-update#permissions).
 
 
 ## PARAMETERS

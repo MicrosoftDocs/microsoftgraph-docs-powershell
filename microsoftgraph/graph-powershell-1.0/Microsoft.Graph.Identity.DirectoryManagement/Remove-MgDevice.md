@@ -32,6 +32,10 @@ Remove-MgDevice -InputObject <IIdentityDirectoryManagementIdentity> [-IfMatch <S
 Delete a registered device.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-delete-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -42,7 +46,7 @@ Remove-MgDevice -DeviceId $deviceId
 ```
 This example shows how to use the Remove-MgDevice Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about permissions for this resource, see the [permissions reference](/graph/api/device-delete#permissions).
 
 
 ## PARAMETERS

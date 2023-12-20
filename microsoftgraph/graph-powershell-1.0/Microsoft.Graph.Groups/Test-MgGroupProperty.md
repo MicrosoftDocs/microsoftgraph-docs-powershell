@@ -58,6 +58,10 @@ However, you can validate both the mail nickname and the display name and receiv
 To learn more about configuring naming policies, see Configure naming policy.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-validateproperties-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Test-MgGroupProperty Cmdlet
 ```powershell
@@ -70,7 +74,7 @@ $params = @{
 Test-MgGroupProperty -GroupId $groupId -BodyParameter $params
 ```
 This example shows how to use the Test-MgGroupProperty Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about permissions for this resource, see the [permissions reference](/graph/api/group-validateproperties#permissions).
 
 ## PARAMETERS
 

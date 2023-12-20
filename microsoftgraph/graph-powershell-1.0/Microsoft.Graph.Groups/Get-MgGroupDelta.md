@@ -23,6 +23,10 @@ Get-MgGroupDelta [-Filter <String>] [-Property <String[]>] [-Search <String>] [-
 ## DESCRIPTION
 Invoke function delta
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-delta-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgGroupDelta Cmdlet
 ```powershell
@@ -30,7 +34,7 @@ Import-Module Microsoft.Graph.Groups
 Get-MgGroupDelta
 ```
 This example shows how to use the Get-MgGroupDelta Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about permissions for this resource, see the [permissions reference](/graph/api/group-delta#permissions).
 
 ## PARAMETERS
 

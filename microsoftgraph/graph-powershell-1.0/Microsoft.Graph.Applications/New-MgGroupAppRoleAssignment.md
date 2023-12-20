@@ -55,6 +55,12 @@ Security groups with dynamic memberships are supported.
 To grant an app role assignment to a group, you need three identifiers: Additional licenses might be required to use a group to manage access to applications.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-post-approleassignments-permissions.md)]
+
+View more [details on permissions](/graph/api/group-post-approleassignments#permissions).
+
 ## EXAMPLES
 ### Example 1: Assign an app role to a group
 
@@ -89,7 +95,7 @@ In this example, the first defines creates the `$appRoleAssignment` variable tha
 
 -`appRoleId`: The id of the appRole (defined on the resource service principal) to assign to the group.
 
-Learn more about the [AppRoleAssignment resource](/graph/api/resources/approleassignment?view=graph-rest-1.0).
+Learn more about the [AppRoleAssignment resource](/graph/api/resources/approleassignment).
 
 The second command adds the role to the specified group.
 

@@ -35,6 +35,12 @@ New-MgDirectoryCustomSecurityAttributeDefinition
 Create a new customSecurityAttributeDefinition object.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directory-post-customsecurityattributedefinitions-permissions.md)]
+
+View more [details on permissions](/graph/api/directory-post-customsecurityattributedefinitions#permissions).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

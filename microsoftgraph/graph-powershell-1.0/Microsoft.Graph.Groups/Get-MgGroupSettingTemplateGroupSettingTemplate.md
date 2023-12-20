@@ -40,6 +40,12 @@ A group setting template represents a template of settings from which settings m
 This operation allows retrieval of the properties of the groupSettingTemplate object, including the available settings and their defaults.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/groupsettingtemplate-list-permissions.md)]
+
+View more [details on permissions](/graph/api/groupsettingtemplate-list#permissions).
+
 ## PARAMETERS
 
 ### -All

@@ -41,6 +41,12 @@ Get-MgDirectoryAdministrativeUnitScopedRoleMember -InputObject <IIdentityDirecto
 Get a Microsoft Entra role assignment with administrative unit scope.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/administrativeunit-list-scopedrolemembers-permissions.md)]
+
+View more [details on permissions](/graph/api/administrativeunit-list-scopedrolemembers#permissions).
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

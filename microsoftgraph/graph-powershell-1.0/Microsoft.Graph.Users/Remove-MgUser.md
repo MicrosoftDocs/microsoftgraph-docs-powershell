@@ -38,6 +38,12 @@ After that time, they are permanently deleted.
 To learn more, see deletedItems.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-delete-permissions.md)]
+
+View more [details on permissions](/graph/api/user-delete#permissions).
+
 ## EXAMPLES
 ### Example 1: Remove a user
 

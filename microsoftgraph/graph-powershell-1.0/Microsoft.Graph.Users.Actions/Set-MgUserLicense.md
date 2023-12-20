@@ -49,6 +49,12 @@ Add or remove subscriptions for the user.
 You can also enable and disable specific plans associated with a subscription.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-assignlicense-permissions.md)]
+
+View more [details on permissions](/graph/api/user-assignlicense#permissions).
+
 ## EXAMPLES
 ### Example 1: Assign a license to a user
 

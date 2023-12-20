@@ -40,6 +40,10 @@ Get-MgUserTransitiveMemberOf -InputObject <IUsersIdentity> [-ExpandProperty <Str
 The groups, including nested groups, and directory roles that a user is a member of.
 Nullable.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-list-transitivememberof-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -50,7 +54,7 @@ Get-MgUserTransitiveMemberOf -UserId $userId
 ```
 This example shows how to use the Get-MgUserTransitiveMemberOf Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about permissions for this resource, see the [permissions reference](/graph/api/user-list-transitivememberof#permissions).
 
 
 ## PARAMETERS

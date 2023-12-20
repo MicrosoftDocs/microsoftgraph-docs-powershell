@@ -49,6 +49,10 @@ Assign a Microsoft Entra role with administrative unit scope.
 For a list of roles that can be assigned with administrative unit scope, see Assign Microsoft Entra roles with administrative unit scope.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/administrativeunit-post-scopedrolemembers-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -66,7 +70,7 @@ New-MgDirectoryAdministrativeUnitScopedRoleMember -AdministrativeUnitId $adminis
 ```
 This example shows how to use the New-MgDirectoryAdministrativeUnitScopedRoleMember Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about permissions for this resource, see the [permissions reference](/graph/api/administrativeunit-post-scopedrolemembers#permissions).
 
 
 ## PARAMETERS

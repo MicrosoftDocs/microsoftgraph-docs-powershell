@@ -41,6 +41,12 @@ Get-MgDirectoryAttributeSet -InputObject <IIdentityDirectoryManagementIdentity> 
 Read the properties and relationships of an attributeSet object.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directory-list-attributesets-permissions.md)]
+
+View more [details on permissions](/graph/api/directory-list-attributesets#permissions).
+
 ## PARAMETERS
 
 ### -All

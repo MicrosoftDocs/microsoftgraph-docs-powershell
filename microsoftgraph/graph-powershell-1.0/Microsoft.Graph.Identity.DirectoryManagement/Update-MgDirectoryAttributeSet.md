@@ -47,6 +47,12 @@ Update-MgDirectoryAttributeSet -InputObject <IIdentityDirectoryManagementIdentit
 Update the properties of an attributeSet object.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/attributeset-update-permissions.md)]
+
+View more [details on permissions](/graph/api/attributeset-update#permissions).
+
 ## PARAMETERS
 
 ### -AdditionalProperties
