@@ -39,6 +39,12 @@ This isn't applicable to Security groups and Distribution groups which are perma
 To learn more, see deletedItems.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-delete-permissions.md)]
+
+View more [details on permissions](/graph/api/group-delete#permissions).
+
 ## EXAMPLES
 ### Example 1: Remove a group
 

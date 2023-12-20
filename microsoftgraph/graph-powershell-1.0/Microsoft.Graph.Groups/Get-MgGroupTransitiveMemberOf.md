@@ -40,6 +40,10 @@ Get-MgGroupTransitiveMemberOf -InputObject <IGroupsIdentity> [-ExpandProperty <S
 The groups that a group is a member of, either directly and through nested membership.
 Nullable.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-list-transitivememberof-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -50,7 +54,7 @@ Get-MgGroupTransitiveMemberOf -GroupId $groupId
 ```
 This example shows how to use the Get-MgGroupTransitiveMemberOf Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about permissions for this resource, see the [permissions reference](/graph/api/group-list-transitivememberof#permissions).
 
 
 ## PARAMETERS

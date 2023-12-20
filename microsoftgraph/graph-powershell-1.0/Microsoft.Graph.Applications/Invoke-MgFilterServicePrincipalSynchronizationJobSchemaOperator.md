@@ -32,6 +32,12 @@ Invoke-MgFilterServicePrincipalSynchronizationJobSchemaOperator -InputObject <IA
 ## DESCRIPTION
 Invoke function filterOperators
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationschema-filteroperators-permissions.md)]
+
+View more [details on permissions](/graph/api/synchronization-synchronizationschema-filteroperators#permissions).
+
 ## PARAMETERS
 
 ### -Count

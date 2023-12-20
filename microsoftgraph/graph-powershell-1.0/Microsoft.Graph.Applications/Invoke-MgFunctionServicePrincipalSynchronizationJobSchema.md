@@ -32,6 +32,12 @@ Invoke-MgFunctionServicePrincipalSynchronizationJobSchema -InputObject <IApplica
 ## DESCRIPTION
 Invoke function functions
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationschema-functions-permissions.md)]
+
+View more [details on permissions](/graph/api/synchronization-synchronizationschema-functions#permissions).
+
 ## PARAMETERS
 
 ### -Count

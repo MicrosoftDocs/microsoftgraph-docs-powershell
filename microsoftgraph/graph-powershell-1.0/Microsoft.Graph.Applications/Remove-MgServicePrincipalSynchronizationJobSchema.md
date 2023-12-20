@@ -30,6 +30,12 @@ Remove-MgServicePrincipalSynchronizationJobSchema -InputObject <IApplicationsIde
 ## DESCRIPTION
 Delete navigation property schema for servicePrincipals
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationschema-delete-permissions.md)]
+
+View more [details on permissions](/graph/api/synchronization-synchronizationschema-delete#permissions).
+
 ## PARAMETERS
 
 ### -IfMatch

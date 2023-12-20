@@ -51,6 +51,12 @@ By configuring a trust relationship between your Microsoft Entra application reg
 Maximum of 20 objects can be added to an application.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-post-federatedidentitycredentials-permissions.md)]
+
+View more [details on permissions](/graph/api/application-post-federatedidentitycredentials#permissions).
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

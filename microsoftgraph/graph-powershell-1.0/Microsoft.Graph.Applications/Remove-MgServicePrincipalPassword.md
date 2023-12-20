@@ -44,6 +44,10 @@ Remove-MgServicePrincipalPassword -InputObject <IApplicationsIdentity>
 Remove a password from a servicePrincipal object.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-removepassword-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Remove-MgServicePrincipalPassword Cmdlet
 ```powershell
@@ -54,7 +58,7 @@ $params = @{
 Remove-MgServicePrincipalPassword -ServicePrincipalId $servicePrincipalId -BodyParameter $params
 ```
 This example shows how to use the Remove-MgServicePrincipalPassword Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about permissions for this resource, see the [permissions reference](/graph/api/serviceprincipal-removepassword#permissions).
 
 ## PARAMETERS
 

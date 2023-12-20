@@ -38,6 +38,12 @@ Get-MgServicePrincipalSynchronizationTemplate -InputObject <IApplicationsIdentit
 ## DESCRIPTION
 Preconfigured synchronization settings for a particular application.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronization-list-templates-permissions.md)]
+
+View more [details on permissions](/graph/api/synchronization-synchronization-list-templates#permissions).
+
 ## PARAMETERS
 
 ### -All

@@ -38,6 +38,12 @@ Get-MgServicePrincipalDelegatedPermissionClassification -InputObject <IApplicati
 ## DESCRIPTION
 Get delegatedPermissionClassifications from servicePrincipals
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-list-delegatedpermissionclassifications-permissions.md)]
+
+View more [details on permissions](/graph/api/serviceprincipal-list-delegatedpermissionclassifications#permissions).
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

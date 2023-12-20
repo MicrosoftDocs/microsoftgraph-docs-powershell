@@ -33,6 +33,12 @@ Find-MgServicePrincipalSynchronizationJobSchemaDirectory -InputObject <IApplicat
 Discover the latest schema definition for provisioning to an application.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-directorydefinition-discover-permissions.md)]
+
+View more [details on permissions](/graph/api/synchronization-directorydefinition-discover#permissions).
+
 ## PARAMETERS
 
 ### -DirectoryDefinitionId

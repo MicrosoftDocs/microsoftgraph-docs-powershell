@@ -23,6 +23,10 @@ Get-MgServicePrincipalDelta [-Filter <String>] [-Property <String[]>] [-Search <
 ## DESCRIPTION
 Invoke function delta
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-delta-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgServicePrincipalDelta Cmdlet
 ```powershell
@@ -30,7 +34,7 @@ Import-Module Microsoft.Graph.Applications
 Get-MgServicePrincipalDelta
 ```
 This example shows how to use the Get-MgServicePrincipalDelta Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about permissions for this resource, see the [permissions reference](/graph/api/serviceprincipal-delta#permissions).
 
 ## PARAMETERS
 

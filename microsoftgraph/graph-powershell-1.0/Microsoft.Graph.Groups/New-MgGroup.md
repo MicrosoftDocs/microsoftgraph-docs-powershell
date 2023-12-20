@@ -64,6 +64,12 @@ These default properties are noted in the Properties section.
 To get properties that are not returned by default, do a GET operation and specify the properties in a $select OData query option.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-post-groups-permissions.md)]
+
+View more [details on permissions](/graph/api/group-post-groups#permissions).
+
 ## EXAMPLES
 ### Example 1: Create a new group
 

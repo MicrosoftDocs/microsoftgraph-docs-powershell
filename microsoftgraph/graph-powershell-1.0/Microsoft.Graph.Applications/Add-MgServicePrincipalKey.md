@@ -54,6 +54,12 @@ ServicePrincipals that don't have any existing valid certificates (i.e.: no cert
 Update servicePrincipal can be used to perform an update instead.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-addkey-permissions.md)]
+
+View more [details on permissions](/graph/api/serviceprincipal-addkey#permissions).
+
 ## EXAMPLES
 ### Example 1: Adding a new key credential to a servicePrincipal
 

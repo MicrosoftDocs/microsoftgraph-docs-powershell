@@ -32,6 +32,12 @@ Set-MgApplicationSynchronizationSecret -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Update property secrets value.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-serviceprincipal-put-synchronization-permissions.md)]
+
+View more [details on permissions](/graph/api/synchronization-serviceprincipal-put-synchronization#permissions).
+
 ## PARAMETERS
 
 ### -ApplicationId

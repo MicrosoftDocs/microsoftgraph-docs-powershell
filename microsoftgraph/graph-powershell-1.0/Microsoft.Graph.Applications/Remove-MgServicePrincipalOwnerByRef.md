@@ -35,6 +35,10 @@ Remove an owner from a servicePrincipal object.
 As a recommended best practice, service principals should have at least two owners.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-delete-owners-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -49,7 +53,7 @@ Remove-MgServicePrincipalOwnerByRef -ServicePrincipalId $servicePrincipalId -Dir
 ```
 This example shows how to use the Remove-MgServicePrincipalOwnerByRef Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about permissions for this resource, see the [permissions reference](/graph/api/serviceprincipal-delete-owners#permissions).
 
 
 ## PARAMETERS
