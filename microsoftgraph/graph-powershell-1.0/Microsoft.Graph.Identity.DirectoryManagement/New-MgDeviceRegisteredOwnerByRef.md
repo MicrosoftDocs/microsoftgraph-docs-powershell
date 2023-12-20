@@ -45,6 +45,10 @@ New-MgDeviceRegisteredOwnerByRef -InputObject <IIdentityDirectoryManagementIdent
 Add a user as a registered owner of the device.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-post-registeredowners-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -59,7 +63,7 @@ New-MgDeviceRegisteredOwnerByRef -DeviceId $deviceId -BodyParameter $params
 ```
 This example shows how to use the New-MgDeviceRegisteredOwnerByRef Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about permissions for this resource, see the [permissions reference](/graph/api/device-post-registeredowners#permissions).
 
 
 ## PARAMETERS

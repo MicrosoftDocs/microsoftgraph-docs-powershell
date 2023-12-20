@@ -49,6 +49,12 @@ New-MgUserAppRoleAssignment -InputObject <IApplicationsIdentity>
 Use this API to assign an app role to a user.
 To grant an app role assignment to a user, you need three identifiers: This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-post-approleassignments-permissions.md)]
+
+View more [details on permissions](/graph/api/user-post-approleassignments#permissions).
+
 ## EXAMPLES
 ### Example 1: Assign a user an application role
 

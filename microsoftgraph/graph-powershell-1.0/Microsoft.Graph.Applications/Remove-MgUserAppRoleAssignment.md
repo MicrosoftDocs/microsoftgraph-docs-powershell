@@ -33,6 +33,12 @@ Remove-MgUserAppRoleAssignment -InputObject <IApplicationsIdentity> [-IfMatch <S
 Delete an appRoleAssignment that has been granted to a user.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-delete-approleassignments-permissions.md)]
+
+View more [details on permissions](/graph/api/user-delete-approleassignments#permissions).
+
 ## EXAMPLES
 ### Example 1: Remove a user's application role assignment
 

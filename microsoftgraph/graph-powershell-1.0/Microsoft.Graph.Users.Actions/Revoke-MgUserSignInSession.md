@@ -35,6 +35,12 @@ Typically, this operation is performed (by the user or an administrator) if the 
 This operation prevents access to the organization's data through applications on the device by requiring the user to sign in again to all applications that they have previously consented to, independent of device.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-revokesigninsessions-permissions.md)]
+
+View more [details on permissions](/graph/api/user-revokesigninsessions#permissions).
+
 ## PARAMETERS
 
 ### -InputObject

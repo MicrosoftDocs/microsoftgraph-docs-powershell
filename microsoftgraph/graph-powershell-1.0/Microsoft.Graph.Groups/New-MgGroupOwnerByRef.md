@@ -46,6 +46,12 @@ Add a user or service principal to a Microsoft 365 or security group's owners.
 The owners are a set of users or service principals who are allowed to modify the group object.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-post-owners-permissions.md)]
+
+View more [details on permissions](/graph/api/group-post-owners#permissions).
+
 ## EXAMPLES
 ### Example 1: Add an owner to a group
 

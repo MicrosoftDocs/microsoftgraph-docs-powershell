@@ -51,6 +51,10 @@ Users in the same organization can have different settings based on their prefer
 To get the user current settings, see current user settings.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/usersettings-update-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -66,7 +70,7 @@ Update-MgUserSetting -UserId $userId -BodyParameter $params
 ```
 This example shows how to use the Update-MgUserSetting Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about permissions for this resource, see the [permissions reference](/graph/api/usersettings-update#permissions).
 
 
 ## PARAMETERS

@@ -41,6 +41,12 @@ Get-MgDirectoryAdministrativeUnit -InputObject <IIdentityDirectoryManagementIden
 Retrieve the properties and relationships of an administrativeUnit object.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/administrativeunit-get-permissions.md)]
+
+View more [details on permissions](/graph/api/administrativeunit-get#permissions).
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

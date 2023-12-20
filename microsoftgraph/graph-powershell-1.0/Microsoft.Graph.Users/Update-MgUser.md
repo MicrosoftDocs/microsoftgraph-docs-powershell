@@ -152,6 +152,12 @@ Update-MgUser -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphUser>
 ## DESCRIPTION
 Update the properties of a user object.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-update-permissions.md)]
+
+View more [details on permissions](/graph/api/user-update#permissions).
+
 ## EXAMPLES
 ### Example 1: Update a user's display name
 

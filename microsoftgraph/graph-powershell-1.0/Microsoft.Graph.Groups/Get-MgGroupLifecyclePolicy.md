@@ -53,6 +53,10 @@ Get-MgGroupLifecyclePolicy -InputObject <IGroupsIdentity> [-ExpandProperty <Stri
 Retrieve the properties and relationships of a groupLifecyclePolicies object.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/grouplifecyclepolicy-list-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -63,7 +67,7 @@ Get-MgGroupLifecyclePolicy -GroupLifecyclePolicyId $groupLifecyclePolicyId
 ```
 This example shows how to use the Get-MgGroupLifecyclePolicy Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about permissions for this resource, see the [permissions reference](/graph/api/grouplifecyclepolicy-list#permissions).
 
 
 ## PARAMETERS

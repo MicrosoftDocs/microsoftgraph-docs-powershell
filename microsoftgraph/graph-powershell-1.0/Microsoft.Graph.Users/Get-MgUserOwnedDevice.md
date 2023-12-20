@@ -44,6 +44,12 @@ Read-only.
 Nullable.
 Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-list-owneddevices-permissions.md)]
+
+View more [details on permissions](/graph/api/user-list-owneddevices#permissions).
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -49,6 +49,10 @@ Enable the user to update their password.
 Any user can update their password without belonging to any administrator role.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-changepassword-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Update-MgUserPassword Cmdlet
 ```powershell
@@ -61,7 +65,7 @@ $params = @{
 Update-MgUserPassword -UserId $userId -BodyParameter $params
 ```
 This example shows how to use the Update-MgUserPassword Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about permissions for this resource, see the [permissions reference](/graph/api/user-changepassword#permissions).
 
 ## PARAMETERS
 

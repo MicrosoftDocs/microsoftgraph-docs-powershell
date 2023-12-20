@@ -43,6 +43,12 @@ Get-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue
 Read the properties and relationships of an allowedValue object.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/allowedvalue-get-permissions.md)]
+
+View more [details on permissions](/graph/api/allowedvalue-get#permissions).
+
 ## PARAMETERS
 
 ### -All

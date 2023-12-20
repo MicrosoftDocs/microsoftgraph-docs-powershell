@@ -62,6 +62,12 @@ Group settings apply to only Microsoft 365 groups.
 The template named Group.Unified can be used to configure tenant-wide Microsoft 365 group settings, while the template named Group.Unified.Guest can be used to configure group-specific settings.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-post-settings-permissions.md)]
+
+View more [details on permissions](/graph/api/group-post-settings#permissions).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

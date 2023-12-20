@@ -33,6 +33,12 @@ Remove-MgDeviceRegisteredUserByRef -InputObject <IIdentityDirectoryManagementIde
 Remove a user as a registered user of the device.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-delete-registeredusers-permissions.md)]
+
+View more [details on permissions](/graph/api/device-delete-registeredusers#permissions).
+
 ## PARAMETERS
 
 ### -DeviceId

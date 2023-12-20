@@ -33,6 +33,12 @@ New-MgDirectoryAttributeSet -BodyParameter <IMicrosoftGraphAttributeSet> [-WhatI
 Create a new attributeSet object.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directory-post-attributesets-permissions.md)]
+
+View more [details on permissions](/graph/api/directory-post-attributesets#permissions).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

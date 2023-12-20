@@ -49,6 +49,12 @@ Adds specific groups to a lifecycle policy.
 This action limits the group lifecycle policy to a set of groups only if the managedGroupTypes property of groupLifecyclePolicy is set to Selected.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/grouplifecyclepolicy-addgroup-permissions.md)]
+
+View more [details on permissions](/graph/api/grouplifecyclepolicy-addgroup#permissions).
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

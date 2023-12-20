@@ -45,6 +45,12 @@ New-MgDeviceRegisteredUserByRef -InputObject <IIdentityDirectoryManagementIdenti
 Add a registered user for the device.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-post-registeredusers-permissions.md)]
+
+View more [details on permissions](/graph/api/device-post-registeredusers#permissions).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -34,6 +34,10 @@ Calling this method will enable the current user to receive email notifications 
 Supported for Microsoft 365 groups only.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-subscribebymail-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgSubscribeGroupByMail Cmdlet
 ```powershell
@@ -41,7 +45,7 @@ Import-Module Microsoft.Graph.Groups
 Invoke-MgSubscribeGroupByMail -GroupId $groupId
 ```
 This example shows how to use the Invoke-MgSubscribeGroupByMail Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about permissions for this resource, see the [permissions reference](/graph/api/group-subscribebymail#permissions).
 
 ## PARAMETERS
 

@@ -50,6 +50,12 @@ Get-MgUserTeamworkAssociatedTeam -InputObject <ITeamsIdentity> [-ExpandProperty 
 ## DESCRIPTION
 The list of associatedTeamInfo objects that a user is associated with.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/associatedteaminfo-list-permissions.md)]
+
+View more [details on permissions](/graph/api/associatedteaminfo-list#permissions).
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

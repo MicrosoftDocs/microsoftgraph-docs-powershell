@@ -40,6 +40,12 @@ Get-MgDirectoryObject -InputObject <IDirectoryObjectsIdentity> [-ExpandProperty 
 Retrieve the properties and relationships of a directoryObject object.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directoryobject-get-permissions.md)]
+
+View more [details on permissions](/graph/api/directoryobject-get#permissions).
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

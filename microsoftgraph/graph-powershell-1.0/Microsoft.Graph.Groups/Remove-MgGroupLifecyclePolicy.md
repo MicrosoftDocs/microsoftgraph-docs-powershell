@@ -44,6 +44,10 @@ Remove-MgGroupLifecyclePolicy -InputObject <IGroupsIdentity> [-IfMatch <String>]
 Delete a groupLifecyclePolicy.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/grouplifecyclepolicy-delete-permissions.md)].
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -54,7 +58,7 @@ Remove-MgGroupLifecyclePolicy -GroupLifecyclePolicyId $groupLifecyclePolicyId
 ```
 This example shows how to use the Remove-MgGroupLifecyclePolicy Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about permissions for this resource, see the [permissions reference](/graph/api/grouplifecyclepolicy-delete#permissions).
 
 
 ## PARAMETERS
