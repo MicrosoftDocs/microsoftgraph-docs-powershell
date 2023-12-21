@@ -37,6 +37,8 @@ There are two ways to get the id of a callRecord: You can use the $expand query 
 When you expand session details, the maximum page size is 60 sessions.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/callrecords-callrecord-get-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Get basic details
 

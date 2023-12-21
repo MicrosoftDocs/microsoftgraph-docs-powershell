@@ -29,6 +29,8 @@ The calendar view for the calendar.
 Navigation property.
 Read-only.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/calendar-list-calendarview-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -51,6 +51,8 @@ This method along with addKey can be used by an application to automate rolling 
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-removekey-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Remove-MgApplicationKey Cmdlet
 ```powershell

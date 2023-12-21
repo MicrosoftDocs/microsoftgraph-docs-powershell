@@ -49,6 +49,8 @@ Update-MgPrintConnector -InputObject <IDevicesCloudPrintIdentity>
 Update the properties of a printConnector object.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printconnector-update-permissions.md)]
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -51,6 +51,8 @@ This is a server unmute, meaning that the server will start sending audio packet
 For more information about how to handle unmute operations, see unmuteParticipantOperation.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-unmute-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

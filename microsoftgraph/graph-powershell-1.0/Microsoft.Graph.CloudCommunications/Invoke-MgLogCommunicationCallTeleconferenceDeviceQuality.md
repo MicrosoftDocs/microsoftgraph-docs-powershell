@@ -46,6 +46,8 @@ The third-party partners own the VTC media leg and the Teams infrastructure cann
 This method is only for the CVI partners to provide their media quality data.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-logteleconferencedevicequality-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality Cmdlet
 ```powershell

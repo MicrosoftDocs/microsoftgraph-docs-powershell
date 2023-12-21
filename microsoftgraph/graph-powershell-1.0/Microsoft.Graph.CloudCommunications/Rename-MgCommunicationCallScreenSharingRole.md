@@ -47,6 +47,8 @@ Rename-MgCommunicationCallScreenSharingRole -InputObject <ICloudCommunicationsId
 Allow applications to share screen content with the participants of a group call.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-changescreensharingrole-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Rename-MgCommunicationCallScreenSharingRole Cmdlet
 ```powershell

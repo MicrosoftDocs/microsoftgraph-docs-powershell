@@ -60,6 +60,8 @@ New-MgServicePrincipal -BodyParameter <IMicrosoftGraphServicePrincipal> [-WhatIf
 Create a new servicePrincipal object.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-post-serviceprincipals-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Create a new service principal object
 

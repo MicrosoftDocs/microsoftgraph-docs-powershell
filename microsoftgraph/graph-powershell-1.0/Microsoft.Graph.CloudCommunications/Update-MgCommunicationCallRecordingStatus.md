@@ -50,6 +50,8 @@ Update the application's recording status associated with a call.
 This requires the use of the Teams policy-based recording solution.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-updaterecordingstatus-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Update-MgCommunicationCallRecordingStatus Cmdlet
 ```powershell

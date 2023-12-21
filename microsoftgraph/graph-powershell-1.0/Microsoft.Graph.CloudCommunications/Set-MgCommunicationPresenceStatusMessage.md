@@ -50,6 +50,8 @@ Set a presence status message for a user.
 An optional expiration date and time can be supplied.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/presence-setstatusmessage-permissions.md)]
+
 ## PARAMETERS
 
 ### -AdditionalProperties

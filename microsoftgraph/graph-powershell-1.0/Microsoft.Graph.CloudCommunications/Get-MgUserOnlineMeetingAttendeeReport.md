@@ -31,6 +31,8 @@ Get-MgUserOnlineMeetingAttendeeReport -InputObject <ICloudCommunicationsIdentity
 ## DESCRIPTION
 Get attendeeReport for the navigation property onlineMeetings from users
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onlinemeeting-get-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Fetch attendee report of a Teams live event
 

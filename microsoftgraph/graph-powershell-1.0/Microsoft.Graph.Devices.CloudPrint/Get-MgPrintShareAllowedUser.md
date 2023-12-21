@@ -27,6 +27,8 @@ Get-MgPrintShareAllowedUser -PrinterShareId <String> [-ExpandProperty <String[]>
 Retrieve a list of users who have been granted access to submit print jobs to the associated printerShare.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printershare-list-allowedusers-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

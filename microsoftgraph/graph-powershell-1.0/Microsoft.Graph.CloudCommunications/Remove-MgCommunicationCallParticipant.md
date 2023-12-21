@@ -41,6 +41,8 @@ When an active caller is removed, they are immediately dropped from the call wit
 When an invited participant is removed, any outstanding add participant request is canceled.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/participant-delete-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -40,6 +40,8 @@ Get-MgServicePrincipalAppRoleAssignedTo -InputObject <IApplicationsIdentity> [-E
 App role assignments for this app or service, granted to users, groups, and other service principals.
 Supports $expand.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-list-approleassignedto-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

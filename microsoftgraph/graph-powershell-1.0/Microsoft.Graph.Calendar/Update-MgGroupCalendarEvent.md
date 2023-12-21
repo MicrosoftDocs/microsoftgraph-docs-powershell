@@ -77,6 +77,8 @@ Update-MgGroupCalendarEvent -InputObject <ICalendarIdentity> -BodyParameter <IMi
 Update an event object.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-update-event-permissions.md)]
+
 ## PARAMETERS
 
 ### -AdditionalProperties

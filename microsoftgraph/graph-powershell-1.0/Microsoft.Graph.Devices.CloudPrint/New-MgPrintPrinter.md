@@ -40,6 +40,8 @@ This is a long-running operation and as such, it returns a printerCreateOperatio
 For help creating the required Certificate Signing Request (CSR) for creating printer, see the CSR generation code sample.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printer-create-permissions.md)]
+
 ## PARAMETERS
 
 ### -AdditionalProperties

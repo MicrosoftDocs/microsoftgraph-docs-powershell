@@ -47,6 +47,8 @@ Remove-MgApplicationPassword -InputObject <IApplicationsIdentity>
 Remove a password from an application.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-removepassword-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Remove-MgApplicationPassword Cmdlet
 ```powershell

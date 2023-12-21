@@ -40,6 +40,8 @@ Get-MgPrintOperation -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty 
 Retrieve the properties and relationships of a printOperation object.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printoperation-get-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

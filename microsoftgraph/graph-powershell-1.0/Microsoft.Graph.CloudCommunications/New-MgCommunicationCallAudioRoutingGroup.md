@@ -47,6 +47,8 @@ New-MgCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicationsIdent
 Create a new audioRoutingGroup.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-post-audioroutinggroups-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -59,6 +59,8 @@ Update-MgBookingBusinessAppointment -InputObject <IBookingsIdentity>
 Update the properties of a bookingAppointment object in the specified bookingBusiness.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingappointment-update-permissions.md)]
+
 ## PARAMETERS
 
 ### -AdditionalInformation

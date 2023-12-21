@@ -42,6 +42,8 @@ Delegated permission grants authorizing this service principal to access an API 
 Read-only.
 Nullable.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-list-oauth2permissiongrants-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

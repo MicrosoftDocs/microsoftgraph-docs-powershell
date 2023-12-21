@@ -59,6 +59,8 @@ This method can be used to swap printers.
 For example, if a physical printer device breaks, an administrator can register a new printer device and update this printerShare to point to the new printer without requiring users to take any action.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printershare-update-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

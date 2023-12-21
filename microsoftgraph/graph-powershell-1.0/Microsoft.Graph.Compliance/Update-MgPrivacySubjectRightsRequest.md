@@ -65,6 +65,8 @@ Update-MgPrivacySubjectRightsRequest -InputObject <IComplianceIdentity>
 Update the properties of a subjectRightsRequest object.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/subjectrightsrequest-update-permissions.md)]
+
 ## PARAMETERS
 
 ### -AdditionalProperties

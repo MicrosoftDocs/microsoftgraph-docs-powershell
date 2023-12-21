@@ -33,6 +33,8 @@ Get-MgApplicationByAppId -InputObject <IApplicationsIdentity> [-ExpandProperty <
 Get the properties and relationships of an application object.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-get-permissions.md)]
+
 ## PARAMETERS
 
 ### -AppId

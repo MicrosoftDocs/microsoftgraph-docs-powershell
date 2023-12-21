@@ -57,6 +57,8 @@ Applications that don't have any existing valid certificates (no certificates ha
 You can use the Update application operation to perform an update instead.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-addkey-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Add a new key credential to an application
 

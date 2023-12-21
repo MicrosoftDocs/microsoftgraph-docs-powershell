@@ -45,6 +45,8 @@ Remove-MgUserCalendarPermission -InputObject <ICalendarIdentity> [-IfMatch <Stri
 Delete calendarPermission.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/calendarpermission-delete-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

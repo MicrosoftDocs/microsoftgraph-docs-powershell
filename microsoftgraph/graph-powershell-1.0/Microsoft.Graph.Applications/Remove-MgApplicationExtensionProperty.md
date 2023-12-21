@@ -35,6 +35,8 @@ Delete a directory extension definition represented by an extensionProperty obje
 You can delete only directory extensions that aren't synced from on-premises active directory (AD).
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/extensionproperty-delete-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

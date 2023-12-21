@@ -41,6 +41,10 @@ Get-MgPrintConnector -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty 
 Retrieve the properties and relationships of a printConnector object.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printconnector-get-permissions.md)]
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/print-list-connectors-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -59,6 +59,8 @@ The bot is expected to answer, reject, or redirect the call before the call time
 The current timeout value is 15 seconds for regular scenarios, and 5 seconds for policy-based recording scenarios.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-answer-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Answer a Peer-to-Peer VoIP call with service hosted media
 

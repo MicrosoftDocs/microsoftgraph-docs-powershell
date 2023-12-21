@@ -33,6 +33,8 @@ Get-MgCommunicationCall -InputObject <ICloudCommunicationsIdentity> [-ExpandProp
 Retrieve the properties and relationships of a call object.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-get-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Getting a Peer-to-Peer call
 

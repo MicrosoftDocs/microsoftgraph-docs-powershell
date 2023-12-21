@@ -53,6 +53,8 @@ Aborting a print job will only succeed if there is a printTask in a processing s
 For details about how to register a task trigger, see Extending Universal Print to support pull printing.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printjob-abort-permissions.md)]
+
 ## PARAMETERS
 
 ### -AdditionalProperties

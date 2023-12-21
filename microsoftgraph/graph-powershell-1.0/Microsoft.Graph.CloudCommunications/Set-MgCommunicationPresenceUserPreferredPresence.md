@@ -59,6 +59,8 @@ A presence session is created as a result of a successful setPresence operation,
 For more details, see presence sessions and time-out and expiration.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/presence-setuserpreferredpresence-permissions.md)]
+
 ## PARAMETERS
 
 ### -Activity

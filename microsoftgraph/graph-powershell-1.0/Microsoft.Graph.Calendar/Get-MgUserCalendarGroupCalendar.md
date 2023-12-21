@@ -27,6 +27,8 @@ Get-MgUserCalendarGroupCalendar -CalendarGroupId <String> -UserId <String> [-Fil
 Retrieve a list of calendars belonging to a calendar group.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/calendargroup-list-calendars-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgUserCalendarGroupCalendar Cmdlet
 ```powershell

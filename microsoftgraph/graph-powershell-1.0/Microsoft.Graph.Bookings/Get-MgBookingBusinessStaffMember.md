@@ -41,6 +41,10 @@ Get-MgBookingBusinessStaffMember -InputObject <IBookingsIdentity> [-ExpandProper
 Get the properties and relationships of a bookingStaffMember in the specified bookingBusiness.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingstaffmember-get-permissions.md)]
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-list-staffmembers-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

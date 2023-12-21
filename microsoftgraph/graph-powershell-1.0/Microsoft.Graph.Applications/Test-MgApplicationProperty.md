@@ -52,6 +52,8 @@ However, you can validate both the mail nickname and the display name and receiv
 To learn more about configuring naming policies, see Configure naming policy.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directoryobject-validateproperties-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -95,6 +95,8 @@ Update-MgApplication -InputObject <IApplicationsIdentity> -BodyParameter <IMicro
 Update the properties of an application object.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-update-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Update an application
 

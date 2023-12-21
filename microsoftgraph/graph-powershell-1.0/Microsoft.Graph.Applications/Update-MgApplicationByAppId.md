@@ -95,6 +95,8 @@ Update-MgApplicationByAppId -InputObject <IApplicationsIdentity> -BodyParameter 
 Update the properties of an application object.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-update-permissions.md)]
+
 ## PARAMETERS
 
 ### -AddIns

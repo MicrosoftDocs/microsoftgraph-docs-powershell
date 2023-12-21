@@ -44,6 +44,8 @@ Attempting to send a request to a call that has already ended will result in a 4
 The resources related to the call should be cleaned up on the application side.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-keepalive-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

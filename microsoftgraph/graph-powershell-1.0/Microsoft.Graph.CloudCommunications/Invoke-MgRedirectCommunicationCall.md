@@ -56,6 +56,8 @@ The bot is expected to redirect the call before the call times out.
 The current timeout value is 15 seconds.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-redirect-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

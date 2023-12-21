@@ -42,6 +42,8 @@ The set of appointments of this business in a specified date range.
 Read-only.
 Nullable.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-list-calendarview-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

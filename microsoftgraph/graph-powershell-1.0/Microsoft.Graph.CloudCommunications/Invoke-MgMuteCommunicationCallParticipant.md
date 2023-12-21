@@ -51,6 +51,8 @@ This is a server mute, meaning that the server will drop all audio packets for t
 For more information about how to handle mute operations, see muteParticipantOperation.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/participant-mute-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

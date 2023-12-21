@@ -47,6 +47,8 @@ Add-MgApplicationPassword -InputObject <IApplicationsIdentity>
 Adds a strong password or secret to an application.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-addpassword-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Add a password credential to an application with a six month expiry
 

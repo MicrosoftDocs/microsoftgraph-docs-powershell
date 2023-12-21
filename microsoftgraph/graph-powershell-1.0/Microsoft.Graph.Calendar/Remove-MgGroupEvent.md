@@ -33,6 +33,8 @@ Remove-MgGroupEvent -InputObject <ICalendarIdentity> [-IfMatch <String>] [-PassT
 Delete an event object.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-delete-event-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -35,6 +35,8 @@ Unset the verifiedPublisher previously set on an application, removing all verif
 For more information, see Publisher verification.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-unsetverifiedpublisher-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

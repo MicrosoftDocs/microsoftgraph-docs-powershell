@@ -49,6 +49,8 @@ Get-MgBookingBusinessStaffAvailability -InputObject <IBookingsIdentity>
 Get the availability information of staff members of a Microsoft Bookings calendar.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-getstaffavailability-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

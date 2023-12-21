@@ -47,6 +47,8 @@ Update-MgUserCalendarGroup -InputObject <ICalendarIdentity> -BodyParameter <IMic
 Update the properties of calendargroup object.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/calendargroup-update-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

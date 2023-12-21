@@ -33,6 +33,8 @@ Submits the print job to the associated printer or printerShare.
 It will be printed after any existing pending jobs are completed, aborted, or canceled.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printjob-start-permissions.md)]
+
 ## PARAMETERS
 
 ### -InputObject

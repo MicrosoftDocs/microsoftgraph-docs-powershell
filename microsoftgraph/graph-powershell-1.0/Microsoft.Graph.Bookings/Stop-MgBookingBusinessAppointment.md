@@ -48,6 +48,8 @@ Stop-MgBookingBusinessAppointment -InputObject <IBookingsIdentity>
 Cancel the specified bookingAppointment in the specified bookingBusiness and send a message to the involved customer and staff members.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingappointment-cancel-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Stop-MgBookingBusinessAppointment Cmdlet
 ```powershell

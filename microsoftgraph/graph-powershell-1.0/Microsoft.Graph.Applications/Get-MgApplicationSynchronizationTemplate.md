@@ -38,6 +38,8 @@ Get-MgApplicationSynchronizationTemplate -InputObject <IApplicationsIdentity> [-
 ## DESCRIPTION
 Preconfigured synchronization settings for a particular application.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronization-list-templates-permissions.md)]
+
 ## PARAMETERS
 
 ### -All

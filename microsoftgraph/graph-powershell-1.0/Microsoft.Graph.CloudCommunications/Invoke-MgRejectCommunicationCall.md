@@ -60,6 +60,8 @@ This API does not end existing calls that have already been answered.
 Use delete call to end a call.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-reject-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Reject an incoming call with 'Busy' reason
 

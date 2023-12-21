@@ -41,6 +41,8 @@ Don't create scripts to call the start job continuously while it's running becau
 Use the start job only when the job is currently paused or in quarantine.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationjob-start-permissions.md)]
+
 ## PARAMETERS
 
 ### -InputObject

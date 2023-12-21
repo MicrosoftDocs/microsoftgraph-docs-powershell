@@ -59,6 +59,8 @@ New-MgBookingBusinessService -InputObject <IBookingsIdentity> -BodyParameter <IM
 Create a new bookingService for the specified bookingBusiness.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-post-services-permissions.md)]
+
 ## PARAMETERS
 
 ### -AdditionalInformation

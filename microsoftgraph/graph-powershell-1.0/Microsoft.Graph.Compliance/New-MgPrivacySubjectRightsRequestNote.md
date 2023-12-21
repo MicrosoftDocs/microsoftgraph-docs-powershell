@@ -47,6 +47,8 @@ New-MgPrivacySubjectRightsRequestNote -InputObject <IComplianceIdentity>
 Create a new authoredNote object.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/subjectrightsrequest-post-notes-permissions.md)]
+
 ## PARAMETERS
 
 ### -AdditionalProperties

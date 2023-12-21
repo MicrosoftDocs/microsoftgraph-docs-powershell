@@ -33,6 +33,8 @@ Remove-MgPrintPrinter -InputObject <IDevicesCloudPrintIdentity> [-IfMatch <Strin
 Delete (unregister) a printer.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printer-delete-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

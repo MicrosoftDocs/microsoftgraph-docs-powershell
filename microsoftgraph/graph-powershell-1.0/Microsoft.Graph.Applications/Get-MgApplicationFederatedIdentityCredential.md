@@ -41,6 +41,10 @@ Get-MgApplicationFederatedIdentityCredential -InputObject <IApplicationsIdentity
 Read the properties and relationships of a federatedIdentityCredential object.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/federatedidentitycredential-get-permissions.md)]
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-list-federatedidentitycredentials-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -51,6 +51,8 @@ This operation limits the size of the attachment you can add to under 3 MB.
 If an organizer adds an attachment to a meeting event, the organizer can subsequently update the event to send the attachment and update the event for each attendee as well.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-post-attachments-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

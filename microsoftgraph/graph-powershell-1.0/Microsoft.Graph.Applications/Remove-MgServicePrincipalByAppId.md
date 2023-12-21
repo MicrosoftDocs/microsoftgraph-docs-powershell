@@ -33,6 +33,8 @@ Remove-MgServicePrincipalByAppId -InputObject <IApplicationsIdentity> [-IfMatch 
 Delete a servicePrincipal object.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-delete-permissions.md)]
+
 ## PARAMETERS
 
 ### -AppId

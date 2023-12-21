@@ -47,6 +47,8 @@ Update-MgCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicationsId
 Modify sources and receivers of an audioRoutingGroup.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/audioroutinggroup-update-permissions.md)]
+
 ## PARAMETERS
 
 ### -AdditionalProperties

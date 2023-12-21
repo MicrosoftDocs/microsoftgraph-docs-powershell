@@ -33,6 +33,8 @@ Remove-MgGroupAppRoleAssignment -InputObject <IApplicationsIdentity> [-IfMatch <
 Deletes an appRoleAssignment that a group has been granted.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-delete-approleassignments-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
