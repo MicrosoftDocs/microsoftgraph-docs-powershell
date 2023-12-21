@@ -42,6 +42,9 @@ Directory objects that the user created.
 Read-only.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-createdobjects-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Get a list of directory objects that were created by a user
 

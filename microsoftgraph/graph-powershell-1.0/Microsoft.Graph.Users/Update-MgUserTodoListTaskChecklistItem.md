@@ -48,6 +48,9 @@ Update-MgUserTodoListTaskChecklistItem -InputObject <IUsersIdentity>
 Update the properties of a checklistItem object.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/checklistitem-update-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

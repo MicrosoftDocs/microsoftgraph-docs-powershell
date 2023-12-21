@@ -41,6 +41,12 @@ Get-MgUserTodoTask -InputObject <IUsersIdentity> [-ExpandProperty <String[]>] [-
 Read the properties and relationships of a todoTask object.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/todotask-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/todotasklist-list-tasks-permissions.md)]
+
 ## PARAMETERS
 
 ### -All

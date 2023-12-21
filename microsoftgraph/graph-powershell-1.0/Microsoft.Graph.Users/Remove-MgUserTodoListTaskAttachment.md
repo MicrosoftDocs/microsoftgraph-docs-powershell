@@ -33,6 +33,9 @@ Remove-MgUserTodoListTaskAttachment -InputObject <IUsersIdentity> [-IfMatch <Str
 Delete a taskFileAttachment object from a todoTask resource.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/taskfileattachment-delete-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

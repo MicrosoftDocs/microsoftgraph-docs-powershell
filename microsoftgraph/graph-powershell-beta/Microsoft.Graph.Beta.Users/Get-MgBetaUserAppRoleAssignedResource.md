@@ -35,6 +35,9 @@ Get-MgBetaUserAppRoleAssignedResource -InputObject <IUsersIdentity> [-ExpandProp
 ## DESCRIPTION
 Get appRoleAssignedResources from users
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-approleassignedresources-permissions.md)]
+
 ## PARAMETERS
 
 ### -All

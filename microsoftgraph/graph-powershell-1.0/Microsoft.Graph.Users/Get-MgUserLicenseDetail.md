@@ -40,6 +40,9 @@ Get-MgUserLicenseDetail -InputObject <IUsersIdentity> [-ExpandProperty <String[]
 A collection of this user's license details.
 Read-only.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-list-licensedetails-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Get a user's license details
 

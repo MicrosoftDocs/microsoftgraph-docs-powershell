@@ -41,6 +41,12 @@ Get-MgUserTodoTaskLinkedResource -InputObject <IUsersIdentity> [-ExpandProperty 
 Read the properties and relationships of a linkedResource object.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/linkedresource-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/todotask-list-linkedresources-permissions.md)]
+
 ## PARAMETERS
 
 ### -All
