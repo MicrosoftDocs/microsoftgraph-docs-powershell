@@ -41,6 +41,10 @@ Get-MgAdminEdgeInternetExplorerModeSiteList -InputObject <IDeviceManagementIdent
 Get a browserSiteList that contains browserSite and browserSharedCookie resources.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/browsersitelist-get-permissions.md)]
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/internetexplorermode-list-sitelists-permissions.md)]
+
 ## PARAMETERS
 
 ### -All

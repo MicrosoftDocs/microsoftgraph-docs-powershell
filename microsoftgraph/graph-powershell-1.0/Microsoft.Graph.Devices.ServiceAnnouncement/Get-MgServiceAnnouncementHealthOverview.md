@@ -43,6 +43,10 @@ Retrieve the properties and relationships of a serviceHealth object.
 This operation provides the health information of a specified service for a tenant.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/servicehealth-get-permissions.md)]
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceannouncement-list-healthoverviews-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Get serviceHealth resources
 

@@ -45,6 +45,10 @@ This operation retrieves a specified service health issue for tenant.
 The operation returns an error if the issue does not exist for the tenant.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/servicehealthissue-get-permissions.md)]
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceannouncement-list-issues-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

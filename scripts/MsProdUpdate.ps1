@@ -282,12 +282,12 @@ function WebScrapping {
                     Write-Host "`n$PermissionsReference already exists in $File"
                 }else{
                     if ((Get-Content -Raw -Path $File) -match '(## DESCRIPTION)[\s\S]*## EXAMPLES') {
-                        $Link = "$PermissionsReference`r`n`n## EXAMPLES"
+                        $Link = "**Permissions**`r`n$PermissionsReference`r`n`n## EXAMPLES"
                         (Get-Content $File) | 
                         Foreach-Object { $_ -replace '## EXAMPLES', $Link}  | 
                         Out-File $File
                     }else{
-                        $Link = "$PermissionsReference`r`n`n## PARAMETERS"
+                        $Link = "**Permissions**`r`n$PermissionsReference`r`n`n## PARAMETERS"
                         (Get-Content $File) | 
                         Foreach-Object { $_ -replace '## PARAMETERS', $Link}  | 
                         Out-File $File
