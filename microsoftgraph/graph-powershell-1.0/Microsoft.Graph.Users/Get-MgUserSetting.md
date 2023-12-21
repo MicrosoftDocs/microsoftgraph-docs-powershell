@@ -32,6 +32,9 @@ Get-MgUserSetting -InputObject <IUsersIdentity> [-ExpandProperty <String[]>] [-P
 Read the user and organization userSettings object.To learn how to update the properties of the userSettings object, see update user settings.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/usersettings-get-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

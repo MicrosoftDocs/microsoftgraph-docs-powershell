@@ -43,6 +43,8 @@ This is the first step in setting up a Bookings business where you must specify 
 You can include other information such as business address, web site address, and scheduling policy, or set that information later by updating the bookingBusiness.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-post-bookingbusinesses-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

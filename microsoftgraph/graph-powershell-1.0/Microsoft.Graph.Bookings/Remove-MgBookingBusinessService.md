@@ -33,6 +33,8 @@ Remove-MgBookingBusinessService -InputObject <IBookingsIdentity> [-IfMatch <Stri
 Delete a bookingService object in the specified bookingBusiness.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingservice-delete-permissions.md)]
+
 ## PARAMETERS
 
 ### -BookingBusinessId

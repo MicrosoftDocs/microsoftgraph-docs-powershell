@@ -44,6 +44,9 @@ The users and contacts that report to the user.
 Nullable.
 Supports $expand.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-directreports-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Get a user's direct reports
 

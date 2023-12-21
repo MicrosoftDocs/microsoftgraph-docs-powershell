@@ -33,6 +33,8 @@ Get-MgUserOnlineMeetingTranscriptContent -InputObject <ICloudCommunicationsIdent
 The content of the transcript.
 Read-only.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onlinemeeting-list-transcripts-permissions.md)]
+
 ## PARAMETERS
 
 ### -CallTranscriptId

@@ -51,6 +51,8 @@ Invite participants to the active call.
 For more information about how to handle operations, see commsOperation.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/participant-delete-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Invite one participant to an existing call
 

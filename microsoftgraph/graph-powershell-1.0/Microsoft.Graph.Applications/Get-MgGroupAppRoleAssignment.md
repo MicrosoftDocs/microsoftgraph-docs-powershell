@@ -40,6 +40,8 @@ Get-MgGroupAppRoleAssignment -InputObject <IApplicationsIdentity> [-ExpandProper
 Represents the app roles a group has been granted for an application.
 Supports $expand.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-list-approleassignments-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Get appRoleAssignments granted to a group
 

@@ -39,6 +39,12 @@ Get-MgUserOutlookMasterCategory -InputObject <IUsersIdentity> [-Property <String
 Get the properties and relationships of the specified outlookCategory object.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/outlookcategory-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/outlookuser-list-mastercategories-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -60,6 +60,8 @@ The recording is not saved permanently by the Cloud Communications Platform and 
 The bot must download the recording promptly after the recording operation finishes by using the recordingLocation value that's given in the completed notification.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-record-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -33,6 +33,9 @@ Remove-MgUserTodoListTask -InputObject <IUsersIdentity> [-IfMatch <String>] [-Pa
 Deletes a todoTask object.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/todotask-delete-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -47,6 +47,8 @@ New-MgBookingBusinessCustomQuestion -InputObject <IBookingsIdentity>
 Create a new bookingCustomQuestion object.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-post-customquestions-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

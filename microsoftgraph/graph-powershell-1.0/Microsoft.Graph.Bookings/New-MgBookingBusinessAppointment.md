@@ -59,6 +59,8 @@ New-MgBookingBusinessAppointment -InputObject <IBookingsIdentity>
 Create a new bookingAppointment for the specified bookingBusiness.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-post-appointments-permissions.md)]
+
 ## PARAMETERS
 
 ### -AdditionalInformation

@@ -33,6 +33,8 @@ Remove-MgPrintShareAllowedUserByRef -InputObject <IDevicesCloudPrintIdentity> [-
 Revoke the specified user's access to submit print jobs to the associated printerShare.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printershare-delete-alloweduser-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

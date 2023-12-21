@@ -33,6 +33,8 @@ Remove-MgPrintConnector -InputObject <IDevicesCloudPrintIdentity> [-IfMatch <Str
 Delete (unregister) a printConnector.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printconnector-delete-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

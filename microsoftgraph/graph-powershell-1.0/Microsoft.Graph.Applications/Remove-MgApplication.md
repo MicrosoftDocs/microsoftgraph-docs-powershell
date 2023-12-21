@@ -37,6 +37,8 @@ When deleted, apps are moved to a temporary container and can be restored within
 After that time, they are permanently deleted.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-delete-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Delete an application
 

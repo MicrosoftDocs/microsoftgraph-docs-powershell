@@ -52,6 +52,8 @@ Update-MgServicePrincipalSynchronizationTemplate -InputObject <IApplicationsIden
 Update (override) the synchronization template associated with a given application.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationtemplate-update-permissions.md)]
+
 ## PARAMETERS
 
 ### -AdditionalProperties

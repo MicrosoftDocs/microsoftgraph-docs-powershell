@@ -37,6 +37,8 @@ New-MgPrintShare -BodyParameter <IMicrosoftGraphPrinterShare> [-WhatIf] [-Confir
 Create a new printerShare for the specified printer.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/print-post-shares-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

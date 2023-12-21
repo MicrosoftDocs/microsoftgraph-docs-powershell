@@ -61,6 +61,9 @@ New-MgUserTodoListTask -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftG
 Create a new task object in a specified todoTaskList.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/todotasklist-post-tasks-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -43,6 +43,10 @@ Get the properties and relationships of a bookingAppointment object in the speci
 The startDateTime and endDateTime properties are always returned in UTC.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingappointment-get-permissions.md)]
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-list-appointments-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

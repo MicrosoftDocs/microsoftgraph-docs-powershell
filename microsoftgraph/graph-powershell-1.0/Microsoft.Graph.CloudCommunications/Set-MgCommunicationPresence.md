@@ -49,6 +49,8 @@ Set-MgCommunicationPresence -InputObject <ICloudCommunicationsIdentity>
 Set the state of a user's presence session as an application.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/presence-setpresence-permissions.md)]
+
 ## PARAMETERS
 
 ### -Activity

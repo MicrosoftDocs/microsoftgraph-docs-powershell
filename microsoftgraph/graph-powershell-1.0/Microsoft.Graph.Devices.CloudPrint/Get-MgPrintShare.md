@@ -41,6 +41,10 @@ Get-MgPrintShare -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty <Str
 Retrieve the properties and relationships of a printer share.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printershare-get-permissions.md)]
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/print-list-shares-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Get a printerShare
 

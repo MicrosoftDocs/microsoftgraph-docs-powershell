@@ -43,6 +43,10 @@ Get the properties of a bookingCurrency object that is available to a Microsoft 
 Use the id property, which is the currency code, to specify the currency.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingcurrency-get-permissions.md)]
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingcurrency-list-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

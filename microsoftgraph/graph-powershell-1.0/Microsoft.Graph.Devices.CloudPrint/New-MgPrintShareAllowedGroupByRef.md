@@ -45,6 +45,8 @@ New-MgPrintShareAllowedGroupByRef -InputObject <IDevicesCloudPrintIdentity> -Bod
 Grant the specified group access to submit print jobs to the associated printerShare.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printershare-post-allowedgroups-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

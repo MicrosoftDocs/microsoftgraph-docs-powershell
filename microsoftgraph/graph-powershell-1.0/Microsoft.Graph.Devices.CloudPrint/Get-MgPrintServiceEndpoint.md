@@ -41,6 +41,10 @@ Get-MgPrintServiceEndpoint -InputObject <IDevicesCloudPrintIdentity> [-ExpandPro
 Retrieve the properties and relationships of a print service endpoint.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printserviceendpoint-get-permissions.md)]
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printservice-list-endpoints-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

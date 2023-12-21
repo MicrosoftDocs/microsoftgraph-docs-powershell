@@ -53,6 +53,8 @@ A consultative transfer means that the transferor can inform the person they wan
 This is opposed to transfering the call directly.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-transfer-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Call transfer from a peer-to-peer call
 

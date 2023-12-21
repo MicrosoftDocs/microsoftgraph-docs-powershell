@@ -51,6 +51,9 @@ This operation limits the size of the attachment you can add to under 3 MB.
 If the size of the file attachments is more than 3 MB, create an upload session to upload the attachments.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/todotask-post-attachments-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

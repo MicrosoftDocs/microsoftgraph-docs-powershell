@@ -38,6 +38,10 @@ Get-MgUserCalendarGroup -InputObject <ICalendarIdentity> [-Property <String[]>] 
 Retrieve the properties and relationships of a calendar group object.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/calendargroup-get-permissions.md)]
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-list-calendargroups-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

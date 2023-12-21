@@ -33,6 +33,8 @@ Clear-MgCommunicationPresenceUserPreferredPresence -InputObject <ICloudCommunica
 Clear the preferred availability and activity status for a user.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/presence-clearuserpreferredpresence-permissions.md)]
+
 ## EXAMPLES
 
 ## PARAMETERS

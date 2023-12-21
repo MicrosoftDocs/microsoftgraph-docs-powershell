@@ -42,6 +42,8 @@ Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord -InputObject <I
 List of attendance records of an attendance report.
 Read-only.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/attendancerecord-list-permissions.md)]
+
 ## EXAMPLES
 
 ## PARAMETERS

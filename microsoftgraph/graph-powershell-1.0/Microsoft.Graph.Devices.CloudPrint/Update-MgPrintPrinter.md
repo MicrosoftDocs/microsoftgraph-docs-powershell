@@ -57,6 +57,8 @@ Update-MgPrintPrinter -InputObject <IDevicesCloudPrintIdentity> -BodyParameter <
 Update the properties of a printer object.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printer-update-permissions.md)]
+
 ## PARAMETERS
 
 ### -AdditionalProperties

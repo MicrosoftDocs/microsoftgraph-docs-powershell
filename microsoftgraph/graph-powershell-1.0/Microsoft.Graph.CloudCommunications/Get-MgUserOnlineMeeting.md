@@ -45,6 +45,10 @@ For example, you can: Teams live event attendee report (deprecated) is an online
 For details, see Online meeting artifacts and permissions.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onlinemeeting-get-permissions.md)]
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onlinemeeting-get-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Retrieve an online meeting by meeting ID
 

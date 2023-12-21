@@ -47,6 +47,8 @@ New-MgUserCalendarGroup -InputObject <ICalendarIdentity> -BodyParameter <IMicros
 Use this API to create a new CalendarGroup.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-post-calendargroups-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -51,6 +51,9 @@ For example, you can associate a task with an email item in Outlook that spurred
 You can also create a linkedResource object while creating a task.
 This API is available in the following national cloud deployments.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/todotask-post-linkedresources-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -33,6 +33,8 @@ Remove-MgPrintPrinterTaskTrigger -InputObject <IDevicesCloudPrintIdentity> [-IfM
 Delete the task trigger of a printer to prevent related print events from triggering tasks on the specified printer.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printer-delete-tasktrigger-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

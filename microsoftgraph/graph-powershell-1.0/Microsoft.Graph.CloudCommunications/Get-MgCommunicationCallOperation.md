@@ -40,6 +40,8 @@ Get-MgCommunicationCallOperation -InputObject <ICloudCommunicationsIdentity> [-E
 Get the status of an operation that adds the large gallery view to a call.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/addlargegalleryviewoperation-get-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -44,6 +44,8 @@ Currently, only one printerShare can be associated with the printer.
 Read-only.
 Nullable.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printer-list-shares-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

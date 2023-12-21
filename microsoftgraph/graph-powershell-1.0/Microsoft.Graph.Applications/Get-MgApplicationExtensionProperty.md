@@ -41,6 +41,10 @@ Get-MgApplicationExtensionProperty -InputObject <IApplicationsIdentity> [-Expand
 Read a directory extension definition represented by an extensionProperty object.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/extensionproperty-get-permissions.md)]
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-list-extensionproperty-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

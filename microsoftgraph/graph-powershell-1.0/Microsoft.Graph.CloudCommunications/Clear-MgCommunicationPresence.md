@@ -51,6 +51,8 @@ If it is the user's only presence session, the user's presence will change to Of
 For details about presences sessions, see presence: setPresence.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/presence-clearpresence-permissions.md)]
+
 ## EXAMPLES
 
 ## PARAMETERS

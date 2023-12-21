@@ -29,10 +29,10 @@ function Start-Generator {
         }
         Get-FilesByProfile -GraphProfile $GraphProfile -GraphProfilePath $ProfilePath -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
     }
-    git config --global user.email "timwamalwa@gmail.com"
-    git config --global user.name "Timothy Wamalwa"
-    git add .
-    git commit -m "Updated metadata parameters" 
+    # git config --global user.email "timwamalwa@gmail.com"
+    # git config --global user.name "Timothy Wamalwa"
+    # git add .
+    # git commit -m "Updated metadata parameters" 
 }
 function Get-FilesByProfile {
     Param(
@@ -181,27 +181,6 @@ function Get-ExternalDocsUrl {
                 if (-not([string]::IsNullOrEmpty($ExternalDocUrl))) {
                     WebScrapping -GraphProfile $GraphProfile -ExternalDocUrl $ExternalDocUrl -Command $Command -File $File
                 }
-                else {
-                    #Create file if it doesn't exist
-                    if (-not(Test-Path -PathType Container $MissingMsProdHeaderPath)) {
-                        New-Item -ItemType Directory -Force -Path $MissingMsProdHeaderPath
-                    }
-                    $MissingMetaData = "$MissingMsProdHeaderPath\MissingExternalDocs.csv"
-                    if (-not (Test-Path $MissingMetaData)) {
-                        "Graph profile, Command, UriPath" | Out-File -FilePath  $MissingMetaData -Encoding ASCII
-                    }
-
-                    #Check if module already exists
-                    $File = Get-Content $MissingMetaData
-                    $containsWord = $file | % { $_ -match "$GraphProfile, $Command, $UriPath" }
-                    if ($containsWord -contains $true) {
-                        #Skip adding to csv
-                    }
-                    else {
-                        "$GraphProfile, $Command, $UriPath" | Out-File -FilePath $MissingMetaData -Append -Encoding ASCII
-                    }
-                    
-                }
             }
 
         }
@@ -214,6 +193,7 @@ function Get-ExternalDocsUrl {
     Write-Host "`nError Item Name: "$_.Exception.ItemName
 }
 }
+
 function Append-GraphPrefix {
     param(
         [string] $UriPath
@@ -223,7 +203,6 @@ function Append-GraphPrefix {
     $UriPath = $UriPath.Replace($LastUriPathSegment, "microsoft.graph." + $LastUriPathSegment)
     return $UriPath
 }
-
 function WebScrapping {
     param(
         [ValidateSet("beta", "v1.0")]
@@ -241,87 +220,44 @@ function WebScrapping {
     $LastExternalDocUrlPathSegmentWithQueryParam = $ExternalDocUrlPaths[$ExternalDocUrlPaths.Length - 1]
     $LastExternalDocUrlPathSegmentWithoutQueryParam = $LastExternalDocUrlPathSegmentWithQueryParam.Split("?")[0]
 
-    $GraphDocsUrl = "https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-docs-contrib/main/api-reference/$GraphProfile/api/$LastExternalDocUrlPathSegmentWithoutQueryParam.md"
-    $PermissionsReference = "[!INCLUDE [permissions-table](~/../graphref/api-reference/$GraphProfile/includes/permissions/$LastExternalDocUrlPathSegmentWithoutQueryParam-permissions.md)]"
     $PermissionsUrl = "https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-docs-contrib/main/api-reference/$GraphProfile/includes/permissions/$LastExternalDocUrlPathSegmentWithoutQueryParam-permissions.md"
-    $MsprodContent = ""
-    try{
-        ($readStream, $HttpWebResponse) = FetchStream -GraphDocsUrl $GraphDocsUrl
-
-        while (-not $readStream.EndOfStream) {
-            $Line = $readStream.ReadLine()
-            if ($Line -match "ms.prod") {
-                $MsprodContent = $Line
-            }
-        }
-        $HttpWebResponse.Close() 
-        $readStream.Close()
-        
-        if ([string]::IsNullOrEmpty($MsprodContent)) {
-            Write-Host "Ms Prod content is null or empty"
-        }
-        else {
-            #Remove single and double qoutes from ms prod
-            $MsprodContent = $MsprodContent.Replace("`"", "")
-            $MsprodContent = $MsprodContent.Replace("'", "")
-            $MetaDataText = "schema: 2.0.0`r`n$MsprodContent"
-            (Get-Content $File) | 
-            Foreach-Object { 
-                if ($_ -notcontains $MetaDataText) {
-                    $_ -replace 'schema: 2.0.0', $MetaDataText
-                }
-            }  | 
-            Out-File $File
-        }
+    $PermissionsLink = "[!INCLUDE [permissions-table](~/../graphref/api-reference/$GraphProfile/includes/permissions/$LastExternalDocUrlPathSegmentWithoutQueryParam-permissions.md)]"
+   
+    Write-Host "`n$PermissionsUrl"
+    try {
         #We need to check if the permissions url exists
-        $HttpStatus = ConfirmHttpStatus -PermissionsUrl $PermissionsUrl -GraphProfile $GraphProfile -Command $Command -ApiReferenceUrl $GraphDocsUrl
+        $HttpStatus = ConfirmHttpStatus -PermissionsUrl $PermissionsUrl
         if($HttpStatus -eq 200){
-            #Add permissions reference
             if ((Get-Content -Raw -Path $File) -match '(## DESCRIPTION)[\s\S]*## PARAMETERS') {
-                if((Get-Content -Raw -Path $File) -match $PermissionsReference){
-                    Write-Host "`n$PermissionsReference already exists in $File"
+                if((Get-Content -Raw -Path $File) -match $PermissionsLink){
+                    Write-Host "`n$PermissionsLink already exists in $File"
                 }else{
                     if ((Get-Content -Raw -Path $File) -match '(## DESCRIPTION)[\s\S]*## EXAMPLES') {
-                        $Link = "**Permissions**`r`n$PermissionsReference`r`n`n## EXAMPLES"
+                        $Link = "**Permissions**`r`n$PermissionsLink`r`n`n## EXAMPLES"
                         (Get-Content $File) | 
                         Foreach-Object { $_ -replace '## EXAMPLES', $Link}  | 
                         Out-File $File
                     }else{
-                        $Link = "**Permissions**`r`n$PermissionsReference`r`n`n## PARAMETERS"
+                        $Link = "**Permissions**`r`n$PermissionsLink`r`n`n## PARAMETERS"
                         (Get-Content $File) | 
                         Foreach-Object { $_ -replace '## PARAMETERS', $Link}  | 
                         Out-File $File
                     }
                 }
-            }
+            } 
         }
-    }catch {
+    }
+    catch {
+
         Write-Host "`nError Message: " $_.Exception.Message
         Write-Host "`nError in Line: " $_.InvocationInfo.Line
         Write-Host "`nError in Line Number: "$_.InvocationInfo.ScriptLineNumber
         Write-Host "`nError Item Name: "$_.Exception.ItemName
-        Write-Host "`nRaw docs url : "  $GraphDocsUrl
     }
 }
-
-function FetchStream {
-    param(
-        [string]$GraphDocsUrl
-    )
-    $HttpWebRequest = [System.Net.WebRequest]::Create($GraphDocsUrl)
-    $HttpWebResponse = $HttpWebRequest.GetResponse()
-    $ReceiveStream = $HttpWebResponse.GetResponseStream()
-    $Encode = [System.Text.Encoding]::GetEncoding("utf-8")
-    $ReadStream = [System.IO.StreamReader]::new($ReceiveStream, $Encode)
-    return ($ReadStream, $HttpWebResponse)
-}
-
 function ConfirmHttpStatus {
     param(
-        [string]$PermissionsUrl,
-        [string]$GraphProfile = "v1.0",
-        [string]$Command = "Get-MgUser",
-        [string]$ApiReferenceUrl = "api-reference",
+        [string]$PermissionsUrl
     )
     try {
         $HTTP_Request = [System.Net.WebRequest]::Create($PermissionsUrl)
@@ -332,38 +268,13 @@ function ConfirmHttpStatus {
     }
     catch {
 
-        #Create file if it doesn't exist
-        if (-not(Test-Path -PathType Container $MissingMsProdHeaderPath)) {
-            New-Item -ItemType Directory -Force -Path $MissingMsProdHeaderPath
-        }
-        $MissingPermData = "$MissingMsProdHeaderPath\MissingPermissionsIncludeLink.csv"
-        if (-not (Test-Path $MissingMetaData)) {
-            "Graph profile, Command, ApiReferenceUrl" | Out-File -FilePath  $MissingMetaData -Encoding ASCII
-        }
-
-        #Check if module already exists
-        $File = Get-Content $MissingPermData
-        $containsWord = $file | % { $_ -match "$GraphProfile, $Command, $ApiReferenceUrl" }
-        if ($containsWord -contains $true) {
-            #Skip adding to csv
-        }
-        else {
-            "$GraphProfile, $Command, $UriPath" | Out-File -FilePath $MissingPermData -Append -Encoding ASCII
-        }
+        # Write-Host "`nError Message: " $_.Exception.Message
+        # Write-Host "`nError in Line: " $_.InvocationInfo.Line
+        # Write-Host "`nError in Line Number: "$_.InvocationInfo.ScriptLineNumber
+        # Write-Host "`nError Item Name: "$_.Exception.ItemName
     }
 }
 
-Set-Location microsoftgraph-docs-powershell
-$date = Get-Date -Format "dd-MM-yyyy"
-$proposedBranch = "weekly_v2_docs_update_$date"
-$exists = git branch -l $proposedBranch
-if ([string]::IsNullOrEmpty($exists)) {
-    git checkout -b $proposedBranch
-}
-else {
-    Write-Host "Branch already exists"
-    git checkout $proposedBranch
-}
 
 if (!(Get-Module "powershell-yaml" -ListAvailable -ErrorAction SilentlyContinue)) {
     Install-Module "powershell-yaml" -AcceptLicense -Scope CurrentUser -Force
@@ -380,7 +291,4 @@ if ($ModulesToGenerate.Count -eq 0) {
     [HashTable] $ModuleMapping = Get-Content $ModuleMappingConfigPath | ConvertFrom-Json -AsHashTable
     $ModulesToGenerate = $ModuleMapping.Keys
 }
-Set-Location ..\microsoftgraph-docs-powershell
-Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
 Start-Generator -ModulesToGenerate $ModulesToGenerate
-Write-Host -ForegroundColor Green "-------------Done-------------"

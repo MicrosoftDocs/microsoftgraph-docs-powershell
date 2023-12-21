@@ -71,6 +71,8 @@ Update the properties of the specified onlineMeeting object.
 Please see Request body section for the list of properties that support updating.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onlinemeeting-update-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

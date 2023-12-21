@@ -35,6 +35,8 @@ Delete or hang up an active call.
 For group calls, this will only delete your call leg and the underlying group call will still continue.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-delete-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

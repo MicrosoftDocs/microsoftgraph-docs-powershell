@@ -55,6 +55,8 @@ For example, this method can be used to clean up the IVR operation queue for a n
 However, it will not cancel a subscribeToTone operation because it operates independent of any operation queue.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-cancelmediaprocessing-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Stop-MgCommunicationCallMediaProcessing Cmdlet
 ```powershell

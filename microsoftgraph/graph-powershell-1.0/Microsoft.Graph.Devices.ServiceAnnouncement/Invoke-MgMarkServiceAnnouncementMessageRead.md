@@ -34,6 +34,8 @@ Invoke-MgMarkServiceAnnouncementMessageRead
 Mark a list of serviceUpdateMessages as read for the signed in user.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceupdatemessage-markread-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

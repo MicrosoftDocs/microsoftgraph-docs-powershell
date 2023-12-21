@@ -49,6 +49,8 @@ Set the verifiedPublisher on an application.
 For more information, including prerequisites to setting a verified publisher, see Publisher verification.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-setverifiedpublisher-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Set-MgApplicationVerifiedPublisher Cmdlet
 ```powershell
