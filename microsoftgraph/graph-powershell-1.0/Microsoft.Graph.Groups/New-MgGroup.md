@@ -9,8 +9,7 @@ ms.prod: groups
 # New-MgGroup
 
 ## SYNOPSIS
-Create a new group as specified in the request body.
-You can create the following types of groups: This operation returns by default only a subset of the properties for each group.
+Create a new group as specified in the request body. This operation returns by default only a subset of the properties for each group.
 These default properties are noted in the Properties section.
 To get properties that are not returned by default, do a GET operation and specify the properties in a $select OData query option.
 This API is available in the following national cloud deployments.
@@ -58,8 +57,7 @@ New-MgGroup -BodyParameter <IMicrosoftGraphGroup> [-WhatIf] [-Confirm] [<CommonP
 ```
 
 ## DESCRIPTION
-Create a new group as specified in the request body.
-You can create the following types of groups: This operation returns by default only a subset of the properties for each group.
+Create a new group as specified in the request body. This operation returns by default only a subset of the properties for each group.
 These default properties are noted in the Properties section.
 To get properties that are not returned by default, do a GET operation and specify the properties in a $select OData query option.
 This API is available in the following national cloud deployments.
