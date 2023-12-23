@@ -40,22 +40,6 @@ Only a student in the class can determine what files to upload in a given submis
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsubmission-setupresourcesfolder-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -188,5 +172,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 [Set-MgEducationUserAssignmentSubmissionUpResourceFolder](/powershell/module/Microsoft.Graph.Education/Set-MgEducationUserAssignmentSubmissionUpResourceFolder?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/set-mgbetaeducationuserassignmentsubmissionupresourcefolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/set-mgbetaeducationuserassignmentsubmissionupresourcefolder)
+
 
 

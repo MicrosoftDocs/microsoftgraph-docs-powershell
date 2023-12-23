@@ -29,18 +29,6 @@ Get-MgBetaGroupThreadPostCount -InputObject <IGroupsIdentity> [-Filter <String>]
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ConversationThreadId
@@ -166,5 +154,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Get-MgGroupThreadPostCount](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupThreadPostCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupthreadpostcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupthreadpostcount)
+
 
 

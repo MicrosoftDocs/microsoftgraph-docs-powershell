@@ -37,18 +37,6 @@ Get-MgBetaPrivacySubjectRightsRequestCollaborator -InputObject <IComplianceIdent
 ## DESCRIPTION
 Get collaborators from privacy
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -286,5 +274,6 @@ INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
 [Get-MgPrivacySubjectRightsRequestCollaborator](/powershell/module/Microsoft.Graph.Compliance/Get-MgPrivacySubjectRightsRequestCollaborator?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetaprivacysubjectrightsrequestcollaborator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetaprivacysubjectrightsrequestcollaborator)
+
 
 

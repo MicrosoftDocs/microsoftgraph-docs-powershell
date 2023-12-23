@@ -50,22 +50,6 @@ Hide a chat for a user.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-hideforuser-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -303,5 +287,6 @@ This property is read-only.
 [Hide-MgUserChatForUser](/powershell/module/Microsoft.Graph.Users.Actions/Hide-MgUserChatForUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/hide-mgbetauserchatforuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/hide-mgbetauserchatforuser)
+
 
 

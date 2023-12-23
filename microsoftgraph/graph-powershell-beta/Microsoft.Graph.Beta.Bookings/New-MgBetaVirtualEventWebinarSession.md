@@ -66,18 +66,6 @@ New-MgBetaVirtualEventWebinarSession -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Create new navigation property to sessions for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1201,5 +1189,6 @@ WATERMARKPROTECTION \<IMicrosoftGraphWatermarkProtectionValues\>: watermarkProte
 [New-MgVirtualEventWebinarSession](/powershell/module/Microsoft.Graph.Bookings/New-MgVirtualEventWebinarSession?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventwebinarsession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventwebinarsession)
+
 
 

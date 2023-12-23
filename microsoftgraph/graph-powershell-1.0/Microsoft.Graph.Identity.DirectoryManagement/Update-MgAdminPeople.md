@@ -30,18 +30,6 @@ Update-MgAdminPeople -BodyParameter <IMicrosoftGraphPeopleAdminSettings> [-WhatI
 ## DESCRIPTION
 Update the navigation property people in admin
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -189,5 +177,6 @@ Allowed values for this field are: UserPrincipalName, Fax, StreetAddress, Postal
 [Update-MgBetaAdminPeople](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaAdminPeople?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgadminpeople](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgadminpeople)
+
 
 

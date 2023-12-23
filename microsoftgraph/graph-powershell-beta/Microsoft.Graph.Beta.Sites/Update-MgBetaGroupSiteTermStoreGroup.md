@@ -46,22 +46,6 @@ Update-MgBetaGroupSiteTermStoreGroup -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the navigation property groups in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -465,5 +449,6 @@ Read-only.
 [Update-MgGroupSiteTermStoreGroup](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteTermStoreGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitetermstoregroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitetermstoregroup)
+
 
 

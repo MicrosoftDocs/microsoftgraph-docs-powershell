@@ -40,22 +40,6 @@ Get-MgReportOneDriveActivityUserDetail -InputObject <IReportsIdentity> -OutFile 
 ## DESCRIPTION
 Invoke function getOneDriveActivityUserDetail
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Date
@@ -175,5 +159,6 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
 [Get-MgBetaReportOneDriveActivityUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOneDriveActivityUserDetail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveactivityuserdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveactivityuserdetail)
+
 
 

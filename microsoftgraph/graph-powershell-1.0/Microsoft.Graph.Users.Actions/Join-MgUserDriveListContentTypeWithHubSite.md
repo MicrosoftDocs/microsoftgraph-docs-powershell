@@ -50,22 +50,6 @@ Associate a published \[content type\]\[contentType\] present in a content type 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-associatewithhubsites-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -292,5 +276,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 [Join-MgBetaUserDriveListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Join-MgBetaUserDriveListContentTypeWithHubSite?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/join-mguserdrivelistcontenttypewithhubsite](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/join-mguserdrivelistcontenttypewithhubsite)
+
 
 

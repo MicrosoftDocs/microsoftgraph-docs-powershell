@@ -32,22 +32,6 @@ Get-MgGroupSiteContentTypeCompatibleHubContentType -InputObject <IGroupsIdentity
 ## DESCRIPTION
 Invoke function getCompatibleHubContentTypes
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -257,5 +241,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Get-MgBetaGroupSiteContentTypeCompatibleHubContentType](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupSiteContentTypeCompatibleHubContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsitecontenttypecompatiblehubcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsitecontenttypecompatiblehubcontenttype)
+
 
 

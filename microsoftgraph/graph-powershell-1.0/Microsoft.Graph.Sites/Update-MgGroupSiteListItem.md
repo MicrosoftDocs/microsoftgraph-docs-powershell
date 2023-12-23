@@ -56,22 +56,6 @@ Update-MgGroupSiteListItem -InputObject <ISitesIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Update the navigation property items in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -23556,5 +23540,6 @@ Read-only.
 [Update-MgBetaGroupSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteListItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitelistitem)
+
 
 

@@ -47,18 +47,6 @@ Update-MgBetaVirtualEventWebinarSessionAttendanceReport -InputObject <IBookingsI
 ## DESCRIPTION
 Update the navigation property attendanceReports in solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -359,5 +347,6 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 [Update-MgVirtualEventWebinarSessionAttendanceReport](/powershell/module/Microsoft.Graph.Bookings/Update-MgVirtualEventWebinarSessionAttendanceReport?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventwebinarsessionattendancereport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventwebinarsessionattendancereport)
+
 
 

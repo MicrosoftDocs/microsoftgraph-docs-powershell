@@ -50,22 +50,6 @@ Update-MgShareListSubscription -InputObject <IFilesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Update the navigation property subscriptions in shares
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -559,5 +543,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Update-MgBetaShareListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListSubscription?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharelistsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharelistsubscription)
+
 
 

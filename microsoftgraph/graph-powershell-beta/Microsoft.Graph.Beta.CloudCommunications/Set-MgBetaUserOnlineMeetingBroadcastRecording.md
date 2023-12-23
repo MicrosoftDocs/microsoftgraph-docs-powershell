@@ -27,18 +27,6 @@ Set-MgBetaUserOnlineMeetingBroadcastRecording -InputObject <ICloudCommunications
 ## DESCRIPTION
 Update broadcastRecording for the navigation property onlineMeetings in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Data
@@ -204,5 +192,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetauseronlinemeetingbroadcastrecording](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetauseronlinemeetingbroadcastrecording)
+
 
 

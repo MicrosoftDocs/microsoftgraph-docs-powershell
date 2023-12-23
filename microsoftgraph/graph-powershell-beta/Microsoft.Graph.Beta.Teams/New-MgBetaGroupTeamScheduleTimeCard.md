@@ -47,22 +47,6 @@ New-MgBetaGroupTeamScheduleTimeCard -InputObject <ITeamsIdentity> -BodyParameter
 ## DESCRIPTION
 Create a timeCard instance in a schedule.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -505,5 +489,6 @@ ORIGINALENTRY \<IMicrosoftGraphTimeCardEntry\>: timeCardEntry
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamscheduletimecard](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamscheduletimecard)
+
 
 

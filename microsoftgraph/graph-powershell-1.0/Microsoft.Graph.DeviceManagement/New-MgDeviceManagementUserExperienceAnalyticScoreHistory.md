@@ -30,18 +30,6 @@ New-MgDeviceManagementUserExperienceAnalyticScoreHistory
 ## DESCRIPTION
 Create new navigation property to userExperienceAnalyticsScoreHistory for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -170,5 +158,6 @@ Returned by default.
 [New-MgBetaDeviceManagementUserExperienceAnalyticScoreHistory](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementUserExperienceAnalyticScoreHistory?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticscorehistory](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticscorehistory)
+
 
 

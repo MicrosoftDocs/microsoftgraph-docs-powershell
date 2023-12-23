@@ -47,18 +47,6 @@ New-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment
 ## DESCRIPTION
 Create new navigation property to assignments for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -279,5 +267,6 @@ TARGET \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>: Base type for 
 [New-MgDeviceManagementDeviceEnrollmentConfigurationAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgDeviceManagementDeviceEnrollmentConfigurationAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementdeviceenrollmentconfigurationassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementdeviceenrollmentconfigurationassignment)
+
 
 

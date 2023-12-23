@@ -48,18 +48,6 @@ Update-MgBetaDeviceAppManagementAndroidManagedAppProtectionAssignment
 ## DESCRIPTION
 Update the navigation property assignments in deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -338,5 +326,6 @@ TARGET \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>: Base type for 
 [Update-MgDeviceAppManagementAndroidManagedAppProtectionAssignment](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementAndroidManagedAppProtectionAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementandroidmanagedappprotectionassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementandroidmanagedappprotectionassignment)
+
 
 

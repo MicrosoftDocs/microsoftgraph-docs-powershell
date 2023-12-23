@@ -28,22 +28,6 @@ Invoke-MgBetaPreviewGroupOnenotePage -InputObject <IGroupsIdentity> [<CommonPara
 ## DESCRIPTION
 Invoke function preview
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -GroupId
@@ -154,5 +138,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Invoke-MgPreviewGroupOnenotePage](/powershell/module/Microsoft.Graph.Groups/Invoke-MgPreviewGroupOnenotePage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetapreviewgrouponenotepage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetapreviewgrouponenotepage)
+
 
 

@@ -32,22 +32,6 @@ Update-MgBetaDeviceManagementReport -BodyParameter <IMicrosoftGraphDeviceManagem
 ## DESCRIPTION
 Update the navigation property reports in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -252,5 +236,6 @@ This property is read-only.
 [Update-MgDeviceManagementReport](/powershell/module/Microsoft.Graph.Reports/Update-MgDeviceManagementReport?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetadevicemanagementreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetadevicemanagementreport)
+
 
 

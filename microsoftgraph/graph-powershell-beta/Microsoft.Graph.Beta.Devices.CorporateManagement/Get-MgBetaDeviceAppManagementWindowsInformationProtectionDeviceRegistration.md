@@ -36,18 +36,6 @@ Get-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistration
 ## DESCRIPTION
 Windows information protection device registrations that are not MDM enrolled.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -320,5 +308,6 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementwindowsinformationprotectiondeviceregistration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementwindowsinformationprotectiondeviceregistration)
+
 
 

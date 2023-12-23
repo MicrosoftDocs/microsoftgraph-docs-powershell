@@ -33,22 +33,6 @@ A container for Microsoft Teams features available for the user.
 Read-only.
 Nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -165,5 +149,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Get-MgBetaUserTeamwork](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserTeamwork?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserteamwork](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserteamwork)
+
 
 

@@ -30,18 +30,6 @@ Get-MgSiteListColumnCount -InputObject <ISitesIdentity> [-Filter <String>] [-Sea
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -179,5 +167,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgBetaSiteListColumnCount](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListColumnCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistcolumncount](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistcolumncount)
+
 
 

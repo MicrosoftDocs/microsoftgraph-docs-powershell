@@ -35,18 +35,6 @@ Get-MgBetaReportUserInsightMonthlyMfaCompletion -InputObject <IReportsIdentity> 
 ## DESCRIPTION
 Insights for MFA usage on apps registered in the tenant for a specified period.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -293,5 +281,6 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportuserinsightmonthlymfacompletion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportuserinsightmonthlymfacompletion)
+
 
 

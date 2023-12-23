@@ -39,22 +39,6 @@ New-MgBetaUserInformationProtectionDataLossPreventionPolicy -InputObject <IIdent
 ## DESCRIPTION
 Create new navigation property to dataLossPreventionPolicies for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -285,5 +269,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetauserinformationprotectiondatalosspreventionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetauserinformationprotectiondatalosspreventionpolicy)
+
 
 

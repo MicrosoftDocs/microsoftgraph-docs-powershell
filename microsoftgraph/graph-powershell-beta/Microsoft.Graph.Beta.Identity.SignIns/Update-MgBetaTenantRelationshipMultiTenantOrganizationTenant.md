@@ -47,18 +47,6 @@ Update-MgBetaTenantRelationshipMultiTenantOrganizationTenant -InputObject <IIden
 ## DESCRIPTION
 Update the navigation property tenants in tenantRelationships
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AddedByTenantId
@@ -444,5 +432,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatenantrelationshipmultitenantorganizationtenant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatenantrelationshipmultitenantorganizationtenant)
+
 
 

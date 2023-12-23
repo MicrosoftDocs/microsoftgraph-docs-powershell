@@ -32,22 +32,6 @@ Restore-MgGroupSiteListItemVersion -InputObject <IGroupsIdentity> [-PassThru] [-
 Restore a previous version of a ListItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the item.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -GroupId
@@ -243,5 +227,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Restore-MgBetaGroupSiteListItemVersion](/powershell/module/Microsoft.Graph.Beta.Groups/Restore-MgBetaGroupSiteListItemVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/restore-mggroupsitelistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/restore-mggroupsitelistitemversion)
+
 
 

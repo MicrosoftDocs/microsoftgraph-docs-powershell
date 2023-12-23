@@ -37,22 +37,6 @@ Only teachers can perform this operation.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-remove-category-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -223,5 +207,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 [Remove-MgBetaEducationUserAssignmentCategoryByRef](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationUserAssignmentCategoryByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationuserassignmentcategorybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationuserassignmentcategorybyref)
+
 
 

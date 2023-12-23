@@ -50,22 +50,6 @@ You can find the log in Microsoft Entra audit logs under the KeyManagement categ
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bitlocker-list-recoverykeys-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -362,5 +346,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserinformationprotectionbitlockerrecoverykey](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserinformationprotectionbitlockerrecoverykey)
+
 
 

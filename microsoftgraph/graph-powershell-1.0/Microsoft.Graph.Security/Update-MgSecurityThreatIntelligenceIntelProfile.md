@@ -52,18 +52,6 @@ Update-MgSecurityThreatIntelligenceIntelProfile -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property intelProfiles in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -467,5 +455,6 @@ TRADECRAFT \<IMicrosoftGraphSecurityFormattedContent\>: formattedContent
 [Update-MgBetaSecurityThreatIntelligenceIntelProfile](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligenceIntelProfile?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligenceintelprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligenceintelprofile)
+
 
 

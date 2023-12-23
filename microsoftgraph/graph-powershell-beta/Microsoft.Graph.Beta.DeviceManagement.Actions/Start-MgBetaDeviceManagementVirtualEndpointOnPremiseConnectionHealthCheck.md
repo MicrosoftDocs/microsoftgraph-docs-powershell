@@ -33,18 +33,6 @@ This will trigger a new health check for this cloudPcOnPremisesConnection object
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpconpremisesconnection-runhealthcheck-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CloudPcOnPremisesConnectionId
@@ -196,5 +184,6 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/start-mgbetadevicemanagementvirtualendpointonpremiseconnectionhealthcheck](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/start-mgbetadevicemanagementvirtualendpointonpremiseconnectionhealthcheck)
+
 
 

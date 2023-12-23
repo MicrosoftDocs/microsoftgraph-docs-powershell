@@ -29,18 +29,6 @@ Get-MgUserTodoListCount -InputObject <IUsersIdentity> [-Filter <String>] [-Searc
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -138,5 +126,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Get-MgBetaUserTodoListCount](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoListCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodolistcount](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodolistcount)
+
 
 

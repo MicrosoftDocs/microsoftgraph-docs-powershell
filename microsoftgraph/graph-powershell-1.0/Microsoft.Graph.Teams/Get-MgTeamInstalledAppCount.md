@@ -29,18 +29,6 @@ Get-MgTeamInstalledAppCount -InputObject <ITeamsIdentity> [-Filter <String>] [-S
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -157,5 +145,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Get-MgBetaTeamInstalledAppCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamInstalledAppCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteaminstalledappcount](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteaminstalledappcount)
+
 
 

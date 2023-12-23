@@ -56,22 +56,6 @@ Update-MgBetaDriveListContentType -InputObject <IFilesIdentity> -BodyParameter <
 ## DESCRIPTION
 Update the navigation property contentTypes in drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1781,5 +1765,6 @@ ORDER \<IMicrosoftGraphContentTypeOrder\>: contentTypeOrder
 [Update-MgDriveListContentType](/powershell/module/Microsoft.Graph.Files/Update-MgDriveListContentType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadrivelistcontenttype)
+
 
 

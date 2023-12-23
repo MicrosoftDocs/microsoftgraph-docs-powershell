@@ -27,18 +27,6 @@ Send-MgBetaFinancialCompanySalesQuote -InputObject <IFinancialsIdentity> [-PassT
 ## DESCRIPTION
 Invoke action send
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CompanyId
@@ -189,5 +177,6 @@ INPUTOBJECT \<IFinancialsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/send-mgbetafinancialcompanysalesquote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/send-mgbetafinancialcompanysalesquote)
+
 
 

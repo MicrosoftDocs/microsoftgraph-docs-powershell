@@ -59,18 +59,6 @@ Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecisionInstan
 ## DESCRIPTION
 Update the navigation property instance in identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessReviewInstanceDecisionItemId
@@ -1779,5 +1767,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewdefinitioninstancestagedecisioninstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewdefinitioninstancestagedecisioninstance)
+
 
 

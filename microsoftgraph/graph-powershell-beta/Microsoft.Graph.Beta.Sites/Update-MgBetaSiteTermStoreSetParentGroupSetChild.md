@@ -84,18 +84,6 @@ Update-MgBetaSiteTermStoreSetParentGroupSetChild -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the navigation property children in sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -684,5 +672,6 @@ Read-only.
 [Update-MgSiteTermStoreSetParentGroupSetChild](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteTermStoreSetParentGroupSetChild?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitetermstoresetparentgroupsetchild](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitetermstoresetparentgroupsetchild)
+
 
 

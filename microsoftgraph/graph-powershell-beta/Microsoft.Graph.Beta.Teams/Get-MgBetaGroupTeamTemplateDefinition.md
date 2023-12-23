@@ -27,22 +27,6 @@ Get-MgBetaGroupTeamTemplateDefinition -InputObject <ITeamsIdentity> [-ExpandProp
 ## DESCRIPTION
 Generic representation of a team template definition for a team with a specific structure and configuration.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -165,5 +149,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamtemplatedefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamtemplatedefinition)
+
 
 

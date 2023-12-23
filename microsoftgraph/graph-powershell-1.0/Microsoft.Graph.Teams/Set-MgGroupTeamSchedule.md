@@ -58,18 +58,6 @@ Set-MgGroupTeamSchedule -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Update the navigation property schedule in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -900,5 +888,6 @@ Required.
 [Set-MgBetaGroupTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaGroupTeamSchedule?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mggroupteamschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mggroupteamschedule)
+
 
 

@@ -45,18 +45,6 @@ Update-MgBetaSecurityThreatIntelligenceHostCookie -InputObject <ISecurityIdentit
 ## DESCRIPTION
 Update the navigation property hostCookies in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -905,5 +893,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Update-MgSecurityThreatIntelligenceHostCookie](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligenceHostCookie?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencehostcookie](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencehostcookie)
+
 
 

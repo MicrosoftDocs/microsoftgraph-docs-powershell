@@ -30,18 +30,6 @@ Get-MgBetaGroupDriveItemCreatedByUser -InputObject <IFilesIdentity> [-ExpandProp
 ## DESCRIPTION
 Get createdByUser from groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -180,5 +168,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgGroupDriveItemCreatedByUser](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveItemCreatedByUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriveitemcreatedbyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriveitemcreatedbyuser)
+
 
 

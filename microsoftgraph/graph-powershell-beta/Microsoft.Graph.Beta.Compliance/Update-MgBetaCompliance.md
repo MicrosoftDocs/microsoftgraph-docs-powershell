@@ -29,22 +29,6 @@ Update-MgBetaCompliance -BodyParameter <IMicrosoftGraphCompliance> [-WhatIf] [-C
 ## DESCRIPTION
 Update compliance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -15344,5 +15328,6 @@ Read-only.
 [Update-MgCompliance](/powershell/module/Microsoft.Graph.Compliance/Update-MgCompliance?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacompliance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacompliance)
+
 
 

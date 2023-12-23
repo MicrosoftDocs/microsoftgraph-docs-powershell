@@ -45,22 +45,6 @@ Returns the metadata for an \[item\]\[\] in a \[list\]\[\].
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-list-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -349,5 +333,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgBetaGroupSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistitem)
+
 
 

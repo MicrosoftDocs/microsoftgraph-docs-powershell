@@ -56,18 +56,6 @@ Update-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleInstance
 ## DESCRIPTION
 Update the navigation property roleEligibilityScheduleInstances in roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -640,5 +628,6 @@ Read-only when isBuiltIn is true.
 [Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagemententitlementmanagementroleeligibilityscheduleinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagemententitlementmanagementroleeligibilityscheduleinstance)
+
 
 

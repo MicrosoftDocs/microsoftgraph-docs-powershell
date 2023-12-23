@@ -31,18 +31,6 @@ Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphManagedMobileLobAppC
 ## DESCRIPTION
 Renews the SAS URI for an application file upload.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -241,5 +229,6 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
 [Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphManagedMobileLobAppContentVersionFileUpload](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphManagedMobileLobAppContentVersionFileUpload?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetarenewdeviceappmanagementmobileappmicrosoftgraphmanagedmobilelobappcontentversionfileupload](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetarenewdeviceappmanagementmobileappmicrosoftgraphmanagedmobilelobappcontentversionfileupload)
+
 
 

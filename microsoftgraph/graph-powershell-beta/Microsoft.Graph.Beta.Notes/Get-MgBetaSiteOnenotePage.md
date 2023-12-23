@@ -41,22 +41,6 @@ The pages in all OneNote notebooks that are owned by the user or group.
 Read-only.
 Nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -286,5 +270,6 @@ INPUTOBJECT \<INotesIdentity\>: Identity Parameter
 [Get-MgSiteOnenotePage](/powershell/module/Microsoft.Graph.Notes/Get-MgSiteOnenotePage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasiteonenotepage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasiteonenotepage)
+
 
 

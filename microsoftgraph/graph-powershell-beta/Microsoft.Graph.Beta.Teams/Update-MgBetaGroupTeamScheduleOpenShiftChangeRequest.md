@@ -46,22 +46,6 @@ Update-MgBetaGroupTeamScheduleOpenShiftChangeRequest -InputObject <ITeamsIdentit
 ## DESCRIPTION
 Update the navigation property openShiftChangeRequests in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -399,5 +383,6 @@ This property is read-only.
 [Update-MgGroupTeamScheduleOpenShiftChangeRequest](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamScheduleOpenShiftChangeRequest?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamscheduleopenshiftchangerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamscheduleopenshiftchangerequest)
+
 
 

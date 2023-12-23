@@ -50,18 +50,6 @@ Update-MgGroupSiteOnenoteNotebookSectionPage -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the navigation property pages in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -910,5 +898,6 @@ Read-only.
 [Update-MgBetaGroupSiteOnenoteNotebookSectionPage](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteOnenoteNotebookSectionPage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsiteonenotenotebooksectionpage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsiteonenotenotebooksectionpage)
+
 
 

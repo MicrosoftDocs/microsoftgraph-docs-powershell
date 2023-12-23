@@ -30,18 +30,6 @@ Get-MgGroupSiteOnenote -InputObject <ISitesIdentity> [-ExpandProperty <String[]>
 ## DESCRIPTION
 Calls the OneNote service for notebook related operations.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -179,5 +167,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgBetaGroupSiteOnenote](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenote?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenote](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenote)
+
 
 

@@ -49,18 +49,6 @@ Update-MgBetaSecurityThreatIntelligenceArticle -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property articles in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -461,5 +449,6 @@ SUMMARY \<IMicrosoftGraphSecurityFormattedContent\>: formattedContent
 [Update-MgSecurityThreatIntelligenceArticle](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligenceArticle?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencearticle](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencearticle)
+
 
 

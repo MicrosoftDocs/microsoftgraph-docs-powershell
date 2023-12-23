@@ -48,18 +48,6 @@ Update-MgBetaIdentityGovernanceTermsOfUseAgreementFileVersion -InputObject <IIde
 ## DESCRIPTION
 Update the navigation property versions in identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -445,5 +433,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [Update-MgIdentityGovernanceTermsOfUseAgreementFileVersion](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceTermsOfUseAgreementFileVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancetermsofuseagreementfileversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancetermsofuseagreementfileversion)
+
 
 

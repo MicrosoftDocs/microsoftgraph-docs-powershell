@@ -39,18 +39,6 @@ Get-MgUserTodoTaskExtension -InputObject <IUsersIdentity> [-ExpandProperty <Stri
 The collection of open extensions defined for the task.
 Nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -315,5 +303,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Get-MgBetaUserTodoTaskExtension](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTaskExtension?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskextension](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskextension)
+
 
 

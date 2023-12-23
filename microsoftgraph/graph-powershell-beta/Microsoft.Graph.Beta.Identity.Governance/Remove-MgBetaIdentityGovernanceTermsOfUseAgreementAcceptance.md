@@ -42,18 +42,6 @@ Remove-MgBetaIdentityGovernanceTermsOfUseAgreementAcceptance -InputObject <IIden
 ## DESCRIPTION
 Delete navigation property agreementAcceptances for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AgreementAcceptanceId
@@ -283,5 +271,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [Remove-MgIdentityGovernanceTermsOfUseAgreementAcceptance](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgIdentityGovernanceTermsOfUseAgreementAcceptance?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaidentitygovernancetermsofuseagreementacceptance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaidentitygovernancetermsofuseagreementacceptance)
+
 
 

@@ -38,22 +38,6 @@ New-MgBetaDeviceManagementDeviceCompliancePolicy -BodyParameter <IMicrosoftGraph
 ## DESCRIPTION
 Create new navigation property to deviceCompliancePolicies for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -534,5 +518,6 @@ Read-only.
 [New-MgDeviceManagementDeviceCompliancePolicy](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDeviceCompliancePolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdevicecompliancepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdevicecompliancepolicy)
+
 
 

@@ -44,22 +44,6 @@ Update-MgBetaEducationMe -BodyParameter <IMicrosoftGraphEducationUser> [-WhatIf]
 ## DESCRIPTION
 Update the navigation property me in education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccountEnabled
@@ -39127,5 +39111,6 @@ Read-only.
 [Update-MgEducationMe](/powershell/module/Microsoft.Graph.Education/Update-MgEducationMe?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationme](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationme)
+
 
 

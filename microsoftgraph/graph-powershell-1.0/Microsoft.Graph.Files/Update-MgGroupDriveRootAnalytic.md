@@ -46,18 +46,6 @@ Update-MgGroupDriveRootAnalytic -InputObject <IFilesIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Update the navigation property analytics in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -18557,5 +18545,6 @@ Read-only.
 [Update-MgBetaGroupDriveRootAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveRootAnalytic?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriverootanalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriverootanalytic)
+
 
 

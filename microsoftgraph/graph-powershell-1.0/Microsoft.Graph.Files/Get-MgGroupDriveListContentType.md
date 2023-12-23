@@ -41,22 +41,6 @@ The collection of content types present in this list.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/list-list-contenttypes-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -316,5 +300,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgBetaGroupDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveListContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivelistcontenttype)
+
 
 

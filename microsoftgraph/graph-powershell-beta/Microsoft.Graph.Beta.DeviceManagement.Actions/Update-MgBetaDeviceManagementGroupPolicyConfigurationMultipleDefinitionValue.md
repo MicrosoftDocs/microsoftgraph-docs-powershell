@@ -47,22 +47,6 @@ Update-MgBetaDeviceManagementGroupPolicyConfigurationMultipleDefinitionValue
 ## DESCRIPTION
 Invoke action updateDefinitionValues
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Added
@@ -516,5 +500,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/update-mgbetadevicemanagementgrouppolicyconfigurationmultipledefinitionvalue](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/update-mgbetadevicemanagementgrouppolicyconfigurationmultipledefinitionvalue)
+
 
 

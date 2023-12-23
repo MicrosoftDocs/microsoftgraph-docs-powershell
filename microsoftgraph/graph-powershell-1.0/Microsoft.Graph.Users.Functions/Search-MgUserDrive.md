@@ -31,22 +31,6 @@ Search-MgUserDrive -InputObject <IUsersFunctionsIdentity> [-Count] [-Filter <Str
 ## DESCRIPTION
 Invoke function search
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -262,5 +246,6 @@ INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
 [Search-MgBetaUserDrive](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Search-MgBetaUserDrive?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/search-mguserdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/search-mguserdrive)
+
 
 

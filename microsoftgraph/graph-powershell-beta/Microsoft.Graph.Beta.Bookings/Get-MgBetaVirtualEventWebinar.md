@@ -42,18 +42,6 @@ Read the properties and relationships of a virtualEventWebinar object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualeventwebinar-get-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -279,5 +267,6 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 [Get-MgVirtualEventWebinar](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventWebinar?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinar](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinar)
+
 
 

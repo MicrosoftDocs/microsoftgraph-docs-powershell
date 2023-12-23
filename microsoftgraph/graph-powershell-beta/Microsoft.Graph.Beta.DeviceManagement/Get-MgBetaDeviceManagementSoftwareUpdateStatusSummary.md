@@ -23,22 +23,6 @@ Get-MgBetaDeviceManagementSoftwareUpdateStatusSummary [-ExpandProperty <String[]
 ## DESCRIPTION
 The software update status summary.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -85,5 +69,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgDeviceManagementSoftwareUpdateStatusSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementSoftwareUpdateStatusSummary?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementsoftwareupdatestatussummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementsoftwareupdatestatussummary)
+
 
 

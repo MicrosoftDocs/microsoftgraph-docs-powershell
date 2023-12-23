@@ -44,22 +44,6 @@ Remove-MgBetaGroupFromLifecyclePolicy -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Invoke action removeGroup
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -237,5 +221,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Remove-MgGroupFromLifecyclePolicy](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupFromLifecyclePolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupfromlifecyclepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupfromlifecyclepolicy)
+
 
 

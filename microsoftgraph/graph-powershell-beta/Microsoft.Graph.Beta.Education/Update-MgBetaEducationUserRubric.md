@@ -60,22 +60,6 @@ That rubric can be retrieved using GET /education/classes/{id}/assignments/{id}/
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationrubric-update-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -439,5 +423,6 @@ Weights must add up to 100.
 [Update-MgEducationUserRubric](/powershell/module/Microsoft.Graph.Education/Update-MgEducationUserRubric?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationuserrubric](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationuserrubric)
+
 
 

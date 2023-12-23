@@ -49,18 +49,6 @@ Update-MgBetaEducationSchoolAdministrativeUnit -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Update the navigation property administrativeUnit in education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -413,5 +401,6 @@ When the unique identifier is unavailable, the displayName property is provided 
 [Update-MgEducationSchoolAdministrativeUnit](/powershell/module/Microsoft.Graph.Education/Update-MgEducationSchoolAdministrativeUnit?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationschooladministrativeunit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationschooladministrativeunit)
+
 
 

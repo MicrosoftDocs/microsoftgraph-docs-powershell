@@ -42,22 +42,6 @@ New-MgDriveListContentTypeColumnLink -InputObject <IFilesIdentity> -BodyParamete
 ## DESCRIPTION
 Create new navigation property to columnLinks for drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -251,5 +235,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [New-MgBetaDriveListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListContentTypeColumnLink?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrivelistcontenttypecolumnlink](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrivelistcontenttypecolumnlink)
+
 
 

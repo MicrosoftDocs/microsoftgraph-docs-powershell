@@ -52,18 +52,6 @@ Update-MgBetaUserDriveItemAnalyticItemActivityStat -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property itemActivityStats in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Access
@@ -15183,5 +15171,6 @@ Read-only.
 [Update-MgUserDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveItemAnalyticItemActivityStat?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriveitemanalyticitemactivitystat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriveitemanalyticitemactivitystat)
+
 
 

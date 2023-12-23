@@ -33,18 +33,6 @@ Remove a user's manager.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-delete-manager-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -173,5 +161,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Remove-MgBetaUserManager](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserManager?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusermanager](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusermanager)
+
 
 

@@ -44,22 +44,6 @@ Get-MgBetaGroupDriveRootDelta -InputObject <IGroupsIdentity> [-Filter <String>] 
 ## DESCRIPTION
 Invoke function delta
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -336,5 +320,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Get-MgGroupDriveRootDelta](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupDriveRootDelta?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupdriverootdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupdriverootdelta)
+
 
 

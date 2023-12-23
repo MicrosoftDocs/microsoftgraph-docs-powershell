@@ -19,22 +19,6 @@ Enable-MgBetaDeviceManagementLegacyPcManagement [-PassThru] [-WhatIf] [-Confirm]
 ## DESCRIPTION
 Invoke action enableLegacyPcManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -PassThru
@@ -96,5 +80,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/enable-mgbetadevicemanagementlegacypcmanagement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/enable-mgbetadevicemanagementlegacypcmanagement)
+
 
 

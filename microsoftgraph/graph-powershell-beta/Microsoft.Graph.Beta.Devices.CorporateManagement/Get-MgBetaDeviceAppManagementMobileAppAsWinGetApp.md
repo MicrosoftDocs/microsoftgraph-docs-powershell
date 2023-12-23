@@ -34,18 +34,6 @@ Get-MgBetaDeviceAppManagementMobileAppAsWinGetApp -InputObject <IDevicesCorporat
 ## DESCRIPTION
 Get the item of type microsoft.graph.mobileApp as microsoft.graph.winGetApp
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -318,5 +306,6 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementmobileappaswingetapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementmobileappaswingetapp)
+
 
 

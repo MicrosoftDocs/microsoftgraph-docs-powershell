@@ -44,18 +44,6 @@ Invoke-MgBetaCleanUserManagedDeviceWindowsDevice -InputObject <IUsersActionsIden
 ## DESCRIPTION
 Clean Windows device
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -262,5 +250,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 [Invoke-MgCleanUserManagedDeviceWindowsDevice](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgCleanUserManagedDeviceWindowsDevice?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetacleanusermanageddevicewindowsdevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetacleanusermanageddevicewindowsdevice)
+
 
 

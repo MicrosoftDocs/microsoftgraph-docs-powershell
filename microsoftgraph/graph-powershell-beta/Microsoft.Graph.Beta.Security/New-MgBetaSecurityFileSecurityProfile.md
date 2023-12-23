@@ -32,22 +32,6 @@ New-MgBetaSecurityFileSecurityProfile -BodyParameter <IMicrosoftGraphFileSecurit
 ## DESCRIPTION
 Create new navigation property to fileSecurityProfiles for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ActivityGroupNames
@@ -453,5 +437,6 @@ VULNERABILITYSTATES \<IMicrosoftGraphVulnerabilityState\[\]\>: .
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityfilesecurityprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityfilesecurityprofile)
+
 
 

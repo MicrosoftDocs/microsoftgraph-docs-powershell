@@ -37,18 +37,6 @@ Get-MgServicePrincipalAppManagementPolicy -InputObject <IApplicationsIdentity> [
 ## DESCRIPTION
 The appManagementPolicy applied to this application.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -291,5 +279,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Get-MgBetaServicePrincipalAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalAppManagementPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalappmanagementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalappmanagementpolicy)
+
 
 

@@ -46,22 +46,6 @@ Get-MgGroupDriveRootActivityByInterval -InputObject <IGroupsIdentity> [-Count] [
 ## DESCRIPTION
 Invoke function getActivitiesByInterval
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -316,5 +300,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Get-MgBetaGroupDriveRootActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupDriveRootActivityByInterval?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupdriverootactivitybyinterval](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupdriverootactivitybyinterval)
+
 
 

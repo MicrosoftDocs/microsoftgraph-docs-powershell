@@ -45,18 +45,6 @@ Read the properties and relationships of a todoTask object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/todotasklist-list-tasks-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -314,5 +302,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Get-MgUserTodoTask](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoTask?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotask)
+
 
 

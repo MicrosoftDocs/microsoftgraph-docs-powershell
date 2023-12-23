@@ -46,18 +46,6 @@ Update-MgCommunicationOnlineMeetingRecording -InputObject <ICloudCommunicationsI
 ## DESCRIPTION
 Update the navigation property recordings in communications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -338,5 +326,6 @@ For example, if a user changes their display name, the API might show the new va
 [Update-MgBetaCommunicationOnlineMeetingRecording](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaCommunicationOnlineMeetingRecording?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationonlinemeetingrecording](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationonlinemeetingrecording)
+
 
 

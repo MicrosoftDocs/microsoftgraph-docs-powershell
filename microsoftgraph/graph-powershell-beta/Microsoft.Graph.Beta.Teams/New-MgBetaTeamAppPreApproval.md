@@ -23,18 +23,6 @@ New-MgBetaTeamAppPreApproval -TeamsAppId <String>
 ## DESCRIPTION
 Create Preapproval policy associated with a Teams App.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ResourceSpecificApplicationPermissionsAllowedForChats
@@ -156,5 +144,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamapppreapproval](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamapppreapproval)
+
 
 

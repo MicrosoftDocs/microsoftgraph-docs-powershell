@@ -28,18 +28,6 @@ Get-MgUserCalendarGroupCount -InputObject <ICalendarIdentity> [-Filter <String>]
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -120,5 +108,6 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
 [Get-MgBetaUserCalendarGroupCount](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserCalendarGroupCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusercalendargroupcount](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusercalendargroupcount)
+
 
 

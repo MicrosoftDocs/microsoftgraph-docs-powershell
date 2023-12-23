@@ -29,22 +29,6 @@ New-MgBetaDeviceManagementUserExperienceAnalyticImpactingProcess
 ## DESCRIPTION
 Create new navigation property to userExperienceAnalyticsImpactingProcess for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -246,5 +230,6 @@ Valid values 0 to 1.79769313486232E+308
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticimpactingprocess](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticimpactingprocess)
+
 
 

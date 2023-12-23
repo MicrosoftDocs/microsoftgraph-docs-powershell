@@ -46,22 +46,6 @@ Sync-MgBetaDeviceManagementExchangeConnector -InputObject <IDeviceManagementActi
 ## DESCRIPTION
 Invoke action sync
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -265,5 +249,6 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
 [Sync-MgDeviceManagementExchangeConnector](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Sync-MgDeviceManagementExchangeConnector?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/sync-mgbetadevicemanagementexchangeconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/sync-mgbetadevicemanagementexchangeconnector)
+
 
 

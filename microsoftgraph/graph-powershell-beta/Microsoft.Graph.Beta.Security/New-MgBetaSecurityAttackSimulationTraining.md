@@ -34,18 +34,6 @@ New-MgBetaSecurityAttackSimulationTraining -BodyParameter <IMicrosoftGraphTraini
 ## DESCRIPTION
 Create new navigation property to trainings for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -449,5 +437,6 @@ When the unique identifier is unavailable, the displayName property is provided 
 [New-MgSecurityAttackSimulationTraining](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulationTraining?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationtraining](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationtraining)
+
 
 

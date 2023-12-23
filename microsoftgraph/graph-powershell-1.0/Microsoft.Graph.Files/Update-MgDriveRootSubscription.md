@@ -50,22 +50,6 @@ Update-MgDriveRootSubscription -InputObject <IFilesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Update the navigation property subscriptions in drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -559,5 +543,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Update-MgBetaDriveRootSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootSubscription?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriverootsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriverootsubscription)
+
 
 

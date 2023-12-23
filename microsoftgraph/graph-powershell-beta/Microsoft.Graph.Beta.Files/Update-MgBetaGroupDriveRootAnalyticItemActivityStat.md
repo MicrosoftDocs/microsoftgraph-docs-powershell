@@ -52,18 +52,6 @@ Update-MgBetaGroupDriveRootAnalyticItemActivityStat -InputObject <IFilesIdentity
 ## DESCRIPTION
 Update the navigation property itemActivityStats in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Access
@@ -15168,5 +15156,6 @@ Read-only.
 [Update-MgGroupDriveRootAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveRootAnalyticItemActivityStat?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriverootanalyticitemactivitystat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriverootanalyticitemactivitystat)
+
 
 

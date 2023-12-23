@@ -44,18 +44,6 @@ Invoke-MgBetaCleanDeviceManagementManagedDeviceWindowsDevice -InputObject <IDevi
 ## DESCRIPTION
 Clean Windows device
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -259,5 +247,6 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
 [Invoke-MgCleanDeviceManagementManagedDeviceWindowsDevice](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgCleanDeviceManagementManagedDeviceWindowsDevice?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetacleandevicemanagementmanageddevicewindowsdevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetacleandevicemanagementmanageddevicewindowsdevice)
+
 
 

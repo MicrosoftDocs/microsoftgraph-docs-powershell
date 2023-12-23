@@ -45,18 +45,6 @@ Update-MgBetaSecurityThreatIntelligenceHostReputation -InputObject <ISecurityIde
 ## DESCRIPTION
 Update the navigation property reputation in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -334,5 +322,6 @@ RULES \<IMicrosoftGraphSecurityHostReputationRule\[\]\>: A collection of rules t
 [Update-MgSecurityThreatIntelligenceHostReputation](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligenceHostReputation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencehostreputation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencehostreputation)
+
 
 

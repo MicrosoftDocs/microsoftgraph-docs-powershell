@@ -37,18 +37,6 @@ Get-MgBetaGroupOwnerAsDevice -InputObject <IGroupsIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.device
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -326,5 +314,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Get-MgGroupOwnerAsDevice](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupOwnerAsDevice?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupownerasdevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupownerasdevice)
+
 
 

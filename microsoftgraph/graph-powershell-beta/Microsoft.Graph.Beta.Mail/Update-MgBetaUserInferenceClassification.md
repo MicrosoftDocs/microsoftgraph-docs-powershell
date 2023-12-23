@@ -43,22 +43,6 @@ Update-MgBetaUserInferenceClassification -InputObject <IMailIdentity>
 ## DESCRIPTION
 Update the navigation property inferenceClassification in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -246,5 +230,6 @@ Read-only.
 [Update-MgUserInferenceClassification](/powershell/module/Microsoft.Graph.Mail/Update-MgUserInferenceClassification?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetauserinferenceclassification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetauserinferenceclassification)
+
 
 
