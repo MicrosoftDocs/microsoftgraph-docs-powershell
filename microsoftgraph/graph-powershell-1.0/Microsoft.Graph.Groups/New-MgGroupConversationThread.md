@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversationthread
 schema: 2.0.0
+ms.prod: groups
 ---
 
 # New-MgGroupConversationThread
@@ -52,6 +53,9 @@ A thread and post are created as specified.
 Use reply thread to further post to that thread.
 Or, if you get the post ID, you can also reply to that post in that thread.
 Note: You can also start a new conversation by first creating a thread.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/conversation-post-threads-permissions.md)]
 
 ## EXAMPLES
 

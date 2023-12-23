@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetaplaycommunicationcallprompt
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Invoke-MgBetaPlayCommunicationCallPrompt
@@ -44,6 +45,9 @@ Invoke-MgBetaPlayCommunicationCallPrompt -InputObject <ICloudCommunicationsIdent
 ## DESCRIPTION
 Play a prompt in the call.
 For more information about how to handle operations, see commsOperation
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-playprompt-permissions.md)]
 
 ## EXAMPLES
 

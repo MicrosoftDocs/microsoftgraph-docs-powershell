@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetaadminedgeinternetexplorermodesitelistsharedcookie
 schema: 2.0.0
+ms.prod: browser-management
+ms.prod: browser-management
 ---
 
 # Get-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie
@@ -33,6 +35,12 @@ Get-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie -InputObject <IDevic
 
 ## DESCRIPTION
 Get a session cookie that can be shared between a Microsoft Edge process and an Internet Explorer process, while using Internet Explorer mode.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/browsersharedcookie-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/browsersitelist-list-sharedcookies-permissions.md)]
 
 ## EXAMPLES
 

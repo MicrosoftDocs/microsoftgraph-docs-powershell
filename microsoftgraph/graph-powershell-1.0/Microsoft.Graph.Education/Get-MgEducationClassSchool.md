@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassschool
 schema: 2.0.0
+ms.prod: education
 ---
 
 # Get-MgEducationClassSchool
@@ -35,6 +36,9 @@ Get-MgEducationClassSchool -InputObject <IEducationIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 All schools that this class is associated with.
 Nullable.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationclass-list-schools-permissions.md)]
 
 ## EXAMPLES
 

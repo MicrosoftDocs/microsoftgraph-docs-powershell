@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriverootthumbnail
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Get-MgBetaGroupDriveRootThumbnail
@@ -39,6 +40,9 @@ Collection of \[thumbnailSet\]\[\] objects associated with the item.
 For more information, see \[getting thumbnails\]\[\].
 Read-only.
 Nullable.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-list-thumbnails-permissions.md)]
 
 ## EXAMPLES
 

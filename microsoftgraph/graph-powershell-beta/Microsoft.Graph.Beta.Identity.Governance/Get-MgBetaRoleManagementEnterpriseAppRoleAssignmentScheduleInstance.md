@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententerpriseapproleassignmentscheduleinstance
 schema: 2.0.0
+ms.prod: governance
+ms.prod: governance
 ---
 
 # Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstance
@@ -34,6 +36,12 @@ Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstance -InputObject
 
 ## DESCRIPTION
 Get the instance of an active role assignment.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleassignmentscheduleinstance-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rbacapplication-list-roleassignmentscheduleinstances-permissions.md)]
 
 ## EXAMPLES
 

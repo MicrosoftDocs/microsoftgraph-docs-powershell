@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktaskgrouptaskfolder
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Get-MgBetaUserOutlookTaskGroupTaskFolder
@@ -37,6 +38,9 @@ Get-MgBetaUserOutlookTaskGroupTaskFolder -InputObject <IUsersIdentity> [-Propert
 The collection of task folders in the task group.
 Read-only.
 Nullable.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlooktaskgroup-list-taskfolders-permissions.md)]
 
 ## EXAMPLES
 

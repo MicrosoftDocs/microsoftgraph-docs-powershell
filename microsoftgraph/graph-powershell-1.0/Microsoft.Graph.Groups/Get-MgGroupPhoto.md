@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupphoto
 schema: 2.0.0
+ms.prod: groups
 ---
 
 # Get-MgGroupPhoto
@@ -40,6 +41,9 @@ Get-MgGroupPhoto -InputObject <IGroupsIdentity> [-Property <String[]>] [<CommonP
 
 ## DESCRIPTION
 The group's profile photo
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-list-photos-permissions.md)]
 
 ## EXAMPLES
 

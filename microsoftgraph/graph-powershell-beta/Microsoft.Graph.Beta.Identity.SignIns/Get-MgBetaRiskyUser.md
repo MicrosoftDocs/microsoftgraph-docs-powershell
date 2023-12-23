@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskyuser
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaRiskyUser
@@ -33,6 +34,9 @@ Get-MgBetaRiskyUser -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <St
 
 ## DESCRIPTION
 Users that are flagged as at-risk by Microsoft Entra ID Protection.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/riskyusers-list-permissions.md)]
 
 ## EXAMPLES
 

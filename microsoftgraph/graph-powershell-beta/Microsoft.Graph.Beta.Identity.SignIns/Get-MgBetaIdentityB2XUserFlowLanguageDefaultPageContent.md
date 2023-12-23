@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2xuserflowlanguagedefaultpagecontent
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaIdentityB2XUserFlowLanguageDefaultPageContent
@@ -27,6 +28,9 @@ Get-MgBetaIdentityB2XUserFlowLanguageDefaultPageContent -InputObject <IIdentityS
 
 ## DESCRIPTION
 Get media content for the navigation property defaultPages from identity
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userflowlanguageconfiguration-list-defaultpages-permissions.md)]
 
 ## EXAMPLES
 

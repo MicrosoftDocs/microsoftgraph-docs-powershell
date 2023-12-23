@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitecolumn
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Get-MgGroupSiteColumn
@@ -33,6 +34,9 @@ Get-MgGroupSiteColumn -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
 
 ## DESCRIPTION
 The collection of column definitions reusable across lists under this site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-list-columns-permissions.md)]
 
 ## EXAMPLES
 

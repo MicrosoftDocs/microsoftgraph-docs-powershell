@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfoldermessage
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Get-MgBetaUserMailFolderMessage
@@ -33,6 +34,9 @@ Get-MgBetaUserMailFolderMessage -InputObject <IMailIdentity> [-ExpandProperty <S
 
 ## DESCRIPTION
 The collection of messages in the mailFolder.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailfolder-list-messages-permissions.md)]
 
 ## EXAMPLES
 

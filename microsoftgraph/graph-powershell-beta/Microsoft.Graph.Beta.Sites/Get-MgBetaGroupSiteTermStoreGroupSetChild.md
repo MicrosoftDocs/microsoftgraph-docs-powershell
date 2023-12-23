@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitetermstoregroupsetchild
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Get-MgBetaGroupSiteTermStoreGroupSetChild
@@ -53,6 +54,9 @@ Get-MgBetaGroupSiteTermStoreGroupSetChild -InputObject <ISitesIdentity> [-Expand
 
 ## DESCRIPTION
 Children terms of set in term \[store\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/termstore-term-list-children-permissions.md)]
 
 ## EXAMPLES
 

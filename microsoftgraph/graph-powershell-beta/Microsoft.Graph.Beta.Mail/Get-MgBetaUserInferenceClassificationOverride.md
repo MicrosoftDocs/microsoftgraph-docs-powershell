@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetauserinferenceclassificationoverride
 schema: 2.0.0
+ms.prod: mail
 ---
 
 # Get-MgBetaUserInferenceClassificationOverride
@@ -37,6 +38,9 @@ Get-MgBetaUserInferenceClassificationOverride -InputObject <IMailIdentity> [-Pro
 A set of overrides for a user to always classify messages from specific senders in certain ways: focused, or other.
 Read-only.
 Nullable.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/inferenceclassification-list-overrides-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaaccessreviewmydecision
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Get-MgBetaAccessReviewMyDecision
@@ -33,6 +34,9 @@ Get-MgBetaAccessReviewMyDecision -InputObject <IIdentityGovernanceIdentity> [-Ex
 
 ## DESCRIPTION
 The collection of decisions for the caller, if the caller is a reviewer.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreview-listmydecisions-permissions.md)]
 
 ## EXAMPLES
 

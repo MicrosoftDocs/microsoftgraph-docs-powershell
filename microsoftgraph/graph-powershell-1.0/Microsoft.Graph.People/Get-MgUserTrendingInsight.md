@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.People-help.xml
 Module Name: Microsoft.Graph.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mgusertrendinginsight
 schema: 2.0.0
+ms.prod: insights
 ---
 
 # Get-MgUserTrendingInsight
@@ -37,6 +38,9 @@ Get-MgUserTrendingInsight -InputObject <IPeopleIdentity> [-ExpandProperty <Strin
 Calculated relationship identifying documents trending around a user.
 Trending documents are calculated based on activity of the user's closest network of people and include files stored in OneDrive for Business and SharePoint.
 Trending insights help the user to discover potentially useful content that the user has access to, but has never viewed before.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/insights-list-trending-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdomainfederationconfiguration
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # New-MgDomainFederationConfiguration
@@ -49,6 +50,9 @@ New-MgDomainFederationConfiguration -InputObject <IIdentityDirectoryManagementId
 
 ## DESCRIPTION
 Create a new internalDomainFederation object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/domain-post-federationconfiguration-permissions.md)]
 
 ## EXAMPLES
 

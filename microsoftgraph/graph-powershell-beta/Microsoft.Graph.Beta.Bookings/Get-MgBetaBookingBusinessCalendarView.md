@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusinesscalendarview
 schema: 2.0.0
+ms.prod: bookings
 ---
 
 # Get-MgBetaBookingBusinessCalendarView
@@ -37,6 +38,9 @@ Get-MgBetaBookingBusinessCalendarView -InputObject <IBookingsIdentity> -End <Str
 The set of appointments of this business in a specified date range.
 Read-only.
 Nullable.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingbusiness-list-calendarview-permissions.md)]
 
 ## EXAMPLES
 

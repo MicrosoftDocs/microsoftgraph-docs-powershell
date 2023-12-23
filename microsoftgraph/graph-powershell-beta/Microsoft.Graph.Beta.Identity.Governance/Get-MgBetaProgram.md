@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaprogram
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Get-MgBetaProgram
@@ -32,6 +33,9 @@ Get-MgBetaProgram -InputObject <IIdentityGovernanceIdentity> [-ExpandProperty <S
 
 ## DESCRIPTION
 Get entity from programs by key
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/program-list-permissions.md)]
 
 ## EXAMPLES
 

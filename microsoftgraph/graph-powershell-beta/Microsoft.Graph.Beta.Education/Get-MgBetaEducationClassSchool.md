@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassschool
 schema: 2.0.0
+ms.prod: education
 ---
 
 # Get-MgBetaEducationClassSchool
@@ -35,6 +36,9 @@ Get-MgBetaEducationClassSchool -InputObject <IEducationIdentity> [-ExpandPropert
 ## DESCRIPTION
 All schools that this class is associated with.
 Nullable.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-list-schools-permissions.md)]
 
 ## EXAMPLES
 

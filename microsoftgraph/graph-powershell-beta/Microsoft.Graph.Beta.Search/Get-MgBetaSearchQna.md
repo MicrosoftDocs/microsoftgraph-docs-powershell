@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetasearchqna
 schema: 2.0.0
+ms.prod: search
+ms.prod: search
 ---
 
 # Get-MgBetaSearchQna
@@ -32,6 +34,12 @@ Get-MgBetaSearchQna -InputObject <ISearchIdentity> [-ExpandProperty <String[]>] 
 
 ## DESCRIPTION
 Read the properties and relationships of a qna object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-qna-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-searchentity-list-qnas-permissions.md)]
 
 ## EXAMPLES
 

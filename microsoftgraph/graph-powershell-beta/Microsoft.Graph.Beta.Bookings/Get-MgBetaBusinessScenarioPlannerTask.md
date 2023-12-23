@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenarioplannertask
 schema: 2.0.0
+ms.prod: business-scenarios
+ms.prod: business-scenarios
 ---
 
 # Get-MgBetaBusinessScenarioPlannerTask
@@ -33,6 +35,12 @@ Get-MgBetaBusinessScenarioPlannerTask -InputObject <IBookingsIdentity> [-ExpandP
 
 ## DESCRIPTION
 Read the properties and relationships of a businessScenarioTask object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/businessscenariotask-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/businessscenarioplanner-list-tasks-permissions.md)]
 
 ## EXAMPLES
 

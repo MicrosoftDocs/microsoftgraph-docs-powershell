@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaacceptgroupcalendarevent
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Invoke-MgBetaAcceptGroupCalendarEvent
@@ -40,6 +41,9 @@ Invoke-MgBetaAcceptGroupCalendarEvent -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Accept the specified event in a user calendar.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-accept-permissions.md)]
 
 ## EXAMPLES
 

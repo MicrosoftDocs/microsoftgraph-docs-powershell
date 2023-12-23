@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementaccesspackageassignmentapprovalstage
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Update-MgEntitlementManagementAccessPackageAssignmentApprovalStage
@@ -43,6 +44,9 @@ Update-MgEntitlementManagementAccessPackageAssignmentApprovalStage -InputObject 
 
 ## DESCRIPTION
 Approve or deny an approvalStage object in an approval.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/approvalstage-update-permissions.md)]
 
 ## EXAMPLES
 

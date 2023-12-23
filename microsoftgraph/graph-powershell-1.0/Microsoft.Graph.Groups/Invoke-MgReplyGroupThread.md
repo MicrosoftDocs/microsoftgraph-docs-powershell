@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreplygroupthread
 schema: 2.0.0
+ms.prod: groups
 ---
 
 # Invoke-MgReplyGroupThread
@@ -44,6 +45,9 @@ Invoke-MgReplyGroupThread -InputObject <IGroupsIdentity>
 Add an attachment when creating a group post.
 This operation limits the size of the attachment you can add to under 3 MB.
 An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/post-post-attachments-permissions.md)]
 
 ## EXAMPLES
 

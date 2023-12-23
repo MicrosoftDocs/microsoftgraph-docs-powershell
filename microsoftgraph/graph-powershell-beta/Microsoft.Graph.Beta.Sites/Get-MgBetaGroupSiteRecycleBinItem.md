@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiterecyclebinitem
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Get-MgBetaGroupSiteRecycleBinItem
@@ -33,6 +34,9 @@ Get-MgBetaGroupSiteRecycleBinItem -InputObject <ISitesIdentity> [-ExpandProperty
 
 ## DESCRIPTION
 List of the recycleBinItems deleted by a user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/recyclebin-list-items-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyrolemanagementpolicyrule
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Update-MgPolicyRoleManagementPolicyRule
@@ -43,6 +44,9 @@ Update-MgPolicyRoleManagementPolicyRule -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update a rule defined for a role management policy.
 The rule can be one of the following types that are derived from the unifiedRoleManagementPolicyRule object: For more information about rules for Microsoft Entra roles and examples of updating rules, see the following articles:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedrolemanagementpolicyrule-update-permissions.md)]
 
 ## EXAMPLES
 

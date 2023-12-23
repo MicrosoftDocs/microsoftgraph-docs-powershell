@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilephone
 schema: 2.0.0
+ms.prod: people
 ---
 
 # Update-MgBetaUserProfilePhone
@@ -44,6 +45,9 @@ Update-MgBetaUserProfilePhone -InputObject <IPeopleIdentity> -BodyParameter <IMi
 
 ## DESCRIPTION
 Update the properties of an itemPhone object in a user's profile.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/itemphone-update-permissions.md)]
 
 ## EXAMPLES
 

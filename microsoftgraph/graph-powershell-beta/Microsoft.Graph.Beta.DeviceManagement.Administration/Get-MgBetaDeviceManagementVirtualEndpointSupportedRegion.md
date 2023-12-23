@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xm
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointsupportedregion
 schema: 2.0.0
+ms.prod: cloud-pc
 ---
 
 # Get-MgBetaDeviceManagementVirtualEndpointSupportedRegion
@@ -33,6 +34,9 @@ Get-MgBetaDeviceManagementVirtualEndpointSupportedRegion -InputObject <IDeviceMa
 
 ## DESCRIPTION
 Cloud PC supported regions.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-list-supportedregions-permissions.md)]
 
 ## EXAMPLES
 

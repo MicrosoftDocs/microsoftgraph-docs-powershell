@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeetingattendancereportattendancerecord
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord
@@ -37,6 +38,9 @@ Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord -InputObject <I
 ## DESCRIPTION
 List of attendance records of an attendance report.
 Read-only.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/attendancerecord-list-permissions.md)]
 
 ## EXAMPLES
 

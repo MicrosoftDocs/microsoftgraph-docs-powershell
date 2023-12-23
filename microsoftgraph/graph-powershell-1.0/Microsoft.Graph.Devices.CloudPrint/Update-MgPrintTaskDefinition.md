@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprinttaskdefinition
 schema: 2.0.0
+ms.prod: cloud-printing
 ---
 
 # Update-MgPrintTaskDefinition
@@ -42,6 +43,9 @@ Update-MgPrintTaskDefinition -InputObject <IDevicesCloudPrintIdentity>
 ## DESCRIPTION
 Update a task definition.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/print-update-taskdefinition-permissions.md)]
 
 ## EXAMPLES
 

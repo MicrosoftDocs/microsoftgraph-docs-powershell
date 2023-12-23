@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationuser
 schema: 2.0.0
+ms.prod: education
 ---
 
 # Update-MgBetaEducationUser
@@ -67,6 +68,9 @@ Update-MgBetaEducationUser -InputObject <IEducationIdentity> -BodyParameter <IMi
 
 ## DESCRIPTION
 Update the relatedContact collection of an educationUser object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/relatedcontact-update-permissions.md)]
 
 ## EXAMPLES
 

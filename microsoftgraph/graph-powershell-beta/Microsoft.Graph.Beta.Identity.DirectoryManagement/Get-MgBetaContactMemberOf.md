@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontactmemberof
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Get-MgBetaContactMemberOf
@@ -39,6 +40,9 @@ Groups that this contact is a member of.
 Read-only.
 Nullable.
 Supports $expand.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/orgcontact-list-memberof-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentsubmissionoutcome
 schema: 2.0.0
+ms.prod: education
 ---
 
 # Get-MgEducationClassAssignmentSubmissionOutcome
@@ -35,6 +36,9 @@ Get-MgEducationClassAssignmentSubmissionOutcome -InputObject <IEducationIdentity
 
 ## DESCRIPTION
 Get outcomes from education
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationsubmission-list-outcomes-permissions.md)]
 
 ## EXAMPLES
 

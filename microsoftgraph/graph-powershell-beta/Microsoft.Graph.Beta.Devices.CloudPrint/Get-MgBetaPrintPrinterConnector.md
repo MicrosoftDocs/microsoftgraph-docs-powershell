@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintprinterconnector
 schema: 2.0.0
+ms.prod: cloud-printing
 ---
 
 # Get-MgBetaPrintPrinterConnector
@@ -33,6 +34,9 @@ Get-MgBetaPrintPrinterConnector -InputObject <IDevicesCloudPrintIdentity> [-Expa
 
 ## DESCRIPTION
 The connectors that are associated with the printer.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printer-list-connectors-permissions.md)]
 
 ## EXAMPLES
 

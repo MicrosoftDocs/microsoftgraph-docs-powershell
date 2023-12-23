@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteonenotenotebooksection
 schema: 2.0.0
+ms.prod: onenote
 ---
 
 # Get-MgBetaGroupSiteOnenoteNotebookSection
@@ -37,6 +38,9 @@ Get-MgBetaGroupSiteOnenoteNotebookSection -InputObject <ISitesIdentity> [-Expand
 The sections in the notebook.
 Read-only.
 Nullable.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/notebook-list-sections-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mguserauthenticationfido2method
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Remove-MgUserAuthenticationFido2Method
@@ -26,6 +27,9 @@ Remove-MgUserAuthenticationFido2Method -InputObject <IIdentitySignInsIdentity> [
 
 ## DESCRIPTION
 Deletes a user's FIDO2 Security Key Authentication Method object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/fido2authenticationmethod-delete-permissions.md)]
 
 ## EXAMPLES
 

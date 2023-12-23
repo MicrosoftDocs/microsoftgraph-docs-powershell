@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenario
 schema: 2.0.0
+ms.prod: business-scenarios
 ---
 
 # Update-MgBetaBusinessScenario
@@ -44,6 +45,9 @@ Update-MgBetaBusinessScenario -InputObject <IBookingsIdentity> -BodyParameter <I
 
 ## DESCRIPTION
 Update the properties of a businessScenario object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/businessscenario-update-permissions.md)]
 
 ## EXAMPLES
 

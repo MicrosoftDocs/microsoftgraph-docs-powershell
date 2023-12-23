@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentsettinggradingcategory
 schema: 2.0.0
+ms.prod: education
 ---
 
 # Get-MgBetaEducationClassAssignmentSettingGradingCategory
@@ -33,6 +34,9 @@ Get-MgBetaEducationClassAssignmentSettingGradingCategory -InputObject <IEducatio
 
 ## DESCRIPTION
 Get gradingCategories from education
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-list-gradingcategory-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycase
 schema: 2.0.0
+ms.prod: ediscovery
 ---
 
 # New-MgBetaComplianceEdiscoveryCase
@@ -34,6 +35,9 @@ New-MgBetaComplianceEdiscoveryCase -BodyParameter <IMicrosoftGraphEdiscoveryCase
 
 ## DESCRIPTION
 Create a new case object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-case-post-permissions.md)]
 
 ## EXAMPLES
 

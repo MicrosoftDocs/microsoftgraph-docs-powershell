@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityprovider
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Remove-MgIdentityProvider
@@ -30,6 +31,9 @@ Remove-MgIdentityProvider -InputObject <IIdentitySignInsIdentity> [-IfMatch <Str
 Delete an identity provider resource that is of the type specified by the id in the request.
 Among the types of providers derived from identityProviderBase, you can currently delete a socialIdentityProvider resource in Microsoft Entra ID.
 In Azure AD B2C, this operation can currently delete a socialIdentityProvider, or an appleManagedIdentityProvider resource.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identityproviderbase-delete-permissions.md)]
 
 ## EXAMPLES
 

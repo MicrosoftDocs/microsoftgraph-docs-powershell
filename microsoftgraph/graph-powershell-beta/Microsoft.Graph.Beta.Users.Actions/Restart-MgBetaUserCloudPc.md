@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restart-mgbetausercloudpc
 schema: 2.0.0
+ms.prod: cloud-pc
 ---
 
 # Restart-MgBetaUserCloudPc
@@ -26,6 +27,9 @@ Restart-MgBetaUserCloudPc -InputObject <IUsersActionsIdentity> [-PassThru] [-Wha
 
 ## DESCRIPTION
 Reboot a specific Cloud PC.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-reboot-permissions.md)]
 
 ## EXAMPLES
 

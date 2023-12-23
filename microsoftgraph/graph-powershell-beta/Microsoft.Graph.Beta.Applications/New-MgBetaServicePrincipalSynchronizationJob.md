@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalsynchronizationjob
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # New-MgBetaServicePrincipalSynchronizationJob
@@ -48,6 +49,9 @@ New-MgBetaServicePrincipalSynchronizationJob -InputObject <IApplicationsIdentity
 Create new synchronization job with a default synchronization schema.
 The job is created in a disabled state.
 Call Start job to start synchronization.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronization-post-jobs-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabookingbusinesscustomquestion
 schema: 2.0.0
+ms.prod: bookings
 ---
 
 # Remove-MgBetaBookingBusinessCustomQuestion
@@ -26,6 +27,9 @@ Remove-MgBetaBookingBusinessCustomQuestion -InputObject <IBookingsIdentity> [-If
 
 ## DESCRIPTION
 Delete the specified bookingCustomQuestion object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingcustomquestion-delete-permissions.md)]
 
 ## EXAMPLES
 

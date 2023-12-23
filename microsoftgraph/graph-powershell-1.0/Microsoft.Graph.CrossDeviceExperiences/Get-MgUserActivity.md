@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.CrossDeviceExperiences
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/get-mguseractivity
 schema: 2.0.0
+ms.prod: project-rome
 ---
 
 # Get-MgUserActivity
@@ -37,6 +38,9 @@ Get-MgUserActivity -InputObject <ICrossDeviceExperiencesIdentity> [-ExpandProper
 The user's activities across devices.
 Read-only.
 Nullable.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/projectrome-get-activities-permissions.md)]
 
 ## EXAMPLES
 

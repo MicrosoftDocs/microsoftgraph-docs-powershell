@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitetermstoresetrelation
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Get-MgGroupSiteTermStoreSetRelation
@@ -52,6 +53,9 @@ Get-MgGroupSiteTermStoreSetRelation -InputObject <ISitesIdentity> [-ExpandProper
 
 ## DESCRIPTION
 Indicates which terms have been pinned or reused directly under the set.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-term-list-relations-permissions.md)]
 
 ## EXAMPLES
 

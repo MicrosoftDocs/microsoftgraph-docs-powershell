@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mguserinferenceclassificationoverride
 schema: 2.0.0
+ms.prod: mail
 ---
 
 # Remove-MgUserInferenceClassificationOverride
@@ -26,6 +27,9 @@ Remove-MgUserInferenceClassificationOverride -InputObject <IMailIdentity> [-IfMa
 
 ## DESCRIPTION
 Delete an override specified by its ID.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/inferenceclassificationoverride-delete-permissions.md)]
 
 ## EXAMPLES
 

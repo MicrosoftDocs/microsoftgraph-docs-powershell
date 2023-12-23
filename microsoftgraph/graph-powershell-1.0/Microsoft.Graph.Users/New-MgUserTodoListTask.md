@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusertodolisttask
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # New-MgUserTodoListTask
@@ -54,6 +55,9 @@ New-MgUserTodoListTask -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftG
 
 ## DESCRIPTION
 Create a new task object in a specified todoTaskList.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/todotasklist-post-tasks-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabeldepartment
 schema: 2.0.0
+ms.prod: security
+ms.prod: security
 ---
 
 # Get-MgBetaSecurityLabelDepartment
@@ -33,6 +35,12 @@ Get-MgBetaSecurityLabelDepartment -InputObject <ISecurityIdentity> [-ExpandPrope
 
 ## DESCRIPTION
 Read the properties and relationships of a departmentTemplate object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-departmenttemplate-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-labelsroot-list-departments-permissions.md)]
 
 ## EXAMPLES
 

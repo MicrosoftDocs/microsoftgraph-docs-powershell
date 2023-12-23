@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetauserscopedrolememberof
 schema: 2.0.0
+ms.prod: users
 ---
 
 # Get-MgBetaUserScopedRoleMemberOf
@@ -37,6 +38,9 @@ Get-MgBetaUserScopedRoleMemberOf -InputObject <IIdentityDirectoryManagementIdent
 The scoped-role administrative unit memberships for this user.
 Read-only.
 Nullable.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-scopedrolememberof-permissions.md)]
 
 ## EXAMPLES
 

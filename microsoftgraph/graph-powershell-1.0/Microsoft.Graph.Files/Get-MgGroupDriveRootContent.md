@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootcontent
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Get-MgGroupDriveRootContent
@@ -25,6 +26,9 @@ Get-MgGroupDriveRootContent -InputObject <IFilesIdentity> -OutFile <String> [-Pa
 
 ## DESCRIPTION
 The content stream, if the item represents a file.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-get-permissions.md)]
 
 ## EXAMPLES
 

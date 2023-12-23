@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrive
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Get-MgBetaUserDrive
@@ -35,6 +36,9 @@ Get-MgBetaUserDrive -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [
 ## DESCRIPTION
 A collection of drives available for this user.
 Read-only.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/drive-list-permissions.md)]
 
 ## EXAMPLES
 

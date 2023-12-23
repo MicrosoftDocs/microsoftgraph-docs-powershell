@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationschooluserbyref
 schema: 2.0.0
+ms.prod: education
 ---
 
 # Get-MgEducationSchoolUserByRef
@@ -20,6 +21,9 @@ Get-MgEducationSchoolUserByRef -EducationSchoolId <String> [-Filter <String>] [-
 
 ## DESCRIPTION
 Get the educationUser resources associated with an educationSchool.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationschool-list-users-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplication
 schema: 2.0.0
+ms.prod: applications
+ms.prod: applications
 ---
 
 # Get-MgBetaApplication
@@ -33,6 +35,9 @@ Get-MgBetaApplication -InputObject <IApplicationsIdentity> [-ExpandProperty <Str
 
 ## DESCRIPTION
 Get the properties and relationships of an application object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-get-permissions.md)]
 
 ## EXAMPLES
 

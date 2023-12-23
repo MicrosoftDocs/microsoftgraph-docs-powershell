@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsite
 schema: 2.0.0
+ms.prod: sharepoint
+ms.prod: sharepoint
 ---
 
 # Get-MgSite
@@ -32,6 +34,12 @@ Get-MgSite -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Property
 
 ## DESCRIPTION
 Retrieve properties and relationships for a \[site\]\[\] resource.A site resource represents a team site in SharePoint.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-list-permissions.md)]
 
 ## EXAMPLES
 

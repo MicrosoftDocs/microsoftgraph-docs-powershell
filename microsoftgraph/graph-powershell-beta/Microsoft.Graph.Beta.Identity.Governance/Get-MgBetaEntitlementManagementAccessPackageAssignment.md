@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageassignment
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Get-MgBetaEntitlementManagementAccessPackageAssignment
@@ -45,6 +46,9 @@ Get-MgBetaEntitlementManagementAccessPackageAssignment [-ExpandProperty <String[
 
 ## DESCRIPTION
 The assignment of an access package to a subject for a period of time.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/entitlementmanagement-list-accesspackageassignments-permissions.md)]
 
 ## EXAMPLES
 

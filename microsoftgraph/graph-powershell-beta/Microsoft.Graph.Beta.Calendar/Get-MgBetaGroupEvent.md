@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupevent
 schema: 2.0.0
+ms.prod: outlook
+ms.prod: groups
 ---
 
 # Get-MgBetaGroupEvent
@@ -30,6 +32,12 @@ Get-MgBetaGroupEvent -InputObject <ICalendarIdentity> [-Property <String[]>] [<C
 
 ## DESCRIPTION
 Get an event object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-get-event-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-events-permissions.md)]
 
 ## EXAMPLES
 
