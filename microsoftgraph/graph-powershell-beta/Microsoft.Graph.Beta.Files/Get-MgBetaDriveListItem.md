@@ -12,6 +12,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Returns the metadata for an \[item\]\[\] in a \[list\]\[\].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveListItem](/powershell/module/Microsoft.Graph.Files/Get-MgDriveListItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -299,6 +302,7 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgDriveListItem](/powershell/module/Microsoft.Graph.Files/Get-MgDriveListItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistitem)
 

@@ -14,6 +14,9 @@ Only items representing folders have children.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveRootChild](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootChild?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -316,6 +319,7 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaGroupDriveRootChild](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootChild?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootchild](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootchild)
 

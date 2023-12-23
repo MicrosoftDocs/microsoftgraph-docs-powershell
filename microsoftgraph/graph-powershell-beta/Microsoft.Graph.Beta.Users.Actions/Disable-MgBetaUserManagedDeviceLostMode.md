@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Disable lost mode
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Disable-MgUserManagedDeviceLostMode](/powershell/module/Microsoft.Graph.Users.Actions/Disable-MgUserManagedDeviceLostMode?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Disable (Default)
@@ -195,6 +198,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Disable-MgUserManagedDeviceLostMode](/powershell/module/Microsoft.Graph.Users.Actions/Disable-MgUserManagedDeviceLostMode?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/disable-mgbetausermanageddevicelostmode](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/disable-mgbetausermanageddevicelostmode)
 

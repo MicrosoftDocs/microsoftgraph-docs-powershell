@@ -12,6 +12,9 @@ ms.prod: users
 Enable the user to update their password.
 Any user can update their password without belonging to any administrator role.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserPassword](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Update-MgBetaUserPassword?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ChangeExpanded (Default)
@@ -253,6 +256,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgBetaUserPassword](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Update-MgBetaUserPassword?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/update-mguserpassword](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/update-mguserpassword)
 

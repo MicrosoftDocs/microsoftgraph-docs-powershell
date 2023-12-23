@@ -11,6 +11,9 @@ ms.prod: sites-and-lists
 ## SYNOPSIS
 Publishes a \[contentType\]\[\] present in a content type hub site.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Publish-MgSiteListContentType](/powershell/module/Microsoft.Graph.Sites/Publish-MgSiteListContentType?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Publish (Default)
@@ -215,6 +218,7 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Publish-MgSiteListContentType](/powershell/module/Microsoft.Graph.Sites/Publish-MgSiteListContentType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/publish-mgbetasitelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/publish-mgbetasitelistcontenttype)
 

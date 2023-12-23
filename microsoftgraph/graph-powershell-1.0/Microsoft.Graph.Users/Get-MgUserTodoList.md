@@ -12,6 +12,9 @@ ms.prod: outlook
 ## SYNOPSIS
 Read the properties and relationships of a todoTaskList object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserTodoList](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoList?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -282,6 +285,7 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserTodoList](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoList?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodolist](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodolist)
 

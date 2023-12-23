@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get events from solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgVirtualEvent](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEvent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -268,6 +271,7 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
+[Get-MgVirtualEvent](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEvent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualevent)
 

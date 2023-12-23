@@ -13,6 +13,9 @@ ms.prod: outlook
 Read the properties, relationships, or raw contents of an attachment that is attached to a user event, message, Outlook task, or group post.
 An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserMessageAttachment](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMessageAttachment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -272,6 +275,7 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserMessageAttachment](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMessageAttachment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermessageattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermessageattachment)
 

@@ -17,6 +17,9 @@ When using MIME format:- Provide the applicable Internet message headers and the
 This method saves the message in the Sent Items folder.
 Alternatively, create a draft to forward a message, and send it later.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgForwardUserMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgForwardUserMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ForwardExpanded (Default)
@@ -549,6 +552,7 @@ TORECIPIENTS \<IMicrosoftGraphRecipient\[\]\>: .
     \[Name \<String\>\]: The display name of an entity instance.
 
 ## RELATED LINKS
+[Invoke-MgForwardUserMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgForwardUserMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaforwardusermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaforwardusermessage)
 

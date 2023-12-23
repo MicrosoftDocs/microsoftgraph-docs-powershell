@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to bookingCurrencies for solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBookingCurrency](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaBookingCurrency?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -161,6 +164,7 @@ Read-only.
 For example, the currency symbol for the US dollar and for the Australian dollar is $.
 
 ## RELATED LINKS
+[New-MgBetaBookingCurrency](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaBookingCurrency?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingcurrency](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingcurrency)
 

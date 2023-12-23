@@ -11,6 +11,9 @@ ms.prod: planner
 ## SYNOPSIS
 Create a new plannerTask.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPlannerTask](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerTask?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -898,6 +901,7 @@ Required.
 A GUID-based value that serves as the unique identifier for a series.
 
 ## RELATED LINKS
+[New-MgPlannerTask](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerTask?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannertask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannertask)
 

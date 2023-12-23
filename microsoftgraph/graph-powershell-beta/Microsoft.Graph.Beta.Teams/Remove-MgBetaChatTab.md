@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove (unpin) a tab from the specified chat.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgChatTab](/powershell/module/Microsoft.Graph.Teams/Remove-MgChatTab?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -202,6 +205,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Remove-MgChatTab](/powershell/module/Microsoft.Graph.Teams/Remove-MgChatTab?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetachattab](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetachattab)
 

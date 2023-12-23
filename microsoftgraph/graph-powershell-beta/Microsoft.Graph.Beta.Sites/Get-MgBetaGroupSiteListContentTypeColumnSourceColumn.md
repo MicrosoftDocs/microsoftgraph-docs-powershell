@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The source column for content type column.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteListContentTypeColumnSourceColumn](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteListContentTypeColumnSourceColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -229,6 +232,7 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgGroupSiteListContentTypeColumnSourceColumn](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteListContentTypeColumnSourceColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitelistcontenttypecolumnsourcecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitelistcontenttypecolumnsourcecolumn)
 

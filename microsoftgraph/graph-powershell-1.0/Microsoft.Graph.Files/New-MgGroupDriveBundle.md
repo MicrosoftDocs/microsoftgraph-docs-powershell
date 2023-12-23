@@ -11,6 +11,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Create new navigation property to bundles for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupDriveBundle](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveBundle?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -29312,6 +29315,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[New-MgBetaGroupDriveBundle](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveBundle?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdrivebundle](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdrivebundle)
 

@@ -14,6 +14,9 @@ The users and contacts that report to the user.
 Nullable.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDirectReport](/powershell/module/Microsoft.Graph.Users/Get-MgUserDirectReport?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -314,6 +317,7 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserDirectReport](/powershell/module/Microsoft.Graph.Users/Get-MgUserDirectReport?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserdirectreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserdirectreport)
 

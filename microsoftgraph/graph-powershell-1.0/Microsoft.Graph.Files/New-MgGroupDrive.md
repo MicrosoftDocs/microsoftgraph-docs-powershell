@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to drives for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupDrive](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDrive?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -41820,6 +41823,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[New-MgBetaGroupDrive](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDrive?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdrive)
 

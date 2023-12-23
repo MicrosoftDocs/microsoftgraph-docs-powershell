@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property triggerTypes in security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityTriggerType](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityTriggerType?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -199,6 +202,7 @@ When the unique identifier is unavailable, the displayName property is provided 
   \[LastModifiedDateTime \<DateTime?\>\]: The latest date time when the retentionEventType was modified.
 
 ## RELATED LINKS
+[Update-MgSecurityTriggerType](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityTriggerType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritytriggertype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritytriggertype)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection of drives (document libraries) under this site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteDrive](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteDrive?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -297,6 +300,7 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaSiteDrive](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteDrive?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitedrive](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitedrive)
 

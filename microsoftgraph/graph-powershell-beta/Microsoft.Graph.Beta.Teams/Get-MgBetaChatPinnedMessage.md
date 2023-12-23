@@ -12,6 +12,9 @@ ms.prod: microsoft-teams
 A collection of all the pinned messages in the chat.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgChatPinnedMessage](/powershell/module/Microsoft.Graph.Teams/Get-MgChatPinnedMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -325,6 +328,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgChatPinnedMessage](/powershell/module/Microsoft.Graph.Teams/Get-MgChatPinnedMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatpinnedmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatpinnedmessage)
 

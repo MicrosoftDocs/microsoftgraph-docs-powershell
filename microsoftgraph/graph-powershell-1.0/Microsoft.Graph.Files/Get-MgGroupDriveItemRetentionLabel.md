@@ -11,6 +11,9 @@ schema: 2.0.0
 Information about retention label and settings enforced on the driveItem.
 Read-write.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveItemRetentionLabel](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveItemRetentionLabel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -176,6 +179,7 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaGroupDriveItemRetentionLabel](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveItemRetentionLabel?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveitemretentionlabel](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveitemretentionlabel)
 
