@@ -39,11 +39,11 @@ Create a new printerShare for the specified printer.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/print-post-shares-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CloudPrint
-```
 
 $params = @{
 	displayName = "ShareName"
@@ -52,6 +52,10 @@ $params = @{
 }
 
 New-MgPrintShare -BodyParameter $params
+
+```
+This example shows how to use the New-MgPrintShare Cmdlet.
+
 
 ## PARAMETERS
 

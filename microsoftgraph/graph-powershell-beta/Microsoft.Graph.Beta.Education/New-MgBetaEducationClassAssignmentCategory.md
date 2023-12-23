@@ -76,17 +76,21 @@ Only teachers can perform this operation.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-post-category-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 $params = @{
 	displayName = "Quizzes"
 }
 
 New-MgBetaEducationClassAssignmentCategory -EducationClassId $educationClassId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaEducationClassAssignmentCategory Cmdlet.
+
 
 ## PARAMETERS
 

@@ -47,16 +47,6 @@ Retrieve the metadata for a \[site\]\[\], a \[list\]\[\], or a \[contentType\]\[
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All

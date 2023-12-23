@@ -46,13 +46,17 @@ Read the properties and relationships of a caseOperation object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycase-list-operations-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 Get-MgSecurityCaseEdiscoveryCaseOperation -EdiscoveryCaseId $ediscoveryCaseId
+
+```
+This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseOperation Cmdlet.
+
 
 ## PARAMETERS
 

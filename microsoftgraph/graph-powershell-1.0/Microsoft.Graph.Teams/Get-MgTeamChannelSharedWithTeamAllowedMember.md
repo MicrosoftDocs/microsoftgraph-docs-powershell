@@ -44,13 +44,17 @@ A collection of team members who have access to the shared channel.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/sharedwithchannelteaminfo-list-allowedmembers-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgTeamChannelSharedWithTeamAllowedMember -TeamId $teamId -ChannelId $channelId -SharedWithChannelTeamInfoId $sharedWithChannelTeamInfoId
+
+```
+This example shows how to use the Get-MgTeamChannelSharedWithTeamAllowedMember Cmdlet.
+
 
 ## PARAMETERS
 

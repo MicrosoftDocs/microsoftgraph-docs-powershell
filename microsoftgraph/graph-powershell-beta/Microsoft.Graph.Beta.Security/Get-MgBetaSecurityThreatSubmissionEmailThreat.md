@@ -43,18 +43,20 @@ Read the properties and relationships of an emailThreatSubmission object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-emailthreatsubmission-list-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgBetaSecurityThreatSubmissionEmailThreat Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityThreatSubmissionEmailThreat -EmailThreatSubmissionId $emailThreatSubmissionId
 ```
-
-### EXAMPLE 2
-```
+This example shows how to use the Get-MgBetaSecurityThreatSubmissionEmailThreat Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Get-MgBetaSecurityThreatSubmissionEmailThreat Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityThreatSubmissionEmailThreat
 ```
+This example shows how to use the Get-MgBetaSecurityThreatSubmissionEmailThreat Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

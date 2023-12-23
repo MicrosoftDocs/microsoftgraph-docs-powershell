@@ -48,41 +48,61 @@ A threat assessment request can be one of the following types:
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/informationprotection-list-threatassessmentrequests-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get the properties of a mail assessment request
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId
 
-### EXAMPLE 2
 ```
+This example will get the properties of a mail assessment request
+
+### Example 2: Get the properties of an email file assessment request
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId
 
-### EXAMPLE 3
 ```
+This example will get the properties of an email file assessment request
+
+### Example 3: Get the properties of a file assessment request
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId
 
-### EXAMPLE 4
 ```
+This example will get the properties of a file assessment request
+
+### Example 4: Get the properties of an url assessment request
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId
 
-### EXAMPLE 5
 ```
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
+This example will get the properties of an url assessment request
 
-Get-MgBetaInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId -ExpandProperty "results"
+### Example 5: Expand threat assessment results for a request
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId -ExpandProperty "results" 
+
+```
+This example will expand threat assessment results for a request
+
 
 ## PARAMETERS
 

@@ -44,13 +44,17 @@ Read-only.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackage-list-accesspackagesincompatiblewith-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgEntitlementManagementAccessPackageIncompatibleWith -AccessPackageId $accessPackageId
+
+```
+This example shows how to use the Get-MgEntitlementManagementAccessPackageIncompatibleWith Cmdlet.
+
 
 ## PARAMETERS
 

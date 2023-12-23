@@ -43,19 +43,21 @@ Retrieve the properties and relationships of an itemEmail object in a user's pro
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/profile-list-emails-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgBetaUserProfileEmail Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfileEmail -UserId $userId
 ```
-
-### EXAMPLE 2
-```
+This example shows how to use the Get-MgBetaUserProfileEmail Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Get-MgBetaUserProfileEmail Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.People
 Get-MgBetaUserProfileEmail -UserId $userId -ItemEmailId $itemEmailId
 ```
+This example shows how to use the Get-MgBetaUserProfileEmail Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

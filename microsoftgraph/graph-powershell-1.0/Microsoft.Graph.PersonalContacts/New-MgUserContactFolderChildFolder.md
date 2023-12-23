@@ -57,11 +57,10 @@ You can also create a new contactFolder under the user's default contact folder.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contactfolder-post-childfolders-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.PersonalContacts
-```
 
 $params = @{
 	displayName = "Family"
@@ -69,6 +68,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserContactFolderChildFolder -UserId $userId -ContactFolderId $contactFolderId -BodyParameter $params
+```
+This example shows how to use the New-MgUserContactFolderChildFolder Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

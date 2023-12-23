@@ -48,20 +48,28 @@ Nullable.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-list-thumbnails-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Files
-```
 
 Get-MgDriveItemThumbnail -DriveId $driveId -DriveItemId $driveItemId
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Files
-```
+This example shows how to use the Get-MgDriveItemThumbnail Cmdlet.
 
-Get-MgDriveItemThumbnail -DriveId $driveId -DriveItemId $driveItemId -Property "c300x400_crop"
+### Example 2: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Files
+
+Get-MgDriveItemThumbnail -DriveId $driveId -DriveItemId $driveItemId -Property "c300x400_crop" 
+
+```
+This example shows how to use the Get-MgDriveItemThumbnail Cmdlet.
+
 
 ## PARAMETERS
 

@@ -42,13 +42,17 @@ A collection of simulation automation runs.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/simulationautomation-list-runs-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityAttackSimulationAutomationRun -SimulationAutomationId $simulationAutomationId
+
+```
+This example shows how to use the Get-MgBetaSecurityAttackSimulationAutomationRun Cmdlet.
+
 
 ## PARAMETERS
 

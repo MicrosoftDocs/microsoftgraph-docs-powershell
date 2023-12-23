@@ -45,13 +45,17 @@ Retrieve properties and relationships for a \[site\]\[\] resource.A site resourc
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-list-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 Get-MgSite -SiteId $siteId
+```
+This example shows how to use the Get-MgSite Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

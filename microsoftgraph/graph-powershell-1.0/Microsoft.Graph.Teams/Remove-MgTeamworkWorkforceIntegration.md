@@ -35,13 +35,17 @@ Delete an instance of a workforceIntegration.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/workforceintegration-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Remove-MgTeamworkWorkforceIntegration -WorkforceIntegrationId $workforceIntegrationId
+
+```
+This example shows how to use the Remove-MgTeamworkWorkforceIntegration Cmdlet.
+
 
 ## PARAMETERS
 

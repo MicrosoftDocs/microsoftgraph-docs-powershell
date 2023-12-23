@@ -42,13 +42,17 @@ The localized version of the terms of use agreement files attached to the agreem
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/agreementfile-list-localizations-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Get-MgBetaAgreementFileLocalization -AgreementId $agreementId
+
+```
+This example shows how to use the Get-MgBetaAgreementFileLocalization Cmdlet.
+
 
 ## PARAMETERS
 

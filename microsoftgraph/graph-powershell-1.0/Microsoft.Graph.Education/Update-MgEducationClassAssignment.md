@@ -69,11 +69,10 @@ Don't use a PATCH operation for this purpose.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	displayName = "Reading and review test 09.03 #5"
@@ -81,11 +80,16 @@ $params = @{
 		contentType = "text"
 		content = "Read chapter 5 and write your review"
 	}
-	dueDateTime = \[System.DateTime\]::Parse("2021-09-10T00:00:00Z")
+	dueDateTime = [System.DateTime]::Parse("2021-09-10T00:00:00Z")
 	addedStudentAction = "none"
 }
 
 Update-MgEducationClassAssignment -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
+```
+This example shows how to use the Update-MgEducationClassAssignment Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

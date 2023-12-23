@@ -48,13 +48,17 @@ For descriptions of each endpoint, see printUsageByUser.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-list-dailyprintusagebyuser-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Reports
-```
 
 Get-MgReportDailyPrintUsageByUser
+
+```
+This example shows how to use the Get-MgReportDailyPrintUsageByUser Cmdlet.
+
 
 ## PARAMETERS
 

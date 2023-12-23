@@ -56,13 +56,17 @@ Get onlineMeetings from communications
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onlinemeeting-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
-Get-MgBetaCommunicationOnlineMeeting -Filter "VideoTeleconferenceId eq '123456789'"
+Get-MgBetaCommunicationOnlineMeeting -Filter "VideoTeleconferenceId eq '123456789'" 
+
+```
+This example shows how to use the Get-MgBetaCommunicationOnlineMeeting Cmdlet.
+
 
 ## PARAMETERS
 

@@ -49,12 +49,13 @@ If you want to change a group that originates on-premises, download the results 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreview-apply-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Add-MgBetaAccessReviewDecision Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Add-MgBetaAccessReviewDecision -AccessReviewId $accessReviewId
 ```
+This example shows how to use the Add-MgBetaAccessReviewDecision Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

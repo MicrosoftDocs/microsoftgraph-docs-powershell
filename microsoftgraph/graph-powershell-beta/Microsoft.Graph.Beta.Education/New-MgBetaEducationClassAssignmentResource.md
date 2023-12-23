@@ -55,11 +55,10 @@ You can create the following types of assignment resources: Every resource has a
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-post-resources-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Create an educationLinkResource
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 $params = @{
 	distributeForStudentWork = $false
@@ -72,11 +71,15 @@ $params = @{
 }
 
 New-MgBetaEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
+```
+This example shows how to use the New-MgBetaEducationClassAssignmentResource Cmdlet.
 
-### EXAMPLE 2
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Create an educationWordResource
+
+```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 $params = @{
 	distributeForStudentWork = $false
@@ -88,11 +91,15 @@ $params = @{
 }
 
 New-MgBetaEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
+```
+This example shows how to use the New-MgBetaEducationClassAssignmentResource Cmdlet.
 
-### EXAMPLE 3
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Create an educationFileResource
+
+```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 $params = @{
 	distributeForStudentWork = $false
@@ -103,11 +110,15 @@ $params = @{
 }
 
 New-MgBetaEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
+```
+This example shows how to use the New-MgBetaEducationClassAssignmentResource Cmdlet.
 
-### EXAMPLE 4
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 4: Create an educationExcelResource
+
+```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 $params = @{
 	distributeForStudentWork = $false
@@ -119,11 +130,15 @@ $params = @{
 }
 
 New-MgBetaEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
+```
+This example shows how to use the New-MgBetaEducationClassAssignmentResource Cmdlet.
 
-### EXAMPLE 5
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 5: Create an educationPowerPointResource
+
+```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 $params = @{
 	distributeForStudentWork = $false
@@ -135,11 +150,15 @@ $params = @{
 }
 
 New-MgBetaEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
+```
+This example shows how to use the New-MgBetaEducationClassAssignmentResource Cmdlet.
 
-### EXAMPLE 6
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 6: Create an educationMediaResource
+
+```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 $params = @{
 	distributeForStudentWork = $false
@@ -151,11 +170,15 @@ $params = @{
 }
 
 New-MgBetaEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
+```
+This example shows how to use the New-MgBetaEducationClassAssignmentResource Cmdlet.
 
-### EXAMPLE 7
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 7: Create an educationTeamsAppResource
+
+```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 $params = @{
 	distributeForStudentWork = $false
@@ -170,6 +193,11 @@ $params = @{
 }
 
 New-MgBetaEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
+```
+This example shows how to use the New-MgBetaEducationClassAssignmentResource Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

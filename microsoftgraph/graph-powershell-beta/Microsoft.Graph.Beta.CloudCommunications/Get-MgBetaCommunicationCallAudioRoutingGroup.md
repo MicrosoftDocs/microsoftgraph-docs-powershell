@@ -46,13 +46,17 @@ Retrieve the properties and relationships of an audioRoutingGroup object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-list-audioroutinggroups-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 Get-MgBetaCommunicationCallAudioRoutingGroup -CallId $callId
+
+```
+This example shows how to use the Get-MgBetaCommunicationCallAudioRoutingGroup Cmdlet.
+
 
 ## PARAMETERS
 

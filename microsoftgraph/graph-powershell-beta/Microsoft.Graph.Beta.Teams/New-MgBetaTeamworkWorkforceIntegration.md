@@ -34,11 +34,11 @@ New-MgBetaTeamworkWorkforceIntegration -BodyParameter <IMicrosoftGraphWorkforceI
 Create a new workforceIntegration object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	displayName = "displayName-value"
@@ -53,6 +53,10 @@ $params = @{
 }
 
 New-MgBetaTeamworkWorkforceIntegration -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaTeamworkWorkforceIntegration Cmdlet.
+
 
 ## PARAMETERS
 

@@ -46,13 +46,17 @@ Get an attack simulation automation for a tenant.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/attacksimulationroot-list-simulationautomations-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 Get-MgSecurityAttackSimulationAutomation
+
+```
+This example shows how to use the Get-MgSecurityAttackSimulationAutomation Cmdlet.
+
 
 ## PARAMETERS
 

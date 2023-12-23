@@ -42,12 +42,13 @@ The collection of column definitions reusable across lists under this site.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-list-columns-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgBetaSiteColumn Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 Get-MgBetaSiteColumn -SiteId $siteId
 ```
+This example shows how to use the Get-MgBetaSiteColumn Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

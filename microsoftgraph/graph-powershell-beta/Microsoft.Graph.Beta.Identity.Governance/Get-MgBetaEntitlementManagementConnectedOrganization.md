@@ -64,13 +64,17 @@ Retrieve the properties and relationships of a connectedOrganization object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/entitlementmanagement-list-connectedorganizations-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Get-MgBetaEntitlementManagementConnectedOrganization
+
+```
+This example shows how to use the Get-MgBetaEntitlementManagementConnectedOrganization Cmdlet.
+
 
 ## PARAMETERS
 

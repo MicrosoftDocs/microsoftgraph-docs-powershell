@@ -46,13 +46,17 @@ Retrieve the properties and relationships of an administrativeUnit object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directory-list-administrativeunits-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgDirectoryAdministrativeUnit
+
+```
+This example shows how to use the Get-MgDirectoryAdministrativeUnit Cmdlet.
+
 
 ## PARAMETERS
 

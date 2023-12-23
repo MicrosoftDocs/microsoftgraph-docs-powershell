@@ -46,13 +46,17 @@ Retrieve the properties and relationships of a printConnector object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/print-list-connectors-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CloudPrint
-```
 
 Get-MgPrintConnector
+
+```
+This example shows how to use the Get-MgPrintConnector Cmdlet.
+
 
 ## PARAMETERS
 

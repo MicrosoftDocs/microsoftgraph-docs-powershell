@@ -46,13 +46,17 @@ Retrieve the properties and relationships of a secureScore object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-list-securescores-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
-Get-MgSecuritySecureScore -Top 1
+Get-MgSecuritySecureScore -Top 1 
+
+```
+This example shows how to use the Get-MgSecuritySecureScore Cmdlet.
+
 
 ## PARAMETERS
 

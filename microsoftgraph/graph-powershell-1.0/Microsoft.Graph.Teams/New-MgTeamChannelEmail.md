@@ -39,13 +39,17 @@ To remove the email address of a channel, use the removeEmail method.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-provisionemail-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 New-MgTeamChannelEmail -TeamId $teamId -ChannelId $channelId
+
+```
+This example shows how to use the New-MgTeamChannelEmail Cmdlet.
+
 
 ## PARAMETERS
 

@@ -30,13 +30,17 @@ This default configuration may be the service default assigned by Microsoft Entr
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/crosstenantaccesspolicyconfigurationdefault-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgPolicyCrossTenantAccessPolicyDefault
+
+```
+This example shows how to use the Get-MgPolicyCrossTenantAccessPolicyDefault Cmdlet.
+
 
 ## PARAMETERS
 

@@ -46,11 +46,10 @@ Read the properties and relationships of an internalDomainFederation object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/domain-list-federationconfiguration-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get the federation settings for a federated domain
 
-### EXAMPLE 1
-```
-Get-MgDomainFederationConfiguration -DomainId 'contoso.com' -InternalDomainFederationId '2a8ce608-bb34-473f-9e0f-f373ee4cbc5a' | Format-List
-```
+```powershell
+Get-MgDomainFederationConfiguration -DomainId 'contoso.com' -InternalDomainFederationId '2a8ce608-bb34-473f-9e0f-f373ee4cbc5a' | Format-List  
 
 ActiveSignInUri                       : https://sts.deverett.info/adfs/services/trust/2005/usernamemixed 
 DisplayName                           : Contoso 
@@ -66,7 +65,10 @@ PromptLoginBehavior                   :
 SignOutUri                            : https://sts.deverett.info/adfs/ls/ 
 SigningCertificate                    : MIIC3jCCAcagAwIBAgIQFsO0R8deG4h 
 SigningCertificateUpdateStatus        : Microsoft.Graph.PowerShell.Models.MicrosoftGraphSigningCertificateUpdateStatus 
-AdditionalProperties                    : {\[@odata.context, https://graph.microsoft.com/v1.0/$metadata#domains('contoso.com')/federationConfiguration/$entity\]}
+AdditionalProperties                    : {[@odata.context, https://graph.microsoft.com/v1.0/$metadata#domains('contoso.com')/federationConfiguration/$entity]} 
+```
+
+This examples retrieves the federation settings for the specified domain.
 
 ## PARAMETERS
 

@@ -51,11 +51,14 @@ Update the properties of an administrativeUnit object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/administrativeunit-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Update an administrative unit
 
-### EXAMPLE 1
-```
+```powershell
 Update-MgBetaDirectoryAdministrativeUnit -AdministrativeUnitId 'd924fbd3-69c5-4cdf-b9ea-9b0badcf9c4d' -Description 'East wing unit members'
+
 ```
+
+This example updates the description of the specified administrative unit.
 
 ## PARAMETERS
 

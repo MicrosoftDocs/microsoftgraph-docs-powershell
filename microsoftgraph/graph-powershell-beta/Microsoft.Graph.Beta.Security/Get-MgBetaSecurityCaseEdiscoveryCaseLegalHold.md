@@ -39,18 +39,20 @@ Returns a list of case eDiscoveryHoldPolicy objects for this case.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverycase-list-legalholds-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgBetaSecurityCaseEdiscoveryCaseLegalHold Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityCaseEdiscoveryCaseLegalHold -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryHoldPolicyId $ediscoveryHoldPolicyId
 ```
-
-### EXAMPLE 2
-```
+This example shows how to use the Get-MgBetaSecurityCaseEdiscoveryCaseLegalHold Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Get-MgBetaSecurityCaseEdiscoveryCaseLegalHold Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityCaseEdiscoveryCaseLegalHold -EdiscoveryCaseId $ediscoveryCaseId
 ```
+This example shows how to use the Get-MgBetaSecurityCaseEdiscoveryCaseLegalHold Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

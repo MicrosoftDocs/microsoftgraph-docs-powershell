@@ -43,18 +43,20 @@ Read the properties and relationships of a userSource object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-custodian-list-usersources-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgBetaComplianceEdiscoveryCaseCustodianUserSource Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Get-MgBetaComplianceEdiscoveryCaseCustodianUserSource -CaseId $caseId -CustodianId $custodianId
 ```
-
-### EXAMPLE 2
-```
+This example shows how to use the Get-MgBetaComplianceEdiscoveryCaseCustodianUserSource Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Get-MgBetaComplianceEdiscoveryCaseCustodianUserSource Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Get-MgBetaComplianceEdiscoveryCaseCustodianUserSource -CaseId $caseId -CustodianId $custodianId -UserSourceId $userSourceId
 ```
+This example shows how to use the Get-MgBetaComplianceEdiscoveryCaseCustodianUserSource Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
