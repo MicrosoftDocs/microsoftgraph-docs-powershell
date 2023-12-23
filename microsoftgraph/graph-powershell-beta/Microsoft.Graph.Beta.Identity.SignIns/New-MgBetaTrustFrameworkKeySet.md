@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetatrustframeworkkeyset
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # New-MgBetaTrustFrameworkKeySet
@@ -12,7 +11,6 @@ ms.prod: identity-and-sign-in
 Create a new trustFrameworkKeySet.
 The ID of the trustFrameworkKeySet is expected in the create request; however, it can be modified by the service.
 The modified ID will be available in the response and in the location header.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -32,11 +30,11 @@ New-MgBetaTrustFrameworkKeySet -BodyParameter <IMicrosoftGraphTrustFrameworkKeyS
 Create a new trustFrameworkKeySet.
 The ID of the trustFrameworkKeySet is expected in the create request; however, it can be modified by the service.
 The modified ID will be available in the response and in the location header.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaTrustFrameworkKeySet Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	Id = "keyset1"
@@ -65,18 +63,15 @@ $params = @{
 }
 New-MgBetaTrustFrameworkKeySet -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaTrustFrameworkKeySet Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the New-MgBetaTrustFrameworkKeySet Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	Id = "keyset1"
 }
 New-MgBetaTrustFrameworkKeySet -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaTrustFrameworkKeySet Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -1,20 +1,15 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauseroutlookmastercategory
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Update-MgBetaUserOutlookMasterCategory
 
 ## SYNOPSIS
 Update the writable property, color, of the specified outlookCategory object.
-You can't modify the displayName propertyonce you have created the category.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Users/Update-MgUserOutlookMasterCategory?view=graph-powershell-1.0)
+You can't modify the displayName property\nonce you have created the category.
 
 ## SYNTAX
 
@@ -45,14 +40,14 @@ Update-MgBetaUserOutlookMasterCategory -InputObject <IUsersIdentity>
 
 ## DESCRIPTION
 Update the writable property, color, of the specified outlookCategory object.
-You can't modify the displayName propertyonce you have created the category.
-This API is available in the following national cloud deployments.
+You can't modify the displayName property\nonce you have created the category.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users
+```
 
 $params = @{
 	color = "preset15"
@@ -60,11 +55,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgBetaUserOutlookMasterCategory -UserId $userId -OutlookCategoryId $outlookCategoryId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaUserOutlookMasterCategory Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -274,9 +264,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Users/Update-MgUserOutlookMasterCategory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauseroutlookmastercategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauseroutlookmastercategory)
-
-
 

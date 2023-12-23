@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalbyappid
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update entity in servicePrincipals by appId
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaServicePrincipalByAppId](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalByAppId?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -97,6 +94,18 @@ Update-MgServicePrincipalByAppId -InputObject <IApplicationsIdentity>
 
 ## DESCRIPTION
 Update entity in servicePrincipals by appId
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -1251,10 +1260,10 @@ Must not be included in any POST or PATCH requests.
 Read-only.
   \[Value \<String\>\]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
 
@@ -1367,10 +1376,10 @@ Must not be included in any POST or PATCH requests.
 Read-only.
     \[Value \<String\>\]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
   \[ApplicationTemplateId \<String\>\]: Unique identifier of the applicationTemplate that the servicePrincipal was created from.
@@ -1564,10 +1573,10 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
     \[Value \<String\>\]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
   \[OwnedObjects \<IMicrosoftGraphDirectoryObject\[\]\>\]: Directory objects that are owned by this service principal.
@@ -1606,11 +1615,11 @@ For applications that are not SAML, do not write or otherwise rely on this prope
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    \[IsRemoteDesktopProtocolEnabled \<Boolean?\>\]: 
-    \[TargetDeviceGroups \<IMicrosoftGraphTargetDeviceGroup\[\]\>\]: 
+    \[IsRemoteDesktopProtocolEnabled \<Boolean?\>\]: Determines if Microsoft Entra ID RDS authentication protocol for RDP is enabled.
+    \[TargetDeviceGroups \<IMicrosoftGraphTargetDeviceGroup\[\]\>\]: The collection of target device groups that are associated with the RDS security configuration that will be enabled for SSO when a client connects to the target device over RDP using the new Microsoft Entra ID RDS authentication protocol.
       \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      \[DisplayName \<String\>\]: 
+      \[DisplayName \<String\>\]: Display name for the target device group.
   \[ReplyUrls \<String\[\]\>\]: The URLs that user tokens are sent to for sign in with the associated application, or the redirect URIs that OAuth 2.0 authorization codes and access tokens are sent to for the associated application.
 Not nullable.
   \[ResourceSpecificApplicationPermissions \<IMicrosoftGraphResourceSpecificPermission\[\]\>\]: The resource-specific application permissions exposed by this application.
@@ -2146,10 +2155,10 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
   \[Value \<String\>\]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
 
@@ -2195,11 +2204,11 @@ REMOTEDESKTOPSECURITYCONFIGURATION \<IMicrosoftGraphRemoteDesktopSecurityConfigu
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  \[IsRemoteDesktopProtocolEnabled \<Boolean?\>\]: 
-  \[TargetDeviceGroups \<IMicrosoftGraphTargetDeviceGroup\[\]\>\]: 
+  \[IsRemoteDesktopProtocolEnabled \<Boolean?\>\]: Determines if Microsoft Entra ID RDS authentication protocol for RDP is enabled.
+  \[TargetDeviceGroups \<IMicrosoftGraphTargetDeviceGroup\[\]\>\]: The collection of target device groups that are associated with the RDS security configuration that will be enabled for SSO when a client connects to the target device over RDP using the new Microsoft Entra ID RDS authentication protocol.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    \[DisplayName \<String\>\]: 
+    \[DisplayName \<String\>\]: Display name for the target device group.
 
 RESOURCESPECIFICAPPLICATIONPERMISSIONS \<IMicrosoftGraphResourceSpecificPermission\[\]\>: The resource-specific application permissions exposed by this application.
 Currently, resource-specific permissions are only supported for Teams apps accessing to specific chats and teams using Microsoft Graph.
@@ -2512,9 +2521,6 @@ VERIFIEDPUBLISHER \<IMicrosoftGraphVerifiedPublisher\>: verifiedPublisher
   \[VerifiedPublisherId \<String\>\]: The ID of the verified publisher from the app publisher's Partner Center account.
 
 ## RELATED LINKS
-[Update-MgBetaServicePrincipalByAppId](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalByAppId?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalbyappid](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalbyappid)
-
-
 

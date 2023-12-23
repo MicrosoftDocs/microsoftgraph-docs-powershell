@@ -1,10 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserrubric
 schema: 2.0.0
-ms.prod: education
-ms.prod: education
 ---
 
 # Get-MgBetaEducationUserRubric
@@ -12,10 +10,6 @@ ms.prod: education
 ## SYNOPSIS
 Retrieve the properties and relationships of an educationRubric object.
 Only teachers and students can perform this operation.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEducationUserRubric](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserRubric?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -41,9 +35,18 @@ Get-MgBetaEducationUserRubric -InputObject <IEducationIdentity> [-ExpandProperty
 ## DESCRIPTION
 Retrieve the properties and relationships of an educationRubric object.
 Only teachers and students can perform this operation.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -279,8 +282,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgEducationUserRubric](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserRubric?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserrubric](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserrubric)
-
 

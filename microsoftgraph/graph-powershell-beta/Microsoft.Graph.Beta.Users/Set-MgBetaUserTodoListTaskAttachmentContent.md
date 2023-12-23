@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/set-mgbetausertodolisttaskattachmentcontent
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update media content for the navigation property attachments in users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgUserTodoListTaskAttachmentContent](/powershell/module/Microsoft.Graph.Users/Set-MgUserTodoListTaskAttachmentContent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,6 +27,22 @@ Set-MgBetaUserTodoListTaskAttachmentContent -InputObject <IUsersIdentity> [-Data
 
 ## DESCRIPTION
 Update media content for the navigation property attachments in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -228,10 +241,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgUserTodoListTaskAttachmentContent](/powershell/module/Microsoft.Graph.Users/Set-MgUserTodoListTaskAttachmentContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/set-mgbetausertodolisttaskattachmentcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/set-mgbetausertodolisttaskattachmentcontent)
-
-
-
 

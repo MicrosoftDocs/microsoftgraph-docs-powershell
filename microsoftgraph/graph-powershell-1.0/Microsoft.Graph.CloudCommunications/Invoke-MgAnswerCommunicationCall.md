@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mganswercommunicationcall
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Invoke-MgAnswerCommunicationCall
@@ -14,10 +13,6 @@ The incoming call request can be an invite from a participant in a group call or
 If an invite to a group call is received, the notification will contain the chatInfo and meetingInfo parameters.
 The bot is expected to answer, reject, or redirect the call before the call times out.
 The current timeout value is 15 seconds for regular scenarios, and 5 seconds for policy-based recording scenarios.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaAnswerCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaAnswerCommunicationCall?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -57,22 +52,19 @@ The incoming call request can be an invite from a participant in a group call or
 If an invite to a group call is received, the notification will contain the chatInfo and meetingInfo parameters.
 The bot is expected to answer, reject, or redirect the call before the call times out.
 The current timeout value is 15 seconds for regular scenarios, and 5 seconds for policy-based recording scenarios.
-This API is available in the following national cloud deployments.
-
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-answer-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Answer a Peer-to-Peer VoIP call with service hosted media
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	callbackUri = "callbackUri-value"
 	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		blob = "<Media Session Configuration Blob>"
+		blob = "\<Media Session Configuration Blob\>"
 	}
 	acceptedModalities = @(
 		"audio"
@@ -86,14 +78,10 @@ $params = @{
 
 Invoke-MgAnswerCommunicationCall -CallId $callId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will answer a peer-to-peer voip call with service hosted media
-
-### Example 2: Answer VOIP call with application hosted media
-
-```powershell
-
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	callbackUri = "https://bot.contoso.com/api/calls"
@@ -109,14 +97,10 @@ $params = @{
 
 Invoke-MgAnswerCommunicationCall -CallId $callId -BodyParameter $params
 
+### EXAMPLE 3
 ```
-This example will answer voip call with application hosted media
-
-### Example 3: Answer a policy-based recording call
-
-```powershell
-
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	callbackUri = "https://bot.contoso.com/api/calls"
@@ -125,15 +109,11 @@ $params = @{
 	)
 	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		blob = "<Media Session Configuration Blob>"
+		blob = "\<Media Session Configuration Blob\>"
 	}
 }
 
 Invoke-MgAnswerCommunicationCall -CallId $callId -BodyParameter $params
-
-```
-This example will answer a policy-based recording call
-
 
 ## PARAMETERS
 
@@ -353,6 +333,7 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[AudioRoutingGroupId \<String\>\]: The unique identifier of audioRoutingGroup
   \[CallId \<String\>\]: The unique identifier of call
   \[CallRecordId \<String\>\]: The unique identifier of callRecord
+  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
   \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
   \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
   \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession
@@ -364,8 +345,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaAnswerCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaAnswerCommunicationCall?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mganswercommunicationcall](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mganswercommunicationcall)
-
 

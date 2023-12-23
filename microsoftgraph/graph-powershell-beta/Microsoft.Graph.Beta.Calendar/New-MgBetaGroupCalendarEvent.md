@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetagroupcalendarevent
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgBetaGroupCalendarEvent
@@ -11,10 +10,6 @@ ms.prod: outlook
 ## SYNOPSIS
 Use this API to create a new event in a calendar.
 The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupCalendarEvent](/powershell/module/Microsoft.Graph.Calendar/New-MgGroupCalendarEvent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -77,7 +72,18 @@ New-MgBetaGroupCalendarEvent -InputObject <ICalendarIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Use this API to create a new event in a calendar.
 The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
-This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -2152,8 +2158,6 @@ For example, '2019-04-16T09:00:00'.
 See below for possible values.
 
 ## RELATED LINKS
-[New-MgGroupCalendarEvent](/powershell/module/Microsoft.Graph.Calendar/New-MgGroupCalendarEvent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetagroupcalendarevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetagroupcalendarevent)
-
 

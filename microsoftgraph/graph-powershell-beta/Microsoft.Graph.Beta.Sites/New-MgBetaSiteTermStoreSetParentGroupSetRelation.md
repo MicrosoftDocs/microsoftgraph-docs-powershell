@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitetermstoresetparentgroupsetrelation
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to relations for sites
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSiteTermStoreSetParentGroupSetRelation](/powershell/module/Microsoft.Graph.Sites/New-MgSiteTermStoreSetParentGroupSetRelation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45,6 +42,18 @@ New-MgBetaSiteTermStoreSetParentGroupSetRelation -InputObject <ISitesIdentity>
 
 ## DESCRIPTION
 Create new navigation property to relations for sites
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -287,8 +296,8 @@ Read-only.
     \[LastModifiedDateTime \<DateTime?\>\]: Last date and time of term modification.
 Read-only.
     \[Properties \<IMicrosoftGraphKeyValue\[\]\>\]: Collection of properties on the term.
-      \[Key \<String\>\]: Contains the name of the field that a value is associated with.
-      \[Value \<String\>\]: Contains the corresponding value for the specified key.
+      \[Key \<String\>\]: Key.
+      \[Value \<String\>\]: Value.
     \[Relations \<IMicrosoftGraphTermStoreRelation\[\]\>\]: To indicate which terms are related to the current term as either pinned or reused.
     \[Set \<IMicrosoftGraphTermStoreSet\>\]: set
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -336,8 +345,8 @@ Read-only.
   \[LastModifiedDateTime \<DateTime?\>\]: Last date and time of term modification.
 Read-only.
   \[Properties \<IMicrosoftGraphKeyValue\[\]\>\]: Collection of properties on the term.
-    \[Key \<String\>\]: Contains the name of the field that a value is associated with.
-    \[Value \<String\>\]: Contains the corresponding value for the specified key.
+    \[Key \<String\>\]: Key.
+    \[Value \<String\>\]: Value.
   \[Relations \<IMicrosoftGraphTermStoreRelation\[\]\>\]: To indicate which terms are related to the current term as either pinned or reused.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
@@ -441,8 +450,8 @@ Read-only.
     \[LastModifiedDateTime \<DateTime?\>\]: Last date and time of term modification.
 Read-only.
     \[Properties \<IMicrosoftGraphKeyValue\[\]\>\]: Collection of properties on the term.
-      \[Key \<String\>\]: Contains the name of the field that a value is associated with.
-      \[Value \<String\>\]: Contains the corresponding value for the specified key.
+      \[Key \<String\>\]: Key.
+      \[Value \<String\>\]: Value.
     \[Relations \<IMicrosoftGraphTermStoreRelation\[\]\>\]: To indicate which terms are related to the current term as either pinned or reused.
       \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
@@ -489,8 +498,8 @@ Read-only.
   \[LastModifiedDateTime \<DateTime?\>\]: Last date and time of term modification.
 Read-only.
   \[Properties \<IMicrosoftGraphKeyValue\[\]\>\]: Collection of properties on the term.
-    \[Key \<String\>\]: Contains the name of the field that a value is associated with.
-    \[Value \<String\>\]: Contains the corresponding value for the specified key.
+    \[Key \<String\>\]: Key.
+    \[Value \<String\>\]: Value.
   \[Relations \<IMicrosoftGraphTermStoreRelation\[\]\>\]: To indicate which terms are related to the current term as either pinned or reused.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
@@ -525,9 +534,6 @@ Read-only.
   \[Set \<IMicrosoftGraphTermStoreSet\>\]: set
 
 ## RELATED LINKS
-[New-MgSiteTermStoreSetParentGroupSetRelation](/powershell/module/Microsoft.Graph.Sites/New-MgSiteTermStoreSetParentGroupSetRelation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitetermstoresetparentgroupsetrelation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitetermstoresetparentgroupsetrelation)
-
-
 

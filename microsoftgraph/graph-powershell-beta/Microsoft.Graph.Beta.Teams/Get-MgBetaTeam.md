@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateam
@@ -9,10 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Retrieve the properties and relationships of the specified team.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgTeam](/powershell/module/Microsoft.Graph.Teams/Get-MgTeam?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -36,42 +32,29 @@ Get-MgBetaTeam -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Prop
 
 ## DESCRIPTION
 Retrieve the properties and relationships of the specified team.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Get a list of teams
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 Get-MgBetaTeam
 
+### EXAMPLE 2
 ```
-This example will get a list of teams
-
-### Example 2: Use $filter and $top to get two teams with a display name that starts with 'A'
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Teams
-
-Get-MgBetaTeam -Filter "startswith(displayName, 'A')" -Top 2 
-
 ```
-This example will use $filter and $top to get two teams with a display name that starts with 'a'
 
-### Example 3: Use $filter and $select to get id and description for team with displayName equals "A Contoso Team"
+Get-MgBetaTeam -Filter "startswith(displayName, 'A')" -Top 2
 
-```powershell
-
+### EXAMPLE 3
+```
 Import-Module Microsoft.Graph.Beta.Teams
-
-Get-MgBetaTeam -Filter "displayName eq 'A Contoso Team'" -Property "id,description" 
-
 ```
-This example will use $filter and $select to get id and description for team with displayname equals "a contoso team"
 
+Get-MgBetaTeam -Filter "displayName eq 'A Contoso Team'" -Property "id,description"
 
 ## PARAMETERS
 
@@ -280,6 +263,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
   \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
   \[ConversationMemberId \<String\>\]: The unique identifier of conversationMember
+  \[DayNoteId \<String\>\]: The unique identifier of dayNote
   \[DeletedChatId \<String\>\]: The unique identifier of deletedChat
   \[DeletedTeamId \<String\>\]: The unique identifier of deletedTeam
   \[GroupId \<String\>\]: The unique identifier of group
@@ -313,8 +297,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgTeam](/powershell/module/Microsoft.Graph.Teams/Get-MgTeam?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateam)
-
 

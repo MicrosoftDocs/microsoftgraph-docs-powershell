@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetareactivatedirectoryrecommendationimpactedresource
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Invoke-MgBetaReactivateDirectoryRecommendationImpactedResource
@@ -12,7 +11,6 @@ ms.prod: directory-management
 Reactivate an accidentally dismissed, completed, or postponed impactedResource object.
 This action updates the status of the resource to active.
 This method is relevant only if the status of the impactedResource object is dismissed, postponed, or completedByUser.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -32,7 +30,22 @@ Invoke-MgBetaReactivateDirectoryRecommendationImpactedResource
 Reactivate an accidentally dismissed, completed, or postponed impactedResource object.
 This action updates the status of the resource to active.
 This method is relevant only if the status of the impactedResource object is dismissed, postponed, or completedByUser.
-This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -176,6 +189,4 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetareactivatedirectoryrecommendationimpactedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetareactivatedirectoryrecommendationimpactedresource)
-
-
 

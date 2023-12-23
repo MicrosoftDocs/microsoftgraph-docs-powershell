@@ -1,16 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydataconnector
 schema: 2.0.0
-ms.prod: industry-data-etl
 ---
 
 # New-MgBetaExternalIndustryDataConnector
 
 ## SYNOPSIS
 Create a new industryDataConnector object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -29,7 +27,18 @@ New-MgBetaExternalIndustryDataConnector -BodyParameter <IMicrosoftGraphIndustryD
 
 ## DESCRIPTION
 Create a new industryDataConnector object.
-This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -235,6 +244,4 @@ Maximum supported length is 100 characters.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydataconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydataconnector)
-
-
 

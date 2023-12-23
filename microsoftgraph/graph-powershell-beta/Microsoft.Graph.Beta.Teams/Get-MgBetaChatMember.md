@@ -1,20 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatmember
 schema: 2.0.0
-ms.prod: microsoft-teams
-ms.prod: microsoft-teams
 ---
 
 # Get-MgBetaChatMember
 
 ## SYNOPSIS
 Retrieve a conversationMember from a chat.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgChatMember](/powershell/module/Microsoft.Graph.Teams/Get-MgChatMember?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -39,20 +33,15 @@ Get-MgBetaChatMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] 
 
 ## DESCRIPTION
 Retrieve a conversationMember from a chat.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 Get-MgBetaChatMember -ChatId $chatId -ConversationMemberId $conversationMemberId
-
-```
-This example shows how to use the Get-MgBetaChatMember Cmdlet.
-
 
 ## PARAMETERS
 
@@ -276,6 +265,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
   \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
   \[ConversationMemberId \<String\>\]: The unique identifier of conversationMember
+  \[DayNoteId \<String\>\]: The unique identifier of dayNote
   \[DeletedChatId \<String\>\]: The unique identifier of deletedChat
   \[DeletedTeamId \<String\>\]: The unique identifier of deletedTeam
   \[GroupId \<String\>\]: The unique identifier of group
@@ -309,8 +299,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgChatMember](/powershell/module/Microsoft.Graph.Teams/Get-MgChatMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatmember)
-
 

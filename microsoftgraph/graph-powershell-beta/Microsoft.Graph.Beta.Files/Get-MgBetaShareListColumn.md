@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistcolumn
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Get-MgBetaShareListColumn
 
 ## SYNOPSIS
 The collection of field definitions for this list.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgShareListColumn](/powershell/module/Microsoft.Graph.Files/Get-MgShareListColumn?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -39,17 +35,13 @@ Get-MgBetaShareListColumn -InputObject <IFilesIdentity> [-ExpandProperty <String
 The collection of field definitions for this list.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Sites
+```
 
 Get-MgBetaSiteListColumn -SiteId $siteId -ListId $listId
-```
-This example shows how to use the Get-MgBetaShareListColumn Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -292,8 +284,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgShareListColumn](/powershell/module/Microsoft.Graph.Files/Get-MgShareListColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistcolumn)
-
 

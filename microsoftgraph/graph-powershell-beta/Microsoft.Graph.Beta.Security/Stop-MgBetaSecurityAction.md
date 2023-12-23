@@ -1,16 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/stop-mgbetasecurityaction
 schema: 2.0.0
-ms.prod: security
 ---
 
 # Stop-MgBetaSecurityAction
 
 ## SYNOPSIS
 Cancel a security operation.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -27,16 +25,14 @@ Stop-MgBetaSecurityAction -InputObject <ISecurityIdentity> [-PassThru] [-WhatIf]
 
 ## DESCRIPTION
 Cancel a security operation.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Stop-MgBetaSecurityAction Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
 Stop-MgBetaSecurityAction -SecurityActionId $securityActionId
 ```
-This example shows how to use the Stop-MgBetaSecurityAction Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -137,6 +133,8 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[ArticleId \<String\>\]: The unique identifier of article
   \[ArticleIndicatorId \<String\>\]: The unique identifier of articleIndicator
   \[AttackSimulationOperationId \<String\>\]: The unique identifier of attackSimulationOperation
+  \[AuditLogQueryId \<String\>\]: The unique identifier of auditLogQuery
+  \[AuditLogRecordId \<String\>\]: The unique identifier of auditLogRecord
   \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
   \[AuthorityTemplateId \<String\>\]: The unique identifier of authorityTemplate
   \[CaseOperationId \<String\>\]: The unique identifier of caseOperation
@@ -213,5 +211,4 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/stop-mgbetasecurityaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/stop-mgbetasecurityaction)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgreopensecuritycaseediscoverycase
@@ -10,10 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Reopen an eDiscovery case that was closed.
 For details, see Reopen a closed case.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaReopenSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Beta.Security/Invoke-MgBetaReopenSecurityCaseEdiscoveryCase?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -32,16 +28,14 @@ Invoke-MgReopenSecurityCaseEdiscoveryCase -InputObject <ISecurityIdentity> [-Pas
 ## DESCRIPTION
 Reopen an eDiscovery case that was closed.
 For details, see Reopen a closed case.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgReopenSecurityCaseEdiscoveryCase Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Security
 Invoke-MgReopenSecurityCaseEdiscoveryCase -EdiscoveryCaseId $ediscoveryCaseId
 ```
-This example shows how to use the Invoke-MgReopenSecurityCaseEdiscoveryCase Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -192,8 +186,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Invoke-MgBetaReopenSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Beta.Security/Invoke-MgBetaReopenSecurityCaseEdiscoveryCase?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgreopensecuritycaseediscoverycase](https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgreopensecuritycaseediscoverycase)
-
 

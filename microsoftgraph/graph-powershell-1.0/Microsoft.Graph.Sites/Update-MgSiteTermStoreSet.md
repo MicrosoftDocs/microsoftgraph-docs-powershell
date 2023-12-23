@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitetermstoreset
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Update-MgSiteTermStoreSet
 
 ## SYNOPSIS
 Update the properties of a set object.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteTermStoreSet?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -83,24 +78,19 @@ Update-MgSiteTermStoreSet -InputObject <ISitesIdentity> -BodyParameter <IMicroso
 
 ## DESCRIPTION
 Update the properties of a set object.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Sites
+```
 
 $params = @{
 	description = "mySet"
 }
 
 Update-MgSiteTermStoreSet -SiteId $siteId -SetId $setId -BodyParameter $params
-```
-This example shows how to use the Update-MgSiteTermStoreSet Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -690,7 +680,6 @@ Read-only.
   \[Set \<IMicrosoftGraphTermStoreSet\>\]: set
 
 ## RELATED LINKS
-[Update-MgBetaSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteTermStoreSet?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitetermstoreset](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitetermstoreset)
 

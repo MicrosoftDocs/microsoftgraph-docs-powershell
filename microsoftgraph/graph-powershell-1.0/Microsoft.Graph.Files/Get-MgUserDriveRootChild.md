@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootchild
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Get-MgUserDriveRootChild
@@ -13,9 +12,6 @@ Collection containing Item objects for the immediate children of Item.
 Only items representing folders have children.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveRootChild](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootChild?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -43,6 +39,22 @@ Collection containing Item objects for the immediate children of Item.
 Only items representing folders have children.
 Read-only.
 Nullable.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -300,9 +312,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserDriveRootChild](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootChild?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootchild](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootchild)
-
-
 

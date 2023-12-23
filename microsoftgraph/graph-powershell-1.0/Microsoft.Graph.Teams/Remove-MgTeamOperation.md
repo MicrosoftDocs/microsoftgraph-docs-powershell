@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamoperation
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property operations for teams
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaTeamOperation](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Remove-MgTeamOperation -InputObject <ITeamsIdentity> [-IfMatch <String>] [-PassT
 
 ## DESCRIPTION
 Delete navigation property operations for teams
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -189,9 +202,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgBetaTeamOperation](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamoperation)
-
-
 

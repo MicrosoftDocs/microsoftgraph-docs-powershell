@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagemententitlementmanagementroleassignmentschedulerequest
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property roleAssignmentScheduleRequests in roleManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -61,6 +58,18 @@ Update-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequest
 
 ## DESCRIPTION
 Update the navigation property roleAssignmentScheduleRequests in roleManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -901,9 +910,9 @@ Supports $filter (eq, ne).
 Supports $filter (eq, ne).
   \[TicketInfo \<IMicrosoftGraphTicketInfo\>\]: ticketInfo
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[TicketApproverIdentityId \<String\>\]: 
+    \[TicketApproverIdentityId \<String\>\]: ID for the request approver.
     \[TicketNumber \<String\>\]: The ticket number.
-    \[TicketSubmitterIdentityId \<String\>\]: 
+    \[TicketSubmitterIdentityId \<String\>\]: ID for the request submitter.
     \[TicketSystem \<String\>\]: The description of the ticket system.
 
 CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
@@ -1281,15 +1290,12 @@ Supports $filter (eq, ne).
 
 TICKETINFO \<IMicrosoftGraphTicketInfo\>: ticketInfo
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[TicketApproverIdentityId \<String\>\]: 
+  \[TicketApproverIdentityId \<String\>\]: ID for the request approver.
   \[TicketNumber \<String\>\]: The ticket number.
-  \[TicketSubmitterIdentityId \<String\>\]: 
+  \[TicketSubmitterIdentityId \<String\>\]: ID for the request submitter.
   \[TicketSystem \<String\>\]: The description of the ticket system.
 
 ## RELATED LINKS
-[Update-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagemententitlementmanagementroleassignmentschedulerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagemententitlementmanagementroleassignmentschedulerequest)
-
-
 

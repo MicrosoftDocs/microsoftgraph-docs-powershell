@@ -1,20 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschool
 schema: 2.0.0
-ms.prod: education
-ms.prod: education
 ---
 
 # Get-MgBetaEducationSchool
 
 ## SYNOPSIS
 Retrieve the properties and relationships of the school object.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEducationSchool](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSchool?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -39,20 +33,15 @@ Get-MgBetaEducationSchool -InputObject <IEducationIdentity> [-ExpandProperty <St
 
 ## DESCRIPTION
 Retrieve the properties and relationships of the school object.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 Get-MgBetaEducationSchool -EducationSchoolId $educationSchoolId
-
-```
-This example shows how to use the Get-MgBetaEducationSchool Cmdlet.
-
 
 ## PARAMETERS
 
@@ -273,8 +262,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgEducationSchool](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSchool?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschool](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschool)
-
 

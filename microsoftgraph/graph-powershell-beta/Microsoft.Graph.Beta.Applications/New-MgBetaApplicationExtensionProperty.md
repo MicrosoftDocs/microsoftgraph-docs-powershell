@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationextensionproperty
 schema: 2.0.0
-ms.prod: extensions
 ---
 
 # New-MgBetaApplicationExtensionProperty
 
 ## SYNOPSIS
 Create a new directory extension definition, represented by an extensionProperty object.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationExtensionProperty?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,13 +42,13 @@ New-MgBetaApplicationExtensionProperty -InputObject <IApplicationsIdentity>
 
 ## DESCRIPTION
 Create a new directory extension definition, represented by an extensionProperty object.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Applications
+```
 
 $params = @{
 	name = "jobGroup"
@@ -65,11 +60,6 @@ $params = @{
 }
 
 New-MgBetaApplicationExtensionProperty -ApplicationId $applicationId -BodyParameter $params
-```
-This example shows how to use the New-MgBetaApplicationExtensionProperty Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -375,9 +365,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationExtensionProperty?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationextensionproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationextensionproperty)
-
-
 

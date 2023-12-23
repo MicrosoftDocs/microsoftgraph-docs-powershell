@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusiness
 schema: 2.0.0
-ms.prod: bookings
 ---
 
 # New-MgBetaBookingBusiness
@@ -12,10 +11,6 @@ ms.prod: bookings
 Create a new Microsoft Bookings business in a tenant.
 This is the first step in setting up a Bookings business where you must specify the business display name.
 You can include other information such as business address, web site address, and scheduling policy, or set that information later by updating the bookingBusiness.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgBookingBusiness](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingBusiness?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -41,11 +36,11 @@ New-MgBetaBookingBusiness -BodyParameter <IMicrosoftGraphBookingBusiness> [-What
 Create a new Microsoft Bookings business in a tenant.
 This is the first step in setting up a Bookings business where you must specify the business display name.
 You can include other information such as business address, web site address, and scheduling policy, or set that information later by updating the bookingBusiness.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaBookingBusiness Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Bookings
 $params = @{
 	DisplayName = "Fourth Coffee"
@@ -64,8 +59,6 @@ $params = @{
 }
 New-MgBetaBookingBusiness -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaBookingBusiness Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -119,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-Represents a Microsot Bookings Business.
+Represents a Microsoft Bookings Business.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -527,7 +520,7 @@ Default value is false.
   \[StaffMemberIds \<String\[\]\>\]: The ID of each bookingStaffMember who is scheduled in this appointment.
   \[Start \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
 
-BODYPARAMETER \<IMicrosoftGraphBookingBusiness\>: Represents a Microsot Bookings Business.
+BODYPARAMETER \<IMicrosoftGraphBookingBusiness\>: Represents a Microsoft Bookings Business.
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[DisplayName \<String\>\]: A name for the derived entity, which interfaces with customers.
   \[Id \<String\>\]: The unique identifier for an entity.
@@ -961,7 +954,6 @@ For example, 17:00:00.0000000.
 For example, 08:00:00.0000000.
 
 ## RELATED LINKS
-[New-MgBookingBusiness](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingBusiness?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusiness](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusiness)
 

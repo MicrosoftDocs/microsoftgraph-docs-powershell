@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitetermstore
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property termStore for sites
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgSiteTermStore](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteTermStore?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,21 +28,17 @@ Remove-MgBetaSiteTermStore -InputObject <ISitesIdentity> [-IfMatch <String>] [-P
 Delete navigation property termStore for sites
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Sites
+```
 
 $params = @{
 	defaultLanguageTag = "en-US"
 }
 
 Update-MgBetaSiteTermStore -SiteId $siteId -BodyParameter $params
-```
-This example shows how to use the Remove-MgBetaBetaSiteTermStore Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -207,8 +200,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgSiteTermStore](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteTermStore?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitetermstore](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitetermstore)
-
 

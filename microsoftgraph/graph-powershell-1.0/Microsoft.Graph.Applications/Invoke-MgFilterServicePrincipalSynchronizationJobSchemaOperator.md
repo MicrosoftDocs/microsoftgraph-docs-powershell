@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgfilterserviceprincipalsynchronizationjobschemaoperator
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function filterOperators
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaFilterServicePrincipalSynchronizationJobSchemaOperator](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaFilterServicePrincipalSynchronizationJobSchemaOperator?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,6 +28,18 @@ Invoke-MgFilterServicePrincipalSynchronizationJobSchemaOperator -InputObject <IA
 
 ## DESCRIPTION
 Invoke function filterOperators
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -225,10 +234,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaFilterServicePrincipalSynchronizationJobSchemaOperator](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaFilterServicePrincipalSynchronizationJobSchemaOperator?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgfilterserviceprincipalsynchronizationjobschemaoperator](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgfilterserviceprincipalsynchronizationjobschemaoperator)
-
-
-
 

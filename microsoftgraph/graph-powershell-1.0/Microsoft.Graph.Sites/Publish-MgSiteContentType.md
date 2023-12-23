@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/publish-mgsitecontenttype
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Publish-MgSiteContentType
 
 ## SYNOPSIS
-Publishes a contentType\]\[\] present in the content type hub site.
-This API is available in the following \[national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Publish-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Publish-MgBetaSiteContentType?view=graph-powershell-beta)
+Publishes a \[contentType\]\[\] present in the content type hub site.
 
 ## SYNTAX
 
@@ -29,17 +24,15 @@ Publish-MgSiteContentType -InputObject <ISitesIdentity> [-PassThru] [-WhatIf] [-
 ```
 
 ## DESCRIPTION
-Publishes a contentType\]\[\] present in the content type hub site.
-This API is available in the following \[national cloud deployments.
+Publishes a \[contentType\]\[\] present in the content type hub site.
 
 ## EXAMPLES
-### Example 1: Using the Publish-MgSiteContentType Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Sites
 Publish-MgSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId
 ```
-This example shows how to use the Publish-MgSiteContentType Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -191,8 +184,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Publish-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Publish-MgBetaSiteContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/publish-mgsitecontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/publish-mgsitecontenttype)
-
 

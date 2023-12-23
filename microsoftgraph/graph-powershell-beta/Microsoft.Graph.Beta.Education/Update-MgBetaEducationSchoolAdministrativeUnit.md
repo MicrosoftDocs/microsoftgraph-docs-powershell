@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationschooladministrativeunit
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property administrativeUnit in education
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgEducationSchoolAdministrativeUnit](/powershell/module/Microsoft.Graph.Education/Update-MgEducationSchoolAdministrativeUnit?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -48,6 +45,18 @@ Update-MgBetaEducationSchoolAdministrativeUnit -InputObject <IEducationIdentity>
 
 ## DESCRIPTION
 Update the navigation property administrativeUnit in education
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -344,9 +353,10 @@ Read-only.
     \[RoleMemberInfo \<IMicrosoftGraphIdentity\>\]: identity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
   \[Visibility \<String\>\]: Controls whether the administrative unit and its members are hidden or public.
 Can be set to HiddenMembership or Public.
 If not set, the default behavior is Public.
@@ -391,13 +401,12 @@ Read-only.
   \[RoleMemberInfo \<IMicrosoftGraphIdentity\>\]: identity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-    \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
 
 ## RELATED LINKS
-[Update-MgEducationSchoolAdministrativeUnit](/powershell/module/Microsoft.Graph.Education/Update-MgEducationSchoolAdministrativeUnit?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationschooladministrativeunit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationschooladministrativeunit)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgadminpeopleprofilecardproperty
@@ -8,10 +8,9 @@ schema: 2.0.0
 # New-MgAdminPeopleProfileCardProperty
 
 ## SYNOPSIS
-Create new navigation property to profileCardProperties for admin
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaAdminPeopleProfileCardProperty](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaAdminPeopleProfileCardProperty?view=graph-powershell-beta)
+Create a new profileCardProperty for an organization.
+The new property is identified by its directoryPropertyName property.
+For more information about how to add properties to the profile card for an organization, see Add or remove custom attributes on a profile card using the profile card API.
 
 ## SYNTAX
 
@@ -29,7 +28,21 @@ New-MgAdminPeopleProfileCardProperty -BodyParameter <IMicrosoftGraphProfileCardP
 ```
 
 ## DESCRIPTION
-Create new navigation property to profileCardProperties for admin
+Create a new profileCardProperty for an organization.
+The new property is identified by its directoryPropertyName property.
+For more information about how to add properties to the profile card for an organization, see Add or remove custom attributes on a profile card using the profile card API.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -49,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -Annotations
-.
+Allows an administrator to set a custom display label for the directory property and localize it for the users in their tenant.
 To construct, see NOTES section for ANNOTATIONS properties and create a hash table.
 
 ```yaml
@@ -81,7 +94,10 @@ Accept wildcard characters: False
 ```
 
 ### -DirectoryPropertyName
-.
+Identifies a profileCardProperty resource in Get, Update, or Delete operations.
+Allows an administrator to surface hidden Microsoft Entra ID properties on the Microsoft 365 profile card within their tenant.
+When present, the Microsoft Entra ID field referenced in this property is visible to all users in your tenant on the contact pane of the profile card.
+Allowed values for this field are: UserPrincipalName, Fax, StreetAddress, PostalCode, StateOrProvince, Alias, CustomAttribute1, CustomAttribute2, CustomAttribute3, CustomAttribute4, CustomAttribute5, CustomAttribute6, CustomAttribute7, CustomAttribute8, CustomAttribute9, CustomAttribute10, CustomAttribute11, CustomAttribute12, CustomAttribute13, CustomAttribute14, CustomAttribute15.
 
 ```yaml
 Type: String
@@ -157,9 +173,10 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ANNOTATIONS \<IMicrosoftGraphProfileCardAnnotation\[\]\>: .
-  \[DisplayName \<String\>\]: 
-  \[Localizations \<IMicrosoftGraphDisplayNameLocalization\[\]\>\]: 
+ANNOTATIONS \<IMicrosoftGraphProfileCardAnnotation\[\]\>: Allows an administrator to set a custom display label for the directory property and localize it for the users in their tenant.
+  \[DisplayName \<String\>\]: If present, the value of this field is used by the profile card as the default property label in the experience (for example, 'Cost Center').
+  \[Localizations \<IMicrosoftGraphDisplayNameLocalization\[\]\>\]: Each resource in this collection represents the localized value of the attribute name for a given language, used as the default label for that locale.
+For example, a user with a nb-NO client gets 'Kostnadssenter' as the attribute label, rather than 'Cost Center.'
     \[DisplayName \<String\>\]: If present, the value of this field contains the displayName string that has been set for the language present in the languageTag field.
     \[LanguageTag \<String\>\]: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
 
@@ -167,16 +184,18 @@ BODYPARAMETER \<IMicrosoftGraphProfileCardProperty\>: profileCardProperty
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  \[Annotations \<IMicrosoftGraphProfileCardAnnotation\[\]\>\]: 
-    \[DisplayName \<String\>\]: 
-    \[Localizations \<IMicrosoftGraphDisplayNameLocalization\[\]\>\]: 
+  \[Annotations \<IMicrosoftGraphProfileCardAnnotation\[\]\>\]: Allows an administrator to set a custom display label for the directory property and localize it for the users in their tenant.
+    \[DisplayName \<String\>\]: If present, the value of this field is used by the profile card as the default property label in the experience (for example, 'Cost Center').
+    \[Localizations \<IMicrosoftGraphDisplayNameLocalization\[\]\>\]: Each resource in this collection represents the localized value of the attribute name for a given language, used as the default label for that locale.
+For example, a user with a nb-NO client gets 'Kostnadssenter' as the attribute label, rather than 'Cost Center.'
       \[DisplayName \<String\>\]: If present, the value of this field contains the displayName string that has been set for the language present in the languageTag field.
       \[LanguageTag \<String\>\]: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
-  \[DirectoryPropertyName \<String\>\]:
+  \[DirectoryPropertyName \<String\>\]: Identifies a profileCardProperty resource in Get, Update, or Delete operations.
+Allows an administrator to surface hidden Microsoft Entra ID properties on the Microsoft 365 profile card within their tenant.
+When present, the Microsoft Entra ID field referenced in this property is visible to all users in your tenant on the contact pane of the profile card.
+Allowed values for this field are: UserPrincipalName, Fax, StreetAddress, PostalCode, StateOrProvince, Alias, CustomAttribute1,  CustomAttribute2, CustomAttribute3, CustomAttribute4, CustomAttribute5, CustomAttribute6, CustomAttribute7, CustomAttribute8, CustomAttribute9, CustomAttribute10, CustomAttribute11, CustomAttribute12, CustomAttribute13, CustomAttribute14, CustomAttribute15.
 
 ## RELATED LINKS
-[New-MgBetaAdminPeopleProfileCardProperty](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaAdminPeopleProfileCardProperty?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgadminpeopleprofilecardproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgadminpeopleprofilecardproperty)
-
 

@@ -1,16 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerrostermember
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # New-MgBetaPlannerRosterMember
 
 ## SYNOPSIS
 Add a member to the plannerRoster object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -41,11 +39,11 @@ New-MgBetaPlannerRosterMember -InputObject <IPlannerIdentity>
 
 ## DESCRIPTION
 Add a member to the plannerRoster object.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaPlannerRosterMember Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Planner
 $params = @{
 	"@odata.type" = "#microsoft.graph.plannerRosterMember"
@@ -53,8 +51,6 @@ $params = @{
 }
 New-MgBetaPlannerRosterMember -PlannerRosterId $plannerRosterId -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaPlannerRosterMember Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -253,5 +249,4 @@ INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerrostermember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerrostermember)
-
 

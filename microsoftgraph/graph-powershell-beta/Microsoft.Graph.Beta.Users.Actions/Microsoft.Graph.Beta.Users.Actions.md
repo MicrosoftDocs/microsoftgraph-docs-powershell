@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Users.Actions
 Module Guid: 1f5a9e1d-7b62-410d-8541-b56b33a7d63a
 Download Help Link: {{ Update Download Link }}
@@ -147,6 +147,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaUserOwnedObjectByType](Get-MgBetaUserOwnedObjectByType.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaUserPasswordSingleSignOnCredential](Get-MgBetaUserPasswordSingleSignOnCredential.md)
 {{ Fill in the Description }}
 
 ### [Grant-MgBetaUserDriveItemPermission](Grant-MgBetaUserDriveItemPermission.md)
@@ -560,6 +563,9 @@ Locale: en-US
 ### [Remove-MgBetaAllUserDeviceFromManagement](Remove-MgBetaAllUserDeviceFromManagement.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaUserChatAccessForUser](Remove-MgBetaUserChatAccessForUser.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaUserDriveItemPermanent](Remove-MgBetaUserDriveItemPermanent.md)
 {{ Fill in the Description }}
 
@@ -570,6 +576,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaUserManagedDeviceUserFromSharedAppleDevice](Remove-MgBetaUserManagedDeviceUserFromSharedAppleDevice.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaUserPasswordSingleSignOnCredential](Remove-MgBetaUserPasswordSingleSignOnCredential.md)
 {{ Fill in the Description }}
 
 ### [Rename-MgBetaUserCloudPc](Rename-MgBetaUserCloudPc.md)
@@ -671,6 +680,12 @@ Locale: en-US
 ### [Send-MgBetaUserMessage](Send-MgBetaUserMessage.md)
 {{ Fill in the Description }}
 
+### [Send-MgBetaUserOnlineMeetingVirtualAppointmentReminderSm](Send-MgBetaUserOnlineMeetingVirtualAppointmentReminderSm.md)
+{{ Fill in the Description }}
+
+### [Send-MgBetaUserOnlineMeetingVirtualAppointmentSm](Send-MgBetaUserOnlineMeetingVirtualAppointmentSm.md)
+{{ Fill in the Description }}
+
 ### [Send-MgBetaUserPendingAccessReviewInstanceReminder](Send-MgBetaUserPendingAccessReviewInstanceReminder.md)
 {{ Fill in the Description }}
 
@@ -741,6 +756,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Stop-MgBetaUserPendingAccessReviewInstanceStage](Stop-MgBetaUserPendingAccessReviewInstanceStage.md)
+{{ Fill in the Description }}
+
+### [Suspend-MgBetaUserManagedDeviceConfigurationRefresh](Suspend-MgBetaUserManagedDeviceConfigurationRefresh.md)
 {{ Fill in the Description }}
 
 ### [Sync-MgBetaUserManagedDevice](Sync-MgBetaUserManagedDevice.md)
@@ -814,5 +832,4 @@ Locale: en-US
 
 ### [Update-MgBetaUserPassword](Update-MgBetaUserPassword.md)
 {{ Fill in the Description }}
-
 

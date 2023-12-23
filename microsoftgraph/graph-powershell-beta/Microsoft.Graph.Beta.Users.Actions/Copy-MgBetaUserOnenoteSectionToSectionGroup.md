@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/copy-mgbetauseronenotesectiontosectiongroup
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # Copy-MgBetaUserOnenoteSectionToSectionGroup
@@ -11,10 +10,6 @@ ms.prod: onenote
 ## SYNOPSIS
 Copies a section to a specific section group.
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Copy-MgUserOnenoteSectionToSectionGroup](/powershell/module/Microsoft.Graph.Users.Actions/Copy-MgUserOnenoteSectionToSectionGroup?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,11 +44,11 @@ Copy-MgBetaUserOnenoteSectionToSectionGroup -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Copies a section to a specific section group.
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Copy-MgBetaUserOnenoteSectionToSectionGroup Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
 	Id = "id-value"
@@ -63,8 +58,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Copy-MgBetaUserOnenoteSectionToSectionGroup -UserId $userId -OnenoteSectionId $onenoteSectionId -BodyParameter $params
 ```
-This example shows how to use the Copy-MgBetaUserOnenoteSectionToSectionGroup Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -304,6 +297,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[NotebookId \<String\>\]: The unique identifier of notebook
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
   \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
   \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
   \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask
@@ -317,8 +311,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Copy-MgUserOnenoteSectionToSectionGroup](/powershell/module/Microsoft.Graph.Users.Actions/Copy-MgUserOnenoteSectionToSectionGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/copy-mgbetauseronenotesectiontosectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/copy-mgbetauseronenotesectiontosectiongroup)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachattab
@@ -9,10 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Retrieve the properties and relationships of the specified tab in a chat.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgChatTab](/powershell/module/Microsoft.Graph.Teams/Get-MgChatTab?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -37,31 +33,22 @@ Get-MgBetaChatTab -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-P
 
 ## DESCRIPTION
 Retrieve the properties and relationships of the specified tab in a chat.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: List all the tabs in the chat along with associated Teams app
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Teams
-
-Get-MgBetaChatTab -ChatId $chatId -ExpandProperty "teamsApp" 
-
+### EXAMPLE 1
 ```
-This example will list all the tabs in the chat along with associated teams app
-
-### Example 2: List all the tabs belonging to a specific app in a chat
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Teams
-
-Get-MgBetaChatTab -ChatId $chatId -ExpandProperty "teamsApp" -Filter "teamsApp/id eq 'com.microsoft.teamspace.tab.web'" 
-
 ```
-This example will list all the tabs belonging to a specific app in a chat
 
+Get-MgBetaChatTab -ChatId $chatId -ExpandProperty "teamsApp"
+
+### EXAMPLE 2
+```
+Import-Module Microsoft.Graph.Beta.Teams
+```
+
+Get-MgBetaChatTab -ChatId $chatId -ExpandProperty "teamsApp" -Filter "teamsApp/id eq 'com.microsoft.teamspace.tab.web'"
 
 ## PARAMETERS
 
@@ -285,6 +272,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
   \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
   \[ConversationMemberId \<String\>\]: The unique identifier of conversationMember
+  \[DayNoteId \<String\>\]: The unique identifier of dayNote
   \[DeletedChatId \<String\>\]: The unique identifier of deletedChat
   \[DeletedTeamId \<String\>\]: The unique identifier of deletedTeam
   \[GroupId \<String\>\]: The unique identifier of group
@@ -318,8 +306,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgChatTab](/powershell/module/Microsoft.Graph.Teams/Get-MgChatTab?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachattab](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachattab)
-
 

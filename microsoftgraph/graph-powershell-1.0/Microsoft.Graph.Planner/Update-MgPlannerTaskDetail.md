@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannertaskdetail
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # Update-MgPlannerTaskDetail
 
 ## SYNOPSIS
 Update the navigation property details in planner
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaPlannerTaskDetail](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaPlannerTaskDetail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -46,10 +42,11 @@ Update-MgPlannerTaskDetail -InputObject <IPlannerIdentity> -IfMatch <String>
 Update the navigation property details in planner
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Planner
+```
 
 $params = @{
 	previewType = "noPreview"
@@ -81,11 +78,6 @@ $params = @{
 }
 
 Update-MgPlannerTaskDetail -PlannerTaskId $plannerTaskId -BodyParameter $params-If-Match W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
-```
-This example shows how to use the Update-MgPlannerTaskDetail Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -308,8 +300,6 @@ INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaPlannerTaskDetail](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaPlannerTaskDetail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannertaskdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannertaskdetail)
-
 

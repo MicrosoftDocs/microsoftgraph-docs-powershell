@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementconfigurationpolicysetting
@@ -45,6 +45,22 @@ Update-MgBetaDeviceManagementConfigurationPolicySetting -InputObject <IDeviceMan
 
 ## DESCRIPTION
 Update the navigation property settings in deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -255,7 +271,7 @@ A MinDeviceOccurrence of 0 means setting is optional
     \[OffsetUri \<String\>\]: Offset CSP Path from Base
     \[ReferredSettingInformationList \<IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation\[\]\>\]: List of referred setting information.
       \[SettingDefinitionId \<String\>\]: Setting definition id that is being referred to a setting.
-Applicable for reusable setting.
+Applicable for reusable setting
     \[RootDefinitionId \<String\>\]: Root setting definition id if the setting is a child setting.
     \[SettingUsage \<DeviceManagementConfigurationSettingUsage?\>\]: Supported setting types
     \[UxBehavior \<DeviceManagementConfigurationControlType?\>\]: Setting control type representation in the UX
@@ -439,7 +455,7 @@ A MinDeviceOccurrence of 0 means setting is optional
   \[OffsetUri \<String\>\]: Offset CSP Path from Base
   \[ReferredSettingInformationList \<IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation\[\]\>\]: List of referred setting information.
     \[SettingDefinitionId \<String\>\]: Setting definition id that is being referred to a setting.
-Applicable for reusable setting.
+Applicable for reusable setting
   \[RootDefinitionId \<String\>\]: Root setting definition id if the setting is a child setting.
   \[SettingUsage \<DeviceManagementConfigurationSettingUsage?\>\]: Supported setting types
   \[UxBehavior \<DeviceManagementConfigurationControlType?\>\]: Setting control type representation in the UX
@@ -456,5 +472,4 @@ SETTINGINSTANCE \<IMicrosoftGraphDeviceManagementConfigurationSettingInstance\>:
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementconfigurationpolicysetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementconfigurationpolicysetting)
-
 

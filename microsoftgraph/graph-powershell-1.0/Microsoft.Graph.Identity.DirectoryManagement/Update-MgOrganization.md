@@ -1,21 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganization
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Update-MgOrganization
 
 ## SYNOPSIS
-Update the properties of the currently authenticated organization.
-In this case, organization is defined as a collection of exactly one record, and so its ID must be specified in the request.
-The ID is also known as the tenantId of the organization.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaOrganization?view=graph-powershell-beta)
+Update the properties of a organization object.
 
 ## SYNTAX
 
@@ -66,16 +59,14 @@ Update-MgOrganization -InputObject <IIdentityDirectoryManagementIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of the currently authenticated organization.
-In this case, organization is defined as a collection of exactly one record, and so its ID must be specified in the request.
-The ID is also known as the tenantId of the organization.
-This API is available in the following national cloud deployments.
+Update the properties of a organization object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.organization"
@@ -83,11 +74,6 @@ $params = @{
 }
 
 Update-MgOrganization -OrganizationId $organizationId -BodyParameter $params
-```
-This example shows how to use the Update-MgOrganization Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -1142,7 +1128,6 @@ Not nullable.
   \[Type \<String\>\]: For example, Managed.
 
 ## RELATED LINKS
-[Update-MgBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaOrganization?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganization)
 

@@ -1,10 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotepage
 schema: 2.0.0
-ms.prod: onenote
-ms.prod: onenote
 ---
 
 # Get-MgUserOnenotePage
@@ -12,10 +10,6 @@ ms.prod: onenote
 ## SYNOPSIS
 Retrieve the properties and relationships of a page object.
 Getting page information Access a page's metadata by page identifier: Getting page content You can use the page's content endpoint to get the HTML content of a page: The includeIDs=true query option is used to update pages.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserOnenotePage](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenotePage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -41,21 +35,16 @@ Get-MgUserOnenotePage -InputObject <INotesIdentity> [-ExpandProperty <String[]>]
 ## DESCRIPTION
 Retrieve the properties and relationships of a page object.
 Getting page information Access a page's metadata by page identifier: Getting page content You can use the page's content endpoint to get the HTML content of a page: The includeIDs=true query option is used to update pages.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Notes
+```
 
 # A UPN can also be used as -UserId.
 Get-MgUserOnenotePage -UserId $userId
-
-```
-This example shows how to use the Get-MgUserOnenotePage Cmdlet.
-
 
 ## PARAMETERS
 
@@ -283,8 +272,6 @@ INPUTOBJECT \<INotesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserOnenotePage](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenotePage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotepage](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotepage)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationsynchronization
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Represents the capability for Microsoft Entra identity synchronization through the Microsoft Graph API.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgApplicationSynchronization](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationSynchronization?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Get-MgBetaApplicationSynchronization -InputObject <IApplicationsIdentity> [-Expa
 
 ## DESCRIPTION
 Represents the capability for Microsoft Entra identity synchronization through the Microsoft Graph API.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -142,10 +155,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgApplicationSynchronization](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationSynchronization?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationsynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationsynchronization)
-
-
-
 

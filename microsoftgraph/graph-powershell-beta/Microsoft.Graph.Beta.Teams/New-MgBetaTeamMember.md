@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateammember
@@ -9,10 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Add a new conversation member to a team.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgTeamMember](/powershell/module/Microsoft.Graph.Teams/New-MgTeamMember?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -44,14 +40,13 @@ New-MgBetaTeamMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGra
 
 ## DESCRIPTION
 Add a new conversation member to a team.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Add a member to a team
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -63,14 +58,10 @@ $params = @{
 
 New-MgBetaTeamMember -TeamId $teamId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will add a member to a team
-
-### Example 2: Add a member to a team using user principal name
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -81,10 +72,6 @@ $params = @{
 }
 
 New-MgBetaTeamMember -TeamId $teamId -BodyParameter $params
-
-```
-This example will add a member to a team using user principal name
-
 
 ## PARAMETERS
 
@@ -284,6 +271,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
   \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
   \[ConversationMemberId \<String\>\]: The unique identifier of conversationMember
+  \[DayNoteId \<String\>\]: The unique identifier of dayNote
   \[DeletedChatId \<String\>\]: The unique identifier of deletedChat
   \[DeletedTeamId \<String\>\]: The unique identifier of deletedTeam
   \[GroupId \<String\>\]: The unique identifier of group
@@ -317,8 +305,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[New-MgTeamMember](/powershell/module/Microsoft.Graph.Teams/New-MgTeamMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateammember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateammember)
-
 

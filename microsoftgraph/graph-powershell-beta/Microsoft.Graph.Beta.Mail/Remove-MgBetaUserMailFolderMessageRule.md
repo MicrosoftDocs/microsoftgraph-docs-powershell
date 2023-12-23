@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfoldermessagerule
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Remove-MgBetaUserMailFolderMessageRule
 
 ## SYNOPSIS
 Delete the specified messageRule object.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgUserMailFolderMessageRule](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserMailFolderMessageRule?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,21 +26,16 @@ Remove-MgBetaUserMailFolderMessageRule -InputObject <IMailIdentity> [-IfMatch <S
 
 ## DESCRIPTION
 Delete the specified messageRule object.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Mail
+```
 
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserMailFolderMessageRule -UserId $userId -MailFolderId $mailFolderId -MessageRuleId $messageRuleId
-```
-This example shows how to use the Remove-MgBetaUserMailFolderMessageRule Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -199,8 +189,6 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgUserMailFolderMessageRule](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserMailFolderMessageRule?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfoldermessagerule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfoldermessagerule)
-
 

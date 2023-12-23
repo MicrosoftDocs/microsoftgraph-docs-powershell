@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassmoduleresource
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Remove-MgBetaEducationClassModuleResource
@@ -11,7 +10,6 @@ ms.prod: education
 ## SYNOPSIS
 Delete a specific educationModuleResource attached to a module.
 Only teachers in the class can remove a resource.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -30,7 +28,18 @@ Remove-MgBetaEducationClassModuleResource -InputObject <IEducationIdentity> [-If
 ## DESCRIPTION
 Delete a specific educationModuleResource attached to a module.
 Only teachers in the class can remove a resource.
-This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -193,6 +202,4 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassmoduleresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassmoduleresource)
-
-
 

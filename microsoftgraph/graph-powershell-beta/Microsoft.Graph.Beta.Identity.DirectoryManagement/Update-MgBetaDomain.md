@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadomain
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Update-MgBetaDomain
 
 ## SYNOPSIS
 Update the properties of domain object.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDomain](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDomain?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -56,13 +51,13 @@ Update-MgBetaDomain -InputObject <IIdentityDirectoryManagementIdentity> -BodyPar
 
 ## DESCRIPTION
 Update the properties of domain object.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+```
 
 $params = @{
 	isDefault = $true
@@ -73,11 +68,6 @@ $params = @{
 }
 
 Update-MgBetaDomain -DomainId $domainId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaDomain Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -519,7 +509,7 @@ Corresponds to the ActiveLogOnUri property of the Set-MsolDomainFederationSettin
     \[FederatedIdpMfaBehavior \<String\>\]: federatedIdpMfaBehavior
     \[IsSignedAuthenticationRequestRequired \<Boolean?\>\]: If true, when SAML authentication requests are sent to the federated SAML IdP, Microsoft Entra ID will sign those requests using the OrgID signing key.
 If false (default), the SAML authentication requests sent to the federated IdP aren't signed.
-    \[NextSigningCertificate \<String\>\]: Fallback token signing certificate that is used to sign tokens when the primary signing certificate expires.
+    \[NextSigningCertificate \<String\>\]: Fallback token signing certificate that can also be used to sign tokens, for example when the primary signing certificate expires.
 Formatted as Base64 encoded strings of the public portion of the federated IdP's token signing certificate.
 Needs to be compatible with the X509Certificate2 class.
 Much like the signingCertificate, the nextSigningCertificate property is used if a rollover is required outside of the auto-rollover update, a new federation service is being set up, or if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated.
@@ -616,7 +606,7 @@ Corresponds to the ActiveLogOnUri property of the Set-MsolDomainFederationSettin
   \[FederatedIdpMfaBehavior \<String\>\]: federatedIdpMfaBehavior
   \[IsSignedAuthenticationRequestRequired \<Boolean?\>\]: If true, when SAML authentication requests are sent to the federated SAML IdP, Microsoft Entra ID will sign those requests using the OrgID signing key.
 If false (default), the SAML authentication requests sent to the federated IdP aren't signed.
-  \[NextSigningCertificate \<String\>\]: Fallback token signing certificate that is used to sign tokens when the primary signing certificate expires.
+  \[NextSigningCertificate \<String\>\]: Fallback token signing certificate that can also be used to sign tokens, for example when the primary signing certificate expires.
 Formatted as Base64 encoded strings of the public portion of the federated IdP's token signing certificate.
 Needs to be compatible with the X509Certificate2 class.
 Much like the signingCertificate, the nextSigningCertificate property is used if a rollover is required outside of the auto-rollover update, a new federation service is being set up, or if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated.
@@ -723,7 +713,6 @@ Can be one of the following values: null, Email, Sharepoint, EmailInternalRelayO
 Not nullable.
 
 ## RELATED LINKS
-[Update-MgDomain](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDomain?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadomain](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadomain)
 

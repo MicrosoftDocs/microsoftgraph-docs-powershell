@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamoperation
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to operations for groups
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupTeamOperation](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -45,6 +42,22 @@ New-MgGroupTeamOperation -InputObject <ITeamsIdentity> -BodyParameter <IMicrosof
 
 ## DESCRIPTION
 Create new navigation property to operations for groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -352,9 +365,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[New-MgBetaGroupTeamOperation](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamoperation)
-
-
 

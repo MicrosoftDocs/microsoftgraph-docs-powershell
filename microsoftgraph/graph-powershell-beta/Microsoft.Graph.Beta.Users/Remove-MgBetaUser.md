@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauser
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Remove-MgBetaUser
@@ -13,10 +12,6 @@ Delete user.
  When deleted, user resources are moved to a temporary container and can be restored within 30 days.
 After that time, they are permanently deleted.
 To learn more, see deletedItems.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgUser](/powershell/module/Microsoft.Graph.Users/Remove-MgUser?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -36,24 +31,18 @@ Delete user.
  When deleted, user resources are moved to a temporary container and can be restored within 30 days.
 After that time, they are permanently deleted.
 To learn more, see deletedItems.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Remove a user
 
-```powershell
+### EXAMPLE 1
+```
 Remove-MgBetaUser -UserId '5c442efb-5e66-484a-936a-91b6810bed14'
 ```
 
-This example removes a user.
-
-### Example 2: Remove a user with a confirmation
-
-```powershell
+### EXAMPLE 2
+```
 Remove-MgBetaUser -UserId '3f80a75e-750b-49aa-a6b0-d9bf6df7b4c6' -Confirm
 ```
-
-This examples removes a user after the user is prompted for a confirmation.
 
 ## PARAMETERS
 
@@ -189,9 +178,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgUser](/powershell/module/Microsoft.Graph.Users/Remove-MgUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauser)
-
-
 

@@ -1,16 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilewebaccount
 schema: 2.0.0
-ms.prod: people
 ---
 
 # Remove-MgBetaUserProfileWebAccount
 
 ## SYNOPSIS
 Delete a webAccount object from a user's profile.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,17 +26,15 @@ Remove-MgBetaUserProfileWebAccount -InputObject <IPeopleIdentity> [-IfMatch <Str
 
 ## DESCRIPTION
 Delete a webAccount object from a user's profile.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Remove-MgBetaUserProfileWebAccount Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserProfileWebAccount -UserId $userId -WebAccountId $webAccountId
 ```
-This example shows how to use the Remove-MgBetaUserProfileWebAccount Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -191,5 +187,4 @@ INPUTOBJECT \<IPeopleIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilewebaccount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilewebaccount)
-
 

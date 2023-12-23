@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharelistsubscription
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property subscriptions in shares
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaShareListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListSubscription?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,6 +46,22 @@ Update-MgShareListSubscription -InputObject <IFilesIdentity> -BodyParameter <IMi
 
 ## DESCRIPTION
 Update the navigation property subscriptions in shares
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -540,9 +553,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaShareListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListSubscription?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharelistsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharelistsubscription)
-
-
 

@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassteacherbyref
 schema: 2.0.0
-ms.prod: education
 ---
 
 # New-MgEducationClassTeacherByRef
 
 ## SYNOPSIS
 Add a teacher to a class.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaEducationClassTeacherByRef](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassTeacherByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -43,24 +38,19 @@ New-MgEducationClassTeacherByRef -InputObject <IEducationIdentity> -BodyParamete
 
 ## DESCRIPTION
 Add a teacher to a class.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Education
+```
 
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/v1.0/education/users/14011"
 }
 
 New-MgEducationClassTeacherByRef -EducationClassId $educationClassId -BodyParameter $params
-
-```
-This example shows how to use the New-MgEducationClassTeacherByRef Cmdlet.
-
 
 ## PARAMETERS
 
@@ -222,8 +212,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
-[New-MgBetaEducationClassTeacherByRef](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassTeacherByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassteacherbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassteacherbyref)
-
 

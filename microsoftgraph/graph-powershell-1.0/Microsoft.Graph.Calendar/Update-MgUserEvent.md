@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mguserevent
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Update-MgUserEvent
 
 ## SYNOPSIS
 Update the properties of the event object.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaUserEvent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -75,22 +70,20 @@ Update-MgUserEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGr
 
 ## DESCRIPTION
 Update the properties of the event object.
-This API is available in the following national cloud deployments.
-
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-update-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Calendar
+```
 
 $params = @{
 	originalStartTimeZone = "originalStartTimeZone-value"
 	originalEndTimeZone = "originalEndTimeZone-value"
 	responseStatus = @{
 		response = ""
-		time = [System.DateTime]::Parse("datetime-value")
+		time = \[System.DateTime\]::Parse("datetime-value")
 	}
 	recurrence = $null
 	reminderMinutesBeforeStart = 99
@@ -105,11 +98,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
-```
-This example shows how to use the Update-MgUserEvent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -1499,6 +1487,7 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[ExtensionId \<String\>\]: The unique identifier of extension
   \[GroupId \<String\>\]: The unique identifier of group
   \[PlaceId \<String\>\]: The unique identifier of place
+  \[RoomId \<String\>\]: The unique identifier of room
   \[UserId \<String\>\]: The unique identifier of user
 
 INSTANCES \<IMicrosoftGraphEvent\[\]\>: The occurrences of a recurring series, if the event is a series master.
@@ -1864,7 +1853,6 @@ START \<IMicrosoftGraphDateTimeZone\>: dateTimeTimeZone
 See below for more possible values.
 
 ## RELATED LINKS
-[Update-MgBetaUserEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaUserEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mguserevent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mguserevent)
 

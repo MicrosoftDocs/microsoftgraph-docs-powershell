@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/invoke-mgbetaestimatecomplianceediscoverycasesourcecollectionstatistics
@@ -10,7 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Run an estimate of the number of emails and documents in the source collection.
 To learn more about source collections (also known as searches in eDiscovery), see Collect data for a case in Advanced eDiscovery.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -29,16 +28,14 @@ Invoke-MgBetaEstimateComplianceEdiscoveryCaseSourceCollectionStatistics -InputOb
 ## DESCRIPTION
 Run an estimate of the number of emails and documents in the source collection.
 To learn more about source collections (also known as searches in eDiscovery), see Collect data for a case in Advanced eDiscovery.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaEstimateComplianceEdiscoveryCaseSourceCollectionStatistics Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Compliance
 Invoke-MgBetaEstimateComplianceEdiscoveryCaseSourceCollectionStatistics -CaseId $caseId -SourceCollectionId $sourceCollectionId
 ```
-This example shows how to use the Invoke-MgBetaEstimateComplianceEdiscoveryCaseSourceCollectionStatistics Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -171,5 +168,4 @@ INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/invoke-mgbetaestimatecomplianceediscoverycasesourcecollectionstatistics](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/invoke-mgbetaestimatecomplianceediscoverycasesourcecollectionstatistics)
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointreportexportjob
 schema: 2.0.0
-ms.prod: cloud-pc
 ---
 
 # New-MgBetaDeviceManagementVirtualEndpointReportExportJob
@@ -12,7 +11,6 @@ ms.prod: cloud-pc
 Create a new cloudPcExportJob resource to initiate downloading the entire or specified portion of a report.
 Use the GET cloudPcExportJob operation to verify the exportJobStatus property of the cloudPcExportJob resource.
 When the property result is completed, the report has finished downloading to the location specified by the exportUrl property.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -34,7 +32,22 @@ New-MgBetaDeviceManagementVirtualEndpointReportExportJob -BodyParameter <IMicros
 Create a new cloudPcExportJob resource to initiate downloading the entire or specified portion of a report.
 Use the GET cloudPcExportJob operation to verify the exportJobStatus property of the cloudPcExportJob resource.
 When the property result is completed, the report has finished downloading to the location specified by the exportUrl property.
-This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -269,6 +282,4 @@ It can be used to download the file.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointreportexportjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointreportexportjob)
-
-
 

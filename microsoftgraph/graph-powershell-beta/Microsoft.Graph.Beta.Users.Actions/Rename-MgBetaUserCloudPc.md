@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/rename-mgbetausercloudpc
 schema: 2.0.0
-ms.prod: cloud-pc
 ---
 
 # Rename-MgBetaUserCloudPc
@@ -11,7 +10,6 @@ ms.prod: cloud-pc
 ## SYNOPSIS
 Rename a specific Cloud PC.
 Use this API to update the displayName for the Cloud PC entity.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -44,17 +42,15 @@ Rename-MgBetaUserCloudPc -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Rename a specific Cloud PC.
 Use this API to update the displayName for the Cloud PC entity.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Rename-MgBetaUserCloudPc Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users.Actions
 # A UPN can also be used as -UserId.
 Rename-MgBetaUserCloudPc -UserId $userId -CloudPCId $cloudPCId
 ```
-This example shows how to use the Rename-MgBetaUserCloudPc Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -245,6 +241,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[NotebookId \<String\>\]: The unique identifier of notebook
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
   \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
   \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
   \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask
@@ -260,5 +257,4 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/rename-mgbetausercloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/rename-mgbetausercloudpc)
-
 

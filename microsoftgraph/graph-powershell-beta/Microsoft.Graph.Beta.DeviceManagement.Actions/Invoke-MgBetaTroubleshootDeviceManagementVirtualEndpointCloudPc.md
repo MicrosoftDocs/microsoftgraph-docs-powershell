@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetatroubleshootdevicemanagementvirtualendpointcloudpc
 schema: 2.0.0
-ms.prod: cloud-pc
 ---
 
 # Invoke-MgBetaTroubleshootDeviceManagementVirtualEndpointCloudPc
@@ -11,7 +10,6 @@ ms.prod: cloud-pc
 ## SYNOPSIS
 Troubleshoot a specific Cloud PC.
 Use this API to check the health status of the Cloud PC and the session host.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -30,16 +28,14 @@ Invoke-MgBetaTroubleshootDeviceManagementVirtualEndpointCloudPc -InputObject <ID
 ## DESCRIPTION
 Troubleshoot a specific Cloud PC.
 Use this API to check the health status of the Cloud PC and the session host.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaTroubleshootDeviceManagementVirtualEndpointCloudPc Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
 Invoke-MgBetaTroubleshootDeviceManagementVirtualEndpointCloudPc -CloudPCId $cloudPCId
 ```
-This example shows how to use the Invoke-MgBetaTroubleshootDeviceManagementVirtualEndpointCloudPc Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -179,6 +175,7 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
   \[MicrosoftTunnelSiteId \<String\>\]: The unique identifier of microsoftTunnelSite
   \[MobileAppTroubleshootingEventId \<String\>\]: The unique identifier of mobileAppTroubleshootingEvent
   \[NotificationMessageTemplateId \<String\>\]: The unique identifier of notificationMessageTemplate
+  \[PrivilegeManagementElevationRequestId \<String\>\]: The unique identifier of privilegeManagementElevationRequest
   \[RemoteAssistancePartnerId \<String\>\]: The unique identifier of remoteAssistancePartner
   \[RoleScopeTagId \<String\>\]: The unique identifier of roleScopeTag
   \[WindowsAutopilotDeploymentProfileId \<String\>\]: The unique identifier of windowsAutopilotDeploymentProfile
@@ -191,5 +188,4 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetatroubleshootdevicemanagementvirtualendpointcloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetatroubleshootdevicemanagementvirtualendpointcloudpc)
-
 

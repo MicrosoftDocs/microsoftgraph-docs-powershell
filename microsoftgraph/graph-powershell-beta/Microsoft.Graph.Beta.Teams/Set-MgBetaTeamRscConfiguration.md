@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetateamrscconfiguration
@@ -19,6 +19,18 @@ Set-MgBetaTeamRscConfiguration -State <MicrosoftGraphRscConfigurationState> [-Ad
 
 ## DESCRIPTION
 Update Team RSC configuration for tenant.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -44,7 +56,7 @@ Rsc Configuration State.
 Type: MicrosoftGraphRscConfigurationState
 Parameter Sets: (All)
 Aliases:
-Accepted values: DisabledForAllApps, EnabledForPreApprovedAppsOnly, EnabledForAllApps, EnabledForSelectedGroupOfUsers, Custom
+Accepted values: DisabledForAllApps, EnabledForPreApprovedAppsOnly, EnabledForAllApps, ManagedByMicrosoft, Custom
 
 Required: True
 Position: Named
@@ -97,6 +109,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetateamrscconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetateamrscconfiguration)
-
-
 

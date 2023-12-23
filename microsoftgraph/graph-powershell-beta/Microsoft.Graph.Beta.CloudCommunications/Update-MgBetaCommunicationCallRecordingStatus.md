@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationcallrecordingstatus
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Update-MgBetaCommunicationCallRecordingStatus
@@ -11,10 +10,6 @@ ms.prod: cloud-communications
 ## SYNOPSIS
 Update the application's recording status associated with a call.
 This requires the use of the Teams policy-based recording solution.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgCommunicationCallRecordingStatus](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallRecordingStatus?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -48,11 +43,11 @@ Update-MgBetaCommunicationCallRecordingStatus -InputObject <ICloudCommunications
 ## DESCRIPTION
 Update the application's recording status associated with a call.
 This requires the use of the Teams policy-based recording solution.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaCommunicationCallRecordingStatus Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
 	ClientContext = "clientContext-value"
@@ -60,8 +55,6 @@ $params = @{
 }
 Update-MgBetaCommunicationCallRecordingStatus -CallId $callId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaCommunicationCallRecordingStatus Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -230,8 +223,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgCommunicationCallRecordingStatus](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallRecordingStatus?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationcallrecordingstatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationcallrecordingstatus)
-
 

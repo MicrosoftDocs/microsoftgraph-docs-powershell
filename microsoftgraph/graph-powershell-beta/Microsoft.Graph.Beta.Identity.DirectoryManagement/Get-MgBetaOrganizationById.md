@@ -1,19 +1,15 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationbyid
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Get-MgBetaOrganizationById
 
 ## SYNOPSIS
 Return the directory objects specified in a list of IDs.
-Some common uses for this function are to: This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgOrganizationById](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganizationById?view=graph-powershell-1.0)
+Some common uses for this function are to:
 
 ## SYNTAX
 
@@ -32,9 +28,19 @@ Get-MgBetaOrganizationById
 
 ## DESCRIPTION
 Return the directory objects specified in a list of IDs.
-Some common uses for this function are to: This API is available in the following national cloud deployments.
+Some common uses for this function are to:
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -151,8 +157,6 @@ BODYPARAMETER \<IPaths11G1VgqOrganizationMicrosoftGraphGetbyidsPostRequestbodyCo
   \[Types \<String\[\]\>\]:
 
 ## RELATED LINKS
-[Get-MgOrganizationById](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganizationById?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationbyid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationbyid)
-
 

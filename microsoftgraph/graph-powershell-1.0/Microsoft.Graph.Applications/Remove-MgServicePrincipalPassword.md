@@ -1,16 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalpassword
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Remove-MgServicePrincipalPassword
 
 ## SYNOPSIS
 Remove a password from a servicePrincipal object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -42,21 +40,17 @@ Remove-MgServicePrincipalPassword -InputObject <IApplicationsIdentity>
 
 ## DESCRIPTION
 Remove a password from a servicePrincipal object.
-This API is available in the following national cloud deployments.
-
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-removepassword-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Remove-MgServicePrincipalPassword Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Applications
 $params = @{
 	KeyId = "f0b0b335-1d71-4883-8f98-567911bfdca6"
 }
 Remove-MgServicePrincipalPassword -ServicePrincipalId $servicePrincipalId -BodyParameter $params
 ```
-This example shows how to use the Remove-MgServicePrincipalPassword Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -230,6 +224,4 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalpassword](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalpassword)
-
-
 

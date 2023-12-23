@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Security
 Module Guid: 987c645b-9ff9-4398-8963-19739c27f5c3
 Download Help Link: {{ Update Download Link }}
@@ -129,6 +129,21 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaSecurityAttackSimulationTrainingLanguageDetailCount](Get-MgBetaSecurityAttackSimulationTrainingLanguageDetailCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaSecurityAuditLog](Get-MgBetaSecurityAuditLog.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaSecurityAuditLogQuery](Get-MgBetaSecurityAuditLogQuery.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaSecurityAuditLogQueryCount](Get-MgBetaSecurityAuditLogQueryCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaSecurityAuditLogQueryRecord](Get-MgBetaSecurityAuditLogQueryRecord.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaSecurityAuditLogQueryRecordCount](Get-MgBetaSecurityAuditLogQueryRecordCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaSecurityCase](Get-MgBetaSecurityCase.md)
@@ -854,6 +869,12 @@ Locale: en-US
 ### [New-MgBetaSecurityAttackSimulationTrainingLanguageDetail](New-MgBetaSecurityAttackSimulationTrainingLanguageDetail.md)
 {{ Fill in the Description }}
 
+### [New-MgBetaSecurityAuditLogQuery](New-MgBetaSecurityAuditLogQuery.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaSecurityAuditLogQueryRecord](New-MgBetaSecurityAuditLogQueryRecord.md)
+{{ Fill in the Description }}
+
 ### [New-MgBetaSecurityCaseEdiscoveryCase](New-MgBetaSecurityCaseEdiscoveryCase.md)
 {{ Fill in the Description }}
 
@@ -1089,6 +1110,15 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaSecurityAttackSimulationTrainingLanguageDetail](Remove-MgBetaSecurityAttackSimulationTrainingLanguageDetail.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaSecurityAuditLog](Remove-MgBetaSecurityAuditLog.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaSecurityAuditLogQuery](Remove-MgBetaSecurityAuditLogQuery.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaSecurityAuditLogQueryRecord](Remove-MgBetaSecurityAuditLogQueryRecord.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaSecurityCase](Remove-MgBetaSecurityCase.md)
@@ -1427,6 +1457,15 @@ Locale: en-US
 ### [Update-MgBetaSecurityAttackSimulationTrainingLanguageDetail](Update-MgBetaSecurityAttackSimulationTrainingLanguageDetail.md)
 {{ Fill in the Description }}
 
+### [Update-MgBetaSecurityAuditLog](Update-MgBetaSecurityAuditLog.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaSecurityAuditLogQuery](Update-MgBetaSecurityAuditLogQuery.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaSecurityAuditLogQueryRecord](Update-MgBetaSecurityAuditLogQueryRecord.md)
+{{ Fill in the Description }}
+
 ### [Update-MgBetaSecurityCase](Update-MgBetaSecurityCase.md)
 {{ Fill in the Description }}
 
@@ -1678,5 +1717,4 @@ Locale: en-US
 
 ### [Update-MgBetaUserSecurityInformationProtectionSensitivityLabelParent](Update-MgBetaUserSecurityInformationProtectionSensitivityLabelParent.md)
 {{ Fill in the Description }}
-
 

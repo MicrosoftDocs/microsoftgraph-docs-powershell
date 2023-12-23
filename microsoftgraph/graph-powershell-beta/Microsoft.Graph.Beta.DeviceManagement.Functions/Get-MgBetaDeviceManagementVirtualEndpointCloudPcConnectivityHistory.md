@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointcloudpcconnectivityhistory
@@ -29,13 +29,12 @@ Get-MgBetaDeviceManagementVirtualEndpointCloudPcConnectivityHistory
 Invoke function getCloudPcConnectivityHistory
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointCloudPcConnectivityHistory Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
 Get-MgBetaDeviceManagementVirtualEndpointCloudPcConnectivityHistory -CloudPCId $cloudPCId
 ```
-This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointCloudPcConnectivityHistory Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -167,7 +166,9 @@ INPUTOBJECT \<IDeviceManagementFunctionsIdentity\>: Identity Parameter
   \[DeviceAndAppManagementAssignmentFilterId \<String\>\]: The unique identifier of deviceAndAppManagementAssignmentFilter
   \[DeviceConfigurationId \<String\>\]: The unique identifier of deviceConfiguration
   \[DeviceHealthScriptId \<String\>\]: The unique identifier of deviceHealthScript
+  \[DeviceManagementConfigurationPolicyId \<String\>\]: The unique identifier of deviceManagementConfigurationPolicy
   \[DeviceManagementIntentId \<String\>\]: The unique identifier of deviceManagementIntent
+  \[DeviceManagementReusablePolicySettingId \<String\>\]: The unique identifier of deviceManagementReusablePolicySetting
   \[DeviceManagementTemplateId \<String\>\]: The unique identifier of deviceManagementTemplate
   \[DeviceManagementTemplateId1 \<String\>\]: The unique identifier of deviceManagementTemplate
   \[DomainName \<String\>\]: Usage: domainName='{domainName}'
@@ -193,5 +194,4 @@ INPUTOBJECT \<IDeviceManagementFunctionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointcloudpcconnectivityhistory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointcloudpcconnectivityhistory)
-
 

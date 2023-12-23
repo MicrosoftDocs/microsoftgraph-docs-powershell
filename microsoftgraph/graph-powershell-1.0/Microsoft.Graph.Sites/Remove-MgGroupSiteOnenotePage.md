@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsiteonenotepage
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # Remove-MgGroupSiteOnenotePage
 
 ## SYNOPSIS
 Delete a OneNote page.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaGroupSiteOnenotePage](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteOnenotePage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,7 +26,18 @@ Remove-MgGroupSiteOnenotePage -InputObject <ISitesIdentity> [-IfMatch <String>] 
 
 ## DESCRIPTION
 Delete a OneNote page.
-This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -213,9 +219,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaGroupSiteOnenotePage](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteOnenotePage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsiteonenotepage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsiteonenotepage)
-
-
 

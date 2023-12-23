@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgappcatalogteamapp
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # New-MgAppCatalogTeamApp
@@ -12,10 +11,6 @@ ms.prod: microsoft-teams
 Publish an app to the Microsoft Teams app catalog.\nSpecifically, this API publishes the app to your organization's catalog (the tenant app catalog);\nthe created resource has a distributionMethod property value of organization.
 The requiresReview property allows any user to submit an app for review by an administrator.
 Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaAppCatalogTeamApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaAppCatalogTeamApp?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -35,34 +30,25 @@ New-MgAppCatalogTeamApp -BodyParameter <IMicrosoftGraphTeamsApp> [-WhatIf] [-Con
 Publish an app to the Microsoft Teams app catalog.\nSpecifically, this API publishes the app to your organization's catalog (the tenant app catalog);\nthe created resource has a distributionMethod property value of organization.
 The requiresReview property allows any user to submit an app for review by an administrator.
 Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
-$params = [Zip file containing a Teams app package]
+$params = \[Zip file containing a Teams app package\]
 
 
 New-MgAppCatalogTeamApp -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgAppCatalogTeamApp Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
-
-New-MgAppCatalogTeamApp -Requiresreview true 
-
 ```
-This example shows how to use the New-MgAppCatalogTeamApp Cmdlet.
 
+New-MgAppCatalogTeamApp -Requiresreview true
 
 ## PARAMETERS
 
@@ -292,7 +278,6 @@ For example, if a user changes their display name, the API might show the new va
   \[ExternalId \<String\>\]: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
 ## RELATED LINKS
-[New-MgBetaAppCatalogTeamApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaAppCatalogTeamApp?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgappcatalogteamapp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgappcatalogteamapp)
 

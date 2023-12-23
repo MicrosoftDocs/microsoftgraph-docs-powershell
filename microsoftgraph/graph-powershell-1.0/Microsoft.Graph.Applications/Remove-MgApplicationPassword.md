@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationpassword
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Remove-MgApplicationPassword
 
 ## SYNOPSIS
 Remove a password from an application.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaApplicationPassword](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationPassword?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -45,21 +40,17 @@ Remove-MgApplicationPassword -InputObject <IApplicationsIdentity>
 
 ## DESCRIPTION
 Remove a password from an application.
-This API is available in the following national cloud deployments.
-
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-removepassword-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Remove-MgApplicationPassword Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Applications
 $params = @{
 	KeyId = "f0b0b335-1d71-4883-8f98-567911bfdca6"
 }
 Remove-MgApplicationPassword -ApplicationId $applicationId -BodyParameter $params
 ```
-This example shows how to use the Remove-MgApplicationPassword Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -231,9 +222,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaApplicationPassword](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationPassword?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationpassword](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationpassword)
-
-
 

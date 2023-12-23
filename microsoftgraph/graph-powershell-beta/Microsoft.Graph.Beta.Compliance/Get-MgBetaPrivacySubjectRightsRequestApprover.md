@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetaprivacysubjectrightsrequestapprover
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get approvers from privacy
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPrivacySubjectRightsRequestApprover](/powershell/module/Microsoft.Graph.Compliance/Get-MgPrivacySubjectRightsRequestApprover?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -36,6 +33,18 @@ Get-MgBetaPrivacySubjectRightsRequestApprover -InputObject <IComplianceIdentity>
 
 ## DESCRIPTION
 Get approvers from privacy
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -271,9 +280,6 @@ INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
   \[UserSourceId \<String\>\]: The unique identifier of userSource
 
 ## RELATED LINKS
-[Get-MgPrivacySubjectRightsRequestApprover](/powershell/module/Microsoft.Graph.Compliance/Get-MgPrivacySubjectRightsRequestApprover?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetaprivacysubjectrightsrequestapprover](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetaprivacysubjectrightsrequestapprover)
-
-
 

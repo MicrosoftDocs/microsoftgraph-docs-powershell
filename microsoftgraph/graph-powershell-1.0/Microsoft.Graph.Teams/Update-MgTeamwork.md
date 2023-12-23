@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamwork
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update teamwork
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaTeamwork](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamwork?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Update-MgTeamwork -BodyParameter <IMicrosoftGraphTeamwork> [-WhatIf] [-Confirm] 
 
 ## DESCRIPTION
 Update teamwork
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -9373,8 +9386,6 @@ Start with 1.
   \[Url \<String\>\]: Workforce Integration URL for callbacks from the Shifts service.
 
 ## RELATED LINKS
-[Update-MgBetaTeamwork](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamwork?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamwork](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamwork)
-
 

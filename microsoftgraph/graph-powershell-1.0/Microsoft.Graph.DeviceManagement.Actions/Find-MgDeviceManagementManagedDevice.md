@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/find-mgdevicemanagementmanageddevice
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Find-MgDeviceManagementManagedDevice
 
 ## SYNOPSIS
 Locate a device
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Find-MgBetaDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Find-MgBetaDeviceManagementManagedDevice?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -32,17 +28,13 @@ Find-MgDeviceManagementManagedDevice -InputObject <IDeviceManagementActionsIdent
 Locate a device
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.DeviceManagement.Actions
+```
 
 Find-MgDeviceManagementManagedDevice -ManagedDeviceId $managedDeviceId
-
-```
-This example shows how to use the Find-MgDeviceManagementManagedDevice Cmdlet.
-
 
 ## PARAMETERS
 
@@ -153,8 +145,6 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
   \[WindowsAutopilotDeviceIdentityId \<String\>\]: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
-[Find-MgBetaDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Find-MgBetaDeviceManagementManagedDevice?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/find-mgdevicemanagementmanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/find-mgdevicemanagementmanageddevice)
-
 

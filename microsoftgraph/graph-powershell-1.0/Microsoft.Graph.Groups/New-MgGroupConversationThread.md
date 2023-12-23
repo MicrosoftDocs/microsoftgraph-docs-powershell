@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversationthread
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # New-MgGroupConversationThread
@@ -14,10 +13,6 @@ A thread and post are created as specified.
 Use reply thread to further post \nto that thread.
 Or, if you get the post ID, you can also reply to that post in that thread.
 Note: You can also start a new conversation by first creating a thread.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupConversationThread](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupConversationThread?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -57,13 +52,13 @@ A thread and post are created as specified.
 Use reply thread to further post \nto that thread.
 Or, if you get the post ID, you can also reply to that post in that thread.
 Note: You can also start a new conversation by first creating a thread.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Groups
+```
 
 $params = @{
 	topic = "Take your wellness days and rest"
@@ -78,11 +73,6 @@ $params = @{
 }
 
 New-MgGroupConversationThread -GroupId $groupId -ConversationId $conversationId -BodyParameter $params
-```
-This example shows how to use the New-MgGroupConversationThread Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -573,7 +563,6 @@ Returned only on $select.
     \[Name \<String\>\]: The display name of the person or entity.
 
 ## RELATED LINKS
-[New-MgBetaGroupConversationThread](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupConversationThread?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversationthread](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversationthread)
 

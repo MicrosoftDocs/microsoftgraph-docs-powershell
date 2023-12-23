@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Reports
 Module Guid: 51fa7a02-1099-4183-b155-e14ffb788a3c
 Download Help Link: {{ Update Download Link }}
@@ -318,6 +318,24 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaReportSecurityAttackSimulationUserCoverage](Get-MgBetaReportSecurityAttackSimulationUserCoverage.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaReportServiceActivity](Get-MgBetaReportServiceActivity.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaReportServiceActivityMetricForConditionalAccessCompliantDeviceSignInSuccess](Get-MgBetaReportServiceActivityMetricForConditionalAccessCompliantDeviceSignInSuccess.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaReportServiceActivityMetricForConditionalAccessManagedDeviceSignInSuccess](Get-MgBetaReportServiceActivityMetricForConditionalAccessManagedDeviceSignInSuccess.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaReportServiceActivityMetricForMfaSignInFailure](Get-MgBetaReportServiceActivityMetricForMfaSignInFailure.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaReportServiceActivityMetricForMfaSignInSuccess](Get-MgBetaReportServiceActivityMetricForMfaSignInSuccess.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaReportServiceActivityMetricForSamlSignInSuccess](Get-MgBetaReportServiceActivityMetricForSamlSignInSuccess.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaReportServicePrincipalSignInActivity](Get-MgBetaReportServicePrincipalSignInActivity.md)
@@ -646,5 +664,4 @@ Locale: en-US
 
 ### [Update-MgBetaReportUserInsightMonthly](Update-MgBetaReportUserInsightMonthly.md)
 {{ Fill in the Description }}
-
 

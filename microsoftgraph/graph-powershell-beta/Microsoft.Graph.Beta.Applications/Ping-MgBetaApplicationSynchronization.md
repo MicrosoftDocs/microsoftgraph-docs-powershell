@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/ping-mgbetaapplicationsynchronization
@@ -24,6 +24,18 @@ Ping-MgBetaApplicationSynchronization -InputObject <IApplicationsIdentity> [<Com
 
 ## DESCRIPTION
 Invoke function Ping
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -109,7 +121,4 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/ping-mgbetaapplicationsynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/ping-mgbetaapplicationsynchronization)
-
-
-
 

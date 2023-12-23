@@ -1,20 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationfederatedidentitycredential
 schema: 2.0.0
-ms.prod: applications
-ms.prod: applications
 ---
 
 # Get-MgBetaApplicationFederatedIdentityCredential
 
 ## SYNOPSIS
 Read the properties and relationships of a federatedIdentityCredential object.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgApplicationFederatedIdentityCredential](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationFederatedIdentityCredential?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -40,20 +34,15 @@ Get-MgBetaApplicationFederatedIdentityCredential -InputObject <IApplicationsIden
 
 ## DESCRIPTION
 Read the properties and relationships of a federatedIdentityCredential object.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Applications
+```
 
 Get-MgBetaApplicationFederatedIdentityCredential -ApplicationId $applicationId
-
-```
-This example shows how to use the Get-MgBetaApplicationFederatedIdentityCredential Cmdlet.
-
 
 ## PARAMETERS
 
@@ -303,9 +292,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgApplicationFederatedIdentityCredential](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationFederatedIdentityCredential?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationfederatedidentitycredential](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationfederatedidentitycredential)
-
-
 

@@ -1,20 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodolist
 schema: 2.0.0
-ms.prod: outlook
-ms.prod: outlook
 ---
 
 # Get-MgBetaUserTodoList
 
 ## SYNOPSIS
 Read the properties and relationships of a todoTaskList object.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserTodoList](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoList?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -39,21 +33,16 @@ Get-MgBetaUserTodoList -InputObject <IUsersIdentity> [-ExpandProperty <String[]>
 
 ## DESCRIPTION
 Read the properties and relationships of a todoTaskList object.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users
+```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserTodoList -UserId $userId -TodoTaskListId $todoTaskListId
-```
-This example shows how to use the Get-MgBetaUserTodoList Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -294,9 +283,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserTodoList](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoList?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodolist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodolist)
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserowneddeviceasdevice
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.device
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserOwnedDeviceAsDevice](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOwnedDeviceAsDevice?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -36,6 +33,18 @@ Get-MgUserOwnedDeviceAsDevice -InputObject <IUsersIdentity> [-ExpandProperty <St
 
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.device
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -283,10 +292,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserOwnedDeviceAsDevice](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOwnedDeviceAsDevice?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserowneddeviceasdevice](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserowneddeviceasdevice)
-
-
-
 

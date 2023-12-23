@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgacceptgroupevent
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Invoke-MgAcceptGroupEvent
 
 ## SYNOPSIS
 Accept the specified event in a user calendar.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaAcceptGroupEvent](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaAcceptGroupEvent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -45,13 +40,13 @@ Invoke-MgAcceptGroupEvent -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Accept the specified event in a user calendar.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Users.Actions
+```
 
 $params = @{
 	Comment = "comment-value"
@@ -60,11 +55,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Invoke-MgAcceptUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
-```
-This example shows how to use the Invoke-MgAcceptGroupEvent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -280,8 +270,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
-[Invoke-MgBetaAcceptGroupEvent](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaAcceptGroupEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgacceptgroupevent](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgacceptgroupevent)
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalert
 schema: 2.0.0
-ms.prod: security
 ---
 
 # Update-MgBetaSecurityAlert
@@ -11,10 +10,6 @@ ms.prod: security
 ## SYNOPSIS
 Update an editable alert property within any integrated solution to keep alert status and assignments in sync across solutions.
 This method updates any solution that has a record of the referenced alert ID.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSecurityAlert](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAlert?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -79,17 +74,17 @@ Update-MgBetaSecurityAlert -InputObject <ISecurityIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Update an editable alert property within any integrated solution to keep alert status and assignments in sync across solutions.
 This method updates any solution that has a record of the referenced alert ID.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Request without Prefer header
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
+```
 
 $params = @{
 	assignedTo = "String"
-	closedDateTime = [System.DateTime]::Parse("String (timestamp)")
+	closedDateTime = \[System.DateTime\]::Parse("String (timestamp)")
 	comments = @(
 		"String"
 	)
@@ -105,19 +100,15 @@ $params = @{
 }
 
 Update-MgBetaSecurityAlert -AlertId $alertId -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the Update-MgBetaSecurityAlert Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Request with Prefer header
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Security
+```
 
 $params = @{
 	assignedTo = "String"
-	closedDateTime = [System.DateTime]::Parse("String (timestamp)")
+	closedDateTime = \[System.DateTime\]::Parse("String (timestamp)")
 	comments = @(
 		"String"
 	)
@@ -133,11 +124,6 @@ $params = @{
 }
 
 Update-MgBetaSecurityAlert -AlertId $alertId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaSecurityAlert Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -1144,6 +1130,8 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[ArticleId \<String\>\]: The unique identifier of article
   \[ArticleIndicatorId \<String\>\]: The unique identifier of articleIndicator
   \[AttackSimulationOperationId \<String\>\]: The unique identifier of attackSimulationOperation
+  \[AuditLogQueryId \<String\>\]: The unique identifier of auditLogQuery
+  \[AuditLogRecordId \<String\>\]: The unique identifier of auditLogRecord
   \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
   \[AuthorityTemplateId \<String\>\]: The unique identifier of authorityTemplate
   \[CaseOperationId \<String\>\]: The unique identifier of caseOperation
@@ -1363,7 +1351,6 @@ VULNERABILITYSTATES \<IMicrosoftGraphVulnerabilityState\[\]\>: Threat intelligen
   \[WasRunning \<Boolean?\>\]: Indicates whether the detected vulnerability (file) was running at the time of detection or was the file detected at rest on the disk.
 
 ## RELATED LINKS
-[Update-MgSecurityAlert](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAlert?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalert](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalert)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationextensionproperty
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property extensionProperties in applications
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationExtensionProperty?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -45,6 +42,22 @@ Update-MgApplicationExtensionProperty -InputObject <IApplicationsIdentity>
 
 ## DESCRIPTION
 Update the navigation property extensionProperties in applications
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -193,7 +206,10 @@ Accept wildcard characters: False
 ```
 
 ### -IsMultiValued
-.
+Defines the directory extension as a multi-valued property.
+When true, the directory extension property can store a collection of objects of the dataType; for example, a collection of integers.
+The default value is false.
+Supports $filter (eq).
 
 ```yaml
 Type: SwitchParameter
@@ -317,7 +333,10 @@ Following values are supported.
 Not nullable.
 Binary - 256 bytes maximumBooleanDateTime - Must be specified in ISO 8601 format.
 Will be stored in UTC.Integer - 32-bit value.LargeInteger - 64-bit value.String - 256 characters maximum
-  \[IsMultiValued \<Boolean?\>\]: 
+  \[IsMultiValued \<Boolean?\>\]: Defines the directory extension as a multi-valued property.
+When true, the directory extension property can store a collection of objects of the dataType; for example, a collection of integers.
+The default value is false.
+Supports $filter (eq).
   \[IsSyncedFromOnPremises \<Boolean?\>\]: Indicates if this extension property was synced from on-premises active directory using Microsoft Entra Connect.
 Read-only.
   \[Name \<String\>\]: Name of the extension property.
@@ -352,10 +371,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationExtensionProperty?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationextensionproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationextensionproperty)
-
-
-
 

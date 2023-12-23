@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/set-mgbetaeducationmeassignmentsubmissionupresourcefolder
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Set-MgBetaEducationMeAssignmentSubmissionUpResourceFolder
@@ -13,10 +12,6 @@ Trigger the creation of the SharePoint resource folder where all file-based reso
 Only teachers and students can perform this operation.
 Note that files must be located in this folder in order to be added as resources.
 Only a student in the class can determine what files to upload in a given submission-level resource folder.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgEducationMeAssignmentSubmissionUpResourceFolder](/powershell/module/Microsoft.Graph.Education/Set-MgEducationMeAssignmentSubmissionUpResourceFolder?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -37,7 +32,22 @@ Trigger the creation of the SharePoint resource folder where all file-based reso
 Only teachers and students can perform this operation.
 Note that files must be located in this folder in order to be added as resources.
 Only a student in the class can determine what files to upload in a given submission-level resource folder.
-This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -153,9 +163,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Set-MgEducationMeAssignmentSubmissionUpResourceFolder](/powershell/module/Microsoft.Graph.Education/Set-MgEducationMeAssignmentSubmissionUpResourceFolder?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/set-mgbetaeducationmeassignmentsubmissionupresourcefolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/set-mgbetaeducationmeassignmentsubmissionupresourcefolder)
-
-
 

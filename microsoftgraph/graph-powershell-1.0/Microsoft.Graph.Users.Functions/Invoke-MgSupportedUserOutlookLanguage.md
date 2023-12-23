@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgsupporteduseroutlooklanguage
@@ -10,11 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server.
 When setting up an Outlook client, the user selects the preferred language from this supported list.
-You can subsequently get the preferred language bygetting the user's mailbox settings.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaSupportedUserOutlookLanguage](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaSupportedUserOutlookLanguage?view=graph-powershell-beta)
+You can subsequently get the preferred language by\ngetting the user's mailbox settings.
 
 ## SYNTAX
 
@@ -33,18 +29,16 @@ Invoke-MgSupportedUserOutlookLanguage -InputObject <IUsersFunctionsIdentity> [-C
 ## DESCRIPTION
 Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server.
 When setting up an Outlook client, the user selects the preferred language from this supported list.
-You can subsequently get the preferred language bygetting the user's mailbox settings.
-This API is available in the following national cloud deployments.
+You can subsequently get the preferred language by\ngetting the user's mailbox settings.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgSupportedUserOutlookLanguage Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Users.Functions
 # A UPN can also be used as -UserId.
 Invoke-MgSupportedUserOutlookLanguage -UserId $userId
 ```
-This example shows how to use the Invoke-MgSupportedUserOutlookLanguage Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -198,8 +192,6 @@ INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaSupportedUserOutlookLanguage](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaSupportedUserOutlookLanguage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgsupporteduseroutlooklanguage](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgsupporteduseroutlooklanguage)
-
 

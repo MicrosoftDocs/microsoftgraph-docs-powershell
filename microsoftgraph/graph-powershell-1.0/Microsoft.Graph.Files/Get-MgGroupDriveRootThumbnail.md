@@ -1,21 +1,17 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootthumbnail
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Get-MgGroupDriveRootThumbnail
 
 ## SYNOPSIS
-Collection containing \[ThumbnailSet\]\[\] objects associated with the item.
-For more info, see \[getting thumbnails\]\[\].
+Collection of \[thumbnailSet\]\[\] objects associated with the item.
+For more information, see \[getting thumbnails\]\[\].
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveRootThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootThumbnail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -39,10 +35,26 @@ Get-MgGroupDriveRootThumbnail -InputObject <IFilesIdentity> [-ExpandProperty <St
 ```
 
 ## DESCRIPTION
-Collection containing \[ThumbnailSet\]\[\] objects associated with the item.
-For more info, see \[getting thumbnails\]\[\].
+Collection of \[thumbnailSet\]\[\] objects associated with the item.
+For more information, see \[getting thumbnails\]\[\].
 Read-only.
 Nullable.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -300,9 +312,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupDriveRootThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootThumbnail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootthumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootthumbnail)
-
-
 

@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationschoolclass
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Get-MgEducationSchoolClass
 
 ## SYNOPSIS
 Get the educationClass resources owned by an educationSchool.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationSchoolClass](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchoolClass?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -25,20 +20,15 @@ Get-MgEducationSchoolClass -EducationSchoolId <String> [-ExpandProperty <String[
 
 ## DESCRIPTION
 Get the educationClass resources owned by an educationSchool.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Education
+```
 
 Get-MgEducationSchoolClass -EducationSchoolId $educationSchoolId
-
-```
-This example shows how to use the Get-MgEducationSchoolClass Cmdlet.
-
 
 ## PARAMETERS
 
@@ -219,8 +209,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaEducationSchoolClass](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchoolClass?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationschoolclass](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationschoolclass)
-
 

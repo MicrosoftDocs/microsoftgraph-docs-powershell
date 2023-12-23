@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetauserdriveitemlistitemdocumentsetversionfield
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property fields for users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgUserDriveItemListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Files/Remove-MgUserDriveItemListItemDocumentSetVersionField?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,6 +27,18 @@ Remove-MgBetaUserDriveItemListItemDocumentSetVersionField -InputObject <IFilesId
 
 ## DESCRIPTION
 Delete navigation property fields for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -212,9 +221,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgUserDriveItemListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Files/Remove-MgUserDriveItemListItemDocumentSetVersionField?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetauserdriveitemlistitemdocumentsetversionfield](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetauserdriveitemlistitemdocumentsetversionfield)
-
-
 

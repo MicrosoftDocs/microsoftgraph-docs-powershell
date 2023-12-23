@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagementdirectoryroleassignmentschedulerequest
@@ -12,10 +12,6 @@ Create a new unifiedRoleAssignmentScheduleRequest object.
 This operation allows both admins and users to add, remove, extend, or renew assignments.
 To run this request, the calling user must have multifactor authentication (MFA) enforced, and running the query in a session in which they were challenged for MFA.
 See Enable per-user Microsoft Entra multifactor authentication to secure sign-in events.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgRoleManagementDirectoryRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementDirectoryRoleAssignmentScheduleRequest?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -44,7 +40,18 @@ Create a new unifiedRoleAssignmentScheduleRequest object.
 This operation allows both admins and users to add, remove, extend, or renew assignments.
 To run this request, the calling user must have multifactor authentication (MFA) enforced, and running the query in a session in which they were challenged for MFA.
 See Enable per-user Microsoft Entra multifactor authentication to secure sign-in events.
-This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -853,9 +860,9 @@ Supports $filter (eq, ne).
 Supports $filter (eq, ne).
   \[TicketInfo \<IMicrosoftGraphTicketInfo\>\]: ticketInfo
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[TicketApproverIdentityId \<String\>\]: 
+    \[TicketApproverIdentityId \<String\>\]: ID for the request approver.
     \[TicketNumber \<String\>\]: The ticket number.
-    \[TicketSubmitterIdentityId \<String\>\]: 
+    \[TicketSubmitterIdentityId \<String\>\]: ID for the request submitter.
     \[TicketSystem \<String\>\]: The description of the ticket system.
 
 CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
@@ -1132,15 +1139,12 @@ Supports $filter (eq, ne).
 
 TICKETINFO \<IMicrosoftGraphTicketInfo\>: ticketInfo
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[TicketApproverIdentityId \<String\>\]: 
+  \[TicketApproverIdentityId \<String\>\]: ID for the request approver.
   \[TicketNumber \<String\>\]: The ticket number.
-  \[TicketSubmitterIdentityId \<String\>\]: 
+  \[TicketSubmitterIdentityId \<String\>\]: ID for the request submitter.
   \[TicketSystem \<String\>\]: The description of the ticket system.
 
 ## RELATED LINKS
-[New-MgRoleManagementDirectoryRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementDirectoryRoleAssignmentScheduleRequest?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagementdirectoryroleassignmentschedulerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagementdirectoryroleassignmentschedulerequest)
-
-
 

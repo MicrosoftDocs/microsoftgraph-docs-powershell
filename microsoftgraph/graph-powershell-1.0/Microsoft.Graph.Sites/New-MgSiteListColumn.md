@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelistcolumn
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # New-MgSiteListColumn
 
 ## SYNOPSIS
-Create a column for a list\]\[list\] with a request that specifies a \[columnDefinition\]\[columnDefinition\].
-This API is available in the following \[national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSiteListColumn](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteListColumn?view=graph-powershell-beta)
+Create a column for a \[list\]\[list\] with a request that specifies a \[columnDefinition\]\[columnDefinition\].
 
 ## SYNTAX
 
@@ -62,14 +57,14 @@ New-MgSiteListColumn -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGra
 ```
 
 ## DESCRIPTION
-Create a column for a list\]\[list\] with a request that specifies a \[columnDefinition\]\[columnDefinition\].
-This API is available in the following \[national cloud deployments.
+Create a column for a \[list\]\[list\] with a request that specifies a \[columnDefinition\]\[columnDefinition\].
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Sites
+```
 
 $params = @{
 	description = "test"
@@ -86,11 +81,6 @@ $params = @{
 }
 
 New-MgSiteListColumn -SiteId $siteId -ListId $listId -BodyParameter $params
-```
-This example shows how to use the New-MgSiteListColumn Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -1243,8 +1233,6 @@ User will be prompted with this message if validation fails.
 For examples, see Examples of common formulas in lists.
 
 ## RELATED LINKS
-[New-MgBetaSiteListColumn](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteListColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelistcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelistcolumn)
-
 

@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/remove-mgplannerplan
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # Remove-MgPlannerPlan
 
 ## SYNOPSIS
 Delete a plannerPlan object.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Remove-MgBetaPlannerPlan?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,20 +26,15 @@ Remove-MgPlannerPlan -InputObject <IPlannerIdentity> [-IfMatch <String>] [-PassT
 
 ## DESCRIPTION
 Delete a plannerPlan object.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Planner
+```
 
 Remove-MgPlannerPlan -PlannerPlanId $plannerPlanId-If-Match W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
-```
-This example shows how to use the Remove-MgPlannerPlan Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -163,8 +153,6 @@ INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Remove-MgBetaPlannerPlan?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/remove-mgplannerplan](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/remove-mgplannerplan)
-
 

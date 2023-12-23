@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontacttransitivememberof
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Get-MgContactTransitiveMemberOf
@@ -12,9 +11,6 @@ ms.prod: directory-management
 Groups that this contact is a member of, including groups that the contact is nested under.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaContactTransitiveMemberOf](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactTransitiveMemberOf?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -43,17 +39,13 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
+```
 
 Get-MgContactTransitiveMemberOf -OrgContactId $orgContactId
-
-```
-This example shows how to use the Get-MgContactTransitiveMemberOf Cmdlet.
-
 
 ## PARAMETERS
 
@@ -312,8 +304,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaContactTransitiveMemberOf](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactTransitiveMemberOf?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontacttransitivememberof](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontacttransitivememberof)
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationmeassignmentsubmissionoutcome
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Remove-MgBetaEducationMeAssignmentSubmissionOutcome
@@ -11,10 +10,6 @@ ms.prod: education
 ## SYNOPSIS
 Delete a feedback resource from a submission.
 This can only be done by a teacher.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgEducationMeAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationMeAssignmentSubmissionOutcome?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34,7 +29,22 @@ Remove-MgBetaEducationMeAssignmentSubmissionOutcome -InputObject <IEducationIden
 ## DESCRIPTION
 Delete a feedback resource from a submission.
 This can only be done by a teacher.
-This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -195,9 +205,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Remove-MgEducationMeAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationMeAssignmentSubmissionOutcome?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationmeassignmentsubmissionoutcome](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationmeassignmentsubmissionoutcome)
-
-
 

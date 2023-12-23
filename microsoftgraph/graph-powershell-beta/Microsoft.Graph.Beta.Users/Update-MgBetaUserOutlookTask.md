@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauseroutlooktask
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Update-MgBetaUserOutlookTask
@@ -14,7 +13,6 @@ The completedDateTime property can be set by the complete action, or explicitly 
 If you use PATCH to set completedDateTime, make sure you set status to completed as well.
 By default, this operation (and the POST, GET, and complete task operations) returns date-related properties in UTC.
 You can use the Prefer: outlook.timezone header to have all the date-related properties in the response represented in a time zone different than UTC.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -66,11 +64,11 @@ The completedDateTime property can be set by the complete action, or explicitly 
 If you use PATCH to set completedDateTime, make sure you set status to completed as well.
 By default, this operation (and the POST, GET, and complete task operations) returns date-related properties in UTC.
 You can use the Prefer: outlook.timezone header to have all the date-related properties in the response represented in a time zone different than UTC.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaUserOutlookTask Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users
 $params = @{
 	DueDateTime = @{
@@ -81,8 +79,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Update-MgBetaUserOutlookTask -UserId $userId -OutlookTaskId $outlookTaskId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaUserOutlookTask Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -784,5 +780,4 @@ See below for possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauseroutlooktask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauseroutlooktask)
-
 

@@ -1,30 +1,15 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mguserevent
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgUserEvent
 
 ## SYNOPSIS
-Create an event in the user's default calendar or specified calendar.
-By default, the allowNewTimeProposals property is set to true when an event is created, which means invitees can propose a different date/time for the event.
-See Propose new meeting times for more information on how to propose a time, and how to receive and accept a new time proposal.
-You can specify the time zone for each of the start and end times of the event as part of their values, because the \nstart and end properties are of dateTimeTimeZone type.
-First find the supported time zones to make sure you set only time zones that have been configured for the user's mailbox server.
-When an event is sent, the server sends invitations to all the attendees.
-Setting the location in an event An Exchange administrator can set up a mailbox and an email address for a resource such as a meeting room, or equipment \nlike a projector.
-Users can then invite the resource as an attendee to a meeting.
-On behalf of the resource, the server accepts or rejects \nthe meeting request based on the free/busy schedule of the resource.
-\nIf the server accepts a meeting for the resource, it creates an event for the meeting in the resource's calendar.
-If the meeting is rescheduled, \nthe server automatically updates the event in the resource's calendar.
-Another advantage of setting up a mailbox for a resource is to control scheduling of the resource, for example, only executives\nor their delegates can book a private meeting room.
-If you're organizing an event that involves a meeting location: Additionally, if the meeting location has been set up as a resource, or if the event involves some equipment that has been set up as a resource: This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserEvent?view=graph-powershell-beta)
+Create one or more multi-value extended properties in a new or existing instance of a resource.
+The following user resources are supported: The following group resources are supported: See Extended properties overview for more information about when to use\nopen extensions or extended properties, and how to specify extended properties.
 
 ## SYNTAX
 
@@ -85,25 +70,15 @@ New-MgUserEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraph
 ```
 
 ## DESCRIPTION
-Create an event in the user's default calendar or specified calendar.
-By default, the allowNewTimeProposals property is set to true when an event is created, which means invitees can propose a different date/time for the event.
-See Propose new meeting times for more information on how to propose a time, and how to receive and accept a new time proposal.
-You can specify the time zone for each of the start and end times of the event as part of their values, because the \nstart and end properties are of dateTimeTimeZone type.
-First find the supported time zones to make sure you set only time zones that have been configured for the user's mailbox server.
-When an event is sent, the server sends invitations to all the attendees.
-Setting the location in an event An Exchange administrator can set up a mailbox and an email address for a resource such as a meeting room, or equipment \nlike a projector.
-Users can then invite the resource as an attendee to a meeting.
-On behalf of the resource, the server accepts or rejects \nthe meeting request based on the free/busy schedule of the resource.
-\nIf the server accepts a meeting for the resource, it creates an event for the meeting in the resource's calendar.
-If the meeting is rescheduled, \nthe server automatically updates the event in the resource's calendar.
-Another advantage of setting up a mailbox for a resource is to control scheduling of the resource, for example, only executives\nor their delegates can book a private meeting room.
-If you're organizing an event that involves a meeting location: Additionally, if the meeting location has been set up as a resource, or if the event involves some equipment that has been set up as a resource: This API is available in the following national cloud deployments.
+Create one or more multi-value extended properties in a new or existing instance of a resource.
+The following user resources are supported: The following group resources are supported: See Extended properties overview for more information about when to use\nopen extensions or extended properties, and how to specify extended properties.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Calendar
+```
 
 $params = @{
 	subject = "Let's go for lunch"
@@ -137,15 +112,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserEvent -UserId $userId -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgUserEvent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Calendar
+```
 
 $params = @{
 	subject = "Let's go for lunch"
@@ -192,15 +163,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserEvent -UserId $userId -BodyParameter $params
+
+### EXAMPLE 3
 ```
-This example shows how to use the New-MgUserEvent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Calendar
+```
 
 $params = @{
 	subject = "Let's go for lunch"
@@ -235,11 +202,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserEvent -UserId $userId -BodyParameter $params
-```
-This example shows how to use the New-MgUserEvent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -1614,6 +1576,7 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[ExtensionId \<String\>\]: The unique identifier of extension
   \[GroupId \<String\>\]: The unique identifier of group
   \[PlaceId \<String\>\]: The unique identifier of place
+  \[RoomId \<String\>\]: The unique identifier of room
   \[UserId \<String\>\]: The unique identifier of user
 
 INSTANCES \<IMicrosoftGraphEvent\[\]\>: The occurrences of a recurring series, if the event is a series master.
@@ -1979,7 +1942,6 @@ START \<IMicrosoftGraphDateTimeZone\>: dateTimeTimeZone
 See below for more possible values.
 
 ## RELATED LINKS
-[New-MgBetaUserEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mguserevent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mguserevent)
 

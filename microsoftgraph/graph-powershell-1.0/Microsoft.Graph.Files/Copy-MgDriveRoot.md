@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/copy-mgdriveroot
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Copy-MgDriveRoot
 
 ## SYNOPSIS
-Asynchronously creates a copy of an driveItem\]\[item-resource\] (including any children), under a new parent item or with a new name.
-This API is available in the following \[national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Copy-MgBetaDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Copy-MgBetaDriveRoot?view=graph-powershell-beta)
+Asynchronously creates a copy of an \[driveItem\]\[item-resource\] (including any children), under a new parent item or with a new name.
 
 ## SYNTAX
 
@@ -44,10 +39,19 @@ Copy-MgDriveRoot -InputObject <IFilesIdentity>
 ```
 
 ## DESCRIPTION
-Asynchronously creates a copy of an driveItem\]\[item-resource\] (including any children), under a new parent item or with a new name.
-This API is available in the following \[national cloud deployments.
+Asynchronously creates a copy of an \[driveItem\]\[item-resource\] (including any children), under a new parent item or with a new name.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -279,8 +283,6 @@ It is an opaque string that consists of three identifiers of the site.
 For OneDrive, this property is not populated.
 
 ## RELATED LINKS
-[Copy-MgBetaDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Copy-MgBetaDriveRoot?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/copy-mgdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.files/copy-mgdriveroot)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriverootanalytic
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property analytics for drives
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgDriveRootAnalytic](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveRootAnalytic?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,6 +26,18 @@ Remove-MgBetaDriveRootAnalytic -InputObject <IFilesIdentity> [-IfMatch <String>]
 
 ## DESCRIPTION
 Delete navigation property analytics for drives
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -166,9 +175,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgDriveRootAnalytic](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveRootAnalytic?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriverootanalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriverootanalytic)
-
-
 

@@ -1,17 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageresourceenvironment
 schema: 2.0.0
-ms.prod: governance
-ms.prod: governance
 ---
 
 # Get-MgBetaEntitlementManagementAccessPackageResourceEnvironment
 
 ## SYNOPSIS
 Read the properties and relationships of an accessPackageResourceEnvironment object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -36,23 +33,20 @@ Get-MgBetaEntitlementManagementAccessPackageResourceEnvironment -InputObject <II
 
 ## DESCRIPTION
 Read the properties and relationships of an accessPackageResourceEnvironment object.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaEntitlementManagementAccessPackageResourceEnvironment Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaEntitlementManagementAccessPackageResourceEnvironment -AccessPackageResourceEnvironmentId $accessPackageResourceEnvironmentId
 ```
-This example shows how to use the Get-MgBetaEntitlementManagementAccessPackageResourceEnvironment Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaEntitlementManagementAccessPackageResourceEnvironment Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.Governance
-Get-MgBetaEntitlementManagementAccessPackageResourceEnvironment -Filter "originSystem eq 'SharePointOnline'" 
+
+### EXAMPLE 2
 ```
-This example shows how to use the Get-MgBetaEntitlementManagementAccessPackageResourceEnvironment Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+Get-MgBetaEntitlementManagementAccessPackageResourceEnvironment -Filter "originSystem eq 'SharePointOnline'"
+```
 
 ## PARAMETERS
 
@@ -357,5 +351,4 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageresourceenvironment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageresourceenvironment)
-
 

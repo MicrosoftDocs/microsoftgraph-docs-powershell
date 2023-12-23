@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivecreatedbyuser
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get createdByUser from drives
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDriveCreatedByUser](/powershell/module/Microsoft.Graph.Files/Get-MgDriveCreatedByUser?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,6 +26,18 @@ Get-MgBetaDriveCreatedByUser -InputObject <IFilesIdentity> [-ExpandProperty <Str
 
 ## DESCRIPTION
 Get createdByUser from drives
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -135,9 +144,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgDriveCreatedByUser](/powershell/module/Microsoft.Graph.Files/Get-MgDriveCreatedByUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivecreatedbyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivecreatedbyuser)
-
-
 

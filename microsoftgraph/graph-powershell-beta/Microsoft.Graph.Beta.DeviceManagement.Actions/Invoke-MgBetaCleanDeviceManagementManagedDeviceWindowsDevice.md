@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetacleandevicemanagementmanageddevicewindowsdevice
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Clean Windows device
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgCleanDeviceManagementManagedDeviceWindowsDevice](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgCleanDeviceManagementManagedDeviceWindowsDevice?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -43,6 +40,18 @@ Invoke-MgBetaCleanDeviceManagementManagedDeviceWindowsDevice -InputObject <IDevi
 
 ## DESCRIPTION
 Clean Windows device
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -233,6 +242,7 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
   \[MicrosoftTunnelSiteId \<String\>\]: The unique identifier of microsoftTunnelSite
   \[MobileAppTroubleshootingEventId \<String\>\]: The unique identifier of mobileAppTroubleshootingEvent
   \[NotificationMessageTemplateId \<String\>\]: The unique identifier of notificationMessageTemplate
+  \[PrivilegeManagementElevationRequestId \<String\>\]: The unique identifier of privilegeManagementElevationRequest
   \[RemoteAssistancePartnerId \<String\>\]: The unique identifier of remoteAssistancePartner
   \[RoleScopeTagId \<String\>\]: The unique identifier of roleScopeTag
   \[WindowsAutopilotDeploymentProfileId \<String\>\]: The unique identifier of windowsAutopilotDeploymentProfile
@@ -243,9 +253,6 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
   \[ZebraFotaDeploymentId \<String\>\]: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
-[Invoke-MgCleanDeviceManagementManagedDeviceWindowsDevice](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgCleanDeviceManagementManagedDeviceWindowsDevice?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetacleandevicemanagementmanageddevicewindowsdevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetacleandevicemanagementmanageddevicewindowsdevice)
-
-
 

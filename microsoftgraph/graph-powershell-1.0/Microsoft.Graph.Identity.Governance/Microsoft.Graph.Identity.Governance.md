@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Identity.Governance
 Module Guid: 530fc574-049c-42cc-810e-8835853204b7
 Download Help Link: {{ Update Download Link }}
@@ -2441,6 +2441,9 @@ Locale: en-US
 ### [Set-MgEntitlementManagementAssignmentPolicy](Set-MgEntitlementManagementAssignmentPolicy.md)
 {{ Fill in the Description }}
 
+### [Set-MgIdentityGovernanceAccessReviewDefinition](Set-MgIdentityGovernanceAccessReviewDefinition.md)
+{{ Fill in the Description }}
+
 ### [Stop-MgEntitlementManagementAssignmentRequest](Stop-MgEntitlementManagementAssignmentRequest.md)
 {{ Fill in the Description }}
 
@@ -2723,9 +2726,6 @@ Locale: en-US
 ### [Update-MgEntitlementManagementSetting](Update-MgEntitlementManagementSetting.md)
 {{ Fill in the Description }}
 
-### [Update-MgIdentityGovernanceAccessReviewDefinition](Update-MgIdentityGovernanceAccessReviewDefinition.md)
-{{ Fill in the Description }}
-
 ### [Update-MgIdentityGovernanceAccessReviewDefinitionInstance](Update-MgIdentityGovernanceAccessReviewDefinitionInstance.md)
 {{ Fill in the Description }}
 
@@ -2947,5 +2947,4 @@ Locale: en-US
 
 ### [Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest.md)
 {{ Fill in the Description }}
-
 

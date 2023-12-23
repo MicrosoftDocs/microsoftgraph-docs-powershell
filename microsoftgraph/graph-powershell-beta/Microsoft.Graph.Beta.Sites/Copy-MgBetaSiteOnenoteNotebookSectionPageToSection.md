@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetasiteonenotenotebooksectionpagetosection
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # Copy-MgBetaSiteOnenoteNotebookSectionPageToSection
@@ -11,10 +10,6 @@ ms.prod: onenote
 ## SYNOPSIS
 Copy a page to a specific section.
 For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Copy-MgSiteOnenoteNotebookSectionPageToSection](/powershell/module/Microsoft.Graph.Sites/Copy-MgSiteOnenoteNotebookSectionPageToSection?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -50,7 +45,18 @@ Copy-MgBetaSiteOnenoteNotebookSectionPageToSection -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Copy a page to a specific section.
 For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
-This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -338,9 +344,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Copy-MgSiteOnenoteNotebookSectionPageToSection](/powershell/module/Microsoft.Graph.Sites/Copy-MgSiteOnenoteNotebookSectionPageToSection?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetasiteonenotenotebooksectionpagetosection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetasiteonenotenotebooksectionpagetosection)
-
-
 

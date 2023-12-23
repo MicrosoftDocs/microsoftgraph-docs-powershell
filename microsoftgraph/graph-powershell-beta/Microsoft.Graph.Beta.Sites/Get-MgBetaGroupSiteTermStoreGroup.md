@@ -1,20 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitetermstoregroup
 schema: 2.0.0
-ms.prod: sites-and-lists
-ms.prod: taxonomy  
 ---
 
 # Get-MgBetaGroupSiteTermStoreGroup
 
 ## SYNOPSIS
 Read the properties and relationships of a term store group object.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteTermStoreGroup](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreGroup?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -39,7 +33,22 @@ Get-MgBetaGroupSiteTermStoreGroup -InputObject <ISitesIdentity> [-ExpandProperty
 
 ## DESCRIPTION
 Read the properties and relationships of a term store group object.
-This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -321,9 +330,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgGroupSiteTermStoreGroup](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitetermstoregroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitetermstoregroup)
-
-
 

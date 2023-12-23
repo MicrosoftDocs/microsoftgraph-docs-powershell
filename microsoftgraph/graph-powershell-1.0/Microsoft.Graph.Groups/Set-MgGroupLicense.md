@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/set-mggrouplicense
@@ -12,10 +12,6 @@ Add or remove licenses on the group.
 Licenses assigned to the group will be assigned to all users in the group.
 To learn more about group-based licensing, see What is group-based licensing in Microsoft Entra ID.
 To get the subscriptions available in the directory, perform a GET subscribedSkus request.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaGroupLicense](/powershell/module/Microsoft.Graph.Beta.Groups/Set-MgBetaGroupLicense?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,11 +46,11 @@ Add or remove licenses on the group.
 Licenses assigned to the group will be assigned to all users in the group.
 To learn more about group-based licensing, see What is group-based licensing in Microsoft Entra ID.
 To get the subscriptions available in the directory, perform a GET subscribedSkus request.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Set-MgGroupLicense Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Groups
 $params = @{
 	AddLicenses = @(
@@ -77,10 +73,9 @@ $params = @{
 }
 Set-MgGroupLicense -GroupId $groupId -BodyParameter $params
 ```
-This example shows how to use the Set-MgGroupLicense Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Set-MgGroupLicense Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Groups
 $params = @{
 	AddLicenses = @(
@@ -92,8 +87,6 @@ $params = @{
 }
 Set-MgGroupLicense -GroupId $groupId -BodyParameter $params
 ```
-This example shows how to use the Set-MgGroupLicense Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -286,7 +279,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
-[Set-MgBetaGroupLicense](/powershell/module/Microsoft.Graph.Beta.Groups/Set-MgBetaGroupLicense?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/set-mggrouplicense](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/set-mggrouplicense)
 

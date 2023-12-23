@@ -1,20 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelist
 schema: 2.0.0
-ms.prod: sharepoint
-ms.prod: sharepoint
 ---
 
 # Get-MgGroupSiteList
 
 ## SYNOPSIS
-Returns the metadata for a list\]\[\].
-This API is available in the following \[national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteList](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteList?view=graph-powershell-beta)
+Get a list of rich long-running operations associated with a list.
 
 ## SYNTAX
 
@@ -38,10 +32,19 @@ Get-MgGroupSiteList -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [
 ```
 
 ## DESCRIPTION
-Returns the metadata for a list\]\[\].
-This API is available in the following \[national cloud deployments.
+Get a list of rich long-running operations associated with a list.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -313,8 +316,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupSiteList](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteList?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelist](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelist)
-
 

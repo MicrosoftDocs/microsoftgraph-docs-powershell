@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannerfavoriteplan
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # Get-MgBetaUserPlannerFavoritePlan
@@ -40,14 +39,13 @@ Nullable.
 Returns the plannerPlans that the user marked as favorites.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaUserPlannerFavoritePlan Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Planner
 # A UPN can also be used as -UserId.
 Get-MgBetaUserPlannerFavoritePlan -UserId $userId
 ```
-This example shows how to use the Get-MgBetaUserPlannerFavoritePlan Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -276,5 +274,4 @@ INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannerfavoriteplan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannerfavoriteplan)
-
 

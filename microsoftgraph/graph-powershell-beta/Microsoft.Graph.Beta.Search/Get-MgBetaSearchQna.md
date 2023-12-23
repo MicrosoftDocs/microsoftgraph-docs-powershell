@@ -1,17 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetasearchqna
 schema: 2.0.0
-ms.prod: search
-ms.prod: search
 ---
 
 # Get-MgBetaSearchQna
 
 ## SYNOPSIS
 Read the properties and relationships of a qna object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -35,23 +32,20 @@ Get-MgBetaSearchQna -InputObject <ISearchIdentity> [-ExpandProperty <String[]>] 
 
 ## DESCRIPTION
 Read the properties and relationships of a qna object.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaSearchQna Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Search
 Get-MgBetaSearchQna -QnaId $qnaId
 ```
-This example shows how to use the Get-MgBetaSearchQna Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaSearchQna Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.Search
 Get-MgBetaSearchQna
 ```
-This example shows how to use the Get-MgBetaSearchQna Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -276,5 +270,4 @@ INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetasearchqna](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetasearchqna)
-
 

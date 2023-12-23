@@ -1,21 +1,17 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserdirectreport
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Get-MgBetaUserDirectReport
 
 ## SYNOPSIS
 The users and contacts that report to the user.
-(The users and contacts that have their manager property set to this user.) Read-only.
+(The users and contacts with their manager property set to this user.) Read-only.
 Nullable.
 Supports $expand.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserDirectReport](/powershell/module/Microsoft.Graph.Users/Get-MgUserDirectReport?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -40,18 +36,16 @@ Get-MgBetaUserDirectReport -InputObject <IUsersIdentity> [-ExpandProperty <Strin
 
 ## DESCRIPTION
 The users and contacts that report to the user.
-(The users and contacts that have their manager property set to this user.) Read-only.
+(The users and contacts with their manager property set to this user.) Read-only.
 Nullable.
 Supports $expand.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-directreports-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Get a user's direct reports
 
-```powershell
+### EXAMPLE 1
+```
 Get-MgBetaUserDirectReport -UserId '075b32dd-edb7-47cf-89ef-f3f733683a3f'
+```
 
 Id                                   DeletedDateTime
 --                                   ---------------
@@ -60,9 +54,6 @@ f890ceed-822a-4647-8748-73d88013ae9d
 58fcff93-a667-4c5f-bd43-372a43f446bc
 8a7c50d3-fcbd-4727-a889-8ab232dfea01
 68906e46-27f9-4c5e-914b-b931696088fe
-```
-
-This example gets the direct reports for the specified user.
 
 ## PARAMETERS
 
@@ -319,9 +310,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserDirectReport](/powershell/module/Microsoft.Graph.Users/Get-MgUserDirectReport?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserdirectreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserdirectreport)
-
-
 

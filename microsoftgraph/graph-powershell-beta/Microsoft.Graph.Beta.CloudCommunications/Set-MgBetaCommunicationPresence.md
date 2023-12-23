@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetacommunicationpresence
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Set-MgBetaCommunicationPresence
 
 ## SYNOPSIS
 Set the availability and activity status in a presence session of an application for a user.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgCommunicationPresence](/powershell/module/Microsoft.Graph.CloudCommunications/Set-MgCommunicationPresence?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,7 +42,22 @@ Set-MgBetaCommunicationPresence -InputObject <ICloudCommunicationsIdentity>
 
 ## DESCRIPTION
 Set the availability and activity status in a presence session of an application for a user.
-This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -263,9 +273,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgCommunicationPresence](/powershell/module/Microsoft.Graph.CloudCommunications/Set-MgCommunicationPresence?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetacommunicationpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetacommunicationpresence)
-
-
 

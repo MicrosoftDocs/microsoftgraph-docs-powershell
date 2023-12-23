@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsla
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaReportSla
 
 ## SYNOPSIS
-A placeholder to allow for the desired URL path for SLA.
+Reports that relate to tenant-level Microsoft Entra SLA attainment.
 
 ## SYNTAX
 
@@ -17,7 +17,19 @@ Get-MgBetaReportSla [-ExpandProperty <String[]>] [-Property <String[]>] [<Common
 ```
 
 ## DESCRIPTION
-A placeholder to allow for the desired URL path for SLA.
+Reports that relate to tenant-level Microsoft Entra SLA attainment.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -64,6 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsla](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsla)
-
-
 

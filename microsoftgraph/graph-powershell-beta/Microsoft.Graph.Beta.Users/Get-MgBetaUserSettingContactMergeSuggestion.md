@@ -1,16 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingcontactmergesuggestion
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Get-MgBetaUserSettingContactMergeSuggestion
 
 ## SYNOPSIS
 Read the properties and relationships of a contactMergeSuggestions object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,17 +26,15 @@ Get-MgBetaUserSettingContactMergeSuggestion -InputObject <IUsersIdentity> [-Expa
 
 ## DESCRIPTION
 Read the properties and relationships of a contactMergeSuggestions object.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaUserSettingContactMergeSuggestion Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users
 # A UPN can also be used as -UserId.
 Get-MgBetaUserSettingContactMergeSuggestion -UserId $userId
 ```
-This example shows how to use the Get-MgBetaUserSettingContactMergeSuggestion Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -145,6 +141,4 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingcontactmergesuggestion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingcontactmergesuggestion)
-
-
 

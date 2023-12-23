@@ -1,16 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatsubmissionemailthreat
 schema: 2.0.0
-ms.prod: security
 ---
 
 # New-MgBetaSecurityThreatSubmissionEmailThreat
 
 ## SYNOPSIS
 Create a new emailThreatSubmission object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -36,11 +34,11 @@ New-MgBetaSecurityThreatSubmissionEmailThreat -BodyParameter <IMicrosoftGraphSec
 
 ## DESCRIPTION
 Create a new emailThreatSubmission object.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaSecurityThreatSubmissionEmailThreat Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{
 	"@odata.type" = "#microsoft.graph.emailUrlThreatSubmission"
@@ -50,8 +48,6 @@ $params = @{
 }
 New-MgBetaSecurityThreatSubmissionEmailThreat -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaSecurityThreatSubmissionEmailThreat Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -470,9 +466,10 @@ The identification is an email ID or other identity strings.
   \[CreatedBy \<IMicrosoftGraphSecuritySubmissionUserIdentity\>\]: submissionUserIdentity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-    \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     \[Email \<String\>\]: The email of user who is making the submission when logged in (delegated token case).
   \[CreatedDateTime \<DateTime?\>\]: Specifies when the threat submission was created.
 Supports $filter = createdDateTime ge 2022-01-01T00:00:00Z and createdDateTime lt 2022-01-02T00:00:00Z.
@@ -521,9 +518,10 @@ This information is present in the email header.
 CREATEDBY \<IMicrosoftGraphSecuritySubmissionUserIdentity\>: submissionUserIdentity
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-  \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+  \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
   \[Email \<String\>\]: The email of user who is making the submission when logged in (delegated token case).
 
 RESULT \<IMicrosoftGraphSecuritySubmissionResult\>: submissionResult
@@ -551,5 +549,4 @@ TENANTALLOWORBLOCKLISTACTION \<IMicrosoftGraphSecurityTenantAllowOrBlockListActi
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatsubmissionemailthreat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatsubmissionemailthreat)
-
 

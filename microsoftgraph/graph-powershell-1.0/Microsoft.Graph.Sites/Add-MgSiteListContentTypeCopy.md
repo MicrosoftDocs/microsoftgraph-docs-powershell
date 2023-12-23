@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mgsitelistcontenttypecopy
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Add-MgSiteListContentTypeCopy
 
 ## SYNOPSIS
-Add a copy of a content type\]\[contentType\] from a \[site\]\[site\] to a \[list\]\[list\].
-This API is available in the following \[national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Add-MgBetaSiteListContentTypeCopy](/powershell/module/Microsoft.Graph.Beta.Sites/Add-MgBetaSiteListContentTypeCopy?view=graph-powershell-beta)
+Add a copy of a \[content type\]\[contentType\] from a \[site\]\[site\] to a \[list\]\[list\].
 
 ## SYNTAX
 
@@ -44,25 +39,20 @@ Add-MgSiteListContentTypeCopy -InputObject <ISitesIdentity>
 ```
 
 ## DESCRIPTION
-Add a copy of a content type\]\[contentType\] from a \[site\]\[site\] to a \[list\]\[list\].
-This API is available in the following \[national cloud deployments.
+Add a copy of a \[content type\]\[contentType\] from a \[site\]\[site\] to a \[list\]\[list\].
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Sites
+```
 
 $params = @{
 	contentType = "https://graph.microsoft.com/v1.0/sites/{site-id}/contentTypes/0x0101"
 }
 
 Add-MgSiteListContentTypeCopy -SiteId $siteId -ListId $listId -BodyParameter $params
-
-```
-This example shows how to use the Add-MgSiteListContentTypeCopy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -250,8 +240,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Add-MgBetaSiteListContentTypeCopy](/powershell/module/Microsoft.Graph.Beta.Sites/Add-MgBetaSiteListContentTypeCopy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mgsitelistcontenttypecopy](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mgsitelistcontenttypecopy)
-
 

@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationschoolclassbyref
 schema: 2.0.0
-ms.prod: education
 ---
 
 # New-MgEducationSchoolClassByRef
 
 ## SYNOPSIS
 Add a class to a school.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaEducationSchoolClassByRef](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationSchoolClassByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -43,24 +38,19 @@ New-MgEducationSchoolClassByRef -InputObject <IEducationIdentity> -BodyParameter
 
 ## DESCRIPTION
 Add a class to a school.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Education
+```
 
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/v1.0/education/classes/11006"
 }
 
 New-MgEducationSchoolClassByRef -EducationSchoolId $educationSchoolId -BodyParameter $params
-
-```
-This example shows how to use the New-MgEducationSchoolClassByRef Cmdlet.
-
 
 ## PARAMETERS
 
@@ -222,8 +212,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
-[New-MgBetaEducationSchoolClassByRef](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationSchoolClassByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationschoolclassbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationschoolclassbyref)
-
 

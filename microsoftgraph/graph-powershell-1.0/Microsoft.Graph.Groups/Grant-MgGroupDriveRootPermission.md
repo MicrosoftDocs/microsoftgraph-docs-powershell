@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/grant-mggroupdriverootpermission
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Grant-MgGroupDriveRootPermission
 
 ## SYNOPSIS
-Grant users access to a link represented by a permission\]\[\].
-This API is available in the following \[national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Grant-MgBetaGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Groups/Grant-MgBetaGroupDriveRootPermission?view=graph-powershell-beta)
+Grant users access to a link represented by a \[permission\]\[\].
 
 ## SYNTAX
 
@@ -45,14 +40,14 @@ Grant-MgGroupDriveRootPermission -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Grant users access to a link represented by a permission\]\[\].
-This API is available in the following \[national cloud deployments.
+Grant users access to a link represented by a \[permission\]\[\].
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Files
+```
 
 $params = @{
 	Recipients = @(
@@ -69,11 +64,6 @@ $params = @{
 }
 
 Grant-MgSharePermission -SharedDriveItemId $sharedDriveItemId -BodyParameter $params
-```
-This example shows how to use the Grant-MgGroupDriveRootPermission Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -300,7 +290,6 @@ security groups).
   \[ObjectId \<String\>\]: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
-[Grant-MgBetaGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Groups/Grant-MgBetaGroupDriveRootPermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/grant-mggroupdriverootpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/grant-mggroupdriverootpermission)
 

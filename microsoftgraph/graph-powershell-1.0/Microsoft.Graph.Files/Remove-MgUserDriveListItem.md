@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdrivelistitem
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Remove-MgUserDriveListItem
 
 ## SYNOPSIS
-Removes an item from a list\]\[\].
-This API is available in the following \[national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserDriveListItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveListItem?view=graph-powershell-beta)
+Removes an item from a \[list\]\[\].
 
 ## SYNTAX
 
@@ -30,8 +25,23 @@ Remove-MgUserDriveListItem -InputObject <IFilesIdentity> [-IfMatch <String>] [-P
 ```
 
 ## DESCRIPTION
-Removes an item from a list\]\[\].
-This API is available in the following \[national cloud deployments.
+Removes an item from a \[list\]\[\].
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -199,9 +209,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaUserDriveListItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveListItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdrivelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdrivelistitem)
-
-
 

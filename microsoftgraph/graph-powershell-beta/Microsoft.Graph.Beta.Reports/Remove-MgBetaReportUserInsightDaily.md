@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/remove-mgbetareportuserinsightdaily
@@ -18,6 +18,18 @@ Remove-MgBetaReportUserInsightDaily [-IfMatch <String>] [-PassThru] [-WhatIf] [-
 
 ## DESCRIPTION
 Delete navigation property daily for reports
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -95,6 +107,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/remove-mgbetareportuserinsightdaily](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/remove-mgbetareportuserinsightdaily)
-
-
 

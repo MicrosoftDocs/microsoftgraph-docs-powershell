@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaagreement
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update entity in agreements
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgAgreement](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgAgreement?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -48,6 +45,22 @@ Update-MgBetaAgreement -InputObject <IIdentityGovernanceIdentity> -BodyParameter
 
 ## DESCRIPTION
 Update entity in agreements
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -687,8 +700,6 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
-[Update-MgAgreement](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgAgreement?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaagreement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaagreement)
-
 

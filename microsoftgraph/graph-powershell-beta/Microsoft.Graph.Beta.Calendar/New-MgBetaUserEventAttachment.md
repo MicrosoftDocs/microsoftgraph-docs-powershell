@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausereventattachment
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgBetaUserEventAttachment
@@ -12,10 +11,6 @@ ms.prod: outlook
 Use this API to add an attachment to an existing event.
 This operation limits the size of the attachment you can add to under 3 MB.
 If an organizer adds an attachment to a meeting event, the organizer can subsequently update the event to send the attachment and update the event for each attendee as well.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserEventAttachment](/powershell/module/Microsoft.Graph.Calendar/New-MgUserEventAttachment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,13 +44,13 @@ New-MgBetaUserEventAttachment -InputObject <ICalendarIdentity> -BodyParameter <I
 Use this API to add an attachment to an existing event.
 This operation limits the size of the attachment you can add to under 3 MB.
 If an organizer adds an attachment to a meeting event, the organizer can subsequently update the event to send the attachment and update the event for each attendee as well.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Calendar
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.fileAttachment"
@@ -65,15 +60,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserEventAttachment -UserId $userId -EventId $eventId -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgBetaUserEventAttachment Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.itemAttachment"
@@ -86,15 +77,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserEventAttachment -UserId $userId -EventId $eventId -BodyParameter $params
+
+### EXAMPLE 3
 ```
-This example shows how to use the New-MgBetaUserEventAttachment Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.referenceAttachment"
@@ -107,11 +94,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserEventAttachment -UserId $userId -EventId $eventId -BodyParameter $params
-```
-This example shows how to use the New-MgBetaUserEventAttachment Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -360,8 +342,6 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[WorkspaceId \<String\>\]: The unique identifier of workspace
 
 ## RELATED LINKS
-[New-MgUserEventAttachment](/powershell/module/Microsoft.Graph.Calendar/New-MgUserEventAttachment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausereventattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausereventattachment)
-
 

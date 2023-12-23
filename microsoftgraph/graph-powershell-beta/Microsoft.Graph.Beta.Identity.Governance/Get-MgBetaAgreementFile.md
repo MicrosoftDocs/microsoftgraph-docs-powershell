@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaagreementfile
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Get-MgBetaAgreementFile
@@ -11,10 +10,6 @@ ms.prod: governance
 ## SYNOPSIS
 Retrieve the details of an agreement file, including the language and version information.
 The default file can have multiple versions, each with its own language, that can be retrieved by specifying the Accept-Language header.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgAgreementFile](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgAgreementFile?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -40,20 +35,15 @@ Get-MgBetaAgreementFile -InputObject <IIdentityGovernanceIdentity> [-ExpandPrope
 ## DESCRIPTION
 Retrieve the details of an agreement file, including the language and version information.
 The default file can have multiple versions, each with its own language, that can be retrieved by specifying the Accept-Language header.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Get the agreement file for a specific language
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+```
 
 Get-MgBetaAgreementFile -AgreementId $agreementId
-
-```
-This example will get the agreement file for a specific language
-
 
 ## PARAMETERS
 
@@ -357,8 +347,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[WorkflowVersionNumber \<Int32?\>\]: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgAgreementFile](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgAgreementFile?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaagreementfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaagreementfile)
-
 

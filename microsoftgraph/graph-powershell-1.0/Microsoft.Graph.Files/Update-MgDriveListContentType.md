@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdrivelistcontenttype
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property contentTypes in drives
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListContentType?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -55,6 +52,22 @@ Update-MgDriveListContentType -InputObject <IFilesIdentity> -BodyParameter <IMic
 
 ## DESCRIPTION
 Update the navigation property contentTypes in drives
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -1762,8 +1775,6 @@ ORDER \<IMicrosoftGraphContentTypeOrder\>: contentTypeOrder
   \[Position \<Int32?\>\]: Specifies the position in which the content type appears in the selection UI.
 
 ## RELATED LINKS
-[Update-MgBetaDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdrivelistcontenttype)
-
 

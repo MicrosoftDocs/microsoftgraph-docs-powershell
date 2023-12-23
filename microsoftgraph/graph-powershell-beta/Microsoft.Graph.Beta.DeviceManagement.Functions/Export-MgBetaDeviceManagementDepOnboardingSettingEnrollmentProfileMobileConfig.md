@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/export-mgbetadevicemanagementdeponboardingsettingenrollmentprofilemobileconfig
@@ -26,6 +26,22 @@ Export-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfileMobileConfig
 
 ## DESCRIPTION
 Exports the mobile configuration
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -97,7 +113,9 @@ INPUTOBJECT \<IDeviceManagementFunctionsIdentity\>: Identity Parameter
   \[DeviceAndAppManagementAssignmentFilterId \<String\>\]: The unique identifier of deviceAndAppManagementAssignmentFilter
   \[DeviceConfigurationId \<String\>\]: The unique identifier of deviceConfiguration
   \[DeviceHealthScriptId \<String\>\]: The unique identifier of deviceHealthScript
+  \[DeviceManagementConfigurationPolicyId \<String\>\]: The unique identifier of deviceManagementConfigurationPolicy
   \[DeviceManagementIntentId \<String\>\]: The unique identifier of deviceManagementIntent
+  \[DeviceManagementReusablePolicySettingId \<String\>\]: The unique identifier of deviceManagementReusablePolicySetting
   \[DeviceManagementTemplateId \<String\>\]: The unique identifier of deviceManagementTemplate
   \[DeviceManagementTemplateId1 \<String\>\]: The unique identifier of deviceManagementTemplate
   \[DomainName \<String\>\]: Usage: domainName='{domainName}'
@@ -123,6 +141,4 @@ INPUTOBJECT \<IDeviceManagementFunctionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/export-mgbetadevicemanagementdeponboardingsettingenrollmentprofilemobileconfig](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/export-mgbetadevicemanagementdeponboardingsettingenrollmentprofilemobileconfig)
-
-
 

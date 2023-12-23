@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mguserpresence
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property presence in users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaUserPresence?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -45,40 +42,28 @@ Update-MgUserPresence -InputObject <ICloudCommunicationsIdentity> -BodyParameter
 Update the navigation property presence in users
 
 ## EXAMPLES
-### Example 1: Get your own presence information
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 # A UPN can also be used as -UserId.
 Get-MgUserPresence -UserId $userId
+
+### EXAMPLE 2
 ```
-This example shows how to use the Update-MgUserPresence Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Get the presence information of another user
-
-```powershell
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 Get-MgUserPresence -UserId $userId
+
+### EXAMPLE 3
 ```
-This example shows how to use the Update-MgUserPresence Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Get the presence information of another user
-
-```powershell
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 Get-MgCommunicationPresence -PresenceId $presenceId
-```
-This example shows how to use the Update-MgUserPresence Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -281,6 +266,7 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[AudioRoutingGroupId \<String\>\]: The unique identifier of audioRoutingGroup
   \[CallId \<String\>\]: The unique identifier of call
   \[CallRecordId \<String\>\]: The unique identifier of callRecord
+  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
   \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
   \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
   \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession
@@ -305,8 +291,6 @@ See below for more possible values.
   \[PublishedDateTime \<DateTime?\>\]: Time in which the status message was published.Read-only.publishedDateTime isn't available when you request the presence of another user.
 
 ## RELATED LINKS
-[Update-MgBetaUserPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaUserPresence?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mguserpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mguserpresence)
-
 

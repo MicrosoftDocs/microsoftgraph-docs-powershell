@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetauserpassword
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Test-MgBetaUserPassword
@@ -11,7 +10,6 @@ ms.prod: users
 ## SYNOPSIS
 Check a user's password against the organization's password validation policy and report whether the password is valid.
 Use this action to provide real-time feedback on password strength while the user types their password.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -31,19 +29,17 @@ Test-MgBetaUserPassword
 ## DESCRIPTION
 Check a user's password against the organization's password validation policy and report whether the password is valid.
 Use this action to provide real-time feedback on password strength while the user types their password.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Test-MgBetaUserPassword Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
 	Password = "1234567890"
 }
 Test-MgBetaUserPassword -BodyParameter $params
 ```
-This example shows how to use the Test-MgBetaUserPassword Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -146,5 +142,4 @@ BODYPARAMETER \<IPaths14Hev5OUsersMicrosoftGraphValidatepasswordPostRequestbodyC
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetauserpassword](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetauserpassword)
-
 

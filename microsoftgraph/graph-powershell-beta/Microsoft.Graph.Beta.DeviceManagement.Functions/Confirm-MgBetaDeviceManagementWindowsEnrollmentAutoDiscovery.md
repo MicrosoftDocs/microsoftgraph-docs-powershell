@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/confirm-mgbetadevicemanagementwindowsenrollmentautodiscovery
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function verifyWindowsEnrollmentAutoDiscovery
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Confirm-MgDeviceManagementWindowsEnrollmentAutoDiscovery](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Confirm-MgDeviceManagementWindowsEnrollmentAutoDiscovery?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,6 +25,18 @@ Confirm-MgBetaDeviceManagementWindowsEnrollmentAutoDiscovery -InputObject <IDevi
 
 ## DESCRIPTION
 Invoke function verifyWindowsEnrollmentAutoDiscovery
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -84,7 +93,9 @@ INPUTOBJECT \<IDeviceManagementFunctionsIdentity\>: Identity Parameter
   \[DeviceAndAppManagementAssignmentFilterId \<String\>\]: The unique identifier of deviceAndAppManagementAssignmentFilter
   \[DeviceConfigurationId \<String\>\]: The unique identifier of deviceConfiguration
   \[DeviceHealthScriptId \<String\>\]: The unique identifier of deviceHealthScript
+  \[DeviceManagementConfigurationPolicyId \<String\>\]: The unique identifier of deviceManagementConfigurationPolicy
   \[DeviceManagementIntentId \<String\>\]: The unique identifier of deviceManagementIntent
+  \[DeviceManagementReusablePolicySettingId \<String\>\]: The unique identifier of deviceManagementReusablePolicySetting
   \[DeviceManagementTemplateId \<String\>\]: The unique identifier of deviceManagementTemplate
   \[DeviceManagementTemplateId1 \<String\>\]: The unique identifier of deviceManagementTemplate
   \[DomainName \<String\>\]: Usage: domainName='{domainName}'
@@ -108,9 +119,6 @@ INPUTOBJECT \<IDeviceManagementFunctionsIdentity\>: Identity Parameter
   \[Userid \<String\>\]: Usage: userid='{userid}'
 
 ## RELATED LINKS
-[Confirm-MgDeviceManagementWindowsEnrollmentAutoDiscovery](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Confirm-MgDeviceManagementWindowsEnrollmentAutoDiscovery?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/confirm-mgbetadevicemanagementwindowsenrollmentautodiscovery](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/confirm-mgbetadevicemanagementwindowsenrollmentautodiscovery)
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportazureadapplicationsigninsummary
@@ -28,6 +28,22 @@ Get-MgBetaReportAzureAdApplicationSignInSummary -InputObject <IReportsIdentity> 
 
 ## DESCRIPTION
 Invoke function getAzureADApplicationSignInSummary
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -197,10 +213,12 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
   \[DeviceManagementExportJobId \<String\>\]: The unique identifier of deviceManagementExportJob
   \[DirectoryAuditId \<String\>\]: The unique identifier of directoryAudit
   \[EndDateTime \<DateTime?\>\]: Usage: endDateTime={endDateTime}
+  \[ExclusiveIntervalEndDateTime \<DateTime?\>\]: Usage: exclusiveIntervalEndDateTime={exclusiveIntervalEndDateTime}
   \[Filter \<String\>\]: Usage: filter='{filter}'
   \[GroupId \<String\>\]: Usage: groupId='{groupId}'
   \[IncludedUserRoles \<String\>\]: Usage: includedUserRoles='{includedUserRoles}'
   \[IncludedUserTypes \<String\>\]: Usage: includedUserTypes='{includedUserTypes}'
+  \[InclusiveIntervalStartDateTime \<DateTime?\>\]: Usage: inclusiveIntervalStartDateTime={inclusiveIntervalStartDateTime}
   \[InsightSummaryId \<String\>\]: The unique identifier of insightSummary
   \[MfaCompletionMetricId \<String\>\]: The unique identifier of mfaCompletionMetric
   \[MonthlyInactiveUsersByApplicationMetricId \<String\>\]: The unique identifier of monthlyInactiveUsersByApplicationMetric
@@ -227,6 +245,4 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportazureadapplicationsigninsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportazureadapplicationsigninsummary)
-
-
 

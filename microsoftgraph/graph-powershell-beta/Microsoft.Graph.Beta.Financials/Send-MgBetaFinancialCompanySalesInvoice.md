@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Financials-help.xml
 Module Name: Microsoft.Graph.Beta.Financials
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/send-mgbetafinancialcompanysalesinvoice
@@ -26,6 +26,18 @@ Send-MgBetaFinancialCompanySalesInvoice -InputObject <IFinancialsIdentity> [-Pas
 
 ## DESCRIPTION
 Invoke action send
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -177,6 +189,4 @@ INPUTOBJECT \<IFinancialsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/send-mgbetafinancialcompanysalesinvoice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/send-mgbetafinancialcompanysalesinvoice)
-
-
 

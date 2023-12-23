@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermessage
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Remove-MgUserMessage
 
 ## SYNOPSIS
 Delete a message in the specified user's mailbox, or delete a relationship of the message.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,21 +26,16 @@ Remove-MgUserMessage -InputObject <IMailIdentity> [-IfMatch <String>] [-PassThru
 
 ## DESCRIPTION
 Delete a message in the specified user's mailbox, or delete a relationship of the message.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Mail
+```
 
 # A UPN can also be used as -UserId.
 Remove-MgUserMessage -UserId $userId -MessageId $messageId
-```
-This example shows how to use the Remove-MgUserMessage Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -182,8 +172,6 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermessage)
-
 

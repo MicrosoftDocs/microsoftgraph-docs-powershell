@@ -1,20 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskyuserhistory
 schema: 2.0.0
-ms.prod: identity-and-sign-in
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaRiskyUserHistory
 
 ## SYNOPSIS
 Get a riskyUserHistoryItem object of a riskyUser.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgRiskyUserHistory](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskyUserHistory?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -39,14 +33,15 @@ Get-MgBetaRiskyUserHistory -InputObject <IIdentitySignInsIdentity> [-ExpandPrope
 
 ## DESCRIPTION
 Get a riskyUserHistoryItem object of a riskyUser.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: List history of a specific user
-```powershell
+
+### EXAMPLE 1
+```
 Connect-MgBetaGraph -Scopes "IdentityRiskyUser.Read.All"
 Select-MgBetaProfile beta
 Get-MgBetaRiskyUserHistory -RiskyUserId 375844b0-2026-4265-b9f1-ee1708491e05 | Format-Table RiskDetail, RiskLastUpdatedDateTime, RiskState, UserDisplayName
+```
 
 RiskDetail                         RiskLastUpdatedDateTime RiskState            UserDisplayName
 ----------                         ----------------------- ---------            ---------------
@@ -55,15 +50,13 @@ adminConfirmedUserCompromised      5/27/2022 11:26:40 PM   confirmedCompromised 
 adminDismissedAllRiskForUser       5/27/2022 11:28:07 PM   dismissed            Jason Mayer
 none                               4/20/2022 3:33:58 PM    atRisk               Jason Mayer
 none                               4/21/2022 9:58:21 PM    atRisk               Jason Mayer
+
+### EXAMPLE 2
 ```
-
-The command return all the user risk history 
-
-### Example 2: List history of a specific user with detailed risk detection
-```powershell
 Connect-MgBetaGraph -Scopes "IdentityRiskyUser.Read.All"
 Select-MgBetaProfile beta
 Get-MgBetaRiskyUserHistory -RiskyUserId 375844b0-2026-4265-b9f1-ee1708491e05| Format-Table RiskDetail, RiskLastUpdatedDateTime, @{N="RiskDetection";E={($_). Activity.RiskEventTypes}}, RiskState, UserDisplayName
+```
 
 RiskDetail                         RiskLastUpdatedDateTime RiskDetection       RiskState            UserDisplayName
 ----------                         ----------------------- -------------       ---------            ---------------
@@ -72,9 +65,6 @@ adminConfirmedUserCompromised      5/27/2022 11:26:40 PM                       c
 adminDismissedAllRiskForUser       5/27/2022 11:28:07 PM                       dismissed            Jason Mayer
 none                               4/20/2022 3:33:58 PM    anomalousToken      atRisk               Jason Mayer
 none                               4/21/2022 9:58:21 PM    anonymizedIPAddress atRisk               Jason Mayer
-```
-
-The command return all the user risk history and expand the property of Activity
 
 ## PARAMETERS
 
@@ -294,6 +284,7 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[ActivityBasedTimeoutPolicyId \<String\>\]: The unique identifier of activityBasedTimeoutPolicy
   \[AppManagementPolicyId \<String\>\]: The unique identifier of appManagementPolicy
   \[AuthenticationCombinationConfigurationId \<String\>\]: The unique identifier of authenticationCombinationConfiguration
+  \[AuthenticationConditionApplicationAppId \<String\>\]: The unique identifier of authenticationConditionApplication
   \[AuthenticationContextClassReferenceId \<String\>\]: The unique identifier of authenticationContextClassReference
   \[AuthenticationEventListenerId \<String\>\]: The unique identifier of authenticationEventListener
   \[AuthenticationEventsFlowId \<String\>\]: The unique identifier of authenticationEventsFlow
@@ -369,8 +360,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgRiskyUserHistory](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskyUserHistory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskyuserhistory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskyuserhistory)
-
 

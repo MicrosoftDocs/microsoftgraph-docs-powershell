@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Notes-help.xml
 Module Name: Microsoft.Graph.Beta.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetauseronenoteoperation
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # Get-MgBetaUserOnenoteOperation
@@ -14,10 +13,6 @@ The status applies to operations that return the Operation-Location header in th
   You can poll the Operation-Location endpoint until the status property returns completed or failed.
 If the status is completed, the resourceLocation property contains the resource endpoint URI.
 If the status is failed, the error and @api.diagnostics properties provide error information.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserOnenoteOperation](/powershell/module/Microsoft.Graph.Notes/Get-MgUserOnenoteOperation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -39,21 +34,16 @@ The status applies to operations that return the Operation-Location header in th
   You can poll the Operation-Location endpoint until the status property returns completed or failed.
 If the status is completed, the resourceLocation property contains the resource endpoint URI.
 If the status is failed, the error and @api.diagnostics properties provide error information.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Notes
+```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOnenoteOperation -UserId $userId -OnenoteOperationId $onenoteOperationId
-
-```
-This example shows how to use the Get-MgBetaUserOnenoteOperation Cmdlet.
-
 
 ## PARAMETERS
 
@@ -160,8 +150,6 @@ INPUTOBJECT \<INotesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserOnenoteOperation](/powershell/module/Microsoft.Graph.Notes/Get-MgUserOnenoteOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetauseronenoteoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetauseronenoteoperation)
-
 

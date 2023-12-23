@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/export-mgbetacomplianceediscoverycasereviewset
@@ -10,7 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Initiate an export from a reviewSet.
 For details, see Export documents from a review set in Advanced eDiscovery.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -47,11 +46,11 @@ Export-MgBetaComplianceEdiscoveryCaseReviewSet -InputObject <IComplianceIdentity
 ## DESCRIPTION
 Initiate an export from a reviewSet.
 For details, see Export documents from a review set in Advanced eDiscovery.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Export-MgBetaComplianceEdiscoveryCaseReviewSet Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{
 	OutputName = "2020-12-06 Contoso investigation export"
@@ -61,8 +60,6 @@ $params = @{
 }
 Export-MgBetaComplianceEdiscoveryCaseReviewSet -CaseId $caseId -ReviewSetId $reviewSetId -BodyParameter $params
 ```
-This example shows how to use the Export-MgBetaComplianceEdiscoveryCaseReviewSet Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -326,5 +323,4 @@ INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/export-mgbetacomplianceediscoverycasereviewset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/export-mgbetacomplianceediscoverycasereviewset)
-
 

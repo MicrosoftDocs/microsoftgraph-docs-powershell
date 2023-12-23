@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.CrossDeviceExperiences
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/new-mguseractivity
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to activities for users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserActivity](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/New-MgBetaUserActivity?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -51,6 +48,22 @@ New-MgUserActivity -InputObject <ICrossDeviceExperiencesIdentity> -BodyParameter
 
 ## DESCRIPTION
 Create new navigation property to activities for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -587,8 +600,6 @@ Longer text description of the user's unique activity (example: document name, f
 Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)
 
 ## RELATED LINKS
-[New-MgBetaUserActivity](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/New-MgBetaUserActivity?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/new-mguseractivity](https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/new-mguseractivity)
-
 

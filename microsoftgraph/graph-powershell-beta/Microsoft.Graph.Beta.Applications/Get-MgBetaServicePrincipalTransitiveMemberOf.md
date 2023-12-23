@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaltransitivememberof
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Get-MgBetaServicePrincipalTransitiveMemberOf
 
 ## SYNOPSIS
 Get transitiveMemberOf from servicePrincipals
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalTransitiveMemberOf](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalTransitiveMemberOf?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -39,13 +35,12 @@ Get-MgBetaServicePrincipalTransitiveMemberOf -InputObject <IApplicationsIdentity
 Get transitiveMemberOf from servicePrincipals
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaServicePrincipalTransitiveMemberOf Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Applications
 Get-MgBetaServicePrincipalTransitiveMemberOf -ServicePrincipalId $servicePrincipalId
 ```
-This example shows how to use the Get-MgBetaServicePrincipalTransitiveMemberOf Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -311,9 +306,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgServicePrincipalTransitiveMemberOf](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalTransitiveMemberOf?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaltransitivememberof](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaltransitivememberof)
-
-
 

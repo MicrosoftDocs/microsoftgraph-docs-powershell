@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgadminsharepointsetting
 schema: 2.0.0
-ms.prod: files
 ---
 
 # Update-MgAdminSharepointSetting
 
 ## SYNOPSIS
 Update one or more tenant-level settings for SharePoint and OneDrive.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaAdminSharepointSetting](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaAdminSharepointSetting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -42,7 +37,18 @@ Update-MgAdminSharepointSetting -BodyParameter <IMicrosoftGraphSharepointSetting
 
 ## DESCRIPTION
 Update one or more tenant-level settings for SharePoint and OneDrive.
-This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -630,9 +636,6 @@ IDLESESSIONSIGNOUT \<IMicrosoftGraphIdleSessionSignOut\>: idleSessionSignOut
   \[WarnAfterInSeconds \<Int64?\>\]: Number of seconds of inactivity after which a user is notified that they'll be signed out.
 
 ## RELATED LINKS
-[Update-MgBetaAdminSharepointSetting](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaAdminSharepointSetting?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgadminsharepointsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgadminsharepointsetting)
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingcurrencycount
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBookingCurrencyCount](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingCurrencyCount?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
@@ -21,6 +18,18 @@ Get-MgBookingCurrencyCount [-Filter <String>] [-Search <String>] [<CommonParamet
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -65,9 +74,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaBookingCurrencyCount](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingCurrencyCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingcurrencycount](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingcurrencycount)
-
-
 

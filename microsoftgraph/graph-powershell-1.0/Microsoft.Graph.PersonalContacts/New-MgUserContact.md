@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/new-mgusercontact
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgUserContact
 
 ## SYNOPSIS
 Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/New-MgBetaUserContact?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -69,13 +64,13 @@ New-MgUserContact -InputObject <IPersonalContactsIdentity> -BodyParameter <IMicr
 
 ## DESCRIPTION
 Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.PersonalContacts
+```
 
 $params = @{
 	givenName = "Pavel"
@@ -93,11 +88,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserContact -UserId $userId -BodyParameter $params
-```
-This example shows how to use the New-MgUserContact Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -1019,7 +1009,6 @@ Read-only.
   \[Value \<String\>\]: A property value.
 
 ## RELATED LINKS
-[New-MgBetaUserContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/New-MgBetaUserContact?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/new-mgusercontact](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/new-mgusercontact)
 

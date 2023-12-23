@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasecustodianindex
@@ -8,10 +8,7 @@ schema: 2.0.0
 # Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex
 
 ## SYNOPSIS
-Trigger an indexOperation This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSecurityCaseEdiscoveryCaseCustodianIndex](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCaseEdiscoveryCaseCustodianIndex?view=graph-powershell-1.0)
+Trigger an indexOperation
 
 ## SYNTAX
 
@@ -54,16 +51,15 @@ Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex -InputObject <ISecurityIde
 ```
 
 ## DESCRIPTION
-Trigger an indexOperation This API is available in the following national cloud deployments.
+Trigger an indexOperation
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
 Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId
 ```
-This example shows how to use the Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -230,6 +226,8 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[ArticleId \<String\>\]: The unique identifier of article
   \[ArticleIndicatorId \<String\>\]: The unique identifier of articleIndicator
   \[AttackSimulationOperationId \<String\>\]: The unique identifier of attackSimulationOperation
+  \[AuditLogQueryId \<String\>\]: The unique identifier of auditLogQuery
+  \[AuditLogRecordId \<String\>\]: The unique identifier of auditLogRecord
   \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
   \[AuthorityTemplateId \<String\>\]: The unique identifier of authorityTemplate
   \[CaseOperationId \<String\>\]: The unique identifier of caseOperation
@@ -304,8 +302,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Update-MgSecurityCaseEdiscoveryCaseCustodianIndex](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCaseEdiscoveryCaseCustodianIndex?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasecustodianindex](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasecustodianindex)
-
 

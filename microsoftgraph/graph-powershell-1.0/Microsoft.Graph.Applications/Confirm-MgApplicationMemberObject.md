@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/confirm-mgapplicationmemberobject
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action checkMemberObjects
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Confirm-MgBetaApplicationMemberObject](/powershell/module/Microsoft.Graph.Beta.Applications/Confirm-MgBetaApplicationMemberObject?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -43,6 +40,22 @@ Confirm-MgApplicationMemberObject -InputObject <IApplicationsIdentity>
 
 ## DESCRIPTION
 Invoke action checkMemberObjects
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -199,10 +212,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Confirm-MgBetaApplicationMemberObject](/powershell/module/Microsoft.Graph.Beta.Applications/Confirm-MgBetaApplicationMemberObject?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/confirm-mgapplicationmemberobject](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/confirm-mgapplicationmemberobject)
-
-
-
 

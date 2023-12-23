@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityb2xuserflowidentityproviderbyref
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete ref of navigation property userFlowIdentityProviders for identity
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityB2XUserFlowIdentityProviderByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityB2XUserFlowIdentityProviderByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -32,20 +29,18 @@ Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef -InputObject <IIdentitySig
 Delete ref of navigation property userFlowIdentityProviders for identity
 
 ## EXAMPLES
-### Example 1: Using the Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef -B2xIdentityUserFlowId $b2xIdentityUserFlowId -IdentityProviderBaseId $identityProviderBaseId
 ```
-This example shows how to use the Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef -B2xIdentityUserFlowId $b2xIdentityUserFlowId -IdentityProviderBaseId $identityProviderBaseId
 ```
-This example shows how to use the Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -190,6 +185,7 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[ActivityBasedTimeoutPolicyId \<String\>\]: The unique identifier of activityBasedTimeoutPolicy
   \[AppManagementPolicyId \<String\>\]: The unique identifier of appManagementPolicy
   \[AuthenticationCombinationConfigurationId \<String\>\]: The unique identifier of authenticationCombinationConfiguration
+  \[AuthenticationConditionApplicationAppId \<String\>\]: The unique identifier of authenticationConditionApplication
   \[AuthenticationContextClassReferenceId \<String\>\]: The unique identifier of authenticationContextClassReference
   \[AuthenticationEventListenerId \<String\>\]: The unique identifier of authenticationEventListener
   \[AuthenticationEventsFlowId \<String\>\]: The unique identifier of authenticationEventsFlow
@@ -265,8 +261,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgIdentityB2XUserFlowIdentityProviderByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityB2XUserFlowIdentityProviderByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityb2xuserflowidentityproviderbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityb2xuserflowidentityproviderbyref)
-
 

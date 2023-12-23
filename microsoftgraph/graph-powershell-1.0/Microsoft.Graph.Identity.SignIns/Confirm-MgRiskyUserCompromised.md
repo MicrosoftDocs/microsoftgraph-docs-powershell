@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/confirm-mgriskyusercompromised
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Confirm-MgRiskyUserCompromised
@@ -11,10 +10,6 @@ ms.prod: identity-and-sign-in
 ## SYNOPSIS
 Confirm one or more riskyUser objects as compromised.
 This action sets the targeted user's risk level to high.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Confirm-MgBetaRiskyUserCompromised](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Confirm-MgBetaRiskyUserCompromised?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -34,14 +29,13 @@ Confirm-MgRiskyUserCompromised
 ## DESCRIPTION
 Confirm one or more riskyUser objects as compromised.
 This action sets the targeted user's risk level to high.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 $params = @{
 	userIds = @(
@@ -51,10 +45,6 @@ $params = @{
 }
 
 Confirm-MgRiskyUserCompromised -BodyParameter $params
-
-```
-This example shows how to use the Confirm-MgRiskyUserCompromised Cmdlet.
-
 
 ## PARAMETERS
 
@@ -170,8 +160,6 @@ BODYPARAMETER \<IPaths1CcwvbvIdentityprotectionRiskyusersMicrosoftGraphConfirmco
   \[UserIds \<String\[\]\>\]:
 
 ## RELATED LINKS
-[Confirm-MgBetaRiskyUserCompromised](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Confirm-MgBetaRiskyUserCompromised?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/confirm-mgriskyusercompromised](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/confirm-mgriskyusercompromised)
-
 

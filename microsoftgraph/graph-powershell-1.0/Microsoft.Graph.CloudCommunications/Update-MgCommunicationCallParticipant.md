@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationcallparticipant
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property participants in communications
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaCommunicationCallParticipant](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaCommunicationCallParticipant?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -20,8 +17,9 @@ Update the navigation property participants in communications
 Update-MgCommunicationCallParticipant -CallId <String> -ParticipantId <String>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Info <IMicrosoftGraphParticipantInfo>] [-IsInLobby]
  [-IsMuted] [-MediaStreams <IMicrosoftGraphMediaStream[]>] [-Metadata <String>]
- [-RecordingInfo <IMicrosoftGraphRecordingInfo>]
- [-RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RecordingInfo <IMicrosoftGraphRecordingInfo>] [-RemovedState <IMicrosoftGraphRemovedState>]
+ [-RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>] [-RosterSequenceNumber <Int64>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -35,8 +33,9 @@ Update-MgCommunicationCallParticipant -CallId <String> -ParticipantId <String>
 Update-MgCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Info <IMicrosoftGraphParticipantInfo>] [-IsInLobby]
  [-IsMuted] [-MediaStreams <IMicrosoftGraphMediaStream[]>] [-Metadata <String>]
- [-RecordingInfo <IMicrosoftGraphRecordingInfo>]
- [-RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RecordingInfo <IMicrosoftGraphRecordingInfo>] [-RemovedState <IMicrosoftGraphRemovedState>]
+ [-RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>] [-RosterSequenceNumber <Int64>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -47,6 +46,22 @@ Update-MgCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity
 
 ## DESCRIPTION
 Update the navigation property participants in communications
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -236,6 +251,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -RemovedState
+removedState
+To construct, see NOTES section for REMOVEDSTATE properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphRemovedState
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RestrictedExperience
 onlineMeetingRestricted
 To construct, see NOTES section for RESTRICTEDEXPERIENCE properties and create a hash table.
@@ -248,6 +279,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RosterSequenceNumber
+.
+
+```yaml
+Type: Int64
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -339,10 +385,14 @@ Read-only.
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[Initiator \<IMicrosoftGraphIdentitySet\>\]: identitySet
     \[RecordingStatus \<String\>\]: recordingStatus
+  \[RemovedState \<IMicrosoftGraphRemovedState\>\]: removedState
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Reason \<String\>\]: 
   \[RestrictedExperience \<IMicrosoftGraphOnlineMeetingRestricted\>\]: onlineMeetingRestricted
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[ContentSharingDisabled \<String\>\]: onlineMeetingContentSharingDisabledReason
     \[VideoDisabled \<String\>\]: onlineMeetingVideoDisabledReason
+  \[RosterSequenceNumber \<Int64?\>\]: 
 
 INFO \<IMicrosoftGraphParticipantInfo\>: participantInfo
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -373,6 +423,7 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[AudioRoutingGroupId \<String\>\]: The unique identifier of audioRoutingGroup
   \[CallId \<String\>\]: The unique identifier of call
   \[CallRecordId \<String\>\]: The unique identifier of callRecord
+  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
   \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
   \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
   \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession
@@ -404,14 +455,16 @@ For example, if a user changes their display name, the API might show the new va
     \[User \<IMicrosoftGraphIdentity\>\]: identity
   \[RecordingStatus \<String\>\]: recordingStatus
 
+REMOVEDSTATE \<IMicrosoftGraphRemovedState\>: removedState
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Reason \<String\>\]: 
+
 RESTRICTEDEXPERIENCE \<IMicrosoftGraphOnlineMeetingRestricted\>: onlineMeetingRestricted
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[ContentSharingDisabled \<String\>\]: onlineMeetingContentSharingDisabledReason
   \[VideoDisabled \<String\>\]: onlineMeetingVideoDisabledReason
 
 ## RELATED LINKS
-[Update-MgBetaCommunicationCallParticipant](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaCommunicationCallParticipant?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationcallparticipant](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationcallparticipant)
-
 

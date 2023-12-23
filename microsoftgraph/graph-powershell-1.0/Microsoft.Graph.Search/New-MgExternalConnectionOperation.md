@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectionoperation
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to operations for external
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaExternalConnectionOperation](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaExternalConnectionOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -45,6 +42,22 @@ New-MgExternalConnectionOperation -InputObject <ISearchIdentity>
 
 ## DESCRIPTION
 Create new navigation property to operations for external
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -250,9 +263,6 @@ INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
   \[IdentityId \<String\>\]: The unique identifier of identity
 
 ## RELATED LINKS
-[New-MgBetaExternalConnectionOperation](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaExternalConnectionOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectionoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectionoperation)
-
-
 

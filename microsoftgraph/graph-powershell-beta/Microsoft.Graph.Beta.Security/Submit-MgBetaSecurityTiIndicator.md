@@ -1,16 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/submit-mgbetasecuritytiindicator
 schema: 2.0.0
-ms.prod: security
 ---
 
 # Submit-MgBetaSecurityTiIndicator
 
 ## SYNOPSIS
 Upload multiple threat intelligence (TI) indicators in one request instead of multiple requests.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -29,11 +27,11 @@ Submit-MgBetaSecurityTiIndicator
 
 ## DESCRIPTION
 Upload multiple threat intelligence (TI) indicators in one request instead of multiple requests.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Submit-MgBetaSecurityTiIndicator Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{
 	Value = @(
@@ -81,8 +79,6 @@ $params = @{
 }
 Submit-MgBetaSecurityTiIndicator -BodyParameter $params
 ```
-This example shows how to use the Submit-MgBetaSecurityTiIndicator Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

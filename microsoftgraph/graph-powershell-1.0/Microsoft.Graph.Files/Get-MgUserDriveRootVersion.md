@@ -1,20 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootversion
 schema: 2.0.0
-ms.prod: sharepoint
-ms.prod: sharepoint
 ---
 
 # Get-MgUserDriveRootVersion
 
 ## SYNOPSIS
 Retrieve the metadata for a specific version of a DriveItem.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveRootVersion](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootVersion?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -39,7 +33,22 @@ Get-MgUserDriveRootVersion -InputObject <IFilesIdentity> [-ExpandProperty <Strin
 
 ## DESCRIPTION
 Retrieve the metadata for a specific version of a DriveItem.
-This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -297,9 +306,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserDriveRootVersion](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootversion)
-
-
 

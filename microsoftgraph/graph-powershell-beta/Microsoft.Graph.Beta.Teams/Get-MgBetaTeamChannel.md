@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannel
@@ -11,10 +11,6 @@ schema: 2.0.0
 Retrieve the properties and relationships of a channel.
 This method supports federation.
 Only a user who is a member of the shared channel can retrieve channel information.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgTeamChannel](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamChannel?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -41,31 +37,22 @@ Get-MgBetaTeamChannel -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
 Retrieve the properties and relationships of a channel.
 This method supports federation.
 Only a user who is a member of the shared channel can retrieve channel information.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: List all channels
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 Get-MgBetaTeamChannel -TeamId $teamId
 
+### EXAMPLE 2
 ```
-This example will list all channels
-
-### Example 2: List all shared channels
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Teams
-
-Get-MgBetaTeamChannel -TeamId $teamId -Filter "membershipType eq 'shared'" 
-
 ```
-This example will list all shared channels
 
+Get-MgBetaTeamChannel -TeamId $teamId -Filter "membershipType eq 'shared'"
 
 ## PARAMETERS
 
@@ -289,6 +276,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
   \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
   \[ConversationMemberId \<String\>\]: The unique identifier of conversationMember
+  \[DayNoteId \<String\>\]: The unique identifier of dayNote
   \[DeletedChatId \<String\>\]: The unique identifier of deletedChat
   \[DeletedTeamId \<String\>\]: The unique identifier of deletedTeam
   \[GroupId \<String\>\]: The unique identifier of group
@@ -322,8 +310,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgTeamChannel](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamChannel?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannel)
-
 

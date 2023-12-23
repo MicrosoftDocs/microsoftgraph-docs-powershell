@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/restore-mgbetagroupdriverootlistitemdocumentsetversion
@@ -9,10 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Restore a document set version.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Restore-MgGroupDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Groups/Restore-MgGroupDriveRootListItemDocumentSetVersion?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,7 +26,22 @@ Restore-MgBetaGroupDriveRootListItemDocumentSetVersion -InputObject <IGroupsIden
 
 ## DESCRIPTION
 Restore a document set version.
-This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -200,9 +211,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Restore-MgGroupDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Groups/Restore-MgGroupDriveRootListItemDocumentSetVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/restore-mgbetagroupdriverootlistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/restore-mgbetagroupdriverootlistitemdocumentsetversion)
-
-
 

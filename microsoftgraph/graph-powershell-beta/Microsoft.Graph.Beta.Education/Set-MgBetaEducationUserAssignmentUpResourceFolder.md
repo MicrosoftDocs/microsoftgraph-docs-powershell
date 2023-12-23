@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/set-mgbetaeducationuserassignmentupresourcefolder
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Set-MgBetaEducationUserAssignmentUpResourceFolder
@@ -12,10 +11,6 @@ ms.prod: education
 Create a SharePoint folder to upload files for a given educationAssignment.
 Only teachers can perform this operation.
 The teacher determines the resources to upload in the assignment's folder.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgEducationUserAssignmentUpResourceFolder](/powershell/module/Microsoft.Graph.Education/Set-MgEducationUserAssignmentUpResourceFolder?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -35,7 +30,22 @@ Set-MgBetaEducationUserAssignmentUpResourceFolder -InputObject <IEducationIdenti
 Create a SharePoint folder to upload files for a given educationAssignment.
 Only teachers can perform this operation.
 The teacher determines the resources to upload in the assignment's folder.
-This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -151,9 +161,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Set-MgEducationUserAssignmentUpResourceFolder](/powershell/module/Microsoft.Graph.Education/Set-MgEducationUserAssignmentUpResourceFolder?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/set-mgbetaeducationuserassignmentupresourcefolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/set-mgbetaeducationuserassignmentupresourcefolder)
-
-
 

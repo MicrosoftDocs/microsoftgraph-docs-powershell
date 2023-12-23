@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroauth2permissiongrant
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaUserOauth2PermissionGrant
 
 ## SYNOPSIS
 Get oauth2PermissionGrants from users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Users/Get-MgUserOauth2PermissionGrant?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -39,17 +35,13 @@ Get-MgBetaUserOauth2PermissionGrant -InputObject <IUsersIdentity> [-ExpandProper
 Get oauth2PermissionGrants from users
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users
+```
 
 Get-MgBetaUserOauth2PermissionGrant -UserId $userId
-
-```
-This example shows how to use the Get-MgBetaUserOauth2PermissionGrant Cmdlet.
-
 
 ## PARAMETERS
 
@@ -290,9 +282,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Users/Get-MgUserOauth2PermissionGrant?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroauth2permissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroauth2permissiongrant)
-
-
 

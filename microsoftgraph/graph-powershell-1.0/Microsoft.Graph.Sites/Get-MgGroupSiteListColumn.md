@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistcolumn
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Get-MgGroupSiteListColumn
 
 ## SYNOPSIS
 The collection of field definitions for this list.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteListColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListColumn?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -39,6 +35,16 @@ Get-MgGroupSiteListColumn -InputObject <ISitesIdentity> [-ExpandProperty <String
 The collection of field definitions for this list.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -325,8 +331,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupSiteListColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistcolumn)
-
 

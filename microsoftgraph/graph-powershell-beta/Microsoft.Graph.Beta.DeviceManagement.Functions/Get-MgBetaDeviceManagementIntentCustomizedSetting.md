@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementintentcustomizedsetting
@@ -26,6 +26,18 @@ Get-MgBetaDeviceManagementIntentCustomizedSetting -InputObject <IDeviceManagemen
 
 ## DESCRIPTION
 Invoke function getCustomizedSettings
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -157,7 +169,9 @@ INPUTOBJECT \<IDeviceManagementFunctionsIdentity\>: Identity Parameter
   \[DeviceAndAppManagementAssignmentFilterId \<String\>\]: The unique identifier of deviceAndAppManagementAssignmentFilter
   \[DeviceConfigurationId \<String\>\]: The unique identifier of deviceConfiguration
   \[DeviceHealthScriptId \<String\>\]: The unique identifier of deviceHealthScript
+  \[DeviceManagementConfigurationPolicyId \<String\>\]: The unique identifier of deviceManagementConfigurationPolicy
   \[DeviceManagementIntentId \<String\>\]: The unique identifier of deviceManagementIntent
+  \[DeviceManagementReusablePolicySettingId \<String\>\]: The unique identifier of deviceManagementReusablePolicySetting
   \[DeviceManagementTemplateId \<String\>\]: The unique identifier of deviceManagementTemplate
   \[DeviceManagementTemplateId1 \<String\>\]: The unique identifier of deviceManagementTemplate
   \[DomainName \<String\>\]: Usage: domainName='{domainName}'
@@ -183,6 +197,4 @@ INPUTOBJECT \<IDeviceManagementFunctionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementintentcustomizedsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementintentcustomizedsetting)
-
-
 

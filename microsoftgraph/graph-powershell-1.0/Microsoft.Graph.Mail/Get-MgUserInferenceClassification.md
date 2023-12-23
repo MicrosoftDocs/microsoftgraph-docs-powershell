@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mguserinferenceclassification
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Relevance classification of the user's messages based on explicit designations that override inferred relevance or importance.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserInferenceClassification](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserInferenceClassification?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -27,6 +24,22 @@ Get-MgUserInferenceClassification -InputObject <IMailIdentity> [-Property <Strin
 
 ## DESCRIPTION
 Relevance classification of the user's messages based on explicit designations that override inferred relevance or importance.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -102,9 +115,6 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserInferenceClassification](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserInferenceClassification?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mguserinferenceclassification](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mguserinferenceclassification)
-
-
 

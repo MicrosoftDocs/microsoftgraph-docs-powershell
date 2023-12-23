@@ -1,20 +1,15 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguseroutlookmastercategory
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Update-MgUserOutlookMasterCategory
 
 ## SYNOPSIS
 Update the writable property, color, of the specified outlookCategory object.
-You can't modify the displayName propertyonce you have created the category.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserOutlookMasterCategory?view=graph-powershell-beta)
+You can't modify the displayName property\nonce you have created the category.
 
 ## SYNTAX
 
@@ -45,17 +40,14 @@ Update-MgUserOutlookMasterCategory -InputObject <IUsersIdentity>
 
 ## DESCRIPTION
 Update the writable property, color, of the specified outlookCategory object.
-You can't modify the displayName propertyonce you have created the category.
-This API is available in the following national cloud deployments.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/outlookcategory-update-permissions.md)]
+You can't modify the displayName property\nonce you have created the category.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Users
+```
 
 $params = @{
 	color = "preset15"
@@ -63,11 +55,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgUserOutlookMasterCategory -UserId $userId -OutlookCategoryId $outlookCategoryId -BodyParameter $params
-```
-This example shows how to use the Update-MgUserOutlookMasterCategory Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -268,9 +255,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserOutlookMasterCategory?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguseroutlookmastercategory](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguseroutlookmastercategory)
-
-
 

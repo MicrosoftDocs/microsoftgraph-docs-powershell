@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdrivelistcontenttypecolumn
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Update-MgDriveListContentTypeColumn
 
 ## SYNOPSIS
-Update a site\]\[\], a \[list\]\[\], or a \[content type\]\[contentType\] \[column\]\[columnDefinition\].
-This API is available in the following \[national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListContentTypeColumn?view=graph-powershell-beta)
+Update a \[site\]\[\], a \[list\]\[\], or a \[content type\]\[contentType\] \[column\]\[columnDefinition\].
 
 ## SYNTAX
 
@@ -63,8 +58,23 @@ Update-MgDriveListContentTypeColumn -InputObject <IFilesIdentity>
 ```
 
 ## DESCRIPTION
-Update a site\]\[\], a \[list\]\[\], or a \[content type\]\[contentType\] \[column\]\[columnDefinition\].
-This API is available in the following \[national cloud deployments.
+Update a \[site\]\[\], a \[list\]\[\], or a \[content type\]\[contentType\] \[column\]\[columnDefinition\].
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -1218,9 +1228,6 @@ User will be prompted with this message if validation fails.
 For examples, see Examples of common formulas in lists.
 
 ## RELATED LINKS
-[Update-MgBetaDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListContentTypeColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdrivelistcontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdrivelistcontenttypecolumn)
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskattachmentsession
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get attachmentSessions from users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserTodoTaskAttachmentSession](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTaskAttachmentSession?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -35,6 +32,18 @@ Get-MgUserTodoTaskAttachmentSession -InputObject <IUsersIdentity> [-Property <St
 
 ## DESCRIPTION
 Get attachmentSessions from users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -266,10 +275,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserTodoTaskAttachmentSession](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTaskAttachmentSession?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskattachmentsession](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskattachmentsession)
-
-
-
 

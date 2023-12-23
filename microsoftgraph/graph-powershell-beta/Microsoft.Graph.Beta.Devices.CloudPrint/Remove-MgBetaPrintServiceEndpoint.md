@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/remove-mgbetaprintserviceendpoint
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property endpoints for print
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgPrintServiceEndpoint](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Remove-MgPrintServiceEndpoint?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Remove-MgBetaPrintServiceEndpoint -InputObject <IDevicesCloudPrintIdentity> [-If
 
 ## DESCRIPTION
 Delete navigation property endpoints for print
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -170,9 +183,6 @@ INPUTOBJECT \<IDevicesCloudPrintIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgPrintServiceEndpoint](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Remove-MgPrintServiceEndpoint?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/remove-mgbetaprintserviceendpoint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/remove-mgbetaprintserviceendpoint)
-
-
 

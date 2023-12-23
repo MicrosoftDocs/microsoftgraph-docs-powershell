@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitetermstoregroup
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Remove-MgSiteTermStoreGroup
 
 ## SYNOPSIS
-Delete a group object in a term store\].
-This API is available in the following \[national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaSiteTermStoreGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteTermStoreGroup?view=graph-powershell-beta)
+Delete a group object in a term \[store\].
 
 ## SYNTAX
 
@@ -42,21 +37,16 @@ Remove-MgSiteTermStoreGroup -InputObject <ISitesIdentity> [-IfMatch <String>] [-
 ```
 
 ## DESCRIPTION
-Delete a group object in a term store\].
-This API is available in the following \[national cloud deployments.
+Delete a group object in a term \[store\].
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Sites
+```
 
 Remove-MgSiteTermStoreGroup -SiteId $siteId -GroupId $groupId
-```
-This example shows how to use the Remove-MgSiteTermStoreGroup Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -238,8 +228,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaSiteTermStoreGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteTermStoreGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitetermstoregroup](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitetermstoregroup)
-
 

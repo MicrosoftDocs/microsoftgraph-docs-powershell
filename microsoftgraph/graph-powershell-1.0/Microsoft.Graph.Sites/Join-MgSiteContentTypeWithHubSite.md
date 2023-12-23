@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/join-mgsitecontenttypewithhubsite
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Join-MgSiteContentTypeWithHubSite
 
 ## SYNOPSIS
-Associate a published content type\]\[contentType\] present in a content type hub with a list of hub sites.
-This API is available in the following \[national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Join-MgBetaSiteContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Beta.Sites/Join-MgBetaSiteContentTypeWithHubSite?view=graph-powershell-beta)
+Associate a published \[content type\]\[contentType\] present in a content type hub with a list of hub sites.
 
 ## SYNTAX
 
@@ -44,12 +39,12 @@ Join-MgSiteContentTypeWithHubSite -InputObject <ISitesIdentity>
 ```
 
 ## DESCRIPTION
-Associate a published content type\]\[contentType\] present in a content type hub with a list of hub sites.
-This API is available in the following \[national cloud deployments.
+Associate a published \[content type\]\[contentType\] present in a content type hub with a list of hub sites.
 
 ## EXAMPLES
-### Example 1: Using the Join-MgSiteContentTypeWithHubSite Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Sites
 $params = @{
 	HubSiteUrls = @(
@@ -59,8 +54,6 @@ $params = @{
 }
 Join-MgSiteContentTypeWithHubSite -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
 ```
-This example shows how to use the Join-MgSiteContentTypeWithHubSite Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -279,8 +272,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Join-MgBetaSiteContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Beta.Sites/Join-MgBetaSiteContentTypeWithHubSite?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/join-mgsitecontenttypewithhubsite](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/join-mgsitecontenttypewithhubsite)
-
 

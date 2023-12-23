@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriveitemversioncontent
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Get-MgBetaGroupDriveItemVersionContent
 
 ## SYNOPSIS
 Get content for the navigation property versions from groups
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveItemVersionContent](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveItemVersionContent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,6 +26,22 @@ Get-MgBetaGroupDriveItemVersionContent -InputObject <IFilesIdentity> -OutFile <S
 
 ## DESCRIPTION
 Get content for the navigation property versions from groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -181,9 +193,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgGroupDriveItemVersionContent](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveItemVersionContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriveitemversioncontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriveitemversioncontent)
-
-
 

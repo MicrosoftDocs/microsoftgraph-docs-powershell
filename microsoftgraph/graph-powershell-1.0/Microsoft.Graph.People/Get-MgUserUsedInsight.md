@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.People-help.xml
 Module Name: Microsoft.Graph.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mguserusedinsight
 schema: 2.0.0
-ms.prod: insights
 ---
 
 # Get-MgUserUsedInsight
@@ -36,30 +35,22 @@ Get-MgUserUsedInsight -InputObject <IPeopleIdentity> [-ExpandProperty <String[]>
 Calculated relationship identifying the latest documents viewed or modified by a user, including OneDrive for Business and SharePoint documents, ranked by recency of use.
 
 ## EXAMPLES
-### Example 1: Return documents that user has modified
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.People
+```
 
 # A UPN can also be used as -UserId.
 Get-MgUserUsedInsight -UserId $userId
 
+### EXAMPLE 2
 ```
-This example will return documents that user has modified
-
-### Example 2: Return the most recently viewed documents that the signed-in user might or might not have modified
-
-```powershell
-
 Import-Module Microsoft.Graph.People
+```
 
 # A UPN can also be used as -UserId.
-Get-MgUserUsedInsight -UserId $userId -Sort "LastUsed/LastAccessedDateTime desc" 
-
-```
-This example will return the most recently viewed documents that the signed-in user might or might not have modified
-
+Get-MgUserUsedInsight -UserId $userId -Sort "LastUsed/LastAccessedDateTime desc"
 
 ## PARAMETERS
 
@@ -285,5 +276,4 @@ INPUTOBJECT \<IPeopleIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mguserusedinsight](https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mguserusedinsight)
-
 

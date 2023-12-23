@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/unpublish-mggroupsitelistcontenttype
@@ -8,11 +8,7 @@ schema: 2.0.0
 # Unpublish-MgGroupSiteListContentType
 
 ## SYNOPSIS
-Unpublish a contentType\]\[\] from a content type hub site.
-This API is available in the following \[national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Unpublish-MgBetaGroupSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Groups/Unpublish-MgBetaGroupSiteListContentType?view=graph-powershell-beta)
+Unpublish a \[contentType\]\[\] from a content type hub site.
 
 ## SYNTAX
 
@@ -29,8 +25,23 @@ Unpublish-MgGroupSiteListContentType -InputObject <IGroupsIdentity> [-PassThru] 
 ```
 
 ## DESCRIPTION
-Unpublish a contentType\]\[\] from a content type hub site.
-This API is available in the following \[national cloud deployments.
+Unpublish a \[contentType\]\[\] from a content type hub site.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -209,9 +220,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
-[Unpublish-MgBetaGroupSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Groups/Unpublish-MgBetaGroupSiteListContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/unpublish-mggroupsitelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/unpublish-mggroupsitelistcontenttype)
-
-
 

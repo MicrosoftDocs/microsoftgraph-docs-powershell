@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mggrouponenotepage
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # New-MgGroupOnenotePage
@@ -13,10 +12,6 @@ Create a new OneNote page in the default section of the default notebook.
 To create a page in a different section in the default notebook, you can use the sectionName query parameter.
 Example: ../onenote/pages?sectionName=My%20section The POST /onenote/pages operation is used only to create pages in the current user's default notebook.
 If you're targeting other notebooks, you can create pages in a specified section.
- This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupOnenotePage](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaGroupOnenotePage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -55,7 +50,22 @@ Create a new OneNote page in the default section of the default notebook.
 To create a page in a different section in the default notebook, you can use the sectionName query parameter.
 Example: ../onenote/pages?sectionName=My%20section The POST /onenote/pages operation is used only to create pages in the current user's default notebook.
 If you're targeting other notebooks, you can create pages in a specified section.
- This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -813,9 +823,6 @@ Read-only.
   \[ParentSectionGroup \<IMicrosoftGraphSectionGroup\>\]: sectionGroup
 
 ## RELATED LINKS
-[New-MgBetaGroupOnenotePage](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaGroupOnenotePage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mggrouponenotepage](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mggrouponenotepage)
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/publish-mgbetacomplianceediscoverycasecustodian
@@ -10,7 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Release a custodian from a case.
 For details, see Release a custodian from a case.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -29,16 +28,14 @@ Publish-MgBetaComplianceEdiscoveryCaseCustodian -InputObject <IComplianceIdentit
 ## DESCRIPTION
 Release a custodian from a case.
 For details, see Release a custodian from a case.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Publish-MgBetaComplianceEdiscoveryCaseCustodian Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Compliance
 Publish-MgBetaComplianceEdiscoveryCaseCustodian -CaseId $caseId -CustodianId $custodianId
 ```
-This example shows how to use the Publish-MgBetaComplianceEdiscoveryCaseCustodian Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -171,5 +168,4 @@ INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/publish-mgbetacomplianceediscoverycasecustodian](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/publish-mgbetacomplianceediscoverycasecustodian)
-
 

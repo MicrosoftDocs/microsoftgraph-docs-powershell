@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprinterjobdocumentuploadsession
 schema: 2.0.0
-ms.prod: cloud-printing
 ---
 
 # New-MgPrintPrinterJobDocumentUploadSession
@@ -13,10 +12,6 @@ Create an upload session that allows an app to iteratively upload ranges of a bi
 As part of the response, this action returns an upload URL that can be used in subsequent sequential PUT queries.
 Request headers for each PUT operation can be used to specify the exact range of bytes to be uploaded.
 This allows transfer to be resumed, in case the network connection is dropped during upload.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPrintPrinterJobDocumentUploadSession](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintPrinterJobDocumentUploadSession?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -53,9 +48,18 @@ Create an upload session that allows an app to iteratively upload ranges of a bi
 As part of the response, this action returns an upload URL that can be used in subsequent sequential PUT queries.
 Request headers for each PUT operation can be used to specify the exact range of bytes to be uploaded.
 This allows transfer to be resumed, in case the network connection is dropped during upload.
-This API is available in the following national cloud deployments.
 
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printdocument-createuploadsession-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -244,9 +248,6 @@ PROPERTIES \<IMicrosoftGraphPrintDocumentUploadProperties\>: printDocumentUpload
   \[Size \<Int64?\>\]: The document's size in bytes.
 
 ## RELATED LINKS
-[New-MgBetaPrintPrinterJobDocumentUploadSession](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintPrinterJobDocumentUploadSession?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprinterjobdocumentuploadsession](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprinterjobdocumentuploadsession)
-
-
 

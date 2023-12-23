@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofile
 schema: 2.0.0
-ms.prod: people
 ---
 
 # Get-MgBetaUserProfile
@@ -13,7 +12,6 @@ Retrieve the properties and relationships of a profile object for a given user.
 The profile resource exposes various rich properties that are descriptive of the user as relationships, for example, anniversaries and education activities.
 To get one of these navigation properties, use the corresponding GET method on that property.
 See the methods exposed by profile.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -33,25 +31,22 @@ Retrieve the properties and relationships of a profile object for a given user.
 The profile resource exposes various rich properties that are descriptive of the user as relationships, for example, anniversaries and education activities.
 To get one of these navigation properties, use the corresponding GET method on that property.
 See the methods exposed by profile.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaUserProfile Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfile -UserId $userId
 ```
-This example shows how to use the Get-MgBetaUserProfile Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaUserProfile Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.
-Get-MgBetaUserProfile -UserId $userId -ExpandProperty "names(`$select=first,last),skills(`$select=displayName)" 
+Get-MgBetaUserProfile -UserId $userId -ExpandProperty "names(`$select=first,last),skills(`$select=displayName)"
 ```
-This example shows how to use the Get-MgBetaUserProfile Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -158,5 +153,4 @@ INPUTOBJECT \<IPeopleIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofile)
-
 

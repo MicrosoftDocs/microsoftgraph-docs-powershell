@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationschoolclassbyref
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Remove-MgBetaEducationSchoolClassByRef
 
 ## SYNOPSIS
 Delete a class from a school.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgEducationSchoolClassByRef](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationSchoolClassByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,7 +26,22 @@ Remove-MgBetaEducationSchoolClassByRef -InputObject <IEducationIdentity> [-Id <S
 
 ## DESCRIPTION
 Delete a class from a school.
-This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -192,9 +202,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Remove-MgEducationSchoolClassByRef](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationSchoolClassByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationschoolclassbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationschoolclassbyref)
-
-
 

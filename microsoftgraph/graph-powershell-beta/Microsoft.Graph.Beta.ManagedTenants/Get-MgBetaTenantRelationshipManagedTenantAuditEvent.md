@@ -1,17 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantauditevent
 schema: 2.0.0
-ms.prod: multi-tenant-management
-ms.prod: multi-tenant-management
 ---
 
 # Get-MgBetaTenantRelationshipManagedTenantAuditEvent
 
 ## SYNOPSIS
 Read the properties and relationships of an auditEvent object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -36,16 +33,14 @@ Get-MgBetaTenantRelationshipManagedTenantAuditEvent -InputObject <IManagedTenant
 
 ## DESCRIPTION
 Read the properties and relationships of an auditEvent object.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaTenantRelationshipManagedTenantAuditEvent Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.ManagedTenants
 Get-MgBetaTenantRelationshipManagedTenantAuditEvent -AuditEventId $auditEventId
 ```
-This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantAuditEvent Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -289,5 +284,4 @@ INPUTOBJECT \<IManagedTenantsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantauditevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantauditevent)
-
 

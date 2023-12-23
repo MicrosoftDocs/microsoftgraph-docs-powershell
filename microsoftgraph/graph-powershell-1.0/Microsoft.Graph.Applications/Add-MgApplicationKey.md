@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgapplicationkey
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Add-MgApplicationKey
@@ -14,10 +13,6 @@ This method, along with removeKey can be used by an application to automate roll
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
 Applications that don't have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won't be able to use this service action.
 You can use the Update application operation to perform an update instead.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Add-MgBetaApplicationKey](/powershell/module/Microsoft.Graph.Beta.Applications/Add-MgBetaApplicationKey?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -55,22 +50,19 @@ This method, along with removeKey can be used by an application to automate roll
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
 Applications that don't have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won't be able to use this service action.
 You can use the Update application operation to perform an update instead.
-This API is available in the following national cloud deployments.
-
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-addkey-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Add a new key credential to an application
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Applications
+```
 
 $params = @{
 	keyCredential = @{
 		type = "AsymmetricX509Cert"
 		usage = "Verify"
-		key = [System.Text.Encoding]::ASCII.GetBytes("MIIDYDCCAki...")
+		key = \[System.Text.Encoding\]::ASCII.GetBytes("MIIDYDCCAki...")
 	}
 	passwordCredential = $null
 	proof = "eyJ0eXAiOiJ..."
@@ -78,20 +70,16 @@ $params = @{
 
 Add-MgApplicationKey -ApplicationId $applicationId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will add a new key credential to an application
-
-### Example 2: Add a key credential and an associated password for the key
-
-```powershell
-
 Import-Module Microsoft.Graph.Applications
+```
 
 $params = @{
 	keyCredential = @{
 		type = "X509CertAndPassword"
 		usage = "Sign"
-		key = [System.Text.Encoding]::ASCII.GetBytes("MIIDYDCCAki...")
+		key = \[System.Text.Encoding\]::ASCII.GetBytes("MIIDYDCCAki...")
 	}
 	passwordCredential = @{
 		secretText = "MKTr0w1..."
@@ -100,10 +88,6 @@ $params = @{
 }
 
 Add-MgApplicationKey -ApplicationId $applicationId -BodyParameter $params
-
-```
-This example will add a key credential and an associated password for the key
-
 
 ## PARAMETERS
 
@@ -368,9 +352,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Optional.
 
 ## RELATED LINKS
-[Add-MgBetaApplicationKey](/powershell/module/Microsoft.Graph.Beta.Applications/Add-MgBetaApplicationKey?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgapplicationkey](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgapplicationkey)
-
-
 

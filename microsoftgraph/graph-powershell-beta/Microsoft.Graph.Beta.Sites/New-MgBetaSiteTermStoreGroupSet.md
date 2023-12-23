@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitetermstoregroupset
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to sets for sites
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSiteTermStoreGroupSet](/powershell/module/Microsoft.Graph.Sites/New-MgSiteTermStoreGroupSet?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,17 +48,13 @@ New-MgBetaSiteTermStoreGroupSet -InputObject <ISitesIdentity> -BodyParameter <IM
 Create new navigation property to sets for sites
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Sites
+```
 
 Get-MgBetaSiteTermStoreGroupSet -SiteId $siteId -GroupId $groupId
-```
-This example shows how to use the New-MgBetaBetaSiteTermStoreGroupSet Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -352,8 +345,8 @@ Read-only.
     \[LastModifiedDateTime \<DateTime?\>\]: Last date and time of term modification.
 Read-only.
     \[Properties \<IMicrosoftGraphKeyValue\[\]\>\]: Collection of properties on the term.
-      \[Key \<String\>\]: Contains the name of the field that a value is associated with.
-      \[Value \<String\>\]: Contains the corresponding value for the specified key.
+      \[Key \<String\>\]: Key.
+      \[Value \<String\>\]: Value.
     \[Relations \<IMicrosoftGraphTermStoreRelation\[\]\>\]: To indicate which terms are related to the current term as either pinned or reused.
       \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
@@ -399,8 +392,8 @@ Read-only.
   \[LastModifiedDateTime \<DateTime?\>\]: Last date and time of term modification.
 Read-only.
   \[Properties \<IMicrosoftGraphKeyValue\[\]\>\]: Collection of properties on the term.
-    \[Key \<String\>\]: Contains the name of the field that a value is associated with.
-    \[Value \<String\>\]: Contains the corresponding value for the specified key.
+    \[Key \<String\>\]: Key.
+    \[Value \<String\>\]: Value.
   \[Relations \<IMicrosoftGraphTermStoreRelation\[\]\>\]: To indicate which terms are related to the current term as either pinned or reused.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
@@ -517,8 +510,8 @@ Read-only.
       \[LastModifiedDateTime \<DateTime?\>\]: Last date and time of term modification.
 Read-only.
       \[Properties \<IMicrosoftGraphKeyValue\[\]\>\]: Collection of properties on the term.
-        \[Key \<String\>\]: Contains the name of the field that a value is associated with.
-        \[Value \<String\>\]: Contains the corresponding value for the specified key.
+        \[Key \<String\>\]: Key.
+        \[Value \<String\>\]: Value.
       \[Relations \<IMicrosoftGraphTermStoreRelation\[\]\>\]: To indicate which terms are related to the current term as either pinned or reused.
         \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
@@ -539,8 +532,8 @@ Read-only.
     \[Terms \<IMicrosoftGraphTermStoreTerm\[\]\>\]: All the terms under the set.
 
 PROPERTIES \<IMicrosoftGraphKeyValue\[\]\>: Custom properties for the set.
-  \[Key \<String\>\]: Contains the name of the field that a value is associated with.
-  \[Value \<String\>\]: Contains the corresponding value for the specified key.
+  \[Key \<String\>\]: Key.
+  \[Value \<String\>\]: Value.
 
 RELATIONS \<IMicrosoftGraphTermStoreRelation\[\]\>: Indicates which terms have been pinned or reused directly under the set.
   \[Id \<String\>\]: The unique identifier for an entity.
@@ -562,8 +555,8 @@ Read-only.
     \[LastModifiedDateTime \<DateTime?\>\]: Last date and time of term modification.
 Read-only.
     \[Properties \<IMicrosoftGraphKeyValue\[\]\>\]: Collection of properties on the term.
-      \[Key \<String\>\]: Contains the name of the field that a value is associated with.
-      \[Value \<String\>\]: Contains the corresponding value for the specified key.
+      \[Key \<String\>\]: Key.
+      \[Value \<String\>\]: Value.
     \[Relations \<IMicrosoftGraphTermStoreRelation\[\]\>\]: To indicate which terms are related to the current term as either pinned or reused.
     \[Set \<IMicrosoftGraphTermStoreSet\>\]: set
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -610,8 +603,8 @@ Read-only.
   \[LastModifiedDateTime \<DateTime?\>\]: Last date and time of term modification.
 Read-only.
   \[Properties \<IMicrosoftGraphKeyValue\[\]\>\]: Collection of properties on the term.
-    \[Key \<String\>\]: Contains the name of the field that a value is associated with.
-    \[Value \<String\>\]: Contains the corresponding value for the specified key.
+    \[Key \<String\>\]: Key.
+    \[Value \<String\>\]: Value.
   \[Relations \<IMicrosoftGraphTermStoreRelation\[\]\>\]: To indicate which terms are related to the current term as either pinned or reused.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
@@ -646,7 +639,6 @@ Read-only.
   \[Set \<IMicrosoftGraphTermStoreSet\>\]: set
 
 ## RELATED LINKS
-[New-MgSiteTermStoreGroupSet](/powershell/module/Microsoft.Graph.Sites/New-MgSiteTermStoreGroupSet?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitetermstoregroupset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitetermstoregroupset)
 

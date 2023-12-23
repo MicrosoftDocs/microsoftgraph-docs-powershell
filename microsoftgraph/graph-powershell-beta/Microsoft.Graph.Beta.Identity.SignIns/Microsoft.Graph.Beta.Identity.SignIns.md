@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 Module Guid: 45b83c44-a0bb-4061-8393-a4fa6ec7af48
 Download Help Link: {{ Update Download Link }}
@@ -44,13 +44,22 @@ Locale: en-US
 ### [Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlow](Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlow.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowIncludeApplication](Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowIncludeApplication.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaIdentityAuthenticationEventFlowAsOnAttributeCollectionExternalUserSelfServiceSignUpAttribute](Get-MgBetaIdentityAuthenticationEventFlowAsOnAttributeCollectionExternalUserSelfServiceSignUpAttribute.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProvider](Get-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProvider.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaIdentityAuthenticationEventFlowAttributeByRef](Get-MgBetaIdentityAuthenticationEventFlowAttributeByRef.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaIdentityAuthenticationEventFlowAttributeCount](Get-MgBetaIdentityAuthenticationEventFlowAttributeCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityAuthenticationEventFlowCondition](Get-MgBetaIdentityAuthenticationEventFlowCondition.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaIdentityAuthenticationEventFlowCount](Get-MgBetaIdentityAuthenticationEventFlowCount.md)
@@ -63,6 +72,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaIdentityAuthenticationEventFlowIdentityProviderCount](Get-MgBetaIdentityAuthenticationEventFlowIdentityProviderCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityAuthenticationEventFlowIncludeApplication](Get-MgBetaIdentityAuthenticationEventFlowIncludeApplication.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityAuthenticationEventFlowIncludeApplicationCount](Get-MgBetaIdentityAuthenticationEventFlowIncludeApplicationCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaIdentityAuthenticationEventFlowOnAttributeCollection](Get-MgBetaIdentityAuthenticationEventFlowOnAttributeCollection.md)
@@ -908,7 +923,16 @@ Locale: en-US
 ### [New-MgBetaIdentityAuthenticationEventFlow](New-MgBetaIdentityAuthenticationEventFlow.md)
 {{ Fill in the Description }}
 
+### [New-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowIncludeApplication](New-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowIncludeApplication.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaIdentityAuthenticationEventFlowAttributeByRef](New-MgBetaIdentityAuthenticationEventFlowAttributeByRef.md)
+{{ Fill in the Description }}
+
 ### [New-MgBetaIdentityAuthenticationEventFlowIdentityProviderByRef](New-MgBetaIdentityAuthenticationEventFlowIdentityProviderByRef.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaIdentityAuthenticationEventFlowIncludeApplication](New-MgBetaIdentityAuthenticationEventFlowIncludeApplication.md)
 {{ Fill in the Description }}
 
 ### [New-MgBetaIdentityAuthenticationEventListener](New-MgBetaIdentityAuthenticationEventListener.md)
@@ -1160,7 +1184,16 @@ Locale: en-US
 ### [Remove-MgBetaIdentityAuthenticationEventFlow](Remove-MgBetaIdentityAuthenticationEventFlow.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowIncludeApplication](Remove-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowIncludeApplication.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaIdentityAuthenticationEventFlowAttributeByRef](Remove-MgBetaIdentityAuthenticationEventFlowAttributeByRef.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaIdentityAuthenticationEventFlowIdentityProviderByRef](Remove-MgBetaIdentityAuthenticationEventFlowIdentityProviderByRef.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaIdentityAuthenticationEventFlowIncludeApplication](Remove-MgBetaIdentityAuthenticationEventFlowIncludeApplication.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaIdentityAuthenticationEventListener](Remove-MgBetaIdentityAuthenticationEventListener.md)
@@ -1565,6 +1598,12 @@ Locale: en-US
 ### [Update-MgBetaIdentityAuthenticationEventFlow](Update-MgBetaIdentityAuthenticationEventFlow.md)
 {{ Fill in the Description }}
 
+### [Update-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowIncludeApplication](Update-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowIncludeApplication.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaIdentityAuthenticationEventFlowIncludeApplication](Update-MgBetaIdentityAuthenticationEventFlowIncludeApplication.md)
+{{ Fill in the Description }}
+
 ### [Update-MgBetaIdentityAuthenticationEventListener](Update-MgBetaIdentityAuthenticationEventListener.md)
 {{ Fill in the Description }}
 
@@ -1879,5 +1918,4 @@ Locale: en-US
 
 ### [Update-MgBetaUserInformationProtectionThreatAssessmentRequestResult](Update-MgBetaUserInformationProtectionThreatAssessmentRequestResult.md)
 {{ Fill in the Description }}
-
 

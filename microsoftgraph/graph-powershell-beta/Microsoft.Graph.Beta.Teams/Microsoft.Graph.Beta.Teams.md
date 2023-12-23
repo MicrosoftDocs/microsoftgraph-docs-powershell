@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Teams
 Module Guid: e264919d-7ae2-4a89-ba8b-524bd93ddc08
 Download Help Link: {{ Update Download Link }}
@@ -395,6 +395,12 @@ Locale: en-US
 ### [Get-MgBetaGroupTeamSchedule](Get-MgBetaGroupTeamSchedule.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaGroupTeamScheduleDayNote](Get-MgBetaGroupTeamScheduleDayNote.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaGroupTeamScheduleDayNoteCount](Get-MgBetaGroupTeamScheduleDayNoteCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaGroupTeamScheduleOfferShiftRequest](Get-MgBetaGroupTeamScheduleOfferShiftRequest.md)
 {{ Fill in the Description }}
 
@@ -684,6 +690,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaTeamSchedule](Get-MgBetaTeamSchedule.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaTeamScheduleDayNote](Get-MgBetaTeamScheduleDayNote.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaTeamScheduleDayNoteCount](Get-MgBetaTeamScheduleDayNoteCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaTeamScheduleOfferShiftRequest](Get-MgBetaTeamScheduleOfferShiftRequest.md)
@@ -1163,6 +1175,9 @@ Locale: en-US
 ### [New-MgBetaGroupTeamPrimaryChannelTab](New-MgBetaGroupTeamPrimaryChannelTab.md)
 {{ Fill in the Description }}
 
+### [New-MgBetaGroupTeamScheduleDayNote](New-MgBetaGroupTeamScheduleDayNote.md)
+{{ Fill in the Description }}
+
 ### [New-MgBetaGroupTeamScheduleOfferShiftRequest](New-MgBetaGroupTeamScheduleOfferShiftRequest.md)
 {{ Fill in the Description }}
 
@@ -1266,6 +1281,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [New-MgBetaTeamPrimaryChannelTab](New-MgBetaTeamPrimaryChannelTab.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaTeamScheduleDayNote](New-MgBetaTeamScheduleDayNote.md)
 {{ Fill in the Description }}
 
 ### [New-MgBetaTeamScheduleOfferShiftRequest](New-MgBetaTeamScheduleOfferShiftRequest.md)
@@ -1415,6 +1433,9 @@ Locale: en-US
 ### [Remove-MgBetaChat](Remove-MgBetaChat.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaChatAccessForUser](Remove-MgBetaChatAccessForUser.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaChatInstalledApp](Remove-MgBetaChatInstalledApp.md)
 {{ Fill in the Description }}
 
@@ -1506,6 +1527,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaGroupTeamSchedule](Remove-MgBetaGroupTeamSchedule.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaGroupTeamScheduleDayNote](Remove-MgBetaGroupTeamScheduleDayNote.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaGroupTeamScheduleOfferShiftRequest](Remove-MgBetaGroupTeamScheduleOfferShiftRequest.md)
@@ -1602,6 +1626,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaTeamSchedule](Remove-MgBetaTeamSchedule.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaTeamScheduleDayNote](Remove-MgBetaTeamScheduleDayNote.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaTeamScheduleOfferShiftRequest](Remove-MgBetaTeamScheduleOfferShiftRequest.md)
@@ -2018,6 +2045,9 @@ Locale: en-US
 ### [Update-MgBetaGroupTeamPrimaryChannelTab](Update-MgBetaGroupTeamPrimaryChannelTab.md)
 {{ Fill in the Description }}
 
+### [Update-MgBetaGroupTeamScheduleDayNote](Update-MgBetaGroupTeamScheduleDayNote.md)
+{{ Fill in the Description }}
+
 ### [Update-MgBetaGroupTeamScheduleOfferShiftRequest](Update-MgBetaGroupTeamScheduleOfferShiftRequest.md)
 {{ Fill in the Description }}
 
@@ -2118,6 +2148,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgBetaTeamPrimaryChannelTab](Update-MgBetaTeamPrimaryChannelTab.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaTeamScheduleDayNote](Update-MgBetaTeamScheduleDayNote.md)
 {{ Fill in the Description }}
 
 ### [Update-MgBetaTeamScheduleOfferShiftRequest](Update-MgBetaTeamScheduleOfferShiftRequest.md)
@@ -2257,5 +2290,4 @@ Locale: en-US
 
 ### [Update-MgBetaUserTeamworkAssociatedTeam](Update-MgBetaUserTeamworkAssociatedTeam.md)
 {{ Fill in the Description }}
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementcatalogcustomworkflowextension
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Remove-MgEntitlementManagementCatalogCustomWorkflowExtension
@@ -11,7 +10,7 @@ ms.prod: governance
 ## SYNOPSIS
 Delete an accessPackageAssignmentWorkflowExtension object.
 The custom workflow extension must first be removed from any associated policies before it can be deleted.
-Follow these steps to remove the custom workflow extension from any associated policies: This API is available in the following national cloud deployments.
+Follow these steps to remove the custom workflow extension from any associated policies:
 
 ## SYNTAX
 
@@ -30,7 +29,19 @@ Remove-MgEntitlementManagementCatalogCustomWorkflowExtension -InputObject <IIden
 ## DESCRIPTION
 Delete an accessPackageAssignmentWorkflowExtension object.
 The custom workflow extension must first be removed from any associated policies before it can be deleted.
-Follow these steps to remove the custom workflow extension from any associated policies: This API is available in the following national cloud deployments.
+Follow these steps to remove the custom workflow extension from any associated policies:
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -229,6 +240,4 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementcatalogcustomworkflowextension](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementcatalogcustomworkflowextension)
-
-
 

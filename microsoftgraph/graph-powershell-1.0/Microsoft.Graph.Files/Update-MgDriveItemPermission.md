@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitempermission
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Update-MgDriveItemPermission
@@ -11,10 +10,6 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Update the properties of a sharing permission by patching the permission resource.
 Only the roles property can be modified this way.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItemPermission?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -57,13 +52,13 @@ Update-MgDriveItemPermission -InputObject <IFilesIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Update the properties of a sharing permission by patching the permission resource.
 Only the roles property can be modified this way.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Files
+```
 
 $params = @{
 	roles = @(
@@ -72,11 +67,6 @@ $params = @{
 }
 
 Update-MgDriveItemPermission -DriveId $driveId -DriveItemId $driveItemId -PermissionId $permissionId -BodyParameter $params
-```
-This example shows how to use the Update-MgDriveItemPermission Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -658,7 +648,6 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
   \[WebUrl \<String\>\]: A URL that opens the item in the browser on the OneDrive website.
 
 ## RELATED LINKS
-[Update-MgBetaDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItemPermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitempermission](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitempermission)
 

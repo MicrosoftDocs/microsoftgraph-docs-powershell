@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgsharelistitem
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property listItem for shares
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareListItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -41,6 +38,22 @@ Remove-MgShareListItem -InputObject <IFilesIdentity> [-IfMatch <String>] [-PassT
 
 ## DESCRIPTION
 Delete navigation property listItem for shares
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -193,9 +206,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareListItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgsharelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgsharelistitem)
-
-
 

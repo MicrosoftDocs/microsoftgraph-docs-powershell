@@ -1,21 +1,15 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthread
 schema: 2.0.0
-ms.prod: groups
-ms.prod: groups
 ---
 
 # Get-MgGroupThread
 
 ## SYNOPSIS
 Get a specific thread that belongs to a group.
-You can specify both the parent conversation and the thread, or, you can specify the thread without referencing the parent conversation.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupThread?view=graph-powershell-beta)
+You can specify both the parent conversation and the thread, or, \nyou can specify the thread without referencing the parent conversation.
 
 ## SYNTAX
 
@@ -37,21 +31,16 @@ Get-MgGroupThread -InputObject <IGroupsIdentity> [-Property <String[]>] [<Common
 
 ## DESCRIPTION
 Get a specific thread that belongs to a group.
-You can specify both the parent conversation and the thread, or, you can specify the thread without referencing the parent conversation.
-This API is available in the following national cloud deployments.
+You can specify both the parent conversation and the thread, or, \nyou can specify the thread without referencing the parent conversation.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Groups
+```
 
 Get-MgGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId
-```
-This example shows how to use the Get-MgGroupThread Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -275,8 +264,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
-[Get-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupThread?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthread](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthread)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemlistitemdriveitem
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 For document libraries, the driveItem relationship exposes the listItem as a \[driveItem\]\[\]
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveItemListItemDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemListItemDriveItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Get-MgUserDriveItemListItemDriveItem -InputObject <IFilesIdentity> [-ExpandPrope
 
 ## DESCRIPTION
 For document libraries, the driveItem relationship exposes the listItem as a \[driveItem\]\[\]
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -165,9 +178,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserDriveItemListItemDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemListItemDriveItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemlistitemdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemlistitemdriveitem)
-
-
 

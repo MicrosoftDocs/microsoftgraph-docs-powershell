@@ -1,16 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationbyuniquename
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Get-MgBetaApplicationByUniqueName
 
 ## SYNOPSIS
 Get the properties and relationships of an application object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +26,18 @@ Get-MgBetaApplicationByUniqueName -InputObject <IApplicationsIdentity> [-ExpandP
 
 ## DESCRIPTION
 Get the properties and relationships of an application object.
-This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -159,7 +168,4 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationbyuniquename](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationbyuniquename)
-
-
-
 

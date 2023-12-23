@@ -1,21 +1,16 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersetting
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Update-MgUserSetting
 
 ## SYNOPSIS
 Update the properties of the userSettings object.
-Users in the same organization can have different settings based on their preference or on the organization policies.
-To get the user current settings, see current user settings.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserSetting](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserSetting?view=graph-powershell-beta)
+\nUsers in the same organization can have different settings based on their preference or on the organization policies.
+\nTo get the user current settings, see current user settings.
 
 ## SYNTAX
 
@@ -47,18 +42,15 @@ Update-MgUserSetting -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGra
 
 ## DESCRIPTION
 Update the properties of the userSettings object.
-Users in the same organization can have different settings based on their preference or on the organization policies.
-To get the user current settings, see current user settings.
-This API is available in the following national cloud deployments.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/usersettings-update-permissions.md)]
+\nUsers in the same organization can have different settings based on their preference or on the organization policies.
+\nTo get the user current settings, see current user settings.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Users
+```
 
 $params = @{
 	contributionToContentDiscoveryDisabled = $true
@@ -66,11 +58,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgUserSetting -UserId $userId -BodyParameter $params
-```
-This example shows how to use the Update-MgUserSetting Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -383,9 +370,6 @@ Required.
     \[TimeZone \<String\>\]: Specifies the time zone for the indicated time.
 
 ## RELATED LINKS
-[Update-MgBetaUserSetting](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserSetting?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersetting)
-
-
 

@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersetting
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Get-MgUserSetting
 
 ## SYNOPSIS
-Read the user and organization userSettings object.To learn how to update the properties of the userSettings object, see update user settings.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserSetting](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSetting?view=graph-powershell-beta)
+Read the user and organization userSettings object.\nTo learn how to update the properties of the userSettings object, see update user settings.
 
 ## SYNTAX
 
@@ -29,25 +24,17 @@ Get-MgUserSetting -InputObject <IUsersIdentity> [-ExpandProperty <String[]>] [-P
 ```
 
 ## DESCRIPTION
-Read the user and organization userSettings object.To learn how to update the properties of the userSettings object, see update user settings.
-This API is available in the following national cloud deployments.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/usersettings-get-permissions.md)]
+Read the user and organization userSettings object.\nTo learn how to update the properties of the userSettings object, see update user settings.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Users
+```
 
 # A UPN can also be used as -UserId.
 Get-MgUserSetting -UserId $userId
-
-```
-This example shows how to use the Get-MgUserSetting Cmdlet.
-
 
 ## PARAMETERS
 
@@ -143,9 +130,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserSetting](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSetting?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersetting)
-
-
 

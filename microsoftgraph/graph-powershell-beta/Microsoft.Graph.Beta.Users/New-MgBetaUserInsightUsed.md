@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauserinsightused
@@ -42,6 +42,18 @@ New-MgBetaUserInsightUsed -InputObject <IUsersIdentity> -BodyParameter <IMicroso
 
 ## DESCRIPTION
 Create new navigation property to used for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -340,7 +352,4 @@ See the Type property values section, for supported types.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauserinsightused](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauserinsightused)
-
-
-
 

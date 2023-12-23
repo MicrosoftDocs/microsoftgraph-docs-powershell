@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/set-mgidentityb2xuserflowuserattributeassignmentorder
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Set-MgIdentityB2XUserFlowUserAttributeAssignmentOrder
 
 ## SYNOPSIS
 Set the order of identityUserFlowAttributeAssignments being collected within a user flow.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaIdentityB2XUserFlowUserAttributeAssignmentOrder](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Set-MgBetaIdentityB2XUserFlowUserAttributeAssignmentOrder?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,11 +42,11 @@ Set-MgIdentityB2XUserFlowUserAttributeAssignmentOrder -InputObject <IIdentitySig
 
 ## DESCRIPTION
 Set the order of identityUserFlowAttributeAssignments being collected within a user flow.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Set-MgIdentityB2XUserFlowUserAttributeAssignmentOrder Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.SignIns
 $params = @{
 	NewAssignmentOrder = @{
@@ -63,8 +58,6 @@ $params = @{
 }
 Set-MgIdentityB2XUserFlowUserAttributeAssignmentOrder -B2xIdentityUserFlowId $b2xIdentityUserFlowId -BodyParameter $params
 ```
-This example shows how to use the Set-MgIdentityB2XUserFlowUserAttributeAssignmentOrder Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -276,8 +269,6 @@ NEWASSIGNMENTORDER \<IMicrosoftGraphAssignmentOrder\>: assignmentOrder
   \[Order \<String\[\]\>\]: A list of identityUserFlowAttribute object identifiers that determine the order in which attributes should be collected within a user flow.
 
 ## RELATED LINKS
-[Set-MgBetaIdentityB2XUserFlowUserAttributeAssignmentOrder](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Set-MgBetaIdentityB2XUserFlowUserAttributeAssignmentOrder?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/set-mgidentityb2xuserflowuserattributeassignmentorder](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/set-mgidentityb2xuserflowuserattributeassignmentorder)
-
 

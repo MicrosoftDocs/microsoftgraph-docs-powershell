@@ -1,16 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmonitoringalertrule
 schema: 2.0.0
-ms.prod: cloud-pc
 ---
 
 # Update-MgBetaDeviceManagementMonitoringAlertRule
 
 ## SYNOPSIS
 Update the properties of an alertRule object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -46,7 +44,18 @@ Update-MgBetaDeviceManagementMonitoringAlertRule -InputObject <IDeviceManagement
 
 ## DESCRIPTION
 Update the properties of an alertRule object.
-This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -191,8 +200,8 @@ Accept wildcard characters: False
 
 ### -IsSystemRule
 Indicates whether the rule is a system rule.
-If true, the rule is a system rule; otherwise, the rule is a custom defined rule and can be edited.
-System rules are built-in and only a few properties can be edited.
+If true, the rule is a system rule; otherwise, the rule is a custom-defined rule and can be edited.
+System rules are built in and only a few properties can be edited.
 
 ```yaml
 Type: SwitchParameter
@@ -310,8 +319,8 @@ Read-only.
   \[Enabled \<Boolean?\>\]: The status of the rule that indicates whether the rule is enabled or disabled.
 If true, the rule is enabled; otherwise, the rule is disabled.
   \[IsSystemRule \<Boolean?\>\]: Indicates whether the rule is a system rule.
-If true, the rule is a system rule; otherwise, the rule is a custom defined rule and can be edited.
-System rules are built-in and only a few properties can be edited.
+If true, the rule is a system rule; otherwise, the rule is a custom-defined rule and can be edited.
+System rules are built in and only a few properties can be edited.
   \[NotificationChannels \<IMicrosoftGraphDeviceManagementNotificationChannel\[\]\>\]: The notification channels of the rule selected by the user.
     \[NotificationChannelType \<String\>\]: notificationChannelType
     \[NotificationReceivers \<IMicrosoftGraphDeviceManagementNotificationReceiver\[\]\>\]: Information about the notification receivers, such as locale and contact information.
@@ -490,5 +499,4 @@ THRESHOLD \<IMicrosoftGraphDeviceManagementRuleThreshold\>: ruleThreshold
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmonitoringalertrule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmonitoringalertrule)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetasubscribedsku
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Add new entity to subscribedSkus
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSubscribedSku](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgSubscribedSku?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -33,17 +30,13 @@ New-MgBetaSubscribedSku -BodyParameter <IMicrosoftGraphSubscribedSku> [-WhatIf] 
 Add new entity to subscribedSkus
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+```
 
 Get-MgBetaSubscribedSku
-```
-This example shows how to use the New-MgBetaBetaSubscribedSku Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -322,9 +315,9 @@ When the subscription of the service SKU has expired, the customer has a grace p
   \[ServicePlans \<IMicrosoftGraphServicePlanInfo\[\]\>\]: Information about the service plans that are available with the SKU.
 Not nullable
     \[AppliesTo \<String\>\]: The object the service plan can be assigned to.
-The possible values are:User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
+The possible values are: User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
     \[ProvisioningStatus \<String\>\]: The provisioning status of the service plan.
-The possible values are:Success - Service is fully provisioned.Disabled - Service has been disabled.ErrorStatus - The service plan has not been provisioned and is in an error state.PendingInput - Service is not yet provisioned; awaiting service confirmation.PendingActivation - Service is provisioned but requires explicit activation by administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it has not been activated in the tenant, yet.
+The possible values are:Success - Service is fully provisioned.Disabled - Service is disabled.Error - The service plan isn't provisioned and is in an error state.PendingInput - The service isn't provisioned and is awaiting service confirmation.PendingActivation - The service is provisioned but requires explicit activation by an administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it isn't activated in the tenant.
     \[ServicePlanId \<String\>\]: The unique identifier of the service plan.
     \[ServicePlanName \<String\>\]: The name of the service plan.
   \[SkuId \<String\>\]: The unique identifier (GUID) for the service SKU.
@@ -344,14 +337,13 @@ When the subscription of the service SKU has expired, the customer has a grace p
 SERVICEPLANS \<IMicrosoftGraphServicePlanInfo\[\]\>: Information about the service plans that are available with the SKU.
 Not nullable
   \[AppliesTo \<String\>\]: The object the service plan can be assigned to.
-The possible values are:User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
+The possible values are: User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
   \[ProvisioningStatus \<String\>\]: The provisioning status of the service plan.
-The possible values are:Success - Service is fully provisioned.Disabled - Service has been disabled.ErrorStatus - The service plan has not been provisioned and is in an error state.PendingInput - Service is not yet provisioned; awaiting service confirmation.PendingActivation - Service is provisioned but requires explicit activation by administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it has not been activated in the tenant, yet.
+The possible values are:Success - Service is fully provisioned.Disabled - Service is disabled.Error - The service plan isn't provisioned and is in an error state.PendingInput - The service isn't provisioned and is awaiting service confirmation.PendingActivation - The service is provisioned but requires explicit activation by an administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it isn't activated in the tenant.
   \[ServicePlanId \<String\>\]: The unique identifier of the service plan.
   \[ServicePlanName \<String\>\]: The name of the service plan.
 
 ## RELATED LINKS
-[New-MgSubscribedSku](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgSubscribedSku?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetasubscribedsku](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetasubscribedsku)
 

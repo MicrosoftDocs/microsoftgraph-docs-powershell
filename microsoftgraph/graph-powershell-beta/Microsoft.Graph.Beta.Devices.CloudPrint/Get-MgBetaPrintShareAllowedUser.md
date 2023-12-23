@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintsharealloweduser
 schema: 2.0.0
-ms.prod: cloud-printing
 ---
 
 # Get-MgBetaPrintShareAllowedUser
 
 ## SYNOPSIS
 Retrieve a list of users who have been granted access to submit print jobs to the associated printerShare.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPrintShareAllowedUser](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintShareAllowedUser?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -25,20 +20,15 @@ Get-MgBetaPrintShareAllowedUser -PrinterShareId <String> [-ExpandProperty <Strin
 
 ## DESCRIPTION
 Retrieve a list of users who have been granted access to submit print jobs to the associated printerShare.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
+```
 
 Get-MgBetaPrintShareAllowedUser -PrinterShareId $printerShareId
-
-```
-This example shows how to use the Get-MgBetaPrintShareAllowedUser Cmdlet.
-
 
 ## PARAMETERS
 
@@ -219,8 +209,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgPrintShareAllowedUser](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintShareAllowedUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintsharealloweduser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintsharealloweduser)
-
 

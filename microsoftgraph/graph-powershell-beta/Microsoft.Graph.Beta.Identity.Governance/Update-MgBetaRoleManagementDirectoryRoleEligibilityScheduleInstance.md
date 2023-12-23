@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagementdirectoryroleeligibilityscheduleinstance
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property roleEligibilityScheduleInstances in roleManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgRoleManagementDirectoryRoleEligibilityScheduleInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementDirectoryRoleEligibilityScheduleInstance?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -53,6 +50,18 @@ Update-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstance -InputObject
 
 ## DESCRIPTION
 Update the navigation property roleEligibilityScheduleInstances in roleManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -623,9 +632,6 @@ Read-only when isBuiltIn is true.
 Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
-[Update-MgRoleManagementDirectoryRoleEligibilityScheduleInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementDirectoryRoleEligibilityScheduleInstance?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagementdirectoryroleeligibilityscheduleinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagementdirectoryroleeligibilityscheduleinstance)
-
-
 

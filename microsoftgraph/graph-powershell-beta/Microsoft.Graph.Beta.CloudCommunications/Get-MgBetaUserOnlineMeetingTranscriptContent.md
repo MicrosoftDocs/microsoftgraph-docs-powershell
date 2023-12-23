@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingtranscriptcontent
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Get-MgBetaUserOnlineMeetingTranscriptContent
@@ -11,9 +10,6 @@ ms.prod: microsoft-teams
 ## SYNOPSIS
 The content of the transcript.
 Read-only.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserOnlineMeetingTranscriptContent](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingTranscriptContent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34,34 +30,30 @@ The content of the transcript.
 Read-only.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaUserOnlineMeetingTranscriptContent Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 Get-MgBetaUserOnlineMeetingTranscriptContent -UserId $userId -OnlineMeetingId $onlineMeetingId -CallTranscriptId $callTranscriptId
 ```
-This example shows how to use the Get-MgBetaUserOnlineMeetingTranscriptContent Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaUserOnlineMeetingTranscriptContent Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.CloudCommunications
-Get-MgBetaUserOnlineMeetingTranscriptContent -UserId $userId -OnlineMeetingId $onlineMeetingId -CallTranscriptId $callTranscriptId -Format "text/vtt" 
+
+### EXAMPLE 2
 ```
-This example shows how to use the Get-MgBetaUserOnlineMeetingTranscriptContent Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 3: Using the Get-MgBetaUserOnlineMeetingTranscriptContent Cmdlet
-```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-Get-MgBetaUserOnlineMeetingTranscriptContent -UserId $userId -OnlineMeetingId $onlineMeetingId -CallTranscriptId $callTranscriptId -Format "text/vtt" 
+Get-MgBetaUserOnlineMeetingTranscriptContent -UserId $userId -OnlineMeetingId $onlineMeetingId -CallTranscriptId $callTranscriptId -Format "text/vtt"
 ```
-This example shows how to use the Get-MgBetaUserOnlineMeetingTranscriptContent Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 4: Using the Get-MgBetaUserOnlineMeetingTranscriptContent Cmdlet
-```powershell
+
+### EXAMPLE 3
+```
+Import-Module Microsoft.Graph.Beta.CloudCommunications
+Get-MgBetaUserOnlineMeetingTranscriptContent -UserId $userId -OnlineMeetingId $onlineMeetingId -CallTranscriptId $callTranscriptId -Format "text/vtt"
+```
+
+### EXAMPLE 4
+```
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 Get-MgBetaUserOnlineMeetingTranscriptContent -UserId $userId -OnlineMeetingId $onlineMeetingId -CallTranscriptId $callTranscriptId
 ```
-This example shows how to use the Get-MgBetaUserOnlineMeetingTranscriptContent Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -192,8 +184,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserOnlineMeetingTranscriptContent](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingTranscriptContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingtranscriptcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingtranscriptcontent)
-
 

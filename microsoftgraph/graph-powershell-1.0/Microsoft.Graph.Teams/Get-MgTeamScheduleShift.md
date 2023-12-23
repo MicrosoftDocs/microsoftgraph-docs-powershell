@@ -1,20 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduleshift
 schema: 2.0.0
-ms.prod: microsoft-teams
-ms.prod: microsoft-teams
 ---
 
 # Get-MgTeamScheduleShift
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a shift object by ID.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaTeamScheduleShift](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamScheduleShift?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -37,20 +31,15 @@ Get-MgTeamScheduleShift -InputObject <ITeamsIdentity> [-Property <String[]>] [<C
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a shift object by ID.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 Get-MgTeamScheduleShift -TeamId $teamId -ShiftId $shiftId
-
-```
-This example shows how to use the Get-MgTeamScheduleShift Cmdlet.
-
 
 ## PARAMETERS
 
@@ -286,8 +275,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaTeamScheduleShift](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamScheduleShift?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduleshift](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduleshift)
-
 

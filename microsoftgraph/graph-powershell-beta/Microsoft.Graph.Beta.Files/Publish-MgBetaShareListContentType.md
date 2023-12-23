@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/publish-mgbetasharelistcontenttype
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Publish-MgBetaShareListContentType
 
 ## SYNOPSIS
-Publishes a contentType\]\[\] present in a content type hub site.
-This API is available in the following \[national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Publish-MgShareListContentType](/powershell/module/Microsoft.Graph.Files/Publish-MgShareListContentType?view=graph-powershell-1.0)
+Publishes a \[contentType\]\[\] present in a content type hub site.
 
 ## SYNTAX
 
@@ -30,8 +25,23 @@ Publish-MgBetaShareListContentType -InputObject <IFilesIdentity> [-PassThru] [-W
 ```
 
 ## DESCRIPTION
-Publishes a contentType\]\[\] present in a content type hub site.
-This API is available in the following \[national cloud deployments.
+Publishes a \[contentType\]\[\] present in a content type hub site.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -169,9 +179,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Publish-MgShareListContentType](/powershell/module/Microsoft.Graph.Files/Publish-MgShareListContentType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/publish-mgbetasharelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/publish-mgbetasharelistcontenttype)
-
-
 

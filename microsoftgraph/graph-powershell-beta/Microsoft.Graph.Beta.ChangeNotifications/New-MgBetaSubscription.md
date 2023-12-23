@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.ChangeNotifications-help.xml
 Module Name: Microsoft.Graph.Beta.ChangeNotifications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/new-mgbetasubscription
 schema: 2.0.0
-ms.prod: change-notifications
 ---
 
 # New-MgBetaSubscription
@@ -13,10 +12,6 @@ Subscribes a listener application to receive change notifications when the reque
 To identify the resources for which you can create subscriptions and the limitations on subscriptions, see Set up notifications for changes in resource data: Supported resources.
 Some resources support rich notifications, that is, notifications that include resource data.
 For more information about these resources, see Set up change notifications that include resource data: Supported resources.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSubscription](/powershell/module/Microsoft.Graph.ChangeNotifications/New-MgSubscription?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -40,29 +35,24 @@ Subscribes a listener application to receive change notifications when the reque
 To identify the resources for which you can create subscriptions and the limitations on subscriptions, see Set up notifications for changes in resource data: Supported resources.
 Some resources support rich notifications, that is, notifications that include resource data.
 For more information about these resources, see Set up change notifications that include resource data: Supported resources.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.ChangeNotifications
+```
 
 $params = @{
 	changeType = "created"
 	notificationUrl = "https://webhook.azurewebsites.net/api/send/myNotifyClient"
 	resource = "me/mailFolders('Inbox')/messages"
-	expirationDateTime = [System.DateTime]::Parse("2016-11-20T18:23:45.9356913Z")
+	expirationDateTime = \[System.DateTime\]::Parse("2016-11-20T18:23:45.9356913Z")
 	clientState = "secretClientValue"
 	latestSupportedTlsVersion = "v1_2"
 }
 
 New-MgBetaSubscription -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaSubscription Cmdlet.
-
 
 ## PARAMETERS
 
@@ -503,8 +493,6 @@ Do not include the base URL (https://graph.microsoft.com/beta/).
 See the possible resource path values for each supported resource.
 
 ## RELATED LINKS
-[New-MgSubscription](/powershell/module/Microsoft.Graph.ChangeNotifications/New-MgSubscription?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/new-mgbetasubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/new-mgbetasubscription)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggrouponenotepagecontent
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action onenotePatchContent
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroupOnenotePageContent](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupOnenotePageContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -45,6 +42,22 @@ Update-MgGroupOnenotePageContent -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Invoke action onenotePatchContent
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -259,8 +272,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
-[Update-MgBetaGroupOnenotePageContent](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupOnenotePageContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggrouponenotepagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggrouponenotepagecontent)
-
 

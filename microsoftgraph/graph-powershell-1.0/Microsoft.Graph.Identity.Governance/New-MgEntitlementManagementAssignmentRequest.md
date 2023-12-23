@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementassignmentrequest
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # New-MgEntitlementManagementAssignmentRequest
@@ -11,7 +10,6 @@ ms.prod: governance
 ## SYNOPSIS
 In Microsoft Entra Entitlement Management, create a new accessPackageAssignmentRequest object.
 This operation is used to assign a user to an access package, update the assignment, or to remove an access package assignment.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -36,13 +34,13 @@ New-MgEntitlementManagementAssignmentRequest -BodyParameter <IMicrosoftGraphAcce
 ## DESCRIPTION
 In Microsoft Entra Entitlement Management, create a new accessPackageAssignmentRequest object.
 This operation is used to assign a user to an access package, update the assignment, or to remove an access package assignment.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Admin requests a direct assignment for a user already in the directory
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.Governance
+```
 
 $params = @{
 	requestType = "adminAdd"
@@ -54,15 +52,11 @@ $params = @{
 }
 
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgEntitlementManagementAssignmentRequest Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Remove an assignment
-
-```powershell
 Import-Module Microsoft.Graph.Identity.Governance
+```
 
 $params = @{
 	requestType = "adminRemove"
@@ -72,15 +66,11 @@ $params = @{
 }
 
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
+
+### EXAMPLE 3
 ```
-This example shows how to use the New-MgEntitlementManagementAssignmentRequest Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Request an assignment
-
-```powershell
 Import-Module Microsoft.Graph.Identity.Governance
+```
 
 $params = @{
 	requestType = "userAdd"
@@ -90,15 +80,11 @@ $params = @{
 }
 
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
+
+### EXAMPLE 4
 ```
-This example shows how to use the New-MgEntitlementManagementAssignmentRequest Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Request an assignment by providing answers to questions
-
-```powershell
 Import-Module Microsoft.Graph.Identity.Governance
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.accessPackageAssignmentRequest"
@@ -129,15 +115,11 @@ $params = @{
 }
 
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
+
+### EXAMPLE 5
 ```
-This example shows how to use the New-MgEntitlementManagementAssignmentRequest Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 5: Request an update to answers for an assignment
-
-```powershell
 Import-Module Microsoft.Graph.Identity.Governance
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.accessPackageAssignmentRequest"
@@ -168,11 +150,6 @@ $params = @{
 }
 
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
-```
-This example shows how to use the New-MgEntitlementManagementAssignmentRequest Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -10047,7 +10024,7 @@ Read-only.
       \[DisplayName \<String\>\]: The display name of the connected organization.
 Supports $filter (eq).
       \[ExternalSponsors \<IMicrosoftGraphDirectoryObject\[\]\>\]: 
-      \[IdentitySources \<IMicrosoftGraphIdentitySource\[\]\>\]: The identity sources in this connected organization, one of azureActiveDirectoryTenant, domainIdentitySource, externalDomainFederation or crossCloudAzureActiveDirectoryTenant.
+      \[IdentitySources \<IMicrosoftGraphIdentitySource\[\]\>\]: The identity sources in this connected organization, one of azureActiveDirectoryTenant, crossCloudAzureActiveDirectoryTenant, domainIdentitySource, externalDomainFederation, or socialIdentitySource.
 Nullable.
       \[InternalSponsors \<IMicrosoftGraphDirectoryObject\[\]\>\]: 
       \[ModifiedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -14878,7 +14855,7 @@ Read-only.
         \[DisplayName \<String\>\]: The display name of the connected organization.
 Supports $filter (eq).
         \[ExternalSponsors \<IMicrosoftGraphDirectoryObject\[\]\>\]: 
-        \[IdentitySources \<IMicrosoftGraphIdentitySource\[\]\>\]: The identity sources in this connected organization, one of azureActiveDirectoryTenant, domainIdentitySource, externalDomainFederation or crossCloudAzureActiveDirectoryTenant.
+        \[IdentitySources \<IMicrosoftGraphIdentitySource\[\]\>\]: The identity sources in this connected organization, one of azureActiveDirectoryTenant, crossCloudAzureActiveDirectoryTenant, domainIdentitySource, externalDomainFederation, or socialIdentitySource.
 Nullable.
         \[InternalSponsors \<IMicrosoftGraphDirectoryObject\[\]\>\]: 
         \[ModifiedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -14935,7 +14912,7 @@ Supports $filter (eq).
 Read-only.
       \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-    \[IdentitySources \<IMicrosoftGraphIdentitySource\[\]\>\]: The identity sources in this connected organization, one of azureActiveDirectoryTenant, domainIdentitySource, externalDomainFederation or crossCloudAzureActiveDirectoryTenant.
+    \[IdentitySources \<IMicrosoftGraphIdentitySource\[\]\>\]: The identity sources in this connected organization, one of azureActiveDirectoryTenant, crossCloudAzureActiveDirectoryTenant, domainIdentitySource, externalDomainFederation, or socialIdentitySource.
 Nullable.
     \[InternalSponsors \<IMicrosoftGraphDirectoryObject\[\]\>\]: 
     \[ModifiedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.

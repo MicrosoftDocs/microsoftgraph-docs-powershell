@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgagreementacceptance
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Get-MgAgreementAcceptance
@@ -11,9 +10,6 @@ ms.prod: governance
 ## SYNOPSIS
 Read-only.
 Information about acceptances of this agreement.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaAgreementAcceptance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaAgreementAcceptance?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -39,6 +35,22 @@ Get-MgAgreementAcceptance -InputObject <IIdentityGovernanceIdentity> [-ExpandPro
 ## DESCRIPTION
 Read-only.
 Information about acceptances of this agreement.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -325,9 +337,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[WorkflowVersionNumber \<Int32?\>\]: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgBetaAgreementAcceptance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaAgreementAcceptance?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgagreementacceptance](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgagreementacceptance)
-
-
 

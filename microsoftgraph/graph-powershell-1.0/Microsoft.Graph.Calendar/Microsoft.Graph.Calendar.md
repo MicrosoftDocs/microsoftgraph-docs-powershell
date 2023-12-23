@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Calendar
 Module Guid: bf2ee476-ae5b-4a53-9fa8-943f3a49bf93
 Download Help Link: {{ Update Download Link }}
@@ -74,6 +74,9 @@ Locale: en-US
 ### [Get-MgPlaceAsRoomList](Get-MgPlaceAsRoomList.md)
 {{ Fill in the Description }}
 
+### [Get-MgPlaceAsRoomListRoom](Get-MgPlaceAsRoomListRoom.md)
+{{ Fill in the Description }}
+
 ### [Get-MgPlaceCount](Get-MgPlaceCount.md)
 {{ Fill in the Description }}
 
@@ -81,6 +84,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgPlaceCountAsRoomList](Get-MgPlaceCountAsRoomList.md)
+{{ Fill in the Description }}
+
+### [Get-MgPlaceRoomCount](Get-MgPlaceRoomCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgUserCalendar](Get-MgUserCalendar.md)
@@ -179,6 +185,9 @@ Locale: en-US
 ### [New-MgGroupEventInstanceExtension](New-MgGroupEventInstanceExtension.md)
 {{ Fill in the Description }}
 
+### [New-MgPlaceAsRoomListRoom](New-MgPlaceAsRoomListRoom.md)
+{{ Fill in the Description }}
+
 ### [New-MgUserCalendar](New-MgUserCalendar.md)
 {{ Fill in the Description }}
 
@@ -236,6 +245,9 @@ Locale: en-US
 ### [Remove-MgPlace](Remove-MgPlace.md)
 {{ Fill in the Description }}
 
+### [Remove-MgPlaceAsRoomListRoom](Remove-MgPlaceAsRoomListRoom.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgUserCalendarGroup](Remove-MgUserCalendarGroup.md)
 {{ Fill in the Description }}
 
@@ -275,6 +287,9 @@ Locale: en-US
 ### [Update-MgPlace](Update-MgPlace.md)
 {{ Fill in the Description }}
 
+### [Update-MgPlaceAsRoomListRoom](Update-MgPlaceAsRoomListRoom.md)
+{{ Fill in the Description }}
+
 ### [Update-MgUserCalendarGroup](Update-MgUserCalendarGroup.md)
 {{ Fill in the Description }}
 
@@ -289,5 +304,4 @@ Locale: en-US
 
 ### [Update-MgUserEventInstanceExtension](Update-MgUserEventInstanceExtension.md)
 {{ Fill in the Description }}
-
 

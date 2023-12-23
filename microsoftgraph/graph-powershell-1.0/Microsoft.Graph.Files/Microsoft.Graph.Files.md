@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Files
 Module Guid: 45ddab16-496a-4ef0-ac17-dbf0f93494d3
 Download Help Link: {{ Update Download Link }}
@@ -207,6 +207,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgDriveItemPermissionCount](Get-MgDriveItemPermissionCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgDriveItemRetentionLabel](Get-MgDriveItemRetentionLabel.md)
 {{ Fill in the Description }}
 
 ### [Get-MgDriveItemSubscription](Get-MgDriveItemSubscription.md)
@@ -491,6 +494,9 @@ Locale: en-US
 ### [Get-MgDriveRootPermissionCount](Get-MgDriveRootPermissionCount.md)
 {{ Fill in the Description }}
 
+### [Get-MgDriveRootRetentionLabel](Get-MgDriveRootRetentionLabel.md)
+{{ Fill in the Description }}
+
 ### [Get-MgDriveRootSubscription](Get-MgDriveRootSubscription.md)
 {{ Fill in the Description }}
 
@@ -690,6 +696,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgGroupDriveItemPermissionCount](Get-MgGroupDriveItemPermissionCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupDriveItemRetentionLabel](Get-MgGroupDriveItemRetentionLabel.md)
 {{ Fill in the Description }}
 
 ### [Get-MgGroupDriveItemSubscription](Get-MgGroupDriveItemSubscription.md)
@@ -954,6 +963,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgGroupDriveRootPermissionCount](Get-MgGroupDriveRootPermissionCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupDriveRootRetentionLabel](Get-MgGroupDriveRootRetentionLabel.md)
 {{ Fill in the Description }}
 
 ### [Get-MgGroupDriveRootSubscription](Get-MgGroupDriveRootSubscription.md)
@@ -1352,6 +1364,9 @@ Locale: en-US
 ### [Get-MgUserDriveItemPermissionCount](Get-MgUserDriveItemPermissionCount.md)
 {{ Fill in the Description }}
 
+### [Get-MgUserDriveItemRetentionLabel](Get-MgUserDriveItemRetentionLabel.md)
+{{ Fill in the Description }}
+
 ### [Get-MgUserDriveItemSubscription](Get-MgUserDriveItemSubscription.md)
 {{ Fill in the Description }}
 
@@ -1614,6 +1629,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgUserDriveRootPermissionCount](Get-MgUserDriveRootPermissionCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgUserDriveRootRetentionLabel](Get-MgUserDriveRootRetentionLabel.md)
 {{ Fill in the Description }}
 
 ### [Get-MgUserDriveRootSubscription](Get-MgUserDriveRootSubscription.md)
@@ -2060,6 +2078,9 @@ Locale: en-US
 ### [Remove-MgDriveItemPermission](Remove-MgDriveItemPermission.md)
 {{ Fill in the Description }}
 
+### [Remove-MgDriveItemRetentionLabel](Remove-MgDriveItemRetentionLabel.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgDriveItemSubscription](Remove-MgDriveItemSubscription.md)
 {{ Fill in the Description }}
 
@@ -2144,6 +2165,9 @@ Locale: en-US
 ### [Remove-MgDriveRootPermission](Remove-MgDriveRootPermission.md)
 {{ Fill in the Description }}
 
+### [Remove-MgDriveRootRetentionLabel](Remove-MgDriveRootRetentionLabel.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgDriveRootSubscription](Remove-MgDriveRootSubscription.md)
 {{ Fill in the Description }}
 
@@ -2187,6 +2211,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgGroupDriveItemPermission](Remove-MgGroupDriveItemPermission.md)
+{{ Fill in the Description }}
+
+### [Remove-MgGroupDriveItemRetentionLabel](Remove-MgGroupDriveItemRetentionLabel.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgGroupDriveItemSubscription](Remove-MgGroupDriveItemSubscription.md)
@@ -2268,6 +2295,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgGroupDriveRootPermission](Remove-MgGroupDriveRootPermission.md)
+{{ Fill in the Description }}
+
+### [Remove-MgGroupDriveRootRetentionLabel](Remove-MgGroupDriveRootRetentionLabel.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgGroupDriveRootSubscription](Remove-MgGroupDriveRootSubscription.md)
@@ -2360,6 +2390,9 @@ Locale: en-US
 ### [Remove-MgUserDriveItemPermission](Remove-MgUserDriveItemPermission.md)
 {{ Fill in the Description }}
 
+### [Remove-MgUserDriveItemRetentionLabel](Remove-MgUserDriveItemRetentionLabel.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgUserDriveItemSubscription](Remove-MgUserDriveItemSubscription.md)
 {{ Fill in the Description }}
 
@@ -2439,6 +2472,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgUserDriveRootPermission](Remove-MgUserDriveRootPermission.md)
+{{ Fill in the Description }}
+
+### [Remove-MgUserDriveRootRetentionLabel](Remove-MgUserDriveRootRetentionLabel.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgUserDriveRootSubscription](Remove-MgUserDriveRootSubscription.md)
@@ -2687,6 +2723,9 @@ Locale: en-US
 ### [Update-MgDriveItemPermission](Update-MgDriveItemPermission.md)
 {{ Fill in the Description }}
 
+### [Update-MgDriveItemRetentionLabel](Update-MgDriveItemRetentionLabel.md)
+{{ Fill in the Description }}
+
 ### [Update-MgDriveItemSubscription](Update-MgDriveItemSubscription.md)
 {{ Fill in the Description }}
 
@@ -2792,6 +2831,9 @@ Locale: en-US
 ### [Update-MgDriveRootPermission](Update-MgDriveRootPermission.md)
 {{ Fill in the Description }}
 
+### [Update-MgDriveRootRetentionLabel](Update-MgDriveRootRetentionLabel.md)
+{{ Fill in the Description }}
+
 ### [Update-MgDriveRootSubscription](Update-MgDriveRootSubscription.md)
 {{ Fill in the Description }}
 
@@ -2847,6 +2889,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgGroupDriveItemPermission](Update-MgGroupDriveItemPermission.md)
+{{ Fill in the Description }}
+
+### [Update-MgGroupDriveItemRetentionLabel](Update-MgGroupDriveItemRetentionLabel.md)
 {{ Fill in the Description }}
 
 ### [Update-MgGroupDriveItemSubscription](Update-MgGroupDriveItemSubscription.md)
@@ -2952,6 +2997,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgGroupDriveRootPermission](Update-MgGroupDriveRootPermission.md)
+{{ Fill in the Description }}
+
+### [Update-MgGroupDriveRootRetentionLabel](Update-MgGroupDriveRootRetentionLabel.md)
 {{ Fill in the Description }}
 
 ### [Update-MgGroupDriveRootSubscription](Update-MgGroupDriveRootSubscription.md)
@@ -3074,6 +3122,9 @@ Locale: en-US
 ### [Update-MgUserDriveItemPermission](Update-MgUserDriveItemPermission.md)
 {{ Fill in the Description }}
 
+### [Update-MgUserDriveItemRetentionLabel](Update-MgUserDriveItemRetentionLabel.md)
+{{ Fill in the Description }}
+
 ### [Update-MgUserDriveItemSubscription](Update-MgUserDriveItemSubscription.md)
 {{ Fill in the Description }}
 
@@ -3179,6 +3230,9 @@ Locale: en-US
 ### [Update-MgUserDriveRootPermission](Update-MgUserDriveRootPermission.md)
 {{ Fill in the Description }}
 
+### [Update-MgUserDriveRootRetentionLabel](Update-MgUserDriveRootRetentionLabel.md)
+{{ Fill in the Description }}
+
 ### [Update-MgUserDriveRootSubscription](Update-MgUserDriveRootSubscription.md)
 {{ Fill in the Description }}
 
@@ -3187,5 +3241,4 @@ Locale: en-US
 
 ### [Update-MgUserDriveRootVersion](Update-MgUserDriveRootVersion.md)
 {{ Fill in the Description }}
-
 

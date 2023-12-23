@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermessageextension
 schema: 2.0.0
-ms.prod: extensions
 ---
 
 # New-MgBetaUserMessageExtension
@@ -12,10 +11,6 @@ ms.prod: extensions
 Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
 You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
 The table in the Permissions section lists the resources that support open extensions.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserMessageExtension](/powershell/module/Microsoft.Graph.Mail/New-MgUserMessageExtension?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,13 +42,13 @@ New-MgBetaUserMessageExtension -InputObject <IMailIdentity> -BodyParameter <Hash
 Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
 You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
 The table in the Permissions section lists the resources that support open extensions.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Mail
+```
 
 $params = @{
 	"@odata.type" = "microsoft.graph.openTypeExtension"
@@ -65,11 +60,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserMessageExtension -UserId $userId -MessageId $messageId -BodyParameter $params
-```
-This example shows how to use the New-MgBetaUserMessageExtension Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -225,8 +215,6 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgUserMessageExtension](/powershell/module/Microsoft.Graph.Mail/New-MgUserMessageExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermessageextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermessageextension)
-
 

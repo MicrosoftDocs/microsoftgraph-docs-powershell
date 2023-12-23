@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadevice
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # New-MgBetaDevice
 
 ## SYNOPSIS
 Create a new device.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDevice](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDevice?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -44,13 +39,13 @@ New-MgBetaDevice -BodyParameter <IMicrosoftGraphDevice> [-WhatIf] [-Confirm] [<C
 
 ## DESCRIPTION
 Create a new device.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+```
 
 $params = @{
 	accountEnabled = $true
@@ -58,21 +53,16 @@ $params = @{
 		@{
 			type = 99
 			identityProvider = "identityProvider-value"
-			key = [System.Text.Encoding]::ASCII.GetBytes("base64Y3YxN2E1MWFlYw==")
+			key = \[System.Text.Encoding\]::ASCII.GetBytes("base64Y3YxN2E1MWFlYw==")
 		}
 	)
-	approximateLastSignInDateTime = [System.DateTime]::Parse("2016-10-19T10:37:00Z")
+	approximateLastSignInDateTime = \[System.DateTime\]::Parse("2016-10-19T10:37:00Z")
 	deviceId = "deviceId-value"
 	deviceMetadata = "deviceMetadata-value"
 	deviceVersion = 99
 }
 
 New-MgBetaDevice -BodyParameter $params
-```
-This example shows how to use the New-MgBetaDevice Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -1203,7 +1193,6 @@ Read-only.
   \[State \<String\>\]: usageRightState
 
 ## RELATED LINKS
-[New-MgDevice](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDevice?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadevice)
 

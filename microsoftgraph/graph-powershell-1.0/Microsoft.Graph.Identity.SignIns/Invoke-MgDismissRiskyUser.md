@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mgdismissriskyuser
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Invoke-MgDismissRiskyUser
@@ -11,10 +10,6 @@ ms.prod: identity-and-sign-in
 ## SYNOPSIS
 Dismiss the risk of one or more riskyUser objects.
 This action sets the targeted user's risk level to none.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaDismissRiskyUser](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Invoke-MgBetaDismissRiskyUser?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -34,11 +29,11 @@ Invoke-MgDismissRiskyUser
 ## DESCRIPTION
 Dismiss the risk of one or more riskyUser objects.
 This action sets the targeted user's risk level to none.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgDismissRiskyUser Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.SignIns
 $params = @{
 	UserIds = @(
@@ -48,8 +43,6 @@ $params = @{
 }
 Invoke-MgDismissRiskyUser -BodyParameter $params
 ```
-This example shows how to use the Invoke-MgDismissRiskyUser Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -165,8 +158,6 @@ BODYPARAMETER \<IPathsZip9X6IdentityprotectionRiskyusersMicrosoftGraphDismissPos
   \[UserIds \<String\[\]\>\]:
 
 ## RELATED LINKS
-[Invoke-MgBetaDismissRiskyUser](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Invoke-MgBetaDismissRiskyUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mgdismissriskyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mgdismissriskyuser)
-
 

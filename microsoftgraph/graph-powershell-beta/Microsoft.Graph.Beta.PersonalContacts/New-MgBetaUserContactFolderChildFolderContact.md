@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.Beta.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/new-mgbetausercontactfolderchildfoldercontact
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgBetaUserContactFolderChildFolderContact
 
 ## SYNOPSIS
 Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserContactFolderChildFolderContact](/powershell/module/Microsoft.Graph.PersonalContacts/New-MgUserContactFolderChildFolderContact?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -70,9 +65,18 @@ New-MgBetaUserContactFolderChildFolderContact -InputObject <IPersonalContactsIde
 
 ## DESCRIPTION
 Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -1044,7 +1048,6 @@ WEBSITES \<IMicrosoftGraphWebsite\[\]\>: .
   \[Type \<String\>\]: websiteType
 
 ## RELATED LINKS
-[New-MgUserContactFolderChildFolderContact](/powershell/module/Microsoft.Graph.PersonalContacts/New-MgUserContactFolderChildFolderContact?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/new-mgbetausercontactfolderchildfoldercontact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/new-mgbetausercontactfolderchildfoldercontact)
 

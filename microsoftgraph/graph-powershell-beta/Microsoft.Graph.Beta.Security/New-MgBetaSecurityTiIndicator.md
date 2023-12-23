@@ -1,16 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritytiindicator
 schema: 2.0.0
-ms.prod: security
 ---
 
 # New-MgBetaSecurityTiIndicator
 
 ## SYNOPSIS
 Create a new tiIndicator object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -43,11 +41,11 @@ New-MgBetaSecurityTiIndicator -BodyParameter <IMicrosoftGraphTiIndicator> [-What
 
 ## DESCRIPTION
 Create a new tiIndicator object.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaSecurityTiIndicator Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{
 	Action = "alert"
@@ -72,8 +70,6 @@ $params = @{
 }
 New-MgBetaSecurityTiIndicator -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaSecurityTiIndicator Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -1160,5 +1156,4 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritytiindicator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritytiindicator)
-
 

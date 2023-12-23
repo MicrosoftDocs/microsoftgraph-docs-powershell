@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaretryusercloudpcpartneragentinstallation
 schema: 2.0.0
-ms.prod: cloud-pc
 ---
 
 # Invoke-MgBetaRetryUserCloudPcPartnerAgentInstallation
@@ -11,7 +10,6 @@ ms.prod: cloud-pc
 ## SYNOPSIS
 Retry installation for the partner agents that failed to install on the Cloud PC.
 Service side checks which agent installation failed firstly and retry.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -30,7 +28,18 @@ Invoke-MgBetaRetryUserCloudPcPartnerAgentInstallation -InputObject <IUsersAction
 ## DESCRIPTION
 Retry installation for the partner agents that failed to install on the Cloud PC.
 Service side checks which agent installation failed firstly and retry.
-This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -170,6 +179,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[NotebookId \<String\>\]: The unique identifier of notebook
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
   \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
   \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
   \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask
@@ -185,6 +195,4 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaretryusercloudpcpartneragentinstallation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaretryusercloudpcpartneragentinstallation)
-
-
 

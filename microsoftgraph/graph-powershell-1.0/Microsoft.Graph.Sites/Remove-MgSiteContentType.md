@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitecontenttype
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Remove-MgSiteContentType
 
 ## SYNOPSIS
-Remove a content type\]\[contentType\] from a \[list\]\[\] or a \[site\]\[\].
-This API is available in the following \[national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteContentType?view=graph-powershell-beta)
+Remove a \[content type\]\[contentType\] from a \[list\]\[\] or a \[site\]\[\].
 
 ## SYNTAX
 
@@ -30,21 +25,16 @@ Remove-MgSiteContentType -InputObject <ISitesIdentity> [-IfMatch <String>] [-Pas
 ```
 
 ## DESCRIPTION
-Remove a content type\]\[contentType\] from a \[list\]\[\] or a \[site\]\[\].
-This API is available in the following \[national cloud deployments.
+Remove a \[content type\]\[contentType\] from a \[list\]\[\] or a \[site\]\[\].
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Sites
+```
 
 Remove-MgSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId
-```
-This example shows how to use the Remove-MgSiteContentType Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -211,8 +201,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitecontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitecontenttype)
-
 

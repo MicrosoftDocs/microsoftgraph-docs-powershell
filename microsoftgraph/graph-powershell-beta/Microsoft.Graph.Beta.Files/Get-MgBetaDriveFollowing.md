@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivefollowing
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Get-MgBetaDriveFollowing
@@ -11,9 +10,6 @@ ms.prod: sharepoint
 ## SYNOPSIS
 The list of items the user is following.
 Only in OneDrive for Business.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDriveFollowing](/powershell/module/Microsoft.Graph.Files/Get-MgDriveFollowing?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -41,17 +37,13 @@ The list of items the user is following.
 Only in OneDrive for Business.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Files
+```
 
 Get-MgBetaDriveFollowing -DriveId $driveId
-
-```
-This example shows how to use the Get-MgBetaDriveFollowing Cmdlet.
-
 
 ## PARAMETERS
 
@@ -294,8 +286,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgDriveFollowing](/powershell/module/Microsoft.Graph.Files/Get-MgDriveFollowing?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivefollowing](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivefollowing)
-
 

@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationautomationrun
 schema: 2.0.0
-ms.prod: security
 ---
 
 # Get-MgBetaSecurityAttackSimulationAutomationRun
 
 ## SYNOPSIS
 A collection of simulation automation runs.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecurityAttackSimulationAutomationRun](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationAutomationRun?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -39,17 +35,13 @@ Get-MgBetaSecurityAttackSimulationAutomationRun -InputObject <ISecurityIdentity>
 A collection of simulation automation runs.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
+```
 
 Get-MgBetaSecurityAttackSimulationAutomationRun -SimulationAutomationId $simulationAutomationId
-
-```
-This example shows how to use the Get-MgBetaSecurityAttackSimulationAutomationRun Cmdlet.
-
 
 ## PARAMETERS
 
@@ -270,6 +262,8 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[ArticleId \<String\>\]: The unique identifier of article
   \[ArticleIndicatorId \<String\>\]: The unique identifier of articleIndicator
   \[AttackSimulationOperationId \<String\>\]: The unique identifier of attackSimulationOperation
+  \[AuditLogQueryId \<String\>\]: The unique identifier of auditLogQuery
+  \[AuditLogRecordId \<String\>\]: The unique identifier of auditLogRecord
   \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
   \[AuthorityTemplateId \<String\>\]: The unique identifier of authorityTemplate
   \[CaseOperationId \<String\>\]: The unique identifier of caseOperation
@@ -344,8 +338,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgSecurityAttackSimulationAutomationRun](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationAutomationRun?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationautomationrun](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationautomationrun)
-
 

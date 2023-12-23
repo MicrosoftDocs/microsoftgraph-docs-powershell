@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteanalytic
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Analytics about the view activities that took place in this site.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSiteAnalytic](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteAnalytic?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Get-MgBetaSiteAnalytic -InputObject <ISitesIdentity> [-ExpandProperty <String[]>
 
 ## DESCRIPTION
 Analytics about the view activities that took place in this site.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -159,9 +172,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgSiteAnalytic](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteAnalytic?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteanalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteanalytic)
-
-
 

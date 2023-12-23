@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchannelmember
@@ -10,10 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Add a conversationMember to a channel.
 This operation is allowed only for channels with a membershipType value of private or shared.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/New-MgTeamChannelMember?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -46,13 +42,13 @@ New-MgBetaTeamChannelMember -InputObject <ITeamsIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Add a conversationMember to a channel.
 This operation is allowed only for channels with a membershipType value of private or shared.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Add a member to a private channel
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -63,15 +59,11 @@ $params = @{
 }
 
 New-MgBetaTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgBetaTeamChannelMember Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Add a member with the owner role to a private channel
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -82,15 +74,11 @@ $params = @{
 }
 
 New-MgBetaTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
+
+### EXAMPLE 3
 ```
-This example shows how to use the New-MgBetaTeamChannelMember Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Add an owner to a channel using user principal name
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -101,15 +89,11 @@ $params = @{
 }
 
 New-MgBetaTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
+
+### EXAMPLE 4
 ```
-This example shows how to use the New-MgBetaTeamChannelMember Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Add a user who is part of the same tenant as a member to a shared channel
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -119,15 +103,11 @@ $params = @{
 }
 
 New-MgBetaTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
+
+### EXAMPLE 5
 ```
-This example shows how to use the New-MgBetaTeamChannelMember Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 5: Add a user who is part of a different tenant as a member to a shared channel
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -138,15 +118,11 @@ $params = @{
 }
 
 New-MgBetaTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
+
+### EXAMPLE 6
 ```
-This example shows how to use the New-MgBetaTeamChannelMember Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 6: Add a user who is part of the same or a different tenant as a member to a shared channel using user principal name
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -156,11 +132,6 @@ $params = @{
 }
 
 New-MgBetaTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
-```
-This example shows how to use the New-MgBetaTeamChannelMember Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -375,6 +346,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
   \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
   \[ConversationMemberId \<String\>\]: The unique identifier of conversationMember
+  \[DayNoteId \<String\>\]: The unique identifier of dayNote
   \[DeletedChatId \<String\>\]: The unique identifier of deletedChat
   \[DeletedTeamId \<String\>\]: The unique identifier of deletedTeam
   \[GroupId \<String\>\]: The unique identifier of group
@@ -408,8 +380,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[New-MgTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/New-MgTeamChannelMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchannelmember)
-
 

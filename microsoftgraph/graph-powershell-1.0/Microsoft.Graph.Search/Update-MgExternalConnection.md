@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnection
 schema: 2.0.0
-ms.prod: search
 ---
 
 # Update-MgExternalConnection
 
 ## SYNOPSIS
 Update the properties of an externalConnection object.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternalConnection?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -57,13 +52,13 @@ Update-MgExternalConnection -InputObject <ISearchIdentity>
 
 ## DESCRIPTION
 Update the properties of an externalConnection object.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Search
+```
 
 $params = @{
 	name = "Contoso HR Service Tickets"
@@ -71,11 +66,6 @@ $params = @{
 }
 
 Update-MgExternalConnection -ExternalConnectionId $externalConnectionId -BodyParameter $params
-```
-This example shows how to use the Update-MgExternalConnection Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -663,7 +653,6 @@ Required.
       \[ValuesJoinedBy \<String\>\]: binaryOperator
 
 ## RELATED LINKS
-[Update-MgBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternalConnection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnection](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnection)
 

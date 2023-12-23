@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeeting
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Get-MgCommunicationOnlineMeeting
 
 ## SYNOPSIS
 Get onlineMeetings from communications
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationOnlineMeeting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -52,20 +48,14 @@ Get-MgCommunicationOnlineMeeting
 ## DESCRIPTION
 Get onlineMeetings from communications
 
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onlinemeeting-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Retrieve an online meeting by videoTeleconferenceId
 
-```powershell
-
-Import-Module Microsoft.Graph.CloudCommunications
-
-Get-MgCommunicationOnlineMeeting -Filter "VideoTeleconferenceId eq '123456789'" 
-
+### EXAMPLE 1
 ```
-This example will retrieve an online meeting by videoteleconferenceid
+Import-Module Microsoft.Graph.CloudCommunications
+```
 
+Get-MgCommunicationOnlineMeeting -Filter "VideoTeleconferenceId eq '123456789'"
 
 ## PARAMETERS
 
@@ -460,6 +450,7 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[AudioRoutingGroupId \<String\>\]: The unique identifier of audioRoutingGroup
   \[CallId \<String\>\]: The unique identifier of call
   \[CallRecordId \<String\>\]: The unique identifier of callRecord
+  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
   \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
   \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
   \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession
@@ -488,8 +479,6 @@ For example, if a user changes their display name, the API might show the new va
   \[Organizer \<IMicrosoftGraphMeetingParticipantInfo\>\]: meetingParticipantInfo
 
 ## RELATED LINKS
-[Get-MgBetaCommunicationOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationOnlineMeeting?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeeting](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeeting)
-
 

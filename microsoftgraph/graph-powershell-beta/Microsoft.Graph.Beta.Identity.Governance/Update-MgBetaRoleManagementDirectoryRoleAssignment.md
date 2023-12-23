@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagementdirectoryroleassignment
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property roleAssignments in roleManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgRoleManagementDirectoryRoleAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementDirectoryRoleAssignment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -52,6 +49,18 @@ Update-MgBetaRoleManagementDirectoryRoleAssignment -InputObject <IIdentityGovern
 ## DESCRIPTION
 Update the navigation property roleAssignments in roleManagement
 
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -88,10 +97,10 @@ Accept wildcard characters: False
 ### -AppScopeId
 Identifier of the app specific scope when the assignment scope is app specific.
 The scope of an assignment determines the set of resources for which the principal has been granted access.
-Directory scopes are shared scopes stored in the directory that are understood by multiple applications.
-Use / for tenant-wide scope.
-App scopes are scopes that are defined and understood by this application only.
-For the entitlement management provider, use app scopes to specify a catalog, for example /AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997.
+App scopes are scopes that are defined and understood by a resource application only.
+For the entitlement management provider, use this property to specify a catalog, for example /AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997.
+Supports $filter (eq, in).
+For example /roleManagement/entitlementManagement/roleAssignments$filter=appScopeId eq '/AccessPackageCatalog/{catalog id}'.
 
 ```yaml
 Type: String
@@ -155,8 +164,8 @@ Accept wildcard characters: False
 ### -DirectoryScopeId
 Identifier of the directory object representing the scope of the assignment.
 The scope of an assignment determines the set of resources for which the principal has been granted access.
-Directory scopes are shared scopes stored in the directory that are understood by multiple applications.
-App scopes are scopes that are defined and understood by this application only.
+Directory scopes are shared scopes stored in the directory that are understood by multiple applications, unlike app scopes that are defined and understood by a resource application only.
+Supports $filter (eq, in).
 
 ```yaml
 Type: String
@@ -220,7 +229,8 @@ Accept wildcard characters: False
 
 ### -PrincipalId
 Identifier of the principal to which the assignment is granted.
-Supports $filter (eq operator only).
+Supported principals are users, role-assignable groups, and service principals.
+Supports $filter (eq, in).
 
 ```yaml
 Type: String
@@ -235,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrincipalOrganizationId
-.
+Identifier of the home tenant for the principal to which the assignment is granted.
 
 ```yaml
 Type: String
@@ -286,7 +296,7 @@ Accept wildcard characters: False
 ### -RoleDefinitionId
 Identifier of the unifiedRoleDefinition the assignment is for.
 Read-only.
-Supports $filter (eq operator only).
+Supports $filter (eq, in).
 
 ```yaml
 Type: String
@@ -387,10 +397,10 @@ This property is read only.
 This property is read only.
   \[AppScopeId \<String\>\]: Identifier of the app specific scope when the assignment scope is app specific.
 The scope of an assignment determines the set of resources for which the principal has been granted access.
-Directory scopes are shared scopes stored in the directory that are understood by multiple applications.
-Use / for tenant-wide scope.
-App scopes are scopes that are defined and understood by this application only. 
-For the entitlement management provider, use app scopes to specify a catalog, for example /AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997.
+App scopes are scopes that are defined and understood by a resource application only.
+For the entitlement management provider, use this property to specify a catalog, for example /AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997.
+Supports $filter (eq, in).
+For example /roleManagement/entitlementManagement/roleAssignments?$filter=appScopeId eq '/AccessPackageCatalog/{catalog id}'.
   \[Condition \<String\>\]: 
   \[DirectoryScope \<IMicrosoftGraphDirectoryObject\>\]: directoryObject
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -400,12 +410,13 @@ Read-only.
 Always null when the object hasn't been deleted.
   \[DirectoryScopeId \<String\>\]: Identifier of the directory object representing the scope of the assignment.
 The scope of an assignment determines the set of resources for which the principal has been granted access.
-Directory scopes are shared scopes stored in the directory that are understood by multiple applications.
-App scopes are scopes that are defined and understood by this application only.
+Directory scopes are shared scopes stored in the directory that are understood by multiple applications, unlike app scopes that are defined and understood by a resource application only.
+Supports $filter (eq, in).
   \[Principal \<IMicrosoftGraphDirectoryObject\>\]: directoryObject
   \[PrincipalId \<String\>\]: Identifier of the principal to which the assignment is granted.
-Supports $filter (eq operator only).
-  \[PrincipalOrganizationId \<String\>\]: 
+Supported principals are users, role-assignable groups, and service principals.
+Supports $filter (eq, in).
+  \[PrincipalOrganizationId \<String\>\]: Identifier of the home tenant for the principal to which the assignment is granted.
   \[ResourceScope \<String\>\]: The scope at which the unifiedRoleAssignment applies.
 This is / for service-wide.
 DO NOT USE.
@@ -454,7 +465,7 @@ Read-only when isBuiltIn is true.
 Read-only when isBuiltIn is true.
   \[RoleDefinitionId \<String\>\]: Identifier of the unifiedRoleDefinition the assignment is for.
 Read-only.
-Supports $filter (eq operator only).
+Supports $filter (eq, in).
 
 DIRECTORYSCOPE \<IMicrosoftGraphDirectoryObject\>: directoryObject
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -615,9 +626,6 @@ Read-only when isBuiltIn is true.
 Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
-[Update-MgRoleManagementDirectoryRoleAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementDirectoryRoleAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagementdirectoryroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagementdirectoryroleassignment)
-
-
 

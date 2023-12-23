@@ -1,17 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilelanguage
 schema: 2.0.0
-ms.prod: people
-ms.prod: people
 ---
 
 # Get-MgBetaUserProfileLanguage
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a languageProficiency object within a user's profile.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -36,25 +33,22 @@ Get-MgBetaUserProfileLanguage -InputObject <IPeopleIdentity> [-ExpandProperty <S
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a languageProficiency object within a user's profile.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaUserProfileLanguage Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfileLanguage -UserId $userId -LanguageProficiencyId $languageProficiencyId
 ```
-This example shows how to use the Get-MgBetaUserProfileLanguage Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaUserProfileLanguage Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfileLanguage -UserId $userId
 ```
-This example shows how to use the Get-MgBetaUserProfileLanguage Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -297,5 +291,4 @@ INPUTOBJECT \<IPeopleIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilelanguage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilelanguage)
-
 

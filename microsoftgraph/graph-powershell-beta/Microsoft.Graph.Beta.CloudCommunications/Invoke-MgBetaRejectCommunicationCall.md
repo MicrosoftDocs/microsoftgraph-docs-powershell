@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetarejectcommunicationcall
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Invoke-MgBetaRejectCommunicationCall
@@ -16,10 +15,6 @@ The bot is expected to answer or reject the call before the call times out.
 The current timeout value is 15 seconds.
 This API does not end existing calls that have already been answered.
 Use delete call to end a call.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgRejectCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgRejectCommunicationCall?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -58,14 +53,13 @@ The bot is expected to answer or reject the call before the call times out.
 The current timeout value is 15 seconds.
 This API does not end existing calls that have already been answered.
 Use delete call to end a call.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Reject an incoming call with 'Busy' reason
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	reason = "busy"
@@ -73,24 +67,16 @@ $params = @{
 
 Invoke-MgBetaRejectCommunicationCall -CallId $callId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will reject an incoming call with 'busy' reason
-
-### Example 2: Reject an incoming call with 'None' reason
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	reason = "none"
 }
 
 Invoke-MgBetaRejectCommunicationCall -CallId $callId -BodyParameter $params
-
-```
-This example will reject an incoming call with 'none' reason
-
 
 ## PARAMETERS
 
@@ -274,8 +260,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgRejectCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgRejectCommunicationCall?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetarejectcommunicationcall](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetarejectcommunicationcall)
-
 

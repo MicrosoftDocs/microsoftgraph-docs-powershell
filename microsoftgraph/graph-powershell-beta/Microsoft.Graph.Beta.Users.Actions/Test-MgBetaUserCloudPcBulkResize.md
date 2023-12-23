@@ -1,16 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetausercloudpcbulkresize
 schema: 2.0.0
-ms.prod: cloud-pc
 ---
 
 # Test-MgBetaUserCloudPcBulkResize
 
 ## SYNOPSIS
 Validate that a set of cloudPC devices meet the requirements to be bulk resized.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -42,7 +40,18 @@ Test-MgBetaUserCloudPcBulkResize -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Validate that a set of cloudPC devices meet the requirements to be bulk resized.
-This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -219,6 +228,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[NotebookId \<String\>\]: The unique identifier of notebook
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
   \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
   \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
   \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask
@@ -234,6 +244,4 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetausercloudpcbulkresize](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetausercloudpcbulkresize)
-
-
 

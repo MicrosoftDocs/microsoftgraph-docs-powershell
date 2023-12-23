@@ -1,16 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyaccessreviewpolicy
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Update-MgBetaPolicyAccessReviewPolicy
 
 ## SYNOPSIS
 Update the properties of an accessReviewPolicy object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -29,19 +27,17 @@ Update-MgBetaPolicyAccessReviewPolicy -BodyParameter <IMicrosoftGraphAccessRevie
 
 ## DESCRIPTION
 Update the properties of an accessReviewPolicy object.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaPolicyAccessReviewPolicy Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	IsGroupOwnerManagementEnabled = $true
 }
 Update-MgBetaPolicyAccessReviewPolicy -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaPolicyAccessReviewPolicy Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -198,5 +194,4 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyaccessreviewpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyaccessreviewpolicy)
-
 

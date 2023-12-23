@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationusertaughtclass
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Get-MgEducationUserTaughtClass
 
 ## SYNOPSIS
 Classes for which the user is a teacher.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationUserTaughtClass](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserTaughtClass?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -39,17 +35,13 @@ Get-MgEducationUserTaughtClass -InputObject <IEducationIdentity> [-ExpandPropert
 Classes for which the user is a teacher.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Education
+```
 
 Get-MgEducationUserTaughtClass -EducationUserId $educationUserId
-
-```
-This example shows how to use the Get-MgEducationUserTaughtClass Cmdlet.
-
 
 ## PARAMETERS
 
@@ -278,8 +270,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgBetaEducationUserTaughtClass](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserTaughtClass?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationusertaughtclass](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationusertaughtclass)
-
 

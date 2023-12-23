@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancepermissionanalyticgcppermissioncreepindexdistribution
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaIdentityGovernancePermissionAnalyticGcpPermissionCreepIndexDistribution
 
 ## SYNOPSIS
-Get permissionsCreepIndexDistributions from identityGovernance
+Represents the Permissions Creep Index (PCI) for the authorization system.
+PCI distribution chart shows the classification of human and nonhuman identities based on the PCI score in three buckets (low, medium, high).
 
 ## SYNTAX
 
@@ -34,7 +35,20 @@ Get-MgBetaIdentityGovernancePermissionAnalyticGcpPermissionCreepIndexDistributio
 ```
 
 ## DESCRIPTION
-Get permissionsCreepIndexDistributions from identityGovernance
+Represents the Permissions Creep Index (PCI) for the authorization system.
+PCI distribution chart shows the classification of human and nonhuman identities based on the PCI score in three buckets (low, medium, high).
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -339,6 +353,4 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancepermissionanalyticgcppermissioncreepindexdistribution](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancepermissionanalyticgcppermissioncreepindexdistribution)
-
-
 

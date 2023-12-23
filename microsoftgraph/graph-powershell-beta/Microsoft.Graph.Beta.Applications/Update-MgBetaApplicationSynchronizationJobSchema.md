@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationsynchronizationjobschema
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Update-MgBetaApplicationSynchronizationJobSchema
@@ -13,9 +12,6 @@ Update the synchronization schema for a given job or template.
 This method fully replaces the current schema with the one provided in the request.
 To update the schema of a template, make the call on the application object.
 You must be the owner of the application.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgApplicationSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Applications/Update-MgApplicationSynchronizationJobSchema?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -52,6 +48,22 @@ Update the synchronization schema for a given job or template.
 This method fully replaces the current schema with the one provided in the request.
 To update the schema of a template, make the call on the application object.
 You must be the owner of the application.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -550,9 +562,6 @@ Must match one of the directory definitions in synchronizationSchema.
 Must match one of the directory definitions in synchronizationSchema.
 
 ## RELATED LINKS
-[Update-MgApplicationSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Applications/Update-MgApplicationSynchronizationJobSchema?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationsynchronizationjobschema](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationsynchronizationjobschema)
-
-
 

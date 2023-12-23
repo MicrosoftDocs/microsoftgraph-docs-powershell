@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mguseronenotesectionpage
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # New-MgUserOnenoteSectionPage
 
 ## SYNOPSIS
 Create a new page in the specified section.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserOnenoteSectionPage](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaUserOnenoteSectionPage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,7 +44,22 @@ New-MgUserOnenoteSectionPage -InputObject <INotesIdentity> -BodyParameter <IMicr
 
 ## DESCRIPTION
 Create a new page in the specified section.
-This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -822,9 +832,6 @@ Read-only.
   \[ParentSectionGroup \<IMicrosoftGraphSectionGroup\>\]: sectionGroup
 
 ## RELATED LINKS
-[New-MgBetaUserOnenoteSectionPage](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaUserOnenoteSectionPage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mguseronenotesectionpage](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mguseronenotesectionpage)
-
-
 

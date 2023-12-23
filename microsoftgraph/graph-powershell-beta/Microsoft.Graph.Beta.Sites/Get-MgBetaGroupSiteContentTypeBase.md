@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitecontenttypebase
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Parent contentType from which this content type is derived.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteContentTypeBase](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteContentTypeBase?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -41,6 +38,18 @@ Get-MgBetaGroupSiteContentTypeBase -InputObject <ISitesIdentity> [-ExpandPropert
 
 ## DESCRIPTION
 Parent contentType from which this content type is derived.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -216,9 +225,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgGroupSiteContentTypeBase](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteContentTypeBase?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitecontenttypebase](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitecontenttypebase)
-
-
 

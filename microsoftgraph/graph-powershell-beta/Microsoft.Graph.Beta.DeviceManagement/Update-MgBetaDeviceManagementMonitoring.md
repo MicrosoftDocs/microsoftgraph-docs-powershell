@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmonitoring
@@ -28,6 +28,18 @@ Update-MgBetaDeviceManagementMonitoring -BodyParameter <IMicrosoftGraphDeviceMan
 
 ## DESCRIPTION
 Update the navigation property monitoring in deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -195,8 +207,8 @@ Read-only.
   \[Enabled \<Boolean?\>\]: The status of the rule that indicates whether the rule is enabled or disabled.
 If true, the rule is enabled; otherwise, the rule is disabled.
   \[IsSystemRule \<Boolean?\>\]: Indicates whether the rule is a system rule.
-If true, the rule is a system rule; otherwise, the rule is a custom defined rule and can be edited.
-System rules are built-in and only a few properties can be edited.
+If true, the rule is a system rule; otherwise, the rule is a custom-defined rule and can be edited.
+System rules are built in and only a few properties can be edited.
   \[NotificationChannels \<IMicrosoftGraphDeviceManagementNotificationChannel\[\]\>\]: The notification channels of the rule selected by the user.
     \[NotificationChannelType \<String\>\]: notificationChannelType
     \[NotificationReceivers \<IMicrosoftGraphDeviceManagementNotificationReceiver\[\]\>\]: Information about the notification receivers, such as locale and contact information.
@@ -256,8 +268,8 @@ Read-only.
     \[Enabled \<Boolean?\>\]: The status of the rule that indicates whether the rule is enabled or disabled.
 If true, the rule is enabled; otherwise, the rule is disabled.
     \[IsSystemRule \<Boolean?\>\]: Indicates whether the rule is a system rule.
-If true, the rule is a system rule; otherwise, the rule is a custom defined rule and can be edited.
-System rules are built-in and only a few properties can be edited.
+If true, the rule is a system rule; otherwise, the rule is a custom-defined rule and can be edited.
+System rules are built in and only a few properties can be edited.
     \[NotificationChannels \<IMicrosoftGraphDeviceManagementNotificationChannel\[\]\>\]: The notification channels of the rule selected by the user.
       \[NotificationChannelType \<String\>\]: notificationChannelType
       \[NotificationReceivers \<IMicrosoftGraphDeviceManagementNotificationReceiver\[\]\>\]: Information about the notification receivers, such as locale and contact information.
@@ -278,5 +290,4 @@ Supported locale values are: en-us, cs-cz, de-de, es-es, fr-fr, hu-hu, it-it, ja
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmonitoring](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmonitoring)
-
 

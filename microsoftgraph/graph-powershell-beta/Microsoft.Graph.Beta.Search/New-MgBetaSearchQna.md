@@ -1,16 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetasearchqna
 schema: 2.0.0
-ms.prod: search
 ---
 
 # New-MgBetaSearchQna
 
 ## SYNOPSIS
 Create a new qna object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -32,11 +30,11 @@ New-MgBetaSearchQna -BodyParameter <IMicrosoftGraphSearchQna> [-WhatIf] [-Confir
 
 ## DESCRIPTION
 Create a new qna object.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaSearchQna Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Search
 $params = @{
 	DisplayName = "Global Country Holidays"
@@ -71,8 +69,6 @@ $params = @{
 }
 New-MgBetaSearchQna -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaSearchQna Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

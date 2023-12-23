@@ -1,17 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatainboundflow
 schema: 2.0.0
-ms.prod: industry-data-etl
-ms.prod: industry-data-etl
 ---
 
 # Get-MgBetaExternalIndustryDataInboundFlow
 
 ## SYNOPSIS
-Read the properties and relationships of an inboundFileFlow object.
-This API is available in the following national cloud deployments.
+Read the properties and relationships of an inboundFlow object.
 
 ## SYNTAX
 
@@ -35,8 +32,19 @@ Get-MgBetaExternalIndustryDataInboundFlow -InputObject <ISearchIdentity> [-Expan
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an inboundFileFlow object.
-This API is available in the following national cloud deployments.
+Read the properties and relationships of an inboundFlow object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -261,6 +269,4 @@ INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatainboundflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatainboundflow)
-
-
 

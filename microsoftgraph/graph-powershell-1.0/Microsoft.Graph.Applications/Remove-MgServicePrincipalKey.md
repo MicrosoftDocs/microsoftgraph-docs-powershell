@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalkey
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Remove-MgServicePrincipalKey
@@ -12,7 +11,6 @@ ms.prod: applications
 Remove a key credential from a servicePrincipal.
 This method along with addKey can be used by a servicePrincipal to automate rolling its expiring keys.
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -46,13 +44,11 @@ Remove-MgServicePrincipalKey -InputObject <IApplicationsIdentity>
 Remove a key credential from a servicePrincipal.
 This method along with addKey can be used by a servicePrincipal to automate rolling its expiring keys.
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
-This API is available in the following national cloud deployments.
-
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-removekey-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Remove-MgServicePrincipalKey Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Applications
 $params = @{
 	KeyId = "f0b0b335-1d71-4883-8f98-567911bfdca6"
@@ -60,8 +56,6 @@ $params = @{
 }
 Remove-MgServicePrincipalKey -ServicePrincipalId $servicePrincipalId -BodyParameter $params
 ```
-This example shows how to use the Remove-MgServicePrincipalKey Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -251,6 +245,4 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalkey](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalkey)
-
-
 

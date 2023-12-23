@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasite
 schema: 2.0.0
-ms.prod: sharepoint
-ms.prod: sharepoint
 ---
 
 # Get-MgBetaSite
 
 ## SYNOPSIS
-Retrieve properties and relationships for a \[site\]\[\] resource.A site resource represents a team site in SharePoint.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSite](/powershell/module/Microsoft.Graph.Sites/Get-MgSite?view=graph-powershell-1.0)
+Retrieve properties and relationships for a \[site\]\[\] resource.\nA site resource represents a team site in SharePoint.
 
 ## SYNTAX
 
@@ -36,20 +31,16 @@ Get-MgBetaSite -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Prop
 ```
 
 ## DESCRIPTION
-Retrieve properties and relationships for a \[site\]\[\] resource.A site resource represents a team site in SharePoint.
+Retrieve properties and relationships for a \[site\]\[\] resource.\nA site resource represents a team site in SharePoint.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Sites
+```
 
 Get-MgBetaSite -SiteId $siteId
-```
-This example shows how to use the Get-MgBetaSite Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -301,8 +292,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgSite](/powershell/module/Microsoft.Graph.Sites/Get-MgSite?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasite)
-
 

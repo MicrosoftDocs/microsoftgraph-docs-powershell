@@ -1,20 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationfederatedidentitycredential
 schema: 2.0.0
-ms.prod: applications
-ms.prod: applications
 ---
 
 # Get-MgApplicationFederatedIdentityCredential
 
 ## SYNOPSIS
 Read the properties and relationships of a federatedIdentityCredential object.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaApplicationFederatedIdentityCredential](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationFederatedIdentityCredential?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -39,24 +33,15 @@ Get-MgApplicationFederatedIdentityCredential -InputObject <IApplicationsIdentity
 
 ## DESCRIPTION
 Read the properties and relationships of a federatedIdentityCredential object.
-This API is available in the following national cloud deployments.
-
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/federatedidentitycredential-get-permissions.md)]
-
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-list-federatedidentitycredentials-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Applications
+```
 
 Get-MgApplicationFederatedIdentityCredential -ApplicationId $applicationId
-
-```
-This example shows how to use the Get-MgApplicationFederatedIdentityCredential Cmdlet.
-
 
 ## PARAMETERS
 
@@ -297,9 +282,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaApplicationFederatedIdentityCredential](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationFederatedIdentityCredential?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationfederatedidentitycredential](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationfederatedidentitycredential)
-
-
 

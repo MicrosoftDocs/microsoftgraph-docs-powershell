@@ -1,16 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileposition
 schema: 2.0.0
-ms.prod: people
 ---
 
 # Update-MgBetaUserProfilePosition
 
 ## SYNOPSIS
 Update the properties of a workPosition object in a user's profile.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -50,11 +48,11 @@ Update-MgBetaUserProfilePosition -InputObject <IPeopleIdentity> -BodyParameter <
 
 ## DESCRIPTION
 Update the properties of a workPosition object in a user's profile.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaUserProfilePosition Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.People
 $params = @{
 	IsCurrent = $true
@@ -62,8 +60,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Update-MgBetaUserProfilePosition -UserId $userId -WorkPositionId $workPositionId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaUserProfilePosition Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -417,9 +413,10 @@ BODYPARAMETER \<IMicrosoftGraphWorkPosition\>: workPosition
     \[Application \<IMicrosoftGraphIdentity\>\]: identity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     \[Device \<IMicrosoftGraphIdentity\>\]: identity
     \[User \<IMicrosoftGraphIdentity\>\]: identity
   \[CreatedDateTime \<DateTime?\>\]: Provides the dateTimeOffset for when the entity was created.
@@ -439,8 +436,8 @@ Read-only.
   \[Colleagues \<IMicrosoftGraphRelatedPerson\[\]\>\]: Colleagues that are associated with this position.
     \[DisplayName \<String\>\]: Name of the person.
     \[Relationship \<String\>\]: personRelationship
-    \[UserId \<String\>\]: 
-    \[UserPrincipalName \<String\>\]: Email address or reference to person within organization.
+    \[UserId \<String\>\]: The user's directory object ID (Microsoft Entra ID or CID).
+    \[UserPrincipalName \<String\>\]: Email address or reference to person within the organization.
   \[Detail \<IMicrosoftGraphPositionDetail\>\]: positionDetail
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[Company \<IMicrosoftGraphCompanyDetail\>\]: companyDetail
@@ -463,28 +460,29 @@ It's a free-format string value, for example, 'United States'.
     \[Description \<String\>\]: Description of the position in question.
     \[EndMonthYear \<DateTime?\>\]: When the position ended.
     \[JobTitle \<String\>\]: The title held when in that position.
-    \[Layer \<Int32?\>\]: 
-    \[Level \<String\>\]: 
+    \[Layer \<Int32?\>\]: The place where the employee is within the organizational hierarchy.
+    \[Level \<String\>\]: The employee's experience or management level.
     \[Role \<String\>\]: The role the position entailed.
     \[StartMonthYear \<DateTime?\>\]: The start month and year of the position.
-    \[Summary \<String\>\]: Short summary of the position.
+    \[Summary \<String\>\]: summary of the position.
   \[IsCurrent \<Boolean?\>\]: Denotes whether or not the position is current.
   \[Manager \<IMicrosoftGraphRelatedPerson\>\]: relatedPerson
 
 COLLEAGUES \<IMicrosoftGraphRelatedPerson\[\]\>: Colleagues that are associated with this position.
   \[DisplayName \<String\>\]: Name of the person.
   \[Relationship \<String\>\]: personRelationship
-  \[UserId \<String\>\]: 
-  \[UserPrincipalName \<String\>\]: Email address or reference to person within organization.
+  \[UserId \<String\>\]: The user's directory object ID (Microsoft Entra ID or CID).
+  \[UserPrincipalName \<String\>\]: Email address or reference to person within the organization.
 
 CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[Application \<IMicrosoftGraphIdentity\>\]: identity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-    \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
   \[Device \<IMicrosoftGraphIdentity\>\]: identity
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
@@ -510,11 +508,11 @@ It's a free-format string value, for example, 'United States'.
   \[Description \<String\>\]: Description of the position in question.
   \[EndMonthYear \<DateTime?\>\]: When the position ended.
   \[JobTitle \<String\>\]: The title held when in that position.
-  \[Layer \<Int32?\>\]: 
-  \[Level \<String\>\]: 
+  \[Layer \<Int32?\>\]: The place where the employee is within the organizational hierarchy.
+  \[Level \<String\>\]: The employee's experience or management level.
   \[Role \<String\>\]: The role the position entailed.
   \[StartMonthYear \<DateTime?\>\]: The start month and year of the position.
-  \[Summary \<String\>\]: Short summary of the position.
+  \[Summary \<String\>\]: summary of the position.
 
 INFERENCE \<IMicrosoftGraphInferenceData\>: inferenceData
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -550,9 +548,10 @@ LASTMODIFIEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
   \[Application \<IMicrosoftGraphIdentity\>\]: identity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-    \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
   \[Device \<IMicrosoftGraphIdentity\>\]: identity
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
@@ -560,8 +559,8 @@ MANAGER \<IMicrosoftGraphRelatedPerson\>: relatedPerson
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[DisplayName \<String\>\]: Name of the person.
   \[Relationship \<String\>\]: personRelationship
-  \[UserId \<String\>\]: 
-  \[UserPrincipalName \<String\>\]: Email address or reference to person within organization.
+  \[UserId \<String\>\]: The user's directory object ID (Microsoft Entra ID or CID).
+  \[UserPrincipalName \<String\>\]: Email address or reference to person within the organization.
 
 SOURCE \<IMicrosoftGraphPersonDataSources\>: personDataSources
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.

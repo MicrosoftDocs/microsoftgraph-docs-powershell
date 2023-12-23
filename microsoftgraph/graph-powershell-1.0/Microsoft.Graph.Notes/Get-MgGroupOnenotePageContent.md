@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenotepagecontent
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # Get-MgGroupOnenotePageContent
 
 ## SYNOPSIS
 The page's HTML content.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupOnenotePageContent](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaGroupOnenotePageContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,6 +27,16 @@ Get-MgGroupOnenotePageContent -InputObject <INotesIdentity> -OutFile <String> [-
 The page's HTML content.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -137,8 +143,6 @@ INPUTOBJECT \<INotesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupOnenotePageContent](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaGroupOnenotePageContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenotepagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenotepagecontent)
-
 

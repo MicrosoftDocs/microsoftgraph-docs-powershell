@@ -1,19 +1,15 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mginformationprotectionthreatassessmentrequest
 schema: 2.0.0
-ms.prod: security
 ---
 
 # New-MgInformationProtectionThreatAssessmentRequest
 
 ## SYNOPSIS
 Create a new threat assessment request.
-A threat assessment request can be one of the following types: This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaInformationProtectionThreatAssessmentRequest?view=graph-powershell-beta)
+A threat assessment request can be one of the following types:
 
 ## SYNTAX
 
@@ -34,13 +30,14 @@ New-MgInformationProtectionThreatAssessmentRequest -BodyParameter <IMicrosoftGra
 
 ## DESCRIPTION
 Create a new threat assessment request.
-A threat assessment request can be one of the following types: This API is available in the following national cloud deployments.
+A threat assessment request can be one of the following types:
 
 ## EXAMPLES
-### Example 1: Create a mail assessment request
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.mailAssessmentRequest"
@@ -51,15 +48,11 @@ $params = @{
 }
 
 New-MgInformationProtectionThreatAssessmentRequest -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgInformationProtectionThreatAssessmentRequest Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Create an email assessment request
-
-```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.emailFileAssessmentRequest"
@@ -70,15 +63,11 @@ $params = @{
 }
 
 New-MgInformationProtectionThreatAssessmentRequest -BodyParameter $params
+
+### EXAMPLE 3
 ```
-This example shows how to use the New-MgInformationProtectionThreatAssessmentRequest Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Create a file assessment request
-
-```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.fileAssessmentRequest"
@@ -89,15 +78,11 @@ $params = @{
 }
 
 New-MgInformationProtectionThreatAssessmentRequest -BodyParameter $params
+
+### EXAMPLE 4
 ```
-This example shows how to use the New-MgInformationProtectionThreatAssessmentRequest Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Create an url assessment request
-
-```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.urlAssessmentRequest"
@@ -107,11 +92,6 @@ $params = @{
 }
 
 New-MgInformationProtectionThreatAssessmentRequest -BodyParameter $params
-```
-This example shows how to use the New-MgInformationProtectionThreatAssessmentRequest Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -386,7 +366,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   \[ResultType \<String\>\]: threatAssessmentResultType
 
 ## RELATED LINKS
-[New-MgBetaInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaInformationProtectionThreatAssessmentRequest?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mginformationprotectionthreatassessmentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mginformationprotectionthreatassessmentrequest)
 

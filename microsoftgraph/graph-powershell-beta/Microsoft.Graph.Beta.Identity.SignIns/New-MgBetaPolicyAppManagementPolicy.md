@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyappmanagementpolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # New-MgBetaPolicyAppManagementPolicy
 
 ## SYNOPSIS
 Create an appManagementPolicy object.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyAppManagementPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -33,7 +28,22 @@ New-MgBetaPolicyAppManagementPolicy -BodyParameter <IMicrosoftGraphAppManagement
 
 ## DESCRIPTION
 Create an appManagementPolicy object.
-This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -282,8 +292,6 @@ To apply to all applications, this date would be null.
     \[RestrictionType \<String\>\]: appCredentialRestrictionType
 
 ## RELATED LINKS
-[New-MgPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyAppManagementPolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyappmanagementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyappmanagementpolicy)
-
 

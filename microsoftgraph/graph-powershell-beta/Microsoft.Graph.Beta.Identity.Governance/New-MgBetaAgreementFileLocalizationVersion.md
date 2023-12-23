@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaagreementfilelocalizationversion
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to versions for agreements
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgAgreementFileLocalizationVersion](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgAgreementFileLocalizationVersion?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45,6 +42,22 @@ New-MgBetaAgreementFileLocalizationVersion -InputObject <IIdentityGovernanceIden
 
 ## DESCRIPTION
 Create new navigation property to versions for agreements
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -413,9 +426,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[WorkflowVersionNumber \<Int32?\>\]: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[New-MgAgreementFileLocalizationVersion](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgAgreementFileLocalizationVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaagreementfilelocalizationversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaagreementfilelocalizationversion)
-
-
 

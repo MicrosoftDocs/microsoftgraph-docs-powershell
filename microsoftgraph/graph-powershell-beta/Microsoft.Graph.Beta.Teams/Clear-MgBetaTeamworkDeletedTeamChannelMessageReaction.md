@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/clear-mgbetateamworkdeletedteamchannelmessagereaction
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action unsetReaction
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Clear-MgTeamworkDeletedTeamChannelMessageReaction](/powershell/module/Microsoft.Graph.Teams/Clear-MgTeamworkDeletedTeamChannelMessageReaction?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -46,6 +43,22 @@ Clear-MgBetaTeamworkDeletedTeamChannelMessageReaction -InputObject <ITeamsIdenti
 
 ## DESCRIPTION
 Invoke action unsetReaction
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -230,6 +243,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
   \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
   \[ConversationMemberId \<String\>\]: The unique identifier of conversationMember
+  \[DayNoteId \<String\>\]: The unique identifier of dayNote
   \[DeletedChatId \<String\>\]: The unique identifier of deletedChat
   \[DeletedTeamId \<String\>\]: The unique identifier of deletedTeam
   \[GroupId \<String\>\]: The unique identifier of group
@@ -263,9 +277,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Clear-MgTeamworkDeletedTeamChannelMessageReaction](/powershell/module/Microsoft.Graph.Teams/Clear-MgTeamworkDeletedTeamChannelMessageReaction?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/clear-mgbetateamworkdeletedteamchannelmessagereaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/clear-mgbetateamworkdeletedteamchannelmessagereaction)
-
-
 

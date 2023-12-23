@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkteamtemplate
@@ -35,34 +35,30 @@ Get-MgBetaTeamworkTeamTemplate -InputObject <ITeamsIdentity> [-ExpandProperty <S
 The templates associated with a team.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaTeamworkTeamTemplate Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Teams
-Get-MgBetaTeamworkTeamTemplate -ExpandProperty "definitions" -Filter "definitions/any(a:a/languageTag eq 'en-US')" 
+
+### EXAMPLE 1
 ```
-This example shows how to use the Get-MgBetaTeamworkTeamTemplate Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaTeamworkTeamTemplate Cmdlet
-```powershell
+Import-Module Microsoft.Graph.Beta.Teams
+Get-MgBetaTeamworkTeamTemplate -ExpandProperty "definitions" -Filter "definitions/any(a:a/languageTag eq 'en-US')"
+```
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaTeamworkTeamTemplate
 ```
-This example shows how to use the Get-MgBetaTeamworkTeamTemplate Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 3: Using the Get-MgBetaTeamworkTeamTemplate Cmdlet
-```powershell
+
+### EXAMPLE 3
+```
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaTeamworkTeamTemplate -ExpandProperty "definitions" -Filter "definitions/any(a:a/languageTag eq 'en-US')"  -OutFile $outFileId
 ```
-This example shows how to use the Get-MgBetaTeamworkTeamTemplate Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 4: Using the Get-MgBetaTeamworkTeamTemplate Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Teams
-Get-MgBetaTeamworkTeamTemplate -ExpandProperty "definitions" -Filter "definitions/any(a:a/languageTag eq 'en-US')" 
+
+### EXAMPLE 4
 ```
-This example shows how to use the Get-MgBetaTeamworkTeamTemplate Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Import-Module Microsoft.Graph.Beta.Teams
+Get-MgBetaTeamworkTeamTemplate -ExpandProperty "definitions" -Filter "definitions/any(a:a/languageTag eq 'en-US')"
+```
 
 ## PARAMETERS
 
@@ -271,6 +267,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
   \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
   \[ConversationMemberId \<String\>\]: The unique identifier of conversationMember
+  \[DayNoteId \<String\>\]: The unique identifier of dayNote
   \[DeletedChatId \<String\>\]: The unique identifier of deletedChat
   \[DeletedTeamId \<String\>\]: The unique identifier of deletedTeam
   \[GroupId \<String\>\]: The unique identifier of group
@@ -306,5 +303,4 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkteamtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkteamtemplate)
-
 

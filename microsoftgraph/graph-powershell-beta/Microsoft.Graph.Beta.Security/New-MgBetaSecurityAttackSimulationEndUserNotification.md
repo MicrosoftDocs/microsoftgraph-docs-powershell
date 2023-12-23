@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationendusernotification
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to endUserNotifications for security
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityAttackSimulationEndUserNotification](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulationEndUserNotification?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -33,6 +30,18 @@ New-MgBetaSecurityAttackSimulationEndUserNotification -BodyParameter <IMicrosoft
 
 ## DESCRIPTION
 Create new navigation property to endUserNotifications for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -308,9 +317,10 @@ Read-only.
   \[CreatedBy \<IMicrosoftGraphEmailIdentity\>\]: emailIdentity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-    \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     \[Email \<String\>\]: Email address of the user.
   \[CreatedDateTime \<DateTime?\>\]: Date and time when the notification was created.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
@@ -338,9 +348,10 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 CREATEDBY \<IMicrosoftGraphEmailIdentity\>: emailIdentity
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-  \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+  \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
   \[Email \<String\>\]: Email address of the user.
 
 DETAILS \<IMicrosoftGraphEndUserNotificationDetail\[\]\>: .
@@ -353,23 +364,23 @@ Read-only.
   \[SentFrom \<IMicrosoftGraphEmailIdentity\>\]: emailIdentity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-    \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     \[Email \<String\>\]: Email address of the user.
   \[Subject \<String\>\]: Mail subject.
 
 LASTMODIFIEDBY \<IMicrosoftGraphEmailIdentity\>: emailIdentity
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-  \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+  \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
   \[Email \<String\>\]: Email address of the user.
 
 ## RELATED LINKS
-[New-MgSecurityAttackSimulationEndUserNotification](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulationEndUserNotification?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationendusernotification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationendusernotification)
-
 

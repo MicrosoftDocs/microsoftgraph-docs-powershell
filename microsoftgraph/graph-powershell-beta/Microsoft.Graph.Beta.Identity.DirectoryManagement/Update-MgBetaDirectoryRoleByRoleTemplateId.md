@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryrolebyroletemplateid
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update entity in directoryRoles by roleTemplateId
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDirectoryRoleByRoleTemplateId](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryRoleByRoleTemplateId?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -46,6 +43,18 @@ Update-MgBetaDirectoryRoleByRoleTemplateId -InputObject <IIdentityDirectoryManag
 
 ## DESCRIPTION
 Update entity in directoryRoles by roleTemplateId
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -401,8 +410,6 @@ This property is read-only.
 This property is read-only.
 
 ## RELATED LINKS
-[Update-MgDirectoryRoleByRoleTemplateId](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryRoleByRoleTemplateId?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryrolebyroletemplateid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryrolebyroletemplateid)
-
 

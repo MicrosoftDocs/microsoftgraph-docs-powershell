@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mguseragreementacceptance
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Get-MgUserAgreementAcceptance
@@ -12,9 +11,6 @@ ms.prod: users
 The user's terms of use acceptance statuses.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserAgreementAcceptance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaUserAgreementAcceptance?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -43,18 +39,14 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.Governance
+```
 
 # A UPN can also be used as -UserId.
 Get-MgUserAgreementAcceptance -UserId $userId
-```
-This example shows how to use the Get-MgUserAgreementAcceptance Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -341,8 +333,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[WorkflowVersionNumber \<Int32?\>\]: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgBetaUserAgreementAcceptance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaUserAgreementAcceptance?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mguseragreementacceptance](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mguseragreementacceptance)
-
 

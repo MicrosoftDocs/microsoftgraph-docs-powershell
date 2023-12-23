@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadeviceregisteredownerbyref
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # New-MgBetaDeviceRegisteredOwnerByRef
 
 ## SYNOPSIS
 Add a user as a registered owner of the device.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceRegisteredOwnerByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDeviceRegisteredOwnerByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -43,24 +38,19 @@ New-MgBetaDeviceRegisteredOwnerByRef -InputObject <IIdentityDirectoryManagementI
 
 ## DESCRIPTION
 Add a user as a registered owner of the device.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+```
 
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/beta/directoryObjects/{id}"
 }
 
 New-MgBetaDeviceRegisteredOwnerByRef -DeviceId $deviceId -BodyParameter $params
-```
-This example shows how to use the New-MgBetaDeviceRegisteredOwnerByRef Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -255,8 +245,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgDeviceRegisteredOwnerByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDeviceRegisteredOwnerByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadeviceregisteredownerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadeviceregisteredownerbyref)
-
 

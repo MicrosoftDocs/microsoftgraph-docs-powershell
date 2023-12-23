@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmembergroup
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Get-MgGroupMemberGroup
@@ -14,10 +13,6 @@ This function is transitive.
 This API returns up to 11,000 group IDs.
 If more than 11,000 results are available, it returns a 400 Bad Request error with the Directory_ResultSizeLimitExceeded error code.
 As a workaround, use the List group transitive memberOf API.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupMemberGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -53,28 +48,24 @@ This function is transitive.
 This API returns up to 11,000 group IDs.
 If more than 11,000 results are available, it returns a 400 Bad Request error with the Directory_ResultSizeLimitExceeded error code.
 As a workaround, use the List group transitive memberOf API.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Check group memberships for a directory object
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.DirectoryObjects
+```
 
 $params = @{
 	SecurityEnabledOnly = $false
 }
 
 Get-MgDirectoryObjectMemberGroup -DirectoryObjectId $directoryObjectId -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the Get-MgGroupMemberGroup Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Check group memberships for the signed-in user
-
-```powershell
 Import-Module Microsoft.Graph.Users.Actions
+```
 
 $params = @{
 	SecurityEnabledOnly = $true
@@ -82,11 +73,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Get-MgUserMemberGroup -UserId $userId -BodyParameter $params
-```
-This example shows how to use the Get-MgGroupMemberGroup Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -256,8 +242,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
-[Get-MgBetaGroupMemberGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmembergroup](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmembergroup)
-
 

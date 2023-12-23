@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemchild
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Get-MgDriveItemChild
@@ -13,9 +12,6 @@ Collection containing Item objects for the immediate children of Item.
 Only items representing folders have children.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDriveItemChild](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemChild?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -45,28 +41,20 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Files
+```
 
 Get-MgDriveItemChild -DriveId $driveId -DriveItemId $driveItemId
 
+### EXAMPLE 2
 ```
-This example shows how to use the Get-MgDriveItemChild Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
-
 Import-Module Microsoft.Graph.Files
+```
 
 Get-MgDriveItemChild -DriveId $driveId -DriveItemId $driveItemId
-
-```
-This example shows how to use the Get-MgDriveItemChild Cmdlet.
-
 
 ## PARAMETERS
 
@@ -324,8 +312,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaDriveItemChild](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemChild?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemchild](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemchild)
-
 

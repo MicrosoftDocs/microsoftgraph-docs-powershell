@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewhistorydefinition
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # New-MgIdentityGovernanceAccessReviewHistoryDefinition
 
 ## SYNOPSIS
 Create a new accessReviewHistoryDefinition object.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernanceAccessReviewHistoryDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceAccessReviewHistoryDefinition?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -35,13 +30,13 @@ New-MgIdentityGovernanceAccessReviewHistoryDefinition
 
 ## DESCRIPTION
 Create a new accessReviewHistoryDefinition object.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.Governance
+```
 
 $params = @{
 	displayName = "Last quarter's group reviews April 2021"
@@ -52,8 +47,8 @@ $params = @{
 		"notReviewed"
 		"notNotified"
 	)
-	reviewHistoryPeriodStartDateTime = [System.DateTime]::Parse("2021-01-01T00:00:00Z")
-	reviewHistoryPeriodEndDateTime = [System.DateTime]::Parse("2021-04-30T23:59:59Z")
+	reviewHistoryPeriodStartDateTime = \[System.DateTime\]::Parse("2021-01-01T00:00:00Z")
+	reviewHistoryPeriodEndDateTime = \[System.DateTime\]::Parse("2021-04-30T23:59:59Z")
 	scopes = @(
 		@{
 			"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
@@ -71,11 +66,6 @@ $params = @{
 }
 
 New-MgIdentityGovernanceAccessReviewHistoryDefinition -BodyParameter $params
-```
-This example shows how to use the New-MgIdentityGovernanceAccessReviewHistoryDefinition Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -486,7 +476,6 @@ Note: Only years, months, and days ISO 8601 properties are supported.
 Required.
 
 ## RELATED LINKS
-[New-MgBetaIdentityGovernanceAccessReviewHistoryDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceAccessReviewHistoryDefinition?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewhistorydefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewhistorydefinition)
 

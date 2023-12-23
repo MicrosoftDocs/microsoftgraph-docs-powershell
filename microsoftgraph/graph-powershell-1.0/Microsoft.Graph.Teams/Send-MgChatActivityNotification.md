@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mgchatactivitynotification
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Send-MgChatActivityNotification
@@ -11,10 +10,6 @@ ms.prod: microsoft-teams
 ## SYNOPSIS
 Send an activity feed notification in scope of a chat.
 For more details about sending notifications and the requirements for doing so, see sending Teams activity notifications.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Send-MgBetaChatActivityNotification](/powershell/module/Microsoft.Graph.Beta.Teams/Send-MgBetaChatActivityNotification?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -51,14 +46,13 @@ Send-MgChatActivityNotification -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Send an activity feed notification in scope of a chat.
 For more details about sending notifications and the requirements for doing so, see sending Teams activity notifications.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Notify a user about a task created in a chat
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	topic = @{
@@ -83,14 +77,10 @@ $params = @{
 
 Send-MgChatActivityNotification -ChatId $chatId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will notify a user about a task created in a chat
-
-### Example 2: Notify a user about an approval needed in a chat message
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	topic = @{
@@ -115,14 +105,10 @@ $params = @{
 
 Send-MgChatActivityNotification -ChatId $chatId -BodyParameter $params
 
+### EXAMPLE 3
 ```
-This example will notify a user about an approval needed in a chat message
-
-### Example 3: Notify a user about an approval needed in a chat message using user principal name
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	topic = @{
@@ -147,14 +133,10 @@ $params = @{
 
 Send-MgChatActivityNotification -ChatId $chatId -BodyParameter $params
 
+### EXAMPLE 4
 ```
-This example will notify a user about an approval needed in a chat message using user principal name
-
-### Example 4: Notify a user about an event in relation to a chat
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	topic = @{
@@ -180,14 +162,10 @@ $params = @{
 
 Send-MgChatActivityNotification -ChatId $chatId -BodyParameter $params
 
+### EXAMPLE 5
 ```
-This example will notify a user about an event in relation to a chat
-
-### Example 5: Notify the chat members about a task created in a chat
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	topic = @{
@@ -211,10 +189,6 @@ $params = @{
 }
 
 Send-MgChatActivityNotification -ChatId $chatId -BodyParameter $params
-
-```
-This example will notify the chat members about a task created in a chat
-
 
 ## PARAMETERS
 
@@ -510,7 +484,6 @@ If the value is text, this must be a plain text value.
 Optional when source is entityUrl; required when source is text.
 
 ## RELATED LINKS
-[Send-MgBetaChatActivityNotification](/powershell/module/Microsoft.Graph.Beta.Teams/Send-MgBetaChatActivityNotification?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mgchatactivitynotification](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mgchatactivitynotification)
 

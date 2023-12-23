@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitetermstoresetterm
 schema: 2.0.0
-ms.prod: Sharepoint
 ---
 
 # Remove-MgBetaSiteTermStoreSetTerm
 
 ## SYNOPSIS
 Delete a term object.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgSiteTermStoreSetTerm](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteTermStoreSetTerm?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,20 +26,15 @@ Remove-MgBetaSiteTermStoreSetTerm -InputObject <ISitesIdentity> [-IfMatch <Strin
 
 ## DESCRIPTION
 Delete a term object.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Sites
+```
 
 Remove-MgBetaSiteTermStoreSetTerm -SiteId $siteId -SetId $setId -TermId $termId
-```
-This example shows how to use the Remove-MgBetaSiteTermStoreSetTerm Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -236,8 +226,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgSiteTermStoreSetTerm](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteTermStoreSetTerm?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitetermstoresetterm](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitetermstoresetterm)
-
 

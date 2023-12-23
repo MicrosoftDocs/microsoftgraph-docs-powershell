@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/confirm-mgbetaauditlogsignincompromised
 schema: 2.0.0
-ms.prod: identity-and-access-reports
 ---
 
 # Confirm-MgBetaAuditLogSignInCompromised
@@ -13,7 +12,6 @@ Allow admins to mark an event in the Microsoft Entra sign-in logs as risky.
 Events marked as risky by an admin are immediately flagged as high risk in Microsoft Entra ID Protection, overriding previous risk states.
 Admins can confirm that events flagged as risky by Microsoft Entra ID Protection are in fact risky.
 For details about investigating Identity Protection risks, see How to investigate risk.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -35,11 +33,11 @@ Allow admins to mark an event in the Microsoft Entra sign-in logs as risky.
 Events marked as risky by an admin are immediately flagged as high risk in Microsoft Entra ID Protection, overriding previous risk states.
 Admins can confirm that events flagged as risky by Microsoft Entra ID Protection are in fact risky.
 For details about investigating Identity Protection risks, see How to investigate risk.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Confirm-MgBetaAuditLogSignInCompromised Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Reports
 $params = @{
 	RequestIds = @(
@@ -50,8 +48,6 @@ $params = @{
 }
 Confirm-MgBetaAuditLogSignInCompromised -BodyParameter $params
 ```
-This example shows how to use the Confirm-MgBetaAuditLogSignInCompromised Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -169,5 +165,4 @@ BODYPARAMETER \<IPathsKfhb9KAuditlogsSigninsMicrosoftGraphConfirmcompromisedPost
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/confirm-mgbetaauditlogsignincompromised](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/confirm-mgbetaauditlogsignincompromised)
-
 

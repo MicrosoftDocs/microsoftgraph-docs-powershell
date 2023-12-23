@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationextensionproperty
 schema: 2.0.0
-ms.prod: extensions
 ---
 
 # New-MgApplicationExtensionProperty
 
 ## SYNOPSIS
 Create a new directory extension definition, represented by an extensionProperty object.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationExtensionProperty?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,16 +42,13 @@ New-MgApplicationExtensionProperty -InputObject <IApplicationsIdentity>
 
 ## DESCRIPTION
 Create a new directory extension definition, represented by an extensionProperty object.
-This API is available in the following national cloud deployments.
-
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-post-extensionproperty-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Applications
+```
 
 $params = @{
 	name = "jobGroup"
@@ -68,10 +60,6 @@ $params = @{
 }
 
 New-MgApplicationExtensionProperty -ApplicationId $applicationId -BodyParameter $params
-
-```
-This example shows how to use the New-MgApplicationExtensionProperty Cmdlet.
-
 
 ## PARAMETERS
 
@@ -205,7 +193,10 @@ Accept wildcard characters: False
 ```
 
 ### -IsMultiValued
-.
+Defines the directory extension as a multi-valued property.
+When true, the directory extension property can store a collection of objects of the dataType; for example, a collection of integers.
+The default value is false.
+Supports $filter (eq).
 
 ```yaml
 Type: SwitchParameter
@@ -329,7 +320,10 @@ Following values are supported.
 Not nullable.
 Binary - 256 bytes maximumBooleanDateTime - Must be specified in ISO 8601 format.
 Will be stored in UTC.Integer - 32-bit value.LargeInteger - 64-bit value.String - 256 characters maximum
-  \[IsMultiValued \<Boolean?\>\]: 
+  \[IsMultiValued \<Boolean?\>\]: Defines the directory extension as a multi-valued property.
+When true, the directory extension property can store a collection of objects of the dataType; for example, a collection of integers.
+The default value is false.
+Supports $filter (eq).
   \[IsSyncedFromOnPremises \<Boolean?\>\]: Indicates if this extension property was synced from on-premises active directory using Microsoft Entra Connect.
 Read-only.
   \[Name \<String\>\]: Name of the extension property.
@@ -364,9 +358,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationExtensionProperty?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationextensionproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationextensionproperty)
-
-
 

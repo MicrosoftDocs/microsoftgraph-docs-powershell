@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgcalendargroupcalendar
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function allowedCalendarSharingRoles
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaCalendarGroupCalendar](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaCalendarGroupCalendar?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Invoke-MgCalendarGroupCalendar -InputObject <IGroupsIdentity> [-Count] [-Filter 
 
 ## DESCRIPTION
 Invoke function allowedCalendarSharingRoles
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -206,9 +219,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
-[Invoke-MgBetaCalendarGroupCalendar](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaCalendarGroupCalendar?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgcalendargroupcalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgcalendargroupcalendar)
-
-
 

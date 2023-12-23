@@ -1,20 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Notes-help.xml
 Module Name: Microsoft.Graph.Beta.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetauseronenotenotebook
 schema: 2.0.0
-ms.prod: onenote
-ms.prod: onenote
 ---
 
 # Get-MgBetaUserOnenoteNotebook
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a notebook object.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserOnenoteNotebook](/powershell/module/Microsoft.Graph.Notes/Get-MgUserOnenoteNotebook?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -39,21 +33,16 @@ Get-MgBetaUserOnenoteNotebook -InputObject <INotesIdentity> [-ExpandProperty <St
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a notebook object.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Notes
+```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOnenoteNotebook -UserId $userId
-
-```
-This example shows how to use the Get-MgBetaUserOnenoteNotebook Cmdlet.
-
 
 ## PARAMETERS
 
@@ -281,8 +270,6 @@ INPUTOBJECT \<INotesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserOnenoteNotebook](/powershell/module/Microsoft.Graph.Notes/Get-MgUserOnenoteNotebook?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetauseronenotenotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetauseronenotenotebook)
-
 

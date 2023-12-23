@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserteamworkassociatedteam
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The list of associatedTeamInfo objects that a user is associated with.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserTeamworkAssociatedTeam](/powershell/module/Microsoft.Graph.Teams/Get-MgUserTeamworkAssociatedTeam?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -50,18 +47,14 @@ Get-MgBetaUserTeamworkAssociatedTeam -InputObject <ITeamsIdentity> [-ExpandPrope
 The list of associatedTeamInfo objects that a user is associated with.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserTeamworkAssociatedTeam -UserId $userId
-
-```
-This example shows how to use the Get-MgBetaUserTeamworkAssociatedTeam Cmdlet.
-
 
 ## PARAMETERS
 
@@ -286,6 +279,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
   \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
   \[ConversationMemberId \<String\>\]: The unique identifier of conversationMember
+  \[DayNoteId \<String\>\]: The unique identifier of dayNote
   \[DeletedChatId \<String\>\]: The unique identifier of deletedChat
   \[DeletedTeamId \<String\>\]: The unique identifier of deletedTeam
   \[GroupId \<String\>\]: The unique identifier of group
@@ -319,8 +313,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgUserTeamworkAssociatedTeam](/powershell/module/Microsoft.Graph.Teams/Get-MgUserTeamworkAssociatedTeam?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserteamworkassociatedteam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserteamworkassociatedteam)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserphoto
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 The user's profile photo.
 Read-only.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserPhoto](/powershell/module/Microsoft.Graph.Users/Get-MgUserPhoto?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,17 +44,15 @@ The user's profile photo.
 Read-only.
 
 ## EXAMPLES
-### Example 1: Get a user's photo properties
 
-```powershell
+### EXAMPLE 1
+```
 Get-MgBetaUserPhoto -UserId '3bb40cd7-03fe-40b7-8a1c-a14fdf0ab5fe'
+```
 
 Id      Height Width
 --      ------ -----
 240X240 240    240
-```
-
-This example retrieves the profile photo properties for the specified user.
 
 ## PARAMETERS
 
@@ -268,9 +263,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserPhoto](/powershell/module/Microsoft.Graph.Users/Get-MgUserPhoto?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserphoto](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserphoto)
-
-
 

@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamscheduleopenshift
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Update-MgTeamScheduleOpenShift
 
 ## SYNOPSIS
 Update the properties of an openShift object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamScheduleOpenShift?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -48,10 +44,11 @@ Update-MgTeamScheduleOpenShift -InputObject <ITeamsIdentity> -BodyParameter <IMi
 Update the properties of an openShift object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	schedulingGroupId = "TAG_228940ed-ff84-4e25-b129-1b395cf78be0"
@@ -59,14 +56,14 @@ $params = @{
 		notes = "Inventory Management"
 		openSlotCount = 5
 		displayName = "Field shift"
-		startDateTime = [System.DateTime]::Parse("2018-10-04T00:58:45.340Z")
-		endDateTime = [System.DateTime]::Parse("2018-10-04T09:50:45.332Z")
+		startDateTime = \[System.DateTime\]::Parse("2018-10-04T00:58:45.340Z")
+		endDateTime = \[System.DateTime\]::Parse("2018-10-04T09:50:45.332Z")
 		theme = "white"
 		activities = @(
 			@{
 				isPaid = $true
-				startDateTime = [System.DateTime]::Parse("2018-10-04T00:58:45.340Z")
-				endDateTime = [System.DateTime]::Parse("2018-10-04T01:58:45.340Z")
+				startDateTime = \[System.DateTime\]::Parse("2018-10-04T00:58:45.340Z")
+				endDateTime = \[System.DateTime\]::Parse("2018-10-04T01:58:45.340Z")
 				code = ""
 				displayName = "Lunch"
 			}
@@ -76,11 +73,6 @@ $params = @{
 }
 
 Update-MgTeamScheduleOpenShift -TeamId $teamId -OpenShiftId $openShiftId -BodyParameter $params
-```
-This example shows how to use the Update-MgTeamScheduleOpenShift Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -430,8 +422,6 @@ Required.
   \[OpenSlotCount \<Int32?\>\]: Count of the number of slots for the given open shift.
 
 ## RELATED LINKS
-[Update-MgBetaTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamScheduleOpenShift?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamscheduleopenshift](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamscheduleopenshift)
-
 

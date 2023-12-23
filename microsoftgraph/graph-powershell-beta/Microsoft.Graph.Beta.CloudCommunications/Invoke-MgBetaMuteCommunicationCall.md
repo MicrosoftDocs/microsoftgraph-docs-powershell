@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetamutecommunicationcall
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Invoke-MgBetaMuteCommunicationCall
@@ -11,10 +10,7 @@ ms.prod: cloud-communications
 ## SYNOPSIS
 Allows the application to mute itself.
 This is a server mute, meaning that the server will drop all audio packets for this participant, even if the participant continues to stream audio.
-For more details about how to handle mute operations, see muteParticipantOperation This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgMuteCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgMuteCommunicationCall?view=graph-powershell-1.0)
+For more details about how to handle mute operations, see muteParticipantOperation
 
 ## SYNTAX
 
@@ -47,24 +43,20 @@ Invoke-MgBetaMuteCommunicationCall -InputObject <ICloudCommunicationsIdentity>
 ## DESCRIPTION
 Allows the application to mute itself.
 This is a server mute, meaning that the server will drop all audio packets for this participant, even if the participant continues to stream audio.
-For more details about how to handle mute operations, see muteParticipantOperation This API is available in the following national cloud deployments.
+For more details about how to handle mute operations, see muteParticipantOperation
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	clientContext = "clientContext-value"
 }
 
 Invoke-MgBetaMuteCommunicationCall -CallId $callId -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgBetaMuteCommunicationCall Cmdlet.
-
 
 ## PARAMETERS
 
@@ -217,8 +209,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgMuteCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgMuteCommunicationCall?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetamutecommunicationcall](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetamutecommunicationcall)
-
 

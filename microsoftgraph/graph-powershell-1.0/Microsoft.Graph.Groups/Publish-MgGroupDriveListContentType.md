@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/publish-mggroupdrivelistcontenttype
@@ -8,11 +8,7 @@ schema: 2.0.0
 # Publish-MgGroupDriveListContentType
 
 ## SYNOPSIS
-Publishes a contentType\]\[\] present in the content type hub site.
-This API is available in the following \[national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Publish-MgBetaGroupDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Groups/Publish-MgBetaGroupDriveListContentType?view=graph-powershell-beta)
+Publishes a \[contentType\]\[\] present in the content type hub site.
 
 ## SYNTAX
 
@@ -29,8 +25,23 @@ Publish-MgGroupDriveListContentType -InputObject <IGroupsIdentity> [-PassThru] [
 ```
 
 ## DESCRIPTION
-Publishes a contentType\]\[\] present in the content type hub site.
-This API is available in the following \[national cloud deployments.
+Publishes a \[contentType\]\[\] present in the content type hub site.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -194,9 +205,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
-[Publish-MgBetaGroupDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Groups/Publish-MgBetaGroupDriveListContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/publish-mggroupdrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/publish-mggroupdrivelistcontenttype)
-
-
 

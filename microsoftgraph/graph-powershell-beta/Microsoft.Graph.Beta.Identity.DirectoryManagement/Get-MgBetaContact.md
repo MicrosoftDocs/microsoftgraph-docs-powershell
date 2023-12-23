@@ -1,20 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontact
 schema: 2.0.0
-ms.prod: identity-and-sign-in
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaContact
 
 ## SYNOPSIS
 Get the properties and relationships of an organizational contact object.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgContact](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContact?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -39,21 +33,18 @@ Get-MgBetaContact -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandPr
 
 ## DESCRIPTION
 Get the properties and relationships of an organizational contact object.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Retrieve contact objects in the directory 
 
-```powershell
+### EXAMPLE 1
+```
 Get-MgBetaContact | Format-List Id, DisplayName, Mail, MailNickname
+```
 
 Id           : 5d58402b-3cb2-4b17-b913-299a72c84204
 DisplayName  : Bob Kelly (TAILSPIN)
 Mail         : bobk@tailspintoys.com
 MailNickname : BobKTAILSPIN
-```
-
-This example retrieves all contact objects in the directory.
 
 ## PARAMETERS
 
@@ -316,8 +307,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgContact](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContact?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontact)
-
 

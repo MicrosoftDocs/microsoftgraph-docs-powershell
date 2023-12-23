@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetaparseserviceprincipalsynchronizationtemplateschemaexpression
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Invoke-MgBetaParseServicePrincipalSynchronizationTemplateSchemaExpression
@@ -11,10 +10,6 @@ ms.prod: applications
 ## SYNOPSIS
 Parse a given string expression into an attributeMappingSource object.
 For more information about expressions, see Writing Expressions for Attribute Mappings in Microsoft Entra ID.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgParseServicePrincipalSynchronizationTemplateSchemaExpression](/powershell/module/Microsoft.Graph.Applications/Invoke-MgParseServicePrincipalSynchronizationTemplateSchemaExpression?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -52,7 +47,22 @@ Invoke-MgBetaParseServicePrincipalSynchronizationTemplateSchemaExpression -Input
 ## DESCRIPTION
 Parse a given string expression into an attributeMappingSource object.
 For more information about expressions, see Writing Expressions for Attribute Mappings in Microsoft Entra ID.
-This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -389,10 +399,6 @@ Not nullable.
     \[Key \<String\>\]: Key.
 
 ## RELATED LINKS
-[Invoke-MgParseServicePrincipalSynchronizationTemplateSchemaExpression](/powershell/module/Microsoft.Graph.Applications/Invoke-MgParseServicePrincipalSynchronizationTemplateSchemaExpression?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetaparseserviceprincipalsynchronizationtemplateschemaexpression](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetaparseserviceprincipalsynchronizationtemplateschemaexpression)
-
-
-
 

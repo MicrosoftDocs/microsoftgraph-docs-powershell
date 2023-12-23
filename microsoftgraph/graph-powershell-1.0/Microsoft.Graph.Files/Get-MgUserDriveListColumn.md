@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivelistcolumn
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Get-MgUserDriveListColumn
 
 ## SYNOPSIS
 The collection of field definitions for this list.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveListColumn?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -37,6 +33,22 @@ Get-MgUserDriveListColumn -InputObject <IFilesIdentity> [-ExpandProperty <String
 
 ## DESCRIPTION
 The collection of field definitions for this list.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -294,9 +306,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveListColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivelistcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivelistcolumn)
-
-
 

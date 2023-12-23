@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggrouplifecyclepolicy
@@ -9,10 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete a groupLifecyclePolicy.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupLifecyclePolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -42,20 +38,15 @@ Remove-MgGroupLifecyclePolicy -InputObject <IGroupsIdentity> [-IfMatch <String>]
 
 ## DESCRIPTION
 Delete a groupLifecyclePolicy.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Groups
+```
 
 Remove-MgGroupLifecyclePolicy -GroupLifecyclePolicyId $groupLifecyclePolicyId
-```
-This example shows how to use the Remove-MgGroupLifecyclePolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -219,8 +210,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
-[Remove-MgBetaGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupLifecyclePolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggrouplifecyclepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggrouplifecyclepolicy)
-
 

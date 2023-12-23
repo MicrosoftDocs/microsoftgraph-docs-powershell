@@ -1,16 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetauseronlinemeetingregistration
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Update-MgBetaUserOnlineMeetingRegistration
 
 ## SYNOPSIS
 Update the details of a meetingRegistration object assciated with an onlineMeeting on behalf of the organizer.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -50,11 +48,11 @@ Update-MgBetaUserOnlineMeetingRegistration -InputObject <ICloudCommunicationsIde
 
 ## DESCRIPTION
 Update the details of a meetingRegistration object assciated with an onlineMeeting on behalf of the organizer.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaUserOnlineMeetingRegistration Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
 	Subject = "Microsoft Ignite: Day 1"
@@ -74,8 +72,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Update-MgBetaUserOnlineMeetingRegistration -UserId $userId -OnlineMeetingId $onlineMeetingId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaUserOnlineMeetingRegistration Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

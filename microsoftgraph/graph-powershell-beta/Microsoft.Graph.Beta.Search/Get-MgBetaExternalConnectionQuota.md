@@ -1,16 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnectionquota
 schema: 2.0.0
-ms.prod: search
 ---
 
 # Get-MgBetaExternalConnectionQuota
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a connectionQuota object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,23 +26,20 @@ Get-MgBetaExternalConnectionQuota -InputObject <ISearchIdentity> [-ExpandPropert
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a connectionQuota object.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaExternalConnectionQuota Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Search
 Get-MgBetaExternalConnectionQuota -ExternalConnectionId $externalConnectionId
 ```
-This example shows how to use the Get-MgBetaExternalConnectionQuota Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaExternalConnectionQuota Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.Search
 Get-MgBetaExternalConnectionQuota -ExternalConnectionId $externalConnectionId -OutFile $outFileId
 ```
-This example shows how to use the Get-MgBetaExternalConnectionQuota Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -148,5 +143,4 @@ INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnectionquota](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnectionquota)
-
 

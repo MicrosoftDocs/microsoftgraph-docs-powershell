@@ -1,16 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileproject
 schema: 2.0.0
-ms.prod: people
 ---
 
 # New-MgBetaUserProfileProject
 
 ## SYNOPSIS
 Use this API to create a new projectParticipation object in a user's profile.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -53,11 +51,11 @@ New-MgBetaUserProfileProject -InputObject <IPeopleIdentity>
 
 ## DESCRIPTION
 Use this API to create a new projectParticipation object in a user's profile.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaUserProfileProject Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.People
 $params = @{
 	Categories = @(
@@ -84,8 +82,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfileProject -UserId $userId -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaUserProfileProject Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -471,9 +467,10 @@ BODYPARAMETER \<IMicrosoftGraphProjectParticipation\>: projectParticipation
     \[Application \<IMicrosoftGraphIdentity\>\]: identity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     \[Device \<IMicrosoftGraphIdentity\>\]: identity
     \[User \<IMicrosoftGraphIdentity\>\]: identity
   \[CreatedDateTime \<DateTime?\>\]: Provides the dateTimeOffset for when the entity was created.
@@ -512,19 +509,19 @@ Allowed values in the collection are: askMeAbout, ableToMentor, wantsToLearn, wa
   \[Colleagues \<IMicrosoftGraphRelatedPerson\[\]\>\]: Lists people that also worked on the project.
     \[DisplayName \<String\>\]: Name of the person.
     \[Relationship \<String\>\]: personRelationship
-    \[UserId \<String\>\]: 
-    \[UserPrincipalName \<String\>\]: Email address or reference to person within organization.
+    \[UserId \<String\>\]: The user's directory object ID (Microsoft Entra ID or CID).
+    \[UserPrincipalName \<String\>\]: Email address or reference to person within the organization.
   \[Detail \<IMicrosoftGraphPositionDetail\>\]: positionDetail
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[Company \<IMicrosoftGraphCompanyDetail\>\]: companyDetail
     \[Description \<String\>\]: Description of the position in question.
     \[EndMonthYear \<DateTime?\>\]: When the position ended.
     \[JobTitle \<String\>\]: The title held when in that position.
-    \[Layer \<Int32?\>\]: 
-    \[Level \<String\>\]: 
+    \[Layer \<Int32?\>\]: The place where the employee is within the organizational hierarchy.
+    \[Level \<String\>\]: The employee's experience or management level.
     \[Role \<String\>\]: The role the position entailed.
     \[StartMonthYear \<DateTime?\>\]: The start month and year of the position.
-    \[Summary \<String\>\]: Short summary of the position.
+    \[Summary \<String\>\]: summary of the position.
   \[DisplayName \<String\>\]: Contains a friendly name for the project.
   \[Sponsors \<IMicrosoftGraphRelatedPerson\[\]\>\]: The Person or people who sponsored the project.
   \[ThumbnailUrl \<String\>\]: 
@@ -550,17 +547,18 @@ It's a free-format string value, for example, 'United States'.
 COLLEAGUES \<IMicrosoftGraphRelatedPerson\[\]\>: Lists people that also worked on the project.
   \[DisplayName \<String\>\]: Name of the person.
   \[Relationship \<String\>\]: personRelationship
-  \[UserId \<String\>\]: 
-  \[UserPrincipalName \<String\>\]: Email address or reference to person within organization.
+  \[UserId \<String\>\]: The user's directory object ID (Microsoft Entra ID or CID).
+  \[UserPrincipalName \<String\>\]: Email address or reference to person within the organization.
 
 CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[Application \<IMicrosoftGraphIdentity\>\]: identity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-    \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
   \[Device \<IMicrosoftGraphIdentity\>\]: identity
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
@@ -586,11 +584,11 @@ It's a free-format string value, for example, 'United States'.
   \[Description \<String\>\]: Description of the position in question.
   \[EndMonthYear \<DateTime?\>\]: When the position ended.
   \[JobTitle \<String\>\]: The title held when in that position.
-  \[Layer \<Int32?\>\]: 
-  \[Level \<String\>\]: 
+  \[Layer \<Int32?\>\]: The place where the employee is within the organizational hierarchy.
+  \[Level \<String\>\]: The employee's experience or management level.
   \[Role \<String\>\]: The role the position entailed.
   \[StartMonthYear \<DateTime?\>\]: The start month and year of the position.
-  \[Summary \<String\>\]: Short summary of the position.
+  \[Summary \<String\>\]: summary of the position.
 
 INFERENCE \<IMicrosoftGraphInferenceData\>: inferenceData
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -626,9 +624,10 @@ LASTMODIFIEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
   \[Application \<IMicrosoftGraphIdentity\>\]: identity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-    \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
   \[Device \<IMicrosoftGraphIdentity\>\]: identity
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
@@ -639,8 +638,8 @@ SOURCE \<IMicrosoftGraphPersonDataSources\>: personDataSources
 SPONSORS \<IMicrosoftGraphRelatedPerson\[\]\>: The Person or people who sponsored the project.
   \[DisplayName \<String\>\]: Name of the person.
   \[Relationship \<String\>\]: personRelationship
-  \[UserId \<String\>\]: 
-  \[UserPrincipalName \<String\>\]: Email address or reference to person within organization.
+  \[UserId \<String\>\]: The user's directory object ID (Microsoft Entra ID or CID).
+  \[UserPrincipalName \<String\>\]: Email address or reference to person within the organization.
 
 ## RELATED LINKS
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaaccessreviewreviewer
@@ -11,7 +11,6 @@ schema: 2.0.0
 In the Microsoft Entra access reviews feature, update an existing accessReview object to remove a user as a reviewer.
 This operation is only permitted for an access review that isn't yet completed, and only for an access review where the reviewers are explicitly specified.
 This operation isn't permitted for an access review in which users review their own access, and not intended for an access review in which the group owners are assigned as the reviewers.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -31,16 +30,14 @@ Remove-MgBetaAccessReviewReviewer -InputObject <IIdentityGovernanceIdentity> [-I
 In the Microsoft Entra access reviews feature, update an existing accessReview object to remove a user as a reviewer.
 This operation is only permitted for an access review that isn't yet completed, and only for an access review where the reviewers are explicitly specified.
 This operation isn't permitted for an access review in which users review their own access, and not intended for an access review in which the group owners are assigned as the reviewers.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Remove-MgBetaAccessReviewReviewer Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Remove-MgBetaAccessReviewReviewer -AccessReviewId $accessReviewId -AccessReviewReviewerId $accessReviewReviewerId
 ```
-This example shows how to use the Remove-MgBetaAccessReviewReviewer Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -270,5 +267,4 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaaccessreviewreviewer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaaccessreviewreviewer)
-
 

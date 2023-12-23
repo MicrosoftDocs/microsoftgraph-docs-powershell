@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/new-mgreportauthenticationmethoduserregistrationdetail
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to userRegistrationDetails for reports
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaReportAuthenticationMethodUserRegistrationDetail](/powershell/module/Microsoft.Graph.Beta.Reports/New-MgBetaReportAuthenticationMethodUserRegistrationDetail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -33,6 +30,18 @@ New-MgReportAuthenticationMethodUserRegistrationDetail -BodyParameter <IMicrosof
 
 ## DESCRIPTION
 Create new navigation property to userRegistrationDetails for reports
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -234,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### -MethodsRegistered
-Collection of authentication methods registered, such as mobilePhone, email, fido2.
+Collection of authentication methods registered, such as mobilePhone, email, passKeyDeviceBound.
 Supports $filter (any with eq).
 
 ```yaml
@@ -402,7 +411,7 @@ Supports $filter (eq).
   \[LastUpdatedDateTime \<DateTime?\>\]: The date and time (UTC) when the record was last updated.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  \[MethodsRegistered \<String\[\]\>\]: Collection of authentication methods registered, such as mobilePhone, email, fido2.
+  \[MethodsRegistered \<String\[\]\>\]: Collection of authentication methods registered, such as mobilePhone, email, passKeyDeviceBound.
 Supports $filter (any with eq).
   \[SystemPreferredAuthenticationMethods \<String\[\]\>\]: Collection of authentication methods that the system determined to be the most secure authentication methods among the registered methods for second factor authentication.
 Possible values are: push, oath, voiceMobile, voiceAlternateMobile, voiceOffice, sms, none, unknownFutureValue.
@@ -415,9 +424,6 @@ Supports $filter (eq, startsWith) and $orderby.
   \[UserType \<String\>\]: signInUserType
 
 ## RELATED LINKS
-[New-MgBetaReportAuthenticationMethodUserRegistrationDetail](/powershell/module/Microsoft.Graph.Beta.Reports/New-MgBetaReportAuthenticationMethodUserRegistrationDetail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/new-mgreportauthenticationmethoduserregistrationdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/new-mgreportauthenticationmethoduserregistrationdetail)
-
-
 

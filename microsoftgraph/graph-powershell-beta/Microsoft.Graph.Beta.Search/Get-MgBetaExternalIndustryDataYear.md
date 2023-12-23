@@ -1,17 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatayear
 schema: 2.0.0
-ms.prod: industry-data-etl
-ms.prod: industry-data-etl
 ---
 
 # Get-MgBetaExternalIndustryDataYear
 
 ## SYNOPSIS
 Read the properties and relationships of a yearTimePeriodDefinition object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -36,7 +33,18 @@ Get-MgBetaExternalIndustryDataYear -InputObject <ISearchIdentity> [-ExpandProper
 
 ## DESCRIPTION
 Read the properties and relationships of a yearTimePeriodDefinition object.
-This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -261,6 +269,4 @@ INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatayear](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatayear)
-
-
 

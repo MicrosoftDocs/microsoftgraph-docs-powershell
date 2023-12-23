@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasubsite
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Get-MgBetaSubSite
 
 ## SYNOPSIS
 The collection of the sub-sites under this site.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSubSite](/powershell/module/Microsoft.Graph.Sites/Get-MgSubSite?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -39,13 +35,12 @@ Get-MgBetaSubSite -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-P
 The collection of the sub-sites under this site.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaSubSite Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Sites
 Get-MgBetaSubSite -SiteId $siteId
 ```
-This example shows how to use the Get-MgBetaSubSite Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -312,8 +307,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgSubSite](/powershell/module/Microsoft.Graph.Sites/Get-MgSubSite?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasubsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasubsite)
-
 

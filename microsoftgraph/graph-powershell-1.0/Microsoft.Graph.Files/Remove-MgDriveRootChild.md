@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdriverootchild
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Remove-MgDriveRootChild
 
 ## SYNOPSIS
-Remove an item from a bundle\]\[\].
-This API is available in the following \[national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDriveRootChild](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveRootChild?view=graph-powershell-beta)
+Remove an item from a \[bundle\]\[\].
 
 ## SYNTAX
 
@@ -30,8 +25,19 @@ Remove-MgDriveRootChild -InputObject <IFilesIdentity> [-IfMatch <String>] [-Pass
 ```
 
 ## DESCRIPTION
-Remove an item from a bundle\]\[\].
-This API is available in the following \[national cloud deployments.
+Remove an item from a \[bundle\]\[\].
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -184,9 +190,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaDriveRootChild](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveRootChild?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdriverootchild](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdriverootchild)
-
-
 

@@ -1,20 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchattab
 schema: 2.0.0
-ms.prod: microsoft-teams
-ms.prod: microsoft-teams
 ---
 
 # Get-MgChatTab
 
 ## SYNOPSIS
 Retrieve the properties and relationships of the specified tab in a chat.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaChatTab](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatTab?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -39,31 +33,22 @@ Get-MgChatTab -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Prope
 
 ## DESCRIPTION
 Retrieve the properties and relationships of the specified tab in a chat.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: List all the tabs in the chat along with associated Teams app
 
-```powershell
-
-Import-Module Microsoft.Graph.Teams
-
-Get-MgChatTab -ChatId $chatId -ExpandProperty "teamsApp" 
-
+### EXAMPLE 1
 ```
-This example will list all the tabs in the chat along with associated teams app
-
-### Example 2: List all the tabs belonging to a specific app in a chat
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
-
-Get-MgChatTab -ChatId $chatId -ExpandProperty "teamsApp" -Filter "teamsApp/id eq 'com.microsoft.teamspace.tab.web'" 
-
 ```
-This example will list all the tabs belonging to a specific app in a chat
 
+Get-MgChatTab -ChatId $chatId -ExpandProperty "teamsApp"
+
+### EXAMPLE 2
+```
+Import-Module Microsoft.Graph.Teams
+```
+
+Get-MgChatTab -ChatId $chatId -ExpandProperty "teamsApp" -Filter "teamsApp/id eq 'com.microsoft.teamspace.tab.web'"
 
 ## PARAMETERS
 
@@ -314,8 +299,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaChatTab](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatTab?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchattab](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchattab)
-
 

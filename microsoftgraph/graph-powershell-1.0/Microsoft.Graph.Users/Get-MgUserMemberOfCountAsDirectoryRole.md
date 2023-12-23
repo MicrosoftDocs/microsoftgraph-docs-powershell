@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermemberofcountasdirectoryrole
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the number of the resource
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserMemberOfCountAsDirectoryRole](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserMemberOfCountAsDirectoryRole?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,6 +26,18 @@ Get-MgUserMemberOfCountAsDirectoryRole -InputObject <IUsersIdentity> [-Filter <S
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -140,10 +149,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserMemberOfCountAsDirectoryRole](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserMemberOfCountAsDirectoryRole?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermemberofcountasdirectoryrole](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermemberofcountasdirectoryrole)
-
-
-
 

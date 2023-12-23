@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mggroupplannerplan
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # Get-MgGroupPlannerPlan
@@ -12,9 +11,6 @@ ms.prod: planner
 Read-only.
 Nullable.
 Returns the plannerPlans owned by the group.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaGroupPlannerPlan?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -43,17 +39,13 @@ Nullable.
 Returns the plannerPlans owned by the group.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Planner
+```
 
 Get-MgGroupPlannerPlan -GroupId $groupId
-
-```
-This example shows how to use the Get-MgGroupPlannerPlan Cmdlet.
-
 
 ## PARAMETERS
 
@@ -277,8 +269,6 @@ INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaGroupPlannerPlan?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mggroupplannerplan](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mggroupplannerplan)
-
 

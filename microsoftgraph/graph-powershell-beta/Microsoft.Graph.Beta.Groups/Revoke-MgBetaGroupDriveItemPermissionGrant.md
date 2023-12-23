@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/revoke-mgbetagroupdriveitempermissiongrant
@@ -8,8 +8,7 @@ schema: 2.0.0
 # Revoke-MgBetaGroupDriveItemPermissionGrant
 
 ## SYNOPSIS
-Revoke access to a listItem\]\[\] or \[driveItem\]\[\] granted via a sharing link by removing the specified \[recipient\]\[\] from the link.
-This API is available in the following \[national cloud deployments.
+Revoke access to a \[listItem\]\[\] or \[driveItem\]\[\] granted via a sharing link by removing the specified \[recipient\]\[\] from the link.
 
 ## SYNTAX
 
@@ -42,8 +41,23 @@ Revoke-MgBetaGroupDriveItemPermissionGrant -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Revoke access to a listItem\]\[\] or \[driveItem\]\[\] granted via a sharing link by removing the specified \[recipient\]\[\] from the link.
-This API is available in the following \[national cloud deployments.
+Revoke access to a \[listItem\]\[\] or \[driveItem\]\[\] granted via a sharing link by removing the specified \[recipient\]\[\] from the link.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -277,5 +291,4 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/revoke-mgbetagroupdriveitempermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/revoke-mgbetagroupdriveitempermissiongrant)
-
 

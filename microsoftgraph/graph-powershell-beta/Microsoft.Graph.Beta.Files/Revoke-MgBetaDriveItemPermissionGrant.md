@@ -1,16 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/revoke-mgbetadriveitempermissiongrant
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Revoke-MgBetaDriveItemPermissionGrant
 
 ## SYNOPSIS
-Revoke access to a listItem\]\[\] or \[driveItem\]\[\] granted via a sharing link by removing the specified \[recipient\]\[\] from the link.
-This API is available in the following \[national cloud deployments.
+Revoke access to a \[listItem\]\[\] or \[driveItem\]\[\] granted via a sharing link by removing the specified \[recipient\]\[\] from the link.
 
 ## SYNTAX
 
@@ -42,8 +40,23 @@ Revoke-MgBetaDriveItemPermissionGrant -InputObject <IFilesIdentity>
 ```
 
 ## DESCRIPTION
-Revoke access to a listItem\]\[\] or \[driveItem\]\[\] granted via a sharing link by removing the specified \[recipient\]\[\] from the link.
-This API is available in the following \[national cloud deployments.
+Revoke access to a \[listItem\]\[\] or \[driveItem\]\[\] granted via a sharing link by removing the specified \[recipient\]\[\] from the link.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -245,5 +258,4 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/revoke-mgbetadriveitempermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/revoke-mgbetadriveitempermissiongrant)
-
 

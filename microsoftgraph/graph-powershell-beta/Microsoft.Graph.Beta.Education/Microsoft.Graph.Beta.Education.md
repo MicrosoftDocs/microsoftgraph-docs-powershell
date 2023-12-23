@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Education
 Module Guid: b6135e28-227c-4153-b124-1de938936ef7
 Download Help Link: {{ Update Download Link }}
@@ -456,6 +456,15 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Invoke-MgBetaDeactivateEducationUserAssignment](Invoke-MgBetaDeactivateEducationUserAssignment.md)
+{{ Fill in the Description }}
+
+### [Invoke-MgBetaExcuseEducationClassAssignmentSubmission](Invoke-MgBetaExcuseEducationClassAssignmentSubmission.md)
+{{ Fill in the Description }}
+
+### [Invoke-MgBetaExcuseEducationMeAssignmentSubmission](Invoke-MgBetaExcuseEducationMeAssignmentSubmission.md)
+{{ Fill in the Description }}
+
+### [Invoke-MgBetaExcuseEducationUserAssignmentSubmission](Invoke-MgBetaExcuseEducationUserAssignmentSubmission.md)
 {{ Fill in the Description }}
 
 ### [Invoke-MgBetaPinEducationClassModule](Invoke-MgBetaPinEducationClassModule.md)
@@ -1027,5 +1036,4 @@ Locale: en-US
 
 ### [Update-MgBetaEducationUserRubric](Update-MgBetaEducationUserRubric.md)
 {{ Fill in the Description }}
-
 

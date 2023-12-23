@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccess
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property conditionalAccess in identity
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgIdentityConditionalAccess](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityConditionalAccess?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -33,6 +30,18 @@ Update-MgBetaIdentityConditionalAccess -BodyParameter <IMicrosoftGraphConditiona
 
 ## DESCRIPTION
 Update the navigation property conditionalAccess in identity
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -797,8 +806,6 @@ Possible values: AND, OR.
   \[Scenarios \<String\>\]: templateScenarios
 
 ## RELATED LINKS
-[Update-MgIdentityConditionalAccess](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityConditionalAccess?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccess](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccess)
-
 

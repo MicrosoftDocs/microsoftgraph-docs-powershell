@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DirectoryObjects-help.xml
 Module Name: Microsoft.Graph.Beta.DirectoryObjects
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/new-mgbetadirectoryobject
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Add new entity to directoryObjects
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDirectoryObject](/powershell/module/Microsoft.Graph.DirectoryObjects/New-MgDirectoryObject?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ New-MgBetaDirectoryObject -BodyParameter <IMicrosoftGraphDirectoryObject> [-What
 
 ## DESCRIPTION
 Add new entity to directoryObjects
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -149,9 +162,6 @@ Read-only.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
-[New-MgDirectoryObject](/powershell/module/Microsoft.Graph.DirectoryObjects/New-MgDirectoryObject?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/new-mgbetadirectoryobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/new-mgbetadirectoryobject)
-
-
 

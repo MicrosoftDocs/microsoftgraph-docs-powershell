@@ -1,17 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteinformationprotectionpolicylabel
 schema: 2.0.0
-ms.prod: security
-ms.prod: security
 ---
 
 # Get-MgBetaGroupSiteInformationProtectionPolicyLabel
 
 ## SYNOPSIS
 Retrieve the properties and relationships of an informationProtectionLabel object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -36,7 +33,18 @@ Get-MgBetaGroupSiteInformationProtectionPolicyLabel -InputObject <ISitesIdentity
 
 ## DESCRIPTION
 Retrieve the properties and relationships of an informationProtectionLabel object.
-This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -320,6 +328,4 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteinformationprotectionpolicylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteinformationprotectionpolicylabel)
-
-
 

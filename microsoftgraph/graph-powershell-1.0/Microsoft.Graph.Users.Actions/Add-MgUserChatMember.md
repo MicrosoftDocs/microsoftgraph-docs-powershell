@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/add-mguserchatmember
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Add-MgUserChatMember
@@ -11,10 +10,6 @@ ms.prod: microsoft-teams
 ## SYNOPSIS
 Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Add-MgBetaUserChatMember](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Add-MgBetaUserChatMember?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,9 +42,18 @@ Add-MgUserChatMember -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -251,7 +255,6 @@ An Out-of-tenant external member is assigned the owner role.
 This property is settable only for members of a chat.
 
 ## RELATED LINKS
-[Add-MgBetaUserChatMember](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Add-MgBetaUserChatMember?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/add-mguserchatmember](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/add-mguserchatmember)
 

@@ -1,20 +1,16 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mguserdefaultcalendar
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Get-MgUserDefaultCalendar
 
 ## SYNOPSIS
 Get the properties and relationships of a calendar object.
-The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
-There are two scenarios where an app can get another user's calendar: This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserDefaultCalendar](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserDefaultCalendar?view=graph-powershell-beta)
+The calendar can be one for a user, \nor the default calendar of a Microsoft 365 group.
+There are two scenarios where an app can get another user's calendar:
 
 ## SYNTAX
 
@@ -30,22 +26,18 @@ Get-MgUserDefaultCalendar -InputObject <ICalendarIdentity> [-Property <String[]>
 
 ## DESCRIPTION
 Get the properties and relationships of a calendar object.
-The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
-There are two scenarios where an app can get another user's calendar: This API is available in the following national cloud deployments.
+The calendar can be one for a user, \nor the default calendar of a Microsoft 365 group.
+There are two scenarios where an app can get another user's calendar:
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Calendar
+```
 
 # A UPN can also be used as -UserId.
 Get-MgUserDefaultCalendar -UserId $userId
-```
-This example shows how to use the Get-MgUserDefaultCalendar Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -120,11 +112,10 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[ExtensionId \<String\>\]: The unique identifier of extension
   \[GroupId \<String\>\]: The unique identifier of group
   \[PlaceId \<String\>\]: The unique identifier of place
+  \[RoomId \<String\>\]: The unique identifier of room
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserDefaultCalendar](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserDefaultCalendar?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mguserdefaultcalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mguserdefaultcalendar)
-
 

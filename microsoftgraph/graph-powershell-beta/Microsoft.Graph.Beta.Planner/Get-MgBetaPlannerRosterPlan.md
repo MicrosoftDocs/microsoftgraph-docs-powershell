@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerrosterplan
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # Get-MgBetaPlannerRosterPlan
@@ -36,13 +35,12 @@ Get-MgBetaPlannerRosterPlan -InputObject <IPlannerIdentity> [-ExpandProperty <St
 Retrieves the plans contained by the plannerRoster.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaPlannerRosterPlan Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Planner
 Get-MgBetaPlannerRosterPlan -PlannerRosterId $plannerRosterId
 ```
-This example shows how to use the Get-MgBetaPlannerRosterPlan Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -271,5 +269,4 @@ INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerrosterplan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerrosterplan)
-
 

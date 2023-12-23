@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/export-mguserpersonaldata
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Export-MgUserPersonalData
@@ -12,10 +11,6 @@ ms.prod: users
 Submit a data policy operation request from a company administrator or an application to export an organizational user's data.
 This data includes the user's data stored in OneDrive and their activity reports.
 For more guidance about exporting data while complying with regulations, see Data Subject Requests and the GDPR and CCPA.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Export-MgBetaUserPersonalData](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Export-MgBetaUserPersonalData?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,19 +44,17 @@ Export-MgUserPersonalData -InputObject <IUsersActionsIdentity>
 Submit a data policy operation request from a company administrator or an application to export an organizational user's data.
 This data includes the user's data stored in OneDrive and their activity reports.
 For more guidance about exporting data while complying with regulations, see Data Subject Requests and the GDPR and CCPA.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Export-MgUserPersonalData Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
 	StorageLocation = "storageLocation-value"
 }
 Export-MgUserPersonalData -UserId $userId -BodyParameter $params
 ```
-This example shows how to use the Export-MgUserPersonalData Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -240,8 +233,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Export-MgBetaUserPersonalData](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Export-MgBetaUserPersonalData?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/export-mguserpersonaldata](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/export-mguserpersonaldata)
-
 

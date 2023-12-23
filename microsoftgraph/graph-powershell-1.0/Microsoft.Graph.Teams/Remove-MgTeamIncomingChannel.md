@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamincomingchannel
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Remove-MgTeamIncomingChannel
 
 ## SYNOPSIS
 Remove an incoming channel (a channel shared with a team) from a team.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaTeamIncomingChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamIncomingChannel?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,6 +26,18 @@ Remove-MgTeamIncomingChannel -InputObject <ITeamsIdentity> [-IfMatch <String>] [
 
 ## DESCRIPTION
 Remove an incoming channel (a channel shared with a team) from a team.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -190,9 +198,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgBetaTeamIncomingChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamIncomingChannel?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamincomingchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamincomingchannel)
-
-
 

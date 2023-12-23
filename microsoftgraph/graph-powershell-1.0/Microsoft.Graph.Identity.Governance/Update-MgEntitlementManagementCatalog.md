@@ -1,16 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementcatalog
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Update-MgEntitlementManagementCatalog
 
 ## SYNOPSIS
 Update an existing accessPackageCatalog object to change one or more of its properties, such as the display name or description.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -52,24 +50,19 @@ Update-MgEntitlementManagementCatalog -InputObject <IIdentityGovernanceIdentity>
 
 ## DESCRIPTION
 Update an existing accessPackageCatalog object to change one or more of its properties, such as the display name or description.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.Governance
+```
 
 $params = @{
 	displayName = "Catalog One"
 }
 
 Update-MgEntitlementManagementCatalog -AccessPackageCatalogId $accessPackageCatalogId -BodyParameter $params
-```
-This example shows how to use the Update-MgEntitlementManagementCatalog Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

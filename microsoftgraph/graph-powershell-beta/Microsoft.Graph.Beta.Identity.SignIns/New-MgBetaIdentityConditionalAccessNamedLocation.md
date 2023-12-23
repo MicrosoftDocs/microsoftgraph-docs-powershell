@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessnamedlocation
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # New-MgBetaIdentityConditionalAccessNamedLocation
@@ -11,10 +10,6 @@ ms.prod: identity-and-sign-in
 ## SYNOPSIS
 Create a new namedLocation object.
 Named locations can be either ipNamedLocation or countryNamedLocation objects.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityConditionalAccessNamedLocation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34,13 +29,13 @@ New-MgBetaIdentityConditionalAccessNamedLocation -BodyParameter <IMicrosoftGraph
 ## DESCRIPTION
 Create a new namedLocation object.
 Named locations can be either ipNamedLocation or countryNamedLocation objects.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Create a country named location
 
-```powershell
+### EXAMPLE 1
+```
 Connect-MgBetaGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
+```
 
 $params = @{
 "@odata.type" = "#microsoft.graph.countryNamedLocation"
@@ -57,14 +52,11 @@ New-MgBetaIdentityConditionalAccessNamedLocation -BodyParameter $params
 Id                                   CreatedDateTime      DisplayName                                       ModifiedDateTime
 --                                   ---------------      -----------                                       ----------------
 1f0fd623-bf8f-4003-9627-32a68c3cdcc1 6/13/2022 8:27:35 AM Named location with unknown countries and regions 6/13/2022 8:27:35 AM
+
+### EXAMPLE 2
 ```
-
-This example creates a country named location.
-
-### Example 2: Create an ip named location
-
-```powershell
 Connect-MgBetaGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
+```
 
 $params = @{
 "@odata.type" = "#microsoft.graph.ipNamedLocation"
@@ -87,9 +79,6 @@ New-MgBetaIdentityConditionalAccessNamedLocation -BodyParameter $params
 Id                                   CreatedDateTime      DisplayName                 ModifiedDateTime
 --                                   ---------------      -----------                 ----------------
 0824dbaf-6277-4db0-8112-b29fd356f2c4 6/13/2022 8:41:38 AM Untrusted IP named location 6/13/2022 8:41:38 AM
-```
-
-This example creates an Ip named location.
 
 ## PARAMETERS
 
@@ -248,8 +237,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
 ## RELATED LINKS
-[New-MgIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityConditionalAccessNamedLocation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessnamedlocation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessnamedlocation)
-
 

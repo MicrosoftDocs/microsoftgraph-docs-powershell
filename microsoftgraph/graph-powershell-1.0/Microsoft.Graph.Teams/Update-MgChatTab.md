@@ -1,20 +1,15 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgchattab
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Update-MgChatTab
 
 ## SYNOPSIS
 Update the properties of the specified tab in a chat.
-This can be used to configure the content of the tab.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaChatTab](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChatTab?view=graph-powershell-beta)
+\nThis can be used to configure the content of the tab.
 
 ## SYNTAX
 
@@ -46,25 +41,20 @@ Update-MgChatTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTe
 
 ## DESCRIPTION
 Update the properties of the specified tab in a chat.
-This can be used to configure the content of the tab.
-This API is available in the following national cloud deployments.
+\nThis can be used to configure the content of the tab.
 
 ## EXAMPLES
-### Example 1: Update the name of a tab in a chat
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	displayName = "My Contoso Tab - updated again"
 }
 
 Update-MgChatTab -ChatId $chatId -TeamsTabId $teamsTabId -BodyParameter $params
-
-```
-This example will update the name of a tab in a chat
-
 
 ## PARAMETERS
 
@@ -406,8 +396,6 @@ For example, if a user changes their display name, the API might show the new va
   \[ExternalId \<String\>\]: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
 ## RELATED LINKS
-[Update-MgBetaChatTab](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChatTab?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgchattab](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgchattab)
-
 

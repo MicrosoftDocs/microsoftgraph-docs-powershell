@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/lock-mgusermanageddeviceremote
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Lock-MgUserManagedDeviceRemote
 
 ## SYNOPSIS
 Remote lock
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Lock-MgBetaUserManagedDeviceRemote](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Lock-MgBetaUserManagedDeviceRemote?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,6 +26,22 @@ Lock-MgUserManagedDeviceRemote -InputObject <IUsersActionsIdentity> [-PassThru] 
 
 ## DESCRIPTION
 Remote lock
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -172,9 +184,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Lock-MgBetaUserManagedDeviceRemote](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Lock-MgBetaUserManagedDeviceRemote?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/lock-mgusermanageddeviceremote](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/lock-mgusermanageddeviceremote)
-
-
 

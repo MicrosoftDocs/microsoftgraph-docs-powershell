@@ -1,26 +1,21 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/add-mgbetaserviceprincipaltokensigningcertificate
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Add-MgBetaServicePrincipalTokenSigningCertificate
 
 ## SYNOPSIS
 Creates a self-signed signing certificate and returns a selfSignedCertificate object, which is the public part of the generated certificate.
-The self-signed signing certificate is composed of the following objects which are added to the servicePrincipal: + The keyCredentials object with the following objects:    + A private key object with usage set to Sign.    + A public key object with usage set to Verify.+ The passwordCredentials object.
+The self-signed signing certificate is composed of the following objects which are added to the servicePrincipal: \n+ The keyCredentials object with the following objects:\n    + A private key object with usage set to Sign.\n    + A public key object with usage set to Verify.\n+ The passwordCredentials object.
 All the objects have the same value of customKeyIdentifier.
 The passwordCredential is used to open the PFX file (private key).
 It and the associated private key object have the same value of keyId.
 Once set during creation through the displayName property, the subject of the certificate cannot be updated.
 The startDateTime is set to the same time the certificate is created using the action.
 The endDateTime can be up to three years after the certificate is created.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Add-MgServicePrincipalTokenSigningCertificate](/powershell/module/Microsoft.Graph.Applications/Add-MgServicePrincipalTokenSigningCertificate?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -54,32 +49,27 @@ Add-MgBetaServicePrincipalTokenSigningCertificate -InputObject <IApplicationsIde
 
 ## DESCRIPTION
 Creates a self-signed signing certificate and returns a selfSignedCertificate object, which is the public part of the generated certificate.
-The self-signed signing certificate is composed of the following objects which are added to the servicePrincipal: + The keyCredentials object with the following objects:    + A private key object with usage set to Sign.    + A public key object with usage set to Verify.+ The passwordCredentials object.
+The self-signed signing certificate is composed of the following objects which are added to the servicePrincipal: \n+ The keyCredentials object with the following objects:\n    + A private key object with usage set to Sign.\n    + A public key object with usage set to Verify.\n+ The passwordCredentials object.
 All the objects have the same value of customKeyIdentifier.
 The passwordCredential is used to open the PFX file (private key).
 It and the associated private key object have the same value of keyId.
 Once set during creation through the displayName property, the subject of the certificate cannot be updated.
 The startDateTime is set to the same time the certificate is created using the action.
 The endDateTime can be up to three years after the certificate is created.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Applications
+```
 
 $params = @{
 	displayName = "CN=customDisplayName"
-	endDateTime = [System.DateTime]::Parse("2024-01-25T00:00:00Z")
+	endDateTime = \[System.DateTime\]::Parse("2024-01-25T00:00:00Z")
 }
 
 Add-MgBetaServicePrincipalTokenSigningCertificate -ServicePrincipalId $servicePrincipalId -BodyParameter $params
-
-```
-This example shows how to use the Add-MgBetaServicePrincipalTokenSigningCertificate Cmdlet.
-
 
 ## PARAMETERS
 
@@ -261,9 +251,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Add-MgServicePrincipalTokenSigningCertificate](/powershell/module/Microsoft.Graph.Applications/Add-MgServicePrincipalTokenSigningCertificate?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/add-mgbetaserviceprincipaltokensigningcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/add-mgbetaserviceprincipaltokensigningcertificate)
-
-
 

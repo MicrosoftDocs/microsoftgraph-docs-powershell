@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancepermissionmanagementpermissionrequestchange
@@ -28,6 +28,18 @@ New-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange
 
 ## DESCRIPTION
 Create new navigation property to permissionsRequestChanges for identityGovernance
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -94,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -ModificationDateTime
-.
+Time when the change occurred.
 
 ```yaml
 Type: DateTime
@@ -109,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -PermissionsRequestId
-.
+The ID of the scheduledPermissionsRequest object.
 
 ```yaml
 Type: String
@@ -139,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -TicketId
-.
+Represents the ticketing system identifier.
 
 ```yaml
 Type: String
@@ -204,14 +216,12 @@ BODYPARAMETER \<IMicrosoftGraphPermissionsRequestChange\>: permissionsRequestCha
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
   \[ActiveOccurrenceStatus \<String\>\]: permissionsRequestOccurrenceStatus
-  \[ModificationDateTime \<DateTime?\>\]: 
-  \[PermissionsRequestId \<String\>\]: 
+  \[ModificationDateTime \<DateTime?\>\]: Time when the change occurred.
+  \[PermissionsRequestId \<String\>\]: The ID of the scheduledPermissionsRequest object.
   \[StatusDetail \<String\>\]: statusDetail
-  \[TicketId \<String\>\]:
+  \[TicketId \<String\>\]: Represents the ticketing system identifier.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancepermissionmanagementpermissionrequestchange](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancepermissionmanagementpermissionrequestchange)
-
-
 

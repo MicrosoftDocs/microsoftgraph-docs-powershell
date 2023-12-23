@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mguseroutlookmastercategory
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgUserOutlookMasterCategory
 
 ## SYNOPSIS
 Create an outlookCategory object in the user's master list of categories.
-This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserOutlookMasterCategory?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -43,16 +38,13 @@ New-MgUserOutlookMasterCategory -InputObject <IUsersIdentity> -BodyParameter <IM
 
 ## DESCRIPTION
 Create an outlookCategory object in the user's master list of categories.
-This API is available in the following national cloud deployments.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/outlookuser-post-mastercategories-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Users
+```
 
 $params = @{
 	displayName = "Project expenses"
@@ -61,11 +53,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserOutlookMasterCategory -UserId $userId -BodyParameter $params
-```
-This example shows how to use the New-MgUserOutlookMasterCategory Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -251,9 +238,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserOutlookMasterCategory?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mguseroutlookmastercategory](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mguseroutlookmastercategory)
-
-
 

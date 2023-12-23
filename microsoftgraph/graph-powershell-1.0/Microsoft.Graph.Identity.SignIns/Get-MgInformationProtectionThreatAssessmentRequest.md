@@ -1,20 +1,15 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mginformationprotectionthreatassessmentrequest
 schema: 2.0.0
-ms.prod: security
-ms.prod: security
 ---
 
 # Get-MgInformationProtectionThreatAssessmentRequest
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a specified threatAssessmentRequest object.
-A threat assessment request can be one of the following types: This API is available in the following national cloud deployments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInformationProtectionThreatAssessmentRequest?view=graph-powershell-beta)
+A threat assessment request can be one of the following types:
 
 ## SYNTAX
 
@@ -39,64 +34,44 @@ Get-MgInformationProtectionThreatAssessmentRequest -InputObject <IIdentitySignIn
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a specified threatAssessmentRequest object.
-A threat assessment request can be one of the following types: This API is available in the following national cloud deployments.
+A threat assessment request can be one of the following types:
 
 ## EXAMPLES
-### Example 1: Get the properties of a mail assessment request
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 Get-MgInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId
 
+### EXAMPLE 2
 ```
-This example will get the properties of a mail assessment request
-
-### Example 2: Get the properties of an email file assessment request
-
-```powershell
-
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 Get-MgInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId
 
+### EXAMPLE 3
 ```
-This example will get the properties of an email file assessment request
-
-### Example 3: Get the properties of a file assessment request
-
-```powershell
-
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 Get-MgInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId
 
+### EXAMPLE 4
 ```
-This example will get the properties of a file assessment request
-
-### Example 4: Get the properties of an url assessment request
-
-```powershell
-
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 Get-MgInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId
 
+### EXAMPLE 5
 ```
-This example will get the properties of an url assessment request
-
-### Example 5: Expand threat assessment results for a request
-
-```powershell
-
 Import-Module Microsoft.Graph.Identity.SignIns
-
-Get-MgInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId -ExpandProperty "results" 
-
 ```
-This example will expand threat assessment results for a request
 
+Get-MgInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId -ExpandProperty "results"
 
 ## PARAMETERS
 
@@ -355,8 +330,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInformationProtectionThreatAssessmentRequest?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mginformationprotectionthreatassessmentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mginformationprotectionthreatassessmentrequest)
-
 

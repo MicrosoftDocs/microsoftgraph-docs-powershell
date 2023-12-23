@@ -1,16 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilepublication
 schema: 2.0.0
-ms.prod: people
 ---
 
 # Remove-MgBetaUserProfilePublication
 
 ## SYNOPSIS
 Deletes an itemPublication object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,17 +26,15 @@ Remove-MgBetaUserProfilePublication -InputObject <IPeopleIdentity> [-IfMatch <St
 
 ## DESCRIPTION
 Deletes an itemPublication object.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Remove-MgBetaUserProfilePublication Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserProfilePublication -UserId $userId -ItemPublicationId $itemPublicationId
 ```
-This example shows how to use the Remove-MgBetaUserProfilePublication Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -191,5 +187,4 @@ INPUTOBJECT \<IPeopleIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilepublication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilepublication)
-
 
