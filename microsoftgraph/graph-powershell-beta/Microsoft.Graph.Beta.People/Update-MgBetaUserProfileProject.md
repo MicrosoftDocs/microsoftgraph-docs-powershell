@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileproject
@@ -645,4 +645,5 @@ SPONSORS \<IMicrosoftGraphRelatedPerson\[\]\>: The Person or people who sponsore
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileproject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileproject)
+
 

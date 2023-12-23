@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/copy-mgteam
@@ -9,9 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a copy of a team.
-This operation also creates a copy of the corresponding group.\nYou can specify which parts of the team to clone: When tabs are cloned, they aren't configured.
+This operation also creates a copy of the corresponding group.You can specify which parts of the team to clone: When tabs are cloned, they aren't configured.
 The tabs are displayed on the tab bar in Microsoft Teams, and the first time a user opens them, they must go through the configuration screen.
-\nIf the user who opens the tab doesn't have permission to configure apps, they'll see a message that says that the tab isn't configured.
+If the user who opens the tab doesn't have permission to configure apps, they'll see a message that says that the tab isn't configured.
 Cloning is a long-running operation.
 After the POST clone returns, you need to GET the operation returned by the Location: header to see if it's running, succeeded, or failed.
 You should continue to GET until the status isn't running.
@@ -49,9 +49,9 @@ Copy-MgTeam -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Create a copy of a team.
-This operation also creates a copy of the corresponding group.\nYou can specify which parts of the team to clone: When tabs are cloned, they aren't configured.
+This operation also creates a copy of the corresponding group.You can specify which parts of the team to clone: When tabs are cloned, they aren't configured.
 The tabs are displayed on the tab bar in Microsoft Teams, and the first time a user opens them, they must go through the configuration screen.
-\nIf the user who opens the tab doesn't have permission to configure apps, they'll see a message that says that the tab isn't configured.
+If the user who opens the tab doesn't have permission to configure apps, they'll see a message that says that the tab isn't configured.
 Cloning is a long-running operation.
 After the POST clone returns, you need to GET the operation returned by the Location: header to see if it's running, succeeded, or failed.
 You should continue to GET until the status isn't running.
@@ -336,4 +336,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/copy-mgteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/copy-mgteam)
+
 
