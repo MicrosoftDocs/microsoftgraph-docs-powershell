@@ -11,7 +11,6 @@ ms.prod: identity-and-sign-in
 ## SYNOPSIS
 Create a new customAuthenticationExtension object.
 Only the onTokenIssuanceStartCustomExtension object type is supported.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -33,7 +32,9 @@ New-MgBetaIdentityCustomAuthenticationExtension -BodyParameter <Hashtable> [-Wha
 ## DESCRIPTION
 Create a new customAuthenticationExtension object.
 Only the onTokenIssuanceStartCustomExtension object type is supported.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitycontainer-post-customauthenticationextensions-permissions.md)]
 
 ## PARAMETERS
 

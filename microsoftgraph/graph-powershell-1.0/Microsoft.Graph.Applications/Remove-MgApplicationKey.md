@@ -12,7 +12,6 @@ ms.prod: applications
 Remove a key credential from an application.
 This method along with addKey can be used by an application to automate rolling its expiring keys.
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaApplicationKey](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationKey?view=graph-powershell-beta)
@@ -49,8 +48,8 @@ Remove-MgApplicationKey -InputObject <IApplicationsIdentity>
 Remove a key credential from an application.
 This method along with addKey can be used by an application to automate rolling its expiring keys.
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
-This API is available in the following national cloud deployments.
 
+**Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-removekey-permissions.md)]
 
 ## EXAMPLES
@@ -255,6 +254,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Remove-MgBetaApplicationKey](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationKey?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationkey](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationkey)
-
 
 

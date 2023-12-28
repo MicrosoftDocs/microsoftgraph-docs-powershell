@@ -10,7 +10,7 @@ ms.prod: users
 
 ## SYNOPSIS
 Use this API to assign an app role to a user.
-To grant an app role assignment to a user, you need three identifiers: This API is available in the following national cloud deployments.
+To grant an app role assignment to a user, you need three identifiers:
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserAppRoleAssignment?view=graph-powershell-beta)
@@ -47,8 +47,9 @@ New-MgUserAppRoleAssignment -InputObject <IApplicationsIdentity>
 
 ## DESCRIPTION
 Use this API to assign an app role to a user.
-To grant an app role assignment to a user, you need three identifiers: This API is available in the following national cloud deployments.
+To grant an app role assignment to a user, you need three identifiers:
 
+**Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-post-approleassignments-permissions.md)]
 
 ## EXAMPLES
@@ -391,6 +392,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [New-MgBetaUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserAppRoleAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mguserapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mguserapproleassignment)
-
 
 

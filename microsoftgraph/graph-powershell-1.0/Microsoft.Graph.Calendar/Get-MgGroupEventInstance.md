@@ -46,6 +46,7 @@ Navigation property.
 Read-only.
 Nullable.
 
+**Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-list-instances-permissions.md)]
 
 ## EXAMPLES
@@ -291,6 +292,7 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[ExtensionId \<String\>\]: The unique identifier of extension
   \[GroupId \<String\>\]: The unique identifier of group
   \[PlaceId \<String\>\]: The unique identifier of place
+  \[RoomId \<String\>\]: The unique identifier of room
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS

@@ -42,6 +42,9 @@ The sections in the notebook.
 Read-only.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/notebook-list-sections-permissions.md)]
+
 ## PARAMETERS
 
 ### -All

@@ -1392,6 +1392,8 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[ArticleId \<String\>\]: The unique identifier of article
   \[ArticleIndicatorId \<String\>\]: The unique identifier of articleIndicator
   \[AttackSimulationOperationId \<String\>\]: The unique identifier of attackSimulationOperation
+  \[AuditLogQueryId \<String\>\]: The unique identifier of auditLogQuery
+  \[AuditLogRecordId \<String\>\]: The unique identifier of auditLogRecord
   \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
   \[AuthorityTemplateId \<String\>\]: The unique identifier of authorityTemplate
   \[CaseOperationId \<String\>\]: The unique identifier of caseOperation
@@ -1847,5 +1849,6 @@ No format is guaranteed.
 [Update-MgSecurityThreatIntelligenceWhoisRecord](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligenceWhoisRecord?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencewhoisrecord](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencewhoisrecord)
+
 
 

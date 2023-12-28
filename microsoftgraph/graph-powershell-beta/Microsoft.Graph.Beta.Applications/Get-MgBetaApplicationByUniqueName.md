@@ -10,7 +10,6 @@ ms.prod: applications
 
 ## SYNOPSIS
 Get the properties and relationships of an application object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,9 @@ Get-MgBetaApplicationByUniqueName -InputObject <IApplicationsIdentity> [-ExpandP
 
 ## DESCRIPTION
 Get the properties and relationships of an application object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-get-permissions.md)]
 
 ## PARAMETERS
 
@@ -159,7 +160,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationbyuniquename](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationbyuniquename)
-
 
 
 

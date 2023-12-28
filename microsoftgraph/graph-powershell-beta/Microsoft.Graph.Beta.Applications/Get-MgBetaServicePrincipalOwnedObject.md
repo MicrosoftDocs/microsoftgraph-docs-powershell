@@ -44,6 +44,9 @@ Read-only.
 Nullable.
 Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-list-ownedobjects-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaServicePrincipalOwnedObject Cmdlet
 ```powershell
@@ -304,6 +307,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Get-MgServicePrincipalOwnedObject](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalOwnedObject?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalownedobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalownedobject)
-
 
 

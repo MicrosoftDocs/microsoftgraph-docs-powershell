@@ -10,7 +10,6 @@ ms.prod: change-notifications
 
 ## SYNOPSIS
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaReauthorizeGroupSiteListSubscription](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaReauthorizeGroupSiteListSubscription?view=graph-powershell-beta)
@@ -31,7 +30,6 @@ Invoke-MgReauthorizeGroupSiteListSubscription -InputObject <IGroupsIdentity> [-P
 
 ## DESCRIPTION
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
-This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

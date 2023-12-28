@@ -10,7 +10,6 @@ ms.prod: files
 
 ## SYNOPSIS
 Get the tenant-level settings for SharePoint and OneDrive.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgAdminSharepointSetting](/powershell/module/Microsoft.Graph.Sites/Get-MgAdminSharepointSetting?view=graph-powershell-1.0)
@@ -23,7 +22,9 @@ Get-MgBetaAdminSharepointSetting [-ExpandProperty <String[]>] [-Property <String
 
 ## DESCRIPTION
 Get the tenant-level settings for SharePoint and OneDrive.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/sharepointsettings-get-permissions.md)]
 
 ## PARAMETERS
 

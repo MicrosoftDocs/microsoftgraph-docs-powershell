@@ -15,7 +15,6 @@ This method changes the status of the submission from working to submitted.
 During the submit process, all the resources are copied to the submittedResources bucket.
 The teacher will be looking at the submitted resources list for grading.
 A teacher can also submit a student's assignment on their behalf.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Submit-MgBetaEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Submit-MgBetaEducationClassAssignmentSubmission?view=graph-powershell-beta)
@@ -41,7 +40,9 @@ This method changes the status of the submission from working to submitted.
 During the submit process, all the resources are copied to the submittedResources bucket.
 The teacher will be looking at the submitted resources list for grading.
 A teacher can also submit a student's assignment on their behalf.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationsubmission-submit-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Submit-MgEducationClassAssignmentSubmission Cmdlet

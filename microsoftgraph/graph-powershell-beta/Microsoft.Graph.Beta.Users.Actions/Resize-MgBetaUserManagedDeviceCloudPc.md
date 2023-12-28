@@ -10,7 +10,6 @@ ms.prod: cloud-pc
 
 ## SYNOPSIS
 Upgrade or downgrade an existing Cloud PC to another configuration with a new virtual CPU (vCPU) and storage size.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -43,7 +42,9 @@ Resize-MgBetaUserManagedDeviceCloudPc -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Upgrade or downgrade an existing Cloud PC to another configuration with a new virtual CPU (vCPU) and storage size.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/manageddevice-resizecloudpc-permissions.md)]
 
 ## PARAMETERS
 
@@ -234,6 +235,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[NotebookId \<String\>\]: The unique identifier of notebook
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
   \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
   \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
   \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask

@@ -17,7 +17,6 @@ When you call this API, educationSubmission objects are created and the assignme
 The state of the assignment goes back to draft if there is any backend failure during publish process.
 To update the properties of a published assignment, see update an assignment.
 To update the properties of a published assignment, see update an assignment.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Publish-MgEducationMeAssignment](/powershell/module/Microsoft.Graph.Education/Publish-MgEducationMeAssignment?view=graph-powershell-1.0)
@@ -43,7 +42,9 @@ When you call this API, educationSubmission objects are created and the assignme
 The state of the assignment goes back to draft if there is any backend failure during publish process.
 To update the properties of a published assignment, see update an assignment.
 To update the properties of a published assignment, see update an assignment.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-publish-permissions.md)]
 
 ## EXAMPLES
 

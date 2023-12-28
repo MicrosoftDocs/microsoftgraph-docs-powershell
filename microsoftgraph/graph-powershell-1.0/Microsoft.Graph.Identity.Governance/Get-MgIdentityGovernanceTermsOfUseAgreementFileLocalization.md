@@ -38,6 +38,9 @@ Get-MgIdentityGovernanceTermsOfUseAgreementFileLocalization -InputObject <IIdent
 ## DESCRIPTION
 The localized version of the terms of use agreement files attached to the agreement.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/agreementfile-list-localizations-permissions.md)]
+
 ## PARAMETERS
 
 ### -AgreementFileLocalizationId

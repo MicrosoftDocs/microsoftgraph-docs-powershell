@@ -10,7 +10,6 @@ ms.prod: sharepoint
 
 ## SYNOPSIS
 Check out a driveItem resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaCheckoutDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaCheckoutDriveItem?view=graph-powershell-beta)
@@ -30,7 +29,9 @@ Invoke-MgCheckoutDriveItem -InputObject <IFilesIdentity> [-PassThru] [-WhatIf] [
 
 ## DESCRIPTION
 Check out a driveItem resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-checkout-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgCheckoutDriveItem Cmdlet

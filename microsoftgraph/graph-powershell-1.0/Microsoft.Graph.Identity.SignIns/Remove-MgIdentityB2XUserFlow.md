@@ -10,7 +10,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Delete a b2xIdentityUserFlow object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaIdentityB2XUserFlow](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityB2XUserFlow?view=graph-powershell-beta)
@@ -31,7 +30,9 @@ Remove-MgIdentityB2XUserFlow -InputObject <IIdentitySignInsIdentity> [-IfMatch <
 
 ## DESCRIPTION
 Delete a b2xIdentityUserFlow object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/b2xidentityuserflow-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

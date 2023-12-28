@@ -10,7 +10,6 @@ ms.prod: planner
 
 ## SYNOPSIS
 Retrieve a list of plannertask objects assigned to a User.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserPlannerTask](/powershell/module/Microsoft.Graph.Planner/Get-MgUserPlannerTask?view=graph-powershell-1.0)
@@ -25,7 +24,9 @@ Get-MgBetaUserPlannerTask -UserId <String> [-ExpandProperty <String[]>] [-Filter
 
 ## DESCRIPTION
 Retrieve a list of plannertask objects assigned to a User.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/planneruser-list-tasks-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -10,7 +10,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Create a request to remove the personal data for an outboundSharedUserProfile.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,9 @@ Remove-MgBetaDirectoryOutboundSharedUserProfileTenantPersonalData
 
 ## DESCRIPTION
 Create a request to remove the personal data for an outboundSharedUserProfile.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tenantreference-removepersonaldata-permissions.md)]
 
 ## PARAMETERS
 

@@ -42,6 +42,9 @@ The user's terms of use acceptance statuses.
 Read-only.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-agreementacceptances-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserAgreementAcceptance Cmdlet
 ```powershell

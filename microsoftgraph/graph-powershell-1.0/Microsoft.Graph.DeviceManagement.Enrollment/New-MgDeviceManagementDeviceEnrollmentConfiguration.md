@@ -9,7 +9,7 @@ ms.prod: intune
 # New-MgDeviceManagementDeviceEnrollmentConfiguration
 
 ## SYNOPSIS
-Create a new deviceEnrollmentPlatformRestrictionsConfiguration object.
+Create a new deviceEnrollmentLimitConfiguration object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/New-MgBetaDeviceManagementDeviceEnrollmentConfiguration?view=graph-powershell-beta)
@@ -31,7 +31,7 @@ New-MgDeviceManagementDeviceEnrollmentConfiguration
 ```
 
 ## DESCRIPTION
-Create a new deviceEnrollmentPlatformRestrictionsConfiguration object.
+Create a new deviceEnrollmentLimitConfiguration object.
 
 ## PARAMETERS
 
@@ -262,5 +262,6 @@ Users are subject only to the configuration with the lowest priority value.
 [New-MgBetaDeviceManagementDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/New-MgBetaDeviceManagementDeviceEnrollmentConfiguration?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/new-mgdevicemanagementdeviceenrollmentconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/new-mgdevicemanagementdeviceenrollmentconfiguration)
+
 
 

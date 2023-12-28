@@ -11,7 +11,6 @@ schema: 2.0.0
 Delete an app from an organization's app catalog (the tenant app catalog).
 To delete an app, the distributionMethod property for the app must be set to organization.
 You can also use this API to remove a submitted app from the review process.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgAppCatalogTeamApp](/powershell/module/Microsoft.Graph.Teams/Remove-MgAppCatalogTeamApp?view=graph-powershell-1.0)
@@ -34,7 +33,6 @@ Remove-MgBetaAppCatalogTeamApp -InputObject <ITeamsIdentity> [-IfMatch <String>]
 Delete an app from an organization's app catalog (the tenant app catalog).
 To delete an app, the distributionMethod property for the app must be set to organization.
 You can also use this API to remove a submitted app from the review process.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -166,6 +164,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
   \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
   \[ConversationMemberId \<String\>\]: The unique identifier of conversationMember
+  \[DayNoteId \<String\>\]: The unique identifier of dayNote
   \[DeletedChatId \<String\>\]: The unique identifier of deletedChat
   \[DeletedTeamId \<String\>\]: The unique identifier of deletedTeam
   \[GroupId \<String\>\]: The unique identifier of group

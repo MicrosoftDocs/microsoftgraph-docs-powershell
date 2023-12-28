@@ -11,7 +11,6 @@ ms.prod: security
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a secureScore object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecuritySecureScore](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecuritySecureScore?view=graph-powershell-beta)
@@ -39,7 +38,12 @@ Get-MgSecuritySecureScore -InputObject <ISecurityIdentity> [-ExpandProperty <Str
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a secureScore object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/securescore-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-list-securescores-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

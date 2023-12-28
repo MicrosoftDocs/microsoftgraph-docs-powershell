@@ -10,7 +10,6 @@ ms.prod: search
 
 ## SYNOPSIS
 Update the properties of an externalGroup object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaExternalConnectionGroup](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternalConnectionGroup?view=graph-powershell-beta)
@@ -45,7 +44,9 @@ Update-MgExternalConnectionGroup -InputObject <ISearchIdentity>
 
 ## DESCRIPTION
 Update the properties of an externalGroup object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-externalgroup-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -288,4 +289,5 @@ Read-only.
 [Update-MgBetaExternalConnectionGroup](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternalConnectionGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnectiongroup)
+
 

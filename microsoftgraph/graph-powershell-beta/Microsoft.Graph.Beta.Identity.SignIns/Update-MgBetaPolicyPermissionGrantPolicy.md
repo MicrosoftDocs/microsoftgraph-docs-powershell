@@ -10,7 +10,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Update properties of a  permissionGrantPolicy.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgPolicyPermissionGrantPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyPermissionGrantPolicy?view=graph-powershell-1.0)
@@ -47,7 +46,9 @@ Update-MgBetaPolicyPermissionGrantPolicy -InputObject <IIdentitySignInsIdentity>
 
 ## DESCRIPTION
 Update properties of a  permissionGrantPolicy.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permissiongrantpolicy-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Update a permission grant policy
@@ -369,6 +370,7 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[ActivityBasedTimeoutPolicyId \<String\>\]: The unique identifier of activityBasedTimeoutPolicy
   \[AppManagementPolicyId \<String\>\]: The unique identifier of appManagementPolicy
   \[AuthenticationCombinationConfigurationId \<String\>\]: The unique identifier of authenticationCombinationConfiguration
+  \[AuthenticationConditionApplicationAppId \<String\>\]: The unique identifier of authenticationConditionApplication
   \[AuthenticationContextClassReferenceId \<String\>\]: The unique identifier of authenticationContextClassReference
   \[AuthenticationEventListenerId \<String\>\]: The unique identifier of authenticationEventListener
   \[AuthenticationEventsFlowId \<String\>\]: The unique identifier of authenticationEventsFlow
@@ -447,4 +449,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 [Update-MgPolicyPermissionGrantPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyPermissionGrantPolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicypermissiongrantpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicypermissiongrantpolicy)
+
 

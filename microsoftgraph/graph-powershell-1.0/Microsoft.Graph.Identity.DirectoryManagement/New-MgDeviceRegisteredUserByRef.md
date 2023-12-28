@@ -10,7 +10,6 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Add a registered user for the device.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceRegisteredUserByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDeviceRegisteredUserByRef?view=graph-powershell-beta)
@@ -43,7 +42,9 @@ New-MgDeviceRegisteredUserByRef -InputObject <IIdentityDirectoryManagementIdenti
 
 ## DESCRIPTION
 Add a registered user for the device.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-post-registeredusers-permissions.md)]
 
 ## PARAMETERS
 

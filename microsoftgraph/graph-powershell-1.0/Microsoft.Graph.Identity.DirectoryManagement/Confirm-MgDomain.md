@@ -10,7 +10,6 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Validates the ownership of the domain.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Confirm-MgBetaDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Confirm-MgBetaDomain?view=graph-powershell-beta)
@@ -29,7 +28,9 @@ Confirm-MgDomain -InputObject <IIdentityDirectoryManagementIdentity> [-WhatIf] [
 
 ## DESCRIPTION
 Validates the ownership of the domain.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/domain-verify-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

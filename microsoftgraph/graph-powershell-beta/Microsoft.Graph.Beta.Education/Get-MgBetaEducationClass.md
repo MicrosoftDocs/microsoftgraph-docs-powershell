@@ -14,7 +14,6 @@ Retrieve a class from the system.
 A class is a universal group with a special property that indicates to the system that the group is a class.
 Group members represent the students; group admins represent the teachers in the class.
 If you're using the delegated token, the user will only see classes in which they are members.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgEducationClass](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClass?view=graph-powershell-1.0)
@@ -45,7 +44,12 @@ Retrieve a class from the system.
 A class is a universal group with a special property that indicates to the system that the group is a class.
 Group members represent the students; group admins represent the teachers in the class.
 If you're using the delegated token, the user will only see classes in which they are members.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationroot-list-classes-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

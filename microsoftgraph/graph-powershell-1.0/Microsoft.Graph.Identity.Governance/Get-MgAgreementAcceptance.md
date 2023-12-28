@@ -40,6 +40,9 @@ Get-MgAgreementAcceptance -InputObject <IIdentityGovernanceIdentity> [-ExpandPro
 Read-only.
 Information about acceptances of this agreement.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/agreement-list-acceptances-permissions.md)]
+
 ## PARAMETERS
 
 ### -AgreementAcceptanceId

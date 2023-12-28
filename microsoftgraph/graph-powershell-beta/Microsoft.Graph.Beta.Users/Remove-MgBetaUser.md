@@ -13,7 +13,6 @@ Delete user.
  When deleted, user resources are moved to a temporary container and can be restored within 30 days.
 After that time, they are permanently deleted.
 To learn more, see deletedItems.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgUser](/powershell/module/Microsoft.Graph.Users/Remove-MgUser?view=graph-powershell-1.0)
@@ -36,7 +35,9 @@ Delete user.
  When deleted, user resources are moved to a temporary container and can be restored within 30 days.
 After that time, they are permanently deleted.
 To learn more, see deletedItems.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Remove a user
@@ -192,6 +193,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Remove-MgUser](/powershell/module/Microsoft.Graph.Users/Remove-MgUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauser)
-
 
 

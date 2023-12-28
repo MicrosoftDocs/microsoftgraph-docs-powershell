@@ -11,7 +11,6 @@ ms.prod: governance
 ## SYNOPSIS
 Remove a user or a group from the connected organization's internal sponsors.
 The internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef?view=graph-powershell-beta)
@@ -35,7 +34,9 @@ Remove-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef
 ## DESCRIPTION
 Remove a user or a group from the connected organization's internal sponsors.
 The internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/connectedorganization-delete-internalsponsors-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

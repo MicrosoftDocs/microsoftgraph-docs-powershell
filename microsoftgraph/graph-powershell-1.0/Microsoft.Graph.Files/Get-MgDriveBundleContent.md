@@ -30,6 +30,9 @@ Get-MgDriveBundleContent -InputObject <IFilesIdentity> -OutFile <String> [-PassT
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bundle-list-permissions.md)]
+
 ## EXAMPLES
 
 ## PARAMETERS

@@ -10,8 +10,7 @@ ms.prod: groups
 
 ## SYNOPSIS
 Forward a post to a recipient.
-You can specify both the parent conversation and thread in the request, \nor, you can specify just the parent thread without the parent conversation.
-This API is available in the following national cloud deployments.
+You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaForwardGroupThreadPostInReplyTo](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaForwardGroupThreadPostInReplyTo?view=graph-powershell-beta)
@@ -48,8 +47,10 @@ Invoke-MgForwardGroupThreadPostInReplyTo -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Forward a post to a recipient.
-You can specify both the parent conversation and thread in the request, \nor, you can specify just the parent thread without the parent conversation.
-This API is available in the following national cloud deployments.
+You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/post-forward-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -319,4 +320,5 @@ TORECIPIENTS \<IMicrosoftGraphRecipient\[\]\>: .
 [Invoke-MgBetaForwardGroupThreadPostInReplyTo](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaForwardGroupThreadPostInReplyTo?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgforwardgroupthreadpostinreplyto](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgforwardgroupthreadpostinreplyto)
+
 

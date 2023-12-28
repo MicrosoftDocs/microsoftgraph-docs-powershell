@@ -4,14 +4,13 @@ Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguser
 schema: 2.0.0
 ms.prod: intune
-ms.prod: users
+ms.prod: intune
 ---
 
 # Get-MgUser
 
 ## SYNOPSIS
-Retrieve the properties and relationships of user object.
-This API is available in the following national cloud deployments.
+Read properties and relationships of the user object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUser](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUser?view=graph-powershell-beta)
@@ -37,8 +36,7 @@ Get-MgUser -InputObject <IUsersIdentity> [-ExpandProperty <String[]>] [-Property
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of user object.
-This API is available in the following national cloud deployments.
+Read properties and relationships of the user object.
 
 ## EXAMPLES
 ### Example 1: Get the list of all the users
@@ -384,6 +382,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Get-MgBetaUser](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguser](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguser)
-
 
 

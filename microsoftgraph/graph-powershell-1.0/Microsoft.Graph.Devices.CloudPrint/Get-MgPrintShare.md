@@ -11,7 +11,6 @@ ms.prod: cloud-printing
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a printer share.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPrintShare](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintShare?view=graph-powershell-beta)
@@ -39,10 +38,11 @@ Get-MgPrintShare -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty <Str
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a printer share.
-This API is available in the following national cloud deployments.
 
+**Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printershare-get-permissions.md)]
 
+**Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/print-list-shares-permissions.md)]
 
 ## EXAMPLES

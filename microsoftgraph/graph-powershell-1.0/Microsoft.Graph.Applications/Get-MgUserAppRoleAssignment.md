@@ -40,6 +40,7 @@ Get-MgUserAppRoleAssignment -InputObject <IApplicationsIdentity> [-ExpandPropert
 Represents the app roles a user has been granted for an application.
 Supports $expand.
 
+**Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-list-approleassignments-permissions.md)]
 
 ## EXAMPLES
@@ -324,6 +325,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Get-MgBetaUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserAppRoleAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mguserapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mguserapproleassignment)
-
 
 

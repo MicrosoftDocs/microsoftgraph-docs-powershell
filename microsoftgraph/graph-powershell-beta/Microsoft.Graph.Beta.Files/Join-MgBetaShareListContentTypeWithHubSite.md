@@ -9,8 +9,7 @@ ms.prod: sites-and-lists
 # Join-MgBetaShareListContentTypeWithHubSite
 
 ## SYNOPSIS
-Associate a content type\]\[contentType\] with a list of hub sites.
-This API is available in the following \[national cloud deployments.
+Associate a \[content type\]\[contentType\] with a list of hub sites.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Join-MgShareListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Files/Join-MgShareListContentTypeWithHubSite?view=graph-powershell-1.0)
@@ -45,8 +44,10 @@ Join-MgBetaShareListContentTypeWithHubSite -InputObject <IFilesIdentity>
 ```
 
 ## DESCRIPTION
-Associate a content type\]\[contentType\] with a list of hub sites.
-This API is available in the following \[national cloud deployments.
+Associate a \[content type\]\[contentType\] with a list of hub sites.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-associatewithhubsites-permissions.md)]
 
 ## PARAMETERS
 

@@ -10,7 +10,6 @@ ms.prod: microsoft-teams
 
 ## SYNOPSIS
 Delete a member from a standard tag in a team.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaTeamTagMember](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamTagMember?view=graph-powershell-beta)
@@ -31,7 +30,9 @@ Remove-MgTeamTagMember -InputObject <ITeamsIdentity> [-IfMatch <String>] [-PassT
 
 ## DESCRIPTION
 Delete a member from a standard tag in a team.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teamworktagmember-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

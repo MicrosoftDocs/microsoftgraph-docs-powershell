@@ -10,8 +10,7 @@ ms.prod: sharepoint
 # Get-MgBetaGroupSiteListItem
 
 ## SYNOPSIS
-Returns the metadata for an item\]\[\] in a \[list\]\[\].
-This API is available in the following \[national cloud deployments.
+Returns the metadata for an \[item\]\[\] in a \[list\]\[\].
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteListItem](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteListItem?view=graph-powershell-1.0)
@@ -38,8 +37,13 @@ Get-MgBetaGroupSiteListItem -InputObject <ISitesIdentity> [-ExpandProperty <Stri
 ```
 
 ## DESCRIPTION
-Returns the metadata for an item\]\[\] in a \[list\]\[\].
-This API is available in the following \[national cloud deployments.
+Returns the metadata for an \[item\]\[\] in a \[list\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/listitem-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/listitem-list-permissions.md)]
 
 ## PARAMETERS
 

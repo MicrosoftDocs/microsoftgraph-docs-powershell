@@ -104,18 +104,6 @@ Locale: en-US
 ### [Get-MgBetaBusinessScenarioPlannerTaskProgressTaskBoardFormat](Get-MgBetaBusinessScenarioPlannerTaskProgressTaskBoardFormat.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaSolutionVirtualEventSessionRecordingDelta](Get-MgBetaSolutionVirtualEventSessionRecordingDelta.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaSolutionVirtualEventSessionTranscriptDelta](Get-MgBetaSolutionVirtualEventSessionTranscriptDelta.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaSolutionVirtualEventWebinarSessionRecordingDelta](Get-MgBetaSolutionVirtualEventWebinarSessionRecordingDelta.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaSolutionVirtualEventWebinarSessionTranscriptDelta](Get-MgBetaSolutionVirtualEventWebinarSessionTranscriptDelta.md)
-{{ Fill in the Description }}
-
 ### [Get-MgBetaVirtualEvent](Get-MgBetaVirtualEvent.md)
 {{ Fill in the Description }}
 
@@ -128,10 +116,16 @@ Locale: en-US
 ### [Get-MgBetaVirtualEventPresenterCount](Get-MgBetaVirtualEventPresenterCount.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaVirtualEventSession](Get-MgBetaVirtualEventSession.md)
+### [Get-MgBetaVirtualEventPresenterProfilePhoto](Get-MgBetaVirtualEventPresenterProfilePhoto.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaVirtualEventSessionAlternativeRecording](Get-MgBetaVirtualEventSessionAlternativeRecording.md)
+### [Get-MgBetaVirtualEventPresenterSession](Get-MgBetaVirtualEventPresenterSession.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaVirtualEventPresenterSessionCount](Get-MgBetaVirtualEventPresenterSessionCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaVirtualEventSession](Get-MgBetaVirtualEventSession.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventSessionAttendanceReport](Get-MgBetaVirtualEventSessionAttendanceReport.md)
@@ -146,31 +140,16 @@ Locale: en-US
 ### [Get-MgBetaVirtualEventSessionAttendanceReportCount](Get-MgBetaVirtualEventSessionAttendanceReportCount.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaVirtualEventSessionAttendeeReport](Get-MgBetaVirtualEventSessionAttendeeReport.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaVirtualEventSessionBroadcastRecording](Get-MgBetaVirtualEventSessionBroadcastRecording.md)
-{{ Fill in the Description }}
-
 ### [Get-MgBetaVirtualEventSessionCount](Get-MgBetaVirtualEventSessionCount.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaVirtualEventSessionMeetingAttendanceReport](Get-MgBetaVirtualEventSessionMeetingAttendanceReport.md)
+### [Get-MgBetaVirtualEventSessionPresenter](Get-MgBetaVirtualEventSessionPresenter.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaVirtualEventSessionMeetingAttendanceReportAttendanceRecord](Get-MgBetaVirtualEventSessionMeetingAttendanceReportAttendanceRecord.md)
+### [Get-MgBetaVirtualEventSessionPresenterCount](Get-MgBetaVirtualEventSessionPresenterCount.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaVirtualEventSessionMeetingAttendanceReportAttendanceRecordCount](Get-MgBetaVirtualEventSessionMeetingAttendanceReportAttendanceRecordCount.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaVirtualEventSessionRecording](Get-MgBetaVirtualEventSessionRecording.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaVirtualEventSessionRecordingContent](Get-MgBetaVirtualEventSessionRecordingContent.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaVirtualEventSessionRecordingCount](Get-MgBetaVirtualEventSessionRecordingCount.md)
+### [Get-MgBetaVirtualEventSessionPresenterProfilePhoto](Get-MgBetaVirtualEventSessionPresenterProfilePhoto.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventSessionRegistration](Get-MgBetaVirtualEventSessionRegistration.md)
@@ -179,28 +158,64 @@ Locale: en-US
 ### [Get-MgBetaVirtualEventSessionRegistrationCount](Get-MgBetaVirtualEventSessionRegistrationCount.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaVirtualEventSessionRegistrationCustomQuestion](Get-MgBetaVirtualEventSessionRegistrationCustomQuestion.md)
+### [Get-MgBetaVirtualEventTownhall](Get-MgBetaVirtualEventTownhall.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaVirtualEventSessionRegistrationCustomQuestionCount](Get-MgBetaVirtualEventSessionRegistrationCustomQuestionCount.md)
+### [Get-MgBetaVirtualEventTownhallByUserIdAndRole](Get-MgBetaVirtualEventTownhallByUserIdAndRole.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaVirtualEventSessionRegistrationRegistrant](Get-MgBetaVirtualEventSessionRegistrationRegistrant.md)
+### [Get-MgBetaVirtualEventTownhallByUserRole](Get-MgBetaVirtualEventTownhallByUserRole.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaVirtualEventSessionRegistrationRegistrantCount](Get-MgBetaVirtualEventSessionRegistrationRegistrantCount.md)
+### [Get-MgBetaVirtualEventTownhallCount](Get-MgBetaVirtualEventTownhallCount.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaVirtualEventSessionTranscript](Get-MgBetaVirtualEventSessionTranscript.md)
+### [Get-MgBetaVirtualEventTownhallPresenter](Get-MgBetaVirtualEventTownhallPresenter.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaVirtualEventSessionTranscriptContent](Get-MgBetaVirtualEventSessionTranscriptContent.md)
+### [Get-MgBetaVirtualEventTownhallPresenterCount](Get-MgBetaVirtualEventTownhallPresenterCount.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaVirtualEventSessionTranscriptCount](Get-MgBetaVirtualEventSessionTranscriptCount.md)
+### [Get-MgBetaVirtualEventTownhallPresenterProfilePhoto](Get-MgBetaVirtualEventTownhallPresenterProfilePhoto.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaVirtualEventSessionTranscriptMetadataContent](Get-MgBetaVirtualEventSessionTranscriptMetadataContent.md)
+### [Get-MgBetaVirtualEventTownhallPresenterSession](Get-MgBetaVirtualEventTownhallPresenterSession.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaVirtualEventTownhallPresenterSessionCount](Get-MgBetaVirtualEventTownhallPresenterSessionCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaVirtualEventTownhallSession](Get-MgBetaVirtualEventTownhallSession.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaVirtualEventTownhallSessionAttendanceReport](Get-MgBetaVirtualEventTownhallSessionAttendanceReport.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaVirtualEventTownhallSessionAttendanceReportAttendanceRecord](Get-MgBetaVirtualEventTownhallSessionAttendanceReportAttendanceRecord.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaVirtualEventTownhallSessionAttendanceReportAttendanceRecordCount](Get-MgBetaVirtualEventTownhallSessionAttendanceReportAttendanceRecordCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaVirtualEventTownhallSessionAttendanceReportCount](Get-MgBetaVirtualEventTownhallSessionAttendanceReportCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaVirtualEventTownhallSessionCount](Get-MgBetaVirtualEventTownhallSessionCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaVirtualEventTownhallSessionPresenter](Get-MgBetaVirtualEventTownhallSessionPresenter.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaVirtualEventTownhallSessionPresenterCount](Get-MgBetaVirtualEventTownhallSessionPresenterCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaVirtualEventTownhallSessionPresenterProfilePhoto](Get-MgBetaVirtualEventTownhallSessionPresenterProfilePhoto.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaVirtualEventTownhallSessionRegistration](Get-MgBetaVirtualEventTownhallSessionRegistration.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaVirtualEventTownhallSessionRegistrationCount](Get-MgBetaVirtualEventTownhallSessionRegistrationCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinar](Get-MgBetaVirtualEventWebinar.md)
@@ -221,6 +236,15 @@ Locale: en-US
 ### [Get-MgBetaVirtualEventWebinarPresenterCount](Get-MgBetaVirtualEventWebinarPresenterCount.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaVirtualEventWebinarPresenterProfilePhoto](Get-MgBetaVirtualEventWebinarPresenterProfilePhoto.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaVirtualEventWebinarPresenterSession](Get-MgBetaVirtualEventWebinarPresenterSession.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaVirtualEventWebinarPresenterSessionCount](Get-MgBetaVirtualEventWebinarPresenterSessionCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaVirtualEventWebinarRegistration](Get-MgBetaVirtualEventWebinarRegistration.md)
 {{ Fill in the Description }}
 
@@ -233,25 +257,10 @@ Locale: en-US
 ### [Get-MgBetaVirtualEventWebinarRegistrationSession](Get-MgBetaVirtualEventWebinarRegistrationSession.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaVirtualEventWebinarRegistrationSessionAlternativeRecording](Get-MgBetaVirtualEventWebinarRegistrationSessionAlternativeRecording.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaVirtualEventWebinarRegistrationSessionAttendeeReport](Get-MgBetaVirtualEventWebinarRegistrationSessionAttendeeReport.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaVirtualEventWebinarRegistrationSessionBroadcastRecording](Get-MgBetaVirtualEventWebinarRegistrationSessionBroadcastRecording.md)
-{{ Fill in the Description }}
-
 ### [Get-MgBetaVirtualEventWebinarRegistrationSessionCount](Get-MgBetaVirtualEventWebinarRegistrationSessionCount.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaVirtualEventWebinarRegistrationSessionRecording](Get-MgBetaVirtualEventWebinarRegistrationSessionRecording.md)
-{{ Fill in the Description }}
-
 ### [Get-MgBetaVirtualEventWebinarSession](Get-MgBetaVirtualEventWebinarSession.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaVirtualEventWebinarSessionAlternativeRecording](Get-MgBetaVirtualEventWebinarSessionAlternativeRecording.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarSessionAttendanceReport](Get-MgBetaVirtualEventWebinarSessionAttendanceReport.md)
@@ -266,61 +275,22 @@ Locale: en-US
 ### [Get-MgBetaVirtualEventWebinarSessionAttendanceReportCount](Get-MgBetaVirtualEventWebinarSessionAttendanceReportCount.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaVirtualEventWebinarSessionAttendeeReport](Get-MgBetaVirtualEventWebinarSessionAttendeeReport.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaVirtualEventWebinarSessionBroadcastRecording](Get-MgBetaVirtualEventWebinarSessionBroadcastRecording.md)
-{{ Fill in the Description }}
-
 ### [Get-MgBetaVirtualEventWebinarSessionCount](Get-MgBetaVirtualEventWebinarSessionCount.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaVirtualEventWebinarSessionMeetingAttendanceReport](Get-MgBetaVirtualEventWebinarSessionMeetingAttendanceReport.md)
+### [Get-MgBetaVirtualEventWebinarSessionPresenter](Get-MgBetaVirtualEventWebinarSessionPresenter.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaVirtualEventWebinarSessionMeetingAttendanceReportAttendanceRecord](Get-MgBetaVirtualEventWebinarSessionMeetingAttendanceReportAttendanceRecord.md)
+### [Get-MgBetaVirtualEventWebinarSessionPresenterCount](Get-MgBetaVirtualEventWebinarSessionPresenterCount.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaVirtualEventWebinarSessionMeetingAttendanceReportAttendanceRecordCount](Get-MgBetaVirtualEventWebinarSessionMeetingAttendanceReportAttendanceRecordCount.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaVirtualEventWebinarSessionRecording](Get-MgBetaVirtualEventWebinarSessionRecording.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaVirtualEventWebinarSessionRecordingContent](Get-MgBetaVirtualEventWebinarSessionRecordingContent.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaVirtualEventWebinarSessionRecordingCount](Get-MgBetaVirtualEventWebinarSessionRecordingCount.md)
+### [Get-MgBetaVirtualEventWebinarSessionPresenterProfilePhoto](Get-MgBetaVirtualEventWebinarSessionPresenterProfilePhoto.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarSessionRegistration](Get-MgBetaVirtualEventWebinarSessionRegistration.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarSessionRegistrationCount](Get-MgBetaVirtualEventWebinarSessionRegistrationCount.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaVirtualEventWebinarSessionRegistrationCustomQuestion](Get-MgBetaVirtualEventWebinarSessionRegistrationCustomQuestion.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaVirtualEventWebinarSessionRegistrationCustomQuestionCount](Get-MgBetaVirtualEventWebinarSessionRegistrationCustomQuestionCount.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaVirtualEventWebinarSessionRegistrationRegistrant](Get-MgBetaVirtualEventWebinarSessionRegistrationRegistrant.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaVirtualEventWebinarSessionRegistrationRegistrantCount](Get-MgBetaVirtualEventWebinarSessionRegistrationRegistrantCount.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaVirtualEventWebinarSessionTranscript](Get-MgBetaVirtualEventWebinarSessionTranscript.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaVirtualEventWebinarSessionTranscriptContent](Get-MgBetaVirtualEventWebinarSessionTranscriptContent.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaVirtualEventWebinarSessionTranscriptCount](Get-MgBetaVirtualEventWebinarSessionTranscriptCount.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaVirtualEventWebinarSessionTranscriptMetadataContent](Get-MgBetaVirtualEventWebinarSessionTranscriptMetadataContent.md)
 {{ Fill in the Description }}
 
 ### [New-MgBetaBookingBusiness](New-MgBetaBookingBusiness.md)
@@ -371,19 +341,19 @@ Locale: en-US
 ### [New-MgBetaVirtualEventSessionAttendanceReportAttendanceRecord](New-MgBetaVirtualEventSessionAttendanceReportAttendanceRecord.md)
 {{ Fill in the Description }}
 
-### [New-MgBetaVirtualEventSessionMeetingAttendanceReportAttendanceRecord](New-MgBetaVirtualEventSessionMeetingAttendanceReportAttendanceRecord.md)
+### [New-MgBetaVirtualEventTownhall](New-MgBetaVirtualEventTownhall.md)
 {{ Fill in the Description }}
 
-### [New-MgBetaVirtualEventSessionRecording](New-MgBetaVirtualEventSessionRecording.md)
+### [New-MgBetaVirtualEventTownhallPresenter](New-MgBetaVirtualEventTownhallPresenter.md)
 {{ Fill in the Description }}
 
-### [New-MgBetaVirtualEventSessionRegistrationCustomQuestion](New-MgBetaVirtualEventSessionRegistrationCustomQuestion.md)
+### [New-MgBetaVirtualEventTownhallSession](New-MgBetaVirtualEventTownhallSession.md)
 {{ Fill in the Description }}
 
-### [New-MgBetaVirtualEventSessionRegistrationRegistrant](New-MgBetaVirtualEventSessionRegistrationRegistrant.md)
+### [New-MgBetaVirtualEventTownhallSessionAttendanceReport](New-MgBetaVirtualEventTownhallSessionAttendanceReport.md)
 {{ Fill in the Description }}
 
-### [New-MgBetaVirtualEventSessionTranscript](New-MgBetaVirtualEventSessionTranscript.md)
+### [New-MgBetaVirtualEventTownhallSessionAttendanceReportAttendanceRecord](New-MgBetaVirtualEventTownhallSessionAttendanceReportAttendanceRecord.md)
 {{ Fill in the Description }}
 
 ### [New-MgBetaVirtualEventWebinar](New-MgBetaVirtualEventWebinar.md)
@@ -404,22 +374,10 @@ Locale: en-US
 ### [New-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord](New-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord.md)
 {{ Fill in the Description }}
 
-### [New-MgBetaVirtualEventWebinarSessionMeetingAttendanceReportAttendanceRecord](New-MgBetaVirtualEventWebinarSessionMeetingAttendanceReportAttendanceRecord.md)
-{{ Fill in the Description }}
-
-### [New-MgBetaVirtualEventWebinarSessionRecording](New-MgBetaVirtualEventWebinarSessionRecording.md)
-{{ Fill in the Description }}
-
-### [New-MgBetaVirtualEventWebinarSessionRegistrationCustomQuestion](New-MgBetaVirtualEventWebinarSessionRegistrationCustomQuestion.md)
-{{ Fill in the Description }}
-
-### [New-MgBetaVirtualEventWebinarSessionRegistrationRegistrant](New-MgBetaVirtualEventWebinarSessionRegistrationRegistrant.md)
-{{ Fill in the Description }}
-
-### [New-MgBetaVirtualEventWebinarSessionTranscript](New-MgBetaVirtualEventWebinarSessionTranscript.md)
-{{ Fill in the Description }}
-
 ### [Publish-MgBetaBookingBusiness](Publish-MgBetaBookingBusiness.md)
+{{ Fill in the Description }}
+
+### [Publish-MgBetaVirtualEvent](Publish-MgBetaVirtualEvent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaBookingBusiness](Remove-MgBetaBookingBusiness.md)
@@ -491,25 +449,19 @@ Locale: en-US
 ### [Remove-MgBetaVirtualEventSessionAttendanceReportAttendanceRecord](Remove-MgBetaVirtualEventSessionAttendanceReportAttendanceRecord.md)
 {{ Fill in the Description }}
 
-### [Remove-MgBetaVirtualEventSessionMeetingAttendanceReport](Remove-MgBetaVirtualEventSessionMeetingAttendanceReport.md)
+### [Remove-MgBetaVirtualEventTownhall](Remove-MgBetaVirtualEventTownhall.md)
 {{ Fill in the Description }}
 
-### [Remove-MgBetaVirtualEventSessionMeetingAttendanceReportAttendanceRecord](Remove-MgBetaVirtualEventSessionMeetingAttendanceReportAttendanceRecord.md)
+### [Remove-MgBetaVirtualEventTownhallPresenter](Remove-MgBetaVirtualEventTownhallPresenter.md)
 {{ Fill in the Description }}
 
-### [Remove-MgBetaVirtualEventSessionRecording](Remove-MgBetaVirtualEventSessionRecording.md)
+### [Remove-MgBetaVirtualEventTownhallSession](Remove-MgBetaVirtualEventTownhallSession.md)
 {{ Fill in the Description }}
 
-### [Remove-MgBetaVirtualEventSessionRegistration](Remove-MgBetaVirtualEventSessionRegistration.md)
+### [Remove-MgBetaVirtualEventTownhallSessionAttendanceReport](Remove-MgBetaVirtualEventTownhallSessionAttendanceReport.md)
 {{ Fill in the Description }}
 
-### [Remove-MgBetaVirtualEventSessionRegistrationCustomQuestion](Remove-MgBetaVirtualEventSessionRegistrationCustomQuestion.md)
-{{ Fill in the Description }}
-
-### [Remove-MgBetaVirtualEventSessionRegistrationRegistrant](Remove-MgBetaVirtualEventSessionRegistrationRegistrant.md)
-{{ Fill in the Description }}
-
-### [Remove-MgBetaVirtualEventSessionTranscript](Remove-MgBetaVirtualEventSessionTranscript.md)
+### [Remove-MgBetaVirtualEventTownhallSessionAttendanceReportAttendanceRecord](Remove-MgBetaVirtualEventTownhallSessionAttendanceReportAttendanceRecord.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaVirtualEventWebinar](Remove-MgBetaVirtualEventWebinar.md)
@@ -530,85 +482,31 @@ Locale: en-US
 ### [Remove-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord](Remove-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord.md)
 {{ Fill in the Description }}
 
-### [Remove-MgBetaVirtualEventWebinarSessionMeetingAttendanceReport](Remove-MgBetaVirtualEventWebinarSessionMeetingAttendanceReport.md)
+### [Set-MgBetaVirtualEventPresenterProfilePhoto](Set-MgBetaVirtualEventPresenterProfilePhoto.md)
 {{ Fill in the Description }}
 
-### [Remove-MgBetaVirtualEventWebinarSessionMeetingAttendanceReportAttendanceRecord](Remove-MgBetaVirtualEventWebinarSessionMeetingAttendanceReportAttendanceRecord.md)
+### [Set-MgBetaVirtualEventSessionPresenterProfilePhoto](Set-MgBetaVirtualEventSessionPresenterProfilePhoto.md)
 {{ Fill in the Description }}
 
-### [Remove-MgBetaVirtualEventWebinarSessionRecording](Remove-MgBetaVirtualEventWebinarSessionRecording.md)
+### [Set-MgBetaVirtualEventTownhallPresenterProfilePhoto](Set-MgBetaVirtualEventTownhallPresenterProfilePhoto.md)
 {{ Fill in the Description }}
 
-### [Remove-MgBetaVirtualEventWebinarSessionRegistration](Remove-MgBetaVirtualEventWebinarSessionRegistration.md)
+### [Set-MgBetaVirtualEventTownhallSessionPresenterProfilePhoto](Set-MgBetaVirtualEventTownhallSessionPresenterProfilePhoto.md)
 {{ Fill in the Description }}
 
-### [Remove-MgBetaVirtualEventWebinarSessionRegistrationCustomQuestion](Remove-MgBetaVirtualEventWebinarSessionRegistrationCustomQuestion.md)
+### [Set-MgBetaVirtualEventWebinarPresenterProfilePhoto](Set-MgBetaVirtualEventWebinarPresenterProfilePhoto.md)
 {{ Fill in the Description }}
 
-### [Remove-MgBetaVirtualEventWebinarSessionRegistrationRegistrant](Remove-MgBetaVirtualEventWebinarSessionRegistrationRegistrant.md)
-{{ Fill in the Description }}
-
-### [Remove-MgBetaVirtualEventWebinarSessionTranscript](Remove-MgBetaVirtualEventWebinarSessionTranscript.md)
-{{ Fill in the Description }}
-
-### [Set-MgBetaVirtualEventSessionAlternativeRecording](Set-MgBetaVirtualEventSessionAlternativeRecording.md)
-{{ Fill in the Description }}
-
-### [Set-MgBetaVirtualEventSessionAttendeeReport](Set-MgBetaVirtualEventSessionAttendeeReport.md)
-{{ Fill in the Description }}
-
-### [Set-MgBetaVirtualEventSessionBroadcastRecording](Set-MgBetaVirtualEventSessionBroadcastRecording.md)
-{{ Fill in the Description }}
-
-### [Set-MgBetaVirtualEventSessionRecording](Set-MgBetaVirtualEventSessionRecording.md)
-{{ Fill in the Description }}
-
-### [Set-MgBetaVirtualEventSessionRecordingContent](Set-MgBetaVirtualEventSessionRecordingContent.md)
-{{ Fill in the Description }}
-
-### [Set-MgBetaVirtualEventSessionTranscriptContent](Set-MgBetaVirtualEventSessionTranscriptContent.md)
-{{ Fill in the Description }}
-
-### [Set-MgBetaVirtualEventSessionTranscriptMetadataContent](Set-MgBetaVirtualEventSessionTranscriptMetadataContent.md)
-{{ Fill in the Description }}
-
-### [Set-MgBetaVirtualEventWebinarRegistrationSessionAlternativeRecording](Set-MgBetaVirtualEventWebinarRegistrationSessionAlternativeRecording.md)
-{{ Fill in the Description }}
-
-### [Set-MgBetaVirtualEventWebinarRegistrationSessionAttendeeReport](Set-MgBetaVirtualEventWebinarRegistrationSessionAttendeeReport.md)
-{{ Fill in the Description }}
-
-### [Set-MgBetaVirtualEventWebinarRegistrationSessionBroadcastRecording](Set-MgBetaVirtualEventWebinarRegistrationSessionBroadcastRecording.md)
-{{ Fill in the Description }}
-
-### [Set-MgBetaVirtualEventWebinarRegistrationSessionRecording](Set-MgBetaVirtualEventWebinarRegistrationSessionRecording.md)
-{{ Fill in the Description }}
-
-### [Set-MgBetaVirtualEventWebinarSessionAlternativeRecording](Set-MgBetaVirtualEventWebinarSessionAlternativeRecording.md)
-{{ Fill in the Description }}
-
-### [Set-MgBetaVirtualEventWebinarSessionAttendeeReport](Set-MgBetaVirtualEventWebinarSessionAttendeeReport.md)
-{{ Fill in the Description }}
-
-### [Set-MgBetaVirtualEventWebinarSessionBroadcastRecording](Set-MgBetaVirtualEventWebinarSessionBroadcastRecording.md)
-{{ Fill in the Description }}
-
-### [Set-MgBetaVirtualEventWebinarSessionRecording](Set-MgBetaVirtualEventWebinarSessionRecording.md)
-{{ Fill in the Description }}
-
-### [Set-MgBetaVirtualEventWebinarSessionRecordingContent](Set-MgBetaVirtualEventWebinarSessionRecordingContent.md)
-{{ Fill in the Description }}
-
-### [Set-MgBetaVirtualEventWebinarSessionTranscriptContent](Set-MgBetaVirtualEventWebinarSessionTranscriptContent.md)
-{{ Fill in the Description }}
-
-### [Set-MgBetaVirtualEventWebinarSessionTranscriptMetadataContent](Set-MgBetaVirtualEventWebinarSessionTranscriptMetadataContent.md)
+### [Set-MgBetaVirtualEventWebinarSessionPresenterProfilePhoto](Set-MgBetaVirtualEventWebinarSessionPresenterProfilePhoto.md)
 {{ Fill in the Description }}
 
 ### [Stop-MgBetaBookingBusinessAppointment](Stop-MgBetaBookingBusinessAppointment.md)
 {{ Fill in the Description }}
 
 ### [Stop-MgBetaBookingBusinessCalendarView](Stop-MgBetaBookingBusinessCalendarView.md)
+{{ Fill in the Description }}
+
+### [Stop-MgBetaVirtualEvent](Stop-MgBetaVirtualEvent.md)
 {{ Fill in the Description }}
 
 ### [Unpublish-MgBetaBookingBusiness](Unpublish-MgBetaBookingBusiness.md)
@@ -683,25 +581,19 @@ Locale: en-US
 ### [Update-MgBetaVirtualEventSessionAttendanceReportAttendanceRecord](Update-MgBetaVirtualEventSessionAttendanceReportAttendanceRecord.md)
 {{ Fill in the Description }}
 
-### [Update-MgBetaVirtualEventSessionMeetingAttendanceReport](Update-MgBetaVirtualEventSessionMeetingAttendanceReport.md)
+### [Update-MgBetaVirtualEventTownhall](Update-MgBetaVirtualEventTownhall.md)
 {{ Fill in the Description }}
 
-### [Update-MgBetaVirtualEventSessionMeetingAttendanceReportAttendanceRecord](Update-MgBetaVirtualEventSessionMeetingAttendanceReportAttendanceRecord.md)
+### [Update-MgBetaVirtualEventTownhallPresenter](Update-MgBetaVirtualEventTownhallPresenter.md)
 {{ Fill in the Description }}
 
-### [Update-MgBetaVirtualEventSessionRecording](Update-MgBetaVirtualEventSessionRecording.md)
+### [Update-MgBetaVirtualEventTownhallSession](Update-MgBetaVirtualEventTownhallSession.md)
 {{ Fill in the Description }}
 
-### [Update-MgBetaVirtualEventSessionRegistration](Update-MgBetaVirtualEventSessionRegistration.md)
+### [Update-MgBetaVirtualEventTownhallSessionAttendanceReport](Update-MgBetaVirtualEventTownhallSessionAttendanceReport.md)
 {{ Fill in the Description }}
 
-### [Update-MgBetaVirtualEventSessionRegistrationCustomQuestion](Update-MgBetaVirtualEventSessionRegistrationCustomQuestion.md)
-{{ Fill in the Description }}
-
-### [Update-MgBetaVirtualEventSessionRegistrationRegistrant](Update-MgBetaVirtualEventSessionRegistrationRegistrant.md)
-{{ Fill in the Description }}
-
-### [Update-MgBetaVirtualEventSessionTranscript](Update-MgBetaVirtualEventSessionTranscript.md)
+### [Update-MgBetaVirtualEventTownhallSessionAttendanceReportAttendanceRecord](Update-MgBetaVirtualEventTownhallSessionAttendanceReportAttendanceRecord.md)
 {{ Fill in the Description }}
 
 ### [Update-MgBetaVirtualEventWebinar](Update-MgBetaVirtualEventWebinar.md)
@@ -720,27 +612,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord](Update-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord.md)
-{{ Fill in the Description }}
-
-### [Update-MgBetaVirtualEventWebinarSessionMeetingAttendanceReport](Update-MgBetaVirtualEventWebinarSessionMeetingAttendanceReport.md)
-{{ Fill in the Description }}
-
-### [Update-MgBetaVirtualEventWebinarSessionMeetingAttendanceReportAttendanceRecord](Update-MgBetaVirtualEventWebinarSessionMeetingAttendanceReportAttendanceRecord.md)
-{{ Fill in the Description }}
-
-### [Update-MgBetaVirtualEventWebinarSessionRecording](Update-MgBetaVirtualEventWebinarSessionRecording.md)
-{{ Fill in the Description }}
-
-### [Update-MgBetaVirtualEventWebinarSessionRegistration](Update-MgBetaVirtualEventWebinarSessionRegistration.md)
-{{ Fill in the Description }}
-
-### [Update-MgBetaVirtualEventWebinarSessionRegistrationCustomQuestion](Update-MgBetaVirtualEventWebinarSessionRegistrationCustomQuestion.md)
-{{ Fill in the Description }}
-
-### [Update-MgBetaVirtualEventWebinarSessionRegistrationRegistrant](Update-MgBetaVirtualEventWebinarSessionRegistrationRegistrant.md)
-{{ Fill in the Description }}
-
-### [Update-MgBetaVirtualEventWebinarSessionTranscript](Update-MgBetaVirtualEventWebinarSessionTranscript.md)
 {{ Fill in the Description }}
 
 

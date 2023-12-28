@@ -11,7 +11,6 @@ ms.prod: applications
 ## SYNOPSIS
 Parse a given string expression into an attributeMappingSource object.
 For more information about expressions, see Writing Expressions for Attribute Mappings in Microsoft Entra ID.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaParseApplicationSynchronizationTemplateSchemaExpression](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaParseApplicationSynchronizationTemplateSchemaExpression?view=graph-powershell-beta)
@@ -52,8 +51,8 @@ Invoke-MgParseApplicationSynchronizationTemplateSchemaExpression -InputObject <I
 ## DESCRIPTION
 Parse a given string expression into an attributeMappingSource object.
 For more information about expressions, see Writing Expressions for Attribute Mappings in Microsoft Entra ID.
-This API is available in the following national cloud deployments.
 
+**Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationschema-parseexpression-permissions.md)]
 
 ## PARAMETERS
@@ -385,7 +384,6 @@ Not nullable.
 [Invoke-MgBetaParseApplicationSynchronizationTemplateSchemaExpression](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaParseApplicationSynchronizationTemplateSchemaExpression?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgparseapplicationsynchronizationtemplateschemaexpression](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgparseapplicationsynchronizationtemplateschemaexpression)
-
 
 
 

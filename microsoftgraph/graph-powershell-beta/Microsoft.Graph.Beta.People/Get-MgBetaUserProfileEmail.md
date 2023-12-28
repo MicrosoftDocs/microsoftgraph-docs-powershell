@@ -11,7 +11,6 @@ ms.prod: people
 
 ## SYNOPSIS
 Retrieve the properties and relationships of an itemEmail object in a user's profile.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -36,7 +35,12 @@ Get-MgBetaUserProfileEmail -InputObject <IPeopleIdentity> [-ExpandProperty <Stri
 
 ## DESCRIPTION
 Retrieve the properties and relationships of an itemEmail object in a user's profile.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/itememail-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/profile-list-emails-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserProfileEmail Cmdlet

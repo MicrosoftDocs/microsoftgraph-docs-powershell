@@ -10,7 +10,6 @@ ms.prod: service-communications
 
 ## SYNOPSIS
 Archive a list of serviceUpdateMessages for the signed in user.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaArchiveServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Invoke-MgBetaArchiveServiceAnnouncementMessage?view=graph-powershell-beta)
@@ -32,8 +31,8 @@ Invoke-MgArchiveServiceAnnouncementMessage
 
 ## DESCRIPTION
 Archive a list of serviceUpdateMessages for the signed in user.
-This API is available in the following national cloud deployments.
 
+**Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceupdatemessage-archive-permissions.md)]
 
 ## EXAMPLES

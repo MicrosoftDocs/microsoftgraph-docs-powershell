@@ -10,7 +10,6 @@ ms.prod: education
 
 ## SYNOPSIS
 Add a teacher to a class.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaEducationClassTeacherByRef](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassTeacherByRef?view=graph-powershell-beta)
@@ -43,7 +42,9 @@ New-MgEducationClassTeacherByRef -InputObject <IEducationIdentity> -BodyParamete
 
 ## DESCRIPTION
 Add a teacher to a class.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationclass-post-teachers-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

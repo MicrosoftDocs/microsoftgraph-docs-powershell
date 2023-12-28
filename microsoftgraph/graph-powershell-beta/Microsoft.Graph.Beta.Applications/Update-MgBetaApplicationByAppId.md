@@ -10,7 +10,6 @@ ms.prod: applications
 
 ## SYNOPSIS
 Update the properties of an application object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgApplicationByAppId](/powershell/module/Microsoft.Graph.Applications/Update-MgApplicationByAppId?view=graph-powershell-1.0)
@@ -95,7 +94,9 @@ Update-MgBetaApplicationByAppId -InputObject <IApplicationsIdentity>
 
 ## DESCRIPTION
 Update the properties of an application object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-update-permissions.md)]
 
 ## PARAMETERS
 

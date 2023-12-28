@@ -11,7 +11,6 @@ ms.prod: education
 ## SYNOPSIS
 Delete an educationRubric object.
 Only teachers can perform this operation.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaEducationUserRubric](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationUserRubric?view=graph-powershell-beta)
@@ -33,7 +32,9 @@ Remove-MgEducationUserRubric -InputObject <IEducationIdentity> [-IfMatch <String
 ## DESCRIPTION
 Delete an educationRubric object.
 Only teachers can perform this operation.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationrubric-delete-permissions.md)]
 
 ## PARAMETERS
 

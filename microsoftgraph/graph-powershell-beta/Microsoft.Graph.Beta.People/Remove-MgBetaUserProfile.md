@@ -10,7 +10,6 @@ ms.prod: people
 
 ## SYNOPSIS
 Deletes a profile object from a user's account.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,9 @@ Remove-MgBetaUserProfile -InputObject <IPeopleIdentity> [-IfMatch <String>] [-Pa
 
 ## DESCRIPTION
 Deletes a profile object from a user's account.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/profile-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaUserProfile Cmdlet

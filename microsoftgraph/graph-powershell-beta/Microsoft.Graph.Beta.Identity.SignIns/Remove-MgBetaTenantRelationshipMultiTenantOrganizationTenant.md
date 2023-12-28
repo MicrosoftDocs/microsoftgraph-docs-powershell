@@ -11,7 +11,6 @@ ms.prod: identity-and-sign-in
 ## SYNOPSIS
 Remove a tenant from a multitenant organization.
 A tenant can be removed in the following scenarios: To allow for asynchronous processing, you must wait for up to 2 hours before removal of a tenant is completed.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -30,7 +29,9 @@ Remove-MgBetaTenantRelationshipMultiTenantOrganizationTenant -InputObject <IIden
 ## DESCRIPTION
 Remove a tenant from a multitenant organization.
 A tenant can be removed in the following scenarios: To allow for asynchronous processing, you must wait for up to 2 hours before removal of a tenant is completed.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/multitenantorganization-delete-tenants-permissions.md)]
 
 ## PARAMETERS
 
@@ -145,6 +146,7 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[ActivityBasedTimeoutPolicyId \<String\>\]: The unique identifier of activityBasedTimeoutPolicy
   \[AppManagementPolicyId \<String\>\]: The unique identifier of appManagementPolicy
   \[AuthenticationCombinationConfigurationId \<String\>\]: The unique identifier of authenticationCombinationConfiguration
+  \[AuthenticationConditionApplicationAppId \<String\>\]: The unique identifier of authenticationConditionApplication
   \[AuthenticationContextClassReferenceId \<String\>\]: The unique identifier of authenticationContextClassReference
   \[AuthenticationEventListenerId \<String\>\]: The unique identifier of authenticationEventListener
   \[AuthenticationEventsFlowId \<String\>\]: The unique identifier of authenticationEventsFlow

@@ -12,7 +12,6 @@ ms.prod: applications
 Create new synchronization job with a default synchronization schema.
 The job is created in a disabled state.
 Call Start job to start synchronization.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalSynchronizationJob?view=graph-powershell-1.0)
@@ -53,7 +52,9 @@ New-MgBetaServicePrincipalSynchronizationJob -InputObject <IApplicationsIdentity
 Create new synchronization job with a default synchronization schema.
 The job is created in a disabled state.
 Call Start job to start synchronization.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronization-post-jobs-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaServicePrincipalSynchronizationJob Cmdlet

@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Deletes a linkedResource object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserTodoListTaskLinkedResource](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserTodoListTaskLinkedResource?view=graph-powershell-beta)
@@ -32,7 +31,6 @@ Remove-MgUserTodoListTaskLinkedResource -InputObject <IUsersIdentity> [-IfMatch 
 
 ## DESCRIPTION
 Deletes a linkedResource object.
-This API is available in the following national cloud deployments.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/linkedresource-delete-permissions.md)]
@@ -224,6 +222,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Remove-MgBetaUserTodoListTaskLinkedResource](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserTodoListTaskLinkedResource?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolisttasklinkedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolisttasklinkedresource)
-
 
 

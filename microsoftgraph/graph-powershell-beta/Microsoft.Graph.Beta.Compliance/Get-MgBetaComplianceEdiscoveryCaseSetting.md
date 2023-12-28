@@ -10,7 +10,6 @@ ms.prod: ediscovery
 
 ## SYNOPSIS
 Read the properties and relationships of an eDiscovery caseSettings object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,9 @@ Get-MgBetaComplianceEdiscoveryCaseSetting -InputObject <IComplianceIdentity> [-E
 
 ## DESCRIPTION
 Read the properties and relationships of an eDiscovery caseSettings object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-casesettings-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaComplianceEdiscoveryCaseSetting Cmdlet

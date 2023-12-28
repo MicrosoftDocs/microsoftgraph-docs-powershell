@@ -40,6 +40,9 @@ Get-MgBetaUserDriveFollowing -InputObject <IFilesIdentity> [-ExpandProperty <Str
 The list of items the user is following.
 Only in OneDrive for Business.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/drive-list-following-permissions.md)]
+
 ## PARAMETERS
 
 ### -All

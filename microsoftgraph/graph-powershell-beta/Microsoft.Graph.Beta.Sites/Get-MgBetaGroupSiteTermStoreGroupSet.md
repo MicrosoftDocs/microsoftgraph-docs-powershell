@@ -38,6 +38,9 @@ Get-MgBetaGroupSiteTermStoreGroupSet -InputObject <ISitesIdentity> [-ExpandPrope
 ## DESCRIPTION
 All sets under the group in a term \[store\].
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/termstore-group-list-sets-permissions.md)]
+
 ## PARAMETERS
 
 ### -All

@@ -40,6 +40,9 @@ Get-MgBetaGroupTransitiveMember -InputObject <IGroupsIdentity> [-ExpandProperty 
 The direct and transitive members of a group.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-transitivemembers-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaGroupTransitiveMember Cmdlet
 ```powershell

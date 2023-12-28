@@ -10,7 +10,6 @@ ms.prod: applications
 
 ## SYNOPSIS
 Delete single sign-on credentials using a password for a user or group.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -42,7 +41,6 @@ Remove-MgBetaServicePrincipalPasswordSingleSignOnCredential -InputObject <IAppli
 
 ## DESCRIPTION
 Delete single sign-on credentials using a password for a user or group.
-This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -225,7 +223,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalpasswordsinglesignoncredential](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalpasswordsinglesignoncredential)
-
 
 
 

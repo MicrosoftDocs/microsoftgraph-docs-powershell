@@ -12,7 +12,7 @@ ms.prod: applications
 Assign an app role to a client service principal.
 App roles that are assigned to service principals are also known as application permissions.
 Application permissions can be granted directly with app role assignments, or through a consent experience.
-To grant an app role assignment to a client service principal, you need three identifiers: This API is available in the following national cloud deployments.
+To grant an app role assignment to a client service principal, you need three identifiers:
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaServicePrincipalAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalAppRoleAssignment?view=graph-powershell-beta)
@@ -52,7 +52,7 @@ New-MgServicePrincipalAppRoleAssignment -InputObject <IApplicationsIdentity>
 Assign an app role to a client service principal.
 App roles that are assigned to service principals are also known as application permissions.
 Application permissions can be granted directly with app role assignments, or through a consent experience.
-To grant an app role assignment to a client service principal, you need three identifiers: This API is available in the following national cloud deployments.
+To grant an app role assignment to a client service principal, you need three identifiers:
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -391,6 +391,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [New-MgBetaServicePrincipalAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalAppRoleAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalapproleassignment)
-
 
 

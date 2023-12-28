@@ -10,7 +10,6 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Remove a user as a registered user of the device.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,9 @@ Remove-MgBetaUserDeviceRegisteredUserByRef -InputObject <ICrossDeviceExperiences
 
 ## DESCRIPTION
 Remove a user as a registered user of the device.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-delete-registeredusers-permissions.md)]
 
 ## PARAMETERS
 

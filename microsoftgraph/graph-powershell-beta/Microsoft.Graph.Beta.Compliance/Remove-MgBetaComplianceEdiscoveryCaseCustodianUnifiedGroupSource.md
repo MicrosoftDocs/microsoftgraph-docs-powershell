@@ -10,7 +10,6 @@ ms.prod: ediscovery
 
 ## SYNOPSIS
 Delete a unifiedGroupSource object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,9 @@ Remove-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource -InputObject <I
 
 ## DESCRIPTION
 Delete a unifiedGroupSource object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-unifiedgroupsource-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource Cmdlet

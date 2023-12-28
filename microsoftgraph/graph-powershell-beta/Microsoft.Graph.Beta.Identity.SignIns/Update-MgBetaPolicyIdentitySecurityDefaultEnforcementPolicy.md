@@ -10,7 +10,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Update the properties of an identitySecurityDefaultsEnforcementPolicy object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgPolicyIdentitySecurityDefaultEnforcementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyIdentitySecurityDefaultEnforcementPolicy?view=graph-powershell-1.0)
@@ -33,7 +32,6 @@ Update-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy
 
 ## DESCRIPTION
 Update the properties of an identitySecurityDefaultsEnforcementPolicy object.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

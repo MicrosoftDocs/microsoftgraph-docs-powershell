@@ -9,8 +9,7 @@ ms.prod: sharepoint
 # Revoke-MgBetaSharePermissionGrant
 
 ## SYNOPSIS
-Revoke access to a listItem\]\[\] or \[driveItem\]\[\] granted via a sharing link by removing the specified \[recipient\]\[\] from the link.
-This API is available in the following \[national cloud deployments.
+Revoke access to a \[listItem\]\[\] or \[driveItem\]\[\] granted via a sharing link by removing the specified \[recipient\]\[\] from the link.
 
 ## SYNTAX
 
@@ -41,8 +40,10 @@ Revoke-MgBetaSharePermissionGrant -InputObject <IFilesIdentity>
 ```
 
 ## DESCRIPTION
-Revoke access to a listItem\]\[\] or \[driveItem\]\[\] granted via a sharing link by removing the specified \[recipient\]\[\] from the link.
-This API is available in the following \[national cloud deployments.
+Revoke access to a \[listItem\]\[\] or \[driveItem\]\[\] granted via a sharing link by removing the specified \[recipient\]\[\] from the link.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permission-revokegrants-permissions.md)]
 
 ## PARAMETERS
 
@@ -214,5 +215,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/revoke-mgbetasharepermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/revoke-mgbetasharepermissiongrant)
+
 
 

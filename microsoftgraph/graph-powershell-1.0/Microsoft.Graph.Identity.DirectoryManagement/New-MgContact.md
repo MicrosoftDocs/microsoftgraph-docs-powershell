@@ -652,3 +652,4 @@ Always null when the object hasn't been deleted.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgcontact](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgcontact)
 
+

@@ -11,7 +11,7 @@ ms.prod: security
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a specified threatAssessmentRequest object.
-A threat assessment request can be one of the following types: This API is available in the following national cloud deployments.
+A threat assessment request can be one of the following types:
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInformationProtectionThreatAssessmentRequest?view=graph-powershell-beta)
@@ -39,7 +39,13 @@ Get-MgInformationProtectionThreatAssessmentRequest -InputObject <IIdentitySignIn
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a specified threatAssessmentRequest object.
-A threat assessment request can be one of the following types: This API is available in the following national cloud deployments.
+A threat assessment request can be one of the following types:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/threatassessmentrequest-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/informationprotection-list-threatassessmentrequests-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get the properties of a mail assessment request

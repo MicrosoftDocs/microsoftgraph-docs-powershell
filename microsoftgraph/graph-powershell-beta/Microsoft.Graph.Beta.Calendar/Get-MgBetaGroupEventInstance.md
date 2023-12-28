@@ -46,6 +46,9 @@ Navigation property.
 Read-only.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-list-instances-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -11,7 +11,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 Get the details of a policy assignment in PIM that's assigned to Microsoft Entra roles or group membership or ownership.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPolicyRoleManagementPolicyAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyRoleManagementPolicyAssignment?view=graph-powershell-beta)
@@ -39,7 +38,12 @@ Get-MgPolicyRoleManagementPolicyAssignment -InputObject <IIdentitySignInsIdentit
 
 ## DESCRIPTION
 Get the details of a policy assignment in PIM that's assigned to Microsoft Entra roles or group membership or ownership.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedrolemanagementpolicyassignment-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/policyroot-list-rolemanagementpolicyassignments-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Retrieve a role management policy assignment

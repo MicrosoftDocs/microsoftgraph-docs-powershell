@@ -11,7 +11,6 @@ ms.prod: ediscovery
 
 ## SYNOPSIS
 Read the properties and relationships of a noncustodialDataSource object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -36,7 +35,12 @@ Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -InputObject <IComplian
 
 ## DESCRIPTION
 Read the properties and relationships of a noncustodialDataSource object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-noncustodialdatasource-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-noncustodialdatasource-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource Cmdlet

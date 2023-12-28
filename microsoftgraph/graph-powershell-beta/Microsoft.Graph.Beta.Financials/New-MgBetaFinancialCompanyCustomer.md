@@ -688,3 +688,4 @@ SHIPMENTMETHOD \<IMicrosoftGraphShipmentMethod\>: shipmentMethod
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanycustomer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanycustomer)
 
 
+

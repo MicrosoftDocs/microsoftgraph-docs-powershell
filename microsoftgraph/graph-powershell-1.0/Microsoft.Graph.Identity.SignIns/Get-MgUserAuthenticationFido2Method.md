@@ -11,7 +11,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Retrieve a user's single FIDO2 Security Key Authentication Method object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserAuthenticationFido2Method](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationFido2Method?view=graph-powershell-beta)
@@ -39,7 +38,12 @@ Get-MgUserAuthenticationFido2Method -InputObject <IIdentitySignInsIdentity> [-Ex
 
 ## DESCRIPTION
 Retrieve a user's single FIDO2 Security Key Authentication Method object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/fido2authenticationmethod-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/fido2authenticationmethod-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

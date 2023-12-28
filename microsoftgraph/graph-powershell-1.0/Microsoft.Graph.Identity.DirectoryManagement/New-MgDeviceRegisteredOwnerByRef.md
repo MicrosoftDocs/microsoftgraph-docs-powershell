@@ -10,7 +10,6 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Add a user as a registered owner of the device.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceRegisteredOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDeviceRegisteredOwnerByRef?view=graph-powershell-beta)
@@ -43,7 +42,9 @@ New-MgDeviceRegisteredOwnerByRef -InputObject <IIdentityDirectoryManagementIdent
 
 ## DESCRIPTION
 Add a user as a registered owner of the device.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-post-registeredowners-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

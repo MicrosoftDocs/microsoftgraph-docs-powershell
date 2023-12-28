@@ -46,6 +46,9 @@ Read-only.
 Nullable.
 Supports $expand.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-memberof-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaGroupMemberOf Cmdlet
 ```powershell

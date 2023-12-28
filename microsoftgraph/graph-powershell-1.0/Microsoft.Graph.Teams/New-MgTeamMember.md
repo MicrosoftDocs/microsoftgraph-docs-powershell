@@ -10,7 +10,6 @@ ms.prod: microsoft-teams
 
 ## SYNOPSIS
 Add a new conversationMember to a team.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaTeamMember](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamMember?view=graph-powershell-beta)
@@ -44,7 +43,9 @@ New-MgTeamMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphCo
 
 ## DESCRIPTION
 Add a new conversationMember to a team.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-post-members-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Add a member to a team

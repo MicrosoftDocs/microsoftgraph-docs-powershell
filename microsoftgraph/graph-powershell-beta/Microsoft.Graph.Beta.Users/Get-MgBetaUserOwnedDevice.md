@@ -9,7 +9,7 @@ ms.prod: users
 # Get-MgBetaUserOwnedDevice
 
 ## SYNOPSIS
-Devices that are owned by the user.
+Devices owned by the user.
 Read-only.
 Nullable.
 Supports $expand.
@@ -39,10 +39,13 @@ Get-MgBetaUserOwnedDevice -InputObject <IUsersIdentity> [-ExpandProperty <String
 ```
 
 ## DESCRIPTION
-Devices that are owned by the user.
+Devices owned by the user.
 Read-only.
 Nullable.
 Supports $expand.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-owneddevices-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserOwnedDevice Cmdlet
@@ -312,6 +315,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Get-MgUserOwnedDevice](/powershell/module/Microsoft.Graph.Users/Get-MgUserOwnedDevice?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserowneddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserowneddevice)
-
 
 

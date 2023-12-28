@@ -10,7 +10,6 @@ ms.prod: search
 
 ## SYNOPSIS
 Update the properties of a qna object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -52,7 +51,9 @@ Update-MgBetaSearchQna -InputObject <ISearchIdentity> -BodyParameter <IMicrosoft
 
 ## DESCRIPTION
 Update the properties of a qna object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-qna-update-permissions.md)]
 
 ## PARAMETERS
 
@@ -501,5 +502,6 @@ When users click this answer variation in search results, they will go to this U
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchqna](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchqna)
+
 
 

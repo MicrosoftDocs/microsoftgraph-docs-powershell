@@ -38,6 +38,9 @@ Get-MgBetaUserLicenseDetail -InputObject <IUsersIdentity> [-ExpandProperty <Stri
 ## DESCRIPTION
 Get licenseDetails from users
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-licensedetails-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Get a user's license details
 
@@ -295,6 +298,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Get-MgUserLicenseDetail](/powershell/module/Microsoft.Graph.Users/Get-MgUserLicenseDetail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserlicensedetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserlicensedetail)
-
 
 

@@ -31,6 +31,9 @@ Get-MgBetaOrganizationBrandingFavicon -InputObject <IIdentityDirectoryManagement
 ## DESCRIPTION
 A custom icon (favicon) to replace a default Microsoft product favicon on a Microsoft Entra tenant.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/organizationalbranding-get-permissions.md)]
+
 ## EXAMPLES
 
 ## PARAMETERS

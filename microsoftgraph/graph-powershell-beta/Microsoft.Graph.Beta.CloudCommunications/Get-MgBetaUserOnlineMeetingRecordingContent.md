@@ -11,6 +11,9 @@ schema: 2.0.0
 The content of the recording.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserOnlineMeetingRecordingContent](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingRecordingContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -158,6 +161,7 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserOnlineMeetingRecordingContent](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingRecordingContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingrecordingcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingrecordingcontent)
 

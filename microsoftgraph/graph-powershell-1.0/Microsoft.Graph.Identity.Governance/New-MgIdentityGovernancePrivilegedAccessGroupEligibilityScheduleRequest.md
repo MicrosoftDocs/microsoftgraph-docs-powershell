@@ -10,7 +10,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 Create a new privilegedAccessGroupEligibilityScheduleRequest object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest?view=graph-powershell-beta)
@@ -38,7 +37,9 @@ New-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest
 
 ## DESCRIPTION
 Create a new privilegedAccessGroupEligibilityScheduleRequest object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/privilegedaccessgroup-post-eligibilityschedulerequests-permissions.md)]
 
 ## PARAMETERS
 

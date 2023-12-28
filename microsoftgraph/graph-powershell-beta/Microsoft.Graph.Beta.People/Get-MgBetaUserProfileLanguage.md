@@ -11,7 +11,6 @@ ms.prod: people
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a languageProficiency object within a user's profile.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -36,7 +35,12 @@ Get-MgBetaUserProfileLanguage -InputObject <IPeopleIdentity> [-ExpandProperty <S
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a languageProficiency object within a user's profile.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/languageproficiency-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/profile-list-languages-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserProfileLanguage Cmdlet

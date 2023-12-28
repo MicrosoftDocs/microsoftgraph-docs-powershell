@@ -40,6 +40,9 @@ Get-MgBetaUserDrive -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [
 A collection of drives available for this user.
 Read-only.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/drive-list-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserDrive Cmdlet
 ```powershell

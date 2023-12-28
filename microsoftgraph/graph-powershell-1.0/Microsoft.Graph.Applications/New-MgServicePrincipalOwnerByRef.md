@@ -11,7 +11,6 @@ ms.prod: applications
 ## SYNOPSIS
 Use this API to add an owner for the servicePrincipal.
 Service principal owners can be users, the service principal itself, or other service principals.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaServicePrincipalOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalOwnerByRef?view=graph-powershell-beta)
@@ -45,7 +44,6 @@ New-MgServicePrincipalOwnerByRef -InputObject <IApplicationsIdentity> -BodyParam
 ## DESCRIPTION
 Use this API to add an owner for the servicePrincipal.
 Service principal owners can be users, the service principal itself, or other service principals.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Add an owner for a service principal
@@ -235,6 +233,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [New-MgBetaServicePrincipalOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalOwnerByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalownerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalownerbyref)
-
 
 

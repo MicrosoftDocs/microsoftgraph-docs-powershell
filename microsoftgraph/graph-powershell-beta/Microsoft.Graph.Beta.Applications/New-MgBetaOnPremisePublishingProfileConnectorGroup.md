@@ -9,7 +9,7 @@ ms.prod: applications
 # New-MgBetaOnPremisePublishingProfileConnectorGroup
 
 ## SYNOPSIS
-Create a new connectorGroup.
+Create a connectorGroup object.
 
 ## SYNTAX
 
@@ -42,7 +42,10 @@ New-MgBetaOnPremisePublishingProfileConnectorGroup -InputObject <IApplicationsId
 ```
 
 ## DESCRIPTION
-Create a new connectorGroup.
+Create a connectorGroup object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/connectorgroup-post-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaOnPremisePublishingProfileConnectorGroup Cmdlet

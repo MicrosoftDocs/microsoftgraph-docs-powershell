@@ -10,7 +10,7 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Return the directory objects specified in a list of IDs.
-Some common uses for this function are to: This API is available in the following national cloud deployments.
+Some common uses for this function are to:
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalById](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalById?view=graph-powershell-1.0)
@@ -32,7 +32,10 @@ Get-MgBetaServicePrincipalById
 
 ## DESCRIPTION
 Return the directory objects specified in a list of IDs.
-Some common uses for this function are to: This API is available in the following national cloud deployments.
+Some common uses for this function are to:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryobject-getbyids-permissions.md)]
 
 ## EXAMPLES
 
@@ -154,6 +157,5 @@ BODYPARAMETER \<IPaths15YkyvsServiceprincipalsMicrosoftGraphGetbyidsPostRequestb
 [Get-MgServicePrincipalById](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalById?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalbyid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalbyid)
-
 
 

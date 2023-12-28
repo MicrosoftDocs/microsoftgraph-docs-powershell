@@ -11,7 +11,6 @@ ms.prod: microsoft-teams
 
 ## SYNOPSIS
 Retrieve the app installed in the personal scope of the specified user.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserTeamworkInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserTeamworkInstalledApp?view=graph-powershell-beta)
@@ -39,7 +38,12 @@ Get-MgUserTeamworkInstalledApp -InputObject <ITeamsIdentity> [-ExpandProperty <S
 
 ## DESCRIPTION
 Retrieve the app installed in the personal scope of the specified user.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userteamwork-get-installedapps-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userteamwork-list-installedapps-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: List apps installed for the specified user

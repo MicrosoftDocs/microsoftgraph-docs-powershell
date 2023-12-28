@@ -10,7 +10,6 @@ ms.prod: ediscovery
 
 ## SYNOPSIS
 Delete an ediscoveryReviewSetQuery object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgSecurityCaseEdiscoveryCaseReviewSetQuery](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityCaseEdiscoveryCaseReviewSetQuery?view=graph-powershell-1.0)
@@ -32,7 +31,9 @@ Remove-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery -InputObject <ISecurityIde
 
 ## DESCRIPTION
 Delete an ediscoveryReviewSetQuery object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoveryreviewset-delete-queries-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -191,6 +192,8 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[ArticleId \<String\>\]: The unique identifier of article
   \[ArticleIndicatorId \<String\>\]: The unique identifier of articleIndicator
   \[AttackSimulationOperationId \<String\>\]: The unique identifier of attackSimulationOperation
+  \[AuditLogQueryId \<String\>\]: The unique identifier of auditLogQuery
+  \[AuditLogRecordId \<String\>\]: The unique identifier of auditLogRecord
   \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
   \[AuthorityTemplateId \<String\>\]: The unique identifier of authorityTemplate
   \[CaseOperationId \<String\>\]: The unique identifier of caseOperation

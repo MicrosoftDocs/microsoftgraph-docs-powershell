@@ -10,7 +10,6 @@ ms.prod: security
 
 ## SYNOPSIS
 Get an attack simulation operation to track a long-running operation request for a tenant.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSecurityAttackSimulationOperation](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationOperation?view=graph-powershell-1.0)
@@ -38,7 +37,9 @@ Get-MgBetaSecurityAttackSimulationOperation -InputObject <ISecurityIdentity> [-E
 
 ## DESCRIPTION
 Get an attack simulation operation to track a long-running operation request for a tenant.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/attacksimulationoperation-get-permissions.md)]
 
 ## PARAMETERS
 
@@ -244,6 +245,8 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[ArticleId \<String\>\]: The unique identifier of article
   \[ArticleIndicatorId \<String\>\]: The unique identifier of articleIndicator
   \[AttackSimulationOperationId \<String\>\]: The unique identifier of attackSimulationOperation
+  \[AuditLogQueryId \<String\>\]: The unique identifier of auditLogQuery
+  \[AuditLogRecordId \<String\>\]: The unique identifier of auditLogRecord
   \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
   \[AuthorityTemplateId \<String\>\]: The unique identifier of authorityTemplate
   \[CaseOperationId \<String\>\]: The unique identifier of caseOperation

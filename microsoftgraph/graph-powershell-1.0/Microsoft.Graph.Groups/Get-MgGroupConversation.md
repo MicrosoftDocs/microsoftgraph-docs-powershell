@@ -11,7 +11,6 @@ ms.prod: groups
 
 ## SYNOPSIS
 Retrieve the properties and relationships of conversation object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupConversation](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupConversation?view=graph-powershell-beta)
@@ -37,7 +36,12 @@ Get-MgGroupConversation -InputObject <IGroupsIdentity> [-Property <String[]>] [<
 
 ## DESCRIPTION
 Retrieve the properties and relationships of conversation object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/conversation-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-list-conversations-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

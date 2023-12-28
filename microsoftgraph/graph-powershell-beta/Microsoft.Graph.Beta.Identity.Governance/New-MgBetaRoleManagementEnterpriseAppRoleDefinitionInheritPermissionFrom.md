@@ -581,3 +581,4 @@ Not supported for custom roles.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententerpriseapproledefinitioninheritpermissionfrom](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententerpriseapproledefinitioninheritpermissionfrom)
 
 
+

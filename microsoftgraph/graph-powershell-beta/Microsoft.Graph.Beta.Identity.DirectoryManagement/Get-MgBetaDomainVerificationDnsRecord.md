@@ -42,6 +42,9 @@ DNS records that the customer adds to the DNS zone file of the domain before the
 Read-only, Nullable.
 Supports $expand.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/domain-list-verificationdnsrecords-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

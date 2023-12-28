@@ -10,7 +10,6 @@ ms.prod: cloud-printing
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a printOperation object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPrintOperation](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintOperation?view=graph-powershell-beta)
@@ -38,8 +37,8 @@ Get-MgPrintOperation -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty 
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a printOperation object.
-This API is available in the following national cloud deployments.
 
+**Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printoperation-get-permissions.md)]
 
 ## EXAMPLES

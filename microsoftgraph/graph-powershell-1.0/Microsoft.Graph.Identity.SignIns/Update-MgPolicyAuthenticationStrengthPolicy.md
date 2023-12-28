@@ -12,7 +12,6 @@ ms.prod: identity-and-sign-in
 Update the properties of an authenticationStrengthPolicy object.
 You cannot update the allowed auth method combinations using this request.
 To do so, use the Update allowed combinations action.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaPolicyAuthenticationStrengthPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyAuthenticationStrengthPolicy?view=graph-powershell-beta)
@@ -55,7 +54,9 @@ Update-MgPolicyAuthenticationStrengthPolicy -InputObject <IIdentitySignInsIdenti
 Update the properties of an authenticationStrengthPolicy object.
 You cannot update the allowed auth method combinations using this request.
 To do so, use the Update allowed combinations action.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationstrengthpolicy-update-permissions.md)]
 
 ## PARAMETERS
 
@@ -393,5 +394,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 [Update-MgBetaPolicyAuthenticationStrengthPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyAuthenticationStrengthPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationstrengthpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationstrengthpolicy)
+
 
 

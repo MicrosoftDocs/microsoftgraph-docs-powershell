@@ -39,6 +39,9 @@ Get-MgBetaGroupSiteTermStoreGroupSetRelation -InputObject <ISitesIdentity> [-Exp
 ## DESCRIPTION
 Indicates which terms have been pinned or reused directly under the set.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/termstore-term-list-relations-permissions.md)]
+
 ## PARAMETERS
 
 ### -All

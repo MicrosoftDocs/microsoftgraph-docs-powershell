@@ -45,6 +45,9 @@ Get-MgBetaGroupPhoto -InputObject <IGroupsIdentity> [-Property <String[]>] [<Com
 ## DESCRIPTION
 The group's profile photo.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-photos-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

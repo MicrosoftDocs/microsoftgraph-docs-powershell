@@ -9,7 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new version of the workflow object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowNewVersion](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowNewVersion?view=graph-powershell-beta)
@@ -47,7 +46,6 @@ New-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowNewVersion
 
 ## DESCRIPTION
 Create a new version of the workflow object.
-This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

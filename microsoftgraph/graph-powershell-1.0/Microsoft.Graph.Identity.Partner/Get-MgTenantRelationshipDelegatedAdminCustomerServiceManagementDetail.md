@@ -39,6 +39,9 @@ Get-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail -InputObje
 ## DESCRIPTION
 Contains the management details of a service in the customer tenant that's managed by delegated administration.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/delegatedadmincustomer-list-servicemanagementdetails-permissions.md)]
+
 ## PARAMETERS
 
 ### -All

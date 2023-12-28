@@ -38,6 +38,9 @@ Get-MgBetaUserMailFolderChildFolder -InputObject <IMailIdentity> [-ExpandPropert
 ## DESCRIPTION
 The collection of child folders in the mailFolder.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailfolder-list-childfolders-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: List mail folders
 

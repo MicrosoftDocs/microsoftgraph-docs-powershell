@@ -11,7 +11,6 @@ ms.prod: cloud-communications
 ## SYNOPSIS
 Set a presence status message for a user.
 An optional expiration date and time can be supplied.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaCommunicationPresenceStatusMessage](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Set-MgBetaCommunicationPresenceStatusMessage?view=graph-powershell-beta)
@@ -48,8 +47,8 @@ Set-MgCommunicationPresenceStatusMessage -InputObject <ICloudCommunicationsIdent
 ## DESCRIPTION
 Set a presence status message for a user.
 An optional expiration date and time can be supplied.
-This API is available in the following national cloud deployments.
 
+**Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/presence-setstatusmessage-permissions.md)]
 
 ## PARAMETERS
@@ -214,6 +213,7 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[AudioRoutingGroupId \<String\>\]: The unique identifier of audioRoutingGroup
   \[CallId \<String\>\]: The unique identifier of call
   \[CallRecordId \<String\>\]: The unique identifier of callRecord
+  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
   \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
   \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
   \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession

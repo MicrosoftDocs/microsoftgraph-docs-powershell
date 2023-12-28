@@ -11,7 +11,6 @@ ms.prod: directory-management
 ## SYNOPSIS
 Promote a verified subdomain to the root domain.
 A verified domain has its isVerified property set to true.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaPromoteDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Invoke-MgBetaPromoteDomain?view=graph-powershell-beta)
@@ -32,7 +31,9 @@ Invoke-MgPromoteDomain -InputObject <IIdentityDirectoryManagementIdentity> [-Wha
 ## DESCRIPTION
 Promote a verified subdomain to the root domain.
 A verified domain has its isVerified property set to true.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/domain-promote-permissions.md)]
 
 ## PARAMETERS
 

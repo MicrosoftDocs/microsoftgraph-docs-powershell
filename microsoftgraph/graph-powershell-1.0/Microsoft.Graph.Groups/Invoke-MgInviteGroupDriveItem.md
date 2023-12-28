@@ -9,8 +9,7 @@ ms.prod: sharepoint
 # Invoke-MgInviteGroupDriveItem
 
 ## SYNOPSIS
-Sends a sharing invitation for a driveItem.\nA sharing invitation provides permissions to the recipients and optionally sends them an email with a sharing link\]\[\].
-This API is available in the following \[national cloud deployments.
+Sends a sharing invitation for a driveItem.A sharing invitation provides permissions to the recipients and optionally sends them an email with a \[sharing link\]\[\].
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaInviteGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaInviteGroupDriveItem?view=graph-powershell-beta)
@@ -48,8 +47,10 @@ Invoke-MgInviteGroupDriveItem -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Sends a sharing invitation for a driveItem.\nA sharing invitation provides permissions to the recipients and optionally sends them an email with a sharing link\]\[\].
-This API is available in the following \[national cloud deployments.
+Sends a sharing invitation for a driveItem.A sharing invitation provides permissions to the recipients and optionally sends them an email with a \[sharing link\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-invite-permissions.md)]
 
 ## PARAMETERS
 
@@ -375,5 +376,6 @@ security groups).
 [Invoke-MgBetaInviteGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaInviteGroupDriveItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mginvitegroupdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mginvitegroupdriveitem)
+
 
 

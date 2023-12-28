@@ -10,7 +10,6 @@ ms.prod: files
 
 ## SYNOPSIS
 Restore a driveItem that has been deleted and is currently in the recycle bin.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Restore-MgUserDriveItem](/powershell/module/Microsoft.Graph.Users.Actions/Restore-MgUserDriveItem?view=graph-powershell-1.0)
@@ -46,7 +45,9 @@ Restore-MgBetaUserDriveItem -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Restore a driveItem that has been deleted and is currently in the recycle bin.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-restore-permissions.md)]
 
 ## PARAMETERS
 
@@ -281,6 +282,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[NotebookId \<String\>\]: The unique identifier of notebook
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
   \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
   \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
   \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask

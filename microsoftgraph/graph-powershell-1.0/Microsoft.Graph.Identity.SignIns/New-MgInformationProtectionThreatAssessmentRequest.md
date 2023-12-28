@@ -10,7 +10,7 @@ ms.prod: security
 
 ## SYNOPSIS
 Create a new threat assessment request.
-A threat assessment request can be one of the following types: This API is available in the following national cloud deployments.
+A threat assessment request can be one of the following types:
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaInformationProtectionThreatAssessmentRequest?view=graph-powershell-beta)
@@ -34,7 +34,10 @@ New-MgInformationProtectionThreatAssessmentRequest -BodyParameter <IMicrosoftGra
 
 ## DESCRIPTION
 Create a new threat assessment request.
-A threat assessment request can be one of the following types: This API is available in the following national cloud deployments.
+A threat assessment request can be one of the following types:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/informationprotection-post-threatassessmentrequests-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Create a mail assessment request
@@ -389,4 +392,5 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 [New-MgBetaInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaInformationProtectionThreatAssessmentRequest?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mginformationprotectionthreatassessmentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mginformationprotectionthreatassessmentrequest)
+
 

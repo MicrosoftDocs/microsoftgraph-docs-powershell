@@ -10,7 +10,6 @@ ms.prod: cloud-pc
 
 ## SYNOPSIS
 Create a new cloudPcUserSetting object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -31,7 +30,9 @@ New-MgBetaDeviceManagementVirtualEndpointUserSetting -BodyParameter <IMicrosoftG
 
 ## DESCRIPTION
 Create a new cloudPcUserSetting object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-post-usersettings-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaDeviceManagementVirtualEndpointUserSetting Cmdlet
@@ -345,4 +346,5 @@ If false, non-admin users can't use snapshots to restore the Cloud PC.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointusersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointusersetting)
+
 

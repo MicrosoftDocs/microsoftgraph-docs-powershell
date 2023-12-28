@@ -12,7 +12,6 @@ ms.prod: outlook
 Get the MailTips of one or more recipients as available to the signed-in user.
 Note that by making a POST call to the getMailTips action, you can request specific types of MailTips tobe returned for more than one recipient at one time.
 The requested MailTips are returned in a mailTips collection.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserMailTip](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserMailTip?view=graph-powershell-1.0)
@@ -49,7 +48,9 @@ Get-MgBetaUserMailTip -InputObject <IUsersActionsIdentity>
 Get the MailTips of one or more recipients as available to the signed-in user.
 Note that by making a POST call to the getMailTips action, you can request specific types of MailTips tobe returned for more than one recipient at one time.
 The requested MailTips are returned in a mailTips collection.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-getmailtips-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserMailTip Cmdlet
@@ -243,6 +244,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[NotebookId \<String\>\]: The unique identifier of notebook
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
   \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
   \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
   \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask

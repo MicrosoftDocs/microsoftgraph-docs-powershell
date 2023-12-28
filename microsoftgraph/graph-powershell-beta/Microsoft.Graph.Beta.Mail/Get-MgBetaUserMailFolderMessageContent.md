@@ -31,6 +31,9 @@ Get-MgBetaUserMailFolderMessageContent -InputObject <IMailIdentity> -OutFile <St
 ## DESCRIPTION
 Get media content for the navigation property messages from users
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailfolder-list-messages-permissions.md)]
+
 ## PARAMETERS
 
 ### -InputObject

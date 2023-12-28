@@ -38,6 +38,9 @@ Get-MgSiteListColumn -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] 
 ## DESCRIPTION
 The collection of field definitions for this list.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/list-list-columns-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

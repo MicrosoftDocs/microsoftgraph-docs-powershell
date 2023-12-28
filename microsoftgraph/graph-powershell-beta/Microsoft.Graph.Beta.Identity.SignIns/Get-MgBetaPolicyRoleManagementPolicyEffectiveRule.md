@@ -43,6 +43,9 @@ The list of effective rules like approval rules and expiration rules evaluated b
 For example, if there is a tenant-wide policy to enforce enabling an approval rule, the effective rule will be to enable approval even if the policy has a rule to disable approval.
 Supports $expand.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedrolemanagementpolicy-list-effectiverules-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaPolicyRoleManagementPolicyEffectiveRule Cmdlet
 ```powershell
@@ -270,6 +273,7 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[ActivityBasedTimeoutPolicyId \<String\>\]: The unique identifier of activityBasedTimeoutPolicy
   \[AppManagementPolicyId \<String\>\]: The unique identifier of appManagementPolicy
   \[AuthenticationCombinationConfigurationId \<String\>\]: The unique identifier of authenticationCombinationConfiguration
+  \[AuthenticationConditionApplicationAppId \<String\>\]: The unique identifier of authenticationConditionApplication
   \[AuthenticationContextClassReferenceId \<String\>\]: The unique identifier of authenticationContextClassReference
   \[AuthenticationEventListenerId \<String\>\]: The unique identifier of authenticationEventListener
   \[AuthenticationEventsFlowId \<String\>\]: The unique identifier of authenticationEventsFlow

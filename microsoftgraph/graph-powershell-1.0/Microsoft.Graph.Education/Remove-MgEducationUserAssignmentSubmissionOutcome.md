@@ -11,7 +11,6 @@ ms.prod: education
 ## SYNOPSIS
 Delete a feedback resource from a submission.
 This can only be done by a teacher.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaEducationUserAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationUserAssignmentSubmissionOutcome?view=graph-powershell-beta)
@@ -34,7 +33,9 @@ Remove-MgEducationUserAssignmentSubmissionOutcome -InputObject <IEducationIdenti
 ## DESCRIPTION
 Delete a feedback resource from a submission.
 This can only be done by a teacher.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationfeedbackresourceoutcome-delete-permissions.md)]
 
 ## PARAMETERS
 

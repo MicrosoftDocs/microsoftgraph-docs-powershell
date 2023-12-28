@@ -176,3 +176,4 @@ EXCLUDETARGETS \<IMicrosoftGraphExcludeTarget\[\]\>: Groups of users that are ex
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyauthenticationmethodpolicyauthenticationmethodconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyauthenticationmethodpolicyauthenticationmethodconfiguration)
 
 
+

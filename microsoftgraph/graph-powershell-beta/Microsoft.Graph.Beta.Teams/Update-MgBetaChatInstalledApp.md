@@ -9,7 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Upgrade an app installation within a chat.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgChatInstalledApp](/powershell/module/Microsoft.Graph.Teams/Update-MgChatInstalledApp?view=graph-powershell-1.0)
@@ -46,7 +45,6 @@ Update-MgBetaChatInstalledApp -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Upgrade an app installation within a chat.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Upgrade the teams app installed in chat
@@ -266,6 +264,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
   \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
   \[ConversationMemberId \<String\>\]: The unique identifier of conversationMember
+  \[DayNoteId \<String\>\]: The unique identifier of dayNote
   \[DeletedChatId \<String\>\]: The unique identifier of deletedChat
   \[DeletedTeamId \<String\>\]: The unique identifier of deletedTeam
   \[GroupId \<String\>\]: The unique identifier of group

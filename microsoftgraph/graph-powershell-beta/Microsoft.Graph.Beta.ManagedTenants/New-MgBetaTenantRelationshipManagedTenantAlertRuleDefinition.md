@@ -422,3 +422,4 @@ DEFINITIONTEMPLATE \<IMicrosoftGraphManagedTenantsAlertRuleDefinitionTemplate\>:
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantalertruledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantalertruledefinition)
 
 
+

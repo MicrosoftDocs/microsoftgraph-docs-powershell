@@ -12,7 +12,6 @@ ms.prod: identity-and-sign-in
 ## SYNOPSIS
 Retrieve the properties and relationships of a specific authenticationEventsFlow object by ID.
 Only externalUsersSelfServiceSignupEventsFlow object types are available.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -38,7 +37,12 @@ Get-MgBetaIdentityAuthenticationEventFlow -InputObject <IIdentitySignInsIdentity
 ## DESCRIPTION
 Retrieve the properties and relationships of a specific authenticationEventsFlow object by ID.
 Only externalUsersSelfServiceSignupEventsFlow object types are available.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationeventsflow-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitycontainer-list-authenticationeventsflows-permissions.md)]
 
 ## PARAMETERS
 
@@ -243,6 +247,7 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[ActivityBasedTimeoutPolicyId \<String\>\]: The unique identifier of activityBasedTimeoutPolicy
   \[AppManagementPolicyId \<String\>\]: The unique identifier of appManagementPolicy
   \[AuthenticationCombinationConfigurationId \<String\>\]: The unique identifier of authenticationCombinationConfiguration
+  \[AuthenticationConditionApplicationAppId \<String\>\]: The unique identifier of authenticationConditionApplication
   \[AuthenticationContextClassReferenceId \<String\>\]: The unique identifier of authenticationContextClassReference
   \[AuthenticationEventListenerId \<String\>\]: The unique identifier of authenticationEventListener
   \[AuthenticationEventsFlowId \<String\>\]: The unique identifier of authenticationEventsFlow

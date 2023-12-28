@@ -12,7 +12,6 @@ ms.prod: bookings
 Create a new Microsoft Bookings business in a tenant.
 This is the first step in setting up a Bookings business where you must specify the business display name.
 You can include other information such as business address, web site address, and scheduling policy, or set that information later by updating the bookingBusiness.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaBookingBusiness?view=graph-powershell-beta)
@@ -41,8 +40,8 @@ New-MgBookingBusiness -BodyParameter <IMicrosoftGraphBookingBusiness> [-WhatIf] 
 Create a new Microsoft Bookings business in a tenant.
 This is the first step in setting up a Bookings business where you must specify the business display name.
 You can include other information such as business address, web site address, and scheduling policy, or set that information later by updating the bookingBusiness.
-This API is available in the following national cloud deployments.
 
+**Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-post-bookingbusinesses-permissions.md)]
 
 ## EXAMPLES
@@ -126,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-Represents a Microsot Bookings Business.
+Represents a Microsoft Bookings Business.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -514,7 +513,7 @@ Default value is false.
   \[StaffMemberIds \<String\[\]\>\]: The ID of each bookingStaffMember who is scheduled in this appointment.
   \[StartDateTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
 
-BODYPARAMETER \<IMicrosoftGraphBookingBusiness\>: Represents a Microsot Bookings Business.
+BODYPARAMETER \<IMicrosoftGraphBookingBusiness\>: Represents a Microsoft Bookings Business.
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
@@ -858,4 +857,5 @@ Read-only.
 [New-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaBookingBusiness?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusiness](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusiness)
+
 

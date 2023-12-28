@@ -10,7 +10,6 @@ ms.prod: cloud-communications
 
 ## SYNOPSIS
 Get the status of an operation that adds the large gallery view to a call.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaCommunicationCallOperation](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationCallOperation?view=graph-powershell-beta)
@@ -38,8 +37,8 @@ Get-MgCommunicationCallOperation -InputObject <ICloudCommunicationsIdentity> [-E
 
 ## DESCRIPTION
 Get the status of an operation that adds the large gallery view to a call.
-This API is available in the following national cloud deployments.
 
+**Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/addlargegalleryviewoperation-get-permissions.md)]
 
 ## EXAMPLES
@@ -274,6 +273,7 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[AudioRoutingGroupId \<String\>\]: The unique identifier of audioRoutingGroup
   \[CallId \<String\>\]: The unique identifier of call
   \[CallRecordId \<String\>\]: The unique identifier of callRecord
+  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
   \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
   \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
   \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession

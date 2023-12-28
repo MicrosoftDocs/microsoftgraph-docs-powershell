@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Update the properties of the event object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaUserEvent?view=graph-powershell-beta)
@@ -75,8 +74,8 @@ Update-MgUserEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGr
 
 ## DESCRIPTION
 Update the properties of the event object.
-This API is available in the following national cloud deployments.
 
+**Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-update-permissions.md)]
 
 ## EXAMPLES
@@ -1499,6 +1498,7 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[ExtensionId \<String\>\]: The unique identifier of extension
   \[GroupId \<String\>\]: The unique identifier of group
   \[PlaceId \<String\>\]: The unique identifier of place
+  \[RoomId \<String\>\]: The unique identifier of room
   \[UserId \<String\>\]: The unique identifier of user
 
 INSTANCES \<IMicrosoftGraphEvent\[\]\>: The occurrences of a recurring series, if the event is a series master.
@@ -1867,4 +1867,5 @@ See below for more possible values.
 [Update-MgBetaUserEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaUserEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mguserevent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mguserevent)
+
 

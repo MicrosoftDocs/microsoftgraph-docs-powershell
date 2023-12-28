@@ -10,7 +10,6 @@ ms.prod: cloud-communications
 
 ## SYNOPSIS
 Update a custom registration question associated with a meetingRegistration object on behalf of the organizer.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -44,7 +43,9 @@ Update-MgBetaUserOnlineMeetingRegistrationCustomQuestion -InputObject <ICloudCom
 
 ## DESCRIPTION
 Update a custom registration question associated with a meetingRegistration object on behalf of the organizer.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/meetingregistrationquestion-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaUserOnlineMeetingRegistrationCustomQuestion Cmdlet

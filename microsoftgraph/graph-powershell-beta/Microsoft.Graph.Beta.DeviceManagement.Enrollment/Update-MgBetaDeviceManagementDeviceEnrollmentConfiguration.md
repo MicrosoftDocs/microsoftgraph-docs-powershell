@@ -380,3 +380,4 @@ INPUTOBJECT \<IDeviceManagementEnrollmentIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementdeviceenrollmentconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementdeviceenrollmentconfiguration)
 
 
+

@@ -10,7 +10,6 @@ ms.prod: cloud-pc
 
 ## SYNOPSIS
 Reboot a specific Cloud PC.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,9 @@ Restart-MgBetaUserCloudPc -InputObject <IUsersActionsIdentity> [-PassThru] [-Wha
 
 ## DESCRIPTION
 Reboot a specific Cloud PC.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-reboot-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Restart-MgBetaUserCloudPc Cmdlet
@@ -178,6 +179,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[NotebookId \<String\>\]: The unique identifier of notebook
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
   \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
   \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
   \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask

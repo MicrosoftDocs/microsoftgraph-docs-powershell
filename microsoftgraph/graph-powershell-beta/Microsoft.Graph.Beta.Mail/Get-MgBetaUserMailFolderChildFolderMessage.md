@@ -38,6 +38,9 @@ Get-MgBetaUserMailFolderChildFolderMessage -InputObject <IMailIdentity> [-Expand
 ## DESCRIPTION
 The collection of messages in the mailFolder.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailfolder-list-messages-permissions.md)]
+
 ## EXAMPLES
 
 ## PARAMETERS

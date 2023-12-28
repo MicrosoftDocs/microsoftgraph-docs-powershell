@@ -11,7 +11,6 @@ ms.prod: groups
 ## SYNOPSIS
 Calling this method prevents the current user from receiving email notifications for this group about new posts, events, and files in that group.
 Supported for Microsoft 365 groups only.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaGraphGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaGraphGroup?view=graph-powershell-beta)
@@ -31,7 +30,9 @@ Invoke-MgGraphGroup -InputObject <IGroupsIdentity> [-PassThru] [-WhatIf] [-Confi
 ## DESCRIPTION
 Calling this method prevents the current user from receiving email notifications for this group about new posts, events, and files in that group.
 Supported for Microsoft 365 groups only.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-unsubscribebymail-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgGraphGroup Cmdlet

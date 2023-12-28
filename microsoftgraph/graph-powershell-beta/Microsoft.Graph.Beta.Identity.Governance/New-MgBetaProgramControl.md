@@ -10,7 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 In the Microsoft Entra access reviews feature, create a new programControl object.
 This links an access review to a program.
-Prior to making this request, the caller must have previously This API is available in the following national cloud deployments.
+Prior to making this request, the caller must have previously
 
 ## SYNTAX
 
@@ -90,7 +90,7 @@ New-MgBetaProgramControl -BodyParameter <IMicrosoftGraphProgramControl> [-WhatIf
 ## DESCRIPTION
 In the Microsoft Entra access reviews feature, create a new programControl object.
 This links an access review to a program.
-Prior to making this request, the caller must have previously This API is available in the following national cloud deployments.
+Prior to making this request, the caller must have previously
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaProgramControl Cmdlet

@@ -9,8 +9,7 @@ ms.prod: sites-and-lists
 # New-MgGroupSiteContentType
 
 ## SYNOPSIS
-Create a new contentType\]\[\] in a \[site\]\[\].
-This API is available in the following \[national cloud deployments.
+Create a new \[contentType\]\[\] in a \[site\]\[\].
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteContentType?view=graph-powershell-beta)
@@ -56,8 +55,10 @@ New-MgGroupSiteContentType -InputObject <ISitesIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Create a new contentType\]\[\] in a \[site\]\[\].
-This API is available in the following \[national cloud deployments.
+Create a new \[contentType\]\[\] in a \[site\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-post-contenttypes-permissions.md)]
 
 ## PARAMETERS
 
@@ -1782,5 +1783,6 @@ ORDER \<IMicrosoftGraphContentTypeOrder\>: contentTypeOrder
 [New-MgBetaGroupSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitecontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitecontenttype)
+
 
 

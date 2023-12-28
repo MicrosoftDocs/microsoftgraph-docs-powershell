@@ -10,7 +10,7 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Enable SMS sign-in for an existing mobile phone number registered to a user.
-To be successfully enabled: This API is available in the following national cloud deployments.
+To be successfully enabled:
 
 ## SYNTAX
 
@@ -28,7 +28,10 @@ Enable-MgUserAuthenticationPhoneMethodSmsSignIn -InputObject <IUsersActionsIdent
 
 ## DESCRIPTION
 Enable SMS sign-in for an existing mobile phone number registered to a user.
-To be successfully enabled: This API is available in the following national cloud deployments.
+To be successfully enabled:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/phoneauthenticationmethod-enablesmssignin-permissions.md)]
 
 ## PARAMETERS
 

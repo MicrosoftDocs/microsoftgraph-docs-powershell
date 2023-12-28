@@ -11,7 +11,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 Read the properties and relationships of a run object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowRun](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowRun?view=graph-powershell-1.0)
@@ -39,7 +38,12 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowRun -InputObject
 
 ## DESCRIPTION
 Read the properties and relationships of a run object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-run-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-workflow-list-runs-permissions.md)]
 
 ## EXAMPLES
 

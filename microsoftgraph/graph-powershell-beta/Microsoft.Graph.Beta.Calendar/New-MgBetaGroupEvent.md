@@ -10,7 +10,6 @@ ms.prod: groups
 
 ## SYNOPSIS
 Use this API to create a new event.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgGroupEvent](/powershell/module/Microsoft.Graph.Calendar/New-MgGroupEvent?view=graph-powershell-1.0)
@@ -75,7 +74,9 @@ New-MgBetaGroupEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoft
 
 ## DESCRIPTION
 Use this API to create a new event.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-post-events-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -2194,4 +2195,5 @@ See below for possible values.
 [New-MgGroupEvent](/powershell/module/Microsoft.Graph.Calendar/New-MgGroupEvent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetagroupevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetagroupevent)
+
 

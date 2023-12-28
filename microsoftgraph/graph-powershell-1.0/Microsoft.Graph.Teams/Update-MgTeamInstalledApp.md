@@ -10,7 +10,6 @@ ms.prod: microsoft-teams
 
 ## SYNOPSIS
 Upgrade an app installation within a chat.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaTeamInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamInstalledApp?view=graph-powershell-beta)
@@ -47,7 +46,6 @@ Update-MgTeamInstalledApp -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Upgrade an app installation within a chat.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgTeamInstalledApp Cmdlet

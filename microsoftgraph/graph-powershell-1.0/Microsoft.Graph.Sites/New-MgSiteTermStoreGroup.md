@@ -10,7 +10,6 @@ ms.prod: sites-and-lists
 
 ## SYNOPSIS
 Create a new group object in a term store.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSiteTermStoreGroup](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteTermStoreGroup?view=graph-powershell-beta)
@@ -74,7 +73,9 @@ New-MgSiteTermStoreGroup -InputObject <ISitesIdentity> -BodyParameter <IMicrosof
 
 ## DESCRIPTION
 Create a new group object in a term store.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-group-post-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -471,4 +472,5 @@ Read-only.
 [New-MgBetaSiteTermStoreGroup](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteTermStoreGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoregroup](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoregroup)
+
 

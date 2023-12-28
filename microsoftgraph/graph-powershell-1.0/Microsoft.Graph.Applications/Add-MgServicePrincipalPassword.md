@@ -10,7 +10,6 @@ ms.prod: applications
 
 ## SYNOPSIS
 Add a strong password or secret to a servicePrincipal object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -42,8 +41,8 @@ Add-MgServicePrincipalPassword -InputObject <IApplicationsIdentity>
 
 ## DESCRIPTION
 Add a strong password or secret to a servicePrincipal object.
-This API is available in the following national cloud deployments.
 
+**Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-addpassword-permissions.md)]
 
 ## EXAMPLES
@@ -259,6 +258,5 @@ Optional.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgserviceprincipalpassword](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgserviceprincipalpassword)
-
 
 

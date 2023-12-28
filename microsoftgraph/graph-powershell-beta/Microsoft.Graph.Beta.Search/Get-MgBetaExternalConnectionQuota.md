@@ -10,7 +10,6 @@ ms.prod: search
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a connectionQuota object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,9 @@ Get-MgBetaExternalConnectionQuota -InputObject <ISearchIdentity> [-ExpandPropert
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a connectionQuota object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-connectionquota-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaExternalConnectionQuota Cmdlet

@@ -11,7 +11,6 @@ ms.prod: education
 ## SYNOPSIS
 Add one or more existing educationCategory objects to the specified  educationAssignment.
 Only teachers can perform this operation.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaEducationMeAssignmentCategory](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationMeAssignmentCategory?view=graph-powershell-beta)
@@ -45,7 +44,9 @@ New-MgEducationMeAssignmentCategory -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Add one or more existing educationCategory objects to the specified  educationAssignment.
 Only teachers can perform this operation.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-post-categories-permissions.md)]
 
 ## EXAMPLES
 

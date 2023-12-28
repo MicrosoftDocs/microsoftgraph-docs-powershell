@@ -12,7 +12,6 @@ ms.prod: education
 ## SYNOPSIS
 Get the properties of an education assignment resource associated with an assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgEducationUserAssignmentResource](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserAssignmentResource?view=graph-powershell-1.0)
@@ -42,7 +41,12 @@ Get-MgBetaEducationUserAssignmentResource -InputObject <IEducationIdentity> [-Ex
 ## DESCRIPTION
 Get the properties of an education assignment resource associated with an assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignmentresource-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-list-resources-permissions.md)]
 
 ## EXAMPLES
 

@@ -10,7 +10,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Read the properties and relationships of a crossTenantAccessPolicy object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPolicyCrossTenantAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyCrossTenantAccessPolicy?view=graph-powershell-1.0)
@@ -24,7 +23,9 @@ Get-MgBetaPolicyCrossTenantAccessPolicy [-ExpandProperty <String[]>] [-Property 
 
 ## DESCRIPTION
 Read the properties and relationships of a crossTenantAccessPolicy object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/crosstenantaccesspolicy-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

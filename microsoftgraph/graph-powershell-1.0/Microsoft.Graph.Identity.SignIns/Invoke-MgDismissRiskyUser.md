@@ -11,7 +11,6 @@ ms.prod: identity-and-sign-in
 ## SYNOPSIS
 Dismiss the risk of one or more riskyUser objects.
 This action sets the targeted user's risk level to none.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaDismissRiskyUser](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Invoke-MgBetaDismissRiskyUser?view=graph-powershell-beta)
@@ -34,7 +33,9 @@ Invoke-MgDismissRiskyUser
 ## DESCRIPTION
 Dismiss the risk of one or more riskyUser objects.
 This action sets the targeted user's risk level to none.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/riskyuser-dismiss-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgDismissRiskyUser Cmdlet

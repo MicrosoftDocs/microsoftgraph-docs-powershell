@@ -35,6 +35,9 @@ Get-MgBetaEntitlementManagementAccessPackageResourceRequest -InputObject <IIdent
 ## DESCRIPTION
 Represents a request to add or remove a resource to or from a catalog respectively.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/entitlementmanagement-list-accesspackageresourcerequests-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Get all access package resource requests
 

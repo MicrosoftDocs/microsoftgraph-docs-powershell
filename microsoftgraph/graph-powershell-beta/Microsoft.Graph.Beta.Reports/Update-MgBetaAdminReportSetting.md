@@ -10,7 +10,6 @@ ms.prod: reports
 
 ## SYNOPSIS
 Update tenant-level settings for Microsoft 365 reports.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,9 @@ Update-MgBetaAdminReportSetting -BodyParameter <IMicrosoftGraphAdminReportSettin
 
 ## DESCRIPTION
 Update tenant-level settings for Microsoft 365 reports.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/adminreportsettings-update-permissions.md)]
 
 ## PARAMETERS
 

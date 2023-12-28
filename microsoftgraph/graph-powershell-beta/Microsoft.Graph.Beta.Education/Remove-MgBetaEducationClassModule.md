@@ -11,7 +11,6 @@ ms.prod: education
 ## SYNOPSIS
 Delete an existing module in a class.
 Only teachers within a class can delete modules.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -30,7 +29,9 @@ Remove-MgBetaEducationClassModule -InputObject <IEducationIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete an existing module in a class.
 Only teachers within a class can delete modules.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationmodule-delete-permissions.md)]
 
 ## PARAMETERS
 

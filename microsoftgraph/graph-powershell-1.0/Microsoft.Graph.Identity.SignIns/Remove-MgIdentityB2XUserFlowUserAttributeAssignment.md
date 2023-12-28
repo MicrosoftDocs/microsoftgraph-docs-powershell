@@ -10,7 +10,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Delete an identityUserFlowAttributeAssignment object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaIdentityB2XUserFlowUserAttributeAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityB2XUserFlowUserAttributeAssignment?view=graph-powershell-beta)
@@ -32,7 +31,9 @@ Remove-MgIdentityB2XUserFlowUserAttributeAssignment -InputObject <IIdentitySignI
 
 ## DESCRIPTION
 Delete an identityUserFlowAttributeAssignment object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identityuserflowattributeassignment-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

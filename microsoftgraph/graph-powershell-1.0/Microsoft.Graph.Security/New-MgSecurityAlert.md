@@ -1171,3 +1171,4 @@ VULNERABILITYSTATES \<IMicrosoftGraphVulnerabilityState\[\]\>: Threat intelligen
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityalert](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityalert)
 
+

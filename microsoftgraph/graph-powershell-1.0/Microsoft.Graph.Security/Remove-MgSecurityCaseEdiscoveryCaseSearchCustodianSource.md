@@ -31,6 +31,9 @@ Remove-MgSecurityCaseEdiscoveryCaseSearchCustodianSource -InputObject <ISecurity
 ## DESCRIPTION
 Remove a dataSource object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverysearch-delete-custodiansources-permissions.md)]
+
 ## PARAMETERS
 
 ### -DataSourceId

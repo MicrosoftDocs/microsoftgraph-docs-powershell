@@ -44,6 +44,9 @@ Only items representing folders have children.
 Read-only.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-list-children-permissions.md)]
+
 ## PARAMETERS
 
 ### -All

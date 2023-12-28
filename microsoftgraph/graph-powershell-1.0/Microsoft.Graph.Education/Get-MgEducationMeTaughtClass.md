@@ -38,6 +38,9 @@ Get-MgEducationMeTaughtClass -InputObject <IEducationIdentity> [-ExpandProperty 
 ## DESCRIPTION
 Classes for which the user is a teacher.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationuser-list-taughtclasses-permissions.md)]
+
 ## EXAMPLES
 
 ## PARAMETERS

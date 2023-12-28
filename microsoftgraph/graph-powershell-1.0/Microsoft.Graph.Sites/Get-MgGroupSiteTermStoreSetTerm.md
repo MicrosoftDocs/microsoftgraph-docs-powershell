@@ -10,7 +10,6 @@ ms.prod: sites-and-lists
 
 ## SYNOPSIS
 Read the properties and relationships of a term object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteTermStoreSetTerm](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreSetTerm?view=graph-powershell-beta)
@@ -57,7 +56,9 @@ Get-MgGroupSiteTermStoreSetTerm -InputObject <ISitesIdentity> [-ExpandProperty <
 
 ## DESCRIPTION
 Read the properties and relationships of a term object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-term-get-permissions.md)]
 
 ## PARAMETERS
 

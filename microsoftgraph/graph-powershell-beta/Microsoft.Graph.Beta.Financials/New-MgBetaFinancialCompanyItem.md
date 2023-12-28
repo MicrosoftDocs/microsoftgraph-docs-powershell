@@ -518,3 +518,4 @@ PICTURE \<IMicrosoftGraphPicture\[\]\>: .
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanyitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanyitem)
 
 
+

@@ -39,6 +39,9 @@ Get-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult -InputObject <I
 ## DESCRIPTION
 The related taskProcessingResults.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-run-list-taskprocessingresults-permissions.md)]
+
 ## PARAMETERS
 
 ### -All

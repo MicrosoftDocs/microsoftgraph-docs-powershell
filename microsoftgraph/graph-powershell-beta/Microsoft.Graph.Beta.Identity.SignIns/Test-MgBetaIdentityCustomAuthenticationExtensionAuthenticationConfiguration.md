@@ -10,7 +10,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 An API to check validity of the endpoint and and authentication configuration for a customAuthenticationExtension.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -42,7 +41,9 @@ Test-MgBetaIdentityCustomAuthenticationExtensionAuthenticationConfiguration
 
 ## DESCRIPTION
 An API to check validity of the endpoint and and authentication configuration for a customAuthenticationExtension.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/customauthenticationextension-validateauthenticationconfiguration-permissions.md)]
 
 ## PARAMETERS
 
@@ -196,6 +197,7 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[ActivityBasedTimeoutPolicyId \<String\>\]: The unique identifier of activityBasedTimeoutPolicy
   \[AppManagementPolicyId \<String\>\]: The unique identifier of appManagementPolicy
   \[AuthenticationCombinationConfigurationId \<String\>\]: The unique identifier of authenticationCombinationConfiguration
+  \[AuthenticationConditionApplicationAppId \<String\>\]: The unique identifier of authenticationConditionApplication
   \[AuthenticationContextClassReferenceId \<String\>\]: The unique identifier of authenticationContextClassReference
   \[AuthenticationEventListenerId \<String\>\]: The unique identifier of authenticationEventListener
   \[AuthenticationEventsFlowId \<String\>\]: The unique identifier of authenticationEventsFlow

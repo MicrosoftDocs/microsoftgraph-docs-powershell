@@ -45,6 +45,9 @@ Update-MgPlannerTaskBucketTaskBoardFormat -InputObject <IPlannerIdentity> -IfMat
 ## DESCRIPTION
 Update the navigation property bucketTaskBoardFormat in planner
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannerbuckettaskboardtaskformat-update-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

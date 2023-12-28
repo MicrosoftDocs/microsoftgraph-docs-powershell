@@ -10,7 +10,6 @@ ms.prod: planner
 
 ## SYNOPSIS
 Retrieve the properties and relationships of plannerBucketTaskBoardTaskFormat object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPlannerTaskBucketTaskBoardFormat](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerTaskBucketTaskBoardFormat?view=graph-powershell-1.0)
@@ -31,7 +30,9 @@ Get-MgBetaPlannerTaskBucketTaskBoardFormat -InputObject <IPlannerIdentity> [-Exp
 
 ## DESCRIPTION
 Retrieve the properties and relationships of plannerBucketTaskBoardTaskFormat object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerbuckettaskboardtaskformat-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -295,3 +295,4 @@ GROUPSREQUIRINGPARTNERENROLLMENT \<IMicrosoftGraphDeviceManagementPartnerAssignm
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementpartner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementpartner)
 
 
+

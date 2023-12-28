@@ -11,7 +11,6 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Restore a previous version of a ListItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the item.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Restore-MgBetaDriveListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Restore-MgBetaDriveListItemVersion?view=graph-powershell-beta)
@@ -33,7 +32,9 @@ Restore-MgDriveListItemVersion -InputObject <IFilesIdentity> [-PassThru] [-WhatI
 ## DESCRIPTION
 Restore a previous version of a ListItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the item.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitemversion-restore-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

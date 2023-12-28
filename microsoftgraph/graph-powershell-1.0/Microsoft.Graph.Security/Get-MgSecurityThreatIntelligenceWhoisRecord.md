@@ -13,7 +13,6 @@ ms.prod: security
 Get the specified whoisRecord resource.
 Specify the desired whoisRecord in one of the following two ways:- Identify a host and get its current whoisRecord.
 - Specify an id value to get the corresponding whoisRecord.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceWhoisRecord](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceWhoisRecord?view=graph-powershell-beta)
@@ -43,7 +42,12 @@ Get-MgSecurityThreatIntelligenceWhoisRecord -InputObject <ISecurityIdentity> [-E
 Get the specified whoisRecord resource.
 Specify the desired whoisRecord in one of the following two ways:- Identify a host and get its current whoisRecord.
 - Specify an id value to get the corresponding whoisRecord.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-whoisrecord-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-threatintelligence-list-whoisrecords-permissions.md)]
 
 ## PARAMETERS
 

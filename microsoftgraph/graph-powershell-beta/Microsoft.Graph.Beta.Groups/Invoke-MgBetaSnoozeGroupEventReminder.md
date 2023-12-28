@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Postpone a reminder for an event in a user calendar until a new time.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgSnoozeGroupEventReminder](/powershell/module/Microsoft.Graph.Groups/Invoke-MgSnoozeGroupEventReminder?view=graph-powershell-1.0)
@@ -45,7 +44,9 @@ Invoke-MgBetaSnoozeGroupEventReminder -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Postpone a reminder for an event in a user calendar until a new time.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-snoozereminder-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

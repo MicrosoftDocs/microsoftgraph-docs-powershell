@@ -11,7 +11,6 @@ ms.prod: change-notifications
 ## SYNOPSIS
 Delete a subscription.
 For the list of resources that support subscribing to change notifications, see the table in the Permissions section.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgSubscription](/powershell/module/Microsoft.Graph.ChangeNotifications/Remove-MgSubscription?view=graph-powershell-1.0)
@@ -33,7 +32,6 @@ Remove-MgBetaSubscription -InputObject <IChangeNotificationsIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete a subscription.
 For the list of resources that support subscribing to change notifications, see the table in the Permissions section.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

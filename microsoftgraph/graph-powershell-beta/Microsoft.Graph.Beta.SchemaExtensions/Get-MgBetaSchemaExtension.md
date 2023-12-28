@@ -11,7 +11,6 @@ ms.prod: extensions
 
 ## SYNOPSIS
 Get the properties of the specified schemaExtension definition.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSchemaExtension](/powershell/module/Microsoft.Graph.SchemaExtensions/Get-MgSchemaExtension?view=graph-powershell-1.0)
@@ -39,7 +38,12 @@ Get-MgBetaSchemaExtension -InputObject <ISchemaExtensionsIdentity> [-ExpandPrope
 
 ## DESCRIPTION
 Get the properties of the specified schemaExtension definition.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/schemaextension-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/schemaextension-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

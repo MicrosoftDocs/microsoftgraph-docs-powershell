@@ -11,7 +11,6 @@ ms.prod: security
 
 ## SYNOPSIS
 Get the properties and relationships of an sslCertificate object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceSslCertificate](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceSslCertificate?view=graph-powershell-1.0)
@@ -39,7 +38,12 @@ Get-MgBetaSecurityThreatIntelligenceSslCertificate -InputObject <ISecurityIdenti
 
 ## DESCRIPTION
 Get the properties and relationships of an sslCertificate object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-sslcertificate-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-threatintelligence-list-sslcertificates-permissions.md)]
 
 ## PARAMETERS
 
@@ -245,6 +249,8 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[ArticleId \<String\>\]: The unique identifier of article
   \[ArticleIndicatorId \<String\>\]: The unique identifier of articleIndicator
   \[AttackSimulationOperationId \<String\>\]: The unique identifier of attackSimulationOperation
+  \[AuditLogQueryId \<String\>\]: The unique identifier of auditLogQuery
+  \[AuditLogRecordId \<String\>\]: The unique identifier of auditLogRecord
   \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
   \[AuthorityTemplateId \<String\>\]: The unique identifier of authorityTemplate
   \[CaseOperationId \<String\>\]: The unique identifier of caseOperation

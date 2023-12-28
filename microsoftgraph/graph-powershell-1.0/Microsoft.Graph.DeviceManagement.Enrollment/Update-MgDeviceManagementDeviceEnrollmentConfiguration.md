@@ -9,7 +9,7 @@ ms.prod: intune
 # Update-MgDeviceManagementDeviceEnrollmentConfiguration
 
 ## SYNOPSIS
-Update the properties of a deviceEnrollmentLimitConfiguration object.
+Update the properties of a deviceEnrollmentWindowsHelloForBusinessConfiguration object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Update-MgBetaDeviceManagementDeviceEnrollmentConfiguration?view=graph-powershell-beta)
@@ -47,7 +47,7 @@ Update-MgDeviceManagementDeviceEnrollmentConfiguration -InputObject <IDeviceMana
 ```
 
 ## DESCRIPTION
-Update the properties of a deviceEnrollmentLimitConfiguration object.
+Update the properties of a deviceEnrollmentWindowsHelloForBusinessConfiguration object.
 
 ## PARAMETERS
 
@@ -316,5 +316,6 @@ INPUTOBJECT \<IDeviceManagementEnrollmentIdentity\>: Identity Parameter
 [Update-MgBetaDeviceManagementDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Update-MgBetaDeviceManagementDeviceEnrollmentConfiguration?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/update-mgdevicemanagementdeviceenrollmentconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/update-mgdevicemanagementdeviceenrollmentconfiguration)
+
 
 

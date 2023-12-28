@@ -28,6 +28,9 @@ Remove-MgBetaSecurityLabelCategorySubCategory -InputObject <ISecurityIdentity> [
 ## DESCRIPTION
 Delete a subCategoryTemplate object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-categorytemplate-delete-subcategories-permissions.md)]
+
 ## PARAMETERS
 
 ### -CategoryTemplateId
@@ -157,6 +160,8 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[ArticleId \<String\>\]: The unique identifier of article
   \[ArticleIndicatorId \<String\>\]: The unique identifier of articleIndicator
   \[AttackSimulationOperationId \<String\>\]: The unique identifier of attackSimulationOperation
+  \[AuditLogQueryId \<String\>\]: The unique identifier of auditLogQuery
+  \[AuditLogRecordId \<String\>\]: The unique identifier of auditLogRecord
   \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
   \[AuthorityTemplateId \<String\>\]: The unique identifier of authorityTemplate
   \[CaseOperationId \<String\>\]: The unique identifier of caseOperation

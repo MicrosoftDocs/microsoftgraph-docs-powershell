@@ -40,6 +40,9 @@ Get-MgPolicyPermissionGrantPolicyInclude -InputObject <IIdentitySignInsIdentity>
 Condition sets which are included in this permission grant policy.
 Automatically expanded on GET.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/permissiongrantpolicy-list-includes-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Get a permission grant policy include by ID 
 

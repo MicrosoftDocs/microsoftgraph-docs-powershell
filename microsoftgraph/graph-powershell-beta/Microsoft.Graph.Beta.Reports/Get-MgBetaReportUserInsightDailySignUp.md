@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportuserinsightdailysignup
 schema: 2.0.0
+ms.prod: identity-and-access-reports
 ---
 
 # Get-MgBetaReportUserInsightDailySignUp
 
 ## SYNOPSIS
-Get signUps from reports
+Total sign-ups on apps registered in the tenant for a specified period.
 
 ## SYNTAX
 
@@ -32,7 +33,7 @@ Get-MgBetaReportUserInsightDailySignUp -InputObject <IReportsIdentity> [-ExpandP
 ```
 
 ## DESCRIPTION
-Get signUps from reports
+Total sign-ups on apps registered in the tenant for a specified period.
 
 ## PARAMETERS
 
@@ -248,10 +249,12 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
   \[DeviceManagementExportJobId \<String\>\]: The unique identifier of deviceManagementExportJob
   \[DirectoryAuditId \<String\>\]: The unique identifier of directoryAudit
   \[EndDateTime \<DateTime?\>\]: Usage: endDateTime={endDateTime}
+  \[ExclusiveIntervalEndDateTime \<DateTime?\>\]: Usage: exclusiveIntervalEndDateTime={exclusiveIntervalEndDateTime}
   \[Filter \<String\>\]: Usage: filter='{filter}'
   \[GroupId \<String\>\]: Usage: groupId='{groupId}'
   \[IncludedUserRoles \<String\>\]: Usage: includedUserRoles='{includedUserRoles}'
   \[IncludedUserTypes \<String\>\]: Usage: includedUserTypes='{includedUserTypes}'
+  \[InclusiveIntervalStartDateTime \<DateTime?\>\]: Usage: inclusiveIntervalStartDateTime={inclusiveIntervalStartDateTime}
   \[InsightSummaryId \<String\>\]: The unique identifier of insightSummary
   \[MfaCompletionMetricId \<String\>\]: The unique identifier of mfaCompletionMetric
   \[MonthlyInactiveUsersByApplicationMetricId \<String\>\]: The unique identifier of monthlyInactiveUsersByApplicationMetric

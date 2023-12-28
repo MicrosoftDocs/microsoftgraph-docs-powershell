@@ -38,6 +38,9 @@ Get-MgBetaPrintPrinterConnector -InputObject <IDevicesCloudPrintIdentity> [-Expa
 ## DESCRIPTION
 The connectors that are associated with the printer.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printer-list-connectors-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

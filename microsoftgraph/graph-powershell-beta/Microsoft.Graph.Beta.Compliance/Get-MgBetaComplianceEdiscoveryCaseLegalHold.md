@@ -10,7 +10,6 @@ ms.prod: ediscovery
 
 ## SYNOPSIS
 Read the properties and relationships of a legalHold object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -35,7 +34,9 @@ Get-MgBetaComplianceEdiscoveryCaseLegalHold -InputObject <IComplianceIdentity> [
 
 ## DESCRIPTION
 Read the properties and relationships of a legalHold object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-legalhold-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaComplianceEdiscoveryCaseLegalHold Cmdlet

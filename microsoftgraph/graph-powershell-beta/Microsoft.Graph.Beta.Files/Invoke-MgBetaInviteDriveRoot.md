@@ -9,8 +9,7 @@ ms.prod: sharepoint
 # Invoke-MgBetaInviteDriveRoot
 
 ## SYNOPSIS
-Sends a sharing invitation for a DriveItem.\nA sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
-This API is available in the following national cloud deployments.
+Sends a sharing invitation for a DriveItem.A sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgInviteDriveRoot](/powershell/module/Microsoft.Graph.Files/Invoke-MgInviteDriveRoot?view=graph-powershell-1.0)
@@ -48,8 +47,10 @@ Invoke-MgBetaInviteDriveRoot -InputObject <IFilesIdentity>
 ```
 
 ## DESCRIPTION
-Sends a sharing invitation for a DriveItem.\nA sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
-This API is available in the following national cloud deployments.
+Sends a sharing invitation for a DriveItem.A sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-invite-permissions.md)]
 
 ## PARAMETERS
 
@@ -334,5 +335,6 @@ security groups).
 [Invoke-MgInviteDriveRoot](/powershell/module/Microsoft.Graph.Files/Invoke-MgInviteDriveRoot?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetainvitedriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetainvitedriveroot)
+
 
 

@@ -513,3 +513,4 @@ Not yet supported.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagementdirectoryroledefinitioninheritpermissionfrom](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagementdirectoryroledefinitioninheritpermissionfrom)
 
 
+

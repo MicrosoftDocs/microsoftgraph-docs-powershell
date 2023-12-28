@@ -11,7 +11,6 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Retrieve the properties and relationships of domain object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDomain?view=graph-powershell-beta)
@@ -38,7 +37,12 @@ Get-MgDomain -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandPropert
 
 ## DESCRIPTION
 Retrieve the properties and relationships of domain object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/domain-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/domain-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get a list of domain objects

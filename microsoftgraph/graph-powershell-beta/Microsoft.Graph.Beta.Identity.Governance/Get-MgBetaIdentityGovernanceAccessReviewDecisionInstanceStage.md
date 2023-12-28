@@ -11,7 +11,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 Retrieve the properties and relationships of an accessReviewStage object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -36,7 +35,12 @@ Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStage -InputObject <IIde
 
 ## DESCRIPTION
 Retrieve the properties and relationships of an accessReviewStage object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewstage-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstance-list-stages-permissions.md)]
 
 ## PARAMETERS
 

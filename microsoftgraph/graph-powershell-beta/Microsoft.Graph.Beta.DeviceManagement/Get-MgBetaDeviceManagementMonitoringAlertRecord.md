@@ -11,7 +11,6 @@ ms.prod: cloud-pc
 
 ## SYNOPSIS
 Read the properties and relationships of an alertRecord object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -36,7 +35,12 @@ Get-MgBetaDeviceManagementMonitoringAlertRecord -InputObject <IDeviceManagementI
 
 ## DESCRIPTION
 Read the properties and relationships of an alertRecord object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/devicemanagement-alertrecord-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/devicemanagement-alertrecord-list-permissions.md)]
 
 ## PARAMETERS
 

@@ -10,8 +10,7 @@ ms.prod: microsoft-teams
 
 ## SYNOPSIS
 Send activity feed notifications to multiple users, in bulk.
-For more details about sending notifications and the requirements for doing so, see\nsending Teams activity notifications.
-This API is available in the following national cloud deployments.
+For more details about sending notifications and the requirements for doing so, seesending Teams activity notifications.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Send-MgBetaTeamworkActivityNotificationToRecipient](/powershell/module/Microsoft.Graph.Beta.Teams/Send-MgBetaTeamworkActivityNotificationToRecipient?view=graph-powershell-beta)
@@ -36,8 +35,10 @@ Send-MgTeamworkActivityNotificationToRecipient
 
 ## DESCRIPTION
 Send activity feed notifications to multiple users, in bulk.
-For more details about sending notifications and the requirements for doing so, see\nsending Teams activity notifications.
-This API is available in the following national cloud deployments.
+For more details about sending notifications and the requirements for doing so, seesending Teams activity notifications.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teamwork-sendactivitynotificationtorecipients-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -330,4 +331,5 @@ Optional when source is entityUrl; required when source is text.
 [Send-MgBetaTeamworkActivityNotificationToRecipient](/powershell/module/Microsoft.Graph.Beta.Teams/Send-MgBetaTeamworkActivityNotificationToRecipient?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mgteamworkactivitynotificationtorecipient](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mgteamworkactivitynotificationtorecipient)
+
 

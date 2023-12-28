@@ -31,6 +31,9 @@ Get-MgBetaGroupDriveBundleContent -InputObject <IFilesIdentity> -OutFile <String
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bundle-list-permissions.md)]
+
 ## PARAMETERS
 
 ### -DriveId

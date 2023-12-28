@@ -10,7 +10,6 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Read the properties and relationships of an onPremisesDirectorySynchronization object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDirectoryOnPremiseSynchronization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryOnPremiseSynchronization?view=graph-powershell-beta)
@@ -38,7 +37,9 @@ Get-MgDirectoryOnPremiseSynchronization -InputObject <IIdentityDirectoryManageme
 
 ## DESCRIPTION
 Read the properties and relationships of an onPremisesDirectorySynchronization object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onpremisesdirectorysynchronization-get-permissions.md)]
 
 ## PARAMETERS
 

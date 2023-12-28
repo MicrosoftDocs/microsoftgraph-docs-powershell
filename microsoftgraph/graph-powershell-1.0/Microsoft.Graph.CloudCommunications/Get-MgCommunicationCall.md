@@ -10,7 +10,6 @@ ms.prod: cloud-communications
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a call object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationCall?view=graph-powershell-beta)
@@ -31,8 +30,8 @@ Get-MgCommunicationCall -InputObject <ICloudCommunicationsIdentity> [-ExpandProp
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a call object.
-This API is available in the following national cloud deployments.
 
+**Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-get-permissions.md)]
 
 ## EXAMPLES
@@ -142,6 +141,7 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[AudioRoutingGroupId \<String\>\]: The unique identifier of audioRoutingGroup
   \[CallId \<String\>\]: The unique identifier of call
   \[CallRecordId \<String\>\]: The unique identifier of callRecord
+  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
   \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
   \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
   \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession

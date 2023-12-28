@@ -10,7 +10,6 @@ ms.prod: ediscovery
 
 ## SYNOPSIS
 Update the properties of an ediscoveryReviewTag object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSecurityCaseEdiscoveryCaseTag](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityCaseEdiscoveryCaseTag?view=graph-powershell-beta)
@@ -49,7 +48,9 @@ Update-MgSecurityCaseEdiscoveryCaseTag -InputObject <ISecurityIdentity>
 
 ## DESCRIPTION
 Update the properties of an ediscoveryReviewTag object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoveryreviewtag-update-permissions.md)]
 
 ## PARAMETERS
 
@@ -432,5 +433,6 @@ Read-only.
 [Update-MgBetaSecurityCaseEdiscoveryCaseTag](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityCaseEdiscoveryCaseTag?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasetag](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasetag)
+
 
 

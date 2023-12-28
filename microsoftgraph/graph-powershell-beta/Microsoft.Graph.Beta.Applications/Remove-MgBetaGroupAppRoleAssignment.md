@@ -10,7 +10,6 @@ ms.prod: groups
 
 ## SYNOPSIS
 Deletes an appRoleAssignment that a group has been granted.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgGroupAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/Remove-MgGroupAppRoleAssignment?view=graph-powershell-1.0)
@@ -31,7 +30,9 @@ Remove-MgBetaGroupAppRoleAssignment -InputObject <IApplicationsIdentity> [-IfMat
 
 ## DESCRIPTION
 Deletes an appRoleAssignment that a group has been granted.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-delete-approleassignments-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -207,6 +208,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Remove-MgGroupAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/Remove-MgGroupAppRoleAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetagroupapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetagroupapproleassignment)
-
 
 

@@ -11,7 +11,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Read the properties and relationships of a todoTask object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserTodoTask](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoTask?view=graph-powershell-1.0)
@@ -39,7 +38,12 @@ Get-MgBetaUserTodoTask -InputObject <IUsersIdentity> [-ExpandProperty <String[]>
 
 ## DESCRIPTION
 Read the properties and relationships of a todoTask object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/todotask-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/todotasklist-list-tasks-permissions.md)]
 
 ## PARAMETERS
 
@@ -298,7 +302,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Get-MgUserTodoTask](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoTask?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotask)
-
 
 
 

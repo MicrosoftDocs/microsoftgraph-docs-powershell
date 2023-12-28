@@ -10,7 +10,6 @@ ms.prod: industry-data-etl
 
 ## SYNOPSIS
 Delete a yearTimePeriodDefinition object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,9 @@ Remove-MgBetaExternalIndustryDataYear -InputObject <ISearchIdentity> [-IfMatch <
 
 ## DESCRIPTION
 Delete a yearTimePeriodDefinition object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-yeartimeperioddefinition-delete-permissions.md)]
 
 ## PARAMETERS
 

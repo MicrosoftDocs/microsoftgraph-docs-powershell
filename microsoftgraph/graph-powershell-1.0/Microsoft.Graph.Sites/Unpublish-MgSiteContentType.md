@@ -9,8 +9,7 @@ ms.prod: sites-and-lists
 # Unpublish-MgSiteContentType
 
 ## SYNOPSIS
-Unpublish a contentType\]\[\] from a content type hub site.
-This API is available in the following \[national cloud deployments.
+Unpublish a \[contentType\]\[\] from a content type hub site.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Unpublish-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Unpublish-MgBetaSiteContentType?view=graph-powershell-beta)
@@ -29,8 +28,10 @@ Unpublish-MgSiteContentType -InputObject <ISitesIdentity> [-PassThru] [-WhatIf] 
 ```
 
 ## DESCRIPTION
-Unpublish a contentType\]\[\] from a content type hub site.
-This API is available in the following \[national cloud deployments.
+Unpublish a \[contentType\]\[\] from a content type hub site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-unpublish-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Unpublish-MgSiteContentType Cmdlet

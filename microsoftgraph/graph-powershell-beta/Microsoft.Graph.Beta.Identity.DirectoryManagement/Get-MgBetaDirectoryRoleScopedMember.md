@@ -42,6 +42,9 @@ Members of this directory role that are scoped to administrative units.
 Read-only.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryrole-list-scopedmembers-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

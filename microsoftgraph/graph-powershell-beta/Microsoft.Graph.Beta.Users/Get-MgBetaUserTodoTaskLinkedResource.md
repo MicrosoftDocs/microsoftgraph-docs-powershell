@@ -11,7 +11,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Read the properties and relationships of a linkedResource object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserTodoTaskLinkedResource](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoTaskLinkedResource?view=graph-powershell-1.0)
@@ -39,7 +38,12 @@ Get-MgBetaUserTodoTaskLinkedResource -InputObject <IUsersIdentity> [-ExpandPrope
 
 ## DESCRIPTION
 Read the properties and relationships of a linkedResource object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/linkedresource-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/todotask-list-linkedresources-permissions.md)]
 
 ## PARAMETERS
 
@@ -313,7 +317,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Get-MgUserTodoTaskLinkedResource](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoTaskLinkedResource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotasklinkedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotasklinkedresource)
-
 
 
 

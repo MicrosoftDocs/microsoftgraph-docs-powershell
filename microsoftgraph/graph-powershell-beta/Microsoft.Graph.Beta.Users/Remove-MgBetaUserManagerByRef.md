@@ -10,7 +10,6 @@ ms.prod: users
 
 ## SYNOPSIS
 Remove a user's manager.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgUserManagerByRef](/powershell/module/Microsoft.Graph.Users/Remove-MgUserManagerByRef?view=graph-powershell-1.0)
@@ -31,7 +30,9 @@ Remove-MgBetaUserManagerByRef -InputObject <IUsersIdentity> [-IfMatch <String>] 
 
 ## DESCRIPTION
 Remove a user's manager.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-delete-manager-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -183,6 +184,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Remove-MgUserManagerByRef](/powershell/module/Microsoft.Graph.Users/Remove-MgUserManagerByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausermanagerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausermanagerbyref)
-
 
 

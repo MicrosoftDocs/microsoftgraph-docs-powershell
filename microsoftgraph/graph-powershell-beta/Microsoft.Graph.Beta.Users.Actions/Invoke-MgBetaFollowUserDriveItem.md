@@ -10,7 +10,6 @@ ms.prod: sharepoint
 
 ## SYNOPSIS
 Follow a driveItem.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgFollowUserDriveItem](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgFollowUserDriveItem?view=graph-powershell-1.0)
@@ -30,7 +29,9 @@ Invoke-MgBetaFollowUserDriveItem -InputObject <IUsersActionsIdentity> [-WhatIf] 
 
 ## DESCRIPTION
 Follow a driveItem.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-follow-permissions.md)]
 
 ## PARAMETERS
 
@@ -170,6 +171,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[NotebookId \<String\>\]: The unique identifier of notebook
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
   \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
   \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
   \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask

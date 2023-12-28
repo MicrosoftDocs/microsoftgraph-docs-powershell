@@ -10,7 +10,7 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Return all directory extension definitions that have been registered in a directory, including through multi-tenant apps.
-The following entities support extension properties: This API is available in the following national cloud deployments.
+The following entities support extension properties:
 
 ## SYNTAX
 
@@ -29,7 +29,10 @@ Get-MgDirectoryObjectAvailableExtensionProperty
 
 ## DESCRIPTION
 Return all directory extension definitions that have been registered in a directory, including through multi-tenant apps.
-The following entities support extension properties: This API is available in the following national cloud deployments.
+The following entities support extension properties:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directoryobject-getavailableextensionproperties-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

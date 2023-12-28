@@ -9,7 +9,7 @@ ms.prod: intune
 # Update-MgDeviceManagementDeviceConfiguration
 
 ## SYNOPSIS
-Update the properties of a androidGeneralDeviceConfiguration object.
+Update the properties of a sharedPCConfiguration object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDeviceConfiguration?view=graph-powershell-beta)
@@ -55,7 +55,7 @@ Update-MgDeviceManagementDeviceConfiguration -InputObject <IDeviceManagementIden
 ```
 
 ## DESCRIPTION
-Update the properties of a androidGeneralDeviceConfiguration object.
+Update the properties of a sharedPCConfiguration object.
 
 ## PARAMETERS
 
@@ -545,5 +545,6 @@ Read-only.
 [Update-MgBetaDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDeviceConfiguration?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdeviceconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdeviceconfiguration)
+
 
 

@@ -11,7 +11,6 @@ ms.prod: governance
 ## SYNOPSIS
 In PIM, carry out the following operations through the unifiedRoleAssignmentScheduleRequest object: To call this API to update, renew, and extend assignments for yourself, you must have multifactor authentication (MFA) enforced, and running the query in a session in which they were challenged for MFA.
 See Enable per-user Microsoft Entra multifactor authentication to secure sign-in events.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequest?view=graph-powershell-beta)
@@ -41,7 +40,9 @@ New-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest
 ## DESCRIPTION
 In PIM, carry out the following operations through the unifiedRoleAssignmentScheduleRequest object: To call this API to update, renew, and extend assignments for yourself, you must have multifactor authentication (MFA) enforced, and running the query in a session in which they were challenged for MFA.
 See Enable per-user Microsoft Entra multifactor authentication to secure sign-in events.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/rbacapplication-post-roleassignmentschedulerequests-permissions.md)]
 
 ## PARAMETERS
 

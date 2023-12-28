@@ -10,7 +10,6 @@ ms.prod: search
 
 ## SYNOPSIS
 Delete an externalGroupMember object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgExternalConnectionGroupMember](/powershell/module/Microsoft.Graph.Search/Remove-MgExternalConnectionGroupMember?view=graph-powershell-1.0)
@@ -31,7 +30,9 @@ Remove-MgBetaExternalConnectionGroupMember -InputObject <ISearchIdentity> [-IfMa
 
 ## DESCRIPTION
 Delete an externalGroupMember object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-externalgroupmember-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

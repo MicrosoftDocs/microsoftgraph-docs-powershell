@@ -11,7 +11,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Read the properties and relationships of an internalDomainFederation object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDomainFederationConfiguration?view=graph-powershell-beta)
@@ -39,7 +38,12 @@ Get-MgDomainFederationConfiguration -InputObject <IIdentityDirectoryManagementId
 
 ## DESCRIPTION
 Read the properties and relationships of an internalDomainFederation object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/internaldomainfederation-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/domain-list-federationconfiguration-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get the federation settings for a federated domain

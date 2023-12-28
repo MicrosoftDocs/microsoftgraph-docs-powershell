@@ -11,7 +11,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Get the properties and relationships of the specified Outlook task folder.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -34,7 +33,12 @@ Get-MgBetaUserOutlookTaskFolder -InputObject <IUsersIdentity> [-Property <String
 
 ## DESCRIPTION
 Get the properties and relationships of the specified Outlook task folder.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlooktaskfolder-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlookuser-list-taskfolders-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserOutlookTaskFolder Cmdlet
@@ -265,6 +269,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktaskfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktaskfolder)
-
 
 

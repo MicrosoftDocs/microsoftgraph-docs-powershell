@@ -13,7 +13,6 @@ In Microsoft Entra entitlement management, callers can automatically retry a use
 It's performed on an accessPackageAssignmentRequest object whose requestState is in a DeliveryFailed or PartiallyDelivered state.
 You can only reprocess a request within 14 days from the time the original request was completed.
 For requests completed more than 14 days, you will need to ask the users to cancel the request(s) and make a new request in the MyAccess portal.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -70,7 +69,9 @@ In Microsoft Entra entitlement management, callers can automatically retry a use
 It's performed on an accessPackageAssignmentRequest object whose requestState is in a DeliveryFailed or PartiallyDelivered state.
 You can only reprocess a request within 14 days from the time the original request was completed.
 For requests completed more than 14 days, you will need to ask the users to cancel the request(s) and make a new request in the MyAccess portal.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackageassignmentrequest-reprocess-permissions.md)]
 
 ## PARAMETERS
 
@@ -4889,9 +4890,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
-- _ !
-# ^ ~.
+Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
+
+
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -9685,9 +9686,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
-- _ !
-# ^ ~.
+Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
+
+
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -9993,7 +9994,7 @@ Read-only.
       \[DisplayName \<String\>\]: The display name of the connected organization.
 Supports $filter (eq).
       \[ExternalSponsors \<IMicrosoftGraphDirectoryObject\[\]\>\]: 
-      \[IdentitySources \<IMicrosoftGraphIdentitySource\[\]\>\]: The identity sources in this connected organization, one of azureActiveDirectoryTenant, domainIdentitySource, externalDomainFederation or crossCloudAzureActiveDirectoryTenant.
+      \[IdentitySources \<IMicrosoftGraphIdentitySource\[\]\>\]: The identity sources in this connected organization, one of azureActiveDirectoryTenant, crossCloudAzureActiveDirectoryTenant, domainIdentitySource, externalDomainFederation, or socialIdentitySource.
 Nullable.
       \[InternalSponsors \<IMicrosoftGraphDirectoryObject\[\]\>\]: 
       \[ModifiedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -14508,9 +14509,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
-- _ !
-# ^ ~.
+Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
+
+
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -14824,7 +14825,7 @@ Read-only.
         \[DisplayName \<String\>\]: The display name of the connected organization.
 Supports $filter (eq).
         \[ExternalSponsors \<IMicrosoftGraphDirectoryObject\[\]\>\]: 
-        \[IdentitySources \<IMicrosoftGraphIdentitySource\[\]\>\]: The identity sources in this connected organization, one of azureActiveDirectoryTenant, domainIdentitySource, externalDomainFederation or crossCloudAzureActiveDirectoryTenant.
+        \[IdentitySources \<IMicrosoftGraphIdentitySource\[\]\>\]: The identity sources in this connected organization, one of azureActiveDirectoryTenant, crossCloudAzureActiveDirectoryTenant, domainIdentitySource, externalDomainFederation, or socialIdentitySource.
 Nullable.
         \[InternalSponsors \<IMicrosoftGraphDirectoryObject\[\]\>\]: 
         \[ModifiedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -14951,7 +14952,7 @@ Supports $filter (eq).
 Read-only.
       \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-    \[IdentitySources \<IMicrosoftGraphIdentitySource\[\]\>\]: The identity sources in this connected organization, one of azureActiveDirectoryTenant, domainIdentitySource, externalDomainFederation or crossCloudAzureActiveDirectoryTenant.
+    \[IdentitySources \<IMicrosoftGraphIdentitySource\[\]\>\]: The identity sources in this connected organization, one of azureActiveDirectoryTenant, crossCloudAzureActiveDirectoryTenant, domainIdentitySource, externalDomainFederation, or socialIdentitySource.
 Nullable.
     \[InternalSponsors \<IMicrosoftGraphDirectoryObject\[\]\>\]: 
     \[ModifiedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -15014,5 +15015,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementassignmentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementassignmentrequest)
+
 
 

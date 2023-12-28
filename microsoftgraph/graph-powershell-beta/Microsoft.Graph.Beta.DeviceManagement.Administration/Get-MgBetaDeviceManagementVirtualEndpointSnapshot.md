@@ -11,7 +11,6 @@ ms.prod: cloud-pc
 
 ## SYNOPSIS
 Read the properties and relationships of a cloudPcSnapshot object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -36,7 +35,12 @@ Get-MgBetaDeviceManagementVirtualEndpointSnapshot -InputObject <IDeviceManagemen
 
 ## DESCRIPTION
 Read the properties and relationships of a cloudPcSnapshot object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcsnapshot-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-list-snapshots-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointSnapshot Cmdlet

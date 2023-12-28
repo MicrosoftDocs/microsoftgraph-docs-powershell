@@ -11,7 +11,6 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a unifiedRoleAssignment object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryRoleAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleAssignment?view=graph-powershell-1.0)
@@ -39,7 +38,12 @@ Get-MgBetaRoleManagementDirectoryRoleAssignment -InputObject <IIdentityGovernanc
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a unifiedRoleAssignment object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleassignment-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rbacapplication-list-roleassignments-permissions.md)]
 
 ## PARAMETERS
 

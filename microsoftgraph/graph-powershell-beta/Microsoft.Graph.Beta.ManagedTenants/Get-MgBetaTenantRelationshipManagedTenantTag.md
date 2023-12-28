@@ -11,7 +11,6 @@ ms.prod: multi-tenant-management
 
 ## SYNOPSIS
 Read the properties and relationships of a tenantTag object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -36,7 +35,12 @@ Get-MgBetaTenantRelationshipManagedTenantTag -InputObject <IManagedTenantsIdenti
 
 ## DESCRIPTION
 Read the properties and relationships of a tenantTag object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-tenanttag-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-managedtenant-list-tenanttags-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaTenantRelationshipManagedTenantTag Cmdlet

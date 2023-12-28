@@ -33,6 +33,9 @@ Remove-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration -InputObject <IA
 Delete a remoteDesktopSecurityConfiguration object on a servicePrincipal.
 Removing remoteDesktopSecurityConfiguration object on the servicePrincipal disables the Microsoft Entra ID Remote Desktop Services (RDS) authentication protocol to authenticate a user to Microsoft Entra joined or Microsoft Entra hybrid joined devices, and removes any target device groups that you configured for SSO.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-delete-remotedesktopsecurityconfiguration-permissions.md)]
+
 ## PARAMETERS
 
 ### -IfMatch
@@ -179,7 +182,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Remove-MgServicePrincipalRemoteDesktopSecurityConfiguration](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalRemoteDesktopSecurityConfiguration?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalremotedesktopsecurityconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalremotedesktopsecurityconfiguration)
-
 
 
 

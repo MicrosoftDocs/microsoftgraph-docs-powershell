@@ -14,7 +14,6 @@ The table in the Permissions section lists the resources that support subscribin
 Subscriptions expire after a length of time that varies by resource type.
 In order to avoid missing change notifications, an app should renew its subscriptions well in advance of their expiry date.
 See subscription for maximum length of a subscription for each resource type.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/Update-MgBetaSubscription?view=graph-powershell-beta)
@@ -59,7 +58,6 @@ The table in the Permissions section lists the resources that support subscribin
 Subscriptions expire after a length of time that varies by resource type.
 In order to avoid missing change notifications, an app should renew its subscriptions well in advance of their expiry date.
 See subscription for maximum length of a subscription for each resource type.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

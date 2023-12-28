@@ -50,6 +50,9 @@ Get-MgShareListItem -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [
 ## DESCRIPTION
 Used to access the underlying listItem
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-list-permissions.md)]
+
 ## PARAMETERS
 
 ### -All

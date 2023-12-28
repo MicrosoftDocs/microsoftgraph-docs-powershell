@@ -10,7 +10,6 @@ ms.prod: users
 
 ## SYNOPSIS
 Update some or all of the properties of a regionalAndLanguageSettings object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -49,7 +48,9 @@ Update-MgBetaUserSettingRegionalAndLanguageSetting -InputObject <IUsersIdentity>
 
 ## DESCRIPTION
 Update some or all of the properties of a regionalAndLanguageSettings object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/regionalandlanguagesettings-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaUserSettingRegionalAndLanguageSetting Cmdlet

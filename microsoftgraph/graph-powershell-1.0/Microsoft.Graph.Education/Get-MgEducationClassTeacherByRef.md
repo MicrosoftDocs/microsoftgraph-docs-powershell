@@ -11,7 +11,6 @@ ms.prod: education
 ## SYNOPSIS
 Retrieve a list of teachers for a class.
 Delegated tokens must be members of the class to get the teacher list.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationClassTeacherByRef](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassTeacherByRef?view=graph-powershell-beta)
@@ -27,7 +26,9 @@ Get-MgEducationClassTeacherByRef -EducationClassId <String> [-Filter <String>] [
 ## DESCRIPTION
 Retrieve a list of teachers for a class.
 Delegated tokens must be members of the class to get the teacher list.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationclass-list-teachers-permissions.md)]
 
 ## EXAMPLES
 

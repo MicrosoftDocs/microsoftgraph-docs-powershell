@@ -10,7 +10,6 @@ ms.prod: microsoft-teams
 
 ## SYNOPSIS
 Update the tenant-wide teamsAppSettings for all Teams apps in the tenant.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaTeamworkTeamAppSetting](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamworkTeamAppSetting?view=graph-powershell-beta)
@@ -31,7 +30,9 @@ Update-MgTeamworkTeamAppSetting -BodyParameter <IMicrosoftGraphTeamsAppSettings>
 
 ## DESCRIPTION
 Update the tenant-wide teamsAppSettings for all Teams apps in the tenant.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teamsappsettings-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Update the tenant-wide teamsAppSettings for all Teams apps in the tenant

@@ -12,7 +12,6 @@ ms.prod: education
 Delete a specific educationAssignmentResource attached to an assignment.
 Only teachers in the class can remove a resource.
 After an assignment has been published to students, teachers can't remove resources that are marked as 'distributeToStudents'.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgEducationMeAssignmentResource](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationMeAssignmentResource?view=graph-powershell-1.0)
@@ -36,7 +35,9 @@ Remove-MgBetaEducationMeAssignmentResource -InputObject <IEducationIdentity> [-I
 Delete a specific educationAssignmentResource attached to an assignment.
 Only teachers in the class can remove a resource.
 After an assignment has been published to students, teachers can't remove resources that are marked as 'distributeToStudents'.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignmentresource-delete-permissions.md)]
 
 ## PARAMETERS
 

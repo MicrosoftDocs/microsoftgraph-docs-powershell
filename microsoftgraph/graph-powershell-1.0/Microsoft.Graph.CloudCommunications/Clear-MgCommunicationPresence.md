@@ -12,7 +12,6 @@ ms.prod: cloud-communications
 Clear the application's presence session for a user.
 If it is the user's only presence session, the user's presence will change to Offline/Offline.
 For details about presences sessions, see presence: setPresence.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Clear-MgBetaCommunicationPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Clear-MgBetaCommunicationPresence?view=graph-powershell-beta)
@@ -49,8 +48,8 @@ Clear-MgCommunicationPresence -InputObject <ICloudCommunicationsIdentity>
 Clear the application's presence session for a user.
 If it is the user's only presence session, the user's presence will change to Offline/Offline.
 For details about presences sessions, see presence: setPresence.
-This API is available in the following national cloud deployments.
 
+**Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/presence-clearpresence-permissions.md)]
 
 ## EXAMPLES
@@ -205,6 +204,7 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[AudioRoutingGroupId \<String\>\]: The unique identifier of audioRoutingGroup
   \[CallId \<String\>\]: The unique identifier of call
   \[CallRecordId \<String\>\]: The unique identifier of callRecord
+  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
   \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
   \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
   \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession

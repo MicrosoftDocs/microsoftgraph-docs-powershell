@@ -9,8 +9,7 @@ ms.prod: sharepoint
 # Remove-MgBetaUserDriveRootChild
 
 ## SYNOPSIS
-Remove an item from a bundle\]\[\].
-This API is available in the following \[national cloud deployments.
+Remove an item from a \[bundle\]\[\].
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgUserDriveRootChild](/powershell/module/Microsoft.Graph.Files/Remove-MgUserDriveRootChild?view=graph-powershell-1.0)
@@ -30,8 +29,10 @@ Remove-MgBetaUserDriveRootChild -InputObject <IFilesIdentity> [-IfMatch <String>
 ```
 
 ## DESCRIPTION
-Remove an item from a bundle\]\[\].
-This API is available in the following \[national cloud deployments.
+Remove an item from a \[bundle\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bundle-removeitem-permissions.md)]
 
 ## PARAMETERS
 

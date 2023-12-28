@@ -10,7 +10,6 @@ ms.prod: sharepoint
 
 ## SYNOPSIS
 Delete a DriveItem by using its ID or path.Deleting items using this method moves the items to the recycle bin instead of permanently deleting the item.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItem?view=graph-powershell-beta)
@@ -31,7 +30,9 @@ Remove-MgDriveItem -InputObject <IFilesIdentity> [-IfMatch <String>] [-PassThru]
 
 ## DESCRIPTION
 Delete a DriveItem by using its ID or path.Deleting items using this method moves the items to the recycle bin instead of permanently deleting the item.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

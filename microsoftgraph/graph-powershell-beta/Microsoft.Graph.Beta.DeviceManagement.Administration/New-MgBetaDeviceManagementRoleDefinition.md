@@ -361,3 +361,4 @@ These must match the actionName that is defined as part of the rolePermission.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementroledefinition)
 
 
+

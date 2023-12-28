@@ -321,7 +321,7 @@ function ConfirmHttpStatus {
         [string]$PermissionsUrl,
         [string]$GraphProfile = "v1.0",
         [string]$Command = "Get-MgUser",
-        [string]$ApiReferenceUrl = "api-reference",
+        [string]$ApiReferenceUrl = "api-reference"
     )
     try {
         $HTTP_Request = [System.Net.WebRequest]::Create($PermissionsUrl)

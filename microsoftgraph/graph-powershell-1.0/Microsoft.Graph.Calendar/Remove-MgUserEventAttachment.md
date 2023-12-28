@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Delete an attachment from a user calendar event, mail message, or group post.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserEventAttachment](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaUserEventAttachment?view=graph-powershell-beta)
@@ -31,7 +30,6 @@ Remove-MgUserEventAttachment -InputObject <ICalendarIdentity> [-IfMatch <String>
 
 ## DESCRIPTION
 Delete an attachment from a user calendar event, mail message, or group post.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -196,6 +194,7 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[ExtensionId \<String\>\]: The unique identifier of extension
   \[GroupId \<String\>\]: The unique identifier of group
   \[PlaceId \<String\>\]: The unique identifier of place
+  \[RoomId \<String\>\]: The unique identifier of room
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS

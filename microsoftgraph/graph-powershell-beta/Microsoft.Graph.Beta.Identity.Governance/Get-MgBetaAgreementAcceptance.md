@@ -40,6 +40,9 @@ Get-MgBetaAgreementAcceptance -InputObject <IIdentityGovernanceIdentity> [-Expan
 Read-only.
 Information about acceptances of this agreement.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/agreement-list-acceptances-permissions.md)]
+
 ## PARAMETERS
 
 ### -AgreementAcceptanceId

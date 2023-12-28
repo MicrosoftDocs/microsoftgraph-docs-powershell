@@ -35,6 +35,9 @@ Get-MgBetaTenantRelationshipManagedTenantAggregatedPolicyCompliance -InputObject
 ## DESCRIPTION
 Aggregate view of device compliance policies across managed tenants.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-managedtenant-list-aggregatedpolicycompliances-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaTenantRelationshipManagedTenantAggregatedPolicyCompliance Cmdlet
 ```powershell

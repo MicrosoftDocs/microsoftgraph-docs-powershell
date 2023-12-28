@@ -10,7 +10,6 @@ ms.prod: cloud-communications
 
 ## SYNOPSIS
 Delete an onlineMeeting object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgUserOnlineMeeting](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgUserOnlineMeeting?view=graph-powershell-1.0)
@@ -31,7 +30,6 @@ Remove-MgBetaUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity> [-IfM
 
 ## DESCRIPTION
 Delete an onlineMeeting object.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

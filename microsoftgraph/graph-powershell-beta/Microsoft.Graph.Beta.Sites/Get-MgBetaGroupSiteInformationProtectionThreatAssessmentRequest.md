@@ -11,7 +11,7 @@ ms.prod: security
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a specified threatAssessmentRequest object.
-A threat assessment request can be one of the following types: This API is available in the following national cloud deployments.
+A threat assessment request can be one of the following types:
 
 ## SYNTAX
 
@@ -36,7 +36,13 @@ Get-MgBetaGroupSiteInformationProtectionThreatAssessmentRequest -InputObject <IS
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a specified threatAssessmentRequest object.
-A threat assessment request can be one of the following types: This API is available in the following national cloud deployments.
+A threat assessment request can be one of the following types:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/threatassessmentrequest-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/informationprotection-list-threatassessmentrequests-permissions.md)]
 
 ## PARAMETERS
 

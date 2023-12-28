@@ -10,7 +10,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 Remove a group from the list of groups that have been marked as incompatible on an accessPackage.
- This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef?view=graph-powershell-beta)
@@ -31,7 +30,9 @@ Remove-MgEntitlementManagementAccessPackageIncompatibleGroupByRef -InputObject <
 
 ## DESCRIPTION
 Remove a group from the list of groups that have been marked as incompatible on an accessPackage.
- This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackage-delete-incompatiblegroup-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

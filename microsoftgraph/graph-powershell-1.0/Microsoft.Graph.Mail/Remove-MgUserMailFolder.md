@@ -12,7 +12,6 @@ ms.prod: outlook
 Delete the specified mailFolder.
 The folder can be a mailSearchFolder.
 You can specify a mail folder by its folder ID, or by its well-known folder name, if one exists.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMailFolder?view=graph-powershell-beta)
@@ -35,7 +34,9 @@ Remove-MgUserMailFolder -InputObject <IMailIdentity> [-IfMatch <String>] [-PassT
 Delete the specified mailFolder.
 The folder can be a mailSearchFolder.
 You can specify a mail folder by its folder ID, or by its well-known folder name, if one exists.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/mailfolder-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

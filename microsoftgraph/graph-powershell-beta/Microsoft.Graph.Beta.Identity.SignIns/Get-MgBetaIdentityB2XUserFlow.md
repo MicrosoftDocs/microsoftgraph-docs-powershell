@@ -11,7 +11,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a b2xIdentityUserFlow object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityB2XUserFlow](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlow?view=graph-powershell-1.0)
@@ -39,7 +38,12 @@ Get-MgBetaIdentityB2XUserFlow -InputObject <IIdentitySignInsIdentity> [-ExpandPr
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a b2xIdentityUserFlow object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/b2xidentityuserflow-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitycontainer-list-b2xuserflows-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: List all b2xIdentityUserFlow objects
@@ -268,6 +272,7 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[ActivityBasedTimeoutPolicyId \<String\>\]: The unique identifier of activityBasedTimeoutPolicy
   \[AppManagementPolicyId \<String\>\]: The unique identifier of appManagementPolicy
   \[AuthenticationCombinationConfigurationId \<String\>\]: The unique identifier of authenticationCombinationConfiguration
+  \[AuthenticationConditionApplicationAppId \<String\>\]: The unique identifier of authenticationConditionApplication
   \[AuthenticationContextClassReferenceId \<String\>\]: The unique identifier of authenticationContextClassReference
   \[AuthenticationEventListenerId \<String\>\]: The unique identifier of authenticationEventListener
   \[AuthenticationEventsFlowId \<String\>\]: The unique identifier of authenticationEventsFlow

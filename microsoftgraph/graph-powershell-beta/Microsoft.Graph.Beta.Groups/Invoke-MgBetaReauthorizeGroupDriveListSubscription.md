@@ -10,7 +10,6 @@ ms.prod: change-notifications
 
 ## SYNOPSIS
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgReauthorizeGroupDriveListSubscription](/powershell/module/Microsoft.Graph.Groups/Invoke-MgReauthorizeGroupDriveListSubscription?view=graph-powershell-1.0)
@@ -31,7 +30,6 @@ Invoke-MgBetaReauthorizeGroupDriveListSubscription -InputObject <IGroupsIdentity
 
 ## DESCRIPTION
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
-This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

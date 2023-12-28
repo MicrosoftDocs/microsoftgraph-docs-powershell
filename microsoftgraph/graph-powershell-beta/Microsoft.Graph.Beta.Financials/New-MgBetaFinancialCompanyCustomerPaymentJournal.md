@@ -509,3 +509,4 @@ INPUTOBJECT \<IFinancialsIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanycustomerpaymentjournal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanycustomerpaymentjournal)
 
 
+

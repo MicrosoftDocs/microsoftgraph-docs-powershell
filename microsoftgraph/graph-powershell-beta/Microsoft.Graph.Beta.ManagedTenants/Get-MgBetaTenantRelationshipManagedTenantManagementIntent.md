@@ -11,7 +11,6 @@ ms.prod: multi-tenant-management
 
 ## SYNOPSIS
 Read the properties and relationships of a managementIntent object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -36,7 +35,12 @@ Get-MgBetaTenantRelationshipManagedTenantManagementIntent -InputObject <IManaged
 
 ## DESCRIPTION
 Read the properties and relationships of a managementIntent object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-managementintent-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-managedtenant-list-managementintents-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaTenantRelationshipManagedTenantManagementIntent Cmdlet

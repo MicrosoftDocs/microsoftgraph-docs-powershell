@@ -35,6 +35,9 @@ Get-MgBetaAccessReviewInstanceDecision -InputObject <IIdentityGovernanceIdentity
 ## DESCRIPTION
 The collection of decisions for this access review.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreview-listdecisions-permissions.md)]
+
 ## PARAMETERS
 
 ### -AccessReviewDecisionId

@@ -11,7 +11,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 Read the properties and relationships of an unifiedRoleEligibilitySchedule object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -37,7 +36,12 @@ Get-MgBetaRoleManagementEnterpriseAppRoleEligibilitySchedule -InputObject <IIden
 
 ## DESCRIPTION
 Read the properties and relationships of an unifiedRoleEligibilitySchedule object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleeligibilityschedule-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rbacapplication-list-roleeligibilityschedules-permissions.md)]
 
 ## PARAMETERS
 

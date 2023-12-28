@@ -13,7 +13,6 @@ Update a user's phone number associated with a phone authentication method objec
 You can't change a phone's type.
 To change a phone's type, add a new number of the desired type and then delete the object with the original type.
 If a user is enabled by policy to use SMS to sign in and the mobile number is changed, the system will attempt to register the number for use in that system.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserAuthenticationPhoneMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaUserAuthenticationPhoneMethod?view=graph-powershell-beta)
@@ -51,7 +50,9 @@ Update a user's phone number associated with a phone authentication method objec
 You can't change a phone's type.
 To change a phone's type, add a new number of the desired type and then delete the object with the original type.
 If a user is enabled by policy to use SMS to sign in and the mobile number is changed, the system will attempt to register the number for use in that system.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/phoneauthenticationmethod-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

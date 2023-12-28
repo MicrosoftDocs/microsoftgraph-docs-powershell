@@ -496,3 +496,4 @@ Not yet supported.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagementdirectoryroledefinitioninheritpermissionfrom](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagementdirectoryroledefinitioninheritpermissionfrom)
 
 
+

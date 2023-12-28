@@ -57,6 +57,9 @@ Get-MgBetaSiteTermStoreGroupSetChild -InputObject <ISitesIdentity> [-ExpandPrope
 ## DESCRIPTION
 Children terms of set in term \[store\].
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/termstore-term-list-children-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

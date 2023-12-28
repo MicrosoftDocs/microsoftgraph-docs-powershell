@@ -39,6 +39,9 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTaskReport
 ## DESCRIPTION
 Represents the aggregation of task execution data for tasks within a workflow object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-workflow-list-taskreports-permissions.md)]
+
 ## EXAMPLES
 
 ## PARAMETERS

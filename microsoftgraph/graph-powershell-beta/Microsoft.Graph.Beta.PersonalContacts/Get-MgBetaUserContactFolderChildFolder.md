@@ -44,6 +44,9 @@ Navigation property.
 Read-only.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contactfolder-list-childfolders-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

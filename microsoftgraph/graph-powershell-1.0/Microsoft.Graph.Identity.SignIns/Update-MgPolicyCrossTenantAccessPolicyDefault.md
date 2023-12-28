@@ -10,7 +10,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Update the default configuration of a cross-tenant access policy.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaPolicyCrossTenantAccessPolicyDefault](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyCrossTenantAccessPolicyDefault?view=graph-powershell-beta)
@@ -38,7 +37,9 @@ Update-MgPolicyCrossTenantAccessPolicyDefault
 
 ## DESCRIPTION
 Update the default configuration of a cross-tenant access policy.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/crosstenantaccesspolicyconfigurationdefault-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

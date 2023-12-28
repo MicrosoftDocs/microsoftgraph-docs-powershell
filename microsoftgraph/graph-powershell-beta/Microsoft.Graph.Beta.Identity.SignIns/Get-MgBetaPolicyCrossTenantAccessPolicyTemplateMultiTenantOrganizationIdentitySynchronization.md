@@ -10,7 +10,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Get the cross-tenant access policy template with user synchronization settings for a multitenant organization.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -21,7 +20,9 @@ Get-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySy
 
 ## DESCRIPTION
 Get the cross-tenant access policy template with user synchronization settings for a multitenant organization.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/multitenantorganizationidentitysyncpolicytemplate-get-permissions.md)]
 
 ## PARAMETERS
 

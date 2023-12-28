@@ -50,6 +50,9 @@ Get-MgGroupConversationThreadPost -InputObject <IGroupsIdentity> [-ExpandPropert
 ## DESCRIPTION
 Get posts from groups
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/conversationthread-list-posts-permissions.md)]
+
 ## EXAMPLES
 
 ## PARAMETERS

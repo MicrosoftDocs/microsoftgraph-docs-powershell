@@ -12,7 +12,6 @@ ms.prod: governance
 ## SYNOPSIS
 Retrieve the properties of an approvalStage object.
 An approval stage is contained within an approval object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -38,7 +37,12 @@ Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStage -InputObjec
 ## DESCRIPTION
 Retrieve the properties of an approvalStage object.
 An approval stage is contained within an approval object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/approvalstage-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/approval-list-stages-permissions.md)]
 
 ## PARAMETERS
 

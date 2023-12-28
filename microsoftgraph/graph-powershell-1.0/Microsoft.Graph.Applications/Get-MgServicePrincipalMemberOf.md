@@ -44,6 +44,7 @@ HTTP Methods: GET Read-only.
 Nullable.
 Supports $expand.
 
+**Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-list-memberof-permissions.md)]
 
 ## EXAMPLES
@@ -317,6 +318,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Get-MgBetaServicePrincipalMemberOf](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalMemberOf?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalmemberof](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalmemberof)
-
 
 

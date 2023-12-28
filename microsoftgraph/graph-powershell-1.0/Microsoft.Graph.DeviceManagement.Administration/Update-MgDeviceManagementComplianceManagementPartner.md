@@ -371,3 +371,4 @@ MACOSENROLLMENTASSIGNMENTS \<IMicrosoftGraphComplianceManagementPartnerAssignmen
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementcompliancemanagementpartner](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementcompliancemanagementpartner)
 
 
+

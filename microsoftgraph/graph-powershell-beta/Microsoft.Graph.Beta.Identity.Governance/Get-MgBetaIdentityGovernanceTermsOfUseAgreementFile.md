@@ -11,7 +11,6 @@ ms.prod: governance
 ## SYNOPSIS
 Retrieve the details of an agreement file, including the language and version information.
 The default file can have multiple versions, each with its own language, that can be retrieved by specifying the Accept-Language header.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceTermsOfUseAgreementFile](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceTermsOfUseAgreementFile?view=graph-powershell-1.0)
@@ -40,7 +39,9 @@ Get-MgBetaIdentityGovernanceTermsOfUseAgreementFile -InputObject <IIdentityGover
 ## DESCRIPTION
 Retrieve the details of an agreement file, including the language and version information.
 The default file can have multiple versions, each with its own language, that can be retrieved by specifying the Accept-Language header.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/agreementfile-get-permissions.md)]
 
 ## PARAMETERS
 

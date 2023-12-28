@@ -11,7 +11,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 Retrieve the properties of an approvalStep object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -36,7 +35,12 @@ Get-MgBetaRoleManagementDirectoryRoleAssignmentApprovalStep -InputObject <IIdent
 
 ## DESCRIPTION
 Retrieve the properties of an approvalStep object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/approvalstep-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/approval-list-steps-permissions.md)]
 
 ## PARAMETERS
 

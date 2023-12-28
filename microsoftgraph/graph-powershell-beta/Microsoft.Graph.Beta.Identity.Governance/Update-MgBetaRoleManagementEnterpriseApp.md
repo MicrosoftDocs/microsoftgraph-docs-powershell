@@ -703,9 +703,9 @@ Supports $filter (eq, ne).
 Supports $filter (eq, ne).
     \[TicketInfo \<IMicrosoftGraphTicketInfo\>\]: ticketInfo
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[TicketApproverIdentityId \<String\>\]: 
+      \[TicketApproverIdentityId \<String\>\]: ID for the request approver.
       \[TicketNumber \<String\>\]: The ticket number.
-      \[TicketSubmitterIdentityId \<String\>\]: 
+      \[TicketSubmitterIdentityId \<String\>\]: ID for the request submitter.
       \[TicketSystem \<String\>\]: The description of the ticket system.
   \[RoleAssignmentSchedules \<IMicrosoftGraphUnifiedRoleAssignmentSchedule\[\]\>\]: 
   \[RoleAssignments \<IMicrosoftGraphUnifiedRoleAssignment\[\]\>\]: 
@@ -714,20 +714,21 @@ Read-only.
     \[AppScope \<IMicrosoftGraphAppScope\>\]: appScope
     \[AppScopeId \<String\>\]: Identifier of the app specific scope when the assignment scope is app specific.
 The scope of an assignment determines the set of resources for which the principal has been granted access.
-Directory scopes are shared scopes stored in the directory that are understood by multiple applications.
-Use / for tenant-wide scope.
-App scopes are scopes that are defined and understood by this application only. 
-For the entitlement management provider, use app scopes to specify a catalog, for example /AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997.
+App scopes are scopes that are defined and understood by a resource application only.
+For the entitlement management provider, use this property to specify a catalog, for example /AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997.
+Supports $filter (eq, in).
+For example /roleManagement/entitlementManagement/roleAssignments?$filter=appScopeId eq '/AccessPackageCatalog/{catalog id}'.
     \[Condition \<String\>\]: 
     \[DirectoryScope \<IMicrosoftGraphDirectoryObject\>\]: directoryObject
     \[DirectoryScopeId \<String\>\]: Identifier of the directory object representing the scope of the assignment.
 The scope of an assignment determines the set of resources for which the principal has been granted access.
-Directory scopes are shared scopes stored in the directory that are understood by multiple applications.
-App scopes are scopes that are defined and understood by this application only.
+Directory scopes are shared scopes stored in the directory that are understood by multiple applications, unlike app scopes that are defined and understood by a resource application only.
+Supports $filter (eq, in).
     \[Principal \<IMicrosoftGraphDirectoryObject\>\]: directoryObject
     \[PrincipalId \<String\>\]: Identifier of the principal to which the assignment is granted.
-Supports $filter (eq operator only).
-    \[PrincipalOrganizationId \<String\>\]: 
+Supported principals are users, role-assignable groups, and service principals.
+Supports $filter (eq, in).
+    \[PrincipalOrganizationId \<String\>\]: Identifier of the home tenant for the principal to which the assignment is granted.
     \[ResourceScope \<String\>\]: The scope at which the unifiedRoleAssignment applies.
 This is / for service-wide.
 DO NOT USE.
@@ -735,7 +736,7 @@ This property will be deprecated soon.
     \[RoleDefinition \<IMicrosoftGraphUnifiedRoleDefinition\>\]: unifiedRoleDefinition
     \[RoleDefinitionId \<String\>\]: Identifier of the unifiedRoleDefinition the assignment is for.
 Read-only.
-Supports $filter (eq operator only).
+Supports $filter (eq, in).
   \[RoleDefinitions \<IMicrosoftGraphUnifiedRoleDefinition\[\]\>\]: 
   \[RoleEligibilityScheduleInstances \<IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance\[\]\>\]: 
   \[RoleEligibilityScheduleRequests \<IMicrosoftGraphUnifiedRoleEligibilityScheduleRequest\[\]\>\]: 
@@ -976,10 +977,10 @@ This property is read only.
 This property is read only.
   \[AppScopeId \<String\>\]: Identifier of the app specific scope when the assignment scope is app specific.
 The scope of an assignment determines the set of resources for which the principal has been granted access.
-Directory scopes are shared scopes stored in the directory that are understood by multiple applications.
-Use / for tenant-wide scope.
-App scopes are scopes that are defined and understood by this application only. 
-For the entitlement management provider, use app scopes to specify a catalog, for example /AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997.
+App scopes are scopes that are defined and understood by a resource application only.
+For the entitlement management provider, use this property to specify a catalog, for example /AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997.
+Supports $filter (eq, in).
+For example /roleManagement/entitlementManagement/roleAssignments?$filter=appScopeId eq '/AccessPackageCatalog/{catalog id}'.
   \[Condition \<String\>\]: 
   \[DirectoryScope \<IMicrosoftGraphDirectoryObject\>\]: directoryObject
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -989,12 +990,13 @@ Read-only.
 Always null when the object hasn't been deleted.
   \[DirectoryScopeId \<String\>\]: Identifier of the directory object representing the scope of the assignment.
 The scope of an assignment determines the set of resources for which the principal has been granted access.
-Directory scopes are shared scopes stored in the directory that are understood by multiple applications.
-App scopes are scopes that are defined and understood by this application only.
+Directory scopes are shared scopes stored in the directory that are understood by multiple applications, unlike app scopes that are defined and understood by a resource application only.
+Supports $filter (eq, in).
   \[Principal \<IMicrosoftGraphDirectoryObject\>\]: directoryObject
   \[PrincipalId \<String\>\]: Identifier of the principal to which the assignment is granted.
-Supports $filter (eq operator only).
-  \[PrincipalOrganizationId \<String\>\]: 
+Supported principals are users, role-assignable groups, and service principals.
+Supports $filter (eq, in).
+  \[PrincipalOrganizationId \<String\>\]: Identifier of the home tenant for the principal to which the assignment is granted.
   \[ResourceScope \<String\>\]: The scope at which the unifiedRoleAssignment applies.
 This is / for service-wide.
 DO NOT USE.
@@ -1043,7 +1045,7 @@ Read-only when isBuiltIn is true.
 Read-only when isBuiltIn is true.
   \[RoleDefinitionId \<String\>\]: Identifier of the unifiedRoleDefinition the assignment is for.
 Read-only.
-Supports $filter (eq operator only).
+Supports $filter (eq, in).
 
 ROLEASSIGNMENTSCHEDULEINSTANCES \<IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance\[\]\>: .
   \[AppScope \<IMicrosoftGraphAppScope\>\]: appScope
@@ -1367,9 +1369,9 @@ Supports $filter (eq, ne).
 Supports $filter (eq, ne).
   \[TicketInfo \<IMicrosoftGraphTicketInfo\>\]: ticketInfo
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[TicketApproverIdentityId \<String\>\]: 
+    \[TicketApproverIdentityId \<String\>\]: ID for the request approver.
     \[TicketNumber \<String\>\]: The ticket number.
-    \[TicketSubmitterIdentityId \<String\>\]: 
+    \[TicketSubmitterIdentityId \<String\>\]: ID for the request submitter.
     \[TicketSystem \<String\>\]: The description of the ticket system.
 
 ROLEASSIGNMENTSCHEDULES \<IMicrosoftGraphUnifiedRoleAssignmentSchedule\[\]\>: .
@@ -1831,9 +1833,9 @@ Supports $filter (eq).
 Supports $filter (eq, ne).
   \[TicketInfo \<IMicrosoftGraphTicketInfo\>\]: ticketInfo
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[TicketApproverIdentityId \<String\>\]: 
+    \[TicketApproverIdentityId \<String\>\]: ID for the request approver.
     \[TicketNumber \<String\>\]: The ticket number.
-    \[TicketSubmitterIdentityId \<String\>\]: 
+    \[TicketSubmitterIdentityId \<String\>\]: ID for the request submitter.
     \[TicketSystem \<String\>\]: The description of the ticket system.
 
 ROLEELIGIBILITYSCHEDULES \<IMicrosoftGraphUnifiedRoleEligibilitySchedule\[\]\>: .
@@ -1976,10 +1978,10 @@ This property is read only.
 This property is read only.
   \[AppScopeId \<String\>\]: Identifier of the app specific scope when the assignment scope is app specific.
 The scope of an assignment determines the set of resources for which the principal has been granted access.
-Directory scopes are shared scopes stored in the directory that are understood by multiple applications.
-Use / for tenant-wide scope.
-App scopes are scopes that are defined and understood by this application only. 
-For the entitlement management provider, use app scopes to specify a catalog, for example /AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997.
+App scopes are scopes that are defined and understood by a resource application only.
+For the entitlement management provider, use this property to specify a catalog, for example /AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997.
+Supports $filter (eq, in).
+For example /roleManagement/entitlementManagement/roleAssignments?$filter=appScopeId eq '/AccessPackageCatalog/{catalog id}'.
   \[Condition \<String\>\]: 
   \[DirectoryScope \<IMicrosoftGraphDirectoryObject\>\]: directoryObject
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -1989,12 +1991,13 @@ Read-only.
 Always null when the object hasn't been deleted.
   \[DirectoryScopeId \<String\>\]: Identifier of the directory object representing the scope of the assignment.
 The scope of an assignment determines the set of resources for which the principal has been granted access.
-Directory scopes are shared scopes stored in the directory that are understood by multiple applications.
-App scopes are scopes that are defined and understood by this application only.
+Directory scopes are shared scopes stored in the directory that are understood by multiple applications, unlike app scopes that are defined and understood by a resource application only.
+Supports $filter (eq, in).
   \[Principal \<IMicrosoftGraphDirectoryObject\>\]: directoryObject
   \[PrincipalId \<String\>\]: Identifier of the principal to which the assignment is granted.
-Supports $filter (eq operator only).
-  \[PrincipalOrganizationId \<String\>\]: 
+Supported principals are users, role-assignable groups, and service principals.
+Supports $filter (eq, in).
+  \[PrincipalOrganizationId \<String\>\]: Identifier of the home tenant for the principal to which the assignment is granted.
   \[ResourceScope \<String\>\]: The scope at which the unifiedRoleAssignment applies.
 This is / for service-wide.
 DO NOT USE.
@@ -2043,10 +2046,11 @@ Read-only when isBuiltIn is true.
 Read-only when isBuiltIn is true.
   \[RoleDefinitionId \<String\>\]: Identifier of the unifiedRoleDefinition the assignment is for.
 Read-only.
-Supports $filter (eq operator only).
+Supports $filter (eq, in).
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagemententerpriseapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagemententerpriseapp)
+
 
 

@@ -12,7 +12,6 @@ ms.prod: directory-management
 Update the properties of a unifiedRoleDefinition object.
 You cannot update built-in roles.
 This feature requires a Microsoft Entra ID P1 or P2 license.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaRoleManagementDirectoryRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaRoleManagementDirectoryRoleDefinition?view=graph-powershell-beta)
@@ -53,7 +52,9 @@ Update-MgRoleManagementDirectoryRoleDefinition -InputObject <IIdentityGovernance
 Update the properties of a unifiedRoleDefinition object.
 You cannot update built-in roles.
 This feature requires a Microsoft Entra ID P1 or P2 license.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroledefinition-update-permissions.md)]
 
 ## PARAMETERS
 
@@ -501,5 +502,6 @@ Not yet supported.
 [Update-MgBetaRoleManagementDirectoryRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaRoleManagementDirectoryRoleDefinition?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagementdirectoryroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagementdirectoryroledefinition)
+
 
 

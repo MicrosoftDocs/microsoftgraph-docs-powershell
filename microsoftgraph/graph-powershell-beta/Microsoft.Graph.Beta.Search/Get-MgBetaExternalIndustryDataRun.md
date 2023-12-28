@@ -11,7 +11,6 @@ ms.prod: industry-data-etl
 
 ## SYNOPSIS
 Read the properties and relationships of an industryDataRun object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -36,7 +35,12 @@ Get-MgBetaExternalIndustryDataRun -InputObject <ISearchIdentity> [-ExpandPropert
 
 ## DESCRIPTION
 Read the properties and relationships of an industryDataRun object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-industrydatarun-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-industrydatarun-list-permissions.md)]
 
 ## PARAMETERS
 

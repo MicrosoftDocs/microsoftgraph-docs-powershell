@@ -11,7 +11,6 @@ ms.prod: governance
 ## SYNOPSIS
 Retrieve a list of a connectedOrganization's internal sponsors.
 The internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef?view=graph-powershell-beta)
@@ -27,7 +26,9 @@ Get-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef -ConnectedO
 ## DESCRIPTION
 Retrieve a list of a connectedOrganization's internal sponsors.
 The internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/connectedorganization-list-internalsponsors-permissions.md)]
 
 ## PARAMETERS
 

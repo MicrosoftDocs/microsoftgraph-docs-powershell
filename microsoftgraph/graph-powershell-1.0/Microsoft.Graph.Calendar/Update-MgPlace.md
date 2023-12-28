@@ -11,7 +11,6 @@ ms.prod: calendar
 ## SYNOPSIS
 Update the properties of place object, which can be a room or roomList.
 You can identify the room or roomList by specifying the id or emailAddress property.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaPlace](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaPlace?view=graph-powershell-beta)
@@ -49,8 +48,8 @@ Update-MgPlace -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphP
 ## DESCRIPTION
 Update the properties of place object, which can be a room or roomList.
 You can identify the room or roomList by specifying the id or emailAddress property.
-This API is available in the following national cloud deployments.
 
+**Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/place-update-permissions.md)]
 
 ## EXAMPLES
@@ -315,6 +314,7 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[ExtensionId \<String\>\]: The unique identifier of extension
   \[GroupId \<String\>\]: The unique identifier of group
   \[PlaceId \<String\>\]: The unique identifier of place
+  \[RoomId \<String\>\]: The unique identifier of room
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS

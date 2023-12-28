@@ -9,7 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceLifecycleWorkflowLastModifiedByServiceProvisioningError](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowLastModifiedByServiceProvisioningError?view=graph-powershell-1.0)
@@ -24,7 +23,6 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowLastModifiedByServiceProvisioningEr
 
 ## DESCRIPTION
 Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
 
 ## PARAMETERS
 

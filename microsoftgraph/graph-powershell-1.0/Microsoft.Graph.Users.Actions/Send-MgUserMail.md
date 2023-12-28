@@ -14,7 +14,6 @@ When using JSON format, you can include a file attachment in the same sendMail a
 When using MIME format: This method saves the message in the Sent Items folder.
 Alternatively, create a draft message to send later.
 To learn more about the steps involved in the backend before a mail is delivered to recipients, see here.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Send-MgBetaUserMail](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Send-MgBetaUserMail?view=graph-powershell-beta)
@@ -53,7 +52,9 @@ When using JSON format, you can include a file attachment in the same sendMail a
 When using MIME format: This method saves the message in the Sent Items folder.
 Alternatively, create a draft message to send later.
 To learn more about the steps involved in the backend before a mail is delivered to recipients, see here.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-sendmail-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Send-MgUserMail Cmdlet

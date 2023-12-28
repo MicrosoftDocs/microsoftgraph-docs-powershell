@@ -11,7 +11,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 Retrieve the schedule for an active role assignment operation.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -37,7 +36,12 @@ Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentSchedule -InputObject <IIdent
 
 ## DESCRIPTION
 Retrieve the schedule for an active role assignment operation.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleassignmentschedule-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rbacapplication-list-roleassignmentschedules-permissions.md)]
 
 ## PARAMETERS
 

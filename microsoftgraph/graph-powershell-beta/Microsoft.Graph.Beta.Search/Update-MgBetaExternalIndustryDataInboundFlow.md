@@ -9,8 +9,7 @@ ms.prod: industry-data-etl
 # Update-MgBetaExternalIndustryDataInboundFlow
 
 ## SYNOPSIS
-Update the properties of an inboundFileFlow object.
-This API is available in the following national cloud deployments.
+Update the properties of an inboundFlow object.
 
 ## SYNTAX
 
@@ -43,8 +42,10 @@ Update-MgBetaExternalIndustryDataInboundFlow -InputObject <ISearchIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of an inboundFileFlow object.
-This API is available in the following national cloud deployments.
+Update the properties of an inboundFlow object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-inboundflow-update-permissions.md)]
 
 ## PARAMETERS
 

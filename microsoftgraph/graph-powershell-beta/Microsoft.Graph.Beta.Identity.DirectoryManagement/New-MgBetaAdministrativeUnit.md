@@ -10,7 +10,6 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Use this API to create a new administrativeUnit.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -31,7 +30,9 @@ New-MgBetaAdministrativeUnit -BodyParameter <IMicrosoftGraphAdministrativeUnit> 
 
 ## DESCRIPTION
 Use this API to create a new administrativeUnit.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-post-administrativeunits-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaAdministrativeUnit Cmdlet
@@ -347,4 +348,5 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadministrativeunit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadministrativeunit)
+
 

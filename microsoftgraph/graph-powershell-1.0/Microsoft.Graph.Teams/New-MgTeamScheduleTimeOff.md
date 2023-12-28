@@ -10,7 +10,6 @@ ms.prod: microsoft-teams
 
 ## SYNOPSIS
 Create a new timeOff instance in a schedule.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamScheduleTimeOff?view=graph-powershell-beta)
@@ -45,7 +44,9 @@ New-MgTeamScheduleTimeOff -InputObject <ITeamsIdentity> -BodyParameter <IMicroso
 
 ## DESCRIPTION
 Create a new timeOff instance in a schedule.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/schedule-post-timesoff-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -10,7 +10,6 @@ ms.prod: groups
 
 ## SYNOPSIS
 Retrieves a list of groupLifecyclePolicy objects to which a group belongs.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupLifecyclePolicyByGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupLifecyclePolicyByGroup?view=graph-powershell-beta)
@@ -25,7 +24,9 @@ Get-MgGroupLifecyclePolicyByGroup -GroupId <String> [-ExpandProperty <String[]>]
 
 ## DESCRIPTION
 Retrieves a list of groupLifecyclePolicy objects to which a group belongs.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-list-grouplifecyclepolicies-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgGroupLifecyclePolicyByGroup Cmdlet

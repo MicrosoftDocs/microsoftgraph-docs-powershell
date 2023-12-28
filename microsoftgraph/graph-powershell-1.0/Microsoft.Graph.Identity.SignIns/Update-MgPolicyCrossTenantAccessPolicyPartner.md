@@ -10,7 +10,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Update the properties of a partner-specific configuration.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaPolicyCrossTenantAccessPolicyPartner](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyCrossTenantAccessPolicyPartner?view=graph-powershell-beta)
@@ -61,7 +60,9 @@ Update-MgPolicyCrossTenantAccessPolicyPartner -InputObject <IIdentitySignInsIden
 
 ## DESCRIPTION
 Update the properties of a partner-specific configuration.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/crosstenantaccesspolicyconfigurationpartner-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Configure inbound trust settings

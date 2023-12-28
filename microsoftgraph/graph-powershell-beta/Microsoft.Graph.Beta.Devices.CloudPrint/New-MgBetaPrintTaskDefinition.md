@@ -11,7 +11,6 @@ ms.prod: universal-print
 ## SYNOPSIS
 Create a new task definition.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgPrintTaskDefinition](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintTaskDefinition?view=graph-powershell-1.0)
@@ -34,7 +33,9 @@ New-MgBetaPrintTaskDefinition -BodyParameter <IMicrosoftGraphPrintTaskDefinition
 ## DESCRIPTION
 Create a new task definition.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/print-post-taskdefinitions-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -275,4 +276,5 @@ Read-only.
 [New-MgPrintTaskDefinition](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintTaskDefinition?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprinttaskdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprinttaskdefinition)
+
 

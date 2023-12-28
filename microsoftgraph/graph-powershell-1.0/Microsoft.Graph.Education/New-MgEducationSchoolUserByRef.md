@@ -10,7 +10,6 @@ ms.prod: education
 
 ## SYNOPSIS
 Add a user to a school.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaEducationSchoolUserByRef](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationSchoolUserByRef?view=graph-powershell-beta)
@@ -43,7 +42,9 @@ New-MgEducationSchoolUserByRef -InputObject <IEducationIdentity> -BodyParameter 
 
 ## DESCRIPTION
 Add a user to a school.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationschool-post-users-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

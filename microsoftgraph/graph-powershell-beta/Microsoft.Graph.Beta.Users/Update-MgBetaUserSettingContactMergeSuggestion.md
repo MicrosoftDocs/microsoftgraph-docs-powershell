@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Update the properties of a contactMergeSuggestions object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -40,7 +39,9 @@ Update-MgBetaUserSettingContactMergeSuggestion -InputObject <IUsersIdentity>
 
 ## DESCRIPTION
 Update the properties of a contactMergeSuggestions object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contactmergesuggestions-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaUserSettingContactMergeSuggestion Cmdlet
@@ -232,6 +233,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingcontactmergesuggestion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingcontactmergesuggestion)
-
 
 

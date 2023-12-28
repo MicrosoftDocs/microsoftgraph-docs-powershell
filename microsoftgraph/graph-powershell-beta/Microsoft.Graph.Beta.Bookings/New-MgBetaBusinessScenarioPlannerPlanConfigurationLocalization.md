@@ -10,7 +10,6 @@ ms.prod: business-scenarios
 
 ## SYNOPSIS
 Create a new plannerPlanConfigurationLocalization object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -42,7 +41,9 @@ New-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -InputObject <IBo
 
 ## DESCRIPTION
 Create a new plannerPlanConfigurationLocalization object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplanconfiguration-post-localizations-permissions.md)]
 
 ## PARAMETERS
 
@@ -242,11 +243,7 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[BookingStaffMemberId \<String\>\]: The unique identifier of bookingStaffMember
   \[BusinessScenarioId \<String\>\]: The unique identifier of businessScenario
   \[BusinessScenarioTaskId \<String\>\]: The unique identifier of businessScenarioTask
-  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
-  \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
   \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
-  \[MeetingRegistrantBaseId \<String\>\]: The unique identifier of meetingRegistrantBase
-  \[MeetingRegistrationQuestionId \<String\>\]: The unique identifier of meetingRegistrationQuestion
   \[PlannerPlanConfigurationLocalizationId \<String\>\]: The unique identifier of plannerPlanConfigurationLocalization
   \[Role \<String\>\]: Usage: role='{role}'
   \[UserId \<String\>\]: Usage: userId='{userId}'
@@ -254,10 +251,12 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[VirtualEventPresenterId \<String\>\]: The unique identifier of virtualEventPresenter
   \[VirtualEventRegistrationId \<String\>\]: The unique identifier of virtualEventRegistration
   \[VirtualEventSessionId \<String\>\]: The unique identifier of virtualEventSession
+  \[VirtualEventTownhallId \<String\>\]: The unique identifier of virtualEventTownhall
   \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabusinessscenarioplannerplanconfigurationlocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabusinessscenarioplannerplanconfigurationlocalization)
+
 
 

@@ -11,7 +11,6 @@ ms.prod: education
 ## SYNOPSIS
 Delete an existing assignment.
 Only teachers within a class can delete assignments.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationClassAssignment?view=graph-powershell-beta)
@@ -33,7 +32,9 @@ Remove-MgEducationClassAssignment -InputObject <IEducationIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete an existing assignment.
 Only teachers within a class can delete assignments.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

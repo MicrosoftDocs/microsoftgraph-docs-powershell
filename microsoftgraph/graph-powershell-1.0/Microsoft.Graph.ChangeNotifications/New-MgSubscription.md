@@ -13,7 +13,6 @@ Subscribes a listener application to receive change notifications when the reque
 To identify the resources for which you can create subscriptions and the limitations on subscriptions, see Set up notifications for changes in resource data: Supported resources.
 Some resources support rich notifications, that is, notifications that include resource data.
 For more information about these resources, see Set up change notifications that include resource data: Supported resources.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/New-MgBetaSubscription?view=graph-powershell-beta)
@@ -40,7 +39,6 @@ Subscribes a listener application to receive change notifications when the reque
 To identify the resources for which you can create subscriptions and the limitations on subscriptions, see Set up notifications for changes in resource data: Supported resources.
 Some resources support rich notifications, that is, notifications that include resource data.
 For more information about these resources, see Set up change notifications that include resource data: Supported resources.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -10,7 +10,6 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Update the properties of a customSecurityAttributeDefinition object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgDirectoryCustomSecurityAttributeDefinition](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryCustomSecurityAttributeDefinition?view=graph-powershell-1.0)
@@ -47,7 +46,9 @@ Update-MgBetaDirectoryCustomSecurityAttributeDefinition -InputObject <IIdentityD
 
 ## DESCRIPTION
 Update the properties of a customSecurityAttributeDefinition object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/customsecurityattributedefinition-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaDirectoryCustomSecurityAttributeDefinition Cmdlet
@@ -460,4 +461,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 [Update-MgDirectoryCustomSecurityAttributeDefinition](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryCustomSecurityAttributeDefinition?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorycustomsecurityattributedefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorycustomsecurityattributedefinition)
+
 

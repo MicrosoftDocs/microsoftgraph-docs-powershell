@@ -11,7 +11,6 @@ ms.prod: sites-and-lists
 
 ## SYNOPSIS
 Read the properties and relationships of a documentSetVersion object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgShareListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/Get-MgShareListItemDocumentSetVersion?view=graph-powershell-1.0)
@@ -58,7 +57,12 @@ Get-MgBetaShareListItemDocumentSetVersion -InputObject <IFilesIdentity> [-Expand
 
 ## DESCRIPTION
 Read the properties and relationships of a documentSetVersion object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/documentsetversion-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/listitem-list-documentsetversions-permissions.md)]
 
 ## PARAMETERS
 

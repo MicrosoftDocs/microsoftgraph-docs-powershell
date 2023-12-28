@@ -10,7 +10,6 @@ ms.prod: cloud-communications
 
 ## SYNOPSIS
 Clear the preferred availability and activity status for a user.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Clear-MgUserPresenceUserPreferredPresence](/powershell/module/Microsoft.Graph.Users.Actions/Clear-MgUserPresenceUserPreferredPresence?view=graph-powershell-1.0)
@@ -31,7 +30,9 @@ Clear-MgBetaUserPresenceUserPreferredPresence -InputObject <IUsersActionsIdentit
 
 ## DESCRIPTION
 Clear the preferred availability and activity status for a user.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/presence-clearuserpreferredpresence-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -169,6 +170,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[NotebookId \<String\>\]: The unique identifier of notebook
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
   \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
   \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
   \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask

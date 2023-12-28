@@ -10,7 +10,6 @@ ms.prod: bookings
 
 ## SYNOPSIS
 Cancel the specified bookingAppointment in the specified bookingBusiness and send a message to the involved customer and staff members.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Stop-MgBetaBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Beta.Bookings/Stop-MgBetaBookingBusinessCalendarView?view=graph-powershell-beta)
@@ -46,8 +45,8 @@ Stop-MgBookingBusinessCalendarView -InputObject <IBookingsIdentity>
 
 ## DESCRIPTION
 Cancel the specified bookingAppointment in the specified bookingBusiness and send a message to the involved customer and staff members.
-This API is available in the following national cloud deployments.
 
+**Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingappointment-cancel-permissions.md)]
 
 ## PARAMETERS
@@ -211,6 +210,7 @@ BODYPARAMETER \<IPaths1I9M0Z9SolutionsBookingbusinessesBookingbusinessIdCalendar
   \[CancellationMessage \<String\>\]: 
 
 INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
+  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
   \[BookingAppointmentId \<String\>\]: The unique identifier of bookingAppointment
   \[BookingBusinessId \<String\>\]: The unique identifier of bookingBusiness
   \[BookingCurrencyId \<String\>\]: The unique identifier of bookingCurrency
@@ -218,6 +218,13 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[BookingCustomerBaseId \<String\>\]: The unique identifier of bookingCustomerBase
   \[BookingServiceId \<String\>\]: The unique identifier of bookingService
   \[BookingStaffMemberBaseId \<String\>\]: The unique identifier of bookingStaffMemberBase
+  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
+  \[Role \<String\>\]: Usage: role='{role}'
+  \[UserId \<String\>\]: Usage: userId='{userId}'
+  \[VirtualEventId \<String\>\]: The unique identifier of virtualEvent
+  \[VirtualEventRegistrationId \<String\>\]: The unique identifier of virtualEventRegistration
+  \[VirtualEventSessionId \<String\>\]: The unique identifier of virtualEventSession
+  \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
 [Stop-MgBetaBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Beta.Bookings/Stop-MgBetaBookingBusinessCalendarView?view=graph-powershell-beta)

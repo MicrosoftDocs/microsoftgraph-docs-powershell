@@ -10,7 +10,6 @@ ms.prod: sharepoint
 
 ## SYNOPSIS
 Unfollow a driveItem.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaUnfollowDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaUnfollowDriveItem?view=graph-powershell-beta)
@@ -30,7 +29,9 @@ Invoke-MgUnfollowDriveItem -InputObject <IFilesIdentity> [-PassThru] [-WhatIf] [
 
 ## DESCRIPTION
 Unfollow a driveItem.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-unfollow-permissions.md)]
 
 ## PARAMETERS
 

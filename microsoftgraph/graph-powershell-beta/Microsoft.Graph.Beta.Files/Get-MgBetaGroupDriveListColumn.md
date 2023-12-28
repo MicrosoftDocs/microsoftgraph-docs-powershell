@@ -38,6 +38,9 @@ Get-MgBetaGroupDriveListColumn -InputObject <IFilesIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 The collection of field definitions for this list.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/list-list-columns-permissions.md)]
+
 ## PARAMETERS
 
 ### -All

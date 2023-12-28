@@ -10,7 +10,6 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Create a new customSecurityAttributeDefinition object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgDirectoryCustomSecurityAttributeDefinition](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryCustomSecurityAttributeDefinition?view=graph-powershell-1.0)
@@ -33,7 +32,9 @@ New-MgBetaDirectoryCustomSecurityAttributeDefinition
 
 ## DESCRIPTION
 Create a new customSecurityAttributeDefinition object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-post-customsecurityattributedefinitions-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaDirectoryCustomSecurityAttributeDefinition Cmdlet
@@ -403,4 +404,5 @@ If type is set to Boolean, usePreDefinedValuesOnly cannot be set to true.
 [New-MgDirectoryCustomSecurityAttributeDefinition](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryCustomSecurityAttributeDefinition?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycustomsecurityattributedefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycustomsecurityattributedefinition)
+
 

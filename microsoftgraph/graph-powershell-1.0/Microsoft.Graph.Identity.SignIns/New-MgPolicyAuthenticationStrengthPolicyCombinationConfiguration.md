@@ -11,7 +11,6 @@ ms.prod: identity-and-sign-in
 ## SYNOPSIS
 Create a new authenticationCombinationConfiguration object.
 In use, only fido2combinationConfigurations may be created, and these may only be created for custom authentication strength policies.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPolicyAuthenticationStrengthPolicyCombinationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyAuthenticationStrengthPolicyCombinationConfiguration?view=graph-powershell-beta)
@@ -49,7 +48,9 @@ New-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration -InputObject <I
 ## DESCRIPTION
 Create a new authenticationCombinationConfiguration object.
 In use, only fido2combinationConfigurations may be created, and these may only be created for custom authentication strength policies.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationstrengthpolicy-post-combinationconfigurations-permissions.md)]
 
 ## PARAMETERS
 

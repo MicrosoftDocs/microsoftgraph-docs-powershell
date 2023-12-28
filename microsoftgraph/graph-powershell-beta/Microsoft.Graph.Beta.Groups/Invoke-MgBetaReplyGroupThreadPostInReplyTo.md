@@ -3,15 +3,12 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareplygroupthreadpostinreplyto
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # Invoke-MgBetaReplyGroupThreadPostInReplyTo
 
 ## SYNOPSIS
-Reply to a post and add a new post to the specified thread in a group conversation.
-You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
-This API is available in the following national cloud deployments.
+Invoke action reply
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgReplyGroupThreadPostInReplyTo](/powershell/module/Microsoft.Graph.Groups/Invoke-MgReplyGroupThreadPostInReplyTo?view=graph-powershell-1.0)
@@ -46,9 +43,7 @@ Invoke-MgBetaReplyGroupThreadPostInReplyTo -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Reply to a post and add a new post to the specified thread in a group conversation.
-You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
-This API is available in the following national cloud deployments.
+Invoke action reply
 
 ## EXAMPLES
 ### Example 1: Code snippet

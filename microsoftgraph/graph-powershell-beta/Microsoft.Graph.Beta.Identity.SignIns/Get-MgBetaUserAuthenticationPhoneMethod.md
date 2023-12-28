@@ -12,7 +12,6 @@ ms.prod: identity-and-sign-in
 ## SYNOPSIS
 Retrieve a single phoneAuthenticationMethod object.
 This method is available only for standard Microsoft Entra ID and B2B users, but not B2C users.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserAuthenticationPhoneMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationPhoneMethod?view=graph-powershell-1.0)
@@ -41,7 +40,12 @@ Get-MgBetaUserAuthenticationPhoneMethod -InputObject <IIdentitySignInsIdentity> 
 ## DESCRIPTION
 Retrieve a single phoneAuthenticationMethod object.
 This method is available only for standard Microsoft Entra ID and B2B users, but not B2C users.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/phoneauthenticationmethod-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authentication-list-phonemethods-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -275,6 +279,7 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[ActivityBasedTimeoutPolicyId \<String\>\]: The unique identifier of activityBasedTimeoutPolicy
   \[AppManagementPolicyId \<String\>\]: The unique identifier of appManagementPolicy
   \[AuthenticationCombinationConfigurationId \<String\>\]: The unique identifier of authenticationCombinationConfiguration
+  \[AuthenticationConditionApplicationAppId \<String\>\]: The unique identifier of authenticationConditionApplication
   \[AuthenticationContextClassReferenceId \<String\>\]: The unique identifier of authenticationContextClassReference
   \[AuthenticationEventListenerId \<String\>\]: The unique identifier of authenticationEventListener
   \[AuthenticationEventsFlowId \<String\>\]: The unique identifier of authenticationEventsFlow

@@ -11,7 +11,6 @@ ms.prod: microsoft-teams
 ## SYNOPSIS
 Update the properties of the specified tab in a chat.
 This can be used to configure the content of the tab.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaChatTab](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChatTab?view=graph-powershell-beta)
@@ -47,7 +46,9 @@ Update-MgChatTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTe
 ## DESCRIPTION
 Update the properties of the specified tab in a chat.
 This can be used to configure the content of the tab.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-patch-tabs-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Update the name of a tab in a chat

@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Delete the specified messageRule object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserMailFolderMessageRule](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMailFolderMessageRule?view=graph-powershell-beta)
@@ -31,7 +30,9 @@ Remove-MgUserMailFolderMessageRule -InputObject <IMailIdentity> [-IfMatch <Strin
 
 ## DESCRIPTION
 Delete the specified messageRule object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/messagerule-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

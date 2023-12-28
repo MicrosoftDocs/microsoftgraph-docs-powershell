@@ -35,6 +35,9 @@ Get-MgBetaAccessReviewMyDecision -InputObject <IIdentityGovernanceIdentity> [-Ex
 ## DESCRIPTION
 The collection of decisions for the caller, if the caller is a reviewer.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreview-listmydecisions-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaAccessReviewMyDecision Cmdlet
 ```powershell

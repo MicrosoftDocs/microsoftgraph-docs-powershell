@@ -11,7 +11,6 @@ ms.prod: directory-management
 ## SYNOPSIS
 Update the properties of a registered device.
 Only certain properties of a device can be updated through approved Mobile Device Managment (MDM) apps.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDevice](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDevice?view=graph-powershell-beta)
@@ -65,7 +64,9 @@ Update-MgDevice -InputObject <IIdentityDirectoryManagementIdentity> -BodyParamet
 ## DESCRIPTION
 Update the properties of a registered device.
 Only certain properties of a device can be updated through approved Mobile Device Managment (MDM) apps.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Update the accountEnabled property of a device
@@ -927,4 +928,5 @@ Always null when the object hasn't been deleted.
 [Update-MgBetaDevice](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDevice?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdevice](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdevice)
+
 

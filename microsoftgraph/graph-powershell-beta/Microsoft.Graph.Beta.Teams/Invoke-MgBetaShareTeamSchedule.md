@@ -12,7 +12,6 @@ Share a schedule time range with schedule members.Make the collections of shift,
 The draft version is viewable by only managers, and the shared version is viewable by employees and managers.
 For each shift, openshift and timeOff instance in the specified time range, the share action updates the shared version from the draft version, so that in addition to managers, employees can also view the most current information about the item.
 The notifyTeam parameter further specifies which employees can view the item.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgShareTeamSchedule](/powershell/module/Microsoft.Graph.Teams/Invoke-MgShareTeamSchedule?view=graph-powershell-1.0)
@@ -51,7 +50,6 @@ Share a schedule time range with schedule members.Make the collections of shift,
 The draft version is viewable by only managers, and the shared version is viewable by employees and managers.
 For each shift, openshift and timeOff instance in the specified time range, the share action updates the shared version from the draft version, so that in addition to managers, employees can also view the most current information about the item.
 The notifyTeam parameter further specifies which employees can view the item.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -257,6 +255,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
   \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
   \[ConversationMemberId \<String\>\]: The unique identifier of conversationMember
+  \[DayNoteId \<String\>\]: The unique identifier of dayNote
   \[DeletedChatId \<String\>\]: The unique identifier of deletedChat
   \[DeletedTeamId \<String\>\]: The unique identifier of deletedTeam
   \[GroupId \<String\>\]: The unique identifier of group

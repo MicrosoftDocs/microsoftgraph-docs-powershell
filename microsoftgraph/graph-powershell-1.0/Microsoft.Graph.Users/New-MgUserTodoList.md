@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Create a new lists object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserTodoList](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserTodoList?view=graph-powershell-beta)
@@ -45,7 +44,6 @@ New-MgUserTodoList -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraph
 
 ## DESCRIPTION
 Create a new lists object.
-This API is available in the following national cloud deployments.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/todo-post-lists-permissions.md)]

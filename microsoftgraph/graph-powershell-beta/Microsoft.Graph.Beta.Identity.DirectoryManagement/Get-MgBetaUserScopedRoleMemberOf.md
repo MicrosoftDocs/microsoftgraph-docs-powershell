@@ -42,6 +42,9 @@ The scoped-role administrative unit memberships for this user.
 Read-only.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-scopedrolememberof-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserScopedRoleMemberOf Cmdlet
 ```powershell

@@ -11,7 +11,6 @@ ms.prod: applications
 ## SYNOPSIS
 Unset the verifiedPublisher previously set on an application, removing all verified publisher properties.
 For more information, see Publisher verification.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Clear-MgBetaApplicationVerifiedPublisher](/powershell/module/Microsoft.Graph.Beta.Applications/Clear-MgBetaApplicationVerifiedPublisher?view=graph-powershell-beta)
@@ -33,8 +32,8 @@ Clear-MgApplicationVerifiedPublisher -InputObject <IApplicationsIdentity> [-Pass
 ## DESCRIPTION
 Unset the verifiedPublisher previously set on an application, removing all verified publisher properties.
 For more information, see Publisher verification.
-This API is available in the following national cloud deployments.
 
+**Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-unsetverifiedpublisher-permissions.md)]
 
 ## EXAMPLES
@@ -172,6 +171,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Clear-MgBetaApplicationVerifiedPublisher](/powershell/module/Microsoft.Graph.Beta.Applications/Clear-MgBetaApplicationVerifiedPublisher?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/clear-mgapplicationverifiedpublisher](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/clear-mgapplicationverifiedpublisher)
-
 
 

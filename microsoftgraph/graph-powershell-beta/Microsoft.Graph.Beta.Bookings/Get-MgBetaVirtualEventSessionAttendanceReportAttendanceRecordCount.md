@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgVirtualEventSessionAttendanceReportAttendanceRecordCount](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventSessionAttendanceReportAttendanceRecordCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -147,11 +150,7 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[BookingStaffMemberId \<String\>\]: The unique identifier of bookingStaffMember
   \[BusinessScenarioId \<String\>\]: The unique identifier of businessScenario
   \[BusinessScenarioTaskId \<String\>\]: The unique identifier of businessScenarioTask
-  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
-  \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
   \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
-  \[MeetingRegistrantBaseId \<String\>\]: The unique identifier of meetingRegistrantBase
-  \[MeetingRegistrationQuestionId \<String\>\]: The unique identifier of meetingRegistrationQuestion
   \[PlannerPlanConfigurationLocalizationId \<String\>\]: The unique identifier of plannerPlanConfigurationLocalization
   \[Role \<String\>\]: Usage: role='{role}'
   \[UserId \<String\>\]: Usage: userId='{userId}'
@@ -159,9 +158,11 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[VirtualEventPresenterId \<String\>\]: The unique identifier of virtualEventPresenter
   \[VirtualEventRegistrationId \<String\>\]: The unique identifier of virtualEventRegistration
   \[VirtualEventSessionId \<String\>\]: The unique identifier of virtualEventSession
+  \[VirtualEventTownhallId \<String\>\]: The unique identifier of virtualEventTownhall
   \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
+[Get-MgVirtualEventSessionAttendanceReportAttendanceRecordCount](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventSessionAttendanceReportAttendanceRecordCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventsessionattendancereportattendancerecordcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventsessionattendancereportattendancerecordcount)
 

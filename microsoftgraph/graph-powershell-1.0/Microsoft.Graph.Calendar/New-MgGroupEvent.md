@@ -10,7 +10,6 @@ ms.prod: groups
 
 ## SYNOPSIS
 Use this API to create a new event.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaGroupEvent?view=graph-powershell-beta)
@@ -75,8 +74,8 @@ New-MgGroupEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGrap
 
 ## DESCRIPTION
 Use this API to create a new event.
-This API is available in the following national cloud deployments.
 
+**Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-post-events-permissions.md)]
 
 ## EXAMPLES
@@ -1493,6 +1492,7 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[ExtensionId \<String\>\]: The unique identifier of extension
   \[GroupId \<String\>\]: The unique identifier of group
   \[PlaceId \<String\>\]: The unique identifier of place
+  \[RoomId \<String\>\]: The unique identifier of room
   \[UserId \<String\>\]: The unique identifier of user
 
 INSTANCES \<IMicrosoftGraphEvent\[\]\>: The occurrences of a recurring series, if the event is a series master.
@@ -1861,4 +1861,5 @@ See below for more possible values.
 [New-MgBetaGroupEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaGroupEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mggroupevent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mggroupevent)
+
 

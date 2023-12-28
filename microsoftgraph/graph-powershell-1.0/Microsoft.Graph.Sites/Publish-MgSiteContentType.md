@@ -9,8 +9,7 @@ ms.prod: sites-and-lists
 # Publish-MgSiteContentType
 
 ## SYNOPSIS
-Publishes a contentType\]\[\] present in the content type hub site.
-This API is available in the following \[national cloud deployments.
+Publishes a \[contentType\]\[\] present in the content type hub site.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Publish-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Publish-MgBetaSiteContentType?view=graph-powershell-beta)
@@ -29,8 +28,10 @@ Publish-MgSiteContentType -InputObject <ISitesIdentity> [-PassThru] [-WhatIf] [-
 ```
 
 ## DESCRIPTION
-Publishes a contentType\]\[\] present in the content type hub site.
-This API is available in the following \[national cloud deployments.
+Publishes a \[contentType\]\[\] present in the content type hub site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-publish-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Publish-MgSiteContentType Cmdlet

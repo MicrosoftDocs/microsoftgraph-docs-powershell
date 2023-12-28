@@ -12,7 +12,6 @@ ms.prod: microsoft-teams
 ## SYNOPSIS
 Get a team that has been shared with a specified channel.
 This operation is allowed only for channels with a membershipType value of shared.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamPrimaryChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPrimaryChannelSharedWithTeam?view=graph-powershell-beta)
@@ -53,7 +52,12 @@ Get-MgTeamPrimaryChannelSharedWithTeam -InputObject <ITeamsIdentity> [-ExpandPro
 ## DESCRIPTION
 Get a team that has been shared with a specified channel.
 This operation is allowed only for channels with a membershipType value of shared.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/sharedwithchannelteaminfo-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/sharedwithchannelteaminfo-list-permissions.md)]
 
 ## EXAMPLES
 

@@ -38,6 +38,9 @@ Get-MgBetaUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity> [-Expand
 ## DESCRIPTION
 Information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onlinemeeting-get-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

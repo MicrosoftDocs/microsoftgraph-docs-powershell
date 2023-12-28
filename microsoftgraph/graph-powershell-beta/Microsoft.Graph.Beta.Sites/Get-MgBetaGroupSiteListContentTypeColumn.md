@@ -10,8 +10,7 @@ ms.prod: sites-and-lists
 # Get-MgBetaGroupSiteListContentTypeColumn
 
 ## SYNOPSIS
-Retrieve the metadata for a site\]\[\], \[list\]\[\] or \[contentType\]\[\] \[column\]\[columnDefinition\].
-This API is available in the following \[national cloud deployments.
+Retrieve the metadata for a \[site\]\[\], \[list\]\[\] or \[contentType\]\[\] \[column\]\[columnDefinition\].
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteListContentTypeColumn?view=graph-powershell-1.0)
@@ -39,8 +38,13 @@ Get-MgBetaGroupSiteListContentTypeColumn -InputObject <ISitesIdentity> [-ExpandP
 ```
 
 ## DESCRIPTION
-Retrieve the metadata for a site\]\[\], \[list\]\[\] or \[contentType\]\[\] \[column\]\[columnDefinition\].
-This API is available in the following \[national cloud deployments.
+Retrieve the metadata for a \[site\]\[\], \[list\]\[\] or \[contentType\]\[\] \[column\]\[columnDefinition\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/columndefinition-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-list-columns-permissions.md)]
 
 ## PARAMETERS
 

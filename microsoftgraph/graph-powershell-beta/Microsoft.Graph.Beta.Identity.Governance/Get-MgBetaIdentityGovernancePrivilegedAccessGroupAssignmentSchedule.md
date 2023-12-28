@@ -11,7 +11,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 Read the properties and relationships of a privilegedAccessGroupAssignmentSchedule object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentSchedule](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentSchedule?view=graph-powershell-1.0)
@@ -40,7 +39,12 @@ Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentSchedule -InputObject
 
 ## DESCRIPTION
 Read the properties and relationships of a privilegedAccessGroupAssignmentSchedule object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/privilegedaccessgroupassignmentschedule-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/privilegedaccessgroup-list-assignmentschedules-permissions.md)]
 
 ## PARAMETERS
 

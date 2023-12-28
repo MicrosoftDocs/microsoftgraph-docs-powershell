@@ -19,7 +19,6 @@ A teacher or application with application permissions has full access to all sub
 The grade and feedback from a teacher are part of the educationOutcome associated with this object.
 Only teachers or applications with application permissions can add or change grades and feedback.
 Students will not see the grade or feedback until the assignment has been released.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeAssignmentSubmission?view=graph-powershell-beta)
@@ -55,7 +54,12 @@ A teacher or application with application permissions has full access to all sub
 The grade and feedback from a teacher are part of the educationOutcome associated with this object.
 Only teachers or applications with application permissions can add or change grades and feedback.
 Students will not see the grade or feedback until the assignment has been released.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationsubmission-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-list-submissions-permissions.md)]
 
 ## EXAMPLES
 

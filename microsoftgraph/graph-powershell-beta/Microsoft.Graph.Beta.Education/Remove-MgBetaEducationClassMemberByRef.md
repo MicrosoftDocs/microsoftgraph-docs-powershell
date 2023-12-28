@@ -10,7 +10,6 @@ ms.prod: education
 
 ## SYNOPSIS
 Remove an educationUser from an educationClass.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgEducationClassMemberByRef](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassMemberByRef?view=graph-powershell-1.0)
@@ -31,7 +30,9 @@ Remove-MgBetaEducationClassMemberByRef -InputObject <IEducationIdentity> [-Id <S
 
 ## DESCRIPTION
 Remove an educationUser from an educationClass.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-delete-members-permissions.md)]
 
 ## PARAMETERS
 

@@ -40,6 +40,9 @@ Get-MgGroupTransitiveMember -InputObject <IGroupsIdentity> [-ExpandProperty <Str
 The direct and transitive members of a group.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-list-transitivemembers-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

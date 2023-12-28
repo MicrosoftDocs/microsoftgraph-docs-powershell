@@ -11,7 +11,6 @@ ms.prod: users
 ## SYNOPSIS
 Returns the user or organizational contact assigned as the user's manager.
 Optionally, you can expand the manager's chain up to the root node.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserManagerByRef](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserManagerByRef?view=graph-powershell-beta)
@@ -31,7 +30,6 @@ Get-MgUserManagerByRef -InputObject <IUsersIdentity> [<CommonParameters>]
 ## DESCRIPTION
 Returns the user or organizational contact assigned as the user's manager.
 Optionally, you can expand the manager's chain up to the root node.
-This API is available in the following national cloud deployments.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-list-manager-permissions.md)]
@@ -105,6 +103,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Get-MgBetaUserManagerByRef](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserManagerByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermanagerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermanagerbyref)
-
 
 

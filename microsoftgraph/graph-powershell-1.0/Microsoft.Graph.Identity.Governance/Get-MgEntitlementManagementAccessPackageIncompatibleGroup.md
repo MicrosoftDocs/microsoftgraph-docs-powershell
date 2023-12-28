@@ -10,7 +10,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 Retrieve a list of the group objects that have been marked as incompatible on an accessPackage.
- This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementAccessPackageIncompatibleGroup](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementAccessPackageIncompatibleGroup?view=graph-powershell-beta)
@@ -25,7 +24,9 @@ Get-MgEntitlementManagementAccessPackageIncompatibleGroup -AccessPackageId <Stri
 
 ## DESCRIPTION
 Retrieve a list of the group objects that have been marked as incompatible on an accessPackage.
- This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackage-list-incompatiblegroups-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

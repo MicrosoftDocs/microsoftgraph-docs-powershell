@@ -11,7 +11,6 @@ ms.prod: identity-and-sign-in
 ## SYNOPSIS
 Confirm one or more riskyServicePrincipal objects as compromised.
 This action sets the targeted service principal account's risk level to high.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Confirm-MgRiskyServicePrincipalCompromised](/powershell/module/Microsoft.Graph.Identity.SignIns/Confirm-MgRiskyServicePrincipalCompromised?view=graph-powershell-1.0)
@@ -34,7 +33,9 @@ Confirm-MgBetaRiskyServicePrincipalCompromised
 ## DESCRIPTION
 Confirm one or more riskyServicePrincipal objects as compromised.
 This action sets the targeted service principal account's risk level to high.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/riskyserviceprincipal-confirmcompromised-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -13,7 +13,6 @@ ms.prod: governance
 Retrieve an accessReviewHistoryDefinition object by its identifier.
 All of the properties of the access review history definition object are returned.
 If the definition is 30 days or older, a 404 Not Found error is returned.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceAccessReviewHistoryDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAccessReviewHistoryDefinition?view=graph-powershell-1.0)
@@ -43,7 +42,12 @@ Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinition -InputObject <IIdentit
 Retrieve an accessReviewHistoryDefinition object by its identifier.
 All of the properties of the access review history definition object are returned.
 If the definition is 30 days or older, a 404 Not Found error is returned.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewhistorydefinition-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewset-list-historydefinitions-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

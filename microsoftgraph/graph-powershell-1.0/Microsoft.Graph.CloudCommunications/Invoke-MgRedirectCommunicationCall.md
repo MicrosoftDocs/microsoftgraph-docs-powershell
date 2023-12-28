@@ -13,7 +13,6 @@ Redirect an incoming call that hasn't been answered or rejected yet.
 The terms 'redirecting' and 'forwarding' a call are used interchangeably.
 The bot is expected to redirect the call before the call times out.
 The current timeout value is 15 seconds.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaRedirectCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaRedirectCommunicationCall?view=graph-powershell-beta)
@@ -54,8 +53,8 @@ Redirect an incoming call that hasn't been answered or rejected yet.
 The terms 'redirecting' and 'forwarding' a call are used interchangeably.
 The bot is expected to redirect the call before the call times out.
 The current timeout value is 15 seconds.
-This API is available in the following national cloud deployments.
 
+**Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-redirect-permissions.md)]
 
 ## EXAMPLES
@@ -289,6 +288,7 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[AudioRoutingGroupId \<String\>\]: The unique identifier of audioRoutingGroup
   \[CallId \<String\>\]: The unique identifier of call
   \[CallRecordId \<String\>\]: The unique identifier of callRecord
+  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
   \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
   \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
   \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession
@@ -324,4 +324,5 @@ For peer-to-peer case, the call will be dropped once the participant is added su
 [Invoke-MgBetaRedirectCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaRedirectCommunicationCall?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgredirectcommunicationcall](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgredirectcommunicationcall)
+
 

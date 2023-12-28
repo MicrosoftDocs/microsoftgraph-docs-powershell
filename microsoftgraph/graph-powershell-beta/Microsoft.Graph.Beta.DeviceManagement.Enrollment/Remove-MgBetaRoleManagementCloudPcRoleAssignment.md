@@ -11,7 +11,7 @@ ms.prod: directory-management
 ## SYNOPSIS
 Delete a unifiedRoleAssignmentMultiple object of an RBAC provider.
 This is applicable for a RBAC application that supports multiple principals and scopes.
-The following RBAC providers are currently supported:- Cloud PC - device management (Intune) This API is available in the following national cloud deployments.
+The following RBAC providers are currently supported:- Cloud PC - device management (Intune)
 
 ## SYNTAX
 
@@ -30,7 +30,10 @@ Remove-MgBetaRoleManagementCloudPcRoleAssignment -InputObject <IDeviceManagement
 ## DESCRIPTION
 Delete a unifiedRoleAssignmentMultiple object of an RBAC provider.
 This is applicable for a RBAC application that supports multiple principals and scopes.
-The following RBAC providers are currently supported:- Cloud PC - device management (Intune) This API is available in the following national cloud deployments.
+The following RBAC providers are currently supported:- Cloud PC - device management (Intune)
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleassignmentmultiple-delete-permissions.md)]
 
 ## PARAMETERS
 

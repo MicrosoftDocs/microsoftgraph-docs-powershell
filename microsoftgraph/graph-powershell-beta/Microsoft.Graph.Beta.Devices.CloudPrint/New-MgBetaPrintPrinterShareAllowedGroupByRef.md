@@ -10,7 +10,6 @@ ms.prod: cloud-printing
 
 ## SYNOPSIS
 Grant the specified group access to submit print jobs to the associated printerShare.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -40,7 +39,9 @@ New-MgBetaPrintPrinterShareAllowedGroupByRef -InputObject <IDevicesCloudPrintIde
 
 ## DESCRIPTION
 Grant the specified group access to submit print jobs to the associated printerShare.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printershare-post-allowedgroups-permissions.md)]
 
 ## PARAMETERS
 

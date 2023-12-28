@@ -44,6 +44,9 @@ Navigation property.
 Read-only.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contactfolder-list-contacts-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserContactFolderContact Cmdlet
 ```powershell

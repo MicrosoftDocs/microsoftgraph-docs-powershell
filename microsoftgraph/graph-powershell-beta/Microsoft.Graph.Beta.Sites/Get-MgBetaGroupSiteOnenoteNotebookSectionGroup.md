@@ -63,6 +63,9 @@ The section groups in the notebook.
 Read-only.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/notebook-list-sectiongroups-permissions.md)]
+
 ## PARAMETERS
 
 ### -All

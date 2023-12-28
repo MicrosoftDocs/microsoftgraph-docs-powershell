@@ -38,6 +38,9 @@ Get-MgBetaAllGroupTeamChannel -InputObject <ITeamsIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 List of channels either hosted in or shared with the team (incoming channels).
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/team-list-allchannels-permissions.md)]
+
 ## EXAMPLES
 
 ## PARAMETERS
@@ -262,6 +265,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
   \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
   \[ConversationMemberId \<String\>\]: The unique identifier of conversationMember
+  \[DayNoteId \<String\>\]: The unique identifier of dayNote
   \[DeletedChatId \<String\>\]: The unique identifier of deletedChat
   \[DeletedTeamId \<String\>\]: The unique identifier of deletedTeam
   \[GroupId \<String\>\]: The unique identifier of group

@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Copy a message to a folder within the user's mailbox.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Copy-MgUserMailFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Copy-MgUserMailFolderMessage?view=graph-powershell-1.0)
@@ -45,7 +44,9 @@ Copy-MgBetaUserMailFolderMessage -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Copy a message to a folder within the user's mailbox.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-copy-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -254,6 +255,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[NotebookId \<String\>\]: The unique identifier of notebook
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
   \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
   \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
   \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask

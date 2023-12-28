@@ -41,6 +41,9 @@ This includes URLs, file attachments, and reference attachments to OneDrive for 
 This also includes URLs and reference attachments to Teams conversations.
 Ordered by recency of share.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/insights-list-shared-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

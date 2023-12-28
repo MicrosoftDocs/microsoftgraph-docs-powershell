@@ -10,7 +10,6 @@ ms.prod: cloud-printing
 
 ## SYNOPSIS
 Revoke the specified group's access to submit print jobs to the associated printerShare.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,9 @@ Remove-MgBetaPrintPrinterShareAllowedGroupByRef -InputObject <IDevicesCloudPrint
 
 ## DESCRIPTION
 Revoke the specified group's access to submit print jobs to the associated printerShare.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printershare-delete-allowedgroup-permissions.md)]
 
 ## PARAMETERS
 

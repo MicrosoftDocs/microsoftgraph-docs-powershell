@@ -10,7 +10,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Update the properties of a identityUserFlowAttributeAssignment object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaIdentityB2XUserFlowUserAttributeAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityB2XUserFlowUserAttributeAssignment?view=graph-powershell-beta)
@@ -51,7 +50,9 @@ Update-MgIdentityB2XUserFlowUserAttributeAssignment -InputObject <IIdentitySignI
 
 ## DESCRIPTION
 Update the properties of a identityUserFlowAttributeAssignment object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identityuserflowattributeassignment-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -409,4 +410,5 @@ Only applicable when the userInputType is radioSingleSelect, dropdownSingleSelec
 [Update-MgBetaIdentityB2XUserFlowUserAttributeAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityB2XUserFlowUserAttributeAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityb2xuserflowuserattributeassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityb2xuserflowuserattributeassignment)
+
 

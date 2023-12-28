@@ -11,7 +11,6 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a directoryroletemplate object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDirectoryRoleTemplate](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryRoleTemplate?view=graph-powershell-1.0)
@@ -39,7 +38,12 @@ Get-MgBetaDirectoryRoleTemplate -InputObject <IIdentityDirectoryManagementIdenti
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a directoryroletemplate object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryroletemplate-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryroletemplate-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

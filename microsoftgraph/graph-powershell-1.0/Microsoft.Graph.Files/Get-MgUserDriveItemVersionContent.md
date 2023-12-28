@@ -31,6 +31,9 @@ Get-MgUserDriveItemVersionContent -InputObject <IFilesIdentity> -OutFile <String
 ## DESCRIPTION
 The content stream for this version of the item.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-list-versions-permissions.md)]
+
 ## PARAMETERS
 
 ### -DriveId

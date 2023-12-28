@@ -44,6 +44,9 @@ A navigation property.
 Read-only.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/conversation-list-threads-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

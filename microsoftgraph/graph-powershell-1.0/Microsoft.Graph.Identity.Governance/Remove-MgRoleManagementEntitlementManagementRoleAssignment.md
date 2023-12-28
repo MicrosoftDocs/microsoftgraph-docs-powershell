@@ -10,7 +10,6 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Delete a unifiedRoleAssignment object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaRoleManagementEntitlementManagementRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaRoleManagementEntitlementManagementRoleAssignment?view=graph-powershell-beta)
@@ -31,7 +30,9 @@ Remove-MgRoleManagementEntitlementManagementRoleAssignment -InputObject <IIdenti
 
 ## DESCRIPTION
 Delete a unifiedRoleAssignment object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroleassignment-delete-permissions.md)]
 
 ## PARAMETERS
 

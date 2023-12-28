@@ -12,7 +12,6 @@ ms.prod: outlook
 ## SYNOPSIS
 Read the properties, relationships, or raw contents of an attachment that is attached to a user event, message, or group post.
 An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMessageAttachment?view=graph-powershell-beta)
@@ -41,7 +40,9 @@ Get-MgUserMessageAttachment -InputObject <IMailIdentity> [-ExpandProperty <Strin
 ## DESCRIPTION
 Read the properties, relationships, or raw contents of an attachment that is attached to a user event, message, or group post.
 An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/eventmessage-list-attachments-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -47,6 +47,9 @@ Get-MgBetaIdentityGovernanceRoleManagementAlertDefinition -InputObject <IIdentit
 ## DESCRIPTION
 Defines an alert, its impact, and measures to mitigate or prevent it.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rolemanagementalert-list-alertdefinitions-permissions.md)]
+
 ## PARAMETERS
 
 ### -All

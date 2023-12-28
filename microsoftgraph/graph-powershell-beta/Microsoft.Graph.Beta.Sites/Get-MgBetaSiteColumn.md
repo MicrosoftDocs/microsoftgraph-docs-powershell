@@ -38,6 +38,9 @@ Get-MgBetaSiteColumn -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] 
 ## DESCRIPTION
 The collection of column definitions reusable across lists under this site.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-list-columns-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaSiteColumn Cmdlet
 ```powershell

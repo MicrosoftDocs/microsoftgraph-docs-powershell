@@ -10,7 +10,6 @@ ms.prod: search
 
 ## SYNOPSIS
 Update the properties of an acronym object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -44,7 +43,9 @@ Update-MgBetaSearchAcronym -InputObject <ISearchIdentity> -BodyParameter <IMicro
 
 ## DESCRIPTION
 Update the properties of an acronym object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-acronym-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaSearchAcronym Cmdlet

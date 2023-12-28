@@ -10,7 +10,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Update the properties of a identityUserFlowAttributeAssignment object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -48,7 +47,9 @@ Update-MgBetaIdentityB2CUserFlowUserAttributeAssignment -InputObject <IIdentityS
 
 ## DESCRIPTION
 Update the properties of a identityUserFlowAttributeAssignment object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityuserflowattributeassignment-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaIdentityB2CUserFlowUserAttributeAssignment Cmdlet
@@ -330,6 +331,7 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[ActivityBasedTimeoutPolicyId \<String\>\]: The unique identifier of activityBasedTimeoutPolicy
   \[AppManagementPolicyId \<String\>\]: The unique identifier of appManagementPolicy
   \[AuthenticationCombinationConfigurationId \<String\>\]: The unique identifier of authenticationCombinationConfiguration
+  \[AuthenticationConditionApplicationAppId \<String\>\]: The unique identifier of authenticationConditionApplication
   \[AuthenticationContextClassReferenceId \<String\>\]: The unique identifier of authenticationContextClassReference
   \[AuthenticationEventListenerId \<String\>\]: The unique identifier of authenticationEventListener
   \[AuthenticationEventsFlowId \<String\>\]: The unique identifier of authenticationEventsFlow
@@ -423,4 +425,5 @@ Only applicable when the userInputType is radioSingleSelect, dropdownSingleSelec
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityb2cuserflowuserattributeassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityb2cuserflowuserattributeassignment)
+
 

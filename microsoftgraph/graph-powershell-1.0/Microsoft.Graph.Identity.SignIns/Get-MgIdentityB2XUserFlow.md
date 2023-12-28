@@ -11,7 +11,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a b2xIdentityUserFlow object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaIdentityB2XUserFlow](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityB2XUserFlow?view=graph-powershell-beta)
@@ -39,7 +38,12 @@ Get-MgIdentityB2XUserFlow -InputObject <IIdentitySignInsIdentity> [-ExpandProper
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a b2xIdentityUserFlow object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/b2xidentityuserflow-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitycontainer-list-b2xuserflows-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: List all b2xIdentityUserFlow objects

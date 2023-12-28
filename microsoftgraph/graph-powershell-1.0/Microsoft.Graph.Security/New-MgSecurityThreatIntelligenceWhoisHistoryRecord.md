@@ -1124,3 +1124,4 @@ No format is guaranteed.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencewhoishistoryrecord](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencewhoishistoryrecord)
 
 
+

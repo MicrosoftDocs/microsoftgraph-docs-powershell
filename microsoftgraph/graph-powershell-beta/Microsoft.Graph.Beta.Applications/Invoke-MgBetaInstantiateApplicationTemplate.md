@@ -12,7 +12,6 @@ ms.prod: applications
 Add an instance of an application from the Microsoft Entra application gallery into your directory.
 You can also use this API to instantiate non-gallery apps.
 Use the following ID for the applicationTemplate object: 8adf8e6e-67b2-4cf2-a259-e3dc5476c621.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgInstantiateApplicationTemplate](/powershell/module/Microsoft.Graph.Applications/Invoke-MgInstantiateApplicationTemplate?view=graph-powershell-1.0)
@@ -49,7 +48,9 @@ Invoke-MgBetaInstantiateApplicationTemplate -InputObject <IApplicationsIdentity>
 Add an instance of an application from the Microsoft Entra application gallery into your directory.
 You can also use this API to instantiate non-gallery apps.
 Use the following ID for the applicationTemplate object: 8adf8e6e-67b2-4cf2-a259-e3dc5476c621.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/applicationtemplate-instantiate-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgBetaInstantiateApplicationTemplate Cmdlet
@@ -230,6 +231,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Invoke-MgInstantiateApplicationTemplate](/powershell/module/Microsoft.Graph.Applications/Invoke-MgInstantiateApplicationTemplate?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetainstantiateapplicationtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetainstantiateapplicationtemplate)
-
 
 

@@ -10,7 +10,6 @@ ms.prod: applications
 
 ## SYNOPSIS
 Update the properties of an onPremisesAgentGroup object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -46,7 +45,9 @@ Update-MgBetaOnPremisePublishingProfileAgentGroup -InputObject <IApplicationsIde
 
 ## DESCRIPTION
 Update the properties of an onPremisesAgentGroup object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onpremisesagentgroup-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaOnPremisePublishingProfileAgentGroup Cmdlet

@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Postpone a reminder for an event in a user calendar until a new time.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgSnoozeUserEventReminder](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgSnoozeUserEventReminder?view=graph-powershell-1.0)
@@ -45,7 +44,9 @@ Invoke-MgBetaSnoozeUserEventReminder -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Postpone a reminder for an event in a user calendar until a new time.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-snoozereminder-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgBetaSnoozeUserEventReminder Cmdlet
@@ -258,6 +259,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[NotebookId \<String\>\]: The unique identifier of notebook
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
   \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
   \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
   \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask

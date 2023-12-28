@@ -11,7 +11,6 @@ ms.prod: microsoft-teams
 ## SYNOPSIS
 Create a new shift instance in a schedule.
 The duration of a shift cannot be less than 1 minute or longer than 24 hours.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupTeamScheduleShift](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamScheduleShift?view=graph-powershell-beta)
@@ -49,7 +48,9 @@ New-MgGroupTeamScheduleShift -InputObject <ITeamsIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Create a new shift instance in a schedule.
 The duration of a shift cannot be less than 1 minute or longer than 24 hours.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/schedule-post-shifts-permissions.md)]
 
 ## EXAMPLES
 

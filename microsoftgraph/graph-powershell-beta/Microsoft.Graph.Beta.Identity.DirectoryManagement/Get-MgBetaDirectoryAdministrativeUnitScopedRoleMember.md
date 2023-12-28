@@ -11,7 +11,6 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Get a Microsoft Entra role assignment with administrative unit scope.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDirectoryAdministrativeUnitScopedRoleMember](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryAdministrativeUnitScopedRoleMember?view=graph-powershell-1.0)
@@ -39,7 +38,12 @@ Get-MgBetaDirectoryAdministrativeUnitScopedRoleMember -InputObject <IIdentityDir
 
 ## DESCRIPTION
 Get a Microsoft Entra role assignment with administrative unit scope.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/administrativeunit-get-scopedrolemembers-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/administrativeunit-list-scopedrolemembers-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

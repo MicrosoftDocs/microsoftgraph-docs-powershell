@@ -14,7 +14,6 @@ Get the properties and relationships of an assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
 Students can only see assignments assigned to them; teachers and applications with application permissions can see all assignments in a class.
 You can use the Prefer header in your request to get the inactive status in case the assignment is deactivated; otherwise, you will get an unknownFutureValue value in the response.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgEducationClassAssignment](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignment?view=graph-powershell-1.0)
@@ -45,7 +44,12 @@ Get the properties and relationships of an assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
 Students can only see assignments assigned to them; teachers and applications with application permissions can see all assignments in a class.
 You can use the Prefer header in your request to get the inactive status in case the assignment is deactivated; otherwise, you will get an unknownFutureValue value in the response.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-list-assignments-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get education assignment

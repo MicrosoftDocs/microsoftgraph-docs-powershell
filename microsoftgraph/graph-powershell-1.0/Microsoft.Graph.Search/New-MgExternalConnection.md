@@ -10,7 +10,6 @@ ms.prod: search
 
 ## SYNOPSIS
 Create a new externalConnection object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaExternalConnection?view=graph-powershell-beta)
@@ -37,7 +36,9 @@ New-MgExternalConnection -BodyParameter <IMicrosoftGraphExternalConnectorsExtern
 
 ## DESCRIPTION
 Create a new externalConnection object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-external-post-connections-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -607,4 +608,5 @@ Required.
 [New-MgBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaExternalConnection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnection](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnection)
+
 

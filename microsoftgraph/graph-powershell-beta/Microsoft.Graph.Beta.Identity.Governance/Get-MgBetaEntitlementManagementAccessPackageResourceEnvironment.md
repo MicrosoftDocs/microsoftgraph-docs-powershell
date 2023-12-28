@@ -11,7 +11,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 Read the properties and relationships of an accessPackageResourceEnvironment object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -36,7 +35,12 @@ Get-MgBetaEntitlementManagementAccessPackageResourceEnvironment -InputObject <II
 
 ## DESCRIPTION
 Read the properties and relationships of an accessPackageResourceEnvironment object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackageresourceenvironment-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/entitlementmanagement-list-accesspackageresourceenvironment-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaEntitlementManagementAccessPackageResourceEnvironment Cmdlet

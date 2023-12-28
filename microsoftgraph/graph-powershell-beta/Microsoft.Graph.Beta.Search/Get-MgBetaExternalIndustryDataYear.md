@@ -11,7 +11,6 @@ ms.prod: industry-data-etl
 
 ## SYNOPSIS
 Read the properties and relationships of a yearTimePeriodDefinition object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -36,7 +35,12 @@ Get-MgBetaExternalIndustryDataYear -InputObject <ISearchIdentity> [-ExpandProper
 
 ## DESCRIPTION
 Read the properties and relationships of a yearTimePeriodDefinition object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-yeartimeperioddefinition-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-yeartimeperioddefinition-list-permissions.md)]
 
 ## PARAMETERS
 

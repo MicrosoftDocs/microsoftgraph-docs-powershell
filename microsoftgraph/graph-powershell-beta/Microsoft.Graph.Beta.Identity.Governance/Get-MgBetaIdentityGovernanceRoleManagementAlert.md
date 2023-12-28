@@ -35,6 +35,9 @@ Get-MgBetaIdentityGovernanceRoleManagementAlert -InputObject <IIdentityGovernanc
 ## DESCRIPTION
 Represents the alert entity.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rolemanagementalert-list-alerts-permissions.md)]
+
 ## PARAMETERS
 
 ### -All

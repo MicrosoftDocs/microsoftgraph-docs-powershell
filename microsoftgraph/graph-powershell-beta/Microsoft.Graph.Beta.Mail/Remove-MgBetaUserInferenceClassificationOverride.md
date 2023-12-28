@@ -10,7 +10,6 @@ ms.prod: mail
 
 ## SYNOPSIS
 Delete a focused Inbox override specified by its ID.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserInferenceClassificationOverride?view=graph-powershell-1.0)
@@ -31,7 +30,9 @@ Remove-MgBetaUserInferenceClassificationOverride -InputObject <IMailIdentity> [-
 
 ## DESCRIPTION
 Delete a focused Inbox override specified by its ID.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/inferenceclassificationoverride-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

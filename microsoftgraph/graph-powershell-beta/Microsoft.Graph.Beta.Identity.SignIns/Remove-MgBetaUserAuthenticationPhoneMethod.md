@@ -14,7 +14,6 @@ Remember that a user may not have an alternateMobile number without a mobile num
 If you want to remove a mobile number from a user that also has an alternateMobile number, first update the mobile number to the new number, then delete the alternateMobile number.
 If the phone number is the user's default Azure multifactor authentication (MFA) authentication method, it cannot be deleted.
 Have the user change their default authentication method, and then delete the number.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgUserAuthenticationPhoneMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgUserAuthenticationPhoneMethod?view=graph-powershell-1.0)
@@ -39,7 +38,9 @@ Remember that a user may not have an alternateMobile number without a mobile num
 If you want to remove a mobile number from a user that also has an alternateMobile number, first update the mobile number to the new number, then delete the alternateMobile number.
 If the phone number is the user's default Azure multifactor authentication (MFA) authentication method, it cannot be deleted.
 Have the user change their default authentication method, and then delete the number.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/phoneauthenticationmethod-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -183,6 +184,7 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[ActivityBasedTimeoutPolicyId \<String\>\]: The unique identifier of activityBasedTimeoutPolicy
   \[AppManagementPolicyId \<String\>\]: The unique identifier of appManagementPolicy
   \[AuthenticationCombinationConfigurationId \<String\>\]: The unique identifier of authenticationCombinationConfiguration
+  \[AuthenticationConditionApplicationAppId \<String\>\]: The unique identifier of authenticationConditionApplication
   \[AuthenticationContextClassReferenceId \<String\>\]: The unique identifier of authenticationContextClassReference
   \[AuthenticationEventListenerId \<String\>\]: The unique identifier of authenticationEventListener
   \[AuthenticationEventsFlowId \<String\>\]: The unique identifier of authenticationEventsFlow

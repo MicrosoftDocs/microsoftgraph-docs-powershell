@@ -38,6 +38,9 @@ Get-MgSiteColumn -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Pr
 ## DESCRIPTION
 The collection of column definitions reusable across lists under this site.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-list-columns-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

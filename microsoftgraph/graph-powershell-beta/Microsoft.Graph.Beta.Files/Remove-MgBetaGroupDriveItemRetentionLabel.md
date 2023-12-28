@@ -11,7 +11,9 @@ ms.prod: files
 ## SYNOPSIS
 Remove a retention label from a driveItem.
 For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
-This API is available in the following national cloud deployments.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupDriveItemRetentionLabel](/powershell/module/Microsoft.Graph.Files/Remove-MgGroupDriveItemRetentionLabel?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,7 +32,6 @@ Remove-MgBetaGroupDriveItemRetentionLabel -InputObject <IFilesIdentity> [-IfMatc
 ## DESCRIPTION
 Remove a retention label from a driveItem.
 For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
-This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -198,6 +199,7 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgGroupDriveItemRetentionLabel](/powershell/module/Microsoft.Graph.Files/Remove-MgGroupDriveItemRetentionLabel?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetagroupdriveitemretentionlabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetagroupdriveitemretentionlabel)
 

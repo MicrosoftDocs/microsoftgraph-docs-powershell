@@ -10,7 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Mark a schedulingGroup as inactive by setting its isActive property.This method does not remove the schedulingGroup from the schedule.
 Existing shift instances assigned to the scheduling group remain part of the group.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgGroupTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamScheduleSchedulingGroup?view=graph-powershell-1.0)
@@ -32,7 +31,6 @@ Remove-MgBetaGroupTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity> [-If
 ## DESCRIPTION
 Mark a schedulingGroup as inactive by setting its isActive property.This method does not remove the schedulingGroup from the schedule.
 Existing shift instances assigned to the scheduling group remain part of the group.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
@@ -168,6 +166,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
   \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
   \[ConversationMemberId \<String\>\]: The unique identifier of conversationMember
+  \[DayNoteId \<String\>\]: The unique identifier of dayNote
   \[DeletedChatId \<String\>\]: The unique identifier of deletedChat
   \[DeletedTeamId \<String\>\]: The unique identifier of deletedTeam
   \[GroupId \<String\>\]: The unique identifier of group

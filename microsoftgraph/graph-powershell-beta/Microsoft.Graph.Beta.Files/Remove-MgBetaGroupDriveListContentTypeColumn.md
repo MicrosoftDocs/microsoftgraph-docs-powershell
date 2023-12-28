@@ -9,8 +9,7 @@ ms.prod: sites-and-lists
 # Remove-MgBetaGroupDriveListContentTypeColumn
 
 ## SYNOPSIS
-Remove a column\]\[columndefinition\] from a \[site\]\[\], \[list\]\[\] or \[content type\]\[contentType\].
-This API is available in the following \[national cloud deployments.
+Remove a \[column\]\[columndefinition\] from a \[site\]\[\], \[list\]\[\] or \[content type\]\[contentType\].
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgGroupDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/Remove-MgGroupDriveListContentTypeColumn?view=graph-powershell-1.0)
@@ -30,8 +29,10 @@ Remove-MgBetaGroupDriveListContentTypeColumn -InputObject <IFilesIdentity> [-IfM
 ```
 
 ## DESCRIPTION
-Remove a column\]\[columndefinition\] from a \[site\]\[\], \[list\]\[\] or \[content type\]\[contentType\].
-This API is available in the following \[national cloud deployments.
+Remove a \[column\]\[columndefinition\] from a \[site\]\[\], \[list\]\[\] or \[content type\]\[contentType\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/columndefinition-delete-permissions.md)]
 
 ## PARAMETERS
 

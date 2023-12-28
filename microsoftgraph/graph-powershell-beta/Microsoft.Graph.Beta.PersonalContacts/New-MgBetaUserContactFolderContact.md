@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgUserContactFolderContact](/powershell/module/Microsoft.Graph.PersonalContacts/New-MgUserContactFolderContact?view=graph-powershell-1.0)
@@ -69,7 +68,9 @@ New-MgBetaUserContactFolderContact -InputObject <IPersonalContactsIdentity>
 
 ## DESCRIPTION
 Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contactfolder-post-contacts-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -1052,4 +1053,5 @@ WEBSITES \<IMicrosoftGraphWebsite\[\]\>: .
 [New-MgUserContactFolderContact](/powershell/module/Microsoft.Graph.PersonalContacts/New-MgUserContactFolderContact?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/new-mgbetausercontactfoldercontact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/new-mgbetausercontactfoldercontact)
+
 

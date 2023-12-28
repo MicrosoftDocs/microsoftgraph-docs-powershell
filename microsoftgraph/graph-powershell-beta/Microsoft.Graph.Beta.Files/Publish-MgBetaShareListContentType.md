@@ -9,8 +9,7 @@ ms.prod: sites-and-lists
 # Publish-MgBetaShareListContentType
 
 ## SYNOPSIS
-Publishes a contentType\]\[\] present in a content type hub site.
-This API is available in the following \[national cloud deployments.
+Publishes a \[contentType\]\[\] present in a content type hub site.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Publish-MgShareListContentType](/powershell/module/Microsoft.Graph.Files/Publish-MgShareListContentType?view=graph-powershell-1.0)
@@ -30,8 +29,10 @@ Publish-MgBetaShareListContentType -InputObject <IFilesIdentity> [-PassThru] [-W
 ```
 
 ## DESCRIPTION
-Publishes a contentType\]\[\] present in a content type hub site.
-This API is available in the following \[national cloud deployments.
+Publishes a \[contentType\]\[\] present in a content type hub site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-publish-permissions.md)]
 
 ## PARAMETERS
 

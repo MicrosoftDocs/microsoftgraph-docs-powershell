@@ -13,7 +13,6 @@ Complete the message migration process by removing migration mode from a team.
 Migration mode is a special state where certain operations are barred, like message POST and membership operations during the data migration process.
 After a completeMigration request is made, you can't import additional messages into the team.
 You can add members to the team after the request returns a successful response.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Complete-MgTeamMigration](/powershell/module/Microsoft.Graph.Teams/Complete-MgTeamMigration?view=graph-powershell-1.0)
@@ -36,7 +35,9 @@ Complete the message migration process by removing migration mode from a team.
 Migration mode is a special state where certain operations are barred, like message POST and membership operations during the data migration process.
 After a completeMigration request is made, you can't import additional messages into the team.
 You can add members to the team after the request returns a successful response.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/team-completemigration-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -153,6 +154,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
   \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
   \[ConversationMemberId \<String\>\]: The unique identifier of conversationMember
+  \[DayNoteId \<String\>\]: The unique identifier of dayNote
   \[DeletedChatId \<String\>\]: The unique identifier of deletedChat
   \[DeletedTeamId \<String\>\]: The unique identifier of deletedTeam
   \[GroupId \<String\>\]: The unique identifier of group

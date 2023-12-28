@@ -10,7 +10,6 @@ ms.prod: planner
 
 ## SYNOPSIS
 Retrieve the properties and relationships of plannerProgressTaskBoardTaskFormat object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPlannerTaskProgressTaskBoardFormat](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerTaskProgressTaskBoardFormat?view=graph-powershell-1.0)
@@ -31,7 +30,9 @@ Get-MgBetaPlannerTaskProgressTaskBoardFormat -InputObject <IPlannerIdentity> [-E
 
 ## DESCRIPTION
 Retrieve the properties and relationships of plannerProgressTaskBoardTaskFormat object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerprogresstaskboardtaskformat-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

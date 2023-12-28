@@ -36,6 +36,12 @@ Get-MgBetaOnPremisePublishingProfileConnector -InputObject <IApplicationsIdentit
 ## DESCRIPTION
 Retrieve the properties and relationships of a connector object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/connector-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/connector-list-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaOnPremisePublishingProfileConnector Cmdlet
 ```powershell
@@ -302,6 +308,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileconnector)
-
 
 

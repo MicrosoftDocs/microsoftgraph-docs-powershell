@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgGroupThread
 
 ## SYNOPSIS
-This API is available in the following national cloud deployments.
+Update conversation thread
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupThread?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ Update-MgGroupThread -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGr
 ```
 
 ## DESCRIPTION
-This API is available in the following national cloud deployments.
+Update conversation thread
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -561,4 +561,5 @@ Returned only on $select.
 [Update-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupThread?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupthread](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupthread)
+
 

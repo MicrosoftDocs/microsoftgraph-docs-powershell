@@ -10,7 +10,6 @@ ms.prod: cloud-pc
 
 ## SYNOPSIS
 Reboot a specific Cloud PC.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,9 @@ Restart-MgBetaDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManage
 
 ## DESCRIPTION
 Reboot a specific Cloud PC.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-reboot-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Restart-MgBetaDeviceManagementVirtualEndpointCloudPc Cmdlet
@@ -177,6 +178,7 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
   \[MicrosoftTunnelSiteId \<String\>\]: The unique identifier of microsoftTunnelSite
   \[MobileAppTroubleshootingEventId \<String\>\]: The unique identifier of mobileAppTroubleshootingEvent
   \[NotificationMessageTemplateId \<String\>\]: The unique identifier of notificationMessageTemplate
+  \[PrivilegeManagementElevationRequestId \<String\>\]: The unique identifier of privilegeManagementElevationRequest
   \[RemoteAssistancePartnerId \<String\>\]: The unique identifier of remoteAssistancePartner
   \[RoleScopeTagId \<String\>\]: The unique identifier of roleScopeTag
   \[WindowsAutopilotDeploymentProfileId \<String\>\]: The unique identifier of windowsAutopilotDeploymentProfile

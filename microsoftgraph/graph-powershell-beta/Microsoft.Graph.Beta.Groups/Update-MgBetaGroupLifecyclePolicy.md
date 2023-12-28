@@ -9,7 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of a groupLifecyclePolicygroupLifecyclePolicy resource type object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupLifecyclePolicy?view=graph-powershell-1.0)
@@ -70,7 +69,6 @@ Update-MgBetaGroupLifecyclePolicy -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Update the properties of a groupLifecyclePolicygroupLifecyclePolicy resource type object.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

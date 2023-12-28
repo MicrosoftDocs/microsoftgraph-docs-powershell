@@ -11,7 +11,7 @@ ms.prod: directory-management
 ## SYNOPSIS
 Create a new unifiedRoleDefinition object for an RBAC provider.
 This feature requires a Microsoft Entra ID P1 or P2 license.
-The following RBAC providers are currently supported:\n- Cloud PC\n- device management (Intune)\n- directory (Microsoft Entra ID) This API is available in the following national cloud deployments.
+The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- directory (Microsoft Entra ID)
 
 ## SYNTAX
 
@@ -33,7 +33,10 @@ New-MgBetaRoleManagementCloudPcRoleDefinition -BodyParameter <IMicrosoftGraphUni
 ## DESCRIPTION
 Create a new unifiedRoleDefinition object for an RBAC provider.
 This feature requires a Microsoft Entra ID P1 or P2 license.
-The following RBAC providers are currently supported:\n- Cloud PC\n- device management (Intune)\n- directory (Microsoft Entra ID) This API is available in the following national cloud deployments.
+The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- directory (Microsoft Entra ID)
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rbacapplication-post-roledefinitions-permissions.md)]
 
 ## PARAMETERS
 
@@ -417,5 +420,6 @@ Not supported for custom roles.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementcloudpcroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementcloudpcroledefinition)
+
 
 

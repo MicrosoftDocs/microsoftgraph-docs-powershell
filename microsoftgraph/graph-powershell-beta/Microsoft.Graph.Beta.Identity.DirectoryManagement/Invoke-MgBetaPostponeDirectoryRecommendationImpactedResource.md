@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetapostponedirectoryrecommendationimpactedresource
 schema: 2.0.0
-ms.prod: directory-management
+ms.prod: identity-and-access-reports
 ---
 
 # Invoke-MgBetaPostponeDirectoryRecommendationImpactedResource
@@ -11,7 +11,6 @@ ms.prod: directory-management
 ## SYNOPSIS
 Postpone action on an impactedResource object to a specified future date and time by marking its status as postponed.
 On the specified date and time, Microsoft Entra ID will automatically mark the status of the impactedResource object to active.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -48,7 +47,9 @@ Invoke-MgBetaPostponeDirectoryRecommendationImpactedResource
 ## DESCRIPTION
 Postpone action on an impactedResource object to a specified future date and time by marking its status as postponed.
 On the specified date and time, Microsoft Entra ID will automatically mark the status of the impactedResource object to active.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/impactedresource-postpone-permissions.md)]
 
 ## PARAMETERS
 

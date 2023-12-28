@@ -12,7 +12,6 @@ ms.prod: bookings
 Create a new Microsoft Bookings business in a tenant.
 This is the first step in setting up a Bookings business where you must specify the business display name.
 You can include other information such as business address, web site address, and scheduling policy, or set that information later by updating the bookingBusiness.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgBookingBusiness](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingBusiness?view=graph-powershell-1.0)
@@ -41,7 +40,9 @@ New-MgBetaBookingBusiness -BodyParameter <IMicrosoftGraphBookingBusiness> [-What
 Create a new Microsoft Bookings business in a tenant.
 This is the first step in setting up a Bookings business where you must specify the business display name.
 You can include other information such as business address, web site address, and scheduling policy, or set that information later by updating the bookingBusiness.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingbusiness-post-bookingbusinesses-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaBookingBusiness Cmdlet
@@ -119,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-Represents a Microsot Bookings Business.
+Represents a Microsoft Bookings Business.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -527,7 +528,7 @@ Default value is false.
   \[StaffMemberIds \<String\[\]\>\]: The ID of each bookingStaffMember who is scheduled in this appointment.
   \[Start \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
 
-BODYPARAMETER \<IMicrosoftGraphBookingBusiness\>: Represents a Microsot Bookings Business.
+BODYPARAMETER \<IMicrosoftGraphBookingBusiness\>: Represents a Microsoft Bookings Business.
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[DisplayName \<String\>\]: A name for the derived entity, which interfaces with customers.
   \[Id \<String\>\]: The unique identifier for an entity.
@@ -964,4 +965,5 @@ For example, 08:00:00.0000000.
 [New-MgBookingBusiness](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingBusiness?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusiness](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusiness)
+
 

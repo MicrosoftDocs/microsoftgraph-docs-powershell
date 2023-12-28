@@ -11,7 +11,6 @@ ms.prod: microsoft-teams
 ## SYNOPSIS
 Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Add-MgUserChatMember](/powershell/module/Microsoft.Graph.Users.Actions/Add-MgUserChatMember?view=graph-powershell-1.0)
@@ -47,7 +46,9 @@ Add-MgBetaUserChatMember -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/conversationmembers-add-permissions.md)]
 
 ## EXAMPLES
 
@@ -236,6 +237,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[NotebookId \<String\>\]: The unique identifier of notebook
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
   \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
   \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
   \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask
@@ -264,4 +266,5 @@ This property is settable only for members of a chat.
 [Add-MgUserChatMember](/powershell/module/Microsoft.Graph.Users.Actions/Add-MgUserChatMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/add-mgbetauserchatmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/add-mgbetauserchatmember)
+
 

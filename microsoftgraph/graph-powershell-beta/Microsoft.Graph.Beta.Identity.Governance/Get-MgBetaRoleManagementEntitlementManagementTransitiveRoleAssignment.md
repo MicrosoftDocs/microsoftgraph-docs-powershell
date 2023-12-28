@@ -36,6 +36,9 @@ Get-MgBetaRoleManagementEntitlementManagementTransitiveRoleAssignment
 ## DESCRIPTION
 Get transitiveRoleAssignments from roleManagement
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rbacapplication-list-transitiveroleassignments-permissions.md)]
+
 ## PARAMETERS
 
 ### -All

@@ -10,7 +10,6 @@ ms.prod: applications
 
 ## SYNOPSIS
 Classify a delegated permission by adding a delegatedPermissionClassification to the servicePrincipal representing the API.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaServicePrincipalDelegatedPermissionClassification](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalDelegatedPermissionClassification?view=graph-powershell-beta)
@@ -45,8 +44,8 @@ New-MgServicePrincipalDelegatedPermissionClassification -InputObject <IApplicati
 
 ## DESCRIPTION
 Classify a delegated permission by adding a delegatedPermissionClassification to the servicePrincipal representing the API.
-This API is available in the following national cloud deployments.
 
+**Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-post-delegatedpermissionclassifications-permissions.md)]
 
 ## EXAMPLES
@@ -282,6 +281,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [New-MgBetaServicePrincipalDelegatedPermissionClassification](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalDelegatedPermissionClassification?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipaldelegatedpermissionclassification](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipaldelegatedpermissionclassification)
-
 
 

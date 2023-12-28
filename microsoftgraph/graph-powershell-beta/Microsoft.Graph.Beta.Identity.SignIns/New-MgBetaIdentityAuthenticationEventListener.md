@@ -11,7 +11,6 @@ ms.prod: identity-and-sign-in
 ## SYNOPSIS
 Create a new authenticationEventListener object.
 You can create one of the following subtypes that are derived from authenticationEventListener.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -31,7 +30,9 @@ New-MgBetaIdentityAuthenticationEventListener -BodyParameter <IMicrosoftGraphAut
 ## DESCRIPTION
 Create a new authenticationEventListener object.
 You can create one of the following subtypes that are derived from authenticationEventListener.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitycontainer-post-authenticationeventlisteners-permissions.md)]
 
 ## PARAMETERS
 

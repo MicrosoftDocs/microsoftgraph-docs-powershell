@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Delete an attachment from a user calendar event, message, Outlook task, or post.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,6 @@ Remove-MgBetaUserEventExceptionOccurrenceAttachment -InputObject <ICalendarIdent
 
 ## DESCRIPTION
 Delete an attachment from a user calendar event, message, Outlook task, or post.
-This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

@@ -9,8 +9,7 @@ ms.prod: sites-and-lists
 # New-MgDriveListContentTypeColumn
 
 ## SYNOPSIS
-Add a column to a content type\]\[contentType\] in a site, or a list with a request that specifies a \[columnDefinition\]\[columnDefinition\].
-This API is available in the following \[national cloud deployments.
+Add a column to a \[content type\]\[contentType\] in a site, or a list with a request that specifies a \[columnDefinition\]\[columnDefinition\].
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListContentTypeColumn?view=graph-powershell-beta)
@@ -62,8 +61,10 @@ New-MgDriveListContentTypeColumn -InputObject <IFilesIdentity> -BodyParameter <I
 ```
 
 ## DESCRIPTION
-Add a column to a content type\]\[contentType\] in a site, or a list with a request that specifies a \[columnDefinition\]\[columnDefinition\].
-This API is available in the following \[national cloud deployments.
+Add a column to a \[content type\]\[contentType\] in a site, or a list with a request that specifies a \[columnDefinition\]\[columnDefinition\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-post-columns-permissions.md)]
 
 ## PARAMETERS
 

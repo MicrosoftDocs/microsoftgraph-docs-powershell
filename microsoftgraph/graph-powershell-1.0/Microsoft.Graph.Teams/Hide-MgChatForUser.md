@@ -10,7 +10,6 @@ ms.prod: microsoft-teams
 
 ## SYNOPSIS
 Hide a chat for a user.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Hide-MgBetaChatForUser](/powershell/module/Microsoft.Graph.Beta.Teams/Hide-MgBetaChatForUser?view=graph-powershell-beta)
@@ -45,7 +44,9 @@ Hide-MgChatForUser -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Hide a chat for a user.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-hideforuser-permissions.md)]
 
 ## PARAMETERS
 

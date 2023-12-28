@@ -282,3 +282,4 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/set-mgbetadeviceappmanagementwindowsmanagedappprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/set-mgbetadeviceappmanagementwindowsmanagedappprotection)
 
 
+

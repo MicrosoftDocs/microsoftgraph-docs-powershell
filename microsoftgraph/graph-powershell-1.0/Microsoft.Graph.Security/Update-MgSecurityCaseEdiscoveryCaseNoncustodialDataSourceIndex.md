@@ -9,7 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Trigger an indexOperation to make a non-custodial data source and its associated data source searchable.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex?view=graph-powershell-beta)
@@ -30,7 +29,6 @@ Update-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex -InputObject <ISe
 
 ## DESCRIPTION
 Trigger an indexOperation to make a non-custodial data source and its associated data source searchable.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex Cmdlet

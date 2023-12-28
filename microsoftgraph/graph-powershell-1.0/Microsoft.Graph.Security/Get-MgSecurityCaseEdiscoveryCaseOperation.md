@@ -11,7 +11,6 @@ ms.prod: ediscovery
 
 ## SYNOPSIS
 Read the properties and relationships of a caseOperation object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseOperation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseOperation?view=graph-powershell-beta)
@@ -39,7 +38,12 @@ Get-MgSecurityCaseEdiscoveryCaseOperation -InputObject <ISecurityIdentity> [-Exp
 
 ## DESCRIPTION
 Read the properties and relationships of a caseOperation object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-caseoperation-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycase-list-operations-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

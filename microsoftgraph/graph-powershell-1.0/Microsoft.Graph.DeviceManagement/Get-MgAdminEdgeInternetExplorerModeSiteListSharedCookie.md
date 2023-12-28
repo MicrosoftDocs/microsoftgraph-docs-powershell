@@ -11,7 +11,6 @@ ms.prod: browser-management
 
 ## SYNOPSIS
 Get a session cookie that can be shared between a Microsoft Edge process and an Internet Explorer process, while using Internet Explorer mode.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie?view=graph-powershell-beta)
@@ -39,10 +38,11 @@ Get-MgAdminEdgeInternetExplorerModeSiteListSharedCookie -InputObject <IDeviceMan
 
 ## DESCRIPTION
 Get a session cookie that can be shared between a Microsoft Edge process and an Internet Explorer process, while using Internet Explorer mode.
-This API is available in the following national cloud deployments.
 
+**Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/browsersharedcookie-get-permissions.md)]
 
+**Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/browsersitelist-list-sharedcookies-permissions.md)]
 
 ## PARAMETERS

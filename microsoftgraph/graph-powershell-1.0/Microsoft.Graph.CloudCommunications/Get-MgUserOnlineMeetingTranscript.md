@@ -14,7 +14,6 @@ Retrieve a callTranscript object associated with a scheduled onlineMeeting.
 This API doesn't support getting call transcripts from channel meetings.
 Retrieving the transcript returns the metadata of the single transcript associated with the online meeting.
 Retrieving the content of the transcript returns the stream of text associated with the transcript.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserOnlineMeetingTranscript](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaUserOnlineMeetingTranscript?view=graph-powershell-beta)
@@ -45,10 +44,11 @@ Retrieve a callTranscript object associated with a scheduled onlineMeeting.
 This API doesn't support getting call transcripts from channel meetings.
 Retrieving the transcript returns the metadata of the single transcript associated with the online meeting.
 Retrieving the content of the transcript returns the stream of text associated with the transcript.
-This API is available in the following national cloud deployments.
 
+**Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/calltranscript-get-permissions.md)]
 
+**Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onlinemeeting-list-transcripts-permissions.md)]
 
 ## PARAMETERS
@@ -285,6 +285,7 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[AudioRoutingGroupId \<String\>\]: The unique identifier of audioRoutingGroup
   \[CallId \<String\>\]: The unique identifier of call
   \[CallRecordId \<String\>\]: The unique identifier of callRecord
+  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
   \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
   \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
   \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession

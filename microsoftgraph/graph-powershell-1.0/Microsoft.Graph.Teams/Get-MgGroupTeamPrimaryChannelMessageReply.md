@@ -11,7 +11,6 @@ ms.prod: microsoft-teams
 
 ## SYNOPSIS
 Retrieve a single message or a message reply in a channel or a chat.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamPrimaryChannelMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamPrimaryChannelMessageReply?view=graph-powershell-beta)
@@ -39,7 +38,6 @@ Get-MgGroupTeamPrimaryChannelMessageReply -InputObject <ITeamsIdentity> [-Expand
 
 ## DESCRIPTION
 Retrieve a single message or a message reply in a channel or a chat.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 

@@ -10,7 +10,6 @@ ms.prod: planner
 
 ## SYNOPSIS
 Create a new plannerBucket object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPlannerBucket](/powershell/module/Microsoft.Graph.Beta.Planner/New-MgBetaPlannerBucket?view=graph-powershell-beta)
@@ -30,7 +29,9 @@ New-MgPlannerBucket -BodyParameter <IMicrosoftGraphPlannerBucket> [-WhatIf] [-Co
 
 ## DESCRIPTION
 Create a new plannerBucket object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/planner-post-buckets-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -400,4 +401,5 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 [New-MgBetaPlannerBucket](/powershell/module/Microsoft.Graph.Beta.Planner/New-MgBetaPlannerBucket?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannerbucket](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannerbucket)
+
 

@@ -10,7 +10,6 @@ ms.prod: ediscovery
 
 ## SYNOPSIS
 Delete a siteSource object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,9 @@ Remove-MgBetaComplianceEdiscoveryCaseCustodianSiteSource -InputObject <IComplian
 
 ## DESCRIPTION
 Delete a siteSource object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-sitesource-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaComplianceEdiscoveryCaseCustodianSiteSource Cmdlet

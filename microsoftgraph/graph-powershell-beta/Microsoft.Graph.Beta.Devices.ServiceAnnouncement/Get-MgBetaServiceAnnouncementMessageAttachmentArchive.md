@@ -31,6 +31,9 @@ Get-MgBetaServiceAnnouncementMessageAttachmentArchive -InputObject <IDevicesServ
 ## DESCRIPTION
 The zip file of all attachments for a message.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceannouncement-list-messages-permissions.md)]
+
 ## EXAMPLES
 
 ## PARAMETERS

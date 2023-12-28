@@ -10,7 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Release a custodian from a case.
 For details, see Release a custodian from a case.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Publish-MgSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Security/Publish-MgSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-1.0)
@@ -32,7 +31,6 @@ Publish-MgBetaSecurityCaseEdiscoveryCaseCustodian -InputObject <ISecurityIdentit
 ## DESCRIPTION
 Release a custodian from a case.
 For details, see Release a custodian from a case.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Publish-MgBetaSecurityCaseEdiscoveryCaseCustodian Cmdlet
@@ -157,6 +155,8 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[ArticleId \<String\>\]: The unique identifier of article
   \[ArticleIndicatorId \<String\>\]: The unique identifier of articleIndicator
   \[AttackSimulationOperationId \<String\>\]: The unique identifier of attackSimulationOperation
+  \[AuditLogQueryId \<String\>\]: The unique identifier of auditLogQuery
+  \[AuditLogRecordId \<String\>\]: The unique identifier of auditLogRecord
   \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
   \[AuthorityTemplateId \<String\>\]: The unique identifier of authorityTemplate
   \[CaseOperationId \<String\>\]: The unique identifier of caseOperation

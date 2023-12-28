@@ -10,7 +10,6 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Remove a Microsoft Entra role assignment with administrative unit scope.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,9 @@ Remove-MgBetaAdministrativeUnitScopedRoleMember -InputObject <IIdentityDirectory
 
 ## DESCRIPTION
 Remove a Microsoft Entra role assignment with administrative unit scope.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/administrativeunit-delete-scopedrolemembers-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaAdministrativeUnitScopedRoleMember Cmdlet

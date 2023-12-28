@@ -9,8 +9,7 @@ ms.prod: sharepoint
 # Remove-MgGroupDriveItemChild
 
 ## SYNOPSIS
-Remove an item from a bundle\]\[\].
-This API is available in the following \[national cloud deployments.
+Remove an item from a \[bundle\]\[\].
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveItemChild](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveItemChild?view=graph-powershell-beta)
@@ -30,8 +29,10 @@ Remove-MgGroupDriveItemChild -InputObject <IFilesIdentity> [-IfMatch <String>] [
 ```
 
 ## DESCRIPTION
-Remove an item from a bundle\]\[\].
-This API is available in the following \[national cloud deployments.
+Remove an item from a \[bundle\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bundle-removeitem-permissions.md)]
 
 ## PARAMETERS
 

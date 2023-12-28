@@ -10,7 +10,6 @@ ms.prod: cloud-communications
 
 ## SYNOPSIS
 Delete a custom registration question from a meetingRegistration object on behalf of the organizer.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -29,7 +28,9 @@ Remove-MgBetaUserOnlineMeetingRegistrationCustomQuestion -InputObject <ICloudCom
 
 ## DESCRIPTION
 Delete a custom registration question from a meetingRegistration object on behalf of the organizer.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/meetingregistrationquestion-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaUserOnlineMeetingRegistrationCustomQuestion Cmdlet

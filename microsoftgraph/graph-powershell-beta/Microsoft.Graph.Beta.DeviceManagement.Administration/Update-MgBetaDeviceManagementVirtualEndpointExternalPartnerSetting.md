@@ -10,7 +10,6 @@ ms.prod: cloud-pc
 
 ## SYNOPSIS
 Update the properties of a cloudPcExternalPartnerSetting object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -44,7 +43,9 @@ Update-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting
 
 ## DESCRIPTION
 Update the properties of a cloudPcExternalPartnerSetting object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcexternalpartnersetting-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting Cmdlet

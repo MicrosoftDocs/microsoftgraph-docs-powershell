@@ -38,6 +38,9 @@ Get-MgBetaGroupDriveListContentType -InputObject <IFilesIdentity> [-ExpandProper
 ## DESCRIPTION
 The collection of content types present in this list.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/list-list-contenttypes-permissions.md)]
+
 ## PARAMETERS
 
 ### -All

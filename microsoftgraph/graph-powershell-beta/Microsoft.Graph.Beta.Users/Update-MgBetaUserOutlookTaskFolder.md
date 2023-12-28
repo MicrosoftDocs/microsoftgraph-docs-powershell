@@ -11,7 +11,6 @@ ms.prod: outlook
 ## SYNOPSIS
 Update the writable properties of an Outlook task folder.
 You cannot change the name property value of the default task folder, 'Tasks'.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -50,7 +49,9 @@ Update-MgBetaUserOutlookTaskFolder -InputObject <IUsersIdentity>
 ## DESCRIPTION
 Update the writable properties of an Outlook task folder.
 You cannot change the name property value of the default task folder, 'Tasks'.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlooktaskfolder-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaUserOutlookTaskFolder Cmdlet

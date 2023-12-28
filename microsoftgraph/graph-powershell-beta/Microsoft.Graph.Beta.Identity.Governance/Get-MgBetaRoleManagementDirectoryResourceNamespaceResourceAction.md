@@ -11,7 +11,6 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Read the properties and relationships of an unifiedRbacResourceAction object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryResourceNamespaceResourceAction?view=graph-powershell-1.0)
@@ -40,7 +39,12 @@ Get-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction -InputObject <I
 
 ## DESCRIPTION
 Read the properties and relationships of an unifiedRbacResourceAction object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedrbacresourceaction-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedrbacresourcenamespace-list-resourceactions-permissions.md)]
 
 ## PARAMETERS
 

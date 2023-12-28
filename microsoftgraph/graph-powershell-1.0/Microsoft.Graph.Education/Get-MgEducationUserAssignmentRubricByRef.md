@@ -11,7 +11,6 @@ ms.prod: education
 ## SYNOPSIS
 Get the educationRubric object attached to an educationAssignment, if one exists.
 Only teachers, students, and applications with application permissions can perform this operation.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationUserAssignmentRubricByRef](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserAssignmentRubricByRef?view=graph-powershell-beta)
@@ -32,7 +31,9 @@ Get-MgEducationUserAssignmentRubricByRef -InputObject <IEducationIdentity> [<Com
 ## DESCRIPTION
 Get the educationRubric object attached to an educationAssignment, if one exists.
 Only teachers, students, and applications with application permissions can perform this operation.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-get-rubric-permissions.md)]
 
 ## EXAMPLES
 

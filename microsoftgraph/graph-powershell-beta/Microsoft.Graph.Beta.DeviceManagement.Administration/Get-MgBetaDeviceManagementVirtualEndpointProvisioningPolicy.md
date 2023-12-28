@@ -11,7 +11,6 @@ ms.prod: cloud-pc
 
 ## SYNOPSIS
 Read the properties and relationships of a cloudPcProvisioningPolicy object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -37,7 +36,12 @@ Get-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy
 
 ## DESCRIPTION
 Read the properties and relationships of a cloudPcProvisioningPolicy object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcprovisioningpolicy-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-list-provisioningpolicies-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy Cmdlet

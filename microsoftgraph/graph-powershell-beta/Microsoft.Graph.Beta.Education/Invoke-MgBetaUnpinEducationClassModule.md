@@ -12,7 +12,6 @@ ms.prod: education
 Unpin an educationModule in the classwork list.
 This action sets the isPinned property to false for an educationModule.
 Only teachers in the class can perform this operation.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -32,7 +31,9 @@ Invoke-MgBetaUnpinEducationClassModule -InputObject <IEducationIdentity> [-WhatI
 Unpin an educationModule in the classwork list.
 This action sets the isPinned property to false for an educationModule.
 Only teachers in the class can perform this operation.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationmodule-unpin-permissions.md)]
 
 ## PARAMETERS
 

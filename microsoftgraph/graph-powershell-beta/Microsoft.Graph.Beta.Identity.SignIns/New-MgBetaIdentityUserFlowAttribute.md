@@ -10,7 +10,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Create a new custom identityUserFlowAttribute object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgIdentityUserFlowAttribute](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityUserFlowAttribute?view=graph-powershell-1.0)
@@ -32,7 +31,9 @@ New-MgBetaIdentityUserFlowAttribute -BodyParameter <IMicrosoftGraphIdentityUserF
 
 ## DESCRIPTION
 Create a new custom identityUserFlowAttribute object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityuserflowattribute-post-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

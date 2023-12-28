@@ -659,3 +659,4 @@ Supports $expand.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementresourcescoperesourceroleresource](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementresourcescoperesourceroleresource)
 
 
+

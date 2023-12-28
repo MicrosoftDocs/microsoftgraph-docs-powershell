@@ -9,7 +9,7 @@ ms.prod: intune
 # Remove-MgDeviceAppManagementManagedEBookAssignment
 
 ## SYNOPSIS
-Deletes a managedEBookAssignment.
+Deletes a iosVppEBookAssignment.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementManagedEBookAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementManagedEBookAssignment?view=graph-powershell-beta)
@@ -29,7 +29,7 @@ Remove-MgDeviceAppManagementManagedEBookAssignment -InputObject <IDevicesCorpora
 ```
 
 ## DESCRIPTION
-Deletes a managedEBookAssignment.
+Deletes a iosVppEBookAssignment.
 
 ## PARAMETERS
 

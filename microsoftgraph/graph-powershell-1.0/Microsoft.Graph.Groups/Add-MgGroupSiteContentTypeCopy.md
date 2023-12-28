@@ -9,8 +9,7 @@ ms.prod: sites-and-lists
 # Add-MgGroupSiteContentTypeCopy
 
 ## SYNOPSIS
-Add a copy of a content type\]\[contentType\] from a \[site\]\[site\] to a \[list\]\[list\].
-This API is available in the following \[national cloud deployments.
+Add a copy of a \[content type\]\[contentType\] from a \[site\]\[site\] to a \[list\]\[list\].
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Add-MgBetaGroupSiteContentTypeCopy](/powershell/module/Microsoft.Graph.Beta.Groups/Add-MgBetaGroupSiteContentTypeCopy?view=graph-powershell-beta)
@@ -44,8 +43,10 @@ Add-MgGroupSiteContentTypeCopy -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Add a copy of a content type\]\[contentType\] from a \[site\]\[site\] to a \[list\]\[list\].
-This API is available in the following \[national cloud deployments.
+Add a copy of a \[content type\]\[contentType\] from a \[site\]\[site\] to a \[list\]\[list\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-addcopy-permissions.md)]
 
 ## EXAMPLES
 

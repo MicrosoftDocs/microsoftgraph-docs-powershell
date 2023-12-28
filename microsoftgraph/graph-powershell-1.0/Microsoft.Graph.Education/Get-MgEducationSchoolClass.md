@@ -10,7 +10,6 @@ ms.prod: education
 
 ## SYNOPSIS
 Get the educationClass resources owned by an educationSchool.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationSchoolClass](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchoolClass?view=graph-powershell-beta)
@@ -25,7 +24,9 @@ Get-MgEducationSchoolClass -EducationSchoolId <String> [-ExpandProperty <String[
 
 ## DESCRIPTION
 Get the educationClass resources owned by an educationSchool.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationschool-list-classes-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

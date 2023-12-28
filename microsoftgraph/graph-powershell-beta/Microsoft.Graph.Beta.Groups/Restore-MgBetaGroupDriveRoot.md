@@ -9,7 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Restore a driveItem that has been deleted and is currently in the recycle bin.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Restore-MgGroupDriveRoot](/powershell/module/Microsoft.Graph.Groups/Restore-MgGroupDriveRoot?view=graph-powershell-1.0)
@@ -44,7 +43,6 @@ Restore-MgBetaGroupDriveRoot -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Restore a driveItem that has been deleted and is currently in the recycle bin.
-This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

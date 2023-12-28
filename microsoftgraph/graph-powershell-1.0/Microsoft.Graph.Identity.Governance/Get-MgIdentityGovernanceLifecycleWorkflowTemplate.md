@@ -11,7 +11,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 Read the properties and relationships of a workflowTemplate object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate?view=graph-powershell-beta)
@@ -39,7 +38,12 @@ Get-MgIdentityGovernanceLifecycleWorkflowTemplate -InputObject <IIdentityGoverna
 
 ## DESCRIPTION
 Read the properties and relationships of a workflowTemplate object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-workflowtemplate-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-lifecycleworkflowscontainer-list-workflowtemplates-permissions.md)]
 
 ## PARAMETERS
 

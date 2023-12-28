@@ -12,7 +12,6 @@ ms.prod: directory-management
 ## SYNOPSIS
 A directory setting template represents a template of settings from which settings may be created within a tenant.
 This operation allows retrieval of the properties of the directorySettingTemplate object, including the available settings and their defaults.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -38,7 +37,12 @@ Get-MgBetaDirectorySettingTemplate -InputObject <IIdentityDirectoryManagementIde
 ## DESCRIPTION
 A directory setting template represents a template of settings from which settings may be created within a tenant.
 This operation allows retrieval of the properties of the directorySettingTemplate object, including the available settings and their defaults.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directorysettingtemplate-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directorysettingtemplate-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaDirectorySettingTemplate Cmdlet

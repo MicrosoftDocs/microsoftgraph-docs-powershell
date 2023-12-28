@@ -40,6 +40,9 @@ Get-MgEducationMeClass -InputObject <IEducationIdentity> [-ExpandProperty <Strin
 Classes to which the user belongs.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationuser-list-classes-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

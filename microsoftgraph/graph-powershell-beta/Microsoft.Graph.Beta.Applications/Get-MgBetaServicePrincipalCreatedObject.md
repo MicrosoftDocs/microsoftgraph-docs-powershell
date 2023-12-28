@@ -42,6 +42,9 @@ Directory objects created by this service principal.
 Read-only.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-list-createdobjects-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaServicePrincipalCreatedObject Cmdlet
 ```powershell
@@ -302,6 +305,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Get-MgServicePrincipalCreatedObject](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalCreatedObject?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalcreatedobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalcreatedobject)
-
 
 
