@@ -13,7 +13,6 @@ ms.prod: identity-and-sign-in
 Get the properties and relationships of the specified identity provider configured in the tenant.
 Among the types of providers derived from identityProviderBase, you can currently get a socialIdentityProvider or a builtinIdentityProvider resource in Microsoft Entra ID.
 In Azure AD B2C, this operation can currently get a socialIdentityProvider, or an appleManagedIdentityProvider resource.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaIdentityProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityProvider?view=graph-powershell-beta)
@@ -43,7 +42,12 @@ Get-MgIdentityProvider -InputObject <IIdentitySignInsIdentity> [-ExpandProperty 
 Get the properties and relationships of the specified identity provider configured in the tenant.
 Among the types of providers derived from identityProviderBase, you can currently get a socialIdentityProvider or a builtinIdentityProvider resource in Microsoft Entra ID.
 In Azure AD B2C, this operation can currently get a socialIdentityProvider, or an appleManagedIdentityProvider resource.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identityproviderbase-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitycontainer-list-identityproviders-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Retrieve a specific social identity provider (Azure AD or Azure AD B2C)
@@ -340,4 +344,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 [Get-MgBetaIdentityProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityProvider?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityprovider](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityprovider)
+
 

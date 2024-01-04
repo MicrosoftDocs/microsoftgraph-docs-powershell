@@ -10,7 +10,6 @@ ms.prod: planner
 
 ## SYNOPSIS
 Retrieve a list of plannerTask objects associated to a plannerBucket object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPlannerBucketTask](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerBucketTask?view=graph-powershell-beta)
@@ -25,7 +24,9 @@ Get-MgPlannerBucketTask -PlannerBucketId <String> [-ExpandProperty <String[]>] [
 
 ## DESCRIPTION
 Retrieve a list of plannerTask objects associated to a plannerBucket object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannerbucket-list-tasks-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -222,4 +223,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgBetaPlannerBucketTask](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerBucketTask?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerbuckettask](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerbuckettask)
+
 

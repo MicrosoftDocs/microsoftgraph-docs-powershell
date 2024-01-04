@@ -565,3 +565,4 @@ RECOMMENDEDHUNTINGQUERIES \<IMicrosoftGraphSecurityRecommendedHuntingQuery\[\]\>
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityincident](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityincident)
 
 
+

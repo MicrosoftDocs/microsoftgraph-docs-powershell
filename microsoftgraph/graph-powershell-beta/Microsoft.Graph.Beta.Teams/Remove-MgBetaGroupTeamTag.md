@@ -9,7 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete a tag object permanently.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgGroupTeamTag](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamTag?view=graph-powershell-1.0)
@@ -30,7 +29,6 @@ Remove-MgBetaGroupTeamTag -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Pa
 
 ## DESCRIPTION
 Delete a tag object permanently.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
@@ -166,6 +164,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
   \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
   \[ConversationMemberId \<String\>\]: The unique identifier of conversationMember
+  \[DayNoteId \<String\>\]: The unique identifier of dayNote
   \[DeletedChatId \<String\>\]: The unique identifier of deletedChat
   \[DeletedTeamId \<String\>\]: The unique identifier of deletedTeam
   \[GroupId \<String\>\]: The unique identifier of group
@@ -202,4 +201,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Remove-MgGroupTeamTag](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamTag?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteamtag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteamtag)
+
 

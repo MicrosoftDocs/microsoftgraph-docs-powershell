@@ -10,7 +10,6 @@ ms.prod: cloud-pc
 
 ## SYNOPSIS
 Set the review status of multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -44,7 +43,9 @@ Invoke-MgBetaBulkUserManagedDeviceSetCloudPcReviewStatus -InputObject <IUsersAct
 
 ## DESCRIPTION
 Set the review status of multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/manageddevice-bulksetcloudpcreviewstatus-permissions.md)]
 
 ## PARAMETERS
 
@@ -236,6 +237,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[NotebookId \<String\>\]: The unique identifier of notebook
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
   \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
   \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
   \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask
@@ -267,5 +269,6 @@ For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetabulkusermanageddevicesetcloudpcreviewstatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetabulkusermanageddevicesetcloudpcreviewstatus)
+
 
 

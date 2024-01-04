@@ -10,7 +10,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 Add a group to the list of groups that have been marked as incompatible on an accessPackage.
- This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef?view=graph-powershell-beta)
@@ -43,7 +42,9 @@ New-MgEntitlementManagementAccessPackageIncompatibleGroupByRef -InputObject <IId
 
 ## DESCRIPTION
 Add a group to the list of groups that have been marked as incompatible on an accessPackage.
- This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackage-post-incompatiblegroup-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -283,4 +284,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [New-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementaccesspackageincompatiblegroupbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementaccesspackageincompatiblegroupbyref)
+
 

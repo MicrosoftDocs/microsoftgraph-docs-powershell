@@ -10,7 +10,6 @@ ms.prod: sharepoint
 
 ## SYNOPSIS
 Check in a checked out driveItem resource, which makes the version of the document available to others.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgCheckinUserDriveRoot](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgCheckinUserDriveRoot?view=graph-powershell-1.0)
@@ -45,7 +44,9 @@ Invoke-MgBetaCheckinUserDriveRoot -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Check in a checked out driveItem resource, which makes the version of the document available to others.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-checkin-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -290,6 +291,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[NotebookId \<String\>\]: The unique identifier of notebook
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
   \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
   \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
   \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask
@@ -306,4 +308,5 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 [Invoke-MgCheckinUserDriveRoot](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgCheckinUserDriveRoot?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetacheckinuserdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetacheckinuserdriveroot)
+
 

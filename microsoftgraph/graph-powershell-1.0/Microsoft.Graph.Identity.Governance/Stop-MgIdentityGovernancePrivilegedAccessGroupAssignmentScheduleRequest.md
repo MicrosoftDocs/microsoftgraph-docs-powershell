@@ -10,7 +10,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 Cancel an access assignment request to a group whose membership and ownership are governed by PIM.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Stop-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Stop-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest?view=graph-powershell-beta)
@@ -32,7 +31,9 @@ Stop-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest
 
 ## DESCRIPTION
 Cancel an access assignment request to a group whose membership and ownership are governed by PIM.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/privilegedaccessgroupassignmentschedulerequest-cancel-permissions.md)]
 
 ## PARAMETERS
 
@@ -202,5 +203,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [Stop-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Stop-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/stop-mgidentitygovernanceprivilegedaccessgroupassignmentschedulerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/stop-mgidentitygovernanceprivilegedaccessgroupassignmentschedulerequest)
+
 
 

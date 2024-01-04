@@ -38,6 +38,9 @@ Get-MgBetaGroupSiteColumn -InputObject <ISitesIdentity> [-ExpandProperty <String
 ## DESCRIPTION
 The collection of column definitions reusable across lists under this site.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-list-columns-permissions.md)]
+
 ## EXAMPLES
 
 ## PARAMETERS
@@ -323,4 +326,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgGroupSiteColumn](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitecolumn)
+
 

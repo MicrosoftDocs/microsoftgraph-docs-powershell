@@ -11,7 +11,6 @@ ms.prod: security
 
 ## SYNOPSIS
 Read the properties and relationships of a retentionEvent object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityTriggerRetentionEvent](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityTriggerRetentionEvent?view=graph-powershell-beta)
@@ -39,7 +38,12 @@ Get-MgSecurityTriggerRetentionEvent -InputObject <ISecurityIdentity> [-ExpandPro
 
 ## DESCRIPTION
 Read the properties and relationships of a retentionEvent object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-retentionevent-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-retentionevent-list-permissions.md)]
 
 ## PARAMETERS
 
@@ -298,5 +302,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Get-MgBetaSecurityTriggerRetentionEvent](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityTriggerRetentionEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritytriggerretentionevent](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritytriggerretentionevent)
+
 
 

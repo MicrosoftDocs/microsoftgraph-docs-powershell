@@ -10,7 +10,6 @@ ms.prod: files
 
 ## SYNOPSIS
 List the recent activities that took place on an item or under a hierarchy.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -22,7 +21,9 @@ Get-MgBetaUserDriveActivity -DriveId <String> -UserId <String> [-ExpandProperty 
 
 ## DESCRIPTION
 List the recent activities that took place on an item or under a hierarchy.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/activities-list-permissions.md)]
 
 ## PARAMETERS
 
@@ -220,5 +221,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriveactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriveactivity)
+
 
 

@@ -10,7 +10,6 @@ ms.prod: files
 
 ## SYNOPSIS
 Restore a driveItem that has been deleted and is currently in the recycle bin.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Restore-MgDriveRoot](/powershell/module/Microsoft.Graph.Files/Restore-MgDriveRoot?view=graph-powershell-1.0)
@@ -45,7 +44,9 @@ Restore-MgBetaDriveRoot -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Restore a driveItem that has been deleted and is currently in the recycle bin.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-restore-permissions.md)]
 
 ## PARAMETERS
 
@@ -280,5 +281,6 @@ For OneDrive, this property is not populated.
 [Restore-MgDriveRoot](/powershell/module/Microsoft.Graph.Files/Restore-MgDriveRoot?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetadriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetadriveroot)
+
 
 

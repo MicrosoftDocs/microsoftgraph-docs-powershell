@@ -10,7 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Release a custodian from a case.
 For details, see Release a custodian from a case.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -29,7 +28,6 @@ Publish-MgBetaComplianceEdiscoveryCaseCustodian -InputObject <IComplianceIdentit
 ## DESCRIPTION
 Release a custodian from a case.
 For details, see Release a custodian from a case.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Publish-MgBetaComplianceEdiscoveryCaseCustodian Cmdlet
@@ -171,4 +169,5 @@ INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/publish-mgbetacomplianceediscoverycasecustodian](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/publish-mgbetacomplianceediscoverycasecustodian)
+
 

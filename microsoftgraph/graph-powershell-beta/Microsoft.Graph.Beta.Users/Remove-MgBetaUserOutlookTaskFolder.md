@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Delete the specified Outlook task folder.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,9 @@ Remove-MgBetaUserOutlookTaskFolder -InputObject <IUsersIdentity> [-IfMatch <Stri
 
 ## DESCRIPTION
 Delete the specified Outlook task folder.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlooktaskfolder-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaUserOutlookTaskFolder Cmdlet
@@ -191,4 +192,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauseroutlooktaskfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauseroutlooktaskfolder)
+
 

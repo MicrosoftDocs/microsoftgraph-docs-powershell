@@ -9,7 +9,7 @@ ms.prod: groups
 # Get-MgGroupTransitiveMemberOf
 
 ## SYNOPSIS
-The groups that a group is a member of, either directly and through nested membership.
+The groups that a group is a member of, either directly or through nested membership.
 Nullable.
 
 > [!NOTE]
@@ -37,8 +37,11 @@ Get-MgGroupTransitiveMemberOf -InputObject <IGroupsIdentity> [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-The groups that a group is a member of, either directly and through nested membership.
+The groups that a group is a member of, either directly or through nested membership.
 Nullable.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-list-transitivememberof-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -324,4 +327,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Get-MgBetaGroupTransitiveMemberOf](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupTransitiveMemberOf?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouptransitivememberof](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouptransitivememberof)
+
 

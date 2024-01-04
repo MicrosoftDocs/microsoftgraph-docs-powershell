@@ -38,6 +38,9 @@ Get-MgBetaGroupSiteTermStoreGroupSet -InputObject <ISitesIdentity> [-ExpandPrope
 ## DESCRIPTION
 All sets under the group in a term \[store\].
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/termstore-group-list-sets-permissions.md)]
+
 ## PARAMETERS
 
 ### -All
@@ -336,5 +339,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgGroupSiteTermStoreGroupSet](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreGroupSet?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitetermstoregroupset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitetermstoregroupset)
+
 
 

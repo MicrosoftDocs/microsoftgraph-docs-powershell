@@ -9,7 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Apply approve or deny decision on an approvalStep object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -46,7 +45,6 @@ Update-MgBetaEntitlementManagementAccessPackageAssignmentApprovalStep
 
 ## DESCRIPTION
 Apply approve or deny decision on an approvalStep object.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaEntitlementManagementAccessPackageAssignmentApprovalStep Cmdlet
@@ -449,4 +447,5 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementaccesspackageassignmentapprovalstep](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementaccesspackageassignmentapprovalstep)
+
 

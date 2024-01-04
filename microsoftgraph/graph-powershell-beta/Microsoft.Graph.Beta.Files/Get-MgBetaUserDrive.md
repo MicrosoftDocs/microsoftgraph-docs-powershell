@@ -40,6 +40,9 @@ Get-MgBetaUserDrive -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [
 A collection of drives available for this user.
 Read-only.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/drive-list-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserDrive Cmdlet
 ```powershell
@@ -301,4 +304,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgUserDrive](/powershell/module/Microsoft.Graph.Files/Get-MgUserDrive?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrive)
+
 

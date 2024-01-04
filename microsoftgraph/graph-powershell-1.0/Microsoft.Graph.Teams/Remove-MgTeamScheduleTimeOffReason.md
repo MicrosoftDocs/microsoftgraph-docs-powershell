@@ -13,7 +13,6 @@ Mark a timeOffReason as inactive by setting the isActive property.
 Every team must include at least one timeoff reason.
 This method doesn't remove the specified timeOffReason instance.
 timeOffItem instances that have been assigned this reason remain assigned to this reason.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamScheduleTimeOffReason?view=graph-powershell-beta)
@@ -37,7 +36,9 @@ Mark a timeOffReason as inactive by setting the isActive property.
 Every team must include at least one timeoff reason.
 This method doesn't remove the specified timeOffReason instance.
 timeOffItem instances that have been assigned this reason remain assigned to this reason.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/timeoffreason-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -214,4 +215,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Remove-MgBetaTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamScheduleTimeOffReason?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamscheduletimeoffreason](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamscheduletimeoffreason)
+
 

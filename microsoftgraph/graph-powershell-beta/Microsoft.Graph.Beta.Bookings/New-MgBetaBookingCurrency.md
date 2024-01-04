@@ -154,3 +154,4 @@ For example, the currency symbol for the US dollar and for the Australian dollar
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingcurrency](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingcurrency)
 
 
+

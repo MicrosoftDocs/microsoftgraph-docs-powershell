@@ -10,7 +10,6 @@ ms.prod: microsoft-teams
 
 ## SYNOPSIS
 Removes (unpins) a tab from the specified channel within a team.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamPrimaryChannelTab?view=graph-powershell-beta)
@@ -31,7 +30,6 @@ Remove-MgTeamPrimaryChannelTab -InputObject <ITeamsIdentity> [-IfMatch <String>]
 
 ## DESCRIPTION
 Removes (unpins) a tab from the specified channel within a team.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
@@ -197,4 +195,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Remove-MgBetaTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamPrimaryChannelTab?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamprimarychanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamprimarychanneltab)
+
 

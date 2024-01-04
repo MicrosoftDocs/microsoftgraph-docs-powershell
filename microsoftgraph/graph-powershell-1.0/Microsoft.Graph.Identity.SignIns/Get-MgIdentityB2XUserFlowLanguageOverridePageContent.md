@@ -32,6 +32,9 @@ Get-MgIdentityB2XUserFlowLanguageOverridePageContent -InputObject <IIdentitySign
 ## DESCRIPTION
 Get media content for the navigation property overridesPages from identity
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userflowlanguageconfiguration-list-overridespages-permissions.md)]
+
 ## EXAMPLES
 
 ## PARAMETERS
@@ -203,4 +206,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 [Get-MgBetaIdentityB2XUserFlowLanguageOverridePageContent](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityB2XUserFlowLanguageOverridePageContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowlanguageoverridepagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowlanguageoverridepagecontent)
+
 

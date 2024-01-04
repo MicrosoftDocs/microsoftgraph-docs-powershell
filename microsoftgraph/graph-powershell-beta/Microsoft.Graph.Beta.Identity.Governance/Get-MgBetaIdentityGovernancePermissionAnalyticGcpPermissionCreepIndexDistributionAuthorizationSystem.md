@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaIdentityGovernancePermissionAnalyticGcpPermissionCreepIndexDistributionAuthorizationSystem
 
 ## SYNOPSIS
-Get authorizationSystem from identityGovernance
+Represents an authorization system onboarded to Permissions Management.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Get-MgBetaIdentityGovernancePermissionAnalyticGcpPermissionCreepIndexDistributio
 ```
 
 ## DESCRIPTION
-Get authorizationSystem from identityGovernance
+Represents an authorization system onboarded to Permissions Management.
 
 ## PARAMETERS
 
@@ -211,5 +211,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancepermissionanalyticgcppermissioncreepindexdistributionauthorizationsystem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancepermissionanalyticgcppermissioncreepindexdistributionauthorizationsystem)
+
 
 

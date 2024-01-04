@@ -10,7 +10,6 @@ ms.prod: people
 
 ## SYNOPSIS
 Deletes an itemAddress object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,9 @@ Remove-MgBetaUserProfileAddress -InputObject <IPeopleIdentity> [-IfMatch <String
 
 ## DESCRIPTION
 Deletes an itemAddress object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/itemaddress-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaUserProfileAddress Cmdlet
@@ -190,4 +191,5 @@ INPUTOBJECT \<IPeopleIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofileaddress](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofileaddress)
+
 

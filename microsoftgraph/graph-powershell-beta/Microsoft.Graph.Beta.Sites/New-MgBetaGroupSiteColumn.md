@@ -9,8 +9,7 @@ ms.prod: sites-and-lists
 # New-MgBetaGroupSiteColumn
 
 ## SYNOPSIS
-Create a column for a site\]\[site\] by specifying a \[columnDefinition\]\[columnDefinition\].
-This API is available in the following \[national cloud deployments.
+Create a column for a \[site\]\[site\] by specifying a \[columnDefinition\]\[columnDefinition\].
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgGroupSiteColumn](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteColumn?view=graph-powershell-1.0)
@@ -62,8 +61,10 @@ New-MgBetaGroupSiteColumn -InputObject <ISitesIdentity> -BodyParameter <IMicroso
 ```
 
 ## DESCRIPTION
-Create a column for a site\]\[site\] by specifying a \[columnDefinition\]\[columnDefinition\].
-This API is available in the following \[national cloud deployments.
+Create a column for a \[site\]\[site\] by specifying a \[columnDefinition\]\[columnDefinition\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-post-columns-permissions.md)]
 
 ## PARAMETERS
 
@@ -810,8 +811,8 @@ Read-only.
       \[LastModifiedDateTime \<DateTime?\>\]: Last date and time of term modification.
 Read-only.
       \[Properties \<IMicrosoftGraphKeyValue\[\]\>\]: Collection of properties on the term.
-        \[Key \<String\>\]: Contains the name of the field that a value is associated with.
-        \[Value \<String\>\]: Contains the corresponding value for the specified key.
+        \[Key \<String\>\]: Key.
+        \[Value \<String\>\]: Value.
       \[Relations \<IMicrosoftGraphTermStoreRelation\[\]\>\]: To indicate which terms are related to the current term as either pinned or reused.
         \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
@@ -1087,8 +1088,8 @@ Read-only.
       \[LastModifiedDateTime \<DateTime?\>\]: Last date and time of term modification.
 Read-only.
       \[Properties \<IMicrosoftGraphKeyValue\[\]\>\]: Collection of properties on the term.
-        \[Key \<String\>\]: Contains the name of the field that a value is associated with.
-        \[Value \<String\>\]: Contains the corresponding value for the specified key.
+        \[Key \<String\>\]: Key.
+        \[Value \<String\>\]: Value.
       \[Relations \<IMicrosoftGraphTermStoreRelation\[\]\>\]: To indicate which terms are related to the current term as either pinned or reused.
         \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
@@ -1169,8 +1170,8 @@ Read-only.
     \[LastModifiedDateTime \<DateTime?\>\]: Last date and time of term modification.
 Read-only.
     \[Properties \<IMicrosoftGraphKeyValue\[\]\>\]: Collection of properties on the term.
-      \[Key \<String\>\]: Contains the name of the field that a value is associated with.
-      \[Value \<String\>\]: Contains the corresponding value for the specified key.
+      \[Key \<String\>\]: Key.
+      \[Value \<String\>\]: Value.
     \[Relations \<IMicrosoftGraphTermStoreRelation\[\]\>\]: To indicate which terms are related to the current term as either pinned or reused.
       \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
@@ -1229,5 +1230,6 @@ For examples, see Examples of common formulas in lists
 [New-MgGroupSiteColumn](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitecolumn)
+
 
 

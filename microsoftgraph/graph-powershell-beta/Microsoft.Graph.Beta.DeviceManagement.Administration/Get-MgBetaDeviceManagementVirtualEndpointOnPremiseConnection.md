@@ -11,7 +11,6 @@ ms.prod: cloud-pc
 
 ## SYNOPSIS
 Read the properties and relationships of the cloudPcOnPremisesConnection object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -37,7 +36,12 @@ Get-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection
 
 ## DESCRIPTION
 Read the properties and relationships of the cloudPcOnPremisesConnection object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpconpremisesconnection-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-list-onpremisesconnections-permissions.md)]
 
 ## PARAMETERS
 
@@ -300,5 +304,6 @@ INPUTOBJECT \<IDeviceManagementAdministrationIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointonpremiseconnection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointonpremiseconnection)
+
 
 

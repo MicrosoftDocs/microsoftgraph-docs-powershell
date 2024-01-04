@@ -384,3 +384,4 @@ JOURNALLINES \<IMicrosoftGraphJournalLine\[\]\>: .
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanyjournal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanyjournal)
 
 
+

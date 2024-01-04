@@ -11,7 +11,6 @@ ms.prod: people
 
 ## SYNOPSIS
 Read the properties and relationships of an itemPublication object in a user's profile.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -36,7 +35,12 @@ Get-MgBetaUserProfilePublication -InputObject <IPeopleIdentity> [-ExpandProperty
 
 ## DESCRIPTION
 Read the properties and relationships of an itemPublication object in a user's profile.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/itempublication-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/profile-list-publications-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserProfilePublication Cmdlet
@@ -297,4 +301,5 @@ INPUTOBJECT \<IPeopleIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilepublication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilepublication)
+
 

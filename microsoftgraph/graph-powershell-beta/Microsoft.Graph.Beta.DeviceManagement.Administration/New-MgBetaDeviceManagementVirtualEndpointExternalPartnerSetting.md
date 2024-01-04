@@ -10,7 +10,6 @@ ms.prod: cloud-pc
 
 ## SYNOPSIS
 Create a new cloudPcExternalPartnerSetting object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -29,7 +28,9 @@ New-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting
 
 ## DESCRIPTION
 Create a new cloudPcExternalPartnerSetting object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-post-externalpartnersettings-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting Cmdlet
@@ -238,4 +239,5 @@ For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointexternalpartnersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointexternalpartnersetting)
+
 

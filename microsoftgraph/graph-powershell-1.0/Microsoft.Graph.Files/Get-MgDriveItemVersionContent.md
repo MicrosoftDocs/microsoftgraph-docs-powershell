@@ -30,6 +30,9 @@ Get-MgDriveItemVersionContent -InputObject <IFilesIdentity> -OutFile <String> [-
 ## DESCRIPTION
 The content stream for this version of the item.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-list-versions-permissions.md)]
+
 ## EXAMPLES
 
 ## PARAMETERS
@@ -170,4 +173,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgBetaDriveItemVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemVersionContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemversioncontent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemversioncontent)
+
 

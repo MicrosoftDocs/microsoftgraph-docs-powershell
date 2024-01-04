@@ -10,7 +10,6 @@ ms.prod: insights
 
 ## SYNOPSIS
 Get the properties of an insightsSettings object for displaying or returning contact insights in an organization.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,9 @@ Get-MgBetaOrganizationSettingContactInsight -InputObject <IIdentityDirectoryMana
 
 ## DESCRIPTION
 Get the properties of an insightsSettings object for displaying or returning contact insights in an organization.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/organizationsettings-list-contactinsights-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaOrganizationSettingContactInsight Cmdlet
@@ -165,4 +166,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationsettingcontactinsight](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationsettingcontactinsight)
+
 

@@ -10,7 +10,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Delete an identityApiConnector object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaIdentityApiConnector](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityApiConnector?view=graph-powershell-beta)
@@ -31,7 +30,9 @@ Remove-MgIdentityApiConnector -InputObject <IIdentitySignInsIdentity> [-IfMatch 
 
 ## DESCRIPTION
 Delete an identityApiConnector object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identityapiconnector-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -216,4 +217,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 [Remove-MgBetaIdentityApiConnector](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityApiConnector?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityapiconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityapiconnector)
+
 

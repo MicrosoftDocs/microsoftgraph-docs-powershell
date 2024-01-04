@@ -9,8 +9,7 @@ ms.prod: sharepoint
 # Update-MgUserDriveItemListItemField
 
 ## SYNOPSIS
-Update the properties on a listItem\]\[\].
-This API is available in the following \[national cloud deployments.
+Update the properties on a \[listItem\]\[\].
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserDriveItemListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveItemListItemField?view=graph-powershell-beta)
@@ -42,8 +41,10 @@ Update-MgUserDriveItemListItemField -InputObject <IFilesIdentity> -BodyParameter
 ```
 
 ## DESCRIPTION
-Update the properties on a listItem\]\[\].
-This API is available in the following \[national cloud deployments.
+Update the properties on a \[listItem\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-update-permissions.md)]
 
 ## PARAMETERS
 
@@ -231,5 +232,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Update-MgBetaUserDriveItemListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveItemListItemField?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriveitemlistitemfield](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriveitemlistitemfield)
+
 
 

@@ -17,7 +17,6 @@ Cloning is a long-running operation.
 After the POST clone returns, you need to GET the operation returned by the Location: header to see if it's running, succeeded, or failed.
 You should continue to GET until the status isn't running.
 The recommended delay between GETs is 5 seconds.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Copy-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Copy-MgBetaTeam?view=graph-powershell-beta)
@@ -61,7 +60,6 @@ Cloning is a long-running operation.
 After the POST clone returns, you need to GET the operation returned by the Location: header to see if it's running, succeeded, or failed.
 You should continue to GET until the status isn't running.
 The recommended delay between GETs is 5 seconds.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -347,4 +345,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Copy-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Copy-MgBetaTeam?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/copy-mgteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/copy-mgteam)
+
 

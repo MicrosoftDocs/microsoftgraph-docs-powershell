@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Create a new mailSearchFolder in the specified user's mailbox.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolderChildFolder?view=graph-powershell-beta)
@@ -53,7 +52,9 @@ New-MgUserMailFolderChildFolder -InputObject <IMailIdentity> -BodyParameter <IMi
 
 ## DESCRIPTION
 Create a new mailSearchFolder in the specified user's mailbox.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/mailsearchfolder-post-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -885,4 +886,5 @@ Read-only.
 [New-MgBetaUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolderChildFolder?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolderchildfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolderchildfolder)
+
 

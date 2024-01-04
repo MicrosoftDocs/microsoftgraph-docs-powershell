@@ -10,7 +10,6 @@ ms.prod: cloud-communications
 
 ## SYNOPSIS
 Allow applications to share screen content with the participants of a group call.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Rename-MgCommunicationCallScreenSharingRole](/powershell/module/Microsoft.Graph.CloudCommunications/Rename-MgCommunicationCallScreenSharingRole?view=graph-powershell-1.0)
@@ -45,7 +44,9 @@ Rename-MgBetaCommunicationCallScreenSharingRole -InputObject <ICloudCommunicatio
 
 ## DESCRIPTION
 Allow applications to share screen content with the participants of a group call.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-changescreensharingrole-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Rename-MgBetaCommunicationCallScreenSharingRole Cmdlet
@@ -228,4 +229,5 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
 [Rename-MgCommunicationCallScreenSharingRole](/powershell/module/Microsoft.Graph.CloudCommunications/Rename-MgCommunicationCallScreenSharingRole?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/rename-mgbetacommunicationcallscreensharingrole](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/rename-mgbetacommunicationcallscreensharingrole)
+
 

@@ -8,8 +8,7 @@ schema: 2.0.0
 # Unpublish-MgBetaGroupSiteContentType
 
 ## SYNOPSIS
-Unpublish a contentType\]\[\] from a content type hub site.
-This API is available in the following \[national cloud deployments.
+Unpublish a \[contentType\]\[\] from a content type hub site.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Unpublish-MgGroupSiteContentType](/powershell/module/Microsoft.Graph.Groups/Unpublish-MgGroupSiteContentType?view=graph-powershell-1.0)
@@ -29,8 +28,7 @@ Unpublish-MgBetaGroupSiteContentType -InputObject <IGroupsIdentity> [-PassThru] 
 ```
 
 ## DESCRIPTION
-Unpublish a contentType\]\[\] from a content type hub site.
-This API is available in the following \[national cloud deployments.
+Unpublish a \[contentType\]\[\] from a content type hub site.
 
 ## PARAMETERS
 
@@ -203,5 +201,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Unpublish-MgGroupSiteContentType](/powershell/module/Microsoft.Graph.Groups/Unpublish-MgGroupSiteContentType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/unpublish-mgbetagroupsitecontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/unpublish-mgbetagroupsitecontenttype)
+
 
 

@@ -14,7 +14,6 @@ This creates a localized branding and at the same time, the default branding if 
 The default branding is created only once.
 It's loaded when a localized branding isn't configured for the user's browser language.
 To retrieve the default branding, see Get branding.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaOrganizationBrandingLocalization?view=graph-powershell-beta)
@@ -74,7 +73,9 @@ This creates a localized branding and at the same time, the default branding if 
 The default branding is created only once.
 It's loaded when a localized branding isn't configured for the user's browser language.
 To retrieve the default branding, see Get branding.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organizationalbranding-post-localizations-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -755,4 +756,5 @@ LOGINPAGETEXTVISIBILITYSETTINGS \<IMicrosoftGraphLoginPageTextVisibilitySettings
 [New-MgBetaOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaOrganizationBrandingLocalization?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgorganizationbrandinglocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgorganizationbrandinglocalization)
+
 

@@ -143,3 +143,4 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipallicensedetailcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipallicensedetailcount)
 
 
+

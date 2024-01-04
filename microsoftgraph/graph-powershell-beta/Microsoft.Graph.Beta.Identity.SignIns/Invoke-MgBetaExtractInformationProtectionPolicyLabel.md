@@ -11,7 +11,6 @@ ms.prod: security
 ## SYNOPSIS
 Using the metadata that exists on an already-labeled piece of information, resolve the metadata to a specific sensitivity label.
 The contentInfo input is resolved to informationProtectionContentLabel.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -31,7 +30,9 @@ Invoke-MgBetaExtractInformationProtectionPolicyLabel
 ## DESCRIPTION
 Using the metadata that exists on an already-labeled piece of information, resolve the metadata to a specific sensitivity label.
 The contentInfo input is resolved to informationProtectionContentLabel.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/informationprotectionlabel-extractlabel-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgBetaExtractInformationProtectionPolicyLabel Cmdlet
@@ -208,4 +209,5 @@ CONTENTINFO \<IMicrosoftGraphContentInfo\>: contentInfo
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetaextractinformationprotectionpolicylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetaextractinformationprotectionpolicylabel)
+
 

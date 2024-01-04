@@ -204,3 +204,4 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/confirm-mgapplicationmemberobject](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/confirm-mgapplicationmemberobject)
 
 
+

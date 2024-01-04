@@ -10,7 +10,6 @@ ms.prod: industry-data-etl
 
 ## SYNOPSIS
 Delete a sourceSystemDefinition object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,9 @@ Remove-MgBetaExternalIndustryDataSourceSystem -InputObject <ISearchIdentity> [-I
 
 ## DESCRIPTION
 Delete a sourceSystemDefinition object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-sourcesystemdefinition-delete-permissions.md)]
 
 ## PARAMETERS
 
@@ -163,5 +164,6 @@ INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalindustrydatasourcesystem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalindustrydatasourcesystem)
+
 
 

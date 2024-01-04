@@ -10,7 +10,6 @@ ms.prod: sites-and-lists
 
 ## SYNOPSIS
 Delete a version of a document set in a list.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgUserDriveItemListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/Remove-MgUserDriveItemListItemDocumentSetVersion?view=graph-powershell-1.0)
@@ -32,7 +31,9 @@ Remove-MgBetaUserDriveItemListItemDocumentSetVersion -InputObject <IFilesIdentit
 
 ## DESCRIPTION
 Delete a version of a document set in a list.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/documentsetversion-delete-permissions.md)]
 
 ## PARAMETERS
 
@@ -218,5 +219,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Remove-MgUserDriveItemListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/Remove-MgUserDriveItemListItemDocumentSetVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetauserdriveitemlistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetauserdriveitemlistitemdocumentsetversion)
+
 
 

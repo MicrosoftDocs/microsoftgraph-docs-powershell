@@ -4,7 +4,7 @@ Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermessage
 schema: 2.0.0
 ms.prod: extensions
-ms.prod: extensions
+ms.prod: non-product-specific
 ---
 
 # Get-MgUserMessage
@@ -336,4 +336,5 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
 [Get-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermessage)
+
 

@@ -152,3 +152,4 @@ INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectionitemactivityperformedby](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectionitemactivityperformedby)
 
 
+

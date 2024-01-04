@@ -10,7 +10,6 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Remove a Microsoft Entra role assignment with administrative unit scope.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgDirectoryAdministrativeUnitScopedRoleMember](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryAdministrativeUnitScopedRoleMember?view=graph-powershell-1.0)
@@ -31,7 +30,9 @@ Remove-MgBetaDirectoryAdministrativeUnitScopedRoleMember -InputObject <IIdentity
 
 ## DESCRIPTION
 Remove a Microsoft Entra role assignment with administrative unit scope.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/administrativeunit-delete-scopedrolemembers-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -219,4 +220,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 [Remove-MgDirectoryAdministrativeUnitScopedRoleMember](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryAdministrativeUnitScopedRoleMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryadministrativeunitscopedrolemember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryadministrativeunitscopedrolemember)
+
 

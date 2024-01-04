@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Update the properties of contact object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgUserContact](/powershell/module/Microsoft.Graph.PersonalContacts/Update-MgUserContact?view=graph-powershell-1.0)
@@ -69,7 +68,9 @@ Update-MgBetaUserContact -InputObject <IPersonalContactsIdentity> -BodyParameter
 
 ## DESCRIPTION
 Update the properties of contact object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contact-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -1059,4 +1060,5 @@ WEBSITES \<IMicrosoftGraphWebsite\[\]\>: .
 [Update-MgUserContact](/powershell/module/Microsoft.Graph.PersonalContacts/Update-MgUserContact?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/update-mgbetausercontact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/update-mgbetausercontact)
+
 

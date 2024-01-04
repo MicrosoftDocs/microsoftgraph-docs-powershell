@@ -10,7 +10,6 @@ ms.prod: business-scenarios
 
 ## SYNOPSIS
 Create a new businessScenario object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -31,7 +30,9 @@ New-MgBetaBusinessScenario -BodyParameter <IMicrosoftGraphBusinessScenario> [-Wh
 
 ## DESCRIPTION
 Create a new businessScenario object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/solutionsroot-post-businessscenarios-permissions.md)]
 
 ## PARAMETERS
 
@@ -266,9 +267,9 @@ Read-only.
     \[Application \<IMicrosoftGraphIdentity\>\]: identity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-This might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      \[Id \<String\>\]: Unique identifier for the identity.
+This property is read-only.
+      \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
     \[Device \<IMicrosoftGraphIdentity\>\]: identity
     \[User \<IMicrosoftGraphIdentity\>\]: identity
   \[CreatedDateTime \<DateTime?\>\]: The date and time when the scenario was created.
@@ -530,9 +531,9 @@ CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
   \[Application \<IMicrosoftGraphIdentity\>\]: identity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-This might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity.
+This property is read-only.
+    \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
   \[Device \<IMicrosoftGraphIdentity\>\]: identity
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
@@ -541,9 +542,9 @@ LASTMODIFIEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
   \[Application \<IMicrosoftGraphIdentity\>\]: identity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-This might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity.
+This property is read-only.
+    \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
   \[Device \<IMicrosoftGraphIdentity\>\]: identity
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
@@ -562,9 +563,9 @@ Read-only.
       \[Application \<IMicrosoftGraphIdentity\>\]: identity
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[DisplayName \<String\>\]: The display name of the identity.
-This might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        \[Id \<String\>\]: Unique identifier for the identity.
+This property is read-only.
+        \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
       \[Device \<IMicrosoftGraphIdentity\>\]: identity
       \[User \<IMicrosoftGraphIdentity\>\]: identity
     \[CreatedDateTime \<DateTime?\>\]: The date and time when the plan configuration was created.
@@ -801,5 +802,6 @@ Optional.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabusinessscenario](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabusinessscenario)
+
 
 

@@ -14,7 +14,6 @@ Only teachers and students can perform this operation.
 If the resource was copied from the assignment, a new copy of the resource will be created after the current copy is deleted.
 This allows you to 'reset' the resource to its original state.
 If the resource wasn't copied from the assignment but was added from the student, the resource is deleted.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgEducationMeAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationMeAssignmentSubmissionResource?view=graph-powershell-1.0)
@@ -40,7 +39,9 @@ Only teachers and students can perform this operation.
 If the resource was copied from the assignment, a new copy of the resource will be created after the current copy is deleted.
 This allows you to 'reset' the resource to its original state.
 If the resource wasn't copied from the assignment but was added from the student, the resource is deleted.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsubmissionresource-delete-permissions.md)]
 
 ## PARAMETERS
 
@@ -204,5 +205,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 [Remove-MgEducationMeAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationMeAssignmentSubmissionResource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationmeassignmentsubmissionresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationmeassignmentsubmissionresource)
+
 
 

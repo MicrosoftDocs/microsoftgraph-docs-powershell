@@ -35,6 +35,9 @@ Get-MgBetaAccessReviewDecision -InputObject <IIdentityGovernanceIdentity> [-Expa
 ## DESCRIPTION
 The collection of decisions for this access review.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreview-listdecisions-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaAccessReviewDecision Cmdlet
 ```powershell
@@ -362,4 +365,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaaccessreviewdecision](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaaccessreviewdecision)
+
 

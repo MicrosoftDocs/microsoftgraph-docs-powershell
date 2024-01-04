@@ -231,6 +231,7 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
   \[MicrosoftTunnelSiteId \<String\>\]: The unique identifier of microsoftTunnelSite
   \[MobileAppTroubleshootingEventId \<String\>\]: The unique identifier of mobileAppTroubleshootingEvent
   \[NotificationMessageTemplateId \<String\>\]: The unique identifier of notificationMessageTemplate
+  \[PrivilegeManagementElevationRequestId \<String\>\]: The unique identifier of privilegeManagementElevationRequest
   \[RemoteAssistancePartnerId \<String\>\]: The unique identifier of remoteAssistancePartner
   \[RoleScopeTagId \<String\>\]: The unique identifier of roleScopeTag
   \[WindowsAutopilotDeploymentProfileId \<String\>\]: The unique identifier of windowsAutopilotDeploymentProfile
@@ -243,5 +244,6 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/set-mgbetadevicemanagementmanageddevicename](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/set-mgbetadevicemanagementmanageddevicename)
+
 
 

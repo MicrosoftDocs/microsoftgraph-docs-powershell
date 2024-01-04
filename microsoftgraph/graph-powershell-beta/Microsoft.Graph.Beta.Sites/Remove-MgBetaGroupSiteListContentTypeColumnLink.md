@@ -256,3 +256,4 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitelistcontenttypecolumnlink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitelistcontenttypecolumnlink)
 
 
+

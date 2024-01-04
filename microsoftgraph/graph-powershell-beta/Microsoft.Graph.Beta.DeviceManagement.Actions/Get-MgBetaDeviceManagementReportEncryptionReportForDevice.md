@@ -291,3 +291,4 @@ BODYPARAMETER \<IPaths1Hamjq6DevicemanagementReportsMicrosoftGraphGetencryptionr
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportencryptionreportfordevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportencryptionreportfordevice)
 
 
+

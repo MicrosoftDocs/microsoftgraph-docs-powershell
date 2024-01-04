@@ -11,7 +11,6 @@ ms.prod: people
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a personAnniversary object in a user's profile.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -36,7 +35,12 @@ Get-MgBetaUserProfileAnniversary -InputObject <IPeopleIdentity> [-ExpandProperty
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a personAnniversary object in a user's profile.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/personanniversary-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/profile-list-anniversaries-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserProfileAnniversary Cmdlet
@@ -297,4 +301,5 @@ INPUTOBJECT \<IPeopleIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileanniversary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileanniversary)
+
 

@@ -12,7 +12,6 @@ ms.prod: microsoft-teams
 Delete an app from an organization's app catalog (the tenant app catalog).
 To delete an app, the distributionMethod property for the app must be set to organization.
 You can also use this API to remove a submitted app from the review process.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaAppCatalogTeamApp](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaAppCatalogTeamApp?view=graph-powershell-beta)
@@ -35,7 +34,6 @@ Remove-MgAppCatalogTeamApp -InputObject <ITeamsIdentity> [-IfMatch <String>] [-P
 Delete an app from an organization's app catalog (the tenant app catalog).
 To delete an app, the distributionMethod property for the app must be set to organization.
 You can also use this API to remove a submitted app from the review process.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -197,4 +195,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Remove-MgBetaAppCatalogTeamApp](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaAppCatalogTeamApp?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgappcatalogteamapp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgappcatalogteamapp)
+
 

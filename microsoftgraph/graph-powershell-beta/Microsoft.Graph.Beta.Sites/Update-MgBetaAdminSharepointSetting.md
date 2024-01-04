@@ -10,7 +10,6 @@ ms.prod: files
 
 ## SYNOPSIS
 Update one or more tenant-level settings for SharePoint and OneDrive.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgAdminSharepointSetting](/powershell/module/Microsoft.Graph.Sites/Update-MgAdminSharepointSetting?view=graph-powershell-1.0)
@@ -42,7 +41,9 @@ Update-MgBetaAdminSharepointSetting -BodyParameter <IMicrosoftGraphSharepointSet
 
 ## DESCRIPTION
 Update one or more tenant-level settings for SharePoint and OneDrive.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/sharepointsettings-update-permissions.md)]
 
 ## PARAMETERS
 
@@ -633,5 +634,6 @@ IDLESESSIONSIGNOUT \<IMicrosoftGraphIdleSessionSignOut\>: idleSessionSignOut
 [Update-MgAdminSharepointSetting](/powershell/module/Microsoft.Graph.Sites/Update-MgAdminSharepointSetting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetaadminsharepointsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetaadminsharepointsetting)
+
 
 

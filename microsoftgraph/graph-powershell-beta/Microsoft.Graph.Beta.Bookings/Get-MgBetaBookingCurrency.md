@@ -12,7 +12,6 @@ ms.prod: bookings
 ## SYNOPSIS
 Get the properties of a bookingCurrency object that is available to a Microsoft Bookings business.
 Use the id property, which is the currency code, to specify the currency.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgBookingCurrency](/powershell/module/Microsoft.Graph.Bookings/Get-MgBookingCurrency?view=graph-powershell-1.0)
@@ -41,7 +40,12 @@ Get-MgBetaBookingCurrency -InputObject <IBookingsIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 Get the properties of a bookingCurrency object that is available to a Microsoft Bookings business.
 Use the id property, which is the currency code, to specify the currency.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingcurrency-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingcurrency-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaBookingCurrency Cmdlet
@@ -269,11 +273,7 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[BookingStaffMemberId \<String\>\]: The unique identifier of bookingStaffMember
   \[BusinessScenarioId \<String\>\]: The unique identifier of businessScenario
   \[BusinessScenarioTaskId \<String\>\]: The unique identifier of businessScenarioTask
-  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
-  \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
   \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
-  \[MeetingRegistrantBaseId \<String\>\]: The unique identifier of meetingRegistrantBase
-  \[MeetingRegistrationQuestionId \<String\>\]: The unique identifier of meetingRegistrationQuestion
   \[PlannerPlanConfigurationLocalizationId \<String\>\]: The unique identifier of plannerPlanConfigurationLocalization
   \[Role \<String\>\]: Usage: role='{role}'
   \[UserId \<String\>\]: Usage: userId='{userId}'
@@ -281,10 +281,12 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[VirtualEventPresenterId \<String\>\]: The unique identifier of virtualEventPresenter
   \[VirtualEventRegistrationId \<String\>\]: The unique identifier of virtualEventRegistration
   \[VirtualEventSessionId \<String\>\]: The unique identifier of virtualEventSession
+  \[VirtualEventTownhallId \<String\>\]: The unique identifier of virtualEventTownhall
   \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
 [Get-MgBookingCurrency](/powershell/module/Microsoft.Graph.Bookings/Get-MgBookingCurrency?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingcurrency](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingcurrency)
+
 

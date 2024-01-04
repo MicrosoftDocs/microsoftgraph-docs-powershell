@@ -367,7 +367,7 @@ Supports $filter (eq).
 Read-only.
       \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-    \[IdentitySources \<IMicrosoftGraphIdentitySource\[\]\>\]: The identity sources in this connected organization, one of azureActiveDirectoryTenant, crossCloudAzureActiveDirectoryTenant, domainIdentitySource or externalDomainFederation.
+    \[IdentitySources \<IMicrosoftGraphIdentitySource\[\]\>\]: The identity sources in this connected organization, one of azureActiveDirectoryTenant, crossCloudAzureActiveDirectoryTenant, domainIdentitySource, externalDomainFederation, or socialIdentitySource.
 Read-only.
 Nullable.
 Supports $select and $filter(eq).
@@ -407,7 +407,7 @@ Supports $filter (eq).
 Read-only.
     \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  \[IdentitySources \<IMicrosoftGraphIdentitySource\[\]\>\]: The identity sources in this connected organization, one of azureActiveDirectoryTenant, crossCloudAzureActiveDirectoryTenant, domainIdentitySource or externalDomainFederation.
+  \[IdentitySources \<IMicrosoftGraphIdentitySource\[\]\>\]: The identity sources in this connected organization, one of azureActiveDirectoryTenant, crossCloudAzureActiveDirectoryTenant, domainIdentitySource, externalDomainFederation, or socialIdentitySource.
 Read-only.
 Nullable.
 Supports $select and $filter(eq).
@@ -524,5 +524,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementsubject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementsubject)
+
 
 

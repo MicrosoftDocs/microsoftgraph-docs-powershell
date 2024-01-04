@@ -11,7 +11,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Read the properties and relationships of a checklistItem object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserTodoTaskChecklistItem](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTaskChecklistItem?view=graph-powershell-beta)
@@ -39,7 +38,12 @@ Get-MgUserTodoTaskChecklistItem -InputObject <IUsersIdentity> [-ExpandProperty <
 
 ## DESCRIPTION
 Read the properties and relationships of a checklistItem object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/checklistitem-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/todotask-list-checklistitems-permissions.md)]
 
 ## PARAMETERS
 
@@ -304,5 +308,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Get-MgBetaUserTodoTaskChecklistItem](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTaskChecklistItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskchecklistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskchecklistitem)
+
 
 

@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Create a new task object in a specified todoTaskList.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgUserTodoListTask](/powershell/module/Microsoft.Graph.Users/New-MgUserTodoListTask?view=graph-powershell-1.0)
@@ -59,7 +58,9 @@ New-MgBetaUserTodoListTask -InputObject <IUsersIdentity> -BodyParameter <IMicros
 
 ## DESCRIPTION
 Create a new task object in a specified todoTaskList.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/todotasklist-post-tasks-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -795,4 +796,5 @@ See below for possible values.
 [New-MgUserTodoListTask](/powershell/module/Microsoft.Graph.Users/New-MgUserTodoListTask?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausertodolisttask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausertodolisttask)
+
 

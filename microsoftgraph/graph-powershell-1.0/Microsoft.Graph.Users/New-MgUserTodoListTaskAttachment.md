@@ -12,7 +12,6 @@ ms.prod: outlook
 Add a new taskFileAttachment object to a todoTask.
 This operation limits the size of the attachment you can add to under 3 MB.
 If the size of the file attachments is more than 3 MB, create an upload session to upload the attachments.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserTodoListTaskAttachment](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserTodoListTaskAttachment?view=graph-powershell-beta)
@@ -49,7 +48,9 @@ New-MgUserTodoListTaskAttachment -InputObject <IUsersIdentity> -BodyParameter <I
 Add a new taskFileAttachment object to a todoTask.
 This operation limits the size of the attachment you can add to under 3 MB.
 If the size of the file attachments is more than 3 MB, create an upload session to upload the attachments.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/todotask-post-attachments-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -321,4 +322,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [New-MgBetaUserTodoListTaskAttachment](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserTodoListTaskAttachment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusertodolisttaskattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusertodolisttaskattachment)
+
 

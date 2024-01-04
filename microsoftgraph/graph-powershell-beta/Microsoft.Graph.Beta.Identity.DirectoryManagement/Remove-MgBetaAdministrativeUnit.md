@@ -10,7 +10,6 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Delete an administrativeUnit.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,9 @@ Remove-MgBetaAdministrativeUnit -InputObject <IIdentityDirectoryManagementIdenti
 
 ## DESCRIPTION
 Delete an administrativeUnit.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/administrativeunit-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Remove an administrative unit
@@ -196,4 +197,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetaadministrativeunit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetaadministrativeunit)
+
 

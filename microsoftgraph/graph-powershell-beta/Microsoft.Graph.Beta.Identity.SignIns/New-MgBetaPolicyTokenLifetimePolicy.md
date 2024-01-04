@@ -10,7 +10,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Create a new tokenLifetimePolicy object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgPolicyTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyTokenLifetimePolicy?view=graph-powershell-1.0)
@@ -32,7 +31,9 @@ New-MgBetaPolicyTokenLifetimePolicy -BodyParameter <Hashtable> [-WhatIf] [-Confi
 
 ## DESCRIPTION
 Create a new tokenLifetimePolicy object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tokenlifetimepolicy-post-tokenlifetimepolicies-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -257,4 +258,5 @@ Always null when the object hasn't been deleted.
 [New-MgPolicyTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyTokenLifetimePolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicytokenlifetimepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicytokenlifetimepolicy)
+
 

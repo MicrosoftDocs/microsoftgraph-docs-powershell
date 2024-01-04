@@ -11,7 +11,6 @@ ms.prod: cloud-pc
 ## SYNOPSIS
 Delete a cloudPcProvisioningPolicy object.
 You can't delete a policy that's in use.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -31,7 +30,9 @@ Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy
 ## DESCRIPTION
 Delete a cloudPcProvisioningPolicy object.
 You can't delete a policy that's in use.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcprovisioningpolicy-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy Cmdlet
@@ -213,4 +214,5 @@ INPUTOBJECT \<IDeviceManagementAdministrationIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementvirtualendpointprovisioningpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementvirtualendpointprovisioningpolicy)
+
 

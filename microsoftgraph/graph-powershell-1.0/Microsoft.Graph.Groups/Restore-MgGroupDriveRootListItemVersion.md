@@ -10,7 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Restore a previous version of a ListItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the item.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Restore-MgBetaGroupDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Beta.Groups/Restore-MgBetaGroupDriveRootListItemVersion?view=graph-powershell-beta)
@@ -32,7 +31,6 @@ Restore-MgGroupDriveRootListItemVersion -InputObject <IGroupsIdentity> [-PassThr
 ## DESCRIPTION
 Restore a previous version of a ListItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the item.
-This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -199,5 +197,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Restore-MgBetaGroupDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Beta.Groups/Restore-MgBetaGroupDriveRootListItemVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/restore-mggroupdriverootlistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/restore-mggroupdriverootlistitemversion)
+
 
 

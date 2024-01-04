@@ -40,6 +40,9 @@ Get-MgBetaEducationMeAssignment -InputObject <IEducationIdentity> [-ExpandProper
 List of assignments for the user.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationuser-list-assignments-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Get the assignments of the logged in user
 
@@ -275,4 +278,5 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 [Get-MgEducationMeAssignment](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeassignment)
+
 

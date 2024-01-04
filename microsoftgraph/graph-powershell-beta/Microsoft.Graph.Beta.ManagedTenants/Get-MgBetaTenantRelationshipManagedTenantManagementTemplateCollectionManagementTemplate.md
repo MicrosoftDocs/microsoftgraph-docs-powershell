@@ -296,3 +296,4 @@ INPUTOBJECT \<IManagedTenantsIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantmanagementtemplatecollectionmanagementtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantmanagementtemplatecollectionmanagementtemplate)
 
 
+

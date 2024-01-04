@@ -9,8 +9,7 @@ ms.prod: identity-and-sign-in
 # Remove-MgIdentityConditionalAccessNamedLocation
 
 ## SYNOPSIS
-Delete a namedLocation object.
-This API is available in the following national cloud deployments.
+Delete an ipNamedLocation object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityConditionalAccessNamedLocation?view=graph-powershell-beta)
@@ -30,8 +29,7 @@ Remove-MgIdentityConditionalAccessNamedLocation -InputObject <IIdentitySignInsId
 ```
 
 ## DESCRIPTION
-Delete a namedLocation object.
-This API is available in the following national cloud deployments.
+Delete an ipNamedLocation object.
 
 ## EXAMPLES
 ### Example 1: Remove a named location
@@ -214,4 +212,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 [Remove-MgBetaIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityConditionalAccessNamedLocation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityconditionalaccessnamedlocation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityconditionalaccessnamedlocation)
+
 

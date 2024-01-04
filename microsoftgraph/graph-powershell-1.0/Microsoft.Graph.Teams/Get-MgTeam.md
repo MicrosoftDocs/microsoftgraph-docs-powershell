@@ -11,7 +11,6 @@ ms.prod: microsoft-teams
 
 ## SYNOPSIS
 Retrieve the properties and relationships of the specified team.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeam?view=graph-powershell-beta)
@@ -38,7 +37,9 @@ Get-MgTeam -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Property
 
 ## DESCRIPTION
 Retrieve the properties and relationships of the specified team.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teams-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get a list of teams
@@ -312,4 +313,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Get-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeam?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteam)
+
 

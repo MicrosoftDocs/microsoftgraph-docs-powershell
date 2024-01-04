@@ -9,8 +9,7 @@ ms.prod: sites-and-lists
 # New-MgBetaGroupSiteListContentTypeColumn
 
 ## SYNOPSIS
-Add a column to a content type\]\[contentType\] in a site or list by specifying a \[columnDefinition\]\[columnDefinition\].
-This API is available in the following \[national cloud deployments.
+Add a column to a \[content type\]\[contentType\] in a site or list by specifying a \[columnDefinition\]\[columnDefinition\].
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgGroupSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteListContentTypeColumn?view=graph-powershell-1.0)
@@ -63,8 +62,10 @@ New-MgBetaGroupSiteListContentTypeColumn -InputObject <ISitesIdentity>
 ```
 
 ## DESCRIPTION
-Add a column to a content type\]\[contentType\] in a site or list by specifying a \[columnDefinition\]\[columnDefinition\].
-This API is available in the following \[national cloud deployments.
+Add a column to a \[content type\]\[contentType\] in a site or list by specifying a \[columnDefinition\]\[columnDefinition\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-post-columns-permissions.md)]
 
 ## PARAMETERS
 
@@ -841,8 +842,8 @@ Read-only.
       \[LastModifiedDateTime \<DateTime?\>\]: Last date and time of term modification.
 Read-only.
       \[Properties \<IMicrosoftGraphKeyValue\[\]\>\]: Collection of properties on the term.
-        \[Key \<String\>\]: Contains the name of the field that a value is associated with.
-        \[Value \<String\>\]: Contains the corresponding value for the specified key.
+        \[Key \<String\>\]: Key.
+        \[Value \<String\>\]: Value.
       \[Relations \<IMicrosoftGraphTermStoreRelation\[\]\>\]: To indicate which terms are related to the current term as either pinned or reused.
         \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
@@ -1118,8 +1119,8 @@ Read-only.
       \[LastModifiedDateTime \<DateTime?\>\]: Last date and time of term modification.
 Read-only.
       \[Properties \<IMicrosoftGraphKeyValue\[\]\>\]: Collection of properties on the term.
-        \[Key \<String\>\]: Contains the name of the field that a value is associated with.
-        \[Value \<String\>\]: Contains the corresponding value for the specified key.
+        \[Key \<String\>\]: Key.
+        \[Value \<String\>\]: Value.
       \[Relations \<IMicrosoftGraphTermStoreRelation\[\]\>\]: To indicate which terms are related to the current term as either pinned or reused.
         \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
@@ -1200,8 +1201,8 @@ Read-only.
     \[LastModifiedDateTime \<DateTime?\>\]: Last date and time of term modification.
 Read-only.
     \[Properties \<IMicrosoftGraphKeyValue\[\]\>\]: Collection of properties on the term.
-      \[Key \<String\>\]: Contains the name of the field that a value is associated with.
-      \[Value \<String\>\]: Contains the corresponding value for the specified key.
+      \[Key \<String\>\]: Key.
+      \[Value \<String\>\]: Value.
     \[Relations \<IMicrosoftGraphTermStoreRelation\[\]\>\]: To indicate which terms are related to the current term as either pinned or reused.
       \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
@@ -1260,5 +1261,6 @@ For examples, see Examples of common formulas in lists
 [New-MgGroupSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteListContentTypeColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitelistcontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitelistcontenttypecolumn)
+
 
 

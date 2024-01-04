@@ -11,7 +11,6 @@ ms.prod: insights
 ## SYNOPSIS
 Get the properties of an insightsSettings object for displaying or returning people insights in an organization.
 To learn how to customize privacy for people insights in an organization, see Customize people insights privacy in Microsoft Graph.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -30,7 +29,9 @@ Get-MgBetaOrganizationSettingPersonInsight -InputObject <IIdentityDirectoryManag
 ## DESCRIPTION
 Get the properties of an insightsSettings object for displaying or returning people insights in an organization.
 To learn how to customize privacy for people insights in an organization, see Customize people insights privacy in Microsoft Graph.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/organizationsettings-list-peopleinsights-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaOrganizationSettingPersonInsight Cmdlet
@@ -167,4 +168,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationsettingpersoninsight](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationsettingpersoninsight)
+
 

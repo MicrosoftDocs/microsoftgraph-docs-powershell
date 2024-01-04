@@ -12,7 +12,6 @@ ms.prod: applications
 Deletes an application.
 When deleted, apps are moved to a temporary container and can be restored within 30 days.
 After that time, they are permanently deleted.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -32,7 +31,9 @@ Remove-MgBetaApplicationByUniqueName -InputObject <IApplicationsIdentity> [-IfMa
 Deletes an application.
 When deleted, apps are moved to a temporary container and can be restored within 30 days.
 After that time, they are permanently deleted.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-delete-permissions.md)]
 
 ## PARAMETERS
 
@@ -194,5 +195,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationbyuniquename](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationbyuniquename)
+
 
 

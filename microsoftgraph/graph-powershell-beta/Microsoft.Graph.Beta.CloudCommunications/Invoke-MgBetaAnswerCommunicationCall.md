@@ -15,7 +15,6 @@ If an invite to a group call is received, the notification contains the chatInfo
 The bot is expected to answer, reject or redirect the call before the call times out.
 The current timeout value is 15 seconds.
 The current timeout value is 15 seconds for regular scenarios, and 5 seconds for policy-based recording scenarios.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgAnswerCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgAnswerCommunicationCall?view=graph-powershell-1.0)
@@ -59,7 +58,9 @@ If an invite to a group call is received, the notification contains the chatInfo
 The bot is expected to answer, reject or redirect the call before the call times out.
 The current timeout value is 15 seconds.
 The current timeout value is 15 seconds for regular scenarios, and 5 seconds for policy-based recording scenarios.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-answer-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -355,4 +356,5 @@ MEDIACONFIG \<IMicrosoftGraphMediaConfig\>: mediaConfig
 [Invoke-MgAnswerCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgAnswerCommunicationCall?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetaanswercommunicationcall](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetaanswercommunicationcall)
+
 

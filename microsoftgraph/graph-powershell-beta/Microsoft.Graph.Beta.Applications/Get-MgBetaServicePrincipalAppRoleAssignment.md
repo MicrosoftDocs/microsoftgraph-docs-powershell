@@ -40,6 +40,9 @@ Get-MgBetaServicePrincipalAppRoleAssignment -InputObject <IApplicationsIdentity>
 App role assignment for another app or service, granted to this service principal.
 Supports $expand.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-list-approleassignments-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Get all application role assignments for a service principal
 
@@ -342,4 +345,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Get-MgServicePrincipalAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalAppRoleAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalapproleassignment)
+
 

@@ -10,7 +10,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Update the properties of an internalDomainFederation object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDomainFederationConfiguration?view=graph-powershell-beta)
@@ -55,7 +54,9 @@ Update-MgDomainFederationConfiguration -InputObject <IIdentityDirectoryManagemen
 
 ## DESCRIPTION
 Update the properties of an internalDomainFederation object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/internaldomainfederation-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Update the federation settings for a federated domain
@@ -209,7 +210,7 @@ Accept wildcard characters: False
 
 ### -IsSignedAuthenticationRequestRequired
 If true, when SAML authentication requests are sent to the federated SAML IdP, Microsoft Entra ID will sign those requests using the OrgID signing key.
-If false (default), the SAML authentication requests sent to the federated IdP are not signed.
+If false (default), the SAML authentication requests sent to the federated IdP aren't signed.
 
 ```yaml
 Type: SwitchParameter
@@ -254,10 +255,10 @@ Accept wildcard characters: False
 ```
 
 ### -NextSigningCertificate
-Fallback token signing certificate that is used to sign tokens when the primary signing certificate expires.
+Fallback token signing certificate that can also be used to sign tokens, for example when the primary signing certificate expires.
 Formatted as Base64 encoded strings of the public portion of the federated IdP's token signing certificate.
 Needs to be compatible with the X509Certificate2 class.
-Much like the signingCertificate, the nextSigningCertificate property is used if a rollover is required outside of the auto-rollover update, a new federation service is being set up, or if the new token signing certificate is not present in the federation properties after the federation service certificate has been updated.
+Much like the signingCertificate, the nextSigningCertificate property is used if a rollover is required outside of the auto-rollover update, a new federation service is being set up, or if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated.
 
 ```yaml
 Type: String
@@ -432,11 +433,11 @@ Read-only.
 Corresponds to the ActiveLogOnUri property of the Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet.
   \[FederatedIdpMfaBehavior \<String\>\]: federatedIdpMfaBehavior
   \[IsSignedAuthenticationRequestRequired \<Boolean?\>\]: If true, when SAML authentication requests are sent to the federated SAML IdP, Microsoft Entra ID will sign those requests using the OrgID signing key.
-If false (default), the SAML authentication requests sent to the federated IdP are not signed.
-  \[NextSigningCertificate \<String\>\]: Fallback token signing certificate that is used to sign tokens when the primary signing certificate expires.
+If false (default), the SAML authentication requests sent to the federated IdP aren't signed.
+  \[NextSigningCertificate \<String\>\]: Fallback token signing certificate that can also be used to sign tokens, for example when the primary signing certificate expires.
 Formatted as Base64 encoded strings of the public portion of the federated IdP's token signing certificate.
 Needs to be compatible with the X509Certificate2 class.
-Much like the signingCertificate, the nextSigningCertificate property is used if a rollover is required outside of the auto-rollover update, a new federation service is being set up, or if the new token signing certificate is not present in the federation properties after the federation service certificate has been updated.
+Much like the signingCertificate, the nextSigningCertificate property is used if a rollover is required outside of the auto-rollover update, a new federation service is being set up, or if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated.
   \[PromptLoginBehavior \<String\>\]: promptLoginBehavior
   \[SignOutUri \<String\>\]: URI that clients are redirected to when they sign out of Microsoft Entra services.
 Corresponds to the LogOffUri property of the Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet.
@@ -486,4 +487,5 @@ Read-only.
 [Update-MgBetaDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDomainFederationConfiguration?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomainfederationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomainfederationconfiguration)
+
 

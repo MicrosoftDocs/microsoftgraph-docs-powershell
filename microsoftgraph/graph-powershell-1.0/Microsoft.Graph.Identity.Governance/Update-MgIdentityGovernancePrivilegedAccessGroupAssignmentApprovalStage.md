@@ -10,7 +10,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 Approve or deny an approvalStage object in an approval.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -47,7 +46,9 @@ Update-MgIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStage
 
 ## DESCRIPTION
 Approve or deny an approvalStage object in an approval.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/approvalstage-update-permissions.md)]
 
 ## PARAMETERS
 
@@ -410,5 +411,6 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceprivilegedaccessgroupassignmentapprovalstage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceprivilegedaccessgroupassignmentapprovalstage)
+
 
 

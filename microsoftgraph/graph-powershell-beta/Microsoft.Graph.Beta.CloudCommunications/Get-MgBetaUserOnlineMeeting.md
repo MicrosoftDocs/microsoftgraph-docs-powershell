@@ -38,6 +38,9 @@ Get-MgBetaUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity> [-Expand
 ## DESCRIPTION
 Information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onlinemeeting-get-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -290,4 +293,5 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
 [Get-MgUserOnlineMeeting](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeeting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeeting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeeting)
+
 

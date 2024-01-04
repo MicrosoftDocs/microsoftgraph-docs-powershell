@@ -35,6 +35,9 @@ Get-MgBetaEducationClassAssignmentSettingGradingCategory -InputObject <IEducatio
 ## DESCRIPTION
 Get gradingCategories from education
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-list-gradingcategory-permissions.md)]
+
 ## PARAMETERS
 
 ### -All
@@ -271,5 +274,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentsettinggradingcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentsettinggradingcategory)
+
 
 

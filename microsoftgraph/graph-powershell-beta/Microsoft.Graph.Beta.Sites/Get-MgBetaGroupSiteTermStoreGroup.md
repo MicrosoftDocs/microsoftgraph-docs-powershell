@@ -11,7 +11,6 @@ ms.prod: taxonomy
 
 ## SYNOPSIS
 Read the properties and relationships of a term store group object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteTermStoreGroup](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreGroup?view=graph-powershell-1.0)
@@ -39,7 +38,12 @@ Get-MgBetaGroupSiteTermStoreGroup -InputObject <ISitesIdentity> [-ExpandProperty
 
 ## DESCRIPTION
 Read the properties and relationships of a term store group object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/termstore-group-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/termstore-list-groups-permissions.md)]
 
 ## PARAMETERS
 
@@ -324,5 +328,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgGroupSiteTermStoreGroup](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitetermstoregroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitetermstoregroup)
+
 
 

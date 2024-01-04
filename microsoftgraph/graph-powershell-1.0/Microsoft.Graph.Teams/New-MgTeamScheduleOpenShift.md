@@ -10,7 +10,6 @@ ms.prod: microsoft-teams
 
 ## SYNOPSIS
 Create an instance of an openShift object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamScheduleOpenShift?view=graph-powershell-beta)
@@ -47,7 +46,9 @@ New-MgTeamScheduleOpenShift -InputObject <ITeamsIdentity> -BodyParameter <IMicro
 
 ## DESCRIPTION
 Create an instance of an openShift object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/openshift-post-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -432,4 +433,5 @@ Required.
 [New-MgBetaTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamScheduleOpenShift?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleopenshift](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleopenshift)
+
 

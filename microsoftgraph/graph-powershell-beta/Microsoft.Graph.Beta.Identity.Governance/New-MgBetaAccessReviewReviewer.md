@@ -12,7 +12,6 @@ ms.prod: governance
 In the Microsoft Entra access reviews feature, update an existing accessReview object to add another user as a reviewer.
 This operation is only permitted for an access review that isn't yet completed, and only for an access review where the reviewers are explicitly specified.
 This operation isn't permitted for an access review in which users review their own access, and not intended for an access review in which the group owners are assigned as the reviewers.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -46,7 +45,9 @@ New-MgBetaAccessReviewReviewer -InputObject <IIdentityGovernanceIdentity>
 In the Microsoft Entra access reviews feature, update an existing accessReview object to add another user as a reviewer.
 This operation is only permitted for an access review that isn't yet completed, and only for an access review where the reviewers are explicitly specified.
 This operation isn't permitted for an access review in which users review their own access, and not intended for an access review in which the group owners are assigned as the reviewers.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreview-addreviewer-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaAccessReviewReviewer Cmdlet
@@ -344,4 +345,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaaccessreviewreviewer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaaccessreviewreviewer)
+
 

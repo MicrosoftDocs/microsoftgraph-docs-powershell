@@ -40,6 +40,9 @@ Get-MgBetaGroupAppRoleAssignment -InputObject <IApplicationsIdentity> [-ExpandPr
 Represents the app roles a group has been granted for an application.
 Supports $expand.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-approleassignments-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Get appRoleAssignments granted to a group
 
@@ -328,4 +331,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Get-MgGroupAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/Get-MgGroupAppRoleAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetagroupapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetagroupapproleassignment)
+
 

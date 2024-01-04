@@ -9,7 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstanceGroupServiceProvisioningError](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstanceGroupServiceProvisioningError?view=graph-powershell-1.0)
@@ -25,7 +24,6 @@ Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstanceGroup
 
 ## DESCRIPTION
 Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
 
 ## PARAMETERS
 
@@ -209,5 +207,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstanceGroupServiceProvisioningError](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstanceGroupServiceProvisioningError?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceprivilegedaccessgroupassignmentscheduleinstancegroupserviceprovisioningerror](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceprivilegedaccessgroupassignmentscheduleinstancegroupserviceprovisioningerror)
+
 
 

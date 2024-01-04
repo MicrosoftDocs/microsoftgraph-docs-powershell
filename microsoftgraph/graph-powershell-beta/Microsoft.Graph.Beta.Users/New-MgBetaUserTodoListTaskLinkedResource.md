@@ -12,7 +12,6 @@ ms.prod: outlook
 Create a linkedResource object to associate a specified task with an item in a partner application.
 For example, you can associate a task with an email item in Outlook that spurred the task, and you can create a linkedResource object to track its association.
 You can also create a linkedResource object while creating a todoTask.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgUserTodoListTaskLinkedResource](/powershell/module/Microsoft.Graph.Users/New-MgUserTodoListTaskLinkedResource?view=graph-powershell-1.0)
@@ -49,7 +48,9 @@ New-MgBetaUserTodoListTaskLinkedResource -InputObject <IUsersIdentity>
 Create a linkedResource object to associate a specified task with an item in a partner application.
 For example, you can associate a task with an email item in Outlook that spurred the task, and you can create a linkedResource object to track its association.
 You can also create a linkedResource object while creating a todoTask.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/todotask-post-linkedresources-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -326,4 +327,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [New-MgUserTodoListTaskLinkedResource](/powershell/module/Microsoft.Graph.Users/New-MgUserTodoListTaskLinkedResource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausertodolisttasklinkedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausertodolisttasklinkedresource)
+
 

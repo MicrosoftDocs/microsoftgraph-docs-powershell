@@ -11,7 +11,6 @@ ms.prod: education
 ## SYNOPSIS
 Delete a specific educationModuleResource attached to a module.
 Only teachers in the class can remove a resource.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -30,7 +29,9 @@ Remove-MgBetaEducationClassModuleResource -InputObject <IEducationIdentity> [-If
 ## DESCRIPTION
 Delete a specific educationModuleResource attached to a module.
 Only teachers in the class can remove a resource.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationmoduleresource-delete-permissions.md)]
 
 ## PARAMETERS
 
@@ -193,5 +194,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassmoduleresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassmoduleresource)
+
 
 

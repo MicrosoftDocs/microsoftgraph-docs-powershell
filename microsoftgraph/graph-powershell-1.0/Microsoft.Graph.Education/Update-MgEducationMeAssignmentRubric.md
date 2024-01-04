@@ -11,7 +11,6 @@ ms.prod: education
 ## SYNOPSIS
 Attach an existing educationRubric object to an educationAssignment.
 Only teachers can perform this operation.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaEducationMeAssignmentRubric](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationMeAssignmentRubric?view=graph-powershell-beta)
@@ -51,7 +50,9 @@ Update-MgEducationMeAssignmentRubric -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Attach an existing educationRubric object to an educationAssignment.
 Only teachers can perform this operation.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-put-rubric-permissions.md)]
 
 ## EXAMPLES
 
@@ -393,4 +394,5 @@ Weights must add up to 100.
 [Update-MgBetaEducationMeAssignmentRubric](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationMeAssignmentRubric?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationmeassignmentrubric](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationmeassignmentrubric)
+
 

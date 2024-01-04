@@ -10,7 +10,6 @@ ms.prod: Sharepoint
 
 ## SYNOPSIS
 Delete a term object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgGroupSiteTermStoreSetTerm](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteTermStoreSetTerm?view=graph-powershell-1.0)
@@ -31,7 +30,9 @@ Remove-MgBetaGroupSiteTermStoreSetTerm -InputObject <ISitesIdentity> [-IfMatch <
 
 ## DESCRIPTION
 Delete a term object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/termstore-term-delete-permissions.md)]
 
 ## PARAMETERS
 
@@ -241,5 +242,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Remove-MgGroupSiteTermStoreSetTerm](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteTermStoreSetTerm?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitetermstoresetterm](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitetermstoresetterm)
+
 
 

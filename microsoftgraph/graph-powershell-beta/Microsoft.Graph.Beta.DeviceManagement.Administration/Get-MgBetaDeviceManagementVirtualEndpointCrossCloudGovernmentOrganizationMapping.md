@@ -10,7 +10,6 @@ ms.prod: cloud-pc
 
 ## SYNOPSIS
 Read the properties and relationships of a cloudPcCrossCloudGovernmentOrganizationMapping object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -21,7 +20,9 @@ Get-MgBetaDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapping
 
 ## DESCRIPTION
 Read the properties and relationships of a cloudPcCrossCloudGovernmentOrganizationMapping object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpccrosscloudgovernmentorganizationmapping-get-permissions.md)]
 
 ## PARAMETERS
 
@@ -68,5 +69,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointcrosscloudgovernmentorganizationmapping](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointcrosscloudgovernmentorganizationmapping)
+
 
 

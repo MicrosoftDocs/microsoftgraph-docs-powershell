@@ -38,6 +38,9 @@ Get-MgBetaUserOauth2PermissionGrant -InputObject <IUsersIdentity> [-ExpandProper
 ## DESCRIPTION
 Get oauth2PermissionGrants from users
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-oauth2permissiongrants-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -293,4 +296,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Get-MgUserOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Users/Get-MgUserOauth2PermissionGrant?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroauth2permissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroauth2permissiongrant)
+
 

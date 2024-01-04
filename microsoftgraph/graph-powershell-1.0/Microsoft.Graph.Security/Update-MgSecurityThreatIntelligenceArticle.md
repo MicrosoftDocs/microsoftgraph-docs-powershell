@@ -424,3 +424,4 @@ SUMMARY \<IMicrosoftGraphSecurityFormattedContent\>: formattedContent
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencearticle](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencearticle)
 
 
+

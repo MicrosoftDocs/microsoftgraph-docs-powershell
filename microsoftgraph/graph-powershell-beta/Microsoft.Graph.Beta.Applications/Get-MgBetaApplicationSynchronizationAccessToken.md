@@ -10,7 +10,6 @@ ms.prod: applications
 
 ## SYNOPSIS
 Acquire an OAuth Access token to authorize the Microsoft Entra provisioning service to provision users into an application.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgApplicationSynchronizationAccessToken](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationSynchronizationAccessToken?view=graph-powershell-1.0)
@@ -47,7 +46,9 @@ Get-MgBetaApplicationSynchronizationAccessToken -InputObject <IApplicationsIdent
 
 ## DESCRIPTION
 Acquire an OAuth Access token to authorize the Microsoft Entra provisioning service to provision users into an application.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronization-acquireaccesstoken-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -259,4 +260,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Get-MgApplicationSynchronizationAccessToken](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationSynchronizationAccessToken?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationsynchronizationaccesstoken](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationsynchronizationaccesstoken)
+
 

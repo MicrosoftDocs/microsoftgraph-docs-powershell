@@ -241,3 +241,4 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitecontenttypecompatiblehubcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitecontenttypecompatiblehubcontenttype)
 
 
+

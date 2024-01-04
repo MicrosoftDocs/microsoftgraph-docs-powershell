@@ -10,7 +10,6 @@ ms.prod: search
 
 ## SYNOPSIS
 Create a new schema object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaExternalConnectionSchema](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternalConnectionSchema?view=graph-powershell-beta)
@@ -45,7 +44,9 @@ Update-MgExternalConnectionSchema -InputObject <ISearchIdentity>
 
 ## DESCRIPTION
 Create a new schema object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-externalconnection-patch-schema-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -304,4 +305,5 @@ Required.
 [Update-MgBetaExternalConnectionSchema](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternalConnectionSchema?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnectionschema](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnectionschema)
+
 

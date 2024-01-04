@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserDefaultCalendarSchedule](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserDefaultCalendarSchedule?view=graph-powershell-1.0)
@@ -47,7 +46,9 @@ Get-MgBetaUserDefaultCalendarSchedule -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/calendar-getschedule-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserDefaultCalendarSchedule Cmdlet
@@ -295,6 +296,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[NotebookId \<String\>\]: The unique identifier of notebook
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
   \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
   \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
   \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask
@@ -318,4 +320,5 @@ See below for possible values.
 [Get-MgUserDefaultCalendarSchedule](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserDefaultCalendarSchedule?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauserdefaultcalendarschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauserdefaultcalendarschedule)
+
 

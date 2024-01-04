@@ -11,7 +11,6 @@ ms.prod: sites-and-lists
 ## SYNOPSIS
 Remove access to a DriveItem.
 Only sharing permissions that are not inherited can be deleted.The inheritedFrom property must be null.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgUserDriveRootPermission](/powershell/module/Microsoft.Graph.Files/Remove-MgUserDriveRootPermission?view=graph-powershell-1.0)
@@ -33,7 +32,9 @@ Remove-MgBetaUserDriveRootPermission -InputObject <IFilesIdentity> [-IfMatch <St
 ## DESCRIPTION
 Remove access to a DriveItem.
 Only sharing permissions that are not inherited can be deleted.The inheritedFrom property must be null.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permission-delete-permissions.md)]
 
 ## PARAMETERS
 
@@ -204,5 +205,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Remove-MgUserDriveRootPermission](/powershell/module/Microsoft.Graph.Files/Remove-MgUserDriveRootPermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetauserdriverootpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetauserdriverootpermission)
+
 
 

@@ -35,6 +35,9 @@ Get-MgBetaComplianceEdiscoveryCaseSourceCollection -InputObject <IComplianceIden
 ## DESCRIPTION
 Returns a list of sourceCollection objects associated with this case.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-case-list-sourcecollections-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaComplianceEdiscoveryCaseSourceCollection Cmdlet
 ```powershell
@@ -287,4 +290,5 @@ INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasesourcecollection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasesourcecollection)
+
 

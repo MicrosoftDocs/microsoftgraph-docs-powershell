@@ -156,3 +156,4 @@ INPUTOBJECT \<IManagedTenantsIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantalertlogcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantalertlogcount)
 
 
+

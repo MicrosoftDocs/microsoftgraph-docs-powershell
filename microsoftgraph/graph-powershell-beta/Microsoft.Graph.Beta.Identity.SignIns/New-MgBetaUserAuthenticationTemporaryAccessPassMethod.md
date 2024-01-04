@@ -12,7 +12,6 @@ ms.prod: identity-and-sign-in
 Create a new temporaryAccessPassAuthenticationMethod object on a user.
 A user can only have one Temporary Access Pass that's usable within its specified lifetime.
 If the user requires a new Temporary Access Pass while the current Temporary Access Pass is valid, the admin can create a new Temporary Access Pass for the user, the previous Temporary Access Pass will be deleted, and a new Temporary Access Pass will be created.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgUserAuthenticationTemporaryAccessPassMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgUserAuthenticationTemporaryAccessPassMethod?view=graph-powershell-1.0)
@@ -52,7 +51,9 @@ New-MgBetaUserAuthenticationTemporaryAccessPassMethod -InputObject <IIdentitySig
 Create a new temporaryAccessPassAuthenticationMethod object on a user.
 A user can only have one Temporary Access Pass that's usable within its specified lifetime.
 If the user requires a new Temporary Access Pass while the current Temporary Access Pass is valid, the admin can create a new Temporary Access Pass for the user, the previous Temporary Access Pass will be deleted, and a new Temporary Access Pass will be created.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authentication-post-temporaryaccesspassmethods-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -295,6 +296,7 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[ActivityBasedTimeoutPolicyId \<String\>\]: The unique identifier of activityBasedTimeoutPolicy
   \[AppManagementPolicyId \<String\>\]: The unique identifier of appManagementPolicy
   \[AuthenticationCombinationConfigurationId \<String\>\]: The unique identifier of authenticationCombinationConfiguration
+  \[AuthenticationConditionApplicationAppId \<String\>\]: The unique identifier of authenticationConditionApplication
   \[AuthenticationContextClassReferenceId \<String\>\]: The unique identifier of authenticationContextClassReference
   \[AuthenticationEventListenerId \<String\>\]: The unique identifier of authenticationEventListener
   \[AuthenticationEventsFlowId \<String\>\]: The unique identifier of authenticationEventsFlow
@@ -373,4 +375,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 [New-MgUserAuthenticationTemporaryAccessPassMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgUserAuthenticationTemporaryAccessPassMethod?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetauserauthenticationtemporaryaccesspassmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetauserauthenticationtemporaryaccesspassmethod)
+
 

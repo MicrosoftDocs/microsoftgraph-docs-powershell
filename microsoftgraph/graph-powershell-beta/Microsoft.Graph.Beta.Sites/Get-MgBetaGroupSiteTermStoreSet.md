@@ -10,7 +10,6 @@ ms.prod: sharepoint
 
 ## SYNOPSIS
 Read the properties and relationships of a set object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteTermStoreSet](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreSet?view=graph-powershell-1.0)
@@ -38,7 +37,9 @@ Get-MgBetaGroupSiteTermStoreSet -InputObject <ISitesIdentity> [-ExpandProperty <
 
 ## DESCRIPTION
 Read the properties and relationships of a set object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/termstore-set-get-permissions.md)]
 
 ## PARAMETERS
 
@@ -323,5 +324,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgGroupSiteTermStoreSet](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreSet?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitetermstoreset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitetermstoreset)
+
 
 

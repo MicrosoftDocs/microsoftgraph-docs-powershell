@@ -11,7 +11,6 @@ schema: 2.0.0
 Resume a task processing result that's inProgress.
 In the default case an Azure Logic Apps system-assigned managed identity calls this API.
 For more information, see: Lifecycle Workflows extensibility approach.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Resume-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult](/powershell/module/Microsoft.Graph.Identity.Governance/Resume-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult?view=graph-powershell-1.0)
@@ -54,7 +53,6 @@ Resume-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult
 Resume a task processing result that's inProgress.
 In the default case an Azure Logic Apps system-assigned managed identity calls this API.
 For more information, see: Lifecycle Workflows extensibility approach.
-This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -390,5 +388,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [Resume-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult](/powershell/module/Microsoft.Graph.Identity.Governance/Resume-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/resume-mgbetaidentitygovernancelifecycleworkflowversiontaskprocessingresult](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/resume-mgbetaidentitygovernancelifecycleworkflowversiontaskprocessingresult)
+
 
 

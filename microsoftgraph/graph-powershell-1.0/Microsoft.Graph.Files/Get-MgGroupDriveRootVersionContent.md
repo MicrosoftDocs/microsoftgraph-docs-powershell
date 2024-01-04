@@ -31,6 +31,9 @@ Get-MgGroupDriveRootVersionContent -InputObject <IFilesIdentity> -OutFile <Strin
 ## DESCRIPTION
 The content stream for this version of the item.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-list-versions-permissions.md)]
+
 ## PARAMETERS
 
 ### -DriveId
@@ -169,5 +172,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgBetaGroupDriveRootVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootVersionContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootversioncontent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootversioncontent)
+
 
 

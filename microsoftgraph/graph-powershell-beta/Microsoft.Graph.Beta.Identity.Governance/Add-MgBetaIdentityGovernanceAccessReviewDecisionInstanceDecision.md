@@ -11,7 +11,6 @@ ms.prod: governance
 ## SYNOPSIS
 Apply review decisions on an accessReviewInstance if the decisions were not applied automatically because the autoApplyDecisionsEnabled property is false in the review's accessReviewScheduleSettings.
 The status of the accessReviewInstance must be Completed to call this method.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -30,7 +29,9 @@ Add-MgBetaIdentityGovernanceAccessReviewDecisionInstanceDecision -InputObject <I
 ## DESCRIPTION
 Apply review decisions on an accessReviewInstance if the decisions were not applied automatically because the autoApplyDecisionsEnabled property is false in the review's accessReviewScheduleSettings.
 The status of the accessReviewInstance must be Completed to call this method.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstance-applydecisions-permissions.md)]
 
 ## PARAMETERS
 
@@ -230,5 +231,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/add-mgbetaidentitygovernanceaccessreviewdecisioninstancedecision](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/add-mgbetaidentitygovernanceaccessreviewdecisioninstancedecision)
+
 
 

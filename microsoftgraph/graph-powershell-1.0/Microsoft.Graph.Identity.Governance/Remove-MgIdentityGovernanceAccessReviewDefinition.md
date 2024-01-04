@@ -10,7 +10,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 Deletes an accessReviewScheduleDefinition object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaIdentityGovernanceAccessReviewDefinition?view=graph-powershell-beta)
@@ -31,7 +30,9 @@ Remove-MgIdentityGovernanceAccessReviewDefinition -InputObject <IIdentityGoverna
 
 ## DESCRIPTION
 Deletes an accessReviewScheduleDefinition object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewscheduledefinition-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -229,4 +230,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [Remove-MgBetaIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaIdentityGovernanceAccessReviewDefinition?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgidentitygovernanceaccessreviewdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgidentitygovernanceaccessreviewdefinition)
+
 

@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Update the properties of a checklistItem object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgUserTodoListTaskChecklistItem](/powershell/module/Microsoft.Graph.Users/Update-MgUserTodoListTaskChecklistItem?view=graph-powershell-1.0)
@@ -47,7 +46,9 @@ Update-MgBetaUserTodoListTaskChecklistItem -InputObject <IUsersIdentity>
 
 ## DESCRIPTION
 Update the properties of a checklistItem object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/checklistitem-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -336,4 +337,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Update-MgUserTodoListTaskChecklistItem](/powershell/module/Microsoft.Graph.Users/Update-MgUserTodoListTaskChecklistItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolisttaskchecklistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolisttaskchecklistitem)
+
 

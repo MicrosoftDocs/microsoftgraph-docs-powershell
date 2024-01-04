@@ -1622,3 +1622,4 @@ Locale: en-US
 ### [Update-MgUserManagedDeviceWindowsProtectionStateDetectedMalwareState](Update-MgUserManagedDeviceWindowsProtectionStateDetectedMalwareState.md)
 {{ Fill in the Description }}
 
+

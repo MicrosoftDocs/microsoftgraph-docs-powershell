@@ -11,7 +11,6 @@ ms.prod: search
 
 ## SYNOPSIS
 Read the properties and relationships of a qna object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -35,7 +34,12 @@ Get-MgBetaSearchQna -InputObject <ISearchIdentity> [-ExpandProperty <String[]>] 
 
 ## DESCRIPTION
 Read the properties and relationships of a qna object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-qna-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-searchentity-list-qnas-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaSearchQna Cmdlet
@@ -276,4 +280,5 @@ INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetasearchqna](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetasearchqna)
+
 

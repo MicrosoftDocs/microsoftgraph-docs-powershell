@@ -11,7 +11,6 @@ ms.prod: security
 ## SYNOPSIS
 Update an editable alert property within any integrated solution to keep alert status and assignments in sync across solutions.
 This method updates any solution that has a record of the referenced alert ID.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityAlert?view=graph-powershell-beta)
@@ -79,7 +78,9 @@ Update-MgSecurityAlert -InputObject <ISecurityIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Update an editable alert property within any integrated solution to keep alert status and assignments in sync across solutions.
 This method updates any solution that has a record of the referenced alert ID.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/alert-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Request without Prefer header
@@ -1336,4 +1337,5 @@ VULNERABILITYSTATES \<IMicrosoftGraphVulnerabilityState\[\]\>: Threat intelligen
 [Update-MgBetaSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityAlert?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityalert](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityalert)
+
 

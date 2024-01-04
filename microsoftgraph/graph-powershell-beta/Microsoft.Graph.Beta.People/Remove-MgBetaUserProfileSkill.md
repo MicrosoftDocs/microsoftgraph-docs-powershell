@@ -10,7 +10,6 @@ ms.prod: people
 
 ## SYNOPSIS
 Delete a skillProficiency object from a user's profile.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,9 @@ Remove-MgBetaUserProfileSkill -InputObject <IPeopleIdentity> [-IfMatch <String>]
 
 ## DESCRIPTION
 Delete a skillProficiency object from a user's profile.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/skillproficiency-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaUserProfileSkill Cmdlet
@@ -191,4 +192,5 @@ INPUTOBJECT \<IPeopleIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofileskill](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofileskill)
+
 

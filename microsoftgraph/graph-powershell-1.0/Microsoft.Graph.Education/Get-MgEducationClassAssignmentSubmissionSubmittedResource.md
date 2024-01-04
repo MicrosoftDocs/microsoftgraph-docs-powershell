@@ -14,7 +14,6 @@ Retrieve a submitted resource.
 Only teachers, students, and applications with application permissions can perform this operation.
 Resources are available to a teacher or an application with application permissions after a student submits it, and are available to the student after the teacher returns the submission.
 Teachers can leave notes in some resources.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationClassAssignmentSubmissionSubmittedResource](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentSubmissionSubmittedResource?view=graph-powershell-beta)
@@ -47,7 +46,12 @@ Retrieve a submitted resource.
 Only teachers, students, and applications with application permissions can perform this operation.
 Resources are available to a teacher or an application with application permissions after a student submits it, and are available to the student after the teacher returns the submission.
 Teachers can leave notes in some resources.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationsubmittedsubmissionresource-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationsubmission-list-submittedresources-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -322,4 +326,5 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 [Get-MgBetaEducationClassAssignmentSubmissionSubmittedResource](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentSubmissionSubmittedResource?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentsubmissionsubmittedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentsubmissionsubmittedresource)
+
 

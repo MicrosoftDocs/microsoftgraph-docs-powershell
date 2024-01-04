@@ -46,6 +46,9 @@ Navigation property.
 Read-only.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-list-instances-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -310,4 +313,5 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
 [Get-MgGroupEventInstance](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupEventInstance?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupeventinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupeventinstance)
+
 

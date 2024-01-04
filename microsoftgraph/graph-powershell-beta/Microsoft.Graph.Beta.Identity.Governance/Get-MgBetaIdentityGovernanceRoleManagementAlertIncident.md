@@ -11,7 +11,7 @@ ms.prod: governance
 
 ## SYNOPSIS
 Read the properties and relationships of an alert incident.
-The alert incident can be one of the following types that are derived from the unifiedRoleManagementAlertIncident object: This API is available in the following national cloud deployments.
+The alert incident can be one of the following types that are derived from the unifiedRoleManagementAlertIncident object:
 
 ## SYNTAX
 
@@ -37,7 +37,13 @@ Get-MgBetaIdentityGovernanceRoleManagementAlertIncident -InputObject <IIdentityG
 
 ## DESCRIPTION
 Read the properties and relationships of an alert incident.
-The alert incident can be one of the following types that are derived from the unifiedRoleManagementAlertIncident object: This API is available in the following national cloud deployments.
+The alert incident can be one of the following types that are derived from the unifiedRoleManagementAlertIncident object:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedrolemanagementalertincident-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedrolemanagementalert-list-alertincidents-permissions.md)]
 
 ## PARAMETERS
 
@@ -358,5 +364,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancerolemanagementalertincident](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancerolemanagementalertincident)
+
 
 

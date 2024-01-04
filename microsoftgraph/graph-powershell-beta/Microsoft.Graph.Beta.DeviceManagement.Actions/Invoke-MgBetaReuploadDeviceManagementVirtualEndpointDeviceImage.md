@@ -10,7 +10,6 @@ ms.prod: cloud-pc
 
 ## SYNOPSIS
 Reupload a cloudPcDeviceImage object that failed to upload.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,9 @@ Invoke-MgBetaReuploadDeviceManagementVirtualEndpointDeviceImage -InputObject <ID
 
 ## DESCRIPTION
 Reupload a cloudPcDeviceImage object that failed to upload.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcdeviceimage-reupload-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgBetaReuploadDeviceManagementVirtualEndpointDeviceImage Cmdlet
@@ -177,6 +178,7 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
   \[MicrosoftTunnelSiteId \<String\>\]: The unique identifier of microsoftTunnelSite
   \[MobileAppTroubleshootingEventId \<String\>\]: The unique identifier of mobileAppTroubleshootingEvent
   \[NotificationMessageTemplateId \<String\>\]: The unique identifier of notificationMessageTemplate
+  \[PrivilegeManagementElevationRequestId \<String\>\]: The unique identifier of privilegeManagementElevationRequest
   \[RemoteAssistancePartnerId \<String\>\]: The unique identifier of remoteAssistancePartner
   \[RoleScopeTagId \<String\>\]: The unique identifier of roleScopeTag
   \[WindowsAutopilotDeploymentProfileId \<String\>\]: The unique identifier of windowsAutopilotDeploymentProfile
@@ -189,4 +191,5 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetareuploaddevicemanagementvirtualendpointdeviceimage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetareuploaddevicemanagementvirtualendpointdeviceimage)
+
 

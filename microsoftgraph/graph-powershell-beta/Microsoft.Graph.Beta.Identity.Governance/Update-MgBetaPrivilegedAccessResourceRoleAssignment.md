@@ -1121,3 +1121,4 @@ The value can be User, Group, and ServicePrincipal.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedaccessresourceroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedaccessresourceroleassignment)
 
 
+

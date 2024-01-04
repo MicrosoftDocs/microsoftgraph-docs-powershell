@@ -10,7 +10,6 @@ ms.prod: microsoft-teams
 
 ## SYNOPSIS
 Create a new schedulingGroup.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamScheduleSchedulingGroup?view=graph-powershell-beta)
@@ -45,7 +44,9 @@ New-MgGroupTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Create a new schedulingGroup.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/schedule-post-schedulinggroups-permissions.md)]
 
 ## EXAMPLES
 
@@ -292,4 +293,5 @@ For example, if a user changes their display name, the API might show the new va
 [New-MgBetaGroupTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamScheduleSchedulingGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamscheduleschedulinggroup](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamscheduleschedulinggroup)
+
 

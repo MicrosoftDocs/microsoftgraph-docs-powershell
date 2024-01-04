@@ -244,3 +244,4 @@ It is not automatically updated if the customer tenant's display name changes.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgcontract](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgcontract)
 
+

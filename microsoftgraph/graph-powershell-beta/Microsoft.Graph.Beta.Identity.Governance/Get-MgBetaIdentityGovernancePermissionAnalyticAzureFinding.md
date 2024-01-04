@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaIdentityGovernancePermissionAnalyticAzureFinding
 
 ## SYNOPSIS
-Get findings from identityGovernance
+The output of the permissions usage data analysis performed by Permissions Management to assess risk with identities and resources.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgBetaIdentityGovernancePermissionAnalyticAzureFinding -InputObject <IIdenti
 ```
 
 ## DESCRIPTION
-Get findings from identityGovernance
+The output of the permissions usage data analysis performed by Permissions Management to assess risk with identities and resources.
 
 ## PARAMETERS
 
@@ -337,5 +337,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancepermissionanalyticazurefinding](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancepermissionanalyticazurefinding)
+
 
 

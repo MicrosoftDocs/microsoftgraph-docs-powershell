@@ -11,7 +11,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Get the properties and relationships of a messageRule object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserMailFolderMessageRule](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderMessageRule?view=graph-powershell-beta)
@@ -38,7 +37,12 @@ Get-MgUserMailFolderMessageRule -InputObject <IMailIdentity> [-Property <String[
 
 ## DESCRIPTION
 Get the properties and relationships of a messageRule object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/messagerule-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/mailfolder-list-messagerules-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -267,4 +271,5 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
 [Get-MgBetaUserMailFolderMessageRule](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderMessageRule?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldermessagerule](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldermessagerule)
+
 

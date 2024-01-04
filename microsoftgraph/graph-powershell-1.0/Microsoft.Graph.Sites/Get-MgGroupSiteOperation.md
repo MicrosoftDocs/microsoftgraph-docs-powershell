@@ -11,7 +11,6 @@ ms.prod: sites-and-lists
 
 ## SYNOPSIS
 Get the status of a rich long-running operation on a site or a list.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOperation?view=graph-powershell-beta)
@@ -39,7 +38,12 @@ Get-MgGroupSiteOperation -InputObject <ISitesIdentity> [-ExpandProperty <String[
 
 ## DESCRIPTION
 Get the status of a rich long-running operation on a site or a list.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/richlongrunningoperation-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-list-operations-permissions.md)]
 
 ## PARAMETERS
 
@@ -314,5 +318,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgBetaGroupSiteOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteoperation)
+
 
 

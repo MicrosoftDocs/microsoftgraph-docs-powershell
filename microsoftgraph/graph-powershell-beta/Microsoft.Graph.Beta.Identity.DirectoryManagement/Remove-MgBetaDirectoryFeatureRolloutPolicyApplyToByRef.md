@@ -10,7 +10,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Remove an appliesTo on a featureRolloutPolicy object to remove the directoryObject from feature rollout.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -29,7 +28,9 @@ Remove-MgBetaDirectoryFeatureRolloutPolicyApplyToByRef -InputObject <IIdentityDi
 
 ## DESCRIPTION
 Remove an appliesTo on a featureRolloutPolicy object to remove the directoryObject from feature rollout.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/featurerolloutpolicy-delete-appliesto-permissions.md)]
 
 ## PARAMETERS
 
@@ -218,5 +219,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryfeaturerolloutpolicyapplytobyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryfeaturerolloutpolicyapplytobyref)
+
 
 

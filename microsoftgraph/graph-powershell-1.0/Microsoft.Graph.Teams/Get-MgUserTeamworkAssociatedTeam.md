@@ -50,6 +50,9 @@ Get-MgUserTeamworkAssociatedTeam -InputObject <ITeamsIdentity> [-ExpandProperty 
 ## DESCRIPTION
 The list of associatedTeamInfo objects that a user is associated with.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/associatedteaminfo-list-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -317,4 +320,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Get-MgBetaUserTeamworkAssociatedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserTeamworkAssociatedTeam?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserteamworkassociatedteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserteamworkassociatedteam)
+
 

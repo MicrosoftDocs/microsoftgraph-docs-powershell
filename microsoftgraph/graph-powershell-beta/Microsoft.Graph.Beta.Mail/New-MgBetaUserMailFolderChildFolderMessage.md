@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Use this API to create a new Message in a mailfolder.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Mail/New-MgUserMailFolderChildFolderMessage?view=graph-powershell-1.0)
@@ -75,7 +74,9 @@ New-MgBetaUserMailFolderChildFolderMessage -InputObject <IMailIdentity> -BodyPar
 
 ## DESCRIPTION
 Use this API to create a new Message in a mailfolder.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailfolder-post-messages-permissions.md)]
 
 ## PARAMETERS
 
@@ -1083,5 +1084,6 @@ UNIQUEBODY \<IMicrosoftGraphItemBody\>: itemBody
 [New-MgUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Mail/New-MgUserMailFolderChildFolderMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolderchildfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolderchildfoldermessage)
+
 
 

@@ -42,6 +42,9 @@ The user's calendars.
 Read-only.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-calendars-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserCalendar Cmdlet
 ```powershell
@@ -270,4 +273,5 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
 [Get-MgUserCalendar](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserCalendar?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendar)
+
 

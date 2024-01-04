@@ -10,7 +10,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 Allows the acceptance of recommendations on all accessReviewInstanceDecisionItem objects that haven't been reviewed on an accessReviewInstance object for which the calling user is a reviewer.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation?view=graph-powershell-beta)
@@ -31,7 +30,9 @@ Invoke-MgAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation
 
 ## DESCRIPTION
 Allows the acceptance of recommendations on all accessReviewInstanceDecisionItem objects that haven't been reviewed on an accessReviewInstance object for which the calling user is a reviewer.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewinstance-acceptrecommendations-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation Cmdlet
@@ -225,4 +226,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [Invoke-MgBetaAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgacceptidentitygovernanceaccessreviewdefinitioninstancerecommendation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgacceptidentitygovernanceaccessreviewdefinitioninstancerecommendation)
+
 

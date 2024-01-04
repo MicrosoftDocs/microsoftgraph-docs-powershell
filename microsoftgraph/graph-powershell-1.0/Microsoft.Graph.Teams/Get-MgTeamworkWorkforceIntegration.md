@@ -11,7 +11,6 @@ ms.prod: microsoft-teams
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a workforceIntegration object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamworkWorkforceIntegration](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamworkWorkforceIntegration?view=graph-powershell-beta)
@@ -39,7 +38,12 @@ Get-MgTeamworkWorkforceIntegration -InputObject <ITeamsIdentity> [-ExpandPropert
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a workforceIntegration object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/workforceintegration-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/workforceintegration-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -291,4 +295,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Get-MgBetaTeamworkWorkforceIntegration](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamworkWorkforceIntegration?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkworkforceintegration](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkworkforceintegration)
+
 

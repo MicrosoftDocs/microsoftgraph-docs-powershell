@@ -9,8 +9,8 @@ ms.prod: industry-data-etl
 # New-MgBetaExternalIndustryDataInboundFlow
 
 ## SYNOPSIS
-Create a new inboundFlow object.
-The following prerequisite resources are required when you create an inboundFlow: This API is available in the following national cloud deployments.
+Create a new inboundFileFlow object.
+The following prerequisite resources are required when you create an inboundFileFlow:
 
 ## SYNTAX
 
@@ -29,8 +29,11 @@ New-MgBetaExternalIndustryDataInboundFlow -BodyParameter <IMicrosoftGraphIndustr
 ```
 
 ## DESCRIPTION
-Create a new inboundFlow object.
-The following prerequisite resources are required when you create an inboundFlow: This API is available in the following national cloud deployments.
+Create a new inboundFileFlow object.
+The following prerequisite resources are required when you create an inboundFileFlow:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-inboundfileflow-post-permissions.md)]
 
 ## PARAMETERS
 
@@ -368,5 +371,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatainboundflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatainboundflow)
+
 
 

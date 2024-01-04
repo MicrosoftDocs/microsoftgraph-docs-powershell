@@ -11,7 +11,6 @@ ms.prod: education
 ## SYNOPSIS
 Activate an inactive educationAssignment to signal that the assignment has further action items for teachers and students.
 This action can only be performed by a teacher on currently inactive assignments.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -30,7 +29,9 @@ Initialize-MgBetaEducationUserAssignment -InputObject <IEducationIdentity> [-Wha
 ## DESCRIPTION
 Activate an inactive educationAssignment to signal that the assignment has further action items for teachers and students.
 This action can only be performed by a teacher on currently inactive assignments.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-activate-permissions.md)]
 
 ## PARAMETERS
 
@@ -148,5 +149,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/initialize-mgbetaeducationuserassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/initialize-mgbetaeducationuserassignment)
+
 
 

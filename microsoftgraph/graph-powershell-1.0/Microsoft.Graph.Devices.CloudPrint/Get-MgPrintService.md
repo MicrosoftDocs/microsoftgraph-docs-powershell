@@ -11,7 +11,6 @@ ms.prod: cloud-printing
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a print service.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPrintService](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintService?view=graph-powershell-beta)
@@ -39,7 +38,12 @@ Get-MgPrintService -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty <S
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a print service.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printservice-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/print-list-services-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -272,4 +276,5 @@ INPUTOBJECT \<IDevicesCloudPrintIdentity\>: Identity Parameter
 [Get-MgBetaPrintService](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintService?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintservice](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintservice)
+
 

@@ -16,7 +16,6 @@ We recommend that you send a request in shorter time intervals (every 15 minutes
 Make sure that these requests are successful to prevent the call from timing out and ending.
 Attempting to send a request to a call that has already ended will result in a 404 Not-Found error.
 The resources related to the call should be cleaned up on the application side.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaKeepCommunicationCallAlive](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaKeepCommunicationCallAlive?view=graph-powershell-beta)
@@ -42,7 +41,9 @@ We recommend that you send a request in shorter time intervals (every 15 minutes
 Make sure that these requests are successful to prevent the call from timing out and ending.
 Attempting to send a request to a call that has already ended will result in a 404 Not-Found error.
 The resources related to the call should be cleaned up on the application side.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-keepalive-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -156,6 +157,7 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[AudioRoutingGroupId \<String\>\]: The unique identifier of audioRoutingGroup
   \[CallId \<String\>\]: The unique identifier of call
   \[CallRecordId \<String\>\]: The unique identifier of callRecord
+  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
   \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
   \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
   \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession
@@ -170,4 +172,5 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
 [Invoke-MgBetaKeepCommunicationCallAlive](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaKeepCommunicationCallAlive?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgkeepcommunicationcallalive](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgkeepcommunicationcallalive)
+
 

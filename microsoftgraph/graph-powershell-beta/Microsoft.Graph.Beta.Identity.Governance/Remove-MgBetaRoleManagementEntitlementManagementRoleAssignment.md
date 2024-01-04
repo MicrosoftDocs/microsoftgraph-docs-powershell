@@ -9,7 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete a unifiedRoleAssignment object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgRoleManagementEntitlementManagementRoleAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgRoleManagementEntitlementManagementRoleAssignment?view=graph-powershell-1.0)
@@ -30,7 +29,6 @@ Remove-MgBetaRoleManagementEntitlementManagementRoleAssignment -InputObject <IId
 
 ## DESCRIPTION
 Delete a unifiedRoleAssignment object.
-This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -246,5 +244,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [Remove-MgRoleManagementEntitlementManagementRoleAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgRoleManagementEntitlementManagementRoleAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetarolemanagemententitlementmanagementroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetarolemanagemententitlementmanagementroleassignment)
+
 
 

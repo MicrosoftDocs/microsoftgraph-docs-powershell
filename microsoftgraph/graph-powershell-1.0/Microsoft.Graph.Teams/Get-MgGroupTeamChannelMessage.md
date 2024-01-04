@@ -11,7 +11,6 @@ ms.prod: microsoft-teams
 
 ## SYNOPSIS
 Retrieve a single message or a message reply in a channel or a chat.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamChannelMessage?view=graph-powershell-beta)
@@ -39,7 +38,6 @@ Get-MgGroupTeamChannelMessage -InputObject <ITeamsIdentity> [-ExpandProperty <St
 
 ## DESCRIPTION
 Retrieve a single message or a message reply in a channel or a chat.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
@@ -310,4 +308,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Get-MgBetaGroupTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamChannelMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamchannelmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamchannelmessage)
+
 

@@ -10,7 +10,6 @@ ms.prod: cloud-pc
 
 ## SYNOPSIS
 Get the total aggregated remote connection usage of a Cloud PC during a given time span.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -31,7 +30,9 @@ Get-MgBetaDeviceManagementVirtualEndpointReportTotalAggregatedRemoteConnectionRe
 
 ## DESCRIPTION
 Get the total aggregated remote connection usage of a Cloud PC during a given time span.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-gettotalaggregatedremoteconnectionreports-permissions.md)]
 
 ## PARAMETERS
 
@@ -260,5 +261,6 @@ BODYPARAMETER \<IPaths6MqafvDevicemanagementVirtualendpointReportsMicrosoftGraph
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreporttotalaggregatedremoteconnectionreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreporttotalaggregatedremoteconnectionreport)
+
 
 

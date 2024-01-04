@@ -12,7 +12,6 @@ ms.prod: sharepoint
 You can use createLink action to share a DriveItem via a sharing link.
 The createLink action will create a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
 DriveItem resources inherit sharing permissions from their ancestors.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDriveItemLink](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItemLink?view=graph-powershell-beta)
@@ -51,7 +50,9 @@ New-MgDriveItemLink -InputObject <IFilesIdentity>
 You can use createLink action to share a DriveItem via a sharing link.
 The createLink action will create a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
 DriveItem resources inherit sharing permissions from their ancestors.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-createlink-permissions.md)]
 
 ## PARAMETERS
 
@@ -308,5 +309,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [New-MgBetaDriveItemLink](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItemLink?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriveitemlink](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriveitemlink)
+
 
 

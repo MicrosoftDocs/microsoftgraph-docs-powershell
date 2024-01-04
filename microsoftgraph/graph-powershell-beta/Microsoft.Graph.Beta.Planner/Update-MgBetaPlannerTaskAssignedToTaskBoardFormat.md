@@ -45,6 +45,9 @@ Update-MgBetaPlannerTaskAssignedToTaskBoardFormat -InputObject <IPlannerIdentity
 ## DESCRIPTION
 Update the navigation property assignedToTaskBoardFormat in planner
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerassignedtotaskboardtaskformat-update-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -260,4 +263,5 @@ INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
 [Update-MgPlannerTaskAssignedToTaskBoardFormat](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerTaskAssignedToTaskBoardFormat?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertaskassignedtotaskboardformat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertaskassignedtotaskboardformat)
+
 

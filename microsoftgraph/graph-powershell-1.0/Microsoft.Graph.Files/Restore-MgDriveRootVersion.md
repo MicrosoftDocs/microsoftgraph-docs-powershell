@@ -11,7 +11,6 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Restore a previous version of a DriveItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the file.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Restore-MgBetaDriveRootVersion](/powershell/module/Microsoft.Graph.Beta.Files/Restore-MgBetaDriveRootVersion?view=graph-powershell-beta)
@@ -32,7 +31,9 @@ Restore-MgDriveRootVersion -InputObject <IFilesIdentity> [-PassThru] [-WhatIf] [
 ## DESCRIPTION
 Restore a previous version of a DriveItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the file.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitemversion-restore-permissions.md)]
 
 ## PARAMETERS
 
@@ -173,5 +174,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Restore-MgBetaDriveRootVersion](/powershell/module/Microsoft.Graph.Beta.Files/Restore-MgBetaDriveRootVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mgdriverootversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mgdriverootversion)
+
 
 

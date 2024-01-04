@@ -11,7 +11,6 @@ ms.prod: identity-and-sign-in
 ## SYNOPSIS
 Delete the default organizational branding object.
 To delete the organizationalBranding object, all images (Stream types) must first be removed from the object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgOrganizationBranding](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgOrganizationBranding?view=graph-powershell-1.0)
@@ -33,7 +32,9 @@ Remove-MgBetaOrganizationBranding -InputObject <IIdentityDirectoryManagementIden
 ## DESCRIPTION
 Delete the default organizational branding object.
 To delete the organizationalBranding object, all images (Stream types) must first be removed from the object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/organizationalbranding-delete-permissions.md)]
 
 ## PARAMETERS
 
@@ -193,5 +194,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 [Remove-MgOrganizationBranding](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgOrganizationBranding?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetaorganizationbranding](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetaorganizationbranding)
+
 
 

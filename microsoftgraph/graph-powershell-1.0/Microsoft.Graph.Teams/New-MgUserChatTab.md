@@ -11,7 +11,6 @@ ms.prod: microsoft-teams
 ## SYNOPSIS
 Add (pin) a tab to the specified chat.
 The corresponding app must already be installed in the chat.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserChatTab](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChatTab?view=graph-powershell-beta)
@@ -47,7 +46,9 @@ New-MgUserChatTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphT
 ## DESCRIPTION
 Add (pin) a tab to the specified chat.
 The corresponding app must already be installed in the chat.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-post-tabs-permissions.md)]
 
 ## EXAMPLES
 
@@ -394,4 +395,5 @@ For example, if a user changes their display name, the API might show the new va
 [New-MgBetaUserChatTab](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChatTab?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchattab](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchattab)
+
 

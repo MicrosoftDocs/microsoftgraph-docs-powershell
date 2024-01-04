@@ -14,7 +14,6 @@ The status applies to operations that return the Operation-Location header in th
   You can poll the Operation-Location endpoint until the status property returns completed or failed.
 If the status is completed, the resourceLocation property contains the resource endpoint URI.
 If the status is failed, the error and @api.diagnostics properties provide error information.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSiteOnenoteOperation](/powershell/module/Microsoft.Graph.Notes/Get-MgSiteOnenoteOperation?view=graph-powershell-1.0)
@@ -39,7 +38,9 @@ The status applies to operations that return the Operation-Location header in th
   You can poll the Operation-Location endpoint until the status property returns completed or failed.
 If the status is completed, the resourceLocation property contains the resource endpoint URI.
 If the status is failed, the error and @api.diagnostics properties provide error information.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onenoteoperation-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -151,4 +152,5 @@ INPUTOBJECT \<INotesIdentity\>: Identity Parameter
 [Get-MgSiteOnenoteOperation](/powershell/module/Microsoft.Graph.Notes/Get-MgSiteOnenoteOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasiteonenoteoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasiteonenoteoperation)
+
 

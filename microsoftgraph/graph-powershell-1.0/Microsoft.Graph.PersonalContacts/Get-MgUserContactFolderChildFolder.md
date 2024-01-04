@@ -44,6 +44,9 @@ Navigation property.
 Read-only.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contactfolder-list-childfolders-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -283,4 +286,5 @@ INPUTOBJECT \<IPersonalContactsIdentity\>: Identity Parameter
 [Get-MgBetaUserContactFolderChildFolder](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContactFolderChildFolder?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactfolderchildfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactfolderchildfolder)
+
 

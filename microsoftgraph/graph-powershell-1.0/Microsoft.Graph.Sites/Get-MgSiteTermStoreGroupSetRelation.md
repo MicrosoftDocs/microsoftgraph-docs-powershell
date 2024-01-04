@@ -57,6 +57,9 @@ Get-MgSiteTermStoreGroupSetRelation -InputObject <ISitesIdentity> [-ExpandProper
 ## DESCRIPTION
 Indicates which terms have been pinned or reused directly under the set.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-term-list-relations-permissions.md)]
+
 ## EXAMPLES
 
 ## PARAMETERS
@@ -362,4 +365,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgBetaSiteTermStoreGroupSetRelation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreGroupSetRelation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoregroupsetrelation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoregroupsetrelation)
+
 

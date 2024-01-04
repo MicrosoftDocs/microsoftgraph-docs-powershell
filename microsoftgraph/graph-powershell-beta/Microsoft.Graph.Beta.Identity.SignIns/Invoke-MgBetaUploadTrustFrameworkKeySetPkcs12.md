@@ -12,7 +12,6 @@ ms.prod: identity-and-sign-in
 Upload a PKCS12 format key (PFX) to a trustFrameworkKeyset.
 The input is a base-64 encoded value of the Pfx certificate contents.
 This method returns trustFrameworkKey.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -48,7 +47,9 @@ Invoke-MgBetaUploadTrustFrameworkKeySetPkcs12 -InputObject <IIdentitySignInsIden
 Upload a PKCS12 format key (PFX) to a trustFrameworkKeyset.
 The input is a base-64 encoded value of the Pfx certificate contents.
 This method returns trustFrameworkKey.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trustframeworkkeyset-uploadpkcs12-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgBetaUploadTrustFrameworkKeySetPkcs12 Cmdlet
@@ -213,6 +214,7 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[ActivityBasedTimeoutPolicyId \<String\>\]: The unique identifier of activityBasedTimeoutPolicy
   \[AppManagementPolicyId \<String\>\]: The unique identifier of appManagementPolicy
   \[AuthenticationCombinationConfigurationId \<String\>\]: The unique identifier of authenticationCombinationConfiguration
+  \[AuthenticationConditionApplicationAppId \<String\>\]: The unique identifier of authenticationConditionApplication
   \[AuthenticationContextClassReferenceId \<String\>\]: The unique identifier of authenticationContextClassReference
   \[AuthenticationEventListenerId \<String\>\]: The unique identifier of authenticationEventListener
   \[AuthenticationEventsFlowId \<String\>\]: The unique identifier of authenticationEventsFlow
@@ -290,4 +292,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetauploadtrustframeworkkeysetpkcs12](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetauploadtrustframeworkkeysetpkcs12)
+
 

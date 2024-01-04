@@ -725,9 +725,9 @@ Supports $filter (eq).
 Supports $filter (eq, ne).
   \[TicketInfo \<IMicrosoftGraphTicketInfo\>\]: ticketInfo
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[TicketApproverIdentityId \<String\>\]: 
+    \[TicketApproverIdentityId \<String\>\]: ID for the request approver.
     \[TicketNumber \<String\>\]: The ticket number.
-    \[TicketSubmitterIdentityId \<String\>\]: 
+    \[TicketSubmitterIdentityId \<String\>\]: ID for the request submitter.
     \[TicketSystem \<String\>\]: The description of the ticket system.
 
 CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
@@ -1074,14 +1074,15 @@ In PIM, when the  eligible or active assignment becomes active.
 
 TICKETINFO \<IMicrosoftGraphTicketInfo\>: ticketInfo
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[TicketApproverIdentityId \<String\>\]: 
+  \[TicketApproverIdentityId \<String\>\]: ID for the request approver.
   \[TicketNumber \<String\>\]: The ticket number.
-  \[TicketSubmitterIdentityId \<String\>\]: 
+  \[TicketSubmitterIdentityId \<String\>\]: ID for the request submitter.
   \[TicketSystem \<String\>\]: The description of the ticket system.
 
 ## RELATED LINKS
 [Update-MgRoleManagementDirectoryRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementDirectoryRoleEligibilityScheduleRequest?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagementdirectoryroleeligibilityschedulerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagementdirectoryroleeligibilityschedulerequest)
+
 
 

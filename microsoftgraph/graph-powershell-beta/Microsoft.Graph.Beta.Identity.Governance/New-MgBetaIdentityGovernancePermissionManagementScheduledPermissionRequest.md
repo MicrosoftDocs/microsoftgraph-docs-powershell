@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaIdentityGovernancePermissionManagementScheduledPermissionRequest
 
 ## SYNOPSIS
-Create new navigation property to scheduledPermissionsRequests for identityGovernance
+Create a new scheduledPermissionsRequest object.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ New-MgBetaIdentityGovernancePermissionManagementScheduledPermissionRequest
 ```
 
 ## DESCRIPTION
-Create new navigation property to scheduledPermissionsRequests for identityGovernance
+Create a new scheduledPermissionsRequest object.
 
 ## PARAMETERS
 
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-.
+Defines when the identity created the request.
 
 ```yaml
 Type: DateTime
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -Justification
-.
+The identity's justification for the request.
 
 ```yaml
 Type: String
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -Notes
-.
+Additional context for the permissions request.
 
 ```yaml
 Type: String
@@ -237,18 +237,20 @@ BODYPARAMETER \<IMicrosoftGraphScheduledPermissionsRequest\>: scheduledPermissio
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  \[CreatedDateTime \<DateTime?\>\]: 
-  \[Justification \<String\>\]: 
-  \[Notes \<String\>\]: 
+  \[CreatedDateTime \<DateTime?\>\]: Defines when the identity created the request.
+  \[Justification \<String\>\]: The identity's justification for the request.
+  \[Notes \<String\>\]: Additional context for the permissions request.
   \[RequestedPermissions \<IMicrosoftGraphPermissionsDefinition\>\]: permissionsDefinition
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[AuthorizationSystemInfo \<IMicrosoftGraphPermissionsDefinitionAuthorizationSystem\>\]: permissionsDefinitionAuthorizationSystem
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[AuthorizationSystemId \<String\>\]: 
-      \[AuthorizationSystemType \<String\>\]: 
+      \[AuthorizationSystemId \<String\>\]: ID of the authorization system retrieved from the customer cloud environment.
+      \[AuthorizationSystemType \<String\>\]: The type of authorization system.
     \[IdentityInfo \<IMicrosoftGraphPermissionsDefinitionAuthorizationSystemIdentity\>\]: permissionsDefinitionAuthorizationSystemIdentity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[ExternalId \<String\>\]: 
+      \[ExternalId \<String\>\]: Unique ID of the identity within the external system.
+Prefixed with rsn: if this is a SAML or ED user in AWS.
+Alternate key.
       \[IdentityType \<String\>\]: permissionsDefinitionIdentityType
       \[Source \<IMicrosoftGraphPermissionsDefinitionIdentitySource\>\]: permissionsDefinitionIdentitySource
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -300,20 +302,22 @@ In PIM, when the  eligible or active assignment becomes active.
   \[StatusDetail \<String\>\]: statusDetail
   \[TicketInfo \<IMicrosoftGraphTicketInfo\>\]: ticketInfo
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[TicketApproverIdentityId \<String\>\]: 
+    \[TicketApproverIdentityId \<String\>\]: ID for the request approver.
     \[TicketNumber \<String\>\]: The ticket number.
-    \[TicketSubmitterIdentityId \<String\>\]: 
+    \[TicketSubmitterIdentityId \<String\>\]: ID for the request submitter.
     \[TicketSystem \<String\>\]: The description of the ticket system.
 
 REQUESTEDPERMISSIONS \<IMicrosoftGraphPermissionsDefinition\>: permissionsDefinition
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[AuthorizationSystemInfo \<IMicrosoftGraphPermissionsDefinitionAuthorizationSystem\>\]: permissionsDefinitionAuthorizationSystem
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[AuthorizationSystemId \<String\>\]: 
-    \[AuthorizationSystemType \<String\>\]: 
+    \[AuthorizationSystemId \<String\>\]: ID of the authorization system retrieved from the customer cloud environment.
+    \[AuthorizationSystemType \<String\>\]: The type of authorization system.
   \[IdentityInfo \<IMicrosoftGraphPermissionsDefinitionAuthorizationSystemIdentity\>\]: permissionsDefinitionAuthorizationSystemIdentity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[ExternalId \<String\>\]: 
+    \[ExternalId \<String\>\]: Unique ID of the identity within the external system.
+Prefixed with rsn: if this is a SAML or ED user in AWS.
+Alternate key.
     \[IdentityType \<String\>\]: permissionsDefinitionIdentityType
     \[Source \<IMicrosoftGraphPermissionsDefinitionIdentitySource\>\]: permissionsDefinitionIdentitySource
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -366,13 +370,14 @@ In PIM, when the  eligible or active assignment becomes active.
 
 TICKETINFO \<IMicrosoftGraphTicketInfo\>: ticketInfo
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[TicketApproverIdentityId \<String\>\]: 
+  \[TicketApproverIdentityId \<String\>\]: ID for the request approver.
   \[TicketNumber \<String\>\]: The ticket number.
-  \[TicketSubmitterIdentityId \<String\>\]: 
+  \[TicketSubmitterIdentityId \<String\>\]: ID for the request submitter.
   \[TicketSystem \<String\>\]: The description of the ticket system.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancepermissionmanagementscheduledpermissionrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancepermissionmanagementscheduledpermissionrequest)
+
 
 

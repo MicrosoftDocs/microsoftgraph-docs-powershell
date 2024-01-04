@@ -10,7 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Evaluate whether a user or device is or would be a member of a dynamic group.
 The membership rule is returned along with other details that were used in the evaluation.
-You can complete this operation in the following ways: This API is available in the following national cloud deployments.
+You can complete this operation in the following ways:
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ Test-MgBetaGroupDynamicMembership -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Evaluate whether a user or device is or would be a member of a dynamic group.
 The membership rule is returned along with other details that were used in the evaluation.
-You can complete this operation in the following ways: This API is available in the following national cloud deployments.
+You can complete this operation in the following ways:
 
 ## EXAMPLES
 ### Example 1: Using the Test-MgBetaGroupDynamicMembership Cmdlet
@@ -233,4 +233,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupdynamicmembership](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupdynamicmembership)
+
 

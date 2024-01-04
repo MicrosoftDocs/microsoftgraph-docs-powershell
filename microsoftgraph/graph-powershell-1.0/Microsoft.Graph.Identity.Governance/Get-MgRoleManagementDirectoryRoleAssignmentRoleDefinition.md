@@ -10,7 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 The roleDefinition the assignment is for.
 Supports $expand.
-roleDefinition.Id will be auto expanded.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementDirectoryRoleAssignmentRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleAssignmentRoleDefinition?view=graph-powershell-beta)
@@ -32,7 +31,6 @@ Get-MgRoleManagementDirectoryRoleAssignmentRoleDefinition -InputObject <IIdentit
 ## DESCRIPTION
 The roleDefinition the assignment is for.
 Supports $expand.
-roleDefinition.Id will be auto expanded.
 
 ## PARAMETERS
 
@@ -186,5 +184,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [Get-MgBetaRoleManagementDirectoryRoleAssignmentRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleAssignmentRoleDefinition?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagementdirectoryroleassignmentroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagementdirectoryroleassignmentroledefinition)
+
 
 

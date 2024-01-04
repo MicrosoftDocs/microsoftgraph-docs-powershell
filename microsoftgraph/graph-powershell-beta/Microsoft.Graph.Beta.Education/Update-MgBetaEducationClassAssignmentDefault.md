@@ -11,7 +11,6 @@ ms.prod: education
 ## SYNOPSIS
 Update the properties of an educationAssignmentDefaults object.
 Only teachers can update these settings.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgEducationClassAssignmentDefault](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClassAssignmentDefault?view=graph-powershell-1.0)
@@ -47,7 +46,9 @@ Update-MgBetaEducationClassAssignmentDefault -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Update the properties of an educationAssignmentDefaults object.
 Only teachers can update these settings.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignmentdefaults-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -291,4 +292,5 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 [Update-MgEducationClassAssignmentDefault](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClassAssignmentDefault?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentdefault](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentdefault)
+
 

@@ -10,7 +10,6 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Remove a user as a registered owner of the device.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,9 @@ Remove-MgBetaUserDeviceRegisteredOwnerByRef -InputObject <ICrossDeviceExperience
 
 ## DESCRIPTION
 Remove a user as a registered owner of the device.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-delete-registeredowners-permissions.md)]
 
 ## PARAMETERS
 
@@ -197,5 +198,6 @@ INPUTOBJECT \<ICrossDeviceExperiencesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/remove-mgbetauserdeviceregisteredownerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/remove-mgbetauserdeviceregisteredownerbyref)
+
 
 

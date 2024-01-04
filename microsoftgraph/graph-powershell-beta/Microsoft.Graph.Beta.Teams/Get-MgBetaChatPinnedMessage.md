@@ -52,6 +52,9 @@ Get-MgBetaChatPinnedMessage -InputObject <ITeamsIdentity> [-ExpandProperty <Stri
 A collection of all the pinned messages in the chat.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-list-pinnedmessages-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: List all the pinned messages in a chat
 
@@ -299,6 +302,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
   \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
   \[ConversationMemberId \<String\>\]: The unique identifier of conversationMember
+  \[DayNoteId \<String\>\]: The unique identifier of dayNote
   \[DeletedChatId \<String\>\]: The unique identifier of deletedChat
   \[DeletedTeamId \<String\>\]: The unique identifier of deletedTeam
   \[GroupId \<String\>\]: The unique identifier of group
@@ -335,4 +339,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Get-MgChatPinnedMessage](/powershell/module/Microsoft.Graph.Teams/Get-MgChatPinnedMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatpinnedmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatpinnedmessage)
+
 

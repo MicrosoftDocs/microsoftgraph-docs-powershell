@@ -13,7 +13,6 @@ Create an upload session that allows an app to iteratively upload ranges of a bi
 As part of the response, this action returns an upload URL that can be used in subsequent sequential PUT queries.
 Request headers for each PUT operation can be used to specify the exact range of bytes to be uploaded.
 This allows transfer to be resumed, in case the network connection is dropped during upload.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPrintShareJobDocumentUploadSession](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintShareJobDocumentUploadSession?view=graph-powershell-beta)
@@ -54,7 +53,9 @@ Create an upload session that allows an app to iteratively upload ranges of a bi
 As part of the response, this action returns an upload URL that can be used in subsequent sequential PUT queries.
 Request headers for each PUT operation can be used to specify the exact range of bytes to be uploaded.
 This allows transfer to be resumed, in case the network connection is dropped during upload.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printdocument-createuploadsession-permissions.md)]
 
 ## PARAMETERS
 
@@ -246,5 +247,6 @@ PROPERTIES \<IMicrosoftGraphPrintDocumentUploadProperties\>: printDocumentUpload
 [New-MgBetaPrintShareJobDocumentUploadSession](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintShareJobDocumentUploadSession?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintsharejobdocumentuploadsession](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintsharejobdocumentuploadsession)
+
 
 

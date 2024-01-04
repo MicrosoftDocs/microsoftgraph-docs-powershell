@@ -40,6 +40,9 @@ Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -InputObject <ISecur
 ## DESCRIPTION
 Data source entity for groups associated with the custodian.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycustodian-list-unifiedgroupsources-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -340,4 +343,5 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasecustodianunifiedgroupsource](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasecustodianunifiedgroupsource)
+
 

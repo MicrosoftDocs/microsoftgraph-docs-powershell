@@ -10,7 +10,6 @@ ms.prod: planner
 
 ## SYNOPSIS
 Read the properties and relationships of a plannerRoster object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -35,7 +34,9 @@ Get-MgBetaPlannerRoster -InputObject <IPlannerIdentity> [-ExpandProperty <String
 
 ## DESCRIPTION
 Read the properties and relationships of a plannerRoster object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerroster-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaPlannerRoster Cmdlet
@@ -258,4 +259,5 @@ INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerroster](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerroster)
+
 

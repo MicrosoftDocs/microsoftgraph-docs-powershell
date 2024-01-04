@@ -11,7 +11,6 @@ ms.prod: cloud-pc
 ## SYNOPSIS
 Get the overall connection quality reports for all devices within a current tenant during a given time period, including metrics like the average round trip time (P50), average available bandwidth, and UDP connection percentage.
 Get also other real-time metrics such as last connection round trip time, last connection client IP, last connection gateway, and last connection protocol.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -33,7 +32,9 @@ Get-MgBetaDeviceManagementVirtualEndpointReportConnectionQualityReport -OutFile 
 ## DESCRIPTION
 Get the overall connection quality reports for all devices within a current tenant during a given time period, including metrics like the average round trip time (P50), average available bandwidth, and UDP connection percentage.
 Get also other real-time metrics such as last connection round trip time, last connection client IP, last connection gateway, and last connection protocol.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-getconnectionqualityreports-permissions.md)]
 
 ## PARAMETERS
 
@@ -262,5 +263,6 @@ BODYPARAMETER \<IPaths1Rd0Fy0DevicemanagementVirtualendpointReportsMicrosoftGrap
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportconnectionqualityreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportconnectionqualityreport)
+
 
 

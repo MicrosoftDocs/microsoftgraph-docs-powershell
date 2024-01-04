@@ -12,7 +12,6 @@ ms.prod: education
 ## SYNOPSIS
 Retrieve the properties and relationships of an educationRubric object.
 Only teachers and students can perform this operation.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgEducationMeRubric](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeRubric?view=graph-powershell-1.0)
@@ -41,7 +40,12 @@ Get-MgBetaEducationMeRubric -InputObject <IEducationIdentity> [-ExpandProperty <
 ## DESCRIPTION
 Retrieve the properties and relationships of an educationRubric object.
 Only teachers and students can perform this operation.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationrubric-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationuser-list-rubrics-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -278,4 +282,5 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 [Get-MgEducationMeRubric](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeRubric?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmerubric](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmerubric)
+
 

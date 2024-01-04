@@ -10,7 +10,6 @@ ms.prod: bookings
 
 ## SYNOPSIS
 Create a new bookingService for the specified bookingBusiness.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaBookingBusinessService](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaBookingBusinessService?view=graph-powershell-beta)
@@ -57,7 +56,9 @@ New-MgBookingBusinessService -InputObject <IBookingsIdentity> -BodyParameter <IM
 
 ## DESCRIPTION
 Create a new bookingService for the specified bookingBusiness.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-post-services-permissions.md)]
 
 ## PARAMETERS
 
@@ -602,6 +603,7 @@ It's denoted in ISO 8601 format.
   \[Recipients \<String\>\]: bookingReminderRecipients
 
 INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
+  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
   \[BookingAppointmentId \<String\>\]: The unique identifier of bookingAppointment
   \[BookingBusinessId \<String\>\]: The unique identifier of bookingBusiness
   \[BookingCurrencyId \<String\>\]: The unique identifier of bookingCurrency
@@ -609,6 +611,13 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[BookingCustomerBaseId \<String\>\]: The unique identifier of bookingCustomerBase
   \[BookingServiceId \<String\>\]: The unique identifier of bookingService
   \[BookingStaffMemberBaseId \<String\>\]: The unique identifier of bookingStaffMemberBase
+  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
+  \[Role \<String\>\]: Usage: role='{role}'
+  \[UserId \<String\>\]: Usage: userId='{userId}'
+  \[VirtualEventId \<String\>\]: The unique identifier of virtualEvent
+  \[VirtualEventRegistrationId \<String\>\]: The unique identifier of virtualEventRegistration
+  \[VirtualEventSessionId \<String\>\]: The unique identifier of virtualEventSession
+  \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
 SCHEDULINGPOLICY \<IMicrosoftGraphBookingSchedulingPolicy\>: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -625,5 +634,6 @@ Use the email address specified in the email property of the bookingBusiness ent
 [New-MgBetaBookingBusinessService](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaBookingBusinessService?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessservice](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessservice)
+
 
 

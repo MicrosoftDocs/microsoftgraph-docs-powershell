@@ -9,8 +9,7 @@ ms.prod: sites-and-lists
 # Update-MgShareListContentTypeColumn
 
 ## SYNOPSIS
-Update a site\]\[\], a \[list\]\[\], or a \[content type\]\[contentType\] \[column\]\[columnDefinition\].
-This API is available in the following \[national cloud deployments.
+Update a \[site\]\[\], a \[list\]\[\], or a \[content type\]\[contentType\] \[column\]\[columnDefinition\].
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaShareListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListContentTypeColumn?view=graph-powershell-beta)
@@ -64,8 +63,10 @@ Update-MgShareListContentTypeColumn -InputObject <IFilesIdentity>
 ```
 
 ## DESCRIPTION
-Update a site\]\[\], a \[list\]\[\], or a \[content type\]\[contentType\] \[column\]\[columnDefinition\].
-This API is available in the following \[national cloud deployments.
+Update a \[site\]\[\], a \[list\]\[\], or a \[content type\]\[contentType\] \[column\]\[columnDefinition\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/columndefinition-update-permissions.md)]
 
 ## PARAMETERS
 
@@ -1222,5 +1223,6 @@ For examples, see Examples of common formulas in lists.
 [Update-MgBetaShareListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListContentTypeColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharelistcontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharelistcontenttypecolumn)
+
 
 

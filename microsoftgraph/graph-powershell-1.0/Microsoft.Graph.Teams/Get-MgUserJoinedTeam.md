@@ -10,7 +10,6 @@ ms.prod: microsoft-teams
 
 ## SYNOPSIS
 Get the teams in Microsoft Teams that the user is a direct member of.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserJoinedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserJoinedTeam?view=graph-powershell-beta)
@@ -25,7 +24,6 @@ Get-MgUserJoinedTeam -UserId <String> [-ExpandProperty <String[]>] [-Filter <Str
 
 ## DESCRIPTION
 Get the teams in Microsoft Teams that the user is a direct member of.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -223,4 +221,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgBetaUserJoinedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserJoinedTeam?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserjoinedteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserjoinedteam)
+
 

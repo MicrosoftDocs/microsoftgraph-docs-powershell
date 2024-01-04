@@ -309,3 +309,4 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsiteinformationprotectionthreatassessmentrequestresult](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsiteinformationprotectionthreatassessmentrequestresult)
 
 
+

@@ -11,7 +11,6 @@ ms.prod: governance
 ## SYNOPSIS
 Delete an accessPackage object.
 You cannot delete an access package if it has any accessPackageAssignment.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaEntitlementManagementAccessPackage?view=graph-powershell-beta)
@@ -33,7 +32,9 @@ Remove-MgEntitlementManagementAccessPackage -InputObject <IIdentityGovernanceIde
 ## DESCRIPTION
 Delete an accessPackage object.
 You cannot delete an access package if it has any accessPackageAssignment.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackage-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -231,4 +232,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [Remove-MgBetaEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaEntitlementManagementAccessPackage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementaccesspackage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementaccesspackage)
+
 

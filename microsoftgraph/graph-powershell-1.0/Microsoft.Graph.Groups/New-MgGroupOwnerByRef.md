@@ -10,7 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Add a user or service principal to a Microsoft 365 or security group's owners.
 The owners are a set of users or service principals who are allowed to modify the group object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupOwnerByRef?view=graph-powershell-beta)
@@ -44,7 +43,6 @@ New-MgGroupOwnerByRef -InputObject <IGroupsIdentity> -BodyParameter <IReferenceC
 ## DESCRIPTION
 Add a user or service principal to a Microsoft 365 or security group's owners.
 The owners are a set of users or service principals who are allowed to modify the group object.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Add an owner to a group
@@ -247,4 +245,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [New-MgBetaGroupOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupOwnerByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupownerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupownerbyref)
+
 

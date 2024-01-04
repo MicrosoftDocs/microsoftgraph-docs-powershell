@@ -10,7 +10,6 @@ ms.prod: planner
 
 ## SYNOPSIS
 Retrieve a list of plannerBucket objects contained by a plannerPlan object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupPlannerPlanBucket](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaGroupPlannerPlanBucket?view=graph-powershell-beta)
@@ -25,7 +24,9 @@ Get-MgGroupPlannerPlanBucket -GroupId <String> -PlannerPlanId <String> [-ExpandP
 
 ## DESCRIPTION
 Retrieve a list of plannerBucket objects contained by a plannerPlan object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannerplan-list-buckets-permissions.md)]
 
 ## EXAMPLES
 
@@ -226,4 +227,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgBetaGroupPlannerPlanBucket](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaGroupPlannerPlanBucket?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mggroupplannerplanbucket](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mggroupplannerplanbucket)
+
 

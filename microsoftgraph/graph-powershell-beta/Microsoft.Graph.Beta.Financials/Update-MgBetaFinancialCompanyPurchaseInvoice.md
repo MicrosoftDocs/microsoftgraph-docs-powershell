@@ -984,3 +984,4 @@ VENDOR \<IMicrosoftGraphVendor\>: vendor
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanypurchaseinvoice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanypurchaseinvoice)
 
 
+

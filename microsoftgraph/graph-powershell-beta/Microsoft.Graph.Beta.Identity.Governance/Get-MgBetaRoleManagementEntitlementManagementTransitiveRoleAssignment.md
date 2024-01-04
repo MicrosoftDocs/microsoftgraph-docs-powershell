@@ -36,6 +36,9 @@ Get-MgBetaRoleManagementEntitlementManagementTransitiveRoleAssignment
 ## DESCRIPTION
 Get transitiveRoleAssignments from roleManagement
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rbacapplication-list-transitiveroleassignments-permissions.md)]
+
 ## PARAMETERS
 
 ### -All
@@ -355,5 +358,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententitlementmanagementtransitiveroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententitlementmanagementtransitiveroleassignment)
+
 
 

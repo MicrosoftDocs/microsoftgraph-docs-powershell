@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Delete an attachment from a user calendar event, message, Outlook task, or post.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -29,7 +28,6 @@ Remove-MgBetaGroupEventExceptionOccurrenceInstanceAttachment -InputObject <ICale
 
 ## DESCRIPTION
 Delete an attachment from a user calendar event, message, Outlook task, or post.
-This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -218,5 +216,6 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetagroupeventexceptionoccurrenceinstanceattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetagroupeventexceptionoccurrenceinstanceattachment)
+
 
 

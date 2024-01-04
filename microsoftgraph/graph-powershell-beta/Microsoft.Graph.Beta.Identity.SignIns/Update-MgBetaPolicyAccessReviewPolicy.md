@@ -10,7 +10,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 Update the properties of an accessReviewPolicy object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -29,7 +28,9 @@ Update-MgBetaPolicyAccessReviewPolicy -BodyParameter <IMicrosoftGraphAccessRevie
 
 ## DESCRIPTION
 Update the properties of an accessReviewPolicy object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewpolicy-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaPolicyAccessReviewPolicy Cmdlet
@@ -198,4 +199,5 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyaccessreviewpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyaccessreviewpolicy)
+
 

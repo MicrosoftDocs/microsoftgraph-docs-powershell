@@ -10,7 +10,6 @@ ms.prod: microsoft-teams
 
 ## SYNOPSIS
 Upgrade an app installation within a chat.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Update-MgBetaUserChatInstalledApp?view=graph-powershell-beta)
@@ -47,7 +46,6 @@ Update-MgUserChatInstalledApp -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Upgrade an app installation within a chat.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -283,4 +281,5 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 [Update-MgBetaUserChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Update-MgBetaUserChatInstalledApp?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/update-mguserchatinstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/update-mguserchatinstalledapp)
+
 

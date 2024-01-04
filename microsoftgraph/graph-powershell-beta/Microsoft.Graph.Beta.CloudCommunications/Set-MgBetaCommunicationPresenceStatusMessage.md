@@ -11,7 +11,6 @@ ms.prod: cloud-communications
 ## SYNOPSIS
 Set a presence status message for a user.
 An optional expiration date and time can be supplied.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Set-MgCommunicationPresenceStatusMessage](/powershell/module/Microsoft.Graph.CloudCommunications/Set-MgCommunicationPresenceStatusMessage?view=graph-powershell-1.0)
@@ -48,7 +47,9 @@ Set-MgBetaCommunicationPresenceStatusMessage -InputObject <ICloudCommunicationsI
 ## DESCRIPTION
 Set a presence status message for a user.
 An optional expiration date and time can be supplied.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/presence-setstatusmessage-permissions.md)]
 
 ## PARAMETERS
 
@@ -246,5 +247,6 @@ See below for possible values.
 [Set-MgCommunicationPresenceStatusMessage](/powershell/module/Microsoft.Graph.CloudCommunications/Set-MgCommunicationPresenceStatusMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetacommunicationpresencestatusmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetacommunicationpresencestatusmessage)
+
 
 

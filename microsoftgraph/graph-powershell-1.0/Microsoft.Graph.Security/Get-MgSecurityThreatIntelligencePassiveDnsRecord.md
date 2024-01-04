@@ -10,7 +10,6 @@ ms.prod: security
 
 ## SYNOPSIS
 Read the properties and relationships of a passiveDnsRecord object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligencePassiveDnsRecord](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligencePassiveDnsRecord?view=graph-powershell-beta)
@@ -38,7 +37,9 @@ Get-MgSecurityThreatIntelligencePassiveDnsRecord -InputObject <ISecurityIdentity
 
 ## DESCRIPTION
 Read the properties and relationships of a passiveDnsRecord object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-passivednsrecord-get-permissions.md)]
 
 ## PARAMETERS
 
@@ -297,5 +298,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Get-MgBetaSecurityThreatIntelligencePassiveDnsRecord](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligencePassiveDnsRecord?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencepassivednsrecord](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencepassivednsrecord)
+
 
 

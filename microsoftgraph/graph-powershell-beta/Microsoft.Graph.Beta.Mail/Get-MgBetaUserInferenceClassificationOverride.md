@@ -42,6 +42,9 @@ A set of overrides for a user to always classify messages from specific senders 
 Read-only.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/inferenceclassification-list-overrides-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -256,4 +259,5 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
 [Get-MgUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Mail/Get-MgUserInferenceClassificationOverride?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetauserinferenceclassificationoverride](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetauserinferenceclassificationoverride)
+
 

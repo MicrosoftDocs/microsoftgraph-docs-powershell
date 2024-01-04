@@ -242,6 +242,8 @@ function WebScrapping {
     $LastExternalDocUrlPathSegmentWithoutQueryParam = $LastExternalDocUrlPathSegmentWithQueryParam.Split("?")[0]
 
     $GraphDocsUrl = "https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-docs-contrib/main/api-reference/$GraphProfile/api/$LastExternalDocUrlPathSegmentWithoutQueryParam.md"
+    $PermissionsReference = "[!INCLUDE [permissions-table](~/../graphref/api-reference/$GraphProfile/includes/permissions/$LastExternalDocUrlPathSegmentWithoutQueryParam-permissions.md)]"
+    $PermissionsUrl = "https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-docs-contrib/main/api-reference/$GraphProfile/includes/permissions/$LastExternalDocUrlPathSegmentWithoutQueryParam-permissions.md"
     $MsprodContent = ""
     try{
         ($readStream, $HttpWebResponse) = FetchStream -GraphDocsUrl $GraphDocsUrl
@@ -271,6 +273,28 @@ function WebScrapping {
             }  | 
             Out-File $File
         }
+        #We need to check if the permissions url exists
+        $HttpStatus = ConfirmHttpStatus -PermissionsUrl $PermissionsUrl -GraphProfile $GraphProfile -Command $Command -ApiReferenceUrl $GraphDocsUrl
+        if($HttpStatus -eq 200){
+            #Add permissions reference
+            if ((Get-Content -Raw -Path $File) -match '(## DESCRIPTION)[\s\S]*## PARAMETERS') {
+                if((Get-Content -Raw -Path $File) -match $PermissionsReference){
+                    Write-Host "`n$PermissionsReference already exists in $File"
+                }else{
+                    if ((Get-Content -Raw -Path $File) -match '(## DESCRIPTION)[\s\S]*## EXAMPLES') {
+                        $Link = "**Permissions**`r`n$PermissionsReference`r`n`n## EXAMPLES"
+                        (Get-Content $File) | 
+                        Foreach-Object { $_ -replace '## EXAMPLES', $Link}  | 
+                        Out-File $File
+                    }else{
+                        $Link = "**Permissions**`r`n$PermissionsReference`r`n`n## PARAMETERS"
+                        (Get-Content $File) | 
+                        Foreach-Object { $_ -replace '## PARAMETERS', $Link}  | 
+                        Out-File $File
+                    }
+                }
+            }
+        }
     }catch {
         Write-Host "`nError Message: " $_.Exception.Message
         Write-Host "`nError in Line: " $_.InvocationInfo.Line
@@ -291,6 +315,44 @@ function FetchStream {
     $ReadStream = [System.IO.StreamReader]::new($ReceiveStream, $Encode)
     return ($ReadStream, $HttpWebResponse)
 }
+
+function ConfirmHttpStatus {
+    param(
+        [string]$PermissionsUrl,
+        [string]$GraphProfile = "v1.0",
+        [string]$Command = "Get-MgUser",
+        [string]$ApiReferenceUrl = "api-reference"
+    )
+    try {
+        $HTTP_Request = [System.Net.WebRequest]::Create($PermissionsUrl)
+        $HTTP_Response = $HTTP_Request.GetResponse()
+        $HTTP_Status = [int]$HTTP_Response.StatusCode
+        If (-not($HTTP_Response -eq $null)) {$HTTP_Response.Close() } 
+        return $HTTP_Status
+    }
+    catch {
+
+        #Create file if it doesn't exist
+        if (-not(Test-Path -PathType Container $MissingMsProdHeaderPath)) {
+            New-Item -ItemType Directory -Force -Path $MissingMsProdHeaderPath
+        }
+        $MissingPermData = "$MissingMsProdHeaderPath\MissingPermissionsIncludeLink.csv"
+        if (-not (Test-Path $MissingMetaData)) {
+            "Graph profile, Command, ApiReferenceUrl" | Out-File -FilePath  $MissingMetaData -Encoding ASCII
+        }
+
+        #Check if module already exists
+        $File = Get-Content $MissingPermData
+        $containsWord = $file | % { $_ -match "$GraphProfile, $Command, $ApiReferenceUrl" }
+        if ($containsWord -contains $true) {
+            #Skip adding to csv
+        }
+        else {
+            "$GraphProfile, $Command, $UriPath" | Out-File -FilePath $MissingPermData -Append -Encoding ASCII
+        }
+    }
+}
+
 Set-Location microsoftgraph-docs-powershell
 $date = Get-Date -Format "dd-MM-yyyy"
 $proposedBranch = "weekly_v2_docs_update_$date"

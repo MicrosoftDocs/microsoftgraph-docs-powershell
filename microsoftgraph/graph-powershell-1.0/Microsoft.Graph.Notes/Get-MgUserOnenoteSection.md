@@ -11,7 +11,6 @@ ms.prod: onenote
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a onenoteSection object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenoteSection?view=graph-powershell-beta)
@@ -39,7 +38,12 @@ Get-MgUserOnenoteSection -InputObject <INotesIdentity> [-ExpandProperty <String[
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a onenoteSection object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/section-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onenote-list-sections-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -284,4 +288,5 @@ INPUTOBJECT \<INotesIdentity\>: Identity Parameter
 [Get-MgBetaUserOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenoteSection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotesection](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotesection)
+
 

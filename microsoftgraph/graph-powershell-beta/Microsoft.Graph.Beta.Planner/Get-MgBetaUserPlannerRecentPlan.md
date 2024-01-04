@@ -39,6 +39,9 @@ Read-only.
 Nullable.
 Returns the plannerPlans that have been recently viewed by the user in apps that support recent plans.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/planneruser-list-recentplans-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserPlannerRecentPlan Cmdlet
 ```powershell
@@ -276,4 +279,5 @@ INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannerrecentplan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannerrecentplan)
+
 

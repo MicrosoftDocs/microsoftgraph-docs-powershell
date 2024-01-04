@@ -3,15 +3,14 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrecommendation
 schema: 2.0.0
-ms.prod: directory-management
-ms.prod: directory-management
+ms.prod: identity-and-access-reports
+ms.prod: identity-and-access-reports
 ---
 
 # Get-MgBetaDirectoryRecommendation
 
 ## SYNOPSIS
 Read the properties and relationships of a recommendation object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -36,7 +35,12 @@ Get-MgBetaDirectoryRecommendation -InputObject <IIdentityDirectoryManagementIden
 
 ## DESCRIPTION
 Read the properties and relationships of a recommendation object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/recommendation-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-list-recommendation-permissions.md)]
 
 ## PARAMETERS
 
@@ -285,5 +289,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrecommendation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrecommendation)
+
 
 

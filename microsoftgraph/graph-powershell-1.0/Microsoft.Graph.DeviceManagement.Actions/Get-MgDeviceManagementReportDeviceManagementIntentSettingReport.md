@@ -296,3 +296,4 @@ BODYPARAMETER \<IPathsTbh0H2DevicemanagementReportsMicrosoftGraphGetdevicemanage
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportdevicemanagementintentsettingreport](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportdevicemanagementintentsettingreport)
 
 
+

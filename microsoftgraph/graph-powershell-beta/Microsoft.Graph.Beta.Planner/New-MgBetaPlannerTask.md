@@ -10,7 +10,6 @@ ms.prod: planner
 
 ## SYNOPSIS
 Create a new plannerTask.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgPlannerTask](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerTask?view=graph-powershell-1.0)
@@ -42,7 +41,9 @@ New-MgBetaPlannerTask -BodyParameter <IMicrosoftGraphPlannerTask> [-WhatIf] [-Co
 
 ## DESCRIPTION
 Create a new plannerTask.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/planner-post-tasks-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -657,9 +658,10 @@ For details about the supported format, see Using order hints in Planner.
     \[Application \<IMicrosoftGraphIdentity\>\]: identity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-This might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
       \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     \[Device \<IMicrosoftGraphIdentity\>\]: identity
     \[User \<IMicrosoftGraphIdentity\>\]: identity
   \[CompletedDateTime \<DateTime?\>\]: Read-only.
@@ -793,9 +795,10 @@ COMPLETEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
   \[Application \<IMicrosoftGraphIdentity\>\]: identity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-This might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
     \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
   \[Device \<IMicrosoftGraphIdentity\>\]: identity
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
@@ -804,9 +807,10 @@ CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
   \[Application \<IMicrosoftGraphIdentity\>\]: identity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-This might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
     \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
   \[Device \<IMicrosoftGraphIdentity\>\]: identity
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
@@ -904,4 +908,5 @@ A GUID-based value that serves as the unique identifier for a series.
 [New-MgPlannerTask](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerTask?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannertask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannertask)
+
 

@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The user (or application) that created the group.
-Note: This is not set if the user is an administrator.
+Note: This isn't set if the user is an administrator.
 Read-only.
 
 > [!NOTE]
@@ -31,7 +31,7 @@ Get-MgBetaGroupCreatedOnBehalfOf -InputObject <IGroupsIdentity> [-ExpandProperty
 
 ## DESCRIPTION
 The user (or application) that created the group.
-Note: This is not set if the user is an administrator.
+Note: This isn't set if the user is an administrator.
 Read-only.
 
 ## PARAMETERS
@@ -159,5 +159,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Get-MgGroupCreatedOnBehalfOf](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupCreatedOnBehalfOf?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupcreatedonbehalfof](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupcreatedonbehalfof)
+
 
 

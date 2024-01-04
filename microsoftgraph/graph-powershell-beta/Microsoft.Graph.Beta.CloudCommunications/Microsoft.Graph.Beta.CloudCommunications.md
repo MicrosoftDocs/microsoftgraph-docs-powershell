@@ -56,6 +56,15 @@ Locale: en-US
 ### [Get-MgBetaCommunicationCallRecordCount](Get-MgBetaCommunicationCallRecordCount.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaCommunicationCallRecordOrganizerV2](Get-MgBetaCommunicationCallRecordOrganizerV2.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaCommunicationCallRecordParticipant](Get-MgBetaCommunicationCallRecordParticipant.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaCommunicationCallRecordParticipantV2](Get-MgBetaCommunicationCallRecordParticipantV2.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaCommunicationCallRecordPstnBlockedUserLog](Get-MgBetaCommunicationCallRecordPstnBlockedUserLog.md)
 {{ Fill in the Description }}
 
@@ -284,6 +293,9 @@ Locale: en-US
 ### [New-MgBetaCommunicationCallParticipant](New-MgBetaCommunicationCallParticipant.md)
 {{ Fill in the Description }}
 
+### [New-MgBetaCommunicationCallRecordParticipantV2](New-MgBetaCommunicationCallRecordParticipantV2.md)
+{{ Fill in the Description }}
+
 ### [New-MgBetaCommunicationCallRecordSession](New-MgBetaCommunicationCallRecordSession.md)
 {{ Fill in the Description }}
 
@@ -347,6 +359,12 @@ Locale: en-US
 ### [Remove-MgBetaCommunicationCallParticipant](Remove-MgBetaCommunicationCallParticipant.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaCommunicationCallRecordOrganizerV2](Remove-MgBetaCommunicationCallRecordOrganizerV2.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaCommunicationCallRecordParticipantV2](Remove-MgBetaCommunicationCallRecordParticipantV2.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaCommunicationCallRecordSession](Remove-MgBetaCommunicationCallRecordSession.md)
 {{ Fill in the Description }}
 
@@ -405,6 +423,15 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Rename-MgBetaCommunicationCallScreenSharingRole](Rename-MgBetaCommunicationCallScreenSharingRole.md)
+{{ Fill in the Description }}
+
+### [Send-MgBetaCommunicationCallDtmfTone](Send-MgBetaCommunicationCallDtmfTone.md)
+{{ Fill in the Description }}
+
+### [Send-MgBetaCommunicationOnlineMeetingVirtualAppointmentReminderSm](Send-MgBetaCommunicationOnlineMeetingVirtualAppointmentReminderSm.md)
+{{ Fill in the Description }}
+
+### [Send-MgBetaCommunicationOnlineMeetingVirtualAppointmentSm](Send-MgBetaCommunicationOnlineMeetingVirtualAppointmentSm.md)
 {{ Fill in the Description }}
 
 ### [Set-MgBetaCommunicationOnlineMeetingAlternativeRecording](Set-MgBetaCommunicationOnlineMeetingAlternativeRecording.md)
@@ -482,6 +509,12 @@ Locale: en-US
 ### [Update-MgBetaCommunicationCallRecordingStatus](Update-MgBetaCommunicationCallRecordingStatus.md)
 {{ Fill in the Description }}
 
+### [Update-MgBetaCommunicationCallRecordOrganizerV2](Update-MgBetaCommunicationCallRecordOrganizerV2.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaCommunicationCallRecordParticipantV2](Update-MgBetaCommunicationCallRecordParticipantV2.md)
+{{ Fill in the Description }}
+
 ### [Update-MgBetaCommunicationCallRecordSession](Update-MgBetaCommunicationCallRecordSession.md)
 {{ Fill in the Description }}
 
@@ -538,4 +571,5 @@ Locale: en-US
 
 ### [Update-MgBetaUserPresence](Update-MgBetaUserPresence.md)
 {{ Fill in the Description }}
+
 

@@ -12,7 +12,6 @@ ms.prod: governance
 Generates a URI for an accessReviewHistoryInstance object the status for which is done.
 Each URI can be used to retrieve the instance's review history data.
 Each URI is valid for 24 hours and can be retrieved by fetching the downloadUri property from the accessReviewHistoryInstance object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri?view=graph-powershell-beta)
@@ -36,7 +35,9 @@ New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri
 Generates a URI for an accessReviewHistoryInstance object the status for which is done.
 Each URI can be used to retrieve the instance's review history data.
 Each URI is valid for 24 hours and can be retrieved by fetching the downloadUri property from the accessReviewHistoryInstance object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewhistoryinstance-generatedownloaduri-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri Cmdlet
@@ -215,4 +216,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [New-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewhistorydefinitioninstancedownloaduri](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewhistorydefinitioninstancedownloaduri)
+
 

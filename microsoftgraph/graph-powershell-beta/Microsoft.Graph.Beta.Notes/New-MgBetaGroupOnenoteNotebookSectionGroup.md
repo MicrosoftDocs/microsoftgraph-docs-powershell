@@ -10,7 +10,6 @@ ms.prod: onenote
 
 ## SYNOPSIS
 Create a new section group in the specified notebook.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgGroupOnenoteNotebookSectionGroup](/powershell/module/Microsoft.Graph.Notes/New-MgGroupOnenoteNotebookSectionGroup?view=graph-powershell-1.0)
@@ -53,7 +52,9 @@ New-MgBetaGroupOnenoteNotebookSectionGroup -InputObject <INotesIdentity>
 
 ## DESCRIPTION
 Create a new section group in the specified notebook.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/notebook-post-sectiongroups-permissions.md)]
 
 ## EXAMPLES
 
@@ -974,4 +975,5 @@ Read-only.
 [New-MgGroupOnenoteNotebookSectionGroup](/powershell/module/Microsoft.Graph.Notes/New-MgGroupOnenoteNotebookSectionGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetagrouponenotenotebooksectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetagrouponenotenotebooksectiongroup)
+
 

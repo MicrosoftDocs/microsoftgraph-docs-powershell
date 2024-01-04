@@ -36,6 +36,9 @@ Get-MgBetaEducationSynchronizationProfileError -InputObject <IEducationIdentity>
 ## DESCRIPTION
 All errors associated with this synchronization profile.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsynchronizationerrors-get-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaEducationSynchronizationProfileError Cmdlet
 ```powershell
@@ -281,4 +284,5 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationsynchronizationprofileerror](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationsynchronizationprofileerror)
+
 

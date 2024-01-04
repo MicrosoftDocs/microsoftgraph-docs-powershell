@@ -607,3 +607,4 @@ The default value is empty.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementgrouppolicyconfigurationdefinitionvaluepresentationvalue](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementgrouppolicyconfigurationdefinitionvaluepresentationvalue)
 
 
+

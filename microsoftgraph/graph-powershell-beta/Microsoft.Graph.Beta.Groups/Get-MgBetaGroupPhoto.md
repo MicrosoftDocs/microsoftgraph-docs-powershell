@@ -45,6 +45,9 @@ Get-MgBetaGroupPhoto -InputObject <IGroupsIdentity> [-Property <String[]>] [<Com
 ## DESCRIPTION
 The group's profile photo.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-photos-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -289,4 +292,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Get-MgGroupPhoto](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupPhoto?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupphoto](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupphoto)
+
 

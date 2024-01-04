@@ -12,7 +12,6 @@ ms.prod: applications
 Deletes an application.
 When deleted, apps are moved to a temporary container and can be restored within 30 days.
 After that time, they are permanently deleted.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgApplication](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplication?view=graph-powershell-1.0)
@@ -35,7 +34,9 @@ Remove-MgBetaApplication -InputObject <IApplicationsIdentity> [-IfMatch <String>
 Deletes an application.
 When deleted, apps are moved to a temporary container and can be restored within 30 days.
 After that time, they are permanently deleted.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Delete an application
@@ -192,4 +193,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Remove-MgApplication](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplication?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplication)
+
 

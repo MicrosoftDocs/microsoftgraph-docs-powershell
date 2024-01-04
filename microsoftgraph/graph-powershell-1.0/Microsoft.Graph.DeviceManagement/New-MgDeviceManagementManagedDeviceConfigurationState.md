@@ -371,3 +371,4 @@ SETTINGSTATES \<IMicrosoftGraphDeviceConfigurationSettingState\[\]\>: .
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmanageddeviceconfigurationstate](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmanageddeviceconfigurationstate)
 
 
+

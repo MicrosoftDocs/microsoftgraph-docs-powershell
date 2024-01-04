@@ -12,15 +12,15 @@ ms.prod: outlook
 Create an event in the user's default calendar or specified calendar.
 By default, the allowNewTimeProposals property is set to true when an event is created, which means invitees can propose a different date/time for the event.
 See Propose new meeting times for more information on how to propose a time, and how to receive and accept a new time proposal.
-You can specify the time zone for each of the start and end times of the event as part of their values, because the \nstart and end properties are of dateTimeTimeZone type.
+You can specify the time zone for each of the start and end times of the event as part of their values, because the start and end properties are of dateTimeTimeZone type.
 First find the supported time zones to make sure you set only time zones that have been configured for the user's mailbox server.
 When an event is sent, the server sends invitations to all the attendees.
-Setting the location in an event An Exchange administrator can set up a mailbox and an email address for a resource such as a meeting room, or equipment\nlike a projector.
+Setting the location in an event An Exchange administrator can set up a mailbox and an email address for a resource such as a meeting room, or equipmentlike a projector.
 Users can then invite the resource as an attendee to a meeting.
-On behalf of the resource, the server accepts or rejects\nthe meeting request based on the free/busy schedule of the resource.\nIf the server accepts a meeting for the resource, it creates an event for the meeting in the resource's calendar.
-If the meeting is rescheduled,\nthe server automatically updates the event in the resource's calendar.
-Another advantage of setting up a mailbox for a resource is to control scheduling of the resource, for example, only executives\nor their delegates can book a private meeting room.
-If you're organizing an event that involves a meeting location: Additionally, if the meeting location has been set up as a resource, or if the event involves some equipment that has been set up as a resource: This API is available in the following national cloud deployments.
+On behalf of the resource, the server accepts or rejectsthe meeting request based on the free/busy schedule of the resource.If the server accepts a meeting for the resource, it creates an event for the meeting in the resource's calendar.
+If the meeting is rescheduled,the server automatically updates the event in the resource's calendar.
+Another advantage of setting up a mailbox for a resource is to control scheduling of the resource, for example, only executivesor their delegates can book a private meeting room.
+If you're organizing an event that involves a meeting location: Additionally, if the meeting location has been set up as a resource, or if the event involves some equipment that has been set up as a resource:
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgUserEvent](/powershell/module/Microsoft.Graph.Calendar/New-MgUserEvent?view=graph-powershell-1.0)
@@ -87,15 +87,18 @@ New-MgBetaUserEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftG
 Create an event in the user's default calendar or specified calendar.
 By default, the allowNewTimeProposals property is set to true when an event is created, which means invitees can propose a different date/time for the event.
 See Propose new meeting times for more information on how to propose a time, and how to receive and accept a new time proposal.
-You can specify the time zone for each of the start and end times of the event as part of their values, because the \nstart and end properties are of dateTimeTimeZone type.
+You can specify the time zone for each of the start and end times of the event as part of their values, because the start and end properties are of dateTimeTimeZone type.
 First find the supported time zones to make sure you set only time zones that have been configured for the user's mailbox server.
 When an event is sent, the server sends invitations to all the attendees.
-Setting the location in an event An Exchange administrator can set up a mailbox and an email address for a resource such as a meeting room, or equipment\nlike a projector.
+Setting the location in an event An Exchange administrator can set up a mailbox and an email address for a resource such as a meeting room, or equipmentlike a projector.
 Users can then invite the resource as an attendee to a meeting.
-On behalf of the resource, the server accepts or rejects\nthe meeting request based on the free/busy schedule of the resource.\nIf the server accepts a meeting for the resource, it creates an event for the meeting in the resource's calendar.
-If the meeting is rescheduled,\nthe server automatically updates the event in the resource's calendar.
-Another advantage of setting up a mailbox for a resource is to control scheduling of the resource, for example, only executives\nor their delegates can book a private meeting room.
-If you're organizing an event that involves a meeting location: Additionally, if the meeting location has been set up as a resource, or if the event involves some equipment that has been set up as a resource: This API is available in the following national cloud deployments.
+On behalf of the resource, the server accepts or rejectsthe meeting request based on the free/busy schedule of the resource.If the server accepts a meeting for the resource, it creates an event for the meeting in the resource's calendar.
+If the meeting is rescheduled,the server automatically updates the event in the resource's calendar.
+Another advantage of setting up a mailbox for a resource is to control scheduling of the resource, for example, only executivesor their delegates can book a private meeting room.
+If you're organizing an event that involves a meeting location: Additionally, if the meeting location has been set up as a resource, or if the event involves some equipment that has been set up as a resource:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-post-events-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -2365,4 +2368,5 @@ See below for possible values.
 [New-MgUserEvent](/powershell/module/Microsoft.Graph.Calendar/New-MgUserEvent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetauserevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetauserevent)
+
 

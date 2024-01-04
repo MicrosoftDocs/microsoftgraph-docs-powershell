@@ -319,3 +319,4 @@ POLICYDETAILS \<IMicrosoftGraphEncryptionReportPolicyDetails\[\]\>: Policy Detai
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmanageddeviceencryptionstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmanageddeviceencryptionstate)
 
 
+

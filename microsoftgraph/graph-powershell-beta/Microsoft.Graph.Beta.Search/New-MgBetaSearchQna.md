@@ -10,7 +10,6 @@ ms.prod: search
 
 ## SYNOPSIS
 Create a new qna object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -32,7 +31,9 @@ New-MgBetaSearchQna -BodyParameter <IMicrosoftGraphSearchQna> [-WhatIf] [-Confir
 
 ## DESCRIPTION
 Create a new qna object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-searchentity-post-qnas-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaSearchQna Cmdlet
@@ -468,4 +469,5 @@ When users click this answer variation in search results, they will go to this U
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetasearchqna](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetasearchqna)
+
 

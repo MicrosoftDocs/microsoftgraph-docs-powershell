@@ -10,7 +10,6 @@ ms.prod: applications
 
 ## SYNOPSIS
 Assign a tokenIssuancePolicy to an application.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgApplicationTokenIssuancePolicyByRef](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationTokenIssuancePolicyByRef?view=graph-powershell-1.0)
@@ -43,7 +42,6 @@ New-MgBetaApplicationTokenIssuancePolicyByRef -InputObject <IApplicationsIdentit
 
 ## DESCRIPTION
 Assign a tokenIssuancePolicy to an application.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -246,4 +244,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [New-MgApplicationTokenIssuancePolicyByRef](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationTokenIssuancePolicyByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationtokenissuancepolicybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationtokenissuancepolicybyref)
+
 

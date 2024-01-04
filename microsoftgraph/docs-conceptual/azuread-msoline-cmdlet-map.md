@@ -509,7 +509,7 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |Get-AzureADAdministrativeUnitMember|[Get-MgBetaAdministrativeUnitMember](/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadministrativeunitmember)|
 |Get-AzureADApplicationPolicy|[Get-MgBetaApplicationAppManagementPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationAppManagementPolicyByRef)|
 |Get-AzureADApplicationSignInDetailedSummary|[Get-MgBetaReportApplicationSignInDetailedSummary](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportApplicationSignInDetailedSummary)|
-|Get-AzureADApplicationSignInSummary||
+|Get-AzureADApplicationSignInSummary|[Get-MgBetaReportAzureAdApplicationSignInSummary](/powershell/module/microsoft.graph.beta.reports/get-mgbetareportazureadapplicationsigninsummary)|
 |Get-AzureADAuditDirectoryLogs|[Get-MgBetaAuditLogDirectoryAudit](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaAuditLogDirectoryAudit)|
 |Get-AzureADAuditSignInLogs|[Get-MgBetaAuditLogSignIn](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaAuditLogSignIn)|
 |Get-AzureADDirectorySetting|[Get-MgBetaDirectorySetting](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectorySetting)|

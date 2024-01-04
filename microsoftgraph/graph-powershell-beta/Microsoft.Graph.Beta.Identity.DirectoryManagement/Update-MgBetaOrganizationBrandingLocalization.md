@@ -10,7 +10,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Update the properties of an organizationalBrandingLocalization object for a specific localization.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganizationBrandingLocalization?view=graph-powershell-1.0)
@@ -69,7 +68,9 @@ Update-MgBetaOrganizationBrandingLocalization -InputObject <IIdentityDirectoryMa
 
 ## DESCRIPTION
 Update the properties of an organizationalBrandingLocalization object for a specific localization.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/organizationalbrandinglocalization-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Update the backgroundColor and signInPageText for the fr-FR localization using PATCH
@@ -822,4 +823,5 @@ LOGINPAGETEXTVISIBILITYSETTINGS \<IMicrosoftGraphLoginPageTextVisibilitySettings
 [Update-MgOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganizationBrandingLocalization?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganizationbrandinglocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganizationbrandinglocalization)
+
 

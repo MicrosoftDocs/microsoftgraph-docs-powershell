@@ -9,8 +9,8 @@ ms.prod: sharepoint
 # Get-MgUserDriveItemThumbnail
 
 ## SYNOPSIS
-Collection containing \[ThumbnailSet\]\[\] objects associated with the item.
-For more info, see \[getting thumbnails\]\[\].
+Collection of \[thumbnailSet\]\[\] objects associated with the item.
+For more information, see \[getting thumbnails\]\[\].
 Read-only.
 Nullable.
 
@@ -39,10 +39,13 @@ Get-MgUserDriveItemThumbnail -InputObject <IFilesIdentity> [-ExpandProperty <Str
 ```
 
 ## DESCRIPTION
-Collection containing \[ThumbnailSet\]\[\] objects associated with the item.
-For more info, see \[getting thumbnails\]\[\].
+Collection of \[thumbnailSet\]\[\] objects associated with the item.
+For more information, see \[getting thumbnails\]\[\].
 Read-only.
 Nullable.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-list-thumbnails-permissions.md)]
 
 ## PARAMETERS
 
@@ -318,5 +321,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgBetaUserDriveItemThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemThumbnail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemthumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemthumbnail)
+
 
 

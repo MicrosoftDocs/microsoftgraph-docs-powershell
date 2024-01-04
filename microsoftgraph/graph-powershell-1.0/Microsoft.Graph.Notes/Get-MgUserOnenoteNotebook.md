@@ -11,7 +11,6 @@ ms.prod: onenote
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a notebook object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenoteNotebook?view=graph-powershell-beta)
@@ -39,7 +38,12 @@ Get-MgUserOnenoteNotebook -InputObject <INotesIdentity> [-ExpandProperty <String
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a notebook object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/notebook-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onenote-list-notebooks-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -284,4 +288,5 @@ INPUTOBJECT \<INotesIdentity\>: Identity Parameter
 [Get-MgBetaUserOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenoteNotebook?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotenotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotenotebook)
+
 

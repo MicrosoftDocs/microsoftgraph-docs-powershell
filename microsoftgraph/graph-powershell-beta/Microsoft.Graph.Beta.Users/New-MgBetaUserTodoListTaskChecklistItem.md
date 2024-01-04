@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Create a new checklistItem object as a subtask in a bigger todoTask.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgUserTodoListTaskChecklistItem](/powershell/module/Microsoft.Graph.Users/New-MgUserTodoListTaskChecklistItem?view=graph-powershell-1.0)
@@ -45,7 +44,9 @@ New-MgBetaUserTodoListTaskChecklistItem -InputObject <IUsersIdentity>
 
 ## DESCRIPTION
 Create a new checklistItem object as a subtask in a bigger todoTask.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/todotask-post-checklistitems-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -319,4 +320,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [New-MgUserTodoListTaskChecklistItem](/powershell/module/Microsoft.Graph.Users/New-MgUserTodoListTaskChecklistItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausertodolisttaskchecklistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausertodolisttaskchecklistitem)
+
 

@@ -10,7 +10,6 @@ ms.prod: applications
 
 ## SYNOPSIS
 Update the properties of published resource  publishedResource object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -45,7 +44,9 @@ Update-MgBetaOnPremisePublishingProfilePublishedResource -InputObject <IApplicat
 
 ## DESCRIPTION
 Update the properties of published resource  publishedResource object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/publishedresource-update-permissions.md)]
 
 ## PARAMETERS
 
@@ -357,5 +358,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaonpremisepublishingprofilepublishedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaonpremisepublishingprofilepublishedresource)
+
 
 

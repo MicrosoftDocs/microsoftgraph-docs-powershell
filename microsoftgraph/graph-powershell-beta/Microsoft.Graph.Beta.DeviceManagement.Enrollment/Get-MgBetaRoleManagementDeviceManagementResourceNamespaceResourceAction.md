@@ -11,7 +11,6 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Read the properties and relationships of an unifiedRbacResourceAction object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -39,7 +38,12 @@ Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction
 
 ## DESCRIPTION
 Read the properties and relationships of an unifiedRbacResourceAction object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedrbacresourceaction-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedrbacresourcenamespace-list-resourceactions-permissions.md)]
 
 ## PARAMETERS
 
@@ -285,5 +289,6 @@ INPUTOBJECT \<IDeviceManagementEnrollmentIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetarolemanagementdevicemanagementresourcenamespaceresourceaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetarolemanagementdevicemanagementresourcenamespaceresourceaction)
+
 
 

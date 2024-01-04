@@ -11,7 +11,6 @@ ms.prod: people
 ## SYNOPSIS
 Get the properties of the pronounsSettings resource for an organization.
 For more information on settings to manage pronouns support, see Manage pronouns settings for an organization using the Microsoft Graph API.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -22,7 +21,9 @@ Get-MgBetaAdminPeoplePronoun [-ExpandProperty <String[]>] [-Property <String[]>]
 ## DESCRIPTION
 Get the properties of the pronounsSettings resource for an organization.
 For more information on settings to manage pronouns support, see Manage pronouns settings for an organization using the Microsoft Graph API.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/peopleadminsettings-list-pronouns-permissions.md)]
 
 ## PARAMETERS
 
@@ -69,5 +70,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadminpeoplepronoun](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadminpeoplepronoun)
+
 
 

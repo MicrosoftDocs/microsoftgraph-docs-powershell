@@ -12,7 +12,6 @@ Provision an email address for a channel.
 Microsoft Teams doesn't automatically provision an email address for a channel by default.
 To have Teams provision an email address, you can call provisionEmail, or through the Teams user interface, select Get email address, which triggers Teams to generate an email address if it has not already provisioned one.
 To remove the email address of a channel, use the removeEmail method.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgTeamworkDeletedTeamChannelEmail](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedTeamChannelEmail?view=graph-powershell-1.0)
@@ -36,7 +35,6 @@ Provision an email address for a channel.
 Microsoft Teams doesn't automatically provision an email address for a channel by default.
 To have Teams provision an email address, you can call provisionEmail, or through the Teams user interface, select Get email address, which triggers Teams to generate an email address if it has not already provisioned one.
 To remove the email address of a channel, use the removeEmail method.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
@@ -142,6 +140,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
   \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
   \[ConversationMemberId \<String\>\]: The unique identifier of conversationMember
+  \[DayNoteId \<String\>\]: The unique identifier of dayNote
   \[DeletedChatId \<String\>\]: The unique identifier of deletedChat
   \[DeletedTeamId \<String\>\]: The unique identifier of deletedTeam
   \[GroupId \<String\>\]: The unique identifier of group
@@ -178,4 +177,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [New-MgTeamworkDeletedTeamChannelEmail](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedTeamChannelEmail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkdeletedteamchannelemail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkdeletedteamchannelemail)
+
 

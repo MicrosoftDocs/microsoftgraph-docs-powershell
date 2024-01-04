@@ -38,6 +38,9 @@ Get-MgSecurityCaseEdiscoveryCaseSearchCustodianSource -InputObject <ISecurityIde
 ## DESCRIPTION
 Custodian sources that are included in the eDiscovery search.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverysearch-list-custodiansources-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -338,4 +341,5 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Get-MgBetaSecurityCaseEdiscoveryCaseSearchCustodianSource](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseSearchCustodianSource?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasesearchcustodiansource](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasesearchcustodiansource)
+
 

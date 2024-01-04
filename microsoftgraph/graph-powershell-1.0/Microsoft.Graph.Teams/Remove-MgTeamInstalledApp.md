@@ -10,7 +10,6 @@ ms.prod: microsoft-teams
 
 ## SYNOPSIS
 Uninstalls an app from the specified team.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaTeamInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamInstalledApp?view=graph-powershell-beta)
@@ -31,7 +30,6 @@ Remove-MgTeamInstalledApp -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Pa
 
 ## DESCRIPTION
 Uninstalls an app from the specified team.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -208,4 +206,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Remove-MgBetaTeamInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamInstalledApp?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteaminstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteaminstalledapp)
+
 

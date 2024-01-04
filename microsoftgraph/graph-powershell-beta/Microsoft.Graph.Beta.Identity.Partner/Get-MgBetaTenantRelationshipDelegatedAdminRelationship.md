@@ -11,7 +11,6 @@ ms.prod: partner-customer-administration
 
 ## SYNOPSIS
 Read the properties of a delegatedAdminRelationship object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgTenantRelationshipDelegatedAdminRelationship](/powershell/module/Microsoft.Graph.Identity.Partner/Get-MgTenantRelationshipDelegatedAdminRelationship?view=graph-powershell-1.0)
@@ -39,7 +38,12 @@ Get-MgBetaTenantRelationshipDelegatedAdminRelationship -InputObject <IIdentityPa
 
 ## DESCRIPTION
 Read the properties of a delegatedAdminRelationship object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/delegatedadminrelationship-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tenantrelationship-list-delegatedadminrelationships-permissions.md)]
 
 ## PARAMETERS
 
@@ -252,5 +256,6 @@ INPUTOBJECT \<IIdentityPartnerIdentity\>: Identity Parameter
 [Get-MgTenantRelationshipDelegatedAdminRelationship](/powershell/module/Microsoft.Graph.Identity.Partner/Get-MgTenantRelationshipDelegatedAdminRelationship?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/get-mgbetatenantrelationshipdelegatedadminrelationship](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/get-mgbetatenantrelationshipdelegatedadminrelationship)
+
 
 

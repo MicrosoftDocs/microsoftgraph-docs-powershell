@@ -11,7 +11,6 @@ ms.prod: applications
 ## SYNOPSIS
 Restart a stopped synchronization job, forcing it to reprocess all the objects in the directory.
 Optionally clears existing the synchronization state and previous errors.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Restart-MgBetaServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Restart-MgBetaServicePrincipalSynchronizationJob?view=graph-powershell-beta)
@@ -49,7 +48,9 @@ Restart-MgServicePrincipalSynchronizationJob -InputObject <IApplicationsIdentity
 ## DESCRIPTION
 Restart a stopped synchronization job, forcing it to reprocess all the objects in the directory.
 Optionally clears existing the synchronization state and previous errors.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationjob-restart-permissions.md)]
 
 ## PARAMETERS
 
@@ -246,5 +247,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Restart-MgBetaServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Restart-MgBetaServicePrincipalSynchronizationJob?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/restart-mgserviceprincipalsynchronizationjob](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/restart-mgserviceprincipalsynchronizationjob)
+
 
 

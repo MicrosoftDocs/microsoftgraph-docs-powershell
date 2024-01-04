@@ -3,14 +3,13 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetadismissdirectoryimpactedresource
 schema: 2.0.0
-ms.prod: directory-management
+ms.prod: identity-and-access-reports
 ---
 
 # Invoke-MgBetaDismissDirectoryImpactedResource
 
 ## SYNOPSIS
 Dismiss an impactedResources object and update its status to dismissed.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -42,7 +41,9 @@ Invoke-MgBetaDismissDirectoryImpactedResource -InputObject <IIdentityDirectoryMa
 
 ## DESCRIPTION
 Dismiss an impactedResources object and update its status to dismissed.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/impactedresource-dismiss-permissions.md)]
 
 ## PARAMETERS
 
@@ -222,5 +223,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetadismissdirectoryimpactedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetadismissdirectoryimpactedresource)
+
 
 

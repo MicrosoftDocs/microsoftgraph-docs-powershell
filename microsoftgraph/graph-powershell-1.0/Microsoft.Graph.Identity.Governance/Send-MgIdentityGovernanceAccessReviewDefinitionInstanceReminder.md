@@ -10,7 +10,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 Send a reminder to the reviewers of an active accessReviewInstance.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Send-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceReminder](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Send-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceReminder?view=graph-powershell-beta)
@@ -31,7 +30,9 @@ Send-MgIdentityGovernanceAccessReviewDefinitionInstanceReminder -InputObject <II
 
 ## DESCRIPTION
 Send a reminder to the reviewers of an active accessReviewInstance.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewinstance-sendreminder-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Send-MgIdentityGovernanceAccessReviewDefinitionInstanceReminder Cmdlet
@@ -225,4 +226,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [Send-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceReminder](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Send-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceReminder?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/send-mgidentitygovernanceaccessreviewdefinitioninstancereminder](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/send-mgidentitygovernanceaccessreviewdefinitioninstancereminder)
+
 

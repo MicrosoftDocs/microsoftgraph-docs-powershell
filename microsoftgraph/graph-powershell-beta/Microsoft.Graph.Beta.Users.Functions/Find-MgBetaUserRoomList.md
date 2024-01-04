@@ -11,7 +11,6 @@ schema: 2.0.0
 Get the room lists defined in a tenant, as represented by their emailAddress objects.
 Tenants can organize meeting rooms into room lists.
 In this API, each meeting room and room list is represented by an emailAddress instance.You can get all the room lists in the tenant, get all the rooms in the tenant, or get all the rooms in a specific room list.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -31,7 +30,6 @@ Find-MgBetaUserRoomList -InputObject <IUsersFunctionsIdentity> [-Count] [-Filter
 Get the room lists defined in a tenant, as represented by their emailAddress objects.
 Tenants can organize meeting rooms into room lists.
 In this API, each meeting room and room list is represented by an emailAddress instance.You can get all the room lists in the tenant, get all the rooms in the tenant, or get all the rooms in a specific room list.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Find-MgBetaUserRoomList Cmdlet
@@ -208,4 +206,5 @@ INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/find-mgbetauserroomlist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/find-mgbetauserroomlist)
+
 

@@ -10,8 +10,7 @@ ms.prod: industry-data-etl
 # Get-MgBetaExternalIndustryDataInboundFlow
 
 ## SYNOPSIS
-Read the properties and relationships of an inboundFileFlow object.
-This API is available in the following national cloud deployments.
+Read the properties and relationships of an inboundFlow object.
 
 ## SYNTAX
 
@@ -35,8 +34,13 @@ Get-MgBetaExternalIndustryDataInboundFlow -InputObject <ISearchIdentity> [-Expan
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an inboundFileFlow object.
-This API is available in the following national cloud deployments.
+Read the properties and relationships of an inboundFlow object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-inboundflow-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-inboundfileflow-list-permissions.md)]
 
 ## PARAMETERS
 
@@ -261,5 +265,6 @@ INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatainboundflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatainboundflow)
+
 
 

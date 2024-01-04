@@ -15,7 +15,6 @@ Preferred presence takes effect only when at least one presence session exists f
 Otherwise, the user's presence shows as Offline.
 A presence session is created as a result of a successful setPresence operation, or if the user is signed in on a Microsoft Teams client.
 For more details, see presence sessions and time-out and expiration.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaUserPresenceUserPreferredPresence](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Set-MgBetaUserPresenceUserPreferredPresence?view=graph-powershell-beta)
@@ -57,7 +56,9 @@ Preferred presence takes effect only when at least one presence session exists f
 Otherwise, the user's presence shows as Offline.
 A presence session is created as a result of a successful setPresence operation, or if the user is signed in on a Microsoft Teams client.
 For more details, see presence sessions and time-out and expiration.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/presence-setuserpreferredpresence-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Set-MgUserPresenceUserPreferredPresence Cmdlet
@@ -285,4 +286,5 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 [Set-MgBetaUserPresenceUserPreferredPresence](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Set-MgBetaUserPresenceUserPreferredPresence?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/set-mguserpresenceuserpreferredpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/set-mguserpresenceuserpreferredpresence)
+
 

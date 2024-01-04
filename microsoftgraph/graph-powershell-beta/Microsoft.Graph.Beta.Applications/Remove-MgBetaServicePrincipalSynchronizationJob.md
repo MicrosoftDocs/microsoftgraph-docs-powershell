@@ -11,7 +11,6 @@ ms.prod: applications
 ## SYNOPSIS
 Stop the synchronization job, and permanently delete all the state associated with it.
 Synchronized accounts are left as-is.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalSynchronizationJob?view=graph-powershell-1.0)
@@ -33,7 +32,9 @@ Remove-MgBetaServicePrincipalSynchronizationJob -InputObject <IApplicationsIdent
 ## DESCRIPTION
 Stop the synchronization job, and permanently delete all the state associated with it.
 Synchronized accounts are left as-is.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronizationjob-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaServicePrincipalSynchronizationJob Cmdlet
@@ -205,4 +206,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Remove-MgServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalSynchronizationJob?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalsynchronizationjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalsynchronizationjob)
+
 

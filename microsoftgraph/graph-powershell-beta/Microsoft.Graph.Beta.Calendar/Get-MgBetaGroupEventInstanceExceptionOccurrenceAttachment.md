@@ -12,7 +12,6 @@ ms.prod: outlook
 ## SYNOPSIS
 Read the properties, relationships, or raw contents of an attachment that is attached to a user event, message, Outlook task, or group post.
 An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -40,7 +39,9 @@ Get-MgBetaGroupEventInstanceExceptionOccurrenceAttachment -InputObject <ICalenda
 ## DESCRIPTION
 Read the properties, relationships, or raw contents of an attachment that is attached to a user event, message, Outlook task, or group post.
 An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-list-attachments-permissions.md)]
 
 ## PARAMETERS
 
@@ -304,5 +305,6 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupeventinstanceexceptionoccurrenceattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupeventinstanceexceptionoccurrenceattachment)
+
 
 

@@ -67,6 +67,9 @@ Update-MgBetaPlannerTask -InputObject <IPlannerIdentity> -IfMatch <String>
 ## DESCRIPTION
 Update the navigation property tasks in planner
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannertask-update-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -737,9 +740,10 @@ For details about the supported format, see Using order hints in Planner.
     \[Application \<IMicrosoftGraphIdentity\>\]: identity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-This might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
       \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     \[Device \<IMicrosoftGraphIdentity\>\]: identity
     \[User \<IMicrosoftGraphIdentity\>\]: identity
   \[CompletedDateTime \<DateTime?\>\]: Read-only.
@@ -873,9 +877,10 @@ COMPLETEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
   \[Application \<IMicrosoftGraphIdentity\>\]: identity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-This might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
     \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
   \[Device \<IMicrosoftGraphIdentity\>\]: identity
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
@@ -884,9 +889,10 @@ CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
   \[Application \<IMicrosoftGraphIdentity\>\]: identity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-This might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
     \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
   \[Device \<IMicrosoftGraphIdentity\>\]: identity
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
@@ -994,4 +1000,5 @@ A GUID-based value that serves as the unique identifier for a series.
 [Update-MgPlannerTask](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerTask?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertask)
+
 

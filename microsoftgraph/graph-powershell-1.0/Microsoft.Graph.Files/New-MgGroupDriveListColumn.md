@@ -9,8 +9,7 @@ ms.prod: sites-and-lists
 # New-MgGroupDriveListColumn
 
 ## SYNOPSIS
-Create a column for a list\]\[list\] with a request that specifies a \[columnDefinition\]\[columnDefinition\].
-This API is available in the following \[national cloud deployments.
+Create a column for a \[list\]\[list\] with a request that specifies a \[columnDefinition\]\[columnDefinition\].
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveListColumn?view=graph-powershell-beta)
@@ -62,8 +61,10 @@ New-MgGroupDriveListColumn -InputObject <IFilesIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Create a column for a list\]\[list\] with a request that specifies a \[columnDefinition\]\[columnDefinition\].
-This API is available in the following \[national cloud deployments.
+Create a column for a \[list\]\[list\] with a request that specifies a \[columnDefinition\]\[columnDefinition\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/list-post-columns-permissions.md)]
 
 ## PARAMETERS
 
@@ -1205,5 +1206,6 @@ For examples, see Examples of common formulas in lists.
 [New-MgBetaGroupDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveListColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdrivelistcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdrivelistcolumn)
+
 
 

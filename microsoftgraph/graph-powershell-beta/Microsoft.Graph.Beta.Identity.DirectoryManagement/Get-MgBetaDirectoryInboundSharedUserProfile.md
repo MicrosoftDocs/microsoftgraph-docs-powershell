@@ -11,7 +11,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Read the properties of an inboundSharedUserProfile.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -36,7 +35,12 @@ Get-MgBetaDirectoryInboundSharedUserProfile -InputObject <IIdentityDirectoryMana
 
 ## DESCRIPTION
 Read the properties of an inboundSharedUserProfile.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/inboundshareduserprofile-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-list-inboundshareduserprofiles-permissions.md)]
 
 ## PARAMETERS
 
@@ -285,5 +289,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryinboundshareduserprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryinboundshareduserprofile)
+
 
 

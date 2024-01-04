@@ -44,6 +44,9 @@ A navigation property.
 Read-only.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/conversation-list-threads-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -318,4 +321,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Get-MgGroupConversationThread](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupConversationThread?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupconversationthread](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupconversationthread)
+
 

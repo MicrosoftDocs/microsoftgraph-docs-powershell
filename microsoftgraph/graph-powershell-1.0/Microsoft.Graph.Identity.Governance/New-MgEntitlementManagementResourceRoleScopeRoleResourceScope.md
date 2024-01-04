@@ -451,3 +451,4 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementresourcerolescoperoleresourcescope](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementresourcerolescoperoleresourcescope)
 
 
+

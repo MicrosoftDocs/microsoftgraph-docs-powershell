@@ -123,10 +123,12 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
   \[DeviceManagementExportJobId \<String\>\]: The unique identifier of deviceManagementExportJob
   \[DirectoryAuditId \<String\>\]: The unique identifier of directoryAudit
   \[EndDateTime \<DateTime?\>\]: Usage: endDateTime={endDateTime}
+  \[ExclusiveIntervalEndDateTime \<DateTime?\>\]: Usage: exclusiveIntervalEndDateTime={exclusiveIntervalEndDateTime}
   \[Filter \<String\>\]: Usage: filter='{filter}'
   \[GroupId \<String\>\]: Usage: groupId='{groupId}'
   \[IncludedUserRoles \<String\>\]: Usage: includedUserRoles='{includedUserRoles}'
   \[IncludedUserTypes \<String\>\]: Usage: includedUserTypes='{includedUserTypes}'
+  \[InclusiveIntervalStartDateTime \<DateTime?\>\]: Usage: inclusiveIntervalStartDateTime={inclusiveIntervalStartDateTime}
   \[InsightSummaryId \<String\>\]: The unique identifier of insightSummary
   \[MfaCompletionMetricId \<String\>\]: The unique identifier of mfaCompletionMetric
   \[MonthlyInactiveUsersByApplicationMetricId \<String\>\]: The unique identifier of monthlyInactiveUsersByApplicationMetric
@@ -154,5 +156,6 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
 [Get-MgReportSharePointSiteUsageFileCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSharePointSiteUsageFileCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsharepointsiteusagefilecount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsharepointsiteusagefilecount)
+
 
 

@@ -10,7 +10,6 @@ ms.prod: insights
 
 ## SYNOPSIS
 Update the privacy settings for itemInsights and meeting hours insights of a user.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -40,7 +39,9 @@ Update-MgBetaUserSettingItemInsight -InputObject <IUsersIdentity>
 
 ## DESCRIPTION
 Update the privacy settings for itemInsights and meeting hours insights of a user.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userinsightssettings-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaUserSettingItemInsight Cmdlet
@@ -233,4 +234,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingiteminsight](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingiteminsight)
+
 

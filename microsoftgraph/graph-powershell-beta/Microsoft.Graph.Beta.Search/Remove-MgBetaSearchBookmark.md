@@ -10,7 +10,6 @@ ms.prod: search
 
 ## SYNOPSIS
 Delete a bookmark object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,9 @@ Remove-MgBetaSearchBookmark -InputObject <ISearchIdentity> [-IfMatch <String>] [
 
 ## DESCRIPTION
 Delete a bookmark object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-bookmark-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaSearchBookmark Cmdlet
@@ -172,4 +173,5 @@ INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetasearchbookmark](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetasearchbookmark)
+
 

@@ -11,7 +11,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 Read the properties and relationships of an accessReviewInstanceDecisionItem object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -39,7 +38,12 @@ Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStageDecision
 
 ## DESCRIPTION
 Read the properties and relationships of an accessReviewInstanceDecisionItem object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstancedecisionitem-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewstage-list-decisions-permissions.md)]
 
 ## PARAMETERS
 
@@ -374,5 +378,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewdecisioninstancestagedecision](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewdecisioninstancestagedecision)
+
 
 

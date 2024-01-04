@@ -30,6 +30,9 @@ Get-MgSiteOnenotePageContent -InputObject <INotesIdentity> -OutFile <String> [-P
 ## DESCRIPTION
 The page's HTML content.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onenote-list-pages-permissions.md)]
+
 ## EXAMPLES
 
 ## PARAMETERS
@@ -140,4 +143,5 @@ INPUTOBJECT \<INotesIdentity\>: Identity Parameter
 [Get-MgBetaSiteOnenotePageContent](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaSiteOnenotePageContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenotepagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenotepagecontent)
+
 

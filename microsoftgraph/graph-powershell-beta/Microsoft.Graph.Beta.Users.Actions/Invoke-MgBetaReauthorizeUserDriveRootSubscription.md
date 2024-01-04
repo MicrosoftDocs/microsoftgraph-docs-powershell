@@ -10,7 +10,6 @@ ms.prod: change-notifications
 
 ## SYNOPSIS
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgReauthorizeUserDriveRootSubscription](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReauthorizeUserDriveRootSubscription?view=graph-powershell-1.0)
@@ -31,7 +30,6 @@ Invoke-MgBetaReauthorizeUserDriveRootSubscription -InputObject <IUsersActionsIde
 
 ## DESCRIPTION
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
-This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -186,6 +184,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[NotebookId \<String\>\]: The unique identifier of notebook
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
   \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
   \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
   \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask
@@ -202,5 +201,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 [Invoke-MgReauthorizeUserDriveRootSubscription](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReauthorizeUserDriveRootSubscription?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetareauthorizeuserdriverootsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetareauthorizeuserdriverootsubscription)
+
 
 

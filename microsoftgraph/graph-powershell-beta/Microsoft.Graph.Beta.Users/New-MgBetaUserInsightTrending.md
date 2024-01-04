@@ -343,3 +343,4 @@ See the Type property values section, for supported types.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauserinsighttrending](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauserinsighttrending)
 
 
+

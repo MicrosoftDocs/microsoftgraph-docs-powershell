@@ -40,6 +40,9 @@ Get-MgEntitlementManagementAccessPackageIncompatibleWith -InputObject <IIdentity
 The access packages that are incompatible with this package.
 Read-only.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackage-list-accesspackagesincompatiblewith-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -341,4 +344,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [Get-MgBetaEntitlementManagementAccessPackageIncompatibleWith](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementAccessPackageIncompatibleWith?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementaccesspackageincompatiblewith](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementaccesspackageincompatiblewith)
+
 

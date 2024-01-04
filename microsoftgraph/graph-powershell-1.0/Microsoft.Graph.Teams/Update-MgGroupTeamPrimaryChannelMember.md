@@ -9,8 +9,8 @@ ms.prod: microsoft-teams
 # Update-MgGroupTeamPrimaryChannelMember
 
 ## SYNOPSIS
-Update the role of a conversationMember in a team or channel.
-This API is available in the following national cloud deployments.
+Update the role of a conversationMember in a channel.
+This operation is allowed only for channels with a membershipType value of private or shared.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamPrimaryChannelMember?view=graph-powershell-beta)
@@ -44,8 +44,11 @@ Update-MgGroupTeamPrimaryChannelMember -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Update the role of a conversationMember in a team or channel.
-This API is available in the following national cloud deployments.
+Update the role of a conversationMember in a channel.
+This operation is allowed only for channels with a membershipType value of private or shared.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-update-members-permissions.md)]
 
 ## EXAMPLES
 
@@ -292,4 +295,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Update-MgBetaGroupTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamPrimaryChannelMember?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamprimarychannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamprimarychannelmember)
+
 

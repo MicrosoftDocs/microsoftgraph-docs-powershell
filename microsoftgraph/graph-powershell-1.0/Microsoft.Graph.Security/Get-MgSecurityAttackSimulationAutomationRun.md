@@ -38,6 +38,9 @@ Get-MgSecurityAttackSimulationAutomationRun -InputObject <ISecurityIdentity> [-E
 ## DESCRIPTION
 A collection of simulation automation runs.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/simulationautomation-list-runs-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -323,4 +326,5 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Get-MgBetaSecurityAttackSimulationAutomationRun](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAttackSimulationAutomationRun?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationautomationrun](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationautomationrun)
+
 

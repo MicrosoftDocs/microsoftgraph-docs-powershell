@@ -11,7 +11,6 @@ ms.prod: applications
 
 ## SYNOPSIS
 Retrieve the properties and relationships of an onPremisesAgentGroup object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -53,7 +52,12 @@ Get-MgBetaOnPremisePublishingProfileAgentGroup -InputObject <IApplicationsIdenti
 
 ## DESCRIPTION
 Retrieve the properties and relationships of an onPremisesAgentGroup object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onpremisesagentgroup-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onpremisesagentgroup-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaOnPremisePublishingProfileAgentGroup Cmdlet
@@ -336,4 +340,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileagentgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileagentgroup)
+
 

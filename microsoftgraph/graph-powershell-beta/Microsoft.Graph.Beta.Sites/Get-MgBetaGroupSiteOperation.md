@@ -11,7 +11,6 @@ ms.prod: sites-and-lists
 
 ## SYNOPSIS
 Read the properties of a richLongRunningOperation object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteOperation](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteOperation?view=graph-powershell-1.0)
@@ -39,7 +38,12 @@ Get-MgBetaGroupSiteOperation -InputObject <ISitesIdentity> [-ExpandProperty <Str
 
 ## DESCRIPTION
 Read the properties of a richLongRunningOperation object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/richlongrunningoperation-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-list-operations-permissions.md)]
 
 ## PARAMETERS
 
@@ -324,5 +328,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgGroupSiteOperation](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteoperation)
+
 
 

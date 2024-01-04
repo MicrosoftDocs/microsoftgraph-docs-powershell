@@ -10,7 +10,6 @@ ms.prod: sharepoint
 
 ## SYNOPSIS
 Create a new permission object on a site.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSitePermission?view=graph-powershell-beta)
@@ -55,7 +54,9 @@ New-MgGroupSitePermission -InputObject <ISitesIdentity> -BodyParameter <IMicroso
 
 ## DESCRIPTION
 Create a new permission object on a site.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-post-permissions-permissions.md)]
 
 ## PARAMETERS
 
@@ -639,5 +640,6 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
 [New-MgBetaGroupSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSitePermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitepermission)
+
 
 

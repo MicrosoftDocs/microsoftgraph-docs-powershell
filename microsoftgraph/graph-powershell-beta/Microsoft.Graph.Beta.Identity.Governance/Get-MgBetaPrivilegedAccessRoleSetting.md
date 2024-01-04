@@ -10,7 +10,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a governanceRoleSetting.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -35,7 +34,6 @@ Get-MgBetaPrivilegedAccessRoleSetting -InputObject <IIdentityGovernanceIdentity>
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a governanceRoleSetting.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaPrivilegedAccessRoleSetting Cmdlet
@@ -364,4 +362,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaprivilegedaccessrolesetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaprivilegedaccessrolesetting)
+
 

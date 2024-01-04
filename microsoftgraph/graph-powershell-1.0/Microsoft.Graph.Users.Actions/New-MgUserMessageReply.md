@@ -15,7 +15,6 @@ Specifying both will return an HTTP 400 Bad Request error.- If replyTo is specif
 When using MIME format:- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.- Add any attachments and S/MIME properties to the MIME content.
 Send the draft message in a subsequent operation.
 Alternatively, reply to a message in a single operation.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserMessageReply](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserMessageReply?view=graph-powershell-beta)
@@ -55,7 +54,9 @@ Specifying both will return an HTTP 400 Bad Request error.- If replyTo is specif
 When using MIME format:- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.- Add any attachments and S/MIME properties to the MIME content.
 Send the draft message in a subsequent operation.
 Alternatively, reply to a message in a single operation.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/message-createreply-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the New-MgUserMessageReply Cmdlet
@@ -430,4 +431,5 @@ Read-only.
 [New-MgBetaUserMessageReply](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserMessageReply?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mgusermessagereply](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mgusermessagereply)
+
 

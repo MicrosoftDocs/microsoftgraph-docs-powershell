@@ -12,7 +12,6 @@ ms.prod: cloud-printing
 ## SYNOPSIS
 Retrieve a user's usage summary for a particular time period.
 For descriptions of each endpoint, see printUsageByUser.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportDailyPrintUsageByUser](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportDailyPrintUsageByUser?view=graph-powershell-beta)
@@ -41,7 +40,12 @@ Get-MgReportDailyPrintUsageByUser -InputObject <IReportsIdentity> [-ExpandProper
 ## DESCRIPTION
 Retrieve a user's usage summary for a particular time period.
 For descriptions of each endpoint, see printUsageByUser.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printusagebyuser-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-list-dailyprintusagebyuser-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -281,4 +285,5 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
 [Get-MgBetaReportDailyPrintUsageByUser](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportDailyPrintUsageByUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportdailyprintusagebyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportdailyprintusagebyuser)
+
 

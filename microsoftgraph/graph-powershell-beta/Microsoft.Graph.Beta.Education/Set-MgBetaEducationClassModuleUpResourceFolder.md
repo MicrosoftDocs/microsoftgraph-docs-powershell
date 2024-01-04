@@ -12,7 +12,6 @@ ms.prod: education
 Create a SharePoint folder to upload files for a given educationModule.
 Only teachers can perform this operation.
 The teacher determines what resources to upload to the SharePoint folder for the module.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -32,7 +31,9 @@ Set-MgBetaEducationClassModuleUpResourceFolder -InputObject <IEducationIdentity>
 Create a SharePoint folder to upload files for a given educationModule.
 Only teachers can perform this operation.
 The teacher determines what resources to upload to the SharePoint folder for the module.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationmodule-setupresourcesfolder-permissions.md)]
 
 ## PARAMETERS
 
@@ -150,5 +151,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/set-mgbetaeducationclassmoduleupresourcefolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/set-mgbetaeducationclassmoduleupresourcefolder)
+
 
 

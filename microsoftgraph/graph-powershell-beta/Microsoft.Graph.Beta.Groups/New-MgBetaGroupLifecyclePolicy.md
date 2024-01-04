@@ -10,7 +10,6 @@ ms.prod: groups
 
 ## SYNOPSIS
 Creates a new groupLifecyclePolicy.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Groups/New-MgGroupLifecyclePolicy?view=graph-powershell-1.0)
@@ -58,7 +57,9 @@ New-MgBetaGroupLifecyclePolicy -BodyParameter <IMicrosoftGraphGroupLifecyclePoli
 
 ## DESCRIPTION
 Creates a new groupLifecyclePolicy.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/grouplifecyclepolicy-post-grouplifecyclepolicies-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -312,4 +313,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [New-MgGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Groups/New-MgGroupLifecyclePolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagrouplifecyclepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagrouplifecyclepolicy)
+
 

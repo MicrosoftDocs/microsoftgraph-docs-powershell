@@ -10,7 +10,6 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Create a new attributeSet object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryAttributeSet?view=graph-powershell-1.0)
@@ -31,7 +30,9 @@ New-MgBetaDirectoryAttributeSet -BodyParameter <IMicrosoftGraphAttributeSet> [-W
 
 ## DESCRIPTION
 Create a new attributeSet object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-post-attributesets-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaDirectoryAttributeSet Cmdlet
@@ -193,4 +194,5 @@ Can be changed later.
 [New-MgDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryAttributeSet?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryattributeset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryattributeset)
+
 

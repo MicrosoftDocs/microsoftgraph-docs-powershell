@@ -11,7 +11,6 @@ ms.prod: ediscovery
 
 ## SYNOPSIS
 Read the properties and relationships of a siteSource object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -36,7 +35,12 @@ Get-MgBetaComplianceEdiscoveryCaseCustodianSiteSource -InputObject <IComplianceI
 
 ## DESCRIPTION
 Read the properties and relationships of a siteSource object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-sitesource-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-custodian-list-sitesources-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaComplianceEdiscoveryCaseCustodianSiteSource Cmdlet
@@ -305,4 +309,5 @@ INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasecustodiansitesource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasecustodiansitesource)
+
 

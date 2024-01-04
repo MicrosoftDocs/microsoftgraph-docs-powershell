@@ -44,7 +44,7 @@ Rsc Configuration State.
 Type: MicrosoftGraphRscConfigurationState
 Parameter Sets: (All)
 Aliases:
-Accepted values: DisabledForAllApps, EnabledForPreApprovedAppsOnly, EnabledForAllApps, EnabledForSelectedGroupOfUsers, Custom
+Accepted values: DisabledForAllApps, EnabledForPreApprovedAppsOnly, EnabledForAllApps, ManagedByMicrosoft, Custom
 
 Required: True
 Position: Named
@@ -97,5 +97,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetachatrscconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetachatrscconfiguration)
+
 
 

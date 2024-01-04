@@ -11,7 +11,6 @@ ms.prod: groups
 ## SYNOPSIS
 Create a new conversation by including a thread and a post.
 Use reply thread or reply post to further post to that conversation.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgGroupConversation](/powershell/module/Microsoft.Graph.Groups/New-MgGroupConversation?view=graph-powershell-1.0)
@@ -49,7 +48,9 @@ New-MgBetaGroupConversation -InputObject <IGroupsIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Create a new conversation by including a thread and a post.
 Use reply thread or reply post to further post to that conversation.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-post-conversations-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -594,4 +595,5 @@ Returned by default.
 [New-MgGroupConversation](/powershell/module/Microsoft.Graph.Groups/New-MgGroupConversation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupconversation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupconversation)
+
 

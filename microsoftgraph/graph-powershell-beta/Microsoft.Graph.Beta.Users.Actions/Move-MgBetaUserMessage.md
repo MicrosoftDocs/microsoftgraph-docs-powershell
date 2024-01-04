@@ -11,7 +11,6 @@ ms.prod: outlook
 ## SYNOPSIS
 Move a message to another folder within the specified user's mailbox.
 This creates a new copy of the message in the destination folder and removes the original message.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Move-MgUserMessage](/powershell/module/Microsoft.Graph.Users.Actions/Move-MgUserMessage?view=graph-powershell-1.0)
@@ -47,7 +46,9 @@ Move-MgBetaUserMessage -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Move a message to another folder within the specified user's mailbox.
 This creates a new copy of the message in the destination folder and removes the original message.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-move-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Move-MgBetaUserMessage Cmdlet
@@ -236,6 +237,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[NotebookId \<String\>\]: The unique identifier of notebook
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
   \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
   \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
   \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask
@@ -252,4 +254,5 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 [Move-MgUserMessage](/powershell/module/Microsoft.Graph.Users.Actions/Move-MgUserMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/move-mgbetausermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/move-mgbetausermessage)
+
 

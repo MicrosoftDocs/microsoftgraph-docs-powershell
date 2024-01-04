@@ -15,7 +15,6 @@ Specifying both will return an HTTP 400 Bad Request error.* If the original mess
 When using MIME format:- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.- Add any attachments and S/MIME properties to the MIME content.
 This method saves the message in the Sent Items folder.
 Alternatively, create a draft to reply to an existing message and send it later.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaReplyUserMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaReplyUserMessage?view=graph-powershell-beta)
@@ -55,7 +54,9 @@ Specifying both will return an HTTP 400 Bad Request error.* If the original mess
 When using MIME format:- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.- Add any attachments and S/MIME properties to the MIME content.
 This method saves the message in the Sent Items folder.
 Alternatively, create a draft to reply to an existing message and send it later.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/message-reply-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgReplyUserMessage Cmdlet
@@ -464,4 +465,5 @@ Read-only.
 [Invoke-MgBetaReplyUserMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaReplyUserMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgreplyusermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgreplyusermessage)
+
 

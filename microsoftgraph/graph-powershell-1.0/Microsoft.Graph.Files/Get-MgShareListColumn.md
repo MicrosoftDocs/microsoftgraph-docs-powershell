@@ -38,6 +38,9 @@ Get-MgShareListColumn -InputObject <IFilesIdentity> [-ExpandProperty <String[]>]
 ## DESCRIPTION
 The collection of field definitions for this list.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/list-list-columns-permissions.md)]
+
 ## PARAMETERS
 
 ### -All
@@ -282,5 +285,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgBetaShareListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistcolumn)
+
 
 

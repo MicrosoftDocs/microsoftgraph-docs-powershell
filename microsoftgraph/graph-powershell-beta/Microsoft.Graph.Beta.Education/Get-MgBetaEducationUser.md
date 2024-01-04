@@ -11,7 +11,6 @@ ms.prod: education
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a user.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgEducationUser](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUser?view=graph-powershell-1.0)
@@ -51,7 +50,12 @@ Get-MgBetaEducationUser -InputObject <IEducationIdentity> [-ExpandProperty <Stri
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a user.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationuser-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationroot-list-users-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -289,4 +293,5 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 [Get-MgEducationUser](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuser)
+
 

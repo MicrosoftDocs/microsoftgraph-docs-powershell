@@ -10,7 +10,6 @@ ms.prod: compliance
 
 ## SYNOPSIS
 Create a new authoredNote object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSecuritySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecuritySubjectRightsRequestNote?view=graph-powershell-beta)
@@ -45,7 +44,9 @@ New-MgSecuritySubjectRightsRequestNote -InputObject <ISecurityIdentity>
 
 ## DESCRIPTION
 Create a new authoredNote object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/subjectrightsrequest-post-notes-permissions.md)]
 
 ## PARAMETERS
 
@@ -311,5 +312,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [New-MgBetaSecuritySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecuritySubjectRightsRequestNote?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritysubjectrightsrequestnote](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritysubjectrightsrequestnote)
+
 
 

@@ -10,7 +10,6 @@ ms.prod: applications
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a servicePrincipal object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalByAppId](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalByAppId?view=graph-powershell-beta)
@@ -31,7 +30,9 @@ Get-MgServicePrincipalByAppId -InputObject <IApplicationsIdentity> [-ExpandPrope
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a servicePrincipal object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-get-permissions.md)]
 
 ## PARAMETERS
 
@@ -139,5 +140,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Get-MgBetaServicePrincipalByAppId](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalByAppId?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalbyappid](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalbyappid)
+
 
 

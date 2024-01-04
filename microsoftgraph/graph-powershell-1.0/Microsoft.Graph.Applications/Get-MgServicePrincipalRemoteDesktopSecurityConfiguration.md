@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalremotedesktopsecurityconfiguration
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Get-MgServicePrincipalRemoteDesktopSecurityConfiguration
 
 ## SYNOPSIS
-Get remoteDesktopSecurityConfiguration from servicePrincipals
+Read the properties and relationships of a remoteDesktopSecurityConfiguration object on a servicePrincipal.
+Use this configuration to view the Microsoft Entra ID Remote Desktop Services (RDS) authentication protocol to authenticate a user to Microsoft Entra joined or Microsoft Entra hybrid joined devices.
+Additionally you can view any targetDeviceGroups that have been configured for SSO.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration?view=graph-powershell-beta)
@@ -28,7 +31,9 @@ Get-MgServicePrincipalRemoteDesktopSecurityConfiguration -InputObject <IApplicat
 ```
 
 ## DESCRIPTION
-Get remoteDesktopSecurityConfiguration from servicePrincipals
+Read the properties and relationships of a remoteDesktopSecurityConfiguration object on a servicePrincipal.
+Use this configuration to view the Microsoft Entra ID Remote Desktop Services (RDS) authentication protocol to authenticate a user to Microsoft Entra joined or Microsoft Entra hybrid joined devices.
+Additionally you can view any targetDeviceGroups that have been configured for SSO.
 
 ## PARAMETERS
 
@@ -136,5 +141,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Get-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalremotedesktopsecurityconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalremotedesktopsecurityconfiguration)
+
 
 

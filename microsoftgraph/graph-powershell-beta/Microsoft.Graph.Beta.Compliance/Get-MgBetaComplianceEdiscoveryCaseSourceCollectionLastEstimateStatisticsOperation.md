@@ -10,7 +10,6 @@ ms.prod: ediscovery
 
 ## SYNOPSIS
 Get the last estimateStatisticsOperation object associated with a source collection.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,9 @@ Get-MgBetaComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperatio
 
 ## DESCRIPTION
 Get the last estimateStatisticsOperation object associated with a source collection.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-sourcecollection-list-lastestimatestatisticsoperation-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperation Cmdlet
@@ -154,4 +155,5 @@ INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasesourcecollectionlastestimatestatisticsoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasesourcecollectionlastestimatestatisticsoperation)
+
 

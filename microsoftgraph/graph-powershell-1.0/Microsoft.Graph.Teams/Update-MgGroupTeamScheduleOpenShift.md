@@ -47,6 +47,9 @@ Update-MgGroupTeamScheduleOpenShift -InputObject <ITeamsIdentity> -BodyParameter
 ## DESCRIPTION
 Update the properties of an openShift object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/openshift-update-permissions.md)]
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -398,5 +401,6 @@ Required.
 [Update-MgBetaGroupTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamScheduleOpenShift?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamscheduleopenshift](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamscheduleopenshift)
+
 
 

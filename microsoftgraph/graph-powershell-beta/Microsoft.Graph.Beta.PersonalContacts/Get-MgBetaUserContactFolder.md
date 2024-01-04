@@ -11,7 +11,7 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Get a contact folder by using the contact folder ID.
-There are two scenarios where an app can get another user's contact folder: This API is available in the following national cloud deployments.
+There are two scenarios where an app can get another user's contact folder:
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserContactFolder](/powershell/module/Microsoft.Graph.PersonalContacts/Get-MgUserContactFolder?view=graph-powershell-1.0)
@@ -39,7 +39,13 @@ Get-MgBetaUserContactFolder -InputObject <IPersonalContactsIdentity> [-ExpandPro
 
 ## DESCRIPTION
 Get a contact folder by using the contact folder ID.
-There are two scenarios where an app can get another user's contact folder: This API is available in the following national cloud deployments.
+There are two scenarios where an app can get another user's contact folder:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contactfolder-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-contactfolders-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -265,4 +271,5 @@ INPUTOBJECT \<IPersonalContactsIdentity\>: Identity Parameter
 [Get-MgUserContactFolder](/powershell/module/Microsoft.Graph.PersonalContacts/Get-MgUserContactFolder?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontactfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontactfolder)
+
 

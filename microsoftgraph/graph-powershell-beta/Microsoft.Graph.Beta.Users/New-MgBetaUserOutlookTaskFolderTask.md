@@ -10,8 +10,7 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Create an Outlook task in the specified task folder.
-The POST method always ignores the time portion of startDateTime and dueDateTime in the request body, and assumes the time \nto be always midnight in the specified time zone.
-This API is available in the following national cloud deployments.
+The POST method always ignores the time portion of startDateTime and dueDateTime in the request body, and assumes the time to be always midnight in the specified time zone.
 
 ## SYNTAX
 
@@ -60,8 +59,10 @@ New-MgBetaUserOutlookTaskFolderTask -InputObject <IUsersIdentity> -BodyParameter
 
 ## DESCRIPTION
 Create an Outlook task in the specified task folder.
-The POST method always ignores the time portion of startDateTime and dueDateTime in the request body, and assumes the time \nto be always midnight in the specified time zone.
-This API is available in the following national cloud deployments.
+The POST method always ignores the time portion of startDateTime and dueDateTime in the request body, and assumes the time to be always midnight in the specified time zone.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlooktaskfolder-post-tasks-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaUserOutlookTaskFolderTask Cmdlet
@@ -784,4 +785,5 @@ See below for possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktaskfoldertask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktaskfoldertask)
+
 

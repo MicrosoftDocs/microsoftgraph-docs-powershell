@@ -163,3 +163,4 @@ INPUTOBJECT \<IFinancialsIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanysaleordercustomerpaymentmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanysaleordercustomerpaymentmethod)
 
 
+

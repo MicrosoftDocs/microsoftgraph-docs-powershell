@@ -10,7 +10,6 @@ ms.prod: sites-and-lists
 
 ## SYNOPSIS
 Create a new term object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSiteTermStoreSetChild](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteTermStoreSetChild?view=graph-powershell-beta)
@@ -147,7 +146,9 @@ New-MgSiteTermStoreSetChild -InputObject <ISitesIdentity> -BodyParameter <IMicro
 
 ## DESCRIPTION
 Create a new term object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-term-post-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -735,4 +736,5 @@ Read-only.
 [New-MgBetaSiteTermStoreSetChild](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteTermStoreSetChild?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoresetchild](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoresetchild)
+
 

@@ -1482,3 +1482,4 @@ EXEMPTEDAPPPROTOCOLS \<IMicrosoftGraphKeyValuePair\[\]\>: Apps in this list will
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementiosmanagedappprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementiosmanagedappprotection)
 
 
+

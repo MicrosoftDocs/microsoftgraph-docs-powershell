@@ -466,3 +466,4 @@ INPUTOBJECT \<IManagedTenantsIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantdevicehealthstatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantdevicehealthstatus)
 
 
+

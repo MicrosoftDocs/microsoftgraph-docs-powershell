@@ -11,7 +11,6 @@ ms.prod: directory-management
 ## SYNOPSIS
 Retrieve a list of recently deleted application and group objects owned by the specified user.
 This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -31,7 +30,9 @@ Get-MgBetaContactUserOwnedObject
 ## DESCRIPTION
 Retrieve a list of recently deleted application and group objects owned by the specified user.
 This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-deleteditems-getuserownedobjects-permissions.md)]
 
 ## PARAMETERS
 
@@ -150,5 +151,6 @@ BODYPARAMETER \<IPaths1Bsgnp0ContactsMicrosoftGraphGetuserownedobjectsPostReques
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontactuserownedobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontactuserownedobject)
+
 
 

@@ -333,3 +333,4 @@ Since the application status is identified during device interaction with the In
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetausermobileappintentandstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetausermobileappintentandstate)
 
 
+

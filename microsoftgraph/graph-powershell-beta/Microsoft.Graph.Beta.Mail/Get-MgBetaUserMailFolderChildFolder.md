@@ -38,6 +38,9 @@ Get-MgBetaUserMailFolderChildFolder -InputObject <IMailIdentity> [-ExpandPropert
 ## DESCRIPTION
 The collection of child folders in the mailFolder.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailfolder-list-childfolders-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: List mail folders
 
@@ -321,4 +324,5 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
 [Get-MgUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderChildFolder?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfolderchildfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfolderchildfolder)
+
 

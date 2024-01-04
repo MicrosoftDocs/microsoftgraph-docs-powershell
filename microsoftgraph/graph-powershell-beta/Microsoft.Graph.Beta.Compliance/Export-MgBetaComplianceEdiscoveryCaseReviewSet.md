@@ -10,7 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Initiate an export from a reviewSet.
 For details, see Export documents from a review set in Advanced eDiscovery.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -47,7 +46,6 @@ Export-MgBetaComplianceEdiscoveryCaseReviewSet -InputObject <IComplianceIdentity
 ## DESCRIPTION
 Initiate an export from a reviewSet.
 For details, see Export documents from a review set in Advanced eDiscovery.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Export-MgBetaComplianceEdiscoveryCaseReviewSet Cmdlet
@@ -326,4 +324,5 @@ INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/export-mgbetacomplianceediscoverycasereviewset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/export-mgbetacomplianceediscoverycasereviewset)
+
 

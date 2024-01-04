@@ -11,7 +11,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 Retrieve the properties and relationships of an accessPackageAssignmentResourceRole object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -37,7 +36,12 @@ Get-MgBetaEntitlementManagementAccessPackageAssignmentResourceRole -InputObject 
 
 ## DESCRIPTION
 Retrieve the properties and relationships of an accessPackageAssignmentResourceRole object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackageassignmentresourcerole-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/entitlementmanagement-list-accesspackageassignmentresourceroles-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaEntitlementManagementAccessPackageAssignmentResourceRole Cmdlet
@@ -358,4 +362,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageassignmentresourcerole](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageassignmentresourcerole)
+
 

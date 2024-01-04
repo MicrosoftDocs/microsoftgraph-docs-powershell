@@ -10,7 +10,6 @@ ms.prod: people
 
 ## SYNOPSIS
 Use this API to create a new languageProficiency object in a user's profile.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -48,7 +47,9 @@ New-MgBetaUserProfileLanguage -InputObject <IPeopleIdentity>
 
 ## DESCRIPTION
 Use this API to create a new languageProficiency object in a user's profile.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/profile-post-languages-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaUserProfileLanguage Cmdlet
@@ -431,9 +432,10 @@ BODYPARAMETER \<IMicrosoftGraphLanguageProficiency\>: languageProficiency
     \[Application \<IMicrosoftGraphIdentity\>\]: identity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     \[Device \<IMicrosoftGraphIdentity\>\]: identity
     \[User \<IMicrosoftGraphIdentity\>\]: identity
   \[CreatedDateTime \<DateTime?\>\]: Provides the dateTimeOffset for when the entity was created.
@@ -462,9 +464,10 @@ CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
   \[Application \<IMicrosoftGraphIdentity\>\]: identity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-    \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
   \[Device \<IMicrosoftGraphIdentity\>\]: identity
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
@@ -502,9 +505,10 @@ LASTMODIFIEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
   \[Application \<IMicrosoftGraphIdentity\>\]: identity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-    \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
   \[Device \<IMicrosoftGraphIdentity\>\]: identity
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
@@ -515,4 +519,5 @@ SOURCE \<IMicrosoftGraphPersonDataSources\>: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilelanguage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilelanguage)
+
 

@@ -38,6 +38,9 @@ Get-MgPolicyTokenIssuancePolicy -InputObject <IIdentitySignInsIdentity> [-Expand
 ## DESCRIPTION
 The policy that specifies the characteristics of SAML tokens issued by Microsoft Entra ID.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/tokenissuancepolicy-list-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -311,4 +314,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 [Get-MgBetaPolicyTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyTokenIssuancePolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicytokenissuancepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicytokenissuancepolicy)
+
 

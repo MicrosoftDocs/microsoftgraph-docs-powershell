@@ -63,6 +63,9 @@ Get-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord
 List of attendance records of an attendance report.
 Read-only.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/attendancerecord-list-permissions.md)]
+
 ## EXAMPLES
 
 ## PARAMETERS
@@ -318,4 +321,5 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
 [Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingattendancereportattendancerecord](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingattendancereportattendancerecord)
+
 

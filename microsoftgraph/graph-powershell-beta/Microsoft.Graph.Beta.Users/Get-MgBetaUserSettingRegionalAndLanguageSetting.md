@@ -10,7 +10,6 @@ ms.prod: users
 
 ## SYNOPSIS
 Retrieve the properties of a user's regionalAndLanguageSettings.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,9 @@ Get-MgBetaUserSettingRegionalAndLanguageSetting -InputObject <IUsersIdentity> [-
 
 ## DESCRIPTION
 Retrieve the properties of a user's regionalAndLanguageSettings.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/regionalandlanguagesettings-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserSettingRegionalAndLanguageSetting Cmdlet
@@ -145,4 +146,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingregionalandlanguagesetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingregionalandlanguagesetting)
+
 

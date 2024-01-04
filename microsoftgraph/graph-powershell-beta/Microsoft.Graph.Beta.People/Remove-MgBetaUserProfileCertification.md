@@ -10,7 +10,6 @@ ms.prod: people
 
 ## SYNOPSIS
 Deletes a personCertification object from a user's profile.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,9 @@ Remove-MgBetaUserProfileCertification -InputObject <IPeopleIdentity> [-IfMatch <
 
 ## DESCRIPTION
 Deletes a personCertification object from a user's profile.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/personcertification-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaUserProfileCertification Cmdlet
@@ -190,4 +191,5 @@ INPUTOBJECT \<IPeopleIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilecertification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilecertification)
+
 

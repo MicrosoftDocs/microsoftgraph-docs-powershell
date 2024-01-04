@@ -35,6 +35,9 @@ Get-MgBetaGroupSiteRecycleBinItem -InputObject <ISitesIdentity> [-ExpandProperty
 ## DESCRIPTION
 List of the recycleBinItems deleted by a user.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/recyclebin-list-items-permissions.md)]
+
 ## PARAMETERS
 
 ### -All
@@ -317,5 +320,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiterecyclebinitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiterecyclebinitem)
+
 
 

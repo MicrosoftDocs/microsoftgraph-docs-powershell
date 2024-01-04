@@ -291,3 +291,4 @@ BODYPARAMETER \<IPathsS32AefDevicemanagementReportsMicrosoftGraphGetconfiguratio
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportconfigurationsettingreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportconfigurationsettingreport)
 
 
+

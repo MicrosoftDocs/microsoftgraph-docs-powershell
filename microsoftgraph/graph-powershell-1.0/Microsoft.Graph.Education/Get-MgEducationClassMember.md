@@ -10,7 +10,6 @@ ms.prod: education
 
 ## SYNOPSIS
 Retrieves the educationUser members of an educationClass.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationClassMember](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassMember?view=graph-powershell-beta)
@@ -25,7 +24,9 @@ Get-MgEducationClassMember -EducationClassId <String> [-ExpandProperty <String[]
 
 ## DESCRIPTION
 Retrieves the educationUser members of an educationClass.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationclass-list-members-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -222,4 +223,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgBetaEducationClassMember](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassMember?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassmember](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassmember)
+
 

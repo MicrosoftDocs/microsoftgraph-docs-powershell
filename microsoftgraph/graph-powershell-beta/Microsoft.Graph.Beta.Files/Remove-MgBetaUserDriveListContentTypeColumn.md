@@ -9,8 +9,7 @@ ms.prod: sites-and-lists
 # Remove-MgBetaUserDriveListContentTypeColumn
 
 ## SYNOPSIS
-Remove a column\]\[columndefinition\] from a \[site\]\[\], \[list\]\[\] or \[content type\]\[contentType\].
-This API is available in the following \[national cloud deployments.
+Remove a \[column\]\[columndefinition\] from a \[site\]\[\], \[list\]\[\] or \[content type\]\[contentType\].
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgUserDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/Remove-MgUserDriveListContentTypeColumn?view=graph-powershell-1.0)
@@ -30,8 +29,10 @@ Remove-MgBetaUserDriveListContentTypeColumn -InputObject <IFilesIdentity> [-IfMa
 ```
 
 ## DESCRIPTION
-Remove a column\]\[columndefinition\] from a \[site\]\[\], \[list\]\[\] or \[content type\]\[contentType\].
-This API is available in the following \[national cloud deployments.
+Remove a \[column\]\[columndefinition\] from a \[site\]\[\], \[list\]\[\] or \[content type\]\[contentType\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/columndefinition-delete-permissions.md)]
 
 ## PARAMETERS
 
@@ -217,5 +218,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Remove-MgUserDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/Remove-MgUserDriveListContentTypeColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetauserdrivelistcontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetauserdrivelistcontenttypecolumn)
+
 
 

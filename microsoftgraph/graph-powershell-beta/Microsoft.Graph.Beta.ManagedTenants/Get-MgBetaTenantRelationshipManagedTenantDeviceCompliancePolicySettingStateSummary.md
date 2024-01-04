@@ -11,7 +11,6 @@ ms.prod: multi-tenant-management
 
 ## SYNOPSIS
 Read the properties and relationships of a deviceCompliancePolicySettingStateSummary object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -38,7 +37,12 @@ Get-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSumma
 
 ## DESCRIPTION
 Read the properties and relationships of a deviceCompliancePolicySettingStateSummary object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-devicecompliancepolicysettingstatesummary-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-managedtenant-list-devicecompliancepolicysettingstatesummary-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSummary Cmdlet
@@ -298,4 +302,5 @@ INPUTOBJECT \<IManagedTenantsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantdevicecompliancepolicysettingstatesummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantdevicecompliancepolicysettingstatesummary)
+
 

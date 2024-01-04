@@ -11,7 +11,6 @@ ms.prod: security
 
 ## SYNOPSIS
 Get the properties and relationships of an sslCertificate object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceSslCertificate](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceSslCertificate?view=graph-powershell-beta)
@@ -39,7 +38,12 @@ Get-MgSecurityThreatIntelligenceSslCertificate -InputObject <ISecurityIdentity> 
 
 ## DESCRIPTION
 Get the properties and relationships of an sslCertificate object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-sslcertificate-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-threatintelligence-list-sslcertificates-permissions.md)]
 
 ## PARAMETERS
 
@@ -298,5 +302,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Get-MgBetaSecurityThreatIntelligenceSslCertificate](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceSslCertificate?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencesslcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencesslcertificate)
+
 
 

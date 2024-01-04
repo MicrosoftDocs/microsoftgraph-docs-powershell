@@ -10,7 +10,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Create a new b2xIdentityUserFlow object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgIdentityB2XUserFlow](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityB2XUserFlow?view=graph-powershell-1.0)
@@ -36,7 +35,9 @@ New-MgBetaIdentityB2XUserFlow -BodyParameter <IMicrosoftGraphB2XIdentityUserFlow
 
 ## DESCRIPTION
 Create a new b2xIdentityUserFlow object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitycontainer-post-b2xuserflows-permissions.md)]
 
 ## PARAMETERS
 
@@ -407,5 +408,6 @@ Read-only.
 [New-MgIdentityB2XUserFlow](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityB2XUserFlow?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityb2xuserflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityb2xuserflow)
+
 
 

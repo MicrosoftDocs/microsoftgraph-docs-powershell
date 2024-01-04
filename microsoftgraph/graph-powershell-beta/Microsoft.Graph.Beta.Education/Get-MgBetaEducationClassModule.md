@@ -13,7 +13,6 @@ ms.prod: education
 Get the properties and relationships of a module.
 Only teachers, students, and applications with application permissions can perform this operation.
 Students can only see published modules; teachers and applications with application permissions can see all modules in a class.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -40,7 +39,12 @@ Get-MgBetaEducationClassModule -InputObject <IEducationIdentity> [-ExpandPropert
 Get the properties and relationships of a module.
 Only teachers, students, and applications with application permissions can perform this operation.
 Students can only see published modules; teachers and applications with application permissions can see all modules in a class.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationmodule-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-list-modules-permissions.md)]
 
 ## PARAMETERS
 
@@ -278,5 +282,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassmodule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassmodule)
+
 
 

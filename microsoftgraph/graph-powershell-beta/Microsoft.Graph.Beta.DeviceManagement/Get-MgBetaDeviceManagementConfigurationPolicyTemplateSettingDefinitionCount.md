@@ -268,3 +268,4 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementconfigurationpolicytemplatesettingdefinitioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementconfigurationpolicytemplatesettingdefinitioncount)
 
 
+

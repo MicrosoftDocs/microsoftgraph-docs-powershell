@@ -9,8 +9,7 @@ ms.prod: sharepoint
 # Get-MgUserDriveItem
 
 ## SYNOPSIS
-Retrieve the metadata for a bundle\]\[\] based on the unique ID of the bundle.
-This API is available in the following \[national cloud deployments.
+Retrieve the metadata for a \[bundle\]\[\] based on the unique ID of the bundle.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItem?view=graph-powershell-beta)
@@ -37,8 +36,10 @@ Get-MgUserDriveItem -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [
 ```
 
 ## DESCRIPTION
-Retrieve the metadata for a bundle\]\[\] based on the unique ID of the bundle.
-This API is available in the following \[national cloud deployments.
+Retrieve the metadata for a \[bundle\]\[\] based on the unique ID of the bundle.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bundle-get-permissions.md)]
 
 ## PARAMETERS
 
@@ -299,5 +300,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgBetaUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitem)
+
 
 

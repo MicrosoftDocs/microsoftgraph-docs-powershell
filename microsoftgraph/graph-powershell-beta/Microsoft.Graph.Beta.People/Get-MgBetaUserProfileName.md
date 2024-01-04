@@ -11,7 +11,6 @@ ms.prod: people
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a personName object in a user's profile.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -36,7 +35,12 @@ Get-MgBetaUserProfileName -InputObject <IPeopleIdentity> [-ExpandProperty <Strin
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a personName object in a user's profile.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/personname-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/profile-list-names-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserProfileName Cmdlet
@@ -297,4 +301,5 @@ INPUTOBJECT \<IPeopleIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilename](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilename)
+
 

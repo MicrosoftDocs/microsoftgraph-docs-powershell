@@ -11,7 +11,6 @@ ms.prod: multi-tenant-management
 
 ## SYNOPSIS
 Read the properties and relationships of a conditionalAccessPolicyCoverage object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -37,7 +36,6 @@ Get-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverage -InputO
 
 ## DESCRIPTION
 Read the properties and relationships of a conditionalAccessPolicyCoverage object.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverage Cmdlet
@@ -297,4 +295,5 @@ INPUTOBJECT \<IManagedTenantsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantconditionalaccesspolicycoverage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantconditionalaccesspolicycoverage)
+
 

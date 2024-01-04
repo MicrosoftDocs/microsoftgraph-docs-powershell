@@ -10,7 +10,6 @@ ms.prod: cloud-communications
 
 ## SYNOPSIS
 Mute all participants in the call.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -43,7 +42,9 @@ Invoke-MgBetaMuteAllCommunicationCallParticipant -InputObject <ICloudCommunicati
 
 ## DESCRIPTION
 Mute all participants in the call.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/participant-muteall-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgBetaMuteAllCommunicationCallParticipant Cmdlet
@@ -229,4 +230,5 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetamuteallcommunicationcallparticipant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetamuteallcommunicationcallparticipant)
+
 

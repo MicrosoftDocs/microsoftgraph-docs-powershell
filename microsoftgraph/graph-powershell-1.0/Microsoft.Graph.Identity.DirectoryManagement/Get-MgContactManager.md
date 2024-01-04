@@ -10,7 +10,6 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Get this organizational contact's manager.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaContactManager](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactManager?view=graph-powershell-beta)
@@ -31,7 +30,6 @@ Get-MgContactManager -InputObject <IIdentityDirectoryManagementIdentity> [-Expan
 
 ## DESCRIPTION
 Get this organizational contact's manager.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -154,4 +152,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 [Get-MgBetaContactManager](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactManager?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactmanager](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactmanager)
+
 

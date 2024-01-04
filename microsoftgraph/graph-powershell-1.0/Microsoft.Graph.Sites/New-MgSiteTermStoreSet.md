@@ -10,7 +10,6 @@ ms.prod: sites-and-lists
 
 ## SYNOPSIS
 Create a new set object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteTermStoreSet?view=graph-powershell-beta)
@@ -83,7 +82,9 @@ New-MgSiteTermStoreSet -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftG
 
 ## DESCRIPTION
 Create a new set object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-set-post-permissions.md)]
 
 ## PARAMETERS
 
@@ -661,5 +662,6 @@ Read-only.
 [New-MgBetaSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteTermStoreSet?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoreset](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoreset)
+
 
 

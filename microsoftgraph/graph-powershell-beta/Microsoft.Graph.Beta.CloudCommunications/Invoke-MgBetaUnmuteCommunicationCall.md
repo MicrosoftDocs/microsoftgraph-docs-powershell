@@ -12,7 +12,6 @@ ms.prod: cloud-communications
 Allow the application to unmute itself.
 This is a server unmute, meaning that the server will start sending audio packets for this participant to other participants again.
 For more information about how to handle unmute operations, see unmuteParticipantOperation.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgUnmuteCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgUnmuteCommunicationCall?view=graph-powershell-1.0)
@@ -49,7 +48,9 @@ Invoke-MgBetaUnmuteCommunicationCall -InputObject <ICloudCommunicationsIdentity>
 Allow the application to unmute itself.
 This is a server unmute, meaning that the server will start sending audio packets for this participant to other participants again.
 For more information about how to handle unmute operations, see unmuteParticipantOperation.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-unmute-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -222,4 +223,5 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
 [Invoke-MgUnmuteCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgUnmuteCommunicationCall?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetaunmutecommunicationcall](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetaunmutecommunicationcall)
+
 

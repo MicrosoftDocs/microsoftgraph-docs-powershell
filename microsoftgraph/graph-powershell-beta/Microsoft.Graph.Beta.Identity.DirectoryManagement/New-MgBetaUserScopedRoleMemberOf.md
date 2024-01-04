@@ -288,3 +288,4 @@ This property is read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetauserscopedrolememberof](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetauserscopedrolememberof)
 
 
+

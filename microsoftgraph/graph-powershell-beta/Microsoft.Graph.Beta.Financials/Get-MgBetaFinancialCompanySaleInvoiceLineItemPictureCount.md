@@ -190,3 +190,4 @@ INPUTOBJECT \<IFinancialsIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanysaleinvoicelineitempicturecount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanysaleinvoicelineitempicturecount)
 
 
+

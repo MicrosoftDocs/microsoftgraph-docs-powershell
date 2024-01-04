@@ -31,6 +31,9 @@ Remove-MgGroupTeamIncomingChannel -InputObject <ITeamsIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Remove an incoming channel (a channel shared with a team) from a team.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-delete-incomingchannels-permissions.md)]
+
 ## PARAMETERS
 
 ### -ChannelId
@@ -193,5 +196,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Remove-MgBetaGroupTeamIncomingChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamIncomingChannel?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamincomingchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamincomingchannel)
+
 
 

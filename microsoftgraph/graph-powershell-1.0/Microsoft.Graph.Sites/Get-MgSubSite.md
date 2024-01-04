@@ -38,6 +38,9 @@ Get-MgSubSite -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Prope
 ## DESCRIPTION
 The collection of the sub-sites under this site.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-list-subsites-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -309,4 +312,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgBetaSubSite](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSubSite?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsubsite](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsubsite)
+
 

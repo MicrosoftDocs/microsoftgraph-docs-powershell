@@ -14,7 +14,6 @@ Only teachers and students can perform this operation.
 The operation will not succeed if the allowStudentsToAddResources flag is not set to true.
 To create a new file-based resource, upload the file to the resources folder associated with the submission.
 If the file doesn't exist or is not in that folder, the POST request will fail.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaEducationClassAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassAssignmentSubmissionResource?view=graph-powershell-beta)
@@ -54,7 +53,9 @@ Only teachers and students can perform this operation.
 The operation will not succeed if the allowStudentsToAddResources flag is not set to true.
 To create a new file-based resource, upload the file to the resources folder associated with the submission.
 If the file doesn't exist or is not in that folder, the POST request will fail.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationsubmission-post-resources-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Create an educationWordResource
@@ -411,4 +412,5 @@ For example, if a user changes their display name, the API might show the new va
 [New-MgBetaEducationClassAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassAssignmentSubmissionResource?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignmentsubmissionresource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignmentsubmissionresource)
+
 

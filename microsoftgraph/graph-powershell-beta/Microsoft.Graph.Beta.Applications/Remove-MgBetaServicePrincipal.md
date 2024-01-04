@@ -10,7 +10,6 @@ ms.prod: applications
 
 ## SYNOPSIS
 Delete a servicePrincipal object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgServicePrincipal](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipal?view=graph-powershell-1.0)
@@ -31,7 +30,9 @@ Remove-MgBetaServicePrincipal -InputObject <IApplicationsIdentity> [-IfMatch <St
 
 ## DESCRIPTION
 Delete a servicePrincipal object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -192,4 +193,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Remove-MgServicePrincipal](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipal?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipal)
+
 

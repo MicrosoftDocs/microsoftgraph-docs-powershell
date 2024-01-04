@@ -48,6 +48,9 @@ New-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup
 Create a new targetDeviceGroup object for the remoteDesktopSecurityConfiguration object on the servicePrincipal.
 You can configure a maximum of 10 target device groups for the remoteDesktopSecurityConfiguraiton object on the servicePrincipal.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/remotedesktopsecurityconfiguration-post-targetdevicegroups-permissions.md)]
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -233,5 +236,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [New-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalremotedesktopsecurityconfigurationtargetdevicegroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalremotedesktopsecurityconfigurationtargetdevicegroup)
+
 
 

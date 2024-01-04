@@ -10,7 +10,6 @@ ms.prod: microsoft-teams
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a shiftPreferences object by ID.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserSettingShiftPreference](/powershell/module/Microsoft.Graph.Users/Get-MgUserSettingShiftPreference?view=graph-powershell-1.0)
@@ -31,7 +30,9 @@ Get-MgBetaUserSettingShiftPreference -InputObject <IUsersIdentity> [-ExpandPrope
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a shiftPreferences object by ID.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/shiftpreferences-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -152,4 +153,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Get-MgUserSettingShiftPreference](/powershell/module/Microsoft.Graph.Users/Get-MgUserSettingShiftPreference?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingshiftpreference](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingshiftpreference)
+
 

@@ -17,7 +17,6 @@ When an assignment is in draft status, students will not see the assignment, nor
 Calling this API creates educationSubmission objects and displays the assignment in each student's list.
 The state of the assignment goes back to draft if there is any backend failure during publish process.
 To update the properties of a published assignment, see update an assignment.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Publish-MgBetaEducationUserAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Publish-MgBetaEducationUserAssignment?view=graph-powershell-beta)
@@ -44,7 +43,9 @@ When an assignment is in draft status, students will not see the assignment, nor
 Calling this API creates educationSubmission objects and displays the assignment in each student's list.
 The state of the assignment goes back to draft if there is any backend failure during publish process.
 To update the properties of a published assignment, see update an assignment.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-publish-permissions.md)]
 
 ## EXAMPLES
 
@@ -158,4 +159,5 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 [Publish-MgBetaEducationUserAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Publish-MgBetaEducationUserAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/publish-mgeducationuserassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.education/publish-mgeducationuserassignment)
+
 

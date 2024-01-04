@@ -10,7 +10,6 @@ ms.prod: applications
 
 ## SYNOPSIS
 Deletes an appRoleAssignment that a user, group, or client service principal has been granted for a resource service principal.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipalAppRoleAssignedTo](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalAppRoleAssignedTo?view=graph-powershell-beta)
@@ -31,7 +30,9 @@ Remove-MgServicePrincipalAppRoleAssignedTo -InputObject <IApplicationsIdentity> 
 
 ## DESCRIPTION
 Deletes an appRoleAssignment that a user, group, or client service principal has been granted for a resource service principal.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-delete-approleassignedto-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -198,4 +199,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Remove-MgBetaServicePrincipalAppRoleAssignedTo](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalAppRoleAssignedTo?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalapproleassignedto](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalapproleassignedto)
+
 

@@ -12,7 +12,6 @@ ms.prod: education
 Make the grade and feedback associated with this submission available to the student.
 This will change the status of the submission from 'submitted' to 'returned' and indicates that feedback is provided or grading is done.
 This action can only be done by the teacher.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgReturnEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Invoke-MgReturnEducationMeAssignmentSubmission?view=graph-powershell-1.0)
@@ -35,7 +34,9 @@ Invoke-MgBetaReturnEducationMeAssignmentSubmission -InputObject <IEducationIdent
 Make the grade and feedback associated with this submission available to the student.
 This will change the status of the submission from 'submitted' to 'returned' and indicates that feedback is provided or grading is done.
 This action can only be done by the teacher.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsubmission-return-permissions.md)]
 
 ## EXAMPLES
 
@@ -156,4 +157,5 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 [Invoke-MgReturnEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Invoke-MgReturnEducationMeAssignmentSubmission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetareturneducationmeassignmentsubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetareturneducationmeassignmentsubmission)
+
 

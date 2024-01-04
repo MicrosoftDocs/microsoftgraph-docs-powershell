@@ -9,7 +9,7 @@ ms.prod: users
 # Get-MgBetaUserMemberOf
 
 ## SYNOPSIS
-The groups, directory roles and administrative units that the user is a member of.
+The groups, directory roles, and administrative units that the user is a member of.
 Read-only.
 Nullable.
 Supports $expand.
@@ -39,10 +39,13 @@ Get-MgBetaUserMemberOf -InputObject <IUsersIdentity> [-ExpandProperty <String[]>
 ```
 
 ## DESCRIPTION
-The groups, directory roles and administrative units that the user is a member of.
+The groups, directory roles, and administrative units that the user is a member of.
 Read-only.
 Nullable.
 Supports $expand.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-memberof-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -315,4 +318,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Get-MgUserMemberOf](/powershell/module/Microsoft.Graph.Users/Get-MgUserMemberOf?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausermemberof](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausermemberof)
+
 

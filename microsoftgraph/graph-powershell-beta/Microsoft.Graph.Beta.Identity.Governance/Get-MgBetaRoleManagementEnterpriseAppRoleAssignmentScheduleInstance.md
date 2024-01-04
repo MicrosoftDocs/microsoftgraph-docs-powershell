@@ -11,7 +11,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 Get the instance of an active role assignment.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -37,7 +36,12 @@ Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstance -InputObject
 
 ## DESCRIPTION
 Get the instance of an active role assignment.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleassignmentscheduleinstance-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rbacapplication-list-roleassignmentscheduleinstances-permissions.md)]
 
 ## PARAMETERS
 
@@ -357,5 +361,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententerpriseapproleassignmentscheduleinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententerpriseapproleassignmentscheduleinstance)
+
 
 

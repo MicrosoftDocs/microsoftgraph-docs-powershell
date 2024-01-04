@@ -10,7 +10,6 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Update the properties of an administrativeUnit object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -47,7 +46,9 @@ Update-MgBetaAdministrativeUnit -InputObject <IIdentityDirectoryManagementIdenti
 
 ## DESCRIPTION
 Update the properties of an administrativeUnit object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/administrativeunit-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Update an administrative unit
@@ -434,4 +435,5 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadministrativeunit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadministrativeunit)
+
 

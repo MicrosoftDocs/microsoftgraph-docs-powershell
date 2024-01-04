@@ -10,7 +10,6 @@ ms.prod: security
 
 ## SYNOPSIS
 Get the properties and relationships of a hostReputation object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceHostReputation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostReputation?view=graph-powershell-beta)
@@ -31,7 +30,9 @@ Get-MgSecurityThreatIntelligenceHostReputation -InputObject <ISecurityIdentity> 
 
 ## DESCRIPTION
 Get the properties and relationships of a hostReputation object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-host-get-reputation-permissions.md)]
 
 ## PARAMETERS
 
@@ -169,5 +170,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Get-MgBetaSecurityThreatIntelligenceHostReputation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostReputation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostreputation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostreputation)
+
 
 

@@ -148,7 +148,6 @@ function Add-Back-Ticks{
     $text > $tempFilePath
     Remove-Item -Path $FilePath
     Move-Item -Path $tempFilePath -Destination $FilePath
-    Refine_File -FilePath $FilePath -GraphProfile $GraphProfile -ModuleName $ModuleName
 	}catch{
 	Write-Host "`nError Message: " $_.Exception.Message
 	Write-Host "`nError in Line: " $_.InvocationInfo.Line
@@ -156,6 +155,7 @@ function Add-Back-Ticks{
 	Write-Host "`nError Item Name: "$_.Exception.ItemName
 
 	}
+    Refine_File -FilePath $FilePath -GraphProfile $GraphProfile -ModuleName $ModuleName
 }
 function Refine_File{
     param (
@@ -179,13 +179,13 @@ function Refine_File{
     $text > $tempFilePath
     Remove-Item -Path $FilePath
     Move-Item -Path $tempFilePath -Destination $FilePath
-    Special-Escape -FilePath $FilePath -GraphProfile $GraphProfile -ModuleName $ModuleName
 	}catch{
 	Write-Host "`nError Message: " $_.Exception.Message
 	Write-Host "`nError in Line: " $_.InvocationInfo.Line
 	Write-Host "`nError in Line Number: "$_.InvocationInfo.ScriptLineNumber
 	Write-Host "`nError Item Name: "$_.Exception.ItemName
 	}
+    Special-Escape -FilePath $FilePath -GraphProfile $GraphProfile -ModuleName $ModuleName
 }
 
 function Special-Escape{
@@ -217,13 +217,13 @@ function Special-Escape{
 			Move-Item -Path $tempFilePath -Destination $filePath
 	   }
 	 }
-     Remove-Invalid-NextLine-Characters -FilePath $FilePath -GraphProfile $GraphProfile -ModuleName $ModuleName
 	}catch{
 	Write-Host "`nError Message: " $_.Exception.Message
 	Write-Host "`nError in Line: " $_.InvocationInfo.Line
 	Write-Host "`nError in Line Number: "$_.InvocationInfo.ScriptLineNumber
 	Write-Host "`nError Item Name: "$_.Exception.ItemName
 	}
+    Remove-Invalid-NextLine-Characters -FilePath $FilePath -GraphProfile $GraphProfile -ModuleName $ModuleName
 }
 function Check-If-Already-Escaped{
 param (
@@ -273,13 +273,14 @@ function Remove-Invalid-NextLine-Characters{
     $text > $tempFilePath
     Remove-Item -Path $FilePath
     Move-Item -Path $tempFilePath -Destination $FilePath
-    CleanupFile -File $FilePath
+    
 	}catch{
 	Write-Host "`nError Message: " $_.Exception.Message
 	Write-Host "`nError in Line: " $_.InvocationInfo.Line
 	Write-Host "`nError in Line Number: "$_.InvocationInfo.ScriptLineNumber
 	Write-Host "`nError Item Name: "$_.Exception.ItemName
 	}
+    CleanupFile -File $FilePath
 }
 function CleanupFile {
     Param (
@@ -288,8 +289,12 @@ function CleanupFile {
     try{
     $Content = Get-Content -Encoding UTF8 -Raw $File
     $Content = $Content.Replace("# ^ ~.", "")
+    $Content = $Content.Replace("# $ % & ' ( ) * + , - .", "")
+    $Content = $Content.Replace("/ : ;  =  ?", "")
+    $Content = $Content.Replace("@ \[ \] ^ + _  {  } ~,", "")
     $Content = $Content.Replace("- _ !", "")
     $Content = $Content.Replace("Only the following characters are allowed A - Z, a - z, 0 - 9, ' .", "Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,")
+    $Content = $Content.Replace("Allowed characters are : !", "Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges")
     $Content | Out-File $File -Encoding UTF8
     }catch{
         Write-Host "`nError Message: " $_.Exception.Message

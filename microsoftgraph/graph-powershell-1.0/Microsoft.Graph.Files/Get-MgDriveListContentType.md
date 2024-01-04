@@ -38,6 +38,9 @@ Get-MgDriveListContentType -InputObject <IFilesIdentity> [-ExpandProperty <Strin
 ## DESCRIPTION
 The collection of content types present in this list.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/list-list-contenttypes-permissions.md)]
+
 ## EXAMPLES
 
 ## PARAMETERS
@@ -284,4 +287,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgBetaDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistcontenttype)
+
 

@@ -11,7 +11,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Read the properties and relationships of a servicePrincipalRiskDetection object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgServicePrincipalRiskDetection?view=graph-powershell-1.0)
@@ -39,7 +38,12 @@ Get-MgBetaServicePrincipalRiskDetection -InputObject <IIdentitySignInsIdentity> 
 
 ## DESCRIPTION
 Read the properties and relationships of a servicePrincipalRiskDetection object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipalriskdetection-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityprotectionroot-list-serviceprincipalriskdetections-permissions.md)]
 
 ## EXAMPLES
 ### Example: Get a specific risk detection object
@@ -257,6 +261,7 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[ActivityBasedTimeoutPolicyId \<String\>\]: The unique identifier of activityBasedTimeoutPolicy
   \[AppManagementPolicyId \<String\>\]: The unique identifier of appManagementPolicy
   \[AuthenticationCombinationConfigurationId \<String\>\]: The unique identifier of authenticationCombinationConfiguration
+  \[AuthenticationConditionApplicationAppId \<String\>\]: The unique identifier of authenticationConditionApplication
   \[AuthenticationContextClassReferenceId \<String\>\]: The unique identifier of authenticationContextClassReference
   \[AuthenticationEventListenerId \<String\>\]: The unique identifier of authenticationEventListener
   \[AuthenticationEventsFlowId \<String\>\]: The unique identifier of authenticationEventsFlow
@@ -335,4 +340,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 [Get-MgServicePrincipalRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgServicePrincipalRiskDetection?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaserviceprincipalriskdetection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaserviceprincipalriskdetection)
+
 

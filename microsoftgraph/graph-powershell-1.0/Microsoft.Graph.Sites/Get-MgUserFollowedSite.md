@@ -38,6 +38,9 @@ Get-MgUserFollowedSite -InputObject <ISitesIdentity> [-ExpandProperty <String[]>
 ## DESCRIPTION
 Get followedSites from users
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/sites-list-followed-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -310,4 +313,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgBetaUserFollowedSite](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaUserFollowedSite?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mguserfollowedsite](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mguserfollowedsite)
+
 

@@ -36,6 +36,9 @@ Get-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource -InputObject 
 ## DESCRIPTION
 Adds an additional source to the sourceCollection.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-sourcecollection-list-additionalsources-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource Cmdlet
 ```powershell
@@ -296,4 +299,5 @@ INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasesourcecollectionadditionalsource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasesourcecollectionadditionalsource)
+
 

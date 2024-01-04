@@ -51,6 +51,9 @@ Replace an existing shift.
 If the specified shift doesn't exist, this method returns 404 Not found.
 The duration of a shift can't be less than 1 minute or longer than 24 hours.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/shift-put-permissions.md)]
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -419,5 +422,6 @@ Required.
 [Update-MgBetaTeamScheduleShift](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamScheduleShift?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamscheduleshift](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamscheduleshift)
+
 
 

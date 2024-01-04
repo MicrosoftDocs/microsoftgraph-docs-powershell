@@ -9,7 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Removes a group from a lifecycle policy.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupFromLifecyclePolicy](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupFromLifecyclePolicy?view=graph-powershell-beta)
@@ -44,7 +43,6 @@ Remove-MgGroupFromLifecyclePolicy -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Removes a group from a lifecycle policy.
-This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -217,5 +215,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Remove-MgBetaGroupFromLifecyclePolicy](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupFromLifecyclePolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupfromlifecyclepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupfromlifecyclepolicy)
+
 
 

@@ -10,7 +10,6 @@ ms.prod: ediscovery
 
 ## SYNOPSIS
 Update the properties of a an eDiscovery caseSettings object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -44,7 +43,9 @@ Update-MgBetaComplianceEdiscoveryCaseSetting -InputObject <IComplianceIdentity>
 
 ## DESCRIPTION
 Update the properties of a an eDiscovery caseSettings object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-casesettings-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaComplianceEdiscoveryCaseSetting Cmdlet
@@ -345,4 +346,5 @@ TOPICMODELING \<IMicrosoftGraphEdiscoveryTopicModelingSettings\>: topicModelingS
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasesetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasesetting)
+
 

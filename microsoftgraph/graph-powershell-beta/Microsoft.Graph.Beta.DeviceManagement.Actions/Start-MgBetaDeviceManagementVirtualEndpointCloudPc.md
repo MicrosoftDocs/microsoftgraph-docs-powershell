@@ -13,7 +13,6 @@ Power on a Windows 365 Frontline Cloud PC.
 This action supports Microsoft Endpoint Manager (MEM) admin scenarios.
 After a Windows 365 Frontline Cloud PC is powered on, it is allocated to a user, and licenses are assigned immediately.
 Only IT admin users can perform this action.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -46,7 +45,9 @@ Power on a Windows 365 Frontline Cloud PC.
 This action supports Microsoft Endpoint Manager (MEM) admin scenarios.
 After a Windows 365 Frontline Cloud PC is powered on, it is allocated to a user, and licenses are assigned immediately.
 Only IT admin users can perform this action.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-poweron-permissions.md)]
 
 ## PARAMETERS
 
@@ -186,6 +187,7 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
   \[MicrosoftTunnelSiteId \<String\>\]: The unique identifier of microsoftTunnelSite
   \[MobileAppTroubleshootingEventId \<String\>\]: The unique identifier of mobileAppTroubleshootingEvent
   \[NotificationMessageTemplateId \<String\>\]: The unique identifier of notificationMessageTemplate
+  \[PrivilegeManagementElevationRequestId \<String\>\]: The unique identifier of privilegeManagementElevationRequest
   \[RemoteAssistancePartnerId \<String\>\]: The unique identifier of remoteAssistancePartner
   \[RoleScopeTagId \<String\>\]: The unique identifier of roleScopeTag
   \[WindowsAutopilotDeploymentProfileId \<String\>\]: The unique identifier of windowsAutopilotDeploymentProfile
@@ -198,5 +200,6 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/start-mgbetadevicemanagementvirtualendpointcloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/start-mgbetadevicemanagementvirtualendpointcloudpc)
+
 
 

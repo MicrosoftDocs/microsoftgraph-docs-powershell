@@ -12,7 +12,6 @@ ms.prod: outlook
 ## SYNOPSIS
 Read the properties, relationships, or raw contents of an attachment that is attached to a user event, message, Outlook task, or group post.
 An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupEventInstanceAttachment](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupEventInstanceAttachment?view=graph-powershell-1.0)
@@ -41,7 +40,9 @@ Get-MgBetaGroupEventInstanceAttachment -InputObject <ICalendarIdentity> [-Expand
 ## DESCRIPTION
 Read the properties, relationships, or raw contents of an attachment that is attached to a user event, message, Outlook task, or group post.
 An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-list-attachments-permissions.md)]
 
 ## PARAMETERS
 
@@ -291,5 +292,6 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
 [Get-MgGroupEventInstanceAttachment](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupEventInstanceAttachment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupeventinstanceattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupeventinstanceattachment)
+
 
 

@@ -10,7 +10,6 @@ ms.prod: reports
 
 ## SYNOPSIS
 Get the tenant-level settings for Microsoft 365 reports.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -20,7 +19,9 @@ Get-MgBetaAdminReportSetting [-ExpandProperty <String[]>] [-Property <String[]>]
 
 ## DESCRIPTION
 Get the tenant-level settings for Microsoft 365 reports.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/adminreportsettings-get-permissions.md)]
 
 ## PARAMETERS
 
@@ -67,5 +68,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaadminreportsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaadminreportsetting)
+
 
 

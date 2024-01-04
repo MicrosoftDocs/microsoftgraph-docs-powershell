@@ -34,6 +34,9 @@ Get-MgBetaProgram -InputObject <IIdentityGovernanceIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 Get entity from programs by key
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/program-list-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaProgram Cmdlet
 ```powershell
@@ -346,4 +349,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaprogram](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaprogram)
+
 

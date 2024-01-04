@@ -11,7 +11,6 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Get a specific commercial subscription that an organization has acquired.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSubscribedSku](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaSubscribedSku?view=graph-powershell-beta)
@@ -37,7 +36,12 @@ Get-MgSubscribedSku -InputObject <IIdentityDirectoryManagementIdentity> [-Proper
 
 ## DESCRIPTION
 Get a specific commercial subscription that an organization has acquired.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/subscribedsku-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/subscribedsku-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get subscribed SKUs
@@ -229,4 +233,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 [Get-MgBetaSubscribedSku](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaSubscribedSku?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgsubscribedsku](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgsubscribedsku)
+
 

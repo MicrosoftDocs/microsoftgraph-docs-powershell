@@ -10,7 +10,6 @@ ms.prod: sharepoint
 
 ## SYNOPSIS
 Follow a driveItem.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgFollowGroupDriveItem](/powershell/module/Microsoft.Graph.Groups/Invoke-MgFollowGroupDriveItem?view=graph-powershell-1.0)
@@ -30,7 +29,9 @@ Invoke-MgBetaFollowGroupDriveItem -InputObject <IGroupsIdentity> [-WhatIf] [-Con
 
 ## DESCRIPTION
 Follow a driveItem.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-follow-permissions.md)]
 
 ## PARAMETERS
 
@@ -188,5 +189,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Invoke-MgFollowGroupDriveItem](/powershell/module/Microsoft.Graph.Groups/Invoke-MgFollowGroupDriveItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetafollowgroupdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetafollowgroupdriveitem)
+
 
 

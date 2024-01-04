@@ -641,3 +641,4 @@ Must match one of the directory definitions in synchronizationSchema.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationsynchronizationtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationsynchronizationtemplate)
 
+

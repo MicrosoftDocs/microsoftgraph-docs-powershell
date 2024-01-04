@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Update the properties of a todoTaskList object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgUserTodoList](/powershell/module/Microsoft.Graph.Users/Update-MgUserTodoList?view=graph-powershell-1.0)
@@ -45,7 +44,9 @@ Update-MgBetaUserTodoList -InputObject <IUsersIdentity> -BodyParameter <IMicroso
 
 ## DESCRIPTION
 Update the properties of a todoTaskList object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/todotasklist-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -559,4 +560,5 @@ Required.
 [Update-MgUserTodoList](/powershell/module/Microsoft.Graph.Users/Update-MgUserTodoList?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolist)
+
 

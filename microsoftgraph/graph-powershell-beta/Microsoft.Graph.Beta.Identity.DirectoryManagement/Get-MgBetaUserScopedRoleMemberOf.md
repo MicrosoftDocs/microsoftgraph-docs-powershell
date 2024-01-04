@@ -42,6 +42,9 @@ The scoped-role administrative unit memberships for this user.
 Read-only.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-scopedrolememberof-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserScopedRoleMemberOf Cmdlet
 ```powershell
@@ -315,4 +318,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 [Get-MgUserScopedRoleMemberOf](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgUserScopedRoleMemberOf?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetauserscopedrolememberof](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetauserscopedrolememberof)
+
 

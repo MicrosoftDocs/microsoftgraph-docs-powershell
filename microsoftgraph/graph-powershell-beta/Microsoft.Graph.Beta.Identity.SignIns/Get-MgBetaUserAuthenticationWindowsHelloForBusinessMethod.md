@@ -11,7 +11,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Read the properties and relationships of a windowsHelloForBusinessAuthenticationMethod object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserAuthenticationWindowsHelloForBusinessMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationWindowsHelloForBusinessMethod?view=graph-powershell-1.0)
@@ -40,7 +39,12 @@ Get-MgBetaUserAuthenticationWindowsHelloForBusinessMethod -InputObject <IIdentit
 
 ## DESCRIPTION
 Read the properties and relationships of a windowsHelloForBusinessAuthenticationMethod object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowshelloforbusinessauthenticationmethod-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowshelloforbusinessauthenticationmethod-list-permissions.md)]
 
 ## PARAMETERS
 
@@ -260,6 +264,7 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[ActivityBasedTimeoutPolicyId \<String\>\]: The unique identifier of activityBasedTimeoutPolicy
   \[AppManagementPolicyId \<String\>\]: The unique identifier of appManagementPolicy
   \[AuthenticationCombinationConfigurationId \<String\>\]: The unique identifier of authenticationCombinationConfiguration
+  \[AuthenticationConditionApplicationAppId \<String\>\]: The unique identifier of authenticationConditionApplication
   \[AuthenticationContextClassReferenceId \<String\>\]: The unique identifier of authenticationContextClassReference
   \[AuthenticationEventListenerId \<String\>\]: The unique identifier of authenticationEventListener
   \[AuthenticationEventsFlowId \<String\>\]: The unique identifier of authenticationEventsFlow
@@ -338,5 +343,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 [Get-MgUserAuthenticationWindowsHelloForBusinessMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationWindowsHelloForBusinessMethod?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationwindowshelloforbusinessmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationwindowshelloforbusinessmethod)
+
 
 

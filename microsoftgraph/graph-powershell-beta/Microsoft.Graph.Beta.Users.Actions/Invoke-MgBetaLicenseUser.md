@@ -12,7 +12,6 @@ ms.prod: users
 Reprocess all group-based license assignments for the user.
 To learn more about group-based licensing, see What is group-based licensing in Microsoft Entra ID.
 Also see Identify and resolve license assignment problems for a group in Microsoft Entra ID for more details.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgLicenseUser](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgLicenseUser?view=graph-powershell-1.0)
@@ -33,7 +32,9 @@ Invoke-MgBetaLicenseUser -InputObject <IUsersActionsIdentity> [-WhatIf] [-Confir
 Reprocess all group-based license assignments for the user.
 To learn more about group-based licensing, see What is group-based licensing in Microsoft Entra ID.
 Also see Identify and resolve license assignment problems for a group in Microsoft Entra ID for more details.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-reprocesslicenseassignment-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgBetaLicenseUser Cmdlet
@@ -152,6 +153,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[NotebookId \<String\>\]: The unique identifier of notebook
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
   \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
   \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
   \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask
@@ -168,4 +170,5 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 [Invoke-MgLicenseUser](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgLicenseUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetalicenseuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetalicenseuser)
+
 

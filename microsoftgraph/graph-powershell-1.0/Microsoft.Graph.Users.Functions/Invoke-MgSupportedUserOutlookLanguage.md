@@ -11,7 +11,6 @@ schema: 2.0.0
 Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server.
 When setting up an Outlook client, the user selects the preferred language from this supported list.
 You can subsequently get the preferred language bygetting the user's mailbox settings.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaSupportedUserOutlookLanguage](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaSupportedUserOutlookLanguage?view=graph-powershell-beta)
@@ -34,7 +33,6 @@ Invoke-MgSupportedUserOutlookLanguage -InputObject <IUsersFunctionsIdentity> [-C
 Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server.
 When setting up an Outlook client, the user selects the preferred language from this supported list.
 You can subsequently get the preferred language bygetting the user's mailbox settings.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgSupportedUserOutlookLanguage Cmdlet
@@ -201,4 +199,5 @@ INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
 [Invoke-MgBetaSupportedUserOutlookLanguage](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaSupportedUserOutlookLanguage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgsupporteduseroutlooklanguage](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgsupporteduseroutlooklanguage)
+
 

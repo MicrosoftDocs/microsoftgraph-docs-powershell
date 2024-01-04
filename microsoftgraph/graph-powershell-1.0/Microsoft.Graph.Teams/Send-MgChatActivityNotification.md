@@ -11,7 +11,6 @@ ms.prod: microsoft-teams
 ## SYNOPSIS
 Send an activity feed notification in scope of a chat.
 For more details about sending notifications and the requirements for doing so, see sending Teams activity notifications.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Send-MgBetaChatActivityNotification](/powershell/module/Microsoft.Graph.Beta.Teams/Send-MgBetaChatActivityNotification?view=graph-powershell-beta)
@@ -51,7 +50,9 @@ Send-MgChatActivityNotification -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Send an activity feed notification in scope of a chat.
 For more details about sending notifications and the requirements for doing so, see sending Teams activity notifications.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-sendactivitynotification-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Notify a user about a task created in a chat
@@ -513,4 +514,5 @@ Optional when source is entityUrl; required when source is text.
 [Send-MgBetaChatActivityNotification](/powershell/module/Microsoft.Graph.Beta.Teams/Send-MgBetaChatActivityNotification?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mgchatactivitynotification](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mgchatactivitynotification)
+
 

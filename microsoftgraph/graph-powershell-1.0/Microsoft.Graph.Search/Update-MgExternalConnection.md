@@ -10,7 +10,6 @@ ms.prod: search
 
 ## SYNOPSIS
 Update the properties of an externalConnection object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternalConnection?view=graph-powershell-beta)
@@ -57,7 +56,9 @@ Update-MgExternalConnection -InputObject <ISearchIdentity>
 
 ## DESCRIPTION
 Update the properties of an externalConnection object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-externalconnection-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -666,4 +667,5 @@ Required.
 [Update-MgBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternalConnection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnection](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnection)
+
 

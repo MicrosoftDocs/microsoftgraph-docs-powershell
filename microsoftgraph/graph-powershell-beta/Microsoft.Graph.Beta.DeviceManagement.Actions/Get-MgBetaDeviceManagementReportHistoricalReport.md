@@ -278,3 +278,4 @@ BODYPARAMETER \<IPaths1Mia7W1DevicemanagementReportsMicrosoftGraphGethistoricalr
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreporthistoricalreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreporthistoricalreport)
 
 
+

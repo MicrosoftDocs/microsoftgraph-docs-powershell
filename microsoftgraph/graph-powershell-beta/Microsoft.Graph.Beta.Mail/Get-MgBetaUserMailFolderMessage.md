@@ -38,6 +38,9 @@ Get-MgBetaUserMailFolderMessage -InputObject <IMailIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 The collection of messages in the mailFolder.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailfolder-list-messages-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserMailFolderMessage Cmdlet
 ```powershell
@@ -293,4 +296,5 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
 [Get-MgUserMailFolderMessage](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfoldermessage)
+
 

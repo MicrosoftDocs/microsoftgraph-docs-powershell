@@ -197,3 +197,4 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupdriveitempermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupdriveitempermanent)
 
 
+

@@ -11,7 +11,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 Retrieve the properties and relationships of an accessPackageCatalog object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -54,7 +53,12 @@ Get-MgEntitlementManagementCatalog [-ExpandProperty <String[]>] [-Property <Stri
 
 ## DESCRIPTION
 Retrieve the properties and relationships of an accessPackageCatalog object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackagecatalog-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/entitlementmanagement-list-catalogs-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -371,4 +375,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementcatalog](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementcatalog)
+
 

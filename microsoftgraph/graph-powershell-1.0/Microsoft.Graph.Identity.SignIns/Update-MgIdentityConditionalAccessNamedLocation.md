@@ -10,7 +10,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Update the properties of a countryNamedLocation object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityConditionalAccessNamedLocation?view=graph-powershell-beta)
@@ -45,7 +44,6 @@ Update-MgIdentityConditionalAccessNamedLocation -InputObject <IIdentitySignInsId
 
 ## DESCRIPTION
 Update the properties of a countryNamedLocation object.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Update a country named location by adding to the list of countries
@@ -319,4 +317,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 [Update-MgBetaIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityConditionalAccessNamedLocation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityconditionalaccessnamedlocation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityconditionalaccessnamedlocation)
+
 

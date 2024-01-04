@@ -40,6 +40,9 @@ Get-MgBetaAgreementAcceptance -InputObject <IIdentityGovernanceIdentity> [-Expan
 Read-only.
 Information about acceptances of this agreement.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/agreement-list-acceptances-permissions.md)]
+
 ## PARAMETERS
 
 ### -AgreementAcceptanceId
@@ -359,5 +362,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [Get-MgAgreementAcceptance](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgAgreementAcceptance?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaagreementacceptance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaagreementacceptance)
+
 
 

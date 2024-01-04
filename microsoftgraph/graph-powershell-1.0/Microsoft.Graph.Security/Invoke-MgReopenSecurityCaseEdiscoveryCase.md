@@ -10,7 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Reopen an eDiscovery case that was closed.
 For details, see Reopen a closed case.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaReopenSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Beta.Security/Invoke-MgBetaReopenSecurityCaseEdiscoveryCase?view=graph-powershell-beta)
@@ -32,7 +31,6 @@ Invoke-MgReopenSecurityCaseEdiscoveryCase -InputObject <ISecurityIdentity> [-Pas
 ## DESCRIPTION
 Reopen an eDiscovery case that was closed.
 For details, see Reopen a closed case.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgReopenSecurityCaseEdiscoveryCase Cmdlet
@@ -195,4 +193,5 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Invoke-MgBetaReopenSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Beta.Security/Invoke-MgBetaReopenSecurityCaseEdiscoveryCase?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgreopensecuritycaseediscoverycase](https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgreopensecuritycaseediscoverycase)
+
 

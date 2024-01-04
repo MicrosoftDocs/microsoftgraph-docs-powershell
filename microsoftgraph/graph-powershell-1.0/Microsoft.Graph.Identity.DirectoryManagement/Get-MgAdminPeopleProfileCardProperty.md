@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgadminpeopleprofilecardproperty
 schema: 2.0.0
+ms.prod: people
+ms.prod: people
 ---
 
 # Get-MgAdminPeopleProfileCardProperty
 
 ## SYNOPSIS
-Get profileCardProperties from admin
+Retrieve the properties of a profileCardProperty entity.
+The profileCardProperty is identified by its directoryPropertyName property.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaAdminPeopleProfileCardProperty](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaAdminPeopleProfileCardProperty?view=graph-powershell-beta)
@@ -35,7 +38,8 @@ Get-MgAdminPeopleProfileCardProperty -InputObject <IIdentityDirectoryManagementI
 ```
 
 ## DESCRIPTION
-Get profileCardProperties from admin
+Retrieve the properties of a profileCardProperty entity.
+The profileCardProperty is identified by its directoryPropertyName property.
 
 ## PARAMETERS
 
@@ -266,5 +270,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 [Get-MgBetaAdminPeopleProfileCardProperty](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaAdminPeopleProfileCardProperty?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgadminpeopleprofilecardproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgadminpeopleprofilecardproperty)
+
 
 

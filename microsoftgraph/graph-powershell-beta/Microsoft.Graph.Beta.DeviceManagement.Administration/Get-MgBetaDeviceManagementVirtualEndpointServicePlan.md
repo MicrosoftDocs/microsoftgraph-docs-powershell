@@ -35,6 +35,9 @@ Get-MgBetaDeviceManagementVirtualEndpointServicePlan -InputObject <IDeviceManage
 ## DESCRIPTION
 Cloud PC service plans.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-list-serviceplans-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointServicePlan Cmdlet
 ```powershell
@@ -305,4 +308,5 @@ INPUTOBJECT \<IDeviceManagementAdministrationIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointserviceplan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointserviceplan)
+
 

@@ -10,7 +10,6 @@ ms.prod: microsoft-teams
 
 ## SYNOPSIS
 Mark a chat as read for a user.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaMarkUserChatReadForUser](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaMarkUserChatReadForUser?view=graph-powershell-beta)
@@ -45,7 +44,9 @@ Invoke-MgMarkUserChatReadForUser -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Mark a chat as read for a user.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-markchatreadforuser-permissions.md)]
 
 ## PARAMETERS
 
@@ -257,5 +258,6 @@ For example, if a user changes their display name, the API might show the new va
 [Invoke-MgBetaMarkUserChatReadForUser](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaMarkUserChatReadForUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgmarkuserchatreadforuser](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgmarkuserchatreadforuser)
+
 
 

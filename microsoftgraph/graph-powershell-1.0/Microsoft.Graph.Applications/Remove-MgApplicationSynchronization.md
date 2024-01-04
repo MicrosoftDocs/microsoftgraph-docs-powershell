@@ -169,3 +169,4 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationsynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationsynchronization)
 
 
+

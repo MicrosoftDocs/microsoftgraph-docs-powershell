@@ -11,7 +11,6 @@ ms.prod: education
 ## SYNOPSIS
 Read the properties and relationships of an educationAssignmentSettings object.
 Only teachers can perform this operation.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgEducationClassAssignmentSetting](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentSetting?view=graph-powershell-1.0)
@@ -33,7 +32,9 @@ Get-MgBetaEducationClassAssignmentSetting -InputObject <IEducationIdentity> [-Ex
 ## DESCRIPTION
 Read the properties and relationships of an educationAssignmentSettings object.
 Only teachers can perform this operation.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignmentsettings-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -153,4 +154,5 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 [Get-MgEducationClassAssignmentSetting](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentSetting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentsetting)
+
 

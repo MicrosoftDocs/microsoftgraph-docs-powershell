@@ -10,8 +10,7 @@ ms.prod: sharepoint
 # Get-MgBetaGroupSitePage
 
 ## SYNOPSIS
-Get the metadata for a baseSitePage\]\[\] in the site pages \[list\]\[\] in a \[site\]\[\].
-This API is available in the following \[national cloud deployments.
+Get the metadata for a \[baseSitePage\]\[\] in the site pages \[list\]\[\] in a \[site\]\[\].
 
 ## SYNTAX
 
@@ -35,8 +34,13 @@ Get-MgBetaGroupSitePage -InputObject <ISitesIdentity> [-ExpandProperty <String[]
 ```
 
 ## DESCRIPTION
-Get the metadata for a baseSitePage\]\[\] in the site pages \[list\]\[\] in a \[site\]\[\].
-This API is available in the following \[national cloud deployments.
+Get the metadata for a \[baseSitePage\]\[\] in the site pages \[list\]\[\] in a \[site\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/basesitepage-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/basesitepage-list-permissions.md)]
 
 ## PARAMETERS
 
@@ -320,5 +324,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitepage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitepage)
+
 
 

@@ -9,7 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 End the open break in a specific timeCard.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -41,7 +40,6 @@ Stop-MgBetaTeamScheduleTimeCardBreak -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 End the open break in a specific timeCard.
-This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -216,6 +214,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
   \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
   \[ConversationMemberId \<String\>\]: The unique identifier of conversationMember
+  \[DayNoteId \<String\>\]: The unique identifier of dayNote
   \[DeletedChatId \<String\>\]: The unique identifier of deletedChat
   \[DeletedTeamId \<String\>\]: The unique identifier of deletedTeam
   \[GroupId \<String\>\]: The unique identifier of group
@@ -256,5 +255,6 @@ NOTES \<IMicrosoftGraphItemBody\>: itemBody
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/stop-mgbetateamscheduletimecardbreak](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/stop-mgbetateamscheduletimecardbreak)
+
 
 

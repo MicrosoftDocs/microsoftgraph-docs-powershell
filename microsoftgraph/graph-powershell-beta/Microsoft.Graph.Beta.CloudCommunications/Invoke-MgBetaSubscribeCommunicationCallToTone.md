@@ -10,7 +10,6 @@ ms.prod: cloud-communications
 
 ## SYNOPSIS
 Subscribe to DTMF (dual-tone multi-frequency signaling) to allow you to be notified when the user presses keys on a 'Dialpad'.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgSubscribeCommunicationCallToTone](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgSubscribeCommunicationCallToTone?view=graph-powershell-1.0)
@@ -45,7 +44,9 @@ Invoke-MgBetaSubscribeCommunicationCallToTone -InputObject <ICloudCommunications
 
 ## DESCRIPTION
 Subscribe to DTMF (dual-tone multi-frequency signaling) to allow you to be notified when the user presses keys on a 'Dialpad'.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-subscribetotone-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -218,4 +219,5 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
 [Invoke-MgSubscribeCommunicationCallToTone](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgSubscribeCommunicationCallToTone?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetasubscribecommunicationcalltotone](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetasubscribecommunicationcalltotone)
+
 

@@ -9,8 +9,7 @@ ms.prod: sharepoint
 # Get-MgBetaDriveItemAnalytic
 
 ## SYNOPSIS
-Get \[itemAnalytics\]\[\] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the getActivitiesByInterval\]\[\] API.
-This API is available in the following \[national cloud deployments.
+Get \[itemAnalytics\]\[\] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the \[getActivitiesByInterval\]\[\] API.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDriveItemAnalytic](/powershell/module/Microsoft.Graph.Files/Get-MgDriveItemAnalytic?view=graph-powershell-1.0)
@@ -30,8 +29,10 @@ Get-MgBetaDriveItemAnalytic -InputObject <IFilesIdentity> [-ExpandProperty <Stri
 ```
 
 ## DESCRIPTION
-Get \[itemAnalytics\]\[\] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the getActivitiesByInterval\]\[\] API.
-This API is available in the following \[national cloud deployments.
+Get \[itemAnalytics\]\[\] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the \[getActivitiesByInterval\]\[\] API.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/itemanalytics-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaDriveItemAnalytic Cmdlet
@@ -165,4 +166,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgDriveItemAnalytic](/powershell/module/Microsoft.Graph.Files/Get-MgDriveItemAnalytic?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemanalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemanalytic)
+
 

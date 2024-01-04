@@ -9,8 +9,7 @@ ms.prod: sites-and-lists
 # Unpublish-MgBetaUserDriveListContentType
 
 ## SYNOPSIS
-Unpublish a contentType\]\[\] from a content type hub site.
-This API is available in the following \[national cloud deployments.
+Unpublish a \[contentType\]\[\] from a content type hub site.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Unpublish-MgUserDriveListContentType](/powershell/module/Microsoft.Graph.Users.Actions/Unpublish-MgUserDriveListContentType?view=graph-powershell-1.0)
@@ -30,8 +29,10 @@ Unpublish-MgBetaUserDriveListContentType -InputObject <IUsersActionsIdentity> [-
 ```
 
 ## DESCRIPTION
-Unpublish a contentType\]\[\] from a content type hub site.
-This API is available in the following \[national cloud deployments.
+Unpublish a \[contentType\]\[\] from a content type hub site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-unpublish-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -199,6 +200,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[NotebookId \<String\>\]: The unique identifier of notebook
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
   \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
   \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
   \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask
@@ -215,4 +217,5 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 [Unpublish-MgUserDriveListContentType](/powershell/module/Microsoft.Graph.Users.Actions/Unpublish-MgUserDriveListContentType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/unpublish-mgbetauserdrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/unpublish-mgbetauserdrivelistcontenttype)
+
 

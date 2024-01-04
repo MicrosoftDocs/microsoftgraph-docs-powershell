@@ -40,6 +40,9 @@ Get-MgEducationUserSchool -InputObject <IEducationIdentity> [-ExpandProperty <St
 Schools to which the user belongs.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationuser-list-schools-permissions.md)]
+
 ## EXAMPLES
 
 ## PARAMETERS
@@ -272,4 +275,5 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 [Get-MgBetaEducationUserSchool](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserSchool?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserschool](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserschool)
+
 

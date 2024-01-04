@@ -47,3 +47,4 @@ Locale: en-US
 ### [Get-MgUserUsedResourceInsight](Get-MgUserUsedResourceInsight.md)
 {{ Fill in the Description }}
 
+

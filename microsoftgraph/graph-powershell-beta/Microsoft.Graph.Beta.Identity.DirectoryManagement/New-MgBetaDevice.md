@@ -10,7 +10,6 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Create a new device.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgDevice](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDevice?view=graph-powershell-1.0)
@@ -44,7 +43,9 @@ New-MgBetaDevice -BodyParameter <IMicrosoftGraphDevice> [-WhatIf] [-Confirm] [<C
 
 ## DESCRIPTION
 Create a new device.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-post-devices-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -1206,4 +1207,5 @@ Read-only.
 [New-MgDevice](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDevice?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadevice)
+
 

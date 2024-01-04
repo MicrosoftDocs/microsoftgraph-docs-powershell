@@ -380,3 +380,4 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementcatalogresourceroleresourcescope](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementcatalogresourceroleresourcescope)
 
 
+

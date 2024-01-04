@@ -9,7 +9,7 @@ ms.prod: microsoft-teams
 # Get-MgBetaGroupPermissionGrant
 
 ## SYNOPSIS
-The permissions that have been granted for a group to a specific application.
+The permissions granted for a group to a specific application.
 Supports $expand.
 
 > [!NOTE]
@@ -37,8 +37,11 @@ Get-MgBetaGroupPermissionGrant -InputObject <IGroupsIdentity> [-ExpandProperty <
 ```
 
 ## DESCRIPTION
-The permissions that have been granted for a group to a specific application.
+The permissions granted for a group to a specific application.
 Supports $expand.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-permissiongrants-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaGroupPermissionGrant Cmdlet
@@ -310,4 +313,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Get-MgGroupPermissionGrant](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupPermissionGrant?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouppermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouppermissiongrant)
+
 

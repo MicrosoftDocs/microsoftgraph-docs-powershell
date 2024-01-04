@@ -10,7 +10,6 @@ ms.prod: onenote
 
 ## SYNOPSIS
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Copy-MgBetaSiteOnenoteNotebookSectionGroupSectionToSectionGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Copy-MgBetaSiteOnenoteNotebookSectionGroupSectionToSectionGroup?view=graph-powershell-beta)
@@ -49,7 +48,9 @@ Copy-MgSiteOnenoteNotebookSectionGroupSectionToSectionGroup -InputObject <ISites
 
 ## DESCRIPTION
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/section-copytosectiongroup-permissions.md)]
 
 ## PARAMETERS
 
@@ -346,5 +347,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Copy-MgBetaSiteOnenoteNotebookSectionGroupSectionToSectionGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Copy-MgBetaSiteOnenoteNotebookSectionGroupSectionToSectionGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/copy-mgsiteonenotenotebooksectiongroupsectiontosectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/copy-mgsiteonenotenotebooksectiongroupsectiontosectiongroup)
+
 
 

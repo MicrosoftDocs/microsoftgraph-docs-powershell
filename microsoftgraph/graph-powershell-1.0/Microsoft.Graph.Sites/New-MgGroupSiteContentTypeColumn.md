@@ -9,8 +9,7 @@ ms.prod: sites-and-lists
 # New-MgGroupSiteContentTypeColumn
 
 ## SYNOPSIS
-Add a column to a content type\]\[contentType\] in a site, or a list with a request that specifies a \[columnDefinition\]\[columnDefinition\].
-This API is available in the following \[national cloud deployments.
+Add a column to a \[content type\]\[contentType\] in a site, or a list with a request that specifies a \[columnDefinition\]\[columnDefinition\].
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteContentTypeColumn?view=graph-powershell-beta)
@@ -63,8 +62,10 @@ New-MgGroupSiteContentTypeColumn -InputObject <ISitesIdentity> -BodyParameter <I
 ```
 
 ## DESCRIPTION
-Add a column to a content type\]\[contentType\] in a site, or a list with a request that specifies a \[columnDefinition\]\[columnDefinition\].
-This API is available in the following \[national cloud deployments.
+Add a column to a \[content type\]\[contentType\] in a site, or a list with a request that specifies a \[columnDefinition\]\[columnDefinition\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-post-columns-permissions.md)]
 
 ## PARAMETERS
 
@@ -1235,5 +1236,6 @@ For examples, see Examples of common formulas in lists.
 [New-MgBetaGroupSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteContentTypeColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitecontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitecontenttypecolumn)
+
 
 

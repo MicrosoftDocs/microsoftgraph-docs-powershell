@@ -16,7 +16,6 @@ This means that activities without historyItems won't be included in the respons
 The UserActivity.ReadWrite.CreatedByApp permission will also apply extra filtering to the response, so that only activities created by your application are returned.
 This server-side filtering might result in empty pages if the user is active and other applications have created more recent activities.
 To get your application's activities, use the nextLink property to paginate.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaRecentUserActivity](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaRecentUserActivity?view=graph-powershell-beta)
@@ -45,7 +44,6 @@ This means that activities without historyItems won't be included in the respons
 The UserActivity.ReadWrite.CreatedByApp permission will also apply extra filtering to the response, so that only activities created by your application are returned.
 This server-side filtering might result in empty pages if the user is active and other applications have created more recent activities.
 To get your application's activities, use the nextLink property to paginate.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgRecentUserActivity Cmdlet
@@ -242,4 +240,5 @@ INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
 [Invoke-MgBetaRecentUserActivity](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaRecentUserActivity?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgrecentuseractivity](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgrecentuseractivity)
+
 

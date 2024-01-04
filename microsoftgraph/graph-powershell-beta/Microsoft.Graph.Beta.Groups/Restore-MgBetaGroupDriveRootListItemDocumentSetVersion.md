@@ -9,7 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Restore a document set version.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Restore-MgGroupDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Groups/Restore-MgGroupDriveRootListItemDocumentSetVersion?view=graph-powershell-1.0)
@@ -30,7 +29,6 @@ Restore-MgBetaGroupDriveRootListItemDocumentSetVersion -InputObject <IGroupsIden
 
 ## DESCRIPTION
 Restore a document set version.
-This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -203,5 +201,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Restore-MgGroupDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Groups/Restore-MgGroupDriveRootListItemDocumentSetVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/restore-mgbetagroupdriverootlistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/restore-mgbetagroupdriverootlistitemdocumentsetversion)
+
 
 

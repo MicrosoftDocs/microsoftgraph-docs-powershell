@@ -11,7 +11,6 @@ ms.prod: onenote
 ## SYNOPSIS
 Copies a section to a specific notebook.
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Copy-MgSiteOnenoteNotebookSectionToNotebook](/powershell/module/Microsoft.Graph.Sites/Copy-MgSiteOnenoteNotebookSectionToNotebook?view=graph-powershell-1.0)
@@ -50,7 +49,9 @@ Copy-MgBetaSiteOnenoteNotebookSectionToNotebook -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Copies a section to a specific notebook.
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/section-copytonotebook-permissions.md)]
 
 ## PARAMETERS
 
@@ -342,5 +343,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Copy-MgSiteOnenoteNotebookSectionToNotebook](/powershell/module/Microsoft.Graph.Sites/Copy-MgSiteOnenoteNotebookSectionToNotebook?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetasiteonenotenotebooksectiontonotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetasiteonenotenotebooksectiontonotebook)
+
 
 

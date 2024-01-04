@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserDefaultCalendarSchedule](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Get-MgBetaUserDefaultCalendarSchedule?view=graph-powershell-beta)
@@ -47,7 +46,9 @@ Get-MgUserDefaultCalendarSchedule -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/calendar-getschedule-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgUserDefaultCalendarSchedule Cmdlet
@@ -305,4 +306,5 @@ See below for more possible values.
 [Get-MgBetaUserDefaultCalendarSchedule](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Get-MgBetaUserDefaultCalendarSchedule?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/get-mguserdefaultcalendarschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/get-mguserdefaultcalendarschedule)
+
 

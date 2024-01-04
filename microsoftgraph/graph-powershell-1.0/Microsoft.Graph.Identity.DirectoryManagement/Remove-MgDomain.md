@@ -10,7 +10,6 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Deletes a domain from a tenant.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDomain?view=graph-powershell-beta)
@@ -30,7 +29,9 @@ Remove-MgDomain -InputObject <IIdentityDirectoryManagementIdentity> [-IfMatch <S
 
 ## DESCRIPTION
 Deletes a domain from a tenant.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/domain-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -184,4 +185,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 [Remove-MgBetaDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDomain?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdomain](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdomain)
+
 

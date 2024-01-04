@@ -44,6 +44,9 @@ Currently, only one printerShare can be associated with the printer.
 Read-only.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printer-list-shares-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -290,4 +293,5 @@ INPUTOBJECT \<IDevicesCloudPrintIdentity\>: Identity Parameter
 [Get-MgBetaPrintPrinterShare](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintPrinterShare?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintprintershare](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintprintershare)
+
 

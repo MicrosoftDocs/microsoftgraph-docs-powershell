@@ -9,8 +9,7 @@ ms.prod: sharepoint
 # Copy-MgBetaGroupDriveRoot
 
 ## SYNOPSIS
-Asynchronously creates a copy of an driveItem\]\[item-resource\] (including any children), under a new parent item or with a new name.
-This API is available in the following \[national cloud deployments.
+Asynchronously creates a copy of an \[driveItem\]\[item-resource\] (including any children), under a new parent item or with a new name.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Copy-MgGroupDriveRoot](/powershell/module/Microsoft.Graph.Groups/Copy-MgGroupDriveRoot?view=graph-powershell-1.0)
@@ -44,8 +43,10 @@ Copy-MgBetaGroupDriveRoot -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Asynchronously creates a copy of an driveItem\]\[item-resource\] (including any children), under a new parent item or with a new name.
-This API is available in the following \[national cloud deployments.
+Asynchronously creates a copy of an \[driveItem\]\[item-resource\] (including any children), under a new parent item or with a new name.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-copy-permissions.md)]
 
 ## EXAMPLES
 
@@ -314,4 +315,5 @@ For OneDrive, this property is not populated.
 [Copy-MgGroupDriveRoot](/powershell/module/Microsoft.Graph.Groups/Copy-MgGroupDriveRoot?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/copy-mgbetagroupdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/copy-mgbetagroupdriveroot)
+
 

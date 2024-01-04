@@ -10,7 +10,6 @@ ms.prod: planner
 
 ## SYNOPSIS
 Delete a plannerPlan object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgPlannerPlan](/powershell/module/Microsoft.Graph.Planner/Remove-MgPlannerPlan?view=graph-powershell-1.0)
@@ -31,7 +30,9 @@ Remove-MgBetaPlannerPlan -InputObject <IPlannerIdentity> [-IfMatch <String>] [-P
 
 ## DESCRIPTION
 Delete a plannerPlan object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplan-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -169,4 +170,5 @@ INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
 [Remove-MgPlannerPlan](/powershell/module/Microsoft.Graph.Planner/Remove-MgPlannerPlan?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/remove-mgbetaplannerplan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/remove-mgbetaplannerplan)
+
 

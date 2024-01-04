@@ -10,7 +10,6 @@ ms.prod: service-communications
 
 ## SYNOPSIS
 Unarchive a list of serviceUpdateMessages for the signed in user.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgUnarchiveServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgUnarchiveServiceAnnouncementMessage?view=graph-powershell-1.0)
@@ -32,7 +31,9 @@ Invoke-MgBetaUnarchiveServiceAnnouncementMessage
 
 ## DESCRIPTION
 Unarchive a list of serviceUpdateMessages for the signed in user.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceupdatemessage-unarchive-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -156,4 +157,5 @@ BODYPARAMETER \<IPathsYkfdhbAdminServiceannouncementMessagesMicrosoftGraphUnarch
 [Invoke-MgUnarchiveServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgUnarchiveServiceAnnouncementMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetaunarchiveserviceannouncementmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetaunarchiveserviceannouncementmessage)
+
 

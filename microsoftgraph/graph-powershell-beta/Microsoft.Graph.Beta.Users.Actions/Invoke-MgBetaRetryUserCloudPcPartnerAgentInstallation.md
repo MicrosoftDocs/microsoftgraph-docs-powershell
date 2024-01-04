@@ -11,7 +11,6 @@ ms.prod: cloud-pc
 ## SYNOPSIS
 Retry installation for the partner agents that failed to install on the Cloud PC.
 Service side checks which agent installation failed firstly and retry.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -30,7 +29,9 @@ Invoke-MgBetaRetryUserCloudPcPartnerAgentInstallation -InputObject <IUsersAction
 ## DESCRIPTION
 Retry installation for the partner agents that failed to install on the Cloud PC.
 Service side checks which agent installation failed firstly and retry.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-retrypartneragentinstallation-permissions.md)]
 
 ## PARAMETERS
 
@@ -170,6 +171,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[NotebookId \<String\>\]: The unique identifier of notebook
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
   \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
   \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
   \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask
@@ -185,5 +187,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaretryusercloudpcpartneragentinstallation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaretryusercloudpcpartneragentinstallation)
+
 
 

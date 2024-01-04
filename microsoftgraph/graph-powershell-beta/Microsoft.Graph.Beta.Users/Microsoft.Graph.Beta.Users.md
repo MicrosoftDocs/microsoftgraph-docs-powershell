@@ -503,9 +503,6 @@ Locale: en-US
 ### [Remove-MgBetaUserOutlookTaskGroupTaskFolderTaskAttachment](Remove-MgBetaUserOutlookTaskGroupTaskFolderTaskAttachment.md)
 {{ Fill in the Description }}
 
-### [Remove-MgBetaUserPhoto](Remove-MgBetaUserPhoto.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgBetaUserSetting](Remove-MgBetaUserSetting.md)
 {{ Fill in the Description }}
 
@@ -643,4 +640,5 @@ Locale: en-US
 
 ### [Update-MgBetaUserTodoListTaskLinkedResource](Update-MgBetaUserTodoListTaskLinkedResource.md)
 {{ Fill in the Description }}
+
 

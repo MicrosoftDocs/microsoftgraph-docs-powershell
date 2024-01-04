@@ -12,7 +12,6 @@ ms.prod: microsoft-teams
 Publish an app to the Microsoft Teams app catalog.Specifically, this API publishes the app to your organization's catalog (the tenant app catalog);the created resource has a distributionMethod property value of organization.
 The requiresReview property allows any user to submit an app for review by an administrator.
 Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaAppCatalogTeamAppDefinition](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaAppCatalogTeamAppDefinition?view=graph-powershell-beta)
@@ -53,7 +52,6 @@ Update-MgAppCatalogTeamAppDefinition -InputObject <ITeamsIdentity>
 Publish an app to the Microsoft Teams app catalog.Specifically, this API publishes the app to your organization's catalog (the tenant app catalog);the created resource has a distributionMethod property value of organization.
 The requiresReview property allows any user to submit an app for review by an administrator.
 Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
@@ -453,4 +451,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Update-MgBetaAppCatalogTeamAppDefinition](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaAppCatalogTeamAppDefinition?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgappcatalogteamappdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgappcatalogteamappdefinition)
+
 

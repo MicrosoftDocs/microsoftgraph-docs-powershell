@@ -9,7 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 In the Microsoft Entra access reviews feature, update an existing program object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -41,7 +40,6 @@ Update-MgBetaProgram -InputObject <IIdentityGovernanceIdentity> -BodyParameter <
 
 ## DESCRIPTION
 In the Microsoft Entra access reviews feature, update an existing program object.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaProgram Cmdlet
@@ -405,4 +403,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprogram](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprogram)
+
 

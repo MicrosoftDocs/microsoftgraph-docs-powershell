@@ -38,6 +38,9 @@ Get-MgPrintPrinterConnector -InputObject <IDevicesCloudPrintIdentity> [-ExpandPr
 ## DESCRIPTION
 The connectors that are associated with the printer.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printer-list-connectors-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -284,4 +287,5 @@ INPUTOBJECT \<IDevicesCloudPrintIdentity\>: Identity Parameter
 [Get-MgBetaPrintPrinterConnector](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintPrinterConnector?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintprinterconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintprinterconnector)
+
 

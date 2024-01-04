@@ -10,7 +10,6 @@ ms.prod: bookings
 
 ## SYNOPSIS
 Create a new staff member in the specified bookingBusiness.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingBusinessStaffMember?view=graph-powershell-1.0)
@@ -49,7 +48,9 @@ New-MgBetaBookingBusinessStaffMember -InputObject <IBookingsIdentity>
 
 ## DESCRIPTION
 Create a new staff member in the specified bookingBusiness.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingbusiness-post-staffmembers-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaBookingBusinessStaffMember Cmdlet
@@ -457,11 +458,7 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[BookingStaffMemberId \<String\>\]: The unique identifier of bookingStaffMember
   \[BusinessScenarioId \<String\>\]: The unique identifier of businessScenario
   \[BusinessScenarioTaskId \<String\>\]: The unique identifier of businessScenarioTask
-  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
-  \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
   \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
-  \[MeetingRegistrantBaseId \<String\>\]: The unique identifier of meetingRegistrantBase
-  \[MeetingRegistrationQuestionId \<String\>\]: The unique identifier of meetingRegistrationQuestion
   \[PlannerPlanConfigurationLocalizationId \<String\>\]: The unique identifier of plannerPlanConfigurationLocalization
   \[Role \<String\>\]: Usage: role='{role}'
   \[UserId \<String\>\]: Usage: userId='{userId}'
@@ -469,6 +466,7 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[VirtualEventPresenterId \<String\>\]: The unique identifier of virtualEventPresenter
   \[VirtualEventRegistrationId \<String\>\]: The unique identifier of virtualEventRegistration
   \[VirtualEventSessionId \<String\>\]: The unique identifier of virtualEventSession
+  \[VirtualEventTownhallId \<String\>\]: The unique identifier of virtualEventTownhall
   \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
 WORKINGHOURS \<IMicrosoftGraphBookingWorkHours\[\]\>: The range of hours each day of the week that the staff member is available for booking.
@@ -484,4 +482,5 @@ For example, 08:00:00.0000000.
 [New-MgBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingBusinessStaffMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinessstaffmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinessstaffmember)
+
 

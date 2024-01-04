@@ -13,7 +13,6 @@ Send an existing draft message.
 The draft message can be a new message draft, reply draft, reply-all draft, or a forward draft.
 This method saves the message in the Sent Items folder.
 Alternatively, send a new message in a single operation.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Send-MgBetaUserMailFolderMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Send-MgBetaUserMailFolderMessage?view=graph-powershell-beta)
@@ -37,7 +36,9 @@ Send an existing draft message.
 The draft message can be a new message draft, reply draft, reply-all draft, or a forward draft.
 This method saves the message in the Sent Items folder.
 Alternatively, send a new message in a single operation.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/message-send-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Send an existing draft message
@@ -212,4 +213,5 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 [Send-MgBetaUserMailFolderMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Send-MgBetaUserMailFolderMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/send-mgusermailfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/send-mgusermailfoldermessage)
+
 

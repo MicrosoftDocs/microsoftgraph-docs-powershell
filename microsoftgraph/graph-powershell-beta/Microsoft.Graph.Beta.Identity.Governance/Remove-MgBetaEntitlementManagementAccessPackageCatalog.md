@@ -9,7 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete an accessPackageCatalog.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -27,7 +26,6 @@ Remove-MgBetaEntitlementManagementAccessPackageCatalog -InputObject <IIdentityGo
 
 ## DESCRIPTION
 Delete an accessPackageCatalog.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaEntitlementManagementAccessPackageCatalog Cmdlet
@@ -251,4 +249,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaentitlementmanagementaccesspackagecatalog](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaentitlementmanagementaccesspackagecatalog)
+
 

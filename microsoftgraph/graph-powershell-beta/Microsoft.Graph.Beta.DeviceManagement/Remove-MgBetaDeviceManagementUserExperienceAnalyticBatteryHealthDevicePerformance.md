@@ -284,3 +284,4 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementuserexperienceanalyticbatteryhealthdeviceperformance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementuserexperienceanalyticbatteryhealthdeviceperformance)
 
 
+

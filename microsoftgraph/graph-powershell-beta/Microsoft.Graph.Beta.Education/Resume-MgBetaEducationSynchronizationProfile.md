@@ -10,7 +10,6 @@ ms.prod: education
 
 ## SYNOPSIS
 Resume the sync of a specific school data synchronization profile in the tenant.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,9 @@ Resume-MgBetaEducationSynchronizationProfile -InputObject <IEducationIdentity> [
 
 ## DESCRIPTION
 Resume the sync of a specific school data synchronization profile in the tenant.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsynchronizationprofile-resume-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Resume-MgBetaEducationSynchronizationProfile Cmdlet
@@ -155,4 +156,5 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/resume-mgbetaeducationsynchronizationprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/resume-mgbetaeducationsynchronizationprofile)
+
 

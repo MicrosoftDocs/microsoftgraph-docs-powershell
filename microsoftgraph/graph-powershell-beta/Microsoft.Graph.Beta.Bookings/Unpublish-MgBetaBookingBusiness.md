@@ -11,7 +11,6 @@ ms.prod: bookings
 ## SYNOPSIS
 Make the scheduling page of this business not available to external customers.
 Set the isPublished property to false, and publicUrl property to null.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Unpublish-MgBookingBusiness](/powershell/module/Microsoft.Graph.Bookings/Unpublish-MgBookingBusiness?view=graph-powershell-1.0)
@@ -33,7 +32,9 @@ Unpublish-MgBetaBookingBusiness -InputObject <IBookingsIdentity> [-PassThru] [-W
 ## DESCRIPTION
 Make the scheduling page of this business not available to external customers.
 Set the isPublished property to false, and publicUrl property to null.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingbusiness-unpublish-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Unpublish-MgBetaBookingBusiness Cmdlet
@@ -149,11 +150,7 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[BookingStaffMemberId \<String\>\]: The unique identifier of bookingStaffMember
   \[BusinessScenarioId \<String\>\]: The unique identifier of businessScenario
   \[BusinessScenarioTaskId \<String\>\]: The unique identifier of businessScenarioTask
-  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
-  \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
   \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
-  \[MeetingRegistrantBaseId \<String\>\]: The unique identifier of meetingRegistrantBase
-  \[MeetingRegistrationQuestionId \<String\>\]: The unique identifier of meetingRegistrationQuestion
   \[PlannerPlanConfigurationLocalizationId \<String\>\]: The unique identifier of plannerPlanConfigurationLocalization
   \[Role \<String\>\]: Usage: role='{role}'
   \[UserId \<String\>\]: Usage: userId='{userId}'
@@ -161,10 +158,12 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[VirtualEventPresenterId \<String\>\]: The unique identifier of virtualEventPresenter
   \[VirtualEventRegistrationId \<String\>\]: The unique identifier of virtualEventRegistration
   \[VirtualEventSessionId \<String\>\]: The unique identifier of virtualEventSession
+  \[VirtualEventTownhallId \<String\>\]: The unique identifier of virtualEventTownhall
   \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
 [Unpublish-MgBookingBusiness](/powershell/module/Microsoft.Graph.Bookings/Unpublish-MgBookingBusiness?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/unpublish-mgbetabookingbusiness](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/unpublish-mgbetabookingbusiness)
+
 

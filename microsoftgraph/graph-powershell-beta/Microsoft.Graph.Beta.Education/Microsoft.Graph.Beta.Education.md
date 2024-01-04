@@ -458,6 +458,15 @@ Locale: en-US
 ### [Invoke-MgBetaDeactivateEducationUserAssignment](Invoke-MgBetaDeactivateEducationUserAssignment.md)
 {{ Fill in the Description }}
 
+### [Invoke-MgBetaExcuseEducationClassAssignmentSubmission](Invoke-MgBetaExcuseEducationClassAssignmentSubmission.md)
+{{ Fill in the Description }}
+
+### [Invoke-MgBetaExcuseEducationMeAssignmentSubmission](Invoke-MgBetaExcuseEducationMeAssignmentSubmission.md)
+{{ Fill in the Description }}
+
+### [Invoke-MgBetaExcuseEducationUserAssignmentSubmission](Invoke-MgBetaExcuseEducationUserAssignmentSubmission.md)
+{{ Fill in the Description }}
+
 ### [Invoke-MgBetaPinEducationClassModule](Invoke-MgBetaPinEducationClassModule.md)
 {{ Fill in the Description }}
 
@@ -1027,4 +1036,5 @@ Locale: en-US
 
 ### [Update-MgBetaEducationUserRubric](Update-MgBetaEducationUserRubric.md)
 {{ Fill in the Description }}
+
 

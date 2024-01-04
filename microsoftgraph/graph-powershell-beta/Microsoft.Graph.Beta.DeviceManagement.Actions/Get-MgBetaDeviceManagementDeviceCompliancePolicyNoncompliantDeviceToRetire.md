@@ -291,3 +291,4 @@ BODYPARAMETER \<IPathsPosmw2DevicemanagementDevicecompliancepoliciesMicrosoftGra
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementdevicecompliancepolicynoncompliantdevicetoretire](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementdevicecompliancepolicynoncompliantdevicetoretire)
 
 
+

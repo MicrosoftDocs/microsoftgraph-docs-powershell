@@ -11,7 +11,6 @@ ms.prod: microsoft-teams
 
 ## SYNOPSIS
 Retrieve the properties and relationships of chatMessageHostedContent object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaChatMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatMessageReplyHostedContent?view=graph-powershell-beta)
@@ -52,7 +51,6 @@ Get-MgChatMessageReplyHostedContent -InputObject <ITeamsIdentity> [-ExpandProper
 
 ## DESCRIPTION
 Retrieve the properties and relationships of chatMessageHostedContent object.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
@@ -369,4 +367,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Get-MgBetaChatMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatMessageReplyHostedContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatmessagereplyhostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatmessagereplyhostedcontent)
+
 

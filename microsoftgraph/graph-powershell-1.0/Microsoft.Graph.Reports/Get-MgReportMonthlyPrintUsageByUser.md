@@ -38,6 +38,9 @@ Get-MgReportMonthlyPrintUsageByUser -InputObject <IReportsIdentity> [-ExpandProp
 ## DESCRIPTION
 Retrieve a list of monthly print usage summaries, grouped by user.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-list-monthlyprintusagebyuser-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -276,4 +279,5 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
 [Get-MgBetaReportMonthlyPrintUsageByUser](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportMonthlyPrintUsageByUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmonthlyprintusagebyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmonthlyprintusagebyuser)
+
 

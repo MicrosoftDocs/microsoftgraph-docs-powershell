@@ -10,7 +10,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Set the order of identityUserFlowAttributeAssignments being collected within a user flow.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -44,7 +43,9 @@ Set-MgBetaIdentityB2CUserFlowUserAttributeAssignmentOrder -InputObject <IIdentit
 
 ## DESCRIPTION
 Set the order of identityUserFlowAttributeAssignments being collected within a user flow.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityuserflowattributeassignment-setorder-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Set-MgBetaIdentityB2CUserFlowUserAttributeAssignmentOrder Cmdlet
@@ -215,6 +216,7 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[ActivityBasedTimeoutPolicyId \<String\>\]: The unique identifier of activityBasedTimeoutPolicy
   \[AppManagementPolicyId \<String\>\]: The unique identifier of appManagementPolicy
   \[AuthenticationCombinationConfigurationId \<String\>\]: The unique identifier of authenticationCombinationConfiguration
+  \[AuthenticationConditionApplicationAppId \<String\>\]: The unique identifier of authenticationConditionApplication
   \[AuthenticationContextClassReferenceId \<String\>\]: The unique identifier of authenticationContextClassReference
   \[AuthenticationEventListenerId \<String\>\]: The unique identifier of authenticationEventListener
   \[AuthenticationEventsFlowId \<String\>\]: The unique identifier of authenticationEventsFlow
@@ -296,4 +298,5 @@ NEWASSIGNMENTORDER \<IMicrosoftGraphAssignmentOrder\>: assignmentOrder
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetaidentityb2cuserflowuserattributeassignmentorder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetaidentityb2cuserflowuserattributeassignmentorder)
+
 

@@ -230,3 +230,4 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgfunctionapplicationsynchronizationtemplateschema](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgfunctionapplicationsynchronizationtemplateschema)
 
 
+

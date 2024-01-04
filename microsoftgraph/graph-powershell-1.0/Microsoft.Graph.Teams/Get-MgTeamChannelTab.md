@@ -11,7 +11,6 @@ ms.prod: microsoft-teams
 
 ## SYNOPSIS
 Retrieve the properties and relationships of the specified tab in a channel within a team.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelTab?view=graph-powershell-beta)
@@ -39,7 +38,6 @@ Get-MgTeamChannelTab -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] 
 
 ## DESCRIPTION
 Retrieve the properties and relationships of the specified tab in a channel within a team.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: List all the tabs in the channel along with associated Teams app
@@ -332,4 +330,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Get-MgBetaTeamChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelTab?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchanneltab)
+
 

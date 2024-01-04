@@ -33,6 +33,9 @@ Get-MgOrganizationBrandingLocalizationCustomCss -InputObject <IIdentityDirectory
 CSS styling that appears on the sign-in page.
 The allowed format is .css format only and not larger than 25 KB.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organizationalbranding-list-localizations-permissions.md)]
+
 ## PARAMETERS
 
 ### -InputObject
@@ -156,5 +159,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 [Get-MgBetaOrganizationBrandingLocalizationCustomCss](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationBrandingLocalizationCustomCss?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbrandinglocalizationcustomcss](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbrandinglocalizationcustomcss)
+
 
 

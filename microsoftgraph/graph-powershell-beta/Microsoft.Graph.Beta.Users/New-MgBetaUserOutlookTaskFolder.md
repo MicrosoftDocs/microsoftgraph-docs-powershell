@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Create a task folder in the default task group (My Tasks) of the user's mailbox.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -48,7 +47,9 @@ New-MgBetaUserOutlookTaskFolder -InputObject <IUsersIdentity> -BodyParameter <IM
 
 ## DESCRIPTION
 Create a task folder in the default task group (My Tasks) of the user's mailbox.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlookuser-post-taskfolders-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaUserOutlookTaskFolder Cmdlet
@@ -541,4 +542,5 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktaskfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktaskfolder)
+
 

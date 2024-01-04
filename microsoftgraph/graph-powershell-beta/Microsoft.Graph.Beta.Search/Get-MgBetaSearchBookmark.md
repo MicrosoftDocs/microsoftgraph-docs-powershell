@@ -11,7 +11,6 @@ ms.prod: search
 
 ## SYNOPSIS
 Read the properties and relationships of a bookmark object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -36,7 +35,12 @@ Get-MgBetaSearchBookmark -InputObject <ISearchIdentity> [-ExpandProperty <String
 
 ## DESCRIPTION
 Read the properties and relationships of a bookmark object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-bookmark-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-searchentity-list-bookmarks-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaSearchBookmark Cmdlet
@@ -277,4 +281,5 @@ INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetasearchbookmark](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetasearchbookmark)
+
 

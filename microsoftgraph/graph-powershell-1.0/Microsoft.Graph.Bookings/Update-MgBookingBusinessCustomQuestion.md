@@ -10,7 +10,6 @@ ms.prod: bookings
 
 ## SYNOPSIS
 Update the properties of a bookingCustomQuestion object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaBookingBusinessCustomQuestion?view=graph-powershell-beta)
@@ -45,7 +44,9 @@ Update-MgBookingBusinessCustomQuestion -InputObject <IBookingsIdentity>
 
 ## DESCRIPTION
 Update the properties of a bookingCustomQuestion object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingcustomquestion-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -264,6 +265,7 @@ Read-only.
   \[DisplayName \<String\>\]: The question.
 
 INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
+  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
   \[BookingAppointmentId \<String\>\]: The unique identifier of bookingAppointment
   \[BookingBusinessId \<String\>\]: The unique identifier of bookingBusiness
   \[BookingCurrencyId \<String\>\]: The unique identifier of bookingCurrency
@@ -271,9 +273,17 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[BookingCustomerBaseId \<String\>\]: The unique identifier of bookingCustomerBase
   \[BookingServiceId \<String\>\]: The unique identifier of bookingService
   \[BookingStaffMemberBaseId \<String\>\]: The unique identifier of bookingStaffMemberBase
+  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
+  \[Role \<String\>\]: Usage: role='{role}'
+  \[UserId \<String\>\]: Usage: userId='{userId}'
+  \[VirtualEventId \<String\>\]: The unique identifier of virtualEvent
+  \[VirtualEventRegistrationId \<String\>\]: The unique identifier of virtualEventRegistration
+  \[VirtualEventSessionId \<String\>\]: The unique identifier of virtualEventSession
+  \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
 [Update-MgBetaBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaBookingBusinessCustomQuestion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinesscustomquestion](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinesscustomquestion)
+
 

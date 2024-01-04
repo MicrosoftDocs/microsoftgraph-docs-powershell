@@ -38,6 +38,9 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResult -InputObject <
 ## DESCRIPTION
 Per-user workflow execution results.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-workflow-list-userprocessingresults-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: List the user processing results for a workflow
 
@@ -381,4 +384,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResult](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResult?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowuserprocessingresult](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowuserprocessingresult)
+
 

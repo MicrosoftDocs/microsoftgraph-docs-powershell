@@ -188,3 +188,4 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagementdirectoryresourcenamespace](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagementdirectoryresourcenamespace)
 
 
+

@@ -40,6 +40,9 @@ Get-MgSecurityCaseEdiscoveryCaseCustodianUserSource -InputObject <ISecurityIdent
 Data source entity for a the custodian.
 This is the container for a custodian's mailbox and OneDrive for Business site.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycustodian-list-usersources-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -340,4 +343,5 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasecustodianusersource](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasecustodianusersource)
+
 

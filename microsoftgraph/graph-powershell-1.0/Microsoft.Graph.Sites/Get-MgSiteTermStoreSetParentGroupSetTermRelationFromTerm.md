@@ -246,3 +246,4 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoresetparentgroupsettermrelationfromterm](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoresetparentgroupsettermrelationfromterm)
 
 
+

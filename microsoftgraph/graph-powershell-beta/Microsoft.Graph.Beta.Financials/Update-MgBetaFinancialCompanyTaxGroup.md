@@ -295,3 +295,4 @@ INPUTOBJECT \<IFinancialsIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanytaxgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanytaxgroup)
 
 
+

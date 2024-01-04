@@ -11,7 +11,6 @@ ms.prod: groups
 
 ## SYNOPSIS
 Get an event object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupEvent](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupEvent?view=graph-powershell-1.0)
@@ -36,7 +35,12 @@ Get-MgBetaGroupEvent -InputObject <ICalendarIdentity> [-Property <String[]>] [<C
 
 ## DESCRIPTION
 Get an event object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-get-event-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-events-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -254,4 +258,5 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
 [Get-MgGroupEvent](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupEvent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupevent)
+
 

@@ -10,7 +10,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Create a new identityApiConnector object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaIdentityApiConnector](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityApiConnector?view=graph-powershell-beta)
@@ -31,7 +30,9 @@ New-MgIdentityApiConnector -BodyParameter <IMicrosoftGraphIdentityApiConnector> 
 
 ## DESCRIPTION
 Create a new identityApiConnector object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identityapiconnector-create-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Create an API connector with basic authentication
@@ -230,4 +231,5 @@ Read-only.
 [New-MgBetaIdentityApiConnector](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityApiConnector?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityapiconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityapiconnector)
+
 

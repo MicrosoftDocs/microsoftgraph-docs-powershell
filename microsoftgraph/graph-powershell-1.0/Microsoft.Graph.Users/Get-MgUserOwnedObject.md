@@ -44,6 +44,9 @@ Read-only.
 Nullable.
 Supports $expand, $select nested in $expand, and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-list-ownedobjects-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -307,4 +310,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Get-MgBetaUserOwnedObject](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOwnedObject?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserownedobject](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserownedobject)
+
 

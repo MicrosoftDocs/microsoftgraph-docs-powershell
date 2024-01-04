@@ -10,7 +10,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Update the properties of a conditionalAccessPolicy object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)
@@ -51,7 +50,6 @@ Update-MgIdentityConditionalAccessPolicy -InputObject <IIdentitySignInsIdentity>
 
 ## DESCRIPTION
 Update the properties of a conditionalAccessPolicy object.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Add sign in risk levels to an existing conditional access policy
@@ -634,4 +632,5 @@ SESSIONCONTROLS \<IMicrosoftGraphConditionalAccessSessionControls\>: conditional
 [Update-MgBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityconditionalaccesspolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityconditionalaccesspolicy)
+
 

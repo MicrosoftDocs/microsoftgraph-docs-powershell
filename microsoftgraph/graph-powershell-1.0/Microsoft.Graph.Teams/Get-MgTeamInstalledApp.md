@@ -11,7 +11,6 @@ ms.prod: microsoft-teams
 
 ## SYNOPSIS
 Retrieve the app installed in the specified team.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamInstalledApp?view=graph-powershell-beta)
@@ -39,7 +38,6 @@ Get-MgTeamInstalledApp -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>
 
 ## DESCRIPTION
 Retrieve the app installed in the specified team.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Get the installed app
@@ -328,4 +326,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Get-MgBetaTeamInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamInstalledApp?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteaminstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteaminstalledapp)
+
 

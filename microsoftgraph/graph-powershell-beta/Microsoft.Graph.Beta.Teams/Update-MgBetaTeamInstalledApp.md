@@ -9,7 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Upgrade an app installation within a chat.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgTeamInstalledApp](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamInstalledApp?view=graph-powershell-1.0)
@@ -46,7 +45,6 @@ Update-MgBetaTeamInstalledApp -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Upgrade an app installation within a chat.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaTeamInstalledApp Cmdlet
@@ -236,6 +234,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
   \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
   \[ConversationMemberId \<String\>\]: The unique identifier of conversationMember
+  \[DayNoteId \<String\>\]: The unique identifier of dayNote
   \[DeletedChatId \<String\>\]: The unique identifier of deletedChat
   \[DeletedTeamId \<String\>\]: The unique identifier of deletedTeam
   \[GroupId \<String\>\]: The unique identifier of group
@@ -272,4 +271,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Update-MgTeamInstalledApp](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamInstalledApp?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateaminstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateaminstalledapp)
+
 

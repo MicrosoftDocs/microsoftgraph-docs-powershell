@@ -9,8 +9,7 @@ ms.prod: identity-and-sign-in
 # Update-MgBetaIdentityConditionalAccessNamedLocation
 
 ## SYNOPSIS
-Update the properties of a countryNamedLocation object.
-This API is available in the following national cloud deployments.
+Update the properties of an ipNamedLocation object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityConditionalAccessNamedLocation?view=graph-powershell-1.0)
@@ -44,8 +43,7 @@ Update-MgBetaIdentityConditionalAccessNamedLocation -InputObject <IIdentitySignI
 ```
 
 ## DESCRIPTION
-Update the properties of a countryNamedLocation object.
-This API is available in the following national cloud deployments.
+Update the properties of an ipNamedLocation object.
 
 ## EXAMPLES
 ### Example 1: Update a country named location by adding to the list of countries
@@ -262,6 +260,7 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[ActivityBasedTimeoutPolicyId \<String\>\]: The unique identifier of activityBasedTimeoutPolicy
   \[AppManagementPolicyId \<String\>\]: The unique identifier of appManagementPolicy
   \[AuthenticationCombinationConfigurationId \<String\>\]: The unique identifier of authenticationCombinationConfiguration
+  \[AuthenticationConditionApplicationAppId \<String\>\]: The unique identifier of authenticationConditionApplication
   \[AuthenticationContextClassReferenceId \<String\>\]: The unique identifier of authenticationContextClassReference
   \[AuthenticationEventListenerId \<String\>\]: The unique identifier of authenticationEventListener
   \[AuthenticationEventsFlowId \<String\>\]: The unique identifier of authenticationEventsFlow
@@ -340,4 +339,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 [Update-MgIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityConditionalAccessNamedLocation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccessnamedlocation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccessnamedlocation)
+
 

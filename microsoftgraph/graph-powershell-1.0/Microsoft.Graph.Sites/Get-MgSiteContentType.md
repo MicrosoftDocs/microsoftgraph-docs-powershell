@@ -10,8 +10,7 @@ ms.prod: sites-and-lists
 # Get-MgSiteContentType
 
 ## SYNOPSIS
-Retrieve the metadata for a content type\]\[contentType\] in a \[site\]\[\] or a \[list\]\[\].
-This API is available in the following \[national cloud deployments.
+Retrieve the metadata for a \[content type\]\[contentType\] in a \[site\]\[\] or a \[list\]\[\].
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteContentType?view=graph-powershell-beta)
@@ -38,8 +37,13 @@ Get-MgSiteContentType -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
 ```
 
 ## DESCRIPTION
-Retrieve the metadata for a content type\]\[contentType\] in a \[site\]\[\] or a \[list\]\[\].
-This API is available in the following \[national cloud deployments.
+Retrieve the metadata for a \[content type\]\[contentType\] in a \[site\]\[\] or a \[list\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-list-contenttypes-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -312,4 +316,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitecontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitecontenttype)
+
 

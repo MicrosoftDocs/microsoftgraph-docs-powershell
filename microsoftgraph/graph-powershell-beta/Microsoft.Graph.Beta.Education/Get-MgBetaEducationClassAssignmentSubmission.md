@@ -21,7 +21,6 @@ Only teachers or applications with application permissions can add or change gra
 Students will not see the grade or feedback until the assignment has been released.
 Provide the header Prefer: include-unknown-enum-members to properly list submissions with the reassigned status.
 For details, see the examples section.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentSubmission?view=graph-powershell-1.0)
@@ -59,7 +58,12 @@ Only teachers or applications with application permissions can add or change gra
 Students will not see the grade or feedback until the assignment has been released.
 Provide the header Prefer: include-unknown-enum-members to properly list submissions with the reassigned status.
 For details, see the examples section.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsubmission-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-list-submissions-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Request without optional Prefer header
@@ -348,4 +352,5 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 [Get-MgEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentSubmission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentsubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentsubmission)
+
 

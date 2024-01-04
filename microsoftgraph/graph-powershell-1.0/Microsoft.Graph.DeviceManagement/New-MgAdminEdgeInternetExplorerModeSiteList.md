@@ -10,7 +10,6 @@ ms.prod: browser-management
 
 ## SYNOPSIS
 Create a new browserSiteList object to support Internet Explorer mode.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaAdminEdgeInternetExplorerModeSiteList](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaAdminEdgeInternetExplorerModeSiteList?view=graph-powershell-beta)
@@ -35,7 +34,9 @@ New-MgAdminEdgeInternetExplorerModeSiteList -BodyParameter <IMicrosoftGraphBrows
 
 ## DESCRIPTION
 Create a new browserSiteList object to support Internet Explorer mode.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/internetexplorermode-post-sitelists-permissions.md)]
 
 ## PARAMETERS
 
@@ -448,5 +449,6 @@ For example, if a user changes their display name, the API might show the new va
 [New-MgBetaAdminEdgeInternetExplorerModeSiteList](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaAdminEdgeInternetExplorerModeSiteList?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgadminedgeinternetexplorermodesitelist](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgadminedgeinternetexplorermodesitelist)
+
 
 

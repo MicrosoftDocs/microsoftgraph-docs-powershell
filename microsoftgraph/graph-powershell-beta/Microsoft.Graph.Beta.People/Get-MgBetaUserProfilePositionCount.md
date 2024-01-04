@@ -133,3 +133,4 @@ INPUTOBJECT \<IPeopleIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilepositioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilepositioncount)
 
 
+

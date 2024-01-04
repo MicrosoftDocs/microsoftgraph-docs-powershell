@@ -10,7 +10,6 @@ ms.prod: insights
 
 ## SYNOPSIS
 Get the user-customizable privacy settings for itemInsights and meeting hours insights.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,9 @@ Get-MgBetaUserSettingItemInsight -InputObject <IUsersIdentity> [-ExpandProperty 
 
 ## DESCRIPTION
 Get the user-customizable privacy settings for itemInsights and meeting hours insights.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userinsightssettings-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserSettingItemInsight Cmdlet
@@ -145,4 +146,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingiteminsight](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingiteminsight)
+
 

@@ -38,6 +38,9 @@ Get-MgDriveListColumn -InputObject <IFilesIdentity> [-ExpandProperty <String[]>]
 ## DESCRIPTION
 The collection of field definitions for this list.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/list-list-columns-permissions.md)]
+
 ## EXAMPLES
 
 ## PARAMETERS
@@ -284,4 +287,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgBetaDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistcolumn)
+
 

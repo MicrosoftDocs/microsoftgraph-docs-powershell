@@ -44,6 +44,9 @@ Navigation property.
 Read-only.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-list-attachments-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -282,10 +285,12 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[ExtensionId \<String\>\]: The unique identifier of extension
   \[GroupId \<String\>\]: The unique identifier of group
   \[PlaceId \<String\>\]: The unique identifier of place
+  \[RoomId \<String\>\]: The unique identifier of room
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 [Get-MgBetaUserEventAttachment](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserEventAttachment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusereventattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusereventattachment)
+
 

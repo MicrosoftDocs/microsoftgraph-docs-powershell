@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Dismiss a reminder that has been triggered for an event in a user calendar.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaDismissUserEventInstanceReminder](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaDismissUserEventInstanceReminder?view=graph-powershell-beta)
@@ -31,7 +30,9 @@ Invoke-MgDismissUserEventInstanceReminder -InputObject <IUsersActionsIdentity> [
 
 ## DESCRIPTION
 Dismiss a reminder that has been triggered for an event in a user calendar.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-dismissreminder-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -206,4 +207,5 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 [Invoke-MgBetaDismissUserEventInstanceReminder](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaDismissUserEventInstanceReminder?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgdismissusereventinstancereminder](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgdismissusereventinstancereminder)
+
 

@@ -11,7 +11,6 @@ ms.prod: microsoft-teams
 ## SYNOPSIS
 Send an activity feed notification in the scope of a chat.
 For more information, see sending Teams activity notifications.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Send-MgUserChatActivityNotification](/powershell/module/Microsoft.Graph.Users.Actions/Send-MgUserChatActivityNotification?view=graph-powershell-1.0)
@@ -51,7 +50,6 @@ Send-MgBetaUserChatActivityNotification -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Send an activity feed notification in the scope of a chat.
 For more information, see sending Teams activity notifications.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Notify a user about a task created in a chat
@@ -469,6 +467,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[NotebookId \<String\>\]: The unique identifier of notebook
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
   \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
   \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
   \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask
@@ -503,4 +502,5 @@ Optional when source is entityUrl; required when source is text.
 [Send-MgUserChatActivityNotification](/powershell/module/Microsoft.Graph.Users.Actions/Send-MgUserChatActivityNotification?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetauserchatactivitynotification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetauserchatactivitynotification)
+
 

@@ -38,6 +38,9 @@ Get-MgEducationUserTaughtClass -InputObject <IEducationIdentity> [-ExpandPropert
 ## DESCRIPTION
 Classes for which the user is a teacher.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationuser-list-taughtclasses-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -281,4 +284,5 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 [Get-MgBetaEducationUserTaughtClass](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserTaughtClass?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationusertaughtclass](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationusertaughtclass)
+
 

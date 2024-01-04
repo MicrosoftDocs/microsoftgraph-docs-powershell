@@ -12,7 +12,6 @@ ms.prod: bookings
 ## SYNOPSIS
 Get the properties and relationships of a bookingAppointment object in the specified bookingBusiness.
 The startDateTime and endDateTime properties are always returned in UTC.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessAppointment?view=graph-powershell-beta)
@@ -41,7 +40,12 @@ Get-MgBookingBusinessAppointment -InputObject <IBookingsIdentity> [-ExpandProper
 ## DESCRIPTION
 Get the properties and relationships of a bookingAppointment object in the specified bookingBusiness.
 The startDateTime and endDateTime properties are always returned in UTC.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingappointment-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-list-appointments-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -271,6 +275,7 @@ To create the parameters described below, construct a hash table containing the 
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
+  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
   \[BookingAppointmentId \<String\>\]: The unique identifier of bookingAppointment
   \[BookingBusinessId \<String\>\]: The unique identifier of bookingBusiness
   \[BookingCurrencyId \<String\>\]: The unique identifier of bookingCurrency
@@ -278,9 +283,17 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[BookingCustomerBaseId \<String\>\]: The unique identifier of bookingCustomerBase
   \[BookingServiceId \<String\>\]: The unique identifier of bookingService
   \[BookingStaffMemberBaseId \<String\>\]: The unique identifier of bookingStaffMemberBase
+  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
+  \[Role \<String\>\]: Usage: role='{role}'
+  \[UserId \<String\>\]: Usage: userId='{userId}'
+  \[VirtualEventId \<String\>\]: The unique identifier of virtualEvent
+  \[VirtualEventRegistrationId \<String\>\]: The unique identifier of virtualEventRegistration
+  \[VirtualEventSessionId \<String\>\]: The unique identifier of virtualEventSession
+  \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
 [Get-MgBetaBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessAppointment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinessappointment](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinessappointment)
+
 

@@ -10,7 +10,6 @@ ms.prod: education
 
 ## SYNOPSIS
 Reset the sync of a specific school data synchronization profile in the tenant.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,9 @@ Reset-MgBetaEducationSynchronizationProfile -InputObject <IEducationIdentity> [-
 
 ## DESCRIPTION
 Reset the sync of a specific school data synchronization profile in the tenant.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsynchronizationprofile-reset-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Reset-MgBetaEducationSynchronizationProfile Cmdlet
@@ -155,4 +156,5 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/reset-mgbetaeducationsynchronizationprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/reset-mgbetaeducationsynchronizationprofile)
+
 

@@ -48,6 +48,9 @@ Update-MgBetaPlannerTaskDetail -InputObject <IPlannerIdentity> -IfMatch <String>
 ## DESCRIPTION
 Update the navigation property details in planner
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannertaskdetails-update-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -372,4 +375,5 @@ NOTES \<IMicrosoftGraphItemBody\>: itemBody
 [Update-MgPlannerTaskDetail](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerTaskDetail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertaskdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertaskdetail)
+
 

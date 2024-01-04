@@ -9,7 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of governanceRoleSetting.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -49,7 +48,6 @@ Update-MgBetaPrivilegedAccessRoleSetting -InputObject <IIdentityGovernanceIdenti
 
 ## DESCRIPTION
 Update the properties of governanceRoleSetting.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaPrivilegedAccessRoleSetting Cmdlet
@@ -947,4 +945,5 @@ For example, {'permanentAssignment':false,'maximumGrantPeriodInMinutes':129600}
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedaccessrolesetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedaccessrolesetting)
+
 

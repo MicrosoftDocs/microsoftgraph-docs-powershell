@@ -11,7 +11,6 @@ ms.prod: microsoft-teams
 
 ## SYNOPSIS
 Get the properties and relationships of a member of a standard tag in a team.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamTagMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamTagMember?view=graph-powershell-beta)
@@ -39,7 +38,12 @@ Get-MgTeamTagMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [
 
 ## DESCRIPTION
 Get the properties and relationships of a member of a standard tag in a team.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teamworktagmember-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teamworktagmember-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -321,4 +325,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Get-MgBetaTeamTagMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamTagMember?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamtagmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamtagmember)
+
 

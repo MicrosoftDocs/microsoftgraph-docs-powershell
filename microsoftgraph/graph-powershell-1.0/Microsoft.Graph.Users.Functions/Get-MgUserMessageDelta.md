@@ -11,7 +11,6 @@ schema: 2.0.0
 Get a set of messages that have been added, deleted, or updated in a specified folder.
 A delta function call for messages in a folder is similar to a GET request, except that by appropriatelyapplying state tokens in one or more of these calls, you can \[query for incremental changes in the messages inthat folder\](/graph/delta-query-messages).
 This allows you to maintain and synchronize a local store of a user's messages withouthaving to fetch the entire set of messages from the server every time.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserMessageDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserMessageDelta?view=graph-powershell-beta)
@@ -36,7 +35,6 @@ Get-MgUserMessageDelta -InputObject <IUsersFunctionsIdentity> [-ChangeType <Stri
 Get a set of messages that have been added, deleted, or updated in a specified folder.
 A delta function call for messages in a folder is similar to a GET request, except that by appropriatelyapplying state tokens in one or more of these calls, you can \[query for incremental changes in the messages inthat folder\](/graph/delta-query-messages).
 This allows you to maintain and synchronize a local store of a user's messages withouthaving to fetch the entire set of messages from the server every time.
-This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -285,5 +283,6 @@ INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
 [Get-MgBetaUserMessageDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserMessageDelta?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusermessagedelta](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusermessagedelta)
+
 
 

@@ -38,6 +38,9 @@ Get-MgGroupTeamIncomingChannel -InputObject <ITeamsIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 List of channels shared with the team.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-list-incomingchannels-permissions.md)]
+
 ## EXAMPLES
 
 ## PARAMETERS
@@ -292,4 +295,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Get-MgBetaGroupTeamIncomingChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamIncomingChannel?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamincomingchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamincomingchannel)
+
 

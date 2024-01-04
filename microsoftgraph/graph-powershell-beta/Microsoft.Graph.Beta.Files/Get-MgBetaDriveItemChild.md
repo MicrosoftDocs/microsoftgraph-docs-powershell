@@ -44,6 +44,9 @@ Only items representing folders have children.
 Read-only.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-list-children-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -327,4 +330,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgDriveItemChild](/powershell/module/Microsoft.Graph.Files/Get-MgDriveItemChild?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemchild](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemchild)
+
 

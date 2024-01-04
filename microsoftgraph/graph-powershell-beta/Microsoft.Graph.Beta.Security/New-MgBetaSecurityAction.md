@@ -10,7 +10,6 @@ ms.prod: security
 
 ## SYNOPSIS
 Create a new securityAction object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -32,7 +31,9 @@ New-MgBetaSecurityAction -BodyParameter <IMicrosoftGraphSecurityAction> [-WhatIf
 
 ## DESCRIPTION
 Create a new securityAction object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/securityactions-post-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaSecurityAction Cmdlet
@@ -459,4 +460,5 @@ Required
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityaction)
+
 

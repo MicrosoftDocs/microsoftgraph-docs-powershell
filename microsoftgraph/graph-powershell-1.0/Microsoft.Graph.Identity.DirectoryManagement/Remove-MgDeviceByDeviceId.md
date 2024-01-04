@@ -10,7 +10,6 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Delete a registered device.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceByDeviceId](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDeviceByDeviceId?view=graph-powershell-beta)
@@ -31,7 +30,9 @@ Remove-MgDeviceByDeviceId -InputObject <IIdentityDirectoryManagementIdentity> [-
 
 ## DESCRIPTION
 Delete a registered device.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-delete-permissions.md)]
 
 ## PARAMETERS
 
@@ -172,5 +173,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 [Remove-MgBetaDeviceByDeviceId](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDeviceByDeviceId?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdevicebydeviceid](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdevicebydeviceid)
+
 
 

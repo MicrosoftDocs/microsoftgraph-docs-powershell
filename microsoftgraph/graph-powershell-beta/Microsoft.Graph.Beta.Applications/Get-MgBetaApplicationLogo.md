@@ -148,3 +148,4 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationlogo](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationlogo)
 
 
+

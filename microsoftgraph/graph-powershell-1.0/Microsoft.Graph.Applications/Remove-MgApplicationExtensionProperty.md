@@ -11,7 +11,6 @@ ms.prod: extensions
 ## SYNOPSIS
 Delete a directory extension definition represented by an extensionProperty object.
 You can delete only directory extensions that aren't synced from on-premises active directory (AD).
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationExtensionProperty?view=graph-powershell-beta)
@@ -33,7 +32,9 @@ Remove-MgApplicationExtensionProperty -InputObject <IApplicationsIdentity> [-IfM
 ## DESCRIPTION
 Delete a directory extension definition represented by an extensionProperty object.
 You can delete only directory extensions that aren't synced from on-premises active directory (AD).
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/extensionproperty-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -200,4 +201,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Remove-MgBetaApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationExtensionProperty?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationextensionproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationextensionproperty)
+
 

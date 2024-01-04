@@ -38,6 +38,9 @@ Get-MgRiskyUserHistory -InputObject <IIdentitySignInsIdentity> [-ExpandProperty 
 ## DESCRIPTION
 The activity related to user risk level change
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/riskyuser-list-history-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -326,4 +329,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 [Get-MgBetaRiskyUserHistory](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaRiskyUserHistory?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgriskyuserhistory](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgriskyuserhistory)
+
 

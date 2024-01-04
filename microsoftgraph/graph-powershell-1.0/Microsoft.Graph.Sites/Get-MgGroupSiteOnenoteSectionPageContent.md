@@ -31,6 +31,9 @@ Get-MgGroupSiteOnenoteSectionPageContent -InputObject <ISitesIdentity> -OutFile 
 ## DESCRIPTION
 The page's HTML content.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/section-list-pages-permissions.md)]
+
 ## PARAMETERS
 
 ### -GroupId
@@ -198,5 +201,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgBetaGroupSiteOnenoteSectionPageContent](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteSectionPageContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotesectionpagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotesectionpagecontent)
+
 
 

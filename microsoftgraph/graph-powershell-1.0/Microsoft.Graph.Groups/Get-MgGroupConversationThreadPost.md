@@ -50,6 +50,9 @@ Get-MgGroupConversationThreadPost -InputObject <IGroupsIdentity> [-ExpandPropert
 ## DESCRIPTION
 Get posts from groups
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/conversationthread-list-posts-permissions.md)]
+
 ## EXAMPLES
 
 ## PARAMETERS
@@ -322,4 +325,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Get-MgBetaGroupConversationThreadPost](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupConversationThreadPost?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupconversationthreadpost](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupconversationthreadpost)
+
 

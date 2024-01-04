@@ -131,3 +131,4 @@ INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatainboundflowyear](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatainboundflowyear)
 
 
+

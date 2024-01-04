@@ -11,7 +11,6 @@ ms.prod: compliance
 
 ## SYNOPSIS
 Read the properties and relationships of a subjectRightsRequest object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPrivacySubjectRightsRequest](/powershell/module/Microsoft.Graph.Compliance/Get-MgPrivacySubjectRightsRequest?view=graph-powershell-1.0)
@@ -39,7 +38,12 @@ Get-MgBetaPrivacySubjectRightsRequest -InputObject <IComplianceIdentity> [-Expan
 
 ## DESCRIPTION
 Read the properties and relationships of a subjectRightsRequest object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/subjectrightsrequest-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/subjectrightsrequest-list-permissions.md)]
 
 ## PARAMETERS
 
@@ -263,5 +267,6 @@ INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
 [Get-MgPrivacySubjectRightsRequest](/powershell/module/Microsoft.Graph.Compliance/Get-MgPrivacySubjectRightsRequest?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetaprivacysubjectrightsrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetaprivacysubjectrightsrequest)
+
 
 

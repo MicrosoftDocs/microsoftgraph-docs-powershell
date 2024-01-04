@@ -65,6 +65,9 @@ Locale: en-US
 ### [Get-MgBetaDeviceManagementConfigManagerCollectionPolicySummary](Get-MgBetaDeviceManagementConfigManagerCollectionPolicySummary.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceManagementConfigurationPolicyLatestUpgradeDefaultBaselinePolicy](Get-MgBetaDeviceManagementConfigurationPolicyLatestUpgradeDefaultBaselinePolicy.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceManagementDepOnboardingSettingEncryptionPublicKey](Get-MgBetaDeviceManagementDepOnboardingSettingEncryptionPublicKey.md)
 {{ Fill in the Description }}
 
@@ -108,6 +111,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementResourceOperationScopeForUser](Get-MgBetaDeviceManagementResourceOperationScopeForUser.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceManagementReusablePolicySettingReferencingConfigurationPolicyLatestUpgradeDefaultBaselinePolicy](Get-MgBetaDeviceManagementReusablePolicySettingReferencingConfigurationPolicyLatestUpgradeDefaultBaselinePolicy.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementRoleScopeTagById](Get-MgBetaDeviceManagementRoleScopeTagById.md)
@@ -155,10 +161,16 @@ Locale: en-US
 ### [Get-MgBetaDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionStatus](Get-MgBetaDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionStatus.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceManagementVirtualEndpointScopedPermission](Get-MgBetaDeviceManagementVirtualEndpointScopedPermission.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceManagementVirtualEndpointSnapshotStorageAccount](Get-MgBetaDeviceManagementVirtualEndpointSnapshotStorageAccount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementVirtualEndpointSnapshotSubscription](Get-MgBetaDeviceManagementVirtualEndpointSnapshotSubscription.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceManagementVirtualEndpointTenantEncryptionSetting](Get-MgBetaDeviceManagementVirtualEndpointTenantEncryptionSetting.md)
 {{ Fill in the Description }}
 
 ### [Invoke-MgBetaAppDeviceManagementComanagedDeviceDiagnostic](Invoke-MgBetaAppDeviceManagementComanagedDeviceDiagnostic.md)
@@ -190,4 +202,5 @@ Locale: en-US
 
 ### [Invoke-MgBetaSummarizeDeviceManagementUserExperienceAnalyticResourcePerformanceDeviceResourcePerformance](Invoke-MgBetaSummarizeDeviceManagementUserExperienceAnalyticResourcePerformanceDeviceResourcePerformance.md)
 {{ Fill in the Description }}
+
 

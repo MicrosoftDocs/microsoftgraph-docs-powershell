@@ -14,7 +14,6 @@ This method along with removeKey can be used by a servicePrincipal to automate r
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
 ServicePrincipals that don't have any existing valid certificates (i.e.: no certificates have been added yet, or all certificates have expired), won't be able to use this service action.
 Update servicePrincipal can be used to perform an update instead.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -52,7 +51,9 @@ This method along with removeKey can be used by a servicePrincipal to automate r
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
 ServicePrincipals that don't have any existing valid certificates (i.e.: no certificates have been added yet, or all certificates have expired), won't be able to use this service action.
 Update servicePrincipal can be used to perform an update instead.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-addkey-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Adding a new key credential to a servicePrincipal
@@ -365,4 +366,5 @@ Optional.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgserviceprincipalkey](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgserviceprincipalkey)
+
 

@@ -9,10 +9,9 @@ ms.prod: outlook
 # Invoke-MgBetaForwardUserEventInstance
 
 ## SYNOPSIS
-This action allows the organizer or attendee of a meeting event to forward the \nmeeting request to a new recipient.
-If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action \nalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's \ncopy of the meeting event.
+This action allows the organizer or attendee of a meeting event to forward the meeting request to a new recipient.
+If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action also sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's copy of the meeting event.
 This convenience is not available when forwarding from an Outlook.com account.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgForwardUserEventInstance](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgForwardUserEventInstance?view=graph-powershell-1.0)
@@ -48,10 +47,12 @@ Invoke-MgBetaForwardUserEventInstance -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-This action allows the organizer or attendee of a meeting event to forward the \nmeeting request to a new recipient.
-If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action \nalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's \ncopy of the meeting event.
+This action allows the organizer or attendee of a meeting event to forward the meeting request to a new recipient.
+If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action also sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's copy of the meeting event.
 This convenience is not available when forwarding from an Outlook.com account.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-forward-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -304,6 +305,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[NotebookId \<String\>\]: The unique identifier of notebook
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
   \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
   \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
   \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask
@@ -326,4 +328,5 @@ TORECIPIENTS \<IMicrosoftGraphRecipient\[\]\>: .
 [Invoke-MgForwardUserEventInstance](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgForwardUserEventInstance?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaforwardusereventinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaforwardusereventinstance)
+
 

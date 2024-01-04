@@ -10,7 +10,6 @@ ms.prod: education
 
 ## SYNOPSIS
 Get a list of administrativeUnits associated with an educationSchool object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationSchoolAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchoolAdministrativeUnit?view=graph-powershell-beta)
@@ -31,7 +30,9 @@ Get-MgEducationSchoolAdministrativeUnit -InputObject <IEducationIdentity> [-Expa
 
 ## DESCRIPTION
 Get a list of administrativeUnits associated with an educationSchool object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationschool-list-administrativeunit-permissions.md)]
 
 ## PARAMETERS
 
@@ -127,5 +128,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 [Get-MgBetaEducationSchoolAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchoolAdministrativeUnit?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationschooladministrativeunit](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationschooladministrativeunit)
+
 
 

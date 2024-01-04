@@ -10,7 +10,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Create an appManagementPolicy object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyAppManagementPolicy?view=graph-powershell-beta)
@@ -33,7 +32,9 @@ New-MgPolicyAppManagementPolicy -BodyParameter <IMicrosoftGraphAppManagementPoli
 
 ## DESCRIPTION
 Create an appManagementPolicy object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/appmanagementpolicy-post-permissions.md)]
 
 ## PARAMETERS
 
@@ -283,5 +284,6 @@ To apply to all applications, enforcement datetime would be null.
 [New-MgBetaPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyAppManagementPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyappmanagementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyappmanagementpolicy)
+
 
 

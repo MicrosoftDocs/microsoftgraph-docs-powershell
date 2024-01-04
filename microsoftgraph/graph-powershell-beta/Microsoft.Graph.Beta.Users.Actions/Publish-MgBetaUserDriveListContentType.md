@@ -9,8 +9,7 @@ ms.prod: sites-and-lists
 # Publish-MgBetaUserDriveListContentType
 
 ## SYNOPSIS
-Publishes a contentType\]\[\] present in a content type hub site.
-This API is available in the following \[national cloud deployments.
+Publishes a \[contentType\]\[\] present in a content type hub site.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Publish-MgUserDriveListContentType](/powershell/module/Microsoft.Graph.Users.Actions/Publish-MgUserDriveListContentType?view=graph-powershell-1.0)
@@ -30,8 +29,10 @@ Publish-MgBetaUserDriveListContentType -InputObject <IUsersActionsIdentity> [-Pa
 ```
 
 ## DESCRIPTION
-Publishes a contentType\]\[\] present in a content type hub site.
-This API is available in the following \[national cloud deployments.
+Publishes a \[contentType\]\[\] present in a content type hub site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-publish-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -199,6 +200,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[NotebookId \<String\>\]: The unique identifier of notebook
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
   \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
   \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
   \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask
@@ -215,4 +217,5 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 [Publish-MgUserDriveListContentType](/powershell/module/Microsoft.Graph.Users.Actions/Publish-MgUserDriveListContentType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/publish-mgbetauserdrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/publish-mgbetauserdrivelistcontenttype)
+
 

@@ -10,7 +10,6 @@ ms.prod: security
 
 ## SYNOPSIS
 Create a new tiIndicator object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -43,7 +42,9 @@ New-MgBetaSecurityTiIndicator -BodyParameter <IMicrosoftGraphTiIndicator> [-What
 
 ## DESCRIPTION
 Create a new tiIndicator object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tiindicators-post-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaSecurityTiIndicator Cmdlet
@@ -1160,4 +1161,5 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritytiindicator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritytiindicator)
+
 

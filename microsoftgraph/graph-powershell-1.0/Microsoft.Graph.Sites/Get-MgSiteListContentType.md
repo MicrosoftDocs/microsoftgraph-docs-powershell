@@ -38,6 +38,9 @@ Get-MgSiteListContentType -InputObject <ISitesIdentity> [-ExpandProperty <String
 ## DESCRIPTION
 The collection of content types present in this list.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/list-list-contenttypes-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -324,4 +327,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgBetaSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistcontenttype)
+
 

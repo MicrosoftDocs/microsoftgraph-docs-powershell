@@ -11,7 +11,7 @@ ms.prod: outlook
 ## SYNOPSIS
 Get the properties and relationships of a calendar object.
 The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
-There are two scenarios where an app can get another user's calendar: This API is available in the following national cloud deployments.
+There are two scenarios where an app can get another user's calendar:
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserDefaultCalendar](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserDefaultCalendar?view=graph-powershell-1.0)
@@ -31,7 +31,7 @@ Get-MgBetaUserDefaultCalendar -InputObject <ICalendarIdentity> [-Property <Strin
 ## DESCRIPTION
 Get the properties and relationships of a calendar object.
 The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
-There are two scenarios where an app can get another user's calendar: This API is available in the following national cloud deployments.
+There are two scenarios where an app can get another user's calendar:
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -129,4 +129,5 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
 [Get-MgUserDefaultCalendar](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserDefaultCalendar?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetauserdefaultcalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetauserdefaultcalendar)
+
 

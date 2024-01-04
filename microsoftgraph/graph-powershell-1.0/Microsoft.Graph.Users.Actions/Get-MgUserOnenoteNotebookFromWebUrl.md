@@ -11,7 +11,6 @@ ms.prod: onenote
 ## SYNOPSIS
 Retrieve the properties and relationships of a notebook object by using its URL path.
 The location can be user notebooks on Microsoft 365, group notebooks, or SharePoint site-hosted team notebooks on Microsoft 365.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserOnenoteNotebookFromWebUrl](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Get-MgBetaUserOnenoteNotebookFromWebUrl?view=graph-powershell-beta)
@@ -47,7 +46,9 @@ Get-MgUserOnenoteNotebookFromWebUrl -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Retrieve the properties and relationships of a notebook object by using its URL path.
 The location can be user notebooks on Microsoft 365, group notebooks, or SharePoint site-hosted team notebooks on Microsoft 365.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/notebook-getnotebookfromweburl-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgUserOnenoteNotebookFromWebUrl Cmdlet
@@ -227,4 +228,5 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 [Get-MgBetaUserOnenoteNotebookFromWebUrl](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Get-MgBetaUserOnenoteNotebookFromWebUrl?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/get-mguseronenotenotebookfromweburl](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/get-mguseronenotenotebookfromweburl)
+
 

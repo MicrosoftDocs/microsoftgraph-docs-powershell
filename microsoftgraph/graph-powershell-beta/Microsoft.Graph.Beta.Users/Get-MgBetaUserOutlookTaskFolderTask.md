@@ -38,6 +38,9 @@ The tasks in this task folder.
 Read-only.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlooktaskfolder-list-tasks-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserOutlookTaskFolderTask Cmdlet
 ```powershell
@@ -274,4 +277,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktaskfoldertask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktaskfoldertask)
+
 

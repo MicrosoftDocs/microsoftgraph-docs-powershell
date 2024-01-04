@@ -9,8 +9,7 @@ ms.prod: sharepoint
 # Grant-MgBetaUserDriveItemPermission
 
 ## SYNOPSIS
-Grant users access to a link represented by a permission\]\[\].
-This API is available in the following \[national cloud deployments.
+Grant users access to a link represented by a \[permission\]\[\].
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Grant-MgUserDriveItemPermission](/powershell/module/Microsoft.Graph.Users.Actions/Grant-MgUserDriveItemPermission?view=graph-powershell-1.0)
@@ -46,8 +45,10 @@ Grant-MgBetaUserDriveItemPermission -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Grant users access to a link represented by a permission\]\[\].
-This API is available in the following \[national cloud deployments.
+Grant users access to a link represented by a \[permission\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permission-grant-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -301,6 +302,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[NotebookId \<String\>\]: The unique identifier of notebook
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
   \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
   \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
   \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask
@@ -323,4 +325,5 @@ security groups).
 [Grant-MgUserDriveItemPermission](/powershell/module/Microsoft.Graph.Users.Actions/Grant-MgUserDriveItemPermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/grant-mgbetauserdriveitempermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/grant-mgbetauserdriveitempermission)
+
 

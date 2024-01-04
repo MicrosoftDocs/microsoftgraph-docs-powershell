@@ -46,6 +46,9 @@ Update-MgBetaPlannerPlanDetail -InputObject <IPlannerIdentity> -IfMatch <String>
 ## DESCRIPTION
 Update the navigation property details in planner
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplandetails-update-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -336,4 +339,5 @@ INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
 [Update-MgPlannerPlanDetail](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerPlanDetail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannerplandetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannerplandetail)
+
 

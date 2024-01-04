@@ -11,7 +11,6 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Retrieve the properties and relationships of contract object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaContract](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContract?view=graph-powershell-beta)
@@ -38,7 +37,12 @@ Get-MgContract -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandPrope
 
 ## DESCRIPTION
 Retrieve the properties and relationships of contract object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contract-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contract-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -282,4 +286,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 [Get-MgBetaContract](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContract?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontract](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontract)
+
 

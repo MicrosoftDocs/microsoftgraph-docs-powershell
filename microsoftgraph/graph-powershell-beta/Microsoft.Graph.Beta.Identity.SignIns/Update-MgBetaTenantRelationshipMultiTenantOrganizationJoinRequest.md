@@ -13,7 +13,6 @@ Join a multi-tenant organization, after the owner of the multi-tenant organizati
 Before a tenant added to a multi-tenant organization can participate in the multi-tenant organization, the administrator of the joining tenant must submit a join request.
 To allow for asynchronous processing, you must wait a minimum of 2 hours between creation and joining a multi-tenant organization.
 Furthermore, to allow for asynchronous processing, you must wait up to 4 hours before joining a multi-tenant organization is completed.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -37,7 +36,9 @@ Join a multi-tenant organization, after the owner of the multi-tenant organizati
 Before a tenant added to a multi-tenant organization can participate in the multi-tenant organization, the administrator of the joining tenant must submit a join request.
 To allow for asynchronous processing, you must wait a minimum of 2 hours between creation and joining a multi-tenant organization.
 Furthermore, to allow for asynchronous processing, you must wait up to 4 hours before joining a multi-tenant organization is completed.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/multitenantorganizationjoinrequestrecord-update-permissions.md)]
 
 ## PARAMETERS
 
@@ -223,5 +224,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatenantrelationshipmultitenantorganizationjoinrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatenantrelationshipmultitenantorganizationjoinrequest)
+
 
 

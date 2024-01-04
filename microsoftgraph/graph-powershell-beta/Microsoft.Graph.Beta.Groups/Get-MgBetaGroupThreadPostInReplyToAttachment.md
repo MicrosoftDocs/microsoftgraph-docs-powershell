@@ -44,6 +44,9 @@ Read-only.
 Nullable.
 Supports $expand.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/post-list-attachments-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -333,4 +336,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Get-MgGroupThreadPostInReplyToAttachment](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupThreadPostInReplyToAttachment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupthreadpostinreplytoattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupthreadpostinreplytoattachment)
+
 

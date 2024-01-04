@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Update the permissions assigned to an existing share recipient or delegate, through the corresponding \<b\>calendarPermission\</b\> object for a calendar.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserCalendarPermission](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaUserCalendarPermission?view=graph-powershell-beta)
@@ -73,7 +72,6 @@ Update-MgUserCalendarPermission -InputObject <ICalendarIdentity>
 
 ## DESCRIPTION
 Update the permissions assigned to an existing share recipient or delegate, through the corresponding \<b\>calendarPermission\</b\> object for a calendar.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -359,10 +357,12 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[ExtensionId \<String\>\]: The unique identifier of extension
   \[GroupId \<String\>\]: The unique identifier of group
   \[PlaceId \<String\>\]: The unique identifier of place
+  \[RoomId \<String\>\]: The unique identifier of room
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 [Update-MgBetaUserCalendarPermission](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaUserCalendarPermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgusercalendarpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgusercalendarpermission)
+
 

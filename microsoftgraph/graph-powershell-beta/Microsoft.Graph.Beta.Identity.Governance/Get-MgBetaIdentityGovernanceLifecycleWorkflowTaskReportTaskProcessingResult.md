@@ -41,6 +41,9 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult
 ## DESCRIPTION
 The related lifecycle workflow taskProcessingResults.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-taskreport-list-taskprocessingresults-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: List the task processing results that are included in a task report for a workflow
 
@@ -399,4 +402,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowtaskreporttaskprocessingresult](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowtaskreporttaskprocessingresult)
+
 

@@ -10,7 +10,6 @@ ms.prod: search
 
 ## SYNOPSIS
 Delete a qna object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,9 @@ Remove-MgBetaSearchQna -InputObject <ISearchIdentity> [-IfMatch <String>] [-Pass
 
 ## DESCRIPTION
 Delete a qna object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-qna-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaSearchQna Cmdlet
@@ -172,4 +173,5 @@ INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetasearchqna](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetasearchqna)
+
 

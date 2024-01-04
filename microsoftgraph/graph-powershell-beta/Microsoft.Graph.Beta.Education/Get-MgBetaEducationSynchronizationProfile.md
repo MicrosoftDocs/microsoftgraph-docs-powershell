@@ -11,7 +11,6 @@ ms.prod: education
 
 ## SYNOPSIS
 Retrieve a school data synchronization profile in the tenant based on the identifier.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -36,7 +35,12 @@ Get-MgBetaEducationSynchronizationProfile -InputObject <IEducationIdentity> [-Ex
 
 ## DESCRIPTION
 Retrieve a school data synchronization profile in the tenant based on the identifier.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsynchronizationprofile-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsynchronizationprofile-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaEducationSynchronizationProfile Cmdlet
@@ -275,4 +279,5 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationsynchronizationprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationsynchronizationprofile)
+
 

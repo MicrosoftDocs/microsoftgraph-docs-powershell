@@ -9,8 +9,7 @@ ms.prod: cloud-communications
 # Get-MgBetaCommunicationOnlineMeetingRegistration
 
 ## SYNOPSIS
-Get the externalMeetingRegistration details associated with an onlineMeeting.
-This API is available in the following national cloud deployments.
+Get the meetingRegistration details associated with an onlineMeeting on behalf of the organizer.
 
 ## SYNTAX
 
@@ -27,8 +26,10 @@ Get-MgBetaCommunicationOnlineMeetingRegistration -InputObject <ICloudCommunicati
 ```
 
 ## DESCRIPTION
-Get the externalMeetingRegistration details associated with an onlineMeeting.
-This API is available in the following national cloud deployments.
+Get the meetingRegistration details associated with an onlineMeeting on behalf of the organizer.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/meetingregistration-get-permissions.md)]
 
 ## PARAMETERS
 
@@ -131,5 +132,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingregistration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingregistration)
+
 
 

@@ -61,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-.
+Defines when the finding was created.
 
 ```yaml
 Type: DateTime
@@ -141,10 +141,11 @@ BODYPARAMETER \<IMicrosoftGraphFinding\>: finding
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  \[CreatedDateTime \<DateTime?\>\]:
+  \[CreatedDateTime \<DateTime?\>\]: Defines when the finding was created.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancepermissionanalyticawfinding](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancepermissionanalyticawfinding)
+
 
 

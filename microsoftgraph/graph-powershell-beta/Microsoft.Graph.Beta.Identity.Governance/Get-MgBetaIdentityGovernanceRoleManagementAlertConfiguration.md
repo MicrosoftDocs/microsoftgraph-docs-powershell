@@ -50,6 +50,9 @@ Get-MgBetaIdentityGovernanceRoleManagementAlertConfiguration -InputObject <IIden
 The various configurations of an alert for Microsoft Entra roles.
 The configurations are predefined and can't be created or deleted, but some of the configurations can be modified.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rolemanagementalert-list-alertconfigurations-permissions.md)]
+
 ## PARAMETERS
 
 ### -All
@@ -368,5 +371,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancerolemanagementalertconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancerolemanagementalertconfiguration)
+
 
 

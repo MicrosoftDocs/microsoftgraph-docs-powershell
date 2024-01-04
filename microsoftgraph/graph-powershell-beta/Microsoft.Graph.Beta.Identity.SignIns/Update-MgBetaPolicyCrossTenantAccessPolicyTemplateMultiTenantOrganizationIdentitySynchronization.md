@@ -10,7 +10,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Update the cross-tenant access policy template with user synchronization settings for a multi-tenant organization.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -30,7 +29,9 @@ Update-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentit
 
 ## DESCRIPTION
 Update the cross-tenant access policy template with user synchronization settings for a multi-tenant organization.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/multitenantorganizationidentitysyncpolicytemplate-update-permissions.md)]
 
 ## PARAMETERS
 
@@ -178,5 +179,6 @@ This property has no impact on existing users who have already been synchronized
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicytemplatemultitenantorganizationidentitysynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicytemplatemultitenantorganizationidentitysynchronization)
+
 
 

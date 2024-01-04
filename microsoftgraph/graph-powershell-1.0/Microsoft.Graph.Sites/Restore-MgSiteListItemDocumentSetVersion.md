@@ -10,7 +10,6 @@ ms.prod: sites-and-lists
 
 ## SYNOPSIS
 Restore a document set version.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Restore-MgBetaSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Sites/Restore-MgBetaSiteListItemDocumentSetVersion?view=graph-powershell-beta)
@@ -31,7 +30,9 @@ Restore-MgSiteListItemDocumentSetVersion -InputObject <ISitesIdentity> [-PassThr
 
 ## DESCRIPTION
 Restore a document set version.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/documentsetversion-restore-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Restore-MgSiteListItemDocumentSetVersion Cmdlet
@@ -225,4 +226,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Restore-MgBetaSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Sites/Restore-MgBetaSiteListItemDocumentSetVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/restore-mgsitelistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/restore-mgsitelistitemdocumentsetversion)
+
 

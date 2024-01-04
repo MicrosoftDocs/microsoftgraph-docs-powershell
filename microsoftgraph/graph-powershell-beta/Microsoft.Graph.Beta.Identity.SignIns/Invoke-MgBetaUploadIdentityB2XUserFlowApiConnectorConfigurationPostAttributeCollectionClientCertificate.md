@@ -12,7 +12,6 @@ ms.prod: identity-and-sign-in
 Upload a PKCS 12 format key (.pfx) to an API connector's authentication configuration.
 The input is a base-64 encoded value of the PKCS 12 certificate contents.
 This method returns an apiConnector.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgUploadIdentityB2XUserFlowApiConnectorConfigurationPostAttributeCollectionClientCertificate](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgUploadIdentityB2XUserFlowApiConnectorConfigurationPostAttributeCollectionClientCertificate?view=graph-powershell-1.0)
@@ -53,7 +52,9 @@ Invoke-MgBetaUploadIdentityB2XUserFlowApiConnectorConfigurationPostAttributeColl
 Upload a PKCS 12 format key (.pfx) to an API connector's authentication configuration.
 The input is a base-64 encoded value of the PKCS 12 certificate contents.
 This method returns an apiConnector.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityapiconnector-uploadclientcertificate-permissions.md)]
 
 ## PARAMETERS
 
@@ -205,6 +206,7 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[ActivityBasedTimeoutPolicyId \<String\>\]: The unique identifier of activityBasedTimeoutPolicy
   \[AppManagementPolicyId \<String\>\]: The unique identifier of appManagementPolicy
   \[AuthenticationCombinationConfigurationId \<String\>\]: The unique identifier of authenticationCombinationConfiguration
+  \[AuthenticationConditionApplicationAppId \<String\>\]: The unique identifier of authenticationConditionApplication
   \[AuthenticationContextClassReferenceId \<String\>\]: The unique identifier of authenticationContextClassReference
   \[AuthenticationEventListenerId \<String\>\]: The unique identifier of authenticationEventListener
   \[AuthenticationEventsFlowId \<String\>\]: The unique identifier of authenticationEventsFlow
@@ -283,5 +285,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 [Invoke-MgUploadIdentityB2XUserFlowApiConnectorConfigurationPostAttributeCollectionClientCertificate](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgUploadIdentityB2XUserFlowApiConnectorConfigurationPostAttributeCollectionClientCertificate?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetauploadidentityb2xuserflowapiconnectorconfigurationpostattributecollectionclientcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetauploadidentityb2xuserflowapiconnectorconfigurationpostattributecollectionclientcertificate)
+
 
 

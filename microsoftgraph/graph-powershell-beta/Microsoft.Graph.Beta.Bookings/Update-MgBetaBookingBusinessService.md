@@ -10,8 +10,7 @@ ms.prod: bookings
 
 ## SYNOPSIS
 Update the properties of a bookingService object in the specified bookingBusiness.
-The following are some examples you can customize for a service:\n- Price\n- Typical length of an appointment\n- Reminders\n- Any, time buffer to set up before or finish up after the service\n- Scheduling policy parameters such as minimum notice to book or cancel, and whether customers can select specific staff members for an appointment.
-This API is available in the following national cloud deployments.
+The following are some examples you can customize for a service:- Price- Typical length of an appointment- Reminders- Any, time buffer to set up before or finish up after the service- Scheduling policy parameters such as minimum notice to book or cancel, and whether customers can select specific staff members for an appointment.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgBookingBusinessService](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusinessService?view=graph-powershell-1.0)
@@ -58,8 +57,10 @@ Update-MgBetaBookingBusinessService -InputObject <IBookingsIdentity>
 
 ## DESCRIPTION
 Update the properties of a bookingService object in the specified bookingBusiness.
-The following are some examples you can customize for a service:\n- Price\n- Typical length of an appointment\n- Reminders\n- Any, time buffer to set up before or finish up after the service\n- Scheduling policy parameters such as minimum notice to book or cancel, and whether customers can select specific staff members for an appointment.
-This API is available in the following national cloud deployments.
+The following are some examples you can customize for a service:- Price- Typical length of an appointment- Reminders- Any, time buffer to set up before or finish up after the service- Scheduling policy parameters such as minimum notice to book or cancel, and whether customers can select specific staff members for an appointment.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingservice-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaBookingBusinessService Cmdlet
@@ -646,11 +647,7 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[BookingStaffMemberId \<String\>\]: The unique identifier of bookingStaffMember
   \[BusinessScenarioId \<String\>\]: The unique identifier of businessScenario
   \[BusinessScenarioTaskId \<String\>\]: The unique identifier of businessScenarioTask
-  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
-  \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
   \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
-  \[MeetingRegistrantBaseId \<String\>\]: The unique identifier of meetingRegistrantBase
-  \[MeetingRegistrationQuestionId \<String\>\]: The unique identifier of meetingRegistrationQuestion
   \[PlannerPlanConfigurationLocalizationId \<String\>\]: The unique identifier of plannerPlanConfigurationLocalization
   \[Role \<String\>\]: Usage: role='{role}'
   \[UserId \<String\>\]: Usage: userId='{userId}'
@@ -658,6 +655,7 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[VirtualEventPresenterId \<String\>\]: The unique identifier of virtualEventPresenter
   \[VirtualEventRegistrationId \<String\>\]: The unique identifier of virtualEventRegistration
   \[VirtualEventSessionId \<String\>\]: The unique identifier of virtualEventSession
+  \[VirtualEventTownhallId \<String\>\]: The unique identifier of virtualEventTownhall
   \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
 SCHEDULINGPOLICY \<IMicrosoftGraphBookingSchedulingPolicy\>: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
@@ -675,4 +673,5 @@ Use the email address specified in the email property of the bookingBusiness ent
 [Update-MgBookingBusinessService](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusinessService?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinessservice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinessservice)
+
 

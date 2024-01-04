@@ -10,7 +10,6 @@ ms.prod: cloud-communications
 
 ## SYNOPSIS
 Create a custom registration question associated with a meetingRegistration object on behalf of the organizer.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -42,7 +41,9 @@ New-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestion -InputObject <ICl
 
 ## DESCRIPTION
 Create a custom registration question associated with a meetingRegistration object on behalf of the organizer.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/meetingregistration-post-customquestions-permissions.md)]
 
 ## PARAMETERS
 
@@ -265,5 +266,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationonlinemeetingregistrationcustomquestion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationonlinemeetingregistrationcustomquestion)
+
 
 

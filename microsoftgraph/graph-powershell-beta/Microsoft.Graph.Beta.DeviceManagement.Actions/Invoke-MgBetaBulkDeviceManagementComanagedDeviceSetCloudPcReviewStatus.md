@@ -10,7 +10,6 @@ ms.prod: cloud-pc
 
 ## SYNOPSIS
 Set the review status of multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -30,7 +29,9 @@ Invoke-MgBetaBulkDeviceManagementComanagedDeviceSetCloudPcReviewStatus
 
 ## DESCRIPTION
 Set the review status of multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/manageddevice-bulksetcloudpcreviewstatus-permissions.md)]
 
 ## PARAMETERS
 
@@ -180,5 +181,6 @@ For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetabulkdevicemanagementcomanageddevicesetcloudpcreviewstatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetabulkdevicemanagementcomanageddevicesetcloudpcreviewstatus)
+
 
 

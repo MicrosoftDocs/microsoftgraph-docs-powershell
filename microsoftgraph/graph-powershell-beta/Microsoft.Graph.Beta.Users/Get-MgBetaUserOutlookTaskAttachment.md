@@ -39,6 +39,9 @@ The collection of fileAttachment, itemAttachment, and referenceAttachment attach
 Read-only.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlooktask-list-attachments-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserOutlookTaskAttachment Cmdlet
 ```powershell
@@ -289,4 +292,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktaskattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktaskattachment)
+
 

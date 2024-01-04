@@ -10,7 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Send an activity feed notification in the scope of a team.
 For more information, see sending Teams activity notifications.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Send-MgTeamActivityNotification](/powershell/module/Microsoft.Graph.Teams/Send-MgTeamActivityNotification?view=graph-powershell-1.0)
@@ -50,7 +49,6 @@ Send-MgBetaTeamActivityNotification -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Send an activity feed notification in the scope of a team.
 For more information, see sending Teams activity notifications.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -473,6 +471,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
   \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
   \[ConversationMemberId \<String\>\]: The unique identifier of conversationMember
+  \[DayNoteId \<String\>\]: The unique identifier of dayNote
   \[DeletedChatId \<String\>\]: The unique identifier of deletedChat
   \[DeletedTeamId \<String\>\]: The unique identifier of deletedTeam
   \[GroupId \<String\>\]: The unique identifier of group
@@ -527,4 +526,5 @@ Optional when source is entityUrl; required when source is text.
 [Send-MgTeamActivityNotification](/powershell/module/Microsoft.Graph.Teams/Send-MgTeamActivityNotification?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/send-mgbetateamactivitynotification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/send-mgbetateamactivitynotification)
+
 

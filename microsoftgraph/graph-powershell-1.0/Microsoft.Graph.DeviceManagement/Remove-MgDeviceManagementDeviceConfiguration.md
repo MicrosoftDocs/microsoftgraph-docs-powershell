@@ -9,7 +9,7 @@ ms.prod: intune
 # Remove-MgDeviceManagementDeviceConfiguration
 
 ## SYNOPSIS
-Deletes a windows10EndpointProtectionConfiguration.
+Deletes a windowsDefenderAdvancedThreatProtectionConfiguration.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementDeviceConfiguration?view=graph-powershell-beta)
@@ -29,7 +29,7 @@ Remove-MgDeviceManagementDeviceConfiguration -InputObject <IDeviceManagementIden
 ```
 
 ## DESCRIPTION
-Deletes a windows10EndpointProtectionConfiguration.
+Deletes a windowsDefenderAdvancedThreatProtectionConfiguration.
 
 ## PARAMETERS
 
@@ -200,5 +200,6 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 [Remove-MgBetaDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementDeviceConfiguration?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdeviceconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdeviceconfiguration)
+
 
 

@@ -10,7 +10,6 @@ ms.prod: people
 
 ## SYNOPSIS
 Delete an educationalActivity object from a user's profile.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,9 @@ Remove-MgBetaUserProfileEducationalActivity -InputObject <IPeopleIdentity> [-IfM
 
 ## DESCRIPTION
 Delete an educationalActivity object from a user's profile.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationalactivity-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaUserProfileEducationalActivity Cmdlet
@@ -191,4 +192,5 @@ INPUTOBJECT \<IPeopleIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofileeducationalactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofileeducationalactivity)
+
 

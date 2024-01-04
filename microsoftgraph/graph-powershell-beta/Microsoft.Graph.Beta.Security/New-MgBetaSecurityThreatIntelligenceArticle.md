@@ -323,3 +323,4 @@ SUMMARY \<IMicrosoftGraphSecurityFormattedContent\>: formattedContent
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencearticle](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencearticle)
 
 
+

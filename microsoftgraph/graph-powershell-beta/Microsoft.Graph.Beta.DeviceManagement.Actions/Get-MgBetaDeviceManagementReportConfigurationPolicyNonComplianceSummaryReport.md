@@ -295,3 +295,4 @@ BODYPARAMETER \<IPathsHd8Wo9DevicemanagementReportsMicrosoftGraphGetconfiguratio
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportconfigurationpolicynoncompliancesummaryreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportconfigurationpolicynoncompliancesummaryreport)
 
 
+

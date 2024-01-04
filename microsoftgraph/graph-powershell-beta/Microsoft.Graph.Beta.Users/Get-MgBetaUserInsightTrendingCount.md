@@ -133,3 +133,4 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserinsighttrendingcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserinsighttrendingcount)
 
 
+

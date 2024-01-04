@@ -10,7 +10,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Delete a custom identityUserFlowAttribute.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaIdentityUserFlowAttribute](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityUserFlowAttribute?view=graph-powershell-beta)
@@ -31,7 +30,9 @@ Remove-MgIdentityUserFlowAttribute -InputObject <IIdentitySignInsIdentity> [-IfM
 
 ## DESCRIPTION
 Delete a custom identityUserFlowAttribute.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identityuserflowattribute-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -216,4 +217,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 [Remove-MgBetaIdentityUserFlowAttribute](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityUserFlowAttribute?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityuserflowattribute](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityuserflowattribute)
+
 

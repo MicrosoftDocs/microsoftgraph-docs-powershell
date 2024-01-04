@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaIdentityGovernancePermissionAnalyticAzure
 
 ## SYNOPSIS
-Get azure from identityGovernance
+Azure permissions analytics findings.
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Get-MgBetaIdentityGovernancePermissionAnalyticAzure [-ExpandProperty <String[]>]
 ```
 
 ## DESCRIPTION
-Get azure from identityGovernance
+Azure permissions analytics findings.
 
 ## PARAMETERS
 
@@ -65,5 +65,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancepermissionanalyticazure](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancepermissionanalyticazure)
+
 
 

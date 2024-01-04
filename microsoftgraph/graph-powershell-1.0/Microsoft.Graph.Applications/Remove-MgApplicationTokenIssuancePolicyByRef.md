@@ -10,7 +10,6 @@ ms.prod: applications
 
 ## SYNOPSIS
 Remove a tokenIssuancePolicy from an application.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaApplicationTokenIssuancePolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationTokenIssuancePolicyByRef?view=graph-powershell-beta)
@@ -31,7 +30,6 @@ Remove-MgApplicationTokenIssuancePolicyByRef -InputObject <IApplicationsIdentity
 
 ## DESCRIPTION
 Remove a tokenIssuancePolicy from an application.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -213,4 +211,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Remove-MgBetaApplicationTokenIssuancePolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationTokenIssuancePolicyByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationtokenissuancepolicybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationtokenissuancepolicybyref)
+
 

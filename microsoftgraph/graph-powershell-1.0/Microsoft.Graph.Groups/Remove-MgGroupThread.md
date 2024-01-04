@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgGroupThread
 
 ## SYNOPSIS
-This API is available in the following national cloud deployments.
+Delete conversationThread.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupThread?view=graph-powershell-beta)
@@ -28,7 +28,7 @@ Remove-MgGroupThread -InputObject <IGroupsIdentity> [-IfMatch <String>] [-PassTh
 ```
 
 ## DESCRIPTION
-This API is available in the following national cloud deployments.
+Delete conversationThread.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -208,4 +208,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Remove-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupThread?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupthread](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupthread)
+
 

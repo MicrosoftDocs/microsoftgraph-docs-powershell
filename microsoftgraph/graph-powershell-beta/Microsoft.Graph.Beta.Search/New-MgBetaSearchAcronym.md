@@ -10,7 +10,6 @@ ms.prod: search
 
 ## SYNOPSIS
 Create a new acronym object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,9 @@ New-MgBetaSearchAcronym -BodyParameter <IMicrosoftGraphSearchAcronym> [-WhatIf] 
 
 ## DESCRIPTION
 Create a new acronym object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-searchentity-post-acronyms-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaSearchAcronym Cmdlet
@@ -282,4 +283,5 @@ LASTMODIFIEDBY \<IMicrosoftGraphSearchIdentitySet\>: identitySet
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetasearchacronym](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetasearchacronym)
+
 

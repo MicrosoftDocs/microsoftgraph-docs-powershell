@@ -9,8 +9,7 @@ ms.prod: sites-and-lists
 # Remove-MgBetaShareListContentTypeColumn
 
 ## SYNOPSIS
-Remove a column\]\[columndefinition\] from a \[site\]\[\], \[list\]\[\] or \[content type\]\[contentType\].
-This API is available in the following \[national cloud deployments.
+Remove a \[column\]\[columndefinition\] from a \[site\]\[\], \[list\]\[\] or \[content type\]\[contentType\].
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgShareListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/Remove-MgShareListContentTypeColumn?view=graph-powershell-1.0)
@@ -30,8 +29,10 @@ Remove-MgBetaShareListContentTypeColumn -InputObject <IFilesIdentity> [-IfMatch 
 ```
 
 ## DESCRIPTION
-Remove a column\]\[columndefinition\] from a \[site\]\[\], \[list\]\[\] or \[content type\]\[contentType\].
-This API is available in the following \[national cloud deployments.
+Remove a \[column\]\[columndefinition\] from a \[site\]\[\], \[list\]\[\] or \[content type\]\[contentType\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/columndefinition-delete-permissions.md)]
 
 ## PARAMETERS
 
@@ -202,5 +203,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Remove-MgShareListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/Remove-MgShareListContentTypeColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetasharelistcontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetasharelistcontenttypecolumn)
+
 
 

@@ -10,7 +10,6 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Get the list of groups that are included in a mobile app management policy.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -22,7 +21,9 @@ Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroup -MobilityManagementPolicy
 
 ## DESCRIPTION
 Get the list of groups that are included in a mobile app management policy.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mobileappmanagementpolicies-list-includedgroups-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroup Cmdlet
@@ -221,4 +222,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicymobileappmanagementpolicyincludedgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicymobileappmanagementpolicyincludedgroup)
+
 

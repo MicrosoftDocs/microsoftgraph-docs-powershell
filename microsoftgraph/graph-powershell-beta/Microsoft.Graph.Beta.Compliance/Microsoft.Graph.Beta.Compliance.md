@@ -137,13 +137,13 @@ Locale: en-US
 ### [Get-MgBetaComplianceEdiscoveryCaseOperationAsCaseExportOperation](Get-MgBetaComplianceEdiscoveryCaseOperationAsCaseExportOperation.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaComplianceEdiscoveryCaseOperationAsCaseExportOperationReviewSet](Get-MgBetaComplianceEdiscoveryCaseOperationAsCaseExportOperationReviewSet.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaComplianceEdiscoveryCaseOperationCount](Get-MgBetaComplianceEdiscoveryCaseOperationCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseOperationCountAsCaseExportOperation](Get-MgBetaComplianceEdiscoveryCaseOperationCountAsCaseExportOperation.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaComplianceEdiscoveryCaseOperationReviewSet](Get-MgBetaComplianceEdiscoveryCaseOperationReviewSet.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaComplianceEdiscoveryCaseReviewSet](Get-MgBetaComplianceEdiscoveryCaseReviewSet.md)
@@ -466,4 +466,5 @@ Locale: en-US
 
 ### [Update-MgBetaPrivacySubjectRightsRequestNote](Update-MgBetaPrivacySubjectRightsRequestNote.md)
 {{ Fill in the Description }}
+
 

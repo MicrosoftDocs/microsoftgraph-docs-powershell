@@ -10,7 +10,6 @@ ms.prod: partner-customer-administration
 
 ## SYNOPSIS
 Update the properties of a delegatedAdminAccessAssignment object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment](/powershell/module/Microsoft.Graph.Identity.Partner/Update-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment?view=graph-powershell-1.0)
@@ -52,7 +51,9 @@ Update-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment
 
 ## DESCRIPTION
 Update the properties of a delegatedAdminAccessAssignment object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/delegatedadminaccessassignment-update-permissions.md)]
 
 ## PARAMETERS
 
@@ -319,5 +320,6 @@ INPUTOBJECT \<IIdentityPartnerIdentity\>: Identity Parameter
 [Update-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment](/powershell/module/Microsoft.Graph.Identity.Partner/Update-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/update-mgbetatenantrelationshipdelegatedadminrelationshipaccessassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/update-mgbetatenantrelationshipdelegatedadminrelationshipaccessassignment)
+
 
 

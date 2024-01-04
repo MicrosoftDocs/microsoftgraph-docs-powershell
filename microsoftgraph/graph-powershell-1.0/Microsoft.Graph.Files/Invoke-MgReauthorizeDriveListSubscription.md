@@ -10,7 +10,6 @@ ms.prod: change-notifications
 
 ## SYNOPSIS
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaReauthorizeDriveListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaReauthorizeDriveListSubscription?view=graph-powershell-beta)
@@ -31,7 +30,6 @@ Invoke-MgReauthorizeDriveListSubscription -InputObject <IFilesIdentity> [-PassTh
 
 ## DESCRIPTION
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
-This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -172,5 +170,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Invoke-MgBetaReauthorizeDriveListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaReauthorizeDriveListSubscription?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgreauthorizedrivelistsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgreauthorizedrivelistsubscription)
+
 
 

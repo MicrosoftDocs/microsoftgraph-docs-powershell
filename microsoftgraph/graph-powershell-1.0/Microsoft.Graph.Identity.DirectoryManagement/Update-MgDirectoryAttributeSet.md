@@ -10,7 +10,6 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Update the properties of an attributeSet object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectoryAttributeSet?view=graph-powershell-beta)
@@ -45,7 +44,9 @@ Update-MgDirectoryAttributeSet -InputObject <IIdentityDirectoryManagementIdentit
 
 ## DESCRIPTION
 Update the properties of an attributeSet object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/attributeset-update-permissions.md)]
 
 ## PARAMETERS
 
@@ -251,5 +252,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 [Update-MgBetaDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectoryAttributeSet?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryattributeset](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryattributeset)
+
 
 

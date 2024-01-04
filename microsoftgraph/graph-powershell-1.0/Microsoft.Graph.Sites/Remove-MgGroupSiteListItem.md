@@ -9,8 +9,7 @@ ms.prod: sharepoint
 # Remove-MgGroupSiteListItem
 
 ## SYNOPSIS
-Removes an item from a list\]\[\].
-This API is available in the following \[national cloud deployments.
+Removes an item from a \[list\]\[\].
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteListItem?view=graph-powershell-beta)
@@ -30,8 +29,10 @@ Remove-MgGroupSiteListItem -InputObject <ISitesIdentity> [-IfMatch <String>] [-P
 ```
 
 ## DESCRIPTION
-Removes an item from a list\]\[\].
-This API is available in the following \[national cloud deployments.
+Removes an item from a \[list\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-delete-permissions.md)]
 
 ## PARAMETERS
 
@@ -231,5 +232,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Remove-MgBetaGroupSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteListItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitelistitem)
+
 
 

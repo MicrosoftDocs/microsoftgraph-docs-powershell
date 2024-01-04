@@ -10,7 +10,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 Resets all accessReviewInstanceDecisionItem objects on an accessReviewInstance to notReviewed.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Reset-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Reset-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision?view=graph-powershell-beta)
@@ -31,7 +30,9 @@ Reset-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision -InputObject <I
 
 ## DESCRIPTION
 Resets all accessReviewInstanceDecisionItem objects on an accessReviewInstance to notReviewed.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewinstance-resetdecisions-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Reset-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision Cmdlet
@@ -225,4 +226,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [Reset-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Reset-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/reset-mgidentitygovernanceaccessreviewdefinitioninstancedecision](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/reset-mgidentitygovernanceaccessreviewdefinitioninstancedecision)
+
 

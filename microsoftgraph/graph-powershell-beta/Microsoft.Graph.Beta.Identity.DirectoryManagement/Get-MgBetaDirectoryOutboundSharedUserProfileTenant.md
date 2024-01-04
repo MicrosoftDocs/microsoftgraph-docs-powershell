@@ -37,6 +37,9 @@ Get-MgBetaDirectoryOutboundSharedUserProfileTenant -InputObject <IIdentityDirect
 The collection of external Microsoft Entra tenants that the user has shared profile data with.
 Read-only.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outboundshareduserprofile-list-tenants-permissions.md)]
+
 ## PARAMETERS
 
 ### -All
@@ -300,5 +303,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryoutboundshareduserprofiletenant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryoutboundshareduserprofiletenant)
+
 
 

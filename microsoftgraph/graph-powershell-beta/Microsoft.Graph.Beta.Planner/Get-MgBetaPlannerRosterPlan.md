@@ -35,6 +35,9 @@ Get-MgBetaPlannerRosterPlan -InputObject <IPlannerIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 Retrieves the plans contained by the plannerRoster.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerroster-list-plans-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaPlannerRosterPlan Cmdlet
 ```powershell
@@ -271,4 +274,5 @@ INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerrosterplan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerrosterplan)
+
 

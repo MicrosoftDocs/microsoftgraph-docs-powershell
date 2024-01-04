@@ -38,6 +38,9 @@ Get-MgBetaAgreementFileLocalization -InputObject <IIdentityGovernanceIdentity> [
 ## DESCRIPTION
 The localized version of the terms of use agreement files attached to the agreement.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/agreementfile-list-localizations-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -370,4 +373,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [Get-MgAgreementFileLocalization](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgAgreementFileLocalization?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaagreementfilelocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaagreementfilelocalization)
+
 

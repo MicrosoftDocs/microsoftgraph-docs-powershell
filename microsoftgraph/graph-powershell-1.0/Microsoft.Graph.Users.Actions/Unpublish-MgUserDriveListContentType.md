@@ -9,8 +9,7 @@ ms.prod: sites-and-lists
 # Unpublish-MgUserDriveListContentType
 
 ## SYNOPSIS
-Unpublish a contentType\]\[\] from a content type hub site.
-This API is available in the following \[national cloud deployments.
+Unpublish a \[contentType\]\[\] from a content type hub site.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Unpublish-MgBetaUserDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Unpublish-MgBetaUserDriveListContentType?view=graph-powershell-beta)
@@ -30,8 +29,10 @@ Unpublish-MgUserDriveListContentType -InputObject <IUsersActionsIdentity> [-Pass
 ```
 
 ## DESCRIPTION
-Unpublish a contentType\]\[\] from a content type hub site.
-This API is available in the following \[national cloud deployments.
+Unpublish a \[contentType\]\[\] from a content type hub site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-unpublish-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -205,4 +206,5 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 [Unpublish-MgBetaUserDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Unpublish-MgBetaUserDriveListContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/unpublish-mguserdrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/unpublish-mguserdrivelistcontenttype)
+
 

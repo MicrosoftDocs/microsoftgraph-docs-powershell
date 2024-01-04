@@ -44,6 +44,9 @@ Read-only.
 Nullable.
 Supports $expand.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-list-memberof-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -336,4 +339,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 [Get-MgDeviceMemberOf](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDeviceMemberOf?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadevicememberof](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadevicememberof)
+
 

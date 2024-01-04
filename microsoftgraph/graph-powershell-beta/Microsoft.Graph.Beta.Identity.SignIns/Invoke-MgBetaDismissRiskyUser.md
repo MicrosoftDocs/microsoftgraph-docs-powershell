@@ -12,7 +12,6 @@ ms.prod: identity-and-sign-in
 Dismiss the risk of one or more riskyUser objects.
 This action sets the targeted user's risk level to none.
 The maximum count of users to dismiss in one call is 60.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgDismissRiskyUser](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgDismissRiskyUser?view=graph-powershell-1.0)
@@ -36,7 +35,9 @@ Invoke-MgBetaDismissRiskyUser
 Dismiss the risk of one or more riskyUser objects.
 This action sets the targeted user's risk level to none.
 The maximum count of users to dismiss in one call is 60.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/riskyusers-dismiss-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgBetaDismissRiskyUser Cmdlet
@@ -170,4 +171,5 @@ BODYPARAMETER \<IPathsZip9X6IdentityprotectionRiskyusersMicrosoftGraphDismissPos
 [Invoke-MgDismissRiskyUser](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgDismissRiskyUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetadismissriskyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetadismissriskyuser)
+
 

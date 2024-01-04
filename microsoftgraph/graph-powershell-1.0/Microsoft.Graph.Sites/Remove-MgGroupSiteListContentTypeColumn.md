@@ -9,8 +9,7 @@ ms.prod: sites-and-lists
 # Remove-MgGroupSiteListContentTypeColumn
 
 ## SYNOPSIS
-Remove a column\]\[columndefinition\] from a \[site\]\[\], a \[list\]\[\], or a \[content type\]\[contentType\].
-This API is available in the following \[national cloud deployments.
+Remove a \[column\]\[columndefinition\] from a \[site\]\[\], a \[list\]\[\], or a \[content type\]\[contentType\].
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteListContentTypeColumn?view=graph-powershell-beta)
@@ -30,8 +29,10 @@ Remove-MgGroupSiteListContentTypeColumn -InputObject <ISitesIdentity> [-IfMatch 
 ```
 
 ## DESCRIPTION
-Remove a column\]\[columndefinition\] from a \[site\]\[\], a \[list\]\[\], or a \[content type\]\[contentType\].
-This API is available in the following \[national cloud deployments.
+Remove a \[column\]\[columndefinition\] from a \[site\]\[\], a \[list\]\[\], or a \[content type\]\[contentType\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/columndefinition-delete-permissions.md)]
 
 ## PARAMETERS
 
@@ -246,5 +247,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Remove-MgBetaGroupSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteListContentTypeColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitelistcontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitelistcontenttypecolumn)
+
 
 

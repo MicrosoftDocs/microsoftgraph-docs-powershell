@@ -9,8 +9,7 @@ ms.prod: sites-and-lists
 # Update-MgBetaUserDriveListContentTypeColumn
 
 ## SYNOPSIS
-Update a site\]\[\], \[list\]\[\] or \[content type\]\[contentType\] \[column\]\[columnDefinition\].
-This API is available in the following \[national cloud deployments.
+Update a \[site\]\[\], \[list\]\[\] or \[content type\]\[contentType\] \[column\]\[columnDefinition\].
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgUserDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveListContentTypeColumn?view=graph-powershell-1.0)
@@ -64,8 +63,10 @@ Update-MgBetaUserDriveListContentTypeColumn -InputObject <IFilesIdentity>
 ```
 
 ## DESCRIPTION
-Update a site\]\[\], \[list\]\[\] or \[content type\]\[contentType\] \[column\]\[columnDefinition\].
-This API is available in the following \[national cloud deployments.
+Update a \[site\]\[\], \[list\]\[\] or \[content type\]\[contentType\] \[column\]\[columnDefinition\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/columndefinition-update-permissions.md)]
 
 ## PARAMETERS
 
@@ -842,8 +843,8 @@ Read-only.
       \[LastModifiedDateTime \<DateTime?\>\]: Last date and time of term modification.
 Read-only.
       \[Properties \<IMicrosoftGraphKeyValue\[\]\>\]: Collection of properties on the term.
-        \[Key \<String\>\]: Contains the name of the field that a value is associated with.
-        \[Value \<String\>\]: Contains the corresponding value for the specified key.
+        \[Key \<String\>\]: Key.
+        \[Value \<String\>\]: Value.
       \[Relations \<IMicrosoftGraphTermStoreRelation\[\]\>\]: To indicate which terms are related to the current term as either pinned or reused.
         \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
@@ -1095,8 +1096,8 @@ Read-only.
       \[LastModifiedDateTime \<DateTime?\>\]: Last date and time of term modification.
 Read-only.
       \[Properties \<IMicrosoftGraphKeyValue\[\]\>\]: Collection of properties on the term.
-        \[Key \<String\>\]: Contains the name of the field that a value is associated with.
-        \[Value \<String\>\]: Contains the corresponding value for the specified key.
+        \[Key \<String\>\]: Key.
+        \[Value \<String\>\]: Value.
       \[Relations \<IMicrosoftGraphTermStoreRelation\[\]\>\]: To indicate which terms are related to the current term as either pinned or reused.
         \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
@@ -1177,8 +1178,8 @@ Read-only.
     \[LastModifiedDateTime \<DateTime?\>\]: Last date and time of term modification.
 Read-only.
     \[Properties \<IMicrosoftGraphKeyValue\[\]\>\]: Collection of properties on the term.
-      \[Key \<String\>\]: Contains the name of the field that a value is associated with.
-      \[Value \<String\>\]: Contains the corresponding value for the specified key.
+      \[Key \<String\>\]: Key.
+      \[Value \<String\>\]: Value.
     \[Relations \<IMicrosoftGraphTermStoreRelation\[\]\>\]: To indicate which terms are related to the current term as either pinned or reused.
       \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
@@ -1237,5 +1238,6 @@ For examples, see Examples of common formulas in lists
 [Update-MgUserDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveListContentTypeColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdrivelistcontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdrivelistcontenttypecolumn)
+
 
 

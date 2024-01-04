@@ -11,7 +11,6 @@ ms.prod: industry-data-etl
 
 ## SYNOPSIS
 Read the properties and relationships of a sourceSystemDefinition object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -36,7 +35,12 @@ Get-MgBetaExternalIndustryDataSourceSystem -InputObject <ISearchIdentity> [-Expa
 
 ## DESCRIPTION
 Read the properties and relationships of a sourceSystemDefinition object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-sourcesystemdefinition-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-sourcesystemdefinition-list-permissions.md)]
 
 ## PARAMETERS
 
@@ -261,5 +265,6 @@ INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatasourcesystem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatasourcesystem)
+
 
 

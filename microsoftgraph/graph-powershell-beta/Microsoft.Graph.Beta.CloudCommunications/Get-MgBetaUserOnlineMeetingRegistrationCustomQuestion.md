@@ -11,7 +11,6 @@ ms.prod: cloud-communications
 
 ## SYNOPSIS
 Get a custom registration question associated with a meetingRegistration object on behalf of the organizer.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -37,7 +36,12 @@ Get-MgBetaUserOnlineMeetingRegistrationCustomQuestion -InputObject <ICloudCommun
 
 ## DESCRIPTION
 Get a custom registration question associated with a meetingRegistration object on behalf of the organizer.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/meetingregistrationquestion-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/meetingregistration-list-customquestions-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserOnlineMeetingRegistrationCustomQuestion Cmdlet
@@ -301,4 +305,5 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingregistrationcustomquestion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingregistrationcustomquestion)
+
 

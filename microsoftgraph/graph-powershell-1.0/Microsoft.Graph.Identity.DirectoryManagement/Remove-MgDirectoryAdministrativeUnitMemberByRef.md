@@ -10,7 +10,6 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Use this API to remove a member (user, group, or device) from an administrative unit.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryAdministrativeUnitMemberByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryAdministrativeUnitMemberByRef?view=graph-powershell-beta)
@@ -31,7 +30,9 @@ Remove-MgDirectoryAdministrativeUnitMemberByRef -InputObject <IIdentityDirectory
 
 ## DESCRIPTION
 Use this API to remove a member (user, group, or device) from an administrative unit.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/administrativeunit-delete-members-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -215,4 +216,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 [Remove-MgBetaDirectoryAdministrativeUnitMemberByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryAdministrativeUnitMemberByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryadministrativeunitmemberbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryadministrativeunitmemberbyref)
+
 

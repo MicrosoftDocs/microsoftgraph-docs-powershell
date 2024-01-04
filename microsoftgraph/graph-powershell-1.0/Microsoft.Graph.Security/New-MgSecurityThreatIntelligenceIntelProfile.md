@@ -353,3 +353,4 @@ TRADECRAFT \<IMicrosoftGraphSecurityFormattedContent\>: formattedContent
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligenceintelprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligenceintelprofile)
 
 
+

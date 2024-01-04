@@ -10,7 +10,6 @@ ms.prod: security
 
 ## SYNOPSIS
 Read the properties and relationships of a subdomain object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceSubdomain](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceSubdomain?view=graph-powershell-1.0)
@@ -38,7 +37,9 @@ Get-MgBetaSecurityThreatIntelligenceSubdomain -InputObject <ISecurityIdentity> [
 
 ## DESCRIPTION
 Read the properties and relationships of a subdomain object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-subdomain-get-permissions.md)]
 
 ## PARAMETERS
 
@@ -244,6 +245,8 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[ArticleId \<String\>\]: The unique identifier of article
   \[ArticleIndicatorId \<String\>\]: The unique identifier of articleIndicator
   \[AttackSimulationOperationId \<String\>\]: The unique identifier of attackSimulationOperation
+  \[AuditLogQueryId \<String\>\]: The unique identifier of auditLogQuery
+  \[AuditLogRecordId \<String\>\]: The unique identifier of auditLogRecord
   \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
   \[AuthorityTemplateId \<String\>\]: The unique identifier of authorityTemplate
   \[CaseOperationId \<String\>\]: The unique identifier of caseOperation
@@ -321,5 +324,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Get-MgSecurityThreatIntelligenceSubdomain](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceSubdomain?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencesubdomain](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencesubdomain)
+
 
 

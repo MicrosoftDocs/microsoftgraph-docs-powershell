@@ -172,3 +172,4 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementuserexperienceanalyticbaselinebatteryhealthmetric](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementuserexperienceanalyticbaselinebatteryhealthmetric)
 
 
+

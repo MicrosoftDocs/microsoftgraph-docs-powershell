@@ -11,7 +11,6 @@ ms.prod: security
 
 ## SYNOPSIS
 Get the properties and relationships of an alert in an organization based on the specified alert id property.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSecurityAlertV2](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAlertV2?view=graph-powershell-1.0)
@@ -39,7 +38,12 @@ Get-MgBetaSecurityAlertV2 -InputObject <ISecurityIdentity> [-ExpandProperty <Str
 
 ## DESCRIPTION
 Get the properties and relationships of an alert in an organization based on the specified alert id property.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-alert-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-list-alerts_v2-permissions.md)]
 
 ## PARAMETERS
 
@@ -245,6 +249,8 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[ArticleId \<String\>\]: The unique identifier of article
   \[ArticleIndicatorId \<String\>\]: The unique identifier of articleIndicator
   \[AttackSimulationOperationId \<String\>\]: The unique identifier of attackSimulationOperation
+  \[AuditLogQueryId \<String\>\]: The unique identifier of auditLogQuery
+  \[AuditLogRecordId \<String\>\]: The unique identifier of auditLogRecord
   \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
   \[AuthorityTemplateId \<String\>\]: The unique identifier of authorityTemplate
   \[CaseOperationId \<String\>\]: The unique identifier of caseOperation
@@ -322,5 +328,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Get-MgSecurityAlertV2](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAlertV2?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityalertv2](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityalertv2)
+
 
 

@@ -335,3 +335,4 @@ This is only available when a folder thumbnail is requested.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriveitemthumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriveitemthumbnail)
 
 
+

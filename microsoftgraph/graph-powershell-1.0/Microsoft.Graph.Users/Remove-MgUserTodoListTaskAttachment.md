@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Delete a taskFileAttachment object from a todoTask resource.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserTodoListTaskAttachment](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserTodoListTaskAttachment?view=graph-powershell-beta)
@@ -31,7 +30,9 @@ Remove-MgUserTodoListTaskAttachment -InputObject <IUsersIdentity> [-IfMatch <Str
 
 ## DESCRIPTION
 Delete a taskFileAttachment object from a todoTask resource.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/taskfileattachment-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -220,4 +221,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Remove-MgBetaUserTodoListTaskAttachment](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserTodoListTaskAttachment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolisttaskattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolisttaskattachment)
+
 

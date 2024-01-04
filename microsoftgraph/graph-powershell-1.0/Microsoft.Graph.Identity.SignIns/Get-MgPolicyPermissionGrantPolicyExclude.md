@@ -40,6 +40,9 @@ Get-MgPolicyPermissionGrantPolicyExclude -InputObject <IIdentitySignInsIdentity>
 Condition sets which are excluded in this permission grant policy.
 Automatically expanded on GET.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/permissiongrantpolicy-list-excludes-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Get a permission grant policy exclude by ID
 
@@ -349,4 +352,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 [Get-MgBetaPolicyPermissionGrantPolicyExclude](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyPermissionGrantPolicyExclude?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicypermissiongrantpolicyexclude](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicypermissiongrantpolicyexclude)
+
 

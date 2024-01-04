@@ -10,7 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Run an estimate of the number of emails and documents in the eDiscovery search.
 To learn more about searches in eDiscovery, see Collect data for a case in eDiscovery (Premium).
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgEstimateSecurityCaseEdiscoveryCaseSearchStatistics](/powershell/module/Microsoft.Graph.Security/Invoke-MgEstimateSecurityCaseEdiscoveryCaseSearchStatistics?view=graph-powershell-1.0)
@@ -32,7 +31,6 @@ Invoke-MgBetaEstimateSecurityCaseEdiscoveryCaseSearchStatistics -InputObject <IS
 ## DESCRIPTION
 Run an estimate of the number of emails and documents in the eDiscovery search.
 To learn more about searches in eDiscovery, see Collect data for a case in eDiscovery (Premium).
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgBetaEstimateSecurityCaseEdiscoveryCaseSearchStatistics Cmdlet
@@ -157,6 +155,8 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[ArticleId \<String\>\]: The unique identifier of article
   \[ArticleIndicatorId \<String\>\]: The unique identifier of articleIndicator
   \[AttackSimulationOperationId \<String\>\]: The unique identifier of attackSimulationOperation
+  \[AuditLogQueryId \<String\>\]: The unique identifier of auditLogQuery
+  \[AuditLogRecordId \<String\>\]: The unique identifier of auditLogRecord
   \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
   \[AuthorityTemplateId \<String\>\]: The unique identifier of authorityTemplate
   \[CaseOperationId \<String\>\]: The unique identifier of caseOperation
@@ -234,4 +234,5 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Invoke-MgEstimateSecurityCaseEdiscoveryCaseSearchStatistics](/powershell/module/Microsoft.Graph.Security/Invoke-MgEstimateSecurityCaseEdiscoveryCaseSearchStatistics?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaestimatesecuritycaseediscoverycasesearchstatistics](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaestimatesecuritycaseediscoverycasesearchstatistics)
+
 

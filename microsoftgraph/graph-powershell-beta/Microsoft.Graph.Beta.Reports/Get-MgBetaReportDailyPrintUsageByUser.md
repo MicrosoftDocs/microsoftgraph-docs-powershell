@@ -12,7 +12,6 @@ ms.prod: cloud-printing
 ## SYNOPSIS
 Retrieve a user's usage summary for a particular time period.
 See the printUsageByUser documentation for descriptions of each of the endpoints.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgReportDailyPrintUsageByUser](/powershell/module/Microsoft.Graph.Reports/Get-MgReportDailyPrintUsageByUser?view=graph-powershell-1.0)
@@ -41,7 +40,12 @@ Get-MgBetaReportDailyPrintUsageByUser -InputObject <IReportsIdentity> [-ExpandPr
 ## DESCRIPTION
 Retrieve a user's usage summary for a particular time period.
 See the printUsageByUser documentation for descriptions of each of the endpoints.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printusagebyuser-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-list-dailyprintusagebyuser-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -270,10 +274,12 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
   \[DeviceManagementExportJobId \<String\>\]: The unique identifier of deviceManagementExportJob
   \[DirectoryAuditId \<String\>\]: The unique identifier of directoryAudit
   \[EndDateTime \<DateTime?\>\]: Usage: endDateTime={endDateTime}
+  \[ExclusiveIntervalEndDateTime \<DateTime?\>\]: Usage: exclusiveIntervalEndDateTime={exclusiveIntervalEndDateTime}
   \[Filter \<String\>\]: Usage: filter='{filter}'
   \[GroupId \<String\>\]: Usage: groupId='{groupId}'
   \[IncludedUserRoles \<String\>\]: Usage: includedUserRoles='{includedUserRoles}'
   \[IncludedUserTypes \<String\>\]: Usage: includedUserTypes='{includedUserTypes}'
+  \[InclusiveIntervalStartDateTime \<DateTime?\>\]: Usage: inclusiveIntervalStartDateTime={inclusiveIntervalStartDateTime}
   \[InsightSummaryId \<String\>\]: The unique identifier of insightSummary
   \[MfaCompletionMetricId \<String\>\]: The unique identifier of mfaCompletionMetric
   \[MonthlyInactiveUsersByApplicationMetricId \<String\>\]: The unique identifier of monthlyInactiveUsersByApplicationMetric
@@ -301,4 +307,5 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
 [Get-MgReportDailyPrintUsageByUser](/powershell/module/Microsoft.Graph.Reports/Get-MgReportDailyPrintUsageByUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportdailyprintusagebyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportdailyprintusagebyuser)
+
 

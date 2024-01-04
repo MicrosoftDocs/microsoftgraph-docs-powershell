@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Create an Outlook task folder under a specified outlookTaskGroup.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -48,7 +47,9 @@ New-MgBetaUserOutlookTaskGroupTaskFolder -InputObject <IUsersIdentity>
 
 ## DESCRIPTION
 Create an Outlook task folder under a specified outlookTaskGroup.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlooktaskgroup-post-taskfolders-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaUserOutlookTaskGroupTaskFolder Cmdlet
@@ -556,4 +557,5 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktaskgrouptaskfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktaskgrouptaskfolder)
+
 

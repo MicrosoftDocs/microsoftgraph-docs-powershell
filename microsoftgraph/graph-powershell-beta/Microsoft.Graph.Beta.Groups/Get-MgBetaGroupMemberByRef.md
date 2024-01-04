@@ -9,7 +9,7 @@ ms.prod: groups
 # Get-MgBetaGroupMemberByRef
 
 ## SYNOPSIS
-Direct members of this group, who can be users, devices, other groups, or service principals.
+Direct group members, who can be users, devices, other groups, or service principals.
 Supports the List members, Add member, and Remove member operations.
 Nullable.
 Supports $expand including nested $select.
@@ -27,11 +27,14 @@ Get-MgBetaGroupMemberByRef -GroupId <String> [-Filter <String>] [-Search <String
 ```
 
 ## DESCRIPTION
-Direct members of this group, who can be users, devices, other groups, or service principals.
+Direct group members, who can be users, devices, other groups, or service principals.
 Supports the List members, Add member, and Remove member operations.
 Nullable.
 Supports $expand including nested $select.
 For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName).
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-members-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -225,4 +228,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgGroupMemberByRef](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupMemberByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmemberbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmemberbyref)
+
 

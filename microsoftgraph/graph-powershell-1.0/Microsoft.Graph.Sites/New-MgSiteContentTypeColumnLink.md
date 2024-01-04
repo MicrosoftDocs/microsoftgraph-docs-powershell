@@ -251,3 +251,4 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitecontenttypecolumnlink](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitecontenttypecolumnlink)
 
 
+

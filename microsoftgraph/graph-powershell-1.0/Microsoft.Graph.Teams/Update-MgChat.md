@@ -10,7 +10,6 @@ ms.prod: microsoft-teams
 
 ## SYNOPSIS
 Update the properties of a chat object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaChat](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChat?view=graph-powershell-beta)
@@ -56,7 +55,9 @@ Update-MgChat -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphChat>
 
 ## DESCRIPTION
 Update the properties of a chat object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-patch-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -1155,4 +1156,5 @@ VIEWPOINT \<IMicrosoftGraphChatViewpoint\>: chatViewpoint
 [Update-MgBetaChat](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChat?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgchat](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgchat)
+
 

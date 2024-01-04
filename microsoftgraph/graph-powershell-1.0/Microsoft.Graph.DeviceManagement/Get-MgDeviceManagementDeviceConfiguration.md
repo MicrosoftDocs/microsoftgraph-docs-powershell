@@ -10,7 +10,7 @@ ms.prod: intune
 # Get-MgDeviceManagementDeviceConfiguration
 
 ## SYNOPSIS
-Read properties and relationships of the editionUpgradeConfiguration object.
+Read properties and relationships of the iosCertificateProfile object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceConfiguration?view=graph-powershell-beta)
@@ -37,7 +37,7 @@ Get-MgDeviceManagementDeviceConfiguration -InputObject <IDeviceManagementIdentit
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the editionUpgradeConfiguration object.
+Read properties and relationships of the iosCertificateProfile object.
 
 ## PARAMETERS
 
@@ -298,5 +298,6 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 [Get-MgBetaDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceConfiguration?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdeviceconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdeviceconfiguration)
+
 
 

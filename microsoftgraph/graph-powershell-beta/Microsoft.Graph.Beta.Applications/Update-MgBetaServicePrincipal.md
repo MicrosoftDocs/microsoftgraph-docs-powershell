@@ -10,7 +10,6 @@ ms.prod: applications
 
 ## SYNOPSIS
 Update the properties of servicePrincipal object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgServicePrincipal](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipal?view=graph-powershell-1.0)
@@ -103,7 +102,9 @@ Update-MgBetaServicePrincipal -InputObject <IApplicationsIdentity>
 
 ## DESCRIPTION
 Update the properties of servicePrincipal object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Update the properties of a service principal
@@ -1226,8 +1227,8 @@ For example, applications that can render file streams may set the addIns proper
 This will let services like Microsoft 365 call the application in the context of a document the user is working on.
   \[Id \<String\>\]: 
   \[Properties \<IMicrosoftGraphKeyValue\[\]\>\]: 
-    \[Key \<String\>\]: Contains the name of the field that a value is associated with.
-    \[Value \<String\>\]: Contains the corresponding value for the specified key.
+    \[Key \<String\>\]: Key.
+    \[Value \<String\>\]: Value.
   \[Type \<String\>\]: 
 
 APPMANAGEMENTPOLICIES \<IMicrosoftGraphAppManagementPolicy\[\]\>: The appManagementPolicy applied to this service principal.
@@ -1332,7 +1333,10 @@ Must not be included in any POST or PATCH requests.
 Read-only.
   \[Value \<String\>\]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
+
+
+ and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
 
@@ -1350,8 +1354,8 @@ For example, applications that can render file streams may set the addIns proper
 This will let services like Microsoft 365 call the application in the context of a document the user is working on.
     \[Id \<String\>\]: 
     \[Properties \<IMicrosoftGraphKeyValue\[\]\>\]: 
-      \[Key \<String\>\]: Contains the name of the field that a value is associated with.
-      \[Value \<String\>\]: Contains the corresponding value for the specified key.
+      \[Key \<String\>\]: Key.
+      \[Value \<String\>\]: Value.
     \[Type \<String\>\]: 
   \[AlternativeNames \<String\[\]\>\]: Used to retrieve service principals by subscription, identify resource group and full resource ids for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -1443,7 +1447,10 @@ Must not be included in any POST or PATCH requests.
 Read-only.
     \[Value \<String\>\]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
+
+
+ and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
   \[ApplicationTemplateId \<String\>\]: Unique identifier of the applicationTemplate that the servicePrincipal was created from.
@@ -1597,9 +1604,9 @@ Read-only.
     \[ServicePlans \<IMicrosoftGraphServicePlanInfo\[\]\>\]: Information about the service plans assigned with the license.
 Read-only, Not nullable
       \[AppliesTo \<String\>\]: The object the service plan can be assigned to.
-The possible values are:User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
+The possible values are: User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
       \[ProvisioningStatus \<String\>\]: The provisioning status of the service plan.
-The possible values are:Success - Service is fully provisioned.Disabled - Service has been disabled.ErrorStatus - The service plan has not been provisioned and is in an error state.PendingInput - Service is not yet provisioned; awaiting service confirmation.PendingActivation - Service is provisioned but requires explicit activation by administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it has not been activated in the tenant, yet.
+The possible values are:Success - Service is fully provisioned.Disabled - Service is disabled.Error - The service plan isn't provisioned and is in an error state.PendingInput - The service isn't provisioned and is awaiting service confirmation.PendingActivation - The service is provisioned but requires explicit activation by an administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it isn't activated in the tenant.
       \[ServicePlanId \<String\>\]: The unique identifier of the service plan.
       \[ServicePlanName \<String\>\]: The name of the service plan.
     \[SkuId \<String\>\]: Unique identifier (GUID) for the service SKU.
@@ -1718,7 +1725,10 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
     \[Value \<String\>\]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
+
+
+ and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
   \[PublisherName \<String\>\]: The name of the Microsoft Entra tenant that published the application.
@@ -2231,9 +2241,9 @@ Read-only.
   \[ServicePlans \<IMicrosoftGraphServicePlanInfo\[\]\>\]: Information about the service plans assigned with the license.
 Read-only, Not nullable
     \[AppliesTo \<String\>\]: The object the service plan can be assigned to.
-The possible values are:User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
+The possible values are: User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
     \[ProvisioningStatus \<String\>\]: The provisioning status of the service plan.
-The possible values are:Success - Service is fully provisioned.Disabled - Service has been disabled.ErrorStatus - The service plan has not been provisioned and is in an error state.PendingInput - Service is not yet provisioned; awaiting service confirmation.PendingActivation - Service is provisioned but requires explicit activation by administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it has not been activated in the tenant, yet.
+The possible values are:Success - Service is fully provisioned.Disabled - Service is disabled.Error - The service plan isn't provisioned and is in an error state.PendingInput - The service isn't provisioned and is awaiting service confirmation.PendingActivation - The service is provisioned but requires explicit activation by an administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it isn't activated in the tenant.
     \[ServicePlanId \<String\>\]: The unique identifier of the service plan.
     \[ServicePlanName \<String\>\]: The name of the service plan.
   \[SkuId \<String\>\]: Unique identifier (GUID) for the service SKU.
@@ -2354,7 +2364,10 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
   \[Value \<String\>\]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ; = ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
+
+
+ and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
 
@@ -2679,4 +2692,5 @@ VERIFIEDPUBLISHER \<IMicrosoftGraphVerifiedPublisher\>: verifiedPublisher
 [Update-MgServicePrincipal](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipal?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipal)
+
 

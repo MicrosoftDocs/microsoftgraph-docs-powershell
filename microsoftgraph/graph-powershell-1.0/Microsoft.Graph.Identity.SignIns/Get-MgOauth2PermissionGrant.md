@@ -12,7 +12,6 @@ ms.prod: identity-and-sign-in
 ## SYNOPSIS
 Retrieve the properties of a single delegated permission grant represented by an oAuth2PermissionGrant object.
 An oAuth2PermissionGrant represents delegated permissions which have been granted for a client application to access an API on behalf of a signed-in user.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaOauth2PermissionGrant?view=graph-powershell-beta)
@@ -41,7 +40,12 @@ Get-MgOauth2PermissionGrant -InputObject <IIdentitySignInsIdentity> [-ExpandProp
 ## DESCRIPTION
 Retrieve the properties of a single delegated permission grant represented by an oAuth2PermissionGrant object.
 An oAuth2PermissionGrant represents delegated permissions which have been granted for a client application to access an API on behalf of a signed-in user.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/oauth2permissiongrant-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/oauth2permissiongrant-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -316,4 +320,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 [Get-MgBetaOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaOauth2PermissionGrant?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgoauth2permissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgoauth2permissiongrant)
+
 

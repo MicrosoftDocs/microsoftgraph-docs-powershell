@@ -10,8 +10,7 @@ ms.prod: sharepoint
 # Get-MgSiteListItem
 
 ## SYNOPSIS
-Returns the metadata for an item\]\[\] in a \[list\]\[\].
-This API is available in the following \[national cloud deployments.
+Returns the metadata for an \[item\]\[\] in a \[list\]\[\].
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListItem?view=graph-powershell-beta)
@@ -38,8 +37,13 @@ Get-MgSiteListItem -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-
 ```
 
 ## DESCRIPTION
-Returns the metadata for an item\]\[\] in a \[list\]\[\].
-This API is available in the following \[national cloud deployments.
+Returns the metadata for an \[item\]\[\] in a \[list\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -327,4 +331,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgBetaSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitem)
+
 

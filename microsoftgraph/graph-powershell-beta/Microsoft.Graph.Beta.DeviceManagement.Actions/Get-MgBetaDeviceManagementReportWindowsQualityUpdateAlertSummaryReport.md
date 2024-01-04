@@ -291,3 +291,4 @@ BODYPARAMETER \<IPathsNun7U7DevicemanagementReportsMicrosoftGraphGetwindowsquali
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportwindowsqualityupdatealertsummaryreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportwindowsqualityupdatealertsummaryreport)
 
 
+

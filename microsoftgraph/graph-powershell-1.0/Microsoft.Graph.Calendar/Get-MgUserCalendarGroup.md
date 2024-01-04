@@ -11,7 +11,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a calendar group object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserCalendarGroup](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserCalendarGroup?view=graph-powershell-beta)
@@ -36,7 +35,12 @@ Get-MgUserCalendarGroup -InputObject <ICalendarIdentity> [-Property <String[]>] 
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a calendar group object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/calendargroup-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-list-calendargroups-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -246,10 +250,12 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[ExtensionId \<String\>\]: The unique identifier of extension
   \[GroupId \<String\>\]: The unique identifier of group
   \[PlaceId \<String\>\]: The unique identifier of place
+  \[RoomId \<String\>\]: The unique identifier of room
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 [Get-MgBetaUserCalendarGroup](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserCalendarGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusercalendargroup](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusercalendargroup)
+
 

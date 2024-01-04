@@ -11,7 +11,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 In Microsoft Entra entitlement management, retrieve the properties and relationships of an  accessPackageAssignmentRequest object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -48,7 +47,12 @@ Get-MgBetaEntitlementManagementAccessPackageAssignmentRequest [-ExpandProperty <
 
 ## DESCRIPTION
 In Microsoft Entra entitlement management, retrieve the properties and relationships of an  accessPackageAssignmentRequest object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackageassignmentrequest-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/entitlementmanagement-list-accesspackageassignmentrequests-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get all access package assignment requests
@@ -418,4 +422,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageassignmentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageassignmentrequest)
+
 

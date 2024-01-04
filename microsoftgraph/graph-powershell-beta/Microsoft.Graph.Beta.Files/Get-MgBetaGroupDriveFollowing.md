@@ -40,6 +40,9 @@ Get-MgBetaGroupDriveFollowing -InputObject <IFilesIdentity> [-ExpandProperty <St
 The list of items the user is following.
 Only in OneDrive for Business.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/drive-list-following-permissions.md)]
+
 ## PARAMETERS
 
 ### -All
@@ -299,5 +302,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgGroupDriveFollowing](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveFollowing?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdrivefollowing](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdrivefollowing)
+
 
 

@@ -11,7 +11,6 @@ ms.prod: sites-and-lists
 
 ## SYNOPSIS
 Read the properties and relationships of a documentSetVersion object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListItemDocumentSetVersion?view=graph-powershell-1.0)
@@ -39,7 +38,12 @@ Get-MgBetaSiteListItemDocumentSetVersion -InputObject <ISitesIdentity> [-ExpandP
 
 ## DESCRIPTION
 Read the properties and relationships of a documentSetVersion object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/documentsetversion-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/listitem-list-documentsetversions-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -352,4 +356,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListItemDocumentSetVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitemdocumentsetversion)
+
 

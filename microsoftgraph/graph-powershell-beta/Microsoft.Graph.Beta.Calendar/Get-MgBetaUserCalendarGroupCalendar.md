@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Retrieve a list of calendars belonging to a calendar group.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserCalendarGroupCalendar](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserCalendarGroupCalendar?view=graph-powershell-1.0)
@@ -25,7 +24,9 @@ Get-MgBetaUserCalendarGroupCalendar -CalendarGroupId <String> -UserId <String> [
 
 ## DESCRIPTION
 Retrieve a list of calendars belonging to a calendar group.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/calendargroup-list-calendars-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserCalendarGroupCalendar Cmdlet
@@ -204,4 +205,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgUserCalendarGroupCalendar](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserCalendarGroupCalendar?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendargroupcalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendargroupcalendar)
+
 

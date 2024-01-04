@@ -400,3 +400,4 @@ JOURNALLINES \<IMicrosoftGraphJournalLine\[\]\>: .
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanyjournal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanyjournal)
 
 
+

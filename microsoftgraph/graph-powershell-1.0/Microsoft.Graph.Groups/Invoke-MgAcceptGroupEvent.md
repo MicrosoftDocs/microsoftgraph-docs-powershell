@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Accept the specified event in a user calendar.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaAcceptGroupEvent](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaAcceptGroupEvent?view=graph-powershell-beta)
@@ -45,7 +44,9 @@ Invoke-MgAcceptGroupEvent -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Accept the specified event in a user calendar.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-accept-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -283,4 +284,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Invoke-MgBetaAcceptGroupEvent](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaAcceptGroupEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgacceptgroupevent](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgacceptgroupevent)
+
 

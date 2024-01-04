@@ -63,6 +63,9 @@ Update-MgPlannerTask -InputObject <IPlannerIdentity> -IfMatch <String>
 ## DESCRIPTION
 Update the navigation property tasks in planner
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannertask-update-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -788,4 +791,5 @@ For details about the supported format, see Using order hints in Planner.
 [Update-MgBetaPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaPlannerTask?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannertask](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannertask)
+
 

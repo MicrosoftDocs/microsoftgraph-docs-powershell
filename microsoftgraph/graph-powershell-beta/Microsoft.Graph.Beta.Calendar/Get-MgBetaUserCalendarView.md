@@ -37,6 +37,9 @@ The calendar view for the calendar.
 Navigation property.
 Read-only.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/calendar-list-calendarview-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserCalendarView Cmdlet
 ```powershell
@@ -246,4 +249,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgUserCalendarView](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserCalendarView?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendarview](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendarview)
+
 

@@ -38,6 +38,9 @@ Get-MgBetaShareListContentType -InputObject <IFilesIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 The collection of content types present in this list.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/list-list-contenttypes-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -295,4 +298,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgShareListContentType](/powershell/module/Microsoft.Graph.Files/Get-MgShareListContentType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistcontenttype)
+
 

@@ -147,3 +147,4 @@ BODY \<IPathsBetdbaInformationprotectionMicrosoftGraphEncryptbufferPostRequestbo
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetabufferinformationprotectionencrypt](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetabufferinformationprotectionencrypt)
 
 
+

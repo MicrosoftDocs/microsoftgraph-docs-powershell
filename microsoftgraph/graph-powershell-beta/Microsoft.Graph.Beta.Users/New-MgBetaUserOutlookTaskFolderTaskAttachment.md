@@ -11,7 +11,6 @@ ms.prod: outlook
 ## SYNOPSIS
 Use this API to add an attachment to an outlookTask.
 The attachment can be a file (of fileAttachment type) or Outlook item (itemAttachment type).
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -44,7 +43,9 @@ New-MgBetaUserOutlookTaskFolderTaskAttachment -InputObject <IUsersIdentity>
 ## DESCRIPTION
 Use this API to add an attachment to an outlookTask.
 The attachment can be a file (of fileAttachment type) or Outlook item (itemAttachment type).
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlooktask-post-attachments-permissions.md)]
 
 ## PARAMETERS
 
@@ -319,5 +320,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktaskfoldertaskattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktaskfoldertaskattachment)
+
 
 

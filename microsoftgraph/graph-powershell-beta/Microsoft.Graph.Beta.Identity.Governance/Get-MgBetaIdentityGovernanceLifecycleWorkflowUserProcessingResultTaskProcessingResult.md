@@ -41,6 +41,9 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultTaskProcessingR
 ## DESCRIPTION
 The associated individual task execution.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-userprocessingresult-list-taskprocessingresults-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: List the results of the tasks processed for a user in a workflow
 
@@ -399,4 +402,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultTaskProcessingResult](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultTaskProcessingResult?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowuserprocessingresulttaskprocessingresult](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowuserprocessingresulttaskprocessingresult)
+
 

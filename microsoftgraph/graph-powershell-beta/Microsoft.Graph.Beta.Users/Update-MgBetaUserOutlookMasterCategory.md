@@ -11,7 +11,6 @@ ms.prod: outlook
 ## SYNOPSIS
 Update the writable property, color, of the specified outlookCategory object.
 You can't modify the displayName propertyonce you have created the category.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Users/Update-MgUserOutlookMasterCategory?view=graph-powershell-1.0)
@@ -46,7 +45,9 @@ Update-MgBetaUserOutlookMasterCategory -InputObject <IUsersIdentity>
 ## DESCRIPTION
 Update the writable property, color, of the specified outlookCategory object.
 You can't modify the displayName propertyonce you have created the category.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlookcategory-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -277,4 +278,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Update-MgUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Users/Update-MgUserOutlookMasterCategory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauseroutlookmastercategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauseroutlookmastercategory)
+
 

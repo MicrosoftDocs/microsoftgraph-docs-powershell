@@ -9,7 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveItemLastModifiedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveItemLastModifiedByUserServiceProvisioningError?view=graph-powershell-1.0)
@@ -34,7 +33,6 @@ Get-MgBetaGroupDriveItemLastModifiedByUserServiceProvisioningError -DriveId <Str
 
 ## DESCRIPTION
 Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
 
 ## PARAMETERS
 
@@ -263,5 +261,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgGroupDriveItemLastModifiedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveItemLastModifiedByUserServiceProvisioningError?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriveitemlastmodifiedbyuserserviceprovisioningerror](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriveitemlastmodifiedbyuserserviceprovisioningerror)
+
 
 

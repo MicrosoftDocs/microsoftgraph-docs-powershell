@@ -11,7 +11,6 @@ ms.prod: microsoft-teams
 
 ## SYNOPSIS
 Retrieve the properties and relationships of chatMessageHostedContent object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelMessageReplyHostedContent?view=graph-powershell-beta)
@@ -54,7 +53,6 @@ Get-MgTeamChannelMessageReplyHostedContent -InputObject <ITeamsIdentity> [-Expan
 
 ## DESCRIPTION
 Retrieve the properties and relationships of chatMessageHostedContent object.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: List hosted content for reply to a channel message
@@ -397,4 +395,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Get-MgBetaTeamChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelMessageReplyHostedContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelmessagereplyhostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelmessagereplyhostedcontent)
+
 

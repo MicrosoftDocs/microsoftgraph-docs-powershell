@@ -13,7 +13,6 @@ Change the classifyAs field of a focused Inbox override as specified.
 You cannot use PATCH to change any other fields in an inferenceClassificationOverride instance.
 If an override exists for a sender and the sender changes his/her display name, you can use POST to force an update to the name field in the existing override.
 If an override exists for a sender and the sender changes his/her SMTP address, deleting the existing override and creating a new one withthe new SMTP address is the only way to 'update' the override for this sender.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Mail/Update-MgUserInferenceClassificationOverride?view=graph-powershell-1.0)
@@ -51,7 +50,9 @@ Change the classifyAs field of a focused Inbox override as specified.
 You cannot use PATCH to change any other fields in an inferenceClassificationOverride instance.
 If an override exists for a sender and the sender changes his/her display name, you can use POST to force an update to the name field in the existing override.
 If an override exists for a sender and the sender changes his/her SMTP address, deleting the existing override and creating a new one withthe new SMTP address is the only way to 'update' the override for this sender.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/inferenceclassificationoverride-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -275,4 +276,5 @@ SENDEREMAILADDRESS \<IMicrosoftGraphEmailAddress\>: emailAddress
 [Update-MgUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Mail/Update-MgUserInferenceClassificationOverride?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetauserinferenceclassificationoverride](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetauserinferenceclassificationoverride)
+
 

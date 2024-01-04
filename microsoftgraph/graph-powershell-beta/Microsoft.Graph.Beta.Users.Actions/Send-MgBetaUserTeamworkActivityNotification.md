@@ -11,7 +11,6 @@ ms.prod: microsoft-teams
 ## SYNOPSIS
 Send an activity feed notification to a user.
 For more information, see sending Teams activity notifications.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Send-MgUserTeamworkActivityNotification](/powershell/module/Microsoft.Graph.Users.Actions/Send-MgUserTeamworkActivityNotification?view=graph-powershell-1.0)
@@ -51,7 +50,9 @@ Send-MgBetaUserTeamworkActivityNotification -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Send an activity feed notification to a user.
 For more information, see sending Teams activity notifications.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userteamwork-sendactivitynotification-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Send-MgBetaUserTeamworkActivityNotification Cmdlet
@@ -379,6 +380,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[NotebookId \<String\>\]: The unique identifier of notebook
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
   \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
   \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
   \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask
@@ -413,4 +415,5 @@ Optional when source is entityUrl; required when source is text.
 [Send-MgUserTeamworkActivityNotification](/powershell/module/Microsoft.Graph.Users.Actions/Send-MgUserTeamworkActivityNotification?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetauserteamworkactivitynotification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetauserteamworkactivitynotification)
+
 

@@ -10,7 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Run and generate diagnostic logs for the specified Microsoft Teams-enabled device.
 This API triggers a long-running operation used to generate logs for a device.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -29,7 +28,6 @@ Start-MgBetaTeamworkDeviceDiagnostic -InputObject <ITeamsIdentity> [-PassThru] [
 ## DESCRIPTION
 Run and generate diagnostic logs for the specified Microsoft Teams-enabled device.
 This API triggers a long-running operation used to generate logs for a device.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Start-MgBetaTeamworkDeviceDiagnostic Cmdlet
@@ -142,6 +140,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
   \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
   \[ConversationMemberId \<String\>\]: The unique identifier of conversationMember
+  \[DayNoteId \<String\>\]: The unique identifier of dayNote
   \[DeletedChatId \<String\>\]: The unique identifier of deletedChat
   \[DeletedTeamId \<String\>\]: The unique identifier of deletedTeam
   \[GroupId \<String\>\]: The unique identifier of group
@@ -177,4 +176,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/start-mgbetateamworkdevicediagnostic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/start-mgbetateamworkdevicediagnostic)
+
 

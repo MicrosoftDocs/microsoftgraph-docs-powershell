@@ -11,7 +11,6 @@ ms.prod: microsoft-teams
 
 ## SYNOPSIS
 Retrieve a single message or a message reply in a channel or a chat.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgChatMessageReply](/powershell/module/Microsoft.Graph.Teams/Get-MgChatMessageReply?view=graph-powershell-1.0)
@@ -39,7 +38,6 @@ Get-MgBetaChatMessageReply -InputObject <ITeamsIdentity> [-ExpandProperty <Strin
 
 ## DESCRIPTION
 Retrieve a single message or a message reply in a channel or a chat.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
@@ -280,6 +278,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
   \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
   \[ConversationMemberId \<String\>\]: The unique identifier of conversationMember
+  \[DayNoteId \<String\>\]: The unique identifier of dayNote
   \[DeletedChatId \<String\>\]: The unique identifier of deletedChat
   \[DeletedTeamId \<String\>\]: The unique identifier of deletedTeam
   \[GroupId \<String\>\]: The unique identifier of group
@@ -316,4 +315,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Get-MgChatMessageReply](/powershell/module/Microsoft.Graph.Teams/Get-MgChatMessageReply?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatmessagereply](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatmessagereply)
+
 

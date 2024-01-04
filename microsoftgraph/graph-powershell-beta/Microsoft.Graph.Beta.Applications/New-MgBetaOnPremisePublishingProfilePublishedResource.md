@@ -10,7 +10,6 @@ ms.prod: applications
 
 ## SYNOPSIS
 Create a new publishedResource object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -44,7 +43,9 @@ New-MgBetaOnPremisePublishingProfilePublishedResource -InputObject <IApplication
 
 ## DESCRIPTION
 Create a new publishedResource object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/publishedresource-post-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaOnPremisePublishingProfilePublishedResource Cmdlet
@@ -354,4 +355,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofilepublishedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofilepublishedresource)
+
 

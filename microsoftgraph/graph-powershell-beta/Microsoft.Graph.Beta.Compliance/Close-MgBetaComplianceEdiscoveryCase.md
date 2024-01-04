@@ -10,7 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Close an eDiscovery case.
 For details, see Close a case.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,6 @@ Close-MgBetaComplianceEdiscoveryCase -InputObject <IComplianceIdentity> [-PassTh
 ## DESCRIPTION
 Close an eDiscovery case.
 For details, see Close a case.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Close-MgBetaComplianceEdiscoveryCase Cmdlet
@@ -155,4 +153,5 @@ INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/close-mgbetacomplianceediscoverycase](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/close-mgbetacomplianceediscoverycase)
+
 

@@ -367,3 +367,4 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementtemplatemigratabletosetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementtemplatemigratabletosetting)
 
 
+

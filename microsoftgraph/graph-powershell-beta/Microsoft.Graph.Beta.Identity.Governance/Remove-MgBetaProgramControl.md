@@ -10,7 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 In the Microsoft Entra access reviews feature, delete a programControl object.
 This unlinks an access review from a program.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -53,7 +52,6 @@ Remove-MgBetaProgramControl -InputObject <IIdentityGovernanceIdentity> [-IfMatch
 ## DESCRIPTION
 In the Microsoft Entra access reviews feature, delete a programControl object.
 This unlinks an access review from a program.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaProgramControl Cmdlet
@@ -307,4 +305,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaprogramcontrol](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaprogramcontrol)
+
 

@@ -42,6 +42,9 @@ DNS records the customer adds to the DNS zone file of the domain before the doma
 Read-only, Nullable.
 Supports $expand.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/domain-list-serviceconfigurationrecords-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -318,4 +321,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 [Get-MgDomainServiceConfigurationRecord](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDomainServiceConfigurationRecord?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadomainserviceconfigurationrecord](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadomainserviceconfigurationrecord)
+
 

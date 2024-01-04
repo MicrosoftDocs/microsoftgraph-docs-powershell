@@ -10,7 +10,6 @@ ms.prod: planner
 
 ## SYNOPSIS
 Retrieve the properties and relationships of plannerAssignedToTaskBoardTaskFormat object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPlannerTaskAssignedToTaskBoardFormat](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerTaskAssignedToTaskBoardFormat?view=graph-powershell-1.0)
@@ -31,7 +30,9 @@ Get-MgBetaPlannerTaskAssignedToTaskBoardFormat -InputObject <IPlannerIdentity> [
 
 ## DESCRIPTION
 Retrieve the properties and relationships of plannerAssignedToTaskBoardTaskFormat object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerassignedtotaskboardtaskformat-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -138,4 +139,5 @@ INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
 [Get-MgPlannerTaskAssignedToTaskBoardFormat](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerTaskAssignedToTaskBoardFormat?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannertaskassignedtotaskboardformat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannertaskassignedtotaskboardformat)
+
 

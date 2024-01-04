@@ -10,7 +10,6 @@ ms.prod: cloud-communications
 
 ## SYNOPSIS
 Disable and delete the externalMeetingRegistration of an onlineMeeting.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,9 @@ Remove-MgBetaCommunicationOnlineMeetingRegistration -InputObject <ICloudCommunic
 
 ## DESCRIPTION
 Disable and delete the externalMeetingRegistration of an onlineMeeting.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalmeetingregistration-delete-permissions.md)]
 
 ## PARAMETERS
 
@@ -162,5 +163,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationonlinemeetingregistration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationonlinemeetingregistration)
+
 
 

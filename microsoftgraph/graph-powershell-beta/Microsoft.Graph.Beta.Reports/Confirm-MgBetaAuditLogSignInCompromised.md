@@ -13,7 +13,6 @@ Allow admins to mark an event in the Microsoft Entra sign-in logs as risky.
 Events marked as risky by an admin are immediately flagged as high risk in Microsoft Entra ID Protection, overriding previous risk states.
 Admins can confirm that events flagged as risky by Microsoft Entra ID Protection are in fact risky.
 For details about investigating Identity Protection risks, see How to investigate risk.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -35,7 +34,9 @@ Allow admins to mark an event in the Microsoft Entra sign-in logs as risky.
 Events marked as risky by an admin are immediately flagged as high risk in Microsoft Entra ID Protection, overriding previous risk states.
 Admins can confirm that events flagged as risky by Microsoft Entra ID Protection are in fact risky.
 For details about investigating Identity Protection risks, see How to investigate risk.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/signin-confirmcompromised-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Confirm-MgBetaAuditLogSignInCompromised Cmdlet
@@ -169,4 +170,5 @@ BODYPARAMETER \<IPathsKfhb9KAuditlogsSigninsMicrosoftGraphConfirmcompromisedPost
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/confirm-mgbetaauditlogsignincompromised](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/confirm-mgbetaauditlogsignincompromised)
+
 

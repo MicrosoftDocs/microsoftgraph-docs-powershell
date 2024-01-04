@@ -10,7 +10,7 @@ ms.prod: intune
 # Get-MgDeviceAppManagementMobileApp
 
 ## SYNOPSIS
-Read properties and relationships of the macOSMicrosoftEdgeApp object.
+Read properties and relationships of the mobileLobApp object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileApp?view=graph-powershell-beta)
@@ -37,7 +37,7 @@ Get-MgDeviceAppManagementMobileApp -InputObject <IDevicesCorporateManagementIden
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the macOSMicrosoftEdgeApp object.
+Read properties and relationships of the mobileLobApp object.
 
 ## PARAMETERS
 
@@ -279,5 +279,6 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
 [Get-MgBetaDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileApp?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileapp)
+
 
 

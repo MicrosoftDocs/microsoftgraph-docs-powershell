@@ -10,7 +10,6 @@ ms.prod: applications
 
 ## SYNOPSIS
 Adds a strong password to an application.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Add-MgApplicationPassword](/powershell/module/Microsoft.Graph.Applications/Add-MgApplicationPassword?view=graph-powershell-1.0)
@@ -45,7 +44,9 @@ Add-MgBetaApplicationPassword -InputObject <IApplicationsIdentity>
 
 ## DESCRIPTION
 Adds a strong password to an application.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-addpassword-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Add a password credential to an application with a six month expiry
@@ -316,4 +317,5 @@ Optional.
 [Add-MgApplicationPassword](/powershell/module/Microsoft.Graph.Applications/Add-MgApplicationPassword?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/add-mgbetaapplicationpassword](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/add-mgbetaapplicationpassword)
+
 

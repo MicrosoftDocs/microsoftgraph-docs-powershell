@@ -35,6 +35,9 @@ Get-MgUserUsedInsight -InputObject <IPeopleIdentity> [-ExpandProperty <String[]>
 ## DESCRIPTION
 Calculated relationship identifying the latest documents viewed or modified by a user, including OneDrive for Business and SharePoint documents, ranked by recency of use.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/insights-list-used-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Return documents that user has modified
 
@@ -285,4 +288,5 @@ INPUTOBJECT \<IPeopleIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mguserusedinsight](https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mguserusedinsight)
+
 

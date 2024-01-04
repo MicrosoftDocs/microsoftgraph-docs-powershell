@@ -10,7 +10,6 @@ ms.prod: bookings
 
 ## SYNOPSIS
 Create a new bookingAppointment for the specified bookingBusiness.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaBookingBusinessAppointment?view=graph-powershell-beta)
@@ -57,7 +56,9 @@ New-MgBookingBusinessAppointment -InputObject <IBookingsIdentity>
 
 ## DESCRIPTION
 Create a new bookingAppointment for the specified bookingBusiness.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-post-appointments-permissions.md)]
 
 ## PARAMETERS
 
@@ -611,6 +612,7 @@ ENDDATETIME \<IMicrosoftGraphDateTimeZone\>: dateTimeTimeZone
 See below for more possible values.
 
 INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
+  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
   \[BookingAppointmentId \<String\>\]: The unique identifier of bookingAppointment
   \[BookingBusinessId \<String\>\]: The unique identifier of bookingBusiness
   \[BookingCurrencyId \<String\>\]: The unique identifier of bookingCurrency
@@ -618,6 +620,13 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[BookingCustomerBaseId \<String\>\]: The unique identifier of bookingCustomerBase
   \[BookingServiceId \<String\>\]: The unique identifier of bookingService
   \[BookingStaffMemberBaseId \<String\>\]: The unique identifier of bookingStaffMemberBase
+  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
+  \[Role \<String\>\]: Usage: role='{role}'
+  \[UserId \<String\>\]: Usage: userId='{userId}'
+  \[VirtualEventId \<String\>\]: The unique identifier of virtualEvent
+  \[VirtualEventRegistrationId \<String\>\]: The unique identifier of virtualEventRegistration
+  \[VirtualEventSessionId \<String\>\]: The unique identifier of virtualEventSession
+  \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
 REMINDERS \<IMicrosoftGraphBookingReminder\[\]\>: The collection of customer reminders sent for this appointment.
 The value of this property is available only when reading this bookingAppointment by its ID.
@@ -661,5 +670,6 @@ See below for more possible values.
 [New-MgBetaBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaBookingBusinessAppointment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessappointment](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessappointment)
+
 
 

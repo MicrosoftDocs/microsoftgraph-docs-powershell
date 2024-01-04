@@ -457,3 +457,4 @@ VIEWPOINT \<IMicrosoftGraphServiceUpdateMessageViewpoint\>: serviceUpdateMessage
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/new-mgserviceannouncementmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/new-mgserviceannouncementmessage)
 
+

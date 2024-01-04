@@ -11,7 +11,6 @@ ms.prod: onenote
 ## SYNOPSIS
 Copy a page to a specific section.
 For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Copy-MgSiteOnenoteNotebookSectionGroupSectionPageToSection](/powershell/module/Microsoft.Graph.Sites/Copy-MgSiteOnenoteNotebookSectionGroupSectionPageToSection?view=graph-powershell-1.0)
@@ -51,7 +50,9 @@ Copy-MgBetaSiteOnenoteNotebookSectionGroupSectionPageToSection -InputObject <ISi
 ## DESCRIPTION
 Copy a page to a specific section.
 For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/page-copytosection-permissions.md)]
 
 ## PARAMETERS
 
@@ -357,5 +358,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Copy-MgSiteOnenoteNotebookSectionGroupSectionPageToSection](/powershell/module/Microsoft.Graph.Sites/Copy-MgSiteOnenoteNotebookSectionGroupSectionPageToSection?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetasiteonenotenotebooksectiongroupsectionpagetosection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetasiteonenotenotebooksectiongroupsectionpagetosection)
+
 
 

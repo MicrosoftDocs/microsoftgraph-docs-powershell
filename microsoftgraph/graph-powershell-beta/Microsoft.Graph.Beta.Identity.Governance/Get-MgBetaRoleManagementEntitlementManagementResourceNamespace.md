@@ -11,7 +11,6 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Read the properties and relationships of an unifiedRbacResourceNamespace object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEntitlementManagementResourceNamespace](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementResourceNamespace?view=graph-powershell-1.0)
@@ -39,7 +38,12 @@ Get-MgBetaRoleManagementEntitlementManagementResourceNamespace -InputObject <IId
 
 ## DESCRIPTION
 Read the properties and relationships of an unifiedRbacResourceNamespace object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedrbacresourcenamespace-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rbacapplicationmultiple-list-resourcenamespaces-permissions.md)]
 
 ## PARAMETERS
 
@@ -345,5 +349,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [Get-MgRoleManagementEntitlementManagementResourceNamespace](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementResourceNamespace?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententitlementmanagementresourcenamespace](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententitlementmanagementresourcenamespace)
+
 
 

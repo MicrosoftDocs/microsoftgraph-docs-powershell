@@ -11,7 +11,6 @@ ms.prod: cloud-pc
 ## SYNOPSIS
 Get inaccessible Cloud PCs with details, including the latest health state, failed connection count, failed health check count, and system status.
 An inaccessible Cloud PC represents a Cloud PC that is in an unavailable state (at least one of the health checks failed) or has consecutive user connections failure.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -33,7 +32,9 @@ Get-MgBetaDeviceManagementVirtualEndpointReportInaccessibleCloudPcReport -OutFil
 ## DESCRIPTION
 Get inaccessible Cloud PCs with details, including the latest health state, failed connection count, failed health check count, and system status.
 An inaccessible Cloud PC represents a Cloud PC that is in an unavailable state (at least one of the health checks failed) or has consecutive user connections failure.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-getinaccessiblecloudpcreports-permissions.md)]
 
 ## PARAMETERS
 
@@ -262,5 +263,6 @@ BODYPARAMETER \<IPaths1Cf3EkeDevicemanagementVirtualendpointReportsMicrosoftGrap
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportinaccessiblecloudpcreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportinaccessiblecloudpcreport)
+
 
 

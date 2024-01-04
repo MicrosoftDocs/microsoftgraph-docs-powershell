@@ -9,7 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 In Microsoft Entra Entitlement Management, cancel accessPackageAssignmentRequest objects that are in a cancelable state: accepted, pendingApproval, pendingNotBefore, pendingApprovalEscalated.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -27,7 +26,6 @@ Stop-MgBetaEntitlementManagementAccessPackageAssignmentRequest -InputObject <IId
 
 ## DESCRIPTION
 In Microsoft Entra Entitlement Management, cancel accessPackageAssignmentRequest objects that are in a cancelable state: accepted, pendingApproval, pendingNotBefore, pendingApprovalEscalated.
-This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -227,5 +225,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetaentitlementmanagementaccesspackageassignmentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetaentitlementmanagementaccesspackageassignmentrequest)
+
 
 

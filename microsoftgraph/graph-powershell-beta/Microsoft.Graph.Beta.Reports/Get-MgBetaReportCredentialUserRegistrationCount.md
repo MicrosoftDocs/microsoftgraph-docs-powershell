@@ -9,7 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Report the current state of how many users in your organization are registered for self-service password reset and multifactor authentication (MFA) capabilities.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -20,7 +19,6 @@ Get-MgBetaReportCredentialUserRegistrationCount [-Count] [-Filter <String>] [-Pr
 
 ## DESCRIPTION
 Report the current state of how many users in your organization are registered for self-service password reset and multifactor authentication (MFA) capabilities.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaReportCredentialUserRegistrationCount Cmdlet
@@ -151,4 +149,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportcredentialuserregistrationcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportcredentialuserregistrationcount)
+
 

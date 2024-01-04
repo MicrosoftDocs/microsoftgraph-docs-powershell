@@ -10,7 +10,6 @@ ms.prod: security
 
 ## SYNOPSIS
 Update multiple alerts in one request instead of multiple requests.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -29,7 +28,9 @@ Update-MgBetaSecurityAlertMultiple
 
 ## DESCRIPTION
 Update multiple alerts in one request instead of multiple requests.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/alert-updatealerts-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaSecurityAlertMultiple Cmdlet
@@ -583,4 +584,5 @@ Required
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalertmultiple](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalertmultiple)
+
 

@@ -12,7 +12,6 @@ ms.prod: outlook
 Decline invitation to the specified event in a user calendar.
 If the event allows proposals for new times, on declining the event, an invitee can choose to suggest an alternative time by including the proposedNewTime parameter.
 For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaDeclineUserEvent](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaDeclineUserEvent?view=graph-powershell-beta)
@@ -51,7 +50,9 @@ Invoke-MgDeclineUserEvent -InputObject <IUsersActionsIdentity>
 Decline invitation to the specified event in a user calendar.
 If the event allows proposals for new times, on declining the event, an invitee can choose to suggest an alternative time by including the proposedNewTime parameter.
 For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-decline-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgDeclineUserEvent Cmdlet
@@ -321,4 +322,5 @@ See below for more possible values.
 [Invoke-MgBetaDeclineUserEvent](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaDeclineUserEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgdeclineuserevent](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgdeclineuserevent)
+
 

@@ -12,7 +12,6 @@ ms.prod: cloud-pc
 Perform a bulk resize action to resize a group of cloudPCs that have successfully passed validation.
 If any devices can't be resized, those devices indicate 'resize failed'.
 The remaining devices are provisioned for the resize process.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -33,7 +32,9 @@ Invoke-MgBetaBulkDeviceManagementVirtualEndpointCloudPcResize
 Perform a bulk resize action to resize a group of cloudPCs that have successfully passed validation.
 If any devices can't be resized, those devices indicate 'resize failed'.
 The remaining devices are provisioned for the resize process.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-bulkresize-permissions.md)]
 
 ## PARAMETERS
 
@@ -152,5 +153,6 @@ BODYPARAMETER \<IPathsRwbgwyDevicemanagementVirtualendpointCloudpcsMicrosoftGrap
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetabulkdevicemanagementvirtualendpointcloudpcresize](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetabulkdevicemanagementvirtualendpointcloudpcresize)
+
 
 

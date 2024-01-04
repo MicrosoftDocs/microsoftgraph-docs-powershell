@@ -10,7 +10,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 Read the properties and relationships of an accessReviewPolicy object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -20,7 +19,9 @@ Get-MgBetaPolicyAccessReviewPolicy [-ExpandProperty <String[]>] [-Property <Stri
 
 ## DESCRIPTION
 Read the properties and relationships of an accessReviewPolicy object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewpolicy-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaPolicyAccessReviewPolicy Cmdlet
@@ -76,4 +77,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyaccessreviewpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyaccessreviewpolicy)
+
 

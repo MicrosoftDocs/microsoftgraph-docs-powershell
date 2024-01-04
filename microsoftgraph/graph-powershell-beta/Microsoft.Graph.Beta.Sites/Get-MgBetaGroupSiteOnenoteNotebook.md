@@ -11,7 +11,6 @@ ms.prod: onenote
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a notebook object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteOnenoteNotebook](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteOnenoteNotebook?view=graph-powershell-1.0)
@@ -39,7 +38,12 @@ Get-MgBetaGroupSiteOnenoteNotebook -InputObject <ISitesIdentity> [-ExpandPropert
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a notebook object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/notebook-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onenote-list-notebooks-permissions.md)]
 
 ## PARAMETERS
 
@@ -324,5 +328,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgGroupSiteOnenoteNotebook](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteOnenoteNotebook?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteonenotenotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteonenotenotebook)
+
 
 

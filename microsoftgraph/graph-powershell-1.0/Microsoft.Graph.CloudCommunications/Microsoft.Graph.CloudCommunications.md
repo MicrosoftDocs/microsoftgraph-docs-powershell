@@ -86,6 +86,15 @@ Locale: en-US
 ### [Get-MgCommunicationOnlineMeetingCount](Get-MgCommunicationOnlineMeetingCount.md)
 {{ Fill in the Description }}
 
+### [Get-MgCommunicationOnlineMeetingRecording](Get-MgCommunicationOnlineMeetingRecording.md)
+{{ Fill in the Description }}
+
+### [Get-MgCommunicationOnlineMeetingRecordingContent](Get-MgCommunicationOnlineMeetingRecordingContent.md)
+{{ Fill in the Description }}
+
+### [Get-MgCommunicationOnlineMeetingRecordingCount](Get-MgCommunicationOnlineMeetingRecordingCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgCommunicationOnlineMeetingTranscript](Get-MgCommunicationOnlineMeetingTranscript.md)
 {{ Fill in the Description }}
 
@@ -129,6 +138,15 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgUserOnlineMeetingCount](Get-MgUserOnlineMeetingCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgUserOnlineMeetingRecording](Get-MgUserOnlineMeetingRecording.md)
+{{ Fill in the Description }}
+
+### [Get-MgUserOnlineMeetingRecordingContent](Get-MgUserOnlineMeetingRecordingContent.md)
+{{ Fill in the Description }}
+
+### [Get-MgUserOnlineMeetingRecordingCount](Get-MgUserOnlineMeetingRecordingCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgUserOnlineMeetingTranscript](Get-MgUserOnlineMeetingTranscript.md)
@@ -215,6 +233,9 @@ Locale: en-US
 ### [New-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord](New-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord.md)
 {{ Fill in the Description }}
 
+### [New-MgCommunicationOnlineMeetingRecording](New-MgCommunicationOnlineMeetingRecording.md)
+{{ Fill in the Description }}
+
 ### [New-MgCommunicationOnlineMeetingTranscript](New-MgCommunicationOnlineMeetingTranscript.md)
 {{ Fill in the Description }}
 
@@ -228,6 +249,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [New-MgUserOnlineMeetingAttendanceReportAttendanceRecord](New-MgUserOnlineMeetingAttendanceReportAttendanceRecord.md)
+{{ Fill in the Description }}
+
+### [New-MgUserOnlineMeetingRecording](New-MgUserOnlineMeetingRecording.md)
 {{ Fill in the Description }}
 
 ### [New-MgUserOnlineMeetingTranscript](New-MgUserOnlineMeetingTranscript.md)
@@ -260,6 +284,9 @@ Locale: en-US
 ### [Remove-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord](Remove-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord.md)
 {{ Fill in the Description }}
 
+### [Remove-MgCommunicationOnlineMeetingRecording](Remove-MgCommunicationOnlineMeetingRecording.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgCommunicationOnlineMeetingTranscript](Remove-MgCommunicationOnlineMeetingTranscript.md)
 {{ Fill in the Description }}
 
@@ -275,6 +302,9 @@ Locale: en-US
 ### [Remove-MgUserOnlineMeetingAttendanceReportAttendanceRecord](Remove-MgUserOnlineMeetingAttendanceReportAttendanceRecord.md)
 {{ Fill in the Description }}
 
+### [Remove-MgUserOnlineMeetingRecording](Remove-MgUserOnlineMeetingRecording.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgUserOnlineMeetingTranscript](Remove-MgUserOnlineMeetingTranscript.md)
 {{ Fill in the Description }}
 
@@ -285,6 +315,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Set-MgCommunicationOnlineMeetingAttendeeReport](Set-MgCommunicationOnlineMeetingAttendeeReport.md)
+{{ Fill in the Description }}
+
+### [Set-MgCommunicationOnlineMeetingRecordingContent](Set-MgCommunicationOnlineMeetingRecordingContent.md)
 {{ Fill in the Description }}
 
 ### [Set-MgCommunicationOnlineMeetingTranscriptContent](Set-MgCommunicationOnlineMeetingTranscriptContent.md)
@@ -303,6 +336,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Set-MgUserOnlineMeetingAttendeeReport](Set-MgUserOnlineMeetingAttendeeReport.md)
+{{ Fill in the Description }}
+
+### [Set-MgUserOnlineMeetingRecordingContent](Set-MgUserOnlineMeetingRecordingContent.md)
 {{ Fill in the Description }}
 
 ### [Set-MgUserOnlineMeetingTranscriptContent](Set-MgUserOnlineMeetingTranscriptContent.md)
@@ -347,6 +383,9 @@ Locale: en-US
 ### [Update-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord](Update-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord.md)
 {{ Fill in the Description }}
 
+### [Update-MgCommunicationOnlineMeetingRecording](Update-MgCommunicationOnlineMeetingRecording.md)
+{{ Fill in the Description }}
+
 ### [Update-MgCommunicationOnlineMeetingTranscript](Update-MgCommunicationOnlineMeetingTranscript.md)
 {{ Fill in the Description }}
 
@@ -362,9 +401,13 @@ Locale: en-US
 ### [Update-MgUserOnlineMeetingAttendanceReportAttendanceRecord](Update-MgUserOnlineMeetingAttendanceReportAttendanceRecord.md)
 {{ Fill in the Description }}
 
+### [Update-MgUserOnlineMeetingRecording](Update-MgUserOnlineMeetingRecording.md)
+{{ Fill in the Description }}
+
 ### [Update-MgUserOnlineMeetingTranscript](Update-MgUserOnlineMeetingTranscript.md)
 {{ Fill in the Description }}
 
 ### [Update-MgUserPresence](Update-MgUserPresence.md)
 {{ Fill in the Description }}
+
 

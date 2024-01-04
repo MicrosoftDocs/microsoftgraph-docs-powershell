@@ -10,7 +10,6 @@ ms.prod: planner
 
 ## SYNOPSIS
 Use this API to create a new plannerPlan.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/New-MgBetaPlannerPlan?view=graph-powershell-beta)
@@ -32,7 +31,9 @@ New-MgPlannerPlan -BodyParameter <IMicrosoftGraphPlannerPlan> [-WhatIf] [-Confir
 
 ## DESCRIPTION
 Use this API to create a new plannerPlan.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/planner-post-plans-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -679,4 +680,5 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 [New-MgBetaPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/New-MgBetaPlannerPlan?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannerplan](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannerplan)
+
 

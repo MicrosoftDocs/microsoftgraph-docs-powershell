@@ -11,7 +11,6 @@ ms.prod: files
 ## SYNOPSIS
 Restore a driveItem that has been deleted and is currently in the recycle bin.
 NOTE: This functionality is currently only available for OneDrive Personal.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Restore-MgBetaUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Restore-MgBetaUserDriveItem?view=graph-powershell-beta)
@@ -48,7 +47,9 @@ Restore-MgUserDriveItem -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Restore a driveItem that has been deleted and is currently in the recycle bin.
 NOTE: This functionality is currently only available for OneDrive Personal.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-restore-permissions.md)]
 
 ## PARAMETERS
 
@@ -318,5 +319,6 @@ For OneDrive, this property is not populated.
 [Restore-MgBetaUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Restore-MgBetaUserDriveItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/restore-mguserdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/restore-mguserdriveitem)
+
 
 

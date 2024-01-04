@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Update the properties of a linkedResource object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgUserTodoListTaskLinkedResource](/powershell/module/Microsoft.Graph.Users/Update-MgUserTodoListTaskLinkedResource?view=graph-powershell-1.0)
@@ -47,7 +46,9 @@ Update-MgBetaUserTodoListTaskLinkedResource -InputObject <IUsersIdentity>
 
 ## DESCRIPTION
 Update the properties of a linkedResource object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/linkedresource-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -339,4 +340,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Update-MgUserTodoListTaskLinkedResource](/powershell/module/Microsoft.Graph.Users/Update-MgUserTodoListTaskLinkedResource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolisttasklinkedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolisttasklinkedresource)
+
 

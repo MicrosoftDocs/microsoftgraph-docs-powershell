@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Update the properties of a message object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgUserMessage](/powershell/module/Microsoft.Graph.Mail/Update-MgUserMessage?view=graph-powershell-1.0)
@@ -75,7 +74,9 @@ Update-MgBetaUserMessage -InputObject <IMailIdentity> -BodyParameter <IMicrosoft
 
 ## DESCRIPTION
 Update the properties of a message object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -1091,4 +1092,5 @@ UNIQUEBODY \<IMicrosoftGraphItemBody\>: itemBody
 [Update-MgUserMessage](/powershell/module/Microsoft.Graph.Mail/Update-MgUserMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetausermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetausermessage)
+
 

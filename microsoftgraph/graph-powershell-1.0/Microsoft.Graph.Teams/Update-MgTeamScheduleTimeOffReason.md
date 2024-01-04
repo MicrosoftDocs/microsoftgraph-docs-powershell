@@ -47,6 +47,9 @@ Update-MgTeamScheduleTimeOffReason -InputObject <ITeamsIdentity> -BodyParameter 
 Replace an existing timeOffReason.
 If the specified timeOffReason doesn't exist, this method returns 404 Not found.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/timeoffreason-put-permissions.md)]
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -321,5 +324,6 @@ For example, if a user changes their display name, the API might show the new va
 [Update-MgBetaTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamScheduleTimeOffReason?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamscheduletimeoffreason](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamscheduletimeoffreason)
+
 
 

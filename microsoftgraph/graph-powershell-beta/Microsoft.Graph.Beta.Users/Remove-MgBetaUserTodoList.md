@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Deletes a todoTaskList object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgUserTodoList](/powershell/module/Microsoft.Graph.Users/Remove-MgUserTodoList?view=graph-powershell-1.0)
@@ -31,7 +30,9 @@ Remove-MgBetaUserTodoList -InputObject <IUsersIdentity> [-IfMatch <String>] [-Pa
 
 ## DESCRIPTION
 Deletes a todoTaskList object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/todotasklist-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -199,4 +200,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Remove-MgUserTodoList](/powershell/module/Microsoft.Graph.Users/Remove-MgUserTodoList?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausertodolist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausertodolist)
+
 

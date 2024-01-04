@@ -9,8 +9,7 @@ ms.prod: sharepoint
 # Remove-MgGroupDriveListItem
 
 ## SYNOPSIS
-Removes an item from a list\]\[\].
-This API is available in the following \[national cloud deployments.
+Removes an item from a \[list\]\[\].
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveListItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveListItem?view=graph-powershell-beta)
@@ -30,8 +29,10 @@ Remove-MgGroupDriveListItem -InputObject <IFilesIdentity> [-IfMatch <String>] [-
 ```
 
 ## DESCRIPTION
-Removes an item from a list\]\[\].
-This API is available in the following \[national cloud deployments.
+Removes an item from a \[list\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-delete-permissions.md)]
 
 ## PARAMETERS
 
@@ -202,5 +203,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Remove-MgBetaGroupDriveListItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveListItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdrivelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdrivelistitem)
+
 
 

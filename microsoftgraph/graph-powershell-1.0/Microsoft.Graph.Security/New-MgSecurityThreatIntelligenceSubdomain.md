@@ -717,3 +717,4 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencesubdomain](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencesubdomain)
 
 
+

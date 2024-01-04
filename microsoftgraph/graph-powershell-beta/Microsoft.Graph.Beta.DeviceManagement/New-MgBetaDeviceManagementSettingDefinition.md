@@ -319,3 +319,4 @@ DEPENDENCIES \<IMicrosoftGraphDeviceManagementSettingDependency\[\]\>: Collectio
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementsettingdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementsettingdefinition)
 
 
+

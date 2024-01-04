@@ -213,3 +213,4 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectorytransitiveroleassignmentappscope](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectorytransitiveroleassignmentappscope)
 
 
+

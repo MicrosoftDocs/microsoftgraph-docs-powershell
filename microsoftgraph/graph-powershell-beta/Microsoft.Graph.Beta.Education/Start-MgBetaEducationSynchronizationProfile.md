@@ -14,7 +14,6 @@ If the verification is successful, synchronization starts on the profile.
 Otherwise, the response contains errors and warnings.
 If the response contains errors, the synchronization won't start.
 If the response contains only warnings, synchronization starts.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -36,7 +35,9 @@ If the verification is successful, synchronization starts on the profile.
 Otherwise, the response contains errors and warnings.
 If the response contains errors, the synchronization won't start.
 If the response contains only warnings, synchronization starts.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsynchronizationprofile-start-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Start-MgBetaEducationSynchronizationProfile Cmdlet
@@ -148,4 +149,5 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/start-mgbetaeducationsynchronizationprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/start-mgbetaeducationsynchronizationprofile)
+
 

@@ -41,6 +41,9 @@ New-MgBetaAdministrativeUnitMember -InputObject <IIdentityDirectoryManagementIde
 ## DESCRIPTION
 Create new navigation property to members for administrativeUnits
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/administrativeunit-post-members-permissions.md)]
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -239,5 +242,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadministrativeunitmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadministrativeunitmember)
+
 
 

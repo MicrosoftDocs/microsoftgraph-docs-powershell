@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete a unifiedRoleDefinition object for an RBAC provider.
 You cannot delete built-in roles.
 This feature requires a Microsoft Entra ID P1 or P2 license.
-The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- directory (Microsoft Entra ID)  This API is available in the following national cloud deployments.
+The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- directory (Microsoft Entra ID)
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgRoleManagementDirectoryRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgRoleManagementDirectoryRoleDefinition?view=graph-powershell-1.0)
@@ -34,7 +34,7 @@ Remove-MgBetaRoleManagementDirectoryRoleDefinition -InputObject <IIdentityGovern
 Delete a unifiedRoleDefinition object for an RBAC provider.
 You cannot delete built-in roles.
 This feature requires a Microsoft Entra ID P1 or P2 license.
-The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- directory (Microsoft Entra ID)  This API is available in the following national cloud deployments.
+The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- directory (Microsoft Entra ID)
 
 ## PARAMETERS
 
@@ -250,5 +250,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [Remove-MgRoleManagementDirectoryRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgRoleManagementDirectoryRoleDefinition?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetarolemanagementdirectoryroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetarolemanagementdirectoryroledefinition)
+
 
 

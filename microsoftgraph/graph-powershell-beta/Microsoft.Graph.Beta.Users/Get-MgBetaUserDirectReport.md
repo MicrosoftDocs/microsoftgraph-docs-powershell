@@ -10,7 +10,7 @@ ms.prod: users
 
 ## SYNOPSIS
 The users and contacts that report to the user.
-(The users and contacts that have their manager property set to this user.) Read-only.
+(The users and contacts with their manager property set to this user.) Read-only.
 Nullable.
 Supports $expand.
 
@@ -40,9 +40,12 @@ Get-MgBetaUserDirectReport -InputObject <IUsersIdentity> [-ExpandProperty <Strin
 
 ## DESCRIPTION
 The users and contacts that report to the user.
-(The users and contacts that have their manager property set to this user.) Read-only.
+(The users and contacts with their manager property set to this user.) Read-only.
 Nullable.
 Supports $expand.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-directreports-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get a user's direct reports
@@ -319,4 +322,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Get-MgUserDirectReport](/powershell/module/Microsoft.Graph.Users/Get-MgUserDirectReport?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserdirectreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserdirectreport)
+
 

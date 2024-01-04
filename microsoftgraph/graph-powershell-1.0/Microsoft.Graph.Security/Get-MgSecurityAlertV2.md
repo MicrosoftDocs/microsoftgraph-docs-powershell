@@ -11,7 +11,6 @@ ms.prod: security
 
 ## SYNOPSIS
 Get the properties and relationships of an alert in an organization based on the specified alert id property.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityAlertV2](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAlertV2?view=graph-powershell-beta)
@@ -39,7 +38,12 @@ Get-MgSecurityAlertV2 -InputObject <ISecurityIdentity> [-ExpandProperty <String[
 
 ## DESCRIPTION
 Get the properties and relationships of an alert in an organization based on the specified alert id property.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-alert-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-list-alerts_v2-permissions.md)]
 
 ## PARAMETERS
 
@@ -298,5 +302,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Get-MgBetaSecurityAlertV2](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAlertV2?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityalertv2](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityalertv2)
+
 
 

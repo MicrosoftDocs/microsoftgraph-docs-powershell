@@ -43,6 +43,9 @@ The sections in the section group.
 Read-only.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/sectiongroup-list-sections-permissions.md)]
+
 ## PARAMETERS
 
 ### -All
@@ -341,5 +344,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgGroupSiteOnenoteSectionGroupSection](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteOnenoteSectionGroupSection?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteonenotesectiongroupsection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteonenotesectiongroupsection)
+
 
 

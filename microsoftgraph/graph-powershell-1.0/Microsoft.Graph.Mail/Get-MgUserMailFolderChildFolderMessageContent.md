@@ -31,6 +31,9 @@ Get-MgUserMailFolderChildFolderMessageContent -InputObject <IMailIdentity> -OutF
 ## DESCRIPTION
 Get media content for the navigation property messages from users
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/mailfolder-list-messages-permissions.md)]
+
 ## EXAMPLES
 
 ## PARAMETERS
@@ -170,4 +173,5 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
 [Get-MgBetaUserMailFolderChildFolderMessageContent](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderChildFolderMessageContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolderchildfoldermessagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolderchildfoldermessagecontent)
+
 

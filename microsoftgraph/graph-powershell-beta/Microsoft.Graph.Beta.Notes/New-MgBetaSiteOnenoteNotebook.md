@@ -10,7 +10,6 @@ ms.prod: onenote
 
 ## SYNOPSIS
 Create a new OneNote notebook.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgSiteOnenoteNotebook](/powershell/module/Microsoft.Graph.Notes/New-MgSiteOnenoteNotebook?view=graph-powershell-1.0)
@@ -51,7 +50,9 @@ New-MgBetaSiteOnenoteNotebook -InputObject <INotesIdentity> -BodyParameter <IMic
 
 ## DESCRIPTION
 Create a new OneNote notebook.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onenote-post-notebooks-permissions.md)]
 
 ## EXAMPLES
 
@@ -778,4 +779,5 @@ Read-only.
 [New-MgSiteOnenoteNotebook](/powershell/module/Microsoft.Graph.Notes/New-MgSiteOnenoteNotebook?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetasiteonenotenotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetasiteonenotenotebook)
+
 

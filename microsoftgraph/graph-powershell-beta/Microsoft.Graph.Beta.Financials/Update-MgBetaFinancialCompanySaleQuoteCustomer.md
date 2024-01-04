@@ -705,3 +705,4 @@ SHIPMENTMETHOD \<IMicrosoftGraphShipmentMethod\>: shipmentMethod
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysalequotecustomer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysalequotecustomer)
 
 
+

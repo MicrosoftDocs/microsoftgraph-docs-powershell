@@ -45,6 +45,9 @@ Update-MgBetaPlannerTaskBucketTaskBoardFormat -InputObject <IPlannerIdentity> -I
 ## DESCRIPTION
 Update the navigation property bucketTaskBoardFormat in planner
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerbuckettaskboardtaskformat-update-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -241,4 +244,5 @@ INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
 [Update-MgPlannerTaskBucketTaskBoardFormat](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerTaskBucketTaskBoardFormat?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertaskbuckettaskboardformat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertaskbuckettaskboardformat)
+
 

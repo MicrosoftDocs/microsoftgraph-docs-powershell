@@ -10,7 +10,6 @@ ms.prod: cloud-pc
 
 ## SYNOPSIS
 Get the daily aggregated remote connection reports, such as round trip time, available bandwidth, and so on, in a given period.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -31,7 +30,9 @@ Get-MgBetaDeviceManagementVirtualEndpointReportDailyAggregatedRemoteConnectionRe
 
 ## DESCRIPTION
 Get the daily aggregated remote connection reports, such as round trip time, available bandwidth, and so on, in a given period.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-getdailyaggregatedremoteconnectionreports-permissions.md)]
 
 ## PARAMETERS
 
@@ -260,5 +261,6 @@ BODYPARAMETER \<IPaths11L0XtbDevicemanagementVirtualendpointReportsMicrosoftGrap
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportdailyaggregatedremoteconnectionreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportdailyaggregatedremoteconnectionreport)
+
 
 

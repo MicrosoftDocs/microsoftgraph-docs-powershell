@@ -215,3 +215,4 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryroledefinitioninheritpermissionfromcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryroledefinitioninheritpermissionfromcount)
 
 
+

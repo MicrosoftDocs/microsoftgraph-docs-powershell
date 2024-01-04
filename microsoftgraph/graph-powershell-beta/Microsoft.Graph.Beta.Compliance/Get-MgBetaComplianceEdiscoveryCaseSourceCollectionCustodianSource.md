@@ -35,6 +35,9 @@ Get-MgBetaComplianceEdiscoveryCaseSourceCollectionCustodianSource -InputObject <
 ## DESCRIPTION
 Custodian sources that are included in the sourceCollection.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-sourcecollection-list-custodiansources-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaComplianceEdiscoveryCaseSourceCollectionCustodianSource Cmdlet
 ```powershell
@@ -295,4 +298,5 @@ INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasesourcecollectioncustodiansource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasesourcecollectioncustodiansource)
+
 

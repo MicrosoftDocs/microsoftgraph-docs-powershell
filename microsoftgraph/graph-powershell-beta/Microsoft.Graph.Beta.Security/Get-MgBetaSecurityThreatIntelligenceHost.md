@@ -11,7 +11,7 @@ ms.prod: security
 ## SYNOPSIS
 Read the properties and relationships of a host object.
 The host resource is the abstract base type that returns an implementation.
-A host can be of one of the following types: This API is available in the following national cloud deployments.
+A host can be of one of the following types:
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHost?view=graph-powershell-1.0)
@@ -40,7 +40,10 @@ Get-MgBetaSecurityThreatIntelligenceHost -InputObject <ISecurityIdentity> [-Expa
 ## DESCRIPTION
 Read the properties and relationships of a host object.
 The host resource is the abstract base type that returns an implementation.
-A host can be of one of the following types: This API is available in the following national cloud deployments.
+A host can be of one of the following types:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-host-get-permissions.md)]
 
 ## PARAMETERS
 
@@ -246,6 +249,8 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[ArticleId \<String\>\]: The unique identifier of article
   \[ArticleIndicatorId \<String\>\]: The unique identifier of articleIndicator
   \[AttackSimulationOperationId \<String\>\]: The unique identifier of attackSimulationOperation
+  \[AuditLogQueryId \<String\>\]: The unique identifier of auditLogQuery
+  \[AuditLogRecordId \<String\>\]: The unique identifier of auditLogRecord
   \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
   \[AuthorityTemplateId \<String\>\]: The unique identifier of authorityTemplate
   \[CaseOperationId \<String\>\]: The unique identifier of caseOperation
@@ -323,5 +328,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Get-MgSecurityThreatIntelligenceHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHost?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehost](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehost)
+
 
 

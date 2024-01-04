@@ -10,7 +10,6 @@ ms.prod: education
 
 ## SYNOPSIS
 Retrieve the directory administrativeUnit that corresponds to this educationSchool.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgEducationSchoolAdministrativeUnit](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSchoolAdministrativeUnit?view=graph-powershell-1.0)
@@ -31,7 +30,6 @@ Get-MgBetaEducationSchoolAdministrativeUnit -InputObject <IEducationIdentity> [-
 
 ## DESCRIPTION
 Retrieve the directory administrativeUnit that corresponds to this educationSchool.
-This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -134,5 +132,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 [Get-MgEducationSchoolAdministrativeUnit](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSchoolAdministrativeUnit?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschooladministrativeunit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschooladministrativeunit)
+
 
 

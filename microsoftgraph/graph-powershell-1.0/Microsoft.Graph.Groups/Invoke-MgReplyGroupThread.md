@@ -9,9 +9,9 @@ ms.prod: groups
 # Invoke-MgReplyGroupThread
 
 ## SYNOPSIS
-Reply to a thread in a group conversation and add a new post to it.
-You can specify the parent conversation in the request, or, you can specify just the thread without the parent conversation.
-This API is available in the following national cloud deployments.
+Add an attachment when creating a group post.
+This operation limits the size of the attachment you can add to under 3 MB.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaReplyGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaReplyGroupThread?view=graph-powershell-beta)
@@ -45,9 +45,12 @@ Invoke-MgReplyGroupThread -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Reply to a thread in a group conversation and add a new post to it.
-You can specify the parent conversation in the request, or, you can specify just the thread without the parent conversation.
-This API is available in the following national cloud deployments.
+Add an attachment when creating a group post.
+This operation limits the size of the attachment you can add to under 3 MB.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/post-post-attachments-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgReplyGroupThread Cmdlet
@@ -468,4 +471,5 @@ Read-only.
 [Invoke-MgBetaReplyGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaReplyGroupThread?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreplygroupthread](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreplygroupthread)
+
 

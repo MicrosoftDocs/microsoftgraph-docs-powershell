@@ -40,6 +40,9 @@ Get-MgUserTransitiveMemberOf -InputObject <IUsersIdentity> [-ExpandProperty <Str
 The groups, including nested groups, and directory roles that a user is a member of.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-list-transitivememberof-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -302,4 +305,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Get-MgBetaUserTransitiveMemberOf](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTransitiveMemberOf?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertransitivememberof](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertransitivememberof)
+
 

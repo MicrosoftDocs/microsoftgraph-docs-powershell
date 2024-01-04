@@ -15,7 +15,6 @@ Include the Prefer: include-unknown-enum-members header when you call this metho
 This means that the reassigned status will be mapped to the returned status, and reassignedDateTime and reassignedBy properties will be mapped to returnedDateTime and returnedBy respectively.
 If the header Prefer: include-unknown-enum-members is provided, a reassigned submission retains the reassigned status.
 For details, see the examples section.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgReassignEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Invoke-MgReassignEducationMeAssignmentSubmission?view=graph-powershell-1.0)
@@ -41,7 +40,9 @@ Include the Prefer: include-unknown-enum-members header when you call this metho
 This means that the reassigned status will be mapped to the returned status, and reassignedDateTime and reassignedBy properties will be mapped to returnedDateTime and returnedBy respectively.
 If the header Prefer: include-unknown-enum-members is provided, a reassigned submission retains the reassigned status.
 For details, see the examples section.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsubmission-reassign-permissions.md)]
 
 ## EXAMPLES
 
@@ -162,4 +163,5 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 [Invoke-MgReassignEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Invoke-MgReassignEducationMeAssignmentSubmission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetareassigneducationmeassignmentsubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetareassigneducationmeassignmentsubmission)
+
 

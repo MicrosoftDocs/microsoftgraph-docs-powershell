@@ -42,6 +42,9 @@ The user's terms of use acceptance statuses.
 Read-only.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-agreementacceptances-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserAgreementAcceptance Cmdlet
 ```powershell
@@ -371,4 +374,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [Get-MgUserAgreementAcceptance](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgUserAgreementAcceptance?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetauseragreementacceptance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetauseragreementacceptance)
+
 

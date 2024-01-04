@@ -10,7 +10,6 @@ ms.prod: onenote
 
 ## SYNOPSIS
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Copy-MgBetaUserOnenoteSectionToNotebook](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Copy-MgBetaUserOnenoteSectionToNotebook?view=graph-powershell-beta)
@@ -47,7 +46,9 @@ Copy-MgUserOnenoteSectionToNotebook -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/section-copytonotebook-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Copy-MgUserOnenoteSectionToNotebook Cmdlet
@@ -308,4 +309,5 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 [Copy-MgBetaUserOnenoteSectionToNotebook](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Copy-MgBetaUserOnenoteSectionToNotebook?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mguseronenotesectiontonotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mguseronenotesectiontonotebook)
+
 

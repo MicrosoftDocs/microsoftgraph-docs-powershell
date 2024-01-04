@@ -11,7 +11,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 Read the properties and relationships of a customAccessPackageWorkflowExtension object for an accessPackageCatalog object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -39,7 +38,12 @@ Get-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowEx
 
 ## DESCRIPTION
 Read the properties and relationships of a customAccessPackageWorkflowExtension object for an accessPackageCatalog object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/customaccesspackageworkflowextension-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackagecatalog-list-customaccesspackageworkflowextensions-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension Cmdlet
@@ -375,4 +379,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackagecatalogcustomaccesspackageworkflowextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackagecatalogcustomaccesspackageworkflowextension)
+
 

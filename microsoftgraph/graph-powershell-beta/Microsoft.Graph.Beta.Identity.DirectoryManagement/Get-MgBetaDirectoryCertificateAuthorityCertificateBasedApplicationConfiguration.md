@@ -11,7 +11,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Read the properties and relationships of a certificateBasedApplicationConfiguration object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -38,7 +37,12 @@ Get-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration
 
 ## DESCRIPTION
 Read the properties and relationships of a certificateBasedApplicationConfiguration object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/certificatebasedapplicationconfiguration-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/certificateauthoritypath-list-certificatebasedapplicationconfigurations-permissions.md)]
 
 ## PARAMETERS
 
@@ -287,5 +291,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfiguration)
+
 
 

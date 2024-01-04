@@ -10,7 +10,7 @@ ms.prod: cloud-communications
 
 ## SYNOPSIS
 Play a prompt in the call.
-For more information about how to handle operations, see commsOperation This API is available in the following national cloud deployments.
+For more information about how to handle operations, see commsOperation
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaPlayCommunicationCallPrompt](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaPlayCommunicationCallPrompt?view=graph-powershell-beta)
@@ -46,7 +46,10 @@ Invoke-MgPlayCommunicationCallPrompt -InputObject <ICloudCommunicationsIdentity>
 
 ## DESCRIPTION
 Play a prompt in the call.
-For more information about how to handle operations, see commsOperation This API is available in the following national cloud deployments.
+For more information about how to handle operations, see commsOperation
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-playprompt-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -226,6 +229,7 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[AudioRoutingGroupId \<String\>\]: The unique identifier of audioRoutingGroup
   \[CallId \<String\>\]: The unique identifier of call
   \[CallRecordId \<String\>\]: The unique identifier of callRecord
+  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
   \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
   \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
   \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession
@@ -240,4 +244,5 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
 [Invoke-MgBetaPlayCommunicationCallPrompt](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaPlayCommunicationCallPrompt?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgplaycommunicationcallprompt](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgplaycommunicationcallprompt)
+
 

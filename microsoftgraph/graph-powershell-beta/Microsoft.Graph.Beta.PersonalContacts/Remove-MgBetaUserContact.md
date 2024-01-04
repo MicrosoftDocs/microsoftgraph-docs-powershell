@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Delete contact.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgUserContact](/powershell/module/Microsoft.Graph.PersonalContacts/Remove-MgUserContact?view=graph-powershell-1.0)
@@ -31,7 +30,9 @@ Remove-MgBetaUserContact -InputObject <IPersonalContactsIdentity> [-IfMatch <Str
 
 ## DESCRIPTION
 Delete contact.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contact-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -182,4 +183,5 @@ INPUTOBJECT \<IPersonalContactsIdentity\>: Identity Parameter
 [Remove-MgUserContact](/powershell/module/Microsoft.Graph.PersonalContacts/Remove-MgUserContact?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/remove-mgbetausercontact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/remove-mgbetausercontact)
+
 

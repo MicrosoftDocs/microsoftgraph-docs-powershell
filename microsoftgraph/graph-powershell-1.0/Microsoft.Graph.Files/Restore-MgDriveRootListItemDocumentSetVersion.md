@@ -10,7 +10,6 @@ ms.prod: sites-and-lists
 
 ## SYNOPSIS
 Restore a document set version.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Restore-MgBetaDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Files/Restore-MgBetaDriveRootListItemDocumentSetVersion?view=graph-powershell-beta)
@@ -31,7 +30,9 @@ Restore-MgDriveRootListItemDocumentSetVersion -InputObject <IFilesIdentity> [-Pa
 
 ## DESCRIPTION
 Restore a document set version.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/documentsetversion-restore-permissions.md)]
 
 ## PARAMETERS
 
@@ -172,5 +173,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Restore-MgBetaDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Files/Restore-MgBetaDriveRootListItemDocumentSetVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mgdriverootlistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mgdriverootlistitemdocumentsetversion)
+
 
 

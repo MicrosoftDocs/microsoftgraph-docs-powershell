@@ -10,12 +10,11 @@ ms.prod: microsoft-teams
 
 ## SYNOPSIS
 Update a chatMessage object.
-\nWith the exception of the policyViolation property, all properties of a chatMessage can be updated in delegated permissions scenarios.\nOnly the policyViolation property of a chatMessage can be updated in application permissions scenarios.
+With the exception of the policyViolation property, all properties of a chatMessage can be updated in delegated permissions scenarios.Only the policyViolation property of a chatMessage can be updated in application permissions scenarios.
 The update only works for chats where members are Microsoft Teams users.
 If one of the participants is using Skype, the operation will fail.
 This method does not support federation.
 Only the user in the tenant who sent the message can perform data loss prevention (DLP) updates on the specified chat message.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamChannelMessage?view=graph-powershell-beta)
@@ -66,12 +65,11 @@ Update-MgGroupTeamChannelMessage -InputObject <ITeamsIdentity> -BodyParameter <I
 
 ## DESCRIPTION
 Update a chatMessage object.
-\nWith the exception of the policyViolation property, all properties of a chatMessage can be updated in delegated permissions scenarios.\nOnly the policyViolation property of a chatMessage can be updated in application permissions scenarios.
+With the exception of the policyViolation property, all properties of a chatMessage can be updated in delegated permissions scenarios.Only the policyViolation property of a chatMessage can be updated in application permissions scenarios.
 The update only works for chats where members are Microsoft Teams users.
 If one of the participants is using Skype, the operation will fail.
 This method does not support federation.
 Only the user in the tenant who sent the message can perform data loss prevention (DLP) updates on the specified chat message.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
@@ -1009,4 +1007,5 @@ Link to the message in Microsoft Teams.
 [Update-MgBetaGroupTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamChannelMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamchannelmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamchannelmessage)
+
 

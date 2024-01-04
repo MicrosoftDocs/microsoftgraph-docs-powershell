@@ -44,6 +44,9 @@ Read-only, Nullable.
 Supports $expand and $filter by the OData type of objects returned.
 For example /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/domain-list-domainnamereferences-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -301,4 +304,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 [Get-MgBetaDomainNameReference](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDomainNameReference?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainnamereference](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainnamereference)
+
 

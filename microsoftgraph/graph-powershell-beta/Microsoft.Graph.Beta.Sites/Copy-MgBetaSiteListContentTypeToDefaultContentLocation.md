@@ -9,9 +9,8 @@ ms.prod: sites-and-lists
 # Copy-MgBetaSiteListContentTypeToDefaultContentLocation
 
 ## SYNOPSIS
-Copy a file to a default content location in a content type\]\[contentType\].
+Copy a file to a default content location in a \[content type\]\[contentType\].
 The file can then be added as a default file or template via a POST operation.
-This API is available in the following \[national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Copy-MgSiteListContentTypeToDefaultContentLocation](/powershell/module/Microsoft.Graph.Sites/Copy-MgSiteListContentTypeToDefaultContentLocation?view=graph-powershell-1.0)
@@ -48,9 +47,11 @@ Copy-MgBetaSiteListContentTypeToDefaultContentLocation -InputObject <ISitesIdent
 ```
 
 ## DESCRIPTION
-Copy a file to a default content location in a content type\]\[contentType\].
+Copy a file to a default content location in a \[content type\]\[contentType\].
 The file can then be added as a default file or template via a POST operation.
-This API is available in the following \[national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-copytodefaultcontentlocation-permissions.md)]
 
 ## EXAMPLES
 
@@ -356,4 +357,5 @@ For OneDrive, this property is not populated.
 [Copy-MgSiteListContentTypeToDefaultContentLocation](/powershell/module/Microsoft.Graph.Sites/Copy-MgSiteListContentTypeToDefaultContentLocation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetasitelistcontenttypetodefaultcontentlocation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetasitelistcontenttypetodefaultcontentlocation)
+
 

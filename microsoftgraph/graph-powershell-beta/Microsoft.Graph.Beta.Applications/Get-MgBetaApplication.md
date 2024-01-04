@@ -11,7 +11,6 @@ ms.prod: applications
 
 ## SYNOPSIS
 Get the properties and relationships of an application object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgApplication](/powershell/module/Microsoft.Graph.Applications/Get-MgApplication?view=graph-powershell-1.0)
@@ -39,7 +38,9 @@ Get-MgBetaApplication -InputObject <IApplicationsIdentity> [-ExpandProperty <Str
 
 ## DESCRIPTION
 Get the properties and relationships of an application object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get a list of applications
@@ -390,4 +391,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Get-MgApplication](/powershell/module/Microsoft.Graph.Applications/Get-MgApplication?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplication)
+
 

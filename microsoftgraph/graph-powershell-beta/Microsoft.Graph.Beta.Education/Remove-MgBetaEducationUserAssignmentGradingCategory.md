@@ -30,6 +30,9 @@ Remove-MgBetaEducationUserAssignmentGradingCategory -InputObject <IEducationIden
 Remove a gradingCategory from an educationAssignment.
 Only teachers can perform this operation.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-delete-gradingcategory-permissions.md)]
+
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -176,5 +179,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationuserassignmentgradingcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationuserassignmentgradingcategory)
+
 
 

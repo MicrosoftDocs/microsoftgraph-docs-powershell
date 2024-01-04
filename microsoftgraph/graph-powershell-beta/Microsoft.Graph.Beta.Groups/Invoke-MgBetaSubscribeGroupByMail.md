@@ -11,7 +11,6 @@ ms.prod: groups
 ## SYNOPSIS
 Calling this method will enable the current user to receive email notifications for this group, about new posts, events, and files in that group.
 Supported for Microsoft 365 groups only.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgSubscribeGroupByMail](/powershell/module/Microsoft.Graph.Groups/Invoke-MgSubscribeGroupByMail?view=graph-powershell-1.0)
@@ -32,7 +31,9 @@ Invoke-MgBetaSubscribeGroupByMail -InputObject <IGroupsIdentity> [-PassThru] [-W
 ## DESCRIPTION
 Calling this method will enable the current user to receive email notifications for this group, about new posts, events, and files in that group.
 Supported for Microsoft 365 groups only.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-subscribebymail-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgBetaSubscribeGroupByMail Cmdlet
@@ -184,4 +185,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Invoke-MgSubscribeGroupByMail](/powershell/module/Microsoft.Graph.Groups/Invoke-MgSubscribeGroupByMail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetasubscribegroupbymail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetasubscribegroupbymail)
+
 

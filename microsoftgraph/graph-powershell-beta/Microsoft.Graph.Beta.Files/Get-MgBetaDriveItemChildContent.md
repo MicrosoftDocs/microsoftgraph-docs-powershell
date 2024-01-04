@@ -31,6 +31,9 @@ Get-MgBetaDriveItemChildContent -InputObject <IFilesIdentity> -OutFile <String> 
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-list-children-permissions.md)]
+
 ## EXAMPLES
 
 ## PARAMETERS
@@ -171,4 +174,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgDriveItemChildContent](/powershell/module/Microsoft.Graph.Files/Get-MgDriveItemChildContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemchildcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemchildcontent)
+
 

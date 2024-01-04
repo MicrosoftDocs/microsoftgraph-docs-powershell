@@ -10,7 +10,6 @@ ms.prod: cloud-pc
 
 ## SYNOPSIS
 Change the account type of the user on a specific Cloud PC.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -45,7 +44,9 @@ Rename-MgBetaDeviceManagementVirtualEndpointCloudPcUserAccountType
 
 ## DESCRIPTION
 Change the account type of the user on a specific Cloud PC.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-changeuseraccounttype-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Rename-MgBetaDeviceManagementVirtualEndpointCloudPcUserAccountType Cmdlet
@@ -248,6 +249,7 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
   \[MicrosoftTunnelSiteId \<String\>\]: The unique identifier of microsoftTunnelSite
   \[MobileAppTroubleshootingEventId \<String\>\]: The unique identifier of mobileAppTroubleshootingEvent
   \[NotificationMessageTemplateId \<String\>\]: The unique identifier of notificationMessageTemplate
+  \[PrivilegeManagementElevationRequestId \<String\>\]: The unique identifier of privilegeManagementElevationRequest
   \[RemoteAssistancePartnerId \<String\>\]: The unique identifier of remoteAssistancePartner
   \[RoleScopeTagId \<String\>\]: The unique identifier of roleScopeTag
   \[WindowsAutopilotDeploymentProfileId \<String\>\]: The unique identifier of windowsAutopilotDeploymentProfile
@@ -260,4 +262,5 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/rename-mgbetadevicemanagementvirtualendpointcloudpcuseraccounttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/rename-mgbetadevicemanagementvirtualendpointcloudpcuseraccounttype)
+
 

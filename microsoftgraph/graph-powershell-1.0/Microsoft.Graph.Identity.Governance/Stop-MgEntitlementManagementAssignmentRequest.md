@@ -10,7 +10,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 In Microsoft Entra Entitlement Management, cancel accessPackageAssignmentRequest objects that are in a cancellable state: accepted, pendingApproval, pendingNotBefore, pendingApprovalEscalated.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,9 @@ Stop-MgEntitlementManagementAssignmentRequest -InputObject <IIdentityGovernanceI
 
 ## DESCRIPTION
 In Microsoft Entra Entitlement Management, cancel accessPackageAssignmentRequest objects that are in a cancellable state: accepted, pendingApproval, pendingNotBefore, pendingApprovalEscalated.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackageassignmentrequest-cancel-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Stop-MgEntitlementManagementAssignmentRequest Cmdlet
@@ -206,4 +207,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/stop-mgentitlementmanagementassignmentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/stop-mgentitlementmanagementassignmentrequest)
+
 

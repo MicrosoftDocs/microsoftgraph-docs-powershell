@@ -11,10 +11,9 @@ ms.prod: groups
 ## SYNOPSIS
 Create a new thread in the specified conversation.
 A thread and post are created as specified.
-Use reply thread to further post \nto that thread.
+Use reply thread to further post to that thread.
 Or, if you get the post ID, you can also reply to that post in that thread.
 Note: You can also start a new conversation by first creating a thread.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupConversationThread](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupConversationThread?view=graph-powershell-beta)
@@ -54,10 +53,12 @@ New-MgGroupConversationThread -InputObject <IGroupsIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create a new thread in the specified conversation.
 A thread and post are created as specified.
-Use reply thread to further post \nto that thread.
+Use reply thread to further post to that thread.
 Or, if you get the post ID, you can also reply to that post in that thread.
 Note: You can also start a new conversation by first creating a thread.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/conversation-post-threads-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -576,4 +577,5 @@ Returned only on $select.
 [New-MgBetaGroupConversationThread](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupConversationThread?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversationthread](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversationthread)
+
 

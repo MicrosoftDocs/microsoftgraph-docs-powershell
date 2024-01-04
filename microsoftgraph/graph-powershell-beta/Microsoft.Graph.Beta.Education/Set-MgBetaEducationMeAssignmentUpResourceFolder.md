@@ -12,7 +12,6 @@ ms.prod: education
 Create a SharePoint folder to upload files for a given educationAssignment.
 Only teachers can perform this operation.
 The teacher determines the resources to upload in the assignment's folder.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Set-MgEducationMeAssignmentUpResourceFolder](/powershell/module/Microsoft.Graph.Education/Set-MgEducationMeAssignmentUpResourceFolder?view=graph-powershell-1.0)
@@ -35,7 +34,9 @@ Set-MgBetaEducationMeAssignmentUpResourceFolder -InputObject <IEducationIdentity
 Create a SharePoint folder to upload files for a given educationAssignment.
 Only teachers can perform this operation.
 The teacher determines the resources to upload in the assignment's folder.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-setupresourcesfolder-permissions.md)]
 
 ## PARAMETERS
 
@@ -139,5 +140,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 [Set-MgEducationMeAssignmentUpResourceFolder](/powershell/module/Microsoft.Graph.Education/Set-MgEducationMeAssignmentUpResourceFolder?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/set-mgbetaeducationmeassignmentupresourcefolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/set-mgbetaeducationmeassignmentupresourcefolder)
+
 
 

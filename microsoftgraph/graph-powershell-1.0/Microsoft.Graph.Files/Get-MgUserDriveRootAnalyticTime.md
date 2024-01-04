@@ -9,8 +9,7 @@ ms.prod: sharepoint
 # Get-MgUserDriveRootAnalyticTime
 
 ## SYNOPSIS
-Get \[itemAnalytics\]\[\] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the getActivitiesByInterval\]\[\] API.
-This API is available in the following \[national cloud deployments.
+Get \[itemAnalytics\]\[\] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the \[getActivitiesByInterval\]\[\] API.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserDriveRootAnalyticTime](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootAnalyticTime?view=graph-powershell-beta)
@@ -30,8 +29,10 @@ Get-MgUserDriveRootAnalyticTime -InputObject <IFilesIdentity> [-ExpandProperty <
 ```
 
 ## DESCRIPTION
-Get \[itemAnalytics\]\[\] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the getActivitiesByInterval\]\[\] API.
-This API is available in the following \[national cloud deployments.
+Get \[itemAnalytics\]\[\] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the \[getActivitiesByInterval\]\[\] API.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/itemanalytics-get-permissions.md)]
 
 ## PARAMETERS
 
@@ -156,5 +157,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgBetaUserDriveRootAnalyticTime](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootAnalyticTime?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootanalytictime](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootanalytictime)
+
 
 

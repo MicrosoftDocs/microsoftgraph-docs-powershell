@@ -10,7 +10,6 @@ ms.prod: microsoft-teams
 
 ## SYNOPSIS
 Create a new teamworkTagMember object in a team.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupTeamTagMember](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamTagMember?view=graph-powershell-beta)
@@ -45,7 +44,9 @@ New-MgGroupTeamTagMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosof
 
 ## DESCRIPTION
 Create a new teamworkTagMember object in a team.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teamworktagmember-post-permissions.md)]
 
 ## EXAMPLES
 
@@ -282,4 +283,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [New-MgBetaGroupTeamTagMember](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamTagMember?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamtagmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamtagmember)
+
 

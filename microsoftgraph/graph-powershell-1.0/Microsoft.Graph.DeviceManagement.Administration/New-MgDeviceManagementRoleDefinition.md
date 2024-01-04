@@ -9,7 +9,7 @@ ms.prod: intune
 # New-MgDeviceManagementRoleDefinition
 
 ## SYNOPSIS
-Create a new roleDefinition object.
+Create a new deviceAndAppManagementRoleDefinition object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementRoleDefinition?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ New-MgDeviceManagementRoleDefinition -BodyParameter <IMicrosoftGraphRoleDefiniti
 ```
 
 ## DESCRIPTION
-Create a new roleDefinition object.
+Create a new deviceAndAppManagementRoleDefinition object.
 
 ## PARAMETERS
 
@@ -284,5 +284,6 @@ These must match the actionName that is defined as part of the rolePermission.
 [New-MgBetaDeviceManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementRoleDefinition?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementroledefinition)
+
 
 

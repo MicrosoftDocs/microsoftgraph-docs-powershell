@@ -9,8 +9,7 @@ ms.prod: sharepoint
 # Update-MgSiteListItemField
 
 ## SYNOPSIS
-Update the properties on a listItem\]\[\].
-This API is available in the following \[national cloud deployments.
+Update the properties on a \[listItem\]\[\].
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSiteListItemField](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListItemField?view=graph-powershell-beta)
@@ -42,8 +41,10 @@ Update-MgSiteListItemField -InputObject <ISitesIdentity> -BodyParameter <Hashtab
 ```
 
 ## DESCRIPTION
-Update the properties on a listItem\]\[\].
-This API is available in the following \[national cloud deployments.
+Update the properties on a \[listItem\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -263,4 +264,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Update-MgBetaSiteListItemField](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListItemField?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitelistitemfield](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitelistitemfield)
+
 

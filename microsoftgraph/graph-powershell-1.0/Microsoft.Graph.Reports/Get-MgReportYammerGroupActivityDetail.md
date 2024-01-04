@@ -161,3 +161,4 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammergroupactivitydetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammergroupactivitydetail)
 
 
+

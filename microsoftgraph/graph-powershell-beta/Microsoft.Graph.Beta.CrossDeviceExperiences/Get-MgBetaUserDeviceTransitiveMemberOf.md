@@ -39,6 +39,9 @@ Groups and administrative units that this device is a member of.
 This operation is transitive.
 Supports $expand.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-list-transitivememberof-permissions.md)]
+
 ## PARAMETERS
 
 ### -All
@@ -297,5 +300,6 @@ INPUTOBJECT \<ICrossDeviceExperiencesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauserdevicetransitivememberof](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauserdevicetransitivememberof)
+
 
 

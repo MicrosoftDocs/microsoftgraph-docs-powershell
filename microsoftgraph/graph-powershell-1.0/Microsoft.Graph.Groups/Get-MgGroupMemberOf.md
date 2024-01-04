@@ -46,6 +46,9 @@ Read-only.
 Nullable.
 Supports $expand.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-list-memberof-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -330,4 +333,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Get-MgBetaGroupMemberOf](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberOf?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberof](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberof)
+
 

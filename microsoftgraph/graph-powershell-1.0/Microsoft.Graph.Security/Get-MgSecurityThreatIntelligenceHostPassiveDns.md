@@ -38,6 +38,9 @@ Get-MgSecurityThreatIntelligenceHostPassiveDns -InputObject <ISecurityIdentity> 
 ## DESCRIPTION
 Passive DNS retrieval about this host.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-host-list-passivedns-permissions.md)]
+
 ## PARAMETERS
 
 ### -All
@@ -310,5 +313,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Get-MgBetaSecurityThreatIntelligenceHostPassiveDns](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostPassiveDns?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostpassivedns](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostpassivedns)
+
 
 

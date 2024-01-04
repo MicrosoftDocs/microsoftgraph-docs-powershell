@@ -3,16 +3,14 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreplygroupconversationthreadpostinreplyto
 schema: 2.0.0
-ms.prod: extensions
+ms.prod: groups
 ---
 
 # Invoke-MgReplyGroupConversationThreadPostInReplyTo
 
 ## SYNOPSIS
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-The table in the Permissions section lists the resources that support open extensions.
-This API is available in the following national cloud deployments.
+Reply to a post and add a new post to the specified thread in a group conversation.
+You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaReplyGroupConversationThreadPostInReplyTo](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaReplyGroupConversationThreadPostInReplyTo?view=graph-powershell-beta)
@@ -49,10 +47,11 @@ Invoke-MgReplyGroupConversationThreadPostInReplyTo -InputObject <IGroupsIdentity
 ```
 
 ## DESCRIPTION
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-The table in the Permissions section lists the resources that support open extensions.
-This API is available in the following national cloud deployments.
+Reply to a post and add a new post to the specified thread in a group conversation.
+You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/post-reply-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -480,4 +479,5 @@ Read-only.
 [Invoke-MgBetaReplyGroupConversationThreadPostInReplyTo](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaReplyGroupConversationThreadPostInReplyTo?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreplygroupconversationthreadpostinreplyto](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreplygroupconversationthreadpostinreplyto)
+
 

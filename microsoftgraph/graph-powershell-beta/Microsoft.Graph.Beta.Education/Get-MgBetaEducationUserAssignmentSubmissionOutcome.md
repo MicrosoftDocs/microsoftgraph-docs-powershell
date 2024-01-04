@@ -40,6 +40,9 @@ Get-MgBetaEducationUserAssignmentSubmissionOutcome -InputObject <IEducationIdent
 ## DESCRIPTION
 Get outcomes from education
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsubmission-list-outcomes-permissions.md)]
+
 ## EXAMPLES
 
 ## PARAMETERS
@@ -309,4 +312,5 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 [Get-MgEducationUserAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserAssignmentSubmissionOutcome?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserassignmentsubmissionoutcome](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserassignmentsubmissionoutcome)
+
 

@@ -47,6 +47,9 @@ Update-MgTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity>
 Replace an existing schedulingGroup.
 If the specified schedulingGroup doesn't exist, this method returns 404 Not found.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/schedulinggroup-put-permissions.md)]
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -305,5 +308,6 @@ For example, if a user changes their display name, the API might show the new va
 [Update-MgBetaTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamScheduleSchedulingGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamscheduleschedulinggroup](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamscheduleschedulinggroup)
+
 
 

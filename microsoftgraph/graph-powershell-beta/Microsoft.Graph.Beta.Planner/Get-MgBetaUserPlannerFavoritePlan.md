@@ -39,6 +39,9 @@ Read-only.
 Nullable.
 Returns the plannerPlans that the user marked as favorites.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/planneruser-list-favoriteplans-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserPlannerFavoritePlan Cmdlet
 ```powershell
@@ -276,4 +279,5 @@ INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannerfavoriteplan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannerfavoriteplan)
+
 

@@ -38,6 +38,9 @@ Get-MgSecurityThreatIntelligenceWhoisRecordHistory -InputObject <ISecurityIdenti
 ## DESCRIPTION
 The collection of historical records associated to this WHOIS object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-whoisrecord-list-history-permissions.md)]
+
 ## PARAMETERS
 
 ### -All
@@ -310,5 +313,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Get-MgBetaSecurityThreatIntelligenceWhoisRecordHistory](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceWhoisRecordHistory?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencewhoisrecordhistory](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencewhoisrecordhistory)
+
 
 

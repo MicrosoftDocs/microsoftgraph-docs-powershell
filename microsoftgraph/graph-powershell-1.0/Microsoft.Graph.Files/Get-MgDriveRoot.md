@@ -11,7 +11,6 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Retrieve the metadata for a driveItem in a drive by file system path or ID.item-id is the ID of a driveItem.
 It may also be the unique ID of a SharePoint list item.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRoot?view=graph-powershell-beta)
@@ -32,7 +31,9 @@ Get-MgDriveRoot -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Pro
 ## DESCRIPTION
 Retrieve the metadata for a driveItem in a drive by file system path or ID.item-id is the ID of a driveItem.
 It may also be the unique ID of a SharePoint list item.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -155,4 +156,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgBetaDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRoot?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveroot)
+
 

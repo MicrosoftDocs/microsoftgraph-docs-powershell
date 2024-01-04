@@ -12,7 +12,6 @@ ms.prod: identity-and-sign-in
 ## SYNOPSIS
 Retrieve a password that's registered to a user, represented by a passwordAuthenticationMethod object.
 For security, the password itself will never be returned in the object and the password property is always null.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserAuthenticationPasswordMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationPasswordMethod?view=graph-powershell-beta)
@@ -41,7 +40,12 @@ Get-MgUserAuthenticationPasswordMethod -InputObject <IIdentitySignInsIdentity> [
 ## DESCRIPTION
 Retrieve a password that's registered to a user, represented by a passwordAuthenticationMethod object.
 For security, the password itself will never be returned in the object and the password property is always null.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/passwordauthenticationmethod-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authentication-list-passwordmethods-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -332,4 +336,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 [Get-MgBetaUserAuthenticationPasswordMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationPasswordMethod?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationpasswordmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationpasswordmethod)
+
 

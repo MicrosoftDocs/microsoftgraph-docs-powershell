@@ -10,7 +10,6 @@ ms.prod: security
 
 ## SYNOPSIS
 Update the properties of an incident object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSecurityIncident](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityIncident?view=graph-powershell-beta)
@@ -53,7 +52,9 @@ Update-MgSecurityIncident -InputObject <ISecurityIdentity> -BodyParameter <IMicr
 
 ## DESCRIPTION
 Update the properties of an incident object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-incident-update-permissions.md)]
 
 ## PARAMETERS
 
@@ -629,5 +630,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Update-MgBetaSecurityIncident](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityIncident?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityincident](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityincident)
+
 
 

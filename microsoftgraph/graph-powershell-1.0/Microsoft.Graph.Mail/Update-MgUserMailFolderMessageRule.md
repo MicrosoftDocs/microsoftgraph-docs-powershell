@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Change writable properties on a messageRule object and save the changes.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserMailFolderMessageRule](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMailFolderMessageRule?view=graph-powershell-beta)
@@ -48,7 +47,9 @@ Update-MgUserMailFolderMessageRule -InputObject <IMailIdentity> -BodyParameter <
 
 ## DESCRIPTION
 Change writable properties on a messageRule object and save the changes.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/messagerule-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -528,4 +529,5 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
 [Update-MgBetaUserMailFolderMessageRule](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMailFolderMessageRule?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mgusermailfoldermessagerule](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mgusermailfoldermessagerule)
+
 

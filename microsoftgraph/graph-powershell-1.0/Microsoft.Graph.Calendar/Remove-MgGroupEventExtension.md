@@ -179,11 +179,13 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[ExtensionId \<String\>\]: The unique identifier of extension
   \[GroupId \<String\>\]: The unique identifier of group
   \[PlaceId \<String\>\]: The unique identifier of place
+  \[RoomId \<String\>\]: The unique identifier of room
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 [Remove-MgBetaGroupEventExtension](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaGroupEventExtension?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mggroupeventextension](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mggroupeventextension)
+
 
 

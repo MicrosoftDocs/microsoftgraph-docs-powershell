@@ -31,6 +31,9 @@ Get-MgGroupDriveFollowingContent -InputObject <IFilesIdentity> -OutFile <String>
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/drive-list-following-permissions.md)]
+
 ## PARAMETERS
 
 ### -DriveId
@@ -169,5 +172,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgBetaGroupDriveFollowingContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveFollowingContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivefollowingcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivefollowingcontent)
+
 
 

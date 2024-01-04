@@ -10,7 +10,6 @@ ms.prod: cloud-communications
 
 ## SYNOPSIS
 Clear the preferred availability and activity status for a user.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Clear-MgBetaUserPresenceUserPreferredPresence](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Clear-MgBetaUserPresenceUserPreferredPresence?view=graph-powershell-beta)
@@ -31,7 +30,9 @@ Clear-MgUserPresenceUserPreferredPresence -InputObject <IUsersActionsIdentity> [
 
 ## DESCRIPTION
 Clear the preferred availability and activity status for a user.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/presence-clearuserpreferredpresence-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Clear-MgUserPresenceUserPreferredPresence Cmdlet
@@ -173,4 +174,5 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 [Clear-MgBetaUserPresenceUserPreferredPresence](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Clear-MgBetaUserPresenceUserPreferredPresence?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/clear-mguserpresenceuserpreferredpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/clear-mguserpresenceuserpreferredpresence)
+
 

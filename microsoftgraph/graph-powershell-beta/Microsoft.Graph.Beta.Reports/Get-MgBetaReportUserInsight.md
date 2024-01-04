@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaReportUserInsight
 
 ## SYNOPSIS
-Get userInsights from reports
+Represents a collection of user activities on applications in a tenant that is configured for Microsoft Entra External ID for customers.
 
 ## SYNTAX
 
@@ -17,7 +17,7 @@ Get-MgBetaReportUserInsight [-ExpandProperty <String[]>] [-Property <String[]>] 
 ```
 
 ## DESCRIPTION
-Get userInsights from reports
+Represents a collection of user activities on applications in a tenant that is configured for Microsoft Entra External ID for customers.
 
 ## PARAMETERS
 
@@ -64,5 +64,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportuserinsight](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportuserinsight)
+
 
 

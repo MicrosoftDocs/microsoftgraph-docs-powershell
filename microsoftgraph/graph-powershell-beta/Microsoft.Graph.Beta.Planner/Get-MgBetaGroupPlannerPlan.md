@@ -42,6 +42,9 @@ Read-only.
 Nullable.
 Returns the plannerPlans owned by the group.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannergroup-list-plans-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -283,4 +286,5 @@ INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
 [Get-MgGroupPlannerPlan](/powershell/module/Microsoft.Graph.Planner/Get-MgGroupPlannerPlan?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetagroupplannerplan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetagroupplannerplan)
+
 

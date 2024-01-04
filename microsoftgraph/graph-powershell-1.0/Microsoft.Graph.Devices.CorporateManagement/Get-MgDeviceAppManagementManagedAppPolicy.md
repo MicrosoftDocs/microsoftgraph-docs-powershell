@@ -10,7 +10,7 @@ ms.prod: intune
 # Get-MgDeviceAppManagementManagedAppPolicy
 
 ## SYNOPSIS
-Read properties and relationships of the targetedManagedAppProtection object.
+Read properties and relationships of the managedAppPolicy object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementManagedAppPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementManagedAppPolicy?view=graph-powershell-beta)
@@ -37,7 +37,7 @@ Get-MgDeviceAppManagementManagedAppPolicy -InputObject <IDevicesCorporateManagem
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the targetedManagedAppProtection object.
+Read properties and relationships of the managedAppPolicy object.
 
 ## PARAMETERS
 
@@ -279,5 +279,6 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
 [Get-MgBetaDeviceAppManagementManagedAppPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementManagedAppPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmanagedapppolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmanagedapppolicy)
+
 
 

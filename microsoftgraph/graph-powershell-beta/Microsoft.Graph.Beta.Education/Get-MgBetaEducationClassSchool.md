@@ -40,6 +40,9 @@ Get-MgBetaEducationClassSchool -InputObject <IEducationIdentity> [-ExpandPropert
 All schools that this class is associated with.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-list-schools-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -290,4 +293,5 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 [Get-MgEducationClassSchool](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassSchool?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassschool](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassschool)
+
 

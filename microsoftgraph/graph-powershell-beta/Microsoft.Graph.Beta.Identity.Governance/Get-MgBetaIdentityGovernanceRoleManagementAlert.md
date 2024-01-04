@@ -35,6 +35,9 @@ Get-MgBetaIdentityGovernanceRoleManagementAlert -InputObject <IIdentityGovernanc
 ## DESCRIPTION
 Represents the alert entity.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rolemanagementalert-list-alerts-permissions.md)]
+
 ## PARAMETERS
 
 ### -All
@@ -338,5 +341,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancerolemanagementalert](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancerolemanagementalert)
+
 
 

@@ -10,8 +10,7 @@ ms.prod: sharepoint
 # Get-MgDriveBundle
 
 ## SYNOPSIS
-Retrieve the metadata for a bundle\]\[\] based on the unique ID of the bundle.
-This API is available in the following \[national cloud deployments.
+Retrieve the metadata for a \[bundle\]\[\] based on the unique ID of the bundle.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDriveBundle](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveBundle?view=graph-powershell-beta)
@@ -38,8 +37,13 @@ Get-MgDriveBundle -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-P
 ```
 
 ## DESCRIPTION
-Retrieve the metadata for a bundle\]\[\] based on the unique ID of the bundle.
-This API is available in the following \[national cloud deployments.
+Retrieve the metadata for a \[bundle\]\[\] based on the unique ID of the bundle.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bundle-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bundle-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get a bundle
@@ -298,4 +302,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgBetaDriveBundle](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveBundle?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivebundle](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivebundle)
+
 

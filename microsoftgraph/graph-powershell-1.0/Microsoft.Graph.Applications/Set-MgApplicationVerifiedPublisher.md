@@ -11,7 +11,6 @@ ms.prod: applications
 ## SYNOPSIS
 Set the verifiedPublisher on an application.
 For more information, including prerequisites to setting a verified publisher, see Publisher verification.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaApplicationVerifiedPublisher](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaApplicationVerifiedPublisher?view=graph-powershell-beta)
@@ -47,7 +46,9 @@ Set-MgApplicationVerifiedPublisher -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Set the verifiedPublisher on an application.
 For more information, including prerequisites to setting a verified publisher, see Publisher verification.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-setverifiedpublisher-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Set-MgApplicationVerifiedPublisher Cmdlet
@@ -234,4 +235,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Set-MgBetaApplicationVerifiedPublisher](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaApplicationVerifiedPublisher?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgapplicationverifiedpublisher](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgapplicationverifiedpublisher)
+
 
