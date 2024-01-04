@@ -7,6 +7,8 @@ manager: CelesteDG
 ms.topic: quickstart
 ms.date: 05/17/2023
 ms.author: eunicewaweru
+
+#customer intent: As a PowerShell user, I want to learn how to use the Microsoft Graph PowerShell SDK, so that I can perform basic tasks using the Microsoft Graph REST API and authenticate with delegated access.
 ---
 
 # Get started with the Microsoft Graph PowerShell SDK

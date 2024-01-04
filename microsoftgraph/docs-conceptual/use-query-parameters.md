@@ -7,6 +7,8 @@ author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
 ms.reviewer: maisarissi
+
+#customer intent: As a Microsoft Graph PowerShell user, I want to customize the output of my queries by using query parameters, so that I can control the amount of data returned and filter, order, and search for specific results.
 ---
 
 # Use query parameters to customize PowerShell query outputs

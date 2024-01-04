@@ -8,6 +8,8 @@ author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
 reviewer: maisarissi
+
+#customer intent: As a PowerShell user, I want to use the Find-MgGraphCommand cmdlet to easily discover the API path that a command calls, so that I can efficiently work with Microsoft Graph PowerShell commands and understand the permissions required for each command.
 ---
 
 # Using Find-MgGraphCommand cmdlet

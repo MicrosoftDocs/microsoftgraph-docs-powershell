@@ -8,6 +8,8 @@ ms.author: eunicewaweru
 manager: CelesteDG
 author: msewaweru
 reviewer: carolkigoonya,peombwa
+
+#customer intent: As a Microsoft Graph PowerShell user, I want to troubleshoot and fix common errors, so that I can ensure the smooth operation of my scripts and commands.
 ---
 
 # Troubleshooting common errors in Microsoft Graph PowerShell

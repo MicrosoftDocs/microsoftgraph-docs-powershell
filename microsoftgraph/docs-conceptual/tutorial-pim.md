@@ -8,6 +8,8 @@ author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
 ms.reviewer: mandardalvi
+
+#customer intent: As an IT administrator using Microsoft Entra ID, I want to assign and manage admin roles in Privileged Identity Management using Microsoft Graph PowerShell, so that I can control and monitor access to privileged roles in my organization.
 ---
 
 # Tutorial: Assign Microsoft Entra roles in Privileged Identity Management using Microsoft Graph PowerShell

@@ -7,6 +7,8 @@ ms.date: 11/17/2023
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
+
+#customer intent: As a Powershell user, I want to find the equivalent Microsoft Graph PowerShell cmdlets for Azure AD PowerShell and MSOnline cmdlets, so that I can migrate my scripts to the new Microsoft Graph PowerShell SDK.
 ---
 
 # Find Azure AD PowerShell and MSOnline cmdlets in Microsoft Graph PowerShell
