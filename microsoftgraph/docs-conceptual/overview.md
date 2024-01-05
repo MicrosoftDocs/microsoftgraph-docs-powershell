@@ -2,7 +2,7 @@
 title: "Microsoft Graph PowerShell SDK overview"
 description: "Learn about the features of Microsoft Graph PowerShell that can help you derive insights and analytics, and build unique, intelligent apps."
 ms.topic: overview
-ms.date: 12/14/2022
+ms.date: 12/19/2023
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
@@ -28,7 +28,7 @@ The Microsoft Graph PowerShell SDK provides the following benefits:
 - **Cross-platform support**: Microsoft Graph PowerShell works on all platforms including Windows, macOS, and Linux.
 - **Supports modern authentication**: Microsoft Graph PowerShell supports the Microsoft Authentication Library (MSAL) which offers more security. For example, you can use passwordless sign-in experiences.
 - **Supports external identities**: Users from other Microsoft Entra tenants can authenticate to services in your tenant with Microsoft Graph PowerShell.
-- **Uses least privilege**: Microsoft Graph PowerShell permissions are not pre-authorized and users must perform one-time request for app permissions depending on their needs.
+- **Uses least privilege**: Microsoft Graph PowerShell permissions aren't pre-authorized and users must perform one-time request for app permissions depending on their needs.
 - **Advanced queries**: Microsoft Graph PowerShell supports rich, [advanced queries via eventual consistency](/graph/aad-advanced-queries?tabs=powershell). For example, you can get a near-instant count of all users using advanced queries.
 - **Open source**: Feature teams and the community can create great PowerShell experiences and share them with everyone.
 - **Receives regular updates**: Microsoft Graph PowerShell commands are updated regularly to support the latest Graph API updates.
@@ -39,7 +39,7 @@ To understand how to migrate from Azure AD PowerShell to Microsoft Graph PowerSh
 
 ## Install the Microsoft Graph PowerShell SDK
 
-The Microsoft Graph PowerShell SDK is published on the [PowerShell Gallery](https://www.powershellgallery.com/packages/Microsoft.Graph). Follow the [Install the SDK](/graph/powershell/installation) instructions to install the the Microsoft Graph PowerShell SDK.
+The Microsoft Graph PowerShell SDK is published on the [PowerShell Gallery](https://www.powershellgallery.com/packages/Microsoft.Graph). Follow the [Install the SDK](/graph/powershell/installation) instructions to install the Microsoft Graph PowerShell SDK.
 
 ## Get started
 
