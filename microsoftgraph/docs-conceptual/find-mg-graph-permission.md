@@ -8,6 +8,8 @@ author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
 reviewer: maisarissi
+
+#customer intent: As a Microsoft Graph PowerShell user, I want to find the identifier for a specific permission, so that I can accurately supply the permission-related parameters of commands like New-MgApplication and other application and consent related commands.
 ---
 
 # Using Find-MgGraphPermission cmdlet

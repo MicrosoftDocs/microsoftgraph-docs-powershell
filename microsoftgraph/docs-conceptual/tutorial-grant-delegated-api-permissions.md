@@ -7,6 +7,8 @@ author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
 ms.reviewer: jawoods, phsignor
+
+#customer intent: As an IT admin managing permissions in Microsoft Entra ID, I want to grant and revoke delegated permissions to client apps programmatically, so that I can automate permission management tasks and ensure efficient and secure access control in my organization.
 ---
 
 # Tutorial: Grant and revoke delegated permissions in Microsoft Entra ID

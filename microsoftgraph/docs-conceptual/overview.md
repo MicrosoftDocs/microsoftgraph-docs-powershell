@@ -7,6 +7,8 @@ author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
 ms.reviewer: maisarissi
+
+#customer intent: As a PowerShell user, I want to learn about the benefits of Microsoft Graph PowerShell SDK, so that I can get started with installing it and benefit from regular updates and cross-platform support.
 ---
 # Microsoft Graph PowerShell overview
 

@@ -7,6 +7,8 @@ manager: CelesteDG
 ms.topic: conceptual
 ms.date: 09/08/2023
 ms.author: eunicewaweru
+
+#customer intent: As a developer, I want to authenticate with Microsoft Graph using app-only access, so that I can perform non-interactive operations, such as listing users and groups, using the Microsoft Graph PowerShell SDK.
 ---
 
 # Use app-only authentication with the Microsoft Graph PowerShell SDK
