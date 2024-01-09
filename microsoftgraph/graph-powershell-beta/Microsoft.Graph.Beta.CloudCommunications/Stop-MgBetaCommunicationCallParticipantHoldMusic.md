@@ -10,7 +10,6 @@ ms.prod: cloud-communications
 
 ## SYNOPSIS
 Reincorporate a participant previously put on hold to the call.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Stop-MgCommunicationCallParticipantHoldMusic](/powershell/module/Microsoft.Graph.CloudCommunications/Stop-MgCommunicationCallParticipantHoldMusic?view=graph-powershell-1.0)
@@ -45,7 +44,9 @@ Stop-MgBetaCommunicationCallParticipantHoldMusic -InputObject <ICloudCommunicati
 
 ## DESCRIPTION
 Reincorporate a participant previously put on hold to the call.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/participant-stopholdmusic-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Stop-MgBetaCommunicationCallParticipantHoldMusic Cmdlet

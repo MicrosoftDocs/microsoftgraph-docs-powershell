@@ -12,7 +12,6 @@ ms.prod: directory-management
 ## SYNOPSIS
 Retrieve the properties and relationships of an administrativeUnit object.
 Since the administrativeUnit resource supports extensions, you can also use the GET operation to get custom properties and extension data in an administrativeUnit instance.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -38,7 +37,12 @@ Get-MgBetaAdministrativeUnit -InputObject <IIdentityDirectoryManagementIdentity>
 ## DESCRIPTION
 Retrieve the properties and relationships of an administrativeUnit object.
 Since the administrativeUnit resource supports extensions, you can also use the GET operation to get custom properties and extension data in an administrativeUnit instance.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/administrativeunit-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-list-administrativeunits-permissions.md)]
 
 ## PARAMETERS
 

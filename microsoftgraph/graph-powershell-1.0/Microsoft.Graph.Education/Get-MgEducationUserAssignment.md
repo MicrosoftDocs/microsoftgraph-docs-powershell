@@ -38,6 +38,9 @@ Get-MgEducationUserAssignment -InputObject <IEducationIdentity> [-ExpandProperty
 ## DESCRIPTION
 Assignments belonging to the user.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationuser-list-assignments-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Get assignments of a user
 

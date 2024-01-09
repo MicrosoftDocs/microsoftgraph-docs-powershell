@@ -12,9 +12,10 @@ ms.prod: directory-management
 Restore a recently deleted application, group, servicePrincipal, administrative unit, or user object from deleted items.
 If an item was accidentally deleted, you can fully restore the item.
 This isn't applicable to security groups, which are deleted permanently.
+Also, restoring an application doesn't restore the associated service principal automatically.
+You must call this API to explicitly restore the deleted service principal.
 A recently deleted item remains available for up to 30 days.
 After 30 days, the item is permanently deleted.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Restore-MgDirectoryDeletedItem](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Restore-MgDirectoryDeletedItem?view=graph-powershell-1.0)
@@ -36,9 +37,10 @@ Restore-MgBetaDirectoryDeletedItem -InputObject <IIdentityDirectoryManagementIde
 Restore a recently deleted application, group, servicePrincipal, administrative unit, or user object from deleted items.
 If an item was accidentally deleted, you can fully restore the item.
 This isn't applicable to security groups, which are deleted permanently.
+Also, restoring an application doesn't restore the associated service principal automatically.
+You must call this API to explicitly restore the deleted service principal.
 A recently deleted item remains available for up to 30 days.
 After 30 days, the item is permanently deleted.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Restore-MgBetaDirectoryDeletedItem Cmdlet

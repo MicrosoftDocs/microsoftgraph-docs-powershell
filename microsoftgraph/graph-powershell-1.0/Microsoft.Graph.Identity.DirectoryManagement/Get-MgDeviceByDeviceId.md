@@ -10,7 +10,6 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Get the properties and relationships of a device object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceByDeviceId](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceByDeviceId?view=graph-powershell-beta)
@@ -31,7 +30,9 @@ Get-MgDeviceByDeviceId -InputObject <IIdentityDirectoryManagementIdentity> [-Exp
 
 ## DESCRIPTION
 Get the properties and relationships of a device object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-get-permissions.md)]
 
 ## PARAMETERS
 

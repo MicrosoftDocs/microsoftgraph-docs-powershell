@@ -10,7 +10,6 @@ ms.prod: groups
 
 ## SYNOPSIS
 Update an event object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgGroupEvent](/powershell/module/Microsoft.Graph.Calendar/Update-MgGroupEvent?view=graph-powershell-1.0)
@@ -75,7 +74,9 @@ Update-MgBetaGroupEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicros
 
 ## DESCRIPTION
 Update an event object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-update-event-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -2181,4 +2182,5 @@ See below for possible values.
 [Update-MgGroupEvent](/powershell/module/Microsoft.Graph.Calendar/Update-MgGroupEvent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetagroupevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetagroupevent)
+
 

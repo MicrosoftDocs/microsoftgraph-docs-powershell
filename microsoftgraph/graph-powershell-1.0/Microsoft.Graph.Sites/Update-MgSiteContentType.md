@@ -9,8 +9,7 @@ ms.prod: sites-and-lists
 # Update-MgSiteContentType
 
 ## SYNOPSIS
-Update a content type\]\[contentType\].
-This API is available in the following \[national cloud deployments.
+Update a \[content type\]\[contentType\].
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteContentType?view=graph-powershell-beta)
@@ -56,8 +55,10 @@ Update-MgSiteContentType -InputObject <ISitesIdentity> -BodyParameter <IMicrosof
 ```
 
 ## DESCRIPTION
-Update a content type\]\[contentType\].
-This API is available in the following \[national cloud deployments.
+Update a \[content type\]\[contentType\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -1838,4 +1839,5 @@ ORDER \<IMicrosoftGraphContentTypeOrder\>: contentTypeOrder
 [Update-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitecontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitecontenttype)
+
 

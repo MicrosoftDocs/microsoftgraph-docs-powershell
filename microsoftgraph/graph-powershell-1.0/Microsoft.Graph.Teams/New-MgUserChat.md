@@ -1171,3 +1171,4 @@ VIEWPOINT \<IMicrosoftGraphChatViewpoint\>: chatViewpoint
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchat](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchat)
 
+

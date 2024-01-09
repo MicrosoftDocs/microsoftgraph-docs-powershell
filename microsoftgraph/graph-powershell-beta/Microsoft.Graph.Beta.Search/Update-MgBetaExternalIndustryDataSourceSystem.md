@@ -10,7 +10,6 @@ ms.prod: industry-data-etl
 
 ## SYNOPSIS
 Update the properties of a sourceSystemDefinition object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -44,7 +43,9 @@ Update-MgBetaExternalIndustryDataSourceSystem -InputObject <ISearchIdentity>
 
 ## DESCRIPTION
 Update the properties of a sourceSystemDefinition object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-sourcesystemdefinition-update-permissions.md)]
 
 ## PARAMETERS
 
@@ -305,5 +306,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatasourcesystem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatasourcesystem)
+
 
 

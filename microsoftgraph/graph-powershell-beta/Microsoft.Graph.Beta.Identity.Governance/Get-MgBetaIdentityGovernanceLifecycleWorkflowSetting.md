@@ -10,7 +10,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 Read the properties and relationships of a lifecycleManagementSettings object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceLifecycleWorkflowSetting](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowSetting?view=graph-powershell-1.0)
@@ -24,7 +23,9 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowSetting [-ExpandProperty <String[]>
 
 ## DESCRIPTION
 Read the properties and relationships of a lifecycleManagementSettings object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-lifecyclemanagementsettings-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

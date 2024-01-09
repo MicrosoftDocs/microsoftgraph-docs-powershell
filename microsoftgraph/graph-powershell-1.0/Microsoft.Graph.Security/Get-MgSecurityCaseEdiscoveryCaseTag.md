@@ -11,7 +11,6 @@ ms.prod: ediscovery
 
 ## SYNOPSIS
 Read the properties and relationships of an ediscoveryReviewTag object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseTag](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseTag?view=graph-powershell-beta)
@@ -39,7 +38,12 @@ Get-MgSecurityCaseEdiscoveryCaseTag -InputObject <ISecurityIdentity> [-ExpandPro
 
 ## DESCRIPTION
 Read the properties and relationships of an ediscoveryReviewTag object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoveryreviewtag-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycase-list-tags-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

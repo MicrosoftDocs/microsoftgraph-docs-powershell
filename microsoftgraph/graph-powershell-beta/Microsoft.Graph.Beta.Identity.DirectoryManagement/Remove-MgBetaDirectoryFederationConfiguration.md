@@ -10,7 +10,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Delete a samlOrWsFedExternalDomainFederation object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgDirectoryFederationConfiguration](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryFederationConfiguration?view=graph-powershell-1.0)
@@ -31,7 +30,9 @@ Remove-MgBetaDirectoryFederationConfiguration -InputObject <IIdentityDirectoryMa
 
 ## DESCRIPTION
 Delete a samlOrWsFedExternalDomainFederation object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/samlorwsfedexternaldomainfederation-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

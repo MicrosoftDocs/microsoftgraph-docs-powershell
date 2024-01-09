@@ -10,7 +10,6 @@ ms.prod: sharepoint
 
 ## SYNOPSIS
 Update an application permission object on a site.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSitePermission?view=graph-powershell-beta)
@@ -55,7 +54,9 @@ Update-MgGroupSitePermission -InputObject <ISitesIdentity> -BodyParameter <IMicr
 
 ## DESCRIPTION
 Update an application permission object on a site.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-update-permission-permissions.md)]
 
 ## PARAMETERS
 
@@ -654,5 +655,6 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
 [Update-MgBetaGroupSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSitePermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitepermission)
+
 
 

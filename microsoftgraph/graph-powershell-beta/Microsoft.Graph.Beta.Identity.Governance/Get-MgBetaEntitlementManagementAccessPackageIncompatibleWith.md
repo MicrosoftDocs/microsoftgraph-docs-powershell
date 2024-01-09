@@ -40,6 +40,9 @@ Get-MgBetaEntitlementManagementAccessPackageIncompatibleWith -InputObject <IIden
 The access packages that are incompatible with this package.
 Read-only.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackage-list-accesspackagesincompatiblewith-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -9,8 +9,7 @@ ms.prod: sites-and-lists
 # New-MgShareListColumn
 
 ## SYNOPSIS
-Create a column for a list\]\[list\] with a request that specifies a \[columnDefinition\]\[columnDefinition\].
-This API is available in the following \[national cloud deployments.
+Create a column for a \[list\]\[list\] with a request that specifies a \[columnDefinition\]\[columnDefinition\].
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaShareListColumn](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaShareListColumn?view=graph-powershell-beta)
@@ -62,8 +61,10 @@ New-MgShareListColumn -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGr
 ```
 
 ## DESCRIPTION
-Create a column for a list\]\[list\] with a request that specifies a \[columnDefinition\]\[columnDefinition\].
-This API is available in the following \[national cloud deployments.
+Create a column for a \[list\]\[list\] with a request that specifies a \[columnDefinition\]\[columnDefinition\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/list-post-columns-permissions.md)]
 
 ## PARAMETERS
 

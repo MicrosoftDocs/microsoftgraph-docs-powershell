@@ -42,6 +42,9 @@ Get-MgBetaIdentityB2XUserFlowLanguageOverridePage -InputObject <IIdentitySignIns
 Collection of pages with the overrides messages to display in a user flow for a specified language.
 This collection only allows to modify the content of the page, any other modification isn't allowed (creation or deletion of pages).
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userflowlanguageconfiguration-list-overridespages-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -289,6 +292,7 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[ActivityBasedTimeoutPolicyId \<String\>\]: The unique identifier of activityBasedTimeoutPolicy
   \[AppManagementPolicyId \<String\>\]: The unique identifier of appManagementPolicy
   \[AuthenticationCombinationConfigurationId \<String\>\]: The unique identifier of authenticationCombinationConfiguration
+  \[AuthenticationConditionApplicationAppId \<String\>\]: The unique identifier of authenticationConditionApplication
   \[AuthenticationContextClassReferenceId \<String\>\]: The unique identifier of authenticationContextClassReference
   \[AuthenticationEventListenerId \<String\>\]: The unique identifier of authenticationEventListener
   \[AuthenticationEventsFlowId \<String\>\]: The unique identifier of authenticationEventsFlow

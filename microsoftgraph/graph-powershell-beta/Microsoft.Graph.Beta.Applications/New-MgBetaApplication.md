@@ -10,7 +10,6 @@ ms.prod: applications
 
 ## SYNOPSIS
 Create a new application object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgApplication](/powershell/module/Microsoft.Graph.Applications/New-MgApplication?view=graph-powershell-1.0)
@@ -55,7 +54,9 @@ New-MgBetaApplication -BodyParameter <IMicrosoftGraphApplication> [-WhatIf] [-Co
 
 ## DESCRIPTION
 Create a new application object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-post-applications-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Create a new application

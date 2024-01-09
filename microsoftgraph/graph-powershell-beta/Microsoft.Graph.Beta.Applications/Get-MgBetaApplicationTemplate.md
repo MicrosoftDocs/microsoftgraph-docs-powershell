@@ -11,7 +11,6 @@ ms.prod: applications
 
 ## SYNOPSIS
 Retrieve the properties of an applicationTemplate object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgApplicationTemplate](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationTemplate?view=graph-powershell-1.0)
@@ -39,7 +38,12 @@ Get-MgBetaApplicationTemplate -InputObject <IApplicationsIdentity> [-ExpandPrope
 
 ## DESCRIPTION
 Retrieve the properties of an applicationTemplate object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/applicationtemplate-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/applicationtemplate-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -290,6 +294,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Get-MgApplicationTemplate](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationTemplate?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationtemplate)
-
 
 

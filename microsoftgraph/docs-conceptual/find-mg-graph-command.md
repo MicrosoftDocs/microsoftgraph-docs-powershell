@@ -3,11 +3,13 @@ title: "Using Find-MgGraphCommand cmdlet"
 description: "Learn how to use the Find-MgGraphCommand to aid in discoverability of cmdlets."
 
 ms.topic: how-to
-ms.date: 01/31/2023
+ms.date: 12/19/2023
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
 reviewer: maisarissi
+
+#customer intent: As a PowerShell user, I want to use the Find-MgGraphCommand cmdlet to easily discover the API path that a command calls, so that I can efficiently work with Microsoft Graph PowerShell commands and understand the permissions required for each command.
 ---
 
 # Using Find-MgGraphCommand cmdlet
@@ -20,9 +22,9 @@ The Find-MgGraphCommand allows to:
 - Pass a command and get the URL it calls.
 - Pass a command or URI wildcard (.*) to find all commands that match it.
 
-The output of this cmdlet also includes the permissions required to authenticate the specified cmdlet. For more information on cmdlet permissions, see  [Using Find-MgGraphPermission](find-mg-graph-permission.md). Not all cmdlets have the permissions available on running this command. This is an ongoing feature and permissions will continue to be added.
+The output of this cmdlet also includes the permissions required to authenticate the specified cmdlet. For more information on cmdlet permissions, see  [Using Find-MgGraphPermission](find-mg-graph-permission.md). Not all cmdlets have the permissions available on running this command. This is an ongoing feature, and permissions will continue to be added.
 
-The permissions displayed do not show the privilege levels. To learn more, including how to choose permissions, permission type and what is the most privileged/least privileged permission, use the corresponding API page doc.
+The permissions displayed don't show the privilege levels. To learn more, including how to choose permissions, permission type and what is the most privileged/least privileged permission, use the corresponding API page doc.
 
 ## Find Microsoft Graph PowerShell commands by URI
 
@@ -74,7 +76,7 @@ Find-MgGraphCommand -Command <String[]> [-ApiVersion <String>] [<CommonParameter
 
 ### Examples
 
-#### Example 1 : Pass a command and get the URI it calls
+#### Example 1: Pass a command and get the URI it calls
 
 ```powershell
 Find-MgGraphCommand -Command 'Get-MgUser'

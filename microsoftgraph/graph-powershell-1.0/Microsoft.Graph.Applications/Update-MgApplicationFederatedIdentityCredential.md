@@ -10,7 +10,6 @@ ms.prod: applications
 
 ## SYNOPSIS
 Update the properties of a federatedIdentityCredential object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaApplicationFederatedIdentityCredential](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationFederatedIdentityCredential?view=graph-powershell-beta)
@@ -45,7 +44,9 @@ Update-MgApplicationFederatedIdentityCredential -InputObject <IApplicationsIdent
 
 ## DESCRIPTION
 Update the properties of a federatedIdentityCredential object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/federatedidentitycredential-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -365,6 +366,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Update-MgBetaApplicationFederatedIdentityCredential](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationFederatedIdentityCredential?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationfederatedidentitycredential](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationfederatedidentitycredential)
-
 
 

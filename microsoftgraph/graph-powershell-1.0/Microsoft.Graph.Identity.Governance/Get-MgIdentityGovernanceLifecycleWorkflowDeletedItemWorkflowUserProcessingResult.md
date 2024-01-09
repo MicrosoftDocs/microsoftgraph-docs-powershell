@@ -40,6 +40,9 @@ Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowUserProcessingResult
 ## DESCRIPTION
 Per-user workflow execution results.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-workflow-list-userprocessingresults-permissions.md)]
+
 ## PARAMETERS
 
 ### -All

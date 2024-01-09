@@ -11,7 +11,6 @@ ms.prod: sharepoint
 
 ## SYNOPSIS
 Retrieve the metadata for a specific version of a ListItem.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaShareListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListItemVersion?view=graph-powershell-beta)
@@ -58,7 +57,12 @@ Get-MgShareListItemVersion -InputObject <IFilesIdentity> [-ExpandProperty <Strin
 
 ## DESCRIPTION
 Retrieve the metadata for a specific version of a ListItem.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitemversion-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-list-versions-permissions.md)]
 
 ## PARAMETERS
 

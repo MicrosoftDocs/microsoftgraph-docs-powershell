@@ -30,6 +30,9 @@ Read-only.
 Nullable.
 Supports $expand.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-list-registeredowners-permissions.md)]
+
 ## PARAMETERS
 
 ### -All

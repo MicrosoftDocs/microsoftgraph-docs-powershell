@@ -11,7 +11,6 @@ ms.prod: outlook
 ## SYNOPSIS
 Create a new contactFolder under the user's default contacts folder.
 You can also create a new contactfolder as a child of any specified contact folder.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgUserContactFolder](/powershell/module/Microsoft.Graph.PersonalContacts/New-MgUserContactFolder?view=graph-powershell-1.0)
@@ -53,7 +52,9 @@ New-MgBetaUserContactFolder -InputObject <IPersonalContactsIdentity>
 ## DESCRIPTION
 Create a new contactFolder under the user's default contacts folder.
 You can also create a new contactfolder as a child of any specified contact folder.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-post-contactfolders-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -696,4 +697,5 @@ Read-only.
 [New-MgUserContactFolder](/powershell/module/Microsoft.Graph.PersonalContacts/New-MgUserContactFolder?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/new-mgbetausercontactfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/new-mgbetausercontactfolder)
+
 

@@ -10,7 +10,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 Create a new customTaskExtension object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension?view=graph-powershell-beta)
@@ -37,7 +36,9 @@ New-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension
 
 ## DESCRIPTION
 Create a new customTaskExtension object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-lifecycleworkflowscontainer-post-customtaskextensions-permissions.md)]
 
 ## PARAMETERS
 

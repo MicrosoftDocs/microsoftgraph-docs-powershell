@@ -10,7 +10,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Create a new partner configuration in a cross-tenant access policy.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgPolicyCrossTenantAccessPolicyPartner](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyCrossTenantAccessPolicyPartner?view=graph-powershell-1.0)
@@ -41,7 +40,9 @@ New-MgBetaPolicyCrossTenantAccessPolicyPartner
 
 ## DESCRIPTION
 Create a new partner configuration in a cross-tenant access policy.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/crosstenantaccesspolicy-post-partners-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

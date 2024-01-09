@@ -10,7 +10,6 @@ ms.prod: applications
 
 ## SYNOPSIS
 Assign a connectorGroup to an application.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -42,7 +41,9 @@ Set-MgBetaApplicationConnectorGroupByRef -InputObject <IApplicationsIdentity> -B
 
 ## DESCRIPTION
 Assign a connectorGroup to an application.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/connectorgroup-post-applications-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Set-MgBetaApplicationConnectorGroupByRef Cmdlet
@@ -255,6 +256,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaapplicationconnectorgroupbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaapplicationconnectorgroupbyref)
-
 
 

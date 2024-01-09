@@ -131,6 +131,21 @@ Locale: en-US
 ### [Get-MgBetaSecurityAttackSimulationTrainingLanguageDetailCount](Get-MgBetaSecurityAttackSimulationTrainingLanguageDetailCount.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaSecurityAuditLog](Get-MgBetaSecurityAuditLog.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaSecurityAuditLogQuery](Get-MgBetaSecurityAuditLogQuery.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaSecurityAuditLogQueryCount](Get-MgBetaSecurityAuditLogQueryCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaSecurityAuditLogQueryRecord](Get-MgBetaSecurityAuditLogQueryRecord.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaSecurityAuditLogQueryRecordCount](Get-MgBetaSecurityAuditLogQueryRecordCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaSecurityCase](Get-MgBetaSecurityCase.md)
 {{ Fill in the Description }}
 
@@ -854,6 +869,12 @@ Locale: en-US
 ### [New-MgBetaSecurityAttackSimulationTrainingLanguageDetail](New-MgBetaSecurityAttackSimulationTrainingLanguageDetail.md)
 {{ Fill in the Description }}
 
+### [New-MgBetaSecurityAuditLogQuery](New-MgBetaSecurityAuditLogQuery.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaSecurityAuditLogQueryRecord](New-MgBetaSecurityAuditLogQueryRecord.md)
+{{ Fill in the Description }}
+
 ### [New-MgBetaSecurityCaseEdiscoveryCase](New-MgBetaSecurityCaseEdiscoveryCase.md)
 {{ Fill in the Description }}
 
@@ -1089,6 +1110,15 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaSecurityAttackSimulationTrainingLanguageDetail](Remove-MgBetaSecurityAttackSimulationTrainingLanguageDetail.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaSecurityAuditLog](Remove-MgBetaSecurityAuditLog.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaSecurityAuditLogQuery](Remove-MgBetaSecurityAuditLogQuery.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaSecurityAuditLogQueryRecord](Remove-MgBetaSecurityAuditLogQueryRecord.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaSecurityCase](Remove-MgBetaSecurityCase.md)
@@ -1425,6 +1455,15 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgBetaSecurityAttackSimulationTrainingLanguageDetail](Update-MgBetaSecurityAttackSimulationTrainingLanguageDetail.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaSecurityAuditLog](Update-MgBetaSecurityAuditLog.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaSecurityAuditLogQuery](Update-MgBetaSecurityAuditLogQuery.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaSecurityAuditLogQueryRecord](Update-MgBetaSecurityAuditLogQueryRecord.md)
 {{ Fill in the Description }}
 
 ### [Update-MgBetaSecurityCase](Update-MgBetaSecurityCase.md)

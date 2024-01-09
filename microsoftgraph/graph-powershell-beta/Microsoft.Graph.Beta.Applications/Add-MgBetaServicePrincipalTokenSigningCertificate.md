@@ -17,7 +17,6 @@ It and the associated private key object have the same value of keyId.
 Once set during creation through the displayName property, the subject of the certificate cannot be updated.
 The startDateTime is set to the same time the certificate is created using the action.
 The endDateTime can be up to three years after the certificate is created.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Add-MgServicePrincipalTokenSigningCertificate](/powershell/module/Microsoft.Graph.Applications/Add-MgServicePrincipalTokenSigningCertificate?view=graph-powershell-1.0)
@@ -61,7 +60,9 @@ It and the associated private key object have the same value of keyId.
 Once set during creation through the displayName property, the subject of the certificate cannot be updated.
 The startDateTime is set to the same time the certificate is created using the action.
 The endDateTime can be up to three years after the certificate is created.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-addtokensigningcertificate-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -264,6 +265,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Add-MgServicePrincipalTokenSigningCertificate](/powershell/module/Microsoft.Graph.Applications/Add-MgServicePrincipalTokenSigningCertificate?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/add-mgbetaserviceprincipaltokensigningcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/add-mgbetaserviceprincipaltokensigningcertificate)
-
 
 

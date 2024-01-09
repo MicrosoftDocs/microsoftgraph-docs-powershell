@@ -11,7 +11,6 @@ ms.prod: security
 
 ## SYNOPSIS
 Retrieve the properties and relationships of an informationProtectionLabel object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -36,7 +35,12 @@ Get-MgBetaGroupSiteInformationProtectionPolicyLabel -InputObject <ISitesIdentity
 
 ## DESCRIPTION
 Retrieve the properties and relationships of an informationProtectionLabel object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/informationprotectionlabel-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/informationprotectionpolicy-list-labels-permissions.md)]
 
 ## PARAMETERS
 

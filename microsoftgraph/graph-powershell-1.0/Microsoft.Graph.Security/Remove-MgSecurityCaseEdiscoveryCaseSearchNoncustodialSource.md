@@ -32,6 +32,9 @@ Remove-MgSecurityCaseEdiscoveryCaseSearchNoncustodialSource -InputObject <ISecur
 ## DESCRIPTION
 Remove an ediscoveryNoncustodialDataSource object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverysearch-delete-noncustodialsources-permissions.md)]
+
 ## PARAMETERS
 
 ### -EdiscoveryCaseId

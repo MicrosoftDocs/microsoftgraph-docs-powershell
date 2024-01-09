@@ -47,6 +47,9 @@ Update-MgGroupTeamScheduleOpenShift -InputObject <ITeamsIdentity> -BodyParameter
 ## DESCRIPTION
 Update the properties of an openShift object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/openshift-update-permissions.md)]
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Delete a checklistItem object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgUserTodoListTaskChecklistItem](/powershell/module/Microsoft.Graph.Users/Remove-MgUserTodoListTaskChecklistItem?view=graph-powershell-1.0)
@@ -32,7 +31,9 @@ Remove-MgBetaUserTodoListTaskChecklistItem -InputObject <IUsersIdentity> [-IfMat
 
 ## DESCRIPTION
 Delete a checklistItem object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/checklistitem-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -230,6 +231,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Remove-MgUserTodoListTaskChecklistItem](/powershell/module/Microsoft.Graph.Users/Remove-MgUserTodoListTaskChecklistItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausertodolisttaskchecklistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausertodolisttaskchecklistitem)
-
 
 

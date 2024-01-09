@@ -10,7 +10,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Deletes an internalDomainFederation object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDomainFederationConfiguration?view=graph-powershell-1.0)
@@ -31,7 +30,9 @@ Remove-MgBetaDomainFederationConfiguration -InputObject <IIdentityDirectoryManag
 
 ## DESCRIPTION
 Deletes an internalDomainFederation object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/internaldomainfederation-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Remove federation settigs for a federated domain

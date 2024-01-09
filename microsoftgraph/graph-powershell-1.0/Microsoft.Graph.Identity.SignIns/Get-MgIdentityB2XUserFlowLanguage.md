@@ -13,7 +13,6 @@ ms.prod: identity-and-sign-in
 Read the properties and relationships of a userFlowLanguageConfiguration object.
 These objects represent a language available in a user flow.
 Note: Language customization is enabled by default in Microsoft Entra user flows.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaIdentityB2XUserFlowLanguage](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityB2XUserFlowLanguage?view=graph-powershell-beta)
@@ -43,7 +42,12 @@ Get-MgIdentityB2XUserFlowLanguage -InputObject <IIdentitySignInsIdentity> [-Expa
 Read the properties and relationships of a userFlowLanguageConfiguration object.
 These objects represent a language available in a user flow.
 Note: Language customization is enabled by default in Microsoft Entra user flows.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userflowlanguageconfiguration-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/b2xidentityuserflow-list-languages-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

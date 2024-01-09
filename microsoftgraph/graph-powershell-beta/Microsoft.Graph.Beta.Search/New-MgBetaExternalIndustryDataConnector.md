@@ -10,7 +10,6 @@ ms.prod: industry-data-etl
 
 ## SYNOPSIS
 Create a new industryDataConnector object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -29,7 +28,9 @@ New-MgBetaExternalIndustryDataConnector -BodyParameter <IMicrosoftGraphIndustryD
 
 ## DESCRIPTION
 Create a new industryDataConnector object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-industrydataconnector-post-permissions.md)]
 
 ## PARAMETERS
 

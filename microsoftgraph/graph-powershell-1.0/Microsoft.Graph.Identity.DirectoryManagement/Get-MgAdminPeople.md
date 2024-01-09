@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgadminpeople
 schema: 2.0.0
+ms.prod: people
 ---
 
 # Get-MgAdminPeople
 
 ## SYNOPSIS
-Get people from admin
+Retrieve the properties and relationships of a peopleAdminSettings object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaAdminPeople](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaAdminPeople?view=graph-powershell-beta)
@@ -20,7 +21,7 @@ Get-MgAdminPeople [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonPa
 ```
 
 ## DESCRIPTION
-Get people from admin
+Retrieve the properties and relationships of a peopleAdminSettings object.
 
 ## PARAMETERS
 

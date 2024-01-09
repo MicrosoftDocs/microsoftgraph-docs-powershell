@@ -40,6 +40,9 @@ Get-MgBetaEducationUserSchool -InputObject <IEducationIdentity> [-ExpandProperty
 Schools to which the user belongs.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationuser-list-schools-permissions.md)]
+
 ## EXAMPLES
 
 ## PARAMETERS

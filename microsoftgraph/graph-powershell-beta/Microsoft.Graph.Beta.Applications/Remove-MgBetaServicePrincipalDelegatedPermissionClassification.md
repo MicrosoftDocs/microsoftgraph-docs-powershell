@@ -10,7 +10,6 @@ ms.prod: applications
 
 ## SYNOPSIS
 Deletes a delegatedPermissionClassification which had previously been set for a delegated permission.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgServicePrincipalDelegatedPermissionClassification](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalDelegatedPermissionClassification?view=graph-powershell-1.0)
@@ -31,7 +30,9 @@ Remove-MgBetaServicePrincipalDelegatedPermissionClassification -InputObject <IAp
 
 ## DESCRIPTION
 Deletes a delegatedPermissionClassification which had previously been set for a delegated permission.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-delete-delegatedpermissionclassifications-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -207,6 +208,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Remove-MgServicePrincipalDelegatedPermissionClassification](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalDelegatedPermissionClassification?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipaldelegatedpermissionclassification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipaldelegatedpermissionclassification)
-
 
 

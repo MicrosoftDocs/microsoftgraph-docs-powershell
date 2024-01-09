@@ -10,7 +10,6 @@ ms.prod: microsoft-teams
 
 ## SYNOPSIS
 Update the properties of a tag object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaTeamTag](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamTag?view=graph-powershell-beta)
@@ -46,7 +45,9 @@ Update-MgTeamTag -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTe
 
 ## DESCRIPTION
 Update the properties of a tag object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teamworktag-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -373,4 +374,5 @@ Read-only.
 [Update-MgBetaTeamTag](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamTag?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamtag](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamtag)
+
 

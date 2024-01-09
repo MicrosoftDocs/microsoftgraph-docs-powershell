@@ -10,7 +10,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Get properties of the multitenant organization.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -21,7 +20,9 @@ Get-MgBetaTenantRelationshipMultiTenantOrganization [-ExpandProperty <String[]>]
 
 ## DESCRIPTION
 Get properties of the multitenant organization.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/multitenantorganization-get-permissions.md)]
 
 ## PARAMETERS
 

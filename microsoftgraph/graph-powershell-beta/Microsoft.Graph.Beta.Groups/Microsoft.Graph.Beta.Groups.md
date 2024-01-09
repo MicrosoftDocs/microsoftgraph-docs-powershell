@@ -926,9 +926,6 @@ Locale: en-US
 ### [Remove-MgBetaGroupPermissionGrant](Remove-MgBetaGroupPermissionGrant.md)
 {{ Fill in the Description }}
 
-### [Remove-MgBetaGroupPhoto](Remove-MgBetaGroupPhoto.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgBetaGroupRejectedSenderByRef](Remove-MgBetaGroupRejectedSenderByRef.md)
 {{ Fill in the Description }}
 

@@ -9,7 +9,7 @@ ms.prod: directory-management
 # Get-MgBetaContactManager
 
 ## SYNOPSIS
-Get the contact's manager This API is available in the following national cloud deployments.
+Get the contact's manager
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgContactManager](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContactManager?view=graph-powershell-1.0)
@@ -29,7 +29,10 @@ Get-MgBetaContactManager -InputObject <IIdentityDirectoryManagementIdentity> [-E
 ```
 
 ## DESCRIPTION
-Get the contact's manager This API is available in the following national cloud deployments.
+Get the contact's manager
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/orgcontact-get-manager-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

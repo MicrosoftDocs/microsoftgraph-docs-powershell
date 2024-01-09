@@ -38,6 +38,9 @@ Get-MgUserMailFolderChildFolderMessage -InputObject <IMailIdentity> [-ExpandProp
 ## DESCRIPTION
 The collection of messages in the mailFolder.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/mailfolder-list-messages-permissions.md)]
+
 ## EXAMPLES
 
 ## PARAMETERS

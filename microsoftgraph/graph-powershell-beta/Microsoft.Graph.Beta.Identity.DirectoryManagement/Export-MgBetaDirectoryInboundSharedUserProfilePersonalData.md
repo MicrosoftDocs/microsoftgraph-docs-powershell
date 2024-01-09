@@ -10,7 +10,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Create a request to export the personal data for an inboundSharedUserProfile.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -44,7 +43,9 @@ Export-MgBetaDirectoryInboundSharedUserProfilePersonalData -InputObject <IIdenti
 
 ## DESCRIPTION
 Create a request to export the personal data for an inboundSharedUserProfile.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/inboundshareduserprofile-exportpersonaldata-permissions.md)]
 
 ## PARAMETERS
 

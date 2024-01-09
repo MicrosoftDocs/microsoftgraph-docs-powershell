@@ -10,7 +10,6 @@ ms.prod: applications
 
 ## SYNOPSIS
 Assign a homeRealmDiscoveryPolicy to a servicePrincipal.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef?view=graph-powershell-1.0)
@@ -43,7 +42,6 @@ New-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef -InputObject <IApplicati
 
 ## DESCRIPTION
 Assign a homeRealmDiscoveryPolicy to a servicePrincipal.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -246,6 +244,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalhomerealmdiscoverypolicybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalhomerealmdiscoverypolicybyref)
-
 
 

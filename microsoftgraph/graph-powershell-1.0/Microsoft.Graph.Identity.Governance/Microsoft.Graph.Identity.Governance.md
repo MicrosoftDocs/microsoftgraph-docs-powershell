@@ -2441,6 +2441,9 @@ Locale: en-US
 ### [Set-MgEntitlementManagementAssignmentPolicy](Set-MgEntitlementManagementAssignmentPolicy.md)
 {{ Fill in the Description }}
 
+### [Set-MgIdentityGovernanceAccessReviewDefinition](Set-MgIdentityGovernanceAccessReviewDefinition.md)
+{{ Fill in the Description }}
+
 ### [Stop-MgEntitlementManagementAssignmentRequest](Stop-MgEntitlementManagementAssignmentRequest.md)
 {{ Fill in the Description }}
 
@@ -2721,9 +2724,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgEntitlementManagementSetting](Update-MgEntitlementManagementSetting.md)
-{{ Fill in the Description }}
-
-### [Update-MgIdentityGovernanceAccessReviewDefinition](Update-MgIdentityGovernanceAccessReviewDefinition.md)
 {{ Fill in the Description }}
 
 ### [Update-MgIdentityGovernanceAccessReviewDefinitionInstance](Update-MgIdentityGovernanceAccessReviewDefinitionInstance.md)

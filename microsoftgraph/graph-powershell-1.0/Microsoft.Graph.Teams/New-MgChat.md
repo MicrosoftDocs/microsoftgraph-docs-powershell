@@ -10,7 +10,6 @@ ms.prod: microsoft-teams
 
 ## SYNOPSIS
 Create a new chat object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaChat](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChat?view=graph-powershell-beta)
@@ -37,7 +36,9 @@ New-MgChat -BodyParameter <IMicrosoftGraphChat> [-WhatIf] [-Confirm] [<CommonPar
 
 ## DESCRIPTION
 Create a new chat object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-post-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Create a one-on-one chat
@@ -1227,4 +1228,5 @@ VIEWPOINT \<IMicrosoftGraphChatViewpoint\>: chatViewpoint
 [New-MgBetaChat](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChat?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchat](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchat)
+
 

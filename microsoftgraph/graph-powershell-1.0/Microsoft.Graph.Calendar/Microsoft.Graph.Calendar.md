@@ -74,6 +74,9 @@ Locale: en-US
 ### [Get-MgPlaceAsRoomList](Get-MgPlaceAsRoomList.md)
 {{ Fill in the Description }}
 
+### [Get-MgPlaceAsRoomListRoom](Get-MgPlaceAsRoomListRoom.md)
+{{ Fill in the Description }}
+
 ### [Get-MgPlaceCount](Get-MgPlaceCount.md)
 {{ Fill in the Description }}
 
@@ -81,6 +84,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgPlaceCountAsRoomList](Get-MgPlaceCountAsRoomList.md)
+{{ Fill in the Description }}
+
+### [Get-MgPlaceRoomCount](Get-MgPlaceRoomCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgUserCalendar](Get-MgUserCalendar.md)
@@ -179,6 +185,9 @@ Locale: en-US
 ### [New-MgGroupEventInstanceExtension](New-MgGroupEventInstanceExtension.md)
 {{ Fill in the Description }}
 
+### [New-MgPlaceAsRoomListRoom](New-MgPlaceAsRoomListRoom.md)
+{{ Fill in the Description }}
+
 ### [New-MgUserCalendar](New-MgUserCalendar.md)
 {{ Fill in the Description }}
 
@@ -236,6 +245,9 @@ Locale: en-US
 ### [Remove-MgPlace](Remove-MgPlace.md)
 {{ Fill in the Description }}
 
+### [Remove-MgPlaceAsRoomListRoom](Remove-MgPlaceAsRoomListRoom.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgUserCalendarGroup](Remove-MgUserCalendarGroup.md)
 {{ Fill in the Description }}
 
@@ -273,6 +285,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgPlace](Update-MgPlace.md)
+{{ Fill in the Description }}
+
+### [Update-MgPlaceAsRoomListRoom](Update-MgPlaceAsRoomListRoom.md)
 {{ Fill in the Description }}
 
 ### [Update-MgUserCalendarGroup](Update-MgUserCalendarGroup.md)

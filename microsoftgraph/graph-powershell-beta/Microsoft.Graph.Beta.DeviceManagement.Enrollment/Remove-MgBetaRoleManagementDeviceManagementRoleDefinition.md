@@ -12,7 +12,7 @@ ms.prod: directory-management
 Delete a unifiedRoleDefinition object for an RBAC provider.
 You cannot delete built-in roles.
 This feature requires a Microsoft Entra ID P1 or P2 license.
-The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- directory (Microsoft Entra ID)  This API is available in the following national cloud deployments.
+The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- directory (Microsoft Entra ID)
 
 ## SYNTAX
 
@@ -32,7 +32,10 @@ Remove-MgBetaRoleManagementDeviceManagementRoleDefinition -InputObject <IDeviceM
 Delete a unifiedRoleDefinition object for an RBAC provider.
 You cannot delete built-in roles.
 This feature requires a Microsoft Entra ID P1 or P2 license.
-The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- directory (Microsoft Entra ID)  This API is available in the following national cloud deployments.
+The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- directory (Microsoft Entra ID)
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroledefinition-delete-permissions.md)]
 
 ## PARAMETERS
 

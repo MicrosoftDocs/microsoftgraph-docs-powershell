@@ -11,7 +11,6 @@ schema: 2.0.0
 Retrieve a single chat (without its messages).
 This method supports federation.
 To access a chat, at least one chat member must belong to the tenant the request initiated from.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserChat](/powershell/module/Microsoft.Graph.Teams/Get-MgUserChat?view=graph-powershell-1.0)
@@ -41,7 +40,6 @@ Get-MgBetaUserChat -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-
 Retrieve a single chat (without its messages).
 This method supports federation.
 To access a chat, at least one chat member must belong to the tenant the request initiated from.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -289,6 +287,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
   \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
   \[ConversationMemberId \<String\>\]: The unique identifier of conversationMember
+  \[DayNoteId \<String\>\]: The unique identifier of dayNote
   \[DeletedChatId \<String\>\]: The unique identifier of deletedChat
   \[DeletedTeamId \<String\>\]: The unique identifier of deletedTeam
   \[GroupId \<String\>\]: The unique identifier of group

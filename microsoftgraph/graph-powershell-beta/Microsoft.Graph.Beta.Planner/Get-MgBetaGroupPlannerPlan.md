@@ -42,6 +42,9 @@ Read-only.
 Nullable.
 Returns the plannerPlans owned by the group.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannergroup-list-plans-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

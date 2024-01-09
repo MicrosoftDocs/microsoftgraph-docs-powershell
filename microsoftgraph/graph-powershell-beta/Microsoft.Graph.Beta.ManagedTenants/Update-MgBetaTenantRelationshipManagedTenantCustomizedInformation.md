@@ -10,7 +10,6 @@ ms.prod: multi-tenant-management
 
 ## SYNOPSIS
 Update the properties of a tenantCustomizedInformation object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -46,7 +45,9 @@ Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation -InputObject <
 
 ## DESCRIPTION
 Update the properties of a tenantCustomizedInformation object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-tenantcustomizedinformation-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation Cmdlet
@@ -347,4 +348,5 @@ INPUTOBJECT \<IManagedTenantsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantcustomizedinformation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantcustomizedinformation)
+
 

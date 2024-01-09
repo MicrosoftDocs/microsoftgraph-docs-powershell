@@ -35,6 +35,9 @@ Get-MgBetaUserDeviceUsageRights -InputObject <ICrossDeviceExperiencesIdentity> [
 ## DESCRIPTION
 Represents the usage rights a device has been granted.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-list-usagerights-permissions.md)]
+
 ## PARAMETERS
 
 ### -All

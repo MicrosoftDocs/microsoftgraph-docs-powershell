@@ -12,7 +12,6 @@ ms.prod: extensions
 Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
 You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
 The table in the Permissions section lists the resources that support open extensions.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupEventExtension](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaGroupEventExtension?view=graph-powershell-beta)
@@ -47,7 +46,6 @@ New-MgGroupEventExtension -InputObject <ICalendarIdentity> -BodyParameter <Hasht
 Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
 You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
 The table in the Permissions section lists the resources that support open extensions.
-This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -200,6 +198,7 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[ExtensionId \<String\>\]: The unique identifier of extension
   \[GroupId \<String\>\]: The unique identifier of group
   \[PlaceId \<String\>\]: The unique identifier of place
+  \[RoomId \<String\>\]: The unique identifier of room
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS

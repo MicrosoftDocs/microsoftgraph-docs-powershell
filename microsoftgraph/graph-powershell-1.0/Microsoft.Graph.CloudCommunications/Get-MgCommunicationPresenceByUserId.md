@@ -10,7 +10,6 @@ ms.prod: cloud-communications
 
 ## SYNOPSIS
 Get the presence information for multiple users.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaCommunicationPresenceByUserId](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationPresenceByUserId?view=graph-powershell-beta)
@@ -32,7 +31,9 @@ Get-MgCommunicationPresenceByUserId
 
 ## DESCRIPTION
 Get the presence information for multiple users.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudcommunications-getpresencesbyuserid-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

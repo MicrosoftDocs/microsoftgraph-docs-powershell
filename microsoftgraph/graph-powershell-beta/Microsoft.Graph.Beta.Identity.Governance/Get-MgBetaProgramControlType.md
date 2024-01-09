@@ -35,6 +35,9 @@ Get-MgBetaProgramControlType -InputObject <IIdentityGovernanceIdentity> [-Expand
 ## DESCRIPTION
 Get entity from programControlTypes by key
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/programcontroltype-list-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaProgramControlType Cmdlet
 ```powershell

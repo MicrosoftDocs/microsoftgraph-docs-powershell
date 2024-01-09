@@ -52,6 +52,9 @@ Get-MgChatPinnedMessage -InputObject <ITeamsIdentity> [-ExpandProperty <String[]
 A collection of all the pinned messages in the chat.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-list-pinnedmessages-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: List all the pinned messages in a chat
 

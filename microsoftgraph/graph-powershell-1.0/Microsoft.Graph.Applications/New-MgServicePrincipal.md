@@ -10,7 +10,6 @@ ms.prod: applications
 
 ## SYNOPSIS
 Create a new servicePrincipal object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipal?view=graph-powershell-beta)
@@ -58,7 +57,9 @@ New-MgServicePrincipal -BodyParameter <IMicrosoftGraphServicePrincipal> [-WhatIf
 
 ## DESCRIPTION
 Create a new servicePrincipal object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-post-serviceprincipals-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Create a new service principal object
@@ -1542,11 +1543,11 @@ For applications that are not SAML, do not write or otherwise rely on this prope
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    \[IsRemoteDesktopProtocolEnabled \<Boolean?\>\]: 
-    \[TargetDeviceGroups \<IMicrosoftGraphTargetDeviceGroup\[\]\>\]: 
+    \[IsRemoteDesktopProtocolEnabled \<Boolean?\>\]: Determines if Microsoft Entra ID RDS authentication protocol for RDP is enabled.
+    \[TargetDeviceGroups \<IMicrosoftGraphTargetDeviceGroup\[\]\>\]: The collection of target device groups that are associated with the RDS security configuration that will be enabled for SSO when a client connects to the target device over RDP using the new Microsoft Entra ID RDS authentication protocol.
       \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      \[DisplayName \<String\>\]: 
+      \[DisplayName \<String\>\]: Display name for the target device group.
   \[ReplyUrls \<String\[\]\>\]: The URLs that user tokens are sent to for sign in with the associated application, or the redirect URIs that OAuth 2.0 authorization codes and access tokens are sent to for the associated application.
 Not nullable.
   \[ResourceSpecificApplicationPermissions \<IMicrosoftGraphResourceSpecificPermission\[\]\>\]: The resource-specific application permissions exposed by this application.
@@ -2107,11 +2108,11 @@ REMOTEDESKTOPSECURITYCONFIGURATION \<IMicrosoftGraphRemoteDesktopSecurityConfigu
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  \[IsRemoteDesktopProtocolEnabled \<Boolean?\>\]: 
-  \[TargetDeviceGroups \<IMicrosoftGraphTargetDeviceGroup\[\]\>\]: 
+  \[IsRemoteDesktopProtocolEnabled \<Boolean?\>\]: Determines if Microsoft Entra ID RDS authentication protocol for RDP is enabled.
+  \[TargetDeviceGroups \<IMicrosoftGraphTargetDeviceGroup\[\]\>\]: The collection of target device groups that are associated with the RDS security configuration that will be enabled for SSO when a client connects to the target device over RDP using the new Microsoft Entra ID RDS authentication protocol.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    \[DisplayName \<String\>\]: 
+    \[DisplayName \<String\>\]: Display name for the target device group.
 
 RESOURCESPECIFICAPPLICATIONPERMISSIONS \<IMicrosoftGraphResourceSpecificPermission\[\]\>: The resource-specific application permissions exposed by this application.
 Currently, resource-specific permissions are only supported for Teams apps accessing to specific chats and teams using Microsoft Graph.

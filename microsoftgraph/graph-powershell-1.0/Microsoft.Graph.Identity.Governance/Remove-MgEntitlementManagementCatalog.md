@@ -10,7 +10,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 Delete an accessPackageCatalog.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,9 @@ Remove-MgEntitlementManagementCatalog -InputObject <IIdentityGovernanceIdentity>
 
 ## DESCRIPTION
 Delete an accessPackageCatalog.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackagecatalog-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

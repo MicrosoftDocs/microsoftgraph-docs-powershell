@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Use this API to create a new CalendarGroup.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserCalendarGroup](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserCalendarGroup?view=graph-powershell-beta)
@@ -45,7 +44,9 @@ New-MgUserCalendarGroup -InputObject <ICalendarIdentity> -BodyParameter <IMicros
 
 ## DESCRIPTION
 Use this API to create a new CalendarGroup.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-post-calendargroups-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -741,10 +742,12 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[ExtensionId \<String\>\]: The unique identifier of extension
   \[GroupId \<String\>\]: The unique identifier of group
   \[PlaceId \<String\>\]: The unique identifier of place
+  \[RoomId \<String\>\]: The unique identifier of room
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 [New-MgBetaUserCalendarGroup](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserCalendarGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusercalendargroup](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusercalendargroup)
+
 

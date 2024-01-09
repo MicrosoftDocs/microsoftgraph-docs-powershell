@@ -10,7 +10,6 @@ ms.prod: cloud-pc
 
 ## SYNOPSIS
 Validate that a set of cloudPC devices meet the requirements to be bulk resized.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -29,7 +28,9 @@ Test-MgBetaDeviceManagementVirtualEndpointCloudPcBulkResize
 
 ## DESCRIPTION
 Validate that a set of cloudPC devices meet the requirements to be bulk resized.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-validatebulkresize-permissions.md)]
 
 ## PARAMETERS
 

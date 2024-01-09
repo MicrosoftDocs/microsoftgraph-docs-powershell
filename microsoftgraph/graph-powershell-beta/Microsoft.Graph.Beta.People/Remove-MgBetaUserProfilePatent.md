@@ -10,7 +10,6 @@ ms.prod: people
 
 ## SYNOPSIS
 Deletes an itemPatent object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,9 @@ Remove-MgBetaUserProfilePatent -InputObject <IPeopleIdentity> [-IfMatch <String>
 
 ## DESCRIPTION
 Deletes an itemPatent object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/itempatent-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaUserProfilePatent Cmdlet

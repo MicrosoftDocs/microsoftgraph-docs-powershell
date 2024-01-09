@@ -11,7 +11,6 @@ ms.prod: applications
 ## SYNOPSIS
 Temporarily stop a running synchronization job.
 All the progress, including job state, is persisted, and the job continues from where it left off when a start call is made.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Suspend-MgServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Suspend-MgServicePrincipalSynchronizationJob?view=graph-powershell-1.0)
@@ -33,7 +32,9 @@ Suspend-MgBetaServicePrincipalSynchronizationJob -InputObject <IApplicationsIden
 ## DESCRIPTION
 Temporarily stop a running synchronization job.
 All the progress, including job state, is persisted, and the job continues from where it left off when a start call is made.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronizationjob-pause-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Suspend-MgBetaServicePrincipalSynchronizationJob Cmdlet
@@ -190,6 +191,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Suspend-MgServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Suspend-MgServicePrincipalSynchronizationJob?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/suspend-mgbetaserviceprincipalsynchronizationjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/suspend-mgbetaserviceprincipalsynchronizationjob)
-
 
 

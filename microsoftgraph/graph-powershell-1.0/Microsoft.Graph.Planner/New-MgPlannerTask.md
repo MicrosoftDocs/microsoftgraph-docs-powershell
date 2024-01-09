@@ -10,7 +10,6 @@ ms.prod: planner
 
 ## SYNOPSIS
 Create a new plannerTask.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/New-MgBetaPlannerTask?view=graph-powershell-beta)
@@ -40,7 +39,9 @@ New-MgPlannerTask -BodyParameter <IMicrosoftGraphPlannerTask> [-WhatIf] [-Confir
 
 ## DESCRIPTION
 Create a new plannerTask.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/planner-post-tasks-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

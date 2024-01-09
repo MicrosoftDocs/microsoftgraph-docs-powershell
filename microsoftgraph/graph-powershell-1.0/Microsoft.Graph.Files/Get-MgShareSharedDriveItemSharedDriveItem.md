@@ -11,7 +11,6 @@ ms.prod: files
 ## SYNOPSIS
 Access a shared DriveItem or a collection of shared items by using a shareId or sharing URL.
 To use a sharing URL with this API, your app needs to transform the URL into a sharing token.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaShareSharedDriveItemSharedDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareSharedDriveItemSharedDriveItem?view=graph-powershell-beta)
@@ -40,7 +39,9 @@ Get-MgShareSharedDriveItemSharedDriveItem -InputObject <IFilesIdentity> [-Expand
 ## DESCRIPTION
 Access a shared DriveItem or a collection of shared items by using a shareId or sharing URL.
 To use a sharing URL with this API, your app needs to transform the URL into a sharing token.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/shares-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

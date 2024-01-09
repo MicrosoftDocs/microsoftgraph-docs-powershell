@@ -30,6 +30,9 @@ Get-MgDriveItemChildContent -InputObject <IFilesIdentity> -OutFile <String> [-Pa
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-list-children-permissions.md)]
+
 ## EXAMPLES
 
 ## PARAMETERS

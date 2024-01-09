@@ -11,7 +11,6 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Update the properties of a sharing permission by patching the permission resource.
 Only the roles property can be modified this way.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootPermission?view=graph-powershell-beta)
@@ -57,7 +56,9 @@ Update-MgDriveRootPermission -InputObject <IFilesIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Update the properties of a sharing permission by patching the permission resource.
 Only the roles property can be modified this way.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/permission-update-permissions.md)]
 
 ## PARAMETERS
 
@@ -627,5 +628,6 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
 [Update-MgBetaDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootPermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriverootpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriverootpermission)
+
 
 

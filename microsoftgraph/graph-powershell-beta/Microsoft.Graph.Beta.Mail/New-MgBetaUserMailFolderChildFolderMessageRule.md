@@ -11,7 +11,6 @@ ms.prod: outlook
 ## SYNOPSIS
 Create a messageRule object by specifying a set of conditions and actions.
 Outlook carries out those actions if an incoming message in the user's Inbox meets the specified conditions.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgUserMailFolderChildFolderMessageRule](/powershell/module/Microsoft.Graph.Mail/New-MgUserMailFolderChildFolderMessageRule?view=graph-powershell-1.0)
@@ -51,7 +50,9 @@ New-MgBetaUserMailFolderChildFolderMessageRule -InputObject <IMailIdentity>
 ## DESCRIPTION
 Create a messageRule object by specifying a set of conditions and actions.
 Outlook carries out those actions if an incoming message in the user's Inbox meets the specified conditions.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailfolder-post-messagerules-permissions.md)]
 
 ## PARAMETERS
 

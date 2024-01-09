@@ -10,7 +10,6 @@ ms.prod: applications
 
 ## SYNOPSIS
 Update the properties of an application object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaApplicationByAppId](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationByAppId?view=graph-powershell-beta)
@@ -93,7 +92,9 @@ Update-MgApplicationByAppId -InputObject <IApplicationsIdentity> -BodyParameter 
 
 ## DESCRIPTION
 Update the properties of an application object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-update-permissions.md)]
 
 ## PARAMETERS
 
@@ -1282,7 +1283,10 @@ Following values are supported.
 Not nullable.
 Binary - 256 bytes maximumBooleanDateTime - Must be specified in ISO 8601 format.
 Will be stored in UTC.Integer - 32-bit value.LargeInteger - 64-bit value.String - 256 characters maximum
-    \[IsMultiValued \<Boolean?\>\]: 
+    \[IsMultiValued \<Boolean?\>\]: Defines the directory extension as a multi-valued property.
+When true, the directory extension property can store a collection of objects of the dataType; for example, a collection of integers.
+The default value is false.
+Supports $filter (eq).
     \[IsSyncedFromOnPremises \<Boolean?\>\]: Indicates if this extension property was synced from on-premises active directory using Microsoft Entra Connect.
 Read-only.
     \[Name \<String\>\]: Name of the extension property.
@@ -1809,7 +1813,10 @@ Following values are supported.
 Not nullable.
 Binary - 256 bytes maximumBooleanDateTime - Must be specified in ISO 8601 format.
 Will be stored in UTC.Integer - 32-bit value.LargeInteger - 64-bit value.String - 256 characters maximum
-  \[IsMultiValued \<Boolean?\>\]: 
+  \[IsMultiValued \<Boolean?\>\]: Defines the directory extension as a multi-valued property.
+When true, the directory extension property can store a collection of objects of the dataType; for example, a collection of integers.
+The default value is false.
+Supports $filter (eq).
   \[IsSyncedFromOnPremises \<Boolean?\>\]: Indicates if this extension property was synced from on-premises active directory using Microsoft Entra Connect.
 Read-only.
   \[Name \<String\>\]: Name of the extension property.

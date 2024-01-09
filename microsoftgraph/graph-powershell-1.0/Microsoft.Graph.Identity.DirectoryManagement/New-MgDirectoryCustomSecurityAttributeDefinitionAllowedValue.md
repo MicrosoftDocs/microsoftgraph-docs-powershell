@@ -10,7 +10,6 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Create a new allowedValue object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue?view=graph-powershell-beta)
@@ -45,7 +44,9 @@ New-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue
 
 ## DESCRIPTION
 Create a new allowedValue object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/customsecurityattributedefinition-post-allowedvalues-permissions.md)]
 
 ## PARAMETERS
 

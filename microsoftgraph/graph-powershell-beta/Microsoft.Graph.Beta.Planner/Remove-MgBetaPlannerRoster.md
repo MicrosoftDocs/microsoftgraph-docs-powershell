@@ -10,7 +10,6 @@ ms.prod: planner
 
 ## SYNOPSIS
 Delete a plannerRoster object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,9 @@ Remove-MgBetaPlannerRoster -InputObject <IPlannerIdentity> [-IfMatch <String>] [
 
 ## DESCRIPTION
 Delete a plannerRoster object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerroster-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaPlannerRoster Cmdlet

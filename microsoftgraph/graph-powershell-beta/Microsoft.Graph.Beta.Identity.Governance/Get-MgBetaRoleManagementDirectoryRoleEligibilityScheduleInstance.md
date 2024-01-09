@@ -11,7 +11,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 Read the properties and relationships of an unifiedRoleEligibilityScheduleInstance object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstance?view=graph-powershell-1.0)
@@ -40,7 +39,12 @@ Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstance -InputObject <I
 
 ## DESCRIPTION
 Read the properties and relationships of an unifiedRoleEligibilityScheduleInstance object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleeligibilityscheduleinstance-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rbacapplication-list-roleeligibilityscheduleinstances-permissions.md)]
 
 ## PARAMETERS
 

@@ -9,7 +9,7 @@ ms.prod: users
 # Get-MgBetaUserSponsor
 
 ## SYNOPSIS
-The users and groups that are responsible for this guest user's privileges in the tenant and keep the guest user's information and access updated.
+The users and groups responsible for this guest user's privileges in the tenant and keep the guest user's information and access updated.
 (HTTP Methods: GET, POST, DELETE.).
 Supports $expand.
 
@@ -35,9 +35,12 @@ Get-MgBetaUserSponsor -InputObject <IUsersIdentity> [-ExpandProperty <String[]>]
 ```
 
 ## DESCRIPTION
-The users and groups that are responsible for this guest user's privileges in the tenant and keep the guest user's information and access updated.
+The users and groups responsible for this guest user's privileges in the tenant and keep the guest user's information and access updated.
 (HTTP Methods: GET, POST, DELETE.).
 Supports $expand.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-sponsors-permissions.md)]
 
 ## PARAMETERS
 
@@ -280,7 +283,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersponsor](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersponsor)
-
 
 
 

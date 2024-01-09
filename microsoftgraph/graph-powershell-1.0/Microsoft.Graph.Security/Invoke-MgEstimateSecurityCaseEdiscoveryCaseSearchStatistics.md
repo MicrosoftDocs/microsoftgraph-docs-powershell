@@ -10,7 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Run an estimate of the number of emails and documents in the eDiscovery search.
 To learn more about searches in eDiscovery, see Collect data for a case in eDiscovery (Premium).
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaEstimateSecurityCaseEdiscoveryCaseSearchStatistics](/powershell/module/Microsoft.Graph.Beta.Security/Invoke-MgBetaEstimateSecurityCaseEdiscoveryCaseSearchStatistics?view=graph-powershell-beta)
@@ -32,7 +31,6 @@ Invoke-MgEstimateSecurityCaseEdiscoveryCaseSearchStatistics -InputObject <ISecur
 ## DESCRIPTION
 Run an estimate of the number of emails and documents in the eDiscovery search.
 To learn more about searches in eDiscovery, see Collect data for a case in eDiscovery (Premium).
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgEstimateSecurityCaseEdiscoveryCaseSearchStatistics Cmdlet

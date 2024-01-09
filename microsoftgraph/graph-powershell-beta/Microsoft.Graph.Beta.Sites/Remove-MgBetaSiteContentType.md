@@ -9,8 +9,7 @@ ms.prod: sites-and-lists
 # Remove-MgBetaSiteContentType
 
 ## SYNOPSIS
-Remove a content type\]\[contentType\] from a \[list\]\[\] or a \[site\]\[\].
-This API is available in the following \[national cloud deployments.
+Remove a \[content type\]\[contentType\] from a \[list\]\[\] or a \[site\]\[\].
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgSiteContentType](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteContentType?view=graph-powershell-1.0)
@@ -30,8 +29,10 @@ Remove-MgBetaSiteContentType -InputObject <ISitesIdentity> [-IfMatch <String>] [
 ```
 
 ## DESCRIPTION
-Remove a content type\]\[contentType\] from a \[list\]\[\] or a \[site\]\[\].
-This API is available in the following \[national cloud deployments.
+Remove a \[content type\]\[contentType\] from a \[list\]\[\] or a \[site\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

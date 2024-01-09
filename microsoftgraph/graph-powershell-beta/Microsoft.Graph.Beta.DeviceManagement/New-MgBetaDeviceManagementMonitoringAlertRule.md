@@ -10,7 +10,6 @@ ms.prod: cloud-pc
 
 ## SYNOPSIS
 Create an alertRule object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -30,7 +29,9 @@ New-MgBetaDeviceManagementMonitoringAlertRule -BodyParameter <IMicrosoftGraphDev
 
 ## DESCRIPTION
 Create an alertRule object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/devicemanagement-alertrule-post-permissions.md)]
 
 ## PARAMETERS
 
@@ -144,8 +145,8 @@ Accept wildcard characters: False
 
 ### -IsSystemRule
 Indicates whether the rule is a system rule.
-If true, the rule is a system rule; otherwise, the rule is a custom defined rule and can be edited.
-System rules are built-in and only a few properties can be edited.
+If true, the rule is a system rule; otherwise, the rule is a custom-defined rule and can be edited.
+System rules are built in and only a few properties can be edited.
 
 ```yaml
 Type: SwitchParameter
@@ -262,8 +263,8 @@ Read-only.
   \[Enabled \<Boolean?\>\]: The status of the rule that indicates whether the rule is enabled or disabled.
 If true, the rule is enabled; otherwise, the rule is disabled.
   \[IsSystemRule \<Boolean?\>\]: Indicates whether the rule is a system rule.
-If true, the rule is a system rule; otherwise, the rule is a custom defined rule and can be edited.
-System rules are built-in and only a few properties can be edited.
+If true, the rule is a system rule; otherwise, the rule is a custom-defined rule and can be edited.
+System rules are built in and only a few properties can be edited.
   \[NotificationChannels \<IMicrosoftGraphDeviceManagementNotificationChannel\[\]\>\]: The notification channels of the rule selected by the user.
     \[NotificationChannelType \<String\>\]: notificationChannelType
     \[NotificationReceivers \<IMicrosoftGraphDeviceManagementNotificationReceiver\[\]\>\]: Information about the notification receivers, such as locale and contact information.
@@ -301,5 +302,6 @@ THRESHOLD \<IMicrosoftGraphDeviceManagementRuleThreshold\>: ruleThreshold
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmonitoringalertrule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmonitoringalertrule)
+
 
 

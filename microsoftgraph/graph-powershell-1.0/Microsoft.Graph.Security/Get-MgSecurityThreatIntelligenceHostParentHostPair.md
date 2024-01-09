@@ -38,6 +38,9 @@ Get-MgSecurityThreatIntelligenceHostParentHostPair -InputObject <ISecurityIdenti
 ## DESCRIPTION
 The hostPairs that are associated with a host, where that host is the childHost and has an incoming pairing with a parentHost.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-host-list-parenthostpairs-permissions.md)]
+
 ## PARAMETERS
 
 ### -All

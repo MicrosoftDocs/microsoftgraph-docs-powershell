@@ -9,8 +9,7 @@ ms.prod: microsoft-teams
 # New-MgTeamChannelMessage
 
 ## SYNOPSIS
-Send a new chatMessage in the specified channel.
-This API is available in the following national cloud deployments.
+Send a new chatMessage in the specified channel or a chat.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamChannelMessage?view=graph-powershell-beta)
@@ -60,8 +59,7 @@ New-MgTeamChannelMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicrosof
 ```
 
 ## DESCRIPTION
-Send a new chatMessage in the specified channel.
-This API is available in the following national cloud deployments.
+Send a new chatMessage in the specified channel or a chat.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -1287,4 +1285,5 @@ Link to the message in Microsoft Teams.
 [New-MgBetaTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamChannelMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamchannelmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamchannelmessage)
+
 

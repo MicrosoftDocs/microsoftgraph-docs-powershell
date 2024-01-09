@@ -38,6 +38,9 @@ Get-MgServicePrincipalDelegatedPermissionClassification -InputObject <IApplicati
 ## DESCRIPTION
 Get delegatedPermissionClassifications from servicePrincipals
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-list-delegatedpermissionclassifications-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -293,6 +296,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Get-MgBetaServicePrincipalDelegatedPermissionClassification](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalDelegatedPermissionClassification?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipaldelegatedpermissionclassification](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipaldelegatedpermissionclassification)
-
 
 

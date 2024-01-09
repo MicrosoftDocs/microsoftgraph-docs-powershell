@@ -11,7 +11,6 @@ ms.prod: education
 ## SYNOPSIS
 Create a new educationCategory on an educationClass.
 Only teachers can perform this operation.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgEducationClassAssignmentCategory](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassAssignmentCategory?view=graph-powershell-1.0)
@@ -72,7 +71,9 @@ New-MgBetaEducationClassAssignmentCategory -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Create a new educationCategory on an educationClass.
 Only teachers can perform this operation.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-post-category-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -35,6 +35,9 @@ Get-MgBetaSecurityLabelRetentionLabel -InputObject <ISecurityIdentity> [-ExpandP
 ## DESCRIPTION
 Represents how customers can manage their data, whether and for how long to retain or delete it.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-labelsroot-list-retentionlabel-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaSecurityLabelRetentionLabel Cmdlet
 ```powershell
@@ -255,6 +258,8 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[ArticleId \<String\>\]: The unique identifier of article
   \[ArticleIndicatorId \<String\>\]: The unique identifier of articleIndicator
   \[AttackSimulationOperationId \<String\>\]: The unique identifier of attackSimulationOperation
+  \[AuditLogQueryId \<String\>\]: The unique identifier of auditLogQuery
+  \[AuditLogRecordId \<String\>\]: The unique identifier of auditLogRecord
   \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
   \[AuthorityTemplateId \<String\>\]: The unique identifier of authorityTemplate
   \[CaseOperationId \<String\>\]: The unique identifier of caseOperation

@@ -11,7 +11,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 In Microsoft Entra entitlement management, retrieve the properties and relationships of an accessPackageAssignmentPolicy object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementAccessPackageAssignmentPolicy](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageAssignmentPolicy?view=graph-powershell-1.0)
@@ -58,7 +57,12 @@ Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicy [-ExpandProperty <S
 
 ## DESCRIPTION
 In Microsoft Entra entitlement management, retrieve the properties and relationships of an accessPackageAssignmentPolicy object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackageassignmentpolicy-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/entitlementmanagement-list-accesspackageassignmentpolicies-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get all access package policy assignment policies

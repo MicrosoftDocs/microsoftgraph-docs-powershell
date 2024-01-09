@@ -10,7 +10,6 @@ ms.prod: onenote
 
 ## SYNOPSIS
 Create a new onenoteSection in the specified notebook.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserOnenoteNotebookSection](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaUserOnenoteNotebookSection?view=graph-powershell-beta)
@@ -51,7 +50,9 @@ New-MgUserOnenoteNotebookSection -InputObject <INotesIdentity> -BodyParameter <I
 
 ## DESCRIPTION
 Create a new onenoteSection in the specified notebook.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/notebook-post-sections-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -990,4 +991,5 @@ Read-only.
 [New-MgBetaUserOnenoteNotebookSection](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaUserOnenoteNotebookSection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mguseronenotenotebooksection](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mguseronenotenotebooksection)
+
 

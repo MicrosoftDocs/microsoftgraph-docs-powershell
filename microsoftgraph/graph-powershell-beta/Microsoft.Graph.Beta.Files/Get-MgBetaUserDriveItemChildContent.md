@@ -31,6 +31,9 @@ Get-MgBetaUserDriveItemChildContent -InputObject <IFilesIdentity> -OutFile <Stri
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-list-children-permissions.md)]
+
 ## PARAMETERS
 
 ### -DriveId

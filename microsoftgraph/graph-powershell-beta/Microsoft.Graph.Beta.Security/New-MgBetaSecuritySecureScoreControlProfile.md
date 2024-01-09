@@ -499,3 +499,4 @@ Required
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritysecurescorecontrolprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritysecurescorecontrolprofile)
 
+

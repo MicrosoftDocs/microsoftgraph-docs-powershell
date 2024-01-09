@@ -9,8 +9,7 @@ ms.prod: sites-and-lists
 # Unpublish-MgShareListContentType
 
 ## SYNOPSIS
-Unpublish a contentType\]\[\] from a content type hub site.
-This API is available in the following \[national cloud deployments.
+Unpublish a \[contentType\]\[\] from a content type hub site.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Unpublish-MgBetaShareListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Unpublish-MgBetaShareListContentType?view=graph-powershell-beta)
@@ -30,8 +29,10 @@ Unpublish-MgShareListContentType -InputObject <IFilesIdentity> [-PassThru] [-Wha
 ```
 
 ## DESCRIPTION
-Unpublish a contentType\]\[\] from a content type hub site.
-This API is available in the following \[national cloud deployments.
+Unpublish a \[contentType\]\[\] from a content type hub site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-unpublish-permissions.md)]
 
 ## PARAMETERS
 

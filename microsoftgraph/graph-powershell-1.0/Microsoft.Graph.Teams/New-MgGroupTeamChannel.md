@@ -13,7 +13,6 @@ Create a new channel in a team, as specified in the request body.
 When you create a channel, the maximum length of the channel's displayName is 50 characters.
 This is the name that appears to the user in Microsoft Teams.
 If you're creating a private channel, you can add a maximum of 200 members.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamChannel?view=graph-powershell-beta)
@@ -59,7 +58,6 @@ Create a new channel in a team, as specified in the request body.
 When you create a channel, the maximum length of the channel's displayName is 50 characters.
 This is the name that appears to the user in Microsoft Teams.
 If you're creating a private channel, you can add a maximum of 200 members.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
@@ -4379,9 +4377,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
-- _ !
-# ^ ~.
+Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
+
+
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -8978,9 +8976,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
-- _ !
-# ^ ~.
+Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
+
+
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -13462,9 +13460,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
-- _ !
-# ^ ~.
+Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
+
+
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -14362,4 +14360,5 @@ Read only.
 [New-MgBetaGroupTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamChannel?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamchannel)
+
 

@@ -14,7 +14,6 @@ For example, an organization can have a Microsoft 365 Enterprise E3 subscription
 You can also enable and disable specific plans associated with a subscription.
 To learn more about subscriptions and licenses, see this Technet article.
 To get the subscriptions available in the directory, perform a GET subscribedSkus request.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Set-MgUserLicense](/powershell/module/Microsoft.Graph.Users.Actions/Set-MgUserLicense?view=graph-powershell-1.0)
@@ -53,7 +52,9 @@ For example, an organization can have a Microsoft 365 Enterprise E3 subscription
 You can also enable and disable specific plans associated with a subscription.
 To learn more about subscriptions and licenses, see this Technet article.
 To get the subscriptions available in the directory, perform a GET subscribedSkus request.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-assignlicense-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Assign a license to a user
@@ -364,6 +365,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[NotebookId \<String\>\]: The unique identifier of notebook
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
   \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
   \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
   \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask
@@ -380,4 +382,5 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 [Set-MgUserLicense](/powershell/module/Microsoft.Graph.Users.Actions/Set-MgUserLicense?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/set-mgbetauserlicense](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/set-mgbetauserlicense)
+
 

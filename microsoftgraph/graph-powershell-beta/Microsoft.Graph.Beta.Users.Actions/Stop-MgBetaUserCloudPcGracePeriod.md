@@ -13,7 +13,6 @@ End the grace period for a specific Cloud PC.
 The grace period is triggered when the Cloud PC license is removed or the provisioning policy is unassigned.
 It allows users to access Cloud PCs for up to seven days before deprovisioning occurs.
 Ending the grace period immediately deprovisions the Cloud PC without waiting the seven days.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -34,7 +33,9 @@ End the grace period for a specific Cloud PC.
 The grace period is triggered when the Cloud PC license is removed or the provisioning policy is unassigned.
 It allows users to access Cloud PCs for up to seven days before deprovisioning occurs.
 Ending the grace period immediately deprovisions the Cloud PC without waiting the seven days.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-endgraceperiod-permissions.md)]
 
 ## PARAMETERS
 
@@ -174,6 +175,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[NotebookId \<String\>\]: The unique identifier of notebook
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
   \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
   \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
   \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask

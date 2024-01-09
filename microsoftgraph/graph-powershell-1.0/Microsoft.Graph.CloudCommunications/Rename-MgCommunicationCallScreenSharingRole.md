@@ -10,7 +10,6 @@ ms.prod: cloud-communications
 
 ## SYNOPSIS
 Allow applications to share screen content with the participants of a group call.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Rename-MgBetaCommunicationCallScreenSharingRole](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Rename-MgBetaCommunicationCallScreenSharingRole?view=graph-powershell-beta)
@@ -45,7 +44,9 @@ Rename-MgCommunicationCallScreenSharingRole -InputObject <ICloudCommunicationsId
 
 ## DESCRIPTION
 Allow applications to share screen content with the participants of a group call.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-changescreensharingrole-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Rename-MgCommunicationCallScreenSharingRole Cmdlet
@@ -209,6 +210,7 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[AudioRoutingGroupId \<String\>\]: The unique identifier of audioRoutingGroup
   \[CallId \<String\>\]: The unique identifier of call
   \[CallRecordId \<String\>\]: The unique identifier of callRecord
+  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
   \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
   \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
   \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession

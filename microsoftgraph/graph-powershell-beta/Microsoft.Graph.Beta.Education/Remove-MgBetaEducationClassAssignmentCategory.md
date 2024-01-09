@@ -11,7 +11,6 @@ ms.prod: education
 ## SYNOPSIS
 Delete an existing category.
 Only teachers can perform this operation.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgEducationClassAssignmentCategory](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassAssignmentCategory?view=graph-powershell-1.0)
@@ -33,7 +32,9 @@ Remove-MgBetaEducationClassAssignmentCategory -InputObject <IEducationIdentity> 
 ## DESCRIPTION
 Delete an existing category.
 Only teachers can perform this operation.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationcategory-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

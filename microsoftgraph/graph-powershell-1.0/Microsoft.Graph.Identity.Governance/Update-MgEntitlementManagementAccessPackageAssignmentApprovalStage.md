@@ -10,7 +10,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 Approve or deny an approvalStage object in an approval.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -45,7 +44,9 @@ Update-MgEntitlementManagementAccessPackageAssignmentApprovalStage -InputObject 
 
 ## DESCRIPTION
 Approve or deny an approvalStage object in an approval.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/approvalstage-update-permissions.md)]
 
 ## PARAMETERS
 

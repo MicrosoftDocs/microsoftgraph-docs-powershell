@@ -12,7 +12,6 @@ ms.prod: groups
 Specify the user or group in @odata.id in the request body.
 Users in the accepted senders list can post to conversations of the group.
 Make sure you don't specify the same user or group in the accepted senders and rejected senders lists, otherwise you'll get an error.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupAcceptedSenderByRef](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupAcceptedSenderByRef?view=graph-powershell-beta)
@@ -47,7 +46,9 @@ New-MgGroupAcceptedSenderByRef -InputObject <IGroupsIdentity> -BodyParameter <IR
 Specify the user or group in @odata.id in the request body.
 Users in the accepted senders list can post to conversations of the group.
 Make sure you don't specify the same user or group in the accepted senders and rejected senders lists, otherwise you'll get an error.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-post-acceptedsenders-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

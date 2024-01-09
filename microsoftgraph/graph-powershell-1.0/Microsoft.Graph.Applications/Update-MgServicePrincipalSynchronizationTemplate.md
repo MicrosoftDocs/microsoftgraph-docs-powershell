@@ -10,7 +10,6 @@ ms.prod: applications
 
 ## SYNOPSIS
 Update (override) the synchronization template associated with a given application.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaServicePrincipalSynchronizationTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalSynchronizationTemplate?view=graph-powershell-beta)
@@ -50,7 +49,9 @@ Update-MgServicePrincipalSynchronizationTemplate -InputObject <IApplicationsIden
 
 ## DESCRIPTION
 Update (override) the synchronization template associated with a given application.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationtemplate-update-permissions.md)]
 
 ## PARAMETERS
 

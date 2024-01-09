@@ -12,7 +12,6 @@ ms.prod: cloud-printing
 ## SYNOPSIS
 Get a task trigger from a printer.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPrintPrinterTaskTrigger](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterTaskTrigger?view=graph-powershell-1.0)
@@ -41,7 +40,12 @@ Get-MgBetaPrintPrinterTaskTrigger -InputObject <IDevicesCloudPrintIdentity> [-Ex
 ## DESCRIPTION
 Get a task trigger from a printer.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printtasktrigger-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printer-list-tasktriggers-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

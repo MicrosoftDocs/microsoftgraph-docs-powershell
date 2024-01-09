@@ -10,7 +10,6 @@ ms.prod: sharepoint
 
 ## SYNOPSIS
 Read the properties and relationships of a store object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSiteTermStore](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStore?view=graph-powershell-1.0)
@@ -31,7 +30,9 @@ Get-MgBetaSiteTermStore -InputObject <ISitesIdentity> [-ExpandProperty <String[]
 
 ## DESCRIPTION
 Read the properties and relationships of a store object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/termstore-store-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -11,7 +11,6 @@ ms.prod: directory-management
 ## SYNOPSIS
 Assign a Microsoft Entra role with administrative unit scope.
 For a list of roles that can be assigned with administrative unit scope, see Assign Microsoft Entra roles with administrative unit scope.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -44,7 +43,9 @@ New-MgBetaAdministrativeUnitScopedRoleMember -InputObject <IIdentityDirectoryMan
 ## DESCRIPTION
 Assign a Microsoft Entra role with administrative unit scope.
 For a list of roles that can be assigned with administrative unit scope, see Assign Microsoft Entra roles with administrative unit scope.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/administrativeunit-post-scopedrolemembers-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaAdministrativeUnitScopedRoleMember Cmdlet

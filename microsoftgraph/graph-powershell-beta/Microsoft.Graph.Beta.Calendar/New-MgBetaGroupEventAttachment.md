@@ -12,7 +12,6 @@ ms.prod: outlook
 Use this API to add an attachment to an existing event.
 This operation limits the size of the attachment you can add to under 3 MB.
 If an organizer adds an attachment to a meeting event, the organizer can subsequently update the event to send the attachment and update the event for each attendee as well.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgGroupEventAttachment](/powershell/module/Microsoft.Graph.Calendar/New-MgGroupEventAttachment?view=graph-powershell-1.0)
@@ -49,7 +48,9 @@ New-MgBetaGroupEventAttachment -InputObject <ICalendarIdentity> -BodyParameter <
 Use this API to add an attachment to an existing event.
 This operation limits the size of the attachment you can add to under 3 MB.
 If an organizer adds an attachment to a meeting event, the organizer can subsequently update the event to send the attachment and update the event for each attendee as well.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-post-attachments-permissions.md)]
 
 ## EXAMPLES
 

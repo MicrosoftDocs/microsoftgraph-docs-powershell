@@ -10,7 +10,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Delete a tokenIssuancePolicy object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaPolicyTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyTokenIssuancePolicy?view=graph-powershell-beta)
@@ -31,7 +30,9 @@ Remove-MgPolicyTokenIssuancePolicy -InputObject <IIdentitySignInsIdentity> [-IfM
 
 ## DESCRIPTION
 Delete a tokenIssuancePolicy object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/tokenissuancepolicy-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

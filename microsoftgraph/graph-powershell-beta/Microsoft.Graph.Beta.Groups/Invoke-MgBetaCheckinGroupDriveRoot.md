@@ -10,7 +10,6 @@ ms.prod: sharepoint
 
 ## SYNOPSIS
 Check in a checked out driveItem resource, which makes the version of the document available to others.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgCheckinGroupDriveRoot](/powershell/module/Microsoft.Graph.Groups/Invoke-MgCheckinGroupDriveRoot?view=graph-powershell-1.0)
@@ -45,7 +44,9 @@ Invoke-MgBetaCheckinGroupDriveRoot -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Check in a checked out driveItem resource, which makes the version of the document available to others.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-checkin-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

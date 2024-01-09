@@ -35,6 +35,9 @@ Get-MgBetaComplianceEdiscoveryCaseTagChildTag -InputObject <IComplianceIdentity>
 ## DESCRIPTION
 Returns the tags that are a child of a tag.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-tag-childtags-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaComplianceEdiscoveryCaseTagChildTag Cmdlet
 ```powershell

@@ -9,8 +9,7 @@ ms.prod: sharepoint
 # Update-MgBetaGroupSiteListItemField
 
 ## SYNOPSIS
-Update the properties on a listItem\]\[\].
-This API is available in the following \[national cloud deployments.
+Update the properties on a \[listItem\]\[\].
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgGroupSiteListItemField](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteListItemField?view=graph-powershell-1.0)
@@ -42,8 +41,10 @@ Update-MgBetaGroupSiteListItemField -InputObject <ISitesIdentity> -BodyParameter
 ```
 
 ## DESCRIPTION
-Update the properties on a listItem\]\[\].
-This API is available in the following \[national cloud deployments.
+Update the properties on a \[listItem\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/listitem-update-permissions.md)]
 
 ## PARAMETERS
 

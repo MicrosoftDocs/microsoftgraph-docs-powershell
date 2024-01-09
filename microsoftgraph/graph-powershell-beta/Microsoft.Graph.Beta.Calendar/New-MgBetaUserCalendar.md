@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Create a new calendar for a user.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgUserCalendar](/powershell/module/Microsoft.Graph.Calendar/New-MgUserCalendar?view=graph-powershell-1.0)
@@ -59,7 +58,9 @@ New-MgBetaUserCalendar -InputObject <ICalendarIdentity> -BodyParameter <IMicroso
 
 ## DESCRIPTION
 Create a new calendar for a user.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-post-calendars-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -1338,4 +1339,5 @@ Read-only.
 [New-MgUserCalendar](/powershell/module/Microsoft.Graph.Calendar/New-MgUserCalendar?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausercalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausercalendar)
+
 

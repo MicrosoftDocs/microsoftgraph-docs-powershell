@@ -10,7 +10,6 @@ ms.prod: ediscovery
 
 ## SYNOPSIS
 Create a new userSource object associated with an eDiscovery custodian.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource?view=graph-powershell-beta)
@@ -47,7 +46,9 @@ New-MgSecurityCaseEdiscoveryCaseCustodianUserSource -InputObject <ISecurityIdent
 
 ## DESCRIPTION
 Create a new userSource object associated with an eDiscovery custodian.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycustodian-post-usersources-permissions.md)]
 
 ## PARAMETERS
 

@@ -10,7 +10,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Create a new claimsMappingPolicy object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPolicyClaimMappingPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyClaimMappingPolicy?view=graph-powershell-beta)
@@ -32,7 +31,9 @@ New-MgPolicyClaimMappingPolicy -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [
 
 ## DESCRIPTION
 Create a new claimsMappingPolicy object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/claimsmappingpolicy-post-claimsmappingpolicies-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -256,4 +257,5 @@ Always null when the object hasn't been deleted.
 [New-MgBetaPolicyClaimMappingPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyClaimMappingPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyclaimmappingpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyclaimmappingpolicy)
+
 

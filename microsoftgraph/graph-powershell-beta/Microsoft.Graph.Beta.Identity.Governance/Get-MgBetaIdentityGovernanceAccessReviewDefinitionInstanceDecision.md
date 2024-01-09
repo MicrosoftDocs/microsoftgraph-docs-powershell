@@ -11,7 +11,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 Read the properties and relationships of an accessReviewInstanceDecisionItem object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision?view=graph-powershell-1.0)
@@ -41,7 +40,12 @@ Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision -InputObject 
 
 ## DESCRIPTION
 Read the properties and relationships of an accessReviewInstanceDecisionItem object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstancedecisionitem-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstance-list-decisions-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Retrieve a decision on an accessReviewInstance

@@ -30,6 +30,9 @@ Remove-MgBetaEducationClassAssignmentGradingCategory -InputObject <IEducationIde
 Remove a gradingCategory from an educationAssignment.
 Only teachers can perform this operation.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-delete-gradingcategory-permissions.md)]
+
 ## PARAMETERS
 
 ### -EducationAssignmentId

@@ -10,7 +10,6 @@ ms.prod: insights
 
 ## SYNOPSIS
 Update the settings in a microsoftApplicationDataAccessSettings object that specify access from Microsoft applications to Microsoft 365 user data in an organization.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -46,7 +45,9 @@ Update-MgBetaOrganizationSettingMicrosoftApplicationDataAccess
 
 ## DESCRIPTION
 Update the settings in a microsoftApplicationDataAccessSettings object that specify access from Microsoft applications to Microsoft 365 user data in an organization.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/microsoftapplicationdataaccesssettings-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaOrganizationSettingMicrosoftApplicationDataAccess Cmdlet

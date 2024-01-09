@@ -42,6 +42,9 @@ Directory objects that the user created.
 Read-only.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-list-createdobjects-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Get a list of directory objects that were created by a user
 
@@ -290,6 +293,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Get-MgBetaUserCreatedObject](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserCreatedObject?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusercreatedobject](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusercreatedobject)
-
 
 

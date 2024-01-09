@@ -10,7 +10,6 @@ ms.prod: onenote
 
 ## SYNOPSIS
 Retrieve a list of onenoteSection objects from the specified section group.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserOnenoteSectionGroupSection](/powershell/module/Microsoft.Graph.Notes/Get-MgUserOnenoteSectionGroupSection?view=graph-powershell-1.0)
@@ -25,7 +24,9 @@ Get-MgBetaUserOnenoteSectionGroupSection -SectionGroupId <String> -UserId <Strin
 
 ## DESCRIPTION
 Retrieve a list of onenoteSection objects from the specified section group.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/sectiongroup-list-sections-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

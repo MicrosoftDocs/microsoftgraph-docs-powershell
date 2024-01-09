@@ -10,7 +10,6 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Create and register a new device in the organization.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDevice](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDevice?view=graph-powershell-beta)
@@ -40,7 +39,9 @@ New-MgDevice -BodyParameter <IMicrosoftGraphDevice> [-WhatIf] [-Confirm] [<Commo
 
 ## DESCRIPTION
 Create and register a new device in the organization.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-post-devices-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -828,4 +829,5 @@ Always null when the object hasn't been deleted.
 [New-MgBetaDevice](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDevice?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdevice](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdevice)
+
 

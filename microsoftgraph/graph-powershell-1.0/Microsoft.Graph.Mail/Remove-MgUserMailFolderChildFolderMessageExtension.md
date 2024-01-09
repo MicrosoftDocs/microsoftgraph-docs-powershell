@@ -11,7 +11,6 @@ ms.prod: extensions
 ## SYNOPSIS
 Delete an open extension (openTypeExtension object) from the specified instance of a resource.
 For the list of resources that support open extensions, see the table in the Permissions section.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserMailFolderChildFolderMessageExtension](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMailFolderChildFolderMessageExtension?view=graph-powershell-beta)
@@ -34,7 +33,6 @@ Remove-MgUserMailFolderChildFolderMessageExtension -InputObject <IMailIdentity> 
 ## DESCRIPTION
 Delete an open extension (openTypeExtension object) from the specified instance of a resource.
 For the list of resources that support open extensions, see the table in the Permissions section.
-This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

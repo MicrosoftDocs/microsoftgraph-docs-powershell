@@ -38,6 +38,9 @@ Get-MgBetaPrivacySubjectRightsRequestNote -InputObject <IComplianceIdentity> [-E
 ## DESCRIPTION
 List of notes associated with the request.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/subjectrightsrequest-list-notes-permissions.md)]
+
 ## PARAMETERS
 
 ### -All

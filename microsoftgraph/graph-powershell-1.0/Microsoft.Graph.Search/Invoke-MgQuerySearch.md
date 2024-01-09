@@ -11,7 +11,6 @@ ms.prod: search
 ## SYNOPSIS
 Runs the query specified in the request body.
 Search results are provided in the response.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaQuerySearch](/powershell/module/Microsoft.Graph.Beta.Search/Invoke-MgBetaQuerySearch?view=graph-powershell-beta)
@@ -33,7 +32,9 @@ Invoke-MgQuerySearch -Body <IPaths1Kd2XrlSearchMicrosoftGraphQueryPostRequestbod
 ## DESCRIPTION
 Runs the query specified in the request body.
 Search results are provided in the response.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-query-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Basic call to perform a search request
@@ -396,4 +397,5 @@ Required.
 [Invoke-MgBetaQuerySearch](/powershell/module/Microsoft.Graph.Beta.Search/Invoke-MgBetaQuerySearch?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/invoke-mgquerysearch](https://learn.microsoft.com/powershell/module/microsoft.graph.search/invoke-mgquerysearch)
+
 

@@ -226,9 +226,9 @@ Read-only.
   \[ServicePlans \<IMicrosoftGraphServicePlanInfo\[\]\>\]: Information about the service plans assigned with the license.
 Read-only, Not nullable
     \[AppliesTo \<String\>\]: The object the service plan can be assigned to.
-The possible values are:User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
+The possible values are: User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
     \[ProvisioningStatus \<String\>\]: The provisioning status of the service plan.
-The possible values are:Success - Service is fully provisioned.Disabled - Service has been disabled.ErrorStatus - The service plan has not been provisioned and is in an error state.PendingInput - Service is not yet provisioned; awaiting service confirmation.PendingActivation - Service is provisioned but requires explicit activation by administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it has not been activated in the tenant, yet.
+The possible values are:Success - Service is fully provisioned.Disabled - Service is disabled.Error - The service plan isn't provisioned and is in an error state.PendingInput - The service isn't provisioned and is awaiting service confirmation.PendingActivation - The service is provisioned but requires explicit activation by an administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it isn't activated in the tenant.
     \[ServicePlanId \<String\>\]: The unique identifier of the service plan.
     \[ServicePlanName \<String\>\]: The name of the service plan.
   \[SkuId \<String\>\]: Unique identifier (GUID) for the service SKU.
@@ -274,9 +274,9 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 SERVICEPLANS \<IMicrosoftGraphServicePlanInfo\[\]\>: Information about the service plans assigned with the license.
 Read-only, Not nullable
   \[AppliesTo \<String\>\]: The object the service plan can be assigned to.
-The possible values are:User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
+The possible values are: User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
   \[ProvisioningStatus \<String\>\]: The provisioning status of the service plan.
-The possible values are:Success - Service is fully provisioned.Disabled - Service has been disabled.ErrorStatus - The service plan has not been provisioned and is in an error state.PendingInput - Service is not yet provisioned; awaiting service confirmation.PendingActivation - Service is provisioned but requires explicit activation by administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it has not been activated in the tenant, yet.
+The possible values are:Success - Service is fully provisioned.Disabled - Service is disabled.Error - The service plan isn't provisioned and is in an error state.PendingInput - The service isn't provisioned and is awaiting service confirmation.PendingActivation - The service is provisioned but requires explicit activation by an administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it isn't activated in the tenant.
   \[ServicePlanId \<String\>\]: The unique identifier of the service plan.
   \[ServicePlanName \<String\>\]: The name of the service plan.
 

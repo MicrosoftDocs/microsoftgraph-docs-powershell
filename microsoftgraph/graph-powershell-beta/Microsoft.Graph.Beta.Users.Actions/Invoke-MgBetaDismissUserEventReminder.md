@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Dismiss a reminder that has been triggered for an event in a user calendar.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgDismissUserEventReminder](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgDismissUserEventReminder?view=graph-powershell-1.0)
@@ -31,7 +30,9 @@ Invoke-MgBetaDismissUserEventReminder -InputObject <IUsersActionsIdentity> [-Pas
 
 ## DESCRIPTION
 Dismiss a reminder that has been triggered for an event in a user calendar.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-dismissreminder-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgBetaDismissUserEventReminder Cmdlet
@@ -181,6 +182,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[NotebookId \<String\>\]: The unique identifier of notebook
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
   \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
   \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
   \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask

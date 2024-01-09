@@ -10,7 +10,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 Create a new localized agreement file.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaAgreementFile](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaAgreementFile?view=graph-powershell-beta)
@@ -47,7 +46,9 @@ New-MgAgreementFile -InputObject <IIdentityGovernanceIdentity>
 
 ## DESCRIPTION
 Create a new localized agreement file.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/agreement-post-files-permissions.md)]
 
 ## PARAMETERS
 
@@ -463,5 +464,6 @@ Read-only.
 [New-MgBetaAgreementFile](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaAgreementFile?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgagreementfile](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgagreementfile)
+
 
 

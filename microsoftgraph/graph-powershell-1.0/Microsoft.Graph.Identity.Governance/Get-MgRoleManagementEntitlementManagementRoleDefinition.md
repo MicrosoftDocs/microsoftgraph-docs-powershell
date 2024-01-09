@@ -11,7 +11,7 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Read the properties and relationships of a unifiedRoleDefinition object.
-The following role-based access control (RBAC) providers are currently supported: This API is available in the following national cloud deployments.
+The following role-based access control (RBAC) providers are currently supported:
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementEntitlementManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementRoleDefinition?view=graph-powershell-beta)
@@ -39,7 +39,13 @@ Get-MgRoleManagementEntitlementManagementRoleDefinition -InputObject <IIdentityG
 
 ## DESCRIPTION
 Read the properties and relationships of a unifiedRoleDefinition object.
-The following role-based access control (RBAC) providers are currently supported: This API is available in the following national cloud deployments.
+The following role-based access control (RBAC) providers are currently supported:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroledefinition-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/rbacapplication-list-roledefinitions-permissions.md)]
 
 ## PARAMETERS
 

@@ -43,6 +43,9 @@ The sections in the section group.
 Read-only.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/sectiongroup-list-sections-permissions.md)]
+
 ## PARAMETERS
 
 ### -All

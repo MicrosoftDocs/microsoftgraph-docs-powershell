@@ -13,7 +13,6 @@ End the grace period for a specific Cloud PC.
 The grace period is triggered when the Cloud PC license is removed or the provisioning policy is unassigned.
 It allows users to access Cloud PCs for up to seven days before deprovisioning occurs.
 Ending the grace period immediately deprovisions the Cloud PC without waiting the seven days.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -34,7 +33,9 @@ End the grace period for a specific Cloud PC.
 The grace period is triggered when the Cloud PC license is removed or the provisioning policy is unassigned.
 It allows users to access Cloud PCs for up to seven days before deprovisioning occurs.
 Ending the grace period immediately deprovisions the Cloud PC without waiting the seven days.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-endgraceperiod-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Stop-MgBetaDeviceManagementVirtualEndpointCloudPcGracePeriod Cmdlet
@@ -183,6 +184,7 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
   \[MicrosoftTunnelSiteId \<String\>\]: The unique identifier of microsoftTunnelSite
   \[MobileAppTroubleshootingEventId \<String\>\]: The unique identifier of mobileAppTroubleshootingEvent
   \[NotificationMessageTemplateId \<String\>\]: The unique identifier of notificationMessageTemplate
+  \[PrivilegeManagementElevationRequestId \<String\>\]: The unique identifier of privilegeManagementElevationRequest
   \[RemoteAssistancePartnerId \<String\>\]: The unique identifier of remoteAssistancePartner
   \[RoleScopeTagId \<String\>\]: The unique identifier of roleScopeTag
   \[WindowsAutopilotDeploymentProfileId \<String\>\]: The unique identifier of windowsAutopilotDeploymentProfile

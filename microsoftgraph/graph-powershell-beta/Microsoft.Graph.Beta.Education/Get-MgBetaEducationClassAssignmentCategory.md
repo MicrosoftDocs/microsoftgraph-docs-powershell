@@ -12,7 +12,6 @@ ms.prod: education
 ## SYNOPSIS
 Retrieve an educationCategory object.
 Only teachers, students, and applications with application permissions can perform this operation.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgEducationClassAssignmentCategory](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentCategory?view=graph-powershell-1.0)
@@ -48,7 +47,12 @@ Get-MgBetaEducationClassAssignmentCategory -InputObject <IEducationIdentity> [-E
 ## DESCRIPTION
 Retrieve an educationCategory object.
 Only teachers, students, and applications with application permissions can perform this operation.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationcategory-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-list-categories-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

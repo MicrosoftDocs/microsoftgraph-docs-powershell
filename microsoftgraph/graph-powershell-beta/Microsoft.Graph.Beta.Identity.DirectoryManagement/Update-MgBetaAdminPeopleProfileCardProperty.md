@@ -10,7 +10,6 @@ ms.prod: people
 
 ## SYNOPSIS
 Update the properties of a profileCardProperty object, identified by its directoryPropertyName property.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgAdminPeopleProfileCardProperty](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgAdminPeopleProfileCardProperty?view=graph-powershell-1.0)
@@ -45,7 +44,9 @@ Update-MgBetaAdminPeopleProfileCardProperty -InputObject <IIdentityDirectoryMana
 
 ## DESCRIPTION
 Update the properties of a profileCardProperty object, identified by its directoryPropertyName property.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/profilecardproperty-update-permissions.md)]
 
 ## PARAMETERS
 
@@ -279,5 +280,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 [Update-MgAdminPeopleProfileCardProperty](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgAdminPeopleProfileCardProperty?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeopleprofilecardproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeopleprofilecardproperty)
+
 
 

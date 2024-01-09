@@ -10,7 +10,6 @@ ms.prod: applications
 
 ## SYNOPSIS
 Update the properties of an application object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -92,7 +91,9 @@ Update-MgBetaApplicationByUniqueName -InputObject <IApplicationsIdentity>
 
 ## DESCRIPTION
 Update the properties of an application object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-update-permissions.md)]
 
 ## PARAMETERS
 

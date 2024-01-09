@@ -11,7 +11,6 @@ ms.prod: industry-data-etl
 
 ## SYNOPSIS
 Read the properties and relationships of a roleGroup object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -36,7 +35,12 @@ Get-MgBetaExternalIndustryDataRoleGroup -InputObject <ISearchIdentity> [-ExpandP
 
 ## DESCRIPTION
 Read the properties and relationships of a roleGroup object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-rolegroup-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-rolegroup-list-permissions.md)]
 
 ## PARAMETERS
 

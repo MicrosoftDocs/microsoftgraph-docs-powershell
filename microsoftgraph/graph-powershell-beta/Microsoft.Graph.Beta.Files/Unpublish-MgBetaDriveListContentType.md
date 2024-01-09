@@ -9,8 +9,7 @@ ms.prod: sites-and-lists
 # Unpublish-MgBetaDriveListContentType
 
 ## SYNOPSIS
-Unpublish a contentType\]\[\] from a content type hub site.
-This API is available in the following \[national cloud deployments.
+Unpublish a \[contentType\]\[\] from a content type hub site.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Unpublish-MgDriveListContentType](/powershell/module/Microsoft.Graph.Files/Unpublish-MgDriveListContentType?view=graph-powershell-1.0)
@@ -30,8 +29,10 @@ Unpublish-MgBetaDriveListContentType -InputObject <IFilesIdentity> [-PassThru] [
 ```
 
 ## DESCRIPTION
-Unpublish a contentType\]\[\] from a content type hub site.
-This API is available in the following \[national cloud deployments.
+Unpublish a \[contentType\]\[\] from a content type hub site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-unpublish-permissions.md)]
 
 ## PARAMETERS
 

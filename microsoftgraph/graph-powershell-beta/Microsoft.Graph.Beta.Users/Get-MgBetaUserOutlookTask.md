@@ -13,7 +13,6 @@ ms.prod: outlook
 Get the properties and relationships of an Outlook task in the user's mailbox.
 By default, this operation (and the POST, PATCH, and complete task operations) returns date-related properties in UTC.
 You can use the Prefer: outlook.timezone header to have all the date-related properties in the response represented in a time zone different than UTC.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -37,7 +36,12 @@ Get-MgBetaUserOutlookTask -InputObject <IUsersIdentity> [-Property <String[]>] [
 Get the properties and relationships of an Outlook task in the user's mailbox.
 By default, this operation (and the POST, PATCH, and complete task operations) returns date-related properties in UTC.
 You can use the Prefer: outlook.timezone header to have all the date-related properties in the response represented in a time zone different than UTC.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlooktask-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlookuser-list-tasks-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserOutlookTask Cmdlet
@@ -276,6 +280,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktask)
-
 
 

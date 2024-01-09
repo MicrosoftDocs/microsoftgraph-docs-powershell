@@ -13,7 +13,6 @@ Create a new setting based on the templates available in directorySettingTemplat
 These settings can be at the tenant-level or at the group level.
 Group settings apply to only Microsoft 365 groups.
 The template named Group.Unified can be used to configure tenant-wide Microsoft 365 group settings, while the template named Group.Unified.Guest can be used to configure group-specific settings.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -34,7 +33,9 @@ Create a new setting based on the templates available in directorySettingTemplat
 These settings can be at the tenant-level or at the group level.
 Group settings apply to only Microsoft 365 groups.
 The template named Group.Unified can be used to configure tenant-wide Microsoft 365 group settings, while the template named Group.Unified.Guest can be used to configure group-specific settings.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-post-settings-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaDirectorySetting Cmdlet
@@ -228,4 +229,5 @@ VALUES \<IMicrosoftGraphSettingValue\[\]\>: Collection of name-value pairs corre
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorysetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorysetting)
+
 

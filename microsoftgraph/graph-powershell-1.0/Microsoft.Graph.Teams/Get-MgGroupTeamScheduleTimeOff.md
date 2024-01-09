@@ -11,7 +11,6 @@ ms.prod: microsoft-teams
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a timeOff object by ID.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamScheduleTimeOff?view=graph-powershell-beta)
@@ -38,7 +37,12 @@ Get-MgGroupTeamScheduleTimeOff -InputObject <ITeamsIdentity> [-Property <String[
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a timeOff object by ID.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/timeoff-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/schedule-list-timesoff-permissions.md)]
 
 ## EXAMPLES
 

@@ -11,7 +11,6 @@ ms.prod: browser-management
 
 ## SYNOPSIS
 Get a browserSiteList that contains browserSite and browserSharedCookie resources.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgAdminEdgeInternetExplorerModeSiteList](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgAdminEdgeInternetExplorerModeSiteList?view=graph-powershell-1.0)
@@ -39,7 +38,12 @@ Get-MgBetaAdminEdgeInternetExplorerModeSiteList -InputObject <IDeviceManagementI
 
 ## DESCRIPTION
 Get a browserSiteList that contains browserSite and browserSharedCookie resources.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/browsersitelist-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/internetexplorermode-list-sitelists-permissions.md)]
 
 ## PARAMETERS
 

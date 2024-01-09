@@ -11,7 +11,6 @@ ms.prod: applications
 ## SYNOPSIS
 Assign a tokenLifetimePolicy to an application.
 You can have multiple tokenLifetimePolicy policies in a tenant but can assign only one tokenLifetimePolicy per application.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaApplicationTokenLifetimePolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationTokenLifetimePolicyByRef?view=graph-powershell-beta)
@@ -45,7 +44,6 @@ New-MgApplicationTokenLifetimePolicyByRef -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Assign a tokenLifetimePolicy to an application.
 You can have multiple tokenLifetimePolicy policies in a tenant but can assign only one tokenLifetimePolicy per application.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -239,6 +237,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [New-MgBetaApplicationTokenLifetimePolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationTokenLifetimePolicyByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationtokenlifetimepolicybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationtokenlifetimepolicybyref)
-
 
 

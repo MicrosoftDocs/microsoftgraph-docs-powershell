@@ -11,7 +11,6 @@ ms.prod: governance
 ## SYNOPSIS
 Retrieve a list of a connectedOrganization's external sponsors.
 The external sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementConnectedOrganizationExternalSponsor](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementConnectedOrganizationExternalSponsor?view=graph-powershell-1.0)
@@ -27,7 +26,9 @@ Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsor -ConnectedOr
 ## DESCRIPTION
 Retrieve a list of a connectedOrganization's external sponsors.
 The external sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/connectedorganization-list-externalsponsors-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

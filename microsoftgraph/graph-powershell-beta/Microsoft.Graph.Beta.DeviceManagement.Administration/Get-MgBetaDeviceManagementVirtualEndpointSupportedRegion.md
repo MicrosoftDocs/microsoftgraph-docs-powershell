@@ -35,6 +35,9 @@ Get-MgBetaDeviceManagementVirtualEndpointSupportedRegion -InputObject <IDeviceMa
 ## DESCRIPTION
 Cloud PC supported regions.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-list-supportedregions-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointSupportedRegion Cmdlet
 ```powershell

@@ -11,7 +11,7 @@ ms.prod: directory-management
 ## SYNOPSIS
 Return the directory objects specified in a list of IDs.
 Only a subset of user properties are returned by default in v1.0.
-Some common uses for this function are to: This API is available in the following national cloud deployments.
+Some common uses for this function are to:
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaOrganizationById](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationById?view=graph-powershell-beta)
@@ -34,7 +34,10 @@ Get-MgOrganizationById
 ## DESCRIPTION
 Return the directory objects specified in a list of IDs.
 Only a subset of user properties are returned by default in v1.0.
-Some common uses for this function are to: This API is available in the following national cloud deployments.
+Some common uses for this function are to:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directoryobject-getbyids-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

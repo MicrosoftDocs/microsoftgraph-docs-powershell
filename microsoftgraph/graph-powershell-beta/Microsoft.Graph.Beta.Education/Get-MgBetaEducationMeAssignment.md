@@ -40,6 +40,9 @@ Get-MgBetaEducationMeAssignment -InputObject <IEducationIdentity> [-ExpandProper
 List of assignments for the user.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationuser-list-assignments-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Get the assignments of the logged in user
 

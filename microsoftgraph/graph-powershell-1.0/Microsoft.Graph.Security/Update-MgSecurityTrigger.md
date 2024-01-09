@@ -267,3 +267,4 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritytrigger](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritytrigger)
 
 
+

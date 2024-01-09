@@ -741,3 +741,4 @@ SMBAUTOENCRYPTEDFILEEXTENSIONS \<IMicrosoftGraphWindowsInformationProtectionReso
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementmdmwindowsinformationprotectionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementmdmwindowsinformationprotectionpolicy)
 
 
+

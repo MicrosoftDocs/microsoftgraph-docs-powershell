@@ -40,6 +40,9 @@ Get-MgBetaEducationUserAssignmentSubmissionOutcome -InputObject <IEducationIdent
 ## DESCRIPTION
 Get outcomes from education
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsubmission-list-outcomes-permissions.md)]
+
 ## EXAMPLES
 
 ## PARAMETERS

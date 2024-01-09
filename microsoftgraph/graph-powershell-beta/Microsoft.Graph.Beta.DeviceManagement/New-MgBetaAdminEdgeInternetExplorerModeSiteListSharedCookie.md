@@ -10,7 +10,6 @@ ms.prod: browser-management
 
 ## SYNOPSIS
 Create a new browserSharedCookie object in a browserSiteList.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgAdminEdgeInternetExplorerModeSiteListSharedCookie](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgAdminEdgeInternetExplorerModeSiteListSharedCookie?view=graph-powershell-1.0)
@@ -53,7 +52,9 @@ New-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie -InputObject <IDevic
 
 ## DESCRIPTION
 Create a new browserSharedCookie object in a browserSiteList.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/browsersitelist-post-sharedcookies-permissions.md)]
 
 ## PARAMETERS
 
@@ -573,5 +574,6 @@ This property is read-only.
 [New-MgAdminEdgeInternetExplorerModeSiteListSharedCookie](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgAdminEdgeInternetExplorerModeSiteListSharedCookie?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetaadminedgeinternetexplorermodesitelistsharedcookie](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetaadminedgeinternetexplorermodesitelistsharedcookie)
+
 
 

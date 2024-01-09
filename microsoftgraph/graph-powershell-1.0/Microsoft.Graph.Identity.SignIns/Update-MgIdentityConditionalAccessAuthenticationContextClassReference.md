@@ -11,7 +11,6 @@ ms.prod: identity-and-sign-in
 ## SYNOPSIS
 Create an authenticationContextClassReference object, if the ID has not been used.
 If ID has been used, this call updates the authenticationContextClassReference object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaIdentityConditionalAccessAuthenticationContextClassReference](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityConditionalAccessAuthenticationContextClassReference?view=graph-powershell-beta)
@@ -48,7 +47,9 @@ Update-MgIdentityConditionalAccessAuthenticationContextClassReference -InputObje
 ## DESCRIPTION
 Create an authenticationContextClassReference object, if the ID has not been used.
 If ID has been used, this call updates the authenticationContextClassReference object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationcontextclassreference-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

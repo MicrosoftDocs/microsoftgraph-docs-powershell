@@ -609,3 +609,4 @@ PICTURE \<IMicrosoftGraphPicture\[\]\>: .
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanyvendor](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanyvendor)
 
 
+

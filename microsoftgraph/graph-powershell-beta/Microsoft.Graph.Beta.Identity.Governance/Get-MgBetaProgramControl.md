@@ -73,6 +73,9 @@ Get-MgBetaProgramControl -InputObject <IIdentityGovernanceIdentity> [-ExpandProp
 ## DESCRIPTION
 Get entity from programControls by key
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/programcontrol-list-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaProgramControl Cmdlet
 ```powershell

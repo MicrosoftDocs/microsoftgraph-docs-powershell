@@ -12,7 +12,6 @@ ms.prod: applications
 Remove a key credential from a servicePrincipal.
 This method along with addKey can be used by a servicePrincipal to automate rolling its expiring keys.
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -46,7 +45,9 @@ Remove-MgServicePrincipalKey -InputObject <IApplicationsIdentity>
 Remove a key credential from a servicePrincipal.
 This method along with addKey can be used by a servicePrincipal to automate rolling its expiring keys.
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-removekey-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgServicePrincipalKey Cmdlet
@@ -249,6 +250,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalkey](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalkey)
-
 
 

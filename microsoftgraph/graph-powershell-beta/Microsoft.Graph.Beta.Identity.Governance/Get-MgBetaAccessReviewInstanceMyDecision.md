@@ -35,6 +35,9 @@ Get-MgBetaAccessReviewInstanceMyDecision -InputObject <IIdentityGovernanceIdenti
 ## DESCRIPTION
 The collection of decisions for the caller, if the caller is a reviewer.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreview-listmydecisions-permissions.md)]
+
 ## PARAMETERS
 
 ### -AccessReviewDecisionId

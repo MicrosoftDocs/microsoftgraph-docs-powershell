@@ -10,7 +10,6 @@ ms.prod: planner
 
 ## SYNOPSIS
 Add a member to the plannerRoster object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -41,7 +40,9 @@ New-MgBetaPlannerRosterMember -InputObject <IPlannerIdentity>
 
 ## DESCRIPTION
 Add a member to the plannerRoster object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerroster-post-members-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaPlannerRosterMember Cmdlet

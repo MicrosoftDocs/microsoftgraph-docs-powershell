@@ -10,7 +10,6 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Delete an administrativeUnit.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,9 @@ Remove-MgBetaAdministrativeUnit -InputObject <IIdentityDirectoryManagementIdenti
 
 ## DESCRIPTION
 Delete an administrativeUnit.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/administrativeunit-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Remove an administrative unit

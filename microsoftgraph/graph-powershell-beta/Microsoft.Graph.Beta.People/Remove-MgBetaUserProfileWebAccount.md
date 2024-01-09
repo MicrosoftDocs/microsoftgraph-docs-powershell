@@ -10,7 +10,6 @@ ms.prod: people
 
 ## SYNOPSIS
 Delete a webAccount object from a user's profile.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,9 @@ Remove-MgBetaUserProfileWebAccount -InputObject <IPeopleIdentity> [-IfMatch <Str
 
 ## DESCRIPTION
 Delete a webAccount object from a user's profile.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/webaccount-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaUserProfileWebAccount Cmdlet

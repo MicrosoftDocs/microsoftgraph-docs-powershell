@@ -35,6 +35,9 @@ Get-MgBetaEducationClassAssignmentSettingGradingCategory -InputObject <IEducatio
 ## DESCRIPTION
 Get gradingCategories from education
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-list-gradingcategory-permissions.md)]
+
 ## PARAMETERS
 
 ### -All

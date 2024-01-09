@@ -10,7 +10,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 Enables reviewers to review all accessReviewInstanceDecisionItem objects in batches by using principalId, resourceId, or neither.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision?view=graph-powershell-beta)
@@ -51,7 +50,9 @@ Invoke-MgBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision
 
 ## DESCRIPTION
 Enables reviewers to review all accessReviewInstanceDecisionItem objects in batches by using principalId, resourceId, or neither.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewinstance-batchrecorddecisions-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision Cmdlet

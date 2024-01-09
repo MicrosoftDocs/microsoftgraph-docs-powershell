@@ -915,3 +915,4 @@ For example, {'permanentAssignment':false,'maximumGrantPeriodInMinutes':129600}
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedaccessrolesetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedaccessrolesetting)
 
 
+

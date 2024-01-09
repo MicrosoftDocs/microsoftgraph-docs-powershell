@@ -42,6 +42,9 @@ Groups and administrative units that this device is a member of.
 This operation is transitive.
 Supports $expand.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-list-transitivememberof-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

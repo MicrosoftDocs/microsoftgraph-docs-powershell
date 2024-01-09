@@ -42,6 +42,9 @@ Delegated permission grants authorizing this service principal to access an API 
 Read-only.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-list-oauth2permissiongrants-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -297,6 +300,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Get-MgBetaServicePrincipalOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalOauth2PermissionGrant?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipaloauth2permissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipaloauth2permissiongrant)
-
 
 

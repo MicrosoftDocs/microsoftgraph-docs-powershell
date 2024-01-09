@@ -10,7 +10,6 @@ ms.prod: sites-and-lists
 
 ## SYNOPSIS
 Delete a set object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteTermStoreSet?view=graph-powershell-beta)
@@ -43,7 +42,9 @@ Remove-MgGroupSiteTermStoreSet -InputObject <ISitesIdentity> [-IfMatch <String>]
 
 ## DESCRIPTION
 Delete a set object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-set-delete-permissions.md)]
 
 ## PARAMETERS
 

@@ -38,6 +38,9 @@ Get-MgBetaIdentityGovernanceTermsOfUseAgreementFileLocalization -InputObject <II
 ## DESCRIPTION
 The localized version of the terms of use agreement files attached to the agreement.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/agreementfile-list-localizations-permissions.md)]
+
 ## PARAMETERS
 
 ### -AgreementFileLocalizationId

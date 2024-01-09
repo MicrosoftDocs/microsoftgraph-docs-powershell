@@ -10,7 +10,6 @@ ms.prod: microsoft-teams
 
 ## SYNOPSIS
 Create instance of an openShiftChangeRequest object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaTeamScheduleOpenShiftChangeRequest](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamScheduleOpenShiftChangeRequest?view=graph-powershell-beta)
@@ -47,7 +46,9 @@ New-MgTeamScheduleOpenShiftChangeRequest -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Create instance of an openShiftChangeRequest object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/openshiftchangerequest-post-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

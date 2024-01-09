@@ -38,6 +38,9 @@ Get-MgSecurityThreatIntelligenceHostPassiveDns -InputObject <ISecurityIdentity> 
 ## DESCRIPTION
 Passive DNS retrieval about this host.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-host-list-passivedns-permissions.md)]
+
 ## PARAMETERS
 
 ### -All

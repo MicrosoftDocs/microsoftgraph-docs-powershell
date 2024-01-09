@@ -9,8 +9,7 @@ ms.prod: sites-and-lists
 # New-MgSiteColumn
 
 ## SYNOPSIS
-Create a column for a site\]\[site\] with a request that specifies a \[columnDefinition\]\[columnDefinition\].
-This API is available in the following \[national cloud deployments.
+Create a column for a \[site\]\[site\] with a request that specifies a \[columnDefinition\]\[columnDefinition\].
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSiteColumn](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteColumn?view=graph-powershell-beta)
@@ -62,8 +61,10 @@ New-MgSiteColumn -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphCo
 ```
 
 ## DESCRIPTION
-Create a column for a site\]\[site\] with a request that specifies a \[columnDefinition\]\[columnDefinition\].
-This API is available in the following \[national cloud deployments.
+Create a column for a \[site\]\[site\] with a request that specifies a \[columnDefinition\]\[columnDefinition\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-post-columns-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

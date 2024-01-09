@@ -10,7 +10,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 Retrieve the properties of an entitlementManagementSettings object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementSetting](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementSetting?view=graph-powershell-1.0)
@@ -23,7 +22,9 @@ Get-MgBetaEntitlementManagementSetting [-ExpandProperty <String[]>] [-Property <
 
 ## DESCRIPTION
 Retrieve the properties of an entitlementManagementSettings object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/entitlementmanagementsettings-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get the identity governance settings

@@ -12,7 +12,6 @@ ms.prod: education
 Create an assignment resource.
 Only teachers can perform this operation.
 You can create the following types of assignment resources: Every resource has an @odata.type property to indicate which type of resource is being created.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaEducationMeAssignmentResource](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationMeAssignmentResource?view=graph-powershell-beta)
@@ -49,7 +48,9 @@ New-MgEducationMeAssignmentResource -InputObject <IEducationIdentity>
 Create an assignment resource.
 Only teachers can perform this operation.
 You can create the following types of assignment resources: Every resource has an @odata.type property to indicate which type of resource is being created.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-post-resource-permissions.md)]
 
 ## EXAMPLES
 

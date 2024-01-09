@@ -10,7 +10,6 @@ ms.prod: search
 
 ## SYNOPSIS
 Create a new bookmark object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -34,7 +33,9 @@ New-MgBetaSearchBookmark -BodyParameter <IMicrosoftGraphSearchBookmark> [-WhatIf
 
 ## DESCRIPTION
 Create a new bookmark object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-searchentity-post-bookmarks-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaSearchBookmark Cmdlet
@@ -503,4 +504,5 @@ When users click this answer variation in search results, they will go to this U
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetasearchbookmark](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetasearchbookmark)
+
 

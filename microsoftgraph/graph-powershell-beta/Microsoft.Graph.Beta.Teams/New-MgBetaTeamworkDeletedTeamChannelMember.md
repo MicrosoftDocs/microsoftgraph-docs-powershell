@@ -10,7 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Add a conversationMember to a channel.
 This operation is allowed only for channels with a membershipType value of private or shared.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgTeamworkDeletedTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedTeamChannelMember?view=graph-powershell-1.0)
@@ -46,7 +45,6 @@ New-MgBetaTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Add a conversationMember to a channel.
 This operation is allowed only for channels with a membershipType value of private or shared.
-This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -261,6 +259,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
   \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
   \[ConversationMemberId \<String\>\]: The unique identifier of conversationMember
+  \[DayNoteId \<String\>\]: The unique identifier of dayNote
   \[DeletedChatId \<String\>\]: The unique identifier of deletedChat
   \[DeletedTeamId \<String\>\]: The unique identifier of deletedTeam
   \[GroupId \<String\>\]: The unique identifier of group

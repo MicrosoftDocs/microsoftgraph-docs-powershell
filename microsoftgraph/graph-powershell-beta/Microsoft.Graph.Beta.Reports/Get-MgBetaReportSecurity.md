@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaReportSecurity
 
 ## SYNOPSIS
-Provides the ability to launch a realistically simulated phishing attack that organizations can learn from.
+Provides the ability to launch a simulated phishing attack that organizations can learn from.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgReportSecurity](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSecurity?view=graph-powershell-1.0)
@@ -20,7 +20,7 @@ Get-MgBetaReportSecurity [-ExpandProperty <String[]>] [-Property <String[]>] [<C
 ```
 
 ## DESCRIPTION
-Provides the ability to launch a realistically simulated phishing attack that organizations can learn from.
+Provides the ability to launch a simulated phishing attack that organizations can learn from.
 
 ## PARAMETERS
 

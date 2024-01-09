@@ -10,7 +10,6 @@ ms.prod: security
 
 ## SYNOPSIS
 Cancel a security operation.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -27,7 +26,9 @@ Stop-MgBetaSecurityAction -InputObject <ISecurityIdentity> [-PassThru] [-WhatIf]
 
 ## DESCRIPTION
 Cancel a security operation.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/securityaction-cancelsecurityaction-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Stop-MgBetaSecurityAction Cmdlet
@@ -137,6 +138,8 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[ArticleId \<String\>\]: The unique identifier of article
   \[ArticleIndicatorId \<String\>\]: The unique identifier of articleIndicator
   \[AttackSimulationOperationId \<String\>\]: The unique identifier of attackSimulationOperation
+  \[AuditLogQueryId \<String\>\]: The unique identifier of auditLogQuery
+  \[AuditLogRecordId \<String\>\]: The unique identifier of auditLogRecord
   \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
   \[AuthorityTemplateId \<String\>\]: The unique identifier of authorityTemplate
   \[CaseOperationId \<String\>\]: The unique identifier of caseOperation

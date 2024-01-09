@@ -48,6 +48,9 @@ Update-MgBetaPlannerTaskDetail -InputObject <IPlannerIdentity> -IfMatch <String>
 ## DESCRIPTION
 Update the navigation property details in planner
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannertaskdetails-update-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

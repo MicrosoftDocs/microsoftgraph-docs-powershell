@@ -50,6 +50,9 @@ Update-MgEntitlementManagementResourceRequestCatalogCustomWorkflowExtension
 ## DESCRIPTION
 Update the properties of an accessPackageAssignmentWorkflowExtension object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackageassignmentworkflowextension-update-permissions.md)]
+
 ## PARAMETERS
 
 ### -AccessPackageResourceRequestId

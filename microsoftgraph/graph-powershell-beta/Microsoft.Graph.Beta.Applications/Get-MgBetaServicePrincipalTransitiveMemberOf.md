@@ -38,6 +38,9 @@ Get-MgBetaServicePrincipalTransitiveMemberOf -InputObject <IApplicationsIdentity
 ## DESCRIPTION
 Get transitiveMemberOf from servicePrincipals
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-list-transitivememberof-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaServicePrincipalTransitiveMemberOf Cmdlet
 ```powershell
@@ -314,6 +317,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Get-MgServicePrincipalTransitiveMemberOf](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalTransitiveMemberOf?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaltransitivememberof](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaltransitivememberof)
-
 
 

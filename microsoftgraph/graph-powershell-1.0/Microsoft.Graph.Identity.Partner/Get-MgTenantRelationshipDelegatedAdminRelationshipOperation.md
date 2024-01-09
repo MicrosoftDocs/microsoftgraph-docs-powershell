@@ -11,7 +11,6 @@ ms.prod: partner-customer-administration
 
 ## SYNOPSIS
 Read the properties of a delegatedAdminRelationshipOperation object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTenantRelationshipDelegatedAdminRelationshipOperation](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Get-MgBetaTenantRelationshipDelegatedAdminRelationshipOperation?view=graph-powershell-beta)
@@ -40,7 +39,12 @@ Get-MgTenantRelationshipDelegatedAdminRelationshipOperation -InputObject <IIdent
 
 ## DESCRIPTION
 Read the properties of a delegatedAdminRelationshipOperation object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/delegatedadminrelationshipoperation-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/delegatedadminrelationship-list-operations-permissions.md)]
 
 ## PARAMETERS
 

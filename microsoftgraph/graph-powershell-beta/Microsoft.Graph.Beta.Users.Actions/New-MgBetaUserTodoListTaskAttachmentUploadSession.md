@@ -14,7 +14,6 @@ As part of the response, this action returns an upload URL that you can use in s
 The request headers for each PUT operation let you specify the exact range of bytes to be uploaded.
 This allows the transfer to be resumed, in case the network connection is dropped during the upload.
 The following are the steps to attach a file to a Microsoft To Do task using an upload session: For an example that describes the end-to-end attachment process, see attach files to a To Do task.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgUserTodoListTaskAttachmentUploadSession](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserTodoListTaskAttachmentUploadSession?view=graph-powershell-1.0)
@@ -56,7 +55,9 @@ As part of the response, this action returns an upload URL that you can use in s
 The request headers for each PUT operation let you specify the exact range of bytes to be uploaded.
 This allows the transfer to be resumed, in case the network connection is dropped during the upload.
 The following are the steps to attach a file to a Microsoft To Do task using an upload session: For an example that describes the end-to-end attachment process, see attach files to a To Do task.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/taskfileattachment-createuploadsession-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaUserTodoListTaskAttachmentUploadSession Cmdlet
@@ -285,6 +286,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[NotebookId \<String\>\]: The unique identifier of notebook
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
   \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
   \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
   \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask

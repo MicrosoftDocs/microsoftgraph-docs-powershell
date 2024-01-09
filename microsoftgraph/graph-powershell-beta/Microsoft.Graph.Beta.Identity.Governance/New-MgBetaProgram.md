@@ -9,7 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 In the Microsoft Entra access reviews feature, create a new program object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -26,7 +25,6 @@ New-MgBetaProgram -BodyParameter <IMicrosoftGraphProgram> [-WhatIf] [-Confirm] [
 
 ## DESCRIPTION
 In the Microsoft Entra access reviews feature, create a new program object.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaProgram Cmdlet
@@ -258,4 +256,5 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprogram](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprogram)
+
 

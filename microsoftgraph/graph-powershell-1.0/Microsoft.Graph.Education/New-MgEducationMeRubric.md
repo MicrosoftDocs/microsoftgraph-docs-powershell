@@ -10,7 +10,6 @@ ms.prod: education
 
 ## SYNOPSIS
 Create a new educationRubric object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaEducationMeRubric](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationMeRubric?view=graph-powershell-beta)
@@ -33,7 +32,9 @@ New-MgEducationMeRubric -BodyParameter <IMicrosoftGraphEducationRubric> [-WhatIf
 
 ## DESCRIPTION
 Create a new educationRubric object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationuser-post-rubrics-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -408,4 +409,5 @@ Weights must add up to 100.
 [New-MgBetaEducationMeRubric](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationMeRubric?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationmerubric](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationmerubric)
+
 

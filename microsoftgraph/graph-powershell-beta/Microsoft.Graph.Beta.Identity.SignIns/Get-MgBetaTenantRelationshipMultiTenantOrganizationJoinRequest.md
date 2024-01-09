@@ -10,7 +10,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Get the status of a tenant joining a multi-tenant organization.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -21,7 +20,9 @@ Get-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest [-ExpandProperty 
 
 ## DESCRIPTION
 Get the status of a tenant joining a multi-tenant organization.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/multitenantorganizationjoinrequestrecord-get-permissions.md)]
 
 ## PARAMETERS
 

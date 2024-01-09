@@ -10,7 +10,6 @@ ms.prod: multi-tenant-management
 
 ## SYNOPSIS
 Update the properties of a tenantTag object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -46,7 +45,9 @@ Update-MgBetaTenantRelationshipManagedTenantTag -InputObject <IManagedTenantsIde
 
 ## DESCRIPTION
 Update the properties of a tenantTag object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-tenanttag-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaTenantRelationshipManagedTenantTag Cmdlet
@@ -402,4 +403,5 @@ Optional.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenanttag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenanttag)
+
 

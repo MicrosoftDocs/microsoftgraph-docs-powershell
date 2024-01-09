@@ -38,6 +38,9 @@ Get-MgGroupPermissionGrant -InputObject <IGroupsIdentity> [-ExpandProperty <Stri
 ## DESCRIPTION
 Get permissionGrants from groups
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-list-permissiongrants-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

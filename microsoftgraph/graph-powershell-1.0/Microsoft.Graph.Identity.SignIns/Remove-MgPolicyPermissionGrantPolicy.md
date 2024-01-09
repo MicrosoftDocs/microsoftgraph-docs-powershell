@@ -10,7 +10,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Delete a permissionGrantPolicy object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaPolicyPermissionGrantPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyPermissionGrantPolicy?view=graph-powershell-beta)
@@ -31,7 +30,9 @@ Remove-MgPolicyPermissionGrantPolicy -InputObject <IIdentitySignInsIdentity> [-I
 
 ## DESCRIPTION
 Delete a permissionGrantPolicy object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/permissiongrantpolicy-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Remove a permission grant policy

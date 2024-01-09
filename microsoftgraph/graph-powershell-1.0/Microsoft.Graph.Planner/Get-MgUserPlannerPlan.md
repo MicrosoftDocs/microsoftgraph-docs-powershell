@@ -10,7 +10,6 @@ ms.prod: planner
 
 ## SYNOPSIS
 Retrieve a list of plannerplan objects shared with a user object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaUserPlannerPlan?view=graph-powershell-beta)
@@ -25,7 +24,9 @@ Get-MgUserPlannerPlan -UserId <String> [-ExpandProperty <String[]>] [-Filter <St
 
 ## DESCRIPTION
 Retrieve a list of plannerplan objects shared with a user object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/planneruser-list-plans-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

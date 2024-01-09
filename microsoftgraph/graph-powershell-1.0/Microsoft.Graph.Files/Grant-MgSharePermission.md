@@ -9,8 +9,7 @@ ms.prod: sharepoint
 # Grant-MgSharePermission
 
 ## SYNOPSIS
-Grant users access to a link represented by a permission\]\[\].
-This API is available in the following \[national cloud deployments.
+Grant users access to a link represented by a \[permission\]\[\].
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Grant-MgBetaSharePermission](/powershell/module/Microsoft.Graph.Beta.Files/Grant-MgBetaSharePermission?view=graph-powershell-beta)
@@ -44,8 +43,10 @@ Grant-MgSharePermission -InputObject <IFilesIdentity>
 ```
 
 ## DESCRIPTION
-Grant users access to a link represented by a permission\]\[\].
-This API is available in the following \[national cloud deployments.
+Grant users access to a link represented by a \[permission\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/permission-grant-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Grant-MgSharePermission Cmdlet
@@ -256,4 +257,5 @@ security groups).
 [Grant-MgBetaSharePermission](/powershell/module/Microsoft.Graph.Beta.Files/Grant-MgBetaSharePermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/grant-mgsharepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.files/grant-mgsharepermission)
+
 

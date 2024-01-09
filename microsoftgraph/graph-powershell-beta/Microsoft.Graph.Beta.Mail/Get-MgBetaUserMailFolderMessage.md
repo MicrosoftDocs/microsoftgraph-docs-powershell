@@ -38,6 +38,9 @@ Get-MgBetaUserMailFolderMessage -InputObject <IMailIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 The collection of messages in the mailFolder.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailfolder-list-messages-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserMailFolderMessage Cmdlet
 ```powershell

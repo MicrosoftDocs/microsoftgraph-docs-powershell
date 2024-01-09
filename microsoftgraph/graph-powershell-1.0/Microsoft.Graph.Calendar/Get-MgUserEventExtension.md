@@ -12,7 +12,6 @@ ms.prod: extensions
 Get an open extension (openTypeExtension object) identified by name or fully qualified name.
 The table in the Permissions section lists the resources that support open extensions.
 The following table lists the three scenarios where you can get an open extension from a supported resource instance.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserEventExtension](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserEventExtension?view=graph-powershell-beta)
@@ -42,7 +41,6 @@ Get-MgUserEventExtension -InputObject <ICalendarIdentity> [-ExpandProperty <Stri
 Get an open extension (openTypeExtension object) identified by name or fully qualified name.
 The table in the Permissions section lists the resources that support open extensions.
 The following table lists the three scenarios where you can get an open extension from a supported resource instance.
-This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -269,6 +267,7 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[ExtensionId \<String\>\]: The unique identifier of extension
   \[GroupId \<String\>\]: The unique identifier of group
   \[PlaceId \<String\>\]: The unique identifier of place
+  \[RoomId \<String\>\]: The unique identifier of room
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS

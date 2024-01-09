@@ -12,7 +12,6 @@ ms.prod: education
 Create a new assignment.
 Only teachers in a class can create an assignment.
 Assignments start in the Draft state, which means that students will not see the assignment until publication.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassAssignment?view=graph-powershell-beta)
@@ -63,7 +62,9 @@ New-MgEducationClassAssignment -InputObject <IEducationIdentity>
 Create a new assignment.
 Only teachers in a class can create an assignment.
 Assignments start in the Draft state, which means that students will not see the assignment until publication.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationclass-post-assignment-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -787,4 +788,5 @@ Read-only.
 [New-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignment)
+
 

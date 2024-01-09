@@ -9,7 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Retrieve a conversationMember from a chat.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserChatMember](/powershell/module/Microsoft.Graph.Teams/Get-MgUserChatMember?view=graph-powershell-1.0)
@@ -37,7 +36,6 @@ Get-MgBetaUserChatMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[
 
 ## DESCRIPTION
 Retrieve a conversationMember from a chat.
-This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -276,6 +274,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
   \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
   \[ConversationMemberId \<String\>\]: The unique identifier of conversationMember
+  \[DayNoteId \<String\>\]: The unique identifier of dayNote
   \[DeletedChatId \<String\>\]: The unique identifier of deletedChat
   \[DeletedTeamId \<String\>\]: The unique identifier of deletedTeam
   \[GroupId \<String\>\]: The unique identifier of group

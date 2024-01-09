@@ -10,7 +10,6 @@ ms.prod: cloud-printing
 
 ## SYNOPSIS
 Retrieve a list of users who have been granted access to submit print jobs to the associated printerShare.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -22,7 +21,9 @@ Get-MgBetaPrintPrinterShareAllowedUser -PrinterShareId <String> [-ExpandProperty
 
 ## DESCRIPTION
 Retrieve a list of users who have been granted access to submit print jobs to the associated printerShare.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printershare-list-allowedusers-permissions.md)]
 
 ## PARAMETERS
 

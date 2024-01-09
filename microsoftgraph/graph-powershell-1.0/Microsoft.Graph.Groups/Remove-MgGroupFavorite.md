@@ -10,7 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove the group from the list of the current user's favorite groups.
 Supported for Microsoft 365 groups only.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupFavorite](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupFavorite?view=graph-powershell-beta)
@@ -30,7 +29,6 @@ Remove-MgGroupFavorite -InputObject <IGroupsIdentity> [-PassThru] [-WhatIf] [-Co
 ## DESCRIPTION
 Remove the group from the list of the current user's favorite groups.
 Supported for Microsoft 365 groups only.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgGroupFavorite Cmdlet

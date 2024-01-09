@@ -88,7 +88,8 @@ Accept wildcard characters: False
 ```
 
 ### -AuthorizationSystemId1
-.
+ID of the authorization system retrieved from the customer cloud environment.
+Supports $filter(eq, contains) and $orderBy.
 
 ```yaml
 Type: String
@@ -103,7 +104,8 @@ Accept wildcard characters: False
 ```
 
 ### -AuthorizationSystemName
-.
+Name of the authorization system detected after onboarding.
+Supports $filter(eq,contains) and $orderBy.
 
 ```yaml
 Type: String
@@ -118,7 +120,9 @@ Accept wildcard characters: False
 ```
 
 ### -AuthorizationSystemType
-.
+The type of authorization system.
+Can be gcp, azure, or aws.
+Supports $filter(eq).
 
 ```yaml
 Type: String
@@ -247,9 +251,13 @@ BODYPARAMETER \<IMicrosoftGraphAuthorizationSystem\>: authorizationSystem
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  \[AuthorizationSystemId \<String\>\]: 
-  \[AuthorizationSystemName \<String\>\]: 
-  \[AuthorizationSystemType \<String\>\]: 
+  \[AuthorizationSystemId \<String\>\]: ID of the authorization system retrieved from the customer cloud environment.
+Supports $filter(eq, contains) and $orderBy.
+  \[AuthorizationSystemName \<String\>\]: Name of the authorization system detected after onboarding.
+Supports $filter(eq,contains) and $orderBy.
+  \[AuthorizationSystemType \<String\>\]: The type of authorization system.
+Can be gcp, azure, or aws.
+Supports $filter(eq).
   \[DataCollectionInfo \<IMicrosoftGraphDataCollectionInfo\>\]: dataCollectionInfo
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[Id \<String\>\]: The unique identifier for an entity.

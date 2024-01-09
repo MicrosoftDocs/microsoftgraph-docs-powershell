@@ -9,8 +9,7 @@ ms.prod: sharepoint
 # Grant-MgGroupSitePermission
 
 ## SYNOPSIS
-Grant users access to a link represented by a permission\]\[\].
-This API is available in the following \[national cloud deployments.
+Grant users access to a link represented by a \[permission\]\[\].
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Grant-MgBetaGroupSitePermission](/powershell/module/Microsoft.Graph.Beta.Groups/Grant-MgBetaGroupSitePermission?view=graph-powershell-beta)
@@ -45,8 +44,10 @@ Grant-MgGroupSitePermission -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Grant users access to a link represented by a permission\]\[\].
-This API is available in the following \[national cloud deployments.
+Grant users access to a link represented by a \[permission\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/permission-grant-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -303,4 +304,5 @@ security groups).
 [Grant-MgBetaGroupSitePermission](/powershell/module/Microsoft.Graph.Beta.Groups/Grant-MgBetaGroupSitePermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/grant-mggroupsitepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/grant-mggroupsitepermission)
+
 

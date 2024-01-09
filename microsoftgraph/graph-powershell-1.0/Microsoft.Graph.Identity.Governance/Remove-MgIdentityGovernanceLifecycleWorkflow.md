@@ -11,7 +11,6 @@ ms.prod: governance
 ## SYNOPSIS
 Delete a workflow object and its associated tasks, taskProcessingResults and versions.
 You can restore a deleted workflow and its associated objects within 30 days of deletion.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaIdentityGovernanceLifecycleWorkflow](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaIdentityGovernanceLifecycleWorkflow?view=graph-powershell-beta)
@@ -33,7 +32,9 @@ Remove-MgIdentityGovernanceLifecycleWorkflow -InputObject <IIdentityGovernanceId
 ## DESCRIPTION
 Delete a workflow object and its associated tasks, taskProcessingResults and versions.
 You can restore a deleted workflow and its associated objects within 30 days of deletion.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-workflow-delete-permissions.md)]
 
 ## PARAMETERS
 

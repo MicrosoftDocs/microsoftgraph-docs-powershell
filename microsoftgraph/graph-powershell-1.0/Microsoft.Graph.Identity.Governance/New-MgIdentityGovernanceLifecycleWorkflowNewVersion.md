@@ -9,7 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new version of the workflow object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernanceLifecycleWorkflowNewVersion](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceLifecycleWorkflowNewVersion?view=graph-powershell-beta)
@@ -45,7 +44,6 @@ New-MgIdentityGovernanceLifecycleWorkflowNewVersion -InputObject <IIdentityGover
 
 ## DESCRIPTION
 Create a new version of the workflow object.
-This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

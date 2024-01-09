@@ -47,6 +47,9 @@ Get-MgBetaEntitlementManagementAccessPackageAssignment [-ExpandProperty <String[
 ## DESCRIPTION
 The assignment of an access package to a subject for a period of time.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/entitlementmanagement-list-accesspackageassignments-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaEntitlementManagementAccessPackageAssignment Cmdlet
 ```powershell

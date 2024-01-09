@@ -15,7 +15,6 @@ These objects represent a language available in a user flow.
 Note: To retrieve a language supported for customization, you must first enable language customization on your Azure AD B2C user flow.
 For more information, see Update b2cIdentityUserFlow.
 Language customization is enabled by default in Microsoft Entra user flows.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -44,7 +43,12 @@ These objects represent a language available in a user flow.
 Note: To retrieve a language supported for customization, you must first enable language customization on your Azure AD B2C user flow.
 For more information, see Update b2cIdentityUserFlow.
 Language customization is enabled by default in Microsoft Entra user flows.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userflowlanguageconfiguration-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/b2cidentityuserflow-list-languages-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaIdentityB2CUserFlowLanguage Cmdlet
@@ -287,6 +291,7 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[ActivityBasedTimeoutPolicyId \<String\>\]: The unique identifier of activityBasedTimeoutPolicy
   \[AppManagementPolicyId \<String\>\]: The unique identifier of appManagementPolicy
   \[AuthenticationCombinationConfigurationId \<String\>\]: The unique identifier of authenticationCombinationConfiguration
+  \[AuthenticationConditionApplicationAppId \<String\>\]: The unique identifier of authenticationConditionApplication
   \[AuthenticationContextClassReferenceId \<String\>\]: The unique identifier of authenticationContextClassReference
   \[AuthenticationEventListenerId \<String\>\]: The unique identifier of authenticationEventListener
   \[AuthenticationEventsFlowId \<String\>\]: The unique identifier of authenticationEventsFlow

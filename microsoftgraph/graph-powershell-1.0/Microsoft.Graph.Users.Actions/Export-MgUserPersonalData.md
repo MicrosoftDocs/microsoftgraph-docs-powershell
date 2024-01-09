@@ -12,7 +12,6 @@ ms.prod: users
 Submit a data policy operation request from a company administrator or an application to export an organizational user's data.
 This data includes the user's data stored in OneDrive and their activity reports.
 For more guidance about exporting data while complying with regulations, see Data Subject Requests and the GDPR and CCPA.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Export-MgBetaUserPersonalData](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Export-MgBetaUserPersonalData?view=graph-powershell-beta)
@@ -49,7 +48,9 @@ Export-MgUserPersonalData -InputObject <IUsersActionsIdentity>
 Submit a data policy operation request from a company administrator or an application to export an organizational user's data.
 This data includes the user's data stored in OneDrive and their activity reports.
 For more guidance about exporting data while complying with regulations, see Data Subject Requests and the GDPR and CCPA.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-exportpersonaldata-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Export-MgUserPersonalData Cmdlet

@@ -38,6 +38,9 @@ Get-MgBetaUserFollowedSite -InputObject <ISitesIdentity> [-ExpandProperty <Strin
 ## DESCRIPTION
 Get followedSites from users
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/sites-list-followed-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserFollowedSite Cmdlet
 ```powershell

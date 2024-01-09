@@ -11,7 +11,6 @@ ms.prod: groups
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a specific endpoint object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -36,7 +35,12 @@ Get-MgBetaGroupEndpoint -InputObject <IGroupsIdentity> [-ExpandProperty <String[
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a specific endpoint object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/endpoint-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-endpoints-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaGroupEndpoint Cmdlet

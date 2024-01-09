@@ -367,3 +367,4 @@ RESOURCES \<IMicrosoftGraphAuditResource\[\]\>: Resources being modified.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementauditevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementauditevent)
 
 
+

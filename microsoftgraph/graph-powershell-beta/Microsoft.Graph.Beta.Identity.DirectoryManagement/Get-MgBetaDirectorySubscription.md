@@ -11,7 +11,6 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Get a specific commercial subscription that an organization has acquired.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -36,7 +35,12 @@ Get-MgBetaDirectorySubscription -InputObject <IIdentityDirectoryManagementIdenti
 
 ## DESCRIPTION
 Get a specific commercial subscription that an organization has acquired.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/companysubscription-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-list-subscriptions-permissions.md)]
 
 ## PARAMETERS
 

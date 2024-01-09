@@ -11,7 +11,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Get the properties and relationships of an organizational contact object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgContact](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContact?view=graph-powershell-1.0)
@@ -39,7 +38,12 @@ Get-MgBetaContact -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandPr
 
 ## DESCRIPTION
 Get the properties and relationships of an organizational contact object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/orgcontact-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/orgcontact-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Retrieve contact objects in the directory 

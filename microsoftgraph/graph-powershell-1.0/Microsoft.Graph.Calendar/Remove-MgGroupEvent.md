@@ -10,7 +10,6 @@ ms.prod: groups
 
 ## SYNOPSIS
 Delete an event object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaGroupEvent?view=graph-powershell-beta)
@@ -31,7 +30,9 @@ Remove-MgGroupEvent -InputObject <ICalendarIdentity> [-IfMatch <String>] [-PassT
 
 ## DESCRIPTION
 Delete an event object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-delete-event-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -180,6 +181,7 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[ExtensionId \<String\>\]: The unique identifier of extension
   \[GroupId \<String\>\]: The unique identifier of group
   \[PlaceId \<String\>\]: The unique identifier of place
+  \[RoomId \<String\>\]: The unique identifier of room
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS

@@ -10,7 +10,6 @@ ms.prod: cloud-communications
 
 ## SYNOPSIS
 Create a new audioRoutingGroup.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgCommunicationCallAudioRoutingGroup](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgCommunicationCallAudioRoutingGroup?view=graph-powershell-1.0)
@@ -45,7 +44,9 @@ New-MgBetaCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicationsI
 
 ## DESCRIPTION
 Create a new audioRoutingGroup.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-post-audioroutinggroups-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

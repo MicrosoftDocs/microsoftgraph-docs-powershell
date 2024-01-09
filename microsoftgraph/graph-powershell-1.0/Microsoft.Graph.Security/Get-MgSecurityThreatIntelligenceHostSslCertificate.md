@@ -10,7 +10,6 @@ ms.prod: security
 
 ## SYNOPSIS
 Get the properties and relationships of a hostSslCertificate object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceHostSslCertificate](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostSslCertificate?view=graph-powershell-beta)
@@ -69,7 +68,9 @@ Get-MgSecurityThreatIntelligenceHostSslCertificate -InputObject <ISecurityIdenti
 
 ## DESCRIPTION
 Get the properties and relationships of a hostSslCertificate object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-hostsslcertificate-get-permissions.md)]
 
 ## PARAMETERS
 

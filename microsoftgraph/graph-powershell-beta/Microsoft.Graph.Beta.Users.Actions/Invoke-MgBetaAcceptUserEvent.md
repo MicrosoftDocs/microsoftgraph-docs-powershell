@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Accept the specified event in a user calendar.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgAcceptUserEvent](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgAcceptUserEvent?view=graph-powershell-1.0)
@@ -45,7 +44,9 @@ Invoke-MgBetaAcceptUserEvent -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Accept the specified event in a user calendar.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-accept-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgBetaAcceptUserEvent Cmdlet
@@ -266,6 +267,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[NotebookId \<String\>\]: The unique identifier of notebook
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
   \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
   \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
   \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask

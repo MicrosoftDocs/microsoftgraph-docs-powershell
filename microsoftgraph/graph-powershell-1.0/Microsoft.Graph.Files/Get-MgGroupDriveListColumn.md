@@ -38,6 +38,9 @@ Get-MgGroupDriveListColumn -InputObject <IFilesIdentity> [-ExpandProperty <Strin
 ## DESCRIPTION
 The collection of field definitions for this list.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/list-list-columns-permissions.md)]
+
 ## PARAMETERS
 
 ### -All

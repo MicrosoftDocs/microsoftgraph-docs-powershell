@@ -10,7 +10,6 @@ ms.prod: multi-tenant-management
 
 ## SYNOPSIS
 Delete a tenantTag object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,9 @@ Remove-MgBetaTenantRelationshipManagedTenantTag -InputObject <IManagedTenantsIde
 
 ## DESCRIPTION
 Delete a tenantTag object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-tenanttag-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaTenantRelationshipManagedTenantTag Cmdlet

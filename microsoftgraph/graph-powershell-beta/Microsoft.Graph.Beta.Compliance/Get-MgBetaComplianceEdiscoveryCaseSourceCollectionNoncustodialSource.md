@@ -37,6 +37,9 @@ Get-MgBetaComplianceEdiscoveryCaseSourceCollectionNoncustodialSource -InputObjec
 ## DESCRIPTION
 noncustodialDataSource sources that are included in the sourceCollection
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-sourcecollection-list-noncustodialsources-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaComplianceEdiscoveryCaseSourceCollectionNoncustodialSource Cmdlet
 ```powershell

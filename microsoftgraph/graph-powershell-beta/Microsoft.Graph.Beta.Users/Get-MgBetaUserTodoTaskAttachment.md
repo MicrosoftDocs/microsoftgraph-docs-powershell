@@ -11,7 +11,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Read the properties and relationships of a taskFileAttachment object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserTodoTaskAttachment](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoTaskAttachment?view=graph-powershell-1.0)
@@ -38,7 +37,12 @@ Get-MgBetaUserTodoTaskAttachment -InputObject <IUsersIdentity> [-Property <Strin
 
 ## DESCRIPTION
 Read the properties and relationships of a taskFileAttachment object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/taskfileattachment-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/todotask-list-attachments-permissions.md)]
 
 ## PARAMETERS
 
@@ -282,7 +286,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Get-MgUserTodoTaskAttachment](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoTaskAttachment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotaskattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotaskattachment)
-
 
 
 

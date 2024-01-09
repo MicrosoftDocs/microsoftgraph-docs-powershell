@@ -11,7 +11,6 @@ ms.prod: identity-and-access-reports
 
 ## SYNOPSIS
 Retrieve the properties and relationships of an applicationSignInDetailedSummary object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -36,7 +35,12 @@ Get-MgBetaReportApplicationSignInDetailedSummary -InputObject <IReportsIdentity>
 
 ## DESCRIPTION
 Retrieve the properties and relationships of an applicationSignInDetailedSummary object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/applicationsignindetailedsummary-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-list-applicationsignindetailedsummary-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaReportApplicationSignInDetailedSummary Cmdlet
@@ -268,10 +272,12 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
   \[DeviceManagementExportJobId \<String\>\]: The unique identifier of deviceManagementExportJob
   \[DirectoryAuditId \<String\>\]: The unique identifier of directoryAudit
   \[EndDateTime \<DateTime?\>\]: Usage: endDateTime={endDateTime}
+  \[ExclusiveIntervalEndDateTime \<DateTime?\>\]: Usage: exclusiveIntervalEndDateTime={exclusiveIntervalEndDateTime}
   \[Filter \<String\>\]: Usage: filter='{filter}'
   \[GroupId \<String\>\]: Usage: groupId='{groupId}'
   \[IncludedUserRoles \<String\>\]: Usage: includedUserRoles='{includedUserRoles}'
   \[IncludedUserTypes \<String\>\]: Usage: includedUserTypes='{includedUserTypes}'
+  \[InclusiveIntervalStartDateTime \<DateTime?\>\]: Usage: inclusiveIntervalStartDateTime={inclusiveIntervalStartDateTime}
   \[InsightSummaryId \<String\>\]: The unique identifier of insightSummary
   \[MfaCompletionMetricId \<String\>\]: The unique identifier of mfaCompletionMetric
   \[MonthlyInactiveUsersByApplicationMetricId \<String\>\]: The unique identifier of monthlyInactiveUsersByApplicationMetric

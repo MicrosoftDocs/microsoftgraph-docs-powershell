@@ -11,7 +11,6 @@ ms.prod: search
 
 ## SYNOPSIS
 Retrieve the properties and relationships of an externalConnection.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgExternalConnection](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnection?view=graph-powershell-1.0)
@@ -39,7 +38,12 @@ Get-MgBetaExternalConnection -InputObject <ISearchIdentity> [-ExpandProperty <St
 
 ## DESCRIPTION
 Retrieve the properties and relationships of an externalConnection.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-externalconnection-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-externalconnection-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

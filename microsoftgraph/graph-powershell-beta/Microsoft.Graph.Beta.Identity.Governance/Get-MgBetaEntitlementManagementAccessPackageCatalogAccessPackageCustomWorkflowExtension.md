@@ -11,7 +11,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 Read the properties and relationships of an accessPackageAssignmentWorkflowExtension object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -39,7 +38,12 @@ Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowEx
 
 ## DESCRIPTION
 Read the properties and relationships of an accessPackageAssignmentWorkflowExtension object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackageassignmentworkflowextension-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackagecatalog-list-accesspackagecustomworkflowextensions-permissions.md)]
 
 ## PARAMETERS
 

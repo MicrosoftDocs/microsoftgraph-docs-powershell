@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -ModificationDateTime
-.
+Time when the change occurred.
 
 ```yaml
 Type: DateTime
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -PermissionsRequestId
-.
+The ID of the scheduledPermissionsRequest object.
 
 ```yaml
 Type: String
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -TicketId
-.
+Represents the ticketing system identifier.
 
 ```yaml
 Type: String
@@ -252,10 +252,10 @@ BODYPARAMETER \<IMicrosoftGraphPermissionsRequestChange\>: permissionsRequestCha
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
   \[ActiveOccurrenceStatus \<String\>\]: permissionsRequestOccurrenceStatus
-  \[ModificationDateTime \<DateTime?\>\]: 
-  \[PermissionsRequestId \<String\>\]: 
+  \[ModificationDateTime \<DateTime?\>\]: Time when the change occurred.
+  \[PermissionsRequestId \<String\>\]: The ID of the scheduledPermissionsRequest object.
   \[StatusDetail \<String\>\]: statusDetail
-  \[TicketId \<String\>\]: 
+  \[TicketId \<String\>\]: Represents the ticketing system identifier.
 
 INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[AccessPackageAssignmentId \<String\>\]: The unique identifier of accessPackageAssignment

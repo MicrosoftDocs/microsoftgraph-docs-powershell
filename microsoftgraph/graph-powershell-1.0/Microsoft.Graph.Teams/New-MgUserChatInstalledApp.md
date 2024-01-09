@@ -10,7 +10,6 @@ ms.prod: microsoft-teams
 
 ## SYNOPSIS
 Install a teamsApp to the specified chat.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChatInstalledApp?view=graph-powershell-beta)
@@ -47,7 +46,6 @@ New-MgUserChatInstalledApp -InputObject <ITeamsIdentity> -BodyParameter <IMicros
 
 ## DESCRIPTION
 Install a teamsApp to the specified chat.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 

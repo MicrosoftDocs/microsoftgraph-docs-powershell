@@ -10,7 +10,6 @@ ms.prod: cloud-printing
 
 ## SYNOPSIS
 Grant the specified user access to submit print jobs to the associated printerShare.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgPrintShareAllowedUserByRef](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintShareAllowedUserByRef?view=graph-powershell-1.0)
@@ -43,7 +42,9 @@ New-MgBetaPrintShareAllowedUserByRef -InputObject <IDevicesCloudPrintIdentity>
 
 ## DESCRIPTION
 Grant the specified user access to submit print jobs to the associated printerShare.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printershare-post-allowedusers-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

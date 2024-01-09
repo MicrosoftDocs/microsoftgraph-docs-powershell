@@ -10,7 +10,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 Create a new accessReviewScheduleDefinition object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceAccessReviewDefinition?view=graph-powershell-beta)
@@ -39,7 +38,9 @@ New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter <IMicrosoftGraphAc
 
 ## DESCRIPTION
 Create a new accessReviewScheduleDefinition object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewset-post-definitions-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Create an access review on a group
@@ -1215,4 +1216,5 @@ Required.
 [New-MgBetaIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceAccessReviewDefinition?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewdefinition)
+
 

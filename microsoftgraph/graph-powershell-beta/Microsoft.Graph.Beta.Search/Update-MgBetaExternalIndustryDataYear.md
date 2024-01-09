@@ -10,7 +10,6 @@ ms.prod: industry-data-etl
 
 ## SYNOPSIS
 Update the properties of a yearTimePeriodDefinition object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -42,7 +41,9 @@ Update-MgBetaExternalIndustryDataYear -InputObject <ISearchIdentity>
 
 ## DESCRIPTION
 Update the properties of a yearTimePeriodDefinition object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-yeartimeperioddefinition-update-permissions.md)]
 
 ## PARAMETERS
 

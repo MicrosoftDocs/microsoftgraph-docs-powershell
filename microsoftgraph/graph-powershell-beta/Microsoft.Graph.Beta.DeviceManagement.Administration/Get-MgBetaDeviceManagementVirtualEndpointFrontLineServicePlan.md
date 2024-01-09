@@ -11,7 +11,6 @@ ms.prod: cloud-pc
 
 ## SYNOPSIS
 Get the properties and relationships of a cloudPcFrontLineServicePlan object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -37,7 +36,12 @@ Get-MgBetaDeviceManagementVirtualEndpointFrontLineServicePlan
 
 ## DESCRIPTION
 Get the properties and relationships of a cloudPcFrontLineServicePlan object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcfrontlineserviceplan-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-list-frontlineserviceplans-permissions.md)]
 
 ## PARAMETERS
 

@@ -11,7 +11,7 @@ ms.prod: security
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a specified threatAssessmentRequest object.
-A threat assessment request can be one of the following types: This API is available in the following national cloud deployments.
+A threat assessment request can be one of the following types:
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgInformationProtectionThreatAssessmentRequest?view=graph-powershell-1.0)
@@ -39,7 +39,13 @@ Get-MgBetaInformationProtectionThreatAssessmentRequest -InputObject <IIdentitySi
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a specified threatAssessmentRequest object.
-A threat assessment request can be one of the following types: This API is available in the following national cloud deployments.
+A threat assessment request can be one of the following types:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/threatassessmentrequest-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/informationprotection-list-threatassessmentrequests-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get the properties of a mail assessment request
@@ -301,6 +307,7 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[ActivityBasedTimeoutPolicyId \<String\>\]: The unique identifier of activityBasedTimeoutPolicy
   \[AppManagementPolicyId \<String\>\]: The unique identifier of appManagementPolicy
   \[AuthenticationCombinationConfigurationId \<String\>\]: The unique identifier of authenticationCombinationConfiguration
+  \[AuthenticationConditionApplicationAppId \<String\>\]: The unique identifier of authenticationConditionApplication
   \[AuthenticationContextClassReferenceId \<String\>\]: The unique identifier of authenticationContextClassReference
   \[AuthenticationEventListenerId \<String\>\]: The unique identifier of authenticationEventListener
   \[AuthenticationEventsFlowId \<String\>\]: The unique identifier of authenticationEventsFlow

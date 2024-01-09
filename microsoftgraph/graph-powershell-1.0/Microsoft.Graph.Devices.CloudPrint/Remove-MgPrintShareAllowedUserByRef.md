@@ -10,7 +10,6 @@ ms.prod: cloud-printing
 
 ## SYNOPSIS
 Revoke the specified user's access to submit print jobs to the associated printerShare.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaPrintShareAllowedUserByRef](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintShareAllowedUserByRef?view=graph-powershell-beta)
@@ -31,7 +30,9 @@ Remove-MgPrintShareAllowedUserByRef -InputObject <IDevicesCloudPrintIdentity> [-
 
 ## DESCRIPTION
 Revoke the specified user's access to submit print jobs to the associated printerShare.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printershare-delete-alloweduser-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

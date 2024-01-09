@@ -39,6 +39,9 @@ Get-MgSecurityThreatIntelligenceIntelProfileIndicator -InputObject <ISecurityIde
 ## DESCRIPTION
 Includes an assemblage of high-fidelity network indicators of compromise.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-intelligenceprofile-list-indicators-permissions.md)]
+
 ## PARAMETERS
 
 ### -All

@@ -11,7 +11,6 @@ ms.prod: security
 
 ## SYNOPSIS
 Read the properties and relationships of a retentionEvent object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSecurityTriggerRetentionEvent](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityTriggerRetentionEvent?view=graph-powershell-1.0)
@@ -39,7 +38,12 @@ Get-MgBetaSecurityTriggerRetentionEvent -InputObject <ISecurityIdentity> [-Expan
 
 ## DESCRIPTION
 Read the properties and relationships of a retentionEvent object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-retentionevent-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-retentionevent-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -258,6 +262,8 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[ArticleId \<String\>\]: The unique identifier of article
   \[ArticleIndicatorId \<String\>\]: The unique identifier of articleIndicator
   \[AttackSimulationOperationId \<String\>\]: The unique identifier of attackSimulationOperation
+  \[AuditLogQueryId \<String\>\]: The unique identifier of auditLogQuery
+  \[AuditLogRecordId \<String\>\]: The unique identifier of auditLogRecord
   \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
   \[AuthorityTemplateId \<String\>\]: The unique identifier of authorityTemplate
   \[CaseOperationId \<String\>\]: The unique identifier of caseOperation

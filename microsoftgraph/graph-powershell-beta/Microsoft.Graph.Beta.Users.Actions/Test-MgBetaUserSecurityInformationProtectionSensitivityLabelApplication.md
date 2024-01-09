@@ -10,7 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Compute the sensitivity label that should be applied and return the set of actions that must be taken to correctly label the information.
 This API is useful when a label should be set manually or explicitly by a user or service, rather than automatically based on file contents.
-Given contentInfo, which includes existing content metadata key-value pairs, and labelingOptions as an input, the API returns an informationProtectionAction object that contains one of more of the following:  This API is available in the following national cloud deployments.
+Given contentInfo, which includes existing content metadata key-value pairs, and labelingOptions as an input, the API returns an informationProtectionAction object that contains one of more of the following:
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Test-MgBetaUserSecurityInformationProtectionSensitivityLabelApplication -InputOb
 ## DESCRIPTION
 Compute the sensitivity label that should be applied and return the set of actions that must be taken to correctly label the information.
 This API is useful when a label should be set manually or explicitly by a user or service, rather than automatically based on file contents.
-Given contentInfo, which includes existing content metadata key-value pairs, and labelingOptions as an input, the API returns an informationProtectionAction object that contains one of more of the following:  This API is available in the following national cloud deployments.
+Given contentInfo, which includes existing content metadata key-value pairs, and labelingOptions as an input, the API returns an informationProtectionAction object that contains one of more of the following:
 
 ## EXAMPLES
 ### Example 1: Using the Test-MgBetaUserSecurityInformationProtectionSensitivityLabelApplication Cmdlet
@@ -323,6 +323,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[NotebookId \<String\>\]: The unique identifier of notebook
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
   \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
   \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
   \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask

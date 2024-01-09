@@ -44,6 +44,9 @@ The contact's direct reports.
 Nullable.
 Supports $expand.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/orgcontact-list-directreports-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -10,7 +10,6 @@ ms.prod: applications
 
 ## SYNOPSIS
 Create a new onPremisesAgentGroup object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -44,7 +43,9 @@ New-MgBetaOnPremisePublishingProfileAgentGroup -InputObject <IApplicationsIdenti
 
 ## DESCRIPTION
 Create a new onPremisesAgentGroup object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onpremisesagentgroup-post-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaOnPremisePublishingProfileAgentGroup Cmdlet

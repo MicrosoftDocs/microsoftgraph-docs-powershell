@@ -11,7 +11,6 @@ ms.prod: groups
 ## SYNOPSIS
 Renew a group's expiration.
 When a group is renewed, the group expiration is extended by the number of days defined in the policy.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -31,7 +30,9 @@ Invoke-MgBetaRenewGroupLifecyclePolicy
 ## DESCRIPTION
 Renew a group's expiration.
 When a group is renewed, the group expiration is extended by the number of days defined in the policy.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/grouplifecyclepolicy-renewgroup-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgBetaRenewGroupLifecyclePolicy Cmdlet

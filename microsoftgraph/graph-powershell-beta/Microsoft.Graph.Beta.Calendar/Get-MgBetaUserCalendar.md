@@ -42,6 +42,9 @@ The user's calendars.
 Read-only.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-calendars-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserCalendar Cmdlet
 ```powershell

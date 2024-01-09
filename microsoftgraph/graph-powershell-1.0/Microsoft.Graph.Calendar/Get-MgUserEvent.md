@@ -13,7 +13,6 @@ ms.prod: outlook
 Get the properties and relationships of the specified event object.
 Currently, this operation returns event bodies in only HTML format.
 There are two scenarios where an app can get an event in another user's calendar: Since the event resource supports extensions, you can also use the GET operation to get custom properties and extension data in an event instance.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserEvent?view=graph-powershell-beta)
@@ -43,7 +42,12 @@ Get-MgUserEvent -InputObject <ICalendarIdentity> [-ExpandProperty <String[]>] [-
 Get the properties and relationships of the specified event object.
 Currently, this operation returns event bodies in only HTML format.
 There are two scenarios where an app can get an event in another user's calendar: Since the event resource supports extensions, you can also use the GET operation to get custom properties and extension data in an event instance.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-list-events-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -280,6 +284,7 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[ExtensionId \<String\>\]: The unique identifier of extension
   \[GroupId \<String\>\]: The unique identifier of group
   \[PlaceId \<String\>\]: The unique identifier of place
+  \[RoomId \<String\>\]: The unique identifier of room
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS

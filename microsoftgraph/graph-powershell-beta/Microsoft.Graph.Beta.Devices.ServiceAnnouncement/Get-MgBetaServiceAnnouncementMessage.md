@@ -13,7 +13,6 @@ ms.prod: service-communications
 Retrieve the properties and relationships of a serviceUpdateMessage object.
 This operation retrieves a specified service update message for the tenant.
 The operation returns an error if the message does not exist for the tenant.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementMessage?view=graph-powershell-1.0)
@@ -43,7 +42,12 @@ Get-MgBetaServiceAnnouncementMessage -InputObject <IDevicesServiceAnnouncementId
 Retrieve the properties and relationships of a serviceUpdateMessage object.
 This operation retrieves a specified service update message for the tenant.
 The operation returns an error if the message does not exist for the tenant.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceupdatemessage-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceannouncement-list-messages-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

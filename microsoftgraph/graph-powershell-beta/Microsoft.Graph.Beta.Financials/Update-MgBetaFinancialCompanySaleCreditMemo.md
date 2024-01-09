@@ -1055,3 +1055,4 @@ SELLINGPOSTALADDRESS \<IMicrosoftGraphPostalAddressType\>: postalAddressType
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysalecreditmemo](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysalecreditmemo)
 
 
+

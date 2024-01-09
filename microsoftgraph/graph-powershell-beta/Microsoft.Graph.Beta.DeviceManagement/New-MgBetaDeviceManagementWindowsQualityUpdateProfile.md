@@ -304,3 +304,4 @@ EXPEDITEDUPDATESETTINGS \<IMicrosoftGraphExpeditedWindowsQualityUpdateSettings\>
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementwindowsqualityupdateprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementwindowsqualityupdateprofile)
 
 
+

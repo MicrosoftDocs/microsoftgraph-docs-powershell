@@ -38,6 +38,9 @@ Get-MgGroupTeamIncomingChannel -InputObject <ITeamsIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 List of channels shared with the team.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-list-incomingchannels-permissions.md)]
+
 ## EXAMPLES
 
 ## PARAMETERS

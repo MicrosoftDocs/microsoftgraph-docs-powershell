@@ -10,7 +10,6 @@ ms.prod: people
 
 ## SYNOPSIS
 Deletes a personWebsite object from a user's profile.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +27,9 @@ Remove-MgBetaUserProfileWebsite -InputObject <IPeopleIdentity> [-IfMatch <String
 
 ## DESCRIPTION
 Deletes a personWebsite object from a user's profile.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/personwebsite-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaUserProfileWebsite Cmdlet

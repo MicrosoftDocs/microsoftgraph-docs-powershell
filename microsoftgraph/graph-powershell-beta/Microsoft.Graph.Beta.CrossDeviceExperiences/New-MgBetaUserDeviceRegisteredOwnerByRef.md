@@ -10,7 +10,6 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Add a user as a registered owner of the device.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -40,7 +39,9 @@ New-MgBetaUserDeviceRegisteredOwnerByRef -InputObject <ICrossDeviceExperiencesId
 
 ## DESCRIPTION
 Add a user as a registered owner of the device.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-post-registeredowners-permissions.md)]
 
 ## PARAMETERS
 

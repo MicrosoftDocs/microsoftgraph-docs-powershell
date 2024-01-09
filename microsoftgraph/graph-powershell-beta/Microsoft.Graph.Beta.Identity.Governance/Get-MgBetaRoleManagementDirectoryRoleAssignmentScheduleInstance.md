@@ -11,7 +11,6 @@ ms.prod: governance
 
 ## SYNOPSIS
 Get the instance of an active role assignment.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstance?view=graph-powershell-1.0)
@@ -40,7 +39,12 @@ Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstance -InputObject <II
 
 ## DESCRIPTION
 Get the instance of an active role assignment.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleassignmentscheduleinstance-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rbacapplication-list-roleassignmentscheduleinstances-permissions.md)]
 
 ## PARAMETERS
 

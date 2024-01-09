@@ -10,7 +10,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Create a new conditionalAccessPolicy.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)
@@ -35,7 +34,6 @@ New-MgIdentityConditionalAccessPolicy -BodyParameter <IMicrosoftGraphConditional
 
 ## DESCRIPTION
 Create a new conditionalAccessPolicy.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Require MFA to access Exchange Online outside of trusted locations

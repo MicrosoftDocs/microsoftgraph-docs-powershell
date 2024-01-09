@@ -11,7 +11,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Get the properties and relationships of the specified outlookCategory object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOutlookMasterCategory?view=graph-powershell-beta)
@@ -37,7 +36,12 @@ Get-MgUserOutlookMasterCategory -InputObject <IUsersIdentity> [-Property <String
 
 ## DESCRIPTION
 Get the properties and relationships of the specified outlookCategory object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/outlookcategory-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/outlookuser-list-mastercategories-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -256,6 +260,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Get-MgBetaUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOutlookMasterCategory?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguseroutlookmastercategory](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguseroutlookmastercategory)
-
 
 

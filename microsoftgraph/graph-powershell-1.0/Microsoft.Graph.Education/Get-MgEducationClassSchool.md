@@ -40,6 +40,9 @@ Get-MgEducationClassSchool -InputObject <IEducationIdentity> [-ExpandProperty <S
 All schools that this class is associated with.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationclass-list-schools-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

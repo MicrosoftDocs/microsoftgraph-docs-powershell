@@ -19,7 +19,6 @@ Validate that the mail nickname is unique This API only returns the first valida
 If the properties fail multiple validations, only the first validation failure is returned.
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 To learn more about configuring naming policies, see Configure naming policy.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Test-MgBetaDirectoryRoleTemplateProperty](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Test-MgBetaDirectoryRoleTemplateProperty?view=graph-powershell-beta)
@@ -51,7 +50,9 @@ Validate that the mail nickname is unique This API only returns the first valida
 If the properties fail multiple validations, only the first validation failure is returned.
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 To learn more about configuring naming policies, see Configure naming policy.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directoryobject-validateproperties-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

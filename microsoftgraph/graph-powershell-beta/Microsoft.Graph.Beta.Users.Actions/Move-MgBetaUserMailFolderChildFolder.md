@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Move a mail folder and its contents to another mail folder.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Move-MgUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Users.Actions/Move-MgUserMailFolderChildFolder?view=graph-powershell-1.0)
@@ -45,7 +44,9 @@ Move-MgBetaUserMailFolderChildFolder -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Move a mail folder and its contents to another mail folder.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailfolder-move-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -254,6 +255,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[NotebookId \<String\>\]: The unique identifier of notebook
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
   \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
   \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
   \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask

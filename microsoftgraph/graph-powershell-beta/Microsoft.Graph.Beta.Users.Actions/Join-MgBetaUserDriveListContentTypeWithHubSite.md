@@ -9,8 +9,7 @@ ms.prod: sites-and-lists
 # Join-MgBetaUserDriveListContentTypeWithHubSite
 
 ## SYNOPSIS
-Associate a content type\]\[contentType\] with a list of hub sites.
-This API is available in the following \[national cloud deployments.
+Associate a \[content type\]\[contentType\] with a list of hub sites.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Join-MgUserDriveListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Users.Actions/Join-MgUserDriveListContentTypeWithHubSite?view=graph-powershell-1.0)
@@ -46,8 +45,10 @@ Join-MgBetaUserDriveListContentTypeWithHubSite -InputObject <IUsersActionsIdenti
 ```
 
 ## DESCRIPTION
-Associate a content type\]\[contentType\] with a list of hub sites.
-This API is available in the following \[national cloud deployments.
+Associate a \[content type\]\[contentType\] with a list of hub sites.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-associatewithhubsites-permissions.md)]
 
 ## PARAMETERS
 
@@ -269,6 +270,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[NotebookId \<String\>\]: The unique identifier of notebook
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
   \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
   \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
   \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask

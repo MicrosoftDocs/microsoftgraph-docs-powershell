@@ -11,7 +11,6 @@ ms.prod: mail
 ## SYNOPSIS
 Create a focused Inbox override for a sender identified by an SMTP address.
 Future messages from that SMTP address will be consistently classifiedas specified in the override.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Mail/New-MgUserInferenceClassificationOverride?view=graph-powershell-1.0)
@@ -47,7 +46,9 @@ New-MgBetaUserInferenceClassificationOverride -InputObject <IMailIdentity>
 ## DESCRIPTION
 Create a focused Inbox override for a sender identified by an SMTP address.
 Future messages from that SMTP address will be consistently classifiedas specified in the override.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/inferenceclassification-post-overrides-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

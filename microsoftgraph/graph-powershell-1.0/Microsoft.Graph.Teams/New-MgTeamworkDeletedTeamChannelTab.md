@@ -9,9 +9,8 @@ ms.prod: microsoft-teams
 # New-MgTeamworkDeletedTeamChannelTab
 
 ## SYNOPSIS
-Adds (pins) a tab to the specified channel within a team.
-The corresponding app must already be installed in the team.
-This API is available in the following national cloud deployments.
+Add (pin) a tab to the specified channel within a team.
+The app must be preinstalled in the team and have the configurableTabs property defined in the app manifest.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaTeamworkDeletedTeamChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamworkDeletedTeamChannelTab?view=graph-powershell-beta)
@@ -46,9 +45,8 @@ New-MgTeamworkDeletedTeamChannelTab -InputObject <ITeamsIdentity> -BodyParameter
 ```
 
 ## DESCRIPTION
-Adds (pins) a tab to the specified channel within a team.
-The corresponding app must already be installed in the team.
-This API is available in the following national cloud deployments.
+Add (pin) a tab to the specified channel within a team.
+The app must be preinstalled in the team and have the configurableTabs property defined in the app manifest.
 
 ## PARAMETERS
 

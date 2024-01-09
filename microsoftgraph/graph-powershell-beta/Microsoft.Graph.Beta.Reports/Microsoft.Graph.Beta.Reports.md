@@ -320,6 +320,24 @@ Locale: en-US
 ### [Get-MgBetaReportSecurityAttackSimulationUserCoverage](Get-MgBetaReportSecurityAttackSimulationUserCoverage.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaReportServiceActivity](Get-MgBetaReportServiceActivity.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaReportServiceActivityMetricForConditionalAccessCompliantDeviceSignInSuccess](Get-MgBetaReportServiceActivityMetricForConditionalAccessCompliantDeviceSignInSuccess.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaReportServiceActivityMetricForConditionalAccessManagedDeviceSignInSuccess](Get-MgBetaReportServiceActivityMetricForConditionalAccessManagedDeviceSignInSuccess.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaReportServiceActivityMetricForMfaSignInFailure](Get-MgBetaReportServiceActivityMetricForMfaSignInFailure.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaReportServiceActivityMetricForMfaSignInSuccess](Get-MgBetaReportServiceActivityMetricForMfaSignInSuccess.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaReportServiceActivityMetricForSamlSignInSuccess](Get-MgBetaReportServiceActivityMetricForSamlSignInSuccess.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaReportServicePrincipalSignInActivity](Get-MgBetaReportServicePrincipalSignInActivity.md)
 {{ Fill in the Description }}
 

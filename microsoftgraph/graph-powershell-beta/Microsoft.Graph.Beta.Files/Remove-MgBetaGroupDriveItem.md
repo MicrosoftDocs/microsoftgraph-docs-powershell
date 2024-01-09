@@ -9,8 +9,7 @@ ms.prod: sharepoint
 # Remove-MgBetaGroupDriveItem
 
 ## SYNOPSIS
-Delete a DriveItem by using its ID or path.Deleting items using this method moves the items to the recycle bin instead of permanently deleting the item.
-This API is available in the following national cloud deployments.
+Delete a \[bundle\]\[\] of driveItems by using its id.Deleting a bundle using this method permanently deletes the bundle and doesn't move it to the Recycle Bin.It doesn't, however, remove the items that were referenced by the bundle.They'll remain in their parent folders.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgGroupDriveItem](/powershell/module/Microsoft.Graph.Files/Remove-MgGroupDriveItem?view=graph-powershell-1.0)
@@ -30,8 +29,10 @@ Remove-MgBetaGroupDriveItem -InputObject <IFilesIdentity> [-IfMatch <String>] [-
 ```
 
 ## DESCRIPTION
-Delete a DriveItem by using its ID or path.Deleting items using this method moves the items to the recycle bin instead of permanently deleting the item.
-This API is available in the following national cloud deployments.
+Delete a \[bundle\]\[\] of driveItems by using its id.Deleting a bundle using this method permanently deletes the bundle and doesn't move it to the Recycle Bin.It doesn't, however, remove the items that were referenced by the bundle.They'll remain in their parent folders.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bundle-delete-permissions.md)]
 
 ## PARAMETERS
 

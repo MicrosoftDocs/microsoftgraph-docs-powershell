@@ -10,7 +10,6 @@ ms.prod: education
 
 ## SYNOPSIS
 Retrieve a list of users at a school.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgEducationSchoolUserByRef](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSchoolUserByRef?view=graph-powershell-1.0)
@@ -25,7 +24,9 @@ Get-MgBetaEducationSchoolUserByRef -EducationSchoolId <String> [-Filter <String>
 
 ## DESCRIPTION
 Retrieve a list of users at a school.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationschool-list-users-permissions.md)]
 
 ## EXAMPLES
 

@@ -9,8 +9,7 @@ ms.prod: sites-and-lists
 # Remove-MgGroupSiteTermStoreGroup
 
 ## SYNOPSIS
-Delete a group object in a term store\].
-This API is available in the following \[national cloud deployments.
+Delete a group object in a term \[store\].
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupSiteTermStoreGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteTermStoreGroup?view=graph-powershell-beta)
@@ -42,8 +41,10 @@ Remove-MgGroupSiteTermStoreGroup -InputObject <ISitesIdentity> [-IfMatch <String
 ```
 
 ## DESCRIPTION
-Delete a group object in a term store\].
-This API is available in the following \[national cloud deployments.
+Delete a group object in a term \[store\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-group-delete-permissions.md)]
 
 ## PARAMETERS
 

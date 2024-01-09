@@ -42,6 +42,9 @@ Get-MgIdentityB2XUserFlowLanguageOverridePage -InputObject <IIdentitySignInsIden
 Collection of pages with the overrides messages to display in a user flow for a specified language.
 This collection only allows you to modify the content of the page, any other modification isn't allowed (creation or deletion of pages).
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userflowlanguageconfiguration-list-overridespages-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

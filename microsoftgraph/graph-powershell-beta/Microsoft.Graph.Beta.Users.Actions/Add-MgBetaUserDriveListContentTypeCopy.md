@@ -9,8 +9,7 @@ ms.prod: sites-and-lists
 # Add-MgBetaUserDriveListContentTypeCopy
 
 ## SYNOPSIS
-Add a copy of a content type\]\[contentType\] from a \[site\]\[site\] to a \[list\]\[list\].
-This API is available in the following \[national cloud deployments.
+Add a copy of a \[content type\]\[contentType\] from a \[site\]\[site\] to a \[list\]\[list\].
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Add-MgUserDriveListContentTypeCopy](/powershell/module/Microsoft.Graph.Users.Actions/Add-MgUserDriveListContentTypeCopy?view=graph-powershell-1.0)
@@ -44,8 +43,10 @@ Add-MgBetaUserDriveListContentTypeCopy -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Add a copy of a content type\]\[contentType\] from a \[site\]\[site\] to a \[list\]\[list\].
-This API is available in the following \[national cloud deployments.
+Add a copy of a \[content type\]\[contentType\] from a \[site\]\[site\] to a \[list\]\[list\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-addcopy-permissions.md)]
 
 ## EXAMPLES
 
@@ -223,6 +224,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[NotebookId \<String\>\]: The unique identifier of notebook
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
   \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
   \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
   \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask

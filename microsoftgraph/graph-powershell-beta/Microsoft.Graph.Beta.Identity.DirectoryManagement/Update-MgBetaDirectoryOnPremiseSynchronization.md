@@ -10,7 +10,6 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Update the properties of an onPremisesDirectorySynchronization object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgDirectoryOnPremiseSynchronization](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryOnPremiseSynchronization?view=graph-powershell-1.0)
@@ -49,7 +48,9 @@ Update-MgBetaDirectoryOnPremiseSynchronization -InputObject <IIdentityDirectoryM
 
 ## DESCRIPTION
 Update the properties of an onPremisesDirectorySynchronization object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onpremisesdirectorysynchronization-update-permissions.md)]
 
 ## PARAMETERS
 

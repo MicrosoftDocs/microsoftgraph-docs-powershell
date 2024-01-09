@@ -10,7 +10,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Delete a conditionalAccessPolicy object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)
@@ -31,7 +30,6 @@ Remove-MgIdentityConditionalAccessPolicy -InputObject <IIdentitySignInsIdentity>
 
 ## DESCRIPTION
 Delete a conditionalAccessPolicy object.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Remove a conditional access policy

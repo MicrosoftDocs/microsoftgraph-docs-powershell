@@ -10,7 +10,6 @@ ms.prod: users
 
 ## SYNOPSIS
 Delete an appRoleAssignment that has been granted to a user.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/Remove-MgUserAppRoleAssignment?view=graph-powershell-1.0)
@@ -31,7 +30,9 @@ Remove-MgBetaUserAppRoleAssignment -InputObject <IApplicationsIdentity> [-IfMatc
 
 ## DESCRIPTION
 Delete an appRoleAssignment that has been granted to a user.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-delete-approleassignments-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Remove a user's application role assignment
@@ -205,6 +206,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Remove-MgUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/Remove-MgUserAppRoleAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetauserapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetauserapproleassignment)
-
 
 

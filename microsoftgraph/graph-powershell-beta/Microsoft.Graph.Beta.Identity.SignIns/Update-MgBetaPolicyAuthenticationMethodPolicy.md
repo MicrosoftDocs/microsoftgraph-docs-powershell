@@ -10,7 +10,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Update the properties of an authenticationMethodsPolicy object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgPolicyAuthenticationMethodPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyAuthenticationMethodPolicy?view=graph-powershell-1.0)
@@ -37,7 +36,9 @@ Update-MgBetaPolicyAuthenticationMethodPolicy -BodyParameter <IMicrosoftGraphAut
 
 ## DESCRIPTION
 Update the properties of an authenticationMethodsPolicy object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationmethodspolicy-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -433,4 +434,5 @@ SYSTEMCREDENTIALPREFERENCES \<IMicrosoftGraphSystemCredentialPreferences\>: syst
 [Update-MgPolicyAuthenticationMethodPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyAuthenticationMethodPolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationmethodpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationmethodpolicy)
+
 

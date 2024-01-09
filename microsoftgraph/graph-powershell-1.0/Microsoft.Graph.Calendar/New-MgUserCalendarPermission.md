@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Create a calendarPermission resource to specify the identity and role of the user with whom the specified calendar is being shared or delegated.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserCalendarPermission](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserCalendarPermission?view=graph-powershell-beta)
@@ -71,7 +70,6 @@ New-MgUserCalendarPermission -InputObject <ICalendarIdentity>
 
 ## DESCRIPTION
 Create a calendarPermission resource to specify the identity and role of the user with whom the specified calendar is being shared or delegated.
-This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -325,6 +323,7 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[ExtensionId \<String\>\]: The unique identifier of extension
   \[GroupId \<String\>\]: The unique identifier of group
   \[PlaceId \<String\>\]: The unique identifier of place
+  \[RoomId \<String\>\]: The unique identifier of room
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS

@@ -10,7 +10,6 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Update the properties of domain object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgDomain](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDomain?view=graph-powershell-1.0)
@@ -56,7 +55,9 @@ Update-MgBetaDomain -InputObject <IIdentityDirectoryManagementIdentity> -BodyPar
 
 ## DESCRIPTION
 Update the properties of domain object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/domain-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -519,7 +520,7 @@ Corresponds to the ActiveLogOnUri property of the Set-MsolDomainFederationSettin
     \[FederatedIdpMfaBehavior \<String\>\]: federatedIdpMfaBehavior
     \[IsSignedAuthenticationRequestRequired \<Boolean?\>\]: If true, when SAML authentication requests are sent to the federated SAML IdP, Microsoft Entra ID will sign those requests using the OrgID signing key.
 If false (default), the SAML authentication requests sent to the federated IdP aren't signed.
-    \[NextSigningCertificate \<String\>\]: Fallback token signing certificate that is used to sign tokens when the primary signing certificate expires.
+    \[NextSigningCertificate \<String\>\]: Fallback token signing certificate that can also be used to sign tokens, for example when the primary signing certificate expires.
 Formatted as Base64 encoded strings of the public portion of the federated IdP's token signing certificate.
 Needs to be compatible with the X509Certificate2 class.
 Much like the signingCertificate, the nextSigningCertificate property is used if a rollover is required outside of the auto-rollover update, a new federation service is being set up, or if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated.
@@ -616,7 +617,7 @@ Corresponds to the ActiveLogOnUri property of the Set-MsolDomainFederationSettin
   \[FederatedIdpMfaBehavior \<String\>\]: federatedIdpMfaBehavior
   \[IsSignedAuthenticationRequestRequired \<Boolean?\>\]: If true, when SAML authentication requests are sent to the federated SAML IdP, Microsoft Entra ID will sign those requests using the OrgID signing key.
 If false (default), the SAML authentication requests sent to the federated IdP aren't signed.
-  \[NextSigningCertificate \<String\>\]: Fallback token signing certificate that is used to sign tokens when the primary signing certificate expires.
+  \[NextSigningCertificate \<String\>\]: Fallback token signing certificate that can also be used to sign tokens, for example when the primary signing certificate expires.
 Formatted as Base64 encoded strings of the public portion of the federated IdP's token signing certificate.
 Needs to be compatible with the X509Certificate2 class.
 Much like the signingCertificate, the nextSigningCertificate property is used if a rollover is required outside of the auto-rollover update, a new federation service is being set up, or if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated.
@@ -726,4 +727,5 @@ Not nullable.
 [Update-MgDomain](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDomain?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadomain](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadomain)
+
 

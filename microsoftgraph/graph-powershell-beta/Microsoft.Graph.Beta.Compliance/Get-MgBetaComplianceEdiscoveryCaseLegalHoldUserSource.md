@@ -37,6 +37,9 @@ Get-MgBetaComplianceEdiscoveryCaseLegalHoldUserSource -InputObject <IComplianceI
 Data source entity for a the legal hold.
 This is the container for a mailbox and OneDrive for Business site.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-legalhold-list-usersources-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaComplianceEdiscoveryCaseLegalHoldUserSource Cmdlet
 ```powershell

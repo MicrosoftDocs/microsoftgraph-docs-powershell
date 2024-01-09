@@ -11,7 +11,6 @@ ms.prod: sharepoint
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a permission object on a site.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupSitePermission](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSitePermission?view=graph-powershell-1.0)
@@ -39,7 +38,12 @@ Get-MgBetaGroupSitePermission -InputObject <ISitesIdentity> [-ExpandProperty <St
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a permission object on a site.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-get-permission-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-list-permissions-permissions.md)]
 
 ## PARAMETERS
 

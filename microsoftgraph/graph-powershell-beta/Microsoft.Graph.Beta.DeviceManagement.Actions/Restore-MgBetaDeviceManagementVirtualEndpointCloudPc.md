@@ -11,7 +11,6 @@ ms.prod: cloud-pc
 ## SYNOPSIS
 Restore a specific Cloud PC.
 Use this API to trigger a remote action that restores a Cloud PC device to a previous state.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -45,7 +44,9 @@ Restore-MgBetaDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManage
 ## DESCRIPTION
 Restore a specific Cloud PC.
 Use this API to trigger a remote action that restores a Cloud PC device to a previous state.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-restore-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Restore-MgBetaDeviceManagementVirtualEndpointCloudPc Cmdlet
@@ -248,6 +249,7 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
   \[MicrosoftTunnelSiteId \<String\>\]: The unique identifier of microsoftTunnelSite
   \[MobileAppTroubleshootingEventId \<String\>\]: The unique identifier of mobileAppTroubleshootingEvent
   \[NotificationMessageTemplateId \<String\>\]: The unique identifier of notificationMessageTemplate
+  \[PrivilegeManagementElevationRequestId \<String\>\]: The unique identifier of privilegeManagementElevationRequest
   \[RemoteAssistancePartnerId \<String\>\]: The unique identifier of remoteAssistancePartner
   \[RoleScopeTagId \<String\>\]: The unique identifier of roleScopeTag
   \[WindowsAutopilotDeploymentProfileId \<String\>\]: The unique identifier of windowsAutopilotDeploymentProfile

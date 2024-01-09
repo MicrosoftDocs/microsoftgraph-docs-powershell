@@ -10,7 +10,6 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Delete an administrativeUnit.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryAdministrativeUnit?view=graph-powershell-beta)
@@ -31,7 +30,9 @@ Remove-MgDirectoryAdministrativeUnit -InputObject <IIdentityDirectoryManagementI
 
 ## DESCRIPTION
 Delete an administrativeUnit.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/administrativeunit-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

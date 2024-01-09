@@ -10,7 +10,6 @@ ms.prod: sites-and-lists
 
 ## SYNOPSIS
 Create a new version of a document set item in a list.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaShareListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaShareListItemDocumentSetVersion?view=graph-powershell-beta)
@@ -83,7 +82,9 @@ New-MgShareListItemDocumentSetVersion -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Create a new version of a document set item in a list.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-post-documentsetversions-permissions.md)]
 
 ## PARAMETERS
 
@@ -481,5 +482,6 @@ Read-only.
 [New-MgBetaShareListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaShareListItemDocumentSetVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgsharelistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgsharelistitemdocumentsetversion)
+
 
 

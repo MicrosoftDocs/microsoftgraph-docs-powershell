@@ -11,7 +11,6 @@ ms.prod: extensions
 
 ## SYNOPSIS
 Read a directory extension definition represented by an extensionProperty object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationExtensionProperty?view=graph-powershell-1.0)
@@ -39,7 +38,12 @@ Get-MgBetaApplicationExtensionProperty -InputObject <IApplicationsIdentity> [-Ex
 
 ## DESCRIPTION
 Read a directory extension definition represented by an extensionProperty object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/extensionproperty-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-list-extensionproperty-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -305,6 +309,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Get-MgApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationExtensionProperty?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationextensionproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationextensionproperty)
-
 
 

@@ -9,8 +9,7 @@ ms.prod: sharepoint
 # Update-MgGroupDriveRootListItemField
 
 ## SYNOPSIS
-Update the properties on a listItem\]\[\].
-This API is available in the following \[national cloud deployments.
+Update the properties on a \[listItem\]\[\].
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupDriveRootListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveRootListItemField?view=graph-powershell-beta)
@@ -42,8 +41,10 @@ Update-MgGroupDriveRootListItemField -InputObject <IFilesIdentity> -BodyParamete
 ```
 
 ## DESCRIPTION
-Update the properties on a listItem\]\[\].
-This API is available in the following \[national cloud deployments.
+Update the properties on a \[listItem\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-update-permissions.md)]
 
 ## PARAMETERS
 

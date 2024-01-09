@@ -40,6 +40,9 @@ New-MgBetaAdministrativeUnitMemberByRef -InputObject <IIdentityDirectoryManageme
 ## DESCRIPTION
 Create new navigation property ref to members for administrativeUnits
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/administrativeunit-post-members-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaAdministrativeUnitMemberByRef Cmdlet
 ```powershell

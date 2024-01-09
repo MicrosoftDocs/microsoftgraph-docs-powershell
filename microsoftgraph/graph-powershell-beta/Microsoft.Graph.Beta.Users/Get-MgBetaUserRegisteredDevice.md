@@ -44,6 +44,9 @@ Read-only.
 Nullable.
 Supports $expand and returns up to 100 objects.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-registereddevices-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserRegisteredDevice Cmdlet
 ```powershell
@@ -312,6 +315,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Get-MgUserRegisteredDevice](/powershell/module/Microsoft.Graph.Users/Get-MgUserRegisteredDevice?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserregistereddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserregistereddevice)
-
 
 

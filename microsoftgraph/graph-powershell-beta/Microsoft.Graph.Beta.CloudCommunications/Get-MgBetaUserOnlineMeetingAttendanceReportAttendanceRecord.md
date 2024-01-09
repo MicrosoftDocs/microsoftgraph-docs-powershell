@@ -62,6 +62,9 @@ Get-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord -InputObject <ICloud
 List of attendance records of an attendance report.
 Read-only.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/attendancerecord-list-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: List attendance records
 

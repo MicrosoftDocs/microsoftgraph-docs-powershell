@@ -7,6 +7,8 @@ ms.date: 05/19/2023
 ms.author: eunicewaweru
 manager: CelesteDG
 author: msewaweru
+
+#customer intent: As an IT admin managing users' access to resources, I want to use Microsoft Entra entitlement management to create a package of resources that internal users can use for self-service requests, so that I can grant employees the right level of access they need to be productive and remove their access when it's no longer needed.
 ---
 
 # Tutorial: Manage access to resources in Microsoft Entra entitlement management using Microsoft Graph PowerShell
@@ -20,10 +22,8 @@ In this tutorial, you'll create a package of resources for a marketing campaign 
 To successfully complete this tutorial, make sure you have the required prerequisites:
 
 1. Microsoft Graph PowerShell SDK is installed. Follow the [installation guide](installation.md) for more info on how to do this.  
-1. To use the Microsoft Entra entitlement management, you must have one of the following licenses:
-    - Microsoft Entra ID P2
-    - Enterprise Mobility + Security (EMS) E5 license
-1. Entitlement management is available in the beta module of Microsoft Graph PowerShell. Ensure that you have both Microsoft.Graph and Microsoft.Graph.Beta modules installed.
+1. To use Microsoft Entra entitlement management, you must have Microsoft Entra ID Governance subscriptions for your organization's users. Some capabilities within this feature may operate with a Microsoft Entra ID P2 subscription.
+1. Entitlement management is available in the beta and v1 modules of Microsoft Graph PowerShell. This tutorial uses the beta module. Ensure that you have both Microsoft.Graph and Microsoft.Graph.Beta modules installed.
 
 1. Microsoft Graph PowerShell using a global administrator role and the appropriate permissions. The `User.ReadWrite.All`, `Group.ReadWrite.All`, and `EntitlementManagement.ReadWrite.All` delegated permissions are required. To set the permissions in Microsoft Graph PowerShell, run;
 

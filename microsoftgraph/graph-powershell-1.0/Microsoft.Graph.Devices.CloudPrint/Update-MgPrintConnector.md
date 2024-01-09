@@ -10,7 +10,6 @@ ms.prod: cloud-printing
 
 ## SYNOPSIS
 Update the properties of a printConnector object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaPrintConnector](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintConnector?view=graph-powershell-beta)
@@ -47,7 +46,9 @@ Update-MgPrintConnector -InputObject <IDevicesCloudPrintIdentity>
 
 ## DESCRIPTION
 Update the properties of a printConnector object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printconnector-update-permissions.md)]
 
 ## PARAMETERS
 

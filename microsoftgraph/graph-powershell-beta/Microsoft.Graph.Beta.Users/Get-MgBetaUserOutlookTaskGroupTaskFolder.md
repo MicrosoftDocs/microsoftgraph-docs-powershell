@@ -39,6 +39,9 @@ The collection of task folders in the task group.
 Read-only.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlooktaskgroup-list-taskfolders-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserOutlookTaskGroupTaskFolder Cmdlet
 ```powershell
@@ -275,6 +278,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktaskgrouptaskfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktaskgrouptaskfolder)
-
 
 

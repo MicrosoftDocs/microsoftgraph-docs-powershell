@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Delete the specified outlookCategory object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Users/Remove-MgUserOutlookMasterCategory?view=graph-powershell-1.0)
@@ -31,7 +30,9 @@ Remove-MgBetaUserOutlookMasterCategory -InputObject <IUsersIdentity> [-IfMatch <
 
 ## DESCRIPTION
 Delete the specified outlookCategory object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlookcategory-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -199,6 +200,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Remove-MgUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Users/Remove-MgUserOutlookMasterCategory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauseroutlookmastercategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauseroutlookmastercategory)
-
 
 

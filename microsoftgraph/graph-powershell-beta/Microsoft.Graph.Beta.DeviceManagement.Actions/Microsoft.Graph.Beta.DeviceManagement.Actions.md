@@ -26,6 +26,9 @@ Locale: en-US
 ### [Approve-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingApp](Approve-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingApp.md)
 {{ Fill in the Description }}
 
+### [Approve-MgBetaDeviceManagementElevationRequest](Approve-MgBetaDeviceManagementElevationRequest.md)
+{{ Fill in the Description }}
+
 ### [Approve-MgBetaDeviceManagementZebraFotaConnectorFotaApp](Approve-MgBetaDeviceManagementZebraFotaConnectorFotaApp.md)
 {{ Fill in the Description }}
 
@@ -48,6 +51,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Copy-MgBetaDeviceManagementReusablePolicySetting](Copy-MgBetaDeviceManagementReusablePolicySetting.md)
+{{ Fill in the Description }}
+
+### [Deny-MgBetaDeviceManagementElevationRequest](Deny-MgBetaDeviceManagementElevationRequest.md)
 {{ Fill in the Description }}
 
 ### [Disable-MgBetaDeviceManagementComanagedDevice](Disable-MgBetaDeviceManagementComanagedDevice.md)
@@ -117,6 +123,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceHealthScriptGlobalScriptHighestAvailableVersion](Get-MgBetaDeviceManagementDeviceHealthScriptGlobalScriptHighestAvailableVersion.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceManagementElevationRequest](Get-MgBetaDeviceManagementElevationRequest.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServerHealthMetric](Get-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServerHealthMetric.md)
@@ -330,6 +339,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementRoleScopeTagRoleScopeTagById](Get-MgBetaDeviceManagementRoleScopeTagRoleScopeTagById.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceManagementVirtualEndpointReportActionStatusReport](Get-MgBetaDeviceManagementVirtualEndpointReportActionStatusReport.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceManagementVirtualEndpointReportCloudPcRecommendationReport](Get-MgBetaDeviceManagementVirtualEndpointReportCloudPcRecommendationReport.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementVirtualEndpointReportConnectionQualityReport](Get-MgBetaDeviceManagementVirtualEndpointReportConnectionQualityReport.md)
@@ -909,6 +924,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Stop-MgBetaDeviceManagementZebraFotaDeployment](Stop-MgBetaDeviceManagementZebraFotaDeployment.md)
+{{ Fill in the Description }}
+
+### [Suspend-MgBetaDeviceManagementComanagedDeviceConfigurationRefresh](Suspend-MgBetaDeviceManagementComanagedDeviceConfigurationRefresh.md)
+{{ Fill in the Description }}
+
+### [Suspend-MgBetaDeviceManagementManagedDeviceConfigurationRefresh](Suspend-MgBetaDeviceManagementManagedDeviceConfigurationRefresh.md)
 {{ Fill in the Description }}
 
 ### [Sync-MgBetaDeviceManagementAndroidForWorkSettingApp](Sync-MgBetaDeviceManagementAndroidForWorkSettingApp.md)

@@ -10,7 +10,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Update the properties of a continuousAccessEvaluationPolicy object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -29,7 +28,6 @@ Update-MgBetaIdentityContinuouAccessEvaluationPolicy
 
 ## DESCRIPTION
 Update the properties of a continuousAccessEvaluationPolicy object.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaIdentityContinuouAccessEvaluationPolicy Cmdlet

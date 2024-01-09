@@ -10,7 +10,6 @@ ms.prod: service-communications
 
 ## SYNOPSIS
 Mark a list of serviceUpdateMessages as read for the signed in user.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaMarkServiceAnnouncementMessageRead](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Invoke-MgBetaMarkServiceAnnouncementMessageRead?view=graph-powershell-beta)
@@ -32,7 +31,9 @@ Invoke-MgMarkServiceAnnouncementMessageRead
 
 ## DESCRIPTION
 Mark a list of serviceUpdateMessages as read for the signed in user.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceupdatemessage-markread-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

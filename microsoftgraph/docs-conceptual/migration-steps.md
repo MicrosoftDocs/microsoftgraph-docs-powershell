@@ -8,6 +8,8 @@ author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
 ms.reviewer: maisarissi, ianfarr
+
+#customer intent: As an IT admin currently using Azure AD PowerShell or MSOnline, I want to upgrade to Microsoft Graph PowerShell, so that I can access all Microsoft Graph APIs, use PowerShell 7, have cross-platform support, and take advantage of modern authentication and advanced queries.
 ---
 
 # Upgrade from Azure AD PowerShell to Microsoft Graph PowerShell

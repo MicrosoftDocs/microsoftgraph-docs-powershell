@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Create a new calendar for a user.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserCalendar](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserCalendar?view=graph-powershell-beta)
@@ -57,7 +56,9 @@ New-MgUserCalendar -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGr
 
 ## DESCRIPTION
 Create a new calendar for a user.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-post-calendars-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -1211,6 +1212,7 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[ExtensionId \<String\>\]: The unique identifier of extension
   \[GroupId \<String\>\]: The unique identifier of group
   \[PlaceId \<String\>\]: The unique identifier of place
+  \[RoomId \<String\>\]: The unique identifier of room
   \[UserId \<String\>\]: The unique identifier of user
 
 MULTIVALUEEXTENDEDPROPERTIES \<IMicrosoftGraphMultiValueLegacyExtendedProperty\[\]\>: The collection of multi-value extended properties defined for the calendar.
@@ -1236,4 +1238,5 @@ Read-only.
 [New-MgBetaUserCalendar](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserCalendar?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusercalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusercalendar)
+
 

@@ -10,7 +10,6 @@ ms.prod: applications
 
 ## SYNOPSIS
 Discover the latest schema definition for provisioning to an application.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Find-MgServicePrincipalSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Applications/Find-MgServicePrincipalSynchronizationJobSchemaDirectory?view=graph-powershell-1.0)
@@ -31,7 +30,9 @@ Find-MgBetaServicePrincipalSynchronizationJobSchemaDirectory -InputObject <IAppl
 
 ## DESCRIPTION
 Discover the latest schema definition for provisioning to an application.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-directorydefinition-discover-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -192,6 +193,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Find-MgServicePrincipalSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Applications/Find-MgServicePrincipalSynchronizationJobSchemaDirectory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/find-mgbetaserviceprincipalsynchronizationjobschemadirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/find-mgbetaserviceprincipalsynchronizationjobschemadirectory)
-
 
 

@@ -9,8 +9,7 @@ ms.prod: sites-and-lists
 # Remove-MgShareListContentTypeColumn
 
 ## SYNOPSIS
-Remove a column\]\[columndefinition\] from a \[site\]\[\], a \[list\]\[\], or a \[content type\]\[contentType\].
-This API is available in the following \[national cloud deployments.
+Remove a \[column\]\[columndefinition\] from a \[site\]\[\], a \[list\]\[\], or a \[content type\]\[contentType\].
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaShareListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareListContentTypeColumn?view=graph-powershell-beta)
@@ -30,8 +29,10 @@ Remove-MgShareListContentTypeColumn -InputObject <IFilesIdentity> [-IfMatch <Str
 ```
 
 ## DESCRIPTION
-Remove a column\]\[columndefinition\] from a \[site\]\[\], a \[list\]\[\], or a \[content type\]\[contentType\].
-This API is available in the following \[national cloud deployments.
+Remove a \[column\]\[columndefinition\] from a \[site\]\[\], a \[list\]\[\], or a \[content type\]\[contentType\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/columndefinition-delete-permissions.md)]
 
 ## PARAMETERS
 

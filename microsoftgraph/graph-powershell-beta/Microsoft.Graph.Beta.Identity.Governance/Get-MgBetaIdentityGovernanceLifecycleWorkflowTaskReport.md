@@ -38,6 +38,9 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReport -InputObject <IIdentityG
 ## DESCRIPTION
 Represents the aggregation of task execution data for tasks within a workflow object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-workflow-list-taskreports-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: List the task reports for a workflow
 

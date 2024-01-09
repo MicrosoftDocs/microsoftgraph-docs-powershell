@@ -10,7 +10,6 @@ ms.prod: cloud-printing
 
 ## SYNOPSIS
 Revoke the specified group's access to submit print jobs to the associated printerShare.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaPrintShareAllowedGroupByRef](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintShareAllowedGroupByRef?view=graph-powershell-beta)
@@ -31,7 +30,9 @@ Remove-MgPrintShareAllowedGroupByRef -InputObject <IDevicesCloudPrintIdentity> [
 
 ## DESCRIPTION
 Revoke the specified group's access to submit print jobs to the associated printerShare.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printershare-delete-allowedgroup-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

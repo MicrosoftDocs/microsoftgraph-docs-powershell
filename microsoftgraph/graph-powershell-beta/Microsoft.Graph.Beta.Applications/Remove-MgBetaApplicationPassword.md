@@ -10,7 +10,6 @@ ms.prod: applications
 
 ## SYNOPSIS
 Removes a password from an application.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgApplicationPassword](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationPassword?view=graph-powershell-1.0)
@@ -45,7 +44,9 @@ Remove-MgBetaApplicationPassword -InputObject <IApplicationsIdentity>
 
 ## DESCRIPTION
 Removes a password from an application.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-removepassword-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaApplicationPassword Cmdlet
@@ -241,6 +242,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Remove-MgApplicationPassword](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationPassword?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationpassword](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationpassword)
-
 
 

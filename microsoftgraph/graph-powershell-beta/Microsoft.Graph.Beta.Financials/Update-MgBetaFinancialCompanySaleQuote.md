@@ -1134,3 +1134,4 @@ SHIPPINGPOSTALADDRESS \<IMicrosoftGraphPostalAddressType\>: postalAddressType
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysalequote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysalequote)
 
 
+

@@ -6,7 +6,9 @@ ms.date: 05/25/2023
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
-ms.reviewer: jawoods, phsignor 
+ms.reviewer: jawoods, phsignor
+
+#customer intent: As an IT admin managing application permissions in Microsoft Entra ID, I want to grant and revoke app roles programmatically using PowerShell cmdlets, so that I can automate the process and ensure efficient management of permissions for client apps.
 ---
 
 # Tutorial: Grant and revoke app roles in Microsoft Entra ID

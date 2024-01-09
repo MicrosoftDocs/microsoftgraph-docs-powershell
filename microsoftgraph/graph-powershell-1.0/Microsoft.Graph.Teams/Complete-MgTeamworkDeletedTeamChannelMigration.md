@@ -13,7 +13,6 @@ Complete the message migration process by removing migration mode from a channel
 Migration mode is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
 After a completeMigration request is made, you can't import additional messages into the team.
 You can add members to the team after the request returns a successful response.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Complete-MgBetaTeamworkDeletedTeamChannelMigration](/powershell/module/Microsoft.Graph.Beta.Teams/Complete-MgBetaTeamworkDeletedTeamChannelMigration?view=graph-powershell-beta)
@@ -37,7 +36,9 @@ Complete the message migration process by removing migration mode from a channel
 Migration mode is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
 After a completeMigration request is made, you can't import additional messages into the team.
 You can add members to the team after the request returns a successful response.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-completemigration-permissions.md)]
 
 ## PARAMETERS
 

@@ -12,7 +12,6 @@ ms.prod: people
 ## SYNOPSIS
 Retrieve the properties of a profileCardProperty entity.
 The profileCardProperty is identified by its directoryPropertyName property.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgAdminPeopleProfileCardProperty](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgAdminPeopleProfileCardProperty?view=graph-powershell-1.0)
@@ -41,7 +40,12 @@ Get-MgBetaAdminPeopleProfileCardProperty -InputObject <IIdentityDirectoryManagem
 ## DESCRIPTION
 Retrieve the properties of a profileCardProperty entity.
 The profileCardProperty is identified by its directoryPropertyName property.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/profilecardproperty-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/peopleadminsettings-list-profilecardproperties-permissions.md)]
 
 ## PARAMETERS
 

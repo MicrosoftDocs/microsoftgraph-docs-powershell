@@ -10,7 +10,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Read the properties of a b2cAuthenticationMethodsPolicy object.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -21,7 +20,9 @@ Get-MgBetaPolicyB2CAuthenticationMethodPolicy [-ExpandProperty <String[]>] [-Pro
 
 ## DESCRIPTION
 Read the properties of a b2cAuthenticationMethodsPolicy object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/b2cauthenticationmethodspolicy-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaPolicyB2CAuthenticationMethodPolicy Cmdlet

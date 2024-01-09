@@ -10,7 +10,6 @@ ms.prod: microsoft-teams
 
 ## SYNOPSIS
 Unhide a chat for a user.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaGraphUserChat](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaGraphUserChat?view=graph-powershell-beta)
@@ -45,7 +44,9 @@ Invoke-MgGraphUserChat -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Unhide a chat for a user.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-unhideforuser-permissions.md)]
 
 ## PARAMETERS
 

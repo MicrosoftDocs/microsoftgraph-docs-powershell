@@ -10,7 +10,6 @@ ms.prod: sites-and-lists
 
 ## SYNOPSIS
 Update the properties of a store object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSiteTermStore](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteTermStore?view=graph-powershell-beta)
@@ -71,7 +70,9 @@ Update-MgSiteTermStore -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftG
 
 ## DESCRIPTION
 Update the properties of a store object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-store-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -496,4 +497,5 @@ Read-only.
 [Update-MgBetaSiteTermStore](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteTermStore?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitetermstore](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitetermstore)
+
 

@@ -240,7 +240,7 @@ A MinDeviceOccurrence of 0 means setting is optional
     \[OffsetUri \<String\>\]: Offset CSP Path from Base
     \[ReferredSettingInformationList \<IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation\[\]\>\]: List of referred setting information.
       \[SettingDefinitionId \<String\>\]: Setting definition id that is being referred to a setting.
-Applicable for reusable setting.
+Applicable for reusable setting
     \[RootDefinitionId \<String\>\]: Root setting definition id if the setting is a child setting.
     \[SettingUsage \<DeviceManagementConfigurationSettingUsage?\>\]: Supported setting types
     \[UxBehavior \<DeviceManagementConfigurationControlType?\>\]: Setting control type representation in the UX
@@ -422,7 +422,7 @@ A MinDeviceOccurrence of 0 means setting is optional
   \[OffsetUri \<String\>\]: Offset CSP Path from Base
   \[ReferredSettingInformationList \<IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation\[\]\>\]: List of referred setting information.
     \[SettingDefinitionId \<String\>\]: Setting definition id that is being referred to a setting.
-Applicable for reusable setting.
+Applicable for reusable setting
   \[RootDefinitionId \<String\>\]: Root setting definition id if the setting is a child setting.
   \[SettingUsage \<DeviceManagementConfigurationSettingUsage?\>\]: Supported setting types
   \[UxBehavior \<DeviceManagementConfigurationControlType?\>\]: Setting control type representation in the UX
@@ -438,5 +438,6 @@ SETTINGINSTANCETEMPLATE \<IMicrosoftGraphDeviceManagementConfigurationSettingIns
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementconfigurationpolicytemplatesettingtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementconfigurationpolicytemplatesettingtemplate)
+
 
 

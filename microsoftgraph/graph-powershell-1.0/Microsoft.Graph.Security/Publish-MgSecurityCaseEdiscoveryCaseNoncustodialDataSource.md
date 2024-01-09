@@ -9,7 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Release the non-custodial data source from the case.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Publish-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource](/powershell/module/Microsoft.Graph.Beta.Security/Publish-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource?view=graph-powershell-beta)
@@ -30,7 +29,6 @@ Publish-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource -InputObject <ISecuri
 
 ## DESCRIPTION
 Release the non-custodial data source from the case.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Publish-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource Cmdlet

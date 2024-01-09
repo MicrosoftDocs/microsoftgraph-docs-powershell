@@ -13,7 +13,6 @@ ms.prod: cloud-communications
 Retrieve the properties and relationships of an onlineMeeting object.
 For example, you can: Teams live event attendee report (deprecated) is an online meeting artifact.
 For details, see Online meeting artifacts and permissions.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaUserOnlineMeeting?view=graph-powershell-beta)
@@ -43,7 +42,12 @@ Get-MgUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity> [-ExpandProp
 Retrieve the properties and relationships of an onlineMeeting object.
 For example, you can: Teams live event attendee report (deprecated) is an online meeting artifact.
 For details, see Online meeting artifacts and permissions.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onlinemeeting-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onlinemeeting-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Retrieve an online meeting by meeting ID
@@ -302,6 +306,7 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[AudioRoutingGroupId \<String\>\]: The unique identifier of audioRoutingGroup
   \[CallId \<String\>\]: The unique identifier of call
   \[CallRecordId \<String\>\]: The unique identifier of callRecord
+  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
   \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
   \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
   \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession

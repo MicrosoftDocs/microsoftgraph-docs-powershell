@@ -31,6 +31,9 @@ Get-MgUserTodoTaskAttachmentContent -InputObject <IUsersIdentity> -OutFile <Stri
 ## DESCRIPTION
 Get media content for the navigation property attachments from users
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/todotask-list-attachments-permissions.md)]
+
 ## PARAMETERS
 
 ### -AttachmentBaseId
@@ -173,7 +176,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Get-MgBetaUserTodoTaskAttachmentContent](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTaskAttachmentContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskattachmentcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskattachmentcontent)
-
 
 
 

@@ -11,7 +11,6 @@ ms.prod: applications
 ## SYNOPSIS
 Select a user and provision the account on-demand.
 The rate limit for this API is 5 requests per 10 seconds.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaServicePrincipalSynchronizationJobOnDemand](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalSynchronizationJobOnDemand?view=graph-powershell-beta)
@@ -49,7 +48,9 @@ New-MgServicePrincipalSynchronizationJobOnDemand -InputObject <IApplicationsIden
 ## DESCRIPTION
 Select a user and provision the account on-demand.
 The rate limit for this API is 5 requests per 10 seconds.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationjob-provisionondemand-permissions.md)]
 
 ## PARAMETERS
 

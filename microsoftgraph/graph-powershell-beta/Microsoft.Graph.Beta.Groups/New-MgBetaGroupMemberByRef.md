@@ -10,7 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Add a member to a security or Microsoft 365 group through the members navigation property.
 The following table shows the types of members that can be added to either security groups or Microsoft 365 groups.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgGroupMemberByRef](/powershell/module/Microsoft.Graph.Groups/New-MgGroupMemberByRef?view=graph-powershell-1.0)
@@ -44,7 +43,6 @@ New-MgBetaGroupMemberByRef -InputObject <IGroupsIdentity> -BodyParameter <IRefer
 ## DESCRIPTION
 Add a member to a security or Microsoft 365 group through the members navigation property.
 The following table shows the types of members that can be added to either security groups or Microsoft 365 groups.
-This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

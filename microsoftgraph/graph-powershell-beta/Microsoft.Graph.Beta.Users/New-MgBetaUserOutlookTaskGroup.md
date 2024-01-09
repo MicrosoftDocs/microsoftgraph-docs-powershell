@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Create an Outlook task group in the user's mailbox.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -42,7 +41,9 @@ New-MgBetaUserOutlookTaskGroup -InputObject <IUsersIdentity> -BodyParameter <IMi
 
 ## DESCRIPTION
 Create an Outlook task group in the user's mailbox.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlookuser-post-taskgroups-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaUserOutlookTaskGroup Cmdlet

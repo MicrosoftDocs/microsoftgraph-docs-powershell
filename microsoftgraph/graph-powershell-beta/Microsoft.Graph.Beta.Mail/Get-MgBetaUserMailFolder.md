@@ -43,6 +43,12 @@ The user's mail folders.
 Read-only.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailfolder-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-mailfolders-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Get a mail folder
 

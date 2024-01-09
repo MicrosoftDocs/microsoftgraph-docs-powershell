@@ -10,7 +10,6 @@ ms.prod: cloud-pc
 
 ## SYNOPSIS
 Create a new cloudPcOnPremisesConnection object for provisioning Cloud PCs.
-This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -20,9 +19,9 @@ New-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection [-AdDomainName <Str
  [-AdDomainPassword <String>] [-AdDomainUsername <String>] [-AdditionalProperties <Hashtable>]
  [-AlternateResourceUrl <String>] [-DisplayName <String>] [-HealthCheckStatus <String>]
  [-HealthCheckStatusDetails <IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetails>] [-Id <String>] [-InUse]
- [-ManagedBy <String>] [-OrganizationalUnit <String>] [-ResourceGroupId <String>] [-SubnetId <String>]
- [-SubscriptionId <String>] [-SubscriptionName <String>] [-Type <String>] [-VirtualNetworkId <String>]
- [-VirtualNetworkLocation <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ManagedBy <String>] [-OrganizationalUnit <String>] [-ResourceGroupId <String>] [-ScopeIds <String[]>]
+ [-SubnetId <String>] [-SubscriptionId <String>] [-SubscriptionName <String>] [-Type <String>]
+ [-VirtualNetworkId <String>] [-VirtualNetworkLocation <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -33,7 +32,9 @@ New-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection
 
 ## DESCRIPTION
 Create a new cloudPcOnPremisesConnection object for provisioning Cloud PCs.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-post-onpremisesconnections-permissions.md)]
 
 ## PARAMETERS
 
@@ -262,6 +263,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ScopeIds
+.
+
+```yaml
+Type: String[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SubnetId
 The ID of the target subnet.
 Required format: /subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}.
@@ -448,6 +464,7 @@ If left null, the OU that's configured as the default (a well-known computer obj
 Optional.
   \[ResourceGroupId \<String\>\]: The ID of the target resource group.
 Required format: /subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}.
+  \[ScopeIds \<String\[\]\>\]: 
   \[SubnetId \<String\>\]: The ID of the target subnet.
 Required format: /subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}.
   \[SubscriptionId \<String\>\]: The ID of the target Azure subscription that's associated with your tenant.

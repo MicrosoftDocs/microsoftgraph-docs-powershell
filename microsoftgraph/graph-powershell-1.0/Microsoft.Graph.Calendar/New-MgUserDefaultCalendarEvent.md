@@ -11,7 +11,6 @@ ms.prod: outlook
 ## SYNOPSIS
 Use this API to create a new event in a calendar.
 The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserDefaultCalendarEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserDefaultCalendarEvent?view=graph-powershell-beta)
@@ -77,7 +76,6 @@ New-MgUserDefaultCalendarEvent -InputObject <ICalendarIdentity> -BodyParameter <
 ## DESCRIPTION
 Use this API to create a new event in a calendar.
 The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
-This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -1452,6 +1450,7 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[ExtensionId \<String\>\]: The unique identifier of extension
   \[GroupId \<String\>\]: The unique identifier of group
   \[PlaceId \<String\>\]: The unique identifier of place
+  \[RoomId \<String\>\]: The unique identifier of room
   \[UserId \<String\>\]: The unique identifier of user
 
 INSTANCES \<IMicrosoftGraphEvent\[\]\>: The occurrences of a recurring series, if the event is a series master.
@@ -1820,5 +1819,6 @@ See below for more possible values.
 [New-MgBetaUserDefaultCalendarEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserDefaultCalendarEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mguserdefaultcalendarevent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mguserdefaultcalendarevent)
+
 
 

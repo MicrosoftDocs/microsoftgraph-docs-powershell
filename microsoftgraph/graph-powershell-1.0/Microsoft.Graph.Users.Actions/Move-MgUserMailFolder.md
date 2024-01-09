@@ -10,7 +10,6 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Move a mailfolder and its contents to another mailfolder.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Move-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Move-MgBetaUserMailFolder?view=graph-powershell-beta)
@@ -45,7 +44,9 @@ Move-MgUserMailFolder -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Move a mailfolder and its contents to another mailfolder.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/mailfolder-move-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Move-MgUserMailFolder Cmdlet

@@ -36,6 +36,9 @@ Get-MgEntitlementManagementResourceRequestCatalogResource -InputObject <IIdentit
 ## DESCRIPTION
 Access package resources in this catalog.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackagecatalog-list-resources-permissions.md)]
+
 ## PARAMETERS
 
 ### -AccessPackageResourceId

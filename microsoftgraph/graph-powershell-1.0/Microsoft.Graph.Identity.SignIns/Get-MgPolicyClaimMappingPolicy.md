@@ -11,7 +11,6 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a claimsMappingPolicy object.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPolicyClaimMappingPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyClaimMappingPolicy?view=graph-powershell-beta)
@@ -39,7 +38,12 @@ Get-MgPolicyClaimMappingPolicy -InputObject <IIdentitySignInsIdentity> [-ExpandP
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a claimsMappingPolicy object.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/claimsmappingpolicy-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/claimsmappingpolicy-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

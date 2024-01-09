@@ -12,7 +12,6 @@ ms.prod: cloud-printing
 Delete a printer share (unshare the associated printer).
 This action can't be undone.
 If the printer is shared again in the future, any Windows users who had previously installed the printer needs to discover and reinstall it.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgPrintShare](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Remove-MgPrintShare?view=graph-powershell-1.0)
@@ -35,7 +34,9 @@ Remove-MgBetaPrintShare -InputObject <IDevicesCloudPrintIdentity> [-IfMatch <Str
 Delete a printer share (unshare the associated printer).
 This action can't be undone.
 If the printer is shared again in the future, any Windows users who had previously installed the printer needs to discover and reinstall it.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printershare-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

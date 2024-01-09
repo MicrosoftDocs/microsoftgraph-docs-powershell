@@ -11,7 +11,6 @@ ms.prod: education
 ## SYNOPSIS
 Retrieve the teachers and students for a class.
 Note that if the delegated token is used, members can only be seen by other members of the class.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgEducationClassMember](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassMember?view=graph-powershell-1.0)
@@ -27,7 +26,9 @@ Get-MgBetaEducationClassMember -EducationClassId <String> [-ExpandProperty <Stri
 ## DESCRIPTION
 Retrieve the teachers and students for a class.
 Note that if the delegated token is used, members can only be seen by other members of the class.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-list-members-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

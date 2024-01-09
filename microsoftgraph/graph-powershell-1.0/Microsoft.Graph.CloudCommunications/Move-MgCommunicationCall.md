@@ -12,7 +12,6 @@ ms.prod: cloud-communications
 Transfer an active peer-to-peer call or group call.
 A consultative transfer means that the transferor can inform the person they want to transfer the call to (the transferee), before the transfer is made.
 This is opposed to transfering the call directly.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Move-MgBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Move-MgBetaCommunicationCall?view=graph-powershell-beta)
@@ -51,7 +50,9 @@ Move-MgCommunicationCall -InputObject <ICloudCommunicationsIdentity>
 Transfer an active peer-to-peer call or group call.
 A consultative transfer means that the transferor can inform the person they want to transfer the call to (the transferee), before the transfer is made.
 This is opposed to transfering the call directly.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-transfer-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Call transfer from a peer-to-peer call
@@ -393,6 +394,7 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[AudioRoutingGroupId \<String\>\]: The unique identifier of audioRoutingGroup
   \[CallId \<String\>\]: The unique identifier of call
   \[CallRecordId \<String\>\]: The unique identifier of callRecord
+  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
   \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
   \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
   \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession

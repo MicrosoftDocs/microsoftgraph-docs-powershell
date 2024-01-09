@@ -10,13 +10,12 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Forward a message using either JSON or MIME format.
-When using JSON format, you can:\n- Specify either a comment or the body property of the message parameter.
-Specifying both will return an HTTP 400 Bad Request error.\n- Specify either the toRecipients parameter or the toRecipients property of the message parameter.
+When using JSON format, you can:- Specify either a comment or the body property of the message parameter.
+Specifying both will return an HTTP 400 Bad Request error.- Specify either the toRecipients parameter or the toRecipients property of the message parameter.
 Specifying both or specifying neither will return an HTTP 400 Bad Request error.
-When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
+When using MIME format:- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.- Add any attachments and S/MIME properties to the MIME content.
 This method saves the message in the Sent Items folder.
 Alternatively, create a draft to forward a message, and send it later.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgForwardUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgForwardUserMailFolderChildFolderMessage?view=graph-powershell-1.0)
@@ -55,13 +54,15 @@ Invoke-MgBetaForwardUserMailFolderChildFolderMessage -InputObject <IUsersActions
 
 ## DESCRIPTION
 Forward a message using either JSON or MIME format.
-When using JSON format, you can:\n- Specify either a comment or the body property of the message parameter.
-Specifying both will return an HTTP 400 Bad Request error.\n- Specify either the toRecipients parameter or the toRecipients property of the message parameter.
+When using JSON format, you can:- Specify either a comment or the body property of the message parameter.
+Specifying both will return an HTTP 400 Bad Request error.- Specify either the toRecipients parameter or the toRecipients property of the message parameter.
 Specifying both or specifying neither will return an HTTP 400 Bad Request error.
-When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
+When using MIME format:- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.- Add any attachments and S/MIME properties to the MIME content.
 This method saves the message in the Sent Items folder.
 Alternatively, create a draft to forward a message, and send it later.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-forward-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -453,6 +454,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[NotebookId \<String\>\]: The unique identifier of notebook
   \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
   \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
   \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
   \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask
@@ -588,4 +590,5 @@ TORECIPIENTS \<IMicrosoftGraphRecipient\[\]\>: .
 [Invoke-MgForwardUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgForwardUserMailFolderChildFolderMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaforwardusermailfolderchildfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaforwardusermailfolderchildfoldermessage)
+
 

@@ -33,6 +33,9 @@ Read-only.
 Nullable.
 Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-list-owners-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: List the owners of a service principal
 
@@ -244,6 +247,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgServicePrincipalOwner](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalOwner?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalowner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalowner)
-
 
 

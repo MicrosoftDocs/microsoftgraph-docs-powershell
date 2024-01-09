@@ -13,7 +13,6 @@ Add or sync a copy of a published content type from the content type hub to a ta
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
 For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Add-MgBetaGroupSiteListContentTypeCopyFromContentTypeHub](/powershell/module/Microsoft.Graph.Beta.Groups/Add-MgBetaGroupSiteListContentTypeCopyFromContentTypeHub?view=graph-powershell-beta)
@@ -51,7 +50,9 @@ Add or sync a copy of a published content type from the content type hub to a ta
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
 For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-addcopyfromcontenttypehub-permissions.md)]
 
 ## EXAMPLES
 

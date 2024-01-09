@@ -32,6 +32,9 @@ Get-MgOrganizationBrandingCustomCss -InputObject <IIdentityDirectoryManagementId
 CSS styling that appears on the sign-in page.
 The allowed format is .css format only and not larger than 25 KB.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organizationalbranding-get-permissions.md)]
+
 ## PARAMETERS
 
 ### -InputObject

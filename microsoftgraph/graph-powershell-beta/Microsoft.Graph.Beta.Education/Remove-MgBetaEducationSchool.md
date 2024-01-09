@@ -10,7 +10,6 @@ ms.prod: education
 
 ## SYNOPSIS
 Delete a school.
-This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgEducationSchool](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationSchool?view=graph-powershell-1.0)
@@ -31,7 +30,9 @@ Remove-MgBetaEducationSchool -InputObject <IEducationIdentity> [-IfMatch <String
 
 ## DESCRIPTION
 Delete a school.
-This API is available in the following national cloud deployments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationschool-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
