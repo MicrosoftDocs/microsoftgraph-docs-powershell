@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauserdeviceusagerights
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Get-MgBetaUserDeviceUsageRights
@@ -33,6 +34,9 @@ Get-MgBetaUserDeviceUsageRights -InputObject <ICrossDeviceExperiencesIdentity> [
 
 ## DESCRIPTION
 Represents the usage rights a device has been granted.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-list-usagerights-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencewhoisrecordhistory
 schema: 2.0.0
+ms.prod: security
 ---
 
 # Get-MgSecurityThreatIntelligenceWhoisRecordHistory
@@ -33,6 +34,9 @@ Get-MgSecurityThreatIntelligenceWhoisRecordHistory -InputObject <ISecurityIdenti
 
 ## DESCRIPTION
 The collection of historical records associated to this WHOIS object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-whoisrecord-list-history-permissions.md)]
 
 ## EXAMPLES
 

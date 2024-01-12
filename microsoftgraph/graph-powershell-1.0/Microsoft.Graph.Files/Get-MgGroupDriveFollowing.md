@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivefollowing
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Get-MgGroupDriveFollowing
@@ -35,6 +36,9 @@ Get-MgGroupDriveFollowing -InputObject <IFilesIdentity> [-ExpandProperty <String
 ## DESCRIPTION
 The list of items the user is following.
 Only in OneDrive for Business.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/drive-list-following-permissions.md)]
 
 ## EXAMPLES
 

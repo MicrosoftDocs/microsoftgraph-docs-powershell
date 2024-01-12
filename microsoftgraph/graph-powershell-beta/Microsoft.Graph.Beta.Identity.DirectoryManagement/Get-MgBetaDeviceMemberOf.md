@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadevicememberof
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Get-MgBetaDeviceMemberOf
@@ -39,6 +40,9 @@ Groups and administrative units that this device is a member of.
 Read-only.
 Nullable.
 Supports $expand.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-list-memberof-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportuserinsightdailymfacompletion
 schema: 2.0.0
+ms.prod: identity-and-access-reports
 ---
 
 # Get-MgBetaReportUserInsightDailyMfaCompletion
@@ -33,6 +34,9 @@ Get-MgBetaReportUserInsightDailyMfaCompletion -InputObject <IReportsIdentity> [-
 
 ## DESCRIPTION
 Insights for MFA usage on apps registered in the tenant for a specified period.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/dailyuserinsightmetricsroot-list-mfacompletions-permissions.md)]
 
 ## EXAMPLES
 

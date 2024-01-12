@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskyserviceprincipalhistory
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaRiskyServicePrincipalHistory
@@ -33,6 +34,9 @@ Get-MgBetaRiskyServicePrincipalHistory -InputObject <IIdentitySignInsIdentity> [
 
 ## DESCRIPTION
 Represents the risk history of Microsoft Entra service principals.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/riskyserviceprincipal-list-history-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilewebsite
 schema: 2.0.0
+ms.prod: people
+ms.prod: people
 ---
 
 # Get-MgBetaUserProfileWebsite
@@ -33,6 +35,12 @@ Get-MgBetaUserProfileWebsite -InputObject <IPeopleIdentity> [-ExpandProperty <St
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a personWebsite object from a user's profile.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/personwebsite-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/profile-list-websites-permissions.md)]
 
 ## EXAMPLES
 

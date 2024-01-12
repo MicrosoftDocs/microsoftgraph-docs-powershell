@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainformationprotectionpolicylabel
 schema: 2.0.0
+ms.prod: security
+ms.prod: security
 ---
 
 # Get-MgBetaInformationProtectionPolicyLabel
@@ -33,6 +35,12 @@ Get-MgBetaInformationProtectionPolicyLabel -InputObject <IIdentitySignInsIdentit
 
 ## DESCRIPTION
 Retrieve the properties and relationships of an informationProtectionLabel object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/informationprotectionlabel-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/informationprotectionpolicy-list-labels-permissions.md)]
 
 ## EXAMPLES
 

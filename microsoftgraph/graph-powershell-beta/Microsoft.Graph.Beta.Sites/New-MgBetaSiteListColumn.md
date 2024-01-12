@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitelistcolumn
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # New-MgBetaSiteListColumn
@@ -58,6 +59,9 @@ New-MgBetaSiteListColumn -InputObject <ISitesIdentity> -BodyParameter <IMicrosof
 
 ## DESCRIPTION
 Create a column for a \[list\]\[list\] with a request that specifies a \[columnDefinition\]\[columnDefinition\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/list-post-columns-permissions.md)]
 
 ## EXAMPLES
 

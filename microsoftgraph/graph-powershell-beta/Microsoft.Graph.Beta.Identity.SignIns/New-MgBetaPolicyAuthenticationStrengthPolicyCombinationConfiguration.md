@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyauthenticationstrengthpolicycombinationconfiguration
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # New-MgBetaPolicyAuthenticationStrengthPolicyCombinationConfiguration
@@ -44,6 +45,9 @@ New-MgBetaPolicyAuthenticationStrengthPolicyCombinationConfiguration -InputObjec
 ## DESCRIPTION
 Create a new authenticationCombinationConfiguration object.
 In use, only fido2combinationConfigurations might be created, and only for custom authentication strength policies.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationstrengthpolicy-post-combinationconfigurations-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityb2cuserflow
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # New-MgBetaIdentityB2CUserFlow
@@ -31,6 +32,9 @@ New-MgBetaIdentityB2CUserFlow -BodyParameter <IMicrosoftGraphB2CIdentityUserFlow
 
 ## DESCRIPTION
 Create a new b2cIdentityUserFlow object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitycontainer-post-b2cuserflows-permissions.md)]
 
 ## EXAMPLES
 

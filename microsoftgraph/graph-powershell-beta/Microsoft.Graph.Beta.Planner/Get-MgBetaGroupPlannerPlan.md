@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetagroupplannerplan
 schema: 2.0.0
+ms.prod: planner
 ---
 
 # Get-MgBetaGroupPlannerPlan
@@ -37,6 +38,9 @@ Get-MgBetaGroupPlannerPlan -InputObject <IPlannerIdentity> [-ExpandProperty <Str
 Read-only.
 Nullable.
 Returns the plannerPlans owned by the group.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannergroup-list-plans-permissions.md)]
 
 ## EXAMPLES
 

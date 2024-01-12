@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/confirm-mgbetadomain
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Confirm-MgBetaDomain
@@ -25,6 +26,9 @@ Confirm-MgBetaDomain -InputObject <IIdentityDirectoryManagementIdentity> [-WhatI
 
 ## DESCRIPTION
 Validates the ownership of the domain.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/domain-verify-permissions.md)]
 
 ## EXAMPLES
 

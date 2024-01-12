@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligenceintelprofileindicator
 schema: 2.0.0
+ms.prod: security
 ---
 
 # Get-MgBetaSecurityThreatIntelligenceIntelProfileIndicator
@@ -34,6 +35,9 @@ Get-MgBetaSecurityThreatIntelligenceIntelProfileIndicator -InputObject <ISecurit
 
 ## DESCRIPTION
 Includes an assemblage of high-fidelity network indicators of compromise.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-intelligenceprofile-list-indicators-permissions.md)]
 
 ## EXAMPLES
 

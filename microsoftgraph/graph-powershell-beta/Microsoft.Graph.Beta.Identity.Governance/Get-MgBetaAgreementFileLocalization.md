@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaagreementfilelocalization
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Get-MgBetaAgreementFileLocalization
@@ -33,6 +34,9 @@ Get-MgBetaAgreementFileLocalization -InputObject <IIdentityGovernanceIdentity> [
 
 ## DESCRIPTION
 The localized version of the terms of use agreement files attached to the agreement.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/agreementfile-list-localizations-permissions.md)]
 
 ## EXAMPLES
 

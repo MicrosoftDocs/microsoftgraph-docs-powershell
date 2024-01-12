@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausersponsor
 schema: 2.0.0
+ms.prod: users
 ---
 
 # Remove-MgBetaUserSponsor
@@ -26,6 +27,9 @@ Remove-MgBetaUserSponsor -InputObject <IUsersIdentity> [-IfMatch <String>] [-Pas
 
 ## DESCRIPTION
 Remove a user's sponsor.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-delete-sponsors-permissions.md)]
 
 ## EXAMPLES
 

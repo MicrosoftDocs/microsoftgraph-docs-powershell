@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalsynchronizationjob
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Remove-MgServicePrincipalSynchronizationJob
@@ -28,6 +29,9 @@ Remove-MgServicePrincipalSynchronizationJob -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Stop the synchronization job, and permanently delete all the state associated with it.
 Synchronized accounts are left as-is.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationjob-delete-permissions.md)]
 
 ## EXAMPLES
 

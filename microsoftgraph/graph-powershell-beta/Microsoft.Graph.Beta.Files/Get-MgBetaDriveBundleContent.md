@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivebundlecontent
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Get-MgBetaDriveBundleContent
@@ -25,6 +26,9 @@ Get-MgBetaDriveBundleContent -InputObject <IFilesIdentity> -OutFile <String> [-P
 
 ## DESCRIPTION
 The content stream, if the item represents a file.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bundle-list-permissions.md)]
 
 ## EXAMPLES
 

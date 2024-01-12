@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xm
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointusersetting
 schema: 2.0.0
+ms.prod: cloud-pc
 ---
 
 # Update-MgBetaDeviceManagementVirtualEndpointUserSetting
@@ -44,6 +45,9 @@ Update-MgBetaDeviceManagementVirtualEndpointUserSetting -InputObject <IDeviceMan
 
 ## DESCRIPTION
 Update the properties of a cloudPcUserSetting object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcusersetting-update-permissions.md)]
 
 ## EXAMPLES
 

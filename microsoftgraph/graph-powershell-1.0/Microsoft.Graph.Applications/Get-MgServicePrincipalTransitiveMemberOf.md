@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipaltransitivememberof
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Get-MgServicePrincipalTransitiveMemberOf
@@ -33,6 +34,9 @@ Get-MgServicePrincipalTransitiveMemberOf -InputObject <IApplicationsIdentity> [-
 
 ## DESCRIPTION
 Get transitiveMemberOf from servicePrincipals
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-list-transitivememberof-permissions.md)]
 
 ## EXAMPLES
 

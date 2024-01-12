@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannerbucket
 schema: 2.0.0
+ms.prod: planner
 ---
 
 # New-MgPlannerBucket
@@ -25,6 +26,9 @@ New-MgPlannerBucket -BodyParameter <IMicrosoftGraphPlannerBucket> [-WhatIf] [-Co
 
 ## DESCRIPTION
 Create a new plannerBucket object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/planner-post-buckets-permissions.md)]
 
 ## EXAMPLES
 

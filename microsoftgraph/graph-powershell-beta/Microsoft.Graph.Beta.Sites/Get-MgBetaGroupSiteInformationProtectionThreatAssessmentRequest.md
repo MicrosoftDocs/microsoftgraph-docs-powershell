@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteinformationprotectionthreatassessmentrequest
 schema: 2.0.0
+ms.prod: security
+ms.prod: security
 ---
 
 # Get-MgBetaGroupSiteInformationProtectionThreatAssessmentRequest
@@ -35,6 +37,12 @@ Get-MgBetaGroupSiteInformationProtectionThreatAssessmentRequest -InputObject <IS
 ## DESCRIPTION
 Retrieve the properties and relationships of a specified threatAssessmentRequest object.
 A threat assessment request can be one of the following types:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/threatassessmentrequest-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/informationprotection-list-threatassessmentrequests-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationpasswordlessmicrosoftauthenticatormethod
 schema: 2.0.0
+ms.prod: identity-and-sign-in
+ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod
@@ -34,6 +36,12 @@ Get-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod -InputObjec
 
 ## DESCRIPTION
 Retrieve a user's single Microsoft Authenticator Passwordless Phone Sign-in method object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/passwordlessmicrosoftauthenticatorauthenticationmethod-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/passwordlessmicrosoftauthenticatorauthenticationmethod-list-permissions.md)]
 
 ## EXAMPLES
 

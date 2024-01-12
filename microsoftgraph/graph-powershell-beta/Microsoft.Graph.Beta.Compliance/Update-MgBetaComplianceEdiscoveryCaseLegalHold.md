@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycaselegalhold
 schema: 2.0.0
+ms.prod: ediscovery
 ---
 
 # Update-MgBetaComplianceEdiscoveryCaseLegalHold
@@ -48,6 +49,9 @@ Update-MgBetaComplianceEdiscoveryCaseLegalHold -InputObject <IComplianceIdentity
 
 ## DESCRIPTION
 Update the properties of a legalHold object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-legalhold-update-permissions.md)]
 
 ## EXAMPLES
 

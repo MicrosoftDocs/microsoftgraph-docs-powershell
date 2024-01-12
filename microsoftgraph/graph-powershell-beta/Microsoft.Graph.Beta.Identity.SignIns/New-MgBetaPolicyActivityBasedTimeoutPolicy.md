@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyactivitybasedtimeoutpolicy
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # New-MgBetaPolicyActivityBasedTimeoutPolicy
@@ -27,6 +28,9 @@ New-MgBetaPolicyActivityBasedTimeoutPolicy -BodyParameter <Hashtable> [-WhatIf] 
 
 ## DESCRIPTION
 Create a new activityBasedTimeoutPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannertask
 schema: 2.0.0
+ms.prod: planner
 ---
 
 # Update-MgPlannerTask
@@ -58,6 +59,9 @@ Update-MgPlannerTask -InputObject <IPlannerIdentity> -IfMatch <String>
 
 ## DESCRIPTION
 Update the navigation property tasks in planner
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannertask-update-permissions.md)]
 
 ## EXAMPLES
 

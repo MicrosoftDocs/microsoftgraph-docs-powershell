@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationbyappid
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Remove-MgApplicationByAppId
@@ -30,6 +31,9 @@ Remove-MgApplicationByAppId -InputObject <IApplicationsIdentity> [-IfMatch <Stri
 Delete an application object.
 When deleted, apps are moved to a temporary container and can be restored within 30 days.
 After that time, they are permanently deleted.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-delete-permissions.md)]
 
 ## EXAMPLES
 

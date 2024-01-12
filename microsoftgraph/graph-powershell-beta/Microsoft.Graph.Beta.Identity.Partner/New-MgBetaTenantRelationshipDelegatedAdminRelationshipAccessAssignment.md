@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Partner-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Partner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/new-mgbetatenantrelationshipdelegatedadminrelationshipaccessassignment
 schema: 2.0.0
+ms.prod: partner-customer-administration
 ---
 
 # New-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment
@@ -44,6 +45,9 @@ New-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment -InputObj
 
 ## DESCRIPTION
 Create a new delegatedAdminAccessAssignment object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/delegatedadminrelationship-post-accessassignments-permissions.md)]
 
 ## EXAMPLES
 

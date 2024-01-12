@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowtaskreporttaskprocessingresult
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult
@@ -36,6 +37,9 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult
 
 ## DESCRIPTION
 The related lifecycle workflow taskProcessingResults.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-taskreport-list-taskprocessingresults-permissions.md)]
 
 ## EXAMPLES
 

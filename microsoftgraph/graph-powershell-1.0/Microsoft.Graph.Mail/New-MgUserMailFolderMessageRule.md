@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfoldermessagerule
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # New-MgUserMailFolderMessageRule
@@ -45,6 +46,9 @@ New-MgUserMailFolderMessageRule -InputObject <IMailIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create a messageRule object by specifying a set of conditions and actions.
 Outlook carries out those actions if an incoming message in the user's Inbox meets the specified conditions.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/mailfolder-post-messagerules-permissions.md)]
 
 ## EXAMPLES
 

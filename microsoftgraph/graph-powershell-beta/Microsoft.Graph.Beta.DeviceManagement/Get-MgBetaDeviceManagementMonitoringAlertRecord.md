@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmonitoringalertrecord
 schema: 2.0.0
+ms.prod: cloud-pc
+ms.prod: cloud-pc
 ---
 
 # Get-MgBetaDeviceManagementMonitoringAlertRecord
@@ -33,6 +35,12 @@ Get-MgBetaDeviceManagementMonitoringAlertRecord -InputObject <IDeviceManagementI
 
 ## DESCRIPTION
 Read the properties and relationships of an alertRecord object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/devicemanagement-alertrecord-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/devicemanagement-alertrecord-list-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalremotedesktopsecurityconfiguration
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Update-MgServicePrincipalRemoteDesktopSecurityConfiguration
@@ -42,6 +43,9 @@ Update-MgServicePrincipalRemoteDesktopSecurityConfiguration -InputObject <IAppli
 ## DESCRIPTION
 Update the properties of a remoteDesktopSecurityConfiguration object on the servicePrincipal.
 Use this configuration to enable or disable the Microsoft Entra ID Remote Desktop Services (RDS) authentication protocol to authenticate a user to Microsoft Entra joined or Microsoft Entra hybrid joined devices.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/remotedesktopsecurityconfiguration-update-permissions.md)]
 
 ## EXAMPLES
 

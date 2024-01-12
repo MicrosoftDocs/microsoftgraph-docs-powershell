@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetauseronlinemeeting
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Update-MgBetaUserOnlineMeeting
@@ -72,6 +73,9 @@ Update-MgBetaUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity>
 ## DESCRIPTION
 Update the properties of the specified onlineMeeting object.
 Please see Request body section for the list of properties that support updating.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onlinemeeting-update-permissions.md)]
 
 ## EXAMPLES
 

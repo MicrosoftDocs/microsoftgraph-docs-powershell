@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitecontenttype
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Remove-MgGroupSiteContentType
@@ -26,6 +27,9 @@ Remove-MgGroupSiteContentType -InputObject <ISitesIdentity> [-IfMatch <String>] 
 
 ## DESCRIPTION
 Remove a \[content type\]\[contentType\] from a \[list\]\[\] or a \[site\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-delete-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyauthorizationpolicy
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaPolicyAuthorizationPolicy
@@ -33,6 +34,9 @@ Get-MgBetaPolicyAuthorizationPolicy -InputObject <IIdentitySignInsIdentity> [-Ex
 
 ## DESCRIPTION
 The policy that controls Microsoft Entra authorization settings.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authorizationpolicy-get-permissions.md)]
 
 ## EXAMPLES
 

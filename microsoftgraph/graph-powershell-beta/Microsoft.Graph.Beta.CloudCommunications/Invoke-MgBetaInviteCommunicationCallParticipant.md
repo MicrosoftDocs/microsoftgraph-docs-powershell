@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetainvitecommunicationcallparticipant
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Invoke-MgBetaInviteCommunicationCallParticipant
@@ -44,6 +45,9 @@ Invoke-MgBetaInviteCommunicationCallParticipant -InputObject <ICloudCommunicatio
 ## DESCRIPTION
 Invite participants to the active call.
 For more information about how to handle operations, see commsOperation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/participant-invite-permissions.md)]
 
 ## EXAMPLES
 

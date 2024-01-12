@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasesearchadditionalsource
 schema: 2.0.0
+ms.prod: ediscovery
 ---
 
 # Get-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource
@@ -33,6 +34,9 @@ Get-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource -InputObject <ISecurityId
 
 ## DESCRIPTION
 Adds an additional source to the eDiscovery search.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverysearch-list-additionalsources-permissions.md)]
 
 ## EXAMPLES
 

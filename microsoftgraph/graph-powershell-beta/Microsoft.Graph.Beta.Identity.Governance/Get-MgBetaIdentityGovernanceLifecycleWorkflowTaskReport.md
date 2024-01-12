@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowtaskreport
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReport
@@ -33,6 +34,9 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReport -InputObject <IIdentityG
 
 ## DESCRIPTION
 Represents the aggregation of task execution data for tasks within a workflow object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-workflow-list-taskreports-permissions.md)]
 
 ## EXAMPLES
 

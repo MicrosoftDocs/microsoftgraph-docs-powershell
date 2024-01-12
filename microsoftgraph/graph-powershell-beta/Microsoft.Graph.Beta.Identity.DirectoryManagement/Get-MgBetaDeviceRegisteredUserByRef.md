@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadeviceregistereduserbyref
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Get-MgBetaDeviceRegisteredUserByRef
@@ -28,6 +29,9 @@ For cloud joined devices and registered personal devices, registered users are s
 Read-only.
 Nullable.
 Supports $expand.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-list-registeredusers-permissions.md)]
 
 ## EXAMPLES
 

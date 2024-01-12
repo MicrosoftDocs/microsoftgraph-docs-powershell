@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthreadpost
 schema: 2.0.0
+ms.prod: groups
 ---
 
 # Get-MgGroupThreadPost
@@ -45,6 +46,9 @@ Get-MgGroupThreadPost -InputObject <IGroupsIdentity> [-ExpandProperty <String[]>
 
 ## DESCRIPTION
 Get posts from groups
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/conversationthread-list-posts-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulation
 schema: 2.0.0
+ms.prod: security
 ---
 
 # Get-MgSecurityAttackSimulation
@@ -38,6 +39,9 @@ Get-MgSecurityAttackSimulation [-ExpandProperty <String[]>] [-Property <String[]
 
 ## DESCRIPTION
 Get attackSimulation from security
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/attacksimulationroot-list-simulations-permissions.md)]
 
 ## EXAMPLES
 

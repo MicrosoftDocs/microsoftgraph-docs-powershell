@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycasesearchcustodiansource
 schema: 2.0.0
+ms.prod: ediscovery
 ---
 
 # Remove-MgBetaSecurityCaseEdiscoveryCaseSearchCustodianSource
@@ -26,6 +27,9 @@ Remove-MgBetaSecurityCaseEdiscoveryCaseSearchCustodianSource -InputObject <ISecu
 
 ## DESCRIPTION
 Remove a dataSource object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverysearch-delete-custodiansources-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasesearchlastestimatestatisticsoperation
 schema: 2.0.0
+ms.prod: ediscovery
 ---
 
 # Get-MgBetaSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation
@@ -26,6 +27,9 @@ Get-MgBetaSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation -Input
 
 ## DESCRIPTION
 Get the last ediscoveryEstimateOperation objects and their properties.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverysearch-list-lastestimatestatisticsoperation-permissions.md)]
 
 ## EXAMPLES
 

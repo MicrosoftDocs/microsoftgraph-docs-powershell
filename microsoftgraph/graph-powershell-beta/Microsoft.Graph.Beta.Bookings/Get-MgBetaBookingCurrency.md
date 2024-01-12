@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingcurrency
 schema: 2.0.0
+ms.prod: bookings
+ms.prod: bookings
 ---
 
 # Get-MgBetaBookingCurrency
@@ -35,6 +37,12 @@ Get-MgBetaBookingCurrency -InputObject <IBookingsIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 Get the properties of a bookingCurrency object that is available to a Microsoft Bookings business.
 Use the id property, which is the currency code, to specify the currency.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingcurrency-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingcurrency-list-permissions.md)]
 
 ## EXAMPLES
 

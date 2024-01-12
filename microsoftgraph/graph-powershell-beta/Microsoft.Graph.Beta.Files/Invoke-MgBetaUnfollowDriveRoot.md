@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetaunfollowdriveroot
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Invoke-MgBetaUnfollowDriveRoot
@@ -25,6 +26,9 @@ Invoke-MgBetaUnfollowDriveRoot -InputObject <IFilesIdentity> [-PassThru] [-WhatI
 
 ## DESCRIPTION
 Unfollow a driveItem.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-unfollow-permissions.md)]
 
 ## EXAMPLES
 

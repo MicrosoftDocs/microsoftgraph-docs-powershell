@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserowneddevice
 schema: 2.0.0
+ms.prod: users
 ---
 
 # Get-MgBetaUserOwnedDevice
@@ -39,6 +40,9 @@ Devices owned by the user.
 Read-only.
 Nullable.
 Supports $expand.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-owneddevices-permissions.md)]
 
 ## EXAMPLES
 

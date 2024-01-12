@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauserdevicetransitivememberof
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Get-MgBetaUserDeviceTransitiveMemberOf
@@ -37,6 +38,9 @@ Get-MgBetaUserDeviceTransitiveMemberOf -InputObject <ICrossDeviceExperiencesIden
 Groups and administrative units that this device is a member of.
 This operation is transitive.
 Supports $expand.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-list-transitivememberof-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/copy-mgbetausermessage
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Copy-MgBetaUserMessage
@@ -40,6 +41,9 @@ Copy-MgBetaUserMessage -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Copy a message to a folder within the user's mailbox.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-copy-permissions.md)]
 
 ## EXAMPLES
 

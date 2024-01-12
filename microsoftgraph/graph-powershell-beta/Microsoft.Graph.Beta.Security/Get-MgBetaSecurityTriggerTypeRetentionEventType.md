@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritytriggertyperetentioneventtype
 schema: 2.0.0
+ms.prod: security
+ms.prod: security
 ---
 
 # Get-MgBetaSecurityTriggerTypeRetentionEventType
@@ -33,6 +35,12 @@ Get-MgBetaSecurityTriggerTypeRetentionEventType -InputObject <ISecurityIdentity>
 
 ## DESCRIPTION
 Read the properties and relationships of a retentionEventType object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-retentioneventtype-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-retentioneventtype-list-permissions.md)]
 
 ## EXAMPLES
 

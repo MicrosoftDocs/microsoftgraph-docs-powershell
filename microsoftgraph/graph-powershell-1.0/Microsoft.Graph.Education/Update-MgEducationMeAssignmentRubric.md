@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationmeassignmentrubric
 schema: 2.0.0
+ms.prod: education
 ---
 
 # Update-MgEducationMeAssignmentRubric
@@ -46,6 +47,9 @@ Update-MgEducationMeAssignmentRubric -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Attach an existing educationRubric object to an educationAssignment.
 Only teachers can perform this operation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-put-rubric-permissions.md)]
 
 ## EXAMPLES
 

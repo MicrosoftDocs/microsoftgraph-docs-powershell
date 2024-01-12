@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationonlinemeetingregistrationcustomquestion
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Update-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestion
@@ -42,6 +43,9 @@ Update-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestion -InputObject <
 
 ## DESCRIPTION
 Update a custom registration question associated with a meetingRegistration object on behalf of the organizer.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/meetingregistrationquestion-update-permissions.md)]
 
 ## EXAMPLES
 

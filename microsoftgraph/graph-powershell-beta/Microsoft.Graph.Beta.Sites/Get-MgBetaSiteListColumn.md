@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistcolumn
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Get-MgBetaSiteListColumn
@@ -33,6 +34,9 @@ Get-MgBetaSiteListColumn -InputObject <ISitesIdentity> [-ExpandProperty <String[
 
 ## DESCRIPTION
 The collection of field definitions for this list.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/list-list-columns-permissions.md)]
 
 ## EXAMPLES
 

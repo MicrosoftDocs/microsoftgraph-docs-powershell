@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.People-help.xml
 Module Name: Microsoft.Graph.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mguserusedinsight
 schema: 2.0.0
+ms.prod: insights
 ---
 
 # Get-MgUserUsedInsight
@@ -33,6 +34,9 @@ Get-MgUserUsedInsight -InputObject <IPeopleIdentity> [-ExpandProperty <String[]>
 
 ## DESCRIPTION
 Calculated relationship identifying the latest documents viewed or modified by a user, including OneDrive for Business and SharePoint documents, ranked by recency of use.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/insights-list-used-permissions.md)]
 
 ## EXAMPLES
 

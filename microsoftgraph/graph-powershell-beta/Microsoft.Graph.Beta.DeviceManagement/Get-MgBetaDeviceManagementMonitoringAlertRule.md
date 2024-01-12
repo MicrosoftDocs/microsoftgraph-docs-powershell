@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmonitoringalertrule
 schema: 2.0.0
+ms.prod: cloud-pc
+ms.prod: cloud-pc
 ---
 
 # Get-MgBetaDeviceManagementMonitoringAlertRule
@@ -33,6 +35,12 @@ Get-MgBetaDeviceManagementMonitoringAlertRule -InputObject <IDeviceManagementIde
 
 ## DESCRIPTION
 Read the properties and relationships of an alertRule object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/devicemanagement-alertrule-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/devicemanagement-alertrule-list-permissions.md)]
 
 ## EXAMPLES
 

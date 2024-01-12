@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistitemversion
 schema: 2.0.0
+ms.prod: sharepoint
+ms.prod: sharepoint
 ---
 
 # Get-MgShareListItemVersion
@@ -52,6 +54,12 @@ Get-MgShareListItemVersion -InputObject <IFilesIdentity> [-ExpandProperty <Strin
 
 ## DESCRIPTION
 Retrieve the metadata for a specific version of a ListItem.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitemversion-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-list-versions-permissions.md)]
 
 ## EXAMPLES
 

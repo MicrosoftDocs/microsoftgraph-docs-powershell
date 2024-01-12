@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelist
 schema: 2.0.0
+ms.prod: sharepoint
+ms.prod: sites-and-lists
 ---
 
 # Get-MgSiteList
@@ -33,6 +35,12 @@ Get-MgSiteList -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Prop
 
 ## DESCRIPTION
 Get a list of rich long-running operations associated with a list.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/list-list-operations-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/list-list-permissions.md)]
 
 ## EXAMPLES
 

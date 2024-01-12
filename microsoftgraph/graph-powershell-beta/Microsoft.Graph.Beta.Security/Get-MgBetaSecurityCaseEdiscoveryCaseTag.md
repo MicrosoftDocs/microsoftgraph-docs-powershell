@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasetag
 schema: 2.0.0
+ms.prod: ediscovery
+ms.prod: ediscovery
 ---
 
 # Get-MgBetaSecurityCaseEdiscoveryCaseTag
@@ -33,6 +35,12 @@ Get-MgBetaSecurityCaseEdiscoveryCaseTag -InputObject <ISecurityIdentity> [-Expan
 
 ## DESCRIPTION
 Read the properties and relationships of an ediscoveryReviewTag object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoveryreviewtag-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverycase-list-tags-permissions.md)]
 
 ## EXAMPLES
 

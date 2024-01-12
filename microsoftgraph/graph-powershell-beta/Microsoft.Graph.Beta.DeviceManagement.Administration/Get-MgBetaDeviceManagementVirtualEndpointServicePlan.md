@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xm
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointserviceplan
 schema: 2.0.0
+ms.prod: cloud-pc
 ---
 
 # Get-MgBetaDeviceManagementVirtualEndpointServicePlan
@@ -33,6 +34,9 @@ Get-MgBetaDeviceManagementVirtualEndpointServicePlan -InputObject <IDeviceManage
 
 ## DESCRIPTION
 Cloud PC service plans.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-list-serviceplans-permissions.md)]
 
 ## EXAMPLES
 

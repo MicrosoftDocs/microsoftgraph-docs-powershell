@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycaselegalholdusersource
 schema: 2.0.0
+ms.prod: ediscovery
 ---
 
 # Get-MgBetaComplianceEdiscoveryCaseLegalHoldUserSource
@@ -35,6 +36,9 @@ Get-MgBetaComplianceEdiscoveryCaseLegalHoldUserSource -InputObject <IComplianceI
 ## DESCRIPTION
 Data source entity for a the legal hold.
 This is the container for a mailbox and OneDrive for Business site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-legalhold-list-usersources-permissions.md)]
 
 ## EXAMPLES
 

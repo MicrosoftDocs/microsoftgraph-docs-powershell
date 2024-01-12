@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusinesscustomer
 schema: 2.0.0
+ms.prod: bookings
+ms.prod: bookings
 ---
 
 # Get-MgBetaBookingBusinessCustomer
@@ -33,6 +35,12 @@ Get-MgBetaBookingBusinessCustomer -InputObject <IBookingsIdentity> [-ExpandPrope
 
 ## DESCRIPTION
 Get the properties and relationships of a bookingCustomer object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingcustomer-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingbusiness-list-customers-permissions.md)]
 
 ## EXAMPLES
 

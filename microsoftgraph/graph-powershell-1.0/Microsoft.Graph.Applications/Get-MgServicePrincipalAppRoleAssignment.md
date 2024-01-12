@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalapproleassignment
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Get-MgServicePrincipalAppRoleAssignment
@@ -35,6 +36,9 @@ Get-MgServicePrincipalAppRoleAssignment -InputObject <IApplicationsIdentity> [-E
 ## DESCRIPTION
 App role assignment for another app or service, granted to this service principal.
 Supports $expand.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-list-approleassignments-permissions.md)]
 
 ## EXAMPLES
 

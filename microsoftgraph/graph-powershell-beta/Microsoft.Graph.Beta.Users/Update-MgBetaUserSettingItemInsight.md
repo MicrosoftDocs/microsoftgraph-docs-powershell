@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingiteminsight
 schema: 2.0.0
+ms.prod: insights
 ---
 
 # Update-MgBetaUserSettingItemInsight
@@ -38,6 +39,9 @@ Update-MgBetaUserSettingItemInsight -InputObject <IUsersIdentity>
 
 ## DESCRIPTION
 Update the privacy settings for itemInsights and meeting hours insights of a user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userinsightssettings-update-permissions.md)]
 
 ## EXAMPLES
 

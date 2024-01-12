@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalapproleassignedto
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Get-MgBetaServicePrincipalAppRoleAssignedTo
@@ -33,6 +34,9 @@ Get-MgBetaServicePrincipalAppRoleAssignedTo -InputObject <IApplicationsIdentity>
 
 ## DESCRIPTION
 App role assignments for this app or service, granted to users, groups, and other service principals.Supports $expand.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-list-approleassignedto-permissions.md)]
 
 ## EXAMPLES
 

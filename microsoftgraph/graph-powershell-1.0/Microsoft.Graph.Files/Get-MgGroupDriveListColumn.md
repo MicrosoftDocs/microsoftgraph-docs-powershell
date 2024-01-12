@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivelistcolumn
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Get-MgGroupDriveListColumn
@@ -33,6 +34,9 @@ Get-MgGroupDriveListColumn -InputObject <IFilesIdentity> [-ExpandProperty <Strin
 
 ## DESCRIPTION
 The collection of field definitions for this list.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/list-list-columns-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulation
 schema: 2.0.0
+ms.prod: security
 ---
 
 # Get-MgBetaSecurityAttackSimulation
@@ -38,6 +39,9 @@ Get-MgBetaSecurityAttackSimulation [-ExpandProperty <String[]>] [-Property <Stri
 
 ## DESCRIPTION
 Provides tenants capability to launch a simulated and realistic phishing attack and learn from it.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/attacksimulationroot-list-simulations-permissions.md)]
 
 ## EXAMPLES
 

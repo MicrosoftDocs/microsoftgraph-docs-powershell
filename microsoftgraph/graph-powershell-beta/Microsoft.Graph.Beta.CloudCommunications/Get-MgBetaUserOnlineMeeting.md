@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeeting
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Get-MgBetaUserOnlineMeeting
@@ -33,6 +34,9 @@ Get-MgBetaUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity> [-Expand
 
 ## DESCRIPTION
 Information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onlinemeeting-get-permissions.md)]
 
 ## EXAMPLES
 

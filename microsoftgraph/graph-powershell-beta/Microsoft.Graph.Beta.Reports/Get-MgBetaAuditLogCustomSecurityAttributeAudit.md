@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaauditlogcustomsecurityattributeaudit
 schema: 2.0.0
+ms.prod: identity-and-access-reports
 ---
 
 # Get-MgBetaAuditLogCustomSecurityAttributeAudit
@@ -33,6 +34,9 @@ Get-MgBetaAuditLogCustomSecurityAttributeAudit -InputObject <IReportsIdentity> [
 
 ## DESCRIPTION
 Represents a custom security attribute audit log.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/auditlogroot-list-customsecurityattributeaudits-permissions.md)]
 
 ## EXAMPLES
 

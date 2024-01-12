@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysubjectrightsrequestnote
 schema: 2.0.0
+ms.prod: compliance
 ---
 
 # Get-MgBetaSecuritySubjectRightsRequestNote
@@ -33,6 +34,9 @@ Get-MgBetaSecuritySubjectRightsRequestNote -InputObject <ISecurityIdentity> [-Ex
 
 ## DESCRIPTION
 List of notes associated with the request.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/subjectrightsrequest-list-notes-permissions.md)]
 
 ## EXAMPLES
 

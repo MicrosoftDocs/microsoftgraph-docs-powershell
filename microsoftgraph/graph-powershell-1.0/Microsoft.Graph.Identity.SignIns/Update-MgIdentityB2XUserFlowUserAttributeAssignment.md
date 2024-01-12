@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityb2xuserflowuserattributeassignment
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Update-MgIdentityB2XUserFlowUserAttributeAssignment
@@ -46,6 +47,9 @@ Update-MgIdentityB2XUserFlowUserAttributeAssignment -InputObject <IIdentitySignI
 
 ## DESCRIPTION
 Update the properties of a identityUserFlowAttributeAssignment object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identityuserflowattributeassignment-update-permissions.md)]
 
 ## EXAMPLES
 

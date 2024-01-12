@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetauserfollowedsite
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Get-MgBetaUserFollowedSite
@@ -33,6 +34,9 @@ Get-MgBetaUserFollowedSite -InputObject <ISitesIdentity> [-ExpandProperty <Strin
 
 ## DESCRIPTION
 Get followedSites from users
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/sites-list-followed-permissions.md)]
 
 ## EXAMPLES
 

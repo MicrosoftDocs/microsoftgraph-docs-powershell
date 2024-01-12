@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationautomationrun
 schema: 2.0.0
+ms.prod: security
 ---
 
 # Get-MgSecurityAttackSimulationAutomationRun
@@ -33,6 +34,9 @@ Get-MgSecurityAttackSimulationAutomationRun -InputObject <ISecurityIdentity> [-E
 
 ## DESCRIPTION
 A collection of simulation automation runs.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/simulationautomation-list-runs-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassmember
 schema: 2.0.0
+ms.prod: education
 ---
 
 # Get-MgEducationClassMember
@@ -20,6 +21,9 @@ Get-MgEducationClassMember -EducationClassId <String> [-ExpandProperty <String[]
 
 ## DESCRIPTION
 Retrieves the educationUser members of an educationClass.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationclass-list-members-permissions.md)]
 
 ## EXAMPLES
 

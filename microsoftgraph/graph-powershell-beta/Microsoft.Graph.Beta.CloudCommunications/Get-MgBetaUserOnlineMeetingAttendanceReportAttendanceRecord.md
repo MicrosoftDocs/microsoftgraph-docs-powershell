@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingattendancereportattendancerecord
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Get-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord
@@ -57,6 +58,9 @@ Get-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord -InputObject <ICloud
 ## DESCRIPTION
 List of attendance records of an attendance report.
 Read-only.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/attendancerecord-list-permissions.md)]
 
 ## EXAMPLES
 

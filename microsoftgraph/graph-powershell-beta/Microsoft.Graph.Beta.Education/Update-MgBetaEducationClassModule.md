@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassmodule
 schema: 2.0.0
+ms.prod: education
 ---
 
 # Update-MgBetaEducationClassModule
@@ -50,6 +51,9 @@ Update an educationModule object in a class.
 Only teachers in the class can perform this operation.
 Note that you can't use a PATCH request to change the status of a module.
 Use the publish action to change the module status.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationmodule-update-permissions.md)]
 
 ## EXAMPLES
 

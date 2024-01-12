@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertransitivememberof
 schema: 2.0.0
+ms.prod: users
 ---
 
 # Get-MgBetaUserTransitiveMemberOf
@@ -35,6 +36,9 @@ Get-MgBetaUserTransitiveMemberOf -InputObject <IUsersIdentity> [-ExpandProperty 
 ## DESCRIPTION
 The groups, including nested groups and directory roles that a user is a member of.
 Nullable.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-transitivememberof-permissions.md)]
 
 ## EXAMPLES
 

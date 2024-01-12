@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/new-mgusercontactfolderchildfoldercontact
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # New-MgUserContactFolderChildFolderContact
@@ -66,6 +67,9 @@ New-MgUserContactFolderChildFolderContact -InputObject <IPersonalContactsIdentit
 
 ## DESCRIPTION
 Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contactfolder-post-contacts-permissions.md)]
 
 ## EXAMPLES
 

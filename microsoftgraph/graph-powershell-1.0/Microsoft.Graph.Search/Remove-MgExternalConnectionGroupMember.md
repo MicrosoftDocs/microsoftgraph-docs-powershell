@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgexternalconnectiongroupmember
 schema: 2.0.0
+ms.prod: search
 ---
 
 # Remove-MgExternalConnectionGroupMember
@@ -26,6 +27,9 @@ Remove-MgExternalConnectionGroupMember -InputObject <ISearchIdentity> [-IfMatch 
 
 ## DESCRIPTION
 Delete an identity resource to remove the corresponding member from an externalGroup.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-externalgroupmember-delete-permissions.md)]
 
 ## EXAMPLES
 

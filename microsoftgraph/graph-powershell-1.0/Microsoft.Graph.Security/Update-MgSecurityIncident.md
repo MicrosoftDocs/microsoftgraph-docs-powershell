@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityincident
 schema: 2.0.0
+ms.prod: security
 ---
 
 # Update-MgSecurityIncident
@@ -48,6 +49,9 @@ Update-MgSecurityIncident -InputObject <ISecurityIdentity> -BodyParameter <IMicr
 
 ## DESCRIPTION
 Update the properties of an incident object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-incident-update-permissions.md)]
 
 ## EXAMPLES
 

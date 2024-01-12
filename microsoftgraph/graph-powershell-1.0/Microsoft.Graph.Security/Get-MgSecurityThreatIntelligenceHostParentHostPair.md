@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostparenthostpair
 schema: 2.0.0
+ms.prod: security
 ---
 
 # Get-MgSecurityThreatIntelligenceHostParentHostPair
@@ -33,6 +34,9 @@ Get-MgSecurityThreatIntelligenceHostParentHostPair -InputObject <ISecurityIdenti
 
 ## DESCRIPTION
 The hostPairs that are associated with a host, where that host is the childHost and has an incoming pairing with a parentHost.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-host-list-parenthostpairs-permissions.md)]
 
 ## EXAMPLES
 

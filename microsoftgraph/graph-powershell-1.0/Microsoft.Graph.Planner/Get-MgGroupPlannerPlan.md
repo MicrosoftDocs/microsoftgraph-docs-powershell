@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mggroupplannerplan
 schema: 2.0.0
+ms.prod: planner
 ---
 
 # Get-MgGroupPlannerPlan
@@ -37,6 +38,9 @@ Get-MgGroupPlannerPlan -InputObject <IPlannerIdentity> [-ExpandProperty <String[
 Read-only.
 Nullable.
 Returns the plannerPlans owned by the group.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannergroup-list-plans-permissions.md)]
 
 ## EXAMPLES
 

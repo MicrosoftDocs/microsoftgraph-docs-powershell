@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupthread
 schema: 2.0.0
+ms.prod: groups
+ms.prod: groups
 ---
 
 # Get-MgBetaGroupThread
@@ -31,6 +33,12 @@ Get-MgBetaGroupThread -InputObject <IGroupsIdentity> [-Property <String[]>] [<Co
 
 ## DESCRIPTION
 Get a thread object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-get-thread-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-threads-permissions.md)]
 
 ## EXAMPLES
 

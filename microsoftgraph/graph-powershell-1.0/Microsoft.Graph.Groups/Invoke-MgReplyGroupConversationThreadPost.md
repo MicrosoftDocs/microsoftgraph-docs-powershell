@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreplygroupconversationthreadpost
 schema: 2.0.0
+ms.prod: groups
 ---
 
 # Invoke-MgReplyGroupConversationThreadPost
@@ -44,6 +45,9 @@ Invoke-MgReplyGroupConversationThreadPost -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Reply to a post and add a new post to the specified thread in a group conversation.
 You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/post-reply-permissions.md)]
 
 ## EXAMPLES
 

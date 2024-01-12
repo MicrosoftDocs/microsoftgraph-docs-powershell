@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassmemberbyref
 schema: 2.0.0
+ms.prod: education
 ---
 
 # New-MgBetaEducationClassMemberByRef
@@ -38,6 +39,9 @@ New-MgBetaEducationClassMemberByRef -InputObject <IEducationIdentity> -BodyParam
 
 ## DESCRIPTION
 Add an educationUser member to an educationClass.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-post-members-permissions.md)]
 
 ## EXAMPLES
 

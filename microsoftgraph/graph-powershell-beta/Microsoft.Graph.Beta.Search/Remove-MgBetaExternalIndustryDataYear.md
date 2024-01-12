@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalindustrydatayear
 schema: 2.0.0
+ms.prod: industry-data-etl
 ---
 
 # Remove-MgBetaExternalIndustryDataYear
@@ -26,6 +27,9 @@ Remove-MgBetaExternalIndustryDataYear -InputObject <ISearchIdentity> [-IfMatch <
 
 ## DESCRIPTION
 Delete a yearTimePeriodDefinition object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-yeartimeperioddefinition-delete-permissions.md)]
 
 ## EXAMPLES
 

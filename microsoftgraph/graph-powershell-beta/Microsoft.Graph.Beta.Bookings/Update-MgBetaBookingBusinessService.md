@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinessservice
 schema: 2.0.0
+ms.prod: bookings
 ---
 
 # Update-MgBetaBookingBusinessService
@@ -54,6 +55,9 @@ Update-MgBetaBookingBusinessService -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Update the properties of a bookingService object in the specified bookingBusiness.
 The following are some examples you can customize for a service:- Price- Typical length of an appointment- Reminders- Any, time buffer to set up before or finish up after the service- Scheduling policy parameters such as minimum notice to book or cancel, and whether customers can select specific staff members for an appointment.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingservice-update-permissions.md)]
 
 ## EXAMPLES
 

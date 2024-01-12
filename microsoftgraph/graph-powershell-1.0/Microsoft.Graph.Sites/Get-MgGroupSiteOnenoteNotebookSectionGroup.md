@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotenotebooksectiongroup
 schema: 2.0.0
+ms.prod: onenote
 ---
 
 # Get-MgGroupSiteOnenoteNotebookSectionGroup
@@ -58,6 +59,9 @@ Get-MgGroupSiteOnenoteNotebookSectionGroup -InputObject <ISitesIdentity> [-Expan
 The section groups in the notebook.
 Read-only.
 Nullable.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/notebook-list-sectiongroups-permissions.md)]
 
 ## EXAMPLES
 

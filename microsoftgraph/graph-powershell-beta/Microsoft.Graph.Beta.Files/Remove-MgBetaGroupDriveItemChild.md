@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetagroupdriveitemchild
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Remove-MgBetaGroupDriveItemChild
@@ -26,6 +27,9 @@ Remove-MgBetaGroupDriveItemChild -InputObject <IFilesIdentity> [-IfMatch <String
 
 ## DESCRIPTION
 Remove an item from a \[bundle\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bundle-removeitem-permissions.md)]
 
 ## EXAMPLES
 
