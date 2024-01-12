@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Planner
 Module Guid: 847f19b7-09d1-41e3-8ece-42850194b241
 Download Help Link: {{ Update Download Link }}
@@ -217,4 +217,5 @@ Locale: en-US
 
 ### [Update-MgBetaUserPlanner](Update-MgBetaUserPlanner.md)
 {{ Fill in the Description }}
+
 

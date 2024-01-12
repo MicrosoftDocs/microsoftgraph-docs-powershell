@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 Module Guid: e8ca1faa-96b4-465b-a704-854b64e58526
 Download Help Link: {{ Update Download Link }}
@@ -523,4 +523,5 @@ Locale: en-US
 
 ### [Update-MgBetaPrintTaskDefinitionTask](Update-MgBetaPrintTaskDefinitionTask.md)
 {{ Fill in the Description }}
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityincident
@@ -530,4 +530,5 @@ COMMENTS \<IMicrosoftGraphSecurityAlertComment\[\]\>: Array of comments created 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityincident](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityincident)
+
 
