@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property rooms for places
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPlaceAsRoomListRoom](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaPlaceAsRoomListRoom?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -177,6 +180,7 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaPlaceAsRoomListRoom](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaPlaceAsRoomListRoom?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgplaceasroomlistroom](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgplaceasroomlistroom)
 

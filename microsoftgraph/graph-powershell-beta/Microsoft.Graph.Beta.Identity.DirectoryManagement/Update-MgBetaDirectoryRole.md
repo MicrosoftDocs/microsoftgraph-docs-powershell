@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update entity in directoryRoles
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDirectoryRole](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryRole?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -395,6 +398,7 @@ This property is read-only.
 This property is read-only.
 
 ## RELATED LINKS
+[Update-MgDirectoryRole](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryRole?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryrole](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryrole)
 

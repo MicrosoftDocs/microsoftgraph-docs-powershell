@@ -16,6 +16,9 @@ If one of the members is using Skype, the operation fails.
 This method does not support federation.
 Only the user in the tenant who sent the message can perform data loss prevention (DLP) updates on the specified chat message.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgTeamPrimaryChannelMessage](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamPrimaryChannelMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -1038,6 +1041,7 @@ Only applies to channel chat messages, not chat messages in a chat.
 Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
+[Update-MgTeamPrimaryChannelMessage](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamPrimaryChannelMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamprimarychannelmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamprimarychannelmessage)
 

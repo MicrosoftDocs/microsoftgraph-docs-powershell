@@ -12,6 +12,9 @@ ms.prod: sharepoint
 The list of items the user is following.
 Only in OneDrive for Business.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveFollowing](/powershell/module/Microsoft.Graph.Files/Get-MgDriveFollowing?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -290,6 +293,7 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgDriveFollowing](/powershell/module/Microsoft.Graph.Files/Get-MgDriveFollowing?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivefollowing](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivefollowing)
 

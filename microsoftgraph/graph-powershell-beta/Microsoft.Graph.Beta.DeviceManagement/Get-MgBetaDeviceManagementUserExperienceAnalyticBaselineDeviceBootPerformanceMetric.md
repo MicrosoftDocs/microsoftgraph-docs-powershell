@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The scores and insights for the device boot performance metrics.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementUserExperienceAnalyticBaselineDeviceBootPerformanceMetric](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticBaselineDeviceBootPerformanceMetric?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -265,6 +268,7 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
   \[WindowsQualityUpdateProfileId \<String\>\]: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
+[Get-MgDeviceManagementUserExperienceAnalyticBaselineDeviceBootPerformanceMetric](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticBaselineDeviceBootPerformanceMetric?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementuserexperienceanalyticbaselinedevicebootperformancemetric](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementuserexperienceanalyticbaselinedevicebootperformancemetric)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationUserSchoolCount](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserSchoolCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -130,6 +133,7 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Get-MgBetaEducationUserSchoolCount](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserSchoolCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserschoolcount](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserschoolcount)
 

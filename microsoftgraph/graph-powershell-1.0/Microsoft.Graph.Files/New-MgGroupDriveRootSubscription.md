@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to subscriptions for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupDriveRootSubscription](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveRootSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -553,6 +556,7 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[New-MgBetaGroupDriveRootSubscription](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveRootSubscription?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdriverootsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdriverootsubscription)
 

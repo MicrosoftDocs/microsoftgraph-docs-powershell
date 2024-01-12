@@ -11,6 +11,9 @@ ms.prod: microsoft-teams
 ## SYNOPSIS
 Create a standard tag for members in a team.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaTeamTag](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamTag?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -356,6 +359,7 @@ Read-only.
   \[UserId \<String\>\]: The user ID of the member.
 
 ## RELATED LINKS
+[New-MgBetaTeamTag](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamTag?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamtag](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamtag)
 

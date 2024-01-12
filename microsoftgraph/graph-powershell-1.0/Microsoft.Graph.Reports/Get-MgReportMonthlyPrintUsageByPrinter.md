@@ -11,6 +11,9 @@ ms.prod: cloud-printing
 ## SYNOPSIS
 Retrieve a list of monthly print usage summaries, grouped by printer.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportMonthlyPrintUsageByPrinter](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportMonthlyPrintUsageByPrinter?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -269,6 +272,7 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
   \[UserRegistrationDetailsId \<String\>\]: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+[Get-MgBetaReportMonthlyPrintUsageByPrinter](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportMonthlyPrintUsageByPrinter?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmonthlyprintusagebyprinter](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmonthlyprintusagebyprinter)
 

@@ -11,6 +11,9 @@ ms.prod: intune
 ## SYNOPSIS
 Syncs licenses associated with a specific appleVolumePurchaseProgramToken
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Sync-MgBetaDeviceAppManagementVppTokenLicense](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Sync-MgBetaDeviceAppManagementVppTokenLicense?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Sync (Default)
@@ -156,6 +159,7 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
   \[WindowsInformationProtectionPolicyId \<String\>\]: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
+[Sync-MgBetaDeviceAppManagementVppTokenLicense](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Sync-MgBetaDeviceAppManagementVppTokenLicense?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/sync-mgdeviceappmanagementvpptokenlicense](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/sync-mgdeviceappmanagementvpptokenlicense)
 

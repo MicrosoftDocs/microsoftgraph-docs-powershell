@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to extensions for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserTodoListExtension](/powershell/module/Microsoft.Graph.Users/New-MgUserTodoListExtension?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -221,6 +224,7 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[New-MgUserTodoListExtension](/powershell/module/Microsoft.Graph.Users/New-MgUserTodoListExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausertodolistextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausertodolistextension)
 

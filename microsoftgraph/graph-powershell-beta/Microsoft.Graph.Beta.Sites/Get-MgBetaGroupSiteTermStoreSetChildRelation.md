@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 To indicate which terms are related to the current term as either pinned or reused.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteTermStoreSetChildRelation](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreSetChildRelation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List1 (Default)
@@ -393,6 +396,7 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgGroupSiteTermStoreSetChildRelation](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreSetChildRelation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitetermstoresetchildrelation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitetermstoresetchildrelation)
 

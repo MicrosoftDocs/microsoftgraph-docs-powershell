@@ -12,6 +12,9 @@ Replace an existing shift.
 If the specified shift doesn't exist, this method returns 404 Not found.
 The duration of a shift can't be less than 1 minute or longer than 24 hours.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgTeamScheduleShift](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamScheduleShift?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -479,6 +482,7 @@ Required.
   \[Notes \<String\>\]: The shift notes for the shiftItem.
 
 ## RELATED LINKS
+[Update-MgTeamScheduleShift](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamScheduleShift?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduleshift](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduleshift)
 

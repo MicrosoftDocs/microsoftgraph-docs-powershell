@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to contentTypes for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveListContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -1775,6 +1778,7 @@ ORDER \<IMicrosoftGraphContentTypeOrder\>: contentTypeOrder
   \[Position \<Int32?\>\]: Specifies the position in which the content type appears in the selection UI.
 
 ## RELATED LINKS
+[New-MgBetaGroupDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveListContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdrivelistcontenttype)
 

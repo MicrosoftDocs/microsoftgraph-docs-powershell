@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getByUserIdAndRole
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgVirtualEventWebinarByUserIdAndRole](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventWebinarByUserIdAndRole?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -232,6 +235,7 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
+[Get-MgVirtualEventWebinarByUserIdAndRole](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventWebinarByUserIdAndRole?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarbyuseridandrole](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarbyuseridandrole)
 

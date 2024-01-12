@@ -16,6 +16,9 @@ These default properties are noted in the Properties section.
 To get properties that are not returned by default, do a GET operation for the user and specify the properties in a $select OData query option.
 Because the user resource supports extensions, you can also use the GET operation to get custom properties and extension data in a user instance.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUser](/powershell/module/Microsoft.Graph.Users/Get-MgUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -358,6 +361,7 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUser](/powershell/module/Microsoft.Graph.Users/Get-MgUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauser)
 

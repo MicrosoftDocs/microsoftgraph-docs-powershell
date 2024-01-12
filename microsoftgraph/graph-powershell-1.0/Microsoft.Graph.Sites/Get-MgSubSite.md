@@ -11,6 +11,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 The collection of the sub-sites under this site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSubSite](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSubSite?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List2 (Default)
@@ -302,6 +305,7 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaSubSite](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSubSite?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsubsite](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsubsite)
 

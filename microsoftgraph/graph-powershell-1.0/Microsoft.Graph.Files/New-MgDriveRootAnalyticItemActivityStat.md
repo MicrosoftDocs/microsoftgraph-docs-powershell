@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to itemActivityStats for drives
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDriveRootAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveRootAnalyticItemActivityStat?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -9552,6 +9555,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[New-MgBetaDriveRootAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveRootAnalyticItemActivityStat?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootanalyticitemactivitystat](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootanalyticitemactivitystat)
 

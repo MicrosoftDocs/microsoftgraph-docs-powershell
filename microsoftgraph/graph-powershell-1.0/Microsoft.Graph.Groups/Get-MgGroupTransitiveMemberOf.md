@@ -12,6 +12,9 @@ ms.prod: groups
 The groups that a group is a member of, either directly or through nested membership.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTransitiveMemberOf](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupTransitiveMemberOf?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -317,6 +320,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
+[Get-MgBetaGroupTransitiveMemberOf](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupTransitiveMemberOf?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouptransitivememberof](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouptransitivememberof)
 

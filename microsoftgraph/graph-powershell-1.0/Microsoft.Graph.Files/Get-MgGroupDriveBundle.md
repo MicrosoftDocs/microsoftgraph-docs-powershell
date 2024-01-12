@@ -12,6 +12,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Retrieve the metadata for a \[bundle\]\[\] based on the unique ID of the bundle.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveBundle](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveBundle?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -314,6 +317,7 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaGroupDriveBundle](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveBundle?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivebundle](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivebundle)
 

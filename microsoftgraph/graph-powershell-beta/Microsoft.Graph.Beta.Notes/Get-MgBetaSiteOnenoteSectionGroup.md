@@ -12,6 +12,9 @@ ms.prod: onenote
 ## SYNOPSIS
 Retrieve the properties and relationships of a sectionGroup object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteOnenoteSectionGroup](/powershell/module/Microsoft.Graph.Notes/Get-MgSiteOnenoteSectionGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -287,6 +290,7 @@ INPUTOBJECT \<INotesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgSiteOnenoteSectionGroup](/powershell/module/Microsoft.Graph.Notes/Get-MgSiteOnenoteSectionGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasiteonenotesectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasiteonenotesectiongroup)
 

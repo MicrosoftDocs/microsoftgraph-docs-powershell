@@ -12,6 +12,9 @@ ms.prod: cloud-communications
 Add the large gallery view to a call.
 For details about how to identify a large gallery view participant in a roster so that you can retrieve the relevant data to subscribe to the video feed, see Identify large gallery view participants in a roster.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Add-MgCommunicationCallLargeGalleryView](/powershell/module/Microsoft.Graph.CloudCommunications/Add-MgCommunicationCallLargeGalleryView?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AddExpanded (Default)
@@ -211,6 +214,7 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Add-MgCommunicationCallLargeGalleryView](/powershell/module/Microsoft.Graph.CloudCommunications/Add-MgCommunicationCallLargeGalleryView?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/add-mgbetacommunicationcalllargegalleryview](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/add-mgbetacommunicationcalllargegalleryview)
 

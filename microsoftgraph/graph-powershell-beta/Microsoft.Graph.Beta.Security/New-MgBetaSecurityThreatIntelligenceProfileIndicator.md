@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to intelligenceProfileIndicators for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityThreatIntelligenceProfileIndicator](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceProfileIndicator?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -208,6 +211,7 @@ Read-only.
   \[LastSeenDateTime \<DateTime?\>\]: Designate when an artifact was most recently used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
 
 ## RELATED LINKS
+[New-MgSecurityThreatIntelligenceProfileIndicator](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceProfileIndicator?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligenceprofileindicator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligenceprofileindicator)
 

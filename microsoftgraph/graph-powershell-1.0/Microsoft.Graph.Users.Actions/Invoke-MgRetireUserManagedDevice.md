@@ -11,6 +11,9 @@ ms.prod: intune
 ## SYNOPSIS
 Retire a device
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaRetireUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaRetireUserManagedDevice?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Retire (Default)
@@ -185,6 +188,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgBetaRetireUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaRetireUserManagedDevice?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgretireusermanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgretireusermanageddevice)
 

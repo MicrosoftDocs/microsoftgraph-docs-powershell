@@ -12,6 +12,9 @@ ms.prod: ediscovery
 ## SYNOPSIS
 Read the properties and relationships of an ediscoveryReviewTag object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityCaseEdiscoveryCaseTag](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseTag?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -346,6 +349,7 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgSecurityCaseEdiscoveryCaseTag](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseTag?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasetag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasetag)
 

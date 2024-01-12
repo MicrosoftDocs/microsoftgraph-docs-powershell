@@ -11,6 +11,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Remove an item from a \[bundle\]\[\].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveItemChild](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveItemChild?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -224,6 +227,7 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaGroupDriveItemChild](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveItemChild?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdriveitemchild](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdriveitemchild)
 

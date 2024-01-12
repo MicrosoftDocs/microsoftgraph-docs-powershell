@@ -11,6 +11,9 @@ ms.prod: sites-and-lists
 ## SYNOPSIS
 The collection of field definitions for this list.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgShareListColumn](/powershell/module/Microsoft.Graph.Files/Get-MgShareListColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -288,6 +291,7 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgShareListColumn](/powershell/module/Microsoft.Graph.Files/Get-MgShareListColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistcolumn)
 

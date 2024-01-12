@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The list of troubleshooting events for this user.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDeviceManagementTroubleshootingEvent](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgUserDeviceManagementTroubleshootingEvent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -335,6 +338,7 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
   \[WindowsManagedAppProtectionId \<String\>\]: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
+[Get-MgUserDeviceManagementTroubleshootingEvent](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgUserDeviceManagementTroubleshootingEvent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetauserdevicemanagementtroubleshootingevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetauserdevicemanagementtroubleshootingevent)
 

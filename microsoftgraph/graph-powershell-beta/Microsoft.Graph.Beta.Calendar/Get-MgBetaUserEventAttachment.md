@@ -13,6 +13,9 @@ ms.prod: outlook
 Read the properties, relationships, or raw contents of an attachment that is attached to a user event, message, Outlook task, or group post.
 An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserEventAttachment](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserEventAttachment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -281,6 +284,7 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[WorkspaceId \<String\>\]: The unique identifier of workspace
 
 ## RELATED LINKS
+[Get-MgUserEventAttachment](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserEventAttachment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventattachment)
 

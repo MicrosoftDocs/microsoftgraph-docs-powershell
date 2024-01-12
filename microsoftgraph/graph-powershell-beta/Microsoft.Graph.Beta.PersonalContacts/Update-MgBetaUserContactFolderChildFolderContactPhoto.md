@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property photo in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserContactFolderChildFolderContactPhoto](/powershell/module/Microsoft.Graph.PersonalContacts/Update-MgUserContactFolderChildFolderContactPhoto?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -279,6 +282,7 @@ INPUTOBJECT \<IPersonalContactsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgUserContactFolderChildFolderContactPhoto](/powershell/module/Microsoft.Graph.PersonalContacts/Update-MgUserContactFolderChildFolderContactPhoto?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/update-mgbetausercontactfolderchildfoldercontactphoto](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/update-mgbetausercontactfolderchildfoldercontactphoto)
 

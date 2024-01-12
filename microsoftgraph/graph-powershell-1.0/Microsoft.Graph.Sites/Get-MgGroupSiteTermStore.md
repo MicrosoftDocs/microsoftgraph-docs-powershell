@@ -11,6 +11,9 @@ ms.prod: sites-and-lists
 ## SYNOPSIS
 Read the properties and relationships of a store object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteTermStore](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStore?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -336,6 +339,7 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaGroupSiteTermStore](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStore?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitetermstore](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitetermstore)
 

@@ -11,6 +11,9 @@ ms.prod: users
 ## SYNOPSIS
 Read the user and organization userSettings object.To learn how to update the properties of the userSettings object, see update user settings.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserSetting](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -134,6 +137,7 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserSetting](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSetting?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersetting)
 

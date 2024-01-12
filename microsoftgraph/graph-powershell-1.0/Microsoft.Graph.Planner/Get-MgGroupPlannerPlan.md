@@ -13,6 +13,9 @@ Read-only.
 Nullable.
 Returns the plannerPlans owned by the group.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaGroupPlannerPlan?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -273,6 +276,7 @@ INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaGroupPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaGroupPlannerPlan?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mggroupplannerplan](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mggroupplannerplan)
 

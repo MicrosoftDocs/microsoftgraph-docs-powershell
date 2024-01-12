@@ -12,6 +12,9 @@ ms.prod: bookings
 ## SYNOPSIS
 Read the properties and relationships of a bookingCustomQuestion object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Bookings/Get-MgBookingBusinessCustomQuestion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -293,6 +296,7 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
+[Get-MgBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Bookings/Get-MgBookingBusinessCustomQuestion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusinesscustomquestion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusinesscustomquestion)
 

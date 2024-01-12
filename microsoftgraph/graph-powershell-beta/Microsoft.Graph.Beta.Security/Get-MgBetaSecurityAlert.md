@@ -12,6 +12,9 @@ ms.prod: security
 ## SYNOPSIS
 Retrieve the properties and relationships of an alert object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityAlert](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAlert?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -331,6 +334,7 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgSecurityAlert](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAlert?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityalert](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityalert)
 

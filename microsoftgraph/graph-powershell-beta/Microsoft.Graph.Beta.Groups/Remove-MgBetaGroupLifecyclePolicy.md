@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a groupLifecyclePolicy.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupLifecyclePolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -216,6 +219,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupLifecyclePolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagrouplifecyclepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagrouplifecyclepolicy)
 

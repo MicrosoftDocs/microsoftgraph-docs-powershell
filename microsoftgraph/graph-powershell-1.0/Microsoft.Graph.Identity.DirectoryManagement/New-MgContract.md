@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add new entity to contracts
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaContract](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaContract?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -233,6 +236,7 @@ The copy is made when the partnership with the customer is established.
 It is not automatically updated if the customer tenant's display name changes.
 
 ## RELATED LINKS
+[New-MgBetaContract](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaContract?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgcontract](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgcontract)
 

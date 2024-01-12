@@ -12,6 +12,9 @@ ms.prod: education
 Delete a feedback resource from a submission.
 This can only be done by a teacher.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEducationClassAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassAssignmentSubmissionOutcome?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -217,6 +220,7 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Remove-MgEducationClassAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassAssignmentSubmissionOutcome?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassassignmentsubmissionoutcome](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassassignmentsubmissionoutcome)
 

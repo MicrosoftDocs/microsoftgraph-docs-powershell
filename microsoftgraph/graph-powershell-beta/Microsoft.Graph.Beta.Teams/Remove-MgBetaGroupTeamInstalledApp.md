@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Uninstalls an app from the specified team.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupTeamInstalledApp](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamInstalledApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -205,6 +208,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Remove-MgGroupTeamInstalledApp](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamInstalledApp?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteaminstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteaminstalledapp)
 

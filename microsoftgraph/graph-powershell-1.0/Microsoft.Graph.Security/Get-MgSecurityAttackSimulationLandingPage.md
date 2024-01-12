@@ -11,6 +11,9 @@ ms.prod: security
 ## SYNOPSIS
 Represents an attack simulation training landing page.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityAttackSimulationLandingPage](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAttackSimulationLandingPage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -331,6 +334,7 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgBetaSecurityAttackSimulationLandingPage](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAttackSimulationLandingPage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationlandingpage](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationlandingpage)
 

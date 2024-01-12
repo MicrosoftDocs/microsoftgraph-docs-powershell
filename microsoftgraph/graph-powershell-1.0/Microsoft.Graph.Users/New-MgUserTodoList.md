@@ -11,6 +11,9 @@ ms.prod: outlook
 ## SYNOPSIS
 Create a new lists object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserTodoList](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserTodoList?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -524,6 +527,7 @@ Required.
   \[Title \<String\>\]: A brief description of the task.
 
 ## RELATED LINKS
+[New-MgBetaUserTodoList](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserTodoList?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusertodolist](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusertodolist)
 

@@ -13,6 +13,9 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationMeUserMailboxSetting](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeUserMailboxSetting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```
@@ -81,6 +84,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MgEducationMeUserMailboxSetting](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeUserMailboxSetting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeusermailboxsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeusermailboxsetting)
 

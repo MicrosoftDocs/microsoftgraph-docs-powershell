@@ -16,6 +16,9 @@ By default, this operation saves the draft in the Drafts folder.
 Send the draft message in a subsequent operation.
 Alternatively, send a new message in a single action, or create a draft to forward, to reply or to reply-all to an existing message.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserMessage](/powershell/module/Microsoft.Graph.Mail/New-MgUserMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -1108,6 +1111,7 @@ UNIQUEBODY \<IMicrosoftGraphItemBody\>: itemBody
   \[ContentType \<String\>\]: bodyType
 
 ## RELATED LINKS
+[New-MgUserMessage](/powershell/module/Microsoft.Graph.Mail/New-MgUserMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermessage)
 

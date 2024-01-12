@@ -11,6 +11,9 @@ ms.prod: users
 ## SYNOPSIS
 Remove a user's manager.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserManager](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserManager?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -167,6 +170,7 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaUserManager](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserManager?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusermanager](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusermanager)
 

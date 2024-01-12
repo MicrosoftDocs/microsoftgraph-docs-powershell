@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to versions for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveRootListItemVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -349,6 +352,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[New-MgGroupDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveRootListItemVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetagroupdriverootlistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetagroupdriverootlistitemversion)
 

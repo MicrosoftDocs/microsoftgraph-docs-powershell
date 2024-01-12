@@ -11,6 +11,9 @@ ms.prod: search
 ## SYNOPSIS
 Delete an identity resource to remove the corresponding member from an externalGroup.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaExternalConnectionGroupMember](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgBetaExternalConnectionGroupMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -188,6 +191,7 @@ INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
   \[IdentityId \<String\>\]: The unique identifier of identity
 
 ## RELATED LINKS
+[Remove-MgBetaExternalConnectionGroupMember](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgBetaExternalConnectionGroupMember?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgexternalconnectiongroupmember](https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgexternalconnectiongroupmember)
 

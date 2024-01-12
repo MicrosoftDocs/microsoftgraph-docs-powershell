@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property endUserNotifications for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityAttackSimulationEndUserNotification](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityAttackSimulationEndUserNotification?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -229,6 +232,7 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Remove-MgSecurityAttackSimulationEndUserNotification](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityAttackSimulationEndUserNotification?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityattacksimulationendusernotification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityattacksimulationendusernotification)
 

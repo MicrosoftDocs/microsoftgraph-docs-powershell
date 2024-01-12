@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add a new conversation member to a team.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupTeamMember](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamMember?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -285,6 +288,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[New-MgGroupTeamMember](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteammember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteammember)
 

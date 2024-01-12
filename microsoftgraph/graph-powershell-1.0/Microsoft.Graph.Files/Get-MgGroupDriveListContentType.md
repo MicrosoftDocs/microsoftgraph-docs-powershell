@@ -11,6 +11,9 @@ ms.prod: sites-and-lists
 ## SYNOPSIS
 The collection of content types present in this list.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveListContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -310,6 +313,7 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaGroupDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveListContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivelistcontenttype)
 

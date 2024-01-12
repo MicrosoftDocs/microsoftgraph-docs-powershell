@@ -11,6 +11,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Unfollow a driveItem.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgUnfollowUserDriveRoot](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgUnfollowUserDriveRoot?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Unfollow (Default)
@@ -199,6 +202,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgUnfollowUserDriveRoot](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgUnfollowUserDriveRoot?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaunfollowuserdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaunfollowuserdriveroot)
 

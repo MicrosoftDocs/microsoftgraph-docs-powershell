@@ -11,6 +11,9 @@ ms.prod: identity-and-sign-in
 ## SYNOPSIS
 Users that are flagged as at-risk by Microsoft Entra ID Protection.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRiskyUser](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskyUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -344,6 +347,7 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Get-MgRiskyUser](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskyUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskyuser)
 
