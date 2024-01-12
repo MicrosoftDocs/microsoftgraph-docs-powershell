@@ -31,18 +31,6 @@ New-MgBetaIdentityGovernanceRoleManagementAlert -BodyParameter <IMicrosoftGraphU
 ## DESCRIPTION
 Create new navigation property to alerts for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -417,5 +405,6 @@ DirectoryRole is the only currently supported scope type for Microsoft Entra rol
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancerolemanagementalert](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancerolemanagementalert)
+
 
 

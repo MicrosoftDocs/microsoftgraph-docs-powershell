@@ -45,22 +45,6 @@ Retrieve the metadata for a \[bundle\]\[\] based on the unique ID of the bundle.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bundle-list-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -320,5 +304,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgUserDriveBundle](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveBundle?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrivebundle](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrivebundle)
+
 
 

@@ -52,18 +52,6 @@ New-MgBetaPlaceAsRoomListRoom -InputObject <ICalendarIdentity> -BodyParameter <I
 ## DESCRIPTION
 Create new navigation property to rooms for places
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -525,5 +513,6 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
 [New-MgPlaceAsRoomListRoom](/powershell/module/Microsoft.Graph.Calendar/New-MgPlaceAsRoomListRoom?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplaceasroomlistroom](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplaceasroomlistroom)
+
 
 

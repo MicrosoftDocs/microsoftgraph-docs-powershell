@@ -42,18 +42,6 @@ Get-MgSiteContentTypeBase -InputObject <ISitesIdentity> [-ExpandProperty <String
 ## DESCRIPTION
 Parent contentType from which this content type is derived.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -206,5 +194,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgBetaSiteContentTypeBase](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteContentTypeBase?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitecontenttypebase](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitecontenttypebase)
+
 
 

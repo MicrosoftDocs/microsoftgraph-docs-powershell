@@ -30,18 +30,6 @@ New-MgUserManagedDeviceLogCollectionResponseDownloadUrl -InputObject <IUsersActi
 ## DESCRIPTION
 Invoke action createDownloadUrl
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceLogCollectionResponseId
@@ -186,5 +174,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 [New-MgBetaUserManagedDeviceLogCollectionResponseDownloadUrl](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserManagedDeviceLogCollectionResponseDownloadUrl?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mgusermanageddevicelogcollectionresponsedownloadurl](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mgusermanageddevicelogcollectionresponsedownloadurl)
+
 
 

@@ -31,18 +31,6 @@ New-MgBetaDeviceManagementWindowsQualityUpdateProfile
 ## DESCRIPTION
 Create new navigation property to windowsQualityUpdateProfiles for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -314,5 +302,6 @@ EXPEDITEDUPDATESETTINGS \<IMicrosoftGraphExpeditedWindowsQualityUpdateSettings\>
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementwindowsqualityupdateprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementwindowsqualityupdateprofile)
+
 
 

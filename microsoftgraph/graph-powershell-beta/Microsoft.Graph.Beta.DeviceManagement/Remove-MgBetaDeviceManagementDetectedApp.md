@@ -30,22 +30,6 @@ Remove-MgBetaDeviceManagementDetectedApp -InputObject <IDeviceManagementIdentity
 ## DESCRIPTION
 Delete navigation property detectedApps for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DetectedAppId
@@ -300,5 +284,6 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 [Remove-MgDeviceManagementDetectedApp](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementDetectedApp?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementdetectedapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementdetectedapp)
+
 
 

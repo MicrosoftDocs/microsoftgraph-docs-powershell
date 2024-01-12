@@ -50,22 +50,6 @@ Update-MgBetaUserManagedDeviceSecurityBaselineStateSettingState
 ## DESCRIPTION
 Update the navigation property settingStates in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -462,5 +446,6 @@ SOURCEPOLICIES \<IMicrosoftGraphSettingSource\[\]\>: The policies that contribut
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetausermanageddevicesecuritybaselinestatesettingstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetausermanageddevicesecuritybaselinestatesettingstate)
+
 
 

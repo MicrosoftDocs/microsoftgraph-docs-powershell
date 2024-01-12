@@ -30,22 +30,6 @@ Get-MgGroupSiteListItemField -InputObject <ISitesIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 The values of the columns set on this list item.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -213,5 +197,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgBetaGroupSiteListItemField](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListItemField?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistitemfield](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistitemfield)
+
 
 

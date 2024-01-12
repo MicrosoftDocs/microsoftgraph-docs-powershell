@@ -30,18 +30,6 @@ Get-MgBetaTeamChannelSharedWithTeamAllowedMemberCount -InputObject <ITeamsIdenti
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -195,5 +183,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Get-MgTeamChannelSharedWithTeamAllowedMemberCount](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamChannelSharedWithTeamAllowedMemberCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelsharedwithteamallowedmembercount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelsharedwithteamallowedmembercount)
+
 
 

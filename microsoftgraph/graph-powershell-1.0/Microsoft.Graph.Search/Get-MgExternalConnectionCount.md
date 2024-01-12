@@ -22,18 +22,6 @@ Get-MgExternalConnectionCount [-Filter <String>] [-Search <String>] [<CommonPara
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -80,5 +68,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgBetaExternalConnectionCount](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectioncount)
+
 
 

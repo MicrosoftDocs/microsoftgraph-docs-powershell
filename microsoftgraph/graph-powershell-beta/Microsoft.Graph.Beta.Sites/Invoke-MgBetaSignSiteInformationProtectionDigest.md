@@ -41,18 +41,6 @@ Invoke-MgBetaSignSiteInformationProtectionDigest -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Invoke action signDigest
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -256,5 +244,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetasignsiteinformationprotectiondigest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetasignsiteinformationprotectiondigest)
+
 
 

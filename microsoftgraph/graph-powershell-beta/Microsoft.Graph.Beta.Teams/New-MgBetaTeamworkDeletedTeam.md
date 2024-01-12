@@ -30,22 +30,6 @@ New-MgBetaTeamworkDeletedTeam -BodyParameter <IMicrosoftGraphDeletedTeam> [-What
 ## DESCRIPTION
 Create new navigation property to deletedTeams for teamwork
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -14883,5 +14867,6 @@ Read-only.
 [New-MgTeamworkDeletedTeam](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedTeam?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkdeletedteam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkdeletedteam)
+
 
 

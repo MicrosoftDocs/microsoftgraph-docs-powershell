@@ -42,22 +42,6 @@ Set-MgBetaGroupPhotoContent -InputObject <IGroupsIdentity> [-Data <Stream>] -InF
 ## DESCRIPTION
 Update media content for the navigation property photo in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Data
@@ -247,5 +231,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Set-MgGroupPhotoContent](/powershell/module/Microsoft.Graph.Groups/Set-MgGroupPhotoContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/set-mgbetagroupphotocontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/set-mgbetagroupphotocontent)
+
 
 

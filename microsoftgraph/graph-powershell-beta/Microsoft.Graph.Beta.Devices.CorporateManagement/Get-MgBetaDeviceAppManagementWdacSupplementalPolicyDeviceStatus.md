@@ -38,18 +38,6 @@ Get-MgBetaDeviceAppManagementWdacSupplementalPolicyDeviceStatus
 ## DESCRIPTION
 The list of device deployment states for this WindowsDefenderApplicationControl supplemental policy.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -337,5 +325,6 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementwdacsupplementalpolicydevicestatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementwdacsupplementalpolicydevicestatus)
+
 
 

@@ -27,22 +27,6 @@ Lock-MgBetaDeviceManagementComanagedDeviceRemote -InputObject <IDeviceManagement
 ## DESCRIPTION
 Remote lock
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -194,5 +178,6 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/lock-mgbetadevicemanagementcomanageddeviceremote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/lock-mgbetadevicemanagementcomanageddeviceremote)
+
 
 

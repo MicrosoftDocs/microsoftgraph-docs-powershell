@@ -30,22 +30,6 @@ Update-MgBetaPlanner -BodyParameter <IMicrosoftGraphPlanner> [-WhatIf] [-Confirm
 ## DESCRIPTION
 Update planner
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1315,5 +1299,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 [Update-MgPlanner](/powershell/module/Microsoft.Graph.Planner/Update-MgPlanner?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplanner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplanner)
+
 
 

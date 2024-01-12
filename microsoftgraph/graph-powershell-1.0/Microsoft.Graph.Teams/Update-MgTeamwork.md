@@ -30,22 +30,6 @@ Update-MgTeamwork -BodyParameter <IMicrosoftGraphTeamwork> [-WhatIf] [-Confirm] 
 ## DESCRIPTION
 Update teamwork
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -9392,5 +9376,6 @@ Start with 1.
 [Update-MgBetaTeamwork](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamwork?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamwork](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamwork)
+
 
 

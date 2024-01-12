@@ -22,18 +22,6 @@ Remove-MgSecurityThreatIntelligence [-IfMatch <String>] [-PassThru] [-WhatIf] [-
 ## DESCRIPTION
 Delete navigation property threatIntelligence for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -111,5 +99,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Remove-MgBetaSecurityThreatIntelligence](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityThreatIntelligence?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritythreatintelligence](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritythreatintelligence)
+
 
 

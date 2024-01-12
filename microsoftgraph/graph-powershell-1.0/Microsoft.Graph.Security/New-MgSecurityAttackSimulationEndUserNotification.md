@@ -34,18 +34,6 @@ New-MgSecurityAttackSimulationEndUserNotification -BodyParameter <IMicrosoftGrap
 ## DESCRIPTION
 Create new navigation property to endUserNotifications for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -383,5 +371,6 @@ For example, if a user changes their display name, the API might show the new va
 [New-MgBetaSecurityAttackSimulationEndUserNotification](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAttackSimulationEndUserNotification?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulationendusernotification](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulationendusernotification)
+
 
 

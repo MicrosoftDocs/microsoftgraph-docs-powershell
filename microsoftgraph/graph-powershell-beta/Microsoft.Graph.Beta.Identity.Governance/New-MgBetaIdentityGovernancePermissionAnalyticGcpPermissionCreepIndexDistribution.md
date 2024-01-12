@@ -30,18 +30,6 @@ New-MgBetaIdentityGovernancePermissionAnalyticGcpPermissionCreepIndexDistributio
 ## DESCRIPTION
 Create new navigation property to permissionsCreepIndexDistributions for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -281,5 +269,6 @@ MEDIUMRISKPROFILE \<IMicrosoftGraphRiskProfile\>: riskProfile
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancepermissionanalyticgcppermissioncreepindexdistribution](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancepermissionanalyticgcppermissioncreepindexdistribution)
+
 
 

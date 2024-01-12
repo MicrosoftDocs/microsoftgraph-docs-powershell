@@ -29,18 +29,6 @@ Get-MgSitePermissionCount -InputObject <ISitesIdentity> [-Filter <String>] [-Sea
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -163,5 +151,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgBetaSitePermissionCount](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSitePermissionCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitepermissioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitepermissioncount)
+
 
 

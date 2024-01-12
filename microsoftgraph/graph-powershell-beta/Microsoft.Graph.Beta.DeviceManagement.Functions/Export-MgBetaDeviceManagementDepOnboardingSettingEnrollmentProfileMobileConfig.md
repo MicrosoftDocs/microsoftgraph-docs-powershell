@@ -27,22 +27,6 @@ Export-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfileMobileConfig
 ## DESCRIPTION
 Exports the mobile configuration
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DepOnboardingSettingId
@@ -141,5 +125,6 @@ INPUTOBJECT \<IDeviceManagementFunctionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/export-mgbetadevicemanagementdeponboardingsettingenrollmentprofilemobileconfig](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/export-mgbetadevicemanagementdeponboardingsettingenrollmentprofilemobileconfig)
+
 
 

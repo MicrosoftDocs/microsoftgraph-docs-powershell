@@ -29,22 +29,6 @@ Get-MgBetaReportYammerGroupActivityCount -InputObject <IReportsIdentity> -OutFil
 ## DESCRIPTION
 Invoke function getYammerGroupsActivityCounts
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -171,5 +155,6 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
 [Get-MgReportYammerGroupActivityCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportYammerGroupActivityCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportyammergroupactivitycount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportyammergroupactivitycount)
+
 
 

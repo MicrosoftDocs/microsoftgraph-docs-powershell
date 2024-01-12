@@ -47,22 +47,6 @@ Update-MgBetaEducationMeAssignmentResource -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Update the navigation property resources in education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -337,5 +321,6 @@ When the unique identifier is unavailable, the displayName property is provided 
 [Update-MgEducationMeAssignmentResource](/powershell/module/Microsoft.Graph.Education/Update-MgEducationMeAssignmentResource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationmeassignmentresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationmeassignmentresource)
+
 
 

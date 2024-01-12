@@ -62,22 +62,6 @@ Update-MgBetaFinancialCompanySaleOrder -InputObject <IFinancialsIdentity>
 ## DESCRIPTION
 Update the navigation property salesOrders in financials
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1135,5 +1119,6 @@ SHIPPINGPOSTALADDRESS \<IMicrosoftGraphPostalAddressType\>: postalAddressType
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysaleorder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysaleorder)
+
 
 

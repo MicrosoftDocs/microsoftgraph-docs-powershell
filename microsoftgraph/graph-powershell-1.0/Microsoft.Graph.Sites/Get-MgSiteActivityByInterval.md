@@ -43,22 +43,6 @@ Get-MgSiteActivityByInterval -InputObject <ISitesIdentity> [-Count] [-Filter <St
 ## DESCRIPTION
 Invoke function getActivitiesByInterval
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -301,5 +285,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgBetaSiteActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteActivityByInterval?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteactivitybyinterval](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteactivitybyinterval)
+
 
 

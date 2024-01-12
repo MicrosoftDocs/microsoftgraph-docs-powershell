@@ -44,18 +44,6 @@ Update-MgBetaSecurityAttackSimulationLandingPageDetail -InputObject <ISecurityId
 ## DESCRIPTION
 Update the navigation property details in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -335,5 +323,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Update-MgSecurityAttackSimulationLandingPageDetail](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAttackSimulationLandingPageDetail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationlandingpagedetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationlandingpagedetail)
+
 
 

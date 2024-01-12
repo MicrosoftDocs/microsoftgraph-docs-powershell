@@ -29,18 +29,6 @@ Get-MgDriveListColumnCount -InputObject <IFilesIdentity> [-Filter <String>] [-Se
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -149,5 +137,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgBetaDriveListColumnCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListColumnCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistcolumncount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistcolumncount)
+
 
 

@@ -42,18 +42,6 @@ Update-MgSecurityThreatIntelligence -BodyParameter <IMicrosoftGraphSecurityThrea
 ## DESCRIPTION
 Update the navigation property threatIntelligence in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -4235,5 +4223,6 @@ Read-only.
 [Update-MgBetaSecurityThreatIntelligence](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligence?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligence](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligence)
+
 
 

@@ -54,22 +54,6 @@ Update-MgBetaSecurityTriggerRetentionEvent -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property retentionEvents in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -600,5 +584,6 @@ When the unique identifier is unavailable, the displayName property is provided 
 [Update-MgSecurityTriggerRetentionEvent](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityTriggerRetentionEvent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritytriggerretentionevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritytriggerretentionevent)
+
 
 

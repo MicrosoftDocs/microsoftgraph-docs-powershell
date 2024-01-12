@@ -32,18 +32,6 @@ New-MgBetaSecurityThreatIntelligenceHostPair -BodyParameter <IMicrosoftGraphSecu
 ## DESCRIPTION
 Create new navigation property to hostPairs for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1059,5 +1047,6 @@ Read-only.
 [New-MgSecurityThreatIntelligenceHostPair](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceHostPair?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencehostpair](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencehostpair)
+
 
 

@@ -50,22 +50,6 @@ Update-MgBetaSiteOnenoteNotebook -InputObject <INotesIdentity> -BodyParameter <I
 ## DESCRIPTION
 Update the navigation property notebooks in sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -804,5 +788,6 @@ Read-only.
 [Update-MgSiteOnenoteNotebook](/powershell/module/Microsoft.Graph.Notes/Update-MgSiteOnenoteNotebook?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetasiteonenotenotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetasiteonenotenotebook)
+
 
 

@@ -40,22 +40,6 @@ Get-MgBetaReportTeamDeviceUsageUserDetail -InputObject <IReportsIdentity> -OutFi
 ## DESCRIPTION
 Invoke function getTeamsDeviceUsageUserDetail
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Date
@@ -197,5 +181,6 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
 [Get-MgReportTeamDeviceUsageUserDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportTeamDeviceUsageUserDetail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportteamdeviceusageuserdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportteamdeviceusageuserdetail)
+
 
 

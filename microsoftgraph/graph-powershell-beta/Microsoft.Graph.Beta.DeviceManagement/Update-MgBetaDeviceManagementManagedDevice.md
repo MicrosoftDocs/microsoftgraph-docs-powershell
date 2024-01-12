@@ -97,22 +97,6 @@ Update-MgBetaDeviceManagementManagedDevice -InputObject <IDeviceManagementIdenti
 ## DESCRIPTION
 Update the navigation property managedDevices in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -23492,5 +23476,6 @@ Defaults to setting on client device.
 [Update-MgDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementManagedDevice?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmanageddevice)
+
 
 

@@ -29,22 +29,6 @@ New-MgBetaPolicyMobileAppManagementPolicy -BodyParameter <IMicrosoftGraphMobilit
 ## DESCRIPTION
 Create new navigation property to mobileAppManagementPolicies for policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -15017,5 +15001,6 @@ If isEnabled or the NewUnifiedGroupWritebackDefault group setting is true but th
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicymobileappmanagementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicymobileappmanagementpolicy)
+
 
 

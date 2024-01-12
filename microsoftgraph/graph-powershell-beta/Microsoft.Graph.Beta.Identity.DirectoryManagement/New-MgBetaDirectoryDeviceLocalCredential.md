@@ -31,18 +31,6 @@ New-MgBetaDirectoryDeviceLocalCredential -BodyParameter <IMicrosoftGraphDeviceLo
 ## DESCRIPTION
 Create new navigation property to deviceLocalCredentials for directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -226,5 +214,6 @@ Read-only.
 [New-MgDirectoryDeviceLocalCredential](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryDeviceLocalCredential?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorydevicelocalcredential](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorydevicelocalcredential)
+
 
 

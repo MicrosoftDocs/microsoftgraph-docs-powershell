@@ -32,22 +32,6 @@ Get-MgBetaGroupSiteApplicableContentTypeForList -InputObject <IGroupsIdentity> [
 ## DESCRIPTION
 Invoke function getApplicableContentTypesForList
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -278,5 +262,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Get-MgGroupSiteApplicableContentTypeForList](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupSiteApplicableContentTypeForList?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupsiteapplicablecontenttypeforlist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupsiteapplicablecontenttypeforlist)
+
 
 

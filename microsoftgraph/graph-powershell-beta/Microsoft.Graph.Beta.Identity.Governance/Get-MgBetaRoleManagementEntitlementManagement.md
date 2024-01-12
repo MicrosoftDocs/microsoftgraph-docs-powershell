@@ -23,18 +23,6 @@ Get-MgBetaRoleManagementEntitlementManagement [-ExpandProperty <String[]>] [-Pro
 ## DESCRIPTION
 The RbacApplication for Entitlement Management
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -81,5 +69,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgRoleManagementEntitlementManagement](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagement?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententitlementmanagement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententitlementmanagement)
+
 
 
