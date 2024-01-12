@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportmonthlyprintusagebyuser
 schema: 2.0.0
-ms.prod: cloud-printing
 ---
 
 # Get-MgBetaReportMonthlyPrintUsageByUser
 
 ## SYNOPSIS
 Retrieve a list of monthly print usage summaries, grouped by user.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgReportMonthlyPrintUsageByUser](/powershell/module/Microsoft.Graph.Reports/Get-MgReportMonthlyPrintUsageByUser?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,8 +34,21 @@ Get-MgBetaReportMonthlyPrintUsageByUser -InputObject <IReportsIdentity> [-Expand
 ## DESCRIPTION
 Retrieve a list of monthly print usage summaries, grouped by user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-list-monthlyprintusagebyuser-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -285,9 +294,6 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
   \[UserSignUpMetricId \<String\>\]: The unique identifier of userSignUpMetric
 
 ## RELATED LINKS
-[Get-MgReportMonthlyPrintUsageByUser](/powershell/module/Microsoft.Graph.Reports/Get-MgReportMonthlyPrintUsageByUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportmonthlyprintusagebyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportmonthlyprintusagebyuser)
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchanneltab
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to tabs for teams
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgTeamChannelTab](/powershell/module/Microsoft.Graph.Teams/New-MgTeamChannelTab?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,6 +44,16 @@ New-MgBetaTeamChannelTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosof
 Create new navigation property to tabs for teams
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -475,8 +482,6 @@ This property is read-only.
   \[ExternalId \<String\>\]: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
 ## RELATED LINKS
-[New-MgTeamChannelTab](/powershell/module/Microsoft.Graph.Teams/New-MgTeamChannelTab?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchanneltab)
-
 

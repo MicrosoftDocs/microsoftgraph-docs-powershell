@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserlicensedetail
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Get-MgUserLicenseDetail
@@ -11,9 +10,6 @@ ms.prod: users
 ## SYNOPSIS
 A collection of this user's license details.
 Read-only.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserLicenseDetail](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserLicenseDetail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -40,23 +36,18 @@ Get-MgUserLicenseDetail -InputObject <IUsersIdentity> [-ExpandProperty <String[]
 A collection of this user's license details.
 Read-only.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-list-licensedetails-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Get a user's license details
 
-```powershell
+### EXAMPLE 1
+```
 Get-MgUserLicenseDetail -UserId '0ec3a5e8-b4b6-4678-90ff-ce786055065f' | Format-List
+```
 
 Id                   : BF5i-6pS2kKxDRTxGV1mX6sU3Mts2TBMufRq2nzcHUY
 ServicePlans         : {WINDOWSUPDATEFORBUSINESS_DEPLOYMENTSERVICE, UNIVERSAL_PRINT_01, M365_LIGHTHOUSE_CUSTOMER_PLAN1, POWER_VIRTUAL_AGENTS_O365_P3...}
 SkuId                : ae5a2394-6002-4128-80c0-d27fe0d823a3
 SkuPartNumber        : SPB
 AdditionalProperties : {}
-```
-
-This example retrieves the license details of the specified user.
 
 ## PARAMETERS
 
@@ -288,8 +279,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserLicenseDetail](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserLicenseDetail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserlicensedetail](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserlicensedetail)
-
 

@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationtokenissuancepolicy
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Get-MgBetaApplicationTokenIssuancePolicy
 
 ## SYNOPSIS
 List the tokenIssuancePolicy objects that are assigned to an application.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgApplicationTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationTokenIssuancePolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -26,17 +22,13 @@ Get-MgBetaApplicationTokenIssuancePolicy -ApplicationId <String> [-ExpandPropert
 List the tokenIssuancePolicy objects that are assigned to an application.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Applications
+```
 
 Get-MgBetaApplicationTokenIssuancePolicy -ApplicationId $applicationId
-
-```
-This example shows how to use the Get-MgBetaApplicationTokenIssuancePolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -217,8 +209,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgApplicationTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationTokenIssuancePolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationtokenissuancepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationtokenissuancepolicy)
-
 

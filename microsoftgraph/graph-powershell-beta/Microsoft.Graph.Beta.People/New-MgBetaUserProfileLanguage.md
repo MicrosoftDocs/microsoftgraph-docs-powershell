@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilelanguage
 schema: 2.0.0
-ms.prod: people
 ---
 
 # New-MgBetaUserProfileLanguage
@@ -48,12 +47,10 @@ New-MgBetaUserProfileLanguage -InputObject <IPeopleIdentity>
 ## DESCRIPTION
 Use this API to create a new languageProficiency object in a user's profile.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/profile-post-languages-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the New-MgBetaUserProfileLanguage Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.People
 $params = @{
 	DisplayName = "Norwegian Bokmål"
@@ -65,8 +62,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfileLanguage -UserId $userId -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaUserProfileLanguage Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -519,5 +514,4 @@ SOURCE \<IMicrosoftGraphPersonDataSources\>: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilelanguage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilelanguage)
-
 

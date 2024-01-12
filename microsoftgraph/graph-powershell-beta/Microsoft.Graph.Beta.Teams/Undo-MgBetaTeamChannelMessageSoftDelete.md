@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/undo-mgbetateamchannelmessagesoftdelete
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Undo soft deletion of a single chatMessage or a chat message reply in a channel or a chat.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Undo-MgTeamChannelMessageSoftDelete](/powershell/module/Microsoft.Graph.Teams/Undo-MgTeamChannelMessageSoftDelete?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,28 +28,20 @@ Undo-MgBetaTeamChannelMessageSoftDelete -InputObject <ITeamsIdentity> [-PassThru
 Undo soft deletion of a single chatMessage or a chat message reply in a channel or a chat.
 
 ## EXAMPLES
-### Example 1: Undo soft deletion of a message in a channel
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 Undo-MgBetaTeamChannelMessageSoftDelete -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId
 
+### EXAMPLE 2
 ```
-This example will undo soft deletion of a message in a channel
-
-### Example 2: Undo soft deletion of a message of a reply in a channel
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 Undo-MgBetaTeamChannelMessageSoftDelete -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId
-
-```
-This example will undo soft deletion of a message of a reply in a channel
-
 
 ## PARAMETERS
 
@@ -220,8 +209,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Undo-MgTeamChannelMessageSoftDelete](/powershell/module/Microsoft.Graph.Teams/Undo-MgTeamChannelMessageSoftDelete?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/undo-mgbetateamchannelmessagesoftdelete](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/undo-mgbetateamchannelmessagesoftdelete)
-
 

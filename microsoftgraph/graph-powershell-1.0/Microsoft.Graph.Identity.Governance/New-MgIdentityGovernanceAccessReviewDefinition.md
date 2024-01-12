@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewdefinition
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # New-MgIdentityGovernanceAccessReviewDefinition
 
 ## SYNOPSIS
 Create a new accessReviewScheduleDefinition object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceAccessReviewDefinition?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -39,14 +35,12 @@ New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter <IMicrosoftGraphAc
 ## DESCRIPTION
 Create a new accessReviewScheduleDefinition object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewset-post-definitions-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Create an access review on a group
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.Governance
+```
 
 $params = @{
 	displayName = "Test create"
@@ -85,20 +79,17 @@ $params = @{
 }
 
 New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgIdentityGovernanceAccessReviewDefinition Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Create an access review on all teams with inactive guest users
-
-```powershell
 Import-Module Microsoft.Graph.Identity.Governance
+```
 
 $params = @{
 	displayName = "Review inactive guests on teams"
 	descriptionForAdmins = "Control guest user access to our teams."
-	descriptionForReviewers = "Information security is everyone's responsibility. Review our access policy for more."
+	descriptionForReviewers = "Information security is everyone's responsibility.
+Review our access policy for more."
 	instanceEnumerationScope = @{
 		"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
 		query = "/groups?$filter=(groupTypes/any(c:c+eq+'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')"
@@ -146,15 +137,11 @@ $params = @{
 }
 
 New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter $params
+
+### EXAMPLE 3
 ```
-This example shows how to use the New-MgIdentityGovernanceAccessReviewDefinition Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Create an access review of all users to an application
-
-```powershell
 Import-Module Microsoft.Graph.Identity.Governance
+```
 
 $params = @{
 	displayName = "Review employee access to LinkedIn"
@@ -216,15 +203,11 @@ $params = @{
 }
 
 New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter $params
+
+### EXAMPLE 4
 ```
-This example shows how to use the New-MgIdentityGovernanceAccessReviewDefinition Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Create an access review on a group with multiple stages
-
-```powershell
 Import-Module Microsoft.Graph.Identity.Governance
+```
 
 $params = @{
 	displayName = "Group Multi-stage Access Review"
@@ -290,11 +273,6 @@ $params = @{
 }
 
 New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter $params
-```
-This example shows how to use the New-MgIdentityGovernanceAccessReviewDefinition Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -1213,8 +1191,6 @@ The stageId is used by the dependsOn property to indicate the order of the stage
 Required.
 
 ## RELATED LINKS
-[New-MgBetaIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceAccessReviewDefinition?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewdefinition)
-
 

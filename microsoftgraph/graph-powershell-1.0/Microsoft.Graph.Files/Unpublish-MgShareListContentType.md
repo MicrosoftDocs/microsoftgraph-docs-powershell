@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/unpublish-mgsharelistcontenttype
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Unpublish-MgShareListContentType
 
 ## SYNOPSIS
 Unpublish a \[contentType\]\[\] from a content type hub site.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Unpublish-MgBetaShareListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Unpublish-MgBetaShareListContentType?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,8 +27,21 @@ Unpublish-MgShareListContentType -InputObject <IFilesIdentity> [-PassThru] [-Wha
 ## DESCRIPTION
 Unpublish a \[contentType\]\[\] from a content type hub site.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-unpublish-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -170,9 +179,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Unpublish-MgBetaShareListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Unpublish-MgBetaShareListContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/unpublish-mgsharelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.files/unpublish-mgsharelistcontenttype)
-
-
 

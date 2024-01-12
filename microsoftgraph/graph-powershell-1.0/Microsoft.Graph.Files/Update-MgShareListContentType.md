@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharelistcontenttype
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property contentTypes in shares
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaShareListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListContentType?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -55,6 +52,22 @@ Update-MgShareListContentType -InputObject <IFilesIdentity> -BodyParameter <IMic
 
 ## DESCRIPTION
 Update the navigation property contentTypes in shares
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -1762,9 +1775,6 @@ ORDER \<IMicrosoftGraphContentTypeOrder\>: contentTypeOrder
   \[Position \<Int32?\>\]: Specifies the position in which the content type appears in the selection UI.
 
 ## RELATED LINKS
-[Update-MgBetaShareListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharelistcontenttype)
-
-
 

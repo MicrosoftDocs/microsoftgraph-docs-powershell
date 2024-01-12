@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaselfprivilegedroledeactivate
@@ -27,13 +27,12 @@ Invoke-MgBetaSelfPrivilegedRoleDeactivate -InputObject <IIdentityGovernanceIdent
 Invoke action selfDeactivate
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaSelfPrivilegedRoleDeactivate Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Invoke-MgBetaSelfPrivilegedRoleDeactivate -PrivilegedRoleId $privilegedRoleId
 ```
-This example shows how to use the Invoke-MgBetaSelfPrivilegedRoleDeactivate Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -218,5 +217,4 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaselfprivilegedroledeactivate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaselfprivilegedroledeactivate)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgcontract
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update entity in contracts
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaContract](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaContract?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -45,17 +42,13 @@ Update-MgContract -InputObject <IIdentityDirectoryManagementIdentity> -BodyParam
 Update entity in contracts
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
+```
 
 Get-MgContract -ContractId $contractId
-```
-This example shows how to use the Update-MgContract Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -312,8 +305,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaContract](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaContract?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgcontract](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgcontract)
-
 

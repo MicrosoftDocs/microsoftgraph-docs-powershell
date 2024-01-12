@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorysetting
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Update-MgBetaDirectorySetting
@@ -42,12 +41,10 @@ Update-MgBetaDirectorySetting -InputObject <IIdentityDirectoryManagementIdentity
 ## DESCRIPTION
 Update the properties of a specific directory setting object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directorysetting-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaDirectorySetting Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{
 	Values = @(
@@ -59,8 +56,6 @@ $params = @{
 }
 Update-MgBetaDirectorySetting -DirectorySettingId $directorySettingId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaDirectorySetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -301,5 +296,4 @@ VALUES \<IMicrosoftGraphSettingValue\[\]\>: Collection of name-value pairs corre
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorysetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorysetting)
-
 

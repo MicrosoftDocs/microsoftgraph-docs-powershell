@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistcontenttype
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Get-MgBetaSiteListContentType
 
 ## SYNOPSIS
 The collection of content types present in this list.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSiteListContentType](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListContentType?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,17 +34,13 @@ Get-MgBetaSiteListContentType -InputObject <ISitesIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 The collection of content types present in this list.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/list-list-contenttypes-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaSiteListContentType Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Sites
 Get-MgBetaSiteListContentType -SiteId $siteId -ListId $listId
 ```
-This example shows how to use the Get-MgBetaSiteListContentType Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -330,8 +322,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgSiteListContentType](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListContentType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistcontenttype)
-
 

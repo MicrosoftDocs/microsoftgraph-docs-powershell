@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusiness
 schema: 2.0.0
-ms.prod: bookings
 ---
 
 # Update-MgBetaBookingBusiness
 
 ## SYNOPSIS
 Update the properties of a bookingBusiness object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgBookingBusiness](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusiness?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -57,12 +53,10 @@ Update-MgBetaBookingBusiness -InputObject <IBookingsIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Update the properties of a bookingBusiness object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingbusiness-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaBookingBusiness Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Bookings
 $params = @{
 	Email = "admin@fabrikam.com"
@@ -76,8 +70,6 @@ $params = @{
 }
 Update-MgBetaBookingBusiness -BookingBusinessId $bookingBusinessId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaBookingBusiness Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -1027,8 +1019,6 @@ For example, 17:00:00.0000000.
 For example, 08:00:00.0000000.
 
 ## RELATED LINKS
-[Update-MgBookingBusiness](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusiness?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusiness](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusiness)
-
 

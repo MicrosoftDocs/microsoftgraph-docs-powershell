@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalownerbyref
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # New-MgBetaServicePrincipalOwnerByRef
@@ -11,9 +10,6 @@ ms.prod: applications
 ## SYNOPSIS
 Add an owner for the servicePrincipal.
 Service principal owners can be users, the service principal itself, or other service principals.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgServicePrincipalOwnerByRef](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalOwnerByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -46,17 +42,15 @@ Add an owner for the servicePrincipal.
 Service principal owners can be users, the service principal itself, or other service principals.
 
 ## EXAMPLES
-### Example 1: Add an owner for a service principal
 
-```powershell
+### EXAMPLE 1
+```
 $newOwner = @{
   "@odata.id"= "https://graph.microsoft.com/v1.0/directoryObjects/8a7c50d3-fcbd-4727-a889-8ab232dfea01"
   }
-
-New-MgBetaServicePrincipalOwnerByRef -ServicePrincipalId '1c48f923-4fbb-4d37-b772-4d577eefec9e' -BodyParameter $newOwner
 ```
 
-In this example, the first command defines the value for the `$newOwner` variable in a hashtable. The second command adds the new owner to the specified service principal.
+New-MgBetaServicePrincipalOwnerByRef -ServicePrincipalId '1c48f923-4fbb-4d37-b772-4d577eefec9e' -BodyParameter $newOwner
 
 ## PARAMETERS
 
@@ -239,8 +233,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgServicePrincipalOwnerByRef](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalOwnerByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalownerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalownerbyref)
-
 

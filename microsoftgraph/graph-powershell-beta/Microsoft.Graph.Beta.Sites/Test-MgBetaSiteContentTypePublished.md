@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/test-mgbetasitecontenttypepublished
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function isPublished
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Test-MgSiteContentTypePublished](/powershell/module/Microsoft.Graph.Sites/Test-MgSiteContentTypePublished?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,13 +26,12 @@ Test-MgBetaSiteContentTypePublished -InputObject <ISitesIdentity> [<CommonParame
 Invoke function isPublished
 
 ## EXAMPLES
-### Example 1: Using the Test-MgBetaSiteContentTypePublished Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Sites
 Test-MgBetaSiteContentTypePublished -SiteId $siteId -ContentTypeId $contentTypeId
 ```
-This example shows how to use the Test-MgBetaSiteContentTypePublished Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -151,8 +147,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Test-MgSiteContentTypePublished](/powershell/module/Microsoft.Graph.Sites/Test-MgSiteContentTypePublished?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/test-mgbetasitecontenttypepublished](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/test-mgbetasitecontenttypepublished)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/publish-mggroupsitelistcontenttype
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Publishes a \[contentType\]\[\] present in the content type hub site.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Publish-MgBetaGroupSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Groups/Publish-MgBetaGroupSiteListContentType?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Publish-MgGroupSiteListContentType -InputObject <IGroupsIdentity> [-PassThru] [-
 
 ## DESCRIPTION
 Publishes a \[contentType\]\[\] present in the content type hub site.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -207,9 +220,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
-[Publish-MgBetaGroupSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Groups/Publish-MgBetaGroupSiteListContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/publish-mggroupsitelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/publish-mggroupsitelistcontenttype)
-
-
 

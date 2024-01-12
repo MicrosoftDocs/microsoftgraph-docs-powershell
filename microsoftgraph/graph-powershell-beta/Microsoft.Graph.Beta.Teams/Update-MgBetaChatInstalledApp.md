@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetachatinstalledapp
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Upgrade an app installation within a chat.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgChatInstalledApp](/powershell/module/Microsoft.Graph.Teams/Update-MgChatInstalledApp?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,22 +44,18 @@ Update-MgBetaChatInstalledApp -InputObject <ITeamsIdentity>
 Upgrade an app installation within a chat.
 
 ## EXAMPLES
-### Example 1: Upgrade the teams app installed in chat
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 Update-MgBetaChatInstalledApp -ChatId $chatId -TeamsAppInstallationId $teamsAppInstallationId
 
+### EXAMPLE 2
 ```
-This example will upgrade the teams app installed in chat
-
-### Example 2: Upgrade app installed in a chat and consent to the resource specific permissions
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	consentedPermissionSet = @{
@@ -80,10 +73,6 @@ $params = @{
 }
 
 Update-MgBetaChatInstalledApp -ChatId $chatId -TeamsAppInstallationId $teamsAppInstallationId -BodyParameter $params
-
-```
-This example will upgrade app installed in a chat and consent to the resource specific permissions
-
 
 ## PARAMETERS
 
@@ -298,8 +287,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Update-MgChatInstalledApp](/powershell/module/Microsoft.Graph.Teams/Update-MgChatInstalledApp?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetachatinstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetachatinstalledapp)
-
 

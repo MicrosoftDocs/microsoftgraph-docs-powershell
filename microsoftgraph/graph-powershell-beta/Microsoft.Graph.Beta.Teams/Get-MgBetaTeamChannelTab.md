@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchanneltab
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 A collection of all the tabs in the channel.
 A navigation property.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgTeamChannelTab](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamChannelTab?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -40,28 +37,20 @@ A collection of all the tabs in the channel.
 A navigation property.
 
 ## EXAMPLES
-### Example 1: List all the tabs in the channel along with associated Teams app
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Teams
-
-Get-MgBetaTeamChannelTab -TeamId $teamId -ChannelId $channelId -ExpandProperty "teamsApp" 
-
+### EXAMPLE 1
 ```
-This example will list all the tabs in the channel along with associated teams app
-
-### Example 2: List all the tabs belonging to a specific app in a channel
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Teams
-
-Get-MgBetaTeamChannelTab -TeamId $teamId -ChannelId $channelId -ExpandProperty "teamsApp" -Filter "teamsApp/id eq 'com.microsoft.teamspace.tab.planner'" 
-
 ```
-This example will list all the tabs belonging to a specific app in a channel
 
+Get-MgBetaTeamChannelTab -TeamId $teamId -ChannelId $channelId -ExpandProperty "teamsApp"
+
+### EXAMPLE 2
+```
+Import-Module Microsoft.Graph.Beta.Teams
+```
+
+Get-MgBetaTeamChannelTab -TeamId $teamId -ChannelId $channelId -ExpandProperty "teamsApp" -Filter "teamsApp/id eq 'com.microsoft.teamspace.tab.planner'"
 
 ## PARAMETERS
 
@@ -334,8 +323,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgTeamChannelTab](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamChannelTab?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchanneltab)
-
 

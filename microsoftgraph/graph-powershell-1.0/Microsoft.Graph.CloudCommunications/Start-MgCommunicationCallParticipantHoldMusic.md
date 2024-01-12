@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/start-mgcommunicationcallparticipantholdmusic
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Start-MgCommunicationCallParticipantHoldMusic
 
 ## SYNOPSIS
 Put a participant on hold and play music in the background.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Start-MgBetaCommunicationCallParticipantHoldMusic](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Start-MgBetaCommunicationCallParticipantHoldMusic?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,12 +43,10 @@ Start-MgCommunicationCallParticipantHoldMusic -InputObject <ICloudCommunications
 ## DESCRIPTION
 Put a participant on hold and play music in the background.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/participant-startholdmusic-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Start-MgCommunicationCallParticipantHoldMusic Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.CloudCommunications
 $params = @{
 	CustomPrompt = @{
@@ -66,8 +60,6 @@ $params = @{
 }
 Start-MgCommunicationCallParticipantHoldMusic -CallId $callId -ParticipantId $participantId -BodyParameter $params
 ```
-This example shows how to use the Start-MgCommunicationCallParticipantHoldMusic Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -248,8 +240,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Start-MgBetaCommunicationCallParticipantHoldMusic](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Start-MgBetaCommunicationCallParticipantHoldMusic?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/start-mgcommunicationcallparticipantholdmusic](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/start-mgcommunicationcallparticipantholdmusic)
-
 

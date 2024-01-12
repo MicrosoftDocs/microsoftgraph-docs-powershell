@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleopenshift
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create an instance of an openshift object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Teams/New-MgTeamScheduleOpenShift?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,11 +44,11 @@ New-MgBetaTeamScheduleOpenShift -InputObject <ITeamsIdentity> -BodyParameter <IM
 Create an instance of an openshift object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	id = "OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8"
@@ -60,22 +57,22 @@ $params = @{
 		notes = "InventoryManagement"
 		openSlotCount = 2
 		displayName = "Dayshift"
-		startDateTime = [System.DateTime]::Parse("2018-10-04T00: 58: 45.340Z")
-		endDateTime = [System.DateTime]::Parse("2018-10-04T09: 50: 45.332Z")
+		startDateTime = \[System.DateTime\]::Parse("2018-10-04T00: 58: 45.340Z")
+		endDateTime = \[System.DateTime\]::Parse("2018-10-04T09: 50: 45.332Z")
 		theme = "white"
 		activities = @(
 			@{
 				isPaid = $true
-				startDateTime = [System.DateTime]::Parse("2018-10-04T00: 58: 45.340Z")
-				endDateTime = [System.DateTime]::Parse("2018-10-04T01: 58: 45.340Z")
+				startDateTime = \[System.DateTime\]::Parse("2018-10-04T00: 58: 45.340Z")
+				endDateTime = \[System.DateTime\]::Parse("2018-10-04T01: 58: 45.340Z")
 				code = ""
 				displayName = "Lunch"
 			}
 		)
 	}
 	draftOpenShift = $null
-	createdDateTime = [System.DateTime]::Parse("2019-03-14T04: 32: 51.451Z")
-	lastModifiedDateTime = [System.DateTime]::Parse("2019-03-14T05: 32: 51.451Z")
+	createdDateTime = \[System.DateTime\]::Parse("2019-03-14T04: 32: 51.451Z")
+	lastModifiedDateTime = \[System.DateTime\]::Parse("2019-03-14T05: 32: 51.451Z")
 	lastModifiedBy = @{
 		application = $null
 		device = $null
@@ -88,10 +85,6 @@ $params = @{
 }
 
 New-MgBetaTeamScheduleOpenShift -TeamId $teamId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaTeamScheduleOpenShift Cmdlet.
-
 
 ## PARAMETERS
 
@@ -477,8 +470,6 @@ Required.
   \[OpenSlotCount \<Int32?\>\]: Count of the number of slots for the given open shift.
 
 ## RELATED LINKS
-[New-MgTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Teams/New-MgTeamScheduleOpenShift?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleopenshift](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleopenshift)
-
 

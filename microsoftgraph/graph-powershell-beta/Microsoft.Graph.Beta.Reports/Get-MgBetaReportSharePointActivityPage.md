@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsharepointactivitypage
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function getSharePointActivityPages
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgReportSharePointActivityPage](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSharePointActivityPage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,6 +25,22 @@ Get-MgBetaReportSharePointActivityPage -InputObject <IReportsIdentity> -OutFile 
 
 ## DESCRIPTION
 Invoke function getSharePointActivityPages
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -152,9 +165,6 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
   \[UserSignUpMetricId \<String\>\]: The unique identifier of userSignUpMetric
 
 ## RELATED LINKS
-[Get-MgReportSharePointActivityPage](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSharePointActivityPage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsharepointactivitypage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsharepointactivitypage)
-
-
 

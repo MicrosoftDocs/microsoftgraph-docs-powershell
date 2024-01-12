@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserownedobject
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Get-MgBetaUserOwnedObject
@@ -13,9 +12,6 @@ Directory objects owned by the user.
 Read-only.
 Nullable.
 Supports $expand, $select nested in $expand, and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserOwnedObject](/powershell/module/Microsoft.Graph.Users/Get-MgUserOwnedObject?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -44,18 +40,14 @@ Read-only.
 Nullable.
 Supports $expand, $select nested in $expand, and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-ownedobjects-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaUserOwnedObject Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOwnedObject -UserId $userId
 ```
-This example shows how to use the Get-MgBetaUserOwnedObject Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -312,8 +304,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserOwnedObject](/powershell/module/Microsoft.Graph.Users/Get-MgUserOwnedObject?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserownedobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserownedobject)
-
 

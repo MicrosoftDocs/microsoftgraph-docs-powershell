@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktaskattachment
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Get-MgBetaUserOutlookTaskAttachment
@@ -39,17 +38,13 @@ The collection of fileAttachment, itemAttachment, and referenceAttachment attach
 Read-only.
 Nullable.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlooktask-list-attachments-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaUserOutlookTaskAttachment Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users
 Get-MgBetaUserOutlookTaskAttachment -UserId $userId -OutlookTaskId $outlookTaskId
 ```
-This example shows how to use the Get-MgBetaUserOutlookTaskAttachment Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -292,5 +287,4 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktaskattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktaskattachment)
-
 

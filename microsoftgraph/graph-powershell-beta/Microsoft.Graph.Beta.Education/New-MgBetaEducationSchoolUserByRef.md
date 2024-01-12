@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationschooluserbyref
 schema: 2.0.0
-ms.prod: education
 ---
 
 # New-MgBetaEducationSchoolUserByRef
 
 ## SYNOPSIS
 Add a user to a school.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgEducationSchoolUserByRef](/powershell/module/Microsoft.Graph.Education/New-MgEducationSchoolUserByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -43,25 +39,18 @@ New-MgBetaEducationSchoolUserByRef -InputObject <IEducationIdentity> -BodyParame
 ## DESCRIPTION
 Add a user to a school.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationschool-post-users-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/beta/education/users/14008"
 }
 
 New-MgBetaEducationSchoolUserByRef -EducationSchoolId $educationSchoolId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaEducationSchoolUserByRef Cmdlet.
-
 
 ## PARAMETERS
 
@@ -230,8 +219,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
-[New-MgEducationSchoolUserByRef](/powershell/module/Microsoft.Graph.Education/New-MgEducationSchoolUserByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationschooluserbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationschooluserbyref)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetabegindevicemanagementremoteassistancepartneronboarding
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 A request to start onboarding.
 Must be coupled with the appropriate TeamViewer account information
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgBeginDeviceManagementRemoteAssistancePartnerOnboarding](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgBeginDeviceManagementRemoteAssistancePartnerOnboarding?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,6 +28,22 @@ Invoke-MgBetaBeginDeviceManagementRemoteAssistancePartnerOnboarding
 ## DESCRIPTION
 A request to start onboarding.
 Must be coupled with the appropriate TeamViewer account information
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -181,9 +194,6 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
   \[ZebraFotaDeploymentId \<String\>\]: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
-[Invoke-MgBeginDeviceManagementRemoteAssistancePartnerOnboarding](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgBeginDeviceManagementRemoteAssistancePartnerOnboarding?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetabegindevicemanagementremoteassistancepartneronboarding](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetabegindevicemanagementremoteassistancepartneronboarding)
-
-
 

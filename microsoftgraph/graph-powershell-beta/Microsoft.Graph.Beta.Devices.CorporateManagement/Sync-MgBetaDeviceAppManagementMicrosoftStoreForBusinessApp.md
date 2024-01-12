@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/sync-mgbetadeviceappmanagementmicrosoftstoreforbusinessapp
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Syncs Intune account with Microsoft Store For Business
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Sync-MgDeviceAppManagementMicrosoftStoreForBusinessApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Sync-MgDeviceAppManagementMicrosoftStoreForBusinessApp?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ```
@@ -22,6 +19,18 @@ Sync-MgBetaDeviceAppManagementMicrosoftStoreForBusinessApp [-PassThru] [-WhatIf]
 
 ## DESCRIPTION
 Syncs Intune account with Microsoft Store For Business
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -82,9 +91,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Sync-MgDeviceAppManagementMicrosoftStoreForBusinessApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Sync-MgDeviceAppManagementMicrosoftStoreForBusinessApp?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/sync-mgbetadeviceappmanagementmicrosoftstoreforbusinessapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/sync-mgbetadeviceappmanagementmicrosoftstoreforbusinessapp)
-
-
 

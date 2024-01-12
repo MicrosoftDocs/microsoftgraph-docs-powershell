@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofileinterest
 schema: 2.0.0
-ms.prod: people
 ---
 
 # Remove-MgBetaUserProfileInterest
@@ -28,18 +27,14 @@ Remove-MgBetaUserProfileInterest -InputObject <IPeopleIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Deletes a personInterest object from a user's profile.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/personinterest-delete-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Remove-MgBetaUserProfileInterest Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserProfileInterest -UserId $userId -PersonInterestId $personInterestId
 ```
-This example shows how to use the Remove-MgBetaUserProfileInterest Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -192,5 +187,4 @@ INPUTOBJECT \<IPeopleIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofileinterest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofileinterest)
-
 

@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Notes-help.xml
 Module Name: Microsoft.Graph.Beta.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetagrouponenotesectiongroup
 schema: 2.0.0
-ms.prod: onenote
-ms.prod: onenote
 ---
 
 # Get-MgBetaGroupOnenoteSectionGroup
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a sectionGroup object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupOnenoteSectionGroup](/powershell/module/Microsoft.Graph.Notes/Get-MgGroupOnenoteSectionGroup?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -46,13 +41,17 @@ Get-MgBetaGroupOnenoteSectionGroup -InputObject <INotesIdentity> [-ExpandPropert
 ## DESCRIPTION
 Retrieve the properties and relationships of a sectionGroup object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/sectiongroup-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onenote-list-sectiongroups-permissions.md)]
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -280,8 +279,6 @@ INPUTOBJECT \<INotesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgGroupOnenoteSectionGroup](/powershell/module/Microsoft.Graph.Notes/Get-MgGroupOnenoteSectionGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetagrouponenotesectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetagrouponenotesectiongroup)
-
 

@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeeting
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Get-MgBetaCommunicationOnlineMeeting
 
 ## SYNOPSIS
 Get onlineMeetings from communications
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationOnlineMeeting](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationOnlineMeeting?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -52,21 +48,14 @@ Get-MgBetaCommunicationOnlineMeeting
 ## DESCRIPTION
 Get onlineMeetings from communications
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onlinemeeting-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.CloudCommunications
-
-Get-MgBetaCommunicationOnlineMeeting -Filter "VideoTeleconferenceId eq '123456789'" 
-
+### EXAMPLE 1
 ```
-This example shows how to use the Get-MgBetaCommunicationOnlineMeeting Cmdlet.
+Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
+Get-MgBetaCommunicationOnlineMeeting -Filter "VideoTeleconferenceId eq '123456789'"
 
 ## PARAMETERS
 
@@ -500,8 +489,6 @@ When the unique identifier is unavailable, the displayName property is provided 
   \[Producers \<IMicrosoftGraphMeetingParticipantInfo\[\]\>\]:
 
 ## RELATED LINKS
-[Get-MgCommunicationOnlineMeeting](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationOnlineMeeting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeeting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeeting)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Notes-help.xml
 Module Name: Microsoft.Graph.Beta.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetasiteonenotenotebook
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property notebooks in sites
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSiteOnenoteNotebook](/powershell/module/Microsoft.Graph.Notes/Update-MgSiteOnenoteNotebook?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,6 +46,22 @@ Update-MgBetaSiteOnenoteNotebook -InputObject <INotesIdentity> -BodyParameter <I
 
 ## DESCRIPTION
 Update the navigation property notebooks in sites
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -785,9 +798,6 @@ Read-only.
   \[ParentSectionGroup \<IMicrosoftGraphSectionGroup\>\]: sectionGroup
 
 ## RELATED LINKS
-[Update-MgSiteOnenoteNotebook](/powershell/module/Microsoft.Graph.Notes/Update-MgSiteOnenoteNotebook?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetasiteonenotenotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetasiteonenotenotebook)
-
-
 

@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannertask
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # New-MgBetaPlannerTask
 
 ## SYNOPSIS
 Create a new plannerTask.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgPlannerTask](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerTask?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -42,15 +38,12 @@ New-MgBetaPlannerTask -BodyParameter <IMicrosoftGraphPlannerTask> [-WhatIf] [-Co
 ## DESCRIPTION
 Create a new plannerTask.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/planner-post-tasks-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Planner
+```
 
 $params = @{
 	planId = "xqQg5FS2LkCp935s-FIFm2QAFkHM"
@@ -65,10 +58,6 @@ $params = @{
 }
 
 New-MgBetaPlannerTask -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaPlannerTask Cmdlet.
-
 
 ## PARAMETERS
 
@@ -905,8 +894,6 @@ Required.
 A GUID-based value that serves as the unique identifier for a series.
 
 ## RELATED LINKS
-[New-MgPlannerTask](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerTask?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannertask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannertask)
-
 

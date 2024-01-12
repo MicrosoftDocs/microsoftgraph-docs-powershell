@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchannel
@@ -12,9 +12,6 @@ Create a new channel in a team, as specified in the request body.
 When you create a channel, the maximum length of the channel's displayName is 50 characters.
 This is the name that appears to the user in Microsoft Teams.
 You can add a maximum of 200 members when you create a private channel.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgTeamChannel](/powershell/module/Microsoft.Graph.Teams/New-MgTeamChannel?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -61,11 +58,11 @@ This is the name that appears to the user in Microsoft Teams.
 You can add a maximum of 200 members when you create a private channel.
 
 ## EXAMPLES
-### Example 1: Create a standard channel
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	displayName = "Architecture Discussion"
@@ -75,14 +72,10 @@ $params = @{
 
 New-MgBetaTeamChannel -TeamId $teamId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will create a standard channel
-
-### Example 2: Create private channel on behalf of user
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	"@odata.type" = "#Microsoft.Graph.channel"
@@ -102,32 +95,24 @@ $params = @{
 
 New-MgBetaTeamChannel -TeamId $teamId -BodyParameter $params
 
+### EXAMPLE 3
 ```
-This example will create private channel on behalf of user
-
-### Example 3: Create a channel in migration mode
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	"@microsoft.graph.channelCreationMode" = "migration"
 	displayName = "Import_150958_99z"
 	description = "Import_150958_99z"
-	createdDateTime = [System.DateTime]::Parse("2020-03-14T11:22:17.067Z")
+	createdDateTime = \[System.DateTime\]::Parse("2020-03-14T11:22:17.067Z")
 }
 
 New-MgBetaTeamChannel -TeamId $teamId -BodyParameter $params
 
+### EXAMPLE 4
 ```
-This example will create a channel in migration mode
-
-### Example 4: Create standard channel with moderation settings
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	displayName = "TestChannelModeration"
@@ -143,14 +128,10 @@ $params = @{
 
 New-MgBetaTeamChannel -TeamId $teamId -BodyParameter $params
 
+### EXAMPLE 5
 ```
-This example will create standard channel with moderation settings
-
-### Example 5: Create private channel on behalf of user using user principal name
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	"@odata.type" = "#Microsoft.Graph.channel"
@@ -170,14 +151,10 @@ $params = @{
 
 New-MgBetaTeamChannel -TeamId $teamId -BodyParameter $params
 
+### EXAMPLE 6
 ```
-This example will create private channel on behalf of user using user principal name
-
-### Example 6: Create a shared channel on behalf of a user
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	displayName = "My First Shared Channel"
@@ -195,10 +172,6 @@ $params = @{
 }
 
 New-MgBetaTeamChannel -TeamId $teamId -BodyParameter $params
-
-```
-This example will create a shared channel on behalf of a user
-
 
 ## PARAMETERS
 
@@ -883,10 +856,10 @@ Must not be included in any POST or PATCH requests.
 Read-only.
           \[Value \<String\>\]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
         \[ApplicationTemplateId \<String\>\]: Unique identifier of the applicationTemplate that the servicePrincipal was created from.
@@ -1161,10 +1134,10 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
           \[Value \<String\>\]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
         \[PublisherName \<String\>\]: The name of the Microsoft Entra tenant that published the application.
@@ -7110,9 +7083,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's verified domain collection.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
       \[UserType \<String\>\]: A String value that can be used to classify user types in your directory, such as Member and Guest.
@@ -8232,10 +8205,10 @@ Must not be included in any POST or PATCH requests.
 Read-only.
         \[Value \<String\>\]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
       \[ApplicationTemplateId \<String\>\]: Unique identifier of the applicationTemplate that the servicePrincipal was created from.
@@ -8510,10 +8483,10 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
         \[Value \<String\>\]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
       \[PublisherName \<String\>\]: The name of the Microsoft Entra tenant that published the application.
@@ -14504,9 +14477,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's verified domain collection.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
     \[UserType \<String\>\]: A String value that can be used to classify user types in your directory, such as Member and Guest.
@@ -15797,10 +15770,10 @@ Must not be included in any POST or PATCH requests.
 Read-only.
               \[Value \<String\>\]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
             \[ApplicationTemplateId \<String\>\]: Unique identifier of the applicationTemplate that the servicePrincipal was created from.
@@ -16075,10 +16048,10 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
               \[Value \<String\>\]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
             \[PublisherName \<String\>\]: The name of the Microsoft Entra tenant that published the application.
@@ -21733,9 +21706,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's verified domain collection.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
           \[UserType \<String\>\]: A String value that can be used to classify user types in your directory, such as Member and Guest.
@@ -22918,8 +22891,6 @@ This property is read-only.
 Read only.
 
 ## RELATED LINKS
-[New-MgTeamChannel](/powershell/module/Microsoft.Graph.Teams/New-MgTeamChannel?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchannel)
-
 

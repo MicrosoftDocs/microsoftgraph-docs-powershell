@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrive
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Get-MgBetaUserDrive
@@ -11,9 +10,6 @@ ms.prod: sharepoint
 ## SYNOPSIS
 A collection of drives available for this user.
 Read-only.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserDrive](/powershell/module/Microsoft.Graph.Files/Get-MgUserDrive?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -40,25 +36,20 @@ Get-MgBetaUserDrive -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [
 A collection of drives available for this user.
 Read-only.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/drive-list-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaUserDrive Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Files
 # A UPN can also be used as -UserId.
 Get-MgBetaUserDrive -UserId $userId
 ```
-This example shows how to use the Get-MgBetaUserDrive Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaUserDrive Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.Files
 Get-MgBetaUserDrive -UserId $userId
 ```
-This example shows how to use the Get-MgBetaUserDrive Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -301,8 +292,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserDrive](/powershell/module/Microsoft.Graph.Files/Get-MgUserDrive?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrive)
-
 

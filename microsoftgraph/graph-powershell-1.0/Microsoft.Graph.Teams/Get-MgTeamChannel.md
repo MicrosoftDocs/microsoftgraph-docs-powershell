@@ -1,10 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannel
 schema: 2.0.0
-ms.prod: microsoft-teams
-ms.prod: microsoft-teams
 ---
 
 # Get-MgTeamChannel
@@ -13,9 +11,6 @@ ms.prod: microsoft-teams
 Retrieve the properties and relationships of a channel.
 This method supports federation.
 Only a user who is a member of the shared channel can retrieve channel information.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannel?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -44,28 +39,20 @@ This method supports federation.
 Only a user who is a member of the shared channel can retrieve channel information.
 
 ## EXAMPLES
-### Example 1: List all channels
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 Get-MgTeamChannel -TeamId $teamId
 
+### EXAMPLE 2
 ```
-This example will list all channels
-
-### Example 2: List all shared channels
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
-
-Get-MgTeamChannel -TeamId $teamId -Filter "membershipType eq 'shared'" 
-
 ```
-This example will list all shared channels
 
+Get-MgTeamChannel -TeamId $teamId -Filter "membershipType eq 'shared'"
 
 ## PARAMETERS
 
@@ -316,8 +303,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannel?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannel)
-
 

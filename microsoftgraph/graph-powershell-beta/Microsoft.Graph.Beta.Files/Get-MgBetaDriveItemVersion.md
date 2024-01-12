@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemversion
 schema: 2.0.0
-ms.prod: sharepoint
-ms.prod: sharepoint
 ---
 
 # Get-MgBetaDriveItemVersion
 
 ## SYNOPSIS
 Retrieve the metadata for a specific version of a DriveItem.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDriveItemVersion](/powershell/module/Microsoft.Graph.Files/Get-MgDriveItemVersion?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -39,35 +34,21 @@ Get-MgBetaDriveItemVersion -InputObject <IFilesIdentity> [-ExpandProperty <Strin
 ## DESCRIPTION
 Retrieve the metadata for a specific version of a DriveItem.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitemversion-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-list-versions-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Get specified version of a file
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Files
+```
 
 Get-MgBetaDriveItemVersion -DriveId $driveId -DriveItemId $driveItemId -DriveItemVersionId $driveItemVersionId
 
+### EXAMPLE 2
 ```
-This example will get specified version of a file
-
-### Example 2: Get current version of a file
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Files
+```
 
 Get-MgBetaDriveItemVersion -DriveId $driveId -DriveItemId $driveItemId -DriveItemVersionId $driveItemVersionId
-
-```
-This example will get current version of a file
-
 
 ## PARAMETERS
 
@@ -325,8 +306,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgDriveItemVersion](/powershell/module/Microsoft.Graph.Files/Get-MgDriveItemVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemversion)
-
 

@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/undo-mgbetauserchatmessagesoftdelete
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Undo-MgBetaUserChatMessageSoftDelete
 
 ## SYNOPSIS
 Undo soft deletion of a single chatMessage or a chat message reply in a channel or a chat.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Undo-MgUserChatMessageSoftDelete](/powershell/module/Microsoft.Graph.Users.Actions/Undo-MgUserChatMessageSoftDelete?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,17 +27,13 @@ Undo-MgBetaUserChatMessageSoftDelete -InputObject <IUsersActionsIdentity> [-Pass
 ## DESCRIPTION
 Undo soft deletion of a single chatMessage or a chat message reply in a channel or a chat.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chatmessage-undosoftdelete-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Undo-MgBetaUserChatMessageSoftDelete Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users.Actions
 Undo-MgBetaUserChatMessageSoftDelete -UserId $userId -ChatId $chatId -ChatMessageId $chatMessageId
 ```
-This example shows how to use the Undo-MgBetaUserChatMessageSoftDelete Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -210,8 +202,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Undo-MgUserChatMessageSoftDelete](/powershell/module/Microsoft.Graph.Users.Actions/Undo-MgUserChatMessageSoftDelete?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/undo-mgbetauserchatmessagesoftdelete](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/undo-mgbetauserchatmessagesoftdelete)
-
 

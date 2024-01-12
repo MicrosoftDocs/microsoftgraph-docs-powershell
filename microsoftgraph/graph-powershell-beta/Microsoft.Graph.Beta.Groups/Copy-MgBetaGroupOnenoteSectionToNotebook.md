@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/copy-mgbetagrouponenotesectiontonotebook
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # Copy-MgBetaGroupOnenoteSectionToNotebook
@@ -11,9 +10,6 @@ ms.prod: onenote
 ## SYNOPSIS
 Copies a section to a specific notebook.
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Copy-MgGroupOnenoteSectionToNotebook](/powershell/module/Microsoft.Graph.Groups/Copy-MgGroupOnenoteSectionToNotebook?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,10 +45,17 @@ Copy-MgBetaGroupOnenoteSectionToNotebook -InputObject <IGroupsIdentity>
 Copies a section to a specific notebook.
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/section-copytonotebook-permissions.md)]
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -319,8 +322,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Copy-MgGroupOnenoteSectionToNotebook](/powershell/module/Microsoft.Graph.Groups/Copy-MgGroupOnenoteSectionToNotebook?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/copy-mgbetagrouponenotesectiontonotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/copy-mgbetagrouponenotesectiontonotebook)
-
 

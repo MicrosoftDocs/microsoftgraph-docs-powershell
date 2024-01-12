@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mggraphgroup
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # Invoke-MgGraphGroup
@@ -11,9 +10,6 @@ ms.prod: groups
 ## SYNOPSIS
 Calling this method prevents the current user from receiving email notifications for this group about new posts, events, and files in that group.
 Supported for Microsoft 365 groups only.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaGraphGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaGraphGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,17 +27,13 @@ Invoke-MgGraphGroup -InputObject <IGroupsIdentity> [-PassThru] [-WhatIf] [-Confi
 Calling this method prevents the current user from receiving email notifications for this group about new posts, events, and files in that group.
 Supported for Microsoft 365 groups only.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-unsubscribebymail-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Invoke-MgGraphGroup Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Groups
 Invoke-MgGraphGroup -GroupId $groupId
 ```
-This example shows how to use the Invoke-MgGraphGroup Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -175,8 +167,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
-[Invoke-MgBetaGraphGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaGraphGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mggraphgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mggraphgroup)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgdatapolicyoperation
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Add new entity to dataPolicyOperations
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDataPolicyOperation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaDataPolicyOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,6 +27,22 @@ New-MgDataPolicyOperation -BodyParameter <IMicrosoftGraphDataPolicyOperation> [-
 
 ## DESCRIPTION
 Add new entity to dataPolicyOperations
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -234,9 +247,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   \[UserId \<String\>\]: The id for the user on whom the operation is performed.
 
 ## RELATED LINKS
-[New-MgBetaDataPolicyOperation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaDataPolicyOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgdatapolicyoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgdatapolicyoperation)
-
-
 

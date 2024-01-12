@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetasnoozeusereventinstancereminder
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Invoke-MgBetaSnoozeUserEventInstanceReminder
 
 ## SYNOPSIS
 Postpone a reminder for an event in a user calendar until a new time.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgSnoozeUserEventInstanceReminder](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgSnoozeUserEventInstanceReminder?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,14 +43,12 @@ Invoke-MgBetaSnoozeUserEventInstanceReminder -InputObject <IUsersActionsIdentity
 ## DESCRIPTION
 Postpone a reminder for an event in a user calendar until a new time.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-snoozereminder-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users.Actions
+```
 
 $params = @{
 	NewReminderTime = @{
@@ -65,11 +59,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Invoke-MgBetaSnoozeUserEventReminder -UserId $userId -EventId $eventId -BodyParameter $params
-```
-This example shows how to use the Invoke-MgBetaSnoozeUserEventInstanceReminder Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -302,8 +291,6 @@ For example, '2019-04-16T09:00:00'.
 See below for possible values.
 
 ## RELATED LINKS
-[Invoke-MgSnoozeUserEventInstanceReminder](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgSnoozeUserEventInstanceReminder?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetasnoozeusereventinstancereminder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetasnoozeusereventinstancereminder)
-
 

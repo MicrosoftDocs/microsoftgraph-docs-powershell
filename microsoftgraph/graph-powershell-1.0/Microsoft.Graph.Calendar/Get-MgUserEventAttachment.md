@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusereventattachment
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Get-MgUserEventAttachment
@@ -13,9 +12,6 @@ The collection of FileAttachment, ItemAttachment, and referenceAttachment attach
 Navigation property.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserEventAttachment](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserEventAttachment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -44,22 +40,15 @@ Navigation property.
 Read-only.
 Nullable.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-list-attachments-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Calendar
+```
 
 # A UPN can also be used as -UserId.
 Get-MgUserEventAttachment -UserId $userId -EventId $eventId
-```
-This example shows how to use the Get-MgUserEventAttachment Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -289,8 +278,6 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserEventAttachment](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserEventAttachment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusereventattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusereventattachment)
-
 

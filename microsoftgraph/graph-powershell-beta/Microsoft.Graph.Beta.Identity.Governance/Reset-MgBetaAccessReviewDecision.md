@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/reset-mgbetaaccessreviewdecision
@@ -31,13 +31,12 @@ The target object can be either a one-time access review, or an instance of a re
 Previous decisions are no longer recorded, but reviewers can continue to update decisions.
 
 ## EXAMPLES
-### Example 1: Using the Reset-MgBetaAccessReviewDecision Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Reset-MgBetaAccessReviewDecision -AccessReviewId $accessReviewId
 ```
-This example shows how to use the Reset-MgBetaAccessReviewDecision Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -237,5 +236,4 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/reset-mgbetaaccessreviewdecision](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/reset-mgbetaaccessreviewdecision)
-
 

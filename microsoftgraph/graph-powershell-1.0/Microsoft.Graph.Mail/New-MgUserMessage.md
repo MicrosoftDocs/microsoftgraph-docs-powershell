@@ -1,23 +1,19 @@
----
+﻿---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermessage
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgUserMessage
 
 ## SYNOPSIS
 Create a draft of a new message in either JSON or MIME format.
-When using JSON format, you can:- Include an attachment to the message.- Update the draft later to add content to the body or change other message properties.
-When using MIME format:- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.- /* Add any attachments and S/MIME properties to the MIME content.
+When using JSON format, you can:\n- Include an attachment to the message.\n- Update the draft later to add content to the body or change other message properties.
+When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.\n- /* Add any attachments and S/MIME properties to the MIME content.
 By default, this operation saves the draft in the Drafts folder.
 Send the draft message in a subsequent operation.
 Alternatively, send a new message in a single operation, or create a draft to forward, reply and reply-all to an existing message.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -75,20 +71,18 @@ New-MgUserMessage -InputObject <IMailIdentity> -BodyParameter <IMicrosoftGraphMe
 
 ## DESCRIPTION
 Create a draft of a new message in either JSON or MIME format.
-When using JSON format, you can:- Include an attachment to the message.- Update the draft later to add content to the body or change other message properties.
-When using MIME format:- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.- /* Add any attachments and S/MIME properties to the MIME content.
+When using JSON format, you can:\n- Include an attachment to the message.\n- Update the draft later to add content to the body or change other message properties.
+When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.\n- /* Add any attachments and S/MIME properties to the MIME content.
 By default, this operation saves the draft in the Drafts folder.
 Send the draft message in a subsequent operation.
 Alternatively, send a new message in a single operation, or create a draft to forward, reply and reply-all to an existing message.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-post-messages-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Mail
+```
 
 $params = @{
 	subject = "Did you see last night's game?"
@@ -108,15 +102,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserMessage -UserId $userId -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgUserMessage Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Mail
+```
 
 $params = @{
 	subject = "9/8/2018: concert"
@@ -145,11 +135,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserMessage -UserId $userId -BodyParameter $params
-```
-This example shows how to use the New-MgUserMessage Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -998,8 +983,6 @@ UNIQUEBODY \<IMicrosoftGraphItemBody\>: itemBody
   \[ContentType \<String\>\]: bodyType
 
 ## RELATED LINKS
-[New-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermessage)
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignment
 schema: 2.0.0
-ms.prod: education
 ---
 
 # New-MgEducationClassAssignment
@@ -12,9 +11,6 @@ ms.prod: education
 Create a new assignment.
 Only teachers in a class can create an assignment.
 Assignments start in the Draft state, which means that students will not see the assignment until publication.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -63,18 +59,15 @@ Create a new assignment.
 Only teachers in a class can create an assignment.
 Assignments start in the Draft state, which means that students will not see the assignment until publication.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationclass-post-assignment-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Education
+```
 
 $params = @{
-	dueDateTime = [System.DateTime]::Parse("2022-09-16T00:00:00Z")
+	dueDateTime = \[System.DateTime\]::Parse("2022-09-16T00:00:00Z")
 	displayName = "Reading test 09.14"
 	instructions = @{
 		contentType = "text"
@@ -92,10 +85,6 @@ $params = @{
 }
 
 New-MgEducationClassAssignment -EducationClassId $educationClassId -BodyParameter $params
-
-```
-This example shows how to use the New-MgEducationClassAssignment Cmdlet.
-
 
 ## PARAMETERS
 
@@ -785,8 +774,6 @@ Read-only.
   \[UnsubmittedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
 
 ## RELATED LINKS
-[New-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignment)
-
 

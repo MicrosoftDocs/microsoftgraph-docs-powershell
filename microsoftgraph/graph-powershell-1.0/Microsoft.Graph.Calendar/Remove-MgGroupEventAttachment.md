@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mggroupeventattachment
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Remove-MgGroupEventAttachment
 
 ## SYNOPSIS
 Delete an attachment from a user calendar event, mail message, or group post.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaGroupEventAttachment](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaGroupEventAttachment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,6 +26,22 @@ Remove-MgGroupEventAttachment -InputObject <ICalendarIdentity> [-IfMatch <String
 
 ## DESCRIPTION
 Delete an attachment from a user calendar event, mail message, or group post.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -184,9 +196,6 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaGroupEventAttachment](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaGroupEventAttachment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mggroupeventattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mggroupeventattachment)
-
-
 

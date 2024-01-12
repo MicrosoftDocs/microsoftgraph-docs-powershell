@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdefaultdrive
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 The group's default drive.
 Read-only.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupDefaultDrive](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDefaultDrive?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -33,13 +30,12 @@ The group's default drive.
 Read-only.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgGroupDefaultDrive Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Files
 Get-MgGroupDefaultDrive -GroupId $groupId
 ```
-This example shows how to use the Get-MgGroupDefaultDrive Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -146,8 +142,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupDefaultDrive](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDefaultDrive?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdefaultdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdefaultdrive)
-
 

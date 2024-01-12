@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareplygroupthreadpostinreplyto
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action reply
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgReplyGroupThreadPostInReplyTo](/powershell/module/Microsoft.Graph.Groups/Invoke-MgReplyGroupThreadPostInReplyTo?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -46,10 +43,11 @@ Invoke-MgBetaReplyGroupThreadPostInReplyTo -InputObject <IGroupsIdentity>
 Invoke action reply
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Groups
+```
 
 $params = @{
 	Post = @{
@@ -57,7 +55,7 @@ $params = @{
 			ContentType = ""
 			Content = "content-value"
 		}
-		ReceivedDateTime = [System.DateTime]::Parse("datetime-value")
+		ReceivedDateTime = \[System.DateTime\]::Parse("datetime-value")
 		HasAttachments = $true
 		From = @{
 			EmailAddress = @{
@@ -81,8 +79,8 @@ $params = @{
 			}
 		)
 		ConversationId = "conversationId-value"
-		CreatedDateTime = [System.DateTime]::Parse("datetime-value")
-		LastModifiedDateTime = [System.DateTime]::Parse("datetime-value")
+		CreatedDateTime = \[System.DateTime\]::Parse("datetime-value")
+		LastModifiedDateTime = \[System.DateTime\]::Parse("datetime-value")
 		ChangeKey = "changeKey-value"
 		Categories = @(
 			"categories-value"
@@ -93,7 +91,7 @@ $params = @{
 		Attachments = @(
 			@{
 				"@odata.type" = "#microsoft.graph.fileAttachment"
-				LastModifiedDateTime = [System.DateTime]::Parse("datetime-value")
+				LastModifiedDateTime = \[System.DateTime\]::Parse("datetime-value")
 				Name = "name-value"
 				ContentType = "contentType-value"
 				Size = 99
@@ -105,11 +103,6 @@ $params = @{
 }
 
 Invoke-MgBetaReplyGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params
-```
-This example shows how to use the Invoke-MgBetaReplyGroupThreadPostInReplyTo Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -501,8 +494,6 @@ Read-only.
     \[Value \<String\>\]: A property value.
 
 ## RELATED LINKS
-[Invoke-MgReplyGroupThreadPostInReplyTo](/powershell/module/Microsoft.Graph.Groups/Invoke-MgReplyGroupThreadPostInReplyTo?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareplygroupthreadpostinreplyto](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareplygroupthreadpostinreplyto)
-
 

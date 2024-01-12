@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduleoffershiftrequest
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property offerShiftRequests in teams
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamScheduleOfferShiftRequest?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,6 +44,22 @@ Update-MgBetaTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Update the navigation property offerShiftRequests in teams
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -414,9 +427,6 @@ This property is read-only.
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
 ## RELATED LINKS
-[Update-MgTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamScheduleOfferShiftRequest?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduleoffershiftrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduleoffershiftrequest)
-
-
 

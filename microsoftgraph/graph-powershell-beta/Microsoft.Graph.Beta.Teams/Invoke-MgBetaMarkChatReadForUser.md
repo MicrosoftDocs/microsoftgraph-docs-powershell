@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetamarkchatreadforuser
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Mark a chat as read for a user.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgMarkChatReadForUser](/powershell/module/Microsoft.Graph.Teams/Invoke-MgMarkChatReadForUser?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -46,11 +43,11 @@ Invoke-MgBetaMarkChatReadForUser -InputObject <ITeamsIdentity>
 Mark a chat as read for a user.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	user = @{
@@ -60,10 +57,6 @@ $params = @{
 }
 
 Invoke-MgBetaMarkChatReadForUser -ChatId $chatId -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgBetaMarkChatReadForUser Cmdlet.
-
 
 ## PARAMETERS
 
@@ -283,8 +276,6 @@ This property is read-only.
   \[UserIdentityType \<String\>\]: teamworkUserIdentityType
 
 ## RELATED LINKS
-[Invoke-MgMarkChatReadForUser](/powershell/module/Microsoft.Graph.Teams/Invoke-MgMarkChatReadForUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetamarkchatreadforuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetamarkchatreadforuser)
-
 

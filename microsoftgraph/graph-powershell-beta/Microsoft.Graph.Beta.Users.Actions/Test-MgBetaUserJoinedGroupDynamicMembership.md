@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetauserjoinedgroupdynamicmembership
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # Test-MgBetaUserJoinedGroupDynamicMembership
@@ -42,6 +41,22 @@ Test-MgBetaUserJoinedGroupDynamicMembership -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Invoke action evaluateDynamicMembership
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -234,6 +249,4 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetauserjoinedgroupdynamicmembership](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetauserjoinedgroupdynamicmembership)
-
-
 

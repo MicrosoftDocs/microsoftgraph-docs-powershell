@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallrecordsession
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Get-MgBetaCommunicationCallRecordSession
@@ -13,9 +12,6 @@ List of sessions involved in the call.
 Peer-to-peer calls typically only have one session, whereas group calls typically have at least one session per participant.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationCallRecordSession](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationCallRecordSession?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45,28 +41,20 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
-### Example 1: Get session list
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 Get-MgBetaCommunicationCallRecordSession -CallRecordId $callRecordId
 
+### EXAMPLE 2
 ```
-This example will get session list
-
-### Example 2: Get session list with segments
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-
-Get-MgBetaCommunicationCallRecordSession -CallRecordId $callRecordId -ExpandProperty "segments" 
-
 ```
-This example will get session list with segments
 
+Get-MgBetaCommunicationCallRecordSession -CallRecordId $callRecordId -ExpandProperty "segments"
 
 ## PARAMETERS
 
@@ -303,8 +291,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgCommunicationCallRecordSession](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationCallRecordSession?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallrecordsession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallrecordsession)
-
 

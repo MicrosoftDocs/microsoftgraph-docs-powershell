@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenotepagecontent
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # Get-MgSiteOnenotePageContent
 
 ## SYNOPSIS
 The page's HTML content.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSiteOnenotePageContent](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaSiteOnenotePageContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,10 +26,17 @@ Get-MgSiteOnenotePageContent -InputObject <INotesIdentity> -OutFile <String> [-P
 ## DESCRIPTION
 The page's HTML content.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onenote-list-pages-permissions.md)]
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -140,8 +143,6 @@ INPUTOBJECT \<INotesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaSiteOnenotePageContent](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaSiteOnenotePageContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenotepagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenotepagecontent)
-
 

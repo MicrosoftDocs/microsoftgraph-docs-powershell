@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitecontenttype
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # New-MgBetaGroupSiteContentType
 
 ## SYNOPSIS
 Create a new \[contentType\]\[\] for a \[site\]\[\].
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteContentType](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteContentType?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -57,8 +53,21 @@ New-MgBetaGroupSiteContentType -InputObject <ISitesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create a new \[contentType\]\[\] for a \[site\]\[\].
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-post-contenttypes-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -1790,9 +1799,6 @@ ORDER \<IMicrosoftGraphContentTypeOrder\>: contentTypeOrder
   \[Position \<Int32?\>\]: Specifies the position in which the content type appears in the selection UI.
 
 ## RELATED LINKS
-[New-MgGroupSiteContentType](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteContentType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitecontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitecontenttype)
-
-
 

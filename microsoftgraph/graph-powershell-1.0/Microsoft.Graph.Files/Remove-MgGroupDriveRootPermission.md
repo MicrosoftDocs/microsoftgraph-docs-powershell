@@ -1,19 +1,15 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdriverootpermission
 schema: 2.0.0
-ms.prod: files
 ---
 
 # Remove-MgGroupDriveRootPermission
 
 ## SYNOPSIS
 Remove access to a DriveItem.
-Only sharing permissions that are not inherited can be deleted.The inheritedFrom property must be null.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveRootPermission?view=graph-powershell-beta)
+Only sharing permissions that are not inherited can be deleted.\nThe inheritedFrom property must be null.
 
 ## SYNTAX
 
@@ -31,10 +27,23 @@ Remove-MgGroupDriveRootPermission -InputObject <IFilesIdentity> [-IfMatch <Strin
 
 ## DESCRIPTION
 Remove access to a DriveItem.
-Only sharing permissions that are not inherited can be deleted.The inheritedFrom property must be null.
+Only sharing permissions that are not inherited can be deleted.\nThe inheritedFrom property must be null.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/permission-delete-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -202,9 +211,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveRootPermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdriverootpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdriverootpermission)
-
-
 

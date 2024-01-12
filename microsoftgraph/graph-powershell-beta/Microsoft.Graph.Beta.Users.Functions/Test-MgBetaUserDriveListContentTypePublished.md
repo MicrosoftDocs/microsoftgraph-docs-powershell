@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/test-mgbetauserdrivelistcontenttypepublished
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function isPublished
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Test-MgUserDriveListContentTypePublished](/powershell/module/Microsoft.Graph.Users.Functions/Test-MgUserDriveListContentTypePublished?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,6 +25,22 @@ Test-MgBetaUserDriveListContentTypePublished -InputObject <IUsersFunctionsIdenti
 
 ## DESCRIPTION
 Invoke function isPublished
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -147,9 +160,6 @@ INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Test-MgUserDriveListContentTypePublished](/powershell/module/Microsoft.Graph.Users.Functions/Test-MgUserDriveListContentTypePublished?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/test-mgbetauserdrivelistcontenttypepublished](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/test-mgbetauserdrivelistcontenttypepublished)
-
-
 

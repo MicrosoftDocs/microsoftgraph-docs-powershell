@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriveitemretentionlabel
 schema: 2.0.0
-ms.prod: files
 ---
 
 # Update-MgBetaGroupDriveItemRetentionLabel
@@ -12,9 +11,6 @@ ms.prod: files
 Lock or unlock a retention label on a driveItem that classifies content as records.
 For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
 For more information about how you can lock and unlock retention labels, see Use record versioning to update records stored in SharePoint or OneDrive.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgGroupDriveItemRetentionLabel](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveItemRetentionLabel?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -50,6 +46,18 @@ Update-MgBetaGroupDriveItemRetentionLabel -InputObject <IFilesIdentity>
 Lock or unlock a retention label on a driveItem that classifies content as records.
 For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
 For more information about how you can lock and unlock retention labels, see Use record versioning to update records stored in SharePoint or OneDrive.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -380,9 +388,6 @@ Read-only.
 Read-write.
 
 ## RELATED LINKS
-[Update-MgGroupDriveItemRetentionLabel](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveItemRetentionLabel?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriveitemretentionlabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriveitemretentionlabel)
-
-
 

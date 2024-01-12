@@ -1,10 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityincident
 schema: 2.0.0
-ms.prod: security
-ms.prod: security
 ---
 
 # Get-MgBetaSecurityIncident
@@ -13,9 +11,6 @@ ms.prod: security
 Retrieve the properties and relationships of an incident object.
 Attacks are typically inflicted on different types of entities, such as devices, users, and mailboxes, resulting in multiple alert objects.
 Microsoft 365 Defender correlates alerts with the same attack techniques or the same attacker into an incident.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecurityIncident](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityIncident?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -43,35 +38,21 @@ Retrieve the properties and relationships of an incident object.
 Attacks are typically inflicted on different types of entities, such as devices, users, and mailboxes, resulting in multiple alert objects.
 Microsoft 365 Defender correlates alerts with the same attack techniques or the same attacker into an incident.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-incident-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-list-incidents-permissions.md)]
-
 ## EXAMPLES
-### Example 1: List all incidents
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
+```
 
 Get-MgBetaSecurityIncident
 
+### EXAMPLE 2
 ```
-This example will list all incidents
-
-### Example 2: List all incidents with their alerts
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Security
-
-Get-MgBetaSecurityIncident -ExpandProperty "alerts" 
-
 ```
-This example will list all incidents with their alerts
 
+Get-MgBetaSecurityIncident -ExpandProperty "alerts"
 
 ## PARAMETERS
 
@@ -353,8 +334,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgSecurityIncident](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityIncident?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityincident](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityincident)
-
 

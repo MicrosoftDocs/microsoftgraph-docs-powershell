@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaoverrideusermanageddevicecompliancestate
@@ -42,6 +42,22 @@ Invoke-MgBetaOverrideUserManagedDeviceComplianceState -InputObject <IUsersAction
 
 ## DESCRIPTION
 Invoke action overrideComplianceState
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -264,6 +280,4 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaoverrideusermanageddevicecompliancestate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaoverrideusermanageddevicecompliancestate)
-
-
 

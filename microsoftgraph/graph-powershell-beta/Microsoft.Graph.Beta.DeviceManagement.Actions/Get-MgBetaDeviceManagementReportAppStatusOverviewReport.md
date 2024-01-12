@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportappstatusoverviewreport
@@ -29,6 +29,22 @@ Get-MgBetaDeviceManagementReportAppStatusOverviewReport -OutFile <String>
 
 ## DESCRIPTION
 Invoke action getAppStatusOverviewReport
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -289,6 +305,4 @@ BODYPARAMETER \<IPathsDfju0ZDevicemanagementReportsMicrosoftGraphGetappstatusove
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportappstatusoverviewreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportappstatusoverviewreport)
-
-
 

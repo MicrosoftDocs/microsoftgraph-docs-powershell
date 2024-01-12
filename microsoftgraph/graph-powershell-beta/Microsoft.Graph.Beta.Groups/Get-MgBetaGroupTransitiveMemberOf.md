@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouptransitivememberof
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # Get-MgBetaGroupTransitiveMemberOf
@@ -11,9 +10,6 @@ ms.prod: groups
 ## SYNOPSIS
 The groups a group is a member of, either directly or through nested membership.
 Nullable.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupTransitiveMemberOf](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupTransitiveMemberOf?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -40,17 +36,13 @@ Get-MgBetaGroupTransitiveMemberOf -InputObject <IGroupsIdentity> [-ExpandPropert
 The groups a group is a member of, either directly or through nested membership.
 Nullable.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-transitivememberof-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaGroupTransitiveMemberOf Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Groups
 Get-MgBetaGroupTransitiveMemberOf -GroupId $groupId
 ```
-This example shows how to use the Get-MgBetaGroupTransitiveMemberOf Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -326,8 +318,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgGroupTransitiveMemberOf](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupTransitiveMemberOf?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouptransitivememberof](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouptransitivememberof)
-
 

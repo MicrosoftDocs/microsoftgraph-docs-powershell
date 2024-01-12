@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetauserchattab
@@ -9,10 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of the specified tab in a chat.
-This can be used to configure the content of the tab.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserChatTab](/powershell/module/Microsoft.Graph.Teams/Update-MgUserChatTab?view=graph-powershell-1.0)
+\nThis can be used to configure the content of the tab.
 
 ## SYNTAX
 
@@ -47,9 +44,19 @@ Update-MgBetaUserChatTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosof
 
 ## DESCRIPTION
 Update the properties of the specified tab in a chat.
-This can be used to configure the content of the tab.
+\nThis can be used to configure the content of the tab.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -493,8 +500,6 @@ This property is read-only.
   \[ExternalId \<String\>\]: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
 ## RELATED LINKS
-[Update-MgUserChatTab](/powershell/module/Microsoft.Graph.Teams/Update-MgUserChatTab?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetauserchattab](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetauserchattab)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchat
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to chats for users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserChat](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChat?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -56,39 +53,27 @@ New-MgUserChat -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphChat
 Create new navigation property to chats for users
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 Get-MgUserChat -UserId $userId
+
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgUserChat Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Teams
+```
 
 Get-MgUserChat -UserId $userId -ExpandProperty "members"
+
+### EXAMPLE 3
 ```
-This example shows how to use the New-MgUserChat Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Teams
+```
 
 Get-MgChat -Sort "lastMessagePreview/createdDateTime desc"
-```
-This example shows how to use the New-MgUserChat Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -1167,8 +1152,6 @@ VIEWPOINT \<IMicrosoftGraphChatViewpoint\>: chatViewpoint
   \[LastMessageReadDateTime \<DateTime?\>\]: Represents the dateTime up until which the current user has read chatMessages in a specific chat.
 
 ## RELATED LINKS
-[New-MgBetaUserChat](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChat?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchat](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchat)
-
 

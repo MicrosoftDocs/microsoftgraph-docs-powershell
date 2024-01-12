@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupthreadpostattachment
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # Get-MgBetaGroupThreadPostAttachment
@@ -13,9 +12,6 @@ The collection of fileAttachment, itemAttachment, and referenceAttachment attach
 Read-only.
 Nullable.
 Supports $expand.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupThreadPostAttachment](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupThreadPostAttachment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -44,17 +40,13 @@ Read-only.
 Nullable.
 Supports $expand.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/post-list-attachments-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaGroupThreadPostAttachment Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Groups
 Get-MgBetaGroupThreadPostAttachment -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId
 ```
-This example shows how to use the Get-MgBetaGroupThreadPostAttachment Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -329,8 +321,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgGroupThreadPostAttachment](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupThreadPostAttachment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupthreadpostattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupthreadpostattachment)
-
 

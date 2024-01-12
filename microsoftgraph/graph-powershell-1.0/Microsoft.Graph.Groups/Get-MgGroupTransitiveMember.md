@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouptransitivemember
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # Get-MgGroupTransitiveMember
@@ -11,9 +10,6 @@ ms.prod: groups
 ## SYNOPSIS
 The direct and transitive members of a group.
 Nullable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupTransitiveMember](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupTransitiveMember?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -40,54 +36,35 @@ Get-MgGroupTransitiveMember -InputObject <IGroupsIdentity> [-ExpandProperty <Str
 The direct and transitive members of a group.
 Nullable.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-list-transitivemembers-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Groups
+```
 
 Get-MgGroupTransitiveMember -GroupId $groupId
+
+### EXAMPLE 2
 ```
-This example shows how to use the Get-MgGroupTransitiveMember Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Groups
+```
 
 Get-MgGroupTransitiveMemberAsGroup -GroupId $groupId -CountVariable CountVar -ConsistencyLevel eventual
+
+### EXAMPLE 3
 ```
-This example shows how to use the Get-MgGroupTransitiveMember Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Groups
+```
 
 Get-MgGroupTransitiveMemberAsUser -GroupId $groupId -CountVariable CountVar -Sort "displayName" -Search '"displayName:tier"' -Property "displayName,id" -ConsistencyLevel eventual
+
+### EXAMPLE 4
 ```
-This example shows how to use the Get-MgGroupTransitiveMember Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Groups
+```
 
 Get-MgGroupTransitiveMemberAsUser -GroupId $groupId -CountVariable CountVar -Sort "displayName" -Filter "startswith(displayName, 'a')" -ConsistencyLevel eventual
-```
-This example shows how to use the Get-MgGroupTransitiveMember Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -357,8 +334,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
-[Get-MgBetaGroupTransitiveMember](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupTransitiveMember?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouptransitivemember](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouptransitivemember)
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaaccessreviewreviewer
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # New-MgBetaAccessReviewReviewer
@@ -46,20 +45,16 @@ In the Microsoft Entra access reviews feature, update an existing accessReview o
 This operation is only permitted for an access review that isn't yet completed, and only for an access review where the reviewers are explicitly specified.
 This operation isn't permitted for an access review in which users review their own access, and not intended for an access review in which the group owners are assigned as the reviewers.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreview-addreviewer-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the New-MgBetaAccessReviewReviewer Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
 	Id = "006111db-0810-4494-a6df-904d368bd81b"
 }
 New-MgBetaAccessReviewReviewer -AccessReviewId $accessReviewId -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaAccessReviewReviewer Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -345,5 +340,4 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaaccessreviewreviewer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaaccessreviewreviewer)
-
 

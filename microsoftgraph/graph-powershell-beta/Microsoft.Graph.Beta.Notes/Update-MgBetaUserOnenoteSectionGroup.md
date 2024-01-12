@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Notes-help.xml
 Module Name: Microsoft.Graph.Beta.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetauseronenotesectiongroup
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property sectionGroups in users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserOnenoteSectionGroup](/powershell/module/Microsoft.Graph.Notes/Update-MgUserOnenoteSectionGroup?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,6 +48,22 @@ Update-MgBetaUserOnenoteSectionGroup -InputObject <INotesIdentity> -BodyParamete
 
 ## DESCRIPTION
 Update the navigation property sectionGroups in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -966,9 +979,6 @@ Read-only.
   \[ParentSectionGroup \<IMicrosoftGraphSectionGroup\>\]: sectionGroup
 
 ## RELATED LINKS
-[Update-MgUserOnenoteSectionGroup](/powershell/module/Microsoft.Graph.Notes/Update-MgUserOnenoteSectionGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetauseronenotesectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetauseronenotesectiongroup)
-
-
 

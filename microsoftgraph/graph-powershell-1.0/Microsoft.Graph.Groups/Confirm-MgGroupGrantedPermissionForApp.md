@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/confirm-mggroupgrantedpermissionforapp
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action checkGrantedPermissionsForApp
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Confirm-MgBetaGroupGrantedPermissionForApp](/powershell/module/Microsoft.Graph.Beta.Groups/Confirm-MgBetaGroupGrantedPermissionForApp?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -27,6 +24,22 @@ Confirm-MgGroupGrantedPermissionForApp -InputObject <IGroupsIdentity> [-WhatIf] 
 
 ## DESCRIPTION
 Invoke action checkGrantedPermissionsForApp
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -145,9 +158,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
-[Confirm-MgBetaGroupGrantedPermissionForApp](/powershell/module/Microsoft.Graph.Beta.Groups/Confirm-MgBetaGroupGrantedPermissionForApp?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/confirm-mggroupgrantedpermissionforapp](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/confirm-mggroupgrantedpermissionforapp)
-
-
 

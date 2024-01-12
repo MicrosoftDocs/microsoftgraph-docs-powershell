@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationmerubric
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Update-MgBetaEducationMeRubric
@@ -14,9 +13,6 @@ Only teachers can perform this operation.
 Updating a rubric attached to an assignment (PATCH /education/classes/{id}/assignments/{id}/rubric) is only possible before the assignment is published, and what is updated is actually the original rubric that exists under /education/users/{id}/rubrics.
 After the assignment is published, an immutable copy of the rubric is made that is attached to that specific assignment.
 That rubric can be retrieved using GET /education/classes/{id}/assignments/{id}/rubric, but it cannot be updated.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgEducationMeRubric](/powershell/module/Microsoft.Graph.Education/Update-MgEducationMeRubric?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -57,25 +53,18 @@ Updating a rubric attached to an assignment (PATCH /education/classes/{id}/assig
 After the assignment is published, an immutable copy of the rubric is made that is attached to that specific assignment.
 That rubric can be retrieved using GET /education/classes/{id}/assignments/{id}/rubric, but it cannot be updated.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationrubric-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 $params = @{
 	displayName = "Example Credit Rubric after display name patch"
 }
 
 Update-MgBetaEducationMeRubric -EducationRubricId $educationRubricId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaEducationMeRubric Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -422,8 +411,6 @@ QUALITIES \<IMicrosoftGraphRubricQuality\[\]\>: The collection of qualities maki
 Weights must add up to 100.
 
 ## RELATED LINKS
-[Update-MgEducationMeRubric](/powershell/module/Microsoft.Graph.Education/Update-MgEducationMeRubric?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationmerubric](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationmerubric)
-
 

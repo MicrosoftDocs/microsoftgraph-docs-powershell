@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatsubmissionemailthreatsubmissionpolicy
@@ -50,16 +50,15 @@ Update-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy -InputObject <I
 Update the navigation property emailThreatSubmissionPolicies in security
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{
 	IsReportToMicrosoftEnabled = $false
 }
 Update-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy -EmailThreatSubmissionPolicyId $emailThreatSubmissionPolicyId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -536,5 +535,4 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatsubmissionemailthreatsubmissionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatsubmissionemailthreatsubmissionpolicy)
-
 

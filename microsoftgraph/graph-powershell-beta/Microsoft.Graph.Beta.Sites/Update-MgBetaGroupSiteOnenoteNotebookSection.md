@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiteonenotenotebooksection
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property sections in groups
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgGroupSiteOnenoteNotebookSection](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteOnenoteNotebookSection?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -50,6 +47,18 @@ Update-MgBetaGroupSiteOnenoteNotebookSection -InputObject <ISitesIdentity>
 
 ## DESCRIPTION
 Update the navigation property sections in groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -929,9 +938,6 @@ Nullable.
 Read-only.
 
 ## RELATED LINKS
-[Update-MgGroupSiteOnenoteNotebookSection](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteOnenoteNotebookSection?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiteonenotenotebooksection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiteonenotenotebooksection)
-
-
 

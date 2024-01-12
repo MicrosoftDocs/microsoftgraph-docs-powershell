@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/set-mggrouponenoteresourcecontent
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The content stream
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaGroupOnenoteResourceContent](/powershell/module/Microsoft.Graph.Beta.Notes/Set-MgBetaGroupOnenoteResourceContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Set-MgGroupOnenoteResourceContent -InputObject <INotesIdentity> [-Data <Stream>]
 
 ## DESCRIPTION
 The content stream
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -169,9 +182,6 @@ INPUTOBJECT \<INotesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgBetaGroupOnenoteResourceContent](/powershell/module/Microsoft.Graph.Beta.Notes/Set-MgBetaGroupOnenoteResourceContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/set-mggrouponenoteresourcecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/set-mggrouponenoteresourcecontent)
-
-
 

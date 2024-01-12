@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriveitemthumbnail
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Get-MgBetaUserDriveItemThumbnail
@@ -13,9 +12,6 @@ Collection of \[thumbnailSet\]\[\] objects associated with the item.
 For more information, see \[getting thumbnails\]\[\].
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveItemThumbnail](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveItemThumbnail?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -44,8 +40,21 @@ For more information, see \[getting thumbnails\]\[\].
 Read-only.
 Nullable.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-list-thumbnails-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -318,9 +327,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserDriveItemThumbnail](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveItemThumbnail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriveitemthumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriveitemthumbnail)
-
-
 

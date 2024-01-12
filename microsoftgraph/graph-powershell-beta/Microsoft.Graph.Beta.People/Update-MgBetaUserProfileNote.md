@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilenote
 schema: 2.0.0
-ms.prod: people
 ---
 
 # Update-MgBetaUserProfileNote
@@ -48,20 +47,16 @@ Update-MgBetaUserProfileNote -InputObject <IPeopleIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Update the properties of a personAnnotation object in a user's profile.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/personannotation-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaUserProfileNote Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.People
 $params = @{
 	AllowedAudiences = "organization"
 }
 Update-MgBetaUserProfileNote -UserId $userId -PersonAnnotationId $personAnnotationId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaUserProfileNote Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -474,5 +469,4 @@ SOURCE \<IMicrosoftGraphPersonDataSources\>: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilenote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilenote)
-
 

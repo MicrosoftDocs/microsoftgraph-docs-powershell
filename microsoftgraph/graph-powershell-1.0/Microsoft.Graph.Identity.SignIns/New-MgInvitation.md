@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mginvitation
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # New-MgInvitation
@@ -12,9 +11,6 @@ ms.prod: identity-and-sign-in
 Use this API to create a new invitation.
 Invitation adds an external user to the organization.
 When creating a new invitation, you have several options available:
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaInvitation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaInvitation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -37,41 +33,25 @@ Use this API to create a new invitation.
 Invitation adds an external user to the organization.
 When creating a new invitation, you have several options available:
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/invitation-post-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Invite a user and send default invitation email
-```powershell
-PS C:\> New-MgInvitation -InvitedUserDisplayName "John Doe" -InvitedUserEmailAddress John@contoso.com -InviteRedirectUrl "https://myapplications.microsoft.com" -SendInvitationMessage:$true
+
+### EXAMPLE 1
+```
+New-MgInvitation -InvitedUserDisplayName "John Doe" -InvitedUserEmailAddress John@contoso.com -InviteRedirectUrl "https://myapplications.microsoft.com" -SendInvitationMessage:$true
+```
 
 Id                                   InviteRedeemUrl                                                                                                   
 --                                   ---------------                                                                                                   
 e4247160-a778-428a-8218-bcaf717870dd https://login.microsoftonline.com/redeem?rd=https%3a%2f%2finvitations.microsoft.com%2fredeem%2f%3ftenant%3d094a...
+
+### EXAMPLE 2
 ```
-
-Invite a guest user with the following:
-- Display name is John Doe
-- Invited email is John@contoso.com
-- Once the user redeems the invitation, the user will be redirected to https://myapplications.microsoft.com
-- The standard invitation email will be sent to the specified email
-
-### Example 2: Invite a user and set usertype to member
-```powershell
-PS C:\> New-MgInvitation -InvitedUserDisplayName "John Doe" -InvitedUserEmailAddress John@contoso.com -InviteRedirectUrl "https://myapplications.microsoft.com" -InvitedUserType Member
+New-MgInvitation -InvitedUserDisplayName "John Doe" -InvitedUserEmailAddress John@contoso.com -InviteRedirectUrl "https://myapplications.microsoft.com" -InvitedUserType Member
+```
 
 Id                                   InviteRedeemUrl                                                                                                   
 --                                   ---------------                                                                                                   
 2fe815c1-aecc-4f66-b1d0-952a60df2409 https://login.microsoftonline.com/redeem?rd=https%3a%2f%2finvitations.microsoft.com%2fredeem%2f%3ftenant%3d094a...
-
-```
-
-Invite a guest user with the following:
-- Display name is John Doe
-- Invited email is John@contoso.com
-- Once the user redeems the invitation, the user will be redirected to https://myapplications.microsoft.com
-- The usertype will be set to Member
-- SendInvitationMessage is not specified so by default an invitation email will NOT be sent 
 
 ## PARAMETERS
 
@@ -4898,9 +4878,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -9492,9 +9472,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -9518,8 +9498,6 @@ The language format should be in ISO 639.
 The default is en-US.
 
 ## RELATED LINKS
-[New-MgBetaInvitation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaInvitation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mginvitation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mginvitation)
-
 

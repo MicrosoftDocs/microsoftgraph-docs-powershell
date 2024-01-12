@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mguserinferenceclassification
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property inferenceClassification in users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserInferenceClassification](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserInferenceClassification?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -42,6 +39,22 @@ Update-MgUserInferenceClassification -InputObject <IMailIdentity>
 
 ## DESCRIPTION
 Update the navigation property inferenceClassification in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -225,9 +238,6 @@ Read-only.
     \[Name \<String\>\]: The display name of the person or entity.
 
 ## RELATED LINKS
-[Update-MgBetaUserInferenceClassification](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserInferenceClassification?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mguserinferenceclassification](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mguserinferenceclassification)
-
-
 

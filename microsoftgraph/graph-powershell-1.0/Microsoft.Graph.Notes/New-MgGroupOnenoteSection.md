@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mggrouponenotesection
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to sections for groups
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaGroupOnenoteSection?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -51,18 +48,14 @@ New-MgGroupOnenoteSection -InputObject <INotesIdentity> -BodyParameter <IMicroso
 Create new navigation property to sections for groups
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Notes
+```
 
 # A UPN can also be used as -UserId.
 Get-MgUserOnenoteSection -UserId $userId
-```
-This example shows how to use the New-MgGroupOnenoteSection Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -965,8 +958,6 @@ Nullable.
 Read-only.
 
 ## RELATED LINKS
-[New-MgBetaGroupOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaGroupOnenoteSection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mggrouponenotesection](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mggrouponenotesection)
-
 

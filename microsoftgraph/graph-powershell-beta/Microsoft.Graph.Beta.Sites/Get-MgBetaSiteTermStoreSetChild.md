@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetchild
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Get-MgBetaSiteTermStoreSetChild
 
 ## SYNOPSIS
 Children terms of set in term \[store\].
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSiteTermStoreSetChild](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetChild?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -57,21 +53,14 @@ Get-MgBetaSiteTermStoreSetChild -InputObject <ISitesIdentity> [-ExpandProperty <
 ## DESCRIPTION
 Children terms of set in term \[store\].
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/termstore-term-list-children-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Sites
+```
 
 Get-MgBetaSiteTermStoreSetChild -SiteId $siteId -SetId $setId
-```
-This example shows how to use the Get-MgBetaSiteTermStoreSetChild Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -368,8 +357,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgSiteTermStoreSetChild](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetChild?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetchild](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetchild)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetadowndevicemanagementmanageddeviceshut
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Shut down device
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgDownDeviceManagementManagedDeviceShut](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgDownDeviceManagementManagedDeviceShut?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Invoke-MgBetaDownDeviceManagementManagedDeviceShut -InputObject <IDeviceManageme
 
 ## DESCRIPTION
 Shut down device
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -179,9 +192,6 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
   \[ZebraFotaDeploymentId \<String\>\]: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
-[Invoke-MgDownDeviceManagementManagedDeviceShut](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgDownDeviceManagementManagedDeviceShut?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetadowndevicemanagementmanageddeviceshut](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetadowndevicemanagementmanageddeviceshut)
-
-
 

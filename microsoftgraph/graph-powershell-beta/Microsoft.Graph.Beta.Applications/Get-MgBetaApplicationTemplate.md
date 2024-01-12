@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationtemplate
 schema: 2.0.0
-ms.prod: applications
-ms.prod: applications
 ---
 
 # Get-MgBetaApplicationTemplate
 
 ## SYNOPSIS
 Retrieve the properties of an applicationTemplate object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgApplicationTemplate](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationTemplate?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -39,24 +34,14 @@ Get-MgBetaApplicationTemplate -InputObject <IApplicationsIdentity> [-ExpandPrope
 ## DESCRIPTION
 Retrieve the properties of an applicationTemplate object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/applicationtemplate-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/applicationtemplate-list-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Applications
+```
 
 Get-MgBetaApplicationTemplate
-
-```
-This example shows how to use the Get-MgBetaApplicationTemplate Cmdlet.
-
 
 ## PARAMETERS
 
@@ -291,8 +276,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgApplicationTemplate](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationTemplate?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationtemplate)
-
 

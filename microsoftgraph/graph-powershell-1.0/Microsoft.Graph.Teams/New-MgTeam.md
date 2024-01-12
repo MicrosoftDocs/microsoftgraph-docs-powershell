@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteam
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # New-MgTeam
 
 ## SYNOPSIS
 Create a new team.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeam?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -41,28 +37,24 @@ New-MgTeam -BodyParameter <IMicrosoftGraphTeam> [-WhatIf] [-Confirm] [<CommonPar
 Create a new team.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	"template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
 	displayName = "My Sample Team"
-	description = "My Sample Team’s Description"
+	description = "My Sample Team's Description"
 }
 
 New-MgTeam -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgTeam Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	"template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
@@ -73,7 +65,8 @@ $params = @{
 		@{
 			displayName = "Announcements 📢"
 			isFavoriteByDefault = $true
-			description = "This is a sample announcements channel that is favorited by default. Use this channel to make important team, product, and service announcements."
+			description = "This is a sample announcements channel that is favorited by default.
+Use this channel to make important team, product, and service announcements."
 		}
 		@{
 			displayName = "Training 🏋️"
@@ -143,14 +136,10 @@ $params = @{
 
 New-MgTeam -BodyParameter $params
 
+### EXAMPLE 3
 ```
-This example shows how to use the New-MgTeam Cmdlet.
-
-### Example 3: Code snippet
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	"template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
@@ -159,14 +148,10 @@ $params = @{
 
 New-MgTeam -BodyParameter $params
 
+### EXAMPLE 4
 ```
-This example shows how to use the New-MgTeam Cmdlet.
-
-### Example 4: Code snippet
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	"template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
@@ -200,36 +185,28 @@ $params = @{
 
 New-MgTeam -BodyParameter $params
 
+### EXAMPLE 5
 ```
-This example shows how to use the New-MgTeam Cmdlet.
-
-### Example 5: Code snippet
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	"template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('educationClass')"
 	displayName = "My Class Team"
-	description = "My Class Team’s Description"
+	description = "My Class Team's Description"
 }
 
 New-MgTeam -BodyParameter $params
 
+### EXAMPLE 6
 ```
-This example shows how to use the New-MgTeam Cmdlet.
-
-### Example 6: Code snippet
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	"template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('educationClass')"
 	displayName = "My Class Team"
-	description = "My Class Team’s Description"
+	description = "My Class Team's Description"
 	channels = @(
 		@{
 			displayName = "Class Announcements 📢"
@@ -259,19 +236,15 @@ $params = @{
 
 New-MgTeam -BodyParameter $params
 
+### EXAMPLE 7
 ```
-This example shows how to use the New-MgTeam Cmdlet.
-
-### Example 7: Code snippet
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	"template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
 	displayName = "My Sample Team"
-	description = "My Sample Team’s Description"
+	description = "My Sample Team's Description"
 	members = @(
 		@{
 			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -284,10 +257,6 @@ $params = @{
 }
 
 New-MgTeam -BodyParameter $params
-
-```
-This example shows how to use the New-MgTeam Cmdlet.
-
 
 ## PARAMETERS
 
@@ -4787,9 +4756,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -9128,9 +9097,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -13927,9 +13896,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -18846,9 +18815,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -23079,9 +23048,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -27765,9 +27734,9 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -28549,8 +28518,6 @@ Read-only.
   \[TeamId \<String\>\]: ID of the team in which the tag is defined.
 
 ## RELATED LINKS
-[New-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeam?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteam)
-
 

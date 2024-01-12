@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguser
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Remove-MgUser
 
 ## SYNOPSIS
 Deletes a user.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUser](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUser?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,21 +27,16 @@ Remove-MgUser -InputObject <IUsersIdentity> [-IfMatch <String>] [-PassThru] [-Wh
 Deletes a user.
 
 ## EXAMPLES
-### Example 1: Remove a user
 
-```powershell
+### EXAMPLE 1
+```
 Remove-MgUser -UserId '5c442efb-5e66-484a-936a-91b6810bed14'
 ```
 
-This example removes a user.
-
-### Example 2: Remove a user with a confirmation
-
-```powershell
+### EXAMPLE 2
+```
 Remove-MgUser -UserId '3f80a75e-750b-49aa-a6b0-d9bf6df7b4c6' -Confirm
 ```
-
-This examples removes a user after the user is prompted for a confirmation.
 
 ## PARAMETERS
 
@@ -172,8 +163,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaUser](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguser](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguser)
-
 

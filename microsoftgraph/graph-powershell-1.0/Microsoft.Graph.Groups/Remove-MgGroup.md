@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroup
@@ -13,9 +13,6 @@ When deleted, Microsoft 365 groups are moved to a temporary container and can be
 After that time, they're permanently deleted.
 This isn't applicable to Security groups and Distribution groups which are permanently deleted immediately.
 To learn more, see deletedItems.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,13 +35,11 @@ This isn't applicable to Security groups and Distribution groups which are perma
 To learn more, see deletedItems.
 
 ## EXAMPLES
-### Example 1: Remove a group
 
-```powershell
+### EXAMPLE 1
+```
 Remove-MgGroup -GroupId 'f6b9791b-dfc1-40d6-9ab6-7b29126c534a'
 ```
-
-This example deletes the specified group.
 
 ## PARAMETERS
 
@@ -193,8 +188,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
-[Remove-MgBetaGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroup](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroup)
-
 

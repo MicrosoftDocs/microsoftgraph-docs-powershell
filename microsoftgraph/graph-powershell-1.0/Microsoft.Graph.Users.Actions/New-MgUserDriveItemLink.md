@@ -1,20 +1,16 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mguserdriveitemlink
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # New-MgUserDriveItemLink
 
 ## SYNOPSIS
 You can use createLink action to share a DriveItem via a sharing link.
-The createLink action will create a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
+The createLink action will create a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
 DriveItem resources inherit sharing permissions from their ancestors.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserDriveItemLink](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserDriveItemLink?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -48,11 +44,24 @@ New-MgUserDriveItemLink -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 You can use createLink action to share a DriveItem via a sharing link.
-The createLink action will create a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
+The createLink action will create a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
 DriveItem resources inherit sharing permissions from their ancestors.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-createlink-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -326,9 +335,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaUserDriveItemLink](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserDriveItemLink?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mguserdriveitemlink](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mguserdriveitemlink)
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationloginpage
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property loginPages in security
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSecurityAttackSimulationLoginPage](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAttackSimulationLoginPage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,6 +44,18 @@ Update-MgBetaSecurityAttackSimulationLoginPage -InputObject <ISecurityIdentity>
 
 ## DESCRIPTION
 Update the navigation property loginPages in security
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -456,9 +465,6 @@ When the unique identifier is unavailable, the displayName property is provided 
   \[Email \<String\>\]: Email address of the user.
 
 ## RELATED LINKS
-[Update-MgSecurityAttackSimulationLoginPage](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAttackSimulationLoginPage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationloginpage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationloginpage)
-
-
 

@@ -1,10 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantcredentialuserregistrationsummary
 schema: 2.0.0
-ms.prod: multi-tenant-management
-ms.prod: multi-tenant-management
 ---
 
 # Get-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary
@@ -38,27 +36,19 @@ Get-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary
 ## DESCRIPTION
 Read the properties and relationships of a credentialUserRegistrationsSummary object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-credentialuserregistrationssummary-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-managedtenant-list-credentialuserregistrationssummaries-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.ManagedTenants
 Get-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary -CredentialUserRegistrationsSummaryId $credentialUserRegistrationsSummaryId
 ```
-This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.ManagedTenants
 Get-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary
 ```
-This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -302,5 +292,4 @@ INPUTOBJECT \<IManagedTenantsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantcredentialuserregistrationsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantcredentialuserregistrationsummary)
-
 

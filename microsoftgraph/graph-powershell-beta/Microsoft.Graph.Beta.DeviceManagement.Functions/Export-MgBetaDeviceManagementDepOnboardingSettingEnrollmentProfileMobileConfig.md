@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/export-mgbetadevicemanagementdeponboardingsettingenrollmentprofilemobileconfig
@@ -26,6 +26,22 @@ Export-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfileMobileConfig
 
 ## DESCRIPTION
 Exports the mobile configuration
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -125,6 +141,4 @@ INPUTOBJECT \<IDeviceManagementFunctionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/export-mgbetadevicemanagementdeponboardingsettingenrollmentprofilemobileconfig](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/export-mgbetadevicemanagementdeponboardingsettingenrollmentprofilemobileconfig)
-
-
 

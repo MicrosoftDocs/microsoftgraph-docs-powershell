@@ -1,10 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportapplicationsignindetailedsummary
 schema: 2.0.0
-ms.prod: identity-and-access-reports
-ms.prod: identity-and-access-reports
 ---
 
 # Get-MgBetaReportApplicationSignInDetailedSummary
@@ -36,27 +34,19 @@ Get-MgBetaReportApplicationSignInDetailedSummary -InputObject <IReportsIdentity>
 ## DESCRIPTION
 Retrieve the properties and relationships of an applicationSignInDetailedSummary object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/applicationsignindetailedsummary-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-list-applicationsignindetailedsummary-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaReportApplicationSignInDetailedSummary Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Reports
 Get-MgBetaReportApplicationSignInDetailedSummary -ApplicationSignInDetailedSummaryId $applicationSignInDetailedSummaryId
 ```
-This example shows how to use the Get-MgBetaReportApplicationSignInDetailedSummary Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaReportApplicationSignInDetailedSummary Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.Reports
 Get-MgBetaReportApplicationSignInDetailedSummary
 ```
-This example shows how to use the Get-MgBetaReportApplicationSignInDetailedSummary Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -304,5 +294,4 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportapplicationsignindetailedsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportapplicationsignindetailedsummary)
-
 

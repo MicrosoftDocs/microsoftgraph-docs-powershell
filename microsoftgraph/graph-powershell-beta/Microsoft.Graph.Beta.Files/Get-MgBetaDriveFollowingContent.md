@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivefollowingcontent
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Get-MgBetaDriveFollowingContent
 
 ## SYNOPSIS
 The content stream, if the item represents a file.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDriveFollowingContent](/powershell/module/Microsoft.Graph.Files/Get-MgDriveFollowingContent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,10 +27,17 @@ Get-MgBetaDriveFollowingContent -InputObject <IFilesIdentity> -OutFile <String> 
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/drive-list-following-permissions.md)]
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -156,8 +159,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgDriveFollowingContent](/powershell/module/Microsoft.Graph.Files/Get-MgDriveFollowingContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivefollowingcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivefollowingcontent)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportdevicepolicycompliancereport
@@ -29,6 +29,18 @@ Get-MgBetaDeviceManagementReportDevicePolicyComplianceReport -OutFile <String>
 
 ## DESCRIPTION
 Invoke action getDevicePoliciesComplianceReport
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -273,6 +285,4 @@ BODYPARAMETER \<IPaths1Kf4N2KDevicemanagementReportsMicrosoftGraphGetdevicepolic
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportdevicepolicycompliancereport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportdevicepolicycompliancereport)
-
-
 

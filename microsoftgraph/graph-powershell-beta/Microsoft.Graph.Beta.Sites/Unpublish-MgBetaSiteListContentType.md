@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/unpublish-mgbetasitelistcontenttype
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Unpublish-MgBetaSiteListContentType
 
 ## SYNOPSIS
 Unpublish a \[contentType\]\[\] from a content type hub site.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Unpublish-MgSiteListContentType](/powershell/module/Microsoft.Graph.Sites/Unpublish-MgSiteListContentType?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,21 +27,14 @@ Unpublish-MgBetaSiteListContentType -InputObject <ISitesIdentity> [-PassThru] [-
 ## DESCRIPTION
 Unpublish a \[contentType\]\[\] from a content type hub site.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-unpublish-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Sites
+```
 
 Unpublish-MgBetaSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId
-```
-This example shows how to use the Unpublish-MgBetaSiteListContentType Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -222,8 +211,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Unpublish-MgSiteListContentType](/powershell/module/Microsoft.Graph.Sites/Unpublish-MgSiteListContentType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/unpublish-mgbetasitelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/unpublish-mgbetasitelistcontenttype)
-
 

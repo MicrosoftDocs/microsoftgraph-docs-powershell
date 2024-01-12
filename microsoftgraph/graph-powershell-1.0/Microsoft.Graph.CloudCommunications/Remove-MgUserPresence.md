@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mguserpresence
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property presence for users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgBetaUserPresence?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,40 +28,28 @@ Remove-MgUserPresence -InputObject <ICloudCommunicationsIdentity> [-IfMatch <Str
 Delete navigation property presence for users
 
 ## EXAMPLES
-### Example 1: Get your own presence information
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 # A UPN can also be used as -UserId.
 Get-MgUserPresence -UserId $userId
+
+### EXAMPLE 2
 ```
-This example shows how to use the Remove-MgUserPresence Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Get the presence information of another user
-
-```powershell
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 Get-MgUserPresence -UserId $userId
+
+### EXAMPLE 3
 ```
-This example shows how to use the Remove-MgUserPresence Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Get the presence information of another user
-
-```powershell
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 Get-MgCommunicationPresence -PresenceId $presenceId
-```
-This example shows how to use the Remove-MgUserPresence Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -192,8 +177,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaUserPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgBetaUserPresence?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mguserpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mguserpresence)
-
 

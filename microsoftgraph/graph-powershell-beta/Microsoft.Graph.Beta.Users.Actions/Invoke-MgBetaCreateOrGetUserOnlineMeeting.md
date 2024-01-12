@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetacreateorgetuseronlinemeeting
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Invoke-MgBetaCreateOrGetUserOnlineMeeting
@@ -11,9 +10,6 @@ ms.prod: cloud-communications
 ## SYNOPSIS
 Create an onlineMeeting object with a custom specified external ID.
 If the external ID already exists, this API will return the onlineMeeting object with that external ID.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgCreateOrGetUserOnlineMeeting](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgCreateOrGetUserOnlineMeeting?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -52,8 +48,9 @@ Create an onlineMeeting object with a custom specified external ID.
 If the external ID already exists, this API will return the onlineMeeting object with that external ID.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaCreateOrGetUserOnlineMeeting Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
 	StartDateTime = [System.DateTime]::Parse("2020-02-06T01:49:21.3524945+00:00")
@@ -77,10 +74,9 @@ $params = @{
 # A UPN can also be used as -UserId.
 Invoke-MgBetaCreateOrGetUserOnlineMeeting -UserId $userId -BodyParameter $params
 ```
-This example shows how to use the Invoke-MgBetaCreateOrGetUserOnlineMeeting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Invoke-MgBetaCreateOrGetUserOnlineMeeting Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
 	ChatInfo = @{
@@ -106,8 +102,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Invoke-MgBetaCreateOrGetUserOnlineMeeting -UserId $userId -BodyParameter $params
 ```
-This example shows how to use the Invoke-MgBetaCreateOrGetUserOnlineMeeting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -410,8 +404,6 @@ This property is read-only.
   \[Producers \<IMicrosoftGraphMeetingParticipantInfo\[\]\>\]:
 
 ## RELATED LINKS
-[Invoke-MgCreateOrGetUserOnlineMeeting](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgCreateOrGetUserOnlineMeeting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetacreateorgetuseronlinemeeting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetacreateorgetuseronlinemeeting)
-
 

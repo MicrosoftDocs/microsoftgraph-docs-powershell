@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistitem
 schema: 2.0.0
-ms.prod: sharepoint
-ms.prod: sharepoint
 ---
 
 # Get-MgBetaDriveListItem
 
 ## SYNOPSIS
 Returns the metadata for an \[item\]\[\] in a \[list\]\[\].
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDriveListItem](/powershell/module/Microsoft.Graph.Files/Get-MgDriveListItem?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -39,11 +34,21 @@ Get-MgBetaDriveListItem -InputObject <IFilesIdentity> [-ExpandProperty <String[]
 ## DESCRIPTION
 Returns the metadata for an \[item\]\[\] in a \[list\]\[\].
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/listitem-get-permissions.md)]
+## EXAMPLES
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/listitem-list-permissions.md)]
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -286,9 +291,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgDriveListItem](/powershell/module/Microsoft.Graph.Files/Get-MgDriveListItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistitem)
-
-
 

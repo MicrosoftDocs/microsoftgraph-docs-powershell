@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupownerbyref
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Add a user or service principal to a Microsoft 365 or security group's owners.
 The owners are a set of users or service principals who are allowed to modify the group object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupOwnerByRef](/powershell/module/Microsoft.Graph.Groups/New-MgGroupOwnerByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45,17 +42,15 @@ Add a user or service principal to a Microsoft 365 or security group's owners.
 The owners are a set of users or service principals who are allowed to modify the group object.
 
 ## EXAMPLES
-### Example 1: Add an owner to a group
 
-```powershell
+### EXAMPLE 1
+```
 $newGroupOwner =@{
   "@odata.id"= "https://graph.microsoft.com/v1.0/users/{4de19c17-6a28-4a91-86d1-f717c3c8c229}"
   }
-
-New-MgBetaGroupOwnerByRef -GroupId '1cb7317c-9c49-4dc8-a358-67ad8e95217c' -BodyParameter $newGroupOwner
 ```
 
-In this example, the first command defines the value of the $newGroupOwner variable. The second command creates the value is an owner of the specified group.
+New-MgBetaGroupOwnerByRef -GroupId '1cb7317c-9c49-4dc8-a358-67ad8e95217c' -BodyParameter $newGroupOwner
 
 ## PARAMETERS
 
@@ -248,8 +243,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgGroupOwnerByRef](/powershell/module/Microsoft.Graph.Groups/New-MgGroupOwnerByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupownerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupownerbyref)
-
 

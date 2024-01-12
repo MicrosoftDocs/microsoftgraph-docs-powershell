@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetadriveroot
 schema: 2.0.0
-ms.prod: files
 ---
 
 # Restore-MgBetaDriveRoot
 
 ## SYNOPSIS
 Restore a driveItem that has been deleted and is currently in the recycle bin.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Restore-MgDriveRoot](/powershell/module/Microsoft.Graph.Files/Restore-MgDriveRoot?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45,8 +41,21 @@ Restore-MgBetaDriveRoot -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Restore a driveItem that has been deleted and is currently in the recycle bin.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-restore-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -278,9 +287,6 @@ It is an opaque string that consists of three identifiers of the site.
 For OneDrive, this property is not populated.
 
 ## RELATED LINKS
-[Restore-MgDriveRoot](/powershell/module/Microsoft.Graph.Files/Restore-MgDriveRoot?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetadriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetadriveroot)
-
-
 

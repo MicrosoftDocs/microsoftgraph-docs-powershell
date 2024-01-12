@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mgsiteonenotesectiongroupsection
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # New-MgSiteOnenoteSectionGroupSection
 
 ## SYNOPSIS
 Create a new onenoteSection in the specified section group.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSiteOnenoteSectionGroupSection](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaSiteOnenoteSectionGroupSection?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -51,10 +47,17 @@ New-MgSiteOnenoteSectionGroupSection -InputObject <INotesIdentity>
 ## DESCRIPTION
 Create a new onenoteSection in the specified section group.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/sectiongroup-post-sections-permissions.md)]
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -972,8 +975,6 @@ Nullable.
 Read-only.
 
 ## RELATED LINKS
-[New-MgBetaSiteOnenoteSectionGroupSection](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaSiteOnenoteSectionGroupSection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mgsiteonenotesectiongroupsection](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mgsiteonenotesectiongroupsection)
-
 

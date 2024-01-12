@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootchildcontent
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Get-MgDriveRootChildContent
 
 ## SYNOPSIS
 The content stream, if the item represents a file.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDriveRootChildContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootChildContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,8 +26,21 @@ Get-MgDriveRootChildContent -InputObject <IFilesIdentity> -OutFile <String> [-Pa
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-list-children-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -153,9 +162,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaDriveRootChildContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootChildContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootchildcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootchildcontent)
-
-
 

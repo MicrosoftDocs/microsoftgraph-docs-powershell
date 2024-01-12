@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationpayload
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to payloads for security
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityAttackSimulationPayload](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulationPayload?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34,6 +31,18 @@ New-MgBetaSecurityAttackSimulationPayload -BodyParameter <IMicrosoftGraphPayload
 
 ## DESCRIPTION
 Create new navigation property to payloads for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -558,9 +567,6 @@ When the unique identifier is unavailable, the displayName property is provided 
   \[Email \<String\>\]: Email address of the user.
 
 ## RELATED LINKS
-[New-MgSecurityAttackSimulationPayload](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulationPayload?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationpayload](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationpayload)
-
-
 

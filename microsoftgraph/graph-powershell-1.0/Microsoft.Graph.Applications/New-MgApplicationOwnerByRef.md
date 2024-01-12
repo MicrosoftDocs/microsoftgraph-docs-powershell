@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationownerbyref
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # New-MgApplicationOwnerByRef
 
 ## SYNOPSIS
 Add an owner to an application by posting to the owners collection.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaApplicationOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationOwnerByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -44,17 +40,15 @@ New-MgApplicationOwnerByRef -InputObject <IApplicationsIdentity> -BodyParameter 
 Add an owner to an application by posting to the owners collection.
 
 ## EXAMPLES
-### Example 1: Add an owner to an application
 
-```powershell
- $NewOwner = @{
-  "@odata.id"= "https://graph.microsoft.com/v1.0/directoryObjects/{075b32dd-edb7-47cf-89ef-f3f733683a3f}"
-  }
-
-New-MgApplicationOwnerByRef -ApplicationId 'f6b30057-7095-4e2c-89f8-224149f591b7' -BodyParameter $NewOwner
+### EXAMPLE 1
+```
+$NewOwner = @{
+ "@odata.id"= "https://graph.microsoft.com/v1.0/directoryObjects/{075b32dd-edb7-47cf-89ef-f3f733683a3f}"
+ }
 ```
 
-In this example, the first command defines the value for the $NewOwner variable. The second command adds the new owner to the specified application.
+New-MgApplicationOwnerByRef -ApplicationId 'f6b30057-7095-4e2c-89f8-224149f591b7' -BodyParameter $NewOwner
 
 ## PARAMETERS
 
@@ -228,8 +222,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaApplicationOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationOwnerByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationownerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationownerbyref)
-
 

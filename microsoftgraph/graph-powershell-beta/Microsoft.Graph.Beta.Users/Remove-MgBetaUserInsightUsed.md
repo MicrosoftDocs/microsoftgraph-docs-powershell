@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauserinsightused
@@ -26,6 +26,18 @@ Remove-MgBetaUserInsightUsed -InputObject <IUsersIdentity> [-IfMatch <String>] [
 
 ## DESCRIPTION
 Delete navigation property used for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -178,6 +190,4 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauserinsightused](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauserinsightused)
-
-
 

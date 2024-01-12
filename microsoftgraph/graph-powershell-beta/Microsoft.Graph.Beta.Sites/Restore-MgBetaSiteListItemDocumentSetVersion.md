@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/restore-mgbetasitelistitemdocumentsetversion
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Restore-MgBetaSiteListItemDocumentSetVersion
 
 ## SYNOPSIS
 Restore a document set version.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Restore-MgSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Sites/Restore-MgSiteListItemDocumentSetVersion?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,17 +27,13 @@ Restore-MgBetaSiteListItemDocumentSetVersion -InputObject <ISitesIdentity> [-Pas
 ## DESCRIPTION
 Restore a document set version.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/documentsetversion-restore-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Restore-MgBetaSiteListItemDocumentSetVersion Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Sites
 Restore-MgBetaSiteListItemDocumentSetVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -DocumentSetVersionId $documentSetVersionId
 ```
-This example shows how to use the Restore-MgBetaSiteListItemDocumentSetVersion Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -233,8 +225,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Restore-MgSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Sites/Restore-MgSiteListItemDocumentSetVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/restore-mgbetasitelistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/restore-mgbetasitelistitemdocumentsetversion)
-
 

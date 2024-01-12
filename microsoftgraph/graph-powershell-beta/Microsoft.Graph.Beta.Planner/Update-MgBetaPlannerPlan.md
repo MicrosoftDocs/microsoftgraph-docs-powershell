@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannerplan
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # Update-MgBetaPlannerPlan
 
 ## SYNOPSIS
 Update the properties of a plannerPlan object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPlannerPlan](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerPlan?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,25 +47,18 @@ Update-MgBetaPlannerPlan -InputObject <IPlannerIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Update the properties of a plannerPlan object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplan-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Planner
+```
 
 $params = @{
 	title = "title-value"
 }
 
 Update-MgBetaPlannerPlan -PlannerPlanId $plannerPlanId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaPlannerPlan Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -1033,8 +1022,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   \[Title \<String\>\]: Title of the task.
 
 ## RELATED LINKS
-[Update-MgPlannerPlan](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerPlan?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannerplan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannerplan)
-
 

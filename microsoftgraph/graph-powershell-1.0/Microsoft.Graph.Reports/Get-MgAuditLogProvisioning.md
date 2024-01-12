@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgauditlogprovisioning
 schema: 2.0.0
-ms.prod: identity-and-access-reports
 ---
 
 # Get-MgAuditLogProvisioning
 
 ## SYNOPSIS
 Get provisioning from auditLogs
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaAuditLogProvisioning](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaAuditLogProvisioning?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -39,28 +35,20 @@ Get-MgAuditLogProvisioning -InputObject <IReportsIdentity> [-ExpandProperty <Str
 Get provisioning from auditLogs
 
 ## EXAMPLES
-### Example 1: Successful request
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Reports
+```
 
 Get-MgAuditLogProvisioning
 
+### EXAMPLE 2
 ```
-This example will successful request
-
-### Example 2: Error reponse
-
-```powershell
-
 Import-Module Microsoft.Graph.Reports
+```
 
 Get-MgAuditLogProvisioning
-
-```
-This example will error reponse
-
 
 ## PARAMETERS
 
@@ -284,8 +272,6 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
   \[UserRegistrationDetailsId \<String\>\]: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Get-MgBetaAuditLogProvisioning](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaAuditLogProvisioning?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgauditlogprovisioning](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgauditlogprovisioning)
-
 

@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintprinterconnector
 schema: 2.0.0
-ms.prod: cloud-printing
 ---
 
 # Get-MgBetaPrintPrinterConnector
 
 ## SYNOPSIS
 The connectors that are associated with the printer.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPrintPrinterConnector](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterConnector?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,21 +34,14 @@ Get-MgBetaPrintPrinterConnector -InputObject <IDevicesCloudPrintIdentity> [-Expa
 ## DESCRIPTION
 The connectors that are associated with the printer.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printer-list-connectors-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
+```
 
 Get-MgBetaPrintPrinterConnector -PrinterId $printerId
-
-```
-This example shows how to use the Get-MgBetaPrintPrinterConnector Cmdlet.
-
 
 ## PARAMETERS
 
@@ -284,8 +273,6 @@ INPUTOBJECT \<IDevicesCloudPrintIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgPrintPrinterConnector](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterConnector?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintprinterconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintprinterconnector)
-
 

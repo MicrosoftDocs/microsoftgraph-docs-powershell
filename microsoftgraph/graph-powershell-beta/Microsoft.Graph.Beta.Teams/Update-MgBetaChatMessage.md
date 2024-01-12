@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetachatmessage
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property messages in chats
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgChatMessage](/powershell/module/Microsoft.Graph.Teams/Update-MgChatMessage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -61,6 +58,22 @@ Update-MgBetaChatMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicrosof
 
 ## DESCRIPTION
 Update the navigation property messages in chats
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -1029,9 +1042,6 @@ Only applies to channel chat messages, not chat messages in a chat.
 Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
-[Update-MgChatMessage](/powershell/module/Microsoft.Graph.Teams/Update-MgChatMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetachatmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetachatmessage)
-
-
 

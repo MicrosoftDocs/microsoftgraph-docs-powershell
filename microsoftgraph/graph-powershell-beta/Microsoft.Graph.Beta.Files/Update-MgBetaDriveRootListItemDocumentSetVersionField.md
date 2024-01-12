@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriverootlistitemdocumentsetversionfield
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property fields in drives
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDriveRootListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Files/Update-MgDriveRootListItemDocumentSetVersionField?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -41,6 +38,18 @@ Update-MgBetaDriveRootListItemDocumentSetVersionField -InputObject <IFilesIdenti
 
 ## DESCRIPTION
 Update the navigation property fields in drives
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -210,9 +219,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgDriveRootListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Files/Update-MgDriveRootListItemDocumentSetVersionField?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriverootlistitemdocumentsetversionfield](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriverootlistitemdocumentsetversionfield)
-
-
 

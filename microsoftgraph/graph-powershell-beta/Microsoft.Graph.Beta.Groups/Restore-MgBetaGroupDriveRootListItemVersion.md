@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/restore-mgbetagroupdriverootlistitemversion
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action restoreVersion
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Restore-MgGroupDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Groups/Restore-MgGroupDriveRootListItemVersion?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Restore-MgBetaGroupDriveRootListItemVersion -InputObject <IGroupsIdentity> [-Pas
 
 ## DESCRIPTION
 Invoke action restoreVersion
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -198,9 +211,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Restore-MgGroupDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Groups/Restore-MgGroupDriveRootListItemVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/restore-mgbetagroupdriverootlistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/restore-mgbetagroupdriverootlistitemversion)
-
-
 

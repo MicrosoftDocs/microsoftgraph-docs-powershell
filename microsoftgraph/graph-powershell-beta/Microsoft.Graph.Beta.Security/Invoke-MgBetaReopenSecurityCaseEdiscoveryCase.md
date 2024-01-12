@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetareopensecuritycaseediscoverycase
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Reopen an eDiscovery case that was closed.
 For details, see Reopen a closed case.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgReopenSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Security/Invoke-MgReopenSecurityCaseEdiscoveryCase?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -33,13 +30,12 @@ Reopen an eDiscovery case that was closed.
 For details, see Reopen a closed case.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaReopenSecurityCaseEdiscoveryCase Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
 Invoke-MgBetaReopenSecurityCaseEdiscoveryCase -EdiscoveryCaseId $ediscoveryCaseId
 ```
-This example shows how to use the Invoke-MgBetaReopenSecurityCaseEdiscoveryCase Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -216,8 +212,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Invoke-MgReopenSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Security/Invoke-MgReopenSecurityCaseEdiscoveryCase?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetareopensecuritycaseediscoverycase](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetareopensecuritycaseediscoverycase)
-
 
