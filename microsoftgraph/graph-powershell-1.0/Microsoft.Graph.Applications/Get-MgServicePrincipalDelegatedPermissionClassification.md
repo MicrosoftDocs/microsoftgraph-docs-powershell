@@ -42,13 +42,17 @@ Get delegatedPermissionClassifications from servicePrincipals
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-list-delegatedpermissionclassifications-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 Get-MgServicePrincipalDelegatedPermissionClassification -ServicePrincipalId $servicePrincipalId
+
+```
+This example shows how to use the Get-MgServicePrincipalDelegatedPermissionClassification Cmdlet.
+
 
 ## PARAMETERS
 

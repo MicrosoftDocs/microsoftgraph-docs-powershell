@@ -51,13 +51,17 @@ New-MgIdentityGovernanceAccessReviewDefinitionInstanceStage -InputObject <IIdent
 Create new navigation property to stages for identityGovernance
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStage -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId
+```
+This example shows how to use the New-MgIdentityGovernanceAccessReviewDefinitionInstanceStage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

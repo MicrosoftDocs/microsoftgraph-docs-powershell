@@ -46,13 +46,17 @@ This is the container for a custodian's mailbox and OneDrive for Business site.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverycustodian-list-usersources-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId
+
+```
+This example shows how to use the Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource Cmdlet.
+
 
 ## PARAMETERS
 

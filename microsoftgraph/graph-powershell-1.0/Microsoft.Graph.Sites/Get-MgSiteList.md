@@ -46,27 +46,39 @@ Get a list of rich long-running operations associated with a list.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/list-list-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 Get-MgSiteList -SiteId $siteId -ListId $listId
+```
+This example shows how to use the Get-MgSiteList Cmdlet.
 
-### EXAMPLE 2
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Code snippet
+
+```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 Get-MgSiteList -SiteId $siteId -ListId $listId
+```
+This example shows how to use the Get-MgSiteList Cmdlet.
 
-### EXAMPLE 3
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Code snippet
+
+```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 Get-MgSiteList -SiteId $siteId -ListId $listId -Property "id,name,lastModifiedDateTime" -ExpandProperty "columns(select=name,description),items)"
+```
+This example shows how to use the Get-MgSiteList Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

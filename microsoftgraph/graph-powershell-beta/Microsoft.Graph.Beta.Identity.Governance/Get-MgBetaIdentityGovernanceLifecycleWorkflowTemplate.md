@@ -46,20 +46,28 @@ Read the properties and relationships of a workflowTemplate object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-lifecycleworkflowscontainer-list-workflowtemplates-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Retrieve all Lifecycle Workflows workflow templates
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
+This example will retrieve all lifecycle workflows workflow templates
 
-Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate -Filter "category eq 'leaver'"
+### Example 2: Retrieve workflow templates supported for "leaver" workflows
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate -Filter "category eq 'leaver'" 
+
+```
+This example will retrieve workflow templates supported for "leaver" workflows
+
 
 ## PARAMETERS
 

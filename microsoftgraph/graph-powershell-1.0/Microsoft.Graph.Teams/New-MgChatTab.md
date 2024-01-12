@@ -51,11 +51,10 @@ The corresponding app must already be installed in the chat.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-post-tabs-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	displayName = "My Contoso Tab"
@@ -69,6 +68,11 @@ $params = @{
 }
 
 New-MgChatTab -ChatId $chatId -BodyParameter $params
+```
+This example shows how to use the New-MgChatTab Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

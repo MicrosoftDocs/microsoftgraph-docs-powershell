@@ -50,13 +50,17 @@ The operation returns an error if the message does not exist for the tenant.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceannouncement-list-messages-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
-```
 
 Get-MgBetaServiceAnnouncementMessage
+
+```
+This example shows how to use the Get-MgBetaServiceAnnouncementMessage Cmdlet.
+
 
 ## PARAMETERS
 

@@ -60,11 +60,10 @@ Alternatively, create a draft to reply-all to a message and send it later.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/message-replyall-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Users.Actions
-```
 
 $params = @{
 	Comment = "comment-value"
@@ -72,6 +71,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Invoke-MgReplyAllUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
+```
+This example shows how to use the Invoke-MgReplyAllUserMailFolderMessage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

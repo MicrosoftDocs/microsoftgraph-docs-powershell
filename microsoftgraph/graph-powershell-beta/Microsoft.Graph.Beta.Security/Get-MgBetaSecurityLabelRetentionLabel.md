@@ -39,18 +39,20 @@ Represents how customers can manage their data, whether and for how long to reta
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-labelsroot-list-retentionlabel-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgBetaSecurityLabelRetentionLabel Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityLabelRetentionLabel -RetentionLabelId $retentionLabelId
 ```
-
-### EXAMPLE 2
-```
+This example shows how to use the Get-MgBetaSecurityLabelRetentionLabel Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Get-MgBetaSecurityLabelRetentionLabel Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityLabelRetentionLabel
 ```
+This example shows how to use the Get-MgBetaSecurityLabelRetentionLabel Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

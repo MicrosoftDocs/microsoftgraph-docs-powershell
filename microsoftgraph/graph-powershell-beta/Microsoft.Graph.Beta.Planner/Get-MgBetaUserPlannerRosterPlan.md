@@ -43,12 +43,13 @@ Returns the plannerPlans contained by the plannerRosters the user is a member.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/planneruser-list-rosterplans-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgBetaUserPlannerRosterPlan Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 Get-MgBetaUserPlannerRosterPlan -UserId $userId
 ```
+This example shows how to use the Get-MgBetaUserPlannerRosterPlan Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

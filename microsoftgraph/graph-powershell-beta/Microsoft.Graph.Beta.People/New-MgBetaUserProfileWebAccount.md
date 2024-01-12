@@ -54,9 +54,8 @@ Create a new webAccount object in a user's profile.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/profile-post-webaccounts-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the New-MgBetaUserProfileWebAccount Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.People
 $params = @{
 	Description = "My Github contributions!"
@@ -69,6 +68,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfileWebAccount -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaUserProfileWebAccount Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

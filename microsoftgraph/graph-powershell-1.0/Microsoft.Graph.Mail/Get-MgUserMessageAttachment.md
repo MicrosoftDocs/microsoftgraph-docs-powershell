@@ -45,46 +45,66 @@ An attachment can be one of the following types: All these types of attachments 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/eventmessage-list-attachments-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Mail
-```
 
 # A UPN can also be used as -UserId.
 Get-MgUserMessageAttachment -UserId $userId -MessageId $messageId -AttachmentId $attachmentId
+```
+This example shows how to use the Get-MgUserMessageAttachment Cmdlet.
 
-### EXAMPLE 2
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Code snippet
+
+```powershell
 Import-Module Microsoft.Graph.Mail
-```
 
 # A UPN can also be used as -UserId.
 Get-MgUserMessageAttachment -UserId $userId -MessageId $messageId -AttachmentId $attachmentId
+```
+This example shows how to use the Get-MgUserMessageAttachment Cmdlet.
 
-### EXAMPLE 3
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Code snippet
+
+```powershell
 Import-Module Microsoft.Graph.Mail
-```
 
 # A UPN can also be used as -UserId.
 Get-MgUserMessageAttachment -UserId $userId -MessageId $messageId -AttachmentId $attachmentId -ExpandProperty "microsoft.graph.itemattachment/item"
+```
+This example shows how to use the Get-MgUserMessageAttachment Cmdlet.
 
-### EXAMPLE 4
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 4: Code snippet
+
+```powershell
 Import-Module Microsoft.Graph.Mail
-```
 
 # A UPN can also be used as -UserId.
 Get-MgUserMessageAttachment -UserId $userId -MessageId $messageId -AttachmentId $attachmentId -ExpandProperty "microsoft.graph.itemattachment/item"
+```
+This example shows how to use the Get-MgUserMessageAttachment Cmdlet.
 
-### EXAMPLE 5
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 5: Code snippet
+
+```powershell
 Import-Module Microsoft.Graph.Mail
-```
 
 # A UPN can also be used as -UserId.
 Get-MgUserMessageAttachment -UserId $userId -MessageId $messageId -AttachmentId $attachmentId
+```
+This example shows how to use the Get-MgUserMessageAttachment Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

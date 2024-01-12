@@ -37,11 +37,11 @@ Send activity feed notifications to multiple users in bulk.
 For more information, see sending Teams activity notifications.
 
 ## EXAMPLES
+### Example 1: Notify multiple users about pending finance approval requests
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	topic = @{
@@ -76,10 +76,14 @@ $params = @{
 
 Send-MgBetaTeamworkActivityNotificationToRecipient -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will notify multiple users about pending finance approval requests
+
+### Example 2: Notify multiple users about an event using a custom topic
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	topic = @{
@@ -114,6 +118,10 @@ $params = @{
 }
 
 Send-MgBetaTeamworkActivityNotificationToRecipient -BodyParameter $params
+
+```
+This example will notify multiple users about an event using a custom topic
+
 
 ## PARAMETERS
 

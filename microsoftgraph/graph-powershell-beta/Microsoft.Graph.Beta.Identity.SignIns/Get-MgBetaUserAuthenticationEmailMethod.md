@@ -46,14 +46,18 @@ Retrieve a user's single email Authentication Method object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authentication-list-emailmethods-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserAuthenticationEmailMethod -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserAuthenticationEmailMethod Cmdlet.
+
 
 ## PARAMETERS
 

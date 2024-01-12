@@ -48,13 +48,17 @@ For details about how to use this API to add pull printing support to Universal 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printtaskdefinition-list-tasks-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
-```
 
 Get-MgBetaPrintTaskDefinitionTask -PrintTaskDefinitionId $printTaskDefinitionId
+
+```
+This example shows how to use the Get-MgBetaPrintTaskDefinitionTask Cmdlet.
+
 
 ## PARAMETERS
 

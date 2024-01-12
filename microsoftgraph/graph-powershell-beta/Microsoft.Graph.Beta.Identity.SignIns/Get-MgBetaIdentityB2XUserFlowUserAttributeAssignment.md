@@ -43,20 +43,28 @@ The user attribute assignments included in the user flow.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/b2xidentityuserflow-list-userattributeassignments-permissions.md)]
 
 ## EXAMPLES
+### Example 1: List userAttributeAssignments in a b2xIdentityUserFlow
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaIdentityB2XUserFlowUserAttributeAssignment -B2xIdentityUserFlowId $b2xIdentityUserFlowId
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
+This example will list userattributeassignments in a b2xidentityuserflow
 
-Get-MgBetaIdentityB2XUserFlowUserAttributeAssignment -B2xIdentityUserFlowId $b2xIdentityUserFlowId -ExpandProperty "userAttribute"
+### Example 2: List userAttributeAssignments in a b2xIdentityUserFlow and expand userAttribute
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaIdentityB2XUserFlowUserAttributeAssignment -B2xIdentityUserFlowId $b2xIdentityUserFlowId -ExpandProperty "userAttribute" 
+
+```
+This example will list userattributeassignments in a b2xidentityuserflow and expand userattribute
+
 
 ## PARAMETERS
 

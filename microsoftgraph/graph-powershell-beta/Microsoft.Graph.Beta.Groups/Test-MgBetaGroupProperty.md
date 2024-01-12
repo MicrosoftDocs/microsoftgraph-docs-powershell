@@ -56,9 +56,8 @@ If one or more properties fail multiple validations, only the property with the 
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Test-MgBetaGroupProperty Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 $params = @{
 	DisplayName = "Myprefix_test_mysuffix"
@@ -67,6 +66,8 @@ $params = @{
 }
 Test-MgBetaGroupProperty -GroupId $groupId -BodyParameter $params
 ```
+This example shows how to use the Test-MgBetaGroupProperty Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

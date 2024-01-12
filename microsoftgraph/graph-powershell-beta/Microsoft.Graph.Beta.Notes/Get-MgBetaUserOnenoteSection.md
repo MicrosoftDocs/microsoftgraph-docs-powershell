@@ -46,14 +46,18 @@ Retrieve the properties and relationships of a section object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onenote-list-sections-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Notes
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOnenoteSection -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserOnenoteSection Cmdlet.
+
 
 ## PARAMETERS
 

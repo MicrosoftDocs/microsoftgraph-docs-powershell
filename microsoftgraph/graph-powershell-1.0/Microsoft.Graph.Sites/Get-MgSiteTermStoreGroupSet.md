@@ -61,13 +61,17 @@ All sets under the group in a term \[store\].
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-group-list-sets-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 Get-MgSiteTermStoreGroupSet -SiteId $siteId -GroupId $groupId
+```
+This example shows how to use the Get-MgSiteTermStoreGroupSet Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

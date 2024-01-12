@@ -61,11 +61,10 @@ Update a \[content type\]\[contentType\].
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 $params = @{
 	name = "updatedCt"
@@ -111,6 +110,11 @@ $params = @{
 }
 
 Update-MgBetaSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaSiteContentType Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

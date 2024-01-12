@@ -53,9 +53,8 @@ Create a new personInterest.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/profile-post-interests-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the New-MgBetaUserProfileInterest Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.People
 $params = @{
 	Categories = @(
@@ -68,6 +67,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfileInterest -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaUserProfileInterest Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

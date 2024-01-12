@@ -42,13 +42,17 @@ Custodian sources that are included in the eDiscovery search.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverysearch-list-custodiansources-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 Get-MgSecurityCaseEdiscoveryCaseSearchCustodianSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId
+
+```
+This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseSearchCustodianSource Cmdlet.
+
 
 ## PARAMETERS
 

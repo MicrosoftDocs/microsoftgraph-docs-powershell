@@ -46,14 +46,18 @@ Nullable.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-list-calendars-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Calendar
-```
 
 # A UPN can also be used as -UserId.
 Get-MgUserCalendar -UserId $userId
+```
+This example shows how to use the Get-MgUserCalendar Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

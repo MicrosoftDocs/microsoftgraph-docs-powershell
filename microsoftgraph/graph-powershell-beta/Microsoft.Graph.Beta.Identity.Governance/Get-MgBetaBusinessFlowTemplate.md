@@ -39,12 +39,13 @@ Get entity from businessFlowTemplates by key
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/businessflowtemplate-list-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgBetaBusinessFlowTemplate Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaBusinessFlowTemplate
 ```
+This example shows how to use the Get-MgBetaBusinessFlowTemplate Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

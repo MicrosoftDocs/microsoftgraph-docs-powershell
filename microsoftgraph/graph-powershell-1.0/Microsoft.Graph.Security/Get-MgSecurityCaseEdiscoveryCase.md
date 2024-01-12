@@ -46,13 +46,17 @@ Read the properties and relationships of an ediscoveryCase object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-casesroot-list-ediscoverycases-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 Get-MgSecurityCaseEdiscoveryCase
+
+```
+This example shows how to use the Get-MgSecurityCaseEdiscoveryCase Cmdlet.
+
 
 ## PARAMETERS
 

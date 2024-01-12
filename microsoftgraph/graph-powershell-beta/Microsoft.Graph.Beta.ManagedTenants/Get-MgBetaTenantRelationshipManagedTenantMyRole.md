@@ -39,12 +39,13 @@ The collection of role assignments to a signed-in user for a managed tenant.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-managedtenant-list-myroles-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgBetaTenantRelationshipManagedTenantMyRole Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.ManagedTenants
 Get-MgBetaTenantRelationshipManagedTenantMyRole
 ```
+This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantMyRole Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

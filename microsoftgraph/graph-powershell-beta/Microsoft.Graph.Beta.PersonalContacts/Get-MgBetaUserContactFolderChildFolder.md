@@ -48,14 +48,18 @@ Nullable.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contactfolder-list-childfolders-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.PersonalContacts
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserContactFolderChildFolder -UserId $userId -ContactFolderId $contactFolderId
+
+```
+This example shows how to use the Get-MgBetaUserContactFolderChildFolder Cmdlet.
+
 
 ## PARAMETERS
 

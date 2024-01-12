@@ -43,13 +43,14 @@ Returns the plannerPlans that have been recently viewed by the user in apps that
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/planneruser-list-recentplans-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgBetaUserPlannerRecentPlan Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 # A UPN can also be used as -UserId.
 Get-MgBetaUserPlannerRecentPlan -UserId $userId
 ```
+This example shows how to use the Get-MgBetaUserPlannerRecentPlan Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

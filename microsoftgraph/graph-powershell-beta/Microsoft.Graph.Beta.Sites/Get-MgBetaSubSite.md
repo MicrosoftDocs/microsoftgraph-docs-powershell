@@ -42,12 +42,13 @@ The collection of the sub-sites under this site.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-list-subsites-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgBetaSubSite Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 Get-MgBetaSubSite -SiteId $siteId
 ```
+This example shows how to use the Get-MgBetaSubSite Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

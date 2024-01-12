@@ -53,9 +53,8 @@ However, you can validate both the mail nickname and the display name and receiv
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryobject-validateproperties-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Test-MgBetaDirectoryObjectProperty Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
 $params = @{
 	EntityType = "Group"
@@ -65,6 +64,8 @@ $params = @{
 }
 Test-MgBetaDirectoryObjectProperty -BodyParameter $params
 ```
+This example shows how to use the Test-MgBetaDirectoryObjectProperty Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -49,13 +49,17 @@ The identity providers included in the user flow.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/b2xidentityuserflow-list-identityproviders-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgIdentityB2XUserFlowIdentityProvider -B2xIdentityUserFlowId $b2xIdentityUserFlowId
+
+```
+This example shows how to use the Get-MgIdentityB2XUserFlowIdentityProvider Cmdlet.
+
 
 ## PARAMETERS
 

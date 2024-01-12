@@ -45,13 +45,17 @@ Retrieve the properties and relationships of a timeoffrequest object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/timeoffrequest-list-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgTeamScheduleTimeOffRequest -TeamId $teamId
+
+```
+This example shows how to use the Get-MgTeamScheduleTimeOffRequest Cmdlet.
+
 
 ## PARAMETERS
 

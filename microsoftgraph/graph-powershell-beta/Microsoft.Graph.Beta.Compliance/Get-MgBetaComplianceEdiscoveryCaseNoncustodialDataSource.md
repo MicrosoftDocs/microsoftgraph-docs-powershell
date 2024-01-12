@@ -43,18 +43,20 @@ Read the properties and relationships of a noncustodialDataSource object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-noncustodialdatasource-list-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -CaseId $caseId -NoncustodialDataSourceId $noncustodialDataSourceId
 ```
-
-### EXAMPLE 2
-```
+This example shows how to use the Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -CaseId $caseId
 ```
+This example shows how to use the Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

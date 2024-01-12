@@ -46,18 +46,20 @@ Get the properties and relationships of a bookingStaffMember in the specified bo
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingbusiness-list-staffmembers-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgBetaBookingBusinessStaffMember Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
 Get-MgBetaBookingBusinessStaffMember -BookingBusinessId $bookingBusinessId -BookingStaffMemberId $bookingStaffMemberId
 ```
-
-### EXAMPLE 2
-```
+This example shows how to use the Get-MgBetaBookingBusinessStaffMember Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Get-MgBetaBookingBusinessStaffMember Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
 Get-MgBetaBookingBusinessStaffMember -BookingBusinessId $bookingBusinessId
 ```
+This example shows how to use the Get-MgBetaBookingBusinessStaffMember Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

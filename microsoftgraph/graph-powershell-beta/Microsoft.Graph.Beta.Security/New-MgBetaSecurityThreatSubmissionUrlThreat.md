@@ -36,9 +36,8 @@ Create a new urlThreatSubmission object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-urlthreatsubmission-post-urlthreats-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the New-MgBetaSecurityThreatSubmissionUrlThreat Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{
 	"@odata.type" = "#microsoft.graph.urlThreatSubmission"
@@ -47,6 +46,8 @@ $params = @{
 }
 New-MgBetaSecurityThreatSubmissionUrlThreat -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaSecurityThreatSubmissionUrlThreat Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

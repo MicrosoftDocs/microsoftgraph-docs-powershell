@@ -50,22 +50,30 @@ Nullable.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-mailfolders-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get a mail folder
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Mail
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserMailFolder -UserId $userId -MailFolderId $mailFolderId
 
-### EXAMPLE 2
 ```
+This example will get a mail folder
+
+### Example 2: Get a mail search folder
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Mail
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserMailFolder -UserId $userId -MailFolderId $mailFolderId
+
+```
+This example will get a mail search folder
+
 
 ## PARAMETERS
 

@@ -46,9 +46,8 @@ Invoke-MgBetaReplyGroupThreadPost -InputObject <IGroupsIdentity>
 Invoke action reply
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Invoke-MgBetaReplyGroupThreadPost Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 $params = @{
 	Post = @{
@@ -73,9 +72,10 @@ $params = @{
 }
 Invoke-MgBetaReplyGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params
 ```
-
-### EXAMPLE 2
-```
+This example shows how to use the Invoke-MgBetaReplyGroupThreadPost Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Invoke-MgBetaReplyGroupThreadPost Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 $params = @{
 	Post = @{
@@ -131,6 +131,8 @@ $params = @{
 }
 Invoke-MgBetaReplyGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params
 ```
+This example shows how to use the Invoke-MgBetaReplyGroupThreadPost Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

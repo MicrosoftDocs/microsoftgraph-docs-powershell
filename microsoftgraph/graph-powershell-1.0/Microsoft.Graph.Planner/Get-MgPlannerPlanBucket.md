@@ -29,13 +29,17 @@ Retrieve a list of plannerBucket objects contained by a plannerPlan object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannerplan-list-buckets-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Planner
-```
 
 Get-MgPlannerPlanBucket -PlannerPlanId $plannerPlanId
+
+```
+This example shows how to use the Get-MgPlannerPlanBucket Cmdlet.
+
 
 ## PARAMETERS
 

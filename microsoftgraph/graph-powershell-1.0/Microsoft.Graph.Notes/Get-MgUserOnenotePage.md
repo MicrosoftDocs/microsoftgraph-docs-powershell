@@ -48,14 +48,18 @@ Getting page information Access a page's metadata by page identifier: Getting pa
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onenote-list-pages-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Notes
-```
 
 # A UPN can also be used as -UserId.
 Get-MgUserOnenotePage -UserId $userId
+
+```
+This example shows how to use the Get-MgUserOnenotePage Cmdlet.
+
 
 ## PARAMETERS
 

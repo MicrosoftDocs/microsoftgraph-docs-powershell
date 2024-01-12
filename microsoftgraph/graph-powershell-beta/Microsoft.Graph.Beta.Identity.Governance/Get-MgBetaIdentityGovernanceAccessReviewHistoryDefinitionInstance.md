@@ -45,13 +45,17 @@ A definition that doesn't recur will have exactly one instance.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewhistorydefinition-list-instances-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstance -AccessReviewHistoryDefinitionId $accessReviewHistoryDefinitionId
+
+```
+This example shows how to use the Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstance Cmdlet.
+
 
 ## PARAMETERS
 

@@ -51,11 +51,10 @@ For details about how to use this API to add pull printing support to Universal 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/print-update-taskdefinition-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
-```
 
 $params = @{
 	displayName = "Test TaskDefinitionName"
@@ -65,6 +64,11 @@ $params = @{
 }
 
 Update-MgPrintTaskDefinition -PrintTaskDefinitionId $printTaskDefinitionId -BodyParameter $params
+```
+This example shows how to use the Update-MgPrintTaskDefinition Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

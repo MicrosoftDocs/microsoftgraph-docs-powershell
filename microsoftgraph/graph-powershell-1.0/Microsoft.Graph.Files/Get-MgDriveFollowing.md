@@ -44,13 +44,17 @@ Only in OneDrive for Business.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/drive-list-following-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Files
-```
 
 Get-MgDriveFollowing -DriveId $driveId
+
+```
+This example shows how to use the Get-MgDriveFollowing Cmdlet.
+
 
 ## PARAMETERS
 

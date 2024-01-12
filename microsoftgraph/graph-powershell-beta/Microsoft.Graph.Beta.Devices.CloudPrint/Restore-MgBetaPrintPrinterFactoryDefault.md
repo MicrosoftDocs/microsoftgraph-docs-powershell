@@ -35,12 +35,13 @@ Restore a printer's default settings to the values specified by the manufacturer
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printer-restorefactorydefaults-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Restore-MgBetaPrintPrinterFactoryDefault Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 Restore-MgBetaPrintPrinterFactoryDefault -PrinterId $printerId
 ```
+This example shows how to use the Restore-MgBetaPrintPrinterFactoryDefault Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

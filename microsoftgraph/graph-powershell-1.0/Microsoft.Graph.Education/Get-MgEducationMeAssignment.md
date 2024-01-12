@@ -42,13 +42,17 @@ Assignments belonging to the user.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationuser-list-assignments-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get the assignments of the logged in user
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationMeAssignment
+
+```
+This example will get the assignments of the logged in user
+
 
 ## PARAMETERS
 

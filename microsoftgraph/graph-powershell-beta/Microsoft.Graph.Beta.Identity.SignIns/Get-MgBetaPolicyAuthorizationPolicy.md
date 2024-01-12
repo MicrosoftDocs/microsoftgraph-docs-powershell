@@ -42,13 +42,17 @@ The policy that controls Microsoft Entra authorization settings.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authorizationpolicy-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaPolicyAuthorizationPolicy
+
+```
+This example shows how to use the Get-MgBetaPolicyAuthorizationPolicy Cmdlet.
+
 
 ## PARAMETERS
 

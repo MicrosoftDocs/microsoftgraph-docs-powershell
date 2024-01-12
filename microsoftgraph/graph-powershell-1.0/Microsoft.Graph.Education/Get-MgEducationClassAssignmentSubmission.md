@@ -62,20 +62,28 @@ Students will not see the grade or feedback until the assignment has been releas
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-list-submissions-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get submissions
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Education
-```
+This example will get submissions
 
-Get-MgEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -ExpandProperty "outcomes"
+### Example 2: Get submissions with $expand options
+
+```powershell
+
+Import-Module Microsoft.Graph.Education
+
+Get-MgEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -ExpandProperty "outcomes" 
+
+```
+This example will get submissions with $expand options
+
 
 ## PARAMETERS
 

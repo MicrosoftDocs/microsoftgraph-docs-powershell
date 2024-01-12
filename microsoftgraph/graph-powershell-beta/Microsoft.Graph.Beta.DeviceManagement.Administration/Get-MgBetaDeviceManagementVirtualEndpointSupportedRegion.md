@@ -39,12 +39,13 @@ Cloud PC supported regions.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-list-supportedregions-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointSupportedRegion Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 Get-MgBetaDeviceManagementVirtualEndpointSupportedRegion
 ```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointSupportedRegion Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

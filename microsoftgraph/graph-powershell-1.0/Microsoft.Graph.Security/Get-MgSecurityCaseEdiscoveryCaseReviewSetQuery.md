@@ -46,13 +46,17 @@ Read the properties and relationships of an ediscoveryReviewSetQuery object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoveryreviewset-list-queries-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 Get-MgSecurityCaseEdiscoveryCaseReviewSetQuery -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId
+
+```
+This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseReviewSetQuery Cmdlet.
+
 
 ## PARAMETERS
 

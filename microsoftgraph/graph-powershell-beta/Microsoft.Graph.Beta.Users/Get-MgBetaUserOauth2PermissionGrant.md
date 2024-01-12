@@ -42,13 +42,17 @@ Get oauth2PermissionGrants from users
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-oauth2permissiongrants-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users
-```
 
 Get-MgBetaUserOauth2PermissionGrant -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserOauth2PermissionGrant Cmdlet.
+
 
 ## PARAMETERS
 

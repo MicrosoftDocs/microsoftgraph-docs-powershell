@@ -42,13 +42,17 @@ Classes for which the user is a teacher.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationuser-list-taughtclasses-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationUserTaughtClass -EducationUserId $educationUserId
+
+```
+This example shows how to use the Get-MgEducationUserTaughtClass Cmdlet.
+
 
 ## PARAMETERS
 

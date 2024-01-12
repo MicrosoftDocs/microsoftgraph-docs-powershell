@@ -48,20 +48,28 @@ Nullable.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/callrecords-callrecord-list-sessions-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get session list
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 Get-MgCommunicationCallRecordSession -CallRecordId $callRecordId
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.CloudCommunications
-```
+This example will get session list
 
-Get-MgCommunicationCallRecordSession -CallRecordId $callRecordId -ExpandProperty "segments"
+### Example 2: Get session list with segments
+
+```powershell
+
+Import-Module Microsoft.Graph.CloudCommunications
+
+Get-MgCommunicationCallRecordSession -CallRecordId $callRecordId -ExpandProperty "segments" 
+
+```
+This example will get session list with segments
+
 
 ## PARAMETERS
 

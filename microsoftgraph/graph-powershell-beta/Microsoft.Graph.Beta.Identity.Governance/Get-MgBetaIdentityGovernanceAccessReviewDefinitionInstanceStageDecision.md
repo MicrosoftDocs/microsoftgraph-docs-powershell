@@ -50,13 +50,17 @@ Read the properties and relationships of an accessReviewInstanceDecisionItem obj
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewstage-list-decisions-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Retrieve a decision from a stage of a multi-stage access review
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecision -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -AccessReviewStageId $accessReviewStageId -AccessReviewInstanceDecisionItemId $accessReviewInstanceDecisionItemId
+
+```
+This example will retrieve a decision from a stage of a multi-stage access review
+
 
 ## PARAMETERS
 

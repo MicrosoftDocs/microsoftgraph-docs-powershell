@@ -46,13 +46,17 @@ Retrieve the properties and relationships of a permission object on a site.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-list-permissions-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 Get-MgSitePermission -SiteId $siteId -PermissionId $permissionId
+```
+This example shows how to use the Get-MgSitePermission Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

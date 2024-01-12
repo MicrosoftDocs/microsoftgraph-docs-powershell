@@ -48,13 +48,17 @@ For example /domains/{domainId}/domainNameReferences/microsoft.graph.user and /d
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/domain-list-domainnamereferences-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaDomainNameReference -DomainId $domainId
+
+```
+This example shows how to use the Get-MgBetaDomainNameReference Cmdlet.
+
 
 ## PARAMETERS
 

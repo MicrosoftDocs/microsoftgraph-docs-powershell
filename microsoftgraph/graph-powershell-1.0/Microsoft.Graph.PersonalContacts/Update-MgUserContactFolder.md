@@ -55,11 +55,10 @@ Update the properties of contactfolder object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contactfolder-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.PersonalContacts
-```
 
 $params = @{
 	parentFolderId = "parentFolderId-value"
@@ -68,6 +67,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgUserContactFolder -UserId $userId -ContactFolderId $contactFolderId -BodyParameter $params
+```
+This example shows how to use the Update-MgUserContactFolder Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
