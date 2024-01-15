@@ -616,4 +616,5 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |Set-AzureADPolicy <sup>1</sup>|[Update-MgBetaPolicyTokenLifetimePolicy](/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicytokenlifetimepolicy)|
 
 <sup>1</sup> This cmdlet has more than one cmdlet mapping in Microsoft Graph PowerShell.
+
 <sup>2</sup> Privileged Identity Management (PIM) [iteration 3 APIs](/graph/api/resources/privilegedidentitymanagementv3-overview) should be used. Check [this guidance](/entra/id-governance/privileged-identity-management/pim-apis) for more details.
