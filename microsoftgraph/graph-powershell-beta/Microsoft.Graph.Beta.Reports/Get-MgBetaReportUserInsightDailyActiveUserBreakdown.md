@@ -35,6 +35,9 @@ Get-MgBetaReportUserInsightDailyActiveUserBreakdown -InputObject <IReportsIdenti
 ## DESCRIPTION
 Insights for the breakdown of users who were active on apps registered in the tenant for a specified period.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/dailyuserinsightmetricsroot-list-activeusersbreakdown-permissions.md)]
+
 ## PARAMETERS
 
 ### -ActiveUsersBreakdownMetricId

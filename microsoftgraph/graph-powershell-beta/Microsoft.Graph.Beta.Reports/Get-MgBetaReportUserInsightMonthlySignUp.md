@@ -35,6 +35,9 @@ Get-MgBetaReportUserInsightMonthlySignUp -InputObject <IReportsIdentity> [-Expan
 ## DESCRIPTION
 Total sign-ups on apps registered in the tenant for a specified period.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/monthlyuserinsightmetricsroot-list-signups-permissions.md)]
+
 ## PARAMETERS
 
 ### -All

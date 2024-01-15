@@ -53,7 +53,7 @@ For details, see Role template IDs.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryrole-post-members-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Add a member to a diretory role
+### Example 1: Add a member to a directory role
 
 ```powershell
 $DirObject = @{

@@ -44,6 +44,9 @@ Peer-to-peer calls typically only have one session, whereas group calls typicall
 Read-only.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/callrecords-callrecord-list-sessions-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Get session list
 

@@ -38,6 +38,9 @@ Get-MgSecurityAttackSimulationEndUserNotification -InputObject <ISecurityIdentit
 ## DESCRIPTION
 Represents an end user's notification for an attack simulation training.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/attacksimulationroot-list-endusernotifications-permissions.md)]
+
 ## PARAMETERS
 
 ### -All
