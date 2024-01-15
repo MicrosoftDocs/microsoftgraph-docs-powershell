@@ -7,6 +7,8 @@ ms.date: 07/10/2023
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
+
+#customer intent: As a Microsoft Graph PowerShell user, I want to understand the different authentication options available, so that I can securely connect to Microsoft Graph and manage my resources.
 ---
 
 # Authentication module cmdlets in Microsoft Graph PowerShell

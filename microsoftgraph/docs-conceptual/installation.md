@@ -7,6 +7,8 @@ manager: CelesteDG
 ms.topic: how-to
 ms.date: 05/17/2023
 ms.author: eunicewaweru
+
+#customer intent: As a PowerShell user, I want to install the Microsoft Graph PowerShell SDK, so that I can use it to interact with Microsoft Graph and perform tasks using PowerShell.
 ---
 
 # Install the Microsoft Graph PowerShell SDK

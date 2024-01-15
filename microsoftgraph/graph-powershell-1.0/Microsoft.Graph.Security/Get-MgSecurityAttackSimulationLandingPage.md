@@ -50,6 +50,9 @@ Get-MgSecurityAttackSimulationLandingPage -InputObject <ISecurityIdentity> [-Exp
 ## DESCRIPTION
 Represents an attack simulation training landing page.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/attacksimulationroot-list-landingpage-permissions.md)]
+
 ## PARAMETERS
 
 ### -All

@@ -40,6 +40,9 @@ Get-MgBetaReportUserInsightDailyUserCount [-ExpandProperty <String[]>] [-Propert
 ## DESCRIPTION
 Insights for total users on apps registered in the tenant for a specified period.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/dailyuserinsightmetricsroot-list-usercount-permissions.md)]
+
 ## PARAMETERS
 
 ### -All

@@ -1,7 +1,7 @@
 ---
-external help file: microsoft.graph.devicemanagement-help.xml
-Module Name: microsoft.graph.devicemanagement
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/Update-MgDeviceManagement
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/Update-MgBetaDeviceManagement
 schema: 2.0.0
 ms.prod: intune
 ---
@@ -94,10 +94,10 @@ Update the properties of a deviceManagement object.
 ### Example 1: Code snippet
 
 ```powershell
-Import-Module microsoft.graph.beta.devicemanagement
+Import-Module Microsoft.Graph.DeviceManagement
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.beta.devicemanagement"
+	"@odata.type" = "#microsoft.graph.deviceManagement"
 }
 
 Update-MgBetaDeviceManagement -BodyParameter $params
@@ -18033,3 +18033,5 @@ Valid values -2147483648 to 2147483647
 [Update-MgDeviceManagement](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagement?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/Update-MgDeviceManagement](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/Update-MgDeviceManagement)
+
+

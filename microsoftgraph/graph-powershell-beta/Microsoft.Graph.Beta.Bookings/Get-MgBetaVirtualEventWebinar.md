@@ -42,6 +42,9 @@ Read the properties and relationships of a virtualEventWebinar object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualeventwebinar-get-permissions.md)]
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualeventsroot-list-webinars-permissions.md)]
+
 ## PARAMETERS
 
 ### -All

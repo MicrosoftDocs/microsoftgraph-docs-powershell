@@ -35,6 +35,9 @@ Get-MgBetaReportUserInsightDailyActiveUser -InputObject <IReportsIdentity> [-Exp
 ## DESCRIPTION
 Insights for active users on apps registered in the tenant for a specified period.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/dailyuserinsightmetricsroot-list-activeusers-permissions.md)]
+
 ## PARAMETERS
 
 ### -ActiveUsersMetricId

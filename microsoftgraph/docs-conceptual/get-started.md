@@ -7,6 +7,8 @@ manager: CelesteDG
 ms.topic: quickstart
 ms.date: 05/17/2023
 ms.author: eunicewaweru
+
+#customer intent: As a PowerShell user, I want to learn how to use the Microsoft Graph PowerShell SDK, so that I can perform basic tasks using the Microsoft Graph REST API and authenticate with delegated access.
 ---
 
 # Get started with the Microsoft Graph PowerShell SDK
@@ -32,7 +34,7 @@ Each API in the Microsoft Graph is protected by one or more permission scopes. T
 - [List channels](/graph/api/channel-list?view=graph-rest-1.0&preserve-view=true) to get the channels in a Team.
 - [Send message](/graph/api/channel-post-messages?view=graph-rest-1.0&preserve-view=true) to send a message to a Team's channel.
 
-The `User.Read.All` permission scope will enable the first two calls, and the `Group.ReadWrite.All` scope will enable the rest. These permissions require an admin account.
+The `User.Read.All` permission scope will enable the first two calls, and the `Group.ReadWrite.All` scope will enable the rest. These permissions require an account with the **Application Administrator**, **Cloud Application Administrator**, or **Global Administrator** role to grant consent. For more information, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference).
 
 #### Using Find-MgGraphCommand to find required permissions
 

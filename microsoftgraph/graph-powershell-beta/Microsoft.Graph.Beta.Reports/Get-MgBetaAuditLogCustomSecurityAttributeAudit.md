@@ -35,6 +35,9 @@ Get-MgBetaAuditLogCustomSecurityAttributeAudit -InputObject <IReportsIdentity> [
 ## DESCRIPTION
 Represents a custom security attribute audit log.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/auditlogroot-list-customsecurityattributeaudits-permissions.md)]
+
 ## PARAMETERS
 
 ### -All

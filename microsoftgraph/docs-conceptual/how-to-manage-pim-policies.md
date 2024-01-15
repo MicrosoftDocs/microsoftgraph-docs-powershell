@@ -7,6 +7,8 @@ ms.date: 09/05/2023
 author: msewaweru
 manager: mwongerapk
 ms.author: eunicewaweru
+
+#customer intent: As an IT admin managing PIM policies in Microsoft Graph PowerShell, I want to list policies, policy assignments, and rules, so that I can view and update the settings and details of each policy.
 ---
 
 # Manage PIM policies in Microsoft Graph PowerShell

@@ -35,6 +35,9 @@ Read the properties and relationships of a remoteDesktopSecurityConfiguration ob
 Use this configuration to view the Microsoft Entra ID Remote Desktop Services (RDS) authentication protocol to authenticate a user to Microsoft Entra joined or Microsoft Entra hybrid joined devices.
 Additionally you can view any targetDeviceGroups that have been configured for SSO.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/remotedesktopsecurityconfiguration-get-permissions.md)]
+
 ## PARAMETERS
 
 ### -ExpandProperty
