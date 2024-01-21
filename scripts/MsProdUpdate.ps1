@@ -96,7 +96,7 @@ function Get-Files {
                     #Extract URI path
                     $CommandDetails = Find-MgGraphCommand -Command $Command
                     $ObjectCount = ($CommandDetails | Measure-Object).count
-                    if ($CommandDetails -and $ObjectCount -gt 0) {
+                    if ($CommandDetails -and $ObjectCount -gt 1) {
                         $ApiPath = $CommandDetail[0].URI
                         $Method = $CommandDetails[0].Method
                         if($null -eq $ApiPath -and $null -eq $Method) {
@@ -105,6 +105,14 @@ function Get-Files {
                             }    
                         }
                  
+                    }elseif ($CommandDetails -and $ObjectCount -eq 1) {
+                        $ApiPath = $CommandDetails.URI
+                        $Method = $CommandDetails.Method
+                        if($null -eq $ApiPath -and $null -eq $Method) {
+                            if("" -ne $ApiPath -and "" -ne $Method){
+                                Get-ExternalDocsUrl -GraphProfile $GraphProfile -UriPath $ApiPath -Command $Command -OpenApiContent $OpenApiContent -GraphProfilePath $GraphProfilePath -Method $Method.Trim() -Module $Module -File $File
+                            }    
+                        }
                     }
                 }
 
