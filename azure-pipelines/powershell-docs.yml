@@ -48,21 +48,21 @@ jobs:
       projectFileName: $(projectFileName)
       testType: 'Execution'
 
-  - task: PowerShell@2
-    displayName: 'Generate markdown files from PowerShell help files'
-    continueOnError: false
-    inputs:
-      targetType: 'filePath'
-      pwsh: true
-      filePath: microsoftgraph-docs-powershell\scripts\GenerateMarkDown.ps1
+  # - task: PowerShell@2
+  #   displayName: 'Generate markdown files from PowerShell help files'
+  #   continueOnError: false
+  #   inputs:
+  #     targetType: 'filePath'
+  #     pwsh: true
+  #     filePath: microsoftgraph-docs-powershell\scripts\GenerateMarkDown.ps1
 
-  - task: PowerShell@2
-    displayName: 'Escape disallowed html tags'
-    continueOnError: false
-    inputs:
-      targetType: 'filePath'
-      pwsh: true
-      filePath: microsoftgraph-docs-powershell\scripts\EscapeDisallowedHtmlTags.ps1
+  # - task: PowerShell@2
+  #   displayName: 'Escape disallowed html tags'
+  #   continueOnError: false
+  #   inputs:
+  #     targetType: 'filePath'
+  #     pwsh: true
+  #     filePath: microsoftgraph-docs-powershell\scripts\EscapeDisallowedHtmlTags.ps1
 
   - task: PowerShell@2
     displayName: 'Update metadata header'
@@ -72,36 +72,36 @@ jobs:
       pwsh: true
       filePath: microsoftgraph-docs-powershell\scripts\MsProdUpdate.ps1
 
-  - task: PublishBuildArtifacts@1
-    displayName: 'Publish Examples to be reviewed as artifact'
-    inputs:
-      PathtoPublish: 'microsoftgraph-docs-powershell\missingexternaldocsurl'
-      ArtifactName: 'MissingExternalDocs'
-      publishLocation: 'Container'
+  # - task: PublishBuildArtifacts@1
+  #   displayName: 'Publish Examples to be reviewed as artifact'
+  #   inputs:
+  #     PathtoPublish: 'microsoftgraph-docs-powershell\missingexternaldocsurl'
+  #     ArtifactName: 'MissingExternalDocs'
+  #     publishLocation: 'Container'
 
-  - task: PowerShell@2
-    displayName: 'Update Links'
-    continueOnError: false
-    inputs:
-      targetType: 'filePath'
-      pwsh: true
-      filePath: microsoftgraph-docs-powershell\scripts\UpdateLinks.ps1
+  # - task: PowerShell@2
+  #   displayName: 'Update Links'
+  #   continueOnError: false
+  #   inputs:
+  #     targetType: 'filePath'
+  #     pwsh: true
+  #     filePath: microsoftgraph-docs-powershell\scripts\UpdateLinks.ps1
   
-  - task: PowerShell@2
-    displayName: 'Repair Examples and Descriptions and Title'
-    continueOnError: false
-    inputs:
-      targetType: 'filePath'
-      pwsh: true
-      filePath: microsoftgraph-docs-powershell\scripts\RepairExamplesDescriptionsAndTitle.ps1
+  # - task: PowerShell@2
+  #   displayName: 'Repair Examples and Descriptions and Title'
+  #   continueOnError: false
+  #   inputs:
+  #     targetType: 'filePath'
+  #     pwsh: true
+  #     filePath: microsoftgraph-docs-powershell\scripts\RepairExamplesDescriptionsAndTitle.ps1
 
-  - task: PowerShell@2
-    displayName: 'Remove boiler plate code'
-    continueOnError: false
-    inputs:
-      targetType: 'filePath'
-      pwsh: true
-      filePath: microsoftgraph-docs-powershell\scripts\RemoveBoilerPlateCode.ps1
+  # - task: PowerShell@2
+  #   displayName: 'Remove boiler plate code'
+  #   continueOnError: false
+  #   inputs:
+  #     targetType: 'filePath'
+  #     pwsh: true
+  #     filePath: microsoftgraph-docs-powershell\scripts\RemoveBoilerPlateCode.ps1
       
   - task: PowerShell@2
     displayName: Pushing to github

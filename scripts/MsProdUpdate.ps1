@@ -99,7 +99,11 @@ function Get-Files {
                     if ($CommandDetails -and $ObjectCount -gt 0) {
                         $ApiPath = $CommandDetail[0].URI
                         $Method = $CommandDetails[0].Method
-                        Get-ExternalDocsUrl -GraphProfile $GraphProfile -UriPath $ApiPath -Command $Command -OpenApiContent $OpenApiContent -GraphProfilePath $GraphProfilePath -Method $Method.Trim() -Module $Module -File $File
+                        if($null -eq $ApiPath -and $null -eq $Method) {
+                            if("" -ne $ApiPath -and "" -ne $Method){
+                                Get-ExternalDocsUrl -GraphProfile $GraphProfile -UriPath $ApiPath -Command $Command -OpenApiContent $OpenApiContent -GraphProfilePath $GraphProfilePath -Method $Method.Trim() -Module $Module -File $File
+                            }    
+                        }
                  
                     }
                 }
@@ -113,6 +117,7 @@ function Get-Files {
         Write-Host "`nError in Line: " $_.InvocationInfo.Line
         Write-Host "`nError in Line Number: "$_.InvocationInfo.ScriptLineNumber
         Write-Host "`nError Item Name: "$_.Exception.ItemName
+        Write-Host "`nModule name: "$Module
     }
     
 }
