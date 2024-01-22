@@ -155,7 +155,7 @@ ConsentType          : AllPrincipals
 Id                   : DXfBIt8w50mnY_OdLvmzadDQeqbRp9tKjNm83QyGbTw
 PrincipalId          :
 ResourceId           : 2cab1707-656d-40cc-8522-3178a184e03d
-Scope                : Group.Read.All,User.Read.All
+Scope                : Group.Read.All User.Read.All
 AdditionalProperties : {}
 ```
 
@@ -167,7 +167,7 @@ To add the `User.Read.All` scope to the oauthPermissionGrant object, run:
 
 ```powershell
 $params = @{
-  Scope = "Group.Read.All,User.Read.All "
+  Scope = "Group.Read.All User.Read.All "
   }
 
 Update-MgOauth2PermissionGrant -OAuth2PermissionGrantId 'DXfBIt8w50mnY_OdLvmzadDQeqbRp9tKjNm83QyGbTw' -BodyParameter $params
