@@ -52,9 +52,8 @@ Create a new itemPublication object in a user's profile.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/profile-post-publications-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the New-MgBetaUserProfilePublication Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.People
 $params = @{
 	Description = "One persons journey to the top of the branding management field."
@@ -67,6 +66,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfilePublication -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaUserProfilePublication Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -53,11 +53,10 @@ This creates a new copy of the message in the destination folder and removes the
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/message-move-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Users.Actions
-```
 
 $params = @{
 	DestinationId = "deleteditems"
@@ -65,6 +64,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Move-MgUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
+```
+This example shows how to use the Move-MgUserMailFolderChildFolderMessage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

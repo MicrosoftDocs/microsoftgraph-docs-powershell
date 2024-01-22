@@ -42,17 +42,21 @@ To access and assign members to other directory roles, you must first activate i
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directoryrole-post-directoryroles-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 $params = @{
 	roleTemplateId = "fe930be7-5e62-47db-91af-98c3a49a38b1"
 }
 
 New-MgDirectoryRole -BodyParameter $params
+```
+This example shows how to use the New-MgDirectoryRole Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

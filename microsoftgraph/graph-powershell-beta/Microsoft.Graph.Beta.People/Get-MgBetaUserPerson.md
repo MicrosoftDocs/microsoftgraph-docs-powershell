@@ -42,14 +42,18 @@ The collection is ordered by their relevance to the user, which is determined by
 A person aggregates information from mail, contacts, and social networks.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserPerson -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserPerson Cmdlet.
+
 
 ## PARAMETERS
 

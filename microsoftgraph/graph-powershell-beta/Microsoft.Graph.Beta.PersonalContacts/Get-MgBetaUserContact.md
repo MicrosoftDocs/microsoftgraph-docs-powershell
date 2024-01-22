@@ -44,14 +44,18 @@ There are two scenarios where an app can get a contact in another user's contact
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contact-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.PersonalContacts
-```
 
 # A UPN can also be used as -UserId.
-Get-MgBetaUserContact -UserId $userId -Property "displayName,emailAddresses"
+Get-MgBetaUserContact -UserId $userId -Property "displayName,emailAddresses" 
+
+```
+This example shows how to use the Get-MgBetaUserContact Cmdlet.
+
 
 ## PARAMETERS
 

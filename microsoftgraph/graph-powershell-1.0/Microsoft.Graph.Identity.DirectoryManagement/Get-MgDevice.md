@@ -41,13 +41,17 @@ Get the properties and relationships of a device object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get a device
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgDevice -DeviceId $deviceId
+
+```
+This example will get a device
+
 
 ## PARAMETERS
 

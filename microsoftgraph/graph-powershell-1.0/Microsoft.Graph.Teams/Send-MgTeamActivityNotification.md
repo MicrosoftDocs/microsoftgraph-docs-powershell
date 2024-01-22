@@ -52,11 +52,11 @@ Send an activity feed notification in the scope of a team.
 For more details about sending notifications and the requirements for doing so, seesending Teams activity notifications.
 
 ## EXAMPLES
+### Example 1: Notify a user about pending finance approval requests
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	topic = @{
@@ -81,10 +81,14 @@ $params = @{
 
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will notify a user about pending finance approval requests
+
+### Example 2: Notify a user about a channel tab
+
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	topic = @{
@@ -113,10 +117,14 @@ $params = @{
 
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
-### EXAMPLE 3
 ```
+This example will notify a user about a channel tab
+
+### Example 3: Notify a user about a channel tab using user principal name
+
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	topic = @{
@@ -145,10 +153,14 @@ $params = @{
 
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
-### EXAMPLE 4
 ```
+This example will notify a user about a channel tab using user principal name
+
+### Example 4: Notify a user about an event using custom topic
+
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	topic = @{
@@ -174,10 +186,14 @@ $params = @{
 
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
-### EXAMPLE 5
 ```
+This example will notify a user about an event using custom topic
+
+### Example 5: Notify the team members about pending finance approval requests
+
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	topic = @{
@@ -202,10 +218,14 @@ $params = @{
 
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
-### EXAMPLE 6
 ```
+This example will notify the team members about pending finance approval requests
+
+### Example 6: Notify the channel members about pending finance approval requests
+
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	topic = @{
@@ -231,10 +251,14 @@ $params = @{
 
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
-### EXAMPLE 7
 ```
+This example will notify the channel members about pending finance approval requests
+
+### Example 7: Notify about pending finance approval requests in channel message reply location
+
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	topic = @{
@@ -262,6 +286,10 @@ $params = @{
 }
 
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
+
+```
+This example will notify about pending finance approval requests in channel message reply location
+
 
 ## PARAMETERS
 

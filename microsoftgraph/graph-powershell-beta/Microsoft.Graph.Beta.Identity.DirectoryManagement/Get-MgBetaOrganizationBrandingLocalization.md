@@ -45,13 +45,17 @@ To retrieve a localization branding object, specify the value of id in the URL.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/organizationalbrandinglocalization-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaOrganizationBrandingLocalization -OrganizationId $organizationId
+
+```
+This example shows how to use the Get-MgBetaOrganizationBrandingLocalization Cmdlet.
+
 
 ## PARAMETERS
 

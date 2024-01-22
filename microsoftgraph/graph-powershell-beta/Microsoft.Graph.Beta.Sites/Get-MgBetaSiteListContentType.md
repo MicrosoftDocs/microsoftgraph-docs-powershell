@@ -38,12 +38,13 @@ Get-MgBetaSiteListContentType -InputObject <ISitesIdentity> [-ExpandProperty <St
 The collection of content types present in this list.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgBetaSiteListContentType Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 Get-MgBetaSiteListContentType -SiteId $siteId -ListId $listId
 ```
+This example shows how to use the Get-MgBetaSiteListContentType Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

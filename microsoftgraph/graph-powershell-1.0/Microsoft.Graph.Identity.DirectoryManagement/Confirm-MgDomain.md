@@ -33,13 +33,17 @@ Validates the ownership of the domain.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/domain-verify-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Confirm-MgDomain -DomainId $domainId
+
+```
+This example shows how to use the Confirm-MgDomain Cmdlet.
+
 
 ## PARAMETERS
 

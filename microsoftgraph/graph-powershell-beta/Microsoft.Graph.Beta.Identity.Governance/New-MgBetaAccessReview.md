@@ -40,9 +40,8 @@ After making this request, the caller should create a programControl, to link th
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreview-create-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the New-MgBetaAccessReview Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
 	DisplayName = "TestReview"
@@ -83,6 +82,8 @@ $params = @{
 }
 New-MgBetaAccessReview -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaAccessReview Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

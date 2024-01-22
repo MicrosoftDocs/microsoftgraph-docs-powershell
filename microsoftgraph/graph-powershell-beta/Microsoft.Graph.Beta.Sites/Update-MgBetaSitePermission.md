@@ -59,11 +59,10 @@ Update the permission object on a site.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-update-permission-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 $params = @{
 	roles = @(
@@ -72,6 +71,11 @@ $params = @{
 }
 
 Update-MgBetaSitePermission -SiteId $siteId -PermissionId $permissionId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaSitePermission Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

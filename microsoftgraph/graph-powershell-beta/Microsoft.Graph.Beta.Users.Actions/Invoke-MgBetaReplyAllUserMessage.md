@@ -59,9 +59,8 @@ Alternatively, create a draft to reply-all to a message, and send it later.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-replyall-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Invoke-MgBetaReplyAllUserMessage Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
 	Message = @{
@@ -78,6 +77,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 Invoke-MgBetaReplyAllUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
+This example shows how to use the Invoke-MgBetaReplyAllUserMessage Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

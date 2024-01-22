@@ -38,13 +38,17 @@ Get-MgSecurityAttackSimulationAutomationRun -InputObject <ISecurityIdentity> [-E
 A collection of simulation automation runs.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 Get-MgSecurityAttackSimulationAutomationRun -SimulationAutomationId $simulationAutomationId
+
+```
+This example shows how to use the Get-MgSecurityAttackSimulationAutomationRun Cmdlet.
+
 
 ## PARAMETERS
 

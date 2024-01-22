@@ -32,13 +32,15 @@ Remove-MgBetaIdentityConditionalAccessNamedLocation -InputObject <IIdentitySignI
 Delete a namedLocation object.
 
 ## EXAMPLES
+### Example 1: Remove a named location
 
-### EXAMPLE 1
-```
+```powershell
 Connect-MgBetaGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
-```
 
 Remove-MgBetaIdentityConditionalAccessNamedLocation -NamedLocationId $namedLocationId
+```
+
+This example removed the named location specified by `$namedLocationId`.
 
 ## PARAMETERS
 

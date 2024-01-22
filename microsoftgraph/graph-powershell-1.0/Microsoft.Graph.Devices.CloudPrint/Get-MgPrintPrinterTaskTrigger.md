@@ -44,13 +44,17 @@ For details about how to use this API to add pull printing support to Universal 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printtasktrigger-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CloudPrint
-```
 
 Get-MgPrintPrinterTaskTrigger -PrinterId $printerId
+
+```
+This example shows how to use the Get-MgPrintPrinterTaskTrigger Cmdlet.
+
 
 ## PARAMETERS
 

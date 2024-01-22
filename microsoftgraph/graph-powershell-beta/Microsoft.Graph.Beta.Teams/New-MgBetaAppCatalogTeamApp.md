@@ -35,23 +35,31 @@ The requiresReview property allows any user to submit an app for review by an ad
 Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
-$params = \[Zip file containing a Teams app package\]
+$params = [Zip file containing a Teams app package]
 
 
 New-MgBetaAppCatalogTeamApp -BodyParameter $params
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.Teams
-```
+This example shows how to use the New-MgBetaAppCatalogTeamApp Cmdlet.
 
-New-MgBetaAppCatalogTeamApp -Requiresreview true
+### Example 2: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
+
+New-MgBetaAppCatalogTeamApp -Requiresreview true 
+
+```
+This example shows how to use the New-MgBetaAppCatalogTeamApp Cmdlet.
+
 
 ## PARAMETERS
 

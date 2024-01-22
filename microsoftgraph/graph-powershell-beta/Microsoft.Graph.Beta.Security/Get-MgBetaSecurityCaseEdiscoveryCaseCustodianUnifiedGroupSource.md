@@ -40,13 +40,17 @@ Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -InputObject <IS
 Data source entity for groups associated with the custodian.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId
+
+```
+This example shows how to use the Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource Cmdlet.
+
 
 ## PARAMETERS
 

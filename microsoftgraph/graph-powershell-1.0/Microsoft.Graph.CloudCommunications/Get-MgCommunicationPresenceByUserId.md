@@ -36,11 +36,11 @@ Get the presence information for multiple users.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudcommunications-getpresencesbyuserid-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 $params = @{
 	ids = @(
@@ -50,6 +50,10 @@ $params = @{
 }
 
 Get-MgCommunicationPresenceByUserId -BodyParameter $params
+
+```
+This example shows how to use the Get-MgCommunicationPresenceByUserId Cmdlet.
+
 
 ## PARAMETERS
 

@@ -46,11 +46,10 @@ Update-MgDeviceManagementTelecomExpenseManagementPartner -InputObject <IDeviceMa
 Update the properties of a telecomExpenseManagementPartner object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.DeviceManagement.Administration
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.telecomExpenseManagementPartner"
@@ -58,10 +57,15 @@ $params = @{
 	url = "Url value"
 	appAuthorized = $true
 	enabled = $true
-	lastConnectionDateTime = \[System.DateTime\]::Parse("2016-12-31T23:58:36.6670033-08:00")
+	lastConnectionDateTime = [System.DateTime]::Parse("2016-12-31T23:58:36.6670033-08:00")
 }
 
 Update-MgDeviceManagementTelecomExpenseManagementPartner -TelecomExpenseManagementPartnerId $telecomExpenseManagementPartnerId -BodyParameter $params
+```
+This example shows how to use the Update-MgDeviceManagementTelecomExpenseManagementPartner Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

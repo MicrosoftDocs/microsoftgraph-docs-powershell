@@ -37,13 +37,17 @@ As a recommended best practice, apps should have at least two owners.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-delete-owners-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Applications
-```
 
 Remove-MgApplicationOwnerByRef -ApplicationId $applicationId -DirectoryObjectId $directoryObjectId
+```
+This example shows how to use the Remove-MgApplicationOwnerByRef Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
