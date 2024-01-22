@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgcontact
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Add new entity to contacts
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaContact](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaContact?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,39 +35,27 @@ New-MgContact -BodyParameter <IMicrosoftGraphOrgContact> [-WhatIf] [-Confirm] [<
 Add new entity to contacts
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
+```
 
 Get-MgContact
+
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgContact Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
+```
 
 Get-MgContact -Filter "startswith(displayName,'A')" -CountVariable CountVar -Top 1 -Sort "displayName" -ConsistencyLevel eventual
+
+### EXAMPLE 3
 ```
-This example shows how to use the New-MgContact Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
+```
 
 Get-MgContact -Search '"displayName:wa"' -CountVariable CountVar -ConsistencyLevel eventual
-```
-This example shows how to use the New-MgContact Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -407,7 +392,8 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceProvisioningErrors
-.
+Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from an organizational contact object .
+Supports $filter (eq, not, for isResolved and serviceInstance).
 To construct, see NOTES section for SERVICEPROVISIONINGERRORS properties and create a hash table.
 
 ```yaml
@@ -580,10 +566,11 @@ Only one of each type can ever be present in the collection.
   \[ProxyAddresses \<String\[\]\>\]: For example: 'SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com'.
 The any operator is required for filter expressions on multi-valued properties.
 Supports $filter (eq, not, ge, le, startsWith, /$count eq 0, /$count ne 0).
-  \[ServiceProvisioningErrors \<IMicrosoftGraphServiceProvisioningError\[\]\>\]: 
-    \[CreatedDateTime \<DateTime?\>\]: 
-    \[IsResolved \<Boolean?\>\]: 
-    \[ServiceInstance \<String\>\]: 
+  \[ServiceProvisioningErrors \<IMicrosoftGraphServiceProvisioningError\[\]\>\]: Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from an organizational contact object . 
+Supports $filter (eq, not, for isResolved and serviceInstance).
+    \[CreatedDateTime \<DateTime?\>\]: The date and time at which the error occurred.
+    \[IsResolved \<Boolean?\>\]: Indicates whether the error has been attended to.
+    \[ServiceInstance \<String\>\]: Qualified service instance (for example, 'SharePoint/Dublin') that published the service error information.
   \[Surname \<String\>\]: Last name for this organizational contact.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq for null values).
   \[TransitiveMemberOf \<IMicrosoftGraphDirectoryObject\[\]\>\]: Groups that this contact is a member of, including groups that the contact is nested under.
@@ -634,10 +621,11 @@ Only one of each type can ever be present in the collection.
   \[Region \<String\>\]: 
   \[Type \<String\>\]: phoneType
 
-SERVICEPROVISIONINGERRORS \<IMicrosoftGraphServiceProvisioningError\[\]\>: .
-  \[CreatedDateTime \<DateTime?\>\]: 
-  \[IsResolved \<Boolean?\>\]: 
-  \[ServiceInstance \<String\>\]: 
+SERVICEPROVISIONINGERRORS \<IMicrosoftGraphServiceProvisioningError\[\]\>: Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from an organizational contact object .
+Supports $filter (eq, not, for isResolved and serviceInstance).
+  \[CreatedDateTime \<DateTime?\>\]: The date and time at which the error occurred.
+  \[IsResolved \<Boolean?\>\]: Indicates whether the error has been attended to.
+  \[ServiceInstance \<String\>\]: Qualified service instance (for example, 'SharePoint/Dublin') that published the service error information.
 
 TRANSITIVEMEMBEROF \<IMicrosoftGraphDirectoryObject\[\]\>: Groups that this contact is a member of, including groups that the contact is nested under.
 Read-only.
@@ -648,8 +636,6 @@ Read-only.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
-[New-MgBetaContact](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaContact?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgcontact](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgcontact)
-
 

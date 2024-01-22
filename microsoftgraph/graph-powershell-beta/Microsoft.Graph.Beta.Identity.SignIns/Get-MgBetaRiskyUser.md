@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskyuser
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaRiskyUser
 
 ## SYNOPSIS
 Users that are flagged as at-risk by Microsoft Entra ID Protection.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgRiskyUser](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskyUser?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,39 +34,32 @@ Get-MgBetaRiskyUser -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 Users that are flagged as at-risk by Microsoft Entra ID Protection.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/riskyusers-list-permissions.md)]
-
 ## EXAMPLES
-### Example 1: List all risky users
-```powershell
+
+### EXAMPLE 1
+```
 Connect-MgBetaGraph -Scopes "IdentityRiskyUser.Read.All"
 Select-MgBetaProfile beta
 Get-MgBetaRiskyUser | Format-Table UserDisplayName, RiskDetail, RiskLevel, RiskLastUpdatedDateTime
+```
 
 UserDisplayName RiskDetail                        RiskLevel RiskLastUpdatedDateTime
 --------------- ----------                        --------- -----------------------
 Alex Su         adminConfirmedUserCompromised     high      5/30/2022 12:54:16 AM
 tracys          adminConfirmedUserCompromised     high      5/30/2022 12:44:25 AM
 Jason Mayer     userPerformedSecuredPasswordReset none      7/4/2022 4:36:44 AM
+
+### EXAMPLE 2
 ```
-
-This command returns all risky users
-
-### Example 2: List all risky users by RiskLevel
-```powershell
 Connect-MgBetaGraph -Scopes "IdentityRiskyUser.Read.All"
 Select-MgBetaProfile beta
 Get-MgBetaRiskyUser -Filter "RiskLevel ne 'none'" | Format-Table UserDisplayName, RiskDetail, RiskLevel, RiskLastUpdatedDateTime
+```
 
 UserDisplayName RiskDetail                    RiskLevel RiskLastUpdatedDateTime
 --------------- ----------                    --------- -----------------------
 Alex Su         adminConfirmedUserCompromised high      5/30/2022 12:54:16 AM
 tracys          adminConfirmedUserCompromised high      5/30/2022 12:44:25 AM
-```
-
-This command retruns all risky users whose risk level is not none
-
 
 ## PARAMETERS
 
@@ -351,8 +340,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgRiskyUser](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskyUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskyuser)
-
 

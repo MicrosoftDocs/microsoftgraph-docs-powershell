@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetadriverootversioncontent
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update content for the navigation property versions in drives
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgDriveRootVersionContent](/powershell/module/Microsoft.Graph.Files/Set-MgDriveRootVersionContent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Set-MgBetaDriveRootVersionContent -InputObject <IFilesIdentity> [-Data <Stream>]
 
 ## DESCRIPTION
 Update content for the navigation property versions in drives
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -184,9 +197,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgDriveRootVersionContent](/powershell/module/Microsoft.Graph.Files/Set-MgDriveRootVersionContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetadriverootversioncontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetadriverootversioncontent)
-
-
 

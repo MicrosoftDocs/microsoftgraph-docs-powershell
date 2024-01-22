@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareplygroupconversationthreadpost
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action reply
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgReplyGroupConversationThreadPost](/powershell/module/Microsoft.Graph.Groups/Invoke-MgReplyGroupConversationThreadPost?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -48,10 +45,11 @@ Invoke-MgBetaReplyGroupConversationThreadPost -InputObject <IGroupsIdentity>
 Invoke action reply
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Groups
+```
 
 $params = @{
 	Post = @{
@@ -59,7 +57,7 @@ $params = @{
 			ContentType = ""
 			Content = "content-value"
 		}
-		ReceivedDateTime = [System.DateTime]::Parse("datetime-value")
+		ReceivedDateTime = \[System.DateTime\]::Parse("datetime-value")
 		HasAttachments = $true
 		From = @{
 			EmailAddress = @{
@@ -83,8 +81,8 @@ $params = @{
 			}
 		)
 		ConversationId = "conversationId-value"
-		CreatedDateTime = [System.DateTime]::Parse("datetime-value")
-		LastModifiedDateTime = [System.DateTime]::Parse("datetime-value")
+		CreatedDateTime = \[System.DateTime\]::Parse("datetime-value")
+		LastModifiedDateTime = \[System.DateTime\]::Parse("datetime-value")
 		ChangeKey = "changeKey-value"
 		Categories = @(
 			"categories-value"
@@ -95,7 +93,7 @@ $params = @{
 		Attachments = @(
 			@{
 				"@odata.type" = "#microsoft.graph.fileAttachment"
-				LastModifiedDateTime = [System.DateTime]::Parse("datetime-value")
+				LastModifiedDateTime = \[System.DateTime\]::Parse("datetime-value")
 				Name = "name-value"
 				ContentType = "contentType-value"
 				Size = 99
@@ -107,11 +105,6 @@ $params = @{
 }
 
 Invoke-MgBetaReplyGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params
-```
-This example shows how to use the Invoke-MgBetaReplyGroupConversationThreadPost Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -390,6 +383,7 @@ Read-only.
 
 INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[BaseSitePageId \<String\>\]: The unique identifier of baseSitePage
   \[ContentTypeId \<String\>\]: The unique identifier of contentType
   \[ConversationId \<String\>\]: The unique identifier of conversation
   \[ConversationThreadId \<String\>\]: The unique identifier of conversationThread
@@ -405,6 +399,8 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[ExtensionId \<String\>\]: The unique identifier of extension
   \[GroupId \<String\>\]: The unique identifier of group
   \[GroupLifecyclePolicyId \<String\>\]: The unique identifier of groupLifecyclePolicy
+  \[HorizontalSectionColumnId \<String\>\]: The unique identifier of horizontalSectionColumn
+  \[HorizontalSectionId \<String\>\]: The unique identifier of horizontalSection
   \[IncludePersonalNotebooks \<Boolean?\>\]: Usage: includePersonalNotebooks={includePersonalNotebooks}
   \[Interval \<String\>\]: Usage: interval='{interval}'
   \[ListId \<String\>\]: The unique identifier of list
@@ -430,6 +426,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[UniqueName \<String\>\]: Alternate key of group
   \[User \<String\>\]: Usage: User='{User}'
   \[UserId \<String\>\]: The unique identifier of user
+  \[WebPartId \<String\>\]: The unique identifier of webPart
 
 POST \<IMicrosoftGraphPost\>: post
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -518,8 +515,6 @@ Read-only.
     \[Value \<String\>\]: A property value.
 
 ## RELATED LINKS
-[Invoke-MgReplyGroupConversationThreadPost](/powershell/module/Microsoft.Graph.Groups/Invoke-MgReplyGroupConversationThreadPost?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareplygroupconversationthreadpost](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareplygroupconversationthreadpost)
-
 

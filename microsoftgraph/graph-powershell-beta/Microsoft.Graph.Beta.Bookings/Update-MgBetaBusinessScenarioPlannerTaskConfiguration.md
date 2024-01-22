@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannertaskconfiguration
 schema: 2.0.0
-ms.prod: business-scenarios
 ---
 
 # Update-MgBetaBusinessScenarioPlannerTaskConfiguration
@@ -42,8 +41,17 @@ Update-MgBetaBusinessScenarioPlannerTaskConfiguration -InputObject <IBookingsIde
 ## DESCRIPTION
 Update the properties of a plannerTaskConfiguration object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannertaskconfiguration-update-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -208,6 +216,7 @@ Possible values are: Allow, Block
 Allowed override values will be dependent on the property affected by the rule.
             \[Rules \<String\[\]\>\]: Overridden rules.
 These are used as rules for the override instead of the default rules.
+        \[ApprovalAttachment \<IMicrosoftGraphPlannerFieldRules\>\]: plannerFieldRules
         \[Assignments \<IMicrosoftGraphPlannerFieldRules\>\]: plannerFieldRules
         \[CheckLists \<IMicrosoftGraphPlannerFieldRules\>\]: plannerFieldRules
         \[CompletionRequirements \<String\[\]\>\]: Rules and restrictions for completion requirements of the task.
@@ -216,6 +225,7 @@ Accepted values are allow, add, remove, edit, and block.
 Accepted values are allow and block.
         \[DueDate \<String\[\]\>\]: Rules and restrictions for changing the due date of the task.
 Accepted values are allow and block.
+        \[Forms \<IMicrosoftGraphPlannerFieldRules\>\]: plannerFieldRules
         \[Move \<String\[\]\>\]: Rules and restrictions for moving the task between buckets or plans.
 Accepted values are allow, moveBetweenPlans, moveBetweenBuckets, and block.
         \[Notes \<String\[\]\>\]: Rules and restrictions for changing the notes of the task.
@@ -253,6 +263,7 @@ Possible values are: Allow, Block
 Allowed override values will be dependent on the property affected by the rule.
           \[Rules \<String\[\]\>\]: Overridden rules.
 These are used as rules for the override instead of the default rules.
+      \[ApprovalAttachment \<IMicrosoftGraphPlannerFieldRules\>\]: plannerFieldRules
       \[Assignments \<IMicrosoftGraphPlannerFieldRules\>\]: plannerFieldRules
       \[CheckLists \<IMicrosoftGraphPlannerFieldRules\>\]: plannerFieldRules
       \[CompletionRequirements \<String\[\]\>\]: Rules and restrictions for completion requirements of the task.
@@ -261,6 +272,7 @@ Accepted values are allow, add, remove, edit, and block.
 Accepted values are allow and block.
       \[DueDate \<String\[\]\>\]: Rules and restrictions for changing the due date of the task.
 Accepted values are allow and block.
+      \[Forms \<IMicrosoftGraphPlannerFieldRules\>\]: plannerFieldRules
       \[Move \<String\[\]\>\]: Rules and restrictions for moving the task between buckets or plans.
 Accepted values are allow, moveBetweenPlans, moveBetweenBuckets, and block.
       \[Notes \<String\[\]\>\]: Rules and restrictions for changing the notes of the task.
@@ -307,6 +319,4 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannertaskconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannertaskconfiguration)
-
-
 

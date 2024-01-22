@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Applications
 Module Guid: fae868a9-cfb4-4875-82ce-3954ba828375
 Download Help Link: {{ Update Download Link }}
@@ -390,6 +390,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalLicenseDetailCount](Get-MgBetaServicePrincipalLicenseDetailCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaServicePrincipalLicenseDetailTeamLicensingDetail](Get-MgBetaServicePrincipalLicenseDetailTeamLicensingDetail.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaServicePrincipalMemberGroup](Get-MgBetaServicePrincipalMemberGroup.md)
@@ -1114,5 +1117,4 @@ Locale: en-US
 
 ### [Update-MgBetaUserAppRoleAssignment](Update-MgBetaUserAppRoleAssignment.md)
 {{ Fill in the Description }}
-
 

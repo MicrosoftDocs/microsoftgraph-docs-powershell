@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduleopenshift
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of an openShift object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamScheduleOpenShift?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,10 +44,11 @@ Update-MgBetaTeamScheduleOpenShift -InputObject <ITeamsIdentity> -BodyParameter 
 Update the properties of an openShift object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	schedulingGroupId = "TAG_228940ed-ff84-4e25-b129-1b395cf78be0"
@@ -58,14 +56,14 @@ $params = @{
 		notes = "Inventory Management"
 		openSlotCount = 5
 		displayName = "Field shift"
-		startDateTime = [System.DateTime]::Parse("2018-10-04T00:58:45.340Z")
-		endDateTime = [System.DateTime]::Parse("2018-10-04T09:50:45.332Z")
+		startDateTime = \[System.DateTime\]::Parse("2018-10-04T00:58:45.340Z")
+		endDateTime = \[System.DateTime\]::Parse("2018-10-04T09:50:45.332Z")
 		theme = "white"
 		activities = @(
 			@{
 				isPaid = $true
-				startDateTime = [System.DateTime]::Parse("2018-10-04T00:58:45.340Z")
-				endDateTime = [System.DateTime]::Parse("2018-10-04T01:58:45.340Z")
+				startDateTime = \[System.DateTime\]::Parse("2018-10-04T00:58:45.340Z")
+				endDateTime = \[System.DateTime\]::Parse("2018-10-04T01:58:45.340Z")
 				code = ""
 				displayName = "Lunch"
 			}
@@ -75,11 +73,6 @@ $params = @{
 }
 
 Update-MgBetaTeamScheduleOpenShift -TeamId $teamId -OpenShiftId $openShiftId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaTeamScheduleOpenShift Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -179,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsStagedForDeletion
-.
+The openShift is marked for deletion, a process that is finalized when the schedule is shared.
 
 ```yaml
 Type: SwitchParameter
@@ -225,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -SchedulingGroupId
-ID for the scheduling group that the open shift belongs to.
+The ID of the schedulingGroup that contains the openShift.
 
 ```yaml
 Type: String
@@ -324,9 +317,10 @@ BODYPARAMETER \<IMicrosoftGraphOpenShift\>: openShift
     \[Application \<IMicrosoftGraphIdentity\>\]: identity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     \[Device \<IMicrosoftGraphIdentity\>\]: identity
     \[User \<IMicrosoftGraphIdentity\>\]: identity
   \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
@@ -358,8 +352,8 @@ Required.
     \[StartDateTime \<DateTime?\>\]: 
     \[Theme \<String\>\]: scheduleEntityTheme
     \[OpenSlotCount \<Int32?\>\]: Count of the number of slots for the given open shift.
-  \[IsStagedForDeletion \<Boolean?\>\]: 
-  \[SchedulingGroupId \<String\>\]: ID for the scheduling group that the open shift belongs to.
+  \[IsStagedForDeletion \<Boolean?\>\]: The openShift is marked for deletion, a process that is finalized when the schedule is shared.
+  \[SchedulingGroupId \<String\>\]: The ID of the schedulingGroup that contains the openShift.
   \[SharedOpenShift \<IMicrosoftGraphOpenShiftItem\>\]: openShiftItem
 
 CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
@@ -367,9 +361,10 @@ CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
   \[Application \<IMicrosoftGraphIdentity\>\]: identity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-    \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
   \[Device \<IMicrosoftGraphIdentity\>\]: identity
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
@@ -446,9 +441,10 @@ LASTMODIFIEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
   \[Application \<IMicrosoftGraphIdentity\>\]: identity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-    \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
   \[Device \<IMicrosoftGraphIdentity\>\]: identity
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
@@ -480,8 +476,6 @@ Required.
   \[OpenSlotCount \<Int32?\>\]: Count of the number of slots for the given open shift.
 
 ## RELATED LINKS
-[Update-MgTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamScheduleOpenShift?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduleopenshift](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduleopenshift)
-
 

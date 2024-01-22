@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrivelistdrive
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Allows access to the list as a drive resource with driveItems.
 Only present on document libraries.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveListDrive](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveListDrive?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,6 +28,22 @@ Get-MgBetaUserDriveListDrive -InputObject <IFilesIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 Allows access to the list as a drive resource with driveItems.
 Only present on document libraries.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -152,9 +165,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserDriveListDrive](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveListDrive?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrivelistdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrivelistdrive)
-
-
 

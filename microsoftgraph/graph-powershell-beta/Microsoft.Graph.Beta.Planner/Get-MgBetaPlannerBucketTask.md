@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerbuckettask
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # Get-MgBetaPlannerBucketTask
 
 ## SYNOPSIS
 Retrieve a list of plannerTask objects associated to a plannerBucket object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPlannerBucketTask](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerBucketTask?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -25,21 +21,14 @@ Get-MgBetaPlannerBucketTask -PlannerBucketId <String> [-ExpandProperty <String[]
 ## DESCRIPTION
 Retrieve a list of plannerTask objects associated to a plannerBucket object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerbucket-list-tasks-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Planner
+```
 
 Get-MgBetaPlannerBucketTask -PlannerBucketId $plannerBucketId
-
-```
-This example shows how to use the Get-MgBetaPlannerBucketTask Cmdlet.
-
 
 ## PARAMETERS
 
@@ -220,8 +209,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgPlannerBucketTask](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerBucketTask?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerbuckettask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerbuckettask)
-
 

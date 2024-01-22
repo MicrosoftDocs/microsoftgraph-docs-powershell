@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertaskdetail
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # Update-MgBetaPlannerTaskDetail
@@ -11,16 +10,14 @@ ms.prod: planner
 ## SYNOPSIS
 Update the navigation property details in planner
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPlannerTaskDetail](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerTaskDetail?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaPlannerTaskDetail -PlannerTaskId <String> -IfMatch <String> [-AdditionalProperties <Hashtable>]
- [-Checklist <Hashtable>] [-CompletionRequirements <IMicrosoftGraphPlannerTaskCompletionRequirementDetails>]
- [-Description <String>] [-Id <String>] [-Notes <IMicrosoftGraphItemBody>] [-PreviewType <String>]
+ [-ApprovalAttachment <IMicrosoftGraphPlannerBaseApprovalAttachment>] [-Checklist <Hashtable>]
+ [-CompletionRequirements <IMicrosoftGraphPlannerTaskCompletionRequirementDetails>] [-Description <String>]
+ [-Forms <Hashtable>] [-Id <String>] [-Notes <IMicrosoftGraphItemBody>] [-PreviewType <String>]
  [-References <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -33,10 +30,10 @@ Update-MgBetaPlannerTaskDetail -PlannerTaskId <String> -IfMatch <String>
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaPlannerTaskDetail -InputObject <IPlannerIdentity> -IfMatch <String>
- [-AdditionalProperties <Hashtable>] [-Checklist <Hashtable>]
- [-CompletionRequirements <IMicrosoftGraphPlannerTaskCompletionRequirementDetails>] [-Description <String>]
- [-Id <String>] [-Notes <IMicrosoftGraphItemBody>] [-PreviewType <String>] [-References <Hashtable>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-ApprovalAttachment <IMicrosoftGraphPlannerBaseApprovalAttachment>]
+ [-Checklist <Hashtable>] [-CompletionRequirements <IMicrosoftGraphPlannerTaskCompletionRequirementDetails>]
+ [-Description <String>] [-Forms <Hashtable>] [-Id <String>] [-Notes <IMicrosoftGraphItemBody>]
+ [-PreviewType <String>] [-References <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -48,14 +45,12 @@ Update-MgBetaPlannerTaskDetail -InputObject <IPlannerIdentity> -IfMatch <String>
 ## DESCRIPTION
 Update the navigation property details in planner
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannertaskdetails-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Planner
+```
 
 $params = @{
 	previewType = "noPreview"
@@ -90,11 +85,6 @@ Updated references:Related links"
 }
 
 Update-MgBetaPlannerTaskDetail -PlannerTaskId $plannerTaskId -BodyParameter $params-If-Match W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
-```
-This example shows how to use the Update-MgBetaPlannerTaskDetail Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -103,6 +93,22 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ApprovalAttachment
+plannerBaseApprovalAttachment
+To construct, see NOTES section for APPROVALATTACHMENT properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphPlannerBaseApprovalAttachment
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -165,6 +171,21 @@ Description of the task.
 
 ```yaml
 Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Forms
+plannerFormsDictionary
+
+```yaml
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -330,18 +351,33 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
+APPROVALATTACHMENT \<IMicrosoftGraphPlannerBaseApprovalAttachment\>: plannerBaseApprovalAttachment
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Status \<String\>\]: plannerApprovalStatus
+
 BODYPARAMETER \<IMicrosoftGraphPlannerTaskDetails\>: plannerTaskDetails
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+  \[ApprovalAttachment \<IMicrosoftGraphPlannerBaseApprovalAttachment\>\]: plannerBaseApprovalAttachment
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Status \<String\>\]: plannerApprovalStatus
   \[Checklist \<IMicrosoftGraphPlannerChecklistItems\>\]: plannerChecklistItems
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[CompletionRequirements \<IMicrosoftGraphPlannerTaskCompletionRequirementDetails\>\]: plannerTaskCompletionRequirementDetails
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[ApprovalRequirement \<IMicrosoftGraphPlannerApprovalRequirement\>\]: plannerApprovalRequirement
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[IsApprovalRequired \<Boolean?\>\]: 
     \[ChecklistRequirement \<IMicrosoftGraphPlannerChecklistRequirement\>\]: plannerChecklistRequirement
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[RequiredChecklistItemIds \<String\[\]\>\]: A collection of required plannerChecklistItems identifiers to complete the plannerTask.
+    \[FormsRequirement \<IMicrosoftGraphPlannerFormsRequirement\>\]: plannerFormsRequirement
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[RequiredForms \<String\[\]\>\]: 
   \[Description \<String\>\]: Description of the task.
+  \[Forms \<IMicrosoftGraphPlannerFormsDictionary\>\]: plannerFormsDictionary
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[Notes \<IMicrosoftGraphItemBody\>\]: itemBody
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[Content \<String\>\]: The content of the item.
@@ -352,9 +388,15 @@ Read-only.
 
 COMPLETIONREQUIREMENTS \<IMicrosoftGraphPlannerTaskCompletionRequirementDetails\>: plannerTaskCompletionRequirementDetails
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ApprovalRequirement \<IMicrosoftGraphPlannerApprovalRequirement\>\]: plannerApprovalRequirement
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[IsApprovalRequired \<Boolean?\>\]: 
   \[ChecklistRequirement \<IMicrosoftGraphPlannerChecklistRequirement\>\]: plannerChecklistRequirement
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[RequiredChecklistItemIds \<String\[\]\>\]: A collection of required plannerChecklistItems identifiers to complete the plannerTask.
+  \[FormsRequirement \<IMicrosoftGraphPlannerFormsRequirement\>\]: plannerFormsRequirement
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[RequiredForms \<String\[\]\>\]: 
 
 INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
   \[GroupId \<String\>\]: The unique identifier of group
@@ -372,8 +414,6 @@ NOTES \<IMicrosoftGraphItemBody\>: itemBody
   \[ContentType \<String\>\]: bodyType
 
 ## RELATED LINKS
-[Update-MgPlannerTaskDetail](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerTaskDetail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertaskdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertaskdetail)
-
 

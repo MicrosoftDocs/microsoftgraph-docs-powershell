@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationuser
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Remove-MgBetaEducationUser
 
 ## SYNOPSIS
 Delete a user.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgEducationUser](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationUser?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,21 +27,14 @@ Remove-MgBetaEducationUser -InputObject <IEducationIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete a user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationuser-delete-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 Remove-MgBetaEducationUser -EducationUserId $educationUserId
-```
-This example shows how to use the Remove-MgBetaEducationUser Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -176,8 +165,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Remove-MgEducationUser](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationuser)
-
 

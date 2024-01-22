@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityconditionalaccesspolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Update-MgIdentityConditionalAccessPolicy
 
 ## SYNOPSIS
 Update the properties of a conditionalAccessPolicy object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -52,9 +48,9 @@ Update-MgIdentityConditionalAccessPolicy -InputObject <IIdentitySignInsIdentity>
 Update the properties of a conditionalAccessPolicy object.
 
 ## EXAMPLES
-### Example 1: Add sign in risk levels to an existing conditional access policy
 
-```powershell
+### EXAMPLE 1
+```
 Connect-MgGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
   
 $params = @{
@@ -66,11 +62,9 @@ $params = @{
     )
   }
 }
-
-Update-MgIdentityConditionalAccessPolicy -ConditionalAccessPolicyId '61c7530f-5c1d-44b2-a972-4ae658b7a9ac' -BodyParameter $params
 ```
 
-This example updates and existing access policy to add the sign in risk levels.
+Update-MgIdentityConditionalAccessPolicy -ConditionalAccessPolicyId '61c7530f-5c1d-44b2-a972-4ae658b7a9ac' -BodyParameter $params
 
 ## PARAMETERS
 
@@ -355,8 +349,8 @@ Read-only.
         \[Rule \<String\>\]: Rule syntax is similar to that used for membership rules for groups in Microsoft Entra ID.
 For details, see rules with multiple expressions
       \[ExcludeApplications \<String\[\]\>\]: Can be one of the following:  The list of client IDs (appId) explicitly excluded from the policy.
-Office365 - For the list of apps included in Office365, see Conditional Access target apps: Office 365
-      \[IncludeApplications \<String\[\]\>\]: Can be one of the following:  The list of client IDs (appId) the policy applies to, unless explicitly excluded (in excludeApplications)  All  Office365 - For the list of apps included in Office365, see Conditional Access target apps: Office 365
+Office365 - For the list of apps included in Office365, see Apps included in Conditional Access Office 365 app suite
+      \[IncludeApplications \<String\[\]\>\]: Can be one of the following:  The list of client IDs (appId) the policy applies to, unless explicitly excluded (in excludeApplications)  All  Office365 - For the list of apps included in Office365, see Apps included in Conditional Access Office 365 app suite
       \[IncludeAuthenticationContextClassReferences \<String\[\]\>\]: 
       \[IncludeUserActions \<String\[\]\>\]: User actions to include.
 Supported values are urn:user:registersecurityinfo and urn:user:registerdevice
@@ -472,8 +466,8 @@ CONDITIONS \<IMicrosoftGraphConditionalAccessConditionSet\>: conditionalAccessCo
       \[Rule \<String\>\]: Rule syntax is similar to that used for membership rules for groups in Microsoft Entra ID.
 For details, see rules with multiple expressions
     \[ExcludeApplications \<String\[\]\>\]: Can be one of the following:  The list of client IDs (appId) explicitly excluded from the policy.
-Office365 - For the list of apps included in Office365, see Conditional Access target apps: Office 365
-    \[IncludeApplications \<String\[\]\>\]: Can be one of the following:  The list of client IDs (appId) the policy applies to, unless explicitly excluded (in excludeApplications)  All  Office365 - For the list of apps included in Office365, see Conditional Access target apps: Office 365
+Office365 - For the list of apps included in Office365, see Apps included in Conditional Access Office 365 app suite
+    \[IncludeApplications \<String\[\]\>\]: Can be one of the following:  The list of client IDs (appId) the policy applies to, unless explicitly excluded (in excludeApplications)  All  Office365 - For the list of apps included in Office365, see Apps included in Conditional Access Office 365 app suite
     \[IncludeAuthenticationContextClassReferences \<String\[\]\>\]: 
     \[IncludeUserActions \<String\[\]\>\]: User actions to include.
 Supported values are urn:user:registersecurityinfo and urn:user:registerdevice
@@ -629,8 +623,6 @@ SESSIONCONTROLS \<IMicrosoftGraphConditionalAccessSessionControls\>: conditional
     \[Value \<Int32?\>\]: The number of days or hours.
 
 ## RELATED LINKS
-[Update-MgBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityconditionalaccesspolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityconditionalaccesspolicy)
-
 

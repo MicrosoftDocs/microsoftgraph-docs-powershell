@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmonitoring
@@ -28,6 +28,18 @@ Update-MgBetaDeviceManagementMonitoring -BodyParameter <IMicrosoftGraphDeviceMan
 
 ## DESCRIPTION
 Update the navigation property monitoring in deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -190,6 +202,14 @@ ALERTRULES \<IMicrosoftGraphDeviceManagementAlertRule\[\]\>: The collection of a
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
   \[AlertRuleTemplate \<String\>\]: alertRuleTemplate
+  \[Conditions \<IMicrosoftGraphDeviceManagementRuleCondition\[\]\>\]: The conditions that determine when to send alerts.
+For example, you can configure a condition to send an alert when provisioning fails for six or more Cloud PCs.
+    \[Aggregation \<String\>\]: aggregationType
+    \[ConditionCategory \<String\>\]: conditionCategory
+    \[Operator \<String\>\]: operatorType
+    \[RelationshipType \<String\>\]: relationshipType
+    \[ThresholdValue \<String\>\]: The threshold value of the alert condition.
+The threshold value can be a number in string form or string like 'WestUS'.
   \[Description \<String\>\]: The rule description.
   \[DisplayName \<String\>\]: The display name of the rule.
   \[Enabled \<Boolean?\>\]: The status of the rule that indicates whether the rule is enabled or disabled.
@@ -251,6 +271,14 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
     \[AlertRuleTemplate \<String\>\]: alertRuleTemplate
+    \[Conditions \<IMicrosoftGraphDeviceManagementRuleCondition\[\]\>\]: The conditions that determine when to send alerts.
+For example, you can configure a condition to send an alert when provisioning fails for six or more Cloud PCs.
+      \[Aggregation \<String\>\]: aggregationType
+      \[ConditionCategory \<String\>\]: conditionCategory
+      \[Operator \<String\>\]: operatorType
+      \[RelationshipType \<String\>\]: relationshipType
+      \[ThresholdValue \<String\>\]: The threshold value of the alert condition.
+The threshold value can be a number in string form or string like 'WestUS'.
     \[Description \<String\>\]: The rule description.
     \[DisplayName \<String\>\]: The display name of the rule.
     \[Enabled \<Boolean?\>\]: The status of the rule that indicates whether the rule is enabled or disabled.
@@ -278,6 +306,4 @@ Supported locale values are: en-us, cs-cz, de-de, es-es, fr-fr, hu-hu, it-it, ja
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmonitoring](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmonitoring)
-
-
 

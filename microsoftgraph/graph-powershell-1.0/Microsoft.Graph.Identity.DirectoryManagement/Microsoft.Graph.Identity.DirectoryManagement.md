@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 Module Guid: c767240d-585c-42cb-bb2f-6e76e6d639d4
 Download Help Link: {{ Update Download Link }}
@@ -63,6 +63,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgAdminPeopleProfileCardPropertyCount](Get-MgAdminPeopleProfileCardPropertyCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgAdminPeoplePronoun](Get-MgAdminPeoplePronoun.md)
 {{ Fill in the Description }}
 
 ### [Get-MgContact](Get-MgContact.md)
@@ -923,10 +926,10 @@ Locale: en-US
 ### [Test-MgOrganizationProperty](Test-MgOrganizationProperty.md)
 {{ Fill in the Description }}
 
-### [Update-MgAdminPeople](Update-MgAdminPeople.md)
+### [Update-MgAdminPeopleProfileCardProperty](Update-MgAdminPeopleProfileCardProperty.md)
 {{ Fill in the Description }}
 
-### [Update-MgAdminPeopleProfileCardProperty](Update-MgAdminPeopleProfileCardProperty.md)
+### [Update-MgAdminPeoplePronoun](Update-MgAdminPeoplePronoun.md)
 {{ Fill in the Description }}
 
 ### [Update-MgContact](Update-MgContact.md)
@@ -1015,5 +1018,4 @@ Locale: en-US
 
 ### [Update-MgUserScopedRoleMemberOf](Update-MgUserScopedRoleMemberOf.md)
 {{ Fill in the Description }}
-
 

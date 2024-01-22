@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 Module Guid: 8e808470-ff01-4270-a111-2339cdce072c
 Download Help Link: {{ Update Download Link }}
@@ -3257,6 +3257,9 @@ Locale: en-US
 ### [Set-MgBetaEntitlementManagementAccessPackageAssignmentPolicy](Set-MgBetaEntitlementManagementAccessPackageAssignmentPolicy.md)
 {{ Fill in the Description }}
 
+### [Set-MgBetaIdentityGovernanceAccessReviewDefinition](Set-MgBetaIdentityGovernanceAccessReviewDefinition.md)
+{{ Fill in the Description }}
+
 ### [Split-MgBetaEntitlementManagementConnectedOrganization](Split-MgBetaEntitlementManagementConnectedOrganization.md)
 {{ Fill in the Description }}
 
@@ -3441,9 +3444,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStageDecisionInsight](Update-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStageDecisionInsight.md)
-{{ Fill in the Description }}
-
-### [Update-MgBetaIdentityGovernanceAccessReviewDefinition](Update-MgBetaIdentityGovernanceAccessReviewDefinition.md)
 {{ Fill in the Description }}
 
 ### [Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstance](Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstance.md)
@@ -3931,5 +3931,4 @@ Locale: en-US
 
 ### [Update-MgBetaRoleManagementEntitlementManagementTransitiveRoleAssignmentAppScope](Update-MgBetaRoleManagementEntitlementManagementTransitiveRoleAssignmentAppScope.md)
 {{ Fill in the Description }}
-
 

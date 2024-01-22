@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetamarkchatunreadforuser
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Mark a chat as unread for a user.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgMarkChatUnreadForUser](/powershell/module/Microsoft.Graph.Teams/Invoke-MgMarkChatUnreadForUser?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,25 +44,21 @@ Invoke-MgBetaMarkChatUnreadForUser -InputObject <ITeamsIdentity>
 Mark a chat as unread for a user.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	user = @{
 		id = "d864e79f-a516-4d0f-9fee-0eeb4d61fdc2"
 		tenantId = "2a690434-97d9-4eed-83a6-f5f13600199a"
 	}
-	lastMessageReadDateTime = [System.DateTime]::Parse("2021-05-27T22:13:01.577Z")
+	lastMessageReadDateTime = \[System.DateTime\]::Parse("2021-05-27T22:13:01.577Z")
 }
 
 Invoke-MgBetaMarkChatUnreadForUser -ChatId $chatId -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgBetaMarkChatUnreadForUser Cmdlet.
-
 
 ## PARAMETERS
 
@@ -246,9 +239,10 @@ BODYPARAMETER \<IPathsMra0GcChatsChatIdMicrosoftGraphMarkchatunreadforuserPostRe
   \[User \<IMicrosoftGraphTeamworkUserIdentity\>\]: teamworkUserIdentity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-    \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     \[UserIdentityType \<String\>\]: teamworkUserIdentityType
 
 INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
@@ -295,14 +289,13 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 USER \<IMicrosoftGraphTeamworkUserIdentity\>: teamworkUserIdentity
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-  \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+  \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
   \[UserIdentityType \<String\>\]: teamworkUserIdentityType
 
 ## RELATED LINKS
-[Invoke-MgMarkChatUnreadForUser](/powershell/module/Microsoft.Graph.Teams/Invoke-MgMarkChatUnreadForUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetamarkchatunreadforuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetamarkchatunreadforuser)
-
 

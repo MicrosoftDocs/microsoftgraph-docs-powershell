@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeclass
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Get-MgBetaEducationMeClass
@@ -11,9 +10,6 @@ ms.prod: education
 ## SYNOPSIS
 Classes to which the user belongs.
 Nullable.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEducationMeClass](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeClass?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -40,21 +36,14 @@ Get-MgBetaEducationMeClass -InputObject <IEducationIdentity> [-ExpandProperty <S
 Classes to which the user belongs.
 Nullable.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationuser-list-classes-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 Get-MgBetaEducationMeClass
-
-```
-This example shows how to use the Get-MgBetaEducationMeClass Cmdlet.
-
 
 ## PARAMETERS
 
@@ -275,8 +264,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgEducationMeClass](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeClass?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeclass](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeclass)
-
 

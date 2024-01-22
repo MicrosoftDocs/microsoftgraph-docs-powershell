@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivebundle
 schema: 2.0.0
-ms.prod: sharepoint
-ms.prod: sharepoint
 ---
 
 # Get-MgGroupDriveBundle
 
 ## SYNOPSIS
 Retrieve the metadata for a \[bundle\]\[\] based on the unique ID of the bundle.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveBundle](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveBundle?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -39,11 +34,21 @@ Get-MgGroupDriveBundle -InputObject <IFilesIdentity> [-ExpandProperty <String[]>
 ## DESCRIPTION
 Retrieve the metadata for a \[bundle\]\[\] based on the unique ID of the bundle.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bundle-get-permissions.md)]
+## EXAMPLES
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bundle-list-permissions.md)]
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -301,9 +306,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupDriveBundle](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveBundle?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivebundle](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivebundle)
-
-
 

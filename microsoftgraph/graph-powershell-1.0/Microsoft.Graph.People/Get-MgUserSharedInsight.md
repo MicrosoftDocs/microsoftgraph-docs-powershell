@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.People-help.xml
 Module Name: Microsoft.Graph.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mgusersharedinsight
 schema: 2.0.0
-ms.prod: insights
 ---
 
 # Get-MgUserSharedInsight
@@ -41,22 +40,15 @@ This includes URLs, file attachments, and reference attachments to OneDrive for 
 This also includes URLs and reference attachments to Teams conversations.
 Ordered by recency of share.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/insights-list-shared-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.People
+```
 
 # A UPN can also be used as -UserId.
 Get-MgUserSharedInsight -UserId $userId
-
-```
-This example shows how to use the Get-MgUserSharedInsight Cmdlet.
-
 
 ## PARAMETERS
 
@@ -282,5 +274,4 @@ INPUTOBJECT \<IPeopleIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mgusersharedinsight](https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mgusersharedinsight)
-
 

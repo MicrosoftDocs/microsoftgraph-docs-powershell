@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharedriveitemcontent
 schema: 2.0.0
-ms.prod: files
 ---
 
 # Get-MgShareDriveItemContent
 
 ## SYNOPSIS
 The content stream, if the item represents a file.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaShareDriveItemContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareDriveItemContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,8 +25,21 @@ Get-MgShareDriveItemContent -InputObject <IFilesIdentity> -OutFile <String> [-Pa
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/shares-get-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -137,9 +146,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaShareDriveItemContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareDriveItemContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharedriveitemcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharedriveitemcontent)
-
-
 

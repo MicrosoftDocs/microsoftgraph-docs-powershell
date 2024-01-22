@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccesspolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # New-MgBetaIdentityConditionalAccessPolicy
 
 ## SYNOPSIS
 Create a new conditionalAccessPolicy.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityConditionalAccessPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -36,10 +32,11 @@ New-MgBetaIdentityConditionalAccessPolicy -BodyParameter <IMicrosoftGraphConditi
 Create a new conditionalAccessPolicy.
 
 ## EXAMPLES
-### Example 1: Require MFA to access Exchange Online outside of trusted locations
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	displayName = "Access to EXO requires MFA"
@@ -77,15 +74,11 @@ $params = @{
 }
 
 New-MgBetaIdentityConditionalAccessPolicy -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgBetaIdentityConditionalAccessPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Block access to Exchange Online from non-trusted regions
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	displayName = "Block access to EXO non-trusted regions."
@@ -119,15 +112,11 @@ $params = @{
 }
 
 New-MgBetaIdentityConditionalAccessPolicy -BodyParameter $params
+
+### EXAMPLE 3
 ```
-This example shows how to use the New-MgBetaIdentityConditionalAccessPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Use all conditions/controls
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	displayName = "Demo app for documentation"
@@ -238,15 +227,11 @@ $params = @{
 }
 
 New-MgBetaIdentityConditionalAccessPolicy -BodyParameter $params
+
+### EXAMPLE 4
 ```
-This example shows how to use the New-MgBetaIdentityConditionalAccessPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Require MFA to Exchange Online from non-complaint devices
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	displayName = "Require MFA to EXO from non-complaint devices."
@@ -280,11 +265,6 @@ $params = @{
 }
 
 New-MgBetaIdentityConditionalAccessPolicy -BodyParameter $params
-```
-This example shows how to use the New-MgBetaIdentityConditionalAccessPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -522,8 +502,8 @@ Read-only.
         \[Rule \<String\>\]: Rule syntax is similar to that used for membership rules for groups in Microsoft Entra ID.
 For details, see rules with multiple expressions
       \[ExcludeApplications \<String\[\]\>\]: Can be one of the following:  The list of client IDs (appId) explicitly excluded from the policy.
-Office365 - For the list of apps included in Office365, see Conditional Access target apps: Office 365
-      \[IncludeApplications \<String\[\]\>\]: Can be one of the following:  The list of client IDs (appId) the policy applies to, unless explicitly excluded (in excludeApplications)  All  Office365 - For the list of apps included in Office365, see Conditional Access target apps: Office 365
+Office365 - For the list of apps included in Office365, see Apps included in Conditional Access Office 365 app suite
+      \[IncludeApplications \<String\[\]\>\]: Can be one of the following:  The list of client IDs (appId) the policy applies to, unless explicitly excluded (in excludeApplications)  All  Office365 - For the list of apps included in Office365, see Apps included in Conditional Access Office 365 app suite
       \[IncludeAuthenticationContextClassReferences \<String\[\]\>\]: Authentication context class references include.
 Supported values are c1 through c25.
       \[IncludeUserActions \<String\[\]\>\]: User actions to include.
@@ -659,8 +639,8 @@ CONDITIONS \<IMicrosoftGraphConditionalAccessConditionSet\>: conditionalAccessCo
       \[Rule \<String\>\]: Rule syntax is similar to that used for membership rules for groups in Microsoft Entra ID.
 For details, see rules with multiple expressions
     \[ExcludeApplications \<String\[\]\>\]: Can be one of the following:  The list of client IDs (appId) explicitly excluded from the policy.
-Office365 - For the list of apps included in Office365, see Conditional Access target apps: Office 365
-    \[IncludeApplications \<String\[\]\>\]: Can be one of the following:  The list of client IDs (appId) the policy applies to, unless explicitly excluded (in excludeApplications)  All  Office365 - For the list of apps included in Office365, see Conditional Access target apps: Office 365
+Office365 - For the list of apps included in Office365, see Apps included in Conditional Access Office 365 app suite
+    \[IncludeApplications \<String\[\]\>\]: Can be one of the following:  The list of client IDs (appId) the policy applies to, unless explicitly excluded (in excludeApplications)  All  Office365 - For the list of apps included in Office365, see Apps included in Conditional Access Office 365 app suite
     \[IncludeAuthenticationContextClassReferences \<String\[\]\>\]: Authentication context class references include.
 Supported values are c1 through c25.
     \[IncludeUserActions \<String\[\]\>\]: User actions to include.
@@ -780,8 +760,6 @@ SESSIONCONTROLS \<IMicrosoftGraphConditionalAccessSessionControls\>: conditional
     \[Value \<Int32?\>\]: The number of days or hours.
 
 ## RELATED LINKS
-[New-MgIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityConditionalAccessPolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccesspolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccesspolicy)
-
 

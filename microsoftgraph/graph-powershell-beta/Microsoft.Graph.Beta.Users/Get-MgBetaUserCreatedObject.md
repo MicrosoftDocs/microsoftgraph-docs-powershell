@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausercreatedobject
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Get-MgBetaUserCreatedObject
@@ -12,9 +11,6 @@ ms.prod: users
 Directory objects that the user created.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserCreatedObject](/powershell/module/Microsoft.Graph.Users/Get-MgUserCreatedObject?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -42,23 +38,18 @@ Directory objects that the user created.
 Read-only.
 Nullable.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-createdobjects-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Get a list of directory objects that were created by a user
 
-```powershell
+### EXAMPLE 1
+```
 Get-MgBetaUserCreatedObject -UserId '7162fba5-6647-47a0-9d69-5837795f32e7'
+```
 
 Id                                   DeletedDateTime
 --                                   ---------------
 dd8ab0bb-8da3-4292-8c31-a7d91d04e292
 f61521f6-e79a-4c70-84bc-077a18fc9bc9
 94240411-75f7-44fe-b38a-674bd9f4d7c3
-```
-
-This command gets a list of all directory objects that have been created by the specified user.  This works for a user who isn't in any administrator role.
 
 ## PARAMETERS
 
@@ -299,8 +290,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserCreatedObject](/powershell/module/Microsoft.Graph.Users/Get-MgUserCreatedObject?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausercreatedobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausercreatedobject)
-
 

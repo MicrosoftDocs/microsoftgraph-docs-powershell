@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileinterest
 schema: 2.0.0
-ms.prod: people
 ---
 
 # New-MgBetaUserProfileInterest
@@ -49,12 +48,10 @@ New-MgBetaUserProfileInterest -InputObject <IPeopleIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create a new personInterest.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/profile-post-interests-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the New-MgBetaUserProfileInterest Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.People
 $params = @{
 	Categories = @(
@@ -67,8 +64,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfileInterest -UserId $userId -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaUserProfileInterest Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -507,5 +502,4 @@ SOURCE \<IMicrosoftGraphPersonDataSources\>: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileinterest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileinterest)
-
 

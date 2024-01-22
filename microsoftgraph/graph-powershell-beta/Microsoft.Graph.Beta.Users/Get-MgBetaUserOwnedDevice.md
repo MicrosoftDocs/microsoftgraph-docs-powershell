@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserowneddevice
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Get-MgBetaUserOwnedDevice
@@ -13,9 +12,6 @@ Devices owned by the user.
 Read-only.
 Nullable.
 Supports $expand.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserOwnedDevice](/powershell/module/Microsoft.Graph.Users/Get-MgUserOwnedDevice?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -44,18 +40,14 @@ Read-only.
 Nullable.
 Supports $expand.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-owneddevices-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaUserOwnedDevice Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOwnedDevice -UserId $userId
 ```
-This example shows how to use the Get-MgBetaUserOwnedDevice Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -312,8 +304,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserOwnedDevice](/powershell/module/Microsoft.Graph.Users/Get-MgUserOwnedDevice?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserowneddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserowneddevice)
-
 

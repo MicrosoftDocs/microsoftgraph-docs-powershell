@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitemdelta
@@ -42,34 +42,30 @@ Get-MgBetaSiteListItemDelta -InputObject <ISitesIdentity> [-Filter <String>] [-P
 Invoke function delta
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaSiteListItemDelta Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Sites
-Get-MgBetaSiteListItemDelta -SiteId $siteId -ListId $listId -Token "latest" 
+
+### EXAMPLE 1
 ```
-This example shows how to use the Get-MgBetaSiteListItemDelta Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaSiteListItemDelta Cmdlet
-```powershell
+Import-Module Microsoft.Graph.Beta.Sites
+Get-MgBetaSiteListItemDelta -SiteId $siteId -ListId $listId -Token "latest"
+```
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.Sites
 Get-MgBetaSiteListItemDelta -SiteId $siteId -ListId $listId -Token "latest"  -OutFile $outFileId
 ```
-This example shows how to use the Get-MgBetaSiteListItemDelta Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 3: Using the Get-MgBetaSiteListItemDelta Cmdlet
-```powershell
+
+### EXAMPLE 3
+```
 Import-Module Microsoft.Graph.Beta.Sites
 Get-MgBetaSiteListItemDelta -SiteId $siteId -ListId $listId
 ```
-This example shows how to use the Get-MgBetaSiteListItemDelta Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 4: Using the Get-MgBetaSiteListItemDelta Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Sites
-Get-MgBetaSiteListItemDelta -SiteId $siteId -ListId $listId -Token "1230919asd190410jlka" 
+
+### EXAMPLE 4
 ```
-This example shows how to use the Get-MgBetaSiteListItemDelta Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Import-Module Microsoft.Graph.Beta.Sites
+Get-MgBetaSiteListItemDelta -SiteId $siteId -ListId $listId -Token "1230919asd190410jlka"
+```
 
 ## PARAMETERS
 
@@ -314,6 +310,8 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
   \[GroupId \<String\>\]: The unique identifier of group
   \[GroupId1 \<String\>\]: The unique identifier of group
+  \[HorizontalSectionColumnId \<String\>\]: The unique identifier of horizontalSectionColumn
+  \[HorizontalSectionId \<String\>\]: The unique identifier of horizontalSection
   \[IncludePersonalNotebooks \<Boolean?\>\]: Usage: includePersonalNotebooks={includePersonalNotebooks}
   \[InformationProtectionLabelId \<String\>\]: The unique identifier of informationProtectionLabel
   \[Interval \<String\>\]: Usage: interval='{interval}'
@@ -349,9 +347,9 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[ThreatAssessmentResultId \<String\>\]: The unique identifier of threatAssessmentResult
   \[Token \<String\>\]: Usage: token='{token}'
   \[UserId \<String\>\]: The unique identifier of user
+  \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitemdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitemdelta)
-
 

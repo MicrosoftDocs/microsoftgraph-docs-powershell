@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementcertificateconnectordetailhealthmetrictimeseries
@@ -44,6 +44,22 @@ Get-MgBetaDeviceManagementCertificateConnectorDetailHealthMetricTimeSeries
 
 ## DESCRIPTION
 Invoke action getHealthMetricTimeSeries
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -245,6 +261,4 @@ Optional; if not specified, current time is used.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementcertificateconnectordetailhealthmetrictimeseries](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementcertificateconnectordetailhealthmetrictimeseries)
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancetermsofuseagreement
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of an agreement object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgIdentityGovernanceTermsOfUseAgreement](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceTermsOfUseAgreement?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,6 +46,18 @@ Update-MgBetaIdentityGovernanceTermsOfUseAgreement -InputObject <IIdentityGovern
 
 ## DESCRIPTION
 Update the properties of an agreement object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -117,7 +126,7 @@ Accept wildcard characters: False
 
 ### -DisplayName
 Display name of the agreement.
-The display name is used for internal tracking of the agreement but is not shown to end users who view the agreement.
+The display name is used for internal tracking of the agreement but isn't shown to end users who view the agreement.
 Supports $filter (eq).
 
 ```yaml
@@ -199,8 +208,8 @@ Accept wildcard characters: False
 ```
 
 ### -IsPerDeviceAcceptanceRequired
-This setting enables you to require end users to accept this agreement on every device that they are accessing it from.
-The end user will be required to register their device in Microsoft Entra ID, if they haven't already done so.
+This setting enables you to require end users to accept this agreement on every device that they're accessing it from.
+The end user is required to register their device in Microsoft Entra ID, if they haven't already done so.
 Supports $filter (eq).
 
 ```yaml
@@ -248,7 +257,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserReacceptRequiredFrequency
-The duration after which the user must re-accept the terms of use.
+The duration after which the user must reaccept the terms of use.
 The value is represented in ISO 8601 format for durations.
 
 ```yaml
@@ -364,7 +373,7 @@ Supports $filter (eq) and eq for null values.
 Supports $filter (eq).
     \[UserPrincipalName \<String\>\]: UPN of the user when the acceptance was recorded.
   \[DisplayName \<String\>\]: Display name of the agreement.
-The display name is used for internal tracking of the agreement but is not shown to end users who view the agreement.
+The display name is used for internal tracking of the agreement but isn't shown to end users who view the agreement.
 Supports $filter (eq).
   \[File \<IMicrosoftGraphAgreementFile\>\]: agreementFile
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -439,8 +448,8 @@ Read-only.
   \[Files \<IMicrosoftGraphAgreementFileLocalization\[\]\>\]: PDFs linked to this agreement.
 Note: This property is in the process of being deprecated.
 Use the  file property instead.
-  \[IsPerDeviceAcceptanceRequired \<Boolean?\>\]: This setting enables you to require end users to accept this agreement on every device that they are accessing it from.
-The end user will be required to register their device in Microsoft Entra ID, if they haven't already done so.
+  \[IsPerDeviceAcceptanceRequired \<Boolean?\>\]: This setting enables you to require end users to accept this agreement on every device that they're accessing it from.
+The end user is required to register their device in Microsoft Entra ID, if they haven't already done so.
 Supports $filter (eq).
   \[IsViewingBeforeAcceptanceRequired \<Boolean?\>\]: Indicates whether the user has to expand the agreement before accepting.
 Supports $filter (eq).
@@ -452,7 +461,7 @@ For example, PT1M represents a time period of one month.
     \[StartDateTime \<DateTime?\>\]: The DateTime when the agreement is set to expire for all users.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  \[UserReacceptRequiredFrequency \<TimeSpan?\>\]: The duration after which the user must re-accept the terms of use.
+  \[UserReacceptRequiredFrequency \<TimeSpan?\>\]: The duration after which the user must reaccept the terms of use.
 The value is represented in ISO 8601 format for durations.
 
 FILE \<IMicrosoftGraphAgreementFile\>: agreementFile
@@ -688,9 +697,6 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
-[Update-MgIdentityGovernanceTermsOfUseAgreement](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceTermsOfUseAgreement?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancetermsofuseagreement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancetermsofuseagreement)
-
-
 

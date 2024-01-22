@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggrouprejectedsenderbyref
@@ -11,9 +11,6 @@ schema: 2.0.0
 Specify the user or group in @odata.id in the request body.
 Users in the rejected senders list can't post to conversations of the group (identified in the POST request URL).
 Make sure you don't specify the same user or group in the rejected senders and accepted senders lists, otherwise you'll get an error.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupRejectedSenderByRef](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupRejectedSenderByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,21 +44,17 @@ Users in the rejected senders list can't post to conversations of the group (ide
 Make sure you don't specify the same user or group in the rejected senders and accepted senders lists, otherwise you'll get an error.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Groups
+```
 
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/v1.0/users/alexd@contoso.com"
 }
 
 New-MgGroupRejectedSenderByRef -GroupId $groupId -BodyParameter $params
-```
-This example shows how to use the New-MgGroupRejectedSenderByRef Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -248,8 +241,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
-[New-MgBetaGroupRejectedSenderByRef](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupRejectedSenderByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggrouprejectedsenderbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggrouprejectedsenderbyref)
-
 

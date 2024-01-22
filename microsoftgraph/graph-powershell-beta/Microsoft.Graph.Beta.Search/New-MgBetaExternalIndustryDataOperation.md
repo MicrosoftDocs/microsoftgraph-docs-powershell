@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydataoperation
@@ -27,6 +27,18 @@ New-MgBetaExternalIndustryDataOperation -BodyParameter <IMicrosoftGraphLongRunni
 
 ## DESCRIPTION
 Create new navigation property to operations for external
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -63,7 +75,7 @@ Accept wildcard characters: False
 
 ### -CreatedDateTime
 The start time of the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
@@ -96,7 +108,7 @@ Accept wildcard characters: False
 
 ### -LastActionDateTime
 The time of the last action in the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
@@ -207,10 +219,10 @@ BODYPARAMETER \<IMicrosoftGraphLongRunningOperation\>: longRunningOperation
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
   \[CreatedDateTime \<DateTime?\>\]: The start time of the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   \[LastActionDateTime \<DateTime?\>\]: The time of the last action in the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   \[ResourceLocation \<String\>\]: URI of the resource that the operation is performed on.
   \[Status \<String\>\]: longRunningOperationStatus
@@ -219,6 +231,4 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydataoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydataoperation)
-
-
 

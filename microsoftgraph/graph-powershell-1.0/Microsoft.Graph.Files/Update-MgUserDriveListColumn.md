@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdrivelistcolumn
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property columns in users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveListColumn?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -62,6 +59,22 @@ Update-MgUserDriveListColumn -InputObject <IFilesIdentity> -BodyParameter <IMicr
 
 ## DESCRIPTION
 Update the navigation property columns in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -1215,9 +1228,6 @@ User will be prompted with this message if validation fails.
 For examples, see Examples of common formulas in lists.
 
 ## RELATED LINKS
-[Update-MgBetaUserDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveListColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdrivelistcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdrivelistcolumn)
-
-
 

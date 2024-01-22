@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupcalendarevent
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Get-MgBetaGroupCalendarEvent
@@ -12,9 +11,6 @@ ms.prod: outlook
 The events in the calendar.
 Navigation property.
 Read-only.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupCalendarEvent](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupCalendarEvent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -41,6 +37,18 @@ Get-MgBetaGroupCalendarEvent -InputObject <ICalendarIdentity> [-ExpandProperty <
 The events in the calendar.
 Navigation property.
 Read-only.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -257,9 +265,6 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[WorkspaceId \<String\>\]: The unique identifier of workspace
 
 ## RELATED LINKS
-[Get-MgGroupCalendarEvent](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupCalendarEvent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupcalendarevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupcalendarevent)
-
-
 

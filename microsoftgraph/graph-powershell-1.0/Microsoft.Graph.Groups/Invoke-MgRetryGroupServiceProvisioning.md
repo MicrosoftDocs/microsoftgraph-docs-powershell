@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgretrygroupserviceprovisioning
@@ -8,10 +8,7 @@ schema: 2.0.0
 # Invoke-MgRetryGroupServiceProvisioning
 
 ## SYNOPSIS
-Invoke action retryServiceProvisioning
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaRetryGroupServiceProvisioning](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaRetryGroupServiceProvisioning?view=graph-powershell-beta)
+Retry the group service provisioning.
 
 ## SYNTAX
 
@@ -27,7 +24,19 @@ Invoke-MgRetryGroupServiceProvisioning -InputObject <IGroupsIdentity> [-PassThru
 ```
 
 ## DESCRIPTION
-Invoke action retryServiceProvisioning
+Retry the group service provisioning.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -161,9 +170,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
-[Invoke-MgBetaRetryGroupServiceProvisioning](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaRetryGroupServiceProvisioning?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgretrygroupserviceprovisioning](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgretrygroupserviceprovisioning)
-
-
 

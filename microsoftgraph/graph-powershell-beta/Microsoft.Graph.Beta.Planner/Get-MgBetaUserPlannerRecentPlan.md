@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannerrecentplan
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # Get-MgBetaUserPlannerRecentPlan
@@ -39,18 +38,14 @@ Read-only.
 Nullable.
 Returns the plannerPlans that have been recently viewed by the user in apps that support recent plans.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/planneruser-list-recentplans-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaUserPlannerRecentPlan Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Planner
 # A UPN can also be used as -UserId.
 Get-MgBetaUserPlannerRecentPlan -UserId $userId
 ```
-This example shows how to use the Get-MgBetaUserPlannerRecentPlan Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -279,5 +274,4 @@ INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannerrecentplan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannerrecentplan)
-
 

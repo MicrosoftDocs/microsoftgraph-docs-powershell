@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitetermstoresetchild
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # New-MgBetaSiteTermStoreSetChild
 
 ## SYNOPSIS
 Create a new term object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSiteTermStoreSetChild](/powershell/module/Microsoft.Graph.Sites/New-MgSiteTermStoreSetChild?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -83,14 +79,12 @@ New-MgBetaSiteTermStoreSetChild -InputObject <ISitesIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Create a new term object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/termstore-term-post-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Sites
+```
 
 $params = @{
 	labels = @(
@@ -103,11 +97,6 @@ $params = @{
 }
 
 New-MgBetaSiteTermStoreSetChild -SiteId $siteId -SetId $setId -BodyParameter $params
-```
-This example shows how to use the New-MgBetaSiteTermStoreSetChild Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -515,6 +504,8 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
   \[GroupId \<String\>\]: The unique identifier of group
   \[GroupId1 \<String\>\]: The unique identifier of group
+  \[HorizontalSectionColumnId \<String\>\]: The unique identifier of horizontalSectionColumn
+  \[HorizontalSectionId \<String\>\]: The unique identifier of horizontalSection
   \[IncludePersonalNotebooks \<Boolean?\>\]: Usage: includePersonalNotebooks={includePersonalNotebooks}
   \[InformationProtectionLabelId \<String\>\]: The unique identifier of informationProtectionLabel
   \[Interval \<String\>\]: Usage: interval='{interval}'
@@ -550,6 +541,7 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[ThreatAssessmentResultId \<String\>\]: The unique identifier of threatAssessmentResult
   \[Token \<String\>\]: Usage: token='{token}'
   \[UserId \<String\>\]: The unique identifier of user
+  \[WebPartId \<String\>\]: The unique identifier of webPart
 
 LABELS \<IMicrosoftGraphTermStoreLocalizedLabel\[\]\>: Label metadata for a term.
   \[IsDefault \<Boolean?\>\]: Indicates whether the label is the default label.
@@ -664,8 +656,6 @@ Read-only.
   \[Terms \<IMicrosoftGraphTermStoreTerm\[\]\>\]: All the terms under the set.
 
 ## RELATED LINKS
-[New-MgSiteTermStoreSetChild](/powershell/module/Microsoft.Graph.Sites/New-MgSiteTermStoreSetChild?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitetermstoresetchild](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitetermstoresetchild)
-
 

@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitepermission
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Update-MgSitePermission
 
 ## SYNOPSIS
 Update an application permission object on a site.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSitePermission?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -55,14 +51,12 @@ Update-MgSitePermission -InputObject <ISitesIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Update an application permission object on a site.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-update-permission-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Sites
+```
 
 $params = @{
 	roles = @(
@@ -71,11 +65,6 @@ $params = @{
 }
 
 Update-MgSitePermission -SiteId $siteId -PermissionId $permissionId -BodyParameter $params
-```
-This example shows how to use the Update-MgSitePermission Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -656,8 +645,6 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
   \[WebUrl \<String\>\]: A URL that opens the item in the browser on the OneDrive website.
 
 ## RELATED LINKS
-[Update-MgBetaSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSitePermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitepermission)
-
 

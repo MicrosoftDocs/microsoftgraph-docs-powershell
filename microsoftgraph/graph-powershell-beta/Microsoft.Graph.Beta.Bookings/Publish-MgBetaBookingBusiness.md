@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/publish-mgbetabookingbusiness
 schema: 2.0.0
-ms.prod: bookings
 ---
 
 # Publish-MgBetaBookingBusiness
@@ -12,14 +11,22 @@ ms.prod: bookings
 Make the scheduling page of this business available to external customers.
 Set the isPublished property to true, and publicUrl property to the URL of the scheduling page.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Publish-MgBookingBusiness](/powershell/module/Microsoft.Graph.Bookings/Publish-MgBookingBusiness?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Publish (Default)
 ```
 Publish-MgBetaBookingBusiness -BookingBusinessId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Publish1
+```
+Publish-MgBetaBookingBusiness -BookingBusinessId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### PublishViaIdentity1
+```
+Publish-MgBetaBookingBusiness -InputObject <IBookingsIdentity> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### PublishViaIdentity
@@ -32,17 +39,13 @@ Publish-MgBetaBookingBusiness -InputObject <IBookingsIdentity> [-PassThru] [-Wha
 Make the scheduling page of this business available to external customers.
 Set the isPublished property to true, and publicUrl property to the URL of the scheduling page.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingbusiness-publish-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Publish-MgBetaBookingBusiness Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Bookings
 Publish-MgBetaBookingBusiness -BookingBusinessId $bookingBusinessId
 ```
-This example shows how to use the Publish-MgBetaBookingBusiness Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -51,7 +54,7 @@ The unique identifier of bookingBusiness
 
 ```yaml
 Type: String
-Parameter Sets: Publish
+Parameter Sets: Publish, Publish1
 Aliases:
 
 Required: True
@@ -67,7 +70,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IBookingsIdentity
-Parameter Sets: PublishViaIdentity
+Parameter Sets: PublishViaIdentity1, PublishViaIdentity
 Aliases:
 
 Required: True
@@ -161,8 +164,6 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Publish-MgBookingBusiness](/powershell/module/Microsoft.Graph.Bookings/Publish-MgBookingBusiness?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/publish-mgbetabookingbusiness](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/publish-mgbetabookingbusiness)
-
 

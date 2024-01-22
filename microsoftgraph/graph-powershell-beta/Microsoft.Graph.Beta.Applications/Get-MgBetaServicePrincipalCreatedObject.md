@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalcreatedobject
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Get-MgBetaServicePrincipalCreatedObject
@@ -12,9 +11,6 @@ ms.prod: applications
 Directory objects created by this service principal.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalCreatedObject](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalCreatedObject?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -42,17 +38,13 @@ Directory objects created by this service principal.
 Read-only.
 Nullable.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-list-createdobjects-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaServicePrincipalCreatedObject Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Applications
 Get-MgBetaServicePrincipalCreatedObject -ServicePrincipalId $servicePrincipalId
 ```
-This example shows how to use the Get-MgBetaServicePrincipalCreatedObject Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -302,8 +294,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgServicePrincipalCreatedObject](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalCreatedObject?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalcreatedobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalcreatedobject)
-
 

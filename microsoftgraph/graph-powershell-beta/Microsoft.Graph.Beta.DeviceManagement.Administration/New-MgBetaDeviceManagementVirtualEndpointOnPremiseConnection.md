@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointonpremiseconnection
 schema: 2.0.0
-ms.prod: cloud-pc
 ---
 
 # New-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection
@@ -17,7 +16,9 @@ Create a new cloudPcOnPremisesConnection object for provisioning Cloud PCs.
 ```
 New-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection [-AdDomainName <String>]
  [-AdDomainPassword <String>] [-AdDomainUsername <String>] [-AdditionalProperties <Hashtable>]
- [-AlternateResourceUrl <String>] [-DisplayName <String>] [-HealthCheckStatus <String>]
+ [-AlternateResourceUrl <String>] [-ConnectionType <String>] [-DisplayName <String>]
+ [-HealthCheckStatus <String>]
+ [-HealthCheckStatusDetail <IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetail>]
  [-HealthCheckStatusDetails <IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetails>] [-Id <String>] [-InUse]
  [-ManagedBy <String>] [-OrganizationalUnit <String>] [-ResourceGroupId <String>] [-ScopeIds <String[]>]
  [-SubnetId <String>] [-SubscriptionId <String>] [-SubscriptionName <String>] [-Type <String>]
@@ -33,8 +34,17 @@ New-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection
 ## DESCRIPTION
 Create a new cloudPcOnPremisesConnection object for provisioning Cloud PCs.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-post-onpremisesconnections-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -133,6 +143,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ConnectionType
+cloudPcOnPremisesConnectionType
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -DisplayName
 The display name for the Azure network connection.
 
@@ -153,6 +178,22 @@ cloudPcOnPremisesConnectionStatus
 
 ```yaml
 Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -HealthCheckStatusDetail
+cloudPcOnPremisesConnectionStatusDetail
+To construct, see NOTES section for HEALTHCHECKSTATUSDETAIL properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetail
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -430,14 +471,14 @@ Required format: admin@contoso.com.
 Optional.
   \[AlternateResourceUrl \<String\>\]: The interface URL of the partner service's resource that links to this Azure network connection.
 Returned only on $select.
+  \[ConnectionType \<String\>\]: cloudPcOnPremisesConnectionType
   \[DisplayName \<String\>\]: The display name for the Azure network connection.
   \[HealthCheckStatus \<String\>\]: cloudPcOnPremisesConnectionStatus
-  \[HealthCheckStatusDetails \<IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetails\>\]: cloudPcOnPremisesConnectionStatusDetails
+  \[HealthCheckStatusDetail \<IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetail\>\]: cloudPcOnPremisesConnectionStatusDetail
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[EndDateTime \<DateTime?\>\]: The end time of the connection health check.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    \[HealthChecks \<IMicrosoftGraphCloudPcOnPremisesConnectionHealthCheck\[\]\>\]: All checks that are done on the connection.
+    \[EndDateTime \<DateTime?\>\]: 
+    \[HealthChecks \<IMicrosoftGraphCloudPcOnPremisesConnectionHealthCheck\[\]\>\]: 
+      \[AdditionalDetail \<String\>\]: 
       \[AdditionalDetails \<String\>\]: More details about the health check or the recommended action.
       \[CorrelationId \<String\>\]: The unique identifier of the health check item-related activities.
 This identifier can be useful in troubleshooting.
@@ -449,6 +490,13 @@ Read-only.
       \[StartDateTime \<DateTime?\>\]: The start time of the health check item.
 Read-only.
       \[Status \<String\>\]: cloudPcOnPremisesConnectionStatus
+    \[StartDateTime \<DateTime?\>\]: 
+  \[HealthCheckStatusDetails \<IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetails\>\]: cloudPcOnPremisesConnectionStatusDetails
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[EndDateTime \<DateTime?\>\]: The end time of the connection health check.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    \[HealthChecks \<IMicrosoftGraphCloudPcOnPremisesConnectionHealthCheck\[\]\>\]: All checks that are done on the connection.
     \[StartDateTime \<DateTime?\>\]: The start time of the connection health check.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -476,12 +524,31 @@ Required format: /subscriptions/{subscription-id}/resourceGroups/{resourceGroupN
   \[VirtualNetworkLocation \<String\>\]: Indicates resource location of the virtual target network.
 Read-only, computed value.
 
+HEALTHCHECKSTATUSDETAIL \<IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetail\>: cloudPcOnPremisesConnectionStatusDetail
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[EndDateTime \<DateTime?\>\]: 
+  \[HealthChecks \<IMicrosoftGraphCloudPcOnPremisesConnectionHealthCheck\[\]\>\]: 
+    \[AdditionalDetail \<String\>\]: 
+    \[AdditionalDetails \<String\>\]: More details about the health check or the recommended action.
+    \[CorrelationId \<String\>\]: The unique identifier of the health check item-related activities.
+This identifier can be useful in troubleshooting.
+    \[DisplayName \<String\>\]: The display name for this health check item.
+    \[EndDateTime \<DateTime?\>\]: The end time of the health check item.
+Read-only.
+    \[ErrorType \<String\>\]: cloudPcOnPremisesConnectionHealthCheckErrorType
+    \[RecommendedAction \<String\>\]: The recommended action to fix the corresponding error.
+    \[StartDateTime \<DateTime?\>\]: The start time of the health check item.
+Read-only.
+    \[Status \<String\>\]: cloudPcOnPremisesConnectionStatus
+  \[StartDateTime \<DateTime?\>\]: 
+
 HEALTHCHECKSTATUSDETAILS \<IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetails\>: cloudPcOnPremisesConnectionStatusDetails
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[EndDateTime \<DateTime?\>\]: The end time of the connection health check.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   \[HealthChecks \<IMicrosoftGraphCloudPcOnPremisesConnectionHealthCheck\[\]\>\]: All checks that are done on the connection.
+    \[AdditionalDetail \<String\>\]: 
     \[AdditionalDetails \<String\>\]: More details about the health check or the recommended action.
     \[CorrelationId \<String\>\]: The unique identifier of the health check item-related activities.
 This identifier can be useful in troubleshooting.
@@ -500,6 +567,4 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointonpremiseconnection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointonpremiseconnection)
-
-
 

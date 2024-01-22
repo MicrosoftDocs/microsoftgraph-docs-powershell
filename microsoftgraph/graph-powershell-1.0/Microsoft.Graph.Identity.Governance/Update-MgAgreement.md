@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgagreement
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update entity in agreements
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaAgreement](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaAgreement?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -48,6 +45,22 @@ Update-MgAgreement -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IM
 
 ## DESCRIPTION
 Update entity in agreements
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -116,7 +129,7 @@ Accept wildcard characters: False
 
 ### -DisplayName
 Display name of the agreement.
-The display name is used for internal tracking of the agreement but is not shown to end users who view the agreement.
+The display name is used for internal tracking of the agreement but isn't shown to end users who view the agreement.
 Supports $filter (eq).
 
 ```yaml
@@ -248,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserReacceptRequiredFrequency
-The duration after which the user must re-accept the terms of use.
+The duration after which the user must reaccept the terms of use.
 The value is represented in ISO 8601 format for durations.
 Supports $filter (eq).
 
@@ -363,7 +376,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Supports $filter (eq).
     \[UserPrincipalName \<String\>\]: UPN of the user when the acceptance was recorded.
   \[DisplayName \<String\>\]: Display name of the agreement.
-The display name is used for internal tracking of the agreement but is not shown to end users who view the agreement.
+The display name is used for internal tracking of the agreement but isn't shown to end users who view the agreement.
 Supports $filter (eq).
   \[File \<IMicrosoftGraphAgreementFile\>\]: agreementFile
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -450,7 +463,7 @@ For example, PT1M represents a time period of one month.
     \[StartDateTime \<DateTime?\>\]: The DateTime when the agreement is set to expire for all users.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  \[UserReacceptRequiredFrequency \<TimeSpan?\>\]: The duration after which the user must re-accept the terms of use.
+  \[UserReacceptRequiredFrequency \<TimeSpan?\>\]: The duration after which the user must reaccept the terms of use.
 The value is represented in ISO 8601 format for durations.
 Supports $filter (eq).
 
@@ -653,9 +666,6 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
-[Update-MgBetaAgreement](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaAgreement?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgagreement](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgagreement)
-
-
 

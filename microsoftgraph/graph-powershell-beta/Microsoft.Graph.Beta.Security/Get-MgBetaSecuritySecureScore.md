@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysecurescore
 schema: 2.0.0
-ms.prod: security
 ---
 
 # Get-MgBetaSecuritySecureScore
 
 ## SYNOPSIS
 Measurements of tenants' security posture to help protect them from threats.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecuritySecureScore](/powershell/module/Microsoft.Graph.Security/Get-MgSecuritySecureScore?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,21 +34,14 @@ Get-MgBetaSecuritySecureScore -InputObject <ISecurityIdentity> [-ExpandProperty 
 ## DESCRIPTION
 Measurements of tenants' security posture to help protect them from threats.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/securescores-list-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
+```
 
 Get-MgBetaSecuritySecureScore -SecureScoreId $secureScoreId
-```
-This example shows how to use the Get-MgBetaSecuritySecureScore Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -334,8 +323,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgSecuritySecureScore](/powershell/module/Microsoft.Graph.Security/Get-MgSecuritySecureScore?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysecurescore](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysecurescore)
-
 

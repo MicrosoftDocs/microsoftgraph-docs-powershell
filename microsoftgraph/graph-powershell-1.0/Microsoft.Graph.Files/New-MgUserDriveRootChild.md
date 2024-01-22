@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdriverootchild
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # New-MgUserDriveRootChild
 
 ## SYNOPSIS
 Create new navigation property to children for users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserDriveRootChild](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveRootChild?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -79,8 +75,17 @@ New-MgUserDriveRootChild -InputObject <IFilesIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Create new navigation property to children for users
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-post-children-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -1062,7 +1067,7 @@ Longer text description of the user's unique activity (example: document name, f
               \[DisplayText \<String\>\]: Required.
 Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)
           \[AgeGroup \<String\>\]: Sets the age group of the user.
-Allowed values: null, Minor, NotAdult and Adult.
+Allowed values: null, Minor, NotAdult, and Adult.
 For more information, see legal age group property definitions.
 Returned only on $select.
 Supports $filter (eq, ne, not, and in).
@@ -1118,7 +1123,7 @@ Read-only.
 Required on create.
 Supports $filter (eq only).
           \[AssignedLicenses \<IMicrosoftGraphAssignedLicense\[\]\>\]: The licenses that are assigned to the user, including inherited (group-based) licenses.
-This property doesn't differentiate directly assigned and inherited licenses.
+This property doesn't differentiate between directly assigned and inherited licenses.
 Use the licenseAssignmentStates property to identify the directly assigned and inherited licenses. 
 Not nullable.
 Returned only on $select.
@@ -1334,12 +1339,12 @@ Read-only.
             \[(Any) \<Object\>\]: This indicates any property can be added to this object.
             \[CertificateUserIds \<String\[\]\>\]: 
           \[Birthday \<DateTime?\>\]: The birthday of the user.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
 Returned only on $select.
           \[BusinessPhones \<String\[\]\>\]: The telephone numbers for the user.
-NOTE: Although this is a string collection, only one number can be set for this property.
-Read-only for users synced from on-premises directory.
+NOTE: Although it is a string collection, only one number can be set for this property.
+Read-only for users synced from the on-premises directory.
 Returned by default.
 Supports $filter (eq, not, ge, le, startsWith).
           \[Calendar \<IMicrosoftGraphCalendar\>\]: calendar
@@ -1834,7 +1839,7 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
 This property can be useful for describing the company that an external user comes from.
 The maximum length is 64 characters.Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
-          \[ConsentProvidedForMinor \<String\>\]: Sets whether consent has been obtained for minors.
+          \[ConsentProvidedForMinor \<String\>\]: Sets whether consent was obtained for minors.
 Allowed values: null, Granted, Denied and NotRequired.
 Refer to the legal age group property definitions for further information.
 Returned only on $select.
@@ -1933,7 +1938,7 @@ Nullable.
 Maximum length is 128 characters.
 Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
-          \[CreatedDateTime \<DateTime?\>\]: The date and time the user was created, in ISO 8601 format and in UTC time.
+          \[CreatedDateTime \<DateTime?\>\]: The date and time the user was created, in ISO 8601 format and UTC.
 The value cannot be modified and is automatically populated when the entity is created.
 Nullable.
 For on-premises users, the value represents when they were first created in Microsoft Entra ID.
@@ -1953,7 +1958,7 @@ Read-only.Returned only on $select.
 Supports $filter (eq, ne, not, in).
           \[CustomSecurityAttributes \<IMicrosoftGraphCustomSecurityAttributeValue\>\]: customSecurityAttributeValue
             \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-          \[Department \<String\>\]: The name for the department in which the user works.
+          \[Department \<String\>\]: The name of the department in which the user works.
 Maximum length is 64 characters.
 Returned only on $select.
 Supports $filter (eq, ne, not , ge, le, in, and eq on null values).
@@ -1969,7 +1974,7 @@ Read-only.
 Nullable.
 Supports $expand.
           \[DisplayName \<String\>\]: The name displayed in the address book for the user.
-This is usually the combination of the user's first name, middle initial and last name.
+This is usually the combination of the user's first name, middle initial, and last name.
 This property is required when a user is created and it cannot be cleared during updates.
 Maximum length is 256 characters.
 Returned by default.
@@ -2468,7 +2473,7 @@ Required.
               \[LearningProviderId \<String\>\]: The registration ID of the provider.
 Required.
               \[Status \<String\>\]: courseStatus
-          \[EmployeeHireDate \<DateTime?\>\]: The date and time when the user was hired or will start work in case of a future hire.
+          \[EmployeeHireDate \<DateTime?\>\]: The date and time when the user was hired or will start work in a future hire.
 Returned only on $select.
 Supports $filter (eq, ne, not , ge, le, in).
           \[EmployeeId \<String\>\]: The employee identifier assigned to the user by the organization.
@@ -2808,14 +2813,14 @@ Maximum length is 64 characters.
 Returned by default.
 Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
           \[HireDate \<DateTime?\>\]: The hire date of the user.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
 Returned only on $select. 
 Note: This property is specific to SharePoint Online.
 We recommend using the native employeeHireDate property to set and update hire date values using Microsoft Graph APIs.
           \[Identities \<IMicrosoftGraphObjectIdentity\[\]\>\]: Represents the identities that can be used to sign in to this user account.
-An identity can be provided by Microsoft (also known as a local account), by organizations, or by social identity providers such as Facebook, Google, and Microsoft, and tied to a user account.
-May contain multiple items with the same signInType value.
+Microsoft (also known as a local account), organizations, or social identity providers such as Facebook, Google, and Microsoft can provide identity and tie it to a user account.
+It may contain multiple items with the same signInType value.
 Returned only on $select.
 Supports $filter (eq) including on null values, only where the signInType is not userPrincipalName.
             \[Issuer \<String\>\]: Specifies the issuer of the identity, for example facebook.com.For local accounts (where signInType isn't federated), this property is the local B2C tenant default domain name, for example contoso.onmicrosoft.com.For guests from other Microsoft Entra organization, this is the domain of the federated organization, for example contoso.com.Supports $filter.
@@ -2830,7 +2835,7 @@ Setting or updating a userPrincipalName identity will update the value of the us
 The validations performed on the userPrincipalName property on the user object, for example, verified domains and acceptable characters, will be performed when setting or updating a userPrincipalName identity.
 Other validation is enforced on issuerAssignedId when the sign-in type is set to emailAddress or userName.
 This property can also be set to any custom string.
-          \[ImAddresses \<String\[\]\>\]: The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user.
+          \[ImAddresses \<String\[\]\>\]: The instant message voice-over IP (VOIP) session initiation protocol (SIP) addresses for the user.
 Read-only.
 Returned only on $select.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -3427,10 +3432,11 @@ Returned by default.
 Supports $filter (eq, ne, not, in).
               \[SecurityIdentifier \<String\>\]: Security identifier of the group, used in Windows scenarios.
 Returned by default.
-              \[ServiceProvisioningErrors \<IMicrosoftGraphServiceProvisioningError\[\]\>\]: 
-                \[CreatedDateTime \<DateTime?\>\]: 
-                \[IsResolved \<Boolean?\>\]: 
-                \[ServiceInstance \<String\>\]: 
+              \[ServiceProvisioningErrors \<IMicrosoftGraphServiceProvisioningError\[\]\>\]: Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object . 
+Supports $filter (eq, not, for isResolved and serviceInstance).
+                \[CreatedDateTime \<DateTime?\>\]: The date and time at which the error occurred.
+                \[IsResolved \<Boolean?\>\]: Indicates whether the error has been attended to.
+                \[ServiceInstance \<String\>\]: Qualified service instance (for example, 'SharePoint/Dublin') that published the service error information.
               \[Settings \<IMicrosoftGraphGroupSetting\[\]\>\]: Settings that can govern this group's behavior, like whether members can invite guest users to the group.
 Nullable.
                 \[Id \<String\>\]: The unique identifier for an entity.
@@ -3681,12 +3687,12 @@ Read-only.
 This is the URL that you get when you right-click a team in the Microsoft Teams client and select Get link to team.
 This URL should be treated as an opaque blob, and not parsed.
           \[LastPasswordChangeDateTime \<DateTime?\>\]: The time when this Microsoft Entra user last changed their password or when their password was created, whichever date the latest action was performed.
-The date and time information uses ISO 8601 format and is always in UTC time.
+The date and time information uses ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Returned only on $select.
           \[LegalAgeGroupClassification \<String\>\]: Used by enterprise applications to determine the legal age group of the user.
 This property is read-only and calculated based on ageGroup and consentProvidedForMinor properties.
-Allowed values: null, MinorWithOutParentalConsent, MinorWithParentalConsent, MinorNoParentalConsentRequired, NotAdult and Adult.
+Allowed values: null, MinorWithOutParentalConsent, MinorWithParentalConsent, MinorNoParentalConsentRequired, NotAdult, and Adult.
 Refer to the legal age group property definitions for further information.
 Returned only on $select.
           \[LicenseAssignmentStates \<IMicrosoftGraphLicenseAssignmentState\[\]\>\]: State of license assignments for this user.
@@ -3718,7 +3724,7 @@ Read-only
 Equal to the skuPartNumber on the related SubscribedSku object; for example: 'AAD_Premium'.
 Read-only
           \[Mail \<String\>\]: The SMTP address for the user, for example, jeff@contoso.onmicrosoft.com.
-Changes to this property will also update the user's proxyAddresses collection to include the value as an SMTP address.
+Changes to this property update the user's proxyAddresses collection to include the value as an SMTP address.
 This property can't contain accent characters. 
 NOTE: We don't recommend updating this property for Azure AD B2C user profiles.
 Use the otherMails property instead.
@@ -4111,11 +4117,11 @@ Supports $expand.
 Read-only.
 Nullable.
           \[MobilePhone \<String\>\]: The primary cellular telephone number for the user.
-Read-only for users synced from on-premises directory.
+Read-only for users synced from the on-premises directory.
 Maximum length is 64 characters.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values) and $search.
-          \[MySite \<String\>\]: The URL for the user's personal site.
+          \[MySite \<String\>\]: The URL for the user's site.
 Returned only on $select.
           \[Oauth2PermissionGrants \<IMicrosoftGraphOAuth2PermissionGrant\[\]\>\]: 
             \[Id \<String\>\]: The unique identifier for an entity.
@@ -4175,7 +4181,7 @@ NOTE: The $ and _ characters can't be used when specifying this property.
 Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in)..
           \[OnPremisesLastSyncDateTime \<DateTime?\>\]: Indicates the last time at which the object was synced with the on-premises directory; for example: 2013-02-16T03:04:54Z.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 Returned only on $select.
@@ -4202,14 +4208,15 @@ Read-only.
 Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in, startsWith).
           \[Onenote \<IMicrosoftGraphOnenote\>\]: onenote
-          \[OnlineMeetings \<IMicrosoftGraphOnlineMeeting\[\]\>\]: Information about a meeting, including the URL used to join a meeting, the attendees' list, and the description.
-            \[AllowAttendeeToEnableCamera \<Boolean?\>\]: 
-            \[AllowAttendeeToEnableMic \<Boolean?\>\]: 
+          \[OnlineMeetings \<IMicrosoftGraphOnlineMeeting\[\]\>\]: Information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
+            \[AllowAttendeeToEnableCamera \<Boolean?\>\]: Indicates whether attendees can turn on their camera.
+            \[AllowAttendeeToEnableMic \<Boolean?\>\]: Indicates whether attendees can turn on their microphone.
             \[AllowMeetingChat \<String\>\]: meetingChatMode
-            \[AllowParticipantsToChangeName \<Boolean?\>\]: 
-            \[AllowTeamworkReactions \<Boolean?\>\]: 
+            \[AllowParticipantsToChangeName \<Boolean?\>\]: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+            \[AllowTeamworkReactions \<Boolean?\>\]: Indicates if Teams reactions are enabled for the meeting.
             \[AllowedPresenters \<String\>\]: onlineMeetingPresenters
-            \[AttendanceReports \<IMicrosoftGraphMeetingAttendanceReport\[\]\>\]: 
+            \[AttendanceReports \<IMicrosoftGraphMeetingAttendanceReport\[\]\>\]: The attendance reports of an online meeting.
+Read-only.
               \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
               \[AttendanceRecords \<IMicrosoftGraphAttendanceRecord\[\]\>\]: List of attendance records of an attendance report.
@@ -4244,7 +4251,7 @@ Read-only.
               \[MessageId \<String\>\]: The unique identifier of a message in a Microsoft Teams channel.
               \[ReplyChainMessageId \<String\>\]: The ID of the reply message.
               \[ThreadId \<String\>\]: The unique identifier for a thread in Microsoft Teams.
-            \[IsEntryExitAnnounced \<Boolean?\>\]: 
+            \[IsEntryExitAnnounced \<Boolean?\>\]: Indicates whether to announce when callers join or leave.
             \[JoinInformation \<IMicrosoftGraphItemBody\>\]: itemBody
             \[JoinMeetingIdSettings \<IMicrosoftGraphJoinMeetingIdSettings\>\]: joinMeetingIdSettings
               \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -4256,16 +4263,18 @@ Read-only.
               \[Passcode \<String\>\]: The passcode to join a meeting. 
 Optional.
 Read-only.
-            \[JoinWebUrl \<String\>\]: 
+            \[JoinWebUrl \<String\>\]: The join URL of the online meeting.
+Read-only.
             \[LobbyBypassSettings \<IMicrosoftGraphLobbyBypassSettings\>\]: lobbyBypassSettings
               \[(Any) \<Object\>\]: This indicates any property can be added to this object.
               \[IsDialInBypassEnabled \<Boolean?\>\]: Specifies whether or not to always let dial-in callers bypass the lobby.
 Optional.
               \[Scope \<String\>\]: lobbyBypassScope
-            \[RecordAutomatically \<Boolean?\>\]: 
+            \[RecordAutomatically \<Boolean?\>\]: Indicates whether to record the meeting automatically.
             \[ShareMeetingChatHistoryDefault \<String\>\]: meetingChatHistoryDefaultMode
-            \[Subject \<String\>\]: 
-            \[VideoTeleconferenceId \<String\>\]: 
+            \[Subject \<String\>\]: The subject of the online meeting.
+            \[VideoTeleconferenceId \<String\>\]: The video teleconferencing ID.
+Read-only.
             \[WatermarkProtection \<IMicrosoftGraphWatermarkProtectionValues\>\]: watermarkProtectionValues
               \[(Any) \<Object\>\]: This indicates any property can be added to this object.
               \[IsEnabledForContentSharing \<Boolean?\>\]: Indicates whether to apply a watermark to any shared content.
@@ -4419,6 +4428,7 @@ The general format is alias@domain.
               \[DisplayName \<String\>\]: The display name of the web site.
               \[Type \<String\>\]: websiteType
             \[YomiCompany \<String\>\]: The phonetic Japanese name of the person's company.
+          \[PermissionGrants \<IMicrosoftGraphResourceSpecificPermissionGrant\[\]\>\]: List all resource-specific permission grants of a user.
           \[Photo \<IMicrosoftGraphProfilePhoto\>\]: profilePhoto
           \[Photos \<IMicrosoftGraphProfilePhoto\[\]\>\]: The collection of the user's profile photos in different sizes.
 Read-only.
@@ -4442,7 +4452,7 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
 For more information, see OneDrive Online Multi-Geo.
           \[PreferredLanguage \<String\>\]: The preferred language for the user.
 The preferred language format is based on RFC 4646.
-The name is a combination of an ISO 639 two-letter lowercase culture code associated with the language, and an ISO 3166 two-letter uppercase subculture code associated with the country or region.
+The name is a combination of an ISO 639 two-letter lowercase culture code associated with the language and an ISO 3166 two-letter uppercase subculture code associated with the country or region.
 Example: 'en-US', or 'es-ES'.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values)
@@ -4740,7 +4750,8 @@ Read-only.
 Read-only.
 Returned by default.
 Supports $select and $filter (eq, not, ge, le, startsWith).
-          \[ServiceProvisioningErrors \<IMicrosoftGraphServiceProvisioningError\[\]\>\]: 
+          \[ServiceProvisioningErrors \<IMicrosoftGraphServiceProvisioningError\[\]\>\]: Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a user object . 
+Supports $filter (eq, not, for isResolved and serviceInstance).
           \[Settings \<IMicrosoftGraphUserSettings\>\]: userSettings
             \[(Any) \<Object\>\]: This indicates any property can be added to this object.
             \[Id \<String\>\]: The unique identifier for an entity.
@@ -4787,7 +4798,7 @@ Microsoft Entra ID maintains interactive sign-ins going back to April 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
             \[LastSignInRequestId \<String\>\]: Request identifier of the last interactive sign-in performed by this user.
           \[SignInSessionsValidFromDateTime \<DateTime?\>\]: Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph). 
-If this happens, the application needs to acquire a new refresh token by making a request to the authorize endpoint.
+If this happens, the application needs to acquire a new refresh token by requesting the authorized endpoint.
 Read-only.
 Use revokeSignInSessions to reset.
 Returned only on $select.
@@ -4902,8 +4913,8 @@ Read-only.
               \[WellknownListName \<String\>\]: wellknownListName
           \[TransitiveMemberOf \<IMicrosoftGraphDirectoryObject\[\]\>\]: The groups, including nested groups, and directory roles that a user is a member of.
 Nullable.
-          \[UsageLocation \<String\>\]: A two letter country code (ISO standard 3166).
-Required for users that are assigned licenses due to legal requirement to check for availability of services in countries. 
+          \[UsageLocation \<String\>\]: A two-letter country code (ISO standard 3166).
+Required for users that are assigned licenses due to legal requirements to check for availability of services in countries. 
 Examples include: US, JP, and GB.
 Not nullable.
 Returned only on $select.
@@ -4911,12 +4922,12 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
           \[UserPrincipalName \<String\>\]: The user principal name (UPN) of the user.
 The UPN is an Internet-style sign-in name for the user based on the Internet standard RFC 822.
 By convention, this should map to the user's email name.
-The general format is alias@domain, where domain must be present in the tenant's collection of verified domains.
+The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -5629,7 +5640,7 @@ Longer text description of the user's unique activity (example: document name, f
         \[DisplayText \<String\>\]: Required.
 Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)
     \[AgeGroup \<String\>\]: Sets the age group of the user.
-Allowed values: null, Minor, NotAdult and Adult.
+Allowed values: null, Minor, NotAdult, and Adult.
 For more information, see legal age group property definitions.
 Returned only on $select.
 Supports $filter (eq, ne, not, and in).
@@ -5685,7 +5696,7 @@ Read-only.
 Required on create.
 Supports $filter (eq only).
     \[AssignedLicenses \<IMicrosoftGraphAssignedLicense\[\]\>\]: The licenses that are assigned to the user, including inherited (group-based) licenses.
-This property doesn't differentiate directly assigned and inherited licenses.
+This property doesn't differentiate between directly assigned and inherited licenses.
 Use the licenseAssignmentStates property to identify the directly assigned and inherited licenses. 
 Not nullable.
 Returned only on $select.
@@ -5901,12 +5912,12 @@ Read-only.
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[CertificateUserIds \<String\[\]\>\]: 
     \[Birthday \<DateTime?\>\]: The birthday of the user.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
 Returned only on $select.
     \[BusinessPhones \<String\[\]\>\]: The telephone numbers for the user.
-NOTE: Although this is a string collection, only one number can be set for this property.
-Read-only for users synced from on-premises directory.
+NOTE: Although it is a string collection, only one number can be set for this property.
+Read-only for users synced from the on-premises directory.
 Returned by default.
 Supports $filter (eq, not, ge, le, startsWith).
     \[Calendar \<IMicrosoftGraphCalendar\>\]: calendar
@@ -6401,7 +6412,7 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
 This property can be useful for describing the company that an external user comes from.
 The maximum length is 64 characters.Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
-    \[ConsentProvidedForMinor \<String\>\]: Sets whether consent has been obtained for minors.
+    \[ConsentProvidedForMinor \<String\>\]: Sets whether consent was obtained for minors.
 Allowed values: null, Granted, Denied and NotRequired.
 Refer to the legal age group property definitions for further information.
 Returned only on $select.
@@ -6500,7 +6511,7 @@ Nullable.
 Maximum length is 128 characters.
 Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
-    \[CreatedDateTime \<DateTime?\>\]: The date and time the user was created, in ISO 8601 format and in UTC time.
+    \[CreatedDateTime \<DateTime?\>\]: The date and time the user was created, in ISO 8601 format and UTC.
 The value cannot be modified and is automatically populated when the entity is created.
 Nullable.
 For on-premises users, the value represents when they were first created in Microsoft Entra ID.
@@ -6520,7 +6531,7 @@ Read-only.Returned only on $select.
 Supports $filter (eq, ne, not, in).
     \[CustomSecurityAttributes \<IMicrosoftGraphCustomSecurityAttributeValue\>\]: customSecurityAttributeValue
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Department \<String\>\]: The name for the department in which the user works.
+    \[Department \<String\>\]: The name of the department in which the user works.
 Maximum length is 64 characters.
 Returned only on $select.
 Supports $filter (eq, ne, not , ge, le, in, and eq on null values).
@@ -6536,7 +6547,7 @@ Read-only.
 Nullable.
 Supports $expand.
     \[DisplayName \<String\>\]: The name displayed in the address book for the user.
-This is usually the combination of the user's first name, middle initial and last name.
+This is usually the combination of the user's first name, middle initial, and last name.
 This property is required when a user is created and it cannot be cleared during updates.
 Maximum length is 256 characters.
 Returned by default.
@@ -7072,7 +7083,7 @@ Required.
         \[LearningProviderId \<String\>\]: The registration ID of the provider.
 Required.
         \[Status \<String\>\]: courseStatus
-    \[EmployeeHireDate \<DateTime?\>\]: The date and time when the user was hired or will start work in case of a future hire.
+    \[EmployeeHireDate \<DateTime?\>\]: The date and time when the user was hired or will start work in a future hire.
 Returned only on $select.
 Supports $filter (eq, ne, not , ge, le, in).
     \[EmployeeId \<String\>\]: The employee identifier assigned to the user by the organization.
@@ -7412,14 +7423,14 @@ Maximum length is 64 characters.
 Returned by default.
 Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
     \[HireDate \<DateTime?\>\]: The hire date of the user.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
 Returned only on $select. 
 Note: This property is specific to SharePoint Online.
 We recommend using the native employeeHireDate property to set and update hire date values using Microsoft Graph APIs.
     \[Identities \<IMicrosoftGraphObjectIdentity\[\]\>\]: Represents the identities that can be used to sign in to this user account.
-An identity can be provided by Microsoft (also known as a local account), by organizations, or by social identity providers such as Facebook, Google, and Microsoft, and tied to a user account.
-May contain multiple items with the same signInType value.
+Microsoft (also known as a local account), organizations, or social identity providers such as Facebook, Google, and Microsoft can provide identity and tie it to a user account.
+It may contain multiple items with the same signInType value.
 Returned only on $select.
 Supports $filter (eq) including on null values, only where the signInType is not userPrincipalName.
       \[Issuer \<String\>\]: Specifies the issuer of the identity, for example facebook.com.For local accounts (where signInType isn't federated), this property is the local B2C tenant default domain name, for example contoso.onmicrosoft.com.For guests from other Microsoft Entra organization, this is the domain of the federated organization, for example contoso.com.Supports $filter.
@@ -7434,7 +7445,7 @@ Setting or updating a userPrincipalName identity will update the value of the us
 The validations performed on the userPrincipalName property on the user object, for example, verified domains and acceptable characters, will be performed when setting or updating a userPrincipalName identity.
 Other validation is enforced on issuerAssignedId when the sign-in type is set to emailAddress or userName.
 This property can also be set to any custom string.
-    \[ImAddresses \<String\[\]\>\]: The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user.
+    \[ImAddresses \<String\[\]\>\]: The instant message voice-over IP (VOIP) session initiation protocol (SIP) addresses for the user.
 Read-only.
 Returned only on $select.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -8031,10 +8042,11 @@ Returned by default.
 Supports $filter (eq, ne, not, in).
         \[SecurityIdentifier \<String\>\]: Security identifier of the group, used in Windows scenarios.
 Returned by default.
-        \[ServiceProvisioningErrors \<IMicrosoftGraphServiceProvisioningError\[\]\>\]: 
-          \[CreatedDateTime \<DateTime?\>\]: 
-          \[IsResolved \<Boolean?\>\]: 
-          \[ServiceInstance \<String\>\]: 
+        \[ServiceProvisioningErrors \<IMicrosoftGraphServiceProvisioningError\[\]\>\]: Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object . 
+Supports $filter (eq, not, for isResolved and serviceInstance).
+          \[CreatedDateTime \<DateTime?\>\]: The date and time at which the error occurred.
+          \[IsResolved \<Boolean?\>\]: Indicates whether the error has been attended to.
+          \[ServiceInstance \<String\>\]: Qualified service instance (for example, 'SharePoint/Dublin') that published the service error information.
         \[Settings \<IMicrosoftGraphGroupSetting\[\]\>\]: Settings that can govern this group's behavior, like whether members can invite guest users to the group.
 Nullable.
           \[Id \<String\>\]: The unique identifier for an entity.
@@ -8285,12 +8297,12 @@ Read-only.
 This is the URL that you get when you right-click a team in the Microsoft Teams client and select Get link to team.
 This URL should be treated as an opaque blob, and not parsed.
     \[LastPasswordChangeDateTime \<DateTime?\>\]: The time when this Microsoft Entra user last changed their password or when their password was created, whichever date the latest action was performed.
-The date and time information uses ISO 8601 format and is always in UTC time.
+The date and time information uses ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Returned only on $select.
     \[LegalAgeGroupClassification \<String\>\]: Used by enterprise applications to determine the legal age group of the user.
 This property is read-only and calculated based on ageGroup and consentProvidedForMinor properties.
-Allowed values: null, MinorWithOutParentalConsent, MinorWithParentalConsent, MinorNoParentalConsentRequired, NotAdult and Adult.
+Allowed values: null, MinorWithOutParentalConsent, MinorWithParentalConsent, MinorNoParentalConsentRequired, NotAdult, and Adult.
 Refer to the legal age group property definitions for further information.
 Returned only on $select.
     \[LicenseAssignmentStates \<IMicrosoftGraphLicenseAssignmentState\[\]\>\]: State of license assignments for this user.
@@ -8322,7 +8334,7 @@ Read-only
 Equal to the skuPartNumber on the related SubscribedSku object; for example: 'AAD_Premium'.
 Read-only
     \[Mail \<String\>\]: The SMTP address for the user, for example, jeff@contoso.onmicrosoft.com.
-Changes to this property will also update the user's proxyAddresses collection to include the value as an SMTP address.
+Changes to this property update the user's proxyAddresses collection to include the value as an SMTP address.
 This property can't contain accent characters. 
 NOTE: We don't recommend updating this property for Azure AD B2C user profiles.
 Use the otherMails property instead.
@@ -8715,11 +8727,11 @@ Supports $expand.
 Read-only.
 Nullable.
     \[MobilePhone \<String\>\]: The primary cellular telephone number for the user.
-Read-only for users synced from on-premises directory.
+Read-only for users synced from the on-premises directory.
 Maximum length is 64 characters.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values) and $search.
-    \[MySite \<String\>\]: The URL for the user's personal site.
+    \[MySite \<String\>\]: The URL for the user's site.
 Returned only on $select.
     \[Oauth2PermissionGrants \<IMicrosoftGraphOAuth2PermissionGrant\[\]\>\]: 
       \[Id \<String\>\]: The unique identifier for an entity.
@@ -8779,7 +8791,7 @@ NOTE: The $ and _ characters can't be used when specifying this property.
 Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in)..
     \[OnPremisesLastSyncDateTime \<DateTime?\>\]: Indicates the last time at which the object was synced with the on-premises directory; for example: 2013-02-16T03:04:54Z.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 Returned only on $select.
@@ -8806,14 +8818,15 @@ Read-only.
 Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in, startsWith).
     \[Onenote \<IMicrosoftGraphOnenote\>\]: onenote
-    \[OnlineMeetings \<IMicrosoftGraphOnlineMeeting\[\]\>\]: Information about a meeting, including the URL used to join a meeting, the attendees' list, and the description.
-      \[AllowAttendeeToEnableCamera \<Boolean?\>\]: 
-      \[AllowAttendeeToEnableMic \<Boolean?\>\]: 
+    \[OnlineMeetings \<IMicrosoftGraphOnlineMeeting\[\]\>\]: Information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
+      \[AllowAttendeeToEnableCamera \<Boolean?\>\]: Indicates whether attendees can turn on their camera.
+      \[AllowAttendeeToEnableMic \<Boolean?\>\]: Indicates whether attendees can turn on their microphone.
       \[AllowMeetingChat \<String\>\]: meetingChatMode
-      \[AllowParticipantsToChangeName \<Boolean?\>\]: 
-      \[AllowTeamworkReactions \<Boolean?\>\]: 
+      \[AllowParticipantsToChangeName \<Boolean?\>\]: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+      \[AllowTeamworkReactions \<Boolean?\>\]: Indicates if Teams reactions are enabled for the meeting.
       \[AllowedPresenters \<String\>\]: onlineMeetingPresenters
-      \[AttendanceReports \<IMicrosoftGraphMeetingAttendanceReport\[\]\>\]: 
+      \[AttendanceReports \<IMicrosoftGraphMeetingAttendanceReport\[\]\>\]: The attendance reports of an online meeting.
+Read-only.
         \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
         \[AttendanceRecords \<IMicrosoftGraphAttendanceRecord\[\]\>\]: List of attendance records of an attendance report.
@@ -8848,7 +8861,7 @@ Read-only.
         \[MessageId \<String\>\]: The unique identifier of a message in a Microsoft Teams channel.
         \[ReplyChainMessageId \<String\>\]: The ID of the reply message.
         \[ThreadId \<String\>\]: The unique identifier for a thread in Microsoft Teams.
-      \[IsEntryExitAnnounced \<Boolean?\>\]: 
+      \[IsEntryExitAnnounced \<Boolean?\>\]: Indicates whether to announce when callers join or leave.
       \[JoinInformation \<IMicrosoftGraphItemBody\>\]: itemBody
       \[JoinMeetingIdSettings \<IMicrosoftGraphJoinMeetingIdSettings\>\]: joinMeetingIdSettings
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -8860,16 +8873,18 @@ Read-only.
         \[Passcode \<String\>\]: The passcode to join a meeting. 
 Optional.
 Read-only.
-      \[JoinWebUrl \<String\>\]: 
+      \[JoinWebUrl \<String\>\]: The join URL of the online meeting.
+Read-only.
       \[LobbyBypassSettings \<IMicrosoftGraphLobbyBypassSettings\>\]: lobbyBypassSettings
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[IsDialInBypassEnabled \<Boolean?\>\]: Specifies whether or not to always let dial-in callers bypass the lobby.
 Optional.
         \[Scope \<String\>\]: lobbyBypassScope
-      \[RecordAutomatically \<Boolean?\>\]: 
+      \[RecordAutomatically \<Boolean?\>\]: Indicates whether to record the meeting automatically.
       \[ShareMeetingChatHistoryDefault \<String\>\]: meetingChatHistoryDefaultMode
-      \[Subject \<String\>\]: 
-      \[VideoTeleconferenceId \<String\>\]: 
+      \[Subject \<String\>\]: The subject of the online meeting.
+      \[VideoTeleconferenceId \<String\>\]: The video teleconferencing ID.
+Read-only.
       \[WatermarkProtection \<IMicrosoftGraphWatermarkProtectionValues\>\]: watermarkProtectionValues
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[IsEnabledForContentSharing \<Boolean?\>\]: Indicates whether to apply a watermark to any shared content.
@@ -9023,6 +9038,7 @@ The general format is alias@domain.
         \[DisplayName \<String\>\]: The display name of the web site.
         \[Type \<String\>\]: websiteType
       \[YomiCompany \<String\>\]: The phonetic Japanese name of the person's company.
+    \[PermissionGrants \<IMicrosoftGraphResourceSpecificPermissionGrant\[\]\>\]: List all resource-specific permission grants of a user.
     \[Photo \<IMicrosoftGraphProfilePhoto\>\]: profilePhoto
     \[Photos \<IMicrosoftGraphProfilePhoto\[\]\>\]: The collection of the user's profile photos in different sizes.
 Read-only.
@@ -9046,7 +9062,7 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
 For more information, see OneDrive Online Multi-Geo.
     \[PreferredLanguage \<String\>\]: The preferred language for the user.
 The preferred language format is based on RFC 4646.
-The name is a combination of an ISO 639 two-letter lowercase culture code associated with the language, and an ISO 3166 two-letter uppercase subculture code associated with the country or region.
+The name is a combination of an ISO 639 two-letter lowercase culture code associated with the language and an ISO 3166 two-letter uppercase subculture code associated with the country or region.
 Example: 'en-US', or 'es-ES'.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values)
@@ -9344,7 +9360,8 @@ Read-only.
 Read-only.
 Returned by default.
 Supports $select and $filter (eq, not, ge, le, startsWith).
-    \[ServiceProvisioningErrors \<IMicrosoftGraphServiceProvisioningError\[\]\>\]: 
+    \[ServiceProvisioningErrors \<IMicrosoftGraphServiceProvisioningError\[\]\>\]: Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a user object . 
+Supports $filter (eq, not, for isResolved and serviceInstance).
     \[Settings \<IMicrosoftGraphUserSettings\>\]: userSettings
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[Id \<String\>\]: The unique identifier for an entity.
@@ -9391,7 +9408,7 @@ Microsoft Entra ID maintains interactive sign-ins going back to April 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
       \[LastSignInRequestId \<String\>\]: Request identifier of the last interactive sign-in performed by this user.
     \[SignInSessionsValidFromDateTime \<DateTime?\>\]: Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph). 
-If this happens, the application needs to acquire a new refresh token by making a request to the authorize endpoint.
+If this happens, the application needs to acquire a new refresh token by requesting the authorized endpoint.
 Read-only.
 Use revokeSignInSessions to reset.
 Returned only on $select.
@@ -9506,8 +9523,8 @@ Read-only.
         \[WellknownListName \<String\>\]: wellknownListName
     \[TransitiveMemberOf \<IMicrosoftGraphDirectoryObject\[\]\>\]: The groups, including nested groups, and directory roles that a user is a member of.
 Nullable.
-    \[UsageLocation \<String\>\]: A two letter country code (ISO standard 3166).
-Required for users that are assigned licenses due to legal requirement to check for availability of services in countries. 
+    \[UsageLocation \<String\>\]: A two-letter country code (ISO standard 3166).
+Required for users that are assigned licenses due to legal requirements to check for availability of services in countries. 
 Examples include: US, JP, and GB.
 Not nullable.
 Returned only on $select.
@@ -9515,12 +9532,12 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
     \[UserPrincipalName \<String\>\]: The user principal name (UPN) of the user.
 The UPN is an Internet-style sign-in name for the user based on the Internet standard RFC 822.
 By convention, this should map to the user's email name.
-The general format is alias@domain, where domain must be present in the tenant's collection of verified domains.
+The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -10208,7 +10225,7 @@ Longer text description of the user's unique activity (example: document name, f
         \[DisplayText \<String\>\]: Required.
 Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)
     \[AgeGroup \<String\>\]: Sets the age group of the user.
-Allowed values: null, Minor, NotAdult and Adult.
+Allowed values: null, Minor, NotAdult, and Adult.
 For more information, see legal age group property definitions.
 Returned only on $select.
 Supports $filter (eq, ne, not, and in).
@@ -10264,7 +10281,7 @@ Read-only.
 Required on create.
 Supports $filter (eq only).
     \[AssignedLicenses \<IMicrosoftGraphAssignedLicense\[\]\>\]: The licenses that are assigned to the user, including inherited (group-based) licenses.
-This property doesn't differentiate directly assigned and inherited licenses.
+This property doesn't differentiate between directly assigned and inherited licenses.
 Use the licenseAssignmentStates property to identify the directly assigned and inherited licenses. 
 Not nullable.
 Returned only on $select.
@@ -10480,12 +10497,12 @@ Read-only.
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[CertificateUserIds \<String\[\]\>\]: 
     \[Birthday \<DateTime?\>\]: The birthday of the user.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
 Returned only on $select.
     \[BusinessPhones \<String\[\]\>\]: The telephone numbers for the user.
-NOTE: Although this is a string collection, only one number can be set for this property.
-Read-only for users synced from on-premises directory.
+NOTE: Although it is a string collection, only one number can be set for this property.
+Read-only for users synced from the on-premises directory.
 Returned by default.
 Supports $filter (eq, not, ge, le, startsWith).
     \[Calendar \<IMicrosoftGraphCalendar\>\]: calendar
@@ -10980,7 +10997,7 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
 This property can be useful for describing the company that an external user comes from.
 The maximum length is 64 characters.Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
-    \[ConsentProvidedForMinor \<String\>\]: Sets whether consent has been obtained for minors.
+    \[ConsentProvidedForMinor \<String\>\]: Sets whether consent was obtained for minors.
 Allowed values: null, Granted, Denied and NotRequired.
 Refer to the legal age group property definitions for further information.
 Returned only on $select.
@@ -11079,7 +11096,7 @@ Nullable.
 Maximum length is 128 characters.
 Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
-    \[CreatedDateTime \<DateTime?\>\]: The date and time the user was created, in ISO 8601 format and in UTC time.
+    \[CreatedDateTime \<DateTime?\>\]: The date and time the user was created, in ISO 8601 format and UTC.
 The value cannot be modified and is automatically populated when the entity is created.
 Nullable.
 For on-premises users, the value represents when they were first created in Microsoft Entra ID.
@@ -11099,7 +11116,7 @@ Read-only.Returned only on $select.
 Supports $filter (eq, ne, not, in).
     \[CustomSecurityAttributes \<IMicrosoftGraphCustomSecurityAttributeValue\>\]: customSecurityAttributeValue
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Department \<String\>\]: The name for the department in which the user works.
+    \[Department \<String\>\]: The name of the department in which the user works.
 Maximum length is 64 characters.
 Returned only on $select.
 Supports $filter (eq, ne, not , ge, le, in, and eq on null values).
@@ -11115,7 +11132,7 @@ Read-only.
 Nullable.
 Supports $expand.
     \[DisplayName \<String\>\]: The name displayed in the address book for the user.
-This is usually the combination of the user's first name, middle initial and last name.
+This is usually the combination of the user's first name, middle initial, and last name.
 This property is required when a user is created and it cannot be cleared during updates.
 Maximum length is 256 characters.
 Returned by default.
@@ -11651,7 +11668,7 @@ Required.
         \[LearningProviderId \<String\>\]: The registration ID of the provider.
 Required.
         \[Status \<String\>\]: courseStatus
-    \[EmployeeHireDate \<DateTime?\>\]: The date and time when the user was hired or will start work in case of a future hire.
+    \[EmployeeHireDate \<DateTime?\>\]: The date and time when the user was hired or will start work in a future hire.
 Returned only on $select.
 Supports $filter (eq, ne, not , ge, le, in).
     \[EmployeeId \<String\>\]: The employee identifier assigned to the user by the organization.
@@ -11991,14 +12008,14 @@ Maximum length is 64 characters.
 Returned by default.
 Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
     \[HireDate \<DateTime?\>\]: The hire date of the user.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
 Returned only on $select. 
 Note: This property is specific to SharePoint Online.
 We recommend using the native employeeHireDate property to set and update hire date values using Microsoft Graph APIs.
     \[Identities \<IMicrosoftGraphObjectIdentity\[\]\>\]: Represents the identities that can be used to sign in to this user account.
-An identity can be provided by Microsoft (also known as a local account), by organizations, or by social identity providers such as Facebook, Google, and Microsoft, and tied to a user account.
-May contain multiple items with the same signInType value.
+Microsoft (also known as a local account), organizations, or social identity providers such as Facebook, Google, and Microsoft can provide identity and tie it to a user account.
+It may contain multiple items with the same signInType value.
 Returned only on $select.
 Supports $filter (eq) including on null values, only where the signInType is not userPrincipalName.
       \[Issuer \<String\>\]: Specifies the issuer of the identity, for example facebook.com.For local accounts (where signInType isn't federated), this property is the local B2C tenant default domain name, for example contoso.onmicrosoft.com.For guests from other Microsoft Entra organization, this is the domain of the federated organization, for example contoso.com.Supports $filter.
@@ -12013,7 +12030,7 @@ Setting or updating a userPrincipalName identity will update the value of the us
 The validations performed on the userPrincipalName property on the user object, for example, verified domains and acceptable characters, will be performed when setting or updating a userPrincipalName identity.
 Other validation is enforced on issuerAssignedId when the sign-in type is set to emailAddress or userName.
 This property can also be set to any custom string.
-    \[ImAddresses \<String\[\]\>\]: The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user.
+    \[ImAddresses \<String\[\]\>\]: The instant message voice-over IP (VOIP) session initiation protocol (SIP) addresses for the user.
 Read-only.
 Returned only on $select.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -12610,10 +12627,11 @@ Returned by default.
 Supports $filter (eq, ne, not, in).
         \[SecurityIdentifier \<String\>\]: Security identifier of the group, used in Windows scenarios.
 Returned by default.
-        \[ServiceProvisioningErrors \<IMicrosoftGraphServiceProvisioningError\[\]\>\]: 
-          \[CreatedDateTime \<DateTime?\>\]: 
-          \[IsResolved \<Boolean?\>\]: 
-          \[ServiceInstance \<String\>\]: 
+        \[ServiceProvisioningErrors \<IMicrosoftGraphServiceProvisioningError\[\]\>\]: Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object . 
+Supports $filter (eq, not, for isResolved and serviceInstance).
+          \[CreatedDateTime \<DateTime?\>\]: The date and time at which the error occurred.
+          \[IsResolved \<Boolean?\>\]: Indicates whether the error has been attended to.
+          \[ServiceInstance \<String\>\]: Qualified service instance (for example, 'SharePoint/Dublin') that published the service error information.
         \[Settings \<IMicrosoftGraphGroupSetting\[\]\>\]: Settings that can govern this group's behavior, like whether members can invite guest users to the group.
 Nullable.
           \[Id \<String\>\]: The unique identifier for an entity.
@@ -12864,12 +12882,12 @@ Read-only.
 This is the URL that you get when you right-click a team in the Microsoft Teams client and select Get link to team.
 This URL should be treated as an opaque blob, and not parsed.
     \[LastPasswordChangeDateTime \<DateTime?\>\]: The time when this Microsoft Entra user last changed their password or when their password was created, whichever date the latest action was performed.
-The date and time information uses ISO 8601 format and is always in UTC time.
+The date and time information uses ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Returned only on $select.
     \[LegalAgeGroupClassification \<String\>\]: Used by enterprise applications to determine the legal age group of the user.
 This property is read-only and calculated based on ageGroup and consentProvidedForMinor properties.
-Allowed values: null, MinorWithOutParentalConsent, MinorWithParentalConsent, MinorNoParentalConsentRequired, NotAdult and Adult.
+Allowed values: null, MinorWithOutParentalConsent, MinorWithParentalConsent, MinorNoParentalConsentRequired, NotAdult, and Adult.
 Refer to the legal age group property definitions for further information.
 Returned only on $select.
     \[LicenseAssignmentStates \<IMicrosoftGraphLicenseAssignmentState\[\]\>\]: State of license assignments for this user.
@@ -12901,7 +12919,7 @@ Read-only
 Equal to the skuPartNumber on the related SubscribedSku object; for example: 'AAD_Premium'.
 Read-only
     \[Mail \<String\>\]: The SMTP address for the user, for example, jeff@contoso.onmicrosoft.com.
-Changes to this property will also update the user's proxyAddresses collection to include the value as an SMTP address.
+Changes to this property update the user's proxyAddresses collection to include the value as an SMTP address.
 This property can't contain accent characters. 
 NOTE: We don't recommend updating this property for Azure AD B2C user profiles.
 Use the otherMails property instead.
@@ -13294,11 +13312,11 @@ Supports $expand.
 Read-only.
 Nullable.
     \[MobilePhone \<String\>\]: The primary cellular telephone number for the user.
-Read-only for users synced from on-premises directory.
+Read-only for users synced from the on-premises directory.
 Maximum length is 64 characters.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values) and $search.
-    \[MySite \<String\>\]: The URL for the user's personal site.
+    \[MySite \<String\>\]: The URL for the user's site.
 Returned only on $select.
     \[Oauth2PermissionGrants \<IMicrosoftGraphOAuth2PermissionGrant\[\]\>\]: 
       \[Id \<String\>\]: The unique identifier for an entity.
@@ -13358,7 +13376,7 @@ NOTE: The $ and _ characters can't be used when specifying this property.
 Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in)..
     \[OnPremisesLastSyncDateTime \<DateTime?\>\]: Indicates the last time at which the object was synced with the on-premises directory; for example: 2013-02-16T03:04:54Z.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 Returned only on $select.
@@ -13385,14 +13403,15 @@ Read-only.
 Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in, startsWith).
     \[Onenote \<IMicrosoftGraphOnenote\>\]: onenote
-    \[OnlineMeetings \<IMicrosoftGraphOnlineMeeting\[\]\>\]: Information about a meeting, including the URL used to join a meeting, the attendees' list, and the description.
-      \[AllowAttendeeToEnableCamera \<Boolean?\>\]: 
-      \[AllowAttendeeToEnableMic \<Boolean?\>\]: 
+    \[OnlineMeetings \<IMicrosoftGraphOnlineMeeting\[\]\>\]: Information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
+      \[AllowAttendeeToEnableCamera \<Boolean?\>\]: Indicates whether attendees can turn on their camera.
+      \[AllowAttendeeToEnableMic \<Boolean?\>\]: Indicates whether attendees can turn on their microphone.
       \[AllowMeetingChat \<String\>\]: meetingChatMode
-      \[AllowParticipantsToChangeName \<Boolean?\>\]: 
-      \[AllowTeamworkReactions \<Boolean?\>\]: 
+      \[AllowParticipantsToChangeName \<Boolean?\>\]: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+      \[AllowTeamworkReactions \<Boolean?\>\]: Indicates if Teams reactions are enabled for the meeting.
       \[AllowedPresenters \<String\>\]: onlineMeetingPresenters
-      \[AttendanceReports \<IMicrosoftGraphMeetingAttendanceReport\[\]\>\]: 
+      \[AttendanceReports \<IMicrosoftGraphMeetingAttendanceReport\[\]\>\]: The attendance reports of an online meeting.
+Read-only.
         \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
         \[AttendanceRecords \<IMicrosoftGraphAttendanceRecord\[\]\>\]: List of attendance records of an attendance report.
@@ -13427,7 +13446,7 @@ Read-only.
         \[MessageId \<String\>\]: The unique identifier of a message in a Microsoft Teams channel.
         \[ReplyChainMessageId \<String\>\]: The ID of the reply message.
         \[ThreadId \<String\>\]: The unique identifier for a thread in Microsoft Teams.
-      \[IsEntryExitAnnounced \<Boolean?\>\]: 
+      \[IsEntryExitAnnounced \<Boolean?\>\]: Indicates whether to announce when callers join or leave.
       \[JoinInformation \<IMicrosoftGraphItemBody\>\]: itemBody
       \[JoinMeetingIdSettings \<IMicrosoftGraphJoinMeetingIdSettings\>\]: joinMeetingIdSettings
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -13439,16 +13458,18 @@ Read-only.
         \[Passcode \<String\>\]: The passcode to join a meeting. 
 Optional.
 Read-only.
-      \[JoinWebUrl \<String\>\]: 
+      \[JoinWebUrl \<String\>\]: The join URL of the online meeting.
+Read-only.
       \[LobbyBypassSettings \<IMicrosoftGraphLobbyBypassSettings\>\]: lobbyBypassSettings
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[IsDialInBypassEnabled \<Boolean?\>\]: Specifies whether or not to always let dial-in callers bypass the lobby.
 Optional.
         \[Scope \<String\>\]: lobbyBypassScope
-      \[RecordAutomatically \<Boolean?\>\]: 
+      \[RecordAutomatically \<Boolean?\>\]: Indicates whether to record the meeting automatically.
       \[ShareMeetingChatHistoryDefault \<String\>\]: meetingChatHistoryDefaultMode
-      \[Subject \<String\>\]: 
-      \[VideoTeleconferenceId \<String\>\]: 
+      \[Subject \<String\>\]: The subject of the online meeting.
+      \[VideoTeleconferenceId \<String\>\]: The video teleconferencing ID.
+Read-only.
       \[WatermarkProtection \<IMicrosoftGraphWatermarkProtectionValues\>\]: watermarkProtectionValues
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[IsEnabledForContentSharing \<Boolean?\>\]: Indicates whether to apply a watermark to any shared content.
@@ -13602,6 +13623,7 @@ The general format is alias@domain.
         \[DisplayName \<String\>\]: The display name of the web site.
         \[Type \<String\>\]: websiteType
       \[YomiCompany \<String\>\]: The phonetic Japanese name of the person's company.
+    \[PermissionGrants \<IMicrosoftGraphResourceSpecificPermissionGrant\[\]\>\]: List all resource-specific permission grants of a user.
     \[Photo \<IMicrosoftGraphProfilePhoto\>\]: profilePhoto
     \[Photos \<IMicrosoftGraphProfilePhoto\[\]\>\]: The collection of the user's profile photos in different sizes.
 Read-only.
@@ -13625,7 +13647,7 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
 For more information, see OneDrive Online Multi-Geo.
     \[PreferredLanguage \<String\>\]: The preferred language for the user.
 The preferred language format is based on RFC 4646.
-The name is a combination of an ISO 639 two-letter lowercase culture code associated with the language, and an ISO 3166 two-letter uppercase subculture code associated with the country or region.
+The name is a combination of an ISO 639 two-letter lowercase culture code associated with the language and an ISO 3166 two-letter uppercase subculture code associated with the country or region.
 Example: 'en-US', or 'es-ES'.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values)
@@ -13923,7 +13945,8 @@ Read-only.
 Read-only.
 Returned by default.
 Supports $select and $filter (eq, not, ge, le, startsWith).
-    \[ServiceProvisioningErrors \<IMicrosoftGraphServiceProvisioningError\[\]\>\]: 
+    \[ServiceProvisioningErrors \<IMicrosoftGraphServiceProvisioningError\[\]\>\]: Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a user object . 
+Supports $filter (eq, not, for isResolved and serviceInstance).
     \[Settings \<IMicrosoftGraphUserSettings\>\]: userSettings
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[Id \<String\>\]: The unique identifier for an entity.
@@ -13970,7 +13993,7 @@ Microsoft Entra ID maintains interactive sign-ins going back to April 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
       \[LastSignInRequestId \<String\>\]: Request identifier of the last interactive sign-in performed by this user.
     \[SignInSessionsValidFromDateTime \<DateTime?\>\]: Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph). 
-If this happens, the application needs to acquire a new refresh token by making a request to the authorize endpoint.
+If this happens, the application needs to acquire a new refresh token by requesting the authorized endpoint.
 Read-only.
 Use revokeSignInSessions to reset.
 Returned only on $select.
@@ -14085,8 +14108,8 @@ Read-only.
         \[WellknownListName \<String\>\]: wellknownListName
     \[TransitiveMemberOf \<IMicrosoftGraphDirectoryObject\[\]\>\]: The groups, including nested groups, and directory roles that a user is a member of.
 Nullable.
-    \[UsageLocation \<String\>\]: A two letter country code (ISO standard 3166).
-Required for users that are assigned licenses due to legal requirement to check for availability of services in countries. 
+    \[UsageLocation \<String\>\]: A two-letter country code (ISO standard 3166).
+Required for users that are assigned licenses due to legal requirements to check for availability of services in countries. 
 Examples include: US, JP, and GB.
 Not nullable.
 Returned only on $select.
@@ -14094,12 +14117,12 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
     \[UserPrincipalName \<String\>\]: The user principal name (UPN) of the user.
 The UPN is an Internet-style sign-in name for the user based on the Internet standard RFC 822.
 By convention, this should map to the user's email name.
-The general format is alias@domain, where domain must be present in the tenant's collection of verified domains.
+The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -14777,7 +14800,7 @@ Longer text description of the user's unique activity (example: document name, f
       \[DisplayText \<String\>\]: Required.
 Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)
   \[AgeGroup \<String\>\]: Sets the age group of the user.
-Allowed values: null, Minor, NotAdult and Adult.
+Allowed values: null, Minor, NotAdult, and Adult.
 For more information, see legal age group property definitions.
 Returned only on $select.
 Supports $filter (eq, ne, not, and in).
@@ -14833,7 +14856,7 @@ Read-only.
 Required on create.
 Supports $filter (eq only).
   \[AssignedLicenses \<IMicrosoftGraphAssignedLicense\[\]\>\]: The licenses that are assigned to the user, including inherited (group-based) licenses.
-This property doesn't differentiate directly assigned and inherited licenses.
+This property doesn't differentiate between directly assigned and inherited licenses.
 Use the licenseAssignmentStates property to identify the directly assigned and inherited licenses. 
 Not nullable.
 Returned only on $select.
@@ -15049,12 +15072,12 @@ Read-only.
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[CertificateUserIds \<String\[\]\>\]: 
   \[Birthday \<DateTime?\>\]: The birthday of the user.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
 Returned only on $select.
   \[BusinessPhones \<String\[\]\>\]: The telephone numbers for the user.
-NOTE: Although this is a string collection, only one number can be set for this property.
-Read-only for users synced from on-premises directory.
+NOTE: Although it is a string collection, only one number can be set for this property.
+Read-only for users synced from the on-premises directory.
 Returned by default.
 Supports $filter (eq, not, ge, le, startsWith).
   \[Calendar \<IMicrosoftGraphCalendar\>\]: calendar
@@ -15558,7 +15581,7 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
 This property can be useful for describing the company that an external user comes from.
 The maximum length is 64 characters.Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
-  \[ConsentProvidedForMinor \<String\>\]: Sets whether consent has been obtained for minors.
+  \[ConsentProvidedForMinor \<String\>\]: Sets whether consent was obtained for minors.
 Allowed values: null, Granted, Denied and NotRequired.
 Refer to the legal age group property definitions for further information.
 Returned only on $select.
@@ -15657,7 +15680,7 @@ Nullable.
 Maximum length is 128 characters.
 Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
-  \[CreatedDateTime \<DateTime?\>\]: The date and time the user was created, in ISO 8601 format and in UTC time.
+  \[CreatedDateTime \<DateTime?\>\]: The date and time the user was created, in ISO 8601 format and UTC.
 The value cannot be modified and is automatically populated when the entity is created.
 Nullable.
 For on-premises users, the value represents when they were first created in Microsoft Entra ID.
@@ -15677,7 +15700,7 @@ Read-only.Returned only on $select.
 Supports $filter (eq, ne, not, in).
   \[CustomSecurityAttributes \<IMicrosoftGraphCustomSecurityAttributeValue\>\]: customSecurityAttributeValue
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Department \<String\>\]: The name for the department in which the user works.
+  \[Department \<String\>\]: The name of the department in which the user works.
 Maximum length is 64 characters.
 Returned only on $select.
 Supports $filter (eq, ne, not , ge, le, in, and eq on null values).
@@ -15693,7 +15716,7 @@ Read-only.
 Nullable.
 Supports $expand.
   \[DisplayName \<String\>\]: The name displayed in the address book for the user.
-This is usually the combination of the user's first name, middle initial and last name.
+This is usually the combination of the user's first name, middle initial, and last name.
 This property is required when a user is created and it cannot be cleared during updates.
 Maximum length is 256 characters.
 Returned by default.
@@ -16853,7 +16876,7 @@ Required.
       \[LearningProviderId \<String\>\]: The registration ID of the provider.
 Required.
       \[Status \<String\>\]: courseStatus
-  \[EmployeeHireDate \<DateTime?\>\]: The date and time when the user was hired or will start work in case of a future hire.
+  \[EmployeeHireDate \<DateTime?\>\]: The date and time when the user was hired or will start work in a future hire.
 Returned only on $select.
 Supports $filter (eq, ne, not , ge, le, in).
   \[EmployeeId \<String\>\]: The employee identifier assigned to the user by the organization.
@@ -17141,14 +17164,14 @@ Maximum length is 64 characters.
 Returned by default.
 Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
   \[HireDate \<DateTime?\>\]: The hire date of the user.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
 Returned only on $select. 
 Note: This property is specific to SharePoint Online.
 We recommend using the native employeeHireDate property to set and update hire date values using Microsoft Graph APIs.
   \[Identities \<IMicrosoftGraphObjectIdentity\[\]\>\]: Represents the identities that can be used to sign in to this user account.
-An identity can be provided by Microsoft (also known as a local account), by organizations, or by social identity providers such as Facebook, Google, and Microsoft, and tied to a user account.
-May contain multiple items with the same signInType value.
+Microsoft (also known as a local account), organizations, or social identity providers such as Facebook, Google, and Microsoft can provide identity and tie it to a user account.
+It may contain multiple items with the same signInType value.
 Returned only on $select.
 Supports $filter (eq) including on null values, only where the signInType is not userPrincipalName.
     \[Issuer \<String\>\]: Specifies the issuer of the identity, for example facebook.com.For local accounts (where signInType isn't federated), this property is the local B2C tenant default domain name, for example contoso.onmicrosoft.com.For guests from other Microsoft Entra organization, this is the domain of the federated organization, for example contoso.com.Supports $filter.
@@ -17163,7 +17186,7 @@ Setting or updating a userPrincipalName identity will update the value of the us
 The validations performed on the userPrincipalName property on the user object, for example, verified domains and acceptable characters, will be performed when setting or updating a userPrincipalName identity.
 Other validation is enforced on issuerAssignedId when the sign-in type is set to emailAddress or userName.
 This property can also be set to any custom string.
-  \[ImAddresses \<String\[\]\>\]: The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user.
+  \[ImAddresses \<String\[\]\>\]: The instant message voice-over IP (VOIP) session initiation protocol (SIP) addresses for the user.
 Read-only.
 Returned only on $select.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -17760,10 +17783,11 @@ Returned by default.
 Supports $filter (eq, ne, not, in).
       \[SecurityIdentifier \<String\>\]: Security identifier of the group, used in Windows scenarios.
 Returned by default.
-      \[ServiceProvisioningErrors \<IMicrosoftGraphServiceProvisioningError\[\]\>\]: 
-        \[CreatedDateTime \<DateTime?\>\]: 
-        \[IsResolved \<Boolean?\>\]: 
-        \[ServiceInstance \<String\>\]: 
+      \[ServiceProvisioningErrors \<IMicrosoftGraphServiceProvisioningError\[\]\>\]: Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object . 
+Supports $filter (eq, not, for isResolved and serviceInstance).
+        \[CreatedDateTime \<DateTime?\>\]: The date and time at which the error occurred.
+        \[IsResolved \<Boolean?\>\]: Indicates whether the error has been attended to.
+        \[ServiceInstance \<String\>\]: Qualified service instance (for example, 'SharePoint/Dublin') that published the service error information.
       \[Settings \<IMicrosoftGraphGroupSetting\[\]\>\]: Settings that can govern this group's behavior, like whether members can invite guest users to the group.
 Nullable.
         \[Id \<String\>\]: The unique identifier for an entity.
@@ -18014,12 +18038,12 @@ Read-only.
 This is the URL that you get when you right-click a team in the Microsoft Teams client and select Get link to team.
 This URL should be treated as an opaque blob, and not parsed.
   \[LastPasswordChangeDateTime \<DateTime?\>\]: The time when this Microsoft Entra user last changed their password or when their password was created, whichever date the latest action was performed.
-The date and time information uses ISO 8601 format and is always in UTC time.
+The date and time information uses ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Returned only on $select.
   \[LegalAgeGroupClassification \<String\>\]: Used by enterprise applications to determine the legal age group of the user.
 This property is read-only and calculated based on ageGroup and consentProvidedForMinor properties.
-Allowed values: null, MinorWithOutParentalConsent, MinorWithParentalConsent, MinorNoParentalConsentRequired, NotAdult and Adult.
+Allowed values: null, MinorWithOutParentalConsent, MinorWithParentalConsent, MinorNoParentalConsentRequired, NotAdult, and Adult.
 Refer to the legal age group property definitions for further information.
 Returned only on $select.
   \[LicenseAssignmentStates \<IMicrosoftGraphLicenseAssignmentState\[\]\>\]: State of license assignments for this user.
@@ -18051,7 +18075,7 @@ Read-only
 Equal to the skuPartNumber on the related SubscribedSku object; for example: 'AAD_Premium'.
 Read-only
   \[Mail \<String\>\]: The SMTP address for the user, for example, jeff@contoso.onmicrosoft.com.
-Changes to this property will also update the user's proxyAddresses collection to include the value as an SMTP address.
+Changes to this property update the user's proxyAddresses collection to include the value as an SMTP address.
 This property can't contain accent characters. 
 NOTE: We don't recommend updating this property for Azure AD B2C user profiles.
 Use the otherMails property instead.
@@ -18444,11 +18468,11 @@ Supports $expand.
 Read-only.
 Nullable.
   \[MobilePhone \<String\>\]: The primary cellular telephone number for the user.
-Read-only for users synced from on-premises directory.
+Read-only for users synced from the on-premises directory.
 Maximum length is 64 characters.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values) and $search.
-  \[MySite \<String\>\]: The URL for the user's personal site.
+  \[MySite \<String\>\]: The URL for the user's site.
 Returned only on $select.
   \[Oauth2PermissionGrants \<IMicrosoftGraphOAuth2PermissionGrant\[\]\>\]: 
     \[Id \<String\>\]: The unique identifier for an entity.
@@ -18508,7 +18532,7 @@ NOTE: The $ and _ characters can't be used when specifying this property.
 Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in)..
   \[OnPremisesLastSyncDateTime \<DateTime?\>\]: Indicates the last time at which the object was synced with the on-premises directory; for example: 2013-02-16T03:04:54Z.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 Returned only on $select.
@@ -18535,14 +18559,15 @@ Read-only.
 Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in, startsWith).
   \[Onenote \<IMicrosoftGraphOnenote\>\]: onenote
-  \[OnlineMeetings \<IMicrosoftGraphOnlineMeeting\[\]\>\]: Information about a meeting, including the URL used to join a meeting, the attendees' list, and the description.
-    \[AllowAttendeeToEnableCamera \<Boolean?\>\]: 
-    \[AllowAttendeeToEnableMic \<Boolean?\>\]: 
+  \[OnlineMeetings \<IMicrosoftGraphOnlineMeeting\[\]\>\]: Information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
+    \[AllowAttendeeToEnableCamera \<Boolean?\>\]: Indicates whether attendees can turn on their camera.
+    \[AllowAttendeeToEnableMic \<Boolean?\>\]: Indicates whether attendees can turn on their microphone.
     \[AllowMeetingChat \<String\>\]: meetingChatMode
-    \[AllowParticipantsToChangeName \<Boolean?\>\]: 
-    \[AllowTeamworkReactions \<Boolean?\>\]: 
+    \[AllowParticipantsToChangeName \<Boolean?\>\]: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+    \[AllowTeamworkReactions \<Boolean?\>\]: Indicates if Teams reactions are enabled for the meeting.
     \[AllowedPresenters \<String\>\]: onlineMeetingPresenters
-    \[AttendanceReports \<IMicrosoftGraphMeetingAttendanceReport\[\]\>\]: 
+    \[AttendanceReports \<IMicrosoftGraphMeetingAttendanceReport\[\]\>\]: The attendance reports of an online meeting.
+Read-only.
       \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
       \[AttendanceRecords \<IMicrosoftGraphAttendanceRecord\[\]\>\]: List of attendance records of an attendance report.
@@ -18577,7 +18602,7 @@ Read-only.
       \[MessageId \<String\>\]: The unique identifier of a message in a Microsoft Teams channel.
       \[ReplyChainMessageId \<String\>\]: The ID of the reply message.
       \[ThreadId \<String\>\]: The unique identifier for a thread in Microsoft Teams.
-    \[IsEntryExitAnnounced \<Boolean?\>\]: 
+    \[IsEntryExitAnnounced \<Boolean?\>\]: Indicates whether to announce when callers join or leave.
     \[JoinInformation \<IMicrosoftGraphItemBody\>\]: itemBody
     \[JoinMeetingIdSettings \<IMicrosoftGraphJoinMeetingIdSettings\>\]: joinMeetingIdSettings
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -18589,16 +18614,18 @@ Read-only.
       \[Passcode \<String\>\]: The passcode to join a meeting. 
 Optional.
 Read-only.
-    \[JoinWebUrl \<String\>\]: 
+    \[JoinWebUrl \<String\>\]: The join URL of the online meeting.
+Read-only.
     \[LobbyBypassSettings \<IMicrosoftGraphLobbyBypassSettings\>\]: lobbyBypassSettings
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[IsDialInBypassEnabled \<Boolean?\>\]: Specifies whether or not to always let dial-in callers bypass the lobby.
 Optional.
       \[Scope \<String\>\]: lobbyBypassScope
-    \[RecordAutomatically \<Boolean?\>\]: 
+    \[RecordAutomatically \<Boolean?\>\]: Indicates whether to record the meeting automatically.
     \[ShareMeetingChatHistoryDefault \<String\>\]: meetingChatHistoryDefaultMode
-    \[Subject \<String\>\]: 
-    \[VideoTeleconferenceId \<String\>\]: 
+    \[Subject \<String\>\]: The subject of the online meeting.
+    \[VideoTeleconferenceId \<String\>\]: The video teleconferencing ID.
+Read-only.
     \[WatermarkProtection \<IMicrosoftGraphWatermarkProtectionValues\>\]: watermarkProtectionValues
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[IsEnabledForContentSharing \<Boolean?\>\]: Indicates whether to apply a watermark to any shared content.
@@ -18752,6 +18779,7 @@ The general format is alias@domain.
       \[DisplayName \<String\>\]: The display name of the web site.
       \[Type \<String\>\]: websiteType
     \[YomiCompany \<String\>\]: The phonetic Japanese name of the person's company.
+  \[PermissionGrants \<IMicrosoftGraphResourceSpecificPermissionGrant\[\]\>\]: List all resource-specific permission grants of a user.
   \[Photo \<IMicrosoftGraphProfilePhoto\>\]: profilePhoto
   \[Photos \<IMicrosoftGraphProfilePhoto\[\]\>\]: The collection of the user's profile photos in different sizes.
 Read-only.
@@ -18775,7 +18803,7 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
 For more information, see OneDrive Online Multi-Geo.
   \[PreferredLanguage \<String\>\]: The preferred language for the user.
 The preferred language format is based on RFC 4646.
-The name is a combination of an ISO 639 two-letter lowercase culture code associated with the language, and an ISO 3166 two-letter uppercase subculture code associated with the country or region.
+The name is a combination of an ISO 639 two-letter lowercase culture code associated with the language and an ISO 3166 two-letter uppercase subculture code associated with the country or region.
 Example: 'en-US', or 'es-ES'.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values)
@@ -19073,7 +19101,8 @@ Read-only.
 Read-only.
 Returned by default.
 Supports $select and $filter (eq, not, ge, le, startsWith).
-  \[ServiceProvisioningErrors \<IMicrosoftGraphServiceProvisioningError\[\]\>\]: 
+  \[ServiceProvisioningErrors \<IMicrosoftGraphServiceProvisioningError\[\]\>\]: Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a user object . 
+Supports $filter (eq, not, for isResolved and serviceInstance).
   \[Settings \<IMicrosoftGraphUserSettings\>\]: userSettings
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[Id \<String\>\]: The unique identifier for an entity.
@@ -19120,7 +19149,7 @@ Microsoft Entra ID maintains interactive sign-ins going back to April 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
     \[LastSignInRequestId \<String\>\]: Request identifier of the last interactive sign-in performed by this user.
   \[SignInSessionsValidFromDateTime \<DateTime?\>\]: Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph). 
-If this happens, the application needs to acquire a new refresh token by making a request to the authorize endpoint.
+If this happens, the application needs to acquire a new refresh token by requesting the authorized endpoint.
 Read-only.
 Use revokeSignInSessions to reset.
 Returned only on $select.
@@ -19235,8 +19264,8 @@ Read-only.
       \[WellknownListName \<String\>\]: wellknownListName
   \[TransitiveMemberOf \<IMicrosoftGraphDirectoryObject\[\]\>\]: The groups, including nested groups, and directory roles that a user is a member of.
 Nullable.
-  \[UsageLocation \<String\>\]: A two letter country code (ISO standard 3166).
-Required for users that are assigned licenses due to legal requirement to check for availability of services in countries. 
+  \[UsageLocation \<String\>\]: A two-letter country code (ISO standard 3166).
+Required for users that are assigned licenses due to legal requirements to check for availability of services in countries. 
 Examples include: US, JP, and GB.
 Not nullable.
 Returned only on $select.
@@ -19244,12 +19273,12 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
   \[UserPrincipalName \<String\>\]: The user principal name (UPN) of the user.
 The UPN is an Internet-style sign-in name for the user based on the Internet standard RFC 822.
 By convention, this should map to the user's email name.
-The general format is alias@domain, where domain must be present in the tenant's collection of verified domains.
+The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -19431,7 +19460,7 @@ Longer text description of the user's unique activity (example: document name, f
       \[DisplayText \<String\>\]: Required.
 Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)
   \[AgeGroup \<String\>\]: Sets the age group of the user.
-Allowed values: null, Minor, NotAdult and Adult.
+Allowed values: null, Minor, NotAdult, and Adult.
 For more information, see legal age group property definitions.
 Returned only on $select.
 Supports $filter (eq, ne, not, and in).
@@ -19487,7 +19516,7 @@ Read-only.
 Required on create.
 Supports $filter (eq only).
   \[AssignedLicenses \<IMicrosoftGraphAssignedLicense\[\]\>\]: The licenses that are assigned to the user, including inherited (group-based) licenses.
-This property doesn't differentiate directly assigned and inherited licenses.
+This property doesn't differentiate between directly assigned and inherited licenses.
 Use the licenseAssignmentStates property to identify the directly assigned and inherited licenses. 
 Not nullable.
 Returned only on $select.
@@ -19703,12 +19732,12 @@ Read-only.
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[CertificateUserIds \<String\[\]\>\]: 
   \[Birthday \<DateTime?\>\]: The birthday of the user.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
 Returned only on $select.
   \[BusinessPhones \<String\[\]\>\]: The telephone numbers for the user.
-NOTE: Although this is a string collection, only one number can be set for this property.
-Read-only for users synced from on-premises directory.
+NOTE: Although it is a string collection, only one number can be set for this property.
+Read-only for users synced from the on-premises directory.
 Returned by default.
 Supports $filter (eq, not, ge, le, startsWith).
   \[Calendar \<IMicrosoftGraphCalendar\>\]: calendar
@@ -20212,7 +20241,7 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
 This property can be useful for describing the company that an external user comes from.
 The maximum length is 64 characters.Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
-  \[ConsentProvidedForMinor \<String\>\]: Sets whether consent has been obtained for minors.
+  \[ConsentProvidedForMinor \<String\>\]: Sets whether consent was obtained for minors.
 Allowed values: null, Granted, Denied and NotRequired.
 Refer to the legal age group property definitions for further information.
 Returned only on $select.
@@ -20311,7 +20340,7 @@ Nullable.
 Maximum length is 128 characters.
 Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
-  \[CreatedDateTime \<DateTime?\>\]: The date and time the user was created, in ISO 8601 format and in UTC time.
+  \[CreatedDateTime \<DateTime?\>\]: The date and time the user was created, in ISO 8601 format and UTC.
 The value cannot be modified and is automatically populated when the entity is created.
 Nullable.
 For on-premises users, the value represents when they were first created in Microsoft Entra ID.
@@ -20331,7 +20360,7 @@ Read-only.Returned only on $select.
 Supports $filter (eq, ne, not, in).
   \[CustomSecurityAttributes \<IMicrosoftGraphCustomSecurityAttributeValue\>\]: customSecurityAttributeValue
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Department \<String\>\]: The name for the department in which the user works.
+  \[Department \<String\>\]: The name of the department in which the user works.
 Maximum length is 64 characters.
 Returned only on $select.
 Supports $filter (eq, ne, not , ge, le, in, and eq on null values).
@@ -20347,7 +20376,7 @@ Read-only.
 Nullable.
 Supports $expand.
   \[DisplayName \<String\>\]: The name displayed in the address book for the user.
-This is usually the combination of the user's first name, middle initial and last name.
+This is usually the combination of the user's first name, middle initial, and last name.
 This property is required when a user is created and it cannot be cleared during updates.
 Maximum length is 256 characters.
 Returned by default.
@@ -21507,7 +21536,7 @@ Required.
       \[LearningProviderId \<String\>\]: The registration ID of the provider.
 Required.
       \[Status \<String\>\]: courseStatus
-  \[EmployeeHireDate \<DateTime?\>\]: The date and time when the user was hired or will start work in case of a future hire.
+  \[EmployeeHireDate \<DateTime?\>\]: The date and time when the user was hired or will start work in a future hire.
 Returned only on $select.
 Supports $filter (eq, ne, not , ge, le, in).
   \[EmployeeId \<String\>\]: The employee identifier assigned to the user by the organization.
@@ -21795,14 +21824,14 @@ Maximum length is 64 characters.
 Returned by default.
 Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
   \[HireDate \<DateTime?\>\]: The hire date of the user.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
 Returned only on $select. 
 Note: This property is specific to SharePoint Online.
 We recommend using the native employeeHireDate property to set and update hire date values using Microsoft Graph APIs.
   \[Identities \<IMicrosoftGraphObjectIdentity\[\]\>\]: Represents the identities that can be used to sign in to this user account.
-An identity can be provided by Microsoft (also known as a local account), by organizations, or by social identity providers such as Facebook, Google, and Microsoft, and tied to a user account.
-May contain multiple items with the same signInType value.
+Microsoft (also known as a local account), organizations, or social identity providers such as Facebook, Google, and Microsoft can provide identity and tie it to a user account.
+It may contain multiple items with the same signInType value.
 Returned only on $select.
 Supports $filter (eq) including on null values, only where the signInType is not userPrincipalName.
     \[Issuer \<String\>\]: Specifies the issuer of the identity, for example facebook.com.For local accounts (where signInType isn't federated), this property is the local B2C tenant default domain name, for example contoso.onmicrosoft.com.For guests from other Microsoft Entra organization, this is the domain of the federated organization, for example contoso.com.Supports $filter.
@@ -21817,7 +21846,7 @@ Setting or updating a userPrincipalName identity will update the value of the us
 The validations performed on the userPrincipalName property on the user object, for example, verified domains and acceptable characters, will be performed when setting or updating a userPrincipalName identity.
 Other validation is enforced on issuerAssignedId when the sign-in type is set to emailAddress or userName.
 This property can also be set to any custom string.
-  \[ImAddresses \<String\[\]\>\]: The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user.
+  \[ImAddresses \<String\[\]\>\]: The instant message voice-over IP (VOIP) session initiation protocol (SIP) addresses for the user.
 Read-only.
 Returned only on $select.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -22414,10 +22443,11 @@ Returned by default.
 Supports $filter (eq, ne, not, in).
       \[SecurityIdentifier \<String\>\]: Security identifier of the group, used in Windows scenarios.
 Returned by default.
-      \[ServiceProvisioningErrors \<IMicrosoftGraphServiceProvisioningError\[\]\>\]: 
-        \[CreatedDateTime \<DateTime?\>\]: 
-        \[IsResolved \<Boolean?\>\]: 
-        \[ServiceInstance \<String\>\]: 
+      \[ServiceProvisioningErrors \<IMicrosoftGraphServiceProvisioningError\[\]\>\]: Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object . 
+Supports $filter (eq, not, for isResolved and serviceInstance).
+        \[CreatedDateTime \<DateTime?\>\]: The date and time at which the error occurred.
+        \[IsResolved \<Boolean?\>\]: Indicates whether the error has been attended to.
+        \[ServiceInstance \<String\>\]: Qualified service instance (for example, 'SharePoint/Dublin') that published the service error information.
       \[Settings \<IMicrosoftGraphGroupSetting\[\]\>\]: Settings that can govern this group's behavior, like whether members can invite guest users to the group.
 Nullable.
         \[Id \<String\>\]: The unique identifier for an entity.
@@ -22668,12 +22698,12 @@ Read-only.
 This is the URL that you get when you right-click a team in the Microsoft Teams client and select Get link to team.
 This URL should be treated as an opaque blob, and not parsed.
   \[LastPasswordChangeDateTime \<DateTime?\>\]: The time when this Microsoft Entra user last changed their password or when their password was created, whichever date the latest action was performed.
-The date and time information uses ISO 8601 format and is always in UTC time.
+The date and time information uses ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Returned only on $select.
   \[LegalAgeGroupClassification \<String\>\]: Used by enterprise applications to determine the legal age group of the user.
 This property is read-only and calculated based on ageGroup and consentProvidedForMinor properties.
-Allowed values: null, MinorWithOutParentalConsent, MinorWithParentalConsent, MinorNoParentalConsentRequired, NotAdult and Adult.
+Allowed values: null, MinorWithOutParentalConsent, MinorWithParentalConsent, MinorNoParentalConsentRequired, NotAdult, and Adult.
 Refer to the legal age group property definitions for further information.
 Returned only on $select.
   \[LicenseAssignmentStates \<IMicrosoftGraphLicenseAssignmentState\[\]\>\]: State of license assignments for this user.
@@ -22705,7 +22735,7 @@ Read-only
 Equal to the skuPartNumber on the related SubscribedSku object; for example: 'AAD_Premium'.
 Read-only
   \[Mail \<String\>\]: The SMTP address for the user, for example, jeff@contoso.onmicrosoft.com.
-Changes to this property will also update the user's proxyAddresses collection to include the value as an SMTP address.
+Changes to this property update the user's proxyAddresses collection to include the value as an SMTP address.
 This property can't contain accent characters. 
 NOTE: We don't recommend updating this property for Azure AD B2C user profiles.
 Use the otherMails property instead.
@@ -23098,11 +23128,11 @@ Supports $expand.
 Read-only.
 Nullable.
   \[MobilePhone \<String\>\]: The primary cellular telephone number for the user.
-Read-only for users synced from on-premises directory.
+Read-only for users synced from the on-premises directory.
 Maximum length is 64 characters.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values) and $search.
-  \[MySite \<String\>\]: The URL for the user's personal site.
+  \[MySite \<String\>\]: The URL for the user's site.
 Returned only on $select.
   \[Oauth2PermissionGrants \<IMicrosoftGraphOAuth2PermissionGrant\[\]\>\]: 
     \[Id \<String\>\]: The unique identifier for an entity.
@@ -23162,7 +23192,7 @@ NOTE: The $ and _ characters can't be used when specifying this property.
 Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in)..
   \[OnPremisesLastSyncDateTime \<DateTime?\>\]: Indicates the last time at which the object was synced with the on-premises directory; for example: 2013-02-16T03:04:54Z.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 Returned only on $select.
@@ -23189,14 +23219,15 @@ Read-only.
 Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in, startsWith).
   \[Onenote \<IMicrosoftGraphOnenote\>\]: onenote
-  \[OnlineMeetings \<IMicrosoftGraphOnlineMeeting\[\]\>\]: Information about a meeting, including the URL used to join a meeting, the attendees' list, and the description.
-    \[AllowAttendeeToEnableCamera \<Boolean?\>\]: 
-    \[AllowAttendeeToEnableMic \<Boolean?\>\]: 
+  \[OnlineMeetings \<IMicrosoftGraphOnlineMeeting\[\]\>\]: Information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
+    \[AllowAttendeeToEnableCamera \<Boolean?\>\]: Indicates whether attendees can turn on their camera.
+    \[AllowAttendeeToEnableMic \<Boolean?\>\]: Indicates whether attendees can turn on their microphone.
     \[AllowMeetingChat \<String\>\]: meetingChatMode
-    \[AllowParticipantsToChangeName \<Boolean?\>\]: 
-    \[AllowTeamworkReactions \<Boolean?\>\]: 
+    \[AllowParticipantsToChangeName \<Boolean?\>\]: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+    \[AllowTeamworkReactions \<Boolean?\>\]: Indicates if Teams reactions are enabled for the meeting.
     \[AllowedPresenters \<String\>\]: onlineMeetingPresenters
-    \[AttendanceReports \<IMicrosoftGraphMeetingAttendanceReport\[\]\>\]: 
+    \[AttendanceReports \<IMicrosoftGraphMeetingAttendanceReport\[\]\>\]: The attendance reports of an online meeting.
+Read-only.
       \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
       \[AttendanceRecords \<IMicrosoftGraphAttendanceRecord\[\]\>\]: List of attendance records of an attendance report.
@@ -23231,7 +23262,7 @@ Read-only.
       \[MessageId \<String\>\]: The unique identifier of a message in a Microsoft Teams channel.
       \[ReplyChainMessageId \<String\>\]: The ID of the reply message.
       \[ThreadId \<String\>\]: The unique identifier for a thread in Microsoft Teams.
-    \[IsEntryExitAnnounced \<Boolean?\>\]: 
+    \[IsEntryExitAnnounced \<Boolean?\>\]: Indicates whether to announce when callers join or leave.
     \[JoinInformation \<IMicrosoftGraphItemBody\>\]: itemBody
     \[JoinMeetingIdSettings \<IMicrosoftGraphJoinMeetingIdSettings\>\]: joinMeetingIdSettings
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -23243,16 +23274,18 @@ Read-only.
       \[Passcode \<String\>\]: The passcode to join a meeting. 
 Optional.
 Read-only.
-    \[JoinWebUrl \<String\>\]: 
+    \[JoinWebUrl \<String\>\]: The join URL of the online meeting.
+Read-only.
     \[LobbyBypassSettings \<IMicrosoftGraphLobbyBypassSettings\>\]: lobbyBypassSettings
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[IsDialInBypassEnabled \<Boolean?\>\]: Specifies whether or not to always let dial-in callers bypass the lobby.
 Optional.
       \[Scope \<String\>\]: lobbyBypassScope
-    \[RecordAutomatically \<Boolean?\>\]: 
+    \[RecordAutomatically \<Boolean?\>\]: Indicates whether to record the meeting automatically.
     \[ShareMeetingChatHistoryDefault \<String\>\]: meetingChatHistoryDefaultMode
-    \[Subject \<String\>\]: 
-    \[VideoTeleconferenceId \<String\>\]: 
+    \[Subject \<String\>\]: The subject of the online meeting.
+    \[VideoTeleconferenceId \<String\>\]: The video teleconferencing ID.
+Read-only.
     \[WatermarkProtection \<IMicrosoftGraphWatermarkProtectionValues\>\]: watermarkProtectionValues
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[IsEnabledForContentSharing \<Boolean?\>\]: Indicates whether to apply a watermark to any shared content.
@@ -23406,6 +23439,7 @@ The general format is alias@domain.
       \[DisplayName \<String\>\]: The display name of the web site.
       \[Type \<String\>\]: websiteType
     \[YomiCompany \<String\>\]: The phonetic Japanese name of the person's company.
+  \[PermissionGrants \<IMicrosoftGraphResourceSpecificPermissionGrant\[\]\>\]: List all resource-specific permission grants of a user.
   \[Photo \<IMicrosoftGraphProfilePhoto\>\]: profilePhoto
   \[Photos \<IMicrosoftGraphProfilePhoto\[\]\>\]: The collection of the user's profile photos in different sizes.
 Read-only.
@@ -23429,7 +23463,7 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
 For more information, see OneDrive Online Multi-Geo.
   \[PreferredLanguage \<String\>\]: The preferred language for the user.
 The preferred language format is based on RFC 4646.
-The name is a combination of an ISO 639 two-letter lowercase culture code associated with the language, and an ISO 3166 two-letter uppercase subculture code associated with the country or region.
+The name is a combination of an ISO 639 two-letter lowercase culture code associated with the language and an ISO 3166 two-letter uppercase subculture code associated with the country or region.
 Example: 'en-US', or 'es-ES'.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values)
@@ -23727,7 +23761,8 @@ Read-only.
 Read-only.
 Returned by default.
 Supports $select and $filter (eq, not, ge, le, startsWith).
-  \[ServiceProvisioningErrors \<IMicrosoftGraphServiceProvisioningError\[\]\>\]: 
+  \[ServiceProvisioningErrors \<IMicrosoftGraphServiceProvisioningError\[\]\>\]: Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a user object . 
+Supports $filter (eq, not, for isResolved and serviceInstance).
   \[Settings \<IMicrosoftGraphUserSettings\>\]: userSettings
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[Id \<String\>\]: The unique identifier for an entity.
@@ -23774,7 +23809,7 @@ Microsoft Entra ID maintains interactive sign-ins going back to April 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
     \[LastSignInRequestId \<String\>\]: Request identifier of the last interactive sign-in performed by this user.
   \[SignInSessionsValidFromDateTime \<DateTime?\>\]: Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph). 
-If this happens, the application needs to acquire a new refresh token by making a request to the authorize endpoint.
+If this happens, the application needs to acquire a new refresh token by requesting the authorized endpoint.
 Read-only.
 Use revokeSignInSessions to reset.
 Returned only on $select.
@@ -23889,8 +23924,8 @@ Read-only.
       \[WellknownListName \<String\>\]: wellknownListName
   \[TransitiveMemberOf \<IMicrosoftGraphDirectoryObject\[\]\>\]: The groups, including nested groups, and directory roles that a user is a member of.
 Nullable.
-  \[UsageLocation \<String\>\]: A two letter country code (ISO standard 3166).
-Required for users that are assigned licenses due to legal requirement to check for availability of services in countries. 
+  \[UsageLocation \<String\>\]: A two-letter country code (ISO standard 3166).
+Required for users that are assigned licenses due to legal requirements to check for availability of services in countries. 
 Examples include: US, JP, and GB.
 Not nullable.
 Returned only on $select.
@@ -23898,12 +23933,12 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
   \[UserPrincipalName \<String\>\]: The user principal name (UPN) of the user.
 The UPN is an Internet-style sign-in name for the user based on the Internet standard RFC 822.
 By convention, this should map to the user's email name.
-The general format is alias@domain, where domain must be present in the tenant's collection of verified domains.
+The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -24013,7 +24048,7 @@ Longer text description of the user's unique activity (example: document name, f
         \[DisplayText \<String\>\]: Required.
 Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)
     \[AgeGroup \<String\>\]: Sets the age group of the user.
-Allowed values: null, Minor, NotAdult and Adult.
+Allowed values: null, Minor, NotAdult, and Adult.
 For more information, see legal age group property definitions.
 Returned only on $select.
 Supports $filter (eq, ne, not, and in).
@@ -24069,7 +24104,7 @@ Read-only.
 Required on create.
 Supports $filter (eq only).
     \[AssignedLicenses \<IMicrosoftGraphAssignedLicense\[\]\>\]: The licenses that are assigned to the user, including inherited (group-based) licenses.
-This property doesn't differentiate directly assigned and inherited licenses.
+This property doesn't differentiate between directly assigned and inherited licenses.
 Use the licenseAssignmentStates property to identify the directly assigned and inherited licenses. 
 Not nullable.
 Returned only on $select.
@@ -24285,12 +24320,12 @@ Read-only.
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[CertificateUserIds \<String\[\]\>\]: 
     \[Birthday \<DateTime?\>\]: The birthday of the user.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
 Returned only on $select.
     \[BusinessPhones \<String\[\]\>\]: The telephone numbers for the user.
-NOTE: Although this is a string collection, only one number can be set for this property.
-Read-only for users synced from on-premises directory.
+NOTE: Although it is a string collection, only one number can be set for this property.
+Read-only for users synced from the on-premises directory.
 Returned by default.
 Supports $filter (eq, not, ge, le, startsWith).
     \[Calendar \<IMicrosoftGraphCalendar\>\]: calendar
@@ -24785,7 +24820,7 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
 This property can be useful for describing the company that an external user comes from.
 The maximum length is 64 characters.Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
-    \[ConsentProvidedForMinor \<String\>\]: Sets whether consent has been obtained for minors.
+    \[ConsentProvidedForMinor \<String\>\]: Sets whether consent was obtained for minors.
 Allowed values: null, Granted, Denied and NotRequired.
 Refer to the legal age group property definitions for further information.
 Returned only on $select.
@@ -24884,7 +24919,7 @@ Nullable.
 Maximum length is 128 characters.
 Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
-    \[CreatedDateTime \<DateTime?\>\]: The date and time the user was created, in ISO 8601 format and in UTC time.
+    \[CreatedDateTime \<DateTime?\>\]: The date and time the user was created, in ISO 8601 format and UTC.
 The value cannot be modified and is automatically populated when the entity is created.
 Nullable.
 For on-premises users, the value represents when they were first created in Microsoft Entra ID.
@@ -24904,7 +24939,7 @@ Read-only.Returned only on $select.
 Supports $filter (eq, ne, not, in).
     \[CustomSecurityAttributes \<IMicrosoftGraphCustomSecurityAttributeValue\>\]: customSecurityAttributeValue
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Department \<String\>\]: The name for the department in which the user works.
+    \[Department \<String\>\]: The name of the department in which the user works.
 Maximum length is 64 characters.
 Returned only on $select.
 Supports $filter (eq, ne, not , ge, le, in, and eq on null values).
@@ -24920,7 +24955,7 @@ Read-only.
 Nullable.
 Supports $expand.
     \[DisplayName \<String\>\]: The name displayed in the address book for the user.
-This is usually the combination of the user's first name, middle initial and last name.
+This is usually the combination of the user's first name, middle initial, and last name.
 This property is required when a user is created and it cannot be cleared during updates.
 Maximum length is 256 characters.
 Returned by default.
@@ -26027,7 +26062,7 @@ Required.
         \[LearningProviderId \<String\>\]: The registration ID of the provider.
 Required.
         \[Status \<String\>\]: courseStatus
-    \[EmployeeHireDate \<DateTime?\>\]: The date and time when the user was hired or will start work in case of a future hire.
+    \[EmployeeHireDate \<DateTime?\>\]: The date and time when the user was hired or will start work in a future hire.
 Returned only on $select.
 Supports $filter (eq, ne, not , ge, le, in).
     \[EmployeeId \<String\>\]: The employee identifier assigned to the user by the organization.
@@ -26315,14 +26350,14 @@ Maximum length is 64 characters.
 Returned by default.
 Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
     \[HireDate \<DateTime?\>\]: The hire date of the user.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
 Returned only on $select. 
 Note: This property is specific to SharePoint Online.
 We recommend using the native employeeHireDate property to set and update hire date values using Microsoft Graph APIs.
     \[Identities \<IMicrosoftGraphObjectIdentity\[\]\>\]: Represents the identities that can be used to sign in to this user account.
-An identity can be provided by Microsoft (also known as a local account), by organizations, or by social identity providers such as Facebook, Google, and Microsoft, and tied to a user account.
-May contain multiple items with the same signInType value.
+Microsoft (also known as a local account), organizations, or social identity providers such as Facebook, Google, and Microsoft can provide identity and tie it to a user account.
+It may contain multiple items with the same signInType value.
 Returned only on $select.
 Supports $filter (eq) including on null values, only where the signInType is not userPrincipalName.
       \[Issuer \<String\>\]: Specifies the issuer of the identity, for example facebook.com.For local accounts (where signInType isn't federated), this property is the local B2C tenant default domain name, for example contoso.onmicrosoft.com.For guests from other Microsoft Entra organization, this is the domain of the federated organization, for example contoso.com.Supports $filter.
@@ -26337,7 +26372,7 @@ Setting or updating a userPrincipalName identity will update the value of the us
 The validations performed on the userPrincipalName property on the user object, for example, verified domains and acceptable characters, will be performed when setting or updating a userPrincipalName identity.
 Other validation is enforced on issuerAssignedId when the sign-in type is set to emailAddress or userName.
 This property can also be set to any custom string.
-    \[ImAddresses \<String\[\]\>\]: The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user.
+    \[ImAddresses \<String\[\]\>\]: The instant message voice-over IP (VOIP) session initiation protocol (SIP) addresses for the user.
 Read-only.
 Returned only on $select.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -26934,10 +26969,11 @@ Returned by default.
 Supports $filter (eq, ne, not, in).
         \[SecurityIdentifier \<String\>\]: Security identifier of the group, used in Windows scenarios.
 Returned by default.
-        \[ServiceProvisioningErrors \<IMicrosoftGraphServiceProvisioningError\[\]\>\]: 
-          \[CreatedDateTime \<DateTime?\>\]: 
-          \[IsResolved \<Boolean?\>\]: 
-          \[ServiceInstance \<String\>\]: 
+        \[ServiceProvisioningErrors \<IMicrosoftGraphServiceProvisioningError\[\]\>\]: Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object . 
+Supports $filter (eq, not, for isResolved and serviceInstance).
+          \[CreatedDateTime \<DateTime?\>\]: The date and time at which the error occurred.
+          \[IsResolved \<Boolean?\>\]: Indicates whether the error has been attended to.
+          \[ServiceInstance \<String\>\]: Qualified service instance (for example, 'SharePoint/Dublin') that published the service error information.
         \[Settings \<IMicrosoftGraphGroupSetting\[\]\>\]: Settings that can govern this group's behavior, like whether members can invite guest users to the group.
 Nullable.
           \[Id \<String\>\]: The unique identifier for an entity.
@@ -27188,12 +27224,12 @@ Read-only.
 This is the URL that you get when you right-click a team in the Microsoft Teams client and select Get link to team.
 This URL should be treated as an opaque blob, and not parsed.
     \[LastPasswordChangeDateTime \<DateTime?\>\]: The time when this Microsoft Entra user last changed their password or when their password was created, whichever date the latest action was performed.
-The date and time information uses ISO 8601 format and is always in UTC time.
+The date and time information uses ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Returned only on $select.
     \[LegalAgeGroupClassification \<String\>\]: Used by enterprise applications to determine the legal age group of the user.
 This property is read-only and calculated based on ageGroup and consentProvidedForMinor properties.
-Allowed values: null, MinorWithOutParentalConsent, MinorWithParentalConsent, MinorNoParentalConsentRequired, NotAdult and Adult.
+Allowed values: null, MinorWithOutParentalConsent, MinorWithParentalConsent, MinorNoParentalConsentRequired, NotAdult, and Adult.
 Refer to the legal age group property definitions for further information.
 Returned only on $select.
     \[LicenseAssignmentStates \<IMicrosoftGraphLicenseAssignmentState\[\]\>\]: State of license assignments for this user.
@@ -27225,7 +27261,7 @@ Read-only
 Equal to the skuPartNumber on the related SubscribedSku object; for example: 'AAD_Premium'.
 Read-only
     \[Mail \<String\>\]: The SMTP address for the user, for example, jeff@contoso.onmicrosoft.com.
-Changes to this property will also update the user's proxyAddresses collection to include the value as an SMTP address.
+Changes to this property update the user's proxyAddresses collection to include the value as an SMTP address.
 This property can't contain accent characters. 
 NOTE: We don't recommend updating this property for Azure AD B2C user profiles.
 Use the otherMails property instead.
@@ -27618,11 +27654,11 @@ Supports $expand.
 Read-only.
 Nullable.
     \[MobilePhone \<String\>\]: The primary cellular telephone number for the user.
-Read-only for users synced from on-premises directory.
+Read-only for users synced from the on-premises directory.
 Maximum length is 64 characters.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values) and $search.
-    \[MySite \<String\>\]: The URL for the user's personal site.
+    \[MySite \<String\>\]: The URL for the user's site.
 Returned only on $select.
     \[Oauth2PermissionGrants \<IMicrosoftGraphOAuth2PermissionGrant\[\]\>\]: 
       \[Id \<String\>\]: The unique identifier for an entity.
@@ -27682,7 +27718,7 @@ NOTE: The $ and _ characters can't be used when specifying this property.
 Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in)..
     \[OnPremisesLastSyncDateTime \<DateTime?\>\]: Indicates the last time at which the object was synced with the on-premises directory; for example: 2013-02-16T03:04:54Z.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 Returned only on $select.
@@ -27709,14 +27745,15 @@ Read-only.
 Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in, startsWith).
     \[Onenote \<IMicrosoftGraphOnenote\>\]: onenote
-    \[OnlineMeetings \<IMicrosoftGraphOnlineMeeting\[\]\>\]: Information about a meeting, including the URL used to join a meeting, the attendees' list, and the description.
-      \[AllowAttendeeToEnableCamera \<Boolean?\>\]: 
-      \[AllowAttendeeToEnableMic \<Boolean?\>\]: 
+    \[OnlineMeetings \<IMicrosoftGraphOnlineMeeting\[\]\>\]: Information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
+      \[AllowAttendeeToEnableCamera \<Boolean?\>\]: Indicates whether attendees can turn on their camera.
+      \[AllowAttendeeToEnableMic \<Boolean?\>\]: Indicates whether attendees can turn on their microphone.
       \[AllowMeetingChat \<String\>\]: meetingChatMode
-      \[AllowParticipantsToChangeName \<Boolean?\>\]: 
-      \[AllowTeamworkReactions \<Boolean?\>\]: 
+      \[AllowParticipantsToChangeName \<Boolean?\>\]: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+      \[AllowTeamworkReactions \<Boolean?\>\]: Indicates if Teams reactions are enabled for the meeting.
       \[AllowedPresenters \<String\>\]: onlineMeetingPresenters
-      \[AttendanceReports \<IMicrosoftGraphMeetingAttendanceReport\[\]\>\]: 
+      \[AttendanceReports \<IMicrosoftGraphMeetingAttendanceReport\[\]\>\]: The attendance reports of an online meeting.
+Read-only.
         \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
         \[AttendanceRecords \<IMicrosoftGraphAttendanceRecord\[\]\>\]: List of attendance records of an attendance report.
@@ -27751,7 +27788,7 @@ Read-only.
         \[MessageId \<String\>\]: The unique identifier of a message in a Microsoft Teams channel.
         \[ReplyChainMessageId \<String\>\]: The ID of the reply message.
         \[ThreadId \<String\>\]: The unique identifier for a thread in Microsoft Teams.
-      \[IsEntryExitAnnounced \<Boolean?\>\]: 
+      \[IsEntryExitAnnounced \<Boolean?\>\]: Indicates whether to announce when callers join or leave.
       \[JoinInformation \<IMicrosoftGraphItemBody\>\]: itemBody
       \[JoinMeetingIdSettings \<IMicrosoftGraphJoinMeetingIdSettings\>\]: joinMeetingIdSettings
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -27763,16 +27800,18 @@ Read-only.
         \[Passcode \<String\>\]: The passcode to join a meeting. 
 Optional.
 Read-only.
-      \[JoinWebUrl \<String\>\]: 
+      \[JoinWebUrl \<String\>\]: The join URL of the online meeting.
+Read-only.
       \[LobbyBypassSettings \<IMicrosoftGraphLobbyBypassSettings\>\]: lobbyBypassSettings
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[IsDialInBypassEnabled \<Boolean?\>\]: Specifies whether or not to always let dial-in callers bypass the lobby.
 Optional.
         \[Scope \<String\>\]: lobbyBypassScope
-      \[RecordAutomatically \<Boolean?\>\]: 
+      \[RecordAutomatically \<Boolean?\>\]: Indicates whether to record the meeting automatically.
       \[ShareMeetingChatHistoryDefault \<String\>\]: meetingChatHistoryDefaultMode
-      \[Subject \<String\>\]: 
-      \[VideoTeleconferenceId \<String\>\]: 
+      \[Subject \<String\>\]: The subject of the online meeting.
+      \[VideoTeleconferenceId \<String\>\]: The video teleconferencing ID.
+Read-only.
       \[WatermarkProtection \<IMicrosoftGraphWatermarkProtectionValues\>\]: watermarkProtectionValues
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[IsEnabledForContentSharing \<Boolean?\>\]: Indicates whether to apply a watermark to any shared content.
@@ -27926,6 +27965,7 @@ The general format is alias@domain.
         \[DisplayName \<String\>\]: The display name of the web site.
         \[Type \<String\>\]: websiteType
       \[YomiCompany \<String\>\]: The phonetic Japanese name of the person's company.
+    \[PermissionGrants \<IMicrosoftGraphResourceSpecificPermissionGrant\[\]\>\]: List all resource-specific permission grants of a user.
     \[Photo \<IMicrosoftGraphProfilePhoto\>\]: profilePhoto
     \[Photos \<IMicrosoftGraphProfilePhoto\[\]\>\]: The collection of the user's profile photos in different sizes.
 Read-only.
@@ -27949,7 +27989,7 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
 For more information, see OneDrive Online Multi-Geo.
     \[PreferredLanguage \<String\>\]: The preferred language for the user.
 The preferred language format is based on RFC 4646.
-The name is a combination of an ISO 639 two-letter lowercase culture code associated with the language, and an ISO 3166 two-letter uppercase subculture code associated with the country or region.
+The name is a combination of an ISO 639 two-letter lowercase culture code associated with the language and an ISO 3166 two-letter uppercase subculture code associated with the country or region.
 Example: 'en-US', or 'es-ES'.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values)
@@ -28247,7 +28287,8 @@ Read-only.
 Read-only.
 Returned by default.
 Supports $select and $filter (eq, not, ge, le, startsWith).
-    \[ServiceProvisioningErrors \<IMicrosoftGraphServiceProvisioningError\[\]\>\]: 
+    \[ServiceProvisioningErrors \<IMicrosoftGraphServiceProvisioningError\[\]\>\]: Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a user object . 
+Supports $filter (eq, not, for isResolved and serviceInstance).
     \[Settings \<IMicrosoftGraphUserSettings\>\]: userSettings
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[Id \<String\>\]: The unique identifier for an entity.
@@ -28294,7 +28335,7 @@ Microsoft Entra ID maintains interactive sign-ins going back to April 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
       \[LastSignInRequestId \<String\>\]: Request identifier of the last interactive sign-in performed by this user.
     \[SignInSessionsValidFromDateTime \<DateTime?\>\]: Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph). 
-If this happens, the application needs to acquire a new refresh token by making a request to the authorize endpoint.
+If this happens, the application needs to acquire a new refresh token by requesting the authorized endpoint.
 Read-only.
 Use revokeSignInSessions to reset.
 Returned only on $select.
@@ -28409,8 +28450,8 @@ Read-only.
         \[WellknownListName \<String\>\]: wellknownListName
     \[TransitiveMemberOf \<IMicrosoftGraphDirectoryObject\[\]\>\]: The groups, including nested groups, and directory roles that a user is a member of.
 Nullable.
-    \[UsageLocation \<String\>\]: A two letter country code (ISO standard 3166).
-Required for users that are assigned licenses due to legal requirement to check for availability of services in countries. 
+    \[UsageLocation \<String\>\]: A two-letter country code (ISO standard 3166).
+Required for users that are assigned licenses due to legal requirements to check for availability of services in countries. 
 Examples include: US, JP, and GB.
 Not nullable.
 Returned only on $select.
@@ -28418,12 +28459,12 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
     \[UserPrincipalName \<String\>\]: The user principal name (UPN) of the user.
 The UPN is an Internet-style sign-in name for the user based on the Internet standard RFC 822.
 By convention, this should map to the user's email name.
-The general format is alias@domain, where domain must be present in the tenant's collection of verified domains.
+The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
-
-
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ !
+# ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -29303,9 +29344,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[New-MgBetaUserDriveRootChild](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveRootChild?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdriverootchild](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdriverootchild)
-
-
 

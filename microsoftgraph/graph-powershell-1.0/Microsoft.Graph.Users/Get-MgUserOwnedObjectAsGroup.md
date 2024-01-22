@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserownedobjectasgroup
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserOwnedObjectAsGroup](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOwnedObjectAsGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -36,6 +33,18 @@ Get-MgUserOwnedObjectAsGroup -InputObject <IUsersIdentity> [-ExpandProperty <Str
 
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -283,9 +292,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserOwnedObjectAsGroup](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOwnedObjectAsGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserownedobjectasgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserownedobjectasgroup)
-
-
 

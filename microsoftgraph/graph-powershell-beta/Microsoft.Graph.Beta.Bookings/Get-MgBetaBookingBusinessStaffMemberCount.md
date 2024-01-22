@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusinessstaffmembercount
@@ -10,15 +10,24 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgBookingBusinessStaffMemberCount](/powershell/module/Microsoft.Graph.Bookings/Get-MgBookingBusinessStaffMemberCount?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Get (Default)
 ```
 Get-MgBetaBookingBusinessStaffMemberCount -BookingBusinessId <String> [-Filter <String>] [-Search <String>]
  [<CommonParameters>]
+```
+
+### Get1
+```
+Get-MgBetaBookingBusinessStaffMemberCount -BookingBusinessId <String> [-Filter <String>] [-Search <String>]
+ [<CommonParameters>]
+```
+
+### GetViaIdentity1
+```
+Get-MgBetaBookingBusinessStaffMemberCount -InputObject <IBookingsIdentity> [-Filter <String>]
+ [-Search <String>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -30,6 +39,18 @@ Get-MgBetaBookingBusinessStaffMemberCount -InputObject <IBookingsIdentity> [-Fil
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
 ## PARAMETERS
 
 ### -BookingBusinessId
@@ -37,7 +58,7 @@ The unique identifier of bookingBusiness
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get, Get1
 Aliases:
 
 Required: True
@@ -68,7 +89,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IBookingsIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: GetViaIdentity1, GetViaIdentity
 Aliases:
 
 Required: True
@@ -131,9 +152,6 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Get-MgBookingBusinessStaffMemberCount](/powershell/module/Microsoft.Graph.Bookings/Get-MgBookingBusinessStaffMemberCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusinessstaffmembercount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusinessstaffmembercount)
-
-
 

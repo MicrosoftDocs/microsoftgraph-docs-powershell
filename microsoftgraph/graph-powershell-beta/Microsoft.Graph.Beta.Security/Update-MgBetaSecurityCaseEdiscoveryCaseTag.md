@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasetag
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # Update-MgBetaSecurityCaseEdiscoveryCaseTag
 
 ## SYNOPSIS
 Update the properties of an ediscoveryReviewTag object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSecurityCaseEdiscoveryCaseTag](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCaseEdiscoveryCaseTag?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,8 +45,21 @@ Update-MgBetaSecurityCaseEdiscoveryCaseTag -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the properties of an ediscoveryReviewTag object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoveryreviewtag-update-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -460,9 +469,6 @@ Read-only.
   \[Parent \<IMicrosoftGraphSecurityEdiscoveryReviewTag\>\]: ediscoveryReviewTag
 
 ## RELATED LINKS
-[Update-MgSecurityCaseEdiscoveryCaseTag](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCaseEdiscoveryCaseTag?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasetag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasetag)
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Users.Actions
 Module Guid: 1f5a9e1d-7b62-410d-8541-b56b33a7d63a
 Download Help Link: {{ Update Download Link }}
@@ -177,6 +177,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Invoke-MgBetaAcceptUserPendingAccessReviewInstanceRecommendation](Invoke-MgBetaAcceptUserPendingAccessReviewInstanceRecommendation.md)
+{{ Fill in the Description }}
+
+### [Invoke-MgBetaArchiveUserPlannerPlan](Invoke-MgBetaArchiveUserPlannerPlan.md)
 {{ Fill in the Description }}
 
 ### [Invoke-MgBetaBatchUserPendingAccessReviewInstanceRecordDecision](Invoke-MgBetaBatchUserPendingAccessReviewInstanceRecordDecision.md)
@@ -420,6 +423,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Invoke-MgBetaTroubleshootUserCloudPc](Invoke-MgBetaTroubleshootUserCloudPc.md)
+{{ Fill in the Description }}
+
+### [Invoke-MgBetaUnarchiveUserPlannerPlan](Invoke-MgBetaUnarchiveUserPlannerPlan.md)
 {{ Fill in the Description }}
 
 ### [Invoke-MgBetaUnfollowUserDriveItem](Invoke-MgBetaUnfollowUserDriveItem.md)
@@ -832,5 +838,4 @@ Locale: en-US
 
 ### [Update-MgBetaUserPassword](Update-MgBetaUserPassword.md)
 {{ Fill in the Description }}
-
 

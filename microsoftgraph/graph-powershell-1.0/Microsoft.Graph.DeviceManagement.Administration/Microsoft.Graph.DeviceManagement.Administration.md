@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 Module Guid: 32b02ba6-c992-4ded-a37e-71bbf8274995
 Download Help Link: {{ Update Download Link }}
@@ -111,6 +111,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementTermAndConditionCount](Get-MgDeviceManagementTermAndConditionCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceManagementVirtualEndpoint](Get-MgDeviceManagementVirtualEndpoint.md)
 {{ Fill in the Description }}
 
 ### [New-MgDeviceManagementAuditEvent](New-MgDeviceManagementAuditEvent.md)
@@ -253,5 +256,4 @@ Locale: en-US
 
 ### [Update-MgDeviceManagementTermAndConditionAssignment](Update-MgDeviceManagementTermAndConditionAssignment.md)
 {{ Fill in the Description }}
-
 

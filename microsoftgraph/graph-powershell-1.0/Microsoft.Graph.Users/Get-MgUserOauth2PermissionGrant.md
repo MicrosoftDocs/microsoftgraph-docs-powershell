@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguseroauth2permissiongrant
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgUserOauth2PermissionGrant
 
 ## SYNOPSIS
 Get oauth2PermissionGrants from users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOauth2PermissionGrant?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,14 +34,12 @@ Get-MgUserOauth2PermissionGrant -InputObject <IUsersIdentity> [-ExpandProperty <
 ## DESCRIPTION
 Get oauth2PermissionGrants from users
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-list-oauth2permissiongrants-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Get user's oAuth2PermissionGrant 
 
-```powershell
+### EXAMPLE 1
+```
 Get-MgUserOauth2permissionGrant  -UserId 'afeb5811-0582-4188-8546-4440c2b921bd' | Format-List
+```
 
 ClientId             : 202397ec-d9d7-4b95-b5a8-ff85f5ccae11
 ConsentType          : Principal
@@ -54,9 +48,6 @@ PrincipalId          : afeb5811-0582-4188-8546-4440c2b921bd
 ResourceId           : f9106fc8-7d77-4b86-85d9-9a5f621ceeb4
 Scope                :  User.Read offline_access profile openid User.Read.All Group.ReadWrite.All Directory.ReadWrite.All
 AdditionalProperties : {}
-```
-
-This example gets the oauth2PermissionGrants for the specified user.
 
 ## PARAMETERS
 
@@ -288,8 +279,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOauth2PermissionGrant?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguseroauth2permissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguseroauth2permissiongrant)
-
 

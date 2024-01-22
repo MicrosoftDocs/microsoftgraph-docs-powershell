@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackagecatalog
 schema: 2.0.0
-ms.prod: governance
-ms.prod: governance
 ---
 
 # Get-MgBetaEntitlementManagementAccessPackageCatalog
 
 ## SYNOPSIS
 Retrieve the properties and relationships of an accessPackageCatalog object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementAccessPackageCatalog](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageCatalog?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -57,18 +52,13 @@ Get-MgBetaEntitlementManagementAccessPackageCatalog [-ExpandProperty <String[]>]
 ## DESCRIPTION
 Retrieve the properties and relationships of an accessPackageCatalog object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackagecatalog-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/entitlementmanagement-list-accesspackagecatalogs-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Get a list of all access package catalogs
 
-```powershell
+### EXAMPLE 1
+```
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 Get-MgBetaEntitlementManagementAccessPackageCatalog | Format-list
+```
 
 AccessPackageResourceRoles  :
 AccessPackageResourceScopes :
@@ -85,15 +75,12 @@ IsExternallyVisible         : True
 ModifiedBy                  : Azure AD
 ModifiedDateTime            : 9/15/2021 7:23:24 AM
 AdditionalProperties        : {}
+
+### EXAMPLE 2
 ```
-
-This command returns a list of all the access package catalogs.
-
-### Example 2: Filter the access package catalogs by the display name
-
-```powershell
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 Get-MgBetaEntitlementManagementAccessPackageCatalog -Filter "DisplayName eq 'General'" | Format-List
+```
 
 AccessPackageResourceRoles  :
 AccessPackageResourceScopes :
@@ -110,9 +97,6 @@ IsExternallyVisible         : True
 ModifiedBy                  : Azure AD
 ModifiedDateTime            : 9/15/2021 7:23:24 AM
 AdditionalProperties        : {}
-```
-
-This command returns the access package catalogs that meet the defined filter.
 
 ## PARAMETERS
 
@@ -445,8 +429,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[WorkflowVersionNumber \<Int32?\>\]: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgEntitlementManagementAccessPackageCatalog](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageCatalog?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackagecatalog](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackagecatalog)
-
 

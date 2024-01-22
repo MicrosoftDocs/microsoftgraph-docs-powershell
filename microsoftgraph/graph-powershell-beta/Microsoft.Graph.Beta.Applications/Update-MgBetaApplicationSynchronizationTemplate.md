@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationsynchronizationtemplate
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Update-MgBetaApplicationSynchronizationTemplate
 
 ## SYNOPSIS
 Update (override) the synchronization template associated with a given application.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgApplicationSynchronizationTemplate](/powershell/module/Microsoft.Graph.Applications/Update-MgApplicationSynchronizationTemplate?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -48,8 +44,21 @@ Update-MgBetaApplicationSynchronizationTemplate -InputObject <IApplicationsIdent
 ## DESCRIPTION
 Update (override) the synchronization template associated with a given application.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronizationtemplate-update-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -386,11 +395,15 @@ null if discovery hasn't yet occurred.
     \[SynchronizationRules \<IMicrosoftGraphSynchronizationRule\[\]\>\]: A collection of synchronization rules configured for the synchronizationJob or synchronizationTemplate.
       \[ContainerFilter \<IMicrosoftGraphContainerFilter\>\]: containerFilter
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-        \[IncludedContainers \<String\[\]\>\]: 
+        \[IncludedContainers \<String\[\]\>\]: The identifiers of containers, such as organizational units, that are in scope for a synchronization rule.
+For Active Directory organizational units, use the distinguished names.
+An empty list means no container filtering is configured.
       \[Editable \<Boolean?\>\]: true if the synchronization rule can be customized; false if this rule is read-only and shouldn't be changed.
       \[GroupFilter \<IMicrosoftGraphGroupFilter\>\]: groupFilter
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-        \[IncludedGroups \<String\[\]\>\]: 
+        \[IncludedGroups \<String\[\]\>\]: Identifiers of groups that are in scope for a synchronization rule.
+For Active Directory groups, use the distinguished names.
+An empty list means no group filtering is configured.
       \[Id \<String\>\]: Synchronization rule identifier.
 Must be one of the identifiers recognized by the synchronization engine.
 Supported rule identifiers can be found in the synchronization template returned by the API.
@@ -562,11 +575,15 @@ null if discovery hasn't yet occurred.
   \[SynchronizationRules \<IMicrosoftGraphSynchronizationRule\[\]\>\]: A collection of synchronization rules configured for the synchronizationJob or synchronizationTemplate.
     \[ContainerFilter \<IMicrosoftGraphContainerFilter\>\]: containerFilter
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[IncludedContainers \<String\[\]\>\]: 
+      \[IncludedContainers \<String\[\]\>\]: The identifiers of containers, such as organizational units, that are in scope for a synchronization rule.
+For Active Directory organizational units, use the distinguished names.
+An empty list means no container filtering is configured.
     \[Editable \<Boolean?\>\]: true if the synchronization rule can be customized; false if this rule is read-only and shouldn't be changed.
     \[GroupFilter \<IMicrosoftGraphGroupFilter\>\]: groupFilter
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[IncludedGroups \<String\[\]\>\]: 
+      \[IncludedGroups \<String\[\]\>\]: Identifiers of groups that are in scope for a synchronization rule.
+For Active Directory groups, use the distinguished names.
+An empty list means no group filtering is configured.
     \[Id \<String\>\]: Synchronization rule identifier.
 Must be one of the identifiers recognized by the synchronization engine.
 Supported rule identifiers can be found in the synchronization template returned by the API.
@@ -643,9 +660,6 @@ Must match one of the directory definitions in synchronizationSchema.
   \[Version \<String\>\]: The version of the schema, updated automatically with every schema change.
 
 ## RELATED LINKS
-[Update-MgApplicationSynchronizationTemplate](/powershell/module/Microsoft.Graph.Applications/Update-MgApplicationSynchronizationTemplate?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationsynchronizationtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationsynchronizationtemplate)
-
-
 

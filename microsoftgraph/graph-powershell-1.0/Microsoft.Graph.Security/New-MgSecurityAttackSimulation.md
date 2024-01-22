@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulation
 schema: 2.0.0
-ms.prod: security
 ---
 
 # New-MgSecurityAttackSimulation
 
 ## SYNOPSIS
 Create an attack simulation campaign for a tenant.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAttackSimulation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -41,15 +37,12 @@ New-MgSecurityAttackSimulation -BodyParameter <IMicrosoftGraphSimulation> [-What
 ## DESCRIPTION
 Create an attack simulation campaign for a tenant.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/attacksimulationroot-post-simulation-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Security
+```
 
 $params = @{
 	displayName = "Graph Simulation"
@@ -84,10 +77,6 @@ $params = @{
 }
 
 New-MgSecurityAttackSimulation -BodyParameter $params
-
-```
-This example shows how to use the New-MgSecurityAttackSimulation Cmdlet.
-
 
 ## PARAMETERS
 
@@ -1015,8 +1004,6 @@ TRAININGSETTING \<IMicrosoftGraphTrainingSetting\>: trainingSetting
   \[SettingType \<String\>\]: trainingSettingType
 
 ## RELATED LINKS
-[New-MgBetaSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAttackSimulation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulation)
-
 

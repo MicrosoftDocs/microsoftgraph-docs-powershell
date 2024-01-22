@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusiness
 schema: 2.0.0
-ms.prod: bookings
 ---
 
 # Update-MgBetaBookingBusiness
@@ -11,22 +10,42 @@ ms.prod: bookings
 ## SYNOPSIS
 Update the properties of a bookingBusiness object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgBookingBusiness](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusiness?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaBookingBusiness -BookingBusinessId <String> [-AdditionalProperties <Hashtable>]
  [-Address <IMicrosoftGraphPhysicalAddress>] [-Appointments <IMicrosoftGraphBookingAppointment[]>]
+ [-BookingPageSettings <IMicrosoftGraphBookingPageSettings>]
  [-BusinessHours <IMicrosoftGraphBookingWorkHours[]>] [-BusinessType <String>]
- [-CalendarView <IMicrosoftGraphBookingAppointment[]>]
+ [-CalendarView <IMicrosoftGraphBookingAppointment[]>] [-CreatedDateTime <DateTime>]
  [-CustomQuestions <IMicrosoftGraphBookingCustomQuestion[]>] [-Customers <IMicrosoftGraphBookingCustomer[]>]
  [-DefaultCurrencyIso <String>] [-DisplayName <String>] [-Email <String>] [-Id <String>]
- [-LanguageTag <String>] [-Phone <String>] [-SchedulingPolicy <IMicrosoftGraphBookingSchedulingPolicy>]
- [-Services <IMicrosoftGraphBookingService[]>] [-StaffMembers <IMicrosoftGraphBookingStaffMember[]>]
- [-WebSiteUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LanguageTag <String>] [-LastUpdatedDateTime <DateTime>] [-Phone <String>]
+ [-SchedulingPolicy <IMicrosoftGraphBookingSchedulingPolicy>] [-Services <IMicrosoftGraphBookingService[]>]
+ [-StaffMembers <IMicrosoftGraphBookingStaffMember[]>] [-WebSiteUrl <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateExpanded1
+```
+Update-MgBetaBookingBusiness -BookingBusinessId <String> [-AdditionalProperties <Hashtable>]
+ [-Address <IMicrosoftGraphPhysicalAddress>] [-Appointments <IMicrosoftGraphBookingAppointment[]>]
+ [-BookingPageSettings <IMicrosoftGraphBookingPageSettings>]
+ [-BusinessHours <IMicrosoftGraphBookingWorkHours[]>] [-BusinessType <String>]
+ [-CalendarView <IMicrosoftGraphBookingAppointment[]>] [-CreatedDateTime <DateTime>]
+ [-CustomQuestions <IMicrosoftGraphBookingCustomQuestion[]>] [-Customers <IMicrosoftGraphBookingCustomer[]>]
+ [-DefaultCurrencyIso <String>] [-DisplayName <String>] [-Email <String>] [-Id <String>]
+ [-LanguageTag <String>] [-LastUpdatedDateTime <DateTime>] [-Phone <String>]
+ [-SchedulingPolicy <IMicrosoftGraphBookingSchedulingPolicy>] [-Services <IMicrosoftGraphBookingService[]>]
+ [-StaffMembers <IMicrosoftGraphBookingStaffMember[]>] [-WebSiteUrl <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### Update1
+```
+Update-MgBetaBookingBusiness -BookingBusinessId <String> -BodyParameter <IMicrosoftGraphBookingBusiness>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -35,17 +54,40 @@ Update-MgBetaBookingBusiness -BookingBusinessId <String> -BodyParameter <IMicros
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### UpdateViaIdentityExpanded1
+```
+Update-MgBetaBookingBusiness -InputObject <IBookingsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Address <IMicrosoftGraphPhysicalAddress>] [-Appointments <IMicrosoftGraphBookingAppointment[]>]
+ [-BookingPageSettings <IMicrosoftGraphBookingPageSettings>]
+ [-BusinessHours <IMicrosoftGraphBookingWorkHours[]>] [-BusinessType <String>]
+ [-CalendarView <IMicrosoftGraphBookingAppointment[]>] [-CreatedDateTime <DateTime>]
+ [-CustomQuestions <IMicrosoftGraphBookingCustomQuestion[]>] [-Customers <IMicrosoftGraphBookingCustomer[]>]
+ [-DefaultCurrencyIso <String>] [-DisplayName <String>] [-Email <String>] [-Id <String>]
+ [-LanguageTag <String>] [-LastUpdatedDateTime <DateTime>] [-Phone <String>]
+ [-SchedulingPolicy <IMicrosoftGraphBookingSchedulingPolicy>] [-Services <IMicrosoftGraphBookingService[]>]
+ [-StaffMembers <IMicrosoftGraphBookingStaffMember[]>] [-WebSiteUrl <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaBookingBusiness -InputObject <IBookingsIdentity> [-AdditionalProperties <Hashtable>]
  [-Address <IMicrosoftGraphPhysicalAddress>] [-Appointments <IMicrosoftGraphBookingAppointment[]>]
+ [-BookingPageSettings <IMicrosoftGraphBookingPageSettings>]
  [-BusinessHours <IMicrosoftGraphBookingWorkHours[]>] [-BusinessType <String>]
- [-CalendarView <IMicrosoftGraphBookingAppointment[]>]
+ [-CalendarView <IMicrosoftGraphBookingAppointment[]>] [-CreatedDateTime <DateTime>]
  [-CustomQuestions <IMicrosoftGraphBookingCustomQuestion[]>] [-Customers <IMicrosoftGraphBookingCustomer[]>]
  [-DefaultCurrencyIso <String>] [-DisplayName <String>] [-Email <String>] [-Id <String>]
- [-LanguageTag <String>] [-Phone <String>] [-SchedulingPolicy <IMicrosoftGraphBookingSchedulingPolicy>]
- [-Services <IMicrosoftGraphBookingService[]>] [-StaffMembers <IMicrosoftGraphBookingStaffMember[]>]
- [-WebSiteUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LanguageTag <String>] [-LastUpdatedDateTime <DateTime>] [-Phone <String>]
+ [-SchedulingPolicy <IMicrosoftGraphBookingSchedulingPolicy>] [-Services <IMicrosoftGraphBookingService[]>]
+ [-StaffMembers <IMicrosoftGraphBookingStaffMember[]>] [-WebSiteUrl <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity1
+```
+Update-MgBetaBookingBusiness -InputObject <IBookingsIdentity> -BodyParameter <IMicrosoftGraphBookingBusiness>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -57,12 +99,10 @@ Update-MgBetaBookingBusiness -InputObject <IBookingsIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Update the properties of a bookingBusiness object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingbusiness-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaBookingBusiness Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Bookings
 $params = @{
 	Email = "admin@fabrikam.com"
@@ -76,8 +116,6 @@ $params = @{
 }
 Update-MgBetaBookingBusiness -BookingBusinessId $bookingBusinessId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaBookingBusiness Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -86,7 +124,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -102,7 +140,7 @@ To construct, see NOTES section for ADDRESS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPhysicalAddress
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -120,7 +158,7 @@ To construct, see NOTES section for APPOINTMENTS properties and create a hash ta
 
 ```yaml
 Type: IMicrosoftGraphBookingAppointment[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -136,7 +174,7 @@ To construct, see NOTES section for BODYPARAMETER properties and create a hash t
 
 ```yaml
 Type: IMicrosoftGraphBookingBusiness
-Parameter Sets: Update, UpdateViaIdentity
+Parameter Sets: Update1, Update, UpdateViaIdentity1, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -151,10 +189,26 @@ The unique identifier of bookingBusiness
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded, UpdateExpanded1, Update1, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -BookingPageSettings
+bookingPageSettings
+To construct, see NOTES section for BOOKINGPAGESETTINGS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphBookingPageSettings
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -167,7 +221,7 @@ To construct, see NOTES section for BUSINESSHOURS properties and create a hash t
 
 ```yaml
 Type: IMicrosoftGraphBookingWorkHours[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -182,7 +236,7 @@ The type of business.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -200,7 +254,22 @@ To construct, see NOTES section for CALENDARVIEW properties and create a hash ta
 
 ```yaml
 Type: IMicrosoftGraphBookingAppointment[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CreatedDateTime
+.
+
+```yaml
+Type: DateTime
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -218,7 +287,7 @@ To construct, see NOTES section for CUSTOMERS properties and create a hash table
 
 ```yaml
 Type: IMicrosoftGraphBookingCustomer[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -236,7 +305,7 @@ To construct, see NOTES section for CUSTOMQUESTIONS properties and create a hash
 
 ```yaml
 Type: IMicrosoftGraphBookingCustomQuestion[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -251,7 +320,7 @@ The code for the currency that the business operates in on Microsoft Bookings.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -266,7 +335,7 @@ A name for the derived entity, which interfaces with customers.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -281,7 +350,7 @@ The email address for the business.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -297,7 +366,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -313,7 +382,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IBookingsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentity1, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -328,7 +397,22 @@ The language of the self service booking page
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -LastUpdatedDateTime
+.
+
+```yaml
+Type: DateTime
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -344,7 +428,7 @@ The phone property, together with address and webSiteUrl, appear in the footer o
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -360,7 +444,7 @@ To construct, see NOTES section for SCHEDULINGPOLICY properties and create a has
 
 ```yaml
 Type: IMicrosoftGraphBookingSchedulingPolicy
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -378,7 +462,7 @@ To construct, see NOTES section for SERVICES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphBookingService[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -396,7 +480,7 @@ To construct, see NOTES section for STAFFMEMBERS properties and create a hash ta
 
 ```yaml
 Type: IMicrosoftGraphBookingStaffMember[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -412,7 +496,7 @@ The webSiteUrl property, together with address, phone, appear in the footer of a
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -487,6 +571,8 @@ Nullable.
 Read-only.
   \[AdditionalInformation \<String\>\]: Additional information that is sent to the customer when an appointment is confirmed.
   \[AnonymousJoinWebUrl \<String\>\]: The URL of the meeting to join anonymously.
+  \[AppointmentLabel \<String\>\]: Custom label that can be stamped on this appointment by users.
+  \[CreatedDateTime \<DateTime?\>\]: 
   \[CustomerEmailAddress \<String\>\]: The SMTP address of the bookingCustomer who is booking the appointment.
   \[CustomerId \<String\>\]: The ID of the bookingCustomer for this appointment.
 If no ID is specified when an appointment is created, then a new bookingCustomer object is created.
@@ -542,6 +628,7 @@ See below for possible values.
   \[IsLocationOnline \<Boolean?\>\]: True indicates that the appointment will be held online.
 Default value is false.
   \[JoinWebUrl \<String\>\]: The URL of the online meeting for the appointment.
+  \[LastUpdatedDateTime \<DateTime?\>\]: 
   \[MaximumAttendeesCount \<Int32?\>\]: The maximum number of customers allowed in an appointment.
 If maximumAttendeesCount of the service is greater than 1, pass valid customer IDs while creating or updating an appointment.
 To create a customer, use the Create bookingCustomer operation.
@@ -593,6 +680,8 @@ Nullable.
 Read-only.
     \[AdditionalInformation \<String\>\]: Additional information that is sent to the customer when an appointment is confirmed.
     \[AnonymousJoinWebUrl \<String\>\]: The URL of the meeting to join anonymously.
+    \[AppointmentLabel \<String\>\]: Custom label that can be stamped on this appointment by users.
+    \[CreatedDateTime \<DateTime?\>\]: 
     \[CustomerEmailAddress \<String\>\]: The SMTP address of the bookingCustomer who is booking the appointment.
     \[CustomerId \<String\>\]: The ID of the bookingCustomer for this appointment.
 If no ID is specified when an appointment is created, then a new bookingCustomer object is created.
@@ -639,6 +728,7 @@ See below for possible values.
     \[IsLocationOnline \<Boolean?\>\]: True indicates that the appointment will be held online.
 Default value is false.
     \[JoinWebUrl \<String\>\]: The URL of the online meeting for the appointment.
+    \[LastUpdatedDateTime \<DateTime?\>\]: 
     \[MaximumAttendeesCount \<Int32?\>\]: The maximum number of customers allowed in an appointment.
 If maximumAttendeesCount of the service is greater than 1, pass valid customer IDs while creating or updating an appointment.
 To create a customer, use the Create bookingCustomer operation.
@@ -667,6 +757,24 @@ The value of this property is available only when reading this bookingAppointmen
 Default value is false.
     \[StaffMemberIds \<String\[\]\>\]: The ID of each bookingStaffMember who is scheduled in this appointment.
     \[Start \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
+  \[BookingPageSettings \<IMicrosoftGraphBookingPageSettings\>\]: bookingPageSettings
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[AccessControl \<String\>\]: bookingPageAccessControl
+    \[BookingPageColorCode \<String\>\]: Custom color for bookings page.
+Value should be in Hex format.
+Example: \`#123456\`.
+    \[BusinessTimeZone \<String\>\]: The time zone of the customer.
+For a list of possible values, see \[dateTimeTimeZone\](https://learn.microsoft.com/en-us/graph/api/resources/datetimetimezone?view=graph-rest-beta).
+    \[CustomerConsentMessage \<String\>\]: Customer consent message that is displayed in the Booking page.
+    \[EnforceOneTimePassword \<Boolean?\>\]: Enforcing One Time Password (OTP) during appointment creation.
+    \[IsBusinessLogoDisplayEnabled \<Boolean?\>\]: Enable display of business logo display on the Bookings page.
+    \[IsCustomerConsentEnabled \<Boolean?\>\]: Enforces customer consent on the customer consent message before appointment is booked.
+    \[IsSearchEngineIndexabilityDisabled \<Boolean?\>\]: Disable booking page to be indexed by search engines.
+False by default.
+    \[IsTimeSlotTimeZoneSetToBusinessTimeZone \<Boolean?\>\]: If business time zone the default value for the time slots that we show in the bookings page.
+False by default.
+    \[PrivacyPolicyWebUrl \<String\>\]: The URL of the business' Privacy Policy.
+    \[TermsAndConditionsWebUrl \<String\>\]: The URL of the business' Terms and Conditions.
   \[BusinessHours \<IMicrosoftGraphBookingWorkHours\[\]\>\]: The hours of operation for the business.
     \[Day \<String\>\]: dayOfWeek
     \[TimeSlots \<IMicrosoftGraphBookingWorkTimeSlot\[\]\>\]: A list of start/end times during a day.
@@ -678,6 +786,7 @@ For example, 08:00:00.0000000.
   \[CalendarView \<IMicrosoftGraphBookingAppointment\[\]\>\]: The set of appointments of this business in a specified date range.
 Read-only.
 Nullable.
+  \[CreatedDateTime \<DateTime?\>\]: 
   \[CustomQuestions \<IMicrosoftGraphBookingCustomQuestion\[\]\>\]: All the custom questions of this business.
 Read-only.
 Nullable.
@@ -685,7 +794,9 @@ Nullable.
 Read-only.
     \[AnswerInputType \<String\>\]: answerInputType
     \[AnswerOptions \<String\[\]\>\]: List of possible answer values.
+    \[CreatedDateTime \<DateTime?\>\]: 
     \[DisplayName \<String\>\]: Display name of this entity.
+    \[LastUpdatedDateTime \<DateTime?\>\]: 
   \[Customers \<IMicrosoftGraphBookingCustomer\[\]\>\]: All the customers of this business.
 Read-only.
 Nullable.
@@ -694,17 +805,21 @@ Nullable.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
     \[Addresses \<IMicrosoftGraphPhysicalAddress\[\]\>\]: Addresses associated with the customer, including home, business and other addresses.
+    \[CreatedDateTime \<DateTime?\>\]: 
+    \[LastUpdatedDateTime \<DateTime?\>\]: 
     \[Phones \<IMicrosoftGraphPhone\[\]\>\]: Phone numbers associated with the customer, including home, business and mobile numbers.
       \[Number \<String\>\]: The phone number.
       \[Type \<String\>\]: phoneType
   \[DefaultCurrencyIso \<String\>\]: The code for the currency that the business operates in on Microsoft Bookings.
   \[Email \<String\>\]: The email address for the business.
   \[LanguageTag \<String\>\]: The language of the self service booking page
+  \[LastUpdatedDateTime \<DateTime?\>\]: 
   \[Phone \<String\>\]: The telephone number for the business.
 The phone property, together with address and webSiteUrl, appear in the footer of a business scheduling page.
   \[SchedulingPolicy \<IMicrosoftGraphBookingSchedulingPolicy\>\]: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[AllowStaffSelection \<Boolean?\>\]: True if to allow customers to choose a specific person for the booking.
+    \[IsMeetingInviteToCustomersEnabled \<Boolean?\>\]: Enable sending meeting invite to customers.
     \[MaximumAdvance \<TimeSpan?\>\]: Maximum number of days in advance that a booking can be made.
 It follows the ISO 8601 format.
     \[MinimumLeadTime \<TimeSpan?\>\]: The minimum amount of time before which bookings and cancellations must be made.
@@ -719,6 +834,7 @@ Nullable.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
     \[AdditionalInformation \<String\>\]: Additional information that is sent to the customer when an appointment is confirmed.
+    \[CreatedDateTime \<DateTime?\>\]: 
     \[CustomQuestions \<IMicrosoftGraphBookingQuestionAssignment\[\]\>\]: Contains the set of custom questions associated with a particular service.
       \[IsRequired \<Boolean?\>\]: Indicates whether it's mandatory to answer the custom question.
       \[QuestionId \<String\>\]: If it's mandatory to answer the custom question.
@@ -735,6 +851,7 @@ The value of this property is available only when reading this bookingService by
     \[IsLocationOnline \<Boolean?\>\]: True indicates that the appointments for the service will be held online.
 Default value is false.
     \[LanguageTag \<String\>\]: The language of the self service booking page.
+    \[LastUpdatedDateTime \<DateTime?\>\]: 
     \[MaximumAttendeesCount \<Int32?\>\]: The maximum number of customers allowed in a service.
 If maximumAttendeesCount of the service is greater than 1, pass valid customer IDs while creating or updating an appointment. 
 To create a customer, use the Create bookingCustomer operation.
@@ -755,7 +872,9 @@ Read-only.
     \[AvailabilityIsAffectedByPersonalCalendar \<Boolean?\>\]: True means that if the staff member is a Microsoft 365 user, the Bookings API would verify the staff member's availability in their personal calendar in Microsoft 365, before making a booking.
     \[ColorIndex \<Int32?\>\]: Identifies a color to represent the staff member.
 The color corresponds to the color palette in the Staff details page in the Bookings app.
+    \[CreatedDateTime \<DateTime?\>\]: 
     \[IsEmailNotificationEnabled \<Boolean?\>\]: True indicates that a staff member will be notified via email when a booking assigned to them is created or changed.
+    \[LastUpdatedDateTime \<DateTime?\>\]: 
     \[MembershipStatus \<String\>\]: bookingStaffMembershipStatus
     \[Role \<String\>\]: bookingStaffRole
     \[TimeZone \<String\>\]: The time zone of the staff member.
@@ -766,6 +885,25 @@ False means the availability is determined by the staff member's workingHours pr
 By default, they are initialized to be the same as the businessHours property of the business.
   \[WebSiteUrl \<String\>\]: The URL of the business web site.
 The webSiteUrl property, together with address, phone, appear in the footer of a business scheduling page.
+
+BOOKINGPAGESETTINGS \<IMicrosoftGraphBookingPageSettings\>: bookingPageSettings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[AccessControl \<String\>\]: bookingPageAccessControl
+  \[BookingPageColorCode \<String\>\]: Custom color for bookings page.
+Value should be in Hex format.
+Example: \`#123456\`.
+  \[BusinessTimeZone \<String\>\]: The time zone of the customer.
+For a list of possible values, see \[dateTimeTimeZone\](https://learn.microsoft.com/en-us/graph/api/resources/datetimetimezone?view=graph-rest-beta).
+  \[CustomerConsentMessage \<String\>\]: Customer consent message that is displayed in the Booking page.
+  \[EnforceOneTimePassword \<Boolean?\>\]: Enforcing One Time Password (OTP) during appointment creation.
+  \[IsBusinessLogoDisplayEnabled \<Boolean?\>\]: Enable display of business logo display on the Bookings page.
+  \[IsCustomerConsentEnabled \<Boolean?\>\]: Enforces customer consent on the customer consent message before appointment is booked.
+  \[IsSearchEngineIndexabilityDisabled \<Boolean?\>\]: Disable booking page to be indexed by search engines.
+False by default.
+  \[IsTimeSlotTimeZoneSetToBusinessTimeZone \<Boolean?\>\]: If business time zone the default value for the time slots that we show in the bookings page.
+False by default.
+  \[PrivacyPolicyWebUrl \<String\>\]: The URL of the business' Privacy Policy.
+  \[TermsAndConditionsWebUrl \<String\>\]: The URL of the business' Terms and Conditions.
 
 BUSINESSHOURS \<IMicrosoftGraphBookingWorkHours\[\]\>: The hours of operation for the business.
   \[Day \<String\>\]: dayOfWeek
@@ -782,6 +920,8 @@ Nullable.
 Read-only.
   \[AdditionalInformation \<String\>\]: Additional information that is sent to the customer when an appointment is confirmed.
   \[AnonymousJoinWebUrl \<String\>\]: The URL of the meeting to join anonymously.
+  \[AppointmentLabel \<String\>\]: Custom label that can be stamped on this appointment by users.
+  \[CreatedDateTime \<DateTime?\>\]: 
   \[CustomerEmailAddress \<String\>\]: The SMTP address of the bookingCustomer who is booking the appointment.
   \[CustomerId \<String\>\]: The ID of the bookingCustomer for this appointment.
 If no ID is specified when an appointment is created, then a new bookingCustomer object is created.
@@ -837,6 +977,7 @@ See below for possible values.
   \[IsLocationOnline \<Boolean?\>\]: True indicates that the appointment will be held online.
 Default value is false.
   \[JoinWebUrl \<String\>\]: The URL of the online meeting for the appointment.
+  \[LastUpdatedDateTime \<DateTime?\>\]: 
   \[MaximumAttendeesCount \<Int32?\>\]: The maximum number of customers allowed in an appointment.
 If maximumAttendeesCount of the service is greater than 1, pass valid customer IDs while creating or updating an appointment.
 To create a customer, use the Create bookingCustomer operation.
@@ -882,6 +1023,8 @@ It's a free-format string value, for example, 'United States'.
     \[State \<String\>\]: The state.
     \[Street \<String\>\]: The street.
     \[Type \<String\>\]: physicalAddressType
+  \[CreatedDateTime \<DateTime?\>\]: 
+  \[LastUpdatedDateTime \<DateTime?\>\]: 
   \[Phones \<IMicrosoftGraphPhone\[\]\>\]: Phone numbers associated with the customer, including home, business and mobile numbers.
     \[Number \<String\>\]: The phone number.
     \[Type \<String\>\]: phoneType
@@ -893,7 +1036,9 @@ Nullable.
 Read-only.
   \[AnswerInputType \<String\>\]: answerInputType
   \[AnswerOptions \<String\[\]\>\]: List of possible answer values.
+  \[CreatedDateTime \<DateTime?\>\]: 
   \[DisplayName \<String\>\]: Display name of this entity.
+  \[LastUpdatedDateTime \<DateTime?\>\]: 
 
 INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
@@ -920,6 +1065,7 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 SCHEDULINGPOLICY \<IMicrosoftGraphBookingSchedulingPolicy\>: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[AllowStaffSelection \<Boolean?\>\]: True if to allow customers to choose a specific person for the booking.
+  \[IsMeetingInviteToCustomersEnabled \<Boolean?\>\]: Enable sending meeting invite to customers.
   \[MaximumAdvance \<TimeSpan?\>\]: Maximum number of days in advance that a booking can be made.
 It follows the ISO 8601 format.
   \[MinimumLeadTime \<TimeSpan?\>\]: The minimum amount of time before which bookings and cancellations must be made.
@@ -935,6 +1081,7 @@ Nullable.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
   \[AdditionalInformation \<String\>\]: Additional information that is sent to the customer when an appointment is confirmed.
+  \[CreatedDateTime \<DateTime?\>\]: 
   \[CustomQuestions \<IMicrosoftGraphBookingQuestionAssignment\[\]\>\]: Contains the set of custom questions associated with a particular service.
     \[IsRequired \<Boolean?\>\]: Indicates whether it's mandatory to answer the custom question.
     \[QuestionId \<String\>\]: If it's mandatory to answer the custom question.
@@ -980,6 +1127,7 @@ It's denoted in ISO 8601 format.
   \[IsLocationOnline \<Boolean?\>\]: True indicates that the appointments for the service will be held online.
 Default value is false.
   \[LanguageTag \<String\>\]: The language of the self service booking page.
+  \[LastUpdatedDateTime \<DateTime?\>\]: 
   \[MaximumAttendeesCount \<Int32?\>\]: The maximum number of customers allowed in a service.
 If maximumAttendeesCount of the service is greater than 1, pass valid customer IDs while creating or updating an appointment. 
 To create a customer, use the Create bookingCustomer operation.
@@ -989,6 +1137,7 @@ To create a customer, use the Create bookingCustomer operation.
   \[SchedulingPolicy \<IMicrosoftGraphBookingSchedulingPolicy\>\]: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[AllowStaffSelection \<Boolean?\>\]: True if to allow customers to choose a specific person for the booking.
+    \[IsMeetingInviteToCustomersEnabled \<Boolean?\>\]: Enable sending meeting invite to customers.
     \[MaximumAdvance \<TimeSpan?\>\]: Maximum number of days in advance that a booking can be made.
 It follows the ISO 8601 format.
     \[MinimumLeadTime \<TimeSpan?\>\]: The minimum amount of time before which bookings and cancellations must be made.
@@ -1010,7 +1159,9 @@ Read-only.
   \[AvailabilityIsAffectedByPersonalCalendar \<Boolean?\>\]: True means that if the staff member is a Microsoft 365 user, the Bookings API would verify the staff member's availability in their personal calendar in Microsoft 365, before making a booking.
   \[ColorIndex \<Int32?\>\]: Identifies a color to represent the staff member.
 The color corresponds to the color palette in the Staff details page in the Bookings app.
+  \[CreatedDateTime \<DateTime?\>\]: 
   \[IsEmailNotificationEnabled \<Boolean?\>\]: True indicates that a staff member will be notified via email when a booking assigned to them is created or changed.
+  \[LastUpdatedDateTime \<DateTime?\>\]: 
   \[MembershipStatus \<String\>\]: bookingStaffMembershipStatus
   \[Role \<String\>\]: bookingStaffRole
   \[TimeZone \<String\>\]: The time zone of the staff member.
@@ -1027,8 +1178,6 @@ For example, 17:00:00.0000000.
 For example, 08:00:00.0000000.
 
 ## RELATED LINKS
-[Update-MgBookingBusiness](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusiness?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusiness](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusiness)
-
 

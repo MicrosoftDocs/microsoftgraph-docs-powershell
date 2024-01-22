@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/invoke-mgquerysearch
 schema: 2.0.0
-ms.prod: search
 ---
 
 # Invoke-MgQuerySearch
@@ -11,9 +10,6 @@ ms.prod: search
 ## SYNOPSIS
 Runs the query specified in the request body.
 Search results are provided in the response.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaQuerySearch](/powershell/module/Microsoft.Graph.Beta.Search/Invoke-MgBetaQuerySearch?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -33,15 +29,12 @@ Invoke-MgQuerySearch -Body <IPaths1Kd2XrlSearchMicrosoftGraphQueryPostRequestbod
 Runs the query specified in the request body.
 Search results are provided in the response.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-query-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Basic call to perform a search request
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Search
+```
 
 $params = @{
 	requests = @(
@@ -67,14 +60,10 @@ $params = @{
 
 Invoke-MgQuerySearch -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will basic call to perform a search request
-
-### Example 2: Basic call to use queryTemplate
-
-```powershell
-
 Import-Module Microsoft.Graph.Search
+```
 
 $params = @{
 	requests = @(
@@ -93,10 +82,6 @@ $params = @{
 }
 
 Invoke-MgQuerySearch -BodyParameter $params
-
-```
-This example will basic call to use querytemplate
-
 
 ## PARAMETERS
 
@@ -244,7 +229,7 @@ This property is only applicable to entityType=message.
 Optional.
     \[EntityTypes \<String\[\]\>\]: One or more types of resources expected in the response.
 Possible values are: event, message, driveItem, externalItem, site, list, listItem, drive, chatMessage, person, acronym, bookmark. 
-Note that you must use the Prefer: include-unknown-enum-members request header to get the following value(s) in this evolvable enum:chatMessage, person, acronym, bookmark.
+Note that you must use the Prefer: include-unknown-enum-members request header to get the following value(s) in this evolvable enum: chatMessage, person, acronym, bookmark.
 See known limitations for those combinations of two or more entity types that are supported in the same search request.
 Required.
     \[Fields \<String\[\]\>\]: Contains the fields to be returned for each resource object specified in entityTypes, allowing customization of the fields returned by default; otherwise, including additional fields such as custom managed properties from SharePoint and OneDrive, or custom fields in externalItem from the content that Microsoft Graph connectors bring in.
@@ -343,7 +328,7 @@ This property is only applicable to entityType=message.
 Optional.
   \[EntityTypes \<String\[\]\>\]: One or more types of resources expected in the response.
 Possible values are: event, message, driveItem, externalItem, site, list, listItem, drive, chatMessage, person, acronym, bookmark. 
-Note that you must use the Prefer: include-unknown-enum-members request header to get the following value(s) in this evolvable enum:chatMessage, person, acronym, bookmark.
+Note that you must use the Prefer: include-unknown-enum-members request header to get the following value(s) in this evolvable enum: chatMessage, person, acronym, bookmark.
 See known limitations for those combinations of two or more entity types that are supported in the same search request.
 Required.
   \[Fields \<String\[\]\>\]: Contains the fields to be returned for each resource object specified in entityTypes, allowing customization of the fields returned by default; otherwise, including additional fields such as custom managed properties from SharePoint and OneDrive, or custom fields in externalItem from the content that Microsoft Graph connectors bring in.
@@ -394,8 +379,6 @@ Optional.
 Required.
 
 ## RELATED LINKS
-[Invoke-MgBetaQuerySearch](/powershell/module/Microsoft.Graph.Beta.Search/Invoke-MgBetaQuerySearch?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/invoke-mgquerysearch](https://learn.microsoft.com/powershell/module/microsoft.graph.search/invoke-mgquerysearch)
-
 

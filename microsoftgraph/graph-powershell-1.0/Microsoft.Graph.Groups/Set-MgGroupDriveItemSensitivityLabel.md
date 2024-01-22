@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/set-mggroupdriveitemsensitivitylabel
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action assignSensitivityLabel
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaGroupDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Groups/Set-MgBetaGroupDriveItemSensitivityLabel?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -45,6 +42,18 @@ Set-MgGroupDriveItemSensitivityLabel -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Invoke action assignSensitivityLabel
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -291,9 +300,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
-[Set-MgBetaGroupDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Groups/Set-MgBetaGroupDriveItemSensitivityLabel?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/set-mggroupdriveitemsensitivitylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/set-mggroupdriveitemsensitivitylabel)
-
-
 

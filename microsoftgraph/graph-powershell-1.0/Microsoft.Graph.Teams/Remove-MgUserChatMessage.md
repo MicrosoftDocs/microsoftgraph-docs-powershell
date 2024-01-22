@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserchatmessage
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property messages for users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserChatMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Remove-MgUserChatMessage -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Pas
 
 ## DESCRIPTION
 Delete navigation property messages for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -204,9 +217,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgBetaUserChatMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserchatmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserchatmessage)
-
-
 

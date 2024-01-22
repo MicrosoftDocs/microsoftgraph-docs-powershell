@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.SchemaExtensions-help.xml
 Module Name: Microsoft.Graph.SchemaExtensions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/get-mgschemaextension
 schema: 2.0.0
-ms.prod: extensions
-ms.prod: extensions
 ---
 
 # Get-MgSchemaExtension
 
 ## SYNOPSIS
 Get schemaExtension
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSchemaExtension](/powershell/module/Microsoft.Graph.Beta.SchemaExtensions/Get-MgBetaSchemaExtension?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -39,24 +34,14 @@ Get-MgSchemaExtension -InputObject <ISchemaExtensionsIdentity> [-ExpandProperty 
 ## DESCRIPTION
 Get schemaExtension
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/schemaextension-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/schemaextension-list-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
-Import-Module Microsoft.Graph.SchemaExtensions
-
-Get-MgSchemaExtension -Filter "id eq 'graphlearn_test'" 
-
+### EXAMPLE 1
 ```
-This example shows how to use the Get-MgSchemaExtension Cmdlet.
+Import-Module Microsoft.Graph.SchemaExtensions
+```
 
+Get-MgSchemaExtension -Filter "id eq 'graphlearn_test'"
 
 ## PARAMETERS
 
@@ -261,8 +246,6 @@ INPUTOBJECT \<ISchemaExtensionsIdentity\>: Identity Parameter
   \[SchemaExtensionId \<String\>\]: The unique identifier of schemaExtension
 
 ## RELATED LINKS
-[Get-MgBetaSchemaExtension](/powershell/module/Microsoft.Graph.Beta.SchemaExtensions/Get-MgBetaSchemaExtension?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/get-mgschemaextension](https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/get-mgschemaextension)
-
 

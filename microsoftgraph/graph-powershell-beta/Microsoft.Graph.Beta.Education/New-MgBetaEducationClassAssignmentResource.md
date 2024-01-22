@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentresource
 schema: 2.0.0
-ms.prod: education
 ---
 
 # New-MgBetaEducationClassAssignmentResource
@@ -12,9 +11,6 @@ ms.prod: education
 Create an assignment resource.
 Only teachers can perform this operation.
 You can create the following types of assignment resources: Every resource has an @odata.type property to indicate which type of resource is being created.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgEducationClassAssignmentResource](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassAssignmentResource?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,14 +47,12 @@ Create an assignment resource.
 Only teachers can perform this operation.
 You can create the following types of assignment resources: Every resource has an @odata.type property to indicate which type of resource is being created.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-post-resources-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Create an educationLinkResource
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 $params = @{
 	distributeForStudentWork = $false
@@ -71,15 +65,11 @@ $params = @{
 }
 
 New-MgBetaEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgBetaEducationClassAssignmentResource Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Create an educationWordResource
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 $params = @{
 	distributeForStudentWork = $false
@@ -91,15 +81,11 @@ $params = @{
 }
 
 New-MgBetaEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
+
+### EXAMPLE 3
 ```
-This example shows how to use the New-MgBetaEducationClassAssignmentResource Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Create an educationFileResource
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 $params = @{
 	distributeForStudentWork = $false
@@ -110,15 +96,11 @@ $params = @{
 }
 
 New-MgBetaEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
+
+### EXAMPLE 4
 ```
-This example shows how to use the New-MgBetaEducationClassAssignmentResource Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Create an educationExcelResource
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 $params = @{
 	distributeForStudentWork = $false
@@ -130,15 +112,11 @@ $params = @{
 }
 
 New-MgBetaEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
+
+### EXAMPLE 5
 ```
-This example shows how to use the New-MgBetaEducationClassAssignmentResource Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 5: Create an educationPowerPointResource
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 $params = @{
 	distributeForStudentWork = $false
@@ -150,15 +128,11 @@ $params = @{
 }
 
 New-MgBetaEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
+
+### EXAMPLE 6
 ```
-This example shows how to use the New-MgBetaEducationClassAssignmentResource Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 6: Create an educationMediaResource
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 $params = @{
 	distributeForStudentWork = $false
@@ -170,15 +144,11 @@ $params = @{
 }
 
 New-MgBetaEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
+
+### EXAMPLE 7
 ```
-This example shows how to use the New-MgBetaEducationClassAssignmentResource Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 7: Create an educationTeamsAppResource
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 $params = @{
 	distributeForStudentWork = $false
@@ -193,11 +163,6 @@ $params = @{
 }
 
 New-MgBetaEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
-```
-This example shows how to use the New-MgBetaEducationClassAssignmentResource Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -470,8 +435,6 @@ When the unique identifier is unavailable, the displayName property is provided 
   \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
 
 ## RELATED LINKS
-[New-MgEducationClassAssignmentResource](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassAssignmentResource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentresource)
-
 

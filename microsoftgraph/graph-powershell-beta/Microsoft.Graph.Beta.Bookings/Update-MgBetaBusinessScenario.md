@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenario
 schema: 2.0.0
-ms.prod: business-scenarios
 ---
 
 # Update-MgBetaBusinessScenario
@@ -46,8 +45,17 @@ Update-MgBetaBusinessScenario -InputObject <IBookingsIdentity> -BodyParameter <I
 ## DESCRIPTION
 Update the properties of a businessScenario object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/businessscenario-update-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -314,9 +322,10 @@ Read-only.
     \[Application \<IMicrosoftGraphIdentity\>\]: identity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     \[Device \<IMicrosoftGraphIdentity\>\]: identity
     \[User \<IMicrosoftGraphIdentity\>\]: identity
   \[CreatedDateTime \<DateTime?\>\]: The date and time when the scenario was created.
@@ -375,6 +384,7 @@ Possible values are: Allow, Block
 Allowed override values will be dependent on the property affected by the rule.
                 \[Rules \<String\[\]\>\]: Overridden rules.
 These are used as rules for the override instead of the default rules.
+            \[ApprovalAttachment \<IMicrosoftGraphPlannerFieldRules\>\]: plannerFieldRules
             \[Assignments \<IMicrosoftGraphPlannerFieldRules\>\]: plannerFieldRules
             \[CheckLists \<IMicrosoftGraphPlannerFieldRules\>\]: plannerFieldRules
             \[CompletionRequirements \<String\[\]\>\]: Rules and restrictions for completion requirements of the task.
@@ -383,6 +393,7 @@ Accepted values are allow, add, remove, edit, and block.
 Accepted values are allow and block.
             \[DueDate \<String\[\]\>\]: Rules and restrictions for changing the due date of the task.
 Accepted values are allow and block.
+            \[Forms \<IMicrosoftGraphPlannerFieldRules\>\]: plannerFieldRules
             \[Move \<String\[\]\>\]: Rules and restrictions for moving the task between buckets or plans.
 Accepted values are allow, moveBetweenPlans, moveBetweenBuckets, and block.
             \[Notes \<String\[\]\>\]: Rules and restrictions for changing the notes of the task.
@@ -407,6 +418,11 @@ Accepted values are allow and block.
       \[ActiveChecklistItemCount \<Int32?\>\]: Number of checklist items with value set to false, representing incomplete items.
       \[AppliedCategories \<IMicrosoftGraphPlannerAppliedCategories\>\]: plannerAppliedCategories
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[ArchivalInfo \<IMicrosoftGraphPlannerArchivalInfo\>\]: plannerArchivalInfo
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[Justification \<String\>\]: 
+        \[StatusChangedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+        \[StatusChangedDateTime \<DateTime?\>\]: 
       \[AssignedToTaskBoardFormat \<IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat\>\]: plannerAssignedToTaskBoardTaskFormat
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[Id \<String\>\]: The unique identifier for an entity.
@@ -464,14 +480,25 @@ Read-only.
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+        \[ApprovalAttachment \<IMicrosoftGraphPlannerBaseApprovalAttachment\>\]: plannerBaseApprovalAttachment
+          \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+          \[Status \<String\>\]: plannerApprovalStatus
         \[Checklist \<IMicrosoftGraphPlannerChecklistItems\>\]: plannerChecklistItems
           \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[CompletionRequirements \<IMicrosoftGraphPlannerTaskCompletionRequirementDetails\>\]: plannerTaskCompletionRequirementDetails
           \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+          \[ApprovalRequirement \<IMicrosoftGraphPlannerApprovalRequirement\>\]: plannerApprovalRequirement
+            \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+            \[IsApprovalRequired \<Boolean?\>\]: 
           \[ChecklistRequirement \<IMicrosoftGraphPlannerChecklistRequirement\>\]: plannerChecklistRequirement
             \[(Any) \<Object\>\]: This indicates any property can be added to this object.
             \[RequiredChecklistItemIds \<String\[\]\>\]: A collection of required plannerChecklistItems identifiers to complete the plannerTask.
+          \[FormsRequirement \<IMicrosoftGraphPlannerFormsRequirement\>\]: plannerFormsRequirement
+            \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+            \[RequiredForms \<String\[\]\>\]: 
         \[Description \<String\>\]: Description of the task.
+        \[Forms \<IMicrosoftGraphPlannerFormsDictionary\>\]: plannerFormsDictionary
+          \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[Notes \<IMicrosoftGraphItemBody\>\]: itemBody
           \[(Any) \<Object\>\]: This indicates any property can be added to this object.
           \[Content \<String\>\]: The content of the item.
@@ -484,6 +511,9 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       \[HasDescription \<Boolean?\>\]: Read-only.
 Value is true if the details object of the task has a nonempty description and false otherwise.
+      \[IsArchived \<Boolean?\>\]: 
+      \[IsOnMyDay \<Boolean?\>\]: 
+      \[IsOnMyDayLastModifiedDate \<DateTime?\>\]: 
       \[OrderHint \<String\>\]: Hint used to order items of this type in a list view.
 The format is defined as outlined here.
       \[PercentComplete \<Int32?\>\]: Percentage of task completion.
@@ -578,9 +608,10 @@ CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
   \[Application \<IMicrosoftGraphIdentity\>\]: identity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-    \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
   \[Device \<IMicrosoftGraphIdentity\>\]: identity
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
@@ -611,9 +642,10 @@ LASTMODIFIEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
   \[Application \<IMicrosoftGraphIdentity\>\]: identity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-    \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
   \[Device \<IMicrosoftGraphIdentity\>\]: identity
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
@@ -632,9 +664,10 @@ Read-only.
       \[Application \<IMicrosoftGraphIdentity\>\]: identity
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-        \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
       \[Device \<IMicrosoftGraphIdentity\>\]: identity
       \[User \<IMicrosoftGraphIdentity\>\]: identity
     \[CreatedDateTime \<DateTime?\>\]: The date and time when the plan configuration was created.
@@ -673,6 +706,7 @@ Possible values are: Allow, Block
 Allowed override values will be dependent on the property affected by the rule.
               \[Rules \<String\[\]\>\]: Overridden rules.
 These are used as rules for the override instead of the default rules.
+          \[ApprovalAttachment \<IMicrosoftGraphPlannerFieldRules\>\]: plannerFieldRules
           \[Assignments \<IMicrosoftGraphPlannerFieldRules\>\]: plannerFieldRules
           \[CheckLists \<IMicrosoftGraphPlannerFieldRules\>\]: plannerFieldRules
           \[CompletionRequirements \<String\[\]\>\]: Rules and restrictions for completion requirements of the task.
@@ -681,6 +715,7 @@ Accepted values are allow, add, remove, edit, and block.
 Accepted values are allow and block.
           \[DueDate \<String\[\]\>\]: Rules and restrictions for changing the due date of the task.
 Accepted values are allow and block.
+          \[Forms \<IMicrosoftGraphPlannerFieldRules\>\]: plannerFieldRules
           \[Move \<String\[\]\>\]: Rules and restrictions for moving the task between buckets or plans.
 Accepted values are allow, moveBetweenPlans, moveBetweenBuckets, and block.
           \[Notes \<String\[\]\>\]: Rules and restrictions for changing the notes of the task.
@@ -705,6 +740,11 @@ Accepted values are allow and block.
     \[ActiveChecklistItemCount \<Int32?\>\]: Number of checklist items with value set to false, representing incomplete items.
     \[AppliedCategories \<IMicrosoftGraphPlannerAppliedCategories\>\]: plannerAppliedCategories
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[ArchivalInfo \<IMicrosoftGraphPlannerArchivalInfo\>\]: plannerArchivalInfo
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Justification \<String\>\]: 
+      \[StatusChangedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+      \[StatusChangedDateTime \<DateTime?\>\]: 
     \[AssignedToTaskBoardFormat \<IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat\>\]: plannerAssignedToTaskBoardTaskFormat
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[Id \<String\>\]: The unique identifier for an entity.
@@ -762,14 +802,25 @@ Read-only.
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+      \[ApprovalAttachment \<IMicrosoftGraphPlannerBaseApprovalAttachment\>\]: plannerBaseApprovalAttachment
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[Status \<String\>\]: plannerApprovalStatus
       \[Checklist \<IMicrosoftGraphPlannerChecklistItems\>\]: plannerChecklistItems
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[CompletionRequirements \<IMicrosoftGraphPlannerTaskCompletionRequirementDetails\>\]: plannerTaskCompletionRequirementDetails
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[ApprovalRequirement \<IMicrosoftGraphPlannerApprovalRequirement\>\]: plannerApprovalRequirement
+          \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+          \[IsApprovalRequired \<Boolean?\>\]: 
         \[ChecklistRequirement \<IMicrosoftGraphPlannerChecklistRequirement\>\]: plannerChecklistRequirement
           \[(Any) \<Object\>\]: This indicates any property can be added to this object.
           \[RequiredChecklistItemIds \<String\[\]\>\]: A collection of required plannerChecklistItems identifiers to complete the plannerTask.
+        \[FormsRequirement \<IMicrosoftGraphPlannerFormsRequirement\>\]: plannerFormsRequirement
+          \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+          \[RequiredForms \<String\[\]\>\]: 
       \[Description \<String\>\]: Description of the task.
+      \[Forms \<IMicrosoftGraphPlannerFormsDictionary\>\]: plannerFormsDictionary
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[Notes \<IMicrosoftGraphItemBody\>\]: itemBody
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[Content \<String\>\]: The content of the item.
@@ -782,6 +833,9 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     \[HasDescription \<Boolean?\>\]: Read-only.
 Value is true if the details object of the task has a nonempty description and false otherwise.
+    \[IsArchived \<Boolean?\>\]: 
+    \[IsOnMyDay \<Boolean?\>\]: 
+    \[IsOnMyDayLastModifiedDate \<DateTime?\>\]: 
     \[OrderHint \<String\>\]: Hint used to order items of this type in a list view.
 The format is defined as outlined here.
     \[PercentComplete \<Int32?\>\]: Percentage of task completion.
@@ -871,6 +925,4 @@ Optional.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenario](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenario)
-
-
 

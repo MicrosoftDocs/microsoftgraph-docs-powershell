@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/publish-mgbetasitecontenttype
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Publish-MgBetaSiteContentType
 
 ## SYNOPSIS
 Publishes a \[contentType\]\[\] present in a content type hub site.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Publish-MgSiteContentType](/powershell/module/Microsoft.Graph.Sites/Publish-MgSiteContentType?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,17 +27,13 @@ Publish-MgBetaSiteContentType -InputObject <ISitesIdentity> [-PassThru] [-WhatIf
 ## DESCRIPTION
 Publishes a \[contentType\]\[\] present in a content type hub site.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-publish-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Publish-MgBetaSiteContentType Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Sites
 Publish-MgBetaSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId
 ```
-This example shows how to use the Publish-MgBetaSiteContentType Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -166,6 +158,8 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
   \[GroupId \<String\>\]: The unique identifier of group
   \[GroupId1 \<String\>\]: The unique identifier of group
+  \[HorizontalSectionColumnId \<String\>\]: The unique identifier of horizontalSectionColumn
+  \[HorizontalSectionId \<String\>\]: The unique identifier of horizontalSection
   \[IncludePersonalNotebooks \<Boolean?\>\]: Usage: includePersonalNotebooks={includePersonalNotebooks}
   \[InformationProtectionLabelId \<String\>\]: The unique identifier of informationProtectionLabel
   \[Interval \<String\>\]: Usage: interval='{interval}'
@@ -201,10 +195,9 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[ThreatAssessmentResultId \<String\>\]: The unique identifier of threatAssessmentResult
   \[Token \<String\>\]: Usage: token='{token}'
   \[UserId \<String\>\]: The unique identifier of user
+  \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
-[Publish-MgSiteContentType](/powershell/module/Microsoft.Graph.Sites/Publish-MgSiteContentType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/publish-mgbetasitecontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/publish-mgbetasitecontenttype)
-
 

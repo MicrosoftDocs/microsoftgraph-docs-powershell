@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmonitoringalertrule
 schema: 2.0.0
-ms.prod: cloud-pc
 ---
 
 # Update-MgBetaDeviceManagementMonitoringAlertRule
@@ -16,10 +15,10 @@ Update the properties of an alertRule object.
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementMonitoringAlertRule -AlertRuleId <String> [-AdditionalProperties <Hashtable>]
- [-AlertRuleTemplate <String>] [-Description <String>] [-DisplayName <String>] [-Enabled] [-Id <String>]
- [-IsSystemRule] [-NotificationChannels <IMicrosoftGraphDeviceManagementNotificationChannel[]>]
- [-Severity <String>] [-Threshold <IMicrosoftGraphDeviceManagementRuleThreshold>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-AlertRuleTemplate <String>] [-Conditions <IMicrosoftGraphDeviceManagementRuleCondition[]>]
+ [-Description <String>] [-DisplayName <String>] [-Enabled] [-Id <String>] [-IsSystemRule]
+ [-NotificationChannels <IMicrosoftGraphDeviceManagementNotificationChannel[]>] [-Severity <String>]
+ [-Threshold <IMicrosoftGraphDeviceManagementRuleThreshold>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -31,8 +30,9 @@ Update-MgBetaDeviceManagementMonitoringAlertRule -AlertRuleId <String>
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementMonitoringAlertRule -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-AlertRuleTemplate <String>] [-Description <String>]
- [-DisplayName <String>] [-Enabled] [-Id <String>] [-IsSystemRule]
+ [-AdditionalProperties <Hashtable>] [-AlertRuleTemplate <String>]
+ [-Conditions <IMicrosoftGraphDeviceManagementRuleCondition[]>] [-Description <String>] [-DisplayName <String>]
+ [-Enabled] [-Id <String>] [-IsSystemRule]
  [-NotificationChannels <IMicrosoftGraphDeviceManagementNotificationChannel[]>] [-Severity <String>]
  [-Threshold <IMicrosoftGraphDeviceManagementRuleThreshold>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -46,8 +46,17 @@ Update-MgBetaDeviceManagementMonitoringAlertRule -InputObject <IDeviceManagement
 ## DESCRIPTION
 Update the properties of an alertRule object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/devicemanagement-alertrule-update-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -109,6 +118,23 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Conditions
+The conditions that determine when to send alerts.
+For example, you can configure a condition to send an alert when provisioning fails for six or more Cloud PCs.
+To construct, see NOTES section for CONDITIONS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphDeviceManagementRuleCondition[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -306,6 +332,14 @@ BODYPARAMETER \<IMicrosoftGraphDeviceManagementAlertRule\>: alertRule
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
   \[AlertRuleTemplate \<String\>\]: alertRuleTemplate
+  \[Conditions \<IMicrosoftGraphDeviceManagementRuleCondition\[\]\>\]: The conditions that determine when to send alerts.
+For example, you can configure a condition to send an alert when provisioning fails for six or more Cloud PCs.
+    \[Aggregation \<String\>\]: aggregationType
+    \[ConditionCategory \<String\>\]: conditionCategory
+    \[Operator \<String\>\]: operatorType
+    \[RelationshipType \<String\>\]: relationshipType
+    \[ThresholdValue \<String\>\]: The threshold value of the alert condition.
+The threshold value can be a number in string form or string like 'WestUS'.
   \[Description \<String\>\]: The rule description.
   \[DisplayName \<String\>\]: The display name of the rule.
   \[Enabled \<Boolean?\>\]: The status of the rule that indicates whether the rule is enabled or disabled.
@@ -329,6 +363,15 @@ Supported locale values are: en-us, cs-cz, de-de, es-es, fr-fr, hu-hu, it-it, ja
     \[Aggregation \<String\>\]: aggregationType
     \[Operator \<String\>\]: operatorType
     \[Target \<Int32?\>\]: The target threshold value.
+
+CONDITIONS \<IMicrosoftGraphDeviceManagementRuleCondition\[\]\>: The conditions that determine when to send alerts.
+For example, you can configure a condition to send an alert when provisioning fails for six or more Cloud PCs.
+  \[Aggregation \<String\>\]: aggregationType
+  \[ConditionCategory \<String\>\]: conditionCategory
+  \[Operator \<String\>\]: operatorType
+  \[RelationshipType \<String\>\]: relationshipType
+  \[ThresholdValue \<String\>\]: The threshold value of the alert condition.
+The threshold value can be a number in string form or string like 'WestUS'.
 
 INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
   \[AdvancedThreatProtectionOnboardingDeviceSettingStateId \<String\>\]: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
@@ -491,6 +534,4 @@ THRESHOLD \<IMicrosoftGraphDeviceManagementRuleThreshold\>: ruleThreshold
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmonitoringalertrule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmonitoringalertrule)
-
-
 

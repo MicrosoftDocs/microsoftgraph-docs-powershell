@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusertodolist
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgUserTodoList
 
 ## SYNOPSIS
 Create a new lists object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserTodoList](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserTodoList?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -45,14 +41,12 @@ New-MgUserTodoList -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraph
 ## DESCRIPTION
 Create a new lists object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/todo-post-lists-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Users
+```
 
 $params = @{
 	displayName = "Travel items"
@@ -60,11 +54,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserTodoList -UserId $userId -BodyParameter $params
-```
-This example shows how to use the New-MgUserTodoList Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -531,8 +520,6 @@ Required.
   \[Title \<String\>\]: A brief description of the task.
 
 ## RELATED LINKS
-[New-MgBetaUserTodoList](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserTodoList?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusertodolist](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusertodolist)
-
 

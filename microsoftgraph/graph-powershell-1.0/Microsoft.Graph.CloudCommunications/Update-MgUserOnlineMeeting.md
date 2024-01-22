@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mguseronlinemeeting
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Update-MgUserOnlineMeeting
@@ -11,9 +10,6 @@ ms.prod: cloud-communications
 ## SYNOPSIS
 Update the properties of the specified onlineMeeting object.
 Please see Request body section for the list of properties that support updating.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaUserOnlineMeeting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -71,32 +67,26 @@ Update-MgUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity>
 Update the properties of the specified onlineMeeting object.
 Please see Request body section for the list of properties that support updating.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onlinemeeting-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
-	startDateTime = [System.DateTime]::Parse("2020-09-09T14:33:30.8546353-07:00")
-	endDateTime = [System.DateTime]::Parse("2020-09-09T15:03:30.8566356-07:00")
+	startDateTime = \[System.DateTime\]::Parse("2020-09-09T14:33:30.8546353-07:00")
+	endDateTime = \[System.DateTime\]::Parse("2020-09-09T15:03:30.8566356-07:00")
 	subject = "Patch Meeting Subject"
 }
 
 # A UPN can also be used as -UserId.
 Update-MgUserOnlineMeeting -UserId $userId -OnlineMeetingId $onlineMeetingId -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the Update-MgUserOnlineMeeting Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	lobbyBypassSettings = @{
@@ -106,11 +96,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgUserOnlineMeeting -UserId $userId -OnlineMeetingId $onlineMeetingId -BodyParameter $params
-```
-This example shows how to use the Update-MgUserOnlineMeeting Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -130,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -AllowAttendeeToEnableCamera
-.
+Indicates whether attendees can turn on their camera.
 
 ```yaml
 Type: SwitchParameter
@@ -145,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -AllowAttendeeToEnableMic
-.
+Indicates whether attendees can turn on their microphone.
 
 ```yaml
 Type: SwitchParameter
@@ -190,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -AllowParticipantsToChangeName
-.
+Specifies if participants are allowed to rename themselves in an instance of the meeting.
 
 ```yaml
 Type: SwitchParameter
@@ -205,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -AllowTeamworkReactions
-.
+Indicates if Teams reactions are enabled for the meeting.
 
 ```yaml
 Type: SwitchParameter
@@ -220,7 +205,8 @@ Accept wildcard characters: False
 ```
 
 ### -AttendanceReports
-.
+The attendance reports of an online meeting.
+Read-only.
 To construct, see NOTES section for ATTENDANCEREPORTS properties and create a hash table.
 
 ```yaml
@@ -408,7 +394,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsEntryExitAnnounced
-.
+Indicates whether to announce when callers join or leave.
 
 ```yaml
 Type: SwitchParameter
@@ -455,7 +441,8 @@ Accept wildcard characters: False
 ```
 
 ### -JoinWebUrl
-.
+The join URL of the online meeting.
+Read-only.
 
 ```yaml
 Type: String
@@ -517,7 +504,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecordAutomatically
-.
+Indicates whether to record the meeting automatically.
 
 ```yaml
 Type: SwitchParameter
@@ -579,7 +566,7 @@ Accept wildcard characters: False
 ```
 
 ### -Subject
-.
+The subject of the online meeting.
 
 ```yaml
 Type: String
@@ -626,7 +613,8 @@ Accept wildcard characters: False
 ```
 
 ### -VideoTeleconferenceId
-.
+The video teleconferencing ID.
+Read-only.
 
 ```yaml
 Type: String
@@ -703,7 +691,8 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ATTENDANCEREPORTS \<IMicrosoftGraphMeetingAttendanceReport\[\]\>: .
+ATTENDANCEREPORTS \<IMicrosoftGraphMeetingAttendanceReport\[\]\>: The attendance reports of an online meeting.
+Read-only.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
   \[AttendanceRecords \<IMicrosoftGraphAttendanceRecord\[\]\>\]: List of attendance records of an attendance report.
@@ -742,13 +731,14 @@ AUDIOCONFERENCING \<IMicrosoftGraphAudioConferencing\>: audioConferencing
 
 BODYPARAMETER \<IMicrosoftGraphOnlineMeeting\>: onlineMeeting
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[AllowAttendeeToEnableCamera \<Boolean?\>\]: 
-  \[AllowAttendeeToEnableMic \<Boolean?\>\]: 
+  \[AllowAttendeeToEnableCamera \<Boolean?\>\]: Indicates whether attendees can turn on their camera.
+  \[AllowAttendeeToEnableMic \<Boolean?\>\]: Indicates whether attendees can turn on their microphone.
   \[AllowMeetingChat \<String\>\]: meetingChatMode
-  \[AllowParticipantsToChangeName \<Boolean?\>\]: 
-  \[AllowTeamworkReactions \<Boolean?\>\]: 
+  \[AllowParticipantsToChangeName \<Boolean?\>\]: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+  \[AllowTeamworkReactions \<Boolean?\>\]: Indicates if Teams reactions are enabled for the meeting.
   \[AllowedPresenters \<String\>\]: onlineMeetingPresenters
-  \[AttendanceReports \<IMicrosoftGraphMeetingAttendanceReport\[\]\>\]: 
+  \[AttendanceReports \<IMicrosoftGraphMeetingAttendanceReport\[\]\>\]: The attendance reports of an online meeting.
+Read-only.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
     \[AttendanceRecords \<IMicrosoftGraphAttendanceRecord\[\]\>\]: List of attendance records of an attendance report.
@@ -788,7 +778,7 @@ Read-only.
     \[MessageId \<String\>\]: The unique identifier of a message in a Microsoft Teams channel.
     \[ReplyChainMessageId \<String\>\]: The ID of the reply message.
     \[ThreadId \<String\>\]: The unique identifier for a thread in Microsoft Teams.
-  \[IsEntryExitAnnounced \<Boolean?\>\]: 
+  \[IsEntryExitAnnounced \<Boolean?\>\]: Indicates whether to announce when callers join or leave.
   \[JoinInformation \<IMicrosoftGraphItemBody\>\]: itemBody
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[Content \<String\>\]: The content of the item.
@@ -803,16 +793,18 @@ Read-only.
     \[Passcode \<String\>\]: The passcode to join a meeting. 
 Optional.
 Read-only.
-  \[JoinWebUrl \<String\>\]: 
+  \[JoinWebUrl \<String\>\]: The join URL of the online meeting.
+Read-only.
   \[LobbyBypassSettings \<IMicrosoftGraphLobbyBypassSettings\>\]: lobbyBypassSettings
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[IsDialInBypassEnabled \<Boolean?\>\]: Specifies whether or not to always let dial-in callers bypass the lobby.
 Optional.
     \[Scope \<String\>\]: lobbyBypassScope
-  \[RecordAutomatically \<Boolean?\>\]: 
+  \[RecordAutomatically \<Boolean?\>\]: Indicates whether to record the meeting automatically.
   \[ShareMeetingChatHistoryDefault \<String\>\]: meetingChatHistoryDefaultMode
-  \[Subject \<String\>\]: 
-  \[VideoTeleconferenceId \<String\>\]: 
+  \[Subject \<String\>\]: The subject of the online meeting.
+  \[VideoTeleconferenceId \<String\>\]: The video teleconferencing ID.
+Read-only.
   \[WatermarkProtection \<IMicrosoftGraphWatermarkProtectionValues\>\]: watermarkProtectionValues
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[IsEnabledForContentSharing \<Boolean?\>\]: Indicates whether to apply a watermark to any shared content.
@@ -1022,8 +1014,6 @@ WATERMARKPROTECTION \<IMicrosoftGraphWatermarkProtectionValues\>: watermarkProte
   \[IsEnabledForVideo \<Boolean?\>\]: Indicates whether to apply a watermark to everyone's video feed.
 
 ## RELATED LINKS
-[Update-MgBetaUserOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaUserOnlineMeeting?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mguseronlinemeeting](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mguseronlinemeeting)
-
 

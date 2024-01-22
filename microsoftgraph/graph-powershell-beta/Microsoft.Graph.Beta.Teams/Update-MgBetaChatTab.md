@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetachattab
@@ -9,10 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of the specified tab in a chat.
-This can be used to configure the content of the tab.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgChatTab](/powershell/module/Microsoft.Graph.Teams/Update-MgChatTab?view=graph-powershell-1.0)
+\nThis can be used to configure the content of the tab.
 
 ## SYNTAX
 
@@ -46,24 +43,20 @@ Update-MgBetaChatTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGra
 
 ## DESCRIPTION
 Update the properties of the specified tab in a chat.
-This can be used to configure the content of the tab.
+\nThis can be used to configure the content of the tab.
 
 ## EXAMPLES
-### Example 1: Update the name of a tab in a chat
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	displayName = "My Contoso Tab - updated again"
 }
 
 Update-MgBetaChatTab -ChatId $chatId -TeamsTabId $teamsTabId -BodyParameter $params
-
-```
-This example will update the name of a tab in a chat
-
 
 ## PARAMETERS
 
@@ -367,9 +360,10 @@ Content type, such as image/png, image/jpg.
         \[Application \<IMicrosoftGraphIdentity\>\]: identity
           \[(Any) \<Object\>\]: This indicates any property can be added to this object.
           \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-          \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
         \[Device \<IMicrosoftGraphIdentity\>\]: identity
         \[User \<IMicrosoftGraphIdentity\>\]: identity
       \[Description \<String\>\]: 
@@ -474,9 +468,10 @@ Content type, such as image/png, image/jpg.
       \[Application \<IMicrosoftGraphIdentity\>\]: identity
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-        \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
       \[Device \<IMicrosoftGraphIdentity\>\]: identity
       \[User \<IMicrosoftGraphIdentity\>\]: identity
     \[Description \<String\>\]: 
@@ -492,8 +487,6 @@ This property is read-only.
   \[ExternalId \<String\>\]: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
 ## RELATED LINKS
-[Update-MgChatTab](/powershell/module/Microsoft.Graph.Teams/Update-MgChatTab?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetachattab](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetachattab)
-
 

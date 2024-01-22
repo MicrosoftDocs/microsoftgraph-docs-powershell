@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteaminstalledapp
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # New-MgTeamInstalledApp
 
 ## SYNOPSIS
 Install an app to the specified team.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaTeamInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamInstalledApp?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -48,11 +44,11 @@ New-MgTeamInstalledApp -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftG
 Install an app to the specified team.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	"teamsApp@odata.bind" = "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
@@ -60,14 +56,10 @@ $params = @{
 
 New-MgTeamInstalledApp -TeamId $teamId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgTeamInstalledApp Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	"teamsApp@odata.bind" = "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/7023576d-9e40-47ca-9cf2-daae6838e785"
@@ -86,10 +78,6 @@ $params = @{
 }
 
 New-MgTeamInstalledApp -TeamId $teamId -BodyParameter $params
-
-```
-This example shows how to use the New-MgTeamInstalledApp Cmdlet.
-
 
 ## PARAMETERS
 
@@ -424,8 +412,6 @@ For example, if a user changes their display name, the API might show the new va
   \[Version \<String\>\]: The version number of the application.
 
 ## RELATED LINKS
-[New-MgBetaTeamInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamInstalledApp?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteaminstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteaminstalledapp)
-
 

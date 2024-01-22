@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateam
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete entity from teams
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgTeam](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeam?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,10 +27,11 @@ Remove-MgBetaTeam -InputObject <ITeamsIdentity> [-IfMatch <String>] [-PassThru] 
 Delete entity from teams
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	memberSettings = @{
@@ -50,11 +48,6 @@ $params = @{
 }
 
 Update-MgBetaTeam -TeamId $teamId -BodyParameter $params
-```
-This example shows how to use the Remove-MgBetaBetaTeam Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -207,8 +200,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgTeam](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeam?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateam)
-
 

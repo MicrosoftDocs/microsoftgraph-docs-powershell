@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventpresenter
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaVirtualEventPresenter
 
 ## SYNOPSIS
-Presenters' information of the virtual event.
+The virtual event presenters.
 
 ## SYNTAX
 
@@ -32,7 +32,19 @@ Get-MgBetaVirtualEventPresenter -InputObject <IBookingsIdentity> [-ExpandPropert
 ```
 
 ## DESCRIPTION
-Presenters' information of the virtual event.
+The virtual event presenters.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -273,6 +285,4 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventpresenter](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventpresenter)
-
-
 

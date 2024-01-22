@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Sites
 Module Guid: 7ae8c25b-f1dd-466d-a022-b5489f919c70
 Download Help Link: {{ Update Download Link }}
@@ -1637,6 +1637,9 @@ Locale: en-US
 ### [New-MgSiteListItemDocumentSetVersion](New-MgSiteListItemDocumentSetVersion.md)
 {{ Fill in the Description }}
 
+### [New-MgSiteListItemLink](New-MgSiteListItemLink.md)
+{{ Fill in the Description }}
+
 ### [New-MgSiteListItemVersion](New-MgSiteListItemVersion.md)
 {{ Fill in the Description }}
 
@@ -2536,5 +2539,4 @@ Locale: en-US
 
 ### [Update-MgSiteTermStoreSetTermRelation](Update-MgSiteTermStoreSetTermRelation.md)
 {{ Fill in the Description }}
-
 

@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannertask
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # New-MgPlannerTask
 
 ## SYNOPSIS
 Create a new plannerTask.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/New-MgBetaPlannerTask?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -40,15 +36,12 @@ New-MgPlannerTask -BodyParameter <IMicrosoftGraphPlannerTask> [-WhatIf] [-Confir
 ## DESCRIPTION
 Create a new plannerTask.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/planner-post-tasks-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Planner
+```
 
 $params = @{
 	planId = "xqQg5FS2LkCp935s-FIFm2QAFkHM"
@@ -63,10 +56,6 @@ $params = @{
 }
 
 New-MgPlannerTask -BodyParameter $params
-
-```
-This example shows how to use the New-MgPlannerTask Cmdlet.
-
 
 ## PARAMETERS
 
@@ -710,8 +699,6 @@ Read-only.
 For details about the supported format, see Using order hints in Planner.
 
 ## RELATED LINKS
-[New-MgBetaPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/New-MgBetaPlannerTask?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannertask](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannertask)
-
 

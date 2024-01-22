@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskdetection
 schema: 2.0.0
-ms.prod: identity-and-sign-in
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaRiskDetection
 
 ## SYNOPSIS
 Retrieve the properties of a riskDetection object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskDetection?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -39,17 +34,13 @@ Get-MgBetaRiskDetection -InputObject <IIdentitySignInsIdentity> [-ExpandProperty
 ## DESCRIPTION
 Retrieve the properties of a riskDetection object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/riskdetection-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/riskdetection-list-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Get all riskDetections
-```powershell
+
+### EXAMPLE 1
+```
 Connect-MgBetaGraph -Scopes "IdentityRiskEvent.Read.All"
 Get-MgBetaRiskDetection -All | Format-Table UserDisplayName, RiskType, RiskLevel, DetectedDateTime
+```
 
 UserDisplayName RiskType                      RiskLevel DetectedDateTime
 --------------- --------                      --------- ----------------
@@ -61,14 +52,12 @@ Jason Mayer     unlikelyTravel                medium    4/21/2022 10:42:04 PM
 Jason Mayer     generic                       medium    4/23/2022 12:52:20 PM
 Alice Su        unfamiliarFeatures            low       5/2/2022 12:01:44 AM
 Alice Su        unlikelyTravel                low       5/2/2022 2:16:22 AM
+
+### EXAMPLE 2
 ```
-
-This command returns a list of all users.
-
-### Example 2: Get riskDetections by user displayname
-```powershell
 Connect-MgBetaGraph -Scopes "IdentityRiskEvent.Read.All"
 Get-MgBetaRiskDetection -Filter "UserDisplayname eq 'Jason Mayer'" | Format-Table UserDisplayName, RiskType, RiskLevel, DetectedDateTime
+```
 
 UserDisplayName RiskType                      RiskLevel DetectedDateTime
 --------------- --------                      --------- ----------------
@@ -78,35 +67,29 @@ Jason Mayer     anonymizedIPAddress           high      4/21/2022 9:50:28 PM
 Jason Mayer     unfamiliarFeatures            high      4/21/2022 10:07:33 PM
 Jason Mayer     unlikelyTravel                medium    4/21/2022 10:42:04 PM
 Jason Mayer     generic                       medium    4/23/2022 12:52:20 PM
+
+### EXAMPLE 3
 ```
-
-This command returns all risk detections for the specified user 
-
-### Example 3: Get riskDetections by risk type
-```powershell
 Connect-MgBetaGraph -Scopes "IdentityRiskEvent.Read.All"
 Get-MgBetaRiskDetection -Filter "RiskType eq 'anonymizedIPAddress'" | Format-Table UserDisplayName, RiskType, RiskLevel, DetectedDateTime
+```
 
 UserDisplayName RiskType            RiskLevel DetectedDateTime
 --------------- --------            --------- ----------------
 Jason Mayer     anonymizedIPAddress high      4/21/2022 9:50:28 PM
 Jason Mayer     anonymizedIPAddress medium    4/19/2022 10:44:40 PM
 Alex  Su        anonymizedIPAddress high      6/9/2022 4:31:19 AM
+
+### EXAMPLE 4
 ```
-
-This command returns all risk detections for the anonymizedIPAddress risk detection
-
-### Example 4: Get all riskDetections for a particular user with high risk
-```powershell
 Connect-MgBetaGraph -Scopes "IdentityRiskEvent.Read.All"
 Get-MgBetaRiskDetection -Filter "UserDisplayName eq 'Jason Mayer' and Risklevel eq 'high'" | Format-Table UserDisplayName, RiskType, RiskLevel, DetectedDateTime
+```
 
 UserDisplayName RiskType                      RiskLevel DetectedDateTime
 --------------- --------                      --------- ----------------
 Jason Mayer     anonymizedIPAddress           high      4/21/2022 9:50:28 PM
 Jason Mayer     unfamiliarFeatures            high      4/21/2022 10:07:33 PM
-```
-This command returns all risk detections with high risks for the specified user 
 
 ## PARAMETERS
 
@@ -387,8 +370,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskDetection?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskdetection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskdetection)
-
 

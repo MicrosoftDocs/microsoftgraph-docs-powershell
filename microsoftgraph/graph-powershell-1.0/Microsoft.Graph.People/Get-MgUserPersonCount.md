@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.People-help.xml
 Module Name: Microsoft.Graph.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mguserpersoncount
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the number of the resource
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserPersonCount](/powershell/module/Microsoft.Graph.Beta.People/Get-MgBetaUserPersonCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -27,6 +24,18 @@ Get-MgUserPersonCount -InputObject <IPeopleIdentity> [-Filter <String>] [-Search
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -114,9 +123,6 @@ INPUTOBJECT \<IPeopleIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserPersonCount](/powershell/module/Microsoft.Graph.Beta.People/Get-MgBetaUserPersonCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mguserpersoncount](https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mguserpersoncount)
-
-
 

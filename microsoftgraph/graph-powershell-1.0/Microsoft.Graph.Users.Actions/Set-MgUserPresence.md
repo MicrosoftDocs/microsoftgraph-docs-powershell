@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/set-mguserpresence
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Set-MgUserPresence
 
 ## SYNOPSIS
 Set the state of a user's presence session as an application.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaUserPresence](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Set-MgBetaUserPresence?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,12 +43,10 @@ Set-MgUserPresence -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Set the state of a user's presence session as an application.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/presence-setpresence-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Set-MgUserPresence Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
 	SessionId = "22553876-f5ab-4529-bffb-cfe50aa89f87"
@@ -62,8 +56,6 @@ $params = @{
 }
 Set-MgUserPresence -UserId $userId -BodyParameter $params
 ```
-This example shows how to use the Set-MgUserPresence Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -290,8 +282,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgBetaUserPresence](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Set-MgBetaUserPresence?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/set-mguserpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/set-mguserpresence)
-
 

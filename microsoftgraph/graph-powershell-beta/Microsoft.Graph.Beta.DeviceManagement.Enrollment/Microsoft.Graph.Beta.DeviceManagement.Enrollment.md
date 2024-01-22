@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 Module Guid: f1430cdd-e7c8-4cb3-af1c-4267717fc906
 Download Help Link: {{ Update Download Link }}
@@ -266,6 +266,78 @@ Locale: en-US
 ### [Get-MgBetaRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom](Get-MgBetaRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaRoleManagementExchange](Get-MgBetaRoleManagementExchange.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaRoleManagementExchangeCustomAppScope](Get-MgBetaRoleManagementExchangeCustomAppScope.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaRoleManagementExchangeCustomAppScopeCount](Get-MgBetaRoleManagementExchangeCustomAppScopeCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaRoleManagementExchangeResourceNamespace](Get-MgBetaRoleManagementExchangeResourceNamespace.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaRoleManagementExchangeResourceNamespaceCount](Get-MgBetaRoleManagementExchangeResourceNamespaceCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaRoleManagementExchangeResourceNamespaceResourceAction](Get-MgBetaRoleManagementExchangeResourceNamespaceResourceAction.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaRoleManagementExchangeResourceNamespaceResourceActionAuthenticationContext](Get-MgBetaRoleManagementExchangeResourceNamespaceResourceActionAuthenticationContext.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaRoleManagementExchangeResourceNamespaceResourceActionCount](Get-MgBetaRoleManagementExchangeResourceNamespaceResourceActionCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaRoleManagementExchangeResourceNamespaceResourceActionResourceScope](Get-MgBetaRoleManagementExchangeResourceNamespaceResourceActionResourceScope.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaRoleManagementExchangeRoleAssignment](Get-MgBetaRoleManagementExchangeRoleAssignment.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaRoleManagementExchangeRoleAssignmentAppScope](Get-MgBetaRoleManagementExchangeRoleAssignmentAppScope.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaRoleManagementExchangeRoleAssignmentCount](Get-MgBetaRoleManagementExchangeRoleAssignmentCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaRoleManagementExchangeRoleAssignmentDirectoryScope](Get-MgBetaRoleManagementExchangeRoleAssignmentDirectoryScope.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaRoleManagementExchangeRoleAssignmentPrincipal](Get-MgBetaRoleManagementExchangeRoleAssignmentPrincipal.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaRoleManagementExchangeRoleAssignmentRoleDefinition](Get-MgBetaRoleManagementExchangeRoleAssignmentRoleDefinition.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaRoleManagementExchangeRoleDefinition](Get-MgBetaRoleManagementExchangeRoleDefinition.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaRoleManagementExchangeRoleDefinitionCount](Get-MgBetaRoleManagementExchangeRoleDefinitionCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaRoleManagementExchangeRoleDefinitionInheritPermissionFrom](Get-MgBetaRoleManagementExchangeRoleDefinitionInheritPermissionFrom.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaRoleManagementExchangeTransitiveRoleAssignment](Get-MgBetaRoleManagementExchangeTransitiveRoleAssignment.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaRoleManagementExchangeTransitiveRoleAssignmentAppScope](Get-MgBetaRoleManagementExchangeTransitiveRoleAssignmentAppScope.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaRoleManagementExchangeTransitiveRoleAssignmentCount](Get-MgBetaRoleManagementExchangeTransitiveRoleAssignmentCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaRoleManagementExchangeTransitiveRoleAssignmentDirectoryScope](Get-MgBetaRoleManagementExchangeTransitiveRoleAssignmentDirectoryScope.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaRoleManagementExchangeTransitiveRoleAssignmentPrincipal](Get-MgBetaRoleManagementExchangeTransitiveRoleAssignmentPrincipal.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaRoleManagementExchangeTransitiveRoleAssignmentRoleDefinition](Get-MgBetaRoleManagementExchangeTransitiveRoleAssignmentRoleDefinition.md)
+{{ Fill in the Description }}
+
 ### [New-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile](New-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile.md)
 {{ Fill in the Description }}
 
@@ -357,6 +429,27 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [New-MgBetaRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom](New-MgBetaRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaRoleManagementExchangeCustomAppScope](New-MgBetaRoleManagementExchangeCustomAppScope.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaRoleManagementExchangeResourceNamespace](New-MgBetaRoleManagementExchangeResourceNamespace.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaRoleManagementExchangeResourceNamespaceResourceAction](New-MgBetaRoleManagementExchangeResourceNamespaceResourceAction.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaRoleManagementExchangeRoleAssignment](New-MgBetaRoleManagementExchangeRoleAssignment.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaRoleManagementExchangeRoleDefinition](New-MgBetaRoleManagementExchangeRoleDefinition.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaRoleManagementExchangeRoleDefinitionInheritPermissionFrom](New-MgBetaRoleManagementExchangeRoleDefinitionInheritPermissionFrom.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaRoleManagementExchangeTransitiveRoleAssignment](New-MgBetaRoleManagementExchangeTransitiveRoleAssignment.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile](Remove-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile.md)
@@ -470,6 +563,39 @@ Locale: en-US
 ### [Remove-MgBetaRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom](Remove-MgBetaRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaRoleManagementExchange](Remove-MgBetaRoleManagementExchange.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaRoleManagementExchangeCustomAppScope](Remove-MgBetaRoleManagementExchangeCustomAppScope.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaRoleManagementExchangeResourceNamespace](Remove-MgBetaRoleManagementExchangeResourceNamespace.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaRoleManagementExchangeResourceNamespaceResourceAction](Remove-MgBetaRoleManagementExchangeResourceNamespaceResourceAction.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaRoleManagementExchangeResourceNamespaceResourceActionResourceScope](Remove-MgBetaRoleManagementExchangeResourceNamespaceResourceActionResourceScope.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaRoleManagementExchangeRoleAssignment](Remove-MgBetaRoleManagementExchangeRoleAssignment.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaRoleManagementExchangeRoleAssignmentAppScope](Remove-MgBetaRoleManagementExchangeRoleAssignmentAppScope.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaRoleManagementExchangeRoleDefinition](Remove-MgBetaRoleManagementExchangeRoleDefinition.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaRoleManagementExchangeRoleDefinitionInheritPermissionFrom](Remove-MgBetaRoleManagementExchangeRoleDefinitionInheritPermissionFrom.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaRoleManagementExchangeTransitiveRoleAssignment](Remove-MgBetaRoleManagementExchangeTransitiveRoleAssignment.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaRoleManagementExchangeTransitiveRoleAssignmentAppScope](Remove-MgBetaRoleManagementExchangeTransitiveRoleAssignmentAppScope.md)
+{{ Fill in the Description }}
+
 ### [Update-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile](Update-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile.md)
 {{ Fill in the Description }}
 
@@ -581,4 +707,36 @@ Locale: en-US
 ### [Update-MgBetaRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom](Update-MgBetaRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom.md)
 {{ Fill in the Description }}
 
+### [Update-MgBetaRoleManagementExchange](Update-MgBetaRoleManagementExchange.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaRoleManagementExchangeCustomAppScope](Update-MgBetaRoleManagementExchangeCustomAppScope.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaRoleManagementExchangeResourceNamespace](Update-MgBetaRoleManagementExchangeResourceNamespace.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaRoleManagementExchangeResourceNamespaceResourceAction](Update-MgBetaRoleManagementExchangeResourceNamespaceResourceAction.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaRoleManagementExchangeResourceNamespaceResourceActionResourceScope](Update-MgBetaRoleManagementExchangeResourceNamespaceResourceActionResourceScope.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaRoleManagementExchangeRoleAssignment](Update-MgBetaRoleManagementExchangeRoleAssignment.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaRoleManagementExchangeRoleAssignmentAppScope](Update-MgBetaRoleManagementExchangeRoleAssignmentAppScope.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaRoleManagementExchangeRoleDefinition](Update-MgBetaRoleManagementExchangeRoleDefinition.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaRoleManagementExchangeRoleDefinitionInheritPermissionFrom](Update-MgBetaRoleManagementExchangeRoleDefinitionInheritPermissionFrom.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaRoleManagementExchangeTransitiveRoleAssignment](Update-MgBetaRoleManagementExchangeTransitiveRoleAssignment.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaRoleManagementExchangeTransitiveRoleAssignmentAppScope](Update-MgBetaRoleManagementExchangeTransitiveRoleAssignmentAppScope.md)
+{{ Fill in the Description }}
 

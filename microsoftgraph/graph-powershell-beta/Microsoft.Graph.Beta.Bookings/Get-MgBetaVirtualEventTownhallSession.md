@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventtownhallsession
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaVirtualEventTownhallSession
 
 ## SYNOPSIS
-Sessions of the virtual event.
+Sessions for the virtual event.
 
 ## SYNTAX
 
@@ -32,7 +32,19 @@ Get-MgBetaVirtualEventTownhallSession -InputObject <IBookingsIdentity> [-ExpandP
 ```
 
 ## DESCRIPTION
-Sessions of the virtual event.
+Sessions for the virtual event.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -273,6 +285,4 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventtownhallsession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventtownhallsession)
-
-
 

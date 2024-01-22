@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduletimeoff
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new timeOff instance in a schedule.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Teams/New-MgTeamScheduleTimeOff?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,33 +44,29 @@ New-MgBetaTeamScheduleTimeOff -InputObject <ITeamsIdentity> -BodyParameter <IMic
 Create a new timeOff instance in a schedule.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	userId = "c5d0c76b-80c4-481c-be50-923cd8d680a1"
 	sharedTimeOff = @{
 		timeOffReasonId = "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7"
-		startDateTime = [System.DateTime]::Parse("2019-03-11T07:00:00Z")
-		endDateTime = [System.DateTime]::Parse("2019-03-12T07:00:00Z")
+		startDateTime = \[System.DateTime\]::Parse("2019-03-11T07:00:00Z")
+		endDateTime = \[System.DateTime\]::Parse("2019-03-12T07:00:00Z")
 		theme = "white"
 	}
 	draftTimeOff = @{
 		timeOffReasonId = "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7"
-		startDateTime = [System.DateTime]::Parse("2019-03-11T07:00:00Z")
-		endDateTime = [System.DateTime]::Parse("2019-03-12T07:00:00Z")
+		startDateTime = \[System.DateTime\]::Parse("2019-03-11T07:00:00Z")
+		endDateTime = \[System.DateTime\]::Parse("2019-03-12T07:00:00Z")
 		theme = "pink"
 	}
 }
 
 New-MgBetaTeamScheduleTimeOff -TeamId $teamId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaTeamScheduleTimeOff Cmdlet.
-
 
 ## PARAMETERS
 
@@ -173,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsStagedForDeletion
-.
+The timeOff is marked for deletion, a process that is finalized when the schedule is shared.
 
 ```yaml
 Type: SwitchParameter
@@ -304,9 +297,10 @@ BODYPARAMETER \<IMicrosoftGraphTimeOff\>: timeOff
     \[Application \<IMicrosoftGraphIdentity\>\]: identity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     \[Device \<IMicrosoftGraphIdentity\>\]: identity
     \[User \<IMicrosoftGraphIdentity\>\]: identity
   \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
@@ -319,7 +313,7 @@ Read-only.
     \[Theme \<String\>\]: scheduleEntityTheme
     \[TimeOffReasonId \<String\>\]: ID of the timeOffReason for this timeOffItem.
 Required.
-  \[IsStagedForDeletion \<Boolean?\>\]: 
+  \[IsStagedForDeletion \<Boolean?\>\]: The timeOff is marked for deletion, a process that is finalized when the schedule is shared.
   \[SharedTimeOff \<IMicrosoftGraphTimeOffItem\>\]: timeOffItem
   \[UserId \<String\>\]: ID of the user assigned to the timeOff.
 Required.
@@ -329,9 +323,10 @@ CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
   \[Application \<IMicrosoftGraphIdentity\>\]: identity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-    \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
   \[Device \<IMicrosoftGraphIdentity\>\]: identity
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
@@ -389,9 +384,10 @@ LASTMODIFIEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
   \[Application \<IMicrosoftGraphIdentity\>\]: identity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-    \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
   \[Device \<IMicrosoftGraphIdentity\>\]: identity
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
@@ -404,8 +400,6 @@ SHAREDTIMEOFF \<IMicrosoftGraphTimeOffItem\>: timeOffItem
 Required.
 
 ## RELATED LINKS
-[New-MgTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Teams/New-MgTeamScheduleTimeOff?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduletimeoff](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduletimeoff)
-
 

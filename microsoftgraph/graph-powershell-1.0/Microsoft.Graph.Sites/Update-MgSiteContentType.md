@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitecontenttype
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Update-MgSiteContentType
 
 ## SYNOPSIS
 Update a \[content type\]\[contentType\].
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteContentType?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -57,14 +53,12 @@ Update-MgSiteContentType -InputObject <ISitesIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Update a \[content type\]\[contentType\].
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Sites
+```
 
 $params = @{
 	name = "updatedCt"
@@ -110,11 +104,6 @@ $params = @{
 }
 
 Update-MgSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
-```
-This example shows how to use the Update-MgSiteContentType Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -1836,8 +1825,6 @@ ORDER \<IMicrosoftGraphContentTypeOrder\>: contentTypeOrder
   \[Position \<Int32?\>\]: Specifies the position in which the content type appears in the selection UI.
 
 ## RELATED LINKS
-[Update-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitecontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitecontenttype)
-
 

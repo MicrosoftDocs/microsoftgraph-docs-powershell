@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserownedobjectcountasserviceprincipal
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the number of the resource
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserOwnedObjectCountAsServicePrincipal](/powershell/module/Microsoft.Graph.Users/Get-MgUserOwnedObjectCountAsServicePrincipal?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,6 +26,18 @@ Get-MgBetaUserOwnedObjectCountAsServicePrincipal -InputObject <IUsersIdentity> [
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -149,9 +158,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserOwnedObjectCountAsServicePrincipal](/powershell/module/Microsoft.Graph.Users/Get-MgUserOwnedObjectCountAsServicePrincipal?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserownedobjectcountasserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserownedobjectcountasserviceprincipal)
-
-
 

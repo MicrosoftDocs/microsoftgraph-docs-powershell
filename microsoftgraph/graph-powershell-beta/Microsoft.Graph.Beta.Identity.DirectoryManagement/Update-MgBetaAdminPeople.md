@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeople
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property people in admin
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgAdminPeople](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgAdminPeople?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,6 +27,18 @@ Update-MgBetaAdminPeople -BodyParameter <IMicrosoftGraphPeopleAdminSettings> [-W
 
 ## DESCRIPTION
 Update the navigation property people in admin
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -179,8 +188,8 @@ Allowed values for this field are: UserPrincipalName, Fax, StreetAddress, Postal
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    \[IsEnabledInOrganization \<Boolean?\>\]: true to enable pronouns in the organization, false otherwise.
-The default is false, and pronouns are disabled.
+    \[IsEnabledInOrganization \<Boolean?\>\]: true to enable pronouns in the organization; otherwise, false.
+The default value is false, and pronouns are disabled.
 
 PROFILECARDPROPERTIES \<IMicrosoftGraphProfileCardProperty\[\]\>: Contains a collection of the properties an administrator has defined as visible on the Microsoft 365 profile card.
   \[Id \<String\>\]: The unique identifier for an entity.
@@ -200,13 +209,10 @@ PRONOUNS \<IMicrosoftGraphPronounsSettings\>: pronounsSettings
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  \[IsEnabledInOrganization \<Boolean?\>\]: true to enable pronouns in the organization, false otherwise.
-The default is false, and pronouns are disabled.
+  \[IsEnabledInOrganization \<Boolean?\>\]: true to enable pronouns in the organization; otherwise, false.
+The default value is false, and pronouns are disabled.
 
 ## RELATED LINKS
-[Update-MgAdminPeople](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgAdminPeople?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeople](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeople)
-
-
 

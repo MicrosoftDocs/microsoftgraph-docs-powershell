@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Users.Actions
 Module Guid: 86213a25-bec4-4d70-8793-58670c62686f
 Download Help Link: {{ Update Download Link }}
@@ -305,10 +305,19 @@ Locale: en-US
 ### [New-MgUserDriveItemLink](New-MgUserDriveItemLink.md)
 {{ Fill in the Description }}
 
+### [New-MgUserDriveItemListItemLink](New-MgUserDriveItemListItemLink.md)
+{{ Fill in the Description }}
+
 ### [New-MgUserDriveItemUploadSession](New-MgUserDriveItemUploadSession.md)
 {{ Fill in the Description }}
 
+### [New-MgUserDriveListItemLink](New-MgUserDriveListItemLink.md)
+{{ Fill in the Description }}
+
 ### [New-MgUserDriveRootLink](New-MgUserDriveRootLink.md)
+{{ Fill in the Description }}
+
+### [New-MgUserDriveRootListItemLink](New-MgUserDriveRootListItemLink.md)
 {{ Fill in the Description }}
 
 ### [New-MgUserDriveRootUploadSession](New-MgUserDriveRootUploadSession.md)
@@ -511,5 +520,4 @@ Locale: en-US
 
 ### [Update-MgUserPassword](Update-MgUserPassword.md)
 {{ Fill in the Description }}
-
 

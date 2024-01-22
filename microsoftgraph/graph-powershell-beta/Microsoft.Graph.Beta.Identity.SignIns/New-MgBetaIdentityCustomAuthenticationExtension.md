@@ -1,16 +1,15 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentitycustomauthenticationextension
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # New-MgBetaIdentityCustomAuthenticationExtension
 
 ## SYNOPSIS
 Create a new customAuthenticationExtension object.
-Only the onTokenIssuanceStartCustomExtension object type is supported.
+The following derived types are currently supported.
 
 ## SYNTAX
 
@@ -31,10 +30,23 @@ New-MgBetaIdentityCustomAuthenticationExtension -BodyParameter <Hashtable> [-Wha
 
 ## DESCRIPTION
 Create a new customAuthenticationExtension object.
-Only the onTokenIssuanceStartCustomExtension object type is supported.
+The following derived types are currently supported.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitycontainer-post-customauthenticationextensions-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -218,6 +230,4 @@ If null, the default for the service applies.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentitycustomauthenticationextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentitycustomauthenticationextension)
-
-
 

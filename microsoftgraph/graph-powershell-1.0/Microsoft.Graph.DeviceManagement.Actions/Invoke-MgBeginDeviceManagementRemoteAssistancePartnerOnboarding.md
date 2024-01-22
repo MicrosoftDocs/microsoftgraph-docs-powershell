@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgbegindevicemanagementremoteassistancepartneronboarding
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Invoke-MgBeginDeviceManagementRemoteAssistancePartnerOnboarding
@@ -11,9 +10,6 @@ ms.prod: intune
 ## SYNOPSIS
 A request to start onboarding.
 Must be coupled with the appropriate TeamViewer account information
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaBeginDeviceManagementRemoteAssistancePartnerOnboarding](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Invoke-MgBetaBeginDeviceManagementRemoteAssistancePartnerOnboarding?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -32,6 +28,22 @@ Invoke-MgBeginDeviceManagementRemoteAssistancePartnerOnboarding -InputObject <ID
 ## DESCRIPTION
 A request to start onboarding.
 Must be coupled with the appropriate TeamViewer account information
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -142,9 +154,6 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
   \[WindowsAutopilotDeviceIdentityId \<String\>\]: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
-[Invoke-MgBetaBeginDeviceManagementRemoteAssistancePartnerOnboarding](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Invoke-MgBetaBeginDeviceManagementRemoteAssistancePartnerOnboarding?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgbegindevicemanagementremoteassistancepartneronboarding](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgbegindevicemanagementremoteassistancepartneronboarding)
-
-
 

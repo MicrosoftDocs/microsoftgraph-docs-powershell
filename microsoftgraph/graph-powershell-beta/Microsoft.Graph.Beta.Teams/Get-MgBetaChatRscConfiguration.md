@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatrscconfiguration
@@ -19,6 +19,18 @@ Get-MgBetaChatRscConfiguration [<CommonParameters>]
 ## DESCRIPTION
 Get chat RSC configuration for tenant.
 
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
 ## PARAMETERS
 
 ### CommonParameters
@@ -34,6 +46,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatrscconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatrscconfiguration)
-
-
 

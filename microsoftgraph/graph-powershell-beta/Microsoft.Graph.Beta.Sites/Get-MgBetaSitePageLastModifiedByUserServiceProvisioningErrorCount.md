@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepagelastmodifiedbyuserserviceprovisioningerrorcount
@@ -18,6 +18,18 @@ Get-MgBetaSitePageLastModifiedByUserServiceProvisioningErrorCount -BaseSitePageI
  [-Filter <String>] [-Search <String>] [<CommonParameters>]
 ```
 
+### Get1
+```
+Get-MgBetaSitePageLastModifiedByUserServiceProvisioningErrorCount -BaseSitePageId <String> -SiteId <String>
+ [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity1
+```
+Get-MgBetaSitePageLastModifiedByUserServiceProvisioningErrorCount -InputObject <ISitesIdentity>
+ [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
 ### GetViaIdentity
 ```
 Get-MgBetaSitePageLastModifiedByUserServiceProvisioningErrorCount -InputObject <ISitesIdentity>
@@ -27,6 +39,18 @@ Get-MgBetaSitePageLastModifiedByUserServiceProvisioningErrorCount -InputObject <
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
 ## PARAMETERS
 
 ### -BaseSitePageId
@@ -34,7 +58,7 @@ The unique identifier of baseSitePage
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get, Get1
 Aliases:
 
 Required: True
@@ -65,7 +89,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: GetViaIdentity1, GetViaIdentity
 Aliases:
 
 Required: True
@@ -95,7 +119,7 @@ The unique identifier of site
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get, Get1
 Aliases:
 
 Required: True
@@ -134,6 +158,8 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
   \[GroupId \<String\>\]: The unique identifier of group
   \[GroupId1 \<String\>\]: The unique identifier of group
+  \[HorizontalSectionColumnId \<String\>\]: The unique identifier of horizontalSectionColumn
+  \[HorizontalSectionId \<String\>\]: The unique identifier of horizontalSection
   \[IncludePersonalNotebooks \<Boolean?\>\]: Usage: includePersonalNotebooks={includePersonalNotebooks}
   \[InformationProtectionLabelId \<String\>\]: The unique identifier of informationProtectionLabel
   \[Interval \<String\>\]: Usage: interval='{interval}'
@@ -169,10 +195,9 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[ThreatAssessmentResultId \<String\>\]: The unique identifier of threatAssessmentResult
   \[Token \<String\>\]: Usage: token='{token}'
   \[UserId \<String\>\]: The unique identifier of user
+  \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepagelastmodifiedbyuserserviceprovisioningerrorcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepagelastmodifiedbyuserserviceprovisioningerrorcount)
-
-
 

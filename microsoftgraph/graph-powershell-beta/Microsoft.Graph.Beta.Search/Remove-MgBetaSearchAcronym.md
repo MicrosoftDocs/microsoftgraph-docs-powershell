@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetasearchacronym
 schema: 2.0.0
-ms.prod: search
 ---
 
 # Remove-MgBetaSearchAcronym
@@ -28,17 +27,13 @@ Remove-MgBetaSearchAcronym -InputObject <ISearchIdentity> [-IfMatch <String>] [-
 ## DESCRIPTION
 Deletes an acronym object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-acronym-delete-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Remove-MgBetaSearchAcronym Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Search
 Remove-MgBetaSearchAcronym -AcronymId $acronymId
 ```
-This example shows how to use the Remove-MgBetaSearchAcronym Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -173,5 +168,4 @@ INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetasearchacronym](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetasearchacronym)
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationmeassignment
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to assignments for education
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaEducationMeAssignment](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationMeAssignment?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -21,11 +18,12 @@ New-MgEducationMeAssignment [-AddToCalendarAction <String>] [-AddedStudentAction
  [-AdditionalProperties <Hashtable>] [-AllowLateSubmissions] [-AllowStudentsToAddResourcesToSubmission]
  [-AssignTo <Hashtable>] [-Categories <IMicrosoftGraphEducationCategory[]>] [-ClassId <String>]
  [-CloseDateTime <DateTime>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DisplayName <String>]
- [-DueDateTime <DateTime>] [-Grading <Hashtable>] [-Id <String>]
- [-Instructions <IMicrosoftGraphEducationItemBody>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-NotificationChannelUrl <String>] [-Resources <IMicrosoftGraphEducationAssignmentResource[]>]
- [-Rubric <IMicrosoftGraphEducationRubric>] [-Status <String>]
- [-Submissions <IMicrosoftGraphEducationSubmission[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DueDateTime <DateTime>] [-Grading <Hashtable>] [-GradingCategory <IMicrosoftGraphEducationGradingCategory>]
+ [-Id <String>] [-Instructions <IMicrosoftGraphEducationItemBody>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-NotificationChannelUrl <String>]
+ [-Resources <IMicrosoftGraphEducationAssignmentResource[]>] [-Rubric <IMicrosoftGraphEducationRubric>]
+ [-Status <String>] [-Submissions <IMicrosoftGraphEducationSubmission[]>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -38,39 +36,27 @@ New-MgEducationMeAssignment -BodyParameter <IMicrosoftGraphEducationAssignment> 
 Create new navigation property to assignments for education
 
 ## EXAMPLES
-### Example 1: Get the assignments of the logged in user
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Education
+```
 
 Get-MgEducationMeAssignment
+
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgEducationMeAssignment Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Get assignments of a user
-
-```powershell
 Import-Module Microsoft.Graph.Education
+```
 
 Get-MgEducationUserAssignment -EducationUserId $educationUserId
+
+### EXAMPLE 3
 ```
-This example shows how to use the New-MgEducationMeAssignment Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Get user assignments with expand submissions
-
-```powershell
 Import-Module Microsoft.Graph.Education
+```
 
 Get-MgEducationUserAssignment -EducationUserId $educationUserId -ExpandProperty "submissions"
-```
-This example shows how to use the New-MgEducationMeAssignment Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -286,6 +272,22 @@ educationAssignmentGradeType
 
 ```yaml
 Type: Hashtable
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -GradingCategory
+educationGradingCategory
+To construct, see NOTES section for GRADINGCATEGORY properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphEducationGradingCategory
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -514,6 +516,12 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   \[Grading \<IMicrosoftGraphEducationAssignmentGradeType\>\]: educationAssignmentGradeType
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[GradingCategory \<IMicrosoftGraphEducationGradingCategory\>\]: educationGradingCategory
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[DisplayName \<String\>\]: 
+    \[PercentageWeight \<Int32?\>\]: 
   \[Instructions \<IMicrosoftGraphEducationItemBody\>\]: educationItemBody
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[Content \<String\>\]: 
@@ -601,6 +609,13 @@ For example, if a user changes their display name, the API might show the new va
     \[Id \<String\>\]: Unique identifier for the identity.
   \[Device \<IMicrosoftGraphIdentity\>\]: identity
   \[User \<IMicrosoftGraphIdentity\>\]: identity
+
+GRADINGCATEGORY \<IMicrosoftGraphEducationGradingCategory\>: educationGradingCategory
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[DisplayName \<String\>\]: 
+  \[PercentageWeight \<Int32?\>\]: 
 
 INSTRUCTIONS \<IMicrosoftGraphEducationItemBody\>: educationItemBody
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -716,8 +731,6 @@ Read-only.
   \[UnsubmittedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
 
 ## RELATED LINKS
-[New-MgBetaEducationMeAssignment](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationMeAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationmeassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationmeassignment)
-
 

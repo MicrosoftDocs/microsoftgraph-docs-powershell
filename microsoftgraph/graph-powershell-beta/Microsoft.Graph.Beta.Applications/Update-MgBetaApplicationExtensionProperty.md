@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationextensionproperty
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property extensionProperties in applications
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Applications/Update-MgApplicationExtensionProperty?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45,6 +42,22 @@ Update-MgBetaApplicationExtensionProperty -InputObject <IApplicationsIdentity>
 
 ## DESCRIPTION
 Update the navigation property extensionProperties in applications
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -113,9 +126,9 @@ Accept wildcard characters: False
 ### -DataType
 Specifies the data type of the value the extension property can hold.
 Following values are supported.
-Not nullable.
 Binary - 256 bytes maximumBooleanDateTime - Must be specified in ISO 8601 format.
-Will be stored in UTC.Integer - 32-bit value.LargeInteger - 64-bit value.String - 256 characters maximum
+Will be stored in UTC.Integer - 32-bit value.LargeInteger - 64-bit value.String - 256 characters maximumNot nullable.
+For multivalued directory extensions, these limits apply per value in the collection.
 
 ```yaml
 Type: String
@@ -194,8 +207,9 @@ Accept wildcard characters: False
 
 ### -IsMultiValued
 Defines the directory extension as a multi-valued property.
-When true, the directory extension property can store a collection of objects of the dataType; for example, a collection of integers.
+When true, the directory extension property can store a collection of objects of the dataType; for example, a collection of string types such as 'extensionb7b1c57b532f40b8b5ed4b7a7ba67401jobGroupTracker': \['String 1', 'String 2'\].
 The default value is false.
+Supports $filter (eq).
 
 ```yaml
 Type: SwitchParameter
@@ -316,12 +330,13 @@ Read-only.
 Read-only.
   \[DataType \<String\>\]: Specifies the data type of the value the extension property can hold.
 Following values are supported.
-Not nullable.
 Binary - 256 bytes maximumBooleanDateTime - Must be specified in ISO 8601 format.
-Will be stored in UTC.Integer - 32-bit value.LargeInteger - 64-bit value.String - 256 characters maximum
+Will be stored in UTC.Integer - 32-bit value.LargeInteger - 64-bit value.String - 256 characters maximumNot nullable.
+For multivalued directory extensions, these limits apply per value in the collection.
   \[IsMultiValued \<Boolean?\>\]: Defines the directory extension as a multi-valued property.
-When true, the directory extension property can store a collection of objects of the dataType; for example, a collection of integers.
+When true, the directory extension property can store a collection of objects of the dataType; for example, a collection of string types such as 'extensionb7b1c57b532f40b8b5ed4b7a7ba67401jobGroupTracker': \['String 1', 'String 2'\].
 The default value is false.
+Supports $filter (eq).
   \[IsSyncedFromOnPremises \<Boolean?\>\]: Indicates if this extension property was synced from on-premises active directory using Microsoft Entra Connect.
 Read-only.
   \[Name \<String\>\]: Name of the extension property.
@@ -365,9 +380,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Applications/Update-MgApplicationExtensionProperty?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationextensionproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationextensionproperty)
-
-
 

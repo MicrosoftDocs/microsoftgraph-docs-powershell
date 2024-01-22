@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysecurescorecontrolprofile
 schema: 2.0.0
-ms.prod: security
 ---
 
 # Get-MgBetaSecuritySecureScoreControlProfile
 
 ## SYNOPSIS
 Get secureScoreControlProfiles from security
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecuritySecureScoreControlProfile](/powershell/module/Microsoft.Graph.Security/Get-MgSecuritySecureScoreControlProfile?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,21 +34,14 @@ Get-MgBetaSecuritySecureScoreControlProfile -InputObject <ISecurityIdentity> [-E
 ## DESCRIPTION
 Get secureScoreControlProfiles from security
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/securescorecontrolprofiles-list-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
+```
 
 Get-MgBetaSecuritySecureScoreControlProfile -SecureScoreControlProfileId $secureScoreControlProfileId
-```
-This example shows how to use the Get-MgBetaSecuritySecureScoreControlProfile Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -334,8 +323,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgSecuritySecureScoreControlProfile](/powershell/module/Microsoft.Graph.Security/Get-MgSecuritySecureScoreControlProfile?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysecurescorecontrolprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysecurescorecontrolprofile)
-
 

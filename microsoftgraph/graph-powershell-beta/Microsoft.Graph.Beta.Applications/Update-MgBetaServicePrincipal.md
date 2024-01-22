@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipal
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Update-MgBetaServicePrincipal
 
 ## SYNOPSIS
 Update the properties of servicePrincipal object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgServicePrincipal](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipal?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -103,22 +99,17 @@ Update-MgBetaServicePrincipal -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Update the properties of servicePrincipal object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Update the properties of a service principal
 
-```powershell
+### EXAMPLE 1
+```
 $ServicePrincipalUpdate =@{
   "accountEnabled" = "true"
   "appRoleAssignmentRequired" = "true"
   }
-
-Update-MgBetaServicePrincipal -ServicePrincipalId '000e4269-1923-4c8c-9c27-1206e114d421' -BodyParameter $ServicePrincipalUpdate
 ```
 
-This is example, the first command defines the properties and their values in a hashtable under the variable $ServicePrincipalUpdate. The second command updates the specified service principal.
+Update-MgBetaServicePrincipal -ServicePrincipalId '000e4269-1923-4c8c-9c27-1206e114d421' -BodyParameter $ServicePrincipalUpdate
 
 ## PARAMETERS
 
@@ -1333,10 +1324,10 @@ Must not be included in any POST or PATCH requests.
 Read-only.
   \[Value \<String\>\]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
 
@@ -1447,10 +1438,10 @@ Must not be included in any POST or PATCH requests.
 Read-only.
     \[Value \<String\>\]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
   \[ApplicationTemplateId \<String\>\]: Unique identifier of the applicationTemplate that the servicePrincipal was created from.
@@ -1725,10 +1716,10 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
     \[Value \<String\>\]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
   \[PublisherName \<String\>\]: The name of the Microsoft Entra tenant that published the application.
@@ -1839,11 +1830,15 @@ null if discovery hasn't yet occurred.
         \[SynchronizationRules \<IMicrosoftGraphSynchronizationRule\[\]\>\]: A collection of synchronization rules configured for the synchronizationJob or synchronizationTemplate.
           \[ContainerFilter \<IMicrosoftGraphContainerFilter\>\]: containerFilter
             \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-            \[IncludedContainers \<String\[\]\>\]: 
+            \[IncludedContainers \<String\[\]\>\]: The identifiers of containers, such as organizational units, that are in scope for a synchronization rule.
+For Active Directory organizational units, use the distinguished names.
+An empty list means no container filtering is configured.
           \[Editable \<Boolean?\>\]: true if the synchronization rule can be customized; false if this rule is read-only and shouldn't be changed.
           \[GroupFilter \<IMicrosoftGraphGroupFilter\>\]: groupFilter
             \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-            \[IncludedGroups \<String\[\]\>\]: 
+            \[IncludedGroups \<String\[\]\>\]: Identifiers of groups that are in scope for a synchronization rule.
+For Active Directory groups, use the distinguished names.
+An empty list means no group filtering is configured.
           \[Id \<String\>\]: Synchronization rule identifier.
 Must be one of the identifiers recognized by the synchronization engine.
 Supported rule identifiers can be found in the synchronization template returned by the API.
@@ -2364,10 +2359,10 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
   \[Value \<String\>\]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
 
@@ -2463,11 +2458,15 @@ null if discovery hasn't yet occurred.
       \[SynchronizationRules \<IMicrosoftGraphSynchronizationRule\[\]\>\]: A collection of synchronization rules configured for the synchronizationJob or synchronizationTemplate.
         \[ContainerFilter \<IMicrosoftGraphContainerFilter\>\]: containerFilter
           \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-          \[IncludedContainers \<String\[\]\>\]: 
+          \[IncludedContainers \<String\[\]\>\]: The identifiers of containers, such as organizational units, that are in scope for a synchronization rule.
+For Active Directory organizational units, use the distinguished names.
+An empty list means no container filtering is configured.
         \[Editable \<Boolean?\>\]: true if the synchronization rule can be customized; false if this rule is read-only and shouldn't be changed.
         \[GroupFilter \<IMicrosoftGraphGroupFilter\>\]: groupFilter
           \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-          \[IncludedGroups \<String\[\]\>\]: 
+          \[IncludedGroups \<String\[\]\>\]: Identifiers of groups that are in scope for a synchronization rule.
+For Active Directory groups, use the distinguished names.
+An empty list means no group filtering is configured.
         \[Id \<String\>\]: Synchronization rule identifier.
 Must be one of the identifiers recognized by the synchronization engine.
 Supported rule identifiers can be found in the synchronization template returned by the API.
@@ -2689,8 +2688,6 @@ VERIFIEDPUBLISHER \<IMicrosoftGraphVerifiedPublisher\>: verifiedPublisher
   \[VerifiedPublisherId \<String\>\]: The ID of the verified publisher from the app publisher's Partner Center account.
 
 ## RELATED LINKS
-[Update-MgServicePrincipal](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipal?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipal)
-
 

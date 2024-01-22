@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamtagmember
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property members in teams
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgTeamTagMember](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamTagMember?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -43,6 +40,22 @@ Update-MgBetaTeamTagMember -InputObject <ITeamsIdentity> -BodyParameter <IMicros
 
 ## DESCRIPTION
 Update the navigation property members in teams
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -296,9 +309,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Update-MgTeamTagMember](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamTagMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamtagmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamtagmember)
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventwebinarregistration
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to registrations for solutions
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaVirtualEventWebinarRegistration](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaVirtualEventWebinarRegistration?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -48,6 +45,18 @@ New-MgVirtualEventWebinarRegistration -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Create new navigation property to registrations for solutions
 
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -82,7 +91,10 @@ Accept wildcard characters: False
 ```
 
 ### -CancelationDateTime
-.
+Date and time when the registrant cancels their registration for the virtual event.
+Only appears when applicable.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
 Type: DateTime
@@ -97,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -Email
-.
+Email address of the registrant.
 
 ```yaml
 Type: String
@@ -112,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -FirstName
-.
+First name of the registrant.
 
 ```yaml
 Type: String
@@ -159,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastName
-.
+Last name of the registrant.
 
 ```yaml
 Type: String
@@ -174,7 +186,9 @@ Accept wildcard characters: False
 ```
 
 ### -RegistrationDateTime
-.
+Date and time when the registrant registers for the virtual event.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
 Type: DateTime
@@ -189,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegistrationQuestionAnswers
-.
+The registrant's answer to the registration questions.
 To construct, see NOTES section for REGISTRATIONQUESTIONANSWERS properties and create a hash table.
 
 ```yaml
@@ -220,7 +234,8 @@ Accept wildcard characters: False
 ```
 
 ### -UserId
-.
+The registrant's ID in Microsoft Entra ID.
+Only appears when the registrant is registered in Microsoft Entra ID.
 
 ```yaml
 Type: String
@@ -300,19 +315,28 @@ BODYPARAMETER \<IMicrosoftGraphVirtualEventRegistration\>: virtualEventRegistrat
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  \[CancelationDateTime \<DateTime?\>\]: 
-  \[Email \<String\>\]: 
-  \[FirstName \<String\>\]: 
-  \[LastName \<String\>\]: 
-  \[RegistrationDateTime \<DateTime?\>\]: 
-  \[RegistrationQuestionAnswers \<IMicrosoftGraphVirtualEventRegistrationQuestionAnswer\[\]\>\]: 
-    \[BooleanValue \<Boolean?\>\]: 
-    \[DisplayName \<String\>\]: 
-    \[MultiChoiceValues \<String\[\]\>\]: 
-    \[QuestionId \<String\>\]: 
-    \[Value \<String\>\]: 
+  \[CancelationDateTime \<DateTime?\>\]: Date and time when the registrant cancels their registration for the virtual event.
+Only appears when applicable.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  \[Email \<String\>\]: Email address of the registrant.
+  \[FirstName \<String\>\]: First name of the registrant.
+  \[LastName \<String\>\]: Last name of the registrant.
+  \[RegistrationDateTime \<DateTime?\>\]: Date and time when the registrant registers for the virtual event.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  \[RegistrationQuestionAnswers \<IMicrosoftGraphVirtualEventRegistrationQuestionAnswer\[\]\>\]: The registrant's answer to the registration questions.
+    \[BooleanValue \<Boolean?\>\]: Boolean answer of the virtual event registration question.
+Only appears when answerInputType is boolean.
+    \[DisplayName \<String\>\]: Display name of the registration question.
+    \[MultiChoiceValues \<String\[\]\>\]: Collection of text answer of the virtual event registration question.
+Only appears when answerInputType is multiChoice.
+    \[QuestionId \<String\>\]: id of the virtual event registration question.
+    \[Value \<String\>\]: Text answer of the virtual event registration question.
+Appears when answerInputType is text, multilineText or singleChoice.
   \[Status \<String\>\]: virtualEventAttendeeRegistrationStatus
-  \[UserId \<String\>\]: 
+  \[UserId \<String\>\]: The registrant's ID in Microsoft Entra ID.
+Only appears when the registrant is registered in Microsoft Entra ID.
 
 INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
@@ -331,17 +355,17 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[VirtualEventSessionId \<String\>\]: The unique identifier of virtualEventSession
   \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
-REGISTRATIONQUESTIONANSWERS \<IMicrosoftGraphVirtualEventRegistrationQuestionAnswer\[\]\>: .
-  \[BooleanValue \<Boolean?\>\]: 
-  \[DisplayName \<String\>\]: 
-  \[MultiChoiceValues \<String\[\]\>\]: 
-  \[QuestionId \<String\>\]: 
-  \[Value \<String\>\]:
+REGISTRATIONQUESTIONANSWERS \<IMicrosoftGraphVirtualEventRegistrationQuestionAnswer\[\]\>: The registrant's answer to the registration questions.
+  \[BooleanValue \<Boolean?\>\]: Boolean answer of the virtual event registration question.
+Only appears when answerInputType is boolean.
+  \[DisplayName \<String\>\]: Display name of the registration question.
+  \[MultiChoiceValues \<String\[\]\>\]: Collection of text answer of the virtual event registration question.
+Only appears when answerInputType is multiChoice.
+  \[QuestionId \<String\>\]: id of the virtual event registration question.
+  \[Value \<String\>\]: Text answer of the virtual event registration question.
+Appears when answerInputType is text, multilineText or singleChoice.
 
 ## RELATED LINKS
-[New-MgBetaVirtualEventWebinarRegistration](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaVirtualEventWebinarRegistration?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventwebinarregistration](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventwebinarregistration)
-
-
 

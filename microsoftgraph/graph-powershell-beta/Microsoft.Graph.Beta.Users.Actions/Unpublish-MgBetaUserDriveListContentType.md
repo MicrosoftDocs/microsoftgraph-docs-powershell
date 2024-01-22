@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/unpublish-mgbetauserdrivelistcontenttype
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Unpublish-MgBetaUserDriveListContentType
 
 ## SYNOPSIS
 Unpublish a \[contentType\]\[\] from a content type hub site.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Unpublish-MgUserDriveListContentType](/powershell/module/Microsoft.Graph.Users.Actions/Unpublish-MgUserDriveListContentType?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,21 +27,14 @@ Unpublish-MgBetaUserDriveListContentType -InputObject <IUsersActionsIdentity> [-
 ## DESCRIPTION
 Unpublish a \[contentType\]\[\] from a content type hub site.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-unpublish-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Sites
+```
 
 Unpublish-MgBetaSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId
-```
-This example shows how to use the Unpublish-MgBetaUserDriveListContentType Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -214,8 +203,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Unpublish-MgUserDriveListContentType](/powershell/module/Microsoft.Graph.Users.Actions/Unpublish-MgUserDriveListContentType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/unpublish-mgbetauserdrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/unpublish-mgbetauserdrivelistcontenttype)
-
 

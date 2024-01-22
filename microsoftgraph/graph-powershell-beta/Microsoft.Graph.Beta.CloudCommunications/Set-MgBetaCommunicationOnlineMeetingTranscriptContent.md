@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetacommunicationonlinemeetingtranscriptcontent
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 The content of the transcript.
 Read-only.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgCommunicationOnlineMeetingTranscriptContent](/powershell/module/Microsoft.Graph.CloudCommunications/Set-MgCommunicationOnlineMeetingTranscriptContent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,6 +28,22 @@ Set-MgBetaCommunicationOnlineMeetingTranscriptContent -InputObject <ICloudCommun
 ## DESCRIPTION
 The content of the transcript.
 Read-only.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -180,9 +193,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgCommunicationOnlineMeetingTranscriptContent](/powershell/module/Microsoft.Graph.CloudCommunications/Set-MgCommunicationOnlineMeetingTranscriptContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetacommunicationonlinemeetingtranscriptcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetacommunicationonlinemeetingtranscriptcontent)
-
-
 

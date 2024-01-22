@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationloginpage
 schema: 2.0.0
-ms.prod: security
 ---
 
 # Get-MgBetaSecurityAttackSimulationLoginPage
 
 ## SYNOPSIS
 Represents an attack simulation training login page.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecurityAttackSimulationLoginPage](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationLoginPage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -50,8 +46,17 @@ Get-MgBetaSecurityAttackSimulationLoginPage -InputObject <ISecurityIdentity> [-E
 ## DESCRIPTION
 Represents an attack simulation training login page.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/attacksimulationroot-list-loginpage-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -348,9 +353,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgSecurityAttackSimulationLoginPage](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationLoginPage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationloginpage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationloginpage)
-
-
 

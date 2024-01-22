@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/skip-mgbetadevicemanagementmanageddeviceactivationlock
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Bypass activation lock
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Skip-MgDeviceManagementManagedDeviceActivationLock](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Skip-MgDeviceManagementManagedDeviceActivationLock?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,6 +26,22 @@ Skip-MgBetaDeviceManagementManagedDeviceActivationLock -InputObject <IDeviceMana
 
 ## DESCRIPTION
 Bypass activation lock
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -179,9 +192,6 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
   \[ZebraFotaDeploymentId \<String\>\]: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
-[Skip-MgDeviceManagementManagedDeviceActivationLock](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Skip-MgDeviceManagementManagedDeviceActivationLock?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/skip-mgbetadevicemanagementmanageddeviceactivationlock](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/skip-mgbetadevicemanagementmanageddeviceactivationlock)
-
-
 

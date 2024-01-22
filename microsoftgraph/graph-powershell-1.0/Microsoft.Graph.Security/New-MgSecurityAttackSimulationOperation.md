@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulationoperation
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to operations for security
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityAttackSimulationOperation](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAttackSimulationOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,6 +28,18 @@ New-MgSecurityAttackSimulationOperation -BodyParameter <IMicrosoftGraphAttackSim
 
 ## DESCRIPTION
 Create new navigation property to operations for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -269,9 +278,6 @@ Read-only.
   \[Type \<String\>\]: attackSimulationOperationType
 
 ## RELATED LINKS
-[New-MgBetaSecurityAttackSimulationOperation](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAttackSimulationOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulationoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulationoperation)
-
-
 

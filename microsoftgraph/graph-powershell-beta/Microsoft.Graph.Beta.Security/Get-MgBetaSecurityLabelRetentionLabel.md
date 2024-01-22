@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelretentionlabel
 schema: 2.0.0
-ms.prod: security
 ---
 
 # Get-MgBetaSecurityLabelRetentionLabel
@@ -35,24 +34,19 @@ Get-MgBetaSecurityLabelRetentionLabel -InputObject <ISecurityIdentity> [-ExpandP
 ## DESCRIPTION
 Represents how customers can manage their data, whether and for how long to retain or delete it.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-labelsroot-list-retentionlabel-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaSecurityLabelRetentionLabel Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityLabelRetentionLabel -RetentionLabelId $retentionLabelId
 ```
-This example shows how to use the Get-MgBetaSecurityLabelRetentionLabel Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaSecurityLabelRetentionLabel Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityLabelRetentionLabel
 ```
-This example shows how to use the Get-MgBetaSecurityLabelRetentionLabel Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -336,5 +330,4 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelretentionlabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelretentionlabel)
-
 

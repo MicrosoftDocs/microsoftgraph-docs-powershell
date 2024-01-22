@@ -1,19 +1,15 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdriveitempermission
 schema: 2.0.0
-ms.prod: files
 ---
 
 # Remove-MgDriveItemPermission
 
 ## SYNOPSIS
 Remove access to a DriveItem.
-Only sharing permissions that are not inherited can be deleted.The inheritedFrom property must be null.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItemPermission?view=graph-powershell-beta)
+Only sharing permissions that are not inherited can be deleted.\nThe inheritedFrom property must be null.
 
 ## SYNTAX
 
@@ -31,23 +27,16 @@ Remove-MgDriveItemPermission -InputObject <IFilesIdentity> [-IfMatch <String>] [
 
 ## DESCRIPTION
 Remove access to a DriveItem.
-Only sharing permissions that are not inherited can be deleted.The inheritedFrom property must be null.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/permission-delete-permissions.md)]
+Only sharing permissions that are not inherited can be deleted.\nThe inheritedFrom property must be null.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Files
+```
 
 Remove-MgDriveItemPermission -DriveId $driveId -DriveItemId $driveItemId -PermissionId $permissionId
-```
-This example shows how to use the Remove-MgDriveItemPermission Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -215,8 +204,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItemPermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdriveitempermission](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdriveitempermission)
-
 

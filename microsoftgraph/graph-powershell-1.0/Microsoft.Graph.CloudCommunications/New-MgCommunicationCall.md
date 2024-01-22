@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcall
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # New-MgCommunicationCall
@@ -11,9 +10,6 @@ ms.prod: cloud-communications
 ## SYNOPSIS
 Create call enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting.
 You will need to register the calling bot and go through the list of permissions needed as mentioned below.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationCall?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -43,11 +39,11 @@ Create call enables your bot to create a new outgoing peer-to-peer or group call
 You will need to register the calling bot and go through the list of permissions needed as mentioned below.
 
 ## EXAMPLES
-### Example 1: Create peer-to-peer VoIP call with service hosted media
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -79,14 +75,10 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will create peer-to-peer voip call with service hosted media
-
-### Example 2: Create peer-to-peer VoIP call with application hosted media
-
-```powershell
-
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -122,20 +114,16 @@ $params = @{
 	)
 	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		blob = "<Media Session Configuration>"
+		blob = "\<Media Session Configuration\>"
 	}
 }
 
 New-MgCommunicationCall -BodyParameter $params
 
+### EXAMPLE 3
 ```
-This example will create peer-to-peer voip call with application hosted media
-
-### Example 3: Create a group call with service hosted media
-
-```powershell
-
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -188,14 +176,10 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
+### EXAMPLE 4
 ```
-This example will create a group call with service hosted media
-
-### Example 4: Create a group call with application hosted media
-
-```powershell
-
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -248,14 +232,10 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
+### EXAMPLE 5
 ```
-This example will create a group call with application hosted media
-
-### Example 5: Join scheduled meeting with service hosted media
-
-```powershell
-
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -291,14 +271,10 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
+### EXAMPLE 6
 ```
-This example will join scheduled meeting with service hosted media
-
-### Example 6: Join scheduled meeting with application hosted media
-
-```powershell
-
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -333,14 +309,10 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
+### EXAMPLE 7
 ```
-This example will join scheduled meeting with application hosted media
-
-### Example 7: Join a scheduled meeting with joinMeetingId and passcode
-
-```powershell
-
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -363,14 +335,10 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
+### EXAMPLE 8
 ```
-This example will join a scheduled meeting with joinmeetingid and passcode
-
-### Example 8: Join a scheduled meeting with joinMeetingId
-
-```powershell
-
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -393,14 +361,10 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
+### EXAMPLE 9
 ```
-This example will join a scheduled meeting with joinmeetingid
-
-### Example 9: Create peer-to-peer PSTN call with service hosted media
-
-```powershell
-
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -443,14 +407,10 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
+### EXAMPLE 10
 ```
-This example will create peer-to-peer pstn call with service hosted media
-
-### Example 10: Create peer-to-peer PSTN call with application hosted media
-
-```powershell
-
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -487,16 +447,12 @@ $params = @{
 	)
 	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		blob = "<Media Session Configuration>"
+		blob = "\<Media Session Configuration\>"
 	}
 	tenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
 }
 
 New-MgCommunicationCall -BodyParameter $params
-
-```
-This example will### example 10: create peer-to-peer pstn call with application hosted media
-
 
 ## PARAMETERS
 
@@ -548,8 +504,8 @@ Accept wildcard characters: False
 ```
 
 ### -CallbackUri
-The callback URL on which callbacks will be delivered.
-Must be https.
+The callback URL on which callbacks are delivered.
+Must be an HTTPS URL.
 
 ```yaml
 Type: String
@@ -565,7 +521,7 @@ Accept wildcard characters: False
 
 ### -CallChainId
 A unique identifier for all the participant calls in a conference or a unique identifier for two participant calls in a P2P call.
-This needs to be copied over from Microsoft.Graph.Call.CallChainId.
+This identifier must be copied over from Microsoft.Graph.Call.CallChainId.
 
 ```yaml
 Type: String
@@ -990,7 +946,7 @@ Read-only.
     \[RoutingMode \<String\>\]: routingMode
     \[Sources \<String\[\]\>\]: List of source participant ids.
   \[CallChainId \<String\>\]: A unique identifier for all the participant calls in a conference or a unique identifier for two participant calls in a P2P call. 
-This needs to be copied over from Microsoft.Graph.Call.CallChainId.
+This identifier must be copied over from Microsoft.Graph.Call.CallChainId.
   \[CallOptions \<IMicrosoftGraphCallOptions\>\]: callOptions
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[HideBotAfterEscalation \<Boolean?\>\]: Indicates whether to hide the app after the call is escalated.
@@ -1009,8 +965,8 @@ For example, if a user changes their display name, the API might show the new va
       \[User \<IMicrosoftGraphIdentity\>\]: identity
     \[Original \<IMicrosoftGraphIdentitySet\>\]: identitySet
     \[RoutingType \<String\>\]: routingType
-  \[CallbackUri \<String\>\]: The callback URL on which callbacks will be delivered.
-Must be https.
+  \[CallbackUri \<String\>\]: The callback URL on which callbacks are delivered.
+Must be an HTTPS URL.
   \[ChatInfo \<IMicrosoftGraphChatInfo\>\]: chatInfo
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[MessageId \<String\>\]: The unique identifier of a message in a Microsoft Teams channel.
@@ -1288,8 +1244,6 @@ TRANSCRIPTION \<IMicrosoftGraphCallTranscriptionInfo\>: callTranscriptionInfo
   \[State \<String\>\]: callTranscriptionState
 
 ## RELATED LINKS
-[New-MgBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationCall?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcall](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcall)
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetalicenseuser
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Invoke-MgBetaLicenseUser
@@ -12,9 +11,6 @@ ms.prod: users
 Reprocess all group-based license assignments for the user.
 To learn more about group-based licensing, see What is group-based licensing in Microsoft Entra ID.
 Also see Identify and resolve license assignment problems for a group in Microsoft Entra ID for more details.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgLicenseUser](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgLicenseUser?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -33,17 +29,13 @@ Reprocess all group-based license assignments for the user.
 To learn more about group-based licensing, see What is group-based licensing in Microsoft Entra ID.
 Also see Identify and resolve license assignment problems for a group in Microsoft Entra ID for more details.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-reprocesslicenseassignment-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaLicenseUser Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users.Actions
 Invoke-MgBetaLicenseUser -UserId $userId
 ```
-This example shows how to use the Invoke-MgBetaLicenseUser Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -167,8 +159,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgLicenseUser](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgLicenseUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetalicenseuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetalicenseuser)
-
 

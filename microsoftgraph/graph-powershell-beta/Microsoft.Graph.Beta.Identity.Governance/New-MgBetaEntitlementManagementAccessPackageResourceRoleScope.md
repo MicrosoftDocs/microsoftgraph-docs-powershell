@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageresourcerolescope
@@ -11,9 +11,6 @@ schema: 2.0.0
 Create a new accessPackageResourceRoleScope for adding a resource role to an access package.
 The access package resource, for a group, an app, or a SharePoint Online site, must already exist in the access package catalog, and the originId for the resource role retrieved from the list of the resource roles.
 Once you add the resource role scope to the access package, the user will receive this resource role through any current and future access package assignments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgEntitlementManagementAccessPackageResourceRoleScope](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackageResourceRoleScope?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -53,9 +50,9 @@ The access package resource, for a group, an app, or a SharePoint Online site, m
 Once you add the resource role scope to the access package, the user will receive this resource role through any current and future access package assignments.
 
 ## EXAMPLES
-### Example 1: Create a new access package resource role scope
 
-```powershell
+### EXAMPLE 1
+```
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 $accessPackageResource = @{
   "id"= '4f5dac35-b025-4131-a27f-6e0e46d48dd1'
@@ -63,6 +60,7 @@ $accessPackageResource = @{
   "originId"= '8902df17-a973-438f-8321-8b619aa18dc4'
   "originSystem"= 'AadGroup'
   }
+```
 
 $accessPackageResourceRole = @{
   "originId"= 'Member_8902df17-a973-438f-8321-8b619aa18dc4'
@@ -77,25 +75,6 @@ $accessPackageResourceScope = @{
   }
 
 New-MgBetaEntitlementManagementAccessPackageResourceRoleScope -AccessPackageId 'bc041fda-b3ba-41fc-b911-ca95f7aac656' -AccessPackageResourceRole $accessPackageResourceRole -AccessPackageResourceScope $accessPackageResourceScope
-```
-
-```Output
-AccessPackageResourceRole  : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageResourceRole
-AccessPackageResourceScope : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageResourceScope
-CreatedBy                  : admin@M365x814237.onmicrosoft.com
-CreatedDateTime            : 11/5/2021 9:06:32 AM
-Id                         : 3c955d0f-f6d5-45f0-b465-e8e6375a3895_5fef70e1-b78f-4d21-a6ad-979d9f54daf1
-ModifiedBy                 : admin@M365x814237.onmicrosoft.com
-ModifiedDateTime           : 11/5/2021 9:06:32 AM
-AdditionalProperties       : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackages('bc041fda-b3ba-41fc-b911-ca95f7aa
-                             c656')/accessPackageResourceRoleScopes/$entity]}
-```
-
-This example, the commands;
-1. Defines a resource variable. **Id** in the $accesspackageresource variable is the identifier of the group catalog resource.
-1. Defines the resource role variable
-1. Defines the resource scope variable
-1. Create a new access package resource role scope.
 
 ## PARAMETERS
 
@@ -668,8 +647,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[WorkflowVersionNumber \<Int32?\>\]: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[New-MgEntitlementManagementAccessPackageResourceRoleScope](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackageResourceRoleScope?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageresourcerolescope](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageresourcerolescope)
-
 

@@ -1,10 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilephone
 schema: 2.0.0
-ms.prod: people
-ms.prod: people
 ---
 
 # Get-MgBetaUserProfilePhone
@@ -36,29 +34,21 @@ Get-MgBetaUserProfilePhone -InputObject <IPeopleIdentity> [-ExpandProperty <Stri
 ## DESCRIPTION
 Retrieve the properties and relationships of an itemPhone object in a user's profile.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/itemphone-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/profile-list-phones-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaUserProfilePhone Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfilePhone -UserId $userId -ItemPhoneId $itemPhoneId
 ```
-This example shows how to use the Get-MgBetaUserProfilePhone Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaUserProfilePhone Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfilePhone -UserId $userId
 ```
-This example shows how to use the Get-MgBetaUserProfilePhone Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -301,5 +291,4 @@ INPUTOBJECT \<IPeopleIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilephone](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilephone)
-
 

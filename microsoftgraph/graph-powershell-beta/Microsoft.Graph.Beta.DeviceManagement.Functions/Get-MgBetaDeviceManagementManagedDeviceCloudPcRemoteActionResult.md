@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementmanageddevicecloudpcremoteactionresult
@@ -29,13 +29,12 @@ Get-MgBetaDeviceManagementManagedDeviceCloudPcRemoteActionResult
 Invoke function getCloudPcRemoteActionResults
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaDeviceManagementManagedDeviceCloudPcRemoteActionResult Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
 Get-MgBetaDeviceManagementManagedDeviceCloudPcRemoteActionResult -ManagedDeviceId $managedDeviceId
 ```
-This example shows how to use the Get-MgBetaDeviceManagementManagedDeviceCloudPcRemoteActionResult Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -195,5 +194,4 @@ INPUTOBJECT \<IDeviceManagementFunctionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementmanageddevicecloudpcremoteactionresult](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementmanageddevicecloudpcremoteactionresult)
-
 

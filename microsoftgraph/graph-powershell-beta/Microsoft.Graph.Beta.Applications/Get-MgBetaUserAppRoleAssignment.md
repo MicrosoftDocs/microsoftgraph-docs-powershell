@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetauserapproleassignment
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Get-MgBetaUserAppRoleAssignment
@@ -11,9 +10,6 @@ ms.prod: users
 ## SYNOPSIS
 Represents the app roles a user has been granted for an application.
 Supports $expand.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/Get-MgUserAppRoleAssignment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -40,15 +36,13 @@ Get-MgBetaUserAppRoleAssignment -InputObject <IApplicationsIdentity> [-ExpandPro
 Represents the app roles a user has been granted for an application.
 Supports $expand.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-approleassignments-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Get assigned app roles
 
-```powershell
- Get-MgBetaUserAppRoleAssignment -UserId "529827aa-d058-4821-a012-4de3ce093955" | 
-  Format-List Id, AppRoleID, CreationTimeStamp, PrincipalDisplayName,PrincipalId, PrincipalType, ResourceDisplayName
+### EXAMPLE 1
+```
+Get-MgBetaUserAppRoleAssignment -UserId "529827aa-d058-4821-a012-4de3ce093955" | 
+ Format-List Id, AppRoleID, CreationTimeStamp, PrincipalDisplayName,PrincipalId, PrincipalType, ResourceDisplayName
+```
 
 Id                   : QQxVaKMYXkmqHc9ijBcbSFkvIqIpOSdOjXRyNBWe_zE
 AppRoleId            : 00000000-0000-0000-0000-000000000000
@@ -63,9 +57,6 @@ PrincipalDisplayName : MOD Administrator
 PrincipalId          : 529827aa-d058-4821-a012-4de3ce093955
 PrincipalType        : User
 ResourceDisplayName  : dxprovisioning-worker-mfa
-```
-
-This command gets all the application roles that the selected user has been assigned.
 
 ## PARAMETERS
 
@@ -331,8 +322,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/Get-MgUserAppRoleAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetauserapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetauserapproleassignment)
-
 

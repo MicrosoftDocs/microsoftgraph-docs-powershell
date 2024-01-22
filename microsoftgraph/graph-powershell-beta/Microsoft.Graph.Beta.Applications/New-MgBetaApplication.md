@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplication
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # New-MgBetaApplication
 
 ## SYNOPSIS
 Create a new application object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgApplication](/powershell/module/Microsoft.Graph.Applications/New-MgApplication?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -55,24 +51,19 @@ New-MgBetaApplication -BodyParameter <IMicrosoftGraphApplication> [-WhatIf] [-Co
 ## DESCRIPTION
 Create a new application object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-post-applications-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Create a new application
 
-```powershell
+### EXAMPLE 1
+```
 New-MgBetaApplication -DisplayName 'New app' | 
   Format-List Id, DisplayName, AppId, SignInAudience, PublisherDomain
+```
 
 Id              : 0f0aec7b-ac5b-4f89-9fac-e9044ba5a309
 DisplayName     : New app
 AppId           : c678b75d-1012-4466-8655-1672192232b4
 SignInAudience  : AzureADandPersonalMicrosoftAccount
 PublisherDomain : M365B977454.onmicrosoft.com
-```
-
-This example creates a new application.
 
 ## PARAMETERS
 
@@ -1012,10 +1003,10 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
     \[Value \<String\>\]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
   \[PreAuthorizedApplications \<IMicrosoftGraphPreAuthorizedApplication\[\]\>\]: Lists the client applications that are preauthorized with the specified delegated permissions to access this application's APIs.
@@ -1082,15 +1073,16 @@ Must not be included in any POST or PATCH requests.
 Read-only.
   \[Value \<String\>\]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
 
 AUTHENTICATIONBEHAVIORS \<IMicrosoftGraphAuthenticationBehaviors\>: authenticationBehaviors
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[BlockAzureAdGraphAccess \<Boolean?\>\]: 
   \[RemoveUnverifiedEmailClaim \<Boolean?\>\]: Removes the email claim from tokens sent to an application when the email address's domain can't be verified.
   \[RequireClientServicePrincipal \<Boolean?\>\]: Requires multitenant applications to have a service principal in the resource tenant as part of authorization checks before they're granted access tokens.
 This property is only modifiable for multi-tenant resource applications that rely on access from clients without a service principal and had this behavior as set to false by Microsoft.
@@ -1130,10 +1122,10 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
       \[Value \<String\>\]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
     \[PreAuthorizedApplications \<IMicrosoftGraphPreAuthorizedApplication\[\]\>\]: Lists the client applications that are preauthorized with the specified delegated permissions to access this application's APIs.
@@ -1203,14 +1195,15 @@ Must not be included in any POST or PATCH requests.
 Read-only.
     \[Value \<String\>\]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
   \[AuthenticationBehaviors \<IMicrosoftGraphAuthenticationBehaviors\>\]: authenticationBehaviors
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[BlockAzureAdGraphAccess \<Boolean?\>\]: 
     \[RemoveUnverifiedEmailClaim \<Boolean?\>\]: Removes the email claim from tokens sent to an application when the email address's domain can't be verified.
     \[RequireClientServicePrincipal \<Boolean?\>\]: Requires multitenant applications to have a service principal in the resource tenant as part of authorization checks before they're granted access tokens.
 This property is only modifiable for multi-tenant resource applications that rely on access from clients without a service principal and had this behavior as set to false by Microsoft.
@@ -1271,12 +1264,13 @@ Read-only.
 Read-only.
     \[DataType \<String\>\]: Specifies the data type of the value the extension property can hold.
 Following values are supported.
-Not nullable.
 Binary - 256 bytes maximumBooleanDateTime - Must be specified in ISO 8601 format.
-Will be stored in UTC.Integer - 32-bit value.LargeInteger - 64-bit value.String - 256 characters maximum
+Will be stored in UTC.Integer - 32-bit value.LargeInteger - 64-bit value.String - 256 characters maximumNot nullable.
+For multivalued directory extensions, these limits apply per value in the collection.
     \[IsMultiValued \<Boolean?\>\]: Defines the directory extension as a multi-valued property.
-When true, the directory extension property can store a collection of objects of the dataType; for example, a collection of integers.
+When true, the directory extension property can store a collection of objects of the dataType; for example, a collection of string types such as 'extensionb7b1c57b532f40b8b5ed4b7a7ba67401jobGroupTracker': \['String 1', 'String 2'\].
 The default value is false.
+Supports $filter (eq).
     \[IsSyncedFromOnPremises \<Boolean?\>\]: Indicates if this extension property was synced from on-premises active directory using Microsoft Entra Connect.
 Read-only.
     \[Name \<String\>\]: Name of the extension property.
@@ -1641,11 +1635,15 @@ null if discovery hasn't yet occurred.
         \[SynchronizationRules \<IMicrosoftGraphSynchronizationRule\[\]\>\]: A collection of synchronization rules configured for the synchronizationJob or synchronizationTemplate.
           \[ContainerFilter \<IMicrosoftGraphContainerFilter\>\]: containerFilter
             \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-            \[IncludedContainers \<String\[\]\>\]: 
+            \[IncludedContainers \<String\[\]\>\]: The identifiers of containers, such as organizational units, that are in scope for a synchronization rule.
+For Active Directory organizational units, use the distinguished names.
+An empty list means no container filtering is configured.
           \[Editable \<Boolean?\>\]: true if the synchronization rule can be customized; false if this rule is read-only and shouldn't be changed.
           \[GroupFilter \<IMicrosoftGraphGroupFilter\>\]: groupFilter
             \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-            \[IncludedGroups \<String\[\]\>\]: 
+            \[IncludedGroups \<String\[\]\>\]: Identifiers of groups that are in scope for a synchronization rule.
+For Active Directory groups, use the distinguished names.
+An empty list means no group filtering is configured.
           \[Id \<String\>\]: Synchronization rule identifier.
 Must be one of the identifiers recognized by the synchronization engine.
 Supported rule identifiers can be found in the synchronization template returned by the API.
@@ -1923,10 +1921,10 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
         \[Value \<String\>\]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
       \[PreAuthorizedApplications \<IMicrosoftGraphPreAuthorizedApplication\[\]\>\]: Lists the client applications that are preauthorized with the specified delegated permissions to access this application's APIs.
@@ -1996,14 +1994,15 @@ Must not be included in any POST or PATCH requests.
 Read-only.
       \[Value \<String\>\]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
-
-
- and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : !
+# $ % & ' ( ) * + , - .
+/ : ;  =  ?
+@ \[ \] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
     \[AuthenticationBehaviors \<IMicrosoftGraphAuthenticationBehaviors\>\]: authenticationBehaviors
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[BlockAzureAdGraphAccess \<Boolean?\>\]: 
       \[RemoveUnverifiedEmailClaim \<Boolean?\>\]: Removes the email claim from tokens sent to an application when the email address's domain can't be verified.
       \[RequireClientServicePrincipal \<Boolean?\>\]: Requires multitenant applications to have a service principal in the resource tenant as part of authorization checks before they're granted access tokens.
 This property is only modifiable for multi-tenant resource applications that rely on access from clients without a service principal and had this behavior as set to false by Microsoft.
@@ -2044,12 +2043,13 @@ Read-only.
 Read-only.
       \[DataType \<String\>\]: Specifies the data type of the value the extension property can hold.
 Following values are supported.
-Not nullable.
 Binary - 256 bytes maximumBooleanDateTime - Must be specified in ISO 8601 format.
-Will be stored in UTC.Integer - 32-bit value.LargeInteger - 64-bit value.String - 256 characters maximum
+Will be stored in UTC.Integer - 32-bit value.LargeInteger - 64-bit value.String - 256 characters maximumNot nullable.
+For multivalued directory extensions, these limits apply per value in the collection.
       \[IsMultiValued \<Boolean?\>\]: Defines the directory extension as a multi-valued property.
-When true, the directory extension property can store a collection of objects of the dataType; for example, a collection of integers.
+When true, the directory extension property can store a collection of objects of the dataType; for example, a collection of string types such as 'extensionb7b1c57b532f40b8b5ed4b7a7ba67401jobGroupTracker': \['String 1', 'String 2'\].
 The default value is false.
+Supports $filter (eq).
       \[IsSyncedFromOnPremises \<Boolean?\>\]: Indicates if this extension property was synced from on-premises active directory using Microsoft Entra Connect.
 Read-only.
       \[Name \<String\>\]: Name of the extension property.
@@ -2414,11 +2414,15 @@ null if discovery hasn't yet occurred.
           \[SynchronizationRules \<IMicrosoftGraphSynchronizationRule\[\]\>\]: A collection of synchronization rules configured for the synchronizationJob or synchronizationTemplate.
             \[ContainerFilter \<IMicrosoftGraphContainerFilter\>\]: containerFilter
               \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-              \[IncludedContainers \<String\[\]\>\]: 
+              \[IncludedContainers \<String\[\]\>\]: The identifiers of containers, such as organizational units, that are in scope for a synchronization rule.
+For Active Directory organizational units, use the distinguished names.
+An empty list means no container filtering is configured.
             \[Editable \<Boolean?\>\]: true if the synchronization rule can be customized; false if this rule is read-only and shouldn't be changed.
             \[GroupFilter \<IMicrosoftGraphGroupFilter\>\]: groupFilter
               \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-              \[IncludedGroups \<String\[\]\>\]: 
+              \[IncludedGroups \<String\[\]\>\]: Identifiers of groups that are in scope for a synchronization rule.
+For Active Directory groups, use the distinguished names.
+An empty list means no group filtering is configured.
             \[Id \<String\>\]: Synchronization rule identifier.
 Must be one of the identifiers recognized by the synchronization engine.
 Supported rule identifiers can be found in the synchronization template returned by the API.
@@ -2687,12 +2691,13 @@ Read-only.
 Read-only.
   \[DataType \<String\>\]: Specifies the data type of the value the extension property can hold.
 Following values are supported.
-Not nullable.
 Binary - 256 bytes maximumBooleanDateTime - Must be specified in ISO 8601 format.
-Will be stored in UTC.Integer - 32-bit value.LargeInteger - 64-bit value.String - 256 characters maximum
+Will be stored in UTC.Integer - 32-bit value.LargeInteger - 64-bit value.String - 256 characters maximumNot nullable.
+For multivalued directory extensions, these limits apply per value in the collection.
   \[IsMultiValued \<Boolean?\>\]: Defines the directory extension as a multi-valued property.
-When true, the directory extension property can store a collection of objects of the dataType; for example, a collection of integers.
+When true, the directory extension property can store a collection of objects of the dataType; for example, a collection of string types such as 'extensionb7b1c57b532f40b8b5ed4b7a7ba67401jobGroupTracker': \['String 1', 'String 2'\].
 The default value is false.
+Supports $filter (eq).
   \[IsSyncedFromOnPremises \<Boolean?\>\]: Indicates if this extension property was synced from on-premises active directory using Microsoft Entra Connect.
 Read-only.
   \[Name \<String\>\]: Name of the extension property.
@@ -3082,11 +3087,15 @@ null if discovery hasn't yet occurred.
       \[SynchronizationRules \<IMicrosoftGraphSynchronizationRule\[\]\>\]: A collection of synchronization rules configured for the synchronizationJob or synchronizationTemplate.
         \[ContainerFilter \<IMicrosoftGraphContainerFilter\>\]: containerFilter
           \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-          \[IncludedContainers \<String\[\]\>\]: 
+          \[IncludedContainers \<String\[\]\>\]: The identifiers of containers, such as organizational units, that are in scope for a synchronization rule.
+For Active Directory organizational units, use the distinguished names.
+An empty list means no container filtering is configured.
         \[Editable \<Boolean?\>\]: true if the synchronization rule can be customized; false if this rule is read-only and shouldn't be changed.
         \[GroupFilter \<IMicrosoftGraphGroupFilter\>\]: groupFilter
           \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-          \[IncludedGroups \<String\[\]\>\]: 
+          \[IncludedGroups \<String\[\]\>\]: Identifiers of groups that are in scope for a synchronization rule.
+For Active Directory groups, use the distinguished names.
+An empty list means no group filtering is configured.
         \[Id \<String\>\]: Synchronization rule identifier.
 Must be one of the identifiers recognized by the synchronization engine.
 Supported rule identifiers can be found in the synchronization template returned by the API.
@@ -3326,8 +3335,6 @@ Read-only.
 Only available for applications that support the PersonalMicrosoftAccount signInAudience.
 
 ## RELATED LINKS
-[New-MgApplication](/powershell/module/Microsoft.Graph.Applications/New-MgApplication?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplication)
-
 

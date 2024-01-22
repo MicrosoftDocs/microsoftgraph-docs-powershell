@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetauserchataccessforuser
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Remove-MgBetaUserChatAccessForUser
@@ -42,8 +41,17 @@ Remove-MgBetaUserChatAccessForUser -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Remove access to a chat for a user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-removeallaccessforuser-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -207,9 +215,10 @@ BODYPARAMETER \<IPaths1Fbbg7IUsersUserIdChatsChatIdMicrosoftGraphRemoveallaccess
   \[User \<IMicrosoftGraphTeamworkUserIdentity\>\]: teamworkUserIdentity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-    \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     \[UserIdentityType \<String\>\]: teamworkUserIdentityType
 
 INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
@@ -257,14 +266,13 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 USER \<IMicrosoftGraphTeamworkUserIdentity\>: teamworkUserIdentity
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-  \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+  \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
   \[UserIdentityType \<String\>\]: teamworkUserIdentityType
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetauserchataccessforuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetauserchataccessforuser)
-
-
 

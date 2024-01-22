@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistitemcreatedbyuser
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get createdByUser from shares
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgShareListItemCreatedByUser](/powershell/module/Microsoft.Graph.Files/Get-MgShareListItemCreatedByUser?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -41,6 +38,18 @@ Get-MgBetaShareListItemCreatedByUser -InputObject <IFilesIdentity> [-ExpandPrope
 
 ## DESCRIPTION
 Get createdByUser from shares
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -162,9 +171,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgShareListItemCreatedByUser](/powershell/module/Microsoft.Graph.Files/Get-MgShareListItemCreatedByUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistitemcreatedbyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistitemcreatedbyuser)
-
-
 

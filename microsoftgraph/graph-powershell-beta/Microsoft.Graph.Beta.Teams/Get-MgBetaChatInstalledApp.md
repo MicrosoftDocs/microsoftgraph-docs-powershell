@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatinstalledapp
 schema: 2.0.0
-ms.prod: microsoft-teams
-ms.prod: microsoft-teams
 ---
 
 # Get-MgBetaChatInstalledApp
 
 ## SYNOPSIS
 Get an app installed in a chat.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgChatInstalledApp](/powershell/module/Microsoft.Graph.Teams/Get-MgChatInstalledApp?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -40,50 +35,34 @@ Get-MgBetaChatInstalledApp -InputObject <ITeamsIdentity> [-ExpandProperty <Strin
 Get an app installed in a chat.
 
 ## EXAMPLES
-### Example 1: Get all the apps installed in the specified chat
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 Get-MgBetaChatInstalledApp -ChatId $chatId
 
+### EXAMPLE 2
 ```
-This example will get all the apps installed in the specified chat
-
-### Example 2: Get the names and other details of apps installed in the specified chat
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Teams
-
-Get-MgBetaChatInstalledApp -ChatId $chatId -ExpandProperty "teamsAppDefinition(`$expand=bot)" 
-
 ```
-This example will get the names and other details of apps installed in the specified chat
 
-### Example 3: Get the app installation resource based on the manifest id of the associated app
+Get-MgBetaChatInstalledApp -ChatId $chatId -ExpandProperty "teamsAppDefinition(\`$expand=bot)"
 
-```powershell
-
+### EXAMPLE 3
+```
 Import-Module Microsoft.Graph.Beta.Teams
-
-Get-MgBetaChatInstalledApp -ChatId $chatId -ExpandProperty "teamsApp,teamsAppDefinition" -Filter "teamsApp/externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'" 
-
 ```
-This example will get the app installation resource based on the manifest id of the associated app
 
-### Example 4: Get the set of resource specific permissions consented for the apps installed in the specified chat
+Get-MgBetaChatInstalledApp -ChatId $chatId -ExpandProperty "teamsApp,teamsAppDefinition" -Filter "teamsApp/externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'"
 
-```powershell
-
+### EXAMPLE 4
+```
 Import-Module Microsoft.Graph.Beta.Teams
-
-Get-MgBetaChatInstalledApp -ChatId $chatId -Property "consentedPermissionSet,id" 
-
 ```
-This example will get the set of resource specific permissions consented for the apps installed in the specified chat
 
+Get-MgBetaChatInstalledApp -ChatId $chatId -Property "consentedPermissionSet,id"
 
 ## PARAMETERS
 
@@ -341,8 +320,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgChatInstalledApp](/powershell/module/Microsoft.Graph.Teams/Get-MgChatInstalledApp?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatinstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatinstalledapp)
-
 

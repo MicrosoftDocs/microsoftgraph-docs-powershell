@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetausermanageddevicemobileappconfigurationstate
@@ -47,6 +47,22 @@ Update-MgBetaUserManagedDeviceMobileAppConfigurationState -InputObject <IDevices
 
 ## DESCRIPTION
 Update the navigation property managedDeviceMobileAppConfigurationStates in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -458,6 +474,4 @@ SETTINGSTATES \<IMicrosoftGraphManagedDeviceMobileAppConfigurationSettingState\[
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetausermanageddevicemobileappconfigurationstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetausermanageddevicemobileappconfigurationstate)
-
-
 

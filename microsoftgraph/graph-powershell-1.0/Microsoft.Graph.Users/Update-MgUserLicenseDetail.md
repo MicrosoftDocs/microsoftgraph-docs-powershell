@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserlicensedetail
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property licenseDetails in users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserLicenseDetail](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserLicenseDetail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -43,6 +40,22 @@ Update-MgUserLicenseDetail -InputObject <IUsersIdentity> -BodyParameter <IMicros
 
 ## DESCRIPTION
 Update the navigation property licenseDetails in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -281,9 +294,6 @@ The possible values are:Success - Service is fully provisioned.Disabled - Servic
   \[ServicePlanName \<String\>\]: The name of the service plan.
 
 ## RELATED LINKS
-[Update-MgBetaUserLicenseDetail](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserLicenseDetail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserlicensedetail](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserlicensedetail)
-
-
 

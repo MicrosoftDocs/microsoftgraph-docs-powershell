@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetadismissusereventinstancereminder
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Invoke-MgBetaDismissUserEventInstanceReminder
 
 ## SYNOPSIS
 Dismiss a reminder that has been triggered for an event in a user calendar.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgDismissUserEventInstanceReminder](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgDismissUserEventInstanceReminder?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,22 +27,15 @@ Invoke-MgBetaDismissUserEventInstanceReminder -InputObject <IUsersActionsIdentit
 ## DESCRIPTION
 Dismiss a reminder that has been triggered for an event in a user calendar.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-dismissreminder-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users.Actions
+```
 
 # A UPN can also be used as -UserId.
 Invoke-MgBetaDismissUserEventReminder -UserId $userId -EventId $eventId
-```
-This example shows how to use the Invoke-MgBetaDismissUserEventInstanceReminder Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -215,8 +204,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgDismissUserEventInstanceReminder](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgDismissUserEventInstanceReminder?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetadismissusereventinstancereminder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetadismissusereventinstancereminder)
-
 

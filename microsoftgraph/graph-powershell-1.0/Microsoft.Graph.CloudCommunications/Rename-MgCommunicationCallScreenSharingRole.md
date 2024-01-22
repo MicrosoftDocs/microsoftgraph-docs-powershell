@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/rename-mgcommunicationcallscreensharingrole
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Rename-MgCommunicationCallScreenSharingRole
 
 ## SYNOPSIS
 Allow applications to share screen content with the participants of a group call.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Rename-MgBetaCommunicationCallScreenSharingRole](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Rename-MgBetaCommunicationCallScreenSharingRole?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -45,20 +41,16 @@ Rename-MgCommunicationCallScreenSharingRole -InputObject <ICloudCommunicationsId
 ## DESCRIPTION
 Allow applications to share screen content with the participants of a group call.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-changescreensharingrole-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Rename-MgCommunicationCallScreenSharingRole Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.CloudCommunications
 $params = @{
 	Role = "viewer"
 }
 Rename-MgCommunicationCallScreenSharingRole -CallId $callId -BodyParameter $params
 ```
-This example shows how to use the Rename-MgCommunicationCallScreenSharingRole Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -222,8 +214,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Rename-MgBetaCommunicationCallScreenSharingRole](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Rename-MgBetaCommunicationCallScreenSharingRole?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/rename-mgcommunicationcallscreensharingrole](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/rename-mgcommunicationcallscreensharingrole)
-
 

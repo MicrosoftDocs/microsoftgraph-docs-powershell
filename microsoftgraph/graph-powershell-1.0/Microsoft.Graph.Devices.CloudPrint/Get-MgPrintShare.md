@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintshare
 schema: 2.0.0
-ms.prod: cloud-printing
-ms.prod: cloud-printing
 ---
 
 # Get-MgPrintShare
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a printer share.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPrintShare](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintShare?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -39,35 +34,21 @@ Get-MgPrintShare -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 Retrieve the properties and relationships of a printer share.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printershare-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/print-list-shares-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Get a printerShare
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Devices.CloudPrint
+```
 
 Get-MgPrintShare -PrinterShareId $printerShareId
 
+### EXAMPLE 2
 ```
-This example will get a printershare
-
-### Example 2: Get a printerShare and its capabilities
-
-```powershell
-
 Import-Module Microsoft.Graph.Devices.CloudPrint
-
-Get-MgPrintShare -PrinterShareId $printerShareId -Property "id,displayName,capabilities" 
-
 ```
-This example will get a printershare and its capabilities
 
+Get-MgPrintShare -PrinterShareId $printerShareId -Property "id,displayName,capabilities"
 
 ## PARAMETERS
 
@@ -284,8 +265,6 @@ INPUTOBJECT \<IDevicesCloudPrintIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaPrintShare](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintShare?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintshare](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintshare)
-
 

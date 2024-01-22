@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityalert
 schema: 2.0.0
-ms.prod: security
 ---
 
 # Update-MgSecurityAlert
@@ -11,9 +10,6 @@ ms.prod: security
 ## SYNOPSIS
 Update an editable alert property within any integrated solution to keep alert status and assignments in sync across solutions.
 This method updates any solution that has a record of the referenced alert ID.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityAlert?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -79,18 +75,16 @@ Update-MgSecurityAlert -InputObject <ISecurityIdentity> -BodyParameter <IMicroso
 Update an editable alert property within any integrated solution to keep alert status and assignments in sync across solutions.
 This method updates any solution that has a record of the referenced alert ID.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/alert-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Request without Prefer header
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Security
+```
 
 $params = @{
 	assignedTo = "String"
-	closedDateTime = [System.DateTime]::Parse("String (timestamp)")
+	closedDateTime = \[System.DateTime\]::Parse("String (timestamp)")
 	comments = @(
 		"String"
 	)
@@ -106,19 +100,15 @@ $params = @{
 }
 
 Update-MgSecurityAlert -AlertId $alertId -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the Update-MgSecurityAlert Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Request with Prefer header
-
-```powershell
 Import-Module Microsoft.Graph.Security
+```
 
 $params = @{
 	assignedTo = "String"
-	closedDateTime = [System.DateTime]::Parse("String (timestamp)")
+	closedDateTime = \[System.DateTime\]::Parse("String (timestamp)")
 	comments = @(
 		"String"
 	)
@@ -134,11 +124,6 @@ $params = @{
 }
 
 Update-MgSecurityAlert -AlertId $alertId -BodyParameter $params
-```
-This example shows how to use the Update-MgSecurityAlert Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -1334,8 +1319,6 @@ VULNERABILITYSTATES \<IMicrosoftGraphVulnerabilityState\[\]\>: Threat intelligen
   \[WasRunning \<Boolean?\>\]: Indicates whether the detected vulnerability (file) was running at the time of detection or was the file detected at rest on the disk.
 
 ## RELATED LINKS
-[Update-MgBetaSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityAlert?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityalert](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityalert)
-
 

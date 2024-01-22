@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventsession
@@ -8,10 +8,7 @@ schema: 2.0.0
 # Get-MgBetaVirtualEventSession
 
 ## SYNOPSIS
-Sessions of the virtual event.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgVirtualEventSession](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventSession?view=graph-powershell-1.0)
+Sessions for the virtual event.
 
 ## SYNTAX
 
@@ -35,7 +32,19 @@ Get-MgBetaVirtualEventSession -InputObject <IBookingsIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-Sessions of the virtual event.
+Sessions for the virtual event.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -274,9 +283,6 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Get-MgVirtualEventSession](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventSession?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventsession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventsession)
-
-
 

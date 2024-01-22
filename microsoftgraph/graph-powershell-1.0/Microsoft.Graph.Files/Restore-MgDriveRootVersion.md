@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mgdriverootversion
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Restore-MgDriveRootVersion
@@ -11,9 +10,6 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Restore a previous version of a DriveItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the file.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Restore-MgBetaDriveRootVersion](/powershell/module/Microsoft.Graph.Beta.Files/Restore-MgBetaDriveRootVersion?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -32,8 +28,21 @@ Restore-MgDriveRootVersion -InputObject <IFilesIdentity> [-PassThru] [-WhatIf] [
 Restore a previous version of a DriveItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the file.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitemversion-restore-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -171,9 +180,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Restore-MgBetaDriveRootVersion](/powershell/module/Microsoft.Graph.Beta.Files/Restore-MgBetaDriveRootVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mgdriverootversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mgdriverootversion)
-
-
 

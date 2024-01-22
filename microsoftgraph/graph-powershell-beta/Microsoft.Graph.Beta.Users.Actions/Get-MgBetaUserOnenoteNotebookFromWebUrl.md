@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauseronenotenotebookfromweburl
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # Get-MgBetaUserOnenoteNotebookFromWebUrl
@@ -11,9 +10,6 @@ ms.prod: onenote
 ## SYNOPSIS
 Retrieve the properties and relationships of a notebook object by using its URL path.
 The location can be user notebooks on Microsoft 365, group notebooks, or SharePoint site-hosted team notebooks on Microsoft 365.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserOnenoteNotebookFromWebUrl](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserOnenoteNotebookFromWebUrl?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,12 +43,10 @@ Get-MgBetaUserOnenoteNotebookFromWebUrl -InputObject <IUsersActionsIdentity>
 Retrieve the properties and relationships of a notebook object by using its URL path.
 The location can be user notebooks on Microsoft 365, group notebooks, or SharePoint site-hosted team notebooks on Microsoft 365.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/notebook-getnotebookfromweburl-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaUserOnenoteNotebookFromWebUrl Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
 	WebUrl = "webUrl value"
@@ -60,8 +54,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOnenoteNotebookFromWebUrl -UserId $userId -BodyParameter $params
 ```
-This example shows how to use the Get-MgBetaUserOnenoteNotebookFromWebUrl Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -236,8 +228,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserOnenoteNotebookFromWebUrl](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserOnenoteNotebookFromWebUrl?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauseronenotenotebookfromweburl](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauseronenotenotebookfromweburl)
-
 
