@@ -12,6 +12,9 @@ ms.prod: groups
 Create a new conversation by including a thread and a post.
 Use reply thread or reply post to further post to that conversation.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupConversation](/powershell/module/Microsoft.Graph.Groups/New-MgGroupConversation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -589,6 +592,7 @@ Returned by default.
 Returned by default.
 
 ## RELATED LINKS
+[New-MgGroupConversation](/powershell/module/Microsoft.Graph.Groups/New-MgGroupConversation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupconversation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupconversation)
 

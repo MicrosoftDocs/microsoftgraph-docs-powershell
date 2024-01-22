@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove a user or group from the accepted-senders list of the specified group.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupAcceptedSenderByRef](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupAcceptedSenderByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -230,6 +233,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
+[Remove-MgGroupAcceptedSenderByRef](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupAcceptedSenderByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupacceptedsenderbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupacceptedsenderbyref)
 

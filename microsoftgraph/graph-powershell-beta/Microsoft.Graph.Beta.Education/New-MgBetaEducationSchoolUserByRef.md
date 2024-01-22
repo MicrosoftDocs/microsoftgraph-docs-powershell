@@ -11,6 +11,9 @@ ms.prod: education
 ## SYNOPSIS
 Add a user to a school.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgEducationSchoolUserByRef](/powershell/module/Microsoft.Graph.Education/New-MgEducationSchoolUserByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -223,6 +226,7 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
+[New-MgEducationSchoolUserByRef](/powershell/module/Microsoft.Graph.Education/New-MgEducationSchoolUserByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationschooluserbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationschooluserbyref)
 

@@ -11,6 +11,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Follow a user's site or multiple sites.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaGroupSite](/powershell/module/Microsoft.Graph.Beta.Groups/Add-MgBetaGroupSite?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AddExpanded (Default)
@@ -9380,6 +9383,7 @@ This relationship can only be used to load a specific term set.
   \[TermStores \<IMicrosoftGraphTermStore\[\]\>\]: The collection of termStores under this site.
 
 ## RELATED LINKS
+[Add-MgBetaGroupSite](/powershell/module/Microsoft.Graph.Beta.Groups/Add-MgBetaGroupSite?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/add-mggroupsite](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/add-mggroupsite)
 

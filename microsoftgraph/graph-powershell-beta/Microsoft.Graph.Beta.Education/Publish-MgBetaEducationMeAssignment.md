@@ -18,6 +18,9 @@ The state of the assignment goes back to draft if there is any backend failure d
 To update the properties of a published assignment, see update an assignment.
 To update the properties of a published assignment, see update an assignment.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Publish-MgEducationMeAssignment](/powershell/module/Microsoft.Graph.Education/Publish-MgEducationMeAssignment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Publish (Default)
@@ -154,6 +157,7 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Publish-MgEducationMeAssignment](/powershell/module/Microsoft.Graph.Education/Publish-MgEducationMeAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/publish-mgbetaeducationmeassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/publish-mgbetaeducationmeassignment)
 

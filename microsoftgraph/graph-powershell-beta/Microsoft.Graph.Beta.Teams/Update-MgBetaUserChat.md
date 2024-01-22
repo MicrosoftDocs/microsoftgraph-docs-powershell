@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property chats in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserChat](/powershell/module/Microsoft.Graph.Teams/Update-MgUserChat?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -1307,6 +1310,7 @@ VIEWPOINT \<IMicrosoftGraphChatViewpoint\>: chatViewpoint
   \[LastMessageReadDateTime \<DateTime?\>\]: Represents the dateTime up until which the current user has read chatMessages in a specific chat.
 
 ## RELATED LINKS
+[Update-MgUserChat](/powershell/module/Microsoft.Graph.Teams/Update-MgUserChat?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetauserchat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetauserchat)
 

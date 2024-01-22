@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupOwnerAsServicePrincipal](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupOwnerAsServicePrincipal?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -324,6 +327,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgGroupOwnerAsServicePrincipal](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupOwnerAsServicePrincipal?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupownerasserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupownerasserviceprincipal)
 

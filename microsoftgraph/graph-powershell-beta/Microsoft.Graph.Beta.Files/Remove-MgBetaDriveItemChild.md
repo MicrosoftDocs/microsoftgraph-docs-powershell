@@ -11,6 +11,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Remove an item from a \[bundle\]\[\].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDriveItemChild](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveItemChild?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -209,6 +212,7 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgDriveItemChild](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveItemChild?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriveitemchild](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriveitemchild)
 

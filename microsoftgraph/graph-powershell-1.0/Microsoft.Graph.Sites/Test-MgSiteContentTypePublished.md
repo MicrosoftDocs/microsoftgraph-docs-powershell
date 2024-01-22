@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function isPublished
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Test-MgBetaSiteContentTypePublished](/powershell/module/Microsoft.Graph.Beta.Sites/Test-MgBetaSiteContentTypePublished?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Is (Default)
@@ -137,6 +140,7 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Test-MgBetaSiteContentTypePublished](/powershell/module/Microsoft.Graph.Beta.Sites/Test-MgBetaSiteContentTypePublished?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/test-mgsitecontenttypepublished](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/test-mgsitecontenttypepublished)
 

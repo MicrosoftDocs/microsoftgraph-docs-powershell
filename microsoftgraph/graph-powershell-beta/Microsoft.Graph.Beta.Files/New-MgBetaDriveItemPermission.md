@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to permissions for drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDriveItemPermission](/powershell/module/Microsoft.Graph.Files/New-MgDriveItemPermission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -644,6 +647,7 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
   \[WebUrl \<String\>\]: A URL that opens the item in the browser on the OneDrive website.
 
 ## RELATED LINKS
+[New-MgDriveItemPermission](/powershell/module/Microsoft.Graph.Files/New-MgDriveItemPermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriveitempermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriveitempermission)
 

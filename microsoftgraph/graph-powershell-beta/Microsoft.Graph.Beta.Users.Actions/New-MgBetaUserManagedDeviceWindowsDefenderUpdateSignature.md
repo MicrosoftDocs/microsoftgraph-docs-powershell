@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action windowsDefenderUpdateSignatures
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserManagedDeviceWindowsDefenderUpdateSignature](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserManagedDeviceWindowsDefenderUpdateSignature?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Update (Default)
@@ -195,6 +198,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[New-MgUserManagedDeviceWindowsDefenderUpdateSignature](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserManagedDeviceWindowsDefenderUpdateSignature?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermanageddevicewindowsdefenderupdatesignature](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermanageddevicewindowsdefenderupdatesignature)
 

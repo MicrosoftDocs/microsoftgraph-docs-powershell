@@ -11,6 +11,9 @@ ms.prod: intune
 ## SYNOPSIS
 Shut down device
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaDownDeviceManagementManagedDeviceShut](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Invoke-MgBetaDownDeviceManagementManagedDeviceShut?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Down (Default)
@@ -153,6 +156,7 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
   \[WindowsAutopilotDeviceIdentityId \<String\>\]: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
+[Invoke-MgBetaDownDeviceManagementManagedDeviceShut](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Invoke-MgBetaDownDeviceManagementManagedDeviceShut?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgdowndevicemanagementmanageddeviceshut](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgdowndevicemanagementmanageddeviceshut)
 

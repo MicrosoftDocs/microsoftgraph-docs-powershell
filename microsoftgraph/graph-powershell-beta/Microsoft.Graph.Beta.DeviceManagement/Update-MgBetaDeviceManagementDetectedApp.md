@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property detectedApps in deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementDetectedApp](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementDetectedApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -15254,6 +15257,7 @@ Defaults to setting on client device.
 Defaults to setting on client device.
 
 ## RELATED LINKS
+[Update-MgDeviceManagementDetectedApp](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementDetectedApp?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementdetectedapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementdetectedapp)
 

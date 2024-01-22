@@ -12,6 +12,9 @@ ms.prod: sharepoint
 Retrieve the metadata for a driveItem in a drive by file system path or ID.item-id is the ID of a driveItem.
 It may also be the unique ID of a SharePoint list item.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRoot?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -169,6 +172,7 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaGroupDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRoot?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveroot)
 

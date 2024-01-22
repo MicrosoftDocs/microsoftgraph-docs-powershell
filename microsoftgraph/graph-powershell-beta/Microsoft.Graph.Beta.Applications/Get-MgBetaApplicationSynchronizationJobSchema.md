@@ -11,6 +11,9 @@ ms.prod: applications
 ## SYNOPSIS
 Retrieve the schema for a given synchronization job or template.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgApplicationSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationSynchronizationJobSchema?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -170,6 +173,7 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgApplicationSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationSynchronizationJobSchema?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationsynchronizationjobschema](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationsynchronizationjobschema)
 

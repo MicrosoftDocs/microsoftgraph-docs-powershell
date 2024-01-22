@@ -11,6 +11,9 @@ ms.prod: service-communications
 ## SYNOPSIS
 Change the status of a list of serviceUpdateMessages to favorite for the signed in user.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgFavoriteServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgFavoriteServiceAnnouncementMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### FavoriteExpanded (Default)
@@ -147,6 +150,7 @@ BODY \<IPaths1Hqlbr0AdminServiceannouncementMessagesMicrosoftGraphFavoritePostRe
   \[MessageIds \<String\[\]\>\]:
 
 ## RELATED LINKS
+[Invoke-MgFavoriteServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgFavoriteServiceAnnouncementMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetafavoriteserviceannouncementmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetafavoriteserviceannouncementmessage)
 

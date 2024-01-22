@@ -11,6 +11,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Create a new permission object on a site.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSitePermission](/powershell/module/Microsoft.Graph.Sites/New-MgSitePermission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -666,6 +669,7 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
   \[WebUrl \<String\>\]: A URL that opens the item in the browser on the OneDrive website.
 
 ## RELATED LINKS
+[New-MgSitePermission](/powershell/module/Microsoft.Graph.Sites/New-MgSitePermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitepermission)
 

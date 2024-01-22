@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property listItem in drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDriveRootListItem](/powershell/module/Microsoft.Graph.Files/Update-MgDriveRootListItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -45123,6 +45126,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[Update-MgDriveRootListItem](/powershell/module/Microsoft.Graph.Files/Update-MgDriveRootListItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriverootlistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriverootlistitem)
 

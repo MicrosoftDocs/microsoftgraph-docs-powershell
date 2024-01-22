@@ -11,6 +11,9 @@ ms.prod: outlook
 ## SYNOPSIS
 Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/New-MgBetaUserContact?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -1013,6 +1016,7 @@ Read-only.
   \[Value \<String\>\]: A property value.
 
 ## RELATED LINKS
+[New-MgBetaUserContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/New-MgBetaUserContact?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/new-mgusercontact](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/new-mgusercontact)
 

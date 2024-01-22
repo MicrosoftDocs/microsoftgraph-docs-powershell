@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update entity in contacts
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgContact](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgContact?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -741,6 +744,7 @@ Read-only.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
+[Update-MgContact](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgContact?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetacontact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetacontact)
 

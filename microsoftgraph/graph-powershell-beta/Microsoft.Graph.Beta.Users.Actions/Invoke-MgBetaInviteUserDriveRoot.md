@@ -11,6 +11,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Sends a sharing invitation for a DriveItem.A sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgInviteUserDriveRoot](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgInviteUserDriveRoot?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### InviteExpanded (Default)
@@ -376,6 +379,7 @@ security groups).
   \[ObjectId \<String\>\]: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
+[Invoke-MgInviteUserDriveRoot](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgInviteUserDriveRoot?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetainviteuserdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetainviteuserdriveroot)
 

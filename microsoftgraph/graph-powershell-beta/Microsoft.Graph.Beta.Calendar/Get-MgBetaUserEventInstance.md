@@ -14,6 +14,9 @@ Navigation property.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserEventInstance](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserEventInstance?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -298,6 +301,7 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[WorkspaceId \<String\>\]: The unique identifier of workspace
 
 ## RELATED LINKS
+[Get-MgUserEventInstance](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserEventInstance?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventinstance)
 

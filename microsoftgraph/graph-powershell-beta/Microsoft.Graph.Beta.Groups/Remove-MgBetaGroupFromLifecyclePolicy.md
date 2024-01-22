@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action removeGroup
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupFromLifecyclePolicy](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupFromLifecyclePolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### RemoveExpanded (Default)
@@ -235,6 +238,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
+[Remove-MgGroupFromLifecyclePolicy](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupFromLifecyclePolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupfromlifecyclepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupfromlifecyclepolicy)
 

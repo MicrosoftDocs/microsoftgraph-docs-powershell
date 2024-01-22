@@ -12,6 +12,9 @@ Directory objects that the user created.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserCreatedObject](/powershell/module/Microsoft.Graph.Users/Get-MgUserCreatedObject?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -290,6 +293,7 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserCreatedObject](/powershell/module/Microsoft.Graph.Users/Get-MgUserCreatedObject?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausercreatedobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausercreatedobject)
 

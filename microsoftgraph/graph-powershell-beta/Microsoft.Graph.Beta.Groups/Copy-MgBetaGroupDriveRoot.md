@@ -11,6 +11,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Asynchronously creates a copy of an \[driveItem\]\[item-resource\] (including any children), under a new parent item or with a new name.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Copy-MgGroupDriveRoot](/powershell/module/Microsoft.Graph.Groups/Copy-MgGroupDriveRoot?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CopyExpanded (Default)
@@ -323,6 +326,7 @@ It is an opaque string that consists of three identifiers of the site.
 For OneDrive, this property is not populated.
 
 ## RELATED LINKS
+[Copy-MgGroupDriveRoot](/powershell/module/Microsoft.Graph.Groups/Copy-MgGroupDriveRoot?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/copy-mgbetagroupdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/copy-mgbetagroupdriveroot)
 
