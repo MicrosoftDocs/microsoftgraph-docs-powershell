@@ -30,18 +30,6 @@ Remove-MgBetaVirtualEventWebinar -InputObject <IBookingsIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete navigation property webinars for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -177,5 +165,6 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 [Remove-MgVirtualEventWebinar](/powershell/module/Microsoft.Graph.Bookings/Remove-MgVirtualEventWebinar?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetavirtualeventwebinar](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetavirtualeventwebinar)
+
 
 

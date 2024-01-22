@@ -49,22 +49,6 @@ New-MgBetaUserOnenoteSectionPage -InputObject <INotesIdentity> -BodyParameter <I
 ## DESCRIPTION
 Create new navigation property to pages for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -763,5 +747,6 @@ Read-only.
 [New-MgUserOnenoteSectionPage](/powershell/module/Microsoft.Graph.Notes/New-MgUserOnenoteSectionPage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetauseronenotesectionpage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetauseronenotesectionpage)
+
 
 

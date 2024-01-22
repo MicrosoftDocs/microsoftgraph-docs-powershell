@@ -40,18 +40,6 @@ New-MgSecuritySubjectRightsRequest -BodyParameter <IMicrosoftGraphSubjectRightsR
 ## DESCRIPTION
 Create new navigation property to subjectRightsRequests for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -19085,5 +19073,6 @@ This URL should be treated as an opaque blob, and not parsed.
 [New-MgBetaSecuritySubjectRightsRequest](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecuritySubjectRightsRequest?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritysubjectrightsrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritysubjectrightsrequest)
+
 
 

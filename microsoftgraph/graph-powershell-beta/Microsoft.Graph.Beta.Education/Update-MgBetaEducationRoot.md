@@ -32,22 +32,6 @@ Update-MgBetaEducationRoot -BodyParameter <IMicrosoftGraphEducationRoot> [-WhatI
 ## DESCRIPTION
 Update education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -38865,5 +38849,6 @@ Supports /$filter.
 [Update-MgEducationRoot](/powershell/module/Microsoft.Graph.Education/Update-MgEducationRoot?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationroot)
+
 
 

@@ -42,22 +42,6 @@ Revoke-MgBetaGroupSitePermissionGrant -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Revoke access to a \[listItem\]\[\] or \[driveItem\]\[\] granted via a sharing link by removing the specified \[recipient\]\[\] from the link.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -279,5 +263,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/revoke-mgbetagroupsitepermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/revoke-mgbetagroupsitepermissiongrant)
+
 
 

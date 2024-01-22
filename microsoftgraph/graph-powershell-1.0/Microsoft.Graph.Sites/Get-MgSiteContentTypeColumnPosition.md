@@ -37,18 +37,6 @@ Get-MgSiteContentTypeColumnPosition -InputObject <ISitesIdentity> [-ExpandProper
 ## DESCRIPTION
 Column order information in a content type.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -322,5 +310,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgBetaSiteContentTypeColumnPosition](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteContentTypeColumnPosition?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitecontenttypecolumnposition](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitecontenttypecolumnposition)
+
 
 

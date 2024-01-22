@@ -48,18 +48,6 @@ Update-MgBetaVirtualEvent -InputObject <IBookingsIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Update the navigation property events in solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -848,5 +836,6 @@ See below for possible values.
 [Update-MgVirtualEvent](/powershell/module/Microsoft.Graph.Bookings/Update-MgVirtualEvent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualevent)
+
 
 

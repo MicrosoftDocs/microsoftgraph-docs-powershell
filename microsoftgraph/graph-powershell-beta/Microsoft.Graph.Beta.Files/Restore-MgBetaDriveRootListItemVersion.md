@@ -30,22 +30,6 @@ Restore-MgBetaDriveRootListItemVersion -InputObject <IFilesIdentity> [-PassThru]
 ## DESCRIPTION
 Invoke action restoreVersion
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -185,5 +169,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Restore-MgDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Files/Restore-MgDriveRootListItemVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetadriverootlistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetadriverootlistitemversion)
+
 
 

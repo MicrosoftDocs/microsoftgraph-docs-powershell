@@ -30,18 +30,6 @@ Remove-MgGroupCalendarEvent -InputObject <ICalendarIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property events for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EventId
@@ -183,5 +171,6 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
 [Remove-MgBetaGroupCalendarEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaGroupCalendarEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mggroupcalendarevent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mggroupcalendarevent)
+
 
 

@@ -37,22 +37,6 @@ Get-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary
 ## DESCRIPTION
 Summary of the updates by category.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -411,5 +395,6 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmacossoftwareupdateaccountsummarycategorysummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmacossoftwareupdateaccountsummarycategorysummary)
+
 
 

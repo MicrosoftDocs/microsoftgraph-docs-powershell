@@ -30,18 +30,6 @@ Get-MgUserCreatedObjectCountAsServicePrincipal -InputObject <IUsersIdentity> [-F
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -139,5 +127,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Get-MgBetaUserCreatedObjectCountAsServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserCreatedObjectCountAsServicePrincipal?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusercreatedobjectcountasserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusercreatedobjectcountasserviceprincipal)
+
 
 

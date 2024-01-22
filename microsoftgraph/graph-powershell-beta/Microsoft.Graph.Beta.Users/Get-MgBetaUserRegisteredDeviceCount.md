@@ -30,18 +30,6 @@ Get-MgBetaUserRegisteredDeviceCount -InputObject <IUsersIdentity> [-Filter <Stri
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ConsistencyLevel
@@ -164,5 +152,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Get-MgUserRegisteredDeviceCount](/powershell/module/Microsoft.Graph.Users/Get-MgUserRegisteredDeviceCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserregistereddevicecount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserregistereddevicecount)
+
 
 

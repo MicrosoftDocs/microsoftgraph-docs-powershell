@@ -67,22 +67,6 @@ Update a \[site\]\[\], a \[list\]\[\], or a \[content type\]\[contentType\] \[co
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/columndefinition-update-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1238,5 +1222,6 @@ For examples, see Examples of common formulas in lists.
 [Update-MgBetaDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListContentTypeColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdrivelistcontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdrivelistcontenttypecolumn)
+
 
 

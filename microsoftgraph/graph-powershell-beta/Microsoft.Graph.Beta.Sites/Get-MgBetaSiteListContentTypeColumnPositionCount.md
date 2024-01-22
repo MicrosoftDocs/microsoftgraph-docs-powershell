@@ -30,18 +30,6 @@ Get-MgBetaSiteListContentTypeColumnPositionCount -InputObject <ISitesIdentity> [
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -207,5 +195,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgSiteListContentTypeColumnPositionCount](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListContentTypeColumnPositionCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistcontenttypecolumnpositioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistcontenttypecolumnpositioncount)
+
 
 

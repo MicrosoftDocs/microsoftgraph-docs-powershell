@@ -44,22 +44,6 @@ Test-MgBetaGroupDriveRootPermission -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Invoke action validatePermission
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -287,5 +271,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Test-MgGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Groups/Test-MgGroupDriveRootPermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupdriverootpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupdriverootpermission)
+
 
 

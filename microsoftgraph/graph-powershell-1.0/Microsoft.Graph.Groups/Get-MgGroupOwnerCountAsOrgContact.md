@@ -30,18 +30,6 @@ Get-MgGroupOwnerCountAsOrgContact -InputObject <IGroupsIdentity> [-Filter <Strin
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ConsistencyLevel
@@ -177,5 +165,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Get-MgBetaGroupOwnerCountAsOrgContact](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupOwnerCountAsOrgContact?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupownercountasorgcontact](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupownercountasorgcontact)
+
 
 

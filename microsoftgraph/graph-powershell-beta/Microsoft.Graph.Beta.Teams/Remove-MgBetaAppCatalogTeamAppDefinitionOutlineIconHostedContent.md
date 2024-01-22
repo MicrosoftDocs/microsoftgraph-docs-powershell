@@ -27,22 +27,6 @@ Remove-MgBetaAppCatalogTeamAppDefinitionOutlineIconHostedContent -InputObject <I
 ## DESCRIPTION
 Delete navigation property hostedContent for appCatalogs
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -211,5 +195,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetaappcatalogteamappdefinitionoutlineiconhostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetaappcatalogteamappdefinitionoutlineiconhostedcontent)
+
 
 

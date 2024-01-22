@@ -45,22 +45,6 @@ New-MgGroupDriveItemUploadSession -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Invoke action createUploadSession
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -293,5 +277,6 @@ Read-write.
 [New-MgBetaGroupDriveItemUploadSession](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupDriveItemUploadSession?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupdriveitemuploadsession](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupdriveitemuploadsession)
+
 
 

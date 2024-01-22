@@ -46,22 +46,6 @@ Update-MgBetaServicePrincipalAppRoleAssignment -InputObject <IApplicationsIdenti
 ## DESCRIPTION
 Update the navigation property appRoleAssignments in servicePrincipals
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -386,5 +370,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Update-MgServicePrincipalAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipalAppRoleAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalapproleassignment)
+
 
 

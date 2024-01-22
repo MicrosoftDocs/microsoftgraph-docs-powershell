@@ -48,18 +48,6 @@ New-MgGroupSiteListItemLink -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Invoke action createLink
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -399,5 +387,6 @@ security groups).
 [New-MgBetaGroupSiteListItemLink](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupSiteListItemLink?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupsitelistitemlink](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupsitelistitemlink)
+
 
 

@@ -30,18 +30,6 @@ Get-MgUserTeamworkInstalledAppTeamAppDefinition -InputObject <ITeamsIdentity> [-
 ## DESCRIPTION
 The details of this version of the app.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -173,5 +161,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Get-MgBetaUserTeamworkInstalledAppTeamAppDefinition](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserTeamworkInstalledAppTeamAppDefinition?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserteamworkinstalledappteamappdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserteamworkinstalledappteamappdefinition)
+
 
 

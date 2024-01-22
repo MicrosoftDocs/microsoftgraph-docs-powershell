@@ -30,18 +30,6 @@ Get-MgShareListColumnCount -InputObject <IFilesIdentity> [-Filter <String>] [-Se
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -150,5 +138,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgBetaShareListColumnCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListColumnCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistcolumncount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistcolumncount)
+
 
 

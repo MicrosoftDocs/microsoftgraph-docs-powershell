@@ -49,18 +49,6 @@ Get-MgBetaSecurityAttackSimulationPayload -InputObject <ISecurityIdentity> [-Exp
 ## DESCRIPTION
 Represents an attack simulation training campaign payload in a tenant.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -359,5 +347,6 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 [Get-MgSecurityAttackSimulationPayload](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationPayload?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationpayload](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationpayload)
+
 
 

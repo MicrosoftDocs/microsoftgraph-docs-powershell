@@ -30,22 +30,6 @@ Publish-MgBetaGroupDriveListContentType -InputObject <IGroupsIdentity> [-PassThr
 ## DESCRIPTION
 Publishes a \[contentType\]\[\] present in a content type hub site.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -221,5 +205,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Publish-MgGroupDriveListContentType](/powershell/module/Microsoft.Graph.Groups/Publish-MgGroupDriveListContentType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/publish-mgbetagroupdrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/publish-mgbetagroupdrivelistcontenttype)
+
 
 

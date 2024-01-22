@@ -46,22 +46,6 @@ New-MgBetaSiteTermStoreSetTermRelation -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create new navigation property to relations for sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -547,5 +531,6 @@ Read-only.
 [New-MgSiteTermStoreSetTermRelation](/powershell/module/Microsoft.Graph.Sites/New-MgSiteTermStoreSetTermRelation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitetermstoresettermrelation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitetermstoresettermrelation)
+
 
 

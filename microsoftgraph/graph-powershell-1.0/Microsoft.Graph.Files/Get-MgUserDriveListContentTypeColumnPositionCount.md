@@ -30,18 +30,6 @@ Get-MgUserDriveListContentTypeColumnPositionCount -InputObject <IFilesIdentity> 
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -180,5 +168,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgBetaUserDriveListContentTypeColumnPositionCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveListContentTypeColumnPositionCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivelistcontenttypecolumnpositioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivelistcontenttypecolumnpositioncount)
+
 
 

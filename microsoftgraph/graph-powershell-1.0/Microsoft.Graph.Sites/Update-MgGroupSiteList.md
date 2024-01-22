@@ -58,22 +58,6 @@ Update-MgGroupSiteList -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Update the navigation property lists in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -24044,5 +24028,6 @@ See the possible resource path values for each supported resource.
 [Update-MgBetaGroupSiteList](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteList?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitelist](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitelist)
+
 
 

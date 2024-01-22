@@ -29,18 +29,6 @@ Get-MgBetaTeamIncomingChannelCount -InputObject <ITeamsIdentity> [-Filter <Strin
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -164,5 +152,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Get-MgTeamIncomingChannelCount](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamIncomingChannelCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamincomingchannelcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamincomingchannelcount)
+
 
 

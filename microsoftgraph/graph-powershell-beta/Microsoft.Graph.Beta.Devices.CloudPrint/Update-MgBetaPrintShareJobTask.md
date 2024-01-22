@@ -46,18 +46,6 @@ Update-MgBetaPrintShareJobTask -InputObject <IDevicesCloudPrintIdentity>
 ## DESCRIPTION
 Update the navigation property tasks in print
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -398,5 +386,6 @@ Read-only.
 [Update-MgPrintShareJobTask](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintShareJobTask?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintsharejobtask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintsharejobtask)
+
 
 

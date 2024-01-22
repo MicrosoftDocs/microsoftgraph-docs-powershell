@@ -30,18 +30,6 @@ Remove-MgBetaUserOnlineMeetingRecording -InputObject <ICloudCommunicationsIdenti
 ## DESCRIPTION
 Delete navigation property recordings for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CallRecordingId
@@ -205,5 +193,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
 [Remove-MgUserOnlineMeetingRecording](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgUserOnlineMeetingRecording?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetauseronlinemeetingrecording](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetauseronlinemeetingrecording)
+
 
 

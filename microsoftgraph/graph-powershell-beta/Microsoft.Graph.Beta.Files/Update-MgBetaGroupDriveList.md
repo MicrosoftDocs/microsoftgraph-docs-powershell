@@ -60,22 +60,6 @@ Update-MgBetaGroupDriveList -InputObject <IFilesIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Update the navigation property list in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Activities
@@ -45598,5 +45582,6 @@ See the possible resource path values for each supported resource.
 [Update-MgGroupDriveList](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveList?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdrivelist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdrivelist)
+
 
 

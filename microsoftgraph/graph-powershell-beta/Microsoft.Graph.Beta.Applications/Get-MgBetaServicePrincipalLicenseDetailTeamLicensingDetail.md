@@ -26,18 +26,6 @@ Get-MgBetaServicePrincipalLicenseDetailTeamLicensingDetail -InputObject <IApplic
 ## DESCRIPTION
 Invoke function getTeamsLicensingDetails
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -122,5 +110,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipallicensedetailteamlicensingdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipallicensedetailteamlicensingdetail)
+
 
 

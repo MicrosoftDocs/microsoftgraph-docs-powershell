@@ -30,22 +30,6 @@ Restore-MgGroupDriveListItemDocumentSetVersion -InputObject <IGroupsIdentity> [-
 ## DESCRIPTION
 Restore a document set version.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DocumentSetVersionId
@@ -226,5 +210,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Restore-MgBetaGroupDriveListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Groups/Restore-MgBetaGroupDriveListItemDocumentSetVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/restore-mggroupdrivelistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/restore-mggroupdrivelistitemdocumentsetversion)
+
 
 

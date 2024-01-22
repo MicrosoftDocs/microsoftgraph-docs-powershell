@@ -30,22 +30,6 @@ Remove-MgPrintService -InputObject <IDevicesCloudPrintIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Delete navigation property services for print
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -174,5 +158,6 @@ INPUTOBJECT \<IDevicesCloudPrintIdentity\>: Identity Parameter
 [Remove-MgBetaPrintService](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintService?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintservice](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintservice)
+
 
 

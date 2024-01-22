@@ -58,22 +58,6 @@ Update-MgSiteList -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphL
 ## DESCRIPTION
 Update the navigation property lists in sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -24029,5 +24013,6 @@ See the possible resource path values for each supported resource.
 [Update-MgBetaSiteList](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteList?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitelist](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitelist)
+
 
 

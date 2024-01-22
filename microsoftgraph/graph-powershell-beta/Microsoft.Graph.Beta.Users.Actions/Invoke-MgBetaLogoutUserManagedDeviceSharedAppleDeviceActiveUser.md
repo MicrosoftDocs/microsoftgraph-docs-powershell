@@ -30,22 +30,6 @@ Invoke-MgBetaLogoutUserManagedDeviceSharedAppleDeviceActiveUser -InputObject <IU
 ## DESCRIPTION
 Logout shared Apple device active user
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -201,5 +185,6 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 [Invoke-MgLogoutUserManagedDeviceSharedAppleDeviceActiveUser](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgLogoutUserManagedDeviceSharedAppleDeviceActiveUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetalogoutusermanageddevicesharedappledeviceactiveuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetalogoutusermanageddevicesharedappledeviceactiveuser)
+
 
 

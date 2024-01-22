@@ -48,18 +48,6 @@ New-MgDriveItemListItemLink -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Invoke action createLink
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -358,5 +346,6 @@ security groups).
 [New-MgBetaDriveItemListItemLink](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItemListItemLink?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriveitemlistitemlink](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriveitemlistitemlink)
+
 
 

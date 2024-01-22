@@ -22,18 +22,6 @@ Remove-MgTeamworkTeamAppSetting [-IfMatch <String>] [-PassThru] [-WhatIf] [-Conf
 ## DESCRIPTION
 Delete navigation property teamsAppSettings for teamwork
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -111,5 +99,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Remove-MgBetaTeamworkTeamAppSetting](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamworkTeamAppSetting?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamworkteamappsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamworkteamappsetting)
+
 
 

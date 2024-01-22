@@ -30,22 +30,6 @@ Remove-MgBetaGroupAcceptedSenderByRef -InputObject <IGroupsIdentity> [-Id <Strin
 ## DESCRIPTION
 Remove a user or group from the accepted-senders list of the specified group.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DirectoryObjectId
@@ -236,5 +220,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Remove-MgGroupAcceptedSenderByRef](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupAcceptedSenderByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupacceptedsenderbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupacceptedsenderbyref)
+
 
 

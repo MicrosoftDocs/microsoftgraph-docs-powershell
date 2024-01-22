@@ -27,22 +27,6 @@ Get-MgBetaComplianceEdiscoveryCaseLegalHoldUnifiedGroupSourceGroup -InputObject 
 ## DESCRIPTION
 The group associated with the unifiedGroupSource.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -CaseId
@@ -173,5 +157,6 @@ INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycaselegalholdunifiedgroupsourcegroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycaselegalholdunifiedgroupsourcegroup)
+
 
 

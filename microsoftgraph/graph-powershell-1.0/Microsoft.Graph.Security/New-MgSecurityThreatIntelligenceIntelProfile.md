@@ -34,18 +34,6 @@ New-MgSecurityThreatIntelligenceIntelProfile -BodyParameter <IMicrosoftGraphSecu
 ## DESCRIPTION
 Create new navigation property to intelProfiles for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -363,5 +351,6 @@ TRADECRAFT \<IMicrosoftGraphSecurityFormattedContent\>: formattedContent
 [New-MgBetaSecurityThreatIntelligenceIntelProfile](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceIntelProfile?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligenceintelprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligenceintelprofile)
+
 
 

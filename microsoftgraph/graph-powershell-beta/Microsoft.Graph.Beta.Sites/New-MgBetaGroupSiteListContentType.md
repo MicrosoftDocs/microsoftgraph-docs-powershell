@@ -56,22 +56,6 @@ New-MgBetaGroupSiteListContentType -InputObject <ISitesIdentity> -BodyParameter 
 ## DESCRIPTION
 Create new navigation property to contentTypes for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1823,5 +1807,6 @@ ORDER \<IMicrosoftGraphContentTypeOrder\>: contentTypeOrder
 [New-MgGroupSiteListContentType](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteListContentType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitelistcontenttype)
+
 
 

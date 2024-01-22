@@ -37,22 +37,6 @@ Get-MgGroupSiteExternalColumn -InputObject <ISitesIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 Get externalColumns from groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -326,5 +310,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgBetaGroupSiteExternalColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteExternalColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteexternalcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteexternalcolumn)
+
 
 

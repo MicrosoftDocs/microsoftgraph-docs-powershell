@@ -52,18 +52,6 @@ Update-MgBetaRoleManagementDirectoryRoleEligibilitySchedule -InputObject <IIdent
 ## DESCRIPTION
 Update the navigation property roleEligibilitySchedules in roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -761,5 +749,6 @@ In PIM, when the  eligible or active assignment becomes active.
 [Update-MgRoleManagementDirectoryRoleEligibilitySchedule](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementDirectoryRoleEligibilitySchedule?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagementdirectoryroleeligibilityschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagementdirectoryroleeligibilityschedule)
+
 
 

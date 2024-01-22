@@ -33,22 +33,6 @@ Get-MgBetaDeviceManagementReportPolicyNonComplianceSummaryReport -OutFile <Strin
 ## DESCRIPTION
 Invoke action getPolicyNonComplianceSummaryReport
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -309,5 +293,6 @@ BODYPARAMETER \<IPathsJ8K6OfDevicemanagementReportsMicrosoftGraphGetpolicynoncom
 [Get-MgDeviceManagementReportPolicyNonComplianceSummaryReport](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Get-MgDeviceManagementReportPolicyNonComplianceSummaryReport?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportpolicynoncompliancesummaryreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportpolicynoncompliancesummaryreport)
+
 
 

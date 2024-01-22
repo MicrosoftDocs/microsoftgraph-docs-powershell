@@ -31,22 +31,6 @@ Invoke-MgRecentUserDrive -InputObject <IUsersFunctionsIdentity> [-Count] [-Filte
 ## DESCRIPTION
 Invoke function recent
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -247,5 +231,6 @@ INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
 [Invoke-MgBetaRecentUserDrive](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaRecentUserDrive?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgrecentuserdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgrecentuserdrive)
+
 
 

@@ -34,22 +34,6 @@ Get-MgBetaUserChatOperation -InputObject <ITeamsIdentity> [-ExpandProperty <Stri
 ## DESCRIPTION
 Get the specified Teams async operation that ran or is running on a specific resource.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -323,5 +307,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserchatoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserchatoperation)
+
 
 

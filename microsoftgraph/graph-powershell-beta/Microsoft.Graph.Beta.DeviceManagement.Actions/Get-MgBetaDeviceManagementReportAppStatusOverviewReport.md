@@ -30,22 +30,6 @@ Get-MgBetaDeviceManagementReportAppStatusOverviewReport -OutFile <String>
 ## DESCRIPTION
 Invoke action getAppStatusOverviewReport
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -305,5 +289,6 @@ BODYPARAMETER \<IPathsDfju0ZDevicemanagementReportsMicrosoftGraphGetappstatusove
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportappstatusoverviewreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportappstatusoverviewreport)
+
 
 

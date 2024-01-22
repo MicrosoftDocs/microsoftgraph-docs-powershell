@@ -28,22 +28,6 @@ Invoke-MgBetaMessageUserChat -InputObject <IUsersFunctionsIdentity> [-Count] [-F
 ## DESCRIPTION
 Invoke function allMessages
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -239,5 +223,6 @@ INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetamessageuserchat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetamessageuserchat)
+
 
 

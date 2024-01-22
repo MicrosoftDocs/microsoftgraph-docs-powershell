@@ -47,22 +47,6 @@ Update-MgBetaDeviceManagementGroupPolicyCategory -InputObject <IDeviceManagement
 ## DESCRIPTION
 Update the navigation property groupPolicyCategories in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -669,5 +653,6 @@ For example: edge.admx
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementgrouppolicycategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementgrouppolicycategory)
+
 
 

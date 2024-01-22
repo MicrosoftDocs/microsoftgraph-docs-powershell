@@ -37,22 +37,6 @@ Get-MgBetaGroupSiteDrive -InputObject <ISitesIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 The collection of drives (document libraries) under this site.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -339,5 +323,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgGroupSiteDrive](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteDrive?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitedrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitedrive)
+
 
 

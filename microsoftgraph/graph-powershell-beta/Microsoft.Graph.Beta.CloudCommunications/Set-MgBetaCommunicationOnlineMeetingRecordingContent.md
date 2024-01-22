@@ -32,18 +32,6 @@ Set-MgBetaCommunicationOnlineMeetingRecordingContent -InputObject <ICloudCommuni
 The content of the recording.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CallRecordingId
@@ -195,5 +183,6 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
 [Set-MgCommunicationOnlineMeetingRecordingContent](/powershell/module/Microsoft.Graph.CloudCommunications/Set-MgCommunicationOnlineMeetingRecordingContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetacommunicationonlinemeetingrecordingcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetacommunicationonlinemeetingrecordingcontent)
+
 
 
