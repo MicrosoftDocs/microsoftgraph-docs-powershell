@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootuploadsession
@@ -247,4 +247,5 @@ Read-write.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootuploadsession](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootuploadsession)
+
 

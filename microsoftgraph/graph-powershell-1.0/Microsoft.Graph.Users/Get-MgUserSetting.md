@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersetting
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserSetting
 
 ## SYNOPSIS
-Read the user and organization userSettings object.\nTo learn how to update the properties of the userSettings object, see update user settings.
+Read the user and organization userSettings object.To learn how to update the properties of the userSettings object, see update user settings.
 
 ## SYNTAX
 
@@ -24,7 +24,7 @@ Get-MgUserSetting -InputObject <IUsersIdentity> [-ExpandProperty <String[]>] [-P
 ```
 
 ## DESCRIPTION
-Read the user and organization userSettings object.\nTo learn how to update the properties of the userSettings object, see update user settings.
+Read the user and organization userSettings object.To learn how to update the properties of the userSettings object, see update user settings.
 
 ## EXAMPLES
 
@@ -132,4 +132,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersetting)
+
 

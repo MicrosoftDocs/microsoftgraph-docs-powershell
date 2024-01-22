@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/add-mgteammember
@@ -310,4 +310,5 @@ This property is settable only for members of a chat.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/add-mgteammember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/add-mgteammember)
+
 
