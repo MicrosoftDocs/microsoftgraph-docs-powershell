@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinessappointment
 schema: 2.0.0
+ms.prod: bookings
 ---
 
 # New-MgBetaBookingBusinessAppointment
@@ -110,6 +111,9 @@ New-MgBetaBookingBusinessAppointment -InputObject <IBookingsIdentity>
 
 ## DESCRIPTION
 Create a new bookingAppointment for the specified bookingBusiness.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingbusiness-post-appointments-permissions.md)]
 
 ## EXAMPLES
 

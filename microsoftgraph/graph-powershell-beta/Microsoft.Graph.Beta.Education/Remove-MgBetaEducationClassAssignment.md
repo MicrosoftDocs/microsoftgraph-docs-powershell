@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassassignment
 schema: 2.0.0
+ms.prod: education
 ---
 
 # Remove-MgBetaEducationClassAssignment
@@ -28,6 +29,9 @@ Remove-MgBetaEducationClassAssignment -InputObject <IEducationIdentity> [-IfMatc
 ## DESCRIPTION
 Delete an existing assignment.
 Only teachers within a class can delete assignments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-delete-permissions.md)]
 
 ## EXAMPLES
 

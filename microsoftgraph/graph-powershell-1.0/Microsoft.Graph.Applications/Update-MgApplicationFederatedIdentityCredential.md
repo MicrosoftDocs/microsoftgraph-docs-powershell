@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationfederatedidentitycredential
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Update-MgApplicationFederatedIdentityCredential
@@ -40,6 +41,9 @@ Update-MgApplicationFederatedIdentityCredential -InputObject <IApplicationsIdent
 
 ## DESCRIPTION
 Update the properties of a federatedIdentityCredential object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/federatedidentitycredential-update-permissions.md)]
 
 ## EXAMPLES
 

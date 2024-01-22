@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementassignmentpolicy
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Remove-MgEntitlementManagementAssignmentPolicy
@@ -26,6 +27,9 @@ Remove-MgEntitlementManagementAssignmentPolicy -InputObject <IIdentityGovernance
 
 ## DESCRIPTION
 In Microsoft Entra entitlement management, delete an accessPackageAssignmentPolicy.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackageassignmentpolicy-delete-permissions.md)]
 
 ## EXAMPLES
 

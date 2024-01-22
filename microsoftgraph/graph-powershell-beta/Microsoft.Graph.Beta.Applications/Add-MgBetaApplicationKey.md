@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/add-mgbetaapplicationkey
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Add-MgBetaApplicationKey
@@ -50,6 +51,9 @@ This method, along with removeKey, can be used by an application to automate rol
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
 Applications that don't have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won't be able to use this service action.
 You can use the Update application operation to perform an update instead.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-addkey-permissions.md)]
 
 ## EXAMPLES
 

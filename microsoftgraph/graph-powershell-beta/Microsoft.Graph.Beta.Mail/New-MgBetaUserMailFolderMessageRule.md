@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfoldermessagerule
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # New-MgBetaUserMailFolderMessageRule
@@ -45,6 +46,9 @@ New-MgBetaUserMailFolderMessageRule -InputObject <IMailIdentity> -BodyParameter 
 ## DESCRIPTION
 Create a messageRule object by specifying a set of conditions and actions.
 Outlook carries out those actions if an incoming message in the user's Inbox meets the specified conditions.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailfolder-post-messagerules-permissions.md)]
 
 ## EXAMPLES
 

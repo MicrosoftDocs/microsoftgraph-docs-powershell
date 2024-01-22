@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restore-mgbetauserdriveitemversion
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Restore-MgBetaUserDriveItemVersion
@@ -28,6 +29,9 @@ Restore-MgBetaUserDriveItemVersion -InputObject <IUsersActionsIdentity> [-PassTh
 ## DESCRIPTION
 Restore a previous version of a DriveItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the file.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitemversion-restore-permissions.md)]
 
 ## EXAMPLES
 

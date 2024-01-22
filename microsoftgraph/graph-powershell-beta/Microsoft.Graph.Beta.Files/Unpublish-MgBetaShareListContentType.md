@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/unpublish-mgbetasharelistcontenttype
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Unpublish-MgBetaShareListContentType
@@ -26,6 +27,9 @@ Unpublish-MgBetaShareListContentType -InputObject <IFilesIdentity> [-PassThru] [
 
 ## DESCRIPTION
 Unpublish a \[contentType\]\[\] from a content type hub site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-unpublish-permissions.md)]
 
 ## EXAMPLES
 

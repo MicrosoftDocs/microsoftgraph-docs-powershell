@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageassignmentrequest
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Get-MgBetaEntitlementManagementAccessPackageAssignmentRequest
@@ -45,6 +46,9 @@ Get-MgBetaEntitlementManagementAccessPackageAssignmentRequest [-ExpandProperty <
 
 ## DESCRIPTION
 In Microsoft Entra entitlement management, retrieve the properties and relationships of an  accessPackageAssignmentRequest object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackageassignmentrequest-get-permissions.md)]
 
 ## EXAMPLES
 

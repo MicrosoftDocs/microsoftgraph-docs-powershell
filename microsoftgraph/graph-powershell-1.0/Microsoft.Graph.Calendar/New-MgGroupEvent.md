@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mggroupevent
 schema: 2.0.0
+ms.prod: groups
 ---
 
 # New-MgGroupEvent
@@ -70,6 +71,9 @@ New-MgGroupEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGrap
 
 ## DESCRIPTION
 Use this API to create a new event.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-post-events-permissions.md)]
 
 ## EXAMPLES
 

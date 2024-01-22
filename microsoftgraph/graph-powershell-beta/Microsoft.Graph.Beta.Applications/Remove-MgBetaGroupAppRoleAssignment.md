@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetagroupapproleassignment
 schema: 2.0.0
+ms.prod: groups
 ---
 
 # Remove-MgBetaGroupAppRoleAssignment
@@ -26,6 +27,9 @@ Remove-MgBetaGroupAppRoleAssignment -InputObject <IApplicationsIdentity> [-IfMat
 
 ## DESCRIPTION
 Deletes an appRoleAssignment that a group has been granted.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-delete-approleassignments-permissions.md)]
 
 ## EXAMPLES
 

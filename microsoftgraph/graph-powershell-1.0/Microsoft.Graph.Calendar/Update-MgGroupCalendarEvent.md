@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mggroupcalendarevent
 schema: 2.0.0
+ms.prod: groups
 ---
 
 # Update-MgGroupCalendarEvent
@@ -70,6 +71,9 @@ Update-MgGroupCalendarEvent -InputObject <ICalendarIdentity> -BodyParameter <IMi
 
 ## DESCRIPTION
 Update an event object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-update-event-permissions.md)]
 
 ## EXAMPLES
 

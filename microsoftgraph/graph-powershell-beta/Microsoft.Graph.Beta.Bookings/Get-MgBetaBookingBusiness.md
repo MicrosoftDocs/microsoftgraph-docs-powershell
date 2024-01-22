@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusiness
 schema: 2.0.0
+ms.prod: bookings
 ---
 
 # Get-MgBetaBookingBusiness
@@ -52,6 +53,9 @@ Get-MgBetaBookingBusiness [-ExpandProperty <String[]>] [-Property <String[]>] [-
 
 ## DESCRIPTION
 Get the properties and relationships of a bookingBusiness object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingbusiness-get-permissions.md)]
 
 ## EXAMPLES
 

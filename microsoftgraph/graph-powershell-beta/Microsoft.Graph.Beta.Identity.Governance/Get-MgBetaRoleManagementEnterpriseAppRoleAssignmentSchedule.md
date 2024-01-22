@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententerpriseapproleassignmentschedule
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentSchedule
@@ -34,6 +35,9 @@ Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentSchedule -InputObject <IIdent
 
 ## DESCRIPTION
 Retrieve the schedule for an active role assignment operation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleassignmentschedule-get-permissions.md)]
 
 ## EXAMPLES
 

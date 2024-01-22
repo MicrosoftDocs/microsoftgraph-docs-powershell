@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitem
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Update-MgDriveItem
@@ -78,6 +79,9 @@ Update-MgDriveItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraph
 To move a DriveItem to a new parent item, your app requests to update the parentReference of the DriveItem to move.
 This is a special case of the Update method.Your app can combine moving an item to a new container and updating other properties of the item into a single request.
 Items cannot be moved between Drives using this request.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-move-permissions.md)]
 
 ## EXAMPLES
 

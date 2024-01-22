@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetaarchiveserviceannouncementmessage
 schema: 2.0.0
+ms.prod: service-communications
 ---
 
 # Invoke-MgBetaArchiveServiceAnnouncementMessage
@@ -27,6 +28,9 @@ Invoke-MgBetaArchiveServiceAnnouncementMessage
 
 ## DESCRIPTION
 Archive a list of serviceUpdateMessages for the signed in user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceupdatemessage-archive-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadrivebundle
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # New-MgBetaDriveBundle
@@ -76,6 +77,9 @@ New-MgBetaDriveBundle -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGr
 
 ## DESCRIPTION
 Create new navigation property to bundles for drives
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/drive-post-bundles-permissions.md)]
 
 ## EXAMPLES
 

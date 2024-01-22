@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteammember
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # Update-MgTeamMember
@@ -40,6 +41,9 @@ Update-MgTeamMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGrap
 
 ## DESCRIPTION
 Update the role of a conversationMember in a team.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-update-members-permissions.md)]
 
 ## EXAMPLES
 

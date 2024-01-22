@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.CrossDeviceExperiences
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/remove-mguseractivity
 schema: 2.0.0
+ms.prod: project-rome
 ---
 
 # Remove-MgUserActivity
@@ -26,6 +27,9 @@ Remove-MgUserActivity -InputObject <ICrossDeviceExperiencesIdentity> [-IfMatch <
 
 ## DESCRIPTION
 Delete an existing user activity for your app.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/projectrome-delete-activity-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsiteonenotenotebooksectiongroup
 schema: 2.0.0
+ms.prod: onenote
 ---
 
 # New-MgBetaGroupSiteOnenoteNotebookSectionGroup
@@ -48,6 +49,9 @@ New-MgBetaGroupSiteOnenoteNotebookSectionGroup -InputObject <ISitesIdentity>
 
 ## DESCRIPTION
 Create a new section group in the specified notebook.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/notebook-post-sectiongroups-permissions.md)]
 
 ## EXAMPLES
 

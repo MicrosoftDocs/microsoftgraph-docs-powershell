@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgsubscribegroupbymail
 schema: 2.0.0
+ms.prod: groups
 ---
 
 # Invoke-MgSubscribeGroupByMail
@@ -27,6 +28,9 @@ Invoke-MgSubscribeGroupByMail -InputObject <IGroupsIdentity> [-PassThru] [-WhatI
 ## DESCRIPTION
 Calling this method will enable the current user to receive email notifications for this group, about new posts, events, and files in that group.
 Supported for Microsoft 365 groups only.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-subscribebymail-permissions.md)]
 
 ## EXAMPLES
 

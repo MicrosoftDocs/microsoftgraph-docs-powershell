@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriverootpermission
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Get-MgBetaGroupDriveRootPermission
@@ -37,6 +38,9 @@ Get-MgBetaGroupDriveRootPermission -InputObject <IFilesIdentity> [-ExpandPropert
 Return the effective sharing permission for a particular permission resource.
 Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
 Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.This property is an ItemReference resource referencing the ancestor that the permission is inherited from.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permission-get-permissions.md)]
 
 ## EXAMPLES
 

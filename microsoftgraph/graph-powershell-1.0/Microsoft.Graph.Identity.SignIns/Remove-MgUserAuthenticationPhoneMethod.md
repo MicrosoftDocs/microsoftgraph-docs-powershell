@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mguserauthenticationphonemethod
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Remove-MgUserAuthenticationPhoneMethod
@@ -36,6 +37,9 @@ A user can't have an alternateMobile number without a mobile number.
 If you want to remove a mobile number from a user that also has an alternateMobile number, first update the mobile number to the new number, then delete the alternateMobile number.
 If the phone number is the user's default Azure multi-factor authentication (MFA) authentication method, it can't be deleted.
 Have the user change their default authentication method, and then delete the number.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/phoneauthenticationmethod-delete-permissions.md)]
 
 ## EXAMPLES
 

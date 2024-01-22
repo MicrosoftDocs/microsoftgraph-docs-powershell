@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedteamchannelmember
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # New-MgTeamworkDeletedTeamChannelMember
@@ -42,6 +43,9 @@ New-MgTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Add a conversationMember to a channel.
 This operation is allowed only for channels with a membershipType value of private or shared.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-post-members-permissions.md)]
 
 ## EXAMPLES
 

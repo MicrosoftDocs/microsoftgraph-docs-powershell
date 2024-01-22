@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityb2xuserflowidentityprovider
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Remove-MgIdentityB2XUserFlowIdentityProvider
@@ -28,6 +29,9 @@ Remove-MgIdentityB2XUserFlowIdentityProvider -InputObject <IIdentitySignInsIdent
 ## DESCRIPTION
 Delete an identity provider from a b2xIdentityUserFlow object.
 For self-service sign-up user flows, the values can be Google-OAUTH or Facebook-OAUTH.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/b2xidentityuserflow-delete-identityproviders-permissions.md)]
 
 ## EXAMPLES
 

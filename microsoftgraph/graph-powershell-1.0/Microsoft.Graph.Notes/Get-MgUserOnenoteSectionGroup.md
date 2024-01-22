@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotesectiongroup
 schema: 2.0.0
+ms.prod: onenote
 ---
 
 # Get-MgUserOnenoteSectionGroup
@@ -40,6 +41,9 @@ Get-MgUserOnenoteSectionGroup -InputObject <INotesIdentity> [-ExpandProperty <St
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a sectionGroup object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/sectiongroup-get-permissions.md)]
 
 ## EXAMPLES
 

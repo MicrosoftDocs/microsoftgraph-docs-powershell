@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/rename-mgbetausercloudpc
 schema: 2.0.0
+ms.prod: cloud-pc
 ---
 
 # Rename-MgBetaUserCloudPc
@@ -42,6 +43,9 @@ Rename-MgBetaUserCloudPc -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Rename a specific Cloud PC.
 Use this API to update the displayName for the Cloud PC entity.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-rename-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileposition
 schema: 2.0.0
+ms.prod: people
 ---
 
 # Update-MgBetaUserProfilePosition
@@ -48,6 +49,9 @@ Update-MgBetaUserProfilePosition -InputObject <IPeopleIdentity> -BodyParameter <
 
 ## DESCRIPTION
 Update the properties of a workPosition object in a user's profile.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/workposition-update-permissions.md)]
 
 ## EXAMPLES
 

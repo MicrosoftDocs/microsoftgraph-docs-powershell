@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfolder
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Remove-MgBetaUserMailFolder
@@ -30,6 +31,9 @@ Remove-MgBetaUserMailFolder -InputObject <IMailIdentity> [-IfMatch <String>] [-P
 Delete the specified mailFolder.
 The folder can be a mailSearchFolder.
 You can specify a mail folder by its folder ID, or by its well-known folder name, if one exists.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailfolder-delete-permissions.md)]
 
 ## EXAMPLES
 

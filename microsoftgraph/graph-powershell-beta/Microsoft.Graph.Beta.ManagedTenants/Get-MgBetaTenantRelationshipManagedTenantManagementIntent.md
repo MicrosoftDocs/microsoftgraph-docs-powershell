@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantmanagementintent
 schema: 2.0.0
+ms.prod: multi-tenant-management
 ---
 
 # Get-MgBetaTenantRelationshipManagedTenantManagementIntent
@@ -33,6 +34,9 @@ Get-MgBetaTenantRelationshipManagedTenantManagementIntent -InputObject <IManaged
 
 ## DESCRIPTION
 Read the properties and relationships of a managementIntent object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-managementintent-get-permissions.md)]
 
 ## EXAMPLES
 

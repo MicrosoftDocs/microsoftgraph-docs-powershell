@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/remove-mgbetaprintprinter
 schema: 2.0.0
+ms.prod: cloud-printing
 ---
 
 # Remove-MgBetaPrintPrinter
@@ -26,6 +27,9 @@ Remove-MgBetaPrintPrinter -InputObject <IDevicesCloudPrintIdentity> [-IfMatch <S
 
 ## DESCRIPTION
 Delete (unregister) a printer.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printer-delete-permissions.md)]
 
 ## EXAMPLES
 

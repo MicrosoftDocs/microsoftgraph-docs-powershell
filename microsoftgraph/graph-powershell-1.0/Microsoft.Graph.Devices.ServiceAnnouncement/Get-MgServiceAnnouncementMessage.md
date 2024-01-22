@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementmessage
 schema: 2.0.0
+ms.prod: service-communications
 ---
 
 # Get-MgServiceAnnouncementMessage
@@ -37,6 +38,9 @@ Get-MgServiceAnnouncementMessage -InputObject <IDevicesServiceAnnouncementIdenti
 Retrieve the properties and relationships of a serviceUpdateMessage object.
 This operation retrieves a specified service update message for the tenant.
 The operation returns an error if the message does not exist for the tenant.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceupdatemessage-get-permissions.md)]
 
 ## EXAMPLES
 

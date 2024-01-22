@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorycustomsecurityattributedefinitionallowedvalue
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Get-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue
@@ -35,6 +36,9 @@ Get-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue
 
 ## DESCRIPTION
 Read the properties and relationships of an allowedValue object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/allowedvalue-get-permissions.md)]
 
 ## EXAMPLES
 

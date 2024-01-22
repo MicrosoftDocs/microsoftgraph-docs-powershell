@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivelistitem
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Get-MgUserDriveListItem
@@ -33,6 +34,9 @@ Get-MgUserDriveListItem -InputObject <IFilesIdentity> [-ExpandProperty <String[]
 
 ## DESCRIPTION
 Returns the metadata for an \[item\]\[\] in a \[list\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-get-permissions.md)]
 
 ## EXAMPLES
 

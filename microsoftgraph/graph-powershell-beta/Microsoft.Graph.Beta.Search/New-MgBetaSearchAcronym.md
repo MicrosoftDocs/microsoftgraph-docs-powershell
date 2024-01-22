@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetasearchacronym
 schema: 2.0.0
+ms.prod: search
 ---
 
 # New-MgBetaSearchAcronym
@@ -26,6 +27,9 @@ New-MgBetaSearchAcronym -BodyParameter <IMicrosoftGraphSearchAcronym> [-WhatIf] 
 
 ## DESCRIPTION
 Create a new acronym object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-searchentity-post-acronyms-permissions.md)]
 
 ## EXAMPLES
 

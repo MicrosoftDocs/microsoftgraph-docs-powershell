@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalconnectionschema
 schema: 2.0.0
+ms.prod: search
 ---
 
 # Update-MgBetaExternalConnectionSchema
@@ -40,6 +41,9 @@ Update-MgBetaExternalConnectionSchema -InputObject <ISearchIdentity>
 
 ## DESCRIPTION
 Create the schema for a Microsoft Search connection.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-externalconnection-patch-schema-permissions.md)]
 
 ## EXAMPLES
 

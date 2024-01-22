@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusinessappointment
 schema: 2.0.0
+ms.prod: bookings
 ---
 
 # Get-MgBetaBookingBusinessAppointment
@@ -54,6 +55,9 @@ Get-MgBetaBookingBusinessAppointment -InputObject <IBookingsIdentity> [-ExpandPr
 ## DESCRIPTION
 Get the properties and relationships of a bookingAppointment object in the specified bookingBusiness.
 The start and end properties are always returned in UTC.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingappointment-get-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinesscustomquestion
 schema: 2.0.0
+ms.prod: bookings
 ---
 
 # Update-MgBetaBookingBusinessCustomQuestion
@@ -68,6 +69,9 @@ Update-MgBetaBookingBusinessCustomQuestion -InputObject <IBookingsIdentity>
 
 ## DESCRIPTION
 Update the properties of a bookingCustomQuestion object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingcustomquestion-update-permissions.md)]
 
 ## EXAMPLES
 

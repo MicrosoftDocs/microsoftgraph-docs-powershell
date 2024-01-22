@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/join-mgsharelistcontenttypewithhubsite
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Join-MgShareListContentTypeWithHubSite
@@ -41,6 +42,9 @@ Join-MgShareListContentTypeWithHubSite -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Associate a published \[content type\]\[contentType\] present in a content type hub with a list of hub sites.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-associatewithhubsites-permissions.md)]
 
 ## EXAMPLES
 

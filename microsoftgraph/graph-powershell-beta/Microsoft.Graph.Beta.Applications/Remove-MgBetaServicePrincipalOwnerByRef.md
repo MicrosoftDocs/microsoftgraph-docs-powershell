@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalownerbyref
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Remove-MgBetaServicePrincipalOwnerByRef
@@ -28,6 +29,9 @@ Remove-MgBetaServicePrincipalOwnerByRef -InputObject <IApplicationsIdentity> [-I
 ## DESCRIPTION
 Remove an owner from a servicePrincipal object.
 As a recommended best practice, service principals should have at least two owners.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-delete-owners-permissions.md)]
 
 ## EXAMPLES
 

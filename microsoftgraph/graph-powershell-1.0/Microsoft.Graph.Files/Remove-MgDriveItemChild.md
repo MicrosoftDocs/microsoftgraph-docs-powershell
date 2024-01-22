@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdriveitemchild
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Remove-MgDriveItemChild
@@ -26,6 +27,9 @@ Remove-MgDriveItemChild -InputObject <IFilesIdentity> [-IfMatch <String>] [-Pass
 
 ## DESCRIPTION
 Remove an item from a \[bundle\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bundle-removeitem-permissions.md)]
 
 ## EXAMPLES
 

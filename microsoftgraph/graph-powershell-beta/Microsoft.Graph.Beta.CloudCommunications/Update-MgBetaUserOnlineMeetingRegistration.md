@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetauseronlinemeetingregistration
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Update-MgBetaUserOnlineMeetingRegistration
@@ -48,6 +49,9 @@ Update-MgBetaUserOnlineMeetingRegistration -InputObject <ICloudCommunicationsIde
 
 ## DESCRIPTION
 Update the details of a meetingRegistration object assciated with an onlineMeeting on behalf of the organizer.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/meetingregistration-update-permissions.md)]
 
 ## EXAMPLES
 

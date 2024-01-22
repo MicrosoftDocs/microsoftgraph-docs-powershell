@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitepermission
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Remove-MgGroupSitePermission
@@ -26,6 +27,9 @@ Remove-MgGroupSitePermission -InputObject <ISitesIdentity> [-IfMatch <String>] [
 
 ## DESCRIPTION
 Delete a permission object on a site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-delete-permission-permissions.md)]
 
 ## EXAMPLES
 

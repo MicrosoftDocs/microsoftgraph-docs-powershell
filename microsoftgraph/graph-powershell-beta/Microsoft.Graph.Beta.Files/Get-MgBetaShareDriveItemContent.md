@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharedriveitemcontent
 schema: 2.0.0
+ms.prod: files
 ---
 
 # Get-MgBetaShareDriveItemContent
@@ -25,6 +26,9 @@ Get-MgBetaShareDriveItemContent -InputObject <IFilesIdentity> -OutFile <String> 
 
 ## DESCRIPTION
 The content stream, if the item represents a file.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/shares-get-permissions.md)]
 
 ## EXAMPLES
 

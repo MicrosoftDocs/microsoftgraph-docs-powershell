@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplication
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # New-MgApplication
@@ -50,6 +51,9 @@ New-MgApplication -BodyParameter <IMicrosoftGraphApplication> [-WhatIf] [-Confir
 
 ## DESCRIPTION
 Create a new application object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-post-applications-permissions.md)]
 
 ## EXAMPLES
 

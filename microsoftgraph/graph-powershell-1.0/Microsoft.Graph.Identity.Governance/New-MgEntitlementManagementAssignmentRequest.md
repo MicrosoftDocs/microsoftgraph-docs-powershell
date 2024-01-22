@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementassignmentrequest
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # New-MgEntitlementManagementAssignmentRequest
@@ -34,6 +35,9 @@ New-MgEntitlementManagementAssignmentRequest -BodyParameter <IMicrosoftGraphAcce
 ## DESCRIPTION
 In Microsoft Entra Entitlement Management, create a new accessPackageAssignmentRequest object.
 This operation is used to assign a user to an access package, update the assignment, or to remove an access package assignment.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/entitlementmanagement-post-assignmentrequests-permissions.md)]
 
 ## EXAMPLES
 

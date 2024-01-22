@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelcategory
 schema: 2.0.0
+ms.prod: security
 ---
 
 # New-MgBetaSecurityLabelCategory
@@ -27,6 +28,9 @@ New-MgBetaSecurityLabelCategory -BodyParameter <IMicrosoftGraphSecurityCategoryT
 
 ## DESCRIPTION
 Create a new categoryTemplate object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-labelsroot-post-categories-permissions.md)]
 
 ## EXAMPLES
 

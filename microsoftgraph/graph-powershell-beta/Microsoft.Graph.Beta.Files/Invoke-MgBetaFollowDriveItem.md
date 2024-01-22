@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetafollowdriveitem
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Invoke-MgBetaFollowDriveItem
@@ -24,6 +25,9 @@ Invoke-MgBetaFollowDriveItem -InputObject <IFilesIdentity> [-WhatIf] [-Confirm] 
 
 ## DESCRIPTION
 Follow a driveItem.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-follow-permissions.md)]
 
 ## EXAMPLES
 

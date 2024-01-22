@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadminpeopleprofilecardproperty
 schema: 2.0.0
+ms.prod: people
 ---
 
 # Get-MgBetaAdminPeopleProfileCardProperty
@@ -35,6 +36,9 @@ Get-MgBetaAdminPeopleProfileCardProperty -InputObject <IIdentityDirectoryManagem
 ## DESCRIPTION
 Retrieve the properties of a profileCardProperty entity.
 The profileCardProperty is identified by its directoryPropertyName property.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/profilecardproperty-get-permissions.md)]
 
 ## EXAMPLES
 

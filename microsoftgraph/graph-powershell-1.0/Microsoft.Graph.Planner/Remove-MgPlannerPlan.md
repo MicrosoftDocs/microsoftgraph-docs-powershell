@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/remove-mgplannerplan
 schema: 2.0.0
+ms.prod: planner
 ---
 
 # Remove-MgPlannerPlan
@@ -26,6 +27,9 @@ Remove-MgPlannerPlan -InputObject <IPlannerIdentity> [-IfMatch <String>] [-PassT
 
 ## DESCRIPTION
 Delete a plannerPlan object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannerplan-delete-permissions.md)]
 
 ## EXAMPLES
 

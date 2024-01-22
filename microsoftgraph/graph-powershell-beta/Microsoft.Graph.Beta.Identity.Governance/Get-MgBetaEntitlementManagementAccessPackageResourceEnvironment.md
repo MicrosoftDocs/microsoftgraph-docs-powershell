@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageresourceenvironment
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Get-MgBetaEntitlementManagementAccessPackageResourceEnvironment
@@ -33,6 +34,9 @@ Get-MgBetaEntitlementManagementAccessPackageResourceEnvironment -InputObject <II
 
 ## DESCRIPTION
 Read the properties and relationships of an accessPackageResourceEnvironment object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackageresourceenvironment-get-permissions.md)]
 
 ## EXAMPLES
 

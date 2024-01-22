@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgmarkchatunreadforuser
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # Invoke-MgMarkChatUnreadForUser
@@ -42,6 +43,9 @@ Invoke-MgMarkChatUnreadForUser -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Mark a chat as unread for a user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-markchatunreadforuser-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mguserevent
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Update-MgUserEvent
@@ -70,6 +71,9 @@ Update-MgUserEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGr
 
 ## DESCRIPTION
 Update the properties of the event object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-update-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xm
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointprovisioningpolicy
 schema: 2.0.0
+ms.prod: cloud-pc
 ---
 
 # Get-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy
@@ -34,6 +35,9 @@ Get-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy
 
 ## DESCRIPTION
 Read the properties and relationships of a cloudPcProvisioningPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcprovisioningpolicy-get-permissions.md)]
 
 ## EXAMPLES
 

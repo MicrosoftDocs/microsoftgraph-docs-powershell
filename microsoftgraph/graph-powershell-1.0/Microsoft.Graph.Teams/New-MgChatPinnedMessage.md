@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchatpinnedmessage
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # New-MgChatPinnedMessage
@@ -40,6 +41,9 @@ New-MgChatPinnedMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Pin a chat message in the specified chat.
 This API cannot create a new chat; you must use the list chats method to retrieve the ID of an existing chat before you can pin a chat message.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-post-pinnedmessages-permissions.md)]
 
 ## EXAMPLES
 

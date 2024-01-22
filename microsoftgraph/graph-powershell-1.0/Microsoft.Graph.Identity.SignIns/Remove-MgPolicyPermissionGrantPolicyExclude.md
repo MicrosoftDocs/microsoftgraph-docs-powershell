@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicypermissiongrantpolicyexclude
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Remove-MgPolicyPermissionGrantPolicyExclude
@@ -26,6 +27,9 @@ Remove-MgPolicyPermissionGrantPolicyExclude -InputObject <IIdentitySignInsIdenti
 
 ## DESCRIPTION
 Deletes a permissionGrantConditionSet from the excludes collection of a permissionGrantPolicy.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/permissiongrantpolicy-delete-excludes-permissions.md)]
 
 ## EXAMPLES
 

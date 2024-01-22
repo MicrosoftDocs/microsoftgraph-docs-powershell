@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolderchildfoldermessageattachment
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # New-MgBetaUserMailFolderChildFolderMessageAttachment
@@ -46,6 +47,9 @@ New-MgBetaUserMailFolderChildFolderMessageAttachment -InputObject <IMailIdentity
 Use this API to add an attachment to a message.
 An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
 You can add an attachment to an existing message by posting to its attachments collection, or to a newmessage that is being drafted, or created and sent on the fly.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-post-attachments-permissions.md)]
 
 ## EXAMPLES
 

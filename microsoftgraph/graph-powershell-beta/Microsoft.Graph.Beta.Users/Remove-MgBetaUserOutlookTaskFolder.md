@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauseroutlooktaskfolder
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Remove-MgBetaUserOutlookTaskFolder
@@ -26,6 +27,9 @@ Remove-MgBetaUserOutlookTaskFolder -InputObject <IUsersIdentity> [-IfMatch <Stri
 
 ## DESCRIPTION
 Delete the specified Outlook task folder.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlooktaskfolder-delete-permissions.md)]
 
 ## EXAMPLES
 

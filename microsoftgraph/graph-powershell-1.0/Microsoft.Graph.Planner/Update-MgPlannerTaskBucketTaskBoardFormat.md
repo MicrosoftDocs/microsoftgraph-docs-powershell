@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannertaskbuckettaskboardformat
 schema: 2.0.0
+ms.prod: planner
 ---
 
 # Update-MgPlannerTaskBucketTaskBoardFormat
@@ -40,6 +41,9 @@ Update-MgPlannerTaskBucketTaskBoardFormat -InputObject <IPlannerIdentity> -IfMat
 
 ## DESCRIPTION
 Update the navigation property bucketTaskBoardFormat in planner
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannerbuckettaskboardtaskformat-update-permissions.md)]
 
 ## EXAMPLES
 

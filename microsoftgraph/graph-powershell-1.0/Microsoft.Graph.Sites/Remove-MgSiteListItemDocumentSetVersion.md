@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitelistitemdocumentsetversion
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Remove-MgSiteListItemDocumentSetVersion
@@ -26,6 +27,9 @@ Remove-MgSiteListItemDocumentSetVersion -InputObject <ISitesIdentity> [-IfMatch 
 
 ## DESCRIPTION
 Delete a version of a document set in a list.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/documentsetversion-delete-permissions.md)]
 
 ## EXAMPLES
 
