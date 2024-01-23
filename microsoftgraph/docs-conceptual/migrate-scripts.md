@@ -3,7 +3,7 @@ title: "Migrate Azure AD PowerShell apps to Microsoft Graph PowerShell."
 description: "Learn how to migrate your applications from Azure AD PowerShell to Microsoft Graph PowerShell using a GPT-4 model on Azure OpenAI."
 
 ms.topic: how-to
-ms.date: 01/17/2024
+ms.date: 01/23/2024
 author: rwike77
 manager: CelesteDG
 ms.author: ryanwi
@@ -16,7 +16,7 @@ ms.reviewer: stevemutungi
 
 If any of your applications use the Azure AD, Azure AD Preview, or MSOnline PowerShell modules, it's time to migrate them to Microsoft Graph PowerShell. These older modules are planned for deprecation. Scripts written in Azure AD PowerShell won't automatically work with Microsoft Graph PowerShell and need to be upgraded.  For more information, see [Why upgrade to Microsoft Graph PowerShell?](migration-steps.md)
 
-If you have many scripts written in Azure AD PowerShell, consider bulk updating. If you don't have many scripts to update, consider [manual migration](migrate-scripts.md). The Python app in this article uses a GPT-3.5 Turbo or GPT-4 (recommended) model hosted in [Azure OpenAI Service](/azure/ai-services/openai/overview) to update Azure AD PowerShell apps to Microsoft Graph PowerShell. This app was used to help migrate over 600 Azure AD PowerShell scripts in our content to Microsoft Graph PowerShell. The process is by no means perfect, but should save you time if you have many scripts to update.  Internally, we found an estimated time savings of greater than 50% when upgrading the scripts used in our content.  This article describes the most important parts of the app.  The full app can be found [here](https://github.com/microsoftgraph/aad-to-msgraph-powershell-migration/blob/main/README.md).
+If you have many scripts written in Azure AD PowerShell, consider bulk updating. If you don't have many scripts to update, consider [manual migration](migrate-scripts.md). The Python app in this article uses a GPT-3.5 Turbo or GPT-4 (recommended) model hosted in [Azure OpenAI Service](/azure/ai-services/openai/overview) to update Azure AD PowerShell apps to Microsoft Graph PowerShell. This app was used to help migrate over 600 Azure AD PowerShell scripts in our content to Microsoft Graph PowerShell. The process is by no means perfect, but should save you time if you have many scripts to update.  Internally, we found an estimated time savings of greater than 50% when upgrading the scripts used in our content.  This article describes the most important parts of the app.  The full app can be found [here](https://github.com/microsoftgraph/aad-to-msgraph-powershell-migration).
 
 The app:
 - Uses the [cmdlet map](azuread-msoline-cmdlet-map.md) to get the Microsoft Graph PowerShell equivalents for the Azure AD PowerShell cmdlets in the source script.
@@ -46,7 +46,7 @@ The prerequisites are fully described [here](https://github.com/microsoftgraph/a
 
 The full utility script can be found [here](https://github.com/microsoftgraph/aad-to-msgraph-powershell-migration/blob/main/README.md).  Here's a description of the app and the key parts.
 
-The `update_powershell_scripts` function performs most of the work:
+The `update_powershell_scripts` function in [azuread-migration.py](https://github.com/microsoftgraph/aad-to-msgraph-powershell-migration/blob/main/azuread-migration.py) performs most of the work:
 - Gets the Azure AD PowerShell and Microsoft Graph PowerShell cmdlet mapping.
 - Gets the parameter names and descriptions of the affected Azure AD and MG PowerShell cmdlets. Finds the most similar parameters between old->new cmdlet sets.
 - Gets the permissions for the affected Microsoft Graph PowerShell cmdlets, attempts to find the least privileged permission.
@@ -178,7 +178,7 @@ def update_powershell_scripts(open_ai_key, version, endpoint, deployment_name,
 ```
 ## Prompts used with the GPT-3.5 Turbo/GPT-4 model
 
-The contents of the `Strings.py` file:
+The contents of the [strings.py](https://github.com/microsoftgraph/aad-to-msgraph-powershell-migration/blob/main/strings.py) file:
 
 ~~~python
 SYSTEM_PROMPT = "Assistant is an IT admin with a lot of experience with PowerShell scripting, Azure AD and identity, Microsoft Graph PowerShell, and Microsoft Graph PowerShell permissions.  You enjoy helping others with their PowerShell questions and helping to update their scripts."
@@ -226,4 +226,4 @@ UPDATE_SCRIPT_MSG=r"""Update and re-write the following script to use Microsoft 
 
 ## Next steps
 
-Use the provided [utility app](https://github.com/microsoftgraph/aad-to-msgraph-powershell-migration/blob/main/README.md) to migrate your Azure AD PowerShell scripts to Microsoft Graph PowerShell.
+Use the provided [utility app](https://github.com/microsoftgraph/aad-to-msgraph-powershell-migration/) to migrate your Azure AD PowerShell scripts to Microsoft Graph PowerShell.
