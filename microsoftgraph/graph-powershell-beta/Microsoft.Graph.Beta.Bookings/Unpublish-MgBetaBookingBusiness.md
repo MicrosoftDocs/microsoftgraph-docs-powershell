@@ -23,6 +23,18 @@ Unpublish-MgBetaBookingBusiness -BookingBusinessId <String> [-PassThru] [-WhatIf
  [<CommonParameters>]
 ```
 
+### Unpublish1
+```
+Unpublish-MgBetaBookingBusiness -BookingBusinessId <String> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UnpublishViaIdentity1
+```
+Unpublish-MgBetaBookingBusiness -InputObject <IBookingsIdentity> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
 ### UnpublishViaIdentity
 ```
 Unpublish-MgBetaBookingBusiness -InputObject <IBookingsIdentity> [-PassThru] [-WhatIf] [-Confirm]
@@ -52,7 +64,7 @@ The unique identifier of bookingBusiness
 
 ```yaml
 Type: String
-Parameter Sets: Unpublish
+Parameter Sets: Unpublish, Unpublish1
 Aliases:
 
 Required: True
@@ -68,7 +80,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IBookingsIdentity
-Parameter Sets: UnpublishViaIdentity
+Parameter Sets: UnpublishViaIdentity1, UnpublishViaIdentity
 Aliases:
 
 Required: True

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgUserOnlineMeetingAttendanceReport
 
 ## SYNOPSIS
-Get attendanceReports from users
+The attendance reports of an online meeting.
+Read-only.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserOnlineMeetingAttendanceReport](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaUserOnlineMeetingAttendanceReport?view=graph-powershell-beta)
@@ -35,7 +36,8 @@ Get-MgUserOnlineMeetingAttendanceReport -InputObject <ICloudCommunicationsIdenti
 ```
 
 ## DESCRIPTION
-Get attendanceReports from users
+The attendance reports of an online meeting.
+Read-only.
 
 ## EXAMPLES
 ### Example 1: Code snippet

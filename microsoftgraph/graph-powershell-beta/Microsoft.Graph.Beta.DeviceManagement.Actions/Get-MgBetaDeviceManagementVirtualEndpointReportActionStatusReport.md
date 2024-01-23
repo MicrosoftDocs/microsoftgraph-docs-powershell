@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportactionstatusreport
 schema: 2.0.0
+ms.prod: cloud-pc
 ---
 
 # Get-MgBetaDeviceManagementVirtualEndpointReportActionStatusReport
 
 ## SYNOPSIS
-Invoke action getActionStatusReports
+Get the remote action status reports, including data such as the Cloud PC ID, Cloud PC device display name, initiating user's principal name, device owner's user principal name, action taken, and action state.
 
 ## SYNTAX
 
@@ -28,7 +29,7 @@ Get-MgBetaDeviceManagementVirtualEndpointReportActionStatusReport -OutFile <Stri
 ```
 
 ## DESCRIPTION
-Invoke action getActionStatusReports
+Get the remote action status reports, including data such as the Cloud PC ID, Cloud PC device display name, initiating user's principal name, device owner's user principal name, action taken, and action state.
 
 ## PARAMETERS
 

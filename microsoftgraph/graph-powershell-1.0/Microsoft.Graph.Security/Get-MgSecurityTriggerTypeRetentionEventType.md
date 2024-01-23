@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritytriggertyperetentioneventtype
 schema: 2.0.0
 ms.prod: security
-ms.prod: security
 ---
 
 # Get-MgSecurityTriggerTypeRetentionEventType
@@ -41,9 +40,6 @@ Read the properties and relationships of a retentionEventType object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-retentioneventtype-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-retentioneventtype-list-permissions.md)]
 
 ## PARAMETERS
 

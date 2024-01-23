@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuser
 schema: 2.0.0
 ms.prod: education
-ms.prod: education
 ---
 
 # Get-MgBetaEducationUser
@@ -53,9 +52,6 @@ Retrieve the properties and relationships of a user.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationuser-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationroot-list-users-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

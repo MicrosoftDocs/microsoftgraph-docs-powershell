@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbrandinglocalization
 schema: 2.0.0
 ms.prod: identity-and-sign-in
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgOrganizationBrandingLocalization
@@ -43,9 +42,6 @@ To retrieve a localization branding object, specify the value of id in the URL.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organizationalbrandinglocalization-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organizationalbranding-list-localizations-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

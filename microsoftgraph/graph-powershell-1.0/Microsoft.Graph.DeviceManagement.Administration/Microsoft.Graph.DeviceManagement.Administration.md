@@ -113,6 +113,9 @@ Locale: en-US
 ### [Get-MgDeviceManagementTermAndConditionCount](Get-MgDeviceManagementTermAndConditionCount.md)
 {{ Fill in the Description }}
 
+### [Get-MgDeviceManagementVirtualEndpoint](Get-MgDeviceManagementVirtualEndpoint.md)
+{{ Fill in the Description }}
+
 ### [New-MgDeviceManagementAuditEvent](New-MgDeviceManagementAuditEvent.md)
 {{ Fill in the Description }}
 

@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryinboundshareduserprofile
 schema: 2.0.0
 ms.prod: identity-and-sign-in
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaDirectoryInboundSharedUserProfile
@@ -38,9 +37,6 @@ Read the properties of an inboundSharedUserProfile.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/inboundshareduserprofile-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-list-inboundshareduserprofiles-permissions.md)]
 
 ## PARAMETERS
 

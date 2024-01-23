@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagemententitlementmanagementroleassignment
 schema: 2.0.0
 ms.prod: directory-management
-ms.prod: directory-management
 ---
 
 # Get-MgRoleManagementEntitlementManagementRoleAssignment
@@ -41,9 +40,6 @@ Retrieve the properties and relationships of a unifiedRoleAssignment object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroleassignment-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/rbacapplication-list-roleassignments-permissions.md)]
 
 ## PARAMETERS
 

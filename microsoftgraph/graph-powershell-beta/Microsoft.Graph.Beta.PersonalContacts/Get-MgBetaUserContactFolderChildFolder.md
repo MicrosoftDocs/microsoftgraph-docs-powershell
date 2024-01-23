@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.Beta.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontactfolderchildfolder
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Get-MgBetaUserContactFolderChildFolder
@@ -43,9 +42,6 @@ The collection of child folders in the folder.
 Navigation property.
 Read-only.
 Nullable.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contactfolder-list-childfolders-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

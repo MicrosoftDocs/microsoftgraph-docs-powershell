@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertransitivememberof
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Get-MgUserTransitiveMemberOf
@@ -39,9 +38,6 @@ Get-MgUserTransitiveMemberOf -InputObject <IUsersIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 The groups, including nested groups, and directory roles that a user is a member of.
 Nullable.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-list-transitivememberof-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

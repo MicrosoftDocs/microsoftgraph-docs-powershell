@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlookmastercategory
 schema: 2.0.0
 ms.prod: outlook
-ms.prod: outlook
 ---
 
 # Get-MgBetaUserOutlookMasterCategory
@@ -39,9 +38,6 @@ Get the properties and relationships of the specified outlookCategory object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlookcategory-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlookuser-list-mastercategories-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

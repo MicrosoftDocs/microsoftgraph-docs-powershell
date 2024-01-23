@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationtemplate
 schema: 2.0.0
 ms.prod: applications
-ms.prod: applications
 ---
 
 # Get-MgApplicationTemplate
@@ -41,9 +40,6 @@ Retrieve the properties of an applicationTemplate object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/applicationtemplate-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/applicationtemplate-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

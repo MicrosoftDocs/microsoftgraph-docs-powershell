@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryrole
 schema: 2.0.0
 ms.prod: directory-management
-ms.prod: directory-management
 ---
 
 # Get-MgDirectoryRole
@@ -48,9 +47,6 @@ For details, see Role template IDs.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directoryrole-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directoryrole-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get all directory roles

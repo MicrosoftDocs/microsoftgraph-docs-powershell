@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationpasswordmethod
 schema: 2.0.0
 ms.prod: identity-and-sign-in
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaUserAuthenticationPasswordMethod
@@ -41,9 +40,6 @@ Retrieve the properties and relationships of a password authentication method ob
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/passwordauthenticationmethod-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authentication-list-passwordmethods-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

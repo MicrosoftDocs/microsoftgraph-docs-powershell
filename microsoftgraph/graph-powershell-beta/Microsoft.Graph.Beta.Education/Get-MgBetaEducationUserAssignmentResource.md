@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserassignmentresource
 schema: 2.0.0
 ms.prod: education
-ms.prod: education
 ---
 
 # Get-MgBetaEducationUserAssignmentResource
@@ -44,9 +43,6 @@ Only teachers, students, and applications with application permissions can perfo
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignmentresource-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-list-resources-permissions.md)]
 
 ## EXAMPLES
 

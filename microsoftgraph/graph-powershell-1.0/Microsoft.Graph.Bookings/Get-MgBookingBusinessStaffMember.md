@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinessstaffmember
 schema: 2.0.0
 ms.prod: bookings
-ms.prod: bookings
 ---
 
 # Get-MgBookingBusinessStaffMember
@@ -41,9 +40,6 @@ Get the properties and relationships of a bookingStaffMember in the specified bo
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingstaffmember-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-list-staffmembers-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

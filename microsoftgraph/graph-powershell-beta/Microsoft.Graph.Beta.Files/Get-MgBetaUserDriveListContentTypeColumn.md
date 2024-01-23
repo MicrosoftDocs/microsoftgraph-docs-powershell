@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrivelistcontenttypecolumn
 schema: 2.0.0
 ms.prod: sites-and-lists
-ms.prod: sites-and-lists
 ---
 
 # Get-MgBetaUserDriveListContentTypeColumn
@@ -41,9 +40,6 @@ Retrieve the metadata for a \[site\]\[\], \[list\]\[\] or \[contentType\]\[\] \[
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/columndefinition-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-list-columns-permissions.md)]
 
 ## PARAMETERS
 

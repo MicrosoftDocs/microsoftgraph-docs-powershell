@@ -3,8 +3,7 @@ external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermessage
 schema: 2.0.0
-ms.prod: extensions
-ms.prod: non-product-specific
+ms.prod: outlook
 ---
 
 # Get-MgUserMessage
@@ -42,6 +41,9 @@ Get-MgUserMessage -InputObject <IMailIdentity> [-ExpandProperty <String[]>] [-In
 The messages in a mailbox or folder.
 Read-only.
 Nullable.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/eventmessage-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get a specific message

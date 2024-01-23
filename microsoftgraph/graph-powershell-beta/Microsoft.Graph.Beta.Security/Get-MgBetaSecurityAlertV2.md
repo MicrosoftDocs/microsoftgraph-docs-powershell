@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityalertv2
 schema: 2.0.0
 ms.prod: security
-ms.prod: security
 ---
 
 # Get-MgBetaSecurityAlertV2
@@ -41,9 +40,6 @@ Get the properties and relationships of an alert in an organization based on the
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-alert-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-list-alerts_v2-permissions.md)]
 
 ## PARAMETERS
 

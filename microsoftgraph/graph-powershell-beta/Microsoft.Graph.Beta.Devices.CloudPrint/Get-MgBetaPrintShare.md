@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintshare
 schema: 2.0.0
 ms.prod: cloud-printing
-ms.prod: cloud-printing
 ---
 
 # Get-MgBetaPrintShare
@@ -41,9 +40,6 @@ Retrieve the properties and relationships of a printer share.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printershare-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/print-list-shares-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

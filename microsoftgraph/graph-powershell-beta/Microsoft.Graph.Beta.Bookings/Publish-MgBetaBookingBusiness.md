@@ -22,6 +22,17 @@ Set the isPublished property to true, and publicUrl property to the URL of the s
 Publish-MgBetaBookingBusiness -BookingBusinessId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Publish1
+```
+Publish-MgBetaBookingBusiness -BookingBusinessId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### PublishViaIdentity1
+```
+Publish-MgBetaBookingBusiness -InputObject <IBookingsIdentity> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
 ### PublishViaIdentity
 ```
 Publish-MgBetaBookingBusiness -InputObject <IBookingsIdentity> [-PassThru] [-WhatIf] [-Confirm]
@@ -51,7 +62,7 @@ The unique identifier of bookingBusiness
 
 ```yaml
 Type: String
-Parameter Sets: Publish
+Parameter Sets: Publish, Publish1
 Aliases:
 
 Required: True
@@ -67,7 +78,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IBookingsIdentity
-Parameter Sets: PublishViaIdentity
+Parameter Sets: PublishViaIdentity1, PublishViaIdentity
 Aliases:
 
 Required: True

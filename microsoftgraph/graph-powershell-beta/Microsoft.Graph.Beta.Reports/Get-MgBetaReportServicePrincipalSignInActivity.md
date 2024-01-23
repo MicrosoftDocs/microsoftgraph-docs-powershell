@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceprincipalsigninactivity
 schema: 2.0.0
 ms.prod: identity-and-sign-in
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaReportServicePrincipalSignInActivity
@@ -42,9 +41,6 @@ A service principal supports delegated or app-only authentication context.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipalsigninactivity-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-list-serviceprincipalsigninactivities-permissions.md)]
 
 ## PARAMETERS
 

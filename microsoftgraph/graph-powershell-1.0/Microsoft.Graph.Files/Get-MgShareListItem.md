@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistitem
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Get-MgShareListItem
@@ -49,9 +48,6 @@ Get-MgShareListItem -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [
 
 ## DESCRIPTION
 Used to access the underlying listItem
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-list-permissions.md)]
 
 ## PARAMETERS
 

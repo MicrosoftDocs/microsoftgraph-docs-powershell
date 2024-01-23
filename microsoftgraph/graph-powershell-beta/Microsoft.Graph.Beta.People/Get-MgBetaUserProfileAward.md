@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileaward
 schema: 2.0.0
 ms.prod: people
-ms.prod: people
 ---
 
 # Get-MgBetaUserProfileAward
@@ -38,9 +37,6 @@ Read the properties and relationships of a personAward object from a user's prof
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/personaward-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/profile-list-awards-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserProfileAward Cmdlet

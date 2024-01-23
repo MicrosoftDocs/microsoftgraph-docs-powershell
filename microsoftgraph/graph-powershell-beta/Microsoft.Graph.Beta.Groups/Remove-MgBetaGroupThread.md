@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaGroupThread
 
 ## SYNOPSIS
-Delete a thread object.
+Delete conversationThread.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupThread?view=graph-powershell-1.0)
@@ -28,7 +28,7 @@ Remove-MgBetaGroupThread -InputObject <IGroupsIdentity> [-IfMatch <String>] [-Pa
 ```
 
 ## DESCRIPTION
-Delete a thread object.
+Delete conversationThread.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -169,6 +169,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[BaseSitePageId \<String\>\]: The unique identifier of baseSitePage
   \[ContentTypeId \<String\>\]: The unique identifier of contentType
   \[ConversationId \<String\>\]: The unique identifier of conversation
   \[ConversationThreadId \<String\>\]: The unique identifier of conversationThread
@@ -184,6 +185,8 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[ExtensionId \<String\>\]: The unique identifier of extension
   \[GroupId \<String\>\]: The unique identifier of group
   \[GroupLifecyclePolicyId \<String\>\]: The unique identifier of groupLifecyclePolicy
+  \[HorizontalSectionColumnId \<String\>\]: The unique identifier of horizontalSectionColumn
+  \[HorizontalSectionId \<String\>\]: The unique identifier of horizontalSection
   \[IncludePersonalNotebooks \<Boolean?\>\]: Usage: includePersonalNotebooks={includePersonalNotebooks}
   \[Interval \<String\>\]: Usage: interval='{interval}'
   \[ListId \<String\>\]: The unique identifier of list
@@ -209,6 +212,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[UniqueName \<String\>\]: Alternate key of group
   \[User \<String\>\]: Usage: User='{User}'
   \[UserId \<String\>\]: The unique identifier of user
+  \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
 [Remove-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupThread?view=graph-powershell-1.0)

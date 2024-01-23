@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendar
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Get-MgBetaUserCalendar
@@ -41,9 +40,6 @@ Get-MgBetaUserCalendar -InputObject <ICalendarIdentity> [-ExpandProperty <String
 The user's calendars.
 Read-only.
 Nullable.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-calendars-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserCalendar Cmdlet

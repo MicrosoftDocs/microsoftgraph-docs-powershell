@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetauserapproleassignment
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Get-MgBetaUserAppRoleAssignment
@@ -39,9 +38,6 @@ Get-MgBetaUserAppRoleAssignment -InputObject <IApplicationsIdentity> [-ExpandPro
 ## DESCRIPTION
 Represents the app roles a user has been granted for an application.
 Supports $expand.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-approleassignments-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get assigned app roles

@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportdailyprintusagebyprinter
 schema: 2.0.0
 ms.prod: cloud-printing
-ms.prod: cloud-printing
 ---
 
 # Get-MgReportDailyPrintUsageByPrinter
@@ -43,9 +42,6 @@ For descriptions of each of the endpoints, see printUsageByPrinter.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printusagebyprinter-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-list-dailyprintusagebyprinter-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

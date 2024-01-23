@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelcitation
 schema: 2.0.0
 ms.prod: security
-ms.prod: security
 ---
 
 # Get-MgBetaSecurityLabelCitation
@@ -38,9 +37,6 @@ Read the properties and relationships of a citationTemplate object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-citationtemplate-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-labelsroot-list-citations-permissions.md)]
 
 ## PARAMETERS
 

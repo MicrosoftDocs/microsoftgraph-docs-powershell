@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrive
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Get-MgUserDrive
@@ -39,9 +38,6 @@ Get-MgUserDrive -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Pro
 ## DESCRIPTION
 A collection of drives available for this user.
 Read-only.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/drive-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

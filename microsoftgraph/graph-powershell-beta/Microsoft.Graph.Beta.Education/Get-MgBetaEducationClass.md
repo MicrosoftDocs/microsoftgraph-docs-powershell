@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclass
 schema: 2.0.0
 ms.prod: education
-ms.prod: education
 ---
 
 # Get-MgBetaEducationClass
@@ -47,9 +46,6 @@ If you're using the delegated token, the user will only see classes in which the
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationroot-list-classes-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgprivacysubjectrightsrequest
 schema: 2.0.0
 ms.prod: compliance
-ms.prod: compliance
 ---
 
 # Get-MgPrivacySubjectRightsRequest
@@ -41,9 +40,6 @@ Read the properties and relationships of a subjectRightsRequest object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/subjectrightsrequest-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/subjectrightsrequest-list-permissions.md)]
 
 ## PARAMETERS
 

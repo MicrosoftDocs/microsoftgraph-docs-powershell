@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduleshift
 schema: 2.0.0
 ms.prod: microsoft-teams
-ms.prod: microsoft-teams
 ---
 
 # Get-MgTeamScheduleShift
@@ -39,9 +38,6 @@ Retrieve the properties and relationships of a shift object by ID.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/shift-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/schedule-list-shifts-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

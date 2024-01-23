@@ -9,7 +9,7 @@ ms.prod: microsoft-teams
 # New-MgGroupTeamPrimaryChannelMessage
 
 ## SYNOPSIS
-Send a new chatMessage in the specified channel or a chat.
+Send a new chatMessage in the specified channel.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupTeamPrimaryChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamPrimaryChannelMessage?view=graph-powershell-beta)
@@ -59,7 +59,7 @@ New-MgGroupTeamPrimaryChannelMessage -InputObject <ITeamsIdentity> -BodyParamete
 ```
 
 ## DESCRIPTION
-Send a new chatMessage in the specified channel or a chat.
+Send a new chatMessage in the specified channel.
 
 ## EXAMPLES
 

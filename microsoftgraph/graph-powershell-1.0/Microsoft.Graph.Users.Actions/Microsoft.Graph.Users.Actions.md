@@ -305,10 +305,19 @@ Locale: en-US
 ### [New-MgUserDriveItemLink](New-MgUserDriveItemLink.md)
 {{ Fill in the Description }}
 
+### [New-MgUserDriveItemListItemLink](New-MgUserDriveItemListItemLink.md)
+{{ Fill in the Description }}
+
 ### [New-MgUserDriveItemUploadSession](New-MgUserDriveItemUploadSession.md)
 {{ Fill in the Description }}
 
+### [New-MgUserDriveListItemLink](New-MgUserDriveListItemLink.md)
+{{ Fill in the Description }}
+
 ### [New-MgUserDriveRootLink](New-MgUserDriveRootLink.md)
+{{ Fill in the Description }}
+
+### [New-MgUserDriveRootListItemLink](New-MgUserDriveRootListItemLink.md)
 {{ Fill in the Description }}
 
 ### [New-MgUserDriveRootUploadSession](New-MgUserDriveRootUploadSession.md)

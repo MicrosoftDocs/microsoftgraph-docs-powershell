@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowdeleteditemworkflowrun
 schema: 2.0.0
 ms.prod: governance
-ms.prod: governance
 ---
 
 # Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowRun
@@ -41,9 +40,6 @@ Read the properties and relationships of a run object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-run-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-workflow-list-runs-permissions.md)]
 
 ## EXAMPLES
 

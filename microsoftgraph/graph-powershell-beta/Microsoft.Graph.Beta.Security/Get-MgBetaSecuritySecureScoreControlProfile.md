@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysecurescorecontrolprofile
 schema: 2.0.0
-ms.prod: security
 ---
 
 # Get-MgBetaSecuritySecureScoreControlProfile
@@ -37,9 +36,6 @@ Get-MgBetaSecuritySecureScoreControlProfile -InputObject <ISecurityIdentity> [-E
 
 ## DESCRIPTION
 Get secureScoreControlProfiles from security
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/securescorecontrolprofiles-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

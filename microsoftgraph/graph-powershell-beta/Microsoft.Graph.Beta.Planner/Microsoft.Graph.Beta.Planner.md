@@ -131,6 +131,12 @@ Locale: en-US
 ### [Get-MgBetaUserPlannerTask](Get-MgBetaUserPlannerTask.md)
 {{ Fill in the Description }}
 
+### [Invoke-MgBetaArchivePlannerPlan](Invoke-MgBetaArchivePlannerPlan.md)
+{{ Fill in the Description }}
+
+### [Invoke-MgBetaUnarchivePlannerPlan](Invoke-MgBetaUnarchivePlannerPlan.md)
+{{ Fill in the Description }}
+
 ### [Move-MgBetaPlannerPlanToContainer](Move-MgBetaPlannerPlanToContainer.md)
 {{ Fill in the Description }}
 

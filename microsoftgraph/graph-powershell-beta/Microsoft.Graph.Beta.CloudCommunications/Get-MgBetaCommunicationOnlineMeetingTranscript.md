@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingtranscript
 schema: 2.0.0
 ms.prod: microsoft-teams
-ms.prod: microsoft-teams
 ---
 
 # Get-MgBetaCommunicationOnlineMeetingTranscript
@@ -53,9 +52,6 @@ Retrieving the content of the transcript returns the stream of text associated w
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/calltranscript-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onlinemeeting-list-transcripts-permissions.md)]
 
 ## EXAMPLES
 

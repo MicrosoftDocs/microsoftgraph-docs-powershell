@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupthread
 schema: 2.0.0
 ms.prod: groups
-ms.prod: groups
 ---
 
 # Get-MgBetaGroupThread
@@ -39,9 +38,6 @@ Get a thread object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-get-thread-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-threads-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -242,6 +238,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[BaseSitePageId \<String\>\]: The unique identifier of baseSitePage
   \[ContentTypeId \<String\>\]: The unique identifier of contentType
   \[ConversationId \<String\>\]: The unique identifier of conversation
   \[ConversationThreadId \<String\>\]: The unique identifier of conversationThread
@@ -257,6 +254,8 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[ExtensionId \<String\>\]: The unique identifier of extension
   \[GroupId \<String\>\]: The unique identifier of group
   \[GroupLifecyclePolicyId \<String\>\]: The unique identifier of groupLifecyclePolicy
+  \[HorizontalSectionColumnId \<String\>\]: The unique identifier of horizontalSectionColumn
+  \[HorizontalSectionId \<String\>\]: The unique identifier of horizontalSection
   \[IncludePersonalNotebooks \<Boolean?\>\]: Usage: includePersonalNotebooks={includePersonalNotebooks}
   \[Interval \<String\>\]: Usage: interval='{interval}'
   \[ListId \<String\>\]: The unique identifier of list
@@ -282,6 +281,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[UniqueName \<String\>\]: Alternate key of group
   \[User \<String\>\]: Usage: User='{User}'
   \[UserId \<String\>\]: The unique identifier of user
+  \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
 [Get-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupThread?view=graph-powershell-1.0)

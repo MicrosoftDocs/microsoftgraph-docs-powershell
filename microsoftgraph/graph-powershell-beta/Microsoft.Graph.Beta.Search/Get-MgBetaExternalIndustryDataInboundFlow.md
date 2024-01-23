@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatainboundflow
 schema: 2.0.0
 ms.prod: industry-data-etl
-ms.prod: industry-data-etl
 ---
 
 # Get-MgBetaExternalIndustryDataInboundFlow
@@ -38,9 +37,6 @@ Read the properties and relationships of an inboundFlow object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-inboundflow-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-inboundfileflow-list-permissions.md)]
 
 ## PARAMETERS
 

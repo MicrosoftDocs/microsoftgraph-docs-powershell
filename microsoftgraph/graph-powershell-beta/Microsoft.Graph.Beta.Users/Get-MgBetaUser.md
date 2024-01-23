@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauser
 schema: 2.0.0
 ms.prod: users
-ms.prod: users
 ---
 
 # Get-MgBetaUser
@@ -48,9 +47,6 @@ Because the user resource supports extensions, you can also use the GET operatio
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get the list of all the users

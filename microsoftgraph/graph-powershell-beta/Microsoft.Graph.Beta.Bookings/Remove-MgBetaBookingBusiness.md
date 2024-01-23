@@ -22,6 +22,18 @@ Remove-MgBetaBookingBusiness -BookingBusinessId <String> [-IfMatch <String>] [-P
  [<CommonParameters>]
 ```
 
+### Delete1
+```
+Remove-MgBetaBookingBusiness -BookingBusinessId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### DeleteViaIdentity1
+```
+Remove-MgBetaBookingBusiness -InputObject <IBookingsIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
 ### DeleteViaIdentity
 ```
 Remove-MgBetaBookingBusiness -InputObject <IBookingsIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
@@ -50,7 +62,7 @@ The unique identifier of bookingBusiness
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete, Delete1
 Aliases:
 
 Required: True
@@ -81,7 +93,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IBookingsIdentity
-Parameter Sets: DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity1, DeleteViaIdentity
 Aliases:
 
 Required: True

@@ -9,7 +9,7 @@ ms.prod: intune
 # Update-MgDeviceAppManagementManagedEBookAssignment
 
 ## SYNOPSIS
-Update the properties of a managedEBookAssignment object.
+Update the properties of a iosVppEBookAssignment object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementManagedEBookAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementManagedEBookAssignment?view=graph-powershell-beta)
@@ -43,7 +43,7 @@ Update-MgDeviceAppManagementManagedEBookAssignment -InputObject <IDevicesCorpora
 ```
 
 ## DESCRIPTION
-Update the properties of a managedEBookAssignment object.
+Update the properties of a iosVppEBookAssignment object.
 
 ## PARAMETERS
 

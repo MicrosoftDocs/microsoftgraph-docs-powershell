@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallparticipant
 schema: 2.0.0
 ms.prod: cloud-communications
-ms.prod: cloud-communications
 ---
 
 # Get-MgBetaCommunicationCallParticipant
@@ -41,9 +40,6 @@ Retrieve the properties and relationships of a participant object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/participant-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-list-participants-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallrecordsession
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Get-MgBetaCommunicationCallRecordSession
@@ -43,9 +42,6 @@ List of sessions involved in the call.
 Peer-to-peer calls typically only have one session, whereas group calls typically have at least one session per participant.
 Read-only.
 Nullable.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/callrecords-callrecord-list-sessions-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get session list

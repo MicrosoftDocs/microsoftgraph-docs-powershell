@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactfolder
 schema: 2.0.0
 ms.prod: outlook
-ms.prod: outlook
 ---
 
 # Get-MgUserContactFolder
@@ -43,9 +42,6 @@ There are two scenarios where an app can get another user's contact folder:
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contactfolder-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-list-contactfolders-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

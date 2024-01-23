@@ -18,8 +18,8 @@ An inaccessible Cloud PC represents a Cloud PC that is in an unavailable state (
 ```
 Get-MgBetaDeviceManagementVirtualEndpointReportInaccessibleCloudPcReport -OutFile <String>
  [-AdditionalProperties <Hashtable>] [-Filter <String>] [-GroupBy <String[]>] [-Property <String[]>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ReportName <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Get
@@ -144,6 +144,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ReportName
+cloudPCInaccessibleReportName
+
+```yaml
+Type: String
+Parameter Sets: GetExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Search
 .
 
@@ -255,6 +270,7 @@ BODYPARAMETER \<IPaths1Cf3EkeDevicemanagementVirtualendpointReportsMicrosoftGrap
   \[Filter \<String\>\]: 
   \[GroupBy \<String\[\]\>\]: 
   \[OrderBy \<String\[\]\>\]: 
+  \[ReportName \<String\>\]: cloudPCInaccessibleReportName
   \[Search \<String\>\]: 
   \[Select \<String\[\]\>\]: 
   \[Skip \<Int32?\>\]: 

@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilelanguage
 schema: 2.0.0
 ms.prod: people
-ms.prod: people
 ---
 
 # Get-MgBetaUserProfileLanguage
@@ -38,9 +37,6 @@ Retrieve the properties and relationships of a languageProficiency object within
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/languageproficiency-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/profile-list-languages-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserProfileLanguage Cmdlet

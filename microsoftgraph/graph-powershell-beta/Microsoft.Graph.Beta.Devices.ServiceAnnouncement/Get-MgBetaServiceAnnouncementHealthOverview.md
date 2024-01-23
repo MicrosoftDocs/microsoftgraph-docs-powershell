@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/get-mgbetaserviceannouncementhealthoverview
 schema: 2.0.0
 ms.prod: service-communications
-ms.prod: service-communications
 ---
 
 # Get-MgBetaServiceAnnouncementHealthOverview
@@ -43,9 +42,6 @@ This operation provides the health information of a specified service for a tena
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/servicehealth-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceannouncement-list-healthoverviews-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get the properties of a serviceHealth object

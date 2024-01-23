@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationemailmethod
 schema: 2.0.0
 ms.prod: identity-and-sign-in
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaUserAuthenticationEmailMethod
@@ -41,9 +40,6 @@ Retrieve a user's single email Authentication Method object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/emailauthenticationmethod-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authentication-list-emailmethods-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

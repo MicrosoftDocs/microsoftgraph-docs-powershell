@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgVirtualEventWebinarSessionAttendanceReport
 
 ## SYNOPSIS
-Get attendanceReports from solutions
+The attendance reports of an online meeting.
+Read-only.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventWebinarSessionAttendanceReport](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventWebinarSessionAttendanceReport?view=graph-powershell-beta)
@@ -37,7 +38,8 @@ Get-MgVirtualEventWebinarSessionAttendanceReport -InputObject <IBookingsIdentity
 ```
 
 ## DESCRIPTION
-Get attendanceReports from solutions
+The attendance reports of an online meeting.
+Read-only.
 
 ## PARAMETERS
 

@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityprovider
 schema: 2.0.0
 ms.prod: identity-and-sign-in
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgIdentityProvider
@@ -45,9 +44,6 @@ In Azure AD B2C, this operation can currently get a socialIdentityProvider, or a
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identityproviderbase-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitycontainer-list-identityproviders-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Retrieve a specific social identity provider (Azure AD or Azure AD B2C)

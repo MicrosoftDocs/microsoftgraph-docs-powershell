@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointauditevent
 schema: 2.0.0
 ms.prod: cloud-pc
-ms.prod: cloud-pc
 ---
 
 # Get-MgBetaDeviceManagementVirtualEndpointAuditEvent
@@ -38,9 +37,6 @@ Read the properties and relationships of a cloudPcAuditEvent object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcauditevent-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-list-auditevents-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointAuditEvent Cmdlet

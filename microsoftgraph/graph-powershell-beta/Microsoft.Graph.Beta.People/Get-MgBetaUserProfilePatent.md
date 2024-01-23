@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilepatent
 schema: 2.0.0
 ms.prod: people
-ms.prod: people
 ---
 
 # Get-MgBetaUserProfilePatent
@@ -38,9 +37,6 @@ Read the properties and relationships of an itemPatent object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/itempatent-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/profile-list-patents-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserProfilePatent Cmdlet

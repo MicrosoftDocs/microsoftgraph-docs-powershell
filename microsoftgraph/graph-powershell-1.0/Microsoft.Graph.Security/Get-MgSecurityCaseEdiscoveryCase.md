@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycase
 schema: 2.0.0
 ms.prod: ediscovery
-ms.prod: ediscovery
 ---
 
 # Get-MgSecurityCaseEdiscoveryCase
@@ -41,9 +40,6 @@ Read the properties and relationships of an ediscoveryCase object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycase-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-casesroot-list-ediscoverycases-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermessageattachment
 schema: 2.0.0
 ms.prod: outlook
-ms.prod: outlook
 ---
 
 # Get-MgUserMessageAttachment
@@ -40,9 +39,6 @@ Get-MgUserMessageAttachment -InputObject <IMailIdentity> [-ExpandProperty <Strin
 ## DESCRIPTION
 Read the properties, relationships, or raw contents of an attachment that is attached to a user event, message, or group post.
 An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/eventmessage-list-attachments-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

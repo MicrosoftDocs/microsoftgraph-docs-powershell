@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusinessappointment
 schema: 2.0.0
 ms.prod: bookings
-ms.prod: bookings
 ---
 
 # Get-MgBetaBookingBusinessAppointment
@@ -25,10 +24,29 @@ Get-MgBetaBookingBusinessAppointment -BookingBusinessId <String> [-ExpandPropert
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
+### Get1
+```
+Get-MgBetaBookingBusinessAppointment -BookingAppointmentId <String> -BookingBusinessId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+```
+
 ### Get
 ```
 Get-MgBetaBookingBusinessAppointment -BookingAppointmentId <String> -BookingBusinessId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+```
+
+### List1
+```
+Get-MgBetaBookingBusinessAppointment -BookingBusinessId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity1
+```
+Get-MgBetaBookingBusinessAppointment -InputObject <IBookingsIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -43,9 +61,6 @@ The start and end properties are always returned in UTC.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingappointment-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingbusiness-list-appointments-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaBookingBusinessAppointment Cmdlet
@@ -70,7 +85,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -85,7 +100,7 @@ The unique identifier of bookingAppointment
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get1, Get
 Aliases:
 
 Required: True
@@ -100,7 +115,7 @@ The unique identifier of bookingBusiness
 
 ```yaml
 Type: String
-Parameter Sets: List, Get
+Parameter Sets: List, Get1, Get, List1
 Aliases:
 
 Required: True
@@ -116,7 +131,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: List, List1
 Aliases: CV
 
 Required: False
@@ -146,7 +161,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -162,7 +177,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IBookingsIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: GetViaIdentity1, GetViaIdentity
 Aliases:
 
 Required: True
@@ -177,7 +192,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -207,7 +222,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -222,7 +237,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List
+Parameter Sets: List, List1
 Aliases: OrderBy
 
 Required: False
@@ -237,7 +252,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: List, List1
 Aliases: Limit
 
 Required: False
@@ -252,7 +267,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: List, List1
 Aliases:
 
 Required: False

@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryattributeset
 schema: 2.0.0
 ms.prod: directory-management
-ms.prod: directory-management
 ---
 
 # Get-MgDirectoryAttributeSet
@@ -41,9 +40,6 @@ Read the properties and relationships of an attributeSet object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/attributeset-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directory-list-attributesets-permissions.md)]
 
 ## PARAMETERS
 

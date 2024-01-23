@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitecontenttype
 schema: 2.0.0
 ms.prod: sites-and-lists
-ms.prod: sites-and-lists
 ---
 
 # Get-MgSiteContentType
@@ -41,9 +40,6 @@ Retrieve the metadata for a \[content type\]\[contentType\] in a \[site\]\[\] or
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-list-contenttypes-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

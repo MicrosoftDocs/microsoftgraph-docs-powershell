@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingregistrationcustomquestion
 schema: 2.0.0
 ms.prod: cloud-communications
-ms.prod: cloud-communications
 ---
 
 # Get-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestion
@@ -38,9 +37,6 @@ Get a custom registration question associated with a meetingRegistration object 
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/meetingregistrationquestion-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/meetingregistration-list-customquestions-permissions.md)]
 
 ## PARAMETERS
 

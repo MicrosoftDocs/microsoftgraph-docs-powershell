@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyhomerealmdiscoverypolicy
 schema: 2.0.0
 ms.prod: identity-and-sign-in
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgPolicyHomeRealmDiscoveryPolicy
@@ -41,9 +40,6 @@ Retrieve the properties and relationships of a homeRealmDiscoveryPolicy object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/homerealmdiscoverypolicy-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/homerealmdiscoverypolicy-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

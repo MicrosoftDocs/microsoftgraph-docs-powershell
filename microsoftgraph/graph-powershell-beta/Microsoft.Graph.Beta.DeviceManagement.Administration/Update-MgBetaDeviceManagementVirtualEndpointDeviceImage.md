@@ -15,10 +15,10 @@ Update the navigation property deviceImages in deviceManagement
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementVirtualEndpointDeviceImage -CloudPcDeviceImageId <String>
- [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-ExpirationDate <DateTime>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-OSBuildNumber <String>] [-OSStatus <String>] [-OperatingSystem <String>]
- [-ScopeIds <String[]>] [-SourceImageResourceId <String>] [-Status <String>] [-StatusDetails <String>]
- [-Version <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-ErrorCode <String>] [-ExpirationDate <DateTime>]
+ [-Id <String>] [-LastModifiedDateTime <DateTime>] [-OSBuildNumber <String>] [-OSStatus <String>]
+ [-OperatingSystem <String>] [-ScopeIds <String[]>] [-SourceImageResourceId <String>] [-Status <String>]
+ [-StatusDetails <String>] [-Version <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -30,10 +30,10 @@ Update-MgBetaDeviceManagementVirtualEndpointDeviceImage -CloudPcDeviceImageId <S
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementVirtualEndpointDeviceImage -InputObject <IDeviceManagementAdministrationIdentity>
- [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-ExpirationDate <DateTime>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-OSBuildNumber <String>] [-OSStatus <String>] [-OperatingSystem <String>]
- [-ScopeIds <String[]>] [-SourceImageResourceId <String>] [-Status <String>] [-StatusDetails <String>]
- [-Version <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-ErrorCode <String>] [-ExpirationDate <DateTime>]
+ [-Id <String>] [-LastModifiedDateTime <DateTime>] [-OSBuildNumber <String>] [-OSStatus <String>]
+ [-OperatingSystem <String>] [-ScopeIds <String[]>] [-SourceImageResourceId <String>] [-Status <String>]
+ [-StatusDetails <String>] [-Version <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -95,6 +95,21 @@ Accept wildcard characters: False
 
 ### -DisplayName
 The display name of the image.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ErrorCode
+cloudPcDeviceImageErrorCode
 
 ```yaml
 Type: String
@@ -348,6 +363,7 @@ BODYPARAMETER \<IMicrosoftGraphCloudPcDeviceImage\>: cloudPcDeviceImage
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
   \[DisplayName \<String\>\]: The display name of the image.
+  \[ErrorCode \<String\>\]: cloudPcDeviceImageErrorCode
   \[ExpirationDate \<DateTime?\>\]: The date the image became unavailable.
   \[LastModifiedDateTime \<DateTime?\>\]: The data and time that the image was last modified.
 The time is shown in ISO 8601 format and  Coordinated Universal Time (UTC) time.

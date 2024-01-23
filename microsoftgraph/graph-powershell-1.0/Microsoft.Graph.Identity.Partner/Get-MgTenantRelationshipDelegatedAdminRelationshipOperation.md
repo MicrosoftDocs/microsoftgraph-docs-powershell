@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Identity.Partner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/get-mgtenantrelationshipdelegatedadminrelationshipoperation
 schema: 2.0.0
 ms.prod: partner-customer-administration
-ms.prod: partner-customer-administration
 ---
 
 # Get-MgTenantRelationshipDelegatedAdminRelationshipOperation
@@ -42,9 +41,6 @@ Read the properties of a delegatedAdminRelationshipOperation object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/delegatedadminrelationshipoperation-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/delegatedadminrelationship-list-operations-permissions.md)]
 
 ## PARAMETERS
 

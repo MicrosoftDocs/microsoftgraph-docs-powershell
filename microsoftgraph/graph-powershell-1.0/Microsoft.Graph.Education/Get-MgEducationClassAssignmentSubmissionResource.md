@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentsubmissionresource
 schema: 2.0.0
 ms.prod: education
-ms.prod: education
 ---
 
 # Get-MgEducationClassAssignmentSubmissionResource
@@ -49,9 +48,6 @@ This resource is wrapped with a possible pointer back to the assignment resource
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationsubmissionresource-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationsubmission-list-resources-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get an educationWordResource
@@ -370,6 +366,7 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationAssignmentResourceId \<String\>\]: The unique identifier of educationAssignmentResource
   \[EducationCategoryId \<String\>\]: The unique identifier of educationCategory
   \[EducationClassId \<String\>\]: The unique identifier of educationClass
+  \[EducationGradingCategoryId \<String\>\]: The unique identifier of educationGradingCategory
   \[EducationOutcomeId \<String\>\]: The unique identifier of educationOutcome
   \[EducationRubricId \<String\>\]: The unique identifier of educationRubric
   \[EducationSchoolId \<String\>\]: The unique identifier of educationSchool

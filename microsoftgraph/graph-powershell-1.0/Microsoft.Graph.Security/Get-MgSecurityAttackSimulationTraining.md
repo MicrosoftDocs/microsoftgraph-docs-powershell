@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationtraining
 schema: 2.0.0
-ms.prod: security
 ---
 
 # Get-MgSecurityAttackSimulationTraining
@@ -37,9 +36,6 @@ Get-MgSecurityAttackSimulationTraining -InputObject <ISecurityIdentity> [-Expand
 
 ## DESCRIPTION
 Represents details about attack simulation trainings.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/attacksimulationroot-list-trainings-permissions.md)]
 
 ## PARAMETERS
 

@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicycrosstenantaccesspolicypartner
 schema: 2.0.0
 ms.prod: identity-and-sign-in
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgPolicyCrossTenantAccessPolicyPartner
@@ -41,9 +40,6 @@ Read the properties and relationships of a partner-specific configuration.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/crosstenantaccesspolicyconfigurationpartner-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/crosstenantaccesspolicy-list-partners-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: List all partner configurations within a cross-tenant access policy

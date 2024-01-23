@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamscheduletimeoff
 schema: 2.0.0
 ms.prod: microsoft-teams
-ms.prod: microsoft-teams
 ---
 
 # Get-MgGroupTeamScheduleTimeOff
@@ -40,9 +39,6 @@ Retrieve the properties and relationships of a timeOff object by ID.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/timeoff-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/schedule-list-timesoff-permissions.md)]
 
 ## EXAMPLES
 

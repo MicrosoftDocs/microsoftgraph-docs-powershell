@@ -9,7 +9,7 @@ ms.prod: intune
 # Update-MgDeviceManagementDeviceCompliancePolicy
 
 ## SYNOPSIS
-Update the properties of a windowsPhone81CompliancePolicy object.
+Update the properties of a windows81CompliancePolicy object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementDeviceCompliancePolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDeviceCompliancePolicy?view=graph-powershell-beta)
@@ -59,7 +59,7 @@ Update-MgDeviceManagementDeviceCompliancePolicy -InputObject <IDeviceManagementI
 ```
 
 ## DESCRIPTION
-Update the properties of a windowsPhone81CompliancePolicy object.
+Update the properties of a windows81CompliancePolicy object.
 
 ## PARAMETERS
 

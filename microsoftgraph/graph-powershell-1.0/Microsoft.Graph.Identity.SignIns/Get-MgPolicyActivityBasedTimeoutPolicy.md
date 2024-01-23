@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyactivitybasedtimeoutpolicy
 schema: 2.0.0
 ms.prod: identity-and-sign-in
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgPolicyActivityBasedTimeoutPolicy
@@ -41,9 +40,6 @@ Get the properties of an activityBasedTimeoutPolicy object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/activitybasedtimeoutpolicy-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/activitybasedtimeoutpolicy-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

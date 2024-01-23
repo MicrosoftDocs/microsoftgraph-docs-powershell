@@ -188,6 +188,9 @@ Locale: en-US
 ### [Get-MgBetaChatPinnedMessageCount](Get-MgBetaChatPinnedMessageCount.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaChatRetainedMessage](Get-MgBetaChatRetainedMessage.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaChatRscConfiguration](Get-MgBetaChatRscConfiguration.md)
 {{ Fill in the Description }}
 
@@ -533,6 +536,9 @@ Locale: en-US
 ### [Get-MgBetaTeamChannelMessageReplyHostedContentCount](Get-MgBetaTeamChannelMessageReplyHostedContentCount.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaTeamChannelRetainedMessage](Get-MgBetaTeamChannelRetainedMessage.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaTeamChannelSharedWithTeam](Get-MgBetaTeamChannelSharedWithTeam.md)
 {{ Fill in the Description }}
 
@@ -585,6 +591,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaTeamMemberCount](Get-MgBetaTeamMemberCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaTeamOpenShift](Get-MgBetaTeamOpenShift.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaTeamOperation](Get-MgBetaTeamOperation.md)
@@ -836,6 +845,9 @@ Locale: en-US
 ### [Get-MgBetaTeamworkDeletedTeamChannelMessageReplyHostedContentCount](Get-MgBetaTeamworkDeletedTeamChannelMessageReplyHostedContentCount.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaTeamworkDeletedTeamChannelRetainedMessage](Get-MgBetaTeamworkDeletedTeamChannelRetainedMessage.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaTeamworkDeletedTeamChannelSharedWithTeam](Get-MgBetaTeamworkDeletedTeamChannelSharedWithTeam.md)
 {{ Fill in the Description }}
 
@@ -1013,6 +1025,15 @@ Locale: en-US
 ### [Invoke-MgBetaArchiveTeam](Invoke-MgBetaArchiveTeam.md)
 {{ Fill in the Description }}
 
+### [Invoke-MgBetaArchiveTeamChannel](Invoke-MgBetaArchiveTeamChannel.md)
+{{ Fill in the Description }}
+
+### [Invoke-MgBetaArchiveTeamPrimaryChannel](Invoke-MgBetaArchiveTeamPrimaryChannel.md)
+{{ Fill in the Description }}
+
+### [Invoke-MgBetaArchiveTeamworkDeletedTeamChannel](Invoke-MgBetaArchiveTeamworkDeletedTeamChannel.md)
+{{ Fill in the Description }}
+
 ### [Invoke-MgBetaClockTeamScheduleTimeCardIn](Invoke-MgBetaClockTeamScheduleTimeCardIn.md)
 {{ Fill in the Description }}
 
@@ -1077,6 +1098,15 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Invoke-MgBetaUnarchiveTeam](Invoke-MgBetaUnarchiveTeam.md)
+{{ Fill in the Description }}
+
+### [Invoke-MgBetaUnarchiveTeamChannel](Invoke-MgBetaUnarchiveTeamChannel.md)
+{{ Fill in the Description }}
+
+### [Invoke-MgBetaUnarchiveTeamPrimaryChannel](Invoke-MgBetaUnarchiveTeamPrimaryChannel.md)
+{{ Fill in the Description }}
+
+### [Invoke-MgBetaUnarchiveTeamworkDeletedTeamChannel](Invoke-MgBetaUnarchiveTeamworkDeletedTeamChannel.md)
 {{ Fill in the Description }}
 
 ### [New-MgBetaAppCatalogTeamApp](New-MgBetaAppCatalogTeamApp.md)

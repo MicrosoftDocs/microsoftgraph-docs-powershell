@@ -9,7 +9,7 @@ ms.prod: intune
 # New-MgDeviceManagementDeviceConfiguration
 
 ## SYNOPSIS
-Create a new androidWorkProfileGeneralDeviceConfiguration object.
+Create a new iosDeviceFeaturesConfiguration object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDeviceConfiguration?view=graph-powershell-beta)
@@ -35,7 +35,7 @@ New-MgDeviceManagementDeviceConfiguration -BodyParameter <IMicrosoftGraphDeviceC
 ```
 
 ## DESCRIPTION
-Create a new androidWorkProfileGeneralDeviceConfiguration object.
+Create a new iosDeviceFeaturesConfiguration object.
 
 ## PARAMETERS
 

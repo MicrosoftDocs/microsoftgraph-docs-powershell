@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadevice
 schema: 2.0.0
 ms.prod: directory-management
-ms.prod: directory-management
 ---
 
 # Get-MgBetaDevice
@@ -42,9 +41,6 @@ Since the device resource supports extensions, you can also use the GET operatio
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get a device

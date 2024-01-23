@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduletimeoffrequest
 schema: 2.0.0
 ms.prod: microsoft-teams
-ms.prod: microsoft-teams
 ---
 
 # Get-MgTeamScheduleTimeOffRequest
@@ -40,9 +39,6 @@ Retrieve the properties and relationships of a timeoffrequest object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/timeoffrequest-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/timeoffrequest-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotenotebook
 schema: 2.0.0
 ms.prod: onenote
-ms.prod: onenote
 ---
 
 # Get-MgUserOnenoteNotebook
@@ -41,9 +40,6 @@ Retrieve the properties and relationships of a notebook object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/notebook-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onenote-list-notebooks-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

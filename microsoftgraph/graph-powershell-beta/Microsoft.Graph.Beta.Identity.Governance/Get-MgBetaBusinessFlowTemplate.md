@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetabusinessflowtemplate
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Get-MgBetaBusinessFlowTemplate
@@ -34,9 +33,6 @@ Get-MgBetaBusinessFlowTemplate -InputObject <IIdentityGovernanceIdentity> [-Expa
 
 ## DESCRIPTION
 Get entity from businessFlowTemplates by key
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/businessflowtemplate-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaBusinessFlowTemplate Cmdlet

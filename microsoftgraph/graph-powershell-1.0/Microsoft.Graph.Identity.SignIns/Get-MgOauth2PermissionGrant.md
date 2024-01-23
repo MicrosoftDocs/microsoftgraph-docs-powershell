@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgoauth2permissiongrant
 schema: 2.0.0
 ms.prod: identity-and-sign-in
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgOauth2PermissionGrant
@@ -43,9 +42,6 @@ An oAuth2PermissionGrant represents delegated permissions which have been grante
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/oauth2permissiongrant-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/oauth2permissiongrant-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

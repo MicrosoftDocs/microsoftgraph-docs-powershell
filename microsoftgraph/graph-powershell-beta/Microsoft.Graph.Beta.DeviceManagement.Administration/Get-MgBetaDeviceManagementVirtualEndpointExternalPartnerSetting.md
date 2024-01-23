@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointexternalpartnersetting
 schema: 2.0.0
 ms.prod: cloud-pc
-ms.prod: cloud-pc
 ---
 
 # Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting
@@ -39,9 +38,6 @@ Read the properties and relationships of a cloudPcExternalPartnerSetting object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcexternalpartnersetting-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-list-externalpartnersettings-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting Cmdlet

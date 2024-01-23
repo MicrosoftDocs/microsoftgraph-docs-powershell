@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupeventinstanceattachment
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Get-MgGroupEventInstanceAttachment
@@ -43,9 +42,6 @@ The collection of FileAttachment, ItemAttachment, and referenceAttachment attach
 Navigation property.
 Read-only.
 Nullable.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-list-attachments-permissions.md)]
 
 ## EXAMPLES
 

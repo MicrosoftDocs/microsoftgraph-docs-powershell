@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationtemplate
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Get-MgBetaServicePrincipalSynchronizationTemplate
@@ -37,9 +36,6 @@ Get-MgBetaServicePrincipalSynchronizationTemplate -InputObject <IApplicationsIde
 
 ## DESCRIPTION
 Pre-configured synchronization settings for a particular application.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronization-list-templates-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaServicePrincipalSynchronizationTemplate Cmdlet

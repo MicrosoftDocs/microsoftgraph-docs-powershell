@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get gradingCategory from education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationMeAssignmentGradingCategory](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeAssignmentGradingCategory?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -125,6 +128,7 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Get-MgEducationMeAssignmentGradingCategory](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeAssignmentGradingCategory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeassignmentgradingcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeassignmentgradingcategory)
 

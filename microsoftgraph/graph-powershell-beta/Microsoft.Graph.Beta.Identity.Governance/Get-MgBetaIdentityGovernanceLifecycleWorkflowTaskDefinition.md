@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowtaskdefinition
 schema: 2.0.0
 ms.prod: governance
-ms.prod: governance
 ---
 
 # Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinition
@@ -41,9 +40,6 @@ Read the details of a built-in workflow task.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-taskdefinition-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-lifecycleworkflowscontainer-list-taskdefinitions-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Retrieve all built-in task definitions

@@ -22,7 +22,8 @@ DriveItem resources inherit sharing permissions from their ancestors.
 ```
 New-MgGroupDriveItemLink -DriveId <String> -DriveItemId <String> -GroupId <String>
  [-AdditionalProperties <Hashtable>] [-ExpirationDateTime <DateTime>] [-Message <String>] [-Password <String>]
- [-RetainInheritedPermissions] [-Scope <String>] [-Type <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-RetainInheritedPermissions] [-Scope <String>]
+ [-SendNotification] [-Type <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -35,8 +36,9 @@ New-MgGroupDriveItemLink -DriveId <String> -DriveItemId <String> -GroupId <Strin
 ### CreateViaIdentityExpanded
 ```
 New-MgGroupDriveItemLink -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-ExpirationDateTime <DateTime>] [-Message <String>] [-Password <String>] [-RetainInheritedPermissions]
- [-Scope <String>] [-Type <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ExpirationDateTime <DateTime>] [-Message <String>] [-Password <String>]
+ [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-RetainInheritedPermissions] [-Scope <String>]
+ [-SendNotification] [-Type <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -193,6 +195,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Recipients
+.
+To construct, see NOTES section for RECIPIENTS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphDriveRecipient[]
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RetainInheritedPermissions
 .
 
@@ -219,6 +237,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SendNotification
+.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -290,8 +323,14 @@ BODYPARAMETER \<IPaths13X0452GroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoft
   \[ExpirationDateTime \<DateTime?\>\]: 
   \[Message \<String\>\]: 
   \[Password \<String\>\]: 
+  \[Recipients \<IMicrosoftGraphDriveRecipient\[\]\>\]: 
+    \[Alias \<String\>\]: The alias of the domain object, for cases where an email address is unavailable (e.g.
+security groups).
+    \[Email \<String\>\]: The email address for the recipient, if the recipient has an associated email address.
+    \[ObjectId \<String\>\]: The unique identifier for the recipient in the directory.
   \[RetainInheritedPermissions \<Boolean?\>\]: 
   \[Scope \<String\>\]: 
+  \[SendNotification \<Boolean?\>\]: 
   \[Type \<String\>\]: 
 
 INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
@@ -330,6 +369,12 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[SubscriptionId \<String\>\]: The unique identifier of subscription
   \[Token \<String\>\]: Usage: token='{token}'
   \[User \<String\>\]: Usage: User='{User}'
+
+RECIPIENTS \<IMicrosoftGraphDriveRecipient\[\]\>: .
+  \[Alias \<String\>\]: The alias of the domain object, for cases where an email address is unavailable (e.g.
+security groups).
+  \[Email \<String\>\]: The email address for the recipient, if the recipient has an associated email address.
+  \[ObjectId \<String\>\]: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
 [New-MgBetaGroupDriveItemLink](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupDriveItemLink?view=graph-powershell-beta)

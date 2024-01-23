@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyrolemanagementpolicyassignment
 schema: 2.0.0
 ms.prod: governance
-ms.prod: governance
 ---
 
 # Get-MgPolicyRoleManagementPolicyAssignment
@@ -41,9 +40,6 @@ Get the details of a policy assignment in PIM that's assigned to Microsoft Entra
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedrolemanagementpolicyassignment-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/policyroot-list-rolemanagementpolicyassignments-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Retrieve a role management policy assignment

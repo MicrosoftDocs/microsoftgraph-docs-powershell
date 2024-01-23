@@ -344,10 +344,16 @@ Locale: en-US
 ### [Get-MgBetaDeviceManagementVirtualEndpointReportActionStatusReport](Get-MgBetaDeviceManagementVirtualEndpointReportActionStatusReport.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceManagementVirtualEndpointReportCloudPcPerformanceReport](Get-MgBetaDeviceManagementVirtualEndpointReportCloudPcPerformanceReport.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceManagementVirtualEndpointReportCloudPcRecommendationReport](Get-MgBetaDeviceManagementVirtualEndpointReportCloudPcRecommendationReport.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementVirtualEndpointReportConnectionQualityReport](Get-MgBetaDeviceManagementVirtualEndpointReportConnectionQualityReport.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceManagementVirtualEndpointReportCrossRegionDisasterRecoveryReport](Get-MgBetaDeviceManagementVirtualEndpointReportCrossRegionDisasterRecoveryReport.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementVirtualEndpointReportDailyAggregatedRemoteConnectionReport](Get-MgBetaDeviceManagementVirtualEndpointReportDailyAggregatedRemoteConnectionReport.md)

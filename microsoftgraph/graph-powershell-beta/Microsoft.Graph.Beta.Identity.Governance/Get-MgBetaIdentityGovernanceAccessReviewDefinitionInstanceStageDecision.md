@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewdefinitioninstancestagedecision
 schema: 2.0.0
 ms.prod: governance
-ms.prod: governance
 ---
 
 # Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecision
@@ -45,9 +44,6 @@ Read the properties and relationships of an accessReviewInstanceDecisionItem obj
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstancedecisionitem-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewstage-list-decisions-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Retrieve a decision from a stage of a multi-stage access review

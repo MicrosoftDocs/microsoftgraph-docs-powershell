@@ -9,7 +9,7 @@ ms.prod: intune
 # Update-MgDeviceManagementDeviceConfiguration
 
 ## SYNOPSIS
-Update the properties of a sharedPCConfiguration object.
+Update the properties of a windows10SecureAssessmentConfiguration object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDeviceConfiguration?view=graph-powershell-beta)
@@ -55,7 +55,7 @@ Update-MgDeviceManagementDeviceConfiguration -InputObject <IDeviceManagementIden
 ```
 
 ## DESCRIPTION
-Update the properties of a sharedPCConfiguration object.
+Update the properties of a windows10SecureAssessmentConfiguration object.
 
 ## PARAMETERS
 

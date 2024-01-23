@@ -9,8 +9,9 @@ ms.prod: outlook
 # New-MgBetaUserMailFolderMessageAttachment
 
 ## SYNOPSIS
-Use this API to create a new Attachment.
+Use this API to add an attachment to a message.
 An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
+You can add an attachment to an existing message by posting to its attachments collection, or to a newmessage that is being drafted, or created and sent on the fly.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgUserMailFolderMessageAttachment](/powershell/module/Microsoft.Graph.Mail/New-MgUserMailFolderMessageAttachment?view=graph-powershell-1.0)
@@ -44,11 +45,12 @@ New-MgBetaUserMailFolderMessageAttachment -InputObject <IMailIdentity>
 ```
 
 ## DESCRIPTION
-Use this API to create a new Attachment.
+Use this API to add an attachment to a message.
 An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
+You can add an attachment to an existing message by posting to its attachments collection, or to a newmessage that is being drafted, or created and sent on the fly.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/eventmessage-post-attachments-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-post-attachments-permissions.md)]
 
 ## EXAMPLES
 

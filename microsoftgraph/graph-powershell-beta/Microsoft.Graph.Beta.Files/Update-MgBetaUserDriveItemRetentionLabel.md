@@ -9,9 +9,11 @@ ms.prod: files
 # Update-MgBetaUserDriveItemRetentionLabel
 
 ## SYNOPSIS
-Lock or unlock a retention label on a driveItem that classifies content as records.
+Apply (set) a retention label on a driveItem (files and folders).
+Retention labels don't need to be published in a retention label policy to be applied using this method.
+When a retention label is applied to a folder, all the items in the folder are tagged with the same retention label.
+For information about conflict resolution for retention labels, see Will an existing label be overridden or removed.
 For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
-For more information about how you can lock and unlock retention labels, see Use record versioning to update records stored in SharePoint or OneDrive.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgUserDriveItemRetentionLabel](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveItemRetentionLabel?view=graph-powershell-1.0)
@@ -47,9 +49,11 @@ Update-MgBetaUserDriveItemRetentionLabel -InputObject <IFilesIdentity>
 ```
 
 ## DESCRIPTION
-Lock or unlock a retention label on a driveItem that classifies content as records.
+Apply (set) a retention label on a driveItem (files and folders).
+Retention labels don't need to be published in a retention label policy to be applied using this method.
+When a retention label is applied to a folder, all the items in the folder are tagged with the same retention label.
+For information about conflict resolution for retention labels, see Will an existing label be overridden or removed.
 For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
-For more information about how you can lock and unlock retention labels, see Use record versioning to update records stored in SharePoint or OneDrive.
 
 ## PARAMETERS
 
@@ -303,9 +307,10 @@ Read-only.
     \[Application \<IMicrosoftGraphIdentity\>\]: identity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     \[Device \<IMicrosoftGraphIdentity\>\]: identity
     \[User \<IMicrosoftGraphIdentity\>\]: identity
   \[LabelAppliedDateTime \<DateTime?\>\]: The date and time when the label was applied on the item.
@@ -359,9 +364,10 @@ LABELAPPLIEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
   \[Application \<IMicrosoftGraphIdentity\>\]: identity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-    \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
   \[Device \<IMicrosoftGraphIdentity\>\]: identity
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 

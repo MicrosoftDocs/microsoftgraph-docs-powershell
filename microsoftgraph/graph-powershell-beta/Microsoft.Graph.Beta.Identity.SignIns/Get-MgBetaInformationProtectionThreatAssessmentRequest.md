@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainformationprotectionthreatassessmentrequest
 schema: 2.0.0
 ms.prod: security
-ms.prod: security
 ---
 
 # Get-MgBetaInformationProtectionThreatAssessmentRequest
@@ -43,9 +42,6 @@ A threat assessment request can be one of the following types:
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/threatassessmentrequest-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/informationprotection-list-threatassessmentrequests-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get the properties of a mail assessment request

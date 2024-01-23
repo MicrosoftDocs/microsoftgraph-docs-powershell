@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationmicrosoftauthenticatormethod
 schema: 2.0.0
 ms.prod: identity-and-sign-in
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaUserAuthenticationMicrosoftAuthenticatorMethod
@@ -41,9 +40,6 @@ Read the properties and relationships of a microsoftAuthenticatorAuthenticationM
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/microsoftauthenticatorauthenticationmethod-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/microsoftauthenticatorauthenticationmethod-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

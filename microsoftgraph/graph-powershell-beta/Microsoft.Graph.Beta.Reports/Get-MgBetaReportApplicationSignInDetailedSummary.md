@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportapplicationsignindetailedsummary
 schema: 2.0.0
 ms.prod: identity-and-access-reports
-ms.prod: identity-and-access-reports
 ---
 
 # Get-MgBetaReportApplicationSignInDetailedSummary
@@ -38,9 +37,6 @@ Retrieve the properties and relationships of an applicationSignInDetailedSummary
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/applicationsignindetailedsummary-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-list-applicationsignindetailedsummary-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaReportApplicationSignInDetailedSummary Cmdlet

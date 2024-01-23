@@ -295,9 +295,10 @@ Content type, such as image/png, image/jpg.
         \[Application \<IMicrosoftGraphIdentity\>\]: identity
           \[(Any) \<Object\>\]: This indicates any property can be added to this object.
           \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-          \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
         \[Device \<IMicrosoftGraphIdentity\>\]: identity
         \[User \<IMicrosoftGraphIdentity\>\]: identity
       \[Description \<String\>\]: 
@@ -426,16 +427,18 @@ For example, a user's display name, a team name.
           \[Conversation \<IMicrosoftGraphTeamworkConversationIdentity\>\]: teamworkConversationIdentity
             \[(Any) \<Object\>\]: This indicates any property can be added to this object.
             \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-            \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+            \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
             \[ConversationIdentityType \<String\>\]: teamworkConversationIdentityType
           \[Tag \<IMicrosoftGraphTeamworkTagIdentity\>\]: teamworkTagIdentity
             \[(Any) \<Object\>\]: This indicates any property can be added to this object.
             \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-            \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+            \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
       \[MessageHistory \<IMicrosoftGraphChatMessageHistoryItem\[\]\>\]: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
         \[Actions \<String\>\]: chatMessageActions
         \[ModifiedDateTime \<DateTime?\>\]: The date and time when the message was modified.
@@ -482,9 +485,10 @@ Link to the message in Microsoft Teams.
       \[Organizer \<IMicrosoftGraphTeamworkUserIdentity\>\]: teamworkUserIdentity
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-        \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
         \[UserIdentityType \<String\>\]: teamworkUserIdentityType
     \[Operations \<IMicrosoftGraphTeamsAsyncOperation\[\]\>\]: A collection of all the Teams async operations that ran or are running on the chat.
 Nullable.
@@ -603,9 +607,10 @@ Content type, such as image/png, image/jpg.
           \[Application \<IMicrosoftGraphIdentity\>\]: identity
             \[(Any) \<Object\>\]: This indicates any property can be added to this object.
             \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-            \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+            \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
           \[Device \<IMicrosoftGraphIdentity\>\]: identity
           \[User \<IMicrosoftGraphIdentity\>\]: identity
         \[Description \<String\>\]: 
@@ -718,16 +723,18 @@ For example, a user's display name, a team name.
         \[Conversation \<IMicrosoftGraphTeamworkConversationIdentity\>\]: teamworkConversationIdentity
           \[(Any) \<Object\>\]: This indicates any property can be added to this object.
           \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-          \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
           \[ConversationIdentityType \<String\>\]: teamworkConversationIdentityType
         \[Tag \<IMicrosoftGraphTeamworkTagIdentity\>\]: teamworkTagIdentity
           \[(Any) \<Object\>\]: This indicates any property can be added to this object.
           \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-          \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     \[MessageHistory \<IMicrosoftGraphChatMessageHistoryItem\[\]\>\]: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
       \[Actions \<String\>\]: chatMessageActions
       \[ModifiedDateTime \<DateTime?\>\]: The date and time when the message was modified.
@@ -774,9 +781,10 @@ Link to the message in Microsoft Teams.
     \[Organizer \<IMicrosoftGraphTeamworkUserIdentity\>\]: teamworkUserIdentity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
       \[UserIdentityType \<String\>\]: teamworkUserIdentityType
   \[Operations \<IMicrosoftGraphTeamsAsyncOperation\[\]\>\]: A collection of all the Teams async operations that ran or are running on the chat.
 Nullable.
@@ -930,9 +938,10 @@ Content type, such as image/png, image/jpg.
       \[Application \<IMicrosoftGraphIdentity\>\]: identity
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-        \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
       \[Device \<IMicrosoftGraphIdentity\>\]: identity
       \[User \<IMicrosoftGraphIdentity\>\]: identity
     \[Description \<String\>\]: 
@@ -982,9 +991,10 @@ Content type, such as image/png, image/jpg.
     \[Application \<IMicrosoftGraphIdentity\>\]: identity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     \[Device \<IMicrosoftGraphIdentity\>\]: identity
     \[User \<IMicrosoftGraphIdentity\>\]: identity
   \[Description \<String\>\]: 

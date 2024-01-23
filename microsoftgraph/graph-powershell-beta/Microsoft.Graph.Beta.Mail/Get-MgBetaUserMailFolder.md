@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfolder
 schema: 2.0.0
 ms.prod: outlook
-ms.prod: outlook
 ---
 
 # Get-MgBetaUserMailFolder
@@ -45,9 +44,6 @@ Nullable.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailfolder-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-mailfolders-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get a mail folder

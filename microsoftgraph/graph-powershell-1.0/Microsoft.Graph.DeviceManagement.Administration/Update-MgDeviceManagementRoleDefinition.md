@@ -9,7 +9,7 @@ ms.prod: intune
 # Update-MgDeviceManagementRoleDefinition
 
 ## SYNOPSIS
-Update the properties of a roleDefinition object.
+Update the properties of a deviceAndAppManagementRoleDefinition object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementRoleDefinition?view=graph-powershell-beta)
@@ -45,7 +45,7 @@ Update-MgDeviceManagementRoleDefinition -InputObject <IDeviceManagementAdministr
 ```
 
 ## DESCRIPTION
-Update the properties of a roleDefinition object.
+Update the properties of a deviceAndAppManagementRoleDefinition object.
 
 ## PARAMETERS
 

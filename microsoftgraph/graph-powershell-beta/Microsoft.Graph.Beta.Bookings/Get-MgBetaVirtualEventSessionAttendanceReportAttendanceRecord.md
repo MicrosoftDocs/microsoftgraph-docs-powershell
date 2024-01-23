@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventsessionattendancereportattendancerecord
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Get-MgBetaVirtualEventSessionAttendanceReportAttendanceRecord
@@ -41,9 +40,6 @@ Get-MgBetaVirtualEventSessionAttendanceReportAttendanceRecord -InputObject <IBoo
 ## DESCRIPTION
 List of attendance records of an attendance report.
 Read-only.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/attendancerecord-list-permissions.md)]
 
 ## PARAMETERS
 

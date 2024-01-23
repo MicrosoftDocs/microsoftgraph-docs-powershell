@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinar
 schema: 2.0.0
 ms.prod: cloud-communications
-ms.prod: cloud-communications
 ---
 
 # Get-MgBetaVirtualEventWebinar
@@ -41,9 +40,6 @@ Read the properties and relationships of a virtualEventWebinar object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualeventwebinar-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualeventsroot-list-webinars-permissions.md)]
 
 ## PARAMETERS
 

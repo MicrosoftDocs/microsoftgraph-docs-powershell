@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserassignmentsubmission
 schema: 2.0.0
 ms.prod: education
-ms.prod: education
 ---
 
 # Get-MgBetaEducationUserAssignmentSubmission
@@ -61,9 +60,6 @@ For details, see the examples section.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsubmission-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-list-submissions-permissions.md)]
 
 ## EXAMPLES
 

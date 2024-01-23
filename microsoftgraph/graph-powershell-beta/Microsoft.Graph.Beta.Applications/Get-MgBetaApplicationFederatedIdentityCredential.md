@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationfederatedidentitycredential
 schema: 2.0.0
 ms.prod: applications
-ms.prod: applications
 ---
 
 # Get-MgBetaApplicationFederatedIdentityCredential
@@ -42,9 +41,6 @@ Read the properties and relationships of a federatedIdentityCredential object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/federatedidentitycredential-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-list-federatedidentitycredentials-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

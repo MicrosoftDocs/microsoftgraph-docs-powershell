@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerbucket
 schema: 2.0.0
 ms.prod: planner
-ms.prod: planner
 ---
 
 # Get-MgBetaPlannerBucket
@@ -41,9 +40,6 @@ Retrieve the properties and relationships of a plannerBucket object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerbucket-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/planner-list-buckets-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

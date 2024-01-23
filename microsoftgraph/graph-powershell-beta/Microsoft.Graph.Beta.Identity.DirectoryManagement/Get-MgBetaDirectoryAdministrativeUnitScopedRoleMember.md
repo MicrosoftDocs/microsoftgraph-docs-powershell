@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryadministrativeunitscopedrolemember
 schema: 2.0.0
 ms.prod: directory-management
-ms.prod: directory-management
 ---
 
 # Get-MgBetaDirectoryAdministrativeUnitScopedRoleMember
@@ -41,9 +40,6 @@ Get a Microsoft Entra role assignment with administrative unit scope.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/administrativeunit-get-scopedrolemembers-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/administrativeunit-list-scopedrolemembers-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
