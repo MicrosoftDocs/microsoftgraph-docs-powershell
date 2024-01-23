@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthread
 schema: 2.0.0
 ms.prod: groups
-ms.prod: groups
 ---
 
 # Get-MgGroupThread
@@ -40,9 +39,6 @@ You can specify both the parent conversation and the thread, or, you can specify
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/conversationthread-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-list-threads-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

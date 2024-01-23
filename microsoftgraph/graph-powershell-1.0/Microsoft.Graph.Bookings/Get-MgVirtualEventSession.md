@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgVirtualEventSession
 
 ## SYNOPSIS
-Get sessions from solutions
+Sessions for the virtual event.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventSession](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventSession?view=graph-powershell-beta)
@@ -35,7 +35,7 @@ Get-MgVirtualEventSession -InputObject <IBookingsIdentity> [-ExpandProperty <Str
 ```
 
 ## DESCRIPTION
-Get sessions from solutions
+Sessions for the virtual event.
 
 ## PARAMETERS
 

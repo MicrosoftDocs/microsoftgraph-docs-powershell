@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetauserevent
 schema: 2.0.0
 ms.prod: outlook
-ms.prod: outlook
 ---
 
 # Get-MgBetaUserEvent
@@ -43,9 +42,6 @@ An app can get an event in another user's calendar if: Because the event resourc
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-events-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get a specified event

@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageincompatiblewith
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Get-MgBetaEntitlementManagementAccessPackageIncompatibleWith
@@ -39,9 +38,6 @@ Get-MgBetaEntitlementManagementAccessPackageIncompatibleWith -InputObject <IIden
 ## DESCRIPTION
 The access packages that are incompatible with this package.
 Read-only.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackage-list-accesspackagesincompatiblewith-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

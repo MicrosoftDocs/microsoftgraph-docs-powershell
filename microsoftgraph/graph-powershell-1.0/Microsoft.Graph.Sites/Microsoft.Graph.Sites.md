@@ -1637,6 +1637,9 @@ Locale: en-US
 ### [New-MgSiteListItemDocumentSetVersion](New-MgSiteListItemDocumentSetVersion.md)
 {{ Fill in the Description }}
 
+### [New-MgSiteListItemLink](New-MgSiteListItemLink.md)
+{{ Fill in the Description }}
+
 ### [New-MgSiteListItemVersion](New-MgSiteListItemVersion.md)
 {{ Fill in the Description }}
 

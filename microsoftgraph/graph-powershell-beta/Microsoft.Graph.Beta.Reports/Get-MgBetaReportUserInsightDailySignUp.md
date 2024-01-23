@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportuserinsightdailysignup
 schema: 2.0.0
-ms.prod: identity-and-access-reports
 ---
 
 # Get-MgBetaReportUserInsightDailySignUp
@@ -34,9 +33,6 @@ Get-MgBetaReportUserInsightDailySignUp -InputObject <IReportsIdentity> [-ExpandP
 
 ## DESCRIPTION
 Total sign-ups on apps registered in the tenant for a specified period.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/dailyuserinsightmetricsroot-list-signups-permissions.md)]
 
 ## PARAMETERS
 

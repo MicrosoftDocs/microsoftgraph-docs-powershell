@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserinformationprotectionbitlockerrecoverykey
 schema: 2.0.0
 ms.prod: directory-management
-ms.prod: directory-management
 ---
 
 # Get-MgBetaUserInformationProtectionBitlockerRecoveryKey
@@ -46,9 +45,6 @@ You can find the log in Microsoft Entra audit logs under the KeyManagement categ
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bitlockerrecoverykey-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bitlocker-list-recoverykeys-permissions.md)]
 
 ## PARAMETERS
 

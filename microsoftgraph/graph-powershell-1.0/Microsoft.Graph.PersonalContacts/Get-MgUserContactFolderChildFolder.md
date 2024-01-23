@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactfolderchildfolder
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Get-MgUserContactFolderChildFolder
@@ -43,9 +42,6 @@ The collection of child folders in the folder.
 Navigation property.
 Read-only.
 Nullable.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contactfolder-list-childfolders-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

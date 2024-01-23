@@ -38,6 +38,9 @@ Locale: en-US
 ### [Get-MgEducationClassAssignmentDelta](Get-MgEducationClassAssignmentDelta.md)
 {{ Fill in the Description }}
 
+### [Get-MgEducationClassAssignmentGradingCategory](Get-MgEducationClassAssignmentGradingCategory.md)
+{{ Fill in the Description }}
+
 ### [Get-MgEducationClassAssignmentResource](Get-MgEducationClassAssignmentResource.md)
 {{ Fill in the Description }}
 
@@ -51,6 +54,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgEducationClassAssignmentSetting](Get-MgEducationClassAssignmentSetting.md)
+{{ Fill in the Description }}
+
+### [Get-MgEducationClassAssignmentSettingGradingCategory](Get-MgEducationClassAssignmentSettingGradingCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgEducationClassAssignmentSettingGradingCategoryCount](Get-MgEducationClassAssignmentSettingGradingCategoryCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgEducationClassAssignmentSubmission](Get-MgEducationClassAssignmentSubmission.md)
@@ -138,6 +147,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgEducationMeAssignmentDelta](Get-MgEducationMeAssignmentDelta.md)
+{{ Fill in the Description }}
+
+### [Get-MgEducationMeAssignmentGradingCategory](Get-MgEducationMeAssignmentGradingCategory.md)
 {{ Fill in the Description }}
 
 ### [Get-MgEducationMeAssignmentResource](Get-MgEducationMeAssignmentResource.md)
@@ -269,6 +281,9 @@ Locale: en-US
 ### [Get-MgEducationUserAssignmentDelta](Get-MgEducationUserAssignmentDelta.md)
 {{ Fill in the Description }}
 
+### [Get-MgEducationUserAssignmentGradingCategory](Get-MgEducationUserAssignmentGradingCategory.md)
+{{ Fill in the Description }}
+
 ### [Get-MgEducationUserAssignmentResource](Get-MgEducationUserAssignmentResource.md)
 {{ Fill in the Description }}
 
@@ -384,6 +399,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [New-MgEducationClassAssignmentResource](New-MgEducationClassAssignmentResource.md)
+{{ Fill in the Description }}
+
+### [New-MgEducationClassAssignmentSettingGradingCategory](New-MgEducationClassAssignmentSettingGradingCategory.md)
 {{ Fill in the Description }}
 
 ### [New-MgEducationClassAssignmentSubmission](New-MgEducationClassAssignmentSubmission.md)
@@ -504,6 +522,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgEducationClassAssignmentSetting](Remove-MgEducationClassAssignmentSetting.md)
+{{ Fill in the Description }}
+
+### [Remove-MgEducationClassAssignmentSettingGradingCategory](Remove-MgEducationClassAssignmentSettingGradingCategory.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgEducationClassAssignmentSubmission](Remove-MgEducationClassAssignmentSubmission.md)
@@ -663,6 +684,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgEducationClassAssignmentSetting](Update-MgEducationClassAssignmentSetting.md)
+{{ Fill in the Description }}
+
+### [Update-MgEducationClassAssignmentSettingGradingCategory](Update-MgEducationClassAssignmentSettingGradingCategory.md)
 {{ Fill in the Description }}
 
 ### [Update-MgEducationClassAssignmentSubmission](Update-MgEducationClassAssignmentSubmission.md)

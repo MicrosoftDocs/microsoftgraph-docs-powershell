@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationsynchronizationtemplate
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Get-MgApplicationSynchronizationTemplate
@@ -37,9 +36,6 @@ Get-MgApplicationSynchronizationTemplate -InputObject <IApplicationsIdentity> [-
 
 ## DESCRIPTION
 Preconfigured synchronization settings for a particular application.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronization-list-templates-permissions.md)]
 
 ## PARAMETERS
 

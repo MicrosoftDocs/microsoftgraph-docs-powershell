@@ -208,6 +208,7 @@ Possible values are: Allow, Block
 Allowed override values will be dependent on the property affected by the rule.
             \[Rules \<String\[\]\>\]: Overridden rules.
 These are used as rules for the override instead of the default rules.
+        \[ApprovalAttachment \<IMicrosoftGraphPlannerFieldRules\>\]: plannerFieldRules
         \[Assignments \<IMicrosoftGraphPlannerFieldRules\>\]: plannerFieldRules
         \[CheckLists \<IMicrosoftGraphPlannerFieldRules\>\]: plannerFieldRules
         \[CompletionRequirements \<String\[\]\>\]: Rules and restrictions for completion requirements of the task.
@@ -216,6 +217,7 @@ Accepted values are allow, add, remove, edit, and block.
 Accepted values are allow and block.
         \[DueDate \<String\[\]\>\]: Rules and restrictions for changing the due date of the task.
 Accepted values are allow and block.
+        \[Forms \<IMicrosoftGraphPlannerFieldRules\>\]: plannerFieldRules
         \[Move \<String\[\]\>\]: Rules and restrictions for moving the task between buckets or plans.
 Accepted values are allow, moveBetweenPlans, moveBetweenBuckets, and block.
         \[Notes \<String\[\]\>\]: Rules and restrictions for changing the notes of the task.
@@ -253,6 +255,7 @@ Possible values are: Allow, Block
 Allowed override values will be dependent on the property affected by the rule.
           \[Rules \<String\[\]\>\]: Overridden rules.
 These are used as rules for the override instead of the default rules.
+      \[ApprovalAttachment \<IMicrosoftGraphPlannerFieldRules\>\]: plannerFieldRules
       \[Assignments \<IMicrosoftGraphPlannerFieldRules\>\]: plannerFieldRules
       \[CheckLists \<IMicrosoftGraphPlannerFieldRules\>\]: plannerFieldRules
       \[CompletionRequirements \<String\[\]\>\]: Rules and restrictions for completion requirements of the task.
@@ -261,6 +264,7 @@ Accepted values are allow, add, remove, edit, and block.
 Accepted values are allow and block.
       \[DueDate \<String\[\]\>\]: Rules and restrictions for changing the due date of the task.
 Accepted values are allow and block.
+      \[Forms \<IMicrosoftGraphPlannerFieldRules\>\]: plannerFieldRules
       \[Move \<String\[\]\>\]: Rules and restrictions for moving the task between buckets or plans.
 Accepted values are allow, moveBetweenPlans, moveBetweenBuckets, and block.
       \[Notes \<String\[\]\>\]: Rules and restrictions for changing the notes of the task.

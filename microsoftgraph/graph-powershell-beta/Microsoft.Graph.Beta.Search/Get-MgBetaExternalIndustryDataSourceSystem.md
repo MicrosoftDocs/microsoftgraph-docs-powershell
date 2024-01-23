@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatasourcesystem
 schema: 2.0.0
 ms.prod: industry-data-etl
-ms.prod: industry-data-etl
 ---
 
 # Get-MgBetaExternalIndustryDataSourceSystem
@@ -38,9 +37,6 @@ Read the properties and relationships of a sourceSystemDefinition object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-sourcesystemdefinition-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-sourcesystemdefinition-list-permissions.md)]
 
 ## PARAMETERS
 

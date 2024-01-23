@@ -380,8 +380,8 @@ Read-only.
           \[Rule \<String\>\]: Rule syntax is similar to that used for membership rules for groups in Microsoft Entra ID.
 For details, see rules with multiple expressions
         \[ExcludeApplications \<String\[\]\>\]: Can be one of the following:  The list of client IDs (appId) explicitly excluded from the policy.
-Office365 - For the list of apps included in Office365, see Conditional Access target apps: Office 365
-        \[IncludeApplications \<String\[\]\>\]: Can be one of the following:  The list of client IDs (appId) the policy applies to, unless explicitly excluded (in excludeApplications)  All  Office365 - For the list of apps included in Office365, see Conditional Access target apps: Office 365
+Office365 - For the list of apps included in Office365, see Apps included in Conditional Access Office 365 app suite
+        \[IncludeApplications \<String\[\]\>\]: Can be one of the following:  The list of client IDs (appId) the policy applies to, unless explicitly excluded (in excludeApplications)  All  Office365 - For the list of apps included in Office365, see Apps included in Conditional Access Office 365 app suite
         \[IncludeAuthenticationContextClassReferences \<String\[\]\>\]: Authentication context class references include.
 Supported values are c1 through c25.
         \[IncludeUserActions \<String\[\]\>\]: User actions to include.
@@ -531,8 +531,8 @@ Read-only.
         \[Rule \<String\>\]: Rule syntax is similar to that used for membership rules for groups in Microsoft Entra ID.
 For details, see rules with multiple expressions
       \[ExcludeApplications \<String\[\]\>\]: Can be one of the following:  The list of client IDs (appId) explicitly excluded from the policy.
-Office365 - For the list of apps included in Office365, see Conditional Access target apps: Office 365
-      \[IncludeApplications \<String\[\]\>\]: Can be one of the following:  The list of client IDs (appId) the policy applies to, unless explicitly excluded (in excludeApplications)  All  Office365 - For the list of apps included in Office365, see Conditional Access target apps: Office 365
+Office365 - For the list of apps included in Office365, see Apps included in Conditional Access Office 365 app suite
+      \[IncludeApplications \<String\[\]\>\]: Can be one of the following:  The list of client IDs (appId) the policy applies to, unless explicitly excluded (in excludeApplications)  All  Office365 - For the list of apps included in Office365, see Apps included in Conditional Access Office 365 app suite
       \[IncludeAuthenticationContextClassReferences \<String\[\]\>\]: Authentication context class references include.
 Supported values are c1 through c25.
       \[IncludeUserActions \<String\[\]\>\]: User actions to include.
@@ -676,8 +676,8 @@ Read-only.
           \[Rule \<String\>\]: Rule syntax is similar to that used for membership rules for groups in Microsoft Entra ID.
 For details, see rules with multiple expressions
         \[ExcludeApplications \<String\[\]\>\]: Can be one of the following:  The list of client IDs (appId) explicitly excluded from the policy.
-Office365 - For the list of apps included in Office365, see Conditional Access target apps: Office 365
-        \[IncludeApplications \<String\[\]\>\]: Can be one of the following:  The list of client IDs (appId) the policy applies to, unless explicitly excluded (in excludeApplications)  All  Office365 - For the list of apps included in Office365, see Conditional Access target apps: Office 365
+Office365 - For the list of apps included in Office365, see Apps included in Conditional Access Office 365 app suite
+        \[IncludeApplications \<String\[\]\>\]: Can be one of the following:  The list of client IDs (appId) the policy applies to, unless explicitly excluded (in excludeApplications)  All  Office365 - For the list of apps included in Office365, see Apps included in Conditional Access Office 365 app suite
         \[IncludeAuthenticationContextClassReferences \<String\[\]\>\]: Authentication context class references include.
 Supported values are c1 through c25.
         \[IncludeUserActions \<String\[\]\>\]: User actions to include.

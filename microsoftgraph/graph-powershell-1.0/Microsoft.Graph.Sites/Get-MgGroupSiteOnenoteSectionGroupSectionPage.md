@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotesectiongroupsectionpage
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # Get-MgGroupSiteOnenoteSectionGroupSectionPage
@@ -43,9 +42,6 @@ Get-MgGroupSiteOnenoteSectionGroupSectionPage -InputObject <ISitesIdentity> [-Ex
 The collection of pages in the section.
 Read-only.
 Nullable.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/section-list-pages-permissions.md)]
 
 ## PARAMETERS
 

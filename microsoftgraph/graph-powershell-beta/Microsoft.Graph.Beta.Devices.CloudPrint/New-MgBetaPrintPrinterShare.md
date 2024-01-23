@@ -804,9 +804,10 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $
       \[Application \<IMicrosoftGraphIdentity\>\]: identity
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-        \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
       \[Device \<IMicrosoftGraphIdentity\>\]: identity
       \[User \<IMicrosoftGraphIdentity\>\]: identity
     \[CreatedByUser \<IMicrosoftGraphUser\>\]: user
@@ -1464,11 +1465,15 @@ null if discovery hasn't yet occurred.
               \[SynchronizationRules \<IMicrosoftGraphSynchronizationRule\[\]\>\]: A collection of synchronization rules configured for the synchronizationJob or synchronizationTemplate.
                 \[ContainerFilter \<IMicrosoftGraphContainerFilter\>\]: containerFilter
                   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-                  \[IncludedContainers \<String\[\]\>\]: 
+                  \[IncludedContainers \<String\[\]\>\]: The identifiers of containers, such as organizational units, that are in scope for a synchronization rule.
+For Active Directory organizational units, use the distinguished names.
+An empty list means no container filtering is configured.
                 \[Editable \<Boolean?\>\]: true if the synchronization rule can be customized; false if this rule is read-only and shouldn't be changed.
                 \[GroupFilter \<IMicrosoftGraphGroupFilter\>\]: groupFilter
                   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-                  \[IncludedGroups \<String\[\]\>\]: 
+                  \[IncludedGroups \<String\[\]\>\]: Identifiers of groups that are in scope for a synchronization rule.
+For Active Directory groups, use the distinguished names.
+An empty list means no group filtering is configured.
                 \[Id \<String\>\]: Synchronization rule identifier.
 Must be one of the identifiers recognized by the synchronization engine.
 Supported rule identifiers can be found in the synchronization template returned by the API.
@@ -1900,10 +1905,10 @@ Read-only.
           \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
           \[CreatedDateTime \<DateTime?\>\]: The start time of the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
           \[LastActionDateTime \<DateTime?\>\]: The time of the last action in the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
           \[ResourceLocation \<String\>\]: URI of the resource that the operation is performed on.
           \[Status \<String\>\]: longRunningOperationStatus
@@ -2154,16 +2159,18 @@ For example, a user's display name, a team name.
               \[Conversation \<IMicrosoftGraphTeamworkConversationIdentity\>\]: teamworkConversationIdentity
                 \[(Any) \<Object\>\]: This indicates any property can be added to this object.
                 \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-                \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+                \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
                 \[ConversationIdentityType \<String\>\]: teamworkConversationIdentityType
               \[Tag \<IMicrosoftGraphTeamworkTagIdentity\>\]: teamworkTagIdentity
                 \[(Any) \<Object\>\]: This indicates any property can be added to this object.
                 \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-                \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+                \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
           \[MessageHistory \<IMicrosoftGraphChatMessageHistoryItem\[\]\>\]: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
             \[Actions \<String\>\]: chatMessageActions
             \[ModifiedDateTime \<DateTime?\>\]: The date and time when the message was modified.
@@ -2210,9 +2217,10 @@ Link to the message in Microsoft Teams.
           \[Organizer \<IMicrosoftGraphTeamworkUserIdentity\>\]: teamworkUserIdentity
             \[(Any) \<Object\>\]: This indicates any property can be added to this object.
             \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-            \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+            \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
             \[UserIdentityType \<String\>\]: teamworkUserIdentityType
         \[Operations \<IMicrosoftGraphTeamsAsyncOperation\[\]\>\]: A collection of all the Teams async operations that ran or are running on the chat.
 Nullable.
@@ -2304,6 +2312,11 @@ For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
           \[UpdatedDateTime \<DateTime?\>\]: Datetime when the status was updated.
 The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
 For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
+        \[DisasterRecoveryCapability \<IMicrosoftGraphCloudPcDisasterRecoveryCapability\>\]: cloudPcDisasterRecoveryCapability
+          \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+          \[CapabilityType \<String\>\]: cloudPcDisasterRecoveryCapabilityType
+          \[PrimaryRegion \<String\>\]: 
+          \[SecondaryRegion \<String\>\]: 
         \[DiskEncryptionState \<String\>\]: cloudPcDiskEncryptionState
         \[DisplayName \<String\>\]: The display name of the Cloud PC.
         \[GracePeriodEndDateTime \<DateTime?\>\]: The date and time when the grace period ends and reprovisioning or deprovisioning happen.
@@ -2938,9 +2951,10 @@ Read-only.
                     \[SiteGroup \<IMicrosoftGraphSharePointIdentity\>\]: sharePointIdentity
                       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
                       \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-                      \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+                      \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
                       \[LoginName \<String\>\]: The sign in name of the SharePoint identity.
                     \[SiteUser \<IMicrosoftGraphSharePointIdentity\>\]: sharePointIdentity
                   \[GrantedToV2 \<IMicrosoftGraphSharePointIdentitySet\>\]: sharePointIdentitySet
@@ -3938,10 +3952,10 @@ Read-only.
 Possible values include documentLibrary, genericList, task, survey, announcements, contacts, and more.
           \[Operations \<IMicrosoftGraphRichLongRunningOperation\[\]\>\]: The collection of long-running operations on the list.
             \[CreatedDateTime \<DateTime?\>\]: The start time of the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             \[LastActionDateTime \<DateTime?\>\]: The time of the last action in the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             \[ResourceLocation \<String\>\]: URI of the resource that the operation is performed on.
             \[Status \<String\>\]: longRunningOperationStatus
@@ -4346,6 +4360,7 @@ The maximum length is 50 characters.
           \[Email \<String\>\]: The email address for sending messages to the channel.
 Read-only.
           \[FilesFolder \<IMicrosoftGraphDriveItem\>\]: driveItem
+          \[IsArchived \<Boolean?\>\]: 
           \[IsFavoriteByDefault \<Boolean?\>\]: Indicates whether the channel should automatically be marked 'favorite' for all members of the team.
 Can only be set programmatically with Create team.
 Default: false.
@@ -4436,12 +4451,13 @@ Owner must be specified as an object ID (GUID), not a UPN.
           \[(Any) \<Object\>\]: This indicates any property can be added to this object.
           \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-          \[DayNotes \<IMicrosoftGraphDayNote\[\]\>\]: 
+          \[ActivitiesIncludedWhenCopyingShiftsEnabled \<Boolean?\>\]: Indicates whether copied shifts should include the activities.
+          \[DayNotes \<IMicrosoftGraphDayNote\[\]\>\]: The day notes in the schedule.
             \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
             \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
             \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-            \[DayNoteDate \<DateTime?\>\]: 
+            \[DayNoteDate \<DateTime?\>\]: The date of the day note.
             \[DraftDayNote \<IMicrosoftGraphItemBody\>\]: itemBody
             \[SharedDayNote \<IMicrosoftGraphItemBody\>\]: itemBody
           \[Enabled \<Boolean?\>\]: Indicates whether the schedule is enabled for the team.
@@ -4500,8 +4516,8 @@ Required.
               \[StartDateTime \<DateTime?\>\]: 
               \[Theme \<String\>\]: scheduleEntityTheme
               \[OpenSlotCount \<Int32?\>\]: Count of the number of slots for the given open shift.
-            \[IsStagedForDeletion \<Boolean?\>\]: 
-            \[SchedulingGroupId \<String\>\]: ID for the scheduling group that the open shift belongs to.
+            \[IsStagedForDeletion \<Boolean?\>\]: The openShift is marked for deletion, a process that is finalized when the schedule is shared.
+            \[SchedulingGroupId \<String\>\]: The ID of the schedulingGroup that contains the openShift.
             \[SharedOpenShift \<IMicrosoftGraphOpenShiftItem\>\]: openShiftItem
           \[OpenShiftsEnabled \<Boolean?\>\]: Indicates whether open shifts are enabled for the schedule.
           \[ProvisionStatus \<String\>\]: operationStatus
@@ -4510,6 +4526,7 @@ Required.
             \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
             \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+            \[Code \<String\>\]: The code for the schedulingGroup to represent an external identifier.
             \[DisplayName \<String\>\]: The display name for the schedulingGroup.
 Required.
             \[UserIds \<String\[\]\>\]: The list of user IDs that are a member of the schedulingGroup.
@@ -4529,12 +4546,13 @@ For example, an assignment or a scheduled break or lunch.
 Required.
               \[DisplayName \<String\>\]: The shift label of the shiftItem.
               \[Notes \<String\>\]: The shift notes for the shiftItem.
-            \[IsStagedForDeletion \<Boolean?\>\]: 
+            \[IsStagedForDeletion \<Boolean?\>\]: The shift is marked for deletion, a process that is finalized when the schedule is shared.
             \[SchedulingGroupId \<String\>\]: ID of the scheduling group the shift is part of.
 Required.
             \[SharedShift \<IMicrosoftGraphShiftItem\>\]: shiftItem
             \[UserId \<String\>\]: ID of the user assigned to the shift.
 Required.
+          \[StartDayOfWeek \<String\>\]: dayOfWeek
           \[SwapShiftsChangeRequests \<IMicrosoftGraphSwapShiftsChangeRequest\[\]\>\]: The swap requests for shifts in the schedule.
             \[RecipientActionMessage \<String\>\]: Custom message sent by recipient of the offer shift request.
             \[RecipientUserId \<String\>\]: User id of the recipient of the offer shift request.
@@ -4549,7 +4567,7 @@ Required.
 Read-only.
             \[RecipientShiftId \<String\>\]: Shift ID for the recipient user with whom the request is to swap.
           \[SwapShiftsRequestsEnabled \<Boolean?\>\]: Indicates whether swap shifts requests are enabled for the schedule.
-          \[TimeCards \<IMicrosoftGraphTimeCard\[\]\>\]: 
+          \[TimeCards \<IMicrosoftGraphTimeCard\[\]\>\]: The time cards in the schedule.
             \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
             \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
             \[Id \<String\>\]: The unique identifier for an entity.
@@ -4583,6 +4601,7 @@ Read-only.
             \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
             \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+            \[Code \<String\>\]: The code of the timeOffReason to represent an external identifier.
             \[DisplayName \<String\>\]: The name of the timeOffReason.
 Required.
             \[IconType \<String\>\]: timeOffReasonIconType
@@ -4617,7 +4636,7 @@ Read-only.
               \[Theme \<String\>\]: scheduleEntityTheme
               \[TimeOffReasonId \<String\>\]: ID of the timeOffReason for this timeOffItem.
 Required.
-            \[IsStagedForDeletion \<Boolean?\>\]: 
+            \[IsStagedForDeletion \<Boolean?\>\]: The timeOff is marked for deletion, a process that is finalized when the schedule is shared.
             \[SharedTimeOff \<IMicrosoftGraphTimeOffItem\>\]: timeOffItem
             \[UserId \<String\>\]: ID of the user assigned to the timeOff.
 Required.
@@ -5772,9 +5791,10 @@ Read-only.
           \[AppliedBy \<IMicrosoftGraphUserIdentity\>\]: userIdentity
             \[(Any) \<Object\>\]: This indicates any property can be added to this object.
             \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-            \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+            \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
             \[IPAddress \<String\>\]: Indicates the client IP address used by user performing the activity (audit log only).
             \[UserPrincipalName \<String\>\]: The userPrincipalName attribute of the user.
           \[AppliedDateTime \<DateTime?\>\]: The timestamp when the approval decision was applied.
@@ -6066,14 +6086,21 @@ Nullable.
 Returns the plannerPlans that the user marked as favorites.
           \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+          \[ArchivalInfo \<IMicrosoftGraphPlannerArchivalInfo\>\]: plannerArchivalInfo
+            \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+            \[Justification \<String\>\]: 
+            \[StatusChangedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+            \[StatusChangedDateTime \<DateTime?\>\]: 
           \[Buckets \<IMicrosoftGraphPlannerBucket\[\]\>\]: Collection of buckets in the plan.
 Read-only.
 Nullable.
             \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+            \[ArchivalInfo \<IMicrosoftGraphPlannerArchivalInfo\>\]: plannerArchivalInfo
             \[CreationSource \<IMicrosoftGraphPlannerBucketCreation\>\]: plannerBucketCreation
               \[(Any) \<Object\>\]: This indicates any property can be added to this object.
               \[CreationSourceKind \<String\>\]: plannerCreationSourceKind
+            \[IsArchived \<Boolean?\>\]: 
             \[Name \<String\>\]: Name of the bucket.
             \[OrderHint \<String\>\]: Hint used to order items of this type in a list view.
 For details about the supported format, see Using order hints in Planner.
@@ -6086,6 +6113,7 @@ Read-only.
               \[ActiveChecklistItemCount \<Int32?\>\]: Number of checklist items with value set to false, representing incomplete items.
               \[AppliedCategories \<IMicrosoftGraphPlannerAppliedCategories\>\]: plannerAppliedCategories
                 \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+              \[ArchivalInfo \<IMicrosoftGraphPlannerArchivalInfo\>\]: plannerArchivalInfo
               \[AssignedToTaskBoardFormat \<IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat\>\]: plannerAssignedToTaskBoardTaskFormat
                 \[(Any) \<Object\>\]: This indicates any property can be added to this object.
                 \[Id \<String\>\]: The unique identifier for an entity.
@@ -6143,14 +6171,25 @@ Read-only.
                 \[(Any) \<Object\>\]: This indicates any property can be added to this object.
                 \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+                \[ApprovalAttachment \<IMicrosoftGraphPlannerBaseApprovalAttachment\>\]: plannerBaseApprovalAttachment
+                  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+                  \[Status \<String\>\]: plannerApprovalStatus
                 \[Checklist \<IMicrosoftGraphPlannerChecklistItems\>\]: plannerChecklistItems
                   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
                 \[CompletionRequirements \<IMicrosoftGraphPlannerTaskCompletionRequirementDetails\>\]: plannerTaskCompletionRequirementDetails
                   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+                  \[ApprovalRequirement \<IMicrosoftGraphPlannerApprovalRequirement\>\]: plannerApprovalRequirement
+                    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+                    \[IsApprovalRequired \<Boolean?\>\]: 
                   \[ChecklistRequirement \<IMicrosoftGraphPlannerChecklistRequirement\>\]: plannerChecklistRequirement
                     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
                     \[RequiredChecklistItemIds \<String\[\]\>\]: A collection of required plannerChecklistItems identifiers to complete the plannerTask.
+                  \[FormsRequirement \<IMicrosoftGraphPlannerFormsRequirement\>\]: plannerFormsRequirement
+                    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+                    \[RequiredForms \<String\[\]\>\]: 
                 \[Description \<String\>\]: Description of the task.
+                \[Forms \<IMicrosoftGraphPlannerFormsDictionary\>\]: plannerFormsDictionary
+                  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
                 \[Notes \<IMicrosoftGraphItemBody\>\]: itemBody
                 \[PreviewType \<String\>\]: plannerPreviewType
                 \[References \<IMicrosoftGraphPlannerExternalReferences\>\]: plannerExternalReferences
@@ -6160,6 +6199,9 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               \[HasDescription \<Boolean?\>\]: Read-only.
 Value is true if the details object of the task has a nonempty description and false otherwise.
+              \[IsArchived \<Boolean?\>\]: 
+              \[IsOnMyDay \<Boolean?\>\]: 
+              \[IsOnMyDayLastModifiedDate \<DateTime?\>\]: 
               \[OrderHint \<String\>\]: Hint used to order items of this type in a list view.
 The format is defined as outlined here.
               \[PercentComplete \<Int32?\>\]: Percentage of task completion.
@@ -6263,6 +6305,7 @@ Read-only.
               \[(Any) \<Object\>\]: This indicates any property can be added to this object.
             \[SharedWith \<IMicrosoftGraphPlannerUserIds\>\]: plannerUserIds
               \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+          \[IsArchived \<Boolean?\>\]: 
           \[Owner \<String\>\]: 
           \[SharedWithContainers \<IMicrosoftGraphPlannerSharedWithContainer\[\]\>\]: List of containers the plan is shared with.
             \[ContainerId \<String\>\]: The identifier of the resource that contains the plan.
@@ -7162,6 +7205,8 @@ For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'.
 Microsoft Entra ID maintains interactive sign-ins going back to April 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
         \[LastSignInRequestId \<String\>\]: Request identifier of the last interactive sign-in performed by this user.
+        \[LastSuccessfulSignInDateTime \<DateTime?\>\]: The datetime of the user's most recent successful sign in activity.
+        \[LastSuccessfulSignInRequestId \<String\>\]: The requestID of the last successful signIn.
       \[SignInSessionsValidFromDateTime \<DateTime?\>\]: Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph). 
 If this happens, the application must acquire a new refresh token by requesting the authorized endpoint.
 Read-only.
@@ -7197,6 +7242,8 @@ Read-only.
           \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
           \[Chat \<IMicrosoftGraphChat\>\]: chat
+        \[Locale \<String\>\]: Represents the chosen locale of a user in Microsoft Teams.
+        \[Region \<String\>\]: Represents the region of the user in Microsoft Teams.
       \[Todo \<IMicrosoftGraphTodo\>\]: todo
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[Id \<String\>\]: The unique identifier for an entity.
@@ -7318,18 +7365,19 @@ Read-only.
             \[OnPremises \<IMicrosoftGraphIdentity\>\]: identity
             \[Phone \<IMicrosoftGraphIdentity\>\]: identity
           \[Description \<IMicrosoftGraphItemBody\>\]: itemBody
-          \[DisplayName \<String\>\]: Display name of the virtual event
+          \[DisplayName \<String\>\]: Display name of the virtual event.
           \[EndDateTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
-          \[Presenters \<IMicrosoftGraphVirtualEventPresenter\[\]\>\]: Presenters' information of the virtual event.
+          \[Presenters \<IMicrosoftGraphVirtualEventPresenter\[\]\>\]: The virtual event presenters.
             \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
             \[Email \<String\>\]: Email address of the presenter.
             \[Identity \<IMicrosoftGraphCommunicationsUserIdentity\>\]: communicationsUserIdentity
               \[(Any) \<Object\>\]: This indicates any property can be added to this object.
               \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-              \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+              \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
               \[TenantId \<String\>\]: The user's tenant ID.
             \[PresenterDetails \<IMicrosoftGraphVirtualEventPresenterDetails\>\]: virtualEventPresenterDetails
               \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -7401,7 +7449,7 @@ Appears when answerInputType is text, multilineText or singleChoice.
                 \[UserId \<String\>\]: The registrant's ID in Microsoft Entra ID.
 Only appears when the registrant is registered in Microsoft Entra ID.
               \[StartDateTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
-          \[Sessions \<IMicrosoftGraphVirtualEventSession\[\]\>\]: Sessions of the virtual event.
+          \[Sessions \<IMicrosoftGraphVirtualEventSession\[\]\>\]: Sessions for the virtual event.
           \[StartDateTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
           \[Status \<String\>\]: virtualEventStatus
           \[Id \<String\>\]: The unique identifier for an entity.
@@ -7890,9 +7938,10 @@ Supports $filter (eq).
         \[Application \<IMicrosoftGraphIdentity\>\]: identity
           \[(Any) \<Object\>\]: This indicates any property can be added to this object.
           \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-          \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
         \[Device \<IMicrosoftGraphIdentity\>\]: identity
         \[User \<IMicrosoftGraphIdentity\>\]: identity
       \[CreatedDateTime \<DateTime?\>\]: The request creation date time.
@@ -8426,11 +8475,15 @@ null if discovery hasn't yet occurred.
           \[SynchronizationRules \<IMicrosoftGraphSynchronizationRule\[\]\>\]: A collection of synchronization rules configured for the synchronizationJob or synchronizationTemplate.
             \[ContainerFilter \<IMicrosoftGraphContainerFilter\>\]: containerFilter
               \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-              \[IncludedContainers \<String\[\]\>\]: 
+              \[IncludedContainers \<String\[\]\>\]: The identifiers of containers, such as organizational units, that are in scope for a synchronization rule.
+For Active Directory organizational units, use the distinguished names.
+An empty list means no container filtering is configured.
             \[Editable \<Boolean?\>\]: true if the synchronization rule can be customized; false if this rule is read-only and shouldn't be changed.
             \[GroupFilter \<IMicrosoftGraphGroupFilter\>\]: groupFilter
               \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-              \[IncludedGroups \<String\[\]\>\]: 
+              \[IncludedGroups \<String\[\]\>\]: Identifiers of groups that are in scope for a synchronization rule.
+For Active Directory groups, use the distinguished names.
+An empty list means no group filtering is configured.
             \[Id \<String\>\]: Synchronization rule identifier.
 Must be one of the identifiers recognized by the synchronization engine.
 Supported rule identifiers can be found in the synchronization template returned by the API.
@@ -8866,10 +8919,10 @@ Read-only.
       \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
       \[CreatedDateTime \<DateTime?\>\]: The start time of the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       \[LastActionDateTime \<DateTime?\>\]: The time of the last action in the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       \[ResourceLocation \<String\>\]: URI of the resource that the operation is performed on.
       \[Status \<String\>\]: longRunningOperationStatus
@@ -9358,16 +9411,18 @@ For example, a user's display name, a team name.
           \[Conversation \<IMicrosoftGraphTeamworkConversationIdentity\>\]: teamworkConversationIdentity
             \[(Any) \<Object\>\]: This indicates any property can be added to this object.
             \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-            \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+            \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
             \[ConversationIdentityType \<String\>\]: teamworkConversationIdentityType
           \[Tag \<IMicrosoftGraphTeamworkTagIdentity\>\]: teamworkTagIdentity
             \[(Any) \<Object\>\]: This indicates any property can be added to this object.
             \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-            \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+            \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
       \[MessageHistory \<IMicrosoftGraphChatMessageHistoryItem\[\]\>\]: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
         \[Actions \<String\>\]: chatMessageActions
         \[ModifiedDateTime \<DateTime?\>\]: The date and time when the message was modified.
@@ -9414,9 +9469,10 @@ Link to the message in Microsoft Teams.
       \[Organizer \<IMicrosoftGraphTeamworkUserIdentity\>\]: teamworkUserIdentity
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-        \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
         \[UserIdentityType \<String\>\]: teamworkUserIdentityType
     \[Operations \<IMicrosoftGraphTeamsAsyncOperation\[\]\>\]: A collection of all the Teams async operations that ran or are running on the chat.
 Nullable.
@@ -9508,6 +9564,11 @@ For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
       \[UpdatedDateTime \<DateTime?\>\]: Datetime when the status was updated.
 The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
 For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
+    \[DisasterRecoveryCapability \<IMicrosoftGraphCloudPcDisasterRecoveryCapability\>\]: cloudPcDisasterRecoveryCapability
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[CapabilityType \<String\>\]: cloudPcDisasterRecoveryCapabilityType
+      \[PrimaryRegion \<String\>\]: 
+      \[SecondaryRegion \<String\>\]: 
     \[DiskEncryptionState \<String\>\]: cloudPcDiskEncryptionState
     \[DisplayName \<String\>\]: The display name of the Cloud PC.
     \[GracePeriodEndDateTime \<DateTime?\>\]: The date and time when the grace period ends and reprovisioning or deprovisioning happen.
@@ -10093,9 +10154,10 @@ Read-only.
             \[SiteGroup \<IMicrosoftGraphSharePointIdentity\>\]: sharePointIdentity
               \[(Any) \<Object\>\]: This indicates any property can be added to this object.
               \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-              \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+              \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
               \[LoginName \<String\>\]: The sign in name of the SharePoint identity.
             \[SiteUser \<IMicrosoftGraphSharePointIdentity\>\]: sharePointIdentity
           \[GrantedToV2 \<IMicrosoftGraphSharePointIdentitySet\>\]: sharePointIdentitySet
@@ -10974,10 +11036,10 @@ Only site collection administrators can seal or unseal content types.
 Possible values include documentLibrary, genericList, task, survey, announcements, contacts, and more.
       \[Operations \<IMicrosoftGraphRichLongRunningOperation\[\]\>\]: The collection of long-running operations on the list.
         \[CreatedDateTime \<DateTime?\>\]: The start time of the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         \[LastActionDateTime \<DateTime?\>\]: The time of the last action in the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         \[ResourceLocation \<String\>\]: URI of the resource that the operation is performed on.
         \[Status \<String\>\]: longRunningOperationStatus
@@ -11910,14 +11972,21 @@ Nullable.
 Returns the plannerPlans owned by the group.
         \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+        \[ArchivalInfo \<IMicrosoftGraphPlannerArchivalInfo\>\]: plannerArchivalInfo
+          \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+          \[Justification \<String\>\]: 
+          \[StatusChangedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+          \[StatusChangedDateTime \<DateTime?\>\]: 
         \[Buckets \<IMicrosoftGraphPlannerBucket\[\]\>\]: Collection of buckets in the plan.
 Read-only.
 Nullable.
           \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+          \[ArchivalInfo \<IMicrosoftGraphPlannerArchivalInfo\>\]: plannerArchivalInfo
           \[CreationSource \<IMicrosoftGraphPlannerBucketCreation\>\]: plannerBucketCreation
             \[(Any) \<Object\>\]: This indicates any property can be added to this object.
             \[CreationSourceKind \<String\>\]: plannerCreationSourceKind
+          \[IsArchived \<Boolean?\>\]: 
           \[Name \<String\>\]: Name of the bucket.
           \[OrderHint \<String\>\]: Hint used to order items of this type in a list view.
 For details about the supported format, see Using order hints in Planner.
@@ -11930,6 +11999,7 @@ Read-only.
             \[ActiveChecklistItemCount \<Int32?\>\]: Number of checklist items with value set to false, representing incomplete items.
             \[AppliedCategories \<IMicrosoftGraphPlannerAppliedCategories\>\]: plannerAppliedCategories
               \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+            \[ArchivalInfo \<IMicrosoftGraphPlannerArchivalInfo\>\]: plannerArchivalInfo
             \[AssignedToTaskBoardFormat \<IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat\>\]: plannerAssignedToTaskBoardTaskFormat
               \[(Any) \<Object\>\]: This indicates any property can be added to this object.
               \[Id \<String\>\]: The unique identifier for an entity.
@@ -11987,14 +12057,25 @@ Read-only.
               \[(Any) \<Object\>\]: This indicates any property can be added to this object.
               \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+              \[ApprovalAttachment \<IMicrosoftGraphPlannerBaseApprovalAttachment\>\]: plannerBaseApprovalAttachment
+                \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+                \[Status \<String\>\]: plannerApprovalStatus
               \[Checklist \<IMicrosoftGraphPlannerChecklistItems\>\]: plannerChecklistItems
                 \[(Any) \<Object\>\]: This indicates any property can be added to this object.
               \[CompletionRequirements \<IMicrosoftGraphPlannerTaskCompletionRequirementDetails\>\]: plannerTaskCompletionRequirementDetails
                 \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+                \[ApprovalRequirement \<IMicrosoftGraphPlannerApprovalRequirement\>\]: plannerApprovalRequirement
+                  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+                  \[IsApprovalRequired \<Boolean?\>\]: 
                 \[ChecklistRequirement \<IMicrosoftGraphPlannerChecklistRequirement\>\]: plannerChecklistRequirement
                   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
                   \[RequiredChecklistItemIds \<String\[\]\>\]: A collection of required plannerChecklistItems identifiers to complete the plannerTask.
+                \[FormsRequirement \<IMicrosoftGraphPlannerFormsRequirement\>\]: plannerFormsRequirement
+                  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+                  \[RequiredForms \<String\[\]\>\]: 
               \[Description \<String\>\]: Description of the task.
+              \[Forms \<IMicrosoftGraphPlannerFormsDictionary\>\]: plannerFormsDictionary
+                \[(Any) \<Object\>\]: This indicates any property can be added to this object.
               \[Notes \<IMicrosoftGraphItemBody\>\]: itemBody
               \[PreviewType \<String\>\]: plannerPreviewType
               \[References \<IMicrosoftGraphPlannerExternalReferences\>\]: plannerExternalReferences
@@ -12004,6 +12085,9 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
             \[HasDescription \<Boolean?\>\]: Read-only.
 Value is true if the details object of the task has a nonempty description and false otherwise.
+            \[IsArchived \<Boolean?\>\]: 
+            \[IsOnMyDay \<Boolean?\>\]: 
+            \[IsOnMyDayLastModifiedDate \<DateTime?\>\]: 
             \[OrderHint \<String\>\]: Hint used to order items of this type in a list view.
 The format is defined as outlined here.
             \[PercentComplete \<Int32?\>\]: Percentage of task completion.
@@ -12107,6 +12191,7 @@ Read-only.
             \[(Any) \<Object\>\]: This indicates any property can be added to this object.
           \[SharedWith \<IMicrosoftGraphPlannerUserIds\>\]: plannerUserIds
             \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[IsArchived \<Boolean?\>\]: 
         \[Owner \<String\>\]: 
         \[SharedWithContainers \<IMicrosoftGraphPlannerSharedWithContainer\[\]\>\]: List of containers the plan is shared with.
           \[ContainerId \<String\>\]: The identifier of the resource that contains the plan.
@@ -12191,6 +12276,7 @@ The maximum length is 50 characters.
         \[Email \<String\>\]: The email address for sending messages to the channel.
 Read-only.
         \[FilesFolder \<IMicrosoftGraphDriveItem\>\]: driveItem
+        \[IsArchived \<Boolean?\>\]: 
         \[IsFavoriteByDefault \<Boolean?\>\]: Indicates whether the channel should automatically be marked 'favorite' for all members of the team.
 Can only be set programmatically with Create team.
 Default: false.
@@ -12281,12 +12367,13 @@ Owner must be specified as an object ID (GUID), not a UPN.
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-        \[DayNotes \<IMicrosoftGraphDayNote\[\]\>\]: 
+        \[ActivitiesIncludedWhenCopyingShiftsEnabled \<Boolean?\>\]: Indicates whether copied shifts should include the activities.
+        \[DayNotes \<IMicrosoftGraphDayNote\[\]\>\]: The day notes in the schedule.
           \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
           \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
           \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-          \[DayNoteDate \<DateTime?\>\]: 
+          \[DayNoteDate \<DateTime?\>\]: The date of the day note.
           \[DraftDayNote \<IMicrosoftGraphItemBody\>\]: itemBody
           \[SharedDayNote \<IMicrosoftGraphItemBody\>\]: itemBody
         \[Enabled \<Boolean?\>\]: Indicates whether the schedule is enabled for the team.
@@ -12345,8 +12432,8 @@ Required.
             \[StartDateTime \<DateTime?\>\]: 
             \[Theme \<String\>\]: scheduleEntityTheme
             \[OpenSlotCount \<Int32?\>\]: Count of the number of slots for the given open shift.
-          \[IsStagedForDeletion \<Boolean?\>\]: 
-          \[SchedulingGroupId \<String\>\]: ID for the scheduling group that the open shift belongs to.
+          \[IsStagedForDeletion \<Boolean?\>\]: The openShift is marked for deletion, a process that is finalized when the schedule is shared.
+          \[SchedulingGroupId \<String\>\]: The ID of the schedulingGroup that contains the openShift.
           \[SharedOpenShift \<IMicrosoftGraphOpenShiftItem\>\]: openShiftItem
         \[OpenShiftsEnabled \<Boolean?\>\]: Indicates whether open shifts are enabled for the schedule.
         \[ProvisionStatus \<String\>\]: operationStatus
@@ -12355,6 +12442,7 @@ Required.
           \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
           \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+          \[Code \<String\>\]: The code for the schedulingGroup to represent an external identifier.
           \[DisplayName \<String\>\]: The display name for the schedulingGroup.
 Required.
           \[UserIds \<String\[\]\>\]: The list of user IDs that are a member of the schedulingGroup.
@@ -12374,12 +12462,13 @@ For example, an assignment or a scheduled break or lunch.
 Required.
             \[DisplayName \<String\>\]: The shift label of the shiftItem.
             \[Notes \<String\>\]: The shift notes for the shiftItem.
-          \[IsStagedForDeletion \<Boolean?\>\]: 
+          \[IsStagedForDeletion \<Boolean?\>\]: The shift is marked for deletion, a process that is finalized when the schedule is shared.
           \[SchedulingGroupId \<String\>\]: ID of the scheduling group the shift is part of.
 Required.
           \[SharedShift \<IMicrosoftGraphShiftItem\>\]: shiftItem
           \[UserId \<String\>\]: ID of the user assigned to the shift.
 Required.
+        \[StartDayOfWeek \<String\>\]: dayOfWeek
         \[SwapShiftsChangeRequests \<IMicrosoftGraphSwapShiftsChangeRequest\[\]\>\]: The swap requests for shifts in the schedule.
           \[RecipientActionMessage \<String\>\]: Custom message sent by recipient of the offer shift request.
           \[RecipientUserId \<String\>\]: User id of the recipient of the offer shift request.
@@ -12394,7 +12483,7 @@ Required.
 Read-only.
           \[RecipientShiftId \<String\>\]: Shift ID for the recipient user with whom the request is to swap.
         \[SwapShiftsRequestsEnabled \<Boolean?\>\]: Indicates whether swap shifts requests are enabled for the schedule.
-        \[TimeCards \<IMicrosoftGraphTimeCard\[\]\>\]: 
+        \[TimeCards \<IMicrosoftGraphTimeCard\[\]\>\]: The time cards in the schedule.
           \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
           \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
           \[Id \<String\>\]: The unique identifier for an entity.
@@ -12428,6 +12517,7 @@ Read-only.
           \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
           \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+          \[Code \<String\>\]: The code of the timeOffReason to represent an external identifier.
           \[DisplayName \<String\>\]: The name of the timeOffReason.
 Required.
           \[IconType \<String\>\]: timeOffReasonIconType
@@ -12462,7 +12552,7 @@ Read-only.
             \[Theme \<String\>\]: scheduleEntityTheme
             \[TimeOffReasonId \<String\>\]: ID of the timeOffReason for this timeOffItem.
 Required.
-          \[IsStagedForDeletion \<Boolean?\>\]: 
+          \[IsStagedForDeletion \<Boolean?\>\]: The timeOff is marked for deletion, a process that is finalized when the schedule is shared.
           \[SharedTimeOff \<IMicrosoftGraphTimeOffItem\>\]: timeOffItem
           \[UserId \<String\>\]: ID of the user assigned to the timeOff.
 Required.
@@ -13649,9 +13739,10 @@ Read-only.
       \[AppliedBy \<IMicrosoftGraphUserIdentity\>\]: userIdentity
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-        \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
         \[IPAddress \<String\>\]: Indicates the client IP address used by user performing the activity (audit log only).
         \[UserPrincipalName \<String\>\]: The userPrincipalName attribute of the user.
       \[AppliedDateTime \<DateTime?\>\]: The timestamp when the approval decision was applied.
@@ -14824,6 +14915,8 @@ For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'.
 Microsoft Entra ID maintains interactive sign-ins going back to April 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
     \[LastSignInRequestId \<String\>\]: Request identifier of the last interactive sign-in performed by this user.
+    \[LastSuccessfulSignInDateTime \<DateTime?\>\]: The datetime of the user's most recent successful sign in activity.
+    \[LastSuccessfulSignInRequestId \<String\>\]: The requestID of the last successful signIn.
   \[SignInSessionsValidFromDateTime \<DateTime?\>\]: Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph). 
 If this happens, the application must acquire a new refresh token by requesting the authorized endpoint.
 Read-only.
@@ -14859,6 +14952,8 @@ Read-only.
       \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
       \[Chat \<IMicrosoftGraphChat\>\]: chat
+    \[Locale \<String\>\]: Represents the chosen locale of a user in Microsoft Teams.
+    \[Region \<String\>\]: Represents the region of the user in Microsoft Teams.
   \[Todo \<IMicrosoftGraphTodo\>\]: todo
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[Id \<String\>\]: The unique identifier for an entity.
@@ -14980,18 +15075,19 @@ Read-only.
         \[OnPremises \<IMicrosoftGraphIdentity\>\]: identity
         \[Phone \<IMicrosoftGraphIdentity\>\]: identity
       \[Description \<IMicrosoftGraphItemBody\>\]: itemBody
-      \[DisplayName \<String\>\]: Display name of the virtual event
+      \[DisplayName \<String\>\]: Display name of the virtual event.
       \[EndDateTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
-      \[Presenters \<IMicrosoftGraphVirtualEventPresenter\[\]\>\]: Presenters' information of the virtual event.
+      \[Presenters \<IMicrosoftGraphVirtualEventPresenter\[\]\>\]: The virtual event presenters.
         \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
         \[Email \<String\>\]: Email address of the presenter.
         \[Identity \<IMicrosoftGraphCommunicationsUserIdentity\>\]: communicationsUserIdentity
           \[(Any) \<Object\>\]: This indicates any property can be added to this object.
           \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-          \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
           \[TenantId \<String\>\]: The user's tenant ID.
         \[PresenterDetails \<IMicrosoftGraphVirtualEventPresenterDetails\>\]: virtualEventPresenterDetails
           \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -15063,7 +15159,7 @@ Appears when answerInputType is text, multilineText or singleChoice.
             \[UserId \<String\>\]: The registrant's ID in Microsoft Entra ID.
 Only appears when the registrant is registered in Microsoft Entra ID.
           \[StartDateTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
-      \[Sessions \<IMicrosoftGraphVirtualEventSession\[\]\>\]: Sessions of the virtual event.
+      \[Sessions \<IMicrosoftGraphVirtualEventSession\[\]\>\]: Sessions for the virtual event.
       \[StartDateTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
       \[Status \<String\>\]: virtualEventStatus
       \[Id \<String\>\]: The unique identifier for an entity.
@@ -15223,9 +15319,10 @@ Read-only.
     \[CreatedBy \<IMicrosoftGraphUserIdentity\>\]: userIdentity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
       \[IPAddress \<String\>\]: Indicates the client IP address used by user performing the activity (audit log only).
       \[UserPrincipalName \<String\>\]: The userPrincipalName attribute of the user.
     \[CreatedDateTime \<DateTime?\>\]: The DateTimeOffset when the job was created.
@@ -15779,9 +15876,10 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $
         \[Application \<IMicrosoftGraphIdentity\>\]: identity
           \[(Any) \<Object\>\]: This indicates any property can be added to this object.
           \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-          \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
         \[Device \<IMicrosoftGraphIdentity\>\]: identity
         \[User \<IMicrosoftGraphIdentity\>\]: identity
       \[CreatedByUser \<IMicrosoftGraphUser\>\]: user
@@ -16439,11 +16537,15 @@ null if discovery hasn't yet occurred.
                 \[SynchronizationRules \<IMicrosoftGraphSynchronizationRule\[\]\>\]: A collection of synchronization rules configured for the synchronizationJob or synchronizationTemplate.
                   \[ContainerFilter \<IMicrosoftGraphContainerFilter\>\]: containerFilter
                     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-                    \[IncludedContainers \<String\[\]\>\]: 
+                    \[IncludedContainers \<String\[\]\>\]: The identifiers of containers, such as organizational units, that are in scope for a synchronization rule.
+For Active Directory organizational units, use the distinguished names.
+An empty list means no container filtering is configured.
                   \[Editable \<Boolean?\>\]: true if the synchronization rule can be customized; false if this rule is read-only and shouldn't be changed.
                   \[GroupFilter \<IMicrosoftGraphGroupFilter\>\]: groupFilter
                     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-                    \[IncludedGroups \<String\[\]\>\]: 
+                    \[IncludedGroups \<String\[\]\>\]: Identifiers of groups that are in scope for a synchronization rule.
+For Active Directory groups, use the distinguished names.
+An empty list means no group filtering is configured.
                   \[Id \<String\>\]: Synchronization rule identifier.
 Must be one of the identifiers recognized by the synchronization engine.
 Supported rule identifiers can be found in the synchronization template returned by the API.
@@ -16875,10 +16977,10 @@ Read-only.
             \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
             \[CreatedDateTime \<DateTime?\>\]: The start time of the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             \[LastActionDateTime \<DateTime?\>\]: The time of the last action in the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             \[ResourceLocation \<String\>\]: URI of the resource that the operation is performed on.
             \[Status \<String\>\]: longRunningOperationStatus
@@ -17129,16 +17231,18 @@ For example, a user's display name, a team name.
                 \[Conversation \<IMicrosoftGraphTeamworkConversationIdentity\>\]: teamworkConversationIdentity
                   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
                   \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-                  \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+                  \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
                   \[ConversationIdentityType \<String\>\]: teamworkConversationIdentityType
                 \[Tag \<IMicrosoftGraphTeamworkTagIdentity\>\]: teamworkTagIdentity
                   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
                   \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-                  \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+                  \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
             \[MessageHistory \<IMicrosoftGraphChatMessageHistoryItem\[\]\>\]: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
               \[Actions \<String\>\]: chatMessageActions
               \[ModifiedDateTime \<DateTime?\>\]: The date and time when the message was modified.
@@ -17185,9 +17289,10 @@ Link to the message in Microsoft Teams.
             \[Organizer \<IMicrosoftGraphTeamworkUserIdentity\>\]: teamworkUserIdentity
               \[(Any) \<Object\>\]: This indicates any property can be added to this object.
               \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-              \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+              \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
               \[UserIdentityType \<String\>\]: teamworkUserIdentityType
           \[Operations \<IMicrosoftGraphTeamsAsyncOperation\[\]\>\]: A collection of all the Teams async operations that ran or are running on the chat.
 Nullable.
@@ -17279,6 +17384,11 @@ For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
             \[UpdatedDateTime \<DateTime?\>\]: Datetime when the status was updated.
 The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
 For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
+          \[DisasterRecoveryCapability \<IMicrosoftGraphCloudPcDisasterRecoveryCapability\>\]: cloudPcDisasterRecoveryCapability
+            \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+            \[CapabilityType \<String\>\]: cloudPcDisasterRecoveryCapabilityType
+            \[PrimaryRegion \<String\>\]: 
+            \[SecondaryRegion \<String\>\]: 
           \[DiskEncryptionState \<String\>\]: cloudPcDiskEncryptionState
           \[DisplayName \<String\>\]: The display name of the Cloud PC.
           \[GracePeriodEndDateTime \<DateTime?\>\]: The date and time when the grace period ends and reprovisioning or deprovisioning happen.
@@ -17913,9 +18023,10 @@ Read-only.
                       \[SiteGroup \<IMicrosoftGraphSharePointIdentity\>\]: sharePointIdentity
                         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
                         \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-                        \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+                        \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
                         \[LoginName \<String\>\]: The sign in name of the SharePoint identity.
                       \[SiteUser \<IMicrosoftGraphSharePointIdentity\>\]: sharePointIdentity
                     \[GrantedToV2 \<IMicrosoftGraphSharePointIdentitySet\>\]: sharePointIdentitySet
@@ -18913,10 +19024,10 @@ Read-only.
 Possible values include documentLibrary, genericList, task, survey, announcements, contacts, and more.
             \[Operations \<IMicrosoftGraphRichLongRunningOperation\[\]\>\]: The collection of long-running operations on the list.
               \[CreatedDateTime \<DateTime?\>\]: The start time of the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
               \[LastActionDateTime \<DateTime?\>\]: The time of the last action in the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
               \[ResourceLocation \<String\>\]: URI of the resource that the operation is performed on.
               \[Status \<String\>\]: longRunningOperationStatus
@@ -19321,6 +19432,7 @@ The maximum length is 50 characters.
             \[Email \<String\>\]: The email address for sending messages to the channel.
 Read-only.
             \[FilesFolder \<IMicrosoftGraphDriveItem\>\]: driveItem
+            \[IsArchived \<Boolean?\>\]: 
             \[IsFavoriteByDefault \<Boolean?\>\]: Indicates whether the channel should automatically be marked 'favorite' for all members of the team.
 Can only be set programmatically with Create team.
 Default: false.
@@ -19411,12 +19523,13 @@ Owner must be specified as an object ID (GUID), not a UPN.
             \[(Any) \<Object\>\]: This indicates any property can be added to this object.
             \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-            \[DayNotes \<IMicrosoftGraphDayNote\[\]\>\]: 
+            \[ActivitiesIncludedWhenCopyingShiftsEnabled \<Boolean?\>\]: Indicates whether copied shifts should include the activities.
+            \[DayNotes \<IMicrosoftGraphDayNote\[\]\>\]: The day notes in the schedule.
               \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
               \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
               \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-              \[DayNoteDate \<DateTime?\>\]: 
+              \[DayNoteDate \<DateTime?\>\]: The date of the day note.
               \[DraftDayNote \<IMicrosoftGraphItemBody\>\]: itemBody
               \[SharedDayNote \<IMicrosoftGraphItemBody\>\]: itemBody
             \[Enabled \<Boolean?\>\]: Indicates whether the schedule is enabled for the team.
@@ -19475,8 +19588,8 @@ Required.
                 \[StartDateTime \<DateTime?\>\]: 
                 \[Theme \<String\>\]: scheduleEntityTheme
                 \[OpenSlotCount \<Int32?\>\]: Count of the number of slots for the given open shift.
-              \[IsStagedForDeletion \<Boolean?\>\]: 
-              \[SchedulingGroupId \<String\>\]: ID for the scheduling group that the open shift belongs to.
+              \[IsStagedForDeletion \<Boolean?\>\]: The openShift is marked for deletion, a process that is finalized when the schedule is shared.
+              \[SchedulingGroupId \<String\>\]: The ID of the schedulingGroup that contains the openShift.
               \[SharedOpenShift \<IMicrosoftGraphOpenShiftItem\>\]: openShiftItem
             \[OpenShiftsEnabled \<Boolean?\>\]: Indicates whether open shifts are enabled for the schedule.
             \[ProvisionStatus \<String\>\]: operationStatus
@@ -19485,6 +19598,7 @@ Required.
               \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
               \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+              \[Code \<String\>\]: The code for the schedulingGroup to represent an external identifier.
               \[DisplayName \<String\>\]: The display name for the schedulingGroup.
 Required.
               \[UserIds \<String\[\]\>\]: The list of user IDs that are a member of the schedulingGroup.
@@ -19504,12 +19618,13 @@ For example, an assignment or a scheduled break or lunch.
 Required.
                 \[DisplayName \<String\>\]: The shift label of the shiftItem.
                 \[Notes \<String\>\]: The shift notes for the shiftItem.
-              \[IsStagedForDeletion \<Boolean?\>\]: 
+              \[IsStagedForDeletion \<Boolean?\>\]: The shift is marked for deletion, a process that is finalized when the schedule is shared.
               \[SchedulingGroupId \<String\>\]: ID of the scheduling group the shift is part of.
 Required.
               \[SharedShift \<IMicrosoftGraphShiftItem\>\]: shiftItem
               \[UserId \<String\>\]: ID of the user assigned to the shift.
 Required.
+            \[StartDayOfWeek \<String\>\]: dayOfWeek
             \[SwapShiftsChangeRequests \<IMicrosoftGraphSwapShiftsChangeRequest\[\]\>\]: The swap requests for shifts in the schedule.
               \[RecipientActionMessage \<String\>\]: Custom message sent by recipient of the offer shift request.
               \[RecipientUserId \<String\>\]: User id of the recipient of the offer shift request.
@@ -19524,7 +19639,7 @@ Required.
 Read-only.
               \[RecipientShiftId \<String\>\]: Shift ID for the recipient user with whom the request is to swap.
             \[SwapShiftsRequestsEnabled \<Boolean?\>\]: Indicates whether swap shifts requests are enabled for the schedule.
-            \[TimeCards \<IMicrosoftGraphTimeCard\[\]\>\]: 
+            \[TimeCards \<IMicrosoftGraphTimeCard\[\]\>\]: The time cards in the schedule.
               \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
               \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
               \[Id \<String\>\]: The unique identifier for an entity.
@@ -19558,6 +19673,7 @@ Read-only.
               \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
               \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+              \[Code \<String\>\]: The code of the timeOffReason to represent an external identifier.
               \[DisplayName \<String\>\]: The name of the timeOffReason.
 Required.
               \[IconType \<String\>\]: timeOffReasonIconType
@@ -19592,7 +19708,7 @@ Read-only.
                 \[Theme \<String\>\]: scheduleEntityTheme
                 \[TimeOffReasonId \<String\>\]: ID of the timeOffReason for this timeOffItem.
 Required.
-              \[IsStagedForDeletion \<Boolean?\>\]: 
+              \[IsStagedForDeletion \<Boolean?\>\]: The timeOff is marked for deletion, a process that is finalized when the schedule is shared.
               \[SharedTimeOff \<IMicrosoftGraphTimeOffItem\>\]: timeOffItem
               \[UserId \<String\>\]: ID of the user assigned to the timeOff.
 Required.
@@ -21034,14 +21150,21 @@ Nullable.
 Returns the plannerPlans that the user marked as favorites.
             \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+            \[ArchivalInfo \<IMicrosoftGraphPlannerArchivalInfo\>\]: plannerArchivalInfo
+              \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+              \[Justification \<String\>\]: 
+              \[StatusChangedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+              \[StatusChangedDateTime \<DateTime?\>\]: 
             \[Buckets \<IMicrosoftGraphPlannerBucket\[\]\>\]: Collection of buckets in the plan.
 Read-only.
 Nullable.
               \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+              \[ArchivalInfo \<IMicrosoftGraphPlannerArchivalInfo\>\]: plannerArchivalInfo
               \[CreationSource \<IMicrosoftGraphPlannerBucketCreation\>\]: plannerBucketCreation
                 \[(Any) \<Object\>\]: This indicates any property can be added to this object.
                 \[CreationSourceKind \<String\>\]: plannerCreationSourceKind
+              \[IsArchived \<Boolean?\>\]: 
               \[Name \<String\>\]: Name of the bucket.
               \[OrderHint \<String\>\]: Hint used to order items of this type in a list view.
 For details about the supported format, see Using order hints in Planner.
@@ -21054,6 +21177,7 @@ Read-only.
                 \[ActiveChecklistItemCount \<Int32?\>\]: Number of checklist items with value set to false, representing incomplete items.
                 \[AppliedCategories \<IMicrosoftGraphPlannerAppliedCategories\>\]: plannerAppliedCategories
                   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+                \[ArchivalInfo \<IMicrosoftGraphPlannerArchivalInfo\>\]: plannerArchivalInfo
                 \[AssignedToTaskBoardFormat \<IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat\>\]: plannerAssignedToTaskBoardTaskFormat
                   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
                   \[Id \<String\>\]: The unique identifier for an entity.
@@ -21111,14 +21235,25 @@ Read-only.
                   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
                   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+                  \[ApprovalAttachment \<IMicrosoftGraphPlannerBaseApprovalAttachment\>\]: plannerBaseApprovalAttachment
+                    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+                    \[Status \<String\>\]: plannerApprovalStatus
                   \[Checklist \<IMicrosoftGraphPlannerChecklistItems\>\]: plannerChecklistItems
                     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
                   \[CompletionRequirements \<IMicrosoftGraphPlannerTaskCompletionRequirementDetails\>\]: plannerTaskCompletionRequirementDetails
                     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+                    \[ApprovalRequirement \<IMicrosoftGraphPlannerApprovalRequirement\>\]: plannerApprovalRequirement
+                      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+                      \[IsApprovalRequired \<Boolean?\>\]: 
                     \[ChecklistRequirement \<IMicrosoftGraphPlannerChecklistRequirement\>\]: plannerChecklistRequirement
                       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
                       \[RequiredChecklistItemIds \<String\[\]\>\]: A collection of required plannerChecklistItems identifiers to complete the plannerTask.
+                    \[FormsRequirement \<IMicrosoftGraphPlannerFormsRequirement\>\]: plannerFormsRequirement
+                      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+                      \[RequiredForms \<String\[\]\>\]: 
                   \[Description \<String\>\]: Description of the task.
+                  \[Forms \<IMicrosoftGraphPlannerFormsDictionary\>\]: plannerFormsDictionary
+                    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
                   \[Notes \<IMicrosoftGraphItemBody\>\]: itemBody
                   \[PreviewType \<String\>\]: plannerPreviewType
                   \[References \<IMicrosoftGraphPlannerExternalReferences\>\]: plannerExternalReferences
@@ -21128,6 +21263,9 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
                 \[HasDescription \<Boolean?\>\]: Read-only.
 Value is true if the details object of the task has a nonempty description and false otherwise.
+                \[IsArchived \<Boolean?\>\]: 
+                \[IsOnMyDay \<Boolean?\>\]: 
+                \[IsOnMyDayLastModifiedDate \<DateTime?\>\]: 
                 \[OrderHint \<String\>\]: Hint used to order items of this type in a list view.
 The format is defined as outlined here.
                 \[PercentComplete \<Int32?\>\]: Percentage of task completion.
@@ -21231,6 +21369,7 @@ Read-only.
                 \[(Any) \<Object\>\]: This indicates any property can be added to this object.
               \[SharedWith \<IMicrosoftGraphPlannerUserIds\>\]: plannerUserIds
                 \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+            \[IsArchived \<Boolean?\>\]: 
             \[Owner \<String\>\]: 
             \[SharedWithContainers \<IMicrosoftGraphPlannerSharedWithContainer\[\]\>\]: List of containers the plan is shared with.
               \[ContainerId \<String\>\]: The identifier of the resource that contains the plan.
@@ -21828,6 +21967,8 @@ For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'.
 Microsoft Entra ID maintains interactive sign-ins going back to April 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
           \[LastSignInRequestId \<String\>\]: Request identifier of the last interactive sign-in performed by this user.
+          \[LastSuccessfulSignInDateTime \<DateTime?\>\]: The datetime of the user's most recent successful sign in activity.
+          \[LastSuccessfulSignInRequestId \<String\>\]: The requestID of the last successful signIn.
         \[SignInSessionsValidFromDateTime \<DateTime?\>\]: Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph). 
 If this happens, the application must acquire a new refresh token by requesting the authorized endpoint.
 Read-only.
@@ -21863,6 +22004,8 @@ Read-only.
             \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
             \[Chat \<IMicrosoftGraphChat\>\]: chat
+          \[Locale \<String\>\]: Represents the chosen locale of a user in Microsoft Teams.
+          \[Region \<String\>\]: Represents the region of the user in Microsoft Teams.
         \[Todo \<IMicrosoftGraphTodo\>\]: todo
           \[(Any) \<Object\>\]: This indicates any property can be added to this object.
           \[Id \<String\>\]: The unique identifier for an entity.
@@ -21984,18 +22127,19 @@ Read-only.
               \[OnPremises \<IMicrosoftGraphIdentity\>\]: identity
               \[Phone \<IMicrosoftGraphIdentity\>\]: identity
             \[Description \<IMicrosoftGraphItemBody\>\]: itemBody
-            \[DisplayName \<String\>\]: Display name of the virtual event
+            \[DisplayName \<String\>\]: Display name of the virtual event.
             \[EndDateTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
-            \[Presenters \<IMicrosoftGraphVirtualEventPresenter\[\]\>\]: Presenters' information of the virtual event.
+            \[Presenters \<IMicrosoftGraphVirtualEventPresenter\[\]\>\]: The virtual event presenters.
               \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
               \[Email \<String\>\]: Email address of the presenter.
               \[Identity \<IMicrosoftGraphCommunicationsUserIdentity\>\]: communicationsUserIdentity
                 \[(Any) \<Object\>\]: This indicates any property can be added to this object.
                 \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-                \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+                \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
                 \[TenantId \<String\>\]: The user's tenant ID.
               \[PresenterDetails \<IMicrosoftGraphVirtualEventPresenterDetails\>\]: virtualEventPresenterDetails
                 \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -22067,7 +22211,7 @@ Appears when answerInputType is text, multilineText or singleChoice.
                   \[UserId \<String\>\]: The registrant's ID in Microsoft Entra ID.
 Only appears when the registrant is registered in Microsoft Entra ID.
                 \[StartDateTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
-            \[Sessions \<IMicrosoftGraphVirtualEventSession\[\]\>\]: Sessions of the virtual event.
+            \[Sessions \<IMicrosoftGraphVirtualEventSession\[\]\>\]: Sessions for the virtual event.
             \[StartDateTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
             \[Status \<String\>\]: virtualEventStatus
             \[Id \<String\>\]: The unique identifier for an entity.
@@ -22583,9 +22727,10 @@ Read-only.
   \[CreatedBy \<IMicrosoftGraphUserIdentity\>\]: userIdentity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-    \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     \[IPAddress \<String\>\]: Indicates the client IP address used by user performing the activity (audit log only).
     \[UserPrincipalName \<String\>\]: The userPrincipalName attribute of the user.
   \[CreatedDateTime \<DateTime?\>\]: The DateTimeOffset when the job was created.
@@ -22827,9 +22972,10 @@ Read-only.
     \[CreatedBy \<IMicrosoftGraphUserIdentity\>\]: userIdentity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
       \[IPAddress \<String\>\]: Indicates the client IP address used by user performing the activity (audit log only).
       \[UserPrincipalName \<String\>\]: The userPrincipalName attribute of the user.
     \[CreatedDateTime \<DateTime?\>\]: The DateTimeOffset when the job was created.
@@ -23419,9 +23565,10 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $
           \[Application \<IMicrosoftGraphIdentity\>\]: identity
             \[(Any) \<Object\>\]: This indicates any property can be added to this object.
             \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-            \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+            \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
           \[Device \<IMicrosoftGraphIdentity\>\]: identity
           \[User \<IMicrosoftGraphIdentity\>\]: identity
         \[CreatedByUser \<IMicrosoftGraphUser\>\]: user
@@ -24079,11 +24226,15 @@ null if discovery hasn't yet occurred.
                   \[SynchronizationRules \<IMicrosoftGraphSynchronizationRule\[\]\>\]: A collection of synchronization rules configured for the synchronizationJob or synchronizationTemplate.
                     \[ContainerFilter \<IMicrosoftGraphContainerFilter\>\]: containerFilter
                       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-                      \[IncludedContainers \<String\[\]\>\]: 
+                      \[IncludedContainers \<String\[\]\>\]: The identifiers of containers, such as organizational units, that are in scope for a synchronization rule.
+For Active Directory organizational units, use the distinguished names.
+An empty list means no container filtering is configured.
                     \[Editable \<Boolean?\>\]: true if the synchronization rule can be customized; false if this rule is read-only and shouldn't be changed.
                     \[GroupFilter \<IMicrosoftGraphGroupFilter\>\]: groupFilter
                       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-                      \[IncludedGroups \<String\[\]\>\]: 
+                      \[IncludedGroups \<String\[\]\>\]: Identifiers of groups that are in scope for a synchronization rule.
+For Active Directory groups, use the distinguished names.
+An empty list means no group filtering is configured.
                     \[Id \<String\>\]: Synchronization rule identifier.
 Must be one of the identifiers recognized by the synchronization engine.
 Supported rule identifiers can be found in the synchronization template returned by the API.
@@ -24515,10 +24666,10 @@ Read-only.
               \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
               \[CreatedDateTime \<DateTime?\>\]: The start time of the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
               \[LastActionDateTime \<DateTime?\>\]: The time of the last action in the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
               \[ResourceLocation \<String\>\]: URI of the resource that the operation is performed on.
               \[Status \<String\>\]: longRunningOperationStatus
@@ -24769,16 +24920,18 @@ For example, a user's display name, a team name.
                   \[Conversation \<IMicrosoftGraphTeamworkConversationIdentity\>\]: teamworkConversationIdentity
                     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
                     \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-                    \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+                    \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
                     \[ConversationIdentityType \<String\>\]: teamworkConversationIdentityType
                   \[Tag \<IMicrosoftGraphTeamworkTagIdentity\>\]: teamworkTagIdentity
                     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
                     \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-                    \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+                    \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
               \[MessageHistory \<IMicrosoftGraphChatMessageHistoryItem\[\]\>\]: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
                 \[Actions \<String\>\]: chatMessageActions
                 \[ModifiedDateTime \<DateTime?\>\]: The date and time when the message was modified.
@@ -24825,9 +24978,10 @@ Link to the message in Microsoft Teams.
               \[Organizer \<IMicrosoftGraphTeamworkUserIdentity\>\]: teamworkUserIdentity
                 \[(Any) \<Object\>\]: This indicates any property can be added to this object.
                 \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-                \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+                \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
                 \[UserIdentityType \<String\>\]: teamworkUserIdentityType
             \[Operations \<IMicrosoftGraphTeamsAsyncOperation\[\]\>\]: A collection of all the Teams async operations that ran or are running on the chat.
 Nullable.
@@ -24919,6 +25073,11 @@ For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
               \[UpdatedDateTime \<DateTime?\>\]: Datetime when the status was updated.
 The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
 For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
+            \[DisasterRecoveryCapability \<IMicrosoftGraphCloudPcDisasterRecoveryCapability\>\]: cloudPcDisasterRecoveryCapability
+              \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+              \[CapabilityType \<String\>\]: cloudPcDisasterRecoveryCapabilityType
+              \[PrimaryRegion \<String\>\]: 
+              \[SecondaryRegion \<String\>\]: 
             \[DiskEncryptionState \<String\>\]: cloudPcDiskEncryptionState
             \[DisplayName \<String\>\]: The display name of the Cloud PC.
             \[GracePeriodEndDateTime \<DateTime?\>\]: The date and time when the grace period ends and reprovisioning or deprovisioning happen.
@@ -25553,9 +25712,10 @@ Read-only.
                         \[SiteGroup \<IMicrosoftGraphSharePointIdentity\>\]: sharePointIdentity
                           \[(Any) \<Object\>\]: This indicates any property can be added to this object.
                           \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-                          \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+                          \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
                           \[LoginName \<String\>\]: The sign in name of the SharePoint identity.
                         \[SiteUser \<IMicrosoftGraphSharePointIdentity\>\]: sharePointIdentity
                       \[GrantedToV2 \<IMicrosoftGraphSharePointIdentitySet\>\]: sharePointIdentitySet
@@ -26553,10 +26713,10 @@ Read-only.
 Possible values include documentLibrary, genericList, task, survey, announcements, contacts, and more.
               \[Operations \<IMicrosoftGraphRichLongRunningOperation\[\]\>\]: The collection of long-running operations on the list.
                 \[CreatedDateTime \<DateTime?\>\]: The start time of the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
                 \[LastActionDateTime \<DateTime?\>\]: The time of the last action in the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
                 \[ResourceLocation \<String\>\]: URI of the resource that the operation is performed on.
                 \[Status \<String\>\]: longRunningOperationStatus
@@ -26961,6 +27121,7 @@ The maximum length is 50 characters.
               \[Email \<String\>\]: The email address for sending messages to the channel.
 Read-only.
               \[FilesFolder \<IMicrosoftGraphDriveItem\>\]: driveItem
+              \[IsArchived \<Boolean?\>\]: 
               \[IsFavoriteByDefault \<Boolean?\>\]: Indicates whether the channel should automatically be marked 'favorite' for all members of the team.
 Can only be set programmatically with Create team.
 Default: false.
@@ -27051,12 +27212,13 @@ Owner must be specified as an object ID (GUID), not a UPN.
               \[(Any) \<Object\>\]: This indicates any property can be added to this object.
               \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-              \[DayNotes \<IMicrosoftGraphDayNote\[\]\>\]: 
+              \[ActivitiesIncludedWhenCopyingShiftsEnabled \<Boolean?\>\]: Indicates whether copied shifts should include the activities.
+              \[DayNotes \<IMicrosoftGraphDayNote\[\]\>\]: The day notes in the schedule.
                 \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
                 \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
                 \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-                \[DayNoteDate \<DateTime?\>\]: 
+                \[DayNoteDate \<DateTime?\>\]: The date of the day note.
                 \[DraftDayNote \<IMicrosoftGraphItemBody\>\]: itemBody
                 \[SharedDayNote \<IMicrosoftGraphItemBody\>\]: itemBody
               \[Enabled \<Boolean?\>\]: Indicates whether the schedule is enabled for the team.
@@ -27115,8 +27277,8 @@ Required.
                   \[StartDateTime \<DateTime?\>\]: 
                   \[Theme \<String\>\]: scheduleEntityTheme
                   \[OpenSlotCount \<Int32?\>\]: Count of the number of slots for the given open shift.
-                \[IsStagedForDeletion \<Boolean?\>\]: 
-                \[SchedulingGroupId \<String\>\]: ID for the scheduling group that the open shift belongs to.
+                \[IsStagedForDeletion \<Boolean?\>\]: The openShift is marked for deletion, a process that is finalized when the schedule is shared.
+                \[SchedulingGroupId \<String\>\]: The ID of the schedulingGroup that contains the openShift.
                 \[SharedOpenShift \<IMicrosoftGraphOpenShiftItem\>\]: openShiftItem
               \[OpenShiftsEnabled \<Boolean?\>\]: Indicates whether open shifts are enabled for the schedule.
               \[ProvisionStatus \<String\>\]: operationStatus
@@ -27125,6 +27287,7 @@ Required.
                 \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
                 \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+                \[Code \<String\>\]: The code for the schedulingGroup to represent an external identifier.
                 \[DisplayName \<String\>\]: The display name for the schedulingGroup.
 Required.
                 \[UserIds \<String\[\]\>\]: The list of user IDs that are a member of the schedulingGroup.
@@ -27144,12 +27307,13 @@ For example, an assignment or a scheduled break or lunch.
 Required.
                   \[DisplayName \<String\>\]: The shift label of the shiftItem.
                   \[Notes \<String\>\]: The shift notes for the shiftItem.
-                \[IsStagedForDeletion \<Boolean?\>\]: 
+                \[IsStagedForDeletion \<Boolean?\>\]: The shift is marked for deletion, a process that is finalized when the schedule is shared.
                 \[SchedulingGroupId \<String\>\]: ID of the scheduling group the shift is part of.
 Required.
                 \[SharedShift \<IMicrosoftGraphShiftItem\>\]: shiftItem
                 \[UserId \<String\>\]: ID of the user assigned to the shift.
 Required.
+              \[StartDayOfWeek \<String\>\]: dayOfWeek
               \[SwapShiftsChangeRequests \<IMicrosoftGraphSwapShiftsChangeRequest\[\]\>\]: The swap requests for shifts in the schedule.
                 \[RecipientActionMessage \<String\>\]: Custom message sent by recipient of the offer shift request.
                 \[RecipientUserId \<String\>\]: User id of the recipient of the offer shift request.
@@ -27164,7 +27328,7 @@ Required.
 Read-only.
                 \[RecipientShiftId \<String\>\]: Shift ID for the recipient user with whom the request is to swap.
               \[SwapShiftsRequestsEnabled \<Boolean?\>\]: Indicates whether swap shifts requests are enabled for the schedule.
-              \[TimeCards \<IMicrosoftGraphTimeCard\[\]\>\]: 
+              \[TimeCards \<IMicrosoftGraphTimeCard\[\]\>\]: The time cards in the schedule.
                 \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
                 \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
                 \[Id \<String\>\]: The unique identifier for an entity.
@@ -27198,6 +27362,7 @@ Read-only.
                 \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
                 \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+                \[Code \<String\>\]: The code of the timeOffReason to represent an external identifier.
                 \[DisplayName \<String\>\]: The name of the timeOffReason.
 Required.
                 \[IconType \<String\>\]: timeOffReasonIconType
@@ -27232,7 +27397,7 @@ Read-only.
                   \[Theme \<String\>\]: scheduleEntityTheme
                   \[TimeOffReasonId \<String\>\]: ID of the timeOffReason for this timeOffItem.
 Required.
-                \[IsStagedForDeletion \<Boolean?\>\]: 
+                \[IsStagedForDeletion \<Boolean?\>\]: The timeOff is marked for deletion, a process that is finalized when the schedule is shared.
                 \[SharedTimeOff \<IMicrosoftGraphTimeOffItem\>\]: timeOffItem
                 \[UserId \<String\>\]: ID of the user assigned to the timeOff.
 Required.
@@ -28674,14 +28839,21 @@ Nullable.
 Returns the plannerPlans that the user marked as favorites.
               \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+              \[ArchivalInfo \<IMicrosoftGraphPlannerArchivalInfo\>\]: plannerArchivalInfo
+                \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+                \[Justification \<String\>\]: 
+                \[StatusChangedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+                \[StatusChangedDateTime \<DateTime?\>\]: 
               \[Buckets \<IMicrosoftGraphPlannerBucket\[\]\>\]: Collection of buckets in the plan.
 Read-only.
 Nullable.
                 \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+                \[ArchivalInfo \<IMicrosoftGraphPlannerArchivalInfo\>\]: plannerArchivalInfo
                 \[CreationSource \<IMicrosoftGraphPlannerBucketCreation\>\]: plannerBucketCreation
                   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
                   \[CreationSourceKind \<String\>\]: plannerCreationSourceKind
+                \[IsArchived \<Boolean?\>\]: 
                 \[Name \<String\>\]: Name of the bucket.
                 \[OrderHint \<String\>\]: Hint used to order items of this type in a list view.
 For details about the supported format, see Using order hints in Planner.
@@ -28694,6 +28866,7 @@ Read-only.
                   \[ActiveChecklistItemCount \<Int32?\>\]: Number of checklist items with value set to false, representing incomplete items.
                   \[AppliedCategories \<IMicrosoftGraphPlannerAppliedCategories\>\]: plannerAppliedCategories
                     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+                  \[ArchivalInfo \<IMicrosoftGraphPlannerArchivalInfo\>\]: plannerArchivalInfo
                   \[AssignedToTaskBoardFormat \<IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat\>\]: plannerAssignedToTaskBoardTaskFormat
                     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
                     \[Id \<String\>\]: The unique identifier for an entity.
@@ -28751,14 +28924,25 @@ Read-only.
                     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
                     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+                    \[ApprovalAttachment \<IMicrosoftGraphPlannerBaseApprovalAttachment\>\]: plannerBaseApprovalAttachment
+                      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+                      \[Status \<String\>\]: plannerApprovalStatus
                     \[Checklist \<IMicrosoftGraphPlannerChecklistItems\>\]: plannerChecklistItems
                       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
                     \[CompletionRequirements \<IMicrosoftGraphPlannerTaskCompletionRequirementDetails\>\]: plannerTaskCompletionRequirementDetails
                       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+                      \[ApprovalRequirement \<IMicrosoftGraphPlannerApprovalRequirement\>\]: plannerApprovalRequirement
+                        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+                        \[IsApprovalRequired \<Boolean?\>\]: 
                       \[ChecklistRequirement \<IMicrosoftGraphPlannerChecklistRequirement\>\]: plannerChecklistRequirement
                         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
                         \[RequiredChecklistItemIds \<String\[\]\>\]: A collection of required plannerChecklistItems identifiers to complete the plannerTask.
+                      \[FormsRequirement \<IMicrosoftGraphPlannerFormsRequirement\>\]: plannerFormsRequirement
+                        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+                        \[RequiredForms \<String\[\]\>\]: 
                     \[Description \<String\>\]: Description of the task.
+                    \[Forms \<IMicrosoftGraphPlannerFormsDictionary\>\]: plannerFormsDictionary
+                      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
                     \[Notes \<IMicrosoftGraphItemBody\>\]: itemBody
                     \[PreviewType \<String\>\]: plannerPreviewType
                     \[References \<IMicrosoftGraphPlannerExternalReferences\>\]: plannerExternalReferences
@@ -28768,6 +28952,9 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
                   \[HasDescription \<Boolean?\>\]: Read-only.
 Value is true if the details object of the task has a nonempty description and false otherwise.
+                  \[IsArchived \<Boolean?\>\]: 
+                  \[IsOnMyDay \<Boolean?\>\]: 
+                  \[IsOnMyDayLastModifiedDate \<DateTime?\>\]: 
                   \[OrderHint \<String\>\]: Hint used to order items of this type in a list view.
 The format is defined as outlined here.
                   \[PercentComplete \<Int32?\>\]: Percentage of task completion.
@@ -28871,6 +29058,7 @@ Read-only.
                   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
                 \[SharedWith \<IMicrosoftGraphPlannerUserIds\>\]: plannerUserIds
                   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+              \[IsArchived \<Boolean?\>\]: 
               \[Owner \<String\>\]: 
               \[SharedWithContainers \<IMicrosoftGraphPlannerSharedWithContainer\[\]\>\]: List of containers the plan is shared with.
                 \[ContainerId \<String\>\]: The identifier of the resource that contains the plan.
@@ -29468,6 +29656,8 @@ For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'.
 Microsoft Entra ID maintains interactive sign-ins going back to April 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
             \[LastSignInRequestId \<String\>\]: Request identifier of the last interactive sign-in performed by this user.
+            \[LastSuccessfulSignInDateTime \<DateTime?\>\]: The datetime of the user's most recent successful sign in activity.
+            \[LastSuccessfulSignInRequestId \<String\>\]: The requestID of the last successful signIn.
           \[SignInSessionsValidFromDateTime \<DateTime?\>\]: Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph). 
 If this happens, the application must acquire a new refresh token by requesting the authorized endpoint.
 Read-only.
@@ -29503,6 +29693,8 @@ Read-only.
               \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
               \[Chat \<IMicrosoftGraphChat\>\]: chat
+            \[Locale \<String\>\]: Represents the chosen locale of a user in Microsoft Teams.
+            \[Region \<String\>\]: Represents the region of the user in Microsoft Teams.
           \[Todo \<IMicrosoftGraphTodo\>\]: todo
             \[(Any) \<Object\>\]: This indicates any property can be added to this object.
             \[Id \<String\>\]: The unique identifier for an entity.
@@ -29624,18 +29816,19 @@ Read-only.
                 \[OnPremises \<IMicrosoftGraphIdentity\>\]: identity
                 \[Phone \<IMicrosoftGraphIdentity\>\]: identity
               \[Description \<IMicrosoftGraphItemBody\>\]: itemBody
-              \[DisplayName \<String\>\]: Display name of the virtual event
+              \[DisplayName \<String\>\]: Display name of the virtual event.
               \[EndDateTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
-              \[Presenters \<IMicrosoftGraphVirtualEventPresenter\[\]\>\]: Presenters' information of the virtual event.
+              \[Presenters \<IMicrosoftGraphVirtualEventPresenter\[\]\>\]: The virtual event presenters.
                 \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
                 \[Email \<String\>\]: Email address of the presenter.
                 \[Identity \<IMicrosoftGraphCommunicationsUserIdentity\>\]: communicationsUserIdentity
                   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
                   \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-                  \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+                  \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
                   \[TenantId \<String\>\]: The user's tenant ID.
                 \[PresenterDetails \<IMicrosoftGraphVirtualEventPresenterDetails\>\]: virtualEventPresenterDetails
                   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -29707,7 +29900,7 @@ Appears when answerInputType is text, multilineText or singleChoice.
                     \[UserId \<String\>\]: The registrant's ID in Microsoft Entra ID.
 Only appears when the registrant is registered in Microsoft Entra ID.
                   \[StartDateTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
-              \[Sessions \<IMicrosoftGraphVirtualEventSession\[\]\>\]: Sessions of the virtual event.
+              \[Sessions \<IMicrosoftGraphVirtualEventSession\[\]\>\]: Sessions for the virtual event.
               \[StartDateTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
               \[Status \<String\>\]: virtualEventStatus
               \[Id \<String\>\]: The unique identifier for an entity.

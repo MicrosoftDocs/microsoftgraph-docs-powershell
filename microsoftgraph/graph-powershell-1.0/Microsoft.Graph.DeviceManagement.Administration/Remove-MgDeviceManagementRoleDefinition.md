@@ -9,7 +9,7 @@ ms.prod: intune
 # Remove-MgDeviceManagementRoleDefinition
 
 ## SYNOPSIS
-Deletes a deviceAndAppManagementRoleDefinition.
+Deletes a roleDefinition.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgBetaDeviceManagementRoleDefinition?view=graph-powershell-beta)
@@ -29,7 +29,7 @@ Remove-MgDeviceManagementRoleDefinition -InputObject <IDeviceManagementAdministr
 ```
 
 ## DESCRIPTION
-Deletes a deviceAndAppManagementRoleDefinition.
+Deletes a roleDefinition.
 
 ## PARAMETERS
 

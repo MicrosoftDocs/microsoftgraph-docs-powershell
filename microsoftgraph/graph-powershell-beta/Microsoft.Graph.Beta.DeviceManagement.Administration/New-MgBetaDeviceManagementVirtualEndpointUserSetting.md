@@ -17,6 +17,7 @@ Create a new cloudPcUserSetting object.
 ```
 New-MgBetaDeviceManagementVirtualEndpointUserSetting [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphCloudPcUserSettingAssignment[]>] [-CreatedDateTime <DateTime>]
+ [-CrossRegionDisasterRecoverySetting <IMicrosoftGraphCloudPcCrossRegionDisasterRecoverySetting>]
  [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-LocalAdminEnabled] [-ResetEnabled]
  [-RestorePointSetting <IMicrosoftGraphCloudPcRestorePointSetting>] [-SelfServiceEnabled] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -106,11 +107,27 @@ Accept wildcard characters: False
 
 ### -CreatedDateTime
 The date and time the setting was created.
-The Timestamp type represents the date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents the date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'.
 
 ```yaml
 Type: DateTime
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CrossRegionDisasterRecoverySetting
+cloudPcCrossRegionDisasterRecoverySetting
+To construct, see NOTES section for CROSSREGIONDISASTERRECOVERYSETTING properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCloudPcCrossRegionDisasterRecoverySetting
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -154,7 +171,7 @@ Accept wildcard characters: False
 
 ### -LastModifiedDateTime
 The last date and time the setting was modified.
-The Timestamp type represents the date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents the date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'.
 
 ```yaml
@@ -222,9 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### -SelfServiceEnabled
-Indicates whether the self-service option is enabled.
-Default value is false.
-To enable the self-service option, change the setting to true. If the self-service option is enabled, the end user is allowed to perform some self-service operations, such as upgrading the Cloud PC through the end user portal.
+.
 
 ```yaml
 Type: SwitchParameter
@@ -310,11 +325,17 @@ For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'
     \[Target \<IMicrosoftGraphCloudPcManagementAssignmentTarget\>\]: cloudPcManagementAssignmentTarget
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[CreatedDateTime \<DateTime?\>\]: The date and time the setting was created.
-The Timestamp type represents the date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents the date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'.
+  \[CrossRegionDisasterRecoverySetting \<IMicrosoftGraphCloudPcCrossRegionDisasterRecoverySetting\>\]: cloudPcCrossRegionDisasterRecoverySetting
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[CrossRegionDisasterRecoveryEnabled \<Boolean?\>\]: 
+    \[DisasterRecoveryNetworkSetting \<IMicrosoftGraphCloudPcDisasterRecoveryNetworkSetting\>\]: cloudPcDisasterRecoveryNetworkSetting
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[MaintainCrossRegionRestorePointEnabled \<Boolean?\>\]: 
   \[DisplayName \<String\>\]: The setting name displayed in the user interface.
   \[LastModifiedDateTime \<DateTime?\>\]: The last date and time the setting was modified.
-The Timestamp type represents the date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents the date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'.
   \[LocalAdminEnabled \<Boolean?\>\]: Indicates whether the local admin option is enabled.
 Default value is false.
@@ -329,17 +350,24 @@ The default value is false.
     \[FrequencyInHours \<Int32?\>\]: The time interval in hours to take snapshots (restore points) of a Cloud PC automatically.
 Possible values are 4, 6, 12, 16, and 24.
 The default frequency is 12 hours.
+    \[FrequencyType \<String\>\]: cloudPcRestorePointFrequencyType
     \[UserRestoreEnabled \<Boolean?\>\]: If true, the user has the ability to use snapshots to restore Cloud PCs.
 If false, non-admin users can't use snapshots to restore the Cloud PC.
-  \[SelfServiceEnabled \<Boolean?\>\]: Indicates whether the self-service option is enabled.
-Default value is false.
-To enable the self-service option, change the setting to true. If the self-service option is enabled, the end user is allowed to perform some self-service operations, such as upgrading the Cloud PC through the end user portal.
+  \[SelfServiceEnabled \<Boolean?\>\]: 
+
+CROSSREGIONDISASTERRECOVERYSETTING \<IMicrosoftGraphCloudPcCrossRegionDisasterRecoverySetting\>: cloudPcCrossRegionDisasterRecoverySetting
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[CrossRegionDisasterRecoveryEnabled \<Boolean?\>\]: 
+  \[DisasterRecoveryNetworkSetting \<IMicrosoftGraphCloudPcDisasterRecoveryNetworkSetting\>\]: cloudPcDisasterRecoveryNetworkSetting
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[MaintainCrossRegionRestorePointEnabled \<Boolean?\>\]: 
 
 RESTOREPOINTSETTING \<IMicrosoftGraphCloudPcRestorePointSetting\>: cloudPcRestorePointSetting
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[FrequencyInHours \<Int32?\>\]: The time interval in hours to take snapshots (restore points) of a Cloud PC automatically.
 Possible values are 4, 6, 12, 16, and 24.
 The default frequency is 12 hours.
+  \[FrequencyType \<String\>\]: cloudPcRestorePointFrequencyType
   \[UserRestoreEnabled \<Boolean?\>\]: If true, the user has the ability to use snapshots to restore Cloud PCs.
 If false, non-admin users can't use snapshots to restore the Cloud PC.
 

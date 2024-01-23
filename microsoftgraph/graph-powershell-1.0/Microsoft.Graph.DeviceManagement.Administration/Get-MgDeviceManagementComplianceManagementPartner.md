@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementcompliancemanagementpartner
 schema: 2.0.0
 ms.prod: intune
-ms.prod: intune
 ---
 
 # Get-MgDeviceManagementComplianceManagementPartner

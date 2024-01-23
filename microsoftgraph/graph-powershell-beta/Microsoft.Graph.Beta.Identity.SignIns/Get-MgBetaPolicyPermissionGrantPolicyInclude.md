@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicypermissiongrantpolicyinclude
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaPolicyPermissionGrantPolicyInclude
@@ -39,9 +38,6 @@ Get-MgBetaPolicyPermissionGrantPolicyInclude -InputObject <IIdentitySignInsIdent
 ## DESCRIPTION
 Condition sets that are included in this permission grant policy.
 Automatically expanded on GET.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permissiongrantpolicy-list-includes-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get a permission grant policy include by ID 

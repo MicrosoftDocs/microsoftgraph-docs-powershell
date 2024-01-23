@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistcontenttype
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Get-MgBetaSiteListContentType
@@ -37,9 +36,6 @@ Get-MgBetaSiteListContentType -InputObject <ISitesIdentity> [-ExpandProperty <St
 
 ## DESCRIPTION
 The collection of content types present in this list.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/list-list-contenttypes-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaSiteListContentType Cmdlet
@@ -293,6 +289,8 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
   \[GroupId \<String\>\]: The unique identifier of group
   \[GroupId1 \<String\>\]: The unique identifier of group
+  \[HorizontalSectionColumnId \<String\>\]: The unique identifier of horizontalSectionColumn
+  \[HorizontalSectionId \<String\>\]: The unique identifier of horizontalSection
   \[IncludePersonalNotebooks \<Boolean?\>\]: Usage: includePersonalNotebooks={includePersonalNotebooks}
   \[InformationProtectionLabelId \<String\>\]: The unique identifier of informationProtectionLabel
   \[Interval \<String\>\]: Usage: interval='{interval}'
@@ -328,6 +326,7 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[ThreatAssessmentResultId \<String\>\]: The unique identifier of threatAssessmentResult
   \[Token \<String\>\]: Usage: token='{token}'
   \[UserId \<String\>\]: The unique identifier of user
+  \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
 [Get-MgSiteListContentType](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListContentType?view=graph-powershell-1.0)

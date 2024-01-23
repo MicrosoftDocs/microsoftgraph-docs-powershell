@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetaprivacysubjectrightsrequestnote
 schema: 2.0.0
-ms.prod: compliance
 ---
 
 # Get-MgBetaPrivacySubjectRightsRequestNote
@@ -37,9 +36,6 @@ Get-MgBetaPrivacySubjectRightsRequestNote -InputObject <IComplianceIdentity> [-E
 
 ## DESCRIPTION
 List of notes associated with the request.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/subjectrightsrequest-list-notes-permissions.md)]
 
 ## PARAMETERS
 

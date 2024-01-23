@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationtemplate
 schema: 2.0.0
 ms.prod: applications
-ms.prod: applications
 ---
 
 # Get-MgBetaApplicationTemplate
@@ -41,9 +40,6 @@ Retrieve the properties of an applicationTemplate object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/applicationtemplate-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/applicationtemplate-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

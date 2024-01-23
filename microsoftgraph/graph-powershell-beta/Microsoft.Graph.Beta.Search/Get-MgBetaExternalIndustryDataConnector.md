@@ -4,13 +4,12 @@ Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydataconnector
 schema: 2.0.0
 ms.prod: industry-data-etl
-ms.prod: industry-data-etl
 ---
 
 # Get-MgBetaExternalIndustryDataConnector
 
 ## SYNOPSIS
-Read the properties and relationships of an azureDataLakeConnector object.
+Read the properties and relationships of an industryDataConnector object.
 
 ## SYNTAX
 
@@ -34,13 +33,10 @@ Get-MgBetaExternalIndustryDataConnector -InputObject <ISearchIdentity> [-ExpandP
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an azureDataLakeConnector object.
+Read the properties and relationships of an industryDataConnector object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-azuredatalakeconnector-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-industrydataconnector-list-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-industrydataconnector-get-permissions.md)]
 
 ## PARAMETERS
 

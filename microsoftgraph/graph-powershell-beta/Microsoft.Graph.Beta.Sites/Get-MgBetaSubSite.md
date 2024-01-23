@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasubsite
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Get-MgBetaSubSite
@@ -37,9 +36,6 @@ Get-MgBetaSubSite -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-P
 
 ## DESCRIPTION
 The collection of the sub-sites under this site.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-list-subsites-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaSubSite Cmdlet
@@ -278,6 +274,8 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
   \[GroupId \<String\>\]: The unique identifier of group
   \[GroupId1 \<String\>\]: The unique identifier of group
+  \[HorizontalSectionColumnId \<String\>\]: The unique identifier of horizontalSectionColumn
+  \[HorizontalSectionId \<String\>\]: The unique identifier of horizontalSection
   \[IncludePersonalNotebooks \<Boolean?\>\]: Usage: includePersonalNotebooks={includePersonalNotebooks}
   \[InformationProtectionLabelId \<String\>\]: The unique identifier of informationProtectionLabel
   \[Interval \<String\>\]: Usage: interval='{interval}'
@@ -313,6 +311,7 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[ThreatAssessmentResultId \<String\>\]: The unique identifier of threatAssessmentResult
   \[Token \<String\>\]: Usage: token='{token}'
   \[UserId \<String\>\]: The unique identifier of user
+  \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
 [Get-MgSubSite](/powershell/module/Microsoft.Graph.Sites/Get-MgSubSite?view=graph-powershell-1.0)

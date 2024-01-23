@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfolderchildfolder
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Get-MgBetaUserMailFolderChildFolder
@@ -37,9 +36,6 @@ Get-MgBetaUserMailFolderChildFolder -InputObject <IMailIdentity> [-ExpandPropert
 
 ## DESCRIPTION
 The collection of child folders in the mailFolder.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailfolder-list-childfolders-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: List mail folders

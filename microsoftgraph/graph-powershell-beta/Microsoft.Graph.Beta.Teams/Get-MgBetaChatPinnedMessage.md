@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatpinnedmessage
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Get-MgBetaChatPinnedMessage
@@ -51,9 +50,6 @@ Get-MgBetaChatPinnedMessage -InputObject <ITeamsIdentity> [-ExpandProperty <Stri
 ## DESCRIPTION
 A collection of all the pinned messages in the chat.
 Nullable.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-list-pinnedmessages-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: List all the pinned messages in a chat

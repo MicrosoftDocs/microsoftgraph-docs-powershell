@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.People-help.xml
 Module Name: Microsoft.Graph.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mguserperson
 schema: 2.0.0
-ms.prod: insights
 ---
 
 # Get-MgUserPerson
@@ -38,9 +37,6 @@ Get-MgUserPerson -InputObject <IPeopleIdentity> [-Property <String[]>] [<CommonP
 People that are relevant to the user.
 Read-only.
 Nullable.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-list-people-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

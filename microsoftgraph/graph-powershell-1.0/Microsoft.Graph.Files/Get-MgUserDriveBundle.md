@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivebundle
 schema: 2.0.0
 ms.prod: sharepoint
-ms.prod: sharepoint
 ---
 
 # Get-MgUserDriveBundle
@@ -41,9 +40,6 @@ Retrieve the metadata for a \[bundle\]\[\] based on the unique ID of the bundle.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bundle-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bundle-list-permissions.md)]
 
 ## PARAMETERS
 

@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycaseoperation
 schema: 2.0.0
 ms.prod: ediscovery
-ms.prod: ediscovery
 ---
 
 # Get-MgBetaSecurityCaseEdiscoveryCaseOperation
@@ -41,9 +40,6 @@ Read the properties and relationships of a caseOperation object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-caseoperation-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverycase-list-operations-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

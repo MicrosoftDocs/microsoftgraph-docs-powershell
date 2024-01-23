@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportmonthlyprintusagebyprinter
 schema: 2.0.0
-ms.prod: cloud-printing
 ---
 
 # Get-MgBetaReportMonthlyPrintUsageByPrinter
@@ -37,9 +36,6 @@ Get-MgBetaReportMonthlyPrintUsageByPrinter -InputObject <IReportsIdentity> [-Exp
 
 ## DESCRIPTION
 Retrieve a list of monthly print usage summaries, grouped by printer.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-list-monthlyprintusagebyprinter-permissions.md)]
 
 ## PARAMETERS
 

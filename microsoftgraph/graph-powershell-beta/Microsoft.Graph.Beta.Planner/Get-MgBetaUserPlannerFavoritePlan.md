@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannerfavoriteplan
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # Get-MgBetaUserPlannerFavoritePlan
@@ -38,9 +37,6 @@ Get-MgBetaUserPlannerFavoritePlan -InputObject <IPlannerIdentity> [-ExpandProper
 Read-only.
 Nullable.
 Returns the plannerPlans that the user marked as favorites.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/planneruser-list-favoriteplans-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserPlannerFavoritePlan Cmdlet

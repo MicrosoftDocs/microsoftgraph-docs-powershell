@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewdefinitioninstancecontactedreviewer
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Get-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer
@@ -46,9 +45,6 @@ Returns the collection of reviewers who were contacted to complete this review.
 While the reviewers and fallbackReviewers properties of the accessReviewScheduleDefinition might specify group owners or managers as reviewers, contactedReviewers returns their individual identities.
 Supports $select.
 Read-only.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewinstance-list-contactedreviewers-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

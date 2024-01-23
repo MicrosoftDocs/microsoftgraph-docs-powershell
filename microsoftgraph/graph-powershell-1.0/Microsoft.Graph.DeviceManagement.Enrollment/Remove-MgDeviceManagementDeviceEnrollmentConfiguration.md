@@ -9,7 +9,7 @@ ms.prod: intune
 # Remove-MgDeviceManagementDeviceEnrollmentConfiguration
 
 ## SYNOPSIS
-Deletes a deviceEnrollmentPlatformRestrictionsConfiguration.
+Deletes a deviceEnrollmentWindowsHelloForBusinessConfiguration.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Remove-MgBetaDeviceManagementDeviceEnrollmentConfiguration?view=graph-powershell-beta)
@@ -29,7 +29,7 @@ Remove-MgDeviceManagementDeviceEnrollmentConfiguration -InputObject <IDeviceMana
 ```
 
 ## DESCRIPTION
-Deletes a deviceEnrollmentPlatformRestrictionsConfiguration.
+Deletes a deviceEnrollmentWindowsHelloForBusinessConfiguration.
 
 ## PARAMETERS
 

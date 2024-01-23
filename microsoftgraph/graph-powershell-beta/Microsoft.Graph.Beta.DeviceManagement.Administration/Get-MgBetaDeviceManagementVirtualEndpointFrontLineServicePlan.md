@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointfrontlineserviceplan
 schema: 2.0.0
 ms.prod: cloud-pc
-ms.prod: cloud-pc
 ---
 
 # Get-MgBetaDeviceManagementVirtualEndpointFrontLineServicePlan
@@ -39,9 +38,6 @@ Get the properties and relationships of a cloudPcFrontLineServicePlan object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcfrontlineserviceplan-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-list-frontlineserviceplans-permissions.md)]
 
 ## PARAMETERS
 

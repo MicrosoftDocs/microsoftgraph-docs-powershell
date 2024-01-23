@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+Display name of the virtual event.
 
 ```yaml
 Type: String
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sessions
-.
+Sessions for the virtual event.
 To construct, see NOTES section for SESSIONS properties and create a hash table.
 
 ```yaml
@@ -311,20 +311,21 @@ For example, if a user changes their display name, the API might show the new va
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[Content \<String\>\]: The content of the item.
     \[ContentType \<String\>\]: bodyType
-  \[DisplayName \<String\>\]: 
+  \[DisplayName \<String\>\]: Display name of the virtual event.
   \[EndDateTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DateTime \<String\>\]: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
     \[TimeZone \<String\>\]: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for more possible values.
-  \[Sessions \<IMicrosoftGraphVirtualEventSession\[\]\>\]: 
-    \[AllowAttendeeToEnableCamera \<Boolean?\>\]: 
-    \[AllowAttendeeToEnableMic \<Boolean?\>\]: 
+  \[Sessions \<IMicrosoftGraphVirtualEventSession\[\]\>\]: Sessions for the virtual event.
+    \[AllowAttendeeToEnableCamera \<Boolean?\>\]: Indicates whether attendees can turn on their camera.
+    \[AllowAttendeeToEnableMic \<Boolean?\>\]: Indicates whether attendees can turn on their microphone.
     \[AllowMeetingChat \<String\>\]: meetingChatMode
-    \[AllowParticipantsToChangeName \<Boolean?\>\]: 
-    \[AllowTeamworkReactions \<Boolean?\>\]: 
+    \[AllowParticipantsToChangeName \<Boolean?\>\]: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+    \[AllowTeamworkReactions \<Boolean?\>\]: Indicates if Teams reactions are enabled for the meeting.
     \[AllowedPresenters \<String\>\]: onlineMeetingPresenters
-    \[AttendanceReports \<IMicrosoftGraphMeetingAttendanceReport\[\]\>\]: 
+    \[AttendanceReports \<IMicrosoftGraphMeetingAttendanceReport\[\]\>\]: The attendance reports of an online meeting.
+Read-only.
       \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
       \[AttendanceRecords \<IMicrosoftGraphAttendanceRecord\[\]\>\]: List of attendance records of an attendance report.
@@ -359,7 +360,7 @@ Read-only.
       \[MessageId \<String\>\]: The unique identifier of a message in a Microsoft Teams channel.
       \[ReplyChainMessageId \<String\>\]: The ID of the reply message.
       \[ThreadId \<String\>\]: The unique identifier for a thread in Microsoft Teams.
-    \[IsEntryExitAnnounced \<Boolean?\>\]: 
+    \[IsEntryExitAnnounced \<Boolean?\>\]: Indicates whether to announce when callers join or leave.
     \[JoinInformation \<IMicrosoftGraphItemBody\>\]: itemBody
     \[JoinMeetingIdSettings \<IMicrosoftGraphJoinMeetingIdSettings\>\]: joinMeetingIdSettings
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -371,16 +372,18 @@ Read-only.
       \[Passcode \<String\>\]: The passcode to join a meeting. 
 Optional.
 Read-only.
-    \[JoinWebUrl \<String\>\]: 
+    \[JoinWebUrl \<String\>\]: The join URL of the online meeting.
+Read-only.
     \[LobbyBypassSettings \<IMicrosoftGraphLobbyBypassSettings\>\]: lobbyBypassSettings
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[IsDialInBypassEnabled \<Boolean?\>\]: Specifies whether or not to always let dial-in callers bypass the lobby.
 Optional.
       \[Scope \<String\>\]: lobbyBypassScope
-    \[RecordAutomatically \<Boolean?\>\]: 
+    \[RecordAutomatically \<Boolean?\>\]: Indicates whether to record the meeting automatically.
     \[ShareMeetingChatHistoryDefault \<String\>\]: meetingChatHistoryDefaultMode
-    \[Subject \<String\>\]: 
-    \[VideoTeleconferenceId \<String\>\]: 
+    \[Subject \<String\>\]: The subject of the online meeting.
+    \[VideoTeleconferenceId \<String\>\]: The video teleconferencing ID.
+Read-only.
     \[WatermarkProtection \<IMicrosoftGraphWatermarkProtectionValues\>\]: watermarkProtectionValues
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[IsEnabledForContentSharing \<Boolean?\>\]: Indicates whether to apply a watermark to any shared content.
@@ -439,14 +442,15 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[VirtualEventSessionId \<String\>\]: The unique identifier of virtualEventSession
   \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
-SESSIONS \<IMicrosoftGraphVirtualEventSession\[\]\>: .
-  \[AllowAttendeeToEnableCamera \<Boolean?\>\]: 
-  \[AllowAttendeeToEnableMic \<Boolean?\>\]: 
+SESSIONS \<IMicrosoftGraphVirtualEventSession\[\]\>: Sessions for the virtual event.
+  \[AllowAttendeeToEnableCamera \<Boolean?\>\]: Indicates whether attendees can turn on their camera.
+  \[AllowAttendeeToEnableMic \<Boolean?\>\]: Indicates whether attendees can turn on their microphone.
   \[AllowMeetingChat \<String\>\]: meetingChatMode
-  \[AllowParticipantsToChangeName \<Boolean?\>\]: 
-  \[AllowTeamworkReactions \<Boolean?\>\]: 
+  \[AllowParticipantsToChangeName \<Boolean?\>\]: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+  \[AllowTeamworkReactions \<Boolean?\>\]: Indicates if Teams reactions are enabled for the meeting.
   \[AllowedPresenters \<String\>\]: onlineMeetingPresenters
-  \[AttendanceReports \<IMicrosoftGraphMeetingAttendanceReport\[\]\>\]: 
+  \[AttendanceReports \<IMicrosoftGraphMeetingAttendanceReport\[\]\>\]: The attendance reports of an online meeting.
+Read-only.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
     \[AttendanceRecords \<IMicrosoftGraphAttendanceRecord\[\]\>\]: List of attendance records of an attendance report.
@@ -486,7 +490,7 @@ Read-only.
     \[MessageId \<String\>\]: The unique identifier of a message in a Microsoft Teams channel.
     \[ReplyChainMessageId \<String\>\]: The ID of the reply message.
     \[ThreadId \<String\>\]: The unique identifier for a thread in Microsoft Teams.
-  \[IsEntryExitAnnounced \<Boolean?\>\]: 
+  \[IsEntryExitAnnounced \<Boolean?\>\]: Indicates whether to announce when callers join or leave.
   \[JoinInformation \<IMicrosoftGraphItemBody\>\]: itemBody
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[Content \<String\>\]: The content of the item.
@@ -501,16 +505,18 @@ Read-only.
     \[Passcode \<String\>\]: The passcode to join a meeting. 
 Optional.
 Read-only.
-  \[JoinWebUrl \<String\>\]: 
+  \[JoinWebUrl \<String\>\]: The join URL of the online meeting.
+Read-only.
   \[LobbyBypassSettings \<IMicrosoftGraphLobbyBypassSettings\>\]: lobbyBypassSettings
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[IsDialInBypassEnabled \<Boolean?\>\]: Specifies whether or not to always let dial-in callers bypass the lobby.
 Optional.
     \[Scope \<String\>\]: lobbyBypassScope
-  \[RecordAutomatically \<Boolean?\>\]: 
+  \[RecordAutomatically \<Boolean?\>\]: Indicates whether to record the meeting automatically.
   \[ShareMeetingChatHistoryDefault \<String\>\]: meetingChatHistoryDefaultMode
-  \[Subject \<String\>\]: 
-  \[VideoTeleconferenceId \<String\>\]: 
+  \[Subject \<String\>\]: The subject of the online meeting.
+  \[VideoTeleconferenceId \<String\>\]: The video teleconferencing ID.
+Read-only.
   \[WatermarkProtection \<IMicrosoftGraphWatermarkProtectionValues\>\]: watermarkProtectionValues
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[IsEnabledForContentSharing \<Boolean?\>\]: Indicates whether to apply a watermark to any shared content.

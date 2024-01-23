@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationextensionproperty
 schema: 2.0.0
 ms.prod: extensions
-ms.prod: extensions
 ---
 
 # Get-MgApplicationExtensionProperty
@@ -41,9 +40,6 @@ Read a directory extension definition represented by an extensionProperty object
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/extensionproperty-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-list-extensionproperty-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

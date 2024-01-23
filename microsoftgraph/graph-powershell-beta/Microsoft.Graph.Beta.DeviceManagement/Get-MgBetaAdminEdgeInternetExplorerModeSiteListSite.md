@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetaadminedgeinternetexplorermodesitelistsite
 schema: 2.0.0
 ms.prod: browser-management
-ms.prod: browser-management
 ---
 
 # Get-MgBetaAdminEdgeInternetExplorerModeSiteListSite
@@ -41,9 +40,6 @@ Get a browserSite that resides on a browserSiteList.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/browsersite-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/browsersitelist-list-sites-permissions.md)]
 
 ## PARAMETERS
 

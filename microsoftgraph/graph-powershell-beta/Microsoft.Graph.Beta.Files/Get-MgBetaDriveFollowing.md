@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivefollowing
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Get-MgBetaDriveFollowing
@@ -39,9 +38,6 @@ Get-MgBetaDriveFollowing -InputObject <IFilesIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 The list of items the user is following.
 Only in OneDrive for Business.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/drive-list-following-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

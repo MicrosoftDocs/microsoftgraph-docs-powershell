@@ -4,13 +4,12 @@ Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappconfiguration
 schema: 2.0.0
 ms.prod: intune
-ms.prod: intune
 ---
 
 # Get-MgDeviceAppManagementMobileAppConfiguration
 
 ## SYNOPSIS
-Read properties and relationships of the managedDeviceMobileAppConfiguration object.
+Read properties and relationships of the iosMobileAppConfiguration object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileAppConfiguration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppConfiguration?view=graph-powershell-beta)
@@ -37,7 +36,7 @@ Get-MgDeviceAppManagementMobileAppConfiguration -InputObject <IDevicesCorporateM
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the managedDeviceMobileAppConfiguration object.
+Read properties and relationships of the iosMobileAppConfiguration object.
 
 ## PARAMETERS
 

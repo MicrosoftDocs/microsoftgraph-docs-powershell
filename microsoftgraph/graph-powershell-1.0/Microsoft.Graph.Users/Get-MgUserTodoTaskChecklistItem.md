@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskchecklistitem
 schema: 2.0.0
 ms.prod: outlook
-ms.prod: outlook
 ---
 
 # Get-MgUserTodoTaskChecklistItem
@@ -41,9 +40,6 @@ Read the properties and relationships of a checklistItem object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/checklistitem-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/todotask-list-checklistitems-permissions.md)]
 
 ## PARAMETERS
 

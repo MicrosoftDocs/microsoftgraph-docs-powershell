@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaserviceprincipalriskdetection
 schema: 2.0.0
 ms.prod: identity-and-sign-in
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaServicePrincipalRiskDetection
@@ -41,9 +40,6 @@ Read the properties and relationships of a servicePrincipalRiskDetection object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipalriskdetection-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityprotectionroot-list-serviceprincipalriskdetections-permissions.md)]
 
 ## EXAMPLES
 ### Example: Get a specific risk detection object

@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileconnector
 schema: 2.0.0
 ms.prod: applications
-ms.prod: applications
 ---
 
 # Get-MgBetaOnPremisePublishingProfileConnector
@@ -38,9 +37,6 @@ Retrieve the properties and relationships of a connector object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/connector-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/connector-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaOnPremisePublishingProfileConnector Cmdlet

@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrivelistitemdocumentsetversion
 schema: 2.0.0
 ms.prod: sites-and-lists
-ms.prod: sites-and-lists
 ---
 
 # Get-MgBetaUserDriveListItemDocumentSetVersion
@@ -41,9 +40,6 @@ Read the properties and relationships of a documentSetVersion object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/documentsetversion-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/listitem-list-documentsetversions-permissions.md)]
 
 ## PARAMETERS
 

@@ -9,7 +9,7 @@ ms.prod: industry-data-etl
 # New-MgBetaExternalIndustryDataConnector
 
 ## SYNOPSIS
-Create a new industryDataConnector object.
+Create a new azureDataLakeConnector object.
 
 ## SYNTAX
 
@@ -27,10 +27,10 @@ New-MgBetaExternalIndustryDataConnector -BodyParameter <IMicrosoftGraphIndustryD
 ```
 
 ## DESCRIPTION
-Create a new industryDataConnector object.
+Create a new azureDataLakeConnector object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-industrydataconnector-post-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-azuredatalakeconnector-post-permissions.md)]
 
 ## PARAMETERS
 

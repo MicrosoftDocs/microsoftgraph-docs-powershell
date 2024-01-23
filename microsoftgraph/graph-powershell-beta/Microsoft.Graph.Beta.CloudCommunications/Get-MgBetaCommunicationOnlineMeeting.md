@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeeting
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Get-MgBetaCommunicationOnlineMeeting
@@ -51,9 +50,6 @@ Get-MgBetaCommunicationOnlineMeeting
 
 ## DESCRIPTION
 Get onlineMeetings from communications
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onlinemeeting-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

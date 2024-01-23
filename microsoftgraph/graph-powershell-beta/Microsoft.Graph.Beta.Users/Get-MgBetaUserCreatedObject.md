@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausercreatedobject
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Get-MgBetaUserCreatedObject
@@ -41,9 +40,6 @@ Get-MgBetaUserCreatedObject -InputObject <IUsersIdentity> [-ExpandProperty <Stri
 Directory objects that the user created.
 Read-only.
 Nullable.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-createdobjects-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get a list of directory objects that were created by a user

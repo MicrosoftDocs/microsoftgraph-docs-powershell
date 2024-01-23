@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivebundle
 schema: 2.0.0
 ms.prod: sharepoint
-ms.prod: sharepoint
 ---
 
 # Get-MgBetaDriveBundle
@@ -41,9 +40,6 @@ Retrieve the metadata for a \[bundle\]\[\] based on the unique ID of the bundle.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bundle-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bundle-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: List all bundles in a drive

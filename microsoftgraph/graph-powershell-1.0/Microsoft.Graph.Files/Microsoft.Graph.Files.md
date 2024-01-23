@@ -1760,6 +1760,9 @@ Locale: en-US
 ### [New-MgDriveItemListItemDocumentSetVersion](New-MgDriveItemListItemDocumentSetVersion.md)
 {{ Fill in the Description }}
 
+### [New-MgDriveItemListItemLink](New-MgDriveItemListItemLink.md)
+{{ Fill in the Description }}
+
 ### [New-MgDriveItemListItemVersion](New-MgDriveItemListItemVersion.md)
 {{ Fill in the Description }}
 
@@ -1796,6 +1799,9 @@ Locale: en-US
 ### [New-MgDriveListItemDocumentSetVersion](New-MgDriveListItemDocumentSetVersion.md)
 {{ Fill in the Description }}
 
+### [New-MgDriveListItemLink](New-MgDriveListItemLink.md)
+{{ Fill in the Description }}
+
 ### [New-MgDriveListItemVersion](New-MgDriveListItemVersion.md)
 {{ Fill in the Description }}
 
@@ -1815,6 +1821,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [New-MgDriveRootListItemDocumentSetVersion](New-MgDriveRootListItemDocumentSetVersion.md)
+{{ Fill in the Description }}
+
+### [New-MgDriveRootListItemLink](New-MgDriveRootListItemLink.md)
 {{ Fill in the Description }}
 
 ### [New-MgDriveRootListItemVersion](New-MgDriveRootListItemVersion.md)

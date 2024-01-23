@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportappcredentialsigninactivity
 schema: 2.0.0
 ms.prod: identity-and-sign-in
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaReportAppCredentialSignInActivity
@@ -38,9 +37,6 @@ Get an appCredentialSignInActivity object that contains recent activity of an ap
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/appcredentialsigninactivity-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-list-appcredentialsigninactivities-permissions.md)]
 
 ## PARAMETERS
 

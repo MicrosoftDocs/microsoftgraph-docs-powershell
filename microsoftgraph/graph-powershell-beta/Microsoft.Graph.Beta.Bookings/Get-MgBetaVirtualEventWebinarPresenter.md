@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaVirtualEventWebinarPresenter
 
 ## SYNOPSIS
-Presenters' information of the virtual event.
+The virtual event presenters.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgBetaVirtualEventWebinarPresenter -InputObject <IBookingsIdentity> [-Expand
 ```
 
 ## DESCRIPTION
-Presenters' information of the virtual event.
+The virtual event presenters.
 
 ## PARAMETERS
 

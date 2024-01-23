@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Display name of the virtual event
+Display name of the virtual event.
 
 ```yaml
 Type: String
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -Presenters
-Presenters' information of the virtual event.
+The virtual event presenters.
 To construct, see NOTES section for PRESENTERS properties and create a hash table.
 
 ```yaml
@@ -264,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sessions
-Sessions of the virtual event.
+Sessions for the virtual event.
 To construct, see NOTES section for SESSIONS properties and create a hash table.
 
 ```yaml
@@ -379,9 +379,10 @@ BODYPARAMETER \<IMicrosoftGraphVirtualEventWebinar\>: virtualEventWebinar
     \[Application \<IMicrosoftGraphIdentity\>\]: identity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     \[Device \<IMicrosoftGraphIdentity\>\]: identity
     \[User \<IMicrosoftGraphIdentity\>\]: identity
     \[ApplicationInstance \<IMicrosoftGraphIdentity\>\]: identity
@@ -396,23 +397,24 @@ This property is read-only.
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[Content \<String\>\]: The content of the item.
     \[ContentType \<String\>\]: bodyType
-  \[DisplayName \<String\>\]: Display name of the virtual event
+  \[DisplayName \<String\>\]: Display name of the virtual event.
   \[EndDateTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DateTime \<String\>\]: A single point of time in a combined date and time representation ({date}T{time}).
 For example, '2019-04-16T09:00:00'.
     \[TimeZone \<String\>\]: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for possible values.
-  \[Presenters \<IMicrosoftGraphVirtualEventPresenter\[\]\>\]: Presenters' information of the virtual event.
+  \[Presenters \<IMicrosoftGraphVirtualEventPresenter\[\]\>\]: The virtual event presenters.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
     \[Email \<String\>\]: Email address of the presenter.
     \[Identity \<IMicrosoftGraphCommunicationsUserIdentity\>\]: communicationsUserIdentity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
       \[TenantId \<String\>\]: The user's tenant ID.
     \[PresenterDetails \<IMicrosoftGraphVirtualEventPresenterDetails\>\]: virtualEventPresenterDetails
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -536,7 +538,7 @@ Appears when answerInputType is text, multilineText or singleChoice.
         \[UserId \<String\>\]: The registrant's ID in Microsoft Entra ID.
 Only appears when the registrant is registered in Microsoft Entra ID.
       \[StartDateTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
-  \[Sessions \<IMicrosoftGraphVirtualEventSession\[\]\>\]: Sessions of the virtual event.
+  \[Sessions \<IMicrosoftGraphVirtualEventSession\[\]\>\]: Sessions for the virtual event.
   \[StartDateTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
   \[Status \<String\>\]: virtualEventStatus
   \[Id \<String\>\]: The unique identifier for an entity.
@@ -560,9 +562,10 @@ Read-only.
 
 COORGANIZERS \<IMicrosoftGraphCommunicationsUserIdentity\[\]\>: Identity information of coorganizers of the webinar.
   \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-  \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+  \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
   \[TenantId \<String\>\]: The user's tenant ID.
 
 CREATEDBY \<IMicrosoftGraphCommunicationsIdentitySet\>: communicationsIdentitySet
@@ -570,9 +573,10 @@ CREATEDBY \<IMicrosoftGraphCommunicationsIdentitySet\>: communicationsIdentitySe
   \[Application \<IMicrosoftGraphIdentity\>\]: identity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-    \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
   \[Device \<IMicrosoftGraphIdentity\>\]: identity
   \[User \<IMicrosoftGraphIdentity\>\]: identity
   \[ApplicationInstance \<IMicrosoftGraphIdentity\>\]: identity
@@ -618,16 +622,17 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[VirtualEventTownhallId \<String\>\]: The unique identifier of virtualEventTownhall
   \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
-PRESENTERS \<IMicrosoftGraphVirtualEventPresenter\[\]\>: Presenters' information of the virtual event.
+PRESENTERS \<IMicrosoftGraphVirtualEventPresenter\[\]\>: The virtual event presenters.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
   \[Email \<String\>\]: Email address of the presenter.
   \[Identity \<IMicrosoftGraphCommunicationsUserIdentity\>\]: communicationsUserIdentity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-    \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     \[TenantId \<String\>\]: The user's tenant ID.
   \[PresenterDetails \<IMicrosoftGraphVirtualEventPresenterDetails\>\]: virtualEventPresenterDetails
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -669,9 +674,10 @@ Read-only.
         \[Identity \<IMicrosoftGraphIdentity\>\]: identity
           \[(Any) \<Object\>\]: This indicates any property can be added to this object.
           \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-          \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
         \[RegistrantId \<String\>\]: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
         \[Role \<String\>\]: Role of the attendee.
@@ -829,9 +835,10 @@ Read-only.
         \[Identity \<IMicrosoftGraphIdentity\>\]: identity
           \[(Any) \<Object\>\]: This indicates any property can be added to this object.
           \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-          \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
         \[RegistrantId \<String\>\]: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
         \[Role \<String\>\]: Role of the attendee.
@@ -906,9 +913,10 @@ Read-only.
       \[Identity \<IMicrosoftGraphCommunicationsUserIdentity\>\]: communicationsUserIdentity
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-        \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
         \[TenantId \<String\>\]: The user's tenant ID.
       \[PresenterDetails \<IMicrosoftGraphVirtualEventPresenterDetails\>\]: virtualEventPresenterDetails
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -926,7 +934,7 @@ This property is read-only.
   \[UserId \<String\>\]: The registrant's ID in Microsoft Entra ID.
 Only appears when the registrant is registered in Microsoft Entra ID.
 
-SESSIONS \<IMicrosoftGraphVirtualEventSession\[\]\>: Sessions of the virtual event.
+SESSIONS \<IMicrosoftGraphVirtualEventSession\[\]\>: Sessions for the virtual event.
   \[AllowAttendeeToEnableCamera \<Boolean?\>\]: Indicates whether attendees can turn on their camera.
   \[AllowAttendeeToEnableMic \<Boolean?\>\]: Indicates whether attendees can turn on their microphone.
   \[AllowMeetingChat \<String\>\]: meetingChatMode
@@ -954,9 +962,10 @@ Read-only.
       \[Identity \<IMicrosoftGraphIdentity\>\]: identity
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-        \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
       \[RegistrantId \<String\>\]: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
       \[Role \<String\>\]: Role of the attendee.
@@ -1031,9 +1040,10 @@ Read-only.
     \[Identity \<IMicrosoftGraphCommunicationsUserIdentity\>\]: communicationsUserIdentity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
       \[TenantId \<String\>\]: The user's tenant ID.
     \[PresenterDetails \<IMicrosoftGraphVirtualEventPresenterDetails\>\]: virtualEventPresenterDetails
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.

@@ -10,7 +10,7 @@ ms.prod: microsoft-teams
 
 ## SYNOPSIS
 Send an activity feed notification to a user.
-For more details about sending notifications and the requirements for doing so, see sending Teams activity notifications.
+For more information, see sending Teams activity notifications.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Send-MgBetaUserTeamworkActivityNotification](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Send-MgBetaUserTeamworkActivityNotification?view=graph-powershell-beta)
@@ -49,7 +49,7 @@ Send-MgUserTeamworkActivityNotification -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Send an activity feed notification to a user.
-For more details about sending notifications and the requirements for doing so, see sending Teams activity notifications.
+For more information, see sending Teams activity notifications.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userteamwork-sendactivitynotification-permissions.md)]

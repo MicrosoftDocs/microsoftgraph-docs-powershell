@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaallteamchannel
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Get-MgBetaAllTeamChannel
@@ -37,9 +36,6 @@ Get-MgBetaAllTeamChannel -InputObject <ITeamsIdentity> [-ExpandProperty <String[
 
 ## DESCRIPTION
 List of channels either hosted in or shared with the team (incoming channels).
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/team-list-allchannels-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: List all channels
