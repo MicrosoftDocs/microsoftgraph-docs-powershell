@@ -179,8 +179,8 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |Azure AD cmdlet | Microsoft Graph PowerShell cmdlet|
 |------------|--------------|
 |Get-AzureADTrustedCertificateAuthority|[Get-MgOrganizationCertificateBasedAuthConfiguration](/powershell/module/microsoft.graph.identity.signins/get-mgorganizationcertificatebasedauthconfiguration)|
-|New-AzureADTrustedCertificateAuthority||
-|Remove-AzureADTrustedCertificateAuthority||
+|New-AzureADTrustedCertificateAuthority|[New-MgOrganizationCertificateBasedAuthConfiguration](/powershell/module/microsoft.graph.identity.signins/new-mgorganizationcertificatebasedauthconfiguration)|
+|Remove-AzureADTrustedCertificateAuthority|[Remove-MgOrganizationCertificateBasedAuthConfiguration](/powershell/module/microsoft.graph.identity.signins/remove-mgorganizationcertificatebasedauthconfiguration)|
 |Set-AzureADTrustedCertificateAuthority||
 
 ### Connect to your directory
