@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouplifecyclepolicy
 schema: 2.0.0
 ms.prod: groups
-ms.prod: groups
 ---
 
 # Get-MgGroupLifecyclePolicy
@@ -53,9 +52,6 @@ Retrieve the properties and relationships of a groupLifecyclePolicies object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/grouplifecyclepolicy-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/grouplifecyclepolicy-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

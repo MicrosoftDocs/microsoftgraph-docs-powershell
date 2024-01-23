@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalremotedesktopsecurityconfigurationtargetdevicegroup
 schema: 2.0.0
 ms.prod: applications
-ms.prod: applications
 ---
 
 # Get-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup
@@ -38,6 +37,9 @@ Get-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup -Input
 
 ## DESCRIPTION
 Read the properties and relationships of a targetDeviceGroup object for the remoteDesktopSecurityConfiguration object on the servicePrincipal.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/targetdevicegroup-get-permissions.md)]
 
 ## PARAMETERS
 

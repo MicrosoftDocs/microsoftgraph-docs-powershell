@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewdefinition
 schema: 2.0.0
 ms.prod: governance
-ms.prod: governance
 ---
 
 # Get-MgIdentityGovernanceAccessReviewDefinition
@@ -43,9 +42,6 @@ To retrieve the instances of the access review series, use the list accessReview
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewscheduledefinition-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewset-list-definitions-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

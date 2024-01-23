@@ -3,7 +3,7 @@ title: "Find Azure AD and MSOnline cmdlets in Microsoft Graph PowerShell"
 description: "Use this map of the Azure AD PowerShell and MSOnline cmdlets to find their Microsoft Graph PowerShell equivalents."
 
 ms.topic: reference
-ms.date: 11/17/2023
+ms.date: 01/16/2024
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
@@ -58,7 +58,7 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |Get-AzureADMSScopedRoleMembership|[Get-MgUserScopedRoleMemberOf](/powershell/module/microsoft.graph.identity.directorymanagement/get-mguserscopedrolememberof)|
 |New-AzureADMSAdministrativeUnit|[New-MgDirectoryAdministrativeUnit](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryadministrativeunit)|
 |Remove-AzureADMSAdministrativeUnit|[Remove-MgDirectoryAdministrativeUnit](/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryadministrativeunit)|
-|Remove-AzureADMSAdministrativeUnitMember|[Remove-MgDirectoryAdministrativeUnitScopedRoleMember](/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryadministrativeunitscopedrolemember)|
+|Remove-AzureADMSAdministrativeUnitMember|[Remove-MgDirectoryAdministrativeUnitMemberByRef](/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryadministrativeunitmemberbyref)|
 |Remove-AzureADMSScopedRoleMembership|[Remove-MgUserScopedRoleMemberOf](/powershell/module/microsoft.graph.identity.directorymanagement/remove-mguserscopedrolememberof)|
 
 
@@ -179,8 +179,8 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |Azure AD cmdlet | Microsoft Graph PowerShell cmdlet|
 |------------|--------------|
 |Get-AzureADTrustedCertificateAuthority|[Get-MgOrganizationCertificateBasedAuthConfiguration](/powershell/module/microsoft.graph.identity.signins/get-mgorganizationcertificatebasedauthconfiguration)|
-|New-AzureADTrustedCertificateAuthority||
-|Remove-AzureADTrustedCertificateAuthority||
+|New-AzureADTrustedCertificateAuthority|[New-MgOrganizationCertificateBasedAuthConfiguration](/powershell/module/microsoft.graph.identity.signins/new-mgorganizationcertificatebasedauthconfiguration)|
+|Remove-AzureADTrustedCertificateAuthority|[Remove-MgOrganizationCertificateBasedAuthConfiguration](/powershell/module/microsoft.graph.identity.signins/remove-mgorganizationcertificatebasedauthconfiguration)|
 |Set-AzureADTrustedCertificateAuthority||
 
 ### Connect to your directory
@@ -219,7 +219,7 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |Azure AD cmdlet | Microsoft Graph PowerShell cmdlet|
 |------------|--------------|
 |Add-AzureADDeviceRegisteredOwner|[New-MgDeviceRegisteredOwnerByRef](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdeviceregisteredownerbyref)|
-|Add-AzureADDeviceRegisteredUser||
+|Add-AzureADDeviceRegisteredUser|[New-MgDeviceRegisteredUserByRef](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdeviceregistereduserbyref)|
 |Get-AzureADDevice|[Get-MgDevice](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevice)|
 |Get-AzureADDeviceConfiguration|[Get-MgDeviceManagementDeviceConfiguration](/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdeviceconfiguration)|
 |Get-AzureADDeviceRegisteredOwner|[Get-MgDeviceRegisteredOwner](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdeviceregisteredowner)|
@@ -227,7 +227,7 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |New-AzureADDevice|[New-MgDevice](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdevice)|
 |Remove-AzureADDevice|[Remove-MgDevice](/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdevice)|
 |Remove-AzureADDeviceRegisteredOwner|[Remove-MgDeviceRegisteredOwnerByRef](/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdeviceregisteredownerbyref)|
-|Remove-AzureADDeviceRegisteredUser||
+|Remove-AzureADDeviceRegisteredUser|[Remove-MgDeviceRegisteredUserByRef](/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdeviceregistereduserbyref)|
 |Set-AzureADDevice|[Update-MgDevice](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdevice)|
 
 ### Directory
@@ -257,7 +257,7 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |Get-AzureADMSRoleDefinition|[Get-MgRoleManagementDirectoryRoleDefinition](/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagementdirectoryroledefinition)|
 |New-AzureADMSRoleAssignment|[New-MgRoleManagementDirectoryRoleAssignment](/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagementdirectoryroleassignment)|
 |New-AzureADMSRoleDefinition|[New-MgRoleManagementDirectoryRoleDefinition](/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagementdirectoryroledefinition)|
-|Remove-AzureADDirectoryRoleMember|[Remove-MgDirectoryRoleScopedMember](/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryrolescopedmember)|
+|Remove-AzureADDirectoryRoleMember|[Remove-MgDirectoryRoleMemberByRef](/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryrolememberbyref)|
 |Remove-AzureADMSRoleAssignment|[Remove-MgRoleManagementDirectoryRoleAssignment](/powershell/module/microsoft.graph.identity.governance/remove-mgrolemanagementdirectoryroleassignment)|
 |Remove-AzureADMSRoleDefinition|[Remove-MgRoleManagementDirectoryRoleDefinition](/powershell/module/microsoft.graph.identity.governance/remove-mgrolemanagementdirectoryroledefinition)|
 |Set-AzureADMSRoleDefinition|[Update-MgRoleManagementDirectoryRoleDefinition](/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagementdirectoryroledefinition)|
@@ -331,8 +331,8 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |Azure AD cmdlet | Microsoft Graph PowerShell cmdlet|
 |------------|--------------|
 |Add-AzureADServicePrincipalOwner|[New-MgServicePrincipalOwnerByRef](/powershell/module/microsoft.graph.applications/new-mgserviceprincipalownerbyref)|
-|Get-AzureADServiceAppRoleAssignedTo|[Get-MgServicePrincipalAppRoleAssignment](/powershell/module/microsoft.graph.applications/get-mgserviceprincipalapproleassignment)|
-|Get-AzureADServiceAppRoleAssignment|[Get-MgServicePrincipalAppRoleAssignedTo](/powershell/module/microsoft.graph.applications/get-mgserviceprincipalapproleassignedto)|
+|Get-AzureADServiceAppRoleAssignedTo|[Get-MgServicePrincipalAppRoleAssignedTo](/powershell/module/microsoft.graph.applications/get-mgserviceprincipalapproleassignedto)|
+|Get-AzureADServiceAppRoleAssignment|[Get-MgServicePrincipalAppRoleAssignment](/powershell/module/microsoft.graph.applications/get-mgserviceprincipalapproleassignment)|
 |Get-AzureADServicePrincipal|[Get-MgServicePrincipal](/powershell/module/microsoft.graph.applications/get-mgserviceprincipal)|
 |Get-AzureADServicePrincipalCreatedObject|[Get-MgServicePrincipalCreatedObject](/powershell/module/microsoft.graph.applications/get-mgserviceprincipalcreatedobject)|
 |Get-AzureADServicePrincipalKeyCredential|[Get-MgServicePrincipal](/powershell/module/microsoft.graph.applications/get-mgserviceprincipal)|
@@ -503,10 +503,10 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |Add-AzureADApplicationPolicy|[New-MgBetaApplicationAppManagementPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationAppManagementPolicyByRef)|
 |Add-AzureADMSCustomSecurityAttributeDefinitionAllowedValues|[New-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue)|
 |Add-AzureADMSFeatureRolloutPolicyDirectoryObject|[New-MgBetaDirectoryFeatureRolloutPolicyApplyToByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryFeatureRolloutPolicyApplyToByRef)|
-|Add-AzureADMSPrivilegedResource|`Deprecated`|
+|Add-AzureADMSPrivilegedResource <sup>2</sup>|`Deprecated`|
 |Add-AzureADScopedRoleMembership|[New-MgBetaDirectoryAdministrativeUnitScopedRoleMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryAdministrativeUnitScopedRoleMember)|
 |Add-AzureADServicePrincipalPolicy|[New-MgBetaServicePrincipalClaimMappingPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalClaimMappingPolicyByRef)|
-|Close-AzureADMSPrivilegedRoleAssignmentRequest||
+|Close-AzureADMSPrivilegedRoleAssignmentRequest <sup>2</sup>|`Deprecated`|
 |Get-AzureADAdministrativeUnit|[Get-MgBetaDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryAdministrativeUnit)|
 |Get-AzureADAdministrativeUnitMember|[Get-MgBetaAdministrativeUnitMember](/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadministrativeunitmember)|
 |Get-AzureADApplicationPolicy|[Get-MgBetaApplicationAppManagementPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationAppManagementPolicyByRef)|
@@ -517,7 +517,7 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |Get-AzureADDirectorySetting|[Get-MgBetaDirectorySetting](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectorySetting)|
 |Get-AzureADDirectorySettingTemplate|[Get-MgBetaDirectorySettingTemplate](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectorySettingTemplate)|
 |Get-AzureADExternalDomainFederation|[Get-MgBetaDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDomainFederationConfiguration)|
-|Get-AzureADMSApplicationTemplate||
+|Get-AzureADMSApplicationTemplate|[Get-MgApplicationTemplate](/powershell/module/microsoft.graph.applications/get-mgapplicationtemplate)|
 |Get-AzureADMSAttributeSet|[Get-MgBetaDirectoryAttributeSet](/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryattributeset)|
 |Get-AzureADMSCustomSecurityAttributeDefinition|[Get-MgBetaDirectoryCustomSecurityAttributeDefinition](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryCustomSecurityAttributeDefinition)|
 |Get-AzureADMSCustomSecurityAttributeDefinitionAllowedValue|[Get-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue](/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorycustomsecurityattributedefinitionallowedvalue)|
@@ -525,21 +525,21 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |Get-AzureADMSGroupPermissionGrant|[Get-MgBetaGroupPermissionGrant](/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouppermissiongrant)|
 |Get-AzureADMSPasswordSingleSignOnCredential|[Get-MgBetaServicePrincipalPasswordSingleSignOnCredential](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalPasswordSingleSignOnCredential)|
 |Get-AzureADMSPrivilegedResource|[Get-MgBetaPrivilegedAccessResource](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaPrivilegedAccessResource)|
-|Get-AzureADMSPrivilegedRoleAssignment||
-|Get-AzureADMSPrivilegedRoleAssignmentRequest|`Deprecated`|
+|Get-AzureADMSPrivilegedRoleAssignment <sup>2</sup>|`Deprecated`|
+|Get-AzureADMSPrivilegedRoleAssignmentRequest <sup>2</sup>|`Deprecated`|
 |Get-AzureADMSPrivilegedRoleDefinition|[Get-MgBetaPrivilegedAccessResourceRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaPrivilegedAccessResourceRoleDefinition)|
 |Get-AzureADMSPrivilegedRoleSetting|[Get-MgBetaPrivilegedAccessResourceRoleSetting](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaPrivilegedAccessResourceRoleSetting)|
 |Get-AzureADMSServicePrincipal|[Get-MgBetaServicePrincipal](/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipal)|
 |Get-AzureADMSTrustFrameworkPolicy|[Get-MgBetaTrustFrameworkPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaTrustFrameworkPolicy)|
 |Get-AzureADMSUser|[Get-MgBetaUser](/powershell/module/microsoft.graph.beta.users/get-mgbetauser)|
-|Get-AzureADObjectSetting||
+|Get-AzureADObjectSetting|[Get-MgBetaGroupSetting](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupSetting)|
 |Get-AzureADPolicy <sup>1</sup>|[Get-MgBetaPolicyHomeRealmDiscoveryPolicy](/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyhomerealmdiscoverypolicy)|
 |Get-AzureADPolicy <sup>1</sup>|[Get-MgBetaPolicyActivityBasedTimeoutPolicy](/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyactivitybasedtimeoutpolicy)| 
 |Get-AzureADPolicy <sup>1</sup>|[Get-MgBetaPolicyTokenIssuancePolicy](/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicytokenissuancepolicy)| 
 |Get-AzureADPolicy <sup>1</sup>|[Get-MgBetaPolicyTokenLifetimePolicy](/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicytokenlifetimepolicy)|
 |Get-AzureADPolicy <sup>1</sup>|[Get-MgBetaPolicyClaimMappingPolicy](/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyclaimmappingpolicy)|
 |Get-AzureADPolicyAppliedObject|[Get-MgBetaPolicyHomeRealmDiscoveryPolicyApplyTo](/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyhomerealmdiscoverypolicyapplyto)|
-|Get-AzureADPrivilegedRole|`Deprecated`|
+|Get-AzureADPrivilegedRole <sup>2</sup>|`Deprecated`|
 |Get-AzureADPrivilegedRoleAssignment|[Get-MgBetaPrivilegedRoleRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaPrivilegedRoleRoleAssignment)|
 |Get-AzureADScopedRoleMembership|[Get-MgBetaDirectoryAdministrativeUnitScopedRoleMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryAdministrativeUnitScopedRoleMember)|
 |Get-AzureADServicePrincipalPolicy <sup>1</sup>|[Get-MgBetaServicePrincipalClaimMappingPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalClaimMappingPolicy)|
@@ -555,13 +555,13 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |New-AzureADMSCustomSecurityAttributeDefinition|[New-MgBetaDirectoryCustomSecurityAttributeDefinition](/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycustomsecurityattributedefinition)|
 |New-AzureADMSFeatureRolloutPolicy|[New-MgBetaPolicyFeatureRolloutPolicy](/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyfeaturerolloutpolicy)|
 |New-AzureADMSPasswordSingleSignOnCredential|[New-MgBetaServicePrincipalPasswordSingleSignOnCredential](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalPasswordSingleSignOnCredential)|
-|New-AzureADMSServicePrincipal||
+|New-AzureADMSServicePrincipal|[New-MgBetaServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipal)|
 |New-AzureADMSTrustFrameworkPolicy|[New-MgBetaTrustFrameworkPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaTrustFrameworkPolicy)|
-|New-AzureADMSUser||
+|New-AzureADMSUser|[New-MgBetaUser](/powershell/module/microsoft.graph.beta.users/new-mgbetauser)|
 |New-AzureADObjectSetting|[New-MgBetaGroupSetting](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupSetting)|
 |New-AzureADPolicy|[New-MgBetaPolicyActivityBasedTimeoutPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyActivityBasedTimeoutPolicy)|
-|New-AzureADPrivilegedRoleAssignment|`Deprecated`|
-|Open-AzureADMSPrivilegedRoleAssignmentRequest|`Deprecated`|
+|New-AzureADPrivilegedRoleAssignment <sup>2</sup>|`Deprecated`|
+|Open-AzureADMSPrivilegedRoleAssignmentRequest <sup>2</sup>|`Deprecated`|
 |Remove-AzureADAdministrativeUnit|[Remove-MgBetaDirectoryAdministrativeUnit](/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryadministrativeunit)|
 |Remove-AzureADAdministrativeUnitMember|[Remove-MgBetaDirectoryAdministrativeUnitMemberByRef](/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryadministrativeunitmemberbyref)|
 |Remove-AzureADApplicationPolicy <sup>1</sup>|[Get-MgBetaApplicationAppManagementPolicy](/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationappmanagementpolicy)|
@@ -597,7 +597,7 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |Set-AzureADMSCustomSecurityAttributeDefinitionAllowedValue|[Update-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue](/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorycustomsecurityattributedefinitionallowedvalue)|
 |Set-AzureADMSFeatureRolloutPolicy|[Update-MgBetaPolicyFeatureRolloutPolicy](/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyfeaturerolloutpolicy)|
 |Set-AzureADMSPasswordSingleSignOnCredential|[Update-MgBetaServicePrincipalPasswordSingleSignOnCredential](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalPasswordSingleSignOnCredential)|
-|Set-AzureADMSPrivilegedRoleAssignmentRequest|`Deprecated`|
+|Set-AzureADMSPrivilegedRoleAssignmentRequest <sup>2</sup>|`Deprecated`|
 |Set-AzureADMSPrivilegedRoleSetting|[Update-MgBetaPrivilegedAccessRoleSetting](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaPrivilegedAccessRoleSetting)|
 |Set-AzureADMSServicePrincipal|[Update-MgBetaServicePrincipal](/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipal)|
 |Set-AzureADMSTrustFrameworkPolicy|[Update-MgBetaTrustFrameworkPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaTrustFrameworkPolicy)|
@@ -616,3 +616,5 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |Set-AzureADPolicy <sup>1</sup>|[Update-MgBetaPolicyTokenLifetimePolicy](/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicytokenlifetimepolicy)|
 
 <sup>1</sup> This cmdlet has more than one cmdlet mapping in Microsoft Graph PowerShell.
+
+<sup>2</sup> Privileged Identity Management (PIM) [iteration 3 APIs](/graph/api/resources/privilegedidentitymanagementv3-overview) should be used. Check [this guidance](/entra/id-governance/privileged-identity-management/pim-apis) for more details.

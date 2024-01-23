@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventsessionattendancereportattendancerecord
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Get-MgVirtualEventSessionAttendanceReportAttendanceRecord
@@ -41,9 +40,6 @@ Get-MgVirtualEventSessionAttendanceReportAttendanceRecord -InputObject <IBooking
 ## DESCRIPTION
 List of attendance records of an attendance report.
 Read-only.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/attendancerecord-list-permissions.md)]
 
 ## PARAMETERS
 

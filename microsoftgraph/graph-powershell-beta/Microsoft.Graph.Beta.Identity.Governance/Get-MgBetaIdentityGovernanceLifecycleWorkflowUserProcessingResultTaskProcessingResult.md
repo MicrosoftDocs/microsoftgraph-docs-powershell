@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowuserprocessingresulttaskprocessingresult
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultTaskProcessingResult
@@ -40,9 +39,6 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultTaskProcessingR
 
 ## DESCRIPTION
 The associated individual task execution.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-userprocessingresult-list-taskprocessingresults-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: List the results of the tasks processed for a user in a workflow

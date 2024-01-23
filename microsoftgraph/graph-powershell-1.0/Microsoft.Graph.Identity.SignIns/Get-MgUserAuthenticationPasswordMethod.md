@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationpasswordmethod
 schema: 2.0.0
 ms.prod: identity-and-sign-in
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgUserAuthenticationPasswordMethod
@@ -43,9 +42,6 @@ For security, the password itself will never be returned in the object and the p
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/passwordauthenticationmethod-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authentication-list-passwordmethods-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

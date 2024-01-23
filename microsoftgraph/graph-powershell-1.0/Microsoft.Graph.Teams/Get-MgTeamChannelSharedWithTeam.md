@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelsharedwithteam
 schema: 2.0.0
 ms.prod: microsoft-teams
-ms.prod: microsoft-teams
 ---
 
 # Get-MgTeamChannelSharedWithTeam
@@ -55,9 +54,6 @@ This operation is allowed only for channels with a membershipType value of share
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/sharedwithchannelteaminfo-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/sharedwithchannelteaminfo-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

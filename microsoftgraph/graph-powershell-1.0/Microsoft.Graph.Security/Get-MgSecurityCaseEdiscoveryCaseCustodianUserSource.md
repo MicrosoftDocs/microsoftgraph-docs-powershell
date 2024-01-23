@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasecustodianusersource
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # Get-MgSecurityCaseEdiscoveryCaseCustodianUserSource
@@ -39,9 +38,6 @@ Get-MgSecurityCaseEdiscoveryCaseCustodianUserSource -InputObject <ISecurityIdent
 ## DESCRIPTION
 Data source entity for a the custodian.
 This is the container for a custodian's mailbox and OneDrive for Business site.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycustodian-list-usersources-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaaccessreview
 schema: 2.0.0
 ms.prod: governance
-ms.prod: governance
 ---
 
 # Get-MgBetaAccessReview
@@ -48,9 +47,6 @@ Each past and current instance will have decisions.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreview-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreview-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaAccessReview Cmdlet

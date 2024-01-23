@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaVirtualEventWebinarSession
 
 ## SYNOPSIS
-Sessions of the virtual event.
+Sessions for the virtual event.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgVirtualEventWebinarSession](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventWebinarSession?view=graph-powershell-1.0)
@@ -35,7 +35,7 @@ Get-MgBetaVirtualEventWebinarSession -InputObject <IBookingsIdentity> [-ExpandPr
 ```
 
 ## DESCRIPTION
-Sessions of the virtual event.
+Sessions for the virtual event.
 
 ## PARAMETERS
 

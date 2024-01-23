@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannertask
 schema: 2.0.0
 ms.prod: planner
-ms.prod: planner
 ---
 
 # Get-MgPlannerTask
@@ -41,9 +40,6 @@ Retrieve the properties and relationships of plannerTask object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannertask-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/planner-list-tasks-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

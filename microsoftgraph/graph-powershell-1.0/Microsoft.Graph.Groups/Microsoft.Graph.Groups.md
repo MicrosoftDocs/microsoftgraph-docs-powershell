@@ -716,10 +716,19 @@ Locale: en-US
 ### [New-MgGroupDriveItemLink](New-MgGroupDriveItemLink.md)
 {{ Fill in the Description }}
 
+### [New-MgGroupDriveItemListItemLink](New-MgGroupDriveItemListItemLink.md)
+{{ Fill in the Description }}
+
 ### [New-MgGroupDriveItemUploadSession](New-MgGroupDriveItemUploadSession.md)
 {{ Fill in the Description }}
 
+### [New-MgGroupDriveListItemLink](New-MgGroupDriveListItemLink.md)
+{{ Fill in the Description }}
+
 ### [New-MgGroupDriveRootLink](New-MgGroupDriveRootLink.md)
+{{ Fill in the Description }}
+
+### [New-MgGroupDriveRootListItemLink](New-MgGroupDriveRootListItemLink.md)
 {{ Fill in the Description }}
 
 ### [New-MgGroupDriveRootUploadSession](New-MgGroupDriveRootUploadSession.md)
@@ -753,6 +762,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [New-MgGroupSettingTemplateGroupSettingTemplate](New-MgGroupSettingTemplateGroupSettingTemplate.md)
+{{ Fill in the Description }}
+
+### [New-MgGroupSiteListItemLink](New-MgGroupSiteListItemLink.md)
 {{ Fill in the Description }}
 
 ### [New-MgGroupThread](New-MgGroupThread.md)

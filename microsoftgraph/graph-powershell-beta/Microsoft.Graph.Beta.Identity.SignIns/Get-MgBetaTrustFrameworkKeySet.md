@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetatrustframeworkkeyset
 schema: 2.0.0
 ms.prod: identity-and-sign-in
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaTrustFrameworkKeySet
@@ -38,9 +37,6 @@ Retrieve the properties and associations for a Trustframeworkkeyset.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trustframeworkkeyset-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trustframework-list-keysets-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaTrustFrameworkKeySet Cmdlet

@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroauth2permissiongrant
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaUserOauth2PermissionGrant
@@ -37,9 +36,6 @@ Get-MgBetaUserOauth2PermissionGrant -InputObject <IUsersIdentity> [-ExpandProper
 
 ## DESCRIPTION
 Get oauth2PermissionGrants from users
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-oauth2permissiongrants-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

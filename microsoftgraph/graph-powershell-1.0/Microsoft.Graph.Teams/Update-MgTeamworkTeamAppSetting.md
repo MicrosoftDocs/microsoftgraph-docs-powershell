@@ -19,7 +19,7 @@ Update the tenant-wide teamsAppSettings for all Teams apps in the tenant.
 ### UpdateExpanded (Default)
 ```
 Update-MgTeamworkTeamAppSetting [-AdditionalProperties <Hashtable>] [-AllowUserRequestsForAppAccess]
- [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-IsUserPersonalScopeResourceSpecificConsentEnabled] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -112,6 +112,23 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -IsUserPersonalScopeResourceSpecificConsentEnabled
+Indicates whether resource-specific consent for personal scope in Teams apps is enabled for the tenant.
+True indicates that Teams apps that are allowed in the tenant and require resource-specific permissions can be installed in the personal scope.
+False blocks the installation of any Teams app that requires resource-specific permissions in the personal scope.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -163,6 +180,9 @@ BODYPARAMETER \<IMicrosoftGraphTeamsAppSettings\>: teamsAppSettings
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
   \[AllowUserRequestsForAppAccess \<Boolean?\>\]: Indicates whether users are allowed to request access to the unavailable Teams apps.
+  \[IsUserPersonalScopeResourceSpecificConsentEnabled \<Boolean?\>\]: Indicates whether resource-specific consent for personal scope in Teams apps is enabled for the tenant.
+True indicates that Teams apps that are allowed in the tenant and require resource-specific permissions can be installed in the personal scope.
+False blocks the installation of any Teams app that requires resource-specific permissions in the personal scope.
 
 ## RELATED LINKS
 [Update-MgBetaTeamworkTeamAppSetting](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamworkTeamAppSetting?view=graph-powershell-beta)

@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusercreatedobject
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Get-MgUserCreatedObject
@@ -41,9 +40,6 @@ Get-MgUserCreatedObject -InputObject <IUsersIdentity> [-ExpandProperty <String[]
 Directory objects that the user created.
 Read-only.
 Nullable.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-list-createdobjects-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get a list of directory objects that were created by a user

@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguseroauth2permissiongrant
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgUserOauth2PermissionGrant
@@ -37,9 +36,6 @@ Get-MgUserOauth2PermissionGrant -InputObject <IUsersIdentity> [-ExpandProperty <
 
 ## DESCRIPTION
 Get oauth2PermissionGrants from users
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-list-oauth2permissiongrants-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get user's oAuth2PermissionGrant 

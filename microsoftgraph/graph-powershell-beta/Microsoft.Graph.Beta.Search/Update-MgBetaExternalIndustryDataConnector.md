@@ -9,7 +9,7 @@ ms.prod: industry-data-etl
 # Update-MgBetaExternalIndustryDataConnector
 
 ## SYNOPSIS
-Update the properties of an azureDataLakeConnector object.
+Update the properties of an industryDataConnector object.
 
 ## SYNTAX
 
@@ -40,10 +40,10 @@ Update-MgBetaExternalIndustryDataConnector -InputObject <ISearchIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of an azureDataLakeConnector object.
+Update the properties of an industryDataConnector object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-azuredatalakeconnector-update-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-industrydataconnector-update-permissions.md)]
 
 ## PARAMETERS
 

@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouptransitivememberof
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # Get-MgGroupTransitiveMemberOf
@@ -39,9 +38,6 @@ Get-MgGroupTransitiveMemberOf -InputObject <IGroupsIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 The groups that a group is a member of, either directly or through nested membership.
 Nullable.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-list-transitivememberof-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

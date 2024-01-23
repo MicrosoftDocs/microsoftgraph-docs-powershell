@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktaskgroup
 schema: 2.0.0
 ms.prod: outlook
-ms.prod: outlook
 ---
 
 # Get-MgBetaUserOutlookTaskGroup
@@ -36,9 +35,6 @@ Get the properties and relationships of the specified Outlook task group.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlooktaskgroup-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlookuser-list-taskgroups-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserOutlookTaskGroup Cmdlet

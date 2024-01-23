@@ -13,14 +13,17 @@ Create a sharing link for a listItem.
 The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
 listItem resources inherit sharing permissions from the list the item resides in.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDriveRootListItemLink](/powershell/module/Microsoft.Graph.Files/New-MgDriveRootListItemLink?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaDriveRootListItemLink -DriveId <String> [-AdditionalProperties <Hashtable>]
- [-ExpirationDateTime <DateTime>] [-Password <String>] [-Recipients <IMicrosoftGraphDriveRecipient[]>]
- [-RetainInheritedPermissions] [-Scope <String>] [-SendNotification] [-Type <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ExpirationDateTime <DateTime>] [-Message <String>] [-Password <String>]
+ [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-RetainInheritedPermissions] [-Scope <String>]
+ [-SendNotification] [-Type <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -33,9 +36,9 @@ New-MgBetaDriveRootListItemLink -DriveId <String>
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaDriveRootListItemLink -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
- [-ExpirationDateTime <DateTime>] [-Password <String>] [-Recipients <IMicrosoftGraphDriveRecipient[]>]
- [-RetainInheritedPermissions] [-Scope <String>] [-SendNotification] [-Type <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ExpirationDateTime <DateTime>] [-Message <String>] [-Password <String>]
+ [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-RetainInheritedPermissions] [-Scope <String>]
+ [-SendNotification] [-Type <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -129,6 +132,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Message
+.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -273,6 +291,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 BODYPARAMETER \<IPaths1S267QmDrivesDriveIdRootListitemMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema\>: .
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[ExpirationDateTime \<DateTime?\>\]: 
+  \[Message \<String\>\]: 
   \[Password \<String\>\]: 
   \[Recipients \<IMicrosoftGraphDriveRecipient\[\]\>\]: 
     \[Alias \<String\>\]: The alias of the domain object, for cases where an email address is unavailable (e.g.
@@ -317,6 +336,7 @@ security groups).
   \[ObjectId \<String\>\]: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
+[New-MgDriveRootListItemLink](/powershell/module/Microsoft.Graph.Files/New-MgDriveRootListItemLink?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriverootlistitemlink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriverootlistitemlink)
 

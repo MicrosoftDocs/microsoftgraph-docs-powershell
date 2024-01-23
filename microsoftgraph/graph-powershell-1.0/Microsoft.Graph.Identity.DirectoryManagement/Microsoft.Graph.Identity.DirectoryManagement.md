@@ -65,6 +65,9 @@ Locale: en-US
 ### [Get-MgAdminPeopleProfileCardPropertyCount](Get-MgAdminPeopleProfileCardPropertyCount.md)
 {{ Fill in the Description }}
 
+### [Get-MgAdminPeoplePronoun](Get-MgAdminPeoplePronoun.md)
+{{ Fill in the Description }}
+
 ### [Get-MgContact](Get-MgContact.md)
 {{ Fill in the Description }}
 
@@ -923,10 +926,10 @@ Locale: en-US
 ### [Test-MgOrganizationProperty](Test-MgOrganizationProperty.md)
 {{ Fill in the Description }}
 
-### [Update-MgAdminPeople](Update-MgAdminPeople.md)
+### [Update-MgAdminPeopleProfileCardProperty](Update-MgAdminPeopleProfileCardProperty.md)
 {{ Fill in the Description }}
 
-### [Update-MgAdminPeopleProfileCardProperty](Update-MgAdminPeopleProfileCardProperty.md)
+### [Update-MgAdminPeoplePronoun](Update-MgAdminPeoplePronoun.md)
 {{ Fill in the Description }}
 
 ### [Update-MgContact](Update-MgContact.md)

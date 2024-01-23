@@ -392,6 +392,9 @@ Locale: en-US
 ### [Get-MgBetaServicePrincipalLicenseDetailCount](Get-MgBetaServicePrincipalLicenseDetailCount.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaServicePrincipalLicenseDetailTeamLicensingDetail](Get-MgBetaServicePrincipalLicenseDetailTeamLicensingDetail.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaServicePrincipalMemberGroup](Get-MgBetaServicePrincipalMemberGroup.md)
 {{ Fill in the Description }}
 

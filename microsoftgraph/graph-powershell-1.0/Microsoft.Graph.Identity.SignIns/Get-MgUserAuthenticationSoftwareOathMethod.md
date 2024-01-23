@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationsoftwareoathmethod
 schema: 2.0.0
 ms.prod: identity-and-sign-in
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgUserAuthenticationSoftwareOathMethod
@@ -41,9 +40,6 @@ Retrieve a user's single Software OATH token authentication method object and it
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/softwareoathauthenticationmethod-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authentication-list-softwareoathmethods-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

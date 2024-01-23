@@ -548,8 +548,8 @@ Accept wildcard characters: False
 ```
 
 ### -CallbackUri
-The callback URL on which callbacks will be delivered.
-Must be https.
+The callback URL on which callbacks are delivered.
+Must be an HTTPS URL.
 
 ```yaml
 Type: String
@@ -565,7 +565,7 @@ Accept wildcard characters: False
 
 ### -CallChainId
 A unique identifier for all the participant calls in a conference or a unique identifier for two participant calls in a P2P call.
-This needs to be copied over from Microsoft.Graph.Call.CallChainId.
+This identifier must be copied over from Microsoft.Graph.Call.CallChainId.
 
 ```yaml
 Type: String
@@ -990,7 +990,7 @@ Read-only.
     \[RoutingMode \<String\>\]: routingMode
     \[Sources \<String\[\]\>\]: List of source participant ids.
   \[CallChainId \<String\>\]: A unique identifier for all the participant calls in a conference or a unique identifier for two participant calls in a P2P call. 
-This needs to be copied over from Microsoft.Graph.Call.CallChainId.
+This identifier must be copied over from Microsoft.Graph.Call.CallChainId.
   \[CallOptions \<IMicrosoftGraphCallOptions\>\]: callOptions
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[HideBotAfterEscalation \<Boolean?\>\]: Indicates whether to hide the app after the call is escalated.
@@ -1009,8 +1009,8 @@ For example, if a user changes their display name, the API might show the new va
       \[User \<IMicrosoftGraphIdentity\>\]: identity
     \[Original \<IMicrosoftGraphIdentitySet\>\]: identitySet
     \[RoutingType \<String\>\]: routingType
-  \[CallbackUri \<String\>\]: The callback URL on which callbacks will be delivered.
-Must be https.
+  \[CallbackUri \<String\>\]: The callback URL on which callbacks are delivered.
+Must be an HTTPS URL.
   \[ChatInfo \<IMicrosoftGraphChatInfo\>\]: chatInfo
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[MessageId \<String\>\]: The unique identifier of a message in a Microsoft Teams channel.

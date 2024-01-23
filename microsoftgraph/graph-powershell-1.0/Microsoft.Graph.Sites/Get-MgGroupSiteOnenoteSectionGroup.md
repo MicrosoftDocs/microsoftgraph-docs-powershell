@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotesectiongroup
 schema: 2.0.0
 ms.prod: onenote
-ms.prod: onenote
 ---
 
 # Get-MgGroupSiteOnenoteSectionGroup
@@ -60,9 +59,6 @@ Retrieve the properties and relationships of a sectionGroup object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/sectiongroup-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onenote-list-sectiongroups-permissions.md)]
 
 ## PARAMETERS
 

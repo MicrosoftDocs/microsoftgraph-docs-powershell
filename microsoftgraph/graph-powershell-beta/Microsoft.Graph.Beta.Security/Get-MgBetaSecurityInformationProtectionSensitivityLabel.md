@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityinformationprotectionsensitivitylabel
 schema: 2.0.0
-ms.prod: security
 ---
 
 # Get-MgBetaSecurityInformationProtectionSensitivityLabel
@@ -34,9 +33,6 @@ Get-MgBetaSecurityInformationProtectionSensitivityLabel -InputObject <ISecurityI
 
 ## DESCRIPTION
 Read the Microsoft Purview Information Protection labels for the user or organization.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-informationprotection-list-sensitivitylabels-permissions.md)]
 
 ## PARAMETERS
 

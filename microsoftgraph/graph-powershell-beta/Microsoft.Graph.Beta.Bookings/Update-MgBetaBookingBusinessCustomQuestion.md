@@ -20,7 +20,22 @@ Update the properties of a bookingCustomQuestion object.
 ```
 Update-MgBetaBookingBusinessCustomQuestion -BookingBusinessId <String> -BookingCustomQuestionId <String>
  [-AdditionalProperties <Hashtable>] [-AnswerInputType <String>] [-AnswerOptions <String[]>]
- [-DisplayName <String>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-LastUpdatedDateTime <DateTime>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateExpanded1
+```
+Update-MgBetaBookingBusinessCustomQuestion -BookingBusinessId <String> -BookingCustomQuestionId <String>
+ [-AdditionalProperties <Hashtable>] [-AnswerInputType <String>] [-AnswerOptions <String[]>]
+ [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-LastUpdatedDateTime <DateTime>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update1
+```
+Update-MgBetaBookingBusinessCustomQuestion -BookingBusinessId <String> -BookingCustomQuestionId <String>
+ -BodyParameter <IMicrosoftGraphBookingCustomQuestion> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -29,11 +44,24 @@ Update-MgBetaBookingBusinessCustomQuestion -BookingBusinessId <String> -BookingC
  -BodyParameter <IMicrosoftGraphBookingCustomQuestion> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### UpdateViaIdentityExpanded1
+```
+Update-MgBetaBookingBusinessCustomQuestion -InputObject <IBookingsIdentity> [-AdditionalProperties <Hashtable>]
+ [-AnswerInputType <String>] [-AnswerOptions <String[]>] [-CreatedDateTime <DateTime>] [-DisplayName <String>]
+ [-Id <String>] [-LastUpdatedDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaBookingBusinessCustomQuestion -InputObject <IBookingsIdentity> [-AdditionalProperties <Hashtable>]
- [-AnswerInputType <String>] [-AnswerOptions <String[]>] [-DisplayName <String>] [-Id <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-AnswerInputType <String>] [-AnswerOptions <String[]>] [-CreatedDateTime <DateTime>] [-DisplayName <String>]
+ [-Id <String>] [-LastUpdatedDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity1
+```
+Update-MgBetaBookingBusinessCustomQuestion -InputObject <IBookingsIdentity>
+ -BodyParameter <IMicrosoftGraphBookingCustomQuestion> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -71,7 +99,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -86,7 +114,7 @@ answerInputType
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -101,7 +129,7 @@ List of possible answer values.
 
 ```yaml
 Type: String[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -117,7 +145,7 @@ To construct, see NOTES section for BODYPARAMETER properties and create a hash t
 
 ```yaml
 Type: IMicrosoftGraphBookingCustomQuestion
-Parameter Sets: Update, UpdateViaIdentity
+Parameter Sets: Update1, Update, UpdateViaIdentity1, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -132,7 +160,7 @@ The unique identifier of bookingBusiness
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded, UpdateExpanded1, Update1, Update
 Aliases:
 
 Required: True
@@ -147,10 +175,25 @@ The unique identifier of bookingCustomQuestion
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded, UpdateExpanded1, Update1, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CreatedDateTime
+.
+
+```yaml
+Type: DateTime
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -162,7 +205,7 @@ Display name of this entity.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -178,7 +221,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -194,13 +237,28 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IBookingsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentity1, UpdateViaIdentity
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -LastUpdatedDateTime
+.
+
+```yaml
+Type: DateTime
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -257,7 +315,9 @@ BODYPARAMETER \<IMicrosoftGraphBookingCustomQuestion\>: Represents a custom ques
 Read-only.
   \[AnswerInputType \<String\>\]: answerInputType
   \[AnswerOptions \<String\[\]\>\]: List of possible answer values.
+  \[CreatedDateTime \<DateTime?\>\]: 
   \[DisplayName \<String\>\]: Display name of this entity.
+  \[LastUpdatedDateTime \<DateTime?\>\]: 
 
 INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
   \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord

@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserlicensedetail
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Get-MgBetaUserLicenseDetail
@@ -37,9 +36,6 @@ Get-MgBetaUserLicenseDetail -InputObject <IUsersIdentity> [-ExpandProperty <Stri
 
 ## DESCRIPTION
 Get licenseDetails from users
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-licensedetails-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get a user's license details

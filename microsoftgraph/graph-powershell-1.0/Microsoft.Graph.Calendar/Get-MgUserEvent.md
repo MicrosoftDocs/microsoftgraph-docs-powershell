@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mguserevent
 schema: 2.0.0
 ms.prod: outlook
-ms.prod: outlook
 ---
 
 # Get-MgUserEvent
@@ -45,9 +44,6 @@ There are two scenarios where an app can get an event in another user's calendar
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-list-events-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

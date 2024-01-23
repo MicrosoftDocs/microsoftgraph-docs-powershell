@@ -22,10 +22,36 @@ Update-MgBetaGroupSitePageLastModifiedByUserMailboxSetting -BaseSitePageId <Stri
  [-WorkingHours <IMicrosoftGraphWorkingHours>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### UpdateExpanded1
+```
+Update-MgBetaGroupSitePageLastModifiedByUserMailboxSetting -BaseSitePageId <String> -GroupId <String>
+ -SiteId <String> [-AdditionalProperties <Hashtable>] [-ArchiveFolder <String>]
+ [-AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>] [-DateFormat <String>]
+ [-DelegateMeetingMessageDeliveryOptions <String>] [-Language <IMicrosoftGraphLocaleInfo>]
+ [-TimeFormat <String>] [-TimeZone <String>] [-UserPurpose <String>] [-UserPurposeV2 <String>]
+ [-WorkingHours <IMicrosoftGraphWorkingHours>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update1
+```
+Update-MgBetaGroupSitePageLastModifiedByUserMailboxSetting -BaseSitePageId <String> -GroupId <String>
+ -SiteId <String> -BodyParameter <IMicrosoftGraphMailboxSettings> [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### Update
 ```
 Update-MgBetaGroupSitePageLastModifiedByUserMailboxSetting -BaseSitePageId <String> -GroupId <String>
  -SiteId <String> -BodyParameter <IMicrosoftGraphMailboxSettings> [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded1
+```
+Update-MgBetaGroupSitePageLastModifiedByUserMailboxSetting -InputObject <ISitesIdentity>
+ [-AdditionalProperties <Hashtable>] [-ArchiveFolder <String>]
+ [-AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>] [-DateFormat <String>]
+ [-DelegateMeetingMessageDeliveryOptions <String>] [-Language <IMicrosoftGraphLocaleInfo>]
+ [-TimeFormat <String>] [-TimeZone <String>] [-UserPurpose <String>] [-UserPurposeV2 <String>]
+ [-WorkingHours <IMicrosoftGraphWorkingHours>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -36,6 +62,12 @@ Update-MgBetaGroupSitePageLastModifiedByUserMailboxSetting -InputObject <ISitesI
  [-DelegateMeetingMessageDeliveryOptions <String>] [-Language <IMicrosoftGraphLocaleInfo>]
  [-TimeFormat <String>] [-TimeZone <String>] [-UserPurpose <String>] [-UserPurposeV2 <String>]
  [-WorkingHours <IMicrosoftGraphWorkingHours>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity1
+```
+Update-MgBetaGroupSitePageLastModifiedByUserMailboxSetting -InputObject <ISitesIdentity>
+ -BodyParameter <IMicrosoftGraphMailboxSettings> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -54,7 +86,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -70,7 +102,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -86,7 +118,7 @@ To construct, see NOTES section for AUTOMATICREPLIESSETTING properties and creat
 
 ```yaml
 Type: IMicrosoftGraphAutomaticRepliesSetting
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -101,7 +133,7 @@ The unique identifier of baseSitePage
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded, UpdateExpanded1, Update1, Update
 Aliases:
 
 Required: True
@@ -117,7 +149,7 @@ To construct, see NOTES section for BODYPARAMETER properties and create a hash t
 
 ```yaml
 Type: IMicrosoftGraphMailboxSettings
-Parameter Sets: Update, UpdateViaIdentity
+Parameter Sets: Update1, Update, UpdateViaIdentity1, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -132,7 +164,7 @@ The date format for the user's mailbox.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -147,7 +179,7 @@ delegateMeetingMessageDeliveryOptions
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -162,7 +194,7 @@ The unique identifier of group
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded, UpdateExpanded1, Update1, Update
 Aliases:
 
 Required: True
@@ -178,7 +210,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentity1, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -194,7 +226,7 @@ To construct, see NOTES section for LANGUAGE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphLocaleInfo
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -209,7 +241,7 @@ The unique identifier of site
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded, UpdateExpanded1, Update1, Update
 Aliases:
 
 Required: True
@@ -224,7 +256,7 @@ The time format for the user's mailbox.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -239,7 +271,7 @@ The default time zone for the user's mailbox.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -254,7 +286,7 @@ userPurpose
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -269,7 +301,7 @@ mailboxRecipientType
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -285,7 +317,7 @@ To construct, see NOTES section for WORKINGHOURS properties and create a hash ta
 
 ```yaml
 Type: IMicrosoftGraphWorkingHours
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -409,6 +441,8 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
   \[GroupId \<String\>\]: The unique identifier of group
   \[GroupId1 \<String\>\]: The unique identifier of group
+  \[HorizontalSectionColumnId \<String\>\]: The unique identifier of horizontalSectionColumn
+  \[HorizontalSectionId \<String\>\]: The unique identifier of horizontalSection
   \[IncludePersonalNotebooks \<Boolean?\>\]: Usage: includePersonalNotebooks={includePersonalNotebooks}
   \[InformationProtectionLabelId \<String\>\]: The unique identifier of informationProtectionLabel
   \[Interval \<String\>\]: Usage: interval='{interval}'
@@ -444,6 +478,7 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[ThreatAssessmentResultId \<String\>\]: The unique identifier of threatAssessmentResult
   \[Token \<String\>\]: Usage: token='{token}'
   \[UserId \<String\>\]: The unique identifier of user
+  \[WebPartId \<String\>\]: The unique identifier of webPart
 
 LANGUAGE \<IMicrosoftGraphLocaleInfo\>: localeInfo
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.

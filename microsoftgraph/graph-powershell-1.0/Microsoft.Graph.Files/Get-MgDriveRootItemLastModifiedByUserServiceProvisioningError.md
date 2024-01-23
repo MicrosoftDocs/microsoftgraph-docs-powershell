@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgDriveRootItemLastModifiedByUserServiceProvisioningError
 
 ## SYNOPSIS
-Get serviceProvisioningErrors property value
+Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a user object .
+Supports $filter (eq, not, for isResolved and serviceInstance).
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDriveRootItemLastModifiedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootItemLastModifiedByUserServiceProvisioningError?view=graph-powershell-beta)
@@ -22,7 +23,8 @@ Get-MgDriveRootItemLastModifiedByUserServiceProvisioningError -DriveId <String> 
 ```
 
 ## DESCRIPTION
-Get serviceProvisioningErrors property value
+Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a user object .
+Supports $filter (eq, not, for isResolved and serviceInstance).
 
 ## PARAMETERS
 

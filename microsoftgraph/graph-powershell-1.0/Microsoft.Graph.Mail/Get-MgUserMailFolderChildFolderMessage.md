@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolderchildfoldermessage
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Get-MgUserMailFolderChildFolderMessage
@@ -37,9 +36,6 @@ Get-MgUserMailFolderChildFolderMessage -InputObject <IMailIdentity> [-ExpandProp
 
 ## DESCRIPTION
 The collection of messages in the mailFolder.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/mailfolder-list-messages-permissions.md)]
 
 ## EXAMPLES
 

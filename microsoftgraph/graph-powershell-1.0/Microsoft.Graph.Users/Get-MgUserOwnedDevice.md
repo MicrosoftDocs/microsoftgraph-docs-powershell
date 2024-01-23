@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserowneddevice
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Get-MgUserOwnedDevice
@@ -43,9 +42,6 @@ Devices that are owned by the user.
 Read-only.
 Nullable.
 Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-list-owneddevices-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

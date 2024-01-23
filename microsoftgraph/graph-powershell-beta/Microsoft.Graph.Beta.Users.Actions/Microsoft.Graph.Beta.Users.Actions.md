@@ -179,6 +179,9 @@ Locale: en-US
 ### [Invoke-MgBetaAcceptUserPendingAccessReviewInstanceRecommendation](Invoke-MgBetaAcceptUserPendingAccessReviewInstanceRecommendation.md)
 {{ Fill in the Description }}
 
+### [Invoke-MgBetaArchiveUserPlannerPlan](Invoke-MgBetaArchiveUserPlannerPlan.md)
+{{ Fill in the Description }}
+
 ### [Invoke-MgBetaBatchUserPendingAccessReviewInstanceRecordDecision](Invoke-MgBetaBatchUserPendingAccessReviewInstanceRecordDecision.md)
 {{ Fill in the Description }}
 
@@ -420,6 +423,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Invoke-MgBetaTroubleshootUserCloudPc](Invoke-MgBetaTroubleshootUserCloudPc.md)
+{{ Fill in the Description }}
+
+### [Invoke-MgBetaUnarchiveUserPlannerPlan](Invoke-MgBetaUnarchiveUserPlannerPlan.md)
 {{ Fill in the Description }}
 
 ### [Invoke-MgBetaUnfollowUserDriveItem](Invoke-MgBetaUnfollowUserDriveItem.md)

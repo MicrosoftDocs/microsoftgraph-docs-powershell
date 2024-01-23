@@ -21,11 +21,12 @@ New-MgEducationMeAssignment [-AddToCalendarAction <String>] [-AddedStudentAction
  [-AdditionalProperties <Hashtable>] [-AllowLateSubmissions] [-AllowStudentsToAddResourcesToSubmission]
  [-AssignTo <Hashtable>] [-Categories <IMicrosoftGraphEducationCategory[]>] [-ClassId <String>]
  [-CloseDateTime <DateTime>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DisplayName <String>]
- [-DueDateTime <DateTime>] [-Grading <Hashtable>] [-Id <String>]
- [-Instructions <IMicrosoftGraphEducationItemBody>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-NotificationChannelUrl <String>] [-Resources <IMicrosoftGraphEducationAssignmentResource[]>]
- [-Rubric <IMicrosoftGraphEducationRubric>] [-Status <String>]
- [-Submissions <IMicrosoftGraphEducationSubmission[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DueDateTime <DateTime>] [-Grading <Hashtable>] [-GradingCategory <IMicrosoftGraphEducationGradingCategory>]
+ [-Id <String>] [-Instructions <IMicrosoftGraphEducationItemBody>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-NotificationChannelUrl <String>]
+ [-Resources <IMicrosoftGraphEducationAssignmentResource[]>] [-Rubric <IMicrosoftGraphEducationRubric>]
+ [-Status <String>] [-Submissions <IMicrosoftGraphEducationSubmission[]>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -296,6 +297,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -GradingCategory
+educationGradingCategory
+To construct, see NOTES section for GRADINGCATEGORY properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphEducationGradingCategory
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
@@ -514,6 +531,12 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   \[Grading \<IMicrosoftGraphEducationAssignmentGradeType\>\]: educationAssignmentGradeType
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[GradingCategory \<IMicrosoftGraphEducationGradingCategory\>\]: educationGradingCategory
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[DisplayName \<String\>\]: 
+    \[PercentageWeight \<Int32?\>\]: 
   \[Instructions \<IMicrosoftGraphEducationItemBody\>\]: educationItemBody
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[Content \<String\>\]: 
@@ -601,6 +624,13 @@ For example, if a user changes their display name, the API might show the new va
     \[Id \<String\>\]: Unique identifier for the identity.
   \[Device \<IMicrosoftGraphIdentity\>\]: identity
   \[User \<IMicrosoftGraphIdentity\>\]: identity
+
+GRADINGCATEGORY \<IMicrosoftGraphEducationGradingCategory\>: educationGradingCategory
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[DisplayName \<String\>\]: 
+  \[PercentageWeight \<Int32?\>\]: 
 
 INSTRUCTIONS \<IMicrosoftGraphEducationItemBody\>: educationItemBody
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.

@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallcontentsharingsession
 schema: 2.0.0
 ms.prod: cloud-communications
-ms.prod: cloud-communications
 ---
 
 # Get-MgCommunicationCallContentSharingSession
@@ -41,9 +40,6 @@ Retrieve the properties of a contentSharingSession object in a call.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contentsharingsession-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-list-contentsharingsessions-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

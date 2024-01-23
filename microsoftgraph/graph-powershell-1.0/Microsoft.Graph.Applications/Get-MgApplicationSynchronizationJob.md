@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationsynchronizationjob
 schema: 2.0.0
 ms.prod: applications
-ms.prod: applications
 ---
 
 # Get-MgApplicationSynchronizationJob
@@ -41,9 +40,6 @@ Retrieve the existing synchronization job and its properties.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationjob-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronization-list-jobs-permissions.md)]
 
 ## PARAMETERS
 

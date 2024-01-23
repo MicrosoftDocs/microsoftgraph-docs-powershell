@@ -3,7 +3,7 @@ title: "Using Find-MgGraphCommand cmdlet"
 description: "Learn how to use the Find-MgGraphCommand to aid in discoverability of cmdlets."
 
 ms.topic: how-to
-ms.date: 12/19/2023
+ms.date: 01/15/2024
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
@@ -152,7 +152,7 @@ Get-MgUserTodoListTask                         Users           GET    /users/{us
 ### Syntax
 
 ```powershell
-Find-MgGraphCommand -Command .*searchstring.* [-ApiVersion <String>] [<CommonParameters>] [-Method <String>]
+Find-MgGraphCommand -Uri .*searchstring.* [-ApiVersion <String>] [<CommonParameters>] [-Method <String>]
 ```
 
 ### Examples

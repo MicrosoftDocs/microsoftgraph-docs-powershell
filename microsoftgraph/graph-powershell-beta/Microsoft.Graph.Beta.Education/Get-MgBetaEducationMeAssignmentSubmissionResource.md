@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeassignmentsubmissionresource
 schema: 2.0.0
 ms.prod: education
-ms.prod: education
 ---
 
 # Get-MgBetaEducationMeAssignmentSubmissionResource
@@ -49,9 +48,6 @@ This resource is wrapped with a possible pointer back to the assignment resource
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsubmissionresource-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsubmission-list-resources-permissions.md)]
 
 ## EXAMPLES
 

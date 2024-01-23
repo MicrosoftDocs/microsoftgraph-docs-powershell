@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitecolumn
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Get-MgBetaGroupSiteColumn
@@ -37,9 +36,6 @@ Get-MgBetaGroupSiteColumn -InputObject <ISitesIdentity> [-ExpandProperty <String
 
 ## DESCRIPTION
 The collection of column definitions reusable across lists under this site.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-list-columns-permissions.md)]
 
 ## EXAMPLES
 
@@ -286,6 +282,8 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
   \[GroupId \<String\>\]: The unique identifier of group
   \[GroupId1 \<String\>\]: The unique identifier of group
+  \[HorizontalSectionColumnId \<String\>\]: The unique identifier of horizontalSectionColumn
+  \[HorizontalSectionId \<String\>\]: The unique identifier of horizontalSection
   \[IncludePersonalNotebooks \<Boolean?\>\]: Usage: includePersonalNotebooks={includePersonalNotebooks}
   \[InformationProtectionLabelId \<String\>\]: The unique identifier of informationProtectionLabel
   \[Interval \<String\>\]: Usage: interval='{interval}'
@@ -321,6 +319,7 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[ThreatAssessmentResultId \<String\>\]: The unique identifier of threatAssessmentResult
   \[Token \<String\>\]: Usage: token='{token}'
   \[UserId \<String\>\]: The unique identifier of user
+  \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
 [Get-MgGroupSiteColumn](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteColumn?view=graph-powershell-1.0)

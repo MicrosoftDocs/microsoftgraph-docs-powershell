@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaloauth2permissiongrant
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Get-MgBetaServicePrincipalOauth2PermissionGrant
@@ -41,9 +40,6 @@ Get-MgBetaServicePrincipalOauth2PermissionGrant -InputObject <IApplicationsIdent
 Delegated permission grants authorizing this service principal to access an API on behalf of a signed-in user.
 Read-only.
 Nullable.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-list-oauth2permissiongrants-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

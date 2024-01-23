@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityalert
 schema: 2.0.0
 ms.prod: security
-ms.prod: security
 ---
 
 # Get-MgSecurityAlert
@@ -40,9 +39,6 @@ Retrieve the properties and relationships of an alert object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/alert-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/alert-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

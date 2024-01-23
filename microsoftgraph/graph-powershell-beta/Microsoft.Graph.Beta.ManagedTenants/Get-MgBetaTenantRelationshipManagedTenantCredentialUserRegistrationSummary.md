@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantcredentialuserregistrationsummary
 schema: 2.0.0
 ms.prod: multi-tenant-management
-ms.prod: multi-tenant-management
 ---
 
 # Get-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary
@@ -40,9 +39,6 @@ Read the properties and relationships of a credentialUserRegistrationsSummary ob
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-credentialuserregistrationssummary-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-managedtenant-list-credentialuserregistrationssummaries-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary Cmdlet

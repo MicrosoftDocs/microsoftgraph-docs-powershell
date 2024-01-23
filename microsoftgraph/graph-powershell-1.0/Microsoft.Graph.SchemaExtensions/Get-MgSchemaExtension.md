@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.SchemaExtensions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/get-mgschemaextension
 schema: 2.0.0
 ms.prod: extensions
-ms.prod: extensions
 ---
 
 # Get-MgSchemaExtension
@@ -41,9 +40,6 @@ Get schemaExtension
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/schemaextension-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/schemaextension-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

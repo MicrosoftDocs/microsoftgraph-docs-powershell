@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelcategory
 schema: 2.0.0
 ms.prod: security
-ms.prod: security
 ---
 
 # Get-MgBetaSecurityLabelCategory
@@ -38,9 +37,6 @@ Read the properties and relationships of a categoryTemplate object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-categorytemplate-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-labelsroot-list-categories-permissions.md)]
 
 ## PARAMETERS
 

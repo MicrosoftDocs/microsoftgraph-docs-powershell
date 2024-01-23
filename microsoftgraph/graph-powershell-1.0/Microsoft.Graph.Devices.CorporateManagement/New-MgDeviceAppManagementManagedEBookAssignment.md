@@ -9,7 +9,7 @@ ms.prod: intune
 # New-MgDeviceAppManagementManagedEBookAssignment
 
 ## SYNOPSIS
-Create a new managedEBookAssignment object.
+Create a new iosVppEBookAssignment object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementManagedEBookAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementManagedEBookAssignment?view=graph-powershell-beta)
@@ -43,7 +43,7 @@ New-MgDeviceAppManagementManagedEBookAssignment -InputObject <IDevicesCorporateM
 ```
 
 ## DESCRIPTION
-Create a new managedEBookAssignment object.
+Create a new iosVppEBookAssignment object.
 
 ## PARAMETERS
 

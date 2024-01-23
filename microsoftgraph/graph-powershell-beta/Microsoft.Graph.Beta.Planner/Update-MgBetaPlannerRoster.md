@@ -215,14 +215,31 @@ Currently only the users from the same tenant can be added to a plannerRoster.
   \[Plans \<IMicrosoftGraphPlannerPlan\[\]\>\]: Retrieves the plans contained by the plannerRoster.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+    \[ArchivalInfo \<IMicrosoftGraphPlannerArchivalInfo\>\]: plannerArchivalInfo
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Justification \<String\>\]: 
+      \[StatusChangedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[Application \<IMicrosoftGraphIdentity\>\]: identity
+          \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+          \[DisplayName \<String\>\]: The display name of the identity.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+        \[Device \<IMicrosoftGraphIdentity\>\]: identity
+        \[User \<IMicrosoftGraphIdentity\>\]: identity
+      \[StatusChangedDateTime \<DateTime?\>\]: 
     \[Buckets \<IMicrosoftGraphPlannerBucket\[\]\>\]: Collection of buckets in the plan.
 Read-only.
 Nullable.
       \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+      \[ArchivalInfo \<IMicrosoftGraphPlannerArchivalInfo\>\]: plannerArchivalInfo
       \[CreationSource \<IMicrosoftGraphPlannerBucketCreation\>\]: plannerBucketCreation
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[CreationSourceKind \<String\>\]: plannerCreationSourceKind
+      \[IsArchived \<Boolean?\>\]: 
       \[Name \<String\>\]: Name of the bucket.
       \[OrderHint \<String\>\]: Hint used to order items of this type in a list view.
 For details about the supported format, see Using order hints in Planner.
@@ -235,6 +252,7 @@ Read-only.
         \[ActiveChecklistItemCount \<Int32?\>\]: Number of checklist items with value set to false, representing incomplete items.
         \[AppliedCategories \<IMicrosoftGraphPlannerAppliedCategories\>\]: plannerAppliedCategories
           \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[ArchivalInfo \<IMicrosoftGraphPlannerArchivalInfo\>\]: plannerArchivalInfo
         \[AssignedToTaskBoardFormat \<IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat\>\]: plannerAssignedToTaskBoardTaskFormat
           \[(Any) \<Object\>\]: This indicates any property can be added to this object.
           \[Id \<String\>\]: The unique identifier for an entity.
@@ -259,16 +277,6 @@ Read-only.
 For details about the supported format, see Using order hints in Planner.
         \[ChecklistItemCount \<Int32?\>\]: Number of checklist items that are present on the task.
         \[CompletedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-          \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-          \[Application \<IMicrosoftGraphIdentity\>\]: identity
-            \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-            \[DisplayName \<String\>\]: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-            \[Id \<String\>\]: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-          \[Device \<IMicrosoftGraphIdentity\>\]: identity
-          \[User \<IMicrosoftGraphIdentity\>\]: identity
         \[CompletedDateTime \<DateTime?\>\]: Read-only.
 Date and time at which the 'percentComplete' of the task is set to '100'.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -302,14 +310,25 @@ Read-only.
           \[(Any) \<Object\>\]: This indicates any property can be added to this object.
           \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+          \[ApprovalAttachment \<IMicrosoftGraphPlannerBaseApprovalAttachment\>\]: plannerBaseApprovalAttachment
+            \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+            \[Status \<String\>\]: plannerApprovalStatus
           \[Checklist \<IMicrosoftGraphPlannerChecklistItems\>\]: plannerChecklistItems
             \[(Any) \<Object\>\]: This indicates any property can be added to this object.
           \[CompletionRequirements \<IMicrosoftGraphPlannerTaskCompletionRequirementDetails\>\]: plannerTaskCompletionRequirementDetails
             \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+            \[ApprovalRequirement \<IMicrosoftGraphPlannerApprovalRequirement\>\]: plannerApprovalRequirement
+              \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+              \[IsApprovalRequired \<Boolean?\>\]: 
             \[ChecklistRequirement \<IMicrosoftGraphPlannerChecklistRequirement\>\]: plannerChecklistRequirement
               \[(Any) \<Object\>\]: This indicates any property can be added to this object.
               \[RequiredChecklistItemIds \<String\[\]\>\]: A collection of required plannerChecklistItems identifiers to complete the plannerTask.
+            \[FormsRequirement \<IMicrosoftGraphPlannerFormsRequirement\>\]: plannerFormsRequirement
+              \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+              \[RequiredForms \<String\[\]\>\]: 
           \[Description \<String\>\]: Description of the task.
+          \[Forms \<IMicrosoftGraphPlannerFormsDictionary\>\]: plannerFormsDictionary
+            \[(Any) \<Object\>\]: This indicates any property can be added to this object.
           \[Notes \<IMicrosoftGraphItemBody\>\]: itemBody
             \[(Any) \<Object\>\]: This indicates any property can be added to this object.
             \[Content \<String\>\]: The content of the item.
@@ -322,6 +341,9 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
         \[HasDescription \<Boolean?\>\]: Read-only.
 Value is true if the details object of the task has a nonempty description and false otherwise.
+        \[IsArchived \<Boolean?\>\]: 
+        \[IsOnMyDay \<Boolean?\>\]: 
+        \[IsOnMyDayLastModifiedDate \<DateTime?\>\]: 
         \[OrderHint \<String\>\]: Hint used to order items of this type in a list view.
 The format is defined as outlined here.
         \[PercentComplete \<Int32?\>\]: Percentage of task completion.
@@ -439,6 +461,7 @@ Read-only.
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[SharedWith \<IMicrosoftGraphPlannerUserIds\>\]: plannerUserIds
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[IsArchived \<Boolean?\>\]: 
     \[Owner \<String\>\]: 
     \[SharedWithContainers \<IMicrosoftGraphPlannerSharedWithContainer\[\]\>\]: List of containers the plan is shared with.
       \[ContainerId \<String\>\]: The identifier of the resource that contains the plan.
@@ -475,14 +498,31 @@ Currently only the users from the same tenant can be added to a plannerRoster.
 PLANS \<IMicrosoftGraphPlannerPlan\[\]\>: Retrieves the plans contained by the plannerRoster.
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+  \[ArchivalInfo \<IMicrosoftGraphPlannerArchivalInfo\>\]: plannerArchivalInfo
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Justification \<String\>\]: 
+    \[StatusChangedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Application \<IMicrosoftGraphIdentity\>\]: identity
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[DisplayName \<String\>\]: The display name of the identity.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+      \[Device \<IMicrosoftGraphIdentity\>\]: identity
+      \[User \<IMicrosoftGraphIdentity\>\]: identity
+    \[StatusChangedDateTime \<DateTime?\>\]: 
   \[Buckets \<IMicrosoftGraphPlannerBucket\[\]\>\]: Collection of buckets in the plan.
 Read-only.
 Nullable.
     \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+    \[ArchivalInfo \<IMicrosoftGraphPlannerArchivalInfo\>\]: plannerArchivalInfo
     \[CreationSource \<IMicrosoftGraphPlannerBucketCreation\>\]: plannerBucketCreation
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[CreationSourceKind \<String\>\]: plannerCreationSourceKind
+    \[IsArchived \<Boolean?\>\]: 
     \[Name \<String\>\]: Name of the bucket.
     \[OrderHint \<String\>\]: Hint used to order items of this type in a list view.
 For details about the supported format, see Using order hints in Planner.
@@ -495,6 +535,7 @@ Read-only.
       \[ActiveChecklistItemCount \<Int32?\>\]: Number of checklist items with value set to false, representing incomplete items.
       \[AppliedCategories \<IMicrosoftGraphPlannerAppliedCategories\>\]: plannerAppliedCategories
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[ArchivalInfo \<IMicrosoftGraphPlannerArchivalInfo\>\]: plannerArchivalInfo
       \[AssignedToTaskBoardFormat \<IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat\>\]: plannerAssignedToTaskBoardTaskFormat
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[Id \<String\>\]: The unique identifier for an entity.
@@ -519,16 +560,6 @@ Read-only.
 For details about the supported format, see Using order hints in Planner.
       \[ChecklistItemCount \<Int32?\>\]: Number of checklist items that are present on the task.
       \[CompletedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-        \[Application \<IMicrosoftGraphIdentity\>\]: identity
-          \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-          \[DisplayName \<String\>\]: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-          \[Id \<String\>\]: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-        \[Device \<IMicrosoftGraphIdentity\>\]: identity
-        \[User \<IMicrosoftGraphIdentity\>\]: identity
       \[CompletedDateTime \<DateTime?\>\]: Read-only.
 Date and time at which the 'percentComplete' of the task is set to '100'.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -562,14 +593,25 @@ Read-only.
         \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
+        \[ApprovalAttachment \<IMicrosoftGraphPlannerBaseApprovalAttachment\>\]: plannerBaseApprovalAttachment
+          \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+          \[Status \<String\>\]: plannerApprovalStatus
         \[Checklist \<IMicrosoftGraphPlannerChecklistItems\>\]: plannerChecklistItems
           \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[CompletionRequirements \<IMicrosoftGraphPlannerTaskCompletionRequirementDetails\>\]: plannerTaskCompletionRequirementDetails
           \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+          \[ApprovalRequirement \<IMicrosoftGraphPlannerApprovalRequirement\>\]: plannerApprovalRequirement
+            \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+            \[IsApprovalRequired \<Boolean?\>\]: 
           \[ChecklistRequirement \<IMicrosoftGraphPlannerChecklistRequirement\>\]: plannerChecklistRequirement
             \[(Any) \<Object\>\]: This indicates any property can be added to this object.
             \[RequiredChecklistItemIds \<String\[\]\>\]: A collection of required plannerChecklistItems identifiers to complete the plannerTask.
+          \[FormsRequirement \<IMicrosoftGraphPlannerFormsRequirement\>\]: plannerFormsRequirement
+            \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+            \[RequiredForms \<String\[\]\>\]: 
         \[Description \<String\>\]: Description of the task.
+        \[Forms \<IMicrosoftGraphPlannerFormsDictionary\>\]: plannerFormsDictionary
+          \[(Any) \<Object\>\]: This indicates any property can be added to this object.
         \[Notes \<IMicrosoftGraphItemBody\>\]: itemBody
           \[(Any) \<Object\>\]: This indicates any property can be added to this object.
           \[Content \<String\>\]: The content of the item.
@@ -582,6 +624,9 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       \[HasDescription \<Boolean?\>\]: Read-only.
 Value is true if the details object of the task has a nonempty description and false otherwise.
+      \[IsArchived \<Boolean?\>\]: 
+      \[IsOnMyDay \<Boolean?\>\]: 
+      \[IsOnMyDayLastModifiedDate \<DateTime?\>\]: 
       \[OrderHint \<String\>\]: Hint used to order items of this type in a list view.
 The format is defined as outlined here.
       \[PercentComplete \<Int32?\>\]: Percentage of task completion.
@@ -699,6 +744,7 @@ Read-only.
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[SharedWith \<IMicrosoftGraphPlannerUserIds\>\]: plannerUserIds
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[IsArchived \<Boolean?\>\]: 
   \[Owner \<String\>\]: 
   \[SharedWithContainers \<IMicrosoftGraphPlannerSharedWithContainer\[\]\>\]: List of containers the plan is shared with.
     \[ContainerId \<String\>\]: The identifier of the resource that contains the plan.

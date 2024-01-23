@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationusertaughtclass
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Get-MgEducationUserTaughtClass
@@ -37,9 +36,6 @@ Get-MgEducationUserTaughtClass -InputObject <IEducationIdentity> [-ExpandPropert
 
 ## DESCRIPTION
 Classes for which the user is a teacher.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationuser-list-taughtclasses-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -273,6 +269,7 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
   \[EducationAssignmentResourceId \<String\>\]: The unique identifier of educationAssignmentResource
   \[EducationCategoryId \<String\>\]: The unique identifier of educationCategory
   \[EducationClassId \<String\>\]: The unique identifier of educationClass
+  \[EducationGradingCategoryId \<String\>\]: The unique identifier of educationGradingCategory
   \[EducationOutcomeId \<String\>\]: The unique identifier of educationOutcome
   \[EducationRubricId \<String\>\]: The unique identifier of educationRubric
   \[EducationSchoolId \<String\>\]: The unique identifier of educationSchool

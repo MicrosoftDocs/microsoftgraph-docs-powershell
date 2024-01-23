@@ -3257,6 +3257,9 @@ Locale: en-US
 ### [Set-MgBetaEntitlementManagementAccessPackageAssignmentPolicy](Set-MgBetaEntitlementManagementAccessPackageAssignmentPolicy.md)
 {{ Fill in the Description }}
 
+### [Set-MgBetaIdentityGovernanceAccessReviewDefinition](Set-MgBetaIdentityGovernanceAccessReviewDefinition.md)
+{{ Fill in the Description }}
+
 ### [Split-MgBetaEntitlementManagementConnectedOrganization](Split-MgBetaEntitlementManagementConnectedOrganization.md)
 {{ Fill in the Description }}
 
@@ -3441,9 +3444,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStageDecisionInsight](Update-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStageDecisionInsight.md)
-{{ Fill in the Description }}
-
-### [Update-MgBetaIdentityGovernanceAccessReviewDefinition](Update-MgBetaIdentityGovernanceAccessReviewDefinition.md)
 {{ Fill in the Description }}
 
 ### [Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstance](Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstance.md)

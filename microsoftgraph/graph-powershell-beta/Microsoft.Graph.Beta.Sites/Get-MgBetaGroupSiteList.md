@@ -3,14 +3,13 @@ external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitelist
 schema: 2.0.0
-ms.prod: sharepoint
-ms.prod: sharepoint
+ms.prod: sites-and-lists
 ---
 
 # Get-MgBetaGroupSiteList
 
 ## SYNOPSIS
-Return the metadata for a \[list\]\[\].
+Get the list of richLongRunningOperations associated with a list.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteList](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteList?view=graph-powershell-1.0)
@@ -37,13 +36,10 @@ Get-MgBetaGroupSiteList -InputObject <ISitesIdentity> [-ExpandProperty <String[]
 ```
 
 ## DESCRIPTION
-Return the metadata for a \[list\]\[\].
+Get the list of richLongRunningOperations associated with a list.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/list-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/list-list-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/list-list-operations-permissions.md)]
 
 ## EXAMPLES
 
@@ -290,6 +286,8 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
   \[GroupId \<String\>\]: The unique identifier of group
   \[GroupId1 \<String\>\]: The unique identifier of group
+  \[HorizontalSectionColumnId \<String\>\]: The unique identifier of horizontalSectionColumn
+  \[HorizontalSectionId \<String\>\]: The unique identifier of horizontalSection
   \[IncludePersonalNotebooks \<Boolean?\>\]: Usage: includePersonalNotebooks={includePersonalNotebooks}
   \[InformationProtectionLabelId \<String\>\]: The unique identifier of informationProtectionLabel
   \[Interval \<String\>\]: Usage: interval='{interval}'
@@ -325,6 +323,7 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[ThreatAssessmentResultId \<String\>\]: The unique identifier of threatAssessmentResult
   \[Token \<String\>\]: Usage: token='{token}'
   \[UserId \<String\>\]: The unique identifier of user
+  \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
 [Get-MgGroupSiteList](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteList?view=graph-powershell-1.0)

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgUserDriveItemCreatedByUserServiceProvisioningError
 
 ## SYNOPSIS
-Get serviceProvisioningErrors property value
+Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a user object .
+Supports $filter (eq, not, for isResolved and serviceInstance).
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserDriveItemCreatedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemCreatedByUserServiceProvisioningError?view=graph-powershell-beta)
@@ -23,7 +24,8 @@ Get-MgUserDriveItemCreatedByUserServiceProvisioningError -DriveId <String> -Driv
 ```
 
 ## DESCRIPTION
-Get serviceProvisioningErrors property value
+Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a user object .
+Supports $filter (eq, not, for isResolved and serviceInstance).
 
 ## PARAMETERS
 

@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinessservice
 schema: 2.0.0
 ms.prod: bookings
-ms.prod: bookings
 ---
 
 # Get-MgBookingBusinessService
@@ -41,9 +40,6 @@ Get the properties and relationships of a bookingService object in the specified
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingservice-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-list-services-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

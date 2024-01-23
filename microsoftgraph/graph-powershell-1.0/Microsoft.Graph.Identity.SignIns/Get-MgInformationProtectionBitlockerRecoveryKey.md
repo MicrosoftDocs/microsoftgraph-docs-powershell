@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mginformationprotectionbitlockerrecoverykey
 schema: 2.0.0
 ms.prod: directory-management
-ms.prod: directory-management
 ---
 
 # Get-MgInformationProtectionBitlockerRecoveryKey
@@ -49,9 +48,6 @@ For more information on audit logs for bitlocker recovery keys, see the KeyManag
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bitlockerrecoverykey-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bitlocker-list-recoverykeys-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get the BitLocker key by specifying the key id

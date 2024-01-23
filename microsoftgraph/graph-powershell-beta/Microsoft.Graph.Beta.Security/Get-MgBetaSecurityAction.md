@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityaction
 schema: 2.0.0
 ms.prod: security
-ms.prod: security
 ---
 
 # Get-MgBetaSecurityAction
@@ -38,9 +37,6 @@ Retrieve the properties and relationships of a securityAction object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/securityaction-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/securityactions-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaSecurityAction Cmdlet

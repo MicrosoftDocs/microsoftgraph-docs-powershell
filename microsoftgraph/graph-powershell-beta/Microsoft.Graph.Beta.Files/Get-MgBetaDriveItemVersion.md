@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemversion
 schema: 2.0.0
 ms.prod: sharepoint
-ms.prod: sharepoint
 ---
 
 # Get-MgBetaDriveItemVersion
@@ -41,9 +40,6 @@ Retrieve the metadata for a specific version of a DriveItem.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitemversion-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-list-versions-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get specified version of a file

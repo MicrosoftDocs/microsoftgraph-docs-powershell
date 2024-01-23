@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2xuserflowlanguage
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaIdentityB2XUserFlowLanguage
@@ -41,9 +40,6 @@ Get-MgBetaIdentityB2XUserFlowLanguage -InputObject <IIdentitySignInsIdentity> [-
 The languages supported for customization within the user flow.
 Language customization is enabled by default in self-service sign-up user flow.
 You can't create custom languages in self-service sign-up user flows.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/b2xidentityuserflow-list-languages-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

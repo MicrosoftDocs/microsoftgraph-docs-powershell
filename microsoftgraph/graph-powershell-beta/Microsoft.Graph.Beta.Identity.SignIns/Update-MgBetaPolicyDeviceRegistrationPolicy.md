@@ -249,17 +249,13 @@ AZUREADJOIN \<IMicrosoftGraphAzureAdJoinPolicy\>: azureADJoinPolicy
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[AllowedToJoin \<IMicrosoftGraphDeviceRegistrationMembership\>\]: deviceRegistrationMembership
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[IsAdminConfigurable \<Boolean?\>\]: Specifies whether this policy scope is configurable by the admin.
-The default value is false.
-When an admin has enabled Intune (MEM) to manage devices, this property is set to false and appliesTo defaults to 1 (meaning all).
+  \[IsAdminConfigurable \<Boolean?\>\]: Determines if administrators can modify this policy.
 
 AZUREADREGISTRATION \<IMicrosoftGraphAzureAdRegistrationPolicy\>: azureADRegistrationPolicy
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[AllowedToRegister \<IMicrosoftGraphDeviceRegistrationMembership\>\]: deviceRegistrationMembership
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[IsAdminConfigurable \<Boolean?\>\]: Specifies whether this policy scope is configurable by the admin.
-The default value is false.
-When an admin has enabled Intune (MEM) to manage devices, this property is set to false and appliesTo defaults to 1 (meaning all).
+  \[IsAdminConfigurable \<Boolean?\>\]: Determines if administrators can modify this policy.
 
 BODYPARAMETER \<IMicrosoftGraphDeviceRegistrationPolicy\>: deviceRegistrationPolicy
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
@@ -269,15 +265,11 @@ Read-only.
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[AllowedToJoin \<IMicrosoftGraphDeviceRegistrationMembership\>\]: deviceRegistrationMembership
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[IsAdminConfigurable \<Boolean?\>\]: Specifies whether this policy scope is configurable by the admin.
-The default value is false.
-When an admin has enabled Intune (MEM) to manage devices, this property is set to false and appliesTo defaults to 1 (meaning all).
+    \[IsAdminConfigurable \<Boolean?\>\]: Determines if administrators can modify this policy.
   \[AzureAdRegistration \<IMicrosoftGraphAzureAdRegistrationPolicy\>\]: azureADRegistrationPolicy
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[AllowedToRegister \<IMicrosoftGraphDeviceRegistrationMembership\>\]: deviceRegistrationMembership
-    \[IsAdminConfigurable \<Boolean?\>\]: Specifies whether this policy scope is configurable by the admin.
-The default value is false.
-When an admin has enabled Intune (MEM) to manage devices, this property is set to false and appliesTo defaults to 1 (meaning all).
+    \[IsAdminConfigurable \<Boolean?\>\]: Determines if administrators can modify this policy.
   \[Description \<String\>\]: The description of the device registration policy.
 It's always set to Tenant-wide policy that manages intial provisioning controls using quota restrictions, additional authentication and authorization checks.
 Read-only.

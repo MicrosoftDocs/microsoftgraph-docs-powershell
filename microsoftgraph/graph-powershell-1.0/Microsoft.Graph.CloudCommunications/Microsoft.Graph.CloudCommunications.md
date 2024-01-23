@@ -314,6 +314,9 @@ Locale: en-US
 ### [Rename-MgCommunicationCallScreenSharingRole](Rename-MgCommunicationCallScreenSharingRole.md)
 {{ Fill in the Description }}
 
+### [Send-MgCommunicationCallDtmfTone](Send-MgCommunicationCallDtmfTone.md)
+{{ Fill in the Description }}
+
 ### [Set-MgCommunicationOnlineMeetingAttendeeReport](Set-MgCommunicationOnlineMeetingAttendeeReport.md)
 {{ Fill in the Description }}
 

@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotaskattachment
 schema: 2.0.0
 ms.prod: outlook
-ms.prod: outlook
 ---
 
 # Get-MgBetaUserTodoTaskAttachment
@@ -40,9 +39,6 @@ Read the properties and relationships of a taskFileAttachment object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/taskfileattachment-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/todotask-list-attachments-permissions.md)]
 
 ## PARAMETERS
 

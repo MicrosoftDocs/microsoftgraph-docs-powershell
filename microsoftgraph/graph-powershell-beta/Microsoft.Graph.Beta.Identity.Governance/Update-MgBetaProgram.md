@@ -243,9 +243,10 @@ Required on create.
     \[Owner \<IMicrosoftGraphUserIdentity\>\]: userIdentity
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
       \[IPAddress \<String\>\]: Indicates the client IP address used by user performing the activity (audit log only).
       \[UserPrincipalName \<String\>\]: The userPrincipalName attribute of the user.
     \[Program \<IMicrosoftGraphProgram\>\]: program
@@ -254,9 +255,10 @@ Required on create.
     \[Resource \<IMicrosoftGraphProgramResource\>\]: programResource
       \[(Any) \<Object\>\]: This indicates any property can be added to this object.
       \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
       \[Type \<String\>\]: Type of the resource, indicating whether it is a group or an app.
     \[Status \<String\>\]: The life cycle status of the control.
   \[Description \<String\>\]: The description of the program.
@@ -275,9 +277,10 @@ Required on create.
   \[Owner \<IMicrosoftGraphUserIdentity\>\]: userIdentity
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-    \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     \[IPAddress \<String\>\]: Indicates the client IP address used by user performing the activity (audit log only).
     \[UserPrincipalName \<String\>\]: The userPrincipalName attribute of the user.
   \[Program \<IMicrosoftGraphProgram\>\]: program
@@ -293,9 +296,10 @@ Required on create.
   \[Resource \<IMicrosoftGraphProgramResource\>\]: programResource
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[DisplayName \<String\>\]: The display name of the identity.
-This property is read-only.
-    \[Id \<String\>\]: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     \[Type \<String\>\]: Type of the resource, indicating whether it is a group or an app.
   \[Status \<String\>\]: The life cycle status of the control.
 

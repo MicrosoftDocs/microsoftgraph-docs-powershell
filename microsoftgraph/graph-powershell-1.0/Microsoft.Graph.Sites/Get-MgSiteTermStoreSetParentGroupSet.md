@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoresetparentgroupset
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Get-MgSiteTermStoreSetParentGroupSet
@@ -56,9 +55,6 @@ Get-MgSiteTermStoreSetParentGroupSet -InputObject <ISitesIdentity> [-ExpandPrope
 
 ## DESCRIPTION
 All sets under the group in a term \[store\].
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-group-list-sets-permissions.md)]
 
 ## EXAMPLES
 

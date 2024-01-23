@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsite
 schema: 2.0.0
 ms.prod: sharepoint
-ms.prod: sharepoint
 ---
 
 # Get-MgSite
@@ -40,9 +39,6 @@ Retrieve properties and relationships for a \[site\]\[\] resource.A site resourc
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

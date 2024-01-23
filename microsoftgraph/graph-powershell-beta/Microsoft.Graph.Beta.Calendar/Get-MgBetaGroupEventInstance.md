@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupeventinstance
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Get-MgBetaGroupEventInstance
@@ -45,9 +44,6 @@ This property includes occurrences that are part of the recurrence pattern, and 
 Navigation property.
 Read-only.
 Nullable.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-list-instances-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -21,10 +21,22 @@ New-MgBetaBookingCurrency [-AdditionalProperties <Hashtable>] [-Id <String>] [-S
  [-Confirm] [<CommonParameters>]
 ```
 
+### Create1
+```
+New-MgBetaBookingCurrency -BodyParameter <IMicrosoftGraphBookingCurrency> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
 ### Create
 ```
 New-MgBetaBookingCurrency -BodyParameter <IMicrosoftGraphBookingCurrency> [-WhatIf] [-Confirm]
  [<CommonParameters>]
+```
+
+### CreateExpanded1
+```
+New-MgBetaBookingCurrency [-AdditionalProperties <Hashtable>] [-Id <String>] [-Symbol <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -37,7 +49,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded, CreateExpanded1
 Aliases:
 
 Required: False
@@ -53,7 +65,7 @@ To construct, see NOTES section for BODYPARAMETER properties and create a hash t
 
 ```yaml
 Type: IMicrosoftGraphBookingCurrency
-Parameter Sets: Create
+Parameter Sets: Create1, Create
 Aliases:
 
 Required: True
@@ -69,7 +81,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded, CreateExpanded1
 Aliases:
 
 Required: False
@@ -85,7 +97,7 @@ For example, the currency symbol for the US dollar and for the Australian dollar
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded, CreateExpanded1
 Aliases:
 
 Required: False

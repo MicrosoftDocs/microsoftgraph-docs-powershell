@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileagent
 schema: 2.0.0
 ms.prod: applications
-ms.prod: applications
 ---
 
 # Get-MgBetaOnPremisePublishingProfileAgent
@@ -38,9 +37,6 @@ Retrieve the properties and relationships of an onPremisesAgent object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onpremisesagent-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onpremisesagent-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaOnPremisePublishingProfileAgent Cmdlet

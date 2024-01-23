@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencewhoisrecord
 schema: 2.0.0
 ms.prod: security
-ms.prod: security
 ---
 
 # Get-MgBetaSecurityThreatIntelligenceWhoisRecord
@@ -45,9 +44,6 @@ Specify the desired whoisRecord in one of the following two ways:- Identify a ho
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-whoisrecord-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-threatintelligence-list-whoisrecords-permissions.md)]
 
 ## PARAMETERS
 

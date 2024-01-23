@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementassignmentrequest
 schema: 2.0.0
 ms.prod: governance
-ms.prod: governance
 ---
 
 # Get-MgEntitlementManagementAssignmentRequest
@@ -50,9 +49,6 @@ In Microsoft Entra entitlement management, retrieve the properties and relations
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackageassignmentrequest-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/entitlementmanagement-list-assignmentrequests-permissions.md)]
 
 ## EXAMPLES
 ### Example scenarios for using query parameters

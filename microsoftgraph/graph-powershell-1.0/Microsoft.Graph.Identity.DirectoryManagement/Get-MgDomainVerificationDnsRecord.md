@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainverificationdnsrecord
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Get-MgDomainVerificationDnsRecord
@@ -41,9 +40,6 @@ Get-MgDomainVerificationDnsRecord -InputObject <IIdentityDirectoryManagementIden
 DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Microsoft Entra ID.
 Read-only, Nullable.
 Supports $expand.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/domain-list-verificationdnsrecords-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

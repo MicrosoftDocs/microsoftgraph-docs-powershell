@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserdirectreport
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Get-MgBetaUserDirectReport
@@ -43,9 +42,6 @@ The users and contacts that report to the user.
 (The users and contacts with their manager property set to this user.) Read-only.
 Nullable.
 Supports $expand.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-directreports-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get a user's direct reports

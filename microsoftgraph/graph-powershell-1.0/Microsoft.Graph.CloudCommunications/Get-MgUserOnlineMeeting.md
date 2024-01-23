@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguseronlinemeeting
 schema: 2.0.0
 ms.prod: cloud-communications
-ms.prod: cloud-communications
 ---
 
 # Get-MgUserOnlineMeeting
@@ -42,9 +41,6 @@ Get-MgUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity> [-ExpandProp
 Retrieve the properties and relationships of an onlineMeeting object.
 For example, you can: Teams live event attendee report (deprecated) is an online meeting artifact.
 For details, see Online meeting artifacts and permissions.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onlinemeeting-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onlinemeeting-get-permissions.md)]

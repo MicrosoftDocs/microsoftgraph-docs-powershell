@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetasearchacronym
 schema: 2.0.0
 ms.prod: search
-ms.prod: search
 ---
 
 # Get-MgBetaSearchAcronym
@@ -38,9 +37,6 @@ Read the properties and relationships of an acronym object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-acronym-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-searchentity-list-acronyms-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaSearchAcronym Cmdlet

@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportcredentialuserregistrationdetail
 schema: 2.0.0
-ms.prod: identity-and-access-reports
 ---
 
 # Get-MgBetaReportCredentialUserRegistrationDetail
@@ -34,9 +33,6 @@ Get-MgBetaReportCredentialUserRegistrationDetail -InputObject <IReportsIdentity>
 
 ## DESCRIPTION
 Details of the usage of self-service password reset and multifactor authentication (MFA) for all registered users.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-list-credentialuserregistrationdetails-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaReportCredentialUserRegistrationDetail Cmdlet

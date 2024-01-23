@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointshareduseserviceplan
 schema: 2.0.0
 ms.prod: cloud-pc
-ms.prod: cloud-pc
 ---
 
 # Get-MgBetaDeviceManagementVirtualEndpointSharedUseServicePlan
@@ -39,9 +38,6 @@ Read the properties and relationships of a cloudPcSharedUseServicePlan object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcshareduseserviceplan-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-list-shareduseserviceplans-permissions.md)]
 
 ## PARAMETERS
 

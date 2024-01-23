@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgadminpeopleprofilecardproperty
 schema: 2.0.0
 ms.prod: people
-ms.prod: people
 ---
 
 # Get-MgAdminPeopleProfileCardProperty
@@ -40,6 +39,9 @@ Get-MgAdminPeopleProfileCardProperty -InputObject <IIdentityDirectoryManagementI
 ## DESCRIPTION
 Retrieve the properties of a profileCardProperty entity.
 The profileCardProperty is identified by its directoryPropertyName property.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/profilecardproperty-get-permissions.md)]
 
 ## PARAMETERS
 

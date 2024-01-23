@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementtargetedmanagedappconfiguration
 schema: 2.0.0
 ms.prod: intune
-ms.prod: intune
 ---
 
 # Get-MgDeviceAppManagementTargetedManagedAppConfiguration

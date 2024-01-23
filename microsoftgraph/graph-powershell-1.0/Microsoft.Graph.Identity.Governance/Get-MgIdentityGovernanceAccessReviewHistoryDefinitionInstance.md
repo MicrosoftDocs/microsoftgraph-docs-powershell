@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewhistorydefinitioninstance
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Get-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance
@@ -40,9 +39,6 @@ Get-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance -InputObject <IIde
 ## DESCRIPTION
 If the accessReviewHistoryDefinition is a recurring definition, instances represent each recurrence.
 A definition that doesn't recur will have exactly one instance.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewhistorydefinition-list-instances-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

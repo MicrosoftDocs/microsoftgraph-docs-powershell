@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportdailyprintusagebyuser
 schema: 2.0.0
 ms.prod: cloud-printing
-ms.prod: cloud-printing
 ---
 
 # Get-MgBetaReportDailyPrintUsageByUser
@@ -43,9 +42,6 @@ See the printUsageByUser documentation for descriptions of each of the endpoints
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printusagebyuser-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-list-dailyprintusagebyuser-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

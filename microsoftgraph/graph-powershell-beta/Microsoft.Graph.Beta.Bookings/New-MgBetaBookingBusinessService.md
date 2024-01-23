@@ -19,14 +19,33 @@ Create a new bookingService for the specified bookingBusiness.
 ### CreateExpanded (Default)
 ```
 New-MgBetaBookingBusinessService -BookingBusinessId <String> [-AdditionalInformation <String>]
- [-AdditionalProperties <Hashtable>] [-CustomQuestions <IMicrosoftGraphBookingQuestionAssignment[]>]
- [-DefaultDuration <TimeSpan>] [-DefaultLocation <IMicrosoftGraphLocation>] [-DefaultPrice <Double>]
- [-DefaultPriceType <BookingPriceType>] [-DefaultReminders <IMicrosoftGraphBookingReminder[]>]
- [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsAnonymousJoinEnabled]
- [-IsHiddenFromCustomers] [-IsLocationOnline] [-LanguageTag <String>] [-MaximumAttendeesCount <Int32>]
- [-Notes <String>] [-PostBuffer <TimeSpan>] [-PreBuffer <TimeSpan>]
- [-SchedulingPolicy <IMicrosoftGraphBookingSchedulingPolicy>] [-SmsNotificationsEnabled]
- [-StaffMemberIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
+ [-CustomQuestions <IMicrosoftGraphBookingQuestionAssignment[]>] [-DefaultDuration <TimeSpan>]
+ [-DefaultLocation <IMicrosoftGraphLocation>] [-DefaultPrice <Double>] [-DefaultPriceType <BookingPriceType>]
+ [-DefaultReminders <IMicrosoftGraphBookingReminder[]>] [-Description <String>] [-DisplayName <String>]
+ [-Id <String>] [-IsAnonymousJoinEnabled] [-IsHiddenFromCustomers] [-IsLocationOnline] [-LanguageTag <String>]
+ [-LastUpdatedDateTime <DateTime>] [-MaximumAttendeesCount <Int32>] [-Notes <String>] [-PostBuffer <TimeSpan>]
+ [-PreBuffer <TimeSpan>] [-SchedulingPolicy <IMicrosoftGraphBookingSchedulingPolicy>]
+ [-SmsNotificationsEnabled] [-StaffMemberIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateExpanded1
+```
+New-MgBetaBookingBusinessService -BookingBusinessId <String> [-AdditionalInformation <String>]
+ [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
+ [-CustomQuestions <IMicrosoftGraphBookingQuestionAssignment[]>] [-DefaultDuration <TimeSpan>]
+ [-DefaultLocation <IMicrosoftGraphLocation>] [-DefaultPrice <Double>] [-DefaultPriceType <BookingPriceType>]
+ [-DefaultReminders <IMicrosoftGraphBookingReminder[]>] [-Description <String>] [-DisplayName <String>]
+ [-Id <String>] [-IsAnonymousJoinEnabled] [-IsHiddenFromCustomers] [-IsLocationOnline] [-LanguageTag <String>]
+ [-LastUpdatedDateTime <DateTime>] [-MaximumAttendeesCount <Int32>] [-Notes <String>] [-PostBuffer <TimeSpan>]
+ [-PreBuffer <TimeSpan>] [-SchedulingPolicy <IMicrosoftGraphBookingSchedulingPolicy>]
+ [-SmsNotificationsEnabled] [-StaffMemberIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Create1
+```
+New-MgBetaBookingBusinessService -BookingBusinessId <String> -BodyParameter <IMicrosoftGraphBookingService>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -35,17 +54,36 @@ New-MgBetaBookingBusinessService -BookingBusinessId <String> -BodyParameter <IMi
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### CreateViaIdentityExpanded1
+```
+New-MgBetaBookingBusinessService -InputObject <IBookingsIdentity> [-AdditionalInformation <String>]
+ [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
+ [-CustomQuestions <IMicrosoftGraphBookingQuestionAssignment[]>] [-DefaultDuration <TimeSpan>]
+ [-DefaultLocation <IMicrosoftGraphLocation>] [-DefaultPrice <Double>] [-DefaultPriceType <BookingPriceType>]
+ [-DefaultReminders <IMicrosoftGraphBookingReminder[]>] [-Description <String>] [-DisplayName <String>]
+ [-Id <String>] [-IsAnonymousJoinEnabled] [-IsHiddenFromCustomers] [-IsLocationOnline] [-LanguageTag <String>]
+ [-LastUpdatedDateTime <DateTime>] [-MaximumAttendeesCount <Int32>] [-Notes <String>] [-PostBuffer <TimeSpan>]
+ [-PreBuffer <TimeSpan>] [-SchedulingPolicy <IMicrosoftGraphBookingSchedulingPolicy>]
+ [-SmsNotificationsEnabled] [-StaffMemberIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaBookingBusinessService -InputObject <IBookingsIdentity> [-AdditionalInformation <String>]
- [-AdditionalProperties <Hashtable>] [-CustomQuestions <IMicrosoftGraphBookingQuestionAssignment[]>]
- [-DefaultDuration <TimeSpan>] [-DefaultLocation <IMicrosoftGraphLocation>] [-DefaultPrice <Double>]
- [-DefaultPriceType <BookingPriceType>] [-DefaultReminders <IMicrosoftGraphBookingReminder[]>]
- [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsAnonymousJoinEnabled]
- [-IsHiddenFromCustomers] [-IsLocationOnline] [-LanguageTag <String>] [-MaximumAttendeesCount <Int32>]
- [-Notes <String>] [-PostBuffer <TimeSpan>] [-PreBuffer <TimeSpan>]
- [-SchedulingPolicy <IMicrosoftGraphBookingSchedulingPolicy>] [-SmsNotificationsEnabled]
- [-StaffMemberIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
+ [-CustomQuestions <IMicrosoftGraphBookingQuestionAssignment[]>] [-DefaultDuration <TimeSpan>]
+ [-DefaultLocation <IMicrosoftGraphLocation>] [-DefaultPrice <Double>] [-DefaultPriceType <BookingPriceType>]
+ [-DefaultReminders <IMicrosoftGraphBookingReminder[]>] [-Description <String>] [-DisplayName <String>]
+ [-Id <String>] [-IsAnonymousJoinEnabled] [-IsHiddenFromCustomers] [-IsLocationOnline] [-LanguageTag <String>]
+ [-LastUpdatedDateTime <DateTime>] [-MaximumAttendeesCount <Int32>] [-Notes <String>] [-PostBuffer <TimeSpan>]
+ [-PreBuffer <TimeSpan>] [-SchedulingPolicy <IMicrosoftGraphBookingSchedulingPolicy>]
+ [-SmsNotificationsEnabled] [-StaffMemberIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity1
+```
+New-MgBetaBookingBusinessService -InputObject <IBookingsIdentity>
+ -BodyParameter <IMicrosoftGraphBookingService> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -139,7 +177,7 @@ Additional information that is sent to the customer when an appointment is confi
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -154,7 +192,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -170,7 +208,7 @@ To construct, see NOTES section for BODYPARAMETER properties and create a hash t
 
 ```yaml
 Type: IMicrosoftGraphBookingService
-Parameter Sets: Create, CreateViaIdentity
+Parameter Sets: Create1, Create, CreateViaIdentity1, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -185,10 +223,25 @@ The unique identifier of bookingBusiness
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, Create
+Parameter Sets: CreateExpanded, CreateExpanded1, Create1, Create
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CreatedDateTime
+.
+
+```yaml
+Type: DateTime
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -201,7 +254,7 @@ To construct, see NOTES section for CUSTOMQUESTIONS properties and create a hash
 
 ```yaml
 Type: IMicrosoftGraphBookingQuestionAssignment[]
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -217,7 +270,7 @@ For example, P11D23H59M59.999999999999S.
 
 ```yaml
 Type: TimeSpan
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -233,7 +286,7 @@ To construct, see NOTES section for DEFAULTLOCATION properties and create a hash
 
 ```yaml
 Type: IMicrosoftGraphLocation
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -248,7 +301,7 @@ The default monetary price for the service.
 
 ```yaml
 Type: Double
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -263,7 +316,7 @@ Represents the type of pricing of a booking service.
 
 ```yaml
 Type: BookingPriceType
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -280,7 +333,7 @@ To construct, see NOTES section for DEFAULTREMINDERS properties and create a has
 
 ```yaml
 Type: IMicrosoftGraphBookingReminder[]
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -295,7 +348,7 @@ A text description for the service.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -310,7 +363,7 @@ A name for the derived entity, which interfaces with customers.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -326,7 +379,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -342,7 +395,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IBookingsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentityExpanded, CreateViaIdentity1, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -357,7 +410,7 @@ True if an anonymousJoinWebUrl(webrtcUrl) will be generated for the appointment 
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -372,7 +425,7 @@ True means this service isn't available to customers for booking.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -388,7 +441,7 @@ Default value is false.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -403,7 +456,22 @@ The language of the self service booking page.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -LastUpdatedDateTime
+.
+
+```yaml
+Type: DateTime
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -420,7 +488,7 @@ To create a customer, use the Create bookingCustomer operation.
 
 ```yaml
 Type: Int32
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -435,7 +503,7 @@ Additional information about this service.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -450,7 +518,7 @@ The time to buffer after an appointment for this service ends, and before the ne
 
 ```yaml
 Type: TimeSpan
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -465,7 +533,7 @@ The time to buffer before an appointment for this service can start.
 
 ```yaml
 Type: TimeSpan
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -481,7 +549,7 @@ To construct, see NOTES section for SCHEDULINGPOLICY properties and create a has
 
 ```yaml
 Type: IMicrosoftGraphBookingSchedulingPolicy
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -497,7 +565,7 @@ Default value is false.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -512,7 +580,7 @@ Represents those staff members who provide this service.
 
 ```yaml
 Type: String[]
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -575,6 +643,7 @@ BODYPARAMETER \<IMicrosoftGraphBookingService\>: Represents a particular service
   \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
   \[AdditionalInformation \<String\>\]: Additional information that is sent to the customer when an appointment is confirmed.
+  \[CreatedDateTime \<DateTime?\>\]: 
   \[CustomQuestions \<IMicrosoftGraphBookingQuestionAssignment\[\]\>\]: Contains the set of custom questions associated with a particular service.
     \[IsRequired \<Boolean?\>\]: Indicates whether it's mandatory to answer the custom question.
     \[QuestionId \<String\>\]: If it's mandatory to answer the custom question.
@@ -620,6 +689,7 @@ It's denoted in ISO 8601 format.
   \[IsLocationOnline \<Boolean?\>\]: True indicates that the appointments for the service will be held online.
 Default value is false.
   \[LanguageTag \<String\>\]: The language of the self service booking page.
+  \[LastUpdatedDateTime \<DateTime?\>\]: 
   \[MaximumAttendeesCount \<Int32?\>\]: The maximum number of customers allowed in a service.
 If maximumAttendeesCount of the service is greater than 1, pass valid customer IDs while creating or updating an appointment. 
 To create a customer, use the Create bookingCustomer operation.
@@ -629,6 +699,7 @@ To create a customer, use the Create bookingCustomer operation.
   \[SchedulingPolicy \<IMicrosoftGraphBookingSchedulingPolicy\>\]: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[AllowStaffSelection \<Boolean?\>\]: True if to allow customers to choose a specific person for the booking.
+    \[IsMeetingInviteToCustomersEnabled \<Boolean?\>\]: Enable sending meeting invite to customers.
     \[MaximumAdvance \<TimeSpan?\>\]: Maximum number of days in advance that a booking can be made.
 It follows the ISO 8601 format.
     \[MinimumLeadTime \<TimeSpan?\>\]: The minimum amount of time before which bookings and cancellations must be made.
@@ -703,6 +774,7 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 SCHEDULINGPOLICY \<IMicrosoftGraphBookingSchedulingPolicy\>: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[AllowStaffSelection \<Boolean?\>\]: True if to allow customers to choose a specific person for the booking.
+  \[IsMeetingInviteToCustomersEnabled \<Boolean?\>\]: Enable sending meeting invite to customers.
   \[MaximumAdvance \<TimeSpan?\>\]: Maximum number of days in advance that a booking can be made.
 It follows the ISO 8601 format.
   \[MinimumLeadTime \<TimeSpan?\>\]: The minimum amount of time before which bookings and cancellations must be made.

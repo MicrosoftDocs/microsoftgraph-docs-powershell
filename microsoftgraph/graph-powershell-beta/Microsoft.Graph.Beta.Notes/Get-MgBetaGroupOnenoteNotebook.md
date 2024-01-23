@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetagrouponenotenotebook
 schema: 2.0.0
 ms.prod: onenote
-ms.prod: onenote
 ---
 
 # Get-MgBetaGroupOnenoteNotebook
@@ -41,9 +40,6 @@ Retrieve the properties and relationships of a notebook object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/notebook-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onenote-list-notebooks-permissions.md)]
 
 ## EXAMPLES
 

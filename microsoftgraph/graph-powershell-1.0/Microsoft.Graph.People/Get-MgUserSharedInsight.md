@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.People-help.xml
 Module Name: Microsoft.Graph.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mgusersharedinsight
 schema: 2.0.0
-ms.prod: insights
 ---
 
 # Get-MgUserSharedInsight
@@ -40,9 +39,6 @@ Calculated relationship identifying documents shared with or by the user.
 This includes URLs, file attachments, and reference attachments to OneDrive for Business and SharePoint files found in Outlook messages and meetings.
 This also includes URLs and reference attachments to Teams conversations.
 Ordered by recency of share.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/insights-list-shared-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

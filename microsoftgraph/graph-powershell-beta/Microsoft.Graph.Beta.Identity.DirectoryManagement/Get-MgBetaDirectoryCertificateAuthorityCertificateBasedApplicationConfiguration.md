@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfiguration
 schema: 2.0.0
 ms.prod: identity-and-sign-in
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration
@@ -40,9 +39,6 @@ Read the properties and relationships of a certificateBasedApplicationConfigurat
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/certificatebasedapplicationconfiguration-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/certificateauthoritypath-list-certificatebasedapplicationconfigurations-permissions.md)]
 
 ## PARAMETERS
 

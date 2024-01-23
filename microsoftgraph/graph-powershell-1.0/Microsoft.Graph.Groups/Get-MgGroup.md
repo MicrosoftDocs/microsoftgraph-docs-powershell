@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroup
 schema: 2.0.0
 ms.prod: groups
-ms.prod: groups
 ---
 
 # Get-MgGroup
@@ -46,9 +45,6 @@ The hasMembersWithLicenseErrors and isArchived properties are an exception and a
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get a list of groups

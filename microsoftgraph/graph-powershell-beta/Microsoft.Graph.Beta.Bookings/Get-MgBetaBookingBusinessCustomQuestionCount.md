@@ -21,6 +21,18 @@ Get-MgBetaBookingBusinessCustomQuestionCount -BookingBusinessId <String> [-Filte
  [<CommonParameters>]
 ```
 
+### Get1
+```
+Get-MgBetaBookingBusinessCustomQuestionCount -BookingBusinessId <String> [-Filter <String>] [-Search <String>]
+ [<CommonParameters>]
+```
+
+### GetViaIdentity1
+```
+Get-MgBetaBookingBusinessCustomQuestionCount -InputObject <IBookingsIdentity> [-Filter <String>]
+ [-Search <String>] [<CommonParameters>]
+```
+
 ### GetViaIdentity
 ```
 Get-MgBetaBookingBusinessCustomQuestionCount -InputObject <IBookingsIdentity> [-Filter <String>]
@@ -37,7 +49,7 @@ The unique identifier of bookingBusiness
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get, Get1
 Aliases:
 
 Required: True
@@ -68,7 +80,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IBookingsIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: GetViaIdentity1, GetViaIdentity
 Aliases:
 
 Required: True

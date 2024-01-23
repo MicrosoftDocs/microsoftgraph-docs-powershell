@@ -20,9 +20,26 @@ Update the properties of a bookingStaffMember in the specified bookingBusiness.
 ```
 Update-MgBetaBookingBusinessStaffMember -BookingBusinessId <String> -BookingStaffMemberId <String>
  [-AdditionalProperties <Hashtable>] [-AvailabilityIsAffectedByPersonalCalendar] [-ColorIndex <Int32>]
- [-DisplayName <String>] [-EmailAddress <String>] [-Id <String>] [-IsEmailNotificationEnabled]
- [-MembershipStatus <String>] [-Role <String>] [-TimeZone <String>] [-UseBusinessHours]
- [-WorkingHours <IMicrosoftGraphBookingWorkHours[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-EmailAddress <String>] [-Id <String>]
+ [-IsEmailNotificationEnabled] [-LastUpdatedDateTime <DateTime>] [-MembershipStatus <String>] [-Role <String>]
+ [-TimeZone <String>] [-UseBusinessHours] [-WorkingHours <IMicrosoftGraphBookingWorkHours[]>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### UpdateExpanded1
+```
+Update-MgBetaBookingBusinessStaffMember -BookingBusinessId <String> -BookingStaffMemberId <String>
+ [-AdditionalProperties <Hashtable>] [-AvailabilityIsAffectedByPersonalCalendar] [-ColorIndex <Int32>]
+ [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-EmailAddress <String>] [-Id <String>]
+ [-IsEmailNotificationEnabled] [-LastUpdatedDateTime <DateTime>] [-MembershipStatus <String>] [-Role <String>]
+ [-TimeZone <String>] [-UseBusinessHours] [-WorkingHours <IMicrosoftGraphBookingWorkHours[]>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### Update1
+```
+Update-MgBetaBookingBusinessStaffMember -BookingBusinessId <String> -BookingStaffMemberId <String>
+ -BodyParameter <IMicrosoftGraphBookingStaffMember> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -31,13 +48,30 @@ Update-MgBetaBookingBusinessStaffMember -BookingBusinessId <String> -BookingStaf
  -BodyParameter <IMicrosoftGraphBookingStaffMember> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### UpdateViaIdentityExpanded1
+```
+Update-MgBetaBookingBusinessStaffMember -InputObject <IBookingsIdentity> [-AdditionalProperties <Hashtable>]
+ [-AvailabilityIsAffectedByPersonalCalendar] [-ColorIndex <Int32>] [-CreatedDateTime <DateTime>]
+ [-DisplayName <String>] [-EmailAddress <String>] [-Id <String>] [-IsEmailNotificationEnabled]
+ [-LastUpdatedDateTime <DateTime>] [-MembershipStatus <String>] [-Role <String>] [-TimeZone <String>]
+ [-UseBusinessHours] [-WorkingHours <IMicrosoftGraphBookingWorkHours[]>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaBookingBusinessStaffMember -InputObject <IBookingsIdentity> [-AdditionalProperties <Hashtable>]
- [-AvailabilityIsAffectedByPersonalCalendar] [-ColorIndex <Int32>] [-DisplayName <String>]
- [-EmailAddress <String>] [-Id <String>] [-IsEmailNotificationEnabled] [-MembershipStatus <String>]
- [-Role <String>] [-TimeZone <String>] [-UseBusinessHours] [-WorkingHours <IMicrosoftGraphBookingWorkHours[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AvailabilityIsAffectedByPersonalCalendar] [-ColorIndex <Int32>] [-CreatedDateTime <DateTime>]
+ [-DisplayName <String>] [-EmailAddress <String>] [-Id <String>] [-IsEmailNotificationEnabled]
+ [-LastUpdatedDateTime <DateTime>] [-MembershipStatus <String>] [-Role <String>] [-TimeZone <String>]
+ [-UseBusinessHours] [-WorkingHours <IMicrosoftGraphBookingWorkHours[]>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity1
+```
+Update-MgBetaBookingBusinessStaffMember -InputObject <IBookingsIdentity>
+ -BodyParameter <IMicrosoftGraphBookingStaffMember> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -132,7 +166,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -147,7 +181,7 @@ True means that if the staff member is a Microsoft 365 user, the Bookings API wo
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -163,7 +197,7 @@ To construct, see NOTES section for BODYPARAMETER properties and create a hash t
 
 ```yaml
 Type: IMicrosoftGraphBookingStaffMember
-Parameter Sets: Update, UpdateViaIdentity
+Parameter Sets: Update1, Update, UpdateViaIdentity1, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -178,7 +212,7 @@ The unique identifier of bookingBusiness
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded, UpdateExpanded1, Update1, Update
 Aliases:
 
 Required: True
@@ -193,7 +227,7 @@ The unique identifier of bookingStaffMember
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded, UpdateExpanded1, Update1, Update
 Aliases:
 
 Required: True
@@ -209,7 +243,7 @@ The color corresponds to the color palette in the Staff details page in the Book
 
 ```yaml
 Type: Int32
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -219,12 +253,27 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -CreatedDateTime
+.
+
+```yaml
+Type: DateTime
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -DisplayName
 A name for the derived entity, which interfaces with customers.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -239,7 +288,7 @@ The email address of the person.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -255,7 +304,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -271,7 +320,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IBookingsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentity1, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -286,7 +335,7 @@ True indicates that a staff member will be notified via email when a booking ass
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -296,12 +345,27 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -LastUpdatedDateTime
+.
+
+```yaml
+Type: DateTime
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -MembershipStatus
 bookingStaffMembershipStatus
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -316,7 +380,7 @@ bookingStaffRole
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -332,7 +396,7 @@ For a list of possible values, see dateTimeTimeZone.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -348,7 +412,7 @@ False means the availability is determined by the staff member's workingHours pr
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -365,7 +429,7 @@ To construct, see NOTES section for WORKINGHOURS properties and create a hash ta
 
 ```yaml
 Type: IMicrosoftGraphBookingWorkHours[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -431,7 +495,9 @@ Read-only.
   \[AvailabilityIsAffectedByPersonalCalendar \<Boolean?\>\]: True means that if the staff member is a Microsoft 365 user, the Bookings API would verify the staff member's availability in their personal calendar in Microsoft 365, before making a booking.
   \[ColorIndex \<Int32?\>\]: Identifies a color to represent the staff member.
 The color corresponds to the color palette in the Staff details page in the Bookings app.
+  \[CreatedDateTime \<DateTime?\>\]: 
   \[IsEmailNotificationEnabled \<Boolean?\>\]: True indicates that a staff member will be notified via email when a booking assigned to them is created or changed.
+  \[LastUpdatedDateTime \<DateTime?\>\]: 
   \[MembershipStatus \<String\>\]: bookingStaffMembershipStatus
   \[Role \<String\>\]: bookingStaffRole
   \[TimeZone \<String\>\]: The time zone of the staff member.

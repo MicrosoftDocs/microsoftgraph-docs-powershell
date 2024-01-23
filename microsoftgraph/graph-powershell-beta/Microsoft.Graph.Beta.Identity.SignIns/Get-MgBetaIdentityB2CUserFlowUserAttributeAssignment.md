@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflowuserattributeassignment
 schema: 2.0.0
 ms.prod: identity-and-sign-in
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaIdentityB2CUserFlowUserAttributeAssignment
@@ -39,9 +38,6 @@ Read the properties and relationships of an identityUserFlowAttributeAssignment 
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityuserflowattributeassignment-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/b2cidentityuserflow-list-userattributeassignments-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaIdentityB2CUserFlowUserAttributeAssignment Cmdlet

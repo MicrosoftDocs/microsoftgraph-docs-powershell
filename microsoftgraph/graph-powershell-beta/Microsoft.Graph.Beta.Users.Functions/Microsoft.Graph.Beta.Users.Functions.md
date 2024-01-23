@@ -38,6 +38,9 @@ Locale: en-US
 ### [Get-MgBetaUserChatMessageReplyDelta](Get-MgBetaUserChatMessageReplyDelta.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaUserChatRetainedMessage](Get-MgBetaUserChatRetainedMessage.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaUserCloudPcConnectivityHistory](Get-MgBetaUserCloudPcConnectivityHistory.md)
 {{ Fill in the Description }}
 
@@ -111,6 +114,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaUserEventInstanceDelta](Get-MgBetaUserEventInstanceDelta.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaUserLicenseDetailTeamLicensingDetail](Get-MgBetaUserLicenseDetailTeamLicensingDetail.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaUserLoggedOnManagedDevice](Get-MgBetaUserLoggedOnManagedDevice.md)

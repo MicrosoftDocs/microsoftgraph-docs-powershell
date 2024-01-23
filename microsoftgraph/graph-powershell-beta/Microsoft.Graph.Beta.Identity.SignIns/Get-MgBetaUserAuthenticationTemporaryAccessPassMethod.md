@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationtemporaryaccesspassmethod
 schema: 2.0.0
 ms.prod: identity-and-sign-in
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaUserAuthenticationTemporaryAccessPassMethod
@@ -41,9 +40,6 @@ Retrieve a user's single temporaryAccessPassAuthenticationMethod object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/temporaryaccesspassauthenticationmethod-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authentication-list-temporaryaccesspassmethods-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

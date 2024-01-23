@@ -23,6 +23,9 @@ Get-MgAdminPeople [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonPa
 ## DESCRIPTION
 Retrieve the properties and relationships of a peopleAdminSettings object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/peopleadminsettings-get-permissions.md)]
+
 ## PARAMETERS
 
 ### -ExpandProperty

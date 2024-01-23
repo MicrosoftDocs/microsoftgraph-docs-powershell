@@ -12,12 +12,15 @@ Create a sharing link for a listItem.
 The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
 listItem resources inherit sharing permissions from the list the item resides in.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteListItemLink](/powershell/module/Microsoft.Graph.Groups/New-MgGroupSiteListItemLink?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaGroupSiteListItemLink -GroupId <String> -ListId <String> -ListItemId <String> -SiteId <String>
- [-AdditionalProperties <Hashtable>] [-ExpirationDateTime <DateTime>] [-Password <String>]
+ [-AdditionalProperties <Hashtable>] [-ExpirationDateTime <DateTime>] [-Message <String>] [-Password <String>]
  [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-RetainInheritedPermissions] [-Scope <String>]
  [-SendNotification] [-Type <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -32,9 +35,9 @@ New-MgBetaGroupSiteListItemLink -GroupId <String> -ListId <String> -ListItemId <
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaGroupSiteListItemLink -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-ExpirationDateTime <DateTime>] [-Password <String>] [-Recipients <IMicrosoftGraphDriveRecipient[]>]
- [-RetainInheritedPermissions] [-Scope <String>] [-SendNotification] [-Type <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ExpirationDateTime <DateTime>] [-Message <String>] [-Password <String>]
+ [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-RetainInheritedPermissions] [-Scope <String>]
+ [-SendNotification] [-Type <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -152,6 +155,21 @@ Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Message
+.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -314,6 +332,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 BODYPARAMETER \<IPaths17Mor22GroupsGroupIdSitesSiteIdListsListIdItemsListitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema\>: .
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[ExpirationDateTime \<DateTime?\>\]: 
+  \[Message \<String\>\]: 
   \[Password \<String\>\]: 
   \[Recipients \<IMicrosoftGraphDriveRecipient\[\]\>\]: 
     \[Alias \<String\>\]: The alias of the domain object, for cases where an email address is unavailable (e.g.
@@ -327,6 +346,7 @@ security groups).
 
 INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[BaseSitePageId \<String\>\]: The unique identifier of baseSitePage
   \[ContentTypeId \<String\>\]: The unique identifier of contentType
   \[ConversationId \<String\>\]: The unique identifier of conversation
   \[ConversationThreadId \<String\>\]: The unique identifier of conversationThread
@@ -342,6 +362,8 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[ExtensionId \<String\>\]: The unique identifier of extension
   \[GroupId \<String\>\]: The unique identifier of group
   \[GroupLifecyclePolicyId \<String\>\]: The unique identifier of groupLifecyclePolicy
+  \[HorizontalSectionColumnId \<String\>\]: The unique identifier of horizontalSectionColumn
+  \[HorizontalSectionId \<String\>\]: The unique identifier of horizontalSection
   \[IncludePersonalNotebooks \<Boolean?\>\]: Usage: includePersonalNotebooks={includePersonalNotebooks}
   \[Interval \<String\>\]: Usage: interval='{interval}'
   \[ListId \<String\>\]: The unique identifier of list
@@ -367,6 +389,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[UniqueName \<String\>\]: Alternate key of group
   \[User \<String\>\]: Usage: User='{User}'
   \[UserId \<String\>\]: The unique identifier of user
+  \[WebPartId \<String\>\]: The unique identifier of webPart
 
 RECIPIENTS \<IMicrosoftGraphDriveRecipient\[\]\>: .
   \[Alias \<String\>\]: The alias of the domain object, for cases where an email address is unavailable (e.g.
@@ -375,6 +398,7 @@ security groups).
   \[ObjectId \<String\>\]: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
+[New-MgGroupSiteListItemLink](/powershell/module/Microsoft.Graph.Groups/New-MgGroupSiteListItemLink?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupsitelistitemlink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupsitelistitemlink)
 

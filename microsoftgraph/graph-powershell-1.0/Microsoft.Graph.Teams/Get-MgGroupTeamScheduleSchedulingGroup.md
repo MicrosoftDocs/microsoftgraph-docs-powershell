@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamscheduleschedulinggroup
 schema: 2.0.0
 ms.prod: microsoft-teams
-ms.prod: microsoft-teams
 ---
 
 # Get-MgGroupTeamScheduleSchedulingGroup
@@ -41,9 +40,6 @@ Retrieve the properties and relationships of a schedulingGroup by ID.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/schedulinggroup-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/schedule-list-schedulinggroups-permissions.md)]
 
 ## EXAMPLES
 

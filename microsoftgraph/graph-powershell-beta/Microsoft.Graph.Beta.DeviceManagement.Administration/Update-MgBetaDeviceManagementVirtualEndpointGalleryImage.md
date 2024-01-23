@@ -16,9 +16,10 @@ Update the navigation property galleryImages in deviceManagement
 ```
 Update-MgBetaDeviceManagementVirtualEndpointGalleryImage -CloudPcGalleryImageId <String>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-EndDate <DateTime>] [-ExpirationDate <DateTime>]
- [-Id <String>] [-Offer <String>] [-OfferDisplayName <String>] [-Publisher <String>] [-RecommendedSku <String>]
- [-SizeInGb <Int32>] [-Sku <String>] [-SkuDisplayName <String>] [-StartDate <DateTime>] [-Status <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-Offer <String>] [-OfferDisplayName <String>] [-OfferName <String>] [-Publisher <String>]
+ [-PublisherName <String>] [-RecommendedSku <String>] [-SizeInGb <Int32>] [-Sku <String>]
+ [-SkuDisplayName <String>] [-SkuName <String>] [-StartDate <DateTime>] [-Status <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
@@ -31,9 +32,10 @@ Update-MgBetaDeviceManagementVirtualEndpointGalleryImage -CloudPcGalleryImageId 
 ```
 Update-MgBetaDeviceManagementVirtualEndpointGalleryImage -InputObject <IDeviceManagementAdministrationIdentity>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-EndDate <DateTime>] [-ExpirationDate <DateTime>]
- [-Id <String>] [-Offer <String>] [-OfferDisplayName <String>] [-Publisher <String>] [-RecommendedSku <String>]
- [-SizeInGb <Int32>] [-Sku <String>] [-SkuDisplayName <String>] [-StartDate <DateTime>] [-Status <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-Offer <String>] [-OfferDisplayName <String>] [-OfferName <String>] [-Publisher <String>]
+ [-PublisherName <String>] [-RecommendedSku <String>] [-SizeInGb <Int32>] [-Sku <String>]
+ [-SkuDisplayName <String>] [-SkuName <String>] [-StartDate <DateTime>] [-Status <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -208,10 +210,40 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -OfferName
+.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Publisher
 The publisher name of the gallery image.
 This value is passed to Azure to get the image resource.
 Read-only.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PublisherName
+.
 
 ```yaml
 Type: String
@@ -278,6 +310,21 @@ Accept wildcard characters: False
 The official display stock keeping unit (SKU) name of this gallery image.
 For example, 2004.
 Read-only.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SkuName
+.
 
 ```yaml
 Type: String
@@ -386,9 +433,11 @@ Read-only.
   \[OfferDisplayName \<String\>\]: The official display offer name of the gallery image.
 For example, Windows 10 Enterprise + OS Optimizations.
 Read-only.
+  \[OfferName \<String\>\]: 
   \[Publisher \<String\>\]: The publisher name of the gallery image.
 This value is passed to Azure to get the image resource.
 Read-only.
+  \[PublisherName \<String\>\]: 
   \[RecommendedSku \<String\>\]: Recommended Cloud PC SKU for this gallery image.
 Read-only.
   \[SizeInGb \<Int32?\>\]: The size of this image in gigabytes.
@@ -399,6 +448,7 @@ Read-only.
   \[SkuDisplayName \<String\>\]: The official display stock keeping unit (SKU) name of this gallery image.
 For example, 2004.
 Read-only.
+  \[SkuName \<String\>\]: 
   \[StartDate \<DateTime?\>\]: The date when the image becomes available.
 Read-only.
   \[Status \<String\>\]: cloudPcGalleryImageStatus
