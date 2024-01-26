@@ -35,13 +35,17 @@ Revoke the specified user's access to submit print jobs to the associated printe
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printershare-delete-alloweduser-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
-```
 
 Remove-MgPrintShareAllowedUserByRef -PrinterShareId $printerShareId -UserId $userId
+```
+This example shows how to use the Remove-MgPrintShareAllowedUserByRef Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

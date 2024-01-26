@@ -49,15 +49,16 @@ Allow applications to share screen content with the participants of a group call
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-changescreensharingrole-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Rename-MgCommunicationCallScreenSharingRole Cmdlet
+```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 $params = @{
 	Role = "viewer"
 }
 Rename-MgCommunicationCallScreenSharingRole -CallId $callId -BodyParameter $params
 ```
+This example shows how to use the Rename-MgCommunicationCallScreenSharingRole Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

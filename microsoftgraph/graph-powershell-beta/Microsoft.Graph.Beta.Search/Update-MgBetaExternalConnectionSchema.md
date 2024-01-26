@@ -49,13 +49,17 @@ Create the schema for a Microsoft Search connection.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-externalconnection-patch-schema-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Search
-```
 
 Get-MgBetaExternalConnectionSchema -ExternalConnectionId $externalConnectionId
+```
+This example shows how to use the Update-MgBetaBetaExternalConnectionSchema Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

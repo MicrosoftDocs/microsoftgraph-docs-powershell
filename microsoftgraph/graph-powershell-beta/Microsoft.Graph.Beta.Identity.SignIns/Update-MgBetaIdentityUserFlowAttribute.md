@@ -49,17 +49,21 @@ Update the properties of a custom identityUserFlowAttribute object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityuserflowattribute-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	description = "Your new hobby"
 }
 
 Update-MgBetaIdentityUserFlowAttribute -IdentityUserFlowAttributeId $identityUserFlowAttributeId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaIdentityUserFlowAttribute Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

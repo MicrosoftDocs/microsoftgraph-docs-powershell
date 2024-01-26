@@ -87,17 +87,21 @@ Update the properties of a set object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-set-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 $params = @{
 	description = "mySet"
 }
 
 Update-MgSiteTermStoreSet -SiteId $siteId -SetId $setId -BodyParameter $params
+```
+This example shows how to use the Update-MgSiteTermStoreSet Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

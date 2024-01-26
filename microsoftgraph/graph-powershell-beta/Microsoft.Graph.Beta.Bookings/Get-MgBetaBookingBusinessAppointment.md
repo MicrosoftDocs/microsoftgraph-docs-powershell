@@ -63,18 +63,20 @@ The start and end properties are always returned in UTC.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingappointment-get-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgBetaBookingBusinessAppointment Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
 Get-MgBetaBookingBusinessAppointment -BookingBusinessId $bookingBusinessId
 ```
-
-### EXAMPLE 2
-```
+This example shows how to use the Get-MgBetaBookingBusinessAppointment Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Get-MgBetaBookingBusinessAppointment Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
 Get-MgBetaBookingBusinessAppointment -BookingBusinessId $bookingBusinessId -BookingAppointmentId $bookingAppointmentId
 ```
+This example shows how to use the Get-MgBetaBookingBusinessAppointment Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

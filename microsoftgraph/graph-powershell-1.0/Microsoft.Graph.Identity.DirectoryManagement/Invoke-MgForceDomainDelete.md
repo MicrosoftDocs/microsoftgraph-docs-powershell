@@ -56,15 +56,16 @@ To verify deletion of a domain, you can perform a get domain operation.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/domain-forcedelete-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Invoke-MgForceDomainDelete Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 $params = @{
 	DisableUserAccounts = $true
 }
 Invoke-MgForceDomainDelete -DomainId $domainId -BodyParameter $params
 ```
+This example shows how to use the Invoke-MgForceDomainDelete Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

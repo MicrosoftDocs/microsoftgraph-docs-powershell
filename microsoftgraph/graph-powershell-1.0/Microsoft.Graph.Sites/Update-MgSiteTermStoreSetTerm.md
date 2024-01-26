@@ -87,11 +87,10 @@ Update the properties of a term object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-term-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 $params = @{
 	labels = @(
@@ -104,6 +103,11 @@ $params = @{
 }
 
 Update-MgSiteTermStoreSetTerm -SiteId $siteId -SetId $setId -TermId $termId -BodyParameter $params
+```
+This example shows how to use the Update-MgSiteTermStoreSetTerm Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

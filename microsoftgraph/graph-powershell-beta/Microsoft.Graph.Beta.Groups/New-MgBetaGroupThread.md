@@ -55,11 +55,10 @@ Use reply thread or reply post to further post to that thread.
 Note: You can also start a new thread in an existing conversation.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 $params = @{
 	topic = "New Conversation Thread Topic"
@@ -82,6 +81,11 @@ $params = @{
 }
 
 New-MgBetaGroupThread -GroupId $groupId -BodyParameter $params
+```
+This example shows how to use the New-MgBetaGroupThread Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

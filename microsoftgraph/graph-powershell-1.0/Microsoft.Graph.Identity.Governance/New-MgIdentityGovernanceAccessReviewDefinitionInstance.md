@@ -53,13 +53,17 @@ New-MgIdentityGovernanceAccessReviewDefinitionInstance -InputObject <IIdentityGo
 Create new navigation property to instances for identityGovernance
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgIdentityGovernanceAccessReviewDefinitionInstance -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId
+```
+This example shows how to use the New-MgIdentityGovernanceAccessReviewDefinitionInstance Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

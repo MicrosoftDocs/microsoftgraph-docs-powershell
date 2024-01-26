@@ -35,11 +35,13 @@ Delete an internalDomainFederation object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/internaldomainfederation-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Remove federation settigs for a federated domain
 
-### EXAMPLE 1
-```
+```powershell
 Remove-MgDomainFederationConfiguration -DomainId 'contoso.com' -InternalDomainFederationId '2a8ce608-bb34-473f-9e0f-f373ee4cbc5a'
 ```
+
+This example removes the federation settings of the specified federated domain.
 
 ## PARAMETERS
 

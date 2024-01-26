@@ -73,11 +73,10 @@ Update the properties of an organizationalBrandingLocalization object for a spec
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/organizationalbrandinglocalization-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Update the backgroundColor and signInPageText for the fr-FR localization using PATCH
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
 	backgroundColor = "#00000F"
@@ -85,11 +84,15 @@ $params = @{
 }
 
 Update-MgBetaOrganizationBrandingLocalization -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaOrganizationBrandingLocalization Cmdlet.
 
-### EXAMPLE 2
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Override a default branding value with a blank string
+
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
 	signInPageText = "Welcome to Contoso France."
@@ -97,6 +100,11 @@ $params = @{
 }
 
 Update-MgBetaOrganizationBrandingLocalization -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaOrganizationBrandingLocalization Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

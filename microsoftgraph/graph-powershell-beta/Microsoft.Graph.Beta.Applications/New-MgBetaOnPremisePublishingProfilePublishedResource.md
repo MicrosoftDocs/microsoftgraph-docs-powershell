@@ -48,9 +48,8 @@ Create a new publishedResource object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/publishedresource-post-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the New-MgBetaOnPremisePublishingProfilePublishedResource Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{
 	DisplayName = "New provisioning"
@@ -58,6 +57,8 @@ $params = @{
 }
 New-MgBetaOnPremisePublishingProfilePublishedResource -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaOnPremisePublishingProfilePublishedResource Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

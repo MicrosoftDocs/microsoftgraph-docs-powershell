@@ -39,18 +39,20 @@ Read the properties and relationships of a cloudPcOverview object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-cloudpcoverview-get-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgBetaTenantRelationshipManagedTenantCloudPcOverview Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.ManagedTenants
 Get-MgBetaTenantRelationshipManagedTenantCloudPcOverview -CloudPcOverviewTenantId $cloudPcOverviewTenantId
 ```
-
-### EXAMPLE 2
-```
+This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantCloudPcOverview Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Get-MgBetaTenantRelationshipManagedTenantCloudPcOverview Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.ManagedTenants
 Get-MgBetaTenantRelationshipManagedTenantCloudPcOverview
 ```
+This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantCloudPcOverview Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

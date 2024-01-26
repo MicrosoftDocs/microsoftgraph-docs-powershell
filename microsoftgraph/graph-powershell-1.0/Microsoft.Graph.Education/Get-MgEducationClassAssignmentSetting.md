@@ -31,17 +31,21 @@ Get-MgEducationClassAssignmentSetting -InputObject <IEducationIdentity> [-Expand
 Specifies class-level assignments settings.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	submissionAnimationDisabled = $true
 }
 
 Update-MgEducationClassAssignmentSetting -EducationClassId $educationClassId -BodyParameter $params
+```
+This example shows how to use the Get-MgEducationClassAssignmentSetting Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

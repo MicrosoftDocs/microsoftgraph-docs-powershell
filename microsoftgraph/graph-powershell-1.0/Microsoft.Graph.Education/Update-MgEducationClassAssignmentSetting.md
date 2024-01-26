@@ -51,17 +51,21 @@ Only teachers can update these settings.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignmentsettings-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	submissionAnimationDisabled = $true
 }
 
 Update-MgEducationClassAssignmentSetting -EducationClassId $educationClassId -BodyParameter $params
+```
+This example shows how to use the Update-MgEducationClassAssignmentSetting Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

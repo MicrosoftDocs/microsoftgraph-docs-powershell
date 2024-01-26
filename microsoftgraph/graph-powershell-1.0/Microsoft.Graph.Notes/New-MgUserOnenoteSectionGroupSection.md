@@ -55,11 +55,11 @@ Create a new onenoteSection in the specified section group.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/sectiongroup-post-sections-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Notes
-```
 
 $params = @{
 	displayName = "Section name"
@@ -67,6 +67,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserOnenoteSectionGroupSection -UserId $userId -SectionGroupId $sectionGroupId -BodyParameter $params
+
+```
+This example shows how to use the New-MgUserOnenoteSectionGroupSection Cmdlet.
+
 
 ## PARAMETERS
 

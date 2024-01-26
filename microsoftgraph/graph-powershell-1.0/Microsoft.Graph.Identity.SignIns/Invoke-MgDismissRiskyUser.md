@@ -38,9 +38,8 @@ This action sets the targeted user's risk level to none.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/riskyuser-dismiss-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Invoke-MgDismissRiskyUser Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 $params = @{
 	UserIds = @(
@@ -50,6 +49,8 @@ $params = @{
 }
 Invoke-MgDismissRiskyUser -BodyParameter $params
 ```
+This example shows how to use the Invoke-MgDismissRiskyUser Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

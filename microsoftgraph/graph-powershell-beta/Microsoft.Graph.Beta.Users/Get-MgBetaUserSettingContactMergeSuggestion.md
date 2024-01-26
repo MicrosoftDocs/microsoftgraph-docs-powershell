@@ -32,13 +32,14 @@ Read the properties and relationships of a contactMergeSuggestions object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contactmergesuggestions-get-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgBetaUserSettingContactMergeSuggestion Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Users
 # A UPN can also be used as -UserId.
 Get-MgBetaUserSettingContactMergeSuggestion -UserId $userId
 ```
+This example shows how to use the Get-MgBetaUserSettingContactMergeSuggestion Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

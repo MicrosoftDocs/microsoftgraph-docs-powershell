@@ -35,13 +35,17 @@ Delete (unregister) a printConnector.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printconnector-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
-```
 
 Remove-MgPrintConnector -PrintConnectorId $printConnectorId
+```
+This example shows how to use the Remove-MgPrintConnector Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

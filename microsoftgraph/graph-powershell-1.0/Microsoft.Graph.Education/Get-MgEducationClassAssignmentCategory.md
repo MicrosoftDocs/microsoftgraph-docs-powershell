@@ -51,13 +51,17 @@ Only teachers, students, and applications with application permissions can perfo
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationcategory-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationClassAssignmentCategory -EducationClassId $educationClassId
+
+```
+This example shows how to use the Get-MgEducationClassAssignmentCategory Cmdlet.
+
 
 ## PARAMETERS
 

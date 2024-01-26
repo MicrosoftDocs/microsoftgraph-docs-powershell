@@ -48,9 +48,8 @@ This method is only for the CVI partners to provide their media quality data.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-logteleconferencedevicequality-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Invoke-MgBetaLogCommunicationCallTeleconferenceDeviceQuality Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
 	Quality = @{
@@ -138,6 +137,8 @@ $params = @{
 }
 Invoke-MgBetaLogCommunicationCallTeleconferenceDeviceQuality -BodyParameter $params
 ```
+This example shows how to use the Invoke-MgBetaLogCommunicationCallTeleconferenceDeviceQuality Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

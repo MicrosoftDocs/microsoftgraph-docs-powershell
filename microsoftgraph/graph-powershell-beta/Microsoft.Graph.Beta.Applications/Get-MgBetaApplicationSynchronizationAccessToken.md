@@ -51,11 +51,11 @@ Acquire an OAuth Access token to authorize the Microsoft Entra provisioning serv
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronization-acquireaccesstoken-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 $params = @{
 	credentials = @(
@@ -66,6 +66,10 @@ $params = @{
 }
 
 Get-MgBetaApplicationSynchronizationAccessToken -ApplicationId $applicationId -BodyParameter $params
+
+```
+This example shows how to use the Get-MgBetaApplicationSynchronizationAccessToken Cmdlet.
+
 
 ## PARAMETERS
 

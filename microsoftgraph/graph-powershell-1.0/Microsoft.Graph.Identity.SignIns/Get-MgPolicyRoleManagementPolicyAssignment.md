@@ -42,20 +42,28 @@ Get the details of a policy assignment in PIM that's assigned to Microsoft Entra
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedrolemanagementpolicyassignment-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Retrieve a role management policy assignment
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgPolicyRoleManagementPolicyAssignment -UnifiedRoleManagementPolicyAssignmentId $unifiedRoleManagementPolicyAssignmentId
-
-### EXAMPLE 2
 ```
+This example shows how to use the Get-MgPolicyRoleManagementPolicyAssignment Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Retrieve a role management policy assignment and expand the policy and its associated rules
+
+```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
-Get-MgPolicyRoleManagementPolicyAssignment -UnifiedRoleManagementPolicyAssignmentId $unifiedRoleManagementPolicyAssignmentId -ExpandProperty "policy(\`$expand=rules)"
+Get-MgPolicyRoleManagementPolicyAssignment -UnifiedRoleManagementPolicyAssignmentId $unifiedRoleManagementPolicyAssignmentId -ExpandProperty "policy(`$expand=rules)"
+```
+This example shows how to use the Get-MgPolicyRoleManagementPolicyAssignment Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

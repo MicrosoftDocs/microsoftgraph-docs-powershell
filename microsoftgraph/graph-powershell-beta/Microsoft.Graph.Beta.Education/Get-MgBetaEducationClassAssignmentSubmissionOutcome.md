@@ -40,20 +40,28 @@ Get-MgBetaEducationClassAssignmentSubmissionOutcome -InputObject <IEducationIden
 Get outcomes from education
 
 ## EXAMPLES
+### Example 1: Get all outcomes
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.Education
-```
+This example will get all outcomes
 
-Get-MgBetaEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -Filter "isof('microsoft.graph.educationFeedbackResourceOutcome')"
+### Example 2: Get outcomes filtered by outcome type
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Education
+
+Get-MgBetaEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -Filter "isof('microsoft.graph.educationFeedbackResourceOutcome')" 
+
+```
+This example will get outcomes filtered by outcome type
+
 
 ## PARAMETERS
 

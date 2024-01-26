@@ -37,13 +37,17 @@ Only teachers, students, and applications with application permissions can perfo
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-get-rubric-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationClassAssignmentRubric -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
+
+```
+This example shows how to use the Get-MgEducationClassAssignmentRubric Cmdlet.
+
 
 ## PARAMETERS
 

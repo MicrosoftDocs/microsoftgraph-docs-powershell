@@ -37,17 +37,21 @@ Only teachers can perform this operation.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignmentsettings-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 $params = @{
 	submissionAnimationDisabled = $true
 }
 
 Update-MgBetaEducationClassAssignmentSetting -EducationClassId $educationClassId -BodyParameter $params
+```
+This example shows how to use the Get-MgBetaBetaEducationClassAssignmentSetting Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

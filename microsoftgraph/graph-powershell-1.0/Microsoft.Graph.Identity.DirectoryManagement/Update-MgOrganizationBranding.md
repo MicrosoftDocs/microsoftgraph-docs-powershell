@@ -72,11 +72,10 @@ Update the properties of the default branding object specified by the organizati
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organizationalbranding-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 $params = @{
 	signInPageText = "Default"
@@ -84,6 +83,11 @@ $params = @{
 }
 
 Update-MgOrganizationBranding -OrganizationId $organizationId -BodyParameter $params
+```
+This example shows how to use the Update-MgOrganizationBranding Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

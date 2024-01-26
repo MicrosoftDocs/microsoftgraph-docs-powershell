@@ -31,13 +31,17 @@ Remove-MgBetaUserTeamworkInstalledApp -InputObject <ITeamsIdentity> [-IfMatch <S
 Uninstall an app from the personal scope of the specified user.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Remove-MgBetaUserTeamworkInstalledApp -UserId $userId -UserScopeTeamsAppInstallationId $userScopeTeamsAppInstallationId
+
+```
+This example shows how to use the Remove-MgBetaUserTeamworkInstalledApp Cmdlet.
+
 
 ## PARAMETERS
 

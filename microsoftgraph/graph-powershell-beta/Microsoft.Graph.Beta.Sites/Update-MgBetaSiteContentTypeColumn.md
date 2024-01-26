@@ -68,13 +68,17 @@ Update a \[site\]\[\], \[list\]\[\] or \[content type\]\[contentType\] \[column\
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/columndefinition-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Get-MgBetaSiteContentTypeColumn -SiteId $siteId -ContentTypeId $contentTypeId -ColumnDefinitionId $columnDefinitionId
+```
+This example shows how to use the Update-MgBetaBetaSiteContentTypeColumn Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

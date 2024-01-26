@@ -36,11 +36,11 @@ Change the status of a list of serviceUpdateMessages to favorite for the signed 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceupdatemessage-favorite-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
-```
 
 $params = @{
 	messageIds = @(
@@ -50,6 +50,10 @@ $params = @{
 }
 
 Invoke-MgBetaFavoriteServiceAnnouncementMessage -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaFavoriteServiceAnnouncementMessage Cmdlet.
+
 
 ## PARAMETERS
 

@@ -44,11 +44,11 @@ Create a new ediscoveryCase object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-casesroot-post-ediscoverycases-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 $params = @{
 	displayName = "CONTOSO LITIGATION-005"
@@ -57,6 +57,10 @@ $params = @{
 }
 
 New-MgSecurityCaseEdiscoveryCase -BodyParameter $params
+
+```
+This example shows how to use the New-MgSecurityCaseEdiscoveryCase Cmdlet.
+
 
 ## PARAMETERS
 

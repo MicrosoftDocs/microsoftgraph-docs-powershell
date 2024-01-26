@@ -49,11 +49,11 @@ Add (pin) a tab to the specified chat.
 The corresponding app must already be installed in the chat.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	displayName = "My Contoso Tab"
@@ -67,6 +67,10 @@ $params = @{
 }
 
 New-MgBetaChatTab -ChatId $chatId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaChatTab Cmdlet.
+
 
 ## PARAMETERS
 

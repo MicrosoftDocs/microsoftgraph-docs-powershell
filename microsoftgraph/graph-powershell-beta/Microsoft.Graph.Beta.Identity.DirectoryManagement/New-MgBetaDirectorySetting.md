@@ -38,9 +38,8 @@ The template named Group.Unified can be used to configure tenant-wide Microsoft 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-post-settings-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the New-MgBetaDirectorySetting Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{
 	TemplateId = "62375ab9-6b52-47ed-826b-58e47e0e304b"
@@ -65,6 +64,8 @@ $params = @{
 }
 New-MgBetaDirectorySetting -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaDirectorySetting Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

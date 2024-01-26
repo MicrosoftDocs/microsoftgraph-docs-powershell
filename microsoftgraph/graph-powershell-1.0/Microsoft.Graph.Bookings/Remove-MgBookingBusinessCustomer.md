@@ -35,13 +35,17 @@ Delete the specified bookingCustomer object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingcustomer-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Bookings
-```
 
 Remove-MgBookingBusinessCustomer -BookingBusinessId $bookingBusinessId -BookingCustomerBaseId $bookingCustomerBaseId
+```
+This example shows how to use the Remove-MgBookingBusinessCustomer Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

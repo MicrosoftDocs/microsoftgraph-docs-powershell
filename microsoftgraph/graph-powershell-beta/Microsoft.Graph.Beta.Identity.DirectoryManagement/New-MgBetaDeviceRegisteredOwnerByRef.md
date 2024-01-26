@@ -47,17 +47,21 @@ Add a user as a registered owner of the device.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-post-registeredowners-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/beta/directoryObjects/{id}"
 }
 
 New-MgBetaDeviceRegisteredOwnerByRef -DeviceId $deviceId -BodyParameter $params
+```
+This example shows how to use the New-MgBetaDeviceRegisteredOwnerByRef Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -40,16 +40,6 @@ To remove the email address of a channel, use the removeEmail method.
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject

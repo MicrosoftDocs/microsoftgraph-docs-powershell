@@ -37,13 +37,17 @@ The status of the accessReviewInstance must be Completed to call this method.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewinstance-applydecisions-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Add-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId
+
+```
+This example shows how to use the Add-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision Cmdlet.
+
 
 ## PARAMETERS
 

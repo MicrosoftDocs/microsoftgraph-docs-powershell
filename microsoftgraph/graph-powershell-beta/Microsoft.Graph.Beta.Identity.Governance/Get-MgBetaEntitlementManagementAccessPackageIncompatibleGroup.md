@@ -29,13 +29,17 @@ Retrieve a list of the group objects that have been marked as incompatible on an
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackage-list-incompatiblegroups-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Get-MgBetaEntitlementManagementAccessPackageIncompatibleGroup -AccessPackageId $accessPackageId
+
+```
+This example shows how to use the Get-MgBetaEntitlementManagementAccessPackageIncompatibleGroup Cmdlet.
+
 
 ## PARAMETERS
 
