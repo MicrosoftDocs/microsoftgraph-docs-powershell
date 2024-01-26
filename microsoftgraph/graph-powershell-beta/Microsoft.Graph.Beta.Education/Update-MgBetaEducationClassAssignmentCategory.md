@@ -44,22 +44,6 @@ Update-MgBetaEducationClassAssignmentCategory -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Update the navigation property assignmentCategories in education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -246,5 +230,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 [Update-MgEducationClassAssignmentCategory](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClassAssignmentCategory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentcategory)
+
 
 

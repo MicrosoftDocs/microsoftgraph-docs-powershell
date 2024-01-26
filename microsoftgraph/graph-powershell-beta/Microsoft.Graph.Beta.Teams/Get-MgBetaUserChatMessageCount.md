@@ -30,18 +30,6 @@ Get-MgBetaUserChatMessageCount -InputObject <ITeamsIdentity> [-Filter <String>] 
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChatId
@@ -180,5 +168,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Get-MgUserChatMessageCount](/powershell/module/Microsoft.Graph.Teams/Get-MgUserChatMessageCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserchatmessagecount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserchatmessagecount)
+
 
 

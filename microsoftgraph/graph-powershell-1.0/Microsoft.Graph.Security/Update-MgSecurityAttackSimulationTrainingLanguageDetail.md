@@ -48,18 +48,6 @@ Update-MgSecurityAttackSimulationTrainingLanguageDetail -InputObject <ISecurityI
 ## DESCRIPTION
 Update the navigation property languageDetails in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -441,5 +429,6 @@ For example, if a user changes their display name, the API might show the new va
 [Update-MgBetaSecurityAttackSimulationTrainingLanguageDetail](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityAttackSimulationTrainingLanguageDetail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityattacksimulationtraininglanguagedetail](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityattacksimulationtraininglanguagedetail)
+
 
 

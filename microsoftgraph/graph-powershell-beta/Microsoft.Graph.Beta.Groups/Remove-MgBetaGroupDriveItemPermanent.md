@@ -30,18 +30,6 @@ Remove-MgBetaGroupDriveItemPermanent -InputObject <IGroupsIdentity> [-PassThru] 
 ## DESCRIPTION
 Invoke action permanentDelete
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -217,5 +205,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Remove-MgGroupDriveItemPermanent](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupDriveItemPermanent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupdriveitempermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupdriveitempermanent)
+
 
 

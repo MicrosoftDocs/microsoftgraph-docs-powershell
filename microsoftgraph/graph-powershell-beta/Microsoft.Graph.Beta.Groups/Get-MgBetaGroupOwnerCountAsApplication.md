@@ -30,18 +30,6 @@ Get-MgBetaGroupOwnerCountAsApplication -InputObject <IGroupsIdentity> [-Filter <
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ConsistencyLevel
@@ -187,5 +175,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Get-MgGroupOwnerCountAsApplication](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupOwnerCountAsApplication?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupownercountasapplication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupownercountasapplication)
+
 
 

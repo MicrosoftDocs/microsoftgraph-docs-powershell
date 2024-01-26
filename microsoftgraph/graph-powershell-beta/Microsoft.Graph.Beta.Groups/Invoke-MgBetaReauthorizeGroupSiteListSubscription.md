@@ -31,22 +31,6 @@ Invoke-MgBetaReauthorizeGroupSiteListSubscription -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -GroupId
@@ -237,5 +221,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Invoke-MgReauthorizeGroupSiteListSubscription](/powershell/module/Microsoft.Graph.Groups/Invoke-MgReauthorizeGroupSiteListSubscription?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareauthorizegroupsitelistsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareauthorizegroupsitelistsubscription)
+
 
 

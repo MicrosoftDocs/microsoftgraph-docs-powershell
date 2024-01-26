@@ -31,22 +31,6 @@ Set-MgBetaUserTodoListTaskAttachmentSessionContent -InputObject <IUsersIdentity>
 ## DESCRIPTION
 The content streams that are uploaded.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AttachmentSessionId
@@ -232,5 +216,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 [Set-MgUserTodoListTaskAttachmentSessionContent](/powershell/module/Microsoft.Graph.Users/Set-MgUserTodoListTaskAttachmentSessionContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/set-mgbetausertodolisttaskattachmentsessioncontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/set-mgbetausertodolisttaskattachmentsessioncontent)
+
 
 

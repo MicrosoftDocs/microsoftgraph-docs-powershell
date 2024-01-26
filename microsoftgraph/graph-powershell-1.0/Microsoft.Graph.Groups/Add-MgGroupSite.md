@@ -48,22 +48,6 @@ Follow a user's site or multiple sites.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-follow-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -9386,5 +9370,6 @@ This relationship can only be used to load a specific term set.
 [Add-MgBetaGroupSite](/powershell/module/Microsoft.Graph.Beta.Groups/Add-MgBetaGroupSite?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/add-mggroupsite](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/add-mggroupsite)
+
 
 

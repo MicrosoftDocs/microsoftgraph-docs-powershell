@@ -44,22 +44,6 @@ Update-MgUserPlanner -InputObject <IPlannerIdentity> -IfMatch <String>
 ## DESCRIPTION
 Update the navigation property planner in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -653,5 +637,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 [Update-MgBetaUserPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaUserPlanner?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mguserplanner](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mguserplanner)
+
 
 

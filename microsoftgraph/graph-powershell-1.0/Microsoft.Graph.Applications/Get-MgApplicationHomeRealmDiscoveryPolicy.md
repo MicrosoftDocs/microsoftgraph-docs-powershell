@@ -37,22 +37,6 @@ Get-MgApplicationHomeRealmDiscoveryPolicy -InputObject <IApplicationsIdentity> [
 ## DESCRIPTION
 Get homeRealmDiscoveryPolicies from applications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -295,5 +279,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [Get-MgBetaApplicationHomeRealmDiscoveryPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationHomeRealmDiscoveryPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationhomerealmdiscoverypolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationhomerealmdiscoverypolicy)
+
 
 

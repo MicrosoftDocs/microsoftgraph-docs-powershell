@@ -60,22 +60,6 @@ Update-MgUserChatMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Update the navigation property messages in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1022,5 +1006,6 @@ Link to the message in Microsoft Teams.
 [Update-MgBetaUserChatMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaUserChatMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserchatmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserchatmessage)
+
 
 

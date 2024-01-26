@@ -30,22 +30,6 @@ New-MgBetaDeviceManagementDeviceEnrollmentConfigurationEnrollmentNotificationCon
 ## DESCRIPTION
 Invoke action createEnrollmentNotificationConfiguration
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -205,5 +189,6 @@ Users are subject only to the configuration with the lowest priority value.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/new-mgbetadevicemanagementdeviceenrollmentconfigurationenrollmentnotificationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/new-mgbetadevicemanagementdeviceenrollmentconfigurationenrollmentnotificationconfiguration)
+
 
 

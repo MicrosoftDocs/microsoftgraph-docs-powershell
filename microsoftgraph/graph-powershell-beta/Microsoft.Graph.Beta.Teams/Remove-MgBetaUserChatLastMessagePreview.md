@@ -30,22 +30,6 @@ Remove-MgBetaUserChatLastMessagePreview -InputObject <ITeamsIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete navigation property lastMessagePreview for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ChatId
@@ -215,5 +199,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Remove-MgUserChatLastMessagePreview](/powershell/module/Microsoft.Graph.Teams/Remove-MgUserChatLastMessagePreview?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetauserchatlastmessagepreview](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetauserchatlastmessagepreview)
+
 
 

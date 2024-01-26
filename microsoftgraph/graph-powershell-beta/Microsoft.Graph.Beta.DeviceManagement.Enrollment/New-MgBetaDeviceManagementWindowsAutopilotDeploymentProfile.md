@@ -34,18 +34,6 @@ New-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile
 ## DESCRIPTION
 Create new navigation property to windowsAutopilotDeploymentProfiles for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -554,5 +542,6 @@ OUTOFBOXEXPERIENCESETTINGS \<IMicrosoftGraphOutOfBoxExperienceSettings\>: Out of
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementwindowsautopilotdeploymentprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementwindowsautopilotdeploymentprofile)
+
 
 

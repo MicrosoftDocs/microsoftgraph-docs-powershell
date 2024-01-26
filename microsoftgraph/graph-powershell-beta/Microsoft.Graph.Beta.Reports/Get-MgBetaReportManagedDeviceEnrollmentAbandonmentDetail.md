@@ -27,22 +27,6 @@ Get-MgBetaReportManagedDeviceEnrollmentAbandonmentDetail -InputObject <IReportsI
 ## DESCRIPTION
 Metadata for Enrollment abandonment details report
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Filter
@@ -213,5 +197,6 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportmanageddeviceenrollmentabandonmentdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportmanageddeviceenrollmentabandonmentdetail)
+
 
 

@@ -30,22 +30,6 @@ Remove-MgGroupDriveItemListItemVersion -InputObject <IFilesIdentity> [-IfMatch <
 ## DESCRIPTION
 Delete navigation property versions for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -230,5 +214,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Remove-MgBetaGroupDriveItemListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveItemListItemVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdriveitemlistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdriveitemlistitemversion)
+
 
 

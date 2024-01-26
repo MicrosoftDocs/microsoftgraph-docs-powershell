@@ -30,18 +30,6 @@ Get-MgBetaGroupSiteOnenote -InputObject <ISitesIdentity> [-ExpandProperty <Strin
 ## DESCRIPTION
 Get onenote from groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -192,5 +180,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgGroupSiteOnenote](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteOnenote?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteonenote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteonenote)
+
 
 

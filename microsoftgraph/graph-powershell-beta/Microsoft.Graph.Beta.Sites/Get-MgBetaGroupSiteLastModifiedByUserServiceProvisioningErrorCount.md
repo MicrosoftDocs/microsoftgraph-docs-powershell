@@ -42,18 +42,6 @@ Get-MgBetaGroupSiteLastModifiedByUserServiceProvisioningErrorCount -InputObject 
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -219,5 +207,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgGroupSiteLastModifiedByUserServiceProvisioningErrorCount](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteLastModifiedByUserServiceProvisioningErrorCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitelastmodifiedbyuserserviceprovisioningerrorcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitelastmodifiedbyuserserviceprovisioningerrorcount)
+
 
 

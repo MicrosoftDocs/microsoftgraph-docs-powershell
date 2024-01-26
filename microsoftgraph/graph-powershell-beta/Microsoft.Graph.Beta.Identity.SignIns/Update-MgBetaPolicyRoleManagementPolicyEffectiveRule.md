@@ -45,22 +45,6 @@ Update-MgBetaPolicyRoleManagementPolicyEffectiveRule -InputObject <IIdentitySign
 ## DESCRIPTION
 Update the navigation property effectiveRules in policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -342,5 +326,6 @@ Always null when the object hasn't been deleted.
 [Update-MgPolicyRoleManagementPolicyEffectiveRule](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyRoleManagementPolicyEffectiveRule?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyrolemanagementpolicyeffectiverule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyrolemanagementpolicyeffectiverule)
+
 
 

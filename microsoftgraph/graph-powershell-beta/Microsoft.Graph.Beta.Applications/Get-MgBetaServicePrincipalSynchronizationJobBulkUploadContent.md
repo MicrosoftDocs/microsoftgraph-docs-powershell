@@ -27,18 +27,6 @@ Get-MgBetaServicePrincipalSynchronizationJobBulkUploadContent -InputObject <IApp
 ## DESCRIPTION
 Get media content for the navigation property bulkUpload from servicePrincipals
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -168,5 +156,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationjobbulkuploadcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationjobbulkuploadcontent)
+
 
 

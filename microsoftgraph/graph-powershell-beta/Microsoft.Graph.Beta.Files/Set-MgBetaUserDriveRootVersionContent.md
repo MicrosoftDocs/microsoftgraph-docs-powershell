@@ -30,22 +30,6 @@ Set-MgBetaUserDriveRootVersionContent -InputObject <IFilesIdentity> [-Data <Stre
 ## DESCRIPTION
 Update content for the navigation property versions in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Data
@@ -218,5 +202,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Set-MgUserDriveRootVersionContent](/powershell/module/Microsoft.Graph.Files/Set-MgUserDriveRootVersionContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetauserdriverootversioncontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetauserdriverootversioncontent)
+
 
 

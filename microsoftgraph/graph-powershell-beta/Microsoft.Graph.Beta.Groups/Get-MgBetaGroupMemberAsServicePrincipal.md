@@ -37,18 +37,6 @@ Get-MgBetaGroupMemberAsServicePrincipal -InputObject <IGroupsIdentity> [-ExpandP
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -330,5 +318,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Get-MgGroupMemberAsServicePrincipal](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupMemberAsServicePrincipal?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmemberasserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmemberasserviceprincipal)
+
 
 

@@ -46,22 +46,6 @@ Update-MgBetaGroupOnenotePageContent -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Invoke action onenotePatchContent
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -288,5 +272,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Update-MgGroupOnenotePageContent](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupOnenotePageContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagrouponenotepagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagrouponenotepagecontent)
+
 
 

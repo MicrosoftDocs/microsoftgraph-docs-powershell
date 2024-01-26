@@ -31,18 +31,6 @@ New-MgBetaRoleManagementExchangeTransitiveRoleAssignment -BodyParameter <IMicros
 ## DESCRIPTION
 Create new navigation property to transitiveRoleAssignments for roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -477,5 +465,6 @@ Read-only when isBuiltIn is true.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementexchangetransitiveroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementexchangetransitiveroleassignment)
+
 
 

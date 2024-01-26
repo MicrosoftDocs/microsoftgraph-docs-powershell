@@ -36,22 +36,6 @@ Get-MgBetaDeviceManagementTemplateMigratableToCategory -InputObject <IDeviceMana
 ## DESCRIPTION
 Collection of setting categories within the template
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -425,5 +409,6 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementtemplatemigratabletocategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementtemplatemigratabletocategory)
+
 
 

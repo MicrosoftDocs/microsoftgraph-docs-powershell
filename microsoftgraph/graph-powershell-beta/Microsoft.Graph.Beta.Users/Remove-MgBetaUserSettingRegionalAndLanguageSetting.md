@@ -27,22 +27,6 @@ Remove-MgBetaUserSettingRegionalAndLanguageSetting -InputObject <IUsersIdentity>
 ## DESCRIPTION
 Delete navigation property regionalAndLanguageSettings for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -179,5 +163,6 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausersettingregionalandlanguagesetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausersettingregionalandlanguagesetting)
+
 
 

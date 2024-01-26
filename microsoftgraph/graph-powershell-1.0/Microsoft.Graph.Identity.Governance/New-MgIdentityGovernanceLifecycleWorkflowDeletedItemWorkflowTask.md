@@ -50,18 +50,6 @@ New-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask -InputObject <I
 ## DESCRIPTION
 Create new navigation property to tasks for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -9632,5 +9620,6 @@ Required.Supports $filter(eq, ne).
 [New-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancelifecycleworkflowdeleteditemworkflowtask](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancelifecycleworkflowdeleteditemworkflowtask)
+
 
 

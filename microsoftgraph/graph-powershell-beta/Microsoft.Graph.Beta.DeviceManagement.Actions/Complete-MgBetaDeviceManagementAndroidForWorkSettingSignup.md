@@ -28,22 +28,6 @@ Complete-MgBetaDeviceManagementAndroidForWorkSettingSignup
 ## DESCRIPTION
 Invoke action completeSignup
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -160,5 +144,6 @@ BODYPARAMETER \<IPaths16Y7GguDevicemanagementAndroidforworksettingsMicrosoftGrap
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/complete-mgbetadevicemanagementandroidforworksettingsignup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/complete-mgbetadevicemanagementandroidforworksettingsignup)
+
 
 

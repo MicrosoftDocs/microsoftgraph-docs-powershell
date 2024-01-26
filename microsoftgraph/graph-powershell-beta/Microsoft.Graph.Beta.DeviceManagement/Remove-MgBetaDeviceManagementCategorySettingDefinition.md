@@ -28,22 +28,6 @@ Remove-MgBetaDeviceManagementCategorySettingDefinition -InputObject <IDeviceMana
 ## DESCRIPTION
 Delete navigation property settingDefinitions for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DeviceManagementSettingCategoryId
@@ -312,5 +296,6 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementcategorysettingdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementcategorysettingdefinition)
+
 
 

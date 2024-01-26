@@ -32,18 +32,6 @@ New-MgRiskyServicePrincipal -BodyParameter <IMicrosoftGraphRiskyServicePrincipal
 ## DESCRIPTION
 Create new navigation property to riskyServicePrincipals for identityProtection
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -361,5 +349,6 @@ Read-only.
 [New-MgBetaRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaRiskyServicePrincipal?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgriskyserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgriskyserviceprincipal)
+
 
 

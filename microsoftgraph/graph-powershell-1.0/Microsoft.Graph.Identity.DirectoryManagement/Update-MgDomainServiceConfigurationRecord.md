@@ -44,22 +44,6 @@ Update-MgDomainServiceConfigurationRecord -InputObject <IIdentityDirectoryManage
 ## DESCRIPTION
 Update the navigation property serviceConfigurationRecords in domains
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -323,5 +307,6 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 [Update-MgBetaDomainServiceConfigurationRecord](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDomainServiceConfigurationRecord?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomainserviceconfigurationrecord](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomainserviceconfigurationrecord)
+
 
 

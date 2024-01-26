@@ -29,22 +29,6 @@ Get-MgReportOneDriveUsageStorage -InputObject <IReportsIdentity> -OutFile <Strin
 ## DESCRIPTION
 Invoke function getOneDriveUsageStorage
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -149,5 +133,6 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
 [Get-MgBetaReportOneDriveUsageStorage](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOneDriveUsageStorage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveusagestorage](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveusagestorage)
+
 
 

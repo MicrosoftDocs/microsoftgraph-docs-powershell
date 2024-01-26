@@ -28,18 +28,6 @@ Get-MgBetaSubSiteCount -InputObject <ISitesIdentity> [-Filter <String>] [-Search
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -175,5 +163,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgSubSiteCount](/powershell/module/Microsoft.Graph.Sites/Get-MgSubSiteCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasubsitecount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasubsitecount)
+
 
 

@@ -28,18 +28,6 @@ Remove-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumn -InputObject <
 ## DESCRIPTION
 Delete navigation property columns for sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -BaseSitePageId
@@ -250,5 +238,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitepageassitepagecanvalayouthorizontalsectioncolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitepageassitepagecanvalayouthorizontalsectioncolumn)
+
 
 

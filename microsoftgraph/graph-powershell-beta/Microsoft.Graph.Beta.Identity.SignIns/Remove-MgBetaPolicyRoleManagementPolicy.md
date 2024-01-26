@@ -30,22 +30,6 @@ Remove-MgBetaPolicyRoleManagementPolicy -InputObject <IIdentitySignInsIdentity> 
 ## DESCRIPTION
 Delete navigation property roleManagementPolicies for policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -238,5 +222,6 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 [Remove-MgPolicyRoleManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyRoleManagementPolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyrolemanagementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyrolemanagementpolicy)
+
 
 

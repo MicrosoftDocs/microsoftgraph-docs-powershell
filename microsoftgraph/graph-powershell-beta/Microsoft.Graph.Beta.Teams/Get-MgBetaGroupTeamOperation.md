@@ -37,22 +37,6 @@ Get-MgBetaGroupTeamOperation -InputObject <ITeamsIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 The async operations that ran or are running on this team.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -312,5 +296,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Get-MgGroupTeamOperation](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamoperation)
+
 
 

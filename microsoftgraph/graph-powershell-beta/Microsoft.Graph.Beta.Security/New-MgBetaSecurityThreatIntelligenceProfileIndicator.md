@@ -31,18 +31,6 @@ New-MgBetaSecurityThreatIntelligenceProfileIndicator
 ## DESCRIPTION
 Create new navigation property to intelligenceProfileIndicators for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -214,5 +202,6 @@ Read-only.
 [New-MgSecurityThreatIntelligenceProfileIndicator](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceProfileIndicator?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligenceprofileindicator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligenceprofileindicator)
+
 
 

@@ -30,22 +30,6 @@ Get-MgBetaDeviceManagementReportConfigurationSettingReport -OutFile <String>
 ## DESCRIPTION
 Invoke action getConfigurationSettingsReport
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -305,5 +289,6 @@ BODYPARAMETER \<IPathsS32AefDevicemanagementReportsMicrosoftGraphGetconfiguratio
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportconfigurationsettingreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportconfigurationsettingreport)
+
 
 

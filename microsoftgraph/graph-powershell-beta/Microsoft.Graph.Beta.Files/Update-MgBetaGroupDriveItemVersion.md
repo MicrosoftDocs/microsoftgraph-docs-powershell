@@ -46,22 +46,6 @@ Update-MgBetaGroupDriveItemVersion -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property versions in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -401,5 +385,6 @@ Read-only.
 [Update-MgGroupDriveItemVersion](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveItemVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriveitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriveitemversion)
+
 
 

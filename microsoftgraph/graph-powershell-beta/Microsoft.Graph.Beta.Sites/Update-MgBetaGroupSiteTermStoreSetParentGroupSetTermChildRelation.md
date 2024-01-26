@@ -48,18 +48,6 @@ Update-MgBetaGroupSiteTermStoreSetParentGroupSetTermChildRelation -InputObject <
 ## DESCRIPTION
 Update the navigation property relations in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -605,5 +593,6 @@ Read-only.
 [Update-MgGroupSiteTermStoreSetParentGroupSetTermChildRelation](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteTermStoreSetParentGroupSetTermChildRelation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitetermstoresetparentgroupsettermchildrelation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitetermstoresetparentgroupsettermchildrelation)
+
 
 

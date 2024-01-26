@@ -29,18 +29,6 @@ Get-MgGroupExtensionCount -InputObject <IGroupsIdentity> [-Filter <String>] [-Se
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -160,5 +148,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Get-MgBetaGroupExtensionCount](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupExtensionCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupextensioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupextensioncount)
+
 
 

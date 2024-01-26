@@ -37,22 +37,6 @@ Get-MgShareListContentTypeColumnLink -InputObject <IFilesIdentity> [-ExpandPrope
 ## DESCRIPTION
 The collection of columns that are required by this content type.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -312,5 +296,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgBetaShareListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListContentTypeColumnLink?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistcontenttypecolumnlink](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistcontenttypecolumnlink)
+
 
 

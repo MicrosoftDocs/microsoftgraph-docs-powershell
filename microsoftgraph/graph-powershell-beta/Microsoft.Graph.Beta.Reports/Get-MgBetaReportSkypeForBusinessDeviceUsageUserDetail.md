@@ -42,22 +42,6 @@ Get-MgBetaReportSkypeForBusinessDeviceUsageUserDetail -InputObject <IReportsIden
 ## DESCRIPTION
 Invoke function getSkypeForBusinessDeviceUsageUserDetail
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Date
@@ -199,5 +183,6 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
 [Get-MgReportSkypeForBusinessDeviceUsageUserDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSkypeForBusinessDeviceUsageUserDetail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportskypeforbusinessdeviceusageuserdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportskypeforbusinessdeviceusageuserdetail)
+
 
 

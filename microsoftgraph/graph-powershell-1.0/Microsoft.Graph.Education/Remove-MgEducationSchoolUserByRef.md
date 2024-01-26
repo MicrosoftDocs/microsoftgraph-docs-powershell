@@ -34,22 +34,6 @@ Delete a user from a school.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationschool-delete-users-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EducationSchoolId
@@ -206,5 +190,6 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 [Remove-MgBetaEducationSchoolUserByRef](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationSchoolUserByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationschooluserbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationschooluserbyref)
+
 
 

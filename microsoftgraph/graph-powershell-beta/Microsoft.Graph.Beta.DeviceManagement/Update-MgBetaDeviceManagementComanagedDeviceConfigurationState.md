@@ -46,22 +46,6 @@ Update-MgBetaDeviceManagementComanagedDeviceConfigurationState -InputObject <IDe
 ## DESCRIPTION
 Update the navigation property deviceConfigurationStates in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -516,5 +500,6 @@ SETTINGSTATES \<IMicrosoftGraphDeviceConfigurationSettingState\[\]\>: .
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementcomanageddeviceconfigurationstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementcomanageddeviceconfigurationstate)
+
 
 

@@ -37,18 +37,6 @@ Get-MgVirtualEventSession -InputObject <IBookingsIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 Sessions for the virtual event.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -284,5 +272,6 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 [Get-MgBetaVirtualEventSession](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventSession?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventsession](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventsession)
+
 
 

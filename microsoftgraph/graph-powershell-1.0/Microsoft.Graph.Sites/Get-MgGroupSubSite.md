@@ -37,22 +37,6 @@ Get-MgGroupSubSite -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-
 ## DESCRIPTION
 The collection of the sub-sites under this site.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -326,5 +310,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [Get-MgBetaGroupSubSite](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSubSite?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsubsite](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsubsite)
+
 
 

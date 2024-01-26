@@ -55,22 +55,6 @@ Update-MgBetaDeviceManagementConfigurationPolicy -InputObject <IDeviceManagement
 ## DESCRIPTION
 Update the navigation property configurationPolicies in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -677,5 +661,6 @@ TEMPLATEREFERENCE \<IMicrosoftGraphDeviceManagementConfigurationPolicyTemplateRe
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementconfigurationpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementconfigurationpolicy)
+
 
 

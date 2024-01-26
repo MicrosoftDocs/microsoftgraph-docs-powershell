@@ -30,18 +30,6 @@ Remove-MgVirtualEventSession -InputObject <IBookingsIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete navigation property sessions for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -187,5 +175,6 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 [Remove-MgBetaVirtualEventSession](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaVirtualEventSession?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgvirtualeventsession](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgvirtualeventsession)
+
 
 

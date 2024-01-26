@@ -45,18 +45,6 @@ Remove access to a chat for a user.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-removeallaccessforuser-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -279,5 +267,6 @@ When the unique identifier is unavailable, the displayName property is provided 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetauserchataccessforuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetauserchataccessforuser)
+
 
 

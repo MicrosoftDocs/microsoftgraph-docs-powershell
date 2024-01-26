@@ -30,22 +30,6 @@ Remove-MgBetaGroupDriveRootSubscription -InputObject <IFilesIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete navigation property subscriptions for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -215,5 +199,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Remove-MgGroupDriveRootSubscription](/powershell/module/Microsoft.Graph.Files/Remove-MgGroupDriveRootSubscription?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetagroupdriverootsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetagroupdriverootsubscription)
+
 
 

@@ -28,18 +28,6 @@ Get-MgBetaUserCalendarCount -InputObject <ICalendarIdentity> [-Filter <String>] 
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -122,5 +110,6 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
 [Get-MgUserCalendarCount](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserCalendarCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendarcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendarcount)
+
 
 

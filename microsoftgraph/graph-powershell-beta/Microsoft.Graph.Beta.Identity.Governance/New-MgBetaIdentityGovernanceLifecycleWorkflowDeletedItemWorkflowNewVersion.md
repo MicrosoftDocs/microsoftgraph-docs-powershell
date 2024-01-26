@@ -47,22 +47,6 @@ New-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowNewVersion
 ## DESCRIPTION
 Create a new version of the workflow object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -15373,5 +15357,6 @@ Can't be true for a disabled workflow (where isEnabled is false).
 [New-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowNewVersion](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowNewVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancelifecycleworkflowdeleteditemworkflownewversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancelifecycleworkflowdeleteditemworkflownewversion)
+
 
 

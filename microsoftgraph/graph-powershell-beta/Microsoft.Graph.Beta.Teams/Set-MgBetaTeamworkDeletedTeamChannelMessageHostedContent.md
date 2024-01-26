@@ -31,18 +31,6 @@ Set-MgBetaTeamworkDeletedTeamChannelMessageHostedContent -InputObject <ITeamsIde
 ## DESCRIPTION
 Update media content for the navigation property hostedContents in teamwork
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -260,5 +248,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Set-MgTeamworkDeletedTeamChannelMessageHostedContent](/powershell/module/Microsoft.Graph.Teams/Set-MgTeamworkDeletedTeamChannelMessageHostedContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetateamworkdeletedteamchannelmessagehostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetateamworkdeletedteamchannelmessagehostedcontent)
+
 
 

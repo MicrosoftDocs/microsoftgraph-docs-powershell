@@ -28,22 +28,6 @@ Request-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingSignupU
 ## DESCRIPTION
 Invoke action requestSignupUrl
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -145,5 +129,6 @@ BODYPARAMETER \<IPaths1Mblqr0DevicemanagementAndroidmanagedstoreaccountenterpris
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/request-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingsignupurl](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/request-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingsignupurl)
+
 
 

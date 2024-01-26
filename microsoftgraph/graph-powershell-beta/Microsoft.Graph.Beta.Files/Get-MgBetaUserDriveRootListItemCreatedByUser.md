@@ -30,18 +30,6 @@ Get-MgBetaUserDriveRootListItemCreatedByUser -InputObject <IFilesIdentity> [-Exp
 ## DESCRIPTION
 Get createdByUser from users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -165,5 +153,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Get-MgUserDriveRootListItemCreatedByUser](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveRootListItemCreatedByUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriverootlistitemcreatedbyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriverootlistitemcreatedbyuser)
+
 
 

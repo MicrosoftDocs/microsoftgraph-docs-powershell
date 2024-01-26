@@ -30,18 +30,6 @@ Update-MgRoleManagement -BodyParameter <IMicrosoftGraphRoleManagement> [-WhatIf]
 ## DESCRIPTION
 Update roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1225,5 +1213,6 @@ Supports $filter (eq, ne).
 [Update-MgBetaRoleManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Update-MgBetaRoleManagement?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/update-mgrolemanagement](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/update-mgrolemanagement)
+
 
 

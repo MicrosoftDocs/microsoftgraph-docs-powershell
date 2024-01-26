@@ -86,18 +86,6 @@ Create a new term object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/termstore-term-post-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -674,5 +662,6 @@ Read-only.
 [New-MgSiteTermStoreSetParentGroupSetChild](/powershell/module/Microsoft.Graph.Sites/New-MgSiteTermStoreSetParentGroupSetChild?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitetermstoresetparentgroupsetchild](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitetermstoresetparentgroupsetchild)
+
 
 

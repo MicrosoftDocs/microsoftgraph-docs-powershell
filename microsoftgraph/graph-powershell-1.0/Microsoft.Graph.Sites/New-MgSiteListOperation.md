@@ -48,22 +48,6 @@ New-MgSiteListOperation -InputObject <ISitesIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Create new navigation property to operations for sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -438,5 +422,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 [New-MgBetaSiteListOperation](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteListOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelistoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelistoperation)
+
 
 

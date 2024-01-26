@@ -30,22 +30,6 @@ Remove-MgBetaDriveItemThumbnail -InputObject <IFilesIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete navigation property thumbnails for drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -215,5 +199,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Remove-MgDriveItemThumbnail](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveItemThumbnail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriveitemthumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriveitemthumbnail)
+
 
 

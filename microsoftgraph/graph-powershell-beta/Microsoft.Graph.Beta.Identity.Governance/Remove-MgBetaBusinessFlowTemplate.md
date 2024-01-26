@@ -27,22 +27,6 @@ Remove-MgBetaBusinessFlowTemplate -InputObject <IIdentityGovernanceIdentity> [-I
 ## DESCRIPTION
 Delete entity from businessFlowTemplates
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -BusinessFlowTemplateId
@@ -256,5 +240,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetabusinessflowtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetabusinessflowtemplate)
+
 
 

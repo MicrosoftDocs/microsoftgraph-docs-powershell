@@ -50,22 +50,6 @@ Update-MgBetaCommunicationCallRecordSession -InputObject <ICloudCommunicationsId
 ## DESCRIPTION
 Update the navigation property sessions in communications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -660,5 +644,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 [Update-MgCommunicationCallRecordSession](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallRecordSession?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationcallrecordsession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationcallrecordsession)
+
 
 

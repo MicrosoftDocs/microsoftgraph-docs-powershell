@@ -30,22 +30,6 @@ Remove-MgDriveRootListItemVersionField -InputObject <IFilesIdentity> [-IfMatch <
 ## DESCRIPTION
 Delete navigation property fields for drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -200,5 +184,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [Remove-MgBetaDriveRootListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveRootListItemVersionField?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdriverootlistitemversionfield](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdriverootlistitemversionfield)
+
 
 

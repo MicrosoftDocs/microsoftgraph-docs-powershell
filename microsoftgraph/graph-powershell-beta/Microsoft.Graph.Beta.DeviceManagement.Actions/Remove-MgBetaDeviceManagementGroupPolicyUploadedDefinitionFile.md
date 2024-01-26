@@ -27,22 +27,6 @@ Remove-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFile -InputObject <IDe
 ## DESCRIPTION
 Invoke action remove
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -GroupPolicyUploadedDefinitionFileId
@@ -194,5 +178,6 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/remove-mgbetadevicemanagementgrouppolicyuploadeddefinitionfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/remove-mgbetadevicemanagementgrouppolicyuploadeddefinitionfile)
+
 
 
