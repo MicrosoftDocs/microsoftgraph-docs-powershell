@@ -11,6 +11,9 @@ ms.prod: identity-and-sign-in
 ## SYNOPSIS
 Delete a custom identityUserFlowAttribute.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityUserFlowAttribute](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityUserFlowAttribute?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -229,6 +232,7 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Remove-MgIdentityUserFlowAttribute](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityUserFlowAttribute?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityuserflowattribute](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityuserflowattribute)
 

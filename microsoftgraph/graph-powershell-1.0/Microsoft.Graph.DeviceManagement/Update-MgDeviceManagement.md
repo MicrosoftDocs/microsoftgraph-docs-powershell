@@ -11,6 +11,9 @@ ms.prod: intune
 ## SYNOPSIS
 Update the properties of a deviceManagement object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagement?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -18061,6 +18064,7 @@ Valid values -2147483648 to 2147483647
 Valid values -2147483648 to 2147483647
 
 ## RELATED LINKS
+[Update-MgBetaDeviceManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagement?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagement](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagement)
 

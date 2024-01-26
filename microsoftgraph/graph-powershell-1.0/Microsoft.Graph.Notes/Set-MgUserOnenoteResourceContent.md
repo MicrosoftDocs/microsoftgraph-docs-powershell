@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The content stream
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaUserOnenoteResourceContent](/powershell/module/Microsoft.Graph.Beta.Notes/Set-MgBetaUserOnenoteResourceContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)
@@ -182,6 +185,7 @@ INPUTOBJECT \<INotesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Set-MgBetaUserOnenoteResourceContent](/powershell/module/Microsoft.Graph.Beta.Notes/Set-MgBetaUserOnenoteResourceContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/set-mguseronenoteresourcecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/set-mguseronenoteresourcecontent)
 

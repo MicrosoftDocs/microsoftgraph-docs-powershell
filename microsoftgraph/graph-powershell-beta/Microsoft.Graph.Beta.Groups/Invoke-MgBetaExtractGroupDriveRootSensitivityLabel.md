@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action extractSensitivityLabels
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgExtractGroupDriveRootSensitivityLabel](/powershell/module/Microsoft.Graph.Groups/Invoke-MgExtractGroupDriveRootSensitivityLabel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Extract (Default)
@@ -185,6 +188,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
+[Invoke-MgExtractGroupDriveRootSensitivityLabel](/powershell/module/Microsoft.Graph.Groups/Invoke-MgExtractGroupDriveRootSensitivityLabel?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaextractgroupdriverootsensitivitylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaextractgroupdriverootsensitivitylabel)
 

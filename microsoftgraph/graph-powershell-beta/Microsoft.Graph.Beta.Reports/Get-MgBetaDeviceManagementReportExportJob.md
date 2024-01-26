@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Entity representing a job to export a report
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementReportExportJob](/powershell/module/Microsoft.Graph.Reports/Get-MgDeviceManagementReportExportJob?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -294,6 +297,7 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
   \[UserSignUpMetricId \<String\>\]: The unique identifier of userSignUpMetric
 
 ## RELATED LINKS
+[Get-MgDeviceManagementReportExportJob](/powershell/module/Microsoft.Graph.Reports/Get-MgDeviceManagementReportExportJob?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportexportjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportexportjob)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Measurements of tenants' security posture to help protect them from threats.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecuritySecureScore](/powershell/module/Microsoft.Graph.Security/Get-MgSecuritySecureScore?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -323,6 +326,7 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgSecuritySecureScore](/powershell/module/Microsoft.Graph.Security/Get-MgSecuritySecureScore?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysecurescore](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysecurescore)
 

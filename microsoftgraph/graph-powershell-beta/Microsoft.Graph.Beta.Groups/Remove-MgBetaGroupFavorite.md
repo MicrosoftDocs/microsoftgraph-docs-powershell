@@ -11,6 +11,9 @@ schema: 2.0.0
 Remove the group from the list of the current user's favorite groups.
 Supported for Microsoft 365 groups only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupFavorite](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupFavorite?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Remove (Default)
@@ -177,6 +180,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
+[Remove-MgGroupFavorite](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupFavorite?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupfavorite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupfavorite)
 

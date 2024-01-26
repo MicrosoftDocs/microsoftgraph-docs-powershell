@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of the specified channel.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgTeamChannel](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamChannel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -22967,6 +22970,7 @@ When the unique identifier is unavailable, the displayName property is provided 
 Read only.
 
 ## RELATED LINKS
+[Update-MgTeamChannel](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamChannel?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamchannel)
 

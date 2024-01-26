@@ -11,6 +11,9 @@ ms.prod: sites-and-lists
 ## SYNOPSIS
 Create a new \[contentType\]\[\] in a \[site\]\[\].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -1793,6 +1796,7 @@ ORDER \<IMicrosoftGraphContentTypeOrder\>: contentTypeOrder
   \[Position \<Int32?\>\]: Specifies the position in which the content type appears in the selection UI.
 
 ## RELATED LINKS
+[New-MgBetaGroupSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitecontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitecontenttype)
 

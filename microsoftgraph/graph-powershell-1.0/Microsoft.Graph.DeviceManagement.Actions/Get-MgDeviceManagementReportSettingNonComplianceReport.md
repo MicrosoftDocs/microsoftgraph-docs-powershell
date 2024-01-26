@@ -11,6 +11,9 @@ ms.prod: intune
 ## SYNOPSIS
 Not yet documented
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementReportSettingNonComplianceReport](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Get-MgBetaDeviceManagementReportSettingNonComplianceReport?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GetExpanded (Default)
@@ -304,6 +307,7 @@ BODYPARAMETER \<IPaths19Wsha2DevicemanagementReportsMicrosoftGraphGetsettingnonc
   \[Top \<Int32?\>\]:
 
 ## RELATED LINKS
+[Get-MgBetaDeviceManagementReportSettingNonComplianceReport](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Get-MgBetaDeviceManagementReportSettingNonComplianceReport?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportsettingnoncompliancereport](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportsettingnoncompliancereport)
 

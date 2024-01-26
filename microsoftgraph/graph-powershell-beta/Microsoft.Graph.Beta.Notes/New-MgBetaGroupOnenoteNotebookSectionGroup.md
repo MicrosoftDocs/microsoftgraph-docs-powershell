@@ -11,6 +11,9 @@ ms.prod: onenote
 ## SYNOPSIS
 Create a new section group in the specified notebook.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupOnenoteNotebookSectionGroup](/powershell/module/Microsoft.Graph.Notes/New-MgGroupOnenoteNotebookSectionGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -986,6 +989,7 @@ Read-only.
   \[ParentSectionGroup \<IMicrosoftGraphSectionGroup\>\]: sectionGroup
 
 ## RELATED LINKS
+[New-MgGroupOnenoteNotebookSectionGroup](/powershell/module/Microsoft.Graph.Notes/New-MgGroupOnenoteNotebookSectionGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetagrouponenotenotebooksectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetagrouponenotenotebooksectiongroup)
 

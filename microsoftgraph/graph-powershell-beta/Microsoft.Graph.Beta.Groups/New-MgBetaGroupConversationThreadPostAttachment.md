@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to attachments for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupConversationThreadPostAttachment](/powershell/module/Microsoft.Graph.Groups/New-MgGroupConversationThreadPostAttachment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -361,6 +364,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
+[New-MgGroupConversationThreadPostAttachment](/powershell/module/Microsoft.Graph.Groups/New-MgGroupConversationThreadPostAttachment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupconversationthreadpostattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupconversationthreadpostattachment)
 

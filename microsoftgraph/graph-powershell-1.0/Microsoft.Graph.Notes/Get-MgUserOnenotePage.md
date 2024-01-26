@@ -12,6 +12,9 @@ ms.prod: onenote
 Retrieve the properties and relationships of a page object.
 Getting page information Access a page's metadata by page identifier: Getting page content You can use the page's content endpoint to get the HTML content of a page: The includeIDs=true query option is used to update pages.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserOnenotePage](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenotePage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -276,6 +279,7 @@ INPUTOBJECT \<INotesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserOnenotePage](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenotePage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotepage](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotepage)
 

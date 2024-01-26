@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function recent
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaRecentGroupDrive](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaRecentGroupDrive?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Recent (Default)
@@ -250,6 +253,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
+[Invoke-MgBetaRecentGroupDrive](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaRecentGroupDrive?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgrecentgroupdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgrecentgroupdrive)
 

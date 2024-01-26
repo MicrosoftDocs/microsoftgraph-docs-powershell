@@ -11,6 +11,9 @@ ms.prod: sites-and-lists
 ## SYNOPSIS
 Retrieve the metadata for a \[site\]\[\], \[list\]\[\] or \[contentType\]\[\] \[column\]\[columnDefinition\].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteListContentTypeColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -368,6 +371,7 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgGroupSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteListContentTypeColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitelistcontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitelistcontenttypecolumn)
 

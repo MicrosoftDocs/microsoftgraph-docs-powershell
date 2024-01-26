@@ -11,6 +11,9 @@ ms.prod: applications
 ## SYNOPSIS
 Delete a servicePrincipal object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipal?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -174,6 +177,7 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipal?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipal)
 

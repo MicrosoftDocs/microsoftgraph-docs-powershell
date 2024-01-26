@@ -11,6 +11,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Unfollow a driveItem.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgUnfollowGroupDriveRoot](/powershell/module/Microsoft.Graph.Groups/Invoke-MgUnfollowGroupDriveRoot?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Unfollow (Default)
@@ -204,6 +207,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
+[Invoke-MgUnfollowGroupDriveRoot](/powershell/module/Microsoft.Graph.Groups/Invoke-MgUnfollowGroupDriveRoot?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaunfollowgroupdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaunfollowgroupdriveroot)
 

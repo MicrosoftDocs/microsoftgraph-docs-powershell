@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property tasks in identityGovernance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgIdentityGovernanceLifecycleWorkflowVersionTask](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceLifecycleWorkflowVersionTask?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -15346,6 +15349,7 @@ Required.Supports $filter(eq, ne).
     \[TaskProcessingResults \<IMicrosoftGraphIdentityGovernanceTaskProcessingResult\[\]\>\]: The result of processing the task.
 
 ## RELATED LINKS
+[Update-MgIdentityGovernanceLifecycleWorkflowVersionTask](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceLifecycleWorkflowVersionTask?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancelifecycleworkflowversiontask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancelifecycleworkflowversiontask)
 

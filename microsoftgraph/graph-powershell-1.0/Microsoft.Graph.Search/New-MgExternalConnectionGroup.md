@@ -11,6 +11,9 @@ ms.prod: search
 ## SYNOPSIS
 Create a new externalGroup object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaExternalConnectionGroup](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaExternalConnectionGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -265,6 +268,7 @@ Read-only.
   \[Type \<String\>\]: identityType
 
 ## RELATED LINKS
+[New-MgBetaExternalConnectionGroup](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaExternalConnectionGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectiongroup)
 

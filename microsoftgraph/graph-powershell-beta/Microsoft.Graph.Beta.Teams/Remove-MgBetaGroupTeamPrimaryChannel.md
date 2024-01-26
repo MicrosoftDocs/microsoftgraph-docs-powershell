@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property primaryChannel for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamPrimaryChannel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -187,6 +190,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Remove-MgGroupTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamPrimaryChannel?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteamprimarychannel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteamprimarychannel)
 

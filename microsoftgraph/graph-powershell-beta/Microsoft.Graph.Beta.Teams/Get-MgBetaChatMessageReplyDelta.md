@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function delta
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgChatMessageReplyDelta](/powershell/module/Microsoft.Graph.Teams/Get-MgChatMessageReplyDelta?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delta (Default)
@@ -300,6 +303,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgChatMessageReplyDelta](/powershell/module/Microsoft.Graph.Teams/Get-MgChatMessageReplyDelta?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatmessagereplydelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatmessagereplydelta)
 

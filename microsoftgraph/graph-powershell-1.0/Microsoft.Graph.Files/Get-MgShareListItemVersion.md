@@ -11,6 +11,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Retrieve the metadata for a specific version of a ListItem.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaShareListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListItemVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List1 (Default)
@@ -329,6 +332,7 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaShareListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListItemVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistitemversion)
 

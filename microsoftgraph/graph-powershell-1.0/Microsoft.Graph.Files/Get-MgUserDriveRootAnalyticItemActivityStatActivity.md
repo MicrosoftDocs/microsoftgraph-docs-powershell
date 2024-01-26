@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Exposes the itemActivities represented in this itemActivityStat resource.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveRootAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootAnalyticItemActivityStatActivity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -243,6 +246,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MgBetaUserDriveRootAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootAnalyticItemActivityStatActivity?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootanalyticitemactivitystatactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootanalyticitemactivitystatactivity)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update a thread object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupThread?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -605,6 +608,7 @@ Returned only on $select.
     \[Name \<String\>\]: The display name of an entity instance.
 
 ## RELATED LINKS
+[Update-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupThread?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupthread](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupthread)
 

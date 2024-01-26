@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Install a teamsApp to the specified chat.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgChatInstalledApp](/powershell/module/Microsoft.Graph.Teams/New-MgChatInstalledApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -467,6 +470,7 @@ When the unique identifier is unavailable, the displayName property is provided 
   \[Version \<String\>\]: The version number of the application.
 
 ## RELATED LINKS
+[New-MgChatInstalledApp](/powershell/module/Microsoft.Graph.Teams/New-MgChatInstalledApp?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachatinstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachatinstalledapp)
 

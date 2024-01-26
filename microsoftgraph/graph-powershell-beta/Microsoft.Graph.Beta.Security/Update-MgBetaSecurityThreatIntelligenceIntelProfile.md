@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property intelProfiles in security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityThreatIntelligenceIntelProfile](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligenceIntelProfile?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -487,6 +490,7 @@ TRADECRAFT \<IMicrosoftGraphSecurityFormattedContent\>: formattedContent
   \[Format \<String\>\]: contentFormat
 
 ## RELATED LINKS
+[Update-MgSecurityThreatIntelligenceIntelProfile](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligenceIntelProfile?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligenceintelprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligenceintelprofile)
 

@@ -11,6 +11,9 @@ ms.prod: cloud-communications
 ## SYNOPSIS
 Reincorporate a participant previously put on hold to the call.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Stop-MgBetaCommunicationCallParticipantHoldMusic](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Stop-MgBetaCommunicationCallParticipantHoldMusic?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### StopExpanded (Default)
@@ -218,6 +221,7 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Stop-MgBetaCommunicationCallParticipantHoldMusic](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Stop-MgBetaCommunicationCallParticipantHoldMusic?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/stop-mgcommunicationcallparticipantholdmusic](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/stop-mgcommunicationcallparticipantholdmusic)
 

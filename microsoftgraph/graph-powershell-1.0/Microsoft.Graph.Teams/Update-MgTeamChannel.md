@@ -11,6 +11,9 @@ ms.prod: microsoft-teams
 ## SYNOPSIS
 Update the properties of the specified channel.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamChannel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -14388,6 +14391,7 @@ For example, if a user changes their display name, the API might show the new va
 Read only.
 
 ## RELATED LINKS
+[Update-MgBetaTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamChannel?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamchannel)
 

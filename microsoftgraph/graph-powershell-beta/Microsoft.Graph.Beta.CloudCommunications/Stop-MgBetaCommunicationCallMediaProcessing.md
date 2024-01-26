@@ -15,6 +15,9 @@ The cancelMediaProcessing method cancels any operation that is in-process as wel
 For example, this API can be used to clean up the IVR operation queue for a new media operation.
 However, it will not cancel a ubscribeToTone operation because it operates independent of any operation queue.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Stop-MgCommunicationCallMediaProcessing](/powershell/module/Microsoft.Graph.CloudCommunications/Stop-MgCommunicationCallMediaProcessing?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CancelExpanded (Default)
@@ -215,6 +218,7 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Stop-MgCommunicationCallMediaProcessing](/powershell/module/Microsoft.Graph.CloudCommunications/Stop-MgCommunicationCallMediaProcessing?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/stop-mgbetacommunicationcallmediaprocessing](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/stop-mgbetacommunicationcallmediaprocessing)
 

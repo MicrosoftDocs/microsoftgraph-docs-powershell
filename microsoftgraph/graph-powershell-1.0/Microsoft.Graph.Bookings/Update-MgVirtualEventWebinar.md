@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property webinars in solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaVirtualEventWebinar](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaVirtualEventWebinar?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -662,6 +665,7 @@ STARTDATETIME \<IMicrosoftGraphDateTimeZone\>: dateTimeTimeZone
 See below for more possible values.
 
 ## RELATED LINKS
+[Update-MgBetaVirtualEventWebinar](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaVirtualEventWebinar?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventwebinar](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventwebinar)
 

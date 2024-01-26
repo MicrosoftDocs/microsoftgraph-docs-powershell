@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update entity in shares
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaShareSharedDriveItemSharedDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareSharedDriveItemSharedDriveItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -41901,6 +41904,7 @@ This relationship can only be used to load a specific term set.
   \[TermStores \<IMicrosoftGraphTermStore\[\]\>\]: The collection of termStores under this site.
 
 ## RELATED LINKS
+[Update-MgBetaShareSharedDriveItemSharedDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareSharedDriveItemSharedDriveItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgshareshareddriveitemshareddriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgshareshareddriveitemshareddriveitem)
 

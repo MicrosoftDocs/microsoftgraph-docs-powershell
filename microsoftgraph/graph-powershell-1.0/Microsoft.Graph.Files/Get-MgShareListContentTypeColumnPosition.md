@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Column order information in a content type.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaShareListContentTypeColumnPosition](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListContentTypeColumnPosition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -306,6 +309,7 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaShareListContentTypeColumnPosition](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListContentTypeColumnPosition?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistcontenttypecolumnposition](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistcontenttypecolumnposition)
 

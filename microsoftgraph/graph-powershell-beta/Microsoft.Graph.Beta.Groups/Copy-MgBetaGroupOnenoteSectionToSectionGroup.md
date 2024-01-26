@@ -12,6 +12,9 @@ ms.prod: onenote
 Copies a section to a specific section group.
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Copy-MgGroupOnenoteSectionToSectionGroup](/powershell/module/Microsoft.Graph.Groups/Copy-MgGroupOnenoteSectionToSectionGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CopyExpanded (Default)
@@ -330,6 +333,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
+[Copy-MgGroupOnenoteSectionToSectionGroup](/powershell/module/Microsoft.Graph.Groups/Copy-MgGroupOnenoteSectionToSectionGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/copy-mgbetagrouponenotesectiontosectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/copy-mgbetagrouponenotesectiontosectiongroup)
 

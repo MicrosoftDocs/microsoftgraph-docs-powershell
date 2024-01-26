@@ -11,6 +11,9 @@ ms.prod: sites-and-lists
 ## SYNOPSIS
 Associate a published \[content type\]\[contentType\] present in a content type hub with a list of hub sites.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Join-MgBetaGroupDriveListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Beta.Groups/Join-MgBetaGroupDriveListContentTypeWithHubSite?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AssociateExpanded (Default)
@@ -291,6 +294,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[User \<String\>\]: Usage: User='{User}'
 
 ## RELATED LINKS
+[Join-MgBetaGroupDriveListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Beta.Groups/Join-MgBetaGroupDriveListContentTypeWithHubSite?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/join-mggroupdrivelistcontenttypewithhubsite](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/join-mggroupdrivelistcontenttypewithhubsite)
 

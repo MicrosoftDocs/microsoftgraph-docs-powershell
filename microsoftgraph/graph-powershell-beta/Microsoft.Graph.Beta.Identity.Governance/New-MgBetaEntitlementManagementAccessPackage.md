@@ -13,6 +13,9 @@ Create a new accessPackage object.
 The access package will be added to an existing accessPackageCatalog.
 After the access package is created, you can then create accessPackageAssignmentPolicies which specify how users are assigned to the access package.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -46236,6 +46239,7 @@ Microsoft Entra security groups can be written back as universalSecurityGroup.
 If isEnabled or the NewUnifiedGroupWritebackDefault group setting is true but this property isn't explicitly configured: Microsoft 365 groups are written back as universalDistributionGroup by defaultSecurity groups are written back as universalSecurityGroup by default
 
 ## RELATED LINKS
+[New-MgEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackage)
 
